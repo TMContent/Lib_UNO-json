@@ -1,0 +1,68 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "-327430188",
+      "Content_Hash": "-1634577352"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "62ed6d49-ca67-492a-b3ed-14c18bb8d906"
+        ],
+        "Id_History": [
+          "62ed6d49-ca67-492a-b3ed-14c18bb8d906,a8fd0b9c-def0-4199-bdd5-1349c4a7b26b,"
+        ],
+        "Library_Id": [
+          "51eb81c3-1d23-4146-ba83-8a6bb9233c11"
+        ],
+        "Title": [
+          "Use Helper Classes to Assure Input Validation"
+        ],
+        "Category": [
+          "Input and Data Validation"
+        ],
+        "Phase": [
+          "Design"
+        ],
+        "Technology": [
+          "C++"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          "Use Helper Classes to Assure Input Validation"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ],
+        "Source": [
+          "C++"
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>C&#43;&#43;</li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Use helper classes to assure input validation.</p>\r\n  <h1>Why</h1>\r\n  <p>Helper classes may help make sure that user input has been validated.</p>\r\n  <h1>When</h1>\r\n  <p>Use helper classes when handling user input.</p>\r\n  <h1>How</h1>\r\n  <p>Perform the following actions to assure that user input is validated: </p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Define a helper class.</strong> Define a container class for user input. Since user input is most likely to be in the form of a string, declare a private string member. Declare an accessor for retrieving the value of the string member.</p>\r\n      <li>\r\n        <p>\r\n          <strong>Define a validation function.</strong> Define a private validation function as a member of the helper class. This validation function may call other validation functions that are implemented in the input validation class or library.</p>\r\n        <li>\r\n          <p>\r\n            <strong>Define a modifier.</strong> Define a modifier for the helper class that takes user input as an argument. Call the private validation function on user input. Return an error if user input is not valid. If user input is valid, assign user input as the value for the private string member. Now, whenever an instance of this helper class has data assigned to it, there is assurance that the data it contains has been validated.</p>\r\n          <li>\r\n            <p>\r\n              <strong>Use the helper class.</strong> Identify all locations where user input is handled. Replace direct operations on user input with operations using the helper class.</p>\r\n          </li>\r\n        </li>\r\n      </li>\r\n    </li>\r\n  </ol>\r\n  <h1>Solution Example</h1>\r\n  <p>The following is an example of a helper class that may be used to assure input validation:</p>\r\n  <pre>#include &lt;string&gt;<br />using namespace std;</pre>\r\n  <pre>class ValidatedInput &#123;<br />public:<br />&nbsp;ValidatedInput()&#123;&#125;</pre>\r\n  <pre>&nbsp;bool Init(const char&#42; strptr)&#123;<br />&nbsp;&nbsp;if(InputValidation(strptr)&#123;<br />&nbsp;&nbsp;&nbsp;data=strptr;<br />&nbsp;&nbsp;&nbsp;return true;<br />&nbsp;&nbsp;&#125;<br />&nbsp;&nbsp;else return false;<br /> &#125;</pre>\r\n  <pre>string GetData()&#123;return data;&#125;</pre>\r\n  <pre>private:<br />&nbsp;string data;<br />&nbsp;bool InputValidation(const char&#42; str)&#123;<br />&nbsp;&nbsp;//perform input validation here<br />&nbsp;&#125;<br />&#125;</pre>\r\n  <h1>Related Items</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/3de41277-0cc1-4ebc-8dd7-e96d161aa0ef\">Validate All Input</a>\r\n    </li>\r\n  </ul>"
+        ]
+      }
+    ]
+  }
+}

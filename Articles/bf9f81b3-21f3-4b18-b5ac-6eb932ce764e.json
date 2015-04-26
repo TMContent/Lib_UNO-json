@@ -1,0 +1,59 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "0",
+      "Content_Hash": "0"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "bf9f81b3-21f3-4b18-b5ac-6eb932ce764e"
+        ],
+        "Id_History": [
+          "bf9f81b3-21f3-4b18-b5ac-6eb932ce764e,1dab3725-6d02-4fc4-a44b-a39445e59b02,"
+        ],
+        "Library_Id": [
+          "f215ceee-9a08-41d9-b2c1-bbcc058a8f32"
+        ],
+        "Title": [
+          "Use LocalBroadcastManager to Prevent Data Leaks"
+        ],
+        "Category": [
+          "Communication Security"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "Android"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          "Use LocalBroadcastManager to Prevent Data Leaks"
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "false",
+          "DataType": "wikitext"
+        },
+        "Data": [
+          "==Applies To==\r\nAndroid\r\n\r\n==What to Do==\r\nIf broadcasts do not need to exit an application's boundary, use a LocalBroadcastManager. Doing so provides an efficient implementation without the security concerns of using interprocess communication (IPC) channels.\r\n  \r\nIf broadcasts will exit the application's boundary, prevent data leakage by properly constructing the intents sent for remote BroadcastReceivers and the intents allowed into the application through its own BroadcastReceiver(s).\r\n\r\n==Why==\r\nThe BroadcastReceiver class provides a mechanism for monitoring or sending information about process events through intents. (Note that these intents are fundamentally different from those used to launch an activity or start a service.) If not properly secured, broadcasts can leak data to unauthorized processes or cause an application to behave erratically.\r\n\r\n==When==\r\nImplement these practices if your application uses a BroadcastReceiver or sendBroadcast method.\r\n\r\n==How==\r\nTo prevent data leaks using LocalBroadcastManager:\r\n# **Decide whether you need LocalBroadcastManager**. If all communications will exist within the application, use a LocalBroadcastManager instead of IPC. \r\n# **Prevent intent name conflicts**. If IPC is required, ensure that the intent action names do not conflict with other packages. In that case, use your package namespace as a prefix.\r\n# **Use manifest permissions to limit who can receive broadcasts from your application**. Where possible, disable other processes from sending receivers an intent with android:exported=\"false\" in the manifest. You can further limit what a receiver can receive with permissions in the manifest.\r\n# **Send broadcasts correctly**. Before using sendOrderedBroadcast(), consider that Android sends the broadcast to recipients one at a time. Each recipient can pass the broadcast to the next or consume it. If the goal is to provide the broadcast to a specific receiver, use sendBroadcast() with a specific intent.\r\n\r\n==Problem Example==\r\nAs the MyApp developer, you have set up a BroadcastReceiver to allow one of the background services to communicate when a database routine has been run. In the activity that will display the status of the database routine, you code the BroadcastReceiver class.\r\n{{{\r\nBroadcastReceiver mReceiverStatus = new BroadcastReceiver() {\r\n@Override\r\npublic void onReceive(Context context, Intent intent) {\r\n\t\t\tint statusId = intent.getIntExtra(\"STATUS\", -1);\r\n\t\t\tupdateProgress (statusId);\r\n        \t\t}}\r\n    \t};\r\n}}}\r\n\r\nIn the {{{onCreate()}}} method, you register the receiver with an intent and intent filter:\r\n\r\n{{{\r\nIntentFilter filterStatus = new IntentFilter();\r\n\tfilterStatus.addAction(\"STATUS\");\r\n\tregisterReceiver (mReceiverStatus, filterStatus, null, null);\r\n}}}\r\n\r\n\r\nWhen the application is running, you notice some odd data entering the application. After investigating for days, you realize that you may be receiving data from another broadcast. This reception is corrupting your application’s integrity.\r\n\r\n==Solution Example==\r\n\r\nIn this case, you chose a poor name: The string \"STATUS\" is common for an intent filter. Because the broadcast receiver is registered to receive any system broadcasts with that intent filter, there is a high likelihood it will view other application broadcasts. Instead, choose a less common name with the prefix of your package. For example:\r\n\r\n{{{\r\n\tfilterStatus.addAction(\"com.myapp.dbMethod.state\");\r\n}}}\r\n\r\nNext, because the communications are all within MyApp, there is no need for IPC. Using a {{{LocalBroadcastManager}}} makes more sense. You can keep the {{{BroadcastReceiver}}} class but register it in {{{onCreate()}}} as:\r\n\r\n{{{\r\nLocalBroadcastManager.getInstance(this).registerReceiver(mReceiverStatus,\r\n      new IntentFilter(\"com.myapp.dbMethod.state\"));\r\n}\r\n}}}\r\n\r\n\r\nIf you later decide that you need to receive inter-process broadcasts, you can include a permission name when registering the receiver:\r\n\r\n{{{\r\nregisterReceiver(mReceiverStatus, filterStatus, \"com.myapp.STATE_MESSAGE\", null);\r\n}}}\r\n\r\nThe sending application will now need to specify this permission in its manifest with something akin to the code below:\r\n\r\n{{{\r\n<uses-permission android:name=\" com.myapp.STATE_MESSAGE \"/>\r\n\t<permission android:name=\" com.myapp.STATE_MESSAGE \"\r\n        \t\tandroid:label=\"@string/monitoring_permission_label\"\r\n       \t\t android:description=\"@string/monitoring_permission_desc\"\r\n        \t\tandroid:permissionGroup=\"android.permission-group.HARDWARE_CONTROLS\"\r\n        \t\tandroid:protectionLevel=\"dangerous\" />\r\n}}}\r\n\r\n\r\n==Related Items in TeamMentor==\r\n\r\n*Provide a link to the **Principle** this guideline outlines implementation for.\r\n*Provide links to related **How-to(s)**. \r\n*Provide links to related **Code Example(s)**.\r\n*Provide links to the **Checklist Item** that is used to validate implementation of this guideline.\r\n*Provide links to **Vulnerability(ies)** that this guideline will mitigate.\r\n*Provide links to **Attack(s)** that this guideline will prevent.\r\n*Provide links to related **Guideline(s)**.\r\n*Provide links to other related TM Content.\\\\\r\n\\\\\r\n\r\n==Additional Resources==\r\nIf applicable, provide **trusted** links in the form of a bullet list:\r\n*Provide trusted trusted links to additional outside resources.\r\n*Specify relevant references.\\\\\r\n\\\\\r\n"
+        ]
+      }
+    ]
+  }
+}

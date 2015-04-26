@@ -1,0 +1,59 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "0",
+      "Content_Hash": "0"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "2ed4ee74-fba9-4d3c-b753-0fc8d0295b3b"
+        ],
+        "Id_History": [
+          "2ed4ee74-fba9-4d3c-b753-0fc8d0295b3b,106b2713-8ff9-4f1a-9f40-07c4973a1b7e,"
+        ],
+        "Library_Id": [
+          "c037d0d2-0617-44f3-b846-21dc3d02c4f8"
+        ],
+        "Title": [
+          "Reduce Application Fingerprints"
+        ],
+        "Category": [
+          "Hardening"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "PHP"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          "Reduce Application Fingerprints"
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "false",
+          "DataType": "wikitext"
+        },
+        "Data": [
+          "==Applies To==\r\n\r\n* PHP\r\n\r\n==What to Do==\r\n\r\nReduce application fingerprints by removing as many uniquely identifiable strings as possible from the public areas of your application.\r\n\r\n==Why==\r\n\r\nUniquely identifiable strings, such as application name and version number, are telltale signs that the application is running on your system. These telltale signs, or fingerprints, are often searched for via automated scripts that look for a target to attack. \r\n\r\nRemoving uniquely identifiable strings from the public areas of your application makes it more difficult for attackers’ automated scripts to find and attack your application. \r\n\r\n(It is impractical to attempt to eliminate the possibility of fingerprinting altogether, because the effort required to do would almost certainly outweigh the benefits.)\r\n\r\n==How==\r\n\r\nTo remove uniquely identifiable strings from the public areas of your application:\r\n\r\n# **Identify public areas of the application.** Identify all portions of the application that send information of any kind to the user without requiring authentication. This includes the login page, the forgot password page, any kind of public content pages, help pages, contact pages, URL strings, error pages, and particularly banners that include the application name and version. Make a spreadsheet about all of these sources of information made publically available by the application.\r\n# **Consider locking down public areas.** Go through the spreadsheet of sources of information disclosed to the public by the application. Consider whether it is possible to lock down any of these sources by requiring authentication before the information is disclosed.\r\n# **Find uniquely identifiable strings.** In the code, examine each source of information disclosed by the application. Identify strings that can be used to uniquely identify your application. Add this information to the spreadsheet.\r\n# **Remove or replace uniquely identifiable strings.** For each string that can be used to uniquely identify the application, consider whether this string can be removed completely or replaced by a more ambiguous string. Remove or replace every such string, if possible.\r\n"
+        ]
+      }
+    ]
+  }
+}

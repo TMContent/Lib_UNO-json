@@ -1,0 +1,68 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "1948058769",
+      "Content_Hash": "957574237"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "b044dc16-7a49-4c49-a65b-d5315a3a91de"
+        ],
+        "Id_History": [
+          "b044dc16-7a49-4c49-a65b-d5315a3a91de,8fd254fe-dd06-45b0-b4d2-a1c6af5bcea4,"
+        ],
+        "Library_Id": [
+          "92718d53-36b2-47bc-b6f5-e60994385f46"
+        ],
+        "Title": [
+          "How to Authorize Declaratively"
+        ],
+        "Category": [
+          "Authorization"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "WCF 3.5"
+        ],
+        "Type": [
+          "How To"
+        ],
+        "DirectLink": [
+          "How to Authorize Declaratively"
+        ],
+        "Tag": [
+          "WCF 3.5"
+        ],
+        "Security_Demand": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          "J.D. Meier, Jason Taylor, Prashant Bansode, Carlos Farre, Madhu Sundararajan, Rob Boucher, Steve Gregersen"
+        ],
+        "Status": [
+          ""
+        ],
+        "Source": [
+          "SI"
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>Microsoft&#174; Windows Communication Foundation (WCF) 3.5 <li>Microsoft Visual Studio&#174; 2008</li></li>\r\n  </ul>\r\n  <h1>Description</h1>\r\n  <p>Declarative authorization can be added to application code at design time by specifying required access for a particular method or class declared as an attribute on the operation. Declarative role-based authorization is best for authorizing access to WCF at the operation level. Declarative authorization can be added to application code at design time by specifying required access for a particular method or class declared as an attribute on the operation. </p>\r\n  <p>Authorize windows groups declaratively by adding the PrincipalPermission attribute above each service method that requires authorization.&nbsp; Specify the Windows user group required to access the method in the Role field.</p>\r\n  <pre>&#91;PrincipalPermission(SecurityAction.Demand, Role = \"accounting\")&#93;<br />public double Add(double a, double b)<br />&#123;<br />&nbsp;&nbsp;&nbsp; return a &#43; b;<br />&#125;</pre>\r\n  <p>The username/password combination supplied by the client will be mapped by the WCF service to a Windows user account.&nbsp; If the user is successfully authorized, the system will next check to see if the user belongs to the group declared with the PrinciplePermission role.&nbsp; Method access will be granted if the user belongs to the role.</p>\r\n  <h1>Additional Resources</h1>\r\n  <ul>\r\n    <li>For more information on authorization, see &#8220;Authorization&#8221; at <a href=\"http://msdn2.microsoft.com/en-us/library/ms733071.aspx\">http://msdn2.microsoft.com/en-us/library/ms733071.aspx</a><li>For Roles.IsUserInRole method information, see <a href=\"http://msdn.microsoft.com/en-us/library/4z6b5d42.aspx\">http://msdn.microsoft.com/en-us/library/4z6b5d42.aspx</a><br /></li></li>\r\n  </ul>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
+        ]
+      }
+    ]
+  }
+}

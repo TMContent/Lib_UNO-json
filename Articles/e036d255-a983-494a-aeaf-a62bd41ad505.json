@@ -1,0 +1,59 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "0",
+      "Content_Hash": "0"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "e036d255-a983-494a-aeaf-a62bd41ad505"
+        ],
+        "Id_History": [
+          "e036d255-a983-494a-aeaf-a62bd41ad505,9e3a3b8f-f2b7-48a4-b6cd-706d0a6a96df,"
+        ],
+        "Library_Id": [
+          "7d2d0571-e542-45cd-9335-d7a0556c2bea"
+        ],
+        "Title": [
+          "Use SSL for All Sensitive Pages"
+        ],
+        "Category": [
+          "Communication Security"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "Web Application"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          "Use SSL for All Sensitive Pages"
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "false",
+          "DataType": "wikitext"
+        },
+        "Data": [
+          "==Applies To==\r\n\r\n* Web Applications\r\n\r\n==What to Do==\r\n\r\nRequire SSL for all private pages.\r\n\r\n==Why==\r\n\r\nSSL should be used to protect all pages that handle sensitive data, including all pages that use authentication or authorization features, to prevent unauthorized information disclosure.\r\n\r\n==How==\r\n\r\nThe simplest approach for enabling SSL for all sensitive pages is to use SSL for the entire site. Enabling SSL for the entire site may require additional computing resources, so for performance reasons, it may be acceptable to enable SSL only for sensitive pages. To enable SSL only for sensitive pages:\r\n\r\n# **Identify sensitive pages.** Make a list of all pages that handle sensitive information, including all pages that use authentication or authorization features.\r\n# **Enable SSL for each directory containing sensitive pages.** The exact instructions for doing so are different for different web servers. Use the web server administration interface or edit the server configuration files to enable SSL for all folders containing sensitive pages.\r\n# **Redirect non-SSL requests to SSL-protected pages.** The exact procedure for redirecting HTTP connections to HTTPS is different for different servers.\r\n"
+        ]
+      }
+    ]
+  }
+}

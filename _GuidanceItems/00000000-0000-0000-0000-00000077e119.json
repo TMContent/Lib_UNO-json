@@ -1,0 +1,59 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "0",
+      "Content_Hash": "0"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "00000000-0000-0000-0000-00000077e119"
+        ],
+        "Id_History": [
+          "00000000-0000-0000-0000-00000077e119,467cd44a-9c01-43cf-80e7-4f2da47c962f,"
+        ],
+        "Library_Id": [
+          "26bd1a04-beed-4a66-917d-b6ab0a7d634c"
+        ],
+        "Title": [
+          "Use Parameterized APIs to Launch External Processes"
+        ],
+        "Category": [
+          "Dangerous APIs"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          ".NET"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          "Use Parameterized APIs to Launch External Processes"
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "false",
+          "DataType": "wikitext"
+        },
+        "Data": [
+          "==Applies To==\r\n\r\n* ASP.NET\r\n\r\n==What to Do==\r\n\r\nUse parameterized APIs to launch external processes.\r\n\r\n==Why==\r\n\r\nUsing parameterized APIs helps prevent injection attacks.\r\n\r\n==How==\r\n\r\nTo use parameterized APIs to launch external processes:\r\n\r\n# **Identify all calls to external commands.** Search for the following APIs to find code that executes external commands: //AppCommandHandler.ExecuteCommand//, //System.Diagnostics.Process//.\r\n# **Use parameterized APIs.** The //System.Diagnostics.Process// object provides a parameterized API for executing external commands. Command parameters can be set using a //System.Diagnostics.ProcessStartInfo// object, which is passed as an argument to the constructor of the //System.Diagnostics.Process// object. Use these APIs whenever executing external commands from your applications. This is the most common way to do it, so your application is probably already doing it this way.\r\n# **Validate data passed to command execution APIs.** Input passed to external commands should be very carefully validated. Be particularly cautious if passing user data to a command interpreter, such as cmd.exe or PowerShell. Be careful when passing user data to any program that may spawn another application, for example explorer.exe. Even if parameterized APIs are used, passing untrusted user data to such processes may result in command injection vulnerabilities. It is best to avoid calling programs that may spawn other programs based on parameters passed to them. If such programs cannot be avoided, user data has to be positively validated before being passed in parameters."
+        ]
+      }
+    ]
+  }
+}

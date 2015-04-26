@@ -1,0 +1,68 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "-1322456286",
+      "Content_Hash": "-742949556"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "ef0b2802-9b56-4b45-a6f8-77d54a2e8f0b"
+        ],
+        "Id_History": [
+          "ef0b2802-9b56-4b45-a6f8-77d54a2e8f0b,789070d2-b68b-45ab-a407-4fc8bd2a2ec2,"
+        ],
+        "Library_Id": [
+          "26bd1a04-beed-4a66-917d-b6ab0a7d634c"
+        ],
+        "Title": [
+          "Centralize Authentication"
+        ],
+        "Category": [
+          "Authentication"
+        ],
+        "Phase": [
+          "Deployment"
+        ],
+        "Technology": [
+          ".NET"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          "Centralize Authentication"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ],
+        "Source": [
+          "SI"
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h1>Applies To</h1>\r\n  <ul>\r\n    <li>ASP.NET 4.0</li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Use forms authentication.</p>\r\n  <h1>Why</h1>\r\n  <p>Centralizing authentication mechanisms makes them simpler to maintain.</p>\r\n  <h1>When</h1>\r\n  <p>Centralize authentication mechanisms in all web applications that use authentication.</p>\r\n  <h1>How</h1>\r\n  <p>ASP.NET has great built-in centralized authentication functionality. To use forms authentication, enable and configure the following section in <em>Web.config</em>:</p>\r\n  <pre>&lt;system.web&gt;<br />&nbsp; &lt;authentication mode=\"Forms\"&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp; ...<br />&nbsp; &lt;/authentication&gt;<br />&lt;/system.web&gt;</pre>\r\n  <h1>Additional Resources</h1>\r\n  <ul>\r\n    <li>\r\n      <p>For more information about forms authentication, please see \"An Overview of Forms Authentication \" at <a href=\"http://www.asp.net/security/tutorials/an-overview-of-forms-authentication-cs\">http://www.asp.net/security/tutorials/an-overview-of-forms-authentication-cs</a></p>\r\n    </li>\r\n  </ul>"
+        ]
+      }
+    ]
+  }
+}

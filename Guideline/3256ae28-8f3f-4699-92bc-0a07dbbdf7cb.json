@@ -1,0 +1,68 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "-1161380144",
+      "Content_Hash": "-566197576"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "3256ae28-8f3f-4699-92bc-0a07dbbdf7cb"
+        ],
+        "Id_History": [
+          "3256ae28-8f3f-4699-92bc-0a07dbbdf7cb,c2e67780-6644-4496-909b-1b964d8db209,"
+        ],
+        "Library_Id": [
+          "51eb81c3-1d23-4146-ba83-8a6bb9233c11"
+        ],
+        "Title": [
+          "Avoid Using C-Style Type Casts"
+        ],
+        "Category": [
+          "Unmanaged Code"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "C++"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          "Avoid Using C-Style Type Casts"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ],
+        "Source": [
+          "SI"
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>C&#43;&#43;</li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Use C&#43;&#43; type-casts instead of C type-casts.</p>\r\n  <h1>Why</h1>\r\n  <p>C&#43;&#43; supports C-style casts and introduces its own, safer type-casts. The new C&#43;&#43; style type-casts are safer to use because they allow the compiler to better detect dangerous type-casting.</p>\r\n  <h1>How</h1>\r\n  <p>Change code to use C&#43;&#43; style casts instead of C-style casts. There are several type-cast options in C&#43;&#43;:</p>\r\n  <ul>\r\n    <li>\r\n      <p>\r\n        <strong>reinterpret_cast&lt;type&gt;(expression).</strong> A reinterpret_cast provides no additional security, because it can convert an object from one type to an object of another type without any additional checks. Avoid using reinterpret_cast unless it is absolutely necessary.</p>\r\n      <li>\r\n        <p>\r\n          <strong>static_cast&lt;type&gt;(expression).</strong> A static cast provides some security in that the compiler will issue an error if an invalid cast is attempted. Not all valid casts are safe, however.</p>\r\n        <li>\r\n          <p>\r\n            <strong>dynamic_cast&lt;type&gt;(expression).</strong> A dynamic_cast provides the highest degree of security, because it causes the compiler to insert code that checks the type-cast at run-time. When converting an incompatible pointer type, dynamic_cast returns a null pointer. When converting an incompatible object type, dynamic_cast throws a std::bad_cast exception.</p>\r\n          <li>\r\n            <p>\r\n              <strong>const_cast&lt;type&gt;(expression).</strong> A const_cast is used to make constant variable mutable. There should hardly ever be a need to use a const_cast.</p>\r\n          </li>\r\n        </li>\r\n      </li>\r\n    </li>\r\n  </ul>\r\n  <p>In most situations, static and dynamic casts should be used. Dynamic casts are generally preferred to static casts.</p>"
+        ]
+      }
+    ]
+  }
+}

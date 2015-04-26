@@ -1,0 +1,59 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "0",
+      "Content_Hash": "0"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "00000000-0000-0000-0000-0000007db8fe"
+        ],
+        "Id_History": [
+          "00000000-0000-0000-0000-0000007db8fe,4f479644-773a-4468-8761-bb73b4da5736,"
+        ],
+        "Library_Id": [
+          "b6f408c5-6e6e-4bc0-90a5-0bb10becc2ce"
+        ],
+        "Title": [
+          "Use Strong SSL Configurations"
+        ],
+        "Category": [
+          "Communication Security"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "iOS"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          "Use Strong SSL Configurations"
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "false",
+          "DataType": "WikiText"
+        },
+        "Data": [
+          "==Applies To==\r\n\r\n* iOS applications that send or receive sensitive data over the network.\r\n\r\n==What to Do==\r\n\r\nUse strong SSL configurations to protect network traffic.\r\n\r\n==Why==\r\n\r\nUsing strong SSL configurations prevents eavesdropping and other man-in-the-middle attacks. iOS SSL configurations are relatively strong by default, depending on the SDK version, and need to be intentionally degraded to be unsafe. Unfortunately, many developers degrade iOS SSL strength for compatibility with the development environments and subsequently do not restore the SSL configuration to the secure defaults in the production releases.\r\n\r\n==How==\r\n\r\nTo use strong SSL configurations:\r\n\r\n# **Disable self-signed certificates.** Self-signed certificates are disabled by default by the iOS SDK. Developers have to intentionally enable self-signed certificates for the application to accept them. Self-signed certificates are often enabled for testing in the development environment. It is important to disable self-signed certificates in production releases, because self-signed certificates allow man-in-the-middle attacks, which largely negate the use of SSL.\r\n# **Identify the available SDK version.** Identify the iOS SDK version used by the application.\r\n# **Use iOS SDK version 5 or higher.** The cipher suites used by SSL implementations in iOS SDKs vary by version. Versions 5 and higher of the iOS SDK use strong SSL cipher suites. There are no practical ways to control which cipher suites are used by iOS applications. If strength of SSL ciphers is a critical requirement, use version 5 or higher of the iOS SDK.\r\n\r\n==Communication Security Guidelines==\r\n* [[00000000-0000-0000-0000-0000006aa5d9|Disable Self-signed SSL Certificates]]\r\n* [[00000000-0000-0000-0000-00000060779f|Use SSL to Protect Communications]]\r\n* [[00000000-0000-0000-0000-0000007db8fe|Use Strong SSL Configurations]]\r\n\r\n==Communication Security Checklists==\r\n* [[00000000-0000-0000-0000-00000092c321|Self-signed SSL Certificates Are Disabled]]\r\n* [[00000000-0000-0000-0000-0000005faaf0|SSL Is Used to Protect Communications]]\r\n* [[00000000-0000-0000-0000-0000006b67b3|Strong SSL Configurations Are Used]]"
+        ]
+      }
+    ]
+  }
+}

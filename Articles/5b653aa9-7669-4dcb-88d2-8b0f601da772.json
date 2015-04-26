@@ -1,0 +1,59 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "0",
+      "Content_Hash": "0"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "5b653aa9-7669-4dcb-88d2-8b0f601da772"
+        ],
+        "Id_History": [
+          "5b653aa9-7669-4dcb-88d2-8b0f601da772,dbec4b47-fa7d-41e7-939a-766be8b2c8e4,"
+        ],
+        "Library_Id": [
+          "26bd1a04-beed-4a66-917d-b6ab0a7d634c"
+        ],
+        "Title": [
+          "Disable the External Entities Feature"
+        ],
+        "Category": [
+          "Dangerous APIs"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          ".NET"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          "Disable the External Entities Feature"
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "false",
+          "DataType": "wikitext"
+        },
+        "Data": [
+          "==Applies To==\r\n\r\n* ASP.NET 4.0\r\n\r\n==What to Do==\r\n\r\nDisable the external entities feature of the XML parser.\r\n\r\n==Why==\r\n\r\nDisable the external entities feature of the XML parser to prevent XML External Entity (XXE) processing vulnerabilities. The external entities feature is rarely used in practice but can result in vulnerabilities if left enabled.\r\n\r\n==How==\r\n\r\nTo disable the external entities feature:\r\n\r\n# **Find code that uses the XML parser.** Search for code that references the XmlDocument class. Make a spreadsheet to track this code.\r\n# **Disable external entity processing.** For each piece of code that uses the XmlDocument class, add code that sets the XmlResolver property of each XmlDocument object to null before that object is used to process data.\r\n\r\n==Additional Resources==\r\n\r\n* For more information about disabling external entities processing in ASP.NET applications, see http://stackoverflow.com/questions/14230988/how-to-prevent-xxe-attack-xmldocument-in-net\r\n"
+        ]
+      }
+    ]
+  }
+}

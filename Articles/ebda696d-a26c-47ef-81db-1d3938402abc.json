@@ -1,0 +1,59 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "0",
+      "Content_Hash": "0"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "ebda696d-a26c-47ef-81db-1d3938402abc"
+        ],
+        "Id_History": [
+          "ebda696d-a26c-47ef-81db-1d3938402abc,fe007089-4b68-4470-be82-b13668f73a9f,"
+        ],
+        "Library_Id": [
+          "7d2d0571-e542-45cd-9335-d7a0556c2bea"
+        ],
+        "Title": [
+          "Valid SSL Certificates Are Used"
+        ],
+        "Category": [
+          "Communication Security"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "Web Application"
+        ],
+        "Type": [
+          "Checklist Item"
+        ],
+        "DirectLink": [
+          "Valid SSL Certificates Are Used"
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "false",
+          "DataType": "wikitext"
+        },
+        "Data": [
+          "==Applies To==\r\n\r\n* Web Applications\r\n\r\n==What to Check For==\r\n\r\nVerify that valid SSL certificates are used.\r\n\r\n==Why==\r\n\r\nUsing valid SSL certificates helps prevent phishing attacks by assuring visitors that your site is secure and trusted. \r\n\r\n==How to Check==\r\n\r\nTo verify that a valid SSL certificate is used, open the SSL-secured area of the site with a web browser. The web browser should indicate whether the SSL certificate is valid in the URL bar. The web browser will display a warning message if the SSL certificate is not valid.\r\n\r\n==How to Fix==\r\n\r\nTo use a valid SSL certificate:\r\n\r\n# **Purchase a valid SSL certificate.** You may purchase a valid SSL key from VeriSign, Thawte, or your web hosting provider. Follow the vendor's instructions for purchasing the SSL certificate. The certificate is usually a .cer file. Make sure the certificate matches all domains used by the application.\r\n# **Import the valid SSL certificate.** The exact instructions for importing SSL certificates are different for different application servers. Please, refer to your application server's documentation or technical support for detailed instructions on how to install SSL certificates.\r\n# **Configure the web application server to use SSL.** The exact instructions for configuring web application servers to use SSL are different for different platforms. Please, refer to your application server's documentation or technical support for detailed instructions on how to install SSL certificates.\r\n\r\n==Additional Resources==\r\n\r\n* For more information about importing SSL certificates into common Web Servers, please see http://www.directnic.com/help/guides/index.php?guide_id=7\r\n"
+        ]
+      }
+    ]
+  }
+}

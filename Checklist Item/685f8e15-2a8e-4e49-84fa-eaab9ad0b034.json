@@ -1,0 +1,68 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "-542683835",
+      "Content_Hash": "2052869733"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "685f8e15-2a8e-4e49-84fa-eaab9ad0b034"
+        ],
+        "Id_History": [
+          "685f8e15-2a8e-4e49-84fa-eaab9ad0b034,21f32e7c-b9c0-4d22-98cc-680368f54708,"
+        ],
+        "Library_Id": [
+          "26bd1a04-beed-4a66-917d-b6ab0a7d634c"
+        ],
+        "Title": [
+          "Test Accounts Are Removed"
+        ],
+        "Category": [
+          "Administration"
+        ],
+        "Phase": [
+          "Deployment"
+        ],
+        "Technology": [
+          ".NET"
+        ],
+        "Type": [
+          "Checklist Item"
+        ],
+        "DirectLink": [
+          "Test Accounts Are Removed"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ],
+        "Source": [
+          "SI"
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h1>Applies To</h1>\r\n  <ul>\r\n    <li>ASP.NET 4.0</li>\r\n  </ul>\r\n  <h1>What to Check For</h1>\r\n  <p>Ensure all test accounts have been removed.</p>\r\n  <h1>Why</h1>\r\n  <p>Test accounts provide access to the application's functionality during development. Since they are often poorly secured and monitored, they are a common target for attackers.</p>\r\n  <h1>How To Check</h1>\r\n  <p>Use the following steps to ensure your application has all of its test accounts removed:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Check if your application has existing test users.</strong> Enumerate all of your application's users. Verify that there are no test accounts in your application's user database. Common test accounts include, but are not limited to: any account name that includes the application's name, any account name containing the word \"test\", and any account that has been identified in your application's documentation as being a test account.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Check if your application has hard-coded users.</strong> Verify that your application's code base does not contain any hard-coded users. A hard-coded user is a username and password that is initialized to a fixed value when your application starts. For example:</p>\r\n      <pre>string user = \"test002\";<br />char[] pass = {'p','a','s','s'};</pre>\r\n      <p>or </p>\r\n      <pre>string user = \"test002\";<br />char[] pass = \"pass\".ToCharArray();</pre>\r\n      <p>Common locations to look for hard-coded users include: authentication procedures, authorization procedures, procedures that involve change of privileges, and components that require access controls.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Check if your application has existing test roles.</strong> Verify that there are no existing test roles left in your application. Common test roles are any roles containing the word \"test\" and any roles that are identified as test roles in your application's documentation.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Check if your application has special privileges for test roles.</strong> Verify that there are no conditions throughout your application's code base that grant special permissions to test roles. Common locations to look for special privileges to test roles include authorization procedures, procedures that involve change of privileges, and components that require access controls.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Verify that the application is not being run as a test user on the server.</strong> It is common to run applications with more privileges than necessary when debugging. However, only the least privileges should be available in the production environment.</p>\r\n    </li>\r\n  </ol>\r\n  <h1>How To Fix</h1>\r\n  <p>Use the following steps when removing test accounts:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Enumerate all accounts</strong>: List all the users to your application. This should be a full comprehensive list that includes, but is not limited to, active users, inactive users, users pending confirmation, and test accounts.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Identify their use</strong>: Examine the use/status of each account. Sort the accounts into groups according to their use/status.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Remove the accounts that will no longer be used</strong>: Once the accounts are sorted into groups, list all accounts that are used for test purposes. After identifying all test accounts, remove them from your application's database.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Enforce strong passwords on the remaining accounts</strong>: After removing all test accounts, enforce strong passwords for the remaining accounts in your application. Strong passwords decrease the probability of compromising valid users. </p>\r\n    </li>\r\n  </ol>\r\n  <h1>Related Items</h1>\r\n  <em>You may find these additional articles useful</em>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/87f2344d-69c0-49b7-b712-7d39044a9d5d\">Remove Test Accounts</a>\r\n    </li>\r\n  </ul>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance. </p>\r\n  <h1>\r\n  </h1>\r\n  <h1>\r\n  </h1>"
+        ]
+      }
+    ]
+  }
+}

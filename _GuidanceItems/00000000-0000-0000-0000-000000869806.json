@@ -1,0 +1,59 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "0",
+      "Content_Hash": "0"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "00000000-0000-0000-0000-000000869806"
+        ],
+        "Id_History": [
+          "00000000-0000-0000-0000-000000869806,a03a6007-5063-436b-a254-e0f8c73558d3,"
+        ],
+        "Library_Id": [
+          "7d2d0571-e542-45cd-9335-d7a0556c2bea"
+        ],
+        "Title": [
+          "Validate Data Coming from WebSockets"
+        ],
+        "Category": [
+          "WebSockets"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "HTML5"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          "Validate Data Coming from WebSockets"
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "false",
+          "DataType": "wikitext"
+        },
+        "Data": [
+          "==Applies To==\r\n\r\n* HTML5\r\n\r\n==What to Do==\r\n\r\nValidate data coming from WebSockets.\r\n\r\n==Why==\r\n\r\nValidate data coming from WebSockets in order to make it more difficult for an attacker to send malicious data to the application. An attacker might be able to take over the remote end of a WebSocket and attempt to leverage this to control the user's browser. Validating data received from WebSockets severely limits the ability of attackers to attempt to exploit the client-side part of the application.\r\n\r\n==How==\r\n\r\nTo validate data coming from WebSockets:\r\n\r\n# **Identify code that receives data from WebSockets.** Search the application code for all references to the //onmessage// event. Create a spreadsheet to list all code that receives data from WebSockets.\r\n# **Identify data formats.** For each piece of code that receives data from WebSockets, define valid data formats that are expected by the application. For example, a piece of code might be expecting a time, a name, or a social security number, and each of these data types has a distinct valid format. Add information to the spreadsheet about these expected data formats. Include examples and be as specific as possible.  \r\n# **Define validators.** For each distinct data type, write a validator function that determines whether a piece of data matches the correct format or not. Regular expressions are usually used for this task. Validate data length first, before using regular expressions, to prevent regular expression denial of service attacks. The general pattern for validating data formats is: validata data length, validate valid characters, validate patterns of structured data (like social security numbers or dates), and validate ranges of numerical data.\r\n# **Validate data.** For each piece of code that receives data from WebSockets listed in the spreadsheet, add code to validate the data immediately after receiving it. Use the validator that matches the expected data type.  Continue to process the data only if it has the correct format.\r\n\r\n==WebSocket Guidelines==\r\n\r\n* [[00000000-0000-0000-0000-000000869806|Validate Data Coming from WebSockets]]\r\n* [[00000000-0000-0000-0000-00000093dea4|Check the Origin Header in the WebSocket Handshake]]\r\n* [[00000000-0000-0000-0000-0000005f2e4a|Use TLS/SSL to Encrypt WebSocket Connections]]\r\n* [[00000000-0000-0000-0000-000000736a21|Check the Origin Attribute of WebSocket Messages]]\r\n* [[00000000-0000-0000-0000-0000005326a8|Use the Latest WebSocket RFC 6455 Standard]]\r\n* [[00000000-0000-0000-0000-00000085bc2f|Do Not Tunnel TCP via WebSockets]]\r\n\r\n==WebSocket Checklist Items==\r\n\r\n* [[00000000-0000-0000-0000-00000086537e|Data Coming from WebSockets Is Validated]]\r\n* [[00000000-0000-0000-0000-00000077e316|The Origin Header in WebSocket Handshake is Checked]]\r\n* [[bd870268-f104-4f6f-ba0d-6628dc34eb2a|TLS/SSL is Used to Encrypt WebSocket Connections]]\r\n* [[00000000-0000-0000-0000-0000002f39d7|The Origin Attribute of WebSocket Messages Is Checked]]\r\n* [[18d5564d-00a4-4afe-a853-707269df2566|Latest RFC 6455 Standard is Used]]\r\n* [[00000000-0000-0000-0000-00000091ce5a|TCP Is Not Tunneled via WebSockets]]\r\n"
+        ]
+      }
+    ]
+  }
+}

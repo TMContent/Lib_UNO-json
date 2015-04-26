@@ -1,0 +1,59 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "0",
+      "Content_Hash": "0"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "b017f172-171b-4aa3-96d4-47cbaaf362e2"
+        ],
+        "Id_History": [
+          "b017f172-171b-4aa3-96d4-47cbaaf362e2,ddc1dc34-cd43-4197-bf49-8d25da710340,"
+        ],
+        "Library_Id": [
+          "be5273b1-d682-4361-99d9-6234f2d47eb7"
+        ],
+        "Title": [
+          "Protect the Encryption Keys"
+        ],
+        "Category": [
+          "Cryptography"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "C++"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          "Protect the Encryption Keys"
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "false",
+          "DataType": "wikitext"
+        },
+        "Data": [
+          "==Applies To==\r\n\r\n* C++\r\n\r\n==What to Do==\r\n\r\nProtect the encryption keys.\r\n\r\n==Why==\r\n\r\nProtect the encryption keys to prevent attackers from being able to decrypt your encrypted data.\r\n\r\n==How==\r\n\r\nTo protect the encryption keys:\r\n\r\n# **Use platform-provided key management if possible.** One of the major advantages of using platform-provided key management is that the key management issue is handled by the operating system. For example, if you are using Windows, you can use DPAPI to handle key management. The key that DPAPI uses is derived from the password associated with the process account that calls the DPAPI functions. You can use DPAPI to pass the burden of key management to the operating system.\r\n# ** Cycle your keys periodically.** Generally, a static secret is more likely to be discovered over time. Design the application in a manner that facilitates regular changes of encryption keys and the corresponding re-encryption of all the sensitive data.\r\n"
+        ]
+      }
+    ]
+  }
+}

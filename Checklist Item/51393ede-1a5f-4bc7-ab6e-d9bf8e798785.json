@@ -1,0 +1,68 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "450845397",
+      "Content_Hash": "-1099323442"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "51393ede-1a5f-4bc7-ab6e-d9bf8e798785"
+        ],
+        "Id_History": [
+          "51393ede-1a5f-4bc7-ab6e-d9bf8e798785,a4b28fc0-b693-493e-9f47-b309ccec8849,"
+        ],
+        "Library_Id": [
+          "be5273b1-d682-4361-99d9-6234f2d47eb7"
+        ],
+        "Title": [
+          "Libraries Are Loaded Safely on Windows"
+        ],
+        "Category": [
+          "Dangerous APIs"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "C++"
+        ],
+        "Type": [
+          "Checklist Item"
+        ],
+        "DirectLink": [
+          "Libraries Are Loaded Safely on Windows"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ],
+        "Source": [
+          "SI"
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>C&#43;&#43;<li>Windows</li></li>\r\n  </ul>\r\n  <h1>What to Check For</h1>\r\n  <p>Verify that libraries are loaded safely on Windows.</p>\r\n  <h1>Why</h1>\r\n  <p>If a fully-qualified path to a DLL library is not specified, a malicious library with the same name may be loaded by an attacker, allowing him to alter program behavior or execute arbitrary code.</p>\r\n  <h1>How to Check</h1>\r\n  <p>Use the following steps to check if libraries are loaded safely:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Review code.</strong> Search for calls to LoadLibrary() and LoadLibraryEx() functions.</p>\r\n      <li>\r\n        <p>\r\n          <strong>Verify that absolute paths are used.</strong> Check the arguments to LoadLibrary() and LoadLibraryEx() functions to make sure fully-qualified file names are used.</p>\r\n        <li>\r\n          <p>\r\n            <strong>Check ACLs.</strong> Inspect access controls on the application directory to make sure that Write access is denied to intruders.</p>\r\n        </li>\r\n      </li>\r\n    </li>\r\n  </ol>\r\n  <h1>How to Fix</h1>\r\n  <p>Perform the following actions in order to avoid loading a malicious DLL:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Review code.</strong> Search for calls to LoadLibrary() and LoadLibraryEx() functions.</p>\r\n      <li>\r\n        <p>\r\n          <strong>Always specify absolute paths.</strong> If you do not specify the absolute path, the OS searches for the library through the library search order. Since the search order will look for DLLs in other locations on the target machine, it may cause the process to load unintended, malicious DLLs. If a malicious DLL is loaded, malicious code will run with the privilege level of the executing process.</p>\r\n        <li>\r\n          <p>\r\n            <strong>Secure the application directory.</strong> Place strong ACLs on the application directory, denying WRITE access to intruders. The &lt;application_name&gt;.local file in the application&#8217;s directory causes the OS to load requested DLLs from that directory, even when absolute paths are used.</p>\r\n        </li>\r\n      </li>\r\n    </li>\r\n  </ol>\r\n  <h1>Related Items</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/4a17b938-80d0-455a-a77f-1b786e3ed90b\">Load Libraries Safely on Windows</a>\r\n    </li>\r\n  </ul>\r\n  <h1>&nbsp;</h1>"
+        ]
+      }
+    ]
+  }
+}

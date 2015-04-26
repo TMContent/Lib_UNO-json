@@ -1,0 +1,56 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "0",
+      "Content_Hash": "0"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "4136930d-7256-43c6-9377-b71a7ed23ab7"
+        ],
+        "Library_Id": [
+          "be5273b1-d682-4361-99d9-6234f2d47eb7"
+        ],
+        "Title": [
+          "Protect Database Access"
+        ],
+        "Category": [
+          "Database Security"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "false",
+          "DataType": "wikitext"
+        },
+        "Data": [
+          "==What to Do==\n\nDo not allow application's users to execute custom queries.\n\n==Why==\n\nPrevent users from executing custom queries to prevent this feature from being abused to bypass access controls or use the database system in an unintended and malicious manner.\n\n==How==\n\nTo prevent application's users from executing custom queries:\n\n# **Find code that executes database queries.** Make a spreadsheet of all the code that executes database queries.\n# **Identify code that allows users to execute custom queries.** Custom queries are those where the syntax of the query can be manipulated by the user, instead of just letting the user to change query parameters. Review all code that executes database queries to find features that allow users to execute custom queries. \n# **Remove code that allows users to execute custom queries.** If any code or features that allow users to manipulate database query syntax are present, remove them.\n"
+        ]
+      }
+    ]
+  }
+}

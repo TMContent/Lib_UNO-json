@@ -1,0 +1,59 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "0",
+      "Content_Hash": "0"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "bcdff411-0588-4637-b4af-c703883fde67"
+        ],
+        "Id_History": [
+          "bcdff411-0588-4637-b4af-c703883fde67,0658ced5-61b1-4d76-bcb1-9d8acc4a691b,"
+        ],
+        "Library_Id": [
+          "c037d0d2-0617-44f3-b846-21dc3d02c4f8"
+        ],
+        "Title": [
+          "WS-Routing Is Not Used"
+        ],
+        "Category": [
+          "Communication Security"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "PHP"
+        ],
+        "Type": [
+          "Checklist Item"
+        ],
+        "DirectLink": [
+          "WS-Routing Is Not Used"
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "false",
+          "DataType": "wikitext"
+        },
+        "Data": [
+          "==Applies To==\r\n\r\n* PHP\r\n\r\n==What to Check For==\r\n\r\nVerify that WS-Routing is not used.\r\n\r\n==Why==\r\n\r\nDon't use WS-Routing, because WS-Routing is vulnerable to routing detour attacks. The WS-Routing protocol doesn't have sufficient security features, so it should be avoided. \r\n\r\n==How to Check==\r\n\r\nTo check whether WS-Routing is used, ask developers whether the application actually uses WS-Routing, and review application code to find code that uses WS-Routing.  Search for keywords like \"WS-Routing\" and \"r:path\" to help find code that uses WS-Routing. \r\n\r\nIf WS-Routing is used, the code that uses it should be either removed or changed to use WS-Addressing instead.\r\n\r\n==How to Fix==\r\n\r\nTo avoid using WS-Routing:\r\n\r\n# **Find code that uses WS-Routing.** Ask developers whether the application actually uses WS-Routing. Review application code to find code that uses WS-Routing.\r\n# **Determine whether SOAP message routing functionality is needed.** Most real-life applications that use Web Services can be implemented without using SOAP message routing. Review application requirements to determine whether SOAP message routing is necessary.\r\n# **Remove or replace code that uses WS-Routing.** If SOAP message routing is not necessary, then remove the code that uses it. If SOAP message routing is necessary, rewrite code that uses WS-Routing to use WS-Addressing instead.\r\n"
+        ]
+      }
+    ]
+  }
+}

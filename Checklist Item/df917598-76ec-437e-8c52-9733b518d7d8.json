@@ -1,0 +1,68 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "-1149701806",
+      "Content_Hash": "504632827"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "df917598-76ec-437e-8c52-9733b518d7d8"
+        ],
+        "Id_History": [
+          "df917598-76ec-437e-8c52-9733b518d7d8,5f472a7f-b6cb-43bc-a04d-d7e84584e950,"
+        ],
+        "Library_Id": [
+          "be5273b1-d682-4361-99d9-6234f2d47eb7"
+        ],
+        "Title": [
+          "Important Security Operations Are Logged"
+        ],
+        "Category": [
+          "Auditing and Logging"
+        ],
+        "Phase": [
+          "Design"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Checklist Item"
+        ],
+        "DirectLink": [
+          "Important Security Operations Are Logged"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ],
+        "Source": [
+          "SI"
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h1>What to Check For</h1>\r\n  <p>Verify that important security operations are logged. Some examples of important security operations are:</p>\r\n  <ul>\r\n    <li>Authentication attempts</li>\r\n    <li>Creating user accounts</li>\r\n    <li>Removing user accounts</li>\r\n    <li>Changing user access privileges</li>\r\n    <li>Changing group membership</li>\r\n  </ul>\r\n  <h1>Why</h1>\r\n  <p>Logging security operations may help detect an attacker's presence if he tries to create unauthorized user accounts or make other unauthorized changes to the system.</p>\r\n  <h1>How to Check</h1>\r\n  <p>Use the following steps to verify that important security operations are logged:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Define logging requirements.</strong> Make a list of critical security events that should be logged. Some examples are:</p>\r\n      <ul>\r\n        <li>Authentication attempts</li>\r\n        <li>Creating user accounts</li>\r\n        <li>Locking and unlocking user accounts</li>\r\n        <li>Removing user accounts</li>\r\n        <li>Changing user access privileges</li>\r\n        <li>Changing group membership</li>\r\n        <li>Changing passwords</li>\r\n        <li>Changing user account details</li>\r\n        <li>Financial transactions</li>\r\n        <li>Making changes to the application configuration</li>\r\n        <li>Starting the application</li>\r\n        <li>Terminating the application</li>\r\n      </ul>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Identify code that implements security operations.</strong> For each important security operation on the list, make a list of functions that implement this operation.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Review code.</strong> Use the list of functions that implement important security operations to review code. When reviewing code, verify that each log entries are generated when important security operations take place. Make sure that both successful and failed events are logged. Use the list of important security operations and check off each security operation that generates log entries. </p>\r\n    </li>\r\n  </ol>\r\n  <h1>How to Fix</h1>\r\n  <p>Perform the following actions to implement logging of important security operations:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Define logging requirements.</strong> Make a list of critical security events that should be logged. Some examples are:</p>\r\n      <ul>\r\n        <li>Authentication attempts</li>\r\n        <li>Creating user accounts</li>\r\n        <li>Locking and unlocking user accounts</li>\r\n        <li>Removing user accounts</li>\r\n        <li>Changing user access privileges</li>\r\n        <li>Changing group membership</li>\r\n        <li>Changing passwords</li>\r\n        <li>Changing user account details</li>\r\n        <li>Financial transactions</li>\r\n        <li>Making changes to the application configuration</li>\r\n        <li>Starting the application</li>\r\n        <li>Terminating the application</li>\r\n      </ul>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Identify log entry details.</strong> For each important security operation on the list, make a list of details that should be included in the log entries. Some examples are:</p>\r\n      <ul>\r\n        <li>User identification</li>\r\n        <li>Type of event</li>\r\n        <li>Date and time stamp</li>\r\n        <li>Success or failure indication</li>\r\n        <li>Source of event</li>\r\n        <li>Names or other identifiers of affected data or resources</li>\r\n      </ul>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Identify code that implements security operations.</strong> For each important security operation on the list, make a list of functions that implement this operation.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Identify the logging subsystem.</strong> The logging subsystem should provide an API that allows generating log entries from application code. If the API or the logging subsystem don't exist, write them. Make a list of functions that may be used to generate log entries and collect documentation about how to use them.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Add code that logs important security operations.</strong> Use the list of functions that implement important security operations to add code that generates log entries whenever these operations take place. Log both successful and failed events. Use the list of logging APIs when writing code that generates log entries. Use the list of log entry details when writing code that generates log entries to make sure that the log entries include all the relevant information.</p>\r\n    </li>\r\n  </ol>"
+        ]
+      }
+    ]
+  }
+}

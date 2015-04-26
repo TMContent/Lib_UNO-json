@@ -1,0 +1,59 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "0",
+      "Content_Hash": "0"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "00000000-0000-0000-0000-00000016b3b2"
+        ],
+        "Id_History": [
+          "00000000-0000-0000-0000-00000016b3b2,0b3ddffc-d52b-43af-bcdb-09aeaa1495e9,"
+        ],
+        "Library_Id": [
+          "be5273b1-d682-4361-99d9-6234f2d47eb7"
+        ],
+        "Title": [
+          "Validate All Input Passed to the Database"
+        ],
+        "Category": [
+          "Input and Data Validation"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "Scala Play"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          "Validate All Input Passed to the Database"
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "false",
+          "DataType": "html"
+        },
+        "Data": [
+          "<h1>Applies to</h1>\r\n  <p>\r\n  Applications written using Scala and Play Framework 2.1.0 that interact with a database</p>\r\n  <ul>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Validate all input before it is passed to the database.</p>\r\n  <h1>Why</h1>\r\n  <p>Unvalidated input can lead to persistent cross-site scripting, SQL/NoSQL injection and other vulnerabilities which could allow an attacker to \r\ngain unauthorized access to sensitive data.</p>\r\n  <h1>When</h1>\r\n  <p>If your application uses a back-end database server, then validate all input before it is passed to the database.</p>\r\n  <h1>How</h1>\r\n  <p>To properly validate input passed to database:</p>\r\n  <ol>\r\n    <li>\r\n      <strong>Identify database entry points. </strong>Identify all locations within your application that interface with the database servers. Potential sources of input include:<br /><ul><li style=\"margin: 0px; padding: 0px;\">URL based parameters</li><li style=\"margin: 0px; padding: 0px;\">Form based parameters</li><li style=\"margin: 0px; padding: 0px;\">Hidden fields</li><li style=\"margin: 0px; padding: 0px;\">Cookies</li><li style=\"margin: 0px; padding: 0px;\">HTTP headers (Host, accept types, www authentication, cache settings, encodings, etc)</li><li style=\"margin: 0px; padding: 0px;\">Local filesystem</li><li style=\"margin: 0px; padding: 0px;\">Database</li><li style=\"margin: 0px; padding: 0px;\">Other services running on the system</li><li style=\"margin: 0px; padding: 0px;\">JavaScript variables</li><li style=\"margin: 0px; padding: 0px;\">File upload and attributes (filename, size, data, etc)</li><li style=\"margin: 0px; padding: 0px;\">DNS results or host names</li><li style=\"margin: 0px; padding: 0px;\">External component call return values (AJAX, etc)</li></ul></li>\r\n    <li>\r\n      <p>\r\n        <strong>Create a set of validators. </strong>Build\r\n a set of validators that work with the database-specific language. \r\nDetermine the appropriate validation at each validator. Centralize the \r\nvalidators--this helps strengthen your code by limiting the amount of \r\nscattered validation code throughout the component. Place the validators\r\n along the database entry points. All data should pass through the \r\nvalidators before being transmitted to the database servers.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Use type safe SQL parameters in queries. </strong>Stored procedures and parameterized queries improve your application's robustness against SQL injection based attacks.&nbsp;Play Framework supports Anorm to access the database. According to the Play Framework source code <a href=\"https://github.com/playframework/Play20/blob/master/framework/src/anorm/src/main/scala/anorm/Anorm.scala\">here</a>, Anorm builds only <a href=\"http://docs.oracle.com/javase/6/docs/api/java/sql/PreparedStatement.html\">java.sql.PreparedStatements</a>, which prevents SQL injection attacks.</p>\r\n    </li>\r\n  </ol>\r\n  <h1>Problem Example</h1>\r\n  <p>The following code allows the user to query a database. \r\nUnfortunately, the application fails to validate the user's input. Therefore, an attacker can access the back-end database on behalf of the \r\napplication through the use of SQL injection. </p>\r\n  <p />\r\n  <p>For example, say a MongoDB collection contains some documents that represent books, some that represent movies, and some that represent music albums. This JavaScript query function will select all the documents in the specified collection that were written, filmed, or recorded in the specified year:</p>\r\n  <p>If the developer were building this application using a given programming language, the source code might look like this:</p>\r\n  <div>\r\n    <pre>$query = 'function() {var search_year = \\'' .\r\n\r\n$_GET['year'] . '\\';' .\r\n\r\n'return this.publicationYear == search_year || ' .\r\n\r\n' this.filmingYear == search_year || ' .\r\n\r\n' this.recordingYear == search_year;}';\r\n\r\n$cursor = $collection-&gt;find(array('$where' =&gt; $query));</pre>\r\n  </div>\r\n  <div>This code uses the value of the request parameter “year” as the search parameter. Just as in a traditional SQL injection attack, since the query syntax is being constructed in an ad-hoc fashion (i.e. query syntax concatenated along with user input), this code is vulnerable to a server-side JavaScript injection attack. For example, the following request would be an effective DoS attack against the system:</div>\r\n  <div>\r\n    <pre>http://server/app?year=1995';while(1);var%20foo='bar</pre>\r\n  </div>\r\n  <p />\r\n  <h1>Fix</h1>\r\n  <p />\r\n  <p>Strong input validation can be used to prevent SQL/NoSQL Injection attacks on an application. Prepared Statements must be used. Additionally, precompiled queries can also be used to prevent these attacks.</p>\r\n  <p>Care should be taken while using precompiled queries to make sure that the internal queries do not contain dynamic content.</p>\r\n  <p />\r\n  <p />\r\n  <p>Bind parameters are the best way to pass data to the database. Instead of putting the values directly into the SQL statement, you just use a placeholder like ?, :name or @name and provide the actual values using a separate API call.</p>\r\n  <p>Below example shows a secure implementation of using Bind variable in Play Framework:</p>\r\n  <p>\r\n  </p>\r\n  <pre>public static void searchString(String keyword) {\r\n\r\nString trimedkeyword = keyword.trim();\r\n\r\nString keypattern = \"%\"+trimedkeyword+\"%\";\r\n\r\nString query=\"select distinct item from Item where item.name like :keypattern\";\r\n\r\nList<item> items = Item.find(query).bind(\"keypattern\", keypattern).fetch();\r\n\r\n...\r\n\r\n}</item></pre>\r\n  <p />\r\n  <p />\r\n  <p />\r\n  <p>Play Framework supports “Anorm” to access database. According to the Play Framework source code&nbsp;<a href=\"https://github.com/playframework/Play20/blob/master/framework/src/anorm/src/main/scala/anorm/Anorm.scala\">here</a>,&nbsp;Anorm&nbsp;builds only&nbsp;<a href=\"http://docs.oracle.com/javase/6/docs/api/java/sql/PreparedStatement.html\">java.sql.PreparedStatements</a>, which prevents SQL injection attack.</p>\r\n  <p>Below is an example of how&nbsp;Anorm&nbsp;can be used safely in Play Framework:</p>\r\n  <p>\r\n  </p>\r\n  <pre>object Person {\r\n\r\ndef save(p:Person) {\r\n\r\nDB.withConnection (\"default\") { implicit connection =&gt;\r\n\r\nSQL(\"\"\"\r\n\r\nINSERT INTO person(firstName,lastName)\r\n\r\nvalues ({firstName}, {lastName})\r\n\r\n\"\"\"\r\n\r\n).on(\r\n\r\n\"firstName\" -&gt; p.firstName,\r\n\r\n\"lastName\" -&gt; p.lastName\r\n\r\n).executeUpdate()\r\n\r\n}\r\n\r\n}\r\n\r\n}</pre>\r\n  <p />\r\n  <p />\r\n  <p />\r\n  <p />\r\n  <p>NOTE: Though there are many&nbsp;<a href=\"http://media.blackhat.com/bh-us-11/Sullivan/BH_US_11_Sullivan_Server_Side_WP.pdf\">reported</a>&nbsp;instances of NoSQL injection using a language like PHP, but NoSQL injection in Play Framework does not have facts to prove the existence for this vulnerability. However, for Defense in Depth, the mitigations mentioned above along with input sanitization should always be followed as a best coding practice.</p>\r\n  <ul>\r\n  </ul>\r\n  <br />"
+        ]
+      }
+    ]
+  }
+}
