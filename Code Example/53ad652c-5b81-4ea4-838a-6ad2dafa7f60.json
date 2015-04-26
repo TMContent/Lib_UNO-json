@@ -1,0 +1,68 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "-1924951917",
+      "Content_Hash": "-750653668"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "53ad652c-5b81-4ea4-838a-6ad2dafa7f60"
+        ],
+        "Id_History": [
+          "53ad652c-5b81-4ea4-838a-6ad2dafa7f60,cc517abb-3ac9-46f6-95f3-50821e186f45,"
+        ],
+        "Library_Id": [
+          "be5273b1-d682-4361-99d9-6234f2d47eb7"
+        ],
+        "Title": [
+          "Scoping Data Retrieval from the Request Object"
+        ],
+        "Category": [
+          "Input and Data Validation"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          ".NET 3.5"
+        ],
+        "Type": [
+          "Code Example"
+        ],
+        "DirectLink": [
+          "Scoping Data Retrieval from the Request Object"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ],
+        "Source": [
+          "ASP.NET 3.5"
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h1>Applies To</h1>\r\n  <ul>\r\n    <li>C# </li>\r\n  </ul>\r\n  <h1>Summary</h1>\r\n  <p>The purpose of this code snippet is to illustrate how to securely scope calls to the ASP.NET Request object when retrieving user input data. Secure scoping of the Request object ensures that input used by the application is obtained from the intended source. </p>\r\n  <h1>Objectives</h1>\r\n  <ul>\r\n    <li>Protect against potential data input attacks through specific designation of data source </li>\r\n    <li>Make use of additional HTTP request data not normally captured within ASP.NET objects </li>\r\n  </ul>\r\n  <h1>Scenarios</h1>\r\n  <ul>\r\n    <li>In conjunction with ViewState encryption and integrity checks to protect against user tampering of CGI data </li>\r\n    <li>Application obtains user input as CGI data directly from the Request object instead of from server-side variables </li>\r\n    <li>Application makes use of client certificates for user identity management and/or authentication </li>\r\n    <li>Application makes use of data from HTTP headers </li>\r\n  </ul>\r\n  <h1>Solution Example</h1>\r\n  <p>Several methods for obtaining Request object data follow:</p>\r\n  <pre>public static string GetQueryStringData(HttpRequest Request, string arg)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp; // Obtain input passed using HTTP GET<br />&nbsp;&nbsp;&nbsp;&nbsp; return(Request.QueryString[arg]);<br />}</pre>\r\n  <pre>\r\n    <br />public static string GetPostData(HttpRequest Request, string arg)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp; // Obtain input passed using HTTP POST<br />&nbsp;&nbsp;&nbsp;&nbsp; return(Request.Form[arg]);<br />}<br />public static HttpCookie GetHTTPCookie(HttpRequest Request, string arg)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp; // Obtain input passed as an HTTP Cookie<br />&nbsp;&nbsp;&nbsp;&nbsp; return(Request.Cookies[arg]);<br />}</pre>\r\n  <pre>\r\n    <br />public static string GetClientCertData(HttpRequest Request, string attr)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp; // Obtain a server variable or HTTP Request Header, such as Content Length<br />&nbsp;&nbsp;&nbsp;&nbsp; return(Request.ServerVariables[attr]);<br />}</pre>\r\n  <pre>\r\n    <br />public static string GetEnvData(HttpRequest Request, string arg)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp; // Obtain a server variable or HTTP Request Header, such as Content Length<br />&nbsp;&nbsp;&nbsp;&nbsp; return(Request.ServerVariables[arg]);<br />}</pre>\r\n  <h1>Problem Example</h1>\r\n  <p>The following example demonstrates an unscoped call to the Request object to obtain user input.</p>\r\n  <pre>string data = Request['argname'];</pre>\r\n  <ul>\r\n    <li>If the application anticipates input to be passed from POST data, specifying 'argname' in the query string will result in GET data being retrieved by the application in place of the expected POST data. </li>\r\n  </ul>\r\n  <h1>Test Case</h1>\r\n  <p>The following classes must be included in any project making use of the sample code provided above:</p>\r\n  <pre>using System.Web;</pre>\r\n  <p>An example ASP.NET aspx test page is provided below for use with the methods defined above.</p>\r\n  <pre>&lt;!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\"&gt;</pre>\r\n  <pre>\r\n    <br />&lt;script language=\"C#\" runat=\"server\"&gt;<br />&nbsp;&nbsp;&nbsp; protected void Page_Load(object sender, EventArgs e)<br />&nbsp;&nbsp;&nbsp; {<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; string sUserText = GetQueryStringData(Request, \"TextBox\");<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; sUserText = sUserText.Trim();<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.Text.RegularExpressions.Regex wordPattern = new System.Text.RegularExpressions.Regex(\"[A-Za-z0-9]*\");<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (wordPattern.IsMatch(sUserText))<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; this.myLabel.Text = Server.HtmlEncode(sUserText);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br />&nbsp;&nbsp;&nbsp; }<br />&lt;/script&gt;</pre>\r\n  <pre>\r\n    <br />&lt;html xmlns=\"http://www.w3.org/1999/xhtml\" &gt;</pre>\r\n  <pre>&lt;head id=\"Head1\" runat=\"server\"&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;title&gt;Request Object Example&lt;/title&gt;<br />&lt;/head&gt;<br />&lt;body&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;form id=\"form1\" method=\"Get\" runat=\"server\"&gt;</pre>\r\n  <pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;input type=\"text\" name=\"TextBox\"/&gt; &lt;br/&gt;&lt;br/&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;asp:Label ID=\"myLabel\" runat=\"server\" Text=\"Insert Text Above to See Here\"&gt;&lt;/asp:Label&gt;&lt;br/&gt;&lt;br/&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;input type=\"submit\" name=\"textButton\" value=\"Submit\"/&gt;&nbsp;&nbsp;&nbsp; <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;</pre>\r\n  <pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/form&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/body&gt;<br />&lt;/html&gt;</pre>\r\n  <h1>Expected Result</h1>\r\n  <p>N/A (dependent upon input)</p>\r\n  <h1>More Information</h1>\r\n  <p>The data returned by Request('var') can come from any of the following sources, in the order listed. </p>\r\n  <ul>\r\n    <li>Query String </li>\r\n    <li>Form </li>\r\n    <li>Cookies </li>\r\n    <li>Client Certificate </li>\r\n    <li>Server Variables/HTTP Headers </li>\r\n  </ul>\r\n  <br />\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "0",
+      "Content_Hash": "0"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "8e310bf1-f11b-47fa-9a3e-3dd9364080aa"
+        ],
+        "Id_History": [
+          "8e310bf1-f11b-47fa-9a3e-3dd9364080aa,6cb20b99-e353-4a98-8939-d9610d8b61b0,"
+        ],
+        "Library_Id": [
+          "26bd1a04-beed-4a66-917d-b6ab0a7d634c"
+        ],
+        "Title": [
+          "Directory Browsing Is Disabled"
+        ],
+        "Category": [
+          "Hardening"
+        ],
+        "Phase": [
+          "Deployment"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Checklist Item"
+        ],
+        "DirectLink": [
+          "Directory Browsing Is Disabled"
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "false",
+          "DataType": "wikitext"
+        },
+        "Data": [
+          "==Applies To==\r\n\r\n* Web Applications\r\n\r\n==What to Check For==\r\n\r\nVerify that directory browsing is disabled.\r\n\r\n==Why==\r\n\r\nDirectory browsing allows an attacker to browse your application's directory structure in search of unprotected files and components.\r\n\r\n==How to Check==\r\n\r\nNavigate to your application's directories with a web browser. Identify whether your application's server correctly returns an HTTP error message. If it incorrectly returns the directory contents, disable directory browsing on the web server.\r\n\r\n==How to Fix==\r\n\r\nConfigure the web server to disable directory browsing. The exact procedures for disabling directory browsing are different for different web servers. Please, refer to your web server's documentation for detailed instructions for disabling directory browsing.\r\n\r\n"
+        ]
+      }
+    ]
+  }
+}

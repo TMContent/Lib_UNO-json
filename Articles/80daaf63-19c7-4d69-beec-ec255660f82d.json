@@ -1,0 +1,56 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "0",
+      "Content_Hash": "0"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "80daaf63-19c7-4d69-beec-ec255660f82d"
+        ],
+        "Library_Id": [
+          "be5273b1-d682-4361-99d9-6234f2d47eb7"
+        ],
+        "Title": [
+          "Access to Cardholder Data Is Logged"
+        ],
+        "Category": [
+          "Auditing and Logging"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Checklist Item"
+        ],
+        "DirectLink": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "false",
+          "DataType": "wikitext"
+        },
+        "Data": [
+          "==What to Check For==\n\nVerify that all user access to cardholder data is logged.\n\n\n==Why==\n\nLogging user access to cardholder data helps investigate events in which cardholder data might have been accessed through compromised user accounts.\n\n\n==How to Check==\n\nPerform the following actions to make sure that user access to cardholder data is logged:\n\n# **Identify functionality that accesses cardholder data.** Make a spreadsheet about all the functionality implemented by the application that involves cardholder data.\n# **Identify code that accesses cardholder data.** For each feature that uses cardholder data, add information to the spreadsheet about the code that implements that feature. Record the names of the source code files and the names of the functions that handle cardholder data.\n# **Verify that access to cardholder data is logged.** Examine the code that implements each feature that accesses cardholder data to make sure that it generates log entries that indicate that cardholder data has been accessed. Examine application logs to make sure that cardholder access events have been logged.\n\n\n==How to Fix==\n\nTo log user access to cardholder data:\n\n# **Identify functionality that accesses cardholder data.** Make a spreadsheet about all the functionality implemented by the application that involves cardholder data.\n# **Identify code that accesses cardholder data.** For each feature that uses cardholder data, add information to the spreadsheet about the code that implements that feature. Record the names of the source code files and the names of the functions that handle cardholder data.\n# **Add code to log access to cardholder data.** For each feature that accesses cardholder data, modify the code that implements that feature to generate log entries indicating that cardholder data has been accessed.\n"
+        ]
+      }
+    ]
+  }
+}

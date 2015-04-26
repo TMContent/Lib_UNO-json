@@ -1,0 +1,68 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "-1104899749",
+      "Content_Hash": "-1688159152"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "4622e083-5f10-4f9b-b493-475dd1976fdb"
+        ],
+        "Id_History": [
+          "4622e083-5f10-4f9b-b493-475dd1976fdb,f4c57ebb-63f9-4ea9-92e9-fdb26f4c5bea,"
+        ],
+        "Library_Id": [
+          "26bd1a04-beed-4a66-917d-b6ab0a7d634c"
+        ],
+        "Title": [
+          "Login Information Is Validated"
+        ],
+        "Category": [
+          "Input and Data Validation"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          ".NET"
+        ],
+        "Type": [
+          "Checklist Item"
+        ],
+        "DirectLink": [
+          "Login Information Is Validated"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ],
+        "Source": [
+          "SI"
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h1>Applies To</h1>\r\n  <ul>\r\n    <li>ASP.NET 4.0</li>\r\n  </ul>\r\n  <h1>What to Check For</h1>\r\n  <p>Ensure user credentials are validated before processing them.</p>\r\n  <h1>Why</h1>\r\n  <p>Validating user-provided login information can help to prevent cross site scripting attacks, SQL injections, and other potential problems, depending on system architecture. All input should always be validated before use and encoded before display, but login information is especially critical as it interacts with high-value data stores.</p>\r\n  <h1>How To Check</h1>\r\n  <p>Follow these steps to ensure that your application validates user credentials before use:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Locate all code that handles user credentials. </strong>Examine your application and identify all places inside its code base that handle user credentials. Common places include:</p>\r\n      <ul>\r\n        <li>Creating new users </li>\r\n        <li>Modifying existing users </li>\r\n        <li>Changing credentials for existing users </li>\r\n        <li>Retrieving information related to existing users </li>\r\n        <li>Removing existing users </li>\r\n        <li>Authenticating users</li>\r\n      </ul>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Verify that validation is handled properly. </strong>Ensure that your application addresses username validation throughout the different stages of your application's development lifecycle:</p>\r\n      <ul>\r\n        <li>\r\n          <p>\r\n            <strong>Requirements</strong>: Check if your application's security requirements have established a policy regarding acceptable usernames. Such a&nbsp;policy should state the length and input set for valid usernames as well as password requirements. </p>\r\n        </li>\r\n        <li>\r\n          <p>\r\n            <strong>Design</strong>: Check if all username validation routines are positioned properly at the trust boundaries of all of your application's routines that handle user credentials. For instance, all validation should occur before the username is processed by any component within your application:</p>\r\n          <pre>&lt;asp:Login ID=\"Login1\"<br /> runat=\"server\"<br /><strong>OnLoggingIn=\"ValidateUsername\"<br /></strong> ...<br /> /&gt;</pre>\r\n        </li>\r\n        <li>\r\n          <p>\r\n            <strong>Implementation</strong>: </p>Check if all username validation routines implement your application's policy regarding usernames. Verify that the implementation is using whitelist and not blacklist validation techniques. Example: <pre>public bool ValidateUsername(string username)<br />{<br />&nbsp;&nbsp;&nbsp; Regex rx = new Regex(\"^[a-zA-Z0-9]{6,}$\");<br />&nbsp;&nbsp;&nbsp; return rx.IsMatch(username);<br />}</pre><p>Ensure that all error or exception conditions are handled correctly.&nbsp;Verify that all authentication procedures exit immediately in a graceful manner upon failed username validation. </p></li>\r\n      </ul>\r\n    </li>\r\n  </ol>\r\n  <h1>How To Fix</h1>\r\n  <p>Use the following steps when validating user credentials:</p>\r\n  <ol>\r\n    <p />\r\n    <li>\r\n      <strong>Establish username requirements.</strong> Establish the acceptable character set and minimum length that should be allowed for a username. For instance, usernames should be at least 6 characters long and must contain alpha-numeric characters only. <p /><p /></li>\r\n    <li>\r\n      <strong>Use whitelist validation.</strong> Whitelisting involves defining what input is acceptable. Once valid input is defined, compare all input against the established list. If the input does not match an item from the list, your application should discard it. This technique can be implemented using regular expressions. Example: <p /><pre>public bool ValidateUsername(string username)<br />{<br />&nbsp;&nbsp;&nbsp; Regex rx = new Regex(\"^[a-zA-Z0-9]{6,}$\");<br />&nbsp;&nbsp;&nbsp; return rx.IsMatch(username);<br />} </pre></li>\r\n  </ol>\r\n  <h1>Related Items</h1>\r\n  <em>You may find these additional articles useful</em>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/1d26fc4a-1aba-40bd-91ed-1a7f1cbf5a8a\">Validate Login Information</a>\r\n    </li>\r\n  </ul>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance. </p>\r\n  <h1>\r\n  </h1>\r\n  <h1>\r\n  </h1>"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "1733701849",
+      "Content_Hash": "1787577048"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "72573c06-f26f-4079-8199-61c6dcb6859c"
+        ],
+        "Id_History": [
+          "72573c06-f26f-4079-8199-61c6dcb6859c,102e81f0-dd03-417d-8c2a-ef5282136635,"
+        ],
+        "Library_Id": [
+          "26bd1a04-beed-4a66-917d-b6ab0a7d634c"
+        ],
+        "Title": [
+          "Make the Session Expire When the User Logs Out"
+        ],
+        "Category": [
+          "Session Management"
+        ],
+        "Phase": [
+          "Design"
+        ],
+        "Technology": [
+          ".NET"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          "Make the Session Expire When the User Logs Out"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ],
+        "Source": [
+          "SI"
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h1>Applies To</h1>\r\n  <ul>\r\n    <li>ASP.NET 4.0</li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Make the session expire when the user logs out.</p>\r\n  <h1>Why</h1>\r\n  <p>Making the session expire when the user logs out makes it harder for an attacker to hijack the session.</p>\r\n  <h1>When</h1>\r\n  <p>Make sessions expire upon user logout in all applications that implement authentication.</p>\r\n  <h1>How</h1>\r\n  <p>To make sessions expire when users log out:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Identify logout functionality.</strong> Find code that is responsible for the logout functionality.</p>\r\n      <li>\r\n        <p>\r\n          <strong>Add code to make sessions expire.</strong> Add the following code to the logout function to make the session expire:</p>\r\n        <pre>Response.Cookies.Add(new HttpCookie(\"ASP.NET_SessionId\", \"\"));<br />Session.Abandon();</pre>\r\n      </li>\r\n    </li>\r\n  </ol>"
+        ]
+      }
+    ]
+  }
+}

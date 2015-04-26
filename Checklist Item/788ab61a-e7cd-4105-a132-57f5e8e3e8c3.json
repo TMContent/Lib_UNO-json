@@ -1,0 +1,68 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "-299823627",
+      "Content_Hash": "1520172733"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "788ab61a-e7cd-4105-a132-57f5e8e3e8c3"
+        ],
+        "Id_History": [
+          "788ab61a-e7cd-4105-a132-57f5e8e3e8c3,266be0ce-f421-4146-949e-34d5fec4c046,"
+        ],
+        "Library_Id": [
+          "51eb81c3-1d23-4146-ba83-8a6bb9233c11"
+        ],
+        "Title": [
+          "Sizeof() Is Used to Determine Sizes of Objects"
+        ],
+        "Category": [
+          "Unmanaged Code"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "C++"
+        ],
+        "Type": [
+          "Checklist Item"
+        ],
+        "DirectLink": [
+          "Sizeof() Is Used to Determine Sizes of Objects"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ],
+        "Source": [
+          "SI"
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>C&#43;&#43;</li>\r\n  </ul>\r\n  <h1>What to Check For</h1>\r\n  <p>Verify that the sizeof() function is used to determine sizes of objects and types instead of hardcoding memory sizes of objects.</p>\r\n  <h1>Why</h1>\r\n  <p>Different platforms may represent the same data structures differently in memory. Using hardcoded values for object memory sizes may result in errors when performing memory management operations.</p>\r\n  <h1>How to Check</h1>\r\n  <p>Identify all code where it is necessary to calculate sizes of objects in memory. Verify that the sizeof() function is used to determine sizes of objects in memory.</p>\r\n  <h1>How to Fix</h1>\r\n  <p>Use sizeof() to measure sizes of objects in memory.</p>\r\n  <h1>Related Items</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/baa5a0b3-8b7d-4c91-a6f5-ac287c62e8db\">Use sizeof() to Determine Sizes of Objects</a>\r\n    </li>\r\n  </ul>"
+        ]
+      }
+    ]
+  }
+}

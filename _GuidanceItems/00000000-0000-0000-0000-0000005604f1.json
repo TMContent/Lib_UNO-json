@@ -1,0 +1,59 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "0",
+      "Content_Hash": "0"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "00000000-0000-0000-0000-0000005604f1"
+        ],
+        "Id_History": [
+          "00000000-0000-0000-0000-0000005604f1,42fbb0ba-ef2e-4a4a-a42a-3773408f8d30,"
+        ],
+        "Library_Id": [
+          "c4b9cb6a-4561-4451-9b6c-4e59d73584f6"
+        ],
+        "Title": [
+          "Validate XML Data Using a Schema"
+        ],
+        "Category": [
+          "Input and Data Validation"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "Java"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          "Validate XML Data Using a Schema"
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "false",
+          "DataType": "wikitext"
+        },
+        "Data": [
+          "==Applies To==\r\n\r\n* Java\r\n\r\n\r\n==What to Do==\r\n\r\nAlways validate XML data input against a schema to ensure that it is well-formed.\r\n\r\n\r\n==Why==\r\n\r\nAn attacker might be able to inject malicious XML content into your application, expose local files and private data, modify data, starve server resources, or perform other attacks. Validating XML input reduces these risks by ensuring that the input received matches the expected format. \r\n\r\n\r\n==When==\r\n\r\nFollow this guideline when the application handles user input through an XML parser.\r\n\r\n\r\n==How==\r\n\r\nTo validate XML data using a schema:\r\n# **Create a //Schema// object.** Use the //SchemaFactory// class to create a //Schema// object.\r\n# **Create a //SAXParserFactory// object.** The //SAXParserFactory// will be used to create a parser for working with the XML data.\r\n# **Assign the //Schema// object to the //SAXParserFactory// object.** Use the //setSchema// method to assign the //Schema// object to the //SAXParserFactory// object. This will cause the parser produced by the factory object to use our schema to validate data.\r\n# **Create a //SAXParser// object.** Use the //SAXParserFactory// object to create a parser. Since a schema has been assigned to the factory, the parser will validate XML data that is parses against the schema. This parser can then be used to load XML data.\r\n\r\n==Problem Example==\r\n\r\nThis code does not validate XML data using a schema:\r\n\r\n{{{\r\nprivate void getXMLStream(InputStream inStream, DefaultHandler defHandler) {\r\n  SAXParserFactory factory = SAXParserFactory.newInstance();\r\n  try {\r\n    SAXParser saxParser = factory.newSAXParser();\r\n    saxParser.parse(inStream, defHandler);\r\n  } catch (Throwable t) { \r\n    ...\r\n  }\r\n}\r\n}}}\r\n\r\n\r\n==Solution Example==\r\n\r\nThis article is focused entirely on making sure the data is actually validated using a schema, so it is assumed that a schema file //schema.xsd// already exists. The following code validates XML data using the schema:\r\n\r\n{{{\r\nprivate static void getXMLStream(InputStream inStream, DefaultHandler defHandler) \r\n  throws ParserConfigurationException, SAXException, IOException {\r\n  try {\r\n    SchemaFactory sf = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);\r\n    sf.setErrorHandler(defHandler);\r\n    StreamSource ssrc = new StreamSource(new File(\"schema.xsd\"));\r\n    Schema schema = sf.newSchema(ssrc);\r\n    SAXParserFactory spf = SAXParserFactory.newInstance();\r\n    spf.setSchema(schema);\r\n    SAXParser saxParser = spf.newSAXParser();\r\n    saxParser.parse(inStream, defHandler);   \r\n  } catch (Throwable t) { \r\n    ...\r\n  }\r\n} \r\n}}}"
+        ]
+      }
+    ]
+  }
+}

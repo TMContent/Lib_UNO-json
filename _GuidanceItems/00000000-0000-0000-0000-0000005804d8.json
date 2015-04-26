@@ -1,0 +1,59 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "0",
+      "Content_Hash": "0"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "00000000-0000-0000-0000-0000005804d8"
+        ],
+        "Id_History": [
+          "00000000-0000-0000-0000-0000005804d8,bdf5e5a1-ec7a-4345-8be1-135e3e9c5798,"
+        ],
+        "Library_Id": [
+          "be5273b1-d682-4361-99d9-6234f2d47eb7"
+        ],
+        "Title": [
+          "Validate and Encode Data Inserted into XML Documents"
+        ],
+        "Category": [
+          "Input and Data Validation"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "iOS"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          "Validate and Encode Data Inserted into XML Documents"
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "false",
+          "DataType": "WikiText"
+        },
+        "Data": [
+          "==Applies To==\r\n\r\n* iOS applications that handle XML documents.\r\n\r\n==What to Do==\r\n\r\nValidate and encode data inserted into XML documents.\r\n\r\n==Why==\r\n\r\nValidating and encoding data inserted into XML documents helps prevent XML injection vulnerabilities.\r\n\r\n==How==\r\n\r\nTo validate and encode data inserted into XML documents:\r\n\r\n# **Identify XML documents used by the application.** Examine the application design to identify all XML documents and XML document types used by the application.\r\n# **Identify code that handles XML documents.** Find all application code that handles XML documents.\r\n# **Write data validation methods.** Write methods that validate all the data types that are stored in XML documents and used by the application.\r\n# **Use validation code.** Call the data validation methods from the previous step wherever the application handles XML documents. Validation should be performed before encoding.\r\n# **Write encoding methods.** Write methods that escape XML entities. Unfortunately, there are no stable libraries available for escaping XML entities for iOS. When writing code that escapes XML entities, consider the following: \r\n#* Data must first be converted to a uniform character encoding. \r\n#* XML entities must be escaped properly. \r\n#* Code that loads XML documents should be able to restore the original data from the encoded data.\r\n# **Use encoding methods.** Call the encoding methods wherever the application handles XML documents. \r\n\r\n==Data Validation Guidelines==\r\n* [[00000000-0000-0000-0000-000000866d55|Canonicalize File Names and Paths]]\r\n* [[00000000-0000-0000-0000-000000590dce|Check File Paths and Names for Null Bytes]]\r\n* [[00000000-0000-0000-0000-00000051c329|Validate All Input]]\r\n* [[00000000-0000-0000-0000-0000005804d8|Validate and Encode Data Inserted into XML Documents]]\r\n* [[00000000-0000-0000-0000-000000410a08|Validate and Encode Data Passed to UIWebView Controls]]\r\n* [[00000000-0000-0000-0000-00000049bb5e|Validate File Formats]]\r\n\r\n==Data Validation Checklists==\r\n* [[00000000-0000-0000-0000-0000004d996e|File Names and Paths Are Canonicalized]]\r\n* [[00000000-0000-0000-0000-0000004446d0|File Paths and Names Are Checked for Null Bytes]]\r\n* [[00000000-0000-0000-0000-000000396c19|All Input Is Validated]]\r\n* [[00000000-0000-0000-0000-0000008c53b6|Data Inserted into XML Documents Is Validated and Encoded]]\r\n* [[00000000-0000-0000-0000-000000647d44|Data Passed to UIWebView Controls Is Validated and Encoded]]\r\n* [[00000000-0000-0000-0000-000000066105|File Formats Are Validated]]"
+        ]
+      }
+    ]
+  }
+}

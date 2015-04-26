@@ -1,0 +1,68 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "638883277",
+      "Content_Hash": "951840876"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "289a4fc3-adf1-4c11-a95d-51bfe1ab9726"
+        ],
+        "Id_History": [
+          "289a4fc3-adf1-4c11-a95d-51bfe1ab9726,d4de8c71-dad3-4be9-b3d6-4c5ec31f4e9d,"
+        ],
+        "Library_Id": [
+          "26bd1a04-beed-4a66-917d-b6ab0a7d634c"
+        ],
+        "Title": [
+          "Authentication And Authorization Policies Are Configurable"
+        ],
+        "Category": [
+          "Administration"
+        ],
+        "Phase": [
+          "Design"
+        ],
+        "Technology": [
+          ".NET"
+        ],
+        "Type": [
+          "Checklist Item"
+        ],
+        "DirectLink": [
+          "Authentication And Authorization Policies Are Configurable"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ],
+        "Source": [
+          "SI"
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h1>Applies To</h1>\r\n  <ul>\r\n    <li>ASP.NET 4.0</li>\r\n  </ul>\r\n  <h1>What to Check For</h1>\r\n  <p>Make sure that authentication and authorization policies are configurable.</p>\r\n  <h1>Why</h1>\r\n  <p>The authentication and authorization policies should be configurable to make it possible for the users to adapt the application to their environment.</p>\r\n  <h1>How To Check</h1>\r\n  <p>To make sure that authentication and authorization policies are configurable:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Identify application requirements.</strong> Define options for configuring access control and authentication policies. At the very least, there should be an administration panel for managing user accounts and global application settings, and a page for users to manage their own accounts. ASP.NET provides the <em>Roles</em> API for managing role-based authorization.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Identify administrative pages. </strong>Find the administration interface that is used to configure authentication and authorization policies.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Review the administration interface.</strong> Test the functionality of the administration interface to make sure it satisfies the application requirements.</p>\r\n    </li>\r\n  </ol>\r\n  <h1>How To Fix</h1>\r\n  <p>To implement authentication and authorization administration:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Identify application requirements.</strong> Define options for configuring access control and authentication policies. At the very least, there should be an administration panel for managing user accounts, and a page for users to manage their own accounts.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Make authentication and authorization code configurable.</strong> Find all code responsible for authentication and authorization features. Modify this code to read settings defined in the application requirements.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Design the administrative pages.</strong> Design the pages to be used for configuring access control and authentication policies based on the requirements for your application.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Implement the administration interface.</strong> Write code for the administrative pages to interface with authentication and authorization code. The administration interface should be able to read and write settings to a secure location, where the authentication and authorization code may access them. The saved settings should be protected with access controls to prevent unauthorized disclosure and tampering.</p>\r\n    </li>\r\n  </ol>\r\n  <h1>Related Items</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/2fb94a8b-fa8e-460c-b600-f9a75695a0c5\">Implement Authentication and Authorization Administration</a>\r\n    </li>\r\n  </ul>\r\n  <h1>Additional Resources</h1>\r\n  <ul>\r\n    <li>\r\n      <p>For more information about ASP.NET role management, please see \"Understanding Role Management\" at <a href=\"http://msdn.microsoft.com/en-us/library/5k850zwb.aspx\">http://msdn.microsoft.com/en-us/library/5k850zwb.aspx</a></p>\r\n    </li>\r\n  </ul>"
+        ]
+      }
+    ]
+  }
+}

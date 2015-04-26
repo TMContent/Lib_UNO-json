@@ -1,0 +1,59 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "0",
+      "Content_Hash": "0"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "83031f88-25ac-4b97-bfd4-f308a1fb373b"
+        ],
+        "Id_History": [
+          "83031f88-25ac-4b97-bfd4-f308a1fb373b,8b044e70-d76a-4873-807b-11c004800db0,"
+        ],
+        "Library_Id": [
+          "7d2d0571-e542-45cd-9335-d7a0556c2bea"
+        ],
+        "Title": [
+          "Do Not Log Sensitive Information"
+        ],
+        "Category": [
+          "Auditing and Logging"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "Web Application"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          "Do Not Log Sensitive Information"
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "false",
+          "DataType": "wikitext"
+        },
+        "Data": [
+          "==Applies To==\r\n\r\n* Web Applications\r\n* Server-side\r\n\r\n==What to Do==\r\n\r\nAvoid logging sensitive information.\r\n\r\n==Why==\r\n\r\nLog files are usually less protected and available to more users than sensitive data filaes. Including sensitive information in logs may lead to unauthorized information disclosure.\r\n\r\n==When==\r\n\r\nUse this guideline if your application handles sensitive data.\r\n\r\n==How==\r\n\r\nPerform the following actions to prevent logging of sensitive information:\r\n\r\n# **Identify sensitive data.** Make a list of types of sensitive information handled by your application. Some examples are:\r\n## System information\r\n## Filenames and paths\r\n## Passwords\r\n## Encryption keys\r\n## Cardholder data\r\n## Personal information\r\n# **Identify logging functionality.** Examine the application architecture to identify logging facilities, such as the logging API and where audit trails are actually stored. Make a list of APIs used to log events, document how to use them, and where they store logs.\r\n# **Review logging code.** Identify code that generates log entries. Review this code to verify that it does not include sensitive information in log entries. If necessary, rewrite this code in a way that does not log sensitive data.\r\n# **Prevent logging of sensitive data.** The most effective measure for avoiding logging of sensitive information is prevention, which means making sure that sensitive information does not get logged whenever writing code that generates log entries.\r\n# **Review logging of errors.** Error logs often store sensitive data when they shouldn't. Pay particular attention to code that generates error logs, both when writing this code and when reviewing it, to make sure that sensitive information is not included in error messages or log entries.\r\n"
+        ]
+      }
+    ]
+  }
+}

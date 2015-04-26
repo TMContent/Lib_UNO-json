@@ -1,0 +1,59 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "0",
+      "Content_Hash": "0"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "00000000-0000-0000-0000-0000005ab7c3"
+        ],
+        "Id_History": [
+          "00000000-0000-0000-0000-0000005ab7c3,c0371a9e-c337-45a1-9751-4c90376e438a,"
+        ],
+        "Library_Id": [
+          "c4b9cb6a-4561-4451-9b6c-4e59d73584f6"
+        ],
+        "Title": [
+          "Data in HTTP Response Headers Is URL-encoded"
+        ],
+        "Category": [
+          "Encoding"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "Java"
+        ],
+        "Type": [
+          "Checklist Item"
+        ],
+        "DirectLink": [
+          "Data in HTTP Response Headers Is URL-encoded"
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "false",
+          "DataType": "wikitext"
+        },
+        "Data": [
+          "==Applies To==\r\n* Java\r\n\r\n==What to Check For==\r\n\r\nVerify that data sent to the user in HTTP response headers is URL-encoded.\r\n\r\n==Why==\r\n\r\nIf the application accepts user input and includes such input in HTTP response headers the application will be vulnerable to response splitting vulnerability unless headers are URL-encoded or data is sanitized. Attackers can execute a cross site scripting attack by forcing your application to send carriage return (CR) and line feed (LF) followed by malicious content to the users browser. Because CRLF is a response header separator and CRLF CRLF separates headers from the body,  the browser sees attackers content as legitimate. \r\n\r\n==How to Check==\r\n\r\nTo verify that data in HTTP response headers is URL-encoded:\r\n\r\n# **Identify all data included in HTTP response headers.** Search your code for calls to //HttpServletResponse.AddHeader// and for //HttpServletResponse.AddCookie// to find all code that adds data to HTTP response headers.\r\n# **Verify that data included in HTTP response headers is validated.** Examine code that adds data to response headers. Make sure that any user data is passed through positive validation routines before being included in HTTP response headers.\r\n# **Verify that data included in HTTP response headers is URL-encoded.** Examine code that adds data to response headers. Make sure that any user data is URL-encoded using //java.net.URLEncoder// class before being included in HTTP response headers.\r\n\r\n==How to Fix==\r\nTo URL-encode data in HTTP Response headers:\r\n# **Identify all data included in HTTP response headers.** Search your code for calls to // HttpServletResponse.AddHeader// and for //HttpServletResponse.AddCookie// to find all code that adds data to HTTP response headers.\r\n# **Validate all data included in HTTP response headers.** Use positive validation routines to check all data that gets included in HTTP response headers.\r\n# **URL-encode all data included in HTTP response headers.** Use //java.net.URLEncoder// class to URL-encode data that gets includes in HTTP response headers.\r\n\r\n==Additional Resources==\r\n\r\n* For more information about the //URLEncoder.encode// method, see http://docs.oracle.com/javase/1.5.0/docs/api/java/net/URLEncoder.html"
+        ]
+      }
+    ]
+  }
+}

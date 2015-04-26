@@ -1,0 +1,59 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "0",
+      "Content_Hash": "0"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "00000000-0000-0000-0000-0000006bb239"
+        ],
+        "Id_History": [
+          "00000000-0000-0000-0000-0000006bb239,da6f6a9d-c91b-4f35-8773-1398c7c3d59d,"
+        ],
+        "Library_Id": [
+          "26bd1a04-beed-4a66-917d-b6ab0a7d634c"
+        ],
+        "Title": [
+          "XML Data Is Validated Using a Schema"
+        ],
+        "Category": [
+          "Input and Data Validation"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          ".NET"
+        ],
+        "Type": [
+          "Checklist Item"
+        ],
+        "DirectLink": [
+          "XML Data Is Validated Using a Schema"
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "false",
+          "DataType": "wikitext"
+        },
+        "Data": [
+          "==Applies To==\r\n* ASP.NET\r\n\r\n==What to Check For==\r\nEnsure that all XML data is syntactically validated on the server by using an XML schema.\r\n\r\n==Why==\r\nAn attacker passing malicious XML input can attempt XML injection attacks that aim to exploit your application by overwriting XML data, disclose information from arbitrary URIs, or cause the XML parser to crash or process slowly.\r\n\r\n==How To Check==\r\nTo check for this problem, use the following steps:\r\n# **Identify all areas where the application generates or consumes XML data.** During the design phase, enumerate all areas where XML data is generated or parsed by the application. Examine the code during the implementation phase for areas that may have been missed.\r\n# **Identify XML schemas which describe the XML data.** All XML data generated or parsed should have an associated XML schema such as an XSD file, and ensure that the schema is being used.\r\n# **Ensure quality of XML schemas.** Ensure that the XML schemas tightly define the structure and format of the XML data by using built-in and custom defined element types such as //xs:date//.\r\n\r\n==How To Fix==\r\nXML can be validated using the //System.Xml.XmlReader// and the //System.Xml.XmlReaderSettings// classes. Instantiate an //XmlReaderSettings// object and use the //XmlSchemaSetSchemas// property to add one or more XSD files. Then set the //ValidationType// property to //ValidationType.Schema//. Finally instantiate an //XmlReader// object using the //XmlReader.Create()// method which takes the XML Data and the //XmlReaderSettings// object.\r\n\r\nAn example of validation using an XML Schema, XML validation errors will result in an //Exception//.\r\n{{{\r\nusing System.Xml;\r\nusing System.Xml.Schema;\r\nXmlReaderSettings xmlSettings = new XmlReaderSettings();\r\nxmlSettings.Schemas.Add(\"http://www.example.com/types\", \"types.xsd\");\r\nxmlSettings.ValidationType = ValidationType.Schema;\r\nXmlReader xmlData = XmlReader.Create(\"data.xml\", xmlSettings);\r\n}}}\r\n\r\nAn example of an XML Schema which describes a person and tightly defines four elements, name, dob, phone, and employmentStatus:\r\n{{{\r\n<!--?xml version=\"1.0\"?-->\r\n<xs:schema xmlns:xs=\"http://www.w3.org/2001/XMLSchema\">\r\n  <xs:element name=\"person\">\r\n    <xs:complextype>\r\n      <xs:sequence>\r\n        <xs:element name=\"name\">\r\n          <xs:simpletype>\r\n            <xs:restriction base=\"xs:string\">\r\n              <xs:pattern value=\"[a-zA-Z ]+\"></xs:pattern>\r\n            </xs:restriction>\r\n          </xs:simpletype>\r\n        </xs:element>\r\n        <xs:element name=\"dob\" type=\"xs:date\"></xs:element>\r\n        <xs:element name=\"phone\">\r\n          <xs:simpletype>\r\n            <xs:restriction base=\"xs:string\">\r\n              <xs:pattern value=\"[0-9]{10}\"></xs:pattern>\r\n            </xs:restriction>\r\n          </xs:simpletype>\r\n        </xs:element>\r\n        <xs:element name=\"employmentStatus\">\r\n          <xs:simpletype>\r\n            <xs:restriction base=\"xs:string\">\r\n              <xs:enumeration value=\"Unemployed\"></xs:enumeration>\r\n              <xs:enumeration value=\"Employed\"></xs:enumeration>\r\n            </xs:restriction>\r\n          </xs:simpletype>\r\n        </xs:element>\r\n      </xs:sequence>\r\n    </xs:complextype>\r\n  </xs:element>\r\n</xs:schema>\r\n}}}"
+        ]
+      }
+    ]
+  }
+}

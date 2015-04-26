@@ -1,0 +1,59 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "0",
+      "Content_Hash": "0"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "00000000-0000-0000-0000-000000798d06"
+        ],
+        "Id_History": [
+          "00000000-0000-0000-0000-000000798d06,f87cc363-0941-43f1-9cbe-ebfa23f742dc,"
+        ],
+        "Library_Id": [
+          "b6f408c5-6e6e-4bc0-90a5-0bb10becc2ce"
+        ],
+        "Title": [
+          "Use Automatic Reference Counting"
+        ],
+        "Category": [
+          "Memory Management"
+        ],
+        "Phase": [
+          "Deployment"
+        ],
+        "Technology": [
+          "iOS"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          "Use Automatic Reference Counting"
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "false",
+          "DataType": "WikiText"
+        },
+        "Data": [
+          "==Applies To==\r\n\r\n* All iOS applications.\r\n\r\n==What to Do==\r\n\r\nCompile production binaries with Automatic Reference Counting (ARC) enabled. ARC is only available on iOS 5 and higher.\r\n\r\n==Why==\r\n\r\nUsing Automatic Reference Counting prevents use-after-free vulnerabilities.\r\n\r\n==How==\r\n\r\nTo enable Automatic Reference Counting:\r\n\r\n# **Use a compatible SDK.** Use iOS SDK 5.0 or higher to be able to use Automatic Reference Counting.\r\n# **Launch XCode.** Open the XCode environment.\r\n# **Enable Automatic Reference Counting.** Set the compiler option //Objective-C Automatic Reference Counting// to //yes//.\r\n\r\n==Memory Management Guidelines==\r\n* [[00000000-0000-0000-0000-000000112fc5|Compile Applications with Stack Cookies Enabled]]\r\n* [[00000000-0000-0000-0000-0000008d3865|Do Not Reference Freed Objects]]\r\n* [[00000000-0000-0000-0000-000000798d06|Use Automatic Reference Counting]]\r\n\r\n==Memory Management Checklists==\r\n* [[00000000-0000-0000-0000-000000841cc6|Applications Are Compiled with Stack Cookies Enabled]]\r\n* [[00000000-0000-0000-0000-000000842659|Freed Objects Are Not Referenced]]\r\n* [[00000000-0000-0000-0000-000000189cf8|Automatic Reference Counting Is Used]]\r\n"
+        ]
+      }
+    ]
+  }
+}

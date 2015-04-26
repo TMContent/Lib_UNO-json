@@ -1,0 +1,59 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "0",
+      "Content_Hash": "0"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "00000000-0000-0000-0000-0000002e2664"
+        ],
+        "Id_History": [
+          "00000000-0000-0000-0000-0000002e2664,d3085ca6-66b3-43f0-bfef-f13f832cb1a8,"
+        ],
+        "Library_Id": [
+          "f215ceee-9a08-41d9-b2c1-bbcc058a8f32"
+        ],
+        "Title": [
+          "Disable Parsing of External XML Entities"
+        ],
+        "Category": [
+          "Dangerous APIs"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "Android"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          "Disable Parsing of External XML Entities"
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "false",
+          "DataType": "WikiText"
+        },
+        "Data": [
+          "==Applies To==\r\n\r\n* Android applications that parse XML documents.\r\n\r\n==What to Do==\r\n\r\nDisable parsing of external XML entities.\r\n\r\n==Why==\r\n\r\nParsing external entities in XML documents may result in injection vulnerabilities.\r\n\r\n==How==\r\n\r\nThere are multiple parsing packages built into the Android SDK: //SAXParser//, //XmlPullParser// and //DocumentBuilder//.\r\n\r\n//DocumentBuilder// doesn't support external XML entities.\r\n\r\n//XmlPullParser// doesn't support external XML entities.\r\n\r\n//SAXParser// has parsing of external XML entities disabled by default. Parsing of external XML entities is configured in //SAXParser// using the //external-general-entities// and //external-parameter-entities// feature flags. Please, make sure that these flags are not enabled by the application.\r\n\r\n==Related Items==\r\n\r\n* [[00000000-0000-0000-0000-0000005f6129|Parsing of External XML Entities Is Disabled]]\r\n\r\n==Additional Resources==\r\n\r\n* For more information about Android XML parsers, please see http://developer.android.com/reference/javax/xml/parsers/package-summary.html\r\n* For a full list of feature flags supported by the SAX XML parser, please see: http://sax.sourceforge.net/apidoc/org/xml/sax/package-summary.html#package_description\r\n* For more information about the //SAX2// parser, please see http://developer.android.com/reference/org/xml/sax/package-summary.html\r\n* For more information about the //XmlPullParser// class, please see http://developer.android.com/reference/org/xmlpull/v1/XmlPullParser.html"
+        ]
+      }
+    ]
+  }
+}

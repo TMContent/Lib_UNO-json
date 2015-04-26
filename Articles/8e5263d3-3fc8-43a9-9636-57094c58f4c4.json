@@ -1,0 +1,59 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "0",
+      "Content_Hash": "0"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "8e5263d3-3fc8-43a9-9636-57094c58f4c4"
+        ],
+        "Id_History": [
+          "8e5263d3-3fc8-43a9-9636-57094c58f4c4,90105b92-de59-4e3a-8f66-9ba5f0138cd5,"
+        ],
+        "Library_Id": [
+          "be5273b1-d682-4361-99d9-6234f2d47eb7"
+        ],
+        "Title": [
+          "Remove Test Accounts"
+        ],
+        "Category": [
+          "Hardening"
+        ],
+        "Phase": [
+          "Deployment"
+        ],
+        "Technology": [
+          "Scala Play"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          "Remove Test Accounts"
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "false",
+          "DataType": "html"
+        },
+        "Data": [
+          "<h1>Applies to</h1>\r\n  <p>Scala and Play Framework 2.1.0+<br /></p>\r\n  <h1>What to Do</h1>\r\n  <p>Remove all test accounts from deployed applications.</p>\r\n  <h1>Why</h1>\r\n  <p>Test accounts provide access to the application's functionality during development. Since they are often poorly secured, they are a common target for attackers. Removing them before deployment is the best&nbsp;option.</p>\r\n  <h1>When</h1>\r\n  <p>If you use test accounts during application testing, be sure they are removed before deployment.</p>\r\n  <h1>How</h1>\r\n  <p>Use the following steps when removing test accounts:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Enumerate all accounts.&nbsp;</strong>List all the users&nbsp;of your application. This should be a comprehensive list that includes, but is not limited to, active users, inactive users, users pending confirmation and test accounts.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Identify the use of each account.&nbsp;</strong>Examine the use/status of each account. Sort the accounts into groups according to their use/status.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Remove the accounts that will no longer be used.&nbsp;</strong>Once the accounts are sorted into groups, list all accounts that are used for test purposes. After identifying all test accounts, remove them from your application's database.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Enforce strong passwords on the remaining accounts.&nbsp;</strong>After removing all test accounts, enforce strong passwords for the remaining accounts in your application. Strong passwords decrease the probability of compromising valid users. Consult the&nbsp;<a href=\"6d74a22d-31d2-4584-9d93-85687ea4a637\">Enforce Strong Passwords</a>&nbsp;guideline.</p>\r\n    </li>\r\n  </ol>\r\n  <p>\r\n    <strong>Note:</strong>&nbsp;PCI DSS requirements state that passwords should be at least seven characters in length, use both letters and numbers, expire after no more than 90 days and that a user's new password should not be the same as the previous four.</p>\r\n  <h1>Problem Example</h1>\r\n  <p>The following segment illustrates the user database of a multi-user application. The database still has test accounts after deployment of the application:</p>\r\n  <p>For MongoDB:</p>\r\n  <p />\r\n  <pre>&gt;db.users.find({},{_id:0,username:1})</pre>\r\n  <pre>+----------+<br />| username |<br />+----------+<br />| joe      |<br />| adam     |<br />| dinesh   |<br />| bob      |<br />| jim      |<br />| sean     |<br />| ellen    |<br />| mary     |<br />| susan    |<br />| julie    |<br />| test01   |<br />| test02   |<br />| test03   |<br />+----------+</pre>\r\n  <p />\r\n  <p>For Mysql:</p>\r\n  <p />\r\n  <pre>sql&gt; select username from users;<br />+----------+<br />| username |<br />+----------+<br />| joe      |<br />| adam     |<br />| dinesh   |<br />| bob      |<br />| jim      |<br />| sean     |<br />| ellen    |<br />| mary     |<br />| susan    |<br />| julie    |<br />| test01   |<br />| test02   |<br />| test03   |<br />+----------+</pre>\r\n  <p />\r\n  <h1>Solution Example</h1>\r\n  <p>The following segment illustrates the user database of a multi-user application. The user database is populated only with active users and no test accounts:</p>\r\n  <p />\r\n  <p>For MongoDB:</p>\r\n  <p />\r\n  <pre>&gt;db.users.find({},{_id:0,username:1})</pre>\r\n  <pre>+----------+<br />| username |<br />+----------+<br />| joe      |<br />| adam     |<br />| dinesh   |<br />| bob      |<br />| jim      |<br />| sean     |<br />| ellen    |<br />| mary     |<br />| susan    |<br />| julie    |<br />+----------+</pre>\r\n  <p />\r\n  <p>For Mysql:</p>\r\n  <p />\r\n  <pre>sql&gt; select username from users;<br />+----------+<br />| username |<br />+----------+<br />| joe      |<br />| adam     |<br />| dinesh   |<br />| bob      |<br />| jim      |<br />| sean     |<br />| ellen    |<br />| mary     |<br />| susan    |<br />| julie    |<br />+----------+</pre>\r\n  <p />"
+        ]
+      }
+    ]
+  }
+}

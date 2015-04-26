@@ -1,0 +1,59 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "0",
+      "Content_Hash": "0"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "00000000-0000-0000-0000-0000006b67b3"
+        ],
+        "Id_History": [
+          "00000000-0000-0000-0000-0000006b67b3,9afcc079-0906-4792-9c88-283bf5c29887,"
+        ],
+        "Library_Id": [
+          "b6f408c5-6e6e-4bc0-90a5-0bb10becc2ce"
+        ],
+        "Title": [
+          "Strong SSL Configurations Are Used"
+        ],
+        "Category": [
+          "Communication Security"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "iOS"
+        ],
+        "Type": [
+          "Checklist Item"
+        ],
+        "DirectLink": [
+          "Strong SSL Configurations Are Used"
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "false",
+          "DataType": "WikiText"
+        },
+        "Data": [
+          "==Applies To==\r\n\r\n* iOS applications that send or receive sensitive data over the network.\r\n\r\n==What to Check For==\r\n\r\nVerify that strong SSL configurations are used.\r\n\r\n==Why==\r\n\r\nUsing strong SSL configurations prevents eavesdropping and other man-in-the-middle attacks. iOS SSL configurations are relatively strong by default, depending on the SDK version, and need to be intentionally degraded to be unsafe. Unfortunately, many developers degrade iOS SSL strength for compatibility with the development environments and subsequently do not restore the SSL configuration to the secure defaults in the production releases.\r\n\r\n==How to Check==\r\n\r\nTo verify that strong SSL configurations are used:\r\n\r\n# **Verify that self-signed certificates are disabled.** Search application code for the presence of the //continueWithoutCredentialForAuthenticationChallenge// selector - the presence of this selector indicates that self-signed SSL certificates may be allowed.\r\n# **Check the available SDK version.** Identify the iOS SDK version used by the application. Versions 5 and higher of the iOS SDK use strong SSL cipher suites. There are no practical ways to control which cipher suites are used by iOS applications. If strength of SSL ciphers is a critical requirement, use version 5 or higher of the iOS SDK.\r\n\r\n==How to Fix==\r\n\r\nTo use strong SSL configurations:\r\n\r\n# **Disable self-signed certificates.** Self-signed certificates are disabled by default by the iOS SDK. Developers have to intentionally enable self-signed certificates for the application to accept them. Self-signed certificates are often enabled for testing in the development environment. It is important to disable self-signed certificates in production releases, because self-signed certificates allow man-in-the-middle attacks, which largely negate the benefits of SSL.\r\n# **Identify the available SDK version.** Identify the iOS SDK version used by the application.\r\n# **Use iOS SDK version 5 or higher.** The cipher suites used by SSL implementations in iOS SDKs vary by version. Versions 5 and higher of the iOS SDK use strong SSL cipher suites. There are no practical ways to control which cipher suites are used by iOS applications. If strength of SSL ciphers is a critical requirement, use version 5 or higher of the iOS SDK.\r\n\r\n==Communication Security Guidelines==\r\n* [[00000000-0000-0000-0000-0000006aa5d9|Disable Self-signed SSL Certificates]]\r\n* [[00000000-0000-0000-0000-00000060779f|Use SSL to Protect Communications]]\r\n* [[00000000-0000-0000-0000-0000007db8fe|Use Strong SSL Configurations]]\r\n\r\n==Communication Security Checklists==\r\n* [[00000000-0000-0000-0000-00000092c321|Self-signed SSL Certificates Are Disabled]]\r\n* [[00000000-0000-0000-0000-0000005faaf0|SSL Is Used to Protect Communications]]\r\n* [[00000000-0000-0000-0000-0000006b67b3|Strong SSL Configurations Are Used]]\r\n\r\n==Additional Resources==\r\n\r\n* For more information on proper SSL configuration, please see https://www.owasp.org/index.php/Transport_Layer_Protection_Cheat_Sheet"
+        ]
+      }
+    ]
+  }
+}

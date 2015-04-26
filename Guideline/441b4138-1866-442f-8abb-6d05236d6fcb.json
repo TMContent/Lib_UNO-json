@@ -1,0 +1,68 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "360311650",
+      "Content_Hash": "130279952"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "441b4138-1866-442f-8abb-6d05236d6fcb"
+        ],
+        "Id_History": [
+          "441b4138-1866-442f-8abb-6d05236d6fcb,384249ad-5a56-4800-a60a-51312bffe940,"
+        ],
+        "Library_Id": [
+          "be5273b1-d682-4361-99d9-6234f2d47eb7"
+        ],
+        "Title": [
+          "Don't Throw Exceptions from Deallocation Functions"
+        ],
+        "Category": [
+          "Error and Exception Management"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "C++"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          "Don't Throw Exceptions from Deallocation Functions"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ],
+        "Source": [
+          "C++"
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>C&#43;&#43;</li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Write deallocation functions in such a way that they don't throw exceptions.</p>\r\n  <h1>Why</h1>\r\n  <p>Deallocation functions may be called when exceptions are thrown. If a deallocation function throws an exception after being called when an exception is thrown, the program may terminate. This may result in a denial-of-service vulnerability.</p>\r\n  <h1>When</h1>\r\n  <p>Use this guideline when your code includes deallocation functions that throw exceptions.</p>\r\n  <h1>How</h1>\r\n  <p>Perform the following actions to assure that your deallocation functions don't throw exceptions: </p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Identify deallocation functions.</strong>&nbsp;Review your code and identify all deallocation functions. </p>\r\n      <li>\r\n        <p>\r\n          <strong>Search for deallocation functions that throw exceptions.</strong> From the list of deallocation functions, identify the ones that throw exceptions.</p>\r\n        <li>\r\n          <p>\r\n            <strong>Rewrite affected deallocation functions.</strong>&nbsp;Rewrite the deallocation functions that throw exceptions in a way that doesn't involve throwing exceptions. This may be accomplished by simply removing code that throws exceptions from the deallocation functions. If error handling must be done based on the results of the execution of the deallocation functions, use error codes.</p>\r\n          <li>\r\n            <p>\r\n              <strong>Inform the team.</strong> Prevent future code from throwing exceptions from deallocation functions by telling the team not to do it.</p>\r\n          </li>\r\n        </li>\r\n      </li>\r\n    </li>\r\n  </ol>\r\n  <h1>Related Items</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/fd06b089-88ea-43df-bc41-f111a1848116\">Don't Throw Exceptions from Destructors</a>\r\n    </li>\r\n  </ul>"
+        ]
+      }
+    ]
+  }
+}

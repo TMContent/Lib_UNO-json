@@ -1,0 +1,59 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "0",
+      "Content_Hash": "0"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "cddbb3b4-e916-4109-b657-0a129f634d59"
+        ],
+        "Id_History": [
+          "cddbb3b4-e916-4109-b657-0a129f634d59,0a630415-275e-41fc-b738-f3f1db55c6d9,"
+        ],
+        "Library_Id": [
+          "be5273b1-d682-4361-99d9-6234f2d47eb7"
+        ],
+        "Title": [
+          "Functions with Format String Parameters Are Not Used"
+        ],
+        "Category": [
+          "Dangerous APIs"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "C++"
+        ],
+        "Type": [
+          "Checklist Item"
+        ],
+        "DirectLink": [
+          "Functions with Format String Parameters Are Not Used"
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "false",
+          "DataType": "wikitext"
+        },
+        "Data": [
+          "==Applies To==\r\n\r\n* C++\r\n\r\n==What to Check For==\r\n\r\nVerify that functions that accept format string parameters are either not used at all or are used as little as possible.\r\n\r\n==Why==\r\n\r\nC and C++ use string functions, like printf(), that allow users to pass a format for the input string. Attackers can manipulate the input parameters passed to these functions to make the function work differently. Attackers can use format string bugs to overwrite parts of the stack, corrupt memory, and crash the system. They can use this vulnerability to execute different kind of attacks such as elevation of privileges, authentication bypass, information disclosure, and denial of services.\r\n\r\n==How to Check==\r\n\r\nTo verify that functions with format string parameters are used as little as possible:\r\n\r\n# **Find code that uses functions with format string parameters.** Search your application for code that uses any of the following functions:\r\n## printf\r\n## wprintf\r\n## sprintf\r\n## swprintf\r\n## fprintf\r\n## fwprintf\r\n## vprintf\r\n## scanf\r\n## fscanf\r\n## sscanf\r\n## fwscanf\r\n## wscanf\r\n## swscanf\r\n## snprintf\r\n# **Identify whether using functions with format string parameters is necessary.** Examine each piece of code that uses a function with format string parameters. Determine if it is possible to either remove this code or rewrite it without using format string functions.\r\n\r\n\r\n==How to Fix==\r\n\r\nTo avoid using functions with format string parameters:\r\n\r\n# **Find code that uses functions with format string parameters.** Search your application for code that uses any of the following functions:\r\n## printf\r\n## wprintf\r\n## sprintf\r\n## swprintf\r\n## fprintf\r\n## fwprintf\r\n## vprintf\r\n## scanf\r\n## fscanf\r\n## sscanf\r\n## fwscanf\r\n## wscanf\r\n## swscanf\r\n## snprintf\r\n# **Replace code that uses functions with format string parameters.** Change each piece of code that uses any of the functions with format string parameters to use some other functions. The following functions may be used as safe alternatives on Windows systems:\r\n## StringCbPrintf\r\n## StringCbPrintfEx\r\n## StringCchPrintf \r\n\r\n"
+        ]
+      }
+    ]
+  }
+}

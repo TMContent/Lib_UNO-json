@@ -1,0 +1,68 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "505397461",
+      "Content_Hash": "1498510274"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "84b2da4a-0f64-4d64-80dc-0e91a3506ef4"
+        ],
+        "Id_History": [
+          "84b2da4a-0f64-4d64-80dc-0e91a3506ef4,33b4adec-40ef-4289-a073-2bf0135f2532,"
+        ],
+        "Library_Id": [
+          "c037d0d2-0617-44f3-b846-21dc3d02c4f8"
+        ],
+        "Title": [
+          "Use SSL for All Sensitive Pages"
+        ],
+        "Category": [
+          "Communication Security"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "PHP"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          "Use SSL for All Sensitive Pages"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ],
+        "Source": [
+          "SI"
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PHP</li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Require SSL for all private pages.</p>\r\n  <h1>Why</h1>\r\n  <p>SSL should be used to protect all pages that handle sensitive data, including all pages that use authentication or authorization features, to prevent unauthorized information disclosure.</p>\r\n  <h1>How</h1>\r\n  <p>The simplest approach for enabling SSL for all sensitive pages is to use SSL for the entire site. Enabling SSL for the entire site may require additional computing resources, so for performance reasons, it may be acceptable to enable SSL only for sensitive pages. To enable SSL only for sensitive pages:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Identify sensitive pages.</strong> Make a list of all pages that handle sensitive information, including all pages that use authentication or authorization features.</p>\r\n      <li>\r\n        <p>\r\n          <strong>Enable SSL for each directory containing sensitive pages.</strong> The exact instructions for doing so are different for different web servers. Use the web server administration interface or edit the server configuration files to enable SSL for all folders containing sensitive pages.</p>\r\n        <li>\r\n          <p />\r\n          <strong>Redirect non-SSL requests to SSL-protected pages.</strong> This can be accomplished by editing the<em> .htaccess</em> file in each directory with sensitive pages and adding the folowing lines:<pre>RewriteEngine On<br />RewriteCond &#37;&#123;HTTPS&#125; &#33;on<br />RewriteRule (.&#42;) https://&#37;&#123;HTTP_HOST&#125;&#37;&#123;REQUEST_URI&#125;</pre></li>\r\n        <p>The <em>&#36;_SERVER&#91;'HTTPS'&#93;</em> variable can be used to programmatically determine if SSL is being used and take action accordingly. </p>\r\n      </li>\r\n    </li>\r\n  </ol>\r\n  <h1>Transport Layer Protection Guidelines</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/34c8d5b4-430d-4112-802b-f8c5fb786cfe\">Use SSL</a>\r\n      <li>\r\n        <a href=\"/article/84b2da4a-0f64-4d64-80dc-0e91a3506ef4\">Use SSL for All Sensitive Pages</a>\r\n        <li>\r\n          <a href=\"/article/a6be174a-c52a-4513-8caa-2983fd6555a2\">Use Only Strong SSL Algorithms</a>\r\n          <li>\r\n            <a href=\"/article/12098efa-6926-4603-968c-76c9416f6fa4\">Use Valid SSL Certificates</a>\r\n          </li>\r\n        </li>\r\n      </li>\r\n    </li>\r\n  </ul>\r\n  <h1>Transport Layer Protection Checklists</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/3b1eb7f0-76cd-4e4f-8653-8a6a6a32d1c9\">SSL Is Enabled</a>\r\n      <li>\r\n        <a href=\"/article/7eea0be2-6c3b-4d4c-a6f1-4e3fbb3f4295\">SSL Is Used for All Sensitive Pages</a>\r\n        <li>\r\n          <a href=\"/article/84580cd7-3d37-40bf-b585-e029c8e6b5c3\">Only Strong SSL Algorithms Are Used</a>\r\n          <li>\r\n            <a href=\"/article/8d2d20fc-a21a-4a1c-bb31-8a876e57abaf\">Valid SSL Certificates Are Used</a>\r\n          </li>\r\n        </li>\r\n      </li>\r\n    </li>\r\n  </ul>"
+        ]
+      }
+    ]
+  }
+}

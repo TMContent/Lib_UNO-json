@@ -1,0 +1,68 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "1646904286",
+      "Content_Hash": "-538402218"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "043212d8-1273-4625-a70a-ef180a20137e"
+        ],
+        "Id_History": [
+          "043212d8-1273-4625-a70a-ef180a20137e,33c44738-c2dc-479c-91cf-7889998c1761,"
+        ],
+        "Library_Id": [
+          "26bd1a04-beed-4a66-917d-b6ab0a7d634c"
+        ],
+        "Title": [
+          "Consider Identity Flow"
+        ],
+        "Category": [
+          "Auditing and Logging"
+        ],
+        "Phase": [
+          "Design"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          "Consider Identity Flow"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          "J.D. Meier, Alex Mackman, Michael Dunner, Srinath Vasireddy, Ray Escamilla and Anandha Murukan"
+        ],
+        "Status": [
+          ""
+        ],
+        "Source": [
+          "SI"
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h1>Applies To</h1>\r\n  <ul>\r\n    <li>Web Application</li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Consider how your application will flow caller identity across multiple application tiers.</p>\r\n  <h1>Why</h1>\r\n  <p>The threat of repudiation increases when failing to audit across application tiers.</p>\r\n  <p>Log files may be needed in legal proceedings to prove crimes committed by individuals or to settle cases of repudiation. Generally, auditing is considered most authoritative if the audits are generated at the time of resource access and by the same routines that access the resource. Verify that the application design factors in log file synchronization and logs some form of request identifier to ensure that multiple log file entries can be correlated and related back to a single request. </p>\r\n  <span>\r\n  </span>\r\n  <h1>When</h1>\r\n  <p>When you want to Audit and Log activities across the tiers of your application.</p>\r\n  <span>\r\n  </span>\r\n  <h1>How</h1>\r\n  <p>You have two basic choices. &nbsp;You can flow the caller's identity at the operating system level using the Kerberos protocol delegation. &nbsp;This allows you to use operating system level auditing. &nbsp;The drawback with this approach is that it affects scalability because it means there can be no effective database connection pooling at the middle tier. &nbsp;Alternatively, you can flow the caller's identity at the application level and use trusted identities to access back-end resources. &nbsp;With this approach, you have to trust the middle tier and there is a potential repudiation risk. &nbsp;You should generate audit trails in the middle tier that can be correlated with back-end audit trails.</p>\r\n  <h1>Additional Resources</h1>\r\n  <ul>\r\n    <li>Design Guidelines for Secure Web Applications <a href=\"http://msdn2.microsoft.com/en-us/library/aa302420.aspx\">http://msdn2.microsoft.com/en-us/library/aa302420.aspx</a></li>\r\n    <li>Architecture and Design Review for Security <a href=\"http://msdn2.microsoft.com/en-us/library/aa302420.aspx\">http://msdn2.microsoft.com/en-us/library/aa302420.aspx</a></li>\r\n  </ul>"
+        ]
+      }
+    ]
+  }
+}

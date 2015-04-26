@@ -1,0 +1,59 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "0",
+      "Content_Hash": "0"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "bc682ac4-f9ae-4354-9c15-db06e508ca84"
+        ],
+        "Id_History": [
+          "bc682ac4-f9ae-4354-9c15-db06e508ca84,c9485a97-49ae-44d6-81d5-8603a0a0df3b,"
+        ],
+        "Library_Id": [
+          "c037d0d2-0617-44f3-b846-21dc3d02c4f8"
+        ],
+        "Title": [
+          "External Commands Are Avoided"
+        ],
+        "Category": [
+          "Dangerous APIs"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "PHP"
+        ],
+        "Type": [
+          "Checklist Item"
+        ],
+        "DirectLink": [
+          "External Commands Are Avoided"
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "false",
+          "DataType": "wikitext"
+        },
+        "Data": [
+          "==Applies To==\r\n\r\n* PHP\r\n\r\n==What to Check For==\r\n\r\nVerify that external OS commands are used as little as possible.\r\n\r\n\r\n==Why==\r\n\r\nUsing external commands for application functionality creates the potential for command injection vulnerabilities. If it's possible to satisfy design requirements using PHP code, do that instead of using external commands.\r\n\r\n==How to Check==\r\n\r\nTo verify that external OS commands are used as little as possible:\r\n\r\n# **Find all code that uses external commands.** To identify potential trouble spots, find all the code in the application that executes operating system commands by searching for use of the following functions: exec, passthru, shell_exec, system, proc_open, popen, curl_exec, curl_multi_exec, pcntl_exec, dl. Make a spreadsheet of all this code.\r\n# **Determine whether external commands are necessary.** External commands are often used to process or communicate data, either for performance reasons or to simplify implementation. For each external command, determine if it is possible to replace it with application code that does the same thing without relying on other programs. Even if it is not practical to replace an external command with application code, consider removing the code that executes external commands altogether, which of course removes the associated functionality, but also removes potentially vulnerable code; that is the trade-off that needs to be considered.\r\n\r\n==How to Fix==\r\n\r\nTo remove code that uses external commands:\r\n\r\n# **Find all code that uses external commands.** To identify potential trouble spots, find all the code in the application that executes operating system commands by searching for use of the following functions: exec, passthru, shell_exec, system, proc_open, popen, curl_exec, curl_multi_exec, pcntl_exec, dl. Make a spreadsheet of all this code.\r\n# **Replace code that uses external commands.** Using the spreadsheet as a guide, examine each piece of code that executes operating system commands and determine whether it is absolutely necessary to the application. If possible, rewrite that code to use only PHP functions, thus removing the possibility that it contains a command injection vulnerability.\r\n"
+        ]
+      }
+    ]
+  }
+}

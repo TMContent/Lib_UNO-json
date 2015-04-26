@@ -1,0 +1,59 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "0",
+      "Content_Hash": "0"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "00000000-0000-0000-0000-000000590dce"
+        ],
+        "Id_History": [
+          "00000000-0000-0000-0000-000000590dce,8bfff6fa-0eca-4604-9b13-34909056af54,"
+        ],
+        "Library_Id": [
+          "be5273b1-d682-4361-99d9-6234f2d47eb7"
+        ],
+        "Title": [
+          "Check File Paths and Names for Null Bytes"
+        ],
+        "Category": [
+          "Input and Data Validation"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "iOS"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          "Check File Paths and Names for Null Bytes"
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "false",
+          "DataType": "WikiText"
+        },
+        "Data": [
+          "==Applies To==\r\n\r\n* iOS applications where Obj-C code passes file names and paths to C code.\r\n\r\n==What to Do==\r\n\r\nCheck //NSString// objects that are used for file names or paths to make sure they don't contain null bytes.\r\n\r\n==Why==\r\n\r\nChecking file names and paths for null bytes helps prevent unauthorized file access. Code written in C uses null bytes to terminate strings. If a string containing null bytes is passed to C code, the C code will only read the string up to the first null byte. Attackers often exploit this fact by inserting null bytes into file names in order to access unintended files. Objective-C //NSString// objects are not terminated by null bytes, so an attacker may use them to pass paths and names containing null bytes to native C code.\r\n\r\n==How==\r\n\r\nTo check file paths and names for null bytes:\r\n# **Identify all input used for file access.** Enumerate all file access performed by the application. Examine code responsible for accessing each file. Take note of any input used to form path or file names for file access.\r\n# **Remove null bytes from paths.** If a //NSString// object contains a file name or path and includes a null byte, an incorrect resource may be accessed. Verify that there are no null bytes in strings that are used for file names or paths. If null bytes are detected, it is safer to abort the operation than to strip the null bytes, because the presence of null bytes almost certainly indicates an attack.\r\n\r\n==Data Validation Guidelines==\r\n* [[00000000-0000-0000-0000-000000866d55|Canonicalize File Names and Paths]]\r\n* [[00000000-0000-0000-0000-000000590dce|Check File Paths and Names for Null Bytes]]\r\n* [[00000000-0000-0000-0000-00000051c329|Validate All Input]]\r\n* [[00000000-0000-0000-0000-0000005804d8|Validate and Encode Data Inserted into XML Documents]]\r\n* [[00000000-0000-0000-0000-000000410a08|Validate and Encode Data Passed to UIWebView Controls]]\r\n* [[00000000-0000-0000-0000-00000049bb5e|Validate File Formats]]\r\n\r\n==Data Validation Checklists==\r\n* [[00000000-0000-0000-0000-0000004d996e|File Names and Paths Are Canonicalized]]\r\n* [[00000000-0000-0000-0000-0000004446d0|File Paths and Names Are Checked for Null Bytes]]\r\n* [[00000000-0000-0000-0000-000000396c19|All Input Is Validated]]\r\n* [[00000000-0000-0000-0000-0000008c53b6|Data Inserted into XML Documents Is Validated and Encoded]]\r\n* [[00000000-0000-0000-0000-000000647d44|Data Passed to UIWebView Controls Is Validated and Encoded]]\r\n* [[00000000-0000-0000-0000-000000066105|File Formats Are Validated]]"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "0",
+      "Content_Hash": "0"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "e668bb37-d3a2-414e-9ed0-35ef7e8bc30d"
+        ],
+        "Id_History": [
+          "e668bb37-d3a2-414e-9ed0-35ef7e8bc30d,83a6fccc-f397-4a33-aeb5-d9bb38e41476,"
+        ],
+        "Library_Id": [
+          "be5273b1-d682-4361-99d9-6204f2d47eb7"
+        ],
+        "Title": [
+          "Using Components with Known Vulnerabilities"
+        ],
+        "Category": [
+          "Other"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "PHP"
+        ],
+        "Type": [
+          "Vulnerability"
+        ],
+        "DirectLink": [
+          "Using Components with Known Vulnerabilities"
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "false",
+          "DataType": "wikitext"
+        },
+        "Data": [
+          "==Description==\n\n“Using components with known vulnerabilities” refers to an application that uses third-party code that contains known vulnerabilities. The result is that the vulnerabilities in the third-party code become vulnerabilities in the application. \n\nThis type of vulnerability affects all applications.\n\n==Impact==\n\nThe impact of using components with known vulnerabilities depends on the nature of the vulnerabilities. Usually, this refers to code that is vulnerable to code injection, command injection or SQL injection. The impact in such scenarios is usually full system compromise. On top of that danger, attackers often scan for these types of vulnerabilities with automated tools, resulting in many non-targeted compromises. In other words, your application might get attacked simply because an attacker found a vulnerable component when scanning a large range of potential targets.\n\n==Countermeasures==\n\nTo prevent using components with known vulnerabilities, install patches.\n\n* [[5bc20f6a-d144-4491-95e3-52aa62c2593c|Install Patches]]\n\n==Application Check==\n\nTo make sure that using components with known vulnerabilities is prevented, verify that patches are installed.\n\n* [[99062fc5-6b58-46f5-b375-9bb7c8387ef2|Patches Are Installed]]"
+        ]
+      }
+    ]
+  }
+}
