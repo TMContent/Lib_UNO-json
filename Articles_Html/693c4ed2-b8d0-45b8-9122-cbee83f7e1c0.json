@@ -1,0 +1,334 @@
+{
+  "id": "693c4ed2-b8d0-45b8-9122-cbee83f7e1c0",
+  "checksum": "9918b23ab3a4d56904939fd216baa4f3c9f17837",
+  "words": {
+    "35": [
+      "ul",
+      "li"
+    ],
+    "2008": [
+      "ul",
+      "li"
+    ],
+    "applies": [
+      "h1"
+    ],
+    "to": [
+      "h1",
+      "p",
+      "p",
+      "title"
+    ],
+    "microsoft®": [
+      "ul",
+      "li"
+    ],
+    "windows": [
+      "ul",
+      "li"
+    ],
+    "communication": [
+      "ul",
+      "li"
+    ],
+    "foundation": [
+      "ul",
+      "li"
+    ],
+    "wcf)": [
+      "ul",
+      "li"
+    ],
+    "microsoft": [
+      "ul",
+      "li",
+      "p"
+    ],
+    "visual": [
+      "ul",
+      "li"
+    ],
+    "studio®": [
+      "ul",
+      "li"
+    ],
+    "description": [
+      "h1"
+    ],
+    "you": [
+      "p",
+      "p"
+    ],
+    "can": [
+      "p"
+    ],
+    "check": [
+      "p",
+      "title"
+    ],
+    "the": [
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "state": [
+      "p",
+      "title"
+    ],
+    "of": [
+      "p",
+      "title"
+    ],
+    "channel": [
+      "p",
+      "p",
+      "title"
+    ],
+    "during": [
+      "p"
+    ],
+    "proxy": [
+      "p",
+      "p",
+      "div",
+      "p",
+      "pre",
+      "title"
+    ],
+    "invocation": [
+      "p"
+    ],
+    "by": [
+      "p"
+    ],
+    "checking": [
+      "p"
+    ],
+    "value": [
+      "p"
+    ],
+    "or": [
+      "p"
+    ],
+    "proxystate.": [
+      "p"
+    ],
+    "avoid": [
+      "p"
+    ],
+    "this": [
+      "p"
+    ],
+    "way": [
+      "p"
+    ],
+    "throwing": [
+      "p"
+    ],
+    "exception": [
+      "p",
+      "p"
+    ],
+    "on": [
+      "p",
+      "p"
+    ],
+    "due": [
+      "p",
+      "p"
+    ],
+    "being": [
+      "p"
+    ],
+    "closed": [
+      "p"
+    ],
+    "an": [
+      "p"
+    ],
+    "unhandled": [
+      "p"
+    ],
+    "service": [
+      "p"
+    ],
+    "try{serviceclient": [
+      "div",
+      "p",
+      "pre"
+    ],
+    "=": [
+      "div",
+      "div",
+      "div",
+      "div",
+      "p",
+      "p",
+      "p",
+      "p",
+      "pre",
+      "pre",
+      "pre",
+      "pre"
+    ],
+    "new": [
+      "div",
+      "p",
+      "pre"
+    ],
+    "serviceclient);proxy.clientcredentials.username.username": [
+      "div",
+      "p",
+      "pre"
+    ],
+    "\"user\"": [
+      "div",
+      "p",
+      "pre"
+    ],
+    "proxyclientcredentials.username.password": [
+      "div",
+      "p",
+      "pre"
+    ],
+    "\"password\"": [
+      "div",
+      "p",
+      "pre"
+    ],
+    "proxygetdata(2);": [
+      "div",
+      "p",
+      "pre"
+    ],
+    "if": [
+      "div",
+      "p",
+      "pre"
+    ],
+    "proxy.state": [
+      "div",
+      "p",
+      "pre"
+    ],
+    "communicationstateopened)": [
+      "div",
+      "p",
+      "pre"
+    ],
+    "{": [
+      "div",
+      "p",
+      "pre"
+    ],
+    "proxygetdata(\"data\");": [
+      "div",
+      "p",
+      "pre"
+    ],
+    "}": [
+      "div",
+      "p",
+      "pre"
+    ],
+    "proxyclose();": [
+      "div",
+      "p",
+      "pre"
+    ],
+    "}catch": [
+      "div",
+      "p",
+      "pre"
+    ],
+    "faultexception": [
+      "div",
+      "p",
+      "pre"
+    ],
+    "ex": [
+      "div",
+      "p",
+      "pre"
+    ],
+    "{}": [
+      "div",
+      "p",
+      "pre"
+    ],
+    "adapted": [
+      "p"
+    ],
+    "from": [
+      "p"
+    ],
+    "patterns": [
+      "p"
+    ],
+    "&": [
+      "p"
+    ],
+    "practices": [
+      "p"
+    ],
+    "guidance": [
+      "p"
+    ],
+    "how": [
+      "title"
+    ],
+    "in": [
+      "title"
+    ],
+    "wcf": [
+      "title"
+    ],
+    "client": [
+      "title"
+    ]
+  },
+  "tags": {
+    "h1": [
+      "Applies to",
+      "Description"
+    ],
+    "ul": [
+      "Microsoft® Windows Communication Foundation (WCF) 3.5 \r\nMicrosoft Visual Studio® 2008"
+    ],
+    "li": [
+      "Microsoft® Windows Communication Foundation (WCF) 3.5",
+      "Microsoft Visual Studio® 2008"
+    ],
+    "p": [
+      "You can check the state of channel during proxy invocation by checking the value or proxy.state. You avoid this way throwing exception on the proxy, due to channel being closed due to an unhandled exception on service.",
+      "try{ServiceClient proxy = new ServiceClient();proxy.ClientCredentials.UserName.UserName = \"user\";\r\n    proxy.ClientCredentials.UserName.Password = \"password\"; proxy.GetData(2);                if (proxy.State = CommunicationState.Opened) {                          proxy.GetData(\"data\");                    } proxy.Close();         }catch (FaultException ex)            {}",
+      "",
+      "Adapted from Microsoft patterns & practices guidance."
+    ],
+    "div": [
+      "try{ServiceClient proxy = new ServiceClient();proxy.ClientCredentials.UserName.UserName = \"user\";\r\n    proxy.ClientCredentials.UserName.Password = \"password\"; proxy.GetData(2);                if (proxy.State = CommunicationState.Opened) {                          proxy.GetData(\"data\");                    } proxy.Close();         }catch (FaultException ex)            {}"
+    ],
+    "pre": [
+      "try{ServiceClient proxy = new ServiceClient();proxy.ClientCredentials.UserName.UserName = \"user\";",
+      "proxy.ClientCredentials.UserName.Password = \"password\"; proxy.GetData(2);                if (proxy.State = CommunicationState.Opened) {                          proxy.GetData(\"data\");                    } proxy.Close();         }catch (FaultException ex)            {}"
+    ],
+    "br": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "hr": [
+      ""
+    ]
+  },
+  "links": [],
+  "html": "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>Microsoft® Windows Communication Foundation (WCF) 3.5 \r\n<li>Microsoft Visual Studio® 2008</li></li>\r\n  </ul>\r\n  <h1>Description</h1>\r\n  <p>You can check the state of channel during proxy invocation by checking the value or proxy.state. You avoid this way throwing exception on the proxy, due to channel being closed due to an unhandled exception on service. </p>\r\n  <div>\r\n    <p />\r\n    <pre>try<br />{<br />ServiceClient proxy = new ServiceClient();<br />proxy.ClientCredentials.UserName.UserName = \"user\";</pre>\r\n    <pre>proxy.ClientCredentials.UserName.Password = \"password\"; proxy.GetData(2);                <br />if (proxy.State = CommunicationState.Opened) {                    <br />      proxy.GetData(\"data\");                <br />    }<br /> proxy.Close();         <br />}<br />catch (FaultException ex)            <br />{}</pre>\r\n    <p />\r\n  </div>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
+}

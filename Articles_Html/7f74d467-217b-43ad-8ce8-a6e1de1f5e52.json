@@ -1,0 +1,330 @@
+{
+  "id": "7f74d467-217b-43ad-8ce8-a6e1de1f5e52",
+  "checksum": "a87c667b1dc0a0fea24e575200bda673d70a3b39",
+  "words": {
+    "description": [
+      "h1"
+    ],
+    "to": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "pre",
+      "title",
+      "title"
+    ],
+    "use": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "pre",
+      "title"
+    ],
+    "dpapi": [
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "encrypt": [
+      "p",
+      "p",
+      "p",
+      "pre"
+    ],
+    "sensitive": [
+      "p",
+      "p",
+      "title"
+    ],
+    "data": [
+      "p",
+      "p",
+      "p",
+      "pre",
+      "pre",
+      "pre",
+      "title"
+    ],
+    "in": [
+      "p",
+      "p",
+      "p",
+      "pre"
+    ],
+    "configuration": [
+      "p",
+      "p"
+    ],
+    "files": [
+      "p",
+      "p"
+    ],
+    "the": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "pre",
+      "pre",
+      "pre",
+      "pre"
+    ],
+    "dataprotectionconfigurationprovider": [
+      "p",
+      "b"
+    ],
+    "class": [
+      "p",
+      "p",
+      "pre"
+    ],
+    "with": [
+      "p"
+    ],
+    "aspnet": [
+      "p"
+    ],
+    "webconfig": [
+      "p"
+    ],
+    "aspnet_regiisexe.": [
+      "p"
+    ],
+    "for": [
+      "p"
+    ],
+    "windows": [
+      "p"
+    ],
+    "applications": [
+      "p"
+    ],
+    "protected": [
+      "p"
+    ],
+    "api": [
+      "p"
+    ],
+    "other": [
+      "p"
+    ],
+    "locations": [
+      "p"
+    ],
+    "such": [
+      "p"
+    ],
+    "as": [
+      "p"
+    ],
+    "registry": [
+      "p"
+    ],
+    "protecteddata": [
+      "p",
+      "b",
+      "pre"
+    ],
+    "using": [
+      "pre",
+      "pre"
+    ],
+    "systemsecurity.cryptography;//": [
+      "pre"
+    ],
+    "define": [
+      "pre"
+    ],
+    "an": [
+      "pre"
+    ],
+    "entropy": [
+      "pre",
+      "pre",
+      "pre",
+      "pre"
+    ],
+    "value": [
+      "pre"
+    ],
+    "of": [
+      "pre"
+    ],
+    "is": [
+      "pre"
+    ],
+    "optional.byte[]": [
+      "pre"
+    ],
+    "=": [
+      "pre",
+      "pre",
+      "pre"
+    ],
+    "new": [
+      "pre"
+    ],
+    "byte]": [
+      "pre"
+    ],
+    "{": [
+      "pre"
+    ],
+    "0x23": [
+      "pre"
+    ],
+    "0x06": [
+      "pre"
+    ],
+    "0x08": [
+      "pre"
+    ],
+    "0x09": [
+      "pre"
+    ],
+    "0x22": [
+      "pre"
+    ],
+    "0x03": [
+      "pre"
+    ],
+    "0x25": [
+      "pre"
+    ],
+    "}//": [
+      "pre"
+    ],
+    "get": [
+      "pre"
+    ],
+    "original": [
+      "pre"
+    ],
+    "a": [
+      "pre"
+    ],
+    "byte": [
+      "pre"
+    ],
+    "arraybyte[]": [
+      "pre"
+    ],
+    "toencrypt": [
+      "pre"
+    ],
+    "unicodeencodingascii.getbytes(": [
+      "pre"
+    ],
+    "\"the": [
+      "pre"
+    ],
+    "secret": [
+      "pre"
+    ],
+    "be": [
+      "pre"
+    ],
+    "encrypted\";//": [
+      "pre"
+    ],
+    "by": [
+      "pre"
+    ],
+    "this": [
+      "pre"
+    ],
+    "example": [
+      "pre"
+    ],
+    "uses//": [
+      "pre"
+    ],
+    "local": [
+      "pre"
+    ],
+    "machine": [
+      "pre"
+    ],
+    "key": [
+      "pre"
+    ],
+    "storebyte[]": [
+      "pre"
+    ],
+    "encrypteddata": [
+      "pre"
+    ],
+    "protecteddataprotect(toencrypt,": [
+      "pre"
+    ],
+    "dataprotectionscopelocalmachine);": [
+      "pre"
+    ],
+    "adapted": [
+      "p"
+    ],
+    "from": [
+      "p"
+    ],
+    "microsoft": [
+      "p"
+    ],
+    "patterns": [
+      "p"
+    ],
+    "&": [
+      "p"
+    ],
+    "practices": [
+      "p"
+    ],
+    "guidance": [
+      "p"
+    ],
+    "how": [
+      "title"
+    ],
+    "protect": [
+      "title"
+    ]
+  },
+  "tags": {
+    "h1": [
+      "Description"
+    ],
+    "p": [
+      "To use DPAPI to encrypt sensitive data in configuration files, use the DataProtectionConfigurationProvider class. To encrypt sensitive data with DPAPI in ASP.NET Web.config files, use Aspnet_regiis.exe. For Windows applications, use the protected configuration API.",
+      "To use DPAPI to encrypt data in other locations, such as the registry, use the ProtectedData class.",
+      "Adapted from Microsoft patterns & practices guidance."
+    ],
+    "b": [
+      "DataProtectionConfigurationProvider",
+      "ProtectedData"
+    ],
+    "pre": [
+      "using System.Security.Cryptography;// Define an entropy value (use of entropy is optional).byte[] entropy = new byte[] { 0x23, 0x06, 0x08, 0x09, 0x22, 0x03, 0x25 };// Get the original data in a byte array.byte[] toEncrypt = UnicodeEncoding.ASCII.GetBytes(                   \"The secret data to be encrypted\");// Encrypt the data by the using ProtectedData class. This example uses// the local machine key store.byte[] encryptedData = ProtectedData.Protect(toEncrypt, entropy,                       DataProtectionScope.LocalMachine);"
+    ],
+    "br": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "hr": [
+      ""
+    ]
+  },
+  "links": [],
+  "html": "<h1>Description</h1>\r\n  <p>To use DPAPI to encrypt sensitive data in configuration files, use the <b>DataProtectionConfigurationProvider </b>class. To encrypt sensitive data with DPAPI in ASP.NET Web.config files, use Aspnet_regiis.exe. For Windows applications, use the protected configuration API. </p>\r\n  <p>To use DPAPI to encrypt data in other locations, such as the registry, use the <b>ProtectedData</b> class. </p>\r\n  <pre>using System.Security.Cryptography;<br />// Define an entropy value (use of entropy is optional).<br />byte&#91;&#93; entropy = new byte&#91;&#93; &#123; 0x23, 0x06, 0x08, 0x09, 0x22, 0x03, 0x25 &#125;;<br />// Get the original data in a byte array.<br />byte&#91;&#93; toEncrypt = UnicodeEncoding.ASCII.GetBytes(<br />                   \"The secret data to be encrypted\");<br />// Encrypt the data by the using ProtectedData class. This example uses<br />// the local machine key store.<br />byte&#91;&#93; encryptedData = ProtectedData.Protect(toEncrypt, entropy,<br />                       DataProtectionScope.LocalMachine);</pre>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
+}
