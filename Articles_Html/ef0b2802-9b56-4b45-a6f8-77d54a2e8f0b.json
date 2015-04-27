@@ -1,0 +1,274 @@
+{
+  "id": "ef0b2802-9b56-4b45-a6f8-77d54a2e8f0b",
+  "checksum": "bed34a7bd20a136ff4e34ac2e7c53056c30838f5",
+  "words": {
+    "40": [
+      "ul",
+      "li"
+    ],
+    "applies": [
+      "h1"
+    ],
+    "to": [
+      "h1",
+      "h1",
+      "p",
+      "p"
+    ],
+    "aspnet": [
+      "ul",
+      "li",
+      "p"
+    ],
+    "what": [
+      "h1"
+    ],
+    "do": [
+      "h1"
+    ],
+    "use": [
+      "p",
+      "p",
+      "p"
+    ],
+    "forms": [
+      "p",
+      "p",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "p",
+      "p"
+    ],
+    "authentication": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "pre",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "p",
+      "p",
+      "title"
+    ],
+    "why": [
+      "h1"
+    ],
+    "centralizing": [
+      "p"
+    ],
+    "mechanisms": [
+      "p",
+      "p"
+    ],
+    "makes": [
+      "p"
+    ],
+    "them": [
+      "p"
+    ],
+    "simpler": [
+      "p"
+    ],
+    "maintain": [
+      "p"
+    ],
+    "when": [
+      "h1"
+    ],
+    "centralize": [
+      "p",
+      "title"
+    ],
+    "in": [
+      "p",
+      "p"
+    ],
+    "all": [
+      "p"
+    ],
+    "web": [
+      "p"
+    ],
+    "applications": [
+      "p"
+    ],
+    "that": [
+      "p"
+    ],
+    "how": [
+      "h1"
+    ],
+    "has": [
+      "p"
+    ],
+    "great": [
+      "p"
+    ],
+    "built-in": [
+      "p"
+    ],
+    "centralized": [
+      "p"
+    ],
+    "functionality": [
+      "p"
+    ],
+    "enable": [
+      "p"
+    ],
+    "and": [
+      "p"
+    ],
+    "configure": [
+      "p"
+    ],
+    "the": [
+      "p"
+    ],
+    "following": [
+      "p"
+    ],
+    "section": [
+      "p"
+    ],
+    "webconfig:": [
+      "p"
+    ],
+    "webconfig": [
+      "em"
+    ],
+    "system.web>": [
+      "pre"
+    ],
+    "mode=\"forms\"": [
+      "pre"
+    ],
+    "..": [
+      "pre"
+    ],
+    "/authentication></system.web>": [
+      "pre"
+    ],
+    "additional": [
+      "h1"
+    ],
+    "resources": [
+      "h1"
+    ],
+    "for": [
+      "ul",
+      "li",
+      "p"
+    ],
+    "more": [
+      "ul",
+      "li",
+      "p"
+    ],
+    "information": [
+      "ul",
+      "li",
+      "p"
+    ],
+    "about": [
+      "ul",
+      "li",
+      "p"
+    ],
+    "please": [
+      "ul",
+      "li",
+      "p"
+    ],
+    "see": [
+      "ul",
+      "li",
+      "p"
+    ],
+    "\"an": [
+      "ul",
+      "li",
+      "p"
+    ],
+    "overview": [
+      "ul",
+      "li",
+      "p"
+    ],
+    "of": [
+      "ul",
+      "li",
+      "p"
+    ],
+    "\"": [
+      "ul",
+      "li",
+      "p"
+    ],
+    "at": [
+      "ul",
+      "li",
+      "p"
+    ],
+    "http//www.asp.net/security/tutorials/an-overview-of-forms-authentication-cs": [
+      "ul",
+      "li",
+      "p",
+      "a"
+    ]
+  },
+  "tags": {
+    "h1": [
+      "Applies To",
+      "What to Do",
+      "Why",
+      "When",
+      "How",
+      "Additional Resources"
+    ],
+    "ul": [
+      "ASP.NET 4.0",
+      "For more information about forms authentication, please see \"An Overview of Forms Authentication \" at http://www.asp.net/security/tutorials/an-overview-of-forms-authentication-cs"
+    ],
+    "li": [
+      "ASP.NET 4.0",
+      "For more information about forms authentication, please see \"An Overview of Forms Authentication \" at http://www.asp.net/security/tutorials/an-overview-of-forms-authentication-cs"
+    ],
+    "p": [
+      "Use forms authentication.",
+      "Centralizing authentication mechanisms makes them simpler to maintain.",
+      "Centralize authentication mechanisms in all web applications that use authentication.",
+      "ASP.NET has great built-in centralized authentication functionality. To use forms authentication, enable and configure the following section in Web.config:",
+      "For more information about forms authentication, please see \"An Overview of Forms Authentication \" at http://www.asp.net/security/tutorials/an-overview-of-forms-authentication-cs"
+    ],
+    "em": [
+      "Web.config"
+    ],
+    "pre": [
+      "<system.web>  <authentication mode=\"Forms\">     ...  </authentication></system.web>"
+    ],
+    "br": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "a": [
+      "http://www.asp.net/security/tutorials/an-overview-of-forms-authentication-cs"
+    ]
+  },
+  "links": [
+    {
+      "href": "http://www.asp.net/security/tutorials/an-overview-of-forms-authentication-cs",
+      "text": "http://www.asp.net/security/tutorials/an-overview-of-forms-authentication-cs"
+    }
+  ],
+  "html": "<h1>Applies To</h1>\r\n  <ul>\r\n    <li>ASP.NET 4.0</li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Use forms authentication.</p>\r\n  <h1>Why</h1>\r\n  <p>Centralizing authentication mechanisms makes them simpler to maintain.</p>\r\n  <h1>When</h1>\r\n  <p>Centralize authentication mechanisms in all web applications that use authentication.</p>\r\n  <h1>How</h1>\r\n  <p>ASP.NET has great built-in centralized authentication functionality. To use forms authentication, enable and configure the following section in <em>Web.config</em>:</p>\r\n  <pre>&lt;system.web&gt;<br />&nbsp; &lt;authentication mode=\"Forms\"&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp; ...<br />&nbsp; &lt;/authentication&gt;<br />&lt;/system.web&gt;</pre>\r\n  <h1>Additional Resources</h1>\r\n  <ul>\r\n    <li>\r\n      <p>For more information about forms authentication, please see \"An Overview of Forms Authentication \" at <a href=\"http://www.asp.net/security/tutorials/an-overview-of-forms-authentication-cs\">http://www.asp.net/security/tutorials/an-overview-of-forms-authentication-cs</a></p>\r\n    </li>\r\n  </ul>"
+}

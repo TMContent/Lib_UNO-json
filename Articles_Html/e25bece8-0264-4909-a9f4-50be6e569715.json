@@ -1,0 +1,334 @@
+{
+  "id": "e25bece8-0264-4909-a9f4-50be6e569715",
+  "checksum": "132885b876beddaec59829070e8705407188b7bf",
+  "words": {
+    "applies": [
+      "h1"
+    ],
+    "to": [
+      "h1",
+      "h1",
+      "p",
+      "h1",
+      "h1",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "c++": [
+      "ul",
+      "li"
+    ],
+    "what": [
+      "h1"
+    ],
+    "check": [
+      "h1",
+      "h1",
+      "p"
+    ],
+    "for": [
+      "h1"
+    ],
+    "verify": [
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "that": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "string": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "length": [
+      "p"
+    ],
+    "is": [
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "validated": [
+      "p",
+      "title"
+    ],
+    "when": [
+      "p"
+    ],
+    "strings": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "are": [
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "passed": [
+      "p"
+    ],
+    "between": [
+      "p"
+    ],
+    "functions": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "why": [
+      "h1"
+    ],
+    "sending": [
+      "p"
+    ],
+    "parameters": [
+      "p"
+    ],
+    "one": [
+      "p"
+    ],
+    "of": [
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "the": [
+      "p",
+      "p"
+    ],
+    "most": [
+      "p"
+    ],
+    "common": [
+      "p"
+    ],
+    "sources": [
+      "p"
+    ],
+    "buffer": [
+      "p",
+      "p",
+      "ul",
+      "li",
+      "a"
+    ],
+    "overflow": [
+      "p"
+    ],
+    "vulnerabilities": [
+      "p"
+    ],
+    "validating": [
+      "p"
+    ],
+    "sizes": [
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "before": [
+      "p",
+      "p",
+      "title"
+    ],
+    "using": [
+      "p"
+    ],
+    "them": [
+      "p"
+    ],
+    "prevents": [
+      "p"
+    ],
+    "overflows": [
+      "p",
+      "ul",
+      "li",
+      "a"
+    ],
+    "how": [
+      "h1",
+      "h1"
+    ],
+    "identify": [
+      "p",
+      "p"
+    ],
+    "accept": [
+      "p",
+      "p"
+    ],
+    "as": [
+      "p",
+      "p"
+    ],
+    "arguments": [
+      "p",
+      "p"
+    ],
+    "input": [
+      "p",
+      "p",
+      "p"
+    ],
+    "and": [
+      "p",
+      "p",
+      "p"
+    ],
+    "data": [
+      "p",
+      "p",
+      "p"
+    ],
+    "validation": [
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "called": [
+      "p"
+    ],
+    "these": [
+      "p",
+      "p",
+      "p"
+    ],
+    "used": [
+      "p"
+    ],
+    "fix": [
+      "h1"
+    ],
+    "it": [
+      "p"
+    ],
+    "recommended": [
+      "p"
+    ],
+    "use": [
+      "p",
+      "title"
+    ],
+    "a": [
+      "p"
+    ],
+    "centralized": [
+      "p"
+    ],
+    "class": [
+      "p",
+      "p"
+    ],
+    "or": [
+      "p",
+      "p"
+    ],
+    "library": [
+      "p",
+      "p"
+    ],
+    "add": [
+      "p",
+      "p"
+    ],
+    "code": [
+      "p",
+      "p"
+    ],
+    "validate": [
+      "p"
+    ],
+    "calls": [
+      "p"
+    ],
+    "routines": [
+      "p"
+    ],
+    "size": [
+      "p"
+    ],
+    "acceptable": [
+      "p"
+    ],
+    "related": [
+      "h1"
+    ],
+    "items": [
+      "h1"
+    ],
+    "protect": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "against": [
+      "ul",
+      "li",
+      "a"
+    ]
+  },
+  "tags": {
+    "h1": [
+      "Applies to",
+      "What to Check For",
+      "Why",
+      "How to Check",
+      "How to Fix",
+      "Related Items"
+    ],
+    "ul": [
+      "C++",
+      "Protect Against Buffer Overflows"
+    ],
+    "li": [
+      "C++",
+      "Protect Against Buffer Overflows"
+    ],
+    "p": [
+      "Verify that string length is validated when strings are passed between functions.",
+      "Sending string parameters to functions is one of the most common sources of buffer overflow vulnerabilities. Validating the sizes of strings before using them prevents buffer overflows.",
+      "Identify functions that accept strings as arguments. Verify that input and data validation functions are called before these strings are used. Verify that these data and input validation functions check string sizes.",
+      "It is recommended to use a centralized input and data validation class or library. Add code to that class or library to validate string sizes.",
+      "Identify functions that accept strings as arguments. Add code to these functions that calls validation routines to verify that string size is acceptable."
+    ],
+    "a": [
+      "Protect Against Buffer Overflows"
+    ]
+  },
+  "links": [
+    {
+      "href": "/article/b119d5b9-bb51-4ea8-b6b2-e034e92c17be",
+      "text": "Protect Against Buffer Overflows"
+    }
+  ],
+  "html": "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>C&#43;&#43;</li>\r\n  </ul>\r\n  <h1>What to Check For</h1>\r\n  <p>Verify that string length is validated when strings are passed between functions.</p>\r\n  <h1>Why</h1>\r\n  <p>Sending string parameters to functions is one of the most common sources of buffer overflow vulnerabilities. Validating the sizes of strings before using them prevents buffer overflows.</p>\r\n  <h1>How to Check</h1>\r\n  <p>Identify functions that accept strings as arguments. Verify that input and data validation functions are called before these strings are used. Verify that these data and input validation functions check string sizes.</p>\r\n  <h1>How to Fix</h1>\r\n  <p>It is recommended to use a centralized input and data validation class or library. Add code to that class or library to validate string sizes. </p>\r\n  <p>Identify functions that accept strings as arguments. Add code to these functions that calls validation routines to verify that string size is acceptable.</p>\r\n  <h1>Related Items</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/b119d5b9-bb51-4ea8-b6b2-e034e92c17be\">Protect Against Buffer Overflows</a>\r\n    </li>\r\n  </ul>"
+}
