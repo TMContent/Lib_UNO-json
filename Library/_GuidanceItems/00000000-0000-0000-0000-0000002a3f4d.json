@@ -1,0 +1,59 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "0",
+      "Content_Hash": "0"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "00000000-0000-0000-0000-0000002a3f4d"
+        ],
+        "Id_History": [
+          "00000000-0000-0000-0000-0000002a3f4d,dd6ab67d-3edc-4d06-8eb1-c41458befabd,"
+        ],
+        "Library_Id": [
+          "b6f408c5-6e6e-4bc0-90a5-0bb10becc2ce"
+        ],
+        "Title": [
+          "Authentication Is Implemented on the Server-side"
+        ],
+        "Category": [
+          "Authentication"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "iOS"
+        ],
+        "Type": [
+          "Checklist Item"
+        ],
+        "DirectLink": [
+          "Authentication Is Implemented on the Server-side"
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "false",
+          "DataType": "WikiText"
+        },
+        "Data": [
+          "==Applies To==\r\n* iOS applications that authenticate to a remote server.\r\n\r\n==What to Check For==\r\n\r\nVerify that authentication is implemented on the server-side.\r\n\r\n==Why==\r\n\r\nServer-side authentication should be used because client-side authentication is trivial to bypass.\r\n\r\n==How to Check==\r\n\r\nTo verify that authentication is implemented server-side:\r\n\r\n# **Review authentication requirements.** Consider the following aspects of authentication control as they pertain to your application:\r\n#* Enforcing password strength requirements.\r\n#* Allowing secure password reset or recovery.\r\n#* Requiring re-authentication for sensitive operations.\r\n#* Using multi-factor authentication.\r\n#* Using simple error messages that don't give away information to the attacker.\r\n#* Using SSL/TLS to secure communications.\r\n#* Throttling repeated authentication attempts.\r\n#* Locking inactive authentication accounts.\r\n# **Identify authentication code.** Identify the code that is responsible for authentication both on the iOS device and on the remote server.\r\n# **Review authentication code.** Examine authentication code to find where the actual security controls are implemented.\r\n# **Verify that authentication is implemented on the server.** Make sure that sufficient security controls to satisfy authentication requirements are implemented server-side.\r\n\r\n\r\n==How to Fix==\r\n\r\nTo implement authentication server-side:\r\n\r\n# **Define authentication requirements.** Consider the following aspects of authentication controls as they pertain to your application:\r\n#* Enforcing password strength requirements.\r\n#* Allowing secure password reset or recovery.\r\n#* Requiring re-authentication for sensitive operations.\r\n#* Using multi-factor authentication.\r\n#* Using simple error messages that don't give away information to the attacker.\r\n#* Using SSL/TLS to secure communications.\r\n#* Throttling repeated authentication attempts.\r\n#* Locking inactive authentication accounts.\r\n# **Implement authentication on the server.** It is important to implement security controls such as authentication on the server, because an attacker can easily tamper with client-side security controls or disable them altogether. Implement authentication controls that match the requirements defined in the previous step on the server back-end. \r\n# **Add client-side code that authenticates to the server.** Once authentication is implemented in accordance with the requirements, add client-side code that authenticates to the server. The client-side code will need:\r\n#* An interface for managing authentication credentials.\r\n#* Network code that communicates with the server using SSL/TLS. \r\n#* A token or some other means to maintain a session state on the server.  \r\n#* Possibly, secure storage for cached authentication credentials.\r\n\r\n==Authentication Guidelines==\r\n* [[00000000-0000-0000-0000-0000003cccf2|Change Root Passwords on Jailbroken Devices]]\r\n* [[00000000-0000-0000-0000-00000067c695|Encrypt Authentication Credentials Sent over the Network]]\r\n* [[00000000-0000-0000-0000-0000006598ea|Implement a Secure Password Reset Function]]\r\n* [[00000000-0000-0000-0000-0000006171ed|Throttle Authentication Attempts]]\r\n* [[00000000-0000-0000-0000-0000005d4d08|Use Server-side Authentication]]\r\n\r\n==Authentication Checklists==\r\n* [[00000000-0000-0000-0000-00000076b90c|Root Passwords Have Been Changed on Jailbroken Devices]]\r\n* [[00000000-0000-0000-0000-0000004ce47f|Authentication Credentials Sent over the Network Are Encrypted]]\r\n* [[00000000-0000-0000-0000-0000006b19fc|A Secure Password Reset Function Is Implemented]]\r\n* [[00000000-0000-0000-0000-000000816c4a|Authentication Attempts Are Throttled]]\r\n* [[00000000-0000-0000-0000-0000002a3f4d|Authentication Is Implemented on the Server-side]]\r\n\r\n==Additional Resources==\r\n\r\n* For more information about authentication requirements, please see https://www.owasp.org/index.php/Authentication_Cheat_Sheet"
+        ]
+      }
+    ]
+  }
+}

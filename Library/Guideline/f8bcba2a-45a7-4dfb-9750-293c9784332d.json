@@ -1,0 +1,68 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "-971874558",
+      "Content_Hash": "929035863"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "f8bcba2a-45a7-4dfb-9750-293c9784332d"
+        ],
+        "Id_History": [
+          "f8bcba2a-45a7-4dfb-9750-293c9784332d,0aacfa82-5a99-4c6a-b7f4-18aeed1ada63,"
+        ],
+        "Library_Id": [
+          "51eb81c3-1d23-4146-ba83-8a6bb9233c11"
+        ],
+        "Title": [
+          "Create Temporary Files Securely on UN*X"
+        ],
+        "Category": [
+          "File I/O"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "C++"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          "Create Temporary Files Securely on UN*X"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ],
+        "Source": [
+          "C++"
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "html"
+        },
+        "Data": [
+          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>C&#43;&#43;<li>UN&#42;X</li></li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Create temporary files securely.</p>\r\n  <h1>Why</h1>\r\n  <p>Create temporary files securely to prevent time-of-check/time-of-use (TOCTOU) issues when checking permissions on files and directories, allowing access to secured objects.</p>\r\n  <h1>How</h1>\r\n  <p>Perform the following actions to create temporary files securely on UN&#42;X:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Use random names.</strong> Use a secure random generator (such as /dev/random) to generate temporary names.</p>\r\n      <li>\r\n        <p>\r\n          <strong>Protect temporary files.</strong> Create temporary files in secure directories.</p>\r\n        <li>\r\n          <p>\r\n            <strong>Use mkstemp().</strong> Use mkstemp() to generate a temporary file name and create the file at the same time. This practice atomically checks whether the file exists and then creates it.</p>\r\n          <li>\r\n            <p>\r\n              <strong>Clean up.</strong> Delete temporary files immediately after use. If temporary files are used to store sensitive data, it is recommended to encrypt this data when storing it in temporary files and to overwrite it with random data before deleting the files.</p>\r\n          </li>\r\n        </li>\r\n      </li>\r\n    </li>\r\n  </ol>"
+        ]
+      }
+    ]
+  }
+}

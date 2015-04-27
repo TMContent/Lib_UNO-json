@@ -1,0 +1,297 @@
+{
+  "id": "930f62d1-cce9-4277-b726-551ca551a275",
+  "checksum": "acba247efe579b8bfe165f779bd66cbdb7af82b3",
+  "words": {
+    "15": [
+      "p",
+      "p",
+      "p"
+    ],
+    "what": [
+      "h3"
+    ],
+    "to": [
+      "h3",
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "do": [
+      "h3"
+    ],
+    "automatically": [
+      "p"
+    ],
+    "lock": [
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "inactive": [
+      "p",
+      "p",
+      "p"
+    ],
+    "terminal": [
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "sessions": [
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "after": [
+      "p",
+      "p",
+      "p"
+    ],
+    "being": [
+      "p",
+      "p"
+    ],
+    "idle": [
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "for": [
+      "p",
+      "p",
+      "p"
+    ],
+    "at": [
+      "p"
+    ],
+    "most": [
+      "p"
+    ],
+    "minutes": [
+      "p",
+      "p",
+      "p"
+    ],
+    "why": [
+      "h2"
+    ],
+    "locking": [
+      "p"
+    ],
+    "ensures": [
+      "p"
+    ],
+    "that": [
+      "p"
+    ],
+    "a": [
+      "p"
+    ],
+    "passerby": [
+      "p"
+    ],
+    "cannot": [
+      "p"
+    ],
+    "use": [
+      "p",
+      "p"
+    ],
+    "the": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "credentials": [
+      "p"
+    ],
+    "of": [
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "user": [
+      "p",
+      "p"
+    ],
+    "who": [
+      "p"
+    ],
+    "is": [
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "currently": [
+      "p"
+    ],
+    "logged": [
+      "p"
+    ],
+    "in": [
+      "p"
+    ],
+    "how": [
+      "h2"
+    ],
+    "web": [
+      "p"
+    ],
+    "applications": [
+      "p",
+      "p"
+    ],
+    "should": [
+      "p",
+      "p"
+    ],
+    "session": [
+      "p",
+      "p",
+      "p"
+    ],
+    "management": [
+      "p",
+      "p"
+    ],
+    "provided": [
+      "p",
+      "p"
+    ],
+    "by": [
+      "p",
+      "p"
+    ],
+    "framework": [
+      "p"
+    ],
+    "expire": [
+      "p"
+    ],
+    "inactivity": [
+      "p",
+      "p"
+    ],
+    "procedure": [
+      "p"
+    ],
+    "this": [
+      "p"
+    ],
+    "different": [
+      "p",
+      "p"
+    ],
+    "platforms": [
+      "p"
+    ],
+    "but": [
+      "p"
+    ],
+    "it": [
+      "p",
+      "p"
+    ],
+    "always": [
+      "p"
+    ],
+    "well": [
+      "p"
+    ],
+    "documented": [
+      "p"
+    ],
+    "follow": [
+      "p"
+    ],
+    "documentation": [
+      "p"
+    ],
+    "your": [
+      "p"
+    ],
+    "platform's": [
+      "p"
+    ],
+    "vendor": [
+      "p"
+    ],
+    "set": [
+      "p"
+    ],
+    "expiration": [
+      "p"
+    ],
+    "period": [
+      "p"
+    ],
+    "using": [
+      "p"
+    ],
+    "built-in": [
+      "p"
+    ],
+    "all": [
+      "p"
+    ],
+    "other": [
+      "p"
+    ],
+    "rely": [
+      "p"
+    ],
+    "on": [
+      "p"
+    ],
+    "operating": [
+      "p"
+    ],
+    "system": [
+      "p"
+    ],
+    "configured": [
+      "p"
+    ],
+    "not": [
+      "p"
+    ],
+    "responsibility": [
+      "p"
+    ],
+    "developers": [
+      "p"
+    ]
+  },
+  "tags": {
+    "h3": [
+      "What to Do"
+    ],
+    "p": [
+      "Automatically lock inactive terminal sessions after being idle for at most 15 minutes.",
+      "Locking inactive terminal sessions ensures that a passerby cannot use the credentials of the user who is currently logged in.",
+      "Web Applications should use session management provided by the framework to expire inactive user sessions after 15 minutes of inactivity. The procedure for this is different for different platforms, but it is always well documented. Follow the documentation provided by your platform's vendor to set the idle session expiration period using built-in session management.",
+      "All other applications should rely on the operating system being configured to lock the terminal after 15 minutes of inactivity. It is not the responsibility of the developers to lock the idle terminal."
+    ],
+    "h2": [
+      "Why",
+      "How"
+    ]
+  },
+  "links": [],
+  "html": "<h3>What to Do</h3><p>Automatically lock inactive terminal sessions after being idle for at most 15 minutes.\n</p>\n<h2>Why</h2><p>Locking inactive terminal sessions ensures that a passerby cannot use the credentials of the user who is currently logged in.\n</p>\n<h2>How</h2><p>Web Applications should use session management provided by the framework to expire inactive user sessions after 15 minutes of inactivity. The procedure for this is different for different platforms, but it is always well documented. Follow the documentation provided by your platform's vendor to set the idle session expiration period using built-in session management.\n</p><p>\nAll other applications should rely on the operating system being configured to lock the terminal after 15 minutes of inactivity. It is not the responsibility of the developers to lock the idle terminal.</p>"
+}

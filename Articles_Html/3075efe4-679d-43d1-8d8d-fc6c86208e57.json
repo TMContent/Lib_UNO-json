@@ -1,0 +1,288 @@
+{
+  "id": "3075efe4-679d-43d1-8d8d-fc6c86208e57",
+  "checksum": "cc6f8b7e5d240f8f2a48ac9692bfc77937c75dec",
+  "words": {
+    "35": [
+      "ul",
+      "li"
+    ],
+    "2008": [
+      "ul",
+      "li"
+    ],
+    "applies": [
+      "h1"
+    ],
+    "to": [
+      "h1",
+      "p",
+      "title"
+    ],
+    "microsoft®": [
+      "ul",
+      "li"
+    ],
+    "windows": [
+      "ul",
+      "li"
+    ],
+    "communication": [
+      "ul",
+      "li"
+    ],
+    "foundation": [
+      "ul",
+      "li"
+    ],
+    "wcf)": [
+      "ul",
+      "li"
+    ],
+    "microsoft": [
+      "ul",
+      "li",
+      "p"
+    ],
+    "visual": [
+      "ul",
+      "li"
+    ],
+    "studio®": [
+      "ul",
+      "li"
+    ],
+    "description": [
+      "h1"
+    ],
+    "handle": [
+      "p",
+      "title"
+    ],
+    "unknown": [
+      "p",
+      "title"
+    ],
+    "faults": [
+      "p",
+      "ul",
+      "li",
+      "title"
+    ],
+    "in": [
+      "p",
+      "ul",
+      "li",
+      "title"
+    ],
+    "a": [
+      "p",
+      "p",
+      "title"
+    ],
+    "service": [
+      "p",
+      "p",
+      "title"
+    ],
+    "throw": [
+      "p",
+      "pre"
+    ],
+    "an": [
+      "p"
+    ],
+    "instance": [
+      "p"
+    ],
+    "of": [
+      "p"
+    ],
+    "faultexception": [
+      "p",
+      "p",
+      "p"
+    ],
+    "directly": [
+      "p"
+    ],
+    "any": [
+      "p"
+    ],
+    "faultexceptiont>": [
+      "p",
+      "p",
+      "p"
+    ],
+    "thrown": [
+      "p"
+    ],
+    "by": [
+      "p"
+    ],
+    "the": [
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "always": [
+      "p"
+    ],
+    "reaches": [
+      "p"
+    ],
+    "client": [
+      "p"
+    ],
+    "as": [
+      "p",
+      "p"
+    ],
+    "or": [
+      "p"
+    ],
+    "class": [
+      "p",
+      "p"
+    ],
+    "is": [
+      "p"
+    ],
+    "derived": [
+      "p"
+    ],
+    "from": [
+      "p",
+      "p"
+    ],
+    "new": [
+      "pre"
+    ],
+    "faultexception\"specify": [
+      "pre"
+    ],
+    "some": [
+      "pre"
+    ],
+    "reason\";": [
+      "pre"
+    ],
+    "additional": [
+      "h1"
+    ],
+    "resources": [
+      "h1"
+    ],
+    "for": [
+      "ul",
+      "li"
+    ],
+    "more": [
+      "ul",
+      "li"
+    ],
+    "information": [
+      "ul",
+      "li"
+    ],
+    "on": [
+      "ul",
+      "li"
+    ],
+    "fault": [
+      "ul",
+      "li"
+    ],
+    "contracts": [
+      "ul",
+      "ul",
+      "li",
+      "li"
+    ],
+    "see": [
+      "ul",
+      "li"
+    ],
+    "“specifying": [
+      "ul",
+      "li"
+    ],
+    "and": [
+      "ul",
+      "ul",
+      "li",
+      "li"
+    ],
+    "handling": [
+      "ul",
+      "li"
+    ],
+    "services”": [
+      "ul",
+      "li"
+    ],
+    "at": [
+      "ul",
+      "li"
+    ],
+    "http//msdn.microsoft.com/en-us/library/ms733721.aspx": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "adapted": [
+      "p"
+    ],
+    "patterns": [
+      "p"
+    ],
+    "&": [
+      "p"
+    ],
+    "practices": [
+      "p"
+    ],
+    "guidance": [
+      "p"
+    ],
+    "how": [
+      "title"
+    ]
+  },
+  "tags": {
+    "h1": [
+      "Applies to",
+      "Description",
+      "Additional Resources"
+    ],
+    "ul": [
+      "Microsoft® Windows Communication Foundation (WCF) 3.5 \r\nMicrosoft Visual Studio® 2008",
+      "For more information on Fault Contracts, see “Specifying and Handling Faults in Contracts and Services” at http://msdn.microsoft.com/en-us/library/ms733721.aspx"
+    ],
+    "li": [
+      "Microsoft® Windows Communication Foundation (WCF) 3.5",
+      "Microsoft Visual Studio® 2008",
+      "For more information on Fault Contracts, see “Specifying and Handling Faults in Contracts and Services” at http://msdn.microsoft.com/en-us/library/ms733721.aspx"
+    ],
+    "p": [
+      "To handle unknown faults in a service throw an instance of FaultException directly. Any FaultException<T> thrown by the service always reaches the client as a FaultException<T> or as FaultException. The FaultException<T> class is derived from the class FaultException.",
+      "Adapted from Microsoft patterns & practices guidance."
+    ],
+    "pre": [
+      "throw new FaultException(\"Specify some reason\");"
+    ],
+    "a": [
+      "http://msdn.microsoft.com/en-us/library/ms733721.aspx"
+    ],
+    "hr": [
+      ""
+    ]
+  },
+  "links": [
+    {
+      "href": "http://msdn.microsoft.com/en-us/library/ms733721.aspx",
+      "text": "http://msdn.microsoft.com/en-us/library/ms733721.aspx"
+    }
+  ],
+  "html": "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>Microsoft® Windows Communication Foundation (WCF) 3.5 \r\n<li>Microsoft Visual Studio® 2008</li></li>\r\n  </ul>\r\n  <h1>Description</h1>\r\n  <p>To handle unknown faults in a service throw an instance of FaultException directly. Any FaultException&lt;T&gt; thrown by the service always reaches the client as a FaultException&lt;T&gt; or as FaultException. The FaultException&lt;T&gt; class is derived from the class FaultException.</p>\r\n  <pre>throw new FaultException(\"Specify some reason\");</pre>\r\n  <h1>Additional Resources</h1>\r\n  <ul>\r\n    <li>For more information on Fault Contracts, see “Specifying and Handling Faults in Contracts and Services” at <a href=\"http://msdn.microsoft.com/en-us/library/ms733721.aspx\">http://msdn.microsoft.com/en-us/library/ms733721.aspx</a></li>\r\n  </ul>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
+}

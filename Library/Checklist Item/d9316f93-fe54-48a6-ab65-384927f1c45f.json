@@ -1,0 +1,68 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "-1269347759",
+      "Content_Hash": "839287949"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "d9316f93-fe54-48a6-ab65-384927f1c45f"
+        ],
+        "Id_History": [
+          "d9316f93-fe54-48a6-ab65-384927f1c45f,ff5c01b7-2c5e-4ea0-80a3-5761b93fb8e8,"
+        ],
+        "Library_Id": [
+          "be5273b1-d682-4361-99d9-6234f2d47eb7"
+        ],
+        "Title": [
+          "Keys Are Stored in Machine-Level Key Store"
+        ],
+        "Category": [
+          "Cryptography"
+        ],
+        "Phase": [
+          "Deployment"
+        ],
+        "Technology": [
+          ".NET 3.5"
+        ],
+        "Type": [
+          "Checklist Item"
+        ],
+        "DirectLink": [
+          "Keys Are Stored in Machine-Level Key Store"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          "2"
+        ],
+        "Status": [
+          ""
+        ],
+        "Source": [
+          "SI"
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h1>What to Check For</h1>\r\n  <p>Ensure that keys are stored in a machine-level key store for&nbsp;an application on a&nbsp;dedicated server or for multiple applications that run under the same identity.</p>\r\n  <h1>How to Fix</h1>\r\n  <p>The DPAPI and RSA protected configuration providers used to encrypt sensitive data in configuration files can use either machine stores or user stores for key storage. You can either store the key in the machine store and create an ACL for your specific application identity or store the key in a user store. In the latter case, you need to load the user account's profile to access the key.</p>\r\n  <p>Use machine-level key storage when: </p>\r\n  <ul>\r\n    <li>Your application runs on its own dedicated server with no other applications. <li>You have multiple applications on the same server that run using the same identity and you want those applications to be able to share sensitive information and the same encryption key. </li></li>\r\n  </ul>\r\n  <p>Use user-level key storage when:</p>\r\n  <ul>\r\n    <li>Your application runs in a shared hosting environment.<li>You want to ensure that your application's sensitive data is not accessible to other applications on the server.</li></li>\r\n  </ul>\r\n  <p>In this scenario, each application should have a separate identity, so they all have their own individual and private key stores.</p>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance. </p>"
+        ]
+      }
+    ]
+  }
+}

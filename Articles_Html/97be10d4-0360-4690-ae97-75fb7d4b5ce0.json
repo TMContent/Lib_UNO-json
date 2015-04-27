@@ -1,0 +1,320 @@
+{
+  "id": "97be10d4-0360-4690-ae97-75fb7d4b5ce0",
+  "checksum": "f37645d590a23d6a2ac16a28f9a4c657f50b1688",
+  "words": {
+    "what": [
+      "h1"
+    ],
+    "to": [
+      "h1",
+      "p",
+      "h1",
+      "p",
+      "p"
+    ],
+    "check": [
+      "h1",
+      "p"
+    ],
+    "for": [
+      "h1",
+      "p"
+    ],
+    "ensure": [
+      "p"
+    ],
+    "that": [
+      "p"
+    ],
+    "the": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "dispose": [
+      "p",
+      "p",
+      "b",
+      "p",
+      "p",
+      "b",
+      "b",
+      "title"
+    ],
+    "methods": [
+      "p",
+      "title"
+    ],
+    "are": [
+      "p",
+      "title"
+    ],
+    "synchronized": [
+      "p",
+      "title"
+    ],
+    "when developing": [
+      "p"
+    ],
+    "non-synchronized": [
+      "p",
+      "p"
+    ],
+    "implementations": [
+      "p",
+      "p"
+    ],
+    "in": [
+      "p",
+      "p"
+    ],
+    "your": [
+      "p"
+    ],
+    "application": [
+      "p"
+    ],
+    "how": [
+      "h1"
+    ],
+    "fix": [
+      "h1"
+    ],
+    "if": [
+      "p",
+      "div",
+      "pre"
+    ],
+    "you": [
+      "p"
+    ],
+    "develop": [
+      "p"
+    ],
+    "code": [
+      "p",
+      "p",
+      "p"
+    ],
+    "could": [
+      "p",
+      "p"
+    ],
+    "be": [
+      "p"
+    ],
+    "called": [
+      "p"
+    ],
+    "more": [
+      "p"
+    ],
+    "than": [
+      "p"
+    ],
+    "once": [
+      "p"
+    ],
+    "on": [
+      "p",
+      "p"
+    ],
+    "separate": [
+      "p"
+    ],
+    "threads": [
+      "p",
+      "p"
+    ],
+    "following": [
+      "p"
+    ],
+    "shows": [
+      "p"
+    ],
+    "an": [
+      "p"
+    ],
+    "example": [
+      "p",
+      "p"
+    ],
+    "of": [
+      "p"
+    ],
+    "this": [
+      "p",
+      "p"
+    ],
+    "void": [
+      "div",
+      "pre"
+    ],
+    "dispose){": [
+      "div",
+      "pre"
+    ],
+    "null": [
+      "div",
+      "div",
+      "pre",
+      "pre",
+      "p",
+      "b"
+    ],
+    "!=": [
+      "div",
+      "pre"
+    ],
+    "theobject": [
+      "div",
+      "div",
+      "pre",
+      "pre",
+      "p",
+      "b"
+    ],
+    "{": [
+      "div",
+      "pre"
+    ],
+    "releaseresourcestheobject);": [
+      "div",
+      "pre"
+    ],
+    "=": [
+      "div",
+      "pre"
+    ],
+    "}}": [
+      "div",
+      "pre"
+    ],
+    "it": [
+      "p"
+    ],
+    "is": [
+      "p"
+    ],
+    "possible": [
+      "p"
+    ],
+    "two": [
+      "p"
+    ],
+    "execute": [
+      "p"
+    ],
+    "before": [
+      "p"
+    ],
+    "first": [
+      "p"
+    ],
+    "thread": [
+      "p"
+    ],
+    "has": [
+      "p"
+    ],
+    "set": [
+      "p"
+    ],
+    "reference": [
+      "p"
+    ],
+    "depending": [
+      "p"
+    ],
+    "functionality": [
+      "p"
+    ],
+    "provided": [
+      "p"
+    ],
+    "by": [
+      "p"
+    ],
+    "releaseresources": [
+      "p",
+      "b"
+    ],
+    "method": [
+      "p"
+    ],
+    "security": [
+      "p"
+    ],
+    "vulnerabilities": [
+      "p"
+    ],
+    "occur": [
+      "p"
+    ],
+    "adapted": [
+      "p"
+    ],
+    "from": [
+      "p"
+    ],
+    "microsoft": [
+      "p"
+    ],
+    "patterns": [
+      "p"
+    ],
+    "&": [
+      "p"
+    ],
+    "practices": [
+      "p"
+    ],
+    "guidance": [
+      "p"
+    ]
+  },
+  "tags": {
+    "h1": [
+      "What to Check For",
+      "How to Fix"
+    ],
+    "p": [
+      "Check to ensure that the dispose methods are synchronized when developing non-synchronized Dispose implementations in your application.",
+      "",
+      "If you develop non-synchronized Dispose implementations, the Dispose code could be called more than once on separate threads. The following code shows an example of this.",
+      "In this example, it is possible for two threads to execute the code before the first thread has set theObject reference to null. Depending on the functionality provided by the ReleaseResources method, security vulnerabilities could occur.",
+      "Adapted from Microsoft patterns & practices guidance."
+    ],
+    "b": [
+      "Dispose",
+      "Dispose",
+      "Dispose",
+      "theObject",
+      "null",
+      "ReleaseResources"
+    ],
+    "div": [
+      "void Dispose(){  if (null != theObject)  {    ReleaseResources(theObject);    theObject = null;  }}"
+    ],
+    "pre": [
+      "void Dispose(){  if (null != theObject)  {    ReleaseResources(theObject);    theObject = null;  }}"
+    ],
+    "br": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "hr": [
+      ""
+    ]
+  },
+  "links": [],
+  "html": "<h1>What to Check For</h1>\r\n  <p>Check to ensure that the dispose methods are synchronized when&nbsp;developing non-synchronized <b>Dispose</b> implementations in your application.</p>\r\n  <p />\r\n  <h1>How to Fix</h1>\r\n  <p>If you develop non-synchronized <b>Dispose</b> implementations, the <b>Dispose</b> code could be called more than once on separate threads. The following code shows an example of this.</p>\r\n  <div>\r\n    <pre>void Dispose()&#123;<br />  if (null &#33;= theObject)<br />  &#123;<br />    ReleaseResources(theObject);<br />    theObject = null;<br />  &#125;<br />&#125;</pre>\r\n  </div>\r\n  <p>In this example, it is possible for two threads to execute the code before the first thread has set <b>theObject</b> reference to <b>null</b>. Depending on the functionality provided by the <b>ReleaseResources</b> method, security vulnerabilities could occur.</p>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
+}

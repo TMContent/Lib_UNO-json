@@ -1,0 +1,255 @@
+{
+  "id": "eae36b78-3a3a-4225-ac55-f2a165bc9ab4",
+  "checksum": "05a393aada8d43aaad56d4acd2169eade4d35f45",
+  "words": {
+    "applies": [
+      "h1"
+    ],
+    "to": [
+      "h1",
+      "h1",
+      "p",
+      "p",
+      "h1",
+      "p",
+      "p",
+      "title"
+    ],
+    "web": [
+      "ul",
+      "li",
+      "div"
+    ],
+    "application": [
+      "ul",
+      "li",
+      "div"
+    ],
+    "what": [
+      "h1"
+    ],
+    "check": [
+      "h1",
+      "p",
+      "h1"
+    ],
+    "for": [
+      "h1"
+    ],
+    "ensure": [
+      "p"
+    ],
+    "that": [
+      "p",
+      "p"
+    ],
+    "router": [
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "vendor's": [
+      "p",
+      "title"
+    ],
+    "security": [
+      "p",
+      "title"
+    ],
+    "notification": [
+      "p",
+      "title"
+    ],
+    "service": [
+      "p",
+      "p",
+      "title"
+    ],
+    "is": [
+      "p",
+      "p"
+    ],
+    "subscribed": [
+      "p",
+      "title"
+    ],
+    "reduce": [
+      "p",
+      "p"
+    ],
+    "the": [
+      "p",
+      "p"
+    ],
+    "attack": [
+      "p",
+      "p"
+    ],
+    "surface": [
+      "p",
+      "p"
+    ],
+    "area": [
+      "p",
+      "p"
+    ],
+    "how": [
+      "h1"
+    ],
+    "on": [
+      "p"
+    ],
+    "a": [
+      "p",
+      "p"
+    ],
+    "deployed": [
+      "p"
+    ],
+    "every": [
+      "p"
+    ],
+    "open": [
+      "p",
+      "p"
+    ],
+    "port": [
+      "p"
+    ],
+    "associated": [
+      "p"
+    ],
+    "with": [
+      "p"
+    ],
+    "listening": [
+      "p"
+    ],
+    "default": [
+      "p"
+    ],
+    "services": [
+      "p"
+    ],
+    "are": [
+      "p",
+      "p",
+      "p"
+    ],
+    "not": [
+      "p"
+    ],
+    "required": [
+      "p",
+      "p"
+    ],
+    "should": [
+      "p",
+      "p"
+    ],
+    "be": [
+      "p"
+    ],
+    "shut": [
+      "p"
+    ],
+    "down": [
+      "p"
+    ],
+    "examples": [
+      "p"
+    ],
+    "include": [
+      "p"
+    ],
+    "bootps": [
+      "p",
+      "b"
+    ],
+    "and": [
+      "p"
+    ],
+    "finger": [
+      "p",
+      "b"
+    ],
+    "which": [
+      "p",
+      "p"
+    ],
+    "rarely": [
+      "p"
+    ],
+    "you": [
+      "p",
+      "title"
+    ],
+    "also": [
+      "p"
+    ],
+    "scan": [
+      "p"
+    ],
+    "your": [
+      "p"
+    ],
+    "detect": [
+      "p"
+    ],
+    "ports": [
+      "p"
+    ],
+    "adapted": [
+      "p"
+    ],
+    "from": [
+      "p"
+    ],
+    "microsoft": [
+      "p"
+    ],
+    "patterns": [
+      "p"
+    ],
+    "&": [
+      "p"
+    ],
+    "practices": [
+      "p"
+    ],
+    "guidance": [
+      "p"
+    ]
+  },
+  "tags": {
+    "h1": [
+      "Applies to",
+      "What to Check For",
+      "How to Check"
+    ],
+    "ul": [
+      "Web Application"
+    ],
+    "li": [
+      "Web Application"
+    ],
+    "div": [
+      "Web Application"
+    ],
+    "p": [
+      "Check to ensure that router vendor's security notification service is subscribed to reduce the attack surface area.",
+      "On a deployed router, every open port is associated with a listening service. To reduce the attack surface area, default services that are not required should be shut down. Examples include bootps and Finger, which are rarely required. You should also scan your router to detect which ports are open.",
+      "Adapted from Microsoft patterns & practices guidance."
+    ],
+    "b": [
+      "bootps",
+      "Finger"
+    ],
+    "hr": [
+      ""
+    ]
+  },
+  "links": [],
+  "html": "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>\r\n      <div>Web Application</div>\r\n    </li>\r\n  </ul>\r\n  <h1>What to Check For</h1>\r\n  <p>Check to ensure that router vendor's security notification service is subscribed to reduce the attack surface area.</p>\r\n  <h1>How to Check</h1>\r\n  <p>On a deployed router, every open port is associated with a listening service. To reduce the attack surface area, default services that are not required should be shut down. Examples include <b>bootps </b>and <b>Finger</b>, which are rarely required. You should also scan your router to detect which ports are open.</p>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
+}

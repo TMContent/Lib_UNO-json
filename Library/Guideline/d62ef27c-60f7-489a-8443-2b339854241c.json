@@ -1,0 +1,68 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "780330585",
+      "Content_Hash": "-176313957"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "d62ef27c-60f7-489a-8443-2b339854241c"
+        ],
+        "Id_History": [
+          "d62ef27c-60f7-489a-8443-2b339854241c,4825cc27-1f4d-4a06-be23-e24edb614751,"
+        ],
+        "Library_Id": [
+          "92718d53-36b2-47bc-b6f5-e60994385f46"
+        ],
+        "Title": [
+          "Restrict Class And Member Visibility"
+        ],
+        "Category": [
+          "Design Considerations"
+        ],
+        "Phase": [
+          "Design"
+        ],
+        "Technology": [
+          ".NET 3.5"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          "Restrict Class And Member Visibility"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ],
+        "Source": [
+          "SI"
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h1>What to Do</h1>\r\n  <p>Use the most restrictive access modifier possible for your code.</p>\r\n  <h1>Why</h1>\r\n  <p>Class and member access modifiers allow you to restrict the callers of your code. The fewer entry points (public interfaces) you have in your code, the smaller your attack surface is and the easier it is to protect.</p>\r\n  <h1>When</h1>\r\n  <p>This is important guideline and should be followed all the time.</p>\r\n  <h1>How</h1>\r\n  <p>Use the <b>private</b> access modifier wherever possible. Use the <b>protected</b> access modifier only if the member should be accessible to derived classes. Use the <b>internal</b> access modifier only if the member should be accessible to other classes in the same assembly.</p>\r\n  <blockquote>\r\n    <b>Note</b>&nbsp;&nbsp;&nbsp;Access modifiers are enforced at compile time only. When malicious code runs in a full trust environment, it could use reflection or unmanaged pointers to bypass these visibility restrictions.</blockquote>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "0",
+      "Content_Hash": "0"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "190ac744-30cd-4dda-ba84-8fa8b3849a06"
+        ],
+        "Id_History": [
+          "190ac744-30cd-4dda-ba84-8fa8b3849a06,b0582446-50a5-4bf7-957b-e1d426728dc1,"
+        ],
+        "Library_Id": [
+          "7d2d0571-e542-45cd-9335-d7a0556c2bea"
+        ],
+        "Title": [
+          "Validate Destinations of Redirects"
+        ],
+        "Category": [
+          "Redirects and Forwards"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "Web Application"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          "Validate Destinations of Redirects"
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "false",
+          "DataType": "wikitext"
+        },
+        "Data": [
+          "==Applies To==\r\n\r\n* Web Applications\r\n\r\n==What to Do==\r\n\r\nValidate destinations of redirects and forwards.\r\n\r\n==Why==\r\n\r\nIf destinations of redirects or forwards are not validated, an attacker may create hyperlinks that appear to point to legitimate sites, but actually point to malicious pages controlled by the attacker. This technique is often used by phishers to trick people into visiting fake sites that steal authentication credentials. In some cases, a user may gain unauthorized access by manipulating redirect or forward parameters, if destinations are not validated.\r\n\r\n==When==\r\n\r\nUse this guideline when writing a web application that uses redirects or forwards. Avoid using redirects or forwards in web applications, if possible.\r\n\r\n==How==\r\n\r\nPerform the following actions to assure validation of redirects and forwards:\r\n\r\n# **Identify redirects and forwards.** Review code to find all redirects and forwards.\r\n# **Map destinations.** Make a list of all destinations for each redirect and forward. Define mapping values for all destinations used by redirects and forwards. A mapping value is a short identifying string that symbolically represents a resource.\r\n# **Define access permissions.** Determine circumstances under which it is acceptable for each user role to access each destination.\r\n# **Validate redirects.** Rewrite redirects and forwards to use mapping values as input to calculate the final destinations of redirects or forwards. Add validation routines to verify that the user has permissions to access the resource, which is the destination of the redirect or forward."
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "0",
+      "Content_Hash": "0"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "00000000-0000-0000-0000-0000001a0c7b"
+        ],
+        "Id_History": [
+          "00000000-0000-0000-0000-0000001a0c7b,f8aaf546-d577-4af8-b1e5-ebb5a17278f9,"
+        ],
+        "Library_Id": [
+          "b6f408c5-6e6e-4bc0-90a5-0bb10becc2ce"
+        ],
+        "Title": [
+          "Do Not Cache Sensitive Data"
+        ],
+        "Category": [
+          "Privacy"
+        ],
+        "Phase": [
+          "Design"
+        ],
+        "Technology": [
+          "iOS"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          "Do Not Cache Sensitive Data"
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "false",
+          "DataType": "WikiText"
+        },
+        "Data": [
+          "==Applies To==\r\n\r\n* iOS applications that handle sensitive data.\r\n\r\n==What to Do==\r\n\r\nDo not cache sensitive data in temporary files.\r\n\r\n==Why==\r\n\r\nData from temporary files may be recovered by an attacker if the device is lost or compromised.\r\n\r\n==How==\r\n\r\nTo prevent caching of sensitive data:\r\n\r\n# **Identify sensitive data.** Make a list of all sensitive information handled by your application. Some examples are:\r\n#* Passwords\r\n#* Encryption keys\r\n#* Personal information\r\n# **Identify code that creates temporary files used by the application.** Review the application source code to find functions that are responsible for creating the temporary files. Check if any of these functions write sensitive data.\r\n# **Remove code that writes sensitive data to temporary files.** Edit the functions that write sensitive data to temporary files to prevent caching of sensitive data.\r\n\r\n==Privacy Guidelines==\r\n* [[00000000-0000-0000-0000-0000001a0c7b|Do Not Cache Sensitive Data]]\r\n* [[00000000-0000-0000-0000-000000930b93|Do Not Log Location Data]]\r\n* [[00000000-0000-0000-0000-00000033f0db|Do Not Log Sensitive Data]]\r\n\r\n==Privacy Checklists==\r\n* [[00000000-0000-0000-0000-0000008cb7d6|Sensitive Data Is Not Cached]]\r\n* [[00000000-0000-0000-0000-0000007e16f2|Location Data Is Not Logged]]\r\n* [[00000000-0000-0000-0000-00000058bf53|Sensitive Data Is Not Logged]]"
+        ]
+      }
+    ]
+  }
+}

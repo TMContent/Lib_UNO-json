@@ -1,0 +1,290 @@
+{
+  "id": "a16b34b4-d661-47d5-9ba2-2cc874222f61",
+  "checksum": "02d47f660026bd31b7ca52f4a2aeee494ed71935",
+  "words": {
+    "35": [
+      "ul",
+      "li"
+    ],
+    "2008": [
+      "ul",
+      "li"
+    ],
+    "applies": [
+      "h1"
+    ],
+    "to": [
+      "h1",
+      "h1",
+      "p",
+      "p",
+      "p"
+    ],
+    "microsoft®": [
+      "ul",
+      "li"
+    ],
+    "windows": [
+      "ul",
+      "li",
+      "p",
+      "p"
+    ],
+    "communication": [
+      "ul",
+      "li"
+    ],
+    "foundation": [
+      "ul",
+      "li"
+    ],
+    "wcf)": [
+      "ul",
+      "li"
+    ],
+    "microsoft": [
+      "ul",
+      "li",
+      "p"
+    ],
+    "visual": [
+      "ul",
+      "li"
+    ],
+    "studio®": [
+      "ul",
+      "li"
+    ],
+    "what": [
+      "h1"
+    ],
+    "do": [
+      "h1"
+    ],
+    "if": [
+      "p",
+      "p",
+      "title"
+    ],
+    "your": [
+      "p",
+      "title"
+    ],
+    "clients": [
+      "p",
+      "title"
+    ],
+    "have": [
+      "p",
+      "title"
+    ],
+    "certificates": [
+      "p",
+      "p",
+      "title"
+    ],
+    "consider": [
+      "p",
+      "p",
+      "title"
+    ],
+    "using": [
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "client": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "certificate": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "authentication": [
+      "p",
+      "p",
+      "pre",
+      "title"
+    ],
+    "why": [
+      "h1"
+    ],
+    "can": [
+      "p",
+      "p"
+    ],
+    "authenticate": [
+      "p"
+    ],
+    "a": [
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "service": [
+      "p",
+      "p"
+    ],
+    "account": [
+      "p",
+      "p",
+      "p"
+    ],
+    "or": [
+      "p"
+    ],
+    "multiple": [
+      "p"
+    ],
+    "users": [
+      "p"
+    ],
+    "wcf": [
+      "p"
+    ],
+    "you": [
+      "p",
+      "p",
+      "p"
+    ],
+    "use": [
+      "p"
+    ],
+    "for": [
+      "p"
+    ],
+    "each": [
+      "p",
+      "p"
+    ],
+    "user": [
+      "p"
+    ],
+    "map": [
+      "p"
+    ],
+    "when": [
+      "h1",
+      "p"
+    ],
+    "this": [
+      "p"
+    ],
+    "guideline": [
+      "p"
+    ],
+    "are": [
+      "p"
+    ],
+    "how": [
+      "h1"
+    ],
+    "enable": [
+      "p"
+    ],
+    "the": [
+      "p",
+      "p"
+    ],
+    "mapping": [
+      "p"
+    ],
+    "feature": [
+      "p"
+    ],
+    "by": [
+      "p"
+    ],
+    "setting": [
+      "p"
+    ],
+    "mapclientcertificatetowindowsaccount": [
+      "p"
+    ],
+    "attribute": [
+      "p"
+    ],
+    "true": [
+      "p"
+    ],
+    "servicecredentials>": [
+      "pre"
+    ],
+    "clientcertificate>": [
+      "pre"
+    ],
+    "mapclientcertificatetowindowsaccount=\"true\"": [
+      "pre"
+    ],
+    "/": [
+      "pre"
+    ],
+    "/clientcertificate></servicecredentials>": [
+      "pre"
+    ],
+    "adapted": [
+      "p"
+    ],
+    "from": [
+      "p"
+    ],
+    "patterns": [
+      "p"
+    ],
+    "&": [
+      "p"
+    ],
+    "practices": [
+      "p"
+    ],
+    "guidance": [
+      "p"
+    ]
+  },
+  "tags": {
+    "h1": [
+      "Applies to",
+      "What to Do",
+      "Why",
+      "When",
+      "How"
+    ],
+    "ul": [
+      "Microsoft® Windows Communication Foundation (WCF) 3.5 Microsoft Visual Studio® 2008"
+    ],
+    "li": [
+      "Microsoft® Windows Communication Foundation (WCF) 3.5",
+      "Microsoft Visual Studio® 2008"
+    ],
+    "p": [
+      "If your clients have Certificates, consider using Client Certificate Authentication.",
+      "Client certificates can authenticate a client service account or multiple users to a WCF service. If you use a client certificate for each user, you can map each certificate to a Windows account.",
+      "Consider using this guideline when you are using Certificate Authentication.",
+      "Enable the Windows account mapping feature by setting the mapClientCertificateToWindowsAccount attribute to true.",
+      "Adapted from Microsoft patterns & practices guidance."
+    ],
+    "pre": [
+      "<serviceCredentials>    <clientCertificate>        <authentication mapClientCertificateToWindowsAccount=\"true\" />    </clientCertificate></serviceCredentials>"
+    ],
+    "br": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "hr": [
+      ""
+    ]
+  },
+  "links": [],
+  "html": "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>Microsoft&#174; Windows Communication Foundation (WCF) 3.5 <li>Microsoft Visual Studio&#174; 2008</li></li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>If your clients have Certificates, consider using Client Certificate Authentication.</p>\r\n  <h1>Why</h1>\r\n  <p>Client certificates can authenticate a client service account or multiple users to a WCF service. If you use a client certificate for each user, you can map each certificate to a Windows account. </p>\r\n  <h1>When</h1>\r\n  <p>Consider using this guideline when you are using Certificate Authentication.</p>\r\n  <h1>How</h1>\r\n  <p>Enable the Windows account mapping feature by setting the mapClientCertificateToWindowsAccount attribute to true.</p>\r\n  <pre>&lt;serviceCredentials&gt;<br />    &lt;clientCertificate&gt;<br />        &lt;authentication mapClientCertificateToWindowsAccount=\"true\" /&gt;<br />    &lt;/clientCertificate&gt;<br />&lt;/serviceCredentials&gt;</pre>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
+}

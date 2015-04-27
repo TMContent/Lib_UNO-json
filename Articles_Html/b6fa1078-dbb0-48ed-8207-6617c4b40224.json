@@ -1,0 +1,244 @@
+{
+  "id": "b6fa1078-dbb0-48ed-8207-6617c4b40224",
+  "checksum": "392616e4a16b04dcb5bf8b07ad2deb00fee65433",
+  "words": {
+    "description": [
+      "h1"
+    ],
+    "when": [
+      "p"
+    ],
+    "deploying": [
+      "p"
+    ],
+    "an": [
+      "p"
+    ],
+    "aspnet": [
+      "p"
+    ],
+    "application": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "if": [
+      "p"
+    ],
+    "your": [
+      "p",
+      "p",
+      "title"
+    ],
+    "runs": [
+      "p",
+      "p"
+    ],
+    "on": [
+      "p"
+    ],
+    "the": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "microsoft": [
+      "p",
+      "p"
+    ],
+    "windows": [
+      "p"
+    ],
+    "server operating": [
+      "p"
+    ],
+    "system": [
+      "p",
+      "p"
+    ],
+    "make": [
+      "p"
+    ],
+    "sure": [
+      "p"
+    ],
+    "that": [
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "pool": [
+      "p",
+      "p"
+    ],
+    "you": [
+      "p",
+      "p"
+    ],
+    "use": [
+      "p",
+      "p"
+    ],
+    "is": [
+      "p"
+    ],
+    "running": [
+      "p",
+      "p"
+    ],
+    "under": [
+      "p",
+      "p",
+      "title"
+    ],
+    "a": [
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "limited": [
+      "p"
+    ],
+    "account": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "with": [
+      "p",
+      "p"
+    ],
+    "restricted": [
+      "p",
+      "p",
+      "title"
+    ],
+    "access": [
+      "p"
+    ],
+    "to": [
+      "p",
+      "p",
+      "p",
+      "title",
+      "title"
+    ],
+    "file": [
+      "p"
+    ],
+    "and": [
+      "p"
+    ],
+    "registry": [
+      "p"
+    ],
+    "custom": [
+      "p",
+      "p"
+    ],
+    "must": [
+      "p"
+    ],
+    "apply": [
+      "p"
+    ],
+    "permissions": [
+      "p"
+    ],
+    "requires": [
+      "p"
+    ],
+    "by": [
+      "p"
+    ],
+    "aspnet_regiisexe": [
+      "p"
+    ],
+    "utility": [
+      "p"
+    ],
+    "-ga": [
+      "p",
+      "b"
+    ],
+    "switch": [
+      "p"
+    ],
+    "afterward": [
+      "p"
+    ],
+    "configure": [
+      "p"
+    ],
+    "run": [
+      "p",
+      "title"
+    ],
+    "in": [
+      "p"
+    ],
+    "dedicated": [
+      "p"
+    ],
+    "identity": [
+      "p"
+    ],
+    "of": [
+      "p"
+    ],
+    "adapted": [
+      "p"
+    ],
+    "from": [
+      "p"
+    ],
+    "patterns": [
+      "p"
+    ],
+    "&": [
+      "p"
+    ],
+    "practices": [
+      "p"
+    ],
+    "guidance": [
+      "p"
+    ],
+    "how": [
+      "title"
+    ],
+    "deploy": [
+      "title"
+    ]
+  },
+  "tags": {
+    "h1": [
+      "Description"
+    ],
+    "p": [
+      "When deploying an ASP.NET application, if your application runs on the Microsoft Windows Server operating system, make sure that the application pool that you use is running under a limited account with restricted access to the file system and registry. To use a restricted custom account, you must apply the permissions that the account requires by running the Aspnet_regiis.exe utility with the -ga switch. Afterward, configure your application to run in a dedicated application pool that runs under the identity of the custom account.",
+      "Adapted from Microsoft patterns & practices guidance."
+    ],
+    "b": [
+      "-ga"
+    ],
+    "hr": [
+      ""
+    ]
+  },
+  "links": [],
+  "html": "<h1>Description</h1>\r\n  <p>When deploying an ASP.NET application, if your application runs on the Microsoft Windows Server&nbsp;operating system, make sure that the application pool that you use is running under a limited account with restricted access to the file system and registry. To use a restricted custom account, you must apply the permissions that the account requires by running the Aspnet_regiis.exe utility with the <b>-ga</b> switch. Afterward, configure your application to run in a dedicated application pool that runs under the identity of the custom account.</p>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
+}

@@ -1,0 +1,68 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "-701643096",
+      "Content_Hash": "1233215931"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "e047107a-bf02-404f-9958-606a12346876"
+        ],
+        "Id_History": [
+          "e047107a-bf02-404f-9958-606a12346876,8f7acae3-163b-45e0-bbfa-df2ccefd31e9,"
+        ],
+        "Library_Id": [
+          "be5273b1-d682-4361-99d9-6234f2d47eb7"
+        ],
+        "Title": [
+          "How to Configure a Least-Privilege Account to Host Your Service"
+        ],
+        "Category": [
+          "Hardening"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "WCF 3.5"
+        ],
+        "Type": [
+          "How To"
+        ],
+        "DirectLink": [
+          "How to Configure a Least-Privilege Account to Host Your Service"
+        ],
+        "Tag": [
+          "WCF 3.5"
+        ],
+        "Security_Demand": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          "J.D. Meier, Jason Taylor, Prashant Bansode, Carlos Farre, Madhu Sundararajan, Rob Boucher, Steve Gregersen"
+        ],
+        "Status": [
+          ""
+        ],
+        "Source": [
+          "SI"
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>Microsoft&#174; Windows Communication Foundation (WCF) 3.5 <li>Microsoft Visual Studio&#174; 2008</li></li>\r\n  </ul>\r\n  <h1>Description</h1>\r\n  <p>Use a least-privilege account to host your service in order to reduce your application&#8217;s overall attack surface and reduce the potential impact of security vulnerability in your service. Using a least-privilege account, allows you to audit and authorize your service individually, and your service is protected from changes made to the privileges and permissions within the default account.</p>\r\n  <p>Use the following steps to create a least privileged account to host your service:</p>\r\n  <ol>\r\n    <li>Create a Windows account<li>Run the following aspnet_regiis.exe command to assign the relevant ASP.NET permissions to the account: <ol><pre>aspnet_regiis.exe -ga machineName\\userName</pre></ol><strong>Note</strong>: This step is needed If your application needs to run in ASP.NET compatibility mode, else you can skip the step. <li>Use the Local Security Policy tool to grant the Windows account the Deny logon locally user right. This reduces the privileges of the account and prevents anyone logging onto Windows locally with this account.&nbsp; <li>Use the least privileged account to run your WCF service:<ul><li>If your service is hosted in IIS 6.0, use IIS Manager to create an application pool running as an account identity. Use IIS Manager to assign your WCF Service to that application pool.<li>If your service is hosted in Windows Service, configure the Windows Service to run using the account identity, the WCF service will run under the security context of the Windows Service.</li></li></ul></li></li></li></li>\r\n  </ol>\r\n  <h1>Additional Resources</h1>\r\n  <ul>\r\n    <li>For more information on the aspnet_regiis.exe tool, see &#8220;ASP.NET IIS Registration Tool (Aspnet_regiis.exe)&#8220; at <a href=\"http://msdn.microsoft.com/en-us/library/k6h9cz8h(VS.80).aspx\">http://msdn.microsoft.com/en-us/library/k6h9cz8h(VS.80).aspx</a></li>\r\n  </ul>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
+        ]
+      }
+    ]
+  }
+}

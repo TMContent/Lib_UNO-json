@@ -1,0 +1,358 @@
+{
+  "id": "26a68d55-95e2-4007-bfa6-d1eee30740de",
+  "checksum": "bf39a17e10b00d977b6ede4c7927cbc5e6a480cf",
+  "words": {
+    "applies": [
+      "h1"
+    ],
+    "to": [
+      "h1",
+      "h1",
+      "h1",
+      "h1"
+    ],
+    "c++": [
+      "ul",
+      "li"
+    ],
+    "what": [
+      "h1"
+    ],
+    "check": [
+      "h1",
+      "h1"
+    ],
+    "for": [
+      "h1",
+      "p",
+      "ul",
+      "li"
+    ],
+    "verify": [
+      "p",
+      "p"
+    ],
+    "that": [
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "deallocation": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "ul",
+      "li",
+      "ul",
+      "li",
+      "a",
+      "title"
+    ],
+    "functions": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "ul",
+      "li",
+      "ul",
+      "li",
+      "a",
+      "title"
+    ],
+    "don't": [
+      "p",
+      "p",
+      "p",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "a",
+      "li",
+      "a",
+      "a",
+      "title"
+    ],
+    "throw": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "a",
+      "li",
+      "a",
+      "a",
+      "title"
+    ],
+    "exceptions": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "ul",
+      "li",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "a",
+      "li",
+      "a",
+      "a",
+      "title"
+    ],
+    "why": [
+      "h1"
+    ],
+    "may": [
+      "p",
+      "p",
+      "p"
+    ],
+    "be": [
+      "p"
+    ],
+    "called": [
+      "p",
+      "p"
+    ],
+    "when": [
+      "p",
+      "p"
+    ],
+    "are": [
+      "p"
+    ],
+    "thrown": [
+      "p",
+      "p"
+    ],
+    "if": [
+      "p"
+    ],
+    "a": [
+      "p",
+      "p",
+      "p"
+    ],
+    "function": [
+      "p"
+    ],
+    "throws": [
+      "p"
+    ],
+    "an": [
+      "p",
+      "p"
+    ],
+    "exception": [
+      "p",
+      "p"
+    ],
+    "after": [
+      "p"
+    ],
+    "being": [
+      "p"
+    ],
+    "is": [
+      "p"
+    ],
+    "the": [
+      "p"
+    ],
+    "program": [
+      "p"
+    ],
+    "terminate": [
+      "p"
+    ],
+    "this": [
+      "p"
+    ],
+    "result": [
+      "p"
+    ],
+    "in": [
+      "p",
+      "p"
+    ],
+    "denial-of-service": [
+      "p"
+    ],
+    "vulnerability": [
+      "p"
+    ],
+    "how": [
+      "h1",
+      "h1"
+    ],
+    "search": [
+      "p"
+    ],
+    "fix": [
+      "h1"
+    ],
+    "identify": [
+      "p"
+    ],
+    "and": [
+      "p"
+    ],
+    "rewrite": [
+      "p"
+    ],
+    "them": [
+      "p"
+    ],
+    "such": [
+      "p"
+    ],
+    "way": [
+      "p"
+    ],
+    "they": [
+      "p"
+    ],
+    "additional": [
+      "h1"
+    ],
+    "resources": [
+      "h1"
+    ],
+    "more": [
+      "ul",
+      "li"
+    ],
+    "information": [
+      "ul",
+      "li"
+    ],
+    "about": [
+      "ul",
+      "li"
+    ],
+    "not": [
+      "ul",
+      "li"
+    ],
+    "throwing": [
+      "ul",
+      "li"
+    ],
+    "from": [
+      "ul",
+      "li",
+      "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "a"
+    ],
+    "please": [
+      "ul",
+      "li"
+    ],
+    "see": [
+      "ul",
+      "li"
+    ],
+    "https//www.securecoding.cert.org/confluence/display/cplusplus/err38-cpp.+deallocation+functions+must+not+throw+exceptions": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "related": [
+      "h1"
+    ],
+    "items": [
+      "h1"
+    ],
+    "destructors": [
+      "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "a",
+      "a"
+    ]
+  },
+  "tags": {
+    "h1": [
+      "Applies to",
+      "What to Check For",
+      "Why",
+      "How to Check",
+      "How to Fix",
+      "Additional Resources",
+      "Related Items"
+    ],
+    "ul": [
+      "C++",
+      "For more information about not throwing exceptions from deallocation functions, please see https://www.securecoding.cert.org/confluence/display/cplusplus/ERR38-CPP.+Deallocation+functions+must+not+throw+exceptions",
+      "Don't Throw Exceptions from Deallocation Functions\r\n      \r\n        Don't Throw Exceptions from Destructors\r\n        \r\n          \r\n            Destructors don't throw exceptions"
+    ],
+    "li": [
+      "C++",
+      "For more information about not throwing exceptions from deallocation functions, please see https://www.securecoding.cert.org/confluence/display/cplusplus/ERR38-CPP.+Deallocation+functions+must+not+throw+exceptions",
+      "Don't Throw Exceptions from Deallocation Functions",
+      "Don't Throw Exceptions from Destructors",
+      "Destructors don't throw exceptions"
+    ],
+    "p": [
+      "Verify that deallocation functions don't throw exceptions.",
+      "Deallocation functions may be called when exceptions are thrown. If a deallocation function throws an exception after being called when an exception is thrown, the program may terminate. This may result in a denial-of-service vulnerability.",
+      "Search for deallocation functions. Verify that deallocation functions don't throw exceptions.",
+      "Identify deallocation functions that throw exceptions and rewrite them in such a way that they don't throw exceptions."
+    ],
+    "a": [
+      "https://www.securecoding.cert.org/confluence/display/cplusplus/ERR38-CPP.+Deallocation+functions+must+not+throw+exceptions",
+      "Don't Throw Exceptions from Deallocation Functions",
+      "Don't Throw Exceptions from Destructors",
+      "Destructors don't throw exceptions",
+      "Destructors don't throw exceptions"
+    ]
+  },
+  "links": [
+    {
+      "href": "https://www.securecoding.cert.org/confluence/display/cplusplus/ERR38-CPP.+Deallocation+functions+must+not+throw+exceptions",
+      "text": "https://www.securecoding.cert.org/confluence/display/cplusplus/ERR38-CPP.+Deallocation+functions+must+not+throw+exceptions"
+    },
+    {
+      "href": "/article/441b4138-1866-442f-8abb-6d05236d6fcb",
+      "text": "Don't Throw Exceptions from Deallocation Functions"
+    },
+    {
+      "href": "/article/fd06b089-88ea-43df-bc41-f111a1848116",
+      "text": "Don't Throw Exceptions from Destructors"
+    },
+    {
+      "href": "/article/2e732e9d-5677-40cc-8e33-c40ceacc056b",
+      "text": "\r\n            Destructors don't throw exceptions\r\n          "
+    },
+    {
+      "href": "/article/2e732e9d-5677-40cc-8e33-c40ceacc056b",
+      "text": "Destructors don't throw exceptions"
+    }
+  ],
+  "html": "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>C&#43;&#43;</li>\r\n  </ul>\r\n  <h1>What to Check For</h1>\r\n  <p>Verify that deallocation functions don't throw exceptions.</p>\r\n  <h1>Why</h1>\r\n  <p>Deallocation functions may be called when exceptions are thrown. If a deallocation function throws an exception after being called when an exception is thrown, the program may terminate. This may result in a denial-of-service vulnerability.</p>\r\n  <h1>How to Check</h1>\r\n  <p>Search for deallocation functions. Verify that deallocation functions don't throw exceptions.</p>\r\n  <h1>How to Fix</h1>\r\n  <p>Identify deallocation functions that throw exceptions and rewrite them in such a way that they don't throw exceptions.</p>\r\n  <h1>Additional Resources</h1>\r\n  <ul>\r\n    <li>For more information about not throwing exceptions from deallocation functions, please see <a href=\"https://www.securecoding.cert.org/confluence/display/cplusplus/ERR38-CPP.&#43;Deallocation&#43;functions&#43;must&#43;not&#43;throw&#43;exceptions\">https://www.securecoding.cert.org/confluence/display/cplusplus/ERR38-CPP.&#43;Deallocation&#43;functions&#43;must&#43;not&#43;throw&#43;exceptions</a></li>\r\n  </ul>\r\n  <h1>Related Items</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/441b4138-1866-442f-8abb-6d05236d6fcb\">Don't Throw Exceptions from Deallocation Functions</a>\r\n      <li>\r\n        <a href=\"/article/fd06b089-88ea-43df-bc41-f111a1848116\">Don't Throw Exceptions from Destructors</a>\r\n        <li>\r\n          <a href=\"/article/2e732e9d-5677-40cc-8e33-c40ceacc056b\">\r\n            <a href=\"/article/2e732e9d-5677-40cc-8e33-c40ceacc056b\">Destructors don't throw exceptions</a>\r\n          </a>\r\n        </li>\r\n      </li>\r\n    </li>\r\n  </ul>"
+}

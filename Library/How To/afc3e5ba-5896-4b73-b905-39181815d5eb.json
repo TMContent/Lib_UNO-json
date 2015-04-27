@@ -1,0 +1,68 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "-1622449050",
+      "Content_Hash": "1267299205"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "afc3e5ba-5896-4b73-b905-39181815d5eb"
+        ],
+        "Id_History": [
+          "afc3e5ba-5896-4b73-b905-39181815d5eb,94aef891-5de2-4ebe-826f-4077fa9b0fd3,"
+        ],
+        "Library_Id": [
+          "92718d53-36b2-47bc-b6f5-e60994385f46"
+        ],
+        "Title": [
+          "How to Perform Resource-Based Authorization"
+        ],
+        "Category": [
+          "Authorization"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "WCF 3.5"
+        ],
+        "Type": [
+          "How To"
+        ],
+        "DirectLink": [
+          "How to Perform Resource-Based Authorization"
+        ],
+        "Tag": [
+          "WCF 3.5"
+        ],
+        "Security_Demand": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          "J.D. Meier, Jason Taylor, Prashant Bansode, Carlos Farre, Madhu Sundararajan, Rob Boucher, Steve Gregersen"
+        ],
+        "Status": [
+          ""
+        ],
+        "Source": [
+          "SI"
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>Microsoft&#174; Windows Communication Foundation (WCF) 3.5 <li>Microsoft Visual Studio&#174; 2008</li></li>\r\n  </ul>\r\n  <h1>Description</h1>\r\n  <p>Resource-based authorization sets permissions on the resource itself. For instance you would set an ACL on a Windows resource and then use the identity of the original caller to determine access rights to the resource. If you use resource-based authorization in WCF you&#8217;ll need to impersonate the original caller through the application layer (e.g. ASP.NET application), through the WCF service layer and to the business logic code that is accessing the file resource.</p>\r\n  <p>To use resource-based authorization you need to sets permissions on the resource itself by setting an ACL and then impersonating the original caller.</p>\r\n  <p>The following code impersonates a specific (fixed) identity.</p>\r\n  <pre>using System.Security.Principal;<br />&#8230;<br />WindowsIdentity wi = new WindowsIdentity(<a href=\"mailto:&#8220;userName&#64;fullyqualifieddomainName\">&#8220;userName&#64;fullyqualifieddomainName</a>&#8221;);<br />WindowsImpersonationContext ctx = null;</pre>\r\n  <pre>try<br />&#123;<br />  ctx = wi.Impersonate();</pre>\r\n  <pre>  // Thread is now impersonating you can access resource needed&#8230;<br />&#125;<br />catch<br />&#123;<br />  // Prevent exceptions propagating.<br />&#125;<br />finally<br />&#123;<br />  // Ensure impersonation is reverted<br />  ctx.Undo();<br />&#125;<br /></pre>\r\n  <h1>Additional Resources</h1>\r\n  <ul>\r\n    <li>For more information on authorization, see &#8220;Authorization&#8221; at <a href=\"http://msdn2.microsoft.com/en-us/library/ms733071.aspx\">http://msdn2.microsoft.com/en-us/library/ms733071.aspx</a><li>For authorization Q&A, see the Authorization section of &#8220;WCF 3.5 Questions and Answers &#8220; at <a href=\"http://www.codeplex.com/WCFSecurityGuide/Wiki/View.aspx?title=WCF&#37;20Security&#37;20Guidelines&referringTitle=Home\">http://www.codeplex.com/WCFSecurityGuide/Wiki/View.aspx?title=WCF&#37;20Security&#37;20Guidelines&referringTitle=Home</a></li></li>\r\n  </ul>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
+        ]
+      }
+    ]
+  }
+}

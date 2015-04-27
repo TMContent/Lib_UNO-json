@@ -1,0 +1,59 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "0",
+      "Content_Hash": "0"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "00000000-0000-0000-0000-000000402966"
+        ],
+        "Id_History": [
+          "00000000-0000-0000-0000-000000402966,c652db69-cee5-409b-9056-00169fbb8bff,"
+        ],
+        "Library_Id": [
+          "f215ceee-9a08-41d9-b2c1-bbcc058a8f32"
+        ],
+        "Title": [
+          "File Sharing Is Disabled by Default"
+        ],
+        "Category": [
+          "Authorization"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "Android"
+        ],
+        "Type": [
+          "Checklist Item"
+        ],
+        "DirectLink": [
+          "File Sharing Is Disabled by Default"
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "false",
+          "DataType": "WikiText"
+        },
+        "Data": [
+          "==What to Check For==\r\n\r\nVerify that file sharing is disabled in applications by default.\r\n\r\n==Why==\r\n\r\nDisable file sharing to prevent unauthorized access. If file sharing is necessary, it should only be enabled when it is being used.\r\n\r\n==How to Check==\r\n\r\nTo verify that file sharing is disabled:\r\n\r\n# **Identify file sharing functionality.** Determine whether the application implements file sharing and if so, find the code that implements it.\r\n# **Verify that file sharing is disabled by default.** Check the default settings to make sure that file sharing is disabled by default.\r\n\r\n==How to Fix==\r\n\r\nTo disable file sharing by default.\r\n\r\n# **Identify file sharing functionality.** Determine whether the application implements file sharing and if so, find the code that implements it.\r\n# **Disable file sharing by default.** Edit the code that implements file sharing to disable file sharing by default. Provide controls to the user to enable file sharing when needed. It is recommended to encrypt network connections used for file sharing. It is also recommended to protect file sharing with usernames and passwords and to allow the user to set the usernames and passwords that are allowed to access shared files.\r\n\r\n==Authorization Guidelines==\r\n\r\n* [[00000000-0000-0000-0000-0000007ea0fe|Disable File Sharing by Default]]\r\n* [[00000000-0000-0000-0000-000000760326|Use Role-based Access Control]]\r\n\r\n==Authorization Checklists==\r\n\r\n* [[00000000-0000-0000-0000-000000402966|File Sharing Is Disabled by Default]]\r\n* [[00000000-0000-0000-0000-00000031051f|Role-based Access Control Is Used]]"
+        ]
+      }
+    ]
+  }
+}

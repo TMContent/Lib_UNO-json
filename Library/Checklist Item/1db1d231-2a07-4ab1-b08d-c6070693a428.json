@@ -1,0 +1,68 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "1134401385",
+      "Content_Hash": "-1070671783"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "1db1d231-2a07-4ab1-b08d-c6070693a428"
+        ],
+        "Id_History": [
+          "1db1d231-2a07-4ab1-b08d-c6070693a428,7dac2842-0927-44b2-91a9-3d58f61d8f78,"
+        ],
+        "Library_Id": [
+          "92718d53-36b2-47bc-b6f5-e60994385f46"
+        ],
+        "Title": [
+          "Authentication Cookies Are Restricted to Only HTTPS Connections by Using the RequireSSL Attribute"
+        ],
+        "Category": [
+          "Authentication"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          ".NET 3.5"
+        ],
+        "Type": [
+          "Checklist Item"
+        ],
+        "DirectLink": [
+          "Authentication Cookies Are Restricted to Only HTTPS Connections by Using the RequireSSL Attribute"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          "2"
+        ],
+        "Status": [
+          ""
+        ],
+        "Source": [
+          "SI"
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h1>What to Check For</h1>\r\n  <p>Ensure that your application restricts authentication cookies&nbsp;to only&nbsp;HTTPS connections by using the requireSSL attribute.</p>\r\n  <h1>Why</h1>\r\n  <p>By using SSL, you prevent an attacker from reading a captured authentication cookie&nbsp;and gaining spoofed access to your application.</p>\r\n  <h1>How to Fix</h1>\r\n  <p>Set the <b>secure</b> property of the authentication cookie to ensure that browsers only send authentication cookies over HTTPS connections. </p>\r\n  <p>Set the <b>secure</b> property by using <b>requireSSL=\"true\"</b> on the &lt;<b>forms</b>&gt; element as shown here:</p>\r\n  <div>\r\n    <pre>&lt;forms loginUrl=\"Secure\\Login.aspx\"<br />        requireSSL=\"true\" ... /&gt;</pre>\r\n  </div>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance. </p>"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "0",
+      "Content_Hash": "0"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "16628f7f-e17a-4bd1-838a-011736bf0995"
+        ],
+        "Id_History": [
+          "16628f7f-e17a-4bd1-838a-011736bf0995,c79c6986-5751-424d-a2ca-2e242f96dc9d,"
+        ],
+        "Library_Id": [
+          "7d2d0571-e542-45cd-9335-d7a0556c2bea"
+        ],
+        "Title": [
+          "The Origin Attribute Is Validated Against the FQDN"
+        ],
+        "Category": [
+          "Web Messaging"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "HTML5"
+        ],
+        "Type": [
+          "Checklist Item"
+        ],
+        "DirectLink": [
+          "The Origin Attribute Is Validated Against the FQDN"
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "false",
+          "DataType": "wikitext"
+        },
+        "Data": [
+          "==Applies To==\r\n\r\n* HTML5 and Javascript\r\n\r\n==What to Check For==\r\n\r\nVerify that the //origin// property of WebSocket messages is validated against the expected fully qualified domain name(s) (FQDNs).\r\n\r\n==Why==\r\nValidating the full FQDN eliminates the false positives that may occur if you validate only part of the domain name. For example, if you merely verify that the origin begins with or contains {{{http://www.example.com}}}, an intruder could use a malicious origin such as {{{http://www.example.com.hackers.net}}} to achieve a false positive match, and to inject malicious code or harmful values.\r\n\r\n==How To Check==\r\n\r\nTo verify that the //origin// property of web messages is validated against expected FQDNs:\r\n# **Find code that processes web messages.** Search application code for functions that handle web messages in server-sent events, Web sockets, cross-document messaging, and channel messaging. These functions can be found by searching for //onmessage// event handlers. Create a spreadsheet to list all code that receives web messages.\r\n# **Identify the allowed FQDNs from which a message will be accepted**. Always use a whitelist approach. Gather a list of the valid domains and be as strict as possible. Include only the domains from which you want to process messages.\r\n# **Verify that message origin is validated before messages are handled.** Examine each piece of code that handles web messages. Make sure that the event origin is validated before data is processed. Use a whitelist approach, so that only data from the explicitly authorized domains is processed.\r\n\r\n==How To Fix==\r\nTo check the origin against one or more FQDNs to ensure that the origin is acceptable:\r\n\r\n# **Create a white list of the server(s) allowed to send messages to the client**. Limit the list to only the servers that are required today. Avoid adding unnecessary servers or domains “just in case”.\r\n# **To validate the origin against a single server, use the JavaScript {{{===}}} operator to test equality**. The {{{===}}} operator tests equality between the expected server name and the actual server name. (While the {{{==}}} operator will also work, the {{{===}}} operator skips the type conversion and is therefore faster. Since the origin property is expected to be a string, type conversion is unnecessary.) The example below compares an origin to an expected value:\\\\\r\n{{{if (event.origin ===}}} {{{'http://www.example.com'}}}) \r\n//{// do processing here because the origin is from an expected domain}//\r\n# **To validate the origin against several server names or ports, use a regular expression**. The following example will match the FQDN from either HTTP or HTTPS:\r\n\r\n{{{\r\nwindow.addEventListener('message', messageHandler, false);\r\nfunction messageHandler(event) {\r\n\r\n  var re = new RegExp(\"^https?://www.example.com$\");\r\n\r\n  if (re.test(event.origin)) {\r\n   // validate the message as data, then process…\r\n  } else {\r\n    // the event is not from who you expect...\r\n  }\r\n}\r\n}}}\r\n\r\n\\\\\r\n\r\n==Web Messaging Guidelines==\r\n\r\n* [[00000000-0000-0000-0000-00000012aada|Do Not Evaluate Messages as Code]]\r\n* [[00000000-0000-0000-0000-00000010eb47|Use element.textContent to Assign Values to DOM Elements]]\r\n* [[00000000-0000-0000-0000-00000076ad87|Explicitly State the Expected Origin with postMessage]]\r\n* [[00000000-0000-0000-0000-0000006ab8ac|Validate Data Received by Event Handlers]]\r\n* [[00000000-0000-0000-0000-00000085babd|Validate the Origin Attribute Against the FQDN]]\r\n* [[00000000-0000-0000-0000-000000763637|Check The Origin Attribute of Messages]]\r\n\r\n==Web Messaging Checklist Items==\r\n\r\n* [[00000000-0000-0000-0000-0000008e9b8f|Messages Are Not Evaluated as Code]]\r\n* [[00000000-0000-0000-0000-00000060fefb|Element.textContent Is Used to Assign Values to DOM Elements]]\r\n* [[00000000-0000-0000-0000-0000004a4216|Expected Origin Is Explicitly Stated with postMessage]]\r\n* [[967c9b95-2319-4741-a6fd-1b4bcdf3b636|Data Received by Event Handlers Is Validated]]\r\n* [[16628f7f-e17a-4bd1-838a-011736bf0995|The Origin Attribute Is Validated Against the FQDN]]\r\n* [[f103974e-3a42-4837-b04b-7da7e87c41ec|The Origin Attribute of Messages Is Checked]]\r\n\r\n\r\n\r\n"
+        ]
+      }
+    ]
+  }
+}

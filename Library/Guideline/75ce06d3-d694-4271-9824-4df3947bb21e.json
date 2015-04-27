@@ -1,0 +1,68 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "1389035672",
+      "Content_Hash": "-1467890499"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "75ce06d3-d694-4271-9824-4df3947bb21e"
+        ],
+        "Id_History": [
+          "75ce06d3-d694-4271-9824-4df3947bb21e,2fe3027c-779b-444b-b419-6c15c76da75a,"
+        ],
+        "Library_Id": [
+          "51eb81c3-1d23-4146-ba83-8a6bb9233c11"
+        ],
+        "Title": [
+          "Free Only Dynamically Allocated Memory"
+        ],
+        "Category": [
+          "Unmanaged Code"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "C++"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          "Free Only Dynamically Allocated Memory"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ],
+        "Source": [
+          "C++"
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>C&#43;&#43;</li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Write code in such a way that only dynamically allocated memory is explicitly deallocated.</p>\r\n  <h1>Why</h1>\r\n  <p>Deleting objects that were not allocated dynamically may result in an arbitrary code execution vulnerability if that memory is later reused by calling the new operator.</p>\r\n  <h1>How</h1>\r\n  <p>Perform the following actions to assure that only dynamically allocated memory is freed:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Search for deallocation code.</strong> Review code to find all places where memory is being deallocated by the delete operator or free() function calls.</p>\r\n      <li>\r\n        <p>\r\n          <strong>Identify objects being deleted.</strong> Search for the declarations of the objects that are being deleted.</p>\r\n        <li>\r\n          <p>\r\n            <strong>Remove unnecessary deallocation code.</strong> Remove all delete operators and free() function calls that delete objects, which are not created by calling the new operator.</p>\r\n        </li>\r\n      </li>\r\n    </li>\r\n  </ol>"
+        ]
+      }
+    ]
+  }
+}

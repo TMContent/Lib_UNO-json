@@ -1,0 +1,59 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "0",
+      "Content_Hash": "0"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "00000000-0000-0000-0000-00000032fa80"
+        ],
+        "Id_History": [
+          "00000000-0000-0000-0000-00000032fa80,1c7d5da9-d38c-4f88-ad77-22c30028a8a7,"
+        ],
+        "Library_Id": [
+          "f215ceee-9a08-41d9-b2c1-bbcc058a8f32"
+        ],
+        "Title": [
+          "Use Parameterized Methods for Database Access"
+        ],
+        "Category": [
+          "Database Security"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "Android"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          "Use Parameterized Methods for Database Access"
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "false",
+          "DataType": "WikiText"
+        },
+        "Data": [
+          "==Applies To==\r\n\r\n* Android applications that query a database.\r\n\r\n==What to Do==\r\n\r\nUse parameterized query methods for database access.\r\n\r\n==Why==\r\n\r\nUsing parameterized query methods for database access prevents SQL injection vulnerabilities.\r\n\r\n==How==\r\n\r\nThe Android API includes parameterized functions for querying SQLite databases. Avoid using the rawQuery method; it may allow untrusted input to be included in the SQL query string, thus introducing SQL injection vulnerabilities.\r\n\r\nUse the following method for SELECT statements:\r\n\r\n*//query//\r\n\r\nUse the following methods for INSERT statements:\r\n\r\n*//insert//\r\n*//insertOrThrow//\r\n*//insertWithOnConflict//\r\n\r\nUse the following methods for UPDATE statements:\r\n\r\n*//update//\r\n*//updateWithOnConflict//\r\n\r\nUse the following method for DELETE statements:\r\n\r\n*//delete//\r\n\r\nIf your application uses some other API, please make sure that it uses parameterized methods for database access.\r\n\r\n==Related Items==\r\n\r\n* [[00000000-0000-0000-0000-0000007e38aa|Parameterized Methods Are Used for Database Access]]\r\n\r\n==Additional Resources==\r\n\r\n*For more information about the Android SQLite API, please see http://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html"
+        ]
+      }
+    ]
+  }
+}

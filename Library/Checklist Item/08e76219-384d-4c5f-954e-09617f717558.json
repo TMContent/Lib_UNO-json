@@ -1,0 +1,68 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "2107389240",
+      "Content_Hash": "11962536"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "08e76219-384d-4c5f-954e-09617f717558"
+        ],
+        "Id_History": [
+          "08e76219-384d-4c5f-954e-09617f717558,77abde58-73f3-43a0-88f6-8e518bbfe778,"
+        ],
+        "Library_Id": [
+          "be5273b1-d682-4361-99d9-6234f2d47eb7"
+        ],
+        "Title": [
+          "A Secure Key Storage Location Is Used"
+        ],
+        "Category": [
+          "Cryptography"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "Java"
+        ],
+        "Type": [
+          "Checklist Item"
+        ],
+        "DirectLink": [
+          "A Secure Key Storage Location Is Used"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ],
+        "Source": [
+          "SI"
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>Java</li>\r\n  </ul>\r\n  <h1>What to Check For</h1>\r\n  <p>Verify that a secure encryption key storage location is used.</p>\r\n  <h1>Why</h1>\r\n  <p>When faced with encryption, intruders attack the most vulnerable aspect: key management. Because keys are used to generate the encryption that protects sensitive data, the keys themselves become sensitive data that needs to be protected.</p>\r\n  <h1>How to Check</h1>\r\n  <p>To verify that a secure key storage location is used:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Identify the need for a key store. </strong>Key stores should be used when your application utilizes crypto keys.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Verify that Java's <em>KeyStore</em> class is used.</strong> Search application code for \"<em>KeyStore</em>\" to identify whether the <em>KeyStore</em> class is used.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Verify that appropriate permissions are set on the key store directory.</strong> Find the directory where the keystore is located. Verify that the keystore directory is not web-accessible. Verify that strong permissions are set on the keystore directory, so that only the application and the administrators can access it.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Verify that keys are not hard-coded into the application.</strong> Review application code to make sure encryption keys are not hard-coded into the application.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Verify that keys are unloaded from memory after their use.</strong> Review code that handles encryption keys to make sure that keys are securely removed from memory after being used.</p>\r\n    </li>\r\n  </ol>\r\n  <h1>How to Fix</h1>\r\n  <p>When considering a key storage location:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Identify the need for a key store. </strong>Key stores should be used when your application utilizes crypto keys. Example:</p>\r\n      <pre>KeyGenerator kgen = KeyGenerator.getInstance(\"AES\");<br />kgen.init(256);SecretKey skey = kgen.generateKey();<br />byte[] rawKey = skey.getEncoded();<br /><br />SecretKeySpec skeySpec = new SecretKeySpec(rawKey, \"AES\");</pre>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Use Java's <em>KeyStore</em> class. </strong>Java offers a key store functionality as part of the Java Runtime Environment. The Java key store requires a master password for retrieving the contents of the key store. The master password should be given to the application at starting time. Use the <em>KeyTool</em> utility to create and manage the keys inside the key store. Example of accessing the key store:</p>\r\n      <pre>String keyStoreName = MyApp.getKeyStoreName();<br />char[] keyStorePass = MyApp.getKeyStorePass();<br />KeyStore keyStore = KeyStore.getInstance(KeyStore.getDefaultType());<br />FileInputStream keyStoreFile = new FileInputStream(keyStoreName);<br />keyStore.load(keyStoreFile, keyStorePass);<br />keyStoreFile.close();<br /><br />final String keyName = \"MyAppEncryptionKey\";<br />// Note: Although the example uses the same password for storing the KeyStore<br />// on disk and adding keys to the KeyStore, the 2 passwords can be different<br />// from one another<br />SecretKey skey = (SecretKey)keyStore.getKey(keyName, keyStorePass);</pre>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Protect the key store.</strong>\r\n      </p>\r\n      <ul>\r\n        <li>\r\n          <strong>Choose a key store directory</strong>: Dedicate a directory for storing your application's key store files. Make sure the directory is not web-accessible. This limits the scope of users&nbsp;who can potentially compromise the contents inside the directory. </li>\r\n        <li>\r\n          <strong>Set appropriate permissions</strong>: Apply filesystem permissions such that the key store files can be only accessed by your application and its administrators.</li>\r\n      </ul>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Avoid common mistakes.</strong>\r\n      </p>\r\n      <ul>\r\n        <li>\r\n          <strong>Do not hard-code keys in the application</strong>: Hard-coding the encryption keys into the source code, hoping that an attacker will not reverse engineer the application, is security through obscurity. A determined attacker will usually find a way to defeat such a mechanism. </li>\r\n        <li>\r\n          <strong>Do not place keys into configuration files</strong>: Obfuscating the encryption keys and placing them into configuration files is security through obscurity. A determined attacker will usually find a way to defeat such a mechanism. </li>\r\n        <li>\r\n          <strong>Unload keys from memory after their use</strong>: Leaving the encryption keys in memory after their final use allows the operating system to page them from memory and onto the hard drive. A determined attacker will usually find a way to obtain the encryption keys from the operating system's page file.</li>\r\n      </ul>\r\n    </li>\r\n  </ol>\r\n  <h1>Java Cryptographic Storage Guidelines</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/6e0918c1-90db-46d5-9f0e-8a98ddbcd7d5\">Store Passwords Securely</a>\r\n    </li>\r\n    <li>\r\n      <a href=\"/article/b38a70c0-a014-4262-b3d6-69d6d4f0fe46\">Do Not Store Plaintext Sensitive Data</a>\r\n    </li>\r\n    <li>\r\n      <a href=\"/article/66df6465-5476-4b55-90c8-ffbd7d556205\">Use Strong Symmetric Encryption</a>\r\n    </li>\r\n    <li>\r\n      <a href=\"/article/f5cdd292-6f61-4584-b014-fc5134a3f9bc\">Use Strong Asymmetric Encryption</a>\r\n    </li>\r\n    <li>\r\n      <a href=\"/article/1057099e-dd79-4f41-8b7e-36f00f1343e4\">Use a Secure Key Storage Location</a>\r\n    </li>\r\n  </ul>\r\n  <h1>Java Cryptographic Storage Checklists</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/d74fe6bf-387f-4ff1-9edb-d0275eedffc0\">Passwords Are Stored Securely</a>\r\n    </li>\r\n    <li>\r\n      <a href=\"/article/97bb3ed8-df73-478e-a310-d96b79678aef\">Sensitive Data Is Encrypted</a>\r\n    </li>\r\n    <li>\r\n      <a href=\"/article/23019ede-9f30-4709-997d-586475a2e626\">Strong Symmetric Encryption Is Used</a>\r\n    </li>\r\n    <li>\r\n      <a href=\"/article/14a46517-6c86-498e-8429-1cb5ca3ce7c1\">Strong Asymmetric Encryption Is Used</a>\r\n    </li>\r\n    <li>\r\n      <a href=\"/article/08e76219-384d-4c5f-954e-09617f717558\">A Secure Key Storage Location Is Used</a>\r\n    </li>\r\n  </ul>\r\n  <h1>Java Cryptographic Storage Code Example</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/11e7466f-001b-4c8d-b282-a3c12aa0588c\">Use ESAPI Randomizer</a>\r\n    </li>\r\n  </ul>\r\n  <h1>Java Cryptographic Storage Testing</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/6d36aa09-5b7f-4967-b3c7-661b860846e2\">How to Test for Local Machine Credential Theft Bugs in Java</a>\r\n    </li>\r\n  </ul>"
+        ]
+      }
+    ]
+  }
+}

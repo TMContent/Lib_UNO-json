@@ -1,0 +1,68 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "-1643594446",
+      "Content_Hash": "1518625182"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "e4a5a1f8-1632-4658-b00f-b0a3c5ddd2b6"
+        ],
+        "Id_History": [
+          "e4a5a1f8-1632-4658-b00f-b0a3c5ddd2b6,0d940519-8de6-4533-bbb4-6fcf885f5c8b,"
+        ],
+        "Library_Id": [
+          "be5273b1-d682-4361-99d9-6234f2d47eb7"
+        ],
+        "Title": [
+          "Protected Resources Are Mapped to HttpForbiddenHandler."
+        ],
+        "Category": [
+          "Hardening"
+        ],
+        "Phase": [
+          "Deployment"
+        ],
+        "Technology": [
+          "Web Application"
+        ],
+        "Type": [
+          "Checklist Item"
+        ],
+        "DirectLink": [
+          "Protected Resources Are Mapped to HttpForbiddenHandler."
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          "J.D. Meier, Alex Mackman, Michael Dunner, Srinath Vasireddy, Ray Escamilla and Anandha Murukan"
+        ],
+        "Status": [
+          ""
+        ],
+        "Source": [
+          "SI"
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>\r\n      <div>Web Application</div>\r\n    </li>\r\n  </ul>\r\n  <h1>What to Check For</h1>\r\n  <p>Check to ensure that Protected resources are mapped to HttpForbiddenHandler.</p>\r\n  <p />\r\n  <h1>How to Fix</h1>\r\n  <p>HTTP handlers are located in the Machine.config file beneath the <b>&lt;httpHandlers&gt; </b>element. HTTP handlers are responsible for processing Web requests for specific file&nbsp;extensions. Remoting should not be enabled on front-end Web servers; enable remoting only on middle-tier application servers that are isolated from the Internet.</p>\r\n  <blockquote>\r\n    <b>Note</b>&nbsp;&nbsp;&nbsp;If you are running .NET 2.0, the &lt; httpHandlers&gt; setting is located in the machine-level Web.config file, located in the same directory as the Machine.config file.</blockquote>\r\n  <p>The following file extensions are mapped in the Machine.config file to HTTP<b></b>handlers: </p>\r\n  <ul>\r\n    <li>.aspx is used for ASP.NET pages \r\n<li>.rem and .soap are used for Remoting. \r\n<li>.asmx is used for Web Services. \r\n<li>.asax, .ascx, .config, .cs, .csproj, .vb, .vbproj, .webinfo, .asp, .licx, .resx,&nbsp;and&nbsp;.resources are protected resources and are mapped to <b>System.Web.HttpForbiddenHandler</b>. </li></li></li></li>\r\n  </ul>\r\n  <p>For .NET&nbsp;Framework resources, if you do not use a file extension, then map the extension to <b>System.Web.HttpForbiddenHandler</b> in the Machine.config file, as shown in the following example:</p>\r\n  <div>\r\n    <pre>&lt;add verb=\"*\" path=\"*.vbproj\" type=\"System.Web.HttpForbiddenHandler\" /&gt;</pre>\r\n  </div>\r\n  <p>In this case, the .vbproj file extension is mapped to <b>System.Web.HttpForbiddenHandler</b>. If a client requests a path that ends with .vbproj, then ASP.NET returns a message that states \"This type of page is not served.\" </p>\r\n  <ul>\r\n    <li>The following guidelines apply to handling .NET&nbsp;Framework file extensions: \r\n<li><b>Map extensions you do not use to HttpForbiddenHandler</b>. If you do not serve ASP.NET pages, then map .aspx to <b>HttpForbiddenHandler</b>. If you do not use Web Services, then map .asmx to <b>HttpForbiddenHandler</b>. \r\n<li><b>Disable Remoting on Internet-facing Web servers</b>. Map remoting extensions (.soap and .rem) on Internet-facing Web servers to <b>HttpForbiddenHandler</b>. </li></li></li>\r\n  </ul>\r\n  <h3>Disable .NET&nbsp;Remoting</h3>\r\n  <p>To disable .NET&nbsp;Remoting disable requests for .rem and .soap extensions, use the following elements beneath<b> &lt;httpHandlers&gt;</b>:</p>\r\n  <div>\r\n    <pre>&lt;add verb=\"*\" path=\"*.rem\" type=\"System.Web.HttpForbiddenHandler\"/&gt;<br />&lt;add verb=\"*\" path=\"*.soap\" type=\"System.Web.HttpForbiddenHandler\"/&gt;</pre>\r\n  </div>\r\n  <blockquote>\r\n    <b>Note</b>&nbsp;&nbsp;&nbsp;This does not prevent a Web application on the Web server from connecting to a downstream object by using the Remoting infrastructure. However, it prevents clients from connecting to objects on the Web server.</blockquote>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
+        ]
+      }
+    ]
+  }
+}

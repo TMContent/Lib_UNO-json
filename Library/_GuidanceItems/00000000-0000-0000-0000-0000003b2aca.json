@@ -1,0 +1,59 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "0",
+      "Content_Hash": "0"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "00000000-0000-0000-0000-0000003b2aca"
+        ],
+        "Id_History": [
+          "00000000-0000-0000-0000-0000003b2aca,76d4c61d-8fe9-456e-a15c-0fd27e926012,"
+        ],
+        "Library_Id": [
+          "f215ceee-9a08-41d9-b2c1-bbcc058a8f32"
+        ],
+        "Title": [
+          "Sensitive Data Is Not Cached"
+        ],
+        "Category": [
+          "Privacy"
+        ],
+        "Phase": [
+          "Design"
+        ],
+        "Technology": [
+          "Android"
+        ],
+        "Type": [
+          "Checklist Item"
+        ],
+        "DirectLink": [
+          "Sensitive Data Is Not Cached"
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "false",
+          "DataType": "WikiText"
+        },
+        "Data": [
+          "==What to Check For==\r\n\r\nVerify that sensitive data is not cached.\r\n\r\n==Why==\r\n\r\nAvoid caching sensitive data to prevent this data from falling into the wrong hands if the device is stolen or compromised.\r\n\r\n==How to Check==\r\n\r\nTo verify that sensitive data is not cached:\r\n\r\n# **Identify sensitive data.** Make a list of types of sensitive information handled by your application. Some examples are:\r\n#* Passwords\r\n#* Encryption keys\r\n#* Personal information\r\n# **Identify code that creates temporary files used by the application.** Review the application source code to find functions that are responsible for creating the temporary files to find ones that write sensitive data.\r\n# **Verify that sensitive data is not cached.** Examine the code that creates temporary files used by the application to make sure that sensitive data is not stored in them.\r\n\r\n==How to Fix==\r\n\r\nTo prevent caching of sensitive data:\r\n\r\n# **Identify sensitive data.** Make a list of types of sensitive information handled by your application. Some examples are:\r\n#* Passwords\r\n#* Encryption keys\r\n#* Personal information\r\n# **Identify code that creates temporary files used by the application.** Review the application source code to find functions that are responsible for creating the temporary files to find ones that write sensitive data.\r\n# **Remove code that writes sensitive data to temporary files.** Edit the functions that write sensitive data to temporary files to prevent caching of sensitive data.\r\n\r\n==Privacy Guidelines==\r\n\r\n* [[00000000-0000-0000-0000-000000561ff3|Do Not Cache Sensitive Data]]\r\n* [[00000000-0000-0000-0000-0000007e1362|Do Not Log Location Data]]\r\n* [[00000000-0000-0000-0000-0000001dcb79|Do Not Log Sensitive Data]]\r\n* [[00000000-0000-0000-0000-000000629cc3|Delete Cached Data after Use]]\r\n\r\n==Privacy Checklists==\r\n\r\n* [[00000000-0000-0000-0000-0000003b2aca|Sensitive Data Is Not Cached]]\r\n* [[00000000-0000-0000-0000-0000006c27b2|Location Data Is Not Logged]]\r\n* [[00000000-0000-0000-0000-0000005a7753|Sensitive Data Is Not Logged]]\r\n* [[00000000-0000-0000-0000-0000007c99a7|Cached Data Is Deleted after Use]]"
+        ]
+      }
+    ]
+  }
+}

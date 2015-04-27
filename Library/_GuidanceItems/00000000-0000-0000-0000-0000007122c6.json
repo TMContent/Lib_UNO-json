@@ -1,0 +1,59 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "0",
+      "Content_Hash": "0"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "00000000-0000-0000-0000-0000007122c6"
+        ],
+        "Id_History": [
+          "00000000-0000-0000-0000-0000007122c6,014b9bea-3c07-4ea9-8723-a2b6503ea2e1,"
+        ],
+        "Library_Id": [
+          "7d2d0571-e542-45cd-9335-d7a0556c2bea"
+        ],
+        "Title": [
+          "X-XSS-Protection Is Used to Prevent Reflected XSS"
+        ],
+        "Category": [
+          "HTTP Headers"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "HTML5"
+        ],
+        "Type": [
+          "Checklist Item"
+        ],
+        "DirectLink": [
+          "X-XSS-Protection Is Used to Prevent Reflected XSS"
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "false",
+          "DataType": "wikitext"
+        },
+        "Data": [
+          "==Applies To==\r\n\r\n* HTML5\r\n\r\n==What to Check For==\r\n\r\nVerify that the X-XSS-Protection header is present in the response for each page.\r\n\r\n==Why==\r\n\r\nFor users of Internet Explorer versions 8 and above, the X-XSS-Protection response header adds an extra layer of defense against reflected cross site scripting (XSS) attacks. Note that the first layer of defense, as dictated by good coding practices, is always to sanitize all user input on the server side. \r\n\r\n==How to Check==\r\n\r\nTo verify that the X-XSS-Protection response header is used to reduce the potential for clickjacking attacks:\r\n\r\n# **Use an attack proxy application to examine the response headers of the application.** Using an attack proxy application, such as the Burp Suite, connect to the application and use it in a manner that a typical user would, going through the most commonly used features of the application. \r\n# **Monitor the session and analyze the response headers.** Monitor the session using the attack proxy. Pay particular attention to the response headers from the server. Take note of whether the X-XSS-Protection header is present in the response headers. Make sure that the header is used like this: {{{ X-XSS-Protection: 1;mode=block }}}\r\n\r\n==How to Fix==\r\n\r\nX-XSS-Protection is a nonstandard response header supported by Internet Explorer versions 8 and above. To inject the X-XSS-Protection header in the response for each page in an HTML5 application, you have three options:\r\n\r\n# **Configure the web server to inject the header in each page response.** If you are using Apache Web Server, add the X-XSS-Protection header to the httpd.conf configuration file: {{{ Header always append X-XSS-Protection 1;mode=block }}}. Note that there is no space after the 1 in the above configuration line. Restart the web server or reload the configuration.\r\n# **Add the header response in the source code of the server-side language.** For example, in PHP, add the X-XSS-Protection header to the response. Insert it before any other code is executed in the PHP script, so that the response header will be sent before any data is sent to the browser: {{{ header(\"X-XSS-Protection: 1; mode=block\"); }}}\r\n# **Create a Servlet filter in Java-based applications.** The name of the Filter class is arbitrary, but it must implement the javax.Servlet.Filter interface. The work in the Filter class is in the doFilter method. \\\\ {{{ public void doFilter(ServletRequest req, ServletResponse resp,FilterChain chain) throws IOException, ServletException { }}} \\\\ {{{ HttpServletResponse response = (HttpServletResponse) resp; }}} \\\\ {{{ response.addHeader(“X-XSS-Protection”,”1; mode=block”); }}} \\\\ {{{ chain.doFilter(req, resp); }}} \\\\ {{{ } }}} \\\\ Add the filter to the application web.xml file. The following snippet is for a filter with the class name XSSProtectionFilter: \\\\ {{{ <filter> }}} \\\\ {{{ <filter-name>XSSProtectionFilter</filter-name> }}} \\\\ {{{ <filter-class> }}} \\\\ {{{ com.example.servlet.filters.XSSProtectionFilter }}} \\\\ {{{ </filter-class> }}} \\\\ {{{ </filter> }}} \\\\ {{{ <filter-mapping> }}} \\\\ {{{ <filter-name>XSSProtectionFilter</filter-name> }}} \\\\ {{{ <url-pattern>/*</url-pattern> }}} \\\\ {{{ </filter-mapping> }}}\r\n\r\n==Problem Example==\r\n\r\nExample.com is a popular social media site that greets users after they log in. In this scenario, there is no input validation on the server side (though there should be). As such, Example.com is extremely vulnerable to reflected XSS attacks.\r\n\r\nHere is a snippet of PHP code from the account.php page:\r\n\r\n{{{\r\n<?php\r\n$name = $_REQUEST[\"name\"];\r\n\r\necho (\"Hello \". $name .\"!\") ;\r\n}}}\r\n\r\nA web page links to the URL  http://www.example.com/account.php?name=Jane.\r\n\r\nAs the user named Jane navigates to the account.php page from the link, her name is placed into the GET request as the value of the parameter name. The PHP script sets a variable to the value of the name parameter, and displays “Hello Jane!”\r\n\r\nThe reflected XSS vulnerability can be exploited as follows:\r\n\r\nhttp://www.example.com/account.php?name=<script>alert(‘gotcha’);</script>  :\r\n\r\nWhen the page is loaded, it renders Hello and contains a JavaScript pop-up message with “gotcha.” This harmless alert box could very well have access to the user’s cookies in the vulnerable domain or otherwise execute arbitrary JavaScript code.\r\n\r\nThe server response is:\r\n\r\n{{{\r\nHTTP/1.1 200 OK\r\nDate: Tue, 16 Apr 2013 05:23:17 GMT\r\nServer: Apache/2.2.16 (Win32) mod_ssl/2.2.16 OpenSSL/0.9.8o\r\nX-Powered-By: PHP/5.3.8-ZS5.5.0 ZendServer\r\nSet-Cookie: ZDEDebuggerPresent=php,phtml,php3; path=/\r\nKeep-Alive: timeout=5, max=100\r\nConnection: Keep-Alive\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html\r\n}}}\r\n\r\n==Solution Example==\r\n\r\nTo correct the situation, Example.com developers include the X-XSS-Protection header. In the httpd.conf configuration file of their Apache Web Server 2, they add \r\n\r\n{{{\r\nHeader always append X-XSS-Protection 1;mode=block \r\n}}}\r\n\r\nand reload the Apache configuration.\r\n\r\nThey could achieve the same results by adding the header to the source code. For example:\r\n\r\n{{{\r\n<?php\r\nheader(\"X-XSS-Protection: 1;mode=block\");\r\n\r\n$name = $_REQUEST[\"name\"];\r\n\r\necho (\"Hello \". $name .\"!\") ;\r\n}}}\r\n\r\nHere is the server header response:\r\n\r\n{{{\r\nHTTP/1.1 200 OK\r\nDate: Thu, 18 Apr 2013 03:56:12 GMT\r\nServer: Apache/2.2.16 (Win32) mod_ssl/2.2.16 OpenSSL/0.9.8o\r\nX-XSS-Protection: 1;mode=block\r\nX-Powered-By: PHP/5.3.8-ZS5.5.0 ZendServer\r\nSet-Cookie: ZDEDebuggerPresent=php,phtml,php3; path=/\r\nX-XSS-Protection: 1; mode=block\r\nKeep-Alive: timeout=5, max=100\r\nConnection: Keep-Alive\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html\r\n}}}\r\n\r\nWhen the link {{{ http://www.example.com/account.php?name=<script>alert(‘gotcha’);</script> }}} is loaded in Internet Explorer 8, Hello will not render. Instead, the hash (#) is displayed. In addition, the browser will not execute any JavaScript code.\r\n\r\n==Additional Resources==\r\n\r\n* For information about the Microsoft Cross-Site Scripting Filter, see http://msdn.microsoft.com/en-us/library/dd565647%28v=vs.85%29.aspx\r\n* For more information about HTTP headers, see https://www.owasp.org/index.php/List_of_useful_HTTP_headers\r\n\r\n\r\n==HTTP Header Guidelines==\r\n\r\n* [[00000000-0000-0000-0000-00000028bb7d|Use X-Content-Security-Policy to Mitigate XSS]]\r\n* [[00000000-0000-0000-0000-0000009026c0|Use X-XSS-Protection to Prevent Reflected XSS]]\r\n* [[00000000-0000-0000-0000-000000204a22|Use X-Frame-Options to Prevent ClickJacking]]\r\n* [[9e0f93ba-0b80-4aab-b93c-c17b9af2a19c|Use a Filter to Inject X-Frame-Options]]\r\n* [[ae2dc4f8-af3d-4002-9417-f3f1d5c9128b|Add X-Frame Options to Responses]]\r\n* [[00000000-0000-0000-0000-00000063561d|Use the Strict-Transport-Security Header to Enforce HTTPS]]\r\n* [[00000000-0000-0000-0000-000000225f24|Use includeSubDomains with Strict-Transport-Security]]\r\n\r\n==HTTP Header Checklist Items==\r\n\r\n* [[00000000-0000-0000-0000-0000006b6766|X-Content-Security-Policy Is Used to Mitigate XSS]]\r\n* [[00000000-0000-0000-0000-0000007122c6|X-XSS-Protection Is Used to Prevent Reflected XSS]]\r\n* [[00000000-0000-0000-0000-000000498810|X-Frame-Options Are Used to Prevent Clickjacking]]\r\n* [[0d1871fe-76d3-4ea3-87be-ef63662dd772|A Filter Is Used to Inject X-Frame Options]]\r\n* [[26caffea-d597-40fd-9ed0-36fb025d188b|X-Frame Options Are Added to Responses]]\r\n* [[00000000-0000-0000-0000-0000001b501f|The Strict-Transport-Security Header is Used to Enforce HTTPS]]\r\n* [[0078cd3f-9e84-4eb4-9a2f-7f51e3100801|IncludeSubDomains is Used with Strict-Transport-Security]]\r\n"
+        ]
+      }
+    ]
+  }
+}

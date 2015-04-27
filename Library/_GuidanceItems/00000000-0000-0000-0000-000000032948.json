@@ -1,0 +1,59 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "0",
+      "Content_Hash": "0"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "00000000-0000-0000-0000-000000032948"
+        ],
+        "Id_History": [
+          "00000000-0000-0000-0000-000000032948,7860df09-5e03-446f-9b06-7688efe1ee45,"
+        ],
+        "Library_Id": [
+          "26bd1a04-beed-4a66-917d-b6ab0a7d634c"
+        ],
+        "Title": [
+          " Access Control Checks Are Performed for All Filesystem Access"
+        ],
+        "Category": [
+          "Authorization"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          ".NET"
+        ],
+        "Type": [
+          "Checklist Item"
+        ],
+        "DirectLink": [
+          " Access Control Checks Are Performed for All Filesystem Access"
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "false",
+          "DataType": "wikitext"
+        },
+        "Data": [
+          "==Applies To==\r\n\r\n* ASP.NET\r\n\r\n==What to Check For==\r\n\r\nCheck if you have configured code access security policy in your web.config or machine.config files.\r\n\r\n==How to Check==\r\nCode Access Security Policy helps in limiting the amount of damage a badly written snippet of code can do, if exploited by a malicious attacker. Check if there is a section delimited by <securitypolicy></securitypolicy> in either the web.config or the machine.config on your system. This should be inside the <system.web> element.\r\n\r\n{{{\r\n<system.web>\r\n  <securitypolicy>\r\n     ...\r\n     ...\r\n  </securitypolicy>\r\n</system.web>\r\n}}}\r\n\r\nCheck if there is a policy between these lines which places restrictions on File I/O.\r\n\r\n==How to Fix==\r\n\r\nTo perform access control checks for all filesystem access add the <securitypolicy> section to your web.config or machine.config as follows.\r\n\r\n{{{\r\n<securitypolicy>\r\n  <trustlevel name=\"Medium\" policyfile=\"web_MediumTrust.config\"></trustlevel>\r\n</securitypolicy>\r\n}}}\r\n\r\nIf the 'Medium' policy doesn't match your needs and you want more customization, create a new file called customtrust.config and add the permissions for File I/O into this file. A sample set of permissions could look like this:\r\n\r\n{{{\r\n<permissionset class=\"NamedPermissionSet\" version=\"1\" name=\"ASP.Net\">\r\n  ...\r\n     <ipermission class=\"RegistryPermission\" version=\"1\" unrestricted=\"true\"></ipermission>\r\n     ...\r\n   </permissionset>  \r\n}}}\r\n\r\nNote that you can simply make a copy of the medium trust file and rename it to customtrust.config. Once this is done, you can modify the file according to your needs.\r\n\r\n==Additional Resources==\r\n\r\n* For more information about implementing Access Control using a Code Access Security Policy see https://teammentor.net/article/d0b1e36c-0b8d-4e5f-9d61-4851faceddca\r\n\r\n* For more information about how a Code Access Security Policy is implemented in .NET 4.0 see http://msdn.microsoft.com/en-us/library/dd984947%28v=vs.100%29.aspx#Overview"
+        ]
+      }
+    ]
+  }
+}

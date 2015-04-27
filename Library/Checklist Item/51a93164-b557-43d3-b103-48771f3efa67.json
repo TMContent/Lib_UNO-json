@@ -1,0 +1,68 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "1500807625",
+      "Content_Hash": "1007132873"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "51a93164-b557-43d3-b103-48771f3efa67"
+        ],
+        "Id_History": [
+          "51a93164-b557-43d3-b103-48771f3efa67,48eebafa-b647-426f-a630-c2952cb4c41c,"
+        ],
+        "Library_Id": [
+          "92718d53-36b2-47bc-b6f5-e60994385f46"
+        ],
+        "Title": [
+          "Where Appropriate, the System.Net.Security.NegotiateStream Class Is Used for a TCP Channel with .NET Remoting."
+        ],
+        "Category": [
+          "Communication Security"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          ".NET 3.5"
+        ],
+        "Type": [
+          "Checklist Item"
+        ],
+        "DirectLink": [
+          "Where Appropriate, the System.Net.Security.NegotiateStream Class Is Used for a TCP Channel with .NET Remoting."
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ],
+        "Source": [
+          "SI"
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h1>What to Check For</h1>\r\n  <p>Check to ensure that the System.Net.Security.NegotiateStream class is used for a TCP channel with .NET remoting to encrypt and to authenticate callers.</p>\r\n  <p />\r\n  <h1>How to Fix</h1>\r\n  <p>Remoting applications that use the TCP channel do not by default perform authentication or encryption. In the .NET Framework, the remoting framework uses the <b>System.Net.Security.NegotiateStream</b> class to encrypt and sign the data transported over the channel and to authenticate callers. To use this feature, you can configure the &lt;<b>channel</b>&gt; element in the Machine.config file, the Web.config file, or the App.config file, depending on whether you want to apply the setting across all applications on your computer or to a specific application.</p>\r\n  <p>The following example shows how a server specifies that authentication is required and that the channel should be protected with encryption.</p>\r\n  <div>\r\n    <pre>&lt;channel ref=\"tcp\" port=\"1234\"<br />          authenticationMode=\"IdentifyCallers\" secure=\"true\" /&gt;  </pre>\r\n  </div>\r\n  <p>To authenticate clients by using their domain credentials, you need to set the <b>useDefaultCredentials</b> attribute of the &lt;<b>channel</b>&gt; in the client configuration to true. The following example shows a sample client configuration.</p>\r\n  <div>\r\n    <pre>&lt;channel ref=\"tcp\" useDefaultCredentials=\"true\" secure=\"true\"<br />          impersonationLevel=\"Identify\" /&gt;  </pre>\r\n  </div>\r\n  <p>To use Kerberos authentication, the client must specify a service principal name (SPN). This can be done programmatically or in the client's configuration file, as shown in the following example.</p>\r\n  <div>\r\n    <pre>&lt;channel ref=\"tcp\"<br />          useDefaultCredentials=\"true\"<br />          impersonationLevel=\"Identify\"<br />          spn=\"someService/somehost.com\" /&gt;  </pre>\r\n  </div>\r\n  <blockquote>\r\n    <b>Note</b>&nbsp;&nbsp;&nbsp;Use of .NET remoting is not encouraged for interprocess or server-to-server communication. .NET remoting is for cross-application domain communication within a process.</blockquote>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
+        ]
+      }
+    ]
+  }
+}
