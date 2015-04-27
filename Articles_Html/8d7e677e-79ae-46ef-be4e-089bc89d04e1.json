@@ -1,0 +1,312 @@
+{
+  "id": "8d7e677e-79ae-46ef-be4e-089bc89d04e1",
+  "checksum": "6835e39f93deefebb074fc51456578ec59e3757e",
+  "words": {
+    "applies": [
+      "h2"
+    ],
+    "to": [
+      "h2",
+      "h2",
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "web": [
+      "ul",
+      "li"
+    ],
+    "applications": [
+      "ul",
+      "li"
+    ],
+    "apache": [
+      "ul",
+      "li",
+      "p",
+      "ul",
+      "li"
+    ],
+    "what": [
+      "h2"
+    ],
+    "do": [
+      "h2"
+    ],
+    "configure": [
+      "p"
+    ],
+    "use": [
+      "p",
+      "p",
+      "title"
+    ],
+    "only": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "strong": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "ssl": [
+      "p",
+      "p",
+      "p",
+      "ul",
+      "li",
+      "title"
+    ],
+    "algorithms": [
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "why": [
+      "h2"
+    ],
+    "using": [
+      "p"
+    ],
+    "encryption": [
+      "p",
+      "p"
+    ],
+    "with": [
+      "p",
+      "p"
+    ],
+    "helps": [
+      "p",
+      "p"
+    ],
+    "reduce": [
+      "p"
+    ],
+    "the": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "risk": [
+      "p"
+    ],
+    "of": [
+      "p",
+      "p",
+      "p"
+    ],
+    "successful": [
+      "p"
+    ],
+    "eavesdropping": [
+      "p"
+    ],
+    "attacks": [
+      "p"
+    ],
+    "and": [
+      "p",
+      "p"
+    ],
+    "regulatory": [
+      "p"
+    ],
+    "compliance": [
+      "p"
+    ],
+    "how": [
+      "h2"
+    ],
+    "edit": [
+      "p"
+    ],
+    "httpdconf": [
+      "p"
+    ],
+    "file": [
+      "p"
+    ],
+    "include": [
+      "p",
+      "p"
+    ],
+    "following": [
+      "p",
+      "p"
+    ],
+    "settings": [
+      "p",
+      "p"
+    ],
+    "sslprotocol": [
+      "pre"
+    ],
+    "-all": [
+      "pre"
+    ],
+    "+tlsv1sslciphersuite": [
+      "pre"
+    ],
+    "high!anull:!sslv2:!md5:@strength\nsslhonorcipherorder": [
+      "pre"
+    ],
+    "on": [
+      "pre"
+    ],
+    "these": [
+      "p"
+    ],
+    "enable": [
+      "p"
+    ],
+    "tls": [
+      "p"
+    ],
+    "protocol": [
+      "p"
+    ],
+    "cipher": [
+      "p"
+    ],
+    "suites": [
+      "p"
+    ],
+    "it": [
+      "p"
+    ],
+    "may": [
+      "p"
+    ],
+    "also": [
+      "p"
+    ],
+    "be": [
+      "p"
+    ],
+    "a": [
+      "p"
+    ],
+    "good": [
+      "p"
+    ],
+    "idea": [
+      "p"
+    ],
+    "line": [
+      "p"
+    ],
+    "in": [
+      "p",
+      "ul",
+      "li"
+    ],
+    "case": [
+      "p"
+    ],
+    "old": [
+      "p"
+    ],
+    "versions": [
+      "p"
+    ],
+    "apache/mod_ssl": [
+      "p"
+    ],
+    "sslinsecurerenegotiation": [
+      "pre"
+    ],
+    "off": [
+      "pre"
+    ],
+    "additional": [
+      "h2"
+    ],
+    "resources": [
+      "h2"
+    ],
+    "for": [
+      "ul",
+      "li"
+    ],
+    "more": [
+      "ul",
+      "li"
+    ],
+    "information": [
+      "ul",
+      "li"
+    ],
+    "about": [
+      "ul",
+      "li"
+    ],
+    "configuring": [
+      "ul",
+      "li"
+    ],
+    "please": [
+      "ul",
+      "li"
+    ],
+    "see": [
+      "ul",
+      "li"
+    ],
+    "http//httpd.apache.org/docs/2.0/ssl/ssl_howto.html": [
+      "ul",
+      "li",
+      "a"
+    ]
+  },
+  "tags": {
+    "h2": [
+      "Applies To",
+      "What to Do",
+      "Why",
+      "How",
+      "Additional Resources"
+    ],
+    "ul": [
+      "Web Applications\n Apache",
+      "For more information about configuring SSL in Apache, please see http://httpd.apache.org/docs/2.0/ssl/ssl_howto.html"
+    ],
+    "li": [
+      "Web Applications",
+      "Apache",
+      "For more information about configuring SSL in Apache, please see http://httpd.apache.org/docs/2.0/ssl/ssl_howto.html"
+    ],
+    "p": [
+      "Configure Apache to use only strong SSL algorithms.",
+      "Using strong encryption algorithms with SSL helps reduce the risk of successful eavesdropping attacks and helps with regulatory compliance.",
+      "To use only strong SSL algorithms, edit the httpd.conf file to include the following settings:",
+      "These settings enable only the TLS protocol and only the strong encryption cipher suites.",
+      "It may also be a good idea to include the following line in case of old versions of apache/mod_ssl:"
+    ],
+    "pre": [
+      "SSLProtocol -all +TLSv1\nSSLCipherSuite HIGH:!aNULL:!SSLv2:!MD5:@STRENGTH\nSSLHonorCipherOrder on",
+      "SSLInsecureRenegotiation off"
+    ],
+    "a": [
+      "http://httpd.apache.org/docs/2.0/ssl/ssl_howto.html"
+    ]
+  },
+  "links": [
+    {
+      "href": "http://httpd.apache.org/docs/2.0/ssl/ssl_howto.html",
+      "text": "http://httpd.apache.org/docs/2.0/ssl/ssl_howto.html"
+    }
+  ],
+  "html": "<h2>Applies To</h2><ul><li> Web Applications</li>\n<li> Apache</li>\n</ul><h2>What to Do</h2><p>Configure Apache to use only strong SSL algorithms.\n</p><h2>Why</h2><p>Using strong encryption algorithms with SSL helps reduce the risk of successful eavesdropping attacks and helps with regulatory compliance.\n</p><h2>How</h2><p>To use only strong SSL algorithms, edit the httpd.conf file to include the following settings:\n</p><pre>\n\nSSLProtocol -all +TLSv1\nSSLCipherSuite HIGH:!aNULL:!SSLv2:!MD5:@STRENGTH\nSSLHonorCipherOrder on\n\n</pre><p>\nThese settings enable only the TLS protocol and only the strong encryption cipher suites.\n</p><p>\nIt may also be a good idea to include the following line in case of old versions of apache/mod_ssl:\n</p><pre>\n\nSSLInsecureRenegotiation off\n\n</pre><h2>Additional Resources</h2><ul><li> For more information about configuring SSL in Apache, please see <a href=\"http://httpd.apache.org/docs/2.0/ssl/ssl_howto.html\">http://httpd.apache.org/docs/2.0/ssl/ssl_howto.html</a></li></ul>"
+}

@@ -1,0 +1,141 @@
+{
+  "id": "9e2a8f9d-7e8c-4908-8746-1ae6d25f1315",
+  "checksum": "b5f495be1a938ba94aef0e49331409edb07acc16",
+  "words": {
+    "applies": [
+      "h1"
+    ],
+    "to": [
+      "h1",
+      "h1"
+    ],
+    "web": [
+      "ul",
+      "li",
+      "div"
+    ],
+    "application": [
+      "ul",
+      "li",
+      "div"
+    ],
+    "what": [
+      "h1"
+    ],
+    "check": [
+      "h1",
+      "p"
+    ],
+    "for": [
+      "h1"
+    ],
+    "that": [
+      "p",
+      "p"
+    ],
+    "it": [
+      "p",
+      "p"
+    ],
+    "has": [
+      "p",
+      "title"
+    ],
+    "not": [
+      "p",
+      "p",
+      "title"
+    ],
+    "been": [
+      "p",
+      "title"
+    ],
+    "revoked": [
+      "p",
+      "title"
+    ],
+    "must": [
+      "p"
+    ],
+    "be": [
+      "p"
+    ],
+    "on": [
+      "p"
+    ],
+    "a": [
+      "p"
+    ],
+    "certificate": [
+      "p",
+      "p",
+      "title"
+    ],
+    "revocation": [
+      "p"
+    ],
+    "list": [
+      "p"
+    ],
+    "crl)": [
+      "p"
+    ],
+    "from": [
+      "p",
+      "p"
+    ],
+    "the": [
+      "p",
+      "p",
+      "title"
+    ],
+    "server": [
+      "p"
+    ],
+    "issued": [
+      "p"
+    ],
+    "adapted": [
+      "p"
+    ],
+    "microsoft": [
+      "p"
+    ],
+    "patterns": [
+      "p"
+    ],
+    "&": [
+      "p"
+    ],
+    "practices": [
+      "p"
+    ],
+    "guidance": [
+      "p"
+    ]
+  },
+  "tags": {
+    "h1": [
+      "Applies to",
+      "What to Check For"
+    ],
+    "ul": [
+      "Web Application"
+    ],
+    "li": [
+      "Web Application"
+    ],
+    "div": [
+      "Web Application"
+    ],
+    "p": [
+      "Check that it has not been revoked. It must not be on a Certificate Revocation List (CRL) from the server that issued the certificate.",
+      "Adapted from Microsoft patterns & practices guidance."
+    ],
+    "hr": [
+      ""
+    ]
+  },
+  "links": [],
+  "html": "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>\r\n      <div>Web Application</div>\r\n    </li>\r\n  </ul>\r\n  <h1>What to Check For</h1>\r\n  <p>Check that it has not been revoked. It must not be on a Certificate Revocation List (CRL) from the server that issued the certificate. </p>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
+}

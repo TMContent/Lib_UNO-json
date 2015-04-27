@@ -1,0 +1,297 @@
+{
+  "id": "aceed9a2-92a1-4810-ae35-f5b7c60ac9cc",
+  "checksum": "520bf3a5f32fe15d39e35feaf6829e0721cb1cd3",
+  "words": {
+    "35": [
+      "ul",
+      "li"
+    ],
+    "2008": [
+      "ul",
+      "li"
+    ],
+    "applies": [
+      "h1"
+    ],
+    "to": [
+      "h1",
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "microsoft®": [
+      "ul",
+      "li"
+    ],
+    "windows": [
+      "ul",
+      "li"
+    ],
+    "communication": [
+      "ul",
+      "li"
+    ],
+    "foundation": [
+      "ul",
+      "li"
+    ],
+    "wcf)": [
+      "ul",
+      "li"
+    ],
+    "microsoft": [
+      "ul",
+      "li",
+      "p"
+    ],
+    "visual": [
+      "ul",
+      "li"
+    ],
+    "studio®": [
+      "ul",
+      "li"
+    ],
+    "description": [
+      "h1"
+    ],
+    "implement": [
+      "p"
+    ],
+    "the": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "afterreceivereply": [
+      "p",
+      "strong"
+    ],
+    "of": [
+      "p",
+      "p"
+    ],
+    "interface": [
+      "p"
+    ],
+    "iclientmessageinspector": [
+      "p",
+      "strong"
+    ],
+    "message": [
+      "p",
+      "p"
+    ],
+    "inspector": [
+      "p"
+    ],
+    "validate": [
+      "p",
+      "p",
+      "title"
+    ],
+    "inbound": [
+      "p",
+      "title"
+    ],
+    "messages": [
+      "p",
+      "title"
+    ],
+    "on": [
+      "p",
+      "title"
+    ],
+    "client": [
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "this": [
+      "p"
+    ],
+    "allows": [
+      "p"
+    ],
+    "you": [
+      "p"
+    ],
+    "after": [
+      "p"
+    ],
+    "response": [
+      "p"
+    ],
+    "has": [
+      "p"
+    ],
+    "arrived": [
+      "p"
+    ],
+    "but": [
+      "p"
+    ],
+    "before": [
+      "p",
+      "p"
+    ],
+    "deserialization": [
+      "p"
+    ],
+    "and": [
+      "p"
+    ],
+    "returning": [
+      "p"
+    ],
+    "data": [
+      "p"
+    ],
+    "application": [
+      "p"
+    ],
+    "void": [
+      "pre"
+    ],
+    "iclientmessageinspectorafterreceivereply(ref": [
+      "pre"
+    ],
+    "systemservicemodel.channels.message": [
+      "pre"
+    ],
+    "reply": [
+      "pre"
+    ],
+    "object": [
+      "pre"
+    ],
+    "correlationstate": [
+      "pre"
+    ],
+    "{": [
+      "pre"
+    ],
+    "validatemessageref": [
+      "pre"
+    ],
+    "reply;": [
+      "pre"
+    ],
+    "}": [
+      "pre"
+    ],
+    "additional": [
+      "h1"
+    ],
+    "resources": [
+      "h1"
+    ],
+    "for": [
+      "ul",
+      "li"
+    ],
+    "more": [
+      "ul",
+      "li"
+    ],
+    "information": [
+      "ul",
+      "li"
+    ],
+    "see": [
+      "ul",
+      "li"
+    ],
+    "“message": [
+      "ul",
+      "li"
+    ],
+    "inspectors”": [
+      "ul",
+      "li"
+    ],
+    "at": [
+      "ul",
+      "li"
+    ],
+    "http//msdn.microsoft.com/en-us/library/aa717047.aspx": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "adapted": [
+      "p"
+    ],
+    "from": [
+      "p"
+    ],
+    "patterns": [
+      "p"
+    ],
+    "&": [
+      "p"
+    ],
+    "practices": [
+      "p"
+    ],
+    "guidance": [
+      "p"
+    ],
+    "how": [
+      "title"
+    ]
+  },
+  "tags": {
+    "h1": [
+      "Applies to",
+      "Description",
+      "Additional Resources"
+    ],
+    "ul": [
+      "Microsoft® Windows Communication Foundation (WCF) 3.5 \r\nMicrosoft Visual Studio® 2008",
+      "For more information see “Message Inspectors” at http://msdn.microsoft.com/en-us/library/aa717047.aspx"
+    ],
+    "li": [
+      "Microsoft® Windows Communication Foundation (WCF) 3.5",
+      "Microsoft Visual Studio® 2008",
+      "For more information see “Message Inspectors” at http://msdn.microsoft.com/en-us/library/aa717047.aspx"
+    ],
+    "p": [
+      "Implement the AfterReceiveReply of the interface IClientMessageInspector of the message inspector to validate inbound messages on the client. This allows you to validate the message after the client response has arrived but before deserialization and before returning the data to the client application.",
+      "Adapted from Microsoft patterns & practices guidance."
+    ],
+    "strong": [
+      "AfterReceiveReply",
+      "IClientMessageInspector"
+    ],
+    "pre": [
+      "void IClientMessageInspector.AfterReceiveReply(ref System.ServiceModel.Channels.Message reply, object correlationState) {     validateMessage(ref reply);                }"
+    ],
+    "br": [
+      "",
+      "",
+      ""
+    ],
+    "a": [
+      "http://msdn.microsoft.com/en-us/library/aa717047.aspx"
+    ],
+    "hr": [
+      ""
+    ]
+  },
+  "links": [
+    {
+      "href": "http://msdn.microsoft.com/en-us/library/aa717047.aspx",
+      "text": "http://msdn.microsoft.com/en-us/library/aa717047.aspx"
+    }
+  ],
+  "html": "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>Microsoft® Windows Communication Foundation (WCF) 3.5 \r\n<li>Microsoft Visual Studio® 2008</li></li>\r\n  </ul>\r\n  <h1>Description</h1>\r\n  <p>Implement the <strong>AfterReceiveReply</strong> of the interface <strong>IClientMessageInspector</strong> of the message inspector to validate inbound messages on the client. This allows you to validate the message after the client response has arrived but before deserialization and before returning the data to the client application.</p>\r\n  <pre>void IClientMessageInspector.AfterReceiveReply(ref System.ServiceModel.Channels.Message reply, object correlationState)<br /> {<br />     validateMessage(ref reply);               <br /> }</pre>\r\n  <h1>Additional Resources</h1>\r\n  <ul>\r\n    <li>For more information see “Message Inspectors” at <a href=\"http://msdn.microsoft.com/en-us/library/aa717047.aspx\">http://msdn.microsoft.com/en-us/library/aa717047.aspx</a></li>\r\n  </ul>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
+}

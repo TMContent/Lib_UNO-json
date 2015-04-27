@@ -1,0 +1,276 @@
+{
+  "id": "1db1d231-2a07-4ab1-b08d-c6070693a428",
+  "checksum": "f68836e64600616da344016f7f377946332c2663",
+  "words": {
+    "what": [
+      "h1"
+    ],
+    "to": [
+      "h1",
+      "p",
+      "h1",
+      "p",
+      "title"
+    ],
+    "check": [
+      "h1"
+    ],
+    "for": [
+      "h1"
+    ],
+    "ensure": [
+      "p",
+      "p"
+    ],
+    "that": [
+      "p",
+      "p"
+    ],
+    "your": [
+      "p",
+      "p"
+    ],
+    "application": [
+      "p",
+      "p"
+    ],
+    "restricts": [
+      "p"
+    ],
+    "authentication": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "cookies to": [
+      "p"
+    ],
+    "only https": [
+      "p"
+    ],
+    "connections": [
+      "p",
+      "p",
+      "title"
+    ],
+    "by": [
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "using": [
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "the": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "requiressl": [
+      "p",
+      "title"
+    ],
+    "attribute": [
+      "p",
+      "title"
+    ],
+    "why": [
+      "h1"
+    ],
+    "ssl": [
+      "p"
+    ],
+    "you": [
+      "p"
+    ],
+    "prevent": [
+      "p"
+    ],
+    "an": [
+      "p"
+    ],
+    "attacker": [
+      "p"
+    ],
+    "from": [
+      "p",
+      "p"
+    ],
+    "reading": [
+      "p"
+    ],
+    "a": [
+      "p"
+    ],
+    "captured": [
+      "p"
+    ],
+    "cookie and": [
+      "p"
+    ],
+    "gaining": [
+      "p"
+    ],
+    "spoofed": [
+      "p"
+    ],
+    "access": [
+      "p"
+    ],
+    "how": [
+      "h1"
+    ],
+    "fix": [
+      "h1"
+    ],
+    "set": [
+      "p",
+      "p"
+    ],
+    "secure": [
+      "p",
+      "b",
+      "p",
+      "b"
+    ],
+    "property": [
+      "p",
+      "p"
+    ],
+    "of": [
+      "p"
+    ],
+    "cookie": [
+      "p"
+    ],
+    "browsers": [
+      "p"
+    ],
+    "only": [
+      "p",
+      "title"
+    ],
+    "send": [
+      "p"
+    ],
+    "cookies": [
+      "p",
+      "title"
+    ],
+    "over": [
+      "p"
+    ],
+    "https": [
+      "p",
+      "title"
+    ],
+    "requiressl=\"true\"": [
+      "p",
+      "b",
+      "div",
+      "pre"
+    ],
+    "on": [
+      "p"
+    ],
+    "forms>": [
+      "p"
+    ],
+    "element": [
+      "p"
+    ],
+    "as": [
+      "p"
+    ],
+    "shown": [
+      "p"
+    ],
+    "here": [
+      "p"
+    ],
+    "forms": [
+      "b",
+      "div",
+      "pre"
+    ],
+    "loginurl=\"secure\\loginaspx\"": [
+      "div",
+      "pre"
+    ],
+    "..": [
+      "div",
+      "pre"
+    ],
+    "/": [
+      "div",
+      "pre"
+    ],
+    "adapted": [
+      "p"
+    ],
+    "microsoft": [
+      "p"
+    ],
+    "patterns": [
+      "p"
+    ],
+    "&": [
+      "p"
+    ],
+    "practices": [
+      "p"
+    ],
+    "guidance": [
+      "p"
+    ],
+    "are": [
+      "title"
+    ],
+    "restricted": [
+      "title"
+    ]
+  },
+  "tags": {
+    "h1": [
+      "What to Check For",
+      "Why",
+      "How to Fix"
+    ],
+    "p": [
+      "Ensure that your application restricts authentication cookies to only HTTPS connections by using the requireSSL attribute.",
+      "By using SSL, you prevent an attacker from reading a captured authentication cookie and gaining spoofed access to your application.",
+      "Set the secure property of the authentication cookie to ensure that browsers only send authentication cookies over HTTPS connections.",
+      "Set the secure property by using requireSSL=\"true\" on the <forms> element as shown here:",
+      "Adapted from Microsoft patterns & practices guidance."
+    ],
+    "b": [
+      "secure",
+      "secure",
+      "requireSSL=\"true\"",
+      "forms"
+    ],
+    "div": [
+      "<forms loginUrl=\"Secure\\Login.aspx\"        requireSSL=\"true\" ... />"
+    ],
+    "pre": [
+      "<forms loginUrl=\"Secure\\Login.aspx\"        requireSSL=\"true\" ... />"
+    ],
+    "br": [
+      ""
+    ],
+    "hr": [
+      ""
+    ]
+  },
+  "links": [],
+  "html": "<h1>What to Check For</h1>\r\n  <p>Ensure that your application restricts authentication cookies&nbsp;to only&nbsp;HTTPS connections by using the requireSSL attribute.</p>\r\n  <h1>Why</h1>\r\n  <p>By using SSL, you prevent an attacker from reading a captured authentication cookie&nbsp;and gaining spoofed access to your application.</p>\r\n  <h1>How to Fix</h1>\r\n  <p>Set the <b>secure</b> property of the authentication cookie to ensure that browsers only send authentication cookies over HTTPS connections. </p>\r\n  <p>Set the <b>secure</b> property by using <b>requireSSL=\"true\"</b> on the &lt;<b>forms</b>&gt; element as shown here:</p>\r\n  <div>\r\n    <pre>&lt;forms loginUrl=\"Secure\\Login.aspx\"<br />        requireSSL=\"true\" ... /&gt;</pre>\r\n  </div>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance. </p>"
+}

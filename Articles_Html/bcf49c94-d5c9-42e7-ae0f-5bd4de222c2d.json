@@ -1,0 +1,213 @@
+{
+  "id": "bcf49c94-d5c9-42e7-ae0f-5bd4de222c2d",
+  "checksum": "5db9a3927673c708000e265b0022b7a6dc143c15",
+  "words": {
+    "applies": [
+      "h2"
+    ],
+    "to": [
+      "h2",
+      "h2",
+      "p",
+      "p",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "li",
+      "strong"
+    ],
+    "web": [
+      "ul",
+      "li"
+    ],
+    "applications": [
+      "ul",
+      "li"
+    ],
+    "server-side": [
+      "ul",
+      "li"
+    ],
+    "what": [
+      "h2"
+    ],
+    "do": [
+      "h2"
+    ],
+    "invalidate": [
+      "p",
+      "p",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "strong"
+    ],
+    "sessions": [
+      "p",
+      "p",
+      "p",
+      "ol",
+      "li",
+      "strong",
+      "title"
+    ],
+    "when": [
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "users": [
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "log": [
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "out": [
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "why": [
+      "h2"
+    ],
+    "invalidating": [
+      "p"
+    ],
+    "makes": [
+      "p"
+    ],
+    "it": [
+      "p"
+    ],
+    "harder": [
+      "p"
+    ],
+    "hijack": [
+      "p"
+    ],
+    "them": [
+      "p"
+    ],
+    "how": [
+      "h2"
+    ],
+    "identify": [
+      "ol",
+      "li",
+      "strong"
+    ],
+    "logout": [
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "strong",
+      "li"
+    ],
+    "functionality": [
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "strong"
+    ],
+    "find": [
+      "ol",
+      "li"
+    ],
+    "code": [
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "li",
+      "strong"
+    ],
+    "that": [
+      "ol",
+      "li"
+    ],
+    "is": [
+      "ol",
+      "li"
+    ],
+    "responsible": [
+      "ol",
+      "li"
+    ],
+    "for": [
+      "ol",
+      "li"
+    ],
+    "the": [
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "li"
+    ],
+    "add": [
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "strong"
+    ],
+    "function": [
+      "ol",
+      "li"
+    ],
+    "session": [
+      "ol",
+      "li"
+    ],
+    "destroy": [
+      "title"
+    ]
+  },
+  "tags": {
+    "h2": [
+      "Applies To",
+      "What to Do",
+      "Why",
+      "How"
+    ],
+    "ul": [
+      "Web Applications\n Server-side"
+    ],
+    "li": [
+      "Web Applications",
+      "Server-side",
+      "Identify logout functionality. Find code that is responsible for the logout functionality.",
+      "Add code to invalidate sessions. Add code to the logout function to invalidate the session."
+    ],
+    "p": [
+      "Invalidate sessions when users log out.",
+      "Invalidating sessions when users log out makes it harder to hijack them.",
+      "To invalidate sessions when users log out:"
+    ],
+    "ol": [
+      "Identify logout functionality. Find code that is responsible for the logout functionality.\n Add code to invalidate sessions. Add code to the logout function to invalidate the session."
+    ],
+    "strong": [
+      "Identify logout functionality.",
+      "Add code to invalidate sessions."
+    ]
+  },
+  "links": [],
+  "html": "<h2>Applies To</h2><ul><li> Web Applications</li>\n<li> Server-side</li>\n</ul><h2>What to Do</h2><p>Invalidate sessions when users log out.\n</p><h2>Why</h2><p>Invalidating sessions when users log out makes it harder to hijack them.\n</p><h2>How</h2><p>To invalidate sessions when users log out:\n</p><ol>\n<li> <strong>Identify logout functionality.</strong> Find code that is responsible for the logout functionality.</li>\n<li> <strong>Add code to invalidate sessions.</strong> Add code to the logout function to invalidate the session.</li>\n</ol>\n"
+}

@@ -1,0 +1,456 @@
+{
+  "id": "a1fdf065-6bfb-4828-a3ba-9440eb63a00f",
+  "checksum": "649dfd2f392c21b580d3c9f95b66a4b8120c2474",
+  "words": {
+    "description": [
+      "h1"
+    ],
+    "use": [
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "structured": [
+      "p",
+      "title"
+    ],
+    "exception-handling": [
+      "p"
+    ],
+    "to": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "avoid": [
+      "p"
+    ],
+    "unhandled": [
+      "p"
+    ],
+    "exceptions": [
+      "p"
+    ],
+    "finally": [
+      "p",
+      "p",
+      "b",
+      "b"
+    ],
+    "blocks": [
+      "p"
+    ],
+    "ensure": [
+      "p",
+      "p",
+      "pre"
+    ],
+    "that": [
+      "p",
+      "p",
+      "pre",
+      "pre"
+    ],
+    "resources": [
+      "p"
+    ],
+    "are": [
+      "p",
+      "p",
+      "p"
+    ],
+    "released": [
+      "p"
+    ],
+    "files": [
+      "p"
+    ],
+    "closed": [
+      "p",
+      "p"
+    ],
+    "and": [
+      "p"
+    ],
+    "objects": [
+      "p"
+    ],
+    "disposed": [
+      "p"
+    ],
+    "of—regardless": [
+      "p"
+    ],
+    "of": [
+      "p",
+      "p",
+      "p"
+    ],
+    "whether": [
+      "p"
+    ],
+    "an": [
+      "p",
+      "pre"
+    ],
+    "exception": [
+      "p",
+      "pre",
+      "p",
+      "pre",
+      "title"
+    ],
+    "occurs": [
+      "p"
+    ],
+    "the": [
+      "p",
+      "pre",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "following": [
+      "p",
+      "p"
+    ],
+    "code": [
+      "p",
+      "p"
+    ],
+    "example": [
+      "p",
+      "p"
+    ],
+    "shows": [
+      "p"
+    ],
+    "a": [
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "block": [
+      "p",
+      "p"
+    ],
+    "database": [
+      "p"
+    ],
+    "connection": [
+      "p",
+      "pre"
+    ],
+    "is": [
+      "p",
+      "pre"
+    ],
+    "promptly": [
+      "p"
+    ],
+    "using": [
+      "pre"
+    ],
+    "systemdata.sqlclient;using": [
+      "pre"
+    ],
+    "systemsecurity;sqlconnection": [
+      "pre"
+    ],
+    "conn": [
+      "pre"
+    ],
+    "=": [
+      "pre",
+      "pre"
+    ],
+    "new": [
+      "pre"
+    ],
+    "sqlconnection\"...\");try{": [
+      "pre"
+    ],
+    "connopen();": [
+      "pre"
+    ],
+    "//": [
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre"
+    ],
+    "do": [
+      "pre"
+    ],
+    "some": [
+      "pre"
+    ],
+    "operation": [
+      "pre"
+    ],
+    "might": [
+      "pre"
+    ],
+    "cause": [
+      "pre"
+    ],
+    "calling": [
+      "pre"
+    ],
+    "close": [
+      "pre"
+    ],
+    "as": [
+      "pre",
+      "pre",
+      "p"
+    ],
+    "early": [
+      "pre"
+    ],
+    "possible": [
+      "pre"
+    ],
+    "connclose();": [
+      "pre",
+      "pre"
+    ],
+    "..": [
+      "pre"
+    ],
+    "other": [
+      "pre",
+      "pre"
+    ],
+    "potentially": [
+      "pre"
+    ],
+    "long": [
+      "pre"
+    ],
+    "operations}finally{": [
+      "pre"
+    ],
+    "if": [
+      "pre"
+    ],
+    "conn.state==connectionstate.open)": [
+      "pre"
+    ],
+    "closed\t}": [
+      "pre"
+    ],
+    "help": [
+      "p"
+    ],
+    "diagnose": [
+      "p",
+      "p"
+    ],
+    "security": [
+      "p"
+    ],
+    "issues": [
+      "p"
+    ],
+    "consider": [
+      "p",
+      "p"
+    ],
+    "adding": [
+      "p"
+    ],
+    "catch": [
+      "p",
+      "b"
+    ],
+    "for": [
+      "p"
+    ],
+    "securityexception": [
+      "p",
+      "p",
+      "b",
+      "b"
+    ],
+    "class": [
+      "p"
+    ],
+    "has": [
+      "p"
+    ],
+    "been": [
+      "p"
+    ],
+    "enhanced": [
+      "p"
+    ],
+    "provide": [
+      "p"
+    ],
+    "more": [
+      "p"
+    ],
+    "information": [
+      "p",
+      "pre"
+    ],
+    "in": [
+      "p",
+      "p"
+    ],
+    "case": [
+      "p"
+    ],
+    "failed": [
+      "p"
+    ],
+    "permission": [
+      "p"
+    ],
+    "demand": [
+      "p"
+    ],
+    "additionally": [
+      "p"
+    ],
+    "role-based": [
+      "p"
+    ],
+    "access": [
+      "p"
+    ],
+    "or": [
+      "p"
+    ],
+    "identity": [
+      "p",
+      "p",
+      "pre"
+    ],
+    "problems": [
+      "p"
+    ],
+    "logging": [
+      "p"
+    ],
+    "at": [
+      "p"
+    ],
+    "time": [
+      "p"
+    ],
+    "shown": [
+      "p"
+    ],
+    "catchexception": [
+      "pre"
+    ],
+    "ex{...": [
+      "pre"
+    ],
+    "log": [
+      "pre"
+    ],
+    "current": [
+      "pre"
+    ],
+    "together": [
+      "pre"
+    ],
+    "with": [
+      "pre"
+    ],
+    "windowsidentity": [
+      "pre"
+    ],
+    "wid": [
+      "pre"
+    ],
+    "windowsidentitygetcurrent();...}": [
+      "pre"
+    ],
+    "adapted": [
+      "p"
+    ],
+    "from": [
+      "p"
+    ],
+    "microsoft": [
+      "p"
+    ],
+    "patterns": [
+      "p"
+    ],
+    "&": [
+      "p"
+    ],
+    "practices": [
+      "p"
+    ],
+    "guidance": [
+      "p"
+    ],
+    "how": [
+      "title"
+    ],
+    "handling": [
+      "title"
+    ]
+  },
+  "tags": {
+    "h1": [
+      "Description"
+    ],
+    "p": [
+      "Use structured exception-handling to avoid unhandled exceptions. Use finally blocks to ensure that resources are released, files are closed, and objects are disposed of—regardless of whether an exception occurs. The following code example shows to use a finally block to ensure that a database connection is closed promptly.",
+      "To help diagnose security issues, consider adding a catch block for the SecurityException class. SecurityException has been enhanced to provide more information in case of a failed permission demand. Additionally, to diagnose role-based access or identity problems, consider logging the identity at the time of the exception, as shown in the following code example.",
+      "Adapted from Microsoft patterns & practices guidance."
+    ],
+    "b": [
+      "finally",
+      "finally",
+      "catch",
+      "SecurityException",
+      "SecurityException"
+    ],
+    "pre": [
+      "using System.Data.SqlClient;using System.Security;SqlConnection conn = new SqlConnection(\"...\");try{    conn.Open();    // Do some operation that might cause an exception.    // Calling Close as early as possible.    conn.Close();    // ... other potentially long operations.}finally{    if (conn.State==ConnectionState.Open)        conn.Close();  \t// ensure that the connection is closed.\t}",
+      "catch(Exception ex){...    // Log current identity together with other exception information.    WindowsIdentity wid = WindowsIdentity.GetCurrent();...}"
+    ],
+    "br": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "hr": [
+      ""
+    ]
+  },
+  "links": [],
+  "html": "<h1>Description</h1>\r\n  <p>Use structured exception-handling to avoid unhandled exceptions. Use <b>finally</b> blocks to ensure that resources are released, files are closed, and objects are disposed of&#8212;regardless of whether an exception occurs. The following code example shows to use a <b>finally</b> block to ensure that a database connection is closed promptly. </p>\r\n  <pre>using System.Data.SqlClient;<br />using System.Security;<br />SqlConnection conn = new SqlConnection(\"...\");<br />try&#123;<br />    conn.Open();<br />    // Do some operation that might cause an exception.<br />    // Calling Close as early as possible.<br />    conn.Close();<br />    // ... other potentially long operations.<br />&#125;<br />finally&#123;<br />    if (conn.State==ConnectionState.Open)<br />        conn.Close();  <br />&#9;// ensure that the connection is closed.<br />&#9;&#125;  </pre>\r\n  <p>To help diagnose security issues, consider adding a <b>catch</b> block for the <b>SecurityException</b> class. <b>SecurityException</b> has been enhanced to provide more information in case of a failed permission demand. Additionally, to diagnose role-based access or identity problems, consider logging the identity at the time of the exception, as shown in the following code example. </p>\r\n  <pre>catch(Exception ex)&#123;...<br />    // Log current identity together with other exception information.<br />    WindowsIdentity wid = WindowsIdentity.GetCurrent();...<br />&#125;&nbsp;</pre>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
+}
