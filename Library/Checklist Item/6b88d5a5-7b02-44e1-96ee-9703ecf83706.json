@@ -1,0 +1,68 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "-1445196893",
+      "Content_Hash": "-1525372766"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "6b88d5a5-7b02-44e1-96ee-9703ecf83706"
+        ],
+        "Id_History": [
+          "6b88d5a5-7b02-44e1-96ee-9703ecf83706,284062df-3eba-4490-9f89-f89e2df4bf6a,"
+        ],
+        "Library_Id": [
+          "51eb81c3-1d23-4146-ba83-8a6bb9233c11"
+        ],
+        "Title": [
+          "Temporary Files Are Created Securely on UN*X"
+        ],
+        "Category": [
+          "File I/O"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "C++"
+        ],
+        "Type": [
+          "Checklist Item"
+        ],
+        "DirectLink": [
+          "Temporary Files Are Created Securely on UN*X"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ],
+        "Source": [
+          "SI"
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "html"
+        },
+        "Data": [
+          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>C&#43;&#43;<li>UN&#42;X</li></li>\r\n  </ul>\r\n  <h1>What to Check For</h1>\r\n  <p>Verify that temporary files are created securely on UN&#42;X.</p>\r\n  <h1>Why</h1>\r\n  <p>Create temporary files securely to prevent time-of-check/time-of-use (TOCTOU) issues when checking permissions on files and directories, allowing access to secured objects.</p>\r\n  <h1>How to Check</h1>\r\n  <p>Use the following steps to verify that temporary files are created securely on UN&#42;X:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Review code.</strong> Search code for all occasions when temporary files are created.</p>\r\n      <li>\r\n        <p>\r\n          <strong>Check name generation. </strong>Verify that either /dev/random or mkstemp() is used to generate random names for temporary files.</p>\r\n        <li>\r\n          <p>\r\n            <strong>Check access controls.</strong> Verify that the directory where temporary files are created is secured with filesystem permissions.</p>\r\n          <li>\r\n            <p>\r\n              <strong>Verify that temporary files are deleted.</strong> Review code to make sure that temporary files are deleted immediately after being used.</p>\r\n          </li>\r\n        </li>\r\n      </li>\r\n    </li>\r\n  </ol>\r\n  <h1>How to Fix</h1>\r\n  <p>Perform the following actions to create temporary files securely on UN&#42;X:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Use random names.</strong> Use a secure random generator (such as /dev/random) to generate temporary names.</p>\r\n      <li>\r\n        <p>\r\n          <strong>Protect temporary files.</strong> Create temporary files in secure directories.</p>\r\n        <li>\r\n          <p>\r\n            <strong>Use mkstemp().</strong> Use mkstemp() to generate a temporary file name and create the file at the same time. This practice atomically checks whether the file exists and then creates it.</p>\r\n          <li>\r\n            <p>\r\n              <strong>Clean up.</strong> Delete temporary files immediately after use. If temporary files are used to store sensitive data, it is recommended to encrypt this data when storing it in temporary files and to overwrite it with random data before deleting the files.</p>\r\n          </li>\r\n        </li>\r\n      </li>\r\n    </li>\r\n  </ol>\r\n  <h1>Related Items</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/f8bcba2a-45a7-4dfb-9750-293c9784332d\">Create Temporary Files Securely on UN&#42;X</a>\r\n    </li>\r\n  </ul>"
+        ]
+      }
+    ]
+  }
+}

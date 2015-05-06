@@ -1,0 +1,59 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "0",
+      "Content_Hash": "0"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "17904435-b0f5-4a0d-927a-f6c3e8a9e03a"
+        ],
+        "Id_History": [
+          "17904435-b0f5-4a0d-927a-f6c3e8a9e03a,8ea18e44-aed5-4fa6-9aa0-5cb3ca415340,"
+        ],
+        "Library_Id": [
+          "f215ceee-9a08-41d9-b2c1-bbcc058a8f32"
+        ],
+        "Title": [
+          "Validate Java Archive and Executable Files Before Use"
+        ],
+        "Category": [
+          "Code Integrity"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "Android"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          "Validate Java Archive and Executable Files Before Use"
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "false",
+          "DataType": "wikitext"
+        },
+        "Data": [
+          "==Applies To==\r\n\r\n* Google Android applications that load Java archive (JAR) or executable files. This is especially applicable to organizations that centrally deploy executable programs or use third-party JAR files.\r\n\r\n==What to Do==\r\n\r\nValidate digital certificates and digest entries before executing a JAR file or executable. Also, get in the practice of signing your own JAR files.\r\n\r\n==Why==\r\n\r\nMany large organizations deploy JAR and executable files from a central location for consistency across the organization. Malicious users can replace the contents of a JAR file with malicious code. If application owners blindly execute JAR files without confirming the author and determining if they have been altered, their programs can execute unintended and dangerous commands that a malicious hacker has planted.\r\n\r\n==When==\r\n\r\nPrior to running or importing any JAR or executable file into an application, confirm that the JAR is signed by a trusted source and that class files have not changed.\r\n\r\n==How==\r\n\r\nJava provides a mechanism to both generate keys and sign JAR files:\r\n\r\n# **Use the Keytool program to generate a public-private key pair.** The key pair is stored in a keystore file, specified via the following command syntax: //Keytool –genkey –keystore [key name] –alias [alias] –storepass [password] –keypass [password]// You will be prompted for organizational information such as name, department, organization, locality, state or province, and country. \r\n# **Sign the JAR file with the Jarsigner tool.** The syntax is: //Jarsigner [jar file name] [alias (jim)] –digestalg SHA1 –keystore [private key (jarkey)]// Note that SHA-256 is the default for //Jarsigner//, but Android requires SHA-1. The JAR file will be updated with the developer’s public key and certificate. Additional files are added to the JAR manifest. In the META-INF directory, digest values or hashes are placed in a file with a .sf extension as well as the MANIFEST.MF file. There will be a signature for each class file. The MANIFEST.MF signatures are for the classes themselves, whereas the .sf signatures are computed from the entries in MANIFEST.MF. To summarize the digital signing process: //Keytool// creates the private–public key pair, and //Jarsigner// creates the digests for each class file in the JAR.\r\n# **Verify signatures.** The browser often performs the verification of JAR files, but you can confirm signatures yourself in one of two ways. Use the //Jarsigner// tool with the //–verify// flag, such as: //Jarsigner –verify [Jar file]// This line creates a security exception if signatures do not match. In addition, you can use the //java.util.jar.JarFile// class to read JAR files and look for signatures.\r\n\r\n==Problem Example==\r\n\r\nDevelopers at ACME, Inc., centrally deploy JAR files for Android developers to import into their Eclipse projects. In some cases, the JAR files are also deployed live for user applications. Because the JAR files are only distributed internally, there is no signing process. Applications implicitly trust whatever comes from the distribution server.\r\n\r\nLast spring, it came to the engineering manager’s attention that developers were communicating source code over personal email and using unsecured storage space on a cloud hosting platform to run an instance of SVN. Sensing that this practice could be a problem, the manager decides to conduct a source code review.\r\n\r\nWhat he finds is that some user applications are running a JAR file with a different compile date that what is in the internal SVN. He asks the security team to provide log files, and he finds that there is a strange communication flowing from many application users to known botnet hosts. Recognizing that he may have a hacked application, the manager decides to make some policy and process changes.\r\n\r\n==Solution Example==\r\n\r\nACME updates their policies on the storage and communication of source code. In addition, ACME implements a signing and verification process for all JAR files. It requires that, at run time, all JAR files are tested for valid signatures. The development team creates a class to automate this process:\r\n\r\n{{{\r\npublic class JarVerifier {\r\npublic void load(String _jar) {\r\n  List<JarEntry> table = new ArrayList<JarEntry>();\t\r\n  try {\r\n    JarFile jar = new JarFile(new File(ROOT_DIR + \"/\" + _jar));\r\n    InputStream is = jar.getInputStream(jar.getEntry(\"META-INF/MANIFEST.MF\"));\r\n    Manifest man = new Manifest(is);\t\r\n    is.close();\r\n    Set<Map.Entry<String, Attributes>> manifestEntries =man.getEntries().entrySet();\r\n    For (Map.Entry<String, Attributes> entry: manifestEntries) {\t\t\r\n      for (Object key: entry.getValue().keySet()) {\r\n        String digest = entry.getValue().getValue(key.toString());\r\n        if (digest.length()<1) {\r\n          throw new SecurityException (\"Jar not fully signed\");\r\n        }\r\n        table.add(new JarEntry(key, entry.getValue().getValue(key.toString())));\r\n      }\r\n    }\r\n\t\t\t\r\n    if (table.size()==0) {\r\n      throw new SecurityException (\"Jar not signed!\");\r\n    }}}\r\n\r\n...\r\n\t\r\nclass JarEntry {\r\n  private Object key;\r\n  private String value;\r\n\t\r\n  public JarEntry (Object _key, String _value) {\r\n    key = _key;\r\n    value = _value;\r\n  }\r\n\t  \r\n  public Object getKey() {\r\n    return key;\r\n  }\r\n}\r\n}}}\r\n\r\nThis class loads a JAR file into an input stream and inserts each key–value pair from the manifest into a list. After completing the file, the method checks to see if no key values were found or if they did not match the number expected. Unless each entry is found to have a signature, a //SecurityException// will be thrown. With signatures present in the JAR file, developers can match the actual digests to the expected values.\r\n\r\n"
+        ]
+      }
+    ]
+  }
+}

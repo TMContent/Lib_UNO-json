@@ -1,0 +1,59 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "0",
+      "Content_Hash": "0"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "00000000-0000-0000-0000-0000007e38aa"
+        ],
+        "Id_History": [
+          "00000000-0000-0000-0000-0000007e38aa,4eeaf2ff-947a-42ea-bb32-e58e27a0ac46,"
+        ],
+        "Library_Id": [
+          "f215ceee-9a08-41d9-b2c1-bbcc058a8f32"
+        ],
+        "Title": [
+          "Parameterized Methods Are Used for Database Access"
+        ],
+        "Category": [
+          "Database Security"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "Android"
+        ],
+        "Type": [
+          "Checklist Item"
+        ],
+        "DirectLink": [
+          "Parameterized Methods Are Used for Database Access"
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "false",
+          "DataType": "WikiText"
+        },
+        "Data": [
+          "==Applies To==\r\n\r\n* Android applications that use SQL databases.\r\n\r\n==What to Check For==\r\n\r\nVerify that parameterized methods are used for database access.\r\n\r\n==Why==\r\n\r\nUsing parameterized query methods for database access prevents SQL injection vulnerabilities.\r\n\r\n==How to Check==\r\n\r\nTo verify that parameterized methods are used for database access:\r\n\r\n# **Identify all code that executes SQL queries.** Review application code to find all queries that are executed by the application and the code that executes them.\r\n# **Verify that parameterized APIs are used to execute SQL queries.** Make sure that data is passed to queries as parameters. Make sure that data, especially untrusted data, is never concatenated with the query strings and then executed.\r\n\r\n==How to Fix==\r\n\r\nThe Android API includes parameterized functions for querying SQLite databases. Avoid using the rawQuery method, because it may be used in a manner that introduces SQL injection vulnerabilities, by including untrusted input in the SQL query string.\r\n\r\nUse the following method for SELECT statements:\r\n\r\n*//query//\r\n\r\nUse the following methods for INSERT statements:\r\n\r\n*//insert//\r\n*//insertOrThrow//\r\n*//insertWithOnConflict//\r\n\r\nUse the following methods for UPDATE statements:\r\n\r\n*//update//\r\n*//updateWithOnConflict//\r\n\r\nUse the following method for DELETE statements:\r\n\r\n*//delete//\r\n\r\nIf your application uses some other API, please make sure that it uses parameterized methods for database access.\r\n\r\n==Related Items==\r\n\r\n* [[00000000-0000-0000-0000-00000032fa80|Use Parameterized Methods for Database Access]]\r\n\r\n==Additional Resources==\r\n\r\n*For more information about the Android SQLite API, please see http://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html\r\n"
+        ]
+      }
+    ]
+  }
+}

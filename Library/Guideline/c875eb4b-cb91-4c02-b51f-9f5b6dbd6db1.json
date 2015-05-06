@@ -1,0 +1,68 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "-1180433859",
+      "Content_Hash": "181711446"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "c875eb4b-cb91-4c02-b51f-9f5b6dbd6db1"
+        ],
+        "Id_History": [
+          "c875eb4b-cb91-4c02-b51f-9f5b6dbd6db1,8f5a2726-1c89-4f6b-afea-b2a360b8a956,"
+        ],
+        "Library_Id": [
+          "92718d53-36b2-47bc-b6f5-e60994385f46"
+        ],
+        "Title": [
+          "Know Your Binding Options"
+        ],
+        "Category": [
+          "Design Considerations"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "WCF 3.5"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          "Know Your Binding Options"
+        ],
+        "Tag": [
+          "WCF 3.5"
+        ],
+        "Security_Demand": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          "J.D. Meier, Jason Taylor, Prashant Bansode, Carlos Farre, Madhu Sundararajan, Rob Boucher, Steve Gregersen"
+        ],
+        "Status": [
+          ""
+        ],
+        "Source": [
+          "SI"
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>Microsoft® Windows Communication Foundation (WCF) 3.5 \r\n<li>Microsoft Visual Studio® 2008</li></li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Consider what binding options you have and which makes sense for your scenario.</p>\r\n  <h1>Why</h1>\r\n  <p>Choosing an appropriate binding is important from security perspective as it drives your security choices like transfer security which determines your confidentiality, integrity and authentication of the messages.</p>\r\n  <h1>When</h1>\r\n  <p>The key issues to consider at design time are what bindings you will choose for your particular scenario. Additionally you need to consider what authentication and authorizations options you have and which makes sense for your scenario.</p>\r\n  <h1>How</h1>\r\n  <p>Know your binding options and choose the most appropriate for your scenario. Knowing your binding options enables you to design more reliable and secure WCF application. </p>\r\n  <p>The following table summarizes common bindings:</p>\r\n  <p>\r\n    <br />\r\n    <table>\r\n      <tbody>\r\n        <tr>\r\n          <td>\r\n            <p>\r\n              <strong>Binding</strong>&nbsp;</p>\r\n          </td>\r\n          <td>\r\n            <p>\r\n              <strong>Description</strong>\r\n            </p>\r\n          </td>\r\n        </tr>\r\n        <tr>\r\n          <td>basicHttpBinding&nbsp;</td>\r\n          <td>It represents a bindings that configures and expose endpoints that are able to communicate with ASMX-based Web services and clients and other services that conform to the WS-I Basic Profile 1.1. By defaults it has security disabled.</td>\r\n        </tr>\r\n        <tr>\r\n          <td>wsHttpBinding&nbsp;</td>\r\n          <td>Defines a secure, reliable, interoperable binding suitable for non-duplex service contracts. The binding implements the following specifications: WS-Reliable Messaging for reliability, and WS-Security for message security and authentication. The transport is HTTP, and message encoding is Text/XML encoding. By default it provides message security with windows authentication.</td>\r\n        </tr>\r\n        <tr>\r\n          <td>ws2007HttpBinding&nbsp;</td>\r\n          <td>Defines a secure, reliable, interoperable binding suitable for non-duplex service contracts. The binding implements the following specifications: WS-Reliable Messaging for reliability, and WS-Security for message security and authentication. The transport is HTTP, and message encoding is Text/XML encoding. The ws2007HttpBinding provides binding similar to wsHttpBinding but uses the standard for OASIS (Organization for the Advancement of Structured Information Standards). By default it provides message security with windows authentication.</td>\r\n        </tr>\r\n        <tr>\r\n          <td>netTcpBinding&nbsp;</td>\r\n          <td>Specifies a secure, reliable, optimized binding suitable for cross-machine communication. By default, it generates a runtime communication stack with transport security and windows authentication as default security settings. It uses TCP protocol for message delivery, and binary message encoding.</td>\r\n        </tr>\r\n        <tr>\r\n          <td>netNamedPipeBinding&nbsp;</td>\r\n          <td>Defines a binding that is secure, reliable, optimized for on-machine cross process communication. By default, it generates a runtime communication stack with WS-ReliableMessaging&nbsp; for reliability, transport security for transfer security, named pipes for message delivery, and binary message encoding. It is not secured by default.<br />netMsmqBinding&nbsp;Defines a queued binding suitable for cross-machine communication.</td>\r\n        </tr>\r\n        <tr>\r\n          <td>wsFederationHttpBinding&nbsp;</td>\r\n          <td>Defines a binding that supports federated security. It helps implementing Federation which is the ability to flow and share identities across multiple enterprises or trust domains for authentication and authorization. WCF implements federation over message and mixed mode security but not over transport security. Services configured with this binding must use the HTTP protocol as transport</td>\r\n        </tr>\r\n        <tr>\r\n          <td>ws2007FederationHttpBinding&nbsp;</td>\r\n          <td>ws2007FederationHttpBinding. Defines a binding that derives from wsFederationHttpBinding and supports federated security. It helps implementing Federation which is the ability to flow and share identities across multiple enterprises or trust domains for authentication and authorization. WCF implements federation over message and mixed mode security but not over transport security. Services configured with this binding must use the HTTP protocol as transport. The ws2007FederationHttpBinding provides&nbsp; binding similar to ws2007FederationHttpBinding but uses the standard for OASIS (Organization for the Advancement of Structured Information Standards)</td>\r\n        </tr>\r\n        <tr>\r\n          <td>wsDualHttpBinding&nbsp;</td>\r\n          <td>Defines a secure, reliable and interoperable binding that is suitable for duplex service contracts or communication through SOAP intermediaries.</td>\r\n        </tr>\r\n        <tr>\r\n          <td>customBinding&nbsp;</td>\r\n          <td>Allows you to create a custom binding with full control over the message stack.</td>\r\n        </tr>\r\n        <tr>\r\n          <td>\r\n          </td>\r\n          <td>\r\n          </td>\r\n        </tr>\r\n      </tbody>\r\n    </table>\r\n  </p>\r\n  <h1>Additional Resources</h1>\r\n  <ul>\r\n    <li>For more information on bindings, see “MSDN Windows Communication Foundation Bindings” at <a href=\"http://msdn.microsoft.com/en-us/library/ms733027.aspx\">http://msdn.microsoft.com/en-us/library/ms733027.aspx</a></li>\r\n  </ul>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
+        ]
+      }
+    ]
+  }
+}

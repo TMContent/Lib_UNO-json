@@ -1,0 +1,59 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "0",
+      "Content_Hash": "0"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "193ac059-7048-440f-91d9-3312ae698c07"
+        ],
+        "Id_History": [
+          "193ac059-7048-440f-91d9-3312ae698c07,9e733aed-dbf1-4150-b3e1-58cef4fcebef,"
+        ],
+        "Library_Id": [
+          "f215ceee-9a08-41d9-b2c1-bbcc058a8f32"
+        ],
+        "Title": [
+          "Use a Messenger Instance to Communicate with Remote Processes "
+        ],
+        "Category": [
+          "Inter-Process Communication"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "Android"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          "Use a Messenger Instance to Communicate with Remote Processes "
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "false",
+          "DataType": "wikitext"
+        },
+        "Data": [
+          "==Applies To==\r\n\r\n* Android applications that communicate with external services.\r\n\r\n==What to Do==\r\n\r\nThe //Messenger// service is used for inter-process communications (IPC) between the processes of different applications. Use a //Messenger// when you want to make services securely accessible to external applications.\r\n\r\n==Why==\r\n\r\nInter-process communications can cause data leakage if not done properly. The //Messenger// service provides developers with a secure means of communications between processes.\r\n\r\n==When==\r\n\r\nUse the //Messenger// class when inter-process communications are required between different applications.\r\n\r\n==How==\r\n\r\nTo use Messenger for IPC:\r\n\r\n# **Create an instance of an IncomingHandler class that extends the Handler.** In the service that will be accessed from other application processes, create an instance of an //IncomingHandler// class that extends the //Handler//. This class is used to manage inbound binding requests. Create two instances of //Messenger//: one for the service messenger that has the //IncomingHandler// instance used in the constructor and another that is the client //Messenger// and is left null for now.\r\n# **Override the onBind() method and return the instance of the service messenger.** (You can also override the //onUnbind()// method and return //False//). Define how the interaction with external applications will work in the //handleMessage()// method of the //IncomingHandler// instance. This is the logic of the interaction. Here, you will also define the client messenger for sending responses with the //incoming.replyTo// field. To retrieve inbound messages, use the //incoming.getData()// method. For quicker performance, use the //incoming.arg1// and //arg2// fields. //Incoming.what// is useful for a switch statement in the //handleMessage// method. Activities can use it to identify the type of request being sent. To send messages back to the application, create a //Message// object and use the client messenger reference set above to send the activity data.\r\n# **Create an IncomingHandler for incoming messages and a normal handler for outgoing messages.** In the activity accessing the service, create an //IncomingHandler// for incoming messages and a normal handler for outgoing messages. Create two //Messenger// instances—one for the activity, one for the service.\r\n# **Create a class that implements ServiceConnection and will be used to set the reference to the service Messenger.** Define a method that will call the //bindService()// method to connect to the service. (If it returns //True//, the activity can begin communicating with the service through the //Message// object. The //IncomingHandler handleMessage()// method contains the logic on how to interpret the service’s response).\r\n\r\n==Problem Example==\r\n\r\nAs the MyApp developer, you want any application to be able to access a news-feed service. As an experienced client–server Java developer, you opt to open a socket that will accept connections from other applications. You create a method that will open port 1991 (port 1024 and below are unavailable on Linux without superuser rights) and process inbound TCP communications. This is a standard socket program.\r\n\r\n{{{\r\nServerSocket tcpServerSocket = null;\r\nSocket tcpClientSocket = null;\r\n\r\nwhile (true) {\r\n  \ttcpServerSocket = new ServerSocket(port);\t\r\n  \ttcpClientSocket = tcpServerSocket.accept();\r\n  \tnew ComThread(tcpClientSocket).start();\r\n}\r\n}}}\r\n\r\nYou are now prepared to create a serialized object exchange with client applications. Although this will work in practice, you have opened an unnecessary network access point, potentially compromised data confidentiality, and have made things much more difficult for client applications.\r\n\r\n==Solution Example==\r\n\r\nInstead, you could set up an inter-process communication channel for client applications. \r\n\r\nIn the news-feed service, start by defining the //IncomingHandler// and //Messenger// instances:\r\n\r\n{{{\r\nIncomingHandler iHandler = new IncomingHandler();\r\n\r\nfinal Messenger messengerToService = new Messenger (iHandler);\r\nprivate static Messenger messengerToClient = null;\r\n}}}\r\n\r\nThe service will return the service reference for the activity through //onBind()//:\r\n\r\n{{{\r\npublic IBinder onBind (Intent intent) {\r\n\treturn messengerToService.getBinder();\r\n}\r\n}}}\r\n\r\nThe //IncomingHandler’s handleMessage()// method processes the exchange between activities. The incoming object is accessed through the //getData()// method and contains information from the activity:\r\n\r\n{{{\r\nclass IncomingHandler extends Handler {\r\n@Override\r\n\tpublic void handleMessage(Message incoming) {\r\n\tmessengerToClient = incoming.replyTo;\r\n\tBundle bun = incoming.getData();\r\n\t}\r\n}\r\n}}}\r\n\r\nSending messages back to the activity is easily accomplished through a reference to the //Message// class and by using a bundle instance to set data within the reply:\r\n\r\n{{{\r\n\tBundle reply = new Bundle();\r\n\treply.putInt(1, “Response”);\r\n\tMessage replyMsg = Message.obtain();\r\n\treplyMsg.setData(reply);\r\n}}}\r\n\r\nThe service is now ready for client applications. As long as they bind correctly and understand the underlying application programming interface within the MyApp //handleMessage// method, secure communications can proceed between the activity and service.\r\n"
+        ]
+      }
+    ]
+  }
+}

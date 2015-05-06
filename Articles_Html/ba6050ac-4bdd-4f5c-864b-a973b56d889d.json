@@ -1,0 +1,293 @@
+{
+  "id": "ba6050ac-4bdd-4f5c-864b-a973b56d889d",
+  "checksum": "c6fc42939cc8dd2879093a51530e2a80e9dc978d",
+  "words": {
+    "description": [
+      "h1"
+    ],
+    "make": [
+      "p",
+      "p"
+    ],
+    "sure": [
+      "p",
+      "p"
+    ],
+    "that": [
+      "p",
+      "p",
+      "p"
+    ],
+    "your": [
+      "p",
+      "p"
+    ],
+    "applications": [
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "enforce": [
+      "p"
+    ],
+    "the": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "use": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "of": [
+      "p"
+    ],
+    "strong": [
+      "p"
+    ],
+    "passwords": [
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "if": [
+      "p",
+      "p",
+      "p"
+    ],
+    "windows": [
+      "p",
+      "p",
+      "p"
+    ],
+    "authentication": [
+      "p",
+      "p"
+    ],
+    "you": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "benefit": [
+      "p"
+    ],
+    "from": [
+      "p",
+      "p"
+    ],
+    "being": [
+      "p"
+    ],
+    "able": [
+      "p"
+    ],
+    "to": [
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "or": [
+      "p",
+      "p"
+    ],
+    "active": [
+      "p"
+    ],
+    "directory": [
+      "p"
+    ],
+    "password": [
+      "p",
+      "p"
+    ],
+    "policy": [
+      "p"
+    ],
+    "need": [
+      "p"
+    ],
+    "store": [
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "in": [
+      "p",
+      "p",
+      "p"
+    ],
+    "configuration": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "files": [
+      "p"
+    ],
+    "encrypt": [
+      "p",
+      "p",
+      "p"
+    ],
+    "them": [
+      "p",
+      "p"
+    ],
+    "protected": [
+      "p",
+      "p"
+    ],
+    "feature": [
+      "p"
+    ],
+    "section": [
+      "p"
+    ],
+    "stores": [
+      "p"
+    ],
+    "for": [
+      "p",
+      "p",
+      "p"
+    ],
+    "aspnet": [
+      "p"
+    ],
+    "can": [
+      "p"
+    ],
+    "aspnet_regiisexe.": [
+      "p"
+    ],
+    "other": [
+      "p"
+    ],
+    "application": [
+      "p"
+    ],
+    "types": [
+      "p"
+    ],
+    "such": [
+      "p"
+    ],
+    "as": [
+      "p"
+    ],
+    "must": [
+      "p"
+    ],
+    "programmatically": [
+      "p"
+    ],
+    "file": [
+      "p"
+    ],
+    "sections": [
+      "p"
+    ],
+    "by": [
+      "p"
+    ],
+    "using": [
+      "p"
+    ],
+    "api": [
+      "p"
+    ],
+    "a": [
+      "p"
+    ],
+    "database": [
+      "p"
+    ],
+    "do": [
+      "p"
+    ],
+    "not": [
+      "p"
+    ],
+    "plaintext": [
+      "p"
+    ],
+    "encrypted": [
+      "p"
+    ],
+    "form": [
+      "p"
+    ],
+    "instead": [
+      "p"
+    ],
+    "non-reversible": [
+      "p"
+    ],
+    "hashes": [
+      "p"
+    ],
+    "with": [
+      "p"
+    ],
+    "added": [
+      "p"
+    ],
+    "salt": [
+      "p"
+    ],
+    "adapted": [
+      "p"
+    ],
+    "microsoft": [
+      "p"
+    ],
+    "patterns": [
+      "p"
+    ],
+    "&": [
+      "p"
+    ],
+    "practices": [
+      "p"
+    ],
+    "guidance": [
+      "p"
+    ],
+    "how": [
+      "title"
+    ],
+    "protect": [
+      "title"
+    ]
+  },
+  "tags": {
+    "h1": [
+      "Description"
+    ],
+    "p": [
+      "Make sure that your applications enforce the use of strong passwords. If your applications use Windows authentication, you benefit from being able to use Windows or Active Directory password policy. If you need to store passwords in configuration files, make sure that you encrypt them. Use the protected configuration feature to encrypt the configuration section that stores the password. For ASP.NET applications, you can use Aspnet_regiis.exe. For other application types, such as Windows applications, you must programmatically encrypt configuration file sections by using the protected configuration API.",
+      "If you store passwords in a database for authentication, do not store them in plaintext or encrypted form. Instead, store non-reversible hashes with added salt.",
+      "Adapted from Microsoft patterns & practices guidance."
+    ],
+    "hr": [
+      ""
+    ]
+  },
+  "links": [],
+  "html": "<h1>Description</h1>\r\n  <p>Make sure that your applications enforce the use of strong passwords. If your applications use Windows authentication, you benefit from being able to use Windows or Active Directory password policy. If you need to store passwords in configuration files, make sure that you encrypt them. Use the protected configuration feature to encrypt the configuration section that stores the password. For ASP.NET applications, you can use Aspnet_regiis.exe. For other application types, such as Windows applications, you must programmatically encrypt configuration file sections by using the protected configuration API. </p>\r\n  <p>If you store passwords in a database for authentication, do not store them in plaintext or encrypted form. Instead, store non-reversible hashes with added salt.</p>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
+}

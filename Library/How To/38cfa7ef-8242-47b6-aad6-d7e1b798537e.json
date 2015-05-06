@@ -1,0 +1,68 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "297933930",
+      "Content_Hash": "-1308808929"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "38cfa7ef-8242-47b6-aad6-d7e1b798537e"
+        ],
+        "Id_History": [
+          "38cfa7ef-8242-47b6-aad6-d7e1b798537e,03e462fc-d48b-4ef7-bf47-2f44f4352a48,"
+        ],
+        "Library_Id": [
+          "be5273b1-d682-4361-99d9-6234f2d47eb7"
+        ],
+        "Title": [
+          "How to Test for Reflection Bugs in Java"
+        ],
+        "Category": [
+          "Testing"
+        ],
+        "Phase": [
+          "Test"
+        ],
+        "Technology": [
+          "Java"
+        ],
+        "Type": [
+          "How To"
+        ],
+        "DirectLink": [
+          "How to Test for Reflection Bugs in Java"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ],
+        "Source": [
+          "SI"
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h1>\r\n     Applies to \r\n  </h1>\r\n  <ul>\r\n    <li>J2EE applications that perform authentication</li>\r\n  </ul>\r\n  <h1>\r\n     Summary \r\n  </h1>\r\n  <p>J2EE applications that authenticate their clients using a challenge-response, Diffie-Hellman-like algorithm, for mutual authentication may be vulnerable to reflection attacks where the attacker’s main goal is to trick the application into using its own response as the answer to an authentication challenge.</p>\r\n  <p>Follow these steps to test for reflection bugs in J2EE:</p>\r\n  <ul>\r\n    <li>Step 1: Understand attack scenarios </li>\r\n    <li>Step 2: Analyze causes and countermeasures </li>\r\n    <li>Step 3: Execute test cases</li>\r\n  </ul>\r\n  <p>\r\n  </p>\r\n  <h1>\r\n     Step 1: Understand Attack Scenarios \r\n  </h1>\r\n  <p>First, it is necessary to understand the anatomy of a reflection attack scenario by reviewing a common challenge-response mutual authentication process.     During a challenge-response authentication sequence the client connects to the server.    The server sends a challenge to the client <i>sc</i>.    The client must then answer the challenge successfully by sending a client response <i>cr </i>along with its own challenge to the application<i> cc</i>.     The application authenticates the client by verifying the client’s response <i>cr</i> and responds to the client’s challenge <i>cc </i>with a server response <i>sr.</i>    The client then validates the server response<i> sr</i> and completes mutual authentication.</p>\r\n  <p>In detail:</p>\r\n  <ol>\r\n    <li>The client connects to the server. </li>\r\n    <li>The server sends a server challenge <i>sc.</i></li>\r\n    <li>The client creates its own challenge <i>cc </i>sends it along with the client’s response <i>cr </i>to the server’s challenge. </li>\r\n    <li>The server validates the client’s response <i>cr.    </i>   The server sends its own response <i>sr</i> to the client’s challenge. </li>\r\n    <li>The client validates the server’s response <i>sr.</i></li>\r\n  </ol>\r\n  <p>To exploit a reflection bug an attacker connects to the target application, which in turns sends a target challenge <i>tc</i> to the attacker.     As the attacker doesn’t know how to respond to the target’s challenge to complete authentication (the attacker doesn’t know the shared secret) it opens a second connection with the target application and sends the target challenge <i>tc </i>as its own challenge to the application.     The attacker waits till the target application responds to the challenge sending a target response <i>tr </i>through the second connection and then uses this response as its own response to complete authentication though the first connection.</p>\r\n  <p>In detail:</p>\r\n  <ol>\r\n    <li>The attacker connects to the target application. </li>\r\n    <li>The target sends the attacker a challenge<i> tc.</i></li>\r\n    <li>The attacker opens a second connection to the target and sends the target challenge as the attacker’s own challenge (<i>ac = tc)</i> through the second connection. </li>\r\n    <li>Through the second connection, the target responds to the attacker’s challenge with a target response <i>tr.</i></li>\r\n    <li>Through the original connection, the attacker uses the target response as its own response (<i>ar = tr</i>). </li>\r\n    <li>Through the original connection, the target validates the attacker response <i>ar </i>and authenticates the attacker.</li>\r\n  </ol>\r\n  <p>\r\n  </p>\r\n  <h1>\r\n     Step 2: Analyze Causes and Countermeasures \r\n  </h1>\r\n  <p>Now it is necessary to understand what causes and how to protect against reflection bugs.     </p>\r\n  <h2>\r\n    <em>Insecure protocol design</em>\r\n  </h2>\r\n  <p>Reflection attacks are possible because of poor implementation of mutual authentication protocols.    For instance, in the previous scenario the attacker is able to initiate authentication and the application accepts its own response as an answer to its own challenge.     Applications can protect against reflection attacks by using a <i>nonce</i> (number used once).    When a client connects to it, the application will start by sending the client a nonce for that specific connection as the server challenge <i>sc.    </i>The client must then send his identifier along with the nonce encrypted with the shared key <i>K.    </i>   The application then decrypts the message sent the client.    The application makes sure the response doesn’t correspond to a different challenge by checking if the nonce sent back by the original nonce for the connection.    To avoid reflection attacks, the application detects and disallows a nonce being used in the past or used across more than one connection.</p>\r\n  <p>\r\n    <b>\r\n    </b>\r\n  </p>\r\n  <h1>\r\n     Step 3: Execute Test Cases \r\n  </h1>\r\n  <p>Now that you’ve reviewed the background in reflection attacks it is necessary to execute practical test cases to check if your application is vulnerable.</p>\r\n  <h2>\r\n    <em>Test for Reflection Bugs</em>\r\n  </h2>\r\n  <p>Follow these steps to test for reflection bugs:</p>\r\n  <ol>\r\n    <li>Connect to the target application<i></i>to start authentication.    Wait for the application to send a challenge. </li>\r\n    <li>Opens a second connection to the target and send the target challenge from the previous step through this connection.    Wait for the target application to send a response for the challenge. </li>\r\n    <li>Send the response sent by the application in the previous step through the original connection.</li>\r\n  </ol>\r\n  <p>Expected results:    The application is vulnerable to reflection attacks if you are able to successfully authenticate in step 3.</p>\r\n  <p>\r\n  </p>\r\n  <h1>\r\n     Conclusions \r\n  </h1>\r\n  <p>Reflection attacks focus on exploiting logical flaws on applications using a mutual-authentication protocol and responding to an application challenge using an application’s own response.    To test for this bug it is suggested you start by understanding its attack scenario as well as what causes it and how to protect against it.    Then execute a trivial test case to check if your J2EE application is vulnerable.</p>"
+        ]
+      }
+    ]
+  }
+}

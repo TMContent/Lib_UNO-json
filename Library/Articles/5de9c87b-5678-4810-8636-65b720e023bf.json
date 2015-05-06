@@ -1,0 +1,59 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "0",
+      "Content_Hash": "0"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "5de9c87b-5678-4810-8636-65b720e023bf"
+        ],
+        "Id_History": [
+          "5de9c87b-5678-4810-8636-65b720e023bf,3d604761-dcd6-471b-af00-5a65086cf034,"
+        ],
+        "Library_Id": [
+          "d9c2b53f-5b05-4152-be72-e79d72854707"
+        ],
+        "Title": [
+          "Use SSL When Transmitting Credentials"
+        ],
+        "Category": [
+          "Communication Security"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "Scala Play"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          "Use SSL When Transmitting Credentials"
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "false",
+          "DataType": "html"
+        },
+        "Data": [
+          "<h1>Applies to</h1>\r\n  <p>Scala and Play Framework 2.1.0+<br /></p>\r\n  <h1>What to Do</h1>\r\n  <p>Enable SSL for all the sensitive pages on the web application server.</p>\r\n  <h1>Why</h1>\r\n  <p>SSL should be used to protect all pages that handle sensitive data to protect from eavesdropping attacks.</p>\r\n  <h1>How</h1>\r\n  <p>The exact instructions for enabling SSL are different for different servers. Enabling SSL is a common task and is well documented for common web server platforms. Links at the bottom of this page lead to documentation that explains how to enable SSL on different platforms. There are some general guidelines that apply:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Get valid certificates.</strong>&nbsp;Purchase a valid SSL certificate. You may purchase a valid SSL key from VeriSign, Thawte, or your web hosting provider. Follow the vendor's instructions for purchasing the SSL certificate. The certificate is usually a .cer file.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Identify sensitive pages.</strong>&nbsp;Make a list of all pages that handle sensitive information, including all pages that use authentication or authorization features.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Enable SSL on the web server.</strong>&nbsp;The exact instructions for enabling SSL are different for different web servers. Please, see the links at the bottom of this page for more information about enabling SSL on some common web application platforms.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Use SSL to protect the sensitive pages.</strong>&nbsp;The exact instructions for doing so are different for different web servers. Use the web server administration interface or edit the server configuration files to enable SSL for all folders containing sensitive pages.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Redirect non-SSL requests to SSL-protected pages.</strong>&nbsp;The exact instructions for doing so are different for different web servers. Use the web server administration interface or edit the server configuration files to redirect non-SSL requests to SSL-protected pages.</p>\r\n    </li>\r\n  </ol>\r\n  <h1>Additional Resources</h1>\r\n  <ul>\r\n    <li>For information about using SSL on Nginx as front-end server with Scala and Play Framework , please see&nbsp;<a href=\"http://tomcat.apache.org/tomcat-6.0-doc/ssl-howto.html\">ww.playframework.com/documentation/2.1.1/HTTPServer</a></li>\r\n  </ul>\r\n  <div>\r\n    <h1 style=\"margin: 0px; padding: 10px 0px 0px; font-size: 17px; font-family: 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; background-color: rgb(255, 255, 255);\">Communication Security Guidelines</h1>\r\n    <ul style=\"margin: 10px 0px 10px 25px; padding: 0px 0px 0px 30px; font-family: 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: small; background-color: rgb(255, 255, 255);\">\r\n      <li style=\"margin: 0px; padding: 0px;\">\r\n        <b style=\"margin: 0px; padding: 0px;\">\r\n          <a href=\"52624de3-7c13-4456-974b-23c4588eef0d\" target=\"_blank\" style=\"margin: 0px; padding: 0px; color: rgb(0, 0, 0);\">Encrypt Communication Links</a>\r\n        </b>\r\n      </li>\r\n      <li style=\"margin: 0px; padding: 0px;\">\r\n        <b style=\"margin: 0px; padding: 0px;\">\r\n          <a href=\"10886993-6dcd-4905-b577-2032edd530c5\" target=\"_blank\" style=\"margin: 0px; padding: 0px; color: rgb(0, 0, 0);\">Use SSL</a>\r\n        </b>\r\n      </li>\r\n      <li style=\"margin: 0px; padding: 0px;\">\r\n        <b style=\"margin: 0px; padding: 0px;\">\r\n          <a href=\"8a5cb8a0-d7f9-4372-bae6-2d680bb498ad\" target=\"_blank\" style=\"margin: 0px; padding: 0px; color: rgb(0, 0, 0);\">Use SSL for All Sensitive Pages</a>\r\n        </b>\r\n      </li>\r\n      <li style=\"margin: 0px; padding: 0px;\">\r\n        <b style=\"margin: 0px; padding: 0px;\">\r\n          <a href=\"5de9c87b-5678-4810-8636-65b720e023bf\" target=\"_blank\" style=\"margin: 0px; padding: 0px; color: rgb(0, 0, 0);\">Use SSL When Transmitting Credentials</a>\r\n        </b>\r\n      </li>\r\n      <li style=\"margin: 0px; padding: 0px;\">\r\n        <b style=\"margin: 0px; padding: 0px;\">\r\n          <a href=\"189c97b5-78ac-4b3b-812d-587ea2a895e4\" target=\"_blank\" style=\"margin: 0px; padding: 0px; color: rgb(0, 0, 0);\">Use Valid SSL Certificates</a>\r\n        </b>\r\n      </li>\r\n      <li style=\"margin: 0px; padding: 0px;\">\r\n        <b style=\"margin: 0px; padding: 0px;\">\r\n          <a href=\"0e774522-7d2e-4a14-b3cf-850d127c3895\" target=\"_blank\" style=\"margin: 0px; padding: 0px; color: rgb(0, 0, 0);\">Use Only Strong SSL Algorithms</a>\r\n        </b>\r\n      </li>\r\n      <li style=\"margin: 0px; padding: 0px;\">\r\n        <b style=\"margin: 0px; padding: 0px;\">\r\n          <a href=\"f9d523ec-7328-4be5-93c6-00e671ecd068\" target=\"_blank\" style=\"margin: 0px; padding: 0px; color: rgb(0, 0, 0);\">Do Not Cache Sensitive Data</a>\r\n        </b>\r\n      </li>\r\n      <li style=\"margin: 0px; padding: 0px;\">\r\n        <b style=\"margin: 0px; padding: 0px;\">\r\n          <a href=\"7718e002-fad0-4114-b51f-f46397cd3921\" target=\"_blank\" style=\"margin: 0px; padding: 0px; color: rgb(0, 0, 0);\">Do Not Place Sensitive Data in Parameters</a>\r\n        </b>\r\n      </li>\r\n    </ul>\r\n    <h1 style=\"margin: 0px; padding: 10px 0px 0px; font-size: 17px; font-family: 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; background-color: rgb(255, 255, 255);\">Communication Security Checklists</h1>\r\n    <ul style=\"margin: 10px 0px 10px 25px; padding: 0px 0px 0px 30px; font-family: 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: small; background-color: rgb(255, 255, 255);\">\r\n      <li style=\"margin: 0px; padding: 0px;\">\r\n        <b style=\"margin: 0px; padding: 0px;\">\r\n          <a href=\"d9212a71-9f66-4d55-91ad-40af4792f414\" target=\"_blank\" style=\"margin: 0px; padding: 0px; color: rgb(0, 0, 0);\">Communication Links are Encrypted</a>\r\n        </b>\r\n      </li>\r\n      <li style=\"margin: 0px; padding: 0px;\">\r\n        <b style=\"margin: 0px; padding: 0px;\">\r\n          <a href=\"0c11e362-82d1-4132-ba66-8431eb02da94\" target=\"_blank\" style=\"margin: 0px; padding: 0px; color: rgb(0, 0, 0);\">SSL Is Used</a>\r\n        </b>\r\n      </li>\r\n      <li style=\"margin: 0px; padding: 0px;\">\r\n        <b style=\"margin: 0px; padding: 0px;\">\r\n          <a href=\"60459daa-5678-45f7-834f-72ef487aaf2b\" target=\"_blank\" style=\"margin: 0px; padding: 0px; color: rgb(0, 0, 0);\">SSL Is Used for All Sensitive Pages</a>\r\n        </b>\r\n      </li>\r\n      <li style=\"margin: 0px; padding: 0px;\">\r\n        <b style=\"margin: 0px; padding: 0px;\">\r\n          <a href=\"24771ceb-219a-41c5-8877-c040969a6933\" target=\"_blank\" style=\"margin: 0px; padding: 0px; color: rgb(0, 0, 0);\">SSL is Used When Transmitting Credentials</a>\r\n        </b>\r\n      </li>\r\n      <li style=\"margin: 0px; padding: 0px;\">\r\n        <b style=\"margin: 0px; padding: 0px;\">\r\n          <a href=\"ec353b5b-901b-404b-811e-922561c1e632\" target=\"_blank\" style=\"margin: 0px; padding: 0px; color: rgb(0, 0, 0);\">Valid SSL Certificates Are Used</a>\r\n        </b>\r\n      </li>\r\n      <li style=\"margin: 0px; padding: 0px;\">\r\n        <b style=\"margin: 0px; padding: 0px;\">\r\n          <a href=\"d4cad587-c5d7-4ccf-ad50-4e178154a70b\" target=\"_blank\" style=\"margin: 0px; padding: 0px; color: rgb(0, 0, 0);\">Only Strong SSL Algorithms Are Used</a>\r\n        </b>\r\n      </li>\r\n      <li style=\"margin: 0px; padding: 0px;\">\r\n        <b style=\"margin: 0px; padding: 0px;\">\r\n          <a href=\"06c0bd2f-6d23-45ce-9c08-5145215ca9d8\" target=\"_blank\" style=\"margin: 0px; padding: 0px; color: rgb(0, 0, 0);\">Sensitive Data Is Not Cached</a>\r\n        </b>\r\n      </li>\r\n      <li style=\"margin: 0px; padding: 0px;\">\r\n        <b style=\"margin: 0px; padding: 0px;\">\r\n          <a href=\"3b87b42e-a1cd-4b62-85e9-c26337b04bdf\" target=\"_blank\" style=\"margin: 0px; padding: 0px; color: rgb(0, 0, 0);\">Sensitive Data Is Not Placed in Parameters</a>\r\n        </b>\r\n      </li>\r\n    </ul>\r\n    <h1 style=\"margin: 0px; padding: 10px 0px 0px; font-size: 17px; font-family: 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; background-color: rgb(255, 255, 255);\">Communication Security Testing</h1>\r\n    <ul style=\"margin: 10px 0px 10px 25px; padding: 0px 0px 0px 30px; font-family: 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: small; background-color: rgb(255, 255, 255);\">\r\n      <li style=\"margin: 0px; padding: 0px;\">\r\n        <b style=\"margin: 0px; padding: 0px;\">\r\n          <a href=\"b928e4bf-8dc9-4e64-bbec-ad642f375ab4\" target=\"_blank\" style=\"margin: 0px; padding: 0px; color: rgb(0, 0, 0);\">How to Test for Network Credential Sniffing Bugs in Scala</a>\r\n        </b>\r\n      </li>\r\n    </ul>\r\n  </div>"
+        ]
+      }
+    ]
+  }
+}

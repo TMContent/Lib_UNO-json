@@ -1,0 +1,68 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "1281432296",
+      "Content_Hash": "1301542516"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "c843b2b5-9829-46a7-a405-6920bcb8ff12"
+        ],
+        "Id_History": [
+          "c843b2b5-9829-46a7-a405-6920bcb8ff12,2bd0a507-cb58-4cb2-883a-8e668cca3413,"
+        ],
+        "Library_Id": [
+          "be5273b1-d682-4361-99d9-6234f2d47eb7"
+        ],
+        "Title": [
+          "Failed Logon Attempts Are Audited."
+        ],
+        "Category": [
+          "Hardening"
+        ],
+        "Phase": [
+          "Deployment"
+        ],
+        "Technology": [
+          "Web Application"
+        ],
+        "Type": [
+          "Checklist Item"
+        ],
+        "DirectLink": [
+          "Failed Logon Attempts Are Audited."
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          "J.D. Meier, Alex Mackman, Michael Dunner, Srinath Vasireddy, Ray Escamilla and Anandha Murukan"
+        ],
+        "Status": [
+          ""
+        ],
+        "Source": [
+          "SI"
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>\r\n      <div>Web Application</div>\r\n    </li>\r\n  </ul>\r\n  <h1>What to Check For</h1>\r\n  <p>Check to ensure that failed logon attempts are audited to detect and trace suspicious behavior.</p>\r\n  <p />\r\n  <h1>How to Fix</h1>\r\n  <p>You must log failed logon attempts to be able to detect and trace suspicious behavior.</p>\r\n  <p>\r\n    <b>To audit failed logon attempts</b>\r\n  </p>\r\n  <ol>\r\n    <li>Start the Local Security Policy tool from the Administrative Tools program group. \r\n<li>Expand <b>Local Policies</b> and then select <b>Audit Policy</b><li>Double-click <b>Audit account logon events</b>. \r\n<li>Click <b>Failure</b> and then <b>OK</b>. </li></li></li></li>\r\n  </ol>\r\n  <p>Logon failures are recorded as events in the Windows security event log. The following event IDs are suspicious: </p>\r\n  <ul>\r\n    <li>\r\n      <b>531</b>. This means an attempt was made to log on using a disabled account. \r\n<li><b>529</b>. This means an attempt was made to log on using an unknown user account or using a valid user account but with an invalid password. An unexpected increase in the number of these audit events might indicate an attempt to guess passwords. </li></li>\r\n  </ul>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
+        ]
+      }
+    ]
+  }
+}

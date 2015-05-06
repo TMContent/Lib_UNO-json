@@ -1,0 +1,68 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "807459",
+      "Content_Hash": "-1668322887"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "fd06b089-88ea-43df-bc41-f111a1848116"
+        ],
+        "Id_History": [
+          "fd06b089-88ea-43df-bc41-f111a1848116,1900c046-d09a-4a31-9b1d-d9c431148fac,"
+        ],
+        "Library_Id": [
+          "be5273b1-d682-4361-99d9-6234f2d47eb7"
+        ],
+        "Title": [
+          "Don't Throw Exceptions from Destructors"
+        ],
+        "Category": [
+          "Error and Exception Management"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "C++"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          "Don't Throw Exceptions from Destructors"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ],
+        "Source": [
+          "C++"
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h1>Applies to</h1>\r\n  <p>C&#43;&#43;</p>\r\n  <h1>What to Do</h1>\r\n  <p>Write destructors in such a way that they don't throw exceptions.</p>\r\n  <h1>Why</h1>\r\n  <p>A destructor may be called when an exception is thrown. If a destructor throws an exception after being called from an exception being thrown, the program is likely to terminate. This may result in a denial-of-service vulnerability.</p>\r\n  <h1>How</h1>\r\n  <p>Perform the following actions to assure that destructors don't throw exceptions:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Identify destructors.</strong> Review your code and identify all destructors. This should be an easy task.</p>\r\n      <li>\r\n        <p>\r\n          <strong>Search for destructors that throw exceptions. </strong>From the list of destructors, identify the ones that throw exceptions.</p>\r\n        <li>\r\n          <p>\r\n            <strong>Rewrite destructors. </strong>Rewrite the destructors that throw exceptions in a way that doesn't involve throwing exceptions. This may be accomplished by simply removing code that throws exceptions from the destructors. If error handling must be done based on the results of the execution of the destructors, use error codes.</p>\r\n        </li>\r\n      </li>\r\n    </li>\r\n  </ol>\r\n  <h1>Related Items</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/441b4138-1866-442f-8abb-6d05236d6fcb\">Don't Throw Exceptions from Deallocation Functions</a>\r\n    </li>\r\n  </ul>"
+        ]
+      }
+    ]
+  }
+}

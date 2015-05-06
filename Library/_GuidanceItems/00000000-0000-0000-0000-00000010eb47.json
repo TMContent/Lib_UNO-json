@@ -1,0 +1,59 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "0",
+      "Content_Hash": "0"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "00000000-0000-0000-0000-00000010eb47"
+        ],
+        "Id_History": [
+          "00000000-0000-0000-0000-00000010eb47,2b2675f9-abb3-4adc-babd-c0c4b45d2c85,"
+        ],
+        "Library_Id": [
+          "7d2d0571-e542-45cd-9335-d7a0556c2bea"
+        ],
+        "Title": [
+          "Use element.textContent to Assign Values to DOM Elements"
+        ],
+        "Category": [
+          "Web Messaging"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "HTML5"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          "Use element.textContent to Assign Values to DOM Elements"
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "false",
+          "DataType": "wikitext"
+        },
+        "Data": [
+          "==Applies To==\r\n\r\n* HTML5\r\n\r\n==What to Do==\r\n\r\nUse the //textContent// method instead of //innerHTML// to assign values to DOM elements.\r\n\r\n==Why==\r\n\r\nUsing the //textContent// method instead of innerHTML prevents cross-site scripting (XSS) attacks, because values assigned using //textContent// will not be executed as script.\r\n\r\n==How==\r\n\r\nTo use the //textContent// property instead of //innerHTML//:\r\n\r\n# **Find all references to //innerHTML//.** Search the application code for all references to the //innerHTML// property. Create a spreadsheet to list all code that uses the //innerHTML// property to assign values to DOM elements.\r\n# **Use //textContent// instead of //innerHTML//.** Using the spreadsheet as a guide, for all code that uses //innerHTML// to assign values, change it to use //textContent// instead. Simply replace references to //innerHTML// with //textContent//. For most applications, no further changes should be required.\r\n\r\n==Web Messaging Guidelines==\r\n\r\n* [[00000000-0000-0000-0000-00000012aada|Do Not Evaluate Messages as Code]]\r\n* [[00000000-0000-0000-0000-00000010eb47|Use element.textContent to Assign Values to DOM Elements]]\r\n* [[00000000-0000-0000-0000-00000076ad87|Explicitly State the Expected Origin with postMessage]]\r\n* [[00000000-0000-0000-0000-0000006ab8ac|Validate Data Received by Event Handlers]]\r\n* [[00000000-0000-0000-0000-00000085babd|Validate the Origin Attribute Against the FQDN]]\r\n* [[00000000-0000-0000-0000-000000763637|Check The Origin Attribute of Messages]]\r\n\r\n==Web Messaging Checklist Items==\r\n\r\n* [[00000000-0000-0000-0000-0000008e9b8f|Messages Are Not Evaluated as Code]]\r\n* [[00000000-0000-0000-0000-00000060fefb|Element.textContent Is Used to Assign Values to DOM Elements]]\r\n* [[00000000-0000-0000-0000-0000004a4216|Expected Origin Is Explicitly Stated with postMessage]]\r\n* [[967c9b95-2319-4741-a6fd-1b4bcdf3b636|Data Received by Event Handlers Is Validated]]\r\n* [[16628f7f-e17a-4bd1-838a-011736bf0995|The Origin Attribute Is Validated Against the FQDN]]\r\n* [[f103974e-3a42-4837-b04b-7da7e87c41ec|The Origin Attribute of Messages Is Checked]]\r\n"
+        ]
+      }
+    ]
+  }
+}

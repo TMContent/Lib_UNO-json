@@ -1,0 +1,68 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "-616208049",
+      "Content_Hash": "-1057433259"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "9ea813b5-e1a1-4439-b569-de1c6812b7cb"
+        ],
+        "Id_History": [
+          "9ea813b5-e1a1-4439-b569-de1c6812b7cb,b576e4b3-8302-42be-9dc4-9c00c4f3f1c1,"
+        ],
+        "Library_Id": [
+          "92718d53-36b2-47bc-b6f5-e60994385f46"
+        ],
+        "Title": [
+          "When Using Impersonation, Consider Threading Issues"
+        ],
+        "Category": [
+          "Impersonation and Delegation"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          ".NET 3.5"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          "When Using Impersonation, Consider Threading Issues"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          "2"
+        ],
+        "Status": [
+          ""
+        ],
+        "Source": [
+          "SI"
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h1>What to Do</h1>\r\n  <p>Consider threading issues if impersonation is used. </p>\r\n  <h1>Why</h1>\r\n  <p>Losing an impersonated security context because of thread switches is a common vulnerability. </p>\r\n  <h1>When</h1>\r\n  <p>The common language runtime (CLR) automatically propagates impersonation tokens to threads that you create using any of the managed threading techniques, such as Thread.Start, an asynchronous delegate, or QueueUserWorkItem. However, it is easy to drop the thread impersonation token if you use COM interop with components that have incompatible threading models or if you use unmanaged techniques to create new threads such as the Win32 CreateThread API. </p>\r\n  <h1>Related Items</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/507399c7-820f-4313-a1d9-62a65503fc9c\">Know Your Tradeoffs with Impersonation</a>\r\n    </li>\r\n    <li>\r\n      <a href=\"/article/a5498075-d530-437d-9cc1-11697b3be564\">Threading Issues Should be Considered if Impersonation is Used</a>\r\n    </li>\r\n    <li>\r\n      <a href=\"/article/9ea813b5-e1a1-4439-b569-de1c6812b7cb\">When Using Impersonation, Consider Threading Issues</a>\r\n    </li>\r\n  </ul>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance. </p>"
+        ]
+      }
+    ]
+  }
+}

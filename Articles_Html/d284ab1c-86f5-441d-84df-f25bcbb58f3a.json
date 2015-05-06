@@ -1,0 +1,209 @@
+{
+  "id": "d284ab1c-86f5-441d-84df-f25bcbb58f3a",
+  "checksum": "0154fef9fe801ab9b8a275e51e522c336fd178f9",
+  "words": {
+    "applies": [
+      "h1"
+    ],
+    "to": [
+      "h1",
+      "h1",
+      "h1",
+      "h1"
+    ],
+    "c++": [
+      "ul",
+      "li"
+    ],
+    "what": [
+      "h1"
+    ],
+    "check": [
+      "h1",
+      "h1"
+    ],
+    "for": [
+      "h1"
+    ],
+    "verify": [
+      "p",
+      "p"
+    ],
+    "that": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "variables": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "ul",
+      "li",
+      "a",
+      "title"
+    ],
+    "are": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "initialized": [
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "before": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "ul",
+      "li",
+      "a",
+      "title"
+    ],
+    "being": [
+      "p",
+      "p"
+    ],
+    "used": [
+      "p",
+      "p",
+      "p"
+    ],
+    "why": [
+      "h1"
+    ],
+    "using": [
+      "p",
+      "p"
+    ],
+    "they": [
+      "p",
+      "p"
+    ],
+    "may": [
+      "p"
+    ],
+    "result": [
+      "p"
+    ],
+    "in": [
+      "p"
+    ],
+    "unexpected": [
+      "p"
+    ],
+    "behavior": [
+      "p"
+    ],
+    "how": [
+      "h1",
+      "h1"
+    ],
+    "identify": [
+      "p",
+      "p"
+    ],
+    "code": [
+      "p",
+      "p",
+      "p"
+    ],
+    "declares": [
+      "p",
+      "p"
+    ],
+    "all": [
+      "p",
+      "ul",
+      "li",
+      "a"
+    ],
+    "most": [
+      "p"
+    ],
+    "compilers": [
+      "p"
+    ],
+    "warn": [
+      "p"
+    ],
+    "about": [
+      "p"
+    ],
+    "unitialized": [
+      "p"
+    ],
+    "fix": [
+      "h1"
+    ],
+    "add": [
+      "p"
+    ],
+    "initializes": [
+      "p"
+    ],
+    "related": [
+      "h1"
+    ],
+    "items": [
+      "h1"
+    ],
+    "initialize": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "use": [
+      "ul",
+      "li",
+      "a",
+      "title"
+    ]
+  },
+  "tags": {
+    "h1": [
+      "Applies to",
+      "What to Check For",
+      "Why",
+      "How to Check",
+      "How to Fix",
+      "Related Items"
+    ],
+    "ul": [
+      "C++",
+      "Initialize All Variables Before Use"
+    ],
+    "li": [
+      "C++",
+      "Initialize All Variables Before Use"
+    ],
+    "p": [
+      "Verify that variables are initialized before being used.",
+      "Using variables before they are initialized may result in unexpected behavior.",
+      "Identify code that declares variables. Verify that all variables are initialized before being used. Most compilers warn about using unitialized variables.",
+      "Identify code that declares variables. Add code that initializes variables before they are used."
+    ],
+    "a": [
+      "Initialize All Variables Before Use"
+    ]
+  },
+  "links": [
+    {
+      "href": "/article/377919e5-9cd3-40f1-9658-1d4cdabf2b3a",
+      "text": "Initialize All Variables Before Use"
+    }
+  ],
+  "html": "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>C&#43;&#43;</li>\r\n  </ul>\r\n  <h1>What to Check For</h1>\r\n  <p>Verify that variables are initialized before being used.</p>\r\n  <h1>Why</h1>\r\n  <p>Using variables before they are initialized may result in unexpected behavior.</p>\r\n  <h1>How to Check</h1>\r\n  <p>Identify code that declares variables. Verify that all variables are initialized before being used. Most compilers warn about using unitialized variables.</p>\r\n  <h1>How to Fix</h1>\r\n  <p>Identify code that declares variables. Add code that initializes variables before they are used.</p>\r\n  <h1>Related Items</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/377919e5-9cd3-40f1-9658-1d4cdabf2b3a\">Initialize All Variables Before Use</a>\r\n    </li>\r\n  </ul>"
+}

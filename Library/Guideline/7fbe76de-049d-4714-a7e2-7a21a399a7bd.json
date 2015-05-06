@@ -1,0 +1,68 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "369375366",
+      "Content_Hash": "-1400363722"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "7fbe76de-049d-4714-a7e2-7a21a399a7bd"
+        ],
+        "Id_History": [
+          "7fbe76de-049d-4714-a7e2-7a21a399a7bd,3549de94-1184-4996-b56a-b9b1dff90cfd,"
+        ],
+        "Library_Id": [
+          "92718d53-36b2-47bc-b6f5-e60994385f46"
+        ],
+        "Title": [
+          "Use File Authorization with Windows Authentication"
+        ],
+        "Category": [
+          "Authorization"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          ".NET 3.5"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          "Use File Authorization with Windows Authentication"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          "2"
+        ],
+        "Status": [
+          ""
+        ],
+        "Source": [
+          "SI"
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h1>What to Do</h1>\r\n  <p>Use file authorization when using windows authentication. </p>\r\n  <h1>Why</h1>\r\n  <p>Using file authorization with Windows authentication allows you to leverage groups and roles defined in your company's Active Directory to control per-file authorization inside your application.&nbsp; While not necessarily sufficient for all of your authorization needs, it can be a very powerful tool. </p>\r\n  <h1>When</h1>\r\n  <p>All applications which use Windows authentication should use file authorization as part of their authorization toolkit. </p>\r\n  <h1>How</h1>\r\n  <p>File authorization works automatically when using Windows authentication, and there is no need to impersonate the original user.&nbsp; The <b>FileAuthorizationModule</b> only performs access checks against the requested file.&nbsp; For example, if you request Default.aspx and it contains an embedded user control (Usercontrol.ascx), which in turn includes an image tag (pointing to Image.gif), the <b>FileAuthorizationModule</b> performs an access check for Default.aspx and Usercontrol.ascx, because these file types are mapped by IIS to the ASP.NET ISAPI extension.&nbsp; The <b>FileAuthorizationModule</b> does not perform a check for Image.gif, because this is a static file handled internally by IIS.&nbsp; However, because access checks for static files are performed by IIS, the authenticated user must still be granted read permission to the file with an appropriately configured ACL. </p>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance. </p>"
+        ]
+      }
+    ]
+  }
+}

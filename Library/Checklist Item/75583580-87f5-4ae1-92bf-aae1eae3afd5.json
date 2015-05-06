@@ -1,0 +1,68 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "-721428709",
+      "Content_Hash": "-97699717"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "75583580-87f5-4ae1-92bf-aae1eae3afd5"
+        ],
+        "Id_History": [
+          "75583580-87f5-4ae1-92bf-aae1eae3afd5,c38a3f99-9730-4e7f-8b18-025ffab55a7a,"
+        ],
+        "Library_Id": [
+          "be5273b1-d682-4361-99d9-6234f2d47eb7"
+        ],
+        "Title": [
+          "Important Event Details Are Logged"
+        ],
+        "Category": [
+          "Auditing and Logging"
+        ],
+        "Phase": [
+          "Design"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Checklist Item"
+        ],
+        "DirectLink": [
+          "Important Event Details Are Logged"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ],
+        "Source": [
+          "SI"
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h1>What to Check For</h1>\r\n  <p>Verify that important event details are logged.</p>\r\n  <h1>Why</h1>\r\n  <p>Log events entries should include important details so that the contents of the logs are useful for forensics and system administration.</p>\r\n  <h1>How to Check</h1>\r\n  <p>Either examine the logs or the code that produces the logs to make sure that the following information is included in log entries:</p>\r\n  <ul>\r\n    <li>User identification<li>Type of event<li>Date and time stamp<li>Success or failure indication<li>Source of event<li>Names or other identifiers of affected data or resources</li></li></li></li></li></li>\r\n  </ul>\r\n  <h1>How to Fix</h1>\r\n  <p>Find code that generates log entries. Add code that records the following information in log entries:</p>\r\n  <ul>\r\n    <li>User identification<li>Type of event<li>Date and time stamp<li>Success or failure indication<li>Source of event<li>Names or other identifiers of affected data or resources</li></li></li></li></li></li>\r\n  </ul>"
+        ]
+      }
+    ]
+  }
+}

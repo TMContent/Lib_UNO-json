@@ -1,0 +1,68 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "-1329115757",
+      "Content_Hash": "-356571848"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "92839e91-8f79-45fb-9b8d-76fc9c814fea"
+        ],
+        "Id_History": [
+          "92839e91-8f79-45fb-9b8d-76fc9c814fea,c9700cf8-2fad-40f2-91ec-c20ddfeb7033,"
+        ],
+        "Library_Id": [
+          "be5273b1-d682-4361-99d9-6234f2d47eb7"
+        ],
+        "Title": [
+          "Check Access Control Permissions When Referencing Objects"
+        ],
+        "Category": [
+          "Authorization"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "Java"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          "Check Access Control Permissions When Referencing Objects"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ],
+        "Source": [
+          "SI"
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>Java</li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Check access control permissions whenever performing direct object references.</p>\r\n  <h1>Why</h1>\r\n  <p>Using direct object references may expose sensitive data to attackers. Direct object references often expose sensitive data, such as files, database entries, or personal information. Direct object reference attacks are very simple to execute and have been used in high profile, low-skill attacks. Checking access control permissions whenever referencing objects helps prevent direct object reference vulnerabilities.</p>\r\n  <h1>How</h1>\r\n  <p>To check access control permissions whenever performing direct object references:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Identify pages that use direct object references.</strong> Make a list of all pages in the application. Go through the list and identify all pages that use indirect object references by examining each page.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Identify code that references objects.</strong> For each page that uses indirect object references, identify the code that references objects.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Check access controls.</strong> Add code that performs access control checks to code that performs object references.</p>\r\n    </li>\r\n  </ol>\r\n  <br />"
+        ]
+      }
+    ]
+  }
+}

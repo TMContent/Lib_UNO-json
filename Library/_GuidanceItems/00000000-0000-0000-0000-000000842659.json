@@ -1,0 +1,59 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "0",
+      "Content_Hash": "0"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "00000000-0000-0000-0000-000000842659"
+        ],
+        "Id_History": [
+          "00000000-0000-0000-0000-000000842659,162800c3-3a8a-4c5e-ab62-44c5fe3f8df0,"
+        ],
+        "Library_Id": [
+          "b6f408c5-6e6e-4bc0-90a5-0bb10becc2ce"
+        ],
+        "Title": [
+          "Freed Objects Are Not Referenced"
+        ],
+        "Category": [
+          "Memory Management"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "iOS"
+        ],
+        "Type": [
+          "Checklist Item"
+        ],
+        "DirectLink": [
+          "Freed Objects Are Not Referenced"
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "false",
+          "DataType": "WikiText"
+        },
+        "Data": [
+          "==Applies To==\r\n\r\n* All iOS functions.\r\n\r\n==What to Check For==\r\n\r\nVerify that freed objects are not referenced.\r\n\r\n==Why==\r\n\r\nAccessing memory that has been deallocated may result in an exploitable vulnerability. This type of vulnerability is called a \"dangling pointer vulnerability\". The unallocated memory is accessed via a pointer that has been used to free the memory earlier - this pointer is the \"dangling pointer\".\r\n\r\n==How to Check==\r\n\r\nTo verify that freed objects are not referenced:\r\n\r\n# **Search for deallocation code.** Review code to find all places where memory is being deallocated.\r\n# **Verify that deallocation code is close to exit points.** Make sure that deallocation code is close to the end of a function - this makes it easier to manage deallocation and prevent double-free vulnerabilities.\r\n# **Review deallocation code.** Examine deallocation code to make sure that objects are only freed once.\r\n\r\n==How to Fix==\r\n\r\nWrite code in a way that guarantees that pointers are not used after memory that they point to has been deallocated. One way to do this is to deallocate memory at the end of functions, so that there is no code that accesses memory after it has been deallocated. Perform the following actions to assure that deallocated memory is not accessed:\r\n\r\n# **Search for deallocation code.** Review code to find all places where memory is being deallocated.\r\n# **Move deallocation code.** Place deallocation code right before an exit point from its function. Set deallocated pointers to null. Make sure that deallocated pointers are not being used elsewhere in the application.\r\n\r\n==Memory Management Guidelines==\r\n* [[00000000-0000-0000-0000-000000112fc5|Compile Applications with Stack Cookies Enabled]]\r\n* [[00000000-0000-0000-0000-0000008d3865|Do Not Reference Freed Objects]]\r\n* [[00000000-0000-0000-0000-000000798d06|Use Automatic Reference Counting]]\r\n\r\n==Memory Management Checklists==\r\n* [[00000000-0000-0000-0000-000000841cc6|Applications Are Compiled with Stack Cookies Enabled]]\r\n* [[00000000-0000-0000-0000-000000842659|Freed Objects Are Not Referenced]]\r\n* [[00000000-0000-0000-0000-000000189cf8|Automatic Reference Counting Is Used]]\r\n"
+        ]
+      }
+    ]
+  }
+}

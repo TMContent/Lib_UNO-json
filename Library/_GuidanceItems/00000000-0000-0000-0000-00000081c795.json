@@ -1,0 +1,59 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "0",
+      "Content_Hash": "0"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "00000000-0000-0000-0000-00000081c795"
+        ],
+        "Id_History": [
+          "00000000-0000-0000-0000-00000081c795,b1a25e25-3e9b-4a84-9e99-bb56ca027291,"
+        ],
+        "Library_Id": [
+          "f215ceee-9a08-41d9-b2c1-bbcc058a8f32"
+        ],
+        "Title": [
+          "Use Server-side Authentication"
+        ],
+        "Category": [
+          "Authentication"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "Android"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          "Use Server-side Authentication"
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "false",
+          "DataType": "WikiText"
+        },
+        "Data": [
+          "==Applies To==\r\n\r\n* Android applications that authenticate to a remote server.\r\n\r\n==What to Do==\r\n\r\nUse server-side authentication.\r\n\r\n==Why==\r\n\r\nServer-side authentication should be used because client-side authentication is trivial to bypass.\r\n\r\n==How==\r\n\r\n# **Define authentication requirements.** Consider the following aspects of authentication control as they pertain to your application:\r\n#* Enforcing password strength requirements.\r\n#* Allowing secure password reset or recovery.\r\n#* Requiring re-authentication for sensitive operations.\r\n#* Using multi-factor authentication.\r\n#* Using simple error messages that don't give away information to the attacker.\r\n#* Using SSL/TLS to secure communications.\r\n#* Throttling repeated authentication attempts.\r\n#* Locking inactive authentication accounts.\r\n# **Implement authentication on the server.** It is important to implement security controls such as authentication on the server, because an attacker can tamper with client-side security controls or disable them altogether. Implement authentication controls that match the requirements defined in the previous step on the server back-end. \r\n# **Add client-side code that authenticates to the server.** Once authentication is implemented in accordance with the requirements, add client-side code that authenticates to the server. The client-side code will need:\r\n#* An interface for managing authentication credentials. \r\n#* Network code that communicates with the server using SSL/TLS. \r\n#* A token or some other means to maintain session state on the server, and possibly secure storage for cached authentication credentials.\r\n\r\n==Authentication Guidelines==\r\n\r\n* [[00000000-0000-0000-0000-000000589e46|Encrypt Authentication Credentials Sent over the Network]]\r\n* [[00000000-0000-0000-0000-0000002eb5bd|Implement a Secure Password Reset Function]]\r\n* [[00000000-0000-0000-0000-0000002a1fe0|Throttle Authentication Attempts]]\r\n* [[00000000-0000-0000-0000-00000081c795|Use Server-side Authentication]]\r\n\r\n==Authentication Checklists==\r\n\r\n* [[00000000-0000-0000-0000-000000582050|Authentication Credentials Sent over the Network Are Encrypted]]\r\n* [[00000000-0000-0000-0000-00000035726e|A Secure Password Reset Function Is Implemented]]\r\n* [[00000000-0000-0000-0000-00000016d320|Authentication Attempts Are Throttled]]\r\n* [[00000000-0000-0000-0000-00000029e0c4|Authentication Is Implemented on the Server-side]]\r\n\r\n==Additional Resources==\r\n\r\n* For more information about authentication requirements, please see https://www.owasp.org/index.php/Authentication_Cheat_Sheet"
+        ]
+      }
+    ]
+  }
+}

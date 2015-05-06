@@ -1,0 +1,230 @@
+{
+  "id": "58c6084a-cae0-4d1a-a241-4bd344a232f5",
+  "checksum": "7cfc009bad90db97d9c15a7e54f1b9b25c2ed6c0",
+  "words": {
+    "description": [
+      "h1"
+    ],
+    "if": [
+      "p"
+    ],
+    "you": [
+      "p"
+    ],
+    "need": [
+      "p"
+    ],
+    "to": [
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "generate": [
+      "p",
+      "title"
+    ],
+    "encryption": [
+      "p"
+    ],
+    "keys": [
+      "p",
+      "p"
+    ],
+    "programmatically": [
+      "p"
+    ],
+    "use": [
+      "p",
+      "p",
+      "p"
+    ],
+    "the": [
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "rngcryptoserviceprovider": [
+      "p",
+      "p",
+      "b",
+      "b",
+      "pre",
+      "pre"
+    ],
+    "class": [
+      "p",
+      "p",
+      "p"
+    ],
+    "create": [
+      "p"
+    ],
+    "and": [
+      "p",
+      "p"
+    ],
+    "initialization": [
+      "p"
+    ],
+    "vectors": [
+      "p"
+    ],
+    "do": [
+      "p"
+    ],
+    "not": [
+      "p"
+    ],
+    "random": [
+      "p",
+      "p",
+      "p",
+      "b",
+      "b",
+      "title"
+    ],
+    "unlike": [
+      "p"
+    ],
+    "creates": [
+      "p"
+    ],
+    "cryptographically": [
+      "p"
+    ],
+    "strong": [
+      "p"
+    ],
+    "numbers": [
+      "p"
+    ],
+    "that": [
+      "p"
+    ],
+    "are": [
+      "p"
+    ],
+    "fips-140": [
+      "p"
+    ],
+    "compliant": [
+      "p"
+    ],
+    "following": [
+      "p"
+    ],
+    "code": [
+      "p"
+    ],
+    "example": [
+      "p"
+    ],
+    "shows": [
+      "p"
+    ],
+    "how": [
+      "p",
+      "title"
+    ],
+    "this": [
+      "p"
+    ],
+    "function": [
+      "p"
+    ],
+    "using": [
+      "pre",
+      "pre"
+    ],
+    "systemsecurity.cryptography;.": [
+      "pre",
+      "pre"
+    ],
+    "rng": [
+      "pre",
+      "pre"
+    ],
+    "=": [
+      "pre",
+      "pre",
+      "pre",
+      "pre"
+    ],
+    "new": [
+      "pre",
+      "pre",
+      "pre",
+      "pre"
+    ],
+    "rngcryptoserviceprovider);byte[]": [
+      "pre",
+      "pre"
+    ],
+    "key": [
+      "pre",
+      "pre"
+    ],
+    "bytekeysize];rng.getbytes(key);": [
+      "pre",
+      "pre"
+    ],
+    "adapted": [
+      "p"
+    ],
+    "from": [
+      "p"
+    ],
+    "microsoft": [
+      "p"
+    ],
+    "patterns": [
+      "p"
+    ],
+    "&": [
+      "p"
+    ],
+    "practices": [
+      "p"
+    ],
+    "guidance": [
+      "p"
+    ],
+    "a": [
+      "title"
+    ],
+    "number": [
+      "title"
+    ]
+  },
+  "tags": {
+    "h1": [
+      "Description"
+    ],
+    "p": [
+      "If you need to generate encryption keys programmatically, use the RNGCryptoServiceProvider class to create keys and initialization vectors and do not use the Random class. Unlike the Random class, RNGCryptoServiceProvider creates cryptographically strong random numbers that are FIPS-140 compliant. The following code example shows how to use this function.",
+      "Adapted from Microsoft patterns & practices guidance."
+    ],
+    "b": [
+      "RNGCryptoServiceProvider",
+      "Random",
+      "Random",
+      "RNGCryptoServiceProvider"
+    ],
+    "pre": [
+      "using System.Security.Cryptography;. . .RNGCryptoServiceProvider rng = new RNGCryptoServiceProvider();byte[] key = new byte[keySize];rng.GetBytes(key);",
+      "using System.Security.Cryptography;. . .RNGCryptoServiceProvider rng = new RNGCryptoServiceProvider();byte[] key = new byte[keySize];rng.GetBytes(key);"
+    ],
+    "br": [
+      "",
+      "",
+      ""
+    ],
+    "hr": [
+      ""
+    ]
+  },
+  "links": [],
+  "html": "<h1>Description</h1>\r\n  <p>If you need to generate encryption keys programmatically, use the <b>RNGCryptoServiceProvider</b> class to create keys and initialization vectors and do not use the <b>Random</b> class. Unlike the <b>Random</b> class, <b>RNGCryptoServiceProvider</b> creates cryptographically strong random numbers that are FIPS-140 compliant. The following code example shows how to use this function. </p>\r\n  <pre>\r\n    <pre>using System.Security.Cryptography;<br />. . .<br />RNGCryptoServiceProvider rng = new RNGCryptoServiceProvider();<br />byte&#91;&#93; key = new byte&#91;keySize&#93;;rng.GetBytes(key);</pre>\r\n  </pre>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
+}

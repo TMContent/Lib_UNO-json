@@ -1,0 +1,68 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "-787915755",
+      "Content_Hash": "-1284482158"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "6daf44c7-fe2c-45f6-8854-7aa1e3a1030f"
+        ],
+        "Id_History": [
+          "6daf44c7-fe2c-45f6-8854-7aa1e3a1030f,c1ee4597-a579-4959-a8e8-2eeb7ba52131,"
+        ],
+        "Library_Id": [
+          "c037d0d2-0617-44f3-b846-21dc3d02c4f8"
+        ],
+        "Title": [
+          "Calculate Destinations of Redirects And Forwards Without User Input"
+        ],
+        "Category": [
+          "Design Considerations"
+        ],
+        "Phase": [
+          "Design"
+        ],
+        "Technology": [
+          "PHP"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          "Calculate Destinations of Redirects And Forwards Without User Input"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ],
+        "Source": [
+          "SI"
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PHP</li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Calculate destinations of redirects and forwards without user input.</p>\r\n  <h1>Why</h1>\r\n  <p>Using input to calculate destinations of redirects or forwards may allow an attacker to create hyperlinks that appears to point to legitimate sites but redirect to malicious pages controlled by the attacker. This technique is often used by phishers to trick people into visiting fake sites that steal authentication credentials.</p>\r\n  <h1>When</h1>\r\n  <p>Use this guideline when writing a web application that uses redirects or forwards. Avoid using redirects or forwards in web applications, if possible.</p>\r\n  <h1>How</h1>\r\n  <p>Perform the following actions to calculate destinations of redirects and forwards without user input:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Find redirects and forwards.</strong> Find all pages that perform redirects or forwards. </p>\r\n      <li>\r\n        <p>\r\n          <strong>Identify dangerous redirects and forwards.</strong> Find all redirects and forwards that rely on user input to calculate their destinations.</p>\r\n        <li>\r\n          <p>\r\n            <strong>Rewrite redirects and forwards.</strong> Consider making design or code changes to get rid of each redirect or forward, if possible. If a redirect or forward is absolutely necessary, consider how it may be rewritten to operate without user input. This is usually possible based on assumptions made in the application design.</p>\r\n        </li>\r\n      </li>\r\n    </li>\r\n  </ol>\r\n  <h1>Redirect and Forward&nbsp;Validation&nbsp;Guidelines</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/9dd99e67-7f4b-4c3b-b355-253edd7b29a3\">Don't Use Redirects or Forwards if Possible</a>\r\n      <li>\r\n        <a href=\"/article/6daf44c7-fe2c-45f6-8854-7aa1e3a1030f\">Calculate Destinations of Redirects and Forwards Without User Input</a>\r\n        <li>\r\n          <a href=\"/article/f86bc5a9-e545-461b-9ba5-c6659841250e\">Validate Destinations of Redirects and Forwards</a>\r\n          <li>\r\n            <a href=\"/article/d718d5f2-247e-4299-a6ca-bfeaaac67eea\">Use Mapping Values When Redirecting on User Input</a>\r\n          </li>\r\n        </li>\r\n      </li>\r\n    </li>\r\n  </ul>\r\n  <h1>Redirect and Forward Validation&nbsp;Checklists</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/af8c3ff3-490d-40fe-bed3-eca342fdba4e\">Redirects and Forwards Are Not Used Unless Necessary</a>\r\n    </li>\r\n    <li>\r\n      <a href=\"/article/a1061c45-7a6e-4257-ab36-f3a693d45ad3\">Destinations of Redirects and Forwards Are Calculated Without User Input</a>\r\n    </li>\r\n    <li>\r\n      <a href=\"/article/f87f29d2-388b-4d5f-bab5-bdf7b17eff85\">Destinations of Redirects and Forwards Are Validated</a>\r\n    </li>\r\n    <li>\r\n      <a href=\"/article/ff0f750a-308b-4c78-8602-3c6d603e406d\">Mapping Values Are Used for Redirects and Forwards</a>\r\n    </li>\r\n  </ul>"
+        ]
+      }
+    ]
+  }
+}

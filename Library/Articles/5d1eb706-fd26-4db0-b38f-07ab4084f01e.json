@@ -1,0 +1,59 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "0",
+      "Content_Hash": "0"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "5d1eb706-fd26-4db0-b38f-07ab4084f01e"
+        ],
+        "Id_History": [
+          "5d1eb706-fd26-4db0-b38f-07ab4084f01e,5a02bfd9-afa5-415a-8527-e1a9a60bc269,"
+        ],
+        "Library_Id": [
+          "be5273b1-d682-4361-99d9-6234f2d47eb7"
+        ],
+        "Title": [
+          "Use Parameterized Mail APIs"
+        ],
+        "Category": [
+          "Dangerous APIs"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "Java"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          "Use Parameterized Mail APIs"
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "false",
+          "DataType": "wikitext"
+        },
+        "Data": [
+          "==Applies To==\r\n\r\n* Java\r\n\r\n==What to Do==\r\n\r\nUse parameterized APIs to send email. Don't implement your own SMTP client code. Use APIs that separate different parts of the message into different parameters. For example, the recipient address should be separate from the message subject and the message body.\r\n\r\n==Why==\r\n\r\nUsing APIs that provide SMTP functionality is better than writing your own SMTP client code because it reduces the risk of introducing Mail Command Injection vulnerabilities. Most Web Application platforms provide APIs that can be used to send email and these APIs should be used instead of custom SMTP client code. \r\n\r\n==When==\r\n\r\nUse this Guideline when your application sends email.\r\n\r\n==How==\r\n\r\nTo use parameterized APIs to send email:\r\n\r\n# **Identify code that sends email.** Review application code to find functions that send email. \r\n# **Identify available email APIs.** Review platform documentation to find available APIs that can be used to send email.\r\n# **Use parameterized email APIs.** If the application uses custom SMTP client code to send email, replace that code with calls to email APIs provided by the platform.\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n"
+        ]
+      }
+    ]
+  }
+}

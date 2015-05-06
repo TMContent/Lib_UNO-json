@@ -1,0 +1,299 @@
+{
+  "id": "00000000-0000-0000-0000-0000008dc5ce",
+  "checksum": "b6470f029521ffb009b81ba1f456572c2defa924",
+  "words": {
+    "applies": [
+      "h2"
+    ],
+    "to": [
+      "h2",
+      "h2",
+      "p",
+      "p"
+    ],
+    "all": [
+      "ul",
+      "li"
+    ],
+    "android": [
+      "ul",
+      "li"
+    ],
+    "applications": [
+      "ul",
+      "li",
+      "p"
+    ],
+    "what": [
+      "h2"
+    ],
+    "do": [
+      "h2"
+    ],
+    "avoid": [
+      "p",
+      "p",
+      "title"
+    ],
+    "using": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "native": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "ul",
+      "li",
+      "a",
+      "title"
+    ],
+    "code": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "ul",
+      "li",
+      "a",
+      "title"
+    ],
+    "develop": [
+      "p"
+    ],
+    "why": [
+      "h2"
+    ],
+    "increases": [
+      "p"
+    ],
+    "the": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "risk": [
+      "p"
+    ],
+    "of": [
+      "p",
+      "p"
+    ],
+    "memory": [
+      "p"
+    ],
+    "management": [
+      "p"
+    ],
+    "vulnerabilities": [
+      "p",
+      "p",
+      "p"
+    ],
+    "such": [
+      "p"
+    ],
+    "as": [
+      "p"
+    ],
+    "buffer": [
+      "p"
+    ],
+    "overflows": [
+      "p"
+    ],
+    "and": [
+      "p",
+      "p"
+    ],
+    "format": [
+      "p"
+    ],
+    "string": [
+      "p"
+    ],
+    "how": [
+      "h2"
+    ],
+    "examine": [
+      "p"
+    ],
+    "application": [
+      "p"
+    ],
+    "architecture": [
+      "p"
+    ],
+    "identify": [
+      "p"
+    ],
+    "any": [
+      "p",
+      "p"
+    ],
+    "components": [
+      "p",
+      "p",
+      "p"
+    ],
+    "consider": [
+      "p"
+    ],
+    "replacing": [
+      "p"
+    ],
+    "with": [
+      "p"
+    ],
+    "java": [
+      "p"
+    ],
+    "equivalents": [
+      "p"
+    ],
+    "it": [
+      "p"
+    ],
+    "may": [
+      "p"
+    ],
+    "be": [
+      "p"
+    ],
+    "appropriate": [
+      "p"
+    ],
+    "keep": [
+      "p"
+    ],
+    "if": [
+      "p"
+    ],
+    "they": [
+      "p"
+    ],
+    "carry": [
+      "p"
+    ],
+    "out": [
+      "p"
+    ],
+    "simple": [
+      "p"
+    ],
+    "but": [
+      "p"
+    ],
+    "performance-sensitive": [
+      "p"
+    ],
+    "operations": [
+      "p"
+    ],
+    "in": [
+      "p"
+    ],
+    "future": [
+      "p"
+    ],
+    "weigh": [
+      "p"
+    ],
+    "risks": [
+      "p"
+    ],
+    "additional": [
+      "p"
+    ],
+    "against": [
+      "p"
+    ],
+    "performance": [
+      "p"
+    ],
+    "benefits": [
+      "p"
+    ],
+    "when": [
+      "p"
+    ],
+    "considering": [
+      "p"
+    ],
+    "related": [
+      "h2"
+    ],
+    "items": [
+      "h2"
+    ],
+    "is": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "not": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "used": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "unless": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "necessary": [
+      "ul",
+      "li",
+      "a"
+    ]
+  },
+  "tags": {
+    "h2": [
+      "Applies To",
+      "What to Do",
+      "Why",
+      "How",
+      "Related Items"
+    ],
+    "ul": [
+      "All Android applications.",
+      "Native Code Is Not Used Unless Necessary"
+    ],
+    "li": [
+      "All Android applications.",
+      "Native Code Is Not Used Unless Necessary"
+    ],
+    "p": [
+      "Avoid using native code to develop applications.",
+      "Using native code increases the risk of memory management vulnerabilities, such as buffer overflows and format string vulnerabilities.",
+      "Examine the application architecture and identify any native code components. Consider replacing any native code components with Java equivalents. It may be appropriate to keep native code components if they carry out simple but performance-sensitive operations. Avoid using native code in the future. Weigh the risks of additional vulnerabilities against the performance benefits when considering using native code."
+    ],
+    "a": [
+      "Native Code Is Not Used Unless Necessary"
+    ]
+  },
+  "links": [
+    {
+      "href": "00000000-0000-0000-0000-0000007a4847",
+      "text": "Native Code Is Not Used Unless Necessary"
+    }
+  ],
+  "html": "<h2>Applies To</h2><ul><li> All Android applications.</li>\n</ul><h2>What to Do</h2><p>Avoid using native code to develop applications.\n</p><h2>Why</h2><p>Using native code increases the risk of memory management vulnerabilities, such as buffer overflows and format string vulnerabilities.\n</p><h2>How</h2><p>Examine the application architecture and identify any native code components. Consider replacing any native code components with Java equivalents. It may be appropriate to keep native code components if they carry out simple but performance-sensitive operations. Avoid using native code in the future. Weigh the risks of additional vulnerabilities against the performance benefits when considering using native code.\n</p><h2>Related Items</h2><ul><li> <a href=\"00000000-0000-0000-0000-0000007a4847\">Native Code Is Not Used Unless Necessary</a></li></ul>"
+}

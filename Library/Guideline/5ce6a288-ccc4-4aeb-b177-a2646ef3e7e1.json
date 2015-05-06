@@ -1,0 +1,68 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "-1981518344",
+      "Content_Hash": "-381673223"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "5ce6a288-ccc4-4aeb-b177-a2646ef3e7e1"
+        ],
+        "Id_History": [
+          "5ce6a288-ccc4-4aeb-b177-a2646ef3e7e1,b05955f1-6726-4c41-9efc-8811b6bf5718,"
+        ],
+        "Library_Id": [
+          "92718d53-36b2-47bc-b6f5-e60994385f46"
+        ],
+        "Title": [
+          "Know Your Authentication Options"
+        ],
+        "Category": [
+          "Design Considerations"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "WCF 3.5"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          "Know Your Authentication Options"
+        ],
+        "Tag": [
+          "WCF 3.5"
+        ],
+        "Security_Demand": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          "J.D. Meier, Jason Taylor, Prashant Bansode, Carlos Farre, Madhu Sundararajan, Rob Boucher, Steve Gregersen"
+        ],
+        "Status": [
+          ""
+        ],
+        "Source": [
+          "SI"
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>Microsoft® Windows Communication Foundation (WCF) 3.5 \r\n<li>Microsoft Visual Studio® 2008</li></li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Consider what authentication and authorizations options you have and which makes sense for your scenario.</p>\r\n  <h1>How</h1>\r\n  <p>Understand the authentication options that map to your deployment scenario.</p>\r\n  <p>\r\n    <strong>Internet</strong>\r\n  </p>\r\n  <ul>\r\n    <li>\r\n      <strong>Username authentication with SQL Membership</strong>\r\n      <strong>Provider:</strong> If your users are not in active directory, consider SQL Membership Provider. This will give you a store that can be easily deployed and created. Configure message or mixed mode security to protect your users’ credentials. \r\n<li><strong>Basic authentication with</strong><strong>Windows:</strong> If your users are already in active directory, or local machine accounts, consider using basic authentication. Use transport security to secure the communication channel and protect your credentials. \r\n<li><strong>Username authentication with Custom</strong><strong>Store:</strong> If your users are in a custom store, consider using user name authentication with a custom validator in order to validate user credentials against your custom store. Unlike the other scenarios, you will have to write custom code to validate your user’s credentials. Use message or mixed mode security to protect your users’ credentials. \r\n<li><strong>Certificate authentication with</strong><strong>certificates:</strong> If your clients are partners or mobile clients connecting over VPN in a peer-to-peer authentication scenario, consider using certificate authentication. If your users have Windows accounts in your domain you can map the certificates to Windows accounts and enable authorization checks based on Windows roles. Certificate authentication requires that you manage certificates, however, it allows seamless authentication for clients who are outside your firewall. Use transport security to secure the communication channel and protect your credentials.</li></li></li></li>\r\n  </ul>\r\n  <p>\r\n    <strong>Intranet</strong>\r\n  </p>\r\n  <ul>\r\n    <li>\r\n      <strong>Username authentication with SQL Membership</strong>\r\n      <strong>Provider:</strong> If your users are not in active directory, consider SQL Membership Provider. This will give you a store that can be easily deployed and created. Use transport security to secure the communication channel and protect your credentials. \r\n<li><strong>Windows authentication with</strong><strong>windows:</strong> If your users are already in active directory or local machine accounts, consider using windows authentication to leverage this infrastructure. Windows authentication will give you also the benefits of using Windows roles for authorization checks. Use transport security to secure the communication channel and protect your credentials. Consider that local machine accounts configure a authentication with NTLM protocol, which is prone to brute force attacks. For more secure peer to peer authentication, consider using certificate authentication. \r\n<li><strong>Username authentication with Custom</strong><strong>Store:</strong> If your users are in a custom store, consider using user name authentication with a custom validator in order to validate user credentials against your custom store. Unlike the other scenarios, you will have to write custom code to validate your user’s credentials. Use message or mixed mode security to protect your users’ credentials. \r\n<li><strong>Certificate authentication with</strong><strong>certificates:</strong> If your clients are partners or mobile clients connecting over VPN in a peer-to-peer authentication scenario, consider using certificate authentication. If your users have Windows accounts in your domain you can map the certificates to Windows accounts and enable authorization checks based on Windows roles. Certificate authentication requires that you manage certificates, however, it allows seamless authentication for clients who are outside your firewall. Use transport security to secure the communication channel and protect your credentials.</li></li></li></li>\r\n  </ul>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,319 @@
+{
+  "id": "fa21c54f-e5a7-45a9-a80f-9eb9b147c1d6",
+  "checksum": "9fc4e9b1c744da9a7e82a234cb8729c65f2d84d0",
+  "words": {
+    "what": [
+      "h2"
+    ],
+    "to": [
+      "h2",
+      "p",
+      "p",
+      "p"
+    ],
+    "do": [
+      "h2"
+    ],
+    "require": [
+      "p",
+      "p",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "li",
+      "strong",
+      "title"
+    ],
+    "authentication": [
+      "p",
+      "p",
+      "p",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "strong",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "strong",
+      "title"
+    ],
+    "for": [
+      "p",
+      "p",
+      "p",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "li",
+      "li",
+      "strong",
+      "title"
+    ],
+    "all": [
+      "p",
+      "p",
+      "p",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "li",
+      "strong",
+      "title"
+    ],
+    "users": [
+      "p",
+      "p",
+      "p",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "li",
+      "strong",
+      "title"
+    ],
+    "why": [
+      "h2"
+    ],
+    "prevent": [
+      "p"
+    ],
+    "unauthorized": [
+      "p"
+    ],
+    "access": [
+      "p"
+    ],
+    "if": [
+      "p",
+      "ol",
+      "li"
+    ],
+    "a": [
+      "p",
+      "p",
+      "ol",
+      "ol",
+      "li",
+      "li"
+    ],
+    "user": [
+      "p",
+      "ol",
+      "li"
+    ],
+    "account": [
+      "p",
+      "p"
+    ],
+    "is": [
+      "p",
+      "ol",
+      "li"
+    ],
+    "not": [
+      "p"
+    ],
+    "protected": [
+      "p"
+    ],
+    "with": [
+      "p"
+    ],
+    "at": [
+      "p",
+      "ol",
+      "li"
+    ],
+    "least": [
+      "p",
+      "ol",
+      "li"
+    ],
+    "password": [
+      "p",
+      "ol",
+      "li"
+    ],
+    "an": [
+      "p"
+    ],
+    "attacker": [
+      "p"
+    ],
+    "will": [
+      "p"
+    ],
+    "be": [
+      "p"
+    ],
+    "able": [
+      "p"
+    ],
+    "easily": [
+      "p"
+    ],
+    "use": [
+      "p"
+    ],
+    "that": [
+      "p",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "li",
+      "li"
+    ],
+    "how": [
+      "h2"
+    ],
+    "force": [
+      "p"
+    ],
+    "identify": [
+      "ol",
+      "li",
+      "strong"
+    ],
+    "code": [
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "strong",
+      "li",
+      "li"
+    ],
+    "make": [
+      "ol",
+      "li"
+    ],
+    "spreadsheet": [
+      "ol",
+      "li"
+    ],
+    "about": [
+      "ol",
+      "li"
+    ],
+    "the": [
+      "ol",
+      "ol",
+      "li",
+      "li"
+    ],
+    "implements": [
+      "ol",
+      "ol",
+      "li",
+      "li"
+    ],
+    "in": [
+      "ol",
+      "li"
+    ],
+    "application": [
+      "ol",
+      "li"
+    ],
+    "it": [
+      "ol",
+      "li"
+    ],
+    "doesn't": [
+      "ol",
+      "li"
+    ],
+    "already": [
+      "ol",
+      "li"
+    ],
+    "modify": [
+      "ol",
+      "li"
+    ],
+    "so": [
+      "ol",
+      "li"
+    ],
+    "required": [
+      "ol",
+      "li"
+    ],
+    "successful": [
+      "ol",
+      "li"
+    ],
+    "remove": [
+      "ol",
+      "li"
+    ],
+    "any": [
+      "ol",
+      "li"
+    ],
+    "special": [
+      "ol",
+      "li"
+    ],
+    "hard-coded": [
+      "ol",
+      "li"
+    ],
+    "accounts": [
+      "ol",
+      "li"
+    ],
+    "don't": [
+      "ol",
+      "li"
+    ]
+  },
+  "tags": {
+    "h2": [
+      "What to Do",
+      "Why",
+      "How"
+    ],
+    "p": [
+      "Require authentication for all users.",
+      "Require authentication for all users to prevent unauthorized access. If a user account is not protected with at least a password, an attacker will be able to easily use that account.",
+      "To force authentication for all users:"
+    ],
+    "ol": [
+      "Identify authentication code. Make a spreadsheet about the code that implements authentication in the application.\n Require authentication for all users. If it doesn't already require authentication for all users, modify authentication code so that at least a password is required for successful authentication for all users. Remove code that implements any special hard-coded user accounts that don't require authentication."
+    ],
+    "li": [
+      "Identify authentication code. Make a spreadsheet about the code that implements authentication in the application.",
+      "Require authentication for all users. If it doesn't already require authentication for all users, modify authentication code so that at least a password is required for successful authentication for all users. Remove code that implements any special hard-coded user accounts that don't require authentication."
+    ],
+    "strong": [
+      "Identify authentication code.",
+      "Require authentication for all users."
+    ]
+  },
+  "links": [],
+  "html": "<h2>What to Do</h2><p>Require authentication for all users.\n</p><h2>Why</h2><p>Require authentication for all users to prevent unauthorized access. If a user account is not protected with at least a password, an attacker will be able to easily use that account.\n</p><h2>How</h2><p>To force authentication for all users:\n</p><ol>\n<li> <strong>Identify authentication code.</strong> Make a spreadsheet about the code that implements authentication in the application.</li>\n<li> <strong>Require authentication for all users.</strong> If it doesn't already require authentication for all users, modify authentication code so that at least a password is required for successful authentication for all users. Remove code that implements any special hard-coded user accounts that don't require authentication.</li>\n</ol>"
+}

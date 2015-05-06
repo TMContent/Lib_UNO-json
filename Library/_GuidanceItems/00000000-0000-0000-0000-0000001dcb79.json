@@ -1,0 +1,59 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "0",
+      "Content_Hash": "0"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "00000000-0000-0000-0000-0000001dcb79"
+        ],
+        "Id_History": [
+          "00000000-0000-0000-0000-0000001dcb79,79391a6e-4736-461f-9dbd-313e8fa5ee89,"
+        ],
+        "Library_Id": [
+          "f215ceee-9a08-41d9-b2c1-bbcc058a8f32"
+        ],
+        "Title": [
+          "Do Not Log Sensitive Data"
+        ],
+        "Category": [
+          "Privacy"
+        ],
+        "Phase": [
+          "Design"
+        ],
+        "Technology": [
+          "Android"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          "Do Not Log Sensitive Data"
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "false",
+          "DataType": "WikiText"
+        },
+        "Data": [
+          "==Applies To==\r\n\r\n* Android applications that log data.\r\n* Android applications that handle sensitive data.\r\n\r\n==What to Do==\r\n\r\nDo not log sensitive data.\r\n\r\n==Why==\r\n\r\nIf sensitive data is logged, it may be recovered by an attacker if the device is lost or compromised.\r\n\r\n==How==\r\n\r\nTo prevent logging of sensitive data:\r\n\r\n# **Identify sensitive data.** Make a list of all sensitive information handled by your application. Some examples are:\r\n#* Passwords\r\n#* Encryption keys\r\n#* Personal information\r\n# **Identify logging code.** Find all code that uses the //Log// class. \r\n# **Review logging code.** Remove any logging code that writes sensitive data to log entries.\r\n\r\n==Privacy Guidelines==\r\n\r\n* [[00000000-0000-0000-0000-000000561ff3|Do Not Cache Sensitive Data]]\r\n* [[00000000-0000-0000-0000-0000007e1362|Do Not Log Location Data]]\r\n* [[00000000-0000-0000-0000-0000001dcb79|Do Not Log Sensitive Data]]\r\n* [[00000000-0000-0000-0000-000000629cc3|Delete Cached Data after Use]]\r\n\r\n==Privacy Checklists==\r\n\r\n* [[00000000-0000-0000-0000-0000003b2aca|Sensitive Data Is Not Cached]]\r\n* [[00000000-0000-0000-0000-0000006c27b2|Location Data Is Not Logged]]\r\n* [[00000000-0000-0000-0000-0000005a7753|Sensitive Data Is Not Logged]]\r\n* [[00000000-0000-0000-0000-0000007c99a7|Cached Data Is Deleted after Use]]\r\n\r\n==Additional Resources==\r\n\r\n* For more information about logging on Android, please see http://developer.android.com/tools/debugging/debugging-log.html\r\n* For more information about the //Log// class, please see http://developer.android.com/reference/android/util/Log.html\r\n* For a tutorial on Android logging, please see http://mobile.tutsplus.com/tutorials/android/logcat_android-sdk/"
+        ]
+      }
+    ]
+  }
+}
