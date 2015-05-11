@@ -1,0 +1,53 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "437474786",
+      "Content_Hash": "-2066892566"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "0ca62288-978f-4885-af68-cd2d59fb1a6e"
+        ],
+        "Library_Id": [
+          "47a10a30-15ad-4cfd-bf82-00e9bb2037f6"
+        ],
+        "Title": [
+          "Protect the Cardholder Data"
+        ],
+        "Category": [
+          "Sensitive Data"
+        ],
+        "Phase": [
+          "Deployment"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          "Protect the Cardholder Data"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 3</li>\r\n    <li>PCI DSS Requirement 3.3</li>\r\n    <li>PCI DSS Requirement 3.4.a</li>\r\n    <li>PCI DSS Requirement 3.6</li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Formulate and implement the information security policy to protect the cardholder data.</p>\r\n  <h1>How</h1>\r\n  <p>Perform the following actions to protect the cardholder data in compliance with PCI DSS:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Formulate the data retention policy. </strong>The data retention policy specifies what type of cardholder data is stored, how long, and why. For information about preparing the data retention policy for PCI DSS compliance, please see the article\r\n \"Prepare the Data Retention and Disposal Policies\" linked below. </p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Formulate the data disposal policy. </strong>The data disposal policy specifies how cardholder data that has exceeded retention requirements should be disposed. For information about preparing the data disposal policy for PCI DSS compliance, please\r\n see the article \"Prepare the Data Retention and Disposal Policies\" linked below.\r\n</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Formulate the key management procedures. </strong>The key management procedures explain how cryptography is applied to secure the cardholder data. For information about preparing the key management procedures for PCI DSS compliance, please see the\r\n article \"Prepare the Key Management Procedures\" linked below.</p>\r\n    </li>\r\n  </ol>\r\n  <h1>Additional Resources</h1>\r\n  <ul>\r\n    <li>For more information about designing and documenting key management procedures, please see\r\n<a href=\"http://csrc.nist.gov/\">http://csrc.nist.gov</a> &amp;nbsp;</li>\r\n  </ul>\r\n  <h1>Related Items</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/40de7c85-0fdd-4894-a3a1-943d4316fb12\">Guideline: Prepare the Data Retention and Disposal Policies</a>\r\n    </li>\r\n    <li>\r\n      <a href=\"/article/9bb67e82-ea00-4a56-95fd-67720041afe6\">Guideline: Prepare the Key Management Procedures</a>\r\n    </li>\r\n  </ul>"
+        ]
+      }
+    ]
+  }
+}

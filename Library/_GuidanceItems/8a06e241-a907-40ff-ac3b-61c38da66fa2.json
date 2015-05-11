@@ -1,0 +1,62 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "-165225717",
+      "Content_Hash": "-13034967"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "8a06e241-a907-40ff-ac3b-61c38da66fa2"
+        ],
+        "Library_Id": [
+          "47a10a30-15ad-4cfd-bf82-00e9bb2037f6"
+        ],
+        "Title": [
+          "Render the PAN Unreadable Whenever It Is Stored"
+        ],
+        "Category": [
+          "Sensitive Data"
+        ],
+        "Phase": [
+          "Deployment"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          "Render the PAN Unreadable Whenever It Is Stored"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 3.4</li>\r\n    <li>PCI DSS Requirement 3.4.a</li>\r\n    <li>PCI DSS Requirement 3.4.b</li>\r\n    <li>PCI DSS Requirement 3.4.c</li>\r\n    <li>PCI DSS Requirement 3.4.d</li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Render the PAN unreadable whenever it is stored.</p>\r\n  <h1>Why</h1>\r\n  <p>The PAN should be rendered unreadable whenever it is stored to prevent disclosure in the event of a successful compromise.</p>\r\n  <h1>How</h1>\r\n  <p>Identify if and where the PAN is stored. Choose one of the following mechanisms to protect the PAN: one-way crypto-hashes, truncation, index tokens and pads, and strong cryptography. Implement the chosen mechanism.</p>"
+        ]
+      }
+    ]
+  }
+}

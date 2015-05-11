@@ -1,0 +1,53 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "1551014448",
+      "Content_Hash": "-1208731378"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "c267e066-0c13-4331-bf58-81b6ea9580cf"
+        ],
+        "Library_Id": [
+          "47a10a30-15ad-4cfd-bf82-00e9bb2037f6"
+        ],
+        "Title": [
+          "Formulate a Data Access Control Policy"
+        ],
+        "Category": [
+          "Documentation and Policy"
+        ],
+        "Phase": [
+          "Deployment"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          "Formulate a Data Access Control Policy"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 7.1 </li>\r\n    <li>PCI DSS Requirement 7.1.1 </li>\r\n    <li>PCI DSS Requirement 7.1.2 </li>\r\n    <li>PCI DSS Requirement 7.1.3 </li>\r\n    <li>PCI DSS Requirement 7.1.4</li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Formulate a data access control policy.</p>\r\n  <h1>Why</h1>\r\n  <p>A data access&amp;nbsp;control policy defines data access privileges and is useful for implementing access control systems correctly.</p>\r\n  <h1>When</h1>\r\n  <p>Formulate a data access control policy before assigning access privileges.</p>\r\n  <h1>How</h1>\r\n  <p>Perform the following tasks to formulate the data access control policy in compliance with PCI DSS:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Define the data control policy.</strong> Express each requirement as a point of the data access control policy. For example, the least privilege requirement may be written as \"Each user shall have the least privileges necessary to carry out his job\r\n functions.\" The data control policy should include the following requirements: </p>\r\n      <ul>\r\n        <li>Principle of least privilege to be used to define access privileges for each user\r\n</li>\r\n        <li>Privileges&amp;nbsp;to be&amp;nbsp;defined based on each user's job functions </li>\r\n        <li>An access authorization form to be created for each user </li>\r\n        <li>Automated access control systems to be implemented</li>\r\n      </ul>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Data Access Authorization Documents. </strong>Identify job functions of each employee. Identify data access required for each employee. Define the data access privileges for each employee based on job responsibilities. Prepare access authorization\r\n documents for each user. These documents may be digital or on paper.&amp;nbsp;Have management review and authorize the data access privilege specifications. Once approved, implement the data access control systems.\r\n</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Update documentation.</strong> Attach the access control policy to the information security policy. Attach the access authorization documents to the network documentation.</p>\r\n    </li>\r\n  </ol>\r\n  <h1>Related Items</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/170b81df-05ee-43fd-958d-49b8e5661779\">Adopt the Principle of Least Privilege</a>\r\n    </li>\r\n  </ul>"
+        ]
+      }
+    ]
+  }
+}

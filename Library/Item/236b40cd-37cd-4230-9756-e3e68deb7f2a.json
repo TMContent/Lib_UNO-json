@@ -1,0 +1,62 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "1013885292",
+      "Content_Hash": "-281079115"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "236b40cd-37cd-4230-9756-e3e68deb7f2a"
+        ],
+        "Library_Id": [
+          "e7d92b5b-e1d8-4039-b019-8b02594ea93a"
+        ],
+        "Title": [
+          "Use Static Format Strings"
+        ],
+        "Category": [
+          "APIs"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          "Use Static Format Strings"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h2>What to Do</h2>\r\n  <p>Ensure that all format string functions are passed a static string which cannot be controlled by the user and that the proper number of arguments are always sent to that function as well. If at all possible, use functions that do not support the %n operator\r\n in format strings.</p>\r\n  <h1>Why</h1>\r\n  <p>An attacker that can control the contents of a format string may be able to execute arbitrary code.</p>\r\n  <h1>When</h1>\r\n  <p>Avoid using user input in format strings when using formatted input-output functions.</p>\r\n  <h1>How</h1>\r\n  <p>Perform the following actions to assure that user input is not used in format strings:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Identify code that uses formatted input-output functions.</strong> The following is a list of formatted input-output functions:</p>\r\n      <ul>\r\n        <li>sprintf </li>\r\n        <li>_snprintf </li>\r\n        <li>printf </li>\r\n        <li>fprintf </li>\r\n        <li>scanf </li>\r\n        <li>fscanf </li>\r\n        <li>sscanf </li>\r\n        <li>swprintf </li>\r\n        <li>wsprintfA </li>\r\n        <li>wsprintfW </li>\r\n        <li>vsprintf </li>\r\n        <li>vswprintf </li>\r\n        <li>_snwprintf </li>\r\n        <li>_vsnprintf </li>\r\n        <li>_vsnwprintf </li>\r\n        <li>vprintf </li>\r\n        <li>vwprintf </li>\r\n        <li>vfprintf </li>\r\n        <li>vwfprintf </li>\r\n        <li>fwscanf </li>\r\n        <li>wscanf </li>\r\n        <li>swscanf</li>\r\n      </ul>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Avoid using formatted functions.</strong> Consider replacing formatted input-output functions with iostream C&amp;#43;&amp;#43; functions, which are not prone to format string vulnerabilities.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>(Re-)Write code to exclude user input from format strings.</strong> Place user input in separate variables and pass it as variadic arguments to the formatted input-output functions, instead of placing it in a format strings.</p>\r\n    </li>\r\n  </ol>\r\n  <h1>Additional Resources</h1>\r\n  <ul>\r\n    <li>For more information about excluding user input from format strings, please see\r\n<a href=\"https://www.securecoding.cert.org/confluence/display/cplusplus/FIO30-CPP.&amp;#43;Exclude&amp;#43;user&amp;#43;input&amp;#43;from&amp;#43;format&amp;#43;strings\">\r\nhttps://www.securecoding.cert.org/confluence/display/cplusplus/FIO30-CPP.&amp;#43;Exclude&amp;#43;user&amp;#43;input&amp;#43;from&amp;#43;format&amp;#43;strings</a></li>\r\n  </ul>"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "-732305896",
+      "Content_Hash": "-368518426"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "54e8272e-a1ec-4152-8d7a-81f96be9e42d"
+        ],
+        "Library_Id": [
+          "47a10a30-15ad-4cfd-bf82-00e9bb2037f6"
+        ],
+        "Title": [
+          "Prevent Password Recycling"
+        ],
+        "Category": [
+          "Authentication"
+        ],
+        "Phase": [
+          "Deployment"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          "Prevent Password Recycling"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 8.5.12</li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Do not allow users to use the same password as any of the four previous ones when choosing new passwords. This functionality is commonly known as \"password history\".</p>\r\n  <h1>Why</h1>\r\n  <p>Not allowing old passwords to be recycled ensures that the old passwords cannot be used if they have been compromised.</p>\r\n  <h1>How</h1>\r\n  <p>Perform the following actions to assure that previously used passwords are forbidden in an Active Directory environment:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Launch the \"Group Policy Management\" console. </strong>The \"Group Policy Management\" console is included in Windows 2008, but has to be downloaded and installed on Windows 2003 and 2000. The link to the download is available at the bottom of this\r\n page. To launch the \"Group Policy Management\" console, execute the \"gpmc.msc\" command.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Edit or create a Group Policy Object (GPO). </strong>To create and activate a new Group Policy Object (GPO), launch \"The Group Policy Management\" console, right click on the domain and select \"Create and Link a GPO Here.\" To edit an existing GPO,\r\n navigate to the \"Group Policy Objects\" folder under the current domain, right click on the GPO and select \"Edit\" - this will open the \"Group Policy Object Editor.\" To change the settings of a GPO using the \"Group Policy Object Editor, navigate the folders\r\n to find the setting of interest, double click on it, set the desired option(s).</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Enable the \"Password history\" policy.</strong> The \"Password History\" option is located under \"Windows Settings\", \"Security Settings\", \"Account Policies\", \"Password Policy\", “Enforce password history\". Set the \"Enforce password history\" policy to\r\n remember at least the last four passwords.</p>\r\n    </li>\r\n  </ol>"
+        ]
+      }
+    ]
+  }
+}

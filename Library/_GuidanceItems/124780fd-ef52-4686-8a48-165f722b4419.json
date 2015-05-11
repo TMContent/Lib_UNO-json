@@ -1,0 +1,53 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "-1384761833",
+      "Content_Hash": "-649748301"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "124780fd-ef52-4686-8a48-165f722b4419"
+        ],
+        "Library_Id": [
+          "47a10a30-15ad-4cfd-bf82-00e9bb2037f6"
+        ],
+        "Title": [
+          "Usage Policies Are Defined"
+        ],
+        "Category": [
+          "Documentation and Policy"
+        ],
+        "Phase": [
+          "Deployment"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Checklist Item"
+        ],
+        "DirectLink": [
+          "Usage Policies Are Defined"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 12.3 </li>\r\n    <li>PCI DSS Requirement 12.3.1 </li>\r\n    <li>PCI DSS Requirement 12.3.2 </li>\r\n    <li>PCI DSS Requirement 12.3.3 </li>\r\n    <li>PCI DSS Requirement 12.3.4 </li>\r\n    <li>PCI DSS Requirement 12.3.5 </li>\r\n    <li>PCI DSS Requirement 12.3.6 </li>\r\n    <li>PCI DSS Requirement 12.3.7 </li>\r\n    <li>PCI DSS Requirement 12.3.8 </li>\r\n    <li>PCI DSS Requirement 12.3.9 </li>\r\n    <li>PCI DSS Requirement 12.3.10.a</li>\r\n    <li>PCI DSS Requirement 12.3.10.b</li>\r\n  </ul>\r\n  <h1>What to Check For</h1>\r\n  <p>The information security policy should define acceptable use of technology.</p>\r\n  <h1>How to Check</h1>\r\n  <p>Use the following steps to check that usage policies are defined in compliance with PCI DSS:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Verify that management approval is required:</strong> Examine the acceptable use policies in the information security policy to verify that they require management authorization to use the technology.\r\n</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Check that&amp;nbsp;authentication is required:</strong> Examine the acceptable use policies to verify that they require authentication to use the technology.\r\n</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Check that an authorized device list is required:</strong> Examine the security documentation to verify that it includes a list of devices and users authorized to use them.\r\n</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Check that labeling is required:</strong> Examine the acceptable use policies to verify that they require devices to be labeled with information about the owner, contact information, and purpose.\r\n</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Check that acceptable use is required:</strong> Examine the acceptable use policies to verify that they require acceptable use.\r\n</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Verify that acceptable network locations are defined:</strong> Examine the acceptable use policies to verify that they require acceptable network locations.\r\n</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Check that a list of approved products is required:</strong> Examine the acceptable use policies to verify that they require a list of approved products.\r\n</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Verify that remote access time-outs are required:</strong> Examine the acceptable use policies to verify that they require idle remote access sessions to be disconnected automatically after some period of time.\r\n</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Verify that handling of vendor remote access is defined:</strong> Examine the acceptable use policies to verify that they require remote access accounts for vendors to be only enabled when in use.\r\n</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Verify that remote access downloads are forbidden:</strong> Examine the acceptable use policies to verify that they prohibit downloading cardholder data over remote access connections to local storage media.\r\n</p>\r\n    </li>\r\n  </ol>\r\n  <h1>How to Fix</h1>\r\n  <p>Perform the following actions to define usage policies in compliance with PCI DSS:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Require&amp;nbsp;management approval:</strong> Add a point that requires explicit management authorization to use the technologies.\r\n</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Require authentication:</strong> Add a point that requires users to be authenticated with a password or another security mechanism to use the technologies.\r\n</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Require an authorized device list:</strong>&amp;nbsp; Add a point that requires a list of all devices and personnel authorized to use them.\r\n</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Require&amp;nbsp;labeling:</strong>&amp;nbsp; Add a point that requires devices to be labeled with owner, contact information, and purpose.\r\n</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Require acceptable use:</strong>&amp;nbsp; Add a point that requires acceptable uses for the technology. This requirement seems redundant, but it is actually explicit in demanding that technology be used only in its intended purpose.\r\n</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Define acceptable network locations:</strong>&amp;nbsp; Add a point that requires acceptable network locations for the technology. Acceptable network locations are the networks secured in compliance with PCI DSS. For example, a laptop from the cardholder\r\n data environment may not be connected to the Internet directly. </p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Require&amp;nbsp;a list of approved products:</strong>&amp;nbsp; Add a point that requires a list of company-approved products. Make a list of company-approved products and add it to the information security documentation.\r\n</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Require&amp;nbsp;remote access time-outs:</strong>&amp;nbsp; Add a point that requires idle remote sessions to be disconnected automatically after a certain amount of time.\r\n</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Define handling of&amp;nbsp;vendor remote access accounts:&amp;nbsp;</strong> Add a point that requires remote access accounts for vendors to be enabled only when needed and disabled immediately thereafter.\r\n</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Prohibit&amp;nbsp;remote access downloads:</strong>&amp;nbsp; Add a point that forbids downloading cardholder data to local storage media over a remote access connection.</p>\r\n    </li>\r\n  </ol>\r\n  <h1>Related Items</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/a5487579-7d49-4645-b287-5acc05913f5a\">Define Acceptable Technology Usage Policies</a>\r\n    </li>\r\n  </ul>"
+        ]
+      }
+    ]
+  }
+}

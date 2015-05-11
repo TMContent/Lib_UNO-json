@@ -1,0 +1,62 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "1074028721",
+      "Content_Hash": "148706114"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "b5ea72d4-daf6-436e-8eb1-cf76b41c202a"
+        ],
+        "Library_Id": [
+          "47a10a30-15ad-4cfd-bf82-00e9bb2037f6"
+        ],
+        "Title": [
+          "Do Not Store Full Card Track Contents"
+        ],
+        "Category": [
+          "Sensitive Data"
+        ],
+        "Phase": [
+          "Deployment"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          "Do Not Store Full Card Track Contents"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 3.2.1</li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Do not store full card track contents under any circumstances.</p>\r\n  <h1>Why</h1>\r\n  <p>The full card track contents should not be stored to limit the potential damage in the event of a successful attack. The term \"track contents\" refers to the information stored on the magnetic strip of the physical card issued to a cardholder. New cards also\r\n include a chip, the contents of which should also be considered \"track contents.\" If an attacker has this information, he may be able to use it to make fraudulent transactions; therefore, the full track contents should never be stored.\r\n</p>\r\n  <h1>How</h1>\r\n  <p>Identify the storage mechanism that stores the full track contents, for example a script or a database query. Change the storage mechanism so that it does not record the full track contents.</p>"
+        ]
+      }
+    ]
+  }
+}

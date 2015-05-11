@@ -1,0 +1,304 @@
+{
+  "id": "8db30f09-eb18-48e0-a369-54e04bf886f0",
+  "checksum": "8f0d06eeb16d22e8c95fa877e67aefb54c716a9b",
+  "words": {
+    "what": [
+      "h2"
+    ],
+    "to": [
+      "h2",
+      "p"
+    ],
+    "do": [
+      "h2"
+    ],
+    "replace": [
+      "p"
+    ],
+    "unbounded": [
+      "p"
+    ],
+    "copy": [
+      "p"
+    ],
+    "functions": [
+      "p",
+      "p"
+    ],
+    "with": [
+      "p",
+      "p"
+    ],
+    "analogous": [
+      "p"
+    ],
+    "that": [
+      "p"
+    ],
+    "support": [
+      "p"
+    ],
+    "length": [
+      "p"
+    ],
+    "arguments": [
+      "p"
+    ],
+    "such": [
+      "p",
+      "p"
+    ],
+    "as\rstrcpy": [
+      "p"
+    ],
+    "strncpy": [
+      "p",
+      "i"
+    ],
+    "create": [
+      "p"
+    ],
+    "these": [
+      "p"
+    ],
+    "if": [
+      "p"
+    ],
+    "they": [
+      "p"
+    ],
+    "are": [
+      "p",
+      "p"
+    ],
+    "not": [
+      "p"
+    ],
+    "available": [
+      "p"
+    ],
+    "strcpy": [
+      "i"
+    ],
+    "note": [
+      "p",
+      "strong"
+    ],
+    "this": [
+      "p",
+      "p"
+    ],
+    "approach": [
+      "p"
+    ],
+    "is": [
+      "p"
+    ],
+    "still": [
+      "p",
+      "p"
+    ],
+    "susceptible": [
+      "p"
+    ],
+    "calculation": [
+      "p",
+      "p",
+      "ul",
+      "li"
+    ],
+    "errors": [
+      "p",
+      "p"
+    ],
+    "including": [
+      "p"
+    ],
+    "issues": [
+      "p",
+      "p",
+      "p"
+    ],
+    "as": [
+      "p"
+    ],
+    "off-by-one": [
+      "p",
+      "ul",
+      "li"
+    ],
+    "cwe-193)": [
+      "p"
+    ],
+    "and": [
+      "p"
+    ],
+    "incorrect": [
+      "p",
+      "ul",
+      "li"
+    ],
+    "of": [
+      "p",
+      "ul",
+      "li"
+    ],
+    "buffer": [
+      "p",
+      "ul",
+      "li"
+    ],
+    "lengths": [
+      "p"
+    ],
+    "cwe-131).": [
+      "p"
+    ],
+    "additionally": [
+      "p"
+    ],
+    "only": [
+      "p"
+    ],
+    "addresses": [
+      "p"
+    ],
+    "potential": [
+      "p"
+    ],
+    "overflow": [
+      "p"
+    ],
+    "resource": [
+      "p"
+    ],
+    "consumption": [
+      "p"
+    ],
+    "/": [
+      "p"
+    ],
+    "exhaustion": [
+      "p"
+    ],
+    "possible": [
+      "p"
+    ],
+    "additional": [
+      "h2"
+    ],
+    "resources": [
+      "h2"
+    ],
+    "for": [
+      "ul",
+      "ul",
+      "li",
+      "li"
+    ],
+    "more": [
+      "ul",
+      "ul",
+      "li",
+      "li"
+    ],
+    "information": [
+      "ul",
+      "ul",
+      "li",
+      "li"
+    ],
+    "about": [
+      "ul",
+      "ul",
+      "li",
+      "li"
+    ],
+    "\"cwe-193": [
+      "ul",
+      "li"
+    ],
+    "error\"": [
+      "ul",
+      "li"
+    ],
+    "please": [
+      "ul",
+      "ul",
+      "li",
+      "li"
+    ],
+    "see": [
+      "ul",
+      "li"
+    ],
+    "http//cwe.mitre.org/data/definitions/193.html": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "\"cwe-131": [
+      "ul",
+      "li"
+    ],
+    "size\"": [
+      "ul",
+      "li"
+    ],
+    "see\rhttp://cwe.mitre.org/data/definitions/131.html": [
+      "ul",
+      "li"
+    ],
+    "http//cwe.mitre.org/data/definitions/131.html": [
+      "a"
+    ],
+    "avoid": [
+      "title"
+    ],
+    "dangerous": [
+      "title"
+    ],
+    "apis": [
+      "title"
+    ]
+  },
+  "tags": {
+    "h2": [
+      "What to Do",
+      "Additional Resources"
+    ],
+    "p": [
+      "Replace unbounded copy functions with analogous functions that support length arguments, such as\r\nstrcpy with strncpy. Create these if they are not available.",
+      "Note: This approach is still susceptible to calculation errors, including issues such as off-by-one errors (CWE-193) and incorrect calculation of buffer lengths (CWE-131). Additionally, this only addresses potential overflow issues. Resource\r\n consumption / exhaustion issues are still possible."
+    ],
+    "i": [
+      "strcpy",
+      "strncpy"
+    ],
+    "strong": [
+      "Note:"
+    ],
+    "ul": [
+      "For more information about \"CWE-193: Off-by-one Error\", please see \r\nhttp://cwe.mitre.org/data/definitions/193.html\r\n    For more information about \"CWE-131: Incorrect Calculation of Buffer Size\", please see\r\nhttp://cwe.mitre.org/data/definitions/131.html"
+    ],
+    "li": [
+      "For more information about \"CWE-193: Off-by-one Error\", please see \r\nhttp://cwe.mitre.org/data/definitions/193.html",
+      "For more information about \"CWE-131: Incorrect Calculation of Buffer Size\", please see\r\nhttp://cwe.mitre.org/data/definitions/131.html"
+    ],
+    "a": [
+      "http://cwe.mitre.org/data/definitions/193.html",
+      "http://cwe.mitre.org/data/definitions/131.html"
+    ]
+  },
+  "links": [
+    {
+      "href": "http://cwe.mitre.org/data/definitions/193.html",
+      "text": "\r\nhttp://cwe.mitre.org/data/definitions/193.html"
+    },
+    {
+      "href": "http://cwe.mitre.org/data/definitions/131.html",
+      "text": "http://cwe.mitre.org/data/definitions/131.html"
+    }
+  ],
+  "html": "<h2>What to Do</h2>\r\n  <p>Replace unbounded copy functions with analogous functions that support length arguments, such as\r\n<i>strcpy</i> with <i>strncpy</i>. Create these if they are not available. </p>\r\n  <p>\r\n    <strong>Note:</strong> This approach is still susceptible to calculation errors, including issues such as off-by-one errors (CWE-193) and incorrect calculation of buffer lengths (CWE-131). Additionally, this only addresses potential overflow issues. Resource\r\n consumption / exhaustion issues are still possible.</p>\r\n  <h2>Additional Resources</h2>\r\n  <ul>\r\n    <li>For more information about \"CWE-193: Off-by-one Error\", please see <a href=\"http://cwe.mitre.org/data/definitions/193.html\">\r\nhttp://cwe.mitre.org/data/definitions/193.html</a></li>\r\n    <li>For more information about \"CWE-131: Incorrect Calculation of Buffer Size\", please see\r\n<a href=\"http://cwe.mitre.org/data/definitions/131.html\">http://cwe.mitre.org/data/definitions/131.html</a></li>\r\n  </ul>"
+}

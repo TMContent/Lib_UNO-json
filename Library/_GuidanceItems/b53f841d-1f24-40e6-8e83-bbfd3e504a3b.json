@@ -1,0 +1,62 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "-1351514899",
+      "Content_Hash": "-1011868520"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "b53f841d-1f24-40e6-8e83-bbfd3e504a3b"
+        ],
+        "Library_Id": [
+          "47a10a30-15ad-4cfd-bf82-00e9bb2037f6"
+        ],
+        "Title": [
+          "Separate the Cardholder Data Environment from the Internet"
+        ],
+        "Category": [
+          "Networking"
+        ],
+        "Phase": [
+          "Deployment"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          "Separate the Cardholder Data Environment from the Internet"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 1.3.3</li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Configure the network in a way that does not allow the cardholder data environment to have direct Internet access.</p>\r\n  <h1>Why</h1>\r\n  <p>Denying the cardholder data environment Internet connectivity prevents the potential attackers from being able to conduct attacks against it.</p>\r\n  <h1>How</h1>\r\n  <p>Remove any routes from the router configuration that allow Internet access to the cardholder data environment. Remove any port forwarding rules from the firewalls and/or routers that allow Internet access to the cardholder data environment. Repeat the How\r\n to Check processes to ensure that changes have not accidentally introduced Internet connectivity in the cardholder environment.</p>"
+        ]
+      }
+    ]
+  }
+}

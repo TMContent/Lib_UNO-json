@@ -1,0 +1,62 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "1750516993",
+      "Content_Hash": "491009989"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "45e248ee-1cfd-4b39-988f-e8e626dc5a09"
+        ],
+        "Library_Id": [
+          "e7d92b5b-e1d8-4039-b019-8b02594ea93a"
+        ],
+        "Title": [
+          "Use Compiler Buffer Overflow Protection Features"
+        ],
+        "Category": [
+          "Memory Management"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Principle"
+        ],
+        "DirectLink": [
+          "Use Compiler Buffer Overflow Protection Features"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h2>What to Do</h2>\r\n  <p>Run or compile your software using features or extensions that automatically provide a protection mechanism that mitigates or eliminates buffer overflows.<br />\r\nFor example, certain compilers and extensions provide automatic buffer overflow detection mechanisms that are built into the compiled code. Examples include the Microsoft Visual Studio<em> /GS</em> flag, Fedora/Red Hat\r\n<em>FORTIFY_SOURCE</em> GCC flag, <em>StackGuard</em>, and <em>ProPolice</em>.</p>\r\n  <p>\r\n    <strong>Note:</strong> This is not necessarily a complete solution, since these mechanisms can only detect certain types of overflows. In addition, an attack could still cause a denial of service, since the typical response is to exit the application.</p>"
+        ]
+      }
+    ]
+  }
+}

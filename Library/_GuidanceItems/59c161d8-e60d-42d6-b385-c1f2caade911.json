@@ -1,0 +1,53 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "704437686",
+      "Content_Hash": "-170390753"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "59c161d8-e60d-42d6-b385-c1f2caade911"
+        ],
+        "Library_Id": [
+          "47a10a30-15ad-4cfd-bf82-00e9bb2037f6"
+        ],
+        "Title": [
+          "Passwords Are Encrypted When Stored Or Sent"
+        ],
+        "Category": [
+          "Authentication"
+        ],
+        "Phase": [
+          "Deployment"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Checklist Item"
+        ],
+        "DirectLink": [
+          "Passwords Are Encrypted When Stored Or Sent"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 8.4</li>\r\n  </ul>\r\n  <h1>What to Check For</h1>\r\n  <p>Passwords should not be sent in plain text nor stored in plain text.</p>\r\n  <h1>Why</h1>\r\n  <p>Encrypting passwords during storage and transmission ensures that an attacker cannot use them even if he gains access to them.</p>\r\n  <h1>How to Check</h1>\r\n  <p>Identify all the places where passwords are stored. Check how each password store is implemented to make sure that every password is encrypted.&amp;nbsp;Identify all the procedures that require passwords to be sent over the network. Make sure that the passwords are\r\n never sent in plain text by checking how each authentication protocol is implemented. A network packet analyzer, such as Wireshark, may be used to verify that passwords are not sent in plain text.</p>\r\n  <p>In a Microsoft Active Directory environment passwords are hashed when stored and when sent over the network. Microsoft Active Directory uses the Kerberos protocol for network authentication. If you are only using Active Directory for authentication, your\r\n passwords are already encrypted when stored and sent.</p>\r\n  <h1>How to Fix</h1>\r\n  <p>If you have custom applications that implement their own authentication protocols, program those applications to not store or transmit passwords in plain text. One solution is to program custom applications to use Active Directory for authentication.</p>"
+        ]
+      }
+    ]
+  }
+}

@@ -13,10 +13,10 @@
           "d490eba4-046e-48fb-a7e6-a3de1ac93c34,6ff733ea-2843-494e-8a06-99984d83eedc,"
         ],
         "Library_Id": [
-          "92718d53-36b2-47bc-b6f5-e60994385f46"
+          "be5273b1-d682-4361-99d9-6234f2d47eb7"
         ],
         "Title": [
-          "How to Choose The Appropriate Key Size"
+          "[SINK] How to Choose The Appropriate Key Size"
         ],
         "Category": [
           "Cryptography"
@@ -60,7 +60,7 @@
           "DataType": "Html"
         },
         "Data": [
-          "<h1>Description</h1>\r\n  <p>When generating an encryption key or key pair, use the largest key size that the algorithm supports. This does not necessarily make the algorithm more secure, but it dramatically increases the time needed to successfully perform a brute force attack on the key. The following code example shows how to find the largest supported key size for a particular algorithm. </p>\r\n  <pre>private int GetLargestSymKeySize(SymmetricAlgorithm symAlg)<br />&#123;<br />&nbsp;&nbsp;&nbsp; KeySizes&#91;&#93; sizes = symAlg.LegalKeySizes;<br />&nbsp;&nbsp;&nbsp; return sizes&#91;sizes.Length - 1&#93;.MaxSize;<br />&#125;<br />private int GetLargestAsymKeySize(AsymmetricAlgorithm asymAlg)<br />&#123;<br />&nbsp;&nbsp;&nbsp; KeySizes&#91;&#93; sizes = asymAlg.LegalKeySizes;<br />&nbsp;&nbsp;&nbsp; return sizes&#91;sizes.Length - 1&#93;.MaxSize;<br />&#125;</pre>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
+          "<h1>Description</h1>\r\n  <p>When generating an encryption key or key pair, use the largest key size that the algorithm supports. This does not necessarily make the algorithm more secure, but it dramatically increases the time needed to successfully perform a brute force attack on the key. The following code example shows how to find the largest supported key size for a particular algorithm. </p>\r\n  <pre>private int GetLargestSymKeySize(SymmetricAlgorithm symAlg)<br />&amp;#123;<br />&amp;nbsp;&amp;nbsp;&amp;nbsp; KeySizes&amp;#91;&amp;#93; sizes = symAlg.LegalKeySizes;<br />&amp;nbsp;&amp;nbsp;&amp;nbsp; return sizes&amp;#91;sizes.Length - 1&amp;#93;.MaxSize;<br />&amp;#125;<br />private int GetLargestAsymKeySize(AsymmetricAlgorithm asymAlg)<br />&amp;#123;<br />&amp;nbsp;&amp;nbsp;&amp;nbsp; KeySizes&amp;#91;&amp;#93; sizes = asymAlg.LegalKeySizes;<br />&amp;nbsp;&amp;nbsp;&amp;nbsp; return sizes&amp;#91;sizes.Length - 1&amp;#93;.MaxSize;<br />&amp;#125;</pre>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns &amp; practices guidance.</p>"
         ]
       }
     ]

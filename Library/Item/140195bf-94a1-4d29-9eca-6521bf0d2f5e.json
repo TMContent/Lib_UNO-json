@@ -1,0 +1,62 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "-710680579",
+      "Content_Hash": "-643304173"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "140195bf-94a1-4d29-9eca-6521bf0d2f5e"
+        ],
+        "Library_Id": [
+          "e7d92b5b-e1d8-4039-b019-8b02594ea93a"
+        ],
+        "Title": [
+          "Use the Double-Submitted Cookie Method"
+        ],
+        "Category": [
+          "Session Management"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Principle"
+        ],
+        "DirectLink": [
+          "Use the Double-Submitted Cookie Method"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h2>What to Do</h2>\r\n  <p>Use the \"double-submitted cookie\" method as described by Felten and Zeller. This technique requires Javascript, so it may not work for browsers that have Javascript disabled.</p>\r\n  <p>\r\n    <strong>Note:</strong> Note that this can probably be bypassed using XSS (CWE-79).</p>\r\n  <h2>Additional Resources</h2>\r\n  <ul>\r\n    <li>For more information about the \"double-submitted cookie\" method, please see <a href=\"http://www.cs.utexas.edu/~shmat/courses/cs378/zeller.pdf\">\r\nwww.cs.utexas.edu/~shmat/courses/cs378/zeller.pdf</a></li>\r\n  </ul>"
+        ]
+      }
+    ]
+  }
+}

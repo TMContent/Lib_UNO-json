@@ -1,0 +1,62 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "-37620942",
+      "Content_Hash": "971279550"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "80c31cf5-71f0-47c8-bb50-64d05ab4781b"
+        ],
+        "Library_Id": [
+          "e7d92b5b-e1d8-4039-b019-8b02594ea93a"
+        ],
+        "Title": [
+          "Resolve Cross-Site Scripting Issues"
+        ],
+        "Category": [
+          "Session Management"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Principle"
+        ],
+        "DirectLink": [
+          "Resolve Cross-Site Scripting Issues"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h2>What to Do</h2>\r\n  <p>Ensure that your application is free of cross-site scripting issues (CWE-79), because most CSRF defenses can be bypassed using attacker-controlled scripts.</p>\r\n  <h2>Additional Resources</h2>\r\n  <ul>\r\n    <li>For more information about \"CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')\", please see\r\n<a href=\"http://cwe.mitre.org/data/definitions/79.html\">http://cwe.mitre.org/data/definitions/79.html</a></li>\r\n  </ul>"
+        ]
+      }
+    ]
+  }
+}

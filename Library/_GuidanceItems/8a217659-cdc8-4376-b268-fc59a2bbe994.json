@@ -1,0 +1,62 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "-1528113065",
+      "Content_Hash": "867878909"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "8a217659-cdc8-4376-b268-fc59a2bbe994"
+        ],
+        "Library_Id": [
+          "47a10a30-15ad-4cfd-bf82-00e9bb2037f6"
+        ],
+        "Title": [
+          "Do Not Store Card Verification Code"
+        ],
+        "Category": [
+          "Sensitive Data"
+        ],
+        "Phase": [
+          "Deployment"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          "Do Not Store Card Verification Code"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 3.2.2</li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Do not store the card verification code (CVV2, CVC2, CID, CAV2) under any circumstances.</p>\r\n  <h1>Why</h1>\r\n  <p>The card verification code should not be stored in order to limit the potential damage in the event of a successful attack. The card verification code is often used for authentication in online transactions but does not need to be stored after the transaction\r\n has been processed.</p>\r\n  <h1>How</h1>\r\n  <p>Identify the storage mechanism used to store the card verification code, such as a program or a database query. Change the storage mechanism so that it does not record the card verification code.</p>"
+        ]
+      }
+    ]
+  }
+}

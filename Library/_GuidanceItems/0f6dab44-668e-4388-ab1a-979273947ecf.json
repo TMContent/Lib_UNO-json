@@ -1,0 +1,53 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "-860935879",
+      "Content_Hash": "-664917676"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "0f6dab44-668e-4388-ab1a-979273947ecf"
+        ],
+        "Library_Id": [
+          "47a10a30-15ad-4cfd-bf82-00e9bb2037f6"
+        ],
+        "Title": [
+          "Database Access Is Authenticated"
+        ],
+        "Category": [
+          "Authentication"
+        ],
+        "Phase": [
+          "Deployment"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Checklist Item"
+        ],
+        "DirectLink": [
+          "Database Access Is Authenticated"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 8.5.16 </li>\r\n  </ul>\r\n  <h1>What to Check For</h1>\r\n  <p>Check that all access to any database containing cardholder data&amp;nbsp;is authenticated. Verify that&amp;nbsp;database access IDs used by applications&amp;nbsp;are not usable by individual users or other applications.</p>\r\n  <h1>Why</h1>\r\n  <p>Preventing the database access accounts used by applications from being used interactively or by other processes ensures that if these accounts are compromised, an attacker cannot use them.</p>\r\n  <h1>How to Check</h1>\r\n  <p>Use the following steps to check if database access is authenticated:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Confirm user authentication.</strong> Review the settings of each database that stores cardholder data and any corresponding applications to make sure that users are authenticated before access.&amp;nbsp;</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Verify&amp;nbsp;that only database administrators may issue database queries or have direct access.\r\n</strong>Get information about connecting to the database from the database administrator. Attempt to log into the database administration interface with valid non-administrator user credentials. Access should be denied to all users except the administrators.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Verify that application access credentials cannot be abused.</strong> Make sure that any authentication credentials used by applications to access any database that stores cardholder data can only be used by the corresponding application(s) and not\r\n by users or other processes. Get information about connecting to the database from the database administrator. Attempt to log into the database administration interface with valid credentials used by applications. Access should be denied to interactive logons.</p>\r\n    </li>\r\n  </ol>\r\n  <h1>How to Fix</h1>\r\n  <p>Perform the following actions to assure that database access is authenticated:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Implement functionality to authenticate data access.</strong> Program the database application to present the user with a login screen, where the user has to be authenticated before being granted access to the information in the database. Use the\r\n authentication credentials from the login throughout the database application for access control.\r\n</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Secure the database administration interface. </strong>Allow only the database administrators to access to the database administration interface(s). Usually a database server allows either a terminal session or a visual administration application\r\n to connect to a port and issue SQL queries directly. Authentication credentials usually secure this functionality. Do not make access credentials available for any other users besides the database administrator(s).\r\n</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Secure the database files. </strong>To prevent direct access to the database files, use the access control system implemented by the host Operating System to allow access to database administrator(s) only. If possible, block any computer, besides\r\n the administrator's workstation, from accessing the database server administration interface by using a white list. A white list is a list of hosts that are exclusively allowed to access some functionality. On UNIX-style systems, white lists are usually configured\r\n by editing the /etc/hosts.allow and /etc/hosts.deny files. </p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Log access to cardholder data.</strong> Instrument the application to log access to the cardholder data. Send the logs to the centralized log server.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Protect the database access credentials used by applications.</strong> Allow the access credentials used by the database application to be used by that application only. Do not allow these credentials to be used by users or other processes. This\r\n is best accomplished by web applications. If you use a web application, you can configure the database server to use a white list. A white list is a list of hosts that are exclusively allowed to access some functionality while rejecting all access that does\r\n not originate form the web application server. On UNIX-style systems, white lists are usually configured by editing the /etc/hosts.allow and /etc/hosts.deny files. If you don’t use a web application and the client application connects directly to the database\r\n server, control the interface used by the application to connect to the database. If a database application does not comply with these requirements, the database application will have to be rewritten and possibly redesigned. Considering the costs of redesigning,\r\n rewriting and redeploying database applications, it is recommended to consult an expert as early in the design stages as possible to make sure that the resulting application is PCI DSS compliant.\r\n<em>Security Innovation offers professional application development consulting services.</em></p>\r\n    </li>\r\n  </ol>"
+        ]
+      }
+    ]
+  }
+}

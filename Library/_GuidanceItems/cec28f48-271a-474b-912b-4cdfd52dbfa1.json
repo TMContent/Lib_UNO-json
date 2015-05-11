@@ -1,0 +1,53 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "-1000648057",
+      "Content_Hash": "-1146077372"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "cec28f48-271a-474b-912b-4cdfd52dbfa1"
+        ],
+        "Library_Id": [
+          "47a10a30-15ad-4cfd-bf82-00e9bb2037f6"
+        ],
+        "Title": [
+          "Log Files Are Secure"
+        ],
+        "Category": [
+          "Auditing and Logging"
+        ],
+        "Phase": [
+          "Deployment"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Checklist Item"
+        ],
+        "DirectLink": [
+          "Log Files Are Secure"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 10.5 </li>\r\n    <li>PCI DSS Requirement 10.5.1 </li>\r\n    <li>PCI DSS Requirement 10.5.2 </li>\r\n    <li>PCI DSS Requirement 10.5.3 </li>\r\n    <li>PCI DSS Requirement 10.5.4 </li>\r\n    <li>PCI DSS Requirement 10.5.5</li>\r\n  </ul>\r\n  <h1>What to Check For</h1>\r\n  <p>The centralized log server solution should be secure and compliant with PCI DSS requirements.</p>\r\n  <h1>How to Check</h1>\r\n  <p>Use the following steps to check if log files are secure:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Check the log server capabilities.</strong> The log server should protect the log files. Ask the vendor for information about controls used to protect the log files on the log server.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Check that only users with job-related needs have access to logs. </strong>\r\nVerify that only authorized employees have user accounts on the log server. Examine the administration interface on the log server to get a list of users. Make sure that all the users are authorized and that their authorizations are based on legitimate job-related\r\n needs by interviewing them.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Check that measures are taken to prevent tampering. </strong>Consult the documentation or technical support to make sure the log server solution implements measures to prevent tampering. Verify that the log server is physically secure, preferably\r\n in a separate locked room.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Verify that logs are current. </strong>Get the list of network devices from the network documentation. For a random sample of devices, verify that the logs from them are present on the log server and that the logs are current.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Confirm file-integrity monitoring capability. </strong>Consult the vendor's documentation or technical support to make sure the log server solution implements some form of file-integrity monitoring.\r\n</p>\r\n    </li>\r\n  </ol>\r\n  <h1>How to Fix</h1>\r\n  <p>Perform the following actions to secure the log files:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Secure the log server. </strong>All the functionality to comply with this requirement should be provided by the centralized log server. Ask the vendor for information about securing the log server.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Only allow access to users with job-related needs. </strong>Most centralized log servers have built-in access control. The flexibility of this access control is different for different solutions. To satisfy this requirement, it is sufficient to only\r\n create access accounts for authorized employees who have a legitimate job-related need to view the logs. Ideally, the authentication mechanism on the log server should be integrated with the rest of the network.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Prevent tampering. </strong>Most centralized log server solutions have built-in controls to prevent tampering. The exact controls vary, but they typically include an access control list and some means of preventing privileged users or users with\r\n physical access from altering the log files. The latter typically does not need to be configured. It is recommended to segregate the log server physically by placing it in a locked room.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Configure all network devices to send logs to the log server. </strong>\r\nForward the logs from all compatible devices to the log server. For detailed instructions on sending the logs to the log server, please refer to the vendor's documentation or technical support.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Configure file-integrity monitoring. </strong>This feature should be implemented by the log server solution itself. It should not require configuration on the part of the staff. Please refer to the vendor's documentation or technical support to make\r\n sure that your log server is compliant with this requirement.</p>\r\n    </li>\r\n  </ol>\r\n  <h1>Related Items</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/7a956911-f547-4f65-88bb-f4a42ea349f3\">Implement Audit Trails for System Components</a>\r\n    </li>\r\n  </ul>"
+        ]
+      }
+    ]
+  }
+}

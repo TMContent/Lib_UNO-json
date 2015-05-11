@@ -1,0 +1,62 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "1690560422",
+      "Content_Hash": "-2097466931"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "641e82fe-e954-4d47-aa17-ecb2ce78e64b"
+        ],
+        "Library_Id": [
+          "47a10a30-15ad-4cfd-bf82-00e9bb2037f6"
+        ],
+        "Title": [
+          "Deploy a Firewall Between the DMZ and the Intranet"
+        ],
+        "Category": [
+          "Networking"
+        ],
+        "Phase": [
+          "Deployment"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          "Deploy a Firewall Between the DMZ and the Intranet"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 1.1.3</li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Install a firewall between the DMZ and the internal network.</p>\r\n  <h1>Why</h1>\r\n  <p>The DMZ has machines accessible from the Internet and is therefore subject to attack. In the event that machines in the DMZ are compromised, the firewall should protect the cardholder data environment from the DMZ. Installing a firewall between the DMZ and\r\n the cardholder data environment is a defense-in-depth measure - it offers an extra layer of security in the event that some of the network is compromised.</p>\r\n  <h1>How</h1>\r\n  <p>Install a firewall between the DMZ and the cardholder data environment. Install a firewall between the DMZ and any other internal network segment. Configure the firewalls in accordance with the firewall configuration standards. Add any new firewalls to the\r\n network diagram in the network documentation.</p>"
+        ]
+      }
+    ]
+  }
+}

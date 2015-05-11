@@ -1,0 +1,62 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "-1618391312",
+      "Content_Hash": "-1081329359"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "268c5842-8ef7-4d8b-a0c0-4eced22624c3"
+        ],
+        "Library_Id": [
+          "47a10a30-15ad-4cfd-bf82-00e9bb2037f6"
+        ],
+        "Title": [
+          "Assign Unique IDs to Users"
+        ],
+        "Category": [
+          "Authentication"
+        ],
+        "Phase": [
+          "Deployment"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          "Assign Unique IDs to Users"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 8.1</li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Give each user a unique account.</p>\r\n  <h1>Why</h1>\r\n  <p>Giving each user a unique account allows managing access control effectively.</p>\r\n  <h1>How</h1>\r\n  <p>Perform the following actions to make a new user account for each authorized user that does not have one in a Microsoft Active Directory environment:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Launch the user management console.</strong> Launch the user management application by clicking on \"Start\", \"Programs\", \"Administrative Tools\", \"Active Directory Users and Computers\".\r\n</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Create a new user account.</strong> To create a new user, navigate to the user list, right click on it, select \"New\", \"User\"</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Configure the new user account.</strong> Fill in the user account information in the \"New Object - User\" dialog. Configure group membership and data access control permissions for the new user account. Perform other actions associated with creating\r\n new user accounts, such as adding e-mail accounts, allocating personal work-space, etc.</p>\r\n    </li>\r\n  </ol>"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "-944761397",
+      "Content_Hash": "-1236403036"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "d08641bd-ec7b-4605-8596-a0551291cf87"
+        ],
+        "Library_Id": [
+          "47a10a30-15ad-4cfd-bf82-00e9bb2037f6"
+        ],
+        "Title": [
+          "Policy Requires Media Inventory"
+        ],
+        "Category": [
+          "Documentation and Policy"
+        ],
+        "Phase": [
+          "Deployment"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Checklist Item"
+        ],
+        "DirectLink": [
+          "Policy Requires Media Inventory"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 9.9 </li>\r\n    <li>PCI DSS Requirement 9.9.1</li>\r\n  </ul>\r\n  <h1>What to Check For</h1>\r\n  <p>Ensure that policy requires media inventories to be performed at least once a year. Verify that inventories&amp;nbsp;are maintained.</p>\r\n  <h1>Why</h1>\r\n  <p>Media inventory logs should be kept to assist with management, scheduled media destruction, media distribution, and audits if necessary.</p>\r\n  <h1>How to Check</h1>\r\n  <p>Review the media policy to verify that it requires media inventory to be performed at least once a year. Examine the media inventory to make sure it is current and reflects reality.</p>\r\n  <h1>How to Fix</h1>\r\n  <p>Add a point to the media policy that requires media inventory to be performed at least once a year.&amp;nbsp;Identify all media storage devices in the cardholder data environment. Number each storage media device. For each storage device in the cardholder data environment,\r\n record its number, its location, and its description in the media inventory.&amp;nbsp;Attach the media inventory to the network documentation.</p>\r\n  <h1>Related Items</h1>\r\n  <ul>\r\n    <li>\r\n      <p>\r\n        <a href=\"/article/ee48bbf8-53d9-4c4f-89db-2e94be25592e\">Formulate a Storage Media Policy</a>\r\n      </p>\r\n    </li>\r\n  </ul>"
+        ]
+      }
+    ]
+  }
+}

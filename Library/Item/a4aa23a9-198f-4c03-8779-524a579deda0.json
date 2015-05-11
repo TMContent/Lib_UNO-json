@@ -1,0 +1,62 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "1314341712",
+      "Content_Hash": "-1523720872"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "a4aa23a9-198f-4c03-8779-524a579deda0"
+        ],
+        "Library_Id": [
+          "e7d92b5b-e1d8-4039-b019-8b02594ea93a"
+        ],
+        "Title": [
+          "Use Integrity Checking for Client-side Information"
+        ],
+        "Category": [
+          "Input Validation"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Principle"
+        ],
+        "DirectLink": [
+          "Use Integrity Checking for Client-side Information"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h2>What to Do</h2>\r\n  <p>If information must be stored on the client, do not do so without encryption and integrity checking, or otherwise having a mechanism on the server side to catch tampering. Use a message authentication code (MAC) algorithm, such as Hash Message Authentication\r\n Code (HMAC). Apply this against the state or sensitive data that you have to expose, which can guarantee the integrity of the data - i.e., that the data has not been modified. Ensure that you use an algorithm with a strong hash function (CWE-328).</p>"
+        ]
+      }
+    ]
+  }
+}

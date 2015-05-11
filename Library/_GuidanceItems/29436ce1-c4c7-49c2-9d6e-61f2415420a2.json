@@ -1,0 +1,53 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "-1482061892",
+      "Content_Hash": "1605106834"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "29436ce1-c4c7-49c2-9d6e-61f2415420a2"
+        ],
+        "Library_Id": [
+          "47a10a30-15ad-4cfd-bf82-00e9bb2037f6"
+        ],
+        "Title": [
+          "Policy Forbids Sending Unencrypted PANs"
+        ],
+        "Category": [
+          "Documentation and Policy"
+        ],
+        "Phase": [
+          "Deployment"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Checklist Item"
+        ],
+        "DirectLink": [
+          "Policy Forbids Sending Unencrypted PANs"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 4.2</li>\r\n    <li>PCI DSS Requirement 4.2.a</li>\r\n    <li>PCI DSS Requirement 4.2.b</li>\r\n  </ul>\r\n  <h1>What to Check For</h1>\r\n  <p>The information security policy should include a point that forbids using messaging software to send unencrypted PANs.</p>\r\n  <h1>Why</h1>\r\n  <p>Not using messaging programs to send unencrypted PANs prevents the possibility of them being read by an attacker if intercepted.</p>\r\n  <h1>How to Check</h1>\r\n  <p>Review the information security policy to make sure it includes a point that prohibits sending unencrypted PANs using messaging software. Interview staff members and ask them if they use messaging software to send unencrypted PANs. Interview staff members\r\n and ask them if they use messaging software to send encrypted PANs. If messaging software is used to send encrypted PANs, verify that the PANs are secured using strong cryptography during transmission.</p>\r\n  <h1>How to Fix</h1>\r\n  <p>Add a point to the information security policy that forbids employees from sending unencrypted PANs using instant messaging software. Instruct staff members to not use instant messaging software to send unencrypted PANs.</p>"
+        ]
+      }
+    ]
+  }
+}

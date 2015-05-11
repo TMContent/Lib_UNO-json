@@ -1,0 +1,308 @@
+{
+  "id": "2e919546-ac34-4e8a-b0c6-cf1c30f2462e",
+  "checksum": "75b1a9819aea11ad053a7d143664ab74677d22e6",
+  "words": {
+    "what": [
+      "h2"
+    ],
+    "to": [
+      "h2",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "do": [
+      "h2"
+    ],
+    "use": [
+      "p",
+      "p",
+      "title"
+    ],
+    "a": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "cpu": [
+      "p"
+    ],
+    "and": [
+      "p"
+    ],
+    "operating": [
+      "p"
+    ],
+    "system": [
+      "p"
+    ],
+    "that": [
+      "p",
+      "p"
+    ],
+    "offers": [
+      "p"
+    ],
+    "data": [
+      "p"
+    ],
+    "execution": [
+      "p"
+    ],
+    "protection": [
+      "p",
+      "title"
+    ],
+    "nx)": [
+      "p"
+    ],
+    "or": [
+      "p"
+    ],
+    "its": [
+      "p"
+    ],
+    "equivalent": [
+      "p"
+    ],
+    "this": [
+      "p",
+      "p"
+    ],
+    "is": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "not": [
+      "p",
+      "p"
+    ],
+    "complete": [
+      "p",
+      "p"
+    ],
+    "solution": [
+      "p",
+      "p"
+    ],
+    "since": [
+      "p",
+      "p",
+      "p"
+    ],
+    "buffer": [
+      "p",
+      "title"
+    ],
+    "overflows": [
+      "p"
+    ],
+    "could": [
+      "p",
+      "p",
+      "p"
+    ],
+    "be": [
+      "p",
+      "p"
+    ],
+    "used": [
+      "p",
+      "p"
+    ],
+    "overwrite": [
+      "p"
+    ],
+    "nearby": [
+      "p"
+    ],
+    "variables": [
+      "p"
+    ],
+    "modify": [
+      "p"
+    ],
+    "the": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "software's": [
+      "p"
+    ],
+    "state": [
+      "p"
+    ],
+    "in": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "dangerous": [
+      "p"
+    ],
+    "ways": [
+      "p"
+    ],
+    "addition": [
+      "p",
+      "p"
+    ],
+    "it": [
+      "p",
+      "p"
+    ],
+    "cannot": [
+      "p"
+    ],
+    "cases": [
+      "p"
+    ],
+    "which": [
+      "p"
+    ],
+    "self-modifying": [
+      "p"
+    ],
+    "code": [
+      "p"
+    ],
+    "required": [
+      "p"
+    ],
+    "finally": [
+      "p"
+    ],
+    "an": [
+      "p",
+      "p",
+      "p"
+    ],
+    "attack": [
+      "p",
+      "p"
+    ],
+    "still": [
+      "p",
+      "p"
+    ],
+    "cause": [
+      "p",
+      "p"
+    ],
+    "denial": [
+      "p",
+      "p"
+    ],
+    "of": [
+      "p",
+      "p"
+    ],
+    "service": [
+      "p",
+      "p"
+    ],
+    "typical": [
+      "p",
+      "p"
+    ],
+    "response": [
+      "p",
+      "p"
+    ],
+    "exit": [
+      "p",
+      "p"
+    ],
+    "application": [
+      "p",
+      "p"
+    ],
+    "feature": [
+      "p"
+    ],
+    "like": [
+      "p"
+    ],
+    "address": [
+      "p"
+    ],
+    "space": [
+      "p"
+    ],
+    "layout": [
+      "p"
+    ],
+    "randomization": [
+      "p"
+    ],
+    "aslr).": [
+      "p"
+    ],
+    "however": [
+      "p"
+    ],
+    "forces": [
+      "p"
+    ],
+    "attacker": [
+      "p"
+    ],
+    "guess": [
+      "p"
+    ],
+    "unknown": [
+      "p"
+    ],
+    "value": [
+      "p"
+    ],
+    "changes": [
+      "p"
+    ],
+    "each": [
+      "p"
+    ],
+    "time": [
+      "p"
+    ],
+    "program": [
+      "p"
+    ],
+    "executed": [
+      "p"
+    ],
+    "os": [
+      "title"
+    ],
+    "overflow": [
+      "title"
+    ]
+  },
+  "tags": {
+    "h2": [
+      "What to Do"
+    ],
+    "p": [
+      "Use a CPU and operating system that offers Data Execution Protection (NX) or its equivalent. This is not a complete solution, since buffer overflows could be used to overwrite nearby variables to modify the software's state in dangerous ways. In addition,\r\n it cannot be used in cases in which self-modifying code is required. Finally, an attack could still cause a denial of service, since the typical response is to exit the application.",
+      "Use a feature like Address Space Layout Randomization (ASLR). This is not a complete solution. However, it forces the attacker to guess an unknown value that changes each time the program is executed. In addition, an attack could still cause a denial of\r\n service, since the typical response is to exit the application."
+    ]
+  },
+  "links": [],
+  "html": "<h2>What to Do</h2>\r\n  <p>Use a CPU and operating system that offers Data Execution Protection (NX) or its equivalent. This is not a complete solution, since buffer overflows could be used to overwrite nearby variables to modify the software's state in dangerous ways. In addition,\r\n it cannot be used in cases in which self-modifying code is required. Finally, an attack could still cause a denial of service, since the typical response is to exit the application.</p>\r\n  <p>Use a feature like Address Space Layout Randomization (ASLR). This is not a complete solution. However, it forces the attacker to guess an unknown value that changes each time the program is executed. In addition, an attack could still cause a denial of\r\n service, since the typical response is to exit the application.</p>"
+}

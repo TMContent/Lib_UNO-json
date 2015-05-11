@@ -1,0 +1,53 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "-1608872652",
+      "Content_Hash": "-1511414518"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "7206a4af-d0c4-48db-9ab7-8057f5920ff8"
+        ],
+        "Library_Id": [
+          "47a10a30-15ad-4cfd-bf82-00e9bb2037f6"
+        ],
+        "Title": [
+          "Compromised Encryption Keys Are Replaced"
+        ],
+        "Category": [
+          "Cryptographic Storage"
+        ],
+        "Phase": [
+          "Deployment"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Checklist Item"
+        ],
+        "DirectLink": [
+          "Compromised Encryption Keys Are Replaced"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 3.6.5.b</li>\r\n  </ul>\r\n  <h1>What to Check For</h1>\r\n  <p>There should be a procedure for replacing known or suspected compromised encryption keys.</p>\r\n  <h1>How to Check</h1>\r\n  <p>Check the information security policy to make sure that it includes a requirement and a procedure for replacing compromised encryption keys, whether the compromise is known or suspected.</p>\r\n  <h1>How to Fix</h1>\r\n  <p>Design a procedure for changing the encryption keys. Document the procedure for changing the keys. Include the requirement and the procedure in the information security policy.&amp;nbsp;Change any known or suspected compromised keys. You may have to add this functionality\r\n to your software if you don't have it already.</p>\r\n  <h1>Related Items</h1>\r\n  <ul>\r\n    <li>\r\n      <p>\r\n        <a href=\"/article/9bb67e82-ea00-4a56-95fd-67720041afe6\">Prepare the Key Management Procedures</a>\r\n      </p>\r\n    </li>\r\n  </ul>"
+        ]
+      }
+    ]
+  }
+}

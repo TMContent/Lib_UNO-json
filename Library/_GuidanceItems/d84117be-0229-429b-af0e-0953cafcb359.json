@@ -1,0 +1,53 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "1164936624",
+      "Content_Hash": "37761839"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "d84117be-0229-429b-af0e-0953cafcb359"
+        ],
+        "Library_Id": [
+          "47a10a30-15ad-4cfd-bf82-00e9bb2037f6"
+        ],
+        "Title": [
+          "Card PIN Is Not Stored"
+        ],
+        "Category": [
+          "Sensitive Data"
+        ],
+        "Phase": [
+          "Deployment"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Checklist Item"
+        ],
+        "DirectLink": [
+          "Card PIN Is Not Stored"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 3.2.3</li>\r\n  </ul>\r\n  <h1>What to Check For</h1>\r\n  <p>The cardholder PIN should never be stored.</p>\r\n  <h1>Why</h1>\r\n  <p>The cardholder PIN is used for authentication at ATMs and that makes it of high value to an attacker. In the rare event it is required for a transaction, it should not be stored after the transaction has been processed.\r\n</p>\r\n  <h1>How to Check</h1>\r\n  <p>Check the following to make sure that the PIN is not included:</p>\r\n  <ul>\r\n    <li>Incoming transactions </li>\r\n    <li>All logs (transaction, history, debugging, error) </li>\r\n    <li>History files </li>\r\n    <li>Trace files </li>\r\n    <li>Database schemas </li>\r\n    <li>Database contents </li>\r\n    <li>Any other place where cardholder data is stored</li>\r\n  </ul>\r\n  <h1>How to Fix</h1>\r\n  <p>Identify the storage mechanism that stores the PIN, for example a script or a database query. Change the storage mechanism so that it does not record the PIN.</p>\r\n  <h1>Related Items</h1>\r\n  <ul>\r\n    <li>\r\n      <p>\r\n        <a href=\"/article/40de7c85-0fdd-4894-a3a1-943d4316fb12\">Prepare the Data Retention and Disposal Policies</a>\r\n      </p>\r\n    </li>\r\n  </ul>"
+        ]
+      }
+    ]
+  }
+}

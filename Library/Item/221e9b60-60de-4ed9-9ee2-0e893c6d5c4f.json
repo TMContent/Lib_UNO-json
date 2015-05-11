@@ -1,0 +1,62 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "464537666",
+      "Content_Hash": "-600553152"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "221e9b60-60de-4ed9-9ee2-0e893c6d5c4f"
+        ],
+        "Library_Id": [
+          "e7d92b5b-e1d8-4039-b019-8b02594ea93a"
+        ],
+        "Title": [
+          "Use a Buffer Overflow Protection Library"
+        ],
+        "Category": [
+          "Memory Management"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Principle"
+        ],
+        "DirectLink": [
+          "Use a Buffer Overflow Protection Library"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h2>What to Do</h2>\r\n  <p>Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid. Examples include the\r\n<em>Safe C String Library</em> (<em>SafeStr</em>) by Messier and Viega, and the <em>\r\nStrsafe.h</em> library from Microsoft. These libraries provide safer versions of overflow-prone string-handling functions.\r\n</p>\r\n  <p>\r\n    <strong>Note:</strong> This is not a complete solution, since many buffer overflows are not related to strings.</p>"
+        ]
+      }
+    ]
+  }
+}

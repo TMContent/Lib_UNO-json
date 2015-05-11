@@ -1,0 +1,252 @@
+{
+  "id": "8a06e241-a907-40ff-ac3b-61c38da66fa2",
+  "checksum": "6b4bdafaa4dc5185c0f25b28c0985cbf3229ad2d",
+  "words": {
+    "34": [
+      "ul",
+      "li"
+    ],
+    "applies": [
+      "h1"
+    ],
+    "to": [
+      "h1",
+      "h1",
+      "p",
+      "p"
+    ],
+    "pci": [
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li"
+    ],
+    "dss": [
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li"
+    ],
+    "requirement": [
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li"
+    ],
+    "34.a": [
+      "ul",
+      "li"
+    ],
+    "34.b": [
+      "ul",
+      "li"
+    ],
+    "34.c": [
+      "ul",
+      "li"
+    ],
+    "34.d": [
+      "ul",
+      "li"
+    ],
+    "what": [
+      "h1"
+    ],
+    "do": [
+      "h1"
+    ],
+    "render": [
+      "p",
+      "title"
+    ],
+    "the": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "pan": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "unreadable": [
+      "p",
+      "p",
+      "title"
+    ],
+    "whenever": [
+      "p",
+      "p",
+      "title"
+    ],
+    "it": [
+      "p",
+      "p",
+      "title"
+    ],
+    "is": [
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "stored": [
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "why": [
+      "h1"
+    ],
+    "should": [
+      "p"
+    ],
+    "be": [
+      "p"
+    ],
+    "rendered": [
+      "p"
+    ],
+    "prevent": [
+      "p"
+    ],
+    "disclosure": [
+      "p"
+    ],
+    "in": [
+      "p"
+    ],
+    "event": [
+      "p"
+    ],
+    "of": [
+      "p",
+      "p"
+    ],
+    "a": [
+      "p"
+    ],
+    "successful": [
+      "p"
+    ],
+    "compromise": [
+      "p"
+    ],
+    "how": [
+      "h1"
+    ],
+    "identify": [
+      "p"
+    ],
+    "if": [
+      "p"
+    ],
+    "and": [
+      "p",
+      "p",
+      "p"
+    ],
+    "where": [
+      "p"
+    ],
+    "choose": [
+      "p"
+    ],
+    "one": [
+      "p"
+    ],
+    "following": [
+      "p"
+    ],
+    "mechanisms": [
+      "p"
+    ],
+    "protect": [
+      "p"
+    ],
+    "one-way": [
+      "p"
+    ],
+    "crypto-hashes": [
+      "p"
+    ],
+    "truncation": [
+      "p"
+    ],
+    "index": [
+      "p"
+    ],
+    "tokens": [
+      "p"
+    ],
+    "pads": [
+      "p"
+    ],
+    "strong": [
+      "p"
+    ],
+    "cryptography": [
+      "p"
+    ],
+    "implement": [
+      "p"
+    ],
+    "chosen": [
+      "p"
+    ],
+    "mechanism": [
+      "p"
+    ]
+  },
+  "tags": {
+    "h1": [
+      "Applies to",
+      "What to Do",
+      "Why",
+      "How"
+    ],
+    "ul": [
+      "PCI DSS Requirement 3.4\r\n    PCI DSS Requirement 3.4.a\r\n    PCI DSS Requirement 3.4.b\r\n    PCI DSS Requirement 3.4.c\r\n    PCI DSS Requirement 3.4.d"
+    ],
+    "li": [
+      "PCI DSS Requirement 3.4",
+      "PCI DSS Requirement 3.4.a",
+      "PCI DSS Requirement 3.4.b",
+      "PCI DSS Requirement 3.4.c",
+      "PCI DSS Requirement 3.4.d"
+    ],
+    "p": [
+      "Render the PAN unreadable whenever it is stored.",
+      "The PAN should be rendered unreadable whenever it is stored to prevent disclosure in the event of a successful compromise.",
+      "Identify if and where the PAN is stored. Choose one of the following mechanisms to protect the PAN: one-way crypto-hashes, truncation, index tokens and pads, and strong cryptography. Implement the chosen mechanism."
+    ]
+  },
+  "links": [],
+  "html": "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 3.4</li>\r\n    <li>PCI DSS Requirement 3.4.a</li>\r\n    <li>PCI DSS Requirement 3.4.b</li>\r\n    <li>PCI DSS Requirement 3.4.c</li>\r\n    <li>PCI DSS Requirement 3.4.d</li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Render the PAN unreadable whenever it is stored.</p>\r\n  <h1>Why</h1>\r\n  <p>The PAN should be rendered unreadable whenever it is stored to prevent disclosure in the event of a successful compromise.</p>\r\n  <h1>How</h1>\r\n  <p>Identify if and where the PAN is stored. Choose one of the following mechanisms to protect the PAN: one-way crypto-hashes, truncation, index tokens and pads, and strong cryptography. Implement the chosen mechanism.</p>"
+}

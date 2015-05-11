@@ -1,0 +1,53 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "532084622",
+      "Content_Hash": "-146633682"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "ecfec4ec-da0e-4b31-8610-2fc7bc7a6d22"
+        ],
+        "Library_Id": [
+          "47a10a30-15ad-4cfd-bf82-00e9bb2037f6"
+        ],
+        "Title": [
+          "Unnecessary Inbound And Outbound Traffic Is Denied"
+        ],
+        "Category": [
+          "Networking"
+        ],
+        "Phase": [
+          "Deployment"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Checklist Item"
+        ],
+        "DirectLink": [
+          "Unnecessary Inbound And Outbound Traffic Is Denied"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 1.2.1.a </li>\r\n    <li>PCI DSS Requirement 1.2.1.b</li>\r\n  </ul>\r\n  <h1>What to Check For</h1>\r\n  <p>Unless a network transmission is required for business operations, it should be denied by default. An explicit \"deny all\" or implicit \"deny after allow\" setting should be used on the Internet firewall.</p>\r\n  <h1>Why</h1>\r\n  <p>Allowing unauthorized connections may allow an attacker to conduct an attack and extract sensitive information.</p>\r\n  <h1>How to Check</h1>\r\n  <p>Check the firewall configuration to make sure that it uses either an explicit \"deny all\" setting or an implicit \"deny after allow\" setting.&amp;nbsp;Perform a port scan of the company network from the Internet to make sure that only authorized ports are open.</p>\r\n  <h1>How to Fix</h1>\r\n  <p>Configure the firewall using either the \"deny all\" setting or the \"deny after allow” setting. When using the \"deny all\" rule, set it after the rules that allow services necessary for business operations. If your firewall supports implicit \"deny after allow\"\r\n functionality, you may use it instead.</p>\r\n  <h1>Related Items</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/b01167a3-95a9-4172-b366-d905ac2ac21e\">Configure the Firewalls for PCI DSS Compliance</a>\r\n    </li>\r\n  </ul>"
+        ]
+      }
+    ]
+  }
+}

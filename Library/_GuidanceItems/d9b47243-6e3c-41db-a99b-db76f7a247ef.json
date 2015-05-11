@@ -1,0 +1,53 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "407646734",
+      "Content_Hash": "865653866"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "d9b47243-6e3c-41db-a99b-db76f7a247ef"
+        ],
+        "Library_Id": [
+          "47a10a30-15ad-4cfd-bf82-00e9bb2037f6"
+        ],
+        "Title": [
+          "Identification And Authentication Events Are Logged"
+        ],
+        "Category": [
+          "Auditing and Logging"
+        ],
+        "Phase": [
+          "Deployment"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Checklist Item"
+        ],
+        "DirectLink": [
+          "Identification And Authentication Events Are Logged"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 10.2.5</li>\r\n  </ul>\r\n  <h1>What to Check For</h1>\r\n  <p>Identification and authentication events should be logged.</p>\r\n  <h1>How to Check</h1>\r\n  <p>This functionality should be implemented by the centralized log server solution. Examine the logs to verify that identification and authentication events are logged.\r\n</p>\r\n  <h1>How to Fix</h1>\r\n  <p>This functionality should be implemented by the centralized log server solution. Follow the vendor's instructions to configure the centralized log server to log identification and authentication events.</p>\r\n  <h1>Related Items</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/7a956911-f547-4f65-88bb-f4a42ea349f3\">Implement Audit Trails for System Components</a>\r\n    </li>\r\n  </ul>"
+        ]
+      }
+    ]
+  }
+}

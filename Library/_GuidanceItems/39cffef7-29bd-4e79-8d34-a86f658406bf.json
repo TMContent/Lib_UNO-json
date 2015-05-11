@@ -1,0 +1,62 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "816201169",
+      "Content_Hash": "976569895"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "39cffef7-29bd-4e79-8d34-a86f658406bf"
+        ],
+        "Library_Id": [
+          "47a10a30-15ad-4cfd-bf82-00e9bb2037f6"
+        ],
+        "Title": [
+          "Verify User Identity Before Resetting Passwords"
+        ],
+        "Category": [
+          "Authentication"
+        ],
+        "Phase": [
+          "Deployment"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          "Verify User Identity Before Resetting Passwords"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 8.5.2</li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Verify the user's identity before performing a requested password reset.</p>\r\n  <h1>Why</h1>\r\n  <p>The user's identity should be verified before performing a requested password reset to ensure that an attacker is not pretending to be the user to gain access.</p>\r\n  <h1>How</h1>\r\n  <p>Add a requirement to the password policy to verify the user's identity when performing a requested password reset. Design and implement procedures for verifying the user's identity. For example, a user’s identity may be verified by meeting in person.</p>"
+        ]
+      }
+    ]
+  }
+}

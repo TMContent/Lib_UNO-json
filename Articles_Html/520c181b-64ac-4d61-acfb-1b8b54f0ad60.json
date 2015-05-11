@@ -1,0 +1,301 @@
+{
+  "id": "520c181b-64ac-4d61-acfb-1b8b54f0ad60",
+  "checksum": "dcc7dba0f69e2d848ace0a8f37f9e0a3c746d6ba",
+  "words": {
+    "what": [
+      "h2"
+    ],
+    "to": [
+      "h2",
+      "p",
+      "p",
+      "p"
+    ],
+    "do": [
+      "h2"
+    ],
+    "store": [
+      "p",
+      "p",
+      "title"
+    ],
+    "library": [
+      "p"
+    ],
+    "include": [
+      "p",
+      "p"
+    ],
+    "and": [
+      "p",
+      "p",
+      "p"
+    ],
+    "utility": [
+      "p"
+    ],
+    "files": [
+      "p",
+      "p",
+      "title"
+    ],
+    "outside": [
+      "p",
+      "title"
+    ],
+    "of": [
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "the": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "web": [
+      "p",
+      "p",
+      "title"
+    ],
+    "document": [
+      "p"
+    ],
+    "root": [
+      "p",
+      "title"
+    ],
+    "if": [
+      "p",
+      "p"
+    ],
+    "possible": [
+      "p"
+    ],
+    "otherwise": [
+      "p"
+    ],
+    "them": [
+      "p",
+      "p"
+    ],
+    "in": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "a": [
+      "p",
+      "p"
+    ],
+    "separate": [
+      "p"
+    ],
+    "directory": [
+      "p"
+    ],
+    "use": [
+      "p"
+    ],
+    "server's": [
+      "p"
+    ],
+    "access": [
+      "p"
+    ],
+    "control": [
+      "p"
+    ],
+    "capabilities": [
+      "p"
+    ],
+    "prevent": [
+      "p"
+    ],
+    "attackers": [
+      "p"
+    ],
+    "from": [
+      "p"
+    ],
+    "directly": [
+      "p",
+      "p"
+    ],
+    "requesting": [
+      "p"
+    ],
+    "one": [
+      "p"
+    ],
+    "common": [
+      "p"
+    ],
+    "practice": [
+      "p"
+    ],
+    "is": [
+      "p"
+    ],
+    "define": [
+      "p"
+    ],
+    "fixed": [
+      "p"
+    ],
+    "constant": [
+      "p",
+      "p",
+      "p"
+    ],
+    "each": [
+      "p"
+    ],
+    "calling": [
+      "p"
+    ],
+    "program": [
+      "p",
+      "p"
+    ],
+    "then": [
+      "p",
+      "p"
+    ],
+    "check": [
+      "p"
+    ],
+    "for": [
+      "p"
+    ],
+    "existence": [
+      "p"
+    ],
+    "library/include": [
+      "p"
+    ],
+    "file": [
+      "p",
+      "p"
+    ],
+    "does": [
+      "p"
+    ],
+    "not": [
+      "p",
+      "p"
+    ],
+    "exist": [
+      "p"
+    ],
+    "was": [
+      "p"
+    ],
+    "requested": [
+      "p"
+    ],
+    "it": [
+      "p",
+      "p"
+    ],
+    "can": [
+      "p"
+    ],
+    "exit": [
+      "p"
+    ],
+    "immediately": [
+      "p"
+    ],
+    "this": [
+      "p"
+    ],
+    "significantly": [
+      "p"
+    ],
+    "reduces": [
+      "p"
+    ],
+    "chance": [
+      "p"
+    ],
+    "an": [
+      "p"
+    ],
+    "attacker": [
+      "p"
+    ],
+    "being": [
+      "p"
+    ],
+    "able": [
+      "p"
+    ],
+    "bypass": [
+      "p"
+    ],
+    "any": [
+      "p"
+    ],
+    "protection": [
+      "p"
+    ],
+    "mechanisms": [
+      "p"
+    ],
+    "that": [
+      "p"
+    ],
+    "are": [
+      "p"
+    ],
+    "base": [
+      "p"
+    ],
+    "but": [
+      "p"
+    ],
+    "will": [
+      "p"
+    ],
+    "also": [
+      "p"
+    ],
+    "reduce": [
+      "p"
+    ],
+    "your": [
+      "p"
+    ],
+    "attack": [
+      "p"
+    ],
+    "surface": [
+      "p"
+    ],
+    "application": [
+      "title"
+    ]
+  },
+  "tags": {
+    "h2": [
+      "What to Do"
+    ],
+    "p": [
+      "Store library, include, and utility files outside of the web document root, if possible. Otherwise, store them in a separate directory and use the web server's access control capabilities to prevent attackers from directly requesting them. One common practice\r\n is to define a fixed constant in each calling program, then check for the existence of the constant in the library/include file; if the constant does not exist, then the file was directly requested, and it can exit immediately. This significantly reduces the\r\n chance of an attacker being able to bypass any protection mechanisms that are in the base program but not in the include files. It will also reduce your attack surface."
+    ]
+  },
+  "links": [],
+  "html": "<h2>What to Do</h2>\r\n  <p>Store library, include, and utility files outside of the web document root, if possible. Otherwise, store them in a separate directory and use the web server's access control capabilities to prevent attackers from directly requesting them. One common practice\r\n is to define a fixed constant in each calling program, then check for the existence of the constant in the library/include file; if the constant does not exist, then the file was directly requested, and it can exit immediately. This significantly reduces the\r\n chance of an attacker being able to bypass any protection mechanisms that are in the base program but not in the include files. It will also reduce your attack surface.</p>"
+}

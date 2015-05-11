@@ -1,0 +1,158 @@
+{
+  "id": "7f36f600-432f-4f89-bf78-4e9a3b0eb4af",
+  "checksum": "c782862c98b00e19b01406266329bed16ef5bc8f",
+  "words": {
+    "applies": [
+      "h1"
+    ],
+    "to": [
+      "h1",
+      "h1",
+      "p",
+      "p"
+    ],
+    "pci": [
+      "ul",
+      "li"
+    ],
+    "dss": [
+      "ul",
+      "li"
+    ],
+    "requirement": [
+      "ul",
+      "li"
+    ],
+    "36.3": [
+      "ul",
+      "li"
+    ],
+    "what": [
+      "h1"
+    ],
+    "do": [
+      "h1"
+    ],
+    "encrypt": [
+      "p",
+      "p",
+      "title"
+    ],
+    "stored": [
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "encryption": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "keys": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "how": [
+      "h1"
+    ],
+    "find": [
+      "p"
+    ],
+    "where": [
+      "p"
+    ],
+    "the": [
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "used": [
+      "p"
+    ],
+    "data": [
+      "p"
+    ],
+    "are": [
+      "p"
+    ],
+    "choose": [
+      "p"
+    ],
+    "an": [
+      "p"
+    ],
+    "suite": [
+      "p"
+    ],
+    "that": [
+      "p"
+    ],
+    "provides": [
+      "p"
+    ],
+    "secure": [
+      "p",
+      "p",
+      "p"
+    ],
+    "cryptography": [
+      "p"
+    ],
+    "use": [
+      "p"
+    ],
+    "chosen": [
+      "p"
+    ],
+    "application": [
+      "p"
+    ],
+    "designate": [
+      "p"
+    ],
+    "a": [
+      "p"
+    ],
+    "separate": [
+      "p"
+    ],
+    "storage": [
+      "p"
+    ],
+    "location": [
+      "p"
+    ],
+    "for": [
+      "p"
+    ],
+    "key-encrypting": [
+      "p"
+    ]
+  },
+  "tags": {
+    "h1": [
+      "Applies to",
+      "What to Do",
+      "How"
+    ],
+    "ul": [
+      "PCI DSS Requirement 3.6.3"
+    ],
+    "li": [
+      "PCI DSS Requirement 3.6.3"
+    ],
+    "p": [
+      "Encrypt stored encryption keys.",
+      "Find where the encryption keys used to encrypt data are stored. Choose an encryption suite that provides secure cryptography. Use the chosen encryption application to secure the stored keys. Designate a separate secure storage location for the key-encrypting\r\n keys."
+    ]
+  },
+  "links": [],
+  "html": "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 3.6.3</li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Encrypt stored encryption keys.</p>\r\n  <h1>How</h1>\r\n  <p>Find where the encryption keys used to encrypt data are stored. Choose an encryption suite that provides secure cryptography. Use the chosen encryption application to secure the stored keys. Designate a separate secure storage location for the key-encrypting\r\n keys.</p>"
+}

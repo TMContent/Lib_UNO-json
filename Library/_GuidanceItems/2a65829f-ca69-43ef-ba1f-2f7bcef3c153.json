@@ -1,0 +1,62 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "-1722599732",
+      "Content_Hash": "-1971505044"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "2a65829f-ca69-43ef-ba1f-2f7bcef3c153"
+        ],
+        "Library_Id": [
+          "47a10a30-15ad-4cfd-bf82-00e9bb2037f6"
+        ],
+        "Title": [
+          "Forbid Sending Unencrypted PANs"
+        ],
+        "Category": [
+          "Documentation and Policy"
+        ],
+        "Phase": [
+          "Deployment"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          "Forbid Sending Unencrypted PANs"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 4.2</li>\r\n    <li>PCI DSS Requirement 4.2.a</li>\r\n    <li>PCI DSS Requirement 4.2.b</li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Add a point to the information security policy that forbids sending unencrypted cardholder data. Make an explicit reference to instant messaging software and PANs.</p>\r\n  <h1>Why</h1>\r\n  <p>Not using messaging programs to send unencrypted PANs prevents the possibility of them being read by an attacker if intercepted.</p>\r\n  <h1>How</h1>\r\n  <p>Add a point to the information security policy that forbids employees from sending unencrypted PANs using instant messaging software. Instruct staff members to not use instant messaging software to send unencrypted PANs.</p>"
+        ]
+      }
+    ]
+  }
+}

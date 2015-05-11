@@ -1,0 +1,62 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "-2099096538",
+      "Content_Hash": "1531187228"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "9d39e854-10ca-4b6a-8336-7b2362912135"
+        ],
+        "Library_Id": [
+          "47a10a30-15ad-4cfd-bf82-00e9bb2037f6"
+        ],
+        "Title": [
+          "Backup Log Files"
+        ],
+        "Category": [
+          "Auditing and Logging"
+        ],
+        "Phase": [
+          "Deployment"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          "Backup Log Files"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 10.5.3 </li>\r\n    <li>PCI DSS Requirement 10.5.4</li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Backup current log promptly to a centralized log server or a media that is difficult to alter.</p>\r\n  <h1>Why</h1>\r\n  <p>Logs should be backed up promptly to prevent tampering.</p>\r\n  <h1>How</h1>\r\n  <p>Use the following steps to assure that logs are backed up promptly:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Deploy a centralized log server.</strong> Choose a centralized log server solution. When choosing a centralized log server solution, it may be helpful to verify that it is explicitly designed to satisfy PCI DSS Requirement 10.2.2 - logging all activity\r\n by the administrator and the other privileged users - because this functionality is difficult to implement otherwise. Install and configure a centralized log server by following the vendor's instructions. Configure all network devices that are compatible with\r\n the log server to send logs to the log server. </p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Configure devices that are not compatible with the log server.</strong> Make a list of the devices that are not compatible with the log server. Use this list daily to manually check and backup the logs on the devices that are not compatible with\r\n the log server. Consider replacing the incompatible devices.</p>\r\n    </li>\r\n  </ol>"
+        ]
+      }
+    ]
+  }
+}

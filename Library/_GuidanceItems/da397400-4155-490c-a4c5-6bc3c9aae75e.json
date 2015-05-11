@@ -1,0 +1,53 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "-865441866",
+      "Content_Hash": "1883964487"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "da397400-4155-490c-a4c5-6bc3c9aae75e"
+        ],
+        "Library_Id": [
+          "47a10a30-15ad-4cfd-bf82-00e9bb2037f6"
+        ],
+        "Title": [
+          "Unused Services, Daemons And Protocols Are Disabled"
+        ],
+        "Category": [
+          "Hardening"
+        ],
+        "Phase": [
+          "Deployment"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Checklist Item"
+        ],
+        "DirectLink": [
+          "Unused Services, Daemons And Protocols Are Disabled"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 2.2.2</li>\r\n  </ul>\r\n  <h1>What to Check For</h1>\r\n  <p>All services, daemons and protocols on each server that are not needed for business purposes should be disabled.</p>\r\n  <h1>Why</h1>\r\n  <p>The fewer services, daemons and protocols there are, the less surface area is available for an attacker to exploit.</p>\r\n  <h1>How to Check</h1>\r\n  <p>Inspect each server and make a list of all services, daemons and protocols enabled on it. Use the resulting lists to ensure that only the services, daemons and protocols documented and necessary for business operations are enabled.</p>\r\n  <h1>How to Fix</h1>\r\n  <p>Disable the unnecessary services, daemons and protocols on each server.</p>\r\n  <h1>Related Items</h1>\r\n  <ul>\r\n    <li>\r\n      <p>\r\n        <a href=\"/article/faa1bbb3-14c5-42ed-8350-534c1a8f3a4f\">Disable Unused Services and Protocols</a>\r\n      </p>\r\n    </li>\r\n  </ul>"
+        ]
+      }
+    ]
+  }
+}

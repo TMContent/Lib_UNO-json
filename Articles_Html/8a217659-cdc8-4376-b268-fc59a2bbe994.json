@@ -1,0 +1,272 @@
+{
+  "id": "8a217659-cdc8-4376-b268-fc59a2bbe994",
+  "checksum": "6e0b7bb9ae512a652382d08836f0ef56d300ca9b",
+  "words": {
+    "applies": [
+      "h1"
+    ],
+    "to": [
+      "h1",
+      "h1",
+      "p",
+      "p",
+      "p"
+    ],
+    "pci": [
+      "ul",
+      "li"
+    ],
+    "dss": [
+      "ul",
+      "li"
+    ],
+    "requirement": [
+      "ul",
+      "li"
+    ],
+    "32.2": [
+      "ul",
+      "li"
+    ],
+    "what": [
+      "h1"
+    ],
+    "do": [
+      "h1",
+      "p",
+      "title"
+    ],
+    "not": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "store": [
+      "p",
+      "p",
+      "title"
+    ],
+    "the": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "card": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "verification": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "code": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "cvv2,": [
+      "p"
+    ],
+    "cvc2": [
+      "p"
+    ],
+    "cid": [
+      "p"
+    ],
+    "cav2": [
+      "p"
+    ],
+    "under": [
+      "p"
+    ],
+    "any": [
+      "p"
+    ],
+    "circumstances": [
+      "p"
+    ],
+    "why": [
+      "h1"
+    ],
+    "should": [
+      "p"
+    ],
+    "be": [
+      "p",
+      "p"
+    ],
+    "stored": [
+      "p",
+      "p"
+    ],
+    "in": [
+      "p",
+      "p",
+      "p"
+    ],
+    "order": [
+      "p"
+    ],
+    "limit": [
+      "p"
+    ],
+    "potential": [
+      "p"
+    ],
+    "damage": [
+      "p"
+    ],
+    "event": [
+      "p"
+    ],
+    "of": [
+      "p"
+    ],
+    "a": [
+      "p",
+      "p",
+      "p"
+    ],
+    "successful": [
+      "p"
+    ],
+    "attack": [
+      "p"
+    ],
+    "is": [
+      "p"
+    ],
+    "often": [
+      "p"
+    ],
+    "used": [
+      "p",
+      "p"
+    ],
+    "for": [
+      "p"
+    ],
+    "authentication": [
+      "p"
+    ],
+    "online": [
+      "p"
+    ],
+    "transactions": [
+      "p"
+    ],
+    "but": [
+      "p"
+    ],
+    "does": [
+      "p",
+      "p"
+    ],
+    "need": [
+      "p"
+    ],
+    "after": [
+      "p"
+    ],
+    "transaction": [
+      "p"
+    ],
+    "has": [
+      "p"
+    ],
+    "been": [
+      "p"
+    ],
+    "processed": [
+      "p"
+    ],
+    "how": [
+      "h1"
+    ],
+    "identify": [
+      "p"
+    ],
+    "storage": [
+      "p",
+      "p"
+    ],
+    "mechanism": [
+      "p",
+      "p"
+    ],
+    "such": [
+      "p"
+    ],
+    "as": [
+      "p"
+    ],
+    "program": [
+      "p"
+    ],
+    "or": [
+      "p"
+    ],
+    "database": [
+      "p"
+    ],
+    "query": [
+      "p"
+    ],
+    "change": [
+      "p"
+    ],
+    "so": [
+      "p"
+    ],
+    "that": [
+      "p"
+    ],
+    "it": [
+      "p"
+    ],
+    "record": [
+      "p"
+    ]
+  },
+  "tags": {
+    "h1": [
+      "Applies to",
+      "What to Do",
+      "Why",
+      "How"
+    ],
+    "ul": [
+      "PCI DSS Requirement 3.2.2"
+    ],
+    "li": [
+      "PCI DSS Requirement 3.2.2"
+    ],
+    "p": [
+      "Do not store the card verification code (CVV2, CVC2, CID, CAV2) under any circumstances.",
+      "The card verification code should not be stored in order to limit the potential damage in the event of a successful attack. The card verification code is often used for authentication in online transactions but does not need to be stored after the transaction\r\n has been processed.",
+      "Identify the storage mechanism used to store the card verification code, such as a program or a database query. Change the storage mechanism so that it does not record the card verification code."
+    ]
+  },
+  "links": [],
+  "html": "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 3.2.2</li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Do not store the card verification code (CVV2, CVC2, CID, CAV2) under any circumstances.</p>\r\n  <h1>Why</h1>\r\n  <p>The card verification code should not be stored in order to limit the potential damage in the event of a successful attack. The card verification code is often used for authentication in online transactions but does not need to be stored after the transaction\r\n has been processed.</p>\r\n  <h1>How</h1>\r\n  <p>Identify the storage mechanism used to store the card verification code, such as a program or a database query. Change the storage mechanism so that it does not record the card verification code.</p>"
+}

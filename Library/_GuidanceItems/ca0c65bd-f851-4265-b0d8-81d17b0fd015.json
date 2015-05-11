@@ -1,0 +1,62 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "1264438925",
+      "Content_Hash": "-1518219829"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "ca0c65bd-f851-4265-b0d8-81d17b0fd015"
+        ],
+        "Library_Id": [
+          "47a10a30-15ad-4cfd-bf82-00e9bb2037f6"
+        ],
+        "Title": [
+          "Periodically Erase Cardholder Data"
+        ],
+        "Category": [
+          "Sensitive Data"
+        ],
+        "Phase": [
+          "Deployment"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          "Periodically Erase Cardholder Data"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 3.1.d</li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Review old cardholder data at least every three months. Securely erase old cardholder data if it has exceeded the stated business retention requirements. Add a requirement and the corresponding procedures for the secure removal of old cardholder data to\r\n the information security policy.</p>\r\n  <h1>Why</h1>\r\n  <p>Only the data that is necessary for business operations should be stored to limit the potential damage caused by a successful attack.</p>\r\n  <h1>How</h1>\r\n  <p>Identify the data retention requirements. Identify whether it is more practical to implement an automated application for removing the outdated data. Install and configure an application or script to remove the outdated cardholder data periodically or designate\r\n staff members to be responsible for periodically cleaning out the outdated data. Document the procedures for removing the outdated data. Include the requirement and the procedures for removing the old cardholder data in the information security policy.</p>"
+        ]
+      }
+    ]
+  }
+}

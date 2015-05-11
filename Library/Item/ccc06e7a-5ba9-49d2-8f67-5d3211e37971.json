@@ -1,0 +1,62 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "-572459435",
+      "Content_Hash": "1357180472"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "ccc06e7a-5ba9-49d2-8f67-5d3211e37971"
+        ],
+        "Library_Id": [
+          "e7d92b5b-e1d8-4039-b019-8b02594ea93a"
+        ],
+        "Title": [
+          "CWE-190: Integer Overflow or Wraparound"
+        ],
+        "Category": [
+          "Input Validation"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Vulnerability"
+        ],
+        "DirectLink": [
+          "CWE-190: Integer Overflow or Wraparound"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h2>Description</h2>\r\n  <p>The software performs a calculation that can produce an integer overflow or wraparound, when the logic assumes that the resulting value will always be larger than the original value. This can introduce other weaknesses when the calculation is used for resource\r\n management or execution control.</p>\r\n  <p>An integer overflow or wraparound occurs when an integer value is incremented to a value that is too large to store in the associated representation. When this occurs, the value may wrap to become a very small or negative number. While this may be intended\r\n behavior in circumstances that rely on wrapping, it can have security consequences if the wrap is unexpected. This is especially the case if the integer overflow can be triggered using user-supplied inputs. This becomes security-critical when the result is\r\n used to control looping, make a security decision, or determine the offset or size in behaviors such as memory allocation, copying, concatenation, etc.</p>\r\n  <h2>Discussion</h2>\r\n  <p>In the real world, 255&amp;#43;1=256. But to a computer program, sometimes 255&amp;#43;1=0, or 0-1=65535, or maybe 40,000&amp;#43;40,000=14464. You don't have to be a math whiz to smell something fishy. Actually, this kind of behavior has been going on for decades, and there's\r\n a perfectly rational and incredibly boring explanation. Ultimately, it's buried deep in the DNA of computers, who can't count to infinity even if it sometimes feels like they take that long to complete an important task. When programmers forget that computers\r\n don't do math like people, bad things ensue - anywhere from crashes, faulty price calculations, infinite loops, and execution of code.</p>\r\n  <h2>Detection</h2>\r\n  <p>The following detection methods for integer overflow vulnerabilities are available:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Automated Static Analysis. </strong>This weakness can often be detected using automated static analysis tools. Many modern tools use data flow analysis or constraint-based techniques to minimize the number of false positives.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Black Box.</strong> Sometimes, evidence of this weakness can be detected using dynamic tools and techniques that interact with the software using large test suites with many diverse inputs, such as fuzz testing (fuzzing), robustness testing, and\r\n fault injection. The software's operation may slow down, but it should not become unstable, crash, or generate incorrect results. Without visibility into the code, black box methods may not be able to sufficiently distinguish this weakness from others, requiring\r\n follow-up manual methods to diagnose the underlying problem.</p>\r\n    </li>\r\n  </ol>\r\n  <h2>Mitigation</h2>\r\n  <h2>\r\n  </h2>\r\n  <p>The following mitigation methods are available for integer overflow vulnerabilities:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Define protocols.</strong> Ensure that all protocols are strictly defined, such that all out-of-bounds behavior can be identified simply, and require strict conformance to the protocol.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Use a language that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid.\r\n</strong>If possible, choose a language or compiler that performs automatic bounds checking.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Use a secure framework. </strong>Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid. Use libraries or frameworks that make it easier to handle numbers without\r\n unexpected consequences. Examples include safe integer handling packages such as\r\n<em>SafeInt</em> (C&amp;#43;&amp;#43;) or <em>IntegerLib</em> (C or C&amp;#43;&amp;#43;).</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Perform input validation on any numeric input by ensuring that it is within the expected range.</strong> Enforce that the input meets both the minimum and maximum requirements for the expected range. Use unsigned integers where possible. This makes\r\n it easier to perform sanity checks for integer overflows. If you must use signed integers, make sure that your range check includes minimum values as well as maximum values.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Understand your programming language's underlying representation and how it interacts with numeric calculation (CWE-681).</strong> Pay close attention to byte size discrepancies, precision, signed/unsigned distinctions, truncation, conversion and\r\n casting between types, \"not-a-number\" calculations, and how your language handles numbers that are too large or too small for its underlying representation. Also be careful to account for 32-bit, 64-bit, and other potential differences that may affect the\r\n numeric representation.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Use server-side security controls.</strong> For any security checks that are performed on the client side, ensure that these checks are duplicated on the server side, in order to avoid CWE-602. Attackers can bypass the client-side checks by modifying\r\n values after the checks have been performed, or by changing the client to remove the client-side checks entirely. Then, these modified values would be submitted to the server.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Pay attention to the compiler.</strong> Examine compiler warnings closely and eliminate problems with potential security implications, such as signed / unsigned mismatch in memory operations, or use of uninitialized variables. Even if the weakness\r\n is rarely exploitable, a single failure may lead to the compromise of the entire system.</p>\r\n    </li>\r\n  </ol>\r\n  <h2>Additional Information</h2>\r\n  <ul>\r\n    <li>For more information about integer overflow vulnerabilities, please see <a href=\"http://cwe.mitre.org/top25/index.html#CWE-190\">\r\nhttp://cwe.mitre.org/top25/index.html#CWE-190</a></li>\r\n  </ul>"
+        ]
+      }
+    ]
+  }
+}

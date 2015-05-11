@@ -1,0 +1,62 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "1559253073",
+      "Content_Hash": "-1903682102"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "6c72c949-8a85-4a8c-9d1c-dfdcace3e40a"
+        ],
+        "Library_Id": [
+          "47a10a30-15ad-4cfd-bf82-00e9bb2037f6"
+        ],
+        "Title": [
+          "Lock Attacked User Accounts For At Least 30 Minutes"
+        ],
+        "Category": [
+          "Authentication"
+        ],
+        "Phase": [
+          "Deployment"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          "Lock Attacked User Accounts For At Least 30 Minutes"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 8.5.14</li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>When someone incorrectly enters authentication information repeatedly, the corresponding user account should be locked for at least 30 minutes.</p>\r\n  <h1>Why</h1>\r\n  <p>Locking the terminal after repeated failed authentication attempts ensures that an attacker cannot guess the password in a timely manner.</p>\r\n  <h1>How</h1>\r\n  <p>Perform the following actions to assure that user accounts are locked out for at least 30 minutes in the event of repeated authentication failure in an Active Directory environment:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Launch the \"Group Policy Management\" console.</strong> The \"Group Policy Management\" console is included in Windows 2008, but has to be downloaded and installed on Windows 2003 and 2000. The link to the download is available at the bottom of this\r\n page. To launch the \"Group Policy Management\" console, execute the \"gpmc.msc\" command.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Edit or create a Group Policy Object (GPO).</strong> To create and activate a new Group Policy Object (GPO), launch \"The Group Policy Management\" console, right click on the domain and select \"Create and Link a GPO Here.\" To edit an existing GPO,\r\n navigate to the \"Group Policy Objects\" folder under the current domain, right click on the GPO and select \"Edit\" - this will open the \"Group Policy Object Editor.\" To change the settings of a GPO using the \"Group Policy Object Editor, navigate the folders\r\n to find the setting of interest, double click on it, set the desired option(s).</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Enable the \"Account lockout duration\" policy.</strong> The \"Account lockout duration\" policy is located under \"Windows Settings\", \"Security Settings\", \"Account Policies\", \"Account Lockout\", “Account lockout duration\". Set the \"Account lockout duration\"\r\n policy to 30 minutes or more.</p>\r\n    </li>\r\n  </ol>\r\n  <h1>Additional Resources</h1>\r\n  <ul>\r\n    <li>For more information about enforcing password policy in a Microsoft AD environment, please see \"Enforcing Strong Password Usage Throughout Your Organization\" at\r\n<a href=\"http://technet.microsoft.com/en-us/library/cc875814.aspx\">http://technet.microsoft.com/en-us/library/cc875814.aspx</a>.\r\n</li>\r\n    <li>To download the \"Group Policy Management Console,\" please see \"Group Policy Management Console with Service Pack 1\" at\r\n<a href=\"http://www.microsoft.com/downloads/details.aspx?displaylang=en&amp;FamilyID=0a6d4c24-8cbd-4b35-9272-dd3cbfc81887\">\r\nhttp://www.microsoft.com/downloads/details.aspx?displaylang=en&amp;FamilyID=0a6d4c24-8cbd-4b35-9272-dd3cbfc81887</a>.</li>\r\n  </ul>"
+        ]
+      }
+    ]
+  }
+}

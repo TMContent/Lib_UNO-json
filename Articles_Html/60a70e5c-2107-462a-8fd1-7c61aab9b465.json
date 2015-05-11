@@ -1,0 +1,322 @@
+{
+  "id": "60a70e5c-2107-462a-8fd1-7c61aab9b465",
+  "checksum": "f3bb7f2d91bd0803aff29a7c25dd8cfec7a6710c",
+  "words": {
+    "what": [
+      "h2"
+    ],
+    "to": [
+      "h2",
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "do": [
+      "h2"
+    ],
+    "whereever": [
+      "p"
+    ],
+    "possible": [
+      "p"
+    ],
+    "avoid": [
+      "p",
+      "p"
+    ],
+    "implementing": [
+      "p"
+    ],
+    "custom": [
+      "p",
+      "p"
+    ],
+    "authentication": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "routines": [
+      "p",
+      "p",
+      "p"
+    ],
+    "and": [
+      "p",
+      "p",
+      "p"
+    ],
+    "consider": [
+      "p",
+      "p"
+    ],
+    "using": [
+      "p",
+      "p"
+    ],
+    "capabilities": [
+      "p",
+      "p"
+    ],
+    "as": [
+      "p",
+      "p",
+      "p"
+    ],
+    "provided": [
+      "p",
+      "p",
+      "title"
+    ],
+    "by": [
+      "p",
+      "p",
+      "title"
+    ],
+    "the": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "surrounding": [
+      "p"
+    ],
+    "framework": [
+      "p",
+      "p",
+      "title"
+    ],
+    "operating": [
+      "p"
+    ],
+    "system": [
+      "p"
+    ],
+    "or": [
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "environment": [
+      "p"
+    ],
+    "these": [
+      "p",
+      "p",
+      "p"
+    ],
+    "may": [
+      "p"
+    ],
+    "make": [
+      "p",
+      "p"
+    ],
+    "it": [
+      "p"
+    ],
+    "easier": [
+      "p",
+      "p"
+    ],
+    "provide": [
+      "p"
+    ],
+    "a": [
+      "p",
+      "p"
+    ],
+    "clear": [
+      "p"
+    ],
+    "separation": [
+      "p"
+    ],
+    "between": [
+      "p",
+      "p"
+    ],
+    "tasks": [
+      "p",
+      "p"
+    ],
+    "authorization": [
+      "p",
+      "p"
+    ],
+    "in": [
+      "p"
+    ],
+    "environments": [
+      "p"
+    ],
+    "such": [
+      "p",
+      "p"
+    ],
+    "world": [
+      "p"
+    ],
+    "wide": [
+      "p"
+    ],
+    "web": [
+      "p"
+    ],
+    "line": [
+      "p"
+    ],
+    "is": [
+      "p"
+    ],
+    "sometimes": [
+      "p"
+    ],
+    "blurred": [
+      "p"
+    ],
+    "if": [
+      "p"
+    ],
+    "are": [
+      "p"
+    ],
+    "required": [
+      "p"
+    ],
+    "instead": [
+      "p"
+    ],
+    "of": [
+      "p"
+    ],
+    "those": [
+      "p"
+    ],
+    "server": [
+      "p"
+    ],
+    "then": [
+      "p"
+    ],
+    "must": [
+      "p"
+    ],
+    "be": [
+      "p",
+      "p"
+    ],
+    "applied": [
+      "p"
+    ],
+    "every": [
+      "p"
+    ],
+    "single": [
+      "p"
+    ],
+    "page": [
+      "p"
+    ],
+    "since": [
+      "p"
+    ],
+    "pages": [
+      "p"
+    ],
+    "could": [
+      "p"
+    ],
+    "requested": [
+      "p"
+    ],
+    "directly": [
+      "p"
+    ],
+    "use": [
+      "p",
+      "title"
+    ],
+    "vetted": [
+      "p"
+    ],
+    "library": [
+      "p"
+    ],
+    "that": [
+      "p",
+      "p"
+    ],
+    "does": [
+      "p"
+    ],
+    "not": [
+      "p"
+    ],
+    "allow": [
+      "p"
+    ],
+    "this": [
+      "p",
+      "p"
+    ],
+    "weakness": [
+      "p",
+      "p"
+    ],
+    "occur": [
+      "p"
+    ],
+    "provides": [
+      "p"
+    ],
+    "constructs": [
+      "p"
+    ],
+    "for": [
+      "p"
+    ],
+    "example": [
+      "p"
+    ],
+    "libraries": [
+      "p"
+    ],
+    "with": [
+      "p"
+    ],
+    "openssl": [
+      "p",
+      "em"
+    ],
+    "esapi\rauthenticator.": [
+      "p"
+    ],
+    "authenticator": [
+      "em"
+    ]
+  },
+  "tags": {
+    "h2": [
+      "What to Do"
+    ],
+    "p": [
+      "Whereever possible, avoid implementing custom authentication routines and consider using authentication capabilities as provided by the surrounding framework, operating system, or environment. These may make it easier to provide a clear separation between\r\n authentication tasks and authorization tasks. In environments such as the World Wide Web, the line between authentication and authorization is sometimes blurred. If custom authentication routines are required instead of those provided by the server, then these\r\n routines must be applied to every single page, since these pages could be requested directly. Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid. For example, consider\r\n using libraries with authentication capabilities such as OpenSSL or the ESAPI\r\nAuthenticator."
+    ],
+    "em": [
+      "OpenSSL",
+      "Authenticator"
+    ]
+  },
+  "links": [],
+  "html": "<h2>What to Do</h2>\r\n  <p>Whereever possible, avoid implementing custom authentication routines and consider using authentication capabilities as provided by the surrounding framework, operating system, or environment. These may make it easier to provide a clear separation between\r\n authentication tasks and authorization tasks. In environments such as the World Wide Web, the line between authentication and authorization is sometimes blurred. If custom authentication routines are required instead of those provided by the server, then these\r\n routines must be applied to every single page, since these pages could be requested directly. Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid. For example, consider\r\n using libraries with authentication capabilities such as <em>OpenSSL</em> or the ESAPI\r\n<em>Authenticator</em>.</p>"
+}

@@ -1,0 +1,53 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "1822848151",
+      "Content_Hash": "-1111619665"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "e0aa82a5-8d4a-45a5-aff2-849fe87808d9"
+        ],
+        "Library_Id": [
+          "47a10a30-15ad-4cfd-bf82-00e9bb2037f6"
+        ],
+        "Title": [
+          "Network Documentation Explains Why Insecure Services Are Necessary"
+        ],
+        "Category": [
+          "Documentation and Policy"
+        ],
+        "Phase": [
+          "Deployment"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Checklist Item"
+        ],
+        "DirectLink": [
+          "Network Documentation Explains Why Insecure Services Are Necessary"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 1.1.5.b</li>\r\n  </ul>\r\n  <h1>What to Check For</h1>\r\n  <p>The network documentation should include an explanation of why any services known to be insecure are necessary for business operations.</p>\r\n  <h1>Why</h1>\r\n  <p>Services that are known to be insecure should not be running unless they are absolutely necessary for business. Document the business need for any insecure services to make sure they are absolutely indispensable.</p>\r\n  <h1>How to Check</h1>\r\n  <p>Check the network documentation to make sure that it includes explanations of why each insecure network service is necessary for business operations.\r\n</p>\r\n  <h1>How to Fix</h1>\r\n  <p>Identify all services that are required for business operations. Identify which services are known to be insecure.&amp;nbsp;Replace the insecure services with secure ones if possible. Add mitigation measures if possible and document them.&amp;nbsp;If it is not possible to\r\n replace or remove insecure services, document the business need for them and the nature of known vulnerabilities.</p>\r\n  <h1>Related Items</h1>\r\n  <ul>\r\n    <li>\r\n      <p>\r\n        <a href=\"/article/19c8d409-b52c-44ac-b8d2-c668f32a5ec4\">Prepare the Network Documentation for PCI DSS Compliance</a>\r\n      </p>\r\n    </li>\r\n  </ul>"
+        ]
+      }
+    ]
+  }
+}

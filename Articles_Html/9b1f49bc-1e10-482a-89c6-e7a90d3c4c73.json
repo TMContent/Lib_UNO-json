@@ -1,0 +1,273 @@
+{
+  "id": "9b1f49bc-1e10-482a-89c6-e7a90d3c4c73",
+  "checksum": "8a51726cfb4e5c7985af58697bacdb6f48c1992a",
+  "words": {
+    "63": [
+      "ul",
+      "li"
+    ],
+    "applies": [
+      "h1"
+    ],
+    "to": [
+      "h1",
+      "h1",
+      "p",
+      "p",
+      "title"
+    ],
+    "pci": [
+      "ul",
+      "li"
+    ],
+    "dss": [
+      "ul",
+      "li"
+    ],
+    "requirement": [
+      "ul",
+      "li"
+    ],
+    "what": [
+      "h1"
+    ],
+    "do": [
+      "h1",
+      "p"
+    ],
+    "test": [
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "all": [
+      "p",
+      "p"
+    ],
+    "changes": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "including": [
+      "p"
+    ],
+    "patches": [
+      "p"
+    ],
+    "before": [
+      "p"
+    ],
+    "deploying": [
+      "p"
+    ],
+    "them": [
+      "p"
+    ],
+    "each": [
+      "p",
+      "p",
+      "title"
+    ],
+    "change": [
+      "p",
+      "p",
+      "title"
+    ],
+    "for": [
+      "p",
+      "p"
+    ],
+    "validation": [
+      "p",
+      "p"
+    ],
+    "of": [
+      "p",
+      "p",
+      "p"
+    ],
+    "input": [
+      "p",
+      "p"
+    ],
+    "error": [
+      "p",
+      "p"
+    ],
+    "handling": [
+      "p",
+      "p"
+    ],
+    "secure": [
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "cryptographic": [
+      "p",
+      "p"
+    ],
+    "storage": [
+      "p",
+      "p"
+    ],
+    "communications": [
+      "p",
+      "p"
+    ],
+    "and": [
+      "p",
+      "p"
+    ],
+    "proper": [
+      "p",
+      "p"
+    ],
+    "role-based": [
+      "p",
+      "p"
+    ],
+    "access": [
+      "p",
+      "p"
+    ],
+    "control": [
+      "p",
+      "p"
+    ],
+    "why": [
+      "h1"
+    ],
+    "testing": [
+      "p",
+      "p",
+      "p"
+    ],
+    "helps": [
+      "p"
+    ],
+    "ensure": [
+      "p"
+    ],
+    "that": [
+      "p",
+      "p"
+    ],
+    "not": [
+      "p"
+    ],
+    "introduce": [
+      "p"
+    ],
+    "new": [
+      "p"
+    ],
+    "vulnerabilities": [
+      "p"
+    ],
+    "or": [
+      "p"
+    ],
+    "break": [
+      "p"
+    ],
+    "functionality": [
+      "p"
+    ],
+    "how": [
+      "h1"
+    ],
+    "create": [
+      "p"
+    ],
+    "a": [
+      "p"
+    ],
+    "environment": [
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "simulates": [
+      "p"
+    ],
+    "the": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "where": [
+      "p"
+    ],
+    "are": [
+      "p",
+      "p"
+    ],
+    "be": [
+      "p"
+    ],
+    "applied": [
+      "p"
+    ],
+    "apply": [
+      "p",
+      "p"
+    ],
+    "in": [
+      "p"
+    ],
+    "document": [
+      "p"
+    ],
+    "results": [
+      "p"
+    ],
+    "tests": [
+      "p",
+      "p"
+    ],
+    "if": [
+      "p"
+    ],
+    "successful": [
+      "p"
+    ],
+    "production": [
+      "p"
+    ],
+    "code": [
+      "title"
+    ]
+  },
+  "tags": {
+    "h1": [
+      "Applies to",
+      "What to Do",
+      "Why",
+      "How"
+    ],
+    "ul": [
+      "PCI DSS Requirement 6.3"
+    ],
+    "li": [
+      "PCI DSS Requirement 6.3"
+    ],
+    "p": [
+      "Test all changes, including patches, before deploying them. Test each change for validation of input, error handling, secure cryptographic storage, secure communications, and proper role-based access control.",
+      "Testing helps ensure that changes do not introduce new vulnerabilities or break functionality.",
+      "Create a testing environment that simulates the environment where changes are to be applied. Apply changes in the testing environment. Test each change for validation of all input, error handling, secure cryptographic storage, secure communications, and\r\n proper role-based access control. Document the results of the tests. If the tests are successful, apply the changes to the production environment."
+    ]
+  },
+  "links": [],
+  "html": "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 6.3</li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Test all changes, including patches, before deploying them. Test each change for validation of input, error handling, secure cryptographic storage, secure communications, and proper role-based access control.</p>\r\n  <h1>Why</h1>\r\n  <p>Testing helps ensure that changes do not introduce new vulnerabilities or break functionality.</p>\r\n  <h1>How</h1>\r\n  <p>Create a testing environment that simulates the environment where changes are to be applied. Apply changes in the testing environment. Test each change for validation of all input, error handling, secure cryptographic storage, secure communications, and\r\n proper role-based access control. Document the results of the tests. If the tests are successful, apply the changes to the production environment.</p>"
+}
