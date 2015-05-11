@@ -1,0 +1,295 @@
+{
+  "id": "da397400-4155-490c-a4c5-6bc3c9aae75e",
+  "checksum": "3ccce4e82e86eafb7dfeabf8850bcfe1ae98eb82",
+  "words": {
+    "applies": [
+      "h1"
+    ],
+    "to": [
+      "h1",
+      "h1",
+      "p",
+      "h1",
+      "p",
+      "h1"
+    ],
+    "pci": [
+      "ul",
+      "li"
+    ],
+    "dss": [
+      "ul",
+      "li"
+    ],
+    "requirement": [
+      "ul",
+      "li"
+    ],
+    "22.2": [
+      "ul",
+      "li"
+    ],
+    "what": [
+      "h1"
+    ],
+    "check": [
+      "h1",
+      "h1"
+    ],
+    "for": [
+      "h1",
+      "p",
+      "p",
+      "p"
+    ],
+    "all": [
+      "p",
+      "p"
+    ],
+    "services": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "ul",
+      "li",
+      "p",
+      "a",
+      "title"
+    ],
+    "daemons": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "and": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "ul",
+      "li",
+      "p",
+      "a",
+      "title"
+    ],
+    "protocols": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "ul",
+      "li",
+      "p",
+      "a",
+      "title"
+    ],
+    "on": [
+      "p",
+      "p",
+      "p"
+    ],
+    "each": [
+      "p",
+      "p",
+      "p"
+    ],
+    "server": [
+      "p",
+      "p",
+      "p"
+    ],
+    "that": [
+      "p",
+      "p"
+    ],
+    "are": [
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "not": [
+      "p"
+    ],
+    "needed": [
+      "p"
+    ],
+    "business": [
+      "p",
+      "p"
+    ],
+    "purposes": [
+      "p"
+    ],
+    "should": [
+      "p"
+    ],
+    "be": [
+      "p"
+    ],
+    "disabled": [
+      "p",
+      "title"
+    ],
+    "why": [
+      "h1"
+    ],
+    "the": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "fewer": [
+      "p"
+    ],
+    "there": [
+      "p"
+    ],
+    "less": [
+      "p"
+    ],
+    "surface": [
+      "p"
+    ],
+    "area": [
+      "p"
+    ],
+    "is": [
+      "p"
+    ],
+    "available": [
+      "p"
+    ],
+    "an": [
+      "p"
+    ],
+    "attacker": [
+      "p"
+    ],
+    "exploit": [
+      "p"
+    ],
+    "how": [
+      "h1",
+      "h1"
+    ],
+    "inspect": [
+      "p"
+    ],
+    "make": [
+      "p"
+    ],
+    "a": [
+      "p"
+    ],
+    "list": [
+      "p"
+    ],
+    "of": [
+      "p"
+    ],
+    "enabled": [
+      "p",
+      "p"
+    ],
+    "it": [
+      "p"
+    ],
+    "use": [
+      "p"
+    ],
+    "resulting": [
+      "p"
+    ],
+    "lists": [
+      "p"
+    ],
+    "ensure": [
+      "p"
+    ],
+    "only": [
+      "p"
+    ],
+    "documented": [
+      "p"
+    ],
+    "necessary": [
+      "p"
+    ],
+    "operations": [
+      "p"
+    ],
+    "fix": [
+      "h1"
+    ],
+    "disable": [
+      "p",
+      "ul",
+      "li",
+      "p",
+      "a"
+    ],
+    "unnecessary": [
+      "p"
+    ],
+    "related": [
+      "h1"
+    ],
+    "items": [
+      "h1"
+    ],
+    "unused": [
+      "ul",
+      "li",
+      "p",
+      "a",
+      "title"
+    ]
+  },
+  "tags": {
+    "h1": [
+      "Applies to",
+      "What to Check For",
+      "Why",
+      "How to Check",
+      "How to Fix",
+      "Related Items"
+    ],
+    "ul": [
+      "PCI DSS Requirement 2.2.2",
+      "Disable Unused Services and Protocols"
+    ],
+    "li": [
+      "PCI DSS Requirement 2.2.2",
+      "Disable Unused Services and Protocols"
+    ],
+    "p": [
+      "All services, daemons and protocols on each server that are not needed for business purposes should be disabled.",
+      "The fewer services, daemons and protocols there are, the less surface area is available for an attacker to exploit.",
+      "Inspect each server and make a list of all services, daemons and protocols enabled on it. Use the resulting lists to ensure that only the services, daemons and protocols documented and necessary for business operations are enabled.",
+      "Disable the unnecessary services, daemons and protocols on each server.",
+      "Disable Unused Services and Protocols"
+    ],
+    "a": [
+      "Disable Unused Services and Protocols"
+    ]
+  },
+  "links": [
+    {
+      "href": "/article/faa1bbb3-14c5-42ed-8350-534c1a8f3a4f",
+      "text": "Disable Unused Services and Protocols"
+    }
+  ],
+  "html": "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 2.2.2</li>\r\n  </ul>\r\n  <h1>What to Check For</h1>\r\n  <p>All services, daemons and protocols on each server that are not needed for business purposes should be disabled.</p>\r\n  <h1>Why</h1>\r\n  <p>The fewer services, daemons and protocols there are, the less surface area is available for an attacker to exploit.</p>\r\n  <h1>How to Check</h1>\r\n  <p>Inspect each server and make a list of all services, daemons and protocols enabled on it. Use the resulting lists to ensure that only the services, daemons and protocols documented and necessary for business operations are enabled.</p>\r\n  <h1>How to Fix</h1>\r\n  <p>Disable the unnecessary services, daemons and protocols on each server.</p>\r\n  <h1>Related Items</h1>\r\n  <ul>\r\n    <li>\r\n      <p>\r\n        <a href=\"/article/faa1bbb3-14c5-42ed-8350-534c1a8f3a4f\">Disable Unused Services and Protocols</a>\r\n      </p>\r\n    </li>\r\n  </ul>"
+}

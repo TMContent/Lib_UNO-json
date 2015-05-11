@@ -1,0 +1,53 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "599305896",
+      "Content_Hash": "-1469274269"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "3a029286-15a3-4d2a-a9f0-ef174353fc3c"
+        ],
+        "Library_Id": [
+          "47a10a30-15ad-4cfd-bf82-00e9bb2037f6"
+        ],
+        "Title": [
+          "Personal Firewalls Are Installed on Employees' Computers"
+        ],
+        "Category": [
+          "Networking"
+        ],
+        "Phase": [
+          "Deployment"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Checklist Item"
+        ],
+        "DirectLink": [
+          "Personal Firewalls Are Installed on Employees' Computers"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "html"
+        },
+        "Data": [
+          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 1.4.a </li>\r\n    <li>PCI DSS Requirement 1.4.b</li>\r\n  </ul>\r\n  <h1>What to Check For</h1>\r\n  <p>Verify that mobile and/or employee-owned computers used to access the company network have personal firewalls installed and configured to the company standard. Ensure that the employees cannot change the settings of the personal firewalls or disable them.</p>\r\n  <h1>Why</h1>\r\n  <p>A compromised personal computer is a threat to the cardholder data environment. A personal firewall offers some protection from network attacks and may prevent remote control malware from working.</p>\r\n  <h1>How to Check</h1>\r\n  <p>Check each mobile and/or employee-owned computer used to access the company network to make sure it has a personal firewall installed, the personal firewall is configured to company standards, and the employee cannot change the settings or disable it. Note\r\n that recent Windows operating systems have a built-in firewall that is capable of meeting this requirement.\r\n</p>\r\n  <h1>How to Fix</h1>\r\n  <p>Install and configure a personal firewall on each mobile and/or employee-owned computer used to access the company network. On recent Windows operating systems, the built-in firewall may be used to meet this requirement. Use a group policy to prevent the\r\n employee from disabling the firewall or changing the firewall settings.</p>\r\n  <h1>Related Items</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/59a5dab8-8cf9-48bd-809c-e4d43e2a261a\">Install and Configure a Personal Firewall</a>\r\n    </li>\r\n  </ul>"
+        ]
+      }
+    ]
+  }
+}

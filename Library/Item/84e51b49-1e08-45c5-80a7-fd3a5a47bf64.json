@@ -1,0 +1,62 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "-378694239",
+      "Content_Hash": "1966419664"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "84e51b49-1e08-45c5-80a7-fd3a5a47bf64"
+        ],
+        "Library_Id": [
+          "e7d92b5b-e1d8-4039-b019-8b02594ea93a"
+        ],
+        "Title": [
+          "Notify the User about Redirection"
+        ],
+        "Category": [
+          "Redirects and Forwards"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Principle"
+        ],
+        "DirectLink": [
+          "Notify the User about Redirection"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h2>What to Do</h2>\r\n  <p>Use an intermediate disclaimer page that provides the user with a clear warning that they are leaving your site. Implement a long timeout before the redirect occurs, or force the user to click on the link. Be careful to avoid XSS problems (CWE-79) when generating\r\n the disclaimer page.</p>\r\n  <h2>Additional Resources</h2>\r\n  <ul>\r\n    <li>For more information about \"CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')\", please see\r\n<a href=\"http://cwe.mitre.org/data/definitions/79.html\">http://cwe.mitre.org/data/definitions/79.html</a></li>\r\n  </ul>"
+        ]
+      }
+    ]
+  }
+}

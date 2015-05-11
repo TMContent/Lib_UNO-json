@@ -1,0 +1,319 @@
+{
+  "id": "46046fe6-d53a-4730-9aad-b2845b8c13b1",
+  "checksum": "2b36f2170b991beea51a57b46bda389cdbb5bc52",
+  "words": {
+    "what": [
+      "h2"
+    ],
+    "to": [
+      "h2",
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "do": [
+      "h2"
+    ],
+    "use": [
+      "p",
+      "p",
+      "title"
+    ],
+    "a": [
+      "p",
+      "title"
+    ],
+    "vetted": [
+      "p"
+    ],
+    "library": [
+      "p"
+    ],
+    "or": [
+      "p",
+      "p",
+      "p"
+    ],
+    "framework": [
+      "p",
+      "p",
+      "title"
+    ],
+    "that": [
+      "p",
+      "p"
+    ],
+    "does": [
+      "p"
+    ],
+    "not": [
+      "p"
+    ],
+    "allow": [
+      "p"
+    ],
+    "this": [
+      "p",
+      "p"
+    ],
+    "weakness": [
+      "p",
+      "p"
+    ],
+    "occur": [
+      "p"
+    ],
+    "provides": [
+      "p"
+    ],
+    "constructs": [
+      "p"
+    ],
+    "make": [
+      "p"
+    ],
+    "easier": [
+      "p"
+    ],
+    "avoid": [
+      "p"
+    ],
+    "for": [
+      "p",
+      "p",
+      "p",
+      "ul",
+      "li"
+    ],
+    "example": [
+      "p"
+    ],
+    "consider": [
+      "p"
+    ],
+    "using": [
+      "p"
+    ],
+    "persistence": [
+      "p",
+      "title"
+    ],
+    "layers": [
+      "p"
+    ],
+    "such": [
+      "p"
+    ],
+    "as\rhibernate": [
+      "p"
+    ],
+    "enterprise": [
+      "p",
+      "em"
+    ],
+    "java": [
+      "p",
+      "em",
+      "p"
+    ],
+    "beans": [
+      "p",
+      "em"
+    ],
+    "which": [
+      "p"
+    ],
+    "can": [
+      "p"
+    ],
+    "provide": [
+      "p"
+    ],
+    "significant": [
+      "p"
+    ],
+    "protection": [
+      "p"
+    ],
+    "against": [
+      "p"
+    ],
+    "sql": [
+      "p",
+      "p",
+      "ul",
+      "li",
+      "title"
+    ],
+    "injection": [
+      "p",
+      "ul",
+      "li"
+    ],
+    "if": [
+      "p"
+    ],
+    "used": [
+      "p"
+    ],
+    "properly": [
+      "p"
+    ],
+    "hibernate": [
+      "em"
+    ],
+    "how": [
+      "h1"
+    ],
+    "identify": [
+      "p"
+    ],
+    "secure": [
+      "p",
+      "title"
+    ],
+    "frameworks": [
+      "p",
+      "p"
+    ],
+    "available": [
+      "p"
+    ],
+    "your": [
+      "p"
+    ],
+    "platform": [
+      "p"
+    ],
+    "these": [
+      "p"
+    ],
+    "are": [
+      "p"
+    ],
+    "most": [
+      "p"
+    ],
+    "practical": [
+      "p"
+    ],
+    "applications": [
+      "p"
+    ],
+    "each": [
+      "p"
+    ],
+    "has": [
+      "p",
+      "p"
+    ],
+    "unique": [
+      "p"
+    ],
+    "properties": [
+      "p"
+    ],
+    "and": [
+      "p",
+      "p"
+    ],
+    "the": [
+      "p"
+    ],
+    "choice": [
+      "p"
+    ],
+    "one": [
+      "p"
+    ],
+    "be": [
+      "p"
+    ],
+    "made": [
+      "p"
+    ],
+    "after": [
+      "p"
+    ],
+    "careful": [
+      "p"
+    ],
+    "consideration": [
+      "p"
+    ],
+    "study": [
+      "p"
+    ],
+    "of&nbspeach": [
+      "p"
+    ],
+    "option": [
+      "p"
+    ],
+    "additional": [
+      "h2"
+    ],
+    "resources": [
+      "h2"
+    ],
+    "more": [
+      "ul",
+      "li"
+    ],
+    "information": [
+      "ul",
+      "li"
+    ],
+    "about": [
+      "ul",
+      "li"
+    ],
+    "please": [
+      "ul",
+      "li"
+    ],
+    "see": [
+      "ul",
+      "li"
+    ],
+    "http//cwe.mitre.org/top25/index.html#cwe-89": [
+      "ul",
+      "li",
+      "a"
+    ]
+  },
+  "tags": {
+    "h2": [
+      "What to Do",
+      "Additional Resources"
+    ],
+    "p": [
+      "Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid. For example, consider using persistence layers such as\r\nHibernate or Enterprise Java Beans, which can provide significant protection against SQL injection if used properly.",
+      "Identify secure SQL frameworks available for your platform. These frameworks are most practical for Java applications. Each framework has unique properties and the choice to use one has to be made after careful consideration and study of&nbsp;each option."
+    ],
+    "em": [
+      "Hibernate",
+      "Enterprise Java Beans"
+    ],
+    "h1": [
+      "How"
+    ],
+    "ul": [
+      "For more information about SQL injection, please see \r\nhttp://cwe.mitre.org/top25/index.html#CWE-89"
+    ],
+    "li": [
+      "For more information about SQL injection, please see \r\nhttp://cwe.mitre.org/top25/index.html#CWE-89"
+    ],
+    "a": [
+      "http://cwe.mitre.org/top25/index.html#CWE-89"
+    ]
+  },
+  "links": [
+    {
+      "href": "http://cwe.mitre.org/top25/index.html#CWE-89",
+      "text": "\r\nhttp://cwe.mitre.org/top25/index.html#CWE-89"
+    }
+  ],
+  "html": "<h2>What to Do</h2>\r\n  <p>Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid. For example, consider using persistence layers such as\r\n<em>Hibernate</em> or <em>Enterprise Java Beans</em>, which can provide significant protection against SQL injection if used properly.</p>\r\n  <h1>How</h1>\r\n  <p>Identify secure SQL frameworks available for your platform. These frameworks are most practical for Java applications. Each framework has unique properties and the choice to use one has to be made after careful consideration and study of&amp;nbsp;each option.</p>\r\n  <h2>Additional Resources</h2>\r\n  <ul>\r\n    <li>For more information about SQL injection, please see <a href=\"http://cwe.mitre.org/top25/index.html#CWE-89\">\r\nhttp://cwe.mitre.org/top25/index.html#CWE-89</a></li>\r\n  </ul>"
+}

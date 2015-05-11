@@ -1,0 +1,62 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "212697436",
+      "Content_Hash": "-305947293"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "304f7e96-bc89-4318-8e01-ee4fd91b2e84"
+        ],
+        "Library_Id": [
+          "47a10a30-15ad-4cfd-bf82-00e9bb2037f6"
+        ],
+        "Title": [
+          "Do Not Store Card PIN"
+        ],
+        "Category": [
+          "Sensitive Data"
+        ],
+        "Phase": [
+          "Deployment"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          "Do Not Store Card PIN"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 3.2.3</li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Do not store cardholder PIN information.</p>\r\n  <h1>Why</h1>\r\n  <p>The cardholder PIN is used for authentication at ATMs and that makes it of high value to an attacker. In the rare event it is required for a transaction, it should not be stored after the transaction has been processed.</p>\r\n  <h1>How</h1>\r\n  <p>Identify the storage mechanism that stores the PIN, for example a script or a database query. Change the storage mechanism so that it does not record the PIN.</p>"
+        ]
+      }
+    ]
+  }
+}

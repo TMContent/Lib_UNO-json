@@ -1,0 +1,53 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "264467550",
+      "Content_Hash": "743508543"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "fca80b5f-dd56-46df-a167-9690a3ec9b44"
+        ],
+        "Library_Id": [
+          "47a10a30-15ad-4cfd-bf82-00e9bb2037f6"
+        ],
+        "Title": [
+          "Remote Vendor Accounts Are Monitored and Controlled"
+        ],
+        "Category": [
+          "Authentication"
+        ],
+        "Phase": [
+          "Deployment"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Checklist Item"
+        ],
+        "DirectLink": [
+          "Remote Vendor Accounts Are Monitored and Controlled"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 8.5.6</li>\r\n  </ul>\r\n  <h1>What to Check For</h1>\r\n  <p>Ensure that accounts used remotely by vendors are enabled temporarily and only when needed. Verify that accounts used remotely by vendors are monitored while used.</p>\r\n  <h1>Why</h1>\r\n  <p>Vendor accounts should be disabled when they are not needed and monitored while being used to ensure they are not being used for unauthorized access.</p>\r\n  <h1>How to Check</h1>\r\n  <p>Use the account management application to verify that vendor accounts are currently disabled unless they are being used at the moment by the respective vendors. In a Microsoft Active Directory environment, you may use the \"Active Directory Users and Computers\"\r\n console to manage user accounts. To launch this console, click on \"Start\", \"Programs\", \"Administrative Tools\", \"Active Directory Users and Computers\".\r\n</p>\r\n  <p>Interview the responsible personnel to make sure they monitor the vendor accounts being used. As far as the extent of the monitoring, it is sufficient to make sure that the vendors access the system(s) only when they are supposed to by staying in touch with\r\n them during the process.</p>\r\n  <h1>How to Fix</h1>\r\n  <p>Disable all vendor accounts that are not being used at the moment. Instruct the responsible staff to keep in touch with the vendor when a vendor needs remote access and to disable the vendor's account as soon as it is no longer being used. In a Microsoft\r\n Active Directory environment, you may use the \"Active Directory Users and Computers\" console to manage user accounts. To launch this console, click on \"Start\", \"Programs\", \"Administrative Tools\", \"Active Directory Users and Computers\".</p>"
+        ]
+      }
+    ]
+  }
+}

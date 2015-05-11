@@ -1,0 +1,62 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "-1101859677",
+      "Content_Hash": "-924261703"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "f657ccdd-583f-4ea7-b7db-60fc42361cea"
+        ],
+        "Library_Id": [
+          "e7d92b5b-e1d8-4039-b019-8b02594ea93a"
+        ],
+        "Title": [
+          "Do Not Let Users Specify Names of Uploaded Files"
+        ],
+        "Category": [
+          "Input Validation"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Principle"
+        ],
+        "DirectLink": [
+          "Do Not Let Users Specify Names of Uploaded Files"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h2>What to Do</h2>\r\n  <p>Don't let the user specify the file name of the uploaded files. Generate your own filename for an uploaded file instead of the user-supplied filename, so that no external input is used at all.</p>"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "-441347183",
+      "Content_Hash": "73434665"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "9b1f49bc-1e10-482a-89c6-e7a90d3c4c73"
+        ],
+        "Library_Id": [
+          "47a10a30-15ad-4cfd-bf82-00e9bb2037f6"
+        ],
+        "Title": [
+          "Test Each Change to Code"
+        ],
+        "Category": [
+          "Development"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          "Test Each Change to Code"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 6.3</li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Test all changes, including patches, before deploying them. Test each change for validation of input, error handling, secure cryptographic storage, secure communications, and proper role-based access control.</p>\r\n  <h1>Why</h1>\r\n  <p>Testing helps ensure that changes do not introduce new vulnerabilities or break functionality.</p>\r\n  <h1>How</h1>\r\n  <p>Create a testing environment that simulates the environment where changes are to be applied. Apply changes in the testing environment. Test each change for validation of all input, error handling, secure cryptographic storage, secure communications, and\r\n proper role-based access control. Document the results of the tests. If the tests are successful, apply the changes to the production environment.</p>"
+        ]
+      }
+    ]
+  }
+}

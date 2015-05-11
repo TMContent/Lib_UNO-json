@@ -1,0 +1,62 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "-1528968657",
+      "Content_Hash": "2135176514"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "70adeb4d-5814-41b5-928b-ca8039880771"
+        ],
+        "Library_Id": [
+          "e7d92b5b-e1d8-4039-b019-8b02594ea93a"
+        ],
+        "Title": [
+          "Isolate Privileged Code"
+        ],
+        "Category": [
+          "Authorization"
+        ],
+        "Phase": [
+          "Design"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Principle"
+        ],
+        "DirectLink": [
+          "Isolate Privileged Code"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h2>What to Do</h2>\r\n  <p>Identify the functionality that requires additional privileges, such as access to privileged operating system resources. Wrap and centralize this functionality if possible, and isolate the privileged code as much as possible from other code. Raise your privileges\r\n as late as possible, and drop them as soon as possible to avoid CWE-271. Avoid weaknesses such as CWE-288 and CWE-420 by protecting all possible communication channels that could interact with your privileged code, such as a secondary socket that you only\r\n intend to be accessed by administrators.</p>\r\n  <h1>Additional Resources</h1>\r\n  <ul>\r\n    <li>For more information about \"CWE-271: Privilege Dropping / Lowering Errors\", please see\r\n<a href=\"http://cwe.mitre.org/data/definitions/271.html\">http://cwe.mitre.org/data/definitions/271.html</a></li>\r\n    <li>For more information about \"CWE-288: Authentication Bypass Using an Alternate Path or Channel\", please see\r\n<a href=\"http://cwe.mitre.org/data/definitions/288.html\">http://cwe.mitre.org/data/definitions/288.html</a></li>\r\n    <li>For more information about \"CWE-420: Unprotected Alternate Channel\", please see\r\n<a href=\"http://cwe.mitre.org/data/definitions/420.html\">http://cwe.mitre.org/data/definitions/420.html</a></li>\r\n  </ul>"
+        ]
+      }
+    ]
+  }
+}

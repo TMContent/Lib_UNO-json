@@ -1,0 +1,62 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "-751535684",
+      "Content_Hash": "947613943"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "259373bc-9931-4dcc-9e10-3bb4ce2a3e10"
+        ],
+        "Library_Id": [
+          "47a10a30-15ad-4cfd-bf82-00e9bb2037f6"
+        ],
+        "Title": [
+          "Replace Compromised Encryption Keys"
+        ],
+        "Category": [
+          "Cryptographic Storage"
+        ],
+        "Phase": [
+          "Deployment"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          "Replace Compromised Encryption Keys"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 3.6.5.b</li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Establish a procedure for replacing known or suspected compromised encryption keys.</p>\r\n  <h1>Why</h1>\r\n  <p>Compromised encryption keys may be used to decrypt sensitive information.</p>\r\n  <h1>How</h1>\r\n  <p>Design a procedure for changing the encryption keys. Document the procedure for changing the keys. Include the requirement and the procedure in the information security policy. Change any known or suspected compromised keys. You may have to add this functionality\r\n to your software if you don't have it already.</p>"
+        ]
+      }
+    ]
+  }
+}

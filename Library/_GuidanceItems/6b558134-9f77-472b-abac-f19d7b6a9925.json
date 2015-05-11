@@ -1,0 +1,53 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "1358340127",
+      "Content_Hash": "-1464295889"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "6b558134-9f77-472b-abac-f19d7b6a9925"
+        ],
+        "Library_Id": [
+          "be5273b1-d682-4361-99d9-6234f2d47eb7"
+        ],
+        "Title": [
+          "The Server Implements the Latest TLS Version"
+        ],
+        "Category": [
+          "Communication Security"
+        ],
+        "Phase": [
+          "Deployment"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Checklist Item"
+        ],
+        "DirectLink": [
+          "The Server Implements the Latest SSL Version"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h1>What to Check For</h1>\r\n  <p>If a web application uses TLS, the server should support the latest version.</p>\r\n  <h1>Why</h1>\r\n  <p>Old versions of SSL contain known vulnerabilities. The latest TLS version has addressed these vulnerabilities. New vulnerabilities may be found in the future, requiring a newer version of TLS to be used.</p>\r\n  <h1>How to Check</h1>\r\n  <p>Examine the server configuration to make sure that the latest version of TLS is used and only strong cypher suites are enabled.</p>\r\n  <h1>How to Fix</h1>\r\n  <p>Configure the server to use the latest version of TLS with strong cypher suites.</p>"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "1322239176",
+      "Content_Hash": "724463635"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "7df0d5a8-2e24-4ee9-84f2-ca0729fa0a8c"
+        ],
+        "Library_Id": [
+          "47a10a30-15ad-4cfd-bf82-00e9bb2037f6"
+        ],
+        "Title": [
+          "Test Changes to the Router Configuration"
+        ],
+        "Category": [
+          "Networking"
+        ],
+        "Phase": [
+          "Deployment"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          "Test Changes to the Router Configuration"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 1.1.1</li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>The network documentation and the information security policy should include a formal testing process for changes to the router settings. One way to test the changes to the router configuration is by using the ping and traceroute commands included in most\r\n networking capable operating systems.</p>\r\n  <h1>Why</h1>\r\n  <p>Testing the changes made to the router configuration is important because it helps make sure that the changes have been made correctly and that&amp;nbsp;the new router configuration is functional and secure.\r\n</p>\r\n  <h1>When</h1>\r\n  <p>The changes to the router configuration should be tested whenever changes to the router configuration have been made.</p>\r\n  <h1>How</h1>\r\n  <p>Perform the following steps to test changes to the router configuration and to document the testing process in compliance with PCI DSS:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Use ping to test the router configuration. </strong>The ping command is useful for testing changes to the router configuration. The ping command sends a packet to a remote host, and the remote host is supposed to send a packet back, thus showing\r\n that there is a route between the two hosts. To test changes to the router configuration using the ping command: Issue a \"ping TARGETIP\" command from a host on one side of the router to a host on the other side of the router, where TARGETIP is the IP of one\r\n of the hosts. If the ping command shows the average latency between the hosts, then there is a route between them. If the ping command says \"destination unreachable\" or gives some other error, then there is no route between the two hosts. The exact error message\r\n may be helpful to identify the problem with the router configuration.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Use traceroute to test the router configuration. </strong>The traceroute command is useful for testing changes to the router configuration. The traceroute command asks each router on the route to the remote host to identify itself and prints the\r\n list of routers on the route to the destination IP. To test changes to the router configuration using the traceroute command: Issue a \"tracert TARGETIP\" (\"traceroute TARGETIP\" on Unix-like systems) command from a host on one side of the router to a host on\r\n the other side of the router, where TARGETIP is the IP of one of the hosts.&amp;nbsp;Compare the output of the traceroute command with the network design to make sure they match.&amp;nbsp;If the output of the traceroute command is as expected, then the test of the router configuration\r\n may be considered successful. If the traceroute command returns an error, the error may be helpful for correcting the router configuration.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Update documentation.</strong> Document the testing procedure in the network documentation as the formal testing process for changes to the router configuration. Document the results of the tests along with the changes made to the network.</p>\r\n    </li>\r\n  </ol>\r\n  <h1>Related Items</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/19c8d409-b52c-44ac-b8d2-c668f32a5ec4\">Prepare the Network Documentation for PCI DSS Compliance</a>\r\n    </li>\r\n    <li>\r\n      <a href=\"/article/a6fd7041-0d43-4574-b67e-dc5105d07c02\">Current router configuration matches the start-up settings</a>\r\n    </li>\r\n  </ul>"
+        ]
+      }
+    ]
+  }
+}

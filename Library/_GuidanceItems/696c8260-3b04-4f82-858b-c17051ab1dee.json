@@ -1,0 +1,53 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "-68429578",
+      "Content_Hash": "-667242951"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "696c8260-3b04-4f82-858b-c17051ab1dee"
+        ],
+        "Library_Id": [
+          "47a10a30-15ad-4cfd-bf82-00e9bb2037f6"
+        ],
+        "Title": [
+          "Current Log Files Are Promptly Backed Up"
+        ],
+        "Category": [
+          "Auditing and Logging"
+        ],
+        "Phase": [
+          "Deployment"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Checklist Item"
+        ],
+        "DirectLink": [
+          "Current Log Files Are Promptly Backed Up"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 10.5.3 </li>\r\n    <li>PCI DSS Requirement 10.5.4</li>\r\n  </ul>\r\n  <h1>What to Check For</h1>\r\n  <p>Current logs should be backed up promptly to a centralized log server or a media that is difficult to alter.</p>\r\n  <h1>Why</h1>\r\n  <p>Logs should be backed up promptly to prevent tampering.</p>\r\n  <h1>How to Check</h1>\r\n  <p>Verify that logs are backed up promptly by performing the following tasks:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Examine the centralized log server. </strong>Verify that a centralized log server is installed and all log-generating devices are sending logs to it. Most centralized log server solutions collect data from network devices in real time. Examine the\r\n logs on the log server to make sure that they are current.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Examine devices that are not compatible with the centralized log server.\r\n</strong>Make a list of devices that are not compatible with the log server. Verify that there is some other mechanism implemented for quickly sending logs from these devices to a secure storage location by examining the logs at the back-up location to make\r\n sure they are current.</p>\r\n    </li>\r\n  </ol>\r\n  <h1>How to Fix</h1>\r\n  <p>Use the following steps to assure that logs are backed up promptly:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Deploy a centralized log server.</strong> Choose a centralized log server solution. When choosing a centralized log server solution, it may be helpful to verify that it is explicitly designed to satisfy PCI DSS Requirement 10.2.2 - logging all activity\r\n by the administrator and the other privileged users -&amp;nbsp;because this functionality is difficult to implement otherwise.&amp;nbsp;Install and configure a centralized log server by following the vendor's instructions. Configure all network devices that are compatible with\r\n the log server to send logs to the log server. </p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Configure devices that are not compatible with the log server.</strong> Make a list of the devices that are not compatible with the log server. Use this list daily to manually check and backup the logs on the devices that are not compatible with\r\n the log server.Consider replacing the incompatible&amp;nbsp;devices.</p>\r\n    </li>\r\n  </ol>\r\n  <h1>Related Items</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/7a956911-f547-4f65-88bb-f4a42ea349f3\">Implement Audit Trails for System Components</a>\r\n    </li>\r\n  </ul>"
+        ]
+      }
+    ]
+  }
+}

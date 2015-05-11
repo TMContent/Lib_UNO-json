@@ -1,0 +1,334 @@
+{
+  "id": "70aa0034-8fb1-4692-aedd-1dd0879a0e4b",
+  "checksum": "4d0dced03846bf24dc8979240e211d8042a64dc3",
+  "words": {
+    "what": [
+      "h2"
+    ],
+    "to": [
+      "h2",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "do": [
+      "h2"
+    ],
+    "use": [
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "a": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "vetted": [
+      "p"
+    ],
+    "library": [
+      "p"
+    ],
+    "or": [
+      "p",
+      "p"
+    ],
+    "framework": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "that": [
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "does": [
+      "p"
+    ],
+    "not": [
+      "p",
+      "p"
+    ],
+    "allow": [
+      "p"
+    ],
+    "this": [
+      "p",
+      "p"
+    ],
+    "weakness": [
+      "p",
+      "p"
+    ],
+    "occur": [
+      "p"
+    ],
+    "provides": [
+      "p"
+    ],
+    "constructs": [
+      "p"
+    ],
+    "make": [
+      "p"
+    ],
+    "easier": [
+      "p"
+    ],
+    "avoid": [
+      "p"
+    ],
+    "with": [
+      "p"
+    ],
+    "stateless": [
+      "p"
+    ],
+    "protocol": [
+      "p"
+    ],
+    "such": [
+      "p"
+    ],
+    "as": [
+      "p",
+      "p"
+    ],
+    "http": [
+      "p"
+    ],
+    "maintains": [
+      "p"
+    ],
+    "the": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "state": [
+      "p",
+      "p",
+      "p",
+      "em"
+    ],
+    "for": [
+      "p",
+      "p"
+    ],
+    "you": [
+      "p"
+    ],
+    "examples": [
+      "p"
+    ],
+    "include": [
+      "p"
+    ],
+    "aspnet\r\nview": [
+      "p"
+    ],
+    "and": [
+      "p",
+      "p",
+      "p"
+    ],
+    "owasp": [
+      "p"
+    ],
+    "esapi": [
+      "p",
+      "em"
+    ],
+    "session": [
+      "p",
+      "em",
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "management": [
+      "p",
+      "em",
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "feature": [
+      "p"
+    ],
+    "be": [
+      "p",
+      "p",
+      "p"
+    ],
+    "careful": [
+      "p"
+    ],
+    "of": [
+      "p"
+    ],
+    "language": [
+      "p"
+    ],
+    "features": [
+      "p"
+    ],
+    "provide": [
+      "p",
+      "p"
+    ],
+    "support": [
+      "p"
+    ],
+    "since": [
+      "p"
+    ],
+    "these": [
+      "p"
+    ],
+    "might": [
+      "p"
+    ],
+    "provided": [
+      "p"
+    ],
+    "convenience": [
+      "p"
+    ],
+    "programmer": [
+      "p"
+    ],
+    "may": [
+      "p"
+    ],
+    "considering": [
+      "p"
+    ],
+    "security": [
+      "p"
+    ],
+    "view": [
+      "em"
+    ],
+    "why": [
+      "h1"
+    ],
+    "works": [
+      "p"
+    ],
+    "on": [
+      "p"
+    ],
+    "lower": [
+      "p"
+    ],
+    "level": [
+      "p"
+    ],
+    "than": [
+      "p"
+    ],
+    "application": [
+      "p",
+      "p"
+    ],
+    "is": [
+      "p"
+    ],
+    "therefore": [
+      "p"
+    ],
+    "better": [
+      "p"
+    ],
+    "suited": [
+      "p"
+    ],
+    "most": [
+      "p"
+    ],
+    "mature": [
+      "p"
+    ],
+    "web": [
+      "p"
+    ],
+    "frameworks": [
+      "p"
+    ],
+    "offer": [
+      "p"
+    ],
+    "secure": [
+      "p"
+    ],
+    "functionality": [
+      "p"
+    ],
+    "how": [
+      "h1"
+    ],
+    "offered": [
+      "p",
+      "title"
+    ],
+    "by": [
+      "p",
+      "title"
+    ],
+    "please": [
+      "p"
+    ],
+    "refer": [
+      "p"
+    ],
+    "documentation": [
+      "p"
+    ],
+    "your": [
+      "p"
+    ],
+    "chosen": [
+      "p"
+    ]
+  },
+  "tags": {
+    "h2": [
+      "What to Do"
+    ],
+    "p": [
+      "Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid. With a stateless protocol such as HTTP, use a framework that maintains the state for you. Examples include ASP.NET\r\nView State and the OWASP ESAPI Session Management feature. Be careful of language features that provide state support, since these might be provided as a convenience to the programmer and may not be considering security.",
+      "The framework works on a lower level than the application and is therefore better suited to provide session management. Most mature web application frameworks offer secure session management functionality.",
+      "To use session management offered by the framework, please refer to the documentation for your chosen framework."
+    ],
+    "em": [
+      "View State",
+      "ESAPI Session Management"
+    ],
+    "h1": [
+      "Why",
+      "How"
+    ]
+  },
+  "links": [],
+  "html": "<h2>What to Do</h2>\r\n  <p>Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid. With a stateless protocol such as HTTP, use a framework that maintains the state for you. Examples include ASP.NET\r\n<em>View State</em> and the OWASP <em>ESAPI Session Management </em>feature. Be careful of language features that provide state support, since these might be provided as a convenience to the programmer and may not be considering security.</p>\r\n  <h1>Why</h1>\r\n  <p>The framework works on a lower level than the application and is therefore better suited to provide session management. Most mature web application frameworks offer secure session management functionality.</p>\r\n  <h1>How</h1>\r\n  <p>To use session management offered by the framework, please refer to the documentation for your chosen framework.\r\n</p>"
+}

@@ -1,0 +1,62 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "-829687363",
+      "Content_Hash": "2026855524"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "ae029c63-edd6-4fc2-8e9c-7b67f8fd338b"
+        ],
+        "Library_Id": [
+          "47a10a30-15ad-4cfd-bf82-00e9bb2037f6"
+        ],
+        "Title": [
+          "Document Vulnerability Scans"
+        ],
+        "Category": [
+          "Documentation and Policy"
+        ],
+        "Phase": [
+          "Deployment"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          "Document Vulnerability Scans"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 11.2</li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Document vulnerability scans.</p>\r\n  <h1>Why</h1>\r\n  <p>Vulnerability scans should be documented to prove that they took place and to show what vulnerabilities may have already been found and fixed.</p>\r\n  <h1>How</h1>\r\n  <p>Use the following steps to assure that vulnerability scans are performed and documented in compliance with PCI DSS:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Conduct vulnerability scans.</strong> Schedule quarterly internal and external vulnerability scans. Perform the vulnerability scans. If a scan is being performed as a result of network changes, it is acceptable to have qualified internal staff perform\r\n the scan. Required quarterly scans should be performed by a PCI DSS qualified ASV. It may be prudent to conduct a preliminary internal test with the available resources to eliminate the most obvious vulnerabilities, if any, before the ASV comes in.\r\n</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Fix detected vulnerabilities.</strong> If vulnerabilities are found, fix them and perform the scan again. Repeat scanning and fixing vulnerabilities until the scan returns acceptable results.\r\n</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Update documentation.</strong> Record the results. Attach them to the security documentation.\r\n</p>\r\n    </li>\r\n  </ol>"
+        ]
+      }
+    ]
+  }
+}

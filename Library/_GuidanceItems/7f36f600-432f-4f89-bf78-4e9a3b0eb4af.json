@@ -1,0 +1,62 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "175499715",
+      "Content_Hash": "1286668948"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "7f36f600-432f-4f89-bf78-4e9a3b0eb4af"
+        ],
+        "Library_Id": [
+          "47a10a30-15ad-4cfd-bf82-00e9bb2037f6"
+        ],
+        "Title": [
+          "Encrypt Stored Encryption Keys"
+        ],
+        "Category": [
+          "Cryptographic Storage"
+        ],
+        "Phase": [
+          "Deployment"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          "Encrypt Stored Encryption Keys"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 3.6.3</li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Encrypt stored encryption keys.</p>\r\n  <h1>How</h1>\r\n  <p>Find where the encryption keys used to encrypt data are stored. Choose an encryption suite that provides secure cryptography. Use the chosen encryption application to secure the stored keys. Designate a separate secure storage location for the key-encrypting\r\n keys.</p>"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,288 @@
+{
+  "id": "05caeab2-ecad-40a5-a71b-df7c9391222d",
+  "checksum": "5038fdaab37c8cd9230d3ce1204c5c6b05905c01",
+  "words": {
+    "applies": [
+      "h1"
+    ],
+    "to": [
+      "h1",
+      "h1",
+      "p"
+    ],
+    "pci": [
+      "ul",
+      "li"
+    ],
+    "dss": [
+      "ul",
+      "li"
+    ],
+    "requirement": [
+      "ul",
+      "li"
+    ],
+    "11.5.a": [
+      "ul",
+      "li"
+    ],
+    "what": [
+      "h1"
+    ],
+    "do": [
+      "h1"
+    ],
+    "document": [
+      "p",
+      "p",
+      "title"
+    ],
+    "all": [
+      "p"
+    ],
+    "used": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "services": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "protocols": [
+      "p"
+    ],
+    "and": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "ports": [
+      "p",
+      "title"
+    ],
+    "why": [
+      "p",
+      "h1",
+      "p"
+    ],
+    "they": [
+      "p"
+    ],
+    "are": [
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "necessary": [
+      "p",
+      "p",
+      "p"
+    ],
+    "for": [
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "business": [
+      "p",
+      "p",
+      "p"
+    ],
+    "documenting": [
+      "p",
+      "p"
+    ],
+    "the": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "that": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "being": [
+      "p",
+      "p",
+      "p"
+    ],
+    "is": [
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "important": [
+      "p"
+    ],
+    "designing": [
+      "p"
+    ],
+    "evaluating": [
+      "p"
+    ],
+    "firewall": [
+      "p",
+      "p"
+    ],
+    "policy": [
+      "p"
+    ],
+    "fewer": [
+      "p"
+    ],
+    "smaller": [
+      "p"
+    ],
+    "potential": [
+      "p"
+    ],
+    "target": [
+      "p"
+    ],
+    "surface": [
+      "p"
+    ],
+    "presented": [
+      "p"
+    ],
+    "attacker": [
+      "p"
+    ],
+    "helps": [
+      "p"
+    ],
+    "make": [
+      "p",
+      "p"
+    ],
+    "sure": [
+      "p",
+      "p"
+    ],
+    "there": [
+      "p"
+    ],
+    "no": [
+      "p"
+    ],
+    "running": [
+      "p"
+    ],
+    "not": [
+      "p"
+    ],
+    "needed": [
+      "p"
+    ],
+    "how": [
+      "h1"
+    ],
+    "identify": [
+      "p",
+      "p"
+    ],
+    "each": [
+      "p",
+      "p",
+      "p"
+    ],
+    "service": [
+      "p",
+      "p",
+      "p"
+    ],
+    "write": [
+      "p"
+    ],
+    "a": [
+      "p"
+    ],
+    "description": [
+      "p",
+      "p"
+    ],
+    "of": [
+      "p",
+      "p"
+    ],
+    "port": [
+      "p",
+      "p"
+    ],
+    "protocol": [
+      "p",
+      "p"
+    ],
+    "by": [
+      "p"
+    ],
+    "together": [
+      "p"
+    ],
+    "with": [
+      "p"
+    ],
+    "network": [
+      "p"
+    ],
+    "documentation": [
+      "p"
+    ],
+    "matches": [
+      "p"
+    ],
+    "configuration": [
+      "p"
+    ],
+    "internet": [
+      "p"
+    ]
+  },
+  "tags": {
+    "h1": [
+      "Applies to",
+      "What to Do",
+      "Why",
+      "How"
+    ],
+    "ul": [
+      "PCI DSS Requirement 1.1.5.a"
+    ],
+    "li": [
+      "PCI DSS Requirement 1.1.5.a"
+    ],
+    "p": [
+      "Document all used services, protocols, and ports, and why they are necessary for business.",
+      "Documenting the services that are being used is important for designing and evaluating the firewall policy. The fewer services being used, the smaller the potential target surface that is presented to the attacker. Documenting the services necessary for\r\n business helps make sure that there are no services running that are not needed.",
+      "Identify each service that is being used. Write a description of why each service is necessary for business. Identify the port and protocol used by each service. Document the port and protocol together with the description. Make sure that the network documentation\r\n matches the configuration of the Internet firewall."
+    ]
+  },
+  "links": [],
+  "html": "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 1.1.5.a</li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Document all used services, protocols, and ports, and why they are necessary for business.</p>\r\n  <h1>Why</h1>\r\n  <p>Documenting the services that are being used is important for designing and evaluating the firewall policy. The fewer services being used, the smaller the potential target surface that is presented to the attacker. Documenting the services necessary for\r\n business helps make sure that there are no services running that are not needed.</p>\r\n  <h1>How</h1>\r\n  <p>Identify each service that is being used. Write a description of why each service is necessary for business. Identify the port and protocol used by each service. Document the port and protocol together with the description. Make sure that the network documentation\r\n matches the configuration of the Internet firewall.</p>"
+}

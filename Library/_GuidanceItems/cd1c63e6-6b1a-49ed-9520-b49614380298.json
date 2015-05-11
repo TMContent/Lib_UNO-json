@@ -1,0 +1,53 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "-1523978845",
+      "Content_Hash": "118440031"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "cd1c63e6-6b1a-49ed-9520-b49614380298"
+        ],
+        "Library_Id": [
+          "47a10a30-15ad-4cfd-bf82-00e9bb2037f6"
+        ],
+        "Title": [
+          "There Is a Firewall at Each Internet Connection"
+        ],
+        "Category": [
+          "Networking"
+        ],
+        "Phase": [
+          "Deployment"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Checklist Item"
+        ],
+        "DirectLink": [
+          "There Is a Firewall at Each Internet Connection"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "html"
+        },
+        "Data": [
+          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 1.1.3</li>\r\n  </ul>\r\n  <h1>What to Check For</h1>\r\n  <p>Each Internet connection should be secured by a firewall.</p>\r\n  <h1>Why</h1>\r\n  <p>Allowing unfiltered Internet access to the network gives attackers more opportunities to exploit potential vulnerabilities and to control potentially compromised systems remotely.</p>\r\n  <h1>How to Check</h1>\r\n  <p>Verify that the security policy includes a point that requires there has to be a firewall at each internet connection. Verify that the current network diagram is consistent with the PCI DSS firewall configuration standards.&amp;nbsp;Check each Internet connection\r\n and make sure it is secured by a firewall.</p>\r\n  <h1>How to Fix</h1>\r\n  <p>If an Internet connection is not secured by a firewall, install and configure a firewall on that Internet connection. Update the security policy to include the requirement that there has to be a firewall at each internet connection. Update the network diagram\r\n to include any new firewalls.</p>\r\n  <h1>Related Items</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/b01167a3-95a9-4172-b366-d905ac2ac21e\">Configure the Firewalls for PCI DSS Compliance</a>\r\n    </li>\r\n  </ul>"
+        ]
+      }
+    ]
+  }
+}

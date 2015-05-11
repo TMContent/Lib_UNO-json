@@ -1,0 +1,258 @@
+{
+  "id": "1de79a12-e52b-45bf-b96a-f8845e001a65",
+  "checksum": "9d237aa845537cf9e9ee8512d4dcce5436b097fc",
+  "words": {
+    "applies": [
+      "h1"
+    ],
+    "to": [
+      "h1",
+      "h1",
+      "p",
+      "p"
+    ],
+    "pci": [
+      "ul",
+      "li"
+    ],
+    "dss": [
+      "ul",
+      "li"
+    ],
+    "requirement": [
+      "ul",
+      "li"
+    ],
+    "13.6": [
+      "ul",
+      "li"
+    ],
+    "what": [
+      "h1"
+    ],
+    "do": [
+      "h1"
+    ],
+    "enable": [
+      "p",
+      "p"
+    ],
+    "dynamic": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "packet": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "filtering": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "on": [
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "internet-facing": [
+      "p"
+    ],
+    "firewalls": [
+      "p"
+    ],
+    "is": [
+      "p"
+    ],
+    "also": [
+      "p"
+    ],
+    "known": [
+      "p"
+    ],
+    "as": [
+      "p"
+    ],
+    "stateful": [
+      "p"
+    ],
+    "inspection": [
+      "p"
+    ],
+    "why": [
+      "h1"
+    ],
+    "makes": [
+      "p"
+    ],
+    "sure": [
+      "p"
+    ],
+    "that": [
+      "p",
+      "p"
+    ],
+    "only": [
+      "p"
+    ],
+    "packets": [
+      "p",
+      "p"
+    ],
+    "are": [
+      "p"
+    ],
+    "parts": [
+      "p"
+    ],
+    "of": [
+      "p"
+    ],
+    "an": [
+      "p"
+    ],
+    "actual": [
+      "p"
+    ],
+    "transmission": [
+      "p"
+    ],
+    "can": [
+      "p"
+    ],
+    "pass": [
+      "p"
+    ],
+    "through": [
+      "p"
+    ],
+    "the": [
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "firewall": [
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "prevents": [
+      "p"
+    ],
+    "a": [
+      "p"
+    ],
+    "potential": [
+      "p"
+    ],
+    "attacker": [
+      "p"
+    ],
+    "from": [
+      "p"
+    ],
+    "sending": [
+      "p"
+    ],
+    "custom": [
+      "p"
+    ],
+    "scan": [
+      "p"
+    ],
+    "network": [
+      "p",
+      "p"
+    ],
+    "or": [
+      "p",
+      "p"
+    ],
+    "performing": [
+      "p"
+    ],
+    "layer": [
+      "p"
+    ],
+    "attacks": [
+      "p"
+    ],
+    "how": [
+      "h1"
+    ],
+    "internet": [
+      "p"
+    ],
+    "refer": [
+      "p"
+    ],
+    "vendor's": [
+      "p"
+    ],
+    "documentation": [
+      "p"
+    ],
+    "tech": [
+      "p"
+    ],
+    "support": [
+      "p"
+    ],
+    "for": [
+      "p"
+    ],
+    "detailed": [
+      "p"
+    ],
+    "instructions": [
+      "p"
+    ],
+    "enabling": [
+      "p"
+    ],
+    "your": [
+      "p"
+    ],
+    "use": [
+      "title"
+    ]
+  },
+  "tags": {
+    "h1": [
+      "Applies to",
+      "What to Do",
+      "Why",
+      "How"
+    ],
+    "ul": [
+      "PCI DSS Requirement 1.3.6"
+    ],
+    "li": [
+      "PCI DSS Requirement 1.3.6"
+    ],
+    "p": [
+      "Enable dynamic packet filtering on Internet-facing firewalls. Dynamic packet filtering is also known as stateful inspection.",
+      "Dynamic packet filtering makes sure that only packets that are parts of an actual transmission can pass through the firewall. Dynamic packet filtering prevents a potential attacker from sending custom packets to scan the network or performing network layer\r\n attacks.",
+      "Enable dynamic packet filtering on the Internet firewall. Refer to the firewall vendor's documentation or tech support for detailed instructions on enabling dynamic packet filtering on your firewall."
+    ]
+  },
+  "links": [],
+  "html": "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 1.3.6</li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Enable dynamic packet filtering on Internet-facing firewalls. Dynamic packet filtering is also known as stateful inspection.</p>\r\n  <h1>Why</h1>\r\n  <p>Dynamic packet filtering makes sure that only packets that are parts of an actual transmission can pass through the firewall. Dynamic packet filtering prevents a potential attacker from sending custom packets to scan the network or performing network layer\r\n attacks.</p>\r\n  <h1>How</h1>\r\n  <p>Enable dynamic packet filtering on the Internet firewall. Refer to the firewall vendor's documentation or tech support for detailed instructions on enabling dynamic packet filtering on your firewall.</p>"
+}

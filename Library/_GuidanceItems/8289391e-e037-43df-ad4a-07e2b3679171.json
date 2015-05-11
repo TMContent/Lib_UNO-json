@@ -1,0 +1,62 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "-487811637",
+      "Content_Hash": "-804009471"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "8289391e-e037-43df-ad4a-07e2b3679171"
+        ],
+        "Library_Id": [
+          "47a10a30-15ad-4cfd-bf82-00e9bb2037f6"
+        ],
+        "Title": [
+          "Install Personal Firewalls on Employees' Computers"
+        ],
+        "Category": [
+          "Networking"
+        ],
+        "Phase": [
+          "Deployment"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          "Install Personal Firewalls on Employees' Computers"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 1.4.a </li>\r\n    <li>PCI DSS Requirement 1.4.b</li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Install personal firewalls on mobile and/or employee-owned computers used to access the company network. Configure mobile and/or employee-owned computers used to access the company network to company standards.</p>\r\n  <h1>Why</h1>\r\n  <p>A compromised personal computer is a threat to the cardholder data environment. A personal firewall offers some protection from network attacks and may prevent remote control malware from working.</p>\r\n  <h1>How</h1>\r\n  <p>Install and configure a personal firewall on each mobile and/or employee-owned computer used to access the company network. On recent Windows operating systems, the built-in firewall may be used to meet this requirement. Use a group policy to prevent the\r\n employee from disabling the firewall or changing the firewall settings.</p>"
+        ]
+      }
+    ]
+  }
+}

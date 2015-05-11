@@ -1,0 +1,250 @@
+{
+  "id": "2a65829f-ca69-43ef-ba1f-2f7bcef3c153",
+  "checksum": "d2bd650ebddb70d6844697452f5931a270224dd3",
+  "words": {
+    "42": [
+      "ul",
+      "li"
+    ],
+    "applies": [
+      "h1"
+    ],
+    "to": [
+      "h1",
+      "h1",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "pci": [
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "li"
+    ],
+    "dss": [
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "li"
+    ],
+    "requirement": [
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "li"
+    ],
+    "42.a": [
+      "ul",
+      "li"
+    ],
+    "42.b": [
+      "ul",
+      "li"
+    ],
+    "what": [
+      "h1"
+    ],
+    "do": [
+      "h1"
+    ],
+    "add": [
+      "p",
+      "p"
+    ],
+    "a": [
+      "p",
+      "p"
+    ],
+    "point": [
+      "p",
+      "p"
+    ],
+    "the": [
+      "p",
+      "p",
+      "p"
+    ],
+    "information": [
+      "p",
+      "p"
+    ],
+    "security": [
+      "p",
+      "p"
+    ],
+    "policy": [
+      "p",
+      "p"
+    ],
+    "that": [
+      "p",
+      "p"
+    ],
+    "forbids": [
+      "p",
+      "p"
+    ],
+    "sending": [
+      "p",
+      "p",
+      "title"
+    ],
+    "unencrypted": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "cardholder": [
+      "p"
+    ],
+    "data": [
+      "p"
+    ],
+    "make": [
+      "p"
+    ],
+    "an": [
+      "p",
+      "p"
+    ],
+    "explicit": [
+      "p"
+    ],
+    "reference": [
+      "p"
+    ],
+    "instant": [
+      "p",
+      "p",
+      "p"
+    ],
+    "messaging": [
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "software": [
+      "p",
+      "p",
+      "p"
+    ],
+    "and": [
+      "p"
+    ],
+    "pans": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "why": [
+      "h1"
+    ],
+    "not": [
+      "p",
+      "p"
+    ],
+    "using": [
+      "p",
+      "p"
+    ],
+    "programs": [
+      "p"
+    ],
+    "send": [
+      "p",
+      "p"
+    ],
+    "prevents": [
+      "p"
+    ],
+    "possibility": [
+      "p"
+    ],
+    "of": [
+      "p"
+    ],
+    "them": [
+      "p"
+    ],
+    "being": [
+      "p"
+    ],
+    "read": [
+      "p"
+    ],
+    "by": [
+      "p"
+    ],
+    "attacker": [
+      "p"
+    ],
+    "if": [
+      "p"
+    ],
+    "intercepted": [
+      "p"
+    ],
+    "how": [
+      "h1"
+    ],
+    "employees": [
+      "p"
+    ],
+    "from": [
+      "p"
+    ],
+    "instruct": [
+      "p"
+    ],
+    "staff": [
+      "p"
+    ],
+    "members": [
+      "p"
+    ],
+    "use": [
+      "p"
+    ],
+    "forbid": [
+      "title"
+    ]
+  },
+  "tags": {
+    "h1": [
+      "Applies to",
+      "What to Do",
+      "Why",
+      "How"
+    ],
+    "ul": [
+      "PCI DSS Requirement 4.2\r\n    PCI DSS Requirement 4.2.a\r\n    PCI DSS Requirement 4.2.b"
+    ],
+    "li": [
+      "PCI DSS Requirement 4.2",
+      "PCI DSS Requirement 4.2.a",
+      "PCI DSS Requirement 4.2.b"
+    ],
+    "p": [
+      "Add a point to the information security policy that forbids sending unencrypted cardholder data. Make an explicit reference to instant messaging software and PANs.",
+      "Not using messaging programs to send unencrypted PANs prevents the possibility of them being read by an attacker if intercepted.",
+      "Add a point to the information security policy that forbids employees from sending unencrypted PANs using instant messaging software. Instruct staff members to not use instant messaging software to send unencrypted PANs."
+    ]
+  },
+  "links": [],
+  "html": "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 4.2</li>\r\n    <li>PCI DSS Requirement 4.2.a</li>\r\n    <li>PCI DSS Requirement 4.2.b</li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Add a point to the information security policy that forbids sending unencrypted cardholder data. Make an explicit reference to instant messaging software and PANs.</p>\r\n  <h1>Why</h1>\r\n  <p>Not using messaging programs to send unencrypted PANs prevents the possibility of them being read by an attacker if intercepted.</p>\r\n  <h1>How</h1>\r\n  <p>Add a point to the information security policy that forbids employees from sending unencrypted PANs using instant messaging software. Instruct staff members to not use instant messaging software to send unencrypted PANs.</p>"
+}

@@ -1,0 +1,62 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "-950807281",
+      "Content_Hash": "-1826104570"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "2b2b76d9-8e67-4553-8a8b-339c4ded9b31"
+        ],
+        "Library_Id": [
+          "e7d92b5b-e1d8-4039-b019-8b02594ea93a"
+        ],
+        "Title": [
+          "Enforce a Time-Out After Repeated Authentication Failure"
+        ],
+        "Category": [
+          "Authentication"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          "Enforce a Time-Out After Repeated Authentication Failure"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h2>What to Do</h2>\r\n  <p>Enforce a time-out after repeated authentication failure.</p>\r\n  <h1>Why</h1>\r\n  <p>Multiple consecutive failed authentication attempts over a short period of time are a symptom that is used to detect when an account is under attack. Locking out the account can prevent an attacker from compromising and accessing the account.</p>\r\n  <h1>When</h1>\r\n  <p>Your application should lock an account if the user has unsuccessfully tried to authenticate multiple times within a small period of time.</p>\r\n  <h1>How</h1>\r\n  <p>Use the following steps to successfully lock accounts after consecutive failed login attempts:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Define a lockout policy.</strong> There are two variables to consider when determining a lockout policy:</p>\r\n      <ul>\r\n        <li>Number of allowed consecutive failed login attempts </li>\r\n        <li>Amount of time that a locked account will remain locked </li>\r\n      </ul>\r\n      <p>A simple policy would be to lock an account after five failed login attempts for the duration of 15 minutes. Although this is an effective method for blocking a brute force attack, it exposes your application to denial of service as an attacker can easily\r\n keep an account locked through a small stream of authentication requests.</p>\r\n      <p>When determining the lockout policy, it is important to evaluate the risk of attacks against the user and the support costs associated with reactivating a locked account. For example, requiring the user to contact your organization's support staff to reactivate\r\n a locked account will have a direct impact on support costs and would add general user frustration. However, it is important to use extra care when designing more sophisticated variations of your application's lockout policy, such as correlating a single or\r\n multiple user login attempts with a source IP. When adding extra levels of complexity, carefully consider and evaluate the scenarios where your application's lockout policy can be circumvented or can harm your business. For instance, consider scenarios where\r\n an attacker would attempt to compromise a user through the use of multiple hosts, or multiple users would authenticate using a shared office IP.</p>\r\n      <p>\r\n        <strong>Note:</strong> PCI DSS requirements state that an account should be locked out for at least 30 minutes after no more than six failed login attempts.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Track login attempts.</strong> Login attempts can be tracked with the use of a login counter. Increment the counter once a user tries to authenticate. Reset the counter to 0 after the user successfully authenticates.\r\n</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Enforce the lockout policy.</strong> The lockout policy should be enforced at all points in the application where authentication is necessary.\r\n</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Set an unlocking mechanism.</strong> Keep track of the lockout period. Based on your application's lockout policy, unlock the account after the lockout period has expired.</p>\r\n    </li>\r\n  </ol>"
+        ]
+      }
+    ]
+  }
+}

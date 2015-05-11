@@ -1,0 +1,62 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "-1448181503",
+      "Content_Hash": "1871729126"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "5a1abc1c-989c-44b8-b0bb-50bc6b2e41dd"
+        ],
+        "Library_Id": [
+          "e7d92b5b-e1d8-4039-b019-8b02594ea93a"
+        ],
+        "Title": [
+          "Use Reference Maps"
+        ],
+        "Category": [
+          "Input Validation"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          "Use Reference Maps"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h2>What to Do</h2>\r\n  <p>When the set of acceptable objects, such as filenames or URLs, is limited or known, create a mapping from a set of fixed input values (such as numeric IDs) to the actual filenames or URLs, and reject all other inputs. For example, ID 1 could map to\r\n<em>inbox.txt</em> and ID 2 could map to <em>profile.txt</em>. Features such as the ESAPI\r\n<em>AccessReferenceMap</em> provide this capability.</p>\r\n  <h2>Why</h2>\r\n  <p>Using reference maps helps make sure that only valid input is handled by the application. Reference maps are one of the most effective implementations of white-list input validation.</p>\r\n  <h2>How</h2>\r\n  <p>To use reference maps:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Identify all known acceptable objects, such as filenames or URLs.</strong>\r\n      </p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Assign a unique reference ID to each known acceptable object.</strong>\r\n      </p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Accept only valid reference IDs.</strong> Add functions that accept only valid reference IDs defined in the previous step for accessing the objects and rejects all other input. This applies only to code that deals with the objects that have reference\r\n IDs defined. It may also be prudent to perform authorization checks in these functions.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Resolve reference IDs.</strong> Add functions that replace reference IDs with handles to the acceptable objects. It may also be prudent to perform authorization checks in these functions.\r\n</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Use reference IDs.</strong> Replace all code that references the objects directly with code that uses functions that validate and resolve reference IDs.\r\n</p>\r\n    </li>\r\n  </ol>"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "-1591661373",
+      "Content_Hash": "1165379949"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "13cf9996-ac25-418b-b397-9a9b7f811eef"
+        ],
+        "Library_Id": [
+          "47a10a30-15ad-4cfd-bf82-00e9bb2037f6"
+        ],
+        "Title": [
+          "Prevent Unauthorized Substitution of Keys"
+        ],
+        "Category": [
+          "Cryptographic Storage"
+        ],
+        "Phase": [
+          "Deployment"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          "Prevent Unauthorized Substitution of Keys"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 3.6.7</li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Manage encryption keys to prevent unauthorized key substitution.</p>\r\n  <h1>Why</h1>\r\n  <p>Unauthorized key substitution means that an attacker can substitute one of the authorized keys and gain access to sensitive information without raising alarm.</p>\r\n  <h1>How</h1>\r\n  <p>Make a table of authorized keys (known as a keystore) and use only those keys for encryption. Whenever changes are made to the table of keys, make sure the changes are authorized. Document the implementation of the key table and the update mechanism in the\r\n key management procedures in the information security policy.</p>"
+        ]
+      }
+    ]
+  }
+}

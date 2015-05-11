@@ -1,0 +1,62 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "-126943215",
+      "Content_Hash": "1263656468"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "e04a3b8e-e4b4-4ef5-852e-5de6b42c6495"
+        ],
+        "Library_Id": [
+          "47a10a30-15ad-4cfd-bf82-00e9bb2037f6"
+        ],
+        "Title": [
+          "Deploy a Firewall at Each Internet Connection"
+        ],
+        "Category": [
+          "Networking"
+        ],
+        "Phase": [
+          "Deployment"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          "Deploy a Firewall at Each Internet Connection"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 1.1.3</li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Protect each Internet connection with a firewall.</p>\r\n  <h1>Why</h1>\r\n  <p>Allowing unfiltered Internet access to the network gives attackers more opportunities to exploit potential vulnerabilities and to control potentially compromised systems remotely.</p>\r\n  <h1>How</h1>\r\n  <p>If an Internet connection is not secured by a firewall, install and configure a firewall on that Internet connection. Update the security policy to include the requirement that there be a firewall at each internet connection. Update the network diagram to\r\n include any new firewalls.</p>"
+        ]
+      }
+    ]
+  }
+}

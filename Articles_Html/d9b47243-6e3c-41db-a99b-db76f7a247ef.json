@@ -1,0 +1,227 @@
+{
+  "id": "d9b47243-6e3c-41db-a99b-db76f7a247ef",
+  "checksum": "88fd121caf6c93a2424c334ebf8f21d41fb23613",
+  "words": {
+    "applies": [
+      "h1"
+    ],
+    "to": [
+      "h1",
+      "h1",
+      "h1",
+      "p",
+      "h1",
+      "p",
+      "p"
+    ],
+    "pci": [
+      "ul",
+      "li"
+    ],
+    "dss": [
+      "ul",
+      "li"
+    ],
+    "requirement": [
+      "ul",
+      "li"
+    ],
+    "102.5": [
+      "ul",
+      "li"
+    ],
+    "what": [
+      "h1"
+    ],
+    "check": [
+      "h1",
+      "h1"
+    ],
+    "for": [
+      "h1",
+      "ul",
+      "li",
+      "a"
+    ],
+    "identification": [
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "and": [
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "authentication": [
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "events": [
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "should": [
+      "p",
+      "p",
+      "p"
+    ],
+    "be": [
+      "p",
+      "p",
+      "p"
+    ],
+    "logged": [
+      "p",
+      "p",
+      "title"
+    ],
+    "how": [
+      "h1",
+      "h1"
+    ],
+    "this": [
+      "p",
+      "p"
+    ],
+    "functionality": [
+      "p",
+      "p"
+    ],
+    "implemented": [
+      "p",
+      "p"
+    ],
+    "by": [
+      "p",
+      "p"
+    ],
+    "the": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "centralized": [
+      "p",
+      "p",
+      "p"
+    ],
+    "log": [
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "server": [
+      "p",
+      "p",
+      "p"
+    ],
+    "solution": [
+      "p",
+      "p"
+    ],
+    "examine": [
+      "p"
+    ],
+    "logs": [
+      "p"
+    ],
+    "verify": [
+      "p"
+    ],
+    "that": [
+      "p"
+    ],
+    "are": [
+      "p",
+      "title"
+    ],
+    "fix": [
+      "h1"
+    ],
+    "follow": [
+      "p"
+    ],
+    "vendor's": [
+      "p"
+    ],
+    "instructions": [
+      "p"
+    ],
+    "configure": [
+      "p"
+    ],
+    "related": [
+      "h1"
+    ],
+    "items": [
+      "h1"
+    ],
+    "implement": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "audit": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "trails": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "system": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "components": [
+      "ul",
+      "li",
+      "a"
+    ]
+  },
+  "tags": {
+    "h1": [
+      "Applies to",
+      "What to Check For",
+      "How to Check",
+      "How to Fix",
+      "Related Items"
+    ],
+    "ul": [
+      "PCI DSS Requirement 10.2.5",
+      "Implement Audit Trails for System Components"
+    ],
+    "li": [
+      "PCI DSS Requirement 10.2.5",
+      "Implement Audit Trails for System Components"
+    ],
+    "p": [
+      "Identification and authentication events should be logged.",
+      "This functionality should be implemented by the centralized log server solution. Examine the logs to verify that identification and authentication events are logged.",
+      "This functionality should be implemented by the centralized log server solution. Follow the vendor's instructions to configure the centralized log server to log identification and authentication events."
+    ],
+    "a": [
+      "Implement Audit Trails for System Components"
+    ]
+  },
+  "links": [
+    {
+      "href": "/article/7a956911-f547-4f65-88bb-f4a42ea349f3",
+      "text": "Implement Audit Trails for System Components"
+    }
+  ],
+  "html": "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 10.2.5</li>\r\n  </ul>\r\n  <h1>What to Check For</h1>\r\n  <p>Identification and authentication events should be logged.</p>\r\n  <h1>How to Check</h1>\r\n  <p>This functionality should be implemented by the centralized log server solution. Examine the logs to verify that identification and authentication events are logged.\r\n</p>\r\n  <h1>How to Fix</h1>\r\n  <p>This functionality should be implemented by the centralized log server solution. Follow the vendor's instructions to configure the centralized log server to log identification and authentication events.</p>\r\n  <h1>Related Items</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/7a956911-f547-4f65-88bb-f4a42ea349f3\">Implement Audit Trails for System Components</a>\r\n    </li>\r\n  </ul>"
+}

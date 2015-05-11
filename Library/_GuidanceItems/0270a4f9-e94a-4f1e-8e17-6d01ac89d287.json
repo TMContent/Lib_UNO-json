@@ -1,0 +1,53 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "-1159334147",
+      "Content_Hash": "-683583689"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "0270a4f9-e94a-4f1e-8e17-6d01ac89d287"
+        ],
+        "Library_Id": [
+          "47a10a30-15ad-4cfd-bf82-00e9bb2037f6"
+        ],
+        "Title": [
+          "Logs Are Reviewed Regularly"
+        ],
+        "Category": [
+          "Auditing and Logging"
+        ],
+        "Phase": [
+          "Deployment"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Checklist Item"
+        ],
+        "DirectLink": [
+          "Logs Are Reviewed Regularly"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 10.6 </li>\r\n    <li>PCI DSS Requirement 10.6.a </li>\r\n    <li>PCI DSS Requirement 10.6.b</li>\r\n  </ul>\r\n  <h1>What to Check For</h1>\r\n  <p>Check that&amp;nbsp;logs from all system components in the PCI DSS scope are reviewed daily. Verify that the information security policy&amp;nbsp;requires staff to respond to exceptions.</p>\r\n  <h1>Why</h1>\r\n  <p>Logs should be reviewed daily to ensure that appropriate measures are taken in a timely manner to respond to an attack or some other exception.</p>\r\n  <h1>How to Check</h1>\r\n  <p>Use the following steps to check if logs are reviewed regularly:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Review policy. </strong>Review the information security policy to verify that it includes a requirement to examine the logs at least once a day. Verify that the information security policy defines the appropriate responses.\r\n</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Get a list of network devices.</strong> Get the list of all network devices from the network documentation. Find out which devices are integrated with the log server. Make a list of devices that are not integrated with the log server.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Interview staff responsible for monitoring the logs.</strong>&amp;nbsp;Verify that logs from all devices are reviewed daily by asking the personnel responsible for reviewing logs to demonstrate the procedure for reviewing the logs. Inquire about reviewing\r\n logs for devices that are not integrated with the log server.</p>\r\n    </li>\r\n  </ol>\r\n  <h1>How to Fix</h1>\r\n  <p>Perform the following actions to assures that logs are reviewed regularly:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Update policy.</strong> Add a point to the information security policy that requires all the logs to be reviewed at least once a day. Follow the guidelines for the PCI DSS Requirement 12 to add incident response definitions to the information security\r\n policy. </p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Send logs to the log server.</strong> Get the list of network devices from the network documentation and configure each network device to send logs to the centralized log server if possible. The exact instructions for this vary by device and log\r\n server. Typically, there are two approaches: syslogd and agent software for windows.\r\n<strong>Syslogd</strong> is a UNIX standard for centralized logs and is implemented by many network devices and log servers, especially UNIX-style ones. To configure syslogd, it is typically sufficient to specify the hostname or IP address of the log server\r\n on the network device in the administration interface.&amp;nbsp;Another approach is to use\r\n<strong>agent </strong>software. Typically, agents are made available by the log server vendor for many common platforms. An agent is installed on the network device or computer as an application. When correctly configured, the agent forwards the logs from\r\n the host to the centralized log server.For detailed instructions on configuring the devices to send information to the log server, please refer to the log server's vendor documentation or technical support.\r\n</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Mitigate devices incompatible with the log server.</strong> Make a list of devices that are not compatible with the log server. Use this list to check the logs on each device daily individually. Consider replacing them with devices that are compatible\r\n with the centralized log server. </p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Designate staff responsible for monitoring logs.</strong> Delegate responsibility for reviewing the logs daily to a qualified staff member or team. Train the team to respond to exceptions, based on the definitions in the information security policy.</p>\r\n    </li>\r\n  </ol>\r\n  <h1>Related Items</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/7a956911-f547-4f65-88bb-f4a42ea349f3\">Implement Audit Trails for System Components</a>\r\n    </li>\r\n  </ul>"
+        ]
+      }
+    ]
+  }
+}

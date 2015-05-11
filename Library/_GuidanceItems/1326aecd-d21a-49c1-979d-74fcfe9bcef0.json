@@ -1,0 +1,62 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "-1703461362",
+      "Content_Hash": "1381268447"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "1326aecd-d21a-49c1-979d-74fcfe9bcef0"
+        ],
+        "Library_Id": [
+          "47a10a30-15ad-4cfd-bf82-00e9bb2037f6"
+        ],
+        "Title": [
+          "Document Penetration Tests"
+        ],
+        "Category": [
+          "Documentation and Policy"
+        ],
+        "Phase": [
+          "Deployment"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          "Document Penetration Tests"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 11.3</li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Document penetration tests.</p>\r\n  <h1>Why</h1>\r\n  <p>Penetration tests should be documented to prove that they took place and to show what vulnerabilities may have already been found and fixed.</p>\r\n  <h1>How</h1>\r\n  <p>Perform the following actions to assure that penetration tests are performed and documented in compliance with PCI DSS:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Choose a penetration testing team.</strong> Qualified professionals should perform penetration testing. It is acceptable to have the company staff perform the test if internal talent is readily available, but it is recommended to leave it to companies\r\n who specialize in security services. Security Innovation offers penetration-testing services.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Perform penetration tests.</strong> Schedule yearly penetration tests. Perform network layer attacks, which include operating system and network protocol attacks. Perform application layer attacks. For web applications, have them tested for all the\r\n vulnerability types in the OWASP Top 10.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Document fixed vulnerabilities.</strong> If vulnerabilities are found, fix them and perform another penetration test. Document all fixed vulnerabilities.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Document the repeated tests.</strong> Continue testing until no more vulnerabilities are found. Document the results of each test.\r\n</p>\r\n    </li>\r\n  </ol>"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "-325618975",
+      "Content_Hash": "1598214848"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "aba803c5-21ab-416b-9f77-53afb787da3f"
+        ],
+        "Library_Id": [
+          "47a10a30-15ad-4cfd-bf82-00e9bb2037f6"
+        ],
+        "Title": [
+          "Assign Privileges Based on Job Functions"
+        ],
+        "Category": [
+          "Authorization"
+        ],
+        "Phase": [
+          "Deployment"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          "Assign Privileges Based on Job Functions"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 7.1.2 </li>\r\n    <li>PCI DSS Requirement 7.1.3 </li>\r\n    <li>PCI DSS Requirement 7.2.2</li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Assign access privileges based on job functions.</p>\r\n  <h1>Why</h1>\r\n  <p>Assigning data access privileges based on job functions ensures that employees can work but cannot wage insider attacks.</p>\r\n  <h1>How</h1>\r\n  <p>Identify the job functions of each employee. Identify the data access required for each employee. Define the data access privileges for each employee based on job responsibilities.&amp;nbsp; Have the management review and authorize the data access privilege specifications.\r\n Once approved, implement the data access control systems. Attach the access authorization documents to the network documentation.</p>"
+        ]
+      }
+    ]
+  }
+}

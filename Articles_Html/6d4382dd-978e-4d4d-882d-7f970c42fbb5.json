@@ -1,0 +1,330 @@
+{
+  "id": "6d4382dd-978e-4d4d-882d-7f970c42fbb5",
+  "checksum": "6e34e0cfe0a38d4f34f122910b87c7fe26c33236",
+  "words": {
+    "applies": [
+      "h1"
+    ],
+    "to": [
+      "h1",
+      "h1",
+      "p",
+      "p",
+      "p"
+    ],
+    "pci": [
+      "ul",
+      "li"
+    ],
+    "dss": [
+      "ul",
+      "li"
+    ],
+    "requirement": [
+      "ul",
+      "li"
+    ],
+    "21.1.b": [
+      "ul",
+      "li"
+    ],
+    "what": [
+      "h1"
+    ],
+    "do": [
+      "h1"
+    ],
+    "change": [
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "snmp": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "community": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "strings": [
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "from": [
+      "p",
+      "p"
+    ],
+    "vendor": [
+      "p"
+    ],
+    "defaults": [
+      "p"
+    ],
+    "on": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "snmp-enabled": [
+      "p",
+      "p"
+    ],
+    "wireless": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "devices": [
+      "p",
+      "p",
+      "title"
+    ],
+    "why": [
+      "h1"
+    ],
+    "act": [
+      "p"
+    ],
+    "as": [
+      "p"
+    ],
+    "passwords": [
+      "p"
+    ],
+    "for": [
+      "p",
+      "p"
+    ],
+    "and": [
+      "p"
+    ],
+    "the": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "default": [
+      "p",
+      "p",
+      "title"
+    ],
+    "settings": [
+      "p",
+      "p",
+      "title"
+    ],
+    "can": [
+      "p"
+    ],
+    "be": [
+      "p",
+      "p"
+    ],
+    "found": [
+      "p"
+    ],
+    "by": [
+      "p",
+      "p"
+    ],
+    "potential": [
+      "p",
+      "p"
+    ],
+    "attackers": [
+      "p"
+    ],
+    "internet": [
+      "p"
+    ],
+    "changing": [
+      "p",
+      "p",
+      "p"
+    ],
+    "access": [
+      "p",
+      "p",
+      "p"
+    ],
+    "points": [
+      "p",
+      "p"
+    ],
+    "prevents": [
+      "p"
+    ],
+    "a": [
+      "p",
+      "p",
+      "p"
+    ],
+    "attacker": [
+      "p"
+    ],
+    "or": [
+      "p",
+      "p"
+    ],
+    "discovering": [
+      "p"
+    ],
+    "sensitive": [
+      "p"
+    ],
+    "network": [
+      "p"
+    ],
+    "information": [
+      "p"
+    ],
+    "how": [
+      "h1"
+    ],
+    "string": [
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "each": [
+      "p"
+    ],
+    "point": [
+      "p"
+    ],
+    "something": [
+      "p"
+    ],
+    "other": [
+      "p"
+    ],
+    "than": [
+      "p"
+    ],
+    "is": [
+      "p"
+    ],
+    "essentially": [
+      "p"
+    ],
+    "password": [
+      "p",
+      "p"
+    ],
+    "so": [
+      "p"
+    ],
+    "policy": [
+      "p"
+    ],
+    "should": [
+      "p"
+    ],
+    "followed": [
+      "p"
+    ],
+    "when": [
+      "p"
+    ],
+    "choosing": [
+      "p"
+    ],
+    "new": [
+      "p"
+    ],
+    "exact": [
+      "p"
+    ],
+    "steps": [
+      "p"
+    ],
+    "required": [
+      "p"
+    ],
+    "vary": [
+      "p"
+    ],
+    "hardware": [
+      "p"
+    ],
+    "please": [
+      "p"
+    ],
+    "refer": [
+      "p"
+    ],
+    "vendor's": [
+      "p"
+    ],
+    "documentation": [
+      "p"
+    ],
+    "contact": [
+      "p"
+    ],
+    "tech": [
+      "p"
+    ],
+    "support": [
+      "p"
+    ],
+    "instructions": [
+      "p"
+    ],
+    "your": [
+      "p"
+    ]
+  },
+  "tags": {
+    "h1": [
+      "Applies to",
+      "What to Do",
+      "Why",
+      "How"
+    ],
+    "ul": [
+      "PCI DSS Requirement 2.1.1.b"
+    ],
+    "li": [
+      "PCI DSS Requirement 2.1.1.b"
+    ],
+    "p": [
+      "Change SNMP community strings from vendor defaults on SNMP-enabled wireless devices.",
+      "SNMP community strings act as passwords for SNMP-enabled devices, and the default settings can be found by potential attackers on the Internet. Changing SNMP community strings on wireless access points prevents a potential attacker from changing wireless\r\n settings or discovering sensitive network information.",
+      "Change the SNMP community string on each wireless access point to something other than the default. The SNMP community string is essentially a password, so the password policy should be followed when choosing a new SNMP community string. The exact steps\r\n required to change the SNMP community string vary by hardware. Please refer to the vendor's documentation or contact tech support for instructions on changing SNMP community strings on your wireless access points."
+    ]
+  },
+  "links": [],
+  "html": "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 2.1.1.b</li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Change SNMP community strings from vendor defaults on SNMP-enabled wireless devices.</p>\r\n  <h1>Why</h1>\r\n  <p>SNMP community strings act as passwords for SNMP-enabled devices, and the default settings can be found by potential attackers on the Internet. Changing SNMP community strings on wireless access points prevents a potential attacker from changing wireless\r\n settings or discovering sensitive network information.</p>\r\n  <h1>How</h1>\r\n  <p>Change the SNMP community string on each wireless access point to something other than the default. The SNMP community string is essentially a password, so the password policy should be followed when choosing a new SNMP community string. The exact steps\r\n required to change the SNMP community string vary by hardware. Please refer to the vendor's documentation or contact tech support for instructions on changing SNMP community strings on your wireless access points.</p>"
+}

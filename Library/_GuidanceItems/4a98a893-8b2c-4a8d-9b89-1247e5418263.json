@@ -1,0 +1,53 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "2009071326",
+      "Content_Hash": "-852175604"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "4a98a893-8b2c-4a8d-9b89-1247e5418263"
+        ],
+        "Library_Id": [
+          "47a10a30-15ad-4cfd-bf82-00e9bb2037f6"
+        ],
+        "Title": [
+          "Wireless Access Points Use Strong Encryption"
+        ],
+        "Category": [
+          "Networking"
+        ],
+        "Phase": [
+          "Deployment"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Checklist Item"
+        ],
+        "DirectLink": [
+          "Wireless Access Points Use Strong Encryption"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 2.1.1.d</li>\r\n    <li>PCI DSS Requirement 4.1.1</li>\r\n  </ul>\r\n  <h1>What to Check For</h1>\r\n  <p>Wireless networks should be using strong encryption and authentication protocols, such as WPA or WPA2, to secure communications.</p>\r\n  <h1>Why</h1>\r\n  <p>Strong encryption and authentication protocols for wireless communications prevent both unauthorized access to the network and eavesdropping on wireless communications. An earlier implementation of wireless encryption and authentication, known as WEP, has\r\n proven to be insecure.</p>\r\n  <h1>How to Check</h1>\r\n  <p>Examine the configurations of wireless access points to make sure that strong encryption and authentication protocols, such as WPA or WPA2,&amp;nbsp;are being used. Examine a wireless client to make sure that strong encryption and authentication protocols are actually\r\n being used.</p>\r\n  <h1>How to Fix</h1>\r\n  <p>Configure the wireless access point(s) to use strong encryption and authentication protocols, such as WPA or WPA2. The detailed instructions for enabling strong encryption and authentication vary by wireless access points and network designs. Please refer\r\n to the vendor's documentation or technical support for specific instructions on enabling strong encryption and authentication protocols on your wireless network(s).</p>\r\n  <h1>Related Items</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/bb3ba78a-8d27-41c2-8cf6-b84c3d2bd99d\">Configure a Wireless Access Point for PCI DSS</a>\r\n    </li>\r\n  </ul>"
+        ]
+      }
+    ]
+  }
+}

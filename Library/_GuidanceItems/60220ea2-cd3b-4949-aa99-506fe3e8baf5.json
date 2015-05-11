@@ -1,0 +1,62 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "1623135673",
+      "Content_Hash": "105724739"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "60220ea2-cd3b-4949-aa99-506fe3e8baf5"
+        ],
+        "Library_Id": [
+          "47a10a30-15ad-4cfd-bf82-00e9bb2037f6"
+        ],
+        "Title": [
+          "Retire Old Encryption Keys"
+        ],
+        "Category": [
+          "Cryptographic Storage"
+        ],
+        "Phase": [
+          "Deployment"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          "Retire Old Encryption Keys"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h1>Applies to</h1>\r\n  <p>PCI DSS Requirement 3.6.5.a</p>\r\n  <h1>What to Do</h1>\r\n  <p>Retire old encryption keys. Do not use encryption keys that have been used before.</p>\r\n  <h1>Why</h1>\r\n  <p>Retiring old keys ensures that unauthorized disclosure of old keys by former employees does not facilitate a compromise.</p>\r\n  <h1>How</h1>\r\n  <p>Use the following steps to make sure that old encryption keys are retired:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Define procedures for managing old encryption keys.</strong> Define a procedure for archiving old encryption keys. Define a procedure for revoking old encryption keys.\r\n</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Implement procedures for managing old encryption keys.</strong> Implement the chosen procedures for the archiving and revocation of old encryption keys using technology. You may need to add this functionality to your software if you don't have it\r\n already.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Update documentation.</strong> Document the mechanisms for archiving and revocation of old encryption keys.</p>\r\n    </li>\r\n  </ol>"
+        ]
+      }
+    ]
+  }
+}

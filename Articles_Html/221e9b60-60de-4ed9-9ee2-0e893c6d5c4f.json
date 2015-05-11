@@ -1,0 +1,225 @@
+{
+  "id": "221e9b60-60de-4ed9-9ee2-0e893c6d5c4f",
+  "checksum": "4e1e87ae8c19c29426629af9d31b32c4cb3a9d7f",
+  "words": {
+    "what": [
+      "h2"
+    ],
+    "to": [
+      "h2",
+      "p",
+      "p",
+      "p"
+    ],
+    "do": [
+      "h2"
+    ],
+    "use": [
+      "p",
+      "title"
+    ],
+    "a": [
+      "p",
+      "p",
+      "title"
+    ],
+    "vetted": [
+      "p"
+    ],
+    "library": [
+      "p",
+      "p",
+      "p",
+      "em",
+      "title"
+    ],
+    "or": [
+      "p",
+      "p"
+    ],
+    "framework": [
+      "p"
+    ],
+    "that": [
+      "p",
+      "p"
+    ],
+    "does": [
+      "p"
+    ],
+    "not": [
+      "p",
+      "p",
+      "p"
+    ],
+    "allow": [
+      "p"
+    ],
+    "this": [
+      "p",
+      "p",
+      "p"
+    ],
+    "weakness": [
+      "p",
+      "p"
+    ],
+    "occur": [
+      "p"
+    ],
+    "provides": [
+      "p"
+    ],
+    "constructs": [
+      "p"
+    ],
+    "make": [
+      "p"
+    ],
+    "easier": [
+      "p"
+    ],
+    "avoid": [
+      "p"
+    ],
+    "examples": [
+      "p"
+    ],
+    "include": [
+      "p"
+    ],
+    "the\rsafe": [
+      "p"
+    ],
+    "c": [
+      "p",
+      "em"
+    ],
+    "string": [
+      "p",
+      "em"
+    ],
+    "safestr)": [
+      "p"
+    ],
+    "by": [
+      "p"
+    ],
+    "messier": [
+      "p"
+    ],
+    "and": [
+      "p",
+      "p"
+    ],
+    "viega": [
+      "p"
+    ],
+    "the": [
+      "p"
+    ],
+    "strsafeh": [
+      "p",
+      "em"
+    ],
+    "from": [
+      "p"
+    ],
+    "microsoft": [
+      "p"
+    ],
+    "these": [
+      "p"
+    ],
+    "libraries": [
+      "p"
+    ],
+    "provide": [
+      "p"
+    ],
+    "safer": [
+      "p"
+    ],
+    "versions": [
+      "p"
+    ],
+    "of": [
+      "p"
+    ],
+    "overflow-prone": [
+      "p"
+    ],
+    "string-handling": [
+      "p"
+    ],
+    "functions": [
+      "p"
+    ],
+    "safe": [
+      "em"
+    ],
+    "safestr": [
+      "em"
+    ],
+    "note": [
+      "p",
+      "strong"
+    ],
+    "is": [
+      "p"
+    ],
+    "complete": [
+      "p"
+    ],
+    "solution": [
+      "p"
+    ],
+    "since": [
+      "p"
+    ],
+    "many": [
+      "p"
+    ],
+    "buffer": [
+      "p",
+      "title"
+    ],
+    "overflows": [
+      "p"
+    ],
+    "are": [
+      "p"
+    ],
+    "related": [
+      "p"
+    ],
+    "strings": [
+      "p"
+    ],
+    "overflow": [
+      "title"
+    ],
+    "protection": [
+      "title"
+    ]
+  },
+  "tags": {
+    "h2": [
+      "What to Do"
+    ],
+    "p": [
+      "Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid. Examples include the\r\nSafe C String Library (SafeStr) by Messier and Viega, and the \r\nStrsafe.h library from Microsoft. These libraries provide safer versions of overflow-prone string-handling functions.",
+      "Note: This is not a complete solution, since many buffer overflows are not related to strings."
+    ],
+    "em": [
+      "Safe C String Library",
+      "SafeStr",
+      "Strsafe.h"
+    ],
+    "strong": [
+      "Note:"
+    ]
+  },
+  "links": [],
+  "html": "<h2>What to Do</h2>\r\n  <p>Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid. Examples include the\r\n<em>Safe C String Library</em> (<em>SafeStr</em>) by Messier and Viega, and the <em>\r\nStrsafe.h</em> library from Microsoft. These libraries provide safer versions of overflow-prone string-handling functions.\r\n</p>\r\n  <p>\r\n    <strong>Note:</strong> This is not a complete solution, since many buffer overflows are not related to strings.</p>"
+}

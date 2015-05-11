@@ -1,0 +1,53 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "-1014292871",
+      "Content_Hash": "1371853440"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "43728505-d3a3-4540-be81-c8bab54e6f6d"
+        ],
+        "Library_Id": [
+          "47a10a30-15ad-4cfd-bf82-00e9bb2037f6"
+        ],
+        "Title": [
+          "The Anti-virus Updates Itself Automatically"
+        ],
+        "Category": [
+          "Anti-Virus"
+        ],
+        "Phase": [
+          "Deployment"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Checklist Item"
+        ],
+        "DirectLink": [
+          "The Anti-virus Updates Itself Automatically"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 5.2</li>\r\n    <li>PCI DSS Requirement 5.2.b </li>\r\n    <li>PCI DSS Requirement 5.2.c</li>\r\n  </ul>\r\n  <h1>What to Check For</h1>\r\n  <p>The anti-virus software should be kept up-to-date through regular, automatic updates.</p>\r\n  <h1>How to Check</h1>\r\n  <p>Find the master installation of the anti-virus software and make sure that it has the capability to automatically update itself. Take a sample of systems that have the anti-virus software installed and check the options to verify that automatic updates are\r\n enabled. To check the anti-virus options, locate the anti-virus administration interface. Some anti-virus packages have a control panel on the systems where they are deployed and some anti-virus suites offer a centralized control panel. The number of options\r\n offered by the anti-virus interface is usually small enough that a person with an IT background can figure out what all of them are and how to use them. The administration interface usually has an option to enable automatic updates and configure their frequency.\r\n Check the logs to make sure that the automatic updates are taking place.</p>\r\n  <h1>How to Fix</h1>\r\n  <p>Verify that it is possible to run automatic updates with your anti-virus by referring to the vendor documentation or technical support. The documentation or technical support should provide the exact instructions on how to implement automatic updates. Automatic\r\n updates are a basic feature of modern anti-virus packages. If your anti-virus does not offer this feature, please consider installing and configuring a different anti-virus.</p>\r\n  <h1>Related Items</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/6a12327a-3bc3-4acc-af65-9145046280b9\">Deploy an Anti-Virus</a>\r\n    </li>\r\n  </ul>"
+        ]
+      }
+    ]
+  }
+}

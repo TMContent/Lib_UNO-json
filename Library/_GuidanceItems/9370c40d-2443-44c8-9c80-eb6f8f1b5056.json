@@ -1,0 +1,53 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "-1650649955",
+      "Content_Hash": "1004667621"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "9370c40d-2443-44c8-9c80-eb6f8f1b5056"
+        ],
+        "Library_Id": [
+          "47a10a30-15ad-4cfd-bf82-00e9bb2037f6"
+        ],
+        "Title": [
+          "Old Encryption Keys Are Retired"
+        ],
+        "Category": [
+          "Cryptographic Storage"
+        ],
+        "Phase": [
+          "Deployment"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Checklist Item"
+        ],
+        "DirectLink": [
+          "Old Encryption Keys Are Retired"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 3.6.5.a</li>\r\n  </ul>\r\n  <h1>What to Check For</h1>\r\n  <p>Key management procedures should be implemented to require the retirement of old keys. Keys and passwords that have been used previously should never be used again.</p>\r\n  <h1>Why</h1>\r\n  <p>Retiring old keys ensures that unauthorized disclosure of old keys by former employees does not facilitate a compromise.</p>\r\n  <h1>How to Check</h1>\r\n  <p>Perform the following steps to make sure that old encryption keys are retired:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Examine policy.</strong> Review the key management procedures in the information security policy to make sure they include provisions for archiving and revocation of previously used encryption keys.\r\n</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Conduct interviews. </strong>Interview the responsible staff members to make sure that the key management procedures are implemented as stated.</p>\r\n    </li>\r\n  </ol>\r\n  <h1>How to Fix</h1>\r\n  <p>Use the following steps to make sure that old encryption keys are retired:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Define procedures for managing old encryption keys.</strong> Define a procedure for archiving old encryption keys. Define a procedure for revoking&amp;nbsp;old encryption keys.\r\n</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Implement procedures for managing old encryption keys.</strong> Implement the chosen procedures for the archiving and revocation of old encryption keys using technology. You may need to add this functionality to your software if you don't have it\r\n already.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Update documentation. </strong>Document the mechanisms for archiving and revocation of old encryption keys.</p>\r\n    </li>\r\n  </ol>\r\n  <h1>Additional Resources</h1>\r\n  <ul>\r\n    <li>For more information about key management procedures, please see <a href=\"http://csrc.nist.gov/\">\r\nhttp://csrc.nist.gov</a> &amp;nbsp; </li>\r\n    <li>For more information about designing and documenting key management procedures, please see \"PCI Sample Encryption Key Management Documentation\" at\r\n<a href=\"http://www.net-security.org/article.php?id=1185\">http://www.net-security.org/article.php?id=1185</a></li>\r\n  </ul>\r\n  <h1>Related Items</h1>\r\n  <ul>\r\n    <li>\r\n      <p>\r\n        <a href=\"/article/9bb67e82-ea00-4a56-95fd-67720041afe6\">Prepare the Key Management Procedures</a>\r\n      </p>\r\n    </li>\r\n  </ul>"
+        ]
+      }
+    ]
+  }
+}

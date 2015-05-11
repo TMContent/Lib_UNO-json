@@ -1,0 +1,62 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "-1898112821",
+      "Content_Hash": "418689671"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "2fe29fbe-a08b-4396-bd69-ba15b5ad3d3e"
+        ],
+        "Library_Id": [
+          "47a10a30-15ad-4cfd-bf82-00e9bb2037f6"
+        ],
+        "Title": [
+          "Implement Split Knowledge Access to Encryption Keys"
+        ],
+        "Category": [
+          "Cryptographic Storage"
+        ],
+        "Phase": [
+          "Deployment"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          "Implement Split Knowledge Access to Encryption Keys"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 3.6.6</li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Implement split knowledge access to encryption keys. One way to implement this is by protecting the encryption keys with multiple passwords and distributing the passwords among multiple people. Another way is to give multiple people parts of the key so that\r\n together, they may assemble the whole key.</p>\r\n  <h1>Why</h1>\r\n  <p>Split knowledge access helps prevent insider attacks.</p>\r\n  <h1>How</h1>\r\n  <p>Use the following steps to implement split knowledge access to secure the encryption keys:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Choose a split knowledge design.</strong> Decide on the way to implement split knowledge access to the encryption keys. One way is by protecting the keys with multiple passwords and distributing the passwords among multiple people. Another way is\r\n to give parts of each key to multiple people so that they have the entire key when they combine their parts.\r\n</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Implement split knowledge access.</strong> Implement your chosen split knowledge design using your technology platform.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Designate the key custodians.</strong> Assign key custodian responsibilities to qualified team members.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Document the split knowledge access.</strong> Include the description in the information security policy.</p>\r\n    </li>\r\n  </ol>"
+        ]
+      }
+    ]
+  }
+}

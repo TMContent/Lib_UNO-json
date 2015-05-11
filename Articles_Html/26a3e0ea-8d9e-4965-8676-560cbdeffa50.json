@@ -1,0 +1,320 @@
+{
+  "id": "26a3e0ea-8d9e-4965-8676-560cbdeffa50",
+  "checksum": "a45d8f821a212f6293329fc1ddd78135ecfa1e7f",
+  "words": {
+    "applies": [
+      "h1"
+    ],
+    "to": [
+      "h1",
+      "h1",
+      "p",
+      "p",
+      "p"
+    ],
+    "pci": [
+      "ul",
+      "ul",
+      "li",
+      "li"
+    ],
+    "dss": [
+      "ul",
+      "ul",
+      "li",
+      "li"
+    ],
+    "requirement": [
+      "ul",
+      "ul",
+      "li",
+      "li"
+    ],
+    "34.1.a": [
+      "ul",
+      "li"
+    ],
+    "34.1.b": [
+      "ul",
+      "li"
+    ],
+    "what": [
+      "h1"
+    ],
+    "do": [
+      "h1"
+    ],
+    "use": [
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "a": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "secure": [
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "authentication": [
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "mechanism": [
+      "p",
+      "p",
+      "p"
+    ],
+    "for": [
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "disk": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "encryption": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "that": [
+      "p",
+      "p",
+      "p"
+    ],
+    "is": [
+      "p",
+      "p"
+    ],
+    "separate": [
+      "p"
+    ],
+    "from": [
+      "p"
+    ],
+    "the": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "rest": [
+      "p"
+    ],
+    "of": [
+      "p",
+      "p"
+    ],
+    "network": [
+      "p"
+    ],
+    "store": [
+      "p"
+    ],
+    "keys": [
+      "p",
+      "p"
+    ],
+    "securely": [
+      "p"
+    ],
+    "example": [
+      "p"
+    ],
+    "on": [
+      "p"
+    ],
+    "removable": [
+      "p"
+    ],
+    "media": [
+      "p"
+    ],
+    "protected": [
+      "p"
+    ],
+    "with": [
+      "p",
+      "p"
+    ],
+    "strong": [
+      "p",
+      "p"
+    ],
+    "access": [
+      "p",
+      "p"
+    ],
+    "controls": [
+      "p",
+      "p"
+    ],
+    "and": [
+      "p",
+      "p",
+      "p"
+    ],
+    "physical": [
+      "p",
+      "p"
+    ],
+    "security": [
+      "p",
+      "p"
+    ],
+    "why": [
+      "h1"
+    ],
+    "should": [
+      "p"
+    ],
+    "its": [
+      "p",
+      "p"
+    ],
+    "own": [
+      "p",
+      "p"
+    ],
+    "make": [
+      "p"
+    ],
+    "it": [
+      "p"
+    ],
+    "more": [
+      "p"
+    ],
+    "difficult": [
+      "p"
+    ],
+    "potential": [
+      "p"
+    ],
+    "attacker": [
+      "p"
+    ],
+    "get": [
+      "p"
+    ],
+    "key": [
+      "p",
+      "p"
+    ],
+    "especially": [
+      "p"
+    ],
+    "in": [
+      "p"
+    ],
+    "event": [
+      "p"
+    ],
+    "an": [
+      "p"
+    ],
+    "insider": [
+      "p"
+    ],
+    "attack": [
+      "p"
+    ],
+    "how": [
+      "h1"
+    ],
+    "decide": [
+      "p"
+    ],
+    "whether": [
+      "p"
+    ],
+    "whole": [
+      "p"
+    ],
+    "identify": [
+      "p"
+    ],
+    "application": [
+      "p"
+    ],
+    "uses": [
+      "p"
+    ],
+    "such": [
+      "p"
+    ],
+    "as": [
+      "p"
+    ],
+    "password": [
+      "p"
+    ],
+    "or": [
+      "p"
+    ],
+    "file": [
+      "p"
+    ],
+    "install": [
+      "p"
+    ],
+    "configure": [
+      "p"
+    ],
+    "chosen": [
+      "p"
+    ],
+    "suite": [
+      "p"
+    ]
+  },
+  "tags": {
+    "h1": [
+      "Applies to",
+      "What to Do",
+      "Why",
+      "How"
+    ],
+    "ul": [
+      "PCI DSS Requirement 3.4.1.a \r\n    PCI DSS Requirement 3.4.1.b"
+    ],
+    "li": [
+      "PCI DSS Requirement 3.4.1.a",
+      "PCI DSS Requirement 3.4.1.b"
+    ],
+    "p": [
+      "Use a secure authentication mechanism for disk encryption that is separate from the rest of the network. Store the disk encryption keys securely, for example on removable media that is protected with strong access controls and physical security.",
+      "Disk encryption should use its own authentication mechanism to make it more difficult for a potential attacker to get the encryption key, especially in the event of an insider attack.",
+      "Decide whether to use whole disk encryption. Identify a disk encryption application that uses its own secure authentication mechanism, such as a password or a key file. Install and configure the chosen disk encryption suite. Secure the disk encryption keys\r\n with strong access controls and physical security."
+    ]
+  },
+  "links": [],
+  "html": "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 3.4.1.a </li>\r\n    <li>PCI DSS Requirement 3.4.1.b</li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Use a secure authentication mechanism for disk encryption that is separate from the rest of the network. Store the disk encryption keys securely, for example on removable media that is protected with strong access controls and physical security.</p>\r\n  <h1>Why</h1>\r\n  <p>Disk encryption should use its own authentication mechanism to make it more difficult for a potential attacker to get the encryption key, especially in the event of an insider attack.</p>\r\n  <h1>How</h1>\r\n  <p>Decide whether to use whole disk encryption. Identify a disk encryption application that uses its own secure authentication mechanism, such as a password or a key file. Install and configure the chosen disk encryption suite. Secure the disk encryption keys\r\n with strong access controls and physical security.</p>"
+}

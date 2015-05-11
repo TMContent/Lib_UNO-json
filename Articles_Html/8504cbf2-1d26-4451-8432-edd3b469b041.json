@@ -1,0 +1,239 @@
+{
+  "id": "8504cbf2-1d26-4451-8432-edd3b469b041",
+  "checksum": "7de6cd5fde9a4f1c1079d1b849ed869eb8ef17c2",
+  "words": {
+    "applies": [
+      "h1"
+    ],
+    "to": [
+      "h1",
+      "h1",
+      "p",
+      "h1",
+      "p",
+      "p",
+      "h1",
+      "p",
+      "title"
+    ],
+    "pci": [
+      "ul",
+      "li"
+    ],
+    "dss": [
+      "ul",
+      "li"
+    ],
+    "requirement": [
+      "ul",
+      "li"
+    ],
+    "102.1": [
+      "ul",
+      "li"
+    ],
+    "what": [
+      "h1"
+    ],
+    "check": [
+      "h1",
+      "h1"
+    ],
+    "for": [
+      "h1",
+      "ul",
+      "li",
+      "a"
+    ],
+    "all": [
+      "p"
+    ],
+    "user": [
+      "p"
+    ],
+    "access": [
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "cardholder": [
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "data": [
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "should": [
+      "p",
+      "p",
+      "p"
+    ],
+    "be": [
+      "p",
+      "p",
+      "p"
+    ],
+    "logged": [
+      "p",
+      "p",
+      "title"
+    ],
+    "how": [
+      "h1",
+      "h1"
+    ],
+    "this": [
+      "p",
+      "p"
+    ],
+    "functionality": [
+      "p",
+      "p"
+    ],
+    "implemented": [
+      "p",
+      "p"
+    ],
+    "by": [
+      "p",
+      "p",
+      "p"
+    ],
+    "the": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "centralized": [
+      "p",
+      "p",
+      "p"
+    ],
+    "log": [
+      "p",
+      "p"
+    ],
+    "server": [
+      "p",
+      "p",
+      "p"
+    ],
+    "solution": [
+      "p",
+      "p",
+      "p"
+    ],
+    "examine": [
+      "p"
+    ],
+    "logs": [
+      "p"
+    ],
+    "verify": [
+      "p"
+    ],
+    "that": [
+      "p"
+    ],
+    "is": [
+      "p",
+      "title"
+    ],
+    "fix": [
+      "h1"
+    ],
+    "configure": [
+      "p"
+    ],
+    "logging": [
+      "p"
+    ],
+    "of": [
+      "p"
+    ],
+    "using": [
+      "p"
+    ],
+    "following": [
+      "p"
+    ],
+    "vendor's": [
+      "p"
+    ],
+    "instructions": [
+      "p"
+    ],
+    "related": [
+      "h1"
+    ],
+    "items": [
+      "h1"
+    ],
+    "implement": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "audit": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "trails": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "system": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "components": [
+      "ul",
+      "li",
+      "a"
+    ]
+  },
+  "tags": {
+    "h1": [
+      "Applies to",
+      "What to Check For",
+      "How to Check",
+      "How to Fix",
+      "Related Items"
+    ],
+    "ul": [
+      "PCI DSS Requirement 10.2.1",
+      "Implement Audit Trails for System Components"
+    ],
+    "li": [
+      "PCI DSS Requirement 10.2.1",
+      "Implement Audit Trails for System Components"
+    ],
+    "p": [
+      "All user access to cardholder data should be logged.",
+      "This functionality should be implemented by the centralized log server solution. Examine the logs to verify that access to cardholder data is logged.",
+      "This functionality should be implemented by the centralized log server solution. Configure the logging of access to cardholder data using the centralized server solution by following the vendor's instructions."
+    ],
+    "a": [
+      "Implement Audit Trails for System Components"
+    ]
+  },
+  "links": [
+    {
+      "href": "/article/7a956911-f547-4f65-88bb-f4a42ea349f3",
+      "text": "Implement Audit Trails for System Components"
+    }
+  ],
+  "html": "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 10.2.1</li>\r\n  </ul>\r\n  <h1>What to Check For</h1>\r\n  <p>All user access to cardholder data should be logged.</p>\r\n  <h1>How to Check</h1>\r\n  <p>This functionality should be implemented by the centralized log server solution. Examine the logs to verify that access to cardholder data is logged.</p>\r\n  <h1>How to Fix</h1>\r\n  <p>This functionality should be implemented by the centralized log server solution. Configure the logging of access to cardholder data using the centralized server solution by following the vendor's instructions.</p>\r\n  <h1>Related Items</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/7a956911-f547-4f65-88bb-f4a42ea349f3\">Implement Audit Trails for System Components</a>\r\n    </li>\r\n  </ul>"
+}

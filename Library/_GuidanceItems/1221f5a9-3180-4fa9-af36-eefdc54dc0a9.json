@@ -1,0 +1,62 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "1700058441",
+      "Content_Hash": "2133168178"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "1221f5a9-3180-4fa9-af36-eefdc54dc0a9"
+        ],
+        "Library_Id": [
+          "47a10a30-15ad-4cfd-bf82-00e9bb2037f6"
+        ],
+        "Title": [
+          "Separate Wireless Networks with Firewalls"
+        ],
+        "Category": [
+          "Networking"
+        ],
+        "Phase": [
+          "Deployment"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          "Separate Wireless Networks with Firewalls"
+        ],
+        "Tag": [
+          ""
+        ],
+        "Security_Demand": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "true",
+          "DataType": "Html"
+        },
+        "Data": [
+          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 1.2.3</li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Install firewalls between any wireless networks and the cardholder data environment. Configure these firewalls to only allow traffic necessary for business purposes.</p>\r\n  <h1>Why</h1>\r\n  <p>Wireless access points may be compromised and an attacker may be using them. To prevent sensitive data from leaking out through a compromised wireless network, a firewall should be used to filter traffic between the cardholder data environment and the wireless\r\n network.</p>\r\n  <h1>How</h1>\r\n  <p>Install and configure a firewall between each wireless network and the cardholder data environment. Refer to the vendor’s documentation or technical support for installation and configuration instructions.</p>"
+        ]
+      }
+    ]
+  }
+}

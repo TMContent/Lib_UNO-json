@@ -1,0 +1,259 @@
+{
+  "id": "b53f841d-1f24-40e6-8e83-bbfd3e504a3b",
+  "checksum": "8674fcd10f515baaeae8ef60c642a5d42a335bc2",
+  "words": {
+    "applies": [
+      "h1"
+    ],
+    "to": [
+      "h1",
+      "h1",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "pci": [
+      "ul",
+      "li"
+    ],
+    "dss": [
+      "ul",
+      "li"
+    ],
+    "requirement": [
+      "ul",
+      "li"
+    ],
+    "13.3": [
+      "ul",
+      "li"
+    ],
+    "what": [
+      "h1"
+    ],
+    "do": [
+      "h1"
+    ],
+    "configure": [
+      "p"
+    ],
+    "the": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "title",
+      "title"
+    ],
+    "network": [
+      "p"
+    ],
+    "in": [
+      "p",
+      "p"
+    ],
+    "a": [
+      "p"
+    ],
+    "way": [
+      "p"
+    ],
+    "that": [
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "does": [
+      "p"
+    ],
+    "not": [
+      "p",
+      "p"
+    ],
+    "allow": [
+      "p",
+      "p",
+      "p"
+    ],
+    "cardholder": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "data": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "environment": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "have": [
+      "p",
+      "p"
+    ],
+    "direct": [
+      "p"
+    ],
+    "internet": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "access": [
+      "p",
+      "p",
+      "p"
+    ],
+    "why": [
+      "h1"
+    ],
+    "denying": [
+      "p"
+    ],
+    "connectivity": [
+      "p",
+      "p"
+    ],
+    "prevents": [
+      "p"
+    ],
+    "potential": [
+      "p"
+    ],
+    "attackers": [
+      "p"
+    ],
+    "from": [
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "being": [
+      "p"
+    ],
+    "able": [
+      "p"
+    ],
+    "conduct": [
+      "p"
+    ],
+    "attacks": [
+      "p"
+    ],
+    "against": [
+      "p"
+    ],
+    "it": [
+      "p"
+    ],
+    "how": [
+      "h1",
+      "p"
+    ],
+    "remove": [
+      "p",
+      "p"
+    ],
+    "any": [
+      "p",
+      "p"
+    ],
+    "routes": [
+      "p"
+    ],
+    "router": [
+      "p"
+    ],
+    "configuration": [
+      "p"
+    ],
+    "port": [
+      "p"
+    ],
+    "forwarding": [
+      "p"
+    ],
+    "rules": [
+      "p"
+    ],
+    "firewalls": [
+      "p"
+    ],
+    "and/or": [
+      "p"
+    ],
+    "routers": [
+      "p"
+    ],
+    "repeat": [
+      "p"
+    ],
+    "check": [
+      "p"
+    ],
+    "processes": [
+      "p"
+    ],
+    "ensure": [
+      "p"
+    ],
+    "changes": [
+      "p"
+    ],
+    "accidentally": [
+      "p"
+    ],
+    "introduced": [
+      "p"
+    ],
+    "separate": [
+      "title"
+    ]
+  },
+  "tags": {
+    "h1": [
+      "Applies to",
+      "What to Do",
+      "Why",
+      "How"
+    ],
+    "ul": [
+      "PCI DSS Requirement 1.3.3"
+    ],
+    "li": [
+      "PCI DSS Requirement 1.3.3"
+    ],
+    "p": [
+      "Configure the network in a way that does not allow the cardholder data environment to have direct Internet access.",
+      "Denying the cardholder data environment Internet connectivity prevents the potential attackers from being able to conduct attacks against it.",
+      "Remove any routes from the router configuration that allow Internet access to the cardholder data environment. Remove any port forwarding rules from the firewalls and/or routers that allow Internet access to the cardholder data environment. Repeat the How\r\n to Check processes to ensure that changes have not accidentally introduced Internet connectivity in the cardholder environment."
+    ]
+  },
+  "links": [],
+  "html": "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 1.3.3</li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Configure the network in a way that does not allow the cardholder data environment to have direct Internet access.</p>\r\n  <h1>Why</h1>\r\n  <p>Denying the cardholder data environment Internet connectivity prevents the potential attackers from being able to conduct attacks against it.</p>\r\n  <h1>How</h1>\r\n  <p>Remove any routes from the router configuration that allow Internet access to the cardholder data environment. Remove any port forwarding rules from the firewalls and/or routers that allow Internet access to the cardholder data environment. Repeat the How\r\n to Check processes to ensure that changes have not accidentally introduced Internet connectivity in the cardholder environment.</p>"
+}
