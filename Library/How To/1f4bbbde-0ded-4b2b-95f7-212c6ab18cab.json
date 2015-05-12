@@ -60,7 +60,7 @@
           "DataType": "Html"
         },
         "Data": [
-          "<h1>Description</h1>\r\n  <p>If you cannot use Windows authentication to connect to a SQL Server database, you must use SQL authentication. When you use SQL authentication, make sure that you use a least-privileged user ID to connect to a SQL Server database and do not use highly privileged accounts such as the <b>sa</b> account. Use a strong password for the SQL user account and protect the channel between your application and database server because credentials are passed in an unencrypted format. For example, use SSL or IPSec. Finally, encrypt the connection string because SQL connection strings contain plaintext credentials.</p>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns &amp; practices guidance.</p>"
+          "<h1>Description</h1>\n  <p>If you cannot use Windows authentication to connect to a SQL Server database, you must use SQL authentication. When you use SQL authentication, make sure that you use a least-privileged user ID to connect to a SQL Server database and do not use highly privileged accounts such as the <b>sa</b> account. Use a strong password for the SQL user account and protect the channel between your application and database server because credentials are passed in an unencrypted format. For example, use SSL or IPSec. Finally, encrypt the connection string because SQL connection strings contain plaintext credentials.</p>\n  <hr />\n  <p>Adapted from Microsoft patterns &amp; practices guidance.</p>"
         ]
       }
     ]

@@ -51,7 +51,7 @@
           "DataType": "WikiText"
         },
         "Data": [
-          "==Applies To==\r\n\r\n* All Android applications.\r\n\r\n==What to Do==\r\n\r\nAvoid using native code to develop applications.\r\n\r\n==Why==\r\n\r\nUsing native code increases the risk of memory management vulnerabilities, such as buffer overflows and format string vulnerabilities.\r\n\r\n==How==\r\n\r\nExamine the application architecture and identify any native code components. Consider replacing any native code components with Java equivalents. It may be appropriate to keep native code components if they carry out simple but performance-sensitive operations. Avoid using native code in the future. Weigh the risks of additional vulnerabilities against the performance benefits when considering using native code.\r\n\r\n==Related Items==\r\n\r\n* [[00000000-0000-0000-0000-0000007a4847|Native Code Is Not Used Unless Necessary]]"
+          "==Applies To==\n\n* All Android applications.\n\n==What to Do==\n\nAvoid using native code to develop applications.\n\n==Why==\n\nUsing native code increases the risk of memory management vulnerabilities, such as buffer overflows and format string vulnerabilities.\n\n==How==\n\nExamine the application architecture and identify any native code components. Consider replacing any native code components with Java equivalents. It may be appropriate to keep native code components if they carry out simple but performance-sensitive operations. Avoid using native code in the future. Weigh the risks of additional vulnerabilities against the performance benefits when considering using native code.\n\n==Related Items==\n\n* [[00000000-0000-0000-0000-0000007a4847|Native Code Is Not Used Unless Necessary]]"
         ]
       }
     ]
