@@ -54,7 +54,7 @@
           "DataType": "Html"
         },
         "Data": [
-          "<h2>What to Do</h2>\r\n  <p>Run or compile your software using features or extensions that automatically provide a protection mechanism that mitigates or eliminates buffer overflows.<br />\r\nFor example, certain compilers and extensions provide automatic buffer overflow detection mechanisms that are built into the compiled code. Examples include the Microsoft Visual Studio<em> /GS</em> flag, Fedora/Red Hat\r\n<em>FORTIFY_SOURCE</em> GCC flag, <em>StackGuard</em>, and <em>ProPolice</em>.</p>\r\n  <p>\r\n    <strong>Note:</strong> This is not necessarily a complete solution, since these mechanisms can only detect certain types of overflows. In addition, an attack could still cause a denial of service, since the typical response is to exit the application.</p>"
+          "<h2>What to Do</h2>\n  <p>Run or compile your software using features or extensions that automatically provide a protection mechanism that mitigates or eliminates buffer overflows.<br />\nFor example, certain compilers and extensions provide automatic buffer overflow detection mechanisms that are built into the compiled code. Examples include the Microsoft Visual Studio<em> /GS</em> flag, Fedora/Red Hat\n<em>FORTIFY_SOURCE</em> GCC flag, <em>StackGuard</em>, and <em>ProPolice</em>.</p>\n  <p>\n    <strong>Note:</strong> This is not necessarily a complete solution, since these mechanisms can only detect certain types of overflows. In addition, an attack could still cause a denial of service, since the typical response is to exit the application.</p>"
         ]
       }
     ]
