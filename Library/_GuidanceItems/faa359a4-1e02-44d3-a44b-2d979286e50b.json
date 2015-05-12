@@ -54,7 +54,7 @@
           "DataType": "Html"
         },
         "Data": [
-          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 3.3</li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Use a symbol, such as \"*\", to mask all the digits of the PAN except for the last four on any page where the PAN is displayed and the viewer does not have a legitimate business need to see the entire PAN.</p>\r\n  <h1>Why</h1>\r\n  <p>PANs are very sensitive and displaying them on the screen or on print-outs is unacceptable.</p>\r\n  <h1>How</h1>\r\n  <p>Implement masking in the function(s) used to print the PAN by substituting some character for all the digits in the PAN except the last four.\r\n</p>"
+          "<h1>Applies to</h1>\n  <ul>\n    <li>PCI DSS Requirement 3.3</li>\n  </ul>\n  <h1>What to Do</h1>\n  <p>Use a symbol, such as \"*\", to mask all the digits of the PAN except for the last four on any page where the PAN is displayed and the viewer does not have a legitimate business need to see the entire PAN.</p>\n  <h1>Why</h1>\n  <p>PANs are very sensitive and displaying them on the screen or on print-outs is unacceptable.</p>\n  <h1>How</h1>\n  <p>Implement masking in the function(s) used to print the PAN by substituting some character for all the digits in the PAN except the last four.\n</p>"
         ]
       }
     ]
