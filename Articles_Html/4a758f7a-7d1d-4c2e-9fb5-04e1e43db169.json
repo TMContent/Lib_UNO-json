@@ -1,6 +1,6 @@
 {
   "id": "4a758f7a-7d1d-4c2e-9fb5-04e1e43db169",
-  "checksum": "02c6f84a1cdbb75066c05b55ed613b20654a6bef",
+  "checksum": "1b9317a76218e421d68b0d2d25503d4d4d8999d3",
   "words": {
     "21": [
       "ul",
@@ -403,9 +403,9 @@
     ],
     "p": [
       "Network devices should not be using the manufacturer's default usernames and passwords for administration.",
-      "The default usernames and passwords for network devices are publicly available. An attacker may be able to use the default authentication credentials to change the configurations of the network devices to an insecure state. This vulnerability is especially\r\n relevant to potential insider attacks.",
+      "The default usernames and passwords for network devices are publicly available. An attacker may be able to use the default authentication credentials to change the configurations of the network devices to an insecure state. This vulnerability is especially\n relevant to potential insider attacks.",
       "For each network device, obtain the default administrator username and password by using the Internet or the vendor's documentation. Try to log in to each device using the default administrator credentials.",
-      "If it is possible to log in to a network device using the default administrator credentials, then change the password&nbsp;and change the username of the administrator account, if possible. The exact procedure for changing the administrator username and/or password\r\n varies by device. For detailed instructions on changing the username and password on your hardware, please refer to the vendor's documentation or contact technical support."
+      "If it is possible to log in to a network device using the default administrator credentials, then change the password&nbsp;and change the username of the administrator account, if possible. The exact procedure for changing the administrator username and/or password\n varies by device. For detailed instructions on changing the username and password on your hardware, please refer to the vendor's documentation or contact technical support."
     ],
     "a": [
       "Change System Default Settings on Network Devices."
@@ -417,5 +417,5 @@
       "text": "Change System Default Settings on Network Devices."
     }
   ],
-  "html": "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 2.1</li>\r\n  </ul>\r\n  <h1>What to Check For</h1>\r\n  <p>Network devices should not be using the manufacturer's default usernames and passwords for administration.</p>\r\n  <h1>Why</h1>\r\n  <p>The default usernames and passwords for network devices are publicly available. An attacker may be able to use the default authentication credentials to change the configurations of the network devices to an insecure state. This vulnerability is especially\r\n relevant to potential insider attacks.</p>\r\n  <h1>How to Check</h1>\r\n  <p>For each network device, obtain the default administrator username and password by using the Internet or the vendor's documentation. Try to log in to each device using the default administrator credentials.</p>\r\n  <h1>How to Fix</h1>\r\n  <p>If it is possible to log in to a network device using the default administrator credentials, then change the password&amp;nbsp;and change the username of the administrator account, if possible. The exact procedure for changing the administrator username and/or password\r\n varies by device. For detailed instructions on changing the username and password on your hardware, please refer to the vendor's documentation or contact technical support.</p>\r\n  <h1>Related Items</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/b3096d5e-1147-4919-9e09-c7675a19df37\">Change System Default Settings on Network Devices.</a>\r\n    </li>\r\n  </ul>"
+  "html": "<h1>Applies to</h1>\n  <ul>\n    <li>PCI DSS Requirement 2.1</li>\n  </ul>\n  <h1>What to Check For</h1>\n  <p>Network devices should not be using the manufacturer's default usernames and passwords for administration.</p>\n  <h1>Why</h1>\n  <p>The default usernames and passwords for network devices are publicly available. An attacker may be able to use the default authentication credentials to change the configurations of the network devices to an insecure state. This vulnerability is especially\n relevant to potential insider attacks.</p>\n  <h1>How to Check</h1>\n  <p>For each network device, obtain the default administrator username and password by using the Internet or the vendor's documentation. Try to log in to each device using the default administrator credentials.</p>\n  <h1>How to Fix</h1>\n  <p>If it is possible to log in to a network device using the default administrator credentials, then change the password&amp;nbsp;and change the username of the administrator account, if possible. The exact procedure for changing the administrator username and/or password\n varies by device. For detailed instructions on changing the username and password on your hardware, please refer to the vendor's documentation or contact technical support.</p>\n  <h1>Related Items</h1>\n  <ul>\n    <li>\n      <a href=\"/article/b3096d5e-1147-4919-9e09-c7675a19df37\">Change System Default Settings on Network Devices.</a>\n    </li>\n  </ul>"
 }

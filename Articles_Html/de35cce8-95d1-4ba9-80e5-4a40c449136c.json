@@ -1,6 +1,6 @@
 {
   "id": "de35cce8-95d1-4ba9-80e5-4a40c449136c",
-  "checksum": "b384df3dba27c20ad43e5380423f6218caaa8956",
+  "checksum": "f8427e48e443e686af949f0c0a6e28017ec18b9b",
   "words": {
     "what": [
       "h1"
@@ -57,7 +57,7 @@
       "p",
       "title"
     ],
-    "to protect": [
+    "to&nbspprotect": [
       "p"
     ],
     "connection": [
@@ -273,7 +273,7 @@
     "connectionstrings": [
       "b"
     ],
-    "note   you": [
+    "note&nbsp&nbsp;&nbsp;you": [
       "blockquote"
     ],
     "should": [
@@ -346,6 +346,9 @@
     "guidance": [
       "p"
     ],
+    "sink]": [
+      "title"
+    ],
     "rsa-protected": [
       "title"
     ],
@@ -359,7 +362,7 @@
       "How to Fix"
     ],
     "p": [
-      "Check to ensure that your application uses RSA Protected Configuration provider to protect connection strings in a Web farm environment.",
+      "Check to ensure that your application uses RSA Protected Configuration provider to&nbsp;protect connection strings in a Web farm environment.",
       "To protect credentials in configuration files, encrypt them. Place your database connection strings inside the <connectionStrings> element of the Web.config file and then encrypt that element by using the Aspnet_regiis utility. You can use DPAPI or RSA encryption. Use RSA in Web farms because you can easily export and import RSA keys across servers. Protecting connection strings is particularly important for connection strings that use SQL authentication because they contain clear text user IDs and passwords.",
       "Adapted from Microsoft patterns & practices guidance."
     ],
@@ -368,12 +371,12 @@
       "Note"
     ],
     "blockquote": [
-      "Note   You should also encrypt connection strings if you use Windows authentication. Although this form of connection string does not contain credentials, you should aim to keep server and database names private."
+      "Note&nbsp;&nbsp;&nbsp;You should also encrypt connection strings if you use Windows authentication. Although this form of connection string does not contain credentials, you should aim to keep server and database names private."
     ],
     "hr": [
       ""
     ]
   },
   "links": [],
-  "html": "<h1>What to Check For</h1>\r\n  <p>Check to ensure that your application uses RSA Protected Configuration provider to&nbsp;protect connection strings in a Web farm environment.</p>\r\n  <h1>How to Fix</h1>\r\n  <p>To protect credentials in configuration files, encrypt them. Place your database connection strings inside the &lt;<b>connectionStrings</b>&gt; element of the Web.config file and then encrypt that element by using the Aspnet_regiis utility. You can use DPAPI or RSA encryption. Use RSA in Web farms because you can easily export and import RSA keys across servers. Protecting connection strings is particularly important for connection strings that use SQL authentication because they contain clear text user IDs and passwords.</p>\r\n  <blockquote>\r\n    <b>Note</b>&nbsp;&nbsp;&nbsp;You should also encrypt connection strings if you use Windows authentication. Although this form of connection string does not contain credentials, you should aim to keep server and database names private. </blockquote>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance. </p>"
+  "html": "<h1>What to Check For</h1>\n  <p>Check to ensure that your application uses RSA Protected Configuration provider to&amp;nbsp;protect connection strings in a Web farm environment.</p>\n  <h1>How to Fix</h1>\n  <p>To protect credentials in configuration files, encrypt them. Place your database connection strings inside the &lt;<b>connectionStrings</b>&gt; element of the Web.config file and then encrypt that element by using the Aspnet_regiis utility. You can use DPAPI or RSA encryption. Use RSA in Web farms because you can easily export and import RSA keys across servers. Protecting connection strings is particularly important for connection strings that use SQL authentication because they contain clear text user IDs and passwords.</p>\n  <blockquote>\n    <b>Note</b>&amp;nbsp;&amp;nbsp;&amp;nbsp;You should also encrypt connection strings if you use Windows authentication. Although this form of connection string does not contain credentials, you should aim to keep server and database names private. </blockquote>\n  <hr />\n  <p>Adapted from Microsoft patterns &amp; practices guidance. </p>"
 }

@@ -1,6 +1,6 @@
 {
   "id": "db479b30-f48e-4d2f-94f7-8fc050021021",
-  "checksum": "438b614ab577f36ff52de2b5ea37ee2747e64b88",
+  "checksum": "fa4d4acf4848f5a99756a4ddf5306effdf4c53ce",
   "words": {
     "20": [
       "h2",
@@ -118,9 +118,6 @@
     "by": [
       "p",
       "p",
-      "ul",
-      "li",
-      "a",
       "ul",
       "li",
       "a"
@@ -280,9 +277,6 @@
       "p",
       "p",
       "p",
-      "ul",
-      "li",
-      "a",
       "ul",
       "li",
       "a",
@@ -556,10 +550,6 @@
     ],
     "use": [
       "p",
-      "p",
-      "ul",
-      "li",
-      "a",
       "p"
     ],
     "platform": [
@@ -573,10 +563,6 @@
     "session": [
       "p",
       "p",
-      "ul",
-      "li",
-      "a",
-      "p",
       "p",
       "ul",
       "li",
@@ -584,10 +570,6 @@
     ],
     "management": [
       "p",
-      "p",
-      "ul",
-      "li",
-      "a",
       "p",
       "p",
       "ul",
@@ -603,26 +585,6 @@
       "p",
       "p",
       "p"
-    ],
-    "platform-provided": [
-      "p",
-      "p"
-    ],
-    "offered": [
-      "ul",
-      "li",
-      "a",
-      "ul",
-      "li",
-      "a"
-    ],
-    "framework": [
-      "ul",
-      "li",
-      "a",
-      "ul",
-      "li",
-      "a"
     ],
     "do": [
       "ul",
@@ -721,6 +683,19 @@
     ],
     "privileges": [
       "p"
+    ],
+    "platform-provided": [
+      "p"
+    ],
+    "offered": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "framework": [
+      "ul",
+      "li",
+      "a"
     ],
     "made": [
       "ul",
@@ -1146,7 +1121,6 @@
       "A parameter tampering vulnerability occurs when an attacker can modify parameters used by a web application that have security implications. For example, a vulnerable application may allow an attacker to change his user id by changing request parameters. The vulnerability stems from relying on user-accessible parameters to store security sensitive information. Common vulnerable areas are data stored in cookies, hidden form fields, and HTTP request parameters. This vulnerability type applies to web applications.",
       "The exact impact of parameter tampering depends on the parameters that are available for tampering. This vulnerability usually allows the attacker to change his status from regular user to admin. In that case, the attacker is able to take full control of the application and its data. Another common impact is that the attacker is able to change his user id to that of another user. In that case the attacker can access and modify the user's data and impersonate that user. Parameter tampering usually allows the attacker to impersonate any user of his choosing.",
       "To prevent this problem, use platform provided session management, and don't store sensitive data in user accessible parameters.",
-      "Use platform-provided session management:",
       "Don't store sensitive data in user accessible parameters:",
       "To check for adequate protection against this vulnerability, ensure that platform provided session management is used, and sensitive data is not stored in user accessible parameters. Identify all user-mutable parameters and verify that tampering with them does not result in elevated privileges.",
       "Platform-provided session management is used:",
@@ -1161,21 +1135,18 @@
       "Valid login credentials and enrollment in the course itself are required to access Team Professor content. If you need login credentials, please contact support@securityinnovation.com for help."
     ],
     "ul": [
-      "Use Session Management Offered by the Framework",
       "Do Not Make Security Decisions Based on Client-Accessible Parameters",
       "Session Management Offered by the Framework Is Used",
       "Security Decisions Are Not Made Based on Client-Accessible Parameters",
       "For more information about parameter tampering, see https://www.owasp.org/index.php/Web_Parameter_Tampering"
     ],
     "li": [
-      "Use Session Management Offered by the Framework",
       "Do Not Make Security Decisions Based on Client-Accessible Parameters",
       "Session Management Offered by the Framework Is Used",
       "Security Decisions Are Not Made Based on Client-Accessible Parameters",
       "For more information about parameter tampering, see https://www.owasp.org/index.php/Web_Parameter_Tampering"
     ],
     "a": [
-      "Use Session Management Offered by the Framework",
       "Do Not Make Security Decisions Based on Client-Accessible Parameters",
       "Session Management Offered by the Framework Is Used",
       "Security Decisions Are Not Made Based on Client-Accessible Parameters",
@@ -1194,10 +1165,6 @@
     ]
   },
   "links": [
-    {
-      "href": "0ed7310a-a0fd-4074-9c0f-37f48cf2bf4f",
-      "text": "Use Session Management Offered by the Framework"
-    },
     {
       "href": "9df0b518-f832-4a7c-9857-0517638c47db",
       "text": "Do Not Make Security Decisions Based on Client-Accessible Parameters"
@@ -1227,5 +1194,5 @@
       "text": "https://www.owasp.org/index.php/Web_Parameter_Tampering"
     }
   ],
-  "html": "<h1>Description</h1><p>A parameter tampering vulnerability occurs when an attacker can modify parameters used by a web application that have security implications. For example, a vulnerable application may allow an attacker to change his user id by changing request parameters. The vulnerability stems from relying on user-accessible parameters to store security sensitive information. Common vulnerable areas are data stored in cookies, hidden form fields, and HTTP request parameters. This vulnerability type applies to web applications. \n</p><h1>Impact</h1><p>The exact impact of parameter tampering depends on the parameters that are available for tampering. This vulnerability usually allows the attacker to change his status from regular user to admin. In that case, the attacker is able to take full control of the application and its data. Another common impact is that the attacker is able to change his user id to that of another user. In that case the attacker can access and modify the user's data and impersonate that user. Parameter tampering usually allows the attacker to impersonate any user of his choosing. \n</p><h1>Countermeasures</h1><p>To prevent this problem, use platform provided session management, and don't store sensitive data in user accessible parameters. \n</p><p>\nUse platform-provided session management:</p><ul>\n<li> <a href=\"0ed7310a-a0fd-4074-9c0f-37f48cf2bf4f\">Use Session Management Offered by the Framework</a></li>\n</ul><p>\nDon't store sensitive data in user accessible parameters:</p><ul>\n<li> <a href=\"9df0b518-f832-4a7c-9857-0517638c47db\">Do Not Make Security Decisions Based on Client-Accessible Parameters</a></li>\n</ul><h1>Application Check</h1><p>To check for adequate protection against this vulnerability, ensure that platform provided session management is used, and sensitive data is not stored in user accessible parameters. Identify all user-mutable parameters and verify that tampering with them does not result in elevated privileges. \n</p><p>\nPlatform-provided session management is used:</p><ul>\n<li> <a href=\"3f2660b3-a935-4b4e-85ff-27ae28683f5b\">Session Management Offered by the Framework Is Used</a></li>\n</ul><p>\nSensitive data is not stored in user accessible parameters:</p><ul>\n<li> <a href=\"4436e342-64d9-4b1b-ae9b-3e00696053fb\">Security Decisions Are Not Made Based on Client-Accessible Parameters</a></li>\n</ul><h1>Computer Based Training Links</h1><p>Use the following Computer Based Training course(s) for more background information about this type of vulnerabilities.\n</p><h2>Software Security Awareness</h2><p>This course is ideal for anyone that is involved in the Software Development process or information security personnel that need to better understand software security. Upon course completion, you will be familiar with the key attributes of a secure software development lifecycle and specific activities that need to be performed to develop secure software.\n</p><p>\n<a href=\"https://teamprofessor.absorbtraining.com/ninja/#/courses/course/127651\">AWA 102 Software Security Awareness</a> \n</p><h2>Creating Secure Code – JRE Foundations</h2><p>In this course, you will learn to recognize and remediate common Java Web software security vulnerabilities.  This course has three modules, which introduce you to these vulnerabilities and help you to identify and remediate them.\n</p><p>\n<a href=\"https://teamprofessor.absorbtraining.com/ninja/#/courses/course/127615\">COD 211 Creating Secure Code – JRE Foundations</a>\n</p><h2>Fundamentals of Web 2.0 Security</h2><p>This course introduces you to the fundamentals of secure Web 2.0 development. The course begins with a discussion about Web 2.0, its evolution, and the technologies behind it. The course describes common Web 2.0 attacks that can cause significant loss to organizations. It reviews the best practices that you should incorporate to mitigate the risks from Web 2.0 attacks, as well as practices to avoid. The course concludes with a walk-through of a software system scenario that can help you better understand Web 2.0 attacks and apply the best practices discussed in the course.\n</p><p>\n<a href=\"https://teamprofessor.absorbtraining.com/ninja/#/courses/course/127634\">COD 151 Fundamentals of Web 2.0 Security</a>\n</p><p>\n<em>Valid login credentials and enrollment in the course itself are required to access Team Professor content. If you need login credentials, please contact support@securityinnovation.com for help.</em>\n</p><h1>Additional Resources</h1><ul><li> For more information about parameter tampering, see <a href=\"https://www.owasp.org/index.php/Web_Parameter_Tampering\">https://www.owasp.org/index.php/Web_Parameter_Tampering</a></li></ul>"
+  "html": "<h1>Description</h1><p>A parameter tampering vulnerability occurs when an attacker can modify parameters used by a web application that have security implications. For example, a vulnerable application may allow an attacker to change his user id by changing request parameters. The vulnerability stems from relying on user-accessible parameters to store security sensitive information. Common vulnerable areas are data stored in cookies, hidden form fields, and HTTP request parameters. This vulnerability type applies to web applications. \n</p><h1>Impact</h1><p>The exact impact of parameter tampering depends on the parameters that are available for tampering. This vulnerability usually allows the attacker to change his status from regular user to admin. In that case, the attacker is able to take full control of the application and its data. Another common impact is that the attacker is able to change his user id to that of another user. In that case the attacker can access and modify the user's data and impersonate that user. Parameter tampering usually allows the attacker to impersonate any user of his choosing. \n</p><h1>Countermeasures</h1><p>To prevent this problem, use platform provided session management, and don't store sensitive data in user accessible parameters. \n</p><p>\nDon't store sensitive data in user accessible parameters:</p><ul>\n<li> <a href=\"9df0b518-f832-4a7c-9857-0517638c47db\">Do Not Make Security Decisions Based on Client-Accessible Parameters</a></li>\n</ul><h1>Application Check</h1><p>To check for adequate protection against this vulnerability, ensure that platform provided session management is used, and sensitive data is not stored in user accessible parameters. Identify all user-mutable parameters and verify that tampering with them does not result in elevated privileges. \n</p><p>\nPlatform-provided session management is used:</p><ul>\n<li> <a href=\"3f2660b3-a935-4b4e-85ff-27ae28683f5b\">Session Management Offered by the Framework Is Used</a></li>\n</ul><p>\nSensitive data is not stored in user accessible parameters:</p><ul>\n<li> <a href=\"4436e342-64d9-4b1b-ae9b-3e00696053fb\">Security Decisions Are Not Made Based on Client-Accessible Parameters</a></li>\n</ul><h1>Computer Based Training Links</h1><p>Use the following Computer Based Training course(s) for more background information about this type of vulnerabilities.\n</p><h2>Software Security Awareness</h2><p>This course is ideal for anyone that is involved in the Software Development process or information security personnel that need to better understand software security. Upon course completion, you will be familiar with the key attributes of a secure software development lifecycle and specific activities that need to be performed to develop secure software.\n</p><p>\n<a href=\"https://teamprofessor.absorbtraining.com/ninja/#/courses/course/127651\">AWA 102 Software Security Awareness</a> \n</p><h2>Creating Secure Code – JRE Foundations</h2><p>In this course, you will learn to recognize and remediate common Java Web software security vulnerabilities.  This course has three modules, which introduce you to these vulnerabilities and help you to identify and remediate them.\n</p><p>\n<a href=\"https://teamprofessor.absorbtraining.com/ninja/#/courses/course/127615\">COD 211 Creating Secure Code – JRE Foundations</a>\n</p><h2>Fundamentals of Web 2.0 Security</h2><p>This course introduces you to the fundamentals of secure Web 2.0 development. The course begins with a discussion about Web 2.0, its evolution, and the technologies behind it. The course describes common Web 2.0 attacks that can cause significant loss to organizations. It reviews the best practices that you should incorporate to mitigate the risks from Web 2.0 attacks, as well as practices to avoid. The course concludes with a walk-through of a software system scenario that can help you better understand Web 2.0 attacks and apply the best practices discussed in the course.\n</p><p>\n<a href=\"https://teamprofessor.absorbtraining.com/ninja/#/courses/course/127634\">COD 151 Fundamentals of Web 2.0 Security</a>\n</p><p>\n<em>Valid login credentials and enrollment in the course itself are required to access Team Professor content. If you need login credentials, please contact support@securityinnovation.com for help.</em>\n</p><h1>Additional Resources</h1><ul><li> For more information about parameter tampering, see <a href=\"https://www.owasp.org/index.php/Web_Parameter_Tampering\">https://www.owasp.org/index.php/Web_Parameter_Tampering</a></li></ul>"
 }

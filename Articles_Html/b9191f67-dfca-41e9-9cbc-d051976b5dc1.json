@@ -1,6 +1,6 @@
 {
   "id": "b9191f67-dfca-41e9-9cbc-d051976b5dc1",
-  "checksum": "93569c805fecce95ec4c2f1d3c2186c6458f6457",
+  "checksum": "230777f028f01bc7fee49b78b540335e362b427c",
   "words": {
     "35": [
       "ul",
@@ -194,7 +194,7 @@
       "ol",
       "li"
     ],
-    "message\r\n<wshttpbinding>": [
+    "message\n<wshttpbinding>": [
       "ol",
       "li"
     ],
@@ -303,12 +303,12 @@
       "Description"
     ],
     "ul": [
-      "Microsoft® Windows Communication Foundation (WCF) 3.5 \r\nMicrosoft Visual Studio® 2008"
+      "Microsoft® Windows Communication Foundation (WCF) 3.5 \nMicrosoft Visual Studio® 2008"
     ],
     "li": [
       "Microsoft® Windows Communication Foundation (WCF) 3.5",
       "Microsoft Visual Studio® 2008",
-      "Open your app.config or web.config file and set the security mode to Message.\r\n<wsHttpBinding>  <binding name=\"MessageAndUserName\">    <security mode=\"Message\">      <message clientCredentialType=\"UserName\" negotiateCredentials=”false” algorithmSuite=\"Default\" />    </security>  </binding></wsHttpBinding>",
+      "Open your app.config or web.config file and set the security mode to Message.\n<wsHttpBinding>  <binding name=\"MessageAndUserName\">    <security mode=\"Message\">      <message clientCredentialType=\"UserName\" negotiateCredentials=”false” algorithmSuite=\"Default\" />    </security>  </binding></wsHttpBinding>",
       "Save the configuration file."
     ],
     "p": [
@@ -322,7 +322,7 @@
       "negotiateCredentials"
     ],
     "ol": [
-      "Open your app.config or web.config file and set the security mode to Message.\r\n<wsHttpBinding>  <binding name=\"MessageAndUserName\">    <security mode=\"Message\">      <message clientCredentialType=\"UserName\" negotiateCredentials=”false” algorithmSuite=\"Default\" />    </security>  </binding></wsHttpBinding>Save the configuration file.",
+      "Open your app.config or web.config file and set the security mode to Message.\n<wsHttpBinding>  <binding name=\"MessageAndUserName\">    <security mode=\"Message\">      <message clientCredentialType=\"UserName\" negotiateCredentials=”false” algorithmSuite=\"Default\" />    </security>  </binding></wsHttpBinding>Save the configuration file.",
       "<wsHttpBinding>  <binding name=\"MessageAndUserName\">    <security mode=\"Message\">      <message clientCredentialType=\"UserName\" negotiateCredentials=”false” algorithmSuite=\"Default\" />    </security>  </binding></wsHttpBinding>"
     ],
     "pre": [
@@ -341,5 +341,5 @@
     ]
   },
   "links": [],
-  "html": "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>Microsoft® Windows Communication Foundation (WCF) 3.5 \r\n<li>Microsoft Visual Studio® 2008</li></li>\r\n  </ul>\r\n  <h1>Description</h1>\r\n  <p>Set the <strong>negotiateCredentials</strong> attribute to <strong>false</strong> to use out-of-band credentials. This will require you to provide certificates to the client so they can encrypt and sign messages.</p>\r\n  <p>Use the following steps to configure the <strong>negotiateCredentials</strong> attribute.</p>\r\n  <ol>\r\n    <li>Open your app.config or web.config file and set the security mode to Message.\r\n<ol><pre>&lt;wsHttpBinding&gt;<br />  &lt;binding name=\"MessageAndUserName\"&gt;<br />    &lt;security mode=\"Message\"&gt;<br />      &lt;message clientCredentialType=\"UserName\" negotiateCredentials=”false” algorithmSuite=\"Default\" /&gt;<br />    &lt;/security&gt;<br />  &lt;/binding&gt;<br />&lt;/wsHttpBinding&gt;</pre></ol><li>Save the configuration file.</li></li>\r\n  </ol>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
+  "html": "<h1>Applies to</h1>\n  <ul>\n    <li>Microsoft® Windows Communication Foundation (WCF) 3.5 \n<li>Microsoft Visual Studio® 2008</li></li>\n  </ul>\n  <h1>Description</h1>\n  <p>Set the <strong>negotiateCredentials</strong> attribute to <strong>false</strong> to use out-of-band credentials. This will require you to provide certificates to the client so they can encrypt and sign messages.</p>\n  <p>Use the following steps to configure the <strong>negotiateCredentials</strong> attribute.</p>\n  <ol>\n    <li>Open your app.config or web.config file and set the security mode to Message.\n<ol><pre>&lt;wsHttpBinding&gt;<br />  &lt;binding name=\"MessageAndUserName\"&gt;<br />    &lt;security mode=\"Message\"&gt;<br />      &lt;message clientCredentialType=\"UserName\" negotiateCredentials=”false” algorithmSuite=\"Default\" /&gt;<br />    &lt;/security&gt;<br />  &lt;/binding&gt;<br />&lt;/wsHttpBinding&gt;</pre></ol><li>Save the configuration file.</li></li>\n  </ol>\n  <hr />\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
 }

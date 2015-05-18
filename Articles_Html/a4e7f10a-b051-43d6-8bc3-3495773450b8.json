@@ -1,6 +1,6 @@
 {
   "id": "a4e7f10a-b051-43d6-8bc3-3495773450b8",
-  "checksum": "e53f777360346ec4cea83d38ae89461b35e40902",
+  "checksum": "fb051b0ea23ff5782cf36acbb5a7d795a4bbebea",
   "words": {
     "what": [
       "h1",
@@ -851,7 +851,7 @@
       "pre",
       "pre"
     ],
-    "*": [
+    "&#42": [
       "ol",
       "ol",
       "li",
@@ -861,14 +861,9 @@
       "pre",
       "pre"
     ],
-    "users": [
-      "ol",
+    "users&#9": [
       "ol",
       "li",
-      "pre",
-      "li",
-      "pre",
-      "pre",
       "pre"
     ],
     "username": [
@@ -893,7 +888,7 @@
       "pre",
       "pre"
     ],
-    "+": [
+    "&#43": [
       "ol",
       "ol",
       "ol",
@@ -917,7 +912,7 @@
       "pre",
       "pre"
     ],
-    "\"'": [
+    "\"'&#9": [
       "ol",
       "li",
       "pre",
@@ -994,7 +989,7 @@
       "li",
       "pre"
     ],
-    "sqlconnectionconnectionstring)){": [
+    "sqlconnectionconnectionstring))&#123;": [
       "ol",
       "li",
       "pre",
@@ -1021,12 +1016,19 @@
       "pre",
       "pre"
     ],
-    "'@uname'": [
+    "users": [
+      "ol",
+      "li",
+      "pre",
+      "pre",
+      "pre"
+    ],
+    "'&#64uname'": [
       "ol",
       "li",
       "pre"
     ],
-    "'@pwd'\"": [
+    "'&#64pwd'\",": [
       "ol",
       "li",
       "pre"
@@ -1036,7 +1038,7 @@
       "li",
       "pre"
     ],
-    "mycommandselectcommand.parameters.add(\"@uname\",": [
+    "mycommandselectcommand.parameters.add(\"&#64;uname\",": [
       "ol",
       "li",
       "pre"
@@ -1054,7 +1056,7 @@
       "li",
       "pre"
     ],
-    "mycommandselectcommand.parameters.add(\"@pwd\",": [
+    "mycommandselectcommand.parameters.add(\"&#64;pwd\",": [
       "ol",
       "li",
       "pre"
@@ -1064,7 +1066,7 @@
       "li",
       "pre"
     ],
-    "mycommandselectcommand.parameters[\"@uname\"].value": [
+    "mycommandselectcommand.parameters&#91;\"&#64;uname\"&#93;.value": [
       "ol",
       "li",
       "pre"
@@ -1074,7 +1076,7 @@
       "li",
       "pre"
     ],
-    "mycommandselectcommand.parameters[\"@pwd\"].value": [
+    "mycommandselectcommand.parameters&#91;\"&#64;pwd\"&#93;.value": [
       "ol",
       "li",
       "pre"
@@ -1094,7 +1096,7 @@
       "li",
       "pre"
     ],
-    "connectionclose();}": [
+    "connectionclose();&#125;": [
       "ol",
       "li",
       "pre"
@@ -1208,7 +1210,7 @@
     "mycommandexecutereader();": [
       "pre"
     ],
-    "..}": [
+    "..&#125;": [
       "pre"
     ],
     "preceding": [
@@ -1429,6 +1431,9 @@
     ],
     "guidance": [
       "p"
+    ],
+    "sink]": [
+      "title"
     ]
   },
   "tags": {
@@ -1456,12 +1461,12 @@
       "Adapted from Microsoft patterns & practices guidance."
     ],
     "ol": [
-      "Identify all database transactions. Locate all SQL queries throughout your application. Example:\r\n      \"select user from myappUsers where user = ? and pass = ?;\"\r\n      \r\n        \r\n          Verify that each transaction uses Stored Procedures where possible. Verify that your application interacts with the backend database through the use of Stored Procedures. Ensure that SQL queries look like:\r\n        SqlCommand myCommand = new SqlCommand(\"sp_SelectUser\", myConnection);//Specify our command is a stored proceduremyCommand.CommandType = CommandType.StoredProcedure; \r\n        and not like:\r\n        string SQLstr = \"SELECT * from users\t WHERE username = '\" + un.Text + \"'\t AND password = '\" + pass.Text + \"'\";SqlCommand myCommand = new SqlCommand(SQLstr, myConnection);\r\n        \r\n          \r\n            Verify that type-safe parameters are used. Verify that type-safe parameters are used in the dynamic SQL queries or stored procedures by using the SqlParameterCollection class. Example:\r\n          using (SqlConnection connection = new SqlConnection(connectionString)){  connection.Open();  SqlDataAdapter myDataAdapter = new SqlDataAdapter(         \"SELECT * from users WHERE username = '@uname' AND password = '@pwd'\", connection);  myCommand.SelectCommand.Parameters.Add(\"@uname\", SqlDbType.VarChar, 24);  myCommand.SelectCommand.Parameters.Add(\"@pwd\", SqlDbType.VarChar, 16);  myCommand.SelectCommand.Parameters[\"@uname\"].Value = un.Text;  myCommand.SelectCommand.Parameters[\"@pwd\"].Value = pass.Text;  myDataAdapter.Fill(userDataset);  ...  connection.Close();}"
+      "Identify all database transactions. Locate all SQL queries throughout your application. Example:\n      \"select user from myappUsers where user = ? and pass = ?;\"\n      \n        \n          Verify that each transaction uses Stored Procedures where possible. Verify that your application interacts with the backend database through the use of Stored Procedures. Ensure that SQL queries look like:\n        SqlCommand myCommand = new SqlCommand(\"sp_SelectUser\", myConnection);//Specify our command is a stored proceduremyCommand.CommandType = CommandType.StoredProcedure; \n        and not like:\n        string SQLstr = \"SELECT &#42; from users&#9; WHERE username = '\" &#43; un.Text &#43; \"'&#9; AND password = '\" &#43; pass.Text &#43; \"'\";SqlCommand myCommand = new SqlCommand(SQLstr, myConnection);\n        \n          \n            Verify that type-safe parameters are used. Verify that type-safe parameters are used in the dynamic SQL queries or stored procedures by using the SqlParameterCollection class. Example:\n          using (SqlConnection connection = new SqlConnection(connectionString))&#123;  connection.Open();  SqlDataAdapter myDataAdapter = new SqlDataAdapter(         \"SELECT &#42; from users WHERE username = '&#64;uname' AND password = '&#64;pwd'\", connection);  myCommand.SelectCommand.Parameters.Add(\"&#64;uname\", SqlDbType.VarChar, 24);  myCommand.SelectCommand.Parameters.Add(\"&#64;pwd\", SqlDbType.VarChar, 16);  myCommand.SelectCommand.Parameters&#91;\"&#64;uname\"&#93;.Value = un.Text;  myCommand.SelectCommand.Parameters&#91;\"&#64;pwd\"&#93;.Value = pass.Text;  myDataAdapter.Fill(userDataset);  ...  connection.Close();&#125;"
     ],
     "li": [
-      "Identify all database transactions. Locate all SQL queries throughout your application. Example:\r\n      \"select user from myappUsers where user = ? and pass = ?;\"",
-      "Verify that each transaction uses Stored Procedures where possible. Verify that your application interacts with the backend database through the use of Stored Procedures. Ensure that SQL queries look like:\r\n        SqlCommand myCommand = new SqlCommand(\"sp_SelectUser\", myConnection);//Specify our command is a stored proceduremyCommand.CommandType = CommandType.StoredProcedure; \r\n        and not like:\r\n        string SQLstr = \"SELECT * from users\t WHERE username = '\" + un.Text + \"'\t AND password = '\" + pass.Text + \"'\";SqlCommand myCommand = new SqlCommand(SQLstr, myConnection);",
-      "Verify that type-safe parameters are used. Verify that type-safe parameters are used in the dynamic SQL queries or stored procedures by using the SqlParameterCollection class. Example:\r\n          using (SqlConnection connection = new SqlConnection(connectionString)){  connection.Open();  SqlDataAdapter myDataAdapter = new SqlDataAdapter(         \"SELECT * from users WHERE username = '@uname' AND password = '@pwd'\", connection);  myCommand.SelectCommand.Parameters.Add(\"@uname\", SqlDbType.VarChar, 24);  myCommand.SelectCommand.Parameters.Add(\"@pwd\", SqlDbType.VarChar, 16);  myCommand.SelectCommand.Parameters[\"@uname\"].Value = un.Text;  myCommand.SelectCommand.Parameters[\"@pwd\"].Value = pass.Text;  myDataAdapter.Fill(userDataset);  ...  connection.Close();}",
+      "Identify all database transactions. Locate all SQL queries throughout your application. Example:\n      \"select user from myappUsers where user = ? and pass = ?;\"",
+      "Verify that each transaction uses Stored Procedures where possible. Verify that your application interacts with the backend database through the use of Stored Procedures. Ensure that SQL queries look like:\n        SqlCommand myCommand = new SqlCommand(\"sp_SelectUser\", myConnection);//Specify our command is a stored proceduremyCommand.CommandType = CommandType.StoredProcedure; \n        and not like:\n        string SQLstr = \"SELECT &#42; from users&#9; WHERE username = '\" &#43; un.Text &#43; \"'&#9; AND password = '\" &#43; pass.Text &#43; \"'\";SqlCommand myCommand = new SqlCommand(SQLstr, myConnection);",
+      "Verify that type-safe parameters are used. Verify that type-safe parameters are used in the dynamic SQL queries or stored procedures by using the SqlParameterCollection class. Example:\n          using (SqlConnection connection = new SqlConnection(connectionString))&#123;  connection.Open();  SqlDataAdapter myDataAdapter = new SqlDataAdapter(         \"SELECT &#42; from users WHERE username = '&#64;uname' AND password = '&#64;pwd'\", connection);  myCommand.SelectCommand.Parameters.Add(\"&#64;uname\", SqlDbType.VarChar, 24);  myCommand.SelectCommand.Parameters.Add(\"&#64;pwd\", SqlDbType.VarChar, 16);  myCommand.SelectCommand.Parameters&#91;\"&#64;uname\"&#93;.Value = un.Text;  myCommand.SelectCommand.Parameters&#91;\"&#64;pwd\"&#93;.Value = pass.Text;  myDataAdapter.Fill(userDataset);  ...  connection.Close();&#125;",
       "To learn more about SQL injection, see: SQL Injection in Wikipedia.",
       "To learn more about countering SQL injection in ASP.NET, visit: How To: Protect From SQL Injection in ASP.NET.",
       "To learn more about countering injection-based attacks in ASP.NET, see: How To: Protect From Injection Attacks in ASP.NET.",
@@ -1475,11 +1480,11 @@
     "pre": [
       "\"select user from myappUsers where user = ? and pass = ?;\"",
       "SqlCommand myCommand = new SqlCommand(\"sp_SelectUser\", myConnection);//Specify our command is a stored proceduremyCommand.CommandType = CommandType.StoredProcedure;",
-      "string SQLstr = \"SELECT * from users\t WHERE username = '\" + un.Text + \"'\t AND password = '\" + pass.Text + \"'\";SqlCommand myCommand = new SqlCommand(SQLstr, myConnection);",
-      "using (SqlConnection connection = new SqlConnection(connectionString)){  connection.Open();  SqlDataAdapter myDataAdapter = new SqlDataAdapter(         \"SELECT * from users WHERE username = '@uname' AND password = '@pwd'\", connection);  myCommand.SelectCommand.Parameters.Add(\"@uname\", SqlDbType.VarChar, 24);  myCommand.SelectCommand.Parameters.Add(\"@pwd\", SqlDbType.VarChar, 16);  myCommand.SelectCommand.Parameters[\"@uname\"].Value = un.Text;  myCommand.SelectCommand.Parameters[\"@pwd\"].Value = pass.Text;  myDataAdapter.Fill(userDataset);  ...  connection.Close();}",
-      "using (SqlConnection myConnection = new SqlConnection(connectionString)){  connection.Open();  string SQLstr = \"SELECT * from users WHERE username = '\" + un.Text + \"'\t AND password = '\" + pass.Text + \"'\";  SqlCommand myCommand = new SqlCommand(SQLstr, myConnection);  SqlDataAdapter myDataAdapter = new SqlDataAdapter(myCommand);  myCommand.Connection.Open();  SqlDataReader myReader = myCommand.ExecuteReader();  ...}",
+      "string SQLstr = \"SELECT &#42; from users&#9; WHERE username = '\" &#43; un.Text &#43; \"'&#9; AND password = '\" &#43; pass.Text &#43; \"'\";SqlCommand myCommand = new SqlCommand(SQLstr, myConnection);",
+      "using (SqlConnection connection = new SqlConnection(connectionString))&#123;  connection.Open();  SqlDataAdapter myDataAdapter = new SqlDataAdapter(         \"SELECT &#42; from users WHERE username = '&#64;uname' AND password = '&#64;pwd'\", connection);  myCommand.SelectCommand.Parameters.Add(\"&#64;uname\", SqlDbType.VarChar, 24);  myCommand.SelectCommand.Parameters.Add(\"&#64;pwd\", SqlDbType.VarChar, 16);  myCommand.SelectCommand.Parameters&#91;\"&#64;uname\"&#93;.Value = un.Text;  myCommand.SelectCommand.Parameters&#91;\"&#64;pwd\"&#93;.Value = pass.Text;  myDataAdapter.Fill(userDataset);  ...  connection.Close();&#125;",
+      "using (SqlConnection myConnection = new SqlConnection(connectionString))&#123;  connection.Open();  string SQLstr = \"SELECT &#42; from users WHERE username = '\" &#43; un.Text &#43; \"'&#9; AND password = '\" &#43; pass.Text &#43; \"'\";  SqlCommand myCommand = new SqlCommand(SQLstr, myConnection);  SqlDataAdapter myDataAdapter = new SqlDataAdapter(myCommand);  myCommand.Connection.Open();  SqlDataReader myReader = myCommand.ExecuteReader();  ...&#125;",
       "mjones' AND 1=1; --",
-      "SELECT * from users WHERE username = 'mjones' AND 1=1; --'  AND password = '1234';"
+      "SELECT &#42; from users WHERE username = 'mjones' AND 1=1; --'  AND password = '1234';"
     ],
     "br": [
       "",
@@ -1540,5 +1545,5 @@
       "text": "Guideline: Use Type Safe SQL Parameters When Constructing SQL Queries"
     }
   ],
-  "html": "<h1>What to Check For</h1>\r\n  <p>Ensure that type-safe parameters are used when constructing dynamic SQL queries or when passing parameters to stored procedures.</p>\r\n  <h1>Why</h1>\r\n  <p>If you use the Parameters collection, SQL treats the input is as a literal value rather then as executable code. The Parameters collection can be used to enforce type and length constraints on input data. Values outside of the range trigger an exception.</p>\r\n  <p>If type-safe SQL parameters are not used, attackers might be able to execute injection attacks that are embedded in the unfiltered input.</p>\r\n  <h1>How to Check</h1>\r\n  <p>To check if parameterized queries are used:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Identify all database transactions. </strong>Locate all SQL queries throughout your application. Example:</p>\r\n      <pre>\"select user from myappUsers where user = ? and pass = ?;\"</pre>\r\n      <li>\r\n        <p>\r\n          <strong>Verify that each transaction uses Stored Procedures where possible. </strong>Verify that your application interacts with the backend database through the use of Stored Procedures. Ensure that SQL queries look like:</p>\r\n        <pre>SqlCommand myCommand = new SqlCommand(\"sp_SelectUser\", myConnection);<br />//Specify our command is a stored procedure<br />myCommand.CommandType = CommandType.StoredProcedure; </pre>\r\n        <p>and not like:</p>\r\n        <pre>string SQLstr = \"SELECT &#42; from users<br />&#9; WHERE username = '\" &#43; un.Text &#43; \"'<br />&#9; AND password = '\" &#43; pass.Text &#43; \"'\";<br />SqlCommand myCommand = new SqlCommand(SQLstr, myConnection);</pre>\r\n        <li>\r\n          <p>\r\n            <strong>Verify that type-safe parameters are used. </strong>Verify that type-safe parameters are used in the dynamic SQL queries or stored procedures by using the SqlParameterCollection class. Example:</p>\r\n          <pre>using (SqlConnection connection = new SqlConnection(connectionString))<br />&#123;<br />  connection.Open();<br />  SqlDataAdapter myDataAdapter = new SqlDataAdapter(<br />         \"SELECT &#42; from users WHERE username = '&#64;uname' AND password = '&#64;pwd'\", connection);<br />  myCommand.SelectCommand.Parameters.Add(\"&#64;uname\", SqlDbType.VarChar, 24);<br />  myCommand.SelectCommand.Parameters.Add(\"&#64;pwd\", SqlDbType.VarChar, 16);<br />  myCommand.SelectCommand.Parameters&#91;\"&#64;uname\"&#93;.Value = un.Text;<br />  myCommand.SelectCommand.Parameters&#91;\"&#64;pwd\"&#93;.Value = pass.Text;<br />  myDataAdapter.Fill(userDataset);  ...  connection.Close();<br />&#125;</pre>\r\n        </li>\r\n      </li>\r\n    </li>\r\n  </ol>\r\n  <h1>Problem Example</h1>\r\n  <p>Consider an ASP.NET application that handles employee payroll functionality for a small company. One of the pages requires retrieving an employee record from a table based on a username and password supplied via a login dialog. The developer of the application created an SQL SELECT query to accomplish said task:</p>\r\n  <pre>using (SqlConnection myConnection = new SqlConnection(connectionString))<br />&#123;<br />  connection.Open();<br />  string SQLstr = \"SELECT &#42; from users WHERE username = '\" &#43; un.Text &#43; \"'<br />&#9; AND password = '\" &#43; pass.Text &#43; \"'\";<br />  SqlCommand myCommand = new SqlCommand(SQLstr, myConnection);<br />  SqlDataAdapter myDataAdapter = new SqlDataAdapter(myCommand);<br />  myCommand.Connection.Open();<br />  SqlDataReader myReader = myCommand.ExecuteReader();<br />  ...<br />&#125;</pre>\r\n  <p>In the preceding example, the SELECT statement will work as expected, assuming that the input is perfectly constrained. However, what happens if a user enters unexpected input such as '1234' for a password, and this for a username:</p>\r\n  <pre>mjones' AND 1=1; -- </pre>\r\n  <p>This will result in the SQL statement being executed at the database level:</p>\r\n  <pre>SELECT &#42; from users WHERE username = 'mjones' AND 1=1; --'  AND password = '1234';</pre>\r\n  <p>This will allow the person entering data into the dialog box to select the account details of mjones without the correct password.</p>\r\n  <h1>Additional Resources</h1>\r\n  <ul>\r\n    <li>To learn more about SQL injection, see: <a href=\"http://en.wikipedia.org/wiki/SQL_injection\">SQL Injection</a> in Wikipedia. <li>To learn more about countering SQL injection in ASP.NET, visit: <a href=\"http://msdn2.microsoft.com/en-us/library/ms998271.aspx\">How To: Protect From SQL Injection in ASP.NET</a>. <li>To learn more about countering injection-based attacks in ASP.NET, see: <a href=\"http://msdn2.microsoft.com/en-us/library/bb355989.aspx\">How To: Protect From Injection Attacks in ASP.NET</a>.</li></li></li>\r\n  </ul>\r\n  <h1>Related Guideline</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/4be4ed09-ed2f-4f05-9e63-e20708807542\">Guideline: Use Type Safe SQL Parameters When Constructing SQL Queries</a>\r\n    </li>\r\n  </ul>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance. </p>"
+  "html": "<h1>What to Check For</h1>\n  <p>Ensure that type-safe parameters are used when constructing dynamic SQL queries or when passing parameters to stored procedures.</p>\n  <h1>Why</h1>\n  <p>If you use the Parameters collection, SQL treats the input is as a literal value rather then as executable code. The Parameters collection can be used to enforce type and length constraints on input data. Values outside of the range trigger an exception.</p>\n  <p>If type-safe SQL parameters are not used, attackers might be able to execute injection attacks that are embedded in the unfiltered input.</p>\n  <h1>How to Check</h1>\n  <p>To check if parameterized queries are used:</p>\n  <ol>\n    <li>\n      <p>\n        <strong>Identify all database transactions. </strong>Locate all SQL queries throughout your application. Example:</p>\n      <pre>\"select user from myappUsers where user = ? and pass = ?;\"</pre>\n      <li>\n        <p>\n          <strong>Verify that each transaction uses Stored Procedures where possible. </strong>Verify that your application interacts with the backend database through the use of Stored Procedures. Ensure that SQL queries look like:</p>\n        <pre>SqlCommand myCommand = new SqlCommand(\"sp_SelectUser\", myConnection);<br />//Specify our command is a stored procedure<br />myCommand.CommandType = CommandType.StoredProcedure; </pre>\n        <p>and not like:</p>\n        <pre>string SQLstr = \"SELECT &amp;#42; from users<br />&amp;#9; WHERE username = '\" &amp;#43; un.Text &amp;#43; \"'<br />&amp;#9; AND password = '\" &amp;#43; pass.Text &amp;#43; \"'\";<br />SqlCommand myCommand = new SqlCommand(SQLstr, myConnection);</pre>\n        <li>\n          <p>\n            <strong>Verify that type-safe parameters are used. </strong>Verify that type-safe parameters are used in the dynamic SQL queries or stored procedures by using the SqlParameterCollection class. Example:</p>\n          <pre>using (SqlConnection connection = new SqlConnection(connectionString))<br />&amp;#123;<br />  connection.Open();<br />  SqlDataAdapter myDataAdapter = new SqlDataAdapter(<br />         \"SELECT &amp;#42; from users WHERE username = '&amp;#64;uname' AND password = '&amp;#64;pwd'\", connection);<br />  myCommand.SelectCommand.Parameters.Add(\"&amp;#64;uname\", SqlDbType.VarChar, 24);<br />  myCommand.SelectCommand.Parameters.Add(\"&amp;#64;pwd\", SqlDbType.VarChar, 16);<br />  myCommand.SelectCommand.Parameters&amp;#91;\"&amp;#64;uname\"&amp;#93;.Value = un.Text;<br />  myCommand.SelectCommand.Parameters&amp;#91;\"&amp;#64;pwd\"&amp;#93;.Value = pass.Text;<br />  myDataAdapter.Fill(userDataset);  ...  connection.Close();<br />&amp;#125;</pre>\n        </li>\n      </li>\n    </li>\n  </ol>\n  <h1>Problem Example</h1>\n  <p>Consider an ASP.NET application that handles employee payroll functionality for a small company. One of the pages requires retrieving an employee record from a table based on a username and password supplied via a login dialog. The developer of the application created an SQL SELECT query to accomplish said task:</p>\n  <pre>using (SqlConnection myConnection = new SqlConnection(connectionString))<br />&amp;#123;<br />  connection.Open();<br />  string SQLstr = \"SELECT &amp;#42; from users WHERE username = '\" &amp;#43; un.Text &amp;#43; \"'<br />&amp;#9; AND password = '\" &amp;#43; pass.Text &amp;#43; \"'\";<br />  SqlCommand myCommand = new SqlCommand(SQLstr, myConnection);<br />  SqlDataAdapter myDataAdapter = new SqlDataAdapter(myCommand);<br />  myCommand.Connection.Open();<br />  SqlDataReader myReader = myCommand.ExecuteReader();<br />  ...<br />&amp;#125;</pre>\n  <p>In the preceding example, the SELECT statement will work as expected, assuming that the input is perfectly constrained. However, what happens if a user enters unexpected input such as '1234' for a password, and this for a username:</p>\n  <pre>mjones' AND 1=1; -- </pre>\n  <p>This will result in the SQL statement being executed at the database level:</p>\n  <pre>SELECT &amp;#42; from users WHERE username = 'mjones' AND 1=1; --'  AND password = '1234';</pre>\n  <p>This will allow the person entering data into the dialog box to select the account details of mjones without the correct password.</p>\n  <h1>Additional Resources</h1>\n  <ul>\n    <li>To learn more about SQL injection, see: <a href=\"http://en.wikipedia.org/wiki/SQL_injection\">SQL Injection</a> in Wikipedia. <li>To learn more about countering SQL injection in ASP.NET, visit: <a href=\"http://msdn2.microsoft.com/en-us/library/ms998271.aspx\">How To: Protect From SQL Injection in ASP.NET</a>. <li>To learn more about countering injection-based attacks in ASP.NET, see: <a href=\"http://msdn2.microsoft.com/en-us/library/bb355989.aspx\">How To: Protect From Injection Attacks in ASP.NET</a>.</li></li></li>\n  </ul>\n  <h1>Related Guideline</h1>\n  <ul>\n    <li>\n      <a href=\"/article/4be4ed09-ed2f-4f05-9e63-e20708807542\">Guideline: Use Type Safe SQL Parameters When Constructing SQL Queries</a>\n    </li>\n  </ul>\n  <hr />\n  <p>Adapted from Microsoft patterns &amp; practices guidance. </p>"
 }

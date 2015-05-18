@@ -1,6 +1,6 @@
 {
   "id": "75f50e36-48d2-4fc9-89ab-fd2643184ae6",
-  "checksum": "7f362e98846ef707f58f06aef57493d91d0385f1",
+  "checksum": "475b4db6790a0b512f918afaef840a3d910c03af",
   "words": {
     "description": [
       "h1"
@@ -98,6 +98,9 @@
     "guidance": [
       "p"
     ],
+    "sink]": [
+      "title"
+    ],
     "how": [
       "title"
     ]
@@ -118,5 +121,5 @@
     ]
   },
   "links": [],
-  "html": "<h1>Description</h1>\r\n  <p>To protect database connection strings, store them inside the <b>connectionStrings</b> section in your configuration file and then use protected configuration to encrypt this section.</p>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
+  "html": "<h1>Description</h1>\n  <p>To protect database connection strings, store them inside the <b>connectionStrings</b> section in your configuration file and then use protected configuration to encrypt this section.</p>\n  <hr />\n  <p>Adapted from Microsoft patterns &amp; practices guidance.</p>"
 }

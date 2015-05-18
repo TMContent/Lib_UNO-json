@@ -1,6 +1,6 @@
 {
   "id": "5556fc17-3f60-4fc0-8717-0a2ff1c12701",
-  "checksum": "ceb1b49f902ac9aca2d9b664816269bb3bf8f4a8",
+  "checksum": "503f05b261285be082301adca18420146b311e37",
   "words": {
     "1": [
       "ul",
@@ -1178,7 +1178,7 @@
       "pre",
       "pre"
     ],
-    "1=1—\rpassword:": [
+    "1=1—password:": [
       "pre"
     ],
     "abc": [
@@ -1212,7 +1212,7 @@
     "violation": [
       "pre"
     ],
-    "server\r\n\"you": [
+    "server\n\"you": [
       "pre"
     ],
     "have": [
@@ -1224,7 +1224,7 @@
     "your": [
       "pre"
     ],
-    "syntax\r\ncheck": [
+    "syntax\ncheck": [
       "pre"
     ],
     "manual": [
@@ -1233,7 +1233,7 @@
     "corresponds": [
       "pre"
     ],
-    "to\ryour": [
+    "toyour": [
       "pre"
     ],
     "mysql": [
@@ -1249,7 +1249,7 @@
       "pre",
       "p"
     ],
-    "right\rsyntax": [
+    "rightsyntax": [
       "pre"
     ],
     "use": [
@@ -1498,7 +1498,7 @@
       "p",
       "p"
     ],
-    "javalang.nullpointerexception\r\ncom.example.servlet.getprofile.isvalidaccount(getprofile.java:30)\r\ncom.example.servlet.getprofile.decodebase64(getprofile.java:1232)\r\ncom.example.servlet.getprofile.doget(getprofile.java:797)\r\njavax.servlet.http.httpservlet.service(httpservlet.java:690)\r\njavax.servlet.http.httpservlet.service(httpservlet.java:803)": [
+    "javalang.nullpointerexception\ncom.example.servlet.getprofile.isvalidaccount(getprofile.java:30)\ncom.example.servlet.getprofile.decodebase64(getprofile.java:1232)\ncom.example.servlet.getprofile.doget(getprofile.java:797)\njavax.servlet.http.httpservlet.service(httpservlet.java:690)\njavax.servlet.http.httpservlet.service(httpservlet.java:803)": [
       "pre"
     ],
     "addition": [
@@ -1639,7 +1639,7 @@
       "p",
       "p"
     ],
-    "try\r{\r\nclass.forname(\"com.mysql.jdbc.driver\");\r\nstring": [
+    "try{\nclass.forname(\"com.mysql.jdbc.driver\");\nstring": [
       "pre"
     ],
     "connectionurl": [
@@ -1656,22 +1656,22 @@
     "+": [
       "pre"
     ],
-    "\"user=root&password=pass\"\r\nconnection": [
+    "\"user=root&password=pass\"\nconnection": [
       "pre"
     ],
     "conn": [
       "pre"
     ],
-    "drivermanagergetconnection(connectionurl);\r\nstatement": [
+    "drivermanagergetconnection(connectionurl);\nstatement": [
       "pre"
     ],
-    "conncreatestatement();\r\n}\r\ncatch": [
+    "conncreatestatement();\n}\ncatch": [
       "pre"
     ],
     "e": [
       "pre"
     ],
-    "{\rout.println(e.tostring());\r\n}": [
+    "{out.println(e.tostring());\n}": [
       "pre"
     ],
     "note": [
@@ -1976,16 +1976,16 @@
     "iserrorpage=\"true\"": [
       "pre"
     ],
-    "%\r\n<html>\r\n<head>\r\n<title>application": [
+    "%\n<html>\n<head>\n<title>application": [
       "pre"
     ],
-    "error/title>\r\n</head>": [
+    "error/title>\n</head>": [
       "pre"
     ],
-    "body>\r\n<h2>application": [
+    "body>\n<h2>application": [
       "pre"
     ],
-    "error/h2>\r\n</body>\r\n</html>": [
+    "error/h2>\n</body>\n</html>": [
       "pre"
     ],
     "now": [
@@ -2383,7 +2383,7 @@
     "urls": [
       "p"
     ],
-    "http//www.example.com/getprofile?id=a'+or+1%3d1%23&username=testuser\r\nhttp://www.example.com/getprofile?id=a'%20or%021=1#&username=testuser": [
+    "http//www.example.com/getprofile?id=a'+or+1%3d1%23&username=testuser\nhttp://www.example.com/getprofile?id=a'%20or%021=1#&username=testuser": [
       "pre"
     ],
     "escape": [
@@ -2603,7 +2603,7 @@
     ],
     "ul": [
       "Java Platform, Enterprise Edition (J2EE)",
-      "Step 1: Understand attack scenarios \r\n    Step 2: Analyze causes and countermeasures \r\n    Step 3: Start testing and exploring \r\n    Step 4: Execute additional testing"
+      "Step 1: Understand attack scenarios \n    Step 2: Analyze causes and countermeasures \n    Step 3: Start testing and exploring \n    Step 4: Execute additional testing"
     ],
     "li": [
       "Java Platform, Enterprise Edition (J2EE)",
@@ -2652,7 +2652,7 @@
       ""
     ],
     "ol": [
-      "Executing higher risk attacks \r\n    Disclosing source code \r\n    Discovering application inner workings"
+      "Executing higher risk attacks \n    Disclosing source code \n    Discovering application inner workings"
     ],
     "h2": [
       "Scenario 1: Executing higher risk attacks",
@@ -2701,24 +2701,24 @@
       "fuzzers"
     ],
     "pre": [
-      "Username: a' OR 1=1—\r\nPassword: abc",
-      "java.sql.SQLException: Syntax error or access violation message from server:\r\n\"You have an error in your SQL syntax;\r\ncheck the manual that corresponds to\r\nyour MySQL server version for the right\r\nsyntax to use near 'abc' at line 1\"",
+      "Username: a' OR 1=1—\nPassword: abc",
+      "java.sql.SQLException: Syntax error or access violation message from server:\n\"You have an error in your SQL syntax;\ncheck the manual that corresponds to\nyour MySQL server version for the right\nsyntax to use near 'abc' at line 1\"",
       "a' OR 1=1#",
-      "java.lang.NullPointerException\r\ncom.example.servlet.getProfile.isValidAccount(getProfile.java:30)\r\ncom.example.servlet.getProfile.decodeBase64(getProfile.java:1232)\r\ncom.example.servlet.getProfile.doGet(getProfile.java:797)\r\njavax.servlet.http.HttpServlet.service(HttpServlet.java:690)\r\njavax.servlet.http.HttpServlet.service(HttpServlet.java:803)",
-      "try\r\n{\r\nClass.forName(\"com.mysql.jdbc.Driver\");\r\nString connectionUrl = \"jdbc:mysql://localhost:3306/example?\" + \"user=root&password=pass\";\r\nConnection conn = DriverManager.getConnection(connectionUrl);\r\nStatement statement = conn.createStatement();\r\n}\r\ncatch (Exception e) \r\n{\r\nout.println(e.toString());\r\n}",
+      "java.lang.NullPointerException\ncom.example.servlet.getProfile.isValidAccount(getProfile.java:30)\ncom.example.servlet.getProfile.decodeBase64(getProfile.java:1232)\ncom.example.servlet.getProfile.doGet(getProfile.java:797)\njavax.servlet.http.HttpServlet.service(HttpServlet.java:690)\njavax.servlet.http.HttpServlet.service(HttpServlet.java:803)",
+      "try\n{\nClass.forName(\"com.mysql.jdbc.Driver\");\nString connectionUrl = \"jdbc:mysql://localhost:3306/example?\" + \"user=root&password=pass\";\nConnection conn = DriverManager.getConnection(connectionUrl);\nStatement statement = conn.createStatement();\n}\ncatch (Exception e) \n{\nout.println(e.toString());\n}",
       "<%@ page errorPage=\"errorPage.jsp\" %>",
-      "<%@ page isErrorPage=\"true\" %>\r\n<html>\r\n<head>\r\n<title>Application Error</title>\r\n</head> <body>\r\n<h2>Application Error</h2>\r\n</body>\r\n</html>",
+      "<%@ page isErrorPage=\"true\" %>\n<html>\n<head>\n<title>Application Error</title>\n</head> <body>\n<h2>Application Error</h2>\n</body>\n</html>",
       "http://www.example.com/getProfile?id=112&username=testuser",
       "http://www.example.com/getProfile?id=abc&username=testuser",
-      "http://www.example.com/getProfile?id=a'+OR+1%3D1%23&username=testuser\r\nhttp://www.example.com/getProfile?id=a'%20OR%021=1#&username=testuser"
+      "http://www.example.com/getProfile?id=a'+OR+1%3D1%23&username=testuser\nhttp://www.example.com/getProfile?id=a'%20OR%021=1#&username=testuser"
     ],
     "br": [
       "",
       ""
     ],
     "div": [
-      "[i]  OWASP Testing Guide Appendix C: Fuzz Vectors.  OWASP.  http://www.owasp.org/index.php/OWASP_Testing_Guide_Appendix_C:_Fuzz_Vectors \r\n        [ii]    Fuzzing with WebScarab. OWASP.   http://www.owasp.org/index.php/Fuzzing_with_WebScarab",
-      "[i]  OWASP Testing Guide Appendix C: Fuzz Vectors.  OWASP.  http://www.owasp.org/index.php/OWASP_Testing_Guide_Appendix_C:_Fuzz_Vectors \r\n        [ii]    Fuzzing with WebScarab. OWASP.   http://www.owasp.org/index.php/Fuzzing_with_WebScarab"
+      "[i]  OWASP Testing Guide Appendix C: Fuzz Vectors.  OWASP.  http://www.owasp.org/index.php/OWASP_Testing_Guide_Appendix_C:_Fuzz_Vectors \n        [ii]    Fuzzing with WebScarab. OWASP.   http://www.owasp.org/index.php/Fuzzing_with_WebScarab",
+      "[i]  OWASP Testing Guide Appendix C: Fuzz Vectors.  OWASP.  http://www.owasp.org/index.php/OWASP_Testing_Guide_Appendix_C:_Fuzz_Vectors \n        [ii]    Fuzzing with WebScarab. OWASP.   http://www.owasp.org/index.php/Fuzzing_with_WebScarab"
     ],
     "hr": [
       ""
@@ -2739,7 +2739,7 @@
       "title": "",
       "href": "about:blank#_ednref1",
       "name": "_edn1",
-      "text": "\r\n          \r\n          \r\n        "
+      "text": "\n          \n          \n        "
     },
     {
       "href": "http://www.owasp.org/index.php/OWASP_Testing_Guide_Appendix_C:_Fuzz_Vectors",
@@ -2750,5 +2750,5 @@
       "text": " http://www.owasp.org/index.php/Fuzzing_with_WebScarab "
     }
   ],
-  "html": "<h1>\r\n     Applies to  \r\n  </h1>\r\n  <ul>\r\n    <li>Java Platform, Enterprise Edition (J2EE)</li>\r\n  </ul>\r\n  <h1>\r\n     Summary \r\n  </h1>\r\n  <p>The information in error messages is valuable to software developers because it helps them understand what causes the application to fail and how to remedy the error. However, this information can be abused if it falls in the wrong hands. Attackers often leverage information from exceptions or error information to execute successful attacks. </p>\r\n  <p>Follow these steps to test for exception information disclosure bugs:</p>\r\n  <ul>\r\n    <li>Step 1: Understand attack scenarios </li>\r\n    <li>Step 2: Analyze causes and countermeasures </li>\r\n    <li>Step 3: Start testing and exploring </li>\r\n    <li>Step 4: Execute additional testing</li>\r\n  </ul>\r\n  <h1>\r\n     Step 1: Understand Attack Scenarios \r\n  </h1>\r\n  <p>In the first step, we will review three common Java exception information disclosure attack scenarios:</p>\r\n  <ol>\r\n    <li>Executing higher risk attacks </li>\r\n    <li>Disclosing source code </li>\r\n    <li>Discovering application inner workings </li>\r\n  </ol>\r\n  <h2>\r\n    <em>Scenario 1: Executing higher risk attacks </em>\r\n  </h2>\r\n  <p>A common exception information disclosure scenario enables attackers to execute higher risk attacks, such as SQL injection, that would otherwise be impossible. For instance, to successfully<b><i></i></b>execute SQL injection attacks that involve querying or modifying the target database, the attacker needs to discover information about the database structure, such as table and column names. To do this, the attacker can try sending malformed input to cause the application to fail. If the exception information then reveals information about the database, he can build the appropriate attack strings.</p>\r\n  <p>For instance, a Java Web application uses a Web form with two input textboxes to login. An attacker can start testing for SQL injection by submitting the following values in the Web form:</p>\r\n  <pre>Username: a' OR 1=1—\r\nPassword: abc</pre>\r\n  <p>Consider if the application returns the following error message:</p>\r\n  <pre>java.sql.SQLException: Syntax error or access violation message from server:\r\n\"You have an error in your SQL syntax;\r\ncheck the manual that corresponds to\r\nyour MySQL server version for the right\r\nsyntax to use near 'abc' at line 1\"</pre>\r\n  <p>The SQL exception automatically tells the attacker that the back-end storage consists of a MySQL database. It is also a clear indicator that SQL injection is possible because it shows that the dangerous string that was submitted has altered the syntax of a SQL statement and caused the query to fail. With this acquired knowledge, the attacker modifies the attack string with the appropriate comments character:</p>\r\n  <pre>a' OR 1=1#</pre>\r\n  <p>Moreover, knowing that the target database is MySQL helps the attacker build a more dangerous injection involving meta-tables, such as querying over the <i>users </i>table.</p>\r\n  <p>A generic error message such as “Login failed” could have discouraged the attacker. </p>\r\n  <h2>\r\n    <em>Scenario 2: Disclosing Source Code </em>\r\n  </h2>\r\n  <p>An attacker can leverage exception information disclosure in an attempt to steal the application’s source code.  Stack traces often reveal more than they should, and must never be shown to end users. For instance, this Java stack trace reveals the source code file names:</p>\r\n  <pre>java.lang.NullPointerException\r\ncom.example.servlet.getProfile.isValidAccount(getProfile.java:30)\r\ncom.example.servlet.getProfile.decodeBase64(getProfile.java:1232)\r\ncom.example.servlet.getProfile.doGet(getProfile.java:797)\r\njavax.servlet.http.HttpServlet.service(HttpServlet.java:690)\r\njavax.servlet.http.HttpServlet.service(HttpServlet.java:803)</pre>\r\n  <p>In addition, the stack reveals function names such as <i>decodeBase64</i>. An attacker can use this information to determine that the input string is base-64 encoded and modify the attack data accordingly.</p>\r\n  <h2>\r\n    <em>Scenario 3: Discovering an Application’s Inner Workings</em>\r\n  </h2>\r\n  <p>In the final scenario, an attacker can discover how the application works by interpreting the meaning of different error messages. For instance, an application responds to a file query with a “file not found” message for some file queries but with “access denied” for others. With this information, the attacker discovers the presence of some protected files and can start inferring how the application works. </p>\r\n  <h1>\r\n     Step 2: Analyze Causes and Countermeasures \r\n  </h1>\r\n  <p>The goal of testing for Java exception information disclosure is to determine what causes the vulnerability and how to defend against it. </p>\r\n  <h2>\r\n    <em>1. Causes</em>\r\n  </h2>\r\n  <p>Exception information disclosure is caused by improper handling of error information. For instance, consider the following code:</p>\r\n  <pre>try\r\n{\r\nClass.forName(\"com.mysql.jdbc.Driver\");\r\nString connectionUrl = \"jdbc:mysql://localhost:3306/example?\" + \"user=root&password=pass\";\r\nConnection conn = DriverManager.getConnection(connectionUrl);\r\nStatement statement = conn.createStatement();\r\n}\r\ncatch (Exception e) \r\n{\r\nout.println(e.toString());\r\n}</pre>\r\n  <p>Note that the above example is given as a proof-of-concept to show that the <em>try/catch</em> block stops the application from crashing. However, <em>try/catch</em> blocks are not good programming practice for exception handling.       </p>\r\n  <p>The <em>try/catch</em> block above catches any SQL exceptions that occur when connecting to a MySQL back end. The code automatically prints exception information when an exception is triggered. Although this is a common coding practice during application development -- because exception information is vital for the debugging process -- failing to remove this functionality from the final shipped version of the application results in exception information disclosure bugs.</p>\r\n  <h2>\r\n    <em>2. Countermeasures</em>\r\n  </h2>\r\n  <p>To protect against this vulnerability, application developers must not display verbose error messages in production versions.   The application must replace error messages such as failed SQL statements, stack traces, or other debug information with a simple generic message such as “Application Error,” and provide this message to end users for all exceptions. This must be done as a dedicated code review on any code that might be vulnerable, and established as a coding practice for future development. </p>\r\n  <p>For sites developed using    JSP, the application developer can use the <em>errorPage</em> attribute of a <i>page</i> directive to indicate a custom error page:</p>\r\n  <pre>&lt;%@ page errorPage=\"errorPage.jsp\" %&gt;</pre>\r\n  <p>Where errorPage.jsp is the custom error page that needs the <em>isErrorPage</em> attribute set to <em>true</em>. Below is an example of a secure custom error page that will prevent exception information from leaking to external users:</p>\r\n  <pre>&lt;%@ page isErrorPage=\"true\" %&gt;\r\n&lt;html&gt;\r\n&lt;head&gt;\r\n&lt;title&gt;Application Error&lt;/title&gt;\r\n&lt;/head&gt;<br /> &lt;body&gt;\r\n&lt;h2&gt;Application Error&lt;/h2&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;</pre>\r\n  <h1>\r\n     Step 3: Start Testing and Exploring \r\n  </h1>\r\n  <p>Now that you understand the attack scenarios, what causes them, and how to protect against exception information disclosure, you must continue by submitting different test cases in order to discover and correct this vulnerability.</p>\r\n  <h2>\r\n    <em>Submit malicious input</em>\r\n  </h2>\r\n  <p>The primary goal when testing for information disclosure bugs is to make the application fail in unexpected ways. Start by submitting unexpected input consisting of malicious attack strings such as OWASP Fuzz Vectors [i], FuzzDB attack strings, strings containing special characters, and exceedingly long strings.</p>\r\n  <h2>\r\n    <em>Change data types</em>\r\n  </h2>\r\n  <p>Applications may also fail due to incorrect handling of types. For instance, an application uses the <em>id</em> parameter of the URL below to identify a user and get the user’s profile:</p>\r\n  <pre>http://www.example.com/getProfile?id=112&username=testuser</pre>\r\n  <p>Changing the type of the <em>id</em> to a string might generate and invalid type exception:</p>\r\n  <pre>http://www.example.com/getProfile?id=abc&username=testuser</pre>\r\n  <h2>\r\n    <em>Remove parameters</em>\r\n  </h2>\r\n  <p>\r\n     Along the same lines as changing data types, you must continue by deleting the parameters passed back and forth by the application. This includes parameters passed from hidden input tags in POST Web forms; this will require the use of proxy such as Burp Proxy or WebScarab in order to modify or delete the parameters.  \r\n  </p>\r\n  <p>Finally, make sure to remove all parameters and directly invoke pages and servlet routines in the application because this may also cause the application to fail.</p>\r\n  <h2>\r\n    <em>Observe how the application responds</em>\r\n  </h2>\r\n  <p>It is extremely important that you pay close attention to how the application reacts to the given input as you execute the test cases above. Sometimes the application won’t give explicit exception information but may provide error messages with subtle differences. In order to infer how the error messaging scheme works and thus attack the application, you must be able to catch any subtle differences among error messages.</p>\r\n  <h1> Step 4: Execute Additional Testing </h1>\r\n  <p>Now that you’ve executed the first round of test cases, you need to tune test case data and automate the process.</p>\r\n  <h2>\r\n    <em>Use different encodings</em>\r\n  </h2>\r\n  <p>Java Web applications might choose to use different encoding methods, depending on the underlying platform. For instance, both of these URLs have the same meaning:</p>\r\n  <pre>http://www.example.com/getProfile?id=a'+OR+1%3D1%23&username=testuser\r\nhttp://www.example.com/getProfile?id=a'%20OR%021=1#&username=testuser</pre>\r\n  <p>Escape and special characters can have different interpretations. It is important that you try different encodings to cause the application to fail.</p>\r\n  <h2>\r\n    <em>Automate Test Cases</em>\r\n  </h2>\r\n  <p>Finally, submitting numerous test cases by hand is tedious, so you should automate the test case submission and verification process. There are many automated malicious string testing tools (<i>fuzzers</i>) online to help you in this process, including OWASP’s WebScarab  [ii] . Learn to use at least one fuzzing tool, which will help you to execute more test cases in less time.</p>\r\n  <h1> Conclusions </h1>\r\n  <p>Addressing exception information disclosure bugs is necessary during the security testing phase of application development and must also become an application development policy for all security conscious teams.  This paper presented three of the most common attack scenarios to help you understand the impact of this vulnerability in Java Web applications, as well as what causes this bug and methods of protecting against it. The testing sections describe the multiple test methodologies required to properly hunt down information disclosure bugs. Be alert during testing the application with different input strings to catch any subtle error messagem differences that may reveal more than they should.</p>\r\n  <div>\r\n    <br />\r\n    <hr />\r\n    <div>\r\n      <p>\r\n        <a style=\"mso-endnote-id: edn1\" title=\"\" href=\"about:blank#_ednref1\" name=\"_edn1\">\r\n          <b>\r\n          </b>\r\n        </a>  [i]  <strong>OWASP Testing Guide Appendix C: Fuzz Vectors.  </strong>OWASP. <strong></strong><a href=\"http://www.owasp.org/index.php/OWASP_Testing_Guide_Appendix_C:_Fuzz_Vectors\"> http://www.owasp.org/index.php/OWASP_Testing_Guide_Appendix_C:_Fuzz_Vectors </a></p>\r\n      <p />  [ii]    <b>Fuzzing with WebScarab</b>. OWASP.  <a href=\"http://www.owasp.org/index.php/Fuzzing_with_WebScarab\"> http://www.owasp.org/index.php/Fuzzing_with_WebScarab </a></div>\r\n  </div>\r\n  <p />"
+  "html": "<h1>\n     Applies to  \n  </h1>\n  <ul>\n    <li>Java Platform, Enterprise Edition (J2EE)</li>\n  </ul>\n  <h1>\n     Summary \n  </h1>\n  <p>The information in error messages is valuable to software developers because it helps them understand what causes the application to fail and how to remedy the error. However, this information can be abused if it falls in the wrong hands. Attackers often leverage information from exceptions or error information to execute successful attacks. </p>\n  <p>Follow these steps to test for exception information disclosure bugs:</p>\n  <ul>\n    <li>Step 1: Understand attack scenarios </li>\n    <li>Step 2: Analyze causes and countermeasures </li>\n    <li>Step 3: Start testing and exploring </li>\n    <li>Step 4: Execute additional testing</li>\n  </ul>\n  <h1>\n     Step 1: Understand Attack Scenarios \n  </h1>\n  <p>In the first step, we will review three common Java exception information disclosure attack scenarios:</p>\n  <ol>\n    <li>Executing higher risk attacks </li>\n    <li>Disclosing source code </li>\n    <li>Discovering application inner workings </li>\n  </ol>\n  <h2>\n    <em>Scenario 1: Executing higher risk attacks </em>\n  </h2>\n  <p>A common exception information disclosure scenario enables attackers to execute higher risk attacks, such as SQL injection, that would otherwise be impossible. For instance, to successfully<b><i></i></b>execute SQL injection attacks that involve querying or modifying the target database, the attacker needs to discover information about the database structure, such as table and column names. To do this, the attacker can try sending malformed input to cause the application to fail. If the exception information then reveals information about the database, he can build the appropriate attack strings.</p>\n  <p>For instance, a Java Web application uses a Web form with two input textboxes to login. An attacker can start testing for SQL injection by submitting the following values in the Web form:</p>\n  <pre>Username: a' OR 1=1—\nPassword: abc</pre>\n  <p>Consider if the application returns the following error message:</p>\n  <pre>java.sql.SQLException: Syntax error or access violation message from server:\n\"You have an error in your SQL syntax;\ncheck the manual that corresponds to\nyour MySQL server version for the right\nsyntax to use near 'abc' at line 1\"</pre>\n  <p>The SQL exception automatically tells the attacker that the back-end storage consists of a MySQL database. It is also a clear indicator that SQL injection is possible because it shows that the dangerous string that was submitted has altered the syntax of a SQL statement and caused the query to fail. With this acquired knowledge, the attacker modifies the attack string with the appropriate comments character:</p>\n  <pre>a' OR 1=1#</pre>\n  <p>Moreover, knowing that the target database is MySQL helps the attacker build a more dangerous injection involving meta-tables, such as querying over the <i>users </i>table.</p>\n  <p>A generic error message such as “Login failed” could have discouraged the attacker. </p>\n  <h2>\n    <em>Scenario 2: Disclosing Source Code </em>\n  </h2>\n  <p>An attacker can leverage exception information disclosure in an attempt to steal the application’s source code.  Stack traces often reveal more than they should, and must never be shown to end users. For instance, this Java stack trace reveals the source code file names:</p>\n  <pre>java.lang.NullPointerException\ncom.example.servlet.getProfile.isValidAccount(getProfile.java:30)\ncom.example.servlet.getProfile.decodeBase64(getProfile.java:1232)\ncom.example.servlet.getProfile.doGet(getProfile.java:797)\njavax.servlet.http.HttpServlet.service(HttpServlet.java:690)\njavax.servlet.http.HttpServlet.service(HttpServlet.java:803)</pre>\n  <p>In addition, the stack reveals function names such as <i>decodeBase64</i>. An attacker can use this information to determine that the input string is base-64 encoded and modify the attack data accordingly.</p>\n  <h2>\n    <em>Scenario 3: Discovering an Application’s Inner Workings</em>\n  </h2>\n  <p>In the final scenario, an attacker can discover how the application works by interpreting the meaning of different error messages. For instance, an application responds to a file query with a “file not found” message for some file queries but with “access denied” for others. With this information, the attacker discovers the presence of some protected files and can start inferring how the application works. </p>\n  <h1>\n     Step 2: Analyze Causes and Countermeasures \n  </h1>\n  <p>The goal of testing for Java exception information disclosure is to determine what causes the vulnerability and how to defend against it. </p>\n  <h2>\n    <em>1. Causes</em>\n  </h2>\n  <p>Exception information disclosure is caused by improper handling of error information. For instance, consider the following code:</p>\n  <pre>try\n{\nClass.forName(\"com.mysql.jdbc.Driver\");\nString connectionUrl = \"jdbc:mysql://localhost:3306/example?\" + \"user=root&password=pass\";\nConnection conn = DriverManager.getConnection(connectionUrl);\nStatement statement = conn.createStatement();\n}\ncatch (Exception e) \n{\nout.println(e.toString());\n}</pre>\n  <p>Note that the above example is given as a proof-of-concept to show that the <em>try/catch</em> block stops the application from crashing. However, <em>try/catch</em> blocks are not good programming practice for exception handling.       </p>\n  <p>The <em>try/catch</em> block above catches any SQL exceptions that occur when connecting to a MySQL back end. The code automatically prints exception information when an exception is triggered. Although this is a common coding practice during application development -- because exception information is vital for the debugging process -- failing to remove this functionality from the final shipped version of the application results in exception information disclosure bugs.</p>\n  <h2>\n    <em>2. Countermeasures</em>\n  </h2>\n  <p>To protect against this vulnerability, application developers must not display verbose error messages in production versions.   The application must replace error messages such as failed SQL statements, stack traces, or other debug information with a simple generic message such as “Application Error,” and provide this message to end users for all exceptions. This must be done as a dedicated code review on any code that might be vulnerable, and established as a coding practice for future development. </p>\n  <p>For sites developed using    JSP, the application developer can use the <em>errorPage</em> attribute of a <i>page</i> directive to indicate a custom error page:</p>\n  <pre>&lt;%@ page errorPage=\"errorPage.jsp\" %&gt;</pre>\n  <p>Where errorPage.jsp is the custom error page that needs the <em>isErrorPage</em> attribute set to <em>true</em>. Below is an example of a secure custom error page that will prevent exception information from leaking to external users:</p>\n  <pre>&lt;%@ page isErrorPage=\"true\" %&gt;\n&lt;html&gt;\n&lt;head&gt;\n&lt;title&gt;Application Error&lt;/title&gt;\n&lt;/head&gt;<br /> &lt;body&gt;\n&lt;h2&gt;Application Error&lt;/h2&gt;\n&lt;/body&gt;\n&lt;/html&gt;</pre>\n  <h1>\n     Step 3: Start Testing and Exploring \n  </h1>\n  <p>Now that you understand the attack scenarios, what causes them, and how to protect against exception information disclosure, you must continue by submitting different test cases in order to discover and correct this vulnerability.</p>\n  <h2>\n    <em>Submit malicious input</em>\n  </h2>\n  <p>The primary goal when testing for information disclosure bugs is to make the application fail in unexpected ways. Start by submitting unexpected input consisting of malicious attack strings such as OWASP Fuzz Vectors [i], FuzzDB attack strings, strings containing special characters, and exceedingly long strings.</p>\n  <h2>\n    <em>Change data types</em>\n  </h2>\n  <p>Applications may also fail due to incorrect handling of types. For instance, an application uses the <em>id</em> parameter of the URL below to identify a user and get the user’s profile:</p>\n  <pre>http://www.example.com/getProfile?id=112&username=testuser</pre>\n  <p>Changing the type of the <em>id</em> to a string might generate and invalid type exception:</p>\n  <pre>http://www.example.com/getProfile?id=abc&username=testuser</pre>\n  <h2>\n    <em>Remove parameters</em>\n  </h2>\n  <p>\n     Along the same lines as changing data types, you must continue by deleting the parameters passed back and forth by the application. This includes parameters passed from hidden input tags in POST Web forms; this will require the use of proxy such as Burp Proxy or WebScarab in order to modify or delete the parameters.  \n  </p>\n  <p>Finally, make sure to remove all parameters and directly invoke pages and servlet routines in the application because this may also cause the application to fail.</p>\n  <h2>\n    <em>Observe how the application responds</em>\n  </h2>\n  <p>It is extremely important that you pay close attention to how the application reacts to the given input as you execute the test cases above. Sometimes the application won’t give explicit exception information but may provide error messages with subtle differences. In order to infer how the error messaging scheme works and thus attack the application, you must be able to catch any subtle differences among error messages.</p>\n  <h1> Step 4: Execute Additional Testing </h1>\n  <p>Now that you’ve executed the first round of test cases, you need to tune test case data and automate the process.</p>\n  <h2>\n    <em>Use different encodings</em>\n  </h2>\n  <p>Java Web applications might choose to use different encoding methods, depending on the underlying platform. For instance, both of these URLs have the same meaning:</p>\n  <pre>http://www.example.com/getProfile?id=a'+OR+1%3D1%23&username=testuser\nhttp://www.example.com/getProfile?id=a'%20OR%021=1#&username=testuser</pre>\n  <p>Escape and special characters can have different interpretations. It is important that you try different encodings to cause the application to fail.</p>\n  <h2>\n    <em>Automate Test Cases</em>\n  </h2>\n  <p>Finally, submitting numerous test cases by hand is tedious, so you should automate the test case submission and verification process. There are many automated malicious string testing tools (<i>fuzzers</i>) online to help you in this process, including OWASP’s WebScarab  [ii] . Learn to use at least one fuzzing tool, which will help you to execute more test cases in less time.</p>\n  <h1> Conclusions </h1>\n  <p>Addressing exception information disclosure bugs is necessary during the security testing phase of application development and must also become an application development policy for all security conscious teams.  This paper presented three of the most common attack scenarios to help you understand the impact of this vulnerability in Java Web applications, as well as what causes this bug and methods of protecting against it. The testing sections describe the multiple test methodologies required to properly hunt down information disclosure bugs. Be alert during testing the application with different input strings to catch any subtle error messagem differences that may reveal more than they should.</p>\n  <div>\n    <br />\n    <hr />\n    <div>\n      <p>\n        <a style=\"mso-endnote-id: edn1\" title=\"\" href=\"about:blank#_ednref1\" name=\"_edn1\">\n          <b>\n          </b>\n        </a>  [i]  <strong>OWASP Testing Guide Appendix C: Fuzz Vectors.  </strong>OWASP. <strong></strong><a href=\"http://www.owasp.org/index.php/OWASP_Testing_Guide_Appendix_C:_Fuzz_Vectors\"> http://www.owasp.org/index.php/OWASP_Testing_Guide_Appendix_C:_Fuzz_Vectors </a></p>\n      <p />  [ii]    <b>Fuzzing with WebScarab</b>. OWASP.  <a href=\"http://www.owasp.org/index.php/Fuzzing_with_WebScarab\"> http://www.owasp.org/index.php/Fuzzing_with_WebScarab </a></div>\n  </div>\n  <p />"
 }

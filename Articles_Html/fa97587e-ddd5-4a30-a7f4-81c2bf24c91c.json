@@ -1,6 +1,6 @@
 {
   "id": "fa97587e-ddd5-4a30-a7f4-81c2bf24c91c",
-  "checksum": "58daa4b671efd9f9e3ce4da305b8f83cc462045c",
+  "checksum": "08ca92a522fa11b14d61c589726bdf1b67af2033",
   "words": {
     "applies": [
       "h1"
@@ -345,7 +345,7 @@
     ],
     "ul": [
       "C++",
-      "Where Exceptions Aren't Possible, Return Error Codes\r\n      \r\n        C++ Exceptions are used where possible\r\n        \r\n          Centralize Error Handling"
+      "Where Exceptions Aren't Possible, Return Error Codes\n      \n        C++ Exceptions are used where possible\n        \n          Centralize Error Handling"
     ],
     "li": [
       "C++",
@@ -379,5 +379,5 @@
       "text": "Centralize Error Handling"
     }
   ],
-  "html": "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>C&#43;&#43;</li>\r\n  </ul>\r\n  <h1>What to Check For</h1>\r\n  <p>Verify that all functions that may cause errors either throw exceptions or return error codes.</p>\r\n  <h1>Why</h1>\r\n  <p>It is preferable to throw exceptions, but it is better to return error codes than not handle errors at all. Exceptions should be used for error handling when possible. An older, less effective approach to error handling is called error codes, when a function returns values that correspond to error conditions. If, for some reason, exceptions are not being used, error codes should be used for error handling instead.</p>\r\n  <h1>How to Check</h1>\r\n  <p>Identify all functions that may cause errors. Verify that all functions that may cause errors throw exceptions or return error codes.</p>\r\n  <h1>How to Fix</h1>\r\n  <p>Identify all functions that may cause errors. Add code that either throws exceptions or returns error codes when error conditions occur.</p>\r\n  <h1>Related Items</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/d0a056d3-aaed-4ccc-8b8c-e88da2df5e84\">Where Exceptions Aren't Possible, Return Error Codes</a>\r\n      <li>\r\n        <a href=\"/article/72900050-60e7-4562-9812-2f80bf0310bb\">C&#43;&#43; Exceptions are used where possible</a>\r\n        <li>\r\n          <a href=\"/article/e4a3052e-13f2-4062-9a83-49185ff14b0a\">Centralize Error Handling</a>\r\n        </li>\r\n      </li>\r\n    </li>\r\n  </ul>"
+  "html": "<h1>Applies to</h1>\n  <ul>\n    <li>C&#43;&#43;</li>\n  </ul>\n  <h1>What to Check For</h1>\n  <p>Verify that all functions that may cause errors either throw exceptions or return error codes.</p>\n  <h1>Why</h1>\n  <p>It is preferable to throw exceptions, but it is better to return error codes than not handle errors at all. Exceptions should be used for error handling when possible. An older, less effective approach to error handling is called error codes, when a function returns values that correspond to error conditions. If, for some reason, exceptions are not being used, error codes should be used for error handling instead.</p>\n  <h1>How to Check</h1>\n  <p>Identify all functions that may cause errors. Verify that all functions that may cause errors throw exceptions or return error codes.</p>\n  <h1>How to Fix</h1>\n  <p>Identify all functions that may cause errors. Add code that either throws exceptions or returns error codes when error conditions occur.</p>\n  <h1>Related Items</h1>\n  <ul>\n    <li>\n      <a href=\"/article/d0a056d3-aaed-4ccc-8b8c-e88da2df5e84\">Where Exceptions Aren't Possible, Return Error Codes</a>\n      <li>\n        <a href=\"/article/72900050-60e7-4562-9812-2f80bf0310bb\">C&#43;&#43; Exceptions are used where possible</a>\n        <li>\n          <a href=\"/article/e4a3052e-13f2-4062-9a83-49185ff14b0a\">Centralize Error Handling</a>\n        </li>\n      </li>\n    </li>\n  </ul>"
 }

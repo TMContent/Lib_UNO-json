@@ -1,6 +1,6 @@
 {
   "id": "8db30f09-eb18-48e0-a369-54e04bf886f0",
-  "checksum": "8f0d06eeb16d22e8c95fa877e67aefb54c716a9b",
+  "checksum": "191b89f8de28a3bc65d2c7f4cd9d689234ee227c",
   "words": {
     "what": [
       "h2"
@@ -48,7 +48,7 @@
       "p",
       "p"
     ],
-    "as\rstrcpy": [
+    "asstrcpy": [
       "p"
     ],
     "strncpy": [
@@ -245,7 +245,7 @@
       "ul",
       "li"
     ],
-    "see\rhttp://cwe.mitre.org/data/definitions/131.html": [
+    "seehttp://cwe.mitre.org/data/definitions/131.html": [
       "ul",
       "li"
     ],
@@ -268,8 +268,8 @@
       "Additional Resources"
     ],
     "p": [
-      "Replace unbounded copy functions with analogous functions that support length arguments, such as\r\nstrcpy with strncpy. Create these if they are not available.",
-      "Note: This approach is still susceptible to calculation errors, including issues such as off-by-one errors (CWE-193) and incorrect calculation of buffer lengths (CWE-131). Additionally, this only addresses potential overflow issues. Resource\r\n consumption / exhaustion issues are still possible."
+      "Replace unbounded copy functions with analogous functions that support length arguments, such as\nstrcpy with strncpy. Create these if they are not available.",
+      "Note: This approach is still susceptible to calculation errors, including issues such as off-by-one errors (CWE-193) and incorrect calculation of buffer lengths (CWE-131). Additionally, this only addresses potential overflow issues. Resource\n consumption / exhaustion issues are still possible."
     ],
     "i": [
       "strcpy",
@@ -279,11 +279,11 @@
       "Note:"
     ],
     "ul": [
-      "For more information about \"CWE-193: Off-by-one Error\", please see \r\nhttp://cwe.mitre.org/data/definitions/193.html\r\n    For more information about \"CWE-131: Incorrect Calculation of Buffer Size\", please see\r\nhttp://cwe.mitre.org/data/definitions/131.html"
+      "For more information about \"CWE-193: Off-by-one Error\", please see \nhttp://cwe.mitre.org/data/definitions/193.html\n    For more information about \"CWE-131: Incorrect Calculation of Buffer Size\", please see\nhttp://cwe.mitre.org/data/definitions/131.html"
     ],
     "li": [
-      "For more information about \"CWE-193: Off-by-one Error\", please see \r\nhttp://cwe.mitre.org/data/definitions/193.html",
-      "For more information about \"CWE-131: Incorrect Calculation of Buffer Size\", please see\r\nhttp://cwe.mitre.org/data/definitions/131.html"
+      "For more information about \"CWE-193: Off-by-one Error\", please see \nhttp://cwe.mitre.org/data/definitions/193.html",
+      "For more information about \"CWE-131: Incorrect Calculation of Buffer Size\", please see\nhttp://cwe.mitre.org/data/definitions/131.html"
     ],
     "a": [
       "http://cwe.mitre.org/data/definitions/193.html",
@@ -293,12 +293,12 @@
   "links": [
     {
       "href": "http://cwe.mitre.org/data/definitions/193.html",
-      "text": "\r\nhttp://cwe.mitre.org/data/definitions/193.html"
+      "text": "\nhttp://cwe.mitre.org/data/definitions/193.html"
     },
     {
       "href": "http://cwe.mitre.org/data/definitions/131.html",
       "text": "http://cwe.mitre.org/data/definitions/131.html"
     }
   ],
-  "html": "<h2>What to Do</h2>\r\n  <p>Replace unbounded copy functions with analogous functions that support length arguments, such as\r\n<i>strcpy</i> with <i>strncpy</i>. Create these if they are not available. </p>\r\n  <p>\r\n    <strong>Note:</strong> This approach is still susceptible to calculation errors, including issues such as off-by-one errors (CWE-193) and incorrect calculation of buffer lengths (CWE-131). Additionally, this only addresses potential overflow issues. Resource\r\n consumption / exhaustion issues are still possible.</p>\r\n  <h2>Additional Resources</h2>\r\n  <ul>\r\n    <li>For more information about \"CWE-193: Off-by-one Error\", please see <a href=\"http://cwe.mitre.org/data/definitions/193.html\">\r\nhttp://cwe.mitre.org/data/definitions/193.html</a></li>\r\n    <li>For more information about \"CWE-131: Incorrect Calculation of Buffer Size\", please see\r\n<a href=\"http://cwe.mitre.org/data/definitions/131.html\">http://cwe.mitre.org/data/definitions/131.html</a></li>\r\n  </ul>"
+  "html": "<h2>What to Do</h2>\n  <p>Replace unbounded copy functions with analogous functions that support length arguments, such as\n<i>strcpy</i> with <i>strncpy</i>. Create these if they are not available. </p>\n  <p>\n    <strong>Note:</strong> This approach is still susceptible to calculation errors, including issues such as off-by-one errors (CWE-193) and incorrect calculation of buffer lengths (CWE-131). Additionally, this only addresses potential overflow issues. Resource\n consumption / exhaustion issues are still possible.</p>\n  <h2>Additional Resources</h2>\n  <ul>\n    <li>For more information about \"CWE-193: Off-by-one Error\", please see <a href=\"http://cwe.mitre.org/data/definitions/193.html\">\nhttp://cwe.mitre.org/data/definitions/193.html</a></li>\n    <li>For more information about \"CWE-131: Incorrect Calculation of Buffer Size\", please see\n<a href=\"http://cwe.mitre.org/data/definitions/131.html\">http://cwe.mitre.org/data/definitions/131.html</a></li>\n  </ul>"
 }

@@ -1,12 +1,11 @@
 {
   "id": "00000000-0000-0000-0000-000000737bd8",
-  "checksum": "ab76c0ec1c98988d12674ae077a4431d9d31dd5c",
+  "checksum": "0c441864f956178439804529b581ac135b8e563c",
   "words": {
-    "applies": [
+    "what": [
       "h2"
     ],
     "to": [
-      "h2",
       "h2",
       "p",
       "p",
@@ -24,13 +23,6 @@
       "li",
       "li",
       "li"
-    ],
-    "aspnet": [
-      "ul",
-      "li"
-    ],
-    "what": [
-      "h2"
     ],
     "do": [
       "h2",
@@ -59,13 +51,17 @@
       "strong",
       "li"
     ],
-    "ssl/tls": [
+    "tls": [
       "p",
       "p",
       "p",
       "ol",
+      "ol",
+      "li",
       "li",
       "strong",
+      "ul",
+      "li",
       "title"
     ],
     "and": [
@@ -336,12 +332,6 @@
       "ol",
       "li"
     ],
-    "ssl": [
-      "ol",
-      "li",
-      "ul",
-      "li"
-    ],
     "certificates": [
       "ol",
       "li"
@@ -518,32 +508,26 @@
   },
   "tags": {
     "h2": [
-      "Applies To",
       "What to Do",
       "Why",
       "How",
       "Additional Resources"
     ],
-    "ul": [
-      "ASP.NET",
-      "For information about setting up SSL on IIS, see http://www.iis.net/learn/manage/configuring-security/how-to-set-up-ssl-on-iis"
-    ],
-    "li": [
-      "ASP.NET",
-      "Configure IIS to use SSL/TLS. Get a valid certificate. Hosting service providers often sell valid SSL certificates. Install the certificate. Create an HTTPS binding for the site. A link in the \"Additional Resources\" section describes how to do this in detail.",
-      "Set the Secure flag on cookies. Set the requireSSL property to true for the httpCookies element in the web.config file, like this: <httpcookies requiressl=\"true\"></httpcookies> If you use Forms Authentication, you will also need to set requireSSL to true for the forms element.",
-      "For information about setting up SSL on IIS, see http://www.iis.net/learn/manage/configuring-security/how-to-set-up-ssl-on-iis"
-    ],
     "p": [
-      "Configure IIS to use SSL/TLS and set the Secure flag on session cookies.",
-      "If session identifiers are transmitted in plain-text, an attacker can intercept them using a man-in-the-middle attack. After intercepting a session identifier, the attacker can hijack the corresponding session. Hijacking a session allows the attacker to carry out any action that is available to the authenticated user. To prevent session identifiers from being sent in plain-text, session cookies should be sent only using SSL/TLS.",
-      "To send session cookies only using SSL/TLS:"
+      "Configure IIS to use TLS and set the Secure flag on session cookies.",
+      "If session identifiers are transmitted in plain-text, an attacker can intercept them using a man-in-the-middle attack. After intercepting a session identifier, the attacker can hijack the corresponding session. Hijacking a session allows the attacker to carry out any action that is available to the authenticated user. To prevent session identifiers from being sent in plain-text, session cookies should be sent only using TLS.",
+      "To send session cookies only using TLS:"
     ],
     "ol": [
-      "Configure IIS to use SSL/TLS. Get a valid certificate. Hosting service providers often sell valid SSL certificates. Install the certificate. Create an HTTPS binding for the site. A link in the \"Additional Resources\" section describes how to do this in detail.\n Set the Secure flag on cookies. Set the requireSSL property to true for the httpCookies element in the web.config file, like this: <httpcookies requiressl=\"true\"></httpcookies> If you use Forms Authentication, you will also need to set requireSSL to true for the forms element."
+      "Configure IIS to use TLS. Get a valid certificate. Hosting service providers often sell valid TLS certificates. Install the certificate. Create an HTTPS binding for the site. A link in the \"Additional Resources\" section describes how to do this in detail.\n Set the Secure flag on cookies. Set the requireSSL property to true for the httpCookies element in the web.config file, like this: <httpcookies requiressl=\"true\"></httpcookies> If you use Forms Authentication, you will also need to set requireSSL to true for the forms element."
+    ],
+    "li": [
+      "Configure IIS to use TLS. Get a valid certificate. Hosting service providers often sell valid TLS certificates. Install the certificate. Create an HTTPS binding for the site. A link in the \"Additional Resources\" section describes how to do this in detail.",
+      "Set the Secure flag on cookies. Set the requireSSL property to true for the httpCookies element in the web.config file, like this: <httpcookies requiressl=\"true\"></httpcookies> If you use Forms Authentication, you will also need to set requireSSL to true for the forms element.",
+      "For information about setting up TLS on IIS, see http://www.iis.net/learn/manage/configuring-security/how-to-set-up-ssl-on-iis"
     ],
     "strong": [
-      "Configure IIS to use SSL/TLS.",
+      "Configure IIS to use TLS.",
       "Set the Secure flag on cookies."
     ],
     "em": [
@@ -555,6 +539,9 @@
       "true",
       "forms"
     ],
+    "ul": [
+      "For information about setting up TLS on IIS, see http://www.iis.net/learn/manage/configuring-security/how-to-set-up-ssl-on-iis"
+    ],
     "a": [
       "http://www.iis.net/learn/manage/configuring-security/how-to-set-up-ssl-on-iis"
     ]
@@ -565,5 +552,5 @@
       "text": "http://www.iis.net/learn/manage/configuring-security/how-to-set-up-ssl-on-iis"
     }
   ],
-  "html": "<h2>Applies To</h2><ul><li> ASP.NET</li>\n</ul><h2>What to Do</h2><p>Configure IIS to use SSL/TLS and set the Secure flag on session cookies.\n</p><h2>Why</h2><p>If session identifiers are transmitted in plain-text, an attacker can intercept them using a man-in-the-middle attack. After intercepting a session identifier, the attacker can hijack the corresponding session. Hijacking a session allows the attacker to carry out any action that is available to the authenticated user. To prevent session identifiers from being sent in plain-text, session cookies should be sent only using SSL/TLS.\n</p><h2>How</h2><p>To send session cookies only using SSL/TLS:\n</p><ol>\n<li> <strong>Configure IIS to use SSL/TLS.</strong> Get a valid certificate. Hosting service providers often sell valid SSL certificates. Install the certificate. Create an HTTPS binding for the site. A link in the \"Additional Resources\" section describes how to do this in detail.</li>\n<li> <strong>Set the <em>Secure</em> flag on cookies.</strong> Set the <em>requireSSL</em> property to <em>true</em> for the <em>httpCookies</em> element in the web.config file, like this: &lt;httpcookies requiressl=\"true\"&gt;&lt;/httpcookies&gt; If you use Forms Authentication, you will also need to set <em>requireSSL</em> to <em>true</em> for the <em>forms</em> element.  </li>\n</ol><h2>Additional Resources</h2><ul><li> For information about setting up SSL on IIS, see <a href=\"http://www.iis.net/learn/manage/configuring-security/how-to-set-up-ssl-on-iis\">http://www.iis.net/learn/manage/configuring-security/how-to-set-up-ssl-on-iis</a></li></ul>"
+  "html": "<h2>What to Do</h2><p>Configure IIS to use TLS and set the Secure flag on session cookies.\n</p><h2>Why</h2><p>If session identifiers are transmitted in plain-text, an attacker can intercept them using a man-in-the-middle attack. After intercepting a session identifier, the attacker can hijack the corresponding session. Hijacking a session allows the attacker to carry out any action that is available to the authenticated user. To prevent session identifiers from being sent in plain-text, session cookies should be sent only using TLS.\n</p><h2>How</h2><p>To send session cookies only using TLS:\n</p><ol>\n<li> <strong>Configure IIS to use TLS.</strong> Get a valid certificate. Hosting service providers often sell valid TLS certificates. Install the certificate. Create an HTTPS binding for the site. A link in the \"Additional Resources\" section describes how to do this in detail.</li>\n<li> <strong>Set the <em>Secure</em> flag on cookies.</strong> Set the <em>requireSSL</em> property to <em>true</em> for the <em>httpCookies</em> element in the web.config file, like this: &lt;httpcookies requiressl=\"true\"&gt;&lt;/httpcookies&gt; If you use Forms Authentication, you will also need to set <em>requireSSL</em> to <em>true</em> for the <em>forms</em> element.  </li>\n</ol><h2>Additional Resources</h2><ul><li> For information about setting up TLS on IIS, see <a href=\"http://www.iis.net/learn/manage/configuring-security/how-to-set-up-ssl-on-iis\">http://www.iis.net/learn/manage/configuring-security/how-to-set-up-ssl-on-iis</a></li></ul>"
 }

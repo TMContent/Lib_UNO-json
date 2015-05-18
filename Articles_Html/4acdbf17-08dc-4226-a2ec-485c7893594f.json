@@ -1,6 +1,6 @@
 {
   "id": "4acdbf17-08dc-4226-a2ec-485c7893594f",
-  "checksum": "c463f7fcb7ad8e35608d07c287486c9ae3944b42",
+  "checksum": "a0c04685680b7f2b7e08c8f7e99f693eea958c3c",
   "words": {
     "what": [
       "h1"
@@ -48,7 +48,7 @@
       "li",
       "p"
     ],
-    "use windows": [
+    "use&nbspwindows": [
       "p"
     ],
     "authentication": [
@@ -91,7 +91,7 @@
       "strong",
       "title"
     ],
-    "server to": [
+    "server&nbspto": [
       "p"
     ],
     "gain": [
@@ -123,7 +123,7 @@
     "other": [
       "p"
     ],
-    "authentication methods": [
+    "authentication&nbspmethods": [
       "p"
     ],
     "such": [
@@ -149,25 +149,18 @@
       "p",
       "p",
       "p",
-      "p",
-      "ul",
-      "li",
-      "a"
+      "p"
     ],
     "local": [
       "p",
       "p",
       "p",
-      "p",
-      "ul",
-      "li",
-      "a"
+      "p"
     ],
-    "accounts or": [
+    "accounts&nbspor": [
       "p"
     ],
     "impersonation/delegation": [
-      "p",
       "p",
       "p"
     ],
@@ -175,10 +168,7 @@
       "h1"
     ],
     "domain": [
-      "p",
-      "ul",
-      "li",
-      "a"
+      "p"
     ],
     "accounts": [
       "p",
@@ -189,13 +179,7 @@
       "li",
       "p",
       "ul",
-      "ul",
-      "ul",
       "li",
-      "a",
-      "li",
-      "li",
-      "a",
       "a"
     ],
     "offer": [
@@ -410,10 +394,7 @@
       "li",
       "li",
       "p",
-      "p",
-      "ul",
-      "li",
-      "a"
+      "p"
     ],
     "passed": [
       "ul",
@@ -799,9 +780,6 @@
       "p",
       "p",
       "ul",
-      "ul",
-      "li",
-      "a",
       "li",
       "a",
       "title"
@@ -821,7 +799,7 @@
     "whenever": [
       "p"
     ],
-    "possible": [
+    "possible&nbsp;": [
       "p"
     ],
     "however": [
@@ -837,10 +815,7 @@
       "p"
     ],
     "if": [
-      "p",
-      "ul",
-      "li",
-      "a"
+      "p"
     ],
     "client": [
       "ul",
@@ -908,7 +883,10 @@
     "situations": [
       "p"
     ],
-    "accounts are": [
+    "impersonation/delegation&nbsp;": [
+      "p"
+    ],
+    "accounts&nbspare": [
       "p"
     ],
     "better": [
@@ -923,7 +901,7 @@
     "most": [
       "p"
     ],
-    "circumstances": [
+    "circumstances&nbsp;": [
       "p"
     ],
     "how": [
@@ -995,12 +973,8 @@
     ],
     "connectionstrings>": [
       "ol",
-      "ol",
       "li",
-      "li",
-      "p",
-      "blockquote",
-      "pre"
+      "p"
     ],
     "section": [
       "ol",
@@ -1074,6 +1048,12 @@
       "li",
       "p"
     ],
+    "&nbsp<connectionstrings>&nbsp;": [
+      "ol",
+      "li",
+      "blockquote",
+      "pre"
+    ],
     "add": [
       "ol",
       "li",
@@ -1081,6 +1061,12 @@
       "pre"
     ],
     "name=\"mylocalsqlserver\"": [
+      "ol",
+      "li",
+      "blockquote",
+      "pre"
+    ],
+    "&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
       "ol",
       "li",
       "blockquote",
@@ -1098,7 +1084,7 @@
       "blockquote",
       "pre"
     ],
-    "id=sapassword=asdasd;": [
+    "id=sapassword=asdasd;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
       "ol",
       "li",
       "blockquote",
@@ -1116,7 +1102,7 @@
       "blockquote",
       "pre"
     ],
-    "security=sspi\"": [
+    "security=sspi\"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
       "ol",
       "li",
       "blockquote",
@@ -1195,7 +1181,7 @@
       "blockquote",
       "p"
     ],
-    "section with": [
+    "section&nbspwith": [
       "ol",
       "li",
       "blockquote",
@@ -1398,7 +1384,7 @@
       "li",
       "p"
     ],
-    "denied": [
+    "denied&nbsp;": [
       "ol",
       "li",
       "p"
@@ -1415,11 +1401,6 @@
       "a"
     ],
     "privileged": [
-      "ul",
-      "li",
-      "a"
-    ],
-    "unavailable": [
       "ul",
       "li",
       "a"
@@ -1441,6 +1422,9 @@
     ],
     "guidance": [
       "p"
+    ],
+    "sink]": [
+      "title"
     ]
   },
   "tags": {
@@ -1452,22 +1436,22 @@
       "Related Items"
     ],
     "p": [
-      "Use Windows authentication when connecting to SQL Server to gain security advantages over other authentication methods such as mirrored local accounts or impersonation/delegation.",
+      "Use&nbsp;Windows authentication when connecting to SQL Server&nbsp;to gain security advantages over other authentication&nbsp;methods such as mirrored local accounts&nbsp;or impersonation/delegation.",
       "Domain accounts offer several advantages over mirrored local accounts or impersonation/delegation:",
-      "Use Windows authentication whenever possible.  However, you might not be able to use Windows authentication if:",
-      "In these situations, you can use either mirrored local accounts or Impersonation/Delegation.  Mirrored local accounts are a better choice under most circumstances.",
+      "Use Windows authentication whenever possible.&nbsp; However, you might not be able to use Windows authentication if:",
+      "In these situations, you can use either mirrored local accounts or Impersonation/Delegation.&nbsp; Mirrored local accounts&nbsp;are a better choice under most circumstances.&nbsp;",
       "To connect to SQL Server using Windows authentication, perform the following steps:",
       "Configure a connection string. For ASP.NET applications, you should store connection strings in the <connectionStrings> section of your application's Web.config file. The connection string used with Windows authentication must include either the Trusted_Connection=Yes attribute, or the equivalent attribute Integrated Security=SSPI:",
       "Encrypt the connection string. Even though database connection strings for Windows authentication do not contain usernames and passwords, you should still encrypt them in Web.config to reduce the possibility of disclosing server names and database names.",
-      "To encrypt the connectionStrings section with the Machine Store, run the following command from a .NET command prompt:",
+      "To encrypt the connectionStrings section&nbsp;with the Machine Store, run the following command from a .NET command prompt:",
       "Configure SQL Server security. You need to create a SQL Server login for your application's service account, and grant restricted permissions to access your database. You should restrict access to specific database objects, such as stored procedures.",
-      "Test security access. Test database access that appropriate database permissions are available. Just as important, test that permissions unneccessary to the application's operation are denied.",
+      "Test security access. Test database access that appropriate database permissions are available. Just as important, test that permissions unneccessary to the application's operation are denied.&nbsp;",
       "Adapted from Microsoft patterns & practices guidance."
     ],
     "ul": [
       "You can enforce Active Directory password policies. Active Directory provides a single identity store with a single set of management tools. You do not have to maintain a separate set of SQL accounts. No credentials are passed over the network during authentication and you do not need to embed user names and passwords in the database connection string. This means that malicious users or attackers cannot obtain the credentials either by monitoring the network or by viewing connection strings inside your configuration files. You benefit from centralized account management. User accounts are subject to normal account management security policies such as password expiration periods, minimum lengths, and account lockout after multiple invalid logon requests.",
       "Your database client and database server are separated by a firewall which prevents Kerberos or NTLM authentication. Your application server and database server are in separate domains with no trust.",
-      "Encrypt Connection Strings\r\n      \r\n        Use Least Privileged Accounts for Database Access\r\n        \r\n          Use Mirrored Local Accounts if Domain Accounts are Unavailable"
+      "Encrypt Connection Strings\n      \n        Use Least Privileged Accounts for Database Access"
     ],
     "li": [
       "You can enforce Active Directory password policies.",
@@ -1476,16 +1460,15 @@
       "You benefit from centralized account management. User accounts are subject to normal account management security policies such as password expiration periods, minimum lengths, and account lockout after multiple invalid logon requests.",
       "Your database client and database server are separated by a firewall which prevents Kerberos or NTLM authentication.",
       "Your application server and database server are in separate domains with no trust.",
-      "Configure a connection string. For ASP.NET applications, you should store connection strings in the <connectionStrings> section of your application's Web.config file. The connection string used with Windows authentication must include either the Trusted_Connection=Yes attribute, or the equivalent attribute Integrated Security=SSPI:\r\n      \r\n         <connectionStrings>  <add name=\"MyLocalSQLServer\"        connectionString=\"Initial Catalog=pubs;User Id=sa;Password=asdasd;       data source=localhost;Integrated Security=SSPI;\"       providerName=\"System.Data.SqlClient\"/></connectionStrings>",
-      "Encrypt the connection string. Even though database connection strings for Windows authentication do not contain usernames and passwords, you should still encrypt them in Web.config to reduce the possibility of disclosing server names and database names. \r\n        \r\n          To encrypt the connectionStrings section with the Machine Store, run the following command from a .NET command prompt:\r\n          aspnet_regiis -pe \"connectionStrings\" -app \"/MachineDPAPI\" -prov \"DataProtectionConfigurationProvider\"",
+      "Configure a connection string. For ASP.NET applications, you should store connection strings in the <connectionStrings> section of your application's Web.config file. The connection string used with Windows authentication must include either the Trusted_Connection=Yes attribute, or the equivalent attribute Integrated Security=SSPI:\n      \n        &nbsp;<connectionStrings>&nbsp; <add name=\"MyLocalSQLServer\" &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; connectionString=\"Initial Catalog=pubs;User Id=sa;Password=asdasd;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; data source=localhost;Integrated Security=SSPI;\"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; providerName=\"System.Data.SqlClient\"/></connectionStrings>",
+      "Encrypt the connection string. Even though database connection strings for Windows authentication do not contain usernames and passwords, you should still encrypt them in Web.config to reduce the possibility of disclosing server names and database names. \n        \n          To encrypt the connectionStrings section&nbsp;with the Machine Store, run the following command from a .NET command prompt:\n          aspnet_regiis -pe \"connectionStrings\" -app \"/MachineDPAPI\" -prov \"DataProtectionConfigurationProvider\"",
       "Configure SQL Server security. You need to create a SQL Server login for your application's service account, and grant restricted permissions to access your database. You should restrict access to specific database objects, such as stored procedures.",
-      "Test security access. Test database access that appropriate database permissions are available. Just as important, test that permissions unneccessary to the application's operation are denied.",
+      "Test security access. Test database access that appropriate database permissions are available. Just as important, test that permissions unneccessary to the application's operation are denied.&nbsp;",
       "Encrypt Connection Strings",
-      "Use Least Privileged Accounts for Database Access",
-      "Use Mirrored Local Accounts if Domain Accounts are Unavailable"
+      "Use Least Privileged Accounts for Database Access"
     ],
     "ol": [
-      "Configure a connection string. For ASP.NET applications, you should store connection strings in the <connectionStrings> section of your application's Web.config file. The connection string used with Windows authentication must include either the Trusted_Connection=Yes attribute, or the equivalent attribute Integrated Security=SSPI:\r\n      \r\n         <connectionStrings>  <add name=\"MyLocalSQLServer\"        connectionString=\"Initial Catalog=pubs;User Id=sa;Password=asdasd;       data source=localhost;Integrated Security=SSPI;\"       providerName=\"System.Data.SqlClient\"/></connectionStrings>\r\n      \r\n      \r\n        \r\n          Encrypt the connection string. Even though database connection strings for Windows authentication do not contain usernames and passwords, you should still encrypt them in Web.config to reduce the possibility of disclosing server names and database names. \r\n        \r\n          To encrypt the connectionStrings section with the Machine Store, run the following command from a .NET command prompt:\r\n          aspnet_regiis -pe \"connectionStrings\" -app \"/MachineDPAPI\" -prov \"DataProtectionConfigurationProvider\" \r\n        \r\n        \r\n          \r\n            Configure SQL Server security. You need to create a SQL Server login for your application's service account, and grant restricted permissions to access your database. You should restrict access to specific database objects, such as stored procedures. \r\n          \r\n            \r\n              Test security access. Test database access that appropriate database permissions are available. Just as important, test that permissions unneccessary to the application's operation are denied."
+      "Configure a connection string. For ASP.NET applications, you should store connection strings in the <connectionStrings> section of your application's Web.config file. The connection string used with Windows authentication must include either the Trusted_Connection=Yes attribute, or the equivalent attribute Integrated Security=SSPI:\n      \n        &nbsp;<connectionStrings>&nbsp; <add name=\"MyLocalSQLServer\" &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; connectionString=\"Initial Catalog=pubs;User Id=sa;Password=asdasd;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; data source=localhost;Integrated Security=SSPI;\"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; providerName=\"System.Data.SqlClient\"/></connectionStrings>\n      \n      \n        \n          Encrypt the connection string. Even though database connection strings for Windows authentication do not contain usernames and passwords, you should still encrypt them in Web.config to reduce the possibility of disclosing server names and database names. \n        \n          To encrypt the connectionStrings section&nbsp;with the Machine Store, run the following command from a .NET command prompt:\n          aspnet_regiis -pe \"connectionStrings\" -app \"/MachineDPAPI\" -prov \"DataProtectionConfigurationProvider\" \n        \n        \n          \n            Configure SQL Server security. You need to create a SQL Server login for your application's service account, and grant restricted permissions to access your database. You should restrict access to specific database objects, such as stored procedures. \n          \n            \n              Test security access. Test database access that appropriate database permissions are available. Just as important, test that permissions unneccessary to the application's operation are denied.&nbsp;"
     ],
     "strong": [
       "Configure a connection string.",
@@ -1494,11 +1477,11 @@
       "Test security access."
     ],
     "blockquote": [
-      "<connectionStrings>  <add name=\"MyLocalSQLServer\"        connectionString=\"Initial Catalog=pubs;User Id=sa;Password=asdasd;       data source=localhost;Integrated Security=SSPI;\"       providerName=\"System.Data.SqlClient\"/></connectionStrings>",
-      "To encrypt the connectionStrings section with the Machine Store, run the following command from a .NET command prompt:\r\n          aspnet_regiis -pe \"connectionStrings\" -app \"/MachineDPAPI\" -prov \"DataProtectionConfigurationProvider\""
+      "&nbsp;<connectionStrings>&nbsp; <add name=\"MyLocalSQLServer\" &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; connectionString=\"Initial Catalog=pubs;User Id=sa;Password=asdasd;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; data source=localhost;Integrated Security=SSPI;\"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; providerName=\"System.Data.SqlClient\"/></connectionStrings>",
+      "To encrypt the connectionStrings section&nbsp;with the Machine Store, run the following command from a .NET command prompt:\n          aspnet_regiis -pe \"connectionStrings\" -app \"/MachineDPAPI\" -prov \"DataProtectionConfigurationProvider\""
     ],
     "pre": [
-      "<connectionStrings>  <add name=\"MyLocalSQLServer\"        connectionString=\"Initial Catalog=pubs;User Id=sa;Password=asdasd;       data source=localhost;Integrated Security=SSPI;\"       providerName=\"System.Data.SqlClient\"/></connectionStrings>",
+      "&nbsp;<connectionStrings>&nbsp; <add name=\"MyLocalSQLServer\" &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; connectionString=\"Initial Catalog=pubs;User Id=sa;Password=asdasd;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; data source=localhost;Integrated Security=SSPI;\"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; providerName=\"System.Data.SqlClient\"/></connectionStrings>",
       "aspnet_regiis -pe \"connectionStrings\" -app \"/MachineDPAPI\" -prov \"DataProtectionConfigurationProvider\""
     ],
     "br": [
@@ -1510,8 +1493,7 @@
     ],
     "a": [
       "Encrypt Connection Strings",
-      "Use Least Privileged Accounts for Database Access",
-      "Use Mirrored Local Accounts if Domain Accounts are Unavailable"
+      "Use Least Privileged Accounts for Database Access"
     ],
     "hr": [
       ""
@@ -1525,11 +1507,7 @@
     {
       "href": "/article/fab1733c-61d7-46a8-88c6-2617a643c0d9",
       "text": "Use Least Privileged Accounts for Database Access"
-    },
-    {
-      "href": "/article/c5ec2f64-2cba-45b1-8db1-9d3803f7d397",
-      "text": "Use Mirrored Local Accounts if Domain Accounts are Unavailable"
     }
   ],
-  "html": "<h1>What to Do</h1>\r\n  <p>Use&nbsp;Windows authentication when connecting to SQL Server&nbsp;to gain security advantages over other authentication&nbsp;methods such as mirrored local accounts&nbsp;or impersonation/delegation. </p>\r\n  <h1>Why</h1>\r\n  <p>Domain accounts offer several advantages over mirrored local accounts or impersonation/delegation:</p>\r\n  <ul>\r\n    <li>You can enforce Active Directory password policies. <li>Active Directory provides a single identity store with a single set of management tools. You do not have to maintain a separate set of SQL accounts. <li>No credentials are passed over the network during authentication and you do not need to embed user names and passwords in the database connection string. This means that malicious users or attackers cannot obtain the credentials either by monitoring the network or by viewing connection strings inside your configuration files. <li>You benefit from centralized account management. User accounts are subject to normal account management security policies such as password expiration periods, minimum lengths, and account lockout after multiple invalid logon requests. </li></li></li></li>\r\n  </ul>\r\n  <h1>When</h1>\r\n  <p>Use Windows authentication whenever possible.&nbsp; However, you might not be able to use Windows authentication if: </p>\r\n  <ul>\r\n    <li>Your database client and database server are separated by a firewall which prevents Kerberos or NTLM authentication. <li>Your application server and database server are in separate domains with no trust. </li></li>\r\n  </ul>\r\n  <p>In these situations, you can use either mirrored local accounts or Impersonation/Delegation.&nbsp; Mirrored local accounts&nbsp;are a better choice under most circumstances.&nbsp;</p>\r\n  <h1>How</h1>\r\n  <p>To connect to SQL Server using Windows authentication, perform the following steps:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Configure a connection string.</strong> For ASP.NET applications, you should store connection strings in the &lt;connectionStrings&gt; section of your application's Web.config file. The connection string used with Windows authentication must include either the Trusted_Connection=Yes attribute, or the equivalent attribute Integrated Security=SSPI:</p>\r\n      <blockquote>\r\n        <pre>&nbsp;&lt;connectionStrings&gt;<br />&nbsp; &lt;add name=\"MyLocalSQLServer\" <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; connectionString=\"Initial Catalog=pubs;User Id=sa;Password=asdasd;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; data source=localhost;Integrated Security=SSPI;\"<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; providerName=\"System.Data.SqlClient\"/&gt;<br />&lt;/connectionStrings&gt;</pre>\r\n      </blockquote>\r\n      <li>\r\n        <p>\r\n          <strong>Encrypt the connection string.</strong> Even though database connection strings for Windows authentication do not contain usernames and passwords, you should still encrypt them in Web.config to reduce the possibility of disclosing server names and database names. </p>\r\n        <blockquote>\r\n          <p>To encrypt the connectionStrings section&nbsp;with the Machine Store, run the following command from a .NET command prompt:</p>\r\n          <pre>aspnet_regiis -pe \"connectionStrings\" -app \"/MachineDPAPI\" -prov \"DataProtectionConfigurationProvider\" </pre>\r\n        </blockquote>\r\n        <li>\r\n          <p>\r\n            <strong>Configure SQL Server security.</strong> You need to create a SQL Server login for your application's service account, and grant restricted permissions to access your database. You should restrict access to specific database objects, such as stored procedures. </p>\r\n          <li>\r\n            <p>\r\n              <strong>Test security access.</strong> Test database access that appropriate database permissions are available. Just as important, test that permissions unneccessary to the application's operation are denied.&nbsp;</p>\r\n          </li>\r\n        </li>\r\n      </li>\r\n    </li>\r\n  </ol>\r\n  <h1>Related Items</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/f10679b7-5390-49ee-b529-7a2f7c059ce7\">Encrypt Connection Strings</a>\r\n      <li>\r\n        <a href=\"/article/fab1733c-61d7-46a8-88c6-2617a643c0d9\">Use Least Privileged Accounts for Database Access</a>\r\n        <li>\r\n          <a href=\"/article/c5ec2f64-2cba-45b1-8db1-9d3803f7d397\">Use Mirrored Local Accounts if Domain Accounts are Unavailable</a>\r\n        </li>\r\n      </li>\r\n    </li>\r\n  </ul>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance. </p>"
+  "html": "<h1>What to Do</h1>\n  <p>Use&amp;nbsp;Windows authentication when connecting to SQL Server&amp;nbsp;to gain security advantages over other authentication&amp;nbsp;methods such as mirrored local accounts&amp;nbsp;or impersonation/delegation. </p>\n  <h1>Why</h1>\n  <p>Domain accounts offer several advantages over mirrored local accounts or impersonation/delegation:</p>\n  <ul>\n    <li>You can enforce Active Directory password policies. <li>Active Directory provides a single identity store with a single set of management tools. You do not have to maintain a separate set of SQL accounts. <li>No credentials are passed over the network during authentication and you do not need to embed user names and passwords in the database connection string. This means that malicious users or attackers cannot obtain the credentials either by monitoring the network or by viewing connection strings inside your configuration files. <li>You benefit from centralized account management. User accounts are subject to normal account management security policies such as password expiration periods, minimum lengths, and account lockout after multiple invalid logon requests. </li></li></li></li>\n  </ul>\n  <h1>When</h1>\n  <p>Use Windows authentication whenever possible.&amp;nbsp; However, you might not be able to use Windows authentication if: </p>\n  <ul>\n    <li>Your database client and database server are separated by a firewall which prevents Kerberos or NTLM authentication. <li>Your application server and database server are in separate domains with no trust. </li></li>\n  </ul>\n  <p>In these situations, you can use either mirrored local accounts or Impersonation/Delegation.&amp;nbsp; Mirrored local accounts&amp;nbsp;are a better choice under most circumstances.&amp;nbsp;</p>\n  <h1>How</h1>\n  <p>To connect to SQL Server using Windows authentication, perform the following steps:</p>\n  <ol>\n    <li>\n      <p>\n        <strong>Configure a connection string.</strong> For ASP.NET applications, you should store connection strings in the &lt;connectionStrings&gt; section of your application's Web.config file. The connection string used with Windows authentication must include either the Trusted_Connection=Yes attribute, or the equivalent attribute Integrated Security=SSPI:</p>\n      <blockquote>\n        <pre>&amp;nbsp;&lt;connectionStrings&gt;<br />&amp;nbsp; &lt;add name=\"MyLocalSQLServer\" <br />&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; connectionString=\"Initial Catalog=pubs;User Id=sa;Password=asdasd;<br />&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; data source=localhost;Integrated Security=SSPI;\"<br />&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; providerName=\"System.Data.SqlClient\"/&gt;<br />&lt;/connectionStrings&gt;</pre>\n      </blockquote>\n      <li>\n        <p>\n          <strong>Encrypt the connection string.</strong> Even though database connection strings for Windows authentication do not contain usernames and passwords, you should still encrypt them in Web.config to reduce the possibility of disclosing server names and database names. </p>\n        <blockquote>\n          <p>To encrypt the connectionStrings section&amp;nbsp;with the Machine Store, run the following command from a .NET command prompt:</p>\n          <pre>aspnet_regiis -pe \"connectionStrings\" -app \"/MachineDPAPI\" -prov \"DataProtectionConfigurationProvider\" </pre>\n        </blockquote>\n        <li>\n          <p>\n            <strong>Configure SQL Server security.</strong> You need to create a SQL Server login for your application's service account, and grant restricted permissions to access your database. You should restrict access to specific database objects, such as stored procedures. </p>\n          <li>\n            <p>\n              <strong>Test security access.</strong> Test database access that appropriate database permissions are available. Just as important, test that permissions unneccessary to the application's operation are denied.&amp;nbsp;</p>\n          </li>\n        </li>\n      </li>\n    </li>\n  </ol>\n  <h1>Related Items</h1>\n  <ul>\n    <li>\n      <a href=\"/article/f10679b7-5390-49ee-b529-7a2f7c059ce7\">Encrypt Connection Strings</a>\n      <li>\n        <a href=\"/article/fab1733c-61d7-46a8-88c6-2617a643c0d9\">Use Least Privileged Accounts for Database Access</a>\n      </li>\n    </li>\n  </ul>\n  <hr />\n  <p>Adapted from Microsoft patterns &amp; practices guidance. </p>"
 }

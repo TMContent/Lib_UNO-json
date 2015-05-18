@@ -1,6 +1,6 @@
 {
   "id": "48b2d405-8e51-4fd2-988e-e39fba8ed553",
-  "checksum": "13c9c7164044ca1a4a8e5ea92beccca19c2edcce",
+  "checksum": "53ae9b66574037f738f611d1354ca586df7ddc14",
   "words": {
     "description": [
       "h2"
@@ -555,7 +555,7 @@
       "li",
       "p"
     ],
-    "as\ropenssl": [
+    "asopenssl": [
       "ol",
       "li",
       "p"
@@ -614,7 +614,7 @@
       "ul",
       "li"
     ],
-    "see\rhttp://cwe.mitre.org/top25/index.html#cwe-307": [
+    "seehttp://cwe.mitre.org/top25/index.html#cwe-307": [
       "ul",
       "li"
     ],
@@ -634,24 +634,24 @@
     ],
     "p": [
       "The software does not implement sufficient measures to prevent multiple failed authentication attempts within in a short time frame, making it more susceptible to brute force attacks.",
-      "An often-used phrase is \"If at first you don't succeed, try, try again.\" Attackers may try to break into your account by writing programs that repeatedly guess different passwords. Without some kind of protection against brute force techniques, the attack\r\n will eventually succeed. You don't have to be advanced to be persistent.",
+      "An often-used phrase is \"If at first you don't succeed, try, try again.\" Attackers may try to break into your account by writing programs that repeatedly guess different passwords. Without some kind of protection against brute force techniques, the attack\n will eventually succeed. You don't have to be advanced to be persistent.",
       "Common protection mechanisms are:",
       "Disconnect the user after a small number of failed attempts.",
       "Implement a timeout.",
       "Lock&nbsp;the targeted account.",
       "Require a computational task on the user's part. This technique is commonly known as CAPTCHA.",
-      "Use a secure framework. Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid. Consider using libraries with authentication capabilities such as\r\nOpenSSL or the ESAPI Authenticator."
+      "Use a secure framework. Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid. Consider using libraries with authentication capabilities such as\nOpenSSL or the ESAPI Authenticator."
     ],
     "ol": [
-      "Disconnect the user after a small number of failed attempts.\r\n      \r\n    \r\n    \r\n      \r\n        Implement a timeout.\r\n      \r\n    \r\n    \r\n      \r\n        Lock&nbsp;the targeted account.\r\n      \r\n    \r\n    \r\n      \r\n        Require a computational task on the user's part. This technique is commonly known as CAPTCHA.\r\n    \r\n    \r\n      \r\n        Use a secure framework. Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid. Consider using libraries with authentication capabilities such as\r\nOpenSSL or the ESAPI Authenticator."
+      "Disconnect the user after a small number of failed attempts.\n      \n    \n    \n      \n        Implement a timeout.\n      \n    \n    \n      \n        Lock&nbsp;the targeted account.\n      \n    \n    \n      \n        Require a computational task on the user's part. This technique is commonly known as CAPTCHA.\n    \n    \n      \n        Use a secure framework. Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid. Consider using libraries with authentication capabilities such as\nOpenSSL or the ESAPI Authenticator."
     ],
     "li": [
       "Disconnect the user after a small number of failed attempts.",
       "Implement a timeout.",
       "Lock&nbsp;the targeted account.",
       "Require a computational task on the user's part. This technique is commonly known as CAPTCHA.",
-      "Use a secure framework. Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid. Consider using libraries with authentication capabilities such as\r\nOpenSSL or the ESAPI Authenticator.",
-      "For more information about improper restriction of excessive authentication attempts vulnerabilities, please see\r\nhttp://cwe.mitre.org/top25/index.html#CWE-307"
+      "Use a secure framework. Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid. Consider using libraries with authentication capabilities such as\nOpenSSL or the ESAPI Authenticator.",
+      "For more information about improper restriction of excessive authentication attempts vulnerabilities, please see\nhttp://cwe.mitre.org/top25/index.html#CWE-307"
     ],
     "strong": [
       "Disconnect the user after a small number of failed attempts.",
@@ -665,7 +665,7 @@
       "ESAPI Authenticator"
     ],
     "ul": [
-      "For more information about improper restriction of excessive authentication attempts vulnerabilities, please see\r\nhttp://cwe.mitre.org/top25/index.html#CWE-307"
+      "For more information about improper restriction of excessive authentication attempts vulnerabilities, please see\nhttp://cwe.mitre.org/top25/index.html#CWE-307"
     ],
     "a": [
       "http://cwe.mitre.org/top25/index.html#CWE-307"
@@ -677,5 +677,5 @@
       "text": "http://cwe.mitre.org/top25/index.html#CWE-307"
     }
   ],
-  "html": "<h2>Description</h2>\r\n  <p>The software does not implement sufficient measures to prevent multiple failed authentication attempts within in a short time frame, making it more susceptible to brute force attacks.</p>\r\n  <h2>Discussion</h2>\r\n  <p>An often-used phrase is \"If at first you don't succeed, try, try again.\" Attackers may try to break into your account by writing programs that repeatedly guess different passwords. Without some kind of protection against brute force techniques, the attack\r\n will eventually succeed. You don't have to be advanced to be persistent.</p>\r\n  <h2>Mitigation</h2>\r\n  <p>Common protection mechanisms are:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Disconnect the user after a small number of failed attempts.</strong>\r\n      </p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Implement a timeout.</strong>\r\n      </p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Lock&amp;nbsp;the targeted account.</strong>\r\n      </p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Require a computational task on the user's part.</strong> This technique is commonly known as CAPTCHA.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Use a secure framework. </strong>Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid. Consider using libraries with authentication capabilities such as\r\n<em>OpenSSL</em> or the <em>ESAPI Authenticator</em>.</p>\r\n    </li>\r\n  </ol>\r\n  <h2>Additional Information</h2>\r\n  <ul>\r\n    <li>For more information about improper restriction of excessive authentication attempts vulnerabilities, please see\r\n<a href=\"http://cwe.mitre.org/top25/index.html#CWE-307\">http://cwe.mitre.org/top25/index.html#CWE-307</a></li>\r\n  </ul>"
+  "html": "<h2>Description</h2>\n  <p>The software does not implement sufficient measures to prevent multiple failed authentication attempts within in a short time frame, making it more susceptible to brute force attacks.</p>\n  <h2>Discussion</h2>\n  <p>An often-used phrase is \"If at first you don't succeed, try, try again.\" Attackers may try to break into your account by writing programs that repeatedly guess different passwords. Without some kind of protection against brute force techniques, the attack\n will eventually succeed. You don't have to be advanced to be persistent.</p>\n  <h2>Mitigation</h2>\n  <p>Common protection mechanisms are:</p>\n  <ol>\n    <li>\n      <p>\n        <strong>Disconnect the user after a small number of failed attempts.</strong>\n      </p>\n    </li>\n    <li>\n      <p>\n        <strong>Implement a timeout.</strong>\n      </p>\n    </li>\n    <li>\n      <p>\n        <strong>Lock&amp;nbsp;the targeted account.</strong>\n      </p>\n    </li>\n    <li>\n      <p>\n        <strong>Require a computational task on the user's part.</strong> This technique is commonly known as CAPTCHA.</p>\n    </li>\n    <li>\n      <p>\n        <strong>Use a secure framework. </strong>Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid. Consider using libraries with authentication capabilities such as\n<em>OpenSSL</em> or the <em>ESAPI Authenticator</em>.</p>\n    </li>\n  </ol>\n  <h2>Additional Information</h2>\n  <ul>\n    <li>For more information about improper restriction of excessive authentication attempts vulnerabilities, please see\n<a href=\"http://cwe.mitre.org/top25/index.html#CWE-307\">http://cwe.mitre.org/top25/index.html#CWE-307</a></li>\n  </ul>"
 }

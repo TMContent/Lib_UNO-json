@@ -1,6 +1,6 @@
 {
   "id": "00000000-0000-0000-0000-00000060779f",
-  "checksum": "0dd5582280f8ba3c20013b949d13e9ec40bb0966",
+  "checksum": "cbc0349608ea6bedaabe68d1a4855dd790930cd5",
   "words": {
     "5": [
       "ol",
@@ -162,7 +162,7 @@
       "a",
       "title"
     ],
-    "ssl": [
+    "tls": [
       "p",
       "p",
       "p",
@@ -784,40 +784,40 @@
     ],
     "ul": [
       "iOS applications that send or receive sensitive data over the network.",
-      "Disable Self-signed SSL Certificates\n Use SSL to Protect Communications\n Use Strong SSL Configurations",
-      "Self-signed SSL Certificates Are Disabled\n SSL Is Used to Protect Communications\n Strong SSL Configurations Are Used",
-      "For more information about the NSURLRequest class, please see http://developer.apple.com/library/ios/#DOCUMENTATION/Cocoa/Reference/Foundation/Classes/NSURLRequest_Class/Reference/Reference.html\n For more information about the NSURLConnection class, please see https://developer.apple.com/library/mac/#documentation/Cocoa/Reference/Foundation/Classes/nsurlconnection_Class/Reference/Reference.html\n For the \"URL Loading System Programming Guide\", please see http://developer.apple.com/library/ios/#DOCUMENTATION/Cocoa/Conceptual/URLLoadingSystem/URLLoadingSystem.html\n For more information on proper SSL configuration in general, please see https://www.owasp.org/index.php/Transport_Layer_Protection_Cheat_Sheet"
+      "Disable Self-signed TLS Certificates\n Use TLS to Protect Communications\n Use Strong TLS Configurations",
+      "Self-signed TLS Certificates Are Disabled\n TLS Is Used to Protect Communications\n Strong TLS Configurations Are Used",
+      "For more information about the NSURLRequest class, please see http://developer.apple.com/library/ios/#DOCUMENTATION/Cocoa/Reference/Foundation/Classes/NSURLRequest_Class/Reference/Reference.html\n For more information about the NSURLConnection class, please see https://developer.apple.com/library/mac/#documentation/Cocoa/Reference/Foundation/Classes/nsurlconnection_Class/Reference/Reference.html\n For the \"URL Loading System Programming Guide\", please see http://developer.apple.com/library/ios/#DOCUMENTATION/Cocoa/Conceptual/URLLoadingSystem/URLLoadingSystem.html\n For more information on proper TLS configuration in general, please see https://www.owasp.org/index.php/Transport_Layer_Protection_Cheat_Sheet"
     ],
     "li": [
       "iOS applications that send or receive sensitive data over the network.",
       "Identify all communications performed by the application. Review the application design to identify all network communications performed by the application.",
       "Define communication security requirements. Define which network communications need to be encrypted. All transmissions that include sensitive data, including authentication credentials and session IDS, should be encrypted. In some cases, it might be practical to encrypt all network connections.",
       "Identify code that uses the network. Identify code that is responsible for each network communication that needs to be encrypted.",
-      "Add code that uses SSL. Rewrite code that performs sensitive network communications to use SSL. The NSURLRequest and NSURLConnection classes support SSL with an acceptably secure default configuration starting with iOS 5 - this is the most practical way to use SSL on iOS and should be sufficient for most applications.",
-      "Disable Self-signed SSL Certificates",
-      "Use SSL to Protect Communications",
-      "Use Strong SSL Configurations",
-      "Self-signed SSL Certificates Are Disabled",
-      "SSL Is Used to Protect Communications",
-      "Strong SSL Configurations Are Used",
+      "Add code that uses TLS. Rewrite code that performs sensitive network communications to use TLS. The NSURLRequest and NSURLConnection classes support TLS with an acceptably secure default configuration starting with iOS 5 - this is the most practical way to use TLS on iOS and should be sufficient for most applications.",
+      "Disable Self-signed TLS Certificates",
+      "Use TLS to Protect Communications",
+      "Use Strong TLS Configurations",
+      "Self-signed TLS Certificates Are Disabled",
+      "TLS Is Used to Protect Communications",
+      "Strong TLS Configurations Are Used",
       "For more information about the NSURLRequest class, please see http://developer.apple.com/library/ios/#DOCUMENTATION/Cocoa/Reference/Foundation/Classes/NSURLRequest_Class/Reference/Reference.html",
       "For more information about the NSURLConnection class, please see https://developer.apple.com/library/mac/#documentation/Cocoa/Reference/Foundation/Classes/nsurlconnection_Class/Reference/Reference.html",
       "For the \"URL Loading System Programming Guide\", please see http://developer.apple.com/library/ios/#DOCUMENTATION/Cocoa/Conceptual/URLLoadingSystem/URLLoadingSystem.html",
-      "For more information on proper SSL configuration in general, please see https://www.owasp.org/index.php/Transport_Layer_Protection_Cheat_Sheet"
+      "For more information on proper TLS configuration in general, please see https://www.owasp.org/index.php/Transport_Layer_Protection_Cheat_Sheet"
     ],
     "p": [
-      "Use SSL to protect network communications.",
-      "Properly using SSL to encrypt network communications prevents eavesdropping attacks and other types of man-in-the-middle attacks.",
-      "To use SSL to protect communications:"
+      "Use TLS to protect network communications.",
+      "Properly using TLS to encrypt network communications prevents eavesdropping attacks and other types of man-in-the-middle attacks.",
+      "To use TLS to protect communications:"
     ],
     "ol": [
-      "Identify all communications performed by the application. Review the application design to identify all network communications performed by the application.\n Define communication security requirements. Define which network communications need to be encrypted. All transmissions that include sensitive data, including authentication credentials and session IDS, should be encrypted. In some cases, it might be practical to encrypt all network connections.\n Identify code that uses the network. Identify code that is responsible for each network communication that needs to be encrypted.\n Add code that uses SSL. Rewrite code that performs sensitive network communications to use SSL. The NSURLRequest and NSURLConnection classes support SSL with an acceptably secure default configuration starting with iOS 5 - this is the most practical way to use SSL on iOS and should be sufficient for most applications."
+      "Identify all communications performed by the application. Review the application design to identify all network communications performed by the application.\n Define communication security requirements. Define which network communications need to be encrypted. All transmissions that include sensitive data, including authentication credentials and session IDS, should be encrypted. In some cases, it might be practical to encrypt all network connections.\n Identify code that uses the network. Identify code that is responsible for each network communication that needs to be encrypted.\n Add code that uses TLS. Rewrite code that performs sensitive network communications to use TLS. The NSURLRequest and NSURLConnection classes support TLS with an acceptably secure default configuration starting with iOS 5 - this is the most practical way to use TLS on iOS and should be sufficient for most applications."
     ],
     "strong": [
       "Identify all communications performed by the application.",
       "Define communication security requirements.",
       "Identify code that uses the network.",
-      "Add code that uses SSL."
+      "Add code that uses TLS."
     ],
     "em": [
       "NSURLRequest",
@@ -826,12 +826,12 @@
       "NSURLConnection"
     ],
     "a": [
-      "Disable Self-signed SSL Certificates",
-      "Use SSL to Protect Communications",
-      "Use Strong SSL Configurations",
-      "Self-signed SSL Certificates Are Disabled",
-      "SSL Is Used to Protect Communications",
-      "Strong SSL Configurations Are Used",
+      "Disable Self-signed TLS Certificates",
+      "Use TLS to Protect Communications",
+      "Use Strong TLS Configurations",
+      "Self-signed TLS Certificates Are Disabled",
+      "TLS Is Used to Protect Communications",
+      "Strong TLS Configurations Are Used",
       "http://developer.apple.com/library/ios/#DOCUMENTATION/Cocoa/Reference/Foundation/Classes/NSURLRequest_Class/Reference/Reference.html",
       "https://developer.apple.com/library/mac/#documentation/Cocoa/Reference/Foundation/Classes/nsurlconnection_Class/Reference/Reference.html",
       "http://developer.apple.com/library/ios/#DOCUMENTATION/Cocoa/Conceptual/URLLoadingSystem/URLLoadingSystem.html",
@@ -841,27 +841,27 @@
   "links": [
     {
       "href": "00000000-0000-0000-0000-0000006aa5d9",
-      "text": "Disable Self-signed SSL Certificates"
+      "text": "Disable Self-signed TLS Certificates"
     },
     {
       "href": "00000000-0000-0000-0000-00000060779f",
-      "text": "Use SSL to Protect Communications"
+      "text": "Use TLS to Protect Communications"
     },
     {
       "href": "00000000-0000-0000-0000-0000007db8fe",
-      "text": "Use Strong SSL Configurations"
+      "text": "Use Strong TLS Configurations"
     },
     {
       "href": "00000000-0000-0000-0000-00000092c321",
-      "text": "Self-signed SSL Certificates Are Disabled"
+      "text": "Self-signed TLS Certificates Are Disabled"
     },
     {
       "href": "00000000-0000-0000-0000-0000005faaf0",
-      "text": "SSL Is Used to Protect Communications"
+      "text": "TLS Is Used to Protect Communications"
     },
     {
       "href": "00000000-0000-0000-0000-0000006b67b3",
-      "text": "Strong SSL Configurations Are Used"
+      "text": "Strong TLS Configurations Are Used"
     },
     {
       "href": "http://developer.apple.com/library/ios/#DOCUMENTATION/Cocoa/Reference/Foundation/Classes/NSURLRequest_Class/Reference/Reference.html",
@@ -880,5 +880,5 @@
       "text": "https://www.owasp.org/index.php/Transport_Layer_Protection_Cheat_Sheet"
     }
   ],
-  "html": "<h2>Applies To</h2><ul><li> iOS applications that send or receive sensitive data over the network.</li>\n</ul><h2>What to Do</h2><p>Use SSL to protect network communications.\n</p><h2>Why</h2><p>Properly using SSL to encrypt network communications prevents eavesdropping attacks and other types of man-in-the-middle attacks.\n</p><h2>How</h2><p>To use SSL to protect communications:\n</p><ol>\n<li> <strong>Identify all communications performed by the application.</strong> Review the application design to identify all network communications performed by the application.</li>\n<li> <strong>Define communication security requirements.</strong> Define which network communications need to be encrypted. All transmissions that include sensitive data, including authentication credentials and session IDS, should be encrypted. In some cases, it might be practical to encrypt all network connections.</li>\n<li> <strong>Identify code that uses the network.</strong> Identify code that is responsible for each network communication that needs to be encrypted.</li>\n<li> <strong>Add code that uses SSL.</strong> Rewrite code that performs sensitive network communications to use SSL. The <em>NSURLRequest</em> and <em>NSURLConnection</em> classes support SSL with an acceptably secure default configuration starting with iOS 5 - this is the most practical way to use SSL on iOS and should be sufficient for most applications. </li>\n</ol><h2>Communication Security Guidelines</h2><ul><li> <a href=\"00000000-0000-0000-0000-0000006aa5d9\">Disable Self-signed SSL Certificates</a></li>\n<li> <a href=\"00000000-0000-0000-0000-00000060779f\">Use SSL to Protect Communications</a></li>\n<li> <a href=\"00000000-0000-0000-0000-0000007db8fe\">Use Strong SSL Configurations</a></li>\n</ul><h2>Communication Security Checklists</h2><ul><li> <a href=\"00000000-0000-0000-0000-00000092c321\">Self-signed SSL Certificates Are Disabled</a></li>\n<li> <a href=\"00000000-0000-0000-0000-0000005faaf0\">SSL Is Used to Protect Communications</a></li>\n<li> <a href=\"00000000-0000-0000-0000-0000006b67b3\">Strong SSL Configurations Are Used</a></li>\n</ul><h2>Additional Resources</h2><ul><li> For more information about the <em>NSURLRequest</em> class, please see <a href=\"http://developer.apple.com/library/ios/#DOCUMENTATION/Cocoa/Reference/Foundation/Classes/NSURLRequest_Class/Reference/Reference.html\">http://developer.apple.com/library/ios/#DOCUMENTATION/Cocoa/Reference/Foundation/Classes/NSURLRequest_Class/Reference/Reference.html</a></li>\n<li> For more information about the <em>NSURLConnection</em> class, please see <a href=\"https://developer.apple.com/library/mac/#documentation/Cocoa/Reference/Foundation/Classes/nsurlconnection_Class/Reference/Reference.html\">https://developer.apple.com/library/mac/#documentation/Cocoa/Reference/Foundation/Classes/nsurlconnection_Class/Reference/Reference.html</a></li>\n<li> For the \"URL Loading System Programming Guide\", please see <a href=\"http://developer.apple.com/library/ios/#DOCUMENTATION/Cocoa/Conceptual/URLLoadingSystem/URLLoadingSystem.html\">http://developer.apple.com/library/ios/#DOCUMENTATION/Cocoa/Conceptual/URLLoadingSystem/URLLoadingSystem.html</a></li>\n<li> For more information on proper SSL configuration in general, please see <a href=\"https://www.owasp.org/index.php/Transport_Layer_Protection_Cheat_Sheet\">https://www.owasp.org/index.php/Transport_Layer_Protection_Cheat_Sheet</a></li></ul>"
+  "html": "<h2>Applies To</h2><ul><li> iOS applications that send or receive sensitive data over the network.</li>\n</ul><h2>What to Do</h2><p>Use TLS to protect network communications.\n</p><h2>Why</h2><p>Properly using TLS to encrypt network communications prevents eavesdropping attacks and other types of man-in-the-middle attacks.\n</p><h2>How</h2><p>To use TLS to protect communications:\n</p><ol>\n<li> <strong>Identify all communications performed by the application.</strong> Review the application design to identify all network communications performed by the application.</li>\n<li> <strong>Define communication security requirements.</strong> Define which network communications need to be encrypted. All transmissions that include sensitive data, including authentication credentials and session IDS, should be encrypted. In some cases, it might be practical to encrypt all network connections.</li>\n<li> <strong>Identify code that uses the network.</strong> Identify code that is responsible for each network communication that needs to be encrypted.</li>\n<li> <strong>Add code that uses TLS.</strong> Rewrite code that performs sensitive network communications to use TLS. The <em>NSURLRequest</em> and <em>NSURLConnection</em> classes support TLS with an acceptably secure default configuration starting with iOS 5 - this is the most practical way to use TLS on iOS and should be sufficient for most applications. </li>\n</ol><h2>Communication Security Guidelines</h2><ul><li> <a href=\"00000000-0000-0000-0000-0000006aa5d9\">Disable Self-signed TLS Certificates</a></li>\n<li> <a href=\"00000000-0000-0000-0000-00000060779f\">Use TLS to Protect Communications</a></li>\n<li> <a href=\"00000000-0000-0000-0000-0000007db8fe\">Use Strong TLS Configurations</a></li>\n</ul><h2>Communication Security Checklists</h2><ul><li> <a href=\"00000000-0000-0000-0000-00000092c321\">Self-signed TLS Certificates Are Disabled</a></li>\n<li> <a href=\"00000000-0000-0000-0000-0000005faaf0\">TLS Is Used to Protect Communications</a></li>\n<li> <a href=\"00000000-0000-0000-0000-0000006b67b3\">Strong TLS Configurations Are Used</a></li>\n</ul><h2>Additional Resources</h2><ul><li> For more information about the <em>NSURLRequest</em> class, please see <a href=\"http://developer.apple.com/library/ios/#DOCUMENTATION/Cocoa/Reference/Foundation/Classes/NSURLRequest_Class/Reference/Reference.html\">http://developer.apple.com/library/ios/#DOCUMENTATION/Cocoa/Reference/Foundation/Classes/NSURLRequest_Class/Reference/Reference.html</a></li>\n<li> For more information about the <em>NSURLConnection</em> class, please see <a href=\"https://developer.apple.com/library/mac/#documentation/Cocoa/Reference/Foundation/Classes/nsurlconnection_Class/Reference/Reference.html\">https://developer.apple.com/library/mac/#documentation/Cocoa/Reference/Foundation/Classes/nsurlconnection_Class/Reference/Reference.html</a></li>\n<li> For the \"URL Loading System Programming Guide\", please see <a href=\"http://developer.apple.com/library/ios/#DOCUMENTATION/Cocoa/Conceptual/URLLoadingSystem/URLLoadingSystem.html\">http://developer.apple.com/library/ios/#DOCUMENTATION/Cocoa/Conceptual/URLLoadingSystem/URLLoadingSystem.html</a></li>\n<li> For more information on proper TLS configuration in general, please see <a href=\"https://www.owasp.org/index.php/Transport_Layer_Protection_Cheat_Sheet\">https://www.owasp.org/index.php/Transport_Layer_Protection_Cheat_Sheet</a></li></ul>"
 }

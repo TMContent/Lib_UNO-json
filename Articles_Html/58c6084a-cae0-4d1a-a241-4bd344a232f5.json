@@ -1,6 +1,6 @@
 {
   "id": "58c6084a-cae0-4d1a-a241-4bd344a232f5",
-  "checksum": "7cfc009bad90db97d9c15a7e54f1b9b25c2ed6c0",
+  "checksum": "d4e440eb2ff3ffacb8add9456a92c0f6e72ef55c",
   "words": {
     "description": [
       "h1"
@@ -158,7 +158,7 @@
       "pre",
       "pre"
     ],
-    "rngcryptoserviceprovider);byte[]": [
+    "rngcryptoserviceprovider);byte&#91;&#93;": [
       "pre",
       "pre"
     ],
@@ -166,7 +166,7 @@
       "pre",
       "pre"
     ],
-    "bytekeysize];rng.getbytes(key);": [
+    "byte&#91keysize&#93;;rng.getbytes(key);": [
       "pre",
       "pre"
     ],
@@ -191,6 +191,9 @@
     "guidance": [
       "p"
     ],
+    "sink]": [
+      "title"
+    ],
     "a": [
       "title"
     ],
@@ -213,8 +216,8 @@
       "RNGCryptoServiceProvider"
     ],
     "pre": [
-      "using System.Security.Cryptography;. . .RNGCryptoServiceProvider rng = new RNGCryptoServiceProvider();byte[] key = new byte[keySize];rng.GetBytes(key);",
-      "using System.Security.Cryptography;. . .RNGCryptoServiceProvider rng = new RNGCryptoServiceProvider();byte[] key = new byte[keySize];rng.GetBytes(key);"
+      "using System.Security.Cryptography;. . .RNGCryptoServiceProvider rng = new RNGCryptoServiceProvider();byte&#91;&#93; key = new byte&#91;keySize&#93;;rng.GetBytes(key);",
+      "using System.Security.Cryptography;. . .RNGCryptoServiceProvider rng = new RNGCryptoServiceProvider();byte&#91;&#93; key = new byte&#91;keySize&#93;;rng.GetBytes(key);"
     ],
     "br": [
       "",
@@ -226,5 +229,5 @@
     ]
   },
   "links": [],
-  "html": "<h1>Description</h1>\r\n  <p>If you need to generate encryption keys programmatically, use the <b>RNGCryptoServiceProvider</b> class to create keys and initialization vectors and do not use the <b>Random</b> class. Unlike the <b>Random</b> class, <b>RNGCryptoServiceProvider</b> creates cryptographically strong random numbers that are FIPS-140 compliant. The following code example shows how to use this function. </p>\r\n  <pre>\r\n    <pre>using System.Security.Cryptography;<br />. . .<br />RNGCryptoServiceProvider rng = new RNGCryptoServiceProvider();<br />byte&#91;&#93; key = new byte&#91;keySize&#93;;rng.GetBytes(key);</pre>\r\n  </pre>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
+  "html": "<h1>Description</h1>\n  <p>If you need to generate encryption keys programmatically, use the <b>RNGCryptoServiceProvider</b> class to create keys and initialization vectors and do not use the <b>Random</b> class. Unlike the <b>Random</b> class, <b>RNGCryptoServiceProvider</b> creates cryptographically strong random numbers that are FIPS-140 compliant. The following code example shows how to use this function. </p>\n  <pre>\n    <pre>using System.Security.Cryptography;<br />. . .<br />RNGCryptoServiceProvider rng = new RNGCryptoServiceProvider();<br />byte&amp;#91;&amp;#93; key = new byte&amp;#91;keySize&amp;#93;;rng.GetBytes(key);</pre>\n  </pre>\n  <hr />\n  <p>Adapted from Microsoft patterns &amp; practices guidance.</p>"
 }

@@ -1,6 +1,6 @@
 {
   "id": "20b0fd6d-bfc8-4a26-96e7-f698a8065ce5",
-  "checksum": "65960eab5cf435c6c5555bc4bb2da9499be36650",
+  "checksum": "a94c21571f91c13f4d9a5adb8a1e75f8dd9cf898",
   "words": {
     "applies": [
       "h1"
@@ -399,5 +399,5 @@
       "text": "http://www.owasp.org/index.php/Double_Free"
     }
   ],
-  "html": "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>C++</li>\r\n  </ul>\r\n  <h1>What to Check For</h1>\r\n  <p>Verify that dynamically allocated memory is only freed once.</p>\r\n  <h1>Why</h1>\r\n  <p>Freeing the same memory twice corrupts the memory management structures of the program and may result in a buffer overflow, leading to an arbitrary code execution vulnerability.</p>\r\n  <h1>How to Check</h1>\r\n  <p>Identify all code that frees memory and pay particular attention to memory being freed from loops or from conditional statements. Verify that there are no conditions that result in the same memory being freed multiple times. The usual sources of double-free bugs are handling of error conditions and lack of uniform approach to allocating and deallocating memory.</p>\r\n  <h1>How to Fix</h1>\r\n  <p>If code that might free the same memory multiple times is detected, it has to be rewritten. Use a centralized approach to allocating and deallocating memory by writing utility functions that handle these tasks.</p>\r\n  <h1>Additional Resources</h1>\r\n  <ul>\r\n    <li>For more information about the double-free vulnerability, please see <a href=\"http://www.owasp.org/index.php/Double_Free\">http://www.owasp.org/index.php/Double_Free</a></li>\r\n  </ul>\r\n  <br />"
+  "html": "<h1>Applies to</h1>\n  <ul>\n    <li>C++</li>\n  </ul>\n  <h1>What to Check For</h1>\n  <p>Verify that dynamically allocated memory is only freed once.</p>\n  <h1>Why</h1>\n  <p>Freeing the same memory twice corrupts the memory management structures of the program and may result in a buffer overflow, leading to an arbitrary code execution vulnerability.</p>\n  <h1>How to Check</h1>\n  <p>Identify all code that frees memory and pay particular attention to memory being freed from loops or from conditional statements. Verify that there are no conditions that result in the same memory being freed multiple times. The usual sources of double-free bugs are handling of error conditions and lack of uniform approach to allocating and deallocating memory.</p>\n  <h1>How to Fix</h1>\n  <p>If code that might free the same memory multiple times is detected, it has to be rewritten. Use a centralized approach to allocating and deallocating memory by writing utility functions that handle these tasks.</p>\n  <h1>Additional Resources</h1>\n  <ul>\n    <li>For more information about the double-free vulnerability, please see <a href=\"http://www.owasp.org/index.php/Double_Free\">http://www.owasp.org/index.php/Double_Free</a></li>\n  </ul>\n  <br />"
 }

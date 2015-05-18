@@ -1,6 +1,6 @@
 {
   "id": "1de592cb-6f2a-42b5-a71d-756bbf499bc0",
-  "checksum": "36a00c9e5f70d3df91f4baa790618f0a6b11cfdd",
+  "checksum": "321720101247fcdf5feb6d95424a14d7cedcecbd",
   "words": {
     "23": [
       "ul",
@@ -396,7 +396,7 @@
       "Related Items"
     ],
     "ul": [
-      "PCI DSS Requirement 2.3\r\n    PCI DSS Requirement 2.3.a\r\n    PCI DSS Requirement 2.3.c",
+      "PCI DSS Requirement 2.3\n    PCI DSS Requirement 2.3.a\n    PCI DSS Requirement 2.3.c",
       "Encrypt Remote Administrator Access"
     ],
     "li": [
@@ -409,7 +409,7 @@
       "All non-console administrative access should be encrypted.",
       "Encrypting remote administrative access ensures that a potential attacker cannot get administrative authentication credentials or other information about the network by eavesdropping.",
       "Observe an administrator log in to each system available for remote administration to make sure that a strong encryption method is invoked before the administrator is asked for a password. This should be observed over the external and local networks.",
-      "Use a strong encryption tunnel to secure administrative access. The exact type of tunnel depends on the application. Some common tunnels are VPN, SSH, and SSL. Most modern systems include an option or functionality to encrypt remote administrative access.\r\n For detailed instructions on encrypting administrative access on your systems, please refer to the vendor's documentation or technical support."
+      "Use a strong encryption tunnel to secure administrative access. The exact type of tunnel depends on the application. Some common tunnels are VPN, SSH, and SSL. Most modern systems include an option or functionality to encrypt remote administrative access.\n For detailed instructions on encrypting administrative access on your systems, please refer to the vendor's documentation or technical support."
     ],
     "a": [
       "Encrypt Remote Administrator Access"
@@ -421,5 +421,5 @@
       "text": "Encrypt Remote Administrator Access"
     }
   ],
-  "html": "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 2.3</li>\r\n    <li>PCI DSS Requirement 2.3.a</li>\r\n    <li>PCI DSS Requirement 2.3.c</li>\r\n  </ul>\r\n  <h1>What to Check For</h1>\r\n  <p>All non-console administrative access should be encrypted.</p>\r\n  <h1>Why</h1>\r\n  <p>Encrypting remote administrative access ensures that a potential attacker cannot get administrative authentication credentials or other information about the network by eavesdropping.</p>\r\n  <h1>How to Check</h1>\r\n  <p>Observe an administrator log in to each system available for remote administration to make sure that a strong encryption method is invoked before the administrator is asked for a password. This should be observed over the external and local networks.</p>\r\n  <h1>How to Fix</h1>\r\n  <p>Use a strong encryption tunnel to secure administrative access. The exact type of tunnel depends on the application. Some common tunnels are VPN, SSH, and SSL. Most modern systems include an option or functionality to encrypt remote administrative access.\r\n For detailed instructions on encrypting administrative access on your systems, please refer to the vendor's documentation or technical support.</p>\r\n  <h1>Related Items</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/4f3287a7-aafd-4d85-8387-ec24e2bdd656\">Encrypt Remote Administrator Access</a>\r\n    </li>\r\n  </ul>"
+  "html": "<h1>Applies to</h1>\n  <ul>\n    <li>PCI DSS Requirement 2.3</li>\n    <li>PCI DSS Requirement 2.3.a</li>\n    <li>PCI DSS Requirement 2.3.c</li>\n  </ul>\n  <h1>What to Check For</h1>\n  <p>All non-console administrative access should be encrypted.</p>\n  <h1>Why</h1>\n  <p>Encrypting remote administrative access ensures that a potential attacker cannot get administrative authentication credentials or other information about the network by eavesdropping.</p>\n  <h1>How to Check</h1>\n  <p>Observe an administrator log in to each system available for remote administration to make sure that a strong encryption method is invoked before the administrator is asked for a password. This should be observed over the external and local networks.</p>\n  <h1>How to Fix</h1>\n  <p>Use a strong encryption tunnel to secure administrative access. The exact type of tunnel depends on the application. Some common tunnels are VPN, SSH, and SSL. Most modern systems include an option or functionality to encrypt remote administrative access.\n For detailed instructions on encrypting administrative access on your systems, please refer to the vendor's documentation or technical support.</p>\n  <h1>Related Items</h1>\n  <ul>\n    <li>\n      <a href=\"/article/4f3287a7-aafd-4d85-8387-ec24e2bdd656\">Encrypt Remote Administrator Access</a>\n    </li>\n  </ul>"
 }

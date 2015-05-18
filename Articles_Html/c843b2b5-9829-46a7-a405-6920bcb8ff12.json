@@ -1,6 +1,6 @@
 {
   "id": "c843b2b5-9829-46a7-a405-6920bcb8ff12",
-  "checksum": "403e1b3178917a33b0909bac8a4b0cf9cdcba173",
+  "checksum": "32482fab45b08e4e213930be67adf9dfc1396f45",
   "words": {
     "529": [
       "ul",
@@ -465,7 +465,7 @@
     ],
     "ul": [
       "Web Application",
-      "531. This means an attempt was made to log on using a disabled account. \r\n529. This means an attempt was made to log on using an unknown user account or using a valid user account but with an invalid password. An unexpected increase in the number of these audit events might indicate an attempt to guess passwords."
+      "531. This means an attempt was made to log on using a disabled account. \n529. This means an attempt was made to log on using an unknown user account or using a valid user account but with an invalid password. An unexpected increase in the number of these audit events might indicate an attempt to guess passwords."
     ],
     "li": [
       "Web Application",
@@ -498,12 +498,12 @@
       "529"
     ],
     "ol": [
-      "Start the Local Security Policy tool from the Administrative Tools program group. \r\nExpand Local Policies and then select Audit PolicyDouble-click Audit account logon events. \r\nClick Failure and then OK."
+      "Start the Local Security Policy tool from the Administrative Tools program group. \nExpand Local Policies and then select Audit PolicyDouble-click Audit account logon events. \nClick Failure and then OK."
     ],
     "hr": [
       ""
     ]
   },
   "links": [],
-  "html": "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>\r\n      <div>Web Application</div>\r\n    </li>\r\n  </ul>\r\n  <h1>What to Check For</h1>\r\n  <p>Check to ensure that failed logon attempts are audited to detect and trace suspicious behavior.</p>\r\n  <p />\r\n  <h1>How to Fix</h1>\r\n  <p>You must log failed logon attempts to be able to detect and trace suspicious behavior.</p>\r\n  <p>\r\n    <b>To audit failed logon attempts</b>\r\n  </p>\r\n  <ol>\r\n    <li>Start the Local Security Policy tool from the Administrative Tools program group. \r\n<li>Expand <b>Local Policies</b> and then select <b>Audit Policy</b><li>Double-click <b>Audit account logon events</b>. \r\n<li>Click <b>Failure</b> and then <b>OK</b>. </li></li></li></li>\r\n  </ol>\r\n  <p>Logon failures are recorded as events in the Windows security event log. The following event IDs are suspicious: </p>\r\n  <ul>\r\n    <li>\r\n      <b>531</b>. This means an attempt was made to log on using a disabled account. \r\n<li><b>529</b>. This means an attempt was made to log on using an unknown user account or using a valid user account but with an invalid password. An unexpected increase in the number of these audit events might indicate an attempt to guess passwords. </li></li>\r\n  </ul>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
+  "html": "<h1>Applies to</h1>\n  <ul>\n    <li>\n      <div>Web Application</div>\n    </li>\n  </ul>\n  <h1>What to Check For</h1>\n  <p>Check to ensure that failed logon attempts are audited to detect and trace suspicious behavior.</p>\n  <p />\n  <h1>How to Fix</h1>\n  <p>You must log failed logon attempts to be able to detect and trace suspicious behavior.</p>\n  <p>\n    <b>To audit failed logon attempts</b>\n  </p>\n  <ol>\n    <li>Start the Local Security Policy tool from the Administrative Tools program group. \n<li>Expand <b>Local Policies</b> and then select <b>Audit Policy</b><li>Double-click <b>Audit account logon events</b>. \n<li>Click <b>Failure</b> and then <b>OK</b>. </li></li></li></li>\n  </ol>\n  <p>Logon failures are recorded as events in the Windows security event log. The following event IDs are suspicious: </p>\n  <ul>\n    <li>\n      <b>531</b>. This means an attempt was made to log on using a disabled account. \n<li><b>529</b>. This means an attempt was made to log on using an unknown user account or using a valid user account but with an invalid password. An unexpected increase in the number of these audit events might indicate an attempt to guess passwords. </li></li>\n  </ul>\n  <hr />\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
 }

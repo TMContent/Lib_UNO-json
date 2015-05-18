@@ -1,6 +1,6 @@
 {
   "id": "00000000-0000-0000-0000-0000002b164a",
-  "checksum": "574842407d65f3bf3865eb6a8bc8c51f8d6a3390",
+  "checksum": "bc529c59af718fa106b3e5ccb5cbac639fd65d98",
   "words": {
     "what": [
       "h2"
@@ -114,7 +114,7 @@
       "li",
       "strong"
     ],
-    "ssl": [
+    "tls": [
       "p",
       "p",
       "p",
@@ -865,29 +865,29 @@
       "Additional Resources"
     ],
     "p": [
-      "Verify that SSL is used to protect communications.",
-      "Using SSL to secure network communications prevents eavesdropping attacks.",
-      "To verify that SSL is used to protect network connections:",
-      "To use SSL to protect network connections:"
+      "Verify that TLS is used to protect communications.",
+      "Using TLS to secure network communications prevents eavesdropping attacks.",
+      "To verify that TLS is used to protect network connections:",
+      "To use TLS to protect network connections:"
     ],
     "ol": [
-      "Identify all communications performed by the application. Review the application design to identify all network communications that are performed by the application.\n Review communication security requirements. Examine which network communications need to be encrypted. All transmissions that include sensitive data should be encrypted. In some cases, it might be practical to encrypt all network connections.\n Identify code that uses the network. Identify code that is responsible for each network communication that needs to be encrypted.\n Verify that SSL is used to protect network connections. Examine code that is responsible for network connections that need to be encrypted and make sure that it uses SSL.",
-      "Identify all communications performed by the application. Review the application design to identify all network communications that are performed by the application.\n Define communication security requirements. Define which network communications need to be encrypted. All transmissions that include sensitive data should be encrypted. In some cases, it might be practical to encrypt all network connections.\n Identify code that uses the network. Identify code that is responsible for each network communication that needs to be encrypted.\n Add code that uses SSL. There are multiple methods for using SSL in Android to choose from based on application requirements. Using the SSLSocketFactory class is one of the most common solutions."
+      "Identify all communications performed by the application. Review the application design to identify all network communications that are performed by the application.\n Review communication security requirements. Examine which network communications need to be encrypted. All transmissions that include sensitive data should be encrypted. In some cases, it might be practical to encrypt all network connections.\n Identify code that uses the network. Identify code that is responsible for each network communication that needs to be encrypted.\n Verify that TLS is used to protect network connections. Examine code that is responsible for network connections that need to be encrypted and make sure that it uses TLS.",
+      "Identify all communications performed by the application. Review the application design to identify all network communications that are performed by the application.\n Define communication security requirements. Define which network communications need to be encrypted. All transmissions that include sensitive data should be encrypted. In some cases, it might be practical to encrypt all network connections.\n Identify code that uses the network. Identify code that is responsible for each network communication that needs to be encrypted.\n Add code that uses TLS. There are multiple methods for using TLS in Android to choose from based on application requirements. Using the SSLSocketFactory class is one of the most common solutions."
     ],
     "li": [
       "Identify all communications performed by the application. Review the application design to identify all network communications that are performed by the application.",
       "Review communication security requirements. Examine which network communications need to be encrypted. All transmissions that include sensitive data should be encrypted. In some cases, it might be practical to encrypt all network connections.",
       "Identify code that uses the network. Identify code that is responsible for each network communication that needs to be encrypted.",
-      "Verify that SSL is used to protect network connections. Examine code that is responsible for network connections that need to be encrypted and make sure that it uses SSL.",
+      "Verify that TLS is used to protect network connections. Examine code that is responsible for network connections that need to be encrypted and make sure that it uses TLS.",
       "Identify all communications performed by the application. Review the application design to identify all network communications that are performed by the application.",
       "Define communication security requirements. Define which network communications need to be encrypted. All transmissions that include sensitive data should be encrypted. In some cases, it might be practical to encrypt all network connections.",
       "Identify code that uses the network. Identify code that is responsible for each network communication that needs to be encrypted.",
-      "Add code that uses SSL. There are multiple methods for using SSL in Android to choose from based on application requirements. Using the SSLSocketFactory class is one of the most common solutions.",
-      "Disable Self-signed SSL Certificates",
-      "Use SSL to Protect Communications",
-      "Self-signed SSL Certificates Are Disabled",
-      "SSL Is Used to Protect Communications",
-      "For information about the Android SSL API, see http://developer.android.com/reference/javax/net/ssl/package-summary.html",
+      "Add code that uses TLS. There are multiple methods for using TLS in Android to choose from based on application requirements. Using the SSLSocketFactory class is one of the most common solutions.",
+      "Disable Self-signed TLS Certificates",
+      "Use TLS to Protect Communications",
+      "Self-signed TLS Certificates Are Disabled",
+      "TLS Is Used to Protect Communications",
+      "For information about the Android TLS API, see http://developer.android.com/reference/javax/net/ssl/package-summary.html",
       "For information about the SSLEngine class, see http://developer.android.com/reference/javax/net/ssl/SSLEngine.html",
       "For information about the SSLSocketFactory class, see http://developer.android.com/reference/org/apache/http/conn/ssl/SSLSocketFactory.html",
       "For information about the javax.net.ssl package, see http://developer.android.com/reference/javax/net/ssl/package-summary.html"
@@ -896,11 +896,11 @@
       "Identify all communications performed by the application.",
       "Review communication security requirements.",
       "Identify code that uses the network.",
-      "Verify that SSL is used to protect network connections.",
+      "Verify that TLS is used to protect network connections.",
       "Identify all communications performed by the application.",
       "Define communication security requirements.",
       "Identify code that uses the network.",
-      "Add code that uses SSL."
+      "Add code that uses TLS."
     ],
     "em": [
       "SSLSocketFactory",
@@ -909,15 +909,15 @@
       "javax.net.ssl"
     ],
     "ul": [
-      "Disable Self-signed SSL Certificates\n Use SSL to Protect Communications",
-      "Self-signed SSL Certificates Are Disabled\n SSL Is Used to Protect Communications",
-      "For information about the Android SSL API, see http://developer.android.com/reference/javax/net/ssl/package-summary.html\n For information about the SSLEngine class, see http://developer.android.com/reference/javax/net/ssl/SSLEngine.html\n For information about the SSLSocketFactory class, see http://developer.android.com/reference/org/apache/http/conn/ssl/SSLSocketFactory.html\n For information about the javax.net.ssl package, see http://developer.android.com/reference/javax/net/ssl/package-summary.html"
+      "Disable Self-signed TLS Certificates\n Use TLS to Protect Communications",
+      "Self-signed TLS Certificates Are Disabled\n TLS Is Used to Protect Communications",
+      "For information about the Android TLS API, see http://developer.android.com/reference/javax/net/ssl/package-summary.html\n For information about the SSLEngine class, see http://developer.android.com/reference/javax/net/ssl/SSLEngine.html\n For information about the SSLSocketFactory class, see http://developer.android.com/reference/org/apache/http/conn/ssl/SSLSocketFactory.html\n For information about the javax.net.ssl package, see http://developer.android.com/reference/javax/net/ssl/package-summary.html"
     ],
     "a": [
-      "Disable Self-signed SSL Certificates",
-      "Use SSL to Protect Communications",
-      "Self-signed SSL Certificates Are Disabled",
-      "SSL Is Used to Protect Communications",
+      "Disable Self-signed TLS Certificates",
+      "Use TLS to Protect Communications",
+      "Self-signed TLS Certificates Are Disabled",
+      "TLS Is Used to Protect Communications",
       "http://developer.android.com/reference/javax/net/ssl/package-summary.html",
       "http://developer.android.com/reference/javax/net/ssl/SSLEngine.html",
       "http://developer.android.com/reference/org/apache/http/conn/ssl/SSLSocketFactory.html",
@@ -927,19 +927,19 @@
   "links": [
     {
       "href": "00000000-0000-0000-0000-000000657ab9",
-      "text": "Disable Self-signed SSL Certificates"
+      "text": "Disable Self-signed TLS Certificates"
     },
     {
       "href": "00000000-0000-0000-0000-0000000a1df2",
-      "text": "Use SSL to Protect Communications"
+      "text": "Use TLS to Protect Communications"
     },
     {
       "href": "00000000-0000-0000-0000-0000001fdc3e",
-      "text": "Self-signed SSL Certificates Are Disabled"
+      "text": "Self-signed TLS Certificates Are Disabled"
     },
     {
       "href": "00000000-0000-0000-0000-0000002b164a",
-      "text": "SSL Is Used to Protect Communications"
+      "text": "TLS Is Used to Protect Communications"
     },
     {
       "href": "http://developer.android.com/reference/javax/net/ssl/package-summary.html",
@@ -958,5 +958,5 @@
       "text": "http://developer.android.com/reference/javax/net/ssl/package-summary.html"
     }
   ],
-  "html": "<h2>What to Check For</h2><p>Verify that SSL is used to protect communications.\n</p><h2>Why</h2><p>Using SSL to secure network communications prevents eavesdropping attacks.\n</p><h2>How to Check</h2><p>To verify that SSL is used to protect network connections:\n</p><ol>\n<li> <strong>Identify all communications performed by the application.</strong> Review the application design to identify all network communications that are performed by the application.</li>\n<li> <strong>Review communication security requirements.</strong> Examine which network communications need to be encrypted. All transmissions that include sensitive data should be encrypted. In some cases, it might be practical to encrypt all network connections.</li>\n<li> <strong>Identify code that uses the network.</strong> Identify code that is responsible for each network communication that needs to be encrypted.</li>\n<li> <strong>Verify that SSL is used to protect network connections.</strong> Examine code that is responsible for network connections that need to be encrypted and make sure that it uses SSL.</li>\n</ol><h2>How to Fix</h2><p>To use SSL to protect network connections:\n</p><ol>\n<li> <strong>Identify all communications performed by the application.</strong> Review the application design to identify all network communications that are performed by the application.</li>\n<li> <strong>Define communication security requirements.</strong> Define which network communications need to be encrypted. All transmissions that include sensitive data should be encrypted. In some cases, it might be practical to encrypt all network connections.</li>\n<li> <strong>Identify code that uses the network.</strong> Identify code that is responsible for each network communication that needs to be encrypted.</li>\n<li> <strong>Add code that uses SSL.</strong> There are multiple methods for using SSL in Android to choose from based on application requirements. Using the <em>SSLSocketFactory</em> class is one of the most common solutions.</li>\n</ol><h2>Communication Security Guidelines</h2><ul><li> <a href=\"00000000-0000-0000-0000-000000657ab9\">Disable Self-signed SSL Certificates</a></li>\n<li> <a href=\"00000000-0000-0000-0000-0000000a1df2\">Use SSL to Protect Communications</a></li>\n</ul><h2>Communication Security Checklists</h2><ul><li> <a href=\"00000000-0000-0000-0000-0000001fdc3e\">Self-signed SSL Certificates Are Disabled</a></li>\n<li> <a href=\"00000000-0000-0000-0000-0000002b164a\">SSL Is Used to Protect Communications</a></li>\n</ul><h2>Additional Resources</h2><ul><li> For information about the Android SSL API, see <a href=\"http://developer.android.com/reference/javax/net/ssl/package-summary.html\">http://developer.android.com/reference/javax/net/ssl/package-summary.html</a></li>\n<li> For information about the <em>SSLEngine</em> class, see <a href=\"http://developer.android.com/reference/javax/net/ssl/SSLEngine.html\">http://developer.android.com/reference/javax/net/ssl/SSLEngine.html</a></li>\n<li> For information about the <em>SSLSocketFactory</em> class, see <a href=\"http://developer.android.com/reference/org/apache/http/conn/ssl/SSLSocketFactory.html\">http://developer.android.com/reference/org/apache/http/conn/ssl/SSLSocketFactory.html</a></li>\n<li> For information about the <em>javax.net.ssl</em> package, see <a href=\"http://developer.android.com/reference/javax/net/ssl/package-summary.html\">http://developer.android.com/reference/javax/net/ssl/package-summary.html</a></li>\n</ul>"
+  "html": "<h2>What to Check For</h2><p>Verify that TLS is used to protect communications.\n</p><h2>Why</h2><p>Using TLS to secure network communications prevents eavesdropping attacks.\n</p><h2>How to Check</h2><p>To verify that TLS is used to protect network connections:\n</p><ol>\n<li> <strong>Identify all communications performed by the application.</strong> Review the application design to identify all network communications that are performed by the application.</li>\n<li> <strong>Review communication security requirements.</strong> Examine which network communications need to be encrypted. All transmissions that include sensitive data should be encrypted. In some cases, it might be practical to encrypt all network connections.</li>\n<li> <strong>Identify code that uses the network.</strong> Identify code that is responsible for each network communication that needs to be encrypted.</li>\n<li> <strong>Verify that TLS is used to protect network connections.</strong> Examine code that is responsible for network connections that need to be encrypted and make sure that it uses TLS.</li>\n</ol><h2>How to Fix</h2><p>To use TLS to protect network connections:\n</p><ol>\n<li> <strong>Identify all communications performed by the application.</strong> Review the application design to identify all network communications that are performed by the application.</li>\n<li> <strong>Define communication security requirements.</strong> Define which network communications need to be encrypted. All transmissions that include sensitive data should be encrypted. In some cases, it might be practical to encrypt all network connections.</li>\n<li> <strong>Identify code that uses the network.</strong> Identify code that is responsible for each network communication that needs to be encrypted.</li>\n<li> <strong>Add code that uses TLS.</strong> There are multiple methods for using TLS in Android to choose from based on application requirements. Using the <em>SSLSocketFactory</em> class is one of the most common solutions.</li>\n</ol><h2>Communication Security Guidelines</h2><ul><li> <a href=\"00000000-0000-0000-0000-000000657ab9\">Disable Self-signed TLS Certificates</a></li>\n<li> <a href=\"00000000-0000-0000-0000-0000000a1df2\">Use TLS to Protect Communications</a></li>\n</ul><h2>Communication Security Checklists</h2><ul><li> <a href=\"00000000-0000-0000-0000-0000001fdc3e\">Self-signed TLS Certificates Are Disabled</a></li>\n<li> <a href=\"00000000-0000-0000-0000-0000002b164a\">TLS Is Used to Protect Communications</a></li>\n</ul><h2>Additional Resources</h2><ul><li> For information about the Android TLS API, see <a href=\"http://developer.android.com/reference/javax/net/ssl/package-summary.html\">http://developer.android.com/reference/javax/net/ssl/package-summary.html</a></li>\n<li> For information about the <em>SSLEngine</em> class, see <a href=\"http://developer.android.com/reference/javax/net/ssl/SSLEngine.html\">http://developer.android.com/reference/javax/net/ssl/SSLEngine.html</a></li>\n<li> For information about the <em>SSLSocketFactory</em> class, see <a href=\"http://developer.android.com/reference/org/apache/http/conn/ssl/SSLSocketFactory.html\">http://developer.android.com/reference/org/apache/http/conn/ssl/SSLSocketFactory.html</a></li>\n<li> For information about the <em>javax.net.ssl</em> package, see <a href=\"http://developer.android.com/reference/javax/net/ssl/package-summary.html\">http://developer.android.com/reference/javax/net/ssl/package-summary.html</a></li>\n</ul>"
 }

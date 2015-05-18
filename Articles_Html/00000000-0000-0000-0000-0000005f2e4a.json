@@ -1,6 +1,6 @@
 {
   "id": "00000000-0000-0000-0000-0000005f2e4a",
-  "checksum": "871215e0274a9a14cfd5498e096b0fb01ac79f41",
+  "checksum": "84def0c54eed89c6ff6c1f1a4c6b19ea79877cba",
   "words": {
     "200": [
       "pre"
@@ -119,7 +119,6 @@
       "p"
     ],
     "layer": [
-      "p",
       "p"
     ],
     "security": [
@@ -128,13 +127,7 @@
       "li",
       "strong"
     ],
-    "tls)/secure": [
-      "p"
-    ],
-    "sockets": [
-      "p"
-    ],
-    "ssl).": [
+    "tls).": [
       "p"
     ],
     "why": [
@@ -148,11 +141,14 @@
       "ol",
       "li"
     ],
-    "tls/ssl": [
+    "tls": [
       "p",
+      "ol",
       "ol",
       "li",
       "strong",
+      "li",
+      "p",
       "p",
       "ul",
       "li",
@@ -721,11 +717,6 @@
       "p",
       "p"
     ],
-    "tls": [
-      "ol",
-      "li",
-      "p"
-    ],
     "such": [
       "ol",
       "li"
@@ -1029,13 +1020,13 @@
     ";\nws.onmessage": [
       "pre"
     ],
-    "{alert\"tls/ssl": [
+    "{alert\"tls": [
       "pre"
     ],
-    "alert\"tls/ssl": [
+    "alert\"tls": [
       "pre"
     ],
-    "alert“tls/ssl": [
+    "alert“tls": [
       "pre"
     ],
     "handshake": [
@@ -1403,46 +1394,46 @@
     ],
     "ul": [
       "HTML5",
-      "Validate Data Coming from WebSockets\n Check the Origin Header in the WebSocket Handshake\n Use TLS/SSL to Encrypt WebSocket Connections\n Check the Origin Attribute of WebSocket Messages\n Use the Latest WebSocket RFC 6455 Standard\n Do Not Tunnel TCP via WebSockets",
-      "Data Coming from WebSockets Is Validated\n The Origin Header in WebSocket Handshake is Checked\n TLS/SSL is Used to Encrypt WebSocket Connections\n The Origin Attribute of WebSocket Messages Is Checked\n Latest RFC 6455 Standard is Used\n TCP Is Not Tunneled via WebSockets"
+      "Validate Data Coming from WebSockets\n Check the Origin Header in the WebSocket Handshake\n Use TLS to Encrypt WebSocket Connections\n Check the Origin Attribute of WebSocket Messages\n Use the Latest WebSocket RFC 6455 Standard\n Do Not Tunnel TCP via WebSockets",
+      "Data Coming from WebSockets Is Validated\n The Origin Header in WebSocket Handshake is Checked\n TLS is Used to Encrypt WebSocket Connections\n The Origin Attribute of WebSocket Messages Is Checked\n Latest RFC 6455 Standard is Used\n TCP Is Not Tunneled via WebSockets"
     ],
     "li": [
       "HTML5",
       "Enable security certificates and keys. Consult your web server documentation to ensure that your web site produces a valid certificate with HTTPS connections.",
-      "Enable TLS/SSL on the WebSocket server. The configuration may vary depending upon the Websocket server implementation in use.",
+      "Enable TLS on the WebSocket server. The configuration may vary depending upon the Websocket server implementation in use.",
       "Connect the client to the WebSocket server and ensure connections to the WebSocket are secure. When connecting to HTML5 web applications, ensure that client browsers connect with HTTPS. Note that the code accessing the WebSocket server should use the wss protocol, which is basically ws over TLS. As such, use wss://<url> instead of the typical ws://<url> in the HTML5 application code.",
       "Validate Data Coming from WebSockets",
       "Check the Origin Header in the WebSocket Handshake",
-      "Use TLS/SSL to Encrypt WebSocket Connections",
+      "Use TLS to Encrypt WebSocket Connections",
       "Check the Origin Attribute of WebSocket Messages",
       "Use the Latest WebSocket RFC 6455 Standard",
       "Do Not Tunnel TCP via WebSockets",
       "Data Coming from WebSockets Is Validated",
       "The Origin Header in WebSocket Handshake is Checked",
-      "TLS/SSL is Used to Encrypt WebSocket Connections",
+      "TLS is Used to Encrypt WebSocket Connections",
       "The Origin Attribute of WebSocket Messages Is Checked",
       "Latest RFC 6455 Standard is Used",
       "TCP Is Not Tunneled via WebSockets"
     ],
     "p": [
-      "When using WebSockets, connect with Transport Layer Security (TLS)/Secure Sockets Layer (SSL).",
-      "Just as TLS/SSL protects and encrypts the communication tunnel in HTTP, it can encrypt a WebSockets tunnel to protect against eavesdropping and man-in-the-middle attacks. (By default, the communication tunnel with the WebSocket protocol is not encrypted.)",
+      "When using WebSockets, connect with Transport Layer Security (TLS).",
+      "Just as TLS protects and encrypts the communication tunnel in HTTP, it can encrypt a WebSockets tunnel to protect against eavesdropping and man-in-the-middle attacks. (By default, the communication tunnel with the WebSocket protocol is not encrypted.)",
       "Use this guideline for applications that employ the WebSocket protocol and need to protect sensitive data.",
       "The WebSockets protocol specification is built on HTTP. With that in mind:",
       "Below is a client-side code connection to a WebSocket server. The connection uses standard ws over standard, unencrypted HTTP. An intruder who has access to the communication stream over the network could easily intercept the communication.",
       "Client Connection:",
       "",
-      "Below is a client-side code connection to a WebSocket server using wss, which takes advantage of TLS/SSL over HTTP port 443. This change makes it much more difficult for an intruder to intercept the communication tunnel.",
+      "Below is a client-side code connection to a WebSocket server using wss, which takes advantage of TLS over HTTP port 443. This change makes it much more difficult for an intruder to intercept the communication tunnel.",
       "Client Connection:",
       "When the handshake is performed using wss, you’ll see the typical handshake for TLS over port 443 to establish the secure connection.",
       "Below is a partial communication stream seen when connecting to a WebSocket testing server at http://www.websocket.org/echo.html, and the view of the stream using a web debugging tool."
     ],
     "ol": [
-      "Enable security certificates and keys. Consult your web server documentation to ensure that your web site produces a valid certificate with HTTPS connections.\n Enable TLS/SSL on the WebSocket server. The configuration may vary depending upon the Websocket server implementation in use. \n Connect the client to the WebSocket server and ensure connections to the WebSocket are secure. When connecting to HTML5 web applications, ensure that client browsers connect with HTTPS. Note that the code accessing the WebSocket server should use the wss protocol, which is basically ws over TLS. As such, use wss://<url> instead of the typical ws://<url> in the HTML5 application code."
+      "Enable security certificates and keys. Consult your web server documentation to ensure that your web site produces a valid certificate with HTTPS connections.\n Enable TLS on the WebSocket server. The configuration may vary depending upon the Websocket server implementation in use. \n Connect the client to the WebSocket server and ensure connections to the WebSocket are secure. When connecting to HTML5 web applications, ensure that client browsers connect with HTTPS. Note that the code accessing the WebSocket server should use the wss protocol, which is basically ws over TLS. As such, use wss://<url> instead of the typical ws://<url> in the HTML5 application code."
     ],
     "strong": [
       "Enable security certificates and keys.",
-      "Enable TLS/SSL on the WebSocket server.",
+      "Enable TLS on the WebSocket server.",
       "Connect the client to the WebSocket server and ensure connections to the WebSocket are secure."
     ],
     "tt": [
@@ -1451,7 +1442,7 @@
     ],
     "pre": [
       "$(\"#open\").click (function (evt) {\nevt.preventDefault();\n\nvar host = ‘example.com’;\nvar port = ‘8887’;\nvar uri = ‘very_private’;\n\nws = new WebSocket(\"ws://” + host + “:” + port + “/” + uri );\n\nws.onmessage = function(evt) {alert(\"Non encrypted message has been received”)};\nws.onclose = function(evt) { alert(\"Non encrypted connection is closed\"); };\nws.onopen = function(evt) { alert(“Non encrypted connection has opened”) };\n});",
-      "$(\"#open\").click(function(evt) {\nevt.preventDefault();\n\nvar host = ‘example.com’;\nvar port = ‘8887’;\nvar uri = ‘very_private’;\n\nws = new WebSocket(\"wss://” + host + “:” + port + “/” + uri );\nws.onmessage = function(evt) {alert(\"TLS/SSL message has been received”)};\nws.onclose = function(evt) { alert(\"TLS/SSL connection is closed\"); };\nws.onopen = function(evt) { alert(“TLS/SSL connection has opened”) };\n});",
+      "$(\"#open\").click(function(evt) {\nevt.preventDefault();\n\nvar host = ‘example.com’;\nvar port = ‘8887’;\nvar uri = ‘very_private’;\n\nws = new WebSocket(\"wss://” + host + “:” + port + “/” + uri );\nws.onmessage = function(evt) {alert(\"TLS message has been received”)};\nws.onclose = function(evt) { alert(\"TLS connection is closed\"); };\nws.onopen = function(evt) { alert(“TLS connection has opened”) };\n});",
       "HTTP/1.1 200 Connection Established\nFiddlerGateway: Direct\nStartTime: 22:24:09.760\nConnection: close\n\nEncrypted HTTPS traffic flows through this CONNECT tunnel. HTTPS Decryption is enabled in Fiddler, so decrypted sessions running in this tunnel will be shown in the Web Sessions list.\n\nSecure Protocol: Tls\nCipher: Rc4 128bits\nHash Algorithm: Sha1 160bits\nKey Exchange: RsaKeyX 2048bits\n\n== Server Certificate ==========\n[Subject]\n  CN=*.websocket.org, OU=Domain Control Validated, O=*.websocket.org\n\n[Issuer]\n  SERIALNUMBER=07969287, CN=Go Daddy Secure Certification Authority, OU=http://certificates.godaddy.com/repository, O=\"GoDaddy.com, Inc.\", L=Scottsdale, S=Arizona, C=US\n\n[Serial Number]\n  27F9ADF2DB9921\n\n[Not Before]\n  10/19/2012 2:43:55 AM\n\n[Not After]\n  10/28/2014 5:06:24 PM\n\n[Thumbprint]\n  8A95FEB7BE9825FBE3F4F50A6662DC880764C876"
     ],
     "br": [
@@ -1461,13 +1452,13 @@
       "http://www.websocket.org/echo.html",
       "Validate Data Coming from WebSockets",
       "Check the Origin Header in the WebSocket Handshake",
-      "Use TLS/SSL to Encrypt WebSocket Connections",
+      "Use TLS to Encrypt WebSocket Connections",
       "Check the Origin Attribute of WebSocket Messages",
       "Use the Latest WebSocket RFC 6455 Standard",
       "Do Not Tunnel TCP via WebSockets",
       "Data Coming from WebSockets Is Validated",
       "The Origin Header in WebSocket Handshake is Checked",
-      "TLS/SSL is Used to Encrypt WebSocket Connections",
+      "TLS is Used to Encrypt WebSocket Connections",
       "The Origin Attribute of WebSocket Messages Is Checked",
       "Latest RFC 6455 Standard is Used",
       "TCP Is Not Tunneled via WebSockets"
@@ -1488,7 +1479,7 @@
     },
     {
       "href": "00000000-0000-0000-0000-0000005f2e4a",
-      "text": "Use TLS/SSL to Encrypt WebSocket Connections"
+      "text": "Use TLS to Encrypt WebSocket Connections"
     },
     {
       "href": "00000000-0000-0000-0000-000000736a21",
@@ -1512,7 +1503,7 @@
     },
     {
       "href": "bd870268-f104-4f6f-ba0d-6628dc34eb2a",
-      "text": "TLS/SSL is Used to Encrypt WebSocket Connections"
+      "text": "TLS is Used to Encrypt WebSocket Connections"
     },
     {
       "href": "00000000-0000-0000-0000-0000002f39d7",
@@ -1527,5 +1518,5 @@
       "text": "TCP Is Not Tunneled via WebSockets"
     }
   ],
-  "html": "<h2>Applies To</h2><ul><li> HTML5</li>\n</ul><h2>What to Do</h2><p>When using WebSockets, connect with Transport Layer Security (TLS)/Secure Sockets Layer (SSL).\n</p><h2>Why</h2><p>Just as TLS/SSL protects and encrypts the communication tunnel in HTTP, it can encrypt a WebSockets tunnel to protect against eavesdropping and man-in-the-middle attacks. (By default, the communication tunnel with the WebSocket protocol is not encrypted.) \n</p><h2>When</h2><p>Use this guideline for applications that employ the WebSocket protocol and need to protect sensitive data.\n</p><h2>How</h2><p>The WebSockets protocol specification is built on HTTP. With that in mind:\n</p><ol>\n<li> <strong>Enable security certificates and keys.</strong> Consult your web server documentation to ensure that your web site produces a valid certificate with HTTPS connections.</li>\n<li> <strong>Enable TLS/SSL on the WebSocket server.</strong> The configuration may vary depending upon the Websocket server implementation in use. </li>\n<li> <strong>Connect the client to the WebSocket server and ensure connections to the WebSocket are secure.</strong> When connecting to HTML5 web applications, ensure that client browsers connect with HTTPS. Note that the code accessing the WebSocket server should use the wss protocol, which is basically ws over TLS. As such, use <tt>wss://&lt;url&gt;</tt> instead of the typical <tt>ws://&lt;url&gt;</tt> in the HTML5 application code. </li>\n</ol>\n<h2>Problem Example</h2><p>Below is a client-side code connection to a WebSocket server. The connection uses standard ws over standard, unencrypted HTTP. An intruder who has access to the communication stream over the network could easily intercept the communication.\n</p><p>\nClient Connection:\n</p><pre>\n\n$(\"#open\").click (function (evt) {\nevt.preventDefault();\n\nvar host = ‘example.com’;\nvar port = ‘8887’;\nvar uri = ‘very_private’;\n\nws = new WebSocket(\"ws://” + host + “:” + port + “/” + uri );\n\nws.onmessage = function(evt) {alert(\"Non encrypted message has been received”)};\nws.onclose = function(evt) { alert(\"Non encrypted connection is closed\"); };\nws.onopen = function(evt) { alert(“Non encrypted connection has opened”) };\n});\n\n</pre><p>\n<br></p><h2>Solution Example</h2><p>Below is a client-side code connection to a WebSocket server using wss, which takes advantage of TLS/SSL over HTTP port 443. This change makes it much more difficult for an intruder to intercept the communication tunnel.\n</p><p>\nClient Connection:\n</p><pre>\n\n$(\"#open\").click(function(evt) {\nevt.preventDefault();\n\nvar host = ‘example.com’;\nvar port = ‘8887’;\nvar uri = ‘very_private’;\n\nws = new WebSocket(\"wss://” + host + “:” + port + “/” + uri );\nws.onmessage = function(evt) {alert(\"TLS/SSL message has been received”)};\nws.onclose = function(evt) { alert(\"TLS/SSL connection is closed\"); };\nws.onopen = function(evt) { alert(“TLS/SSL connection has opened”) };\n});\n\n</pre><p>\nWhen the handshake is performed using wss, you’ll see the typical handshake for TLS over port 443 to establish the secure connection.\n</p><p>\nBelow is a partial communication stream seen when connecting to a WebSocket testing server at <a href=\"http://www.websocket.org/echo.html\">http://www.websocket.org/echo.html</a>, and the view of the stream using a web debugging tool.\n</p><pre>\n\nHTTP/1.1 200 Connection Established\nFiddlerGateway: Direct\nStartTime: 22:24:09.760\nConnection: close\n\nEncrypted HTTPS traffic flows through this CONNECT tunnel. HTTPS Decryption is enabled in Fiddler, so decrypted sessions running in this tunnel will be shown in the Web Sessions list.\n\nSecure Protocol: Tls\nCipher: Rc4 128bits\nHash Algorithm: Sha1 160bits\nKey Exchange: RsaKeyX 2048bits\n\n== Server Certificate ==========\n[Subject]\n  CN=*.websocket.org, OU=Domain Control Validated, O=*.websocket.org\n\n[Issuer]\n  SERIALNUMBER=07969287, CN=Go Daddy Secure Certification Authority, OU=http://certificates.godaddy.com/repository, O=\"GoDaddy.com, Inc.\", L=Scottsdale, S=Arizona, C=US\n\n[Serial Number]\n  27F9ADF2DB9921\n\n[Not Before]\n  10/19/2012 2:43:55 AM\n\n[Not After]\n  10/28/2014 5:06:24 PM\n\n[Thumbprint]\n  8A95FEB7BE9825FBE3F4F50A6662DC880764C876\n\n</pre>\n<h2>WebSocket Guidelines</h2><ul><li> <a href=\"00000000-0000-0000-0000-000000869806\">Validate Data Coming from WebSockets</a></li>\n<li> <a href=\"00000000-0000-0000-0000-00000093dea4\">Check the Origin Header in the WebSocket Handshake</a></li>\n<li> <a href=\"00000000-0000-0000-0000-0000005f2e4a\">Use TLS/SSL to Encrypt WebSocket Connections</a></li>\n<li> <a href=\"00000000-0000-0000-0000-000000736a21\">Check the Origin Attribute of WebSocket Messages</a></li>\n<li> <a href=\"00000000-0000-0000-0000-0000005326a8\">Use the Latest WebSocket RFC 6455 Standard</a></li>\n<li> <a href=\"00000000-0000-0000-0000-00000085bc2f\">Do Not Tunnel TCP via WebSockets</a></li>\n</ul><h2>WebSocket Checklist Items</h2><ul><li> <a href=\"00000000-0000-0000-0000-00000086537e\">Data Coming from WebSockets Is Validated</a></li>\n<li> <a href=\"00000000-0000-0000-0000-00000077e316\">The Origin Header in WebSocket Handshake is Checked</a></li>\n<li> <a href=\"bd870268-f104-4f6f-ba0d-6628dc34eb2a\">TLS/SSL is Used to Encrypt WebSocket Connections</a></li>\n<li> <a href=\"00000000-0000-0000-0000-0000002f39d7\">The Origin Attribute of WebSocket Messages Is Checked</a></li>\n<li> <a href=\"18d5564d-00a4-4afe-a853-707269df2566\">Latest RFC 6455 Standard is Used</a></li>\n<li> <a href=\"00000000-0000-0000-0000-00000091ce5a\">TCP Is Not Tunneled via WebSockets</a></li>\n</ul>"
+  "html": "<h2>Applies To</h2><ul><li> HTML5</li>\n</ul><h2>What to Do</h2><p>When using WebSockets, connect with Transport Layer Security (TLS).\n</p><h2>Why</h2><p>Just as TLS protects and encrypts the communication tunnel in HTTP, it can encrypt a WebSockets tunnel to protect against eavesdropping and man-in-the-middle attacks. (By default, the communication tunnel with the WebSocket protocol is not encrypted.) \n</p><h2>When</h2><p>Use this guideline for applications that employ the WebSocket protocol and need to protect sensitive data.\n</p><h2>How</h2><p>The WebSockets protocol specification is built on HTTP. With that in mind:\n</p><ol>\n<li> <strong>Enable security certificates and keys.</strong> Consult your web server documentation to ensure that your web site produces a valid certificate with HTTPS connections.</li>\n<li> <strong>Enable TLS on the WebSocket server.</strong> The configuration may vary depending upon the Websocket server implementation in use. </li>\n<li> <strong>Connect the client to the WebSocket server and ensure connections to the WebSocket are secure.</strong> When connecting to HTML5 web applications, ensure that client browsers connect with HTTPS. Note that the code accessing the WebSocket server should use the wss protocol, which is basically ws over TLS. As such, use <tt>wss://&lt;url&gt;</tt> instead of the typical <tt>ws://&lt;url&gt;</tt> in the HTML5 application code. </li>\n</ol>\n<h2>Problem Example</h2><p>Below is a client-side code connection to a WebSocket server. The connection uses standard ws over standard, unencrypted HTTP. An intruder who has access to the communication stream over the network could easily intercept the communication.\n</p><p>\nClient Connection:\n</p><pre>\n\n$(\"#open\").click (function (evt) {\nevt.preventDefault();\n\nvar host = ‘example.com’;\nvar port = ‘8887’;\nvar uri = ‘very_private’;\n\nws = new WebSocket(\"ws://” + host + “:” + port + “/” + uri );\n\nws.onmessage = function(evt) {alert(\"Non encrypted message has been received”)};\nws.onclose = function(evt) { alert(\"Non encrypted connection is closed\"); };\nws.onopen = function(evt) { alert(“Non encrypted connection has opened”) };\n});\n\n</pre><p>\n<br></p><h2>Solution Example</h2><p>Below is a client-side code connection to a WebSocket server using wss, which takes advantage of TLS over HTTP port 443. This change makes it much more difficult for an intruder to intercept the communication tunnel.\n</p><p>\nClient Connection:\n</p><pre>\n\n$(\"#open\").click(function(evt) {\nevt.preventDefault();\n\nvar host = ‘example.com’;\nvar port = ‘8887’;\nvar uri = ‘very_private’;\n\nws = new WebSocket(\"wss://” + host + “:” + port + “/” + uri );\nws.onmessage = function(evt) {alert(\"TLS message has been received”)};\nws.onclose = function(evt) { alert(\"TLS connection is closed\"); };\nws.onopen = function(evt) { alert(“TLS connection has opened”) };\n});\n\n</pre><p>\nWhen the handshake is performed using wss, you’ll see the typical handshake for TLS over port 443 to establish the secure connection.\n</p><p>\nBelow is a partial communication stream seen when connecting to a WebSocket testing server at <a href=\"http://www.websocket.org/echo.html\">http://www.websocket.org/echo.html</a>, and the view of the stream using a web debugging tool.\n</p><pre>\n\nHTTP/1.1 200 Connection Established\nFiddlerGateway: Direct\nStartTime: 22:24:09.760\nConnection: close\n\nEncrypted HTTPS traffic flows through this CONNECT tunnel. HTTPS Decryption is enabled in Fiddler, so decrypted sessions running in this tunnel will be shown in the Web Sessions list.\n\nSecure Protocol: Tls\nCipher: Rc4 128bits\nHash Algorithm: Sha1 160bits\nKey Exchange: RsaKeyX 2048bits\n\n== Server Certificate ==========\n[Subject]\n  CN=*.websocket.org, OU=Domain Control Validated, O=*.websocket.org\n\n[Issuer]\n  SERIALNUMBER=07969287, CN=Go Daddy Secure Certification Authority, OU=http://certificates.godaddy.com/repository, O=\"GoDaddy.com, Inc.\", L=Scottsdale, S=Arizona, C=US\n\n[Serial Number]\n  27F9ADF2DB9921\n\n[Not Before]\n  10/19/2012 2:43:55 AM\n\n[Not After]\n  10/28/2014 5:06:24 PM\n\n[Thumbprint]\n  8A95FEB7BE9825FBE3F4F50A6662DC880764C876\n\n</pre>\n<h2>WebSocket Guidelines</h2><ul><li> <a href=\"00000000-0000-0000-0000-000000869806\">Validate Data Coming from WebSockets</a></li>\n<li> <a href=\"00000000-0000-0000-0000-00000093dea4\">Check the Origin Header in the WebSocket Handshake</a></li>\n<li> <a href=\"00000000-0000-0000-0000-0000005f2e4a\">Use TLS to Encrypt WebSocket Connections</a></li>\n<li> <a href=\"00000000-0000-0000-0000-000000736a21\">Check the Origin Attribute of WebSocket Messages</a></li>\n<li> <a href=\"00000000-0000-0000-0000-0000005326a8\">Use the Latest WebSocket RFC 6455 Standard</a></li>\n<li> <a href=\"00000000-0000-0000-0000-00000085bc2f\">Do Not Tunnel TCP via WebSockets</a></li>\n</ul><h2>WebSocket Checklist Items</h2><ul><li> <a href=\"00000000-0000-0000-0000-00000086537e\">Data Coming from WebSockets Is Validated</a></li>\n<li> <a href=\"00000000-0000-0000-0000-00000077e316\">The Origin Header in WebSocket Handshake is Checked</a></li>\n<li> <a href=\"bd870268-f104-4f6f-ba0d-6628dc34eb2a\">TLS is Used to Encrypt WebSocket Connections</a></li>\n<li> <a href=\"00000000-0000-0000-0000-0000002f39d7\">The Origin Attribute of WebSocket Messages Is Checked</a></li>\n<li> <a href=\"18d5564d-00a4-4afe-a853-707269df2566\">Latest RFC 6455 Standard is Used</a></li>\n<li> <a href=\"00000000-0000-0000-0000-00000091ce5a\">TCP Is Not Tunneled via WebSockets</a></li>\n</ul>"
 }

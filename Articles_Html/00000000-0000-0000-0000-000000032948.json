@@ -1,6 +1,6 @@
 {
   "id": "00000000-0000-0000-0000-000000032948",
-  "checksum": "6916c7dfd937903deb56798fc8ecfa94a722bb0e",
+  "checksum": "a9b8339769bb08ce1768fbe9a0c3c70adfd29c06",
   "words": {
     "40": [
       "ul",
@@ -17,11 +17,17 @@
       "p",
       "p",
       "p",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "aspnet": [
       "ul",
-      "li"
+      "li",
+      "ul",
+      "li",
+      "a"
     ],
     "what": [
       "h2"
@@ -67,7 +73,10 @@
       "p",
       "p",
       "ul",
+      "ul",
       "li",
+      "li",
+      "a",
       "ul",
       "li"
     ],
@@ -78,8 +87,11 @@
       "p",
       "ul",
       "ul",
+      "ul",
       "li",
       "li",
+      "li",
+      "a",
       "ul",
       "li",
       "title",
@@ -89,7 +101,10 @@
       "p",
       "p",
       "ul",
+      "ul",
       "li",
+      "li",
+      "a",
       "ul",
       "li"
     ],
@@ -107,6 +122,9 @@
       "p",
       "p",
       "p",
+      "ul",
+      "li",
+      "a",
       "ul",
       "li"
     ],
@@ -138,6 +156,9 @@
     "how": [
       "h2",
       "h2",
+      "ul",
+      "li",
+      "a",
       "ul",
       "li"
     ],
@@ -517,7 +538,7 @@
       "ul",
       "li"
     ],
-    "https//teammentor.net/article/d0b1e36c-0b8d-4e5f-9d61-4851faceddca": [
+    "use": [
       "ul",
       "li",
       "a"
@@ -552,12 +573,12 @@
     ],
     "ul": [
       "ASP.NET",
-      "For more information about implementing Access Control using a Code Access Security Policy see https://teammentor.net/article/d0b1e36c-0b8d-4e5f-9d61-4851faceddca",
+      "For more information about implementing Access Control using a Code Access Security Policy see How to Use Code Access Security in ASP.NET",
       "For more information about how a Code Access Security Policy is implemented in .NET 4.0 see http://msdn.microsoft.com/en-us/library/dd984947%28v=vs.100%29.aspx#Overview"
     ],
     "li": [
       "ASP.NET",
-      "For more information about implementing Access Control using a Code Access Security Policy see https://teammentor.net/article/d0b1e36c-0b8d-4e5f-9d61-4851faceddca",
+      "For more information about implementing Access Control using a Code Access Security Policy see How to Use Code Access Security in ASP.NET",
       "For more information about how a Code Access Security Policy is implemented in .NET 4.0 see http://msdn.microsoft.com/en-us/library/dd984947%28v=vs.100%29.aspx#Overview"
     ],
     "p": [
@@ -574,19 +595,19 @@
       "<permissionset class=\"NamedPermissionSet\" version=\"1\" name=\"ASP.Net\">\n  ...\n     <ipermission class=\"RegistryPermission\" version=\"1\" unrestricted=\"true\"></ipermission>\n     ...\n   </permissionset>"
     ],
     "a": [
-      "https://teammentor.net/article/d0b1e36c-0b8d-4e5f-9d61-4851faceddca",
+      "How to Use Code Access Security in ASP.NET",
       "http://msdn.microsoft.com/en-us/library/dd984947%28v=vs.100%29.aspx#Overview"
     ]
   },
   "links": [
     {
-      "href": "https://teammentor.net/article/d0b1e36c-0b8d-4e5f-9d61-4851faceddca",
-      "text": "https://teammentor.net/article/d0b1e36c-0b8d-4e5f-9d61-4851faceddca"
+      "href": "d0b1e36c-0b8d-4e5f-9d61-4851faceddca",
+      "text": "How to Use Code Access Security in ASP.NET"
     },
     {
       "href": "http://msdn.microsoft.com/en-us/library/dd984947%28v=vs.100%29.aspx#Overview",
       "text": "http://msdn.microsoft.com/en-us/library/dd984947%28v=vs.100%29.aspx#Overview"
     }
   ],
-  "html": "<h2>Applies To</h2><ul><li> ASP.NET</li>\n</ul><h2>What to Check For</h2><p>Check if you have configured code access security policy in your web.config or machine.config files.\n</p><h2>How to Check</h2><p>Code Access Security Policy helps in limiting the amount of damage a badly written snippet of code can do, if exploited by a malicious attacker. Check if there is a section delimited by &lt;securitypolicy&gt;&lt;/securitypolicy&gt; in either the web.config or the machine.config on your system. This should be inside the &lt;system.web&gt; element.\n</p><pre>&lt;system.web&gt;\n  &lt;securitypolicy&gt;\n     ...\n     ...\n  &lt;/securitypolicy&gt;\n&lt;/system.web&gt;\n</pre><p>\nCheck if there is a policy between these lines which places restrictions on File I/O.\n</p><h2>How to Fix</h2><p>To perform access control checks for all filesystem access add the &lt;securitypolicy&gt; section to your web.config or machine.config as follows.\n</p><pre>&lt;securitypolicy&gt;\n  &lt;trustlevel name=\"Medium\" policyfile=\"web_MediumTrust.config\"&gt;&lt;/trustlevel&gt;\n&lt;/securitypolicy&gt;\n</pre><p>\nIf the 'Medium' policy doesn't match your needs and you want more customization, create a new file called customtrust.config and add the permissions for File I/O into this file. A sample set of permissions could look like this:\n</p><pre>&lt;permissionset class=\"NamedPermissionSet\" version=\"1\" name=\"ASP.Net\"&gt;\n  ...\n     &lt;ipermission class=\"RegistryPermission\" version=\"1\" unrestricted=\"true\"&gt;&lt;/ipermission&gt;\n     ...\n   &lt;/permissionset&gt;  \n</pre><p>\nNote that you can simply make a copy of the medium trust file and rename it to customtrust.config. Once this is done, you can modify the file according to your needs.\n</p><h2>Additional Resources</h2><ul><li> For more information about implementing Access Control using a Code Access Security Policy see <a href=\"https://teammentor.net/article/d0b1e36c-0b8d-4e5f-9d61-4851faceddca\">https://teammentor.net/article/d0b1e36c-0b8d-4e5f-9d61-4851faceddca</a></li>\n</ul><ul>\n<li> For more information about how a Code Access Security Policy is implemented in .NET 4.0 see <a href=\"http://msdn.microsoft.com/en-us/library/dd984947%28v=vs.100%29.aspx#Overview\">http://msdn.microsoft.com/en-us/library/dd984947%28v=vs.100%29.aspx#Overview</a></li></ul>"
+  "html": "<h2>Applies To</h2><ul><li> ASP.NET</li>\n</ul><h2>What to Check For</h2><p>Check if you have configured code access security policy in your web.config or machine.config files.\n</p><h2>How to Check</h2><p>Code Access Security Policy helps in limiting the amount of damage a badly written snippet of code can do, if exploited by a malicious attacker. Check if there is a section delimited by &lt;securitypolicy&gt;&lt;/securitypolicy&gt; in either the web.config or the machine.config on your system. This should be inside the &lt;system.web&gt; element.\n</p><pre>&lt;system.web&gt;\n  &lt;securitypolicy&gt;\n     ...\n     ...\n  &lt;/securitypolicy&gt;\n&lt;/system.web&gt;\n</pre><p>\nCheck if there is a policy between these lines which places restrictions on File I/O.\n</p><h2>How to Fix</h2><p>To perform access control checks for all filesystem access add the &lt;securitypolicy&gt; section to your web.config or machine.config as follows.\n</p><pre>&lt;securitypolicy&gt;\n  &lt;trustlevel name=\"Medium\" policyfile=\"web_MediumTrust.config\"&gt;&lt;/trustlevel&gt;\n&lt;/securitypolicy&gt;\n</pre><p>\nIf the 'Medium' policy doesn't match your needs and you want more customization, create a new file called customtrust.config and add the permissions for File I/O into this file. A sample set of permissions could look like this:\n</p><pre>&lt;permissionset class=\"NamedPermissionSet\" version=\"1\" name=\"ASP.Net\"&gt;\n  ...\n     &lt;ipermission class=\"RegistryPermission\" version=\"1\" unrestricted=\"true\"&gt;&lt;/ipermission&gt;\n     ...\n   &lt;/permissionset&gt;  \n</pre><p>\nNote that you can simply make a copy of the medium trust file and rename it to customtrust.config. Once this is done, you can modify the file according to your needs.\n</p><h2>Additional Resources</h2><ul><li> For more information about implementing Access Control using a Code Access Security Policy see <a href=\"d0b1e36c-0b8d-4e5f-9d61-4851faceddca\">How to Use Code Access Security in ASP.NET</a></li>\n</ul><ul>\n<li> For more information about how a Code Access Security Policy is implemented in .NET 4.0 see <a href=\"http://msdn.microsoft.com/en-us/library/dd984947%28v=vs.100%29.aspx#Overview\">http://msdn.microsoft.com/en-us/library/dd984947%28v=vs.100%29.aspx#Overview</a></li></ul>"
 }

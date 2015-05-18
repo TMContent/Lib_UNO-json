@@ -1,6 +1,6 @@
 {
   "id": "1ac9187f-4e79-468a-b9e4-8dd9741fc7e4",
-  "checksum": "5eb794bc7607e2650e30fd4a915eb7edb7ee4bf5",
+  "checksum": "203f3aadf188e3996a145a8a431aef6c2a535ff0",
   "words": {
     "2": [
       "p"
@@ -375,7 +375,7 @@
       "pre",
       "pre"
     ],
-    "rngcryptoserviceproviderbyte[]": [
+    "rngcryptoserviceproviderbyte&#91;&#93;": [
       "pre"
     ],
     "=": [
@@ -389,7 +389,7 @@
       "pre",
       "pre"
     ],
-    "byte8];new": [
+    "byte&#918&#93;;new": [
       "pre"
     ],
     "rngcryptoserviceprovider).getbytes(salt);//": [
@@ -405,7 +405,7 @@
     "passwordbytes": [
       "pre"
     ],
-    "\"p@ssword!\",salt);//": [
+    "\"p&#64;ssword&#33;\",salt);//": [
       "pre"
     ],
     "create": [
@@ -449,7 +449,7 @@
     "data...": [
       "pre"
     ],
-    "note   to": [
+    "note&nbsp&nbsp;&nbsp;to": [
       "blockquote"
     ],
     "will": [
@@ -503,6 +503,9 @@
     "guidance": [
       "p"
     ],
+    "sink]": [
+      "title"
+    ],
     "passwords": [
       "title"
     ]
@@ -527,7 +530,7 @@
       "Note"
     ],
     "pre": [
-      "using System.Security.Cryptography;...// Get salt (random bytes) using RNGCryptoServiceProvider.byte[] salt = new byte[8];new RNGCryptoServiceProvider().GetBytes(salt);// Get the Password derived bytes using password and salt.Rfc2898DeriveBytes passwordBytes = new Rfc2898DeriveBytes (\"P@ssword!\",salt);// Create a TripleDESCryptoServiceProvider object.TripleDESCryptoServiceProvider tdes = new TripleDESCryptoServiceProvider();// Get the password derived bytes key of length 16 bytes and add // it to the Key property.tdes.Key = passwordBytes.GetBytes(16);// Use the TripleDESCryptoServiceProvider object to encrypt and decrypt data...."
+      "using System.Security.Cryptography;...// Get salt (random bytes) using RNGCryptoServiceProvider.byte&#91;&#93; salt = new byte&#91;8&#93;;new RNGCryptoServiceProvider().GetBytes(salt);// Get the Password derived bytes using password and salt.Rfc2898DeriveBytes passwordBytes = new Rfc2898DeriveBytes (\"P&#64;ssword&#33;\",salt);// Create a TripleDESCryptoServiceProvider object.TripleDESCryptoServiceProvider tdes = new TripleDESCryptoServiceProvider();// Get the password derived bytes key of length 16 bytes and add // it to the Key property.tdes.Key = passwordBytes.GetBytes(16);// Use the TripleDESCryptoServiceProvider object to encrypt and decrypt data...."
     ],
     "br": [
       "",
@@ -543,12 +546,12 @@
       ""
     ],
     "blockquote": [
-      "Note   To decrypt the data you will need the initialization vector (IV) value used by the encryption routine, so that must also be available to the decryption code."
+      "Note&nbsp;&nbsp;&nbsp;To decrypt the data you will need the initialization vector (IV) value used by the encryption routine, so that must also be available to the decryption code."
     ],
     "hr": [
       ""
     ]
   },
   "links": [],
-  "html": "<h1>Description</h1>\r\n  <p>Instead of using <b>PasswordDeriveBytes</b> to generate keys from a password you should use <b>Rfc2898DeriveBytes</b>. The main advantage is that it supports the RSA Password-Based Key Derivation Function version 2 (PBKDF2), which is an improved version of the PBKDF1 standard implementation used by <b>PasswordDeriveBytes</b>. </p>\r\n  <p>To use <b>Rfc2898DeriveBytes</b>, supply at minimum a password and salt value. You can also specify a number of iterations to derive the key if you want to override the default 1000 iterations. <b>Rfc2898DeriveBytes</b> uses HMACSHA1 as an underlying pseudo-random generator. After the key is used to encrypt the data, clear it from memory but persist the salt and the number of iterations if you changed the default value. These values should be protected and are needed to regenerate the key for decryption. </p>\r\n  <p>The following code shows how to call <b>Rfc2898DeriveBytes</b>. </p>\r\n  <pre>using System.Security.Cryptography;...<br />// Get salt (random bytes) <br />using RNGCryptoServiceProvider.byte&#91;&#93; salt = new byte&#91;8&#93;;<br />new RNGCryptoServiceProvider().GetBytes(salt);<br />// Get the Password derived bytes using password and salt.<br />Rfc2898DeriveBytes passwordBytes = new Rfc2898DeriveBytes (\"P&#64;ssword&#33;\",salt);<br />// Create a TripleDESCryptoServiceProvider object.<br />TripleDESCryptoServiceProvider tdes = new TripleDESCryptoServiceProvider();<br />// Get the password derived bytes key of length 16 bytes and add <br />// it to the Key property.<br />tdes.Key = passwordBytes.GetBytes(16);<br />// Use the TripleDESCryptoServiceProvider object to encrypt and decrypt data....  </pre>\r\n  <blockquote>\r\n    <b>Note</b>&nbsp;&nbsp;&nbsp;To decrypt the data you will need the initialization vector (IV) value used by the encryption routine, so that must also be available to the decryption code.</blockquote>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
+  "html": "<h1>Description</h1>\n  <p>Instead of using <b>PasswordDeriveBytes</b> to generate keys from a password you should use <b>Rfc2898DeriveBytes</b>. The main advantage is that it supports the RSA Password-Based Key Derivation Function version 2 (PBKDF2), which is an improved version of the PBKDF1 standard implementation used by <b>PasswordDeriveBytes</b>. </p>\n  <p>To use <b>Rfc2898DeriveBytes</b>, supply at minimum a password and salt value. You can also specify a number of iterations to derive the key if you want to override the default 1000 iterations. <b>Rfc2898DeriveBytes</b> uses HMACSHA1 as an underlying pseudo-random generator. After the key is used to encrypt the data, clear it from memory but persist the salt and the number of iterations if you changed the default value. These values should be protected and are needed to regenerate the key for decryption. </p>\n  <p>The following code shows how to call <b>Rfc2898DeriveBytes</b>. </p>\n  <pre>using System.Security.Cryptography;...<br />// Get salt (random bytes) <br />using RNGCryptoServiceProvider.byte&amp;#91;&amp;#93; salt = new byte&amp;#91;8&amp;#93;;<br />new RNGCryptoServiceProvider().GetBytes(salt);<br />// Get the Password derived bytes using password and salt.<br />Rfc2898DeriveBytes passwordBytes = new Rfc2898DeriveBytes (\"P&amp;#64;ssword&amp;#33;\",salt);<br />// Create a TripleDESCryptoServiceProvider object.<br />TripleDESCryptoServiceProvider tdes = new TripleDESCryptoServiceProvider();<br />// Get the password derived bytes key of length 16 bytes and add <br />// it to the Key property.<br />tdes.Key = passwordBytes.GetBytes(16);<br />// Use the TripleDESCryptoServiceProvider object to encrypt and decrypt data....  </pre>\n  <blockquote>\n    <b>Note</b>&amp;nbsp;&amp;nbsp;&amp;nbsp;To decrypt the data you will need the initialization vector (IV) value used by the encryption routine, so that must also be available to the decryption code.</blockquote>\n  <hr />\n  <p>Adapted from Microsoft patterns &amp; practices guidance.</p>"
 }

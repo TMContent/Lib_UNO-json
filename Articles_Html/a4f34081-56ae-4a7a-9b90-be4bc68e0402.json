@@ -1,6 +1,6 @@
 {
   "id": "a4f34081-56ae-4a7a-9b90-be4bc68e0402",
-  "checksum": "7efb9015ec974859a59bfc9c902ccf5bce83d7bb",
+  "checksum": "e5c55ecf3154a61b4d35242f7671b3bc44082e0e",
   "words": {
     "2003": [
       "p"
@@ -107,7 +107,7 @@
       "p",
       "title"
     ],
-    "used to": [
+    "used&nbspto": [
       "p"
     ],
     "control": [
@@ -284,12 +284,7 @@
     "accounts": [
       "p"
     ],
-    "roles": [
-      "p",
-      "ol",
-      "li",
-      "div",
-      "p",
+    "roles&nbsp;&nbsp;": [
       "p"
     ],
     "how": [
@@ -339,7 +334,7 @@
       "li",
       "div"
     ],
-    "an authorization>": [
+    "an&nbsp<authorization>": [
       "ol",
       "li",
       "div"
@@ -400,6 +395,13 @@
       "div",
       "p"
     ],
+    "roles": [
+      "ol",
+      "li",
+      "div",
+      "p",
+      "p"
+    ],
     "rights": [
       "ol",
       "li",
@@ -415,7 +417,6 @@
       "li",
       "div",
       "p",
-      "pre",
       "p",
       "p",
       "p",
@@ -497,6 +498,9 @@
     "chosen": [
       "p"
     ],
+    "authorization>&nbsp;": [
+      "pre"
+    ],
     "allow": [
       "pre",
       "pre",
@@ -517,14 +521,8 @@
       "p",
       "pre"
     ],
-    "/": [
+    "/&nbsp;": [
       "pre",
-      "pre",
-      "p",
-      "p",
-      "pre",
-      "pre",
-      "p",
       "pre"
     ],
     "roles=\"builtin\\administrators": [
@@ -537,7 +535,7 @@
       "p",
       "pre"
     ],
-    "users=\"*\"": [
+    "users=\"&#42\"": [
       "pre",
       "p",
       "pre"
@@ -687,10 +685,10 @@
     "with": [
       "p"
     ],
-    "in such": [
+    "in&nbspsuch": [
       "p"
     ],
-    "a case": [
+    "a&nbspcase,": [
       "p"
     ],
     "override": [
@@ -765,6 +763,14 @@
       "p",
       "p"
     ],
+    "/": [
+      "p",
+      "p",
+      "pre",
+      "pre",
+      "p",
+      "pre"
+    ],
     "custom": [
       "p"
     ],
@@ -772,7 +778,7 @@
       "p",
       "pre"
     ],
-    "users=\"*\"/</authorization>": [
+    "users=\"&#42\"/></authorization>": [
       "p",
       "pre"
     ],
@@ -947,6 +953,9 @@
     ],
     "guidance": [
       "p"
+    ],
+    "sink]": [
+      "title"
     ]
   },
   "tags": {
@@ -958,15 +967,15 @@
       "Related Items"
     ],
     "p": [
-      "Ensure URL Authorization is used to control which users and groups of users have access to specific pages or the application itself.",
-      "Rather than having to password-protect pages, URL Authorization allows you to tie page access to user accounts or roles.",
+      "Ensure URL Authorization is used&nbsp;to control which users and groups of users have access to specific pages or the application itself.",
+      "Rather than having to password-protect pages, URL Authorization allows you to tie page access to user accounts or roles.&nbsp;&nbsp;",
       "Use the following steps to check if your application uses URL Authorization:",
       "Below is an example of the <authorization> element configured to deny access to all but a few chosen users and roles:",
       "To configure URL authorization, use an <authorization> element in Web.config and specify which user and/or role names are allowed access to the current directory or the nominated directory or file. ASP.NET on Windows Server 2003 or later protects all files in a given directory, even those not mapped to ASP.NET, such as .html, .gif, and .jpg files.",
-      "Authorization settings in Web.config refer to all of the files in the current directory and all subdirectories unless a subdirectory contains its own Web.config with an <authorization> element. In such a case, the settings in the subdirectory override the parent directory settings.",
+      "Authorization settings in Web.config refer to all of the files in the current directory and all subdirectories unless a subdirectory contains its own Web.config with an <authorization> element. In&nbsp;such a&nbsp;case, the settings in the subdirectory override the parent directory settings.",
       "URL authorization can be used for both forms authentication and Windows authentication. In the case of Windows authentication, user names take the form \"DomainName\\WindowsUserName\" and role names take the form \"DomainName\\WindowsGroupName\". The local administrators group is referred to as \"BUILTIN\\Administrators\". The local users group is referred to as \"BUILTIN\\Users\".",
-      "The following example shows Windows users and Windows roles: <authorization>  <allow users=\"DomainName\\Bob, DomainName\\Mary\" />  <allow roles=\"BUILTIN\\Administrators, DomainName\\Manager\" />  <deny users=\"*\" /></authorization>",
-      "The following example uses a custom role: <authorization>  <allow roles=\"Manager\"/>  <deny users=\"*\"/></authorization>",
+      "The following example shows Windows users and Windows roles: <authorization>  <allow users=\"DomainName\\Bob, DomainName\\Mary\" />  <allow roles=\"BUILTIN\\Administrators, DomainName\\Manager\" />  <deny users=\"&#42;\" /></authorization>",
+      "The following example uses a custom role: <authorization>  <allow roles=\"Manager\"/>  <deny users=\"&#42;\"/></authorization>",
       "To apply authorization rules to a specific file or folder, enclose the <authorization> element inside a <location> element as shown here: <location path=\"Secure\" >  <system.web>    <authorization>      <deny users=\"?\" />    </authorization>  </system.web></location>",
       "This example denies access to unauthenticated users and forces a redirect to the login page that is specified on the <forms> element.",
       "The following example shows how you can apply authorization to a specific file (Page.aspx). <location path=\"page.aspx\">    <authorization>        ...    </authorization></location>",
@@ -974,15 +983,15 @@
       "Adapted from Microsoft patterns & practices guidance."
     ],
     "ol": [
-      "Check if your application has an <authorization> element in its Web.config file.\r\n      \r\n        Check to ensure that the users, roles and access rights listed in the <authorization> element match to your application's requirements."
+      "Check if your application has an&nbsp;<authorization> element in its Web.config file.\n      \n        Check to ensure that the users, roles and access rights listed in the <authorization> element match to your application's requirements."
     ],
     "li": [
-      "Check if your application has an <authorization> element in its Web.config file.",
+      "Check if your application has an&nbsp;<authorization> element in its Web.config file.",
       "Check to ensure that the users, roles and access rights listed in the <authorization> element match to your application's requirements.",
       "Guideline: Use URL Authorization for Pages and Directory Access Control"
     ],
     "div": [
-      "Check if your application has an <authorization> element in its Web.config file.",
+      "Check if your application has an&nbsp;<authorization> element in its Web.config file.",
       "Check to ensure that the users, roles and access rights listed in the <authorization> element match to your application's requirements.",
       "Guideline: Use URL Authorization for Pages and Directory Access Control"
     ],
@@ -999,9 +1008,9 @@
       "location"
     ],
     "pre": [
-      "<authorization>  <allow users=\"DomainName\\Bob, DomainName\\Mary\" />  <allow roles=\"BUILTIN\\Administrators, DomainName\\Manager\" />  <deny users=\"*\" /></authorization>",
-      "<authorization>  <allow users=\"DomainName\\Bob, DomainName\\Mary\" />  <allow roles=\"BUILTIN\\Administrators, DomainName\\Manager\" />  <deny users=\"*\" /></authorization>",
-      "<authorization>  <allow roles=\"Manager\"/>  <deny users=\"*\"/></authorization>",
+      "<authorization>&nbsp; <allow users=\"DomainName\\Bob, DomainName\\Mary\" />&nbsp; <allow roles=\"BUILTIN\\Administrators, DomainName\\Manager\" />&nbsp; <deny users=\"&#42;\" /></authorization>",
+      "<authorization>  <allow users=\"DomainName\\Bob, DomainName\\Mary\" />  <allow roles=\"BUILTIN\\Administrators, DomainName\\Manager\" />  <deny users=\"&#42;\" /></authorization>",
+      "<authorization>  <allow roles=\"Manager\"/>  <deny users=\"&#42;\"/></authorization>",
       "<location path=\"Secure\" >  <system.web>    <authorization>      <deny users=\"?\" />    </authorization>  </system.web></location>",
       "<location path=\"page.aspx\">    <authorization>        ...    </authorization></location>"
     ],
@@ -1045,5 +1054,5 @@
       "text": "Guideline: Use URL Authorization for Pages and Directory Access Control"
     }
   ],
-  "html": "<h1>What to Check For</h1>\r\n  <p>Ensure URL Authorization is used&nbsp;to control which users and groups of users have access to specific pages or the application itself.</p>\r\n  <h1>Why</h1>\r\n  <p>Rather than having to password-protect pages, URL Authorization allows you to tie page access to user accounts or roles.&nbsp;&nbsp;</p>\r\n  <h1>How to Check</h1>\r\n  <p>Use the following steps to check if your application uses URL Authorization:</p>\r\n  <ol>\r\n    <li>\r\n      <div>Check if your application has an&nbsp;&lt;<b>authorization</b>&gt; element in its Web.config file.</div>\r\n      <li>\r\n        <div>Check to ensure that the users, roles and access rights listed in the &lt;<b>authorization</b>&gt; element match to your application's requirements.</div>\r\n      </li>\r\n    </li>\r\n  </ol>\r\n  <p>Below is an example of the &lt;<b>authorization</b>&gt; element configured to deny access to all but a few chosen users and roles:</p>\r\n  <pre>&lt;authorization&gt;<br />&nbsp; &lt;allow users=\"DomainName\\Bob, DomainName\\Mary\" /&gt;<br />&nbsp; &lt;allow roles=\"BUILTIN\\Administrators, DomainName\\Manager\" /&gt;<br />&nbsp; &lt;deny users=\"&#42;\" /&gt;<br />&lt;/authorization&gt;<br /></pre>\r\n  <h1>How to Fix</h1>\r\n  <p />To configure URL authorization, use an &lt;<b>authorization</b>&gt; element in Web.config and specify which user and/or role names are allowed access to the current directory or the nominated directory or file. ASP.NET on Windows Server 2003 or later protects all files in a given directory, even those not mapped to ASP.NET, such as .html, .gif, and .jpg files. <p />Authorization settings in Web.config refer to all of the files in the current directory and all subdirectories unless a subdirectory contains its own Web.config with an &lt;<b>authorization</b>&gt; element. In&nbsp;such a&nbsp;case, the settings in the subdirectory override the parent directory settings. <p />URL authorization can be used for both forms authentication and Windows authentication. In the case of Windows authentication, user names take the form \"DomainName\\WindowsUserName\" and role names take the form \"DomainName\\WindowsGroupName\". The local administrators group is referred to as \"BUILTIN\\Administrators\". The local users group is referred to as \"BUILTIN\\Users\". <p />The following example shows Windows users and Windows roles: <pre>&lt;authorization&gt;<br />  &lt;allow users=\"DomainName\\Bob, DomainName\\Mary\" /&gt;<br />  &lt;allow roles=\"BUILTIN\\Administrators, DomainName\\Manager\" /&gt;<br />  &lt;deny users=\"&#42;\" /&gt;<br />&lt;/authorization&gt;  </pre><p />The following example uses a custom role: <pre>&lt;authorization&gt;<br />  &lt;allow roles=\"Manager\"/&gt;<br />  &lt;deny users=\"&#42;\"/&gt;<br />&lt;/authorization&gt;  </pre><p />To apply authorization rules to a specific file or folder, enclose the &lt;<b>authorization</b>&gt; element inside a &lt;<b>location</b>&gt; element as shown here: <pre>&lt;location path=\"Secure\" &gt;<br />  &lt;system.web&gt;<br />    &lt;authorization&gt;<br />      &lt;deny users=\"?\" /&gt;<br />    &lt;/authorization&gt;<br />  &lt;/system.web&gt;<br />&lt;/location&gt;  </pre><p />This example denies access to unauthenticated users and forces a redirect to the login page that is specified on the &lt;<b>forms</b>&gt; element. <p />The following example shows how you can apply authorization to a specific file (Page.aspx). <pre>&lt;location path=\"page.aspx\"&gt;<br />    &lt;authorization&gt;<br />        ...<br />    &lt;/authorization&gt;<br />&lt;/location&gt;  </pre><p>If necessary, you can apply different authorization rules for separate pages based on the identity, or more commonly, the role membership of the caller, by using multiple &lt;<b>authorization</b>&gt; elements within separate &lt;<b>location</b>&gt; elements. </p><h1>Related Items</h1><ul><li><div><a href=\"/article/3a62f823-e567-400f-96aa-b1e9374266bd\">Guideline: Use URL Authorization for Pages and Directory Access Control</a></div></li></ul><hr /><p>Adapted from Microsoft patterns & practices guidance. </p>"
+  "html": "<h1>What to Check For</h1>\n  <p>Ensure URL Authorization is used&amp;nbsp;to control which users and groups of users have access to specific pages or the application itself.</p>\n  <h1>Why</h1>\n  <p>Rather than having to password-protect pages, URL Authorization allows you to tie page access to user accounts or roles.&amp;nbsp;&amp;nbsp;</p>\n  <h1>How to Check</h1>\n  <p>Use the following steps to check if your application uses URL Authorization:</p>\n  <ol>\n    <li>\n      <div>Check if your application has an&amp;nbsp;&lt;<b>authorization</b>&gt; element in its Web.config file.</div>\n      <li>\n        <div>Check to ensure that the users, roles and access rights listed in the &lt;<b>authorization</b>&gt; element match to your application's requirements.</div>\n      </li>\n    </li>\n  </ol>\n  <p>Below is an example of the &lt;<b>authorization</b>&gt; element configured to deny access to all but a few chosen users and roles:</p>\n  <pre>&lt;authorization&gt;<br />&amp;nbsp; &lt;allow users=\"DomainName\\Bob, DomainName\\Mary\" /&gt;<br />&amp;nbsp; &lt;allow roles=\"BUILTIN\\Administrators, DomainName\\Manager\" /&gt;<br />&amp;nbsp; &lt;deny users=\"&amp;#42;\" /&gt;<br />&lt;/authorization&gt;<br /></pre>\n  <h1>How to Fix</h1>\n  <p />To configure URL authorization, use an &lt;<b>authorization</b>&gt; element in Web.config and specify which user and/or role names are allowed access to the current directory or the nominated directory or file. ASP.NET on Windows Server 2003 or later protects all files in a given directory, even those not mapped to ASP.NET, such as .html, .gif, and .jpg files. <p />Authorization settings in Web.config refer to all of the files in the current directory and all subdirectories unless a subdirectory contains its own Web.config with an &lt;<b>authorization</b>&gt; element. In&amp;nbsp;such a&amp;nbsp;case, the settings in the subdirectory override the parent directory settings. <p />URL authorization can be used for both forms authentication and Windows authentication. In the case of Windows authentication, user names take the form \"DomainName\\WindowsUserName\" and role names take the form \"DomainName\\WindowsGroupName\". The local administrators group is referred to as \"BUILTIN\\Administrators\". The local users group is referred to as \"BUILTIN\\Users\". <p />The following example shows Windows users and Windows roles: <pre>&lt;authorization&gt;<br />  &lt;allow users=\"DomainName\\Bob, DomainName\\Mary\" /&gt;<br />  &lt;allow roles=\"BUILTIN\\Administrators, DomainName\\Manager\" /&gt;<br />  &lt;deny users=\"&amp;#42;\" /&gt;<br />&lt;/authorization&gt;  </pre><p />The following example uses a custom role: <pre>&lt;authorization&gt;<br />  &lt;allow roles=\"Manager\"/&gt;<br />  &lt;deny users=\"&amp;#42;\"/&gt;<br />&lt;/authorization&gt;  </pre><p />To apply authorization rules to a specific file or folder, enclose the &lt;<b>authorization</b>&gt; element inside a &lt;<b>location</b>&gt; element as shown here: <pre>&lt;location path=\"Secure\" &gt;<br />  &lt;system.web&gt;<br />    &lt;authorization&gt;<br />      &lt;deny users=\"?\" /&gt;<br />    &lt;/authorization&gt;<br />  &lt;/system.web&gt;<br />&lt;/location&gt;  </pre><p />This example denies access to unauthenticated users and forces a redirect to the login page that is specified on the &lt;<b>forms</b>&gt; element. <p />The following example shows how you can apply authorization to a specific file (Page.aspx). <pre>&lt;location path=\"page.aspx\"&gt;<br />    &lt;authorization&gt;<br />        ...<br />    &lt;/authorization&gt;<br />&lt;/location&gt;  </pre><p>If necessary, you can apply different authorization rules for separate pages based on the identity, or more commonly, the role membership of the caller, by using multiple &lt;<b>authorization</b>&gt; elements within separate &lt;<b>location</b>&gt; elements. </p><h1>Related Items</h1><ul><li><div><a href=\"/article/3a62f823-e567-400f-96aa-b1e9374266bd\">Guideline: Use URL Authorization for Pages and Directory Access Control</a></div></li></ul><hr /><p>Adapted from Microsoft patterns &amp; practices guidance. </p>"
 }

@@ -1,6 +1,6 @@
 {
   "id": "6de9b3c3-5836-4bdc-8d9a-d2710ae19fb2",
-  "checksum": "a0600aeb219f13ae666f290576b6a9ea71f8802c",
+  "checksum": "0fee34af1ba56150a67fe0eecf7e8ea995c03639",
   "words": {
     "11": [
       "p"
@@ -289,7 +289,7 @@
       "pre",
       "pre"
     ],
-    "sqlconnectionconnectionstring)){": [
+    "sqlconnectionconnectionstring))&#123;": [
       "p",
       "pre"
     ],
@@ -329,7 +329,7 @@
       "p",
       "pre"
     ],
-    "mycommandselectcommand.parameters.add(\"@au_id\",": [
+    "mycommandselectcommand.parameters.add(\"&#64;au_id\",": [
       "p",
       "pre"
     ],
@@ -341,7 +341,7 @@
       "p",
       "pre"
     ],
-    "mycommandselectcommand.parameters[\"@au_id\"].value": [
+    "mycommandselectcommand.parameters&#91;\"&#64;au_id\"&#93;.value": [
       "p",
       "pre"
     ],
@@ -349,7 +349,7 @@
       "p",
       "pre"
     ],
-    "mycommandfill(userdataset);}": [
+    "mycommandfill(userdataset);&#125;": [
       "p",
       "pre"
     ],
@@ -449,7 +449,7 @@
       "a",
       "p"
     ],
-    "aspnet on": [
+    "aspnet&nbsp;on": [
       "p"
     ],
     "msdn": [
@@ -475,6 +475,9 @@
     ],
     "guidance": [
       "p"
+    ],
+    "sink]": [
+      "title"
     ]
   },
   "tags": {
@@ -487,9 +490,9 @@
       "Ensure that your application uses parameterized stored procedures and type-safe SQL parameters when constructing SQL queries.",
       "Use type safe parameters when constructing SQL queries to avoid possible SQL injection attacks that can occur with unfiltered input. You can use type safe parameters with stored procedures and with dynamic SQL statements. Parameters are treated as literal values by the database and not as executable code. Parameters are also checked for type and length.",
       "The following code shows how to use type safe parameters with the SqlParameterCollection when calling a stored procedure.",
-      "using System.Data;using System.Data.SqlClient;using (SqlConnection connection = new SqlConnection(connectionString)){ DataSet userDataset = new DataSet(); SqlDataAdapter myCommand = new SqlDataAdapter(LoginStoredProcedure\", connection); myCommand.SelectCommand.CommandType = CommandType.StoredProcedure; myCommand.SelectCommand.Parameters.Add(\"@au_id\", SqlDbType.VarChar, 11); myCommand.SelectCommand.Parameters[\"@au_id\"].Value = SSN.Text; myCommand.Fill(userDataset);}",
+      "using System.Data;using System.Data.SqlClient;using (SqlConnection connection = new SqlConnection(connectionString))&#123; DataSet userDataset = new DataSet(); SqlDataAdapter myCommand = new SqlDataAdapter(LoginStoredProcedure\", connection); myCommand.SelectCommand.CommandType = CommandType.StoredProcedure; myCommand.SelectCommand.Parameters.Add(\"&#64;au_id\", SqlDbType.VarChar, 11); myCommand.SelectCommand.Parameters&#91;\"&#64;au_id\"&#93;.Value = SSN.Text; myCommand.Fill(userDataset);&#125;",
       "In the preceding code example, the input value cannot be longer than 11 characters. If the data does not conform to the type or length defined by the parameter, the SqlParameter class throws an exception.",
-      "For more information about preventing SQL injection, see HOW TO: Protect from SQL Injection in ASP.NET on MSDN.",
+      "For more information about preventing SQL injection, see HOW TO: Protect from SQL Injection in ASP.NET&nbsp;on MSDN.",
       "Adapted from Microsoft patterns & practices guidance."
     ],
     "b": [
@@ -497,7 +500,7 @@
       "SqlParameter"
     ],
     "pre": [
-      "using System.Data;using System.Data.SqlClient;using (SqlConnection connection = new SqlConnection(connectionString)){ DataSet userDataset = new DataSet(); SqlDataAdapter myCommand = new SqlDataAdapter(LoginStoredProcedure\", connection); myCommand.SelectCommand.CommandType = CommandType.StoredProcedure; myCommand.SelectCommand.Parameters.Add(\"@au_id\", SqlDbType.VarChar, 11); myCommand.SelectCommand.Parameters[\"@au_id\"].Value = SSN.Text; myCommand.Fill(userDataset);}"
+      "using System.Data;using System.Data.SqlClient;using (SqlConnection connection = new SqlConnection(connectionString))&#123; DataSet userDataset = new DataSet(); SqlDataAdapter myCommand = new SqlDataAdapter(LoginStoredProcedure\", connection); myCommand.SelectCommand.CommandType = CommandType.StoredProcedure; myCommand.SelectCommand.Parameters.Add(\"&#64;au_id\", SqlDbType.VarChar, 11); myCommand.SelectCommand.Parameters&#91;\"&#64;au_id\"&#93;.Value = SSN.Text; myCommand.Fill(userDataset);&#125;"
     ],
     "br": [
       "",
@@ -524,5 +527,5 @@
       "text": "HOW TO: Protect from SQL Injection in ASP.NET"
     }
   ],
-  "html": "<h1>What to Check For</h1>\r\n  <p>Ensure that your application uses parameterized stored procedures and type-safe SQL parameters when constructing SQL queries.</p>\r\n  <h1>How to Fix</h1>\r\n  <p>Use type safe parameters when constructing SQL queries to avoid possible SQL injection attacks that can occur with unfiltered input. You can use type safe parameters with stored procedures and with dynamic SQL statements. Parameters are treated as literal values by the database and not as executable code. Parameters are also checked for type and length.</p>\r\n  <p>The following code shows how to use type safe parameters with the <b>SqlParameterCollection</b> when calling a stored procedure.</p>\r\n  <p>\r\n    <pre>using System.Data;<br />using System.Data.SqlClient;<br />using (SqlConnection connection = new SqlConnection(connectionString))<br />&#123;<br /> DataSet userDataset = new DataSet();<br /> SqlDataAdapter myCommand = new SqlDataAdapter(LoginStoredProcedure\", connection);<br /> myCommand.SelectCommand.CommandType = CommandType.StoredProcedure;<br /> myCommand.SelectCommand.Parameters.Add(\"&#64;au_id\", SqlDbType.VarChar, 11);<br /> myCommand.SelectCommand.Parameters&#91;\"&#64;au_id\"&#93;.Value = SSN.Text;<br /> myCommand.Fill(userDataset);<br />&#125;  </pre>\r\n  </p>\r\n  <p>In the preceding code example, the input value cannot be longer than 11 characters. If the data does not conform to the type or length defined by the parameter, the <b>SqlParameter</b> class throws an exception.</p>\r\n  <h1>Additional Resources</h1>\r\n  <p>For more information about preventing SQL injection, see <a href=\"http://msdn2.microsoft.com/en-us/library/ms998271.aspx\">HOW TO: Protect from SQL Injection in ASP.NET</a>&nbsp;on MSDN.</p>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance. </p>"
+  "html": "<h1>What to Check For</h1>\n  <p>Ensure that your application uses parameterized stored procedures and type-safe SQL parameters when constructing SQL queries.</p>\n  <h1>How to Fix</h1>\n  <p>Use type safe parameters when constructing SQL queries to avoid possible SQL injection attacks that can occur with unfiltered input. You can use type safe parameters with stored procedures and with dynamic SQL statements. Parameters are treated as literal values by the database and not as executable code. Parameters are also checked for type and length.</p>\n  <p>The following code shows how to use type safe parameters with the <b>SqlParameterCollection</b> when calling a stored procedure.</p>\n  <p>\n    <pre>using System.Data;<br />using System.Data.SqlClient;<br />using (SqlConnection connection = new SqlConnection(connectionString))<br />&amp;#123;<br /> DataSet userDataset = new DataSet();<br /> SqlDataAdapter myCommand = new SqlDataAdapter(LoginStoredProcedure\", connection);<br /> myCommand.SelectCommand.CommandType = CommandType.StoredProcedure;<br /> myCommand.SelectCommand.Parameters.Add(\"&amp;#64;au_id\", SqlDbType.VarChar, 11);<br /> myCommand.SelectCommand.Parameters&amp;#91;\"&amp;#64;au_id\"&amp;#93;.Value = SSN.Text;<br /> myCommand.Fill(userDataset);<br />&amp;#125;  </pre>\n  </p>\n  <p>In the preceding code example, the input value cannot be longer than 11 characters. If the data does not conform to the type or length defined by the parameter, the <b>SqlParameter</b> class throws an exception.</p>\n  <h1>Additional Resources</h1>\n  <p>For more information about preventing SQL injection, see <a href=\"http://msdn2.microsoft.com/en-us/library/ms998271.aspx\">HOW TO: Protect from SQL Injection in ASP.NET</a>&amp;nbsp;on MSDN.</p>\n  <hr />\n  <p>Adapted from Microsoft patterns &amp; practices guidance. </p>"
 }

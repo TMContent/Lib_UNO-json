@@ -1,6 +1,6 @@
 {
   "id": "fda6f06b-c276-43e1-a74d-fcb28cdda689",
-  "checksum": "5bf6077512655fed534027dd19ab949092c91d5d",
+  "checksum": "dc4cc03b32aa08c1678079fbc0752b0b5719cac8",
   "words": {
     "what": [
       "h1"
@@ -127,7 +127,6 @@
       "p"
     ],
     "access": [
-      "p",
       "p",
       "p",
       "p",
@@ -334,7 +333,7 @@
     "why": [
       "h1"
     ],
-    "an attacker": [
+    "an&nbspattacker": [
       "p"
     ],
     "can": [
@@ -354,7 +353,7 @@
       "p",
       "blockquote"
     ],
-    "they are": [
+    "they&nbspare": [
       "p"
     ],
     "protected": [
@@ -367,6 +366,9 @@
     ],
     "restricted": [
       "p",
+      "p"
+    ],
+    "access&nbsp;": [
       "p"
     ],
     "adding": [
@@ -700,7 +702,7 @@
     "based": [
       "p"
     ],
-    "note   hkey_current_user": [
+    "note&nbsp&nbsp;&nbsp;hkey_current_user": [
       "blockquote"
     ],
     "more": [
@@ -721,7 +723,7 @@
     "token": [
       "blockquote"
     ],
-    "loaded": [
+    "loaded&nbsp;": [
       "blockquote"
     ],
     "note": [
@@ -745,6 +747,9 @@
     "guidance": [
       "p"
     ],
+    "sink]": [
+      "title"
+    ],
     "restrict": [
       "title"
     ]
@@ -759,7 +764,7 @@
     "p": [
       "When you store keys to be used at run time in persistent storage, use appropriate ACLs and limit access to the keys. Grant access to the keys only to administrators, SYSTEM, and the identity of the code at run time (for example, the Network Service account in the case of ASP.NET applications that run in the default application pool).",
       "When you back up a key, do not store it in plain text. Instead, use DPAPI to encrypt it or use a strong password and place it on removable media.",
-      "An attacker can gain access to persisted keys if they are not protected with restricted access.",
+      "An&nbsp;attacker can gain access to persisted keys if they&nbsp;are not protected with restricted access.&nbsp;",
       "When adding cryptographic support to your application.",
       "Use DPAPI to encrypt the encryption key and store it in a protected registry key. Create an ACL to protect the registry key that allows full control for administrators and read-only access for your application's process account.",
       "Use of HKEY_LOCAL_MACHINE makes it easier to store Keys at installation time and maintain it later on.",
@@ -787,7 +792,7 @@
       "Regitsry Editor"
     ],
     "blockquote": [
-      "Note   HKEY_CURRENT_USER allows more restrictive access because a process can access the current user key only if the user profile associated with the current thread or process token is loaded."
+      "Note&nbsp;&nbsp;&nbsp;HKEY_CURRENT_USER allows more restrictive access because a process can access the current user key only if the user profile associated with the current thread or process token is loaded.&nbsp;"
     ],
     "b": [
       "Note"
@@ -797,5 +802,5 @@
     ]
   },
   "links": [],
-  "html": "<h1>What to Do</h1>\r\n  <p>When you store keys to be used at run time in persistent storage, use appropriate ACLs and limit access to the keys. Grant access to the keys only to administrators, SYSTEM, and the identity of the code at run time (for example, the Network Service account in the case of ASP.NET applications that run in the default application pool).</p>\r\n  <p>When you back up a key, do not store it in plain text. Instead, use DPAPI to encrypt it or use a strong password and place it on removable media.</p>\r\n  <h1>Why</h1>\r\n  <p>An&nbsp;attacker can gain access to persisted keys if they&nbsp;are not protected with restricted access.&nbsp; </p>\r\n  <h1>When</h1>\r\n  <p>When adding cryptographic support to your application.</p>\r\n  <h1>How</h1>\r\n  <p>Use DPAPI to encrypt the encryption key and store it in a protected registry key. Create an ACL to protect the registry key that allows full control for administrators and read-only access for your application's process account.</p>\r\n  <p>Use of HKEY_LOCAL_MACHINE makes it easier to store Keys at installation time and maintain it later on.</p>\r\n  <p>Here are the steps which you can use to configure the ACLs on the registry key</p>\r\n  <ol>\r\n    <li>Open the registry by running <strong>regedit.exe</strong> from the commandline <li>Locate the regitsry where the data is stored e.g. <strong>My Computer\\HKEY_LOCAL_MACHINE\\SOFTWARE\\TestAppData</strong><li>Right click on the registry key and select <strong>Permissions.</strong><li>Add the required user account which needs the permission and remove all the irrelevant accounts and permissions for them. <li>Click <strong>Apply</strong> and then <strong>Ok</strong> on the <strong>Permission For...</strong> dialog box and close the <strong>Regitsry Editor</strong>.</li></li></li></li></li>\r\n  </ol>\r\n  <p>If your security requirements dictate an even less accessible storage solution, use a key under HKEY_CURRENT_USER. This approach means that you do not have to explicitly configure ACLs because access to the current user key is automatically restricted based on process identity.</p>\r\n  <blockquote>\r\n    <b>Note</b>&nbsp;&nbsp;&nbsp;HKEY_CURRENT_USER allows more restrictive access because a process can access the current user key only if the user profile associated with the current thread or process token is loaded.&nbsp;</blockquote>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
+  "html": "<h1>What to Do</h1>\n  <p>When you store keys to be used at run time in persistent storage, use appropriate ACLs and limit access to the keys. Grant access to the keys only to administrators, SYSTEM, and the identity of the code at run time (for example, the Network Service account in the case of ASP.NET applications that run in the default application pool).</p>\n  <p>When you back up a key, do not store it in plain text. Instead, use DPAPI to encrypt it or use a strong password and place it on removable media.</p>\n  <h1>Why</h1>\n  <p>An&amp;nbsp;attacker can gain access to persisted keys if they&amp;nbsp;are not protected with restricted access.&amp;nbsp; </p>\n  <h1>When</h1>\n  <p>When adding cryptographic support to your application.</p>\n  <h1>How</h1>\n  <p>Use DPAPI to encrypt the encryption key and store it in a protected registry key. Create an ACL to protect the registry key that allows full control for administrators and read-only access for your application's process account.</p>\n  <p>Use of HKEY_LOCAL_MACHINE makes it easier to store Keys at installation time and maintain it later on.</p>\n  <p>Here are the steps which you can use to configure the ACLs on the registry key</p>\n  <ol>\n    <li>Open the registry by running <strong>regedit.exe</strong> from the commandline <li>Locate the regitsry where the data is stored e.g. <strong>My Computer\\HKEY_LOCAL_MACHINE\\SOFTWARE\\TestAppData</strong><li>Right click on the registry key and select <strong>Permissions.</strong><li>Add the required user account which needs the permission and remove all the irrelevant accounts and permissions for them. <li>Click <strong>Apply</strong> and then <strong>Ok</strong> on the <strong>Permission For...</strong> dialog box and close the <strong>Regitsry Editor</strong>.</li></li></li></li></li>\n  </ol>\n  <p>If your security requirements dictate an even less accessible storage solution, use a key under HKEY_CURRENT_USER. This approach means that you do not have to explicitly configure ACLs because access to the current user key is automatically restricted based on process identity.</p>\n  <blockquote>\n    <b>Note</b>&amp;nbsp;&amp;nbsp;&amp;nbsp;HKEY_CURRENT_USER allows more restrictive access because a process can access the current user key only if the user profile associated with the current thread or process token is loaded.&amp;nbsp;</blockquote>\n  <hr />\n  <p>Adapted from Microsoft patterns &amp; practices guidance.</p>"
 }

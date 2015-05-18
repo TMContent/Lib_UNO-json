@@ -1,6 +1,6 @@
 {
   "id": "89208bc1-aca5-405e-a59a-765fcfc2916d",
-  "checksum": "8402c155218aa62094499f2dfb99b1d33432f927",
+  "checksum": "5e675be442834d53e3094e6a99a7147fb98776f6",
   "words": {
     "51": [
       "ul",
@@ -370,7 +370,7 @@
     ],
     "ul": [
       "PCI DSS Requirement 5.1",
-      "Automatic updates\r\n    Automatic scans\r\n    Log retention for at least a year\r\n    Ability to handle all known malware threat types\r\n    Integration with the centralized log server",
+      "Automatic updates\n    Automatic scans\n    Log retention for at least a year\n    Ability to handle all known malware threat types\n    Integration with the centralized log server",
       "Deploy an Anti-Virus"
     ],
     "li": [
@@ -399,5 +399,5 @@
       "text": "Deploy an Anti-Virus"
     }
   ],
-  "html": "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 5.1</li>\r\n  </ul>\r\n  <h1>What to Check For</h1>\r\n  <p>An anti-virus solution should be deployed on all systems that are commonly targeted by malware.</p>\r\n  <h1>Why</h1>\r\n  <p>An anti-virus solution helps stop large-scale automated attacks.</p>\r\n  <h1>How to Check</h1>\r\n  <p>Identify all computers that use operating systems that are commonly affected by malware. Take a sample of these computers and verify that they have anti-virus software installed, if anti-virus software for these systems exists.</p>\r\n  <h1>How to Fix</h1>\r\n  <p>Identify all computers that use operating systems that are commonly affected by malware. Choose an anti-virus package that can be installed on these systems. When choosing an anti-virus package, consider the following capabilities:\r\n</p>\r\n  <ul>\r\n    <li>Automatic updates</li>\r\n    <li>Automatic scans</li>\r\n    <li>Log retention for at least a year</li>\r\n    <li>Ability to handle all known malware threat types</li>\r\n    <li>Integration with the centralized log server</li>\r\n  </ul>\r\n  <p>Install and configure the chosen anti-virus package on all the compatible systems.</p>\r\n  <h1>Related Items</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/6a12327a-3bc3-4acc-af65-9145046280b9\">Deploy an Anti-Virus</a>\r\n    </li>\r\n  </ul>"
+  "html": "<h1>Applies to</h1>\n  <ul>\n    <li>PCI DSS Requirement 5.1</li>\n  </ul>\n  <h1>What to Check For</h1>\n  <p>An anti-virus solution should be deployed on all systems that are commonly targeted by malware.</p>\n  <h1>Why</h1>\n  <p>An anti-virus solution helps stop large-scale automated attacks.</p>\n  <h1>How to Check</h1>\n  <p>Identify all computers that use operating systems that are commonly affected by malware. Take a sample of these computers and verify that they have anti-virus software installed, if anti-virus software for these systems exists.</p>\n  <h1>How to Fix</h1>\n  <p>Identify all computers that use operating systems that are commonly affected by malware. Choose an anti-virus package that can be installed on these systems. When choosing an anti-virus package, consider the following capabilities:\n</p>\n  <ul>\n    <li>Automatic updates</li>\n    <li>Automatic scans</li>\n    <li>Log retention for at least a year</li>\n    <li>Ability to handle all known malware threat types</li>\n    <li>Integration with the centralized log server</li>\n  </ul>\n  <p>Install and configure the chosen anti-virus package on all the compatible systems.</p>\n  <h1>Related Items</h1>\n  <ul>\n    <li>\n      <a href=\"/article/6a12327a-3bc3-4acc-af65-9145046280b9\">Deploy an Anti-Virus</a>\n    </li>\n  </ul>"
 }

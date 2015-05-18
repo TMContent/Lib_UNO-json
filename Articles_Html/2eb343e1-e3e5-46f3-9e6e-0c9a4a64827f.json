@@ -1,6 +1,6 @@
 {
   "id": "2eb343e1-e3e5-46f3-9e6e-0c9a4a64827f",
-  "checksum": "8b2929ed6db97c39731e53cba9bebf85a56b96f1",
+  "checksum": "1bafd9962cfe4baab1cea1cd6f31978ba7571d83",
   "words": {
     "what": [
       "h2"
@@ -206,7 +206,7 @@
       "p",
       "em"
     ],
-    "and\rselinux.": [
+    "andselinux.": [
       "p"
     ],
     "general": [
@@ -236,7 +236,7 @@
       "p",
       "em"
     ],
-    "java\rsecuritymanager": [
+    "javasecuritymanager": [
       "p"
     ],
     "allows": [
@@ -451,7 +451,7 @@
       "ul",
       "li"
     ],
-    "see\rhttp://cwe.mitre.org/data/definitions/243.html": [
+    "seehttp://cwe.mitre.org/data/definitions/243.html": [
       "ul",
       "li"
     ],
@@ -472,10 +472,10 @@
     "p": [
       "Run your code in a \"jail\" or similar sandbox environment that enforces strict boundaries between the process and the operating system.",
       "This may effectively restrict which files can be accessed in a particular directory or which commands can be executed by your software.",
-      "OS-level examples include the Unix chroot jail, AppArmor, and\r\nSELinux. In general, managed code may provide some protection. For example, java.io.FilePermission in the Java\r\nSecurityManager allows you to specify restrictions on file operations.",
+      "OS-level examples include the Unix chroot jail, AppArmor, and\nSELinux. In general, managed code may provide some protection. For example, java.io.FilePermission in the Java\nSecurityManager allows you to specify restrictions on file operations.",
       "This may not be a feasible solution, and it only limits the impact to the operating system; the rest of your application may still be subject to compromise.",
       "Be careful to avoid CWE-243 and other weaknesses related to jails.",
-      "Note: The effectiveness of this mitigation depends on the prevention capabilities of the specific sandbox or jail being used and might only help to reduce the scope of an attack, such as restricting the attacker to certain system calls or\r\n limiting the portion of the file system that can be accessed."
+      "Note: The effectiveness of this mitigation depends on the prevention capabilities of the specific sandbox or jail being used and might only help to reduce the scope of an attack, such as restricting the attacker to certain system calls or\n limiting the portion of the file system that can be accessed."
     ],
     "em": [
       "chroot",
@@ -488,10 +488,10 @@
       "Note:"
     ],
     "ul": [
-      "For more information about \"CWE-243: Creation of chroot Jail Without Changing Working Directory\", please see\r\nhttp://cwe.mitre.org/data/definitions/243.html"
+      "For more information about \"CWE-243: Creation of chroot Jail Without Changing Working Directory\", please see\nhttp://cwe.mitre.org/data/definitions/243.html"
     ],
     "li": [
-      "For more information about \"CWE-243: Creation of chroot Jail Without Changing Working Directory\", please see\r\nhttp://cwe.mitre.org/data/definitions/243.html"
+      "For more information about \"CWE-243: Creation of chroot Jail Without Changing Working Directory\", please see\nhttp://cwe.mitre.org/data/definitions/243.html"
     ],
     "a": [
       "http://cwe.mitre.org/data/definitions/243.html"
@@ -503,5 +503,5 @@
       "text": "http://cwe.mitre.org/data/definitions/243.html"
     }
   ],
-  "html": "<h2>What to Do</h2>\r\n  <p>Run your code in a \"jail\" or similar sandbox environment that enforces strict boundaries between the process and the operating system.\r\n</p>\r\n  <h2>Why</h2>\r\n  <p>This may effectively restrict which files can be accessed in a particular directory or which commands can be executed by your software.</p>\r\n  <h2>How</h2>\r\n  <p>OS-level examples include the Unix <em>chroot</em> jail, <em>AppArmor</em>, and\r\n<em>SELinux</em>. In general, managed code may provide some protection. For example,<em> java.io.FilePermission</em> in the Java\r\n<em>SecurityManager</em> allows you to specify restrictions on file operations.</p>\r\n  <p>This may not be a feasible solution, and it only limits the impact to the operating system; the rest of your application may still be subject to compromise.</p>\r\n  <p>Be careful to avoid CWE-243 and other weaknesses related to jails.</p>\r\n  <p>\r\n    <strong>Note:</strong> The effectiveness of this mitigation depends on the prevention capabilities of the specific sandbox or jail being used and might only help to reduce the scope of an attack, such as restricting the attacker to certain system calls or\r\n limiting the portion of the file system that can be accessed.</p>\r\n  <h2>Additional Resources</h2>\r\n  <ul>\r\n    <li>For more information about \"CWE-243: Creation of chroot Jail Without Changing Working Directory\", please see\r\n<a href=\"http://cwe.mitre.org/data/definitions/243.html\">http://cwe.mitre.org/data/definitions/243.html</a></li>\r\n  </ul>"
+  "html": "<h2>What to Do</h2>\n  <p>Run your code in a \"jail\" or similar sandbox environment that enforces strict boundaries between the process and the operating system.\n</p>\n  <h2>Why</h2>\n  <p>This may effectively restrict which files can be accessed in a particular directory or which commands can be executed by your software.</p>\n  <h2>How</h2>\n  <p>OS-level examples include the Unix <em>chroot</em> jail, <em>AppArmor</em>, and\n<em>SELinux</em>. In general, managed code may provide some protection. For example,<em> java.io.FilePermission</em> in the Java\n<em>SecurityManager</em> allows you to specify restrictions on file operations.</p>\n  <p>This may not be a feasible solution, and it only limits the impact to the operating system; the rest of your application may still be subject to compromise.</p>\n  <p>Be careful to avoid CWE-243 and other weaknesses related to jails.</p>\n  <p>\n    <strong>Note:</strong> The effectiveness of this mitigation depends on the prevention capabilities of the specific sandbox or jail being used and might only help to reduce the scope of an attack, such as restricting the attacker to certain system calls or\n limiting the portion of the file system that can be accessed.</p>\n  <h2>Additional Resources</h2>\n  <ul>\n    <li>For more information about \"CWE-243: Creation of chroot Jail Without Changing Working Directory\", please see\n<a href=\"http://cwe.mitre.org/data/definitions/243.html\">http://cwe.mitre.org/data/definitions/243.html</a></li>\n  </ul>"
 }

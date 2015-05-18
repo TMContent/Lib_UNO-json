@@ -1,6 +1,6 @@
 {
   "id": "42dd6c7d-a59c-4153-bff5-1e25b17a1bd2",
-  "checksum": "70cd283247894c3fb577886305f5300546043aba",
+  "checksum": "a6f63f9b1117805c7f6ccd379f8f7d56e76f8392",
   "words": {
     "applies": [
       "h1"
@@ -283,5 +283,5 @@
       "text": "Free Only Dynamically Allocated Memory"
     }
   ],
-  "html": "<h1>Applies to</h1>\r\n  <p>C&#43;&#43;</p>\r\n  <h1>What to Check For</h1>\r\n  <p>Verify that the delete operator is only called on pointers returned by the new operator.</p>\r\n  <h1>Why</h1>\r\n  <p>Deleting objects that were not allocated dynamically may result in an arbitrary code execution vulnerability if that memory is later reused by calling the new operator.</p>\r\n  <h1>How to Check</h1>\r\n  <p>Identify code that uses the delete operator. Verify that the delete operator is only called on pointers that are returned by the new operator.</p>\r\n  <h1>How to Fix</h1>\r\n  <p>Identify code that uses the delete operator on an object that was not dynamically allocated. Remove this code - let the compiler handle memory of the objects that are not dynamically allocated.</p>\r\n  <h1>Related Items</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/75ce06d3-d694-4271-9824-4df3947bb21e\">Free Only Dynamically Allocated Memory</a>\r\n    </li>\r\n  </ul>"
+  "html": "<h1>Applies to</h1>\n  <p>C&#43;&#43;</p>\n  <h1>What to Check For</h1>\n  <p>Verify that the delete operator is only called on pointers returned by the new operator.</p>\n  <h1>Why</h1>\n  <p>Deleting objects that were not allocated dynamically may result in an arbitrary code execution vulnerability if that memory is later reused by calling the new operator.</p>\n  <h1>How to Check</h1>\n  <p>Identify code that uses the delete operator. Verify that the delete operator is only called on pointers that are returned by the new operator.</p>\n  <h1>How to Fix</h1>\n  <p>Identify code that uses the delete operator on an object that was not dynamically allocated. Remove this code - let the compiler handle memory of the objects that are not dynamically allocated.</p>\n  <h1>Related Items</h1>\n  <ul>\n    <li>\n      <a href=\"/article/75ce06d3-d694-4271-9824-4df3947bb21e\">Free Only Dynamically Allocated Memory</a>\n    </li>\n  </ul>"
 }

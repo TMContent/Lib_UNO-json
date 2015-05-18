@@ -1,6 +1,6 @@
 {
   "id": "997213ed-eced-4364-9623-2aa301eb0ec0",
-  "checksum": "0e9e7b722e8aad18f2b3d31c565b37c18c4c6192",
+  "checksum": "a6d5c7193c744e3e684410d642c32ad5d1725209",
   "words": {
     "what": [
       "h2"
@@ -456,7 +456,7 @@
       "Time-stamp messages. The messages sent should be tagged and checksummed with time sensitive values so as to prevent replay-style attacks."
     ],
     "ol": [
-      "Change passwords periodically. Use generated passwords or keys that are changed automatically and must be entered at given time intervals by a system administrator. These passwords will be held in memory and only be valid for the time intervals.\r\n    \r\n    \r\n      \r\n        Limit access to the back-end. The passwords or keys should be limited at the back end to only performing actions valid for the front end, as opposed to having full access.\r\n    \r\n    \r\n      \r\n        Time-stamp messages. The messages sent should be tagged and checksummed with time sensitive values so as to prevent replay-style attacks."
+      "Change passwords periodically. Use generated passwords or keys that are changed automatically and must be entered at given time intervals by a system administrator. These passwords will be held in memory and only be valid for the time intervals.\n    \n    \n      \n        Limit access to the back-end. The passwords or keys should be limited at the back end to only performing actions valid for the front end, as opposed to having full access.\n    \n    \n      \n        Time-stamp messages. The messages sent should be tagged and checksummed with time sensitive values so as to prevent replay-style attacks."
     ],
     "li": [
       "Change passwords periodically. Use generated passwords or keys that are changed automatically and must be entered at given time intervals by a system administrator. These passwords will be held in memory and only be valid for the time intervals.",
@@ -470,5 +470,5 @@
     ]
   },
   "links": [],
-  "html": "<h2>What to Do</h2>\r\n  <p>Protect back-end connections. For front-end to back-end connections: Three solutions are possible, although none are complete.</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Change passwords periodically.</strong> Use generated passwords or keys that are changed automatically and must be entered at given time intervals by a system administrator. These passwords will be held in memory and only be valid for the time intervals.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Limit access to the back-end.</strong> The passwords or keys should be limited at the back end to only performing actions valid for the front end, as opposed to having full access.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Time-stamp messages.</strong> The messages sent should be tagged and checksummed with time sensitive values so as to prevent replay-style attacks.</p>\r\n    </li>\r\n  </ol>"
+  "html": "<h2>What to Do</h2>\n  <p>Protect back-end connections. For front-end to back-end connections: Three solutions are possible, although none are complete.</p>\n  <ol>\n    <li>\n      <p>\n        <strong>Change passwords periodically.</strong> Use generated passwords or keys that are changed automatically and must be entered at given time intervals by a system administrator. These passwords will be held in memory and only be valid for the time intervals.</p>\n    </li>\n    <li>\n      <p>\n        <strong>Limit access to the back-end.</strong> The passwords or keys should be limited at the back end to only performing actions valid for the front end, as opposed to having full access.</p>\n    </li>\n    <li>\n      <p>\n        <strong>Time-stamp messages.</strong> The messages sent should be tagged and checksummed with time sensitive values so as to prevent replay-style attacks.</p>\n    </li>\n  </ol>"
 }

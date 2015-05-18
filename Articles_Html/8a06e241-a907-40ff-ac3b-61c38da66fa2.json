@@ -1,6 +1,6 @@
 {
   "id": "8a06e241-a907-40ff-ac3b-61c38da66fa2",
-  "checksum": "6b4bdafaa4dc5185c0f25b28c0985cbf3229ad2d",
+  "checksum": "c8688b09cf3728d70caad018cda7674bc9d7c1c8",
   "words": {
     "34": [
       "ul",
@@ -232,7 +232,7 @@
       "How"
     ],
     "ul": [
-      "PCI DSS Requirement 3.4\r\n    PCI DSS Requirement 3.4.a\r\n    PCI DSS Requirement 3.4.b\r\n    PCI DSS Requirement 3.4.c\r\n    PCI DSS Requirement 3.4.d"
+      "PCI DSS Requirement 3.4\n    PCI DSS Requirement 3.4.a\n    PCI DSS Requirement 3.4.b\n    PCI DSS Requirement 3.4.c\n    PCI DSS Requirement 3.4.d"
     ],
     "li": [
       "PCI DSS Requirement 3.4",
@@ -248,5 +248,5 @@
     ]
   },
   "links": [],
-  "html": "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 3.4</li>\r\n    <li>PCI DSS Requirement 3.4.a</li>\r\n    <li>PCI DSS Requirement 3.4.b</li>\r\n    <li>PCI DSS Requirement 3.4.c</li>\r\n    <li>PCI DSS Requirement 3.4.d</li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Render the PAN unreadable whenever it is stored.</p>\r\n  <h1>Why</h1>\r\n  <p>The PAN should be rendered unreadable whenever it is stored to prevent disclosure in the event of a successful compromise.</p>\r\n  <h1>How</h1>\r\n  <p>Identify if and where the PAN is stored. Choose one of the following mechanisms to protect the PAN: one-way crypto-hashes, truncation, index tokens and pads, and strong cryptography. Implement the chosen mechanism.</p>"
+  "html": "<h1>Applies to</h1>\n  <ul>\n    <li>PCI DSS Requirement 3.4</li>\n    <li>PCI DSS Requirement 3.4.a</li>\n    <li>PCI DSS Requirement 3.4.b</li>\n    <li>PCI DSS Requirement 3.4.c</li>\n    <li>PCI DSS Requirement 3.4.d</li>\n  </ul>\n  <h1>What to Do</h1>\n  <p>Render the PAN unreadable whenever it is stored.</p>\n  <h1>Why</h1>\n  <p>The PAN should be rendered unreadable whenever it is stored to prevent disclosure in the event of a successful compromise.</p>\n  <h1>How</h1>\n  <p>Identify if and where the PAN is stored. Choose one of the following mechanisms to protect the PAN: one-way crypto-hashes, truncation, index tokens and pads, and strong cryptography. Implement the chosen mechanism.</p>"
 }

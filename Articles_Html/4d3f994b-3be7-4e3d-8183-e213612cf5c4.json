@@ -1,6 +1,6 @@
 {
   "id": "4d3f994b-3be7-4e3d-8183-e213612cf5c4",
-  "checksum": "2de86a8b205bc15d40c45b628f193fb67863e173",
+  "checksum": "fe79c1875e717a5a642f9b420600c5641fbfb0b6",
   "words": {
     "26": [
       "p"
@@ -57,9 +57,6 @@
       "li",
       "p",
       "p",
-      "ul",
-      "li",
-      "a",
       "title"
     ],
     "a": [
@@ -76,9 +73,6 @@
       "p",
       "p",
       "p",
-      "ul",
-      "li",
-      "a",
       "title"
     ],
     "global": [
@@ -90,9 +84,6 @@
       "li",
       "p",
       "strong",
-      "ul",
-      "li",
-      "a",
       "title"
     ],
     "exception": [
@@ -104,9 +95,6 @@
       "p",
       "p",
       "strong",
-      "ul",
-      "li",
-      "a",
       "title"
     ],
     "handler": [
@@ -119,9 +107,6 @@
       "p",
       "strong",
       "p",
-      "ul",
-      "li",
-      "a",
       "title"
     ],
     "is": [
@@ -156,9 +141,6 @@
       "li",
       "p",
       "p",
-      "ul",
-      "li",
-      "a",
       "title"
     ],
     "exceptions": [
@@ -177,9 +159,6 @@
       "p",
       "p",
       "strong",
-      "ul",
-      "li",
-      "a",
       "title"
     ],
     "improves": [
@@ -394,10 +373,7 @@
       "p"
     ],
     "use": [
-      "p",
-      "ul",
-      "li",
-      "a"
+      "p"
     ],
     "following": [
       "p",
@@ -452,7 +428,7 @@
       "p",
       "strong"
     ],
-    "globalasax": [
+    "globalaspx": [
       "ol",
       "li",
       "p",
@@ -1032,20 +1008,6 @@
       "li",
       "a"
     ],
-    "related": [
-      "h1"
-    ],
-    "guideline": [
-      "h1",
-      "ul",
-      "li",
-      "a"
-    ],
-    "asp.net)": [
-      "ul",
-      "li",
-      "a"
-    ],
     "adapted": [
       "p"
     ],
@@ -1089,14 +1051,13 @@
       "Why",
       "How to Check",
       "Problem Example",
-      "Additional Resources",
-      "Related Guideline"
+      "Additional Resources"
     ],
     "p": [
       "A global exception handler is used to catch any unhandled exceptions. A global exception handler improves the application's robustness and minimizes the risk of information disclosure.",
       "Unhandled exceptions can be a serious stumbling block to an application's performance and security. Unhandled exceptions must be avoided as they can result in the application entering an unknown state and/or revealing sensitive internal application details. Using a global exception handler will prevent unhandled exceptions.",
       "Use the following steps to verify a global exception handler is used for unhandled exceptions:",
-      "Verify that the application defines a global error handler in Global.asax to catch any exceptions that are not handled in code. The following code gives an example of how this might be done:",
+      "Verify that the application defines a global error handler in Global.aspx to catch any exceptions that are not handled in code. The following code gives an example of how this might be done:",
       "Verify that all exceptions are logged in the application event log. While testing the application, analyze the event log regularly, looking for unhandled exceptions.",
       "An ASP.NET application has code to connect to a SQL database. However, the application does not have a generic error handler specified. As a result, when the connection times out application details are revealed to the client in the exception:",
       "Description: An unhandled exception occurred during the execution of the current web request. Please review the stack trace for more information about the error and where it originated in the code.",
@@ -1105,16 +1066,15 @@
       "Adapted from Microsoft patterns & practices guidance."
     ],
     "ol": [
-      "Verify that the application defines a global error handler in Global.asax to catch any exceptions that are not handled in code. The following code gives an example of how this might be done:\r\n      <%@ Application Language=\"C#\" %><%@ Import Namespace=\"System.Diagnostics\" %> <script language=\"C#\" runat=\"server\"> void Application_Error(object sender, EventArgs e) {     // Add the appropriate logging code        Response.Write(\"We are sorry, but we cannot complete your request. Please try again later!\");    Server.ClearError();} </script>\r\n    \r\n    \r\n      \r\n        Verify that all exceptions are logged in the application event log. While testing the application, analyze the event log regularly, looking for unhandled exceptions."
+      "Verify that the application defines a global error handler in Global.aspx to catch any exceptions that are not handled in code. The following code gives an example of how this might be done:\n      <%@ Application Language=\"C#\" %><%@ Import Namespace=\"System.Diagnostics\" %> <script language=\"C#\" runat=\"server\"> void Application_Error(object sender, EventArgs e) {     // Add the appropriate logging code        Response.Write(\"We are sorry, but we cannot complete your request. Please try again later!\");    Server.ClearError();} </script>\n    \n    \n      \n        Verify that all exceptions are logged in the application event log. While testing the application, analyze the event log regularly, looking for unhandled exceptions."
     ],
     "li": [
-      "Verify that the application defines a global error handler in Global.asax to catch any exceptions that are not handled in code. The following code gives an example of how this might be done:\r\n      <%@ Application Language=\"C#\" %><%@ Import Namespace=\"System.Diagnostics\" %> <script language=\"C#\" runat=\"server\"> void Application_Error(object sender, EventArgs e) {     // Add the appropriate logging code        Response.Write(\"We are sorry, but we cannot complete your request. Please try again later!\");    Server.ClearError();} </script>",
+      "Verify that the application defines a global error handler in Global.aspx to catch any exceptions that are not handled in code. The following code gives an example of how this might be done:\n      <%@ Application Language=\"C#\" %><%@ Import Namespace=\"System.Diagnostics\" %> <script language=\"C#\" runat=\"server\"> void Application_Error(object sender, EventArgs e) {     // Add the appropriate logging code        Response.Write(\"We are sorry, but we cannot complete your request. Please try again later!\");    Server.ClearError();} </script>",
       "Verify that all exceptions are logged in the application event log. While testing the application, analyze the event log regularly, looking for unhandled exceptions.",
-      "To learn more about creating custom errors in ASP.NET, visit http://support.microsoft.com/kb/306355",
-      "Guideline: Use a Global Exception Handler for Unhandled Exceptions (ASP.NET)"
+      "To learn more about creating custom errors in ASP.NET, visit http://support.microsoft.com/kb/306355"
     ],
     "strong": [
-      "Verify that the application defines a global error handler in Global.asax",
+      "Verify that the application defines a global error handler in Global.aspx",
       "Verify that all exceptions are logged in the application event log.",
       "Description:",
       "Exception Details:",
@@ -1137,12 +1097,10 @@
       "Line 216:Line 217:            if (conn.State != ConnectionState.Open)Line 218:                conn.Open();Line 219:Line 220:            cmd.Connection = conn;"
     ],
     "ul": [
-      "To learn more about creating custom errors in ASP.NET, visit http://support.microsoft.com/kb/306355",
-      "Guideline: Use a Global Exception Handler for Unhandled Exceptions (ASP.NET)"
+      "To learn more about creating custom errors in ASP.NET, visit http://support.microsoft.com/kb/306355"
     ],
     "a": [
-      "http://support.microsoft.com/kb/306355",
-      "Guideline: Use a Global Exception Handler for Unhandled Exceptions (ASP.NET)"
+      "http://support.microsoft.com/kb/306355"
     ],
     "hr": [
       ""
@@ -1152,11 +1110,7 @@
     {
       "href": "http://support.microsoft.com/kb/306355",
       "text": "http://support.microsoft.com/kb/306355"
-    },
-    {
-      "href": "/article/33a894ce-2061-4741-be92-1d063c9cf057",
-      "text": "Guideline: Use a Global Exception Handler for Unhandled Exceptions (ASP.NET)"
     }
   ],
-  "html": "<br />\r\n  <h1>What to Check For</h1>\r\n  <p>A global exception handler is used to catch any unhandled exceptions. A global exception handler improves the application's robustness and minimizes the risk of information disclosure.</p>\r\n  <h1>Why</h1>\r\n  <p>Unhandled exceptions can be a serious stumbling block to an application's performance and security. Unhandled exceptions must be avoided as they can result in the application entering an unknown state and/or revealing sensitive internal application details. Using a global exception handler will prevent unhandled exceptions.</p>\r\n  <h1>How to Check</h1>\r\n  <p>Use the following steps to verify a global exception handler is used for unhandled exceptions:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Verify that the application defines a global error handler in Global.asax</strong> to catch any exceptions that are not handled in code. The following code gives an example of how this might be done:</p>\r\n      <pre>&lt;%@ Application Language=\"C#\" %&gt;<br />&lt;%@ Import Namespace=\"System.Diagnostics\" %&gt;<br /> &lt;script language=\"C#\" runat=\"server\"&gt;<br /> void Application_Error(object sender, EventArgs e) {<br />     // Add the appropriate logging code<br />        Response.Write(\"We are sorry, but we cannot complete your request. Please try again later!\");<br />    Server.ClearError();<br />}<br /> &lt;/script&gt;</pre>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Verify that all exceptions are logged in the application event log.</strong> While testing the application, analyze the event log regularly, looking for unhandled exceptions.</p>\r\n    </li>\r\n  </ol>\r\n  <h1>Problem Example</h1>\r\n  <p>An ASP.NET application has code to connect to a SQL database. However, the application does not have a generic error handler specified. As a result, when the connection times out application details are revealed to the client in the exception: </p>\r\n  <p>\r\n    <strong>Description:</strong> An unhandled exception occurred during the execution of the current web request. Please review the stack trace for more information about the error and where it originated in the code.</p>\r\n  <p>\r\n    <strong>Exception Details:</strong> System.Data.SqlClient.SqlException: An error has occurred while establishing a connection to the server. When connecting to SQL Server, this failure may be caused by the fact that under the default settings SQL Server does not allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)</p>\r\n  <p>\r\n    <strong>Source Error:</strong>\r\n  </p>\r\n  <table>\r\n    <tbody>\r\n      <tr>\r\n        <td>\r\n          <pre>Line 216:<br />Line 217:            if (conn.State != ConnectionState.Open)<br />Line 218:                conn.Open();<br />Line 219:<br />Line 220:            cmd.Connection = conn;</pre>\r\n        </td>\r\n      </tr>\r\n    </tbody>\r\n  </table>\r\n  <h1>Additional Resources</h1>\r\n  <ul>\r\n    <li>To learn more about creating custom errors in ASP.NET, visit <a href=\"http://support.microsoft.com/kb/306355\">http://support.microsoft.com/kb/306355</a></li>\r\n  </ul>\r\n  <h1>Related Guideline</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/33a894ce-2061-4741-be92-1d063c9cf057\">Guideline: Use a Global Exception Handler for Unhandled Exceptions (ASP.NET)</a>\r\n    </li>\r\n  </ul>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance. </p>"
+  "html": "<br />\n  <h1>What to Check For</h1>\n  <p>A global exception handler is used to catch any unhandled exceptions. A global exception handler improves the application's robustness and minimizes the risk of information disclosure.</p>\n  <h1>Why</h1>\n  <p>Unhandled exceptions can be a serious stumbling block to an application's performance and security. Unhandled exceptions must be avoided as they can result in the application entering an unknown state and/or revealing sensitive internal application details. Using a global exception handler will prevent unhandled exceptions.</p>\n  <h1>How to Check</h1>\n  <p>Use the following steps to verify a global exception handler is used for unhandled exceptions:</p>\n  <ol>\n    <li>\n      <p>\n        <strong>Verify that the application defines a global error handler in Global.aspx</strong> to catch any exceptions that are not handled in code. The following code gives an example of how this might be done:</p>\n      <pre>&lt;%@ Application Language=\"C#\" %&gt;<br />&lt;%@ Import Namespace=\"System.Diagnostics\" %&gt;<br /> &lt;script language=\"C#\" runat=\"server\"&gt;<br /> void Application_Error(object sender, EventArgs e) {<br />     // Add the appropriate logging code<br />        Response.Write(\"We are sorry, but we cannot complete your request. Please try again later!\");<br />    Server.ClearError();<br />}<br /> &lt;/script&gt;</pre>\n    </li>\n    <li>\n      <p>\n        <strong>Verify that all exceptions are logged in the application event log.</strong> While testing the application, analyze the event log regularly, looking for unhandled exceptions.</p>\n    </li>\n  </ol>\n  <h1>Problem Example</h1>\n  <p>An ASP.NET application has code to connect to a SQL database. However, the application does not have a generic error handler specified. As a result, when the connection times out application details are revealed to the client in the exception: </p>\n  <p>\n    <strong>Description:</strong> An unhandled exception occurred during the execution of the current web request. Please review the stack trace for more information about the error and where it originated in the code.</p>\n  <p>\n    <strong>Exception Details:</strong> System.Data.SqlClient.SqlException: An error has occurred while establishing a connection to the server. When connecting to SQL Server, this failure may be caused by the fact that under the default settings SQL Server does not allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)</p>\n  <p>\n    <strong>Source Error:</strong>\n  </p>\n  <table>\n    <tbody>\n      <tr>\n        <td>\n          <pre>Line 216:<br />Line 217:            if (conn.State != ConnectionState.Open)<br />Line 218:                conn.Open();<br />Line 219:<br />Line 220:            cmd.Connection = conn;</pre>\n        </td>\n      </tr>\n    </tbody>\n  </table>\n  <h1>Additional Resources</h1>\n  <ul>\n    <li>To learn more about creating custom errors in ASP.NET, visit <a href=\"http://support.microsoft.com/kb/306355\">http://support.microsoft.com/kb/306355</a></li>\n  </ul>\n  <hr />\n  <p>Adapted from Microsoft patterns &amp; practices guidance. </p>"
 }

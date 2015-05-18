@@ -1,6 +1,6 @@
 {
   "id": "275b15cc-ef5c-4637-ae77-62d8d4d1d4e2",
-  "checksum": "b8541fa0e473fe229415646ea00937b2a3e80e08",
+  "checksum": "641843819be13b789519e317f45923b857ad0318",
   "words": {
     "35": [
       "ul",
@@ -229,7 +229,7 @@
       "ol",
       "li"
     ],
-    "client\r[datacontract]public": [
+    "client[datacontract]public": [
       "ol",
       "li"
     ],
@@ -308,7 +308,7 @@
       "ol",
       "li"
     ],
-    "faults\r\n[servicecontract]public": [
+    "faults\n[servicecontract]public": [
       "ol",
       "li"
     ],
@@ -389,7 +389,7 @@
       "ol",
       "li"
     ],
-    "details\r\ncatch(exception": [
+    "details\ncatch(exception": [
       "ol",
       "li"
     ],
@@ -597,15 +597,15 @@
       "Additional Resources"
     ],
     "ul": [
-      "Microsoft® Windows Communication Foundation (WCF) 3.5 \r\nMicrosoft Visual Studio® 2008",
+      "Microsoft® Windows Communication Foundation (WCF) 3.5 \nMicrosoft Visual Studio® 2008",
       "For more information on Fault Contracts, see “Specifying and Handling Faults in Contracts and Services” at http://msdn.microsoft.com/en-us/library/ms733721.aspx"
     ],
     "li": [
       "Microsoft® Windows Communication Foundation (WCF) 3.5",
       "Microsoft Visual Studio® 2008",
-      "Define the DataContract type to pass the details of SOAP faults as exceptions from a service back to a client\r\n[DataContract]public class DatabaseFault{[DataMember]public string DbOperation;[DataMember]public string DbReason[DataMember]public string DbMessage;}",
-      "Use the FaultContract attribute in the ListCustomers method to generate SOAP faults.\r\n[ServiceContract]public interface ICustomerService{// Get the list of customers[FaultContract(typeof(DatabaseFault))][OperationContract]List<string> ListCustomers();…}",
-      "Create and populate the DatabaseFault object with the details of the exception in the Service implementation class and then throw a FaultException object with the DatabaseFault object details.\r\ncatch(Exception e){    DatabaseFault df = new DatabaseFault();df.DbOperation = \"ExecuteReader\";df.DbReason = \"Exception in querying the Northwind database.\";df.DbMessage = e.Message;throw new FaultException<DatabaseFault>(df);}",
+      "Define the DataContract type to pass the details of SOAP faults as exceptions from a service back to a client\n[DataContract]public class DatabaseFault{[DataMember]public string DbOperation;[DataMember]public string DbReason[DataMember]public string DbMessage;}",
+      "Use the FaultContract attribute in the ListCustomers method to generate SOAP faults.\n[ServiceContract]public interface ICustomerService{// Get the list of customers[FaultContract(typeof(DatabaseFault))][OperationContract]List<string> ListCustomers();…}",
+      "Create and populate the DatabaseFault object with the details of the exception in the Service implementation class and then throw a FaultException object with the DatabaseFault object details.\ncatch(Exception e){    DatabaseFault df = new DatabaseFault();df.DbOperation = \"ExecuteReader\";df.DbReason = \"Exception in querying the Northwind database.\";df.DbMessage = e.Message;throw new FaultException<DatabaseFault>(df);}",
       "For more information on Fault Contracts, see “Specifying and Handling Faults in Contracts and Services” at http://msdn.microsoft.com/en-us/library/ms733721.aspx"
     ],
     "p": [
@@ -613,7 +613,7 @@
       "Adapted from Microsoft patterns & practices guidance."
     ],
     "ol": [
-      "Define the DataContract type to pass the details of SOAP faults as exceptions from a service back to a client\r\n[DataContract]public class DatabaseFault{[DataMember]public string DbOperation;[DataMember]public string DbReason[DataMember]public string DbMessage;}Use the FaultContract attribute in the ListCustomers method to generate SOAP faults.\r\n[ServiceContract]public interface ICustomerService{// Get the list of customers[FaultContract(typeof(DatabaseFault))][OperationContract]List<string> ListCustomers();…}Create and populate the DatabaseFault object with the details of the exception in the Service implementation class and then throw a FaultException object with the DatabaseFault object details.\r\ncatch(Exception e){    DatabaseFault df = new DatabaseFault();df.DbOperation = \"ExecuteReader\";df.DbReason = \"Exception in querying the Northwind database.\";df.DbMessage = e.Message;throw new FaultException<DatabaseFault>(df);}",
+      "Define the DataContract type to pass the details of SOAP faults as exceptions from a service back to a client\n[DataContract]public class DatabaseFault{[DataMember]public string DbOperation;[DataMember]public string DbReason[DataMember]public string DbMessage;}Use the FaultContract attribute in the ListCustomers method to generate SOAP faults.\n[ServiceContract]public interface ICustomerService{// Get the list of customers[FaultContract(typeof(DatabaseFault))][OperationContract]List<string> ListCustomers();…}Create and populate the DatabaseFault object with the details of the exception in the Service implementation class and then throw a FaultException object with the DatabaseFault object details.\ncatch(Exception e){    DatabaseFault df = new DatabaseFault();df.DbOperation = \"ExecuteReader\";df.DbReason = \"Exception in querying the Northwind database.\";df.DbMessage = e.Message;throw new FaultException<DatabaseFault>(df);}",
       "[DataContract]public class DatabaseFault{[DataMember]public string DbOperation;[DataMember]public string DbReason[DataMember]public string DbMessage;}",
       "[ServiceContract]public interface ICustomerService{// Get the list of customers[FaultContract(typeof(DatabaseFault))][OperationContract]List<string> ListCustomers();…}",
       "catch(Exception e){    DatabaseFault df = new DatabaseFault();df.DbOperation = \"ExecuteReader\";df.DbReason = \"Exception in querying the Northwind database.\";df.DbMessage = e.Message;throw new FaultException<DatabaseFault>(df);}"
@@ -662,5 +662,5 @@
       "text": "http://msdn.microsoft.com/en-us/library/ms733721.aspx"
     }
   ],
-  "html": "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>Microsoft® Windows Communication Foundation (WCF) 3.5 \r\n<li>Microsoft Visual Studio® 2008</li></li>\r\n  </ul>\r\n  <h1>Description</h1>\r\n  <p>The following steps show an example of how to throw an exception with a data contract that has a complex type.</p>\r\n  <ol>\r\n    <li>Define the DataContract type to pass the details of SOAP faults as exceptions from a service back to a client\r\n<ol><pre>[DataContract]<br />public class DatabaseFault<br />{<br />[DataMember]<br />public string DbOperation;<br />[DataMember]<br />public string DbReason<br />[DataMember]<br />public string DbMessage;<br />}</pre></ol><li>Use the FaultContract attribute in the ListCustomers method to generate SOAP faults.\r\n<ol><pre>[ServiceContract]<br />public interface ICustomerService<br />{<br />// Get the list of customers<br />[FaultContract(typeof(DatabaseFault))]<br />[OperationContract]<br />List&lt;string&gt; ListCustomers();<br />…<br />}</pre></ol><li>Create and populate the DatabaseFault object with the details of the exception in the Service implementation class and then throw a FaultException object with the DatabaseFault object details.\r\n<ol><pre>catch(Exception e)<br />{    DatabaseFault df = new DatabaseFault();<br />df.DbOperation = \"ExecuteReader\";<br />df.DbReason = \"Exception in querying the Northwind database.\";<br />df.DbMessage = e.Message;<br />throw new FaultException&lt;DatabaseFault&gt;(df);<br />}<br /></pre></ol></li></li></li>\r\n  </ol>\r\n  <h1>Additional Resources</h1>\r\n  <ul>\r\n    <li>For more information on Fault Contracts, see “Specifying and Handling Faults in Contracts and Services” at <a href=\"http://msdn.microsoft.com/en-us/library/ms733721.aspx\">http://msdn.microsoft.com/en-us/library/ms733721.aspx</a></li>\r\n  </ul>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
+  "html": "<h1>Applies to</h1>\n  <ul>\n    <li>Microsoft® Windows Communication Foundation (WCF) 3.5 \n<li>Microsoft Visual Studio® 2008</li></li>\n  </ul>\n  <h1>Description</h1>\n  <p>The following steps show an example of how to throw an exception with a data contract that has a complex type.</p>\n  <ol>\n    <li>Define the DataContract type to pass the details of SOAP faults as exceptions from a service back to a client\n<ol><pre>[DataContract]<br />public class DatabaseFault<br />{<br />[DataMember]<br />public string DbOperation;<br />[DataMember]<br />public string DbReason<br />[DataMember]<br />public string DbMessage;<br />}</pre></ol><li>Use the FaultContract attribute in the ListCustomers method to generate SOAP faults.\n<ol><pre>[ServiceContract]<br />public interface ICustomerService<br />{<br />// Get the list of customers<br />[FaultContract(typeof(DatabaseFault))]<br />[OperationContract]<br />List&lt;string&gt; ListCustomers();<br />…<br />}</pre></ol><li>Create and populate the DatabaseFault object with the details of the exception in the Service implementation class and then throw a FaultException object with the DatabaseFault object details.\n<ol><pre>catch(Exception e)<br />{    DatabaseFault df = new DatabaseFault();<br />df.DbOperation = \"ExecuteReader\";<br />df.DbReason = \"Exception in querying the Northwind database.\";<br />df.DbMessage = e.Message;<br />throw new FaultException&lt;DatabaseFault&gt;(df);<br />}<br /></pre></ol></li></li></li>\n  </ol>\n  <h1>Additional Resources</h1>\n  <ul>\n    <li>For more information on Fault Contracts, see “Specifying and Handling Faults in Contracts and Services” at <a href=\"http://msdn.microsoft.com/en-us/library/ms733721.aspx\">http://msdn.microsoft.com/en-us/library/ms733721.aspx</a></li>\n  </ul>\n  <hr />\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
 }

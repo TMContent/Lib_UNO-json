@@ -1,6 +1,6 @@
 {
   "id": "6d5d816e-2dc3-492e-b5dd-e344a01c7124",
-  "checksum": "9d71da9b61833ab060307e0c4f9b470e2aa198ca",
+  "checksum": "ee8896b4604e2ed8be0d0c62845e5f357e81ba84",
   "words": {
     "35": [
       "ul",
@@ -458,13 +458,13 @@
       "Additional Resources"
     ],
     "ul": [
-      "Microsoft® Windows Communication Foundation (WCF) 3.5 \r\nMicrosoft Visual Studio® 2008",
-      "For more information on Fault Contracts, see “Specifying and Handling Faults in Contracts and Services” at <A href=\"http://msdn.microsoft.com/en-us/library/ms733721. \r\nAdapted from Microsoft patterns & practices guidance."
+      "Microsoft® Windows Communication Foundation (WCF) 3.5 \nMicrosoft Visual Studio® 2008",
+      "For more information on Fault Contracts, see “Specifying and Handling Faults in Contracts and Services” at <A href=\"http://msdn.microsoft.com/en-us/library/ms733721. \nAdapted from Microsoft patterns & practices guidance."
     ],
     "li": [
       "Microsoft® Windows Communication Foundation (WCF) 3.5",
       "Microsoft Visual Studio® 2008",
-      "For more information on Fault Contracts, see “Specifying and Handling Faults in Contracts and Services” at <A href=\"http://msdn.microsoft.com/en-us/library/ms733721. \r\nAdapted from Microsoft patterns & practices guidance."
+      "For more information on Fault Contracts, see “Specifying and Handling Faults in Contracts and Services” at <A href=\"http://msdn.microsoft.com/en-us/library/ms733721. \nAdapted from Microsoft patterns & practices guidance."
     ],
     "p": [
       "You can create an error handler to log the fault details by implementing the IErrorHandler interface methods in your service. By using this you log and suppress the exceptions or you can log and throw them as FaultException.",
@@ -493,5 +493,5 @@
     ]
   },
   "links": [],
-  "html": "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>Microsoft® Windows Communication Foundation (WCF) 3.5 \r\n<li>Microsoft Visual Studio® 2008</li></li>\r\n  </ul>\r\n  <h1>Description</h1>\r\n  <p>You can create an error handler to log the fault details by implementing the IErrorHandler interface methods in your service. By using this you log and suppress the exceptions or you can log and throw them as FaultException.</p>\r\n  <pre>public interface IErrorHandler <br />{ <br />        bool HandleError(Exception error, MessageFault fault); <br />        void ProvideFault(Exception error, ref MessageFault fault, ref string faultAction); <br />} </pre>\r\n  <p>To suppress the fault message, implement the HandleError method and return false. In this method you can add your code for logging capabilities.</p>\r\n  <p>To raise FaultException instead of suppressing, implement the ProvideFault method to provide the MessageFault value. The following code shows a sample implementation of the ProvideFault method </p>\r\n  <pre>//code snippet<br />public void ProvideFault(Exception error, MessageVersion version, ref Message fault)<br />{<br />  FaultException newEx = new FaultException();<br />  MessageFault msgFault = newEx.CreateMessageFault();<br />  fault = Message.CreateMessage(version, msgFault, newEx.Action);<br />}</pre>\r\n  <h1>Additional Resources</h1>\r\n  <ul>\r\n    <li>For more information on Fault Contracts, see “Specifying and Handling Faults in Contracts and Services” at &lt;A href=\"http://msdn.microsoft.com/en-us/library/ms733721. \r\n<hr /><p>Adapted from Microsoft patterns & practices guidance.</p></li>\r\n  </ul>"
+  "html": "<h1>Applies to</h1>\n  <ul>\n    <li>Microsoft® Windows Communication Foundation (WCF) 3.5 \n<li>Microsoft Visual Studio® 2008</li></li>\n  </ul>\n  <h1>Description</h1>\n  <p>You can create an error handler to log the fault details by implementing the IErrorHandler interface methods in your service. By using this you log and suppress the exceptions or you can log and throw them as FaultException.</p>\n  <pre>public interface IErrorHandler <br />{ <br />        bool HandleError(Exception error, MessageFault fault); <br />        void ProvideFault(Exception error, ref MessageFault fault, ref string faultAction); <br />} </pre>\n  <p>To suppress the fault message, implement the HandleError method and return false. In this method you can add your code for logging capabilities.</p>\n  <p>To raise FaultException instead of suppressing, implement the ProvideFault method to provide the MessageFault value. The following code shows a sample implementation of the ProvideFault method </p>\n  <pre>//code snippet<br />public void ProvideFault(Exception error, MessageVersion version, ref Message fault)<br />{<br />  FaultException newEx = new FaultException();<br />  MessageFault msgFault = newEx.CreateMessageFault();<br />  fault = Message.CreateMessage(version, msgFault, newEx.Action);<br />}</pre>\n  <h1>Additional Resources</h1>\n  <ul>\n    <li>For more information on Fault Contracts, see “Specifying and Handling Faults in Contracts and Services” at &lt;A href=\"http://msdn.microsoft.com/en-us/library/ms733721. \n<hr /><p>Adapted from Microsoft patterns & practices guidance.</p></li>\n  </ul>"
 }

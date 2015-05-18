@@ -1,6 +1,6 @@
 {
   "id": "b89399fa-35b7-470b-8392-931fe6a06a75",
-  "checksum": "19040192aacf6fcd271a0ff5a1506e4a1b6fe2cf",
+  "checksum": "d17ee9357652be616a2d7a22264745d72f40d7c9",
   "words": {
     "what": [
       "h1"
@@ -347,7 +347,7 @@
       "p",
       "title"
     ],
-    "table": [
+    "table&nbsp;&nbsp;": [
       "p"
     ],
     "related": [
@@ -379,6 +379,9 @@
     "guidance": [
       "p"
     ],
+    "sink]": [
+      "title"
+    ],
     "store": [
       "title"
     ],
@@ -398,7 +401,7 @@
       "Do not put sensitive data into cookies, form fields or query strings.",
       "The preceding storage mechanisms are all well known and truly unsafe. None of the aforementioned storage types offer any protection against eavesdropping or tampering. They are also the traditional places that most attackers look for interesting data such as account credentials and credit card information.",
       "This is appropriate whenever sensitive data needs to be sent between the browser and the web server.",
-      "If you need to access sensitive data for a user, keep it stored on the server and perform all of the state management there. The previously mentioned storage mechanisms are only appropriate for things like session IDs or non-sensitive client settings, such as how many result items to display in a table.",
+      "If you need to access sensitive data for a user, keep it stored on the server and perform all of the state management there. The previously mentioned storage mechanisms are only appropriate for things like session IDs or non-sensitive client settings, such as how many result items to display in a table.&nbsp;&nbsp;",
       "Adapted from Microsoft patterns & practices guidance."
     ],
     "ul": [
@@ -420,5 +423,5 @@
       "text": "Do Not Cache Sensitive Data"
     }
   ],
-  "html": "<h1>What to Do</h1>\r\n  <p>Do not put sensitive data into cookies, form fields or query strings. </p>\r\n  <h1>Why</h1>\r\n  <p>The preceding storage mechanisms are all well known and truly unsafe. None of the aforementioned storage types offer any protection against eavesdropping or tampering. They are also the traditional places that most attackers look for interesting data such as account credentials and credit card information. </p>\r\n  <h1>When</h1>\r\n  <p>This is appropriate whenever sensitive data needs to be sent between the browser and the web server. </p>\r\n  <h1>How</h1>\r\n  <p>If you need to access sensitive data for a user, keep it stored on the server and perform all of the state management there. The previously mentioned storage mechanisms are only appropriate for things like session IDs or non-sensitive client settings, such as how many result items to display in a table.&nbsp;&nbsp;</p>\r\n  <h1>Related Items</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/e9e34335-e80f-4273-8d59-d7f82cabf3b2\">Do Not Cache Sensitive Data</a>\r\n    </li>\r\n  </ul>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance. </p>"
+  "html": "<h1>What to Do</h1>\n  <p>Do not put sensitive data into cookies, form fields or query strings. </p>\n  <h1>Why</h1>\n  <p>The preceding storage mechanisms are all well known and truly unsafe. None of the aforementioned storage types offer any protection against eavesdropping or tampering. They are also the traditional places that most attackers look for interesting data such as account credentials and credit card information. </p>\n  <h1>When</h1>\n  <p>This is appropriate whenever sensitive data needs to be sent between the browser and the web server. </p>\n  <h1>How</h1>\n  <p>If you need to access sensitive data for a user, keep it stored on the server and perform all of the state management there. The previously mentioned storage mechanisms are only appropriate for things like session IDs or non-sensitive client settings, such as how many result items to display in a table.&amp;nbsp;&amp;nbsp;</p>\n  <h1>Related Items</h1>\n  <ul>\n    <li>\n      <a href=\"/article/e9e34335-e80f-4273-8d59-d7f82cabf3b2\">Do Not Cache Sensitive Data</a>\n    </li>\n  </ul>\n  <hr />\n  <p>Adapted from Microsoft patterns &amp; practices guidance. </p>"
 }

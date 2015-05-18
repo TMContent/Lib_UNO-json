@@ -1,6 +1,6 @@
 {
   "id": "5a1abc1c-989c-44b8-b0bb-50bc6b2e41dd",
-  "checksum": "ec5e9d2437c0310814e9f8ac92655f553d798941",
+  "checksum": "15998b72598ba5896f38ae768fb97624115619b9",
   "words": {
     "1": [
       "p"
@@ -289,7 +289,7 @@
       "p",
       "p"
     ],
-    "to\rinbox.txt": [
+    "toinbox.txt": [
       "p"
     ],
     "profiletxt.": [
@@ -298,7 +298,7 @@
     "features": [
       "p"
     ],
-    "esapi\raccessreferencemap": [
+    "esapiaccessreferencemap": [
       "p"
     ],
     "provide": [
@@ -727,12 +727,12 @@
       "How"
     ],
     "p": [
-      "When the set of acceptable objects, such as filenames or URLs, is limited or known, create a mapping from a set of fixed input values (such as numeric IDs) to the actual filenames or URLs, and reject all other inputs. For example, ID 1 could map to\r\ninbox.txt and ID 2 could map to profile.txt. Features such as the ESAPI\r\nAccessReferenceMap provide this capability.",
+      "When the set of acceptable objects, such as filenames or URLs, is limited or known, create a mapping from a set of fixed input values (such as numeric IDs) to the actual filenames or URLs, and reject all other inputs. For example, ID 1 could map to\ninbox.txt and ID 2 could map to profile.txt. Features such as the ESAPI\nAccessReferenceMap provide this capability.",
       "Using reference maps helps make sure that only valid input is handled by the application. Reference maps are one of the most effective implementations of white-list input validation.",
       "To use reference maps:",
       "Identify all known acceptable objects, such as filenames or URLs.",
       "Assign a unique reference ID to each known acceptable object.",
-      "Accept only valid reference IDs. Add functions that accept only valid reference IDs defined in the previous step for accessing the objects and rejects all other input. This applies only to code that deals with the objects that have reference\r\n IDs defined. It may also be prudent to perform authorization checks in these functions.",
+      "Accept only valid reference IDs. Add functions that accept only valid reference IDs defined in the previous step for accessing the objects and rejects all other input. This applies only to code that deals with the objects that have reference\n IDs defined. It may also be prudent to perform authorization checks in these functions.",
       "Resolve reference IDs. Add functions that replace reference IDs with handles to the acceptable objects. It may also be prudent to perform authorization checks in these functions.",
       "Use reference IDs. Replace all code that references the objects directly with code that uses functions that validate and resolve reference IDs."
     ],
@@ -742,12 +742,12 @@
       "AccessReferenceMap"
     ],
     "ol": [
-      "Identify all known acceptable objects, such as filenames or URLs.\r\n      \r\n    \r\n    \r\n      \r\n        Assign a unique reference ID to each known acceptable object.\r\n      \r\n    \r\n    \r\n      \r\n        Accept only valid reference IDs. Add functions that accept only valid reference IDs defined in the previous step for accessing the objects and rejects all other input. This applies only to code that deals with the objects that have reference\r\n IDs defined. It may also be prudent to perform authorization checks in these functions.\r\n    \r\n    \r\n      \r\n        Resolve reference IDs. Add functions that replace reference IDs with handles to the acceptable objects. It may also be prudent to perform authorization checks in these functions.\r\n\r\n    \r\n    \r\n      \r\n        Use reference IDs. Replace all code that references the objects directly with code that uses functions that validate and resolve reference IDs."
+      "Identify all known acceptable objects, such as filenames or URLs.\n      \n    \n    \n      \n        Assign a unique reference ID to each known acceptable object.\n      \n    \n    \n      \n        Accept only valid reference IDs. Add functions that accept only valid reference IDs defined in the previous step for accessing the objects and rejects all other input. This applies only to code that deals with the objects that have reference\n IDs defined. It may also be prudent to perform authorization checks in these functions.\n    \n    \n      \n        Resolve reference IDs. Add functions that replace reference IDs with handles to the acceptable objects. It may also be prudent to perform authorization checks in these functions.\n\n    \n    \n      \n        Use reference IDs. Replace all code that references the objects directly with code that uses functions that validate and resolve reference IDs."
     ],
     "li": [
       "Identify all known acceptable objects, such as filenames or URLs.",
       "Assign a unique reference ID to each known acceptable object.",
-      "Accept only valid reference IDs. Add functions that accept only valid reference IDs defined in the previous step for accessing the objects and rejects all other input. This applies only to code that deals with the objects that have reference\r\n IDs defined. It may also be prudent to perform authorization checks in these functions.",
+      "Accept only valid reference IDs. Add functions that accept only valid reference IDs defined in the previous step for accessing the objects and rejects all other input. This applies only to code that deals with the objects that have reference\n IDs defined. It may also be prudent to perform authorization checks in these functions.",
       "Resolve reference IDs. Add functions that replace reference IDs with handles to the acceptable objects. It may also be prudent to perform authorization checks in these functions.",
       "Use reference IDs. Replace all code that references the objects directly with code that uses functions that validate and resolve reference IDs."
     ],
@@ -760,5 +760,5 @@
     ]
   },
   "links": [],
-  "html": "<h2>What to Do</h2>\r\n  <p>When the set of acceptable objects, such as filenames or URLs, is limited or known, create a mapping from a set of fixed input values (such as numeric IDs) to the actual filenames or URLs, and reject all other inputs. For example, ID 1 could map to\r\n<em>inbox.txt</em> and ID 2 could map to <em>profile.txt</em>. Features such as the ESAPI\r\n<em>AccessReferenceMap</em> provide this capability.</p>\r\n  <h2>Why</h2>\r\n  <p>Using reference maps helps make sure that only valid input is handled by the application. Reference maps are one of the most effective implementations of white-list input validation.</p>\r\n  <h2>How</h2>\r\n  <p>To use reference maps:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Identify all known acceptable objects, such as filenames or URLs.</strong>\r\n      </p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Assign a unique reference ID to each known acceptable object.</strong>\r\n      </p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Accept only valid reference IDs.</strong> Add functions that accept only valid reference IDs defined in the previous step for accessing the objects and rejects all other input. This applies only to code that deals with the objects that have reference\r\n IDs defined. It may also be prudent to perform authorization checks in these functions.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Resolve reference IDs.</strong> Add functions that replace reference IDs with handles to the acceptable objects. It may also be prudent to perform authorization checks in these functions.\r\n</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Use reference IDs.</strong> Replace all code that references the objects directly with code that uses functions that validate and resolve reference IDs.\r\n</p>\r\n    </li>\r\n  </ol>"
+  "html": "<h2>What to Do</h2>\n  <p>When the set of acceptable objects, such as filenames or URLs, is limited or known, create a mapping from a set of fixed input values (such as numeric IDs) to the actual filenames or URLs, and reject all other inputs. For example, ID 1 could map to\n<em>inbox.txt</em> and ID 2 could map to <em>profile.txt</em>. Features such as the ESAPI\n<em>AccessReferenceMap</em> provide this capability.</p>\n  <h2>Why</h2>\n  <p>Using reference maps helps make sure that only valid input is handled by the application. Reference maps are one of the most effective implementations of white-list input validation.</p>\n  <h2>How</h2>\n  <p>To use reference maps:</p>\n  <ol>\n    <li>\n      <p>\n        <strong>Identify all known acceptable objects, such as filenames or URLs.</strong>\n      </p>\n    </li>\n    <li>\n      <p>\n        <strong>Assign a unique reference ID to each known acceptable object.</strong>\n      </p>\n    </li>\n    <li>\n      <p>\n        <strong>Accept only valid reference IDs.</strong> Add functions that accept only valid reference IDs defined in the previous step for accessing the objects and rejects all other input. This applies only to code that deals with the objects that have reference\n IDs defined. It may also be prudent to perform authorization checks in these functions.</p>\n    </li>\n    <li>\n      <p>\n        <strong>Resolve reference IDs.</strong> Add functions that replace reference IDs with handles to the acceptable objects. It may also be prudent to perform authorization checks in these functions.\n</p>\n    </li>\n    <li>\n      <p>\n        <strong>Use reference IDs.</strong> Replace all code that references the objects directly with code that uses functions that validate and resolve reference IDs.\n</p>\n    </li>\n  </ol>"
 }

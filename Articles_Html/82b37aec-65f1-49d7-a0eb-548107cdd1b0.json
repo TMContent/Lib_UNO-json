@@ -1,16 +1,11 @@
 {
   "id": "82b37aec-65f1-49d7-a0eb-548107cdd1b0",
-  "checksum": "7fcb63d05c6f14dad168653738dd1754baefc8fb",
+  "checksum": "98d93cb70c3fa3ade7feaac1297b194a66f9c37a",
   "words": {
-    "40": [
-      "ul",
-      "li"
-    ],
-    "applies": [
+    "what": [
       "h1"
     ],
     "to": [
-      "h1",
       "h1",
       "p",
       "p",
@@ -49,13 +44,6 @@
       "p",
       "p",
       "p"
-    ],
-    "aspnet": [
-      "ul",
-      "li"
-    ],
-    "what": [
-      "h1"
     ],
     "do": [
       "h1",
@@ -1005,12 +993,8 @@
     ],
     "hijacking": [
       "ol",
-      "ol",
       "li",
-      "p",
-      "li",
-      "ul",
-      "li"
+      "p"
     ],
     "attacker": [
       "ol",
@@ -1557,6 +1541,12 @@
       "ul",
       "li"
     ],
+    "hijacking&nbsp;": [
+      "ol",
+      "li",
+      "ul",
+      "li"
+    ],
     "sections": [
       "ol",
       "ol",
@@ -1670,7 +1660,7 @@
       "ul",
       "li"
     ],
-    "ssl": [
+    "tls": [
       "ol",
       "ol",
       "li",
@@ -1831,26 +1821,12 @@
   },
   "tags": {
     "h1": [
-      "Applies To",
       "What to Do",
       "Why",
       "When",
       "How",
       "Problem Example",
       "Solution Example"
-    ],
-    "ul": [
-      "ASP.NET 4.0",
-      "Track the user ID on the server-side: The user should always be tracked on the server-side. Store the user ID inside a session. The only data the client needs to know is the session identifier. This reduces the risk of an attacker modifying another user's account information. \r\n        \r\n          Force re-authentication: Enforce re-authentication when modifying the user's password. This helps verify that the user is aware of the password change and is not a victim of a session hijacking.  \r\n        \r\n          Modify account in sections: Do not modify all account information at once. Split the account modification procedure in sections. For example, group the account information into credentials, personal data, contact information, and additional information. Modifying the account information in groups reduces the risk of information leakage when the user is updating his or her account. \r\n        \r\n          Use SSL when modifying account: The use of SSL provides encryption when transmitting sensitive data over the network and verifies the authenticity of the application to the user."
-    ],
-    "li": [
-      "ASP.NET 4.0",
-      "Allow only privileged users to administer all accounts. Design your application such that the administrative module is separate from the main application interface. Using separate authentication mechanisms in the application and the administration interface will reduce the risk for escalation of privilege attacks. Even if a privileged user account is compromised via session hijacking in the main application interface, the attacker will not be able to access the administrative interface and compromise other user accounts.\r\n      Use session IDs for the administrative module that are different than the session IDs for the main interface. Modify the cookieName attribute inside the sessionState element of the respective web.config to differentiate the session names for each interface. Example:\r\n      <system.web> ... <sessionState cookieName=\"MyAppAdminSess\" /> ...</system.web>",
-      "Allow users to administer their own accounts. It may be necessary to allow users to administer their own accounts. This involves the ability to change passwords, account details, etc. Such administration can be done through the main application interface. Because the user is modifying sensitive data, extra security precautions must be enforced:\r\n      \r\n        \r\n          Track the user ID on the server-side: The user should always be tracked on the server-side. Store the user ID inside a session. The only data the client needs to know is the session identifier. This reduces the risk of an attacker modifying another user's account information. \r\n        \r\n          Force re-authentication: Enforce re-authentication when modifying the user's password. This helps verify that the user is aware of the password change and is not a victim of a session hijacking.  \r\n        \r\n          Modify account in sections: Do not modify all account information at once. Split the account modification procedure in sections. For example, group the account information into credentials, personal data, contact information, and additional information. Modifying the account information in groups reduces the risk of information leakage when the user is updating his or her account. \r\n        \r\n          Use SSL when modifying account: The use of SSL provides encryption when transmitting sensitive data over the network and verifies the authenticity of the application to the user.",
-      "Track the user ID on the server-side: The user should always be tracked on the server-side. Store the user ID inside a session. The only data the client needs to know is the session identifier. This reduces the risk of an attacker modifying another user's account information.",
-      "Force re-authentication: Enforce re-authentication when modifying the user's password. This helps verify that the user is aware of the password change and is not a victim of a session hijacking.",
-      "Modify account in sections: Do not modify all account information at once. Split the account modification procedure in sections. For example, group the account information into credentials, personal data, contact information, and additional information. Modifying the account information in groups reduces the risk of information leakage when the user is updating his or her account.",
-      "Use SSL when modifying account: The use of SSL provides encryption when transmitting sensitive data over the network and verifies the authenticity of the application to the user."
     ],
     "p": [
       "Separate the account administration from the main application interface.",
@@ -1865,7 +1841,15 @@
       "Adapted from Microsoft patterns & practices guidance."
     ],
     "ol": [
-      "Allow only privileged users to administer all accounts. Design your application such that the administrative module is separate from the main application interface. Using separate authentication mechanisms in the application and the administration interface will reduce the risk for escalation of privilege attacks. Even if a privileged user account is compromised via session hijacking in the main application interface, the attacker will not be able to access the administrative interface and compromise other user accounts.\r\n      Use session IDs for the administrative module that are different than the session IDs for the main interface. Modify the cookieName attribute inside the sessionState element of the respective web.config to differentiate the session names for each interface. Example:\r\n      <system.web> ... <sessionState cookieName=\"MyAppAdminSess\" /> ...</system.web>\r\n    \r\n    \r\n      \r\n        Allow users to administer their own accounts. It may be necessary to allow users to administer their own accounts. This involves the ability to change passwords, account details, etc. Such administration can be done through the main application interface. Because the user is modifying sensitive data, extra security precautions must be enforced:\r\n      \r\n        \r\n          Track the user ID on the server-side: The user should always be tracked on the server-side. Store the user ID inside a session. The only data the client needs to know is the session identifier. This reduces the risk of an attacker modifying another user's account information. \r\n        \r\n          Force re-authentication: Enforce re-authentication when modifying the user's password. This helps verify that the user is aware of the password change and is not a victim of a session hijacking.  \r\n        \r\n          Modify account in sections: Do not modify all account information at once. Split the account modification procedure in sections. For example, group the account information into credentials, personal data, contact information, and additional information. Modifying the account information in groups reduces the risk of information leakage when the user is updating his or her account. \r\n        \r\n          Use SSL when modifying account: The use of SSL provides encryption when transmitting sensitive data over the network and verifies the authenticity of the application to the user."
+      "Allow only privileged users to administer all accounts. Design your application such that the administrative module is separate from the main application interface. Using separate authentication mechanisms in the application and the administration interface will reduce the risk for escalation of privilege attacks. Even if a privileged user account is compromised via session hijacking in the main application interface, the attacker will not be able to access the administrative interface and compromise other user accounts.\n      Use session IDs for the administrative module that are different than the session IDs for the main interface. Modify the cookieName attribute inside the sessionState element of the respective web.config to differentiate the session names for each interface. Example:\n      <system.web> ... <sessionState cookieName=\"MyAppAdminSess\" /> ...</system.web>\n    \n    \n      \n        Allow users to administer their own accounts. It may be necessary to allow users to administer their own accounts. This involves the ability to change passwords, account details, etc. Such administration can be done through the main application interface. Because the user is modifying sensitive data, extra security precautions must be enforced:\n      \n        \n          Track the user ID on the server-side: The user should always be tracked on the server-side. Store the user ID inside a session. The only data the client needs to know is the session identifier. This reduces the risk of an attacker modifying another user's account information. \n        \n          Force re-authentication: Enforce re-authentication when modifying the user's password. This helps verify that the user is aware of the password change and is not a victim of a session hijacking.&nbsp; \n        \n          Modify account in sections: Do not modify all account information at once. Split the account modification procedure in sections. For example, group the account information into credentials, personal data, contact information, and additional information. Modifying the account information in groups reduces the risk of information leakage when the user is updating his or her account. \n        \n          Use TLS when modifying account: The use of TLS provides encryption when transmitting sensitive data over the network and verifies the authenticity of the application to the user."
+    ],
+    "li": [
+      "Allow only privileged users to administer all accounts. Design your application such that the administrative module is separate from the main application interface. Using separate authentication mechanisms in the application and the administration interface will reduce the risk for escalation of privilege attacks. Even if a privileged user account is compromised via session hijacking in the main application interface, the attacker will not be able to access the administrative interface and compromise other user accounts.\n      Use session IDs for the administrative module that are different than the session IDs for the main interface. Modify the cookieName attribute inside the sessionState element of the respective web.config to differentiate the session names for each interface. Example:\n      <system.web> ... <sessionState cookieName=\"MyAppAdminSess\" /> ...</system.web>",
+      "Allow users to administer their own accounts. It may be necessary to allow users to administer their own accounts. This involves the ability to change passwords, account details, etc. Such administration can be done through the main application interface. Because the user is modifying sensitive data, extra security precautions must be enforced:\n      \n        \n          Track the user ID on the server-side: The user should always be tracked on the server-side. Store the user ID inside a session. The only data the client needs to know is the session identifier. This reduces the risk of an attacker modifying another user's account information. \n        \n          Force re-authentication: Enforce re-authentication when modifying the user's password. This helps verify that the user is aware of the password change and is not a victim of a session hijacking.&nbsp; \n        \n          Modify account in sections: Do not modify all account information at once. Split the account modification procedure in sections. For example, group the account information into credentials, personal data, contact information, and additional information. Modifying the account information in groups reduces the risk of information leakage when the user is updating his or her account. \n        \n          Use TLS when modifying account: The use of TLS provides encryption when transmitting sensitive data over the network and verifies the authenticity of the application to the user.",
+      "Track the user ID on the server-side: The user should always be tracked on the server-side. Store the user ID inside a session. The only data the client needs to know is the session identifier. This reduces the risk of an attacker modifying another user's account information.",
+      "Force re-authentication: Enforce re-authentication when modifying the user's password. This helps verify that the user is aware of the password change and is not a victim of a session hijacking.&nbsp;",
+      "Modify account in sections: Do not modify all account information at once. Split the account modification procedure in sections. For example, group the account information into credentials, personal data, contact information, and additional information. Modifying the account information in groups reduces the risk of information leakage when the user is updating his or her account.",
+      "Use TLS when modifying account: The use of TLS provides encryption when transmitting sensitive data over the network and verifies the authenticity of the application to the user."
     ],
     "strong": [
       "Allow only privileged users to administer all accounts.",
@@ -1873,7 +1857,7 @@
       "Track the user ID on the server-side",
       "Force re-authentication",
       "Modify account in sections",
-      "Use SSL when modifying account"
+      "Use TLS when modifying account"
     ],
     "em": [
       "cookieName",
@@ -1889,10 +1873,13 @@
       "",
       ""
     ],
+    "ul": [
+      "Track the user ID on the server-side: The user should always be tracked on the server-side. Store the user ID inside a session. The only data the client needs to know is the session identifier. This reduces the risk of an attacker modifying another user's account information. \n        \n          Force re-authentication: Enforce re-authentication when modifying the user's password. This helps verify that the user is aware of the password change and is not a victim of a session hijacking.&nbsp; \n        \n          Modify account in sections: Do not modify all account information at once. Split the account modification procedure in sections. For example, group the account information into credentials, personal data, contact information, and additional information. Modifying the account information in groups reduces the risk of information leakage when the user is updating his or her account. \n        \n          Use TLS when modifying account: The use of TLS provides encryption when transmitting sensitive data over the network and verifies the authenticity of the application to the user."
+    ],
     "hr": [
       ""
     ]
   },
   "links": [],
-  "html": "<h1>Applies To</h1>\r\n  <ul>\r\n    <li>ASP.NET 4.0</li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Separate the account administration from the main application interface.</p>\r\n  <h1>Why</h1>\r\n  <p>Account administration requires higher privileges than the main application interface. Separating the two interfaces decreases the risk of a normal user being able to escalate privileges to that of an administrator.</p>\r\n  <h1>When</h1>\r\n  <p>If your application has an administrative interface, use this guideline to separate it from the main application interface.</p>\r\n  <h1>How</h1>\r\n  <p>Use the following steps when designing an administrative interface:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Allow only privileged users to administer all accounts.</strong> Design your application such that the administrative module is separate from the main application interface. Using separate authentication mechanisms in the application and the administration interface will reduce the risk for escalation of privilege attacks. Even if a privileged user account is compromised via session hijacking in the main application interface, the attacker will not be able to access the administrative interface and compromise other user accounts.</p>\r\n      <p>Use session IDs for the administrative module that are different than the session IDs for the main interface. Modify the <em>cookieName</em> attribute inside the <em>sessionState</em> element of the respective <em>web.config</em> to differentiate the session names for each interface. Example:</p>\r\n      <pre>&lt;system.web&gt;<br /> ...<br /> &lt;sessionState cookieName=\"MyAppAdminSess\" /&gt;<br /> ...<br />&lt;/system.web&gt;</pre>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Allow users to administer their own accounts. </strong>It may be necessary to allow users to administer their own accounts. This involves the ability to change passwords, account details, etc. Such administration can be done through the main application interface. Because the user is modifying sensitive data, extra security precautions must be enforced:</p>\r\n      <ul>\r\n        <li>\r\n          <strong>Track the user ID on the server-side</strong>: The user should always be tracked on the server-side. Store the user ID inside a session. The only data the client needs to know is the session identifier. This reduces the risk of an attacker modifying another user's account information. </li>\r\n        <li>\r\n          <strong>Force re-authentication</strong>: Enforce re-authentication when modifying the user's password. This helps verify that the user is aware of the password change and is not a victim of a session hijacking.&nbsp; </li>\r\n        <li>\r\n          <strong>Modify account in sections</strong>: Do not modify all account information at once. Split the account modification procedure in sections. For example, group the account information into credentials, personal data, contact information, and additional information. Modifying the account information in groups reduces the risk of information leakage when the user is updating his or her account. </li>\r\n        <li>\r\n          <strong>Use SSL when modifying account</strong>: The use of SSL provides encryption when transmitting sensitive data over the network and verifies the authenticity of the application to the user. </li>\r\n      </ul>\r\n    </li>\r\n  </ol>\r\n  <h1>Problem Example</h1>\r\n  <p>The following snippet shows the HTTP requests that an administrator makes when accessing the main and administrative interfaces of the application. Because the administrative interface is not separated from the application, an administrator can use a single session to use and administer the application. Therefore, a vulnerability such as cross-site scripting in the main application interface will expose the administrative interface as well.</p>\r\n  <h1>Solution Example</h1>\r\n  <p>The following snippet shows the HTTP requests that an administrator makes when accessing the main and administrative interfaces of the application. Because the administrative interface is separated from the application via server directory and server port, an administrator would need to use two distinct sessions to use and administer the application. Therefore a vulnerability such as cross-site scripting in the main application interface will not expose the administrative interface.</p>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance. </p>"
+  "html": "<h1>What to Do</h1>\n  <p>Separate the account administration from the main application interface.</p>\n  <h1>Why</h1>\n  <p>Account administration requires higher privileges than the main application interface. Separating the two interfaces decreases the risk of a normal user being able to escalate privileges to that of an administrator.</p>\n  <h1>When</h1>\n  <p>If your application has an administrative interface, use this guideline to separate it from the main application interface.</p>\n  <h1>How</h1>\n  <p>Use the following steps when designing an administrative interface:</p>\n  <ol>\n    <li>\n      <p>\n        <strong>Allow only privileged users to administer all accounts.</strong> Design your application such that the administrative module is separate from the main application interface. Using separate authentication mechanisms in the application and the administration interface will reduce the risk for escalation of privilege attacks. Even if a privileged user account is compromised via session hijacking in the main application interface, the attacker will not be able to access the administrative interface and compromise other user accounts.</p>\n      <p>Use session IDs for the administrative module that are different than the session IDs for the main interface. Modify the <em>cookieName</em> attribute inside the <em>sessionState</em> element of the respective <em>web.config</em> to differentiate the session names for each interface. Example:</p>\n      <pre>&lt;system.web&gt;<br /> ...<br /> &lt;sessionState cookieName=\"MyAppAdminSess\" /&gt;<br /> ...<br />&lt;/system.web&gt;</pre>\n    </li>\n    <li>\n      <p>\n        <strong>Allow users to administer their own accounts. </strong>It may be necessary to allow users to administer their own accounts. This involves the ability to change passwords, account details, etc. Such administration can be done through the main application interface. Because the user is modifying sensitive data, extra security precautions must be enforced:</p>\n      <ul>\n        <li>\n          <strong>Track the user ID on the server-side</strong>: The user should always be tracked on the server-side. Store the user ID inside a session. The only data the client needs to know is the session identifier. This reduces the risk of an attacker modifying another user's account information. </li>\n        <li>\n          <strong>Force re-authentication</strong>: Enforce re-authentication when modifying the user's password. This helps verify that the user is aware of the password change and is not a victim of a session hijacking.&amp;nbsp; </li>\n        <li>\n          <strong>Modify account in sections</strong>: Do not modify all account information at once. Split the account modification procedure in sections. For example, group the account information into credentials, personal data, contact information, and additional information. Modifying the account information in groups reduces the risk of information leakage when the user is updating his or her account. </li>\n        <li>\n          <strong>Use TLS when modifying account</strong>: The use of TLS provides encryption when transmitting sensitive data over the network and verifies the authenticity of the application to the user. </li>\n      </ul>\n    </li>\n  </ol>\n  <h1>Problem Example</h1>\n  <p>The following snippet shows the HTTP requests that an administrator makes when accessing the main and administrative interfaces of the application. Because the administrative interface is not separated from the application, an administrator can use a single session to use and administer the application. Therefore, a vulnerability such as cross-site scripting in the main application interface will expose the administrative interface as well.</p>\n  <h1>Solution Example</h1>\n  <p>The following snippet shows the HTTP requests that an administrator makes when accessing the main and administrative interfaces of the application. Because the administrative interface is separated from the application via server directory and server port, an administrator would need to use two distinct sessions to use and administer the application. Therefore a vulnerability such as cross-site scripting in the main application interface will not expose the administrative interface.</p>\n  <hr />\n  <p>Adapted from Microsoft patterns &amp; practices guidance. </p>"
 }

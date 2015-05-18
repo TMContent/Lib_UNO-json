@@ -1,6 +1,6 @@
 {
   "id": "0c4224ae-6023-4757-9838-4d1569c90b1e",
-  "checksum": "4e061e96f30874e16fe32e15a439c0ad9d182096",
+  "checksum": "5e747a5b33c49f5e916aeed29f52f813ce80d2c9",
   "words": {
     "35": [
       "ul",
@@ -239,7 +239,7 @@
       "Additional Resources"
     ],
     "ul": [
-      "Microsoft® Windows Communication Foundation (WCF) 3.5 \r\nMicrosoft Visual Studio® 2008",
+      "Microsoft® Windows Communication Foundation (WCF) 3.5 \nMicrosoft Visual Studio® 2008",
       "For more information see “Message Inspectors” at http://msdn.microsoft.com/en-us/library/aa717047.aspx"
     ],
     "li": [
@@ -273,5 +273,5 @@
       "text": "http://msdn.microsoft.com/en-us/library/aa717047.aspx"
     }
   ],
-  "html": "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>Microsoft® Windows Communication Foundation (WCF) 3.5 \r\n<li>Microsoft Visual Studio® 2008</li></li>\r\n  </ul>\r\n  <h1>Description</h1>\r\n  <p>Implement the BeforeSendRequest method of the interface IClientMessageInspector of the message inspector to validate outbound messages on the client. This allows you to validate the message after serialization, but before sending the request to the service. </p>\r\n  <pre>object IClientMessageInspector.BeforeSendRequest(ref System.ServiceModel.Channels.Message request, System.ServiceModel.IClientChannel channel)<br />{<br />    validateMessage(ref request);<br />    return null;<br />}   </pre>\r\n  <h1>Additional Resources</h1>\r\n  <ul>\r\n    <li>For more information see “Message Inspectors” at <a href=\"http://msdn.microsoft.com/en-us/library/aa717047.aspx\">http://msdn.microsoft.com/en-us/library/aa717047.aspx</a></li>\r\n  </ul>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
+  "html": "<h1>Applies to</h1>\n  <ul>\n    <li>Microsoft® Windows Communication Foundation (WCF) 3.5 \n<li>Microsoft Visual Studio® 2008</li></li>\n  </ul>\n  <h1>Description</h1>\n  <p>Implement the BeforeSendRequest method of the interface IClientMessageInspector of the message inspector to validate outbound messages on the client. This allows you to validate the message after serialization, but before sending the request to the service. </p>\n  <pre>object IClientMessageInspector.BeforeSendRequest(ref System.ServiceModel.Channels.Message request, System.ServiceModel.IClientChannel channel)<br />{<br />    validateMessage(ref request);<br />    return null;<br />}   </pre>\n  <h1>Additional Resources</h1>\n  <ul>\n    <li>For more information see “Message Inspectors” at <a href=\"http://msdn.microsoft.com/en-us/library/aa717047.aspx\">http://msdn.microsoft.com/en-us/library/aa717047.aspx</a></li>\n  </ul>\n  <hr />\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
 }

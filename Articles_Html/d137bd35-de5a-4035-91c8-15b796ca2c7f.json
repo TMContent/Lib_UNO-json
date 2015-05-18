@@ -1,6 +1,6 @@
 {
   "id": "d137bd35-de5a-4035-91c8-15b796ca2c7f",
-  "checksum": "a89a2b605e722a4cd37534026354c565de9bb425",
+  "checksum": "d98088d4dcf8700e21f744a38d42ebae1e5b792b",
   "words": {
     "description": [
       "h1"
@@ -334,5 +334,5 @@
     ]
   },
   "links": [],
-  "html": "<h1>Description</h1>\r\n  <p>If your application uses forms authentication, make sure that your forms authentication is protected by appropriate configuration of the <b>forms</b> and <b>machineKey</b> elements. Ensure that authentication and role cookies are encrypted and checked for integrity. Make sure that the <b>authorization</b> element is configured appropriately to restrict access to your application's sensitive pages. Configure file upload limits in the <b>maxRequestLength</b> attribute on the <b>httpRuntime</b> element, and make sure that you prevent the download of unused file types by removing unnecessary MIME type mappings from IIS and by mapping unused ASP.NET file extensions to the <b>HttpForbiddenHandler</b> class in the <b>httpHandlers</b> section. Use health monitoring to log security-related events, such as failed login attempts.</p>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
+  "html": "<h1>Description</h1>\n  <p>If your application uses forms authentication, make sure that your forms authentication is protected by appropriate configuration of the <b>forms</b> and <b>machineKey</b> elements. Ensure that authentication and role cookies are encrypted and checked for integrity. Make sure that the <b>authorization</b> element is configured appropriately to restrict access to your application's sensitive pages. Configure file upload limits in the <b>maxRequestLength</b> attribute on the <b>httpRuntime</b> element, and make sure that you prevent the download of unused file types by removing unnecessary MIME type mappings from IIS and by mapping unused ASP.NET file extensions to the <b>HttpForbiddenHandler</b> class in the <b>httpHandlers</b> section. Use health monitoring to log security-related events, such as failed login attempts.</p>\n  <hr />\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
 }

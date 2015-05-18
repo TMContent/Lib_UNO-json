@@ -1,6 +1,6 @@
 {
   "id": "2f5d6d2b-ad8c-4ac7-86bb-d175b9c47b33",
-  "checksum": "3adc87f1ef4b859a55fcc234bd44221983f9b27b",
+  "checksum": "bce21f3b7eba54e0d1fcd11c148659fd2facfe04",
   "words": {
     "applies": [
       "h1"
@@ -168,5 +168,5 @@
     ]
   },
   "links": [],
-  "html": "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>C&#43;&#43;</li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Bind sockets to specific IP addresses.</p>\r\n  <h1>Why</h1>\r\n  <p>Binding sockets to specific IP addresses, instead of INADDR_ANY, prevents socket hijacking.</p>\r\n  <h1>When</h1>\r\n  <p>Use this guideline when writing server applications using IP sockets.</p>\r\n  <h1>How</h1>\r\n  <p>Bind sockets to specific IP addresses, instead of to INADDR_ANY. For Windows, set the SO_EXCLUSIVEADDRUSE option, which protects against binding to the same port.</p>"
+  "html": "<h1>Applies to</h1>\n  <ul>\n    <li>C&#43;&#43;</li>\n  </ul>\n  <h1>What to Do</h1>\n  <p>Bind sockets to specific IP addresses.</p>\n  <h1>Why</h1>\n  <p>Binding sockets to specific IP addresses, instead of INADDR_ANY, prevents socket hijacking.</p>\n  <h1>When</h1>\n  <p>Use this guideline when writing server applications using IP sockets.</p>\n  <h1>How</h1>\n  <p>Bind sockets to specific IP addresses, instead of to INADDR_ANY. For Windows, set the SO_EXCLUSIVEADDRUSE option, which protects against binding to the same port.</p>"
 }

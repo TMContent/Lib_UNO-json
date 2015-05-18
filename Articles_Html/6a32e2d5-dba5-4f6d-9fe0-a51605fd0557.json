@@ -1,6 +1,6 @@
 {
   "id": "6a32e2d5-dba5-4f6d-9fe0-a51605fd0557",
-  "checksum": "702e791533e1c35b9aa933c7517af96611e2304c",
+  "checksum": "80b24496f2f57ceb83ed0f83e44a87700c2058f9",
   "words": {
     "applies": [
       "h1"
@@ -246,8 +246,12 @@
       "ul",
       "ul",
       "ul",
+      "ul",
+      "li",
       "li",
       "ul",
+      "ul",
+      "li",
       "li",
       "li",
       "li",
@@ -362,6 +366,10 @@
     "protocol": [
       "p",
       "ul",
+      "ul",
+      "li",
+      "ul",
+      "li",
       "li",
       "ul",
       "li"
@@ -603,7 +611,7 @@
       "ul",
       "li"
     ],
-    "ssl/tls": [
+    "tls": [
       "ul",
       "li",
       "ul",
@@ -717,26 +725,6 @@
       "ul",
       "li"
     ],
-    "these": [
-      "ul",
-      "ul",
-      "li",
-      "ul",
-      "li",
-      "li",
-      "ul",
-      "li"
-    ],
-    "protocols": [
-      "ul",
-      "ul",
-      "li",
-      "ul",
-      "li",
-      "li",
-      "ul",
-      "li"
-    ],
     "only": [
       "ul",
       "ul",
@@ -751,24 +739,6 @@
       "ul",
       "ul",
       "li",
-      "li"
-    ],
-    "ssl": [
-      "ul",
-      "li",
-      "ul",
-      "li"
-    ],
-    "30/tls": [
-      "ul",
-      "li",
-      "ul",
-      "li"
-    ],
-    "10).": [
-      "ul",
-      "li",
-      "ul",
       "li"
     ],
     "weak": [
@@ -1002,6 +972,12 @@
       "ul",
       "li"
     ],
+    "protocols": [
+      "ul",
+      "li",
+      "ul",
+      "li"
+    ],
     "specifically": [
       "ul",
       "li",
@@ -1153,6 +1129,12 @@
       "li"
     ],
     "which": [
+      "ul",
+      "li",
+      "ul",
+      "li"
+    ],
+    "these": [
       "ul",
       "li",
       "ul",
@@ -1348,21 +1330,21 @@
     "ul": [
       "Loss of confidentiality of potentially sensitive data.",
       "Insecure communication channel: No guarantees of confidentiality or integrity.",
-      "Establish a secure communication channel:\nUtilize SSL/TLS for application-layer encryption: This will help secure communication between two applications on two networked machines. Always configure your application to accept the latest versions of these protocols only (SSL 3.0/TLS 1.0). Weak ciphers should never be used.\nUtilize IPSec for IP-layer encryption: This will help secure all data flowing between two networked machines, but has a higher administrative overhead. It is not suitable for exchanging information with arbitrary Internet hosts.\nEncrypt only the sensitive data:\nUse encryption inside a plaintext protocol: Instead of encrypting all data communication between two applications, you could choose to encrypt only sensitive data segments and then transfer them over plaintext network protocols. This will secure only the data specifically encrypted, and properties like authentication, replay prevention, security against man in the middle attacks, and so on, must be provided by the application, along with key storage and distribution systems. If you choose to implement a system like this, make sure you understand which of these properties you need to provide and how to guarantee them, and use well known and currently considered secure implementations of standard cryptographic algorithms, with appropriately chosen key and hash sizes.",
-      "Utilize SSL/TLS for application-layer encryption: This will help secure communication between two applications on two networked machines. Always configure your application to accept the latest versions of these protocols only (SSL 3.0/TLS 1.0). Weak ciphers should never be used.\nUtilize IPSec for IP-layer encryption: This will help secure all data flowing between two networked machines, but has a higher administrative overhead. It is not suitable for exchanging information with arbitrary Internet hosts.",
+      "Establish a secure communication channel:\nUtilize TLS for application-layer encryption: This will help secure communication between two applications on two networked machines. Always configure your application to accept the latest versions of the protocol only. Weak ciphers should never be used.\nUtilize IPSec for IP-layer encryption: This will help secure all data flowing between two networked machines, but has a higher administrative overhead. It is not suitable for exchanging information with arbitrary Internet hosts.\nEncrypt only the sensitive data:\nUse encryption inside a plaintext protocol: Instead of encrypting all data communication between two applications, you could choose to encrypt only sensitive data segments and then transfer them over plaintext network protocols. This will secure only the data specifically encrypted, and properties like authentication, replay prevention, security against man in the middle attacks, and so on, must be provided by the application, along with key storage and distribution systems. If you choose to implement a system like this, make sure you understand which of these properties you need to provide and how to guarantee them, and use well known and currently considered secure implementations of standard cryptographic algorithms, with appropriately chosen key and hash sizes.",
+      "Utilize TLS for application-layer encryption: This will help secure communication between two applications on two networked machines. Always configure your application to accept the latest versions of the protocol only. Weak ciphers should never be used.\nUtilize IPSec for IP-layer encryption: This will help secure all data flowing between two networked machines, but has a higher administrative overhead. It is not suitable for exchanging information with arbitrary Internet hosts.",
       "Use encryption inside a plaintext protocol: Instead of encrypting all data communication between two applications, you could choose to encrypt only sensitive data segments and then transfer them over plaintext network protocols. This will secure only the data specifically encrypted, and properties like authentication, replay prevention, security against man in the middle attacks, and so on, must be provided by the application, along with key storage and distribution systems. If you choose to implement a system like this, make sure you understand which of these properties you need to provide and how to guarantee them, and use well known and currently considered secure implementations of standard cryptographic algorithms, with appropriately chosen key and hash sizes.",
-      "For more information on SSL/TLS Encryption, see: http://technet.microsoft.com/en-us/library/cc781476%28v=WS.10%29.aspx\nFor more information on Packet Analyzers, see: http://en.wikipedia.org/wiki/Packet_sniffer\nFor more information on Wireshark, see: http://www.wireshark.org/",
+      "For more information on TLS Encryption, see: http://technet.microsoft.com/en-us/library/cc781476%28v=WS.10%29.aspx\nFor more information on Packet Analyzers, see: http://en.wikipedia.org/wiki/Packet_sniffer\nFor more information on Wireshark, see: http://www.wireshark.org/",
       "Attack: Network Credential Sniffing Attack"
     ],
     "li": [
       "Loss of confidentiality of potentially sensitive data.",
       "Insecure communication channel: No guarantees of confidentiality or integrity.",
-      "Establish a secure communication channel:\nUtilize SSL/TLS for application-layer encryption: This will help secure communication between two applications on two networked machines. Always configure your application to accept the latest versions of these protocols only (SSL 3.0/TLS 1.0). Weak ciphers should never be used.\nUtilize IPSec for IP-layer encryption: This will help secure all data flowing between two networked machines, but has a higher administrative overhead. It is not suitable for exchanging information with arbitrary Internet hosts.",
-      "Utilize SSL/TLS for application-layer encryption: This will help secure communication between two applications on two networked machines. Always configure your application to accept the latest versions of these protocols only (SSL 3.0/TLS 1.0). Weak ciphers should never be used.",
+      "Establish a secure communication channel:\nUtilize TLS for application-layer encryption: This will help secure communication between two applications on two networked machines. Always configure your application to accept the latest versions of the protocol only. Weak ciphers should never be used.\nUtilize IPSec for IP-layer encryption: This will help secure all data flowing between two networked machines, but has a higher administrative overhead. It is not suitable for exchanging information with arbitrary Internet hosts.",
+      "Utilize TLS for application-layer encryption: This will help secure communication between two applications on two networked machines. Always configure your application to accept the latest versions of the protocol only. Weak ciphers should never be used.",
       "Utilize IPSec for IP-layer encryption: This will help secure all data flowing between two networked machines, but has a higher administrative overhead. It is not suitable for exchanging information with arbitrary Internet hosts.",
       "Encrypt only the sensitive data:\nUse encryption inside a plaintext protocol: Instead of encrypting all data communication between two applications, you could choose to encrypt only sensitive data segments and then transfer them over plaintext network protocols. This will secure only the data specifically encrypted, and properties like authentication, replay prevention, security against man in the middle attacks, and so on, must be provided by the application, along with key storage and distribution systems. If you choose to implement a system like this, make sure you understand which of these properties you need to provide and how to guarantee them, and use well known and currently considered secure implementations of standard cryptographic algorithms, with appropriately chosen key and hash sizes.",
       "Use encryption inside a plaintext protocol: Instead of encrypting all data communication between two applications, you could choose to encrypt only sensitive data segments and then transfer them over plaintext network protocols. This will secure only the data specifically encrypted, and properties like authentication, replay prevention, security against man in the middle attacks, and so on, must be provided by the application, along with key storage and distribution systems. If you choose to implement a system like this, make sure you understand which of these properties you need to provide and how to guarantee them, and use well known and currently considered secure implementations of standard cryptographic algorithms, with appropriately chosen key and hash sizes.",
-      "For more information on SSL/TLS Encryption, see: http://technet.microsoft.com/en-us/library/cc781476%28v=WS.10%29.aspx",
+      "For more information on TLS Encryption, see: http://technet.microsoft.com/en-us/library/cc781476%28v=WS.10%29.aspx",
       "For more information on Packet Analyzers, see: http://en.wikipedia.org/wiki/Packet_sniffer",
       "For more information on Wireshark, see: http://www.wireshark.org/",
       "Attack: Network Credential Sniffing Attack"
@@ -1392,5 +1374,5 @@
       "text": "Attack: Network Credential Sniffing Attack"
     }
   ],
-  "html": "<h1>Applies To</h1><p>Any network application.\n</p><h1>Description</h1><p>An attacker can use packet sniffing tools to eavesdrop on a network conversation between two parties and view all the data that is transacted. This attack is possible regardless of the protocol in use, unless the data is encrypted. If the communication between two applications across the network is done in cleartext, then the attacker will be able to view and understand the communication and extract the data exchanged. In addition to sniffing sensitive information from the network, an attacker may also be able to sniff authentication credentials.\n</p><h1>Impact</h1><ul><li>Loss of confidentiality of potentially sensitive data.</li>\n</ul><h1>Vulnerabilities</h1><ul><li>Insecure communication channel: No guarantees of confidentiality or integrity.</li>\n</ul><h1>Countermeasures</h1><ul><li>Establish a secure communication channel:<ul>\n<li>Utilize SSL/TLS for application-layer encryption: This will help secure communication between two applications on two networked machines. Always configure your application to accept the latest versions of these protocols only (SSL 3.0/TLS 1.0). Weak ciphers should never be used.</li>\n<li>Utilize IPSec for IP-layer encryption: This will help secure all data flowing between two networked machines, but has a higher administrative overhead. It is not suitable for exchanging information with arbitrary Internet hosts.</li></ul></li>\n<li>Encrypt only the sensitive data:<ul>\n<li>Use encryption inside a plaintext protocol: Instead of encrypting all data communication between two applications, you could choose to encrypt only sensitive data segments and then transfer them over plaintext network protocols. This will secure only the data specifically encrypted, and properties like authentication, replay prevention, security against man in the middle attacks, and so on, must be provided by the application, along with key storage and distribution systems. If you choose to implement a system like this, make sure you understand which of these properties you need to provide and how to guarantee them, and use well known and currently considered secure implementations of standard cryptographic algorithms, with appropriately chosen key and hash sizes.</li></ul></li>\n</ul><h1>Additional Resources</h1><ul><li>For more information on SSL/TLS Encryption, see: <a href=\"http://technet.microsoft.com/en-us/library/cc781476%28v=WS.10%29.aspx\">http://technet.microsoft.com/en-us/library/cc781476%28v=WS.10%29.aspx</a></li>\n<li>For more information on Packet Analyzers, see: <a href=\"http://en.wikipedia.org/wiki/Packet_sniffer\">http://en.wikipedia.org/wiki/Packet_sniffer</a></li>\n<li>For more information on Wireshark, see: <a href=\"http://www.wireshark.org/\">http://www.wireshark.org/</a></li>\n</ul><h1>Related Items</h1><ul><li><a href=\"ad7b18e3-a8a0-4e87-b1a8-908e11449481\">Attack: Network Credential Sniffing Attack</a></li>\n</ul>\n"
+  "html": "<h1>Applies To</h1><p>Any network application.\n</p><h1>Description</h1><p>An attacker can use packet sniffing tools to eavesdrop on a network conversation between two parties and view all the data that is transacted. This attack is possible regardless of the protocol in use, unless the data is encrypted. If the communication between two applications across the network is done in cleartext, then the attacker will be able to view and understand the communication and extract the data exchanged. In addition to sniffing sensitive information from the network, an attacker may also be able to sniff authentication credentials.\n</p><h1>Impact</h1><ul><li>Loss of confidentiality of potentially sensitive data.</li>\n</ul><h1>Vulnerabilities</h1><ul><li>Insecure communication channel: No guarantees of confidentiality or integrity.</li>\n</ul><h1>Countermeasures</h1><ul><li>Establish a secure communication channel:<ul>\n<li>Utilize TLS for application-layer encryption: This will help secure communication between two applications on two networked machines. Always configure your application to accept the latest versions of the protocol only. Weak ciphers should never be used.</li>\n<li>Utilize IPSec for IP-layer encryption: This will help secure all data flowing between two networked machines, but has a higher administrative overhead. It is not suitable for exchanging information with arbitrary Internet hosts.</li></ul></li>\n<li>Encrypt only the sensitive data:<ul>\n<li>Use encryption inside a plaintext protocol: Instead of encrypting all data communication between two applications, you could choose to encrypt only sensitive data segments and then transfer them over plaintext network protocols. This will secure only the data specifically encrypted, and properties like authentication, replay prevention, security against man in the middle attacks, and so on, must be provided by the application, along with key storage and distribution systems. If you choose to implement a system like this, make sure you understand which of these properties you need to provide and how to guarantee them, and use well known and currently considered secure implementations of standard cryptographic algorithms, with appropriately chosen key and hash sizes.</li></ul></li>\n</ul><h1>Additional Resources</h1><ul><li>For more information on TLS Encryption, see: <a href=\"http://technet.microsoft.com/en-us/library/cc781476%28v=WS.10%29.aspx\">http://technet.microsoft.com/en-us/library/cc781476%28v=WS.10%29.aspx</a></li>\n<li>For more information on Packet Analyzers, see: <a href=\"http://en.wikipedia.org/wiki/Packet_sniffer\">http://en.wikipedia.org/wiki/Packet_sniffer</a></li>\n<li>For more information on Wireshark, see: <a href=\"http://www.wireshark.org/\">http://www.wireshark.org/</a></li>\n</ul><h1>Related Items</h1><ul><li><a href=\"ad7b18e3-a8a0-4e87-b1a8-908e11449481\">Attack: Network Credential Sniffing Attack</a></li>\n</ul>\n"
 }

@@ -1,6 +1,6 @@
 {
   "id": "ab4bb641-bb03-4841-8c6a-a86f33727263",
-  "checksum": "0682c27197d393e2cd97140a4b44d6452766e53d",
+  "checksum": "06359301399471e670be812201bbaaec4a809cda",
   "words": {
     "what": [
       "h1"
@@ -336,7 +336,7 @@
       "li",
       "p"
     ],
-    "on the": [
+    "on&nbspthe": [
       "p"
     ],
     "client": [
@@ -879,7 +879,7 @@
     "into": [
       "p"
     ],
-    "system potentially leading": [
+    "system&nbsp;potentially&nbsp;leading": [
       "p"
     ],
     "range": [
@@ -973,7 +973,7 @@
     "upon": [
       "p"
     ],
-    "security because": [
+    "security&nbspbecause": [
       "p"
     ],
     "this": [
@@ -1324,7 +1324,7 @@
       "ul",
       "li"
     ],
-    "used to": [
+    "used&nbspto": [
       "ol",
       "li",
       "ul",
@@ -1475,7 +1475,7 @@
       "li",
       "p"
     ],
-    "easily tested": [
+    "easily&nbsptested": [
       "ol",
       "li",
       "p"
@@ -1485,7 +1485,7 @@
       "li",
       "p"
     ],
-    "http proxy": [
+    "http&nbspproxy": [
       "ol",
       "li",
       "p"
@@ -1616,13 +1616,13 @@
     "type=\"text/javascript\"function": [
       "pre"
     ],
-    "cvalidate){": [
+    "cvalidate)&#123;": [
       "pre"
     ],
-    "document.getelementbyid(\"<%=txtname.clientid%>\").value==\"\")": [
+    "document.getelementbyid(\"<&#37;=txtname.clientid&#37;>\").value==\"\")": [
       "pre"
     ],
-    "{": [
+    "&#123": [
       "pre",
       "pre",
       "pre"
@@ -1638,7 +1638,7 @@
       "pre",
       "pre"
     ],
-    "documentgetelementbyid(\"<%=txtname.clientid%>\").focus();": [
+    "documentgetelementbyid(\"<&#37;=txtname.clientid&#37;>\").focus();": [
       "pre"
     ],
     "return": [
@@ -1652,25 +1652,25 @@
       "pre",
       "pre"
     ],
-    "}": [
+    "&#125": [
       "pre",
       "pre",
       "pre"
     ],
-    "ifdocument.getelementbyid(\"<%=txtemail.clientid": [
+    "ifdocument.getelementbyid(\"<&#37;=txtemail.clientid": [
       "pre"
     ],
-    "%\").value==\"\")": [
+    "&#37>\").value==\"\")": [
       "pre"
     ],
     "alert\"email": [
       "pre"
     ],
-    "documentgetelementbyid(\"<%=txtemail.clientid": [
+    "documentgetelementbyid(\"<&#37;=txtemail.clientid": [
       "pre",
       "pre"
     ],
-    "%\").focus();": [
+    "&#37>\").focus();": [
       "pre",
       "pre"
     ],
@@ -1686,13 +1686,13 @@
       "pre",
       "pre"
     ],
-    "/^\\\".*\\\"|[a-za-z]\\w*)@(\\[\\d{1,3}(\\.\\d{1,3}){3}]|[a-za-z]\\w*(\\.[a-za-z]\\w*)+)$/;": [
+    "/&#94(\\\".&#42;\\\"&#124;&#91;a-za-z&#93;\\w&#42;)&#64;(\\&#91;\\d&#123;1,3&#125;(\\.\\d&#123;1,3&#125;)&#123;3&#125;&#93;&#124;&#91;a-za-z&#93;\\w&#42;(\\.&#91;a-za-z&#93;\\w&#42;)&#43;)&#36;/;": [
       "pre"
     ],
-    "emailid=documentgetelementbyid(\"<%=txtemail.clientid": [
+    "emailid=documentgetelementbyid(\"<&#37;=txtemail.clientid": [
       "pre"
     ],
-    "%\").value;": [
+    "&#37>\").value;": [
       "pre"
     ],
     "matcharray": [
@@ -1726,7 +1726,7 @@
     "again\");": [
       "pre"
     ],
-    "true}</script>": [
+    "true&#125;</script>": [
       "pre"
     ],
     "page": [
@@ -1765,7 +1765,7 @@
     "submitting": [
       "p"
     ],
-    "an http": [
+    "an&nbsphttp": [
       "p"
     ],
     "additional": [
@@ -1839,6 +1839,9 @@
     ],
     "guidance": [
       "p"
+    ],
+    "sink]": [
+      "title"
     ]
   },
   "tags": {
@@ -1851,25 +1854,25 @@
       "Related Items"
     ],
     "p": [
-      "Verify that the same or more rigorous checks are performed on the server as on the client. Verify that client-side validation is used only for usability and to reduce the number of posts to the server.",
-      "Client-side validation can be easily bypassed. For example, a malicious user could disable the client-side script routines by disabling JavaScript. Users may also construct their own form posts using custom HTML, or using an HTTP proxy to modify form posts. If developers rely on the controls in the client's user interface and do not validate all results on the back end, an attacker may be able to inject malicious data into the system, potentially leading to a range of security issues, including cross site scripting and SQL injection.",
-      "Client-side validation should only be used to reduce round trips to the server and to improve the user experience. It cannot be relied upon for security because the client controls this code. Take the following steps to ensure that input is validated on the server:",
+      "Verify that the same or more rigorous checks are performed on the server as on&nbsp;the client. Verify that client-side validation is used only for usability and to reduce the number of posts to the server.",
+      "Client-side validation can be easily bypassed. For example, a malicious user could disable the client-side script routines by disabling JavaScript. Users may also construct their own form posts using custom HTML, or using an HTTP proxy to modify form posts. If developers rely on the controls in the client's user interface and do not validate all results on the back end, an attacker may be able to inject malicious data into the system,&nbsp;potentially&nbsp;leading to a range of security issues, including cross site scripting and SQL injection.",
+      "Client-side validation should only be used to reduce round trips to the server and to improve the user experience. It cannot be relied upon for security&nbsp;because the client controls this code. Take the following steps to ensure that input is validated on the server:",
       "Identify all input validation routines in client-side code. Ensure that you have identified all the routines in your web pages that validate input received from the user. These client-side validation routines usually include checks for length, range, format, and type on the input received. Some examples of client-side validators are:",
-      "Ensure that corresponding server-side validation routines exist. For all client-side validation routines that have been identified, check that similar, or more rigorous, validation routines have been implemented on the server side. This protects your application from cross-site scripting, SQL injection or other types of attacks in which the client-side validation has been bypassed by an attacker. The server can be easily tested by disabling Javascript and modifying the client-side code or by using an HTTP proxy application.",
+      "Ensure that corresponding server-side validation routines exist. For all client-side validation routines that have been identified, check that similar, or more rigorous, validation routines have been implemented on the server side. This protects your application from cross-site scripting, SQL injection or other types of attacks in which the client-side validation has been bypassed by an attacker. The server can be easily&nbsp;tested by disabling Javascript and modifying the client-side code or by using an HTTP&nbsp;proxy application.",
       "Ensure that missing server-side validation routines are implemented. For all input that is validated on the client but not on the server, add server-side validation routines which are no less strict than the validation performed on the client. Also add validation routines for any input received from the user that is not validated on the client. Examples are validation of cookies, hidden fields, ViewState, etc.",
       "Consider a very simple form where a user is asked to enter their name and email address:",
-      "This page validates the user's input for validity but does so on the client using JavaScript. This type of validation can be bypassed by an attacker who disables JavaScript, replaces the validation script, or edits the data as the browser is submitting it using an HTTP proxy.",
+      "This page validates the user's input for validity but does so on the client using JavaScript. This type of validation can be bypassed by an attacker who disables JavaScript, replaces the validation script, or edits the data as the browser is submitting it using an&nbsp;HTTP proxy.",
       "Adapted from Microsoft patterns & practices guidance."
     ],
     "ol": [
-      "Identify all input validation routines in client-side code. Ensure that you have identified all the routines in your web pages that validate input received from the user. These client-side validation routines usually include checks for length, range, format, and type on the input received. Some examples of client-side validators are:\r\n      \r\n        Form controls such as those that restrict the number of characters allowed using the MAXLENGTH attribute and the range of input values allowed in drop-down boxes. Javascript validation routines that check the length, range, type, format, etc. Hidden fields which are sometimes used to impose constraints on the input. Although the actual validation happens on the server, it is easy to tamper with the hidden fields on the client side.\r\n      \r\n      \r\n        \r\n          Ensure that corresponding server-side validation routines exist. For all client-side validation routines that have been identified, check that similar, or more rigorous, validation routines have been implemented on the server side. This protects your application from cross-site scripting, SQL injection or other types of attacks in which the client-side validation has been bypassed by an attacker. The server can be easily tested by disabling Javascript and modifying the client-side code or by using an HTTP proxy application.\r\n        \r\n          \r\n            Ensure that missing server-side validation routines are implemented. For all input that is validated on the client but not on the server, add server-side validation routines which are no less strict than the validation performed on the client. Also add validation routines for any input received from the user that is not validated on the client. Examples are validation of cookies, hidden fields, ViewState, etc."
+      "Identify all input validation routines in client-side code. Ensure that you have identified all the routines in your web pages that validate input received from the user. These client-side validation routines usually include checks for length, range, format, and type on the input received. Some examples of client-side validators are:\n      \n        Form controls such as those that restrict the number of characters allowed using the MAXLENGTH attribute and the range of input values allowed in drop-down boxes. Javascript validation routines that check the length, range, type, format, etc. Hidden fields which are sometimes used&nbsp;to impose constraints on the input. Although the actual validation happens on the server, it is easy to tamper with the hidden fields on the client side.\n      \n      \n        \n          Ensure that corresponding server-side validation routines exist. For all client-side validation routines that have been identified, check that similar, or more rigorous, validation routines have been implemented on the server side. This protects your application from cross-site scripting, SQL injection or other types of attacks in which the client-side validation has been bypassed by an attacker. The server can be easily&nbsp;tested by disabling Javascript and modifying the client-side code or by using an HTTP&nbsp;proxy application.\n        \n          \n            Ensure that missing server-side validation routines are implemented. For all input that is validated on the client but not on the server, add server-side validation routines which are no less strict than the validation performed on the client. Also add validation routines for any input received from the user that is not validated on the client. Examples are validation of cookies, hidden fields, ViewState, etc."
     ],
     "li": [
-      "Identify all input validation routines in client-side code. Ensure that you have identified all the routines in your web pages that validate input received from the user. These client-side validation routines usually include checks for length, range, format, and type on the input received. Some examples of client-side validators are:\r\n      \r\n        Form controls such as those that restrict the number of characters allowed using the MAXLENGTH attribute and the range of input values allowed in drop-down boxes. Javascript validation routines that check the length, range, type, format, etc. Hidden fields which are sometimes used to impose constraints on the input. Although the actual validation happens on the server, it is easy to tamper with the hidden fields on the client side.",
+      "Identify all input validation routines in client-side code. Ensure that you have identified all the routines in your web pages that validate input received from the user. These client-side validation routines usually include checks for length, range, format, and type on the input received. Some examples of client-side validators are:\n      \n        Form controls such as those that restrict the number of characters allowed using the MAXLENGTH attribute and the range of input values allowed in drop-down boxes. Javascript validation routines that check the length, range, type, format, etc. Hidden fields which are sometimes used&nbsp;to impose constraints on the input. Although the actual validation happens on the server, it is easy to tamper with the hidden fields on the client side.",
       "Form controls such as those that restrict the number of characters allowed using the MAXLENGTH attribute and the range of input values allowed in drop-down boxes.",
       "Javascript validation routines that check the length, range, type, format, etc.",
-      "Hidden fields which are sometimes used to impose constraints on the input. Although the actual validation happens on the server, it is easy to tamper with the hidden fields on the client side.",
-      "Ensure that corresponding server-side validation routines exist. For all client-side validation routines that have been identified, check that similar, or more rigorous, validation routines have been implemented on the server side. This protects your application from cross-site scripting, SQL injection or other types of attacks in which the client-side validation has been bypassed by an attacker. The server can be easily tested by disabling Javascript and modifying the client-side code or by using an HTTP proxy application.",
+      "Hidden fields which are sometimes used&nbsp;to impose constraints on the input. Although the actual validation happens on the server, it is easy to tamper with the hidden fields on the client side.",
+      "Ensure that corresponding server-side validation routines exist. For all client-side validation routines that have been identified, check that similar, or more rigorous, validation routines have been implemented on the server side. This protects your application from cross-site scripting, SQL injection or other types of attacks in which the client-side validation has been bypassed by an attacker. The server can be easily&nbsp;tested by disabling Javascript and modifying the client-side code or by using an HTTP&nbsp;proxy application.",
       "Ensure that missing server-side validation routines are implemented. For all input that is validated on the client but not on the server, add server-side validation routines which are no less strict than the validation performed on the client. Also add validation routines for any input received from the user that is not validated on the client. Examples are validation of cookies, hidden fields, ViewState, etc.",
       "For more information on input validation, see: Security Practices: Input and Data Validation in MSDN.",
       "For an example of an excellent debugging HTTP proxy, check out the Fiddler.",
@@ -1883,12 +1886,12 @@
       "Ensure that missing server-side validation routines are implemented."
     ],
     "ul": [
-      "Form controls such as those that restrict the number of characters allowed using the MAXLENGTH attribute and the range of input values allowed in drop-down boxes. Javascript validation routines that check the length, range, type, format, etc. Hidden fields which are sometimes used to impose constraints on the input. Although the actual validation happens on the server, it is easy to tamper with the hidden fields on the client side.",
+      "Form controls such as those that restrict the number of characters allowed using the MAXLENGTH attribute and the range of input values allowed in drop-down boxes. Javascript validation routines that check the length, range, type, format, etc. Hidden fields which are sometimes used&nbsp;to impose constraints on the input. Although the actual validation happens on the server, it is easy to tamper with the hidden fields on the client side.",
       "For more information on input validation, see: Security Practices: Input and Data Validation in MSDN. For an example of an excellent debugging HTTP proxy, check out the Fiddler.",
-      "Guideline: Do Not Rely on Client-Side Validation (ASP.NET)\r\n      \r\n        Input is Validated for Length, Range, Format, and Type"
+      "Guideline: Do Not Rely on Client-Side Validation (ASP.NET)\n      \n        Input is Validated for Length, Range, Format, and Type"
     ],
     "pre": [
-      "<form id=\"form1\" runat=\"server\"><asp:textbox id=\"txtName\" runat=\"server\"></asp:textbox><asp:textbox id=\"txtEmail\" runat=\"server\"></asp:textbox><asp:button id=\"btnSubmit\" runat=\"server\" text=\"Submit\" onclientclick=\"return cValidate()\"/></form><script language=\"javascript\" type=\"text/javascript\">function cValidate(){      if (document.getElementById(\"<%=txtName.ClientID%>\").value==\"\")      {                 alert(\"Name Field cannot be blank\");                 document.getElementById(\"<%=txtName.ClientID%>\").focus();                 return false;      }      if(document.getElementById(\"<%=txtEmail.ClientID %>\").value==\"\")      {                 alert(\"Email Field cannot be blank\");                 document.getElementById(\"<%=txtEmail.ClientID %>\").focus();                  return false;      }      var emailPat = /^(\\\".*\\\"|[A-Za-z]\\w*)@(\\[\\d{1,3}(\\.\\d{1,3}){3}]|[A-Za-z]\\w*(\\.[A-Za-z]\\w*)+)$/;      var emailid=document.getElementById(\"<%=txtEmail.ClientID %>\").value;      var matchArray = emailid.match(emailPat);      if (matchArray == null)      {               alert(\"Your email address seems incorrect. Please try again.\");               document.getElementById(\"<%=txtEmail.ClientID %>\").focus();               return false; } return true;}</script>"
+      "<form id=\"form1\" runat=\"server\"><asp:textbox id=\"txtName\" runat=\"server\"></asp:textbox><asp:textbox id=\"txtEmail\" runat=\"server\"></asp:textbox><asp:button id=\"btnSubmit\" runat=\"server\" text=\"Submit\" onclientclick=\"return cValidate()\"/></form><script language=\"javascript\" type=\"text/javascript\">function cValidate()&#123;      if (document.getElementById(\"<&#37;=txtName.ClientID&#37;>\").value==\"\")      &#123;                 alert(\"Name Field cannot be blank\");                 document.getElementById(\"<&#37;=txtName.ClientID&#37;>\").focus();                 return false;      &#125;      if(document.getElementById(\"<&#37;=txtEmail.ClientID &#37;>\").value==\"\")      &#123;                 alert(\"Email Field cannot be blank\");                 document.getElementById(\"<&#37;=txtEmail.ClientID &#37;>\").focus();                  return false;      &#125;      var emailPat = /&#94;(\\\".&#42;\\\"&#124;&#91;A-Za-z&#93;\\w&#42;)&#64;(\\&#91;\\d&#123;1,3&#125;(\\.\\d&#123;1,3&#125;)&#123;3&#125;&#93;&#124;&#91;A-Za-z&#93;\\w&#42;(\\.&#91;A-Za-z&#93;\\w&#42;)&#43;)&#36;/;      var emailid=document.getElementById(\"<&#37;=txtEmail.ClientID &#37;>\").value;      var matchArray = emailid.match(emailPat);      if (matchArray == null)      &#123;               alert(\"Your email address seems incorrect. Please try again.\");               document.getElementById(\"<&#37;=txtEmail.ClientID &#37;>\").focus();               return false; &#125; return true;&#125;</script>"
     ],
     "br": [
       "",
@@ -1950,5 +1953,5 @@
       "text": "Input is Validated for Length, Range, Format, and Type"
     }
   ],
-  "html": "<h1>What to Check For</h1>\r\n  <p>Verify that the same or more rigorous checks are performed on the server as on&nbsp;the client. Verify that client-side validation is used only for usability and to reduce the number of posts to the server.</p>\r\n  <h1>Why</h1>\r\n  <p>Client-side validation can be easily bypassed. For example, a malicious user could disable the client-side script routines by disabling JavaScript. Users may also construct their own form posts using custom HTML, or using an HTTP proxy to modify form posts. If developers rely on the controls in the client's user interface and do not validate all results on the back end, an attacker may be able to inject malicious data into the system,&nbsp;potentially&nbsp;leading to a range of security issues, including cross site scripting and SQL injection.</p>\r\n  <h1>How to Check</h1>\r\n  <p>Client-side validation should only be used to reduce round trips to the server and to improve the user experience. It cannot be relied upon for security&nbsp;because the client controls this code. Take the following steps to ensure that input is validated on the server:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Identify all input validation routines in client-side code. </strong>Ensure that you have identified all the routines in your web pages that validate input received from the user. These client-side validation routines usually include checks for length, range, format, and type on the input received. Some examples of client-side validators are:</p>\r\n      <ul>\r\n        <li>Form controls such as those that restrict the number of characters allowed using the <strong>MAXLENGTH</strong> attribute and the range of input values allowed in drop-down boxes. <li>Javascript validation routines that check the length, range, type, format, etc. <li>Hidden fields which are sometimes used&nbsp;to impose constraints on the input. Although the actual validation happens on the server, it is easy to tamper with the hidden fields on the client side.</li></li></li>\r\n      </ul>\r\n      <li>\r\n        <p>\r\n          <strong>Ensure that corresponding server-side validation routines exist. </strong>For all client-side validation routines that have been identified, check that similar, or more rigorous, validation routines have been implemented on the server side. This protects your application from cross-site scripting, SQL injection or other types of attacks in which the client-side validation has been bypassed by an attacker. The server can be easily&nbsp;tested by disabling Javascript and modifying the client-side code or by using an HTTP&nbsp;proxy application.</p>\r\n        <li>\r\n          <p>\r\n            <strong>Ensure that missing server-side validation routines are implemented. </strong>For all input that is validated on the client but not on the server, add server-side validation routines which are no less strict than the validation performed on the client. Also add validation routines for any input received from the user that is not validated on the client. Examples are validation of cookies, hidden fields, ViewState, etc.</p>\r\n        </li>\r\n      </li>\r\n    </li>\r\n  </ol>\r\n  <h1>Problem Example</h1>\r\n  <p>Consider a very simple form where a user is asked to enter their name and email address:</p>\r\n  <pre>&lt;form id=\"form1\" runat=\"server\"&gt;<br />&lt;asp:textbox id=\"txtName\" runat=\"server\"&gt;<br />&lt;/asp:textbox&gt;&lt;asp:textbox id=\"txtEmail\" runat=\"server\"&gt;<br />&lt;/asp:textbox&gt;&lt;asp:button id=\"btnSubmit\" runat=\"server\" text=\"Submit\" onclientclick=\"return cValidate()\"/&gt;<br />&lt;/form&gt;<br />&lt;script language=\"javascript\" type=\"text/javascript\"&gt;function cValidate()<br />&#123;<br />      if (document.getElementById(\"&lt;&#37;=txtName.ClientID&#37;&gt;\").value==\"\")<br />      &#123;<br />                 alert(\"Name Field cannot be blank\");<br />                 document.getElementById(\"&lt;&#37;=txtName.ClientID&#37;&gt;\").focus();<br />                 return false;<br />      &#125;<br />      if(document.getElementById(\"&lt;&#37;=txtEmail.ClientID &#37;&gt;\").value==\"\")<br />      &#123;<br />                 alert(\"Email Field cannot be blank\");<br />                 document.getElementById(\"&lt;&#37;=txtEmail.ClientID &#37;&gt;\").focus(); <br />                 return false;<br />      &#125;<br />      var emailPat = /&#94;(\\\".&#42;\\\"&#124;&#91;A-Za-z&#93;\\w&#42;)&#64;(\\&#91;\\d&#123;1,3&#125;(\\.\\d&#123;1,3&#125;)&#123;3&#125;&#93;&#124;&#91;A-Za-z&#93;\\w&#42;(\\.&#91;A-Za-z&#93;\\w&#42;)&#43;)&#36;/;<br />      var emailid=document.getElementById(\"&lt;&#37;=txtEmail.ClientID &#37;&gt;\").value;<br />      var matchArray = emailid.match(emailPat);<br />      if (matchArray == null)<br />      &#123;<br />               alert(\"Your email address seems incorrect. Please try again.\");<br />               document.getElementById(\"&lt;&#37;=txtEmail.ClientID &#37;&gt;\").focus();<br />               return false;<br /> &#125;<br /> return true;<br />&#125;<br />&lt;/script&gt;</pre>\r\n  <p>This page validates the user's input for validity but does so on the client using JavaScript. This type of validation can be bypassed by an attacker who disables JavaScript, replaces the validation script, or edits the data as the browser is submitting it using an&nbsp;HTTP proxy.</p>\r\n  <h1>Additional Resources</h1>\r\n  <ul>\r\n    <li>For more information on input validation, see: <a href=\"http://msdn2.microsoft.com/en-us/library/ms998372.aspx#pagpractices0001_inputanddatavalidation\">Security Practices: Input and Data Validation</a> in MSDN. <li>For an example of an excellent debugging HTTP proxy, check out the <a href=\"http://www.fiddlertool.com/\">Fiddler.</a></li></li>\r\n  </ul>\r\n  <h1>Related Items</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/6e981095-84bd-4158-a212-8f9937bcb336\">Guideline: Do Not Rely on Client-Side Validation (ASP.NET)</a>\r\n      <li>\r\n        <a href=\"/article/b3a939b6-732f-49d0-b204-0422dbfbdbaa\">Input is Validated for Length, Range, Format, and Type</a>\r\n      </li>\r\n    </li>\r\n  </ul>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance. </p>"
+  "html": "<h1>What to Check For</h1>\n  <p>Verify that the same or more rigorous checks are performed on the server as on&amp;nbsp;the client. Verify that client-side validation is used only for usability and to reduce the number of posts to the server.</p>\n  <h1>Why</h1>\n  <p>Client-side validation can be easily bypassed. For example, a malicious user could disable the client-side script routines by disabling JavaScript. Users may also construct their own form posts using custom HTML, or using an HTTP proxy to modify form posts. If developers rely on the controls in the client's user interface and do not validate all results on the back end, an attacker may be able to inject malicious data into the system,&amp;nbsp;potentially&amp;nbsp;leading to a range of security issues, including cross site scripting and SQL injection.</p>\n  <h1>How to Check</h1>\n  <p>Client-side validation should only be used to reduce round trips to the server and to improve the user experience. It cannot be relied upon for security&amp;nbsp;because the client controls this code. Take the following steps to ensure that input is validated on the server:</p>\n  <ol>\n    <li>\n      <p>\n        <strong>Identify all input validation routines in client-side code. </strong>Ensure that you have identified all the routines in your web pages that validate input received from the user. These client-side validation routines usually include checks for length, range, format, and type on the input received. Some examples of client-side validators are:</p>\n      <ul>\n        <li>Form controls such as those that restrict the number of characters allowed using the <strong>MAXLENGTH</strong> attribute and the range of input values allowed in drop-down boxes. <li>Javascript validation routines that check the length, range, type, format, etc. <li>Hidden fields which are sometimes used&amp;nbsp;to impose constraints on the input. Although the actual validation happens on the server, it is easy to tamper with the hidden fields on the client side.</li></li></li>\n      </ul>\n      <li>\n        <p>\n          <strong>Ensure that corresponding server-side validation routines exist. </strong>For all client-side validation routines that have been identified, check that similar, or more rigorous, validation routines have been implemented on the server side. This protects your application from cross-site scripting, SQL injection or other types of attacks in which the client-side validation has been bypassed by an attacker. The server can be easily&amp;nbsp;tested by disabling Javascript and modifying the client-side code or by using an HTTP&amp;nbsp;proxy application.</p>\n        <li>\n          <p>\n            <strong>Ensure that missing server-side validation routines are implemented. </strong>For all input that is validated on the client but not on the server, add server-side validation routines which are no less strict than the validation performed on the client. Also add validation routines for any input received from the user that is not validated on the client. Examples are validation of cookies, hidden fields, ViewState, etc.</p>\n        </li>\n      </li>\n    </li>\n  </ol>\n  <h1>Problem Example</h1>\n  <p>Consider a very simple form where a user is asked to enter their name and email address:</p>\n  <pre>&lt;form id=\"form1\" runat=\"server\"&gt;<br />&lt;asp:textbox id=\"txtName\" runat=\"server\"&gt;<br />&lt;/asp:textbox&gt;&lt;asp:textbox id=\"txtEmail\" runat=\"server\"&gt;<br />&lt;/asp:textbox&gt;&lt;asp:button id=\"btnSubmit\" runat=\"server\" text=\"Submit\" onclientclick=\"return cValidate()\"/&gt;<br />&lt;/form&gt;<br />&lt;script language=\"javascript\" type=\"text/javascript\"&gt;function cValidate()<br />&amp;#123;<br />      if (document.getElementById(\"&lt;&amp;#37;=txtName.ClientID&amp;#37;&gt;\").value==\"\")<br />      &amp;#123;<br />                 alert(\"Name Field cannot be blank\");<br />                 document.getElementById(\"&lt;&amp;#37;=txtName.ClientID&amp;#37;&gt;\").focus();<br />                 return false;<br />      &amp;#125;<br />      if(document.getElementById(\"&lt;&amp;#37;=txtEmail.ClientID &amp;#37;&gt;\").value==\"\")<br />      &amp;#123;<br />                 alert(\"Email Field cannot be blank\");<br />                 document.getElementById(\"&lt;&amp;#37;=txtEmail.ClientID &amp;#37;&gt;\").focus(); <br />                 return false;<br />      &amp;#125;<br />      var emailPat = /&amp;#94;(\\\".&amp;#42;\\\"&amp;#124;&amp;#91;A-Za-z&amp;#93;\\w&amp;#42;)&amp;#64;(\\&amp;#91;\\d&amp;#123;1,3&amp;#125;(\\.\\d&amp;#123;1,3&amp;#125;)&amp;#123;3&amp;#125;&amp;#93;&amp;#124;&amp;#91;A-Za-z&amp;#93;\\w&amp;#42;(\\.&amp;#91;A-Za-z&amp;#93;\\w&amp;#42;)&amp;#43;)&amp;#36;/;<br />      var emailid=document.getElementById(\"&lt;&amp;#37;=txtEmail.ClientID &amp;#37;&gt;\").value;<br />      var matchArray = emailid.match(emailPat);<br />      if (matchArray == null)<br />      &amp;#123;<br />               alert(\"Your email address seems incorrect. Please try again.\");<br />               document.getElementById(\"&lt;&amp;#37;=txtEmail.ClientID &amp;#37;&gt;\").focus();<br />               return false;<br /> &amp;#125;<br /> return true;<br />&amp;#125;<br />&lt;/script&gt;</pre>\n  <p>This page validates the user's input for validity but does so on the client using JavaScript. This type of validation can be bypassed by an attacker who disables JavaScript, replaces the validation script, or edits the data as the browser is submitting it using an&amp;nbsp;HTTP proxy.</p>\n  <h1>Additional Resources</h1>\n  <ul>\n    <li>For more information on input validation, see: <a href=\"http://msdn2.microsoft.com/en-us/library/ms998372.aspx#pagpractices0001_inputanddatavalidation\">Security Practices: Input and Data Validation</a> in MSDN. <li>For an example of an excellent debugging HTTP proxy, check out the <a href=\"http://www.fiddlertool.com/\">Fiddler.</a></li></li>\n  </ul>\n  <h1>Related Items</h1>\n  <ul>\n    <li>\n      <a href=\"/article/6e981095-84bd-4158-a212-8f9937bcb336\">Guideline: Do Not Rely on Client-Side Validation (ASP.NET)</a>\n      <li>\n        <a href=\"/article/b3a939b6-732f-49d0-b204-0422dbfbdbaa\">Input is Validated for Length, Range, Format, and Type</a>\n      </li>\n    </li>\n  </ul>\n  <hr />\n  <p>Adapted from Microsoft patterns &amp; practices guidance. </p>"
 }

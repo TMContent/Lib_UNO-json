@@ -1,6 +1,6 @@
 {
   "id": "eeae1c00-6a8a-4e10-bdcd-0085289bc4d6",
-  "checksum": "5d7fdf11946982f3655511235e820afa1af08876",
+  "checksum": "d25fa409e4406db823c9df71865f2a2bd73ae24b",
   "words": {
     "applies": [
       "h1"
@@ -387,8 +387,8 @@
     ],
     "p": [
       "Initialization of logs should be logged.",
-      "Examine the logs on the log server to verify that they have log entries that mark the initialization of logging. If log initialization has not happened for a long time, it may be more convenient to restart the log server to verify that it creates a log entry\r\n upon initialization. If it is not acceptable to restart the log server, it may be sufficient to consult the vendor's documentation or contact technical support for confirmation that the log server solution logs initialization.",
-      "This functionality is implemented and enabled by default on most log generating products, including Microsoft Windows Operating Systems. It is unlikely that there is a configuration setting for this, but if your device does not log initialization, please\r\n refer to the vendor's documentation or technical support for instructions on enabling it."
+      "Examine the logs on the log server to verify that they have log entries that mark the initialization of logging. If log initialization has not happened for a long time, it may be more convenient to restart the log server to verify that it creates a log entry\n upon initialization. If it is not acceptable to restart the log server, it may be sufficient to consult the vendor's documentation or contact technical support for confirmation that the log server solution logs initialization.",
+      "This functionality is implemented and enabled by default on most log generating products, including Microsoft Windows Operating Systems. It is unlikely that there is a configuration setting for this, but if your device does not log initialization, please\n refer to the vendor's documentation or technical support for instructions on enabling it."
     ],
     "a": [
       "Implement Audit Trails for System Components"
@@ -400,5 +400,5 @@
       "text": "Implement Audit Trails for System Components"
     }
   ],
-  "html": "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 10.2.6</li>\r\n  </ul>\r\n  <h1>What to Check For</h1>\r\n  <p>Initialization of logs should be logged.</p>\r\n  <h1>How to Check</h1>\r\n  <p>Examine the logs on the log server to verify that they have log entries that mark the initialization of logging. If log initialization has not happened for a long time, it may be more convenient to restart the log server to verify that it creates a log entry\r\n upon initialization. If it is not acceptable to restart the log server, it may be sufficient to consult the vendor's documentation or contact technical support for confirmation that the log server solution logs initialization.</p>\r\n  <h1>How to Fix</h1>\r\n  <p>This functionality is implemented and enabled by default on most log generating products, including Microsoft Windows Operating Systems. It is unlikely that there is a configuration setting for this, but if your device does not log initialization, please\r\n refer to the vendor's documentation or technical support for instructions on enabling it.</p>\r\n  <h1>Related Items</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/7a956911-f547-4f65-88bb-f4a42ea349f3\">Implement Audit Trails for System Components</a>\r\n    </li>\r\n  </ul>"
+  "html": "<h1>Applies to</h1>\n  <ul>\n    <li>PCI DSS Requirement 10.2.6</li>\n  </ul>\n  <h1>What to Check For</h1>\n  <p>Initialization of logs should be logged.</p>\n  <h1>How to Check</h1>\n  <p>Examine the logs on the log server to verify that they have log entries that mark the initialization of logging. If log initialization has not happened for a long time, it may be more convenient to restart the log server to verify that it creates a log entry\n upon initialization. If it is not acceptable to restart the log server, it may be sufficient to consult the vendor's documentation or contact technical support for confirmation that the log server solution logs initialization.</p>\n  <h1>How to Fix</h1>\n  <p>This functionality is implemented and enabled by default on most log generating products, including Microsoft Windows Operating Systems. It is unlikely that there is a configuration setting for this, but if your device does not log initialization, please\n refer to the vendor's documentation or technical support for instructions on enabling it.</p>\n  <h1>Related Items</h1>\n  <ul>\n    <li>\n      <a href=\"/article/7a956911-f547-4f65-88bb-f4a42ea349f3\">Implement Audit Trails for System Components</a>\n    </li>\n  </ul>"
 }

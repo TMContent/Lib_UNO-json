@@ -1,6 +1,6 @@
 {
   "id": "b4b49e15-eb5d-46b0-b56d-231ca447c053",
-  "checksum": "9b5475ac89bde448f5c091a9fc59f9524d8f9535",
+  "checksum": "38fcbbfb1ddf8df028e394c888d1f661a5273d79",
   "words": {
     "56": [
       "ol",
@@ -100,7 +100,6 @@
       "p",
       "p",
       "p",
-      "p",
       "ol",
       "ol",
       "ol",
@@ -167,35 +166,10 @@
       "p",
       "title"
     ],
-    "viewstate": [
+    "viewstate&nbsp;": [
       "p",
       "p",
-      "p",
-      "p",
-      "p",
-      "p",
-      "p",
-      "p",
-      "p",
-      "p",
-      "ol",
-      "ol",
-      "li",
-      "p",
-      "li",
-      "p",
-      "h2",
-      "p",
-      "h2",
-      "ol",
-      "ol",
-      "li",
-      "p",
-      "li",
-      "p",
-      "p",
-      "p",
-      "title"
+      "p"
     ],
     "if": [
       "p",
@@ -251,7 +225,6 @@
       "p",
       "ol",
       "li",
-      "p",
       "p"
     ],
     "on": [
@@ -399,14 +372,7 @@
       "p",
       "p"
     ],
-    "state": [
-      "p",
-      "p",
-      "h2",
-      "p",
-      "p",
-      "p",
-      "p",
+    "state&nbsp;": [
       "p"
     ],
     "your": [
@@ -418,6 +384,33 @@
       "li",
       "p"
     ],
+    "viewstate": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "ol",
+      "ol",
+      "li",
+      "p",
+      "li",
+      "p",
+      "h2",
+      "p",
+      "h2",
+      "ol",
+      "ol",
+      "li",
+      "p",
+      "li",
+      "p",
+      "p",
+      "title"
+    ],
     "does": [
       "p",
       "p",
@@ -426,7 +419,7 @@
     "contain": [
       "p"
     ],
-    "should encrypt": [
+    "should&nbspencrypt": [
       "p"
     ],
     "why": [
@@ -570,6 +563,9 @@
       "p",
       "p"
     ],
+    "data&nbsp;": [
+      "p"
+    ],
     "encryption": [
       "p",
       "p",
@@ -632,7 +628,7 @@
       "p",
       "p"
     ],
-    "a large": [
+    "a&nbsplarge": [
       "p"
     ],
     "performance": [
@@ -720,7 +716,7 @@
       "p",
       "p"
     ],
-    "data must": [
+    "data&nbspmust": [
       "p"
     ],
     "some": [
@@ -798,7 +794,7 @@
       "p",
       "p"
     ],
-    "controls": [
+    "controls&nbsp;": [
       "p"
     ],
     "view": [
@@ -855,7 +851,16 @@
       "p",
       "p"
     ],
-    "tracing": [
+    "tracing&nbsp;": [
+      "p"
+    ],
+    "state": [
+      "p",
+      "h2",
+      "p",
+      "p",
+      "p",
+      "p",
       "p"
     ],
     "follow": [
@@ -1231,7 +1236,7 @@
     "retrieve": [
       "p"
     ],
-    "easily": [
+    "easily&nbsp;": [
       "p"
     ],
     "in-process": [
@@ -1408,11 +1413,8 @@
     "algorithm": [
       "ol",
       "ol",
-      "ol",
       "li",
       "li",
-      "li",
-      "p",
       "p"
     ],
     "validation": [
@@ -1451,6 +1453,11 @@
       "li",
       "p"
     ],
+    "algorithm&nbsp;": [
+      "ol",
+      "li",
+      "p"
+    ],
     "3des": [
       "ol",
       "ol",
@@ -1461,20 +1468,22 @@
       "b",
       "b"
     ],
-    "aes": [
-      "ol",
+    "aes&nbsp;": [
       "ol",
       "li",
-      "li",
-      "p",
-      "p",
-      "b",
-      "b"
+      "p"
     ],
     "because": [
       "ol",
       "li",
       "p"
+    ],
+    "aes": [
+      "ol",
+      "li",
+      "p",
+      "b",
+      "b"
     ],
     "offers": [
       "ol",
@@ -1702,7 +1711,7 @@
     "user's": [
       "p"
     ],
-    "browser": [
+    "browser&nbsp;": [
       "p"
     ],
     "this": [
@@ -1720,6 +1729,9 @@
     ],
     "modify": [
       "p",
+      "p"
+    ],
+    "it&nbsp;": [
       "p"
     ],
     "their": [
@@ -1770,7 +1782,7 @@
     "protects": [
       "p"
     ],
-    "appropriately": [
+    "appropriately&nbsp;": [
       "p"
     ],
     "attackers": [
@@ -1799,6 +1811,9 @@
     ],
     "guidance": [
       "p"
+    ],
+    "sink]": [
+      "title"
     ]
   },
   "tags": {
@@ -1811,35 +1826,35 @@
       "Solution Example"
     ],
     "p": [
-      "Avoid storing sensitive data in ViewState.  If you need to manage sensitive data, maintain it on the server; for example, maintain it in session state.  If your ViewState does contain sensitive data, you should encrypt ViewState.",
-      "Although it does protect against tampering, by default, the ViewState does not provide any protection against information disclosure, and thus should not be used for sensitive data.  Encryption can be added to the ViewState, but there is a large performance overhead to doing so, both in terms of CPU usage for encryption and the size of the resulting ViewState; the best option is to ensure that no sensitive data is in the ViewState.",
-      "Sensitive data should not be stored in the ViewState.  If sensitive data must be stored in ViewState for some reason, it should be encrypted.",
-      "The ViewState is a blob of base-64 encoded data stored and submitted as a hidden form element by ASP.NET controls.  You can view it by looking at the page source or by using ASP.NET tracing.  To ensure that sensitive data is not stored in the view state, follow these steps:",
+      "Avoid storing sensitive data in ViewState.&nbsp; If you need to manage sensitive data, maintain it on the server; for example, maintain it in session state.&nbsp; If your ViewState does contain sensitive data, you should&nbsp;encrypt ViewState.",
+      "Although it does protect against tampering, by default, the ViewState does not provide any protection against information disclosure, and thus should not be used for sensitive data.&nbsp; Encryption can be added to the ViewState, but there is a&nbsp;large performance overhead to doing so, both in terms of CPU usage for encryption and the size of the resulting ViewState; the best option is to ensure that no sensitive data is in the ViewState.",
+      "Sensitive data should not be stored in the ViewState.&nbsp; If sensitive data&nbsp;must be stored in ViewState for some reason, it should be encrypted.",
+      "The ViewState is a blob of base-64 encoded data stored and submitted as a hidden form element by ASP.NET controls.&nbsp; You can view it by looking at the page source or by using ASP.NET tracing.&nbsp; To ensure that sensitive data is not stored in the view state, follow these steps:",
       "Examine all data which is being placed in the ViewState and ensure that it is not sensitive, either alone or in combination with other data.",
       "Move any sensitive data into server-side session variables.",
       "If data cannot be moved into server-side session variables, encrypt the ViewState.",
       "If you're not using the ViewState (or don't want sensitive data to be persisted accidentally), you can turn it off at either the tag, page, or application levels with the following code:",
-      "To store session state on the server side, you can use the SessionStateModule class, whose Contents collection allows for session objects to be added and retrieve easily.  Server-side session state can be stored either in-process, in a seperate state server, or in a SQL server, allowing for flexibility across a variety of configurations",
+      "To store session state on the server side, you can use the SessionStateModule class, whose Contents collection allows for session objects to be added and retrieve easily.&nbsp; Server-side session state can be stored either in-process, in a seperate state server, or in a SQL server, allowing for flexibility across a variety of configurations",
       "If you do not want every page to used encrypted ViewState, check that the viewStateEncryptionMode attribute of the <pages> element is set to Auto, as shown in the following example.",
       "Then, from within your code, call the RegisterRequiresViewStateEncryption method as shown in the following example.",
-      "The validation attribute is overloaded and can be used to specify either the hashing algorithm or the encryption algorithm.  You can specify either 3DES or AES.  Because AES offers larger key sizes (128 bits, 192 bits, or 256 bits) than 3DES (56 bits), it is considered more secure and should be used.",
+      "The validation attribute is overloaded and can be used to specify either the hashing algorithm or the encryption algorithm.&nbsp; You can specify either 3DES or AES.&nbsp; Because AES offers larger key sizes (128 bits, 192 bits, or 256 bits) than 3DES (56 bits), it is considered more secure and should be used.",
       "Unless your application is installed in a Web farm, you should leave the decryptionKey and validationKey attribute with the default values shown in the example. To encrypt ViewState in a web farm, you need to manually set the validationKey and decryptionKey value—these values should be same across all machines in the web farm",
-      "An e-commerce site sends billing details, including order amounts and (non-public) discount percentages round-trip through the user's browser.  All of this information is stored in a ViewState.  An attacker can extract all of the information in the ViewState, although they cannot modify it.  Thus, their competitors can learn the site's discount structure without having to compromise any server side machines.",
+      "An e-commerce site sends billing details, including order amounts and (non-public) discount percentages round-trip through the user's browser.&nbsp; All of this information is stored in a ViewState.&nbsp; An attacker can extract all of the information in the ViewState, although they cannot modify it.&nbsp; Thus, their competitors can learn the site's discount structure without having to compromise any server side machines.",
       "",
-      "An e-commerce site keeps all billing details in server-side session state after they have been initially submitted by the user, and protects that session state appropriately.  Attackers are unable to either view or modify billing details.",
+      "An e-commerce site keeps all billing details in server-side session state after they have been initially submitted by the user, and protects that session state appropriately.&nbsp; Attackers are unable to either view or modify billing details.",
       "",
       "Adapted from Microsoft patterns & practices guidance."
     ],
     "ol": [
-      "Examine all data which is being placed in the ViewState and ensure that it is not sensitive, either alone or in combination with other data.\r\n    \r\n    \r\n      Move any sensitive data into server-side session variables.\r\n    \r\n    \r\n      If data cannot be moved into server-side session variables, encrypt the ViewState.",
-      "Check that the viewStateEncryptionMode attribute of the <pages> element is set to Always, as shown in the following example. <pages ... viewStateEncryptionMode=\"Always\" ... />If you do not want every page to used encrypted ViewState, check that the viewStateEncryptionMode attribute of the <pages> element is set to Auto, as shown in the following example. <pages ... viewStateEncryptionMode=\"Auto\" ... />   Then, from within your code, call the RegisterRequiresViewStateEncryption method as shown in the following example. Page.RegisterRequiresViewStateEncryption();\r\n    Specify the encryption algorithm to use on the validation attribute, as shown in the following example. <machineKey ... validation=\"AES\" ... />The validation attribute is overloaded and can be used to specify either the hashing algorithm or the encryption algorithm.  You can specify either 3DES or AES.  Because AES offers larger key sizes (128 bits, 192 bits, or 256 bits) than 3DES (56 bits), it is considered more secure and should be used.\r\n    Review the decryptionKey and validationKey attribute of the <machineKey> element: <machineKey validationKey=\"AutoGenerate,IsolateApps\"   decryptionKey=\"AutoGenerate,IsolateApps\"   ... />Unless your application is installed in a Web farm, you should leave the decryptionKey and validationKey attribute with the default values shown in the example. To encrypt ViewState in a web farm, you need to manually set the validationKey and decryptionKey value—these values should be same across all machines in the web farm"
+      "Examine all data which is being placed in the ViewState and ensure that it is not sensitive, either alone or in combination with other data.\n    \n    \n      Move any sensitive data into server-side session variables.\n    \n    \n      If data cannot be moved into server-side session variables, encrypt the ViewState.",
+      "Check that the viewStateEncryptionMode attribute of the <pages> element is set to Always, as shown in the following example. <pages ... viewStateEncryptionMode=\"Always\" ... />If you do not want every page to used encrypted ViewState, check that the viewStateEncryptionMode attribute of the <pages> element is set to Auto, as shown in the following example. <pages ... viewStateEncryptionMode=\"Auto\" ... />   Then, from within your code, call the RegisterRequiresViewStateEncryption method as shown in the following example. Page.RegisterRequiresViewStateEncryption();\n    Specify the encryption algorithm to use on the validation attribute, as shown in the following example. <machineKey ... validation=\"AES\" ... />The validation attribute is overloaded and can be used to specify either the hashing algorithm or the encryption algorithm.&nbsp; You can specify either 3DES or AES.&nbsp; Because AES offers larger key sizes (128 bits, 192 bits, or 256 bits) than 3DES (56 bits), it is considered more secure and should be used.\n    Review the decryptionKey and validationKey attribute of the <machineKey> element: <machineKey validationKey=\"AutoGenerate,IsolateApps\"   decryptionKey=\"AutoGenerate,IsolateApps\"   ... />Unless your application is installed in a Web farm, you should leave the decryptionKey and validationKey attribute with the default values shown in the example. To encrypt ViewState in a web farm, you need to manually set the validationKey and decryptionKey value—these values should be same across all machines in the web farm"
     ],
     "li": [
       "Examine all data which is being placed in the ViewState and ensure that it is not sensitive, either alone or in combination with other data.",
       "Move any sensitive data into server-side session variables.",
       "If data cannot be moved into server-side session variables, encrypt the ViewState.",
       "Check that the viewStateEncryptionMode attribute of the <pages> element is set to Always, as shown in the following example. <pages ... viewStateEncryptionMode=\"Always\" ... />If you do not want every page to used encrypted ViewState, check that the viewStateEncryptionMode attribute of the <pages> element is set to Auto, as shown in the following example. <pages ... viewStateEncryptionMode=\"Auto\" ... />   Then, from within your code, call the RegisterRequiresViewStateEncryption method as shown in the following example. Page.RegisterRequiresViewStateEncryption();",
-      "Specify the encryption algorithm to use on the validation attribute, as shown in the following example. <machineKey ... validation=\"AES\" ... />The validation attribute is overloaded and can be used to specify either the hashing algorithm or the encryption algorithm.  You can specify either 3DES or AES.  Because AES offers larger key sizes (128 bits, 192 bits, or 256 bits) than 3DES (56 bits), it is considered more secure and should be used.",
+      "Specify the encryption algorithm to use on the validation attribute, as shown in the following example. <machineKey ... validation=\"AES\" ... />The validation attribute is overloaded and can be used to specify either the hashing algorithm or the encryption algorithm.&nbsp; You can specify either 3DES or AES.&nbsp; Because AES offers larger key sizes (128 bits, 192 bits, or 256 bits) than 3DES (56 bits), it is considered more secure and should be used.",
       "Review the decryptionKey and validationKey attribute of the <machineKey> element: <machineKey validationKey=\"AutoGenerate,IsolateApps\"   decryptionKey=\"AutoGenerate,IsolateApps\"   ... />Unless your application is installed in a Web farm, you should leave the decryptionKey and validationKey attribute with the default values shown in the example. To encrypt ViewState in a web farm, you need to manually set the validationKey and decryptionKey value—these values should be same across all machines in the web farm"
     ],
     "h2": [
@@ -1848,15 +1863,15 @@
       "To Encrypt the ViewState:"
     ],
     "table": [
-      "Per control (on tag)\r\n        \r\n          <asp:datagrid EnableViewState=\"false\" ... />\r\n        \r\n      \r\n      \r\n        Per page (in directive)\r\n        \r\n          <%@ Page EnableViewState=\"False\" ... %>\r\n        \r\n      \r\n      \r\n        Per application (in web.config)\r\n        \r\n          <Pages EnableViewState=\"false\" ... />"
+      "Per control (on tag)\n        \n          <asp:datagrid EnableViewState=\"false\" ... />\n        \n      \n      \n        Per page (in directive)\n        \n          <%@ Page EnableViewState=\"False\" ... %>\n        \n      \n      \n        Per application (in web.config)\n        \n          <Pages EnableViewState=\"false\" ... />"
     ],
     "tbody": [
-      "Per control (on tag)\r\n        \r\n          <asp:datagrid EnableViewState=\"false\" ... />\r\n        \r\n      \r\n      \r\n        Per page (in directive)\r\n        \r\n          <%@ Page EnableViewState=\"False\" ... %>\r\n        \r\n      \r\n      \r\n        Per application (in web.config)\r\n        \r\n          <Pages EnableViewState=\"false\" ... />"
+      "Per control (on tag)\n        \n          <asp:datagrid EnableViewState=\"false\" ... />\n        \n      \n      \n        Per page (in directive)\n        \n          <%@ Page EnableViewState=\"False\" ... %>\n        \n      \n      \n        Per application (in web.config)\n        \n          <Pages EnableViewState=\"false\" ... />"
     ],
     "tr": [
-      "Per control (on tag)\r\n        \r\n          <asp:datagrid EnableViewState=\"false\" ... />",
-      "Per page (in directive)\r\n        \r\n          <%@ Page EnableViewState=\"False\" ... %>",
-      "Per application (in web.config)\r\n        \r\n          <Pages EnableViewState=\"false\" ... />"
+      "Per control (on tag)\n        \n          <asp:datagrid EnableViewState=\"false\" ... />",
+      "Per page (in directive)\n        \n          <%@ Page EnableViewState=\"False\" ... %>",
+      "Per application (in web.config)\n        \n          <Pages EnableViewState=\"false\" ... />"
     ],
     "th": [
       "Per control (on tag)",
@@ -1927,5 +1942,5 @@
     ]
   },
   "links": [],
-  "html": "<h1>What to Do</h1>\r\n  <p>Avoid storing sensitive data in ViewState.&nbsp; If you need to manage sensitive data, maintain it on the server; for example, maintain it in session state.&nbsp; If your ViewState does contain sensitive data, you should&nbsp;encrypt ViewState. </p>\r\n  <h1>Why</h1>\r\n  <p>Although it does protect against tampering, by default, the ViewState does not provide any protection against information disclosure, and thus should not be used for sensitive data.&nbsp; Encryption can be added to the ViewState, but there is a&nbsp;large performance overhead to doing so, both in terms of CPU usage for encryption and the size of the resulting ViewState; the best option is to ensure that no sensitive data is in the ViewState. </p>\r\n  <h1>When</h1>\r\n  <p>Sensitive data should not be stored in the ViewState.&nbsp; If sensitive data&nbsp;must be stored in ViewState for some reason, it should be encrypted.</p>\r\n  <h1>How</h1>\r\n  <p>The ViewState is a blob of base-64 encoded data stored and submitted as a hidden form element by ASP.NET controls.&nbsp; You can view it by looking at the page source or by using ASP.NET tracing.&nbsp; To ensure that sensitive data is not stored in the view state, follow these steps:</p>\r\n  <ol>\r\n    <li>\r\n      <p>Examine all data which is being placed in the ViewState and ensure that it is not sensitive, either alone or in combination with other data.</p>\r\n    </li>\r\n    <li>\r\n      <p>Move any sensitive data into server-side session variables.</p>\r\n    </li>\r\n    <li>\r\n      <p>If data cannot be moved into server-side session variables, encrypt the ViewState.</p>\r\n    </li>\r\n  </ol>\r\n  <h2>To Turn off the ViewState</h2>\r\n  <p>If you're not using the ViewState (or don't want sensitive data to be persisted accidentally), you can turn it off at either the tag, page, or application levels with the following code:</p>\r\n  <table>\r\n    <tbody>\r\n      <tr>\r\n        <th>Per control (on tag)</th>\r\n        <td>\r\n          <pre>&lt;asp:datagrid EnableViewState=\"false\" ... /&gt;</pre>\r\n        </td>\r\n      </tr>\r\n      <tr>\r\n        <th>Per page (in directive)</th>\r\n        <td>\r\n          <pre>&lt;%@ Page EnableViewState=\"False\" ... %&gt;</pre>\r\n        </td>\r\n      </tr>\r\n      <tr>\r\n        <th>Per application (in web.config)</th>\r\n        <td>\r\n          <pre>&lt;Pages EnableViewState=\"false\" ... /&gt;</pre>\r\n        </td>\r\n      </tr>\r\n    </tbody>\r\n  </table>\r\n  <h2>To Store Session State on the Server Side</h2>\r\n  <p>To store session state on the server side, you can use the <strong>SessionStateModule</strong> class, whose <strong>Contents</strong> collection allows for session objects to be added and retrieve easily.&nbsp; Server-side session state can be stored either in-process, in a seperate state server, or in a SQL server, allowing for flexibility across a variety of configurations</p>\r\n  <h2>To Encrypt the ViewState:</h2>\r\n  <ol>\r\n    <li>Check that the <b>viewStateEncryptionMode</b> attribute of the <b>&lt;pages&gt;</b> element is set to <b>Always</b>, as shown in the following example. <pre>&lt;pages<br /> ...<br /> viewStateEncryptionMode=\"Always\"<br /> ...<br /> /&gt;</pre><p>If you do not want every page to used encrypted ViewState, check that the <b>viewStateEncryptionMode</b> attribute of the <b>&lt;pages&gt;</b> element is set to <b>Auto</b>, as shown in the following example. </p><pre>&lt;pages<br /> ...<br /> viewStateEncryptionMode=\"Auto\"<br /> ...<br /> /&gt;   </pre><p>Then, from within your code, call the <b>RegisterRequiresViewStateEncryption</b> method as shown in the following example. </p><pre>Page.RegisterRequiresViewStateEncryption();</pre></li>\r\n    <li>Specify the encryption algorithm to use on the <b>validation</b> attribute, as shown in the following example. <pre>&lt;machineKey<br /> ...<br /> validation=\"AES\"<br /> ...<br /> /&gt;</pre><p>The <b>validation</b> attribute is overloaded and can be used to specify either the hashing algorithm or the encryption algorithm.&nbsp; You can specify either <b>3DES</b> or <b>AES</b>.&nbsp; Because <b>AES</b> offers larger key sizes (128 bits, 192 bits, or 256 bits) than <b>3DES</b> (56 bits), it is considered more secure and should be used.</p></li>\r\n    <li>Review the <b>decryptionKey</b> and <strong>validationKey</strong> attribute of the <b>&lt;machineKey&gt;</b> element: <pre>&lt;machineKey<br /> validationKey=\"AutoGenerate,IsolateApps\"<br />   decryptionKey=\"AutoGenerate,IsolateApps\"<br />   ...<br /> /&gt;</pre><p>Unless your application is installed in a Web farm, you should leave the <b>decryptionKey</b> and <strong>validationKey</strong> attribute with the default values shown in the example. To encrypt ViewState in a web farm, you need to manually set the <b>validationKey</b> and <strong>decryptionKey</strong> value—these values should be same across all machines in the web farm</p></li>\r\n  </ol>\r\n  <h1>Problem Example</h1>\r\n  <p>An e-commerce site sends billing details, including order amounts and (non-public) discount percentages round-trip through the user's browser.&nbsp; All of this information is stored in a ViewState.&nbsp; An attacker can extract all of the information in the ViewState, although they cannot modify it.&nbsp; Thus, their competitors can learn the site's discount structure without having to compromise any server side machines. </p>\r\n  <p />\r\n  <h1>Solution Example</h1>\r\n  <p>An e-commerce site keeps all billing details in server-side session state after they have been initially submitted by the user, and protects that session state appropriately.&nbsp; Attackers are unable to either view or modify billing details.</p>\r\n  <p />\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance. </p>"
+  "html": "<h1>What to Do</h1>\n  <p>Avoid storing sensitive data in ViewState.&amp;nbsp; If you need to manage sensitive data, maintain it on the server; for example, maintain it in session state.&amp;nbsp; If your ViewState does contain sensitive data, you should&amp;nbsp;encrypt ViewState. </p>\n  <h1>Why</h1>\n  <p>Although it does protect against tampering, by default, the ViewState does not provide any protection against information disclosure, and thus should not be used for sensitive data.&amp;nbsp; Encryption can be added to the ViewState, but there is a&amp;nbsp;large performance overhead to doing so, both in terms of CPU usage for encryption and the size of the resulting ViewState; the best option is to ensure that no sensitive data is in the ViewState. </p>\n  <h1>When</h1>\n  <p>Sensitive data should not be stored in the ViewState.&amp;nbsp; If sensitive data&amp;nbsp;must be stored in ViewState for some reason, it should be encrypted.</p>\n  <h1>How</h1>\n  <p>The ViewState is a blob of base-64 encoded data stored and submitted as a hidden form element by ASP.NET controls.&amp;nbsp; You can view it by looking at the page source or by using ASP.NET tracing.&amp;nbsp; To ensure that sensitive data is not stored in the view state, follow these steps:</p>\n  <ol>\n    <li>\n      <p>Examine all data which is being placed in the ViewState and ensure that it is not sensitive, either alone or in combination with other data.</p>\n    </li>\n    <li>\n      <p>Move any sensitive data into server-side session variables.</p>\n    </li>\n    <li>\n      <p>If data cannot be moved into server-side session variables, encrypt the ViewState.</p>\n    </li>\n  </ol>\n  <h2>To Turn off the ViewState</h2>\n  <p>If you're not using the ViewState (or don't want sensitive data to be persisted accidentally), you can turn it off at either the tag, page, or application levels with the following code:</p>\n  <table>\n    <tbody>\n      <tr>\n        <th>Per control (on tag)</th>\n        <td>\n          <pre>&lt;asp:datagrid EnableViewState=\"false\" ... /&gt;</pre>\n        </td>\n      </tr>\n      <tr>\n        <th>Per page (in directive)</th>\n        <td>\n          <pre>&lt;%@ Page EnableViewState=\"False\" ... %&gt;</pre>\n        </td>\n      </tr>\n      <tr>\n        <th>Per application (in web.config)</th>\n        <td>\n          <pre>&lt;Pages EnableViewState=\"false\" ... /&gt;</pre>\n        </td>\n      </tr>\n    </tbody>\n  </table>\n  <h2>To Store Session State on the Server Side</h2>\n  <p>To store session state on the server side, you can use the <strong>SessionStateModule</strong> class, whose <strong>Contents</strong> collection allows for session objects to be added and retrieve easily.&amp;nbsp; Server-side session state can be stored either in-process, in a seperate state server, or in a SQL server, allowing for flexibility across a variety of configurations</p>\n  <h2>To Encrypt the ViewState:</h2>\n  <ol>\n    <li>Check that the <b>viewStateEncryptionMode</b> attribute of the <b>&lt;pages&gt;</b> element is set to <b>Always</b>, as shown in the following example. <pre>&lt;pages<br /> ...<br /> viewStateEncryptionMode=\"Always\"<br /> ...<br /> /&gt;</pre><p>If you do not want every page to used encrypted ViewState, check that the <b>viewStateEncryptionMode</b> attribute of the <b>&lt;pages&gt;</b> element is set to <b>Auto</b>, as shown in the following example. </p><pre>&lt;pages<br /> ...<br /> viewStateEncryptionMode=\"Auto\"<br /> ...<br /> /&gt;   </pre><p>Then, from within your code, call the <b>RegisterRequiresViewStateEncryption</b> method as shown in the following example. </p><pre>Page.RegisterRequiresViewStateEncryption();</pre></li>\n    <li>Specify the encryption algorithm to use on the <b>validation</b> attribute, as shown in the following example. <pre>&lt;machineKey<br /> ...<br /> validation=\"AES\"<br /> ...<br /> /&gt;</pre><p>The <b>validation</b> attribute is overloaded and can be used to specify either the hashing algorithm or the encryption algorithm.&amp;nbsp; You can specify either <b>3DES</b> or <b>AES</b>.&amp;nbsp; Because <b>AES</b> offers larger key sizes (128 bits, 192 bits, or 256 bits) than <b>3DES</b> (56 bits), it is considered more secure and should be used.</p></li>\n    <li>Review the <b>decryptionKey</b> and <strong>validationKey</strong> attribute of the <b>&lt;machineKey&gt;</b> element: <pre>&lt;machineKey<br /> validationKey=\"AutoGenerate,IsolateApps\"<br />   decryptionKey=\"AutoGenerate,IsolateApps\"<br />   ...<br /> /&gt;</pre><p>Unless your application is installed in a Web farm, you should leave the <b>decryptionKey</b> and <strong>validationKey</strong> attribute with the default values shown in the example. To encrypt ViewState in a web farm, you need to manually set the <b>validationKey</b> and <strong>decryptionKey</strong> value—these values should be same across all machines in the web farm</p></li>\n  </ol>\n  <h1>Problem Example</h1>\n  <p>An e-commerce site sends billing details, including order amounts and (non-public) discount percentages round-trip through the user's browser.&amp;nbsp; All of this information is stored in a ViewState.&amp;nbsp; An attacker can extract all of the information in the ViewState, although they cannot modify it.&amp;nbsp; Thus, their competitors can learn the site's discount structure without having to compromise any server side machines. </p>\n  <p />\n  <h1>Solution Example</h1>\n  <p>An e-commerce site keeps all billing details in server-side session state after they have been initially submitted by the user, and protects that session state appropriately.&amp;nbsp; Attackers are unable to either view or modify billing details.</p>\n  <p />\n  <hr />\n  <p>Adapted from Microsoft patterns &amp; practices guidance. </p>"
 }

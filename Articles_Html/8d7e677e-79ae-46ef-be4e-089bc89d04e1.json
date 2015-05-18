@@ -1,6 +1,6 @@
 {
   "id": "8d7e677e-79ae-46ef-be4e-089bc89d04e1",
-  "checksum": "6835e39f93deefebb074fc51456578ec59e3757e",
+  "checksum": "56482063162aeb2e94364ee734dfc6668cf2891c",
   "words": {
     "applies": [
       "h2"
@@ -56,7 +56,8 @@
       "p",
       "title"
     ],
-    "ssl": [
+    "tls": [
+      "p",
       "p",
       "p",
       "p",
@@ -171,9 +172,6 @@
     "enable": [
       "p"
     ],
-    "tls": [
-      "p"
-    ],
     "protocol": [
       "p"
     ],
@@ -280,17 +278,17 @@
     ],
     "ul": [
       "Web Applications\n Apache",
-      "For more information about configuring SSL in Apache, please see http://httpd.apache.org/docs/2.0/ssl/ssl_howto.html"
+      "For more information about configuring TLS in Apache, please see http://httpd.apache.org/docs/2.0/ssl/ssl_howto.html"
     ],
     "li": [
       "Web Applications",
       "Apache",
-      "For more information about configuring SSL in Apache, please see http://httpd.apache.org/docs/2.0/ssl/ssl_howto.html"
+      "For more information about configuring TLS in Apache, please see http://httpd.apache.org/docs/2.0/ssl/ssl_howto.html"
     ],
     "p": [
-      "Configure Apache to use only strong SSL algorithms.",
-      "Using strong encryption algorithms with SSL helps reduce the risk of successful eavesdropping attacks and helps with regulatory compliance.",
-      "To use only strong SSL algorithms, edit the httpd.conf file to include the following settings:",
+      "Configure Apache to use only strong TLS algorithms.",
+      "Using strong encryption algorithms with TLS helps reduce the risk of successful eavesdropping attacks and helps with regulatory compliance.",
+      "To use only strong TLS algorithms, edit the httpd.conf file to include the following settings:",
       "These settings enable only the TLS protocol and only the strong encryption cipher suites.",
       "It may also be a good idea to include the following line in case of old versions of apache/mod_ssl:"
     ],
@@ -308,5 +306,5 @@
       "text": "http://httpd.apache.org/docs/2.0/ssl/ssl_howto.html"
     }
   ],
-  "html": "<h2>Applies To</h2><ul><li> Web Applications</li>\n<li> Apache</li>\n</ul><h2>What to Do</h2><p>Configure Apache to use only strong SSL algorithms.\n</p><h2>Why</h2><p>Using strong encryption algorithms with SSL helps reduce the risk of successful eavesdropping attacks and helps with regulatory compliance.\n</p><h2>How</h2><p>To use only strong SSL algorithms, edit the httpd.conf file to include the following settings:\n</p><pre>\n\nSSLProtocol -all +TLSv1\nSSLCipherSuite HIGH:!aNULL:!SSLv2:!MD5:@STRENGTH\nSSLHonorCipherOrder on\n\n</pre><p>\nThese settings enable only the TLS protocol and only the strong encryption cipher suites.\n</p><p>\nIt may also be a good idea to include the following line in case of old versions of apache/mod_ssl:\n</p><pre>\n\nSSLInsecureRenegotiation off\n\n</pre><h2>Additional Resources</h2><ul><li> For more information about configuring SSL in Apache, please see <a href=\"http://httpd.apache.org/docs/2.0/ssl/ssl_howto.html\">http://httpd.apache.org/docs/2.0/ssl/ssl_howto.html</a></li></ul>"
+  "html": "<h2>Applies To</h2><ul><li> Web Applications</li>\n<li> Apache</li>\n</ul><h2>What to Do</h2><p>Configure Apache to use only strong TLS algorithms.\n</p><h2>Why</h2><p>Using strong encryption algorithms with TLS helps reduce the risk of successful eavesdropping attacks and helps with regulatory compliance.\n</p><h2>How</h2><p>To use only strong TLS algorithms, edit the httpd.conf file to include the following settings:\n</p><pre>\n\nSSLProtocol -all +TLSv1\nSSLCipherSuite HIGH:!aNULL:!SSLv2:!MD5:@STRENGTH\nSSLHonorCipherOrder on\n\n</pre><p>\nThese settings enable only the TLS protocol and only the strong encryption cipher suites.\n</p><p>\nIt may also be a good idea to include the following line in case of old versions of apache/mod_ssl:\n</p><pre>\n\nSSLInsecureRenegotiation off\n\n</pre><h2>Additional Resources</h2><ul><li> For more information about configuring TLS in Apache, please see <a href=\"http://httpd.apache.org/docs/2.0/ssl/ssl_howto.html\">http://httpd.apache.org/docs/2.0/ssl/ssl_howto.html</a></li></ul>"
 }

@@ -1,6 +1,6 @@
 {
   "id": "ba6050ac-4bdd-4f5c-864b-a973b56d889d",
-  "checksum": "c6fc42939cc8dd2879093a51530e2a80e9dc978d",
+  "checksum": "8b0e180b38f230f6073ecf92f25d58506c0fb0d3",
   "words": {
     "description": [
       "h1"
@@ -289,5 +289,5 @@
     ]
   },
   "links": [],
-  "html": "<h1>Description</h1>\r\n  <p>Make sure that your applications enforce the use of strong passwords. If your applications use Windows authentication, you benefit from being able to use Windows or Active Directory password policy. If you need to store passwords in configuration files, make sure that you encrypt them. Use the protected configuration feature to encrypt the configuration section that stores the password. For ASP.NET applications, you can use Aspnet_regiis.exe. For other application types, such as Windows applications, you must programmatically encrypt configuration file sections by using the protected configuration API. </p>\r\n  <p>If you store passwords in a database for authentication, do not store them in plaintext or encrypted form. Instead, store non-reversible hashes with added salt.</p>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
+  "html": "<h1>Description</h1>\n  <p>Make sure that your applications enforce the use of strong passwords. If your applications use Windows authentication, you benefit from being able to use Windows or Active Directory password policy. If you need to store passwords in configuration files, make sure that you encrypt them. Use the protected configuration feature to encrypt the configuration section that stores the password. For ASP.NET applications, you can use Aspnet_regiis.exe. For other application types, such as Windows applications, you must programmatically encrypt configuration file sections by using the protected configuration API. </p>\n  <p>If you store passwords in a database for authentication, do not store them in plaintext or encrypted form. Instead, store non-reversible hashes with added salt.</p>\n  <hr />\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
 }

@@ -1,6 +1,6 @@
 {
   "id": "571bb287-71c8-4b90-813e-6a3e8531369c",
-  "checksum": "1e24f4e3657bacfad9e17f0ec5aa9cc1569fb1ab",
+  "checksum": "cc13691b1523b6ca929c43eaaa652dcf361b72d0",
   "words": {
     "applies": [
       "h1"
@@ -260,5 +260,5 @@
       "text": "Implement Audit Trails for System Components"
     }
   ],
-  "html": "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 10.2.7</li>\r\n  </ul>\r\n  <h1>What to Check For</h1>\r\n  <p>Creation and deletion of logical system objects, such as user accounts or workstations, should be logged.</p>\r\n  <h1>How to Check</h1>\r\n  <p>This functionality should be implemented by the centralized log server solution. Examine the logs to verify that creation and deletion of system objects events are logged.&amp;nbsp;&amp;nbsp;</p>\r\n  <h1>How to Fix</h1>\r\n  <p>This functionality should be implemented by the centralized log server solution. Configure the log server to log creation and deletion of system objects by following the vendor's instructions.&amp;nbsp;</p>\r\n  <h1>Related Items</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/7a956911-f547-4f65-88bb-f4a42ea349f3\">Implement Audit Trails for System Components</a>\r\n    </li>\r\n  </ul>"
+  "html": "<h1>Applies to</h1>\n  <ul>\n    <li>PCI DSS Requirement 10.2.7</li>\n  </ul>\n  <h1>What to Check For</h1>\n  <p>Creation and deletion of logical system objects, such as user accounts or workstations, should be logged.</p>\n  <h1>How to Check</h1>\n  <p>This functionality should be implemented by the centralized log server solution. Examine the logs to verify that creation and deletion of system objects events are logged.&amp;nbsp;&amp;nbsp;</p>\n  <h1>How to Fix</h1>\n  <p>This functionality should be implemented by the centralized log server solution. Configure the log server to log creation and deletion of system objects by following the vendor's instructions.&amp;nbsp;</p>\n  <h1>Related Items</h1>\n  <ul>\n    <li>\n      <a href=\"/article/7a956911-f547-4f65-88bb-f4a42ea349f3\">Implement Audit Trails for System Components</a>\n    </li>\n  </ul>"
 }

@@ -1,6 +1,6 @@
 {
   "id": "940d6e95-fc25-4e9d-8545-2262ed6e99ba",
-  "checksum": "d4787bbd88ebcfd673ace457016fde5265019470",
+  "checksum": "fe8d9a9c91d79586f67233c7788fce3d87e444d8",
   "words": {
     "315": [
       "p",
@@ -134,9 +134,6 @@
       "p",
       "p",
       "p",
-      "ul",
-      "li",
-      "a",
       "ul",
       "li",
       "a"
@@ -486,15 +483,9 @@
     "loading": [
       "ul",
       "li",
-      "a",
-      "ul",
-      "li",
       "a"
     ],
     "libraries": [
-      "ul",
-      "li",
-      "a",
       "ul",
       "li",
       "a"
@@ -502,15 +493,9 @@
     "from": [
       "ul",
       "li",
-      "a",
-      "ul",
-      "li",
       "a"
     ],
     "urls": [
-      "ul",
-      "li",
-      "a",
       "ul",
       "li",
       "a"
@@ -571,9 +556,6 @@
     ],
     "disabled": [
       "ul",
-      "ul",
-      "li",
-      "a",
       "li",
       "a"
     ],
@@ -833,7 +815,7 @@
       "Use Positive Input Validation",
       "Disable Dangerous Functions\n Disable Loading Libraries from URLs",
       "Positive Input Validation Is Used",
-      "Dangerous Functions Are Disabled\n Loading Libraries from URLs Is Disabled",
+      "Dangerous Functions Are Disabled",
       "For more information about code injection, see http://en.wikipedia.org/wiki/Code_injection"
     ],
     "li": [
@@ -842,7 +824,6 @@
       "Disable Loading Libraries from URLs",
       "Positive Input Validation Is Used",
       "Dangerous Functions Are Disabled",
-      "Loading Libraries from URLs Is Disabled",
       "For more information about code injection, see http://en.wikipedia.org/wiki/Code_injection"
     ],
     "a": [
@@ -851,7 +832,6 @@
       "Disable Loading Libraries from URLs",
       "Positive Input Validation Is Used",
       "Dangerous Functions Are Disabled",
-      "Loading Libraries from URLs Is Disabled",
       "COD 315 Creating Secure PHP Code",
       "http://en.wikipedia.org/wiki/Code_injection"
     ],
@@ -884,10 +864,6 @@
       "text": "Dangerous Functions Are Disabled"
     },
     {
-      "href": "b90c1869-82db-470a-9b22-15d7adfdb035",
-      "text": "Loading Libraries from URLs Is Disabled"
-    },
-    {
       "href": "https://teamprofessor.absorbtraining.com/ninja/#/courses/course/127620",
       "text": "COD 315 Creating Secure PHP Code"
     },
@@ -896,5 +872,5 @@
       "text": "http://en.wikipedia.org/wiki/Code_injection"
     }
   ],
-  "html": "<h1>Description</h1><p>Scripting languages often have functions, such as eval(), that allow interpreting a string or a file as a part of the application. The danger of using these functions is that, under certain conditions, an attacker may be able to supply malicious code and it will be executed as a part of the application. This gives the attacker full control of the application. Code injection vulnerabilities affect all scripting languages, but typically occur in web applications written in PHP. \n</p><h1>Impact</h1><p>An attacker gains full control of the application and the ability to use any operating system functions that are available to the scripting environment. Code injection is one of the most dangerous vulnerability types, if not the most dangerous. On top of being extremely powerful, code injection vulnerabilities are typically easy to exploit, especially in web applications. \n</p><h1>Countermeasures</h1><p>To prevent code injection vulnerabilities, validate all input and avoid using dangerous APIs. \n</p><p>\nValidate all input:</p><ul>\n<li> <a href=\"c0a4f56c-1e8c-4d3a-97e2-fc9e969d5d52\">Use Positive Input Validation</a></li>\n</ul><p>\nAvoid using dangerous APIs:</p><ul>\n<li> <a href=\"fe289976-08f4-46b3-a6ec-b80828d090b6\">Disable Dangerous Functions</a></li>\n<li> <a href=\"f54eacd2-ec2f-47a8-9639-67c01a1fcdd0\">Disable Loading Libraries from URLs</a></li>\n</ul><h1>Application Check</h1><p>To check your application for code injection, find all the calls to dangerous functions and verify that data passed to them is sufficiently validated, and ensure that dangerous APIs are avoided.\n</p><p>\nAll input is validated:</p><ul>\n<li> <a href=\"d4129497-3a66-44d1-881e-e6f004af2e0d\">Positive Input Validation Is Used</a></li>\n</ul><p>\nDangerous APIs are avoided:</p><ul>\n<li> <a href=\"50ff859f-1562-4b27-b230-1e3d5bd8a3b9\">Dangerous Functions Are Disabled</a></li>\n<li> <a href=\"b90c1869-82db-470a-9b22-15d7adfdb035\">Loading Libraries from URLs Is Disabled</a></li>\n</ul><h1>Computer Based Training Links</h1><p>Use the following Computer Based Training courses for more background information about this type of vulnerabilities.\n</p><h2>Creating Secure PHP Code</h2><p>This course introduces best practices for developing secure PHP code. The course also identifies common PHP vulnerabilities that attackers can exploit to gain access to critical information. In addition, the course explains mitigation techniques that you can use to avoid common PHP vulnerabilities and write secure code. After completing this course, you will be able to describe the best practices for developing secure PHP code, explain common PHP vulnerabilities and learn mitigation techniques to avoid common PHP vulnerabilities and write secure code.\n</p><p>\n<a href=\"https://teamprofessor.absorbtraining.com/ninja/#/courses/course/127620\">COD 315 Creating Secure PHP Code</a>\n</p><p>\n<em>Valid login credentials and enrollment in the course itself are required to access Team Professor content. If you need login credentials, please contact support@securityinnovation.com for help.</em>\n</p><h1>Additional Resources</h1><ul><li> For more information about code injection, see <a href=\"http://en.wikipedia.org/wiki/Code_injection\">http://en.wikipedia.org/wiki/Code_injection</a></li></ul>"
+  "html": "<h1>Description</h1><p>Scripting languages often have functions, such as eval(), that allow interpreting a string or a file as a part of the application. The danger of using these functions is that, under certain conditions, an attacker may be able to supply malicious code and it will be executed as a part of the application. This gives the attacker full control of the application. Code injection vulnerabilities affect all scripting languages, but typically occur in web applications written in PHP. \n</p><h1>Impact</h1><p>An attacker gains full control of the application and the ability to use any operating system functions that are available to the scripting environment. Code injection is one of the most dangerous vulnerability types, if not the most dangerous. On top of being extremely powerful, code injection vulnerabilities are typically easy to exploit, especially in web applications. \n</p><h1>Countermeasures</h1><p>To prevent code injection vulnerabilities, validate all input and avoid using dangerous APIs. \n</p><p>\nValidate all input:</p><ul>\n<li> <a href=\"c0a4f56c-1e8c-4d3a-97e2-fc9e969d5d52\">Use Positive Input Validation</a></li>\n</ul><p>\nAvoid using dangerous APIs:</p><ul>\n<li> <a href=\"fe289976-08f4-46b3-a6ec-b80828d090b6\">Disable Dangerous Functions</a></li>\n<li> <a href=\"f54eacd2-ec2f-47a8-9639-67c01a1fcdd0\">Disable Loading Libraries from URLs</a></li>\n</ul><h1>Application Check</h1><p>To check your application for code injection, find all the calls to dangerous functions and verify that data passed to them is sufficiently validated, and ensure that dangerous APIs are avoided.\n</p><p>\nAll input is validated:</p><ul>\n<li> <a href=\"d4129497-3a66-44d1-881e-e6f004af2e0d\">Positive Input Validation Is Used</a></li>\n</ul><p>\nDangerous APIs are avoided:</p><ul>\n<li> <a href=\"50ff859f-1562-4b27-b230-1e3d5bd8a3b9\">Dangerous Functions Are Disabled</a></li>\n</ul><h1>Computer Based Training Links</h1><p>Use the following Computer Based Training courses for more background information about this type of vulnerabilities.\n</p><h2>Creating Secure PHP Code</h2><p>This course introduces best practices for developing secure PHP code. The course also identifies common PHP vulnerabilities that attackers can exploit to gain access to critical information. In addition, the course explains mitigation techniques that you can use to avoid common PHP vulnerabilities and write secure code. After completing this course, you will be able to describe the best practices for developing secure PHP code, explain common PHP vulnerabilities and learn mitigation techniques to avoid common PHP vulnerabilities and write secure code.\n</p><p>\n<a href=\"https://teamprofessor.absorbtraining.com/ninja/#/courses/course/127620\">COD 315 Creating Secure PHP Code</a>\n</p><p>\n<em>Valid login credentials and enrollment in the course itself are required to access Team Professor content. If you need login credentials, please contact support@securityinnovation.com for help.</em>\n</p><h1>Additional Resources</h1><ul><li> For more information about code injection, see <a href=\"http://en.wikipedia.org/wiki/Code_injection\">http://en.wikipedia.org/wiki/Code_injection</a></li></ul>"
 }

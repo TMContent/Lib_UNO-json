@@ -1,6 +1,6 @@
 {
   "id": "86c5f531-b5e6-4761-8ed3-e44057c80bf8",
-  "checksum": "956a57ce614ebe74658e16b53d1f638e3c92957b",
+  "checksum": "0eb24f877be3644ff009d1833217d83653655b16",
   "words": {
     "35": [
       "ul",
@@ -290,7 +290,7 @@
       "Additional Resources"
     ],
     "ul": [
-      "Microsoft® Windows Communication Foundation (WCF) 3.5 \r\nMicrosoft Visual Studio® 2008",
+      "Microsoft® Windows Communication Foundation (WCF) 3.5 \nMicrosoft Visual Studio® 2008",
       "For more information see “How to: Create a Stateful Security Context Token for a Secure Session“ at http://msdn.microsoft.com/en-us/library/ms731814.aspx"
     ],
     "li": [
@@ -332,5 +332,5 @@
       "text": "http://msdn.microsoft.com/en-us/library/ms731814.aspx"
     }
   ],
-  "html": "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>Microsoft® Windows Communication Foundation (WCF) 3.5 \r\n<li>Microsoft Visual Studio® 2008</li></li>\r\n  </ul>\r\n  <h1>Description</h1>\r\n  <p>Secure conversations are turned on by default for all bindings that support ws-security. This includes wsHttpBinding, netTcpBinding, netMsmqBinding. If you are using a custom binding, turn on secure conversations with the <strong>authenticationMode</strong> attribute.</p>\r\n  <pre>  &lt;customBinding&gt; <br />    &lt;binding name=\"ServiceBinding\"&gt; <br />      &lt;security authenticationMode=\"SecureConversation\" <br />           requireSecurityContextCancellation =\"false\"&gt; <br />         &lt;secureConversationBootstrap authenticationMode=\"MutualCertificate\"&gt; <br />         &lt;/secureConversationBootstrap&gt; <br />      &lt;/security&gt; <br />      &lt;httpTransport/&gt; <br />    &lt;/binding&gt; <br />   &lt;/customBinding&gt;</pre>\r\n  <h1>Additional Resources</h1>\r\n  <ul>\r\n    <li>For more information see “How to: Create a Stateful Security Context Token for a Secure Session“ at <a href=\"http://msdn.microsoft.com/en-us/library/ms731814.aspx\">http://msdn.microsoft.com/en-us/library/ms731814.aspx</a></li>\r\n  </ul>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
+  "html": "<h1>Applies to</h1>\n  <ul>\n    <li>Microsoft® Windows Communication Foundation (WCF) 3.5 \n<li>Microsoft Visual Studio® 2008</li></li>\n  </ul>\n  <h1>Description</h1>\n  <p>Secure conversations are turned on by default for all bindings that support ws-security. This includes wsHttpBinding, netTcpBinding, netMsmqBinding. If you are using a custom binding, turn on secure conversations with the <strong>authenticationMode</strong> attribute.</p>\n  <pre>  &lt;customBinding&gt; <br />    &lt;binding name=\"ServiceBinding\"&gt; <br />      &lt;security authenticationMode=\"SecureConversation\" <br />           requireSecurityContextCancellation =\"false\"&gt; <br />         &lt;secureConversationBootstrap authenticationMode=\"MutualCertificate\"&gt; <br />         &lt;/secureConversationBootstrap&gt; <br />      &lt;/security&gt; <br />      &lt;httpTransport/&gt; <br />    &lt;/binding&gt; <br />   &lt;/customBinding&gt;</pre>\n  <h1>Additional Resources</h1>\n  <ul>\n    <li>For more information see “How to: Create a Stateful Security Context Token for a Secure Session“ at <a href=\"http://msdn.microsoft.com/en-us/library/ms731814.aspx\">http://msdn.microsoft.com/en-us/library/ms731814.aspx</a></li>\n  </ul>\n  <hr />\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
 }

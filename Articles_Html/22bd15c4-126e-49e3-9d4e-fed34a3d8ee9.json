@@ -1,6 +1,6 @@
 {
   "id": "22bd15c4-126e-49e3-9d4e-fed34a3d8ee9",
-  "checksum": "6e9d97e745b4f7254167937568d28bdf40418653",
+  "checksum": "2a6ea0700f5ce7428f307c76315772318a30700c",
   "words": {
     "description": [
       "h2"
@@ -914,7 +914,7 @@
       "ul",
       "li"
     ],
-    "see\rhttp://cwe.mitre.org/top25/index.html#cwe-134": [
+    "seehttp://cwe.mitre.org/top25/index.html#cwe-134": [
       "ul",
       "li"
     ],
@@ -935,26 +935,26 @@
     ],
     "p": [
       "The software uses externally-controlled format strings in printf-style functions, which can lead to buffer overflows or data representation problems.",
-      "The mantra is that successful relationships depend on communicating clearly, and this applies to software, too. Format strings are often used to send or receive well-formed data. By controlling a format string, the attacker can control the input or output\r\n in unexpected ways - sometimes, even, to execute code.",
+      "The mantra is that successful relationships depend on communicating clearly, and this applies to software, too. Format strings are often used to send or receive well-formed data. By controlling a format string, the attacker can control the input or output\n in unexpected ways - sometimes, even, to execute code.",
       "The following detection methods for uncontrolled format string vulnerabilities are available:",
       "Automated Static Analysis. This weakness can often be detected using automated static analysis tools. Many modern tools use data flow analysis or constraint-based techniques to minimize the number of false positives.",
-      "Black Box. Since format strings often occur in rarely-occurring erroneous conditions (e.g. for error message logging), they can be difficult to detect using black box methods. It is highly likely that many latent issues exist in executables\r\n that do not have associated source code (or equivalent source.",
+      "Black Box. Since format strings often occur in rarely-occurring erroneous conditions (e.g. for error message logging), they can be difficult to detect using black box methods. It is highly likely that many latent issues exist in executables\n that do not have associated source code (or equivalent source.",
       "The following mitigation methods are available for uncontrolled format string vulnerabilities:",
       "Choose a language that is not subject to this flaw.",
-      "Use static format strings. Ensure that all format string functions are passed a static string which cannot be controlled by the user and that the proper number of arguments are always sent to that function as well. If at all possible, use\r\n functions that do not support the %n operator in format strings.",
+      "Use static format strings. Ensure that all format string functions are passed a static string which cannot be controlled by the user and that the proper number of arguments are always sent to that function as well. If at all possible, use\n functions that do not support the %n operator in format strings.",
       "Heed the warnings of compilers and linkers, since they may alert you to improper usage."
     ],
     "ol": [
-      "Automated Static Analysis. This weakness can often be detected using automated static analysis tools. Many modern tools use data flow analysis or constraint-based techniques to minimize the number of false positives.\r\n    \r\n    \r\n      \r\n        Black Box. Since format strings often occur in rarely-occurring erroneous conditions (e.g. for error message logging), they can be difficult to detect using black box methods. It is highly likely that many latent issues exist in executables\r\n that do not have associated source code (or equivalent source.",
-      "Choose a language that is not subject to this flaw.\r\n      \r\n    \r\n    \r\n      \r\n        Use static format strings. Ensure that all format string functions are passed a static string which cannot be controlled by the user and that the proper number of arguments are always sent to that function as well. If at all possible, use\r\n functions that do not support the %n operator in format strings.\r\n    \r\n    \r\n      \r\n        Heed the warnings of compilers and linkers, since they may alert you to improper usage."
+      "Automated Static Analysis. This weakness can often be detected using automated static analysis tools. Many modern tools use data flow analysis or constraint-based techniques to minimize the number of false positives.\n    \n    \n      \n        Black Box. Since format strings often occur in rarely-occurring erroneous conditions (e.g. for error message logging), they can be difficult to detect using black box methods. It is highly likely that many latent issues exist in executables\n that do not have associated source code (or equivalent source.",
+      "Choose a language that is not subject to this flaw.\n      \n    \n    \n      \n        Use static format strings. Ensure that all format string functions are passed a static string which cannot be controlled by the user and that the proper number of arguments are always sent to that function as well. If at all possible, use\n functions that do not support the %n operator in format strings.\n    \n    \n      \n        Heed the warnings of compilers and linkers, since they may alert you to improper usage."
     ],
     "li": [
       "Automated Static Analysis. This weakness can often be detected using automated static analysis tools. Many modern tools use data flow analysis or constraint-based techniques to minimize the number of false positives.",
-      "Black Box. Since format strings often occur in rarely-occurring erroneous conditions (e.g. for error message logging), they can be difficult to detect using black box methods. It is highly likely that many latent issues exist in executables\r\n that do not have associated source code (or equivalent source.",
+      "Black Box. Since format strings often occur in rarely-occurring erroneous conditions (e.g. for error message logging), they can be difficult to detect using black box methods. It is highly likely that many latent issues exist in executables\n that do not have associated source code (or equivalent source.",
       "Choose a language that is not subject to this flaw.",
-      "Use static format strings. Ensure that all format string functions are passed a static string which cannot be controlled by the user and that the proper number of arguments are always sent to that function as well. If at all possible, use\r\n functions that do not support the %n operator in format strings.",
+      "Use static format strings. Ensure that all format string functions are passed a static string which cannot be controlled by the user and that the proper number of arguments are always sent to that function as well. If at all possible, use\n functions that do not support the %n operator in format strings.",
       "Heed the warnings of compilers and linkers, since they may alert you to improper usage.",
-      "For more information about uncontrolled format string vulnerabilities, please see\r\nhttp://cwe.mitre.org/top25/index.html#CWE-134"
+      "For more information about uncontrolled format string vulnerabilities, please see\nhttp://cwe.mitre.org/top25/index.html#CWE-134"
     ],
     "strong": [
       "Automated Static Analysis.",
@@ -967,7 +967,7 @@
       "%n"
     ],
     "ul": [
-      "For more information about uncontrolled format string vulnerabilities, please see\r\nhttp://cwe.mitre.org/top25/index.html#CWE-134"
+      "For more information about uncontrolled format string vulnerabilities, please see\nhttp://cwe.mitre.org/top25/index.html#CWE-134"
     ],
     "a": [
       "http://cwe.mitre.org/top25/index.html#CWE-134"
@@ -979,5 +979,5 @@
       "text": "http://cwe.mitre.org/top25/index.html#CWE-134"
     }
   ],
-  "html": "<h2>Description</h2>\r\n  <p>The software uses externally-controlled format strings in printf-style functions, which can lead to buffer overflows or data representation problems.</p>\r\n  <h2>Discussion</h2>\r\n  <p>The mantra is that successful relationships depend on communicating clearly, and this applies to software, too. Format strings are often used to send or receive well-formed data. By controlling a format string, the attacker can control the input or output\r\n in unexpected ways - sometimes, even, to execute code.</p>\r\n  <h2>Detection</h2>\r\n  <p>The following detection methods for uncontrolled format string vulnerabilities are available:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Automated Static Analysis.</strong> This weakness can often be detected using automated static analysis tools. Many modern tools use data flow analysis or constraint-based techniques to minimize the number of false positives.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Black Box.</strong> Since format strings often occur in rarely-occurring erroneous conditions (e.g. for error message logging), they can be difficult to detect using black box methods. It is highly likely that many latent issues exist in executables\r\n that do not have associated source code (or equivalent source.</p>\r\n    </li>\r\n  </ol>\r\n  <h2>Mitigation</h2>\r\n  <p>The following mitigation methods are available for uncontrolled format string vulnerabilities:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Choose a language that is not subject to this flaw.</strong>\r\n      </p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Use static format strings. </strong>Ensure that all format string functions are passed a static string which cannot be controlled by the user and that the proper number of arguments are always sent to that function as well. If at all possible, use\r\n functions that do not support the <em>%n</em> operator in format strings.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Heed the warnings of compilers and linkers, since they may alert you to improper usage.</strong>\r\n      </p>\r\n    </li>\r\n  </ol>\r\n  <h2>Additional Information</h2>\r\n  <ul>\r\n    <li>For more information about uncontrolled format string vulnerabilities, please see\r\n<a href=\"http://cwe.mitre.org/top25/index.html#CWE-134\">http://cwe.mitre.org/top25/index.html#CWE-134</a></li>\r\n  </ul>"
+  "html": "<h2>Description</h2>\n  <p>The software uses externally-controlled format strings in printf-style functions, which can lead to buffer overflows or data representation problems.</p>\n  <h2>Discussion</h2>\n  <p>The mantra is that successful relationships depend on communicating clearly, and this applies to software, too. Format strings are often used to send or receive well-formed data. By controlling a format string, the attacker can control the input or output\n in unexpected ways - sometimes, even, to execute code.</p>\n  <h2>Detection</h2>\n  <p>The following detection methods for uncontrolled format string vulnerabilities are available:</p>\n  <ol>\n    <li>\n      <p>\n        <strong>Automated Static Analysis.</strong> This weakness can often be detected using automated static analysis tools. Many modern tools use data flow analysis or constraint-based techniques to minimize the number of false positives.</p>\n    </li>\n    <li>\n      <p>\n        <strong>Black Box.</strong> Since format strings often occur in rarely-occurring erroneous conditions (e.g. for error message logging), they can be difficult to detect using black box methods. It is highly likely that many latent issues exist in executables\n that do not have associated source code (or equivalent source.</p>\n    </li>\n  </ol>\n  <h2>Mitigation</h2>\n  <p>The following mitigation methods are available for uncontrolled format string vulnerabilities:</p>\n  <ol>\n    <li>\n      <p>\n        <strong>Choose a language that is not subject to this flaw.</strong>\n      </p>\n    </li>\n    <li>\n      <p>\n        <strong>Use static format strings. </strong>Ensure that all format string functions are passed a static string which cannot be controlled by the user and that the proper number of arguments are always sent to that function as well. If at all possible, use\n functions that do not support the <em>%n</em> operator in format strings.</p>\n    </li>\n    <li>\n      <p>\n        <strong>Heed the warnings of compilers and linkers, since they may alert you to improper usage.</strong>\n      </p>\n    </li>\n  </ol>\n  <h2>Additional Information</h2>\n  <ul>\n    <li>For more information about uncontrolled format string vulnerabilities, please see\n<a href=\"http://cwe.mitre.org/top25/index.html#CWE-134\">http://cwe.mitre.org/top25/index.html#CWE-134</a></li>\n  </ul>"
 }

@@ -1,6 +1,6 @@
 {
   "id": "63af2003-44c3-41f1-b4a9-24b143cb5ed8",
-  "checksum": "d5896b02667ca9f43d779cd7504e074503b6bd9e",
+  "checksum": "6dec1895826b53d1475acd83d790037a601cdfff",
   "words": {
     "description": [
       "h1"
@@ -372,5 +372,5 @@
     ]
   },
   "links": [],
-  "html": "<h1>Description</h1>\r\n  <p>You can use APTCA to override the implicit link demand for full trust that is placed on every publicly accessible member of a strong-named assembly. APTCA is an assembly-level attribute, as shown in the following code example. </p>\r\n  <pre> &#91;assembly: AllowPartiallyTrustedCallersAttribute()&#93;  </pre>\r\n  <p>You should use APTCA only when necessary because APTCA increases the attack surface and exposes your code to partial trust callers. </p>\r\n  <p>Use APTCA only if you specifically want partially trusted callers to use your strong-named assembly. For example, you might need an application running on a file share to access your assembly located in the global assembly cache. Also, only use APTCA if you have performed a thorough security code review, and your code has been rigorously audited for security vulnerabilities. Examine the resource access and other privileged operations performed by your assembly, and then consider authorizing access to these operations by using other code access security demands. </p>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
+  "html": "<h1>Description</h1>\n  <p>You can use APTCA to override the implicit link demand for full trust that is placed on every publicly accessible member of a strong-named assembly. APTCA is an assembly-level attribute, as shown in the following code example. </p>\n  <pre> &#91;assembly: AllowPartiallyTrustedCallersAttribute()&#93;  </pre>\n  <p>You should use APTCA only when necessary because APTCA increases the attack surface and exposes your code to partial trust callers. </p>\n  <p>Use APTCA only if you specifically want partially trusted callers to use your strong-named assembly. For example, you might need an application running on a file share to access your assembly located in the global assembly cache. Also, only use APTCA if you have performed a thorough security code review, and your code has been rigorously audited for security vulnerabilities. Examine the resource access and other privileged operations performed by your assembly, and then consider authorizing access to these operations by using other code access security demands. </p>\n  <hr />\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
 }

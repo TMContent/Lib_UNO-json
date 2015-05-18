@@ -1,28 +1,16 @@
 {
   "id": "cd6ce120-b17e-4fac-b390-b5f804fc7e23",
-  "checksum": "497bf952b069e2146836bbdb14a22ab2c1b43a6e",
+  "checksum": "550e6fd5f814269f30b4892f0e977e669ff3a731",
   "words": {
-    "40": [
-      "ul",
-      "li"
-    ],
-    "applies": [
+    "what": [
       "h1"
     ],
     "to": [
-      "h1",
       "h1",
       "p",
       "p",
       "p",
       "p"
-    ],
-    "aspnet": [
-      "ul",
-      "li"
-    ],
-    "what": [
-      "h1"
     ],
     "do": [
       "h1"
@@ -31,18 +19,15 @@
       "p",
       "title"
     ],
-    "ssl": [
+    "tls": [
       "p",
       "p",
       "p",
       "p",
       "ol",
       "ol",
-      "ol",
       "li",
       "li",
-      "li",
-      "p",
       "p",
       "p",
       "strong",
@@ -312,6 +297,7 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "li",
@@ -325,6 +311,8 @@
       "li",
       "li",
       "li",
+      "li",
+      "p",
       "p",
       "p",
       "p",
@@ -349,6 +337,9 @@
     ],
     "\"internet": [
       "ol",
+      "ol",
+      "li",
+      "p",
       "li",
       "p"
     ],
@@ -444,11 +435,6 @@
       "p",
       "strong"
     ],
-    "the \"internet": [
-      "ol",
-      "li",
-      "p"
-    ],
     "navigate": [
       "ol",
       "li",
@@ -465,6 +451,11 @@
       "p"
     ],
     "double-click": [
+      "ol",
+      "li",
+      "p"
+    ],
+    "ssl": [
       "ol",
       "li",
       "p"
@@ -506,37 +497,32 @@
   },
   "tags": {
     "h1": [
-      "Applies To",
       "What to Do",
       "Why",
       "When",
       "How"
     ],
-    "ul": [
-      "ASP.NET 4.0"
-    ],
-    "li": [
-      "ASP.NET 4.0",
-      "Identify sensitive pages. Make a list of all pages that handle sensitive information, including all pages that use authentication or authorization features.",
-      "Enable a HTTPS binding for the site. Start the \"Internet Information Services (IIS) Manager\". Right-click on the site and select \"Edit bindings...\". Add a binding of the \"https\" type.",
-      "Enable SSL for each folder containing sensitive pages. Start the \"Internet Information Services (IIS) Manager\". Navigate the folders with sensitive pages. Double-click on the SSL icon in the right pane and enable SSL for the folder."
-    ],
     "p": [
-      "Require SSL for all private pages.",
-      "SSL should be used to protect all pages that handle sensitive data, including all pages that use authentication or authorization features, to prevent unauthorized information disclosure.",
-      "Use SSL to secure all private pages.",
-      "To enable SSL on all sensitive pages:",
+      "Require TLS for all private pages.",
+      "TLS should be used to protect all pages that handle sensitive data, including all pages that use authentication or authorization features, to prevent unauthorized information disclosure.",
+      "Use TLS to secure all private pages.",
+      "To enable TLS on all sensitive pages:",
       "Identify sensitive pages. Make a list of all pages that handle sensitive information, including all pages that use authentication or authorization features.",
       "Enable a HTTPS binding for the site. Start the \"Internet Information Services (IIS) Manager\". Right-click on the site and select \"Edit bindings...\". Add a binding of the \"https\" type.",
-      "Enable SSL for each folder containing sensitive pages. Start the \"Internet Information Services (IIS) Manager\". Navigate the folders with sensitive pages. Double-click on the SSL icon in the right pane and enable SSL for the folder."
+      "Enable TLS for each folder containing sensitive pages. Start the \"Internet Information Services (IIS) Manager\". Navigate the folders with sensitive pages. Double-click on the SSL icon in the right pane and enable TLS for the folder."
     ],
     "ol": [
-      "Identify sensitive pages. Make a list of all pages that handle sensitive information, including all pages that use authentication or authorization features.\r\n      \r\n        \r\n          Enable a HTTPS binding for the site. Start the \"Internet Information Services (IIS) Manager\". Right-click on the site and select \"Edit bindings...\". Add a binding of the \"https\" type.\r\n        \r\n          \r\n            Enable SSL for each folder containing sensitive pages. Start the \"Internet Information Services (IIS) Manager\". Navigate the folders with sensitive pages. Double-click on the SSL icon in the right pane and enable SSL for the folder."
+      "Identify sensitive pages. Make a list of all pages that handle sensitive information, including all pages that use authentication or authorization features.\n      \n        \n          Enable a HTTPS binding for the site. Start the \"Internet Information Services (IIS) Manager\". Right-click on the site and select \"Edit bindings...\". Add a binding of the \"https\" type.\n        \n          \n            Enable TLS for each folder containing sensitive pages. Start the \"Internet Information Services (IIS) Manager\". Navigate the folders with sensitive pages. Double-click on the SSL icon in the right pane and enable TLS for the folder."
+    ],
+    "li": [
+      "Identify sensitive pages. Make a list of all pages that handle sensitive information, including all pages that use authentication or authorization features.",
+      "Enable a HTTPS binding for the site. Start the \"Internet Information Services (IIS) Manager\". Right-click on the site and select \"Edit bindings...\". Add a binding of the \"https\" type.",
+      "Enable TLS for each folder containing sensitive pages. Start the \"Internet Information Services (IIS) Manager\". Navigate the folders with sensitive pages. Double-click on the SSL icon in the right pane and enable TLS for the folder."
     ],
     "strong": [
       "Identify sensitive pages.",
       "Enable a HTTPS binding for the site.",
-      "Enable SSL for each folder containing sensitive pages."
+      "Enable TLS for each folder containing sensitive pages."
     ],
     "em": [
       "Internet Information Services (IIS) Manager",
@@ -546,5 +532,5 @@
     ]
   },
   "links": [],
-  "html": "<h1>Applies To</h1>\r\n  <ul>\r\n    <li>ASP.NET 4.0</li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Require SSL for all private pages.</p>\r\n  <h1>Why</h1>\r\n  <p>SSL should be used to protect all pages that handle sensitive data, including all pages that use authentication or authorization features, to prevent unauthorized information disclosure.</p>\r\n  <h1>When</h1>\r\n  <p>Use SSL to secure all private pages.</p>\r\n  <h1>How</h1>\r\n  <p>To enable SSL on all sensitive pages:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Identify sensitive pages.</strong> Make a list of all pages that handle sensitive information, including all pages that use authentication or authorization features.</p>\r\n      <li>\r\n        <p>\r\n          <strong>Enable a HTTPS binding for the site.</strong> Start the \"<em>Internet Information Services (IIS) Manager</em>\". Right-click on the site and select \"<em>Edit bindings...</em>\". Add a binding of the \"<em>https</em>\" type.</p>\r\n        <li>\r\n          <p>\r\n            <strong>Enable SSL for each folder containing sensitive pages.</strong> Start the&nbsp;\"<em>Internet Information Services (IIS) Manager</em>\". Navigate the folders with sensitive pages. Double-click on the SSL icon in the right pane and enable SSL for the folder. </p>\r\n        </li>\r\n      </li>\r\n    </li>\r\n  </ol>"
+  "html": "<h1>What to Do</h1>\n  <p>Require TLS for all private pages.</p>\n  <h1>Why</h1>\n  <p>TLS should be used to protect all pages that handle sensitive data, including all pages that use authentication or authorization features, to prevent unauthorized information disclosure.</p>\n  <h1>When</h1>\n  <p>Use TLS to secure all private pages.</p>\n  <h1>How</h1>\n  <p>To enable TLS on all sensitive pages:</p>\n  <ol>\n    <li>\n      <p>\n        <strong>Identify sensitive pages.</strong> Make a list of all pages that handle sensitive information, including all pages that use authentication or authorization features.</p>\n      <li>\n        <p>\n          <strong>Enable a HTTPS binding for the site.</strong> Start the \"<em>Internet Information Services (IIS) Manager</em>\". Right-click on the site and select \"<em>Edit bindings...</em>\". Add a binding of the \"<em>https</em>\" type.</p>\n        <li>\n          <p>\n            <strong>Enable TLS for each folder containing sensitive pages.</strong> Start the \"<em>Internet Information Services (IIS) Manager</em>\". Navigate the folders with sensitive pages. Double-click on the SSL icon in the right pane and enable TLS for the folder. </p>\n        </li>\n      </li>\n    </li>\n  </ol>"
 }

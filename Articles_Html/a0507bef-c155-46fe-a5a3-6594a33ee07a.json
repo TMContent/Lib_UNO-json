@@ -1,6 +1,6 @@
 {
   "id": "a0507bef-c155-46fe-a5a3-6594a33ee07a",
-  "checksum": "3ed99736892b004400fef1b078be21e13a644aeb",
+  "checksum": "bba4166b7829255e5612893b672494052088d224",
   "words": {
     "applies": [
       "h1"
@@ -613,25 +613,25 @@
       "How"
     ],
     "ul": [
-      "PCI DSS Requirement 7.2.1 \r\n    PCI DSS Requirement 7.2.3"
+      "PCI DSS Requirement 7.2.1 \n    PCI DSS Requirement 7.2.3"
     ],
     "li": [
       "PCI DSS Requirement 7.2.1",
       "PCI DSS Requirement 7.2.3",
       "Enable the \"deny-all\" ACL default setting on UNIX-type systems. Add the \"umask 077\" command to the login scripts for all users.",
-      "Enable the \"deny-all\" ACL default setting on Windows systems. Delete any excessive permissions by using the controls in the “Security” tab: right click on each drive, select \"Properties\", go to the \"Security\" tab, and delete all access permissions\r\n that are not explicitly authorized.",
-      "Enable the \"deny-all\" ACL default settings on other system-types. Most operating systems implement either the UNIX or the Windows type ACL system. Some network devices may have to be configured using a web interface. Follow vendor's instructions\r\n to configure ACL defaults on such devices."
+      "Enable the \"deny-all\" ACL default setting on Windows systems. Delete any excessive permissions by using the controls in the “Security” tab: right click on each drive, select \"Properties\", go to the \"Security\" tab, and delete all access permissions\n that are not explicitly authorized.",
+      "Enable the \"deny-all\" ACL default settings on other system-types. Most operating systems implement either the UNIX or the Windows type ACL system. Some network devices may have to be configured using a web interface. Follow vendor's instructions\n to configure ACL defaults on such devices."
     ],
     "p": [
       "Use a \"deny-all\" default setting for all access control systems.",
       "Access control systems should have a \"deny-all\" default to ensure that all access is explicitly authorized.",
       "Perform the following tasks to enable the \"deny-all\" default setting on access control systems:",
       "Enable the \"deny-all\" ACL default setting on UNIX-type systems. Add the \"umask 077\" command to the login scripts for all users.",
-      "Enable the \"deny-all\" ACL default setting on Windows systems. Delete any excessive permissions by using the controls in the “Security” tab: right click on each drive, select \"Properties\", go to the \"Security\" tab, and delete all access permissions\r\n that are not explicitly authorized.",
-      "Enable the \"deny-all\" ACL default settings on other system-types. Most operating systems implement either the UNIX or the Windows type ACL system. Some network devices may have to be configured using a web interface. Follow vendor's instructions\r\n to configure ACL defaults on such devices."
+      "Enable the \"deny-all\" ACL default setting on Windows systems. Delete any excessive permissions by using the controls in the “Security” tab: right click on each drive, select \"Properties\", go to the \"Security\" tab, and delete all access permissions\n that are not explicitly authorized.",
+      "Enable the \"deny-all\" ACL default settings on other system-types. Most operating systems implement either the UNIX or the Windows type ACL system. Some network devices may have to be configured using a web interface. Follow vendor's instructions\n to configure ACL defaults on such devices."
     ],
     "ol": [
-      "Enable the \"deny-all\" ACL default setting on UNIX-type systems. Add the \"umask 077\" command to the login scripts for all users.\r\n    \r\n    \r\n      \r\n        Enable the \"deny-all\" ACL default setting on Windows systems. Delete any excessive permissions by using the controls in the “Security” tab: right click on each drive, select \"Properties\", go to the \"Security\" tab, and delete all access permissions\r\n that are not explicitly authorized.\r\n    \r\n    \r\n      \r\n        Enable the \"deny-all\" ACL default settings on other system-types. Most operating systems implement either the UNIX or the Windows type ACL system. Some network devices may have to be configured using a web interface. Follow vendor's instructions\r\n to configure ACL defaults on such devices."
+      "Enable the \"deny-all\" ACL default setting on UNIX-type systems. Add the \"umask 077\" command to the login scripts for all users.\n    \n    \n      \n        Enable the \"deny-all\" ACL default setting on Windows systems. Delete any excessive permissions by using the controls in the “Security” tab: right click on each drive, select \"Properties\", go to the \"Security\" tab, and delete all access permissions\n that are not explicitly authorized.\n    \n    \n      \n        Enable the \"deny-all\" ACL default settings on other system-types. Most operating systems implement either the UNIX or the Windows type ACL system. Some network devices may have to be configured using a web interface. Follow vendor's instructions\n to configure ACL defaults on such devices."
     ],
     "strong": [
       "Enable the \"deny-all\" ACL default setting on UNIX-type systems.",
@@ -640,5 +640,5 @@
     ]
   },
   "links": [],
-  "html": "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 7.2.1 </li>\r\n    <li>PCI DSS Requirement 7.2.3</li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Use a \"deny-all\" default setting for all access control systems.</p>\r\n  <h1>Why</h1>\r\n  <p>Access control systems should have a \"deny-all\" default to ensure that all access is explicitly authorized.</p>\r\n  <h1>How</h1>\r\n  <p>Perform the following tasks to enable the \"deny-all\" default setting on access control systems:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Enable the \"deny-all\" ACL default setting on UNIX-type systems.</strong> Add the \"umask 077\" command to the login scripts for all users.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Enable the \"deny-all\" ACL default setting on Windows systems.</strong> Delete any excessive permissions by using the controls in the “Security” tab: right click on each drive, select \"Properties\", go to the \"Security\" tab, and delete all access permissions\r\n that are not explicitly authorized.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Enable the \"deny-all\" ACL default settings on other system-types.</strong> Most operating systems implement either the UNIX or the Windows type ACL system. Some network devices may have to be configured using a web interface. Follow vendor's instructions\r\n to configure ACL defaults on such devices.</p>\r\n    </li>\r\n  </ol>"
+  "html": "<h1>Applies to</h1>\n  <ul>\n    <li>PCI DSS Requirement 7.2.1 </li>\n    <li>PCI DSS Requirement 7.2.3</li>\n  </ul>\n  <h1>What to Do</h1>\n  <p>Use a \"deny-all\" default setting for all access control systems.</p>\n  <h1>Why</h1>\n  <p>Access control systems should have a \"deny-all\" default to ensure that all access is explicitly authorized.</p>\n  <h1>How</h1>\n  <p>Perform the following tasks to enable the \"deny-all\" default setting on access control systems:</p>\n  <ol>\n    <li>\n      <p>\n        <strong>Enable the \"deny-all\" ACL default setting on UNIX-type systems.</strong> Add the \"umask 077\" command to the login scripts for all users.</p>\n    </li>\n    <li>\n      <p>\n        <strong>Enable the \"deny-all\" ACL default setting on Windows systems.</strong> Delete any excessive permissions by using the controls in the “Security” tab: right click on each drive, select \"Properties\", go to the \"Security\" tab, and delete all access permissions\n that are not explicitly authorized.</p>\n    </li>\n    <li>\n      <p>\n        <strong>Enable the \"deny-all\" ACL default settings on other system-types.</strong> Most operating systems implement either the UNIX or the Windows type ACL system. Some network devices may have to be configured using a web interface. Follow vendor's instructions\n to configure ACL defaults on such devices.</p>\n    </li>\n  </ol>"
 }

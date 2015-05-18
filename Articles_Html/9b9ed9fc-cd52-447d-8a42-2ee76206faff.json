@@ -1,6 +1,6 @@
 {
   "id": "9b9ed9fc-cd52-447d-8a42-2ee76206faff",
-  "checksum": "86dcd4ffed603c2959979eb97183391a265ece13",
+  "checksum": "f4887cf050d6e533ec50d444e00dc89e03e05d0a",
   "words": {
     "what": [
       "h1"
@@ -72,7 +72,7 @@
       "li",
       "li"
     ],
-    "ensure that": [
+    "ensure&nbspthat": [
       "p"
     ],
     "any": [
@@ -540,7 +540,7 @@
       "li",
       "p"
     ],
-    "href='somelink'userinput</a> look": [
+    "href='somelink'userinput</a>&nbsp;look": [
       "ol"
     ],
     "elsewhere": [
@@ -786,7 +786,7 @@
     "fileverify": [
       "ol"
     ],
-    "all user input input": [
+    "all&nbspuser&nbsp;input&nbsp;input": [
       "ol",
       "li",
       "p",
@@ -904,7 +904,6 @@
     "client": [
       "ol",
       "li",
-      "p",
       "p"
     ],
     "if": [
@@ -950,12 +949,12 @@
       "p",
       "p"
     ],
-    "and the": [
+    "and&nbspthe": [
       "ol",
       "li",
       "p"
     ],
-    "corresponding format": [
+    "corresponding&nbspformat": [
       "ol",
       "li",
       "p"
@@ -969,7 +968,6 @@
     "into": [
       "ol",
       "li",
-      "p",
       "p"
     ],
     "early": [
@@ -1001,7 +999,7 @@
       "p",
       "p"
     ],
-    "also result": [
+    "also&nbspresult": [
       "ol",
       "li",
       "p"
@@ -1018,7 +1016,7 @@
       "p",
       "p"
     ],
-    "href='somelink'userinput</a>": [
+    "href='somelink'userinput</a>&nbsp;": [
       "li",
       "p"
     ],
@@ -1055,7 +1053,7 @@
       "p",
       "p"
     ],
-    "script": [
+    "script&nbsp;": [
       "p"
     ],
     "microsoftsecurity.applicationantixsslibrary.htmlencode": [
@@ -1065,7 +1063,7 @@
     "method": [
       "p"
     ],
-    "data  if": [
+    "data&nbsp;&nbsp;if": [
       "p"
     ],
     "write": [
@@ -1123,6 +1121,13 @@
       "p",
       "strong"
     ],
+    "&nbsp": [
+      "p",
+      "p"
+    ],
+    "client&nbsp;": [
+      "p"
+    ],
     "than": [
       "p"
     ],
@@ -1130,6 +1135,9 @@
       "p"
     ],
     "format": [
+      "p"
+    ],
+    "into&nbsp;": [
       "p"
     ],
     "also": [
@@ -1156,6 +1164,9 @@
     "guidance": [
       "p"
     ],
+    "sink]": [
+      "title"
+    ],
     "contains": [
       "title"
     ]
@@ -1168,16 +1179,16 @@
       "How to Fix"
     ],
     "p": [
-      "Ensure that any untrusted input used in the output stream is first encoded with HtmlEncode or UrlEncode.",
+      "Ensure&nbsp;that any untrusted input used in the output stream is first encoded with HtmlEncode or UrlEncode.",
       "",
       "Echoing input directly back to the user makes your application vulnerable to cross-site scripting attacks.",
       "",
       "Use the following steps to check for this problem:",
-      "Look for user supplied input inside HTML tag. Check for the existence of user supplied input inside html tags your application generates. For instance <A href='somelink'>USERINPUT</a>",
+      "Look for user supplied input inside HTML tag. Check for the existence of user supplied input inside html tags your application generates. For instance <A href='somelink'>USERINPUT</a>&nbsp;",
       "Look for user supplied input elsewhere in your application output. Check for existing user supplied input in the following locations: In the HTML tags themselves. For instance, <A href='USERINPUT'> In database tables that are later used as page content. For instance, you may find unencoded user input in a user profile stored in your database. In files that are later used as page content. For instance, you may find unencoded user input in a local configuration file.",
-      "Verify all user input input is encoded. The untrusted data should be encoded using HtmlEncode or UrlEncode. Make sure that you encode data at the last possible opportunity before the data is returned to the client. If you encode any earlier, you may not know the exact context that the data will be used in and the corresponding format you need to encode into. Early encoding of some data can also result in double encoding problems.",
-      "Encode untrusted data ensures that it is treated as literal text and not as script.  You can use the Microsoft.Security.ApplicationAntiXSSLibrary.HtmlEncode method to encode untrusted data.  If you write URLs that might contain unsafe characters because they have been constructed from input data or data from a shared database, use Microsoft.Security.ApplicationAntiXSSLibrary.UrlEncode to make them safe.",
-      "Note     Make sure that you encode data at the last possible opportunity before the data is returned to the client.  If you encode any earlier than this, you may not know the exact context that the data will be used in, and hence the format you need to encode into.  Also, early encoding of some data can result in double encoding problems.",
+      "Verify all&nbsp;user&nbsp;input&nbsp;input is encoded. The untrusted data should be encoded using HtmlEncode or UrlEncode. Make sure that you encode data at the last possible opportunity before the data is returned to the client. If you encode any earlier, you may not know the exact context that the data will be used in and&nbsp;the corresponding&nbsp;format you need to encode into. Early encoding of some data can also&nbsp;result in double encoding problems.",
+      "Encode untrusted data ensures that it is treated as literal text and not as script.&nbsp; You can use the Microsoft.Security.ApplicationAntiXSSLibrary.HtmlEncode method to encode untrusted data.&nbsp;&nbsp;If you write URLs that might contain unsafe characters because they have been constructed from input data or data from a shared database, use Microsoft.Security.ApplicationAntiXSSLibrary.UrlEncode to make them safe.",
+      "Note &nbsp; &nbsp; Make sure that you encode data at the last possible opportunity before the data is returned to the client.&nbsp; If you encode any earlier than this, you may not know the exact context that the data will be used in, and hence the format you need to encode into.&nbsp; Also, early encoding of some data can result in double encoding problems.",
       "Adapted from Microsoft patterns & practices guidance."
     ],
     "strong": [
@@ -1185,7 +1196,7 @@
       "UrlEncode",
       "Look for user supplied input inside HTML tag.",
       "Look for user supplied input elsewhere in your application output.",
-      "Verify all user input input is encoded.",
+      "Verify all&nbsp;user&nbsp;input&nbsp;input is encoded.",
       "HtmlEncode",
       "UrlEncode",
       "Note"
@@ -1195,15 +1206,15 @@
       "Echoing input directly back to the user makes your application vulnerable to cross-site scripting attacks."
     ],
     "ol": [
-      "Look for user supplied input inside HTML tag. Check for the existence of user supplied input inside html tags your application generates. For instance <A href='somelink'>USERINPUT</a> Look for user supplied input elsewhere in your application output. Check for existing user supplied input in the following locations: In the HTML tags themselves. For instance, <A href='USERINPUT'> In database tables that are later used as page content. For instance, you may find unencoded user input in a user profile stored in your database. In files that are later used as page content. For instance, you may find unencoded user input in a local configuration file.Verify all user input input is encoded. The untrusted data should be encoded using HtmlEncode or UrlEncode. Make sure that you encode data at the last possible opportunity before the data is returned to the client. If you encode any earlier, you may not know the exact context that the data will be used in and the corresponding format you need to encode into. Early encoding of some data can also result in double encoding problems."
+      "Look for user supplied input inside HTML tag. Check for the existence of user supplied input inside html tags your application generates. For instance <A href='somelink'>USERINPUT</a>&nbsp;Look for user supplied input elsewhere in your application output. Check for existing user supplied input in the following locations: In the HTML tags themselves. For instance, <A href='USERINPUT'> In database tables that are later used as page content. For instance, you may find unencoded user input in a user profile stored in your database. In files that are later used as page content. For instance, you may find unencoded user input in a local configuration file.Verify all&nbsp;user&nbsp;input&nbsp;input is encoded. The untrusted data should be encoded using HtmlEncode or UrlEncode. Make sure that you encode data at the last possible opportunity before the data is returned to the client. If you encode any earlier, you may not know the exact context that the data will be used in and&nbsp;the corresponding&nbsp;format you need to encode into. Early encoding of some data can also&nbsp;result in double encoding problems."
     ],
     "li": [
-      "Look for user supplied input inside HTML tag. Check for the existence of user supplied input inside html tags your application generates. For instance <A href='somelink'>USERINPUT</a>",
+      "Look for user supplied input inside HTML tag. Check for the existence of user supplied input inside html tags your application generates. For instance <A href='somelink'>USERINPUT</a>&nbsp;",
       "Look for user supplied input elsewhere in your application output. Check for existing user supplied input in the following locations: In the HTML tags themselves. For instance, <A href='USERINPUT'> In database tables that are later used as page content. For instance, you may find unencoded user input in a user profile stored in your database. In files that are later used as page content. For instance, you may find unencoded user input in a local configuration file.",
       "In the HTML tags themselves. For instance, <A href='USERINPUT'>",
       "In database tables that are later used as page content. For instance, you may find unencoded user input in a user profile stored in your database.",
       "In files that are later used as page content. For instance, you may find unencoded user input in a local configuration file.",
-      "Verify all user input input is encoded. The untrusted data should be encoded using HtmlEncode or UrlEncode. Make sure that you encode data at the last possible opportunity before the data is returned to the client. If you encode any earlier, you may not know the exact context that the data will be used in and the corresponding format you need to encode into. Early encoding of some data can also result in double encoding problems."
+      "Verify all&nbsp;user&nbsp;input&nbsp;input is encoded. The untrusted data should be encoded using HtmlEncode or UrlEncode. Make sure that you encode data at the last possible opportunity before the data is returned to the client. If you encode any earlier, you may not know the exact context that the data will be used in and&nbsp;the corresponding&nbsp;format you need to encode into. Early encoding of some data can also&nbsp;result in double encoding problems."
     ],
     "br": [
       "",
@@ -1221,5 +1232,5 @@
     ]
   },
   "links": [],
-  "html": "<h1>What to Check For</h1>\r\n  <p />Ensure&nbsp;that any untrusted input used in the output stream is first encoded with <strong>HtmlEncode</strong> or <strong>UrlEncode</strong>.<span><p /></span><h1>Why</h1><p /><span>Echoing input directly back to the user makes your application vulnerable to cross-site scripting attacks. <p /></span><h1>How to Check</h1><p>Use the following steps to check for this problem:</p><ol><li><p><strong>Look for user supplied input inside HTML tag. </strong>Check for the existence of user supplied input inside html tags your application generates. For instance &lt;A href='somelink'&gt;USERINPUT&lt;/a&gt;&nbsp;<br /></p></li><li><p /><strong>Look for user supplied input elsewhere in your application output. </strong>Check for existing user supplied input in the following locations: <ul><li>In the HTML tags themselves. For instance, &lt;A href='USERINPUT'&gt; </li><li>In database tables that are later used as page content. For instance, you may find unencoded user input in a user profile stored in your database. </li><li>In files that are later used as page content. For instance, you may find unencoded user input in a local configuration file.</li></ul></li><li><p><strong>Verify all&nbsp;user&nbsp;input&nbsp;input is encoded. </strong>The untrusted data should be encoded using <strong>HtmlEncode</strong> or <strong>UrlEncode</strong>. Make sure that you encode data at the last possible opportunity before the data is returned to the client. If you encode any earlier, you may not know the exact context that the data will be used in and&nbsp;the corresponding&nbsp;format you need to encode into. Early encoding of some data can also&nbsp;result in double encoding problems. </p></li></ol><h1>How to Fix</h1><p>Encode untrusted data ensures that it is treated as literal text and not as script.&nbsp; You can use the <b>Microsoft.Security.ApplicationAntiXSSLibrary.HtmlEncode</b> method to encode untrusted data.&nbsp;&nbsp;If you write URLs that might contain unsafe characters because they have been constructed from input data or data from a shared database, use <b>Microsoft.Security.ApplicationAntiXSSLibrary.UrlEncode</b> to make them safe. </p><p><strong>Note</strong> &nbsp; &nbsp; Make sure that you encode data at the last possible opportunity before the data is returned to the client.&nbsp; If you encode any earlier than this, you may not know the exact context that the data will be used in, and hence the format you need to encode into.&nbsp; Also, early encoding of some data can result in double encoding problems. </p><br /><hr /><p>Adapted from Microsoft patterns & practices guidance. </p>"
+  "html": "<h1>What to Check For</h1>\n  <p />Ensure&amp;nbsp;that any untrusted input used in the output stream is first encoded with <strong>HtmlEncode</strong> or <strong>UrlEncode</strong>.<span><p /></span><h1>Why</h1><p /><span>Echoing input directly back to the user makes your application vulnerable to cross-site scripting attacks. <p /></span><h1>How to Check</h1><p>Use the following steps to check for this problem:</p><ol><li><p><strong>Look for user supplied input inside HTML tag. </strong>Check for the existence of user supplied input inside html tags your application generates. For instance &lt;A href='somelink'&gt;USERINPUT&lt;/a&gt;&amp;nbsp;<br /></p></li><li><p /><strong>Look for user supplied input elsewhere in your application output. </strong>Check for existing user supplied input in the following locations: <ul><li>In the HTML tags themselves. For instance, &lt;A href='USERINPUT'&gt; </li><li>In database tables that are later used as page content. For instance, you may find unencoded user input in a user profile stored in your database. </li><li>In files that are later used as page content. For instance, you may find unencoded user input in a local configuration file.</li></ul></li><li><p><strong>Verify all&amp;nbsp;user&amp;nbsp;input&amp;nbsp;input is encoded. </strong>The untrusted data should be encoded using <strong>HtmlEncode</strong> or <strong>UrlEncode</strong>. Make sure that you encode data at the last possible opportunity before the data is returned to the client. If you encode any earlier, you may not know the exact context that the data will be used in and&amp;nbsp;the corresponding&amp;nbsp;format you need to encode into. Early encoding of some data can also&amp;nbsp;result in double encoding problems. </p></li></ol><h1>How to Fix</h1><p>Encode untrusted data ensures that it is treated as literal text and not as script.&amp;nbsp; You can use the <b>Microsoft.Security.ApplicationAntiXSSLibrary.HtmlEncode</b> method to encode untrusted data.&amp;nbsp;&amp;nbsp;If you write URLs that might contain unsafe characters because they have been constructed from input data or data from a shared database, use <b>Microsoft.Security.ApplicationAntiXSSLibrary.UrlEncode</b> to make them safe. </p><p><strong>Note</strong> &amp;nbsp; &amp;nbsp; Make sure that you encode data at the last possible opportunity before the data is returned to the client.&amp;nbsp; If you encode any earlier than this, you may not know the exact context that the data will be used in, and hence the format you need to encode into.&amp;nbsp; Also, early encoding of some data can result in double encoding problems. </p><br /><hr /><p>Adapted from Microsoft patterns &amp; practices guidance. </p>"
 }

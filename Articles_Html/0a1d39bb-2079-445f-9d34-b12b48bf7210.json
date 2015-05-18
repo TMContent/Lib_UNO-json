@@ -1,6 +1,6 @@
 {
   "id": "0a1d39bb-2079-445f-9d34-b12b48bf7210",
-  "checksum": "2bc6336d9f17df2f402c4fb8515eb2bac6a74023",
+  "checksum": "e72ec1217f1af5d15096f785b8631a7ae48ad334",
   "words": {
     "applies": [
       "h2"
@@ -53,8 +53,6 @@
       "li",
       "li",
       "strong",
-      "strong",
-      "strong",
       "li",
       "li",
       "li",
@@ -89,9 +87,6 @@
       "li",
       "li",
       "li",
-      "strong",
-      "strong",
-      "strong",
       "li",
       "li",
       "li",
@@ -125,7 +120,7 @@
       "li",
       "li"
     ],
-    "ssl/tls": [
+    "tls": [
       "p",
       "p",
       "p",
@@ -140,12 +135,21 @@
       "ol",
       "ol",
       "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "li",
       "li",
       "li",
       "li",
       "strong",
+      "li",
+      "li",
       "strong",
-      "li"
+      "title"
     ],
     "is": [
       "p",
@@ -276,7 +280,6 @@
       "ol",
       "li",
       "li",
-      "strong",
       "strong"
     ],
     "the": [
@@ -313,9 +316,6 @@
       "li",
       "li",
       "li",
-      "strong",
-      "strong",
-      "strong",
       "strong",
       "li",
       "li",
@@ -411,8 +411,7 @@
       "ol",
       "li",
       "ol",
-      "li",
-      "strong"
+      "li"
     ],
     "make": [
       "ol",
@@ -446,7 +445,6 @@
       "ol",
       "ol",
       "li",
-      "strong",
       "li",
       "li"
     ],
@@ -458,7 +456,6 @@
       "ol",
       "li",
       "li",
-      "strong",
       "li",
       "li"
     ],
@@ -468,9 +465,7 @@
       "ol",
       "ol",
       "li",
-      "li",
-      "strong",
-      "strong"
+      "li"
     ],
     "are": [
       "p",
@@ -479,7 +474,6 @@
       "ol",
       "ol",
       "li",
-      "strong",
       "li",
       "li"
     ],
@@ -496,8 +490,6 @@
       "ol",
       "li",
       "li",
-      "strong",
-      "strong",
       "li",
       "li",
       "li",
@@ -509,7 +501,6 @@
       "ol",
       "ol",
       "li",
-      "strong",
       "li",
       "li"
     ],
@@ -528,8 +519,7 @@
       "p",
       "p",
       "ol",
-      "li",
-      "strong"
+      "li"
     ],
     "task": [
       "p"
@@ -545,46 +535,39 @@
       "p",
       "p",
       "ol",
-      "li",
-      "strong"
+      "li"
     ],
     "links": [
       "p",
       "ol",
-      "li",
-      "strong"
+      "li"
     ],
     "at": [
       "p",
       "ol",
-      "li",
-      "strong"
+      "li"
     ],
     "bottom": [
       "p",
       "ol",
-      "li",
-      "strong"
+      "li"
     ],
     "of": [
       "p",
       "ol",
       "ol",
       "li",
-      "li",
-      "strong"
+      "li"
     ],
     "this": [
       "p",
       "ol",
-      "li",
-      "strong"
+      "li"
     ],
     "page": [
       "p",
       "ol",
-      "li",
-      "strong"
+      "li"
     ],
     "lead": [
       "p"
@@ -609,8 +592,7 @@
     "some": [
       "p",
       "ol",
-      "li",
-      "strong"
+      "li"
     ],
     "general": [
       "p"
@@ -645,19 +627,6 @@
       "ol",
       "li",
       "li"
-    ],
-    "ssl": [
-      "ol",
-      "ol",
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "li",
-      "strong",
-      "li",
-      "strong",
-      "title"
     ],
     "certificate": [
       "ol",
@@ -746,8 +715,7 @@
       "ol",
       "ol",
       "li",
-      "li",
-      "strong"
+      "li"
     ],
     "including": [
       "ol",
@@ -774,23 +742,19 @@
     ],
     "please": [
       "ol",
-      "li",
-      "strong"
+      "li"
     ],
     "see": [
       "ol",
-      "li",
-      "strong"
+      "li"
     ],
     "more": [
       "ol",
-      "li",
-      "strong"
+      "li"
     ],
     "about": [
       "ol",
-      "li",
-      "strong"
+      "li"
     ],
     "doing": [
       "ol",
@@ -837,7 +801,7 @@
       "li",
       "strong"
     ],
-    "non-ssl": [
+    "non-tls": [
       "ol",
       "ol",
       "li",
@@ -851,7 +815,7 @@
       "li",
       "strong"
     ],
-    "ssl-protected": [
+    "tls-protected": [
       "ol",
       "ol",
       "li",
@@ -872,34 +836,34 @@
     ],
     "li": [
       "Web Applications",
-      "Browse areas on the web site that require authentication. Verify that the browser displays that SSL/TLS is being used.",
-      "Examine the server configuration files. Review the web application server configuration files to make sure that SSL/TLS is properly configured and is being used.",
-      "Get valid certificates. Purchase a valid SSL certificate. You may purchase a valid SSL/TLS key from VeriSign, Thawte, or your web hosting provider. Follow the vendor's instructions for purchasing the SSL certificate. The certificate is usually a .cer file.",
+      "Browse areas on the web site that require authentication. Verify that the browser displays that TLS is being used.",
+      "Examine the server configuration files. Review the web application server configuration files to make sure that TLS is properly configured and is being used.",
+      "Get valid certificates. Purchase a valid TLS certificate. You may purchase a valid TLS key from VeriSign, Thawte, or your web hosting provider. Follow the vendor's instructions for purchasing the TLS certificate. The certificate is usually a .cer file.",
       "Identify sensitive pages. Make a list of all pages that handle sensitive information, including all pages that use authentication or authorization features.",
-      "Enable SSL/TLS on the web server. The exact instructions for enabling SSL are different for different web servers. Please, see the links at the bottom of this page for more information about enabling SSL/TLS on some common web application platforms.",
-      "Use SSL to protect the sensitive pages. The exact instructions for doing so are different for different web servers. Use the web server administration interface or edit the server configuration files to enable SSL/TLS for all folders containing sensitive pages.",
-      "Redirect non-SSL requests to SSL-protected pages. The exact instructions for doing so are different for different web servers. Use the web server administration interface or edit the server configuration files to redirect non-SSL requests to SSL-protected pages."
+      "Enable TLS on the web server. The exact instructions for enabling TLS are different for different web servers. Please, see the links at the bottom of this page for more information about enabling TLS on some common web application platforms.",
+      "Use TLS to protect the sensitive pages. The exact instructions for doing so are different for different web servers. Use the web server administration interface or edit the server configuration files to enable TLS for all folders containing sensitive pages.",
+      "Redirect non-TLS requests to TLS-protected pages. The exact instructions for doing so are different for different web servers. Use the web server administration interface or edit the server configuration files to redirect non-TLS requests to TLS-protected pages."
     ],
     "p": [
-      "Verify that SSL/TLS is used.",
-      "SSL/TLS should be used to protect all pages that handle sensitive data to protect from eavesdropping attacks.",
-      "To verify that SSL/TLS is used:",
-      "The exact instructions for enabling SSL/TLS are different for different servers. Enabling SSL/TLS is a common task and is well documented for common web server platforms. Links at the bottom of this page lead to documentation that explains how to enable SSL/TLS on different platforms. There are some general guidelines that apply to different platforms:"
+      "Verify that TLS is used.",
+      "TLS should be used to protect all pages that handle sensitive data to protect from eavesdropping attacks.",
+      "To verify that TLS is used:",
+      "The exact instructions for enabling TLS are different for different servers. Enabling TLS is a common task and is well documented for common web server platforms. Links at the bottom of this page lead to documentation that explains how to enable TLS on different platforms. There are some general guidelines that apply to different platforms:"
     ],
     "ol": [
-      "Browse areas on the web site that require authentication. Verify that the browser displays that SSL/TLS is being used.\n Examine the server configuration files. Review the web application server configuration files to make sure that SSL/TLS is properly configured and is being used.",
-      "Get valid certificates. Purchase a valid SSL certificate. You may purchase a valid SSL/TLS key from VeriSign, Thawte, or your web hosting provider. Follow the vendor's instructions for purchasing the SSL certificate. The certificate is usually a .cer file. \n Identify sensitive pages. Make a list of all pages that handle sensitive information, including all pages that use authentication or authorization features.\n Enable SSL/TLS on the web server. The exact instructions for enabling SSL are different for different web servers. Please, see the links at the bottom of this page for more information about enabling SSL/TLS on some common web application platforms.\n Use SSL to protect the sensitive pages. The exact instructions for doing so are different for different web servers. Use the web server administration interface or edit the server configuration files to enable SSL/TLS for all folders containing sensitive pages.\n Redirect non-SSL requests to SSL-protected pages. The exact instructions for doing so are different for different web servers. Use the web server administration interface or edit the server configuration files to redirect non-SSL requests to SSL-protected pages."
+      "Browse areas on the web site that require authentication. Verify that the browser displays that TLS is being used.\n Examine the server configuration files. Review the web application server configuration files to make sure that TLS is properly configured and is being used.",
+      "Get valid certificates. Purchase a valid TLS certificate. You may purchase a valid TLS key from VeriSign, Thawte, or your web hosting provider. Follow the vendor's instructions for purchasing the TLS certificate. The certificate is usually a .cer file. \n Identify sensitive pages. Make a list of all pages that handle sensitive information, including all pages that use authentication or authorization features.\n Enable TLS on the web server. The exact instructions for enabling TLS are different for different web servers. Please, see the links at the bottom of this page for more information about enabling TLS on some common web application platforms.\n Use TLS to protect the sensitive pages. The exact instructions for doing so are different for different web servers. Use the web server administration interface or edit the server configuration files to enable TLS for all folders containing sensitive pages.\n Redirect non-TLS requests to TLS-protected pages. The exact instructions for doing so are different for different web servers. Use the web server administration interface or edit the server configuration files to redirect non-TLS requests to TLS-protected pages."
     ],
     "strong": [
       "Browse areas on the web site that require authentication.",
       "Examine the server configuration files.",
       "Get valid certificates.",
       "Identify sensitive pages.",
-      "Enable SSL/TLS on the web server. The exact instructions for enabling SSL are different for different web servers. Please, see the links at the bottom of this page for more information about enabling SSL/TLS on some common web application platforms.",
-      "Use SSL to protect the sensitive pages.",
-      "Redirect non-SSL requests to SSL-protected pages."
+      "Enable TLS on the web server.",
+      "Use TLS to protect the sensitive pages.",
+      "Redirect non-TLS requests to TLS-protected pages."
     ]
   },
   "links": [],
-  "html": "<h2>Applies To</h2><ul><li> Web Applications</li>\n</ul><h2>What to Check For</h2><p>Verify that SSL/TLS is used.\n</p><h2>Why</h2><p>SSL/TLS should be used to protect all pages that handle sensitive data to protect from eavesdropping attacks.\n</p><h2>How to Check</h2><p>To verify that SSL/TLS is used:\n</p><ol>\n<li> <strong>Browse areas on the web site that require authentication.</strong> Verify that the browser displays that SSL/TLS is being used.</li>\n<li> <strong>Examine the server configuration files.</strong> Review the web application server configuration files to make sure that SSL/TLS is properly configured and is being used.</li>\n</ol><h2>How to Fix</h2><p>The exact instructions for enabling SSL/TLS are different for different servers. Enabling SSL/TLS is a common task and is well documented for common web server platforms. Links at the bottom of this page lead to documentation that explains how to enable SSL/TLS on different platforms. There are some general guidelines that apply to different platforms:\n</p><ol>\n<li> <strong>Get valid certificates.</strong> Purchase a valid SSL certificate. You may purchase a valid SSL/TLS key from VeriSign, Thawte, or your web hosting provider. Follow the vendor's instructions for purchasing the SSL certificate. The certificate is usually a .cer file. </li>\n<li> <strong>Identify sensitive pages.</strong> Make a list of all pages that handle sensitive information, including all pages that use authentication or authorization features.</li>\n<li> <strong>Enable SSL/TLS on the web server. The exact instructions for enabling SSL are different for different web servers. Please, see the links at the bottom of this page for more information about enabling SSL/TLS on some common web application platforms.</strong></li>\n<li> <strong>Use SSL to protect the sensitive pages.</strong> The exact instructions for doing so are different for different web servers. Use the web server administration interface or edit the server configuration files to enable SSL/TLS for all folders containing sensitive pages.</li>\n<li> <strong>Redirect non-SSL requests to SSL-protected pages.</strong> The exact instructions for doing so are different for different web servers. Use the web server administration interface or edit the server configuration files to redirect non-SSL requests to SSL-protected pages. </li>\n</ol>"
+  "html": "<h2>Applies To</h2><ul><li> Web Applications</li>\n</ul><h2>What to Check For</h2><p>Verify that TLS is used.\n</p><h2>Why</h2><p>TLS should be used to protect all pages that handle sensitive data to protect from eavesdropping attacks.\n</p><h2>How to Check</h2><p>To verify that TLS is used:\n</p><ol>\n<li> <strong>Browse areas on the web site that require authentication.</strong> Verify that the browser displays that TLS is being used.</li>\n<li> <strong>Examine the server configuration files.</strong> Review the web application server configuration files to make sure that TLS is properly configured and is being used.</li>\n</ol><h2>How to Fix</h2><p>The exact instructions for enabling TLS are different for different servers. Enabling TLS is a common task and is well documented for common web server platforms. Links at the bottom of this page lead to documentation that explains how to enable TLS on different platforms. There are some general guidelines that apply to different platforms:\n</p><ol>\n<li> <strong>Get valid certificates.</strong> Purchase a valid TLS certificate. You may purchase a valid TLS key from VeriSign, Thawte, or your web hosting provider. Follow the vendor's instructions for purchasing the TLS certificate. The certificate is usually a .cer file. </li>\n<li> <strong>Identify sensitive pages.</strong> Make a list of all pages that handle sensitive information, including all pages that use authentication or authorization features.</li>\n<li> <strong>Enable TLS on the web server.</strong> The exact instructions for enabling TLS are different for different web servers. Please, see the links at the bottom of this page for more information about enabling TLS on some common web application platforms.</li>\n<li> <strong>Use TLS to protect the sensitive pages.</strong> The exact instructions for doing so are different for different web servers. Use the web server administration interface or edit the server configuration files to enable TLS for all folders containing sensitive pages.</li>\n<li> <strong>Redirect non-TLS requests to TLS-protected pages.</strong> The exact instructions for doing so are different for different web servers. Use the web server administration interface or edit the server configuration files to redirect non-TLS requests to TLS-protected pages. </li>\n</ol>"
 }

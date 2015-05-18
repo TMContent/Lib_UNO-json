@@ -1,6 +1,6 @@
 {
   "id": "0b025890-f8a7-4cc1-90cb-3d7dee952e61",
-  "checksum": "c3e615103272ccbd37a933206b44d7a09e209523",
+  "checksum": "48ed5ee36be0e479eecb43414c1ba820e0ca13be",
   "words": {
     "applies": [
       "h1"
@@ -382,12 +382,12 @@
     ],
     "ul": [
       "PCI DSS Requirement 3.6.7",
-      "For more information about key management procedures, please see \r\nhttp://csrc.nist.gov &nbsp; \r\n    For more information about designing and documenting key management procedures, please see&nbsp;http://www.net-security.org/article.php?id=1185",
+      "For more information about key management procedures, please see \nhttp://csrc.nist.gov &nbsp; \n    For more information about designing and documenting key management procedures, please see&nbsp;http://www.net-security.org/article.php?id=1185",
       "Prepare the Key Management Procedures"
     ],
     "li": [
       "PCI DSS Requirement 3.6.7",
-      "For more information about key management procedures, please see \r\nhttp://csrc.nist.gov &nbsp;",
+      "For more information about key management procedures, please see \nhttp://csrc.nist.gov &nbsp;",
       "For more information about designing and documenting key management procedures, please see&nbsp;http://www.net-security.org/article.php?id=1185",
       "Prepare the Key Management Procedures"
     ],
@@ -395,7 +395,7 @@
       "Key management procedures should be implemented to prevent unauthorized key substitution.",
       "Unauthorized key substitution means that an attacker can substitute one of the authorized keys and gain access to sensitive information without raising alarm.",
       "Check the key management procedures in the information security policy to make sure there are provisions for preventing unauthorized key substitution.",
-      "Make a table of authorized keys (known as a keystore) and use only those keys for encryption.&nbsp;Whenever changes are made to the table of keys, make sure the changes are authorized.&nbsp;Document the implementation of the key table and the update mechanism in the\r\n key management procedures in the information security policy.",
+      "Make a table of authorized keys (known as a keystore) and use only those keys for encryption.&nbsp;Whenever changes are made to the table of keys, make sure the changes are authorized.&nbsp;Document the implementation of the key table and the update mechanism in the\n key management procedures in the information security policy.",
       "Prepare the Key Management Procedures"
     ],
     "a": [
@@ -407,7 +407,7 @@
   "links": [
     {
       "href": "http://csrc.nist.gov/",
-      "text": "\r\nhttp://csrc.nist.gov"
+      "text": "\nhttp://csrc.nist.gov"
     },
     {
       "href": "http://www.net-security.org/article.php?id=1185",
@@ -418,5 +418,5 @@
       "text": "Prepare the Key Management Procedures"
     }
   ],
-  "html": "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 3.6.7</li>\r\n  </ul>\r\n  <h1>What to Check For</h1>\r\n  <p>Key management procedures should be implemented to prevent unauthorized key substitution.</p>\r\n  <h1>Why</h1>\r\n  <p>Unauthorized key substitution means that an attacker can substitute one of the authorized keys and gain access to sensitive information without raising alarm.\r\n</p>\r\n  <h1>How to Check</h1>\r\n  <p>Check the key management procedures in the information security policy to make sure there are provisions for preventing unauthorized key substitution.</p>\r\n  <h1>How to Fix</h1>\r\n  <p>Make a table of authorized keys (known as a keystore) and use only those keys for encryption.&amp;nbsp;Whenever changes are made to the table of keys, make sure the changes are authorized.&amp;nbsp;Document the implementation of the key table and the update mechanism in the\r\n key management procedures in the information security policy.</p>\r\n  <h1>Additional Resources</h1>\r\n  <ul>\r\n    <li>For more information about key management procedures, please see <a href=\"http://csrc.nist.gov/\">\r\nhttp://csrc.nist.gov</a> &amp;nbsp; </li>\r\n    <li>For more information about designing and documenting key management procedures, please see&amp;nbsp;<a href=\"http://www.net-security.org/article.php?id=1185\">http://www.net-security.org/article.php?id=1185</a></li>\r\n  </ul>\r\n  <h1>Related Items</h1>\r\n  <ul>\r\n    <li>\r\n      <p>\r\n        <a href=\"/article/9bb67e82-ea00-4a56-95fd-67720041afe6\">Prepare the Key Management Procedures</a>\r\n      </p>\r\n    </li>\r\n  </ul>"
+  "html": "<h1>Applies to</h1>\n  <ul>\n    <li>PCI DSS Requirement 3.6.7</li>\n  </ul>\n  <h1>What to Check For</h1>\n  <p>Key management procedures should be implemented to prevent unauthorized key substitution.</p>\n  <h1>Why</h1>\n  <p>Unauthorized key substitution means that an attacker can substitute one of the authorized keys and gain access to sensitive information without raising alarm.\n</p>\n  <h1>How to Check</h1>\n  <p>Check the key management procedures in the information security policy to make sure there are provisions for preventing unauthorized key substitution.</p>\n  <h1>How to Fix</h1>\n  <p>Make a table of authorized keys (known as a keystore) and use only those keys for encryption.&amp;nbsp;Whenever changes are made to the table of keys, make sure the changes are authorized.&amp;nbsp;Document the implementation of the key table and the update mechanism in the\n key management procedures in the information security policy.</p>\n  <h1>Additional Resources</h1>\n  <ul>\n    <li>For more information about key management procedures, please see <a href=\"http://csrc.nist.gov/\">\nhttp://csrc.nist.gov</a> &amp;nbsp; </li>\n    <li>For more information about designing and documenting key management procedures, please see&amp;nbsp;<a href=\"http://www.net-security.org/article.php?id=1185\">http://www.net-security.org/article.php?id=1185</a></li>\n  </ul>\n  <h1>Related Items</h1>\n  <ul>\n    <li>\n      <p>\n        <a href=\"/article/9bb67e82-ea00-4a56-95fd-67720041afe6\">Prepare the Key Management Procedures</a>\n      </p>\n    </li>\n  </ul>"
 }

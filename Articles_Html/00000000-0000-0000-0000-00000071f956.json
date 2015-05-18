@@ -1,12 +1,11 @@
 {
   "id": "00000000-0000-0000-0000-00000071f956",
-  "checksum": "b8bea503bc6514e63e2dff0e270d4c1359529caa",
+  "checksum": "002fb95099affeb7316e918141c1a3da45a8d5c6",
   "words": {
-    "applies": [
+    "what": [
       "h2"
     ],
     "to": [
-      "h2",
       "h2",
       "p",
       "p",
@@ -36,13 +35,6 @@
       "li",
       "li",
       "li"
-    ],
-    "aspnet": [
-      "ul",
-      "li"
-    ],
-    "what": [
-      "h2"
     ],
     "check": [
       "h2",
@@ -159,14 +151,20 @@
       "p",
       "p"
     ],
-    "ssl/tls": [
-      "p",
+    "tls": [
       "p",
       "p",
       "p",
       "ol",
       "li",
+      "p",
+      "ol",
+      "ol",
+      "li",
+      "li",
       "strong",
+      "ul",
+      "li",
       "title"
     ],
     "why": [
@@ -538,14 +536,6 @@
       "ol",
       "li",
       "li",
-      "li"
-    ],
-    "ssl": [
-      "ol",
-      "li",
-      "ol",
-      "li",
-      "ul",
       "li"
     ],
     "-": [
@@ -1006,41 +996,35 @@
   },
   "tags": {
     "h2": [
-      "Applies To",
       "What to Check For",
       "Why",
       "How to Check",
       "How to Fix",
       "Additional Resources"
     ],
-    "ul": [
-      "ASP.NET",
-      "For information about setting up SSL on IIS, see http://www.iis.net/learn/manage/configuring-security/how-to-set-up-ssl-on-iis"
-    ],
-    "li": [
-      "ASP.NET",
-      "Load the application and authenticate. Open the application with a web browser and authenticate. It's okay to start the session in some other way and many applications will create sessions even for users that aren't authenticated. Logging in is a certain way to start a session for any reasonably designed application that uses sessions. Make sure that the application uses SSL - most browsers indicate that with an icon in the URL bar.",
-      "Examine the session cookies. Use a web browser option or plugin that shows detailed information about the current cookies. Examine the session cookie created by the application. Make sure that it has the HTTPOnly and Secure flags set.",
-      "Examine Web.config. Review the Web.config configuration file to make sure that httpOnlyCookies and requireSSL properties are set to true for the httpCookies element. These settings will actually set HTTPOnly and Secure flags for all cookies, which is not strictly required to pass this checklist, but these settings are recommended.",
-      "Configure IIS to use SSL/TLS. Get a valid certificate. Hosting service providers often sell valid SSL certificates. Install the certificate. Create an HTTPS binding for the site. A link in the \"Additional Resources\" section describes how to do this in detail.",
-      "Set the Secure flag on cookies. Set the requireSSL property to true for the httpCookies element in the web.config file, like this: <httpcookies requiressl=\"true\"></httpcookies> If you use Forms Authentication, you will also need to set requireSSL to true for the forms element.",
-      "For information about setting up SSL on IIS, see http://www.iis.net/learn/manage/configuring-security/how-to-set-up-ssl-on-iis"
-    ],
     "p": [
-      "Verify that session cookies are sent only using SSL/TLS.",
-      "If session identifiers are transmitted in plain-text, an attacker can intercept them using a man-in-the-middle attack. After intercepting a session identifier, the attacker can hijack the corresponding session. Hijacking a session allows the attacker to carry out any action that is available to the authenticated user. To prevent session identifiers from being sent in plain-text, session cookies should be sent only using SSL/TLS.",
-      "To verify that session cookies are sent only using SSL/TLS:",
-      "To send session cookies only using SSL/TLS:"
+      "Verify that session cookies are sent only using TLS.",
+      "If session identifiers are transmitted in plain-text, an attacker can intercept them using a man-in-the-middle attack. After intercepting a session identifier, the attacker can hijack the corresponding session. Hijacking a session allows the attacker to carry out any action that is available to the authenticated user. To prevent session identifiers from being sent in plain-text, session cookies should be sent only using TLS.",
+      "To verify that session cookies are sent only using TLS:",
+      "To send session cookies only using TLS:"
     ],
     "ol": [
-      "Load the application and authenticate. Open the application with a web browser and authenticate. It's okay to start the session in some other way and many applications will create sessions even for users that aren't authenticated. Logging in is a certain way to start a session for any reasonably designed application that uses sessions. Make sure that the application uses SSL - most browsers indicate that with an icon in the URL bar.\n Examine the session cookies. Use a web browser option or plugin that shows detailed information about the current cookies. Examine the session cookie created by the application. Make sure that it has the HTTPOnly and Secure flags set.\n Examine Web.config. Review the Web.config configuration file to make sure that httpOnlyCookies and requireSSL properties are set to true for the httpCookies element. These settings will actually set HTTPOnly and Secure flags for all cookies, which is not strictly required to pass this checklist, but these settings are recommended.",
-      "Configure IIS to use SSL/TLS. Get a valid certificate. Hosting service providers often sell valid SSL certificates. Install the certificate. Create an HTTPS binding for the site. A link in the \"Additional Resources\" section describes how to do this in detail.\n Set the Secure flag on cookies. Set the requireSSL property to true for the httpCookies element in the web.config file, like this: <httpcookies requiressl=\"true\"></httpcookies> If you use Forms Authentication, you will also need to set requireSSL to true for the forms element."
+      "Load the application and authenticate. Open the application with a web browser and authenticate. It's okay to start the session in some other way and many applications will create sessions even for users that aren't authenticated. Logging in is a certain way to start a session for any reasonably designed application that uses sessions. Make sure that the application uses TLS - most browsers indicate that with an icon in the URL bar.\n Examine the session cookies. Use a web browser option or plugin that shows detailed information about the current cookies. Examine the session cookie created by the application. Make sure that it has the HTTPOnly and Secure flags set.\n Examine Web.config. Review the Web.config configuration file to make sure that httpOnlyCookies and requireSSL properties are set to true for the httpCookies element. These settings will actually set HTTPOnly and Secure flags for all cookies, which is not strictly required to pass this checklist, but these settings are recommended.",
+      "Configure IIS to use TLS. Get a valid certificate. Hosting service providers often sell valid TLS certificates. Install the certificate. Create an HTTPS binding for the site. A link in the \"Additional Resources\" section describes how to do this in detail.\n Set the Secure flag on cookies. Set the requireSSL property to true for the httpCookies element in the web.config file, like this: <httpcookies requiressl=\"true\"></httpcookies> If you use Forms Authentication, you will also need to set requireSSL to true for the forms element."
+    ],
+    "li": [
+      "Load the application and authenticate. Open the application with a web browser and authenticate. It's okay to start the session in some other way and many applications will create sessions even for users that aren't authenticated. Logging in is a certain way to start a session for any reasonably designed application that uses sessions. Make sure that the application uses TLS - most browsers indicate that with an icon in the URL bar.",
+      "Examine the session cookies. Use a web browser option or plugin that shows detailed information about the current cookies. Examine the session cookie created by the application. Make sure that it has the HTTPOnly and Secure flags set.",
+      "Examine Web.config. Review the Web.config configuration file to make sure that httpOnlyCookies and requireSSL properties are set to true for the httpCookies element. These settings will actually set HTTPOnly and Secure flags for all cookies, which is not strictly required to pass this checklist, but these settings are recommended.",
+      "Configure IIS to use TLS. Get a valid certificate. Hosting service providers often sell valid TLS certificates. Install the certificate. Create an HTTPS binding for the site. A link in the \"Additional Resources\" section describes how to do this in detail.",
+      "Set the Secure flag on cookies. Set the requireSSL property to true for the httpCookies element in the web.config file, like this: <httpcookies requiressl=\"true\"></httpcookies> If you use Forms Authentication, you will also need to set requireSSL to true for the forms element.",
+      "For information about setting up TLS on IIS, see http://www.iis.net/learn/manage/configuring-security/how-to-set-up-ssl-on-iis"
     ],
     "strong": [
       "Load the application and authenticate.",
       "Examine the session cookies.",
       "Examine Web.config.",
-      "Configure IIS to use SSL/TLS.",
+      "Configure IIS to use TLS.",
       "Set the Secure flag on cookies."
     ],
     "em": [
@@ -1060,6 +1044,9 @@
       "true",
       "forms"
     ],
+    "ul": [
+      "For information about setting up TLS on IIS, see http://www.iis.net/learn/manage/configuring-security/how-to-set-up-ssl-on-iis"
+    ],
     "a": [
       "http://www.iis.net/learn/manage/configuring-security/how-to-set-up-ssl-on-iis"
     ]
@@ -1070,5 +1057,5 @@
       "text": "http://www.iis.net/learn/manage/configuring-security/how-to-set-up-ssl-on-iis"
     }
   ],
-  "html": "<h2>Applies To</h2><ul><li> ASP.NET</li>\n</ul><h2>What to Check For</h2><p>Verify that session cookies are sent only using SSL/TLS.\n</p><h2>Why</h2><p>If session identifiers are transmitted in plain-text, an attacker can intercept them using a man-in-the-middle attack. After intercepting a session identifier, the attacker can hijack the corresponding session. Hijacking a session allows the attacker to carry out any action that is available to the authenticated user. To prevent session identifiers from being sent in plain-text, session cookies should be sent only using SSL/TLS.\n</p><h2>How to Check</h2><p>To verify that session cookies are sent only using SSL/TLS:\n</p><ol>\n<li> <strong>Load the application and authenticate.</strong> Open the application with a web browser and authenticate. It's okay to start the session in some other way and many applications will create sessions even for users that aren't authenticated. Logging in is a certain way to start a session for any reasonably designed application that uses sessions. Make sure that the application uses SSL - most browsers indicate that with an icon in the URL bar.</li>\n<li> <strong>Examine the session cookies.</strong> Use a web browser option or plugin that shows detailed information about the current cookies. Examine the session cookie created by the application. Make sure that it has the <em>HTTPOnly</em> and <em>Secure</em> flags set.</li>\n<li> <strong>Examine Web.config.</strong> Review the Web.config configuration file to make sure that <em>httpOnlyCookies</em> and <em>requireSSL</em> properties are set to <em>true</em> for the <em>httpCookies</em> element. These settings will actually set <em>HTTPOnly</em> and <em>Secure</em> flags for all cookies, which is not strictly required to pass this checklist, but these settings are recommended.</li>\n</ol><h2>How to Fix</h2><p>To send session cookies only using SSL/TLS:\n</p><ol>\n<li> <strong>Configure IIS to use SSL/TLS.</strong> Get a valid certificate. Hosting service providers often sell valid SSL certificates. Install the certificate. Create an HTTPS binding for the site. A link in the \"Additional Resources\" section describes how to do this in detail.</li>\n<li> <strong>Set the <em>Secure</em> flag on cookies.</strong> Set the <em>requireSSL</em> property to <em>true</em> for the <em>httpCookies</em> element in the web.config file, like this: &lt;httpcookies requiressl=\"true\"&gt;&lt;/httpcookies&gt; If you use Forms Authentication, you will also need to set <em>requireSSL</em> to <em>true</em> for the <em>forms</em> element.  </li>\n</ol><h2>Additional Resources</h2><ul><li> For information about setting up SSL on IIS, see <a href=\"http://www.iis.net/learn/manage/configuring-security/how-to-set-up-ssl-on-iis\">http://www.iis.net/learn/manage/configuring-security/how-to-set-up-ssl-on-iis</a></li></ul>"
+  "html": "<h2>What to Check For</h2><p>Verify that session cookies are sent only using TLS.\n</p><h2>Why</h2><p>If session identifiers are transmitted in plain-text, an attacker can intercept them using a man-in-the-middle attack. After intercepting a session identifier, the attacker can hijack the corresponding session. Hijacking a session allows the attacker to carry out any action that is available to the authenticated user. To prevent session identifiers from being sent in plain-text, session cookies should be sent only using TLS.\n</p><h2>How to Check</h2><p>To verify that session cookies are sent only using TLS:\n</p><ol>\n<li> <strong>Load the application and authenticate.</strong> Open the application with a web browser and authenticate. It's okay to start the session in some other way and many applications will create sessions even for users that aren't authenticated. Logging in is a certain way to start a session for any reasonably designed application that uses sessions. Make sure that the application uses TLS - most browsers indicate that with an icon in the URL bar.</li>\n<li> <strong>Examine the session cookies.</strong> Use a web browser option or plugin that shows detailed information about the current cookies. Examine the session cookie created by the application. Make sure that it has the <em>HTTPOnly</em> and <em>Secure</em> flags set.</li>\n<li> <strong>Examine Web.config.</strong> Review the Web.config configuration file to make sure that <em>httpOnlyCookies</em> and <em>requireSSL</em> properties are set to <em>true</em> for the <em>httpCookies</em> element. These settings will actually set <em>HTTPOnly</em> and <em>Secure</em> flags for all cookies, which is not strictly required to pass this checklist, but these settings are recommended.</li>\n</ol><h2>How to Fix</h2><p>To send session cookies only using TLS:\n</p><ol>\n<li> <strong>Configure IIS to use TLS.</strong> Get a valid certificate. Hosting service providers often sell valid TLS certificates. Install the certificate. Create an HTTPS binding for the site. A link in the \"Additional Resources\" section describes how to do this in detail.</li>\n<li> <strong>Set the <em>Secure</em> flag on cookies.</strong> Set the <em>requireSSL</em> property to <em>true</em> for the <em>httpCookies</em> element in the web.config file, like this: &lt;httpcookies requiressl=\"true\"&gt;&lt;/httpcookies&gt; If you use Forms Authentication, you will also need to set <em>requireSSL</em> to <em>true</em> for the <em>forms</em> element.  </li>\n</ol><h2>Additional Resources</h2><ul><li> For information about setting up TLS on IIS, see <a href=\"http://www.iis.net/learn/manage/configuring-security/how-to-set-up-ssl-on-iis\">http://www.iis.net/learn/manage/configuring-security/how-to-set-up-ssl-on-iis</a></li></ul>"
 }

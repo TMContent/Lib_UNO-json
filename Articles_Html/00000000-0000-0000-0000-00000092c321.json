@@ -1,6 +1,6 @@
 {
   "id": "00000000-0000-0000-0000-00000092c321",
-  "checksum": "8ae39db8301668c6bae97a74410d7c2be49af2c0",
+  "checksum": "9f0f561f44c336b4b73e3f7c8f1bb38fa41a6da0",
   "words": {
     "applies": [
       "h2"
@@ -137,7 +137,7 @@
       "a",
       "title"
     ],
-    "ssl": [
+    "tls": [
       "p",
       "p",
       "p",
@@ -586,32 +586,32 @@
     ],
     "ul": [
       "iOS applications that send or receive sensitive data over the network.",
-      "Disable Self-signed SSL Certificates\n Use SSL to Protect Communications\n Use Strong SSL Configurations",
-      "Self-signed SSL Certificates Are Disabled\n SSL Is Used to Protect Communications\n Strong SSL Configurations Are Used"
+      "Disable Self-signed TLS Certificates\n Use TLS to Protect Communications\n Use Strong TLS Configurations",
+      "Self-signed TLS Certificates Are Disabled\n TLS Is Used to Protect Communications\n Strong TLS Configurations Are Used"
     ],
     "li": [
       "iOS applications that send or receive sensitive data over the network.",
-      "Search for code that allows self-signed SSL certificates. Search application code for the presence of the continueWithoutCredentialForAuthenticationChallenge selector - the presence of this selector indicates that self-signed SSL certificates may be allowed.",
-      "Verify that self-signed SSL certificates are not allowed in production releases. If self-signed SSL certificates are allowed for development purposes, make sure that they are disabled in production releases. The recommended way to disable development code in production releases is through #define and #ifdef compiler directives.",
-      "Disable Self-signed SSL Certificates",
-      "Use SSL to Protect Communications",
-      "Use Strong SSL Configurations",
-      "Self-signed SSL Certificates Are Disabled",
-      "SSL Is Used to Protect Communications",
-      "Strong SSL Configurations Are Used"
+      "Search for code that allows self-signed TLS certificates. Search application code for the presence of the continueWithoutCredentialForAuthenticationChallenge selector - the presence of this selector indicates that self-signed TLS certificates may be allowed.",
+      "Verify that self-signed TLS certificates are not allowed in production releases. If self-signed TLS certificates are allowed for development purposes, make sure that they are disabled in production releases. The recommended way to disable development code in production releases is through #define and #ifdef compiler directives.",
+      "Disable Self-signed TLS Certificates",
+      "Use TLS to Protect Communications",
+      "Use Strong TLS Configurations",
+      "Self-signed TLS Certificates Are Disabled",
+      "TLS Is Used to Protect Communications",
+      "Strong TLS Configurations Are Used"
     ],
     "p": [
-      "Verify that self-signed SSL certificates are disabled.",
-      "Allowing the use of self-signed SSL certificates enables some types of man-in-the-middle attacks.",
-      "To verify that self-signed SSL certificates are disabled:",
-      "Self-signed SSL certificates are not allowed by default. Do not allow them. Avoid using the allowsAnyHTTPSCertificateForHost method in production releases, because it allows self-signed SSL certificates. Do not use the continueWithoutCredentialForAuthenticationChallenge selector within the didReceiveAuthenticationChallenge delegate method of NSURLConnection objects, because it enables self-signed SSL certificates."
+      "Verify that self-signed TLS certificates are disabled.",
+      "Allowing the use of self-signed TLS certificates enables some types of man-in-the-middle attacks.",
+      "To verify that self-signed TLS certificates are disabled:",
+      "Self-signed TLS certificates are not allowed by default. Do not allow them. Avoid using the allowsAnyHTTPSCertificateForHost method in production releases, because it allows self-signed TLS certificates. Do not use the continueWithoutCredentialForAuthenticationChallenge selector within the didReceiveAuthenticationChallenge delegate method of NSURLConnection objects, because it enables self-signed TLS certificates."
     ],
     "ol": [
-      "Search for code that allows self-signed SSL certificates. Search application code for the presence of the continueWithoutCredentialForAuthenticationChallenge selector - the presence of this selector indicates that self-signed SSL certificates may be allowed.\n Verify that self-signed SSL certificates are not allowed in production releases. If self-signed SSL certificates are allowed for development purposes, make sure that they are disabled in production releases. The recommended way to disable development code in production releases is through #define and #ifdef compiler directives."
+      "Search for code that allows self-signed TLS certificates. Search application code for the presence of the continueWithoutCredentialForAuthenticationChallenge selector - the presence of this selector indicates that self-signed TLS certificates may be allowed.\n Verify that self-signed TLS certificates are not allowed in production releases. If self-signed TLS certificates are allowed for development purposes, make sure that they are disabled in production releases. The recommended way to disable development code in production releases is through #define and #ifdef compiler directives."
     ],
     "strong": [
-      "Search for code that allows self-signed SSL certificates.",
-      "Verify that self-signed SSL certificates are not allowed in production releases."
+      "Search for code that allows self-signed TLS certificates.",
+      "Verify that self-signed TLS certificates are not allowed in production releases."
     ],
     "em": [
       "continueWithoutCredentialForAuthenticationChallenge",
@@ -623,39 +623,39 @@
       "NSURLConnection"
     ],
     "a": [
-      "Disable Self-signed SSL Certificates",
-      "Use SSL to Protect Communications",
-      "Use Strong SSL Configurations",
-      "Self-signed SSL Certificates Are Disabled",
-      "SSL Is Used to Protect Communications",
-      "Strong SSL Configurations Are Used"
+      "Disable Self-signed TLS Certificates",
+      "Use TLS to Protect Communications",
+      "Use Strong TLS Configurations",
+      "Self-signed TLS Certificates Are Disabled",
+      "TLS Is Used to Protect Communications",
+      "Strong TLS Configurations Are Used"
     ]
   },
   "links": [
     {
       "href": "00000000-0000-0000-0000-0000006aa5d9",
-      "text": "Disable Self-signed SSL Certificates"
+      "text": "Disable Self-signed TLS Certificates"
     },
     {
       "href": "00000000-0000-0000-0000-00000060779f",
-      "text": "Use SSL to Protect Communications"
+      "text": "Use TLS to Protect Communications"
     },
     {
       "href": "00000000-0000-0000-0000-0000007db8fe",
-      "text": "Use Strong SSL Configurations"
+      "text": "Use Strong TLS Configurations"
     },
     {
       "href": "00000000-0000-0000-0000-00000092c321",
-      "text": "Self-signed SSL Certificates Are Disabled"
+      "text": "Self-signed TLS Certificates Are Disabled"
     },
     {
       "href": "00000000-0000-0000-0000-0000005faaf0",
-      "text": "SSL Is Used to Protect Communications"
+      "text": "TLS Is Used to Protect Communications"
     },
     {
       "href": "00000000-0000-0000-0000-0000006b67b3",
-      "text": "Strong SSL Configurations Are Used"
+      "text": "Strong TLS Configurations Are Used"
     }
   ],
-  "html": "<h2>Applies To</h2><ul><li> iOS applications that send or receive sensitive data over the network.</li>\n</ul><h2>What to Check For</h2><p>Verify that self-signed SSL certificates are disabled.\n</p><h2>Why</h2><p>Allowing the use of self-signed SSL certificates enables some types of man-in-the-middle attacks.\n</p><h2>How to Check</h2><p>To verify that self-signed SSL certificates are disabled:\n</p><ol>\n<li> <strong>Search for code that allows self-signed SSL certificates.</strong> Search application code for the presence of the <em>continueWithoutCredentialForAuthenticationChallenge</em> selector - the presence of this selector indicates that self-signed SSL certificates may be allowed.</li>\n<li> <strong>Verify that self-signed SSL certificates are not allowed in production releases.</strong> If self-signed SSL certificates are allowed for development purposes, make sure that they are disabled in production releases. The recommended way to disable development code in production releases is through <em>#define</em> and <em>#ifdef</em> compiler directives.</li>\n</ol><h2>How to Fix</h2><p>Self-signed SSL certificates are not allowed by default. Do not allow them. Avoid using the <em>allowsAnyHTTPSCertificateForHost</em> method in production releases, because it allows self-signed SSL certificates. Do not use the <em>continueWithoutCredentialForAuthenticationChallenge</em> selector within the <em>didReceiveAuthenticationChallenge</em> delegate method of <em>NSURLConnection</em> objects, because it enables self-signed SSL certificates.\n</p><h2>Communication Security Guidelines</h2><ul><li> <a href=\"00000000-0000-0000-0000-0000006aa5d9\">Disable Self-signed SSL Certificates</a></li>\n<li> <a href=\"00000000-0000-0000-0000-00000060779f\">Use SSL to Protect Communications</a></li>\n<li> <a href=\"00000000-0000-0000-0000-0000007db8fe\">Use Strong SSL Configurations</a></li>\n</ul><h2>Communication Security Checklists</h2><ul><li> <a href=\"00000000-0000-0000-0000-00000092c321\">Self-signed SSL Certificates Are Disabled</a></li>\n<li> <a href=\"00000000-0000-0000-0000-0000005faaf0\">SSL Is Used to Protect Communications</a></li>\n<li> <a href=\"00000000-0000-0000-0000-0000006b67b3\">Strong SSL Configurations Are Used</a></li></ul>"
+  "html": "<h2>Applies To</h2><ul><li> iOS applications that send or receive sensitive data over the network.</li>\n</ul><h2>What to Check For</h2><p>Verify that self-signed TLS certificates are disabled.\n</p><h2>Why</h2><p>Allowing the use of self-signed TLS certificates enables some types of man-in-the-middle attacks.\n</p><h2>How to Check</h2><p>To verify that self-signed TLS certificates are disabled:\n</p><ol>\n<li> <strong>Search for code that allows self-signed TLS certificates.</strong> Search application code for the presence of the <em>continueWithoutCredentialForAuthenticationChallenge</em> selector - the presence of this selector indicates that self-signed TLS certificates may be allowed.</li>\n<li> <strong>Verify that self-signed TLS certificates are not allowed in production releases.</strong> If self-signed TLS certificates are allowed for development purposes, make sure that they are disabled in production releases. The recommended way to disable development code in production releases is through <em>#define</em> and <em>#ifdef</em> compiler directives.</li>\n</ol><h2>How to Fix</h2><p>Self-signed TLS certificates are not allowed by default. Do not allow them. Avoid using the <em>allowsAnyHTTPSCertificateForHost</em> method in production releases, because it allows self-signed TLS certificates. Do not use the <em>continueWithoutCredentialForAuthenticationChallenge</em> selector within the <em>didReceiveAuthenticationChallenge</em> delegate method of <em>NSURLConnection</em> objects, because it enables self-signed TLS certificates.\n</p><h2>Communication Security Guidelines</h2><ul><li> <a href=\"00000000-0000-0000-0000-0000006aa5d9\">Disable Self-signed TLS Certificates</a></li>\n<li> <a href=\"00000000-0000-0000-0000-00000060779f\">Use TLS to Protect Communications</a></li>\n<li> <a href=\"00000000-0000-0000-0000-0000007db8fe\">Use Strong TLS Configurations</a></li>\n</ul><h2>Communication Security Checklists</h2><ul><li> <a href=\"00000000-0000-0000-0000-00000092c321\">Self-signed TLS Certificates Are Disabled</a></li>\n<li> <a href=\"00000000-0000-0000-0000-0000005faaf0\">TLS Is Used to Protect Communications</a></li>\n<li> <a href=\"00000000-0000-0000-0000-0000006b67b3\">Strong TLS Configurations Are Used</a></li></ul>"
 }

@@ -1,6 +1,6 @@
 {
   "id": "2bef4aaa-d019-43bf-ba3b-7486f75036c2",
-  "checksum": "f00cf84234c455f8bc3df04d38cc94b3aa0647a4",
+  "checksum": "7fe8a40a4f92c24ae52df57d2d0ae0503ffd0230",
   "words": {
     "what": [
       "h1"
@@ -267,7 +267,7 @@
       "p",
       "pre"
     ],
-    "application for": [
+    "application&nbspfor": [
       "p"
     ],
     "user": [
@@ -281,9 +281,6 @@
       "p",
       "p",
       "p",
-      "ul",
-      "li",
-      "a",
       "title"
     ],
     "attackers": [
@@ -594,7 +591,7 @@
       "li",
       "p"
     ],
-    "mode=\"forms\"": [
+    "mode=\"forms\"&nbsp;": [
       "ol",
       "li",
       "pre"
@@ -604,26 +601,25 @@
       "li",
       "pre"
     ],
-    "loginurl=\"loginaspx\"": [
+    "loginurl=\"loginaspx\"&nbsp;&nbsp;&nbsp;&nbsp;": [
       "ol",
       "li",
       "pre"
     ],
-    "protection=\"all\"": [
+    "protection=\"all\"&nbsp&nbsp;&nbsp;&nbsp;": [
       "ol",
       "li",
       "pre"
     ],
-    "timeout=\"20\"": [
+    "timeout=\"20\"&nbsp&nbsp;&nbsp;": [
       "ol",
       "li",
       "pre"
     ],
-    "requiressl=\"true\"": [
+    "requiressl=\"true\"&nbsp;": [
       "ol",
       "li",
-      "pre",
-      "strong"
+      "pre"
     ],
     "/forms></authentication": [
       "ol",
@@ -814,6 +810,9 @@
       "ol",
       "p"
     ],
+    "requiressl=\"true\"": [
+      "strong"
+    ],
     "problem": [
       "h1"
     ],
@@ -892,7 +891,7 @@
     "mechanism": [
       "p"
     ],
-    "of differentiating": [
+    "of&nbspdifferentiating": [
       "p"
     ],
     "real": [
@@ -920,7 +919,7 @@
     "accesses": [
       "p"
     ],
-    "interface he": [
+    "interface&nbsp;he": [
       "p"
     ],
     "may": [
@@ -929,7 +928,7 @@
     "fooled": [
       "p"
     ],
-    "providing his": [
+    "providing&nbsphis": [
       "p"
     ],
     "additional": [
@@ -975,6 +974,11 @@
       "li",
       "a"
     ],
+    "user&nbsp": [
+      "ul",
+      "li",
+      "a"
+    ],
     "adapted": [
       "p"
     ],
@@ -993,6 +997,9 @@
     "guidance": [
       "p"
     ],
+    "sink]": [
+      "title"
+    ],
     "verified": [
       "title"
     ]
@@ -1008,25 +1015,25 @@
     ],
     "p": [
       "Ensure your application allows its users to verify the authenticity of your application.",
-      "Some applications are targets for phishing attacks. Failure to provide authentication of the application for the user allows attackers to spoof the application, therefore, fooling the users into submitting their credentials or other sensitive information into an attacker's malicious application.",
+      "Some applications are targets for phishing attacks. Failure to provide authentication of the application&nbsp;for the user allows attackers to spoof the application, therefore, fooling the users into submitting their credentials or other sensitive information into an attacker's malicious application.",
       "Use the following steps to ensure the application is capable of proving its authenticity to its users:",
       "Ensure that your application uses SSL to identify itself to the user. Check that your application's environment has enabled HTTPS. Verify that transactions of a sensitive nature are transmitted only over HTTPS connections. Check if the <forms> element in your application's web.config file has the requireSSL attribute set to \"true\" when performing form-based authentication:",
       "Check if your application displays a shared secret with its users. Check if your application has a personal shared secret for each of its users. Shared secrets include, but are not limited to, combinations of any of the following:",
       "Verify that the shared secret is displayed to the user after providing their ID and before providing their credentials.",
-      "MyApp is a financial application with a public web interface. Because the application does not use SSL to certify its identity in front of the user, an attacker can set up a fake site and pretend to be MyApp. Because the user's browser has no mechanism of differentiating the real from the fake MyApp interface, it will not provide any warning signs to the user. Once a user accesses the fake MyApp interface, he may be fooled into providing his credentials to the attacker.",
+      "MyApp is a financial application with a public web interface. Because the application does not use SSL to certify its identity in front of the user, an attacker can set up a fake site and pretend to be MyApp. Because the user's browser has no mechanism of&nbsp;differentiating the real from the fake MyApp interface, it will not provide any warning signs to the user. Once a user accesses the fake MyApp interface,&nbsp;he may be fooled into providing&nbsp;his credentials to the attacker.",
       "Adapted from Microsoft patterns & practices guidance."
     ],
     "ol": [
-      "Ensure that your application uses SSL to identify itself to the user. Check that your application's environment has enabled HTTPS. Verify that transactions of a sensitive nature are transmitted only over HTTPS connections. Check if the <forms> element in your application's web.config file has the requireSSL attribute set to \"true\" when performing form-based authentication:\r\n      <authentication mode=\"Forms\">  <forms loginUrl=\"login.aspx\"     protection=\"All\"     timeout=\"20\"    requireSSL=\"true\">  </forms></authentication >\r\n      \r\n        \r\n          Check if your application displays a shared secret with its users. Check if your application has a personal shared secret for each of its users. Shared secrets include, but are not limited to, combinations of any of the following:\r\n        \r\n          \r\n            Layout: a user-defined layout/color scheme Picture: a user-defined image Word/Phrase: a user-defined word, phrase, or question\r\n        \r\n        Verify that the shared secret is displayed to the user after providing their ID and before providing their credentials."
+      "Ensure that your application uses SSL to identify itself to the user. Check that your application's environment has enabled HTTPS. Verify that transactions of a sensitive nature are transmitted only over HTTPS connections. Check if the <forms> element in your application's web.config file has the requireSSL attribute set to \"true\" when performing form-based authentication:\n      <authentication mode=\"Forms\">&nbsp; <forms loginUrl=\"login.aspx\"&nbsp;&nbsp;&nbsp;&nbsp; protection=\"All\"&nbsp;&nbsp;&nbsp;&nbsp; timeout=\"20\"&nbsp;&nbsp;&nbsp; requireSSL=\"true\">&nbsp; </forms></authentication >\n      \n        \n          Check if your application displays a shared secret with its users. Check if your application has a personal shared secret for each of its users. Shared secrets include, but are not limited to, combinations of any of the following:\n        \n          \n            Layout: a user-defined layout/color scheme Picture: a user-defined image Word/Phrase: a user-defined word, phrase, or question\n        \n        Verify that the shared secret is displayed to the user after providing their ID and before providing their credentials."
     ],
     "li": [
-      "Ensure that your application uses SSL to identify itself to the user. Check that your application's environment has enabled HTTPS. Verify that transactions of a sensitive nature are transmitted only over HTTPS connections. Check if the <forms> element in your application's web.config file has the requireSSL attribute set to \"true\" when performing form-based authentication:\r\n      <authentication mode=\"Forms\">  <forms loginUrl=\"login.aspx\"     protection=\"All\"     timeout=\"20\"    requireSSL=\"true\">  </forms></authentication >",
-      "Check if your application displays a shared secret with its users. Check if your application has a personal shared secret for each of its users. Shared secrets include, but are not limited to, combinations of any of the following:\r\n        \r\n          \r\n            Layout: a user-defined layout/color scheme Picture: a user-defined image Word/Phrase: a user-defined word, phrase, or question",
+      "Ensure that your application uses SSL to identify itself to the user. Check that your application's environment has enabled HTTPS. Verify that transactions of a sensitive nature are transmitted only over HTTPS connections. Check if the <forms> element in your application's web.config file has the requireSSL attribute set to \"true\" when performing form-based authentication:\n      <authentication mode=\"Forms\">&nbsp; <forms loginUrl=\"login.aspx\"&nbsp;&nbsp;&nbsp;&nbsp; protection=\"All\"&nbsp;&nbsp;&nbsp;&nbsp; timeout=\"20\"&nbsp;&nbsp;&nbsp; requireSSL=\"true\">&nbsp; </forms></authentication >",
+      "Check if your application displays a shared secret with its users. Check if your application has a personal shared secret for each of its users. Shared secrets include, but are not limited to, combinations of any of the following:\n        \n          \n            Layout: a user-defined layout/color scheme Picture: a user-defined image Word/Phrase: a user-defined word, phrase, or question",
       "Layout: a user-defined layout/color scheme",
       "Picture: a user-defined image",
       "Word/Phrase: a user-defined word, phrase, or question",
       "To learn more about anti-phishing techniques, see Phishing in Wikipedia.",
-      "Guideline: Verify the Application's Authenticity to the User"
+      "Guideline: Verify the Application's Authenticity to the User&nbsp;"
     ],
     "strong": [
       "Ensure that your application uses SSL to identify itself to the user.",
@@ -1039,7 +1046,7 @@
       "Word/Phrase"
     ],
     "pre": [
-      "<authentication mode=\"Forms\">  <forms loginUrl=\"login.aspx\"     protection=\"All\"     timeout=\"20\"    requireSSL=\"true\">  </forms></authentication >"
+      "<authentication mode=\"Forms\">&nbsp; <forms loginUrl=\"login.aspx\"&nbsp;&nbsp;&nbsp;&nbsp; protection=\"All\"&nbsp;&nbsp;&nbsp;&nbsp; timeout=\"20\"&nbsp;&nbsp;&nbsp; requireSSL=\"true\">&nbsp; </forms></authentication >"
     ],
     "br": [
       "",
@@ -1052,11 +1059,11 @@
     "ul": [
       "Layout: a user-defined layout/color scheme Picture: a user-defined image Word/Phrase: a user-defined word, phrase, or question",
       "To learn more about anti-phishing techniques, see Phishing in Wikipedia.",
-      "Guideline: Verify the Application's Authenticity to the User"
+      "Guideline: Verify the Application's Authenticity to the User&nbsp;"
     ],
     "a": [
       "Phishing",
-      "Guideline: Verify the Application's Authenticity to the User"
+      "Guideline: Verify the Application's Authenticity to the User&nbsp;"
     ],
     "hr": [
       ""
@@ -1069,8 +1076,8 @@
     },
     {
       "href": "/article/40188a30-1dab-4905-93ba-377068d670ca",
-      "text": "Guideline: Verify the Application's Authenticity to the User "
+      "text": "Guideline: Verify the Application's Authenticity to the User&nbsp;"
     }
   ],
-  "html": "<h1>What to Check For</h1>\r\n  <p>Ensure your application allows its users to verify the authenticity of your application.</p>\r\n  <h1>Why</h1>\r\n  <p>Some applications are targets for phishing attacks. Failure to provide authentication of the application&nbsp;for the user allows attackers to spoof the application, therefore, fooling the users into submitting their credentials or other sensitive information into an attacker's malicious application.</p>\r\n  <h1>How to Check</h1>\r\n  <p>Use the following steps to ensure the application is capable of proving its authenticity to its users:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Ensure that your application uses SSL to identify itself to the user. </strong>Check that your application's environment has enabled HTTPS. Verify that transactions of a sensitive nature are transmitted only over HTTPS connections. Check if the &lt;forms&gt; element in your application's <strong>web.config</strong> file has the <strong>requireSSL</strong> attribute set to \"true\" when performing form-based authentication:</p>\r\n      <pre>&lt;authentication mode=\"Forms\"&gt;<br />&nbsp; &lt;forms loginUrl=\"login.aspx\"<br />&nbsp;&nbsp;&nbsp;&nbsp; protection=\"All\"<br />&nbsp;&nbsp;&nbsp;&nbsp; timeout=\"20\"<br />&nbsp;&nbsp;&nbsp; <strong>requireSSL=\"true\"</strong>&gt;&nbsp; <br />&lt;/forms&gt;<br />&lt;/authentication &gt;</pre>\r\n      <li>\r\n        <p>\r\n          <strong>Check if your application displays a shared secret with its users. </strong>Check if your application has a personal shared secret for each of its users. Shared secrets include, but are not limited to, combinations of any of the following:</p>\r\n        <ul>\r\n          <li>\r\n            <strong>Layout</strong>: a user-defined layout/color scheme <li><strong>Picture</strong>: a user-defined image <li><strong>Word/Phrase</strong>: a user-defined word, phrase, or question</li></li></li>\r\n        </ul>\r\n        <p>Verify that the shared secret is displayed to the user after providing their ID and before providing their credentials.</p>\r\n      </li>\r\n    </li>\r\n  </ol>\r\n  <h1>Problem Example</h1>\r\n  <p>MyApp is a financial application with a public web interface. Because the application does not use SSL to certify its identity in front of the user, an attacker can set up a fake site and pretend to be MyApp. Because the user's browser has no mechanism of&nbsp;differentiating the real from the fake MyApp interface, it will not provide any warning signs to the user. Once a user accesses the fake MyApp interface,&nbsp;he may be fooled into providing&nbsp;his credentials to the attacker.</p>\r\n  <h1>Additional Resources</h1>\r\n  <ul>\r\n    <li>To learn more about anti-phishing techniques, see <a href=\"http://en.wikipedia.org/wiki/Phishing#Anti-phishing\">Phishing</a> in Wikipedia. </li>\r\n  </ul>\r\n  <h1>Related Guideline</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/40188a30-1dab-4905-93ba-377068d670ca\">Guideline: Verify the Application's Authenticity to the User&nbsp;</a>\r\n    </li>\r\n  </ul>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance. </p>"
+  "html": "<h1>What to Check For</h1>\n  <p>Ensure your application allows its users to verify the authenticity of your application.</p>\n  <h1>Why</h1>\n  <p>Some applications are targets for phishing attacks. Failure to provide authentication of the application&amp;nbsp;for the user allows attackers to spoof the application, therefore, fooling the users into submitting their credentials or other sensitive information into an attacker's malicious application.</p>\n  <h1>How to Check</h1>\n  <p>Use the following steps to ensure the application is capable of proving its authenticity to its users:</p>\n  <ol>\n    <li>\n      <p>\n        <strong>Ensure that your application uses SSL to identify itself to the user. </strong>Check that your application's environment has enabled HTTPS. Verify that transactions of a sensitive nature are transmitted only over HTTPS connections. Check if the &lt;forms&gt; element in your application's <strong>web.config</strong> file has the <strong>requireSSL</strong> attribute set to \"true\" when performing form-based authentication:</p>\n      <pre>&lt;authentication mode=\"Forms\"&gt;<br />&amp;nbsp; &lt;forms loginUrl=\"login.aspx\"<br />&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; protection=\"All\"<br />&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; timeout=\"20\"<br />&amp;nbsp;&amp;nbsp;&amp;nbsp; <strong>requireSSL=\"true\"</strong>&gt;&amp;nbsp; <br />&lt;/forms&gt;<br />&lt;/authentication &gt;</pre>\n      <li>\n        <p>\n          <strong>Check if your application displays a shared secret with its users. </strong>Check if your application has a personal shared secret for each of its users. Shared secrets include, but are not limited to, combinations of any of the following:</p>\n        <ul>\n          <li>\n            <strong>Layout</strong>: a user-defined layout/color scheme <li><strong>Picture</strong>: a user-defined image <li><strong>Word/Phrase</strong>: a user-defined word, phrase, or question</li></li></li>\n        </ul>\n        <p>Verify that the shared secret is displayed to the user after providing their ID and before providing their credentials.</p>\n      </li>\n    </li>\n  </ol>\n  <h1>Problem Example</h1>\n  <p>MyApp is a financial application with a public web interface. Because the application does not use SSL to certify its identity in front of the user, an attacker can set up a fake site and pretend to be MyApp. Because the user's browser has no mechanism of&amp;nbsp;differentiating the real from the fake MyApp interface, it will not provide any warning signs to the user. Once a user accesses the fake MyApp interface,&amp;nbsp;he may be fooled into providing&amp;nbsp;his credentials to the attacker.</p>\n  <h1>Additional Resources</h1>\n  <ul>\n    <li>To learn more about anti-phishing techniques, see <a href=\"http://en.wikipedia.org/wiki/Phishing#Anti-phishing\">Phishing</a> in Wikipedia. </li>\n  </ul>\n  <h1>Related Guideline</h1>\n  <ul>\n    <li>\n      <a href=\"/article/40188a30-1dab-4905-93ba-377068d670ca\">Guideline: Verify the Application's Authenticity to the User&amp;nbsp;</a>\n    </li>\n  </ul>\n  <hr />\n  <p>Adapted from Microsoft patterns &amp; practices guidance. </p>"
 }

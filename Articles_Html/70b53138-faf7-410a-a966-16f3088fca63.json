@@ -1,6 +1,6 @@
 {
   "id": "70b53138-faf7-410a-a966-16f3088fca63",
-  "checksum": "02f16f401800e7cb32d76134206adce2d92648db",
+  "checksum": "eb23ada8c92c524ab340c811dadf4a8eb971507b",
   "words": {
     "applies": [
       "h1"
@@ -110,9 +110,6 @@
       "p",
       "pre",
       "h1",
-      "ul",
-      "li",
-      "a",
       "h1",
       "ul",
       "li",
@@ -176,9 +173,6 @@
       "a",
       "ul",
       "li",
-      "a",
-      "ul",
-      "li",
       "a"
     ],
     "is": [
@@ -196,9 +190,6 @@
       "p",
       "ul",
       "ul",
-      "ul",
-      "li",
-      "a",
       "li",
       "a",
       "li",
@@ -296,9 +287,6 @@
       "ul",
       "li",
       "a",
-      "ul",
-      "li",
-      "a",
       "title"
     ],
     "developer": [
@@ -333,9 +321,6 @@
       "li",
       "li",
       "pre",
-      "ul",
-      "li",
-      "a",
       "ul",
       "li",
       "a"
@@ -407,9 +392,6 @@
       "li",
       "a",
       "ul",
-      "ul",
-      "li",
-      "a",
       "li",
       "a",
       "ul",
@@ -471,9 +453,6 @@
       "ul",
       "li",
       "a",
-      "ul",
-      "li",
-      "a",
       "title"
     ],
     "of": [
@@ -489,16 +468,10 @@
       "ul",
       "li",
       "a",
-      "ul",
-      "li",
-      "a",
       "title"
     ],
     "times": [
       "p",
-      "ul",
-      "li",
-      "a",
       "ul",
       "li",
       "a",
@@ -514,9 +487,6 @@
       "ul",
       "li",
       "a",
-      "ul",
-      "li",
-      "a",
       "title"
     ],
     "boundaries": [
@@ -526,9 +496,6 @@
       "p",
       "p",
       "pre",
-      "ul",
-      "li",
-      "a",
       "ul",
       "li",
       "a",
@@ -549,18 +516,12 @@
       "li",
       "a",
       "ul",
-      "ul",
-      "li",
-      "a",
       "li",
       "a",
       "title"
     ],
     "crossed": [
       "p",
-      "ul",
-      "li",
-      "a",
       "ul",
       "li",
       "a",
@@ -1035,9 +996,6 @@
       "li",
       "a",
       "ul",
-      "ul",
-      "li",
-      "a",
       "li",
       "a",
       "ul",
@@ -1363,9 +1321,6 @@
     ],
     "through": [
       "ul",
-      "ul",
-      "li",
-      "a",
       "li",
       "a",
       "ul",
@@ -1395,64 +1350,6 @@
       "li",
       "a"
     ],
-    "validate": [
-      "ul",
-      "li",
-      "a"
-    ],
-    "all": [
-      "ul",
-      "li",
-      "a",
-      "ul",
-      "li",
-      "a"
-    ],
-    "data": [
-      "ul",
-      "li",
-      "a",
-      "ul",
-      "li",
-      "a"
-    ],
-    "passed": [
-      "ul",
-      "li",
-      "a",
-      "ul",
-      "li",
-      "a"
-    ],
-    "between": [
-      "ul",
-      "li",
-      "a",
-      "ul",
-      "li",
-      "a"
-    ],
-    "protect": [
-      "ul",
-      "li",
-      "a"
-    ],
-    "libraries": [
-      "ul",
-      "li",
-      "a",
-      "ul",
-      "li",
-      "a"
-    ],
-    "loaded": [
-      "ul",
-      "li",
-      "a",
-      "ul",
-      "li",
-      "a"
-    ],
     "checklists": [
       "h1"
     ],
@@ -1466,12 +1363,37 @@
       "li",
       "a"
     ],
-    "minimized": [
+    "all": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "data": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "passed": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "between": [
       "ul",
       "li",
       "a"
     ],
     "validated": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "libraries": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "loaded": [
       "ul",
       "li",
       "a"
@@ -1499,12 +1421,12 @@
       "Applications written using Servlets or JSP.",
       "Low level: Low-level components are closely tied to the hardware and operating system. Although low-level components are commonly written in native code, Java provides support for the most basic operations such as filesystem access, sockets, etc. High level: High-level components hold the business logic within an application. Their loose coupling with hardware and operating systems allows them to be implemented 100% using Java.",
       "To learn more about JNI, see: Java Native Interface Specification. For more information about the security issues that JNI introduces, see: Unsafe JNI from OWASP.",
-      "Do Not Utilize Functionality Through JNI if Java Already Supports It\r\n      \r\n        Minimize the Number of Times Language Boundaries are Crossed\r\n        \r\n          Validate All Data Passed Between Native and Java Code\r\n          \r\n            Protect Libraries Loaded Through JNI",
-      "Java Supported Functionality Is Not Utilized Through JNI\r\n      \r\n        The Number of Times Language Boundaries Are Crossed Is Minimized\r\n        \r\n          All Data Passed Between Native and Java Code Is Validated\r\n          \r\n            Libraries Loaded Through JNI Are Protected"
+      "Do Not Utilize Functionality Through JNI if Java Already Supports It\n      \n        Minimize the Number of Times Language Boundaries are Crossed",
+      "Java Supported Functionality Is Not Utilized Through JNI\n        \n          All Data Passed Between Native and Java Code Is Validated\n          \n            Libraries Loaded Through JNI Are Protected"
     ],
     "li": [
       "Applications written using Servlets or JSP.",
-      "Understand the functionality. Make sure there is a clear understanding of the required functionality. Label each component as low or high level:\r\n      \r\n        \r\n          Low level: Low-level components are closely tied to the hardware and operating system. Although low-level components are commonly written in native code, Java provides support for the most basic operations such as filesystem access, sockets, etc. High level: High-level components hold the business logic within an application. Their loose coupling with hardware and operating systems allows them to be implemented 100% using Java.",
+      "Understand the functionality. Make sure there is a clear understanding of the required functionality. Label each component as low or high level:\n      \n        \n          Low level: Low-level components are closely tied to the hardware and operating system. Although low-level components are commonly written in native code, Java provides support for the most basic operations such as filesystem access, sockets, etc. High level: High-level components hold the business logic within an application. Their loose coupling with hardware and operating systems allows them to be implemented 100% using Java.",
       "Low level: Low-level components are closely tied to the hardware and operating system. Although low-level components are commonly written in native code, Java provides support for the most basic operations such as filesystem access, sockets, etc.",
       "High level: High-level components hold the business logic within an application. Their loose coupling with hardware and operating systems allows them to be implemented 100% using Java.",
       "Reduce calls into native code. Determine which functionalities should be executed in native code. Ensure that native code is called from as few locations in your application as possible. Segregate functionality that requires native code so that its use is isolated into a small number of components.",
@@ -1512,10 +1434,7 @@
       "For more information about the security issues that JNI introduces, see: Unsafe JNI from OWASP.",
       "Do Not Utilize Functionality Through JNI if Java Already Supports It",
       "Minimize the Number of Times Language Boundaries are Crossed",
-      "Validate All Data Passed Between Native and Java Code",
-      "Protect Libraries Loaded Through JNI",
       "Java Supported Functionality Is Not Utilized Through JNI",
-      "The Number of Times Language Boundaries Are Crossed Is Minimized",
       "All Data Passed Between Native and Java Code Is Validated",
       "Libraries Loaded Through JNI Are Protected"
     ],
@@ -1531,7 +1450,7 @@
       "JNIEXPORT jboolean JNICALL Java_Identifier_invokeObject      (JNIEnv * env, jobject jobj, jstring jguid){      ...      // The code crosses the language boundaries once:      // get the string      char* temp_guid = (*env)->GetStringUTFChars(env, jguid, &iscopy);      int guid_size = (int)strlen(temp_guid);      ... }"
     ],
     "ol": [
-      "Understand the functionality. Make sure there is a clear understanding of the required functionality. Label each component as low or high level:\r\n      \r\n        \r\n          Low level: Low-level components are closely tied to the hardware and operating system. Although low-level components are commonly written in native code, Java provides support for the most basic operations such as filesystem access, sockets, etc. High level: High-level components hold the business logic within an application. Their loose coupling with hardware and operating systems allows them to be implemented 100% using Java. \r\n      \r\n      \r\n        \r\n          Reduce calls into native code. Determine which functionalities should be executed in native code. Ensure that native code is called from as few locations in your application as possible. Segregate functionality that requires native code so that its use is isolated into a small number of components."
+      "Understand the functionality. Make sure there is a clear understanding of the required functionality. Label each component as low or high level:\n      \n        \n          Low level: Low-level components are closely tied to the hardware and operating system. Although low-level components are commonly written in native code, Java provides support for the most basic operations such as filesystem access, sockets, etc. High level: High-level components hold the business logic within an application. Their loose coupling with hardware and operating systems allows them to be implemented 100% using Java. \n      \n      \n        \n          Reduce calls into native code. Determine which functionalities should be executed in native code. Ensure that native code is called from as few locations in your application as possible. Segregate functionality that requires native code so that its use is isolated into a small number of components."
     ],
     "strong": [
       "Understand the functionality.",
@@ -1574,10 +1493,7 @@
       "Unsafe JNI",
       "Do Not Utilize Functionality Through JNI if Java Already Supports It",
       "Minimize the Number of Times Language Boundaries are Crossed",
-      "Validate All Data Passed Between Native and Java Code",
-      "Protect Libraries Loaded Through JNI",
       "Java Supported Functionality Is Not Utilized Through JNI",
-      "The Number of Times Language Boundaries Are Crossed Is Minimized",
       "All Data Passed Between Native and Java Code Is Validated",
       "Libraries Loaded Through JNI Are Protected"
     ]
@@ -1600,20 +1516,8 @@
       "text": "Minimize the Number of Times Language Boundaries are Crossed"
     },
     {
-      "href": "/article/946a5edb-e8f8-4365-8675-b8a5032c201b",
-      "text": "Validate All Data Passed Between Native and Java Code"
-    },
-    {
-      "href": "/article/43e09871-01a1-4b24-af9f-31e275b91b2f",
-      "text": "Protect Libraries Loaded Through JNI"
-    },
-    {
       "href": "/article/5b207f0a-b17d-42e3-813f-8ac255b3e1bb",
       "text": "Java Supported Functionality Is Not Utilized Through JNI"
-    },
-    {
-      "href": "/article/24e64319-c897-4c27-bfd5-d721b5cdad3c",
-      "text": "The Number of Times Language Boundaries Are Crossed Is Minimized"
     },
     {
       "href": "/article/a61487db-d1e1-4304-89b1-44bb8c88b1e3",
@@ -1624,5 +1528,5 @@
       "text": "Libraries Loaded Through JNI Are Protected"
     }
   ],
-  "html": "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>Applications written using Servlets or JSP.</li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Optimize your code in sauch a way&nbsp;that native code is executed as&nbsp;infrequently as possible.</p>\r\n  <h1>Why</h1>\r\n  <p>Executing native code forces the developer to implement extra security checks and may result in security bugs (such as buffer overflows), which would otherwise be mitigated by the Java Virtual Machine.</p>\r\n  <h1>When</h1>\r\n  <p>Always optimize your code so that native code is executed as&nbsp;infrequently as possible.</p>\r\n  <h1>How</h1>\r\n  <p>To minimize the number of times language boundaries are crossed:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Understand the functionality. </strong>Make sure there is a clear understanding of the required functionality. Label each component as low or high level:</p>\r\n      <ul>\r\n        <li>\r\n          <strong>Low level:</strong> Low-level components are closely tied to the hardware and operating system. Although low-level components are commonly written in native code, Java provides support for the most basic operations such as filesystem access, sockets, etc. <li><strong>High level:</strong> High-level components hold the business logic within an application. Their loose coupling with hardware and operating systems allows them to be implemented 100&#37; using Java. </li></li>\r\n      </ul>\r\n      <li>\r\n        <p>\r\n          <strong>Reduce calls into native code. </strong>Determine which functionalities should be executed in native code. Ensure that native code is called from as few locations in your application as possible. Segregate functionality that requires native code so that its use is isolated into a small number of components.</p>\r\n      </li>\r\n    </li>\r\n  </ol>\r\n  <h1>Problem Example</h1>\r\n  <p>The following segment shows JNI code that utilizes a COM object. Because the code uses Java to verify the GUID's length, the application does unnecessary crossing of language boundaries by invoking Java functionality from native code, thereby disrupting the JVM's security optimization routines. </p>\r\n  <pre>JNIEXPORT jboolean JNICALL Java_Identifier_invokeObject<br />      (JNIEnv &#42; env, jobject jobj, jstring jguid)&#123;<br /><br />      ...<br /><br /><br />      // The code crosses the language boundaries twice:<br />      // get the string and get the string's length<br />      char&#42; temp_guid = (&#42;env)-&gt;GetStringUTFChars(env, jguid, &iscopy);<br />      int guid_size = (int)(&#42;env)-&gt;GetStringLength(env, jguid);<br /><br />      ...<br /> &#125;</pre>\r\n  <h1>Solution Example</h1>\r\n  <p>The following segment shows JNI code that utilizes a COM object. Because the code uses C to verify the GUID's length, there is no extra crossing of language boundaries; therefore, the JVM's security optimization routines are not disrupted. </p>\r\n  <p />\r\n  <pre>JNIEXPORT jboolean JNICALL Java_Identifier_invokeObject<br />      (JNIEnv &#42; env, jobject jobj, jstring jguid)&#123;<br /><br />      ...<br /><br /><br />      // The code crosses the language boundaries once:<br />      // get the string<br />      char&#42; temp_guid = (&#42;env)-&gt;GetStringUTFChars(env, jguid, &iscopy);<br />      int guid_size = (int)strlen(temp_guid);<br /><br />      ...<br /> &#125;</pre>\r\n  <h1>Additional Resources</h1>\r\n  <ul>\r\n    <li>To learn more about JNI, see: <a href=\"http://java.sun.com/j2se/1.3/docs/guide/jni/spec/jniTOC.doc.html\">Java Native Interface Specification</a>. <li>For more information about the security issues that JNI introduces, see: <a href=\"http://www.owasp.org/index.php/Unsafe_JNI\">Unsafe JNI</a> from OWASP. </li></li>\r\n  </ul>\r\n  <h1>Unmanaged Code Guidelines</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/351b69c8-b40b-4c13-899e-a8399b85a0ea\">Do Not Utilize Functionality Through JNI if Java Already Supports It</a>\r\n      <li>\r\n        <a href=\"/article/70b53138-faf7-410a-a966-16f3088fca63\">Minimize the Number of Times Language Boundaries are Crossed</a>\r\n        <li>\r\n          <a href=\"/article/946a5edb-e8f8-4365-8675-b8a5032c201b\">Validate All Data Passed Between Native and Java Code</a>\r\n          <li>\r\n            <a href=\"/article/43e09871-01a1-4b24-af9f-31e275b91b2f\">Protect Libraries Loaded Through JNI</a>\r\n          </li>\r\n        </li>\r\n      </li>\r\n    </li>\r\n  </ul>\r\n  <h1>Unmanaged Code Checklists</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/5b207f0a-b17d-42e3-813f-8ac255b3e1bb\">Java Supported Functionality Is Not Utilized Through JNI</a>\r\n      <li>\r\n        <a href=\"/article/24e64319-c897-4c27-bfd5-d721b5cdad3c\">The Number of Times Language Boundaries Are Crossed Is Minimized</a>\r\n        <li>\r\n          <a href=\"/article/a61487db-d1e1-4304-89b1-44bb8c88b1e3\">All Data Passed Between Native and Java Code Is Validated</a>\r\n          <li>\r\n            <a href=\"/article/d775ead4-8413-4736-a40f-92c7e0231e5b\">Libraries Loaded Through JNI Are Protected</a>\r\n          </li>\r\n        </li>\r\n      </li>\r\n    </li>\r\n  </ul>"
+  "html": "<h1>Applies to</h1>\n  <ul>\n    <li>Applications written using Servlets or JSP.</li>\n  </ul>\n  <h1>What to Do</h1>\n  <p>Optimize your code in sauch a way&nbsp;that native code is executed as&nbsp;infrequently as possible.</p>\n  <h1>Why</h1>\n  <p>Executing native code forces the developer to implement extra security checks and may result in security bugs (such as buffer overflows), which would otherwise be mitigated by the Java Virtual Machine.</p>\n  <h1>When</h1>\n  <p>Always optimize your code so that native code is executed as&nbsp;infrequently as possible.</p>\n  <h1>How</h1>\n  <p>To minimize the number of times language boundaries are crossed:</p>\n  <ol>\n    <li>\n      <p>\n        <strong>Understand the functionality. </strong>Make sure there is a clear understanding of the required functionality. Label each component as low or high level:</p>\n      <ul>\n        <li>\n          <strong>Low level:</strong> Low-level components are closely tied to the hardware and operating system. Although low-level components are commonly written in native code, Java provides support for the most basic operations such as filesystem access, sockets, etc. <li><strong>High level:</strong> High-level components hold the business logic within an application. Their loose coupling with hardware and operating systems allows them to be implemented 100&#37; using Java. </li></li>\n      </ul>\n      <li>\n        <p>\n          <strong>Reduce calls into native code. </strong>Determine which functionalities should be executed in native code. Ensure that native code is called from as few locations in your application as possible. Segregate functionality that requires native code so that its use is isolated into a small number of components.</p>\n      </li>\n    </li>\n  </ol>\n  <h1>Problem Example</h1>\n  <p>The following segment shows JNI code that utilizes a COM object. Because the code uses Java to verify the GUID's length, the application does unnecessary crossing of language boundaries by invoking Java functionality from native code, thereby disrupting the JVM's security optimization routines. </p>\n  <pre>JNIEXPORT jboolean JNICALL Java_Identifier_invokeObject<br />      (JNIEnv &#42; env, jobject jobj, jstring jguid)&#123;<br /><br />      ...<br /><br /><br />      // The code crosses the language boundaries twice:<br />      // get the string and get the string's length<br />      char&#42; temp_guid = (&#42;env)-&gt;GetStringUTFChars(env, jguid, &iscopy);<br />      int guid_size = (int)(&#42;env)-&gt;GetStringLength(env, jguid);<br /><br />      ...<br /> &#125;</pre>\n  <h1>Solution Example</h1>\n  <p>The following segment shows JNI code that utilizes a COM object. Because the code uses C to verify the GUID's length, there is no extra crossing of language boundaries; therefore, the JVM's security optimization routines are not disrupted. </p>\n  <p />\n  <pre>JNIEXPORT jboolean JNICALL Java_Identifier_invokeObject<br />      (JNIEnv &#42; env, jobject jobj, jstring jguid)&#123;<br /><br />      ...<br /><br /><br />      // The code crosses the language boundaries once:<br />      // get the string<br />      char&#42; temp_guid = (&#42;env)-&gt;GetStringUTFChars(env, jguid, &iscopy);<br />      int guid_size = (int)strlen(temp_guid);<br /><br />      ...<br /> &#125;</pre>\n  <h1>Additional Resources</h1>\n  <ul>\n    <li>To learn more about JNI, see: <a href=\"http://java.sun.com/j2se/1.3/docs/guide/jni/spec/jniTOC.doc.html\">Java Native Interface Specification</a>. <li>For more information about the security issues that JNI introduces, see: <a href=\"http://www.owasp.org/index.php/Unsafe_JNI\">Unsafe JNI</a> from OWASP. </li></li>\n  </ul>\n  <h1>Unmanaged Code Guidelines</h1>\n  <ul>\n    <li>\n      <a href=\"/article/351b69c8-b40b-4c13-899e-a8399b85a0ea\">Do Not Utilize Functionality Through JNI if Java Already Supports It</a>\n      <li>\n        <a href=\"/article/70b53138-faf7-410a-a966-16f3088fca63\">Minimize the Number of Times Language Boundaries are Crossed</a>\n      </li>\n    </li>\n  </ul>\n  <h1>Unmanaged Code Checklists</h1>\n  <ul>\n    <li>\n      <a href=\"/article/5b207f0a-b17d-42e3-813f-8ac255b3e1bb\">Java Supported Functionality Is Not Utilized Through JNI</a>\n        <li>\n          <a href=\"/article/a61487db-d1e1-4304-89b1-44bb8c88b1e3\">All Data Passed Between Native and Java Code Is Validated</a>\n          <li>\n            <a href=\"/article/d775ead4-8413-4736-a40f-92c7e0231e5b\">Libraries Loaded Through JNI Are Protected</a>\n          </li>\n        </li>\n    </li>\n  </ul>"
 }

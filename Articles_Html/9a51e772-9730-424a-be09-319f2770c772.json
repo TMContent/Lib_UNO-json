@@ -1,11 +1,7 @@
 {
   "id": "9a51e772-9730-424a-be09-319f2770c772",
-  "checksum": "a5d114261f3bc2afd255229e25c4d7b5f1a4158c",
+  "checksum": "2fbf235c98b2a37dfe9a84213d563dc129bfdadd",
   "words": {
-    "40": [
-      "ul",
-      "li"
-    ],
     "443": [
       "ol",
       "li",
@@ -14,11 +10,10 @@
       "li",
       "p"
     ],
-    "applies": [
+    "what": [
       "h1"
     ],
     "to": [
-      "h1",
       "h1",
       "p",
       "p",
@@ -32,13 +27,6 @@
       "ol",
       "li",
       "p"
-    ],
-    "aspnet": [
-      "ul",
-      "li"
-    ],
-    "what": [
-      "h1"
     ],
     "check": [
       "h1",
@@ -70,9 +58,6 @@
       "p",
       "p",
       "strong",
-      "ul",
-      "li",
-      "a",
       "title"
     ],
     "verify": [
@@ -118,34 +103,25 @@
       "p",
       "p"
     ],
-    "ssl": [
+    "tls": [
       "p",
       "p",
       "p",
       "ol",
       "ol",
-      "ol",
       "li",
       "li",
-      "li",
-      "p",
       "p",
       "p",
       "strong",
       "p",
       "ol",
       "ol",
-      "ol",
       "li",
       "li",
-      "li",
-      "p",
       "p",
       "p",
       "strong",
-      "ul",
-      "li",
-      "a",
       "title"
     ],
     "is": [
@@ -191,17 +167,11 @@
       "li",
       "p",
       "p",
-      "ul",
-      "li",
-      "a",
       "title"
     ],
     "private": [
       "p",
       "p",
-      "ul",
-      "li",
-      "a",
       "title"
     ],
     "pages": [
@@ -241,9 +211,6 @@
       "p",
       "p",
       "strong",
-      "ul",
-      "li",
-      "a",
       "title"
     ],
     "why": [
@@ -507,7 +474,7 @@
       "p",
       "strong"
     ],
-    "exists start": [
+    "exists&nbsp;start": [
       "ol",
       "li",
       "p"
@@ -736,7 +703,7 @@
       "li",
       "p"
     ],
-    "pages start": [
+    "pages&nbsp;start": [
       "ol",
       "li",
       "p"
@@ -766,6 +733,14 @@
       "p"
     ],
     "double-click": [
+      "ol",
+      "li",
+      "p",
+      "ol",
+      "li",
+      "p"
+    ],
+    "ssl": [
       "ol",
       "li",
       "p",
@@ -896,90 +871,50 @@
       "p",
       "strong"
     ],
-    "start the": [
+    "start&nbspthe": [
       "ol",
       "li",
       "p"
-    ],
-    "related": [
-      "h1"
-    ],
-    "items": [
-      "h1"
-    ],
-    "you": [
-      "em"
-    ],
-    "may": [
-      "em"
-    ],
-    "find": [
-      "em"
-    ],
-    "these": [
-      "em"
-    ],
-    "additional": [
-      "em"
-    ],
-    "articles": [
-      "em"
-    ],
-    "useful": [
-      "em"
-    ],
-    "require": [
-      "ul",
-      "li",
-      "a"
     ]
   },
   "tags": {
     "h1": [
-      "Applies To",
       "What to Check For",
       "Why",
       "How To Check",
-      "How To Fix",
-      "Related Items"
-    ],
-    "ul": [
-      "ASP.NET 4.0",
-      "Require SSL for All Private Pages"
-    ],
-    "li": [
-      "ASP.NET 4.0",
-      "Identify sensitive pages. Make a list of all pages that handle sensitive information, including all pages that use authentication or authorization features.",
-      "Verify that a HTTPS binding exists. Start the \"Internet Information Services (IIS) Manager\". Right-click on the site and select \"Edit bindings...\". Verify that a HTTPS binding exists. The HTTPS protocol should be bound to port 443.",
-      "Check that SSL is required for all sensitive pages. Start the \"Internet Information Services (IIS) Manager\". Navigate the folders with the sensitive pages. Double-click on the SSL icon in the right pane and make sure that SSL is enabled for the folder.",
-      "Identify sensitive pages. Make a list of all pages that handle sensitive information, including all pages that use authentication or authorization features.",
-      "Enable a HTTPS binding for the site. Start the \"Internet Information Services (IIS) Manager\". Right-click on the site and select \"Edit bindings...\". Add a binding of the \"https\" type. The HTTPS protocol should be bound to port 443.",
-      "Enable SSL for each folder containing sensitive pages. Start the \"Internet Information Services (IIS) Manager\". Navigate the folders with sensitive pages. Double-click on the SSL icon in the right pane and enable SSL for the folder.",
-      "Require SSL for All Private Pages"
+      "How To Fix"
     ],
     "p": [
-      "Verify that SSL is required for all private pages.",
-      "SSL should be used to protect all pages that handle sensitive data, including all pages that use authentication or authorization features, to prevent unauthorized information disclosure.",
-      "To verify that SSL is required for all private pages:",
+      "Verify that TLS is required for all private pages.",
+      "TLS should be used to protect all pages that handle sensitive data, including all pages that use authentication or authorization features, to prevent unauthorized information disclosure.",
+      "To verify that TLS is required for all private pages:",
       "Identify sensitive pages. Make a list of all pages that handle sensitive information, including all pages that use authentication or authorization features.",
-      "Verify that a HTTPS binding exists. Start the \"Internet Information Services (IIS) Manager\". Right-click on the site and select \"Edit bindings...\". Verify that a HTTPS binding exists. The HTTPS protocol should be bound to port 443.",
-      "Check that SSL is required for all sensitive pages. Start the \"Internet Information Services (IIS) Manager\". Navigate the folders with the sensitive pages. Double-click on the SSL icon in the right pane and make sure that SSL is enabled for the folder.",
-      "To enable SSL on all sensitive pages:",
+      "Verify that a HTTPS binding exists.&nbsp;Start the \"Internet Information Services (IIS) Manager\". Right-click on the site and select \"Edit bindings...\". Verify that a HTTPS binding exists. The HTTPS protocol should be bound to port 443.",
+      "Check that TLS is required for all sensitive pages.&nbsp;Start the \"Internet Information Services (IIS) Manager\". Navigate the folders with the sensitive pages. Double-click on the SSL icon in the right pane and make sure that TLS is enabled for the folder.",
+      "To enable TLS on all sensitive pages:",
       "Identify sensitive pages. Make a list of all pages that handle sensitive information, including all pages that use authentication or authorization features.",
       "Enable a HTTPS binding for the site. Start the \"Internet Information Services (IIS) Manager\". Right-click on the site and select \"Edit bindings...\". Add a binding of the \"https\" type. The HTTPS protocol should be bound to port 443.",
-      "Enable SSL for each folder containing sensitive pages. Start the \"Internet Information Services (IIS) Manager\". Navigate the folders with sensitive pages. Double-click on the SSL icon in the right pane and enable SSL for the folder."
+      "Enable TLS for each folder containing sensitive pages. Start&nbsp;the \"Internet Information Services (IIS) Manager\". Navigate the folders with sensitive pages. Double-click on the SSL icon in the right pane and enable TLS for the folder."
     ],
     "ol": [
-      "Identify sensitive pages. Make a list of all pages that handle sensitive information, including all pages that use authentication or authorization features.\r\n      \r\n        \r\n          Verify that a HTTPS binding exists. Start the \"Internet Information Services (IIS) Manager\". Right-click on the site and select \"Edit bindings...\". Verify that a HTTPS binding exists. The HTTPS protocol should be bound to port 443.\r\n        \r\n          \r\n            Check that SSL is required for all sensitive pages. Start the \"Internet Information Services (IIS) Manager\". Navigate the folders with the sensitive pages. Double-click on the SSL icon in the right pane and make sure that SSL is enabled for the folder.",
-      "Identify sensitive pages. Make a list of all pages that handle sensitive information, including all pages that use authentication or authorization features.\r\n      \r\n        \r\n          Enable a HTTPS binding for the site. Start the \"Internet Information Services (IIS) Manager\". Right-click on the site and select \"Edit bindings...\". Add a binding of the \"https\" type. The HTTPS protocol should be bound to port 443.\r\n        \r\n          \r\n            Enable SSL for each folder containing sensitive pages. Start the \"Internet Information Services (IIS) Manager\". Navigate the folders with sensitive pages. Double-click on the SSL icon in the right pane and enable SSL for the folder."
+      "Identify sensitive pages. Make a list of all pages that handle sensitive information, including all pages that use authentication or authorization features.\n      \n        \n          Verify that a HTTPS binding exists.&nbsp;Start the \"Internet Information Services (IIS) Manager\". Right-click on the site and select \"Edit bindings...\". Verify that a HTTPS binding exists. The HTTPS protocol should be bound to port 443.\n        \n          \n            Check that TLS is required for all sensitive pages.&nbsp;Start the \"Internet Information Services (IIS) Manager\". Navigate the folders with the sensitive pages. Double-click on the SSL icon in the right pane and make sure that TLS is enabled for the folder.",
+      "Identify sensitive pages. Make a list of all pages that handle sensitive information, including all pages that use authentication or authorization features.\n      \n        \n          Enable a HTTPS binding for the site. Start the \"Internet Information Services (IIS) Manager\". Right-click on the site and select \"Edit bindings...\". Add a binding of the \"https\" type. The HTTPS protocol should be bound to port 443.\n        \n          \n            Enable TLS for each folder containing sensitive pages. Start&nbsp;the \"Internet Information Services (IIS) Manager\". Navigate the folders with sensitive pages. Double-click on the SSL icon in the right pane and enable TLS for the folder."
+    ],
+    "li": [
+      "Identify sensitive pages. Make a list of all pages that handle sensitive information, including all pages that use authentication or authorization features.",
+      "Verify that a HTTPS binding exists.&nbsp;Start the \"Internet Information Services (IIS) Manager\". Right-click on the site and select \"Edit bindings...\". Verify that a HTTPS binding exists. The HTTPS protocol should be bound to port 443.",
+      "Check that TLS is required for all sensitive pages.&nbsp;Start the \"Internet Information Services (IIS) Manager\". Navigate the folders with the sensitive pages. Double-click on the SSL icon in the right pane and make sure that TLS is enabled for the folder.",
+      "Identify sensitive pages. Make a list of all pages that handle sensitive information, including all pages that use authentication or authorization features.",
+      "Enable a HTTPS binding for the site. Start the \"Internet Information Services (IIS) Manager\". Right-click on the site and select \"Edit bindings...\". Add a binding of the \"https\" type. The HTTPS protocol should be bound to port 443.",
+      "Enable TLS for each folder containing sensitive pages. Start&nbsp;the \"Internet Information Services (IIS) Manager\". Navigate the folders with sensitive pages. Double-click on the SSL icon in the right pane and enable TLS for the folder."
     ],
     "strong": [
       "Identify sensitive pages.",
       "Verify that a HTTPS binding exists.",
-      "Check that SSL is required for all sensitive pages.",
+      "Check that TLS is required for all sensitive pages.",
       "Identify sensitive pages.",
       "Enable a HTTPS binding for the site.",
-      "Enable SSL for each folder containing sensitive pages."
+      "Enable TLS for each folder containing sensitive pages."
     ],
     "em": [
       "Internet Information Services (IIS) Manager",
@@ -988,18 +923,9 @@
       "Internet Information Services (IIS) Manager",
       "Edit bindings...",
       "https",
-      "Internet Information Services (IIS) Manager",
-      "You may find these additional articles useful"
-    ],
-    "a": [
-      "Require SSL for All Private Pages"
+      "Internet Information Services (IIS) Manager"
     ]
   },
-  "links": [
-    {
-      "href": "/article/cd6ce120-b17e-4fac-b390-b5f804fc7e23",
-      "text": "Require SSL for All Private Pages"
-    }
-  ],
-  "html": "<h1>Applies To</h1>\r\n  <ul>\r\n    <li>ASP.NET 4.0</li>\r\n  </ul>\r\n  <h1>What to Check For</h1>\r\n  <p>Verify that SSL is required for all private pages.</p>\r\n  <h1>Why</h1>\r\n  <p>SSL should be used to protect all pages that handle sensitive data, including all pages that use authentication or authorization features, to prevent unauthorized information disclosure.</p>\r\n  <h1>How To Check</h1>\r\n  <p>To verify that SSL is required for all private pages:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Identify sensitive pages.</strong> Make a list of all pages that handle sensitive information, including all pages that use authentication or authorization features.</p>\r\n      <li>\r\n        <p>\r\n          <strong>Verify that a HTTPS binding exists.</strong>&nbsp;Start the \"<em>Internet Information Services (IIS) Manager</em>\". Right-click on the site and select \"<em>Edit bindings...</em>\". Verify that a HTTPS binding exists. The HTTPS protocol should be bound to port 443.</p>\r\n        <li>\r\n          <p>\r\n            <strong>Check that SSL is required for all sensitive pages.</strong>&nbsp;Start the \"<em>Internet Information Services (IIS) Manager</em>\". Navigate the folders with the sensitive pages. Double-click on the SSL icon in the right pane and make sure that SSL is enabled for the folder. </p>\r\n        </li>\r\n      </li>\r\n    </li>\r\n  </ol>\r\n  <h1>How To Fix</h1>\r\n  <p>To enable SSL on all sensitive pages:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Identify sensitive pages.</strong> Make a list of all pages that handle sensitive information, including all pages that use authentication or authorization features.</p>\r\n      <li>\r\n        <p>\r\n          <strong>Enable a HTTPS binding for the site.</strong> Start the \"<em>Internet Information Services (IIS) Manager</em>\". Right-click on the site and select \"<em>Edit bindings...</em>\". Add a binding of the \"<em>https</em>\" type. The HTTPS protocol should be bound to port 443.</p>\r\n        <li>\r\n          <p>\r\n            <strong>Enable SSL for each folder containing sensitive pages.</strong> Start&nbsp;the \"<em>Internet Information Services (IIS) Manager</em>\". Navigate the folders with sensitive pages. Double-click on the SSL icon in the right pane and enable SSL for the folder.</p>\r\n        </li>\r\n      </li>\r\n    </li>\r\n  </ol>\r\n  <h1>Related Items</h1>\r\n  <em>You may find these additional articles useful</em>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/cd6ce120-b17e-4fac-b390-b5f804fc7e23\">Require SSL for All Private Pages</a>\r\n    </li>\r\n  </ul>"
+  "links": [],
+  "html": "<h1>What to Check For</h1>\n  <p>Verify that TLS is required for all private pages.</p>\n  <h1>Why</h1>\n  <p>TLS should be used to protect all pages that handle sensitive data, including all pages that use authentication or authorization features, to prevent unauthorized information disclosure.</p>\n  <h1>How To Check</h1>\n  <p>To verify that TLS is required for all private pages:</p>\n  <ol>\n    <li>\n      <p>\n        <strong>Identify sensitive pages.</strong> Make a list of all pages that handle sensitive information, including all pages that use authentication or authorization features.</p>\n      <li>\n        <p>\n          <strong>Verify that a HTTPS binding exists.</strong>&amp;nbsp;Start the \"<em>Internet Information Services (IIS) Manager</em>\". Right-click on the site and select \"<em>Edit bindings...</em>\". Verify that a HTTPS binding exists. The HTTPS protocol should be bound to port 443.</p>\n        <li>\n          <p>\n            <strong>Check that TLS is required for all sensitive pages.</strong>&amp;nbsp;Start the \"<em>Internet Information Services (IIS) Manager</em>\". Navigate the folders with the sensitive pages. Double-click on the SSL icon in the right pane and make sure that TLS is enabled for the folder. </p>\n        </li>\n      </li>\n    </li>\n  </ol>\n  <h1>How To Fix</h1>\n  <p>To enable TLS on all sensitive pages:</p>\n  <ol>\n    <li>\n      <p>\n        <strong>Identify sensitive pages.</strong> Make a list of all pages that handle sensitive information, including all pages that use authentication or authorization features.</p>\n      <li>\n        <p>\n          <strong>Enable a HTTPS binding for the site.</strong> Start the \"<em>Internet Information Services (IIS) Manager</em>\". Right-click on the site and select \"<em>Edit bindings...</em>\". Add a binding of the \"<em>https</em>\" type. The HTTPS protocol should be bound to port 443.</p>\n        <li>\n          <p>\n            <strong>Enable TLS for each folder containing sensitive pages.</strong> Start&amp;nbsp;the \"<em>Internet Information Services (IIS) Manager</em>\". Navigate the folders with sensitive pages. Double-click on the SSL icon in the right pane and enable TLS for the folder.</p>\n        </li>\n      </li>\n    </li>\n  </ol>"
 }

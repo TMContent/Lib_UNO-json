@@ -1,6 +1,6 @@
 {
   "id": "d9936be5-17a7-44ba-ade7-04268863bd1e",
-  "checksum": "cb7958775fd4d2ab0415096c024a1685bfea5dd0",
+  "checksum": "65e45f7d224d1233290084a5caf42af994742906",
   "words": {
     "35": [
       "ul",
@@ -385,7 +385,7 @@
       "Description"
     ],
     "ul": [
-      "Microsoft® Windows Communication Foundation (WCF) 3.5 \r\nMicrosoft Visual Studio® 2008"
+      "Microsoft® Windows Communication Foundation (WCF) 3.5 \nMicrosoft Visual Studio® 2008"
     ],
     "li": [
       "Microsoft® Windows Communication Foundation (WCF) 3.5",
@@ -428,5 +428,5 @@
     ]
   },
   "links": [],
-  "html": "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>Microsoft® Windows Communication Foundation (WCF) 3.5 \r\n<li>Microsoft Visual Studio® 2008</li></li>\r\n  </ul>\r\n  <h1>Description</h1>\r\n  <p>Protect against denial of service attacks by limiting message sizes, and using quotas to restrict memory consumption by WCF. </p>\r\n  <p>Restrict the message size that is processed by WCF using the maxReceivedMessageSize configuration present in the bindings</p>\r\n  <pre>&lt;binding name=\"wsHttpEndpointBindingconfig\" <br />     maxReceivedMessageSize=\"65535\"&gt;<br />     &lt;security&gt;<br />      &lt;message negotiateServiceCredential=\"false\" /&gt;<br />     &lt;/security&gt;<br />&lt;/binding&gt;</pre>\r\n  <p>Restrict the buffer size used by WCF using the maxBufferPoolSize configuration present in the bindings</p>\r\n  <pre>&lt;binding name=\"wsHttpEndpointBindingconfig\" maxBufferPoolSize=\"524287\"<br />     maxReceivedMessageSize=\"65535\"&gt;<br />     &lt;security&gt;<br />      &lt;message negotiateServiceCredential=\"false\" /&gt;<br />     &lt;/security&gt;<br />&lt;/binding&gt;</pre>\r\n  <p>In streaming scenarios use the reader quotas to limit the size of arrays with maxArrayLength, the length of the string in XML elements with maxStringContentLength, the maximum depth of the XML node with maxDepth, the maximum bytes to be read with maxBytesPerRead and the maximum number of characters in a table with maxNameTableCharCount. </p>\r\n  <pre>&lt;basicHttpBinding&gt;<br />        &lt;binding name=\"BasicBindingConfiguration\"&gt;<br />          &lt;readerQuotas maxDepth=\"2\" maxStringContentLength=\"200\" maxArrayLength=\"2000\"<br />            maxBytesPerRead=\"1000\" maxNameTableCharCount=\"1000\" /&gt;<br />          &lt;security mode=\"Transport\"&gt;<br />            &lt;transport clientCredentialType=\"None\" /&gt;<br />          &lt;/security&gt;<br />        &lt;/binding&gt;<br />  &lt;/basicHttpBinding&gt;</pre>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
+  "html": "<h1>Applies to</h1>\n  <ul>\n    <li>Microsoft® Windows Communication Foundation (WCF) 3.5 \n<li>Microsoft Visual Studio® 2008</li></li>\n  </ul>\n  <h1>Description</h1>\n  <p>Protect against denial of service attacks by limiting message sizes, and using quotas to restrict memory consumption by WCF. </p>\n  <p>Restrict the message size that is processed by WCF using the maxReceivedMessageSize configuration present in the bindings</p>\n  <pre>&lt;binding name=\"wsHttpEndpointBindingconfig\" <br />     maxReceivedMessageSize=\"65535\"&gt;<br />     &lt;security&gt;<br />      &lt;message negotiateServiceCredential=\"false\" /&gt;<br />     &lt;/security&gt;<br />&lt;/binding&gt;</pre>\n  <p>Restrict the buffer size used by WCF using the maxBufferPoolSize configuration present in the bindings</p>\n  <pre>&lt;binding name=\"wsHttpEndpointBindingconfig\" maxBufferPoolSize=\"524287\"<br />     maxReceivedMessageSize=\"65535\"&gt;<br />     &lt;security&gt;<br />      &lt;message negotiateServiceCredential=\"false\" /&gt;<br />     &lt;/security&gt;<br />&lt;/binding&gt;</pre>\n  <p>In streaming scenarios use the reader quotas to limit the size of arrays with maxArrayLength, the length of the string in XML elements with maxStringContentLength, the maximum depth of the XML node with maxDepth, the maximum bytes to be read with maxBytesPerRead and the maximum number of characters in a table with maxNameTableCharCount. </p>\n  <pre>&lt;basicHttpBinding&gt;<br />        &lt;binding name=\"BasicBindingConfiguration\"&gt;<br />          &lt;readerQuotas maxDepth=\"2\" maxStringContentLength=\"200\" maxArrayLength=\"2000\"<br />            maxBytesPerRead=\"1000\" maxNameTableCharCount=\"1000\" /&gt;<br />          &lt;security mode=\"Transport\"&gt;<br />            &lt;transport clientCredentialType=\"None\" /&gt;<br />          &lt;/security&gt;<br />        &lt;/binding&gt;<br />  &lt;/basicHttpBinding&gt;</pre>\n  <hr />\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
 }

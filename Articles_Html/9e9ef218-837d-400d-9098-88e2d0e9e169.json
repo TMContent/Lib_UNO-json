@@ -1,6 +1,6 @@
 {
   "id": "9e9ef218-837d-400d-9098-88e2d0e9e169",
-  "checksum": "d1222e4f6ddc81f980e096c39bae40d95513c5cf",
+  "checksum": "0b64b073ad9666f0e1205ed5e74273385193cdae",
   "words": {
     "what": [
       "h2"
@@ -230,9 +230,9 @@
       "What to Do"
     ],
     "p": [
-      "Use a language that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid. For example, many languages that perform their own memory management, such as Java and Perl, are not subject to buffer overflows. Other\r\n languages, such as Ada and C#, typically provide overflow protection, but the protection can be disabled by the programmer. Be wary that a language's interface to native code may still be subject to overflows, even if the language itself is theoretically safe."
+      "Use a language that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid. For example, many languages that perform their own memory management, such as Java and Perl, are not subject to buffer overflows. Other\n languages, such as Ada and C#, typically provide overflow protection, but the protection can be disabled by the programmer. Be wary that a language's interface to native code may still be subject to overflows, even if the language itself is theoretically safe."
     ]
   },
   "links": [],
-  "html": "<h2>What to Do</h2>\r\n  <p>Use a language that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid. For example, many languages that perform their own memory management, such as Java and Perl, are not subject to buffer overflows. Other\r\n languages, such as Ada and C#, typically provide overflow protection, but the protection can be disabled by the programmer. Be wary that a language's interface to native code may still be subject to overflows, even if the language itself is theoretically safe.</p>"
+  "html": "<h2>What to Do</h2>\n  <p>Use a language that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid. For example, many languages that perform their own memory management, such as Java and Perl, are not subject to buffer overflows. Other\n languages, such as Ada and C#, typically provide overflow protection, but the protection can be disabled by the programmer. Be wary that a language's interface to native code may still be subject to overflows, even if the language itself is theoretically safe.</p>"
 }

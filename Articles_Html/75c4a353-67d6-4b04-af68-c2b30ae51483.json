@@ -1,6 +1,6 @@
 {
   "id": "75c4a353-67d6-4b04-af68-c2b30ae51483",
-  "checksum": "03f848dcb4ea4e4614139c9b7bd9ca23b4b26e2a",
+  "checksum": "b3f758c870b82b6ce0829615b1c253802b3379b1",
   "words": {
     "1": [
       "p"
@@ -201,6 +201,9 @@
     ],
     "guidance": [
       "p"
+    ],
+    "sink]": [
+      "title"
     ]
   },
   "tags": {
@@ -228,5 +231,5 @@
     ]
   },
   "links": [],
-  "html": "<h1>What to Check For</h1>\r\n  <p>Ensure that your application sets the <strong>httpOnlyCookies</strong> attribute to true on the authentication cookie to prevent client-side script from accessing the cookie.</p>\r\n  <h1>How to Fix</h1>\r\n  <p>Set the <b>httpOnlyCookies</b> attribute on the authentication cookie. Internet Explorer 6 Service Pack 1 supports this attribute, which prevents client-side script from accessing the cookie from the <b>document.cookie</b> property. The <b>System.Net.Cookie</b> class supports an <b>HttpOnly</b> property. The <b>HttpOnly</b> property is always set to true by forms authentication </p>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance. </p>"
+  "html": "<h1>What to Check For</h1>\n  <p>Ensure that your application sets the <strong>httpOnlyCookies</strong> attribute to true on the authentication cookie to prevent client-side script from accessing the cookie.</p>\n  <h1>How to Fix</h1>\n  <p>Set the <b>httpOnlyCookies</b> attribute on the authentication cookie. Internet Explorer 6 Service Pack 1 supports this attribute, which prevents client-side script from accessing the cookie from the <b>document.cookie</b> property. The <b>System.Net.Cookie</b> class supports an <b>HttpOnly</b> property. The <b>HttpOnly</b> property is always set to true by forms authentication </p>\n  <hr />\n  <p>Adapted from Microsoft patterns &amp; practices guidance. </p>"
 }

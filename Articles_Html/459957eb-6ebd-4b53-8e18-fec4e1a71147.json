@@ -1,6 +1,6 @@
 {
   "id": "459957eb-6ebd-4b53-8e18-fec4e1a71147",
-  "checksum": "20e9e76f774ed6f4c30fb68c41143385bfd64773",
+  "checksum": "cc34b4620ed60328b886244ab3df80b097d0bbcf",
   "words": {
     "what": [
       "h1"
@@ -119,9 +119,6 @@
       "strong",
       "p",
       "p",
-      "ul",
-      "li",
-      "li",
       "ul",
       "li",
       "ul",
@@ -243,10 +240,8 @@
       "ul",
       "li"
     ],
-    "needed": [
-      "p",
-      "ul",
-      "li"
+    "needed&nbsp;": [
+      "p"
     ],
     "administrators": [
       "p",
@@ -341,7 +336,7 @@
     "their": [
       "p"
     ],
-    "tracks": [
+    "tracks&nbsp;": [
       "p"
     ],
     "furthermore": [
@@ -402,6 +397,10 @@
       "p",
       "title"
     ],
+    "needed": [
+      "ul",
+      "li"
+    ],
     "that": [
       "ul",
       "li"
@@ -453,10 +452,7 @@
       "strong",
       "p"
     ],
-    "server": [
-      "p",
-      "p",
-      "strong",
+    "server&nbsp;": [
       "p"
     ],
     "here's": [
@@ -620,6 +616,11 @@
       "ul",
       "li"
     ],
+    "files&nbsp;": [
+      "li",
+      "ul",
+      "li"
+    ],
     "authorize": [
       "li",
       "ul",
@@ -639,6 +640,11 @@
       "li",
       "ul",
       "li"
+    ],
+    "server": [
+      "p",
+      "strong",
+      "p"
     ],
     "if": [
       "p"
@@ -732,10 +738,10 @@
       "Related Items"
     ],
     "p": [
-      "Check to ensure access rights to log files are appropriately set. Application accounts should have write-only access and operators and support personnel should have read-only access as needed.  Administrators accounts are the only accounts which should have full access.",
-      "Restricting access to log files makes it harder for attackers to tamper with log files to cover their tracks.  Furthermore, it reduces opportunities for the repudiation or forging of actions.",
+      "Check to ensure access rights to log files are appropriately set. Application accounts should have write-only access and operators and support personnel should have read-only access as needed.&nbsp; Administrators accounts are the only accounts which should have full access.",
+      "Restricting access to log files makes it harder for attackers to tamper with log files to cover their tracks.&nbsp; Furthermore, it reduces opportunities for the repudiation or forging of actions.",
       "Check Windows ACLs on log files to ensure they are properly restricted:",
-      "Logging normally comes in two flavors, either logging to a file or logging to SQL server.  Here's a look at how you can secure access to each of these:",
+      "Logging normally comes in two flavors, either logging to a file or logging to SQL server.&nbsp; Here's a look at how you can secure access to each of these:",
       "Logging to Files",
       "Protect audit and log files using Windows ACLs and restrict access to the log files.",
       "Logging to SQL Server",
@@ -746,7 +752,7 @@
       "Application accounts should have write-only access Operators and support personnel should have read-only access as needed Administrators are the only accounts that should have full access",
       "Assign appropriate permissions to the log files. Logs should be written by a process with write permission only. Logs should be read only by users with administrative access.",
       "Logs should be written by a process with write permission only. Logs should be read only by users with administrative access.",
-      "Grant write access to the account or accounts used by your application Grant full control to administrators Grant read-only access to operators. Minimize the number of individuals who can manipulate the log files.  Authorize access only to highly trusted accounts such as administrators.",
+      "Grant write access to the account or accounts used by your application Grant full control to administrators Grant read-only access to operators. Minimize the number of individuals who can manipulate the log files.&nbsp; Authorize access only to highly trusted accounts such as administrators.",
       "Restrict Access to Audit and Log Files"
     ],
     "li": [
@@ -756,11 +762,11 @@
       "Assign appropriate permissions to the log files. Logs should be written by a process with write permission only. Logs should be read only by users with administrative access.",
       "Logs should be written by a process with write permission only.",
       "Logs should be read only by users with administrative access.",
-      "Minimize the number of individuals who can manipulate the log files.  Authorize access only to highly trusted accounts such as administrators.",
+      "Minimize the number of individuals who can manipulate the log files.&nbsp; Authorize access only to highly trusted accounts such as administrators.",
       "Grant write access to the account or accounts used by your application",
       "Grant full control to administrators",
       "Grant read-only access to operators.",
-      "Minimize the number of individuals who can manipulate the log files.  Authorize access only to highly trusted accounts such as administrators.",
+      "Minimize the number of individuals who can manipulate the log files.&nbsp; Authorize access only to highly trusted accounts such as administrators.",
       "Restrict Access to Audit and Log Files"
     ],
     "strong": [
@@ -780,5 +786,5 @@
       "text": "Restrict Access to Audit and Log Files"
     }
   ],
-  "html": "<h1>What to Check For</h1>\r\n  <p>Check to ensure access rights to log files are appropriately set. Application accounts should have write-only access and operators and support personnel should have read-only access as needed.&nbsp; Administrators accounts are the only accounts which should have full access.</p>\r\n  <h1>Why</h1>\r\n  <p>Restricting access to log files makes it harder for attackers to tamper with log files to cover their tracks.&nbsp; Furthermore, it reduces opportunities for the repudiation or forging of actions.</p>\r\n  <h1>How to Check</h1>\r\n  <p>Check Windows ACLs on log files to ensure they are properly restricted:</p>\r\n  <ul>\r\n    <li>Application accounts should have write-only access <li>Operators and support personnel should have read-only access as needed <li>Administrators are the only accounts that should have full access</li></li></li>\r\n  </ul>\r\n  <h1>How to Fix</h1>\r\n  <p>Logging normally comes in two flavors, either logging to a file or logging to SQL server.&nbsp; Here's a look at how you can secure access to each of these:</p>\r\n  <p>\r\n    <strong>Logging to Files</strong>\r\n  </p>\r\n  <p>Protect audit and log files using Windows ACLs and restrict access to the log files. </p>\r\n  <ul>\r\n    <li>Assign appropriate permissions to the log files. <ul><li>Logs should be written by a process with write permission only. <li>Logs should be read only by users with administrative access.</li></li></ul><li>Minimize the number of individuals who can manipulate the log files.&nbsp; Authorize access only to highly trusted accounts such as administrators. </li></li>\r\n  </ul>\r\n  <p>\r\n    <strong>Logging to SQL Server</strong>\r\n  </p>\r\n  <p>If you log events to SQL Server or to some custom event sink, use appropriate access controls to limit access to the event data.</p>\r\n  <ul>\r\n    <li>Grant write access to the account or accounts used by your application <li>Grant full control to administrators <li>Grant read-only access to operators. <li>Minimize the number of individuals who can manipulate the log files.&nbsp; Authorize access only to highly trusted accounts such as administrators.</li></li></li></li>\r\n  </ul>\r\n  <h1>Related Items</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/0def44d6-fea1-45a9-951c-79b54d549e5c\">Restrict Access to Audit and Log Files</a>\r\n    </li>\r\n  </ul>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance. </p>"
+  "html": "<h1>What to Check For</h1>\n  <p>Check to ensure access rights to log files are appropriately set. Application accounts should have write-only access and operators and support personnel should have read-only access as needed.&amp;nbsp; Administrators accounts are the only accounts which should have full access.</p>\n  <h1>Why</h1>\n  <p>Restricting access to log files makes it harder for attackers to tamper with log files to cover their tracks.&amp;nbsp; Furthermore, it reduces opportunities for the repudiation or forging of actions.</p>\n  <h1>How to Check</h1>\n  <p>Check Windows ACLs on log files to ensure they are properly restricted:</p>\n  <ul>\n    <li>Application accounts should have write-only access <li>Operators and support personnel should have read-only access as needed <li>Administrators are the only accounts that should have full access</li></li></li>\n  </ul>\n  <h1>How to Fix</h1>\n  <p>Logging normally comes in two flavors, either logging to a file or logging to SQL server.&amp;nbsp; Here's a look at how you can secure access to each of these:</p>\n  <p>\n    <strong>Logging to Files</strong>\n  </p>\n  <p>Protect audit and log files using Windows ACLs and restrict access to the log files. </p>\n  <ul>\n    <li>Assign appropriate permissions to the log files. <ul><li>Logs should be written by a process with write permission only. <li>Logs should be read only by users with administrative access.</li></li></ul><li>Minimize the number of individuals who can manipulate the log files.&amp;nbsp; Authorize access only to highly trusted accounts such as administrators. </li></li>\n  </ul>\n  <p>\n    <strong>Logging to SQL Server</strong>\n  </p>\n  <p>If you log events to SQL Server or to some custom event sink, use appropriate access controls to limit access to the event data.</p>\n  <ul>\n    <li>Grant write access to the account or accounts used by your application <li>Grant full control to administrators <li>Grant read-only access to operators. <li>Minimize the number of individuals who can manipulate the log files.&amp;nbsp; Authorize access only to highly trusted accounts such as administrators.</li></li></li></li>\n  </ul>\n  <h1>Related Items</h1>\n  <ul>\n    <li>\n      <a href=\"/article/0def44d6-fea1-45a9-951c-79b54d549e5c\">Restrict Access to Audit and Log Files</a>\n    </li>\n  </ul>\n  <hr />\n  <p>Adapted from Microsoft patterns &amp; practices guidance. </p>"
 }

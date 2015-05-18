@@ -1,6 +1,6 @@
 {
   "id": "e036d255-a983-494a-aeaf-a62bd41ad505",
-  "checksum": "065d3fba1e4c1c414cc92852931e4c60d2b941a9",
+  "checksum": "fa2e26b1c639933ebdcc338cab65415c67090131",
   "words": {
     "applies": [
       "h2"
@@ -43,7 +43,7 @@
       "p",
       "p"
     ],
-    "ssl": [
+    "tls": [
       "p",
       "p",
       "p",
@@ -410,7 +410,7 @@
       "li",
       "strong"
     ],
-    "non-ssl": [
+    "non-tls": [
       "ol",
       "li",
       "strong"
@@ -420,7 +420,7 @@
       "li",
       "strong"
     ],
-    "ssl-protected": [
+    "tls-protected": [
       "ol",
       "li",
       "strong"
@@ -459,23 +459,23 @@
     "li": [
       "Web Applications",
       "Identify sensitive pages. Make a list of all pages that handle sensitive information, including all pages that use authentication or authorization features.",
-      "Enable SSL for each directory containing sensitive pages. The exact instructions for doing so are different for different web servers. Use the web server administration interface or edit the server configuration files to enable SSL for all folders containing sensitive pages.",
-      "Redirect non-SSL requests to SSL-protected pages. The exact procedure for redirecting HTTP connections to HTTPS is different for different servers."
+      "Enable TLS for each directory containing sensitive pages. The exact instructions for doing so are different for different web servers. Use the web server administration interface or edit the server configuration files to enable TLS for all folders containing sensitive pages.",
+      "Redirect non-TLS requests to TLS-protected pages. The exact procedure for redirecting HTTP connections to HTTPS is different for different servers."
     ],
     "p": [
-      "Require SSL for all private pages.",
-      "SSL should be used to protect all pages that handle sensitive data, including all pages that use authentication or authorization features, to prevent unauthorized information disclosure.",
-      "The simplest approach for enabling SSL for all sensitive pages is to use SSL for the entire site. Enabling SSL for the entire site may require additional computing resources, so for performance reasons, it may be acceptable to enable SSL only for sensitive pages. To enable SSL only for sensitive pages:"
+      "Require TLS for all private pages.",
+      "TLS should be used to protect all pages that handle sensitive data, including all pages that use authentication or authorization features, to prevent unauthorized information disclosure.",
+      "The simplest approach for enabling TLS for all sensitive pages is to use TLS for the entire site. Enabling TLS for the entire site may require additional computing resources, so for performance reasons, it may be acceptable to enable TLS only for sensitive pages. To enable TLS only for sensitive pages:"
     ],
     "ol": [
-      "Identify sensitive pages. Make a list of all pages that handle sensitive information, including all pages that use authentication or authorization features.\n Enable SSL for each directory containing sensitive pages. The exact instructions for doing so are different for different web servers. Use the web server administration interface or edit the server configuration files to enable SSL for all folders containing sensitive pages.\n Redirect non-SSL requests to SSL-protected pages. The exact procedure for redirecting HTTP connections to HTTPS is different for different servers."
+      "Identify sensitive pages. Make a list of all pages that handle sensitive information, including all pages that use authentication or authorization features.\n Enable TLS for each directory containing sensitive pages. The exact instructions for doing so are different for different web servers. Use the web server administration interface or edit the server configuration files to enable TLS for all folders containing sensitive pages.\n Redirect non-TLS requests to TLS-protected pages. The exact procedure for redirecting HTTP connections to HTTPS is different for different servers."
     ],
     "strong": [
       "Identify sensitive pages.",
-      "Enable SSL for each directory containing sensitive pages.",
-      "Redirect non-SSL requests to SSL-protected pages."
+      "Enable TLS for each directory containing sensitive pages.",
+      "Redirect non-TLS requests to TLS-protected pages."
     ]
   },
   "links": [],
-  "html": "<h2>Applies To</h2><ul><li> Web Applications</li>\n</ul><h2>What to Do</h2><p>Require SSL for all private pages.\n</p><h2>Why</h2><p>SSL should be used to protect all pages that handle sensitive data, including all pages that use authentication or authorization features, to prevent unauthorized information disclosure.\n</p><h2>How</h2><p>The simplest approach for enabling SSL for all sensitive pages is to use SSL for the entire site. Enabling SSL for the entire site may require additional computing resources, so for performance reasons, it may be acceptable to enable SSL only for sensitive pages. To enable SSL only for sensitive pages:\n</p><ol>\n<li> <strong>Identify sensitive pages.</strong> Make a list of all pages that handle sensitive information, including all pages that use authentication or authorization features.</li>\n<li> <strong>Enable SSL for each directory containing sensitive pages.</strong> The exact instructions for doing so are different for different web servers. Use the web server administration interface or edit the server configuration files to enable SSL for all folders containing sensitive pages.</li>\n<li> <strong>Redirect non-SSL requests to SSL-protected pages.</strong> The exact procedure for redirecting HTTP connections to HTTPS is different for different servers.</li>\n</ol>"
+  "html": "<h2>Applies To</h2><ul><li> Web Applications</li>\n</ul><h2>What to Do</h2><p>Require TLS for all private pages.\n</p><h2>Why</h2><p>TLS should be used to protect all pages that handle sensitive data, including all pages that use authentication or authorization features, to prevent unauthorized information disclosure.\n</p><h2>How</h2><p>The simplest approach for enabling TLS for all sensitive pages is to use TLS for the entire site. Enabling TLS for the entire site may require additional computing resources, so for performance reasons, it may be acceptable to enable TLS only for sensitive pages. To enable TLS only for sensitive pages:\n</p><ol>\n<li> <strong>Identify sensitive pages.</strong> Make a list of all pages that handle sensitive information, including all pages that use authentication or authorization features.</li>\n<li> <strong>Enable TLS for each directory containing sensitive pages.</strong> The exact instructions for doing so are different for different web servers. Use the web server administration interface or edit the server configuration files to enable TLS for all folders containing sensitive pages.</li>\n<li> <strong>Redirect non-TLS requests to TLS-protected pages.</strong> The exact procedure for redirecting HTTP connections to HTTPS is different for different servers.</li>\n</ol>"
 }

@@ -1,6 +1,6 @@
 {
   "id": "351b69c8-b40b-4c13-899e-a8399b85a0ea",
-  "checksum": "768f287228e772b9744f1e4272173f16f87ce800",
+  "checksum": "8d683684782398ea4843935e7dfec2f1957d8a5c",
   "words": {
     "applies": [
       "h1"
@@ -125,9 +125,6 @@
       "p",
       "ul",
       "ul",
-      "ul",
-      "li",
-      "a",
       "li",
       "a",
       "li",
@@ -204,9 +201,6 @@
       "li",
       "ul",
       "li",
-      "a",
-      "ul",
-      "li",
       "a"
     ],
     "java": [
@@ -247,9 +241,6 @@
       "li",
       "a",
       "ul",
-      "ul",
-      "li",
-      "a",
       "li",
       "a",
       "ul",
@@ -329,9 +320,6 @@
       "a",
       "ul",
       "li",
-      "a",
-      "ul",
-      "li",
       "a"
     ],
     "code": [
@@ -353,9 +341,6 @@
       "p",
       "p",
       "h1",
-      "ul",
-      "li",
-      "a",
       "h1",
       "ul",
       "li",
@@ -408,9 +393,6 @@
       "li",
       "a",
       "ul",
-      "ul",
-      "li",
-      "a",
       "li",
       "a"
     ],
@@ -550,9 +532,6 @@
       "p",
       "ul",
       "li",
-      "a",
-      "ul",
-      "li",
       "a"
     ],
     "platform": [
@@ -575,9 +554,6 @@
       "li",
       "a",
       "ul",
-      "ul",
-      "li",
-      "a",
       "li",
       "a",
       "ul",
@@ -682,9 +658,6 @@
       "p",
       "ul",
       "li",
-      "a",
-      "ul",
-      "li",
       "a"
     ],
     "boundary": [
@@ -711,17 +684,11 @@
       "p",
       "ul",
       "li",
-      "a",
-      "ul",
-      "li",
       "a"
     ],
     "data": [
       "ul",
       "li",
-      "ul",
-      "li",
-      "a",
       "ul",
       "li",
       "a"
@@ -1157,9 +1124,6 @@
     ],
     "through": [
       "ul",
-      "ul",
-      "li",
-      "a",
       "li",
       "a",
       "ul",
@@ -1190,15 +1154,9 @@
     "number": [
       "ul",
       "li",
-      "a",
-      "ul",
-      "li",
       "a"
     ],
     "times": [
-      "ul",
-      "li",
-      "a",
       "ul",
       "li",
       "a"
@@ -1206,65 +1164,14 @@
     "language": [
       "ul",
       "li",
-      "a",
-      "ul",
-      "li",
       "a"
     ],
     "boundaries": [
       "ul",
       "li",
-      "a",
-      "ul",
-      "li",
       "a"
     ],
     "crossed": [
-      "ul",
-      "li",
-      "a",
-      "ul",
-      "li",
-      "a"
-    ],
-    "validate": [
-      "ul",
-      "li",
-      "a"
-    ],
-    "passed": [
-      "ul",
-      "li",
-      "a",
-      "ul",
-      "li",
-      "a"
-    ],
-    "between": [
-      "ul",
-      "li",
-      "a",
-      "ul",
-      "li",
-      "a"
-    ],
-    "protect": [
-      "ul",
-      "li",
-      "a"
-    ],
-    "libraries": [
-      "ul",
-      "li",
-      "a",
-      "ul",
-      "li",
-      "a"
-    ],
-    "loaded": [
-      "ul",
-      "li",
-      "a",
       "ul",
       "li",
       "a"
@@ -1277,12 +1184,27 @@
       "li",
       "a"
     ],
-    "minimized": [
+    "passed": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "between": [
       "ul",
       "li",
       "a"
     ],
     "validated": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "libraries": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "loaded": [
       "ul",
       "li",
       "a"
@@ -1310,8 +1232,8 @@
       "Applications written using Servlets or JSP.",
       "JNI prevents Java applications from being cross-platform. Therefore, you would need to recompile your JNI components in the environment where you would like to deploy your application. Because the Java Virtual Machine provides certain type and boundary checks that are otherwise unavailable in native code, all data types in Java are type-safe and secure. Using JNI exposes your application to vulnerabilities such as buffer overflow. Because of the logic behind its garbage collector, Java does not allow dangling or arbitrary pointers. When using JNI for your application, you would need to take extra effort to ensure that your application does not reference memory that is not allocated.",
       "To learn more about JNI, see: Java Native Interface Specification. For more information about the security issues that JNI introduces, see: Unsafe JNI from OWASP.",
-      "Do Not Utilize Functionality Through JNI if Java Already Supports It\r\n    \r\n    \r\n      Minimize the Number of Times Language Boundaries are Crossed\r\n    \r\n    \r\n      Validate All Data Passed Between Native and Java Code\r\n    \r\n    \r\n      Protect Libraries Loaded Through JNI",
-      "Java Supported Functionality Is Not Utilized Through JNI\r\n    \r\n    \r\n      The Number of Times Language Boundaries Are Crossed Is Minimized\r\n    \r\n    \r\n      All Data Passed Between Native and Java Code Is Validated\r\n    \r\n    \r\n      Libraries Loaded Through JNI Are Protected"
+      "Do Not Utilize Functionality Through JNI if Java Already Supports It\n    \n    \n      Minimize the Number of Times Language Boundaries are Crossed",
+      "Java Supported Functionality Is Not Utilized Through JNI\n    \n    \n      All Data Passed Between Native and Java Code Is Validated\n    \n    \n      Libraries Loaded Through JNI Are Protected"
     ],
     "li": [
       "Applications written using Servlets or JSP.",
@@ -1324,10 +1246,7 @@
       "For more information about the security issues that JNI introduces, see: Unsafe JNI from OWASP.",
       "Do Not Utilize Functionality Through JNI if Java Already Supports It",
       "Minimize the Number of Times Language Boundaries are Crossed",
-      "Validate All Data Passed Between Native and Java Code",
-      "Protect Libraries Loaded Through JNI",
       "Java Supported Functionality Is Not Utilized Through JNI",
-      "The Number of Times Language Boundaries Are Crossed Is Minimized",
       "All Data Passed Between Native and Java Code Is Validated",
       "Libraries Loaded Through JNI Are Protected"
     ],
@@ -1342,7 +1261,7 @@
       "The developers of MyApp, a stock market analysis tool, use econometric modeling as a base technology in the application. The developers choose to use Java code only. Therefore, they do not disturb the code optimization routines and internal security checks of the Java Virtual Machine."
     ],
     "ol": [
-      "Understand the required functionality. Unless the requirements ask for device and kernel drivers or other low-level code, the implementation can likely be accomplished using Java code. \r\n      \r\n        \r\n          Examine the Java SDK references. Before turning to native code, consult the Java SDK. It is likely that there are Java APIs already provided for the required functionality."
+      "Understand the required functionality. Unless the requirements ask for device and kernel drivers or other low-level code, the implementation can likely be accomplished using Java code. \n      \n        \n          Examine the Java SDK references. Before turning to native code, consult the Java SDK. It is likely that there are Java APIs already provided for the required functionality."
     ],
     "strong": [
       "Understand the required functionality.",
@@ -1353,10 +1272,7 @@
       "Unsafe JNI",
       "Do Not Utilize Functionality Through JNI if Java Already Supports It",
       "Minimize the Number of Times Language Boundaries are Crossed",
-      "Validate All Data Passed Between Native and Java Code",
-      "Protect Libraries Loaded Through JNI",
       "Java Supported Functionality Is Not Utilized Through JNI",
-      "The Number of Times Language Boundaries Are Crossed Is Minimized",
       "All Data Passed Between Native and Java Code Is Validated",
       "Libraries Loaded Through JNI Are Protected"
     ]
@@ -1379,20 +1295,8 @@
       "text": "Minimize the Number of Times Language Boundaries are Crossed"
     },
     {
-      "href": "/article/946a5edb-e8f8-4365-8675-b8a5032c201b",
-      "text": "Validate All Data Passed Between Native and Java Code"
-    },
-    {
-      "href": "/article/43e09871-01a1-4b24-af9f-31e275b91b2f",
-      "text": "Protect Libraries Loaded Through JNI"
-    },
-    {
       "href": "/article/5b207f0a-b17d-42e3-813f-8ac255b3e1bb",
       "text": "Java Supported Functionality Is Not Utilized Through JNI"
-    },
-    {
-      "href": "/article/24e64319-c897-4c27-bfd5-d721b5cdad3c",
-      "text": "The Number of Times Language Boundaries Are Crossed Is Minimized"
     },
     {
       "href": "/article/a61487db-d1e1-4304-89b1-44bb8c88b1e3",
@@ -1403,5 +1307,5 @@
       "text": "Libraries Loaded Through JNI Are Protected"
     }
   ],
-  "html": "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>Applications written using Servlets or JSP.</li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Avoid re-implementing functionality that is already supported by the Java Virtual Machine (JVM).</p>\r\n  <h1>Why</h1>\r\n  <p>When you use native code, you expose yourself to potential vulnerabilities, such as buffer overflows, that are mitigated by the Java Virtual Machine. Therefore, Java Native Interface (JNI) should be used only when the Java Virtual Machine has no implementation for the required functionality. Once your application utilizes JNI,&nbsp;it&nbsp;risks losing certain benefits of the Java platform: </p>\r\n  <ul>\r\n    <li>JNI prevents Java applications from being cross-platform. Therefore, you would need to recompile your JNI components in the environment where you would like to deploy your application. <li>Because the Java Virtual Machine provides certain type and boundary checks that are otherwise unavailable in native code, all data types in Java are type-safe and secure. Using JNI exposes your application to vulnerabilities such as buffer overflow. <li>Because of the logic behind its garbage collector, Java does not allow dangling or arbitrary pointers. When using JNI for your application, you would need to take extra effort to ensure that your application does not reference memory that is not allocated.</li></li></li>\r\n  </ul>\r\n  <h1>When</h1>\r\n  <p>Java Native Interface should be used only when the Java Virtual Machine has no implementation for the required functionality.</p>\r\n  <h1>How</h1>\r\n  <p>Use the following steps when choosing native vs. Java code: </p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Understand the required functionality. </strong>Unless the requirements ask for device and kernel drivers or other low-level code, the implementation can likely be accomplished using Java code. </p>\r\n      <li>\r\n        <p>\r\n          <strong>Examine the Java SDK references. </strong>Before turning to native code, consult the Java SDK. It is likely that there are Java APIs already provided for the required functionality.</p>\r\n      </li>\r\n    </li>\r\n  </ol>\r\n  <h1>Problem Example</h1>\r\n  <p>The developers of MyApp, a stock market analysis tool, use econometric modeling as a base technology in the application. In their desire to optimize the application's algorithms, the developers use Java Native Interface throughout the code. By doing so, they prevent the Java Virtual Machine from executing all of its code optimization routines and internal security checks.</p>\r\n  <h1>Solution Example</h1>\r\n  <p>The developers of MyApp, a stock market analysis tool, use econometric modeling as a base technology in the application. The developers choose to use Java code only. Therefore, they do not disturb the code optimization routines and internal security checks of the Java Virtual Machine.</p>\r\n  <h1>Additional Resources</h1>\r\n  <ul>\r\n    <li>To learn more about JNI, see: <a href=\"http://java.sun.com/j2se/1.3/docs/guide/jni/spec/jniTOC.doc.html\">Java Native Interface Specification</a>. <li>For more information about the security issues that JNI introduces, see: <a href=\"http://www.owasp.org/index.php/Unsafe_JNI\">Unsafe JNI</a> from OWASP. </li></li>\r\n  </ul>\r\n  <h1>Unmanaged Code Guidelines</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/351b69c8-b40b-4c13-899e-a8399b85a0ea\">Do Not Utilize Functionality Through JNI if Java Already Supports It</a>\r\n    </li>\r\n    <li>\r\n      <a href=\"/article/70b53138-faf7-410a-a966-16f3088fca63\">Minimize the Number of Times Language Boundaries are Crossed</a>\r\n    </li>\r\n    <li>\r\n      <a href=\"/article/946a5edb-e8f8-4365-8675-b8a5032c201b\">Validate All Data Passed Between Native and Java Code</a>\r\n    </li>\r\n    <li>\r\n      <a href=\"/article/43e09871-01a1-4b24-af9f-31e275b91b2f\">Protect Libraries Loaded Through JNI</a>\r\n    </li>\r\n  </ul>\r\n  <h1>Unmanaged Code Checklists</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/5b207f0a-b17d-42e3-813f-8ac255b3e1bb\">Java Supported Functionality Is Not Utilized Through JNI</a>\r\n    </li>\r\n    <li>\r\n      <a href=\"/article/24e64319-c897-4c27-bfd5-d721b5cdad3c\">The Number of Times Language Boundaries Are Crossed Is Minimized</a>\r\n    </li>\r\n    <li>\r\n      <a href=\"/article/a61487db-d1e1-4304-89b1-44bb8c88b1e3\">All Data Passed Between Native and Java Code Is Validated</a>\r\n    </li>\r\n    <li>\r\n      <a href=\"/article/d775ead4-8413-4736-a40f-92c7e0231e5b\">Libraries Loaded Through JNI Are Protected</a>\r\n    </li>\r\n  </ul>"
+  "html": "<h1>Applies to</h1>\n  <ul>\n    <li>Applications written using Servlets or JSP.</li>\n  </ul>\n  <h1>What to Do</h1>\n  <p>Avoid re-implementing functionality that is already supported by the Java Virtual Machine (JVM).</p>\n  <h1>Why</h1>\n  <p>When you use native code, you expose yourself to potential vulnerabilities, such as buffer overflows, that are mitigated by the Java Virtual Machine. Therefore, Java Native Interface (JNI) should be used only when the Java Virtual Machine has no implementation for the required functionality. Once your application utilizes JNI,&nbsp;it&nbsp;risks losing certain benefits of the Java platform: </p>\n  <ul>\n    <li>JNI prevents Java applications from being cross-platform. Therefore, you would need to recompile your JNI components in the environment where you would like to deploy your application. <li>Because the Java Virtual Machine provides certain type and boundary checks that are otherwise unavailable in native code, all data types in Java are type-safe and secure. Using JNI exposes your application to vulnerabilities such as buffer overflow. <li>Because of the logic behind its garbage collector, Java does not allow dangling or arbitrary pointers. When using JNI for your application, you would need to take extra effort to ensure that your application does not reference memory that is not allocated.</li></li></li>\n  </ul>\n  <h1>When</h1>\n  <p>Java Native Interface should be used only when the Java Virtual Machine has no implementation for the required functionality.</p>\n  <h1>How</h1>\n  <p>Use the following steps when choosing native vs. Java code: </p>\n  <ol>\n    <li>\n      <p>\n        <strong>Understand the required functionality. </strong>Unless the requirements ask for device and kernel drivers or other low-level code, the implementation can likely be accomplished using Java code. </p>\n      <li>\n        <p>\n          <strong>Examine the Java SDK references. </strong>Before turning to native code, consult the Java SDK. It is likely that there are Java APIs already provided for the required functionality.</p>\n      </li>\n    </li>\n  </ol>\n  <h1>Problem Example</h1>\n  <p>The developers of MyApp, a stock market analysis tool, use econometric modeling as a base technology in the application. In their desire to optimize the application's algorithms, the developers use Java Native Interface throughout the code. By doing so, they prevent the Java Virtual Machine from executing all of its code optimization routines and internal security checks.</p>\n  <h1>Solution Example</h1>\n  <p>The developers of MyApp, a stock market analysis tool, use econometric modeling as a base technology in the application. The developers choose to use Java code only. Therefore, they do not disturb the code optimization routines and internal security checks of the Java Virtual Machine.</p>\n  <h1>Additional Resources</h1>\n  <ul>\n    <li>To learn more about JNI, see: <a href=\"http://java.sun.com/j2se/1.3/docs/guide/jni/spec/jniTOC.doc.html\">Java Native Interface Specification</a>. <li>For more information about the security issues that JNI introduces, see: <a href=\"http://www.owasp.org/index.php/Unsafe_JNI\">Unsafe JNI</a> from OWASP. </li></li>\n  </ul>\n  <h1>Unmanaged Code Guidelines</h1>\n  <ul>\n    <li>\n      <a href=\"/article/351b69c8-b40b-4c13-899e-a8399b85a0ea\">Do Not Utilize Functionality Through JNI if Java Already Supports It</a>\n    </li>\n    <li>\n      <a href=\"/article/70b53138-faf7-410a-a966-16f3088fca63\">Minimize the Number of Times Language Boundaries are Crossed</a>\n    </li>\n  </ul>\n  <h1>Unmanaged Code Checklists</h1>\n  <ul>\n    <li>\n      <a href=\"/article/5b207f0a-b17d-42e3-813f-8ac255b3e1bb\">Java Supported Functionality Is Not Utilized Through JNI</a>\n    </li>\n    <li>\n      <a href=\"/article/a61487db-d1e1-4304-89b1-44bb8c88b1e3\">All Data Passed Between Native and Java Code Is Validated</a>\n    </li>\n    <li>\n      <a href=\"/article/d775ead4-8413-4736-a40f-92c7e0231e5b\">Libraries Loaded Through JNI Are Protected</a>\n    </li>\n  </ul>"
 }

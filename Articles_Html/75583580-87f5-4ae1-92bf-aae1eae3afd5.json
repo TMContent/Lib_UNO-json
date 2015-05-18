@@ -1,6 +1,6 @@
 {
   "id": "75583580-87f5-4ae1-92bf-aae1eae3afd5",
-  "checksum": "1179b1d13b6837fa4d8f3c50b93701c26e9de92f",
+  "checksum": "5371f3f7675a222a55175cdea0f7e46343e26180",
   "words": {
     "what": [
       "h1"
@@ -341,5 +341,5 @@
     ]
   },
   "links": [],
-  "html": "<h1>What to Check For</h1>\r\n  <p>Verify that important event details are logged.</p>\r\n  <h1>Why</h1>\r\n  <p>Log events entries should include important details so that the contents of the logs are useful for forensics and system administration.</p>\r\n  <h1>How to Check</h1>\r\n  <p>Either examine the logs or the code that produces the logs to make sure that the following information is included in log entries:</p>\r\n  <ul>\r\n    <li>User identification<li>Type of event<li>Date and time stamp<li>Success or failure indication<li>Source of event<li>Names or other identifiers of affected data or resources</li></li></li></li></li></li>\r\n  </ul>\r\n  <h1>How to Fix</h1>\r\n  <p>Find code that generates log entries. Add code that records the following information in log entries:</p>\r\n  <ul>\r\n    <li>User identification<li>Type of event<li>Date and time stamp<li>Success or failure indication<li>Source of event<li>Names or other identifiers of affected data or resources</li></li></li></li></li></li>\r\n  </ul>"
+  "html": "<h1>What to Check For</h1>\n  <p>Verify that important event details are logged.</p>\n  <h1>Why</h1>\n  <p>Log events entries should include important details so that the contents of the logs are useful for forensics and system administration.</p>\n  <h1>How to Check</h1>\n  <p>Either examine the logs or the code that produces the logs to make sure that the following information is included in log entries:</p>\n  <ul>\n    <li>User identification<li>Type of event<li>Date and time stamp<li>Success or failure indication<li>Source of event<li>Names or other identifiers of affected data or resources</li></li></li></li></li></li>\n  </ul>\n  <h1>How to Fix</h1>\n  <p>Find code that generates log entries. Add code that records the following information in log entries:</p>\n  <ul>\n    <li>User identification<li>Type of event<li>Date and time stamp<li>Success or failure indication<li>Source of event<li>Names or other identifiers of affected data or resources</li></li></li></li></li></li>\n  </ul>"
 }

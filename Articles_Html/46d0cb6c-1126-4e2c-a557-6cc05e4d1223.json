@@ -1,6 +1,6 @@
 {
   "id": "46d0cb6c-1126-4e2c-a557-6cc05e4d1223",
-  "checksum": "2078695755889495ffb492498c43aeff73ae1a23",
+  "checksum": "abaaa3a1811a92138641c3fd7000fb21c8e09f9c",
   "words": {
     "9": [
       "ul",
@@ -310,5 +310,5 @@
       "text": "Using Code Access Security with ASP.NET"
     }
   ],
-  "html": "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>\r\n      <div>Web Application</div>\r\n    </li>\r\n  </ul>\r\n  <h1>What to Check For</h1>\r\n  <p>Check to ensure that code access security is enabled on the server by determining the settings in Security.config file.</p>\r\n  <p />\r\n  <h1>How to Fix</h1>\r\n  <p>Machine level code access security policy is determined by settings in the Security.config file located in the following directory: %windir%\\Microsoft.NET\\Framework\\{version}\\CONFIG</p>\r\n  <p>Run the following command to be sure that code access security is enabled on your server:</p>\r\n  <p>\r\n    <b>caspol -s On</b>\r\n  </p>\r\n  <h1>Additional Resources</h1>\r\n  <ul>\r\n    <li>For more information about configuring code access security for ASP.NET Web applications, see Chapter 9, \"<a href=\"http://msdn2.microsoft.com/en-us/library/aa302425.aspx\">Using Code Access Security with ASP.NET</a>.\"</li>\r\n  </ul>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
+  "html": "<h1>Applies to</h1>\n  <ul>\n    <li>\n      <div>Web Application</div>\n    </li>\n  </ul>\n  <h1>What to Check For</h1>\n  <p>Check to ensure that code access security is enabled on the server by determining the settings in Security.config file.</p>\n  <p />\n  <h1>How to Fix</h1>\n  <p>Machine level code access security policy is determined by settings in the Security.config file located in the following directory: %windir%\\Microsoft.NET\\Framework\\{version}\\CONFIG</p>\n  <p>Run the following command to be sure that code access security is enabled on your server:</p>\n  <p>\n    <b>caspol -s On</b>\n  </p>\n  <h1>Additional Resources</h1>\n  <ul>\n    <li>For more information about configuring code access security for ASP.NET Web applications, see Chapter 9, \"<a href=\"http://msdn2.microsoft.com/en-us/library/aa302425.aspx\">Using Code Access Security with ASP.NET</a>.\"</li>\n  </ul>\n  <hr />\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
 }

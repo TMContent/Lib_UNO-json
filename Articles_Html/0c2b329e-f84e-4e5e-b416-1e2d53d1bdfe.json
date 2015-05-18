@@ -1,6 +1,6 @@
 {
   "id": "0c2b329e-f84e-4e5e-b416-1e2d53d1bdfe",
-  "checksum": "46d52f09bea6261c356e40da31ce8dfdb7f50be4",
+  "checksum": "766b6c1296ddd2dcb4a503c2e49e5f45d9f930ca",
   "words": {
     "115": [
       "ul",
@@ -465,19 +465,19 @@
     ],
     "ul": [
       "PCI DSS Requirement 11.5",
-      "For information about TripWire, please see \"TripWire\" at \r\nhttp://www.tripwire.com/.",
+      "For information about TripWire, please see \"TripWire\" at \nhttp://www.tripwire.com/.",
       "Deploy a File-integrity Monitoring Solution"
     ],
     "li": [
       "PCI DSS Requirement 11.5",
-      "For information about TripWire, please see \"TripWire\" at \r\nhttp://www.tripwire.com/.",
+      "For information about TripWire, please see \"TripWire\" at \nhttp://www.tripwire.com/.",
       "Deploy a File-integrity Monitoring Solution"
     ],
     "p": [
       "File-integrity monitoring software should be used within the cardholder data environments.",
-      "File-integrity monitoring may be included in the centralized log server solution, in the intrusion detection system, or in the intrusion prevention system. Identify which of these systems are deployed. Refer to the vendor's documentation or technical support\r\n of each deployed system&nbsp;for information about the file-integrity monitoring capabilities of their product. If these solutions do not provide file-monitoring capability, verify the existence of a file-integrity monitoring system by checking the logs at the\r\n centralized log server and asking the responsible staff to demonstrate the administration interface of the file-integrity monitoring solution. Verify that the locations of each of the following files are being monitored: system executables, application executables,\r\n configuration&nbsp;files,&nbsp;log files (the centralized log server should monitor its log files).",
-      "For any system that does not include file-integrity monitoring functionality, deploy a product that does. Configure the file-integrity monitoring software to watch the locations of the following files: system executables, application executables, configuration&nbsp;files,&nbsp;log\r\n files (the centralized log server should monitor its log files).",
-      "For information about TripWire, please see \"TripWire\" at \r\nhttp://www.tripwire.com/."
+      "File-integrity monitoring may be included in the centralized log server solution, in the intrusion detection system, or in the intrusion prevention system. Identify which of these systems are deployed. Refer to the vendor's documentation or technical support\n of each deployed system&nbsp;for information about the file-integrity monitoring capabilities of their product. If these solutions do not provide file-monitoring capability, verify the existence of a file-integrity monitoring system by checking the logs at the\n centralized log server and asking the responsible staff to demonstrate the administration interface of the file-integrity monitoring solution. Verify that the locations of each of the following files are being monitored: system executables, application executables,\n configuration&nbsp;files,&nbsp;log files (the centralized log server should monitor its log files).",
+      "For any system that does not include file-integrity monitoring functionality, deploy a product that does. Configure the file-integrity monitoring software to watch the locations of the following files: system executables, application executables, configuration&nbsp;files,&nbsp;log\n files (the centralized log server should monitor its log files).",
+      "For information about TripWire, please see \"TripWire\" at \nhttp://www.tripwire.com/."
     ],
     "a": [
       "http://www.tripwire.com/",
@@ -487,12 +487,12 @@
   "links": [
     {
       "href": "http://www.tripwire.com/",
-      "text": "\r\nhttp://www.tripwire.com/"
+      "text": "\nhttp://www.tripwire.com/"
     },
     {
       "href": "/article/47c3e227-0985-4a71-924b-2995fdb74aa3",
       "text": "Deploy a File-integrity Monitoring Solution"
     }
   ],
-  "html": "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 11.5</li>\r\n  </ul>\r\n  <h1>What to Check For</h1>\r\n  <p>File-integrity monitoring software should be used within the cardholder data environments.</p>\r\n  <h1>How to Check</h1>\r\n  <p>File-integrity monitoring may be included in the centralized log server solution, in the intrusion detection system, or in the intrusion prevention system. Identify which of these systems are deployed. Refer to the vendor's documentation or technical support\r\n of each deployed system&amp;nbsp;for information about the file-integrity monitoring capabilities of their product. If these solutions do not provide file-monitoring capability, verify the existence of a file-integrity monitoring system by checking the logs at the\r\n centralized log server and asking the responsible staff to demonstrate the administration interface of the file-integrity monitoring solution. Verify that the locations of each of the following files are being monitored: system executables, application executables,\r\n configuration&amp;nbsp;files,&amp;nbsp;log files (the centralized log server should monitor its log files).</p>\r\n  <h1>How to Fix</h1>\r\n  <p>For any system that does not include file-integrity monitoring functionality, deploy a product that does. Configure the file-integrity monitoring software to watch the locations of the following files: system executables, application executables, configuration&amp;nbsp;files,&amp;nbsp;log\r\n files (the centralized log server should monitor its log files).</p>\r\n  <h1>Additional Resources</h1>\r\n  <ul>\r\n    <li>\r\n      <p>For information about TripWire, please see \"TripWire\" at <a href=\"http://www.tripwire.com/\">\r\nhttp://www.tripwire.com/</a>.</p>\r\n    </li>\r\n  </ul>\r\n  <h1>Related Items</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/47c3e227-0985-4a71-924b-2995fdb74aa3\">Deploy a File-integrity Monitoring Solution</a>\r\n    </li>\r\n  </ul>"
+  "html": "<h1>Applies to</h1>\n  <ul>\n    <li>PCI DSS Requirement 11.5</li>\n  </ul>\n  <h1>What to Check For</h1>\n  <p>File-integrity monitoring software should be used within the cardholder data environments.</p>\n  <h1>How to Check</h1>\n  <p>File-integrity monitoring may be included in the centralized log server solution, in the intrusion detection system, or in the intrusion prevention system. Identify which of these systems are deployed. Refer to the vendor's documentation or technical support\n of each deployed system&amp;nbsp;for information about the file-integrity monitoring capabilities of their product. If these solutions do not provide file-monitoring capability, verify the existence of a file-integrity monitoring system by checking the logs at the\n centralized log server and asking the responsible staff to demonstrate the administration interface of the file-integrity monitoring solution. Verify that the locations of each of the following files are being monitored: system executables, application executables,\n configuration&amp;nbsp;files,&amp;nbsp;log files (the centralized log server should monitor its log files).</p>\n  <h1>How to Fix</h1>\n  <p>For any system that does not include file-integrity monitoring functionality, deploy a product that does. Configure the file-integrity monitoring software to watch the locations of the following files: system executables, application executables, configuration&amp;nbsp;files,&amp;nbsp;log\n files (the centralized log server should monitor its log files).</p>\n  <h1>Additional Resources</h1>\n  <ul>\n    <li>\n      <p>For information about TripWire, please see \"TripWire\" at <a href=\"http://www.tripwire.com/\">\nhttp://www.tripwire.com/</a>.</p>\n    </li>\n  </ul>\n  <h1>Related Items</h1>\n  <ul>\n    <li>\n      <a href=\"/article/47c3e227-0985-4a71-924b-2995fdb74aa3\">Deploy a File-integrity Monitoring Solution</a>\n    </li>\n  </ul>"
 }

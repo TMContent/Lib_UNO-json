@@ -1,6 +1,6 @@
 {
   "id": "1d36a6e8-fcbb-4205-8d3a-b2366e2f9f78",
-  "checksum": "de162d9565e347b5f13807c2ac70243b8ab6e97a",
+  "checksum": "51e898d42a8efbfa7de7a3eaba1cd5361a4a521f",
   "words": {
     "applies": [
       "h1"
@@ -354,5 +354,5 @@
     ]
   },
   "links": [],
-  "html": "<h1>Applies to</h1>\r\n  <ul>\r\n  </ul>Scala and Play Framework 2.1.0+<ul></ul><h1>What to Do</h1><p>Use AES-256 when it is necessary to protect data with symmetric encryption.</p><h1>Why</h1><p>Using strong encryption algorithms helps prevent unauthorized disclosure of sensitive information.</p><h1>How</h1><p>To use strong symmetric encryption:</p><ol><li><p><strong>Use Java cryptographic APIs.</strong>&nbsp;Scala cryptographic APIs are available in the <i>*.crypto.* </i>classes.</p></li><li><p><strong>Write cryptographic utility functions that use minimum AES-256.</strong>&nbsp;Write functions that generate keys, encrypt, and decrypt data.&nbsp;</p></li><li><p><strong>Use the utility functions.&nbsp;</strong>Use the cryptographic utility functions whenever data needs to be encrypted or decrypted using symmetric cryptography.</p></li></ol><br />"
+  "html": "<h1>Applies to</h1>\n  <ul>\n  </ul>Scala and Play Framework 2.1.0+<ul></ul><h1>What to Do</h1><p>Use AES-256 when it is necessary to protect data with symmetric encryption.</p><h1>Why</h1><p>Using strong encryption algorithms helps prevent unauthorized disclosure of sensitive information.</p><h1>How</h1><p>To use strong symmetric encryption:</p><ol><li><p><strong>Use Java cryptographic APIs.</strong>&nbsp;Scala cryptographic APIs are available in the <i>*.crypto.* </i>classes.</p></li><li><p><strong>Write cryptographic utility functions that use minimum AES-256.</strong>&nbsp;Write functions that generate keys, encrypt, and decrypt data.&nbsp;</p></li><li><p><strong>Use the utility functions.&nbsp;</strong>Use the cryptographic utility functions whenever data needs to be encrypted or decrypted using symmetric cryptography.</p></li></ol><br />"
 }

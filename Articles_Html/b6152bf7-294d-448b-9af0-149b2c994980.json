@@ -1,6 +1,6 @@
 {
   "id": "b6152bf7-294d-448b-9af0-149b2c994980",
-  "checksum": "e332906dbd401c561877408622c2a1e7ff11d998",
+  "checksum": "defbaeb7bfe29195fbb0a8f65d8c086062f89d38",
   "words": {
     "applies": [
       "h1"
@@ -279,5 +279,5 @@
       "text": "Don't Access Unallocated Memory"
     }
   ],
-  "html": "<h1>Applies to</h1>\r\n  <p>C&#43;&#43;</p>\r\n  <h1>What to Check For</h1>\r\n  <p>Verify that unallocated memory is not accessed.</p>\r\n  <h1>Why</h1>\r\n  <p>Accessing memory that has been deallocated may result in an exploitable vulnerability. This type of vulnerability is called a \"dangling pointer vulnerability\". The unallocated memory is accessed via a pointer that has been used to free the memory earlier - this pointer is the \"dangling pointer\".</p>\r\n  <h1>How to Check</h1>\r\n  <p>Identify all code that unallocates memory. Verify that pointers are never used after the objects they reference have been deleted.</p>\r\n  <h1>How to Fix</h1>\r\n  <p>Code has to be rewritten in a way that does not access unallocated memory. </p>\r\n  <h1>Related Items</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/b8b0d075-5aa2-4095-a441-210f38fc3b3e\">Don't Access Unallocated Memory</a>\r\n    </li>\r\n  </ul>"
+  "html": "<h1>Applies to</h1>\n  <p>C&#43;&#43;</p>\n  <h1>What to Check For</h1>\n  <p>Verify that unallocated memory is not accessed.</p>\n  <h1>Why</h1>\n  <p>Accessing memory that has been deallocated may result in an exploitable vulnerability. This type of vulnerability is called a \"dangling pointer vulnerability\". The unallocated memory is accessed via a pointer that has been used to free the memory earlier - this pointer is the \"dangling pointer\".</p>\n  <h1>How to Check</h1>\n  <p>Identify all code that unallocates memory. Verify that pointers are never used after the objects they reference have been deleted.</p>\n  <h1>How to Fix</h1>\n  <p>Code has to be rewritten in a way that does not access unallocated memory. </p>\n  <h1>Related Items</h1>\n  <ul>\n    <li>\n      <a href=\"/article/b8b0d075-5aa2-4095-a441-210f38fc3b3e\">Don't Access Unallocated Memory</a>\n    </li>\n  </ul>"
 }

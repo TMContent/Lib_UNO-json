@@ -1,6 +1,6 @@
 {
   "id": "dc7aa72b-9d4f-4303-965b-6cb1c367c7c1",
-  "checksum": "72271a3f4b0e597d2950cea512d83a50e136e276",
+  "checksum": "ebce946750af763a579f29bdd298423f0962e0e5",
   "words": {
     "what": [
       "h1"
@@ -349,7 +349,7 @@
       "strong",
       "p"
     ],
-    "and that": [
+    "and&nbspthat": [
       "p"
     ],
     "all": [
@@ -374,7 +374,7 @@
       "li",
       "p"
     ],
-    "purely on": [
+    "purely&nbspon": [
       "p"
     ],
     "information": [
@@ -1307,7 +1307,7 @@
     "id": [
       "p"
     ],
-    "which allows": [
+    "which&nbspallows": [
       "p"
     ],
     "tamper": [
@@ -1412,6 +1412,9 @@
     "guidance": [
       "p"
     ],
+    "sink]": [
+      "title"
+    ],
     "client-accessible": [
       "title"
     ]
@@ -1425,7 +1428,7 @@
       "Additional Resources"
     ],
     "p": [
-      "Verify that your application does not make security decisions based on parameters that are accessible by the client and that all security decisions are made based purely on information controlled by the server.",
+      "Verify that your application does not make security decisions based on parameters that are accessible by the client and&nbsp;that all security decisions are made based purely&nbsp;on information controlled by the server.",
       "Client input comes in many forms, from direct input like form variables and query string parameters to less direct input like cookies and connection information. None of it can be trusted, and any information coming from the client can be completely controlled by an attacker, even with thick clients.",
       "If security decisions are based directly on this information, an attacker can alter the outcome of those decisions. For example, if your thick client sends a list of roles held by the user, the user can alter that list. Role caching cookies are another example of this; unless the cookie is tamper-proofed via signing and encryption, the user can alter their role in the system at will.",
       "Use the following steps to ensure that your application does not delegate parts of its security decision mechanism to the client-side:",
@@ -1433,20 +1436,20 @@
       "Verify that user input does not affect security decisions. On the server, trace all user input from source to sink. Ensure that server-side application security decisions are not made based solely on user input that can be tampered with. Common mistakes to look out for include:",
       "Check if security decisions can be tampered with by the client. Through the use of a test HTTP proxy tool — such as BURP proxy — ensure that tampering with client supplied data cannot directly influence your application's internal security decisions. Ensure that users cannot gain extra privileges by:",
       "Verify that all exceptions have been marked. Ensure that all exceptions to this rule have been properly noted as such in your application's documentation. Ensure that your application's development team is aware of any exceptions. For example, if a user is allowed to change between specific roles via URL parameters, verify that such functionality is indeed intended.",
-      "The following code illustrates an application that accepts user-supplied input. Unfortunately, the application obtains the user's ID from the client which allows an attacker to tamper with data that influences security decisions.",
+      "The following code illustrates an application that accepts user-supplied input. Unfortunately, the application obtains the user's ID from the client which&nbsp;allows an attacker to tamper with data that influences security decisions.",
       "public Profile GetProfileForUser(){      HttpRequest request = HttpContext.Request;      string userID = request.Params[\"userid\"];      if(Roles.IsUserInRole(userID, \"Administrators\"))      {            ...      }       ...}",
       "To easily tamper with HTTP messages, see the BURP Proxy.",
       "Adapted from Microsoft patterns & practices guidance."
     ],
     "ol": [
-      "Verify that there are no security decision points on the client. Review your application's design and requirements. Ensure application security decisions are not made on the client-side. \r\n    \r\n    \r\n      \r\n        Verify that user input does not affect security decisions. On the server, trace all user input from source to sink. Ensure that server-side application security decisions are not made based solely on user input that can be tampered with. Common mistakes to look out for include:\r\n      \r\n        Undocumented parameters that enable privileged functionality \r\n        Storing user privileges inside cookies\r\n      \r\n    \r\n    \r\n      \r\n        Check if security decisions can be tampered with by the client. Through the use of a test HTTP proxy tool — such as BURP proxy — ensure that tampering with client supplied data cannot directly influence your application's internal security decisions. Ensure that users cannot gain extra privileges by:\r\n      \r\n        Modifying URL query string or form-based parameters \r\n        Adding or modifying HTTP cookie values \r\n        Modifying other HTTP header variables such as the referrer or user agent headers\r\n      \r\n    \r\n    \r\n      \r\n        Verify that all exceptions have been marked. Ensure that all exceptions to this rule have been properly noted as such in your application's documentation. Ensure that your application's development team is aware of any exceptions. For example, if a user is allowed to change between specific roles via URL parameters, verify that such functionality is indeed intended."
+      "Verify that there are no security decision points on the client. Review your application's design and requirements. Ensure application security decisions are not made on the client-side. \n    \n    \n      \n        Verify that user input does not affect security decisions. On the server, trace all user input from source to sink. Ensure that server-side application security decisions are not made based solely on user input that can be tampered with. Common mistakes to look out for include:\n      \n        Undocumented parameters that enable privileged functionality \n        Storing user privileges inside cookies\n      \n    \n    \n      \n        Check if security decisions can be tampered with by the client. Through the use of a test HTTP proxy tool — such as BURP proxy — ensure that tampering with client supplied data cannot directly influence your application's internal security decisions. Ensure that users cannot gain extra privileges by:\n      \n        Modifying URL query string or form-based parameters \n        Adding or modifying HTTP cookie values \n        Modifying other HTTP header variables such as the referrer or user agent headers\n      \n    \n    \n      \n        Verify that all exceptions have been marked. Ensure that all exceptions to this rule have been properly noted as such in your application's documentation. Ensure that your application's development team is aware of any exceptions. For example, if a user is allowed to change between specific roles via URL parameters, verify that such functionality is indeed intended."
     ],
     "li": [
       "Verify that there are no security decision points on the client. Review your application's design and requirements. Ensure application security decisions are not made on the client-side.",
-      "Verify that user input does not affect security decisions. On the server, trace all user input from source to sink. Ensure that server-side application security decisions are not made based solely on user input that can be tampered with. Common mistakes to look out for include:\r\n      \r\n        Undocumented parameters that enable privileged functionality \r\n        Storing user privileges inside cookies",
+      "Verify that user input does not affect security decisions. On the server, trace all user input from source to sink. Ensure that server-side application security decisions are not made based solely on user input that can be tampered with. Common mistakes to look out for include:\n      \n        Undocumented parameters that enable privileged functionality \n        Storing user privileges inside cookies",
       "Undocumented parameters that enable privileged functionality",
       "Storing user privileges inside cookies",
-      "Check if security decisions can be tampered with by the client. Through the use of a test HTTP proxy tool — such as BURP proxy — ensure that tampering with client supplied data cannot directly influence your application's internal security decisions. Ensure that users cannot gain extra privileges by:\r\n      \r\n        Modifying URL query string or form-based parameters \r\n        Adding or modifying HTTP cookie values \r\n        Modifying other HTTP header variables such as the referrer or user agent headers",
+      "Check if security decisions can be tampered with by the client. Through the use of a test HTTP proxy tool — such as BURP proxy — ensure that tampering with client supplied data cannot directly influence your application's internal security decisions. Ensure that users cannot gain extra privileges by:\n      \n        Modifying URL query string or form-based parameters \n        Adding or modifying HTTP cookie values \n        Modifying other HTTP header variables such as the referrer or user agent headers",
       "Modifying URL query string or form-based parameters",
       "Adding or modifying HTTP cookie values",
       "Modifying other HTTP header variables such as the referrer or user agent headers",
@@ -1459,8 +1462,8 @@
       "Verify that all exceptions have been marked."
     ],
     "ul": [
-      "Undocumented parameters that enable privileged functionality \r\n        Storing user privileges inside cookies",
-      "Modifying URL query string or form-based parameters \r\n        Adding or modifying HTTP cookie values \r\n        Modifying other HTTP header variables such as the referrer or user agent headers",
+      "Undocumented parameters that enable privileged functionality \n        Storing user privileges inside cookies",
+      "Modifying URL query string or form-based parameters \n        Adding or modifying HTTP cookie values \n        Modifying other HTTP header variables such as the referrer or user agent headers",
       ""
     ],
     "pre": [
@@ -1490,5 +1493,5 @@
       "text": "BURP Proxy."
     }
   ],
-  "html": "<h1>What to Check For</h1>\r\n  <p>Verify that your application does not make security decisions based on parameters that are accessible by the client and&nbsp;that all security decisions are made based purely&nbsp;on information controlled by the server.</p>\r\n  <h1>Why</h1>\r\n  <p>Client input comes in many forms, from direct input like form variables and query string parameters to less direct input like cookies and connection information. None of it can be trusted, and any information coming from the client can be completely controlled by an attacker, even with thick clients.</p>\r\n  <p>If security decisions are based directly on this information, an attacker can alter the outcome of those decisions. For example, if your thick client sends a list of roles held by the user, the user can alter that list. Role caching cookies are another example of this; unless the cookie is tamper-proofed via signing and encryption, the user can alter their role in the system at will. </p>\r\n  <h1>How to Check</h1>\r\n  <p>Use the following steps to ensure that your application does not delegate parts of its security decision mechanism to the client-side:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Verify that there are no security decision points on the client. </strong>Review your application's design and requirements. Ensure application security decisions are not made on the client-side. </p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Verify that user input does not affect security decisions. </strong>On the server, trace all user input from source to sink. Ensure that server-side application security decisions are not made based solely on user input that can be tampered with. Common mistakes to look out for include:</p>\r\n      <ul>\r\n        <li>Undocumented parameters that enable privileged functionality </li>\r\n        <li>Storing user privileges inside cookies</li>\r\n      </ul>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Check if security decisions can be tampered with by the client. </strong>Through the use of a test HTTP proxy tool — such as BURP proxy — ensure that tampering with client supplied data cannot directly influence your application's internal security decisions. Ensure that users cannot gain extra privileges by:</p>\r\n      <ul>\r\n        <li>Modifying URL query string or form-based parameters </li>\r\n        <li>Adding or modifying HTTP cookie values </li>\r\n        <li>Modifying other HTTP header variables such as the referrer or user agent headers</li>\r\n      </ul>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Verify that all exceptions have been marked. </strong>Ensure that all exceptions to this rule have been properly noted as such in your application's documentation. Ensure that your application's development team is aware of any exceptions. For example, if a user is allowed to change between specific roles via URL parameters, verify that such functionality is indeed intended.</p>\r\n    </li>\r\n  </ol>\r\n  <h1>Problem Example</h1>\r\n  <p>The following code illustrates an application that accepts user-supplied input. Unfortunately, the application obtains the user's ID from the client which&nbsp;allows an attacker to tamper with data that influences security decisions.</p>\r\n  <p />\r\n  <pre>public Profile GetProfileForUser()<br />{<br />      HttpRequest request = HttpContext.Request;<br />      string userID = request.Params[\"userid\"];<br />      if(Roles.IsUserInRole(userID, \"Administrators\"))<br />      {<br />            ...<br />      }<br />       ...<br />}</pre>\r\n  <h1>Additional Resources</h1>\r\n  <p>To easily tamper with HTTP messages, see the <a href=\"http://www.portswigger.net/proxy/\">BURP Proxy.</a></p>\r\n  <ul>\r\n  </ul>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance. </p>"
+  "html": "<h1>What to Check For</h1>\n  <p>Verify that your application does not make security decisions based on parameters that are accessible by the client and&amp;nbsp;that all security decisions are made based purely&amp;nbsp;on information controlled by the server.</p>\n  <h1>Why</h1>\n  <p>Client input comes in many forms, from direct input like form variables and query string parameters to less direct input like cookies and connection information. None of it can be trusted, and any information coming from the client can be completely controlled by an attacker, even with thick clients.</p>\n  <p>If security decisions are based directly on this information, an attacker can alter the outcome of those decisions. For example, if your thick client sends a list of roles held by the user, the user can alter that list. Role caching cookies are another example of this; unless the cookie is tamper-proofed via signing and encryption, the user can alter their role in the system at will. </p>\n  <h1>How to Check</h1>\n  <p>Use the following steps to ensure that your application does not delegate parts of its security decision mechanism to the client-side:</p>\n  <ol>\n    <li>\n      <p>\n        <strong>Verify that there are no security decision points on the client. </strong>Review your application's design and requirements. Ensure application security decisions are not made on the client-side. </p>\n    </li>\n    <li>\n      <p>\n        <strong>Verify that user input does not affect security decisions. </strong>On the server, trace all user input from source to sink. Ensure that server-side application security decisions are not made based solely on user input that can be tampered with. Common mistakes to look out for include:</p>\n      <ul>\n        <li>Undocumented parameters that enable privileged functionality </li>\n        <li>Storing user privileges inside cookies</li>\n      </ul>\n    </li>\n    <li>\n      <p>\n        <strong>Check if security decisions can be tampered with by the client. </strong>Through the use of a test HTTP proxy tool — such as BURP proxy — ensure that tampering with client supplied data cannot directly influence your application's internal security decisions. Ensure that users cannot gain extra privileges by:</p>\n      <ul>\n        <li>Modifying URL query string or form-based parameters </li>\n        <li>Adding or modifying HTTP cookie values </li>\n        <li>Modifying other HTTP header variables such as the referrer or user agent headers</li>\n      </ul>\n    </li>\n    <li>\n      <p>\n        <strong>Verify that all exceptions have been marked. </strong>Ensure that all exceptions to this rule have been properly noted as such in your application's documentation. Ensure that your application's development team is aware of any exceptions. For example, if a user is allowed to change between specific roles via URL parameters, verify that such functionality is indeed intended.</p>\n    </li>\n  </ol>\n  <h1>Problem Example</h1>\n  <p>The following code illustrates an application that accepts user-supplied input. Unfortunately, the application obtains the user's ID from the client which&amp;nbsp;allows an attacker to tamper with data that influences security decisions.</p>\n  <p />\n  <pre>public Profile GetProfileForUser()<br />{<br />      HttpRequest request = HttpContext.Request;<br />      string userID = request.Params[\"userid\"];<br />      if(Roles.IsUserInRole(userID, \"Administrators\"))<br />      {<br />            ...<br />      }<br />       ...<br />}</pre>\n  <h1>Additional Resources</h1>\n  <p>To easily tamper with HTTP messages, see the <a href=\"http://www.portswigger.net/proxy/\">BURP Proxy.</a></p>\n  <ul>\n  </ul>\n  <hr />\n  <p>Adapted from Microsoft patterns &amp; practices guidance. </p>"
 }

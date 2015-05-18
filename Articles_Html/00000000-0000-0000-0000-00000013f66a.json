@@ -1,12 +1,11 @@
 {
   "id": "00000000-0000-0000-0000-00000013f66a",
-  "checksum": "284f5fa2d271a73e88c775738afaaa8af5fd0ca1",
+  "checksum": "d1628b1fa5b4ecdc5037f1e63fb056d8f8a92201",
   "words": {
-    "applies": [
+    "what": [
       "h2"
     ],
     "to": [
-      "h2",
       "h2",
       "p",
       "p",
@@ -39,13 +38,6 @@
       "li",
       "title"
     ],
-    "aspnet": [
-      "ul",
-      "li"
-    ],
-    "what": [
-      "h2"
-    ],
     "check": [
       "h2",
       "h2",
@@ -74,21 +66,22 @@
       "ol",
       "li"
     ],
-    "ssl": [
+    "tls": [
       "p",
       "p",
-      "em",
+      "p",
+      "p",
       "ol",
       "ol",
       "ol",
-      "ol",
+      "li",
+      "strong",
       "li",
       "li",
       "strong",
-      "em",
+      "p",
+      "ol",
       "li",
-      "li",
-      "strong",
       "title"
     ],
     "is": [
@@ -170,14 +163,6 @@
       "ol",
       "li",
       "strong",
-      "p",
-      "ol",
-      "li"
-    ],
-    "ssl/tls": [
-      "p",
-      "p",
-      "p",
       "p",
       "ol",
       "li"
@@ -282,6 +267,13 @@
     ],
     "or": [
       "p"
+    ],
+    "ssl": [
+      "p",
+      "em",
+      "ol",
+      "li",
+      "em"
     ],
     "server": [
       "p",
@@ -818,33 +810,17 @@
   },
   "tags": {
     "h2": [
-      "Applies To",
       "What to Check For",
       "Why",
       "How to Check",
       "How to Fix",
       "Additional Resources"
     ],
-    "ul": [
-      "ASP.NET",
-      "To download SSLAudit, see http://code.google.com/p/sslaudit/\n To download IISCrypto, see https://www.nartac.com/Products/IISCrypto/Default.aspx\n To download SSLDigger, see http://www.mcafee.com/us/downloads/free-tools/ssldigger.aspx"
-    ],
-    "li": [
-      "ASP.NET",
-      "Choose a SSL scanning tool. SSLAudit is recommended for Windows and UN*X systems. SSLScan is an option for UN*X systems. SSLDigger is an option for Windows systems. SSL Server Test is a Web Application and is recommended for most applications, however it is limited to scanning only Internet-accessible servers.",
-      "Use the SSL scanning tool. Run the SSL scanning tool of your choice against your server to make sure that only strong cipher suites are chosen. The exact definition of strong cipher suites varies between different standards. Make sure that your server's configuration matches the applicable standards. The simplest way to make sure of this is to run the IISCrypto tool as described in the \"How to Fix\" section below.",
-      "Download IISCrypto. IISCrypto may be downloaded at https://www.nartac.com/Products/IISCrypto/Default.aspx",
-      "Run IISCrypto. IISCrypto is easy to deploy and has a very simple interface. Download and run IISCrypto.",
-      "Chooose your desired compliance standard(s). IISCrypto comes with presets based on common information security standards. It's simplest just to choose the ones that are the most applicable to your situation. In a couple of clicks, your IIS SSL/TLS cipher suites should be configured in compliance with the selected standards.",
-      "To download SSLAudit, see http://code.google.com/p/sslaudit/",
-      "To download IISCrypto, see https://www.nartac.com/Products/IISCrypto/Default.aspx",
-      "To download SSLDigger, see http://www.mcafee.com/us/downloads/free-tools/ssldigger.aspx"
-    ],
     "p": [
-      "Verify that SSL is configured to use strong cipher suites.",
-      "Choose strong SSL/TLS suites to avoid known vulnerabilities in SSL/TLS. Weak crypto suites are subject to crypto attacks which will decipher and compromise confidential data.",
-      "Use SSLAudit, SSLScan, SSLDigger, or SSL Server Test to check the SSL/TLS cipher suites supported by the server:",
-      "Use the free IISCrypto tool to choose strong SSL/TLS cipher suites:"
+      "Verify that TLS is configured to use strong cipher suites.",
+      "Choose strong TLS suites to avoid known vulnerabilities in TLS. Weak crypto suites are subject to crypto attacks which will decipher and compromise confidential data.",
+      "Use SSLAudit, SSLScan, SSLDigger, or SSL Server Test to check the TLS cipher suites supported by the server:",
+      "Use the free IISCrypto tool to choose strong TLS cipher suites:"
     ],
     "em": [
       "SSLAudit",
@@ -868,12 +844,22 @@
       "SSLDigger"
     ],
     "ol": [
-      "Choose a SSL scanning tool. SSLAudit is recommended for Windows and UN*X systems. SSLScan is an option for UN*X systems. SSLDigger is an option for Windows systems. SSL Server Test is a Web Application and is recommended for most applications, however it is limited to scanning only Internet-accessible servers.\n Use the SSL scanning tool. Run the SSL scanning tool of your choice against your server to make sure that only strong cipher suites are chosen. The exact definition of strong cipher suites varies between different standards. Make sure that your server's configuration matches the applicable standards. The simplest way to make sure of this is to run the IISCrypto tool as described in the \"How to Fix\" section below.",
-      "Download IISCrypto. IISCrypto may be downloaded at https://www.nartac.com/Products/IISCrypto/Default.aspx\n Run IISCrypto. IISCrypto is easy to deploy and has a very simple interface. Download and run IISCrypto.\n Chooose your desired compliance standard(s). IISCrypto comes with presets based on common information security standards. It's simplest just to choose the ones that are the most applicable to your situation. In a couple of clicks, your IIS SSL/TLS cipher suites should be configured in compliance with the selected standards."
+      "Choose a TLS scanning tool. SSLAudit is recommended for Windows and UN*X systems. SSLScan is an option for UN*X systems. SSLDigger is an option for Windows systems. SSL Server Test is a Web Application and is recommended for most applications, however it is limited to scanning only Internet-accessible servers.\n Use the TLS scanning tool. Run the TLS scanning tool of your choice against your server to make sure that only strong cipher suites are chosen. The exact definition of strong cipher suites varies between different standards. Make sure that your server's configuration matches the applicable standards. The simplest way to make sure of this is to run the IISCrypto tool as described in the \"How to Fix\" section below.",
+      "Download IISCrypto. IISCrypto may be downloaded at https://www.nartac.com/Products/IISCrypto/Default.aspx\n Run IISCrypto. IISCrypto is easy to deploy and has a very simple interface. Download and run IISCrypto.\n Chooose your desired compliance standard(s). IISCrypto comes with presets based on common information security standards. It's simplest just to choose the ones that are the most applicable to your situation. In a couple of clicks, your IIS TLS cipher suites should be configured in compliance with the selected standards."
+    ],
+    "li": [
+      "Choose a TLS scanning tool. SSLAudit is recommended for Windows and UN*X systems. SSLScan is an option for UN*X systems. SSLDigger is an option for Windows systems. SSL Server Test is a Web Application and is recommended for most applications, however it is limited to scanning only Internet-accessible servers.",
+      "Use the TLS scanning tool. Run the TLS scanning tool of your choice against your server to make sure that only strong cipher suites are chosen. The exact definition of strong cipher suites varies between different standards. Make sure that your server's configuration matches the applicable standards. The simplest way to make sure of this is to run the IISCrypto tool as described in the \"How to Fix\" section below.",
+      "Download IISCrypto. IISCrypto may be downloaded at https://www.nartac.com/Products/IISCrypto/Default.aspx",
+      "Run IISCrypto. IISCrypto is easy to deploy and has a very simple interface. Download and run IISCrypto.",
+      "Chooose your desired compliance standard(s). IISCrypto comes with presets based on common information security standards. It's simplest just to choose the ones that are the most applicable to your situation. In a couple of clicks, your IIS TLS cipher suites should be configured in compliance with the selected standards.",
+      "To download SSLAudit, see http://code.google.com/p/sslaudit/",
+      "To download IISCrypto, see https://www.nartac.com/Products/IISCrypto/Default.aspx",
+      "To download SSLDigger, see http://www.mcafee.com/us/downloads/free-tools/ssldigger.aspx"
     ],
     "strong": [
-      "Choose a SSL scanning tool.",
-      "Use the SSL scanning tool.",
+      "Choose a TLS scanning tool.",
+      "Use the TLS scanning tool.",
       "Download IISCrypto.",
       "Run IISCrypto.",
       "Chooose your desired compliance standard(s)."
@@ -883,6 +869,9 @@
       "http://code.google.com/p/sslaudit/",
       "https://www.nartac.com/Products/IISCrypto/Default.aspx",
       "http://www.mcafee.com/us/downloads/free-tools/ssldigger.aspx"
+    ],
+    "ul": [
+      "To download SSLAudit, see http://code.google.com/p/sslaudit/\n To download IISCrypto, see https://www.nartac.com/Products/IISCrypto/Default.aspx\n To download SSLDigger, see http://www.mcafee.com/us/downloads/free-tools/ssldigger.aspx"
     ]
   },
   "links": [
@@ -903,5 +892,5 @@
       "text": "http://www.mcafee.com/us/downloads/free-tools/ssldigger.aspx"
     }
   ],
-  "html": "<h2>Applies To</h2><ul><li>ASP.NET</li>\n</ul><h2>What to Check For</h2><p>Verify that SSL is configured to use strong cipher suites.\n</p><h2>Why</h2><p>Choose strong SSL/TLS suites to avoid known vulnerabilities in SSL/TLS. Weak crypto suites are subject to crypto attacks which will decipher and compromise confidential data. \n</p><h2>How to Check</h2><p>Use <em>SSLAudit</em>, <em>SSLScan</em>, <em>SSLDigger</em>, or <em>SSL Server Test</em> to check the SSL/TLS cipher suites supported by the server:\n</p><ol>\n<li> <strong>Choose a SSL scanning tool.</strong> <em>SSLAudit</em> is recommended for Windows and UN*X systems. <em>SSLScan</em> is an option for UN*X systems. <em>SSLDigger</em> is an option for Windows systems. <em>SSL Server Test</em> is a Web Application and is recommended for most applications, however it is limited to scanning only Internet-accessible servers.</li>\n<li> <strong>Use the SSL scanning tool.</strong> Run the SSL scanning tool of your choice against your server to make sure that only strong cipher suites are chosen. The exact definition of strong cipher suites varies between different standards. Make sure that your server's configuration matches the applicable standards. The simplest way to make sure of this is to run the <em>IISCrypto</em> tool as described in the \"How to Fix\" section below.</li>\n</ol><h2>How to Fix</h2><p>Use the free <em>IISCrypto</em> tool to choose strong SSL/TLS cipher suites:\n</p><ol>\n<li> <strong>Download <em>IISCrypto</em>.</strong> <em>IISCrypto</em> may be downloaded at <a href=\"https://www.nartac.com/Products/IISCrypto/Default.aspx\">https://www.nartac.com/Products/IISCrypto/Default.aspx</a></li>\n<li> <strong>Run <em>IISCrypto</em>.</strong> <em>IISCrypto</em> is easy to deploy and has a very simple interface. Download and run <em>IISCrypto</em>.</li>\n<li> <strong>Chooose your desired compliance standard(s).</strong> <em>IISCrypto</em> comes with presets based on common information security standards. It's simplest just to choose the ones that are the most applicable to your situation. In a couple of clicks, your IIS SSL/TLS cipher suites should be configured in compliance with the selected standards.</li>\n</ol><h2>Additional Resources</h2><ul><li> To download <em>SSLAudit</em>, see <a href=\"http://code.google.com/p/sslaudit/\">http://code.google.com/p/sslaudit/</a></li>\n<li> To download <em>IISCrypto</em>, see <a href=\"https://www.nartac.com/Products/IISCrypto/Default.aspx\">https://www.nartac.com/Products/IISCrypto/Default.aspx</a></li>\n<li> To download <em>SSLDigger</em>, see <a href=\"http://www.mcafee.com/us/downloads/free-tools/ssldigger.aspx\">http://www.mcafee.com/us/downloads/free-tools/ssldigger.aspx</a></li>\n</ul>"
+  "html": "<h2>What to Check For</h2><p>Verify that TLS is configured to use strong cipher suites.\n</p><h2>Why</h2><p>Choose strong TLS suites to avoid known vulnerabilities in TLS. Weak crypto suites are subject to crypto attacks which will decipher and compromise confidential data. \n</p><h2>How to Check</h2><p>Use <em>SSLAudit</em>, <em>SSLScan</em>, <em>SSLDigger</em>, or <em>SSL Server Test</em> to check the TLS cipher suites supported by the server:\n</p><ol>\n<li> <strong>Choose a TLS scanning tool.</strong> <em>SSLAudit</em> is recommended for Windows and UN*X systems. <em>SSLScan</em> is an option for UN*X systems. <em>SSLDigger</em> is an option for Windows systems. <em>SSL Server Test</em> is a Web Application and is recommended for most applications, however it is limited to scanning only Internet-accessible servers.</li>\n<li> <strong>Use the TLS scanning tool.</strong> Run the TLS scanning tool of your choice against your server to make sure that only strong cipher suites are chosen. The exact definition of strong cipher suites varies between different standards. Make sure that your server's configuration matches the applicable standards. The simplest way to make sure of this is to run the <em>IISCrypto</em> tool as described in the \"How to Fix\" section below.</li>\n</ol><h2>How to Fix</h2><p>Use the free <em>IISCrypto</em> tool to choose strong TLS cipher suites:\n</p><ol>\n<li> <strong>Download <em>IISCrypto</em>.</strong> <em>IISCrypto</em> may be downloaded at <a href=\"https://www.nartac.com/Products/IISCrypto/Default.aspx\">https://www.nartac.com/Products/IISCrypto/Default.aspx</a></li>\n<li> <strong>Run <em>IISCrypto</em>.</strong> <em>IISCrypto</em> is easy to deploy and has a very simple interface. Download and run <em>IISCrypto</em>.</li>\n<li> <strong>Chooose your desired compliance standard(s).</strong> <em>IISCrypto</em> comes with presets based on common information security standards. It's simplest just to choose the ones that are the most applicable to your situation. In a couple of clicks, your IIS TLS cipher suites should be configured in compliance with the selected standards.</li>\n</ol><h2>Additional Resources</h2><ul><li> To download <em>SSLAudit</em>, see <a href=\"http://code.google.com/p/sslaudit/\">http://code.google.com/p/sslaudit/</a></li>\n<li> To download <em>IISCrypto</em>, see <a href=\"https://www.nartac.com/Products/IISCrypto/Default.aspx\">https://www.nartac.com/Products/IISCrypto/Default.aspx</a></li>\n<li> To download <em>SSLDigger</em>, see <a href=\"http://www.mcafee.com/us/downloads/free-tools/ssldigger.aspx\">http://www.mcafee.com/us/downloads/free-tools/ssldigger.aspx</a></li>\n</ul>"
 }

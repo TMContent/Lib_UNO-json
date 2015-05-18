@@ -1,12 +1,11 @@
 {
   "id": "00000000-0000-0000-0000-0000008f91de",
-  "checksum": "ac6e812637e06a62e832175d78803522bd8dc90a",
+  "checksum": "994f56a917520d3de8ca190a6483c516069a01d1",
   "words": {
-    "applies": [
+    "what": [
       "h2"
     ],
     "to": [
-      "h2",
       "h2",
       "p",
       "p",
@@ -34,13 +33,6 @@
       "li",
       "li",
       "title"
-    ],
-    "aspnet": [
-      "ul",
-      "li"
-    ],
-    "what": [
-      "h2"
     ],
     "check": [
       "h2",
@@ -121,7 +113,7 @@
       "strong",
       "p"
     ],
-    "ssl/tls": [
+    "tls": [
       "p",
       "p",
       "ol",
@@ -129,9 +121,19 @@
       "p",
       "ol",
       "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
       "li",
       "strong",
-      "li"
+      "li",
+      "li",
+      "li",
+      "strong",
+      "ul",
+      "li",
+      "title"
     ],
     "why": [
       "h2"
@@ -526,18 +528,6 @@
       "ol",
       "li"
     ],
-    "ssl": [
-      "ol",
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "li",
-      "strong",
-      "ul",
-      "li",
-      "title"
-    ],
     "certificates": [
       "ol",
       "li"
@@ -760,43 +750,37 @@
   },
   "tags": {
     "h2": [
-      "Applies To",
       "What to Check For",
       "Why",
       "How to Check",
       "How to Fix",
       "Additional Resources"
     ],
-    "ul": [
-      "ASP.NET",
-      "For information about setting up SSL on IIS, see http://www.iis.net/learn/manage/configuring-security/how-to-set-up-ssl-on-iis\n For information about the FormsAuthentication.RequireSSL property, see http://msdn.microsoft.com/en-us/library/system.web.security.formsauthentication.requiressl.aspx"
-    ],
-    "li": [
-      "ASP.NET",
-      "Authenticate using a web browser. Open the application with a web browser. Log in to the application. The browser should provide indication whether SSL/TLS is being used, usually in the URL bar.",
-      "Examine the Web.config file. Review the Web.config file and make sure that the requireSSL attribute is set to true for the authentication element, if your application uses Forms Authentication.",
-      "Configure IIS to use SSL/TLS. Get a valid certificate. Hosting service providers often sell valid SSL certificates. Install the certificate. Create an HTTPS binding for the site. A link in the \"Additional Resources\" section describes how to do this in detail.",
-      "Enable requireSSL for Forms Authentication. If your application uses Forms Authentication, edit the Web.config and set the requireSSL attribute to true for the authentication element, like so: <authentication mode=\"Forms\" requiressl=\"true\"></authentication>",
-      "Enable SSL for all pages. It's recommended to enable SSL/TLS for the entire site. Use the IIS Manager to require SSL for the entire site. The detailed instructions on how to do this are linked to at the bottom of this page.",
-      "For information about setting up SSL on IIS, see http://www.iis.net/learn/manage/configuring-security/how-to-set-up-ssl-on-iis",
-      "For information about the FormsAuthentication.RequireSSL property, see http://msdn.microsoft.com/en-us/library/system.web.security.formsauthentication.requiressl.aspx"
-    ],
     "p": [
-      "Verify that authentication is protected using SSL/TLS.",
+      "Verify that authentication is protected using TLS.",
       "Sensitive data, such as usernames, passwords, hashes, and keys has to be transmitted during authentication. The communication channel should be encrypted to prevent this data from being intercepted.",
-      "To make sure that authentication is protected using SSL/TLS:",
-      "To protect authentication using SSL/TLS:"
+      "To make sure that authentication is protected using TLS:",
+      "To protect authentication using TLS:"
     ],
     "ol": [
-      "Authenticate using a web browser. Open the application with a web browser. Log in to the application. The browser should provide indication whether SSL/TLS is being used, usually in the URL bar. \n Examine the Web.config file. Review the Web.config file and make sure that the requireSSL attribute is set to true for the authentication element, if your application uses Forms Authentication.",
-      "Configure IIS to use SSL/TLS. Get a valid certificate. Hosting service providers often sell valid SSL certificates. Install the certificate. Create an HTTPS binding for the site. A link in the \"Additional Resources\" section describes how to do this in detail.\n Enable requireSSL for Forms Authentication. If your application uses Forms Authentication, edit the Web.config and set the requireSSL attribute to true for the authentication element, like so: <authentication mode=\"Forms\" requiressl=\"true\"></authentication>\n Enable SSL for all pages. It's recommended to enable SSL/TLS for the entire site. Use the IIS Manager to require SSL for the entire site. The detailed instructions on how to do this are linked to at the bottom of this page."
+      "Authenticate using a web browser. Open the application with a web browser. Log in to the application. The browser should provide indication whether TLS is being used, usually in the URL bar. \n Examine the Web.config file. Review the Web.config file and make sure that the requireSSL attribute is set to true for the authentication element, if your application uses Forms Authentication.",
+      "Configure IIS to use TLS. Get a valid certificate. Hosting service providers often sell valid TLS certificates. Install the certificate. Create an HTTPS binding for the site. A link in the \"Additional Resources\" section describes how to do this in detail.\n Enable requireSSL for Forms Authentication. If your application uses Forms Authentication, edit the Web.config and set the requireSSL attribute to true for the authentication element, like so: <authentication mode=\"Forms\" requiressl=\"true\"></authentication>\n Enable TLS for all pages. It's recommended to enable TLS for the entire site. Use the IIS Manager to require TLS for the entire site. The detailed instructions on how to do this are linked to at the bottom of this page."
+    ],
+    "li": [
+      "Authenticate using a web browser. Open the application with a web browser. Log in to the application. The browser should provide indication whether TLS is being used, usually in the URL bar.",
+      "Examine the Web.config file. Review the Web.config file and make sure that the requireSSL attribute is set to true for the authentication element, if your application uses Forms Authentication.",
+      "Configure IIS to use TLS. Get a valid certificate. Hosting service providers often sell valid TLS certificates. Install the certificate. Create an HTTPS binding for the site. A link in the \"Additional Resources\" section describes how to do this in detail.",
+      "Enable requireSSL for Forms Authentication. If your application uses Forms Authentication, edit the Web.config and set the requireSSL attribute to true for the authentication element, like so: <authentication mode=\"Forms\" requiressl=\"true\"></authentication>",
+      "Enable TLS for all pages. It's recommended to enable TLS for the entire site. Use the IIS Manager to require TLS for the entire site. The detailed instructions on how to do this are linked to at the bottom of this page.",
+      "For information about setting up TLS on IIS, see http://www.iis.net/learn/manage/configuring-security/how-to-set-up-ssl-on-iis",
+      "For information about the FormsAuthentication.RequireSSL property, see http://msdn.microsoft.com/en-us/library/system.web.security.formsauthentication.requiressl.aspx"
     ],
     "strong": [
       "Authenticate using a web browser.",
       "Examine the Web.config file.",
-      "Configure IIS to use SSL/TLS.",
+      "Configure IIS to use TLS.",
       "Enable requireSSL for Forms Authentication.",
-      "Enable SSL for all pages."
+      "Enable TLS for all pages."
     ],
     "em": [
       "requireSSL",
@@ -807,6 +791,9 @@
       "true",
       "authentication",
       "FormsAuthentication.RequireSSL"
+    ],
+    "ul": [
+      "For information about setting up TLS on IIS, see http://www.iis.net/learn/manage/configuring-security/how-to-set-up-ssl-on-iis\n For information about the FormsAuthentication.RequireSSL property, see http://msdn.microsoft.com/en-us/library/system.web.security.formsauthentication.requiressl.aspx"
     ],
     "a": [
       "http://www.iis.net/learn/manage/configuring-security/how-to-set-up-ssl-on-iis",
@@ -823,5 +810,5 @@
       "text": "http://msdn.microsoft.com/en-us/library/system.web.security.formsauthentication.requiressl.aspx"
     }
   ],
-  "html": "<h2>Applies To</h2><ul><li> ASP.NET</li>\n</ul><h2>What to Check For</h2><p>Verify that authentication is protected using SSL/TLS.\n</p><h2>Why</h2><p>Sensitive data, such as usernames, passwords, hashes, and keys has to be transmitted during authentication. The communication channel should be encrypted to prevent this data from being intercepted.\n</p><h2>How to Check</h2><p>To make sure that authentication is protected using SSL/TLS:\n</p><ol>\n<li> <strong>Authenticate using a web browser.</strong> Open the application with a web browser. Log in to the application. The browser should provide indication whether SSL/TLS is being used, usually in the URL bar. </li>\n<li> <strong>Examine the Web.config file.</strong> Review the Web.config file and make sure that the <em>requireSSL</em> attribute is set to <em>true</em> for the <em>authentication</em> element, if your application uses Forms Authentication. </li>\n</ol><h2>How to Fix</h2><p>To protect authentication using SSL/TLS:\n</p><ol>\n<li> <strong>Configure IIS to use SSL/TLS.</strong> Get a valid certificate. Hosting service providers often sell valid SSL certificates. Install the certificate. Create an HTTPS binding for the site. A link in the \"Additional Resources\" section describes how to do this in detail.</li>\n<li> <strong>Enable <em>requireSSL</em> for Forms Authentication.</strong> If your application uses Forms Authentication, edit the Web.config and set the <em>requireSSL</em> attribute to <em>true</em> for the <em>authentication</em> element, like so: &lt;authentication mode=\"Forms\" requiressl=\"true\"&gt;&lt;/authentication&gt;</li>\n<li> <strong>Enable SSL for all pages.</strong> It's recommended to enable SSL/TLS for the entire site. Use the IIS Manager to require SSL for the entire site. The detailed instructions on how to do this are linked to at the bottom of this page.</li>\n</ol><h2>Additional Resources</h2><ul><li> For information about setting up SSL on IIS, see <a href=\"http://www.iis.net/learn/manage/configuring-security/how-to-set-up-ssl-on-iis\">http://www.iis.net/learn/manage/configuring-security/how-to-set-up-ssl-on-iis</a></li>\n<li> For information about the <em>FormsAuthentication.RequireSSL</em> property, see <a href=\"http://msdn.microsoft.com/en-us/library/system.web.security.formsauthentication.requiressl.aspx\">http://msdn.microsoft.com/en-us/library/system.web.security.formsauthentication.requiressl.aspx</a></li>\n</ul>"
+  "html": "<h2>What to Check For</h2><p>Verify that authentication is protected using TLS.\n</p><h2>Why</h2><p>Sensitive data, such as usernames, passwords, hashes, and keys has to be transmitted during authentication. The communication channel should be encrypted to prevent this data from being intercepted.\n</p><h2>How to Check</h2><p>To make sure that authentication is protected using TLS:\n</p><ol>\n<li> <strong>Authenticate using a web browser.</strong> Open the application with a web browser. Log in to the application. The browser should provide indication whether TLS is being used, usually in the URL bar. </li>\n<li> <strong>Examine the Web.config file.</strong> Review the Web.config file and make sure that the <em>requireSSL</em> attribute is set to <em>true</em> for the <em>authentication</em> element, if your application uses Forms Authentication. </li>\n</ol><h2>How to Fix</h2><p>To protect authentication using TLS:\n</p><ol>\n<li> <strong>Configure IIS to use TLS.</strong> Get a valid certificate. Hosting service providers often sell valid TLS certificates. Install the certificate. Create an HTTPS binding for the site. A link in the \"Additional Resources\" section describes how to do this in detail.</li>\n<li> <strong>Enable <em>requireSSL</em> for Forms Authentication.</strong> If your application uses Forms Authentication, edit the Web.config and set the <em>requireSSL</em> attribute to <em>true</em> for the <em>authentication</em> element, like so: &lt;authentication mode=\"Forms\" requiressl=\"true\"&gt;&lt;/authentication&gt;</li>\n<li> <strong>Enable TLS for all pages.</strong> It's recommended to enable TLS for the entire site. Use the IIS Manager to require TLS for the entire site. The detailed instructions on how to do this are linked to at the bottom of this page.</li>\n</ol><h2>Additional Resources</h2><ul><li> For information about setting up TLS on IIS, see <a href=\"http://www.iis.net/learn/manage/configuring-security/how-to-set-up-ssl-on-iis\">http://www.iis.net/learn/manage/configuring-security/how-to-set-up-ssl-on-iis</a></li>\n<li> For information about the <em>FormsAuthentication.RequireSSL</em> property, see <a href=\"http://msdn.microsoft.com/en-us/library/system.web.security.formsauthentication.requiressl.aspx\">http://msdn.microsoft.com/en-us/library/system.web.security.formsauthentication.requiressl.aspx</a></li>\n</ul>"
 }

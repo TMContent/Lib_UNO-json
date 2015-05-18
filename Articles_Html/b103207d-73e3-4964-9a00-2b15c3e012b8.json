@@ -1,6 +1,6 @@
 {
   "id": "b103207d-73e3-4964-9a00-2b15c3e012b8",
-  "checksum": "25e5885c3f89e8687d4cd6902392acd68b478a68",
+  "checksum": "cc1e584c6480acebca872160ae4cc6497226c7bd",
   "words": {
     "applies": [
       "h1"
@@ -335,7 +335,7 @@
       "To implement server-side authentication, use authentication controls provided by the framework, or use a well-known third-party authentication library. If you have to implement your own authentication controls, design them to perform authentication on the server-side."
     ],
     "ol": [
-      "Identify authentication controls. Find code that is responsible for authentication.\r\n    \r\n    \r\n      \r\n        Verify that authentication controls are implemented on the server. Review authentication code to make sure that authentication is performed on the server."
+      "Identify authentication controls. Find code that is responsible for authentication.\n    \n    \n      \n        Verify that authentication controls are implemented on the server. Review authentication code to make sure that authentication is performed on the server."
     ],
     "strong": [
       "Identify authentication controls.",
@@ -346,5 +346,5 @@
     ]
   },
   "links": [],
-  "html": "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>Java</li>\r\n  </ul>\r\n  <h1>What to Check For</h1>\r\n  <p>Verify that authentication controls are implemented on the server, rather than in client-side code.</p>\r\n  <h1>Why</h1>\r\n  <p>Server-side authentication should be used, because client-side authentication is easy to bypass.</p>\r\n  <h1>How to Check</h1>\r\n  <p>To verify that server-side authentication is used:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Identify authentication controls. </strong>Find code that is responsible for authentication.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Verify that authentication controls are implemented on the server.</strong> Review authentication code to make sure that authentication is performed on the server.</p>\r\n    </li>\r\n  </ol>\r\n  <h1>How to Fix</h1>\r\n  <p>To implement server-side authentication, use authentication controls provided by the framework, or use a well-known third-party authentication library. If you have to implement your own authentication controls, design them to perform authentication on the server-side.</p>\r\n  <br />"
+  "html": "<h1>Applies to</h1>\n  <ul>\n    <li>Java</li>\n  </ul>\n  <h1>What to Check For</h1>\n  <p>Verify that authentication controls are implemented on the server, rather than in client-side code.</p>\n  <h1>Why</h1>\n  <p>Server-side authentication should be used, because client-side authentication is easy to bypass.</p>\n  <h1>How to Check</h1>\n  <p>To verify that server-side authentication is used:</p>\n  <ol>\n    <li>\n      <p>\n        <strong>Identify authentication controls. </strong>Find code that is responsible for authentication.</p>\n    </li>\n    <li>\n      <p>\n        <strong>Verify that authentication controls are implemented on the server.</strong> Review authentication code to make sure that authentication is performed on the server.</p>\n    </li>\n  </ol>\n  <h1>How to Fix</h1>\n  <p>To implement server-side authentication, use authentication controls provided by the framework, or use a well-known third-party authentication library. If you have to implement your own authentication controls, design them to perform authentication on the server-side.</p>\n  <br />"
 }

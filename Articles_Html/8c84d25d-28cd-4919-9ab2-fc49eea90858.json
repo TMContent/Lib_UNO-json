@@ -1,6 +1,6 @@
 {
   "id": "8c84d25d-28cd-4919-9ab2-fc49eea90858",
-  "checksum": "67cdd1be12de3487679e4ac358d66a90c41707d0",
+  "checksum": "b781b0ad76d3f133f508b30616c356432819052c",
   "words": {
     "what": [
       "h1"
@@ -94,7 +94,6 @@
     ],
     "connections": [
       "p",
-      "p",
       "title"
     ],
     "only": [
@@ -122,7 +121,6 @@
       "p"
     ],
     "ssl": [
-      "p",
       "p",
       "p",
       "p",
@@ -189,7 +187,7 @@
     "off": [
       "p"
     ],
-    "wire": [
+    "wire&nbsp;": [
       "p"
     ],
     "if": [
@@ -274,7 +272,7 @@
     "those": [
       "p"
     ],
-    "possible": [
+    "possible&nbsp;": [
       "p"
     ],
     "deal": [
@@ -348,6 +346,9 @@
     "send": [
       "p"
     ],
+    "connections&nbsp;": [
+      "p"
+    ],
     "by": [
       "p",
       "p",
@@ -387,7 +388,7 @@
     "your": [
       "p"
     ],
-    "application": [
+    "application&nbsp;": [
       "p"
     ],
     "requiressl=\"true\"": [
@@ -463,9 +464,7 @@
       "p",
       "p"
     ],
-    "content": [
-      "p",
-      "p",
+    "content&nbsp;": [
       "p",
       "p"
     ],
@@ -473,9 +472,11 @@
       "p",
       "p"
     ],
+    "content": [
+      "p",
+      "p"
+    ],
     "is": [
-      "p",
-      "p",
       "p",
       "p",
       "p",
@@ -534,6 +535,10 @@
       "p",
       "p"
     ],
+    "is&nbsp;": [
+      "p",
+      "p"
+    ],
     "however": [
       "p"
     ],
@@ -558,8 +563,7 @@
       "p",
       "p"
     ],
-    "requests": [
-      "p",
+    "requests&nbsp;": [
       "p"
     ],
     "positions": [
@@ -623,7 +627,13 @@
     "solution": [
       "h1"
     ],
-    "is correctly": [
+    "is&nbspcorrectly": [
+      "p"
+    ],
+    "requests": [
+      "p"
+    ],
+    "ssl&nbsp;": [
       "p"
     ],
     "cafe": [
@@ -667,6 +677,9 @@
     ],
     "guidance": [
       "p"
+    ],
+    "sink]": [
+      "title"
     ]
   },
   "tags": {
@@ -680,11 +693,11 @@
     ],
     "p": [
       "Use the requireSSL attribute to restrict authentication cookies to HTTPS connections only.",
-      "Sending cookies out exclusively over SSL makes it much harder for an attacker to sniff the cookie values off the wire.  If an attacker can get a copy of an authentication cookie, they can potentially emulate that user, compromising their account.",
-      "All systems which use authentication cookies should use SSL for those cookies if possible.  Systems which deal with any personally identifiable information or monetary transaction should use SSL in all circumstances without exception.",
-      "Set the secure property of the authentication cookie to ensure that browsers only send authentication cookies over HTTPS connections.  By using SSL, you prevent an attacker from capturing the authentication cookie to gain spoofed access to your application.  Set the secure property by using requireSSL=\"true\" on the <forms> element as shown here.",
-      "An online brokerage provides a large amount of reference content.  As this content is not specific to any user and is publicly available, it is not protected by SSL for performance reasons like the trading interface is.  However, the site is not configured to restrict authentication cookies to SSL only, so they're sent with all requests.  An attacker positions themself on the same network segment as a user (someone using the public network in an internet cafe), sniffs the user's traffic, steals their cookie, and uses it to access their accounts.",
-      "An online brokerage provides a large amount of reference content.  As this content is not specific to any user and is publicly available, it is not protected by SSL for performance reasons like the trading interface is.  The site is correctly configured to restrict authentication cookies to SSL only, so they're only sent with requests protected by SSL.  An attacker positions themself on the same network segment as a user (someone using the public network in an internet cafe) and sniffs the user's traffic, but because the cookies are only sent via SSL, they cannot retrieve them.",
+      "Sending cookies out exclusively over SSL makes it much harder for an attacker to sniff the cookie values off the wire.&nbsp; If an attacker can get a copy of an authentication cookie, they can potentially emulate that user, compromising their account.",
+      "All systems which use authentication cookies should use SSL for those cookies if possible.&nbsp; Systems which deal with any personally identifiable information or monetary transaction should use SSL in all circumstances without exception.",
+      "Set the secure property of the authentication cookie to ensure that browsers only send authentication cookies over HTTPS connections.&nbsp; By using SSL, you prevent an attacker from capturing the authentication cookie to gain spoofed access to your application.&nbsp; Set the secure property by using requireSSL=\"true\" on the <forms> element as shown here.",
+      "An online brokerage provides a large amount of reference content.&nbsp; As this content is not specific to any user and is publicly available, it is not protected by SSL for performance reasons like the trading interface is.&nbsp; However, the site is not configured to restrict authentication cookies to SSL only, so they're sent with all requests.&nbsp; An attacker positions themself on the same network segment as a user (someone using the public network in an internet cafe), sniffs the user's traffic, steals their cookie, and uses it to access their accounts.",
+      "An online brokerage provides a large amount of reference content.&nbsp; As this content is not specific to any user and is publicly available, it is not protected by SSL for performance reasons like the trading interface is.&nbsp; The site is&nbsp;correctly configured to restrict authentication cookies to SSL only, so they're only sent with requests protected by SSL.&nbsp; An attacker positions themself on the same network segment as a user (someone using the public network in an internet cafe) and sniffs the user's traffic, but because the cookies are only sent via SSL, they cannot retrieve them.",
       "Adapted from Microsoft patterns & practices guidance."
     ],
     "b": [
@@ -705,5 +718,5 @@
     ]
   },
   "links": [],
-  "html": "<h1>What to Do</h1>\r\n  <p>Use the <b>requireSSL</b> attribute to restrict authentication cookies to HTTPS connections only. </p>\r\n  <h1>Why</h1>\r\n  <p>Sending cookies out exclusively over SSL makes it much harder for an attacker to sniff the cookie values off the wire.&nbsp; If an attacker can get a copy of an authentication cookie, they can potentially emulate that user, compromising their account. </p>\r\n  <h1>When</h1>\r\n  <p>All systems which use authentication cookies should use SSL for those cookies if possible.&nbsp; Systems which deal with any personally identifiable information or monetary transaction should use SSL in all circumstances without exception. </p>\r\n  <h1>How</h1>\r\n  <p>Set the <b>secure</b> property of the authentication cookie to ensure that browsers only send authentication cookies over HTTPS connections.&nbsp; By using SSL, you prevent an attacker from capturing the authentication cookie to gain spoofed access to your application.&nbsp; Set the <b>secure</b> property by using <b>requireSSL=\"true\"</b> on the <b>&lt;forms&gt;</b> element as shown here. </p>\r\n  <pre>&lt;forms loginUrl=\"Secure\\Login.aspx\"<br />        requireSSL=\"true\" ... /&gt;</pre>\r\n  <h1>Problem Example</h1>\r\n  <p>An online brokerage provides a large amount of reference content.&nbsp; As this content is not specific to any user and is publicly available, it is not protected by SSL for performance reasons like the trading interface is.&nbsp; However, the site is not configured to restrict authentication cookies to SSL only, so they're sent with all requests.&nbsp; An attacker positions themself on the same network segment as a user (someone using the public network in an internet cafe), sniffs the user's traffic, steals their cookie, and uses it to access their accounts.</p>\r\n  <h1>Solution Example</h1>\r\n  <p>An online brokerage provides a large amount of reference content.&nbsp; As this content is not specific to any user and is publicly available, it is not protected by SSL for performance reasons like the trading interface is.&nbsp; The site is&nbsp;correctly configured to restrict authentication cookies to SSL only, so they're only sent with requests protected by SSL.&nbsp; An attacker positions themself on the same network segment as a user (someone using the public network in an internet cafe) and sniffs the user's traffic, but because the cookies are only sent via SSL, they cannot retrieve them.</p>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance. </p>"
+  "html": "<h1>What to Do</h1>\n  <p>Use the <b>requireSSL</b> attribute to restrict authentication cookies to HTTPS connections only. </p>\n  <h1>Why</h1>\n  <p>Sending cookies out exclusively over SSL makes it much harder for an attacker to sniff the cookie values off the wire.&amp;nbsp; If an attacker can get a copy of an authentication cookie, they can potentially emulate that user, compromising their account. </p>\n  <h1>When</h1>\n  <p>All systems which use authentication cookies should use SSL for those cookies if possible.&amp;nbsp; Systems which deal with any personally identifiable information or monetary transaction should use SSL in all circumstances without exception. </p>\n  <h1>How</h1>\n  <p>Set the <b>secure</b> property of the authentication cookie to ensure that browsers only send authentication cookies over HTTPS connections.&amp;nbsp; By using SSL, you prevent an attacker from capturing the authentication cookie to gain spoofed access to your application.&amp;nbsp; Set the <b>secure</b> property by using <b>requireSSL=\"true\"</b> on the <b>&lt;forms&gt;</b> element as shown here. </p>\n  <pre>&lt;forms loginUrl=\"Secure\\Login.aspx\"<br />        requireSSL=\"true\" ... /&gt;</pre>\n  <h1>Problem Example</h1>\n  <p>An online brokerage provides a large amount of reference content.&amp;nbsp; As this content is not specific to any user and is publicly available, it is not protected by SSL for performance reasons like the trading interface is.&amp;nbsp; However, the site is not configured to restrict authentication cookies to SSL only, so they're sent with all requests.&amp;nbsp; An attacker positions themself on the same network segment as a user (someone using the public network in an internet cafe), sniffs the user's traffic, steals their cookie, and uses it to access their accounts.</p>\n  <h1>Solution Example</h1>\n  <p>An online brokerage provides a large amount of reference content.&amp;nbsp; As this content is not specific to any user and is publicly available, it is not protected by SSL for performance reasons like the trading interface is.&amp;nbsp; The site is&amp;nbsp;correctly configured to restrict authentication cookies to SSL only, so they're only sent with requests protected by SSL.&amp;nbsp; An attacker positions themself on the same network segment as a user (someone using the public network in an internet cafe) and sniffs the user's traffic, but because the cookies are only sent via SSL, they cannot retrieve them.</p>\n  <hr />\n  <p>Adapted from Microsoft patterns &amp; practices guidance. </p>"
 }

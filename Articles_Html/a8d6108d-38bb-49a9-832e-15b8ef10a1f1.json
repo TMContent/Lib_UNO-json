@@ -1,6 +1,6 @@
 {
   "id": "a8d6108d-38bb-49a9-832e-15b8ef10a1f1",
-  "checksum": "2aa6958e31322130c3e763054645e2470d53c0ce",
+  "checksum": "9a4d0ff3ebdf63120798ce99783f1b1d29458bdd",
   "words": {
     "30": [
       "ul",
@@ -922,7 +922,7 @@
       "ul",
       "li"
     ],
-    "at\rhttp://technet.microsoft.com/en-us/wsus/default.aspx.": [
+    "athttp://technet.microsoft.com/en-us/wsus/default.aspx.": [
       "ul",
       "li"
     ],
@@ -938,7 +938,7 @@
       "ul",
       "li"
     ],
-    "at\rhttp://technet.microsoft.com/en-us/library/dd939892(ws.10).aspx.": [
+    "athttp://technet.microsoft.com/en-us/library/dd939892(ws.10).aspx.": [
       "ul",
       "li"
     ],
@@ -950,7 +950,7 @@
       "ul",
       "li"
     ],
-    "at\rhttp://technet.microsoft.com/en-us/library/cc708532(ws.10).aspx.": [
+    "athttp://technet.microsoft.com/en-us/library/cc708532(ws.10).aspx.": [
       "ul",
       "li"
     ],
@@ -987,17 +987,17 @@
     ],
     "ul": [
       "PCI DSS Requirement 6.1",
-      "For more information about WSUS, please see \"Windows Server Update Services\" at\r\nhttp://technet.microsoft.com/en-us/wsus/default.aspx.\r\n\r\n    For more information about installing WSUS on Windows 2008, please see the \"WSUS 3.0 SP2&nbsp;Deployment Guide\" at\r\nhttp://technet.microsoft.com/en-us/library/dd939892(WS.10).aspx.\r\n\r\n    For more information about installing WSUS on Windows 2003, please see the \"Deploying Microsoft Windows Server Update Services 2.0\" at\r\nhttp://technet.microsoft.com/en-us/library/cc708532(WS.10).aspx.",
+      "For more information about WSUS, please see \"Windows Server Update Services\" at\nhttp://technet.microsoft.com/en-us/wsus/default.aspx.\n\n    For more information about installing WSUS on Windows 2008, please see the \"WSUS 3.0 SP2&nbsp;Deployment Guide\" at\nhttp://technet.microsoft.com/en-us/library/dd939892(WS.10).aspx.\n\n    For more information about installing WSUS on Windows 2003, please see the \"Deploying Microsoft Windows Server Update Services 2.0\" at\nhttp://technet.microsoft.com/en-us/library/cc708532(WS.10).aspx.",
       "Latest patches and updates are installed."
     ],
     "li": [
       "PCI DSS Requirement 6.1",
-      "Install updates for Microsoft software. Windows Server Update Services may be deployed to update most common Microsoft software in compliance with PCI DSS. Installing and configuring WSUS is an involved process that is thoroughly documented\r\n by Microsoft on its TechNet web site linked at the bottom of this article.&nbsp;&nbsp;",
-      "Install updates from other vendors. Usually applying vendor-supplied patches means going to the vendor's web site, downloading the latest patches, and installing them, which is often a matter of running a packaged executable on the target\r\n host. The procedures for applying security updates vary by vendor, though, as some vendors package their updates differently, such as compressed archives or source code patches. Please refer to your vendor's documentation or technical support for detailed\r\n instructions on installing their security updates.",
+      "Install updates for Microsoft software. Windows Server Update Services may be deployed to update most common Microsoft software in compliance with PCI DSS. Installing and configuring WSUS is an involved process that is thoroughly documented\n by Microsoft on its TechNet web site linked at the bottom of this article.&nbsp;&nbsp;",
+      "Install updates from other vendors. Usually applying vendor-supplied patches means going to the vendor's web site, downloading the latest patches, and installing them, which is often a matter of running a packaged executable on the target\n host. The procedures for applying security updates vary by vendor, though, as some vendors package their updates differently, such as compressed archives or source code patches. Please refer to your vendor's documentation or technical support for detailed\n instructions on installing their security updates.",
       "Schedule regular updates. Add a point to the information security policy that requires critical new&nbsp;patches to be installed at least once a month. Install new security patches at least once a month.",
-      "For more information about WSUS, please see \"Windows Server Update Services\" at\r\nhttp://technet.microsoft.com/en-us/wsus/default.aspx.",
-      "For more information about installing WSUS on Windows 2008, please see the \"WSUS 3.0 SP2&nbsp;Deployment Guide\" at\r\nhttp://technet.microsoft.com/en-us/library/dd939892(WS.10).aspx.",
-      "For more information about installing WSUS on Windows 2003, please see the \"Deploying Microsoft Windows Server Update Services 2.0\" at\r\nhttp://technet.microsoft.com/en-us/library/cc708532(WS.10).aspx.",
+      "For more information about WSUS, please see \"Windows Server Update Services\" at\nhttp://technet.microsoft.com/en-us/wsus/default.aspx.",
+      "For more information about installing WSUS on Windows 2008, please see the \"WSUS 3.0 SP2&nbsp;Deployment Guide\" at\nhttp://technet.microsoft.com/en-us/library/dd939892(WS.10).aspx.",
+      "For more information about installing WSUS on Windows 2003, please see the \"Deploying Microsoft Windows Server Update Services 2.0\" at\nhttp://technet.microsoft.com/en-us/library/cc708532(WS.10).aspx.",
       "Latest patches and updates are installed."
     ],
     "p": [
@@ -1005,12 +1005,12 @@
       "Installing vendor-supplied security patches fixes known security vulnerabilities.",
       "The latest vendor-supplied security patches should be installed within a month of being released.",
       "Perform the following actions to install the latest security updates:",
-      "Install updates for Microsoft software. Windows Server Update Services may be deployed to update most common Microsoft software in compliance with PCI DSS. Installing and configuring WSUS is an involved process that is thoroughly documented\r\n by Microsoft on its TechNet web site linked at the bottom of this article.&nbsp;&nbsp;",
-      "Install updates from other vendors. Usually applying vendor-supplied patches means going to the vendor's web site, downloading the latest patches, and installing them, which is often a matter of running a packaged executable on the target\r\n host. The procedures for applying security updates vary by vendor, though, as some vendors package their updates differently, such as compressed archives or source code patches. Please refer to your vendor's documentation or technical support for detailed\r\n instructions on installing their security updates.",
+      "Install updates for Microsoft software. Windows Server Update Services may be deployed to update most common Microsoft software in compliance with PCI DSS. Installing and configuring WSUS is an involved process that is thoroughly documented\n by Microsoft on its TechNet web site linked at the bottom of this article.&nbsp;&nbsp;",
+      "Install updates from other vendors. Usually applying vendor-supplied patches means going to the vendor's web site, downloading the latest patches, and installing them, which is often a matter of running a packaged executable on the target\n host. The procedures for applying security updates vary by vendor, though, as some vendors package their updates differently, such as compressed archives or source code patches. Please refer to your vendor's documentation or technical support for detailed\n instructions on installing their security updates.",
       "Schedule regular updates. Add a point to the information security policy that requires critical new&nbsp;patches to be installed at least once a month. Install new security patches at least once a month."
     ],
     "ol": [
-      "Install updates for Microsoft software. Windows Server Update Services may be deployed to update most common Microsoft software in compliance with PCI DSS. Installing and configuring WSUS is an involved process that is thoroughly documented\r\n by Microsoft on its TechNet web site linked at the bottom of this article.&nbsp;&nbsp; \r\n    \r\n    \r\n      \r\n        Install updates from other vendors. Usually applying vendor-supplied patches means going to the vendor's web site, downloading the latest patches, and installing them, which is often a matter of running a packaged executable on the target\r\n host. The procedures for applying security updates vary by vendor, though, as some vendors package their updates differently, such as compressed archives or source code patches. Please refer to your vendor's documentation or technical support for detailed\r\n instructions on installing their security updates. \r\n    \r\n    \r\n      \r\n        Schedule regular updates. Add a point to the information security policy that requires critical new&nbsp;patches to be installed at least once a month. Install new security patches at least once a month."
+      "Install updates for Microsoft software. Windows Server Update Services may be deployed to update most common Microsoft software in compliance with PCI DSS. Installing and configuring WSUS is an involved process that is thoroughly documented\n by Microsoft on its TechNet web site linked at the bottom of this article.&nbsp;&nbsp; \n    \n    \n      \n        Install updates from other vendors. Usually applying vendor-supplied patches means going to the vendor's web site, downloading the latest patches, and installing them, which is often a matter of running a packaged executable on the target\n host. The procedures for applying security updates vary by vendor, though, as some vendors package their updates differently, such as compressed archives or source code patches. Please refer to your vendor's documentation or technical support for detailed\n instructions on installing their security updates. \n    \n    \n      \n        Schedule regular updates. Add a point to the information security policy that requires critical new&nbsp;patches to be installed at least once a month. Install new security patches at least once a month."
     ],
     "strong": [
       "Install updates for Microsoft software.",
@@ -1042,5 +1042,5 @@
       "text": "Latest patches and updates are installed."
     }
   ],
-  "html": "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 6.1 </li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Install the latest security updates supplied by the vendor.</p>\r\n  <h1>Why</h1>\r\n  <p>Installing vendor-supplied security patches fixes known security vulnerabilities.</p>\r\n  <h1>When</h1>\r\n  <p>The latest vendor-supplied security patches should be installed within a month of being released.</p>\r\n  <h1>How</h1>\r\n  <p>Perform the following actions to install the latest security updates:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Install updates for Microsoft software.</strong> Windows Server Update Services may be deployed to update most common Microsoft software in compliance with PCI DSS. Installing and configuring WSUS is an involved process that is thoroughly documented\r\n by Microsoft on its TechNet web site linked at the bottom of this article.&amp;nbsp;&amp;nbsp; </p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Install updates from other vendors.</strong> Usually applying vendor-supplied patches means going to the vendor's web site, downloading the latest patches, and installing them, which is often a matter of running a packaged executable on the target\r\n host. The procedures for applying security updates vary by vendor, though, as some vendors package their updates differently, such as compressed archives or source code patches. Please refer to your vendor's documentation or technical support for detailed\r\n instructions on installing their security updates. </p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Schedule regular updates. </strong>Add a point to the information security policy that requires critical new&amp;nbsp;patches to be installed at least once a month. Install new security patches at least once a month.</p>\r\n    </li>\r\n  </ol>\r\n  <h1>Additional Resources</h1>\r\n  <ul>\r\n    <li>For more information about WSUS, please see \"Windows Server Update Services\" at\r\n<a href=\"http://technet.microsoft.com/en-us/wsus/default.aspx\">http://technet.microsoft.com/en-us/wsus/default.aspx</a>.\r\n</li>\r\n    <li>For more information about installing WSUS on Windows 2008, please see the \"WSUS 3.0 SP2&amp;nbsp;Deployment Guide\" at\r\n<a href=\"http://technet.microsoft.com/en-us/library/dd939892(WS.10).aspx\">http://technet.microsoft.com/en-us/library/dd939892(WS.10).aspx</a>.\r\n</li>\r\n    <li>For more information about installing WSUS on Windows 2003, please see the \"Deploying Microsoft Windows Server Update Services 2.0\" at\r\n<a href=\"http://technet.microsoft.com/en-us/library/cc708532(WS.10).aspx\">http://technet.microsoft.com/en-us/library/cc708532(WS.10).aspx</a>.</li>\r\n  </ul>\r\n  <h1>Related Items</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/a6516340-55fb-414c-8a5e-c172d473561b\">Latest patches and updates are installed.</a>\r\n    </li>\r\n  </ul>"
+  "html": "<h1>Applies to</h1>\n  <ul>\n    <li>PCI DSS Requirement 6.1 </li>\n  </ul>\n  <h1>What to Do</h1>\n  <p>Install the latest security updates supplied by the vendor.</p>\n  <h1>Why</h1>\n  <p>Installing vendor-supplied security patches fixes known security vulnerabilities.</p>\n  <h1>When</h1>\n  <p>The latest vendor-supplied security patches should be installed within a month of being released.</p>\n  <h1>How</h1>\n  <p>Perform the following actions to install the latest security updates:</p>\n  <ol>\n    <li>\n      <p>\n        <strong>Install updates for Microsoft software.</strong> Windows Server Update Services may be deployed to update most common Microsoft software in compliance with PCI DSS. Installing and configuring WSUS is an involved process that is thoroughly documented\n by Microsoft on its TechNet web site linked at the bottom of this article.&amp;nbsp;&amp;nbsp; </p>\n    </li>\n    <li>\n      <p>\n        <strong>Install updates from other vendors.</strong> Usually applying vendor-supplied patches means going to the vendor's web site, downloading the latest patches, and installing them, which is often a matter of running a packaged executable on the target\n host. The procedures for applying security updates vary by vendor, though, as some vendors package their updates differently, such as compressed archives or source code patches. Please refer to your vendor's documentation or technical support for detailed\n instructions on installing their security updates. </p>\n    </li>\n    <li>\n      <p>\n        <strong>Schedule regular updates. </strong>Add a point to the information security policy that requires critical new&amp;nbsp;patches to be installed at least once a month. Install new security patches at least once a month.</p>\n    </li>\n  </ol>\n  <h1>Additional Resources</h1>\n  <ul>\n    <li>For more information about WSUS, please see \"Windows Server Update Services\" at\n<a href=\"http://technet.microsoft.com/en-us/wsus/default.aspx\">http://technet.microsoft.com/en-us/wsus/default.aspx</a>.\n</li>\n    <li>For more information about installing WSUS on Windows 2008, please see the \"WSUS 3.0 SP2&amp;nbsp;Deployment Guide\" at\n<a href=\"http://technet.microsoft.com/en-us/library/dd939892(WS.10).aspx\">http://technet.microsoft.com/en-us/library/dd939892(WS.10).aspx</a>.\n</li>\n    <li>For more information about installing WSUS on Windows 2003, please see the \"Deploying Microsoft Windows Server Update Services 2.0\" at\n<a href=\"http://technet.microsoft.com/en-us/library/cc708532(WS.10).aspx\">http://technet.microsoft.com/en-us/library/cc708532(WS.10).aspx</a>.</li>\n  </ul>\n  <h1>Related Items</h1>\n  <ul>\n    <li>\n      <a href=\"/article/a6516340-55fb-414c-8a5e-c172d473561b\">Latest patches and updates are installed.</a>\n    </li>\n  </ul>"
 }

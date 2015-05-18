@@ -1,6 +1,6 @@
 {
   "id": "8ee31333-4131-4baa-beb2-3863c80ef536",
-  "checksum": "1a7e3c4cc38f179405a8cb6ca83a12a9136713d8",
+  "checksum": "8d5136fd65cd7a34cf3a1e4153a8ab6232e4b9cf",
   "words": {
     "what": [
       "h1"
@@ -294,5 +294,5 @@
     ]
   },
   "links": [],
-  "html": "<h1>What to Check For</h1>\r\n  <p>Check to ensure that a&nbsp;custom trust policy file&nbsp;is created if your application requires additional permissions beyond those provided at a particular trust level, and it does not need the additional permissions provided by the next trust level.</p>\r\n  <h1>Why</h1>\r\n  <p>To avoid granting your application unnecessary permissions.</p>\r\n  <h1>How to Fix</h1>\r\n  <p>To create a custom policy, copy the trust level policy file that most closely matches your application's permission requirements to create a new custom policy file. Locate this file in the standard policy file directory, which is &#37;Windir&#37;\\Microsoft.NET\\Framework\\&#123;Version&#125;\\CONFIG. Then add the required additional permissions to the custom policy file and configure your application to run using the custom policy. </p>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance. </p>"
+  "html": "<h1>What to Check For</h1>\n  <p>Check to ensure that a&nbsp;custom trust policy file&nbsp;is created if your application requires additional permissions beyond those provided at a particular trust level, and it does not need the additional permissions provided by the next trust level.</p>\n  <h1>Why</h1>\n  <p>To avoid granting your application unnecessary permissions.</p>\n  <h1>How to Fix</h1>\n  <p>To create a custom policy, copy the trust level policy file that most closely matches your application's permission requirements to create a new custom policy file. Locate this file in the standard policy file directory, which is &#37;Windir&#37;\\Microsoft.NET\\Framework\\&#123;Version&#125;\\CONFIG. Then add the required additional permissions to the custom policy file and configure your application to run using the custom policy. </p>\n  <hr />\n  <p>Adapted from Microsoft patterns & practices guidance. </p>"
 }

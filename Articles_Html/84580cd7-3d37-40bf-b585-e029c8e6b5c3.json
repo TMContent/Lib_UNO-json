@@ -1,6 +1,6 @@
 {
   "id": "84580cd7-3d37-40bf-b585-e029c8e6b5c3",
-  "checksum": "4be067428ed45d243b506a5be0bba2b41aeed330",
+  "checksum": "89eba0e8f1e172531e7d4f00ec93d7666d79b997",
   "words": {
     "applies": [
       "h1"
@@ -121,7 +121,9 @@
       "a",
       "title"
     ],
-    "ssl": [
+    "tls": [
+      "p",
+      "p",
       "p",
       "p",
       "p",
@@ -314,10 +316,6 @@
       "p"
     ],
     "enable": [
-      "p",
-      "p"
-    ],
-    "tls": [
       "p",
       "p"
     ],
@@ -533,31 +531,31 @@
       "Transport Layer Protection Checklists"
     ],
     "ul": [
-      "PHP Apache",
-      "For more information about configuring SSL in Apache, please see http://httpd.apache.org/docs/2.0/ssl/ssl_howto.html",
-      "Use SSL\r\n    \r\n    \r\n      Use SSL for All Sensitive Pages\r\n    \r\n    \r\n      Use Only Strong SSL Algorithms\r\n    \r\n    \r\n      Use Valid SSL Certificates",
-      "SSL Is Enabled\r\n    \r\n    \r\n      SSL Is Used for All Sensitive Pages\r\n    \r\n    \r\n      Only Strong SSL Algorithms Are Used\r\n    \r\n    \r\n      Valid SSL Certificates Are Used"
+      "PHP \n    Apache",
+      "For more information about configuring TLS in Apache, please see http://httpd.apache.org/docs/2.0/ssl/ssl_howto.html",
+      "Use TLS\n    \n    \n      Use TLS for All Sensitive Pages\n    \n    \n      Use Only Strong TLS Algorithms\n    \n    \n      Use Valid TLS Certificates",
+      "TLS Is Enabled\n    \n    \n      TLS Is Used for All Sensitive Pages\n    \n    \n      Only Strong TLS Algorithms Are Used\n    \n    \n      Valid TLS Certificates Are Used"
     ],
     "li": [
       "PHP",
       "Apache",
-      "For more information about configuring SSL in Apache, please see http://httpd.apache.org/docs/2.0/ssl/ssl_howto.html",
-      "Use SSL",
-      "Use SSL for All Sensitive Pages",
-      "Use Only Strong SSL Algorithms",
-      "Use Valid SSL Certificates",
-      "SSL Is Enabled",
-      "SSL Is Used for All Sensitive Pages",
-      "Only Strong SSL Algorithms Are Used",
-      "Valid SSL Certificates Are Used"
+      "For more information about configuring TLS in Apache, please see http://httpd.apache.org/docs/2.0/ssl/ssl_howto.html",
+      "Use TLS",
+      "Use TLS for All Sensitive Pages",
+      "Use Only Strong TLS Algorithms",
+      "Use Valid TLS Certificates",
+      "TLS Is Enabled",
+      "TLS Is Used for All Sensitive Pages",
+      "Only Strong TLS Algorithms Are Used",
+      "Valid TLS Certificates Are Used"
     ],
     "p": [
-      "Verify that Apache is configured to use only strong SSL ciphers.",
-      "Using strong encryption algorithms with SSL helps reduce the risk of successful eavesdropping attacks and helps with regulatory compliance.",
-      "To verify that Apache is configured to use only strong SSL ciphers, view the httpd.conf files and check the following settings: \"SSLProtocol\" and \"SSLCipherSuite\". The recommended settings are:",
+      "Verify that Apache is configured to use only strong TLS ciphers.",
+      "Using strong encryption algorithms with TLS helps reduce the risk of successful eavesdropping attacks and helps with regulatory compliance.",
+      "To verify that Apache is configured to use only strong TLS ciphers, view the httpd.conf files and check the following settings: \"SSLProtocol\" and \"SSLCipherSuite\". The recommended settings are:",
       "These settings enable only the TLS protocol and only the strong encryption cipher suites.",
       "It may also be a good idea to check for the following line in case of old versions of apache/mod_ssl:",
-      "To use only strong SSL algorithms, edit the httpd.conf file to include the following settings:",
+      "To use only strong TLS algorithms, edit the httpd.conf file to include the following settings:",
       "These settings enable only the TLS protocol and only the strong encryption cipher suites.",
       "It may also be a good idea to include the following line in case of old versions of apache/mod_ssl:"
     ],
@@ -583,14 +581,14 @@
     ],
     "a": [
       "http://httpd.apache.org/docs/2.0/ssl/ssl_howto.html",
-      "Use SSL",
-      "Use SSL for All Sensitive Pages",
-      "Use Only Strong SSL Algorithms",
-      "Use Valid SSL Certificates",
-      "SSL Is Enabled",
-      "SSL Is Used for All Sensitive Pages",
-      "Only Strong SSL Algorithms Are Used",
-      "Valid SSL Certificates Are Used"
+      "Use TLS",
+      "Use TLS for All Sensitive Pages",
+      "Use Only Strong TLS Algorithms",
+      "Use Valid TLS Certificates",
+      "TLS Is Enabled",
+      "TLS Is Used for All Sensitive Pages",
+      "Only Strong TLS Algorithms Are Used",
+      "Valid TLS Certificates Are Used"
     ]
   },
   "links": [
@@ -600,36 +598,36 @@
     },
     {
       "href": "/article/34c8d5b4-430d-4112-802b-f8c5fb786cfe",
-      "text": "Use SSL"
+      "text": "Use TLS"
     },
     {
       "href": "/article/84b2da4a-0f64-4d64-80dc-0e91a3506ef4",
-      "text": "Use SSL for All Sensitive Pages"
+      "text": "Use TLS for All Sensitive Pages"
     },
     {
       "href": "/article/a6be174a-c52a-4513-8caa-2983fd6555a2",
-      "text": "Use Only Strong SSL Algorithms"
+      "text": "Use Only Strong TLS Algorithms"
     },
     {
       "href": "/article/12098efa-6926-4603-968c-76c9416f6fa4",
-      "text": "Use Valid SSL Certificates"
+      "text": "Use Valid TLS Certificates"
     },
     {
       "href": "/article/3b1eb7f0-76cd-4e4f-8653-8a6a6a32d1c9",
-      "text": "SSL Is Enabled"
+      "text": "TLS Is Enabled"
     },
     {
       "href": "/article/7eea0be2-6c3b-4d4c-a6f1-4e3fbb3f4295",
-      "text": "SSL Is Used for All Sensitive Pages"
+      "text": "TLS Is Used for All Sensitive Pages"
     },
     {
       "href": "/article/84580cd7-3d37-40bf-b585-e029c8e6b5c3",
-      "text": "Only Strong SSL Algorithms Are Used"
+      "text": "Only Strong TLS Algorithms Are Used"
     },
     {
       "href": "/article/8d2d20fc-a21a-4a1c-bb31-8a876e57abaf",
-      "text": "Valid SSL Certificates Are Used"
+      "text": "Valid TLS Certificates Are Used"
     }
   ],
-  "html": "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PHP <li>Apache</li></li>\r\n  </ul>\r\n  <h1>What to Check For</h1>\r\n  <p>Verify that Apache is configured to use only strong SSL ciphers.</p>\r\n  <h1>Why</h1>\r\n  <p>Using strong encryption algorithms with SSL helps reduce the risk of successful eavesdropping attacks and helps with regulatory compliance.</p>\r\n  <h1>How to Check</h1>\r\n  <p>To verify that Apache is configured to use only strong SSL ciphers, view the <em>httpd.conf</em> files and check the following settings: \"<em>SSLProtocol</em>\" and \"<em>SSLCipherSuite</em>\". The recommended settings are:</p>\r\n  <pre>SSLProtocol -all &#43;TLSv1<br />SSLCipherSuite HIGH:&#33;aNULL:&#33;SSLv2:&#33;MD5:&#64;STRENGTH<br />SSLHonorCipherOrder on</pre>\r\n  <p>These settings enable only the TLS protocol and only the strong encryption cipher suites.</p>\r\n  <p>It may also be a good idea to check for the following line in case of old versions of <em>apache/mod_ssl</em>:</p>\r\n  <pre>SSLInsecureRenegotiation off</pre>\r\n  <h1>How to Fix</h1>\r\n  <p>To use only strong SSL algorithms, edit the <em>httpd.conf</em> file to include the following settings:</p>\r\n  <pre>SSLProtocol -all &#43;TLSv1<br />SSLCipherSuite HIGH:&#33;aNULL:&#33;SSLv2:&#33;MD5:&#64;STRENGTH<br />SSLHonorCipherOrder on</pre>\r\n  <p>These settings enable only the TLS protocol and only the strong encryption cipher suites.</p>\r\n  <p>It may also be a good idea to include the following line in case of old versions of <em>apache/mod_ssl</em>:</p>\r\n  <pre>SSLInsecureRenegotiation off</pre>\r\n  <h1>Additional Resources</h1>\r\n  <ul>\r\n    <li>For more information about configuring SSL in Apache, please see <a href=\"http://httpd.apache.org/docs/2.0/ssl/ssl_howto.html\">http://httpd.apache.org/docs/2.0/ssl/ssl_howto.html</a></li>\r\n  </ul>\r\n  <h1>Transport Layer Protection Guidelines</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/34c8d5b4-430d-4112-802b-f8c5fb786cfe\">Use SSL</a>\r\n    </li>\r\n    <li>\r\n      <a href=\"/article/84b2da4a-0f64-4d64-80dc-0e91a3506ef4\">Use SSL for All Sensitive Pages</a>\r\n    </li>\r\n    <li>\r\n      <a href=\"/article/a6be174a-c52a-4513-8caa-2983fd6555a2\">Use Only Strong SSL Algorithms</a>\r\n    </li>\r\n    <li>\r\n      <a href=\"/article/12098efa-6926-4603-968c-76c9416f6fa4\">Use Valid SSL Certificates</a>\r\n    </li>\r\n  </ul>\r\n  <h1>Transport Layer Protection Checklists</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/3b1eb7f0-76cd-4e4f-8653-8a6a6a32d1c9\">SSL Is Enabled</a>\r\n    </li>\r\n    <li>\r\n      <a href=\"/article/7eea0be2-6c3b-4d4c-a6f1-4e3fbb3f4295\">SSL Is Used for All Sensitive Pages</a>\r\n    </li>\r\n    <li>\r\n      <a href=\"/article/84580cd7-3d37-40bf-b585-e029c8e6b5c3\">Only Strong SSL Algorithms Are Used</a>\r\n    </li>\r\n    <li>\r\n      <a href=\"/article/8d2d20fc-a21a-4a1c-bb31-8a876e57abaf\">Valid SSL Certificates Are Used</a>\r\n    </li>\r\n  </ul>"
+  "html": "<h1>Applies to</h1>\n  <ul>\n    <li>PHP </li>\n    <li>Apache</li>\n  </ul>\n  <h1>What to Check For</h1>\n  <p>Verify that Apache is configured to use only strong TLS ciphers.</p>\n  <h1>Why</h1>\n  <p>Using strong encryption algorithms with TLS helps reduce the risk of successful eavesdropping attacks and helps with regulatory compliance.</p>\n  <h1>How to Check</h1>\n  <p>To verify that Apache is configured to use only strong TLS ciphers, view the <em>httpd.conf</em> files and check the following settings: \"<em>SSLProtocol</em>\" and \"<em>SSLCipherSuite</em>\". The recommended settings are:</p>\n  <pre>SSLProtocol -all +TLSv1<br />SSLCipherSuite HIGH:!aNULL:!SSLv2:!MD5:@STRENGTH<br />SSLHonorCipherOrder on</pre>\n  <p>These settings enable only the TLS protocol and only the strong encryption cipher suites.</p>\n  <p>It may also be a good idea to check for the following line in case of old versions of <em>apache/mod_ssl</em>:</p>\n  <pre>SSLInsecureRenegotiation off</pre>\n  <h1>How to Fix</h1>\n  <p>To use only strong TLS algorithms, edit the <em>httpd.conf</em> file to include the following settings:</p>\n  <pre>SSLProtocol -all +TLSv1<br />SSLCipherSuite HIGH:!aNULL:!SSLv2:!MD5:@STRENGTH<br />SSLHonorCipherOrder on</pre>\n  <p>These settings enable only the TLS protocol and only the strong encryption cipher suites.</p>\n  <p>It may also be a good idea to include the following line in case of old versions of <em>apache/mod_ssl</em>:</p>\n  <pre>SSLInsecureRenegotiation off</pre>\n  <h1>Additional Resources</h1>\n  <ul>\n    <li>For more information about configuring TLS in Apache, please see <a href=\"http://httpd.apache.org/docs/2.0/ssl/ssl_howto.html\">http://httpd.apache.org/docs/2.0/ssl/ssl_howto.html</a></li>\n  </ul>\n  <h1>Transport Layer Protection Guidelines</h1>\n  <ul>\n    <li>\n      <a href=\"/article/34c8d5b4-430d-4112-802b-f8c5fb786cfe\">Use TLS</a>\n    </li>\n    <li>\n      <a href=\"/article/84b2da4a-0f64-4d64-80dc-0e91a3506ef4\">Use TLS for All Sensitive Pages</a>\n    </li>\n    <li>\n      <a href=\"/article/a6be174a-c52a-4513-8caa-2983fd6555a2\">Use Only Strong TLS Algorithms</a>\n    </li>\n    <li>\n      <a href=\"/article/12098efa-6926-4603-968c-76c9416f6fa4\">Use Valid TLS Certificates</a>\n    </li>\n  </ul>\n  <h1>Transport Layer Protection Checklists</h1>\n  <ul>\n    <li>\n      <a href=\"/article/3b1eb7f0-76cd-4e4f-8653-8a6a6a32d1c9\">TLS Is Enabled</a>\n    </li>\n    <li>\n      <a href=\"/article/7eea0be2-6c3b-4d4c-a6f1-4e3fbb3f4295\">TLS Is Used for All Sensitive Pages</a>\n    </li>\n    <li>\n      <a href=\"/article/84580cd7-3d37-40bf-b585-e029c8e6b5c3\">Only Strong TLS Algorithms Are Used</a>\n    </li>\n    <li>\n      <a href=\"/article/8d2d20fc-a21a-4a1c-bb31-8a876e57abaf\">Valid TLS Certificates Are Used</a>\n    </li>\n  </ul>"
 }

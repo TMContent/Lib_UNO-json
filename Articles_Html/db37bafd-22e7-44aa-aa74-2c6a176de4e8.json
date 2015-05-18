@@ -1,6 +1,6 @@
 {
   "id": "db37bafd-22e7-44aa-aa74-2c6a176de4e8",
-  "checksum": "4098c0a0f41a1b8c6dab09cc6ad2989475751f7a",
+  "checksum": "e19cf92fd27054d8384cf34b012b9d6dcb820e88",
   "words": {
     "what": [
       "h1"
@@ -120,7 +120,7 @@
     "why": [
       "h1"
     ],
-    "data stored": [
+    "data&nbspstored": [
       "p",
       "p"
     ],
@@ -206,13 +206,13 @@
     "not": [
       "p"
     ],
-    "compromised sensitive": [
+    "compromised&nbsp;sensitive": [
       "p"
     ],
     "plain": [
       "p"
     ],
-    "text is": [
+    "text&nbspis": [
       "p"
     ],
     "accessible": [
@@ -250,7 +250,7 @@
     "sufficient": [
       "p"
     ],
-    "privileges on": [
+    "privileges&nbspon": [
       "p"
     ],
     "the": [
@@ -337,7 +337,7 @@
       "ul",
       "li"
     ],
-    "stores sensitive": [
+    "stores&nbspsensitive": [
       "p"
     ],
     "like": [
@@ -351,7 +351,7 @@
       "ul",
       "li"
     ],
-    "etc in": [
+    "etc&nbsp;in": [
       "p"
     ],
     "machineconfig": [
@@ -823,6 +823,9 @@
     ],
     "guidance": [
       "p"
+    ],
+    "sink]": [
+      "title"
     ]
   },
   "tags": {
@@ -835,8 +838,8 @@
     ],
     "p": [
       "Use .NET protected configuration to protect sensitive data in configuration files.",
-      "Sensitive data stored in plaintext is dangerous, because an attacker that can compromise a server will be able to read that sensitive data. Even if a machine is not compromised, sensitive data stored in plain text is accessible to administrators and any other users with sufficient privileges on the host machine and/or Windows domain.",
-      "Use this guideline on any application that stores sensitive data like user credentials etc, in the Machine.config or Web.config files",
+      "Sensitive data&nbsp;stored in plaintext is dangerous, because an attacker that can compromise a server will be able to read that sensitive data. Even if a machine is not compromised,&nbsp;sensitive data&nbsp;stored in plain text&nbsp;is accessible to administrators and any other users with sufficient privileges&nbsp;on the host machine and/or Windows domain.",
+      "Use this guideline on any application that stores&nbsp;sensitive data like user credentials etc,&nbsp;in the Machine.config or Web.config files",
       "For ASP.NET Web.config files, you can use the Aspnet_regiis tool to encrypt specific sections. The sections of a Web.config file that usually contain sensitive information that you need to encrypt are the following:",
       "Protected configuration supports DPAPI and RSA encryption. To use the DPAPI provider with the machine key store (the default configuration) to encrypt the connectionStrings section, run the following command from a command prompt:",
       "aspnet_regiis -pe \"connectionStrings\" -app \"/MachineDPAPI\"",
@@ -893,5 +896,5 @@
       "text": "http://msdn.microsoft.com/en-us/library/dtkwfdky.aspx"
     }
   ],
-  "html": "<h1>What to Do</h1>\r\n  <p>Use .NET protected configuration to protect sensitive data in configuration files. </p>\r\n  <h1>Why</h1>\r\n  <p>Sensitive data&nbsp;stored in plaintext is dangerous, because an attacker that can compromise a server will be able to read that sensitive data. Even if a machine is not compromised,&nbsp;sensitive data&nbsp;stored in plain text&nbsp;is accessible to administrators and any other users with sufficient privileges&nbsp;on the host machine and/or Windows domain.</p>\r\n  <h1>When</h1>\r\n  <p>Use this guideline on any application that stores&nbsp;sensitive data like user credentials etc,&nbsp;in the Machine.config or Web.config files </p>\r\n  <h1>How</h1>\r\n  <p>For ASP.NET Web.config files, you can use the Aspnet_regiis tool to encrypt specific sections. The sections of a Web.config file that usually contain sensitive information that you need to encrypt are the following: </p>\r\n  <ul>\r\n    <li>&lt;<b>appSettings</b>&gt;. This section contains custom application settings. <li>&lt;<b>connectionStrings</b>&gt;. This section contains connection strings. <li>&lt;<b>identity</b>&gt;. This section can contain impersonation credentials. <li>&lt;<b>sessionState</b>&gt;. The section contains the connection string for the out-of-process session state provider.</li></li></li></li>\r\n  </ul>\r\n  <p>Protected configuration supports DPAPI and RSA encryption. To use the DPAPI provider with the machine key store (the default configuration) to encrypt the <b>connectionStrings</b> section, run the following command from a command prompt:</p>\r\n  <p>\r\n    <b>aspnet_regiis -pe \"connectionStrings\" -app \"/MachineDPAPI\" </b>\r\n  </p>\r\n  <p>\r\n    <b>-prov \"DataProtectionConfigurationProvider\"</b>\r\n  </p>\r\n  <p>where </p>\r\n  <ul>\r\n    <li>\r\n      <b>-pe</b> specifies the configuration section to encrypt. <li>-<b>app </b>specifies your Web application's virtual path. If your application is nested, you need to specify the nested path from the root directory, for example \"/test/aspnet/MachineDPAPI\" <li><b>-prov</b> specifies the provider name.</li></li></li>\r\n  </ul>\r\n  <p>The .NET Framework SDK supports <b>RSAProtectedConfigurationProvider</b> and <b>DPAPIProtectedConfigurationProvider</b> protected configuration providers, which you use with the Aspnet_regiis tool. </p>\r\n  <ul>\r\n    <li>\r\n      <b>RSAProtectedConfigurationProvider</b>. This is the default provider and uses the RSA public key encryption to encrypt and decrypt data. Use this provider to encrypt configuration files for use on multiple Web servers in a Web farm. <li><b>DPAPIProtectedConfigurationProvider</b>. This provider uses DPAPI to encrypt and decrypt data. Use this provider to encrypt configuration files for use on a single Windows Server.</li></li>\r\n  </ul>\r\n  <h1>Additional Resources</h1>\r\n  <p>For more information, see the following documents: </p>\r\n  <ul>\r\n    <li>Walkthrough: Encrypting Configuration Information Using Protected Configuration at <a href=\"http://msdn.microsoft.com/en-us/library/dtkwfdky.aspx\">http://msdn.microsoft.com/en-us/library/dtkwfdky.aspx</a></li>\r\n  </ul>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
+  "html": "<h1>What to Do</h1>\n  <p>Use .NET protected configuration to protect sensitive data in configuration files. </p>\n  <h1>Why</h1>\n  <p>Sensitive data&amp;nbsp;stored in plaintext is dangerous, because an attacker that can compromise a server will be able to read that sensitive data. Even if a machine is not compromised,&amp;nbsp;sensitive data&amp;nbsp;stored in plain text&amp;nbsp;is accessible to administrators and any other users with sufficient privileges&amp;nbsp;on the host machine and/or Windows domain.</p>\n  <h1>When</h1>\n  <p>Use this guideline on any application that stores&amp;nbsp;sensitive data like user credentials etc,&amp;nbsp;in the Machine.config or Web.config files </p>\n  <h1>How</h1>\n  <p>For ASP.NET Web.config files, you can use the Aspnet_regiis tool to encrypt specific sections. The sections of a Web.config file that usually contain sensitive information that you need to encrypt are the following: </p>\n  <ul>\n    <li>&lt;<b>appSettings</b>&gt;. This section contains custom application settings. <li>&lt;<b>connectionStrings</b>&gt;. This section contains connection strings. <li>&lt;<b>identity</b>&gt;. This section can contain impersonation credentials. <li>&lt;<b>sessionState</b>&gt;. The section contains the connection string for the out-of-process session state provider.</li></li></li></li>\n  </ul>\n  <p>Protected configuration supports DPAPI and RSA encryption. To use the DPAPI provider with the machine key store (the default configuration) to encrypt the <b>connectionStrings</b> section, run the following command from a command prompt:</p>\n  <p>\n    <b>aspnet_regiis -pe \"connectionStrings\" -app \"/MachineDPAPI\" </b>\n  </p>\n  <p>\n    <b>-prov \"DataProtectionConfigurationProvider\"</b>\n  </p>\n  <p>where </p>\n  <ul>\n    <li>\n      <b>-pe</b> specifies the configuration section to encrypt. <li>-<b>app </b>specifies your Web application's virtual path. If your application is nested, you need to specify the nested path from the root directory, for example \"/test/aspnet/MachineDPAPI\" <li><b>-prov</b> specifies the provider name.</li></li></li>\n  </ul>\n  <p>The .NET Framework SDK supports <b>RSAProtectedConfigurationProvider</b> and <b>DPAPIProtectedConfigurationProvider</b> protected configuration providers, which you use with the Aspnet_regiis tool. </p>\n  <ul>\n    <li>\n      <b>RSAProtectedConfigurationProvider</b>. This is the default provider and uses the RSA public key encryption to encrypt and decrypt data. Use this provider to encrypt configuration files for use on multiple Web servers in a Web farm. <li><b>DPAPIProtectedConfigurationProvider</b>. This provider uses DPAPI to encrypt and decrypt data. Use this provider to encrypt configuration files for use on a single Windows Server.</li></li>\n  </ul>\n  <h1>Additional Resources</h1>\n  <p>For more information, see the following documents: </p>\n  <ul>\n    <li>Walkthrough: Encrypting Configuration Information Using Protected Configuration at <a href=\"http://msdn.microsoft.com/en-us/library/dtkwfdky.aspx\">http://msdn.microsoft.com/en-us/library/dtkwfdky.aspx</a></li>\n  </ul>\n  <hr />\n  <p>Adapted from Microsoft patterns &amp; practices guidance.</p>"
 }

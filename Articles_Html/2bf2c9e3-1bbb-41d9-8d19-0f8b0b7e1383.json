@@ -1,6 +1,6 @@
 {
   "id": "2bf2c9e3-1bbb-41d9-8d19-0f8b0b7e1383",
-  "checksum": "b6f1dc6e46ef180eaddbef29076e098936ef120e",
+  "checksum": "21605e5307c659154841a3d86c21d4721002d793",
   "words": {
     "35": [
       "ul",
@@ -398,13 +398,13 @@
       "Description"
     ],
     "ul": [
-      "Microsoft® Windows Communication Foundation (WCF) 3.5 \r\n\r\n    Microsoft Visual Studio® 2008"
+      "Microsoft® Windows Communication Foundation (WCF) 3.5 \n\n    Microsoft Visual Studio® 2008"
     ],
     "li": [
       "Microsoft® Windows Communication Foundation (WCF) 3.5",
       "Microsoft Visual Studio® 2008",
       "Open the web.config file of the WCF service using the Configuration editor tool (SvcConfigEditor.exe).",
-      "In the Configuration editor, navigate to the Diagnostics node, and click the Enable WMI Provider link. \r\n<diagnostics wmiProviderEnabled=\"true\">",
+      "In the Configuration editor, navigate to the Diagnostics node, and click the Enable WMI Provider link. \n<diagnostics wmiProviderEnabled=\"true\">",
       "To view the WMI trace information you need to install WMI CIM Studio to view the WMI interactions. It is an ActiveX component that plugs into Internet Explorer. You can get this as a free download available from Microsoft."
     ],
     "p": [
@@ -412,7 +412,7 @@
       "Adapted from Microsoft patterns & practices guidance."
     ],
     "ol": [
-      "Open the web.config file of the WCF service using the Configuration editor tool (SvcConfigEditor.exe).\r\n\r\n    In the Configuration editor, navigate to the Diagnostics node, and click the Enable WMI Provider link. \r\n<diagnostics wmiProviderEnabled=\"true\">\r\n    \r\n      To view the WMI trace information you need to install WMI CIM Studio to view the WMI interactions. It is an ActiveX component that plugs into Internet Explorer. You can get this as a free download available from Microsoft.",
+      "Open the web.config file of the WCF service using the Configuration editor tool (SvcConfigEditor.exe).\n\n    In the Configuration editor, navigate to the Diagnostics node, and click the Enable WMI Provider link. \n<diagnostics wmiProviderEnabled=\"true\">\n    \n      To view the WMI trace information you need to install WMI CIM Studio to view the WMI interactions. It is an ActiveX component that plugs into Internet Explorer. You can get this as a free download available from Microsoft.",
       "<diagnostics wmiProviderEnabled=\"true\">"
     ],
     "pre": [
@@ -430,5 +430,5 @@
     ]
   },
   "links": [],
-  "html": "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>Microsoft® Windows Communication Foundation (WCF) 3.5 \r\n</li>\r\n    <li>Microsoft Visual Studio® 2008</li>\r\n  </ul>\r\n  <h1>Description</h1>\r\n  <p>Use the following steps to enable a WMI provider for your service:</p>\r\n  <ol>\r\n    <li>Open the web.config file of the WCF service using the Configuration editor tool (SvcConfigEditor.exe).\r\n</li>\r\n    <li>In the Configuration editor, navigate to the Diagnostics node, and click the Enable WMI Provider link. \r\n<ol><pre>&lt;diagnostics wmiProviderEnabled=\"true\"&gt;</pre></ol></li>\r\n    <li>\r\n      <div>To view the WMI trace information you need to install WMI CIM Studio to view the WMI interactions. It is an ActiveX component that plugs into Internet Explorer. You can get this as a free download available from Microsoft.<br /></div>\r\n    </li>\r\n  </ol>\r\n  <br />\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
+  "html": "<h1>Applies to</h1>\n  <ul>\n    <li>Microsoft® Windows Communication Foundation (WCF) 3.5 \n</li>\n    <li>Microsoft Visual Studio® 2008</li>\n  </ul>\n  <h1>Description</h1>\n  <p>Use the following steps to enable a WMI provider for your service:</p>\n  <ol>\n    <li>Open the web.config file of the WCF service using the Configuration editor tool (SvcConfigEditor.exe).\n</li>\n    <li>In the Configuration editor, navigate to the Diagnostics node, and click the Enable WMI Provider link. \n<ol><pre>&lt;diagnostics wmiProviderEnabled=\"true\"&gt;</pre></ol></li>\n    <li>\n      <div>To view the WMI trace information you need to install WMI CIM Studio to view the WMI interactions. It is an ActiveX component that plugs into Internet Explorer. You can get this as a free download available from Microsoft.<br /></div>\n    </li>\n  </ol>\n  <br />\n  <hr />\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
 }

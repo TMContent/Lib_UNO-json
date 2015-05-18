@@ -1,6 +1,6 @@
 {
   "id": "6c8aa562-2d58-4a43-a38f-7d3d18c54b41",
-  "checksum": "97d52f73ff2390a587630968f90f29685f1a7347",
+  "checksum": "38c42b0bceb67d8b8827052a7e87c688f059578a",
   "words": {
     "what": [
       "h1",
@@ -27,10 +27,7 @@
       "p",
       "p",
       "p",
-      "p",
-      "ul",
-      "li",
-      "a"
+      "p"
     ],
     "check": [
       "h1",
@@ -91,9 +88,6 @@
     "significant": [
       "p",
       "p",
-      "ul",
-      "li",
-      "a",
       "title"
     ],
     "business": [
@@ -105,12 +99,9 @@
       "p",
       "p",
       "p",
-      "ul",
-      "li",
-      "a",
       "title"
     ],
-    "operations for": [
+    "operations&nbsp;for": [
       "p"
     ],
     "instance": [
@@ -152,20 +143,14 @@
     ],
     "access": [
       "p",
-      "p",
-      "ul",
-      "li",
-      "a"
+      "p"
     ],
     "logic": [
       "p",
       "ol",
       "li",
       "p",
-      "p",
-      "ul",
-      "li",
-      "a"
+      "p"
     ],
     "is": [
       "p",
@@ -272,13 +257,13 @@
     "dispute": [
       "p"
     ],
-    "resolution furthermore,": [
+    "resolution&nbsp;furthermore,": [
       "p"
     ],
     "it": [
       "p"
     ],
-    "is vital": [
+    "is&nbspvital": [
       "p"
     ],
     "forensics": [
@@ -610,10 +595,7 @@
       "p"
     ],
     "instrument": [
-      "p",
-      "ul",
-      "li",
-      "a"
+      "p"
     ],
     "record": [
       "p"
@@ -635,17 +617,6 @@
     ],
     "appropriate": [
       "p"
-    ],
-    "related": [
-      "h1"
-    ],
-    "items": [
-      "h1"
-    ],
-    "guideline": [
-      "ul",
-      "li",
-      "a"
     ],
     "adapted": [
       "p"
@@ -674,12 +645,11 @@
       "What to Check For",
       "Why",
       "How to Check",
-      "How to Fix",
-      "Related Items"
+      "How to Fix"
     ],
     "p": [
-      "Ensure your application logs significant business operations. For instance an e-commerce application would log all user purchases.",
-      "Logging access to business logic is vital for the enforcement of many business rules. Logging can be a key component of fraud prevention and dispute resolution. Furthermore, it is vital to forensics work when determining if a break-in is about to occur or has occurred and what damage may have been done.",
+      "Ensure your application logs significant business operations.&nbsp;For instance an e-commerce application would log all user purchases.",
+      "Logging access to business logic is vital for the enforcement of many business rules. Logging can be a key component of fraud prevention and dispute resolution.&nbsp;Furthermore, it is&nbsp;vital to forensics work when determining if a break-in is about to occur or has occurred and what damage may have been done.",
       "Use the following steps to check:",
       "Define what should be logged. Before you can check whether the correct logging is taking place, create a list that defines unusual activity for your application. Review sensitive methods and all business logic to define your list.",
       "Ensure the data is being logged. Review your application's code and logs to determine whether each of the operations in your list is being logged. When reviewing code, look for the definition and use of custom event classes that inherits from System.Web.Management.WebSuccessAuditEvent or System.Web.Management.WebFailureAuditEvent",
@@ -687,12 +657,11 @@
       "Adapted from Microsoft patterns & practices guidance."
     ],
     "ol": [
-      "Define what should be logged. Before you can check whether the correct logging is taking place, create a list that defines unusual activity for your application. Review sensitive methods and all business logic to define your list.\r\n      \r\n        \r\n          Ensure the data is being logged. Review your application's code and logs to determine whether each of the operations in your list is being logged. When reviewing code, look for the definition and use of custom event classes that inherits from System.Web.Management.WebSuccessAuditEvent or System.Web.Management.WebFailureAuditEvent"
+      "Define what should be logged. Before you can check whether the correct logging is taking place, create a list that defines unusual activity for your application. Review sensitive methods and all business logic to define your list.\n      \n        \n          Ensure the data is being logged. Review your application's code and logs to determine whether each of the operations in your list is being logged. When reviewing code, look for the definition and use of custom event classes that inherits from System.Web.Management.WebSuccessAuditEvent or System.Web.Management.WebFailureAuditEvent"
     ],
     "li": [
       "Define what should be logged. Before you can check whether the correct logging is taking place, create a list that defines unusual activity for your application. Review sensitive methods and all business logic to define your list.",
-      "Ensure the data is being logged. Review your application's code and logs to determine whether each of the operations in your list is being logged. When reviewing code, look for the definition and use of custom event classes that inherits from System.Web.Management.WebSuccessAuditEvent or System.Web.Management.WebFailureAuditEvent",
-      "Guideline: Instrument Access to Significant Business Logic"
+      "Ensure the data is being logged. Review your application's code and logs to determine whether each of the operations in your list is being logged. When reviewing code, look for the definition and use of custom event classes that inherits from System.Web.Management.WebSuccessAuditEvent or System.Web.Management.WebFailureAuditEvent"
     ],
     "strong": [
       "Define what should be logged.",
@@ -704,21 +673,10 @@
       "System.Web.Management.WebSuccessAuditEvent",
       "System.Web.Management.WebFailureAuditEvent"
     ],
-    "ul": [
-      "Guideline: Instrument Access to Significant Business Logic"
-    ],
-    "a": [
-      "Guideline: Instrument Access to Significant Business Logic"
-    ],
     "hr": [
       ""
     ]
   },
-  "links": [
-    {
-      "href": "/article/3ed07c79-09ef-41c6-a443-3bcda17eb189",
-      "text": "Guideline: Instrument Access to Significant Business Logic"
-    }
-  ],
-  "html": "<h1>What to Check For</h1>\r\n  <p>Ensure your application logs significant business operations.&nbsp;For instance an e-commerce application would log all user purchases.</p>\r\n  <h1>Why</h1>\r\n  <p>Logging access to business logic is vital for the enforcement of many business rules. Logging can be a key component of fraud prevention and dispute resolution.&nbsp;Furthermore, it is&nbsp;vital to forensics work when determining if a break-in is about to occur or has occurred and what damage may have been done. </p>\r\n  <h1>How to Check</h1>\r\n  <p>Use the following steps to check:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Define what should be logged. </strong>Before you can check whether the correct logging is taking place, create a list that defines unusual activity for your application. Review sensitive methods and all business logic to define your list.</p>\r\n      <li>\r\n        <p>\r\n          <strong>Ensure the data is being logged. </strong>Review your application's code and logs to determine whether each of the operations in your list is being logged. When reviewing code, look for the definition and use of custom event classes that inherits from <b>System.Web.Management.WebSuccessAuditEvent</b> or <b>System.Web.Management.WebFailureAuditEvent</b></p>\r\n      </li>\r\n    </li>\r\n  </ol>\r\n  <h1>How to Fix</h1>\r\n  <p>Use ASP.NET health monitoring to track significant business operations. For example, instrument your application to record access to particularly sensitive methods and business logic. To do this, create a custom event class that inherits from <b>System.Web.Management.WebSuccessAuditEvent </b>or<b> System.Web.Management.WebFailureAuditEvent</b> and raise that event in the appropriate methods. </p>\r\n  <h1>Related Items</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/3ed07c79-09ef-41c6-a443-3bcda17eb189\">Guideline: Instrument Access to Significant Business Logic</a>\r\n    </li>\r\n  </ul>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance. </p>"
+  "links": [],
+  "html": "<h1>What to Check For</h1>\n  <p>Ensure your application logs significant business operations.&amp;nbsp;For instance an e-commerce application would log all user purchases.</p>\n  <h1>Why</h1>\n  <p>Logging access to business logic is vital for the enforcement of many business rules. Logging can be a key component of fraud prevention and dispute resolution.&amp;nbsp;Furthermore, it is&amp;nbsp;vital to forensics work when determining if a break-in is about to occur or has occurred and what damage may have been done. </p>\n  <h1>How to Check</h1>\n  <p>Use the following steps to check:</p>\n  <ol>\n    <li>\n      <p>\n        <strong>Define what should be logged. </strong>Before you can check whether the correct logging is taking place, create a list that defines unusual activity for your application. Review sensitive methods and all business logic to define your list.</p>\n      <li>\n        <p>\n          <strong>Ensure the data is being logged. </strong>Review your application's code and logs to determine whether each of the operations in your list is being logged. When reviewing code, look for the definition and use of custom event classes that inherits from <b>System.Web.Management.WebSuccessAuditEvent</b> or <b>System.Web.Management.WebFailureAuditEvent</b></p>\n      </li>\n    </li>\n  </ol>\n  <h1>How to Fix</h1>\n  <p>Use ASP.NET health monitoring to track significant business operations. For example, instrument your application to record access to particularly sensitive methods and business logic. To do this, create a custom event class that inherits from <b>System.Web.Management.WebSuccessAuditEvent </b>or<b> System.Web.Management.WebFailureAuditEvent</b> and raise that event in the appropriate methods. </p>\n  <hr />\n  <p>Adapted from Microsoft patterns &amp; practices guidance. </p>"
 }

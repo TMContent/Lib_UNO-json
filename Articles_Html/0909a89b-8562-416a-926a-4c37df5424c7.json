@@ -1,6 +1,6 @@
 {
   "id": "0909a89b-8562-416a-926a-4c37df5424c7",
-  "checksum": "4a5f0a531d617a3fd85fe09a92697347faedec56",
+  "checksum": "d10e47ba728c466488cc1e5ba5d75101e206e5a6",
   "words": {
     "applies": [
       "h1"
@@ -472,7 +472,7 @@
     ],
     "ul": [
       "PCI DSS Requirement 3.2.1",
-      "Incoming transactions \r\n    All logs (transaction, history, debugging, error) \r\n    History files \r\n    Trace files \r\n    Database schemas \r\n    Database contents \r\n    Any other place where cardholder data is stored",
+      "Incoming transactions \n    All logs (transaction, history, debugging, error) \n    History files \n    Trace files \n    Database schemas \n    Database contents \n    Any other place where cardholder data is stored",
       "Prepare the Data Retention and Disposal Policies"
     ],
     "li": [
@@ -488,7 +488,7 @@
     ],
     "p": [
       "The full card track contents should not be stored under any circumstances.",
-      "The full card track contents should not be stored to limit the potential damage in the event of a successful attack. The term \"track contents\" refers to the information stored on the magnetic strip of the physical card issued to a cardholder. New cards also\r\n include a chip, the contents of which should be also considered \"track contents.\" If an attacker has this information, he may be able to use it to make fraudulent transactions; therefore, the full track contents should never be stored.",
+      "The full card track contents should not be stored to limit the potential damage in the event of a successful attack. The term \"track contents\" refers to the information stored on the magnetic strip of the physical card issued to a cardholder. New cards also\n include a chip, the contents of which should be also considered \"track contents.\" If an attacker has this information, he may be able to use it to make fraudulent transactions; therefore, the full track contents should never be stored.",
       "Check the following to make sure that the full track contents are not stored:",
       "Identify the storage mechanism that stores the full track contents, for example a script or a database query. Change the storage mechanism so that it does not record the full track contents.",
       "Prepare the Data Retention and Disposal Policies"
@@ -503,5 +503,5 @@
       "text": "Prepare the Data Retention and Disposal Policies"
     }
   ],
-  "html": "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 3.2.1</li>\r\n  </ul>\r\n  <h1>What to Check For</h1>\r\n  <p>The full card track contents should not be stored under any circumstances.</p>\r\n  <h1>Why</h1>\r\n  <p>The full card track contents should not be stored to limit the potential damage in the event of a successful attack. The term \"track contents\" refers to the information stored on the magnetic strip of the physical card issued to a cardholder. New cards also\r\n include a chip, the contents of which should be also considered \"track contents.\" If an attacker has this information, he may be able to use it to make fraudulent transactions; therefore, the full track contents should never be stored.\r\n</p>\r\n  <h1>How to Check</h1>\r\n  <p>Check the following to make sure that the full track contents are not stored:</p>\r\n  <ul>\r\n    <li>Incoming transactions </li>\r\n    <li>All logs (transaction, history, debugging, error) </li>\r\n    <li>History files </li>\r\n    <li>Trace files </li>\r\n    <li>Database schemas </li>\r\n    <li>Database contents </li>\r\n    <li>Any other place where cardholder data is stored</li>\r\n  </ul>\r\n  <h1>How to Fix</h1>\r\n  <p>Identify the storage mechanism that stores the full track contents, for example a script or a database query. Change the storage mechanism so that it does not record the full track contents.</p>\r\n  <h1>Related Items</h1>\r\n  <ul>\r\n    <li>\r\n      <p>\r\n        <a href=\"/article/40de7c85-0fdd-4894-a3a1-943d4316fb12\">Prepare the Data Retention and Disposal Policies</a>\r\n      </p>\r\n    </li>\r\n  </ul>"
+  "html": "<h1>Applies to</h1>\n  <ul>\n    <li>PCI DSS Requirement 3.2.1</li>\n  </ul>\n  <h1>What to Check For</h1>\n  <p>The full card track contents should not be stored under any circumstances.</p>\n  <h1>Why</h1>\n  <p>The full card track contents should not be stored to limit the potential damage in the event of a successful attack. The term \"track contents\" refers to the information stored on the magnetic strip of the physical card issued to a cardholder. New cards also\n include a chip, the contents of which should be also considered \"track contents.\" If an attacker has this information, he may be able to use it to make fraudulent transactions; therefore, the full track contents should never be stored.\n</p>\n  <h1>How to Check</h1>\n  <p>Check the following to make sure that the full track contents are not stored:</p>\n  <ul>\n    <li>Incoming transactions </li>\n    <li>All logs (transaction, history, debugging, error) </li>\n    <li>History files </li>\n    <li>Trace files </li>\n    <li>Database schemas </li>\n    <li>Database contents </li>\n    <li>Any other place where cardholder data is stored</li>\n  </ul>\n  <h1>How to Fix</h1>\n  <p>Identify the storage mechanism that stores the full track contents, for example a script or a database query. Change the storage mechanism so that it does not record the full track contents.</p>\n  <h1>Related Items</h1>\n  <ul>\n    <li>\n      <p>\n        <a href=\"/article/40de7c85-0fdd-4894-a3a1-943d4316fb12\">Prepare the Data Retention and Disposal Policies</a>\n      </p>\n    </li>\n  </ul>"
 }

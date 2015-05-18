@@ -1,6 +1,6 @@
 {
   "id": "eb0ed091-b4c7-4fc8-8a99-9610ecbccc85",
-  "checksum": "69e691056c4a215a1422b1bfa2e89264c9d8d152",
+  "checksum": "c7544c3a2d40de55a003a5be68a3ec6af4404024",
   "words": {
     "applies": [
       "h1"
@@ -455,7 +455,7 @@
       ""
     ],
     "ol": [
-      "Identify pages that use direct object references. Make a list of all pages in the application. Examine each page to identify the pages that use direct object references.\r\n    \r\n    \r\n      \r\n        Identify code that references objects. In each page that uses direct object references, identify the code that references objects.\r\n    \r\n    \r\n      \r\n        Check access controls. Add code that checks access controls to the code that performs object references."
+      "Identify pages that use direct object references. Make a list of all pages in the application. Examine each page to identify the pages that use direct object references.\n    \n    \n      \n        Identify code that references objects. In each page that uses direct object references, identify the code that references objects.\n    \n    \n      \n        Check access controls. Add code that checks access controls to the code that performs object references."
     ],
     "li": [
       "Identify pages that use direct object references. Make a list of all pages in the application. Examine each page to identify the pages that use direct object references.",
@@ -469,5 +469,5 @@
     ]
   },
   "links": [],
-  "html": "<h1>Applies to</h1>\r\n  <p>Scala and Play Framework 2.1.0+</p>\r\n  <h1>What to Do</h1>\r\n  <p>Check access control permissions when referencing objects.</p>\r\n  <h1>Why</h1>\r\n  <p>Checking access control permissions when referencing objects helps prevent direct object reference vulnerabilities. Direct object references often expose sensitive data, such as files, database entries, or personal information. Direct object reference attacks are very simple to execute and have been used in high profile, low-skill attacks.&nbsp;</p>\r\n  <h1>When</h1>\r\n  <p>Always check access control permissions when referencing objects.<br /></p>\r\n  <h1>How</h1>\r\n  <p>To check access control permissions when referencing objects:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Identify pages that use direct object references.</strong>&nbsp;Make a list of all pages in the application. Examine each page to identify the pages that use direct object references.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Identify code that references objects.</strong> In each page that uses direct object references, identify the code that references objects.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Check access controls.</strong>&nbsp;Add code that checks access controls to the code that performs object references.</p>\r\n    </li>\r\n  </ol>\r\n  <br />"
+  "html": "<h1>Applies to</h1>\n  <p>Scala and Play Framework 2.1.0+</p>\n  <h1>What to Do</h1>\n  <p>Check access control permissions when referencing objects.</p>\n  <h1>Why</h1>\n  <p>Checking access control permissions when referencing objects helps prevent direct object reference vulnerabilities. Direct object references often expose sensitive data, such as files, database entries, or personal information. Direct object reference attacks are very simple to execute and have been used in high profile, low-skill attacks.&nbsp;</p>\n  <h1>When</h1>\n  <p>Always check access control permissions when referencing objects.<br /></p>\n  <h1>How</h1>\n  <p>To check access control permissions when referencing objects:</p>\n  <ol>\n    <li>\n      <p>\n        <strong>Identify pages that use direct object references.</strong>&nbsp;Make a list of all pages in the application. Examine each page to identify the pages that use direct object references.</p>\n    </li>\n    <li>\n      <p>\n        <strong>Identify code that references objects.</strong> In each page that uses direct object references, identify the code that references objects.</p>\n    </li>\n    <li>\n      <p>\n        <strong>Check access controls.</strong>&nbsp;Add code that checks access controls to the code that performs object references.</p>\n    </li>\n  </ol>\n  <br />"
 }

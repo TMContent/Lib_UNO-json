@@ -1,6 +1,6 @@
 {
   "id": "5b3ce05c-80cd-4452-ad01-8a6a5e6627f5",
-  "checksum": "b57e262c66f4210b9ab0f09fdb5bfe96ebfdaefc",
+  "checksum": "7512eb544a655daee071ca2d3d127665a6639f49",
   "words": {
     "what": [
       "h1"
@@ -78,7 +78,7 @@
       "p",
       "title"
     ],
-    "by using": [
+    "by&nbspusing": [
       "p"
     ],
     "parameterized": [
@@ -307,7 +307,7 @@
       "pre",
       "pre"
     ],
-    "sqlconnectionconnectionstring)){": [
+    "sqlconnectionconnectionstring))&#123;": [
       "div",
       "pre"
     ],
@@ -349,7 +349,7 @@
       "div",
       "pre"
     ],
-    "mycommandselectcommand.parameters.add(\"@au_id\",": [
+    "mycommandselectcommand.parameters.add(\"&#64;au_id\",": [
       "div",
       "pre"
     ],
@@ -361,7 +361,7 @@
       "div",
       "pre"
     ],
-    "mycommandselectcommand.parameters[\"@au_id\"].value": [
+    "mycommandselectcommand.parameters&#91;\"&#64;au_id\"&#93;.value": [
       "div",
       "pre"
     ],
@@ -369,7 +369,7 @@
       "div",
       "pre"
     ],
-    "mycommandfill(userdataset);}": [
+    "mycommandfill(userdataset);&#125;": [
       "div",
       "pre"
     ],
@@ -562,6 +562,9 @@
     "guidance": [
       "p"
     ],
+    "sink]": [
+      "title"
+    ],
     "validated": [
       "title"
     ],
@@ -575,7 +578,7 @@
       "How to Fix"
     ],
     "p": [
-      "Check to ensure that SQL injection is prevented by validating input and by using parameterized stored procedures.",
+      "Check to ensure that SQL injection is prevented by validating input and by&nbsp;using parameterized stored procedures.",
       "",
       "To help prevent SQL injection, you should validate input and use parameterized stored procedures for data access. The use of parameters (for example, SqlParameterCollection) ensures that input values are checked for type and length and values outside the range throw an exception. Parameters are also treated as safe literal values and not as executable code within the database. The following code shows how to use SqlParameterCollection when calling a stored procedure.",
       "Avoid stored procedures that accept a single parameter as an executable query. Instead, pass query parameters only.",
@@ -588,10 +591,10 @@
       "SqlParameterCollection"
     ],
     "div": [
-      "using System.Data;using System.Data.SqlClient;using (SqlConnection connection = new SqlConnection(connectionString)){  DataSet userDataset = new DataSet();  SqlDataAdapter myCommand = new SqlDataAdapter(              \"LoginStoredProcedure\", connection);  myCommand.SelectCommand.CommandType = CommandType.StoredProcedure;  myCommand.SelectCommand.Parameters.Add(\"@au_id\", SqlDbType.VarChar, 11);  myCommand.SelectCommand.Parameters[\"@au_id\"].Value = SSN.Text;  myCommand.Fill(userDataset);}"
+      "using System.Data;using System.Data.SqlClient;using (SqlConnection connection = new SqlConnection(connectionString))&#123;  DataSet userDataset = new DataSet();  SqlDataAdapter myCommand = new SqlDataAdapter(              \"LoginStoredProcedure\", connection);  myCommand.SelectCommand.CommandType = CommandType.StoredProcedure;  myCommand.SelectCommand.Parameters.Add(\"&#64;au_id\", SqlDbType.VarChar, 11);  myCommand.SelectCommand.Parameters&#91;\"&#64;au_id\"&#93;.Value = SSN.Text;  myCommand.Fill(userDataset);&#125;"
     ],
     "pre": [
-      "using System.Data;using System.Data.SqlClient;using (SqlConnection connection = new SqlConnection(connectionString)){  DataSet userDataset = new DataSet();  SqlDataAdapter myCommand = new SqlDataAdapter(              \"LoginStoredProcedure\", connection);  myCommand.SelectCommand.CommandType = CommandType.StoredProcedure;  myCommand.SelectCommand.Parameters.Add(\"@au_id\", SqlDbType.VarChar, 11);  myCommand.SelectCommand.Parameters[\"@au_id\"].Value = SSN.Text;  myCommand.Fill(userDataset);}"
+      "using System.Data;using System.Data.SqlClient;using (SqlConnection connection = new SqlConnection(connectionString))&#123;  DataSet userDataset = new DataSet();  SqlDataAdapter myCommand = new SqlDataAdapter(              \"LoginStoredProcedure\", connection);  myCommand.SelectCommand.CommandType = CommandType.StoredProcedure;  myCommand.SelectCommand.Parameters.Add(\"&#64;au_id\", SqlDbType.VarChar, 11);  myCommand.SelectCommand.Parameters&#91;\"&#64;au_id\"&#93;.Value = SSN.Text;  myCommand.Fill(userDataset);&#125;"
     ],
     "br": [
       "",
@@ -610,5 +613,5 @@
     ]
   },
   "links": [],
-  "html": "<h1>What to Check For</h1>\r\n  <p>Check to ensure that SQL injection is prevented by validating input and by&nbsp;using parameterized stored procedures.</p>\r\n  <p />\r\n  <h1>How to Fix</h1>\r\n  <p>To help prevent SQL injection, you should validate input and use parameterized stored procedures for data access. The use of parameters (for example, <b>SqlParameterCollection</b>) ensures that input values are checked for type and length and values outside the range throw an exception. Parameters are also treated as safe literal values and not as executable code within the database. The following code shows how to use <b>SqlParameterCollection</b> when calling a stored procedure.</p>\r\n  <div>\r\n    <pre>using System.Data;<br />using System.Data.SqlClient;<br />using (SqlConnection connection = new SqlConnection(connectionString))&#123;<br />  DataSet userDataset = new DataSet();<br />  SqlDataAdapter myCommand = new SqlDataAdapter(<br />              \"LoginStoredProcedure\", connection);<br />  myCommand.SelectCommand.CommandType = CommandType.StoredProcedure;<br />  myCommand.SelectCommand.Parameters.Add(\"&#64;au_id\", SqlDbType.VarChar, 11);<br />  myCommand.SelectCommand.Parameters&#91;\"&#64;au_id\"&#93;.Value = SSN.Text;<br />  myCommand.Fill(userDataset);<br />&#125;  </pre>\r\n  </div>\r\n  <p>Avoid stored procedures that accept a single parameter as an executable query. Instead, pass query parameters only.</p>\r\n  <p>Use structured exception handling to catch errors that occur during database access, and prevent them from being returned to the client. A detailed error message may reveal valuable information such as the connection string, SQL server name, or table and database naming conventions. Attackers can use this information to construct more precise attacks.</p>\r\n  <p>As an additional precaution, use a least privileged account to access the database, so that even if your application is compromised, the impact will be reduced.</p>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
+  "html": "<h1>What to Check For</h1>\n  <p>Check to ensure that SQL injection is prevented by validating input and by&amp;nbsp;using parameterized stored procedures.</p>\n  <p />\n  <h1>How to Fix</h1>\n  <p>To help prevent SQL injection, you should validate input and use parameterized stored procedures for data access. The use of parameters (for example, <b>SqlParameterCollection</b>) ensures that input values are checked for type and length and values outside the range throw an exception. Parameters are also treated as safe literal values and not as executable code within the database. The following code shows how to use <b>SqlParameterCollection</b> when calling a stored procedure.</p>\n  <div>\n    <pre>using System.Data;<br />using System.Data.SqlClient;<br />using (SqlConnection connection = new SqlConnection(connectionString))&amp;#123;<br />  DataSet userDataset = new DataSet();<br />  SqlDataAdapter myCommand = new SqlDataAdapter(<br />              \"LoginStoredProcedure\", connection);<br />  myCommand.SelectCommand.CommandType = CommandType.StoredProcedure;<br />  myCommand.SelectCommand.Parameters.Add(\"&amp;#64;au_id\", SqlDbType.VarChar, 11);<br />  myCommand.SelectCommand.Parameters&amp;#91;\"&amp;#64;au_id\"&amp;#93;.Value = SSN.Text;<br />  myCommand.Fill(userDataset);<br />&amp;#125;  </pre>\n  </div>\n  <p>Avoid stored procedures that accept a single parameter as an executable query. Instead, pass query parameters only.</p>\n  <p>Use structured exception handling to catch errors that occur during database access, and prevent them from being returned to the client. A detailed error message may reveal valuable information such as the connection string, SQL server name, or table and database naming conventions. Attackers can use this information to construct more precise attacks.</p>\n  <p>As an additional precaution, use a least privileged account to access the database, so that even if your application is compromised, the impact will be reduced.</p>\n  <hr />\n  <p>Adapted from Microsoft patterns &amp; practices guidance.</p>"
 }

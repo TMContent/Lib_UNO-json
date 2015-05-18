@@ -1,6 +1,6 @@
 {
   "id": "5d5b6fe0-35da-4153-9e20-1931ab677a77",
-  "checksum": "939dcb9326749e8b0a45eefbcda069286550ab83",
+  "checksum": "6d00aad9cf1c9d599bacd0a0f21f3cbdcb184ff0",
   "words": {
     "what": [
       "h1"
@@ -425,14 +425,17 @@
     "username@domainname": [
       "a"
     ],
-    "winidentityimpersonate();": [
+    "&nbsp": [
+      "pre"
+    ],
+    "winidentityimpersonate();&nbsp;": [
       "pre"
     ],
     "//": [
       "pre",
       "pre"
     ],
-    "work": [
+    "work&nbsp;": [
       "pre"
     ],
     "..}//": [
@@ -451,16 +454,16 @@
     "herecatch(exception": [
       "pre"
     ],
-    "ex{": [
+    "ex{&nbsp;": [
       "pre"
     ],
-    "..}finally{": [
+    "..}finally{&nbsp;": [
       "pre"
     ],
     "stop": [
       "pre"
     ],
-    "impersonating": [
+    "impersonating&nbsp;": [
       "pre"
     ],
     "ctxundo();}": [
@@ -524,7 +527,7 @@
     "attatched": [
       "p"
     ],
-    "note   exception": [
+    "note&nbsp&nbsp;&nbsp;exception": [
       "blockquote"
     ],
     "supported": [
@@ -607,7 +610,7 @@
     ],
     "pre": [
       "using System.Security.Principal;. . .WindowsIdentity winIdentity = new WindowsIdentity(\"username@domainName\");WindowsImpersonationContext ctx = null;try{",
-      "ctx = winIdentity.Impersonate();  // Do work.  ...}// Do not let the exception propagate. Catch it here.catch(Exception ex){  ...}finally{  // Stop impersonating.  ctx.Undo();}"
+      "&nbsp; ctx = winIdentity.Impersonate();&nbsp; // Do work.&nbsp; ...}// Do not let the exception propagate. Catch it here.catch(Exception ex){&nbsp; ...}finally{&nbsp; // Stop impersonating.&nbsp; ctx.Undo();}"
     ],
     "br": [
       "",
@@ -633,7 +636,7 @@
       "username@domainName"
     ],
     "blockquote": [
-      "Note   Exception filters are supported by Microsoft Intermediate Language (MSIL) and Visual Basic .NET."
+      "Note&nbsp;&nbsp;&nbsp;Exception filters are supported by Microsoft Intermediate Language (MSIL) and Visual Basic .NET."
     ],
     "hr": [
       ""
@@ -645,5 +648,5 @@
       "text": "username@domainName"
     }
   ],
-  "html": "<h1>What to Do</h1>\r\n  <p>If you use programmatic impersonation, use structured exception handling and put the impersonation code inside <b>try</b> blocks. Use a <b>catch</b> block to handle exceptions and to prevent exceptions propagating. Use a <b>finally</b> block to ensure that the impersonation is reverted.</p>\r\n  <h1>Why</h1>\r\n  <p>If your code fails to catch exceptions and your code uses impersonation, a malicious user could use exception filters to execute code that runs under the impersonated security context, even if you are reverting the impersonation in your <b>finally</b> block. This is particularly serious if your code impersonates a privileged account. If your code does not catch the exception, exception filters higher in the call stack can be executed before code in your <b>finally</b> block is executed.</p>\r\n  <h1>When</h1>\r\n  <p>This is important guideline and should be followed wehnever working with programmatic impersonation.</p>\r\n  <h1>How</h1>\r\n  <p>If you use programmatic impersonation, use structured exception handling and put the impersonation code inside <b>try</b> blocks. Use a <b>catch</b> block to handle exceptions and to prevent exceptions propagating. Use a <b>finally</b> block to ensure that the impersonation is reverted, as shown in the following example.</p>\r\n  <pre>using System.Security.Principal;<br />. . .<br />WindowsIdentity winIdentity = new WindowsIdentity(\"<a href=\"mailto:username&#64;domainName\">username&#64;domainName</a>\");<br />WindowsImpersonationContext ctx = null;<br />try<br />&#123;</pre>\r\n  <pre>&nbsp; ctx = winIdentity.Impersonate();<br />&nbsp; // Do work.<br />&nbsp; ...<br />&#125;<br />// Do not let the exception propagate. Catch it here.<br />catch(Exception ex)<br />&#123;<br />&nbsp; ...<br />&#125;<br />finally<br />&#123;<br />&nbsp; // Stop impersonating.<br />&nbsp; ctx.Undo();<br />&#125;  </pre>\r\n  <p>By using a <b>finally</b> block, you make ensure that the impersonation token is removed from the current thread, even if an exception is generated. By preventing the exception from propagating from the <b>catch</b> block, you make sure that exception filter code higher in the call stack does not execute while the thread still has an impersonation token attatched to it.</p>\r\n  <blockquote>\r\n    <b>Note</b>&nbsp;&nbsp;&nbsp;Exception filters are supported by Microsoft Intermediate Language (MSIL) and Visual Basic .NET.</blockquote>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
+  "html": "<h1>What to Do</h1>\n  <p>If you use programmatic impersonation, use structured exception handling and put the impersonation code inside <b>try</b> blocks. Use a <b>catch</b> block to handle exceptions and to prevent exceptions propagating. Use a <b>finally</b> block to ensure that the impersonation is reverted.</p>\n  <h1>Why</h1>\n  <p>If your code fails to catch exceptions and your code uses impersonation, a malicious user could use exception filters to execute code that runs under the impersonated security context, even if you are reverting the impersonation in your <b>finally</b> block. This is particularly serious if your code impersonates a privileged account. If your code does not catch the exception, exception filters higher in the call stack can be executed before code in your <b>finally</b> block is executed.</p>\n  <h1>When</h1>\n  <p>This is important guideline and should be followed wehnever working with programmatic impersonation.</p>\n  <h1>How</h1>\n  <p>If you use programmatic impersonation, use structured exception handling and put the impersonation code inside <b>try</b> blocks. Use a <b>catch</b> block to handle exceptions and to prevent exceptions propagating. Use a <b>finally</b> block to ensure that the impersonation is reverted, as shown in the following example.</p>\n  <pre>using System.Security.Principal;<br />. . .<br />WindowsIdentity winIdentity = new WindowsIdentity(\"<a href=\"mailto:username@domainName\">username@domainName</a>\");<br />WindowsImpersonationContext ctx = null;<br />try<br />{</pre>\n  <pre>&amp;nbsp; ctx = winIdentity.Impersonate();<br />&amp;nbsp; // Do work.<br />&amp;nbsp; ...<br />}<br />// Do not let the exception propagate. Catch it here.<br />catch(Exception ex)<br />{<br />&amp;nbsp; ...<br />}<br />finally<br />{<br />&amp;nbsp; // Stop impersonating.<br />&amp;nbsp; ctx.Undo();<br />}  </pre>\n  <p>By using a <b>finally</b> block, you make ensure that the impersonation token is removed from the current thread, even if an exception is generated. By preventing the exception from propagating from the <b>catch</b> block, you make sure that exception filter code higher in the call stack does not execute while the thread still has an impersonation token attatched to it.</p>\n  <blockquote>\n    <b>Note</b>&amp;nbsp;&amp;nbsp;&amp;nbsp;Exception filters are supported by Microsoft Intermediate Language (MSIL) and Visual Basic .NET.</blockquote>\n  <hr />\n  <p>Adapted from Microsoft patterns &amp; practices guidance.</p>"
 }

@@ -1,6 +1,6 @@
 {
   "id": "507399c7-820f-4313-a1d9-62a65503fc9c",
-  "checksum": "04665ff451b290664791db13db7bc23e2a5cbf24",
+  "checksum": "a2a3f0cad7a4d6e4180fbb911f91e7e8f200d0af",
   "words": {
     "what": [
       "h1"
@@ -420,7 +420,7 @@
     ],
     "ul": [
       "Flow the original caller's security context to the middle tier and/or data tier of your Web application to support fine-grained (per-user) authorization. Flow the original caller's security context to the downstream tiers to support operating system level auditing. Access a particular network resource by using a specific identity.",
-      "Do Not Use the LogonUser API\r\n      \r\n        Do Not Use Impersonation Unless Required\r\n        \r\n          When Using Impersonation, Consider Threading Issues"
+      "Do Not Use the LogonUser API\n      \n        Do Not Use Impersonation Unless Required\n        \n          When Using Impersonation, Consider Threading Issues"
     ],
     "li": [
       "Flow the original caller's security context to the middle tier and/or data tier of your Web application to support fine-grained (per-user) authorization.",
@@ -453,5 +453,5 @@
       "text": "When Using Impersonation, Consider Threading Issues"
     }
   ],
-  "html": "<h1>What to Do</h1>\r\n  <p>Be aware that impersonation prevents the efficient use of connection pooling if you access downstream databases by using the impersonated identity. </p>\r\n  <h1>Why</h1>\r\n  <p>This impacts the ability of your application to scale. Also, using impersonation can introduce other security vulnerabilities, particularly in multi-threaded applications, such as ASP.NET Web applications. </p>\r\n  <h1>When</h1>\r\n  <p>You might need impersonation if you need to: </p>\r\n  <ul>\r\n    <li>Flow the original caller's security context to the middle tier and/or data tier of your Web application to support fine-grained (per-user) authorization. <li>Flow the original caller's security context to the downstream tiers to support operating system level auditing. <li>Access a particular network resource by using a specific identity.&nbsp;&nbsp;</li></li></li>\r\n  </ul>\r\n  <h1>Related Items</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/97dfd32f-deb6-4016-b3ff-24147a959521\">Do Not Use the LogonUser API</a>\r\n      <li>\r\n        <a href=\"/article/fdb65a4c-d979-4ab7-b2fa-b88e908207fe\">Do Not Use Impersonation Unless Required</a>\r\n        <li>\r\n          <a href=\"/article/9ea813b5-e1a1-4439-b569-de1c6812b7cb\">When Using Impersonation, Consider Threading Issues</a>\r\n        </li>\r\n      </li>\r\n    </li>\r\n  </ul>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance. </p>"
+  "html": "<h1>What to Do</h1>\n  <p>Be aware that impersonation prevents the efficient use of connection pooling if you access downstream databases by using the impersonated identity. </p>\n  <h1>Why</h1>\n  <p>This impacts the ability of your application to scale. Also, using impersonation can introduce other security vulnerabilities, particularly in multi-threaded applications, such as ASP.NET Web applications. </p>\n  <h1>When</h1>\n  <p>You might need impersonation if you need to: </p>\n  <ul>\n    <li>Flow the original caller's security context to the middle tier and/or data tier of your Web application to support fine-grained (per-user) authorization. <li>Flow the original caller's security context to the downstream tiers to support operating system level auditing. <li>Access a particular network resource by using a specific identity.&nbsp;&nbsp;</li></li></li>\n  </ul>\n  <h1>Related Items</h1>\n  <ul>\n    <li>\n      <a href=\"/article/97dfd32f-deb6-4016-b3ff-24147a959521\">Do Not Use the LogonUser API</a>\n      <li>\n        <a href=\"/article/fdb65a4c-d979-4ab7-b2fa-b88e908207fe\">Do Not Use Impersonation Unless Required</a>\n        <li>\n          <a href=\"/article/9ea813b5-e1a1-4439-b569-de1c6812b7cb\">When Using Impersonation, Consider Threading Issues</a>\n        </li>\n      </li>\n    </li>\n  </ul>\n  <hr />\n  <p>Adapted from Microsoft patterns & practices guidance. </p>"
 }

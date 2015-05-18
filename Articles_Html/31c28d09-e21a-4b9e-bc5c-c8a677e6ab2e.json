@@ -1,6 +1,6 @@
 {
   "id": "31c28d09-e21a-4b9e-bc5c-c8a677e6ab2e",
-  "checksum": "c9f3804dd025a531a96955c71ed49e12cb4e7c0f",
+  "checksum": "9d49732330c2c99ae2a7e3b105890aa659f9c984",
   "words": {
     "what": [
       "h1"
@@ -301,7 +301,7 @@
     "creation": [
       "p"
     ],
-    "can be": [
+    "can&nbspbe": [
       "p"
     ],
     "executed": [
@@ -347,7 +347,7 @@
       "p",
       "strong"
     ],
-    "appdomaincurrentdomain.definedynamicassembly     (assemblyname,": [
+    "appdomaincurrentdomain.definedynamicassembly&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(assemblyname,": [
       "pre",
       "pre"
     ],
@@ -443,13 +443,15 @@
       "ul",
       "li"
     ],
-    "http//msdn2.microsoft.com/en-us/library/system.reflection.emit.assemblybuilder.aspx": [
+    "http//msdn2.microsoft.com/en-us/library/system.reflection.emit.assemblybuilder.aspx&nbsp;": [
       "ul",
-      "li",
-      "a"
+      "li"
     ],
     "http//msdn2.microsoft.com/en-gb/library/system.reflection.emit.assemblybuilderaccess.aspx": [
       "li",
+      "a"
+    ],
+    "http//msdn2.microsoft.com/en-us/library/system.reflection.emit.assemblybuilder.aspx": [
       "a"
     ],
     "adapted": [
@@ -473,6 +475,9 @@
     "guidance": [
       "p"
     ],
+    "sink]": [
+      "title"
+    ],
     "necessary": [
       "title"
     ]
@@ -489,7 +494,7 @@
       "Where possible, avoid persisting dynamically generated assemblies created with Reflection.Emit, using the AssemblyBuilderAccess flag.",
       "To avoid the risk of the code being called by code external to your application, keep the generated assembly memory resident only and do not persist it.",
       "When your application dynamically generates code through the use of Reflection.Emit",
-      "While creating a dynamic assembly you can define the access level which will decide if the dynamically created assembly can be saved or not. If you just have to execute the dynamically generated assembly and not save it, set the AssemblyBuilderAccess flag to Run. Here is code snippet which shows creation of a dynamic assembly which can be executed, but not saved.",
+      "While creating a dynamic assembly you can define the access level which will decide if the dynamically created assembly can be saved or not. If you just have to execute the dynamically generated assembly and not save it, set the AssemblyBuilderAccess flag to Run. Here is code snippet which shows creation of a dynamic assembly which can&nbsp;be executed, but not saved.",
       "In case you have to execute and save the dynamically created asembly set the AssemblyBuilderAccess flag to RunAndSave.",
       "The dynamic modules in the assembly are saved when the dynamic assembly is saved using the Save method of AssemblyBuilder class.",
       "Adapted from Microsoft patterns & practices guidance."
@@ -509,10 +514,10 @@
     ],
     "pre": [
       "...",
-      "AssemblyName assemblyName = new AssemblyName();assemblyName.Name = \"Hello\";AssemblyBuilder assemblyBuilder = AppDomain.CurrentDomain.DefineDynamicAssembly     (assemblyName, AssemblyBuilderAccess.Run);",
+      "AssemblyName assemblyName = new AssemblyName();assemblyName.Name = \"Hello\";AssemblyBuilder assemblyBuilder = AppDomain.CurrentDomain.DefineDynamicAssembly&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(assemblyName, AssemblyBuilderAccess.Run);",
       "...",
       "...",
-      "AssemblyName assemblyName = new AssemblyName();assemblyName.Name = \"Hello\";AssemblyBuilder assemblyBuilder = AppDomain.CurrentDomain.DefineDynamicAssembly     (assemblyName, AssemblyBuilderAccess.RunAndSave);",
+      "AssemblyName assemblyName = new AssemblyName();assemblyName.Name = \"Hello\";AssemblyBuilder assemblyBuilder = AppDomain.CurrentDomain.DefineDynamicAssembly&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(assemblyName, AssemblyBuilderAccess.RunAndSave);",
       "...// Save the dynamic assemblyassemblyBuilder.Save(name);...."
     ],
     "br": [
@@ -527,11 +532,11 @@
       ""
     ],
     "ul": [
-      "For more information see, \"AssemblyBuilderAccess Enumeration\" at http://msdn2.microsoft.com/en-gb/library/system.reflection.emit.assemblybuilderaccess.aspxFor more information see, \"AssemblyBuilder Class\" at http://msdn2.microsoft.com/en-us/library/system.reflection.emit.assemblybuilder.aspx"
+      "For more information see, \"AssemblyBuilderAccess Enumeration\" at http://msdn2.microsoft.com/en-gb/library/system.reflection.emit.assemblybuilderaccess.aspxFor more information see, \"AssemblyBuilder Class\" at http://msdn2.microsoft.com/en-us/library/system.reflection.emit.assemblybuilder.aspx&nbsp;"
     ],
     "li": [
       "For more information see, \"AssemblyBuilderAccess Enumeration\" at http://msdn2.microsoft.com/en-gb/library/system.reflection.emit.assemblybuilderaccess.aspx",
-      "For more information see, \"AssemblyBuilder Class\" at http://msdn2.microsoft.com/en-us/library/system.reflection.emit.assemblybuilder.aspx"
+      "For more information see, \"AssemblyBuilder Class\" at http://msdn2.microsoft.com/en-us/library/system.reflection.emit.assemblybuilder.aspx&nbsp;"
     ],
     "a": [
       "http://msdn2.microsoft.com/en-gb/library/system.reflection.emit.assemblybuilderaccess.aspx",
@@ -551,5 +556,5 @@
       "text": "http://msdn2.microsoft.com/en-us/library/system.reflection.emit.assemblybuilder.aspx"
     }
   ],
-  "html": "<h1>What to Do</h1>\r\n  <p>Where possible, avoid persisting dynamically generated assemblies created with <strong>Reflection.Emit</strong>, using the <strong>AssemblyBuilderAccess </strong>flag.</p>\r\n  <h1>Why</h1>\r\n  <p>To avoid the risk of the code being called by code external to your application, keep the generated assembly memory resident only and do not persist it.</p>\r\n  <h1>When</h1>\r\n  <p>When your application dynamically generates code through the use of <b>Reflection.Emit</b></p>\r\n  <h1>How</h1>\r\n  <p>While creating a dynamic assembly you can define the access level which will decide if the dynamically created assembly can be saved or not. If you just have to execute the dynamically generated assembly and not save it, set the <strong>AssemblyBuilderAccess</strong> flag to <strong>Run. </strong>Here is code snippet which shows creation of a dynamic assembly which can&nbsp;be executed, but not saved.</p>\r\n  <pre>...</pre>\r\n  <pre>AssemblyName assemblyName = new AssemblyName();<br />assemblyName.Name = \"Hello\";<br />AssemblyBuilder assemblyBuilder = AppDomain.CurrentDomain.DefineDynamicAssembly<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(assemblyName, AssemblyBuilderAccess.Run);</pre>\r\n  <pre>...</pre>\r\n  <p>In case you have to execute and save the dynamically created asembly set the <strong>AssemblyBuilderAccess</strong> flag to <strong>RunAndSave. </strong></p>\r\n  <pre>...</pre>\r\n  <pre>AssemblyName assemblyName = new AssemblyName();<br />assemblyName.Name = \"Hello\";<br />AssemblyBuilder assemblyBuilder = AppDomain.CurrentDomain.DefineDynamicAssembly<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(assemblyName, AssemblyBuilderAccess.RunAndSave);</pre>\r\n  <p>The dynamic modules in the assembly are saved when the dynamic assembly is saved using the <strong>Save</strong> method of <strong>AssemblyBuilder</strong> class.</p>\r\n  <pre>...<br />// Save the dynamic assembly<br />assemblyBuilder.Save(name);<br />....</pre>\r\n  <h1>Additional Resources</h1>\r\n  <ul>\r\n    <li>For more information see, \"AssemblyBuilderAccess Enumeration\" at <a href=\"http://msdn2.microsoft.com/en-gb/library/system.reflection.emit.assemblybuilderaccess.aspx\">http://msdn2.microsoft.com/en-gb/library/system.reflection.emit.assemblybuilderaccess.aspx</a><li>For more information see, \"AssemblyBuilder Class\" at <a href=\"http://msdn2.microsoft.com/en-us/library/system.reflection.emit.assemblybuilder.aspx\">http://msdn2.microsoft.com/en-us/library/system.reflection.emit.assemblybuilder.aspx</a>&nbsp; </li></li>\r\n  </ul>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
+  "html": "<h1>What to Do</h1>\n  <p>Where possible, avoid persisting dynamically generated assemblies created with <strong>Reflection.Emit</strong>, using the <strong>AssemblyBuilderAccess </strong>flag.</p>\n  <h1>Why</h1>\n  <p>To avoid the risk of the code being called by code external to your application, keep the generated assembly memory resident only and do not persist it.</p>\n  <h1>When</h1>\n  <p>When your application dynamically generates code through the use of <b>Reflection.Emit</b></p>\n  <h1>How</h1>\n  <p>While creating a dynamic assembly you can define the access level which will decide if the dynamically created assembly can be saved or not. If you just have to execute the dynamically generated assembly and not save it, set the <strong>AssemblyBuilderAccess</strong> flag to <strong>Run. </strong>Here is code snippet which shows creation of a dynamic assembly which can&amp;nbsp;be executed, but not saved.</p>\n  <pre>...</pre>\n  <pre>AssemblyName assemblyName = new AssemblyName();<br />assemblyName.Name = \"Hello\";<br />AssemblyBuilder assemblyBuilder = AppDomain.CurrentDomain.DefineDynamicAssembly<br />&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;(assemblyName, AssemblyBuilderAccess.Run);</pre>\n  <pre>...</pre>\n  <p>In case you have to execute and save the dynamically created asembly set the <strong>AssemblyBuilderAccess</strong> flag to <strong>RunAndSave. </strong></p>\n  <pre>...</pre>\n  <pre>AssemblyName assemblyName = new AssemblyName();<br />assemblyName.Name = \"Hello\";<br />AssemblyBuilder assemblyBuilder = AppDomain.CurrentDomain.DefineDynamicAssembly<br />&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;(assemblyName, AssemblyBuilderAccess.RunAndSave);</pre>\n  <p>The dynamic modules in the assembly are saved when the dynamic assembly is saved using the <strong>Save</strong> method of <strong>AssemblyBuilder</strong> class.</p>\n  <pre>...<br />// Save the dynamic assembly<br />assemblyBuilder.Save(name);<br />....</pre>\n  <h1>Additional Resources</h1>\n  <ul>\n    <li>For more information see, \"AssemblyBuilderAccess Enumeration\" at <a href=\"http://msdn2.microsoft.com/en-gb/library/system.reflection.emit.assemblybuilderaccess.aspx\">http://msdn2.microsoft.com/en-gb/library/system.reflection.emit.assemblybuilderaccess.aspx</a><li>For more information see, \"AssemblyBuilder Class\" at <a href=\"http://msdn2.microsoft.com/en-us/library/system.reflection.emit.assemblybuilder.aspx\">http://msdn2.microsoft.com/en-us/library/system.reflection.emit.assemblybuilder.aspx</a>&amp;nbsp; </li></li>\n  </ul>\n  <hr />\n  <p>Adapted from Microsoft patterns &amp; practices guidance.</p>"
 }

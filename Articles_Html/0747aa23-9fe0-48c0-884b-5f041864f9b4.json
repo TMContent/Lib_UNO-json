@@ -1,6 +1,6 @@
 {
   "id": "0747aa23-9fe0-48c0-884b-5f041864f9b4",
-  "checksum": "5122be5462219bdeefe4b9d67a4c13bde13b5de0",
+  "checksum": "dc77732d834185d63d47ee52504eb2071b556f19",
   "words": {
     "what": [
       "h1"
@@ -392,6 +392,9 @@
     "guidance": [
       "p"
     ],
+    "sink]": [
+      "title"
+    ],
     "used": [
       "title"
     ]
@@ -432,5 +435,5 @@
     ]
   },
   "links": [],
-  "html": "<h1>What to Check For</h1>\r\n  <p>Check to ensure that your application uses GenerateKey method to generate random keys for a managed symmetric cryptographic class.</p>\r\n  <p />\r\n  <h1>How to Fix</h1>\r\n  <p>When you use a default constructor to create a new instance of a managed symmetric cryptographic class, a new key and initialization vector are automatically created. You should call the <b>GenerateKey</b> method on the symmetric algorithm instance. <b>GenerateKey</b> creates a random strong key and sets it to the algorithm.</p>\r\n  <p>When you use symmetric algorithms, creating and managing keys is an important part of cryptographic process. If you use weak keys, you increase the likelihood that an attacker can compromise the key and access your encrypted data. The following example shows how to use the <b>GenerateKey</b> method.</p>\r\n  <div>\r\n    <pre>using System.Security.Cryptography;<br />  // create instance of AES encryption algorithm and set the key value<br />RijndaelManaged aesEncryptionAlgorithm = new RijndaelManaged();<br />//Generate IV and Key for the instance<br />aesEncryptionAlgorithm.GenerateIV();<br />aesEncryptionAlgorithm.GenerateKey();<br />// Retrieve the IV and Key and encrypt and safeguard it.</pre>\r\n  </div>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
+  "html": "<h1>What to Check For</h1>\n  <p>Check to ensure that your application uses GenerateKey method to generate random keys for a managed symmetric cryptographic class.</p>\n  <p />\n  <h1>How to Fix</h1>\n  <p>When you use a default constructor to create a new instance of a managed symmetric cryptographic class, a new key and initialization vector are automatically created. You should call the <b>GenerateKey</b> method on the symmetric algorithm instance. <b>GenerateKey</b> creates a random strong key and sets it to the algorithm.</p>\n  <p>When you use symmetric algorithms, creating and managing keys is an important part of cryptographic process. If you use weak keys, you increase the likelihood that an attacker can compromise the key and access your encrypted data. The following example shows how to use the <b>GenerateKey</b> method.</p>\n  <div>\n    <pre>using System.Security.Cryptography;<br />  // create instance of AES encryption algorithm and set the key value<br />RijndaelManaged aesEncryptionAlgorithm = new RijndaelManaged();<br />//Generate IV and Key for the instance<br />aesEncryptionAlgorithm.GenerateIV();<br />aesEncryptionAlgorithm.GenerateKey();<br />// Retrieve the IV and Key and encrypt and safeguard it.</pre>\n  </div>\n  <hr />\n  <p>Adapted from Microsoft patterns &amp; practices guidance.</p>"
 }

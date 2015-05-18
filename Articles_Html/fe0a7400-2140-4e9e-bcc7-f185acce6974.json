@@ -1,6 +1,6 @@
 {
   "id": "fe0a7400-2140-4e9e-bcc7-f185acce6974",
-  "checksum": "a9fdb420c07b009ce38763b2c2c60dfcb7bef74c",
+  "checksum": "9e39fb54a2b49039af5ed9b1e775febe74e915eb",
   "words": {
     "10": [
       "ol",
@@ -186,7 +186,6 @@
       "ol",
       "ol",
       "ol",
-      "ol",
       "li",
       "li",
       "p",
@@ -202,8 +201,6 @@
       "p",
       "li",
       "li",
-      "li",
-      "p",
       "p",
       "p",
       "em",
@@ -705,7 +702,6 @@
       "li",
       "li",
       "ol",
-      "strong",
       "li",
       "p",
       "strong"
@@ -735,7 +731,7 @@
       "p",
       "p"
     ],
-    "guessed ensure": [
+    "guessed&nbsp;ensure": [
       "ol",
       "li",
       "p"
@@ -743,8 +739,7 @@
     "guessed": [
       "ol",
       "li",
-      "p",
-      "strong"
+      "p"
     ],
     "ids": [
       "ol",
@@ -836,13 +831,13 @@
       "li",
       "strong"
     ],
-    "application expires": [
+    "application&nbspexpires": [
       "ol",
       "li",
       "ul",
       "li"
     ],
-    "inactive sessions": [
+    "inactive&nbspsessions.": [
       "ol",
       "li",
       "ul",
@@ -903,7 +898,6 @@
       "li",
       "li",
       "p",
-      "strong",
       "li",
       "p",
       "li",
@@ -919,10 +913,8 @@
       "p",
       "li",
       "p",
-      "strong",
       "li",
       "p",
-      "strong",
       "p"
     ],
     "users": [
@@ -994,12 +986,12 @@
       "p",
       "strong"
     ],
-    "sessions ensure": [
+    "sessions&nbsp;ensure": [
       "ol",
       "li",
       "p"
     ],
-    "uses resultdiscardingcookies to": [
+    "uses&nbspresult.discardingcookies&nbsp;to": [
       "ol",
       "li",
       "p"
@@ -1076,7 +1068,7 @@
       "p",
       "strong"
     ],
-    "channels ensure": [
+    "channels&nbsp;ensure": [
       "ol",
       "li",
       "p"
@@ -1090,11 +1082,9 @@
       "ol",
       "li",
       "p",
-      "strong",
       "ol",
       "li",
-      "p",
-      "strong"
+      "p"
     ],
     "although": [
       "ol",
@@ -1184,7 +1174,7 @@
       "p",
       "strong"
     ],
-    "the httponly flag": [
+    "the&nbsphttponly&nbsp;flag": [
       "ol",
       "li",
       "p",
@@ -1240,13 +1230,13 @@
       "em",
       "span"
     ],
-    "the secure flag": [
+    "the&nbspsecure&nbsp;flag": [
       "ol",
       "li",
       "p",
       "strong"
     ],
-    "set the": [
+    "set&nbsp;the": [
       "ol",
       "li",
       "p"
@@ -1276,7 +1266,7 @@
       "li",
       "p"
     ],
-    "ssl": [
+    "tls": [
       "ol",
       "li",
       "p",
@@ -1336,9 +1326,21 @@
       "li",
       "p"
     ],
+    "guessed&nbsp;": [
+      "strong"
+    ],
+    "sessions&nbsp;": [
+      "strong",
+      "strong",
+      "strong"
+    ],
     "resultdiscardingcookies": [
       "i",
       "i"
+    ],
+    "channels&nbsp;": [
+      "strong",
+      "strong"
     ],
     "httponly": [
       "em"
@@ -1372,7 +1374,7 @@
       "p",
       "strong"
     ],
-    "identifiers use": [
+    "identifiers&nbsp;use": [
       "ol",
       "li",
       "p"
@@ -1437,7 +1439,7 @@
       "li",
       "p"
     ],
-    "invoke playapi.mvc.cookie.": [
+    "invoke&nbspplay.api.mvc.cookie.": [
       "ol",
       "li",
       "p"
@@ -1463,7 +1465,7 @@
       "p",
       "strong"
     ],
-    "reused this": [
+    "reused&nbsp;this": [
       "ol",
       "li",
       "p"
@@ -1514,7 +1516,7 @@
       "p",
       "strong"
     ],
-    "sessions set": [
+    "sessions&nbsp;set": [
       "ol",
       "li",
       "p"
@@ -1596,7 +1598,7 @@
       "p",
       "strong"
     ],
-    "sessions allowing": [
+    "sessions&nbsp;allowing": [
       "ol",
       "li",
       "p"
@@ -1616,7 +1618,7 @@
       "li",
       "p"
     ],
-    "use resultdiscardingcookies to": [
+    "use&nbspresult.discardingcookies&nbsp;to": [
       "ol",
       "li",
       "p"
@@ -1626,12 +1628,17 @@
       "li",
       "p"
     ],
-    "channels mark": [
+    "channels&nbsp;mark": [
       "ol",
       "li",
       "p"
     ],
-    "as secure": [
+    "as&nbspsecure.": [
+      "ol",
+      "li",
+      "p"
+    ],
+    "the&nbsp": [
       "ol",
       "li",
       "p"
@@ -1696,13 +1703,16 @@
       "li",
       "p"
     ],
+    "identifiers&nbsp;": [
+      "strong"
+    ],
     "playapi.mvc.cookie.": [
       "i"
     ],
     "reused": [
       "strong"
     ],
-    "note pci": [
+    "note&nbsp;pci": [
       "p"
     ],
     "dss": [
@@ -1746,21 +1756,21 @@
       "Ensure that the confidentiality of session cookies is protected.",
       "Session cookies are used by an application to identify the session associated with a particular user. Protecting session cookies can help prevent an attacker from hijacking the session and using the application posing as a legitimate user.",
       "Use the following steps to verify that your application's session cookies are handled securely:",
-      "Verify that session identifiers cannot be guessed. Ensure that your application's session identifiers cannot be guessed by an attacker. Verify that your application's session IDs meet the following requirements:",
-      "Verify that users can invalidate their own sessions. Ensure that your application uses result.discardingCookies to allow its users to invalidate their own sessions.",
-      "Verify that session cookies are sent over encrypted channels. Ensure your application transmits session cookies over encrypted channels. Although this is not required for non-sensitive transactions, it is mandatory for any transactions that are sensitive in nature.",
-      "Verify that session cookies have the HttpOnly flag set. This prevents client side scripts from gaining access to the cookie.",
-      "Verify that session cookies have the Secure flag set. The \"Secure\" flag forces sessions cookies to be sent only over SSL.",
+      "Verify that session identifiers cannot be guessed.&nbsp;Ensure that your application's session identifiers cannot be guessed by an attacker. Verify that your application's session IDs meet the following requirements:",
+      "Verify that users can invalidate their own sessions.&nbsp;Ensure that your application uses&nbsp;result.discardingCookies&nbsp;to allow its users to invalidate their own sessions.",
+      "Verify that session cookies are sent over encrypted channels.&nbsp;Ensure your application transmits session cookies over encrypted channels. Although this is not required for non-sensitive transactions, it is mandatory for any transactions that are sensitive in nature.",
+      "Verify that session cookies have the&nbsp;HttpOnly&nbsp;flag set. This prevents client side scripts from gaining access to the cookie.",
+      "Verify that session cookies have the&nbsp;Secure&nbsp;flag set.&nbsp;The \"Secure\" flag forces sessions cookies to be sent only over TLS.",
       "Verify that sessions are invalidated on login. This can help prevent session fixation (or hijacking).",
       "",
       "To secure session cookies:",
-      "Do not allow users to choose their own session identifiers. Use Scala cookie feature to automatically assigns random IDs to its sessions which minimizes the risk of an attacker hijacking another user's session by using the same session ID. To use sessions in Scala, invoke play.api.mvc.Cookie.",
-      "Invalidate the session identifier on login (as well as logout) to ensure session identifiers are not reused. This is necessary to prevent session hijacking. After the session has been invalidated, make a call to generate a new session identifier.",
-      "Time-out sessions. Set an expiration time for sessions. This helps minimize the threat of session hijacking by giving an attacker a smaller window of opportunity. Depending on your application, an appropriate timeout can be anywhere from 10 to 20 minutes.",
+      "Do not allow users to choose their own session identifiers.&nbsp;Use Scala cookie feature to automatically assigns random IDs to its sessions which minimizes the risk of an attacker hijacking another user's session by using the same session ID. To use sessions in Scala, invoke&nbsp;play.api.mvc.Cookie.",
+      "Invalidate the session identifier on login (as well as logout) to ensure session identifiers are not reused.&nbsp;This is necessary to prevent session hijacking. After the session has been invalidated, make a call to generate a new session identifier.",
+      "Time-out sessions.&nbsp;Set an expiration time for sessions. This helps minimize the threat of session hijacking by giving an attacker a smaller window of opportunity. Depending on your application, an appropriate timeout can be anywhere from 10 to 20 minutes.",
       "",
-      "Allow users to terminate their sessions. Allowing users to invalidate their sessions reduces the risk of session being hijacked. Use result.discardingCookies to accomplish this.",
-      "Ensure cookies are sent over encrypted channels. Mark cookies sent over SSL as Secure. Use the  Enable Secure flag on the cookie, setting “application.session.secure=true” in the “application.conf” file. Do not send session cookies over unencrypted channels as session hijacking is made much easier.",
-      "Note: PCI DSS requirements state that sessions that are idle for 15 minutes should be locked automatically and require the user's password to unlock.",
+      "Allow users to terminate their sessions.&nbsp;Allowing users to invalidate their sessions reduces the risk of session being hijacked. Use&nbsp;result.discardingCookies&nbsp;to accomplish this.",
+      "Ensure cookies are sent over encrypted channels.&nbsp;Mark cookies sent over TLS as&nbsp;Secure. Use the&nbsp; Enable Secure flag on the cookie, setting “application.session.secure=true” in the “application.conf” file. Do not send session cookies over unencrypted channels as session hijacking is made much easier.",
+      "Note:&nbsp;PCI DSS requirements state that sessions that are idle for 15 minutes should be locked automatically and require the user's password to unlock.",
       ""
     ],
     "br": [
@@ -1768,46 +1778,46 @@
       ""
     ],
     "ol": [
-      "Verify that session identifiers cannot be guessed. Ensure that your application's session identifiers cannot be guessed by an attacker. Verify that your application's session IDs meet the following requirements:\r\n      \r\n        \r\n          Length: Your application uses long session identifiers (e.g. string of length 32).\r\n        \r\n          Triviality: Your application uses randomly generated session identifiers.\r\n        \r\n          Lifetime: Your application expires inactive sessions.\r\n        \r\n          Recycling: Your application does not reuse previously used sessions.\r\n      \r\n    \r\n    \r\n      \r\n        Verify that users can invalidate their own sessions. Ensure that your application uses result.discardingCookies to allow its users to invalidate their own sessions.\r\n    \r\n    \r\n      \r\n        Verify that session cookies are sent over encrypted channels. Ensure your application transmits session cookies over encrypted channels. Although this is not required for non-sensitive transactions, it is mandatory for any transactions that are sensitive in nature.\r\n    \r\n    \r\n      \r\n        Verify that session cookies have the HttpOnly flag set. This prevents client side scripts from gaining access to the cookie.\r\n    \r\n    \r\n      \r\n        Verify that session cookies have the Secure flag set. The \"Secure\" flag forces sessions cookies to be sent only over SSL.\r\n    \r\n    \r\n      \r\n        Verify that sessions are invalidated on login. This can help prevent session fixation (or hijacking).",
-      "Do not allow users to choose their own session identifiers. Use Scala cookie feature to automatically assigns random IDs to its sessions which minimizes the risk of an attacker hijacking another user's session by using the same session ID. To use sessions in Scala, invoke play.api.mvc.Cookie.\r\n    \r\n    \r\n      \r\n        Invalidate the session identifier on login (as well as logout) to ensure session identifiers are not reused. This is necessary to prevent session hijacking. After the session has been invalidated, make a call to generate a new session identifier.\r\n    \r\n    \r\n      \r\n      Time-out sessions. Set an expiration time for sessions. This helps minimize the threat of session hijacking by giving an attacker a smaller window of opportunity. Depending on your application, an appropriate timeout can be anywhere from 10 to 20 minutes.\r\n    \r\n      \r\n        Allow users to terminate their sessions. Allowing users to invalidate their sessions reduces the risk of session being hijacked. Use result.discardingCookies to accomplish this.\r\n    \r\n    \r\n      \r\n      Ensure cookies are sent over encrypted channels. Mark cookies sent over SSL as Secure. Use the  Enable Secure flag on the cookie, setting “application.session.secure=true” in the “application.conf” file. Do not send session cookies over unencrypted channels as session hijacking is made much easier."
+      "Verify that session identifiers cannot be guessed.&nbsp;Ensure that your application's session identifiers cannot be guessed by an attacker. Verify that your application's session IDs meet the following requirements:\n      \n        \n          Length: Your application uses long session identifiers (e.g. string of length 32).\n        \n          Triviality: Your application uses randomly generated session identifiers.\n        \n          Lifetime: Your application&nbsp;expires inactive&nbsp;sessions.\n        \n          Recycling: Your application does not reuse previously used sessions.\n      \n    \n    \n      \n        Verify that users can invalidate their own sessions.&nbsp;Ensure that your application uses&nbsp;result.discardingCookies&nbsp;to allow its users to invalidate their own sessions.\n    \n    \n      \n        Verify that session cookies are sent over encrypted channels.&nbsp;Ensure your application transmits session cookies over encrypted channels. Although this is not required for non-sensitive transactions, it is mandatory for any transactions that are sensitive in nature.\n    \n    \n      \n        Verify that session cookies have the&nbsp;HttpOnly&nbsp;flag set. This prevents client side scripts from gaining access to the cookie.\n    \n    \n      \n        Verify that session cookies have the&nbsp;Secure&nbsp;flag set.&nbsp;The \"Secure\" flag forces sessions cookies to be sent only over TLS.\n    \n    \n      \n        Verify that sessions are invalidated on login. This can help prevent session fixation (or hijacking).",
+      "Do not allow users to choose their own session identifiers.&nbsp;Use Scala cookie feature to automatically assigns random IDs to its sessions which minimizes the risk of an attacker hijacking another user's session by using the same session ID. To use sessions in Scala, invoke&nbsp;play.api.mvc.Cookie.\n    \n    \n      \n        Invalidate the session identifier on login (as well as logout) to ensure session identifiers are not reused.&nbsp;This is necessary to prevent session hijacking. After the session has been invalidated, make a call to generate a new session identifier.\n    \n    \n      \n      Time-out sessions.&nbsp;Set an expiration time for sessions. This helps minimize the threat of session hijacking by giving an attacker a smaller window of opportunity. Depending on your application, an appropriate timeout can be anywhere from 10 to 20 minutes.\n    \n      \n        Allow users to terminate their sessions.&nbsp;Allowing users to invalidate their sessions reduces the risk of session being hijacked. Use&nbsp;result.discardingCookies&nbsp;to accomplish this.\n    \n    \n      \n      Ensure cookies are sent over encrypted channels.&nbsp;Mark cookies sent over TLS as&nbsp;Secure. Use the&nbsp; Enable Secure flag on the cookie, setting “application.session.secure=true” in the “application.conf” file. Do not send session cookies over unencrypted channels as session hijacking is made much easier."
     ],
     "li": [
-      "Verify that session identifiers cannot be guessed. Ensure that your application's session identifiers cannot be guessed by an attacker. Verify that your application's session IDs meet the following requirements:\r\n      \r\n        \r\n          Length: Your application uses long session identifiers (e.g. string of length 32).\r\n        \r\n          Triviality: Your application uses randomly generated session identifiers.\r\n        \r\n          Lifetime: Your application expires inactive sessions.\r\n        \r\n          Recycling: Your application does not reuse previously used sessions.",
+      "Verify that session identifiers cannot be guessed.&nbsp;Ensure that your application's session identifiers cannot be guessed by an attacker. Verify that your application's session IDs meet the following requirements:\n      \n        \n          Length: Your application uses long session identifiers (e.g. string of length 32).\n        \n          Triviality: Your application uses randomly generated session identifiers.\n        \n          Lifetime: Your application&nbsp;expires inactive&nbsp;sessions.\n        \n          Recycling: Your application does not reuse previously used sessions.",
       "Length: Your application uses long session identifiers (e.g. string of length 32).",
       "Triviality: Your application uses randomly generated session identifiers.",
-      "Lifetime: Your application expires inactive sessions.",
+      "Lifetime: Your application&nbsp;expires inactive&nbsp;sessions.",
       "Recycling: Your application does not reuse previously used sessions.",
-      "Verify that users can invalidate their own sessions. Ensure that your application uses result.discardingCookies to allow its users to invalidate their own sessions.",
-      "Verify that session cookies are sent over encrypted channels. Ensure your application transmits session cookies over encrypted channels. Although this is not required for non-sensitive transactions, it is mandatory for any transactions that are sensitive in nature.",
-      "Verify that session cookies have the HttpOnly flag set. This prevents client side scripts from gaining access to the cookie.",
-      "Verify that session cookies have the Secure flag set. The \"Secure\" flag forces sessions cookies to be sent only over SSL.",
+      "Verify that users can invalidate their own sessions.&nbsp;Ensure that your application uses&nbsp;result.discardingCookies&nbsp;to allow its users to invalidate their own sessions.",
+      "Verify that session cookies are sent over encrypted channels.&nbsp;Ensure your application transmits session cookies over encrypted channels. Although this is not required for non-sensitive transactions, it is mandatory for any transactions that are sensitive in nature.",
+      "Verify that session cookies have the&nbsp;HttpOnly&nbsp;flag set. This prevents client side scripts from gaining access to the cookie.",
+      "Verify that session cookies have the&nbsp;Secure&nbsp;flag set.&nbsp;The \"Secure\" flag forces sessions cookies to be sent only over TLS.",
       "Verify that sessions are invalidated on login. This can help prevent session fixation (or hijacking).",
-      "Do not allow users to choose their own session identifiers. Use Scala cookie feature to automatically assigns random IDs to its sessions which minimizes the risk of an attacker hijacking another user's session by using the same session ID. To use sessions in Scala, invoke play.api.mvc.Cookie.",
-      "Invalidate the session identifier on login (as well as logout) to ensure session identifiers are not reused. This is necessary to prevent session hijacking. After the session has been invalidated, make a call to generate a new session identifier.",
-      "Time-out sessions. Set an expiration time for sessions. This helps minimize the threat of session hijacking by giving an attacker a smaller window of opportunity. Depending on your application, an appropriate timeout can be anywhere from 10 to 20 minutes.",
-      "Allow users to terminate their sessions. Allowing users to invalidate their sessions reduces the risk of session being hijacked. Use result.discardingCookies to accomplish this.",
-      "Ensure cookies are sent over encrypted channels. Mark cookies sent over SSL as Secure. Use the  Enable Secure flag on the cookie, setting “application.session.secure=true” in the “application.conf” file. Do not send session cookies over unencrypted channels as session hijacking is made much easier."
+      "Do not allow users to choose their own session identifiers.&nbsp;Use Scala cookie feature to automatically assigns random IDs to its sessions which minimizes the risk of an attacker hijacking another user's session by using the same session ID. To use sessions in Scala, invoke&nbsp;play.api.mvc.Cookie.",
+      "Invalidate the session identifier on login (as well as logout) to ensure session identifiers are not reused.&nbsp;This is necessary to prevent session hijacking. After the session has been invalidated, make a call to generate a new session identifier.",
+      "Time-out sessions.&nbsp;Set an expiration time for sessions. This helps minimize the threat of session hijacking by giving an attacker a smaller window of opportunity. Depending on your application, an appropriate timeout can be anywhere from 10 to 20 minutes.",
+      "Allow users to terminate their sessions.&nbsp;Allowing users to invalidate their sessions reduces the risk of session being hijacked. Use&nbsp;result.discardingCookies&nbsp;to accomplish this.",
+      "Ensure cookies are sent over encrypted channels.&nbsp;Mark cookies sent over TLS as&nbsp;Secure. Use the&nbsp; Enable Secure flag on the cookie, setting “application.session.secure=true” in the “application.conf” file. Do not send session cookies over unencrypted channels as session hijacking is made much easier."
     ],
     "strong": [
-      "Verify that session identifiers cannot be guessed.",
+      "Verify that session identifiers cannot be guessed.&nbsp;",
       "Length",
       "Triviality",
       "Lifetime",
       "Recycling",
-      "Verify that users can invalidate their own sessions.",
-      "Verify that session cookies are sent over encrypted channels.",
-      "Verify that session cookies have the HttpOnly flag set",
-      "Verify that session cookies have the Secure flag set.",
+      "Verify that users can invalidate their own sessions.&nbsp;",
+      "Verify that session cookies are sent over encrypted channels.&nbsp;",
+      "Verify that session cookies have the&nbsp;HttpOnly&nbsp;flag set",
+      "Verify that session cookies have the&nbsp;Secure&nbsp;flag set.",
       "Verify that sessions are invalidated on login",
-      "Do not allow users to choose their own session identifiers.",
+      "Do not allow users to choose their own session identifiers.&nbsp;",
       "Invalidate the session identifier on login (as well as logout) to ensure session identifiers are not reused.",
-      "Time-out sessions.",
-      "Allow users to terminate their sessions.",
-      "Ensure cookies are sent over encrypted channels.",
+      "Time-out sessions.&nbsp;",
+      "Allow users to terminate their sessions.&nbsp;",
+      "Ensure cookies are sent over encrypted channels.&nbsp;",
       "Note:"
     ],
     "ul": [
-      "Length: Your application uses long session identifiers (e.g. string of length 32).\r\n        \r\n          Triviality: Your application uses randomly generated session identifiers.\r\n        \r\n          Lifetime: Your application expires inactive sessions.\r\n        \r\n          Recycling: Your application does not reuse previously used sessions."
+      "Length: Your application uses long session identifiers (e.g. string of length 32).\n        \n          Triviality: Your application uses randomly generated session identifiers.\n        \n          Lifetime: Your application&nbsp;expires inactive&nbsp;sessions.\n        \n          Recycling: Your application does not reuse previously used sessions."
     ],
     "i": [
       "result.discardingCookies",
@@ -1826,5 +1836,5 @@
     ]
   },
   "links": [],
-  "html": "<h1>Applies To</h1>\r\n  <p>Scala and Play Framework 2.1.0+<br /></p>\r\n  <h1>What to Check For</h1>\r\n  <p>Ensure that the confidentiality of session cookies is protected.</p>\r\n  <h1>Why</h1>\r\n  <p>Session cookies are used by an application to identify the session associated with a particular user. Protecting session cookies can help prevent an attacker from hijacking the session and using the application posing as a legitimate user.</p>\r\n  <h1>How to Check</h1>\r\n  <p>Use the following steps to verify that your application's session cookies are handled securely:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Verify that session identifiers cannot be guessed.&nbsp;</strong>Ensure that your application's session identifiers cannot be guessed by an attacker. Verify that your application's session IDs meet the following requirements:</p>\r\n      <ul>\r\n        <li>\r\n          <strong>Length</strong>: Your application uses long session identifiers (e.g. string of length 32).</li>\r\n        <li>\r\n          <strong>Triviality</strong>: Your application uses randomly generated session identifiers.</li>\r\n        <li>\r\n          <strong>Lifetime</strong>: Your application&nbsp;expires inactive&nbsp;sessions.</li>\r\n        <li>\r\n          <strong>Recycling</strong>: Your application does not reuse previously used sessions.</li>\r\n      </ul>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Verify that users can invalidate their own sessions.&nbsp;</strong>Ensure that your application uses&nbsp;<i>result.discardingCookies</i>&nbsp;to allow its users to invalidate their own sessions.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Verify that session cookies are sent over encrypted channels.&nbsp;</strong>Ensure your application transmits session cookies over encrypted channels. Although this is not required for non-sensitive transactions, it is mandatory for any transactions that are sensitive in nature.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Verify that session cookies have the&nbsp;<em>HttpOnly</em>&nbsp;flag set</strong>. This prevents client side scripts from gaining access to the cookie.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Verify that session cookies have the&nbsp;<em>Secure</em>&nbsp;flag set.</strong>&nbsp;The \"<em>Secure</em>\" flag forces sessions cookies to be sent only over SSL.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Verify that sessions are invalidated on login</strong>. This can help prevent session fixation (or hijacking).</p>\r\n    </li>\r\n  </ol>\r\n  <h1>How to Fix</h1>\r\n  <p />\r\n  <p>To secure session cookies:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Do not allow users to choose their own session identifiers.&nbsp;</strong>Use Scala cookie feature to automatically assigns random IDs to its sessions which minimizes the risk of an attacker hijacking another user's session by using the same session ID. To use sessions in Scala, invoke&nbsp;<i>play.api.mvc.Cookie.</i></p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Invalidate the session identifier on login (as well as logout) to ensure session identifiers are not reused.</strong>&nbsp;This is necessary to prevent session hijacking. After the session has been invalidated, make a call to generate a new session identifier.</p>\r\n    </li>\r\n    <li>\r\n      <p />\r\n      <strong>Time-out sessions.&nbsp;</strong>Set an expiration time for sessions. This helps minimize the threat of session hijacking by giving an attacker a smaller window of opportunity. Depending on your application, an appropriate timeout can be anywhere from 10 to 20 minutes.<p /></li>\r\n    <li>\r\n      <p>\r\n        <strong>Allow users to terminate their sessions.&nbsp;</strong>Allowing users to invalidate their sessions reduces the risk of session being hijacked. Use&nbsp;<i>result.discardingCookies</i>&nbsp;to accomplish this.</p>\r\n    </li>\r\n    <li>\r\n      <p />\r\n      <strong>Ensure cookies are sent over encrypted channels.&nbsp;</strong>Mark cookies sent over SSL as&nbsp;<em>Secure</em>. Use the&nbsp; <em><span style=\"font-style: normal;\">Enable Secure flag on the cookie, setting “application.session.secure=true” in the “application.conf” file</span></em>. Do not send session cookies over unencrypted channels as session hijacking is made much easier.</li>\r\n  </ol>\r\n  <p>\r\n    <strong>Note:</strong>&nbsp;PCI DSS requirements state that sessions that are idle for 15 minutes should be locked automatically and require the user's password to unlock.</p>\r\n  <p />\r\n  <br />"
+  "html": "<h1>Applies To</h1>\n  <p>Scala and Play Framework 2.1.0+<br /></p>\n  <h1>What to Check For</h1>\n  <p>Ensure that the confidentiality of session cookies is protected.</p>\n  <h1>Why</h1>\n  <p>Session cookies are used by an application to identify the session associated with a particular user. Protecting session cookies can help prevent an attacker from hijacking the session and using the application posing as a legitimate user.</p>\n  <h1>How to Check</h1>\n  <p>Use the following steps to verify that your application's session cookies are handled securely:</p>\n  <ol>\n    <li>\n      <p>\n        <strong>Verify that session identifiers cannot be guessed.&amp;nbsp;</strong>Ensure that your application's session identifiers cannot be guessed by an attacker. Verify that your application's session IDs meet the following requirements:</p>\n      <ul>\n        <li>\n          <strong>Length</strong>: Your application uses long session identifiers (e.g. string of length 32).</li>\n        <li>\n          <strong>Triviality</strong>: Your application uses randomly generated session identifiers.</li>\n        <li>\n          <strong>Lifetime</strong>: Your application&amp;nbsp;expires inactive&amp;nbsp;sessions.</li>\n        <li>\n          <strong>Recycling</strong>: Your application does not reuse previously used sessions.</li>\n      </ul>\n    </li>\n    <li>\n      <p>\n        <strong>Verify that users can invalidate their own sessions.&amp;nbsp;</strong>Ensure that your application uses&amp;nbsp;<i>result.discardingCookies</i>&amp;nbsp;to allow its users to invalidate their own sessions.</p>\n    </li>\n    <li>\n      <p>\n        <strong>Verify that session cookies are sent over encrypted channels.&amp;nbsp;</strong>Ensure your application transmits session cookies over encrypted channels. Although this is not required for non-sensitive transactions, it is mandatory for any transactions that are sensitive in nature.</p>\n    </li>\n    <li>\n      <p>\n        <strong>Verify that session cookies have the&amp;nbsp;<em>HttpOnly</em>&amp;nbsp;flag set</strong>. This prevents client side scripts from gaining access to the cookie.</p>\n    </li>\n    <li>\n      <p>\n        <strong>Verify that session cookies have the&amp;nbsp;<em>Secure</em>&amp;nbsp;flag set.</strong>&amp;nbsp;The \"<em>Secure</em>\" flag forces sessions cookies to be sent only over TLS.</p>\n    </li>\n    <li>\n      <p>\n        <strong>Verify that sessions are invalidated on login</strong>. This can help prevent session fixation (or hijacking).</p>\n    </li>\n  </ol>\n  <h1>How to Fix</h1>\n  <p />\n  <p>To secure session cookies:</p>\n  <ol>\n    <li>\n      <p>\n        <strong>Do not allow users to choose their own session identifiers.&amp;nbsp;</strong>Use Scala cookie feature to automatically assigns random IDs to its sessions which minimizes the risk of an attacker hijacking another user's session by using the same session ID. To use sessions in Scala, invoke&amp;nbsp;<i>play.api.mvc.Cookie.</i></p>\n    </li>\n    <li>\n      <p>\n        <strong>Invalidate the session identifier on login (as well as logout) to ensure session identifiers are not reused.</strong>&amp;nbsp;This is necessary to prevent session hijacking. After the session has been invalidated, make a call to generate a new session identifier.</p>\n    </li>\n    <li>\n      <p />\n      <strong>Time-out sessions.&amp;nbsp;</strong>Set an expiration time for sessions. This helps minimize the threat of session hijacking by giving an attacker a smaller window of opportunity. Depending on your application, an appropriate timeout can be anywhere from 10 to 20 minutes.<p /></li>\n    <li>\n      <p>\n        <strong>Allow users to terminate their sessions.&amp;nbsp;</strong>Allowing users to invalidate their sessions reduces the risk of session being hijacked. Use&amp;nbsp;<i>result.discardingCookies</i>&amp;nbsp;to accomplish this.</p>\n    </li>\n    <li>\n      <p />\n      <strong>Ensure cookies are sent over encrypted channels.&amp;nbsp;</strong>Mark cookies sent over TLS as&amp;nbsp;<em>Secure</em>. Use the&amp;nbsp; <em><span style=\"font-style: normal;\">Enable Secure flag on the cookie, setting “application.session.secure=true” in the “application.conf” file</span></em>. Do not send session cookies over unencrypted channels as session hijacking is made much easier.</li>\n  </ol>\n  <p>\n    <strong>Note:</strong>&amp;nbsp;PCI DSS requirements state that sessions that are idle for 15 minutes should be locked automatically and require the user's password to unlock.</p>\n  <p />\n  <br />"
 }

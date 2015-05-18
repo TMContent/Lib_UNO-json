@@ -1,6 +1,6 @@
 {
   "id": "14f3d913-78ec-4ff5-99aa-56b32faa67c4",
-  "checksum": "0c6502e37252ce278fa506c8aea087c13929d047",
+  "checksum": "80b169919780bdd2a933dcaf371edd20a9859928",
   "words": {
     "40": [
       "ul",
@@ -510,7 +510,7 @@
       "ASP.NET 4.0",
       "Identify existing logging functionality. Look for libraries or classes that are designed specifically for logging. Make a list of functions used to generate log entries and document them.",
       "Centralize logging. If a dedicated logging library or class doesn't exist, design and write one.",
-      "Implement logging. Add code that records the following details in log entries:\r\n          \r\n            User identification Type of event Date and time stamp Success or failure indication Source of event Names or other identifiers of affected data or resources",
+      "Implement logging. Add code that records the following details in log entries:\n          \n            User identification Type of event Date and time stamp Success or failure indication Source of event Names or other identifiers of affected data or resources",
       "User identification",
       "Type of event",
       "Date and time stamp",
@@ -527,7 +527,7 @@
       "Implement logging. Add code that records the following details in log entries:"
     ],
     "ol": [
-      "Identify existing logging functionality. Look for libraries or classes that are designed specifically for logging. Make a list of functions used to generate log entries and document them.\r\n      \r\n        \r\n          Centralize logging. If a dedicated logging library or class doesn't exist, design and write one. \r\n        \r\n          \r\n            Implement logging. Add code that records the following details in log entries:\r\n          \r\n            User identification Type of event Date and time stamp Success or failure indication Source of event Names or other identifiers of affected data or resources"
+      "Identify existing logging functionality. Look for libraries or classes that are designed specifically for logging. Make a list of functions used to generate log entries and document them.\n      \n        \n          Centralize logging. If a dedicated logging library or class doesn't exist, design and write one. \n        \n          \n            Implement logging. Add code that records the following details in log entries:\n          \n            User identification Type of event Date and time stamp Success or failure indication Source of event Names or other identifiers of affected data or resources"
     ],
     "strong": [
       "Identify existing logging functionality.",
@@ -536,5 +536,5 @@
     ]
   },
   "links": [],
-  "html": "<h1>Applies To</h1>\r\n  <ul>\r\n    <li>ASP.NET 4.0</li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Write applications that include important details in log entries.</p>\r\n  <h1>Why</h1>\r\n  <p>Log event entries should include important details so that the contents of the logs are useful for forensics and system administration.</p>\r\n  <h1>How</h1>\r\n  <p>Perform the following actions to add code that logs important event details:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Identify existing logging functionality.</strong> Look for libraries or classes that are designed specifically for logging. Make a list of functions used to generate log entries and document them.</p>\r\n      <li>\r\n        <p>\r\n          <strong>Centralize logging.</strong> If a dedicated logging library or class doesn't exist, design and write one. </p>\r\n        <li>\r\n          <p>\r\n            <strong>Implement logging.</strong> Add code that records the following details in log entries:</p>\r\n          <ul>\r\n            <li>User identification <li>Type of event <li>Date and time stamp <li>Success or failure indication <li>Source of event <li>Names or other identifiers of affected data or resources</li></li></li></li></li></li>\r\n          </ul>\r\n        </li>\r\n      </li>\r\n    </li>\r\n  </ol>"
+  "html": "<h1>Applies To</h1>\n  <ul>\n    <li>ASP.NET 4.0</li>\n  </ul>\n  <h1>What to Do</h1>\n  <p>Write applications that include important details in log entries.</p>\n  <h1>Why</h1>\n  <p>Log event entries should include important details so that the contents of the logs are useful for forensics and system administration.</p>\n  <h1>How</h1>\n  <p>Perform the following actions to add code that logs important event details:</p>\n  <ol>\n    <li>\n      <p>\n        <strong>Identify existing logging functionality.</strong> Look for libraries or classes that are designed specifically for logging. Make a list of functions used to generate log entries and document them.</p>\n      <li>\n        <p>\n          <strong>Centralize logging.</strong> If a dedicated logging library or class doesn't exist, design and write one. </p>\n        <li>\n          <p>\n            <strong>Implement logging.</strong> Add code that records the following details in log entries:</p>\n          <ul>\n            <li>User identification <li>Type of event <li>Date and time stamp <li>Success or failure indication <li>Source of event <li>Names or other identifiers of affected data or resources</li></li></li></li></li></li>\n          </ul>\n        </li>\n      </li>\n    </li>\n  </ol>"
 }

@@ -1,6 +1,6 @@
 {
   "id": "ad57c433-709e-4958-985c-4fd6e69e81b8",
-  "checksum": "7b717276a9c9318586a9198bb406fe62557a0642",
+  "checksum": "e02f748c84c7439e7cd322869ac007951e1b407b",
   "words": {
     "description": [
       "h2"
@@ -335,7 +335,7 @@
     "management": [
       "p"
     ],
-    "ssl": [
+    "tls": [
       "p",
       "p"
     ],
@@ -424,7 +424,7 @@
     "p": [
       "Most web applications use cookies to keep track of session state. Some applications use other mechanisms to keep track of authenticated sessions. These custom authentication schemes are usually vulnerable to session hijacking. An attacker exploiting cookieless authentication schemes may gain elevated privileges by tampering with user-mutable parameters, or may hijack an authenticated session by intercepting it using some form of a man-in-the-middle attack.",
       "Using cookieless authentication often allows an attacker to hijack user sessions. Once the attacker has hijacked a user's session, he can do anything that the user is allowed to do by the application. This usually allows the attacker to access and modify the user's data. If the attacker hijacks an administrator's session, he may be able to take full control of the application.",
-      "To prevent this problem, use platform-provided session management, use SSL to protect authentication, set HTTP-Only and Secure flags on session cookies, and send session cookies only over SSL.",
+      "To prevent this problem, use platform-provided session management, use TLS to protect authentication, set HTTP-Only and Secure flags on session cookies, and send session cookies only over TLS.",
       "To check for adequate protection against this vulnerability, examine the authentication mechanism and determine whether the application uses session cookies to keep track of authenticated users."
     ],
     "h1": [
@@ -447,5 +447,5 @@
       "text": "ASP.NET Cookieless Authentication"
     }
   ],
-  "html": "<h2>Description</h2><p>Most web applications use cookies to keep track of session state. Some applications use other mechanisms to keep track of authenticated sessions. These custom authentication schemes are usually vulnerable to session hijacking. An attacker exploiting cookieless authentication schemes may gain elevated privileges by tampering with user-mutable parameters, or may hijack an authenticated session by intercepting it using some form of a man-in-the-middle attack. \n</p><h2>Impact</h2><p>Using cookieless authentication often allows an attacker to hijack user sessions. Once the attacker has hijacked a user's session, he can do anything that the user is allowed to do by the application. This usually allows the attacker to access and modify the user's data. If the attacker hijacks an administrator's session, he may be able to take full control of the application. \n</p><h1>Countermeasures</h1><p>To prevent this problem, use platform-provided session management, use SSL to protect authentication, set HTTP-Only and Secure flags on session cookies, and send session cookies only over SSL.\n</p><h1>Application Check</h1><p>To check for adequate protection against this vulnerability, examine the authentication mechanism and determine whether the application uses session cookies to keep track of authenticated users.\n</p><h2>Specific Technologies</h2><ul><li> <a href=\"ed436f22-7c9f-4f44-a17c-49cb425c4d65\">ASP.NET Cookieless Authentication</a></li></ul>"
+  "html": "<h2>Description</h2><p>Most web applications use cookies to keep track of session state. Some applications use other mechanisms to keep track of authenticated sessions. These custom authentication schemes are usually vulnerable to session hijacking. An attacker exploiting cookieless authentication schemes may gain elevated privileges by tampering with user-mutable parameters, or may hijack an authenticated session by intercepting it using some form of a man-in-the-middle attack. \n</p><h2>Impact</h2><p>Using cookieless authentication often allows an attacker to hijack user sessions. Once the attacker has hijacked a user's session, he can do anything that the user is allowed to do by the application. This usually allows the attacker to access and modify the user's data. If the attacker hijacks an administrator's session, he may be able to take full control of the application. \n</p><h1>Countermeasures</h1><p>To prevent this problem, use platform-provided session management, use TLS to protect authentication, set HTTP-Only and Secure flags on session cookies, and send session cookies only over TLS.\n</p><h1>Application Check</h1><p>To check for adequate protection against this vulnerability, examine the authentication mechanism and determine whether the application uses session cookies to keep track of authenticated users.\n</p><h2>Specific Technologies</h2><ul><li> <a href=\"ed436f22-7c9f-4f44-a17c-49cb425c4d65\">ASP.NET Cookieless Authentication</a></li></ul>"
 }

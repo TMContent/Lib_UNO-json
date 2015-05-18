@@ -1,6 +1,6 @@
 {
   "id": "ea9a93f3-cb2a-4143-99c9-8da6f4fe05a1",
-  "checksum": "46572f956c54ae7c533cc5706fc958ab2f3c1e9e",
+  "checksum": "eb8acb9de209b8f808544bc1691808ccacff433b",
   "words": {
     "description": [
       "h1"
@@ -168,6 +168,9 @@
     "guidance": [
       "p"
     ],
+    "sink]": [
+      "title"
+    ],
     "how": [
       "title"
     ],
@@ -201,5 +204,5 @@
     ]
   },
   "links": [],
-  "html": "<h1>Description</h1>\r\n  <p>To use Windows authentication, configure a SQL Server database for Windows authentication, and then use a connection string that contains either <b>\"Trusted_Connection=Yes\"</b> or <b>\"Integrated Security=SSPI\"</b>, as shown in the following code example. The two strings are equivalent and both result in Windows authentication. </p>\r\n  <pre>\"server=MySQL; <br />Integrated Security=SSPI; <br />database=Northwind\"\"server=MySQL; <br />Trusted_Connection=Yes; <br />database=Northwind\"</pre>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
+  "html": "<h1>Description</h1>\n  <p>To use Windows authentication, configure a SQL Server database for Windows authentication, and then use a connection string that contains either <b>\"Trusted_Connection=Yes\"</b> or <b>\"Integrated Security=SSPI\"</b>, as shown in the following code example. The two strings are equivalent and both result in Windows authentication. </p>\n  <pre>\"server=MySQL; <br />Integrated Security=SSPI; <br />database=Northwind\"\"server=MySQL; <br />Trusted_Connection=Yes; <br />database=Northwind\"</pre>\n  <hr />\n  <p>Adapted from Microsoft patterns &amp; practices guidance.</p>"
 }

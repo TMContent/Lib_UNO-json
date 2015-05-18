@@ -1,6 +1,6 @@
 {
   "id": "d33ff84b-32d4-4475-9abe-c6d5f880c8a0",
-  "checksum": "7366ba7fb0049905b88ab6fdf0a66760183d6a82",
+  "checksum": "1951b6ab2fb39e513dcc81fabed0a24f423d003b",
   "words": {
     "35": [
       "ul",
@@ -311,7 +311,7 @@
       "Additional Resources"
     ],
     "ul": [
-      "Microsoft® Windows Communication Foundation (WCF) 3.5 \r\nMicrosoft Visual Studio® 2008",
+      "Microsoft® Windows Communication Foundation (WCF) 3.5 \nMicrosoft Visual Studio® 2008",
       "For more information, see “How to: Audit Windows Communication Foundation Security Events” at http://msdn.microsoft.com/en-us/library/ms734737.aspx"
     ],
     "li": [
@@ -358,5 +358,5 @@
       "text": "http://msdn.microsoft.com/en-us/library/ms734737.aspx"
     }
   ],
-  "html": "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>Microsoft® Windows Communication Foundation (WCF) 3.5 \r\n<li>Microsoft Visual Studio® 2008</li></li>\r\n  </ul>\r\n  <h1>Description</h1>\r\n  <p>By default, WCF will ignore the audit failures and allow the service to continue running by setting the SuppressAuditFailure property to true. You can set this property to false which will turn off audit failure suppression, thereby throwing an exception when there has been an auditing failure.</p>\r\n  <p>Set the <strong>suppressAuditFailure</strong> property to false to turn off audit failure suppression:</p>\r\n  <pre>&lt;configuration&gt;<br />  &lt;system.serviceModel&gt;<br />    &lt;behaviors&gt;<br />      &lt;behavior&gt;<br />        &lt;serviceSecurityAudit<br />                  auditLogLocation=\"Application\"<br />                  suppressAuditFailure=\"false\"<br />                  serviceAuthorizationAuditLevel=\"Failure\"<br />                  messageAuthenticationAuditLevel=\"SuccessOrFailure\" /&gt; <br />      &lt;/behavior&gt;<br />    &lt;/behaviors&gt;<br />  &lt;/system.serviceModel&gt;<br />&lt;/configuration&gt;<br /></pre>\r\n  <h1>Additional Resources</h1>\r\n  <ul>\r\n    <li>For more information, see “How to: Audit Windows Communication Foundation Security Events” at <a href=\"http://msdn.microsoft.com/en-us/library/ms734737.aspx\">http://msdn.microsoft.com/en-us/library/ms734737.aspx</a></li>\r\n  </ul>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
+  "html": "<h1>Applies to</h1>\n  <ul>\n    <li>Microsoft® Windows Communication Foundation (WCF) 3.5 \n<li>Microsoft Visual Studio® 2008</li></li>\n  </ul>\n  <h1>Description</h1>\n  <p>By default, WCF will ignore the audit failures and allow the service to continue running by setting the SuppressAuditFailure property to true. You can set this property to false which will turn off audit failure suppression, thereby throwing an exception when there has been an auditing failure.</p>\n  <p>Set the <strong>suppressAuditFailure</strong> property to false to turn off audit failure suppression:</p>\n  <pre>&lt;configuration&gt;<br />  &lt;system.serviceModel&gt;<br />    &lt;behaviors&gt;<br />      &lt;behavior&gt;<br />        &lt;serviceSecurityAudit<br />                  auditLogLocation=\"Application\"<br />                  suppressAuditFailure=\"false\"<br />                  serviceAuthorizationAuditLevel=\"Failure\"<br />                  messageAuthenticationAuditLevel=\"SuccessOrFailure\" /&gt; <br />      &lt;/behavior&gt;<br />    &lt;/behaviors&gt;<br />  &lt;/system.serviceModel&gt;<br />&lt;/configuration&gt;<br /></pre>\n  <h1>Additional Resources</h1>\n  <ul>\n    <li>For more information, see “How to: Audit Windows Communication Foundation Security Events” at <a href=\"http://msdn.microsoft.com/en-us/library/ms734737.aspx\">http://msdn.microsoft.com/en-us/library/ms734737.aspx</a></li>\n  </ul>\n  <hr />\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
 }

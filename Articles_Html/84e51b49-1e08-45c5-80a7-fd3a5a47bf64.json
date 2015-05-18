@@ -1,6 +1,6 @@
 {
   "id": "84e51b49-1e08-45c5-80a7-fd3a5a47bf64",
-  "checksum": "3aac180be0650eb7c28c80db32eede2dc24f4371",
+  "checksum": "3236a3bd41df34a90d6cb81096c48638b175e558",
   "words": {
     "what": [
       "h2"
@@ -204,7 +204,7 @@
       "ul",
       "li"
     ],
-    "see\rhttp://cwe.mitre.org/data/definitions/79.html": [
+    "seehttp://cwe.mitre.org/data/definitions/79.html": [
       "ul",
       "li"
     ],
@@ -224,13 +224,13 @@
       "Additional Resources"
     ],
     "p": [
-      "Use an intermediate disclaimer page that provides the user with a clear warning that they are leaving your site. Implement a long timeout before the redirect occurs, or force the user to click on the link. Be careful to avoid XSS problems (CWE-79) when generating\r\n the disclaimer page."
+      "Use an intermediate disclaimer page that provides the user with a clear warning that they are leaving your site. Implement a long timeout before the redirect occurs, or force the user to click on the link. Be careful to avoid XSS problems (CWE-79) when generating\n the disclaimer page."
     ],
     "ul": [
-      "For more information about \"CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')\", please see\r\nhttp://cwe.mitre.org/data/definitions/79.html"
+      "For more information about \"CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')\", please see\nhttp://cwe.mitre.org/data/definitions/79.html"
     ],
     "li": [
-      "For more information about \"CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')\", please see\r\nhttp://cwe.mitre.org/data/definitions/79.html"
+      "For more information about \"CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')\", please see\nhttp://cwe.mitre.org/data/definitions/79.html"
     ],
     "a": [
       "http://cwe.mitre.org/data/definitions/79.html"
@@ -242,5 +242,5 @@
       "text": "http://cwe.mitre.org/data/definitions/79.html"
     }
   ],
-  "html": "<h2>What to Do</h2>\r\n  <p>Use an intermediate disclaimer page that provides the user with a clear warning that they are leaving your site. Implement a long timeout before the redirect occurs, or force the user to click on the link. Be careful to avoid XSS problems (CWE-79) when generating\r\n the disclaimer page.</p>\r\n  <h2>Additional Resources</h2>\r\n  <ul>\r\n    <li>For more information about \"CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')\", please see\r\n<a href=\"http://cwe.mitre.org/data/definitions/79.html\">http://cwe.mitre.org/data/definitions/79.html</a></li>\r\n  </ul>"
+  "html": "<h2>What to Do</h2>\n  <p>Use an intermediate disclaimer page that provides the user with a clear warning that they are leaving your site. Implement a long timeout before the redirect occurs, or force the user to click on the link. Be careful to avoid XSS problems (CWE-79) when generating\n the disclaimer page.</p>\n  <h2>Additional Resources</h2>\n  <ul>\n    <li>For more information about \"CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')\", please see\n<a href=\"http://cwe.mitre.org/data/definitions/79.html\">http://cwe.mitre.org/data/definitions/79.html</a></li>\n  </ul>"
 }

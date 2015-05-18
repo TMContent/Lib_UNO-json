@@ -1,6 +1,6 @@
 {
   "id": "a1fdf065-6bfb-4828-a3ba-9440eb63a00f",
-  "checksum": "649dfd2f392c21b580d3c9f95b66a4b8120c2474",
+  "checksum": "2213ec0bc75c4d006906d0ac3d26fd1888b2dffd",
   "words": {
     "description": [
       "h1"
@@ -84,7 +84,7 @@
     "disposed": [
       "p"
     ],
-    "of—regardless": [
+    "of&#8212regardless": [
       "p"
     ],
     "of": [
@@ -176,14 +176,13 @@
     "new": [
       "pre"
     ],
-    "sqlconnection\"...\");try{": [
+    "sqlconnection\"...\");try&#123;": [
       "pre"
     ],
     "connopen();": [
       "pre"
     ],
     "//": [
-      "pre",
       "pre",
       "pre",
       "pre",
@@ -238,7 +237,7 @@
     "long": [
       "pre"
     ],
-    "operations}finally{": [
+    "operations&#125;finally&#123;": [
       "pre"
     ],
     "if": [
@@ -247,7 +246,10 @@
     "conn.state==connectionstate.open)": [
       "pre"
     ],
-    "closed\t}": [
+    "&#9//": [
+      "pre"
+    ],
+    "closed&#9;&#125;": [
       "pre"
     ],
     "help": [
@@ -356,7 +358,7 @@
     "catchexception": [
       "pre"
     ],
-    "ex{...": [
+    "ex&#123;...": [
       "pre"
     ],
     "log": [
@@ -377,7 +379,7 @@
     "wid": [
       "pre"
     ],
-    "windowsidentitygetcurrent();...}": [
+    "windowsidentitygetcurrent();...&#125;&nbsp;": [
       "pre"
     ],
     "adapted": [
@@ -401,6 +403,9 @@
     "guidance": [
       "p"
     ],
+    "sink]": [
+      "title"
+    ],
     "how": [
       "title"
     ],
@@ -413,7 +418,7 @@
       "Description"
     ],
     "p": [
-      "Use structured exception-handling to avoid unhandled exceptions. Use finally blocks to ensure that resources are released, files are closed, and objects are disposed of—regardless of whether an exception occurs. The following code example shows to use a finally block to ensure that a database connection is closed promptly.",
+      "Use structured exception-handling to avoid unhandled exceptions. Use finally blocks to ensure that resources are released, files are closed, and objects are disposed of&#8212;regardless of whether an exception occurs. The following code example shows to use a finally block to ensure that a database connection is closed promptly.",
       "To help diagnose security issues, consider adding a catch block for the SecurityException class. SecurityException has been enhanced to provide more information in case of a failed permission demand. Additionally, to diagnose role-based access or identity problems, consider logging the identity at the time of the exception, as shown in the following code example.",
       "Adapted from Microsoft patterns & practices guidance."
     ],
@@ -425,8 +430,8 @@
       "SecurityException"
     ],
     "pre": [
-      "using System.Data.SqlClient;using System.Security;SqlConnection conn = new SqlConnection(\"...\");try{    conn.Open();    // Do some operation that might cause an exception.    // Calling Close as early as possible.    conn.Close();    // ... other potentially long operations.}finally{    if (conn.State==ConnectionState.Open)        conn.Close();  \t// ensure that the connection is closed.\t}",
-      "catch(Exception ex){...    // Log current identity together with other exception information.    WindowsIdentity wid = WindowsIdentity.GetCurrent();...}"
+      "using System.Data.SqlClient;using System.Security;SqlConnection conn = new SqlConnection(\"...\");try&#123;    conn.Open();    // Do some operation that might cause an exception.    // Calling Close as early as possible.    conn.Close();    // ... other potentially long operations.&#125;finally&#123;    if (conn.State==ConnectionState.Open)        conn.Close();  &#9;// ensure that the connection is closed.&#9;&#125;",
+      "catch(Exception ex)&#123;...    // Log current identity together with other exception information.    WindowsIdentity wid = WindowsIdentity.GetCurrent();...&#125;&nbsp;"
     ],
     "br": [
       "",
@@ -452,5 +457,5 @@
     ]
   },
   "links": [],
-  "html": "<h1>Description</h1>\r\n  <p>Use structured exception-handling to avoid unhandled exceptions. Use <b>finally</b> blocks to ensure that resources are released, files are closed, and objects are disposed of&#8212;regardless of whether an exception occurs. The following code example shows to use a <b>finally</b> block to ensure that a database connection is closed promptly. </p>\r\n  <pre>using System.Data.SqlClient;<br />using System.Security;<br />SqlConnection conn = new SqlConnection(\"...\");<br />try&#123;<br />    conn.Open();<br />    // Do some operation that might cause an exception.<br />    // Calling Close as early as possible.<br />    conn.Close();<br />    // ... other potentially long operations.<br />&#125;<br />finally&#123;<br />    if (conn.State==ConnectionState.Open)<br />        conn.Close();  <br />&#9;// ensure that the connection is closed.<br />&#9;&#125;  </pre>\r\n  <p>To help diagnose security issues, consider adding a <b>catch</b> block for the <b>SecurityException</b> class. <b>SecurityException</b> has been enhanced to provide more information in case of a failed permission demand. Additionally, to diagnose role-based access or identity problems, consider logging the identity at the time of the exception, as shown in the following code example. </p>\r\n  <pre>catch(Exception ex)&#123;...<br />    // Log current identity together with other exception information.<br />    WindowsIdentity wid = WindowsIdentity.GetCurrent();...<br />&#125;&nbsp;</pre>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
+  "html": "<h1>Description</h1>\n  <p>Use structured exception-handling to avoid unhandled exceptions. Use <b>finally</b> blocks to ensure that resources are released, files are closed, and objects are disposed of&amp;#8212;regardless of whether an exception occurs. The following code example shows to use a <b>finally</b> block to ensure that a database connection is closed promptly. </p>\n  <pre>using System.Data.SqlClient;<br />using System.Security;<br />SqlConnection conn = new SqlConnection(\"...\");<br />try&amp;#123;<br />    conn.Open();<br />    // Do some operation that might cause an exception.<br />    // Calling Close as early as possible.<br />    conn.Close();<br />    // ... other potentially long operations.<br />&amp;#125;<br />finally&amp;#123;<br />    if (conn.State==ConnectionState.Open)<br />        conn.Close();  <br />&amp;#9;// ensure that the connection is closed.<br />&amp;#9;&amp;#125;  </pre>\n  <p>To help diagnose security issues, consider adding a <b>catch</b> block for the <b>SecurityException</b> class. <b>SecurityException</b> has been enhanced to provide more information in case of a failed permission demand. Additionally, to diagnose role-based access or identity problems, consider logging the identity at the time of the exception, as shown in the following code example. </p>\n  <pre>catch(Exception ex)&amp;#123;...<br />    // Log current identity together with other exception information.<br />    WindowsIdentity wid = WindowsIdentity.GetCurrent();...<br />&amp;#125;&amp;nbsp;</pre>\n  <hr />\n  <p>Adapted from Microsoft patterns &amp; practices guidance.</p>"
 }

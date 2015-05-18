@@ -1,6 +1,6 @@
 {
   "id": "24e081c4-0c62-4c93-a91a-42a96892d74d",
-  "checksum": "0237e4f7ba2d5d4b03cb0673602df1cb9f433796",
+  "checksum": "e333c98ed881448a07fe942dd710cd5506febf33",
   "words": {
     "what": [
       "h1"
@@ -42,7 +42,6 @@
       "title"
     ],
     "caching": [
-      "p",
       "p",
       "p",
       "p",
@@ -109,8 +108,6 @@
       "p"
     ],
     "performance": [
-      "p",
-      "p",
       "p",
       "p"
     ],
@@ -182,6 +179,10 @@
       "p"
     ],
     "improve": [
+      "p"
+    ],
+    "performance&nbsp;": [
+      "p",
       "p"
     ],
     "cookies": [
@@ -271,6 +272,9 @@
       "p"
     ],
     "consider": [
+      "p"
+    ],
+    "caching&nbsp;": [
       "p"
     ],
     "as": [
@@ -380,7 +384,7 @@
     "enabled=\"true\"": [
       "pre"
     ],
-    "cacherolesincookie=\"true\"": [
+    "&#9cacherolesincookie=\"true\"": [
       "pre"
     ],
     "..": [
@@ -445,7 +449,7 @@
     "validated": [
       "p"
     ],
-    "names": [
+    "names&nbsp;": [
       "p"
     ],
     "information": [
@@ -481,7 +485,7 @@
     "additional": [
       "p"
     ],
-    "required": [
+    "required&nbsp;": [
       "p"
     ],
     "referred": [
@@ -516,6 +520,9 @@
     ],
     "guidance": [
       "p"
+    ],
+    "sink]": [
+      "title"
     ]
   },
   "tags": {
@@ -527,10 +534,10 @@
     ],
     "p": [
       "Use role caching if role store lookups are too costly.",
-      "If the performance overhead of role lookup is too great, perhaps because of slow data access or a large number of roles, role caching offers a way to improve performance.  If role cookies are properly protected, this change does not directly weaken system security, although it does increase the application's attack surface.",
-      "Applications which are running into performance problems related to role store lookups should consider role caching.  As it increases the attack surface of the application and requires some care to ensure that vulnerabilities are not introduced, it should only be used when needed.",
+      "If the performance overhead of role lookup is too great, perhaps because of slow data access or a large number of roles, role caching offers a way to improve performance.&nbsp; If role cookies are properly protected, this change does not directly weaken system security, although it does increase the application's attack surface.",
+      "Applications which are running into performance problems related to role store lookups should consider role caching.&nbsp; As it increases the attack surface of the application and requires some care to ensure that vulnerabilities are not introduced, it should only be used when needed.",
       "Enable role caching in the roles cookie by setting the cacheRolesInCookie attribute to true in the Web.config file as shown here.",
-      "When role checks are performed, the roles cookie is checked before calling the role provider to check the list of roles within the data source. This improves performance.  The cookie is dynamically updated to cache the most recently validated role names.  If the role information for a user is too long to store in a cookie, ASP.NET stores only the most recently used role information in the cookie and then it looks up additional role information in the data source as required.  The most recently referred to roles end up being cached in the cookie.",
+      "When role checks are performed, the roles cookie is checked before calling the role provider to check the list of roles within the data source. This improves performance.&nbsp; The cookie is dynamically updated to cache the most recently validated role names.&nbsp; If the role information for a user is too long to store in a cookie, ASP.NET stores only the most recently used role information in the cookie and then it looks up additional role information in the data source as required.&nbsp; The most recently referred to roles end up being cached in the cookie.",
       "Adapted from Microsoft patterns & practices guidance."
     ],
     "b": [
@@ -538,7 +545,7 @@
       "true"
     ],
     "pre": [
-      "<roleManager enabled=\"true\"             \tcacheRolesInCookie=\"true\"      ... ></roleManager>"
+      "<roleManager enabled=\"true\"             &#9;cacheRolesInCookie=\"true\"      ... ></roleManager>"
     ],
     "br": [
       "",
@@ -549,5 +556,5 @@
     ]
   },
   "links": [],
-  "html": "<h1>What to Do</h1>\r\n  <p>Use role caching if role store lookups are too costly. </p>\r\n  <h1>Why</h1>\r\n  <p>If the performance overhead of role lookup is too great, perhaps because of slow data access or a large number of roles, role caching offers a way to improve performance.&nbsp; If role cookies are properly protected, this change does not directly weaken system security, although it does increase the application's attack surface. </p>\r\n  <h1>When</h1>\r\n  <p>Applications which are running into performance problems related to role store lookups should consider role caching.&nbsp; As it increases the attack surface of the application and requires some care to ensure that vulnerabilities are not introduced, it should only be used when needed. </p>\r\n  <h1>How</h1>\r\n  <p>Enable role caching in the roles cookie by setting the <b>cacheRolesInCookie</b> attribute to <b>true</b> in the Web.config file as shown here. </p>\r\n  <pre>&lt;roleManager enabled=\"true\"             <br />&#9;cacheRolesInCookie=\"true\"      ... &gt;<br />&lt;/roleManager&gt;</pre>\r\n  <p>When role checks are performed, the roles cookie is checked before calling the role provider to check the list of roles within the data source. This improves performance.&nbsp; The cookie is dynamically updated to cache the most recently validated role names.&nbsp; If the role information for a user is too long to store in a cookie, ASP.NET stores only the most recently used role information in the cookie and then it looks up additional role information in the data source as required.&nbsp; The most recently referred to roles end up being cached in the cookie. </p>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance. </p>"
+  "html": "<h1>What to Do</h1>\n  <p>Use role caching if role store lookups are too costly. </p>\n  <h1>Why</h1>\n  <p>If the performance overhead of role lookup is too great, perhaps because of slow data access or a large number of roles, role caching offers a way to improve performance.&amp;nbsp; If role cookies are properly protected, this change does not directly weaken system security, although it does increase the application's attack surface. </p>\n  <h1>When</h1>\n  <p>Applications which are running into performance problems related to role store lookups should consider role caching.&amp;nbsp; As it increases the attack surface of the application and requires some care to ensure that vulnerabilities are not introduced, it should only be used when needed. </p>\n  <h1>How</h1>\n  <p>Enable role caching in the roles cookie by setting the <b>cacheRolesInCookie</b> attribute to <b>true</b> in the Web.config file as shown here. </p>\n  <pre>&lt;roleManager enabled=\"true\"             <br />&amp;#9;cacheRolesInCookie=\"true\"      ... &gt;<br />&lt;/roleManager&gt;</pre>\n  <p>When role checks are performed, the roles cookie is checked before calling the role provider to check the list of roles within the data source. This improves performance.&amp;nbsp; The cookie is dynamically updated to cache the most recently validated role names.&amp;nbsp; If the role information for a user is too long to store in a cookie, ASP.NET stores only the most recently used role information in the cookie and then it looks up additional role information in the data source as required.&amp;nbsp; The most recently referred to roles end up being cached in the cookie. </p>\n  <hr />\n  <p>Adapted from Microsoft patterns &amp; practices guidance. </p>"
 }

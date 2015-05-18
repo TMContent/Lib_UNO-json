@@ -1,6 +1,6 @@
 {
   "id": "d65b3fe0-c5b5-4712-ad60-28802d86cc1d",
-  "checksum": "1b55e3036d9444167af2a7ed52d61826d3f8316b",
+  "checksum": "f61aa4c97b163b446755acbd2301335ad4e61178",
   "words": {
     "what": [
       "h2",
@@ -359,7 +359,7 @@
       "ul",
       "li"
     ],
-    "see\rhttp://cwe.mitre.org/data/definitions/88.html": [
+    "seehttp://cwe.mitre.org/data/definitions/88.html": [
       "ul",
       "li"
     ],
@@ -381,17 +381,17 @@
     "p": [
       "Avoid passing user input to external processes. If user input must be passed to external processes, filter out all special characters from user input.",
       "Passing user input to external processes increases the risk of command injection vulnerabilities. This risk may be partially mitigated by removing any special characters from user input before passing it to external processes.",
-      "If you need to use dynamically-generated query strings or commands in spite of the risk, properly quote arguments and escape any special characters within those arguments. The most conservative approach is to escape or filter all characters that do not pass\r\n an extremely strict whitelist (such as everything that is not alphanumeric or white space). If some special characters are still needed, such as white space, wrap each argument in quotes after the escaping/filtering step. Be careful of argument injection (CWE-88)."
+      "If you need to use dynamically-generated query strings or commands in spite of the risk, properly quote arguments and escape any special characters within those arguments. The most conservative approach is to escape or filter all characters that do not pass\n an extremely strict whitelist (such as everything that is not alphanumeric or white space). If some special characters are still needed, such as white space, wrap each argument in quotes after the escaping/filtering step. Be careful of argument injection (CWE-88)."
     ],
     "h1": [
       "Why",
       "Additional Resources"
     ],
     "ul": [
-      "For more information about \"CWE-88: Argument Injection or Modification\", please see\r\nhttp://cwe.mitre.org/data/definitions/88.html"
+      "For more information about \"CWE-88: Argument Injection or Modification\", please see\nhttp://cwe.mitre.org/data/definitions/88.html"
     ],
     "li": [
-      "For more information about \"CWE-88: Argument Injection or Modification\", please see\r\nhttp://cwe.mitre.org/data/definitions/88.html"
+      "For more information about \"CWE-88: Argument Injection or Modification\", please see\nhttp://cwe.mitre.org/data/definitions/88.html"
     ],
     "a": [
       "http://cwe.mitre.org/data/definitions/88.html"
@@ -403,5 +403,5 @@
       "text": "http://cwe.mitre.org/data/definitions/88.html"
     }
   ],
-  "html": "<h2>What to Do</h2>\r\n  <p>Avoid passing user input to external processes. If user input must be passed to external processes, filter out all special characters from user input.</p>\r\n  <h1>Why</h1>\r\n  <p>Passing user input to external processes increases the risk of command injection vulnerabilities. This risk may be partially mitigated by removing any special characters from user input before passing it to external processes.</p>\r\n  <h2>What to Do</h2>\r\n  <p>If you need to use dynamically-generated query strings or commands in spite of the risk, properly quote arguments and escape any special characters within those arguments. The most conservative approach is to escape or filter all characters that do not pass\r\n an extremely strict whitelist (such as everything that is not alphanumeric or white space). If some special characters are still needed, such as white space, wrap each argument in quotes after the escaping/filtering step. Be careful of argument injection (CWE-88).</p>\r\n  <h1>Additional Resources</h1>\r\n  <ul>\r\n    <li>For more information about \"CWE-88: Argument Injection or Modification\", please see\r\n<a href=\"http://cwe.mitre.org/data/definitions/88.html\">http://cwe.mitre.org/data/definitions/88.html</a></li>\r\n  </ul>"
+  "html": "<h2>What to Do</h2>\n  <p>Avoid passing user input to external processes. If user input must be passed to external processes, filter out all special characters from user input.</p>\n  <h1>Why</h1>\n  <p>Passing user input to external processes increases the risk of command injection vulnerabilities. This risk may be partially mitigated by removing any special characters from user input before passing it to external processes.</p>\n  <h2>What to Do</h2>\n  <p>If you need to use dynamically-generated query strings or commands in spite of the risk, properly quote arguments and escape any special characters within those arguments. The most conservative approach is to escape or filter all characters that do not pass\n an extremely strict whitelist (such as everything that is not alphanumeric or white space). If some special characters are still needed, such as white space, wrap each argument in quotes after the escaping/filtering step. Be careful of argument injection (CWE-88).</p>\n  <h1>Additional Resources</h1>\n  <ul>\n    <li>For more information about \"CWE-88: Argument Injection or Modification\", please see\n<a href=\"http://cwe.mitre.org/data/definitions/88.html\">http://cwe.mitre.org/data/definitions/88.html</a></li>\n  </ul>"
 }

@@ -1,39 +1,21 @@
 {
   "id": "1d8976fa-5978-4a5a-847f-c25710bfe31c",
-  "checksum": "4db92669b8bcc3baadbce137f31a2792187197c2",
+  "checksum": "ce3683420e61d7ee89a04a13e17b2291e373c1f6",
   "words": {
-    "40": [
-      "ul",
-      "li"
-    ],
-    "applies": [
+    "what": [
       "h1"
     ],
     "to": [
       "h1",
-      "h1",
       "p",
       "p",
       "p",
       "ol",
-      "li",
-      "p"
-    ],
-    "aspnet": [
-      "ul",
-      "li",
       "ol",
-      "ol",
-      "ol",
-      "li",
-      "p",
       "li",
       "p",
       "li",
       "p"
-    ],
-    "what": [
-      "h1"
     ],
     "do": [
       "h1",
@@ -58,6 +40,8 @@
       "ol",
       "ol",
       "ol",
+      "ol",
+      "ol",
       "li",
       "li",
       "li",
@@ -68,6 +52,8 @@
       "li",
       "li",
       "li",
+      "li",
+      "p",
       "p",
       "p",
       "p",
@@ -77,6 +63,8 @@
       "li",
       "li",
       "li",
+      "li",
+      "p",
       "p",
       "p",
       "p",
@@ -334,9 +322,12 @@
     ],
     "be": [
       "ol",
+      "ol",
       "li",
       "p",
-      "strong"
+      "strong",
+      "li",
+      "p"
     ],
     "sent": [
       "ol",
@@ -373,6 +364,9 @@
     ],
     "used": [
       "ol",
+      "ol",
+      "li",
+      "p",
       "li",
       "p"
     ],
@@ -382,6 +376,17 @@
       "li",
       "li",
       "p",
+      "p"
+    ],
+    "aspnet": [
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "p",
+      "li",
+      "p",
+      "li",
       "p"
     ],
     "default": [
@@ -594,9 +599,12 @@
     "and": [
       "ol",
       "ol",
+      "ol",
       "li",
       "p",
       "li",
+      "li",
+      "p",
       "p"
     ],
     "select": [
@@ -619,7 +627,7 @@
       "li",
       "p"
     ],
-    "the \"https\"": [
+    "\"https\"": [
       "ol",
       "li",
       "p"
@@ -629,7 +637,7 @@
       "li",
       "p"
     ],
-    "ssl": [
+    "tls": [
       "ol",
       "ol",
       "ol",
@@ -661,6 +669,14 @@
       "li",
       "p"
     ],
+    "ssl": [
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
+      "p"
+    ],
     "icon": [
       "ol",
       "li",
@@ -677,6 +693,21 @@
       "p"
     ],
     "folder": [
+      "ol",
+      "li",
+      "p"
+    ],
+    "terms": [
+      "ol",
+      "li",
+      "p"
+    ],
+    "practically": [
+      "ol",
+      "li",
+      "p"
+    ],
+    "interchangeable.": [
       "ol",
       "li",
       "p"
@@ -927,10 +958,19 @@
       "li",
       "p"
     ],
-    "at http//msdn.microsoft.com/en-us/library/system.web.sessionstate.httpsessionstate.sessionid.aspx": [
+    "at": [
+      "ul",
       "ul",
       "li",
+      "p",
+      "li",
       "p"
+    ],
+    "http//msdn.microsoft.com/en-us/library/system.web.sessionstate.httpsessionstate.sessionid.aspx": [
+      "ul",
+      "li",
+      "p",
+      "a"
     ],
     "\"session": [
       "ul",
@@ -947,40 +987,20 @@
       "li",
       "p"
     ],
-    "at http//www.owasp.org/index.php/session_management#protect_session_identifiers": [
+    "http//www.owasp.org/index.php/session_management#protect_session_identifiers": [
       "ul",
       "li",
-      "p"
-    ],
-    "http//msdn.microsoft.com/en-us/library/system.web.sessionstate.httpsessionstate.sessionid.aspx": [
-      "a"
-    ],
-    "http//www.owasp.org/index.php/session_management#protect_session_identifiers": [
+      "p",
       "a"
     ]
   },
   "tags": {
     "h1": [
-      "Applies To",
       "What to Do",
       "Why",
       "When",
       "How",
       "Additional Resources"
-    ],
-    "ul": [
-      "ASP.NET 4.0",
-      "For more information about the SessionID property, please see \"HttpSessionState.SessionID Property\" at http://msdn.microsoft.com/en-us/library/system.web.sessionstate.httpsessionstate.sessionid.aspx\r\n      \r\n        For more information about session management, please see \"Session Management - OWASP\" at http://www.owasp.org/index.php/Session_Management#Protect_Session_Identifiers"
-    ],
-    "li": [
-      "ASP.NET 4.0",
-      "The session IDs should be sent in non-persistent cookies. This is the setting used by ASP.NET by default. Review the application design to make sure that this default has not been changed.",
-      "Find all pages that use session IDs. Make a list of all pages that use ASP.NET session management functions.",
-      "Enable a HTTPS binding for the site. Start the \"Internet Information Services (IIS) Manager\". Right-click on the site and select \"Edit bindings...\". Add a binding of the \"https\" type.",
-      "Enable SSL on all pages that use session IDs. Start the \"Internet Information Services (IIS) Manager\". Navigate the folders with pages that use ASP.NET session management. Double-click on the SSL icon in the right pane and enable SSL for the folder.",
-      "Mark session cookies as secure. Marking session cookies as secure assures that they are only sent over HTTPS connections.\r\n              if (Response.Cookies.Count > 0){    foreach (string cookie in Response.Cookies.AllKeys)    {        if (cookie == FormsAuthentication.FormsCookieName)        {             Response.Cookies[cookie].Secure = true;        }        else if (cookie == “ASP.NET_SessionId”){             Response.Cookies[cookie].Secure = true;        }    }}",
-      "For more information about the SessionID property, please see \"HttpSessionState.SessionID Property\" at http://msdn.microsoft.com/en-us/library/system.web.sessionstate.httpsessionstate.sessionid.aspx",
-      "For more information about session management, please see \"Session Management - OWASP\" at http://www.owasp.org/index.php/Session_Management#Protect_Session_Identifiers"
     ],
     "p": [
       "Protect the cookies that contain the session IDs.",
@@ -989,20 +1009,29 @@
       "To prevent disclosure of session IDs:",
       "The session IDs should be sent in non-persistent cookies. This is the setting used by ASP.NET by default. Review the application design to make sure that this default has not been changed.",
       "Find all pages that use session IDs. Make a list of all pages that use ASP.NET session management functions.",
-      "Enable a HTTPS binding for the site. Start the \"Internet Information Services (IIS) Manager\". Right-click on the site and select \"Edit bindings...\". Add a binding of the \"https\" type.",
-      "Enable SSL on all pages that use session IDs. Start the \"Internet Information Services (IIS) Manager\". Navigate the folders with pages that use ASP.NET session management. Double-click on the SSL icon in the right pane and enable SSL for the folder.",
+      "Enable a HTTPS binding for the site. Start the \"Internet Information Services (IIS) Manager\". Right-click on the site and select \"Edit bindings...\". Add a binding of the \"https\" type.",
+      "Enable TLS on all pages that use session IDs. Start the \"Internet Information Services (IIS) Manager\". Navigate the folders with pages that use ASP.NET session management. Double-click on the SSL icon in the right pane and enable TLS for the folder (the terms SSL and TLS used to be practically interchangeable).",
       "Mark session cookies as secure. Marking session cookies as secure assures that they are only sent over HTTPS connections.",
-      "For more information about the SessionID property, please see \"HttpSessionState.SessionID Property\" at http://msdn.microsoft.com/en-us/library/system.web.sessionstate.httpsessionstate.sessionid.aspx",
-      "For more information about session management, please see \"Session Management - OWASP\" at http://www.owasp.org/index.php/Session_Management#Protect_Session_Identifiers"
+      "For more information about the SessionID property, please see \"HttpSessionState.SessionID Property\" at http://msdn.microsoft.com/en-us/library/system.web.sessionstate.httpsessionstate.sessionid.aspx",
+      "For more information about session management, please see \"Session Management - OWASP\" at http://www.owasp.org/index.php/Session_Management#Protect_Session_Identifiers"
     ],
     "ol": [
-      "The session IDs should be sent in non-persistent cookies. This is the setting used by ASP.NET by default. Review the application design to make sure that this default has not been changed.\r\n      \r\n        \r\n          Find all pages that use session IDs. Make a list of all pages that use ASP.NET session management functions.\r\n        \r\n          \r\n            Enable a HTTPS binding for the site. Start the \"Internet Information Services (IIS) Manager\". Right-click on the site and select \"Edit bindings...\". Add a binding of the \"https\" type.\r\n          \r\n            \r\n              Enable SSL on all pages that use session IDs. Start the \"Internet Information Services (IIS) Manager\". Navigate the folders with pages that use ASP.NET session management. Double-click on the SSL icon in the right pane and enable SSL for the folder. \r\n            \r\n              \r\n                Mark session cookies as secure. Marking session cookies as secure assures that they are only sent over HTTPS connections.\r\n              if (Response.Cookies.Count > 0){    foreach (string cookie in Response.Cookies.AllKeys)    {        if (cookie == FormsAuthentication.FormsCookieName)        {             Response.Cookies[cookie].Secure = true;        }        else if (cookie == “ASP.NET_SessionId”){             Response.Cookies[cookie].Secure = true;        }    }}"
+      "The session IDs should be sent in non-persistent cookies. This is the setting used by ASP.NET by default. Review the application design to make sure that this default has not been changed.\n      \n        \n          Find all pages that use session IDs. Make a list of all pages that use ASP.NET session management functions.\n        \n          \n            Enable a HTTPS binding for the site. Start the \"Internet Information Services (IIS) Manager\". Right-click on the site and select \"Edit bindings...\". Add a binding of the \"https\" type.\n          \n            \n              Enable TLS on all pages that use session IDs. Start the \"Internet Information Services (IIS) Manager\". Navigate the folders with pages that use ASP.NET session management. Double-click on the SSL icon in the right pane and enable TLS for the folder (the terms SSL and TLS used to be practically interchangeable). \n            \n              \n                Mark session cookies as secure. Marking session cookies as secure assures that they are only sent over HTTPS connections.\n              if (Response.Cookies.Count > 0){    foreach (string cookie in Response.Cookies.AllKeys)    {        if (cookie == FormsAuthentication.FormsCookieName)        {             Response.Cookies[cookie].Secure = true;        }        else if (cookie == “ASP.NET_SessionId”){             Response.Cookies[cookie].Secure = true;        }    }}"
+    ],
+    "li": [
+      "The session IDs should be sent in non-persistent cookies. This is the setting used by ASP.NET by default. Review the application design to make sure that this default has not been changed.",
+      "Find all pages that use session IDs. Make a list of all pages that use ASP.NET session management functions.",
+      "Enable a HTTPS binding for the site. Start the \"Internet Information Services (IIS) Manager\". Right-click on the site and select \"Edit bindings...\". Add a binding of the \"https\" type.",
+      "Enable TLS on all pages that use session IDs. Start the \"Internet Information Services (IIS) Manager\". Navigate the folders with pages that use ASP.NET session management. Double-click on the SSL icon in the right pane and enable TLS for the folder (the terms SSL and TLS used to be practically interchangeable).",
+      "Mark session cookies as secure. Marking session cookies as secure assures that they are only sent over HTTPS connections.\n              if (Response.Cookies.Count > 0){    foreach (string cookie in Response.Cookies.AllKeys)    {        if (cookie == FormsAuthentication.FormsCookieName)        {             Response.Cookies[cookie].Secure = true;        }        else if (cookie == “ASP.NET_SessionId”){             Response.Cookies[cookie].Secure = true;        }    }}",
+      "For more information about the SessionID property, please see \"HttpSessionState.SessionID Property\" at http://msdn.microsoft.com/en-us/library/system.web.sessionstate.httpsessionstate.sessionid.aspx",
+      "For more information about session management, please see \"Session Management - OWASP\" at http://www.owasp.org/index.php/Session_Management#Protect_Session_Identifiers"
     ],
     "strong": [
       "The session IDs should be sent in non-persistent cookies.",
       "Find all pages that use session IDs.",
       "Enable a HTTPS binding for the site.",
-      "Enable SSL on all pages that use session IDs.",
+      "Enable TLS on all pages that use session IDs.",
       "Mark session cookies as secure."
     ],
     "em": [
@@ -1012,7 +1041,7 @@
       "Internet Information Services (IIS) Manager"
     ],
     "pre": [
-      "if (Response.Cookies.Count > 0){    foreach (string cookie in Response.Cookies.AllKeys)    {        if (cookie == FormsAuthentication.FormsCookieName)        {             Response.Cookies[cookie].Secure = true;        }        else if (cookie == “ASP.NET_SessionId”){             Response.Cookies[cookie].Secure = true;        }    }}"
+      "if (Response.Cookies.Count > 0){    foreach (string cookie in Response.Cookies.AllKeys)    {        if (cookie == FormsAuthentication.FormsCookieName)        {             Response.Cookies[cookie].Secure = true;        }        else if (cookie == “ASP.NET_SessionId”){             Response.Cookies[cookie].Secure = true;        }    }}"
     ],
     "br": [
       "",
@@ -1027,6 +1056,9 @@
       "",
       "",
       ""
+    ],
+    "ul": [
+      "For more information about the SessionID property, please see \"HttpSessionState.SessionID Property\" at http://msdn.microsoft.com/en-us/library/system.web.sessionstate.httpsessionstate.sessionid.aspx\n      \n        For more information about session management, please see \"Session Management - OWASP\" at http://www.owasp.org/index.php/Session_Management#Protect_Session_Identifiers"
     ],
     "a": [
       "http://msdn.microsoft.com/en-us/library/system.web.sessionstate.httpsessionstate.sessionid.aspx",
@@ -1043,5 +1075,5 @@
       "text": "http://www.owasp.org/index.php/Session_Management#Protect_Session_Identifiers"
     }
   ],
-  "html": "<h1>Applies To</h1>\r\n  <ul>\r\n    <li>ASP.NET 4.0</li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Protect the cookies that contain the session IDs.</p>\r\n  <h1>Why</h1>\r\n  <p>Do not disclose session IDs to make it harder for an attacker to compromise a user's session.</p>\r\n  <h1>When</h1>\r\n  <p>Protect session IDs in all web applications that use authentication.</p>\r\n  <h1>How</h1>\r\n  <p>To prevent disclosure of session IDs:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>The session IDs should be sent in non-persistent cookies.</strong> This is the setting used by ASP.NET by default. Review the application design to make sure that this default has not been changed.</p>\r\n      <li>\r\n        <p>\r\n          <strong>Find all pages that use session IDs.</strong> Make a list of all pages that use ASP.NET session management functions.</p>\r\n        <li>\r\n          <p>\r\n            <strong>Enable a HTTPS binding for the site.</strong> Start the \"<em>Internet Information Services (IIS) Manager</em>\". Right-click on the site and select \"<em>Edit bindings...</em>\". Add a binding of the&nbsp;\"<em>https</em>\" type.</p>\r\n          <li>\r\n            <p>\r\n              <strong>Enable SSL on all pages that use session IDs.</strong> Start the \"<em>Internet Information Services (IIS) Manager</em>\". Navigate the folders with pages that use ASP.NET session management. Double-click on the SSL icon in the right pane and enable SSL for the folder. </p>\r\n            <li>\r\n              <p>\r\n                <strong>Mark session cookies as secure.</strong> Marking session cookies as secure assures that they are only sent over HTTPS connections.</p>\r\n              <pre>if (Response.Cookies.Count &gt; 0)<br />&#123;<br />&nbsp;&nbsp;&nbsp; foreach (string cookie in Response.Cookies.AllKeys)<br />&nbsp;&nbsp;&nbsp; &#123;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (cookie == FormsAuthentication.FormsCookieName)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#123;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Response.Cookies&#91;cookie&#93;.Secure = true;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#125;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; else if (cookie == &#8220;ASP.NET_SessionId&#8221;)&#123;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Response.Cookies&#91;cookie&#93;.Secure = true;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#125;<br />&nbsp;&nbsp;&nbsp; &#125;<br />&#125;</pre>\r\n            </li>\r\n          </li>\r\n        </li>\r\n      </li>\r\n    </li>\r\n  </ol>\r\n  <h1>Additional Resources</h1>\r\n  <ul>\r\n    <li>\r\n      <p>For more information about the SessionID property, please see \"HttpSessionState.SessionID Property\" at&nbsp;<a href=\"http://msdn.microsoft.com/en-us/library/system.web.sessionstate.httpsessionstate.sessionid.aspx\">http://msdn.microsoft.com/en-us/library/system.web.sessionstate.httpsessionstate.sessionid.aspx</a></p>\r\n      <li>\r\n        <p>For more information about session management, please see \"Session Management - OWASP\" at&nbsp;<a href=\"http://www.owasp.org/index.php/Session_Management#Protect_Session_Identifiers\">http://www.owasp.org/index.php/Session_Management#Protect_Session_Identifiers</a></p>\r\n      </li>\r\n    </li>\r\n  </ul>"
+  "html": "<h1>What to Do</h1>\n  <p>Protect the cookies that contain the session IDs.</p>\n  <h1>Why</h1>\n  <p>Do not disclose session IDs to make it harder for an attacker to compromise a user's session.</p>\n  <h1>When</h1>\n  <p>Protect session IDs in all web applications that use authentication.</p>\n  <h1>How</h1>\n  <p>To prevent disclosure of session IDs:</p>\n  <ol>\n    <li>\n      <p>\n        <strong>The session IDs should be sent in non-persistent cookies.</strong> This is the setting used by ASP.NET by default. Review the application design to make sure that this default has not been changed.</p>\n      <li>\n        <p>\n          <strong>Find all pages that use session IDs.</strong> Make a list of all pages that use ASP.NET session management functions.</p>\n        <li>\n          <p>\n            <strong>Enable a HTTPS binding for the site.</strong> Start the \"<em>Internet Information Services (IIS) Manager</em>\". Right-click on the site and select \"<em>Edit bindings...</em>\". Add a binding of the \"<em>https</em>\" type.</p>\n          <li>\n            <p>\n              <strong>Enable TLS on all pages that use session IDs.</strong> Start the \"<em>Internet Information Services (IIS) Manager</em>\". Navigate the folders with pages that use ASP.NET session management. Double-click on the SSL icon in the right pane and enable TLS for the folder (the terms SSL and TLS used to be practically interchangeable). </p>\n            <li>\n              <p>\n                <strong>Mark session cookies as secure.</strong> Marking session cookies as secure assures that they are only sent over HTTPS connections.</p>\n              <pre>if (Response.Cookies.Count &gt; 0)<br />{<br />    foreach (string cookie in Response.Cookies.AllKeys)<br />    {<br />        if (cookie == FormsAuthentication.FormsCookieName)<br />        {<br />             Response.Cookies[cookie].Secure = true;<br />        }<br />        else if (cookie == “ASP.NET_SessionId”){<br />             Response.Cookies[cookie].Secure = true;<br />        }<br />    }<br />}</pre>\n            </li>\n          </li>\n        </li>\n      </li>\n    </li>\n  </ol>\n  <h1>Additional Resources</h1>\n  <ul>\n    <li>\n      <p>For more information about the SessionID property, please see \"HttpSessionState.SessionID Property\" at <a href=\"http://msdn.microsoft.com/en-us/library/system.web.sessionstate.httpsessionstate.sessionid.aspx\">http://msdn.microsoft.com/en-us/library/system.web.sessionstate.httpsessionstate.sessionid.aspx</a></p>\n      <li>\n        <p>For more information about session management, please see \"Session Management - OWASP\" at <a href=\"http://www.owasp.org/index.php/Session_Management#Protect_Session_Identifiers\">http://www.owasp.org/index.php/Session_Management#Protect_Session_Identifiers</a></p>\n      </li>\n    </li>\n  </ul>"
 }

@@ -1,6 +1,6 @@
 {
   "id": "4dfedb8e-17d3-495d-843e-476c5e470f27",
-  "checksum": "50f7ffabc2c6e80c526a1e10d8f858b892d0410d",
+  "checksum": "a0c708322bda2038dc5a2635e1052c960f9ce823",
   "words": {
     "what": [
       "h1"
@@ -95,7 +95,6 @@
     ],
     "it": [
       "p",
-      "p",
       "p"
     ],
     "will": [
@@ -129,7 +128,6 @@
       "p"
     ],
     "script": [
-      "p",
       "p"
     ],
     "tags": [
@@ -199,7 +197,6 @@
     ],
     "client": [
       "p",
-      "p",
       "p"
     ],
     "use": [
@@ -207,7 +204,7 @@
       "p",
       "p"
     ],
-    "guideline": [
+    "guideline&nbsp;": [
       "p"
     ],
     "can": [
@@ -254,7 +251,6 @@
       "p"
     ],
     "into": [
-      "p",
       "p"
     ],
     "how": [
@@ -300,6 +296,9 @@
     "trust": [
       "p"
     ],
+    "it&nbsp;": [
+      "p"
+    ],
     "echoing": [
       "p"
     ],
@@ -330,8 +329,7 @@
     "other": [
       "p"
     ],
-    "problems": [
-      "p",
+    "problems&nbsp;": [
       "p"
     ],
     "encoding": [
@@ -359,11 +357,14 @@
       "p",
       "p"
     ],
+    "script&nbsp;": [
+      "p"
+    ],
     "microsoftsecurity.applicationantixsslibrary.htmlencode": [
       "p",
       "b"
     ],
-    "method": [
+    "method&nbsp;": [
       "p"
     ],
     "similarly": [
@@ -417,6 +418,10 @@
       "p",
       "b"
     ],
+    "&nbsp": [
+      "p",
+      "p"
+    ],
     "sure": [
       "p"
     ],
@@ -436,6 +441,9 @@
       "p"
     ],
     "returned": [
+      "p"
+    ],
+    "client&nbsp;": [
       "p"
     ],
     "any": [
@@ -465,6 +473,9 @@
     "need": [
       "p"
     ],
+    "into&nbsp;": [
+      "p"
+    ],
     "also": [
       "p"
     ],
@@ -481,6 +492,9 @@
       "p"
     ],
     "double": [
+      "p"
+    ],
+    "problems": [
       "p"
     ],
     "adapted": [
@@ -501,6 +515,9 @@
     "guidance": [
       "p"
     ],
+    "sink]": [
+      "title"
+    ],
     "all": [
       "title"
     ]
@@ -515,9 +532,9 @@
     "p": [
       "Always encode output which contains untrusted data appropriately for the context in which it will be used.",
       "This prevents potentially malicious script tags from being interpreted as code by the client's browser",
-      "Whenever your application will echo untrusted input to the client use this guideline.  Untrusted input can come from the user, from the client, from a database, or from untrusted code that your application calls into.",
-      "If you write output that includes user input or data from a shared database or a local file that you do not trust, encode it.  Echoing input directly back to the user makes your application vulnerable to cross-site scripting attacks, among other problems.  Encoding the data ensures that it is treated as literal text and not as script.  You can use the Microsoft.Security.ApplicationAntiXSSLibrary.HtmlEncode method.  Similarly, if you write URLs that might contain unsafe characters because they have been constructed from input data or data from a shared database, use Microsoft.Security.ApplicationAntiXSSLibrary.UrlEncode to make them safe.",
-      "Note     Make sure that you encode data at the last possible opportunity before the data is returned to the client.  If you encode any earlier than this, you may not know the exact context that the data will be used in, and hence the format you need to encode into.  Also, early encoding of some data can result in double encoding problems.",
+      "Whenever your application will echo untrusted input to the client use this guideline.&nbsp; Untrusted input can come from the user, from the client, from a database, or from untrusted code that your application calls into.",
+      "If you write output that includes user input or data from a shared database or a local file that you do not trust, encode it.&nbsp; Echoing input directly back to the user makes your application vulnerable to cross-site scripting attacks, among other problems.&nbsp; Encoding the data ensures that it is treated as literal text and not as script.&nbsp; You can use the Microsoft.Security.ApplicationAntiXSSLibrary.HtmlEncode method.&nbsp; Similarly, if you write URLs that might contain unsafe characters because they have been constructed from input data or data from a shared database, use Microsoft.Security.ApplicationAntiXSSLibrary.UrlEncode to make them safe.",
+      "Note &nbsp; &nbsp; Make sure that you encode data at the last possible opportunity before the data is returned to the client.&nbsp; If you encode any earlier than this, you may not know the exact context that the data will be used in, and hence the format you need to encode into.&nbsp; Also, early encoding of some data can result in double encoding problems.",
       "Adapted from Microsoft patterns & practices guidance."
     ],
     "b": [
@@ -530,5 +547,5 @@
     ]
   },
   "links": [],
-  "html": "<h1>What to Do</h1>\r\n  <p>Always encode output which contains untrusted data appropriately for the context in which it will be used. </p>\r\n  <h1>Why</h1>\r\n  <p>This prevents potentially malicious script tags from being interpreted as code by the client's browser</p>\r\n  <h1>When</h1>\r\n  <p>Whenever your application will echo untrusted input to the client use this guideline.&nbsp; Untrusted input can come from the user, from the client, from a database, or from untrusted code that your application calls into.</p>\r\n  <h1>How</h1>\r\n  <p>If you write output that includes user input or data from a shared database or a local file that you do not trust, encode it.&nbsp; Echoing input directly back to the user makes your application vulnerable to cross-site scripting attacks, among other problems.&nbsp; Encoding the data ensures that it is treated as literal text and not as script.&nbsp; You can use the <b>Microsoft.Security.ApplicationAntiXSSLibrary.HtmlEncode</b> method.&nbsp; Similarly, if you write URLs that might contain unsafe characters because they have been constructed from input data or data from a shared database, use <b>Microsoft.Security.ApplicationAntiXSSLibrary.UrlEncode</b> to make them safe. </p>\r\n  <p>\r\n    <b>Note</b> &nbsp; &nbsp; Make sure that you encode data at the last possible opportunity before the data is returned to the client.&nbsp; If you encode any earlier than this, you may not know the exact context that the data will be used in, and hence the format you need to encode into.&nbsp; Also, early encoding of some data can result in double encoding problems. </p>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance. </p>"
+  "html": "<h1>What to Do</h1>\n  <p>Always encode output which contains untrusted data appropriately for the context in which it will be used. </p>\n  <h1>Why</h1>\n  <p>This prevents potentially malicious script tags from being interpreted as code by the client's browser</p>\n  <h1>When</h1>\n  <p>Whenever your application will echo untrusted input to the client use this guideline.&amp;nbsp; Untrusted input can come from the user, from the client, from a database, or from untrusted code that your application calls into.</p>\n  <h1>How</h1>\n  <p>If you write output that includes user input or data from a shared database or a local file that you do not trust, encode it.&amp;nbsp; Echoing input directly back to the user makes your application vulnerable to cross-site scripting attacks, among other problems.&amp;nbsp; Encoding the data ensures that it is treated as literal text and not as script.&amp;nbsp; You can use the <b>Microsoft.Security.ApplicationAntiXSSLibrary.HtmlEncode</b> method.&amp;nbsp; Similarly, if you write URLs that might contain unsafe characters because they have been constructed from input data or data from a shared database, use <b>Microsoft.Security.ApplicationAntiXSSLibrary.UrlEncode</b> to make them safe. </p>\n  <p>\n    <b>Note</b> &amp;nbsp; &amp;nbsp; Make sure that you encode data at the last possible opportunity before the data is returned to the client.&amp;nbsp; If you encode any earlier than this, you may not know the exact context that the data will be used in, and hence the format you need to encode into.&amp;nbsp; Also, early encoding of some data can result in double encoding problems. </p>\n  <hr />\n  <p>Adapted from Microsoft patterns &amp; practices guidance. </p>"
 }

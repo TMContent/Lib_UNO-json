@@ -1,6 +1,6 @@
 {
   "id": "99c11214-6f49-47a4-a822-9fec3bccd79b",
-  "checksum": "7700ba116a769ff56aac260bba1d6bfc3343cfec",
+  "checksum": "f2a55505707dc98558cc3af64f75565237d8bae0",
   "words": {
     "description": [
       "h1"
@@ -231,6 +231,9 @@
     "guidance": [
       "p"
     ],
+    "sink]": [
+      "title"
+    ],
     "how": [
       "title"
     ],
@@ -258,5 +261,5 @@
     ]
   },
   "links": [],
-  "html": "<h1>Description</h1>\r\n  <p>Restrict access to unmanaged code by demanding custom permissions before asserting the unmanaged code permission. When you call unmanaged code, validate input that is passed to unmanaged APIs and guard against potential buffer overflows and array boundary violations. Validate the lengths of input and output string parameters, validate array bounds, and check file path lengths. Inspect unmanaged code for unsafe APIs. </p>\r\n  <p>If you own the unmanaged code, make sure that you compile it with the <b>-GS</b> switch to enable stack probes to help detect buffer overflows. </p>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
+  "html": "<h1>Description</h1>\n  <p>Restrict access to unmanaged code by demanding custom permissions before asserting the unmanaged code permission. When you call unmanaged code, validate input that is passed to unmanaged APIs and guard against potential buffer overflows and array boundary violations. Validate the lengths of input and output string parameters, validate array bounds, and check file path lengths. Inspect unmanaged code for unsafe APIs. </p>\n  <p>If you own the unmanaged code, make sure that you compile it with the <b>-GS</b> switch to enable stack probes to help detect buffer overflows. </p>\n  <hr />\n  <p>Adapted from Microsoft patterns &amp; practices guidance.</p>"
 }

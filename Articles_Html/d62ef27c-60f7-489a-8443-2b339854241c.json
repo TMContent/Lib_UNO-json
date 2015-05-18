@@ -1,6 +1,6 @@
 {
   "id": "d62ef27c-60f7-489a-8443-2b339854241c",
-  "checksum": "b9a91188fe7b6ee53db827342aaa1977410a5650",
+  "checksum": "d40490cbad351ccf79898ba2e4d07ff04df17e1e",
   "words": {
     "what": [
       "h1"
@@ -356,5 +356,5 @@
     ]
   },
   "links": [],
-  "html": "<h1>What to Do</h1>\r\n  <p>Use the most restrictive access modifier possible for your code.</p>\r\n  <h1>Why</h1>\r\n  <p>Class and member access modifiers allow you to restrict the callers of your code. The fewer entry points (public interfaces) you have in your code, the smaller your attack surface is and the easier it is to protect.</p>\r\n  <h1>When</h1>\r\n  <p>This is important guideline and should be followed all the time.</p>\r\n  <h1>How</h1>\r\n  <p>Use the <b>private</b> access modifier wherever possible. Use the <b>protected</b> access modifier only if the member should be accessible to derived classes. Use the <b>internal</b> access modifier only if the member should be accessible to other classes in the same assembly.</p>\r\n  <blockquote>\r\n    <b>Note</b>&nbsp;&nbsp;&nbsp;Access modifiers are enforced at compile time only. When malicious code runs in a full trust environment, it could use reflection or unmanaged pointers to bypass these visibility restrictions.</blockquote>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
+  "html": "<h1>What to Do</h1>\n  <p>Use the most restrictive access modifier possible for your code.</p>\n  <h1>Why</h1>\n  <p>Class and member access modifiers allow you to restrict the callers of your code. The fewer entry points (public interfaces) you have in your code, the smaller your attack surface is and the easier it is to protect.</p>\n  <h1>When</h1>\n  <p>This is important guideline and should be followed all the time.</p>\n  <h1>How</h1>\n  <p>Use the <b>private</b> access modifier wherever possible. Use the <b>protected</b> access modifier only if the member should be accessible to derived classes. Use the <b>internal</b> access modifier only if the member should be accessible to other classes in the same assembly.</p>\n  <blockquote>\n    <b>Note</b>&nbsp;&nbsp;&nbsp;Access modifiers are enforced at compile time only. When malicious code runs in a full trust environment, it could use reflection or unmanaged pointers to bypass these visibility restrictions.</blockquote>\n  <hr />\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
 }

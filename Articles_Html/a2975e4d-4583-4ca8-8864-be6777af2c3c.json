@@ -1,6 +1,6 @@
 {
   "id": "a2975e4d-4583-4ca8-8864-be6777af2c3c",
-  "checksum": "3319955a483a0b40112a59c8ae8c9afe54816d27",
+  "checksum": "7d66609012c7889f728afca10f33142da5ff6dcb",
   "words": {
     "applies": [
       "h1"
@@ -390,7 +390,7 @@
       "Related Items"
     ],
     "ul": [
-      "PCI DSS Requirement 3.4.1.a \r\n    PCI DSS Requirement 3.4.1.b",
+      "PCI DSS Requirement 3.4.1.a \n    PCI DSS Requirement 3.4.1.b",
       "Erase Files Securely"
     ],
     "li": [
@@ -402,7 +402,7 @@
       "Disk encryption should use its own authentication mechanism. The disk encryption keys should be stored securely, such as on a removable media that is protected with strong access controls and physical security.",
       "Disk encryption should use an authentication mechanism separate from the rest of the network to make it more difficult for a potential attacker to get the encryption key, especially in the event of an insider attack.",
       "Examine the disk encryption authentication process to make sure it uses credentials different than those used on the network. Examine the disk encryption key storage location to make sure it is protected with strong access controls.",
-      "Decide whether to use whole disk encryption. Identify a disk encryption application that uses its own secure authentication mechanism, such as a password or a key file. Install and configure the chosen disk encryption suite. Secure the disk encryption keys\r\n with strong access controls and physical security.",
+      "Decide whether to use whole disk encryption. Identify a disk encryption application that uses its own secure authentication mechanism, such as a password or a key file. Install and configure the chosen disk encryption suite. Secure the disk encryption keys\n with strong access controls and physical security.",
       "Erase Files Securely"
     ],
     "a": [
@@ -415,5 +415,5 @@
       "text": "Erase Files Securely"
     }
   ],
-  "html": "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 3.4.1.a </li>\r\n    <li>PCI DSS Requirement 3.4.1.b</li>\r\n  </ul>\r\n  <h1>What to Check For</h1>\r\n  <p>Disk encryption should use its own authentication mechanism. The disk encryption keys should be stored securely, such as on a removable media that is protected with strong access controls and physical security.</p>\r\n  <h1>Why</h1>\r\n  <p>Disk encryption should use an authentication mechanism separate from the rest of the network to make it more difficult for a potential attacker to get the encryption key, especially in the event of an insider attack.</p>\r\n  <h1>How to Check</h1>\r\n  <p>Examine the disk encryption authentication process to make sure it uses credentials different than those used on the network. Examine the disk encryption key storage location to make sure it is protected with strong access controls.</p>\r\n  <h1>How to Fix</h1>\r\n  <p>Decide whether to use whole disk encryption. Identify a disk encryption application that uses its own secure authentication mechanism, such as a password or a key file. Install and configure the chosen disk encryption suite. Secure the disk encryption keys\r\n with strong access controls and physical security.</p>\r\n  <h1>Related Items</h1>\r\n  <ul>\r\n    <li>\r\n      <p>\r\n        <a href=\"/article/28ab3f5d-263e-4e1f-8c26-cef952f488f8\">Erase Files Securely</a>\r\n      </p>\r\n    </li>\r\n  </ul>"
+  "html": "<h1>Applies to</h1>\n  <ul>\n    <li>PCI DSS Requirement 3.4.1.a </li>\n    <li>PCI DSS Requirement 3.4.1.b</li>\n  </ul>\n  <h1>What to Check For</h1>\n  <p>Disk encryption should use its own authentication mechanism. The disk encryption keys should be stored securely, such as on a removable media that is protected with strong access controls and physical security.</p>\n  <h1>Why</h1>\n  <p>Disk encryption should use an authentication mechanism separate from the rest of the network to make it more difficult for a potential attacker to get the encryption key, especially in the event of an insider attack.</p>\n  <h1>How to Check</h1>\n  <p>Examine the disk encryption authentication process to make sure it uses credentials different than those used on the network. Examine the disk encryption key storage location to make sure it is protected with strong access controls.</p>\n  <h1>How to Fix</h1>\n  <p>Decide whether to use whole disk encryption. Identify a disk encryption application that uses its own secure authentication mechanism, such as a password or a key file. Install and configure the chosen disk encryption suite. Secure the disk encryption keys\n with strong access controls and physical security.</p>\n  <h1>Related Items</h1>\n  <ul>\n    <li>\n      <p>\n        <a href=\"/article/28ab3f5d-263e-4e1f-8c26-cef952f488f8\">Erase Files Securely</a>\n      </p>\n    </li>\n  </ul>"
 }

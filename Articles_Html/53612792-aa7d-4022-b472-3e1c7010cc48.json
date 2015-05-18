@@ -1,6 +1,6 @@
 {
   "id": "53612792-aa7d-4022-b472-3e1c7010cc48",
-  "checksum": "526370e69eac245993c01cbc448c8f74141caad0",
+  "checksum": "baa4b8b56f2a42c2b27ba65fe00fdd39f87976e0",
   "words": {
     "1": [
       "p"
@@ -104,15 +104,12 @@
       "p",
       "p",
       "p",
-      "p",
-      "p",
       "title"
     ],
     "prevent": [
       "p"
     ],
     "client": [
-      "p",
       "p",
       "p"
     ],
@@ -138,7 +135,6 @@
       "p"
     ],
     "cookie": [
-      "p",
       "p",
       "p",
       "p",
@@ -191,6 +187,9 @@
       "p"
     ],
     "never": [
+      "p"
+    ],
+    "client&nbsp;": [
       "p"
     ],
     "preventing": [
@@ -276,7 +275,7 @@
     "emulate": [
       "p"
     ],
-    "directly": [
+    "directly&nbsp;": [
       "p"
     ],
     "attacks": [
@@ -366,6 +365,9 @@
     "how": [
       "h1"
     ],
+    "cookie&nbsp;": [
+      "p"
+    ],
     "internet": [
       "p"
     ],
@@ -400,10 +402,7 @@
       "p",
       "b"
     ],
-    "property": [
-      "p",
-      "p",
-      "p",
+    "property&nbsp;": [
       "p",
       "p"
     ],
@@ -441,6 +440,11 @@
       "p"
     ],
     "can": [
+      "p"
+    ],
+    "property": [
+      "p",
+      "p",
       "p"
     ],
     "programmatically": [
@@ -521,6 +525,10 @@
       "p",
       "strong"
     ],
+    "&nbsp": [
+      "p",
+      "p"
+    ],
     "browsers": [
       "p"
     ],
@@ -545,7 +553,7 @@
     "number": [
       "p"
     ],
-    "cases": [
+    "cases&nbsp;": [
       "p"
     ],
     "thus": [
@@ -608,6 +616,10 @@
       "p",
       "p"
     ],
+    "cookies&nbsp;": [
+      "p",
+      "p"
+    ],
     "attacked": [
       "p",
       "p"
@@ -642,7 +654,7 @@
     "unable": [
       "p"
     ],
-    "her from": [
+    "her&nbspfrom": [
       "p"
     ],
     "impersonating": [
@@ -665,6 +677,9 @@
     ],
     "guidance": [
       "p"
+    ],
+    "sink]": [
+      "title"
     ]
   },
   "tags": {
@@ -678,13 +693,13 @@
     ],
     "p": [
       "Set the httpOnlyAttribute to true on all authentication cookies to prevent client side scripts from accessing the cookie.",
-      "Authentication cookies are only used on the server side to authenticate requests coming from a user; they're never used on the client.  Preventing the client from accessing them via scripts means that if a script injection attack occurs on your site, the attacker will not be able to steal a user's cookies and emulate the user directly.  Injection attacks still have the potential to completely compromise an account, but making authentication cookies unavailable does reduce their impact.",
+      "Authentication cookies are only used on the server side to authenticate requests coming from a user; they're never used on the client.&nbsp; Preventing the client from accessing them via scripts means that if a script injection attack occurs on your site, the attacker will not be able to steal a user's cookies and emulate the user directly.&nbsp; Injection attacks still have the potential to completely compromise an account, but making authentication cookies unavailable does reduce their impact.",
       "All systems which use authentication cookies should set their httpOnlyCookies attribute.",
-      "Set the httpOnlyCookies attribute on the authentication cookie.  Internet Explorer 6 Service Pack 1 and later supports this attribute, which prevents client-side script from accessing the cookie from the document.cookie property.  The System.Net.Cookie class in .NET Framework supports an HttpOnly property.  You can set this property programmatically or by using the <httpCookies> element in your application's Web.config file. By default, the HttpOnly cookie property is not set. To set the HttpOnly property of the cookie, add the following entry in your application's Web.config file.",
-      "Note:     Not all browsers support HttpOnly, and it is possible to circumvent it's protection in a number of cases.  Thus, this should not be relied upon as an absolute security measure.",
-      "A web application has an existing cross-site scripting flaw, and does not set HttpOnly on its cookies.  When a user is attacked, the attacker is able to easily retrieve the user's authentication and authorization cookies, allowing her to impersonate the user.",
+      "Set the httpOnlyCookies attribute on the authentication cookie.&nbsp; Internet Explorer 6 Service Pack 1 and later supports this attribute, which prevents client-side script from accessing the cookie from the document.cookie property.&nbsp; The System.Net.Cookie class in .NET Framework supports an HttpOnly property.&nbsp; You can set this property programmatically or by using the <httpCookies> element in your application's Web.config file. By default, the HttpOnly cookie property is not set. To set the HttpOnly property of the cookie, add the following entry in your application's Web.config file.",
+      "Note: &nbsp; &nbsp; Not all browsers support HttpOnly, and it is possible to circumvent it's protection in a number of cases.&nbsp; Thus, this should not be relied upon as an absolute security measure.",
+      "A web application has an existing cross-site scripting flaw, and does not set HttpOnly on its cookies.&nbsp; When a user is attacked, the attacker is able to easily retrieve the user's authentication and authorization cookies, allowing her to impersonate the user.",
       "",
-      "A web application has an existing cross-site scripting flaw, but sets HttpOnly on its cookies.  When a user is attacked, the attacker is unable to easily retrieve the user's authentication and authorization cookies, preventing her from impersonating the user.",
+      "A web application has an existing cross-site scripting flaw, but sets HttpOnly on its cookies.&nbsp; When a user is attacked, the attacker is unable to easily retrieve the user's authentication and authorization cookies, preventing her&nbsp;from impersonating the user.",
       "",
       "Adapted from Microsoft patterns & practices guidance."
     ],
@@ -714,5 +729,5 @@
     ]
   },
   "links": [],
-  "html": "<h1>What to Do</h1>\r\n  <p>Set the <b>httpOnlyAttribute</b> to true on all authentication cookies to prevent client side scripts from accessing the cookie. </p>\r\n  <h1>Why</h1>\r\n  <p>Authentication cookies are only used on the server side to authenticate requests coming from a user; they're never used on the client.&nbsp; Preventing the client from accessing them via scripts means that if a script injection attack occurs on your site, the attacker will not be able to steal a user's cookies and emulate the user directly.&nbsp; Injection attacks still have the potential to completely compromise an account, but making authentication cookies unavailable does reduce their impact. </p>\r\n  <h1>When</h1>\r\n  <p>All systems which use authentication cookies should set their <b>httpOnlyCookies</b> attribute. </p>\r\n  <h1>How</h1>\r\n  <p>Set the <b>httpOnlyCookies</b> attribute on the authentication cookie.&nbsp; Internet Explorer 6 Service Pack 1 and later supports this attribute, which prevents client-side script from accessing the cookie from the <b>document.cookie</b> property.&nbsp; The <b>System.Net.Cookie</b> class in .NET Framework supports an <b>HttpOnly</b> property.&nbsp; You can set this property programmatically or by using the <b>&lt;httpCookies&gt;</b> element in your application's Web.config file. By default, the <b>HttpOnly</b> cookie property is not set. To set the <b>HttpOnly</b> property of the cookie, add the following entry in your application's Web.config file. </p>\r\n  <pre>&lt;system.web&gt;...<br />  &lt;httpCookies httpOnlyCookies=\"true\" requireSSL=\"false\" topic=\"\" /&gt;...<br />&lt;/system.web&gt;</pre>\r\n  <p>\r\n    <strong>Note:</strong> &nbsp; &nbsp; Not all browsers support HttpOnly, and it is possible to circumvent it's protection in a number of cases.&nbsp; Thus, this should not be relied upon as an absolute security measure.</p>\r\n  <h1>Problem Example</h1>\r\n  <p>A web application has an existing cross-site scripting flaw, and does not set HttpOnly on its cookies.&nbsp; When a user is attacked, the attacker is able to easily retrieve the user's authentication and authorization cookies, allowing her to impersonate the user.</p>\r\n  <p />\r\n  <h1>Solution Example</h1>\r\n  <p>A web application has an existing cross-site scripting flaw, but sets HttpOnly on its cookies.&nbsp; When a user is attacked, the attacker is unable to easily retrieve the user's authentication and authorization cookies, preventing her&nbsp;from impersonating the user.</p>\r\n  <p />\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance. </p>"
+  "html": "<h1>What to Do</h1>\n  <p>Set the <b>httpOnlyAttribute</b> to true on all authentication cookies to prevent client side scripts from accessing the cookie. </p>\n  <h1>Why</h1>\n  <p>Authentication cookies are only used on the server side to authenticate requests coming from a user; they're never used on the client.&amp;nbsp; Preventing the client from accessing them via scripts means that if a script injection attack occurs on your site, the attacker will not be able to steal a user's cookies and emulate the user directly.&amp;nbsp; Injection attacks still have the potential to completely compromise an account, but making authentication cookies unavailable does reduce their impact. </p>\n  <h1>When</h1>\n  <p>All systems which use authentication cookies should set their <b>httpOnlyCookies</b> attribute. </p>\n  <h1>How</h1>\n  <p>Set the <b>httpOnlyCookies</b> attribute on the authentication cookie.&amp;nbsp; Internet Explorer 6 Service Pack 1 and later supports this attribute, which prevents client-side script from accessing the cookie from the <b>document.cookie</b> property.&amp;nbsp; The <b>System.Net.Cookie</b> class in .NET Framework supports an <b>HttpOnly</b> property.&amp;nbsp; You can set this property programmatically or by using the <b>&lt;httpCookies&gt;</b> element in your application's Web.config file. By default, the <b>HttpOnly</b> cookie property is not set. To set the <b>HttpOnly</b> property of the cookie, add the following entry in your application's Web.config file. </p>\n  <pre>&lt;system.web&gt;...<br />  &lt;httpCookies httpOnlyCookies=\"true\" requireSSL=\"false\" topic=\"\" /&gt;...<br />&lt;/system.web&gt;</pre>\n  <p>\n    <strong>Note:</strong> &amp;nbsp; &amp;nbsp; Not all browsers support HttpOnly, and it is possible to circumvent it's protection in a number of cases.&amp;nbsp; Thus, this should not be relied upon as an absolute security measure.</p>\n  <h1>Problem Example</h1>\n  <p>A web application has an existing cross-site scripting flaw, and does not set HttpOnly on its cookies.&amp;nbsp; When a user is attacked, the attacker is able to easily retrieve the user's authentication and authorization cookies, allowing her to impersonate the user.</p>\n  <p />\n  <h1>Solution Example</h1>\n  <p>A web application has an existing cross-site scripting flaw, but sets HttpOnly on its cookies.&amp;nbsp; When a user is attacked, the attacker is unable to easily retrieve the user's authentication and authorization cookies, preventing her&amp;nbsp;from impersonating the user.</p>\n  <p />\n  <hr />\n  <p>Adapted from Microsoft patterns &amp; practices guidance. </p>"
 }

@@ -1,6 +1,6 @@
 {
   "id": "59fc326e-fdd7-4c2a-a116-66a807f56535",
-  "checksum": "c407f26e1f9a50ac6568f93b86de73516f0d02c8",
+  "checksum": "316d8bf5f5aefa6432dcc72115ffe84ac0f0abd3",
   "words": {
     "description": [
       "h1"
@@ -276,5 +276,5 @@
     ]
   },
   "links": [],
-  "html": "<h1>Description</h1>\r\n  <p>When you deploy your application, perform a security deployment review to identify potential security vulnerabilities introduced by inappropriate configuration settings. Make sure that your connection strings are encrypted: use protected configuration. Review any other configuration file element that could contain sensitive data, such as account credentials, and ensure that the section is encrypted if it contains sensitive data. Make sure that trace and debug are disabled. If your application accesses a database, make sure that it uses a login with limited permissions in the database. If your application uses the ActiveDirectoryMembershipProvider class, encrypt the configuration section if it contains connection credentials.</p>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
+  "html": "<h1>Description</h1>\n  <p>When you deploy your application, perform a security deployment review to identify potential security vulnerabilities introduced by inappropriate configuration settings. Make sure that your connection strings are encrypted: use protected configuration. Review any other configuration file element that could contain sensitive data, such as account credentials, and ensure that the section is encrypted if it contains sensitive data. Make sure that trace and debug are disabled. If your application accesses a database, make sure that it uses a login with limited permissions in the database. If your application uses the ActiveDirectoryMembershipProvider class, encrypt the configuration section if it contains connection credentials.</p>\n  <hr />\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
 }

@@ -1,6 +1,6 @@
 {
   "id": "2e45e5ee-e2d5-4b5e-9f2a-cdcbfcab2483",
-  "checksum": "fda16d508de35b1d9ba321f024b5bded8a5114e6",
+  "checksum": "ebeea8d7ea5a290306ef180532ab4922f7cd916d",
   "words": {
     "what": [
       "h1"
@@ -337,7 +337,7 @@
       "div",
       "a"
     ],
-    "note   dpapi": [
+    "note&nbsp&nbsp;&nbsp;dpapi": [
       "blockquote"
     ],
     "is": [
@@ -464,7 +464,7 @@
       "pre",
       "pre"
     ],
-    "systemtext;...byte[]": [
+    "systemtext;...byte&#91;&#93;": [
       "pre",
       "pre"
     ],
@@ -484,7 +484,7 @@
       "pre",
       "pre"
     ],
-    "{75,4,9,0};byte[]": [
+    "&#1237,5,4,9,0&#125;;byte&#91;&#93;": [
       "pre",
       "pre"
     ],
@@ -538,7 +538,7 @@
     "shown": [
       "p"
     ],
-    "string\";byte[]": [
+    "string\";byte&#91;&#93;": [
       "pre"
     ],
     "encrypteddata": [
@@ -547,7 +547,7 @@
     "protecteddataprotect(datatobeencrypted,": [
       "pre"
     ],
-    "dataprotectionscopecurrentuser);byte[]": [
+    "&#9&#9;&#9;&#9;dataprotectionscope.currentuser);byte&#91;&#93;": [
       "pre"
     ],
     "decrypteddata": [
@@ -556,7 +556,7 @@
     "protecteddataunprotect(encrypteddata,": [
       "pre"
     ],
-    "dataprotectionscopecurrentuser);": [
+    "&#9&#9;&#9;&#9;dataprotectionscope.currentuser);": [
       "pre"
     ],
     "encodingunicode.getstring(decrypteddata);": [
@@ -744,10 +744,10 @@
       "p",
       "h1"
     ],
-    "application—such": [
+    "application&#8212such": [
       "p"
     ],
-    "databases—should": [
+    "databases&#8212should": [
       "p"
     ],
     "restricted": [
@@ -792,6 +792,9 @@
     "guidance": [
       "p"
     ],
+    "sink]": [
+      "title"
+    ],
     "management": [
       "title"
     ]
@@ -813,7 +816,7 @@
       "The following example shows how to use the ProtectedMemory class for encrypting and decrypting data in memory.",
       "For sensitive data stored in any other data store, use the ProtectedData class as shown in the following example.",
       "When you use DPAPI, you can use the machine key store or the user key store. Use machine-level key storage in the following situations: Your application runs on its own dedicated server with no other applications. You have multiple applications on the same server, and you want those applications to be able to share sensitive information.",
-      "Use user-level key storage if you run your application in a shared hosting environment and you want to make sure that your application's sensitive data is not accessible to other applications on the server. In this situation, each application should run under a separate identity, and the resources for the application—such as files and databases—should be restricted to that identity.",
+      "Use user-level key storage if you run your application in a shared hosting environment and you want to make sure that your application's sensitive data is not accessible to other applications on the server. In this situation, each application should run under a separate identity, and the resources for the application&#8212;such as files and databases&#8212;should be restricted to that identity.",
       "Adapted from Microsoft patterns & practices guidance."
     ],
     "a": [
@@ -821,7 +824,7 @@
       "http://msdn.microsoft.com/en-us/library/k6h9cz8h.aspx"
     ],
     "blockquote": [
-      "Note   DPAPI encryption is not recommended for use in Web farm scenarios because of machine affinity. Instead, you should use RSA encryption, which is also supported by the Aspnet_regiis tool."
+      "Note&nbsp;&nbsp;&nbsp;DPAPI encryption is not recommended for use in Web farm scenarios because of machine affinity. Instead, you should use RSA encryption, which is also supported by the Aspnet_regiis tool."
     ],
     "b": [
       "Note",
@@ -835,8 +838,8 @@
       "ProtectedData"
     ],
     "pre": [
-      "using System.Security.Cryptography;using System.Text;...byte[] optionalEntropy = {7,5,4,9,0};byte[] dataToBeEncrypted = Encoding.Unicode.GetBytes(\"Test String 1211\");ProtectedMemory.Protect(dataToBeEncrypted, MemoryProtectionScope.SameLogon);ProtectedMemory.Unprotect(dataToBeEncrypted, MemoryProtectionScope.SameLogon);string originalData = Encoding.Unicode.GetString(dataToBeEncrypted);",
-      "using System.Security.Cryptography;using System.Text;...byte[] optionalEntropy = {7,5,4,9,0};byte[] dataToBeEncrypted = Encoding.Unicode.GetBytes(\"Test String\");byte[] encryptedData = ProtectedData.Protect(dataToBeEncrypted, optionalEntropy, \t\t\t\tDataProtectionScope.CurrentUser);byte[] decryptedData = ProtectedData.Unprotect(encryptedData, optionalEntropy, \t\t\t\tDataProtectionScope.CurrentUser);            string originalData = Encoding.Unicode.GetString(decryptedData);"
+      "using System.Security.Cryptography;using System.Text;...byte&#91;&#93; optionalEntropy = &#123;7,5,4,9,0&#125;;byte&#91;&#93; dataToBeEncrypted = Encoding.Unicode.GetBytes(\"Test String 1211\");ProtectedMemory.Protect(dataToBeEncrypted, MemoryProtectionScope.SameLogon);ProtectedMemory.Unprotect(dataToBeEncrypted, MemoryProtectionScope.SameLogon);string originalData = Encoding.Unicode.GetString(dataToBeEncrypted);",
+      "using System.Security.Cryptography;using System.Text;...byte&#91;&#93; optionalEntropy = &#123;7,5,4,9,0&#125;;byte&#91;&#93; dataToBeEncrypted = Encoding.Unicode.GetBytes(\"Test String\");byte&#91;&#93; encryptedData = ProtectedData.Protect(dataToBeEncrypted, optionalEntropy, &#9;&#9;&#9;&#9;DataProtectionScope.CurrentUser);byte&#91;&#93; decryptedData = ProtectedData.Unprotect(encryptedData, optionalEntropy, &#9;&#9;&#9;&#9;DataProtectionScope.CurrentUser);            string originalData = Encoding.Unicode.GetString(decryptedData);"
     ],
     "br": [
       "",
@@ -879,5 +882,5 @@
       "text": "http://msdn.microsoft.com/en-us/library/k6h9cz8h.aspx"
     }
   ],
-  "html": "<h1>What to Do</h1>\r\n  <p>Use DPAPI to encrypt sensitive information, either in memory or in persistent stores such as configuration files or registry entries.</p>\r\n  <h1>Why</h1>\r\n  <p>By using DPAPI you avoid having to manage and protect the encryption key. With DPAPI, the operating system manages and protects the key.</p>\r\n  <h1>When</h1>\r\n  <p>When encrypting sensitive information in memory or in persistent stores.</p>\r\n  <h1>How</h1>\r\n  <p>For sensitive data stored in ASP.NET Web.config files, you can use the Aspnet_regiis tool and the data protection feature provided with ASP.NET 3.5. For more information see: <a href=\"http://msdn.microsoft.com/en-us/library/k6h9cz8h.aspx\">http://msdn.microsoft.com/en-us/library/k6h9cz8h.aspx</a></p>\r\n  <blockquote>\r\n    <b>Note</b>&nbsp;&nbsp;&nbsp;DPAPI encryption is not recommended for use in Web farm scenarios because of machine affinity. Instead, you should use RSA encryption, which is also supported by the Aspnet_regiis tool.<b></b></blockquote>\r\n  <p>For sensitive data stored in memory, you can use the <b>ProtectedMemory </b>class which provides a managed wrapper for DPAPI to encrypt the data. For text-based data, consider using <b>SecureString </b>instead.<b> SecureString</b> uses the <b>ProtectedMemory</b> class to encrypt text in memory<b>.</b></p>\r\n  <p>The following example shows how to use the <b>ProtectedMemory</b> class for encrypting and decrypting data in memory.</p>\r\n  <pre>using System.Security.Cryptography;using System.Text;<br />...byte&#91;&#93; optionalEntropy = &#123;7,5,4,9,0&#125;;<br />byte&#91;&#93; dataToBeEncrypted = Encoding.Unicode.GetBytes(\"Test String 1211\");<br />ProtectedMemory.Protect(dataToBeEncrypted, MemoryProtectionScope.SameLogon);<br />ProtectedMemory.Unprotect(dataToBeEncrypted, MemoryProtectionScope.SameLogon);<br />string originalData = Encoding.Unicode.GetString(dataToBeEncrypted);  </pre>\r\n  <p>For sensitive data stored in any other data store, use the <b>ProtectedData </b>class as shown in the following example.</p>\r\n  <pre>using System.Security.Cryptography;<br />using System.Text;<br />...byte&#91;&#93; optionalEntropy = &#123;7,5,4,9,0&#125;;<br />byte&#91;&#93; dataToBeEncrypted = Encoding.Unicode.GetBytes(\"Test String\");<br />byte&#91;&#93; encryptedData = ProtectedData.Protect(dataToBeEncrypted, optionalEntropy, <br />&#9;&#9;&#9;&#9;DataProtectionScope.CurrentUser);<br />byte&#91;&#93; decryptedData = ProtectedData.Unprotect(encryptedData, optionalEntropy, <br />&#9;&#9;&#9;&#9;DataProtectionScope.CurrentUser);            <br />string originalData = Encoding.Unicode.GetString(decryptedData);  </pre>\r\n  <p />When you use DPAPI, you can use the machine key store or the user key store. Use machine-level key storage in the following situations: <ul><li>Your application runs on its own dedicated server with no other applications. <li>You have multiple applications on the same server, and you want those applications to be able to share sensitive information. </li></li></ul><p>Use user-level key storage if you run your application in a shared hosting environment and you want to make sure that your application's sensitive data is not accessible to other applications on the server. In this situation, each application should run under a separate identity, and the resources for the application&#8212;such as files and databases&#8212;should be restricted to that identity.</p><h1>Additional Resources</h1><ul><li><div>ASP.NET IIS Registration Tool (Aspnet_regiis.exe): <a href=\"http://msdn.microsoft.com/en-us/library/k6h9cz8h.aspx\">http://msdn.microsoft.com/en-us/library/k6h9cz8h.aspx</a><hr /></div></li></ul><p>Adapted from Microsoft patterns & practices guidance.</p>"
+  "html": "<h1>What to Do</h1>\n  <p>Use DPAPI to encrypt sensitive information, either in memory or in persistent stores such as configuration files or registry entries.</p>\n  <h1>Why</h1>\n  <p>By using DPAPI you avoid having to manage and protect the encryption key. With DPAPI, the operating system manages and protects the key.</p>\n  <h1>When</h1>\n  <p>When encrypting sensitive information in memory or in persistent stores.</p>\n  <h1>How</h1>\n  <p>For sensitive data stored in ASP.NET Web.config files, you can use the Aspnet_regiis tool and the data protection feature provided with ASP.NET 3.5. For more information see: <a href=\"http://msdn.microsoft.com/en-us/library/k6h9cz8h.aspx\">http://msdn.microsoft.com/en-us/library/k6h9cz8h.aspx</a></p>\n  <blockquote>\n    <b>Note</b>&amp;nbsp;&amp;nbsp;&amp;nbsp;DPAPI encryption is not recommended for use in Web farm scenarios because of machine affinity. Instead, you should use RSA encryption, which is also supported by the Aspnet_regiis tool.<b></b></blockquote>\n  <p>For sensitive data stored in memory, you can use the <b>ProtectedMemory </b>class which provides a managed wrapper for DPAPI to encrypt the data. For text-based data, consider using <b>SecureString </b>instead.<b> SecureString</b> uses the <b>ProtectedMemory</b> class to encrypt text in memory<b>.</b></p>\n  <p>The following example shows how to use the <b>ProtectedMemory</b> class for encrypting and decrypting data in memory.</p>\n  <pre>using System.Security.Cryptography;using System.Text;<br />...byte&amp;#91;&amp;#93; optionalEntropy = &amp;#123;7,5,4,9,0&amp;#125;;<br />byte&amp;#91;&amp;#93; dataToBeEncrypted = Encoding.Unicode.GetBytes(\"Test String 1211\");<br />ProtectedMemory.Protect(dataToBeEncrypted, MemoryProtectionScope.SameLogon);<br />ProtectedMemory.Unprotect(dataToBeEncrypted, MemoryProtectionScope.SameLogon);<br />string originalData = Encoding.Unicode.GetString(dataToBeEncrypted);  </pre>\n  <p>For sensitive data stored in any other data store, use the <b>ProtectedData </b>class as shown in the following example.</p>\n  <pre>using System.Security.Cryptography;<br />using System.Text;<br />...byte&amp;#91;&amp;#93; optionalEntropy = &amp;#123;7,5,4,9,0&amp;#125;;<br />byte&amp;#91;&amp;#93; dataToBeEncrypted = Encoding.Unicode.GetBytes(\"Test String\");<br />byte&amp;#91;&amp;#93; encryptedData = ProtectedData.Protect(dataToBeEncrypted, optionalEntropy, <br />&amp;#9;&amp;#9;&amp;#9;&amp;#9;DataProtectionScope.CurrentUser);<br />byte&amp;#91;&amp;#93; decryptedData = ProtectedData.Unprotect(encryptedData, optionalEntropy, <br />&amp;#9;&amp;#9;&amp;#9;&amp;#9;DataProtectionScope.CurrentUser);            <br />string originalData = Encoding.Unicode.GetString(decryptedData);  </pre>\n  <p />When you use DPAPI, you can use the machine key store or the user key store. Use machine-level key storage in the following situations: <ul><li>Your application runs on its own dedicated server with no other applications. <li>You have multiple applications on the same server, and you want those applications to be able to share sensitive information. </li></li></ul><p>Use user-level key storage if you run your application in a shared hosting environment and you want to make sure that your application's sensitive data is not accessible to other applications on the server. In this situation, each application should run under a separate identity, and the resources for the application&amp;#8212;such as files and databases&amp;#8212;should be restricted to that identity.</p><h1>Additional Resources</h1><ul><li><div>ASP.NET IIS Registration Tool (Aspnet_regiis.exe): <a href=\"http://msdn.microsoft.com/en-us/library/k6h9cz8h.aspx\">http://msdn.microsoft.com/en-us/library/k6h9cz8h.aspx</a><hr /></div></li></ul><p>Adapted from Microsoft patterns &amp; practices guidance.</p>"
 }

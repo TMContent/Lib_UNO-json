@@ -1,6 +1,6 @@
 {
   "id": "a2000bc9-7e22-4d0c-91b8-a9ec623985d3",
-  "checksum": "b5f767280f2b34e60b54c9039add7c7489bf194f",
+  "checksum": "ee9ea160267866ee59e928539dd228e1e485a328",
   "words": {
     "what": [
       "h1",
@@ -358,10 +358,7 @@
       "p",
       "p",
       "p",
-      "p",
-      "ul",
-      "li",
-      "a"
+      "p"
     ],
     "minimum": [
       "p"
@@ -888,12 +885,6 @@
       "li",
       "p",
       "ul",
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a",
       "li",
       "a"
     ],
@@ -1449,13 +1440,7 @@
     "and": [
       "ol",
       "li",
-      "p",
-      "ul",
-      "li",
-      "a",
-      "ul",
-      "li",
-      "a"
+      "p"
     ],
     "filesystem": [
       "ol",
@@ -1644,16 +1629,10 @@
       "li",
       "a",
       "ul",
-      "ul",
-      "li",
-      "a",
       "li",
       "a"
     ],
     "interfaces": [
-      "ul",
-      "li",
-      "a",
       "ul",
       "li",
       "a"
@@ -1690,53 +1669,6 @@
     ],
     "protect": [
       "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a"
-    ],
-    "jaas": [
-      "ul",
-      "li",
-      "a",
-      "ul",
-      "li",
-      "a"
-    ],
-    "policy": [
-      "ul",
-      "li",
-      "a",
-      "ul",
-      "li",
-      "a"
-    ],
-    "configuration": [
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a",
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a"
-    ],
-    "files": [
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a",
-      "ul",
-      "ul",
-      "li",
-      "a",
       "li",
       "a"
     ],
@@ -1764,14 +1696,27 @@
       "li",
       "a"
     ],
+    "configuration": [
+      "ul",
+      "li",
+      "a",
+      "ul",
+      "li",
+      "a"
+    ],
+    "files": [
+      "ul",
+      "li",
+      "a",
+      "ul",
+      "li",
+      "a"
+    ],
     "checklists": [
       "h1"
     ],
     "removed": [
       "ul",
-      "ul",
-      "li",
-      "a",
       "li",
       "a"
     ],
@@ -1782,9 +1727,6 @@
     ],
     "protected": [
       "ul",
-      "ul",
-      "li",
-      "a",
       "li",
       "a"
     ]
@@ -1816,17 +1758,17 @@
       "The following snippet shows the access rights associated with MyApp's local account as noted in the /etc/passwd file. Because the local account is in a dedicated group, compromising the application does not compromise the hosting server."
     ],
     "ol": [
-      "Identify the accounts that your application is using. Examine /etc/passwd in Unix or Control Panel/Administrative Tools/Computer Management in Windows to identify the accounts that are used by your application. Ensure they are members of a dedicated to your application group. Verify that your application's accounts are not members of any of the following:\r\n      \r\n        Any root or administrative groups Any groups dedicated to privileged users The normal users group Any group that is dedicated to a system service, network service, etc.\r\n      \r\n      If your application spawns sub-processes, identify the accounts that are used for running those processes. Apply the same restrictions to these accounts as well.\r\n      \r\n        \r\n          Ensure that the Principle of Least Privilege is enforced on your application's system accounts. Ensure your application's accounts are given the least possible privileges needed. Verify that your application's local system group is given the least possible privileges.\r\n        \r\n          \r\n            Ensure your application does not gain additional privileges. Verify that your application's code base does not contain any functionality that allows your application to gain additional local system privileges. Ensure that the following requirements are met:\r\n          \r\n            Your application does not use system functions such as setuid, setgid, etc. Your application uses the -Djava.library.path flag at runtime when loading native libraries.",
-      "Identify the local account. Determine the local system account that will be used when running your application. Because the application is web-based, it is likely that the account is on the web server. \r\n      \r\n        \r\n          Identify the application's requirements. Determine what access rights are required by your application. Because the application may need access to different resources such as sockets and the local filesystem, identify the resources that are essential to your application's business logic. For example, identify the local directories that should be accessed. \r\n        \r\n          \r\n            Set the appropriate privileges. Create a role for your application by dedicating a local group to it. Once the appropriate privileges are established, set the appropriate access rights to the local system account. Any extra privileges should be revoked."
+      "Identify the accounts that your application is using. Examine /etc/passwd in Unix or Control Panel/Administrative Tools/Computer Management in Windows to identify the accounts that are used by your application. Ensure they are members of a dedicated to your application group. Verify that your application's accounts are not members of any of the following:\n      \n        Any root or administrative groups Any groups dedicated to privileged users The normal users group Any group that is dedicated to a system service, network service, etc.\n      \n      If your application spawns sub-processes, identify the accounts that are used for running those processes. Apply the same restrictions to these accounts as well.\n      \n        \n          Ensure that the Principle of Least Privilege is enforced on your application's system accounts. Ensure your application's accounts are given the least possible privileges needed. Verify that your application's local system group is given the least possible privileges.\n        \n          \n            Ensure your application does not gain additional privileges. Verify that your application's code base does not contain any functionality that allows your application to gain additional local system privileges. Ensure that the following requirements are met:\n          \n            Your application does not use system functions such as setuid, setgid, etc. Your application uses the -Djava.library.path flag at runtime when loading native libraries.",
+      "Identify the local account. Determine the local system account that will be used when running your application. Because the application is web-based, it is likely that the account is on the web server. \n      \n        \n          Identify the application's requirements. Determine what access rights are required by your application. Because the application may need access to different resources such as sockets and the local filesystem, identify the resources that are essential to your application's business logic. For example, identify the local directories that should be accessed. \n        \n          \n            Set the appropriate privileges. Create a role for your application by dedicating a local group to it. Once the appropriate privileges are established, set the appropriate access rights to the local system account. Any extra privileges should be revoked."
     ],
     "li": [
-      "Identify the accounts that your application is using. Examine /etc/passwd in Unix or Control Panel/Administrative Tools/Computer Management in Windows to identify the accounts that are used by your application. Ensure they are members of a dedicated to your application group. Verify that your application's accounts are not members of any of the following:\r\n      \r\n        Any root or administrative groups Any groups dedicated to privileged users The normal users group Any group that is dedicated to a system service, network service, etc.",
+      "Identify the accounts that your application is using. Examine /etc/passwd in Unix or Control Panel/Administrative Tools/Computer Management in Windows to identify the accounts that are used by your application. Ensure they are members of a dedicated to your application group. Verify that your application's accounts are not members of any of the following:\n      \n        Any root or administrative groups Any groups dedicated to privileged users The normal users group Any group that is dedicated to a system service, network service, etc.",
       "Any root or administrative groups",
       "Any groups dedicated to privileged users",
       "The normal users group",
       "Any group that is dedicated to a system service, network service, etc.",
       "Ensure that the Principle of Least Privilege is enforced on your application's system accounts. Ensure your application's accounts are given the least possible privileges needed. Verify that your application's local system group is given the least possible privileges.",
-      "Ensure your application does not gain additional privileges. Verify that your application's code base does not contain any functionality that allows your application to gain additional local system privileges. Ensure that the following requirements are met:\r\n          \r\n            Your application does not use system functions such as setuid, setgid, etc. Your application uses the -Djava.library.path flag at runtime when loading native libraries.",
+      "Ensure your application does not gain additional privileges. Verify that your application's code base does not contain any functionality that allows your application to gain additional local system privileges. Ensure that the following requirements are met:\n          \n            Your application does not use system functions such as setuid, setgid, etc. Your application uses the -Djava.library.path flag at runtime when loading native libraries.",
       "Your application does not use system functions such as setuid, setgid, etc.",
       "Your application uses the -Djava.library.path flag at runtime when loading native libraries.",
       "Identify the local account. Determine the local system account that will be used when running your application. Because the application is web-based, it is likely that the account is on the web server.",
@@ -1836,13 +1778,10 @@
       "Remove Test Interfaces",
       "Disable Directory Browsing",
       "Use a Least-Privileged Account for Running Applications",
-      "Protect the JAAS Policy and Configuration Files",
       "Protect Sensitive Data Inside Configuration Files",
       "Test Accounts Are Removed",
-      "Test Interfaces Are Removed",
       "Directory Browsing Is Disabled",
       "A Least Privileged Account Is Used for Running Applications",
-      "JAAS Policy and Configuration Files Are Protected",
       "Sensitive Data Inside Configuration Files Is Protected"
     ],
     "strong": [
@@ -1863,8 +1802,8 @@
     "ul": [
       "Any root or administrative groups Any groups dedicated to privileged users The normal users group Any group that is dedicated to a system service, network service, etc.",
       "Your application does not use system functions such as setuid, setgid, etc. Your application uses the -Djava.library.path flag at runtime when loading native libraries.",
-      "Remove Test Accounts\r\n      \r\n        Remove Test Interfaces\r\n        \r\n          Disable Directory Browsing\r\n          \r\n            Use a Least-Privileged Account for Running Applications\r\n            \r\n              Protect the JAAS Policy and Configuration Files\r\n              \r\n                Protect Sensitive Data Inside Configuration Files",
-      "Test Accounts Are Removed\r\n      \r\n        Test Interfaces Are Removed\r\n        \r\n          Directory Browsing Is Disabled\r\n          \r\n            A Least Privileged Account Is Used for Running Applications\r\n            \r\n              JAAS Policy and Configuration Files Are Protected\r\n              \r\n                Sensitive Data Inside Configuration Files Is Protected"
+      "Remove Test Accounts\n      \n        Remove Test Interfaces\n        \n          Disable Directory Browsing\n          \n            Use a Least-Privileged Account for Running Applications\n              \n                Protect Sensitive Data Inside Configuration Files",
+      "Test Accounts Are Removed\n        \n          Directory Browsing Is Disabled\n          \n            A Least Privileged Account Is Used for Running Applications\n              \n                Sensitive Data Inside Configuration Files Is Protected"
     ],
     "pre": [
       "myapp:!:503:0:MyApp's account:/home/myapp:/bin/bash",
@@ -1875,13 +1814,10 @@
       "Remove Test Interfaces",
       "Disable Directory Browsing",
       "Use a Least-Privileged Account for Running Applications",
-      "Protect the JAAS Policy and Configuration Files",
       "Protect Sensitive Data Inside Configuration Files",
       "Test Accounts Are Removed",
-      "Test Interfaces Are Removed",
       "Directory Browsing Is Disabled",
       "A Least Privileged Account Is Used for Running Applications",
-      "JAAS Policy and Configuration Files Are Protected",
       "Sensitive Data Inside Configuration Files Is Protected"
     ]
   },
@@ -1903,20 +1839,12 @@
       "text": "Use a Least-Privileged Account for Running Applications"
     },
     {
-      "href": "/article/47e80747-3e12-4dd1-a522-ea5c33154a86",
-      "text": "Protect the JAAS Policy and Configuration Files"
-    },
-    {
       "href": "/article/3f301ff9-098d-46cb-ac53-cb3fa6897cdf",
       "text": "Protect Sensitive Data Inside Configuration Files"
     },
     {
       "href": "/article/256b4884-9ff0-4a33-960c-305b824bab68",
       "text": "Test Accounts Are Removed"
-    },
-    {
-      "href": "/article/fe7941bc-b986-48f9-9fa3-422c34db36bd",
-      "text": "Test Interfaces Are Removed"
     },
     {
       "href": "/article/65e70f79-645d-415c-9e71-9cff045cc1c4",
@@ -1927,13 +1855,9 @@
       "text": "A Least Privileged Account Is Used for Running Applications"
     },
     {
-      "href": "/article/4bc8430f-b950-455a-80c1-8cbdb524c1e3",
-      "text": "JAAS Policy and Configuration Files Are Protected"
-    },
-    {
       "href": "/article/f9c1e6b0-1bc4-4108-9c9a-55dca84749ac",
       "text": "Sensitive Data Inside Configuration Files Is Protected"
     }
   ],
-  "html": "<h1>What to Check For</h1>\r\n  <p>Ensure your application is running with the minimum set of local system privileges.</p>\r\n  <h1>Why</h1>\r\n  <p>Applying the principle of least privilege to the application's server account reduces the damage potential if the application&nbsp;is compromised by an attacker.</p>\r\n  <h1>How to Check</h1>\r\n  <p>Follow these steps to ensure your application is running as a least-privileged account:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Identify the accounts&nbsp;that your application is using. </strong>Examine <em>/etc/passwd</em> in Unix or <em>Control Panel/Administrative Tools/Computer Management</em> in Windows to identify the accounts that are used by your application. Ensure they are members of a dedicated to your application group. Verify that your application's accounts are not members of any of the following:</p>\r\n      <ul>\r\n        <li>Any root or administrative groups <li>Any groups dedicated to privileged users <li>The normal users group <li>Any group that is dedicated to a system service, network service, etc.</li></li></li></li>\r\n      </ul>\r\n      <p>If your application spawns sub-processes, identify the accounts that are used for running those processes. Apply the same restrictions to these accounts as well.</p>\r\n      <li>\r\n        <p>\r\n          <strong>Ensure that the Principle of Least Privilege is enforced on your application's system accounts. </strong>Ensure your application's accounts are given the least possible privileges needed. Verify that your application's local system group is given the least possible privileges.</p>\r\n        <li>\r\n          <p>\r\n            <strong>Ensure your application does not gain additional privileges. </strong>Verify that your application's code base does not contain any functionality that allows your application to gain additional local system privileges. Ensure that the following requirements are met:</p>\r\n          <ul>\r\n            <li>Your application does not use system functions such as setuid, setgid, etc. <li>Your application uses the <em>-Djava.library.path </em>flag at runtime when loading native libraries.</li></li>\r\n          </ul>\r\n        </li>\r\n      </li>\r\n    </li>\r\n  </ol>\r\n  <h1>How to Fix</h1>\r\n  <p>When applying the principle of least privilege to the application's server account:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Identify the local account. </strong>Determine the local system account that will be used when running your application. Because the application is web-based, it is likely that the account is on the web server. </p>\r\n      <li>\r\n        <p>\r\n          <strong>Identify the application's requirements. </strong>Determine what access rights are required by your application. Because the application may need access to different resources such as sockets and the local filesystem, identify the resources that are essential to your application's business logic. For example, identify the local directories that should be accessed. </p>\r\n        <li>\r\n          <p>\r\n            <strong>Set the appropriate privileges. </strong>Create a role for your application by dedicating a local group to it. Once the appropriate privileges are established, set the appropriate access rights to the local system account. Any extra privileges should be revoked.</p>\r\n        </li>\r\n      </li>\r\n    </li>\r\n  </ol>\r\n  <h1>Problem Example</h1>\r\n  <p>The following snippet shows the access rights associated with MyApp's local account as noted in the <em>/etc/passwd</em> file. Unfortunately, the local account is part of the root group; therefore, if an attacker compromises the application, he gains root privileges on the hosting server.</p>\r\n  <pre>myapp:&#33;:503:0:MyApp's account:/home/myapp:/bin/bash</pre>\r\n  <h1>Solution Example</h1>\r\n  <p>The following snippet shows the access rights associated with MyApp's local account as noted in the <em>/etc/passwd</em> file. Because the local account is in a dedicated group, compromising the application does not compromise the hosting server.</p>\r\n  <pre>myapp:&#33;:503:503:MyApp's account:/home/myapp:/bin/bash</pre>\r\n  <h1>Java Deployment Guidelines</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/f21f5350-826d-44dd-b758-fd824d52f592\">Remove Test Accounts</a>\r\n      <li>\r\n        <a href=\"/article/df860f3d-2185-4939-be4b-ef26d8891855\">Remove Test Interfaces</a>\r\n        <li>\r\n          <a href=\"/article/fd675679-e8ad-40fc-bac4-d56fc440bc00\">Disable Directory Browsing</a>\r\n          <li>\r\n            <a href=\"/article/aebb10ce-aeb6-45e5-b159-e2bc76b012bf\">Use a Least-Privileged Account for Running Applications</a>\r\n            <li>\r\n              <a href=\"/article/47e80747-3e12-4dd1-a522-ea5c33154a86\">Protect the JAAS Policy and Configuration Files</a>\r\n              <li>\r\n                <a href=\"/article/3f301ff9-098d-46cb-ac53-cb3fa6897cdf\">Protect Sensitive Data Inside Configuration Files</a>\r\n              </li>\r\n            </li>\r\n          </li>\r\n        </li>\r\n      </li>\r\n    </li>\r\n  </ul>\r\n  <h1>Java Deployment Checklists</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/256b4884-9ff0-4a33-960c-305b824bab68\">Test Accounts Are Removed</a>\r\n      <li>\r\n        <a href=\"/article/fe7941bc-b986-48f9-9fa3-422c34db36bd\">Test Interfaces Are Removed</a>\r\n        <li>\r\n          <a href=\"/article/65e70f79-645d-415c-9e71-9cff045cc1c4\">Directory Browsing Is Disabled</a>\r\n          <li>\r\n            <a href=\"/article/a2000bc9-7e22-4d0c-91b8-a9ec623985d3\">A Least Privileged Account Is Used for Running Applications</a>\r\n            <li>\r\n              <a href=\"/article/4bc8430f-b950-455a-80c1-8cbdb524c1e3\">JAAS Policy and Configuration Files Are Protected</a>\r\n              <li>\r\n                <a href=\"/article/f9c1e6b0-1bc4-4108-9c9a-55dca84749ac\">Sensitive Data Inside Configuration Files Is Protected</a>\r\n              </li>\r\n            </li>\r\n          </li>\r\n        </li>\r\n      </li>\r\n    </li>\r\n  </ul>"
+  "html": "<h1>What to Check For</h1>\n  <p>Ensure your application is running with the minimum set of local system privileges.</p>\n  <h1>Why</h1>\n  <p>Applying the principle of least privilege to the application's server account reduces the damage potential if the application&nbsp;is compromised by an attacker.</p>\n  <h1>How to Check</h1>\n  <p>Follow these steps to ensure your application is running as a least-privileged account:</p>\n  <ol>\n    <li>\n      <p>\n        <strong>Identify the accounts&nbsp;that your application is using. </strong>Examine <em>/etc/passwd</em> in Unix or <em>Control Panel/Administrative Tools/Computer Management</em> in Windows to identify the accounts that are used by your application. Ensure they are members of a dedicated to your application group. Verify that your application's accounts are not members of any of the following:</p>\n      <ul>\n        <li>Any root or administrative groups <li>Any groups dedicated to privileged users <li>The normal users group <li>Any group that is dedicated to a system service, network service, etc.</li></li></li></li>\n      </ul>\n      <p>If your application spawns sub-processes, identify the accounts that are used for running those processes. Apply the same restrictions to these accounts as well.</p>\n      <li>\n        <p>\n          <strong>Ensure that the Principle of Least Privilege is enforced on your application's system accounts. </strong>Ensure your application's accounts are given the least possible privileges needed. Verify that your application's local system group is given the least possible privileges.</p>\n        <li>\n          <p>\n            <strong>Ensure your application does not gain additional privileges. </strong>Verify that your application's code base does not contain any functionality that allows your application to gain additional local system privileges. Ensure that the following requirements are met:</p>\n          <ul>\n            <li>Your application does not use system functions such as setuid, setgid, etc. <li>Your application uses the <em>-Djava.library.path </em>flag at runtime when loading native libraries.</li></li>\n          </ul>\n        </li>\n      </li>\n    </li>\n  </ol>\n  <h1>How to Fix</h1>\n  <p>When applying the principle of least privilege to the application's server account:</p>\n  <ol>\n    <li>\n      <p>\n        <strong>Identify the local account. </strong>Determine the local system account that will be used when running your application. Because the application is web-based, it is likely that the account is on the web server. </p>\n      <li>\n        <p>\n          <strong>Identify the application's requirements. </strong>Determine what access rights are required by your application. Because the application may need access to different resources such as sockets and the local filesystem, identify the resources that are essential to your application's business logic. For example, identify the local directories that should be accessed. </p>\n        <li>\n          <p>\n            <strong>Set the appropriate privileges. </strong>Create a role for your application by dedicating a local group to it. Once the appropriate privileges are established, set the appropriate access rights to the local system account. Any extra privileges should be revoked.</p>\n        </li>\n      </li>\n    </li>\n  </ol>\n  <h1>Problem Example</h1>\n  <p>The following snippet shows the access rights associated with MyApp's local account as noted in the <em>/etc/passwd</em> file. Unfortunately, the local account is part of the root group; therefore, if an attacker compromises the application, he gains root privileges on the hosting server.</p>\n  <pre>myapp:&#33;:503:0:MyApp's account:/home/myapp:/bin/bash</pre>\n  <h1>Solution Example</h1>\n  <p>The following snippet shows the access rights associated with MyApp's local account as noted in the <em>/etc/passwd</em> file. Because the local account is in a dedicated group, compromising the application does not compromise the hosting server.</p>\n  <pre>myapp:&#33;:503:503:MyApp's account:/home/myapp:/bin/bash</pre>\n  <h1>Java Deployment Guidelines</h1>\n  <ul>\n    <li>\n      <a href=\"/article/f21f5350-826d-44dd-b758-fd824d52f592\">Remove Test Accounts</a>\n      <li>\n        <a href=\"/article/df860f3d-2185-4939-be4b-ef26d8891855\">Remove Test Interfaces</a>\n        <li>\n          <a href=\"/article/fd675679-e8ad-40fc-bac4-d56fc440bc00\">Disable Directory Browsing</a>\n          <li>\n            <a href=\"/article/aebb10ce-aeb6-45e5-b159-e2bc76b012bf\">Use a Least-Privileged Account for Running Applications</a>\n              <li>\n                <a href=\"/article/3f301ff9-098d-46cb-ac53-cb3fa6897cdf\">Protect Sensitive Data Inside Configuration Files</a>\n              </li>\n          </li>\n        </li>\n      </li>\n    </li>\n  </ul>\n  <h1>Java Deployment Checklists</h1>\n  <ul>\n    <li>\n      <a href=\"/article/256b4884-9ff0-4a33-960c-305b824bab68\">Test Accounts Are Removed</a>\n        <li>\n          <a href=\"/article/65e70f79-645d-415c-9e71-9cff045cc1c4\">Directory Browsing Is Disabled</a>\n          <li>\n            <a href=\"/article/a2000bc9-7e22-4d0c-91b8-a9ec623985d3\">A Least Privileged Account Is Used for Running Applications</a>\n              <li>\n                <a href=\"/article/f9c1e6b0-1bc4-4108-9c9a-55dca84749ac\">Sensitive Data Inside Configuration Files Is Protected</a>\n              </li> \n          </li>\n        </li>\n    </li>\n  </ul>"
 }

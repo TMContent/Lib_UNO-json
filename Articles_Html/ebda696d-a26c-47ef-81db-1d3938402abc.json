@@ -1,6 +1,6 @@
 {
   "id": "ebda696d-a26c-47ef-81db-1d3938402abc",
-  "checksum": "45548b5ab1f34fcf0f0b7d668bb8b8eeab23d5fd",
+  "checksum": "45a378c7ccf831a9d2de9fcaac1fc2fc3f37415a",
   "words": {
     "applies": [
       "h2"
@@ -98,7 +98,7 @@
       "strong",
       "title"
     ],
-    "ssl": [
+    "tls": [
       "p",
       "p",
       "p",
@@ -127,8 +127,7 @@
       "li",
       "strong",
       "ul",
-      "li",
-      "title"
+      "li"
     ],
     "certificates": [
       "p",
@@ -288,7 +287,7 @@
       "li",
       "strong"
     ],
-    "ssl-secured": [
+    "tls-secured": [
       "p"
     ],
     "area": [
@@ -613,6 +612,9 @@
       "ul",
       "li",
       "a"
+    ],
+    "tsl": [
+      "title"
     ]
   },
   "tags": {
@@ -626,28 +628,28 @@
     ],
     "ul": [
       "Web Applications",
-      "For more information about importing SSL certificates into common Web Servers, please see http://www.directnic.com/help/guides/index.php?guide_id=7"
+      "For more information about importing TLS certificates into common Web Servers, please see http://www.directnic.com/help/guides/index.php?guide_id=7"
     ],
     "li": [
       "Web Applications",
-      "Purchase a valid SSL certificate. You may purchase a valid SSL key from VeriSign, Thawte, or your web hosting provider. Follow the vendor's instructions for purchasing the SSL certificate. The certificate is usually a .cer file. Make sure the certificate matches all domains used by the application.",
-      "Import the valid SSL certificate. The exact instructions for importing SSL certificates are different for different application servers. Please, refer to your application server's documentation or technical support for detailed instructions on how to install SSL certificates.",
-      "Configure the web application server to use SSL. The exact instructions for configuring web application servers to use SSL are different for different platforms. Please, refer to your application server's documentation or technical support for detailed instructions on how to install SSL certificates.",
-      "For more information about importing SSL certificates into common Web Servers, please see http://www.directnic.com/help/guides/index.php?guide_id=7"
+      "Purchase a valid TLS certificate. You may purchase a valid TLS key from VeriSign, Thawte, or your web hosting provider. Follow the vendor's instructions for purchasing the TLS certificate. The certificate is usually a .cer file. Make sure the certificate matches all domains used by the application.",
+      "Import the valid TLS certificate. The exact instructions for importing TLS certificates are different for different application servers. Please, refer to your application server's documentation or technical support for detailed instructions on how to install TLS certificates.",
+      "Configure the web application server to use TLS. The exact instructions for configuring web application servers to use TLS are different for different platforms. Please, refer to your application server's documentation or technical support for detailed instructions on how to install TLS certificates.",
+      "For more information about importing TLS certificates into common Web Servers, please see http://www.directnic.com/help/guides/index.php?guide_id=7"
     ],
     "p": [
-      "Verify that valid SSL certificates are used.",
-      "Using valid SSL certificates helps prevent phishing attacks by assuring visitors that your site is secure and trusted.",
-      "To verify that a valid SSL certificate is used, open the SSL-secured area of the site with a web browser. The web browser should indicate whether the SSL certificate is valid in the URL bar. The web browser will display a warning message if the SSL certificate is not valid.",
-      "To use a valid SSL certificate:"
+      "Verify that valid TLS certificates are used.",
+      "Using valid TLS certificates helps prevent phishing attacks by assuring visitors that your site is secure and trusted.",
+      "To verify that a valid TLS certificate is used, open the TLS-secured area of the site with a web browser. The web browser should indicate whether the TLS certificate is valid in the URL bar. The web browser will display a warning message if the TLS certificate is not valid.",
+      "To use a valid TLS certificate:"
     ],
     "ol": [
-      "Purchase a valid SSL certificate. You may purchase a valid SSL key from VeriSign, Thawte, or your web hosting provider. Follow the vendor's instructions for purchasing the SSL certificate. The certificate is usually a .cer file. Make sure the certificate matches all domains used by the application.\n Import the valid SSL certificate. The exact instructions for importing SSL certificates are different for different application servers. Please, refer to your application server's documentation or technical support for detailed instructions on how to install SSL certificates.\n Configure the web application server to use SSL. The exact instructions for configuring web application servers to use SSL are different for different platforms. Please, refer to your application server's documentation or technical support for detailed instructions on how to install SSL certificates."
+      "Purchase a valid TLS certificate. You may purchase a valid TLS key from VeriSign, Thawte, or your web hosting provider. Follow the vendor's instructions for purchasing the TLS certificate. The certificate is usually a .cer file. Make sure the certificate matches all domains used by the application.\n Import the valid TLS certificate. The exact instructions for importing TLS certificates are different for different application servers. Please, refer to your application server's documentation or technical support for detailed instructions on how to install TLS certificates.\n Configure the web application server to use TLS. The exact instructions for configuring web application servers to use TLS are different for different platforms. Please, refer to your application server's documentation or technical support for detailed instructions on how to install TLS certificates."
     ],
     "strong": [
-      "Purchase a valid SSL certificate.",
-      "Import the valid SSL certificate.",
-      "Configure the web application server to use SSL."
+      "Purchase a valid TLS certificate.",
+      "Import the valid TLS certificate.",
+      "Configure the web application server to use TLS."
     ],
     "a": [
       "http://www.directnic.com/help/guides/index.php?guide_id=7"
@@ -659,5 +661,5 @@
       "text": "http://www.directnic.com/help/guides/index.php?guide_id=7"
     }
   ],
-  "html": "<h2>Applies To</h2><ul><li> Web Applications</li>\n</ul><h2>What to Check For</h2><p>Verify that valid SSL certificates are used.\n</p><h2>Why</h2><p>Using valid SSL certificates helps prevent phishing attacks by assuring visitors that your site is secure and trusted. \n</p><h2>How to Check</h2><p>To verify that a valid SSL certificate is used, open the SSL-secured area of the site with a web browser. The web browser should indicate whether the SSL certificate is valid in the URL bar. The web browser will display a warning message if the SSL certificate is not valid.\n</p><h2>How to Fix</h2><p>To use a valid SSL certificate:\n</p><ol>\n<li> <strong>Purchase a valid SSL certificate.</strong> You may purchase a valid SSL key from VeriSign, Thawte, or your web hosting provider. Follow the vendor's instructions for purchasing the SSL certificate. The certificate is usually a .cer file. Make sure the certificate matches all domains used by the application.</li>\n<li> <strong>Import the valid SSL certificate.</strong> The exact instructions for importing SSL certificates are different for different application servers. Please, refer to your application server's documentation or technical support for detailed instructions on how to install SSL certificates.</li>\n<li> <strong>Configure the web application server to use SSL.</strong> The exact instructions for configuring web application servers to use SSL are different for different platforms. Please, refer to your application server's documentation or technical support for detailed instructions on how to install SSL certificates.</li>\n</ol><h2>Additional Resources</h2><ul><li> For more information about importing SSL certificates into common Web Servers, please see <a href=\"http://www.directnic.com/help/guides/index.php?guide_id=7\">http://www.directnic.com/help/guides/index.php?guide_id=7</a></li>\n</ul>"
+  "html": "<h2>Applies To</h2><ul><li> Web Applications</li>\n</ul><h2>What to Check For</h2><p>Verify that valid TLS certificates are used.\n</p><h2>Why</h2><p>Using valid TLS certificates helps prevent phishing attacks by assuring visitors that your site is secure and trusted. \n</p><h2>How to Check</h2><p>To verify that a valid TLS certificate is used, open the TLS-secured area of the site with a web browser. The web browser should indicate whether the TLS certificate is valid in the URL bar. The web browser will display a warning message if the TLS certificate is not valid.\n</p><h2>How to Fix</h2><p>To use a valid TLS certificate:\n</p><ol>\n<li> <strong>Purchase a valid TLS certificate.</strong> You may purchase a valid TLS key from VeriSign, Thawte, or your web hosting provider. Follow the vendor's instructions for purchasing the TLS certificate. The certificate is usually a .cer file. Make sure the certificate matches all domains used by the application.</li>\n<li> <strong>Import the valid TLS certificate.</strong> The exact instructions for importing TLS certificates are different for different application servers. Please, refer to your application server's documentation or technical support for detailed instructions on how to install TLS certificates.</li>\n<li> <strong>Configure the web application server to use TLS.</strong> The exact instructions for configuring web application servers to use TLS are different for different platforms. Please, refer to your application server's documentation or technical support for detailed instructions on how to install TLS certificates.</li>\n</ol><h2>Additional Resources</h2><ul><li> For more information about importing TLS certificates into common Web Servers, please see <a href=\"http://www.directnic.com/help/guides/index.php?guide_id=7\">http://www.directnic.com/help/guides/index.php?guide_id=7</a></li>\n</ul>"
 }

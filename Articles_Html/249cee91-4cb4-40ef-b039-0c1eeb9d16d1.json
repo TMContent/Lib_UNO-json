@@ -1,10 +1,7 @@
 {
   "id": "249cee91-4cb4-40ef-b039-0c1eeb9d16d1",
-  "checksum": "a709d8ab8fbaf055b3baaccaf490dc71dc0c13af",
+  "checksum": "3e5aa7461f9443415c90300d9aea7df407e2ed79",
   "words": {
-    "0": [
-      "pre"
-    ],
     "what": [
       "h1"
     ],
@@ -643,7 +640,7 @@
       "ul",
       "li"
     ],
-    "note   unfortunately": [
+    "note&nbsp&nbsp;&nbsp;unfortunately,": [
       "blockquote",
       "p"
     ],
@@ -1136,10 +1133,7 @@
     "true)": [
       "pre"
     ],
-    "{": [
-      "pre",
-      "pre",
-      "pre",
+    "&#123&nbsp;": [
       "pre"
     ],
     "consolekeyinfo": [
@@ -1148,7 +1142,7 @@
     "conkeyinfo": [
       "pre"
     ],
-    "consolereadkey(true);": [
+    "consolereadkey(true);&nbsp;": [
       "pre"
     ],
     "conkeyinfo.key": [
@@ -1161,30 +1155,35 @@
       "pre",
       "pre"
     ],
-    "consolekeyenter)": [
+    "consolekeyenter)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
       "pre"
     ],
-    "break": [
+    "break&nbsp;": [
       "pre"
     ],
     "else": [
       "pre",
-      "pre",
       "pre"
     ],
-    "consolekeyescape)": [
+    "consolekeyescape)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
       "pre"
     ],
-    "return": [
+    "return&nbsp;": [
       "pre"
     ],
-    "consolekeybackspace)": [
+    "consolekeybackspace)&nbsp;": [
+      "pre"
+    ],
+    "&#123&nbsp;&nbsp;&nbsp;&nbsp;": [
       "pre"
     ],
     "securepassword.length": [
       "pre"
     ],
-    "!=": [
+    "&#33=": [
+      "pre"
+    ],
+    "0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
       "pre"
     ],
     "securepasswordremoveat(securepassword.length": [
@@ -1193,14 +1192,17 @@
     "-": [
       "pre"
     ],
-    "1;": [
+    "1;&nbsp;": [
       "pre"
     ],
-    "}": [
+    "&#125&nbsp;": [
       "pre",
       "pre"
     ],
-    "securepasswordappendchar(conkeyinfo.keychar);}console.writeline(securepassword.length.tostring());": [
+    "else&nbsp&nbsp;&nbsp;&nbsp;": [
+      "pre"
+    ],
+    "securepasswordappendchar(conkeyinfo.keychar);&#125;console.writeline(securepassword.length.tostring());": [
       "pre"
     ],
     "retrieving": [
@@ -1276,26 +1278,30 @@
     "usesecretdatasecurestring": [
       "pre"
     ],
-    "secret{": [
+    "secret&#123;&nbsp;": [
       "pre"
     ],
     "intptr": [
       "pre"
     ],
-    "marshalsecurestringtobstr(secret);": [
+    "marshalsecurestringtobstr(secret);&nbsp;": [
       "pre"
     ],
-    "try": [
+    "try&nbsp": [
+      "pre"
+    ],
+    "&#123&nbsp;&nbsp;&nbsp;": [
+      "pre",
       "pre"
     ],
     "//": [
       "pre",
       "pre"
     ],
-    "here": [
+    "here&nbsp": [
       "pre"
     ],
-    "finally": [
+    "finally&nbsp": [
       "pre"
     ],
     "make": [
@@ -1307,13 +1313,13 @@
     "zeroed": [
       "pre"
     ],
-    "out": [
+    "out&nbsp&nbsp;&nbsp;": [
       "pre"
     ],
-    "marshalzerofreebstr(bstr);": [
+    "marshalzerofreebstr(bstr);&nbsp;": [
       "pre"
     ],
-    "}}": [
+    "&#125&#125;": [
       "pre"
     ],
     "additional": [
@@ -1367,6 +1373,9 @@
     "guidance": [
       "p"
     ],
+    "sink]": [
+      "title"
+    ],
     "where": [
       "title"
     ],
@@ -1385,7 +1394,7 @@
     "p": [
       "Consider using the System.Security.SecureString type to help protect secrets in memory. SecureString objects use DPAPI encryption to store data in an encrypted format in memory. They are only decrypted when they are accessed.",
       "Although you have to decrypt the data to use it, by using SecureString instead of System.String you gain a number of benefits:",
-      "Note   Unfortunately, in many scenarios you are forced to convert the SecureString to a System.String before you can use it. For example, few .NET Framework API methods currently provide overloads that support SecureString. Use of SecureString is less appropriate in ASP.NET applications. For example, It is unlikely you can take a credit card number from a Web page without the number at some point passing through a System.String because most of the form-related APIs do not have function overloads that permit use of SecureString instead of System.String.",
+      "Note&nbsp;&nbsp;&nbsp;Unfortunately, in many scenarios you are forced to convert the SecureString to a System.String before you can use it. For example, few .NET Framework API methods currently provide overloads that support SecureString. Use of SecureString is less appropriate in ASP.NET applications. For example, It is unlikely you can take a credit card number from a Web page without the number at some point passing through a System.String because most of the form-related APIs do not have function overloads that permit use of SecureString instead of System.String.",
       "Using System.String for storing sensitive information is not recommended for the following reasons:",
       "When working with sensitive data in memory.",
       "You can create a SecureString by supplying a pointer to a character array and supplying the length of that array. When constructed this way, the SecureString type takes a copy of your array. You should replace your source array with zeros as soon as the SecureString is constructed. A SecureString can also be constructed without an existing character array, and data can be copied one character at a time. The following code sample shows how to use the AppendChar method to create a secure string one character at a time.",
@@ -1432,15 +1441,15 @@
       "For more information see \"Making Strings more Secure\" at http://blogs.msdn.com/shawnfa/archive/2004/05/27/143254.aspx"
     ],
     "blockquote": [
-      "Note   Unfortunately, in many scenarios you are forced to convert the SecureString to a System.String before you can use it. For example, few .NET Framework API methods currently provide overloads that support SecureString. Use of SecureString is less appropriate in ASP.NET applications. For example, It is unlikely you can take a credit card number from a Web page without the number at some point passing through a System.String because most of the form-related APIs do not have function overloads that permit use of SecureString instead of System.String."
+      "Note&nbsp;&nbsp;&nbsp;Unfortunately, in many scenarios you are forced to convert the SecureString to a System.String before you can use it. For example, few .NET Framework API methods currently provide overloads that support SecureString. Use of SecureString is less appropriate in ASP.NET applications. For example, It is unlikely you can take a credit card number from a Web page without the number at some point passing through a System.String because most of the form-related APIs do not have function overloads that permit use of SecureString instead of System.String."
     ],
     "h2": [
       "Creating a SecureString",
       "Retrieving Data from a SecureString"
     ],
     "pre": [
-      "using System.Security;...SecureString securePassword = new SecureString(); Console.WriteLine(\"Enter Password....\"); while (true) {  ConsoleKeyInfo conKeyInfo = Console.ReadKey(true);  if (conKeyInfo.Key == ConsoleKey.Enter)      break;  else if (conKeyInfo.Key == ConsoleKey.Escape)      return;  else if (conKeyInfo.Key == ConsoleKey.Backspace)  {     if (securePassword.Length != 0)        securePassword.RemoveAt(securePassword.Length - 1);  }  else     securePassword.AppendChar(conKeyInfo.KeyChar);}Console.WriteLine(securePassword.Length.ToString());",
-      "using System.Security;using System.Runtime.InteropServices;...void UseSecretData(SecureString secret){  IntPtr bstr = Marshal.SecureStringToBSTR(secret);  try  {    // Use the bstr here  }  finally  {    // Make sure that the clear text data is zeroed out    Marshal.ZeroFreeBSTR(bstr);  }}"
+      "using System.Security;...SecureString securePassword = new SecureString(); Console.WriteLine(\"Enter Password....\"); while (true) &#123;&nbsp; ConsoleKeyInfo conKeyInfo = Console.ReadKey(true);&nbsp; if (conKeyInfo.Key == ConsoleKey.Enter)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; break;&nbsp; else if (conKeyInfo.Key == ConsoleKey.Escape)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return;&nbsp; else if (conKeyInfo.Key == ConsoleKey.Backspace)&nbsp; &#123;&nbsp;&nbsp;&nbsp;&nbsp; if (securePassword.Length &#33;= 0)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; securePassword.RemoveAt(securePassword.Length - 1);&nbsp; &#125;&nbsp; else&nbsp;&nbsp;&nbsp;&nbsp; securePassword.AppendChar(conKeyInfo.KeyChar);&#125;Console.WriteLine(securePassword.Length.ToString());",
+      "using System.Security;using System.Runtime.InteropServices;...void UseSecretData(SecureString secret)&#123;&nbsp; IntPtr bstr = Marshal.SecureStringToBSTR(secret);&nbsp; try&nbsp; &#123;&nbsp;&nbsp;&nbsp; // Use the bstr here&nbsp; &#125;&nbsp; finally&nbsp; &#123;&nbsp;&nbsp;&nbsp; // Make sure that the clear text data is zeroed out&nbsp;&nbsp;&nbsp; Marshal.ZeroFreeBSTR(bstr);&nbsp; &#125;&#125;"
     ],
     "br": [
       "",
@@ -1491,5 +1500,5 @@
       "text": "http://blogs.msdn.com/shawnfa/archive/2004/05/27/143254.aspx"
     }
   ],
-  "html": "<h1>What to Do</h1>\r\n  <p>Consider using the <b>System.Security.SecureString</b> type to help protect secrets in memory. <b>SecureString</b> objects use DPAPI encryption to store data in an encrypted format in memory. They are only decrypted when they are accessed.</p>\r\n  <h1>Why</h1>\r\n  <p>Although you have to decrypt the data to use it, by using <b>SecureString</b> instead of <b>System.String</b> you gain a number of benefits: </p>\r\n  <ul>\r\n    <li>You help to minimize the number of copies of the secret held in memory, which reduces the attack surface. <li>You reduce the amount of time that the secret is visible to an attacker who has access either to your process memory address space or to the page file. <li>You increase the likelihood that an encrypted version of the secret rather than a clear text version will end up in a dump file if your process crashes.</li></li></li>\r\n  </ul>\r\n  <blockquote>\r\n    <p>\r\n      <b>Note</b>&nbsp;&nbsp;&nbsp;Unfortunately, in many scenarios you are forced to convert the <b>SecureString</b> to a <b>System.String</b> before you can use it. For example, few .NET Framework API methods currently provide overloads that support <b>SecureString</b>. Use of <b>SecureString</b> is less appropriate in ASP.NET applications. For example, It is unlikely you can take a credit card number from a Web page without the number at some point passing through a <b>System.String</b> because most of the form-related APIs do not have function overloads that permit use of <b>SecureString</b> instead of <b>System.String</b>.</p>\r\n  </blockquote>\r\n  <p>Using System.String for storing sensitive information is not recommended for the following reasons: </p>\r\n  <ul>\r\n    <li>It is not pinned, which means that the garbage collector can move it around and leave the data in memory for indeterminate amounts of time. <li>It is not encrypted; therefore, the data can be read from process memory or from the swap file. <li>It is immutable; therefore, there is no effective way of clearing the data after use. Modification leaves both the old copy and a new copy in memory. </li></li></li>\r\n  </ul>\r\n  <h1>When</h1>\r\n  <p>When working with sensitive data in memory.</p>\r\n  <h1>How</h1>\r\n  <h2>Creating a SecureString</h2>\r\n  <p>You can create a <b>SecureString</b> by supplying a pointer to a character array and supplying the length of that array. When constructed this way, the <b>SecureString</b> type takes a copy of your array. You should replace your source array with zeros as soon as the <b>SecureString</b> is constructed. A <b>SecureString</b> can also be constructed without an existing character array, and data can be copied one character at a time. The following code sample shows how to use the <b>AppendChar</b> method to create a secure string one character at a time.</p>\r\n  <pre>using System.Security;<br />...<br />SecureString securePassword = new SecureString(); <br />Console.WriteLine(\"Enter Password....\"); <br />while (true) <br />&#123;<br />&nbsp; ConsoleKeyInfo conKeyInfo = Console.ReadKey(true);<br />&nbsp; if (conKeyInfo.Key == ConsoleKey.Enter)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; break;<br />&nbsp; else if (conKeyInfo.Key == ConsoleKey.Escape)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return;<br />&nbsp; else if (conKeyInfo.Key == ConsoleKey.Backspace)<br />&nbsp; &#123;<br />&nbsp;&nbsp;&nbsp;&nbsp; if (securePassword.Length &#33;= 0)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; securePassword.RemoveAt(securePassword.Length - 1);<br />&nbsp; &#125;<br />&nbsp; else<br />&nbsp;&nbsp;&nbsp;&nbsp; securePassword.AppendChar(conKeyInfo.KeyChar);<br />&#125;<br />Console.WriteLine(securePassword.Length.ToString());  </pre>\r\n  <h2>Retrieving Data from a SecureString</h2>\r\n  <p>You retrieve data from a <b>SecureString</b> by using the marshaller. The <b>Marshal</b> class has been extended to provide methods that convert a <b>SecureString</b> into a <b>BSTR</b> data type or a raw block of ANSI or Unicode memory. When you have finished using the unprotected string, you should erase that copy by calling <b>Marshal.ZeroFreeBSTR</b>, as shown in the following example.<b></b></p>\r\n  <pre>using System.Security;<br />using System.Runtime.InteropServices;<br />...<br />void UseSecretData(SecureString secret)<br />&#123;<br />&nbsp; IntPtr bstr = Marshal.SecureStringToBSTR(secret);<br />&nbsp; try<br />&nbsp; &#123;<br />&nbsp;&nbsp;&nbsp; // Use the bstr here<br />&nbsp; &#125;<br />&nbsp; finally<br />&nbsp; &#123;<br />&nbsp;&nbsp;&nbsp; // Make sure that the clear text data is zeroed out<br />&nbsp;&nbsp;&nbsp; Marshal.ZeroFreeBSTR(bstr);<br />&nbsp; &#125;<br />&#125;</pre>\r\n  <h1>Additional Resources</h1>\r\n  <ul>\r\n    <li>For more information see \"Making Strings more Secure\" at <a href=\"http://blogs.msdn.com/shawnfa/archive/2004/05/27/143254.aspx\">http://blogs.msdn.com/shawnfa/archive/2004/05/27/143254.aspx</a></li>\r\n  </ul>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
+  "html": "<h1>What to Do</h1>\n  <p>Consider using the <b>System.Security.SecureString</b> type to help protect secrets in memory. <b>SecureString</b> objects use DPAPI encryption to store data in an encrypted format in memory. They are only decrypted when they are accessed.</p>\n  <h1>Why</h1>\n  <p>Although you have to decrypt the data to use it, by using <b>SecureString</b> instead of <b>System.String</b> you gain a number of benefits: </p>\n  <ul>\n    <li>You help to minimize the number of copies of the secret held in memory, which reduces the attack surface. <li>You reduce the amount of time that the secret is visible to an attacker who has access either to your process memory address space or to the page file. <li>You increase the likelihood that an encrypted version of the secret rather than a clear text version will end up in a dump file if your process crashes.</li></li></li>\n  </ul>\n  <blockquote>\n    <p>\n      <b>Note</b>&amp;nbsp;&amp;nbsp;&amp;nbsp;Unfortunately, in many scenarios you are forced to convert the <b>SecureString</b> to a <b>System.String</b> before you can use it. For example, few .NET Framework API methods currently provide overloads that support <b>SecureString</b>. Use of <b>SecureString</b> is less appropriate in ASP.NET applications. For example, It is unlikely you can take a credit card number from a Web page without the number at some point passing through a <b>System.String</b> because most of the form-related APIs do not have function overloads that permit use of <b>SecureString</b> instead of <b>System.String</b>.</p>\n  </blockquote>\n  <p>Using System.String for storing sensitive information is not recommended for the following reasons: </p>\n  <ul>\n    <li>It is not pinned, which means that the garbage collector can move it around and leave the data in memory for indeterminate amounts of time. <li>It is not encrypted; therefore, the data can be read from process memory or from the swap file. <li>It is immutable; therefore, there is no effective way of clearing the data after use. Modification leaves both the old copy and a new copy in memory. </li></li></li>\n  </ul>\n  <h1>When</h1>\n  <p>When working with sensitive data in memory.</p>\n  <h1>How</h1>\n  <h2>Creating a SecureString</h2>\n  <p>You can create a <b>SecureString</b> by supplying a pointer to a character array and supplying the length of that array. When constructed this way, the <b>SecureString</b> type takes a copy of your array. You should replace your source array with zeros as soon as the <b>SecureString</b> is constructed. A <b>SecureString</b> can also be constructed without an existing character array, and data can be copied one character at a time. The following code sample shows how to use the <b>AppendChar</b> method to create a secure string one character at a time.</p>\n  <pre>using System.Security;<br />...<br />SecureString securePassword = new SecureString(); <br />Console.WriteLine(\"Enter Password....\"); <br />while (true) <br />&amp;#123;<br />&amp;nbsp; ConsoleKeyInfo conKeyInfo = Console.ReadKey(true);<br />&amp;nbsp; if (conKeyInfo.Key == ConsoleKey.Enter)<br />&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; break;<br />&amp;nbsp; else if (conKeyInfo.Key == ConsoleKey.Escape)<br />&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; return;<br />&amp;nbsp; else if (conKeyInfo.Key == ConsoleKey.Backspace)<br />&amp;nbsp; &amp;#123;<br />&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; if (securePassword.Length &amp;#33;= 0)<br />&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; securePassword.RemoveAt(securePassword.Length - 1);<br />&amp;nbsp; &amp;#125;<br />&amp;nbsp; else<br />&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; securePassword.AppendChar(conKeyInfo.KeyChar);<br />&amp;#125;<br />Console.WriteLine(securePassword.Length.ToString());  </pre>\n  <h2>Retrieving Data from a SecureString</h2>\n  <p>You retrieve data from a <b>SecureString</b> by using the marshaller. The <b>Marshal</b> class has been extended to provide methods that convert a <b>SecureString</b> into a <b>BSTR</b> data type or a raw block of ANSI or Unicode memory. When you have finished using the unprotected string, you should erase that copy by calling <b>Marshal.ZeroFreeBSTR</b>, as shown in the following example.<b></b></p>\n  <pre>using System.Security;<br />using System.Runtime.InteropServices;<br />...<br />void UseSecretData(SecureString secret)<br />&amp;#123;<br />&amp;nbsp; IntPtr bstr = Marshal.SecureStringToBSTR(secret);<br />&amp;nbsp; try<br />&amp;nbsp; &amp;#123;<br />&amp;nbsp;&amp;nbsp;&amp;nbsp; // Use the bstr here<br />&amp;nbsp; &amp;#125;<br />&amp;nbsp; finally<br />&amp;nbsp; &amp;#123;<br />&amp;nbsp;&amp;nbsp;&amp;nbsp; // Make sure that the clear text data is zeroed out<br />&amp;nbsp;&amp;nbsp;&amp;nbsp; Marshal.ZeroFreeBSTR(bstr);<br />&amp;nbsp; &amp;#125;<br />&amp;#125;</pre>\n  <h1>Additional Resources</h1>\n  <ul>\n    <li>For more information see \"Making Strings more Secure\" at <a href=\"http://blogs.msdn.com/shawnfa/archive/2004/05/27/143254.aspx\">http://blogs.msdn.com/shawnfa/archive/2004/05/27/143254.aspx</a></li>\n  </ul>\n  <hr />\n  <p>Adapted from Microsoft patterns &amp; practices guidance.</p>"
 }

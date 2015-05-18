@@ -1,6 +1,6 @@
 {
   "id": "a49a1085-52d3-4483-a5b2-e25201a62d0c",
-  "checksum": "e511c1e06fc36ad76fcdaecbd2fc59f695c6f985",
+  "checksum": "9eb197d550670799bcee6ed29539a8173cd98f37",
   "words": {
     "what": [
       "h1"
@@ -319,9 +319,9 @@
     "p": [
       "Use TLS for web pages that handle cardholder data. Design the site in such a way that https:// is always visible in the URL of those pages.",
       "HTTPS in the URL tells the user that the session is encrypted with TLS. If frames are used in a web application, then the URL may not accurately reflect whether TLS is used.",
-      "Use TLS to encrypt cardholder data sent to the web application. Install the TLS implementation that applies to the web server that you are using. Configure the web server so that TLS is used for accessing the web application. If TLS is not used for all parts\r\n of the web application, configure the server so that the parts of the web application that require cardholder data use TLS. If frames are used in the web application, place the page with the frame-set in a location that is accessible only through HTTPS or redesign the site to not use frames."
+      "Use TLS to encrypt cardholder data sent to the web application. Install the TLS implementation that applies to the web server that you are using. Configure the web server so that TLS is used for accessing the web application. If TLS is not used for all parts\n of the web application, configure the server so that the parts of the web application that require cardholder data use TLS. If frames are used in the web application, place the page with the frame-set in a location that is accessible only through HTTPS or redesign the site to not use frames."
     ]
   },
   "links": [],
-  "html": "<h1>What to Do</h1>\r\n  <p>Use TLS for web pages that handle cardholder data. Design the site in such a way that https:// is always visible in the URL of those pages.</p>\r\n  <h1>Why</h1>\r\n  <p>HTTPS in the URL tells the user that the session is encrypted with TLS. If frames are used in a web application, then the URL may not accurately reflect whether TLS is used.</p>\r\n  <h1>How</h1>\r\n  <p>Use TLS to encrypt cardholder data sent to the web application. Install the TLS implementation that applies to the web server that you are using. Configure the web server so that TLS is used for accessing the web application. If TLS is not used for all parts\r\n of the web application, configure the server so that the parts of the web application that require cardholder data use TLS. If frames are used in the web application, place the page with the frame-set in a location that is accessible only through HTTPS or redesign the site to not use frames.</p>"
+  "html": "<h1>What to Do</h1>\n  <p>Use TLS for web pages that handle cardholder data. Design the site in such a way that https:// is always visible in the URL of those pages.</p>\n  <h1>Why</h1>\n  <p>HTTPS in the URL tells the user that the session is encrypted with TLS. If frames are used in a web application, then the URL may not accurately reflect whether TLS is used.</p>\n  <h1>How</h1>\n  <p>Use TLS to encrypt cardholder data sent to the web application. Install the TLS implementation that applies to the web server that you are using. Configure the web server so that TLS is used for accessing the web application. If TLS is not used for all parts\n of the web application, configure the server so that the parts of the web application that require cardholder data use TLS. If frames are used in the web application, place the page with the frame-set in a location that is accessible only through HTTPS or redesign the site to not use frames.</p>"
 }

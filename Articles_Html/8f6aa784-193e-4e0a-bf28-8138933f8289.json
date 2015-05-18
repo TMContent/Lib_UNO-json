@@ -1,6 +1,6 @@
 {
   "id": "8f6aa784-193e-4e0a-bf28-8138933f8289",
-  "checksum": "a06b61f20e17bc89ce43f8daaf012ab146804764",
+  "checksum": "ec18fffde34796f2e1f683ad926fc018e32041e8",
   "words": {
     "443": [
       "p"
@@ -290,5 +290,5 @@
     ]
   },
   "links": [],
-  "html": "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>\r\n      <div>Web Application</div>\r\n    </li>\r\n  </ul>\r\n  <h1>What to Check For</h1>\r\n  <p>Check to ensure that the certificate valid from and valid to dates are in range to confirm the validity of your Web server certificate.</p>\r\n  <h1>How to Check</h1>\r\n  <p>If your Web application supports HTTPS (SSL) over port 443, you must install a server certificate. This is required as part of the session negotiation process that occurs when a client establishes a secure HTTPS session.</p>\r\n  <p>A valid certificate provides secure authentication so that a client can trust the server it is communicating with, and secure communication so that sensitive data remains confidential and tamperproof over the network.</p>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
+  "html": "<h1>Applies to</h1>\n  <ul>\n    <li>\n      <div>Web Application</div>\n    </li>\n  </ul>\n  <h1>What to Check For</h1>\n  <p>Check to ensure that the certificate valid from and valid to dates are in range to confirm the validity of your Web server certificate.</p>\n  <h1>How to Check</h1>\n  <p>If your Web application supports HTTPS (SSL) over port 443, you must install a server certificate. This is required as part of the session negotiation process that occurs when a client establishes a secure HTTPS session.</p>\n  <p>A valid certificate provides secure authentication so that a client can trust the server it is communicating with, and secure communication so that sensitive data remains confidential and tamperproof over the network.</p>\n  <hr />\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
 }

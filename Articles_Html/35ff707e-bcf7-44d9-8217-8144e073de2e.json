@@ -1,6 +1,6 @@
 {
   "id": "35ff707e-bcf7-44d9-8217-8144e073de2e",
-  "checksum": "a9abbbbc58110faab8db47325f109b024d736196",
+  "checksum": "ccda3275ff993d84f8912cbc9a8d83a4f7ab3d33",
   "words": {
     "applies": [
       "h1"
@@ -366,7 +366,7 @@
       "Each server on the network should only have one primary function.",
       "The less functionality a server has, the less&nbsp;surface there is for an attacker to exploit. Furthermore, in the event of physical hardware failure, only one network service per server goes down if each server only implements one primary function.",
       "Inspect running network services on each server and make sure only one primary function per server is enabled. Check the network documentation to verify that the stated purpose of the server matches the actual implementation.",
-      "Identify all network servers. Identify the primary function of each server. Describe the primary function of each server in the network documentation. Identify the network services and protocols necessary to implement the stated functions. Install and configure\r\n the necessary network services and protocols. Disable all other network services and protocols on each server."
+      "Identify all network servers. Identify the primary function of each server. Describe the primary function of each server in the network documentation. Identify the network services and protocols necessary to implement the stated functions. Install and configure\n the necessary network services and protocols. Disable all other network services and protocols on each server."
     ],
     "a": [
       "Implement Only One Primary Function per Server"
@@ -378,5 +378,5 @@
       "text": "Implement Only One Primary Function per Server"
     }
   ],
-  "html": "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 2.2.1.a</li>\r\n  </ul>\r\n  <h1>What to Check For</h1>\r\n  <p>Each server on the network should only have one primary function.</p>\r\n  <h1>Why</h1>\r\n  <p>The less functionality a server has, the less&amp;nbsp;surface there is for an attacker to exploit. Furthermore, in the event of physical hardware failure, only one network service per server goes down if each server only implements one primary function.</p>\r\n  <h1>How to Check</h1>\r\n  <p>Inspect running network services on each server and make sure only one primary function per server is enabled. Check the network documentation to verify that the stated purpose of the server matches the actual implementation.</p>\r\n  <h1>How to Fix</h1>\r\n  <p>Identify all network servers. Identify the primary function of each server. Describe the primary function of each server in the network documentation. Identify the network services and protocols necessary to implement the stated functions. Install and configure\r\n the necessary network services and protocols. Disable all other network services and protocols on each server.</p>\r\n  <h1>Related Items</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/8575475c-115b-413e-b6f9-25bfd824e165\">Implement Only One Primary Function per Server</a>\r\n    </li>\r\n  </ul>"
+  "html": "<h1>Applies to</h1>\n  <ul>\n    <li>PCI DSS Requirement 2.2.1.a</li>\n  </ul>\n  <h1>What to Check For</h1>\n  <p>Each server on the network should only have one primary function.</p>\n  <h1>Why</h1>\n  <p>The less functionality a server has, the less&amp;nbsp;surface there is for an attacker to exploit. Furthermore, in the event of physical hardware failure, only one network service per server goes down if each server only implements one primary function.</p>\n  <h1>How to Check</h1>\n  <p>Inspect running network services on each server and make sure only one primary function per server is enabled. Check the network documentation to verify that the stated purpose of the server matches the actual implementation.</p>\n  <h1>How to Fix</h1>\n  <p>Identify all network servers. Identify the primary function of each server. Describe the primary function of each server in the network documentation. Identify the network services and protocols necessary to implement the stated functions. Install and configure\n the necessary network services and protocols. Disable all other network services and protocols on each server.</p>\n  <h1>Related Items</h1>\n  <ul>\n    <li>\n      <a href=\"/article/8575475c-115b-413e-b6f9-25bfd824e165\">Implement Only One Primary Function per Server</a>\n    </li>\n  </ul>"
 }

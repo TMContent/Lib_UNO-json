@@ -1,6 +1,6 @@
 {
   "id": "4be4ed09-ed2f-4f05-9e63-e20708807542",
-  "checksum": "804b12a6f14213a06a097e88cdea38ef6aada01d",
+  "checksum": "8163ea1d789280c5f839dee9910095065af9c4ae",
   "words": {
     "what": [
       "h1",
@@ -1677,7 +1677,7 @@
       "pre",
       "pre"
     ],
-    "sqlconnectionconnectionstring)){": [
+    "sqlconnectionconnectionstring)){&nbsp;": [
       "pre",
       "pre"
     ],
@@ -1689,13 +1689,15 @@
       "pre",
       "pre"
     ],
-    "dataset);": [
+    "dataset);&nbsp;": [
       "pre",
       "pre"
     ],
     "sqldataadapter": [
       "pre",
-      "pre",
+      "pre"
+    ],
+    "sqldataadapter&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
       "pre",
       "pre"
     ],
@@ -1707,7 +1709,11 @@
       "pre",
       "pre"
     ],
-    "connection;": [
+    "connection;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+      "pre",
+      "pre"
+    ],
+    "&nbsp": [
       "pre",
       "pre"
     ],
@@ -1715,7 +1721,7 @@
       "pre",
       "pre"
     ],
-    "24;": [
+    "24;&nbsp;": [
       "pre",
       "pre"
     ],
@@ -1739,7 +1745,7 @@
       "pre",
       "pre"
     ],
-    "passtext;": [
+    "passtext;&nbsp;": [
       "pre",
       "pre"
     ],
@@ -1782,6 +1788,9 @@
     ],
     "guidance": [
       "p"
+    ],
+    "sink]": [
+      "title"
     ]
   },
   "tags": {
@@ -1813,18 +1822,18 @@
       "Adapted from Microsoft patterns & practices guidance."
     ],
     "ul": [
-      "By parameterizing input parameters and type enforcing them, user input is effectively filtered \r\n    Stored procedures are allowed to execute under different security privileges from the database user by most databases, thereby restricting the ability of the application to do anything beyond the actions specified in the stored procedures. For instance, an application would have execute access to a stored procedure, but no access to the base tables."
+      "By parameterizing input parameters and type enforcing them, user input is effectively filtered \n    Stored procedures are allowed to execute under different security privileges from the database user by most databases, thereby restricting the ability of the application to do anything beyond the actions specified in the stored procedures. For instance, an application would have execute access to a stored procedure, but no access to the base tables."
     ],
     "li": [
       "By parameterizing input parameters and type enforcing them, user input is effectively filtered",
       "Stored procedures are allowed to execute under different security privileges from the database user by most databases, thereby restricting the ability of the application to do anything beyond the actions specified in the stored procedures. For instance, an application would have execute access to a stored procedure, but no access to the base tables.",
       "If possible, use stored procedures. Stored procedures are pre-compiled statements that are stored on the database server. Using stored procedures improves your application's performance and security.",
-      "Determine the parameters in the SQL query or stored procedure being constructed. All parameters that result from user input or another untrusted source should be escaped, by specifying variable names in the query:\r\n      SELECT * from books WHERE ISBN = '@isbn'",
-      "Declare the explicit data types for each parameter in the SQL statement. When executing the SQL statement, specify the data type and length for each parameter in the query:\r\n      myCommand.SelectCommand.Parameters.Add(\"@isbn\", SqlDbType.VarChar, 10);",
-      "Specify the value for each parameter. The untrusted input is then specified, so that it can be properly handled when the SQL statement executes:\r\n      myCommand.SelectCommand.Parameters[\"@isbn\"].Value = '0494483923';"
+      "Determine the parameters in the SQL query or stored procedure being constructed. All parameters that result from user input or another untrusted source should be escaped, by specifying variable names in the query:\n      SELECT * from books WHERE ISBN = '@isbn'",
+      "Declare the explicit data types for each parameter in the SQL statement. When executing the SQL statement, specify the data type and length for each parameter in the query:\n      myCommand.SelectCommand.Parameters.Add(\"@isbn\", SqlDbType.VarChar, 10);",
+      "Specify the value for each parameter. The untrusted input is then specified, so that it can be properly handled when the SQL statement executes:\n      myCommand.SelectCommand.Parameters[\"@isbn\"].Value = '0494483923';"
     ],
     "ol": [
-      "If possible, use stored procedures. Stored procedures are pre-compiled statements that are stored on the database server. Using stored procedures improves your application's performance and security. \r\n    \r\n    \r\n      \r\n        Determine the parameters in the SQL query or stored procedure being constructed. All parameters that result from user input or another untrusted source should be escaped, by specifying variable names in the query:\r\n      SELECT * from books WHERE ISBN = '@isbn'\r\n    \r\n    \r\n      \r\n        Declare the explicit data types for each parameter in the SQL statement. When executing the SQL statement, specify the data type and length for each parameter in the query:\r\n      myCommand.SelectCommand.Parameters.Add(\"@isbn\", SqlDbType.VarChar, 10);\r\n    \r\n    \r\n      \r\n        Specify the value for each parameter. The untrusted input is then specified, so that it can be properly handled when the SQL statement executes:\r\n      myCommand.SelectCommand.Parameters[\"@isbn\"].Value = '0494483923';"
+      "If possible, use stored procedures. Stored procedures are pre-compiled statements that are stored on the database server. Using stored procedures improves your application's performance and security. \n    \n    \n      \n        Determine the parameters in the SQL query or stored procedure being constructed. All parameters that result from user input or another untrusted source should be escaped, by specifying variable names in the query:\n      SELECT * from books WHERE ISBN = '@isbn'\n    \n    \n      \n        Declare the explicit data types for each parameter in the SQL statement. When executing the SQL statement, specify the data type and length for each parameter in the query:\n      myCommand.SelectCommand.Parameters.Add(\"@isbn\", SqlDbType.VarChar, 10);\n    \n    \n      \n        Specify the value for each parameter. The untrusted input is then specified, so that it can be properly handled when the SQL statement executes:\n      myCommand.SelectCommand.Parameters[\"@isbn\"].Value = '0494483923';"
     ],
     "strong": [
       "If possible, use stored procedures.",
@@ -1866,14 +1875,14 @@
       "SqlCommand myCommand = new SqlCommand(SQLstr, myConnection);SqlDataAdapter myDataAdapter = new SqlDataAdapter(myCommand);myCommand.Connection.Open();SqlDataReader myReader = myCommand.ExecuteReader();",
       "mjones' AND 1=1; --",
       "SELECT * from users WHERE username = 'mjones' AND 1=1; --'  AND password = '1234';",
-      "using System.Data;using System.Data.SqlClient;   \r\n    using (SqlConnection connection = new SqlConnection(connectionString)){  DataSet userDataset = new DataSet();  SqlDataAdapter myDataAdapter = new SqlDataAdapter(         \"SELECT * from users WHERE username = '@uname' AND password = '@pwd'\", connection);                  myCommand.SelectCommand.Parameters.Add(\"@uname\", SqlDbType.VarChar, 24);  myCommand.SelectCommand.Parameters.Add(\"@pwd\", SqlDbType.VarChar, 16);  myCommand.SelectCommand.Parameters[\"@uname\"].Value = un.Text;  myCommand.SelectCommand.Parameters[\"@pwd\"].Value = pass.Text;  myDataAdapter.Fill(userDataset);}",
+      "using System.Data;using System.Data.SqlClient;   \n    using (SqlConnection connection = new SqlConnection(connectionString)){&nbsp; DataSet userDataset = new DataSet();&nbsp; SqlDataAdapter myDataAdapter = new SqlDataAdapter(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \"SELECT * from users WHERE username = '@uname' AND password = '@pwd'\", connection);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; myCommand.SelectCommand.Parameters.Add(\"@uname\", SqlDbType.VarChar, 24);&nbsp; myCommand.SelectCommand.Parameters.Add(\"@pwd\", SqlDbType.VarChar, 16);  myCommand.SelectCommand.Parameters[\"@uname\"].Value = un.Text;  myCommand.SelectCommand.Parameters[\"@pwd\"].Value = pass.Text;&nbsp; myDataAdapter.Fill(userDataset);}",
       "using System.Data;using System.Data.SqlClient;",
-      "using (SqlConnection connection = new SqlConnection(connectionString)){  DataSet userDataset = new DataSet();  SqlDataAdapter myDataAdapter = new SqlDataAdapter(         \"SELECT * from users WHERE username = '@uname' AND password = '@pwd'\", connection);                  myCommand.SelectCommand.Parameters.Add(\"@uname\", SqlDbType.VarChar, 24);  myCommand.SelectCommand.Parameters.Add(\"@pwd\", SqlDbType.VarChar, 16);  myCommand.SelectCommand.Parameters[\"@uname\"].Value = un.Text;  myCommand.SelectCommand.Parameters[\"@pwd\"].Value = pass.Text;  myDataAdapter.Fill(userDataset);}"
+      "using (SqlConnection connection = new SqlConnection(connectionString)){&nbsp; DataSet userDataset = new DataSet();&nbsp; SqlDataAdapter myDataAdapter = new SqlDataAdapter(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \"SELECT * from users WHERE username = '@uname' AND password = '@pwd'\", connection);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; myCommand.SelectCommand.Parameters.Add(\"@uname\", SqlDbType.VarChar, 24);&nbsp; myCommand.SelectCommand.Parameters.Add(\"@pwd\", SqlDbType.VarChar, 16);  myCommand.SelectCommand.Parameters[\"@uname\"].Value = un.Text;  myCommand.SelectCommand.Parameters[\"@pwd\"].Value = pass.Text;&nbsp; myDataAdapter.Fill(userDataset);}"
     ],
     "hr": [
       ""
     ]
   },
   "links": [],
-  "html": "<h1>What to Do</h1>\r\n  <p>Use type-safe parameters when constructing dynamic SQL queries or when passing parameters to stored procedures. </p>\r\n  <h1>Why</h1>\r\n  <p>If you use the Parameters collection, SQL treats the input is as a literal value rather then as executable code. The Parameters collection can be used to enforce type and length constraints on input data. Values outside of the range trigger an exception. If type safe SQL parameters are not used, attackers might be able to execute injection attacks that are embedded in the unfiltered input.</p>\r\n  <h1>When</h1>\r\n  <p>This guideline is applicable whenever there is an SQL statement that is built dynamically. It is also appropriate whenever stored procedures are utilized.</p>\r\n  <h1>How</h1>\r\n  <p>One way of making the application less susceptible to SQL injection attacks is by using stored procedures. Stored procedures are subroutines stored in the database that are available to applications for accessing the data. </p>\r\n  <p>Just using stored procedures isn't a complete remedy for SQL injection. The important thing to do is use parameters with stored procedures, else, your stored procedures can be susceptible to SQL injection if they use unfiltered input. Stored procedures provide several security advantages:</p>\r\n  <ul>\r\n    <li>By parameterizing input parameters and type enforcing them, user input is effectively filtered </li>\r\n    <li>Stored procedures are allowed to execute under different security privileges from the database user by most databases, thereby restricting the ability of the application to do anything beyond the actions specified in the stored procedures. For instance, an application would have execute access to a stored procedure, but no access to the base tables.</li>\r\n  </ul>\r\n  <p>To use type safe SQL parameters, follow these steps:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>If possible, use stored procedures.</strong> Stored procedures are pre-compiled statements that are stored on the database server. Using stored procedures improves your application's performance and security. <br /></p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Determine the parameters in the SQL query or stored procedure being constructed.</strong> All parameters that result from user input or another untrusted source should be escaped, by specifying variable names in the query:</p>\r\n      <pre>SELECT * from books WHERE ISBN = '@isbn'</pre>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Declare the explicit data types for each parameter in the SQL statement.</strong> When executing the SQL statement, specify the data type and length for each parameter in the query:</p>\r\n      <pre>myCommand.SelectCommand.Parameters.Add(\"@isbn\", SqlDbType.VarChar, 10);</pre>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Specify the value for each parameter.</strong> The untrusted input is then specified, so that it can be properly handled when the SQL statement executes:</p>\r\n      <pre>myCommand.SelectCommand.Parameters[\"@isbn\"].Value = '0494483923';</pre>\r\n    </li>\r\n  </ol>\r\n  <h1>Problem Example</h1>\r\n  <p>Consider an ASP.NET application that handles employee payroll functionality for a small company. One of the pages requires retrieving an employee record from a table based on a username and password supplied via a login dialog. The developer of the application created an SQL SELECT query to accomplish said task:</p>\r\n  <pre>using (SqlConnection myConnection = new SqlConnection(connectionString))<br /><pre>SqlConnection myConnection = new SqlConnection(\"Data Source=localhost\\\\sqlexpress;<br />\t\t\t\t\t\tInitial Catalog=EmployeePayroll;<br />\t\t\t\t\t\tIntegrated Security=True\");<br />string SQLstr = \"SELECT * from users WHERE username = '\" + un.Text + <br />\t\t\t\t\t\t\t\"' AND password = '\" + <br />\t\t\t\t\t\t\tpass.Text + \"'\";</pre><pre>SqlCommand myCommand = new SqlCommand(SQLstr, myConnection);<br />SqlDataAdapter myDataAdapter = new SqlDataAdapter(myCommand);<br />myCommand.Connection.Open();<br />SqlDataReader myReader = myCommand.ExecuteReader();<br /></pre></pre>\r\n  <p>In the preceding example, the SELECT statement will work as expected, assuming that the input is perfectly constrained. However, what happens if a user enters unexpected input such as '1234' for a password, and this for a username:</p>\r\n  <pre>mjones' AND 1=1; -- </pre>\r\n  <p>This will result in the SQL statement being executed at the database level:</p>\r\n  <pre>SELECT * from users WHERE username = 'mjones' AND 1=1; --'  AND password = '1234';</pre>\r\n  <p>This will allow the person entering data into the dialog box to select the account details of mjones without the correct password.</p>\r\n  <h1>Solution Example</h1>\r\n  <p>Consider an ASP.NET application that handles employee payroll functionality for a small company. One of the pages requires retrieving an employee record from a table based on a username and password supplied via a login dialog. The developer of the application uses the following SQL query to take advantage of type safe parameters with the SqlParameterCollection when constructing the query dynamically:</p>\r\n  <pre>\r\n    <pre>using System.Data;<br />using System.Data.SqlClient;   </pre>\r\n    <pre>using (SqlConnection connection = new SqlConnection(connectionString))<br />{<br />&nbsp; DataSet userDataset = new DataSet();<br />&nbsp; SqlDataAdapter myDataAdapter = new SqlDataAdapter(<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \"SELECT * from users WHERE username = '@uname' AND password = '@pwd'\", connection);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />&nbsp; myCommand.SelectCommand.Parameters.Add(\"@uname\", SqlDbType.VarChar, 24);<br />&nbsp; myCommand.SelectCommand.Parameters.Add(\"@pwd\", SqlDbType.VarChar, 16);<br />  myCommand.SelectCommand.Parameters[\"@uname\"].Value = un.Text;<br />  myCommand.SelectCommand.Parameters[\"@pwd\"].Value = pass.Text;<br />&nbsp; myDataAdapter.Fill(userDataset);<br />}  </pre>\r\n  </pre>\r\n  <p>In the preceding code example, the input values are constrained for length and escaped. If the data does not conform to the type or length defined by the parameter, the SqlParameter class throws an exception.</p>\r\n  <br />\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance. </p>"
+  "html": "<h1>What to Do</h1>\n  <p>Use type-safe parameters when constructing dynamic SQL queries or when passing parameters to stored procedures. </p>\n  <h1>Why</h1>\n  <p>If you use the Parameters collection, SQL treats the input is as a literal value rather then as executable code. The Parameters collection can be used to enforce type and length constraints on input data. Values outside of the range trigger an exception. If type safe SQL parameters are not used, attackers might be able to execute injection attacks that are embedded in the unfiltered input.</p>\n  <h1>When</h1>\n  <p>This guideline is applicable whenever there is an SQL statement that is built dynamically. It is also appropriate whenever stored procedures are utilized.</p>\n  <h1>How</h1>\n  <p>One way of making the application less susceptible to SQL injection attacks is by using stored procedures. Stored procedures are subroutines stored in the database that are available to applications for accessing the data. </p>\n  <p>Just using stored procedures isn't a complete remedy for SQL injection. The important thing to do is use parameters with stored procedures, else, your stored procedures can be susceptible to SQL injection if they use unfiltered input. Stored procedures provide several security advantages:</p>\n  <ul>\n    <li>By parameterizing input parameters and type enforcing them, user input is effectively filtered </li>\n    <li>Stored procedures are allowed to execute under different security privileges from the database user by most databases, thereby restricting the ability of the application to do anything beyond the actions specified in the stored procedures. For instance, an application would have execute access to a stored procedure, but no access to the base tables.</li>\n  </ul>\n  <p>To use type safe SQL parameters, follow these steps:</p>\n  <ol>\n    <li>\n      <p>\n        <strong>If possible, use stored procedures.</strong> Stored procedures are pre-compiled statements that are stored on the database server. Using stored procedures improves your application's performance and security. <br /></p>\n    </li>\n    <li>\n      <p>\n        <strong>Determine the parameters in the SQL query or stored procedure being constructed.</strong> All parameters that result from user input or another untrusted source should be escaped, by specifying variable names in the query:</p>\n      <pre>SELECT * from books WHERE ISBN = '@isbn'</pre>\n    </li>\n    <li>\n      <p>\n        <strong>Declare the explicit data types for each parameter in the SQL statement.</strong> When executing the SQL statement, specify the data type and length for each parameter in the query:</p>\n      <pre>myCommand.SelectCommand.Parameters.Add(\"@isbn\", SqlDbType.VarChar, 10);</pre>\n    </li>\n    <li>\n      <p>\n        <strong>Specify the value for each parameter.</strong> The untrusted input is then specified, so that it can be properly handled when the SQL statement executes:</p>\n      <pre>myCommand.SelectCommand.Parameters[\"@isbn\"].Value = '0494483923';</pre>\n    </li>\n  </ol>\n  <h1>Problem Example</h1>\n  <p>Consider an ASP.NET application that handles employee payroll functionality for a small company. One of the pages requires retrieving an employee record from a table based on a username and password supplied via a login dialog. The developer of the application created an SQL SELECT query to accomplish said task:</p>\n  <pre>using (SqlConnection myConnection = new SqlConnection(connectionString))<br /><pre>SqlConnection myConnection = new SqlConnection(\"Data Source=localhost\\\\sqlexpress;<br />\t\t\t\t\t\tInitial Catalog=EmployeePayroll;<br />\t\t\t\t\t\tIntegrated Security=True\");<br />string SQLstr = \"SELECT * from users WHERE username = '\" + un.Text + <br />\t\t\t\t\t\t\t\"' AND password = '\" + <br />\t\t\t\t\t\t\tpass.Text + \"'\";</pre><pre>SqlCommand myCommand = new SqlCommand(SQLstr, myConnection);<br />SqlDataAdapter myDataAdapter = new SqlDataAdapter(myCommand);<br />myCommand.Connection.Open();<br />SqlDataReader myReader = myCommand.ExecuteReader();<br /></pre></pre>\n  <p>In the preceding example, the SELECT statement will work as expected, assuming that the input is perfectly constrained. However, what happens if a user enters unexpected input such as '1234' for a password, and this for a username:</p>\n  <pre>mjones' AND 1=1; -- </pre>\n  <p>This will result in the SQL statement being executed at the database level:</p>\n  <pre>SELECT * from users WHERE username = 'mjones' AND 1=1; --'  AND password = '1234';</pre>\n  <p>This will allow the person entering data into the dialog box to select the account details of mjones without the correct password.</p>\n  <h1>Solution Example</h1>\n  <p>Consider an ASP.NET application that handles employee payroll functionality for a small company. One of the pages requires retrieving an employee record from a table based on a username and password supplied via a login dialog. The developer of the application uses the following SQL query to take advantage of type safe parameters with the SqlParameterCollection when constructing the query dynamically:</p>\n  <pre>\n    <pre>using System.Data;<br />using System.Data.SqlClient;   </pre>\n    <pre>using (SqlConnection connection = new SqlConnection(connectionString))<br />{<br />&amp;nbsp; DataSet userDataset = new DataSet();<br />&amp;nbsp; SqlDataAdapter myDataAdapter = new SqlDataAdapter(<br />&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; \"SELECT * from users WHERE username = '@uname' AND password = '@pwd'\", connection);&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; <br />&amp;nbsp; myCommand.SelectCommand.Parameters.Add(\"@uname\", SqlDbType.VarChar, 24);<br />&amp;nbsp; myCommand.SelectCommand.Parameters.Add(\"@pwd\", SqlDbType.VarChar, 16);<br />  myCommand.SelectCommand.Parameters[\"@uname\"].Value = un.Text;<br />  myCommand.SelectCommand.Parameters[\"@pwd\"].Value = pass.Text;<br />&amp;nbsp; myDataAdapter.Fill(userDataset);<br />}  </pre>\n  </pre>\n  <p>In the preceding code example, the input values are constrained for length and escaped. If the data does not conform to the type or length defined by the parameter, the SqlParameter class throws an exception.</p>\n  <br />\n  <hr />\n  <p>Adapted from Microsoft patterns &amp; practices guidance. </p>"
 }

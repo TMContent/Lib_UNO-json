@@ -1,6 +1,6 @@
 {
   "id": "98fb697a-6278-4f73-8937-291b2b83cdb4",
-  "checksum": "24f326425fa173a6c961acf2534c68a7e9a6c0e1",
+  "checksum": "9fe77b353d9516c25a8c23687e14c5f2b9e3f445",
   "words": {
     "what": [
       "h1",
@@ -443,7 +443,7 @@
     "choose": [
       "p"
     ],
-    "input for their": [
+    "input&nbspfor&nbsp;their": [
       "p"
     ],
     "next": [
@@ -889,7 +889,7 @@
       "ul",
       "li"
     ],
-    "owasp guide": [
+    "owasp&nbspguide": [
       "ul",
       "li"
     ],
@@ -912,7 +912,7 @@
       "ul",
       "li"
     ],
-    "owasp error": [
+    "owasp&nbsperror": [
       "ul",
       "li"
     ],
@@ -944,6 +944,9 @@
     "guidance": [
       "p"
     ],
+    "sink]": [
+      "title"
+    ],
     "disclosed": [
       "title"
     ]
@@ -958,7 +961,7 @@
     ],
     "p": [
       "Ensure that all error messages are generic and do not disclose any valuable or sensitive information that could be useful to an attacker.",
-      "Attackers often probe web applications for error messages as a first attempt to understand the underlying technologies in place. An attacker will look for discrepancies between error messages to discover when different code paths are being taken or to discover information about the quality of their input. Error messages that are directly echoed from backend systems such as SQL or OS error messages can help a malicious user choose what to input for their next attack.",
+      "Attackers often probe web applications for error messages as a first attempt to understand the underlying technologies in place. An attacker will look for discrepancies between error messages to discover when different code paths are being taken or to discover information about the quality of their input. Error messages that are directly echoed from backend systems such as SQL or OS error messages can help a malicious user choose what to input&nbsp;for&nbsp;their next attack.",
       "For every error message check that:",
       "For dynamically generated error messages also ensure that:",
       "The following code authenticates a user. Unfortunately, the code reveals through its error messages whether the credentials sent represent a valid user or an invalid user:",
@@ -972,8 +975,8 @@
       "For dynamically generated error messages also ensure that"
     ],
     "ol": [
-      "The error message is simple and generic. In particular do not include extra information regarding: The quality of the information being processed The mechanisms processing the data\r\n    Debug information is not echoed to the user. \r\n    There is only one error message displayed on all authentication failures. This message should be basic and not contain any information that can be used to discern between the following types of failures: Invalid username Valid username, but invalid password Account locked\r\n    A custom error message is used instead of the default error message which describes the error in detail: Set customErrors to RemoteOnly or On in the web.config file",
-      "Use of dynamic error messages is minimized. \r\n    Error messages that report the same message are exactly the same."
+      "The error message is simple and generic. In particular do not include extra information regarding: The quality of the information being processed The mechanisms processing the data\n    Debug information is not echoed to the user. \n    There is only one error message displayed on all authentication failures. This message should be basic and not contain any information that can be used to discern between the following types of failures: Invalid username Valid username, but invalid password Account locked\n    A custom error message is used instead of the default error message which describes the error in detail: Set customErrors to RemoteOnly or On in the web.config file",
+      "Use of dynamic error messages is minimized. \n    Error messages that report the same message are exactly the same."
     ],
     "li": [
       "The error message is simple and generic. In particular do not include extra information regarding: The quality of the information being processed The mechanisms processing the data",
@@ -988,14 +991,14 @@
       "Set customErrors to RemoteOnly or On in the web.config file",
       "Use of dynamic error messages is minimized.",
       "Error messages that report the same message are exactly the same.",
-      "For more information about best practices on authentication, visit the OWASP Guide to Authentication.",
-      "For more information on proper error handling techniques, visitthe OWASP Error Handling, Auditing and Logging."
+      "For more information about best practices on authentication, visit the OWASP&nbsp;Guide to Authentication.",
+      "For more information on proper error handling techniques, visitthe OWASP&nbsp;Error Handling, Auditing and Logging."
     ],
     "ul": [
       "The quality of the information being processed The mechanisms processing the data",
       "Invalid username Valid username, but invalid password Account locked",
       "Set customErrors to RemoteOnly or On in the web.config file",
-      "For more information about best practices on authentication, visit the OWASP Guide to Authentication. \r\n    For more information on proper error handling techniques, visitthe OWASP Error Handling, Auditing and Logging."
+      "For more information about best practices on authentication, visit the OWASP&nbsp;Guide to Authentication. \n    For more information on proper error handling techniques, visitthe OWASP&nbsp;Error Handling, Auditing and Logging."
     ],
     "br": [
       "",
@@ -1035,5 +1038,5 @@
       "text": "Error Handling, Auditing and Logging"
     }
   ],
-  "html": "<h1>What to Check For</h1>\r\n  <p>Ensure that all error messages are generic and do not disclose any valuable or sensitive information that could be useful to an attacker.</p>\r\n  <h1>Why</h1>\r\n  <p>Attackers often probe web applications for error messages as a first attempt to understand the underlying technologies in place. An attacker will look for discrepancies between error messages to discover when different code paths are being taken or to discover information about the quality of their input. Error messages that are directly echoed from backend systems such as SQL or OS error messages can help a malicious user choose what to input&nbsp;for&nbsp;their next attack. </p>\r\n  <h1>How to Check</h1>\r\n  <p>\r\n    <strong>For every error message check that</strong>:</p>\r\n  <ol>\r\n    <li>The error message is simple and generic. In particular do not include extra information regarding: <ul><li>The quality of the information being processed </li><li>The mechanisms processing the data</li></ul></li>\r\n    <li>Debug information is not echoed to the user. </li>\r\n    <li>There is only one error message displayed on all authentication failures. This message should be basic and not contain any information that can be used to discern between the following types of failures: <ul><li>Invalid username </li><li>Valid username, but invalid password </li><li>Account locked<br /></li></ul></li>\r\n    <li>A custom error message is used instead of the default error message which describes the error in detail: <ul><li>Set <strong>customErrors</strong> to <strong>RemoteOnly</strong> or <strong>On</strong> in the web.config file</li></ul></li>\r\n  </ol>\r\n  <p>\r\n    <strong>For dynamically generated error messages also ensure that</strong>:</p>\r\n  <ol>\r\n    <li>Use of dynamic error messages is minimized. </li>\r\n    <li>Error messages that report the same message are exactly the same.</li>\r\n  </ol>\r\n  <h1>Problem Example</h1>\r\n  <p>The following code authenticates a user. Unfortunately, the code reveals through its error messages whether the credentials sent represent a valid user or an invalid user:</p>\r\n  <blockquote>\r\n    <pre>public void login()<br />{<br />      if (!validUser())<br />      {<br />            throw new Exception(\"User not found.\");<br />      }<br />      if (!validPass())<br />      {<br />            throw new Exception(\"Wrong password.\");<br />      }<br />      commit();<br />}</pre>\r\n  </blockquote>\r\n  <h1>Additional Resources</h1>\r\n  <ul>\r\n    <li>For more information about best practices on authentication, visit the OWASP&nbsp;<a href=\"http://www.owasp.org/index.php/Guide_to_Authentication\">Guide to Authentication</a>. </li>\r\n    <li>For more information on proper error handling techniques, visitthe OWASP&nbsp;<a href=\"http://www.owasp.org/index.php/Error_Handling,_Auditing_and_Logging\">Error Handling, Auditing and Logging</a>.</li>\r\n  </ul>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance. </p>"
+  "html": "<h1>What to Check For</h1>\n  <p>Ensure that all error messages are generic and do not disclose any valuable or sensitive information that could be useful to an attacker.</p>\n  <h1>Why</h1>\n  <p>Attackers often probe web applications for error messages as a first attempt to understand the underlying technologies in place. An attacker will look for discrepancies between error messages to discover when different code paths are being taken or to discover information about the quality of their input. Error messages that are directly echoed from backend systems such as SQL or OS error messages can help a malicious user choose what to input&amp;nbsp;for&amp;nbsp;their next attack. </p>\n  <h1>How to Check</h1>\n  <p>\n    <strong>For every error message check that</strong>:</p>\n  <ol>\n    <li>The error message is simple and generic. In particular do not include extra information regarding: <ul><li>The quality of the information being processed </li><li>The mechanisms processing the data</li></ul></li>\n    <li>Debug information is not echoed to the user. </li>\n    <li>There is only one error message displayed on all authentication failures. This message should be basic and not contain any information that can be used to discern between the following types of failures: <ul><li>Invalid username </li><li>Valid username, but invalid password </li><li>Account locked<br /></li></ul></li>\n    <li>A custom error message is used instead of the default error message which describes the error in detail: <ul><li>Set <strong>customErrors</strong> to <strong>RemoteOnly</strong> or <strong>On</strong> in the web.config file</li></ul></li>\n  </ol>\n  <p>\n    <strong>For dynamically generated error messages also ensure that</strong>:</p>\n  <ol>\n    <li>Use of dynamic error messages is minimized. </li>\n    <li>Error messages that report the same message are exactly the same.</li>\n  </ol>\n  <h1>Problem Example</h1>\n  <p>The following code authenticates a user. Unfortunately, the code reveals through its error messages whether the credentials sent represent a valid user or an invalid user:</p>\n  <blockquote>\n    <pre>public void login()<br />{<br />      if (!validUser())<br />      {<br />            throw new Exception(\"User not found.\");<br />      }<br />      if (!validPass())<br />      {<br />            throw new Exception(\"Wrong password.\");<br />      }<br />      commit();<br />}</pre>\n  </blockquote>\n  <h1>Additional Resources</h1>\n  <ul>\n    <li>For more information about best practices on authentication, visit the OWASP&amp;nbsp;<a href=\"http://www.owasp.org/index.php/Guide_to_Authentication\">Guide to Authentication</a>. </li>\n    <li>For more information on proper error handling techniques, visitthe OWASP&amp;nbsp;<a href=\"http://www.owasp.org/index.php/Error_Handling,_Auditing_and_Logging\">Error Handling, Auditing and Logging</a>.</li>\n  </ul>\n  <hr />\n  <p>Adapted from Microsoft patterns &amp; practices guidance. </p>"
 }

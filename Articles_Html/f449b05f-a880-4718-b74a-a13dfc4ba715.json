@@ -1,6 +1,6 @@
 {
   "id": "f449b05f-a880-4718-b74a-a13dfc4ba715",
-  "checksum": "78123f55e278ca57bc802f70aaa401c158b42cc6",
+  "checksum": "7c8d6f14c56a02090572fe2462f6f566dd0565fc",
   "words": {
     "105": [
       "ul",
@@ -979,7 +979,7 @@
       "ul",
       "li"
     ],
-    "at\rhttp://www.netiq.com/": [
+    "athttp://www.netiq.com/": [
       "ul",
       "li"
     ],
@@ -1045,8 +1045,8 @@
       "Related Items"
     ],
     "ul": [
-      "PCI DSS Requirement 10.5 \r\n    PCI DSS Requirement 10.5.1 \r\n    PCI DSS Requirement 10.5.2 \r\n    PCI DSS Requirement 10.5.3 \r\n    PCI DSS Requirement 10.5.4 \r\n    PCI DSS Requirement 10.6 \r\n    PCI DSS Requirement 10.6.a \r\n    PCI DSS Requirement 10.6.b \r\n    PCI DSS Requirement 10.7 \r\n    PCI DSS Requirement 10.7.a \r\n    PCI DSS Requirement 10.7.b",
-      "For information about ArcSight ESM, please see \"ArcSight ESM\" at \r\nhttp://www.arcsight.com/products/products-esm/\r\n    For information about the LogLogic log server, please see \"LogLogic\" at \r\nhttp://www.loglogic.com/\r\n    For information about the TriGeo log server, please see \"TriGeo SIM\" at \r\nhttp://www.trigeo.com/\r\n    For information about the NetIQ log server, please see \"System Management NetIQ\" at\r\nhttp://www.netiq.com/\r\n    For information about McAfee PCI Pro, please see \"McAfee PCI Pro\" at \r\nhttp://www.mcafee.com/us/enterprise/products/risk_and_compliance/pci_pro.html",
+      "PCI DSS Requirement 10.5 \n    PCI DSS Requirement 10.5.1 \n    PCI DSS Requirement 10.5.2 \n    PCI DSS Requirement 10.5.3 \n    PCI DSS Requirement 10.5.4 \n    PCI DSS Requirement 10.6 \n    PCI DSS Requirement 10.6.a \n    PCI DSS Requirement 10.6.b \n    PCI DSS Requirement 10.7 \n    PCI DSS Requirement 10.7.a \n    PCI DSS Requirement 10.7.b",
+      "For information about ArcSight ESM, please see \"ArcSight ESM\" at \nhttp://www.arcsight.com/products/products-esm/\n    For information about the LogLogic log server, please see \"LogLogic\" at \nhttp://www.loglogic.com/\n    For information about the TriGeo log server, please see \"TriGeo SIM\" at \nhttp://www.trigeo.com/\n    For information about the NetIQ log server, please see \"System Management NetIQ\" at\nhttp://www.netiq.com/\n    For information about McAfee PCI Pro, please see \"McAfee PCI Pro\" at \nhttp://www.mcafee.com/us/enterprise/products/risk_and_compliance/pci_pro.html",
       "Implement Audit Trails for System Components"
     ],
     "li": [
@@ -1061,18 +1061,18 @@
       "PCI DSS Requirement 10.7",
       "PCI DSS Requirement 10.7.a",
       "PCI DSS Requirement 10.7.b",
-      "For information about ArcSight ESM, please see \"ArcSight ESM\" at \r\nhttp://www.arcsight.com/products/products-esm/",
-      "For information about the LogLogic log server, please see \"LogLogic\" at \r\nhttp://www.loglogic.com/",
-      "For information about the TriGeo log server, please see \"TriGeo SIM\" at \r\nhttp://www.trigeo.com/",
-      "For information about the NetIQ log server, please see \"System Management NetIQ\" at\r\nhttp://www.netiq.com/",
-      "For information about McAfee PCI Pro, please see \"McAfee PCI Pro\" at \r\nhttp://www.mcafee.com/us/enterprise/products/risk_and_compliance/pci_pro.html",
+      "For information about ArcSight ESM, please see \"ArcSight ESM\" at \nhttp://www.arcsight.com/products/products-esm/",
+      "For information about the LogLogic log server, please see \"LogLogic\" at \nhttp://www.loglogic.com/",
+      "For information about the TriGeo log server, please see \"TriGeo SIM\" at \nhttp://www.trigeo.com/",
+      "For information about the NetIQ log server, please see \"System Management NetIQ\" at\nhttp://www.netiq.com/",
+      "For information about McAfee PCI Pro, please see \"McAfee PCI Pro\" at \nhttp://www.mcafee.com/us/enterprise/products/risk_and_compliance/pci_pro.html",
       "Implement Audit Trails for System Components"
     ],
     "p": [
       "A centralized log server should be deployed.",
-      "It may be possible to satisfy PCI DSS requirements without maintaining a centralized log server, but one is highly recommended. A centralized log server can significantly reduce costs and complexity of satisfying the PCI DSS requirements and managing logs.\r\n For example, all logs are supposed to be promptly backed up, reviewed daily, and retained at least one year to comply with PCI DSS - daunting tasks, if dozens of separate devices have to be checked. A single log server, however, which aggregates log entries\r\n from the network and presents them in a searchable index via a web interface, makes all of this much simpler. Some devices may not be compatible with the log server, in which case they may require special attention.",
-      "Interview an administrator to verify that a centralized log server is deployed. Examine the centralized log server to verify that it is operational. Get a list of all devices in the PCI DSS scope that produce logs and verify that the log server is receiving\r\n logs from them. Some devices may not be compatible with the log server. Consider replacing these devices with ones that are compatible with the log server, otherwise they need special treatment - being reviewed individually daily, having the logs backed up\r\n daily, etc.",
-      "Add a point to the information security policy that requires all logs to be kept for at least a year and at least the last three months of logs to be available for immediate review. Choose a centralized log server solution. When choosing a centralized log\r\n server solution, it may be helpful to verify that it is explicitly designed to satisfy PCI DSS Requirement 10.2.2 - logging all activity by the administrator and other privileged users - because this functionality is difficult to implement otherwise. Install\r\n and configure a centralized log server by following the vendor's instructions. Configure all network devices that are compatible with the log server to send logs to the log server. Make a list of the incompatible devices and use this list to manually check\r\n and backup the logs on them daily. Consider replacing the incompatible devices with ones that are compatible with the log server."
+      "It may be possible to satisfy PCI DSS requirements without maintaining a centralized log server, but one is highly recommended. A centralized log server can significantly reduce costs and complexity of satisfying the PCI DSS requirements and managing logs.\n For example, all logs are supposed to be promptly backed up, reviewed daily, and retained at least one year to comply with PCI DSS - daunting tasks, if dozens of separate devices have to be checked. A single log server, however, which aggregates log entries\n from the network and presents them in a searchable index via a web interface, makes all of this much simpler. Some devices may not be compatible with the log server, in which case they may require special attention.",
+      "Interview an administrator to verify that a centralized log server is deployed. Examine the centralized log server to verify that it is operational. Get a list of all devices in the PCI DSS scope that produce logs and verify that the log server is receiving\n logs from them. Some devices may not be compatible with the log server. Consider replacing these devices with ones that are compatible with the log server, otherwise they need special treatment - being reviewed individually daily, having the logs backed up\n daily, etc.",
+      "Add a point to the information security policy that requires all logs to be kept for at least a year and at least the last three months of logs to be available for immediate review. Choose a centralized log server solution. When choosing a centralized log\n server solution, it may be helpful to verify that it is explicitly designed to satisfy PCI DSS Requirement 10.2.2 - logging all activity by the administrator and other privileged users - because this functionality is difficult to implement otherwise. Install\n and configure a centralized log server by following the vendor's instructions. Configure all network devices that are compatible with the log server to send logs to the log server. Make a list of the incompatible devices and use this list to manually check\n and backup the logs on them daily. Consider replacing the incompatible devices with ones that are compatible with the log server."
     ],
     "a": [
       "http://www.arcsight.com/products/products-esm/",
@@ -1086,15 +1086,15 @@
   "links": [
     {
       "href": "http://www.arcsight.com/products/products-esm/",
-      "text": "\r\nhttp://www.arcsight.com/products/products-esm/"
+      "text": "\nhttp://www.arcsight.com/products/products-esm/"
     },
     {
       "href": "http://www.loglogic.com/",
-      "text": "\r\nhttp://www.loglogic.com/"
+      "text": "\nhttp://www.loglogic.com/"
     },
     {
       "href": "http://www.trigeo.com/",
-      "text": "\r\nhttp://www.trigeo.com/"
+      "text": "\nhttp://www.trigeo.com/"
     },
     {
       "href": "http://www.netiq.com/",
@@ -1102,12 +1102,12 @@
     },
     {
       "href": "http://www.mcafee.com/us/enterprise/products/risk_and_compliance/pci_pro.html",
-      "text": "\r\nhttp://www.mcafee.com/us/enterprise/products/risk_and_compliance/pci_pro.html"
+      "text": "\nhttp://www.mcafee.com/us/enterprise/products/risk_and_compliance/pci_pro.html"
     },
     {
       "href": "/article/7a956911-f547-4f65-88bb-f4a42ea349f3",
       "text": "Implement Audit Trails for System Components"
     }
   ],
-  "html": "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 10.5 </li>\r\n    <li>PCI DSS Requirement 10.5.1 </li>\r\n    <li>PCI DSS Requirement 10.5.2 </li>\r\n    <li>PCI DSS Requirement 10.5.3 </li>\r\n    <li>PCI DSS Requirement 10.5.4 </li>\r\n    <li>PCI DSS Requirement 10.6 </li>\r\n    <li>PCI DSS Requirement 10.6.a </li>\r\n    <li>PCI DSS Requirement 10.6.b </li>\r\n    <li>PCI DSS Requirement 10.7 </li>\r\n    <li>PCI DSS Requirement 10.7.a </li>\r\n    <li>PCI DSS Requirement 10.7.b</li>\r\n  </ul>\r\n  <h1>What to Check For</h1>\r\n  <p>A centralized log server should be deployed.</p>\r\n  <h1>Why</h1>\r\n  <p>It may be possible to satisfy PCI DSS requirements without maintaining a centralized log server, but one is highly recommended. A centralized log server can significantly reduce costs and complexity of satisfying the PCI DSS requirements and managing logs.\r\n For example, all logs are supposed to be promptly backed up, reviewed daily, and retained at least one year to comply with PCI DSS - daunting tasks, if dozens of separate devices have to be checked. A single log server, however, which aggregates log entries\r\n from the network and presents them in a searchable index via a web interface, makes all of this much simpler. Some devices may not be compatible with the log server, in which case they may require special attention.</p>\r\n  <h1>How to Check</h1>\r\n  <p>Interview an administrator to verify that a centralized log server is deployed. Examine the centralized log server to verify that it is operational. Get a list of all devices in the PCI DSS scope that produce logs and verify that the log server is receiving\r\n logs from them. Some devices may not be compatible with the log server. Consider replacing these devices with ones that are compatible with the log server, otherwise they need special treatment - being reviewed individually daily, having the logs backed up\r\n daily, etc.</p>\r\n  <h1>How to Fix</h1>\r\n  <p>Add a point to the information security policy that requires all logs to be kept for at least a year and at least the last three months of logs to be available for immediate review. Choose a centralized log server solution. When choosing a centralized log\r\n server solution, it may be helpful to verify that it is explicitly designed to satisfy PCI DSS Requirement 10.2.2 - logging all activity by the administrator and other privileged users - because this functionality is difficult to implement otherwise. Install\r\n and configure a centralized log server by following the vendor's instructions. Configure all network devices that are compatible with the log server to send logs to the log server. Make a list of the incompatible devices and use this list to manually check\r\n and backup the logs on them daily. Consider replacing the incompatible devices with ones that are compatible with the log server.</p>\r\n  <h1>Additional Resources </h1>\r\n  <ul>\r\n    <li>For information about ArcSight ESM, please see \"ArcSight ESM\" at <a href=\"http://www.arcsight.com/products/products-esm/\">\r\nhttp://www.arcsight.com/products/products-esm/</a></li>\r\n    <li>For information about the LogLogic log server, please see \"LogLogic\" at <a href=\"http://www.loglogic.com/\">\r\nhttp://www.loglogic.com/</a></li>\r\n    <li>For information about the TriGeo log server, please see \"TriGeo SIM\" at <a href=\"http://www.trigeo.com/\">\r\nhttp://www.trigeo.com/</a></li>\r\n    <li>For information about the NetIQ log server, please see \"System Management NetIQ\" at\r\n<a href=\"http://www.netiq.com/\">http://www.netiq.com/</a></li>\r\n    <li>For information about McAfee PCI Pro, please see \"McAfee PCI Pro\" at <a href=\"http://www.mcafee.com/us/enterprise/products/risk_and_compliance/pci_pro.html\">\r\nhttp://www.mcafee.com/us/enterprise/products/risk_and_compliance/pci_pro.html</a></li>\r\n  </ul>\r\n  <h1>Related Items</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/7a956911-f547-4f65-88bb-f4a42ea349f3\">Implement Audit Trails for System Components</a>\r\n    </li>\r\n  </ul>"
+  "html": "<h1>Applies to</h1>\n  <ul>\n    <li>PCI DSS Requirement 10.5 </li>\n    <li>PCI DSS Requirement 10.5.1 </li>\n    <li>PCI DSS Requirement 10.5.2 </li>\n    <li>PCI DSS Requirement 10.5.3 </li>\n    <li>PCI DSS Requirement 10.5.4 </li>\n    <li>PCI DSS Requirement 10.6 </li>\n    <li>PCI DSS Requirement 10.6.a </li>\n    <li>PCI DSS Requirement 10.6.b </li>\n    <li>PCI DSS Requirement 10.7 </li>\n    <li>PCI DSS Requirement 10.7.a </li>\n    <li>PCI DSS Requirement 10.7.b</li>\n  </ul>\n  <h1>What to Check For</h1>\n  <p>A centralized log server should be deployed.</p>\n  <h1>Why</h1>\n  <p>It may be possible to satisfy PCI DSS requirements without maintaining a centralized log server, but one is highly recommended. A centralized log server can significantly reduce costs and complexity of satisfying the PCI DSS requirements and managing logs.\n For example, all logs are supposed to be promptly backed up, reviewed daily, and retained at least one year to comply with PCI DSS - daunting tasks, if dozens of separate devices have to be checked. A single log server, however, which aggregates log entries\n from the network and presents them in a searchable index via a web interface, makes all of this much simpler. Some devices may not be compatible with the log server, in which case they may require special attention.</p>\n  <h1>How to Check</h1>\n  <p>Interview an administrator to verify that a centralized log server is deployed. Examine the centralized log server to verify that it is operational. Get a list of all devices in the PCI DSS scope that produce logs and verify that the log server is receiving\n logs from them. Some devices may not be compatible with the log server. Consider replacing these devices with ones that are compatible with the log server, otherwise they need special treatment - being reviewed individually daily, having the logs backed up\n daily, etc.</p>\n  <h1>How to Fix</h1>\n  <p>Add a point to the information security policy that requires all logs to be kept for at least a year and at least the last three months of logs to be available for immediate review. Choose a centralized log server solution. When choosing a centralized log\n server solution, it may be helpful to verify that it is explicitly designed to satisfy PCI DSS Requirement 10.2.2 - logging all activity by the administrator and other privileged users - because this functionality is difficult to implement otherwise. Install\n and configure a centralized log server by following the vendor's instructions. Configure all network devices that are compatible with the log server to send logs to the log server. Make a list of the incompatible devices and use this list to manually check\n and backup the logs on them daily. Consider replacing the incompatible devices with ones that are compatible with the log server.</p>\n  <h1>Additional Resources </h1>\n  <ul>\n    <li>For information about ArcSight ESM, please see \"ArcSight ESM\" at <a href=\"http://www.arcsight.com/products/products-esm/\">\nhttp://www.arcsight.com/products/products-esm/</a></li>\n    <li>For information about the LogLogic log server, please see \"LogLogic\" at <a href=\"http://www.loglogic.com/\">\nhttp://www.loglogic.com/</a></li>\n    <li>For information about the TriGeo log server, please see \"TriGeo SIM\" at <a href=\"http://www.trigeo.com/\">\nhttp://www.trigeo.com/</a></li>\n    <li>For information about the NetIQ log server, please see \"System Management NetIQ\" at\n<a href=\"http://www.netiq.com/\">http://www.netiq.com/</a></li>\n    <li>For information about McAfee PCI Pro, please see \"McAfee PCI Pro\" at <a href=\"http://www.mcafee.com/us/enterprise/products/risk_and_compliance/pci_pro.html\">\nhttp://www.mcafee.com/us/enterprise/products/risk_and_compliance/pci_pro.html</a></li>\n  </ul>\n  <h1>Related Items</h1>\n  <ul>\n    <li>\n      <a href=\"/article/7a956911-f547-4f65-88bb-f4a42ea349f3\">Implement Audit Trails for System Components</a>\n    </li>\n  </ul>"
 }

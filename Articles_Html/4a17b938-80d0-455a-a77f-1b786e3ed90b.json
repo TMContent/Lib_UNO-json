@@ -1,6 +1,6 @@
 {
   "id": "4a17b938-80d0-455a-a77f-1b786e3ed90b",
-  "checksum": "c87f06dc540794cdaf5df90b48823d4fdee6c98d",
+  "checksum": "e7fe9c79a5a3ab9747a40352e445139f21bb24d4",
   "words": {
     "applies": [
       "h1"
@@ -667,7 +667,7 @@
       "How"
     ],
     "ul": [
-      "C++\r\n    Windows"
+      "C++\n    Windows"
     ],
     "li": [
       "C++",
@@ -686,7 +686,7 @@
       "Secure the application directory. Place strong ACLs on the application directory, denying WRITE access to intruders. The <application_name>.local file in the application’s directory causes the OS to load requested DLLs from that directory, even when absolute paths are used."
     ],
     "ol": [
-      "Review code. Search for calls to LoadLibrary() and LoadLibraryEx() functions.\r\n    \r\n    \r\n      \r\n        Always specify absolute paths. If you do not specify the absolute path, the OS searches for the library through the library search order. Since the search order will look for DLLs in other locations on the target machine, it may cause the process to load unintended, malicious DLLs. If a malicious DLL is loaded, malicious code will run with the privilege level of the executing process.\r\n    \r\n    \r\n      \r\n        Secure the application directory. Place strong ACLs on the application directory, denying WRITE access to intruders. The <application_name>.local file in the application’s directory causes the OS to load requested DLLs from that directory, even when absolute paths are used."
+      "Review code. Search for calls to LoadLibrary() and LoadLibraryEx() functions.\n    \n    \n      \n        Always specify absolute paths. If you do not specify the absolute path, the OS searches for the library through the library search order. Since the search order will look for DLLs in other locations on the target machine, it may cause the process to load unintended, malicious DLLs. If a malicious DLL is loaded, malicious code will run with the privilege level of the executing process.\n    \n    \n      \n        Secure the application directory. Place strong ACLs on the application directory, denying WRITE access to intruders. The <application_name>.local file in the application’s directory causes the OS to load requested DLLs from that directory, even when absolute paths are used."
     ],
     "strong": [
       "Review code.",
@@ -695,5 +695,5 @@
     ]
   },
   "links": [],
-  "html": "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>C&#43;&#43;</li>\r\n    <li>Windows</li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Load libraries carefully on Windows.</p>\r\n  <h1>Why</h1>\r\n  <p>If a fully-qualified path to a DLL library is not specified, a malicious library with the same name may be loaded by an attacker, allowing him to alter program behavior or execute arbitrary code.</p>\r\n  <h1>When</h1>\r\n  <p>Use this guideline whenever loading dynamic-link libraries via LoadLibrary() or LoadLibraryEx() APIs.</p>\r\n  <h1>How</h1>\r\n  <p>Perform the following actions in order to avoid loading a malicious DLL:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Review code.</strong> Search for calls to LoadLibrary() and LoadLibraryEx() functions.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Always specify absolute paths.</strong> If you do not specify the absolute path, the OS searches for the library through the library search order. Since the search order will look for DLLs in other locations on the target machine, it may cause the process to load unintended, malicious DLLs. If a malicious DLL is loaded, malicious code will run with the privilege level of the executing process.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Secure the application directory.</strong> Place strong ACLs on the application directory, denying WRITE access to intruders. The &lt;application_name&gt;.local file in the application&#8217;s directory causes the OS to load requested DLLs from that directory, even when absolute paths are used.</p>\r\n    </li>\r\n  </ol>"
+  "html": "<h1>Applies to</h1>\n  <ul>\n    <li>C&#43;&#43;</li>\n    <li>Windows</li>\n  </ul>\n  <h1>What to Do</h1>\n  <p>Load libraries carefully on Windows.</p>\n  <h1>Why</h1>\n  <p>If a fully-qualified path to a DLL library is not specified, a malicious library with the same name may be loaded by an attacker, allowing him to alter program behavior or execute arbitrary code.</p>\n  <h1>When</h1>\n  <p>Use this guideline whenever loading dynamic-link libraries via LoadLibrary() or LoadLibraryEx() APIs.</p>\n  <h1>How</h1>\n  <p>Perform the following actions in order to avoid loading a malicious DLL:</p>\n  <ol>\n    <li>\n      <p>\n        <strong>Review code.</strong> Search for calls to LoadLibrary() and LoadLibraryEx() functions.</p>\n    </li>\n    <li>\n      <p>\n        <strong>Always specify absolute paths.</strong> If you do not specify the absolute path, the OS searches for the library through the library search order. Since the search order will look for DLLs in other locations on the target machine, it may cause the process to load unintended, malicious DLLs. If a malicious DLL is loaded, malicious code will run with the privilege level of the executing process.</p>\n    </li>\n    <li>\n      <p>\n        <strong>Secure the application directory.</strong> Place strong ACLs on the application directory, denying WRITE access to intruders. The &lt;application_name&gt;.local file in the application&#8217;s directory causes the OS to load requested DLLs from that directory, even when absolute paths are used.</p>\n    </li>\n  </ol>"
 }

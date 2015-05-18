@@ -1,6 +1,6 @@
 {
   "id": "cc96ef03-62f7-4cd2-a108-dc7f942dbd0d",
-  "checksum": "8ae79cb02115430ac37cfa79390380842d26c028",
+  "checksum": "594507e74f99ee190c55091eb413b4048b4cf2f8",
   "words": {
     "description": [
       "h1"
@@ -217,6 +217,9 @@
     "guidance": [
       "p"
     ],
+    "sink]": [
+      "title"
+    ],
     "how": [
       "title"
     ]
@@ -242,5 +245,5 @@
     ]
   },
   "links": [],
-  "html": "<h1>Description</h1>\r\n  <p>If you are using digital certificates, you can use the X.509 certificate support in the <b>System.Security.Cryptography.X509Certificates</b> namespace to encrypt XML data. </p>\r\n  <p>To use X.509 certificates, access the certificate from the certificate store, create a new instance of the <b>EncryptedXml</b> class, call its <b>Encrypt</b> method, and pass the certificate. Finally, replace the clear text XML element with the <b>EncrytedData</b> element. </p>\r\n  <p>To be able to decrypt the data, you must have the private key associated with the public key in the X.509 certificate. </p>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
+  "html": "<h1>Description</h1>\n  <p>If you are using digital certificates, you can use the X.509 certificate support in the <b>System.Security.Cryptography.X509Certificates</b> namespace to encrypt XML data. </p>\n  <p>To use X.509 certificates, access the certificate from the certificate store, create a new instance of the <b>EncryptedXml</b> class, call its <b>Encrypt</b> method, and pass the certificate. Finally, replace the clear text XML element with the <b>EncrytedData</b> element. </p>\n  <p>To be able to decrypt the data, you must have the private key associated with the public key in the X.509 certificate. </p>\n  <hr />\n  <p>Adapted from Microsoft patterns &amp; practices guidance.</p>"
 }

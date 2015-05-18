@@ -1,6 +1,6 @@
 {
   "id": "4b441912-33f8-43cc-b0c3-663c74700c99",
-  "checksum": "b826403c2791ce238ea59da6c7e7ae6f483e2715",
+  "checksum": "47f4d4a341c5509c75fd1135902d0c44fd99c9f5",
   "words": {
     "what": [
       "h1"
@@ -1112,7 +1112,7 @@
       "li",
       "pre"
     ],
-    "password{": [
+    "password&#123;": [
       "ol",
       "li",
       "pre"
@@ -1145,7 +1145,7 @@
       "li",
       "pre"
     ],
-    "{": [
+    "&#123": [
       "ol",
       "li",
       "pre"
@@ -1169,7 +1169,7 @@
       "p",
       "p"
     ],
-    "}}": [
+    "&#125&#125;": [
       "ol",
       "li",
       "pre"
@@ -1199,10 +1199,10 @@
     "verifying": [
       "p"
     ],
-    "paymentinfo{": [
+    "paymentinfo&#123;": [
       "pre"
     ],
-    "transaction}": [
+    "transaction&#125": [
       "pre"
     ],
     "related": [
@@ -1239,6 +1239,9 @@
     ],
     "guidance": [
       "p"
+    ],
+    "sink]": [
+      "title"
     ]
   },
   "tags": {
@@ -1259,19 +1262,19 @@
       "Adapted from Microsoft patterns & practices guidance."
     ],
     "ol": [
-      "Identify all critical functionality within your application. Locate all critical functionality within your application's code base. Common places to look at include:\r\n      \r\n        Creating new accounts Changing passwords for existing users User transactions that are sensitive in nature Changing your application's global configuration Any operation affecting your application's overall wellness such as start-up and shutdown\r\n      \r\n      \r\n        \r\n          Ensure that your application has adopted re-authentication mechanism. Ensure that your application's design and requirements ask for re-authentication mechanisms. Common re-authentication mechanisms include:\r\n        \r\n          \r\n            Current password. The user uses their current password to confirm the identity. This technique ensures that the given user is aware of the action to be performed and holds responsibility for executing it. CAPTCHA. CAPTCHA is a mechanism where alpha-numeric codes are embedded into displayed pictures. Forcing the user to confirm the embedded code ensures that the application is interacting with a human. If your application uses CAPTCHA, ensure that your version of CAPTCHA is up-to-date with its security updates.\r\n        \r\n        \r\n          \r\n            Verify that re-authentication is enforced. Ensure that the re-authentication procedures are positioned properly throughout your application's critical functionality. Verify that re-authentication is performed immediately upon entering a critical component. Example:\r\n          public void ProcessPayment(PaymentInfo paymentInfo, string username, string password){    MembershipProvider membershipProvider = Membership.Provider;    if (membershipProvider.ValidateUser(username, password))    {        // Prepare and execute the transaction    }}"
+      "Identify all critical functionality within your application. Locate all critical functionality within your application's code base. Common places to look at include:\n      \n        Creating new accounts Changing passwords for existing users User transactions that are sensitive in nature Changing your application's global configuration Any operation affecting your application's overall wellness such as start-up and shutdown\n      \n      \n        \n          Ensure that your application has adopted re-authentication mechanism. Ensure that your application's design and requirements ask for re-authentication mechanisms. Common re-authentication mechanisms include:\n        \n          \n            Current password. The user uses their current password to confirm the identity. This technique ensures that the given user is aware of the action to be performed and holds responsibility for executing it. CAPTCHA. CAPTCHA is a mechanism where alpha-numeric codes are embedded into displayed pictures. Forcing the user to confirm the embedded code ensures that the application is interacting with a human. If your application uses CAPTCHA, ensure that your version of CAPTCHA is up-to-date with its security updates.\n        \n        \n          \n            Verify that re-authentication is enforced. Ensure that the re-authentication procedures are positioned properly throughout your application's critical functionality. Verify that re-authentication is performed immediately upon entering a critical component. Example:\n          public void ProcessPayment(PaymentInfo paymentInfo, string username, string password)&#123;    MembershipProvider membershipProvider = Membership.Provider;    if (membershipProvider.ValidateUser(username, password))    &#123;        // Prepare and execute the transaction    &#125;&#125;"
     ],
     "li": [
-      "Identify all critical functionality within your application. Locate all critical functionality within your application's code base. Common places to look at include:\r\n      \r\n        Creating new accounts Changing passwords for existing users User transactions that are sensitive in nature Changing your application's global configuration Any operation affecting your application's overall wellness such as start-up and shutdown",
+      "Identify all critical functionality within your application. Locate all critical functionality within your application's code base. Common places to look at include:\n      \n        Creating new accounts Changing passwords for existing users User transactions that are sensitive in nature Changing your application's global configuration Any operation affecting your application's overall wellness such as start-up and shutdown",
       "Creating new accounts",
       "Changing passwords for existing users",
       "User transactions that are sensitive in nature",
       "Changing your application's global configuration",
       "Any operation affecting your application's overall wellness such as start-up and shutdown",
-      "Ensure that your application has adopted re-authentication mechanism. Ensure that your application's design and requirements ask for re-authentication mechanisms. Common re-authentication mechanisms include:\r\n        \r\n          \r\n            Current password. The user uses their current password to confirm the identity. This technique ensures that the given user is aware of the action to be performed and holds responsibility for executing it. CAPTCHA. CAPTCHA is a mechanism where alpha-numeric codes are embedded into displayed pictures. Forcing the user to confirm the embedded code ensures that the application is interacting with a human. If your application uses CAPTCHA, ensure that your version of CAPTCHA is up-to-date with its security updates.",
+      "Ensure that your application has adopted re-authentication mechanism. Ensure that your application's design and requirements ask for re-authentication mechanisms. Common re-authentication mechanisms include:\n        \n          \n            Current password. The user uses their current password to confirm the identity. This technique ensures that the given user is aware of the action to be performed and holds responsibility for executing it. CAPTCHA. CAPTCHA is a mechanism where alpha-numeric codes are embedded into displayed pictures. Forcing the user to confirm the embedded code ensures that the application is interacting with a human. If your application uses CAPTCHA, ensure that your version of CAPTCHA is up-to-date with its security updates.",
       "Current password. The user uses their current password to confirm the identity. This technique ensures that the given user is aware of the action to be performed and holds responsibility for executing it.",
       "CAPTCHA. CAPTCHA is a mechanism where alpha-numeric codes are embedded into displayed pictures. Forcing the user to confirm the embedded code ensures that the application is interacting with a human. If your application uses CAPTCHA, ensure that your version of CAPTCHA is up-to-date with its security updates.",
-      "Verify that re-authentication is enforced. Ensure that the re-authentication procedures are positioned properly throughout your application's critical functionality. Verify that re-authentication is performed immediately upon entering a critical component. Example:\r\n          public void ProcessPayment(PaymentInfo paymentInfo, string username, string password){    MembershipProvider membershipProvider = Membership.Provider;    if (membershipProvider.ValidateUser(username, password))    {        // Prepare and execute the transaction    }}",
+      "Verify that re-authentication is enforced. Ensure that the re-authentication procedures are positioned properly throughout your application's critical functionality. Verify that re-authentication is performed immediately upon entering a critical component. Example:\n          public void ProcessPayment(PaymentInfo paymentInfo, string username, string password)&#123;    MembershipProvider membershipProvider = Membership.Provider;    if (membershipProvider.ValidateUser(username, password))    &#123;        // Prepare and execute the transaction    &#125;&#125;",
       "Guideline: Force Re-Authentication When Executing Critical Functionality"
     ],
     "strong": [
@@ -1287,8 +1290,8 @@
       "Guideline: Force Re-Authentication When Executing Critical Functionality"
     ],
     "pre": [
-      "public void ProcessPayment(PaymentInfo paymentInfo, string username, string password){    MembershipProvider membershipProvider = Membership.Provider;    if (membershipProvider.ValidateUser(username, password))    {        // Prepare and execute the transaction    }}",
-      "public void ProcessPayment(PaymentInfo paymentInfo){    // Prepare and execute the transaction}"
+      "public void ProcessPayment(PaymentInfo paymentInfo, string username, string password)&#123;    MembershipProvider membershipProvider = Membership.Provider;    if (membershipProvider.ValidateUser(username, password))    &#123;        // Prepare and execute the transaction    &#125;&#125;",
+      "public void ProcessPayment(PaymentInfo paymentInfo)&#123;    // Prepare and execute the transaction&#125;"
     ],
     "br": [
       "",
@@ -1315,5 +1318,5 @@
       "text": "Guideline: Force Re-Authentication When Executing Critical Functionality "
     }
   ],
-  "html": "<h1>What to Check For</h1>\r\n  <p>Ensure your application forces the user to re-authenticate when executing security-critical functionality including, but not limited to, change of password, account modifications, and critical transactions.</p>\r\n  <h1>Why</h1>\r\n  <p>Forcing the user to re-authenticate verifies the user's decision to execute the given functionality and preserves the application's integrity in the event that a user's account has been compromised via session hijacking. </p>\r\n  <h1>How to Check</h1>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Identify all critical functionality within your application.</strong> Locate all critical functionality within your application's code base. Common places to look at include:</p>\r\n      <ul>\r\n        <li>Creating new accounts <li>Changing passwords for existing users <li>User transactions that are sensitive in nature <li>Changing your application's global configuration <li>Any operation affecting your application's overall wellness such as start-up and shutdown</li></li></li></li></li>\r\n      </ul>\r\n      <li>\r\n        <p>\r\n          <strong>Ensure that your application has adopted re-authentication mechanism.</strong> Ensure that your application's design and requirements ask for re-authentication mechanisms. Common re-authentication mechanisms include:</p>\r\n        <ul>\r\n          <li>\r\n            <strong>Current password.</strong> The user uses their current password to confirm the identity. This technique ensures that the given user is aware of the action to be performed and holds responsibility for executing it. <li><strong>CAPTCHA.</strong> CAPTCHA is a mechanism where alpha-numeric codes are embedded into displayed pictures. Forcing the user to confirm the embedded code ensures that the application is interacting with a human. If your application uses CAPTCHA, ensure that your version of CAPTCHA is up-to-date with its security updates.</li></li>\r\n        </ul>\r\n        <li>\r\n          <p>\r\n            <strong>Verify that re-authentication is enforced.</strong> Ensure that the re-authentication procedures are positioned properly throughout your application's critical functionality. Verify that re-authentication is performed immediately upon entering a critical component. Example:</p>\r\n          <pre>public void ProcessPayment(PaymentInfo paymentInfo, string username, string password)<br />&#123;<br />    MembershipProvider membershipProvider = Membership.Provider;<br />    if (membershipProvider.ValidateUser(username, password))<br />    &#123;<br />        // Prepare and execute the transaction<br />    &#125;<br />&#125;</pre>\r\n        </li>\r\n      </li>\r\n    </li>\r\n  </ol>\r\n  <h1>Problem Example</h1>\r\n  <p>The following code processes a payment transaction. Unfortunately, the code executes the payment without verifying that the user is aware of the transaction.</p>\r\n  <pre>public void ProcessPayment(PaymentInfo paymentInfo)<br />&#123;<br />    // Prepare and execute the transaction<br />&#125;</pre>\r\n  <h1>Related Guideline</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/740a1606-d091-4a93-bfd8-f0d4226adbf1\">Guideline: Force Re-Authentication When Executing Critical Functionality </a>\r\n    </li>\r\n  </ul>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance. </p>"
+  "html": "<h1>What to Check For</h1>\n  <p>Ensure your application forces the user to re-authenticate when executing security-critical functionality including, but not limited to, change of password, account modifications, and critical transactions.</p>\n  <h1>Why</h1>\n  <p>Forcing the user to re-authenticate verifies the user's decision to execute the given functionality and preserves the application's integrity in the event that a user's account has been compromised via session hijacking. </p>\n  <h1>How to Check</h1>\n  <ol>\n    <li>\n      <p>\n        <strong>Identify all critical functionality within your application.</strong> Locate all critical functionality within your application's code base. Common places to look at include:</p>\n      <ul>\n        <li>Creating new accounts <li>Changing passwords for existing users <li>User transactions that are sensitive in nature <li>Changing your application's global configuration <li>Any operation affecting your application's overall wellness such as start-up and shutdown</li></li></li></li></li>\n      </ul>\n      <li>\n        <p>\n          <strong>Ensure that your application has adopted re-authentication mechanism.</strong> Ensure that your application's design and requirements ask for re-authentication mechanisms. Common re-authentication mechanisms include:</p>\n        <ul>\n          <li>\n            <strong>Current password.</strong> The user uses their current password to confirm the identity. This technique ensures that the given user is aware of the action to be performed and holds responsibility for executing it. <li><strong>CAPTCHA.</strong> CAPTCHA is a mechanism where alpha-numeric codes are embedded into displayed pictures. Forcing the user to confirm the embedded code ensures that the application is interacting with a human. If your application uses CAPTCHA, ensure that your version of CAPTCHA is up-to-date with its security updates.</li></li>\n        </ul>\n        <li>\n          <p>\n            <strong>Verify that re-authentication is enforced.</strong> Ensure that the re-authentication procedures are positioned properly throughout your application's critical functionality. Verify that re-authentication is performed immediately upon entering a critical component. Example:</p>\n          <pre>public void ProcessPayment(PaymentInfo paymentInfo, string username, string password)<br />&amp;#123;<br />    MembershipProvider membershipProvider = Membership.Provider;<br />    if (membershipProvider.ValidateUser(username, password))<br />    &amp;#123;<br />        // Prepare and execute the transaction<br />    &amp;#125;<br />&amp;#125;</pre>\n        </li>\n      </li>\n    </li>\n  </ol>\n  <h1>Problem Example</h1>\n  <p>The following code processes a payment transaction. Unfortunately, the code executes the payment without verifying that the user is aware of the transaction.</p>\n  <pre>public void ProcessPayment(PaymentInfo paymentInfo)<br />&amp;#123;<br />    // Prepare and execute the transaction<br />&amp;#125;</pre>\n  <h1>Related Guideline</h1>\n  <ul>\n    <li>\n      <a href=\"/article/740a1606-d091-4a93-bfd8-f0d4226adbf1\">Guideline: Force Re-Authentication When Executing Critical Functionality </a>\n    </li>\n  </ul>\n  <hr />\n  <p>Adapted from Microsoft patterns &amp; practices guidance. </p>"
 }

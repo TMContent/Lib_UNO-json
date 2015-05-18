@@ -1,6 +1,6 @@
 {
   "id": "fd5e30e7-1584-4417-8f00-a0f363ecb3c0",
-  "checksum": "4f15029d4187c2bc7b9a805c7fdded631b3871db",
+  "checksum": "47c747b02b9bea10e12f3d24bb75c617ac0e164b",
   "words": {
     "description": [
       "h1"
@@ -15,14 +15,6 @@
       "p",
       "p",
       "p",
-      "ul",
-      "li",
-      "a",
-      "p",
-      "p",
-      "ul",
-      "li",
-      "a",
       "title"
     ],
     "leaks": [
@@ -59,15 +51,7 @@
       "p",
       "p",
       "p",
-      "p",
-      "ul",
-      "li",
-      "a",
-      "p",
-      "p",
-      "ul",
-      "li",
-      "a"
+      "p"
     ],
     "to": [
       "p",
@@ -91,15 +75,7 @@
       "p",
       "p",
       "p",
-      "p",
-      "p",
-      "ul",
-      "li",
-      "a",
-      "p",
-      "ul",
-      "li",
-      "a"
+      "p"
     ],
     "provided": [
       "p"
@@ -116,36 +92,16 @@
     "session-specific": [
       "p",
       "p",
-      "p",
-      "ul",
-      "li",
-      "a",
-      "p",
-      "p",
-      "ul",
-      "li",
-      "a"
+      "p"
     ],
     "stored": [
       "p",
-      "p",
-      "p",
-      "ul",
-      "li",
-      "a"
+      "p"
     ],
     "in": [
       "p",
       "p",
-      "p",
-      "ul",
-      "li",
-      "a",
-      "p",
-      "p",
-      "ul",
-      "li",
-      "a"
+      "p"
     ],
     "member": [
       "p"
@@ -155,11 +111,7 @@
     ],
     "of": [
       "p",
-      "p",
-      "p",
-      "ul",
-      "li",
-      "a"
+      "p"
     ],
     "singleton": [
       "p"
@@ -167,15 +119,7 @@
     "object": [
       "p",
       "p",
-      "p",
-      "ul",
-      "li",
-      "a",
-      "p",
-      "p",
-      "ul",
-      "li",
-      "a"
+      "p"
     ],
     "and": [
       "p",
@@ -185,15 +129,7 @@
     "objects": [
       "p",
       "p",
-      "p",
-      "ul",
-      "li",
-      "a",
-      "p",
-      "p",
-      "ul",
-      "li",
-      "a"
+      "p"
     ],
     "from": [
       "p"
@@ -205,15 +141,7 @@
     "shared": [
       "p",
       "p",
-      "p",
-      "ul",
-      "li",
-      "a",
-      "p",
-      "p",
-      "ul",
-      "li",
-      "a"
+      "p"
     ],
     "pool": [
       "p"
@@ -358,69 +286,29 @@
       "p"
     ],
     "avoid": [
-      "p",
-      "p",
-      "ul",
-      "li",
-      "a"
+      "p"
     ],
     "storing": [
-      "p",
-      "p",
-      "ul",
-      "li",
-      "a"
+      "p"
     ],
     "ensure": [
       "p",
-      "p",
-      "ul",
-      "li",
-      "a",
       "p"
     ],
     "proper": [
       "p",
-      "p",
-      "ul",
-      "li",
-      "a",
-      "p",
-      "p",
-      "ul",
-      "li",
-      "a"
+      "p"
     ],
     "thread": [
       "p",
-      "p",
-      "ul",
-      "li",
-      "a",
-      "p",
-      "p",
-      "ul",
-      "li",
-      "a"
+      "p"
     ],
     "safety": [
       "p",
-      "p",
-      "ul",
-      "li",
-      "a",
-      "p",
-      "p",
-      "ul",
-      "li",
-      "a"
+      "p"
     ],
     "for": [
       "p",
-      "p",
-      "ul",
-      "li",
-      "a",
       "p",
       "p",
       "ul",
@@ -428,15 +316,7 @@
     ],
     "httpsession": [
       "p",
-      "p",
-      "ul",
-      "li",
-      "a",
-      "p",
-      "p",
-      "ul",
-      "li",
-      "a"
+      "p"
     ],
     "application": [
       "h1"
@@ -455,18 +335,10 @@
       "p"
     ],
     "not": [
-      "p",
-      "p",
-      "ul",
-      "li",
-      "a"
+      "p"
     ],
     "assured": [
-      "p",
-      "p",
-      "ul",
-      "li",
-      "a"
+      "p"
     ],
     "additional": [
       "h1"
@@ -508,55 +380,23 @@
       "Data leaks between sessions occur when unintentional access to one session's data is provided to another session. Data leaks between sessions usually occur when session-specific data is stored in member variables of singleton object and objects from a shared pool. The impact of this vulnerability is that an attacker may be able to access other users' data. This vulnerability affects all Java Web applications, especially ones that use Servlets.",
       "A data leak between sessions vulnerability allows an attacker to access other users' data. The exact impact depends on the exact information that is leaking between sessions, but, generally speaking, the attack is limited to accessing the leaking information.",
       "To prevent this vulnerability, avoid storing session-specific data in shared objects and ensure proper thread safety for HttpSession object access.",
-      "Avoid storing session-specific data in shared objects:",
-      "Ensure proper thread safety for HttpSession object access:",
-      "To check for adequate protection against this vulnerability, ensure that session-specific data is not stored in shared objects, and that proper thread safety for HttpSession object access is assured.",
-      "Session-specific data is not stored in shared objects:",
-      "Proper thread safety of HttpSession object access is assured:"
+      "To check for adequate protection against this vulnerability, ensure that session-specific data is not stored in shared objects, and that proper thread safety for HttpSession object access is assured."
     ],
     "ul": [
-      "Avoid Storing Session-specific Data in Shared Objects",
-      "Ensure Proper Thread Safety for HttpSession Object Access",
-      "Session-specific Data Is Not Stored in Shared Objects",
-      "Proper Thread Safety of HttpSession Object Access Is Assured",
       "For more information about this vulnerability type, see http://lab.gsi.dit.upm.es/semanticwiki/index.php/Data_Leak_Between_Sessions"
     ],
     "li": [
-      "Avoid Storing Session-specific Data in Shared Objects",
-      "Ensure Proper Thread Safety for HttpSession Object Access",
-      "Session-specific Data Is Not Stored in Shared Objects",
-      "Proper Thread Safety of HttpSession Object Access Is Assured",
       "For more information about this vulnerability type, see http://lab.gsi.dit.upm.es/semanticwiki/index.php/Data_Leak_Between_Sessions"
     ],
     "a": [
-      "Avoid Storing Session-specific Data in Shared Objects",
-      "Ensure Proper Thread Safety for HttpSession Object Access",
-      "Session-specific Data Is Not Stored in Shared Objects",
-      "Proper Thread Safety of HttpSession Object Access Is Assured",
       "http://lab.gsi.dit.upm.es/semanticwiki/index.php/Data_Leak_Between_Sessions"
     ]
   },
   "links": [
     {
-      "href": "00000000-0000-0000-0000-0000007d5f50",
-      "text": "Avoid Storing Session-specific Data in Shared Objects"
-    },
-    {
-      "href": "00000000-0000-0000-0000-00000052525d",
-      "text": "Ensure Proper Thread Safety for HttpSession Object Access"
-    },
-    {
-      "href": "00000000-0000-0000-0000-0000003cb5b4",
-      "text": "Session-specific Data Is Not Stored in Shared Objects"
-    },
-    {
-      "href": "00000000-0000-0000-0000-00000097f1a4",
-      "text": "Proper Thread Safety of HttpSession Object Access Is Assured"
-    },
-    {
       "href": "http://lab.gsi.dit.upm.es/semanticwiki/index.php/Data_Leak_Between_Sessions",
       "text": "http://lab.gsi.dit.upm.es/semanticwiki/index.php/Data_Leak_Between_Sessions"
     }
   ],
-  "html": "<h1>Description</h1><p>Data leaks between sessions occur when unintentional access to one session's data is provided to another session. Data leaks between sessions usually occur when session-specific data is stored in member variables of singleton object and objects from a shared pool. The impact of this vulnerability is that an attacker may be able to access other users' data. This vulnerability affects all Java Web applications, especially ones that use Servlets. \n</p><h1>Impact</h1><p>A data leak between sessions vulnerability allows an attacker to access other users' data. The exact impact depends on the exact information that is leaking between sessions, but, generally speaking, the attack is limited to accessing the leaking information. \n</p><h1>Countermeasures</h1><p>To prevent this vulnerability, avoid storing session-specific data in shared objects and ensure proper thread safety for HttpSession object access. \n</p><p>\nAvoid storing session-specific data in shared objects:\n</p><ul>\n<li> <a href=\"00000000-0000-0000-0000-0000007d5f50\">Avoid Storing Session-specific Data in Shared Objects</a></li>\n</ul><p>\nEnsure proper thread safety for HttpSession object access:\n</p><ul>\n<li> <a href=\"00000000-0000-0000-0000-00000052525d\">Ensure Proper Thread Safety for HttpSession Object Access</a></li>\n</ul><h1>Application Check</h1><p>To check for adequate protection against this vulnerability, ensure that session-specific data is not stored in shared objects, and that proper thread safety for HttpSession object access is assured.\n</p><p>\nSession-specific data is not stored in shared objects:\n</p><ul>\n<li> <a href=\"00000000-0000-0000-0000-0000003cb5b4\">Session-specific Data Is Not Stored in Shared Objects</a></li>\n</ul><p>\nProper thread safety of HttpSession object access is assured:</p><ul>\n<li> <a href=\"00000000-0000-0000-0000-00000097f1a4\">Proper Thread Safety of HttpSession Object Access Is Assured</a></li>\n</ul><h1>Additional Resources</h1><ul><li> For more information about this vulnerability type, see <a href=\"http://lab.gsi.dit.upm.es/semanticwiki/index.php/Data_Leak_Between_Sessions\">http://lab.gsi.dit.upm.es/semanticwiki/index.php/Data_Leak_Between_Sessions</a></li></ul>"
+  "html": "<h1>Description</h1><p>Data leaks between sessions occur when unintentional access to one session's data is provided to another session. Data leaks between sessions usually occur when session-specific data is stored in member variables of singleton object and objects from a shared pool. The impact of this vulnerability is that an attacker may be able to access other users' data. This vulnerability affects all Java Web applications, especially ones that use Servlets. \n</p><h1>Impact</h1><p>A data leak between sessions vulnerability allows an attacker to access other users' data. The exact impact depends on the exact information that is leaking between sessions, but, generally speaking, the attack is limited to accessing the leaking information. \n</p><h1>Countermeasures</h1><p>To prevent this vulnerability, avoid storing session-specific data in shared objects and ensure proper thread safety for HttpSession object access. \n</p><h1>Application Check</h1><p>To check for adequate protection against this vulnerability, ensure that session-specific data is not stored in shared objects, and that proper thread safety for HttpSession object access is assured.\n</p><h1>Additional Resources</h1><ul><li> For more information about this vulnerability type, see <a href=\"http://lab.gsi.dit.upm.es/semanticwiki/index.php/Data_Leak_Between_Sessions\">http://lab.gsi.dit.upm.es/semanticwiki/index.php/Data_Leak_Between_Sessions</a></li></ul>"
 }

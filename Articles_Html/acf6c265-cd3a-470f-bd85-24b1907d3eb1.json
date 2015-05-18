@@ -1,6 +1,6 @@
 {
   "id": "acf6c265-cd3a-470f-bd85-24b1907d3eb1",
-  "checksum": "4270a4dd03451e60ca479c25bd6cd9f99197ccec",
+  "checksum": "ee3fcecad5bd285e6746d6af180e0ab9636ed656",
   "words": {
     "applies": [
       "h1"
@@ -1090,7 +1090,7 @@
       "pre",
       "pre"
     ],
-    "\"commysql.jdbc.driver\"\r\nval": [
+    "\"commysql.jdbc.driver\"\nval": [
       "ol",
       "ul",
       "li",
@@ -1106,7 +1106,7 @@
       "pre",
       "pre"
     ],
-    "\"jdbcmysql://localhost/mysql\"\r\nval": [
+    "\"jdbcmysql://localhost/mysql\"\nval": [
       "ol",
       "ul",
       "li",
@@ -1129,7 +1129,7 @@
       "pre",
       "pre"
     ],
-    "\"root\"\rval": [
+    "\"root\"val": [
       "ol",
       "ul",
       "li",
@@ -1151,7 +1151,7 @@
       "pre",
       "pre"
     ],
-    "\"root\"\rclass.forname(driver)\r\nconnection": [
+    "\"root\"class.forname(driver)\nconnection": [
       "ol",
       "ul",
       "li",
@@ -1475,15 +1475,15 @@
       "pre",
       "pre"
     ],
-    "jdbc\r\r\nimport": [
+    "jdbc\nimport": [
       "pre",
       "pre"
     ],
-    "javasql.drivermanager\r\nimport": [
+    "javasql.drivermanager\nimport": [
       "pre",
       "pre"
     ],
-    "javasql.connection\r\n\r\nobject": [
+    "javasql.connection\n\nobject": [
       "pre"
     ],
     "scalajdbcconnectselect": [
@@ -1689,7 +1689,7 @@
       "pre",
       "pre"
     ],
-    "}\r\r\n}": [
+    "}\n}": [
       "pre",
       "pre"
     ],
@@ -1714,10 +1714,10 @@
     "reveal": [
       "p"
     ],
-    "javasql.connection\r\nimport": [
+    "javasql.connection\nimport": [
       "pre"
     ],
-    "playapi.play.current\r\n\r\nobject": [
+    "playapi.play.current\n\nobject": [
       "pre"
     ],
     "getstring\"server.auth.url\")": [
@@ -1729,7 +1729,7 @@
     "getstring\"server.auth.password\")": [
       "pre"
     ],
-    "\"baseconf\"\r\n\r\nserver.auth.username=${auth_username}\r\nserver.auth.password=${auth_password}\r\nserver.auth.url=${auth_password}": [
+    "\"baseconf\"\n\nserver.auth.username=${auth_username}\nserver.auth.password=${auth_password}\nserver.auth.url=${auth_password}": [
       "pre"
     ]
   },
@@ -1766,11 +1766,11 @@
     "ul": [
       "",
       "Authenticating users Creating users Modifying users Changing user passwords",
-      "If your application uses a database for its credential repository, ensure that access credentials and connection strings are secured properly. If your application does not use a database\r\n for its credential repository, verify that only the appropriate \r\ncomponents of your application are able to access the credential store.",
-      "Example of how not to handle access to the credential store:// The application discloses the credentials necessary for accessing the user databaseval driver = \"com.mysql.jdbc.Driver\"\r\nval url = \"jdbc:mysql://localhost/mysql\"\r\nval username = \"root\"\r\nval password = \"root\"\r\nClass.forName(driver)\r\nconnection = DriverManager.getConnection(url, username, password)"
+      "If your application uses a database for its credential repository, ensure that access credentials and connection strings are secured properly. If your application does not use a database\n for its credential repository, verify that only the appropriate \ncomponents of your application are able to access the credential store.",
+      "Example of how not to handle access to the credential store:// The application discloses the credentials necessary for accessing the user databaseval driver = \"com.mysql.jdbc.Driver\"\nval url = \"jdbc:mysql://localhost/mysql\"\nval username = \"root\"\nval password = \"root\"\nClass.forName(driver)\nconnection = DriverManager.getConnection(url, username, password)"
     ],
     "ol": [
-      "Identify all routines that access the store. Locate all routines within your application that access the credential store. Such routines include:Authenticating users Creating users Modifying users Changing user passwordsVerify that credentials for accessing the store are secured. Ensure that your application's access credentials and connection strings are not hard-coded into your application's code base. If your application uses a database for its credential repository, ensure that access credentials and connection strings are secured properly. If your application does not use a database\r\n for its credential repository, verify that only the appropriate \r\ncomponents of your application are able to access the credential store.Example of how not to handle access to the credential store:// The application discloses the credentials necessary for accessing the user databaseval driver = \"com.mysql.jdbc.Driver\"\r\nval url = \"jdbc:mysql://localhost/mysql\"\r\nval username = \"root\"\r\nval password = \"root\"\r\nClass.forName(driver)\r\nconnection = DriverManager.getConnection(url, username, password)Check the access controls for your credential store. Ensure that your application's credential store has the appropriate \r\nsecurity in place. For instance, if your application uses a database for\r\n its credential store, verify that the database server is secured \r\nproperly.",
+      "Identify all routines that access the store. Locate all routines within your application that access the credential store. Such routines include:Authenticating users Creating users Modifying users Changing user passwordsVerify that credentials for accessing the store are secured. Ensure that your application's access credentials and connection strings are not hard-coded into your application's code base. If your application uses a database for its credential repository, ensure that access credentials and connection strings are secured properly. If your application does not use a database\n for its credential repository, verify that only the appropriate \ncomponents of your application are able to access the credential store.Example of how not to handle access to the credential store:// The application discloses the credentials necessary for accessing the user databaseval driver = \"com.mysql.jdbc.Driver\"\nval url = \"jdbc:mysql://localhost/mysql\"\nval username = \"root\"\nval password = \"root\"\nClass.forName(driver)\nconnection = DriverManager.getConnection(url, username, password)Check the access controls for your credential store. Ensure that your application's credential store has the appropriate \nsecurity in place. For instance, if your application uses a database for\n its credential store, verify that the database server is secured \nproperly.",
       "",
       "Do not disclose the location of the store within your application. Do not let regular application users know where the store is located.Secure credentials required for accessing the store. Store the necessary sensitive information in Environment variables, and create a mapping to them in the configuration file (e.g., application.conf file).Restrict access to the credential store. Limit the number of users that can access the store. If it is a file on the local file system, set the appropriate permissions to restrict the read/write access. If it is a database, restrict the accounts that can access the database server."
     ],
@@ -1780,11 +1780,11 @@
       "Creating users",
       "Modifying users",
       "Changing user passwords",
-      "Verify that credentials for accessing the store are secured. Ensure that your application's access credentials and connection strings are not hard-coded into your application's code base. If your application uses a database for its credential repository, ensure that access credentials and connection strings are secured properly. If your application does not use a database\r\n for its credential repository, verify that only the appropriate \r\ncomponents of your application are able to access the credential store.",
+      "Verify that credentials for accessing the store are secured. Ensure that your application's access credentials and connection strings are not hard-coded into your application's code base. If your application uses a database for its credential repository, ensure that access credentials and connection strings are secured properly. If your application does not use a database\n for its credential repository, verify that only the appropriate \ncomponents of your application are able to access the credential store.",
       "If your application uses a database for its credential repository, ensure that access credentials and connection strings are secured properly.",
-      "If your application does not use a database\r\n for its credential repository, verify that only the appropriate \r\ncomponents of your application are able to access the credential store.",
-      "Example of how not to handle access to the credential store:// The application discloses the credentials necessary for accessing the user databaseval driver = \"com.mysql.jdbc.Driver\"\r\nval url = \"jdbc:mysql://localhost/mysql\"\r\nval username = \"root\"\r\nval password = \"root\"\r\nClass.forName(driver)\r\nconnection = DriverManager.getConnection(url, username, password)",
-      "Check the access controls for your credential store. Ensure that your application's credential store has the appropriate \r\nsecurity in place. For instance, if your application uses a database for\r\n its credential store, verify that the database server is secured \r\nproperly.",
+      "If your application does not use a database\n for its credential repository, verify that only the appropriate \ncomponents of your application are able to access the credential store.",
+      "Example of how not to handle access to the credential store:// The application discloses the credentials necessary for accessing the user databaseval driver = \"com.mysql.jdbc.Driver\"\nval url = \"jdbc:mysql://localhost/mysql\"\nval username = \"root\"\nval password = \"root\"\nClass.forName(driver)\nconnection = DriverManager.getConnection(url, username, password)",
+      "Check the access controls for your credential store. Ensure that your application's credential store has the appropriate \nsecurity in place. For instance, if your application uses a database for\n its credential store, verify that the database server is secured \nproperly.",
       "Do not disclose the location of the store within your application. Do not let regular application users know where the store is located.",
       "Secure credentials required for accessing the store. Store the necessary sensitive information in Environment variables, and create a mapping to them in the configuration file (e.g., application.conf file).",
       "Restrict access to the credential store. Limit the number of users that can access the store. If it is a file on the local file system, set the appropriate permissions to restrict the read/write access. If it is a database, restrict the accounts that can access the database server."
@@ -1800,13 +1800,13 @@
       "Restrict access to the credential store."
     ],
     "blockquote": [
-      "// The application discloses the credentials necessary for accessing the user databaseval driver = \"com.mysql.jdbc.Driver\"\r\nval url = \"jdbc:mysql://localhost/mysql\"\r\nval username = \"root\"\r\nval password = \"root\"\r\nClass.forName(driver)\r\nconnection = DriverManager.getConnection(url, username, password)"
+      "// The application discloses the credentials necessary for accessing the user databaseval driver = \"com.mysql.jdbc.Driver\"\nval url = \"jdbc:mysql://localhost/mysql\"\nval username = \"root\"\nval password = \"root\"\nClass.forName(driver)\nconnection = DriverManager.getConnection(url, username, password)"
     ],
     "pre": [
-      "// The application discloses the credentials necessary for accessing the user databaseval driver = \"com.mysql.jdbc.Driver\"\r\nval url = \"jdbc:mysql://localhost/mysql\"\r\nval username = \"root\"\r\nval password = \"root\"\r\nClass.forName(driver)\r\nconnection = DriverManager.getConnection(url, username, password)",
-      "package jdbc\r\n\r\nimport java.sql.DriverManager\r\nimport java.sql.Connection\r\n\r\nobject ScalaJdbcConnectSelect {\r\n\r\n  def main(args: Array[String]) {\r\n    // connect to the database named \"mysql\" on the localhost\r\n    val driver = \"com.mysql.jdbc.Driver\"\r\n    val url = \"jdbc:mysql://localhost/mysql\"\r\n    val username = \"root\"\r\n    val password = \"root\"\r\n\r\n    var connection:Connection = null\r\n\r\n    try {\r\n      // make the connection\r\n      Class.forName(driver)\r\n      connection = DriverManager.getConnection(url, username, password)\r\n\r\n      // create the statement, and run the select query\r\n      val statement = connection.createStatement()\r\n      val resultSet = statement.executeQuery(\"SELECT host, user FROM user\")\r\n      while ( resultSet.next() ) {\r\n        val host = resultSet.getString(\"host\")\r\n        val user = resultSet.getString(\"user\")\r\n        println(\"host, user = \" + host + \", \" + user)\r\n      }\r\n    } catch {\r\n      case e => e.printStackTrace\r\n    }\r\n    connection.close()\r\n  }\r\n\r\n}",
-      "package jdbc\r\n\r\nimport java.sql.DriverManager\r\nimport java.sql.Connection\r\nimport play.api.Play.current\r\n\r\nobject ScalaJdbcConnectSelect {\r\n\r\n  def main(args: Array[String]) {\r\n\r\n    val driver = \"com.mysql.jdbc.Driver\"\r\n    val url = getString(\"server.auth.url\")\r\n    val username = getString(\"server.auth.username\")\r\n    val password = getString(\"server.auth.password\")\r\n\r\n    var connection:Connection = null\r\n\r\n    try {\r\n      // make the connection\r\n      Class.forName(driver)\r\n      connection = DriverManager.getConnection(url, username, password)\r\n\r\n      // create the statement, and run the select query\r\n      val statement = connection.createStatement()\r\n      val resultSet = statement.executeQuery(\"SELECT host, user FROM user\")\r\n      while ( resultSet.next() ) {\r\n        val host = resultSet.getString(\"host\")\r\n        val user = resultSet.getString(\"user\")\r\n        println(\"host, user = \" + host + \", \" + user)\r\n      }\r\n    } catch {\r\n      case e => e.printStackTrace\r\n    }\r\n    connection.close()\r\n  }\r\n\r\n}",
-      "include \"base.conf\"\r\n\r\nserver.auth.username=${AUTH_USERNAME}\r\nserver.auth.password=${AUTH_PASSWORD}\r\nserver.auth.url=${AUTH_PASSWORD}"
+      "// The application discloses the credentials necessary for accessing the user databaseval driver = \"com.mysql.jdbc.Driver\"\nval url = \"jdbc:mysql://localhost/mysql\"\nval username = \"root\"\nval password = \"root\"\nClass.forName(driver)\nconnection = DriverManager.getConnection(url, username, password)",
+      "package jdbc\n\nimport java.sql.DriverManager\nimport java.sql.Connection\n\nobject ScalaJdbcConnectSelect {\n\n  def main(args: Array[String]) {\n    // connect to the database named \"mysql\" on the localhost\n    val driver = \"com.mysql.jdbc.Driver\"\n    val url = \"jdbc:mysql://localhost/mysql\"\n    val username = \"root\"\n    val password = \"root\"\n\n    var connection:Connection = null\n\n    try {\n      // make the connection\n      Class.forName(driver)\n      connection = DriverManager.getConnection(url, username, password)\n\n      // create the statement, and run the select query\n      val statement = connection.createStatement()\n      val resultSet = statement.executeQuery(\"SELECT host, user FROM user\")\n      while ( resultSet.next() ) {\n        val host = resultSet.getString(\"host\")\n        val user = resultSet.getString(\"user\")\n        println(\"host, user = \" + host + \", \" + user)\n      }\n    } catch {\n      case e => e.printStackTrace\n    }\n    connection.close()\n  }\n\n}",
+      "package jdbc\n\nimport java.sql.DriverManager\nimport java.sql.Connection\nimport play.api.Play.current\n\nobject ScalaJdbcConnectSelect {\n\n  def main(args: Array[String]) {\n\n    val driver = \"com.mysql.jdbc.Driver\"\n    val url = getString(\"server.auth.url\")\n    val username = getString(\"server.auth.username\")\n    val password = getString(\"server.auth.password\")\n\n    var connection:Connection = null\n\n    try {\n      // make the connection\n      Class.forName(driver)\n      connection = DriverManager.getConnection(url, username, password)\n\n      // create the statement, and run the select query\n      val statement = connection.createStatement()\n      val resultSet = statement.executeQuery(\"SELECT host, user FROM user\")\n      while ( resultSet.next() ) {\n        val host = resultSet.getString(\"host\")\n        val user = resultSet.getString(\"user\")\n        println(\"host, user = \" + host + \", \" + user)\n      }\n    } catch {\n      case e => e.printStackTrace\n    }\n    connection.close()\n  }\n\n}",
+      "include \"base.conf\"\n\nserver.auth.username=${AUTH_USERNAME}\nserver.auth.password=${AUTH_PASSWORD}\nserver.auth.url=${AUTH_PASSWORD}"
     ],
     "b": [
       "Check the access controls for your credential store"
@@ -1820,5 +1820,5 @@
     ]
   },
   "links": [],
-  "html": "<h1>Applies to</h1>\r\n  <p>Scala and Play Framework 2.1.0+<br /></p>\r\n  <h1>What to Check For</h1>\r\n  <p>Ensure that access to the credential store is properly secured and limited to administrators with the correct privileges.</p>\r\n  <h1>Why</h1>\r\n  <p>Unauthorized access to the credential store can allow an attacker to overwrite users' credentials and gain access to application resources.</p>\r\n  <h1>How to Check</h1>Follow these steps to ensure that the credential store is properly secured:\r\n  <ul></ul><ol><li><p><strong>Identify all routines that access the store. </strong>Locate all routines within your application that access the credential store. Such routines include:</p><ul><li>Authenticating users </li><li>Creating users </li><li>Modifying users </li><li>Changing user passwords</li></ul></li><li><p><strong>Verify that credentials for accessing the store are secured. </strong>Ensure that your application's access credentials and connection strings are not hard-coded into your application's code base. </p><ul><li>If your application <strong>uses a database</strong> for its credential repository, ensure that access credentials and connection strings are secured properly. </li><li>If your application <strong>does not use a database</strong>\r\n for its credential repository, verify that only the appropriate \r\ncomponents of your application are able to access the credential store.</li></ul></li><ul><li>Example of how&nbsp;<strong>not</strong>&nbsp;to handle access to the credential store:<blockquote><pre>// The application discloses the credentials necessary for accessing the user database<br />val driver = \"com.mysql.jdbc.Driver\"\r\nval url = \"jdbc:mysql://localhost/mysql\"\r\nval username = \"root\"\r\nval password = \"root\"\r\nClass.forName(driver)\r\nconnection = DriverManager.getConnection(url, username, password)</pre></blockquote><br /></li></ul><li><b>Check the access controls for your credential store</b>. Ensure that your application's credential store has the appropriate \r\nsecurity in place. For instance, if your application uses a database for\r\n its credential store, verify that the database server is secured \r\nproperly.</li></ol><ol></ol><h1>How to Fix</h1><p>Follow these steps to properly secure the credential store:</p><ol><li><p><strong>Do not disclose the location of the store within your application. </strong>Do not let&nbsp;regular application users know where the store is located.</p></li><li><p><strong>Secure credentials required for accessing the store. </strong>Store the necessary sensitive information in Environment variables, and create a mapping to them in the configuration file (e.g., <font face=\"Courier New\">application.conf</font> file).</p></li><li><p><strong>Restrict access to the credential store.&nbsp;</strong>Limit the number of users that can access the store. If it is a file on the local file system, set the appropriate permissions to restrict the read/write access. If it is a database, restrict the accounts that can access the database server.</p></li></ol><h1>Problem Example</h1><p>The following code authenticates a user based on their credentials. Because the code discloses the credentials to the user database, anybody with access to the code also has access to the credential store.</p><pre>package jdbc\r\n\r\nimport java.sql.DriverManager\r\nimport java.sql.Connection\r\n\r\nobject ScalaJdbcConnectSelect {\r\n\r\n  def main(args: Array[String]) {\r\n    // connect to the database named \"mysql\" on the localhost\r\n    val driver = \"com.mysql.jdbc.Driver\"\r\n    val url = \"jdbc:mysql://localhost/mysql\"\r\n    val username = \"root\"\r\n    val password = \"root\"\r\n\r\n    var connection:Connection = null\r\n\r\n    try {\r\n      // make the connection\r\n      Class.forName(driver)\r\n      connection = DriverManager.getConnection(url, username, password)\r\n\r\n      // create the statement, and run the select query\r\n      val statement = connection.createStatement()\r\n      val resultSet = statement.executeQuery(\"SELECT host, user FROM user\")\r\n      while ( resultSet.next() ) {\r\n        val host = resultSet.getString(\"host\")\r\n        val user = resultSet.getString(\"user\")\r\n        println(\"host, user = \" + host + \", \" + user)\r\n      }\r\n    } catch {\r\n      case e =&gt; e.printStackTrace\r\n    }\r\n    connection.close()\r\n  }\r\n\r\n}</pre><h1>Solution Example</h1><p>The following code authenticates a user based on their credentials. The code relies on other parts of the application to handle database connectivity. Therefore, the code does not reveal the application's credentials to the credential store.</p><pre>package jdbc\r\n\r\nimport java.sql.DriverManager\r\nimport java.sql.Connection\r\nimport play.api.Play.current\r\n\r\nobject ScalaJdbcConnectSelect {\r\n\r\n  def main(args: Array[String]) {\r\n\r\n    val driver = \"com.mysql.jdbc.Driver\"\r\n    val url = getString(\"server.auth.url\")\r\n    val username = getString(\"server.auth.username\")\r\n    val password = getString(\"server.auth.password\")\r\n\r\n    var connection:Connection = null\r\n\r\n    try {\r\n      // make the connection\r\n      Class.forName(driver)\r\n      connection = DriverManager.getConnection(url, username, password)\r\n\r\n      // create the statement, and run the select query\r\n      val statement = connection.createStatement()\r\n      val resultSet = statement.executeQuery(\"SELECT host, user FROM user\")\r\n      while ( resultSet.next() ) {\r\n        val host = resultSet.getString(\"host\")\r\n        val user = resultSet.getString(\"user\")\r\n        println(\"host, user = \" + host + \", \" + user)\r\n      }\r\n    } catch {\r\n      case e =&gt; e.printStackTrace\r\n    }\r\n    connection.close()\r\n  }\r\n\r\n}</pre>The content of application.conf file would be:<pre>include \"base.conf\"\r\n\r\nserver.auth.username=${AUTH_USERNAME}\r\nserver.auth.password=${AUTH_PASSWORD}\r\nserver.auth.url=${AUTH_PASSWORD}</pre>These values would then be pulled from the environment variables or some other secure location.<div><br /></div><div><br /></div>"
+  "html": "<h1>Applies to</h1>\n  <p>Scala and Play Framework 2.1.0+<br /></p>\n  <h1>What to Check For</h1>\n  <p>Ensure that access to the credential store is properly secured and limited to administrators with the correct privileges.</p>\n  <h1>Why</h1>\n  <p>Unauthorized access to the credential store can allow an attacker to overwrite users' credentials and gain access to application resources.</p>\n  <h1>How to Check</h1>Follow these steps to ensure that the credential store is properly secured:\n  <ul></ul><ol><li><p><strong>Identify all routines that access the store. </strong>Locate all routines within your application that access the credential store. Such routines include:</p><ul><li>Authenticating users </li><li>Creating users </li><li>Modifying users </li><li>Changing user passwords</li></ul></li><li><p><strong>Verify that credentials for accessing the store are secured. </strong>Ensure that your application's access credentials and connection strings are not hard-coded into your application's code base. </p><ul><li>If your application <strong>uses a database</strong> for its credential repository, ensure that access credentials and connection strings are secured properly. </li><li>If your application <strong>does not use a database</strong>\n for its credential repository, verify that only the appropriate \ncomponents of your application are able to access the credential store.</li></ul></li><ul><li>Example of how&nbsp;<strong>not</strong>&nbsp;to handle access to the credential store:<blockquote><pre>// The application discloses the credentials necessary for accessing the user database<br />val driver = \"com.mysql.jdbc.Driver\"\nval url = \"jdbc:mysql://localhost/mysql\"\nval username = \"root\"\nval password = \"root\"\nClass.forName(driver)\nconnection = DriverManager.getConnection(url, username, password)</pre></blockquote><br /></li></ul><li><b>Check the access controls for your credential store</b>. Ensure that your application's credential store has the appropriate \nsecurity in place. For instance, if your application uses a database for\n its credential store, verify that the database server is secured \nproperly.</li></ol><ol></ol><h1>How to Fix</h1><p>Follow these steps to properly secure the credential store:</p><ol><li><p><strong>Do not disclose the location of the store within your application. </strong>Do not let&nbsp;regular application users know where the store is located.</p></li><li><p><strong>Secure credentials required for accessing the store. </strong>Store the necessary sensitive information in Environment variables, and create a mapping to them in the configuration file (e.g., <font face=\"Courier New\">application.conf</font> file).</p></li><li><p><strong>Restrict access to the credential store.&nbsp;</strong>Limit the number of users that can access the store. If it is a file on the local file system, set the appropriate permissions to restrict the read/write access. If it is a database, restrict the accounts that can access the database server.</p></li></ol><h1>Problem Example</h1><p>The following code authenticates a user based on their credentials. Because the code discloses the credentials to the user database, anybody with access to the code also has access to the credential store.</p><pre>package jdbc\n\nimport java.sql.DriverManager\nimport java.sql.Connection\n\nobject ScalaJdbcConnectSelect {\n\n  def main(args: Array[String]) {\n    // connect to the database named \"mysql\" on the localhost\n    val driver = \"com.mysql.jdbc.Driver\"\n    val url = \"jdbc:mysql://localhost/mysql\"\n    val username = \"root\"\n    val password = \"root\"\n\n    var connection:Connection = null\n\n    try {\n      // make the connection\n      Class.forName(driver)\n      connection = DriverManager.getConnection(url, username, password)\n\n      // create the statement, and run the select query\n      val statement = connection.createStatement()\n      val resultSet = statement.executeQuery(\"SELECT host, user FROM user\")\n      while ( resultSet.next() ) {\n        val host = resultSet.getString(\"host\")\n        val user = resultSet.getString(\"user\")\n        println(\"host, user = \" + host + \", \" + user)\n      }\n    } catch {\n      case e =&gt; e.printStackTrace\n    }\n    connection.close()\n  }\n\n}</pre><h1>Solution Example</h1><p>The following code authenticates a user based on their credentials. The code relies on other parts of the application to handle database connectivity. Therefore, the code does not reveal the application's credentials to the credential store.</p><pre>package jdbc\n\nimport java.sql.DriverManager\nimport java.sql.Connection\nimport play.api.Play.current\n\nobject ScalaJdbcConnectSelect {\n\n  def main(args: Array[String]) {\n\n    val driver = \"com.mysql.jdbc.Driver\"\n    val url = getString(\"server.auth.url\")\n    val username = getString(\"server.auth.username\")\n    val password = getString(\"server.auth.password\")\n\n    var connection:Connection = null\n\n    try {\n      // make the connection\n      Class.forName(driver)\n      connection = DriverManager.getConnection(url, username, password)\n\n      // create the statement, and run the select query\n      val statement = connection.createStatement()\n      val resultSet = statement.executeQuery(\"SELECT host, user FROM user\")\n      while ( resultSet.next() ) {\n        val host = resultSet.getString(\"host\")\n        val user = resultSet.getString(\"user\")\n        println(\"host, user = \" + host + \", \" + user)\n      }\n    } catch {\n      case e =&gt; e.printStackTrace\n    }\n    connection.close()\n  }\n\n}</pre>The content of application.conf file would be:<pre>include \"base.conf\"\n\nserver.auth.username=${AUTH_USERNAME}\nserver.auth.password=${AUTH_PASSWORD}\nserver.auth.url=${AUTH_PASSWORD}</pre>These values would then be pulled from the environment variables or some other secure location.<div><br /></div><div><br /></div>"
 }

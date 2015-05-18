@@ -1,6 +1,6 @@
 {
   "id": "97be10d4-0360-4690-ae97-75fb7d4b5ce0",
-  "checksum": "f37645d590a23d6a2ac16a28f9a4c657f50b1688",
+  "checksum": "fd779ccb0bd47fbe25b74c85ecd7df2538160f48",
   "words": {
     "what": [
       "h1"
@@ -316,5 +316,5 @@
     ]
   },
   "links": [],
-  "html": "<h1>What to Check For</h1>\r\n  <p>Check to ensure that the dispose methods are synchronized when&nbsp;developing non-synchronized <b>Dispose</b> implementations in your application.</p>\r\n  <p />\r\n  <h1>How to Fix</h1>\r\n  <p>If you develop non-synchronized <b>Dispose</b> implementations, the <b>Dispose</b> code could be called more than once on separate threads. The following code shows an example of this.</p>\r\n  <div>\r\n    <pre>void Dispose()&#123;<br />  if (null &#33;= theObject)<br />  &#123;<br />    ReleaseResources(theObject);<br />    theObject = null;<br />  &#125;<br />&#125;</pre>\r\n  </div>\r\n  <p>In this example, it is possible for two threads to execute the code before the first thread has set <b>theObject</b> reference to <b>null</b>. Depending on the functionality provided by the <b>ReleaseResources</b> method, security vulnerabilities could occur.</p>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
+  "html": "<h1>What to Check For</h1>\n  <p>Check to ensure that the dispose methods are synchronized when&nbsp;developing non-synchronized <b>Dispose</b> implementations in your application.</p>\n  <p />\n  <h1>How to Fix</h1>\n  <p>If you develop non-synchronized <b>Dispose</b> implementations, the <b>Dispose</b> code could be called more than once on separate threads. The following code shows an example of this.</p>\n  <div>\n    <pre>void Dispose()&#123;<br />  if (null &#33;= theObject)<br />  &#123;<br />    ReleaseResources(theObject);<br />    theObject = null;<br />  &#125;<br />&#125;</pre>\n  </div>\n  <p>In this example, it is possible for two threads to execute the code before the first thread has set <b>theObject</b> reference to <b>null</b>. Depending on the functionality provided by the <b>ReleaseResources</b> method, security vulnerabilities could occur.</p>\n  <hr />\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
 }

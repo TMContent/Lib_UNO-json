@@ -1,6 +1,6 @@
 {
   "id": "72900050-60e7-4562-9812-2f80bf0310bb",
-  "checksum": "8acc9d1d7f077b1d7797da4c95798c60ec6f2dab",
+  "checksum": "98366c9183edcad853db03dfadff8d7616055f70",
   "words": {
     "applies": [
       "h1"
@@ -49,9 +49,6 @@
       "p",
       "p",
       "ul",
-      "ul",
-      "li",
-      "a",
       "li",
       "a",
       "title"
@@ -59,16 +56,10 @@
     "are": [
       "p",
       "p",
-      "ul",
-      "li",
-      "a",
       "title"
     ],
     "used": [
       "p",
-      "ul",
-      "li",
-      "a",
       "title"
     ],
     "instead": [
@@ -91,9 +82,6 @@
       "p",
       "p",
       "ul",
-      "ul",
-      "li",
-      "a",
       "li",
       "a"
     ],
@@ -104,10 +92,7 @@
       "p",
       "p",
       "p",
-      "p",
-      "ul",
-      "li",
-      "a"
+      "p"
     ],
     "whenever": [
       "p"
@@ -116,9 +101,6 @@
       "p",
       "p",
       "ul",
-      "ul",
-      "li",
-      "a",
       "li",
       "a",
       "title"
@@ -269,16 +251,6 @@
       "a",
       "title"
     ],
-    "when": [
-      "ul",
-      "li",
-      "a"
-    ],
-    "aren't": [
-      "ul",
-      "li",
-      "a"
-    ],
     "centralize": [
       "ul",
       "li",
@@ -296,12 +268,11 @@
     ],
     "ul": [
       "C++",
-      "Use C++ Exceptions Where Possible\r\n      \r\n        Error codes are used when exceptions aren't possible\r\n        \r\n          Centralize Error Handling"
+      "Use C++ Exceptions Where Possible\n        \n          Centralize Error Handling"
     ],
     "li": [
       "C++",
       "Use C++ Exceptions Where Possible",
-      "Error codes are used when exceptions aren't possible",
       "Centralize Error Handling"
     ],
     "p": [
@@ -312,7 +283,6 @@
     ],
     "a": [
       "Use C++ Exceptions Where Possible",
-      "Error codes are used when exceptions aren't possible",
       "Centralize Error Handling"
     ]
   },
@@ -322,13 +292,9 @@
       "text": "Use C++ Exceptions Where Possible"
     },
     {
-      "href": "/article/fa97587e-ddd5-4a30-a7f4-81c2bf24c91c",
-      "text": "Error codes are used when exceptions aren't possible"
-    },
-    {
       "href": "/article/e4a3052e-13f2-4062-9a83-49185ff14b0a",
       "text": "Centralize Error Handling"
     }
   ],
-  "html": "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>C&#43;&#43;</li>\r\n  </ul>\r\n  <h1>What to Check For</h1>\r\n  <p>Verify that exceptions are used instead of error codes whenever possible.</p>\r\n  <h1>Why</h1>\r\n  <p>Exceptions are more secure than error codes, because a program may ignore error codes and keep running, but unhandled exceptions make the program terminate, thus preventing unintended behavior.</p>\r\n  <h1>How to Check</h1>\r\n  <p>Review code and look for functions that return error codes. Consider whether it is possible to use exceptions instead of error codes.</p>\r\n  <h1>How to Fix</h1>\r\n  <p>Rewrite functions that return error codes to throw exceptions instead. Rewrite code that handles errors to use exception handling instead of checking error codes.</p>\r\n  <h1>Related Items</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/25d6522f-77d2-4f08-abee-88247a7b4118\">Use C&#43;&#43; Exceptions Where Possible</a>\r\n      <li>\r\n        <a href=\"/article/fa97587e-ddd5-4a30-a7f4-81c2bf24c91c\">Error codes are used when exceptions aren't possible</a>\r\n        <li>\r\n          <a href=\"/article/e4a3052e-13f2-4062-9a83-49185ff14b0a\">Centralize Error Handling</a>\r\n        </li>\r\n      </li>\r\n    </li>\r\n  </ul>"
+  "html": "<h1>Applies to</h1>\n  <ul>\n    <li>C&#43;&#43;</li>\n  </ul>\n  <h1>What to Check For</h1>\n  <p>Verify that exceptions are used instead of error codes whenever possible.</p>\n  <h1>Why</h1>\n  <p>Exceptions are more secure than error codes, because a program may ignore error codes and keep running, but unhandled exceptions make the program terminate, thus preventing unintended behavior.</p>\n  <h1>How to Check</h1>\n  <p>Review code and look for functions that return error codes. Consider whether it is possible to use exceptions instead of error codes.</p>\n  <h1>How to Fix</h1>\n  <p>Rewrite functions that return error codes to throw exceptions instead. Rewrite code that handles errors to use exception handling instead of checking error codes.</p>\n  <h1>Related Items</h1>\n  <ul>\n    <li>\n      <a href=\"/article/25d6522f-77d2-4f08-abee-88247a7b4118\">Use C&#43;&#43; Exceptions Where Possible</a>\n        <li>\n          <a href=\"/article/e4a3052e-13f2-4062-9a83-49185ff14b0a\">Centralize Error Handling</a>\n        </li>\n    </li>\n  </ul>"
 }

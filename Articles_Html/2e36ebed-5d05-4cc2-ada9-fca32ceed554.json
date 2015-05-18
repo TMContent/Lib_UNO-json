@@ -1,6 +1,6 @@
 {
   "id": "2e36ebed-5d05-4cc2-ada9-fca32ceed554",
-  "checksum": "0fc1739d57bc3fb2b2bf0c94bc97eee7c9beb2f7",
+  "checksum": "740d7f80eca55115b2d89d8c6659a835d5733f58",
   "words": {
     "applies": [
       "h1"
@@ -793,7 +793,7 @@
     ],
     "div": [
       "Web Application",
-      "Message\r\n          Description\r\n        \r\n        \r\n          Echo request\r\n          Determines whether an IP node (a host or a router) is available on the network\r\n        \r\n        \r\n          Echo reply\r\n          Replies to an ICMP echo request\r\n        \r\n        \r\n          Destination unreachable\r\n          Informs the host that a datagram cannot be delivered\r\n        \r\n        \r\n          Source quench\r\n          Informs the host to lower the rate at which it sends datagrams because of congestion\r\n        \r\n        \r\n          Redirect\r\n          Informs the host of a preferred route\r\n        \r\n        \r\n          Time exceeded\r\n          Indicates that the time to live (TTL) of an IP datagram has expired"
+      "Message\n          Description\n        \n        \n          Echo request\n          Determines whether an IP node (a host or a router) is available on the network\n        \n        \n          Echo reply\n          Replies to an ICMP echo request\n        \n        \n          Destination unreachable\n          Informs the host that a datagram cannot be delivered\n        \n        \n          Source quench\n          Informs the host to lower the rate at which it sends datagrams because of congestion\n        \n        \n          Redirect\n          Informs the host of a preferred route\n        \n        \n          Time exceeded\n          Indicates that the time to live (TTL) of an IP datagram has expired"
     ],
     "p": [
       "Check to ensure that ICMP traffic is screened from the internal network.",
@@ -807,19 +807,19 @@
       "Commonly Used ICMP Messages"
     ],
     "table": [
-      "Message\r\n          Description\r\n        \r\n        \r\n          Echo request\r\n          Determines whether an IP node (a host or a router) is available on the network\r\n        \r\n        \r\n          Echo reply\r\n          Replies to an ICMP echo request\r\n        \r\n        \r\n          Destination unreachable\r\n          Informs the host that a datagram cannot be delivered\r\n        \r\n        \r\n          Source quench\r\n          Informs the host to lower the rate at which it sends datagrams because of congestion\r\n        \r\n        \r\n          Redirect\r\n          Informs the host of a preferred route\r\n        \r\n        \r\n          Time exceeded\r\n          Indicates that the time to live (TTL) of an IP datagram has expired"
+      "Message\n          Description\n        \n        \n          Echo request\n          Determines whether an IP node (a host or a router) is available on the network\n        \n        \n          Echo reply\n          Replies to an ICMP echo request\n        \n        \n          Destination unreachable\n          Informs the host that a datagram cannot be delivered\n        \n        \n          Source quench\n          Informs the host to lower the rate at which it sends datagrams because of congestion\n        \n        \n          Redirect\n          Informs the host of a preferred route\n        \n        \n          Time exceeded\n          Indicates that the time to live (TTL) of an IP datagram has expired"
     ],
     "tbody": [
-      "Message\r\n          Description\r\n        \r\n        \r\n          Echo request\r\n          Determines whether an IP node (a host or a router) is available on the network\r\n        \r\n        \r\n          Echo reply\r\n          Replies to an ICMP echo request\r\n        \r\n        \r\n          Destination unreachable\r\n          Informs the host that a datagram cannot be delivered\r\n        \r\n        \r\n          Source quench\r\n          Informs the host to lower the rate at which it sends datagrams because of congestion\r\n        \r\n        \r\n          Redirect\r\n          Informs the host of a preferred route\r\n        \r\n        \r\n          Time exceeded\r\n          Indicates that the time to live (TTL) of an IP datagram has expired"
+      "Message\n          Description\n        \n        \n          Echo request\n          Determines whether an IP node (a host or a router) is available on the network\n        \n        \n          Echo reply\n          Replies to an ICMP echo request\n        \n        \n          Destination unreachable\n          Informs the host that a datagram cannot be delivered\n        \n        \n          Source quench\n          Informs the host to lower the rate at which it sends datagrams because of congestion\n        \n        \n          Redirect\n          Informs the host of a preferred route\n        \n        \n          Time exceeded\n          Indicates that the time to live (TTL) of an IP datagram has expired"
     ],
     "tr": [
-      "Message\r\n          Description",
-      "Echo request\r\n          Determines whether an IP node (a host or a router) is available on the network",
-      "Echo reply\r\n          Replies to an ICMP echo request",
-      "Destination unreachable\r\n          Informs the host that a datagram cannot be delivered",
-      "Source quench\r\n          Informs the host to lower the rate at which it sends datagrams because of congestion",
-      "Redirect\r\n          Informs the host of a preferred route",
-      "Time exceeded\r\n          Indicates that the time to live (TTL) of an IP datagram has expired"
+      "Message\n          Description",
+      "Echo request\n          Determines whether an IP node (a host or a router) is available on the network",
+      "Echo reply\n          Replies to an ICMP echo request",
+      "Destination unreachable\n          Informs the host that a datagram cannot be delivered",
+      "Source quench\n          Informs the host to lower the rate at which it sends datagrams because of congestion",
+      "Redirect\n          Informs the host of a preferred route",
+      "Time exceeded\n          Indicates that the time to live (TTL) of an IP datagram has expired"
     ],
     "th": [
       "Message",
@@ -844,5 +844,5 @@
     ]
   },
   "links": [],
-  "html": "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>\r\n      <div>Web Application</div>\r\n    </li>\r\n  </ul>\r\n  <h1>What to Check For</h1>\r\n  <p>Check to ensure that ICMP traffic is screened from the internal network.</p>\r\n  <p />\r\n  <h1>How to Fix</h1>\r\n  <p>ICMP is a stateless protocol that sits on top of IP and allows host availability information to be verified from one host to another. Commonly used ICMP messages are shown in the Table below.</p>\r\n  <p>\r\n    <b>Commonly Used ICMP Messages</b>\r\n  </p>\r\n  <div>\r\n    <table>\r\n      <tbody>\r\n        <tr>\r\n          <th>Message</th>\r\n          <th>Description</th>\r\n        </tr>\r\n        <tr>\r\n          <td>Echo request</td>\r\n          <td>Determines whether an IP node (a host or a router) is available on the network</td>\r\n        </tr>\r\n        <tr>\r\n          <td>Echo reply</td>\r\n          <td>Replies to an ICMP echo request</td>\r\n        </tr>\r\n        <tr>\r\n          <td>Destination unreachable</td>\r\n          <td>Informs the host that a datagram cannot be delivered</td>\r\n        </tr>\r\n        <tr>\r\n          <td>Source quench</td>\r\n          <td>Informs the host to lower the rate at which it sends datagrams because of congestion</td>\r\n        </tr>\r\n        <tr>\r\n          <td>Redirect</td>\r\n          <td>Informs the host of a preferred route</td>\r\n        </tr>\r\n        <tr>\r\n          <td>Time exceeded</td>\r\n          <td>Indicates that the time to live (TTL) of an IP datagram has expired</td>\r\n        </tr>\r\n      </tbody>\r\n    </table>\r\n  </div>\r\n  <p>Blocking ICMP traffic at the outer perimeter router protects you from attacks such as cascading ping floods. Other ICMP vulnerabilities exist that justify blocking this protocol. While ICMP can be used for troubleshooting, it can also be used for network discovery and mapping. Therefore, control the use of ICMP. If you must enable it, use it in echo-reply mode only.</p>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
+  "html": "<h1>Applies to</h1>\n  <ul>\n    <li>\n      <div>Web Application</div>\n    </li>\n  </ul>\n  <h1>What to Check For</h1>\n  <p>Check to ensure that ICMP traffic is screened from the internal network.</p>\n  <p />\n  <h1>How to Fix</h1>\n  <p>ICMP is a stateless protocol that sits on top of IP and allows host availability information to be verified from one host to another. Commonly used ICMP messages are shown in the Table below.</p>\n  <p>\n    <b>Commonly Used ICMP Messages</b>\n  </p>\n  <div>\n    <table>\n      <tbody>\n        <tr>\n          <th>Message</th>\n          <th>Description</th>\n        </tr>\n        <tr>\n          <td>Echo request</td>\n          <td>Determines whether an IP node (a host or a router) is available on the network</td>\n        </tr>\n        <tr>\n          <td>Echo reply</td>\n          <td>Replies to an ICMP echo request</td>\n        </tr>\n        <tr>\n          <td>Destination unreachable</td>\n          <td>Informs the host that a datagram cannot be delivered</td>\n        </tr>\n        <tr>\n          <td>Source quench</td>\n          <td>Informs the host to lower the rate at which it sends datagrams because of congestion</td>\n        </tr>\n        <tr>\n          <td>Redirect</td>\n          <td>Informs the host of a preferred route</td>\n        </tr>\n        <tr>\n          <td>Time exceeded</td>\n          <td>Indicates that the time to live (TTL) of an IP datagram has expired</td>\n        </tr>\n      </tbody>\n    </table>\n  </div>\n  <p>Blocking ICMP traffic at the outer perimeter router protects you from attacks such as cascading ping floods. Other ICMP vulnerabilities exist that justify blocking this protocol. While ICMP can be used for troubleshooting, it can also be used for network discovery and mapping. Therefore, control the use of ICMP. If you must enable it, use it in echo-reply mode only.</p>\n  <hr />\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
 }

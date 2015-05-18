@@ -1,6 +1,6 @@
 {
   "id": "d45feb15-5286-4ac0-bd01-0b2dd3a84eb5",
-  "checksum": "4ae4d93dc1463fd4d72dc0749256c6f74425a7fd",
+  "checksum": "27a40e9c650d44d494b0cc53d71512d3f990134b",
   "words": {
     "what": [
       "h1"
@@ -447,7 +447,7 @@
       "Move to the next input and continue. Document all the data handled by the application."
     ],
     "ol": [
-      "For each input location determine how much you trust the source of input.  When in doubt you should give it no trust. \r\n    \r\n    \r\n      \r\n        Trace the flow of data to each possible output noting along the way any attempts at data validation. Document the flow of data from source to sink.\r\n    \r\n    \r\n      \r\n        Move to the next input and continue. Document all the data handled by the application."
+      "For each input location determine how much you trust the source of input.  When in doubt you should give it no trust. \n    \n    \n      \n        Trace the flow of data to each possible output noting along the way any attempts at data validation. Document the flow of data from source to sink.\n    \n    \n      \n        Move to the next input and continue. Document all the data handled by the application."
     ],
     "li": [
       "For each input location determine how much you trust the source of input.  When in doubt you should give it no trust.",
@@ -464,5 +464,5 @@
     ]
   },
   "links": [],
-  "html": "<h1>What to Check For</h1>\r\n  <p>Project documentation should include the results of a data flow analysis.</p>\r\n  <h1>Why</h1>\r\n  <p>Dataflow analysis helps find vulnerabilities that are related to input validation.</p>\r\n  <h1>How To Check</h1>\r\n  <p>Examine project documentation to verify that it includes the results of a data flow analysis.</p>\r\n  <h1>How To Fix</h1>\r\n  <p>Perform a data flow analysis by following these steps:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <b>For each input location determine how much you trust the source of input.</b>&nbsp; When in doubt you should give it no trust. </p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <b>Trace the flow of data to each possible output noting along the way any attempts at data validation.</b>&nbsp;Document the flow of data from source to sink.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <b>Move to the next input and continue.</b>&nbsp;Document all the data handled by the application.</p>\r\n    </li>\r\n  </ol>\r\n  <br />"
+  "html": "<h1>What to Check For</h1>\n  <p>Project documentation should include the results of a data flow analysis.</p>\n  <h1>Why</h1>\n  <p>Dataflow analysis helps find vulnerabilities that are related to input validation.</p>\n  <h1>How To Check</h1>\n  <p>Examine project documentation to verify that it includes the results of a data flow analysis.</p>\n  <h1>How To Fix</h1>\n  <p>Perform a data flow analysis by following these steps:</p>\n  <ol>\n    <li>\n      <p>\n        <b>For each input location determine how much you trust the source of input.</b>&nbsp; When in doubt you should give it no trust. </p>\n    </li>\n    <li>\n      <p>\n        <b>Trace the flow of data to each possible output noting along the way any attempts at data validation.</b>&nbsp;Document the flow of data from source to sink.</p>\n    </li>\n    <li>\n      <p>\n        <b>Move to the next input and continue.</b>&nbsp;Document all the data handled by the application.</p>\n    </li>\n  </ol>\n  <br />"
 }

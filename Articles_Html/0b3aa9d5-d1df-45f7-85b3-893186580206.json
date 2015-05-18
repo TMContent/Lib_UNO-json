@@ -1,6 +1,6 @@
 {
   "id": "0b3aa9d5-d1df-45f7-85b3-893186580206",
-  "checksum": "fec5c4f3f2cfcebe637010700f40bcb4654b759a",
+  "checksum": "3f38768b26812c9b2f79155be2495701ca1cc1b5",
   "words": {
     "34": [
       "ul",
@@ -423,7 +423,7 @@
       "Related Items"
     ],
     "ul": [
-      "PCI DSS Requirement 3.4\r\n    PCI DSS Requirement 3.4.a\r\n    PCI DSS Requirement 3.4.b\r\n    PCI DSS Requirement 3.4.c\r\n    PCI DSS Requirement 3.4.d",
+      "PCI DSS Requirement 3.4\n    PCI DSS Requirement 3.4.a\n    PCI DSS Requirement 3.4.b\n    PCI DSS Requirement 3.4.c\n    PCI DSS Requirement 3.4.d",
       "Prepare the Data Retention and Disposal Policies"
     ],
     "li": [
@@ -437,7 +437,7 @@
     "p": [
       "The PAN should be rendered unreadable whenever it is stored.",
       "The PAN should be rendered unreadable whenever it is stored to prevent disclosure in the event of a successful compromise.",
-      "Identify if and where the PAN is stored. Examine a sample of database tables or files to verify that PAN is not stored in plain-text. Examine a sample of removable media that contains PAN information, if any, to confirm that the PAN is rendered unreadable.\r\n Examine a sample of the system logs to verify that the PAN is rendered unreadable or removed from the logs. Identify the mechanism used to secure the PAN. The acceptable mechanisms are: one-way crypto-hashes, truncation, index tokens and pads, and strong cryptography.",
+      "Identify if and where the PAN is stored. Examine a sample of database tables or files to verify that PAN is not stored in plain-text. Examine a sample of removable media that contains PAN information, if any, to confirm that the PAN is rendered unreadable.\n Examine a sample of the system logs to verify that the PAN is rendered unreadable or removed from the logs. Identify the mechanism used to secure the PAN. The acceptable mechanisms are: one-way crypto-hashes, truncation, index tokens and pads, and strong cryptography.",
       "Identify if and where the PAN is stored. Choose one of the following mechanisms to protect the PAN: one-way crypto-hashes, truncation, index tokens and pads, and strong cryptography. Implement the chosen mechanism.",
       "",
       "Prepare the Data Retention and Disposal Policies"
@@ -452,5 +452,5 @@
       "text": "Prepare the Data Retention and Disposal Policies"
     }
   ],
-  "html": "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 3.4</li>\r\n    <li>PCI DSS Requirement 3.4.a</li>\r\n    <li>PCI DSS Requirement 3.4.b</li>\r\n    <li>PCI DSS Requirement 3.4.c</li>\r\n    <li>PCI DSS Requirement 3.4.d</li>\r\n  </ul>\r\n  <h1>What to Check For</h1>\r\n  <p>The PAN should be rendered unreadable whenever it is stored.</p>\r\n  <h1>Why</h1>\r\n  <p>The PAN should be rendered unreadable whenever it is stored to prevent disclosure in the event of a successful compromise.</p>\r\n  <h1>How to Check</h1>\r\n  <p>Identify if and where the PAN is stored. Examine a sample of database tables or files to verify that PAN is not stored in plain-text. Examine a sample of removable media that contains PAN information, if any, to confirm that the PAN is rendered unreadable.\r\n Examine a sample of the system logs to verify that the PAN is rendered unreadable or removed from the logs. Identify the mechanism used to secure the PAN. The acceptable mechanisms are: one-way crypto-hashes, truncation, index tokens and pads, and strong cryptography.</p>\r\n  <h1>How to Fix</h1>\r\n  <p>Identify if and where the PAN is stored. Choose one of the following mechanisms to protect the PAN: one-way crypto-hashes, truncation, index tokens and pads, and strong cryptography. Implement the chosen mechanism.</p>\r\n  <p />\r\n  <h1>Related Items</h1>\r\n  <ul>\r\n    <li>\r\n      <p>\r\n        <a href=\"/article/40de7c85-0fdd-4894-a3a1-943d4316fb12\">Prepare the Data Retention and Disposal Policies</a>\r\n      </p>\r\n    </li>\r\n  </ul>"
+  "html": "<h1>Applies to</h1>\n  <ul>\n    <li>PCI DSS Requirement 3.4</li>\n    <li>PCI DSS Requirement 3.4.a</li>\n    <li>PCI DSS Requirement 3.4.b</li>\n    <li>PCI DSS Requirement 3.4.c</li>\n    <li>PCI DSS Requirement 3.4.d</li>\n  </ul>\n  <h1>What to Check For</h1>\n  <p>The PAN should be rendered unreadable whenever it is stored.</p>\n  <h1>Why</h1>\n  <p>The PAN should be rendered unreadable whenever it is stored to prevent disclosure in the event of a successful compromise.</p>\n  <h1>How to Check</h1>\n  <p>Identify if and where the PAN is stored. Examine a sample of database tables or files to verify that PAN is not stored in plain-text. Examine a sample of removable media that contains PAN information, if any, to confirm that the PAN is rendered unreadable.\n Examine a sample of the system logs to verify that the PAN is rendered unreadable or removed from the logs. Identify the mechanism used to secure the PAN. The acceptable mechanisms are: one-way crypto-hashes, truncation, index tokens and pads, and strong cryptography.</p>\n  <h1>How to Fix</h1>\n  <p>Identify if and where the PAN is stored. Choose one of the following mechanisms to protect the PAN: one-way crypto-hashes, truncation, index tokens and pads, and strong cryptography. Implement the chosen mechanism.</p>\n  <p />\n  <h1>Related Items</h1>\n  <ul>\n    <li>\n      <p>\n        <a href=\"/article/40de7c85-0fdd-4894-a3a1-943d4316fb12\">Prepare the Data Retention and Disposal Policies</a>\n      </p>\n    </li>\n  </ul>"
 }

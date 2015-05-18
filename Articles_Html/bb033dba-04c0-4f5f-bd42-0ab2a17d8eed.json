@@ -1,6 +1,6 @@
 {
   "id": "bb033dba-04c0-4f5f-bd42-0ab2a17d8eed",
-  "checksum": "21ce4672de1f881f17e9d05141df6d673cd777b9",
+  "checksum": "f3f37836e90ab8d9f5bd60d8d4678f04ca1ba36c",
   "words": {
     "what": [
       "h1"
@@ -119,10 +119,7 @@
       "li",
       "p",
       "p",
-      "p",
-      "ul",
-      "li",
-      "a"
+      "p"
     ],
     "application": [
       "p",
@@ -136,9 +133,6 @@
       "strong",
       "p",
       "p",
-      "ul",
-      "li",
-      "a",
       "title"
     ],
     "should": [
@@ -193,9 +187,6 @@
       "li",
       "p",
       "strong",
-      "ul",
-      "li",
-      "a",
       "title"
     ],
     "names": [
@@ -213,10 +204,7 @@
       "li",
       "p",
       "p",
-      "strong",
-      "ul",
-      "li",
-      "a"
+      "strong"
     ],
     "or": [
       "p",
@@ -280,9 +268,6 @@
       "strong",
       "p",
       "ul",
-      "ul",
-      "li",
-      "a",
       "li",
       "a",
       "title"
@@ -361,9 +346,6 @@
       "p",
       "p",
       "ul",
-      "ul",
-      "li",
-      "a",
       "li",
       "a",
       "title"
@@ -673,10 +655,7 @@
       "li",
       "p",
       "li",
-      "p",
-      "ul",
-      "li",
-      "a"
+      "p"
     ],
     "any": [
       "ol",
@@ -757,7 +736,7 @@
       "p",
       "title"
     ],
-    "path look": [
+    "path&nbsp;look": [
       "ol",
       "li",
       "p"
@@ -890,10 +869,7 @@
     "within": [
       "ol",
       "li",
-      "p",
-      "ul",
-      "li",
-      "a"
+      "p"
     ],
     "application's": [
       "ol",
@@ -1059,7 +1035,7 @@
       "pre",
       "p"
     ],
-    "try{": [
+    "try&#123": [
       "ol",
       "li",
       "pre"
@@ -1094,12 +1070,12 @@
       "li",
       "pre"
     ],
-    "false;}catch": [
+    "false;&#125;catch": [
       "ol",
       "li",
       "pre"
     ],
-    "httpexception){": [
+    "httpexception)&#123;": [
       "ol",
       "li",
       "pre"
@@ -1109,7 +1085,7 @@
       "li",
       "pre"
     ],
-    "attempted}": [
+    "attempted&#125": [
       "ol",
       "li",
       "pre"
@@ -1217,62 +1193,10 @@
     ],
     "checklist": [
       "ul",
-      "ul",
-      "li",
-      "a",
       "li",
       "a"
     ],
     "item": [
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a"
-    ],
-    "are": [
-      "ul",
-      "ul",
-      "ul",
-      "li",
-      "li",
-      "li",
-      "a",
-      "a",
-      "a"
-    ],
-    "required": [
-      "ul",
-      "li",
-      "a"
-    ],
-    "they": [
-      "ul",
-      "li",
-      "a"
-    ],
-    "well": [
-      "ul",
-      "li",
-      "a"
-    ],
-    "formed": [
-      "ul",
-      "li",
-      "a"
-    ],
-    "verifiably": [
-      "ul",
-      "li",
-      "a"
-    ],
-    "valid": [
-      "ul",
-      "li",
-      "a"
-    ],
-    "context": [
       "ul",
       "li",
       "a"
@@ -1315,6 +1239,9 @@
     "guidance": [
       "p"
     ],
+    "sink]": [
+      "title"
+    ],
     "avoids": [
       "title"
     ]
@@ -1332,7 +1259,7 @@
       "Malicious file input can be used to coerce your application into accessing arbitrary files and resources.",
       "Use the following steps to check for this problem:",
       "Find all sources of input in your application. During design time identify all of the potential sources of input to your application. Scour the source code to discover sources of input that may have been missed in the design. Compile a list that you can use in the following steps.",
-      "Determine if any source of input provides file or path information. Examine each source of input and determine if it is used to generate a file name or file path. Look not only for sources of input that provide full paths or file names but also for user input that could be used to modify the internal generation of paths and file names.",
+      "Determine if any source of input provides file or path information. Examine each source of input and determine if it is used to generate a file name or file path.&nbsp;Look not only for sources of input that provide full paths or file names but also for user input that could be used to modify the internal generation of paths and file names.",
       "If user control over file paths or file names is not absolutely necessary, remove the responsible code from the application.",
       "",
       "If the functionality is critical to the proper working of the application, then validate the input for directory traversal and canonicalization attacks:",
@@ -1342,15 +1269,14 @@
       "Adapted from Microsoft patterns & practices guidance."
     ],
     "ol": [
-      "Find all sources of input in your application. During design time identify all of the potential sources of input to your application. Scour the source code to discover sources of input that may have been missed in the design. Compile a list that you can use in the following steps.\r\n      \r\n        \r\n          Determine if any source of input provides file or path information. Examine each source of input and determine if it is used to generate a file name or file path. Look not only for sources of input that provide full paths or file names but also for user input that could be used to modify the internal generation of paths and file names.",
-      "Check File Names. Ensure that file paths only refer to files within your application's virtual directory hierarchy if that is appropriate. When checking file names, obtain the full name of the file by using the System.IO.Path.GetFullPath method. \r\n      \r\n        \r\n          Check File Paths. If you use MapPath to map a supplied virtual path to a physical path on the server, use the overloaded Request.MapPath method that accepts a bool parameter so that you can prevent cross-application mapping: \r\n        try{  string mappedPath = Request.MapPath( inputPath.Text,                                       Request.ApplicationPath, false);}catch (HttpException){  // Cross-application mapping attempted}\r\n        The final false parameter prevents cross-application mapping. This means that a user cannot successfully supply a path that contains \"..\" to traverse outside of your application's virtual directory hierarchy. Any attempt to do this results in an exception of type HttpException."
+      "Find all sources of input in your application. During design time identify all of the potential sources of input to your application. Scour the source code to discover sources of input that may have been missed in the design. Compile a list that you can use in the following steps.\n      \n        \n          Determine if any source of input provides file or path information. Examine each source of input and determine if it is used to generate a file name or file path.&nbsp;Look not only for sources of input that provide full paths or file names but also for user input that could be used to modify the internal generation of paths and file names.",
+      "Check File Names. Ensure that file paths only refer to files within your application's virtual directory hierarchy if that is appropriate. When checking file names, obtain the full name of the file by using the System.IO.Path.GetFullPath method. \n      \n        \n          Check File Paths. If you use MapPath to map a supplied virtual path to a physical path on the server, use the overloaded Request.MapPath method that accepts a bool parameter so that you can prevent cross-application mapping: \n        try&#123;  string mappedPath = Request.MapPath( inputPath.Text,                                       Request.ApplicationPath, false);&#125;catch (HttpException)&#123;  // Cross-application mapping attempted&#125;\n        The final false parameter prevents cross-application mapping. This means that a user cannot successfully supply a path that contains \"..\" to traverse outside of your application's virtual directory hierarchy. Any attempt to do this results in an exception of type HttpException."
     ],
     "li": [
       "Find all sources of input in your application. During design time identify all of the potential sources of input to your application. Scour the source code to discover sources of input that may have been missed in the design. Compile a list that you can use in the following steps.",
-      "Determine if any source of input provides file or path information. Examine each source of input and determine if it is used to generate a file name or file path. Look not only for sources of input that provide full paths or file names but also for user input that could be used to modify the internal generation of paths and file names.",
+      "Determine if any source of input provides file or path information. Examine each source of input and determine if it is used to generate a file name or file path.&nbsp;Look not only for sources of input that provide full paths or file names but also for user input that could be used to modify the internal generation of paths and file names.",
       "Check File Names. Ensure that file paths only refer to files within your application's virtual directory hierarchy if that is appropriate. When checking file names, obtain the full name of the file by using the System.IO.Path.GetFullPath method.",
-      "Check File Paths. If you use MapPath to map a supplied virtual path to a physical path on the server, use the overloaded Request.MapPath method that accepts a bool parameter so that you can prevent cross-application mapping: \r\n        try{  string mappedPath = Request.MapPath( inputPath.Text,                                       Request.ApplicationPath, false);}catch (HttpException){  // Cross-application mapping attempted}\r\n        The final false parameter prevents cross-application mapping. This means that a user cannot successfully supply a path that contains \"..\" to traverse outside of your application's virtual directory hierarchy. Any attempt to do this results in an exception of type HttpException.",
-      "Checklist Item: If Input File Names Are Required, They Are Well Formed and Are Verifiably Valid Within the Application Context",
+      "Check File Paths. If you use MapPath to map a supplied virtual path to a physical path on the server, use the overloaded Request.MapPath method that accepts a bool parameter so that you can prevent cross-application mapping: \n        try&#123;  string mappedPath = Request.MapPath( inputPath.Text,                                       Request.ApplicationPath, false);&#125;catch (HttpException)&#123;  // Cross-application mapping attempted&#125;\n        The final false parameter prevents cross-application mapping. This means that a user cannot successfully supply a path that contains \"..\" to traverse outside of your application's virtual directory hierarchy. Any attempt to do this results in an exception of type HttpException.",
       "Checklist Item: All Input is Validated For Length, Range, Format, and Type"
     ],
     "strong": [
@@ -1368,7 +1294,7 @@
       "HttpException"
     ],
     "pre": [
-      "try{  string mappedPath = Request.MapPath( inputPath.Text,                                       Request.ApplicationPath, false);}catch (HttpException){  // Cross-application mapping attempted}"
+      "try&#123;  string mappedPath = Request.MapPath( inputPath.Text,                                       Request.ApplicationPath, false);&#125;catch (HttpException)&#123;  // Cross-application mapping attempted&#125;"
     ],
     "br": [
       "",
@@ -1381,10 +1307,9 @@
       ""
     ],
     "ul": [
-      "Checklist Item: If Input File Names Are Required, They Are Well Formed and Are Verifiably Valid Within the Application Context \r\n      \r\n        Checklist Item: All Input is Validated For Length, Range, Format, and Type"
+      "Checklist Item: All Input is Validated For Length, Range, Format, and Type"
     ],
     "a": [
-      "Checklist Item: If Input File Names Are Required, They Are Well Formed and Are Verifiably Valid Within the Application Context",
       "Checklist Item: All Input is Validated For Length, Range, Format, and Type"
     ],
     "hr": [
@@ -1393,13 +1318,9 @@
   },
   "links": [
     {
-      "href": "/article/4ce86b45-ffb7-4646-9f8f-01f87be439da",
-      "text": "Checklist Item: If Input File Names Are Required, They Are Well Formed and Are Verifiably Valid Within the Application Context "
-    },
-    {
       "href": "/article/581e8fff-7841-49ac-8bbe-d74e44aa9bd8",
       "text": "Checklist Item: All Input is Validated For Length, Range, Format, and Type"
     }
   ],
-  "html": "<h1>What to Check For</h1>\r\n  <p>Unless absolutely necessary, the application should not accept file names or file paths as input.</p>\r\n  <h1>Why</h1>\r\n  <p>Malicious file input can be used to coerce your application into accessing arbitrary files and resources.</p>\r\n  <h1>How to Check</h1>\r\n  <p>Use the following steps to check for this problem:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Find all sources of input in your application. </strong>During design time identify all of the potential sources of input to your application. Scour the source code to discover sources of input that may have been missed in the design. Compile a list that you can use in the following steps.</p>\r\n      <li>\r\n        <p>\r\n          <strong>Determine if any source of input provides file or path information. </strong>Examine each source of input and determine if it is used to generate a file name or file path.&nbsp;Look not only for sources of input that provide full paths or file names but also for user input that could be used to modify the internal generation of paths and file names.</p>\r\n      </li>\r\n    </li>\r\n  </ol>\r\n  <h1>How to Fix</h1>\r\n  <p>If user control over file paths or file names is not absolutely necessary, remove the responsible code from the application.</p>\r\n  <p />\r\n  <p>If the functionality is critical to the proper working of the application, then validate the input for directory traversal and canonicalization attacks:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Check File Names. </strong>Ensure that file paths only refer to files within your application's virtual directory hierarchy if that is appropriate. When checking file names, obtain the full name of the file by using the <b>System.IO.Path.GetFullPath</b> method. </p>\r\n      <li>\r\n        <p>\r\n          <strong>Check File Paths. </strong>If you use <b>MapPath</b> to map a supplied virtual path to a physical path on the server, use the overloaded <b>Request.MapPath</b> method that accepts a <b>bool</b> parameter so that you can prevent cross-application mapping: </p>\r\n        <pre>try<br />&#123;<br />  string mappedPath = Request.MapPath( inputPath.Text,<br />                                       Request.ApplicationPath, false);<br />&#125;<br />catch (HttpException)<br />&#123;<br />  // Cross-application mapping attempted<br />&#125;</pre>\r\n        <p>The final <b>false</b> parameter prevents cross-application mapping. This means that a user cannot successfully supply a path that contains \"..\" to traverse outside of your application's virtual directory hierarchy. Any attempt to do this results in an exception of type <b>HttpException</b>. </p>\r\n      </li>\r\n    </li>\r\n  </ol>\r\n  <h1>Related Items</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/4ce86b45-ffb7-4646-9f8f-01f87be439da\">Checklist Item: If Input File Names Are Required, They Are Well Formed and Are Verifiably Valid Within the Application Context </a>\r\n      <li>\r\n        <a href=\"/article/581e8fff-7841-49ac-8bbe-d74e44aa9bd8\">Checklist Item: All Input is Validated For Length, Range, Format, and Type</a>\r\n      </li>\r\n    </li>\r\n  </ul>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance. </p>"
+  "html": "<h1>What to Check For</h1>\n  <p>Unless absolutely necessary, the application should not accept file names or file paths as input.</p>\n  <h1>Why</h1>\n  <p>Malicious file input can be used to coerce your application into accessing arbitrary files and resources.</p>\n  <h1>How to Check</h1>\n  <p>Use the following steps to check for this problem:</p>\n  <ol>\n    <li>\n      <p>\n        <strong>Find all sources of input in your application. </strong>During design time identify all of the potential sources of input to your application. Scour the source code to discover sources of input that may have been missed in the design. Compile a list that you can use in the following steps.</p>\n      <li>\n        <p>\n          <strong>Determine if any source of input provides file or path information. </strong>Examine each source of input and determine if it is used to generate a file name or file path.&amp;nbsp;Look not only for sources of input that provide full paths or file names but also for user input that could be used to modify the internal generation of paths and file names.</p>\n      </li>\n    </li>\n  </ol>\n  <h1>How to Fix</h1>\n  <p>If user control over file paths or file names is not absolutely necessary, remove the responsible code from the application.</p>\n  <p />\n  <p>If the functionality is critical to the proper working of the application, then validate the input for directory traversal and canonicalization attacks:</p>\n  <ol>\n    <li>\n      <p>\n        <strong>Check File Names. </strong>Ensure that file paths only refer to files within your application's virtual directory hierarchy if that is appropriate. When checking file names, obtain the full name of the file by using the <b>System.IO.Path.GetFullPath</b> method. </p>\n      <li>\n        <p>\n          <strong>Check File Paths. </strong>If you use <b>MapPath</b> to map a supplied virtual path to a physical path on the server, use the overloaded <b>Request.MapPath</b> method that accepts a <b>bool</b> parameter so that you can prevent cross-application mapping: </p>\n        <pre>try<br />&amp;#123;<br />  string mappedPath = Request.MapPath( inputPath.Text,<br />                                       Request.ApplicationPath, false);<br />&amp;#125;<br />catch (HttpException)<br />&amp;#123;<br />  // Cross-application mapping attempted<br />&amp;#125;</pre>\n        <p>The final <b>false</b> parameter prevents cross-application mapping. This means that a user cannot successfully supply a path that contains \"..\" to traverse outside of your application's virtual directory hierarchy. Any attempt to do this results in an exception of type <b>HttpException</b>. </p>\n      </li>\n    </li>\n  </ol>\n  <h1>Related Items</h1>\n  <ul>\n      <li>\n        <a href=\"/article/581e8fff-7841-49ac-8bbe-d74e44aa9bd8\">Checklist Item: All Input is Validated For Length, Range, Format, and Type</a>\n      </li>\n  </ul>\n  <hr />\n  <p>Adapted from Microsoft patterns &amp; practices guidance. </p>"
 }

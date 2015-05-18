@@ -1,6 +1,6 @@
 {
   "id": "7c25d11f-1d45-452d-b271-4ed2aee02f62",
-  "checksum": "1caf4c6395ec2d4d20b0fe14377199ef7e3b4aec",
+  "checksum": "6e9ac08f7de7b68b78c943c1b581f44bed57c0c3",
   "words": {
     "what": [
       "h2"
@@ -235,7 +235,7 @@
       "ul",
       "li"
     ],
-    "see\rhttp://cwe.mitre.org/data/definitions/116.html": [
+    "seehttp://cwe.mitre.org/data/definitions/116.html": [
       "ul",
       "li"
     ],
@@ -255,13 +255,13 @@
       "Additional Resources"
     ],
     "p": [
-      "For every web page that is generated, use and specify a character encoding such as ISO-8859-1 or UTF-8. When an encoding is not specified, the web browser may choose a different encoding by guessing which encoding is actually being used by the web page.\r\n This can cause the web browser to treat certain sequences as special, opening up the client to subtle XSS attacks. See CWE-116 for more mitigations related to encoding/escaping."
+      "For every web page that is generated, use and specify a character encoding such as ISO-8859-1 or UTF-8. When an encoding is not specified, the web browser may choose a different encoding by guessing which encoding is actually being used by the web page.\n This can cause the web browser to treat certain sequences as special, opening up the client to subtle XSS attacks. See CWE-116 for more mitigations related to encoding/escaping."
     ],
     "ul": [
-      "For more information abotu \"CWE-116: Improper Encoding or Escaping of Output\", please see\r\nhttp://cwe.mitre.org/data/definitions/116.html"
+      "For more information abotu \"CWE-116: Improper Encoding or Escaping of Output\", please see\nhttp://cwe.mitre.org/data/definitions/116.html"
     ],
     "li": [
-      "For more information abotu \"CWE-116: Improper Encoding or Escaping of Output\", please see\r\nhttp://cwe.mitre.org/data/definitions/116.html"
+      "For more information abotu \"CWE-116: Improper Encoding or Escaping of Output\", please see\nhttp://cwe.mitre.org/data/definitions/116.html"
     ],
     "a": [
       "http://cwe.mitre.org/data/definitions/116.html"
@@ -273,5 +273,5 @@
       "text": "http://cwe.mitre.org/data/definitions/116.html"
     }
   ],
-  "html": "<h2>What to Do</h2>\r\n  <p>For every web page that is generated, use and specify a character encoding such as ISO-8859-1 or UTF-8. When an encoding is not specified, the web browser may choose a different encoding by guessing which encoding is actually being used by the web page.\r\n This can cause the web browser to treat certain sequences as special, opening up the client to subtle XSS attacks. See CWE-116 for more mitigations related to encoding/escaping.</p>\r\n  <h2>Additional Resources</h2>\r\n  <ul>\r\n    <li>For more information abotu \"CWE-116: Improper Encoding or Escaping of Output\", please see\r\n<a href=\"http://cwe.mitre.org/data/definitions/116.html\">http://cwe.mitre.org/data/definitions/116.html</a></li>\r\n  </ul>"
+  "html": "<h2>What to Do</h2>\n  <p>For every web page that is generated, use and specify a character encoding such as ISO-8859-1 or UTF-8. When an encoding is not specified, the web browser may choose a different encoding by guessing which encoding is actually being used by the web page.\n This can cause the web browser to treat certain sequences as special, opening up the client to subtle XSS attacks. See CWE-116 for more mitigations related to encoding/escaping.</p>\n  <h2>Additional Resources</h2>\n  <ul>\n    <li>For more information abotu \"CWE-116: Improper Encoding or Escaping of Output\", please see\n<a href=\"http://cwe.mitre.org/data/definitions/116.html\">http://cwe.mitre.org/data/definitions/116.html</a></li>\n  </ul>"
 }

@@ -1,6 +1,6 @@
 {
   "id": "966464bc-0408-4550-8d1f-af545e460fa8",
-  "checksum": "5e09de9bab19b762104d0e531177d25cc09af8bc",
+  "checksum": "00a575305283294d65bb2681a202c7ceb9d397f7",
   "words": {
     "what": [
       "h1"
@@ -445,12 +445,12 @@
     "p": [
       "Strong cryptography should be used whenever cardholder data is being transmitted over open, public networks.",
       "Encrypt the cardholder data when transmitting to prevent it from being read if intercepted by an attacker.",
-      "Identify if and how the cardholder data is transmitted over open, public networks, such as the Internet. Identify all the computers that are involved in the transmission. Make sure that a strong encryption solution is used on each involved computer to secure\r\n the transmission. Some acceptable network encryption solutions are IPsec and TLS.",
-      "Identify if and how the cardholder data is transmitted over open, public networks, such as the Internet. Identify all the computers that are involved in the transmission. Choose a strong encryption solution to secure the transmission. Some acceptable encryption\r\n solutions are IPsec and&nbsp;TLS:",
+      "Identify if and how the cardholder data is transmitted over open, public networks, such as the Internet. Identify all the computers that are involved in the transmission. Make sure that a strong encryption solution is used on each involved computer to secure\n the transmission. Some acceptable network encryption solutions are IPsec and TLS.",
+      "Identify if and how the cardholder data is transmitted over open, public networks, such as the Internet. Identify all the computers that are involved in the transmission. Choose a strong encryption solution to secure the transmission. Some acceptable encryption\n solutions are IPsec and&nbsp;TLS:",
       "Install and configure a strong encryption solution on each involved computer to secure the transmission."
     ],
     "ul": [
-      "IPsec is best used with VPN. IPSec is only an option when all hosts involved have static IPs.\r\n    \r\n      TLS is best used for transmitting data between a web client and a web server.",
+      "IPsec is best used with VPN. IPSec is only an option when all hosts involved have static IPs.\n    \n      TLS is best used for transmitting data between a web client and a web server.",
       "Use TLS or IPSec for Secure Communication Between Entities"
     ],
     "li": [
@@ -472,5 +472,5 @@
       "text": "Use TLS or IPSec for Secure Communication Between Entities"
     }
   ],
-  "html": "<h1>What to Check For</h1>\r\n  <p>Strong cryptography should be used whenever cardholder data is being transmitted over open, public networks.</p>\r\n  <h1>Why</h1>\r\n  <p>Encrypt the cardholder data when transmitting to prevent it from being read if intercepted by an attacker.</p>\r\n  <h1>How to Check</h1>\r\n  <p>Identify if and how the cardholder data is transmitted over open, public networks, such as the Internet. Identify all the computers that are involved in the transmission. Make sure that a strong encryption solution is used on each involved computer to secure\r\n the transmission. Some acceptable network encryption solutions are IPsec and TLS.</p>\r\n  <h1>How to Fix</h1>\r\n  <p>Identify if and how the cardholder data is transmitted over open, public networks, such as the Internet. Identify all the computers that are involved in the transmission. Choose a strong encryption solution to secure the transmission. Some acceptable encryption\r\n solutions are IPsec and&amp;nbsp;TLS: </p>\r\n  <ul>\r\n    <li>\r\n      <strong>IPsec</strong> is best used with VPN. IPSec is only an option when all hosts involved have static IPs.</li>\r\n    <li>\r\n      <strong>TLS </strong>is best used for transmitting data between a web client and a web server.\r\n</li>\r\n  </ul>\r\n  <p>Install and configure a strong encryption solution on each involved computer to secure the transmission.</p>\r\n  <h1>Related Items</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/de1299b9-854b-4479-9f26-bbc9df38af29\">Use TLS or IPSec for Secure Communication Between Entities</a>\r\n    </li>\r\n  </ul>"
+  "html": "<h1>What to Check For</h1>\n  <p>Strong cryptography should be used whenever cardholder data is being transmitted over open, public networks.</p>\n  <h1>Why</h1>\n  <p>Encrypt the cardholder data when transmitting to prevent it from being read if intercepted by an attacker.</p>\n  <h1>How to Check</h1>\n  <p>Identify if and how the cardholder data is transmitted over open, public networks, such as the Internet. Identify all the computers that are involved in the transmission. Make sure that a strong encryption solution is used on each involved computer to secure\n the transmission. Some acceptable network encryption solutions are IPsec and TLS.</p>\n  <h1>How to Fix</h1>\n  <p>Identify if and how the cardholder data is transmitted over open, public networks, such as the Internet. Identify all the computers that are involved in the transmission. Choose a strong encryption solution to secure the transmission. Some acceptable encryption\n solutions are IPsec and&amp;nbsp;TLS: </p>\n  <ul>\n    <li>\n      <strong>IPsec</strong> is best used with VPN. IPSec is only an option when all hosts involved have static IPs.</li>\n    <li>\n      <strong>TLS </strong>is best used for transmitting data between a web client and a web server.\n</li>\n  </ul>\n  <p>Install and configure a strong encryption solution on each involved computer to secure the transmission.</p>\n  <h1>Related Items</h1>\n  <ul>\n    <li>\n      <a href=\"/article/de1299b9-854b-4479-9f26-bbc9df38af29\">Use TLS or IPSec for Secure Communication Between Entities</a>\n    </li>\n  </ul>"
 }

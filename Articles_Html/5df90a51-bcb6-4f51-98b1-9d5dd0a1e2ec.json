@@ -1,6 +1,6 @@
 {
   "id": "5df90a51-bcb6-4f51-98b1-9d5dd0a1e2ec",
-  "checksum": "0aaf720ad8b3a53d5d42080a2f4231962686c5b7",
+  "checksum": "c3725c4e5e82453539a3fd8ca2112e3a9ad939fe",
   "words": {
     "35": [
       "ul",
@@ -391,7 +391,7 @@
       "ol",
       "li"
     ],
-    "below\r\n[servicecontract]interface": [
+    "below\n[servicecontract]interface": [
       "ol",
       "li"
     ],
@@ -496,7 +496,7 @@
       "ol",
       "li"
     ],
-    "contract\r\nclass": [
+    "contract\nclass": [
       "ol",
       "li"
     ],
@@ -585,7 +585,7 @@
       "ol",
       "li"
     ],
-    "operations\r\ntry{": [
+    "operations\ntry{": [
       "ol",
       "li"
     ],
@@ -795,15 +795,15 @@
       "Additional Resources"
     ],
     "ul": [
-      "Microsoft® Windows Communication Foundation (WCF) 3.5 \r\nMicrosoft Visual Studio® 2008",
+      "Microsoft® Windows Communication Foundation (WCF) 3.5 \nMicrosoft Visual Studio® 2008",
       "For more information on Fault Contracts, see “Specifying and Handling Faults in Contracts and Services” at http://msdn.microsoft.com/en-us/library/ms733721.aspx"
     ],
     "li": [
       "Microsoft® Windows Communication Foundation (WCF) 3.5",
       "Microsoft Visual Studio® 2008",
-      "Define a Fault contract by applying the FaultContract attribute directly on a contract operation, and specifying the error detailing type to the method as shown below:\r\n[ServiceContract]interface ICalculator{   [OperationContract]   [FaultContract(typeof(DivideByZeroException))]   double Divide(double number1,double number2);}",
-      "Implement the Divide operation which throw the fault and have it propagated to the client by throwing exactly the same detailing type listed in the fault contract.\r\nclass MyService : ICalculator{   public double Divide(double number1,double number2)   {      throw new FaultException<DivideByZeroException>(new DivideByZeroException());   }}",
-      "Handle the faults at the client by catching the FaultException and also other communication exceptions that could occur when calling the service operations.\r\ntry{  proxy.Divide();}catch (FaultException<DivideByZeroException> ex){  // only if a fault contract of type DivideByZeroException was specified }catch (FaultException ex){  // any other faults }catch (CommunicationException ex){  // any communication errors? }",
+      "Define a Fault contract by applying the FaultContract attribute directly on a contract operation, and specifying the error detailing type to the method as shown below:\n[ServiceContract]interface ICalculator{   [OperationContract]   [FaultContract(typeof(DivideByZeroException))]   double Divide(double number1,double number2);}",
+      "Implement the Divide operation which throw the fault and have it propagated to the client by throwing exactly the same detailing type listed in the fault contract.\nclass MyService : ICalculator{   public double Divide(double number1,double number2)   {      throw new FaultException<DivideByZeroException>(new DivideByZeroException());   }}",
+      "Handle the faults at the client by catching the FaultException and also other communication exceptions that could occur when calling the service operations.\ntry{  proxy.Divide();}catch (FaultException<DivideByZeroException> ex){  // only if a fault contract of type DivideByZeroException was specified }catch (FaultException ex){  // any other faults }catch (CommunicationException ex){  // any communication errors? }",
       "For more information on Fault Contracts, see “Specifying and Handling Faults in Contracts and Services” at http://msdn.microsoft.com/en-us/library/ms733721.aspx"
     ],
     "p": [
@@ -811,7 +811,7 @@
       "Adapted from Microsoft patterns & practices guidance."
     ],
     "ol": [
-      "Define a Fault contract by applying the FaultContract attribute directly on a contract operation, and specifying the error detailing type to the method as shown below:\r\n[ServiceContract]interface ICalculator{   [OperationContract]   [FaultContract(typeof(DivideByZeroException))]   double Divide(double number1,double number2);}Implement the Divide operation which throw the fault and have it propagated to the client by throwing exactly the same detailing type listed in the fault contract.\r\nclass MyService : ICalculator{   public double Divide(double number1,double number2)   {      throw new FaultException<DivideByZeroException>(new DivideByZeroException());   }}Handle the faults at the client by catching the FaultException and also other communication exceptions that could occur when calling the service operations.\r\ntry{  proxy.Divide();}catch (FaultException<DivideByZeroException> ex){  // only if a fault contract of type DivideByZeroException was specified }catch (FaultException ex){  // any other faults }catch (CommunicationException ex){  // any communication errors? }",
+      "Define a Fault contract by applying the FaultContract attribute directly on a contract operation, and specifying the error detailing type to the method as shown below:\n[ServiceContract]interface ICalculator{   [OperationContract]   [FaultContract(typeof(DivideByZeroException))]   double Divide(double number1,double number2);}Implement the Divide operation which throw the fault and have it propagated to the client by throwing exactly the same detailing type listed in the fault contract.\nclass MyService : ICalculator{   public double Divide(double number1,double number2)   {      throw new FaultException<DivideByZeroException>(new DivideByZeroException());   }}Handle the faults at the client by catching the FaultException and also other communication exceptions that could occur when calling the service operations.\ntry{  proxy.Divide();}catch (FaultException<DivideByZeroException> ex){  // only if a fault contract of type DivideByZeroException was specified }catch (FaultException ex){  // any other faults }catch (CommunicationException ex){  // any communication errors? }",
       "[ServiceContract]interface ICalculator{   [OperationContract]   [FaultContract(typeof(DivideByZeroException))]   double Divide(double number1,double number2);}",
       "class MyService : ICalculator{   public double Divide(double number1,double number2)   {      throw new FaultException<DivideByZeroException>(new DivideByZeroException());   }}",
       "try{  proxy.Divide();}catch (FaultException<DivideByZeroException> ex){  // only if a fault contract of type DivideByZeroException was specified }catch (FaultException ex){  // any other faults }catch (CommunicationException ex){  // any communication errors? }"
@@ -863,5 +863,5 @@
       "text": "http://msdn.microsoft.com/en-us/library/ms733721.aspx"
     }
   ],
-  "html": "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>Microsoft® Windows Communication Foundation (WCF) 3.5 \r\n<li>Microsoft Visual Studio® 2008</li></li>\r\n  </ul>\r\n  <h1>Description</h1>\r\n  <p>When calling a WCF service, if there are any exceptions thrown by the service, the communication channel goes into the faulted state, and you cannot use the proxy for any further calls. This can be avoided by throwing FaultException in your service operations. The service operation that throws a FaultException must be decorated with one or more FaultContract attributes.</p>\r\n  <ol>\r\n    <li>Define a Fault contract by applying the FaultContract attribute directly on a contract operation, and specifying the error detailing type to the method as shown below:\r\n<ol><pre>[ServiceContract]<br />interface ICalculator<br />{<br />   [OperationContract]<br />   [FaultContract(typeof(DivideByZeroException))]<br />   double Divide(double number1,double number2);<br />}</pre></ol><li>Implement the Divide operation which throw the fault and have it propagated to the client by throwing exactly the same detailing type listed in the fault contract.\r\n<ol><pre>class MyService : ICalculator<br />{<br />   public double Divide(double number1,double number2)<br />   {<br />      throw new FaultException&lt;DivideByZeroException&gt;(new DivideByZeroException());<br />   }<br />}</pre></ol><li>Handle the faults at the client by catching the FaultException and also other communication exceptions that could occur when calling the service operations.\r\n<ol><pre>try<br />{<br />  proxy.Divide();<br />}<br />catch (FaultException&lt;DivideByZeroException&gt; ex)<br />{<br />  // only if a fault contract of type DivideByZeroException was specified <br />}</pre><pre>catch (FaultException ex)<br />{<br />  // any other faults <br />}</pre><pre>catch (CommunicationException ex)<br />{<br />  // any communication errors? <br />} </pre></ol></li></li></li>\r\n  </ol>\r\n  <h1>Additional Resources</h1>\r\n  <ul>\r\n    <li>For more information on Fault Contracts, see “Specifying and Handling Faults in Contracts and Services” at <a href=\"http://msdn.microsoft.com/en-us/library/ms733721.aspx\">http://msdn.microsoft.com/en-us/library/ms733721.aspx</a></li>\r\n  </ul>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
+  "html": "<h1>Applies to</h1>\n  <ul>\n    <li>Microsoft® Windows Communication Foundation (WCF) 3.5 \n<li>Microsoft Visual Studio® 2008</li></li>\n  </ul>\n  <h1>Description</h1>\n  <p>When calling a WCF service, if there are any exceptions thrown by the service, the communication channel goes into the faulted state, and you cannot use the proxy for any further calls. This can be avoided by throwing FaultException in your service operations. The service operation that throws a FaultException must be decorated with one or more FaultContract attributes.</p>\n  <ol>\n    <li>Define a Fault contract by applying the FaultContract attribute directly on a contract operation, and specifying the error detailing type to the method as shown below:\n<ol><pre>[ServiceContract]<br />interface ICalculator<br />{<br />   [OperationContract]<br />   [FaultContract(typeof(DivideByZeroException))]<br />   double Divide(double number1,double number2);<br />}</pre></ol><li>Implement the Divide operation which throw the fault and have it propagated to the client by throwing exactly the same detailing type listed in the fault contract.\n<ol><pre>class MyService : ICalculator<br />{<br />   public double Divide(double number1,double number2)<br />   {<br />      throw new FaultException&lt;DivideByZeroException&gt;(new DivideByZeroException());<br />   }<br />}</pre></ol><li>Handle the faults at the client by catching the FaultException and also other communication exceptions that could occur when calling the service operations.\n<ol><pre>try<br />{<br />  proxy.Divide();<br />}<br />catch (FaultException&lt;DivideByZeroException&gt; ex)<br />{<br />  // only if a fault contract of type DivideByZeroException was specified <br />}</pre><pre>catch (FaultException ex)<br />{<br />  // any other faults <br />}</pre><pre>catch (CommunicationException ex)<br />{<br />  // any communication errors? <br />} </pre></ol></li></li></li>\n  </ol>\n  <h1>Additional Resources</h1>\n  <ul>\n    <li>For more information on Fault Contracts, see “Specifying and Handling Faults in Contracts and Services” at <a href=\"http://msdn.microsoft.com/en-us/library/ms733721.aspx\">http://msdn.microsoft.com/en-us/library/ms733721.aspx</a></li>\n  </ul>\n  <hr />\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
 }

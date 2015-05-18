@@ -1,6 +1,6 @@
 {
   "id": "059d2ca0-ebc8-45d6-a8a9-40db18b23608",
-  "checksum": "2fe4d38c0ff8ee71d345087e81b95a51e441ef15",
+  "checksum": "d0a2cf70ae0ddf756f02487f319696a58b5286e3",
   "words": {
     "what": [
       "h2"
@@ -165,7 +165,7 @@
       "ul",
       "li"
     ],
-    "see\rhttp://cwe.mitre.org/data/definitions/79.html": [
+    "seehttp://cwe.mitre.org/data/definitions/79.html": [
       "ul",
       "li"
     ],
@@ -195,10 +195,10 @@
       "Note:"
     ],
     "ul": [
-      "For more information about \"CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')\", please see\r\nhttp://cwe.mitre.org/data/definitions/79.html"
+      "For more information about \"CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')\", please see\nhttp://cwe.mitre.org/data/definitions/79.html"
     ],
     "li": [
-      "For more information about \"CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')\", please see\r\nhttp://cwe.mitre.org/data/definitions/79.html"
+      "For more information about \"CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')\", please see\nhttp://cwe.mitre.org/data/definitions/79.html"
     ],
     "a": [
       "http://cwe.mitre.org/data/definitions/79.html"
@@ -210,5 +210,5 @@
       "text": "http://cwe.mitre.org/data/definitions/79.html"
     }
   ],
-  "html": "<h2>What to Do</h2>\r\n  <p>When the user performs a dangerous operation, send a separate confirmation request to ensure that the user intended to perform that operation.\r\n</p>\r\n  <p>\r\n    <strong>Note:</strong> Note that this can be bypassed using XSS (CWE-79).</p>\r\n  <h2>Additional Resources</h2>\r\n  <ul>\r\n    <li>For more information about \"CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')\", please see\r\n<a href=\"http://cwe.mitre.org/data/definitions/79.html\">http://cwe.mitre.org/data/definitions/79.html</a></li>\r\n  </ul>"
+  "html": "<h2>What to Do</h2>\n  <p>When the user performs a dangerous operation, send a separate confirmation request to ensure that the user intended to perform that operation.\n</p>\n  <p>\n    <strong>Note:</strong> Note that this can be bypassed using XSS (CWE-79).</p>\n  <h2>Additional Resources</h2>\n  <ul>\n    <li>For more information about \"CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')\", please see\n<a href=\"http://cwe.mitre.org/data/definitions/79.html\">http://cwe.mitre.org/data/definitions/79.html</a></li>\n  </ul>"
 }

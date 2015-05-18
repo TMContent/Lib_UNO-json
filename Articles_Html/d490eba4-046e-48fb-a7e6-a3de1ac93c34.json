@@ -1,6 +1,6 @@
 {
   "id": "d490eba4-046e-48fb-a7e6-a3de1ac93c34",
-  "checksum": "4a053386a1f0d0d937450f639b83d39b4f69d621",
+  "checksum": "cf22b9835a2279d09718ac07ad796de75b629785",
   "words": {
     "description": [
       "h1"
@@ -168,10 +168,10 @@
     "getlargestsymkeysizesymmetricalgorithm": [
       "pre"
     ],
-    "symalg{": [
+    "symalg&#123;&nbsp;&nbsp;&nbsp;": [
       "pre"
     ],
-    "keysizes]": [
+    "keysizes&#91&#93;": [
       "pre",
       "pre"
     ],
@@ -183,14 +183,14 @@
       "pre",
       "pre"
     ],
-    "symalglegalkeysizes;": [
+    "symalglegalkeysizes;&nbsp;&nbsp;&nbsp;": [
       "pre"
     ],
     "return": [
       "pre",
       "pre"
     ],
-    "sizessizes.length": [
+    "sizes&#91sizes.length": [
       "pre",
       "pre"
     ],
@@ -198,19 +198,19 @@
       "pre",
       "pre"
     ],
-    "1.maxsize;}private": [
+    "1&#93.maxsize;&#125;private": [
       "pre"
     ],
     "getlargestasymkeysizeasymmetricalgorithm": [
       "pre"
     ],
-    "asymalg{": [
+    "asymalg&#123;&nbsp;&nbsp;&nbsp;": [
       "pre"
     ],
-    "asymalglegalkeysizes;": [
+    "asymalglegalkeysizes;&nbsp;&nbsp;&nbsp;": [
       "pre"
     ],
-    "1.maxsize;}": [
+    "1&#93.maxsize;&#125;": [
       "pre"
     ],
     "adapted": [
@@ -234,6 +234,9 @@
     "guidance": [
       "p"
     ],
+    "sink]": [
+      "title"
+    ],
     "choose": [
       "title"
     ],
@@ -250,7 +253,7 @@
       "Adapted from Microsoft patterns & practices guidance."
     ],
     "pre": [
-      "private int GetLargestSymKeySize(SymmetricAlgorithm symAlg){    KeySizes[] sizes = symAlg.LegalKeySizes;    return sizes[sizes.Length - 1].MaxSize;}private int GetLargestAsymKeySize(AsymmetricAlgorithm asymAlg){    KeySizes[] sizes = asymAlg.LegalKeySizes;    return sizes[sizes.Length - 1].MaxSize;}"
+      "private int GetLargestSymKeySize(SymmetricAlgorithm symAlg)&#123;&nbsp;&nbsp;&nbsp; KeySizes&#91;&#93; sizes = symAlg.LegalKeySizes;&nbsp;&nbsp;&nbsp; return sizes&#91;sizes.Length - 1&#93;.MaxSize;&#125;private int GetLargestAsymKeySize(AsymmetricAlgorithm asymAlg)&#123;&nbsp;&nbsp;&nbsp; KeySizes&#91;&#93; sizes = asymAlg.LegalKeySizes;&nbsp;&nbsp;&nbsp; return sizes&#91;sizes.Length - 1&#93;.MaxSize;&#125;"
     ],
     "br": [
       "",
@@ -268,5 +271,5 @@
     ]
   },
   "links": [],
-  "html": "<h1>Description</h1>\r\n  <p>When generating an encryption key or key pair, use the largest key size that the algorithm supports. This does not necessarily make the algorithm more secure, but it dramatically increases the time needed to successfully perform a brute force attack on the key. The following code example shows how to find the largest supported key size for a particular algorithm. </p>\r\n  <pre>private int GetLargestSymKeySize(SymmetricAlgorithm symAlg)<br />&#123;<br />&nbsp;&nbsp;&nbsp; KeySizes&#91;&#93; sizes = symAlg.LegalKeySizes;<br />&nbsp;&nbsp;&nbsp; return sizes&#91;sizes.Length - 1&#93;.MaxSize;<br />&#125;<br />private int GetLargestAsymKeySize(AsymmetricAlgorithm asymAlg)<br />&#123;<br />&nbsp;&nbsp;&nbsp; KeySizes&#91;&#93; sizes = asymAlg.LegalKeySizes;<br />&nbsp;&nbsp;&nbsp; return sizes&#91;sizes.Length - 1&#93;.MaxSize;<br />&#125;</pre>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
+  "html": "<h1>Description</h1>\n  <p>When generating an encryption key or key pair, use the largest key size that the algorithm supports. This does not necessarily make the algorithm more secure, but it dramatically increases the time needed to successfully perform a brute force attack on the key. The following code example shows how to find the largest supported key size for a particular algorithm. </p>\n  <pre>private int GetLargestSymKeySize(SymmetricAlgorithm symAlg)<br />&amp;#123;<br />&amp;nbsp;&amp;nbsp;&amp;nbsp; KeySizes&amp;#91;&amp;#93; sizes = symAlg.LegalKeySizes;<br />&amp;nbsp;&amp;nbsp;&amp;nbsp; return sizes&amp;#91;sizes.Length - 1&amp;#93;.MaxSize;<br />&amp;#125;<br />private int GetLargestAsymKeySize(AsymmetricAlgorithm asymAlg)<br />&amp;#123;<br />&amp;nbsp;&amp;nbsp;&amp;nbsp; KeySizes&amp;#91;&amp;#93; sizes = asymAlg.LegalKeySizes;<br />&amp;nbsp;&amp;nbsp;&amp;nbsp; return sizes&amp;#91;sizes.Length - 1&amp;#93;.MaxSize;<br />&amp;#125;</pre>\n  <hr />\n  <p>Adapted from Microsoft patterns &amp; practices guidance.</p>"
 }

@@ -1,6 +1,6 @@
 {
   "id": "bbf0ada1-709e-4351-a184-1d1212233e78",
-  "checksum": "1039878ea15702bf9b7aa82672a0e5a601a36fe2",
+  "checksum": "d31ab80fac5ac8c5f4119150d9cf92a2b284346b",
   "words": {
     "6": [
       "ul",
@@ -1636,12 +1636,8 @@
       "p",
       "ol",
       "ol",
-      "ol",
       "li",
       "li",
-      "li",
-      "div",
-      "pre",
       "ul",
       "li",
       "p"
@@ -1750,6 +1746,7 @@
       "ul",
       "ul",
       "ul",
+      "ul",
       "li",
       "li",
       "li",
@@ -1795,6 +1792,7 @@
     ],
     "file": [
       "p",
+      "ul",
       "ul",
       "ul",
       "ul",
@@ -2233,7 +2231,7 @@
     "microsoft®": [
       "p"
     ],
-    "windows nt®": [
+    "windows&nbspnt®": [
       "p"
     ],
     "controller": [
@@ -2972,6 +2970,7 @@
       "ul",
       "ul",
       "ul",
+      "ul",
       "li",
       "li",
       "li",
@@ -3003,9 +3002,7 @@
     "authorization>": [
       "ul",
       "li",
-      "p",
-      "div",
-      "pre"
+      "p"
     ],
     "element": [
       "ul",
@@ -3097,7 +3094,7 @@
       "ul",
       "li"
     ],
-    "note   aspnet": [
+    "note&nbsp&nbsp;&nbsp;asp.net": [
       "ul",
       "li",
       "blockquote"
@@ -3164,9 +3161,6 @@
       "ul",
       "li",
       "blockquote"
-    ],
-    "filesfile": [
-      "ul"
     ],
     "types": [
       "ul",
@@ -3468,7 +3462,7 @@
       "li",
       "li"
     ],
-    "note   impersonation": [
+    "note&nbsp&nbsp;&nbsp;impersonation": [
       "ul",
       "li",
       "blockquote"
@@ -3478,10 +3472,8 @@
       "li",
       "blockquote"
     ],
-    "authorizationrole": [
-      "ul"
-    ],
     "role": [
+      "ul",
       "ul",
       "ul",
       "li",
@@ -3841,21 +3833,7 @@
       "li",
       "li"
     ],
-    ".. <system.web>": [
-      "div",
-      "pre",
-      "div",
-      "pre",
-      "div",
-      "pre",
-      "ol",
-      "li",
-      "div",
-      "pre"
-    ],
-    "..": [
-      "div",
-      "pre",
+    "..&nbsp;<system.web>&nbsp;": [
       "div",
       "pre",
       "div",
@@ -3865,9 +3843,7 @@
       "div",
       "pre"
     ],
-    "mode=\"windows\"/": [
-      "div",
-      "pre",
+    "..&nbsp;": [
       "div",
       "pre",
       "div",
@@ -3877,7 +3853,15 @@
       "div",
       "pre"
     ],
-    ".. </system.web> ...": [
+    "mode=\"windows\"/&nbsp;": [
+      "div",
+      "pre",
+      "ol",
+      "li",
+      "div",
+      "pre"
+    ],
+    "..&nbsp;</system.web>&nbsp;...": [
       "div",
       "pre",
       "div",
@@ -4001,10 +3985,6 @@
     ],
     "/": [
       "div",
-      "pre",
-      "div",
-      "div",
-      "pre",
       "pre"
     ],
     "impersonating": [
@@ -4057,7 +4037,21 @@
       "p",
       "p"
     ],
-    "impersonate=\"true\"/": [
+    "..&nbsp;<system.web>&nbsp;&nbsp;&nbsp;": [
+      "div",
+      "pre"
+    ],
+    "..&nbsp;&nbsp;&nbsp;": [
+      "div",
+      "pre"
+    ],
+    "mode=\"windows\"/&nbsp;&nbsp;&nbsp;": [
+      "div",
+      "pre",
+      "div",
+      "pre"
+    ],
+    "impersonate=\"true\"/&nbsp;&nbsp;&nbsp;": [
       "div",
       "pre"
     ],
@@ -4156,7 +4150,7 @@
       "div",
       "pre"
     ],
-    "password=\"password>\"/>": [
+    "password=\"password>\"/>&nbsp;&nbsp;&nbsp;": [
       "div",
       "pre"
     ],
@@ -4180,7 +4174,7 @@
     "tool": [
       "p"
     ],
-    "note   specifying": [
+    "note&nbsp&nbsp;&nbsp;specifying": [
       "blockquote"
     ],
     "avoided": [
@@ -4237,7 +4231,7 @@
       "li",
       "b"
     ],
-    "impersonate=\"false\"/": [
+    "impersonate=\"false\"/&nbsp;": [
       "ol",
       "li",
       "div",
@@ -4351,13 +4345,13 @@
       "div",
       "pre"
     ],
-    "wiimpersonate();try{": [
+    "wiimpersonate();try{&nbsp;": [
       "ol",
       "li",
       "div",
       "pre"
     ],
-    "impersonating}catch{": [
+    "impersonating}catch{&nbsp;": [
       "ol",
       "li",
       "div",
@@ -4375,13 +4369,19 @@
       "div",
       "pre"
     ],
-    "propagating}finally{": [
+    "propagating}finally{&nbsp;": [
       "ol",
       "li",
       "div",
       "pre"
     ],
     "revert": [
+      "ol",
+      "li",
+      "div",
+      "pre"
+    ],
+    "impersonation&nbsp;": [
       "ol",
       "li",
       "div",
@@ -4409,7 +4409,7 @@
       "p",
       "b"
     ],
-    "note   file": [
+    "note&nbsp&nbsp;&nbsp;file": [
       "blockquote"
     ],
     "requires": [
@@ -4549,7 +4549,7 @@
       "div",
       "pre"
     ],
-    "authorization> <deny": [
+    "authorization>&nbsp;<deny": [
       "div",
       "pre"
     ],
@@ -4557,7 +4557,7 @@
       "div",
       "pre"
     ],
-    "/ <allow": [
+    "/&nbsp;<allow": [
       "div",
       "pre"
     ],
@@ -4612,12 +4612,22 @@
     "prefix": [
       "p"
     ],
+    "authorization>&nbsp;": [
+      "div",
+      "pre"
+    ],
     "users=\"domainname\\bob": [
       "div",
       "pre"
     ],
     "domainname\\mary\"": [
       "div",
+      "pre"
+    ],
+    "/&nbsp;": [
+      "div",
+      "div",
+      "pre",
       "pre"
     ],
     "roles=\"builtin\\administrators": [
@@ -4736,7 +4746,7 @@
       "li",
       "i"
     ],
-    "nameif(user.isinrole(@\"domainname\\manager\"))": [
+    "nameif(user.isinrole(@\"domainname\\manager\"))&nbsp;": [
       "ul",
       "li"
     ],
@@ -4750,7 +4760,7 @@
       "div",
       "pre"
     ],
-    "operationelse": [
+    "operationelse&nbsp": [
       "ul",
       "ul",
       "li",
@@ -4812,7 +4822,7 @@
       "ul",
       "li"
     ],
-    "ifroles.isuserinrole(@\"domainname\\manager\"))": [
+    "ifroles.isuserinrole(@\"domainname\\manager\"))&nbsp;": [
       "ul",
       "li",
       "div",
@@ -4908,7 +4918,7 @@
       "li",
       "p"
     ],
-    "ifuser.isinrole(@\"domainname\\manager\"))": [
+    "ifuser.isinrole(@\"domainname\\manager\"))&nbsp;": [
       "div",
       "pre"
     ],
@@ -5229,6 +5239,9 @@
     ],
     "guidance": [
       "p"
+    ],
+    "sink]": [
+      "title"
     ]
   },
   "tags": {
@@ -5244,16 +5257,16 @@
       "Kerberos Authentication"
     ],
     "ul": [
-      "ASP.NET Internet Information Services (IIS) 6.0",
-      "Objectives\r\n      \r\n        Overview\r\n        \r\n          Configuring Windows Authentication\r\n          \r\n            Using Impersonation with Windows Authentication \r\n            \r\n              Authorizing Windows Users\r\n              \r\n                Kerberos Authentication\r\n                \r\n                  Additional Resources",
-      "Learn how to configure your Web application for using Windows authentication. Use impersonation with Windows authentication in ASP.NET applications. Authorize users authenticated with Windows authentication.",
-      "Windows authentication without impersonation. This is the default setting. ASP.NET performs operations and accesses resources by using your application's process identity, which by default is the Network Service account on Windows Server 2003. Windows authentication with impersonation. With this approach, you impersonate the authenticated user and use that identity to perform operations and access resources. Windows authentication with fixed-identity impersonation. With this approach, you impersonate a fixed Windows account to access resources using a specific identity. On Windows Server 2003, you should avoid this impersonation approach; instead, use a custom application pool with a custom service identity.",
-      "URL authorization. You use URL authorization to control access to requested files and folders based on the request URL. You configure URL authorization by using an <authorization> element in the Web.config file to control which users and groups of users should have access to requested resources. Authorization is based on the IPrincipal object stored in HttpContext.User. With Windows authentication, this object is of type WindowsPrincipal and it contains a WindowsIdentity object that holds the Windows token for the authenticated user. Note   ASP.NET version 2.0 on Windows Server 2003 protects all files in a particular directory, even those not mapped to ASP.NET such as .html, .gif, and .jpg files.File authorization. For file types mapped by IIS to the ASP.NET ISAPI extension (Aspnet_isapi.dll), automatic access checks are performed using the authenticated user's Windows access token against the access control list (ACL) attached to the requested ASP.NET file. The FileAuthorizationModule class only performs access checks against the requested file. For example, if you request Default.aspx and it contains an embedded user control (Usercontrol.ascx), which in turn includes an image tag (pointing to Image.gif), the FileAuthorizationModule performs an access check for Default.aspx and Usercontrol.ascx, because these file types are mapped by IIS to the ASP.NET ISAPI extension. The FileAuthorizationModule does not perform a check for Image.gif, because this is a static file handled internally by IIS. However, because access checks for static files are performed by IIS, the authenticated user must still be granted read permission to the file with an appropriately configured ACL. Note   Impersonation is not required for file authorization.Role checks. You can check the authenticated user's role membership by using methods such as User.IsInRole and Roles.IsUserInRole. This allows you to perform fine-grained authorization logic. To use the Roles API, you need to enable role manager for your application. You can also use principal permission demands and use class-level and method-level declarative security to control which users should be allowed to call classes and methods.",
-      "File authorization provided by the FileAuthorizationModule. URL authorization provided by the UrlAuthorizationModule. Role-based authorization.",
-      "For\r\n      resources directly requested by the user. For resources such as Web pages (.aspx files) and Web services (.asmx files) directly requested by the user, the authenticated user's Windows access token is compared against the Windows ACL attached to the file. Make sure that the authenticated user is allowed to access the appropriate Web pages and Web services. For resources that the application accesses. If impersonation is enabled, resources such as files, databases, registry keys, and Active Directory objects are accessed by using the impersonated identity. Otherwise, your application's process identity, such as the Network Service account, is used for resource access. For the resource access attempt to succeed, the ACL attached to these resources must be suitably configured to allow the process account or impersonated identity the access it requests, such as read access, or write access.",
-      "Use the IPrincipal interface of the User object attached to the current HTTP request. This approach works with ASP.NET versions 1.0, 1.1. and 2.0. When using Windows authentication, make sure to use the domainName\\userName format for the user name and the format domainName\\groupName for the group name.if(User.IsInRole(@\"DomainName\\Manager\"))  // Perform restricted operationelse  // Return unauthorized access error.  Alternatively, use role manager APIs introduced in ASP.NET version 2.0, which supports a similar Roles.IsUserInRole method, as shown here. if(Roles.IsUserInRole(@\"DomainName\\Manager\"))  // Perform restricted operationelse  // Return unauthorized access error.  To use the role manager API, you must enable role manager. With Windows authentication, you can use the built-in AspNetWindowsTokenRoleProvider, which uses Windows groups as roles. To enable role manager and select this provider, add the following configuration to your Web.config file. <roleManager enabled=\"true\"             defaultProvider=\"AspNetWindowsTokenRoleProvider\"/>  When you use Windows authentication, you can use alternate role providers, such as the AuthorizationStoreRoleProvider and SqlRoleProvider, if you need to store roles in alternate role stores such as Authorization Manager policy stores or SQL Server databases.",
-      "Construct a PrincipalPermission object, and then call its Demand method to perform authorization. For fine grained authorization, call PrincipalPermission.Demand within code, as shown here. using System.Security.Permissions;...// Imperative checks PrincipalPermission permCheckUser = new PrincipalPermission(@\"Domain\\Bob\", null);permCheckUser.Demand();  Alternatively, you can decorate your classes or methods with the PrincipalPermissionAttribute, as shown here. using System.Security.Permissions;... [PrincipalPermission(SecurityAction.Demand,Role=@\"Builtin\\Administrators\")]  The advantage of this approach is that the security requirements of your methods are visible to tools such as Permview.exe.",
-      "All servers must be running Windows 2000 Server or later. Client computers must be running Internet Explorer 5.5 or later. All computers must be in a Windows 2000 Server or later domain. Internet Explorer security settings must be configured to enable Integrated Windows authentication. By default, Integrated Windows authentication is not enabled in Internet Explorer 6. To enable the browser to respond to a negotiate challenge and perform Kerberos authentication, select the Enable Integrated Windows Authentication check box in the Security section of the Advanced tab of the Internet Options menu, and then restart the browser. If you use a custom service account to run your ASP.NET application, you a Service Principal Name (SPN) must be registered for the account in Active Directory."
+      "ASP.NET \n    Internet Information Services (IIS) 6.0",
+      "Objectives\n    \n    \n      Overview\n    \n    \n      Configuring Windows Authentication\n    \n    \n      Using Impersonation with Windows Authentication \n    \n    \n      Authorizing Windows Users\n    \n    \n      Kerberos Authentication\n    \n    \n      Additional Resources",
+      "Learn how to configure your Web application for using Windows authentication. \n    Use impersonation with Windows authentication in ASP.NET applications. \n    Authorize users authenticated with Windows authentication.",
+      "Windows authentication without impersonation. This is the default setting. ASP.NET performs operations and accesses resources by using your application's process identity, which by default is the Network Service account on Windows Server 2003. \n    \n      Windows authentication with impersonation. With this approach, you impersonate the authenticated user and use that identity to perform operations and access resources. \n    \n      Windows authentication with fixed-identity impersonation. With this approach, you impersonate a fixed Windows account to access resources using a specific identity. On Windows Server 2003, you should avoid this impersonation approach; instead, use a custom application pool with a custom service identity.",
+      "URL authorization. You use URL authorization to control access to requested files and folders based on the request URL. You configure URL authorization by using an <authorization> element in the Web.config file to control which users and groups of users should have access to requested resources. Authorization is based on the IPrincipal object stored in HttpContext.User. With Windows authentication, this object is of type WindowsPrincipal and it contains a WindowsIdentity object that holds the Windows token for the authenticated user. Note&nbsp;&nbsp;&nbsp;ASP.NET version 2.0 on Windows Server 2003 protects all files in a particular directory, even those not mapped to ASP.NET such as .html, .gif, and .jpg files.\n    \n      File authorization. For file types mapped by IIS to the ASP.NET ISAPI extension (Aspnet_isapi.dll), automatic access checks are performed using the authenticated user's Windows access token against the access control list (ACL) attached to the requested ASP.NET file. The FileAuthorizationModule class only performs access checks against the requested file. For example, if you request Default.aspx and it contains an embedded user control (Usercontrol.ascx), which in turn includes an image tag (pointing to Image.gif), the FileAuthorizationModule performs an access check for Default.aspx and Usercontrol.ascx, because these file types are mapped by IIS to the ASP.NET ISAPI extension. The FileAuthorizationModule does not perform a check for Image.gif, because this is a static file handled internally by IIS. However, because access checks for static files are performed by IIS, the authenticated user must still be granted read permission to the file with an appropriately configured ACL. Note&nbsp;&nbsp;&nbsp;Impersonation is not required for file authorization.\n    \n      Role checks. You can check the authenticated user's role membership by using methods such as User.IsInRole and Roles.IsUserInRole. This allows you to perform fine-grained authorization logic. To use the Roles API, you need to enable role manager for your application. You can also use principal permission demands and use class-level and method-level declarative security to control which users should be allowed to call classes and methods.",
+      "File authorization provided by the FileAuthorizationModule. \n    URL authorization provided by the UrlAuthorizationModule. \n    Role-based authorization.",
+      "For\n      resources directly requested by the user. For resources such as Web pages (.aspx files) and Web services (.asmx files) directly requested by the user, the authenticated user's Windows access token is compared against the Windows ACL attached to the file. Make sure that the authenticated user is allowed to access the appropriate Web pages and Web services. \n    \n      For resources that the application accesses. If impersonation is enabled, resources such as files, databases, registry keys, and Active Directory objects are accessed by using the impersonated identity. Otherwise, your application's process identity, such as the Network Service account, is used for resource access. For the resource access attempt to succeed, the ACL attached to these resources must be suitably configured to allow the process account or impersonated identity the access it requests, such as read access, or write access.",
+      "Use the IPrincipal interface of the User object attached to the current HTTP request. This approach works with ASP.NET versions 1.0, 1.1. and 2.0. When using Windows authentication, make sure to use the domainName\\userName format for the user name and the format domainName\\groupName for the group name.if(User.IsInRole(@\"DomainName\\Manager\"))&nbsp; // Perform restricted operationelse&nbsp; // Return unauthorized access error.  \n    Alternatively, use role manager APIs introduced in ASP.NET version 2.0, which supports a similar Roles.IsUserInRole method, as shown here. if(Roles.IsUserInRole(@\"DomainName\\Manager\"))&nbsp; // Perform restricted operationelse&nbsp; // Return unauthorized access error.  To use the role manager API, you must enable role manager. With Windows authentication, you can use the built-in AspNetWindowsTokenRoleProvider, which uses Windows groups as roles. To enable role manager and select this provider, add the following configuration to your Web.config file. <roleManager enabled=\"true\"             defaultProvider=\"AspNetWindowsTokenRoleProvider\"/>  When you use Windows authentication, you can use alternate role providers, such as the AuthorizationStoreRoleProvider and SqlRoleProvider, if you need to store roles in alternate role stores such as Authorization Manager policy stores or SQL Server databases.",
+      "Construct a PrincipalPermission object, and then call its Demand method to perform authorization. \n    For fine grained authorization, call PrincipalPermission.Demand within code, as shown here. using System.Security.Permissions;...// Imperative checks PrincipalPermission permCheckUser = new PrincipalPermission(@\"Domain\\Bob\", null);permCheckUser.Demand();  \n    Alternatively, you can decorate your classes or methods with the PrincipalPermissionAttribute, as shown here. using System.Security.Permissions;... [PrincipalPermission(SecurityAction.Demand,Role=@\"Builtin\\Administrators\")]  The advantage of this approach is that the security requirements of your methods are visible to tools such as Permview.exe.",
+      "All servers must be running Windows 2000 Server or later. \n    Client computers must be running Internet Explorer 5.5 or later. \n    All computers must be in a Windows 2000 Server or later domain. \n    Internet Explorer security settings must be configured to enable Integrated Windows authentication. By default, Integrated Windows authentication is not enabled in Internet Explorer 6. To enable the browser to respond to a negotiate challenge and perform Kerberos authentication, select the Enable Integrated Windows Authentication check box in the Security section of the Advanced tab of the Internet Options menu, and then restart the browser. \n    If you use a custom service account to run your ASP.NET application, you a Service Principal Name (SPN) must be registered for the account in Active Directory."
     ],
     "li": [
       "ASP.NET",
@@ -5271,24 +5284,24 @@
       "Windows authentication without impersonation. This is the default setting. ASP.NET performs operations and accesses resources by using your application's process identity, which by default is the Network Service account on Windows Server 2003.",
       "Windows authentication with impersonation. With this approach, you impersonate the authenticated user and use that identity to perform operations and access resources.",
       "Windows authentication with fixed-identity impersonation. With this approach, you impersonate a fixed Windows account to access resources using a specific identity. On Windows Server 2003, you should avoid this impersonation approach; instead, use a custom application pool with a custom service identity.",
-      "URL authorization. You use URL authorization to control access to requested files and folders based on the request URL. You configure URL authorization by using an <authorization> element in the Web.config file to control which users and groups of users should have access to requested resources. Authorization is based on the IPrincipal object stored in HttpContext.User. With Windows authentication, this object is of type WindowsPrincipal and it contains a WindowsIdentity object that holds the Windows token for the authenticated user. Note   ASP.NET version 2.0 on Windows Server 2003 protects all files in a particular directory, even those not mapped to ASP.NET such as .html, .gif, and .jpg files.",
-      "File authorization. For file types mapped by IIS to the ASP.NET ISAPI extension (Aspnet_isapi.dll), automatic access checks are performed using the authenticated user's Windows access token against the access control list (ACL) attached to the requested ASP.NET file. The FileAuthorizationModule class only performs access checks against the requested file. For example, if you request Default.aspx and it contains an embedded user control (Usercontrol.ascx), which in turn includes an image tag (pointing to Image.gif), the FileAuthorizationModule performs an access check for Default.aspx and Usercontrol.ascx, because these file types are mapped by IIS to the ASP.NET ISAPI extension. The FileAuthorizationModule does not perform a check for Image.gif, because this is a static file handled internally by IIS. However, because access checks for static files are performed by IIS, the authenticated user must still be granted read permission to the file with an appropriately configured ACL. Note   Impersonation is not required for file authorization.",
+      "URL authorization. You use URL authorization to control access to requested files and folders based on the request URL. You configure URL authorization by using an <authorization> element in the Web.config file to control which users and groups of users should have access to requested resources. Authorization is based on the IPrincipal object stored in HttpContext.User. With Windows authentication, this object is of type WindowsPrincipal and it contains a WindowsIdentity object that holds the Windows token for the authenticated user. Note&nbsp;&nbsp;&nbsp;ASP.NET version 2.0 on Windows Server 2003 protects all files in a particular directory, even those not mapped to ASP.NET such as .html, .gif, and .jpg files.",
+      "File authorization. For file types mapped by IIS to the ASP.NET ISAPI extension (Aspnet_isapi.dll), automatic access checks are performed using the authenticated user's Windows access token against the access control list (ACL) attached to the requested ASP.NET file. The FileAuthorizationModule class only performs access checks against the requested file. For example, if you request Default.aspx and it contains an embedded user control (Usercontrol.ascx), which in turn includes an image tag (pointing to Image.gif), the FileAuthorizationModule performs an access check for Default.aspx and Usercontrol.ascx, because these file types are mapped by IIS to the ASP.NET ISAPI extension. The FileAuthorizationModule does not perform a check for Image.gif, because this is a static file handled internally by IIS. However, because access checks for static files are performed by IIS, the authenticated user must still be granted read permission to the file with an appropriately configured ACL. Note&nbsp;&nbsp;&nbsp;Impersonation is not required for file authorization.",
       "Role checks. You can check the authenticated user's role membership by using methods such as User.IsInRole and Roles.IsUserInRole. This allows you to perform fine-grained authorization logic. To use the Roles API, you need to enable role manager for your application. You can also use principal permission demands and use class-level and method-level declarative security to control which users should be allowed to call classes and methods.",
       "Start Internet Information Services (IIS).",
       "Right-click your application's virtual directory, and then click Properties.",
       "Click the Directory Security tab.",
       "Under Anonymous access and authentication control, click Edit.",
       "Make sure the Anonymous access check box is not selected and that Integrated Windows authentication is the only selected check box.",
-      "Check that your ASP.NET application is not configured for impersonation by ensuring that impersonate is set to false on the <identity> element in the Web.config file. ... <system.web>  ...  <authentication mode=\"Windows\"/>  <identity impersonate=\"false\"/>  ... </system.web> ...",
+      "Check that your ASP.NET application is not configured for impersonation by ensuring that impersonate is set to false on the <identity> element in the Web.config file. ...&nbsp;<system.web>&nbsp; ...&nbsp; <authentication mode=\"Windows\"/>&nbsp; <identity impersonate=\"false\"/>&nbsp; ...&nbsp;</system.web>&nbsp;...",
       "Obtain the authenticated user's Windows token. IIdentity WinId= HttpContext.Current.User.Identity;WindowsIdentity wi = (WindowsIdentity)WinId;",
-      "Use the authenticated user's Windows token to temporarily impersonate the original user and remove the impersonation token from the current thread when you are finished impersonating. // Temporarily impersonate the original user.WindowsImpersonationContext wic = wi.Impersonate();try{  // Access resources while impersonating.}catch{  // Prevent exceptions propagating.}finally{  // Revert impersonation.  wic.Undo();}",
+      "Use the authenticated user's Windows token to temporarily impersonate the original user and remove the impersonation token from the current thread when you are finished impersonating. // Temporarily impersonate the original user.WindowsImpersonationContext wic = wi.Impersonate();try{&nbsp; // Access resources while impersonating.}catch{&nbsp; // Prevent exceptions propagating.}finally{&nbsp; // Revert impersonation.&nbsp; wic.Undo();}",
       "File authorization provided by the FileAuthorizationModule.",
       "URL authorization provided by the UrlAuthorizationModule.",
       "Role-based authorization.",
-      "For\r\n      resources directly requested by the user. For resources such as Web pages (.aspx files) and Web services (.asmx files) directly requested by the user, the authenticated user's Windows access token is compared against the Windows ACL attached to the file. Make sure that the authenticated user is allowed to access the appropriate Web pages and Web services.",
+      "For\n      resources directly requested by the user. For resources such as Web pages (.aspx files) and Web services (.asmx files) directly requested by the user, the authenticated user's Windows access token is compared against the Windows ACL attached to the file. Make sure that the authenticated user is allowed to access the appropriate Web pages and Web services.",
       "For resources that the application accesses. If impersonation is enabled, resources such as files, databases, registry keys, and Active Directory objects are accessed by using the impersonated identity. Otherwise, your application's process identity, such as the Network Service account, is used for resource access. For the resource access attempt to succeed, the ACL attached to these resources must be suitably configured to allow the process account or impersonated identity the access it requests, such as read access, or write access.",
-      "Use the IPrincipal interface of the User object attached to the current HTTP request. This approach works with ASP.NET versions 1.0, 1.1. and 2.0. When using Windows authentication, make sure to use the domainName\\userName format for the user name and the format domainName\\groupName for the group name.if(User.IsInRole(@\"DomainName\\Manager\"))  // Perform restricted operationelse  // Return unauthorized access error.",
-      "Alternatively, use role manager APIs introduced in ASP.NET version 2.0, which supports a similar Roles.IsUserInRole method, as shown here. if(Roles.IsUserInRole(@\"DomainName\\Manager\"))  // Perform restricted operationelse  // Return unauthorized access error.  To use the role manager API, you must enable role manager. With Windows authentication, you can use the built-in AspNetWindowsTokenRoleProvider, which uses Windows groups as roles. To enable role manager and select this provider, add the following configuration to your Web.config file. <roleManager enabled=\"true\"             defaultProvider=\"AspNetWindowsTokenRoleProvider\"/>  When you use Windows authentication, you can use alternate role providers, such as the AuthorizationStoreRoleProvider and SqlRoleProvider, if you need to store roles in alternate role stores such as Authorization Manager policy stores or SQL Server databases.",
+      "Use the IPrincipal interface of the User object attached to the current HTTP request. This approach works with ASP.NET versions 1.0, 1.1. and 2.0. When using Windows authentication, make sure to use the domainName\\userName format for the user name and the format domainName\\groupName for the group name.if(User.IsInRole(@\"DomainName\\Manager\"))&nbsp; // Perform restricted operationelse&nbsp; // Return unauthorized access error.",
+      "Alternatively, use role manager APIs introduced in ASP.NET version 2.0, which supports a similar Roles.IsUserInRole method, as shown here. if(Roles.IsUserInRole(@\"DomainName\\Manager\"))&nbsp; // Perform restricted operationelse&nbsp; // Return unauthorized access error.  To use the role manager API, you must enable role manager. With Windows authentication, you can use the built-in AspNetWindowsTokenRoleProvider, which uses Windows groups as roles. To enable role manager and select this provider, add the following configuration to your Web.config file. <roleManager enabled=\"true\"             defaultProvider=\"AspNetWindowsTokenRoleProvider\"/>  When you use Windows authentication, you can use alternate role providers, such as the AuthorizationStoreRoleProvider and SqlRoleProvider, if you need to store roles in alternate role stores such as Authorization Manager policy stores or SQL Server databases.",
       "Construct a PrincipalPermission object, and then call its Demand method to perform authorization.",
       "For fine grained authorization, call PrincipalPermission.Demand within code, as shown here. using System.Security.Permissions;...// Imperative checks PrincipalPermission permCheckUser = new PrincipalPermission(@\"Domain\\Bob\", null);permCheckUser.Demand();",
       "Alternatively, you can decorate your classes or methods with the PrincipalPermissionAttribute, as shown here. using System.Security.Permissions;... [PrincipalPermission(SecurityAction.Demand,Role=@\"Builtin\\Administrators\")]  The advantage of this approach is that the security requirements of your methods are visible to tools such as Permview.exe.",
@@ -5300,7 +5313,7 @@
     ],
     "p": [
       "This How to shows you how to configure and use Windows authentication in an ASP.NET Web application. Windows authentication is the preferred approach whenever users are a part of your Windows domain. This approach enables you to use an existing identity store such as your corporate Active Directory, and does not transmit passwords over the network. This How to also shows various impersonation options available with Windows authentication and how to configure and use them with ASP.NET applications. It also explains how to use the various authorization mechanisms including file authorization, URL authorization, and role-based authorization, with Windows authentication.",
-      "ASP.NET supports various authentication modes, including Windows authentication, forms authentication, Passport authentication, and custom authentication. You should choose Windows authentication if your user accounts are maintained by a Microsoft® Windows NT® domain controller or within Microsoft Windows® Active Directory™ and there are no firewall issues.",
+      "ASP.NET supports various authentication modes, including Windows authentication, forms authentication, Passport authentication, and custom authentication. You should choose Windows authentication if your user accounts are maintained by a Microsoft® Windows&nbsp;NT® domain controller or within Microsoft Windows® Active Directory™ and there are no firewall issues.",
       "The main benefit of using Windows authentication is that it can be coupled with IIS authentication so that you don't have to write any custom code. Compared to other authentication mechanisms, Windows authentication does not pass the user credentials over the wire. Windows authentication also provides a seamless user experience. Therefore Windows authentication should be used wherever possible.",
       "When you configure ASP.NET for Windows authentication, it can be coupled with IIS authentication where IIS authenticates your application's users by using Basic authentication, Integrated Windows authentication, Digest authentication, or Client Certificate authentication. Both Integrated Windows authentication and Client Certificate authentication provide strong authentication, but Integrated Windows authentication is recommended unless you have a PKI infrastructure and your clients have certificates.",
       "IIS authenticates the user and passes a Windows token for the authenticated user to ASP.NET along with each Web request.",
@@ -5342,17 +5355,17 @@
       "Authorizing Windows Users",
       "Kerberos Authentication",
       "Additional Resources",
-      "... <system.web>  ...  <authentication mode=\"Windows\"/>  ... </system.web> ...",
+      "...&nbsp;<system.web>&nbsp; ...&nbsp; <authentication mode=\"Windows\"/>&nbsp; ...&nbsp;</system.web>&nbsp;...",
       "<identity impersonate=\"false\" userName=\"\" password=\"\" />",
-      "... <system.web>    ...    <authentication mode=\"Windows\"/>    <identity impersonate=\"true\"/>    ... </system.web> ...",
-      "... <system.web>  ...  <authentication mode=\"Windows\"/>    <identity impersonate=\"true\" userName=\"<domain>\\<UserName>\" password=\"<password>\"/>    ... </system.web> ...",
-      "... <system.web>  ...  <authentication mode=\"Windows\"/>  <identity impersonate=\"false\"/>  ... </system.web> ...",
+      "...&nbsp;<system.web>&nbsp;&nbsp;&nbsp; ...&nbsp;&nbsp;&nbsp; <authentication mode=\"Windows\"/>&nbsp;&nbsp;&nbsp; <identity impersonate=\"true\"/>&nbsp;&nbsp;&nbsp; ...&nbsp;</system.web>&nbsp;...",
+      "...&nbsp;<system.web>&nbsp; ...&nbsp; <authentication mode=\"Windows\"/>&nbsp;&nbsp;&nbsp; <identity impersonate=\"true\" userName=\"<domain>\\<UserName>\" password=\"<password>\"/>&nbsp;&nbsp;&nbsp; ...&nbsp;</system.web>&nbsp;...",
+      "...&nbsp;<system.web>&nbsp; ...&nbsp; <authentication mode=\"Windows\"/>&nbsp; <identity impersonate=\"false\"/>&nbsp; ...&nbsp;</system.web>&nbsp;...",
       "IIdentity WinId= HttpContext.Current.User.Identity;WindowsIdentity wi = (WindowsIdentity)WinId;",
-      "// Temporarily impersonate the original user.WindowsImpersonationContext wic = wi.Impersonate();try{  // Access resources while impersonating.}catch{  // Prevent exceptions propagating.}finally{  // Revert impersonation.  wic.Undo();}",
-      "<authorization> <deny users=\"DomainName\\UserName\" /> <allow roles=\"DomainName\\WindowsGroup\" /></authorization>",
-      "<authorization>  <allow users=\"DomainName\\Bob, DomainName\\Mary\" />  <allow roles=\"BUILTIN\\Administrators, DomainName\\Manager\" />  <deny users=\"*\" /></authorization>",
-      "if(User.IsInRole(@\"DomainName\\Manager\"))  // Perform restricted operationelse  // Return unauthorized access error.",
-      "if(Roles.IsUserInRole(@\"DomainName\\Manager\"))  // Perform restricted operationelse  // Return unauthorized access error.",
+      "// Temporarily impersonate the original user.WindowsImpersonationContext wic = wi.Impersonate();try{&nbsp; // Access resources while impersonating.}catch{&nbsp; // Prevent exceptions propagating.}finally{&nbsp; // Revert impersonation.&nbsp; wic.Undo();}",
+      "<authorization>&nbsp;<deny users=\"DomainName\\UserName\" />&nbsp;<allow roles=\"DomainName\\WindowsGroup\" /></authorization>",
+      "<authorization>&nbsp; <allow users=\"DomainName\\Bob, DomainName\\Mary\" />&nbsp; <allow roles=\"BUILTIN\\Administrators, DomainName\\Manager\" />&nbsp; <deny users=\"*\" /></authorization>",
+      "if(User.IsInRole(@\"DomainName\\Manager\"))&nbsp; // Perform restricted operationelse&nbsp; // Return unauthorized access error.",
+      "if(Roles.IsUserInRole(@\"DomainName\\Manager\"))&nbsp; // Perform restricted operationelse&nbsp; // Return unauthorized access error.",
       "<roleManager enabled=\"true\"             defaultProvider=\"AspNetWindowsTokenRoleProvider\"/>",
       "using System.Security.Permissions;...// Imperative checks PrincipalPermission permCheckUser = new PrincipalPermission(@\"Domain\\Bob\", null);permCheckUser.Demand();",
       "using System.Security.Permissions;... [PrincipalPermission(SecurityAction.Demand,Role=@\"Builtin\\Administrators\")]"
@@ -5439,27 +5452,27 @@
       "setspn -A HTTP/webservername.fullyqualifieddomainname domain\\customAccountName"
     ],
     "blockquote": [
-      "Note   ASP.NET version 2.0 on Windows Server 2003 protects all files in a particular directory, even those not mapped to ASP.NET such as .html, .gif, and .jpg files.",
-      "Note   Impersonation is not required for file authorization.",
-      "Note   Specifying credentials on the <identity> element should be avoided where possible. If you need a specific identity to access resources, and your application runs on Windows Server 2003, use a custom application pool with a custom service account identity instead. This approach avoids impersonation.",
-      "Note   File authorization requires Windows authentication. The other authorization options are available with other authentication mechanisms."
+      "Note&nbsp;&nbsp;&nbsp;ASP.NET version 2.0 on Windows Server 2003 protects all files in a particular directory, even those not mapped to ASP.NET such as .html, .gif, and .jpg files.",
+      "Note&nbsp;&nbsp;&nbsp;Impersonation is not required for file authorization.",
+      "Note&nbsp;&nbsp;&nbsp;Specifying credentials on the <identity> element should be avoided where possible. If you need a specific identity to access resources, and your application runs on Windows Server 2003, use a custom application pool with a custom service account identity instead. This approach avoids impersonation.",
+      "Note&nbsp;&nbsp;&nbsp;File authorization requires Windows authentication. The other authorization options are available with other authentication mechanisms."
     ],
     "ol": [
-      "Start Internet Information Services (IIS). Right-click your application's virtual directory, and then click Properties. Click the Directory Security tab. Under Anonymous access and authentication control, click Edit. Make sure the Anonymous access check box is not selected and that Integrated Windows authentication is the only selected check box.",
-      "Check that your ASP.NET application is not configured for impersonation by ensuring that impersonate is set to false on the <identity> element in the Web.config file. ... <system.web>  ...  <authentication mode=\"Windows\"/>  <identity impersonate=\"false\"/>  ... </system.web> ...  Obtain the authenticated user's Windows token. IIdentity WinId= HttpContext.Current.User.Identity;WindowsIdentity wi = (WindowsIdentity)WinId;  Use the authenticated user's Windows token to temporarily impersonate the original user and remove the impersonation token from the current thread when you are finished impersonating. // Temporarily impersonate the original user.WindowsImpersonationContext wic = wi.Impersonate();try{  // Access resources while impersonating.}catch{  // Prevent exceptions propagating.}finally{  // Revert impersonation.  wic.Undo();}"
+      "Start Internet Information Services (IIS). \n    Right-click your application's virtual directory, and then click Properties. \n    Click the Directory Security tab. \n    Under Anonymous access and authentication control, click Edit. \n    Make sure the Anonymous access check box is not selected and that Integrated Windows authentication is the only selected check box.",
+      "Check that your ASP.NET application is not configured for impersonation by ensuring that impersonate is set to false on the <identity> element in the Web.config file. ...&nbsp;<system.web>&nbsp; ...&nbsp; <authentication mode=\"Windows\"/>&nbsp; <identity impersonate=\"false\"/>&nbsp; ...&nbsp;</system.web>&nbsp;...  \n    Obtain the authenticated user's Windows token. IIdentity WinId= HttpContext.Current.User.Identity;WindowsIdentity wi = (WindowsIdentity)WinId;  \n    Use the authenticated user's Windows token to temporarily impersonate the original user and remove the impersonation token from the current thread when you are finished impersonating. // Temporarily impersonate the original user.WindowsImpersonationContext wic = wi.Impersonate();try{&nbsp; // Access resources while impersonating.}catch{&nbsp; // Prevent exceptions propagating.}finally{&nbsp; // Revert impersonation.&nbsp; wic.Undo();}"
     ],
     "pre": [
-      "... <system.web>  ...  <authentication mode=\"Windows\"/>  ... </system.web> ...",
+      "...&nbsp;<system.web>&nbsp; ...&nbsp; <authentication mode=\"Windows\"/>&nbsp; ...&nbsp;</system.web>&nbsp;...",
       "<identity impersonate=\"false\" userName=\"\" password=\"\" />",
-      "... <system.web>    ...    <authentication mode=\"Windows\"/>    <identity impersonate=\"true\"/>    ... </system.web> ...",
-      "... <system.web>  ...  <authentication mode=\"Windows\"/>    <identity impersonate=\"true\" userName=\"<domain>\\<UserName>\" password=\"<password>\"/>    ... </system.web> ...",
-      "... <system.web>  ...  <authentication mode=\"Windows\"/>  <identity impersonate=\"false\"/>  ... </system.web> ...",
+      "...&nbsp;<system.web>&nbsp;&nbsp;&nbsp; ...&nbsp;&nbsp;&nbsp; <authentication mode=\"Windows\"/>&nbsp;&nbsp;&nbsp; <identity impersonate=\"true\"/>&nbsp;&nbsp;&nbsp; ...&nbsp;</system.web>&nbsp;...",
+      "...&nbsp;<system.web>&nbsp; ...&nbsp; <authentication mode=\"Windows\"/>&nbsp;&nbsp;&nbsp; <identity impersonate=\"true\" userName=\"<domain>\\<UserName>\" password=\"<password>\"/>&nbsp;&nbsp;&nbsp; ...&nbsp;</system.web>&nbsp;...",
+      "...&nbsp;<system.web>&nbsp; ...&nbsp; <authentication mode=\"Windows\"/>&nbsp; <identity impersonate=\"false\"/>&nbsp; ...&nbsp;</system.web>&nbsp;...",
       "IIdentity WinId= HttpContext.Current.User.Identity;WindowsIdentity wi = (WindowsIdentity)WinId;",
-      "// Temporarily impersonate the original user.WindowsImpersonationContext wic = wi.Impersonate();try{  // Access resources while impersonating.}catch{  // Prevent exceptions propagating.}finally{  // Revert impersonation.  wic.Undo();}",
-      "<authorization> <deny users=\"DomainName\\UserName\" /> <allow roles=\"DomainName\\WindowsGroup\" /></authorization>",
-      "<authorization>  <allow users=\"DomainName\\Bob, DomainName\\Mary\" />  <allow roles=\"BUILTIN\\Administrators, DomainName\\Manager\" />  <deny users=\"*\" /></authorization>",
-      "if(User.IsInRole(@\"DomainName\\Manager\"))  // Perform restricted operationelse  // Return unauthorized access error.",
-      "if(Roles.IsUserInRole(@\"DomainName\\Manager\"))  // Perform restricted operationelse  // Return unauthorized access error.",
+      "// Temporarily impersonate the original user.WindowsImpersonationContext wic = wi.Impersonate();try{&nbsp; // Access resources while impersonating.}catch{&nbsp; // Prevent exceptions propagating.}finally{&nbsp; // Revert impersonation.&nbsp; wic.Undo();}",
+      "<authorization>&nbsp;<deny users=\"DomainName\\UserName\" />&nbsp;<allow roles=\"DomainName\\WindowsGroup\" /></authorization>",
+      "<authorization>&nbsp; <allow users=\"DomainName\\Bob, DomainName\\Mary\" />&nbsp; <allow roles=\"BUILTIN\\Administrators, DomainName\\Manager\" />&nbsp; <deny users=\"*\" /></authorization>",
+      "if(User.IsInRole(@\"DomainName\\Manager\"))&nbsp; // Perform restricted operationelse&nbsp; // Return unauthorized access error.",
+      "if(Roles.IsUserInRole(@\"DomainName\\Manager\"))&nbsp; // Perform restricted operationelse&nbsp; // Return unauthorized access error.",
       "<roleManager enabled=\"true\"             defaultProvider=\"AspNetWindowsTokenRoleProvider\"/>",
       "using System.Security.Permissions;...// Imperative checks PrincipalPermission permCheckUser = new PrincipalPermission(@\"Domain\\Bob\", null);permCheckUser.Demand();",
       "using System.Security.Permissions;... [PrincipalPermission(SecurityAction.Demand,Role=@\"Builtin\\Administrators\")]"
@@ -5544,5 +5557,5 @@
     ]
   },
   "links": [],
-  "html": "<h1>Applies To</h1>\r\n  <ul>\r\n    <li>ASP.NET <li>Internet Information Services (IIS) 6.0 </li></li>\r\n  </ul>\r\n  <h1>Summary</h1>\r\n  <p>This How to shows you how to configure and use Windows authentication in an ASP.NET Web application. Windows authentication is the preferred approach whenever users are a part of your Windows domain. This approach enables you to use an existing identity store such as your corporate Active Directory, and does not transmit passwords over the network. This How to also shows various impersonation options available with Windows authentication and how to configure and use them with ASP.NET applications. It also explains how to use the various authorization mechanisms including file authorization, URL authorization, and role-based authorization, with Windows authentication.</p>\r\n  <h1>Contents</h1>\r\n  <ul>\r\n    <li>\r\n      <div>Objectives</div>\r\n      <li>\r\n        <div>Overview</div>\r\n        <li>\r\n          <div>Configuring Windows Authentication</div>\r\n          <li>\r\n            <div>Using Impersonation with Windows Authentication </div>\r\n            <li>\r\n              <div>Authorizing Windows Users</div>\r\n              <li>\r\n                <div>Kerberos Authentication</div>\r\n                <li>\r\n                  <div>Additional Resources</div>\r\n                </li>\r\n              </li>\r\n            </li>\r\n          </li>\r\n        </li>\r\n      </li>\r\n    </li>\r\n  </ul>\r\n  <h1>Objectives</h1>\r\n  <ul>\r\n    <li>Learn how to configure your Web application for using Windows authentication. <li>Use impersonation with Windows authentication in ASP.NET applications. <li>Authorize users authenticated with Windows authentication. </li></li></li>\r\n  </ul>\r\n  <h1>Overview</h1>\r\n  <p>ASP.NET supports various authentication modes, including Windows authentication, forms authentication, Passport authentication, and custom authentication. You should choose Windows authentication if your user accounts are maintained by a Microsoft&#174; Windows&nbsp;NT&#174; domain controller or within Microsoft Windows&#174; Active Directory&#8482; and there are no firewall issues. </p>\r\n  <p>The main benefit of using Windows authentication is that it can be coupled with IIS authentication so that you don't have to write any custom code. Compared to other authentication mechanisms, Windows authentication does not pass the user credentials over the wire. Windows authentication also provides a seamless user experience. Therefore Windows authentication should be used wherever possible. </p>\r\n  <p>When you configure ASP.NET for Windows authentication, it can be coupled with IIS authentication where IIS authenticates your application's users by using Basic authentication, Integrated Windows authentication, Digest authentication, or Client Certificate authentication. Both Integrated Windows authentication and Client Certificate authentication provide strong authentication, but Integrated Windows authentication is recommended unless you have a PKI infrastructure and your clients have certificates. </p>\r\n  <p>IIS authenticates the user and passes a Windows token for the authenticated user to ASP.NET along with each Web request. </p>\r\n  <h2>Impersonation Options</h2>\r\n  <p>You can use Windows authentication with ASP.NET in a number of ways: </p>\r\n  <ul>\r\n    <li>\r\n      <b>Windows authentication without impersonation.</b> This is the default setting. ASP.NET performs operations and accesses resources by using your application's process identity, which by default is the Network Service account on Windows Server 2003. <li><b>Windows authentication with impersonation. </b>With this approach, you impersonate the authenticated user and use that identity to perform operations and access resources. <li><b>Windows authentication with fixed-identity impersonation.</b> With this approach, you impersonate a fixed Windows account to access resources using a specific identity. On Windows Server 2003, you should avoid this impersonation approach; instead, use a custom application pool with a custom service identity. </li></li></li>\r\n  </ul>\r\n  <h2>Authorization Options</h2>\r\n  <p>Regardless of impersonation, you can authorize users and control access to resources and business operations by using the following mechanisms: </p>\r\n  <ul>\r\n    <li>\r\n      <b>URL authorization. </b>You use URL authorization to control access to requested files and folders based on the request URL. You configure URL authorization by using an &lt;<b>authorization</b>&gt; element in the Web.config file to control which users and groups of users should have access to requested resources. Authorization is based on the <b>IPrincipal</b> object stored in <b>HttpContext.User</b>. With Windows authentication, this object is of type <b>WindowsPrincipal</b> and it contains a <b>WindowsIdentity</b> object that holds the Windows token for the authenticated user. <blockquote><b>Note</b>&nbsp;&nbsp;&nbsp;ASP.NET version 2.0 on Windows Server 2003 protects all files in a particular directory, even those not mapped to ASP.NET such as .html, .gif, and .jpg files.</blockquote><li><b>File authorization.</b> For file types mapped by IIS to the ASP.NET ISAPI extension (Aspnet_isapi.dll), automatic access checks are performed using the authenticated user's Windows access token against the access control list (ACL) attached to the requested ASP.NET file. The <b>FileAuthorizationModule</b> class only performs access checks against the requested file. For example, if you request Default.aspx and it contains an embedded user control (Usercontrol.ascx), which in turn includes an image tag (pointing to Image.gif), the <b>FileAuthorizationModule</b> performs an access check for Default.aspx and Usercontrol.ascx, because these file types are mapped by IIS to the ASP.NET ISAPI extension. The <b>FileAuthorizationModule</b> does not perform a check for Image.gif, because this is a static file handled internally by IIS. However, because access checks for static files are performed by IIS, the authenticated user must still be granted read permission to the file with an appropriately configured ACL. <blockquote><b>Note</b>&nbsp;&nbsp;&nbsp;Impersonation is not required for file authorization.<b></b></blockquote><li><b>Role checks. </b>You can check the authenticated user's role membership by using methods such as <b>User.IsInRole</b> and <b>Roles.IsUserInRole</b>. This allows you to perform fine-grained authorization logic. To use the Roles API, you need to enable role manager for your application. You can also use principal permission demands and use class-level and method-level declarative security to control which users should be allowed to call classes and methods. </li></li></li>\r\n  </ul>\r\n  <h1>Configuring Windows Authentication</h1>\r\n  <p>To configure your application to use Integrated Windows authentication, you must use IIS Manager to configure your application's virtual directory security settings and you must configure the &lt;<b>authentication</b>&gt; element in the Web.config file.</p>\r\n  <h2>To configure Windows authentication </h2>\r\n  <ol>\r\n    <li>Start Internet Information Services (IIS). <li>Right-click your application's virtual directory, and then click <b>Properties</b>. <li>Click the <b>Directory Security</b> tab. <li>Under <b>Anonymous access and authentication control</b>, click <b>Edit</b>. <li>Make sure the <b>Anonymous access</b> check box is not selected and that <b>Integrated Windows authentication</b> is the only selected check box. </li></li></li></li></li>\r\n  </ol>\r\n  <p>In your application's Web.config file or in the machine-level Web.config file, ensure that the authentication mode is set to Windows as shown here.</p>\r\n  <div>\r\n    <pre>...<br />&nbsp;&lt;system.web&gt;<br />&nbsp; ...<br />&nbsp; &lt;authentication mode=\"Windows\"/&gt;<br />&nbsp; ...<br />&nbsp;&lt;/system.web&gt;<br />&nbsp;...  </pre>\r\n  </div>\r\n  <h1>Using Impersonation with Windows Authentication </h1>\r\n  <p>By using impersonation, ASP.NET applications can execute code or access resources with the identity of the authenticated user or a fixed Windows identity. Standard impersonate-level impersonation tokens that are usually created when you enable impersonation allow you to access local resources only. To be able to access remote network resources, you require a delegate-level token. To generate a delegate-level token when you impersonate, you need to use Kerberos authentication and your process account needs to be marked as trusted for delegation in Active Directory. </p>\r\n  <p>By default, ASP.NET applications are not configured for impersonation. You can confirm this by reviewing the identity settings in the Machine.config.comments file located in the following folder: &#37;windir&#37;\\Microsoft.Net\\Framework\\&#123;Version&#125;\\CONFIG.</p>\r\n  <p>The &lt;<b>identity</b>&gt; element is configured as follows. Note that impersonation is disabled.</p>\r\n  <div>\r\n    <pre>&lt;identity impersonate=\"false\" userName=\"\" password=\"\" /&gt;  </pre>\r\n  </div>\r\n  <h2>Impersonating the Original Caller with Windows Authentication</h2>\r\n  <p>When you configure your application for impersonation, an impersonation token for the authenticated user is attached to the Web request thread. As a result, all local resource access is performed using the caller's identity. </p>\r\n  <p>To configure ASP.NET to use Windows authentication with impersonation, use the following configuration.</p>\r\n  <div>\r\n    <pre>...<br />&nbsp;&lt;system.web&gt;<br />&nbsp;&nbsp;&nbsp; ...<br />&nbsp;&nbsp;&nbsp; &lt;authentication mode=\"Windows\"/&gt;<br />&nbsp;&nbsp;&nbsp; &lt;identity impersonate=\"true\"/&gt;<br />&nbsp;&nbsp;&nbsp; ...<br />&nbsp;&lt;/system.web&gt;<br />&nbsp;...  </pre>\r\n  </div>\r\n  <p>The resulting impersonation token and associated logon session does not have network credentials. If you access this Web site from a browser while logged onto a different machine in the same domain and the Web site attempts to access network resources, you end up with a null session on the remote server and the resource access will fail. To access remote resources, you need delegation. </p>\r\n  <h2>Impersonating a Fixed Identity with Windows Authentication </h2>\r\n  <p>You can configure ASP.NET to impersonate a fixed identity. You specify the credentials of the impersonated identity on the &lt;<b>identity</b>&gt; element in the Web.config file as shown here.</p>\r\n  <div>\r\n    <pre>...<br />&nbsp;&lt;system.web&gt;<br />&nbsp; ...<br />&nbsp; &lt;authentication mode=\"Windows\"/&gt;<br />&nbsp;&nbsp;&nbsp; &lt;identity impersonate=\"true\" userName=\"&lt;domain&gt;\\&lt;UserName&gt;\" password=\"&lt;password&gt;\"/&gt;<br />&nbsp;&nbsp;&nbsp; ...<br />&nbsp;&lt;/system.web&gt;<br />&nbsp;...<br /></pre>\r\n  </div>\r\n  <p>If you specify credentials on the &lt;<b>identity</b>&gt; element, make sure they are stored in encrypted format by using the Aspnet_regiis.exe tool. </p>\r\n  <blockquote>\r\n    <b>Note</b>&nbsp;&nbsp;&nbsp;Specifying credentials on the &lt;<b>identity</b>&gt; element should be avoided where possible. If you need a specific identity to access resources, and your application runs on Windows Server 2003, use a custom application pool with a custom service account identity instead. This approach avoids impersonation.<b></b></blockquote>\r\n  <h2>Impersonating the Original Caller Programmatically</h2>\r\n  <p>If you only require an impersonated identity to access specific resources or perform specific operations and can use your process identity the rest of the time, you can use programmatic impersonation to temporarily enable impersonation.</p>\r\n  <h3>To temporarily impersonate the authenticated user</h3>\r\n  <p>This procedure shows you how to temporarily impersonate the original caller by using the Windows token that is passed by IIS to your Web application and is available through the <b>HttpContext</b> object. </p>\r\n  <ol>\r\n    <li>Check that your ASP.NET application is not configured for impersonation by ensuring that impersonate is set to <b>false</b> on the &lt;<b>identity</b>&gt; element in the Web.config file. <div><pre>...<br />&nbsp;&lt;system.web&gt;<br />&nbsp; ...<br />&nbsp; &lt;authentication mode=\"Windows\"/&gt;<br />&nbsp; &lt;identity impersonate=\"false\"/&gt;<br />&nbsp; ...<br />&nbsp;&lt;/system.web&gt;<br />&nbsp;...  </pre></div><li>Obtain the authenticated user's Windows token. <div><pre>IIdentity WinId= HttpContext.Current.User.Identity;WindowsIdentity wi = (WindowsIdentity)WinId;  </pre></div><li>Use the authenticated user's Windows token to temporarily impersonate the original user and remove the impersonation token from the current thread when you are finished impersonating. <div><pre>// Temporarily impersonate the original user.<br />WindowsImpersonationContext wic = wi.Impersonate();<br />try<br />&#123;<br />&nbsp; // Access resources while impersonating.<br />&#125;<br />catch<br />&#123;<br />&nbsp; // Prevent exceptions propagating.<br />&#125;<br />finally<br />&#123;<br />&nbsp; // Revert impersonation.<br />&nbsp; wic.Undo();<br />&#125;  </pre></div></li></li></li>\r\n  </ol>\r\n  <h1>Authorizing Windows Users</h1>\r\n  <p>When you use Windows authentication to authenticate users, you can use the following authorization options: </p>\r\n  <ul>\r\n    <li>File authorization provided by the <b>FileAuthorizationModule</b>. <li>URL authorization provided by the <b>UrlAuthorizationModule</b>. <li>Role-based authorization. </li></li></li>\r\n  </ul>\r\n  <blockquote>\r\n    <b>Note</b>&nbsp;&nbsp;&nbsp;File authorization requires Windows authentication. The other authorization options are available with other authentication mechanisms.<b></b></blockquote>\r\n  <h2>Configuring Windows ACLs for File Authorization</h2>\r\n  <p>Requests for file types mapped to the ASP.NET ISAPI extension are checked by the <b>FileAuthorizationModule</b>. When you use Windows authentication, the authenticated user's Windows token is compared against the ACL attached to the requested file. For static files types that are not mapped to the ASP.NET ISAPI extension, IIS performs access checks again by using the authenticated user's access token and the ACL attached to the file. You need to configure appropriate ACLs on the file types directly requested by the user and on the files and other Windows resources accessed by your application, as described here: </p>\r\n  <ul>\r\n    <li>\r\n      <b>For</b>\r\n      <b>resources directly requested by the user.</b> For resources such as Web pages (.aspx files) and Web services (.asmx files) directly requested by the user, the authenticated user's Windows access token is compared against the Windows ACL attached to the file. Make sure that the authenticated user is allowed to access the appropriate Web pages and Web services. <li><b>For resources that the application accesses.</b> If impersonation is enabled, resources such as files, databases, registry keys, and Active Directory objects are accessed by using the impersonated identity. Otherwise, your application's process identity, such as the Network Service account, is used for resource access. For the resource access attempt to succeed, the ACL attached to these resources must be suitably configured to allow the process account or impersonated identity the access it requests, such as read access, or write access. </li></li>\r\n  </ul>\r\n  <h2>Configuring URL Authorization</h2>\r\n  <p>When you use Windows authentication, the <b>UrlAuthorizationModule</b> checks the access to requested files and folders based on the authenticated caller's identity. This is true regardless of whether your application is configured for impersonation.</p>\r\n  <p>To configure URL authorization, add an &lt;<b>authorization</b>&gt; element to the Web.config file, and specify the domain name and user or group name when configuring &lt;<b>deny</b>&gt; and &lt;<b>allow</b>&gt; elements, as shown here.</p>\r\n  <div>\r\n    <pre>&lt;authorization&gt;<br />&nbsp;&lt;deny users=\"DomainName\\UserName\" /&gt;<br />&nbsp;&lt;allow roles=\"DomainName\\WindowsGroup\" /&gt;<br />&lt;/authorization&gt;  </pre>\r\n  </div>\r\n  <p>When you use Windows authentication, user names take the form <i>domainName\\userName</i>. Windows groups are used as roles and they take the form <i>domainName\\windowsGroupName</i>. Well known local groups such as Administrators and Users are referenced by using the \"BUILTIN\" prefix as shown here. </p>\r\n  <div>\r\n    <pre>&lt;authorization&gt;<br />&nbsp; &lt;allow users=\"DomainName\\Bob, DomainName\\Mary\" /&gt;<br />&nbsp; &lt;allow roles=\"BUILTIN\\Administrators, DomainName\\Manager\" /&gt;<br />&nbsp; &lt;deny users=\"&#42;\" /&gt;<br />&lt;/authorization&gt;  </pre>\r\n  </div>\r\n  <h2>Checking Role Membership in Code</h2>\r\n  <p>With Windows authentication, the user's Windows group membership can be used to determine the role membership and Window groups become the roles. You can perform role-based authorization in code either by performing explicit role checks (<b>User.IsInRole</b> or <b>Roles.IsUserInRole</b>), or by using <b>PrincipalPermission</b> demands. You can do the latter either imperatively in the body of a method or declaratively by adding attributes to your classes and methods.</p>\r\n  <h3>To use explicit role checks: </h3>\r\n  <ul>\r\n    <li>Use the <b>IPrincipal</b> interface of the <b>User</b> object attached to the current HTTP request. This approach works with ASP.NET versions 1.0, 1.1. and 2.0. When using Windows authentication, make sure to use the <i>domainName\\userName</i> format for the user name and the format <i>domainName\\groupName</i> for the group name.<b></b><div><pre>if(User.IsInRole(&#64;\"DomainName\\Manager\"))<br />&nbsp; // Perform restricted operation<br />else<br />&nbsp; // Return unauthorized access error.  </pre></div><li>Alternatively, use role manager APIs introduced in ASP.NET version 2.0, which supports a similar <b>Roles.IsUserInRole</b> method, as shown here. <div><pre>if(Roles.IsUserInRole(&#64;\"DomainName\\Manager\"))<br />&nbsp; // Perform restricted operation<br />else<br />&nbsp; // Return unauthorized access error.  </pre></div><p>To use the role manager API, you must enable role manager. With Windows authentication, you can use the built-in <b>AspNetWindowsTokenRoleProvider</b>, which uses Windows groups as roles. To enable role manager and select this provider, add the following configuration to your Web.config file. </p><div><pre>&lt;roleManager enabled=\"true\"<br />             defaultProvider=\"AspNetWindowsTokenRoleProvider\"/&gt;  </pre></div><p>When you use Windows authentication, you can use alternate role providers, such as the <b>AuthorizationStoreRoleProvider</b> and <b>SqlRoleProvider</b>, if you need to store roles in alternate role stores such as Authorization Manager policy stores or SQL Server databases. </p></li></li>\r\n  </ul>\r\n  <h3>To use PrincipalPermission demands </h3>\r\n  <ul>\r\n    <li>Construct a <b>PrincipalPermission</b> object, and then call its <b>Demand</b> method to perform authorization. <li>For fine grained authorization, call <b>PrincipalPermission.Demand</b> within code, as shown here. <div><pre>using System.Security.Permissions;<br />...<br />// Imperative checks <br />PrincipalPermission permCheckUser = new PrincipalPermission(&#64;\"Domain\\Bob\", null);<br />permCheckUser.Demand();  </pre></div><li>Alternatively, you can decorate your classes or methods with the <b>PrincipalPermissionAttribute</b>, as shown here. <div><pre>using System.Security.Permissions;<br />...<br /> &#91;PrincipalPermission(SecurityAction.Demand,Role=&#64;\"Builtin\\Administrators\")&#93;  </pre></div><p>The advantage of this approach is that the security requirements of your methods are visible to tools such as Permview.exe. </p></li></li></li>\r\n  </ul>\r\n  <h1>Kerberos Authentication</h1>\r\n  <p>When you configure IIS for Integrated Windows authentication, it uses either NTLM or Kerberos authentication, depending on the configuration of client and servers. Kerberos authentication offers a performance benefit and also supports additional features such as the ability to use delegation and mutual authentication.</p>\r\n  <h2>To use Kerberos authentication </h2>\r\n  <ul>\r\n    <li>All servers must be running Windows 2000 Server or later. <li>Client computers must be running Internet Explorer 5.5 or later. <li>All computers must be in a Windows 2000 Server or later domain. <li>Internet Explorer security settings must be configured to enable Integrated Windows authentication. By default, Integrated Windows authentication is not enabled in Internet Explorer 6. To enable the browser to respond to a negotiate challenge and perform Kerberos authentication, select the <b>Enable Integrated Windows Authentication</b> check box in the <b>Security</b> section of the <b>Advanced</b> tab of the <b>Internet Options</b> menu, and then restart the browser. <li>If you use a custom service account to run your ASP.NET application, you a Service Principal Name (SPN) must be registered for the account in Active Directory. </li></li></li></li></li>\r\n  </ul>\r\n  <p>To register an SPN, use the Setspn.exe utility by running the following commands from a command prompt:</p>\r\n  <p>\r\n    <b>setspn -A HTTP/webservername domain\\customAccountName</b>\r\n  </p>\r\n  <p>\r\n    <b>setspn -A HTTP/webservername.fullyqualifieddomainname domain\\customAccountName</b>\r\n  </p>\r\n  <p>Note that you cannot have multiple Web applications with the same host name if you want them to have multiple identities and to use Kerberos authentication. This is an HTTP limitation, not a Kerberos limitation. The workaround is to have multiple Domain Name System (DNS) names for the same host, and then start the URLs for each Web application with a different DNS name. For example, you would use http://app1 and http://app2 instead of http://site/app1 and http://site/app2.</p>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
+  "html": "<h1>Applies To</h1>\n  <ul>\n    <li>ASP.NET </li>\n    <li>Internet Information Services (IIS) 6.0 </li>\n  </ul>\n  <h1>Summary</h1>\n  <p>This How to shows you how to configure and use Windows authentication in an ASP.NET Web application. Windows authentication is the preferred approach whenever users are a part of your Windows domain. This approach enables you to use an existing identity store such as your corporate Active Directory, and does not transmit passwords over the network. This How to also shows various impersonation options available with Windows authentication and how to configure and use them with ASP.NET applications. It also explains how to use the various authorization mechanisms including file authorization, URL authorization, and role-based authorization, with Windows authentication.</p>\n  <h1>Contents</h1>\n  <ul>\n    <li>\n      <div>Objectives</div>\n    </li>\n    <li>\n      <div>Overview</div>\n    </li>\n    <li>\n      <div>Configuring Windows Authentication</div>\n    </li>\n    <li>\n      <div>Using Impersonation with Windows Authentication </div>\n    </li>\n    <li>\n      <div>Authorizing Windows Users</div>\n    </li>\n    <li>\n      <div>Kerberos Authentication</div>\n    </li>\n    <li>\n      <div>Additional Resources</div>\n    </li>\n  </ul>\n  <h1>Objectives</h1>\n  <ul>\n    <li>Learn how to configure your Web application for using Windows authentication. </li>\n    <li>Use impersonation with Windows authentication in ASP.NET applications. </li>\n    <li>Authorize users authenticated with Windows authentication. </li>\n  </ul>\n  <h1>Overview</h1>\n  <p>ASP.NET supports various authentication modes, including Windows authentication, forms authentication, Passport authentication, and custom authentication. You should choose Windows authentication if your user accounts are maintained by a Microsoft® Windows&amp;nbsp;NT® domain controller or within Microsoft Windows® Active Directory™ and there are no firewall issues. </p>\n  <p>The main benefit of using Windows authentication is that it can be coupled with IIS authentication so that you don't have to write any custom code. Compared to other authentication mechanisms, Windows authentication does not pass the user credentials over the wire. Windows authentication also provides a seamless user experience. Therefore Windows authentication should be used wherever possible. </p>\n  <p>When you configure ASP.NET for Windows authentication, it can be coupled with IIS authentication where IIS authenticates your application's users by using Basic authentication, Integrated Windows authentication, Digest authentication, or Client Certificate authentication. Both Integrated Windows authentication and Client Certificate authentication provide strong authentication, but Integrated Windows authentication is recommended unless you have a PKI infrastructure and your clients have certificates. </p>\n  <p>IIS authenticates the user and passes a Windows token for the authenticated user to ASP.NET along with each Web request. </p>\n  <h2>Impersonation Options</h2>\n  <p>You can use Windows authentication with ASP.NET in a number of ways: </p>\n  <ul>\n    <li>\n      <b>Windows authentication without impersonation.</b> This is the default setting. ASP.NET performs operations and accesses resources by using your application's process identity, which by default is the Network Service account on Windows Server 2003. </li>\n    <li>\n      <b>Windows authentication with impersonation. </b>With this approach, you impersonate the authenticated user and use that identity to perform operations and access resources. </li>\n    <li>\n      <b>Windows authentication with fixed-identity impersonation.</b> With this approach, you impersonate a fixed Windows account to access resources using a specific identity. On Windows Server 2003, you should avoid this impersonation approach; instead, use a custom application pool with a custom service identity. </li>\n  </ul>\n  <h2>Authorization Options</h2>\n  <p>Regardless of impersonation, you can authorize users and control access to resources and business operations by using the following mechanisms: </p>\n  <ul>\n    <li>\n      <b>URL authorization. </b>You use URL authorization to control access to requested files and folders based on the request URL. You configure URL authorization by using an &lt;<b>authorization</b>&gt; element in the Web.config file to control which users and groups of users should have access to requested resources. Authorization is based on the <b>IPrincipal</b> object stored in <b>HttpContext.User</b>. With Windows authentication, this object is of type <b>WindowsPrincipal</b> and it contains a <b>WindowsIdentity</b> object that holds the Windows token for the authenticated user. <blockquote><b>Note</b>&amp;nbsp;&amp;nbsp;&amp;nbsp;ASP.NET version 2.0 on Windows Server 2003 protects all files in a particular directory, even those not mapped to ASP.NET such as .html, .gif, and .jpg files.</blockquote></li>\n    <li>\n      <b>File authorization.</b> For file types mapped by IIS to the ASP.NET ISAPI extension (Aspnet_isapi.dll), automatic access checks are performed using the authenticated user's Windows access token against the access control list (ACL) attached to the requested ASP.NET file. The <b>FileAuthorizationModule</b> class only performs access checks against the requested file. For example, if you request Default.aspx and it contains an embedded user control (Usercontrol.ascx), which in turn includes an image tag (pointing to Image.gif), the <b>FileAuthorizationModule</b> performs an access check for Default.aspx and Usercontrol.ascx, because these file types are mapped by IIS to the ASP.NET ISAPI extension. The <b>FileAuthorizationModule</b> does not perform a check for Image.gif, because this is a static file handled internally by IIS. However, because access checks for static files are performed by IIS, the authenticated user must still be granted read permission to the file with an appropriately configured ACL. <blockquote><b>Note</b>&amp;nbsp;&amp;nbsp;&amp;nbsp;Impersonation is not required for file authorization.<b></b></blockquote></li>\n    <li>\n      <b>Role checks. </b>You can check the authenticated user's role membership by using methods such as <b>User.IsInRole</b> and <b>Roles.IsUserInRole</b>. This allows you to perform fine-grained authorization logic. To use the Roles API, you need to enable role manager for your application. You can also use principal permission demands and use class-level and method-level declarative security to control which users should be allowed to call classes and methods. </li>\n  </ul>\n  <h1>Configuring Windows Authentication</h1>\n  <p>To configure your application to use Integrated Windows authentication, you must use IIS Manager to configure your application's virtual directory security settings and you must configure the &lt;<b>authentication</b>&gt; element in the Web.config file.</p>\n  <h2>To configure Windows authentication </h2>\n  <ol>\n    <li>Start Internet Information Services (IIS). </li>\n    <li>Right-click your application's virtual directory, and then click <b>Properties</b>. </li>\n    <li>Click the <b>Directory Security</b> tab. </li>\n    <li>Under <b>Anonymous access and authentication control</b>, click <b>Edit</b>. </li>\n    <li>Make sure the <b>Anonymous access</b> check box is not selected and that <b>Integrated Windows authentication</b> is the only selected check box. </li>\n  </ol>\n  <p>In your application's Web.config file or in the machine-level Web.config file, ensure that the authentication mode is set to Windows as shown here.</p>\n  <div>\n    <pre>...<br />&amp;nbsp;&lt;system.web&gt;<br />&amp;nbsp; ...<br />&amp;nbsp; &lt;authentication mode=\"Windows\"/&gt;<br />&amp;nbsp; ...<br />&amp;nbsp;&lt;/system.web&gt;<br />&amp;nbsp;...  </pre>\n  </div>\n  <h1>Using Impersonation with Windows Authentication </h1>\n  <p>By using impersonation, ASP.NET applications can execute code or access resources with the identity of the authenticated user or a fixed Windows identity. Standard impersonate-level impersonation tokens that are usually created when you enable impersonation allow you to access local resources only. To be able to access remote network resources, you require a delegate-level token. To generate a delegate-level token when you impersonate, you need to use Kerberos authentication and your process account needs to be marked as trusted for delegation in Active Directory. </p>\n  <p>By default, ASP.NET applications are not configured for impersonation. You can confirm this by reviewing the identity settings in the Machine.config.comments file located in the following folder: %windir%\\Microsoft.Net\\Framework\\{Version}\\CONFIG.</p>\n  <p>The &lt;<b>identity</b>&gt; element is configured as follows. Note that impersonation is disabled.</p>\n  <div>\n    <pre>&lt;identity impersonate=\"false\" userName=\"\" password=\"\" /&gt;  </pre>\n  </div>\n  <h2>Impersonating the Original Caller with Windows Authentication</h2>\n  <p>When you configure your application for impersonation, an impersonation token for the authenticated user is attached to the Web request thread. As a result, all local resource access is performed using the caller's identity. </p>\n  <p>To configure ASP.NET to use Windows authentication with impersonation, use the following configuration.</p>\n  <div>\n    <pre>...<br />&amp;nbsp;&lt;system.web&gt;<br />&amp;nbsp;&amp;nbsp;&amp;nbsp; ...<br />&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;authentication mode=\"Windows\"/&gt;<br />&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;identity impersonate=\"true\"/&gt;<br />&amp;nbsp;&amp;nbsp;&amp;nbsp; ...<br />&amp;nbsp;&lt;/system.web&gt;<br />&amp;nbsp;...  </pre>\n  </div>\n  <p>The resulting impersonation token and associated logon session does not have network credentials. If you access this Web site from a browser while logged onto a different machine in the same domain and the Web site attempts to access network resources, you end up with a null session on the remote server and the resource access will fail. To access remote resources, you need delegation. </p>\n  <h2>Impersonating a Fixed Identity with Windows Authentication </h2>\n  <p>You can configure ASP.NET to impersonate a fixed identity. You specify the credentials of the impersonated identity on the &lt;<b>identity</b>&gt; element in the Web.config file as shown here.</p>\n  <div>\n    <pre>...<br />&amp;nbsp;&lt;system.web&gt;<br />&amp;nbsp; ...<br />&amp;nbsp; &lt;authentication mode=\"Windows\"/&gt;<br />&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;identity impersonate=\"true\" userName=\"&lt;domain&gt;\\&lt;UserName&gt;\" password=\"&lt;password&gt;\"/&gt;<br />&amp;nbsp;&amp;nbsp;&amp;nbsp; ...<br />&amp;nbsp;&lt;/system.web&gt;<br />&amp;nbsp;...<br /></pre>\n  </div>\n  <p>If you specify credentials on the &lt;<b>identity</b>&gt; element, make sure they are stored in encrypted format by using the Aspnet_regiis.exe tool. </p>\n  <blockquote>\n    <b>Note</b>&amp;nbsp;&amp;nbsp;&amp;nbsp;Specifying credentials on the &lt;<b>identity</b>&gt; element should be avoided where possible. If you need a specific identity to access resources, and your application runs on Windows Server 2003, use a custom application pool with a custom service account identity instead. This approach avoids impersonation.<b></b></blockquote>\n  <h2>Impersonating the Original Caller Programmatically</h2>\n  <p>If you only require an impersonated identity to access specific resources or perform specific operations and can use your process identity the rest of the time, you can use programmatic impersonation to temporarily enable impersonation.</p>\n  <h3>To temporarily impersonate the authenticated user</h3>\n  <p>This procedure shows you how to temporarily impersonate the original caller by using the Windows token that is passed by IIS to your Web application and is available through the <b>HttpContext</b> object. </p>\n  <ol>\n    <li>Check that your ASP.NET application is not configured for impersonation by ensuring that impersonate is set to <b>false</b> on the &lt;<b>identity</b>&gt; element in the Web.config file. <div><pre>...<br />&amp;nbsp;&lt;system.web&gt;<br />&amp;nbsp; ...<br />&amp;nbsp; &lt;authentication mode=\"Windows\"/&gt;<br />&amp;nbsp; &lt;identity impersonate=\"false\"/&gt;<br />&amp;nbsp; ...<br />&amp;nbsp;&lt;/system.web&gt;<br />&amp;nbsp;...  </pre></div></li>\n    <li>Obtain the authenticated user's Windows token. <div><pre>IIdentity WinId= HttpContext.Current.User.Identity;WindowsIdentity wi = (WindowsIdentity)WinId;  </pre></div></li>\n    <li>Use the authenticated user's Windows token to temporarily impersonate the original user and remove the impersonation token from the current thread when you are finished impersonating. <div><pre>// Temporarily impersonate the original user.<br />WindowsImpersonationContext wic = wi.Impersonate();<br />try<br />{<br />&amp;nbsp; // Access resources while impersonating.<br />}<br />catch<br />{<br />&amp;nbsp; // Prevent exceptions propagating.<br />}<br />finally<br />{<br />&amp;nbsp; // Revert impersonation.<br />&amp;nbsp; wic.Undo();<br />}  </pre></div></li>\n  </ol>\n  <h1>Authorizing Windows Users</h1>\n  <p>When you use Windows authentication to authenticate users, you can use the following authorization options: </p>\n  <ul>\n    <li>File authorization provided by the <b>FileAuthorizationModule</b>. </li>\n    <li>URL authorization provided by the <b>UrlAuthorizationModule</b>. </li>\n    <li>Role-based authorization. </li>\n  </ul>\n  <blockquote>\n    <b>Note</b>&amp;nbsp;&amp;nbsp;&amp;nbsp;File authorization requires Windows authentication. The other authorization options are available with other authentication mechanisms.<b></b></blockquote>\n  <h2>Configuring Windows ACLs for File Authorization</h2>\n  <p>Requests for file types mapped to the ASP.NET ISAPI extension are checked by the <b>FileAuthorizationModule</b>. When you use Windows authentication, the authenticated user's Windows token is compared against the ACL attached to the requested file. For static files types that are not mapped to the ASP.NET ISAPI extension, IIS performs access checks again by using the authenticated user's access token and the ACL attached to the file. You need to configure appropriate ACLs on the file types directly requested by the user and on the files and other Windows resources accessed by your application, as described here: </p>\n  <ul>\n    <li>\n      <b>For</b>\n      <b>resources directly requested by the user.</b> For resources such as Web pages (.aspx files) and Web services (.asmx files) directly requested by the user, the authenticated user's Windows access token is compared against the Windows ACL attached to the file. Make sure that the authenticated user is allowed to access the appropriate Web pages and Web services. </li>\n    <li>\n      <b>For resources that the application accesses.</b> If impersonation is enabled, resources such as files, databases, registry keys, and Active Directory objects are accessed by using the impersonated identity. Otherwise, your application's process identity, such as the Network Service account, is used for resource access. For the resource access attempt to succeed, the ACL attached to these resources must be suitably configured to allow the process account or impersonated identity the access it requests, such as read access, or write access. </li>\n  </ul>\n  <h2>Configuring URL Authorization</h2>\n  <p>When you use Windows authentication, the <b>UrlAuthorizationModule</b> checks the access to requested files and folders based on the authenticated caller's identity. This is true regardless of whether your application is configured for impersonation.</p>\n  <p>To configure URL authorization, add an &lt;<b>authorization</b>&gt; element to the Web.config file, and specify the domain name and user or group name when configuring &lt;<b>deny</b>&gt; and &lt;<b>allow</b>&gt; elements, as shown here.</p>\n  <div>\n    <pre>&lt;authorization&gt;<br />&amp;nbsp;&lt;deny users=\"DomainName\\UserName\" /&gt;<br />&amp;nbsp;&lt;allow roles=\"DomainName\\WindowsGroup\" /&gt;<br />&lt;/authorization&gt;  </pre>\n  </div>\n  <p>When you use Windows authentication, user names take the form <i>domainName\\userName</i>. Windows groups are used as roles and they take the form <i>domainName\\windowsGroupName</i>. Well known local groups such as Administrators and Users are referenced by using the \"BUILTIN\" prefix as shown here. </p>\n  <div>\n    <pre>&lt;authorization&gt;<br />&amp;nbsp; &lt;allow users=\"DomainName\\Bob, DomainName\\Mary\" /&gt;<br />&amp;nbsp; &lt;allow roles=\"BUILTIN\\Administrators, DomainName\\Manager\" /&gt;<br />&amp;nbsp; &lt;deny users=\"*\" /&gt;<br />&lt;/authorization&gt;  </pre>\n  </div>\n  <h2>Checking Role Membership in Code</h2>\n  <p>With Windows authentication, the user's Windows group membership can be used to determine the role membership and Window groups become the roles. You can perform role-based authorization in code either by performing explicit role checks (<b>User.IsInRole</b> or <b>Roles.IsUserInRole</b>), or by using <b>PrincipalPermission</b> demands. You can do the latter either imperatively in the body of a method or declaratively by adding attributes to your classes and methods.</p>\n  <h3>To use explicit role checks: </h3>\n  <ul>\n    <li>Use the <b>IPrincipal</b> interface of the <b>User</b> object attached to the current HTTP request. This approach works with ASP.NET versions 1.0, 1.1. and 2.0. When using Windows authentication, make sure to use the <i>domainName\\userName</i> format for the user name and the format <i>domainName\\groupName</i> for the group name.<b></b><div><pre>if(User.IsInRole(@\"DomainName\\Manager\"))<br />&amp;nbsp; // Perform restricted operation<br />else<br />&amp;nbsp; // Return unauthorized access error.  </pre></div></li>\n    <li>Alternatively, use role manager APIs introduced in ASP.NET version 2.0, which supports a similar <b>Roles.IsUserInRole</b> method, as shown here. <div><pre>if(Roles.IsUserInRole(@\"DomainName\\Manager\"))<br />&amp;nbsp; // Perform restricted operation<br />else<br />&amp;nbsp; // Return unauthorized access error.  </pre></div><p>To use the role manager API, you must enable role manager. With Windows authentication, you can use the built-in <b>AspNetWindowsTokenRoleProvider</b>, which uses Windows groups as roles. To enable role manager and select this provider, add the following configuration to your Web.config file. </p><div><pre>&lt;roleManager enabled=\"true\"<br />             defaultProvider=\"AspNetWindowsTokenRoleProvider\"/&gt;  </pre></div><p>When you use Windows authentication, you can use alternate role providers, such as the <b>AuthorizationStoreRoleProvider</b> and <b>SqlRoleProvider</b>, if you need to store roles in alternate role stores such as Authorization Manager policy stores or SQL Server databases. </p></li>\n  </ul>\n  <h3>To use PrincipalPermission demands </h3>\n  <ul>\n    <li>Construct a <b>PrincipalPermission</b> object, and then call its <b>Demand</b> method to perform authorization. </li>\n    <li>For fine grained authorization, call <b>PrincipalPermission.Demand</b> within code, as shown here. <div><pre>using System.Security.Permissions;<br />...<br />// Imperative checks <br />PrincipalPermission permCheckUser = new PrincipalPermission(@\"Domain\\Bob\", null);<br />permCheckUser.Demand();  </pre></div></li>\n    <li>Alternatively, you can decorate your classes or methods with the <b>PrincipalPermissionAttribute</b>, as shown here. <div><pre>using System.Security.Permissions;<br />...<br /> [PrincipalPermission(SecurityAction.Demand,Role=@\"Builtin\\Administrators\")]  </pre></div><p>The advantage of this approach is that the security requirements of your methods are visible to tools such as Permview.exe. </p></li>\n  </ul>\n  <h1>Kerberos Authentication</h1>\n  <p>When you configure IIS for Integrated Windows authentication, it uses either NTLM or Kerberos authentication, depending on the configuration of client and servers. Kerberos authentication offers a performance benefit and also supports additional features such as the ability to use delegation and mutual authentication.</p>\n  <h2>To use Kerberos authentication </h2>\n  <ul>\n    <li>All servers must be running Windows 2000 Server or later. </li>\n    <li>Client computers must be running Internet Explorer 5.5 or later. </li>\n    <li>All computers must be in a Windows 2000 Server or later domain. </li>\n    <li>Internet Explorer security settings must be configured to enable Integrated Windows authentication. By default, Integrated Windows authentication is not enabled in Internet Explorer 6. To enable the browser to respond to a negotiate challenge and perform Kerberos authentication, select the <b>Enable Integrated Windows Authentication</b> check box in the <b>Security</b> section of the <b>Advanced</b> tab of the <b>Internet Options</b> menu, and then restart the browser. </li>\n    <li>If you use a custom service account to run your ASP.NET application, you a Service Principal Name (SPN) must be registered for the account in Active Directory. </li>\n  </ul>\n  <p>To register an SPN, use the Setspn.exe utility by running the following commands from a command prompt:</p>\n  <p>\n    <b>setspn -A HTTP/webservername domain\\customAccountName</b>\n  </p>\n  <p>\n    <b>setspn -A HTTP/webservername.fullyqualifieddomainname domain\\customAccountName</b>\n  </p>\n  <p>Note that you cannot have multiple Web applications with the same host name if you want them to have multiple identities and to use Kerberos authentication. This is an HTTP limitation, not a Kerberos limitation. The workaround is to have multiple Domain Name System (DNS) names for the same host, and then start the URLs for each Web application with a different DNS name. For example, you would use http://app1 and http://app2 instead of http://site/app1 and http://site/app2.</p>\n  <hr />\n  <p>Adapted from Microsoft patterns &amp; practices guidance.</p>"
 }

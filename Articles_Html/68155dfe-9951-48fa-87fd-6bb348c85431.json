@@ -1,6 +1,6 @@
 {
   "id": "68155dfe-9951-48fa-87fd-6bb348c85431",
-  "checksum": "6ec3d44842fe7e65525d615fcb42b6034ce49e67",
+  "checksum": "9c155e4c3126e27dbd75b3f33131ec34931bc839",
   "words": {
     "35": [
       "ul",
@@ -169,7 +169,7 @@
       "li",
       "li"
     ],
-    "authority\rmakecert": [
+    "authoritymakecert": [
       "ol",
       "li"
     ],
@@ -285,14 +285,14 @@
       "ol",
       "li"
     ],
-    "store\rcreate": [
+    "storecreate": [
       "ol"
     ],
     "service": [
       "ol",
       "li"
     ],
-    "certificate\rmakecert": [
+    "certificatemakecert": [
       "ol",
       "li"
     ],
@@ -494,15 +494,15 @@
       "Additional Resources"
     ],
     "ul": [
-      "Microsoft® Windows Communication Foundation (WCF) 3.5 \r\nMicrosoft Visual Studio® 2008",
+      "Microsoft® Windows Communication Foundation (WCF) 3.5 \nMicrosoft Visual Studio® 2008",
       "For more information see “Certificate Creation Tool (Makecert.exe)“ at http://msdn.microsoft.com/en-us/library/bfsktky3(VS.80).aspx"
     ],
     "li": [
       "Microsoft® Windows Communication Foundation (WCF) 3.5",
       "Microsoft Visual Studio® 2008",
-      "Create a certificate to act as your Root Certificate Authority\r\nmakecert -n \"CN=RootCATest\" -r -sv RootCATest.pvk RootCATest.cer",
+      "Create a certificate to act as your Root Certificate Authority\nmakecert -n \"CN=RootCATest\" -r -sv RootCATest.pvk RootCATest.cer",
       "Install your Root Certificate Authority on the server and client machines. Use MMC to install the RootCATes.cer on client and server machines in the Trusted Root Certification Authorities store",
-      "Create and install your temporary service certificate\r\nmakecert -sk keyName -iv RootCATest.pvk -n \"CN=MachineName.domain.com\" -ic RootCATest.cer -sr localmachine -ss my -sky exchange -pe",
+      "Create and install your temporary service certificate\nmakecert -sk keyName -iv RootCATest.pvk -n \"CN=MachineName.domain.com\" -ic RootCATest.cer -sr localmachine -ss my -sky exchange -pe",
       "Use Inetmgr to configure the web site and virtual directory to use the certificate and to require SSL to secure communication",
       "For more information see “Certificate Creation Tool (Makecert.exe)“ at http://msdn.microsoft.com/en-us/library/bfsktky3(VS.80).aspx"
     ],
@@ -511,7 +511,7 @@
       "Adapted from Microsoft patterns & practices guidance."
     ],
     "ol": [
-      "Create a certificate to act as your Root Certificate Authority\r\nmakecert -n \"CN=RootCATest\" -r -sv RootCATest.pvk RootCATest.cerInstall your Root Certificate Authority on the server and client machines. Use MMC to install the RootCATes.cer on client and server machines in the Trusted Root Certification Authorities store\r\nCreate and install your temporary service certificate\r\nmakecert -sk keyName -iv RootCATest.pvk -n \"CN=MachineName.domain.com\" -ic RootCATest.cer -sr localmachine -ss my -sky exchange -pe Use Inetmgr to configure the web site and virtual directory to use the certificate and to require SSL to secure communication",
+      "Create a certificate to act as your Root Certificate Authority\nmakecert -n \"CN=RootCATest\" -r -sv RootCATest.pvk RootCATest.cerInstall your Root Certificate Authority on the server and client machines. Use MMC to install the RootCATes.cer on client and server machines in the Trusted Root Certification Authorities store\nCreate and install your temporary service certificate\nmakecert -sk keyName -iv RootCATest.pvk -n \"CN=MachineName.domain.com\" -ic RootCATest.cer -sr localmachine -ss my -sky exchange -pe Use Inetmgr to configure the web site and virtual directory to use the certificate and to require SSL to secure communication",
       "makecert -n \"CN=RootCATest\" -r -sv RootCATest.pvk RootCATest.cer",
       "makecert -sk keyName -iv RootCATest.pvk -n \"CN=MachineName.domain.com\" -ic RootCATest.cer -sr localmachine -ss my -sky exchange -pe"
     ],
@@ -532,5 +532,5 @@
       "text": "http://msdn.microsoft.com/en-us/library/bfsktky3(VS.80).aspx"
     }
   ],
-  "html": "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>Microsoft® Windows Communication Foundation (WCF) 3.5 \r\n<li>Microsoft Visual Studio® 2008</li></li>\r\n  </ul>\r\n  <h1>Description</h1>\r\n  <p>Use the following steps to create a temporary X.509 certificate for transport security:</p>\r\n  <ol>\r\n    <li>Create a certificate to act as your Root Certificate Authority\r\n<ol><pre>makecert -n \"CN=RootCATest\" -r -sv RootCATest.pvk RootCATest.cer</pre></ol><li>Install your Root Certificate Authority on the server and client machines. Use MMC to install the RootCATes.cer on client and server machines in the Trusted Root Certification Authorities store\r\n<li>Create and install your temporary service certificate\r\n<ol><pre>makecert -sk keyName -iv RootCATest.pvk -n \"CN=MachineName.domain.com\" -ic RootCATest.cer -sr localmachine -ss my -sky exchange -pe </pre></ol><li>Use Inetmgr to configure the web site and virtual directory to use the certificate and to require SSL to secure communication </li></li></li></li>\r\n  </ol>\r\n  <h1>Additional Resources</h1>\r\n  <ul>\r\n    <li>For more information see “Certificate Creation Tool (Makecert.exe)“ at <a href=\"http://msdn.microsoft.com/en-us/library/bfsktky3(VS.80).aspx\">http://msdn.microsoft.com/en-us/library/bfsktky3(VS.80).aspx</a></li>\r\n  </ul>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
+  "html": "<h1>Applies to</h1>\n  <ul>\n    <li>Microsoft® Windows Communication Foundation (WCF) 3.5 \n<li>Microsoft Visual Studio® 2008</li></li>\n  </ul>\n  <h1>Description</h1>\n  <p>Use the following steps to create a temporary X.509 certificate for transport security:</p>\n  <ol>\n    <li>Create a certificate to act as your Root Certificate Authority\n<ol><pre>makecert -n \"CN=RootCATest\" -r -sv RootCATest.pvk RootCATest.cer</pre></ol><li>Install your Root Certificate Authority on the server and client machines. Use MMC to install the RootCATes.cer on client and server machines in the Trusted Root Certification Authorities store\n<li>Create and install your temporary service certificate\n<ol><pre>makecert -sk keyName -iv RootCATest.pvk -n \"CN=MachineName.domain.com\" -ic RootCATest.cer -sr localmachine -ss my -sky exchange -pe </pre></ol><li>Use Inetmgr to configure the web site and virtual directory to use the certificate and to require SSL to secure communication </li></li></li></li>\n  </ol>\n  <h1>Additional Resources</h1>\n  <ul>\n    <li>For more information see “Certificate Creation Tool (Makecert.exe)“ at <a href=\"http://msdn.microsoft.com/en-us/library/bfsktky3(VS.80).aspx\">http://msdn.microsoft.com/en-us/library/bfsktky3(VS.80).aspx</a></li>\n  </ul>\n  <hr />\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
 }

@@ -1,6 +1,6 @@
 {
   "id": "d775ead4-8413-4736-a40f-92c7e0231e5b",
-  "checksum": "c32a7c33dd1d763845e6c5a1a88596708f3c1e77",
+  "checksum": "ee6a7dd78f9482b86b7c8c4a49d5f472229ae389",
   "words": {
     "1": [
       "blockquote",
@@ -270,9 +270,6 @@
       "ul",
       "li",
       "a",
-      "ul",
-      "li",
-      "a",
       "title"
     ],
     "loaded": [
@@ -300,9 +297,6 @@
       "ul",
       "li",
       "a",
-      "ul",
-      "li",
-      "a",
       "title"
     ],
     "through": [
@@ -310,9 +304,6 @@
       "p",
       "p",
       "ul",
-      "ul",
-      "li",
-      "a",
       "li",
       "a",
       "ul",
@@ -427,9 +418,6 @@
       "li",
       "ul",
       "li",
-      "a",
-      "ul",
-      "li",
       "a"
     ],
     "java": [
@@ -438,9 +426,6 @@
       "li",
       "pre",
       "ul",
-      "ul",
-      "li",
-      "a",
       "li",
       "a",
       "ul",
@@ -472,9 +457,6 @@
       "p",
       "ul",
       "li",
-      "a",
-      "ul",
-      "li",
       "a"
     ],
     "interface": [
@@ -501,9 +483,6 @@
       "li",
       "a",
       "ul",
-      "ul",
-      "li",
-      "a",
       "li",
       "a",
       "title"
@@ -540,9 +519,6 @@
       "li",
       "a",
       "ul",
-      "ul",
-      "li",
-      "a",
       "li",
       "a",
       "ul",
@@ -629,9 +605,6 @@
       "p",
       "p",
       "h1",
-      "ul",
-      "li",
-      "a",
       "h1",
       "ul",
       "li",
@@ -789,9 +762,6 @@
       "p",
       "p",
       "strong",
-      "ul",
-      "li",
-      "a",
       "ul",
       "li",
       "a"
@@ -995,9 +965,6 @@
       "p",
       "ul",
       "li",
-      "a",
-      "ul",
-      "li",
       "a"
     ],
     "is": [
@@ -1021,9 +988,6 @@
       "p",
       "ul",
       "ul",
-      "ul",
-      "li",
-      "a",
       "li",
       "a",
       "li",
@@ -1130,9 +1094,6 @@
       "li",
       "p",
       "p",
-      "ul",
-      "li",
-      "a",
       "ul",
       "li",
       "a"
@@ -1984,10 +1945,7 @@
       "h1"
     ],
     "protect": [
-      "p",
-      "ul",
-      "li",
-      "a"
+      "p"
     ],
     "avoid": [
       "ol",
@@ -2308,15 +2266,9 @@
     "number": [
       "ul",
       "li",
-      "a",
-      "ul",
-      "li",
       "a"
     ],
     "times": [
-      "ul",
-      "li",
-      "a",
       "ul",
       "li",
       "a"
@@ -2324,52 +2276,14 @@
     "language": [
       "ul",
       "li",
-      "a",
-      "ul",
-      "li",
       "a"
     ],
     "boundaries": [
       "ul",
       "li",
-      "a",
-      "ul",
-      "li",
       "a"
     ],
     "crossed": [
-      "ul",
-      "li",
-      "a",
-      "ul",
-      "li",
-      "a"
-    ],
-    "validate": [
-      "ul",
-      "li",
-      "a"
-    ],
-    "data": [
-      "ul",
-      "li",
-      "a",
-      "ul",
-      "li",
-      "a"
-    ],
-    "passed": [
-      "ul",
-      "li",
-      "a",
-      "ul",
-      "li",
-      "a"
-    ],
-    "between": [
-      "ul",
-      "li",
-      "a",
       "ul",
       "li",
       "a"
@@ -2387,7 +2301,17 @@
       "li",
       "a"
     ],
-    "minimized": [
+    "data": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "passed": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "between": [
       "ul",
       "li",
       "a"
@@ -2431,18 +2355,18 @@
       "The following segment illustrates the contents of the application's lib directory. The dynamically loaded library has the proper permissions set; therefore, only the administrators can modify the contents of the library."
     ],
     "ol": [
-      "Identify all the native-code libraries used. Identify all native code libraries that your application uses. Look for the System.loadLibrary andSystem.load method calls in your application to determine which libraries are loaded.\r\n    \r\n    \r\n      \r\n        Verify that location of libraries is not revealed. Once you have identified your application's native libraries, ensure that the location is only known by the application and its administrators. Verify that your application does not output any exceptions, errors, messages or content that could reveal the location of the native libraries.\r\n    \r\n    \r\n      \r\n        Ensure that strict permissions are enforced. Verify that your application's native libraries can be accessed only by your application and its administrators. Additionally, ensure that your application only has read access to its native libraries.\r\n    \r\n    \r\n      \r\n        Verify that users cannot directly specify what libraries are to be loaded. Verify that no user input is used as an argument to System.loadLibrary or System.load.\r\n    \r\n    \r\n      \r\n        Review your application's security policy. Identify if your application's security policy has provided the appropriate FilePermission and RuntimePermission entries to allow your application to load the necessary native libraries. The following examples illustrate the permissions necessary for your application to load specific libraries:\r\n      \r\n        \r\n          \r\n            Windows: Loading the library myapp.dll in a Windows environment would require the following permissions:\r\n          grant codeBase \"file:e:/myapp/bin/-\"{  permission java.io.FilePermission \"e:/myapp/lib/myapp.dll\", \"read\";  permission java.lang.RuntimePermission \"loadLibrary.myapp\";  permission java.util.PropertyPermission \"user.dir\", \"read\";};\r\n        \r\n        \r\n          \r\n            Linux: If your application is Linux based, it would require the following permissions to load the library libmyapp.so:\r\n          grant codeBase \"file:/myapp/bin/-\"{  permission java.io.FilePermission \"/myapp/lib/libmyapp.so\", \"read\";  permission java.lang.RuntimePermission \"loadLibrary.myapp\";  permission java.util.PropertyPermission \"user.dir\", \"read\";};\r\n        \r\n      \r\n    \r\n    \r\n      \r\n        Verify your application's library path. Verify that your application's library path is specified at runtime using the -Djava.library.path flag. Make sure to use absolute paths instead of relative paths. Example:\r\n      java -Djava.security.manager -Djava.security.policy=myapp.policy-Djava.library.path=/myapp/lib myapp\r\n    \r\n    \r\n      \r\n        Check for library loading mistakes. If your application enforces a security policy, ensure that your application loads its libraries using the System.loadLibrary method. Otherwise, use System.load. Be sure to verify the canonical path of the library before using System.load.",
-      "Avoid disclosing location of libraries to the client. The location of your application's dynamically loaded libraries should be only known to your application and its administrators. Avoid disclosing the location of the libraries to the client by careful use of exception handling. \r\n    \r\n    \r\n      \r\n        Set appropriate file permissions. Set the filesystem permissions so that only your application and its administrators have access to the dynamically loaded libraries.\r\n    \r\n    \r\n      \r\n        Be careful with user input. Do not allow your application's users to specify either directly or indirectly which libraries are to be loaded."
+      "Identify all the native-code libraries used. Identify all native code libraries that your application uses. Look for the System.loadLibrary andSystem.load method calls in your application to determine which libraries are loaded.\n    \n    \n      \n        Verify that location of libraries is not revealed. Once you have identified your application's native libraries, ensure that the location is only known by the application and its administrators. Verify that your application does not output any exceptions, errors, messages or content that could reveal the location of the native libraries.\n    \n    \n      \n        Ensure that strict permissions are enforced. Verify that your application's native libraries can be accessed only by your application and its administrators. Additionally, ensure that your application only has read access to its native libraries.\n    \n    \n      \n        Verify that users cannot directly specify what libraries are to be loaded. Verify that no user input is used as an argument to System.loadLibrary or System.load.\n    \n    \n      \n        Review your application's security policy. Identify if your application's security policy has provided the appropriate FilePermission and RuntimePermission entries to allow your application to load the necessary native libraries. The following examples illustrate the permissions necessary for your application to load specific libraries:\n      \n        \n          \n            Windows: Loading the library myapp.dll in a Windows environment would require the following permissions:\n          grant codeBase \"file:e:/myapp/bin/-\"{  permission java.io.FilePermission \"e:/myapp/lib/myapp.dll\", \"read\";  permission java.lang.RuntimePermission \"loadLibrary.myapp\";  permission java.util.PropertyPermission \"user.dir\", \"read\";};\n        \n        \n          \n            Linux: If your application is Linux based, it would require the following permissions to load the library libmyapp.so:\n          grant codeBase \"file:/myapp/bin/-\"{  permission java.io.FilePermission \"/myapp/lib/libmyapp.so\", \"read\";  permission java.lang.RuntimePermission \"loadLibrary.myapp\";  permission java.util.PropertyPermission \"user.dir\", \"read\";};\n        \n      \n    \n    \n      \n        Verify your application's library path. Verify that your application's library path is specified at runtime using the -Djava.library.path flag. Make sure to use absolute paths instead of relative paths. Example:\n      java -Djava.security.manager -Djava.security.policy=myapp.policy-Djava.library.path=/myapp/lib myapp\n    \n    \n      \n        Check for library loading mistakes. If your application enforces a security policy, ensure that your application loads its libraries using the System.loadLibrary method. Otherwise, use System.load. Be sure to verify the canonical path of the library before using System.load.",
+      "Avoid disclosing location of libraries to the client. The location of your application's dynamically loaded libraries should be only known to your application and its administrators. Avoid disclosing the location of the libraries to the client by careful use of exception handling. \n    \n    \n      \n        Set appropriate file permissions. Set the filesystem permissions so that only your application and its administrators have access to the dynamically loaded libraries.\n    \n    \n      \n        Be careful with user input. Do not allow your application's users to specify either directly or indirectly which libraries are to be loaded."
     ],
     "li": [
       "Identify all the native-code libraries used. Identify all native code libraries that your application uses. Look for the System.loadLibrary andSystem.load method calls in your application to determine which libraries are loaded.",
       "Verify that location of libraries is not revealed. Once you have identified your application's native libraries, ensure that the location is only known by the application and its administrators. Verify that your application does not output any exceptions, errors, messages or content that could reveal the location of the native libraries.",
       "Ensure that strict permissions are enforced. Verify that your application's native libraries can be accessed only by your application and its administrators. Additionally, ensure that your application only has read access to its native libraries.",
       "Verify that users cannot directly specify what libraries are to be loaded. Verify that no user input is used as an argument to System.loadLibrary or System.load.",
-      "Review your application's security policy. Identify if your application's security policy has provided the appropriate FilePermission and RuntimePermission entries to allow your application to load the necessary native libraries. The following examples illustrate the permissions necessary for your application to load specific libraries:\r\n      \r\n        \r\n          \r\n            Windows: Loading the library myapp.dll in a Windows environment would require the following permissions:\r\n          grant codeBase \"file:e:/myapp/bin/-\"{  permission java.io.FilePermission \"e:/myapp/lib/myapp.dll\", \"read\";  permission java.lang.RuntimePermission \"loadLibrary.myapp\";  permission java.util.PropertyPermission \"user.dir\", \"read\";};\r\n        \r\n        \r\n          \r\n            Linux: If your application is Linux based, it would require the following permissions to load the library libmyapp.so:\r\n          grant codeBase \"file:/myapp/bin/-\"{  permission java.io.FilePermission \"/myapp/lib/libmyapp.so\", \"read\";  permission java.lang.RuntimePermission \"loadLibrary.myapp\";  permission java.util.PropertyPermission \"user.dir\", \"read\";};",
-      "Windows: Loading the library myapp.dll in a Windows environment would require the following permissions:\r\n          grant codeBase \"file:e:/myapp/bin/-\"{  permission java.io.FilePermission \"e:/myapp/lib/myapp.dll\", \"read\";  permission java.lang.RuntimePermission \"loadLibrary.myapp\";  permission java.util.PropertyPermission \"user.dir\", \"read\";};",
-      "Linux: If your application is Linux based, it would require the following permissions to load the library libmyapp.so:\r\n          grant codeBase \"file:/myapp/bin/-\"{  permission java.io.FilePermission \"/myapp/lib/libmyapp.so\", \"read\";  permission java.lang.RuntimePermission \"loadLibrary.myapp\";  permission java.util.PropertyPermission \"user.dir\", \"read\";};",
-      "Verify your application's library path. Verify that your application's library path is specified at runtime using the -Djava.library.path flag. Make sure to use absolute paths instead of relative paths. Example:\r\n      java -Djava.security.manager -Djava.security.policy=myapp.policy-Djava.library.path=/myapp/lib myapp",
+      "Review your application's security policy. Identify if your application's security policy has provided the appropriate FilePermission and RuntimePermission entries to allow your application to load the necessary native libraries. The following examples illustrate the permissions necessary for your application to load specific libraries:\n      \n        \n          \n            Windows: Loading the library myapp.dll in a Windows environment would require the following permissions:\n          grant codeBase \"file:e:/myapp/bin/-\"{  permission java.io.FilePermission \"e:/myapp/lib/myapp.dll\", \"read\";  permission java.lang.RuntimePermission \"loadLibrary.myapp\";  permission java.util.PropertyPermission \"user.dir\", \"read\";};\n        \n        \n          \n            Linux: If your application is Linux based, it would require the following permissions to load the library libmyapp.so:\n          grant codeBase \"file:/myapp/bin/-\"{  permission java.io.FilePermission \"/myapp/lib/libmyapp.so\", \"read\";  permission java.lang.RuntimePermission \"loadLibrary.myapp\";  permission java.util.PropertyPermission \"user.dir\", \"read\";};",
+      "Windows: Loading the library myapp.dll in a Windows environment would require the following permissions:\n          grant codeBase \"file:e:/myapp/bin/-\"{  permission java.io.FilePermission \"e:/myapp/lib/myapp.dll\", \"read\";  permission java.lang.RuntimePermission \"loadLibrary.myapp\";  permission java.util.PropertyPermission \"user.dir\", \"read\";};",
+      "Linux: If your application is Linux based, it would require the following permissions to load the library libmyapp.so:\n          grant codeBase \"file:/myapp/bin/-\"{  permission java.io.FilePermission \"/myapp/lib/libmyapp.so\", \"read\";  permission java.lang.RuntimePermission \"loadLibrary.myapp\";  permission java.util.PropertyPermission \"user.dir\", \"read\";};",
+      "Verify your application's library path. Verify that your application's library path is specified at runtime using the -Djava.library.path flag. Make sure to use absolute paths instead of relative paths. Example:\n      java -Djava.security.manager -Djava.security.policy=myapp.policy-Djava.library.path=/myapp/lib myapp",
       "Check for library loading mistakes. If your application enforces a security policy, ensure that your application loads its libraries using the System.loadLibrary method. Otherwise, use System.load. Be sure to verify the canonical path of the library before using System.load.",
       "Avoid disclosing location of libraries to the client. The location of your application's dynamically loaded libraries should be only known to your application and its administrators. Avoid disclosing the location of the libraries to the client by careful use of exception handling.",
       "Set appropriate file permissions. Set the filesystem permissions so that only your application and its administrators have access to the dynamically loaded libraries.",
@@ -2450,10 +2374,7 @@
       "For more information about the security issues that JNI introduces, see: Unsafe JNI from OWASP.",
       "Do Not Utilize Functionality Through JNI if Java Already Supports It",
       "Minimize the Number of Times Language Boundaries are Crossed",
-      "Validate All Data Passed Between Native and Java Code",
-      "Protect Libraries Loaded Through JNI",
       "Java Supported Functionality Is Not Utilized Through JNI",
-      "The Number of Times Language Boundaries Are Crossed Is Minimized",
       "All Data Passed Between Native and Java Code Is Validated",
       "Libraries Loaded Through JNI Are Protected"
     ],
@@ -2487,10 +2408,10 @@
       "System.load"
     ],
     "ul": [
-      "Windows: Loading the library myapp.dll in a Windows environment would require the following permissions:\r\n          grant codeBase \"file:e:/myapp/bin/-\"{  permission java.io.FilePermission \"e:/myapp/lib/myapp.dll\", \"read\";  permission java.lang.RuntimePermission \"loadLibrary.myapp\";  permission java.util.PropertyPermission \"user.dir\", \"read\";};\r\n        \r\n        \r\n          \r\n            Linux: If your application is Linux based, it would require the following permissions to load the library libmyapp.so:\r\n          grant codeBase \"file:/myapp/bin/-\"{  permission java.io.FilePermission \"/myapp/lib/libmyapp.so\", \"read\";  permission java.lang.RuntimePermission \"loadLibrary.myapp\";  permission java.util.PropertyPermission \"user.dir\", \"read\";};",
+      "Windows: Loading the library myapp.dll in a Windows environment would require the following permissions:\n          grant codeBase \"file:e:/myapp/bin/-\"{  permission java.io.FilePermission \"e:/myapp/lib/myapp.dll\", \"read\";  permission java.lang.RuntimePermission \"loadLibrary.myapp\";  permission java.util.PropertyPermission \"user.dir\", \"read\";};\n        \n        \n          \n            Linux: If your application is Linux based, it would require the following permissions to load the library libmyapp.so:\n          grant codeBase \"file:/myapp/bin/-\"{  permission java.io.FilePermission \"/myapp/lib/libmyapp.so\", \"read\";  permission java.lang.RuntimePermission \"loadLibrary.myapp\";  permission java.util.PropertyPermission \"user.dir\", \"read\";};",
       "For more information about the security issues that JNI introduces, see: Unsafe JNI from OWASP.",
-      "Do Not Utilize Functionality Through JNI if Java Already Supports It\r\n    \r\n    \r\n      Minimize the Number of Times Language Boundaries are Crossed\r\n    \r\n    \r\n      Validate All Data Passed Between Native and Java Code\r\n    \r\n    \r\n      Protect Libraries Loaded Through JNI",
-      "Java Supported Functionality Is Not Utilized Through JNI\r\n    \r\n    \r\n      The Number of Times Language Boundaries Are Crossed Is Minimized\r\n    \r\n    \r\n      All Data Passed Between Native and Java Code Is Validated\r\n    \r\n    \r\n      Libraries Loaded Through JNI Are Protected"
+      "Do Not Utilize Functionality Through JNI if Java Already Supports It\n    \n    \n      Minimize the Number of Times Language Boundaries are Crossed",
+      "Java Supported Functionality Is Not Utilized Through JNI\n    \n    \n      All Data Passed Between Native and Java Code Is Validated\n    \n    \n      Libraries Loaded Through JNI Are Protected"
     ],
     "pre": [
       "grant codeBase \"file:e:/myapp/bin/-\"{  permission java.io.FilePermission \"e:/myapp/lib/myapp.dll\", \"read\";  permission java.lang.RuntimePermission \"loadLibrary.myapp\";  permission java.util.PropertyPermission \"user.dir\", \"read\";};",
@@ -2529,10 +2450,7 @@
       "Unsafe JNI",
       "Do Not Utilize Functionality Through JNI if Java Already Supports It",
       "Minimize the Number of Times Language Boundaries are Crossed",
-      "Validate All Data Passed Between Native and Java Code",
-      "Protect Libraries Loaded Through JNI",
       "Java Supported Functionality Is Not Utilized Through JNI",
-      "The Number of Times Language Boundaries Are Crossed Is Minimized",
       "All Data Passed Between Native and Java Code Is Validated",
       "Libraries Loaded Through JNI Are Protected"
     ]
@@ -2551,20 +2469,8 @@
       "text": "Minimize the Number of Times Language Boundaries are Crossed"
     },
     {
-      "href": "/article/946a5edb-e8f8-4365-8675-b8a5032c201b",
-      "text": "Validate All Data Passed Between Native and Java Code"
-    },
-    {
-      "href": "/article/43e09871-01a1-4b24-af9f-31e275b91b2f",
-      "text": "Protect Libraries Loaded Through JNI"
-    },
-    {
       "href": "/article/5b207f0a-b17d-42e3-813f-8ac255b3e1bb",
       "text": "Java Supported Functionality Is Not Utilized Through JNI"
-    },
-    {
-      "href": "/article/24e64319-c897-4c27-bfd5-d721b5cdad3c",
-      "text": "The Number of Times Language Boundaries Are Crossed Is Minimized"
     },
     {
       "href": "/article/a61487db-d1e1-4304-89b1-44bb8c88b1e3",
@@ -2575,5 +2481,5 @@
       "text": "Libraries Loaded Through JNI Are Protected"
     }
   ],
-  "html": "<h1>What to Check For</h1>\r\n  <p>Ensure that libraries loaded through the Java Native Interface are protected.</p>\r\n  <h1>Why</h1>\r\n  <p>Loading libraries through JNI can be dangerous as it may allow arbitrary code to be loaded inside your application's process space.</p>\r\n  <h1>How to Check</h1>\r\n  <p>Follow these steps to ensure that your application's native-code libraries are protected:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Identify all the native-code libraries used</strong>. Identify all native code libraries that your application uses. Look for the <em>System.loadLibrary</em> and<em><strong></strong>System.load</em> method calls in your application to determine which libraries are loaded.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Verify that location of libraries is not revealed. </strong>Once you have identified your application's native libraries, ensure that the location is only known by the application and its administrators. Verify that your application does not output any exceptions, errors, messages or content that could reveal the location of the native libraries.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Ensure that strict permissions are enforced. </strong>Verify that your application's native libraries can be accessed only by your application and its administrators. Additionally, ensure that your application only has read access to its native libraries.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Verify that users cannot directly specify what libraries are to be loaded. </strong>Verify that no user input is used as an argument to <em>System.loadLibrary</em> or <em>System.load</em>.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Review your application's security policy. </strong>Identify if your application's security policy has provided the appropriate <em>FilePermission</em> and <em>RuntimePermission</em> entries to allow your application to load the necessary native libraries. The following examples illustrate the permissions necessary for your application to load specific libraries:</p>\r\n      <ul>\r\n        <li>\r\n          <p>\r\n            <strong>Windows:</strong> Loading the library myapp.dll in a Windows environment would require the following permissions:</p>\r\n          <pre>grant codeBase \"file:e:/myapp/bin/-\"<br />{<br />  permission java.io.FilePermission \"e:/myapp/lib/myapp.dll\", \"read\";<br />  permission java.lang.RuntimePermission \"loadLibrary.myapp\";<br />  permission java.util.PropertyPermission \"user.dir\", \"read\";<br />};</pre>\r\n        </li>\r\n        <li>\r\n          <p>\r\n            <strong>Linux:</strong> If your application is Linux based, it would require the following permissions to load the library<em> libmyapp.so</em>:</p>\r\n          <pre>grant codeBase \"file:/myapp/bin/-\"<br />{<br />  permission java.io.FilePermission \"/myapp/lib/libmyapp.so\", \"read\";<br />  permission java.lang.RuntimePermission \"loadLibrary.myapp\";<br />  permission java.util.PropertyPermission \"user.dir\", \"read\";<br />};</pre>\r\n        </li>\r\n      </ul>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Verify your application's library path. </strong>Verify that your application's library path is specified at runtime using the <em>-Djava.library.path</em> flag. Make sure to use absolute paths instead of relative paths.&nbsp;Example:</p>\r\n      <pre>java<br /> -Djava.security.manager<br /> -Djava.security.policy=myapp.policy<br /><strong>-Djava.library.path=/myapp/lib</strong> myapp</pre>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Check for library loading mistakes. </strong>If your application enforces a security policy, ensure that your application loads its libraries using the <em>System.loadLibrary</em> method. Otherwise, use <em>System.load</em>. Be sure to verify the canonical path of the library before using <em>System.load</em>.</p>\r\n    </li>\r\n  </ol>\r\n  <h1>How to Fix</h1>\r\n  <p>To protect libraries loaded through JNI:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Avoid disclosing location of libraries to the client. </strong>The location of your application's dynamically loaded libraries should be only known to your application and its administrators. Avoid disclosing the location of the libraries to the client by&nbsp;careful use of&nbsp;exception handling. <br /></p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Set appropriate file permissions. </strong>Set the filesystem permissions so that only your application and its administrators have access to&nbsp;the dynamically loaded libraries.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Be careful with user input. </strong>Do not allow your application's users to specify either directly or indirectly which libraries are to be loaded.</p>\r\n    </li>\r\n  </ol>\r\n  <h1>Problem Example</h1>\r\n  <p>The following segment illustrates the contents of the application's lib directory. The dynamically loaded library does not have the proper permissions set and can be overwritten by any user that has local access to the server. This allows&nbsp;a user to execute arbitrary code inside the process space of the application.</p>\r\n  <blockquote>\r\n    <pre>myapp@server lib$ ls -la<br />drwxrwxrwx   2 myapp users    80 2013-10-06 15:20 .<br />drwxr-xr-x  63 myapp users  4808 2013-10-06 15:20 ..<br />-rwxrwxrwx   1 myapp users  8384 2013-10-06 15:20 myapplib2.so</pre>\r\n  </blockquote>\r\n  <h1>Solution Example</h1>\r\n  <p>The following segment illustrates the contents of the application's lib directory. The dynamically loaded library has the proper permissions set; therefore, only the administrators can modify the contents of the library.</p>\r\n  <blockquote>\r\n    <pre>myapp@server lib$ ls -la<br />dr-xr-xr-x   2 myapp users    80 2013-10-06 15:20 .<br />drwxr-xr-x  63 myapp users  4808 2013-10-06 15:20 ..<br />-r-xr-xr-x   1 myapp users  8384 2013-10-06 15:20 myapplib2.so</pre>\r\n  </blockquote>\r\n  <h1>Additional Resources</h1>\r\n  <ul>\r\n    <li>For more information about the security issues that JNI introduces, see: <a href=\"http://www.owasp.org/index.php/Unsafe_JNI\">Unsafe JNI</a> from OWASP. </li>\r\n  </ul>\r\n  <h1>Unmanaged Code Guidelines</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/351b69c8-b40b-4c13-899e-a8399b85a0ea\">Do Not Utilize Functionality Through JNI if Java Already Supports It</a>\r\n    </li>\r\n    <li>\r\n      <a href=\"/article/70b53138-faf7-410a-a966-16f3088fca63\">Minimize the Number of Times Language Boundaries are Crossed</a>\r\n    </li>\r\n    <li>\r\n      <a href=\"/article/946a5edb-e8f8-4365-8675-b8a5032c201b\">Validate All Data Passed Between Native and Java Code</a>\r\n    </li>\r\n    <li>\r\n      <a href=\"/article/43e09871-01a1-4b24-af9f-31e275b91b2f\">Protect Libraries Loaded Through JNI</a>\r\n    </li>\r\n  </ul>\r\n  <h1>Unmanaged Code Checklists</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/5b207f0a-b17d-42e3-813f-8ac255b3e1bb\">Java Supported Functionality Is Not Utilized Through JNI</a>\r\n    </li>\r\n    <li>\r\n      <a href=\"/article/24e64319-c897-4c27-bfd5-d721b5cdad3c\">The Number of Times Language Boundaries Are Crossed Is Minimized</a>\r\n    </li>\r\n    <li>\r\n      <a href=\"/article/a61487db-d1e1-4304-89b1-44bb8c88b1e3\">All Data Passed Between Native and Java Code Is Validated</a>\r\n    </li>\r\n    <li>\r\n      <a href=\"/article/d775ead4-8413-4736-a40f-92c7e0231e5b\">Libraries Loaded Through JNI Are Protected</a>\r\n    </li>\r\n  </ul>"
+  "html": "<h1>What to Check For</h1>\n  <p>Ensure that libraries loaded through the Java Native Interface are protected.</p>\n  <h1>Why</h1>\n  <p>Loading libraries through JNI can be dangerous as it may allow arbitrary code to be loaded inside your application's process space.</p>\n  <h1>How to Check</h1>\n  <p>Follow these steps to ensure that your application's native-code libraries are protected:</p>\n  <ol>\n    <li>\n      <p>\n        <strong>Identify all the native-code libraries used</strong>. Identify all native code libraries that your application uses. Look for the <em>System.loadLibrary</em> and<em><strong></strong>System.load</em> method calls in your application to determine which libraries are loaded.</p>\n    </li>\n    <li>\n      <p>\n        <strong>Verify that location of libraries is not revealed. </strong>Once you have identified your application's native libraries, ensure that the location is only known by the application and its administrators. Verify that your application does not output any exceptions, errors, messages or content that could reveal the location of the native libraries.</p>\n    </li>\n    <li>\n      <p>\n        <strong>Ensure that strict permissions are enforced. </strong>Verify that your application's native libraries can be accessed only by your application and its administrators. Additionally, ensure that your application only has read access to its native libraries.</p>\n    </li>\n    <li>\n      <p>\n        <strong>Verify that users cannot directly specify what libraries are to be loaded. </strong>Verify that no user input is used as an argument to <em>System.loadLibrary</em> or <em>System.load</em>.</p>\n    </li>\n    <li>\n      <p>\n        <strong>Review your application's security policy. </strong>Identify if your application's security policy has provided the appropriate <em>FilePermission</em> and <em>RuntimePermission</em> entries to allow your application to load the necessary native libraries. The following examples illustrate the permissions necessary for your application to load specific libraries:</p>\n      <ul>\n        <li>\n          <p>\n            <strong>Windows:</strong> Loading the library myapp.dll in a Windows environment would require the following permissions:</p>\n          <pre>grant codeBase \"file:e:/myapp/bin/-\"<br />{<br />  permission java.io.FilePermission \"e:/myapp/lib/myapp.dll\", \"read\";<br />  permission java.lang.RuntimePermission \"loadLibrary.myapp\";<br />  permission java.util.PropertyPermission \"user.dir\", \"read\";<br />};</pre>\n        </li>\n        <li>\n          <p>\n            <strong>Linux:</strong> If your application is Linux based, it would require the following permissions to load the library<em> libmyapp.so</em>:</p>\n          <pre>grant codeBase \"file:/myapp/bin/-\"<br />{<br />  permission java.io.FilePermission \"/myapp/lib/libmyapp.so\", \"read\";<br />  permission java.lang.RuntimePermission \"loadLibrary.myapp\";<br />  permission java.util.PropertyPermission \"user.dir\", \"read\";<br />};</pre>\n        </li>\n      </ul>\n    </li>\n    <li>\n      <p>\n        <strong>Verify your application's library path. </strong>Verify that your application's library path is specified at runtime using the <em>-Djava.library.path</em> flag. Make sure to use absolute paths instead of relative paths.&nbsp;Example:</p>\n      <pre>java<br /> -Djava.security.manager<br /> -Djava.security.policy=myapp.policy<br /><strong>-Djava.library.path=/myapp/lib</strong> myapp</pre>\n    </li>\n    <li>\n      <p>\n        <strong>Check for library loading mistakes. </strong>If your application enforces a security policy, ensure that your application loads its libraries using the <em>System.loadLibrary</em> method. Otherwise, use <em>System.load</em>. Be sure to verify the canonical path of the library before using <em>System.load</em>.</p>\n    </li>\n  </ol>\n  <h1>How to Fix</h1>\n  <p>To protect libraries loaded through JNI:</p>\n  <ol>\n    <li>\n      <p>\n        <strong>Avoid disclosing location of libraries to the client. </strong>The location of your application's dynamically loaded libraries should be only known to your application and its administrators. Avoid disclosing the location of the libraries to the client by&nbsp;careful use of&nbsp;exception handling. <br /></p>\n    </li>\n    <li>\n      <p>\n        <strong>Set appropriate file permissions. </strong>Set the filesystem permissions so that only your application and its administrators have access to&nbsp;the dynamically loaded libraries.</p>\n    </li>\n    <li>\n      <p>\n        <strong>Be careful with user input. </strong>Do not allow your application's users to specify either directly or indirectly which libraries are to be loaded.</p>\n    </li>\n  </ol>\n  <h1>Problem Example</h1>\n  <p>The following segment illustrates the contents of the application's lib directory. The dynamically loaded library does not have the proper permissions set and can be overwritten by any user that has local access to the server. This allows&nbsp;a user to execute arbitrary code inside the process space of the application.</p>\n  <blockquote>\n    <pre>myapp@server lib$ ls -la<br />drwxrwxrwx   2 myapp users    80 2013-10-06 15:20 .<br />drwxr-xr-x  63 myapp users  4808 2013-10-06 15:20 ..<br />-rwxrwxrwx   1 myapp users  8384 2013-10-06 15:20 myapplib2.so</pre>\n  </blockquote>\n  <h1>Solution Example</h1>\n  <p>The following segment illustrates the contents of the application's lib directory. The dynamically loaded library has the proper permissions set; therefore, only the administrators can modify the contents of the library.</p>\n  <blockquote>\n    <pre>myapp@server lib$ ls -la<br />dr-xr-xr-x   2 myapp users    80 2013-10-06 15:20 .<br />drwxr-xr-x  63 myapp users  4808 2013-10-06 15:20 ..<br />-r-xr-xr-x   1 myapp users  8384 2013-10-06 15:20 myapplib2.so</pre>\n  </blockquote>\n  <h1>Additional Resources</h1>\n  <ul>\n    <li>For more information about the security issues that JNI introduces, see: <a href=\"http://www.owasp.org/index.php/Unsafe_JNI\">Unsafe JNI</a> from OWASP. </li>\n  </ul>\n  <h1>Unmanaged Code Guidelines</h1>\n  <ul>\n    <li>\n      <a href=\"/article/351b69c8-b40b-4c13-899e-a8399b85a0ea\">Do Not Utilize Functionality Through JNI if Java Already Supports It</a>\n    </li>\n    <li>\n      <a href=\"/article/70b53138-faf7-410a-a966-16f3088fca63\">Minimize the Number of Times Language Boundaries are Crossed</a>\n    </li>\n  </ul>\n  <h1>Unmanaged Code Checklists</h1>\n  <ul>\n    <li>\n      <a href=\"/article/5b207f0a-b17d-42e3-813f-8ac255b3e1bb\">Java Supported Functionality Is Not Utilized Through JNI</a>\n    </li>\n    <li>\n      <a href=\"/article/a61487db-d1e1-4304-89b1-44bb8c88b1e3\">All Data Passed Between Native and Java Code Is Validated</a>\n    </li>\n    <li>\n      <a href=\"/article/d775ead4-8413-4736-a40f-92c7e0231e5b\">Libraries Loaded Through JNI Are Protected</a>\n    </li>\n  </ul>"
 }

@@ -1,6 +1,6 @@
 {
   "id": "85b8f1d5-06b6-4cf4-94af-38001b2fe816",
-  "checksum": "0fb73162bc56ae757857e0e9ba0d16943d1b5348",
+  "checksum": "8a21f5bbc490ebc0c924f063841e06c48df2074d",
   "words": {
     "what": [
       "h1"
@@ -132,8 +132,7 @@
     "in": [
       "p"
     ],
-    "system": [
-      "p",
+    "system&nbsp;": [
       "p"
     ],
     "an": [
@@ -170,6 +169,9 @@
     "access": [
       "p"
     ],
+    "system": [
+      "p"
+    ],
     "than": [
       "p"
     ],
@@ -177,7 +179,7 @@
       "p",
       "p"
     ],
-    "have": [
+    "have&nbsp;": [
       "p"
     ],
     "encrypted": [
@@ -268,28 +270,28 @@
     "rolemanager": [
       "pre"
     ],
-    "enabled=\"true\"\tcacherolesincookie=\"true\"": [
+    "enabled=\"true\"&#9cacherolesincookie=\"true\"": [
       "pre"
     ],
-    "cookiename=\"asproles\"": [
+    "&#9cookiename=\".asproles\"": [
       "pre"
     ],
-    "cookietimeout=\"30\"": [
+    "&#9cookietimeout=\"30\"": [
       "pre"
     ],
-    "cookiepath=\"/\"": [
+    "&#9cookiepath=\"/\"": [
       "pre"
     ],
-    "cookierequiressl=\"true\"": [
+    "&#9cookierequiressl=\"true\"": [
       "pre"
     ],
-    "cookieslidingexpiration=\"true\"": [
+    "&#9cookieslidingexpiration=\"true\"": [
       "pre"
     ],
-    "cookieprotection=\"all\"": [
+    "&#9cookieprotection=\"all\"": [
       "pre"
     ],
-    "createpersistentcookie=\"false\"</rolemanager>": [
+    "&#9createpersistentcookie=\"false\"></rolemanager>": [
       "pre"
     ],
     "adapted": [
@@ -309,6 +311,9 @@
     ],
     "guidance": [
       "p"
+    ],
+    "sink]": [
+      "title"
     ]
   },
   "tags": {
@@ -320,7 +325,7 @@
     ],
     "p": [
       "Protect authorization cookies from tampering and reading.",
-      "If a user can alter their authorization cookie, they can potentially alter the roles they are allowed to take in the system.  Reading an authorization cookie may allow a user to forge a working authorization cookie, again allowing them to gain more access to the system than they should have.  If cookies are encrypted and signed, and the signature and cookie contents checked for correctness and expiration every time they're used, both tampering and reading are prevented.",
+      "If a user can alter their authorization cookie, they can potentially alter the roles they are allowed to take in the system.&nbsp; Reading an authorization cookie may allow a user to forge a working authorization cookie, again allowing them to gain more access to the system than they should have.&nbsp; If cookies are encrypted and signed, and the signature and cookie contents checked for correctness and expiration every time they're used, both tampering and reading are prevented.",
       "All systems which use authorization cookies should protect them against reading and modification.",
       "The following example shows a <roleManager> element configured to protect the authorization cookie.",
       "Adapted from Microsoft patterns & practices guidance."
@@ -329,7 +334,7 @@
       "<roleManager>"
     ],
     "pre": [
-      "<roleManager enabled=\"true\"\tcacheRolesInCookie=\"true\"   \tcookieName=\".ASPROLES\"             \tcookieTimeout=\"30\"             \tcookiePath=\"/\"             \tcookieRequireSSL=\"true\"             \tcookieSlidingExpiration=\"true\"             \tcookieProtection=\"All\"              \tcreatePersistentCookie=\"false\"></roleManager>"
+      "<roleManager enabled=\"true\"&#9;cacheRolesInCookie=\"true\"   &#9;cookieName=\".ASPROLES\"             &#9;cookieTimeout=\"30\"             &#9;cookiePath=\"/\"             &#9;cookieRequireSSL=\"true\"             &#9;cookieSlidingExpiration=\"true\"             &#9;cookieProtection=\"All\"              &#9;createPersistentCookie=\"false\"></roleManager>"
     ],
     "br": [
       "",
@@ -347,5 +352,5 @@
     ]
   },
   "links": [],
-  "html": "<h1>What to Do</h1>\r\n  <p>Protect authorization cookies from tampering and reading. </p>\r\n  <h1>Why</h1>\r\n  <p>If a user can alter their authorization cookie, they can potentially alter the roles they are allowed to take in the system.&nbsp; Reading an authorization cookie may allow a user to forge a working authorization cookie, again allowing them to gain more access to the system than they should have.&nbsp; If cookies are encrypted and signed, and the signature and cookie contents checked for correctness and expiration every time they're used, both tampering and reading are prevented. </p>\r\n  <h1>When</h1>\r\n  <p>All systems which use authorization cookies should protect them against reading and modification. </p>\r\n  <h1>How</h1>\r\n  <p>The following example shows a <b>&lt;roleManager&gt;</b> element configured to protect the authorization cookie. </p>\r\n  <pre>&lt;roleManager enabled=\"true\"<br />&#9;cacheRolesInCookie=\"true\"   <br />&#9;cookieName=\".ASPROLES\"             <br />&#9;cookieTimeout=\"30\"             <br />&#9;cookiePath=\"/\"             <br />&#9;cookieRequireSSL=\"true\"             <br />&#9;cookieSlidingExpiration=\"true\"             <br />&#9;cookieProtection=\"All\"              <br />&#9;createPersistentCookie=\"false\"&gt;<br />&lt;/roleManager&gt;</pre>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance. </p>"
+  "html": "<h1>What to Do</h1>\n  <p>Protect authorization cookies from tampering and reading. </p>\n  <h1>Why</h1>\n  <p>If a user can alter their authorization cookie, they can potentially alter the roles they are allowed to take in the system.&amp;nbsp; Reading an authorization cookie may allow a user to forge a working authorization cookie, again allowing them to gain more access to the system than they should have.&amp;nbsp; If cookies are encrypted and signed, and the signature and cookie contents checked for correctness and expiration every time they're used, both tampering and reading are prevented. </p>\n  <h1>When</h1>\n  <p>All systems which use authorization cookies should protect them against reading and modification. </p>\n  <h1>How</h1>\n  <p>The following example shows a <b>&lt;roleManager&gt;</b> element configured to protect the authorization cookie. </p>\n  <pre>&lt;roleManager enabled=\"true\"<br />&amp;#9;cacheRolesInCookie=\"true\"   <br />&amp;#9;cookieName=\".ASPROLES\"             <br />&amp;#9;cookieTimeout=\"30\"             <br />&amp;#9;cookiePath=\"/\"             <br />&amp;#9;cookieRequireSSL=\"true\"             <br />&amp;#9;cookieSlidingExpiration=\"true\"             <br />&amp;#9;cookieProtection=\"All\"              <br />&amp;#9;createPersistentCookie=\"false\"&gt;<br />&lt;/roleManager&gt;</pre>\n  <hr />\n  <p>Adapted from Microsoft patterns &amp; practices guidance. </p>"
 }

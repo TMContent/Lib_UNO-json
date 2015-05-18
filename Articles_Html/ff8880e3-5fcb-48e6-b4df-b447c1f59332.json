@@ -1,6 +1,6 @@
 {
   "id": "ff8880e3-5fcb-48e6-b4df-b447c1f59332",
-  "checksum": "77e2fd729f0b793aadc47886aa336b99abd90dee",
+  "checksum": "375f86b4f4c80878e8c87b1d5516e042fa974cab",
   "words": {
     "description": [
       "h1"
@@ -272,6 +272,9 @@
     "guidance": [
       "p"
     ],
+    "sink]": [
+      "title"
+    ],
     "how": [
       "title"
     ],
@@ -299,5 +302,5 @@
     ]
   },
   "links": [],
-  "html": "<h1>Description</h1>\r\n  <p>If your application throws an exception, make sure that it fails without disclosing sensitive information, denies access, and is not left in an unsecured state. Do not log sensitive or private data, such as passwords, that could be compromised. </p>\r\n  <p>Do not reveal internal system or application details, such as stack traces, SQL statements, and table or database names. Make sure that this type of information is not allowed to propagate to users of your application or beyond your current trust boundary. A malicious user could use system-level diagnostic information to learn about your application and probe for weaknesses to exploit in the future.</p>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
+  "html": "<h1>Description</h1>\n  <p>If your application throws an exception, make sure that it fails without disclosing sensitive information, denies access, and is not left in an unsecured state. Do not log sensitive or private data, such as passwords, that could be compromised. </p>\n  <p>Do not reveal internal system or application details, such as stack traces, SQL statements, and table or database names. Make sure that this type of information is not allowed to propagate to users of your application or beyond your current trust boundary. A malicious user could use system-level diagnostic information to learn about your application and probe for weaknesses to exploit in the future.</p>\n  <hr />\n  <p>Adapted from Microsoft patterns &amp; practices guidance.</p>"
 }

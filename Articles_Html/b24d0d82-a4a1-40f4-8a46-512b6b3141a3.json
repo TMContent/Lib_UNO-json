@@ -1,6 +1,6 @@
 {
   "id": "b24d0d82-a4a1-40f4-8a46-512b6b3141a3",
-  "checksum": "40008dc1827cf235409b9d93ab07bfa3358bb3fc",
+  "checksum": "16b9f2dca06bf7a689896281a731d2b344745085",
   "words": {
     "80": [
       "p",
@@ -258,5 +258,5 @@
       "text": "How To: Use IPSec for Filtering Ports and Authentication"
     }
   ],
-  "html": "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>\r\n      <div>Web Application</div>\r\n    </li>\r\n  </ul>\r\n  <h1>What to Check For</h1>\r\n  <p>Check to ensure that access to Internet-facing interfaces are restricted to port 80 for HTTP and port 443 for HTTPS (SSL).</p>\r\n  <p />\r\n  <h1>How to Fix</h1>\r\n  <p>Limit inbound traffic to port 80 for HTTP and port 443 for HTTPS (SSL).</p>\r\n  <h1>Additional Resources</h1>\r\n  <ul>\r\n    <li>For outbound (Internet-facing) NICs, use IPSec or TCP filtering. For more information, see \"<a href=\"http://msdn2.microsoft.com/en-us/library/aa302366.aspx\">How To: Use&nbsp;IPSec&nbsp;for&nbsp;Filtering&nbsp;Ports and&nbsp;Authentication</a>\".</li>\r\n  </ul>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
+  "html": "<h1>Applies to</h1>\n  <ul>\n    <li>\n      <div>Web Application</div>\n    </li>\n  </ul>\n  <h1>What to Check For</h1>\n  <p>Check to ensure that access to Internet-facing interfaces are restricted to port 80 for HTTP and port 443 for HTTPS (SSL).</p>\n  <p />\n  <h1>How to Fix</h1>\n  <p>Limit inbound traffic to port 80 for HTTP and port 443 for HTTPS (SSL).</p>\n  <h1>Additional Resources</h1>\n  <ul>\n    <li>For outbound (Internet-facing) NICs, use IPSec or TCP filtering. For more information, see \"<a href=\"http://msdn2.microsoft.com/en-us/library/aa302366.aspx\">How To: Use&nbsp;IPSec&nbsp;for&nbsp;Filtering&nbsp;Ports and&nbsp;Authentication</a>\".</li>\n  </ul>\n  <hr />\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
 }

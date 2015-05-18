@@ -1,10 +1,7 @@
 {
   "id": "da387bde-606c-4edb-9b11-950e238e237b",
-  "checksum": "042dca0219cb2dca5e0df86c20c2a99ad0222a33",
+  "checksum": "a126ed70220d3e56dbd86c861f4866fe8abb729e",
   "words": {
-    "0": [
-      "pre"
-    ],
     "1": [
       "p",
       "p",
@@ -973,9 +970,7 @@
     ],
     "html": [
       "p",
-      "p",
-      "div",
-      "pre"
+      "p"
     ],
     "systemtext.regularexpressions.regex": [
       "p",
@@ -1184,8 +1179,6 @@
       "p",
       "p",
       "p",
-      "div",
-      "pre",
       "div",
       "table",
       "tbody",
@@ -1809,8 +1802,6 @@
       "div",
       "pre",
       "p",
-      "div",
-      "pre",
       "pre",
       "div",
       "div",
@@ -1843,7 +1834,7 @@
       "tr",
       "td"
     ],
-    "%@": [
+    "&#37;&#64;": [
       "div",
       "pre",
       "div",
@@ -1855,7 +1846,7 @@
       "div",
       "pre"
     ],
-    "%<form": [
+    "&#37><form": [
       "div",
       "pre"
     ],
@@ -1865,13 +1856,8 @@
       "div",
       "pre"
     ],
-    "runat=\"server\"": [
+    "runat=\"server\"&nbsp;&nbsp;&nbsp;": [
       "div",
-      "div",
-      "div",
-      "pre",
-      "pre",
-      "pre",
       "pre"
     ],
     "asp:textbox": [
@@ -1882,7 +1868,7 @@
       "div",
       "pre"
     ],
-    "runat=\"server\"/": [
+    "runat=\"server\"/&nbsp;&nbsp;&nbsp;": [
       "div",
       "pre"
     ],
@@ -1894,13 +1880,16 @@
       "div",
       "pre"
     ],
+    "runat=\"server\"": [
+      "div",
+      "pre",
+      "pre"
+    ],
     "text=\"submit\"": [
       "div",
       "pre"
     ],
-    "/": [
-      "div",
-      "pre",
+    "/&nbsp;&nbsp;&nbsp;": [
       "div",
       "pre"
     ],
@@ -1910,6 +1899,18 @@
     ],
     "id=\"regexpname\"": [
       "div",
+      "pre"
+    ],
+    "runat=\"server\"&nbsp&nbsp;&nbsp;&nbsp;": [
+      "div",
+      "pre"
+    ],
+    "&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+      "div",
+      "div",
+      "div",
+      "pre",
+      "pre",
       "pre"
     ],
     "errormessage=\"this": [
@@ -1947,11 +1948,11 @@
       "div",
       "pre"
     ],
-    "controltovalidate=\"txtname\"": [
+    "controltovalidate=\"txtname\"&nbsp&nbsp;&nbsp;&nbsp;": [
       "div",
       "pre"
     ],
-    "validationexpression=\"^a-za-z'.\\s]{1,40}$\"": [
+    "validationexpression=\"&#94&#91;a-za-z'.\\s&#93;&#123;1,40&#125;&#36;\"": [
       "div",
       "pre"
     ],
@@ -2034,12 +2035,6 @@
     "character": [
       "p",
       "div",
-      "div",
-      "div",
-      "pre",
-      "pre",
-      "pre",
-      "div",
       "table",
       "tbody",
       "tr",
@@ -2051,21 +2046,16 @@
     "constrained": [
       "p"
     ],
-    "^": [
+    "&#94": [
       "h2",
       "p",
       "b",
-      "b",
-      "div",
-      "pre"
+      "b"
     ],
-    "$": [
+    "&#36": [
       "h2",
       "p",
-      "b",
-      "b",
-      "div",
-      "pre"
+      "b"
     ],
     "enclosing": [
       "p"
@@ -2073,7 +2063,7 @@
     "caret": [
       "p"
     ],
-    "^)": [
+    "&#94;)": [
       "p"
     ],
     "dollar": [
@@ -2083,7 +2073,7 @@
       "p",
       "p"
     ],
-    "$)markers": [
+    "&#36;)markers": [
       "p"
     ],
     "ensures": [
@@ -2103,8 +2093,7 @@
       "p"
     ],
     "else": [
-      "p",
-      "pre"
+      "p"
     ],
     "matches": [
       "p",
@@ -2168,6 +2157,9 @@
     ],
     "filter": [
       "p"
+    ],
+    "&#36)": [
+      "b"
     ],
     "means": [
       "p",
@@ -2278,7 +2270,7 @@
       "div",
       "pre"
     ],
-    "regex@\"^[a-za-z'.]{1,40}$\");response.write(reg.ismatch(txtname.text));//": [
+    "regex&#64;\"&#94;&#91;a-za-z'.&#93;&#123;1,40&#125;&#36;\");response.write(reg.ismatch(txtname.text));//": [
       "ol",
       "li",
       "div",
@@ -2297,19 +2289,25 @@
       "div",
       "pre"
     ],
-    "!regex.ismatch(txtname.text,": [
+    "&#33;regex.ismatch(txtname.text,": [
       "ol",
       "li",
       "div",
       "pre"
     ],
-    "@\"^a-za-z'.]{1,40}$\")){": [
+    "&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
       "ol",
       "li",
       "div",
       "pre"
     ],
-    "schema}": [
+    "&#64\"&#94;&#91;a-za-z'.&#93;&#123;1,40&#125;&#36;\"))&#123;&nbsp;": [
+      "ol",
+      "li",
+      "div",
+      "pre"
+    ],
+    "schema&#125": [
       "ol",
       "li",
       "div",
@@ -2339,11 +2337,19 @@
     "client-side": [
       "p"
     ],
-    "%": [
+    "&#37>": [
       "div",
       "pre"
     ],
-    "body>": [
+    "html&nbsp;": [
+      "div",
+      "pre"
+    ],
+    "&nbsp;": [
+      "div",
+      "pre"
+    ],
+    "body>&nbsp;&nbsp;&nbsp;": [
       "div",
       "pre"
     ],
@@ -2351,7 +2357,11 @@
       "div",
       "pre"
     ],
-    "action=\"htmlcontrolsaspx\">": [
+    "action=\"htmlcontrolsaspx\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+      "div",
+      "pre"
+    ],
+    "name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
       "div",
       "pre"
     ],
@@ -2363,6 +2373,10 @@
       "div",
       "pre"
     ],
+    "/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+      "div",
+      "pre"
+    ],
     "name=\"submitbtn\"": [
       "div",
       "pre"
@@ -2371,11 +2385,11 @@
       "div",
       "pre"
     ],
-    "value=\"submit\"/": [
+    "value=\"submit\"/&nbsp;&nbsp;&nbsp;": [
       "div",
       "pre"
     ],
-    "/form>": [
+    "/form>&nbsp;": [
       "div",
       "pre"
     ],
@@ -2385,6 +2399,14 @@
     ],
     "script": [
       "pre"
+    ],
+    "&nbsp": [
+      "pre",
+      "div",
+      "table",
+      "tbody",
+      "tr",
+      "td"
     ],
     "void": [
       "pre"
@@ -2398,12 +2420,10 @@
     "eventargs": [
       "pre"
     ],
-    "e": [
+    "e&nbsp;": [
       "pre"
     ],
-    "{": [
-      "pre",
-      "pre",
+    "&#123&nbsp;&nbsp;&nbsp;": [
       "pre"
     ],
     "request.requesttype": [
@@ -2412,34 +2432,55 @@
     "==": [
       "pre"
     ],
-    "\"post\"": [
+    "\"post\"&nbsp;&nbsp;&nbsp;": [
       "pre"
     ],
-    "requestform[\"txtname\"];": [
+    "&#123&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+      "pre"
+    ],
+    "requestform&#91;\"txtname\"&#93;;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
       "pre"
     ],
     "name.length": [
       "pre"
     ],
+    "0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+      "pre"
+    ],
+    "&#123&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+      "pre"
+    ],
     "system.text.regularexpressions.regex.ismatch(name,": [
       "pre"
     ],
-    "\"^a-za-z'.]{1,40}$\"))": [
+    "&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+      "pre"
+    ],
+    "\"&#94&#91;a-za-z'.&#93;&#123;1,40&#125;&#36;\"))&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
       "pre"
     ],
     "responsewrite(\"valid": [
       "pre"
     ],
-    "name\";": [
-      "pre",
+    "name\";&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+      "pre"
+    ],
+    "else&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
       "pre"
     ],
     "responsewrite(\"invalid": [
       "pre"
     ],
-    "}": [
-      "pre",
-      "pre",
+    "name\";&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+      "pre"
+    ],
+    "&#125&nbsp;&nbsp;&nbsp;": [
+      "pre"
+    ],
+    "&#125&nbsp;": [
+      "pre"
+    ],
+    "&#125": [
       "pre"
     ],
     "/script>": [
@@ -2532,7 +2573,11 @@
     "regexoptionsignorepatternwhitespace": [
       "b"
     ],
-    "regex@\"": [
+    "regex&#64;\"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+      "div",
+      "pre"
+    ],
+    "&#94&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
       "div",
       "pre"
     ],
@@ -2542,11 +2587,11 @@
       "pre",
       "pre"
     ],
-    "start": [
+    "start&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
       "div",
       "pre"
     ],
-    "?=.*\\d)": [
+    "?=.&#42;\\d)&nbsp;&nbsp;&nbsp;&nbsp;": [
       "div",
       "pre"
     ],
@@ -2644,7 +2689,15 @@
       "tr",
       "td"
     ],
-    "?=.*[a-z])": [
+    "character&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+      "div",
+      "div",
+      "div",
+      "pre",
+      "pre",
+      "pre"
+    ],
+    "?=.&#42;&#91;a-z&#93;)&nbsp;": [
       "div",
       "div",
       "pre",
@@ -2659,11 +2712,15 @@
       "tr",
       "td"
     ],
-    "{8,10}": [
+    "&#123;8,10&#125;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
       "div",
       "pre"
     ],
-    "\\s": [
+    "length&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+      "div",
+      "pre"
+    ],
+    "\\s&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
       "div",
       "pre"
     ],
@@ -2675,6 +2732,16 @@
       "tbody",
       "tr",
       "td"
+    ],
+    "&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+      "div",
+      "div",
+      "pre",
+      "pre"
+    ],
+    "&#36&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+      "div",
+      "pre"
     ],
     "end\"": [
       "div",
@@ -2711,7 +2778,7 @@
       "tr",
       "th"
     ],
-    "^a-za-z''-'\\s]{1,40}$": [
+    "&#94&#91;a-za-z''-'\\s&#93;&#123;1,40&#125;&#36;": [
       "div",
       "table",
       "tbody",
@@ -2831,7 +2898,7 @@
       "tr",
       "td"
     ],
-    "^\\d{3}-\\d{2}-\\d{4}$": [
+    "&#94\\d&#123;3&#125;-\\d&#123;2&#125;-\\d&#123;4&#125;&#36;": [
       "div",
       "table",
       "tbody",
@@ -2898,28 +2965,28 @@
       "td",
       "td"
     ],
-    "^01]?[-": [
+    "&#94&#91;01&#93;?&#91;-": [
       "div",
       "table",
       "tbody",
       "tr",
       "td"
     ],
-    "]?(\\([2-9]\\d{2}\\)|[2-9]\\d{2})[-": [
+    "&#93;?(\\(&#91;2-9&#93;\\d&#123;2&#125;\\)&#124;&#91;2-9&#93;\\d&#123;2&#125;)&#91;-": [
       "div",
       "table",
       "tbody",
       "tr",
       "td"
     ],
-    "]?\\d{3}[-": [
+    "&#93;?\\d&#123;3&#125;&#91;-": [
       "div",
       "table",
       "tbody",
       "tr",
       "td"
     ],
-    "]?\\d{4}$": [
+    "&#93;?\\d&#123;4&#125;&#36;": [
       "div",
       "table",
       "tbody",
@@ -3014,14 +3081,14 @@
       "td",
       "td"
     ],
-    "^[0-9a-za-z]([-.\\w]*[0-9a-za-z])*@([0-9a-za-z][-\\w]*[0-9a-za-z]\\.)+[a-za-z]{2,9})$": [
+    "&#94(&#91;0-9a-za-z&#93;(&#91;-.\\w&#93;&#42;&#91;0-9a-za-z&#93;)&#42;&#64;(&#91;0-9a-za-z&#93;&#91;-\\w&#93;&#42;&#91;0-9a-za-z&#93;\\.)&#43;&#91;a-za-z&#93;&#123;2,9&#125;)&#36;": [
       "div",
       "table",
       "tbody",
       "tr",
       "td"
     ],
-    "someone@examplecom": [
+    "someone&#64example.com": [
       "div",
       "table",
       "tbody",
@@ -3047,7 +3114,7 @@
       "td",
       "td"
     ],
-    "^ht|f)tp(s?)\\:\\/\\/[0-9a-za-z]([-.\\w]*[0-9a-za-z])*(:(0-9)*)*(\\/?)([a-za-z0-9\\-\\.\\?\\,\\'\\/\\\\\\+&%\\$#_]*)?$": [
+    "&#94(ht&#124;f)tp(s?)\\:\\/\\/&#91;0-9a-za-z&#93;(&#91;-.\\w&#93;&#42;&#91;0-9a-za-z&#93;)&#42;(:(0-9)&#42;)&#42;(\\/?)(&#91;a-za-z0-9\\-\\.\\?\\,\\'\\/\\\\\\&#43;&&#37;\\&#36;#_&#93;&#42;)?&#36;": [
       "div",
       "table",
       "tbody",
@@ -3061,14 +3128,14 @@
       "tr",
       "td"
     ],
-    "^\\d{5}-\\d{4}|\\d{5}|\\d{9})$|^([a-za-z]\\d[a-za-z]": [
+    "&#94(\\d&#123;5&#125;-\\d&#123;4&#125;&#124;\\d&#123;5&#125;&#124;\\d&#123;9&#125;)&#36;&#124;&#94;(&#91;a-za-z&#93;\\d&#91;a-za-z&#93;": [
       "div",
       "table",
       "tbody",
       "tr",
       "td"
     ],
-    "\\da-za-z]\\d)$": [
+    "\\d&#91a-za-z&#93;\\d)&#36;": [
       "div",
       "table",
       "tbody",
@@ -3087,7 +3154,7 @@
       "td",
       "td"
     ],
-    "?!^[0-9]*$)(?!^[a-za-z]*$)^([a-za-z0-9]{8,10})$": [
+    "?&#33;&#94;&#91;0-9&#93;&#42;&#36;)(?&#33;&#94;&#91;a-za-z&#93;&#42;&#36;)&#94;(&#91;a-za-z0-9&#93;&#123;8,10&#125;)&#36;": [
       "div",
       "table",
       "tbody",
@@ -3161,7 +3228,7 @@
       "td",
       "td"
     ],
-    "^\\d+$": [
+    "&#94\\d&#43;&#36;": [
       "div",
       "table",
       "tbody",
@@ -3218,7 +3285,7 @@
       "td",
       "td"
     ],
-    "^\\d+\\.\\d\\d)?$": [
+    "&#94\\d&#43;(\\.\\d\\d)?&#36;": [
       "div",
       "table",
       "tbody",
@@ -3341,7 +3408,7 @@
       "tr",
       "td"
     ],
-    "^-)?\\d+(\\.\\d\\d)?$": [
+    "&#94(-)?\\d&#43;(\\.\\d\\d)?&#36;": [
       "div",
       "table",
       "tbody",
@@ -3381,6 +3448,9 @@
     ],
     "guidance": [
       "p"
+    ],
+    "sink]": [
+      "title"
     ]
   },
   "tags": {
@@ -3402,7 +3472,7 @@
       "If you capture input by using server controls, you can use the RegularExpressionValidator control to validate that input. You can use regular expressions to restrict the range of valid characters, to strip unwanted characters, and to perform length and format checks. You can constrain the input format by defining patterns that the input must match.",
       "The following example shows a RegularExpressionValidator control used to validate a name field.",
       "The regular expression used in the preceding code example constrains an input name field to alphabetic characters (lowercase and uppercase), space characters, the single quotation mark (or apostrophe) for names such as O'Dell, and the period or dot character. In addition, the field length is constrained to 40 characters.",
-      "Enclosing the expression in the caret (^) and dollar sign ($)markers ensures that the expression consists of the desired content and nothing else. A ^ matches the position at the beginning of the input string and a $ matches the position at the end of the input string. If you omit these markers, an attacker could affix malicious input to the beginning or end of valid content and bypass your filter.",
+      "Enclosing the expression in the caret (&#94;) and dollar sign (&#36;)markers ensures that the expression consists of the desired content and nothing else. A &#94; matches the position at the beginning of the input string and a &#36; matches the position at the end of the input string. If you omit these markers, an attacker could affix malicious input to the beginning or end of valid content and bypass your filter.",
       "If you are not using server controls (which means you cannot use the validation controls) or if you need to validate input from sources other than form fields, such as query string parameters or cookies, you can use the Regex class within the System.Text.RegularExpressions namespace.",
       "For performance reasons, you should use the static IsMatch method where possible to avoid unnecessary object creation.",
       "The following example shows how to use a regular expression to validate a name input through a regular client-side HTML control.",
@@ -3425,10 +3495,10 @@
       "ValidationExpression",
       "ErrorMessage",
       "RegularExpressionValidator",
-      "^",
-      "$)",
-      "^",
-      "$",
+      "&#94;",
+      "&#36;)",
+      "&#94;",
+      "&#36;",
       "Regex",
       "System.Text.RegularExpressions",
       "using",
@@ -3441,7 +3511,7 @@
       "Table 1. Common Regular Expressions"
     ],
     "ul": [
-      "Objectives\r\n      \r\n        Overview\r\n        \r\n          Using a RegularExpressionValidator Control\r\n          \r\n            Using the Regex Class\r\n            \r\n              Common Regular Expressions\r\n              \r\n                Additional Resources",
+      "Objectives\n      \n        Overview\n        \n          Using a RegularExpressionValidator Control\n          \n            Using the Regex Class\n            \n              Common Regular Expressions\n              \n                Additional Resources",
       "Use regular expressions to constrain input, apply format rules, and check lengths. Use the ASP.NET RegularExpressionValidator control to constrain and validate input. Use the Regex class to constrain and validate input. Learn common regular expressions that can be used to constrain input.",
       "Constrain the acceptable range of input characters. Apply formatting rules. For example, pattern-based fields, such as tax identification numbers, ZIP Codes, or postal codes, require specific patterns of input characters. Check lengths.",
       "For more information, see the regular expression tutorial at http://www.regular-expressions.info/tutorial.html."
@@ -3465,7 +3535,7 @@
       "Set the ValidationExpression property to an appropriate regular expression.",
       "Set the ErrorMessage property to define the message to display if the validation fails.",
       "Add a using statement to reference the System.Text.RegularExpressions namespace.",
-      "Call the IsMatch method of the Regex class, as shown in the following example. // Instance method:Regex reg = new Regex(@\"^[a-zA-Z'.]{1,40}$\");Response.Write(reg.IsMatch(txtName.Text));// Static method:if (!Regex.IsMatch(txtName.Text,                    @\"^[a-zA-Z'.]{1,40}$\")){  // Name does not match schema}",
+      "Call the IsMatch method of the Regex class, as shown in the following example. // Instance method:Regex reg = new Regex(&#64;\"&#94;&#91;a-zA-Z'.&#93;&#123;1,40&#125;&#36;\");Response.Write(reg.IsMatch(txtName.Text));// Static method:if (&#33;Regex.IsMatch(txtName.Text, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#64;\"&#94;&#91;a-zA-Z'.&#93;&#123;1,40&#125;&#36;\"))&#123;&nbsp; // Name does not match schema&#125;",
       "For more information, see the regular expression tutorial at http://www.regular-expressions.info/tutorial.html."
     ],
     "div": [
@@ -3475,31 +3545,31 @@
       "Using the Regex Class",
       "Common Regular Expressions",
       "Additional Resources",
-      "<%@ language=\"C#\" %><form id=\"form1\" runat=\"server\">    <asp:TextBox ID=\"txtName\" runat=\"server\"/>    <asp:Button ID=\"btnSubmit\" runat=\"server\" Text=\"Submit\" />    <asp:RegularExpressionValidator ID=\"regexpName\" runat=\"server\"                                         ErrorMessage=\"This expression does not validate.\"                                     ControlToValidate=\"txtName\"                                         ValidationExpression=\"^[a-zA-Z'.\\s]{1,40}$\" /></form>",
-      "// Instance method:Regex reg = new Regex(@\"^[a-zA-Z'.]{1,40}$\");Response.Write(reg.IsMatch(txtName.Text));// Static method:if (!Regex.IsMatch(txtName.Text,                    @\"^[a-zA-Z'.]{1,40}$\")){  // Name does not match schema}",
-      "<%@ Page Language=\"C#\" %>\r\n    <html  >  <body>    <form id=\"form1\" method=\"post\" action=\"HtmlControls.aspx\">        Name:        <input name=\"txtName\" type=\"text\" />        <input name=\"submitBtn\" type=\"Submit\" value=\"Submit\"/>    </form>  </body></html>",
-      "Regex regex = new Regex(@\"                        ^           # anchor at the start                       (?=.*\\d)     # must contain at least one numeric character                       (?=.*[a-z])  # must contain one lowercase character                       (?=.*[A-Z])  # must contain one uppercase character                       .{8,10}      # From 8 to 10 characters in length                       \\s           # allows a space                        $            # anchor at the end\",                        RegexOptions.IgnorePatternWhitespace);",
-      "Field \r\n          Expression\r\n          Format Samples\r\n          Description\r\n        \r\n        \r\n          Name\r\n          ^[a-zA-Z''-'\\s]{1,40}$\r\n          John DoeO'Dell\r\n          Validates a name. Allows up to 40 uppercase and lowercase characters and a few special characters that are common to some names. You can modify this list.\r\n        \r\n        \r\n          Social Security Number\r\n          ^\\d{3}-\\d{2}-\\d{4}$\r\n          111-11-1111\r\n          Validates the format, type, and length of the supplied input field. The input must consist of 3 numeric characters followed by a dash, then 2 numeric characters followed by a dash, and then 4 numeric characters.\r\n        \r\n        \r\n          Phone Number\r\n          ^[01]?[- .]?(\\([2-9]\\d{2}\\)|[2-9]\\d{2})[- .]?\\d{3}[- .]?\\d{4}$\r\n          (425) 555-0123425-555-0123425 555 01231-425-555-0123\r\n          Validates a U.S. phone number. It must consist of 3 numeric characters, optionally enclosed in parentheses, followed by a set of 3 numeric characters and then a set of 4 numeric characters. \r\n        \r\n        \r\n          E-mail \r\n          ^([0-9a-zA-Z]([-.\\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\\w]*[0-9a-zA-Z]\\.)+[a-zA-Z]{2,9})$\r\n          someone@example.com\r\n          Validates an e-mail address.\r\n        \r\n        \r\n          URL\r\n          ^(ht|f)tp(s?)\\:\\/\\/[0-9a-zA-Z]([-.\\w]*[0-9a-zA-Z])*(:(0-9)*)*(\\/?)([a-zA-Z0-9\\-\\.\\?\\,\\'\\/\\\\\\+&%\\$#_]*)?$\r\n          http://www.microsoft.com\r\n          Validates a URL \r\n        \r\n        \r\n          ZIP Code\r\n          ^(\\d{5}-\\d{4}|\\d{5}|\\d{9})$|^([a-zA-Z]\\d[a-zA-Z] \\d[a-zA-Z]\\d)$\r\n          12345\r\n          Validates a U.S. ZIP Code. The code must consist of 5 or 9 numeric characters.\r\n        \r\n        \r\n          Password\r\n          (?!^[0-9]*$)(?!^[a-zA-Z]*$)^([a-zA-Z0-9]{8,10})$\r\n           \r\n          Validates a strong password. It must be between 8 and 10 characters, contain at least one digit and one alphabetic character, and must not contain special characters.\r\n        \r\n        \r\n          Non- negative integer\r\n          ^\\d+$\r\n          0986\r\n          Validates that the field contains an integer greater than zero.\r\n        \r\n        \r\n          Currency (non- negative)\r\n          ^\\d+(\\.\\d\\d)?$\r\n          1.00\r\n          Validates a positive currency amount. If there is a decimal point, it requires 2 numeric characters after the decimal point. For example, 3.00 is valid but 3.1 is not.\r\n        \r\n        \r\n          Currency (positive or negative)\r\n          ^(-)?\\d+(\\.\\d\\d)?$\r\n          1.20\r\n          Validates for a positive or negative currency amount. If there is a decimal point, it requires 2 numeric characters after the decimal point."
+      "<&#37;&#64; language=\"C#\" &#37;><form id=\"form1\" runat=\"server\">&nbsp;&nbsp;&nbsp; <asp:TextBox ID=\"txtName\" runat=\"server\"/>&nbsp;&nbsp;&nbsp; <asp:Button ID=\"btnSubmit\" runat=\"server\" Text=\"Submit\" />&nbsp;&nbsp;&nbsp; <asp:RegularExpressionValidator ID=\"regexpName\" runat=\"server\"&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ErrorMessage=\"This expression does not validate.\" &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ControlToValidate=\"txtName\"&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ValidationExpression=\"&#94;&#91;a-zA-Z'.\\s&#93;&#123;1,40&#125;&#36;\" /></form>",
+      "// Instance method:Regex reg = new Regex(&#64;\"&#94;&#91;a-zA-Z'.&#93;&#123;1,40&#125;&#36;\");Response.Write(reg.IsMatch(txtName.Text));// Static method:if (&#33;Regex.IsMatch(txtName.Text, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#64;\"&#94;&#91;a-zA-Z'.&#93;&#123;1,40&#125;&#36;\"))&#123;&nbsp; // Name does not match schema&#125;",
+      "<&#37;&#64; Page Language=\"C#\" &#37;>\n    <html&nbsp; >&nbsp; <body>&nbsp;&nbsp;&nbsp; <form id=\"form1\" method=\"post\" action=\"HtmlControls.aspx\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input name=\"txtName\" type=\"text\" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input name=\"submitBtn\" type=\"Submit\" value=\"Submit\"/>&nbsp;&nbsp;&nbsp; </form>&nbsp; </body></html>",
+      "Regex regex = new Regex(&#64;\"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#94;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; # anchor at the start&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (?=.&#42;\\d)&nbsp;&nbsp;&nbsp;&nbsp; # must contain at least one numeric character&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (?=.&#42;&#91;a-z&#93;)&nbsp; # must contain one lowercase character&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (?=.&#42;&#91;A-Z&#93;)&nbsp; # must contain one uppercase character&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .&#123;8,10&#125;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; # From 8 to 10 characters in length&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \\s&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; # allows a space &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#36;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; # anchor at the end\", &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; RegexOptions.IgnorePatternWhitespace);",
+      "Field \n          Expression\n          Format Samples\n          Description\n        \n        \n          Name\n          &#94;&#91;a-zA-Z''-'\\s&#93;&#123;1,40&#125;&#36;\n          John DoeO'Dell\n          Validates a name. Allows up to 40 uppercase and lowercase characters and a few special characters that are common to some names. You can modify this list.\n        \n        \n          Social Security Number\n          &#94;\\d&#123;3&#125;-\\d&#123;2&#125;-\\d&#123;4&#125;&#36;\n          111-11-1111\n          Validates the format, type, and length of the supplied input field. The input must consist of 3 numeric characters followed by a dash, then 2 numeric characters followed by a dash, and then 4 numeric characters.\n        \n        \n          Phone Number\n          &#94;&#91;01&#93;?&#91;- .&#93;?(\\(&#91;2-9&#93;\\d&#123;2&#125;\\)&#124;&#91;2-9&#93;\\d&#123;2&#125;)&#91;- .&#93;?\\d&#123;3&#125;&#91;- .&#93;?\\d&#123;4&#125;&#36;\n          (425) 555-0123425-555-0123425 555 01231-425-555-0123\n          Validates a U.S. phone number. It must consist of 3 numeric characters, optionally enclosed in parentheses, followed by a set of 3 numeric characters and then a set of 4 numeric characters. \n        \n        \n          E-mail \n          &#94;(&#91;0-9a-zA-Z&#93;(&#91;-.\\w&#93;&#42;&#91;0-9a-zA-Z&#93;)&#42;&#64;(&#91;0-9a-zA-Z&#93;&#91;-\\w&#93;&#42;&#91;0-9a-zA-Z&#93;\\.)&#43;&#91;a-zA-Z&#93;&#123;2,9&#125;)&#36;\n          someone&#64;example.com\n          Validates an e-mail address.\n        \n        \n          URL\n          &#94;(ht&#124;f)tp(s?)\\:\\/\\/&#91;0-9a-zA-Z&#93;(&#91;-.\\w&#93;&#42;&#91;0-9a-zA-Z&#93;)&#42;(:(0-9)&#42;)&#42;(\\/?)(&#91;a-zA-Z0-9\\-\\.\\?\\,\\'\\/\\\\\\&#43;&&#37;\\&#36;#_&#93;&#42;)?&#36;\n          http://www.microsoft.com\n          Validates a URL \n        \n        \n          ZIP Code\n          &#94;(\\d&#123;5&#125;-\\d&#123;4&#125;&#124;\\d&#123;5&#125;&#124;\\d&#123;9&#125;)&#36;&#124;&#94;(&#91;a-zA-Z&#93;\\d&#91;a-zA-Z&#93; \\d&#91;a-zA-Z&#93;\\d)&#36;\n          12345\n          Validates a U.S. ZIP Code. The code must consist of 5 or 9 numeric characters.\n        \n        \n          Password\n          (?&#33;&#94;&#91;0-9&#93;&#42;&#36;)(?&#33;&#94;&#91;a-zA-Z&#93;&#42;&#36;)&#94;(&#91;a-zA-Z0-9&#93;&#123;8,10&#125;)&#36;\n          &nbsp;\n          Validates a strong password. It must be between 8 and 10 characters, contain at least one digit and one alphabetic character, and must not contain special characters.\n        \n        \n          Non- negative integer\n          &#94;\\d&#43;&#36;\n          0986\n          Validates that the field contains an integer greater than zero.\n        \n        \n          Currency (non- negative)\n          &#94;\\d&#43;(\\.\\d\\d)?&#36;\n          1.00\n          Validates a positive currency amount. If there is a decimal point, it requires 2 numeric characters after the decimal point. For example, 3.00 is valid but 3.1 is not.\n        \n        \n          Currency (positive or negative)\n          &#94;(-)?\\d&#43;(\\.\\d\\d)?&#36;\n          1.20\n          Validates for a positive or negative currency amount. If there is a decimal point, it requires 2 numeric characters after the decimal point."
     ],
     "h2": [
       "To validate a server control's input using a RegularExpressionValidator",
-      "Using ^ and $",
+      "Using &#94; and &#36;",
       "To use the Regex class",
       "Use Regular Expression Comments"
     ],
     "ol": [
       "Add a RegularExpressionValidator control to your page. Set the ControlToValidate property to indicate which control to validate. Set the ValidationExpression property to an appropriate regular expression. Set the ErrorMessage property to define the message to display if the validation fails.",
-      "Add a using statement to reference the System.Text.RegularExpressions namespace. Call the IsMatch method of the Regex class, as shown in the following example. // Instance method:Regex reg = new Regex(@\"^[a-zA-Z'.]{1,40}$\");Response.Write(reg.IsMatch(txtName.Text));// Static method:if (!Regex.IsMatch(txtName.Text,                    @\"^[a-zA-Z'.]{1,40}$\")){  // Name does not match schema}"
+      "Add a using statement to reference the System.Text.RegularExpressions namespace. Call the IsMatch method of the Regex class, as shown in the following example. // Instance method:Regex reg = new Regex(&#64;\"&#94;&#91;a-zA-Z'.&#93;&#123;1,40&#125;&#36;\");Response.Write(reg.IsMatch(txtName.Text));// Static method:if (&#33;Regex.IsMatch(txtName.Text, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#64;\"&#94;&#91;a-zA-Z'.&#93;&#123;1,40&#125;&#36;\"))&#123;&nbsp; // Name does not match schema&#125;"
     ],
     "pre": [
-      "<%@ language=\"C#\" %><form id=\"form1\" runat=\"server\">    <asp:TextBox ID=\"txtName\" runat=\"server\"/>    <asp:Button ID=\"btnSubmit\" runat=\"server\" Text=\"Submit\" />    <asp:RegularExpressionValidator ID=\"regexpName\" runat=\"server\"                                         ErrorMessage=\"This expression does not validate.\"                                     ControlToValidate=\"txtName\"                                         ValidationExpression=\"^[a-zA-Z'.\\s]{1,40}$\" /></form>",
-      "// Instance method:Regex reg = new Regex(@\"^[a-zA-Z'.]{1,40}$\");Response.Write(reg.IsMatch(txtName.Text));// Static method:if (!Regex.IsMatch(txtName.Text,                    @\"^[a-zA-Z'.]{1,40}$\")){  // Name does not match schema}",
-      "<%@ Page Language=\"C#\" %>",
-      "<html  >  <body>    <form id=\"form1\" method=\"post\" action=\"HtmlControls.aspx\">        Name:        <input name=\"txtName\" type=\"text\" />        <input name=\"submitBtn\" type=\"Submit\" value=\"Submit\"/>    </form>  </body></html>",
+      "<&#37;&#64; language=\"C#\" &#37;><form id=\"form1\" runat=\"server\">&nbsp;&nbsp;&nbsp; <asp:TextBox ID=\"txtName\" runat=\"server\"/>&nbsp;&nbsp;&nbsp; <asp:Button ID=\"btnSubmit\" runat=\"server\" Text=\"Submit\" />&nbsp;&nbsp;&nbsp; <asp:RegularExpressionValidator ID=\"regexpName\" runat=\"server\"&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ErrorMessage=\"This expression does not validate.\" &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ControlToValidate=\"txtName\"&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ValidationExpression=\"&#94;&#91;a-zA-Z'.\\s&#93;&#123;1,40&#125;&#36;\" /></form>",
+      "// Instance method:Regex reg = new Regex(&#64;\"&#94;&#91;a-zA-Z'.&#93;&#123;1,40&#125;&#36;\");Response.Write(reg.IsMatch(txtName.Text));// Static method:if (&#33;Regex.IsMatch(txtName.Text, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#64;\"&#94;&#91;a-zA-Z'.&#93;&#123;1,40&#125;&#36;\"))&#123;&nbsp; // Name does not match schema&#125;",
+      "<&#37;&#64; Page Language=\"C#\" &#37;>",
+      "<html&nbsp; >&nbsp; <body>&nbsp;&nbsp;&nbsp; <form id=\"form1\" method=\"post\" action=\"HtmlControls.aspx\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input name=\"txtName\" type=\"text\" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input name=\"submitBtn\" type=\"Submit\" value=\"Submit\"/>&nbsp;&nbsp;&nbsp; </form>&nbsp; </body></html>",
       "<script runat=\"server\">",
-      "void Page_Load(object sender, EventArgs e)  {    if (Request.RequestType == \"POST\")    {      string name = Request.Form[\"txtName\"];      if (name.Length > 0)      {        if (System.Text.RegularExpressions.Regex.IsMatch(name,                                            \"^[a-zA-Z'.]{1,40}$\"))          Response.Write(\"Valid name\");        else          Response.Write(\"Invalid name\");      }    }  }",
+      "&nbsp; void Page_Load(object sender, EventArgs e)&nbsp; &#123;&nbsp;&nbsp;&nbsp; if (Request.RequestType == \"POST\")&nbsp;&nbsp;&nbsp; &#123;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; string name = Request.Form&#91;\"txtName\"&#93;;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (name.Length > 0)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#123;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (System.Text.RegularExpressions.Regex.IsMatch(name, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \"&#94;&#91;a-zA-Z'.&#93;&#123;1,40&#125;&#36;\"))&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Response.Write(\"Valid name\");&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; else&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Response.Write(\"Invalid name\");&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#125;&nbsp;&nbsp;&nbsp; &#125;&nbsp; &#125;",
       "</script>",
-      "Regex regex = new Regex(@\"                        ^           # anchor at the start                       (?=.*\\d)     # must contain at least one numeric character                       (?=.*[a-z])  # must contain one lowercase character                       (?=.*[A-Z])  # must contain one uppercase character                       .{8,10}      # From 8 to 10 characters in length                       \\s           # allows a space                        $            # anchor at the end\",                        RegexOptions.IgnorePatternWhitespace);"
+      "Regex regex = new Regex(&#64;\"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#94;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; # anchor at the start&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (?=.&#42;\\d)&nbsp;&nbsp;&nbsp;&nbsp; # must contain at least one numeric character&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (?=.&#42;&#91;a-z&#93;)&nbsp; # must contain one lowercase character&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (?=.&#42;&#91;A-Z&#93;)&nbsp; # must contain one uppercase character&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .&#123;8,10&#125;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; # From 8 to 10 characters in length&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \\s&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; # allows a space &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#36;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; # anchor at the end\", &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; RegexOptions.IgnorePatternWhitespace);"
     ],
     "br": [
       "",
@@ -3555,23 +3625,23 @@
       ""
     ],
     "table": [
-      "Field \r\n          Expression\r\n          Format Samples\r\n          Description\r\n        \r\n        \r\n          Name\r\n          ^[a-zA-Z''-'\\s]{1,40}$\r\n          John DoeO'Dell\r\n          Validates a name. Allows up to 40 uppercase and lowercase characters and a few special characters that are common to some names. You can modify this list.\r\n        \r\n        \r\n          Social Security Number\r\n          ^\\d{3}-\\d{2}-\\d{4}$\r\n          111-11-1111\r\n          Validates the format, type, and length of the supplied input field. The input must consist of 3 numeric characters followed by a dash, then 2 numeric characters followed by a dash, and then 4 numeric characters.\r\n        \r\n        \r\n          Phone Number\r\n          ^[01]?[- .]?(\\([2-9]\\d{2}\\)|[2-9]\\d{2})[- .]?\\d{3}[- .]?\\d{4}$\r\n          (425) 555-0123425-555-0123425 555 01231-425-555-0123\r\n          Validates a U.S. phone number. It must consist of 3 numeric characters, optionally enclosed in parentheses, followed by a set of 3 numeric characters and then a set of 4 numeric characters. \r\n        \r\n        \r\n          E-mail \r\n          ^([0-9a-zA-Z]([-.\\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\\w]*[0-9a-zA-Z]\\.)+[a-zA-Z]{2,9})$\r\n          someone@example.com\r\n          Validates an e-mail address.\r\n        \r\n        \r\n          URL\r\n          ^(ht|f)tp(s?)\\:\\/\\/[0-9a-zA-Z]([-.\\w]*[0-9a-zA-Z])*(:(0-9)*)*(\\/?)([a-zA-Z0-9\\-\\.\\?\\,\\'\\/\\\\\\+&%\\$#_]*)?$\r\n          http://www.microsoft.com\r\n          Validates a URL \r\n        \r\n        \r\n          ZIP Code\r\n          ^(\\d{5}-\\d{4}|\\d{5}|\\d{9})$|^([a-zA-Z]\\d[a-zA-Z] \\d[a-zA-Z]\\d)$\r\n          12345\r\n          Validates a U.S. ZIP Code. The code must consist of 5 or 9 numeric characters.\r\n        \r\n        \r\n          Password\r\n          (?!^[0-9]*$)(?!^[a-zA-Z]*$)^([a-zA-Z0-9]{8,10})$\r\n           \r\n          Validates a strong password. It must be between 8 and 10 characters, contain at least one digit and one alphabetic character, and must not contain special characters.\r\n        \r\n        \r\n          Non- negative integer\r\n          ^\\d+$\r\n          0986\r\n          Validates that the field contains an integer greater than zero.\r\n        \r\n        \r\n          Currency (non- negative)\r\n          ^\\d+(\\.\\d\\d)?$\r\n          1.00\r\n          Validates a positive currency amount. If there is a decimal point, it requires 2 numeric characters after the decimal point. For example, 3.00 is valid but 3.1 is not.\r\n        \r\n        \r\n          Currency (positive or negative)\r\n          ^(-)?\\d+(\\.\\d\\d)?$\r\n          1.20\r\n          Validates for a positive or negative currency amount. If there is a decimal point, it requires 2 numeric characters after the decimal point."
+      "Field \n          Expression\n          Format Samples\n          Description\n        \n        \n          Name\n          &#94;&#91;a-zA-Z''-'\\s&#93;&#123;1,40&#125;&#36;\n          John DoeO'Dell\n          Validates a name. Allows up to 40 uppercase and lowercase characters and a few special characters that are common to some names. You can modify this list.\n        \n        \n          Social Security Number\n          &#94;\\d&#123;3&#125;-\\d&#123;2&#125;-\\d&#123;4&#125;&#36;\n          111-11-1111\n          Validates the format, type, and length of the supplied input field. The input must consist of 3 numeric characters followed by a dash, then 2 numeric characters followed by a dash, and then 4 numeric characters.\n        \n        \n          Phone Number\n          &#94;&#91;01&#93;?&#91;- .&#93;?(\\(&#91;2-9&#93;\\d&#123;2&#125;\\)&#124;&#91;2-9&#93;\\d&#123;2&#125;)&#91;- .&#93;?\\d&#123;3&#125;&#91;- .&#93;?\\d&#123;4&#125;&#36;\n          (425) 555-0123425-555-0123425 555 01231-425-555-0123\n          Validates a U.S. phone number. It must consist of 3 numeric characters, optionally enclosed in parentheses, followed by a set of 3 numeric characters and then a set of 4 numeric characters. \n        \n        \n          E-mail \n          &#94;(&#91;0-9a-zA-Z&#93;(&#91;-.\\w&#93;&#42;&#91;0-9a-zA-Z&#93;)&#42;&#64;(&#91;0-9a-zA-Z&#93;&#91;-\\w&#93;&#42;&#91;0-9a-zA-Z&#93;\\.)&#43;&#91;a-zA-Z&#93;&#123;2,9&#125;)&#36;\n          someone&#64;example.com\n          Validates an e-mail address.\n        \n        \n          URL\n          &#94;(ht&#124;f)tp(s?)\\:\\/\\/&#91;0-9a-zA-Z&#93;(&#91;-.\\w&#93;&#42;&#91;0-9a-zA-Z&#93;)&#42;(:(0-9)&#42;)&#42;(\\/?)(&#91;a-zA-Z0-9\\-\\.\\?\\,\\'\\/\\\\\\&#43;&&#37;\\&#36;#_&#93;&#42;)?&#36;\n          http://www.microsoft.com\n          Validates a URL \n        \n        \n          ZIP Code\n          &#94;(\\d&#123;5&#125;-\\d&#123;4&#125;&#124;\\d&#123;5&#125;&#124;\\d&#123;9&#125;)&#36;&#124;&#94;(&#91;a-zA-Z&#93;\\d&#91;a-zA-Z&#93; \\d&#91;a-zA-Z&#93;\\d)&#36;\n          12345\n          Validates a U.S. ZIP Code. The code must consist of 5 or 9 numeric characters.\n        \n        \n          Password\n          (?&#33;&#94;&#91;0-9&#93;&#42;&#36;)(?&#33;&#94;&#91;a-zA-Z&#93;&#42;&#36;)&#94;(&#91;a-zA-Z0-9&#93;&#123;8,10&#125;)&#36;\n          &nbsp;\n          Validates a strong password. It must be between 8 and 10 characters, contain at least one digit and one alphabetic character, and must not contain special characters.\n        \n        \n          Non- negative integer\n          &#94;\\d&#43;&#36;\n          0986\n          Validates that the field contains an integer greater than zero.\n        \n        \n          Currency (non- negative)\n          &#94;\\d&#43;(\\.\\d\\d)?&#36;\n          1.00\n          Validates a positive currency amount. If there is a decimal point, it requires 2 numeric characters after the decimal point. For example, 3.00 is valid but 3.1 is not.\n        \n        \n          Currency (positive or negative)\n          &#94;(-)?\\d&#43;(\\.\\d\\d)?&#36;\n          1.20\n          Validates for a positive or negative currency amount. If there is a decimal point, it requires 2 numeric characters after the decimal point."
     ],
     "tbody": [
-      "Field \r\n          Expression\r\n          Format Samples\r\n          Description\r\n        \r\n        \r\n          Name\r\n          ^[a-zA-Z''-'\\s]{1,40}$\r\n          John DoeO'Dell\r\n          Validates a name. Allows up to 40 uppercase and lowercase characters and a few special characters that are common to some names. You can modify this list.\r\n        \r\n        \r\n          Social Security Number\r\n          ^\\d{3}-\\d{2}-\\d{4}$\r\n          111-11-1111\r\n          Validates the format, type, and length of the supplied input field. The input must consist of 3 numeric characters followed by a dash, then 2 numeric characters followed by a dash, and then 4 numeric characters.\r\n        \r\n        \r\n          Phone Number\r\n          ^[01]?[- .]?(\\([2-9]\\d{2}\\)|[2-9]\\d{2})[- .]?\\d{3}[- .]?\\d{4}$\r\n          (425) 555-0123425-555-0123425 555 01231-425-555-0123\r\n          Validates a U.S. phone number. It must consist of 3 numeric characters, optionally enclosed in parentheses, followed by a set of 3 numeric characters and then a set of 4 numeric characters. \r\n        \r\n        \r\n          E-mail \r\n          ^([0-9a-zA-Z]([-.\\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\\w]*[0-9a-zA-Z]\\.)+[a-zA-Z]{2,9})$\r\n          someone@example.com\r\n          Validates an e-mail address.\r\n        \r\n        \r\n          URL\r\n          ^(ht|f)tp(s?)\\:\\/\\/[0-9a-zA-Z]([-.\\w]*[0-9a-zA-Z])*(:(0-9)*)*(\\/?)([a-zA-Z0-9\\-\\.\\?\\,\\'\\/\\\\\\+&%\\$#_]*)?$\r\n          http://www.microsoft.com\r\n          Validates a URL \r\n        \r\n        \r\n          ZIP Code\r\n          ^(\\d{5}-\\d{4}|\\d{5}|\\d{9})$|^([a-zA-Z]\\d[a-zA-Z] \\d[a-zA-Z]\\d)$\r\n          12345\r\n          Validates a U.S. ZIP Code. The code must consist of 5 or 9 numeric characters.\r\n        \r\n        \r\n          Password\r\n          (?!^[0-9]*$)(?!^[a-zA-Z]*$)^([a-zA-Z0-9]{8,10})$\r\n           \r\n          Validates a strong password. It must be between 8 and 10 characters, contain at least one digit and one alphabetic character, and must not contain special characters.\r\n        \r\n        \r\n          Non- negative integer\r\n          ^\\d+$\r\n          0986\r\n          Validates that the field contains an integer greater than zero.\r\n        \r\n        \r\n          Currency (non- negative)\r\n          ^\\d+(\\.\\d\\d)?$\r\n          1.00\r\n          Validates a positive currency amount. If there is a decimal point, it requires 2 numeric characters after the decimal point. For example, 3.00 is valid but 3.1 is not.\r\n        \r\n        \r\n          Currency (positive or negative)\r\n          ^(-)?\\d+(\\.\\d\\d)?$\r\n          1.20\r\n          Validates for a positive or negative currency amount. If there is a decimal point, it requires 2 numeric characters after the decimal point."
+      "Field \n          Expression\n          Format Samples\n          Description\n        \n        \n          Name\n          &#94;&#91;a-zA-Z''-'\\s&#93;&#123;1,40&#125;&#36;\n          John DoeO'Dell\n          Validates a name. Allows up to 40 uppercase and lowercase characters and a few special characters that are common to some names. You can modify this list.\n        \n        \n          Social Security Number\n          &#94;\\d&#123;3&#125;-\\d&#123;2&#125;-\\d&#123;4&#125;&#36;\n          111-11-1111\n          Validates the format, type, and length of the supplied input field. The input must consist of 3 numeric characters followed by a dash, then 2 numeric characters followed by a dash, and then 4 numeric characters.\n        \n        \n          Phone Number\n          &#94;&#91;01&#93;?&#91;- .&#93;?(\\(&#91;2-9&#93;\\d&#123;2&#125;\\)&#124;&#91;2-9&#93;\\d&#123;2&#125;)&#91;- .&#93;?\\d&#123;3&#125;&#91;- .&#93;?\\d&#123;4&#125;&#36;\n          (425) 555-0123425-555-0123425 555 01231-425-555-0123\n          Validates a U.S. phone number. It must consist of 3 numeric characters, optionally enclosed in parentheses, followed by a set of 3 numeric characters and then a set of 4 numeric characters. \n        \n        \n          E-mail \n          &#94;(&#91;0-9a-zA-Z&#93;(&#91;-.\\w&#93;&#42;&#91;0-9a-zA-Z&#93;)&#42;&#64;(&#91;0-9a-zA-Z&#93;&#91;-\\w&#93;&#42;&#91;0-9a-zA-Z&#93;\\.)&#43;&#91;a-zA-Z&#93;&#123;2,9&#125;)&#36;\n          someone&#64;example.com\n          Validates an e-mail address.\n        \n        \n          URL\n          &#94;(ht&#124;f)tp(s?)\\:\\/\\/&#91;0-9a-zA-Z&#93;(&#91;-.\\w&#93;&#42;&#91;0-9a-zA-Z&#93;)&#42;(:(0-9)&#42;)&#42;(\\/?)(&#91;a-zA-Z0-9\\-\\.\\?\\,\\'\\/\\\\\\&#43;&&#37;\\&#36;#_&#93;&#42;)?&#36;\n          http://www.microsoft.com\n          Validates a URL \n        \n        \n          ZIP Code\n          &#94;(\\d&#123;5&#125;-\\d&#123;4&#125;&#124;\\d&#123;5&#125;&#124;\\d&#123;9&#125;)&#36;&#124;&#94;(&#91;a-zA-Z&#93;\\d&#91;a-zA-Z&#93; \\d&#91;a-zA-Z&#93;\\d)&#36;\n          12345\n          Validates a U.S. ZIP Code. The code must consist of 5 or 9 numeric characters.\n        \n        \n          Password\n          (?&#33;&#94;&#91;0-9&#93;&#42;&#36;)(?&#33;&#94;&#91;a-zA-Z&#93;&#42;&#36;)&#94;(&#91;a-zA-Z0-9&#93;&#123;8,10&#125;)&#36;\n          &nbsp;\n          Validates a strong password. It must be between 8 and 10 characters, contain at least one digit and one alphabetic character, and must not contain special characters.\n        \n        \n          Non- negative integer\n          &#94;\\d&#43;&#36;\n          0986\n          Validates that the field contains an integer greater than zero.\n        \n        \n          Currency (non- negative)\n          &#94;\\d&#43;(\\.\\d\\d)?&#36;\n          1.00\n          Validates a positive currency amount. If there is a decimal point, it requires 2 numeric characters after the decimal point. For example, 3.00 is valid but 3.1 is not.\n        \n        \n          Currency (positive or negative)\n          &#94;(-)?\\d&#43;(\\.\\d\\d)?&#36;\n          1.20\n          Validates for a positive or negative currency amount. If there is a decimal point, it requires 2 numeric characters after the decimal point."
     ],
     "tr": [
-      "Field \r\n          Expression\r\n          Format Samples\r\n          Description",
-      "Name\r\n          ^[a-zA-Z''-'\\s]{1,40}$\r\n          John DoeO'Dell\r\n          Validates a name. Allows up to 40 uppercase and lowercase characters and a few special characters that are common to some names. You can modify this list.",
-      "Social Security Number\r\n          ^\\d{3}-\\d{2}-\\d{4}$\r\n          111-11-1111\r\n          Validates the format, type, and length of the supplied input field. The input must consist of 3 numeric characters followed by a dash, then 2 numeric characters followed by a dash, and then 4 numeric characters.",
-      "Phone Number\r\n          ^[01]?[- .]?(\\([2-9]\\d{2}\\)|[2-9]\\d{2})[- .]?\\d{3}[- .]?\\d{4}$\r\n          (425) 555-0123425-555-0123425 555 01231-425-555-0123\r\n          Validates a U.S. phone number. It must consist of 3 numeric characters, optionally enclosed in parentheses, followed by a set of 3 numeric characters and then a set of 4 numeric characters.",
-      "E-mail \r\n          ^([0-9a-zA-Z]([-.\\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\\w]*[0-9a-zA-Z]\\.)+[a-zA-Z]{2,9})$\r\n          someone@example.com\r\n          Validates an e-mail address.",
-      "URL\r\n          ^(ht|f)tp(s?)\\:\\/\\/[0-9a-zA-Z]([-.\\w]*[0-9a-zA-Z])*(:(0-9)*)*(\\/?)([a-zA-Z0-9\\-\\.\\?\\,\\'\\/\\\\\\+&%\\$#_]*)?$\r\n          http://www.microsoft.com\r\n          Validates a URL",
-      "ZIP Code\r\n          ^(\\d{5}-\\d{4}|\\d{5}|\\d{9})$|^([a-zA-Z]\\d[a-zA-Z] \\d[a-zA-Z]\\d)$\r\n          12345\r\n          Validates a U.S. ZIP Code. The code must consist of 5 or 9 numeric characters.",
-      "Password\r\n          (?!^[0-9]*$)(?!^[a-zA-Z]*$)^([a-zA-Z0-9]{8,10})$\r\n           \r\n          Validates a strong password. It must be between 8 and 10 characters, contain at least one digit and one alphabetic character, and must not contain special characters.",
-      "Non- negative integer\r\n          ^\\d+$\r\n          0986\r\n          Validates that the field contains an integer greater than zero.",
-      "Currency (non- negative)\r\n          ^\\d+(\\.\\d\\d)?$\r\n          1.00\r\n          Validates a positive currency amount. If there is a decimal point, it requires 2 numeric characters after the decimal point. For example, 3.00 is valid but 3.1 is not.",
-      "Currency (positive or negative)\r\n          ^(-)?\\d+(\\.\\d\\d)?$\r\n          1.20\r\n          Validates for a positive or negative currency amount. If there is a decimal point, it requires 2 numeric characters after the decimal point."
+      "Field \n          Expression\n          Format Samples\n          Description",
+      "Name\n          &#94;&#91;a-zA-Z''-'\\s&#93;&#123;1,40&#125;&#36;\n          John DoeO'Dell\n          Validates a name. Allows up to 40 uppercase and lowercase characters and a few special characters that are common to some names. You can modify this list.",
+      "Social Security Number\n          &#94;\\d&#123;3&#125;-\\d&#123;2&#125;-\\d&#123;4&#125;&#36;\n          111-11-1111\n          Validates the format, type, and length of the supplied input field. The input must consist of 3 numeric characters followed by a dash, then 2 numeric characters followed by a dash, and then 4 numeric characters.",
+      "Phone Number\n          &#94;&#91;01&#93;?&#91;- .&#93;?(\\(&#91;2-9&#93;\\d&#123;2&#125;\\)&#124;&#91;2-9&#93;\\d&#123;2&#125;)&#91;- .&#93;?\\d&#123;3&#125;&#91;- .&#93;?\\d&#123;4&#125;&#36;\n          (425) 555-0123425-555-0123425 555 01231-425-555-0123\n          Validates a U.S. phone number. It must consist of 3 numeric characters, optionally enclosed in parentheses, followed by a set of 3 numeric characters and then a set of 4 numeric characters.",
+      "E-mail \n          &#94;(&#91;0-9a-zA-Z&#93;(&#91;-.\\w&#93;&#42;&#91;0-9a-zA-Z&#93;)&#42;&#64;(&#91;0-9a-zA-Z&#93;&#91;-\\w&#93;&#42;&#91;0-9a-zA-Z&#93;\\.)&#43;&#91;a-zA-Z&#93;&#123;2,9&#125;)&#36;\n          someone&#64;example.com\n          Validates an e-mail address.",
+      "URL\n          &#94;(ht&#124;f)tp(s?)\\:\\/\\/&#91;0-9a-zA-Z&#93;(&#91;-.\\w&#93;&#42;&#91;0-9a-zA-Z&#93;)&#42;(:(0-9)&#42;)&#42;(\\/?)(&#91;a-zA-Z0-9\\-\\.\\?\\,\\'\\/\\\\\\&#43;&&#37;\\&#36;#_&#93;&#42;)?&#36;\n          http://www.microsoft.com\n          Validates a URL",
+      "ZIP Code\n          &#94;(\\d&#123;5&#125;-\\d&#123;4&#125;&#124;\\d&#123;5&#125;&#124;\\d&#123;9&#125;)&#36;&#124;&#94;(&#91;a-zA-Z&#93;\\d&#91;a-zA-Z&#93; \\d&#91;a-zA-Z&#93;\\d)&#36;\n          12345\n          Validates a U.S. ZIP Code. The code must consist of 5 or 9 numeric characters.",
+      "Password\n          (?&#33;&#94;&#91;0-9&#93;&#42;&#36;)(?&#33;&#94;&#91;a-zA-Z&#93;&#42;&#36;)&#94;(&#91;a-zA-Z0-9&#93;&#123;8,10&#125;)&#36;\n          &nbsp;\n          Validates a strong password. It must be between 8 and 10 characters, contain at least one digit and one alphabetic character, and must not contain special characters.",
+      "Non- negative integer\n          &#94;\\d&#43;&#36;\n          0986\n          Validates that the field contains an integer greater than zero.",
+      "Currency (non- negative)\n          &#94;\\d&#43;(\\.\\d\\d)?&#36;\n          1.00\n          Validates a positive currency amount. If there is a decimal point, it requires 2 numeric characters after the decimal point. For example, 3.00 is valid but 3.1 is not.",
+      "Currency (positive or negative)\n          &#94;(-)?\\d&#43;(\\.\\d\\d)?&#36;\n          1.20\n          Validates for a positive or negative currency amount. If there is a decimal point, it requires 2 numeric characters after the decimal point."
     ],
     "th": [
       "Field",
@@ -3581,43 +3651,43 @@
     ],
     "td": [
       "Name",
-      "^[a-zA-Z''-'\\s]{1,40}$",
+      "&#94;&#91;a-zA-Z''-'\\s&#93;&#123;1,40&#125;&#36;",
       "John DoeO'Dell",
       "Validates a name. Allows up to 40 uppercase and lowercase characters and a few special characters that are common to some names. You can modify this list.",
       "Social Security Number",
-      "^\\d{3}-\\d{2}-\\d{4}$",
+      "&#94;\\d&#123;3&#125;-\\d&#123;2&#125;-\\d&#123;4&#125;&#36;",
       "111-11-1111",
       "Validates the format, type, and length of the supplied input field. The input must consist of 3 numeric characters followed by a dash, then 2 numeric characters followed by a dash, and then 4 numeric characters.",
       "Phone Number",
-      "^[01]?[- .]?(\\([2-9]\\d{2}\\)|[2-9]\\d{2})[- .]?\\d{3}[- .]?\\d{4}$",
+      "&#94;&#91;01&#93;?&#91;- .&#93;?(\\(&#91;2-9&#93;\\d&#123;2&#125;\\)&#124;&#91;2-9&#93;\\d&#123;2&#125;)&#91;- .&#93;?\\d&#123;3&#125;&#91;- .&#93;?\\d&#123;4&#125;&#36;",
       "(425) 555-0123425-555-0123425 555 01231-425-555-0123",
       "Validates a U.S. phone number. It must consist of 3 numeric characters, optionally enclosed in parentheses, followed by a set of 3 numeric characters and then a set of 4 numeric characters.",
       "E-mail",
-      "^([0-9a-zA-Z]([-.\\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\\w]*[0-9a-zA-Z]\\.)+[a-zA-Z]{2,9})$",
-      "someone@example.com",
+      "&#94;(&#91;0-9a-zA-Z&#93;(&#91;-.\\w&#93;&#42;&#91;0-9a-zA-Z&#93;)&#42;&#64;(&#91;0-9a-zA-Z&#93;&#91;-\\w&#93;&#42;&#91;0-9a-zA-Z&#93;\\.)&#43;&#91;a-zA-Z&#93;&#123;2,9&#125;)&#36;",
+      "someone&#64;example.com",
       "Validates an e-mail address.",
       "URL",
-      "^(ht|f)tp(s?)\\:\\/\\/[0-9a-zA-Z]([-.\\w]*[0-9a-zA-Z])*(:(0-9)*)*(\\/?)([a-zA-Z0-9\\-\\.\\?\\,\\'\\/\\\\\\+&%\\$#_]*)?$",
+      "&#94;(ht&#124;f)tp(s?)\\:\\/\\/&#91;0-9a-zA-Z&#93;(&#91;-.\\w&#93;&#42;&#91;0-9a-zA-Z&#93;)&#42;(:(0-9)&#42;)&#42;(\\/?)(&#91;a-zA-Z0-9\\-\\.\\?\\,\\'\\/\\\\\\&#43;&&#37;\\&#36;#_&#93;&#42;)?&#36;",
       "http://www.microsoft.com",
       "Validates a URL",
       "ZIP Code",
-      "^(\\d{5}-\\d{4}|\\d{5}|\\d{9})$|^([a-zA-Z]\\d[a-zA-Z] \\d[a-zA-Z]\\d)$",
+      "&#94;(\\d&#123;5&#125;-\\d&#123;4&#125;&#124;\\d&#123;5&#125;&#124;\\d&#123;9&#125;)&#36;&#124;&#94;(&#91;a-zA-Z&#93;\\d&#91;a-zA-Z&#93; \\d&#91;a-zA-Z&#93;\\d)&#36;",
       "12345",
       "Validates a U.S. ZIP Code. The code must consist of 5 or 9 numeric characters.",
       "Password",
-      "(?!^[0-9]*$)(?!^[a-zA-Z]*$)^([a-zA-Z0-9]{8,10})$",
-      "",
+      "(?&#33;&#94;&#91;0-9&#93;&#42;&#36;)(?&#33;&#94;&#91;a-zA-Z&#93;&#42;&#36;)&#94;(&#91;a-zA-Z0-9&#93;&#123;8,10&#125;)&#36;",
+      "&nbsp;",
       "Validates a strong password. It must be between 8 and 10 characters, contain at least one digit and one alphabetic character, and must not contain special characters.",
       "Non- negative integer",
-      "^\\d+$",
+      "&#94;\\d&#43;&#36;",
       "0986",
       "Validates that the field contains an integer greater than zero.",
       "Currency (non- negative)",
-      "^\\d+(\\.\\d\\d)?$",
+      "&#94;\\d&#43;(\\.\\d\\d)?&#36;",
       "1.00",
       "Validates a positive currency amount. If there is a decimal point, it requires 2 numeric characters after the decimal point. For example, 3.00 is valid but 3.1 is not.",
       "Currency (positive or negative)",
-      "^(-)?\\d+(\\.\\d\\d)?$",
+      "&#94;(-)?\\d&#43;(\\.\\d\\d)?&#36;",
       "1.20",
       "Validates for a positive or negative currency amount. If there is a decimal point, it requires 2 numeric characters after the decimal point."
     ],
@@ -3634,5 +3704,5 @@
       "text": "http://www.regular-expressions.info/tutorial.html"
     }
   ],
-  "html": "<h1>Summary</h1>\r\n  <p>This How to shows how you can use regular expressions within ASP.NET applications to constrain untrusted input. Regular expressions are a good way to validate text fields such as names, addresses, phone numbers, and other user information. You can use them to constrain input, apply formatting rules, and check lengths. To validate input captured with server controls, you can use the <b>RegularExpressionValidator</b> control. To validate other forms of input, such as query strings, cookies, and HTML control input, you can use the <b>System.Text.RegularExpressions.Regex</b> class.</p>\r\n  <p>This How to shows how you can use regular expressions within ASP.NET applications to constrain untrusted input.</p>\r\n  <h1>Contents</h1>\r\n  <ul>\r\n    <li>\r\n      <div>Objectives</div>\r\n      <li>\r\n        <div>Overview</div>\r\n        <li>\r\n          <div>Using a RegularExpressionValidator Control</div>\r\n          <li>\r\n            <div>Using the Regex Class</div>\r\n            <li>\r\n              <div>Common Regular Expressions</div>\r\n              <li>\r\n                <div>Additional Resources</div>\r\n              </li>\r\n            </li>\r\n          </li>\r\n        </li>\r\n      </li>\r\n    </li>\r\n  </ul>\r\n  <h1>Objectives</h1>\r\n  <ul>\r\n    <li>Use regular expressions to constrain input, apply format rules, and check lengths. <li>Use the ASP.NET <b>RegularExpressionValidator</b> control to constrain and validate input. <li>Use the <b>Regex</b> class to constrain and validate input. <li>Learn common regular expressions that can be used to constrain input. </li></li></li></li>\r\n  </ul>\r\n  <h1>Overview</h1>\r\n  <p>If you make unfounded assumptions about the type, length, format, or range of input, your application is unlikely to be robust. Input validation can become a security issue if an attacker discovers that you have made unfounded assumptions. The attacker can then supply carefully crafted input that compromises your application by attempting SQL injection, cross-site scripting, and other injection attacks. To avoid such vulnerability, you should validate text fields (such as names, addresses, tax identification numbers, and so on) and use regular expressions to do the following: </p>\r\n  <ul>\r\n    <li>Constrain the acceptable range of input characters. <li>Apply formatting rules. For example, pattern-based fields, such as tax identification numbers, ZIP Codes, or postal codes, require specific patterns of input characters. <li>Check lengths. </li></li></li>\r\n  </ul>\r\n  <p>Regular expression support is available to ASP.NET applications through the <b>RegularExpressionValidator</b> control and the <b>Regex</b> class in the <b>System.Text.RegularExpressions</b> namespace.</p>\r\n  <h1>Using a RegularExpressionValidator Control</h1>\r\n  <p>If you capture input by using server controls, you can use the <b>RegularExpressionValidator</b> control to validate that input. You can use regular expressions to restrict the range of valid characters, to strip unwanted characters, and to perform length and format checks. You can constrain the input format by defining patterns that the input must match.</p>\r\n  <h2>To validate a server control's input using a RegularExpressionValidator </h2>\r\n  <ol>\r\n    <li>Add a <b>RegularExpressionValidator</b> control to your page. <li>Set the <b>ControlToValidate</b> property to indicate which control to validate. <li>Set the <b>ValidationExpression</b> property to an appropriate regular expression. <li>Set the <b>ErrorMessage</b> property to define the message to display if the validation fails. </li></li></li></li>\r\n  </ol>\r\n  <p>The following example shows a <b>RegularExpressionValidator</b> control used to validate a name field.</p>\r\n  <div>\r\n    <pre>&lt;&#37;&#64; language=\"C#\" &#37;&gt;<br />&lt;form id=\"form1\" runat=\"server\"&gt;<br />&nbsp;&nbsp;&nbsp; &lt;asp:TextBox ID=\"txtName\" runat=\"server\"/&gt;<br />&nbsp;&nbsp;&nbsp; &lt;asp:Button ID=\"btnSubmit\" runat=\"server\" Text=\"Submit\" /&gt;<br />&nbsp;&nbsp;&nbsp; &lt;asp:RegularExpressionValidator ID=\"regexpName\" runat=\"server\"&nbsp;&nbsp;&nbsp;&nbsp; <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ErrorMessage=\"This expression does not validate.\" <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ControlToValidate=\"txtName\"&nbsp;&nbsp;&nbsp;&nbsp; <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ValidationExpression=\"&#94;&#91;a-zA-Z'.\\s&#93;&#123;1,40&#125;&#36;\" /&gt;<br />&lt;/form&gt;  </pre>\r\n  </div>\r\n  <p>The regular expression used in the preceding code example constrains an input name field to alphabetic characters (lowercase and uppercase), space characters, the single quotation mark (or apostrophe) for names such as O'Dell, and the period or dot character. In addition, the field length is constrained to 40 characters.</p>\r\n  <h2>Using &#94; and &#36;</h2>\r\n  <p>Enclosing the expression in the caret (<b>&#94;</b>) and dollar sign (<b>&#36;)</b>markers ensures that the expression consists of the desired content and nothing else. A <b>&#94;</b> matches the position at the beginning of the input string and a <b>&#36;</b> matches the position at the end of the input string. If you omit these markers, an attacker could affix malicious input to the beginning or end of valid content and bypass your filter.</p>\r\n  <h1>Using the Regex Class</h1>\r\n  <p>If you are not using server controls (which means you cannot use the validation controls) or if you need to validate input from sources other than form fields, such as query string parameters or cookies, you can use the <b>Regex</b> class within the <b>System.Text.RegularExpressions</b> namespace.</p>\r\n  <h2>To use the Regex class </h2>\r\n  <ol>\r\n    <li>Add a <b>using</b> statement to reference the <b>System.Text.RegularExpressions</b> namespace. <li>Call the <b>IsMatch</b> method of the <b>Regex</b> class, as shown in the following example. <div><pre>// Instance method:<br />Regex reg = new Regex(&#64;\"&#94;&#91;a-zA-Z'.&#93;&#123;1,40&#125;&#36;\");<br />Response.Write(reg.IsMatch(txtName.Text));<br />// Static method:<br />if (&#33;Regex.IsMatch(txtName.Text, <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#64;\"&#94;&#91;a-zA-Z'.&#93;&#123;1,40&#125;&#36;\"))<br />&#123;<br />&nbsp; // Name does not match schema<br />&#125;  </pre></div></li></li>\r\n  </ol>\r\n  <p>For performance reasons, you should use the static <b>IsMatch</b> method where possible to avoid unnecessary object creation.</p>\r\n  <p>The following example shows how to use a regular expression to validate a name input through a regular client-side HTML control.</p>\r\n  <div>\r\n    <pre>&lt;&#37;&#64; Page Language=\"C#\" &#37;&gt;</pre>\r\n    <pre>&lt;html&nbsp; &gt;<br />&nbsp; &lt;body&gt;<br />&nbsp;&nbsp;&nbsp; &lt;form id=\"form1\" method=\"post\" action=\"HtmlControls.aspx\"&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Name:<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;input name=\"txtName\" type=\"text\" /&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;input name=\"submitBtn\" type=\"Submit\" value=\"Submit\"/&gt;<br />&nbsp;&nbsp;&nbsp; &lt;/form&gt;<br />&nbsp; &lt;/body&gt;<br />&lt;/html&gt;</pre>\r\n  </div>\r\n  <pre>&lt;script runat=\"server\"&gt;</pre>\r\n  <pre>&nbsp; void Page_Load(object sender, EventArgs e)<br />&nbsp; &#123;<br />&nbsp;&nbsp;&nbsp; if (Request.RequestType == \"POST\")<br />&nbsp;&nbsp;&nbsp; &#123;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; string name = Request.Form&#91;\"txtName\"&#93;;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (name.Length &gt; 0)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#123;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (System.Text.RegularExpressions.Regex.IsMatch(name, <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \"&#94;&#91;a-zA-Z'.&#93;&#123;1,40&#125;&#36;\"))<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Response.Write(\"Valid name\");<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; else<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Response.Write(\"Invalid name\");<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#125;<br />&nbsp;&nbsp;&nbsp; &#125;<br />&nbsp; &#125;</pre>\r\n  <pre>&lt;/script&gt;  </pre>\r\n  <h2>Use Regular Expression Comments</h2>\r\n  <p>Regular expressions are much easier to understand if you use the following syntax and comment each component of the expression by using a number sign (<b>#</b>). To enable comments, you must also specify <b>RegexOptions.IgnorePatternWhitespace</b>, which means that non-escaped white space is ignored.</p>\r\n  <div>\r\n    <pre>Regex regex = new Regex(&#64;\"<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#94;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; # anchor at the start<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (?=.&#42;\\d)&nbsp;&nbsp;&nbsp;&nbsp; # must contain at least one numeric character<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (?=.&#42;&#91;a-z&#93;)&nbsp; # must contain one lowercase character<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (?=.&#42;&#91;A-Z&#93;)&nbsp; # must contain one uppercase character<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .&#123;8,10&#125;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; # From 8 to 10 characters in length<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \\s&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; # allows a space <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#36;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; # anchor at the end\", <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; RegexOptions.IgnorePatternWhitespace);  </pre>\r\n  </div>\r\n  <h1>Common Regular Expressions</h1>\r\n  <p>Some common regular expressions are shown in Table 1.</p>\r\n  <p>\r\n    <b>Table 1. Common Regular Expressions</b>\r\n  </p>\r\n  <div>\r\n    <table>\r\n      <tbody>\r\n        <tr>\r\n          <th>Field </th>\r\n          <th>Expression</th>\r\n          <th>Format Samples</th>\r\n          <th>Description</th>\r\n        </tr>\r\n        <tr>\r\n          <td>Name</td>\r\n          <td>&#94;&#91;a-zA-Z''-'\\s&#93;&#123;1,40&#125;&#36;</td>\r\n          <td>John Doe<br />O'Dell</td>\r\n          <td>Validates a name. Allows up to 40 uppercase and lowercase characters and a few special characters that are common to some names. You can modify this list.</td>\r\n        </tr>\r\n        <tr>\r\n          <td>Social Security Number</td>\r\n          <td>&#94;\\d&#123;3&#125;-\\d&#123;2&#125;-\\d&#123;4&#125;&#36;</td>\r\n          <td>111-11-1111</td>\r\n          <td>Validates the format, type, and length of the supplied input field. The input must consist of 3 numeric characters followed by a dash, then 2 numeric characters followed by a dash, and then 4 numeric characters.</td>\r\n        </tr>\r\n        <tr>\r\n          <td>Phone Number</td>\r\n          <td>&#94;&#91;01&#93;?&#91;- .&#93;?(\\(&#91;2-9&#93;\\d&#123;2&#125;\\)&#124;&#91;2-9&#93;\\d&#123;2&#125;)&#91;- .&#93;?\\d&#123;3&#125;&#91;- .&#93;?\\d&#123;4&#125;&#36;</td>\r\n          <td>(425) 555-0123<br />425-555-0123<br />425 555 0123<br />1-425-555-0123</td>\r\n          <td>Validates a U.S. phone number. It must consist of 3 numeric characters, optionally enclosed in parentheses, followed by a set of 3 numeric characters and then a set of 4 numeric characters. </td>\r\n        </tr>\r\n        <tr>\r\n          <td>E-mail </td>\r\n          <td>&#94;(&#91;0-9a-zA-Z&#93;(&#91;-.\\w&#93;&#42;&#91;0-9a-zA-Z&#93;)&#42;&#64;(&#91;0-9a-zA-Z&#93;&#91;-\\w&#93;&#42;&#91;0-9a-zA-Z&#93;\\.)&#43;&#91;a-zA-Z&#93;&#123;2,9&#125;)&#36;</td>\r\n          <td>someone&#64;example.com</td>\r\n          <td>Validates an e-mail address.</td>\r\n        </tr>\r\n        <tr>\r\n          <td>URL</td>\r\n          <td>&#94;(ht&#124;f)tp(s?)\\:\\/\\/&#91;0-9a-zA-Z&#93;(&#91;-.\\w&#93;&#42;&#91;0-9a-zA-Z&#93;)&#42;(:(0-9)&#42;)&#42;(\\/?)(&#91;a-zA-Z0-9\\-\\.\\?\\,\\'\\/\\\\\\&#43;&&#37;\\&#36;#_&#93;&#42;)?&#36;</td>\r\n          <td>http://www.microsoft.com</td>\r\n          <td>Validates a URL </td>\r\n        </tr>\r\n        <tr>\r\n          <td>ZIP Code</td>\r\n          <td>&#94;(\\d&#123;5&#125;-\\d&#123;4&#125;&#124;\\d&#123;5&#125;&#124;\\d&#123;9&#125;)&#36;&#124;&#94;(&#91;a-zA-Z&#93;\\d&#91;a-zA-Z&#93; \\d&#91;a-zA-Z&#93;\\d)&#36;</td>\r\n          <td>12345</td>\r\n          <td>Validates a U.S. ZIP Code. The code must consist of 5 or 9 numeric characters.</td>\r\n        </tr>\r\n        <tr>\r\n          <td>Password</td>\r\n          <td>(?&#33;&#94;&#91;0-9&#93;&#42;&#36;)(?&#33;&#94;&#91;a-zA-Z&#93;&#42;&#36;)&#94;(&#91;a-zA-Z0-9&#93;&#123;8,10&#125;)&#36;</td>\r\n          <td>&nbsp;</td>\r\n          <td>Validates a strong password. It must be between 8 and 10 characters, contain at least one digit and one alphabetic character, and must not contain special characters.</td>\r\n        </tr>\r\n        <tr>\r\n          <td>Non- negative integer</td>\r\n          <td>&#94;\\d&#43;&#36;</td>\r\n          <td>0<br />986</td>\r\n          <td>Validates that the field contains an integer greater than zero.</td>\r\n        </tr>\r\n        <tr>\r\n          <td>Currency (non- negative)</td>\r\n          <td>&#94;\\d&#43;(\\.\\d\\d)?&#36;</td>\r\n          <td>1.00</td>\r\n          <td>Validates a positive currency amount. If there is a decimal point, it requires 2 numeric characters after the decimal point. For example, 3.00 is valid but 3.1 is not.</td>\r\n        </tr>\r\n        <tr>\r\n          <td>Currency (positive or negative)</td>\r\n          <td>&#94;(-)?\\d&#43;(\\.\\d\\d)?&#36;</td>\r\n          <td>1.20</td>\r\n          <td>Validates for a positive or negative currency amount. If there is a decimal point, it requires 2 numeric characters after the decimal point.</td>\r\n        </tr>\r\n      </tbody>\r\n    </table>\r\n  </div>\r\n  <h1>Additional Resources</h1>\r\n  <ul>\r\n    <li>For more information, see the regular expression tutorial at <a href=\"http://www.regular-expressions.info/tutorial.html\">http://www.regular-expressions.info/tutorial.html</a>.</li>\r\n  </ul>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
+  "html": "<h1>Summary</h1>\n  <p>This How to shows how you can use regular expressions within ASP.NET applications to constrain untrusted input. Regular expressions are a good way to validate text fields such as names, addresses, phone numbers, and other user information. You can use them to constrain input, apply formatting rules, and check lengths. To validate input captured with server controls, you can use the <b>RegularExpressionValidator</b> control. To validate other forms of input, such as query strings, cookies, and HTML control input, you can use the <b>System.Text.RegularExpressions.Regex</b> class.</p>\n  <p>This How to shows how you can use regular expressions within ASP.NET applications to constrain untrusted input.</p>\n  <h1>Contents</h1>\n  <ul>\n    <li>\n      <div>Objectives</div>\n      <li>\n        <div>Overview</div>\n        <li>\n          <div>Using a RegularExpressionValidator Control</div>\n          <li>\n            <div>Using the Regex Class</div>\n            <li>\n              <div>Common Regular Expressions</div>\n              <li>\n                <div>Additional Resources</div>\n              </li>\n            </li>\n          </li>\n        </li>\n      </li>\n    </li>\n  </ul>\n  <h1>Objectives</h1>\n  <ul>\n    <li>Use regular expressions to constrain input, apply format rules, and check lengths. <li>Use the ASP.NET <b>RegularExpressionValidator</b> control to constrain and validate input. <li>Use the <b>Regex</b> class to constrain and validate input. <li>Learn common regular expressions that can be used to constrain input. </li></li></li></li>\n  </ul>\n  <h1>Overview</h1>\n  <p>If you make unfounded assumptions about the type, length, format, or range of input, your application is unlikely to be robust. Input validation can become a security issue if an attacker discovers that you have made unfounded assumptions. The attacker can then supply carefully crafted input that compromises your application by attempting SQL injection, cross-site scripting, and other injection attacks. To avoid such vulnerability, you should validate text fields (such as names, addresses, tax identification numbers, and so on) and use regular expressions to do the following: </p>\n  <ul>\n    <li>Constrain the acceptable range of input characters. <li>Apply formatting rules. For example, pattern-based fields, such as tax identification numbers, ZIP Codes, or postal codes, require specific patterns of input characters. <li>Check lengths. </li></li></li>\n  </ul>\n  <p>Regular expression support is available to ASP.NET applications through the <b>RegularExpressionValidator</b> control and the <b>Regex</b> class in the <b>System.Text.RegularExpressions</b> namespace.</p>\n  <h1>Using a RegularExpressionValidator Control</h1>\n  <p>If you capture input by using server controls, you can use the <b>RegularExpressionValidator</b> control to validate that input. You can use regular expressions to restrict the range of valid characters, to strip unwanted characters, and to perform length and format checks. You can constrain the input format by defining patterns that the input must match.</p>\n  <h2>To validate a server control's input using a RegularExpressionValidator </h2>\n  <ol>\n    <li>Add a <b>RegularExpressionValidator</b> control to your page. <li>Set the <b>ControlToValidate</b> property to indicate which control to validate. <li>Set the <b>ValidationExpression</b> property to an appropriate regular expression. <li>Set the <b>ErrorMessage</b> property to define the message to display if the validation fails. </li></li></li></li>\n  </ol>\n  <p>The following example shows a <b>RegularExpressionValidator</b> control used to validate a name field.</p>\n  <div>\n    <pre>&lt;&amp;#37;&amp;#64; language=\"C#\" &amp;#37;&gt;<br />&lt;form id=\"form1\" runat=\"server\"&gt;<br />&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;asp:TextBox ID=\"txtName\" runat=\"server\"/&gt;<br />&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;asp:Button ID=\"btnSubmit\" runat=\"server\" Text=\"Submit\" /&gt;<br />&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;asp:RegularExpressionValidator ID=\"regexpName\" runat=\"server\"&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; <br />&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; ErrorMessage=\"This expression does not validate.\" <br />&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; ControlToValidate=\"txtName\"&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; <br />&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; ValidationExpression=\"&amp;#94;&amp;#91;a-zA-Z'.\\s&amp;#93;&amp;#123;1,40&amp;#125;&amp;#36;\" /&gt;<br />&lt;/form&gt;  </pre>\n  </div>\n  <p>The regular expression used in the preceding code example constrains an input name field to alphabetic characters (lowercase and uppercase), space characters, the single quotation mark (or apostrophe) for names such as O'Dell, and the period or dot character. In addition, the field length is constrained to 40 characters.</p>\n  <h2>Using &amp;#94; and &amp;#36;</h2>\n  <p>Enclosing the expression in the caret (<b>&amp;#94;</b>) and dollar sign (<b>&amp;#36;)</b>markers ensures that the expression consists of the desired content and nothing else. A <b>&amp;#94;</b> matches the position at the beginning of the input string and a <b>&amp;#36;</b> matches the position at the end of the input string. If you omit these markers, an attacker could affix malicious input to the beginning or end of valid content and bypass your filter.</p>\n  <h1>Using the Regex Class</h1>\n  <p>If you are not using server controls (which means you cannot use the validation controls) or if you need to validate input from sources other than form fields, such as query string parameters or cookies, you can use the <b>Regex</b> class within the <b>System.Text.RegularExpressions</b> namespace.</p>\n  <h2>To use the Regex class </h2>\n  <ol>\n    <li>Add a <b>using</b> statement to reference the <b>System.Text.RegularExpressions</b> namespace. <li>Call the <b>IsMatch</b> method of the <b>Regex</b> class, as shown in the following example. <div><pre>// Instance method:<br />Regex reg = new Regex(&amp;#64;\"&amp;#94;&amp;#91;a-zA-Z'.&amp;#93;&amp;#123;1,40&amp;#125;&amp;#36;\");<br />Response.Write(reg.IsMatch(txtName.Text));<br />// Static method:<br />if (&amp;#33;Regex.IsMatch(txtName.Text, <br />&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;#64;\"&amp;#94;&amp;#91;a-zA-Z'.&amp;#93;&amp;#123;1,40&amp;#125;&amp;#36;\"))<br />&amp;#123;<br />&amp;nbsp; // Name does not match schema<br />&amp;#125;  </pre></div></li></li>\n  </ol>\n  <p>For performance reasons, you should use the static <b>IsMatch</b> method where possible to avoid unnecessary object creation.</p>\n  <p>The following example shows how to use a regular expression to validate a name input through a regular client-side HTML control.</p>\n  <div>\n    <pre>&lt;&amp;#37;&amp;#64; Page Language=\"C#\" &amp;#37;&gt;</pre>\n    <pre>&lt;html&amp;nbsp; &gt;<br />&amp;nbsp; &lt;body&gt;<br />&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;form id=\"form1\" method=\"post\" action=\"HtmlControls.aspx\"&gt;<br />&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Name:<br />&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;input name=\"txtName\" type=\"text\" /&gt;<br />&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;input name=\"submitBtn\" type=\"Submit\" value=\"Submit\"/&gt;<br />&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/form&gt;<br />&amp;nbsp; &lt;/body&gt;<br />&lt;/html&gt;</pre>\n  </div>\n  <pre>&lt;script runat=\"server\"&gt;</pre>\n  <pre>&amp;nbsp; void Page_Load(object sender, EventArgs e)<br />&amp;nbsp; &amp;#123;<br />&amp;nbsp;&amp;nbsp;&amp;nbsp; if (Request.RequestType == \"POST\")<br />&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;#123;<br />&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; string name = Request.Form&amp;#91;\"txtName\"&amp;#93;;<br />&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; if (name.Length &gt; 0)<br />&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;#123;<br />&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; if (System.Text.RegularExpressions.Regex.IsMatch(name, <br />&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; \"&amp;#94;&amp;#91;a-zA-Z'.&amp;#93;&amp;#123;1,40&amp;#125;&amp;#36;\"))<br />&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Response.Write(\"Valid name\");<br />&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; else<br />&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Response.Write(\"Invalid name\");<br />&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;#125;<br />&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;#125;<br />&amp;nbsp; &amp;#125;</pre>\n  <pre>&lt;/script&gt;  </pre>\n  <h2>Use Regular Expression Comments</h2>\n  <p>Regular expressions are much easier to understand if you use the following syntax and comment each component of the expression by using a number sign (<b>#</b>). To enable comments, you must also specify <b>RegexOptions.IgnorePatternWhitespace</b>, which means that non-escaped white space is ignored.</p>\n  <div>\n    <pre>Regex regex = new Regex(&amp;#64;\"<br />&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;#94;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; # anchor at the start<br />&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; (?=.&amp;#42;\\d)&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; # must contain at least one numeric character<br />&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; (?=.&amp;#42;&amp;#91;a-z&amp;#93;)&amp;nbsp; # must contain one lowercase character<br />&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; (?=.&amp;#42;&amp;#91;A-Z&amp;#93;)&amp;nbsp; # must contain one uppercase character<br />&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; .&amp;#123;8,10&amp;#125;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; # From 8 to 10 characters in length<br />&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; \\s&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; # allows a space <br />&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;#36;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; # anchor at the end\", <br />&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; RegexOptions.IgnorePatternWhitespace);  </pre>\n  </div>\n  <h1>Common Regular Expressions</h1>\n  <p>Some common regular expressions are shown in Table 1.</p>\n  <p>\n    <b>Table 1. Common Regular Expressions</b>\n  </p>\n  <div>\n    <table>\n      <tbody>\n        <tr>\n          <th>Field </th>\n          <th>Expression</th>\n          <th>Format Samples</th>\n          <th>Description</th>\n        </tr>\n        <tr>\n          <td>Name</td>\n          <td>&amp;#94;&amp;#91;a-zA-Z''-'\\s&amp;#93;&amp;#123;1,40&amp;#125;&amp;#36;</td>\n          <td>John Doe<br />O'Dell</td>\n          <td>Validates a name. Allows up to 40 uppercase and lowercase characters and a few special characters that are common to some names. You can modify this list.</td>\n        </tr>\n        <tr>\n          <td>Social Security Number</td>\n          <td>&amp;#94;\\d&amp;#123;3&amp;#125;-\\d&amp;#123;2&amp;#125;-\\d&amp;#123;4&amp;#125;&amp;#36;</td>\n          <td>111-11-1111</td>\n          <td>Validates the format, type, and length of the supplied input field. The input must consist of 3 numeric characters followed by a dash, then 2 numeric characters followed by a dash, and then 4 numeric characters.</td>\n        </tr>\n        <tr>\n          <td>Phone Number</td>\n          <td>&amp;#94;&amp;#91;01&amp;#93;?&amp;#91;- .&amp;#93;?(\\(&amp;#91;2-9&amp;#93;\\d&amp;#123;2&amp;#125;\\)&amp;#124;&amp;#91;2-9&amp;#93;\\d&amp;#123;2&amp;#125;)&amp;#91;- .&amp;#93;?\\d&amp;#123;3&amp;#125;&amp;#91;- .&amp;#93;?\\d&amp;#123;4&amp;#125;&amp;#36;</td>\n          <td>(425) 555-0123<br />425-555-0123<br />425 555 0123<br />1-425-555-0123</td>\n          <td>Validates a U.S. phone number. It must consist of 3 numeric characters, optionally enclosed in parentheses, followed by a set of 3 numeric characters and then a set of 4 numeric characters. </td>\n        </tr>\n        <tr>\n          <td>E-mail </td>\n          <td>&amp;#94;(&amp;#91;0-9a-zA-Z&amp;#93;(&amp;#91;-.\\w&amp;#93;&amp;#42;&amp;#91;0-9a-zA-Z&amp;#93;)&amp;#42;&amp;#64;(&amp;#91;0-9a-zA-Z&amp;#93;&amp;#91;-\\w&amp;#93;&amp;#42;&amp;#91;0-9a-zA-Z&amp;#93;\\.)&amp;#43;&amp;#91;a-zA-Z&amp;#93;&amp;#123;2,9&amp;#125;)&amp;#36;</td>\n          <td>someone&amp;#64;example.com</td>\n          <td>Validates an e-mail address.</td>\n        </tr>\n        <tr>\n          <td>URL</td>\n          <td>&amp;#94;(ht&amp;#124;f)tp(s?)\\:\\/\\/&amp;#91;0-9a-zA-Z&amp;#93;(&amp;#91;-.\\w&amp;#93;&amp;#42;&amp;#91;0-9a-zA-Z&amp;#93;)&amp;#42;(:(0-9)&amp;#42;)&amp;#42;(\\/?)(&amp;#91;a-zA-Z0-9\\-\\.\\?\\,\\'\\/\\\\\\&amp;#43;&amp;&amp;#37;\\&amp;#36;#_&amp;#93;&amp;#42;)?&amp;#36;</td>\n          <td>http://www.microsoft.com</td>\n          <td>Validates a URL </td>\n        </tr>\n        <tr>\n          <td>ZIP Code</td>\n          <td>&amp;#94;(\\d&amp;#123;5&amp;#125;-\\d&amp;#123;4&amp;#125;&amp;#124;\\d&amp;#123;5&amp;#125;&amp;#124;\\d&amp;#123;9&amp;#125;)&amp;#36;&amp;#124;&amp;#94;(&amp;#91;a-zA-Z&amp;#93;\\d&amp;#91;a-zA-Z&amp;#93; \\d&amp;#91;a-zA-Z&amp;#93;\\d)&amp;#36;</td>\n          <td>12345</td>\n          <td>Validates a U.S. ZIP Code. The code must consist of 5 or 9 numeric characters.</td>\n        </tr>\n        <tr>\n          <td>Password</td>\n          <td>(?&amp;#33;&amp;#94;&amp;#91;0-9&amp;#93;&amp;#42;&amp;#36;)(?&amp;#33;&amp;#94;&amp;#91;a-zA-Z&amp;#93;&amp;#42;&amp;#36;)&amp;#94;(&amp;#91;a-zA-Z0-9&amp;#93;&amp;#123;8,10&amp;#125;)&amp;#36;</td>\n          <td>&amp;nbsp;</td>\n          <td>Validates a strong password. It must be between 8 and 10 characters, contain at least one digit and one alphabetic character, and must not contain special characters.</td>\n        </tr>\n        <tr>\n          <td>Non- negative integer</td>\n          <td>&amp;#94;\\d&amp;#43;&amp;#36;</td>\n          <td>0<br />986</td>\n          <td>Validates that the field contains an integer greater than zero.</td>\n        </tr>\n        <tr>\n          <td>Currency (non- negative)</td>\n          <td>&amp;#94;\\d&amp;#43;(\\.\\d\\d)?&amp;#36;</td>\n          <td>1.00</td>\n          <td>Validates a positive currency amount. If there is a decimal point, it requires 2 numeric characters after the decimal point. For example, 3.00 is valid but 3.1 is not.</td>\n        </tr>\n        <tr>\n          <td>Currency (positive or negative)</td>\n          <td>&amp;#94;(-)?\\d&amp;#43;(\\.\\d\\d)?&amp;#36;</td>\n          <td>1.20</td>\n          <td>Validates for a positive or negative currency amount. If there is a decimal point, it requires 2 numeric characters after the decimal point.</td>\n        </tr>\n      </tbody>\n    </table>\n  </div>\n  <h1>Additional Resources</h1>\n  <ul>\n    <li>For more information, see the regular expression tutorial at <a href=\"http://www.regular-expressions.info/tutorial.html\">http://www.regular-expressions.info/tutorial.html</a>.</li>\n  </ul>\n  <hr />\n  <p>Adapted from Microsoft patterns &amp; practices guidance.</p>"
 }

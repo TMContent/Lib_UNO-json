@@ -1,6 +1,6 @@
 {
   "id": "e706145e-6465-4261-96af-a66d6a19a637",
-  "checksum": "373a08d9d5b66f03433b52ec647557c167587da4",
+  "checksum": "c503b13e7fdc6ea19da0b1847f6e383cf67fc040",
   "words": {
     "1": [
       "p",
@@ -662,7 +662,6 @@
       "ol",
       "li",
       "pre",
-      "strong",
       "strong"
     ],
     "debug=\"false\"": [
@@ -1069,8 +1068,11 @@
     "future": [
       "p"
     ],
-    "system.web> <compilation": [
+    "system.web>&nbsp;<compilation": [
       "pre"
+    ],
+    "&nbsp<compilation": [
+      "strong"
     ],
     "however": [
       "p"
@@ -1135,13 +1137,13 @@
       "Adapted from Microsoft patterns & practices guidance."
     ],
     "ol": [
-      "Make sure debugging is turned off in your web.config. To do so add the following line to your web.config file:\r\n      <configuration>   <system.Web>      <compilation debug=\"false\">\r\n    \r\n    \r\n      \r\n        Make sure no debugging information is being echoed in error messages. Scrutinize any error handling code blocks for dynamic error messages that may be displaying debug information to a user.\r\n    \r\n    \r\n      \r\n        Collect debug information via a logging mechanism. Use a logging mechanism instead of transmitting debug information through the HTTP response to the client. \r\n    \r\n    \r\n      \r\n        Restrict access to trace facilities. If your application uses ASP.NET tracing, ensure that your application's traces can be accessed only from the local server. Example:\r\n      <trace enabled=\"true\" pageOutput=\"false\" traceMode=\"SortByTime\" localOnly=\"true\"/>"
+      "Make sure debugging is turned off in your web.config. To do so add the following line to your web.config file:\n      <configuration>   <system.Web>      <compilation debug=\"false\">\n    \n    \n      \n        Make sure no debugging information is being echoed in error messages. Scrutinize any error handling code blocks for dynamic error messages that may be displaying debug information to a user.\n    \n    \n      \n        Collect debug information via a logging mechanism. Use a logging mechanism instead of transmitting debug information through the HTTP response to the client. \n    \n    \n      \n        Restrict access to trace facilities. If your application uses ASP.NET tracing, ensure that your application's traces can be accessed only from the local server. Example:\n      <trace enabled=\"true\" pageOutput=\"false\" traceMode=\"SortByTime\" localOnly=\"true\"/>"
     ],
     "li": [
-      "Make sure debugging is turned off in your web.config. To do so add the following line to your web.config file:\r\n      <configuration>   <system.Web>      <compilation debug=\"false\">",
+      "Make sure debugging is turned off in your web.config. To do so add the following line to your web.config file:\n      <configuration>   <system.Web>      <compilation debug=\"false\">",
       "Make sure no debugging information is being echoed in error messages. Scrutinize any error handling code blocks for dynamic error messages that may be displaying debug information to a user.",
       "Collect debug information via a logging mechanism. Use a logging mechanism instead of transmitting debug information through the HTTP response to the client.",
-      "Restrict access to trace facilities. If your application uses ASP.NET tracing, ensure that your application's traces can be accessed only from the local server. Example:\r\n      <trace enabled=\"true\" pageOutput=\"false\" traceMode=\"SortByTime\" localOnly=\"true\"/>"
+      "Restrict access to trace facilities. If your application uses ASP.NET tracing, ensure that your application's traces can be accessed only from the local server. Example:\n      <trace enabled=\"true\" pageOutput=\"false\" traceMode=\"SortByTime\" localOnly=\"true\"/>"
     ],
     "strong": [
       "Make sure debugging is turned off in your web.config.",
@@ -1154,7 +1156,7 @@
       "Example 2:",
       "<trace enabled=\"true\" localOnly=\"false\" ... />",
       "Example 1:",
-      "<compilation debug=\"false\">",
+      "&nbsp;<compilation debug=\"false\">",
       "Example 2:",
       "<trace enabled=\"true\" localOnly=\"true\" ... />"
     ],
@@ -1163,7 +1165,7 @@
       "<trace enabled=\"true\" pageOutput=\"false\" traceMode=\"SortByTime\" localOnly=\"true\"/>",
       "<configuration>   <system.Web><compilation debug=\"true\">",
       "<configuration>   <system.Web><trace enabled=\"true\" localOnly=\"false\" ... />",
-      "<configuration>   <system.Web> <compilation debug=\"false\">",
+      "<configuration>   <system.Web>&nbsp;<compilation debug=\"false\">",
       "<configuration>   <system.Web><trace enabled=\"true\" localOnly=\"true\" ... />"
     ],
     "br": [
@@ -1185,5 +1187,5 @@
     ]
   },
   "links": [],
-  "html": "<h1>What to Do</h1>\r\n  <p>Turn off debugging information upon release. Scrutinize any error message or other data for any debug information that an attacker could use to leverage a further attack. Debugging data should be removed from any output that an attacker may have access to.</p>\r\n  <h1>Why</h1>\r\n  <p>Attackers can use debug data to learn crucial information about your web application, which they can then use to leverage further attacks. Debug data may inform an attacker what modules your application is using, parameters which have been set, validation techniques in use, or a variety of other things. The attacker can use this information to research latent security bugs in those specific modules or to see how your application is handling certain input, which may allow them to bypass security modules such as encoding, encryption, authentication, etc. </p>\r\n  <h1>When</h1>\r\n  <p>Applies to all ASP.Net applications</p>\r\n  <h1>How</h1>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Make sure debugging is turned off in your web.config. </strong>To do so add the following line to your web.config file:</p>\r\n      <pre>&lt;configuration&gt;<br />   &lt;system.Web&gt;<br />      &lt;compilation debug=\"false\"&gt;</pre>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Make sure no debugging information is being echoed in error messages. </strong>Scrutinize any error handling code blocks for dynamic error messages that may be displaying debug information to a user.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Collect debug information via a logging mechanism. </strong>Use a logging mechanism instead of transmitting debug information through the HTTP response to the client. <br /></p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Restrict access to trace facilities.</strong> If your application uses ASP.NET tracing, ensure that your application's traces can be accessed only from the local server. Example:</p>\r\n      <pre>&lt;trace enabled=\"true\" pageOutput=\"false\" traceMode=\"SortByTime\" <strong>localOnly=\"true\"</strong>/&gt;</pre>\r\n    </li>\r\n  </ol>\r\n  <h1>Problem Example</h1>\r\n  <p>\r\n    <strong>Example 1:</strong>\r\n  </p>\r\n  <p>The following entry in a web.config file will compile debug information into the final project.</p>\r\n  <pre>&lt;configuration&gt;<br />   &lt;system.Web&gt;<br /><strong>&lt;compilation debug=\"true\"&gt;</strong></pre>\r\n  <p>\r\n    <strong>Example 2:</strong>\r\n  </p>\r\n  <p>The following entry in a web.config file enables application tracing. Furthermore, it allows remote hosts to observe the application traces; therefore an attacker can retrieve the Trace.axd file in the application root directory and obtain internal information about the application.</p>\r\n  <pre>&lt;configuration&gt;<br />   &lt;system.Web&gt;<br /><strong>&lt;trace enabled=\"true\" localOnly=\"false\" ... /&gt;</strong></pre>\r\n  <h1>Solution Example</h1>\r\n  <p>\r\n    <strong>Example 1:</strong>\r\n  </p>\r\n  <p>Before the web application is going to go live ensure the web.config file has been updated to not compile debug information into the final project, this will also increase performance. This means that the final project will not include any extra information that the attacker may be able to use in future attacks.</p>\r\n  <pre>&lt;configuration&gt;<br />   &lt;system.Web&gt;<br /><strong>&nbsp;&lt;compilation debug=\"false\"&gt;</strong></pre>\r\n  <p>\r\n    <strong>Example 2:</strong>\r\n  </p>\r\n  <p>The following entry in a web.config file enables application tracing. However, it allows only the local host to observe the application traces; therefore an attacker would have to compromise the local host in order to access the application traces.</p>\r\n  <pre>&lt;configuration&gt;<br />   &lt;system.Web&gt;<br /><strong>&lt;trace enabled=\"true\" localOnly=\"true\" ... /&gt;</strong></pre>\r\n  <br />\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance. </p>"
+  "html": "<h1>What to Do</h1>\n  <p>Turn off debugging information upon release. Scrutinize any error message or other data for any debug information that an attacker could use to leverage a further attack. Debugging data should be removed from any output that an attacker may have access to.</p>\n  <h1>Why</h1>\n  <p>Attackers can use debug data to learn crucial information about your web application, which they can then use to leverage further attacks. Debug data may inform an attacker what modules your application is using, parameters which have been set, validation techniques in use, or a variety of other things. The attacker can use this information to research latent security bugs in those specific modules or to see how your application is handling certain input, which may allow them to bypass security modules such as encoding, encryption, authentication, etc. </p>\n  <h1>When</h1>\n  <p>Applies to all ASP.Net applications</p>\n  <h1>How</h1>\n  <ol>\n    <li>\n      <p>\n        <strong>Make sure debugging is turned off in your web.config. </strong>To do so add the following line to your web.config file:</p>\n      <pre>&lt;configuration&gt;<br />   &lt;system.Web&gt;<br />      &lt;compilation debug=\"false\"&gt;</pre>\n    </li>\n    <li>\n      <p>\n        <strong>Make sure no debugging information is being echoed in error messages. </strong>Scrutinize any error handling code blocks for dynamic error messages that may be displaying debug information to a user.</p>\n    </li>\n    <li>\n      <p>\n        <strong>Collect debug information via a logging mechanism. </strong>Use a logging mechanism instead of transmitting debug information through the HTTP response to the client. <br /></p>\n    </li>\n    <li>\n      <p>\n        <strong>Restrict access to trace facilities.</strong> If your application uses ASP.NET tracing, ensure that your application's traces can be accessed only from the local server. Example:</p>\n      <pre>&lt;trace enabled=\"true\" pageOutput=\"false\" traceMode=\"SortByTime\" <strong>localOnly=\"true\"</strong>/&gt;</pre>\n    </li>\n  </ol>\n  <h1>Problem Example</h1>\n  <p>\n    <strong>Example 1:</strong>\n  </p>\n  <p>The following entry in a web.config file will compile debug information into the final project.</p>\n  <pre>&lt;configuration&gt;<br />   &lt;system.Web&gt;<br /><strong>&lt;compilation debug=\"true\"&gt;</strong></pre>\n  <p>\n    <strong>Example 2:</strong>\n  </p>\n  <p>The following entry in a web.config file enables application tracing. Furthermore, it allows remote hosts to observe the application traces; therefore an attacker can retrieve the Trace.axd file in the application root directory and obtain internal information about the application.</p>\n  <pre>&lt;configuration&gt;<br />   &lt;system.Web&gt;<br /><strong>&lt;trace enabled=\"true\" localOnly=\"false\" ... /&gt;</strong></pre>\n  <h1>Solution Example</h1>\n  <p>\n    <strong>Example 1:</strong>\n  </p>\n  <p>Before the web application is going to go live ensure the web.config file has been updated to not compile debug information into the final project, this will also increase performance. This means that the final project will not include any extra information that the attacker may be able to use in future attacks.</p>\n  <pre>&lt;configuration&gt;<br />   &lt;system.Web&gt;<br /><strong>&amp;nbsp;&lt;compilation debug=\"false\"&gt;</strong></pre>\n  <p>\n    <strong>Example 2:</strong>\n  </p>\n  <p>The following entry in a web.config file enables application tracing. However, it allows only the local host to observe the application traces; therefore an attacker would have to compromise the local host in order to access the application traces.</p>\n  <pre>&lt;configuration&gt;<br />   &lt;system.Web&gt;<br /><strong>&lt;trace enabled=\"true\" localOnly=\"true\" ... /&gt;</strong></pre>\n  <br />\n  <hr />\n  <p>Adapted from Microsoft patterns &amp; practices guidance. </p>"
 }

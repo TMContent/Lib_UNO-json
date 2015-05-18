@@ -1,6 +1,6 @@
 {
   "id": "160c94cd-efc0-4885-9b0d-cd3ad60365e1",
-  "checksum": "ac845b94c853656d6dc0e11d236dbc71d0cbeccd",
+  "checksum": "d671a91c9f0b8d008fb3b87e3225e6049ce0d79e",
   "words": {
     "what": [
       "h1",
@@ -127,8 +127,10 @@
       "p",
       "p"
     ],
+    "data&nbsp;": [
+      "p"
+    ],
     "data": [
-      "p",
       "p",
       "p",
       "p",
@@ -241,7 +243,6 @@
       "p",
       "p",
       "p",
-      "p",
       "p"
     ],
     "during": [
@@ -303,11 +304,7 @@
       "p",
       "p"
     ],
-    "scripting": [
-      "p",
-      "p",
-      "p",
-      "p",
+    "scripting&nbsp;": [
       "p"
     ],
     "if": [
@@ -328,7 +325,6 @@
       "p"
     ],
     "into": [
-      "p",
       "p"
     ],
     "submitting": [
@@ -414,7 +410,7 @@
       "p",
       "p"
     ],
-    "class": [
+    "class&nbsp;": [
       "p"
     ],
     "constitutes": [
@@ -439,7 +435,7 @@
     "system": [
       "p"
     ],
-    "question": [
+    "question&nbsp;": [
       "p"
     ],
     "web": [
@@ -533,15 +529,23 @@
       "p",
       "p"
     ],
+    "it&nbsp;": [
+      "p"
+    ],
     "vulnerable": [
+      "p",
+      "p"
+    ],
+    "scripting": [
+      "p",
+      "p",
       "p",
       "p"
     ],
     "among": [
       "p"
     ],
-    "problems": [
-      "p",
+    "problems&nbsp;": [
       "p"
     ],
     "ensures": [
@@ -558,8 +562,7 @@
       "p",
       "p"
     ],
-    "script": [
-      "p",
+    "script&nbsp;": [
       "p"
     ],
     "aspnet's": [
@@ -644,7 +647,7 @@
     "id='img%=server.htmlencode(request.querystring[\"userid\"])": [
       "pre"
     ],
-    "%'": [
+    "%'&nbsp;&nbsp;": [
       "pre"
     ],
     "src='/imagegif'": [
@@ -666,6 +669,9 @@
       "p"
     ],
     "client-side": [
+      "p"
+    ],
+    "script": [
       "p"
     ],
     "here": [
@@ -710,11 +716,10 @@
     "xss": [
       "p"
     ],
-    "context": [
-      "p",
+    "context&nbsp;": [
       "p"
     ],
-    "this requires": [
+    "this&nbsprequires": [
       "p"
     ],
     "more": [
@@ -779,10 +784,13 @@
     "{": [
       "pre"
     ],
-    "return": [
+    "&nbsp&nbsp;&nbsp;&nbsp;&nbsp;": [
       "pre"
     ],
-    "}   return": [
+    "&nbspreturn": [
+      "pre"
+    ],
+    "}&nbsp&nbsp;&nbsp;return": [
       "pre"
     ],
     "regexreplace(x,": [
@@ -812,7 +820,7 @@
       "p",
       "p"
     ],
-    "library takes": [
+    "library&nbsptakes.&nbsp;": [
       "p"
     ],
     "are": [
@@ -828,7 +836,7 @@
       "p",
       "b"
     ],
-    "method": [
+    "method&nbsp;": [
       "p"
     ],
     "similarly": [
@@ -869,12 +877,16 @@
     "them": [
       "p"
     ],
-    "safe": [
+    "safe&nbsp;": [
       "p"
     ],
     "note": [
       "p",
       "b"
+    ],
+    "&nbsp": [
+      "p",
+      "p"
     ],
     "sure": [
       "p"
@@ -891,7 +903,7 @@
     "before": [
       "p"
     ],
-    "client": [
+    "client&nbsp;": [
       "p"
     ],
     "any": [
@@ -912,6 +924,9 @@
     "exact": [
       "p"
     ],
+    "context": [
+      "p"
+    ],
     "hence": [
       "p"
     ],
@@ -921,6 +936,9 @@
     "need": [
       "p"
     ],
+    "into&nbsp;": [
+      "p"
+    ],
     "early": [
       "p"
     ],
@@ -928,6 +946,9 @@
       "p"
     ],
     "double": [
+      "p"
+    ],
+    "problems": [
       "p"
     ],
     "adapted": [
@@ -944,6 +965,9 @@
     ],
     "guidance": [
       "p"
+    ],
+    "sink]": [
+      "title"
     ]
   },
   "tags": {
@@ -954,20 +978,20 @@
       "How"
     ],
     "p": [
-      "Do not echo input back to the user without first validating and/or encoding the data.  Data which can be modified by a user must be treated as untrusted data, regardless of whether or not the user is expected to modify it during normal application use.",
-      "Echoing input directly back to the user makes your application susceptible to malicious input attacks, such as cross-site scripting.  If a malicious user can trick someone else into submitting dangerous input in such a way that it will be returned to the victim, or cause the site to store the malicious input they give it so it will be returned to other users, they can exploit vulnerabilities of this class.  What constitutes bad input varies widely depending on the system in question.  On the web, it normally means some kind of javascript.",
+      "Do not echo input back to the user without first validating and/or encoding the data.&nbsp; Data which can be modified by a user must be treated as untrusted data, regardless of whether or not the user is expected to modify it during normal application use.",
+      "Echoing input directly back to the user makes your application susceptible to malicious input attacks, such as cross-site scripting.&nbsp; If a malicious user can trick someone else into submitting dangerous input in such a way that it will be returned to the victim, or cause the site to store the malicious input they give it so it will be returned to other users, they can exploit vulnerabilities of this class.&nbsp; What constitutes bad input varies widely depending on the system in question.&nbsp; On the web, it normally means some kind of javascript.",
       "Applications should never echo untrusted or user modifiable data back to the user without appropriate encoding.",
-      "If you write output that includes user input or data from a shared database or a local file that you do not trust, encode it.  Echoing input directly back to the user makes your application vulnerable to cross-site scripting attacks, among other problems.  Encoding the data ensures that it is treated as literal text and not as script.  ASP.NET's Server.HtmlEncode function is often used to protect against cross-site scripting attacks. However, this function only encodes <>\"& characters. This is not sufficient to protect against all possible attacks. For instance, the following ASP.NET code would be vulnerable.",
+      "If you write output that includes user input or data from a shared database or a local file that you do not trust, encode it.&nbsp; Echoing input directly back to the user makes your application vulnerable to cross-site scripting attacks, among other problems.&nbsp; Encoding the data ensures that it is treated as literal text and not as script.&nbsp; ASP.NET's Server.HtmlEncode function is often used to protect against cross-site scripting attacks. However, this function only encodes <>\"& characters. This is not sufficient to protect against all possible attacks. For instance, the following ASP.NET code would be vulnerable.",
       "An attacker could inject client-side script here by setting userId to",
-      "The safest solution is to encode all non-alphanumeric characters. Only this type of whitelist solution will catch all possible XSS attacks, regardless of context.  This requires more overhead in terms of processing time and size of the resulting HTML, but it is the safest encoding mechanism for all HTML contexts:",
-      "This is also the approach that the Microsoft Anti-Cross Site Scripting Library takes.  If you are using the Anti-Cross Site Scripting Library, you can use the Microsoft.Security.ApplicationAntiXSSLibrary.HtmlEncode method.  Similarly, if you write URLs that might contain unsafe characters because they have been constructed from input data or data from a shared database, use Microsoft.Security.ApplicationAntiXSSLibrary.UrlEncode to make them safe.",
-      "Note     Make sure that you encode data at the last possible opportunity before the data is returned to the client.  If you encode any earlier than this, you may not know the exact context that the data will be used in, and hence the format you need to encode into.  Also, early encoding of some data can result in double encoding problems.",
+      "The safest solution is to encode all non-alphanumeric characters. Only this type of whitelist solution will catch all possible XSS attacks, regardless of context.&nbsp; This&nbsp;requires more overhead in terms of processing time and size of the resulting HTML, but it is the safest encoding mechanism for all HTML contexts:",
+      "This is also the approach that the Microsoft Anti-Cross Site Scripting Library&nbsp;takes.&nbsp; If you are using the Anti-Cross Site Scripting Library, you can use the Microsoft.Security.ApplicationAntiXSSLibrary.HtmlEncode method.&nbsp; Similarly, if you write URLs that might contain unsafe characters because they have been constructed from input data or data from a shared database, use Microsoft.Security.ApplicationAntiXSSLibrary.UrlEncode to make them safe.&nbsp;",
+      "Note &nbsp; &nbsp; Make sure that you encode data at the last possible opportunity before the data is returned to the client.&nbsp; If you encode any earlier than this, you may not know the exact context that the data will be used in, and hence the format you need to encode into.&nbsp; Also, early encoding of some data can result in double encoding problems.",
       "Adapted from Microsoft patterns & practices guidance."
     ],
     "pre": [
-      "<img id='img<%=Server.HtmlEncode(Request.QueryString[\"userId\"]) %>'   src='/image.gif' />",
+      "<img id='img<%=Server.HtmlEncode(Request.QueryString[\"userId\"]) %>'&nbsp;&nbsp; src='/image.gif' />",
       "' onload=alert('xss') alt='",
-      "public static string HtmlEncode(string x){   if (x == null)   {          return x;   }   return Regex.Replace(x, \"[^a-zA-Z0-9]+\", new MatchEvaluator(WebUtility.EncodeMatch));}"
+      "public static string HtmlEncode(string x){   if (x == null)   {   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;return x;   }&nbsp;&nbsp;&nbsp;return Regex.Replace(x, \"[^a-zA-Z0-9]+\", new MatchEvaluator(WebUtility.EncodeMatch));}"
     ],
     "strong": [
       "userId"
@@ -991,5 +1015,5 @@
     ]
   },
   "links": [],
-  "html": "<h1>What to Do</h1>\r\n  <p>Do not echo input back to the user without first validating and/or encoding the data.&nbsp; Data which can be modified by a user must be treated as untrusted data, regardless of whether or not the user is expected to modify it during normal application use. </p>\r\n  <h1>Why</h1>\r\n  <p>Echoing input directly back to the user makes your application susceptible to malicious input attacks, such as cross-site scripting.&nbsp; If a malicious user can trick someone else into submitting dangerous input in such a way that it will be returned to the victim, or cause the site to store the malicious input they give it so it will be returned to other users, they can exploit vulnerabilities of this class.&nbsp; What constitutes bad input varies widely depending on the system in question.&nbsp; On the web, it normally means some kind of javascript. </p>\r\n  <h1>When</h1>\r\n  <p>Applications should never echo untrusted or user modifiable data back to the user without appropriate encoding. </p>\r\n  <h1>How</h1>\r\n  <p>If you write output that includes user input or data from a shared database or a local file that you do not trust, encode it.&nbsp; Echoing input directly back to the user makes your application vulnerable to cross-site scripting attacks, among other problems.&nbsp; Encoding the data ensures that it is treated as literal text and not as script.&nbsp; ASP.NET's Server.HtmlEncode function is often used to protect against cross-site scripting attacks. However, this function only encodes &lt;&gt;\"& characters. This is not sufficient to protect against all possible attacks. For instance, the following ASP.NET code would be vulnerable. </p>\r\n  <pre>&lt;img id='img&lt;%=Server.HtmlEncode(Request.QueryString[\"userId\"]) %&gt;'&nbsp;&nbsp; src='/image.gif' /&gt;</pre>\r\n  <p>An attacker could inject client-side script here by setting <strong>userId </strong>to </p>\r\n  <pre>' onload=alert('xss') alt='</pre>\r\n  <p>The safest solution is to encode all non-alphanumeric characters. Only this type of whitelist solution will catch all possible XSS attacks, regardless of context.&nbsp; This&nbsp;requires more overhead in terms of processing time and size of the resulting HTML, but it is the safest encoding mechanism for all HTML contexts:</p>\r\n  <pre>public static string HtmlEncode(string x)<br />{<br />   if (x == null)<br />   {<br />   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;return x;<br />   }<br />&nbsp;&nbsp;&nbsp;return Regex.Replace(x, \"[^a-zA-Z0-9]+\", new MatchEvaluator(WebUtility.EncodeMatch));<br />}</pre>\r\n  <p>This is also the approach that the Microsoft Anti-Cross Site Scripting Library&nbsp;takes.&nbsp; If you are using the Anti-Cross Site Scripting Library, you can use the <b>Microsoft.Security.ApplicationAntiXSSLibrary.HtmlEncode</b> method.&nbsp; Similarly, if you write URLs that might contain unsafe characters because they have been constructed from input data or data from a shared database, use <b>Microsoft.Security.ApplicationAntiXSSLibrary.UrlEncode</b> to make them safe.&nbsp; </p>\r\n  <p>\r\n    <b>Note</b> &nbsp; &nbsp; Make sure that you encode data at the last possible opportunity before the data is returned to the client.&nbsp; If you encode any earlier than this, you may not know the exact context that the data will be used in, and hence the format you need to encode into.&nbsp; Also, early encoding of some data can result in double encoding problems. </p>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance. </p>"
+  "html": "<h1>What to Do</h1>\n  <p>Do not echo input back to the user without first validating and/or encoding the data.&amp;nbsp; Data which can be modified by a user must be treated as untrusted data, regardless of whether or not the user is expected to modify it during normal application use. </p>\n  <h1>Why</h1>\n  <p>Echoing input directly back to the user makes your application susceptible to malicious input attacks, such as cross-site scripting.&amp;nbsp; If a malicious user can trick someone else into submitting dangerous input in such a way that it will be returned to the victim, or cause the site to store the malicious input they give it so it will be returned to other users, they can exploit vulnerabilities of this class.&amp;nbsp; What constitutes bad input varies widely depending on the system in question.&amp;nbsp; On the web, it normally means some kind of javascript. </p>\n  <h1>When</h1>\n  <p>Applications should never echo untrusted or user modifiable data back to the user without appropriate encoding. </p>\n  <h1>How</h1>\n  <p>If you write output that includes user input or data from a shared database or a local file that you do not trust, encode it.&amp;nbsp; Echoing input directly back to the user makes your application vulnerable to cross-site scripting attacks, among other problems.&amp;nbsp; Encoding the data ensures that it is treated as literal text and not as script.&amp;nbsp; ASP.NET's Server.HtmlEncode function is often used to protect against cross-site scripting attacks. However, this function only encodes &lt;&gt;\"&amp; characters. This is not sufficient to protect against all possible attacks. For instance, the following ASP.NET code would be vulnerable. </p>\n  <pre>&lt;img id='img&lt;%=Server.HtmlEncode(Request.QueryString[\"userId\"]) %&gt;'&amp;nbsp;&amp;nbsp; src='/image.gif' /&gt;</pre>\n  <p>An attacker could inject client-side script here by setting <strong>userId </strong>to </p>\n  <pre>' onload=alert('xss') alt='</pre>\n  <p>The safest solution is to encode all non-alphanumeric characters. Only this type of whitelist solution will catch all possible XSS attacks, regardless of context.&amp;nbsp; This&amp;nbsp;requires more overhead in terms of processing time and size of the resulting HTML, but it is the safest encoding mechanism for all HTML contexts:</p>\n  <pre>public static string HtmlEncode(string x)<br />{<br />   if (x == null)<br />   {<br />   &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;return x;<br />   }<br />&amp;nbsp;&amp;nbsp;&amp;nbsp;return Regex.Replace(x, \"[^a-zA-Z0-9]+\", new MatchEvaluator(WebUtility.EncodeMatch));<br />}</pre>\n  <p>This is also the approach that the Microsoft Anti-Cross Site Scripting Library&amp;nbsp;takes.&amp;nbsp; If you are using the Anti-Cross Site Scripting Library, you can use the <b>Microsoft.Security.ApplicationAntiXSSLibrary.HtmlEncode</b> method.&amp;nbsp; Similarly, if you write URLs that might contain unsafe characters because they have been constructed from input data or data from a shared database, use <b>Microsoft.Security.ApplicationAntiXSSLibrary.UrlEncode</b> to make them safe.&amp;nbsp; </p>\n  <p>\n    <b>Note</b> &amp;nbsp; &amp;nbsp; Make sure that you encode data at the last possible opportunity before the data is returned to the client.&amp;nbsp; If you encode any earlier than this, you may not know the exact context that the data will be used in, and hence the format you need to encode into.&amp;nbsp; Also, early encoding of some data can result in double encoding problems. </p>\n  <hr />\n  <p>Adapted from Microsoft patterns &amp; practices guidance. </p>"
 }

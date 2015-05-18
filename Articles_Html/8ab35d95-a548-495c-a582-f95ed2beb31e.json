@@ -1,6 +1,6 @@
 {
   "id": "8ab35d95-a548-495c-a582-f95ed2beb31e",
-  "checksum": "22bbc3b86d00fc822cb22668f44cc87e81eee871",
+  "checksum": "ff26ac351d24d1ec30179cd5cd1e4d02bae6e3c3",
   "words": {
     "35": [
       "ul",
@@ -316,7 +316,7 @@
       "How"
     ],
     "ul": [
-      "Microsoft® Windows Communication Foundation (WCF) 3.5 \r\nMicrosoft Visual Studio® 2008"
+      "Microsoft® Windows Communication Foundation (WCF) 3.5 \nMicrosoft Visual Studio® 2008"
     ],
     "li": [
       "Microsoft® Windows Communication Foundation (WCF) 3.5",
@@ -335,5 +335,5 @@
     ]
   },
   "links": [],
-  "html": "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>Microsoft® Windows Communication Foundation (WCF) 3.5 \r\n<li>Microsoft Visual Studio® 2008</li></li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>If you are using Transport Security, consider using Hardware Accelerator. </p>\r\n  <h1>Why</h1>\r\n  <p>This provides you high throughput. </p>\r\n  <h1>When</h1>\r\n  <p>Consider using this guideline when you are using Transport security.</p>\r\n  <h1>How</h1>\r\n  <p>Transport security can benefit from SSL hardware acceleration that is performed on a network card so as to avoid burdening the host machine CPU with the encryption and decryption of the messages.</p>\r\n  <p>Transport security requires the client and the service to negotiate the details of the encryption. This is done automatically as part of the communication protocol in the respective binding. Hardware acceleration provides high throughput and it may even make the security overhead unnoticeable.</p>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
+  "html": "<h1>Applies to</h1>\n  <ul>\n    <li>Microsoft® Windows Communication Foundation (WCF) 3.5 \n<li>Microsoft Visual Studio® 2008</li></li>\n  </ul>\n  <h1>What to Do</h1>\n  <p>If you are using Transport Security, consider using Hardware Accelerator. </p>\n  <h1>Why</h1>\n  <p>This provides you high throughput. </p>\n  <h1>When</h1>\n  <p>Consider using this guideline when you are using Transport security.</p>\n  <h1>How</h1>\n  <p>Transport security can benefit from SSL hardware acceleration that is performed on a network card so as to avoid burdening the host machine CPU with the encryption and decryption of the messages.</p>\n  <p>Transport security requires the client and the service to negotiate the details of the encryption. This is done automatically as part of the communication protocol in the respective binding. Hardware acceleration provides high throughput and it may even make the security overhead unnoticeable.</p>\n  <hr />\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
 }

@@ -1,6 +1,6 @@
 {
   "id": "0e4a9e3e-0ccc-4b67-b416-75ac18ddd742",
-  "checksum": "d7fad433e1c5a83d3d25e18aeb00fabf52962e2f",
+  "checksum": "e154979c2baa4302166e245cf9c62d6313c9ef9c",
   "words": {
     "applies": [
       "h2"
@@ -68,7 +68,7 @@
       "strong",
       "li"
     ],
-    "ssl": [
+    "tls": [
       "p",
       "p",
       "p",
@@ -689,7 +689,7 @@
       "li",
       "strong"
     ],
-    "non-ssl": [
+    "non-tls": [
       "ol",
       "ol",
       "li",
@@ -703,7 +703,7 @@
       "li",
       "strong"
     ],
-    "ssl-protected": [
+    "tls-protected": [
       "ol",
       "ol",
       "li",
@@ -759,32 +759,32 @@
     ],
     "ul": [
       "Web Applications",
-      "For information about configuring SSL in Apache, please see http://httpd.apache.org/docs/2.0/ssl/ssl_howto.html\n For more information about using SSL with Apache, please see http://www.nurdletech.com/https.html"
+      "For information about configuring TLS in Apache, please see http://httpd.apache.org/docs/2.0/ssl/ssl_howto.html\n For more information about using TLS with Apache, please see http://www.nurdletech.com/https.html"
     ],
     "li": [
       "Web Applications",
-      "Get valid certificates. Purchase a valid SSL certificate. You may purchase a valid SSL key from VeriSign, Thawte, or your web hosting provider. Follow the vendor's instructions for purchasing the SSL certificate. The certificate is usually a .cer file.",
+      "Get valid certificates. Purchase a valid TLS certificate. You may purchase a valid TLS key from VeriSign, Thawte, or your web hosting provider. Follow the vendor's instructions for purchasing the TLS certificate. The certificate is usually a .cer file.",
       "Identify sensitive pages. Make a list of all pages that handle sensitive information, including all pages that use authentication or authorization features.",
-      "Enable SSL on the web server. The exact instructions for enabling SSL are different for different web servers. Please, see the links at the bottom of this page for more information about enabling SSL on some common web application platforms.",
-      "Use SSL to protect the sensitive pages. The exact instructions for doing so are different for different web servers. Use the web server administration interface or edit the server configuration files to enable SSL for all folders containing sensitive pages.",
-      "Redirect non-SSL requests to SSL-protected pages. The exact instructions for doing so are different for different web servers. Use the web server administration interface or edit the server configuration files to redirect non-SSL requests to SSL-protected pages.",
-      "For information about configuring SSL in Apache, please see http://httpd.apache.org/docs/2.0/ssl/ssl_howto.html",
-      "For more information about using SSL with Apache, please see http://www.nurdletech.com/https.html"
+      "Enable TLS on the web server. The exact instructions for enabling TLS are different for different web servers. Please, see the links at the bottom of this page for more information about enabling TLS on some common web application platforms.",
+      "Use TLS to protect the sensitive pages. The exact instructions for doing so are different for different web servers. Use the web server administration interface or edit the server configuration files to enable TLS for all folders containing sensitive pages.",
+      "Redirect non-TLS requests to TLS-protected pages. The exact instructions for doing so are different for different web servers. Use the web server administration interface or edit the server configuration files to redirect non-TLS requests to TLS-protected pages.",
+      "For information about configuring TLS in Apache, please see http://httpd.apache.org/docs/2.0/ssl/ssl_howto.html",
+      "For more information about using TLS with Apache, please see http://www.nurdletech.com/https.html"
     ],
     "p": [
-      "Enable SSL for all the sensitive pages on the web application server.",
-      "SSL should be used to protect all pages that handle sensitive data to protect from eavesdropping attacks.",
-      "The exact instructions for enabling SSL are different for different servers. Enabling SSL is a common task and is well documented for common web server platforms. Links at the bottom of this page lead to documentation that explains how to enable SSL on different platforms. There are some general guidelines that apply to different platforms:"
+      "Enable TLS for all the sensitive pages on the web application server.",
+      "TLS should be used to protect all pages that handle sensitive data to protect from eavesdropping attacks.",
+      "The exact instructions for enabling TLS are different for different servers. Enabling TLS is a common task and is well documented for common web server platforms. Links at the bottom of this page lead to documentation that explains how to enable TLS on different platforms. There are some general guidelines that apply to different platforms:"
     ],
     "ol": [
-      "Get valid certificates. Purchase a valid SSL certificate. You may purchase a valid SSL key from VeriSign, Thawte, or your web hosting provider. Follow the vendor's instructions for purchasing the SSL certificate. The certificate is usually a .cer file. \n Identify sensitive pages. Make a list of all pages that handle sensitive information, including all pages that use authentication or authorization features.\n Enable SSL on the web server. The exact instructions for enabling SSL are different for different web servers. Please, see the links at the bottom of this page for more information about enabling SSL on some common web application platforms.\n Use SSL to protect the sensitive pages. The exact instructions for doing so are different for different web servers. Use the web server administration interface or edit the server configuration files to enable SSL for all folders containing sensitive pages.\n Redirect non-SSL requests to SSL-protected pages. The exact instructions for doing so are different for different web servers. Use the web server administration interface or edit the server configuration files to redirect non-SSL requests to SSL-protected pages."
+      "Get valid certificates. Purchase a valid TLS certificate. You may purchase a valid TLS key from VeriSign, Thawte, or your web hosting provider. Follow the vendor's instructions for purchasing the TLS certificate. The certificate is usually a .cer file. \n Identify sensitive pages. Make a list of all pages that handle sensitive information, including all pages that use authentication or authorization features.\n Enable TLS on the web server. The exact instructions for enabling TLS are different for different web servers. Please, see the links at the bottom of this page for more information about enabling TLS on some common web application platforms.\n Use TLS to protect the sensitive pages. The exact instructions for doing so are different for different web servers. Use the web server administration interface or edit the server configuration files to enable TLS for all folders containing sensitive pages.\n Redirect non-TLS requests to TLS-protected pages. The exact instructions for doing so are different for different web servers. Use the web server administration interface or edit the server configuration files to redirect non-TLS requests to TLS-protected pages."
     ],
     "strong": [
       "Get valid certificates.",
       "Identify sensitive pages.",
-      "Enable SSL on the web server.",
-      "Use SSL to protect the sensitive pages.",
-      "Redirect non-SSL requests to SSL-protected pages."
+      "Enable TLS on the web server.",
+      "Use TLS to protect the sensitive pages.",
+      "Redirect non-TLS requests to TLS-protected pages."
     ],
     "a": [
       "http://httpd.apache.org/docs/2.0/ssl/ssl_howto.html",
@@ -801,5 +801,5 @@
       "text": "http://www.nurdletech.com/https.html"
     }
   ],
-  "html": "<h2>Applies To</h2><ul><li> Web Applications</li>\n</ul><h2>What to Do</h2><p>Enable SSL for all the sensitive pages on the web application server. \n</p><h2>Why</h2><p>SSL should be used to protect all pages that handle sensitive data to protect from eavesdropping attacks.\n</p><h2>How</h2><p>The exact instructions for enabling SSL are different for different servers. Enabling SSL is a common task and is well documented for common web server platforms. Links at the bottom of this page lead to documentation that explains how to enable SSL on different platforms. There are some general guidelines that apply to different platforms:\n</p><ol>\n<li> <strong>Get valid certificates.</strong> Purchase a valid SSL certificate. You may purchase a valid SSL key from VeriSign, Thawte, or your web hosting provider. Follow the vendor's instructions for purchasing the SSL certificate. The certificate is usually a .cer file. </li>\n<li> <strong>Identify sensitive pages.</strong> Make a list of all pages that handle sensitive information, including all pages that use authentication or authorization features.</li>\n<li> <strong>Enable SSL on the web server.</strong> The exact instructions for enabling SSL are different for different web servers. Please, see the links at the bottom of this page for more information about enabling SSL on some common web application platforms.</li>\n<li> <strong>Use SSL to protect the sensitive pages.</strong> The exact instructions for doing so are different for different web servers. Use the web server administration interface or edit the server configuration files to enable SSL for all folders containing sensitive pages.</li>\n<li> <strong>Redirect non-SSL requests to SSL-protected pages.</strong> The exact instructions for doing so are different for different web servers. Use the web server administration interface or edit the server configuration files to redirect non-SSL requests to SSL-protected pages. </li>\n</ol><h2>Additional Resources</h2><ul><li> For information about configuring SSL in Apache, please see <a href=\"http://httpd.apache.org/docs/2.0/ssl/ssl_howto.html\">http://httpd.apache.org/docs/2.0/ssl/ssl_howto.html</a></li>\n<li> For more information about using SSL with Apache, please see <a href=\"http://www.nurdletech.com/https.html\">http://www.nurdletech.com/https.html</a></li>\n</ul>"
+  "html": "<h2>Applies To</h2><ul><li> Web Applications</li>\n</ul><h2>What to Do</h2><p>Enable TLS for all the sensitive pages on the web application server. \n</p><h2>Why</h2><p>TLS should be used to protect all pages that handle sensitive data to protect from eavesdropping attacks.\n</p><h2>How</h2><p>The exact instructions for enabling TLS are different for different servers. Enabling TLS is a common task and is well documented for common web server platforms. Links at the bottom of this page lead to documentation that explains how to enable TLS on different platforms. There are some general guidelines that apply to different platforms:\n</p><ol>\n<li> <strong>Get valid certificates.</strong> Purchase a valid TLS certificate. You may purchase a valid TLS key from VeriSign, Thawte, or your web hosting provider. Follow the vendor's instructions for purchasing the TLS certificate. The certificate is usually a .cer file. </li>\n<li> <strong>Identify sensitive pages.</strong> Make a list of all pages that handle sensitive information, including all pages that use authentication or authorization features.</li>\n<li> <strong>Enable TLS on the web server.</strong> The exact instructions for enabling TLS are different for different web servers. Please, see the links at the bottom of this page for more information about enabling TLS on some common web application platforms.</li>\n<li> <strong>Use TLS to protect the sensitive pages.</strong> The exact instructions for doing so are different for different web servers. Use the web server administration interface or edit the server configuration files to enable TLS for all folders containing sensitive pages.</li>\n<li> <strong>Redirect non-TLS requests to TLS-protected pages.</strong> The exact instructions for doing so are different for different web servers. Use the web server administration interface or edit the server configuration files to redirect non-TLS requests to TLS-protected pages. </li>\n</ol><h2>Additional Resources</h2><ul><li> For information about configuring TLS in Apache, please see <a href=\"http://httpd.apache.org/docs/2.0/ssl/ssl_howto.html\">http://httpd.apache.org/docs/2.0/ssl/ssl_howto.html</a></li>\n<li> For more information about using TLS with Apache, please see <a href=\"http://www.nurdletech.com/https.html\">http://www.nurdletech.com/https.html</a></li>\n</ul>"
 }

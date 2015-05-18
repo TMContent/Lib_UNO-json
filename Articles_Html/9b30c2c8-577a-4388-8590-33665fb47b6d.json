@@ -1,6 +1,6 @@
 {
   "id": "9b30c2c8-577a-4388-8590-33665fb47b6d",
-  "checksum": "1d09d21a6d4cadefbf9ddfd5888245c46c9c2636",
+  "checksum": "e98108a6c0649cebd0fa6cf1505970c344ee9b34",
   "words": {
     "applies": [
       "h1"
@@ -872,37 +872,37 @@
     ],
     "ul": [
       "PCI DSS Requirement 3.6.6",
-      "For more information about key management procedures, please see \r\nhttp://csrc.nist.gov &nbsp; \r\n    For more information about designing and documenting key management procedures, please see&nbsp;http://www.net-security.org/article.php?id=1185",
+      "For more information about key management procedures, please see \nhttp://csrc.nist.gov &nbsp; \n    For more information about designing and documenting key management procedures, please see&nbsp;http://www.net-security.org/article.php?id=1185",
       "Prepare the Key Management Procedures"
     ],
     "li": [
       "PCI DSS Requirement 3.6.6",
       "Check the policy. Check the information security policy to make sure that it requires some form of split knowledge access to the encryption keys.",
       "Conduct interviews. Interview key custodians to make sure the policy is implemented.",
-      "Choose a split knowledge design. Decide on the way to implement split knowledge access to the encryption keys. One way is by protecting the keys with multiple passwords and distributing the passwords among multiple people. Another way is\r\n to give parts of each key to multiple people so that they have the entire key when they combine their parts.",
+      "Choose a split knowledge design. Decide on the way to implement split knowledge access to the encryption keys. One way is by protecting the keys with multiple passwords and distributing the passwords among multiple people. Another way is\n to give parts of each key to multiple people so that they have the entire key when they combine their parts.",
       "Implement split knowledge access. Implement your chosen split knowledge design using your technology platform.",
       "Designate the key custodians. Assign key custodian responsibilities to qualified team members.",
       "Document the split knowledge access. Include the description in the information security policy.",
-      "For more information about key management procedures, please see \r\nhttp://csrc.nist.gov &nbsp;",
+      "For more information about key management procedures, please see \nhttp://csrc.nist.gov &nbsp;",
       "For more information about designing and documenting key management procedures, please see&nbsp;http://www.net-security.org/article.php?id=1185",
       "Prepare the Key Management Procedures"
     ],
     "p": [
-      "No one person should know the encryption keys or the password to access them. One way to implement this is by protecting the encryption keys with multiple passwords and distributing the passwords among multiple people. Another way is to give multiple people\r\n parts of the key so that together, they may assemble the whole key.",
+      "No one person should know the encryption keys or the password to access them. One way to implement this is by protecting the encryption keys with multiple passwords and distributing the passwords among multiple people. Another way is to give multiple people\n parts of the key so that together, they may assemble the whole key.",
       "Split knowledge access helps prevent insider attacks.",
       "To verify the use of split knowledge access to secure the encryption keys, perform the following steps:",
       "Check the policy. Check the information security policy to make sure that it requires some form of split knowledge access to the encryption keys.",
       "Conduct interviews. Interview key custodians to make sure the policy is implemented.",
       "Use the following steps to implement split knowledge access to secure the encryption keys:",
-      "Choose a split knowledge design. Decide on the way to implement split knowledge access to the encryption keys. One way is by protecting the keys with multiple passwords and distributing the passwords among multiple people. Another way is\r\n to give parts of each key to multiple people so that they have the entire key when they combine their parts.",
+      "Choose a split knowledge design. Decide on the way to implement split knowledge access to the encryption keys. One way is by protecting the keys with multiple passwords and distributing the passwords among multiple people. Another way is\n to give parts of each key to multiple people so that they have the entire key when they combine their parts.",
       "Implement split knowledge access. Implement your chosen split knowledge design using your technology platform.",
       "Designate the key custodians. Assign key custodian responsibilities to qualified team members.",
       "Document the split knowledge access. Include the description in the information security policy.",
       "Prepare the Key Management Procedures"
     ],
     "ol": [
-      "Check the policy. Check the information security policy to make sure that it requires some form of split knowledge access to the encryption keys.\r\n\r\n    \r\n    \r\n      \r\n        Conduct interviews. Interview key custodians to make sure the policy is implemented.",
-      "Choose a split knowledge design. Decide on the way to implement split knowledge access to the encryption keys. One way is by protecting the keys with multiple passwords and distributing the passwords among multiple people. Another way is\r\n to give parts of each key to multiple people so that they have the entire key when they combine their parts.\r\n\r\n    \r\n    \r\n      \r\n        Implement split knowledge access. Implement your chosen split knowledge design using your technology platform.\r\n    \r\n    \r\n      \r\n        Designate the key custodians. Assign key custodian responsibilities to qualified team members.\r\n    \r\n    \r\n      \r\n        Document the split knowledge access. Include the description in the information security policy."
+      "Check the policy. Check the information security policy to make sure that it requires some form of split knowledge access to the encryption keys.\n\n    \n    \n      \n        Conduct interviews. Interview key custodians to make sure the policy is implemented.",
+      "Choose a split knowledge design. Decide on the way to implement split knowledge access to the encryption keys. One way is by protecting the keys with multiple passwords and distributing the passwords among multiple people. Another way is\n to give parts of each key to multiple people so that they have the entire key when they combine their parts.\n\n    \n    \n      \n        Implement split knowledge access. Implement your chosen split knowledge design using your technology platform.\n    \n    \n      \n        Designate the key custodians. Assign key custodian responsibilities to qualified team members.\n    \n    \n      \n        Document the split knowledge access. Include the description in the information security policy."
     ],
     "strong": [
       "Check the policy.",
@@ -921,7 +921,7 @@
   "links": [
     {
       "href": "http://csrc.nist.gov/",
-      "text": "\r\nhttp://csrc.nist.gov"
+      "text": "\nhttp://csrc.nist.gov"
     },
     {
       "href": "http://www.net-security.org/article.php?id=1185",
@@ -932,5 +932,5 @@
       "text": "Prepare the Key Management Procedures"
     }
   ],
-  "html": "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 3.6.6</li>\r\n  </ul>\r\n  <h1>What to Check For</h1>\r\n  <p>No one person should know the encryption keys or the password to access them. One way to implement this is by protecting the encryption keys with multiple passwords and distributing the passwords among multiple people. Another way is to give multiple people\r\n parts of the key so that together, they may assemble the whole key.</p>\r\n  <h1>Why</h1>\r\n  <p>Split knowledge access helps prevent insider attacks.</p>\r\n  <h1>How to Check</h1>\r\n  <p>To verify the use of split knowledge access to secure the encryption keys, perform the following steps:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Check the policy.</strong> Check the information security policy to make sure that it requires some form of split knowledge access to the encryption keys.\r\n</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Conduct interviews.</strong> Interview key custodians to make sure the policy is implemented.</p>\r\n    </li>\r\n  </ol>\r\n  <h1>How to Fix</h1>\r\n  <p>Use the following steps to implement split knowledge access to secure the encryption keys:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Choose a split knowledge design.</strong> Decide on the way to implement split knowledge access to the encryption keys. One way is by protecting the keys with multiple passwords and distributing the passwords among multiple people. Another way is\r\n to give parts of each key to multiple people so that they have the entire key when they combine their parts.\r\n</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Implement split knowledge access.</strong> Implement your chosen split knowledge design using your technology platform.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Designate the key custodians. </strong>Assign key custodian responsibilities to qualified team members.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Document the split knowledge access.</strong> Include the description in the information security policy.</p>\r\n    </li>\r\n  </ol>\r\n  <h1>Additional Resources</h1>\r\n  <ul>\r\n    <li>For more information about key management procedures, please see <a href=\"http://csrc.nist.gov/\">\r\nhttp://csrc.nist.gov</a> &amp;nbsp; </li>\r\n    <li>For more information about designing and documenting key management procedures, please see&amp;nbsp;<a href=\"http://www.net-security.org/article.php?id=1185\">http://www.net-security.org/article.php?id=1185</a></li>\r\n  </ul>\r\n  <h1>Related Items</h1>\r\n  <ul>\r\n    <li>\r\n      <p>\r\n        <a href=\"/article/9bb67e82-ea00-4a56-95fd-67720041afe6\">Prepare the Key Management Procedures</a>\r\n      </p>\r\n    </li>\r\n  </ul>"
+  "html": "<h1>Applies to</h1>\n  <ul>\n    <li>PCI DSS Requirement 3.6.6</li>\n  </ul>\n  <h1>What to Check For</h1>\n  <p>No one person should know the encryption keys or the password to access them. One way to implement this is by protecting the encryption keys with multiple passwords and distributing the passwords among multiple people. Another way is to give multiple people\n parts of the key so that together, they may assemble the whole key.</p>\n  <h1>Why</h1>\n  <p>Split knowledge access helps prevent insider attacks.</p>\n  <h1>How to Check</h1>\n  <p>To verify the use of split knowledge access to secure the encryption keys, perform the following steps:</p>\n  <ol>\n    <li>\n      <p>\n        <strong>Check the policy.</strong> Check the information security policy to make sure that it requires some form of split knowledge access to the encryption keys.\n</p>\n    </li>\n    <li>\n      <p>\n        <strong>Conduct interviews.</strong> Interview key custodians to make sure the policy is implemented.</p>\n    </li>\n  </ol>\n  <h1>How to Fix</h1>\n  <p>Use the following steps to implement split knowledge access to secure the encryption keys:</p>\n  <ol>\n    <li>\n      <p>\n        <strong>Choose a split knowledge design.</strong> Decide on the way to implement split knowledge access to the encryption keys. One way is by protecting the keys with multiple passwords and distributing the passwords among multiple people. Another way is\n to give parts of each key to multiple people so that they have the entire key when they combine their parts.\n</p>\n    </li>\n    <li>\n      <p>\n        <strong>Implement split knowledge access.</strong> Implement your chosen split knowledge design using your technology platform.</p>\n    </li>\n    <li>\n      <p>\n        <strong>Designate the key custodians. </strong>Assign key custodian responsibilities to qualified team members.</p>\n    </li>\n    <li>\n      <p>\n        <strong>Document the split knowledge access.</strong> Include the description in the information security policy.</p>\n    </li>\n  </ol>\n  <h1>Additional Resources</h1>\n  <ul>\n    <li>For more information about key management procedures, please see <a href=\"http://csrc.nist.gov/\">\nhttp://csrc.nist.gov</a> &amp;nbsp; </li>\n    <li>For more information about designing and documenting key management procedures, please see&amp;nbsp;<a href=\"http://www.net-security.org/article.php?id=1185\">http://www.net-security.org/article.php?id=1185</a></li>\n  </ul>\n  <h1>Related Items</h1>\n  <ul>\n    <li>\n      <p>\n        <a href=\"/article/9bb67e82-ea00-4a56-95fd-67720041afe6\">Prepare the Key Management Procedures</a>\n      </p>\n    </li>\n  </ul>"
 }

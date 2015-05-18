@@ -1,6 +1,6 @@
 {
   "id": "9b361424-e366-48b4-a45d-40d70393e987",
-  "checksum": "ba0928c0c84e7663300780f780caaf78aa9e7001",
+  "checksum": "1b1e430257f5de8d5eab227f9c672c8481e98d82",
   "words": {
     "56": [
       "ol",
@@ -111,7 +111,7 @@
       "a",
       "title"
     ],
-    "data is": [
+    "data&nbspis": [
       "p"
     ],
     "not": [
@@ -476,7 +476,7 @@
       "p",
       "title"
     ],
-    "a large": [
+    "a&nbsplarge": [
       "p"
     ],
     "performance": [
@@ -680,7 +680,7 @@
       "ul",
       "li"
     ],
-    "is in": [
+    "is&nbspin": [
       "p"
     ],
     "at": [
@@ -986,7 +986,7 @@
     "significantly": [
       "p"
     ],
-    "viewstate which": [
+    "viewstate&nbsp;which": [
       "p"
     ],
     "impacts": [
@@ -1259,7 +1259,7 @@
       "li",
       "p"
     ],
-    "algorithm you": [
+    "algorithm&nbsp;you": [
       "ol",
       "li",
       "p"
@@ -1429,7 +1429,7 @@
       "p",
       "p"
     ],
-    "number the": [
+    "number&nbsp;the": [
       "p"
     ],
     "protected": [
@@ -1456,7 +1456,7 @@
       "p",
       "p"
     ],
-    "hmacs the": [
+    "hmacs&nbsp;the": [
       "p"
     ],
     "application's": [
@@ -1479,7 +1479,7 @@
       "p",
       "p"
     ],
-    "post this": [
+    "post&nbsp;this": [
       "p"
     ],
     "protects": [
@@ -1526,7 +1526,7 @@
     "order": [
       "p"
     ],
-    "also protect": [
+    "also&nbspprotect": [
       "p"
     ],
     "using": [
@@ -1538,7 +1538,7 @@
     "resources": [
       "h1"
     ],
-    "tracing overview": [
+    "tracing&nbspoverview": [
       "ul",
       "li",
       "a"
@@ -1586,6 +1586,9 @@
     "guidance": [
       "p"
     ],
+    "sink]": [
+      "title"
+    ],
     "view": [
       "title"
     ],
@@ -1605,25 +1608,25 @@
       "Related Items"
     ],
     "p": [
-      "Ensure that sensitive data is not being stored in ViewState.",
-      "By default, the ViewState does not provide any protection against information disclosure, and thus should not be used for sensitive data. Encryption can be added to the ViewState, but there is a large performance overhead to doing so, both in terms of CPU usage for encryption and the size of the resulting ViewState; the easiest option is to ensure that no sensitive data is in the ViewState.",
+      "Ensure that sensitive data&nbsp;is not being stored in ViewState.",
+      "By default, the ViewState does not provide any protection against information disclosure, and thus should not be used for sensitive data. Encryption can be added to the ViewState, but there is a&nbsp;large performance overhead to doing so, both in terms of CPU usage for encryption and the size of the resulting ViewState; the easiest option is to ensure that no sensitive data is in the ViewState.",
       "Examine all data which is being placed in ViewState and ensure that it is not sensitive, either alone or in combination with other data. By default, the ViewState will contain the accumulation of all the properties of all the server controls on your page.",
-      "To see what is in your ViewState at runtime, you can use ASP.NET tracing:",
+      "To see what is&nbsp;in your ViewState at runtime, you can use ASP.NET tracing:",
       "Alternatively, you can review the HTML source returned by your application on the client-side and scan for the VIEWSTATE hidden field:",
       "If your ViewState does contain sensitive data, you should consider protecting it against eavesdropping by enabling ViewState encryption, as SSL does not stop ViewState from being viewed and modified on the user's computer.",
-      "To prevent ViewState from being viewed on the user's computer (and over the network), use ASP.NET ViewState encryption. However, do not use it if your ViewState does not contain sensitive data because encryption adds significantly to the size of the ViewState, which impacts performance.",
+      "To prevent ViewState from being viewed on the user's computer (and over the network), use ASP.NET ViewState encryption. However, do not use it if your ViewState does not contain sensitive data because encryption adds significantly to the size of the ViewState,&nbsp;which impacts performance.",
       "To enable ViewState encryption use the following steps:",
       "If you do not want every page to use encrypted ViewState, check that the viewStateEncryptionMode attribute of the <pages> element is set to Auto, as shown in the following example.",
       "Then from within your code, call the RegisterRequiresViewStateEncryption method as shown in the following example.",
-      "The validation attribute is overloaded and can be used to specify either the hashing algorithm or the encryption algorithm. You can specify either 3DES or AES. Because AES offers larger key sizes (128 bits, 192 bits, or 256 bits) than 3DES (56 bits), it is considered more secure and should be used.",
+      "The validation attribute is overloaded and can be used to specify either the hashing algorithm or the encryption algorithm.&nbsp;You can specify either 3DES or AES. Because AES offers larger key sizes (128 bits, 192 bits, or 256 bits) than 3DES (56 bits), it is considered more secure and should be used.",
       "Unless your application is installed in a Web farm, you should leave the decryptionKey attribute with the default values shown in the example.",
-      "An ASP.NET application contains a server-side control that a user will fill in with social security number. The ViewState is protected from tampering by default due to the fact it is integrity checked with HMACS. The application's developer knows that social security information is sensitive so he requires SSL for the form post. This protects the information on the network; however, since ViewState is not encrypted, the social security information is visible on the user's computer to anyone who has access to the machine.",
-      "An ASP.NET application contains a server-side control that a user will fill in with social security number. The ViewState is protected from tampering by default due to the fact it is integrity checked with HMACS. The application's developer knows that social security information is sensitive so he requires SSL for the form post to protect the information on the network. In order to also protect the information on the user's machine, ViewState is encrypted using ASP.NET ViewState encryption.",
+      "An ASP.NET application contains a server-side control that a user will fill in with social security number.&nbsp;The ViewState is protected from tampering by default due to the fact it is integrity checked with HMACS.&nbsp;The application's developer knows that social security information is sensitive so he requires SSL for the form post.&nbsp;This protects the information on the network; however, since ViewState is not encrypted, the social security information is visible on the user's computer to anyone who has access to the machine.",
+      "An ASP.NET application contains a server-side control that a user will fill in with social security number. The ViewState is protected from tampering by default due to the fact it is integrity checked with HMACS. The application's developer knows that social security information is sensitive so he requires SSL for the form post to protect the information on the network. In order to also&nbsp;protect the information on the user's machine, ViewState is encrypted using ASP.NET ViewState encryption.",
       "Adapted from Microsoft patterns & practices guidance."
     ],
     "ol": [
-      "Turn on the ASP.NET Trace \r\n    Submit the form on your page or in some other way force a post back \r\n    Scan the trace for the hidden form field __VIEWSTATE \r\n    The values within this hidden form field make up the contents of the ViewState",
-      "Check that the viewStateEncryptionMode attribute of the <pages> element is set to Always, as shown in the following example. <pages ... viewStateEncryptionMode=\"Always\" ... />If you do not want every page to use encrypted ViewState, check that the viewStateEncryptionMode attribute of the <pages> element is set to Auto, as shown in the following example. <pages ... viewStateEncryptionMode=\"Auto\" ... />   Then from within your code, call the RegisterRequiresViewStateEncryption method as shown in the following example. Page.RegisterRequiresViewStateEncryption();\r\n    Specify the encryption algorithm to use on the validation attribute, as shown in the following example. <machineKey ... validation=\"AES\" ... />The validation attribute is overloaded and can be used to specify either the hashing algorithm or the encryption algorithm. You can specify either 3DES or AES. Because AES offers larger key sizes (128 bits, 192 bits, or 256 bits) than 3DES (56 bits), it is considered more secure and should be used.\r\n    Review the decryptionKey attribute of the <machineKey> element: <machineKey decryptionKey=\"AutoGenerate,IsolateApps\" ... />Unless your application is installed in a Web farm, you should leave the decryptionKey attribute with the default values shown in the example."
+      "Turn on the ASP.NET Trace \n    Submit the form on your page or in some other way force a post back \n    Scan the trace for the hidden form field __VIEWSTATE \n    The values within this hidden form field make up the contents of the ViewState",
+      "Check that the viewStateEncryptionMode attribute of the <pages> element is set to Always, as shown in the following example. <pages ... viewStateEncryptionMode=\"Always\" ... />If you do not want every page to use encrypted ViewState, check that the viewStateEncryptionMode attribute of the <pages> element is set to Auto, as shown in the following example. <pages ... viewStateEncryptionMode=\"Auto\" ... />   Then from within your code, call the RegisterRequiresViewStateEncryption method as shown in the following example. Page.RegisterRequiresViewStateEncryption();\n    Specify the encryption algorithm to use on the validation attribute, as shown in the following example. <machineKey ... validation=\"AES\" ... />The validation attribute is overloaded and can be used to specify either the hashing algorithm or the encryption algorithm.&nbsp;You can specify either 3DES or AES. Because AES offers larger key sizes (128 bits, 192 bits, or 256 bits) than 3DES (56 bits), it is considered more secure and should be used.\n    Review the decryptionKey attribute of the <machineKey> element: <machineKey decryptionKey=\"AutoGenerate,IsolateApps\" ... />Unless your application is installed in a Web farm, you should leave the decryptionKey attribute with the default values shown in the example."
     ],
     "li": [
       "Turn on the ASP.NET Trace",
@@ -1631,9 +1634,9 @@
       "Scan the trace for the hidden form field __VIEWSTATE",
       "The values within this hidden form field make up the contents of the ViewState",
       "Check that the viewStateEncryptionMode attribute of the <pages> element is set to Always, as shown in the following example. <pages ... viewStateEncryptionMode=\"Always\" ... />If you do not want every page to use encrypted ViewState, check that the viewStateEncryptionMode attribute of the <pages> element is set to Auto, as shown in the following example. <pages ... viewStateEncryptionMode=\"Auto\" ... />   Then from within your code, call the RegisterRequiresViewStateEncryption method as shown in the following example. Page.RegisterRequiresViewStateEncryption();",
-      "Specify the encryption algorithm to use on the validation attribute, as shown in the following example. <machineKey ... validation=\"AES\" ... />The validation attribute is overloaded and can be used to specify either the hashing algorithm or the encryption algorithm. You can specify either 3DES or AES. Because AES offers larger key sizes (128 bits, 192 bits, or 256 bits) than 3DES (56 bits), it is considered more secure and should be used.",
+      "Specify the encryption algorithm to use on the validation attribute, as shown in the following example. <machineKey ... validation=\"AES\" ... />The validation attribute is overloaded and can be used to specify either the hashing algorithm or the encryption algorithm.&nbsp;You can specify either 3DES or AES. Because AES offers larger key sizes (128 bits, 192 bits, or 256 bits) than 3DES (56 bits), it is considered more secure and should be used.",
       "Review the decryptionKey attribute of the <machineKey> element: <machineKey decryptionKey=\"AutoGenerate,IsolateApps\" ... />Unless your application is installed in a Web farm, you should leave the decryptionKey attribute with the default values shown in the example.",
-      "For more information on ASP.NET Tracing, see the ASP.NET Tracing Overview on MSDN.",
+      "For more information on ASP.NET Tracing, see the ASP.NET Tracing&nbsp;Overview on MSDN.",
       "Guideline: Avoid Storing Sensitive Data in ViewState"
     ],
     "pre": [
@@ -1678,11 +1681,11 @@
       "decryptionKey"
     ],
     "ul": [
-      "For more information on ASP.NET Tracing, see the ASP.NET Tracing Overview on MSDN.",
+      "For more information on ASP.NET Tracing, see the ASP.NET Tracing&nbsp;Overview on MSDN.",
       "Guideline: Avoid Storing Sensitive Data in ViewState"
     ],
     "a": [
-      "ASP.NET Tracing Overview",
+      "ASP.NET Tracing&nbsp;Overview",
       "Guideline: Avoid Storing Sensitive Data in ViewState"
     ],
     "hr": [
@@ -1692,12 +1695,12 @@
   "links": [
     {
       "href": "http://msdn.microsoft.com/en-us/library/bb386420.aspx",
-      "text": "ASP.NET Tracing Overview "
+      "text": "ASP.NET Tracing&nbsp;Overview "
     },
     {
       "href": "/article/b4b49e15-eb5d-46b0-b56d-231ca447c053",
       "text": "Guideline: Avoid Storing Sensitive Data in ViewState"
     }
   ],
-  "html": "<h1>What to Check For</h1>\r\n  <p>Ensure that sensitive data&nbsp;is not being stored in ViewState.</p>\r\n  <h1>Why</h1>\r\n  <p>By default, the ViewState does not provide any protection against information disclosure, and thus should not be used for sensitive data. Encryption can be added to the ViewState, but there is a&nbsp;large performance overhead to doing so, both in terms of CPU usage for encryption and the size of the resulting ViewState; the easiest option is to ensure that no sensitive data is in the ViewState. </p>\r\n  <h1>How to Check</h1>\r\n  <p>Examine all data which is being placed in ViewState and ensure that it is not sensitive, either alone or in combination with other data. By default, the ViewState will contain the accumulation of all the properties of all the server controls on your page. </p>\r\n  <p>To see what is&nbsp;in your ViewState at runtime, you can use ASP.NET tracing:</p>\r\n  <ol>\r\n    <li>Turn on the ASP.NET Trace </li>\r\n    <li>Submit the form on your page or in some other way force a post back </li>\r\n    <li>Scan the trace for the hidden form field __VIEWSTATE </li>\r\n    <li>The values within this hidden form field make up the contents of the ViewState</li>\r\n  </ol>\r\n  <p>Alternatively, you can review the HTML source returned by your application on the client-side and scan for the VIEWSTATE hidden field:</p>\r\n  <pre>&lt;form name=\"testForm\" method=\"post\" action=\"viewstate.aspx\" id=\"testForm\"&gt;\t<br />&lt;input type=\"hidden\" name=\"__VIEWSTATE\"&gt;</pre>\r\n  <h1>How to Fix</h1>\r\n  <p>If your ViewState does contain sensitive data, you should consider protecting it against eavesdropping by enabling ViewState encryption, as SSL does not stop ViewState from being viewed and modified on the user's computer.</p>\r\n  <p>To prevent ViewState from being viewed on the user's computer (and over the network), use ASP.NET ViewState encryption. However, do not use it if your ViewState does not contain sensitive data because encryption adds significantly to the size of the ViewState,&nbsp;which impacts performance. </p>\r\n  <p>To enable ViewState encryption use the following steps:</p>\r\n  <ol>\r\n    <li>Check that the <b>viewStateEncryptionMode</b> attribute of the <b>&lt;pages&gt;</b> element is set to <b>Always</b>, as shown in the following example. <pre>&lt;pages<br /> ...<br /> viewStateEncryptionMode=\"Always\"<br /> ...<br /> /&gt;</pre><p>If you do not want every page to use encrypted ViewState, check that the <b>viewStateEncryptionMode</b> attribute of the <b>&lt;pages&gt;</b> element is set to <b>Auto</b>, as shown in the following example. </p><pre>&lt;pages<br /> ...<br /> viewStateEncryptionMode=\"Auto\"<br /> ...<br /> /&gt;   </pre><p>Then from within your code, call the <b>RegisterRequiresViewStateEncryption</b> method as shown in the following example. </p><pre>Page.RegisterRequiresViewStateEncryption();</pre></li>\r\n    <li>Specify the encryption algorithm to use on the <b>validation</b> attribute, as shown in the following example. <pre>&lt;machineKey<br /> ...<br /> validation=\"AES\"<br /> ...<br /> /&gt;</pre><p>The <b>validation</b> attribute is overloaded and can be used to specify either the hashing algorithm or the encryption algorithm.&nbsp;You can specify either <b>3DES</b> or <b>AES</b>. Because <b>AES</b> offers larger key sizes (128 bits, 192 bits, or 256 bits) than <b>3DES</b> (56 bits), it is considered more secure and should be used.</p></li>\r\n    <li>Review the <b>decryptionKey</b> attribute of the <b>&lt;machineKey&gt;</b> element: <pre>&lt;machineKey decryptionKey=\"AutoGenerate,IsolateApps\" ... /&gt;</pre><p>Unless your application is installed in a Web farm, you should leave the <b>decryptionKey</b> attribute with the default values shown in the example.</p></li>\r\n  </ol>\r\n  <h1>Problem Example</h1>\r\n  <p>An ASP.NET application contains a server-side control that a user will fill in with social security number.&nbsp;The ViewState is protected from tampering by default due to the fact it is integrity checked with HMACS.&nbsp;The application's developer knows that social security information is sensitive so he requires SSL for the form post.&nbsp;This protects the information on the network; however, since ViewState is not encrypted, the social security information is visible on the user's computer to anyone who has access to the machine.</p>\r\n  <h1>Solution Example</h1>\r\n  <p>An ASP.NET application contains a server-side control that a user will fill in with social security number. The ViewState is protected from tampering by default due to the fact it is integrity checked with HMACS. The application's developer knows that social security information is sensitive so he requires SSL for the form post to protect the information on the network. In order to also&nbsp;protect the information on the user's machine, ViewState is encrypted using ASP.NET ViewState encryption. </p>\r\n  <h1>Additional Resources</h1>\r\n  <ul>\r\n    <li>For more information on ASP.NET Tracing, see the <a href=\"http://msdn.microsoft.com/en-us/library/bb386420.aspx\">ASP.NET Tracing&nbsp;Overview </a>on MSDN.</li>\r\n  </ul>\r\n  <h1>Related Items</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/b4b49e15-eb5d-46b0-b56d-231ca447c053\">Guideline: Avoid Storing Sensitive Data in ViewState</a>\r\n    </li>\r\n  </ul>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance. </p>"
+  "html": "<h1>What to Check For</h1>\n  <p>Ensure that sensitive data&amp;nbsp;is not being stored in ViewState.</p>\n  <h1>Why</h1>\n  <p>By default, the ViewState does not provide any protection against information disclosure, and thus should not be used for sensitive data. Encryption can be added to the ViewState, but there is a&amp;nbsp;large performance overhead to doing so, both in terms of CPU usage for encryption and the size of the resulting ViewState; the easiest option is to ensure that no sensitive data is in the ViewState. </p>\n  <h1>How to Check</h1>\n  <p>Examine all data which is being placed in ViewState and ensure that it is not sensitive, either alone or in combination with other data. By default, the ViewState will contain the accumulation of all the properties of all the server controls on your page. </p>\n  <p>To see what is&amp;nbsp;in your ViewState at runtime, you can use ASP.NET tracing:</p>\n  <ol>\n    <li>Turn on the ASP.NET Trace </li>\n    <li>Submit the form on your page or in some other way force a post back </li>\n    <li>Scan the trace for the hidden form field __VIEWSTATE </li>\n    <li>The values within this hidden form field make up the contents of the ViewState</li>\n  </ol>\n  <p>Alternatively, you can review the HTML source returned by your application on the client-side and scan for the VIEWSTATE hidden field:</p>\n  <pre>&lt;form name=\"testForm\" method=\"post\" action=\"viewstate.aspx\" id=\"testForm\"&gt;\t<br />&lt;input type=\"hidden\" name=\"__VIEWSTATE\"&gt;</pre>\n  <h1>How to Fix</h1>\n  <p>If your ViewState does contain sensitive data, you should consider protecting it against eavesdropping by enabling ViewState encryption, as SSL does not stop ViewState from being viewed and modified on the user's computer.</p>\n  <p>To prevent ViewState from being viewed on the user's computer (and over the network), use ASP.NET ViewState encryption. However, do not use it if your ViewState does not contain sensitive data because encryption adds significantly to the size of the ViewState,&amp;nbsp;which impacts performance. </p>\n  <p>To enable ViewState encryption use the following steps:</p>\n  <ol>\n    <li>Check that the <b>viewStateEncryptionMode</b> attribute of the <b>&lt;pages&gt;</b> element is set to <b>Always</b>, as shown in the following example. <pre>&lt;pages<br /> ...<br /> viewStateEncryptionMode=\"Always\"<br /> ...<br /> /&gt;</pre><p>If you do not want every page to use encrypted ViewState, check that the <b>viewStateEncryptionMode</b> attribute of the <b>&lt;pages&gt;</b> element is set to <b>Auto</b>, as shown in the following example. </p><pre>&lt;pages<br /> ...<br /> viewStateEncryptionMode=\"Auto\"<br /> ...<br /> /&gt;   </pre><p>Then from within your code, call the <b>RegisterRequiresViewStateEncryption</b> method as shown in the following example. </p><pre>Page.RegisterRequiresViewStateEncryption();</pre></li>\n    <li>Specify the encryption algorithm to use on the <b>validation</b> attribute, as shown in the following example. <pre>&lt;machineKey<br /> ...<br /> validation=\"AES\"<br /> ...<br /> /&gt;</pre><p>The <b>validation</b> attribute is overloaded and can be used to specify either the hashing algorithm or the encryption algorithm.&amp;nbsp;You can specify either <b>3DES</b> or <b>AES</b>. Because <b>AES</b> offers larger key sizes (128 bits, 192 bits, or 256 bits) than <b>3DES</b> (56 bits), it is considered more secure and should be used.</p></li>\n    <li>Review the <b>decryptionKey</b> attribute of the <b>&lt;machineKey&gt;</b> element: <pre>&lt;machineKey decryptionKey=\"AutoGenerate,IsolateApps\" ... /&gt;</pre><p>Unless your application is installed in a Web farm, you should leave the <b>decryptionKey</b> attribute with the default values shown in the example.</p></li>\n  </ol>\n  <h1>Problem Example</h1>\n  <p>An ASP.NET application contains a server-side control that a user will fill in with social security number.&amp;nbsp;The ViewState is protected from tampering by default due to the fact it is integrity checked with HMACS.&amp;nbsp;The application's developer knows that social security information is sensitive so he requires SSL for the form post.&amp;nbsp;This protects the information on the network; however, since ViewState is not encrypted, the social security information is visible on the user's computer to anyone who has access to the machine.</p>\n  <h1>Solution Example</h1>\n  <p>An ASP.NET application contains a server-side control that a user will fill in with social security number. The ViewState is protected from tampering by default due to the fact it is integrity checked with HMACS. The application's developer knows that social security information is sensitive so he requires SSL for the form post to protect the information on the network. In order to also&amp;nbsp;protect the information on the user's machine, ViewState is encrypted using ASP.NET ViewState encryption. </p>\n  <h1>Additional Resources</h1>\n  <ul>\n    <li>For more information on ASP.NET Tracing, see the <a href=\"http://msdn.microsoft.com/en-us/library/bb386420.aspx\">ASP.NET Tracing&amp;nbsp;Overview </a>on MSDN.</li>\n  </ul>\n  <h1>Related Items</h1>\n  <ul>\n    <li>\n      <a href=\"/article/b4b49e15-eb5d-46b0-b56d-231ca447c053\">Guideline: Avoid Storing Sensitive Data in ViewState</a>\n    </li>\n  </ul>\n  <hr />\n  <p>Adapted from Microsoft patterns &amp; practices guidance. </p>"
 }

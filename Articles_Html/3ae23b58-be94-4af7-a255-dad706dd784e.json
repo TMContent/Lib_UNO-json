@@ -1,16 +1,11 @@
 {
   "id": "3ae23b58-be94-4af7-a255-dad706dd784e",
-  "checksum": "8c484b953ea97916032e20ce9791bec3140aa652",
+  "checksum": "a0fc5afdb2b09e4cebf6873d59e1ddde283b76bf",
   "words": {
-    "40": [
-      "ul",
-      "li"
-    ],
-    "applies": [
+    "what": [
       "h2"
     ],
     "to": [
-      "h2",
       "h2",
       "p",
       "p",
@@ -30,13 +25,6 @@
       "li",
       "strong",
       "title"
-    ],
-    "aspnet": [
-      "ul",
-      "li"
-    ],
-    "what": [
-      "h2"
     ],
     "do": [
       "h2"
@@ -53,7 +41,7 @@
       "strong",
       "title"
     ],
-    "ssl/tls": [
+    "tls": [
       "p",
       "p",
       "p",
@@ -291,34 +279,29 @@
   },
   "tags": {
     "h2": [
-      "Applies To",
       "What to Do",
       "Why",
       "How"
     ],
-    "ul": [
-      "ASP.NET 4.0"
-    ],
-    "li": [
-      "ASP.NET 4.0",
-      "Get valid certificates. Provision valid certificates for the server hosting the Web Services.",
-      "Set up SSL/TLS on the server. Configure the server to use SSL/TLS for the Web Services. Don't allow unencrypted connections to the Web Services – don't bind Web Services to ports that don't use SSL/TLS.",
-      "Update client code to use SSL/TLS. Change client code to connect to the Web Services using the port that uses SSL/TLS."
-    ],
     "p": [
-      "Use SSL/TLS to protect Web Service connections.",
-      "Protect Web Service connections using SSL/TLS to prevent man-in-the-middle attacks.",
-      "To use SSL/TLS to protect Web Service connections:"
+      "Use TLS to protect Web Service connections.",
+      "Protect Web Service connections using TLS to prevent man-in-the-middle attacks.",
+      "To use TLS to protect Web Service connections:"
     ],
     "ol": [
-      "Get valid certificates. Provision valid certificates for the server hosting the Web Services.\n Set up SSL/TLS on the server. Configure the server to use SSL/TLS for the Web Services. Don't allow unencrypted connections to the Web Services – don't bind Web Services to ports that don't use SSL/TLS.\n Update client code to use SSL/TLS. Change client code to connect to the Web Services using the port that uses SSL/TLS."
+      "Get valid certificates. Provision valid certificates for the server hosting the Web Services.\n Set up TLS on the server. Configure the server to use TLS for the Web Services. Don't allow unencrypted connections to the Web Services – don't bind Web Services to ports that don't use TLS.\n Update client code to use TLS. Change client code to connect to the Web Services using the port that uses TLS."
+    ],
+    "li": [
+      "Get valid certificates. Provision valid certificates for the server hosting the Web Services.",
+      "Set up TLS on the server. Configure the server to use TLS for the Web Services. Don't allow unencrypted connections to the Web Services – don't bind Web Services to ports that don't use TLS.",
+      "Update client code to use TLS. Change client code to connect to the Web Services using the port that uses TLS."
     ],
     "strong": [
       "Get valid certificates.",
-      "Set up SSL/TLS on the server.",
-      "Update client code to use SSL/TLS."
+      "Set up TLS on the server.",
+      "Update client code to use TLS."
     ]
   },
   "links": [],
-  "html": "<h2>Applies To</h2><ul><li> ASP.NET 4.0</li>\n</ul><h2>What to Do</h2><p>Use SSL/TLS to protect Web Service connections.\n</p><h2>Why</h2><p>Protect Web Service connections using SSL/TLS to prevent man-in-the-middle attacks.\n</p><h2>How</h2><p>To use SSL/TLS to protect Web Service connections:\n</p><ol>\n<li> <strong>Get valid certificates.</strong> Provision valid certificates for the server hosting the Web Services.</li>\n<li> <strong>Set up SSL/TLS on the server.</strong> Configure the server to use SSL/TLS for the Web Services. Don't allow unencrypted connections to the Web Services – don't bind Web Services to ports that don't use SSL/TLS.</li>\n<li> <strong>Update client code to use SSL/TLS.</strong> Change client code to connect to the Web Services using the port that uses SSL/TLS.</li>\n</ol>"
+  "html": "<h2>What to Do</h2><p>Use TLS to protect Web Service connections.\n</p><h2>Why</h2><p>Protect Web Service connections using TLS to prevent man-in-the-middle attacks.\n</p><h2>How</h2><p>To use TLS to protect Web Service connections:\n</p><ol>\n<li> <strong>Get valid certificates.</strong> Provision valid certificates for the server hosting the Web Services.</li>\n<li> <strong>Set up TLS on the server.</strong> Configure the server to use TLS for the Web Services. Don't allow unencrypted connections to the Web Services – don't bind Web Services to ports that don't use TLS.</li>\n<li> <strong>Update client code to use TLS.</strong> Change client code to connect to the Web Services using the port that uses TLS.</li>\n</ol>"
 }

@@ -1,6 +1,6 @@
 {
   "id": "0e813bf4-8cad-44c3-8023-15b7c2acc97e",
-  "checksum": "26cde0284d09493e509b58b3eb4636943e260319",
+  "checksum": "1f894dfd3d89b70b18f406fd428200f8682703f1",
   "words": {
     "applies": [
       "h1"
@@ -629,14 +629,14 @@
     ],
     "ul": [
       "C++UN*X",
-      "O_CREAT | O_EXCL. When creating a new file, the call will fail if the file already exists. This prevents the call from overwriting an existing file.\r\n            \r\n              \r\n                O_NOFOLLOW. Ensures that the system will not follow a symlink thereby accessing another file unexpectedly.",
+      "O_CREAT | O_EXCL. When creating a new file, the call will fail if the file already exists. This prevents the call from overwriting an existing file.\n            \n              \n                O_NOFOLLOW. Ensures that the system will not follow a symlink thereby accessing another file unexpectedly.",
       "Open Files Safely on UN*X"
     ],
     "li": [
       "C++",
       "UN*X",
       "Review code. Search for all calls to the fopen() function.",
-      "Use open() instead of fopen(). Replace calls to fopen() with open(). Use open() with the following flags:\r\n        \r\n          \r\n            \r\n              O_CREAT | O_EXCL. When creating a new file, the call will fail if the file already exists. This prevents the call from overwriting an existing file.\r\n            \r\n              \r\n                O_NOFOLLOW. Ensures that the system will not follow a symlink thereby accessing another file unexpectedly.",
+      "Use open() instead of fopen(). Replace calls to fopen() with open(). Use open() with the following flags:\n        \n          \n            \n              O_CREAT | O_EXCL. When creating a new file, the call will fail if the file already exists. This prevents the call from overwriting an existing file.\n            \n              \n                O_NOFOLLOW. Ensures that the system will not follow a symlink thereby accessing another file unexpectedly.",
       "O_CREAT | O_EXCL. When creating a new file, the call will fail if the file already exists. This prevents the call from overwriting an existing file.",
       "O_NOFOLLOW. Ensures that the system will not follow a symlink thereby accessing another file unexpectedly.",
       "Open Files Safely on UN*X"
@@ -652,7 +652,7 @@
       "O_NOFOLLOW. Ensures that the system will not follow a symlink thereby accessing another file unexpectedly."
     ],
     "ol": [
-      "Review code. Search for all calls to the fopen() function.\r\n      \r\n        \r\n          Use open() instead of fopen(). Replace calls to fopen() with open(). Use open() with the following flags:\r\n        \r\n          \r\n            \r\n              O_CREAT | O_EXCL. When creating a new file, the call will fail if the file already exists. This prevents the call from overwriting an existing file.\r\n            \r\n              \r\n                O_NOFOLLOW. Ensures that the system will not follow a symlink thereby accessing another file unexpectedly."
+      "Review code. Search for all calls to the fopen() function.\n      \n        \n          Use open() instead of fopen(). Replace calls to fopen() with open(). Use open() with the following flags:\n        \n          \n            \n              O_CREAT | O_EXCL. When creating a new file, the call will fail if the file already exists. This prevents the call from overwriting an existing file.\n            \n              \n                O_NOFOLLOW. Ensures that the system will not follow a symlink thereby accessing another file unexpectedly."
     ],
     "strong": [
       "Review code.",
@@ -670,5 +670,5 @@
       "text": "Open Files Safely on UN*X"
     }
   ],
-  "html": "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>C&#43;&#43;<li>UN&#42;X</li></li>\r\n  </ul>\r\n  <h1>What to Check For</h1>\r\n  <p>Verify that files are opened safely on UN&#42;X systems.</p>\r\n  <h1>Why</h1>\r\n  <p>When opening files, use open() instead of fopen(). fopen() does not indicate if an existing file was opened for writing or if a new file was created. As a result, a program could overwrite or access an unintended file. open() provides the control that fopen() does not.</p>\r\n  <h1>How to Check</h1>\r\n  <p>Search for calls to the fopen() function to make sure it is not used - open() should be used instead.</p>\r\n  <h1>How to Fix</h1>\r\n  <p>Perform the following actions to open files safely on UN&#42;X systems:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Review code.</strong> Search for all calls to the fopen() function.</p>\r\n      <li>\r\n        <p>\r\n          <strong>Use open() instead of fopen().</strong> Replace calls to fopen() with open(). Use open() with the following flags:</p>\r\n        <ul>\r\n          <li>\r\n            <p>\r\n              <strong>O_CREAT &#124; O_EXCL.</strong> When creating a new file, the call will fail if the file already exists. This prevents the call from overwriting an existing file.</p>\r\n            <li>\r\n              <p>\r\n                <strong>O_NOFOLLOW.</strong> Ensures that the system will not follow a symlink thereby accessing another file unexpectedly.</p>\r\n            </li>\r\n          </li>\r\n        </ul>\r\n      </li>\r\n    </li>\r\n  </ol>\r\n  <h1>Related Items</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/10f126b4-a75a-4d26-82e8-b419579942b1\">Open Files Safely on UN&#42;X</a>\r\n    </li>\r\n  </ul>"
+  "html": "<h1>Applies to</h1>\n  <ul>\n    <li>C&#43;&#43;<li>UN&#42;X</li></li>\n  </ul>\n  <h1>What to Check For</h1>\n  <p>Verify that files are opened safely on UN&#42;X systems.</p>\n  <h1>Why</h1>\n  <p>When opening files, use open() instead of fopen(). fopen() does not indicate if an existing file was opened for writing or if a new file was created. As a result, a program could overwrite or access an unintended file. open() provides the control that fopen() does not.</p>\n  <h1>How to Check</h1>\n  <p>Search for calls to the fopen() function to make sure it is not used - open() should be used instead.</p>\n  <h1>How to Fix</h1>\n  <p>Perform the following actions to open files safely on UN&#42;X systems:</p>\n  <ol>\n    <li>\n      <p>\n        <strong>Review code.</strong> Search for all calls to the fopen() function.</p>\n      <li>\n        <p>\n          <strong>Use open() instead of fopen().</strong> Replace calls to fopen() with open(). Use open() with the following flags:</p>\n        <ul>\n          <li>\n            <p>\n              <strong>O_CREAT &#124; O_EXCL.</strong> When creating a new file, the call will fail if the file already exists. This prevents the call from overwriting an existing file.</p>\n            <li>\n              <p>\n                <strong>O_NOFOLLOW.</strong> Ensures that the system will not follow a symlink thereby accessing another file unexpectedly.</p>\n            </li>\n          </li>\n        </ul>\n      </li>\n    </li>\n  </ol>\n  <h1>Related Items</h1>\n  <ul>\n    <li>\n      <a href=\"/article/10f126b4-a75a-4d26-82e8-b419579942b1\">Open Files Safely on UN&#42;X</a>\n    </li>\n  </ul>"
 }

@@ -1,6 +1,6 @@
 {
   "id": "a044e5d9-ccaa-488c-bdf2-b940d9a0b2b6",
-  "checksum": "1d3bcb0bfb7580a00af758df29d45b2f4ed6f1e9",
+  "checksum": "39d7c66def71eec0e49637f286336ea20ff9b86f",
   "words": {
     "what": [
       "h2",
@@ -397,7 +397,7 @@
       "ul",
       "li"
     ],
-    "see\rhttp://cwe.mitre.org/data/definitions/602.html": [
+    "seehttp://cwe.mitre.org/data/definitions/602.html": [
       "ul",
       "li"
     ],
@@ -413,10 +413,10 @@
       "What to Do"
     ],
     "p": [
-      "For any security checks that are performed on the client side, ensure that these checks are duplicated on the server side, in order to avoid CWE-602. Attackers can bypass the client-side checks by modifying values after the checks have been performed, or\r\n by changing the client to remove the client-side checks entirely. Then, these modified values would be submitted to the server.",
+      "For any security checks that are performed on the client side, ensure that these checks are duplicated on the server side, in order to avoid CWE-602. Attackers can bypass the client-side checks by modifying values after the checks have been performed, or\n by changing the client to remove the client-side checks entirely. Then, these modified values would be submitted to the server.",
       "It is easy to modify the behavior of the client or just write a new client that does not observe the same data validation rules.",
       "All applications should only use server-side validation when the code relies on security.",
-      "Server-side code should perform its own validation. What if an attacker bypasses your client, or shuts off your client-side script routines, for example, by disabling JavaScript? Use client-side validation to help reduce the number of round trips to the\r\n server but do not rely on it for security. This is an example of defense in depth."
+      "Server-side code should perform its own validation. What if an attacker bypasses your client, or shuts off your client-side script routines, for example, by disabling JavaScript? Use client-side validation to help reduce the number of round trips to the\n server but do not rely on it for security. This is an example of defense in depth."
     ],
     "h1": [
       "Why",
@@ -425,10 +425,10 @@
       "Additional Resources"
     ],
     "ul": [
-      "For more information about \"CWE-602: Client-Side Enforcement of Server-Side Security\", please see\r\nhttp://cwe.mitre.org/data/definitions/602.html"
+      "For more information about \"CWE-602: Client-Side Enforcement of Server-Side Security\", please see\nhttp://cwe.mitre.org/data/definitions/602.html"
     ],
     "li": [
-      "For more information about \"CWE-602: Client-Side Enforcement of Server-Side Security\", please see\r\nhttp://cwe.mitre.org/data/definitions/602.html"
+      "For more information about \"CWE-602: Client-Side Enforcement of Server-Side Security\", please see\nhttp://cwe.mitre.org/data/definitions/602.html"
     ],
     "a": [
       "http://cwe.mitre.org/data/definitions/602.html"
@@ -440,5 +440,5 @@
       "text": "http://cwe.mitre.org/data/definitions/602.html"
     }
   ],
-  "html": "<h2>What to Do</h2>\r\n  <p>For any security checks that are performed on the client side, ensure that these checks are duplicated on the server side, in order to avoid CWE-602. Attackers can bypass the client-side checks by modifying values after the checks have been performed, or\r\n by changing the client to remove the client-side checks entirely. Then, these modified values would be submitted to the server.</p>\r\n  <h1>Why</h1>\r\n  <p>It is easy to modify the behavior of the client or just write a new client that does not observe the same data validation rules.</p>\r\n  <h1>When</h1>\r\n  <p>All applications should only use server-side validation when the code relies on security.</p>\r\n  <h1>How</h1>\r\n  <p>Server-side code should perform its own validation. What if an attacker bypasses your client, or shuts off your client-side script routines, for example, by disabling JavaScript? Use client-side validation to help reduce the number of round trips to the\r\n server but do not rely on it for security. This is an example of defense in depth.</p>\r\n  <h1>Additional Resources</h1>\r\n  <ul>\r\n    <li>For more information about \"CWE-602: Client-Side Enforcement of Server-Side Security\", please see\r\n<a href=\"http://cwe.mitre.org/data/definitions/602.html\">http://cwe.mitre.org/data/definitions/602.html</a></li>\r\n  </ul>"
+  "html": "<h2>What to Do</h2>\n  <p>For any security checks that are performed on the client side, ensure that these checks are duplicated on the server side, in order to avoid CWE-602. Attackers can bypass the client-side checks by modifying values after the checks have been performed, or\n by changing the client to remove the client-side checks entirely. Then, these modified values would be submitted to the server.</p>\n  <h1>Why</h1>\n  <p>It is easy to modify the behavior of the client or just write a new client that does not observe the same data validation rules.</p>\n  <h1>When</h1>\n  <p>All applications should only use server-side validation when the code relies on security.</p>\n  <h1>How</h1>\n  <p>Server-side code should perform its own validation. What if an attacker bypasses your client, or shuts off your client-side script routines, for example, by disabling JavaScript? Use client-side validation to help reduce the number of round trips to the\n server but do not rely on it for security. This is an example of defense in depth.</p>\n  <h1>Additional Resources</h1>\n  <ul>\n    <li>For more information about \"CWE-602: Client-Side Enforcement of Server-Side Security\", please see\n<a href=\"http://cwe.mitre.org/data/definitions/602.html\">http://cwe.mitre.org/data/definitions/602.html</a></li>\n  </ul>"
 }

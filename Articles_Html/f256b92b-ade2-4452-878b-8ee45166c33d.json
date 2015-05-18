@@ -1,6 +1,6 @@
 {
   "id": "f256b92b-ade2-4452-878b-8ee45166c33d",
-  "checksum": "3e6538a026b2e5c17336be2e0806518757e2f176",
+  "checksum": "f99789dae909dc17f9e491fa0df61b6b18d62293",
   "words": {
     "description": [
       "h1"
@@ -343,5 +343,5 @@
     ]
   },
   "links": [],
-  "html": "<h1>Description</h1>\r\n  <p>If you have an X.509 certificate and its private key, you can sign an assembly with the private key and a software publisher certificate generated from the X.509 certificate. You use the Signcode.exe tool to sign the assembly. You can generate an X.509 certificate for testing purposes by using the Makecert.exe tool. </p>\r\n  <p>Run the Makecert.exe tool with the following switches, which creates the test X.509 certificate and its respective private key: </p>\r\n  <pre>makecert c:\\TestCert.cer -sv c:\\TestPrivateKey.pvk </pre>\r\n  <p>When prompted, specify a password. This is required to generate the key pair. Next, create a software publisher certificate from the X.509 certificate, by running the Cert2spc tool as shown here: </p>\r\n  <pre>cert2spc c:\\TestCert.cer c:\\TestSPCFile.spc </pre>\r\n  <p>Finally, use the generated software publisher certificate and the private key of the X.509 certificate to sign your assembly. To do this, use the .NET Framework Signcode tool by running the following syntax: </p>\r\n  <pre>signcode /spc c:\\TestSPCFile.spc /v c:\\TestPrivateKey.pvk &lt;assembly to sign</pre>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
+  "html": "<h1>Description</h1>\n  <p>If you have an X.509 certificate and its private key, you can sign an assembly with the private key and a software publisher certificate generated from the X.509 certificate. You use the Signcode.exe tool to sign the assembly. You can generate an X.509 certificate for testing purposes by using the Makecert.exe tool. </p>\n  <p>Run the Makecert.exe tool with the following switches, which creates the test X.509 certificate and its respective private key: </p>\n  <pre>makecert c:\\TestCert.cer -sv c:\\TestPrivateKey.pvk </pre>\n  <p>When prompted, specify a password. This is required to generate the key pair. Next, create a software publisher certificate from the X.509 certificate, by running the Cert2spc tool as shown here: </p>\n  <pre>cert2spc c:\\TestCert.cer c:\\TestSPCFile.spc </pre>\n  <p>Finally, use the generated software publisher certificate and the private key of the X.509 certificate to sign your assembly. To do this, use the .NET Framework Signcode tool by running the following syntax: </p>\n  <pre>signcode /spc c:\\TestSPCFile.spc /v c:\\TestPrivateKey.pvk &lt;assembly to sign</pre>\n  <hr />\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
 }

@@ -1,6 +1,6 @@
 {
   "id": "b6fa1078-dbb0-48ed-8207-6617c4b40224",
-  "checksum": "392616e4a16b04dcb5bf8b07ad2deb00fee65433",
+  "checksum": "c5980c67c4b5cc7aef0156433688e4cb7c500d0c",
   "words": {
     "description": [
       "h1"
@@ -240,5 +240,5 @@
     ]
   },
   "links": [],
-  "html": "<h1>Description</h1>\r\n  <p>When deploying an ASP.NET application, if your application runs on the Microsoft Windows Server&nbsp;operating system, make sure that the application pool that you use is running under a limited account with restricted access to the file system and registry. To use a restricted custom account, you must apply the permissions that the account requires by running the Aspnet_regiis.exe utility with the <b>-ga</b> switch. Afterward, configure your application to run in a dedicated application pool that runs under the identity of the custom account.</p>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
+  "html": "<h1>Description</h1>\n  <p>When deploying an ASP.NET application, if your application runs on the Microsoft Windows Server&nbsp;operating system, make sure that the application pool that you use is running under a limited account with restricted access to the file system and registry. To use a restricted custom account, you must apply the permissions that the account requires by running the Aspnet_regiis.exe utility with the <b>-ga</b> switch. Afterward, configure your application to run in a dedicated application pool that runs under the identity of the custom account.</p>\n  <hr />\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
 }

@@ -1,6 +1,6 @@
 {
   "id": "78797748-84f0-408c-90d7-22ed784143ee",
-  "checksum": "9a695f6c4cdc527b766a0a4a4a054bc201936585",
+  "checksum": "2a71373ada3e7a5caf1b31b04c220c8414c292dd",
   "words": {
     "applies": [
       "h1"
@@ -473,7 +473,7 @@
     "parameterizeddbquerystring": [
       "pre"
     ],
-    "sparam{": [
+    "sparam&#123;": [
       "pre"
     ],
     "//": [
@@ -569,7 +569,7 @@
       "pre",
       "pre"
     ],
-    "source=vm-win2003\\\\sqlexpress\t\t\tintegrated": [
+    "source=vm-win2003\\\\sqlexpress&#9;&#9;&#9;integrated": [
       "pre"
     ],
     "security=sspi\";": [
@@ -657,14 +657,13 @@
       "pre"
     ],
     "people": [
-      "pre",
       "pre"
     ],
     "where": [
       "pre",
       "pre"
     ],
-    "@first\"": [
+    "&#64first\",": [
       "pre"
     ],
     "cn;": [
@@ -734,7 +733,7 @@
     "passing": [
       "pre"
     ],
-    "sqlcommandparameters.add(\"@first\",": [
+    "sqlcommandparameters.add(\"&#64;first\",": [
       "pre"
     ],
     "sqldbtypevarchar,": [
@@ -803,7 +802,7 @@
       "pre",
       "pre"
     ],
-    "+": [
+    "&#43": [
       "pre",
       "pre",
       "pre",
@@ -827,7 +826,7 @@
     "readerclose();": [
       "pre"
     ],
-    "cnclose();}": [
+    "cnclose();&#125;": [
       "pre"
     ],
     "problem": [
@@ -858,7 +857,7 @@
       "ul",
       "li"
     ],
-    "request\"first_name\"];//": [
+    "request&#91\"first_name\"&#93;;//": [
       "pre"
     ],
     "securitystring": [
@@ -886,6 +885,9 @@
       "pre"
     ],
     "parametersqlcommand": [
+      "pre"
+    ],
+    "people&#9&#9;": [
       "pre"
     ],
     "'\"": [
@@ -1150,12 +1152,12 @@
       "li",
       "p"
     ],
-    "dbo].[people]([first]": [
+    "&#91dbo&#93;.&#91;people&#93;(&#91;first&#93;": [
       "ol",
       "li",
       "pre"
     ],
-    "varchar](50)": [
+    "&#91varchar&#93;(50)": [
       "ol",
       "ol",
       "li",
@@ -1191,27 +1193,27 @@
       "pre",
       "pre"
     ],
-    "null[last]": [
+    "null&#91;last&#93;": [
       "ol",
       "li",
       "pre"
     ],
-    "null[email]": [
+    "null&#91;email&#93;": [
       "ol",
       "li",
       "pre"
     ],
-    "varchar](max)": [
+    "&#91varchar&#93;(max)": [
       "ol",
       "li",
       "pre"
     ],
-    "null[phone]": [
+    "null&#91;phone&#93;": [
       "ol",
       "li",
       "pre"
     ],
-    "nchar](15)": [
+    "&#91nchar&#93;(15)": [
       "ol",
       "li",
       "pre"
@@ -1221,17 +1223,17 @@
       "li",
       "pre"
     ],
-    "mainstring[]": [
+    "mainstring&#91;&#93;": [
       "ol",
       "li",
       "pre"
     ],
-    "args{": [
+    "args&#123;": [
       "ol",
       "li",
       "pre"
     ],
-    "parameterizeddbquery\"elvin\");}": [
+    "parameterizeddbquery\"elvin\");&#125;": [
       "ol",
       "li",
       "pre"
@@ -1327,6 +1329,9 @@
     "guidance": [
       "p"
     ],
+    "sink]": [
+      "title"
+    ],
     "secure": [
       "title"
     ],
@@ -1365,8 +1370,8 @@
       "Code does not first validate the \"first_name\" CGI data before incorporation into the database query",
       "SqlCommand object makes use of a dynamically-generated string containing user input, which makes this operations vulnerable to SQL injection. For instance, the following sParam value could result",
       "This example illustrates an inline SELECT statement. SQL injection may also be possible when stored procedures are used, if user input is incorporated dynamically, as above",
-      "Run the following CREATE table command to add the \"people\" table used in this query to your SQL server.\r\n      CREATE TABLE [dbo].[People]([first] [varchar](50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,[last] [varchar](50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,[email] [varchar](max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,[phone] [nchar](15) COLLATE SQL_Latin1_General_CP1_CI_AS NULL)",
-      "Execute the following test case code. \r\n        static void Main(string[] args){     ParameterizedDBQuery(\"Elvin\");}",
+      "Run the following CREATE table command to add the \"people\" table used in this query to your SQL server.\n      CREATE TABLE &#91;dbo&#93;.&#91;People&#93;(&#91;first&#93; &#91;varchar&#93;(50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,&#91;last&#93; &#91;varchar&#93;(50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,&#91;email&#93; &#91;varchar&#93;(max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,&#91;phone&#93; &#91;nchar&#93;(15) COLLATE SQL_Latin1_General_CP1_CI_AS NULL)",
+      "Execute the following test case code. \n        static void Main(string&#91;&#93; args)&#123;     ParameterizedDBQuery(\"Elvin\");&#125;",
       "User input should always be considered \"tainted\" and validated against a set of known and expected values or characters before acceptance by an application for processing in any type of operation, including database queries."
     ],
     "p": [
@@ -1379,12 +1384,12 @@
       "Adapted from Microsoft patterns & practices guidance."
     ],
     "pre": [
-      "static void ParameterizedDBQuery(string sParam){    // Create a new database connection using Integrated Security    string connectionString = \"Initial Catalog=snippets;Data Source=vm-win2003\\\\sqlexpress;\t\t\tIntegrated Security=SSPI;\";    SqlConnection cn = new SqlConnection(connectionString);    // Create a new SQL Command object with our query    // Note the syntax for our parameter field, \"first\"    SqlCommand sqlCommand = new SqlCommand(\"SELECT first, last FROM people WHERE first = @first\", cn);    // Create a new SqlParameter object, which will contain the argument value that we wish to query    // When creating the parameter we specify the parameter name, type of column in the database    // and length of the argument we are passing to the query.    sqlCommand.Parameters.Add(\"@first\", SqlDbType.VarChar, sParam.Length).Value = sParam;    // Open connection to the server and execute query, returning a data reader    cn.Open();    SqlDataReader reader = sqlCommand.ExecuteReader();    while (reader.Read())                Console.WriteLine(\"Result: \" + reader.GetString(0) + \" \" + reader.GetString(1));    // Close Reader and Connection.    reader.Close();    cn.Close();}",
-      "string sParam = Request[\"first_name\"];// Create a new database connection using Integrated Securitystring connectionString = \"Initial Catalog=snippets;Data Source=vm-win2003        \\\\sqlexpress;Integrated Security=SSPI;\";SqlConnection cn = new SqlConnection(connectionString);// Create a new SQL Command object with our query// Dynamically generate SQL query using passed parameterSqlCommand sqlCommand = new SqlCommand(\"SELECT first, last FROM people\t\t WHERE first = '\" + sParam + \"'\", cn);// Open connection to the server and execute query, returning a data readercn.Open();SqlDataReader reader = sqlCommand.ExecuteReader();while (reader.Read())            Console.WriteLine(\"Result: \" + reader.GetString(0) + \" \" + reader.GetString(1));// Close Reader and Connection.reader.Close();cn.Close();",
+      "static void ParameterizedDBQuery(string sParam)&#123;    // Create a new database connection using Integrated Security    string connectionString = \"Initial Catalog=snippets;Data Source=vm-win2003\\\\sqlexpress;&#9;&#9;&#9;Integrated Security=SSPI;\";    SqlConnection cn = new SqlConnection(connectionString);    // Create a new SQL Command object with our query    // Note the syntax for our parameter field, \"first\"    SqlCommand sqlCommand = new SqlCommand(\"SELECT first, last FROM people WHERE first = &#64;first\", cn);    // Create a new SqlParameter object, which will contain the argument value that we wish to query    // When creating the parameter we specify the parameter name, type of column in the database    // and length of the argument we are passing to the query.    sqlCommand.Parameters.Add(\"&#64;first\", SqlDbType.VarChar, sParam.Length).Value = sParam;    // Open connection to the server and execute query, returning a data reader    cn.Open();    SqlDataReader reader = sqlCommand.ExecuteReader();    while (reader.Read())                Console.WriteLine(\"Result: \" &#43; reader.GetString(0) &#43; \" \" &#43; reader.GetString(1));    // Close Reader and Connection.    reader.Close();    cn.Close();&#125;",
+      "string sParam = Request&#91;\"first_name\"&#93;;// Create a new database connection using Integrated Securitystring connectionString = \"Initial Catalog=snippets;Data Source=vm-win2003        \\\\sqlexpress;Integrated Security=SSPI;\";SqlConnection cn = new SqlConnection(connectionString);// Create a new SQL Command object with our query// Dynamically generate SQL query using passed parameterSqlCommand sqlCommand = new SqlCommand(\"SELECT first, last FROM people&#9;&#9; WHERE first = '\" &#43; sParam &#43; \"'\", cn);// Open connection to the server and execute query, returning a data readercn.Open();SqlDataReader reader = sqlCommand.ExecuteReader();while (reader.Read())            Console.WriteLine(\"Result: \" &#43; reader.GetString(0) &#43; \" \" &#43; reader.GetString(1));// Close Reader and Connection.reader.Close();cn.Close();",
       "in the deletion of the entire application database from the   environment:        abcxyz'; drop database snippets; --",
       "using System.Data;using System.Data.SqlClient;",
-      "CREATE TABLE [dbo].[People]([first] [varchar](50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,[last] [varchar](50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,[email] [varchar](max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,[phone] [nchar](15) COLLATE SQL_Latin1_General_CP1_CI_AS NULL)",
-      "static void Main(string[] args){     ParameterizedDBQuery(\"Elvin\");}",
+      "CREATE TABLE &#91;dbo&#93;.&#91;People&#93;(&#91;first&#93; &#91;varchar&#93;(50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,&#91;last&#93; &#91;varchar&#93;(50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,&#91;email&#93; &#91;varchar&#93;(max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,&#91;phone&#93; &#91;nchar&#93;(15) COLLATE SQL_Latin1_General_CP1_CI_AS NULL)",
+      "static void Main(string&#91;&#93; args)&#123;     ParameterizedDBQuery(\"Elvin\");&#125;",
       "Result: Elvin Jones"
     ],
     "br": [
@@ -1434,12 +1439,12 @@
       ""
     ],
     "ol": [
-      "Run the following CREATE table command to add the \"people\" table used in this query to your SQL server.\r\n      CREATE TABLE [dbo].[People]([first] [varchar](50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,[last] [varchar](50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,[email] [varchar](max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,[phone] [nchar](15) COLLATE SQL_Latin1_General_CP1_CI_AS NULL)\r\n      \r\n        Execute the following test case code. \r\n        static void Main(string[] args){     ParameterizedDBQuery(\"Elvin\");}"
+      "Run the following CREATE table command to add the \"people\" table used in this query to your SQL server.\n      CREATE TABLE &#91;dbo&#93;.&#91;People&#93;(&#91;first&#93; &#91;varchar&#93;(50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,&#91;last&#93; &#91;varchar&#93;(50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,&#91;email&#93; &#91;varchar&#93;(max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,&#91;phone&#93; &#91;nchar&#93;(15) COLLATE SQL_Latin1_General_CP1_CI_AS NULL)\n      \n        Execute the following test case code. \n        static void Main(string&#91;&#93; args)&#123;     ParameterizedDBQuery(\"Elvin\");&#125;"
     ],
     "hr": [
       ""
     ]
   },
   "links": [],
-  "html": "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>C# <li>Server-side <li>SQL Server</li></li></li>\r\n  </ul>\r\n  <h1>Summary</h1>\r\n  <p>The purpose of this code snippet is to illustrate the construction of database queries using parameterized arguments to add additional security to database operations that rely upon user-supplied application input.</p>\r\n  <h1>Objectives</h1>\r\n  <ul>\r\n    <li>Incorporate user input into database statements while protecting against potential SQL njection attacks <li>Define and fix query logic during implementation of database operations</li></li>\r\n  </ul>\r\n  <h1>Scenarios</h1>\r\n  <ul>\r\n    <li>Application needs to make use of user input of any form in database queries <li>Application needs to make use of output from other database or code operations in database queries</li></li>\r\n  </ul>\r\n  <h1>Solution Example</h1>\r\n  <pre>static void ParameterizedDBQuery(string sParam)&#123;<br />    // Create a new database connection using Integrated Security<br />    string connectionString = \"Initial Catalog=snippets;Data Source=vm-win2003\\\\sqlexpress;<br />&#9;&#9;&#9;Integrated Security=SSPI;\";<br />    SqlConnection cn = new SqlConnection(connectionString);<br />    // Create a new SQL Command object with our query<br />    // Note the syntax for our parameter field, \"first\"<br />    SqlCommand sqlCommand = new SqlCommand(\"SELECT first, last FROM people WHERE first = &#64;first\", cn);<br />    // Create a new SqlParameter object, which will contain the argument value that we wish to query<br />    // When creating the parameter we specify the parameter name, type of column in the database<br />    // and length of the argument we are passing to the query.<br />    sqlCommand.Parameters.Add(\"&#64;first\", SqlDbType.VarChar, sParam.Length).Value = sParam;<br />    // Open connection to the server and execute query, returning a data reader<br />    cn.Open();<br />    SqlDataReader reader = sqlCommand.ExecuteReader();<br />    while (reader.Read())<br />                Console.WriteLine(\"Result: \" &#43; reader.GetString(0) &#43; \" \" &#43; reader.GetString(1));<br />    // Close Reader and Connection.<br />    reader.Close();<br />    cn.Close();<br />&#125;</pre>\r\n  <h1>Problem Example</h1>\r\n  <p>The following example demonstrates the use of string concatenation to dynamically create a database query. </p>\r\n  <pre>string sParam = Request&#91;\"first_name\"&#93;;<br />// Create a new database connection using Integrated Security<br />string connectionString = \"Initial Catalog=snippets;Data Source=vm-win2003<br />        \\\\sqlexpress;Integrated Security=SSPI;\";<br />SqlConnection cn = new SqlConnection(connectionString);<br />// Create a new SQL Command object with our query<br />// Dynamically generate SQL query using passed parameter<br />SqlCommand sqlCommand = new SqlCommand(\"SELECT first, last FROM people<br />&#9;&#9; WHERE first = '\" &#43; sParam &#43; \"'\", cn);<br />// Open connection to the server and execute query, returning a data readercn.Open();<br />SqlDataReader reader = sqlCommand.ExecuteReader();<br />while (reader.Read())<br />            Console.WriteLine(\"Result: \" &#43; reader.GetString(0) &#43; \" \" &#43; reader.GetString(1));<br />// Close Reader and Connection.reader.Close();<br />cn.Close();</pre>\r\n  <ul>\r\n    <li>Code does not first validate the \"first_name\" CGI data before incorporation into the database query <li>SqlCommand object makes use of a dynamically-generated string containing user input, which makes this operations vulnerable to SQL injection. For instance, the following sParam value could result </li></li>\r\n  </ul>\r\n  <pre>  in the deletion of the entire application database from the<br />   environment:<br />        abcxyz';<br /> drop database snippets; -- </pre>\r\n  <ul>\r\n    <li>This example illustrates an inline SELECT statement. SQL injection may also be possible when stored procedures are used, if user input is incorporated dynamically, as above</li>\r\n  </ul>\r\n  <h1>Test Case</h1>\r\n  <p>The following classes must be included in any project making use of the sample code provided above:</p>\r\n  <pre>using System.Data;<br />using System.Data.SqlClient;</pre>\r\n  <p>The test case requires performance of the following two steps:</p>\r\n  <ol>\r\n    <li>\r\n      <p>Run the following CREATE table command to add the \"people\" table used in this query to your SQL server.</p>\r\n      <pre>CREATE TABLE &#91;dbo&#93;.&#91;People&#93;(&#91;first&#93; &#91;varchar&#93;(50) <br />COLLATE SQL_Latin1_General_CP1_CI_AS NULL,&#91;last&#93; &#91;varchar&#93;(50) <br />COLLATE SQL_Latin1_General_CP1_CI_AS NULL,&#91;email&#93; &#91;varchar&#93;(max) <br />COLLATE SQL_Latin1_General_CP1_CI_AS NULL,&#91;phone&#93; &#91;nchar&#93;(15) <br />COLLATE SQL_Latin1_General_CP1_CI_AS NULL)</pre>\r\n      <li>\r\n        <p>Execute the following test case code. </p>\r\n        <pre>static void Main(string&#91;&#93; args)&#123;<br />     ParameterizedDBQuery(\"Elvin\");<br />&#125;</pre>\r\n      </li>\r\n    </li>\r\n  </ol>\r\n  <h1>Expected Result</h1>\r\n  <pre>Result: Elvin Jones</pre>\r\n  <h1>More Information</h1>\r\n  <ul>\r\n    <li>User input should always be considered \"tainted\" and validated against a set of known and expected values or characters before acceptance by an application for processing in any type of operation, including database queries. </li>\r\n  </ul>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
+  "html": "<h1>Applies to</h1>\n  <ul>\n    <li>C# <li>Server-side <li>SQL Server</li></li></li>\n  </ul>\n  <h1>Summary</h1>\n  <p>The purpose of this code snippet is to illustrate the construction of database queries using parameterized arguments to add additional security to database operations that rely upon user-supplied application input.</p>\n  <h1>Objectives</h1>\n  <ul>\n    <li>Incorporate user input into database statements while protecting against potential SQL njection attacks <li>Define and fix query logic during implementation of database operations</li></li>\n  </ul>\n  <h1>Scenarios</h1>\n  <ul>\n    <li>Application needs to make use of user input of any form in database queries <li>Application needs to make use of output from other database or code operations in database queries</li></li>\n  </ul>\n  <h1>Solution Example</h1>\n  <pre>static void ParameterizedDBQuery(string sParam)&amp;#123;<br />    // Create a new database connection using Integrated Security<br />    string connectionString = \"Initial Catalog=snippets;Data Source=vm-win2003\\\\sqlexpress;<br />&amp;#9;&amp;#9;&amp;#9;Integrated Security=SSPI;\";<br />    SqlConnection cn = new SqlConnection(connectionString);<br />    // Create a new SQL Command object with our query<br />    // Note the syntax for our parameter field, \"first\"<br />    SqlCommand sqlCommand = new SqlCommand(\"SELECT first, last FROM people WHERE first = &amp;#64;first\", cn);<br />    // Create a new SqlParameter object, which will contain the argument value that we wish to query<br />    // When creating the parameter we specify the parameter name, type of column in the database<br />    // and length of the argument we are passing to the query.<br />    sqlCommand.Parameters.Add(\"&amp;#64;first\", SqlDbType.VarChar, sParam.Length).Value = sParam;<br />    // Open connection to the server and execute query, returning a data reader<br />    cn.Open();<br />    SqlDataReader reader = sqlCommand.ExecuteReader();<br />    while (reader.Read())<br />                Console.WriteLine(\"Result: \" &amp;#43; reader.GetString(0) &amp;#43; \" \" &amp;#43; reader.GetString(1));<br />    // Close Reader and Connection.<br />    reader.Close();<br />    cn.Close();<br />&amp;#125;</pre>\n  <h1>Problem Example</h1>\n  <p>The following example demonstrates the use of string concatenation to dynamically create a database query. </p>\n  <pre>string sParam = Request&amp;#91;\"first_name\"&amp;#93;;<br />// Create a new database connection using Integrated Security<br />string connectionString = \"Initial Catalog=snippets;Data Source=vm-win2003<br />        \\\\sqlexpress;Integrated Security=SSPI;\";<br />SqlConnection cn = new SqlConnection(connectionString);<br />// Create a new SQL Command object with our query<br />// Dynamically generate SQL query using passed parameter<br />SqlCommand sqlCommand = new SqlCommand(\"SELECT first, last FROM people<br />&amp;#9;&amp;#9; WHERE first = '\" &amp;#43; sParam &amp;#43; \"'\", cn);<br />// Open connection to the server and execute query, returning a data readercn.Open();<br />SqlDataReader reader = sqlCommand.ExecuteReader();<br />while (reader.Read())<br />            Console.WriteLine(\"Result: \" &amp;#43; reader.GetString(0) &amp;#43; \" \" &amp;#43; reader.GetString(1));<br />// Close Reader and Connection.reader.Close();<br />cn.Close();</pre>\n  <ul>\n    <li>Code does not first validate the \"first_name\" CGI data before incorporation into the database query <li>SqlCommand object makes use of a dynamically-generated string containing user input, which makes this operations vulnerable to SQL injection. For instance, the following sParam value could result </li></li>\n  </ul>\n  <pre>  in the deletion of the entire application database from the<br />   environment:<br />        abcxyz';<br /> drop database snippets; -- </pre>\n  <ul>\n    <li>This example illustrates an inline SELECT statement. SQL injection may also be possible when stored procedures are used, if user input is incorporated dynamically, as above</li>\n  </ul>\n  <h1>Test Case</h1>\n  <p>The following classes must be included in any project making use of the sample code provided above:</p>\n  <pre>using System.Data;<br />using System.Data.SqlClient;</pre>\n  <p>The test case requires performance of the following two steps:</p>\n  <ol>\n    <li>\n      <p>Run the following CREATE table command to add the \"people\" table used in this query to your SQL server.</p>\n      <pre>CREATE TABLE &amp;#91;dbo&amp;#93;.&amp;#91;People&amp;#93;(&amp;#91;first&amp;#93; &amp;#91;varchar&amp;#93;(50) <br />COLLATE SQL_Latin1_General_CP1_CI_AS NULL,&amp;#91;last&amp;#93; &amp;#91;varchar&amp;#93;(50) <br />COLLATE SQL_Latin1_General_CP1_CI_AS NULL,&amp;#91;email&amp;#93; &amp;#91;varchar&amp;#93;(max) <br />COLLATE SQL_Latin1_General_CP1_CI_AS NULL,&amp;#91;phone&amp;#93; &amp;#91;nchar&amp;#93;(15) <br />COLLATE SQL_Latin1_General_CP1_CI_AS NULL)</pre>\n      <li>\n        <p>Execute the following test case code. </p>\n        <pre>static void Main(string&amp;#91;&amp;#93; args)&amp;#123;<br />     ParameterizedDBQuery(\"Elvin\");<br />&amp;#125;</pre>\n      </li>\n    </li>\n  </ol>\n  <h1>Expected Result</h1>\n  <pre>Result: Elvin Jones</pre>\n  <h1>More Information</h1>\n  <ul>\n    <li>User input should always be considered \"tainted\" and validated against a set of known and expected values or characters before acceptance by an application for processing in any type of operation, including database queries. </li>\n  </ul>\n  <hr />\n  <p>Adapted from Microsoft patterns &amp; practices guidance.</p>"
 }

@@ -1,6 +1,6 @@
 {
   "id": "2426a96f-da82-44ce-bbb0-84f198ce151a",
-  "checksum": "5f6da9aa9470ec59df301d63988dabdd5fe8ce1a",
+  "checksum": "ea115a76a4eebb40dfda33df8ff28cd4f5663954",
   "words": {
     "35": [
       "ul",
@@ -258,7 +258,7 @@
       "How"
     ],
     "ul": [
-      "Microsoft® Windows Communication Foundation (WCF) 3.5 \r\nMicrosoft Visual Studio® 2008"
+      "Microsoft® Windows Communication Foundation (WCF) 3.5 \nMicrosoft Visual Studio® 2008"
     ],
     "li": [
       "Microsoft® Windows Communication Foundation (WCF) 3.5",
@@ -276,5 +276,5 @@
     ]
   },
   "links": [],
-  "html": "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>Microsoft® Windows Communication Foundation (WCF) 3.5 \r\n<li>Microsoft Visual Studio® 2008</li></li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Ensure that you do not echo any untrusted input.</p>\r\n  <h1>Why</h1>\r\n  <p>Echoing untrusted input may make client applications that rely on your service susceptible to malicious input attacks. </p>\r\n  <h1>When</h1>\r\n  <p>Consider using this guideline when you are validating messages from your clients.</p>\r\n  <h1>How</h1>\r\n  <p>Do not echo input back to the user without first validating and/or encoding the data. Echoing input directly back to the user may make client applications that rely on your service susceptible to malicious input attacks, such as cross-site scripting.</p>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
+  "html": "<h1>Applies to</h1>\n  <ul>\n    <li>Microsoft® Windows Communication Foundation (WCF) 3.5 \n<li>Microsoft Visual Studio® 2008</li></li>\n  </ul>\n  <h1>What to Do</h1>\n  <p>Ensure that you do not echo any untrusted input.</p>\n  <h1>Why</h1>\n  <p>Echoing untrusted input may make client applications that rely on your service susceptible to malicious input attacks. </p>\n  <h1>When</h1>\n  <p>Consider using this guideline when you are validating messages from your clients.</p>\n  <h1>How</h1>\n  <p>Do not echo input back to the user without first validating and/or encoding the data. Echoing input directly back to the user may make client applications that rely on your service susceptible to malicious input attacks, such as cross-site scripting.</p>\n  <hr />\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
 }

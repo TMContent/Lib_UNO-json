@@ -1,6 +1,6 @@
 {
   "id": "00000000-0000-0000-0000-0000006b67b3",
-  "checksum": "13182556177c57ac804c84b4b70947365eb29f8a",
+  "checksum": "c66d4cb338f2b0f174b887e0d578652387d8c659",
   "words": {
     "5": [
       "ol",
@@ -222,7 +222,7 @@
       "a",
       "title"
     ],
-    "ssl": [
+    "tls": [
       "p",
       "p",
       "p",
@@ -1002,34 +1002,34 @@
     ],
     "ul": [
       "iOS applications that send or receive sensitive data over the network.",
-      "Disable Self-signed SSL Certificates\n Use SSL to Protect Communications\n Use Strong SSL Configurations",
-      "Self-signed SSL Certificates Are Disabled\n SSL Is Used to Protect Communications\n Strong SSL Configurations Are Used",
-      "For more information on proper SSL configuration, please see https://www.owasp.org/index.php/Transport_Layer_Protection_Cheat_Sheet"
+      "Disable Self-signed TLS Certificates\n Use TLS to Protect Communications\n Use Strong TLS Configurations",
+      "Self-signed TLS Certificates Are Disabled\n TLS Is Used to Protect Communications\n Strong TLS Configurations Are Used",
+      "For more information on proper TLS configuration, please see https://www.owasp.org/index.php/Transport_Layer_Protection_Cheat_Sheet"
     ],
     "li": [
       "iOS applications that send or receive sensitive data over the network.",
-      "Verify that self-signed certificates are disabled. Search application code for the presence of the continueWithoutCredentialForAuthenticationChallenge selector - the presence of this selector indicates that self-signed SSL certificates may be allowed.",
-      "Check the available SDK version. Identify the iOS SDK version used by the application. Versions 5 and higher of the iOS SDK use strong SSL cipher suites. There are no practical ways to control which cipher suites are used by iOS applications. If strength of SSL ciphers is a critical requirement, use version 5 or higher of the iOS SDK.",
-      "Disable self-signed certificates. Self-signed certificates are disabled by default by the iOS SDK. Developers have to intentionally enable self-signed certificates for the application to accept them. Self-signed certificates are often enabled for testing in the development environment. It is important to disable self-signed certificates in production releases, because self-signed certificates allow man-in-the-middle attacks, which largely negate the benefits of SSL.",
+      "Verify that self-signed certificates are disabled. Search application code for the presence of the continueWithoutCredentialForAuthenticationChallenge selector - the presence of this selector indicates that self-signed TLS certificates may be allowed.",
+      "Check the available SDK version. Identify the iOS SDK version used by the application. Versions 5 and higher of the iOS SDK use strong TLS cipher suites. There are no practical ways to control which cipher suites are used by iOS applications. If strength of TLS ciphers is a critical requirement, use version 5 or higher of the iOS SDK.",
+      "Disable self-signed certificates. Self-signed certificates are disabled by default by the iOS SDK. Developers have to intentionally enable self-signed certificates for the application to accept them. Self-signed certificates are often enabled for testing in the development environment. It is important to disable self-signed certificates in production releases, because self-signed certificates allow man-in-the-middle attacks, which largely negate the benefits of TLS.",
       "Identify the available SDK version. Identify the iOS SDK version used by the application.",
-      "Use iOS SDK version 5 or higher. The cipher suites used by SSL implementations in iOS SDKs vary by version. Versions 5 and higher of the iOS SDK use strong SSL cipher suites. There are no practical ways to control which cipher suites are used by iOS applications. If strength of SSL ciphers is a critical requirement, use version 5 or higher of the iOS SDK.",
-      "Disable Self-signed SSL Certificates",
-      "Use SSL to Protect Communications",
-      "Use Strong SSL Configurations",
-      "Self-signed SSL Certificates Are Disabled",
-      "SSL Is Used to Protect Communications",
-      "Strong SSL Configurations Are Used",
-      "For more information on proper SSL configuration, please see https://www.owasp.org/index.php/Transport_Layer_Protection_Cheat_Sheet"
+      "Use iOS SDK version 5 or higher. The cipher suites used by TLS implementations in iOS SDKs vary by version. Versions 5 and higher of the iOS SDK use strong TLS cipher suites. There are no practical ways to control which cipher suites are used by iOS applications. If strength of TLS ciphers is a critical requirement, use version 5 or higher of the iOS SDK.",
+      "Disable Self-signed TLS Certificates",
+      "Use TLS to Protect Communications",
+      "Use Strong TLS Configurations",
+      "Self-signed TLS Certificates Are Disabled",
+      "TLS Is Used to Protect Communications",
+      "Strong TLS Configurations Are Used",
+      "For more information on proper TLS configuration, please see https://www.owasp.org/index.php/Transport_Layer_Protection_Cheat_Sheet"
     ],
     "p": [
-      "Verify that strong SSL configurations are used.",
-      "Using strong SSL configurations prevents eavesdropping and other man-in-the-middle attacks. iOS SSL configurations are relatively strong by default, depending on the SDK version, and need to be intentionally degraded to be unsafe. Unfortunately, many developers degrade iOS SSL strength for compatibility with the development environments and subsequently do not restore the SSL configuration to the secure defaults in the production releases.",
-      "To verify that strong SSL configurations are used:",
-      "To use strong SSL configurations:"
+      "Verify that strong TLS configurations are used.",
+      "Using strong TLS configurations prevents eavesdropping and other man-in-the-middle attacks. iOS TLS configurations are relatively strong by default, depending on the SDK version, and need to be intentionally degraded to be unsafe. Unfortunately, many developers degrade iOS TLS strength for compatibility with the development environments and subsequently do not restore the TLS configuration to the secure defaults in the production releases.",
+      "To verify that strong TLS configurations are used:",
+      "To use strong TLS configurations:"
     ],
     "ol": [
-      "Verify that self-signed certificates are disabled. Search application code for the presence of the continueWithoutCredentialForAuthenticationChallenge selector - the presence of this selector indicates that self-signed SSL certificates may be allowed.\n Check the available SDK version. Identify the iOS SDK version used by the application. Versions 5 and higher of the iOS SDK use strong SSL cipher suites. There are no practical ways to control which cipher suites are used by iOS applications. If strength of SSL ciphers is a critical requirement, use version 5 or higher of the iOS SDK.",
-      "Disable self-signed certificates. Self-signed certificates are disabled by default by the iOS SDK. Developers have to intentionally enable self-signed certificates for the application to accept them. Self-signed certificates are often enabled for testing in the development environment. It is important to disable self-signed certificates in production releases, because self-signed certificates allow man-in-the-middle attacks, which largely negate the benefits of SSL.\n Identify the available SDK version. Identify the iOS SDK version used by the application.\n Use iOS SDK version 5 or higher. The cipher suites used by SSL implementations in iOS SDKs vary by version. Versions 5 and higher of the iOS SDK use strong SSL cipher suites. There are no practical ways to control which cipher suites are used by iOS applications. If strength of SSL ciphers is a critical requirement, use version 5 or higher of the iOS SDK."
+      "Verify that self-signed certificates are disabled. Search application code for the presence of the continueWithoutCredentialForAuthenticationChallenge selector - the presence of this selector indicates that self-signed TLS certificates may be allowed.\n Check the available SDK version. Identify the iOS SDK version used by the application. Versions 5 and higher of the iOS SDK use strong TLS cipher suites. There are no practical ways to control which cipher suites are used by iOS applications. If strength of TLS ciphers is a critical requirement, use version 5 or higher of the iOS SDK.",
+      "Disable self-signed certificates. Self-signed certificates are disabled by default by the iOS SDK. Developers have to intentionally enable self-signed certificates for the application to accept them. Self-signed certificates are often enabled for testing in the development environment. It is important to disable self-signed certificates in production releases, because self-signed certificates allow man-in-the-middle attacks, which largely negate the benefits of TLS.\n Identify the available SDK version. Identify the iOS SDK version used by the application.\n Use iOS SDK version 5 or higher. The cipher suites used by TLS implementations in iOS SDKs vary by version. Versions 5 and higher of the iOS SDK use strong TLS cipher suites. There are no practical ways to control which cipher suites are used by iOS applications. If strength of TLS ciphers is a critical requirement, use version 5 or higher of the iOS SDK."
     ],
     "strong": [
       "Verify that self-signed certificates are disabled.",
@@ -1042,44 +1042,44 @@
       "continueWithoutCredentialForAuthenticationChallenge"
     ],
     "a": [
-      "Disable Self-signed SSL Certificates",
-      "Use SSL to Protect Communications",
-      "Use Strong SSL Configurations",
-      "Self-signed SSL Certificates Are Disabled",
-      "SSL Is Used to Protect Communications",
-      "Strong SSL Configurations Are Used",
+      "Disable Self-signed TLS Certificates",
+      "Use TLS to Protect Communications",
+      "Use Strong TLS Configurations",
+      "Self-signed TLS Certificates Are Disabled",
+      "TLS Is Used to Protect Communications",
+      "Strong TLS Configurations Are Used",
       "https://www.owasp.org/index.php/Transport_Layer_Protection_Cheat_Sheet"
     ]
   },
   "links": [
     {
       "href": "00000000-0000-0000-0000-0000006aa5d9",
-      "text": "Disable Self-signed SSL Certificates"
+      "text": "Disable Self-signed TLS Certificates"
     },
     {
       "href": "00000000-0000-0000-0000-00000060779f",
-      "text": "Use SSL to Protect Communications"
+      "text": "Use TLS to Protect Communications"
     },
     {
       "href": "00000000-0000-0000-0000-0000007db8fe",
-      "text": "Use Strong SSL Configurations"
+      "text": "Use Strong TLS Configurations"
     },
     {
       "href": "00000000-0000-0000-0000-00000092c321",
-      "text": "Self-signed SSL Certificates Are Disabled"
+      "text": "Self-signed TLS Certificates Are Disabled"
     },
     {
       "href": "00000000-0000-0000-0000-0000005faaf0",
-      "text": "SSL Is Used to Protect Communications"
+      "text": "TLS Is Used to Protect Communications"
     },
     {
       "href": "00000000-0000-0000-0000-0000006b67b3",
-      "text": "Strong SSL Configurations Are Used"
+      "text": "Strong TLS Configurations Are Used"
     },
     {
       "href": "https://www.owasp.org/index.php/Transport_Layer_Protection_Cheat_Sheet",
       "text": "https://www.owasp.org/index.php/Transport_Layer_Protection_Cheat_Sheet"
     }
   ],
-  "html": "<h2>Applies To</h2><ul><li> iOS applications that send or receive sensitive data over the network.</li>\n</ul><h2>What to Check For</h2><p>Verify that strong SSL configurations are used.\n</p><h2>Why</h2><p>Using strong SSL configurations prevents eavesdropping and other man-in-the-middle attacks. iOS SSL configurations are relatively strong by default, depending on the SDK version, and need to be intentionally degraded to be unsafe. Unfortunately, many developers degrade iOS SSL strength for compatibility with the development environments and subsequently do not restore the SSL configuration to the secure defaults in the production releases.\n</p><h2>How to Check</h2><p>To verify that strong SSL configurations are used:\n</p><ol>\n<li> <strong>Verify that self-signed certificates are disabled.</strong> Search application code for the presence of the <em>continueWithoutCredentialForAuthenticationChallenge</em> selector - the presence of this selector indicates that self-signed SSL certificates may be allowed.</li>\n<li> <strong>Check the available SDK version.</strong> Identify the iOS SDK version used by the application. Versions 5 and higher of the iOS SDK use strong SSL cipher suites. There are no practical ways to control which cipher suites are used by iOS applications. If strength of SSL ciphers is a critical requirement, use version 5 or higher of the iOS SDK.</li>\n</ol><h2>How to Fix</h2><p>To use strong SSL configurations:\n</p><ol>\n<li> <strong>Disable self-signed certificates.</strong> Self-signed certificates are disabled by default by the iOS SDK. Developers have to intentionally enable self-signed certificates for the application to accept them. Self-signed certificates are often enabled for testing in the development environment. It is important to disable self-signed certificates in production releases, because self-signed certificates allow man-in-the-middle attacks, which largely negate the benefits of SSL.</li>\n<li> <strong>Identify the available SDK version.</strong> Identify the iOS SDK version used by the application.</li>\n<li> <strong>Use iOS SDK version 5 or higher.</strong> The cipher suites used by SSL implementations in iOS SDKs vary by version. Versions 5 and higher of the iOS SDK use strong SSL cipher suites. There are no practical ways to control which cipher suites are used by iOS applications. If strength of SSL ciphers is a critical requirement, use version 5 or higher of the iOS SDK.</li>\n</ol><h2>Communication Security Guidelines</h2><ul><li> <a href=\"00000000-0000-0000-0000-0000006aa5d9\">Disable Self-signed SSL Certificates</a></li>\n<li> <a href=\"00000000-0000-0000-0000-00000060779f\">Use SSL to Protect Communications</a></li>\n<li> <a href=\"00000000-0000-0000-0000-0000007db8fe\">Use Strong SSL Configurations</a></li>\n</ul><h2>Communication Security Checklists</h2><ul><li> <a href=\"00000000-0000-0000-0000-00000092c321\">Self-signed SSL Certificates Are Disabled</a></li>\n<li> <a href=\"00000000-0000-0000-0000-0000005faaf0\">SSL Is Used to Protect Communications</a></li>\n<li> <a href=\"00000000-0000-0000-0000-0000006b67b3\">Strong SSL Configurations Are Used</a></li>\n</ul><h2>Additional Resources</h2><ul><li> For more information on proper SSL configuration, please see <a href=\"https://www.owasp.org/index.php/Transport_Layer_Protection_Cheat_Sheet\">https://www.owasp.org/index.php/Transport_Layer_Protection_Cheat_Sheet</a></li></ul>"
+  "html": "<h2>Applies To</h2><ul><li> iOS applications that send or receive sensitive data over the network.</li>\n</ul><h2>What to Check For</h2><p>Verify that strong TLS configurations are used.\n</p><h2>Why</h2><p>Using strong TLS configurations prevents eavesdropping and other man-in-the-middle attacks. iOS TLS configurations are relatively strong by default, depending on the SDK version, and need to be intentionally degraded to be unsafe. Unfortunately, many developers degrade iOS TLS strength for compatibility with the development environments and subsequently do not restore the TLS configuration to the secure defaults in the production releases.\n</p><h2>How to Check</h2><p>To verify that strong TLS configurations are used:\n</p><ol>\n<li> <strong>Verify that self-signed certificates are disabled.</strong> Search application code for the presence of the <em>continueWithoutCredentialForAuthenticationChallenge</em> selector - the presence of this selector indicates that self-signed TLS certificates may be allowed.</li>\n<li> <strong>Check the available SDK version.</strong> Identify the iOS SDK version used by the application. Versions 5 and higher of the iOS SDK use strong TLS cipher suites. There are no practical ways to control which cipher suites are used by iOS applications. If strength of TLS ciphers is a critical requirement, use version 5 or higher of the iOS SDK.</li>\n</ol><h2>How to Fix</h2><p>To use strong TLS configurations:\n</p><ol>\n<li> <strong>Disable self-signed certificates.</strong> Self-signed certificates are disabled by default by the iOS SDK. Developers have to intentionally enable self-signed certificates for the application to accept them. Self-signed certificates are often enabled for testing in the development environment. It is important to disable self-signed certificates in production releases, because self-signed certificates allow man-in-the-middle attacks, which largely negate the benefits of TLS.</li>\n<li> <strong>Identify the available SDK version.</strong> Identify the iOS SDK version used by the application.</li>\n<li> <strong>Use iOS SDK version 5 or higher.</strong> The cipher suites used by TLS implementations in iOS SDKs vary by version. Versions 5 and higher of the iOS SDK use strong TLS cipher suites. There are no practical ways to control which cipher suites are used by iOS applications. If strength of TLS ciphers is a critical requirement, use version 5 or higher of the iOS SDK.</li>\n</ol><h2>Communication Security Guidelines</h2><ul><li> <a href=\"00000000-0000-0000-0000-0000006aa5d9\">Disable Self-signed TLS Certificates</a></li>\n<li> <a href=\"00000000-0000-0000-0000-00000060779f\">Use TLS to Protect Communications</a></li>\n<li> <a href=\"00000000-0000-0000-0000-0000007db8fe\">Use Strong TLS Configurations</a></li>\n</ul><h2>Communication Security Checklists</h2><ul><li> <a href=\"00000000-0000-0000-0000-00000092c321\">Self-signed TLS Certificates Are Disabled</a></li>\n<li> <a href=\"00000000-0000-0000-0000-0000005faaf0\">TLS Is Used to Protect Communications</a></li>\n<li> <a href=\"00000000-0000-0000-0000-0000006b67b3\">Strong TLS Configurations Are Used</a></li>\n</ul><h2>Additional Resources</h2><ul><li> For more information on proper TLS configuration, please see <a href=\"https://www.owasp.org/index.php/Transport_Layer_Protection_Cheat_Sheet\">https://www.owasp.org/index.php/Transport_Layer_Protection_Cheat_Sheet</a></li></ul>"
 }

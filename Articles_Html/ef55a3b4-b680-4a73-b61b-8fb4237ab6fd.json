@@ -1,6 +1,6 @@
 {
   "id": "ef55a3b4-b680-4a73-b61b-8fb4237ab6fd",
-  "checksum": "3d84a267601a07a1791b666e49a7076bcc98f9e2",
+  "checksum": "96ada01bf55fd24946a1c724dcd0534648a3c684",
   "words": {
     "35": [
       "ul",
@@ -393,7 +393,7 @@
       "Additional Resources"
     ],
     "ul": [
-      "Microsoft® Windows Communication Foundation (WCF) 3.5 \r\nMicrosoft Visual Studio® 2008",
+      "Microsoft® Windows Communication Foundation (WCF) 3.5 \nMicrosoft Visual Studio® 2008",
       "For more information see “Message Inspectors” at http://msdn.microsoft.com/en-us/library/aa717047.aspxFor more information see “How to Validate an XML Document by Using DTD, XDR, or XSD in Visual C# .NET” at http://support.microsoft.com/kb/307379"
     ],
     "li": [
@@ -424,5 +424,5 @@
       "text": "http://support.microsoft.com/kb/307379"
     }
   ],
-  "html": "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>Microsoft® Windows Communication Foundation (WCF) 3.5 \r\n<li>Microsoft Visual Studio® 2008</li></li>\r\n  </ul>\r\n  <h1>Description</h1>\r\n  <p>Use schemas to validate your service against malicious input. You can protect parameters in operation contracts, fields in message and data contracts. The parameters in operation contracts can be simple or complex types. This protection level will require implementing message inspectors to be used by your service and or by the clients that consume your service. You can also protect your service by validating the parameters in the operation contracts. This protection level will require implementing parameter inspectors to be used by your service and or the clients that consume your service.&nbsp; For both schema and parameter validation you can do client and service side validation.</p>\r\n  <h1>Additional Resources</h1>\r\n  <ul>\r\n    <li>For more information see “Message Inspectors” at <a href=\"http://msdn.microsoft.com/en-us/library/aa717047.aspx\">http://msdn.microsoft.com/en-us/library/aa717047.aspx</a><li>For more information see “How to Validate an XML Document by Using DTD, XDR, or XSD in Visual C# .NET” at <a href=\"http://support.microsoft.com/kb/307379\">http://support.microsoft.com/kb/307379</a></li></li>\r\n  </ul>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
+  "html": "<h1>Applies to</h1>\n  <ul>\n    <li>Microsoft® Windows Communication Foundation (WCF) 3.5 \n<li>Microsoft Visual Studio® 2008</li></li>\n  </ul>\n  <h1>Description</h1>\n  <p>Use schemas to validate your service against malicious input. You can protect parameters in operation contracts, fields in message and data contracts. The parameters in operation contracts can be simple or complex types. This protection level will require implementing message inspectors to be used by your service and or by the clients that consume your service. You can also protect your service by validating the parameters in the operation contracts. This protection level will require implementing parameter inspectors to be used by your service and or the clients that consume your service.&nbsp; For both schema and parameter validation you can do client and service side validation.</p>\n  <h1>Additional Resources</h1>\n  <ul>\n    <li>For more information see “Message Inspectors” at <a href=\"http://msdn.microsoft.com/en-us/library/aa717047.aspx\">http://msdn.microsoft.com/en-us/library/aa717047.aspx</a><li>For more information see “How to Validate an XML Document by Using DTD, XDR, or XSD in Visual C# .NET” at <a href=\"http://support.microsoft.com/kb/307379\">http://support.microsoft.com/kb/307379</a></li></li>\n  </ul>\n  <hr />\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
 }

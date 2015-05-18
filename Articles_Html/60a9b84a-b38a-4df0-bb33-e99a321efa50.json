@@ -1,6 +1,6 @@
 {
   "id": "60a9b84a-b38a-4df0-bb33-e99a321efa50",
-  "checksum": "f38ea7959baed4cdaac0c6ff13de7c8e8bdd0757",
+  "checksum": "1d92a3b410a2f40f19100752ea749f1b9fdeca6d",
   "words": {
     "35": [
       "ul",
@@ -425,7 +425,7 @@
       "Additional Resources"
     ],
     "ul": [
-      "Microsoft® Windows Communication Foundation (WCF) 3.5 \r\nMicrosoft Visual Studio® 2008",
+      "Microsoft® Windows Communication Foundation (WCF) 3.5 \nMicrosoft Visual Studio® 2008",
       "For more information on using the secure bindings see http://blogs.msdn.com/drnick/archive/2006/08/31/733173.aspxFor more information see “Security Considerations with Metadata” at http://msdn.microsoft.com/en-us/library/ms734741.aspx"
     ],
     "li": [
@@ -460,5 +460,5 @@
       "text": "http://msdn.microsoft.com/en-us/library/ms734741.aspx"
     }
   ],
-  "html": "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>Microsoft® Windows Communication Foundation (WCF) 3.5 \r\n<li>Microsoft Visual Studio® 2008</li></li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>If you need to publish your WCF service metadata, consider publishing it using secure binding.</p>\r\n  <h1>Why</h1>\r\n  <p>This protects your&nbsp;service metadata from unauthorized access. </p>\r\n  <h1>When</h1>\r\n  <p>Consider using this guideline when you want to&nbsp;publish your WCF service metadata.</p>\r\n  <h1>How</h1>\r\n  <p>To protect service metadata from unauthorized access, you can use a secure binding for your metadata endpoint. The service metadata that a WCF service publishes contains a detailed description about the service and may intentionally or unintentionally contain sensitive information. For example, service metadata may contain information about infrastructure operations that was not intended to be broadcast publicly.</p>\r\n  <p>You can use any standard binding (which has security features) you want for the MEX service endpoint, the only requirement is to use the IMetadataExchange contract.</p>\r\n  <h1>Additional Resources</h1>\r\n  <ul>\r\n    <li>For more information on using the secure bindings see <a href=\"http://blogs.msdn.com/drnick/archive/2006/08/31/733173.aspx\">http://blogs.msdn.com/drnick/archive/2006/08/31/733173.aspx</a><li>For more information see “Security Considerations with Metadata” at <a href=\"http://msdn.microsoft.com/en-us/library/ms734741.aspx\">http://msdn.microsoft.com/en-us/library/ms734741.aspx</a></li></li>\r\n  </ul>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
+  "html": "<h1>Applies to</h1>\n  <ul>\n    <li>Microsoft® Windows Communication Foundation (WCF) 3.5 \n<li>Microsoft Visual Studio® 2008</li></li>\n  </ul>\n  <h1>What to Do</h1>\n  <p>If you need to publish your WCF service metadata, consider publishing it using secure binding.</p>\n  <h1>Why</h1>\n  <p>This protects your&nbsp;service metadata from unauthorized access. </p>\n  <h1>When</h1>\n  <p>Consider using this guideline when you want to&nbsp;publish your WCF service metadata.</p>\n  <h1>How</h1>\n  <p>To protect service metadata from unauthorized access, you can use a secure binding for your metadata endpoint. The service metadata that a WCF service publishes contains a detailed description about the service and may intentionally or unintentionally contain sensitive information. For example, service metadata may contain information about infrastructure operations that was not intended to be broadcast publicly.</p>\n  <p>You can use any standard binding (which has security features) you want for the MEX service endpoint, the only requirement is to use the IMetadataExchange contract.</p>\n  <h1>Additional Resources</h1>\n  <ul>\n    <li>For more information on using the secure bindings see <a href=\"http://blogs.msdn.com/drnick/archive/2006/08/31/733173.aspx\">http://blogs.msdn.com/drnick/archive/2006/08/31/733173.aspx</a><li>For more information see “Security Considerations with Metadata” at <a href=\"http://msdn.microsoft.com/en-us/library/ms734741.aspx\">http://msdn.microsoft.com/en-us/library/ms734741.aspx</a></li></li>\n  </ul>\n  <hr />\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
 }

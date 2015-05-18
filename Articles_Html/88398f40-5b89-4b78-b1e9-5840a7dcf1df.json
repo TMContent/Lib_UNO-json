@@ -1,6 +1,6 @@
 {
   "id": "88398f40-5b89-4b78-b1e9-5840a7dcf1df",
-  "checksum": "922f68cf08afd077e152ba7f8225aacaf5ec05e1",
+  "checksum": "225305eeab918c3895eb3a8ce3ea56c6e96ac5ef",
   "words": {
     "what": [
       "h2"
@@ -380,7 +380,7 @@
       "li",
       "li"
     ],
-    "see\rhttp://cwe.mitre.org/data/definitions/180.html": [
+    "seehttp://cwe.mitre.org/data/definitions/180.html": [
       "ul",
       "li"
     ],
@@ -400,7 +400,7 @@
       "ul",
       "li"
     ],
-    "see\rhttp://cwe.mitre.org/data/definitions/174.html": [
+    "seehttp://cwe.mitre.org/data/definitions/174.html": [
       "ul",
       "li"
     ],
@@ -457,7 +457,7 @@
       "ul",
       "li"
     ],
-    "see\rhttp://cwe.mitre.org/data/definitions/59.html": [
+    "seehttp://cwe.mitre.org/data/definitions/59.html": [
       "ul",
       "li"
     ],
@@ -484,7 +484,7 @@
       "Additional Resources"
     ],
     "p": [
-      "Inputs should be decoded and canonicalized to the application's current internal representation before being validated (CWE-180). Make sure that the application does not decode the same input twice (CWE-174). Such errors could be used to bypass whitelist\r\n validation schemes by introducing dangerous inputs after they have been checked.",
+      "Inputs should be decoded and canonicalized to the application's current internal representation before being validated (CWE-180). Make sure that the application does not decode the same input twice (CWE-174). Such errors could be used to bypass whitelist\n validation schemes by introducing dangerous inputs after they have been checked.",
       "Use a built-in path canonicalization function (such as realpath() in C) that produces the canonical version of the pathname, which effectively removes \"..\" sequences and symbolic links (CWE-23, CWE-59). This includes:"
     ],
     "em": [
@@ -497,8 +497,8 @@
       "realpath()"
     ],
     "ul": [
-      "realpath() in C \r\n    \r\n      getCanonicalPath() in Java \r\n    \r\n      GetFullPath() in ASP.NET \r\n    \r\n      realpath() or abs_path() in Perl \r\n    \r\n      realpath() in PHP",
-      "For more information about \"CWE-180: Incorrect Behavior Order: Validate Before Canonicalize\", please see\r\nhttp://cwe.mitre.org/data/definitions/180.html\r\n    For more information about \"CWE-174: Double Decoding of the Same Data\", please see\r\nhttp://cwe.mitre.org/data/definitions/174.html\r\n    For more information about \"CWE-23: Relative Path Traversal\", please see \r\nhttp://cwe.mitre.org/data/definitions/23.html\r\n    For more information about \"CWE-59: Improper Link Resolution Before File Access ('Link Following')\", please see\r\nhttp://cwe.mitre.org/data/definitions/59.html"
+      "realpath() in C \n    \n      getCanonicalPath() in Java \n    \n      GetFullPath() in ASP.NET \n    \n      realpath() or abs_path() in Perl \n    \n      realpath() in PHP",
+      "For more information about \"CWE-180: Incorrect Behavior Order: Validate Before Canonicalize\", please see\nhttp://cwe.mitre.org/data/definitions/180.html\n    For more information about \"CWE-174: Double Decoding of the Same Data\", please see\nhttp://cwe.mitre.org/data/definitions/174.html\n    For more information about \"CWE-23: Relative Path Traversal\", please see \nhttp://cwe.mitre.org/data/definitions/23.html\n    For more information about \"CWE-59: Improper Link Resolution Before File Access ('Link Following')\", please see\nhttp://cwe.mitre.org/data/definitions/59.html"
     ],
     "li": [
       "realpath() in C",
@@ -506,10 +506,10 @@
       "GetFullPath() in ASP.NET",
       "realpath() or abs_path() in Perl",
       "realpath() in PHP",
-      "For more information about \"CWE-180: Incorrect Behavior Order: Validate Before Canonicalize\", please see\r\nhttp://cwe.mitre.org/data/definitions/180.html",
-      "For more information about \"CWE-174: Double Decoding of the Same Data\", please see\r\nhttp://cwe.mitre.org/data/definitions/174.html",
-      "For more information about \"CWE-23: Relative Path Traversal\", please see \r\nhttp://cwe.mitre.org/data/definitions/23.html",
-      "For more information about \"CWE-59: Improper Link Resolution Before File Access ('Link Following')\", please see\r\nhttp://cwe.mitre.org/data/definitions/59.html"
+      "For more information about \"CWE-180: Incorrect Behavior Order: Validate Before Canonicalize\", please see\nhttp://cwe.mitre.org/data/definitions/180.html",
+      "For more information about \"CWE-174: Double Decoding of the Same Data\", please see\nhttp://cwe.mitre.org/data/definitions/174.html",
+      "For more information about \"CWE-23: Relative Path Traversal\", please see \nhttp://cwe.mitre.org/data/definitions/23.html",
+      "For more information about \"CWE-59: Improper Link Resolution Before File Access ('Link Following')\", please see\nhttp://cwe.mitre.org/data/definitions/59.html"
     ],
     "a": [
       "http://cwe.mitre.org/data/definitions/180.html",
@@ -529,12 +529,12 @@
     },
     {
       "href": "http://cwe.mitre.org/data/definitions/23.html",
-      "text": "\r\nhttp://cwe.mitre.org/data/definitions/23.html"
+      "text": "\nhttp://cwe.mitre.org/data/definitions/23.html"
     },
     {
       "href": "http://cwe.mitre.org/data/definitions/59.html",
       "text": "http://cwe.mitre.org/data/definitions/59.html"
     }
   ],
-  "html": "<h2>What to Do</h2>\r\n  <p>Inputs should be decoded and canonicalized to the application's current internal representation before being validated (CWE-180). Make sure that the application does not decode the same input twice (CWE-174). Such errors could be used to bypass whitelist\r\n validation schemes by introducing dangerous inputs after they have been checked.</p>\r\n  <h2>How</h2>\r\n  <p>Use a built-in path canonicalization function (such as <em>realpath()</em> in C) that produces the canonical version of the pathname, which effectively removes \"..\" sequences and symbolic links (CWE-23, CWE-59). This includes:</p>\r\n  <ul>\r\n    <li>\r\n      <em>realpath()</em> in C </li>\r\n    <li>\r\n      <em>getCanonicalPath()</em> in Java </li>\r\n    <li>\r\n      <em>GetFullPath()</em> in ASP.NET </li>\r\n    <li>\r\n      <em>realpath()</em> or <em>abs_path()</em> in Perl </li>\r\n    <li>\r\n      <em>realpath()</em> in PHP</li>\r\n  </ul>\r\n  <h2>Additional Resources</h2>\r\n  <ul>\r\n    <li>For more information about \"CWE-180: Incorrect Behavior Order: Validate Before Canonicalize\", please see\r\n<a href=\"http://cwe.mitre.org/data/definitions/180.html\">http://cwe.mitre.org/data/definitions/180.html</a></li>\r\n    <li>For more information about \"CWE-174: Double Decoding of the Same Data\", please see\r\n<a href=\"http://cwe.mitre.org/data/definitions/174.html\">http://cwe.mitre.org/data/definitions/174.html</a></li>\r\n    <li>For more information about \"CWE-23: Relative Path Traversal\", please see <a href=\"http://cwe.mitre.org/data/definitions/23.html\">\r\nhttp://cwe.mitre.org/data/definitions/23.html</a></li>\r\n    <li>For more information about \"CWE-59: Improper Link Resolution Before File Access ('Link Following')\", please see\r\n<a href=\"http://cwe.mitre.org/data/definitions/59.html\">http://cwe.mitre.org/data/definitions/59.html</a></li>\r\n  </ul>"
+  "html": "<h2>What to Do</h2>\n  <p>Inputs should be decoded and canonicalized to the application's current internal representation before being validated (CWE-180). Make sure that the application does not decode the same input twice (CWE-174). Such errors could be used to bypass whitelist\n validation schemes by introducing dangerous inputs after they have been checked.</p>\n  <h2>How</h2>\n  <p>Use a built-in path canonicalization function (such as <em>realpath()</em> in C) that produces the canonical version of the pathname, which effectively removes \"..\" sequences and symbolic links (CWE-23, CWE-59). This includes:</p>\n  <ul>\n    <li>\n      <em>realpath()</em> in C </li>\n    <li>\n      <em>getCanonicalPath()</em> in Java </li>\n    <li>\n      <em>GetFullPath()</em> in ASP.NET </li>\n    <li>\n      <em>realpath()</em> or <em>abs_path()</em> in Perl </li>\n    <li>\n      <em>realpath()</em> in PHP</li>\n  </ul>\n  <h2>Additional Resources</h2>\n  <ul>\n    <li>For more information about \"CWE-180: Incorrect Behavior Order: Validate Before Canonicalize\", please see\n<a href=\"http://cwe.mitre.org/data/definitions/180.html\">http://cwe.mitre.org/data/definitions/180.html</a></li>\n    <li>For more information about \"CWE-174: Double Decoding of the Same Data\", please see\n<a href=\"http://cwe.mitre.org/data/definitions/174.html\">http://cwe.mitre.org/data/definitions/174.html</a></li>\n    <li>For more information about \"CWE-23: Relative Path Traversal\", please see <a href=\"http://cwe.mitre.org/data/definitions/23.html\">\nhttp://cwe.mitre.org/data/definitions/23.html</a></li>\n    <li>For more information about \"CWE-59: Improper Link Resolution Before File Access ('Link Following')\", please see\n<a href=\"http://cwe.mitre.org/data/definitions/59.html\">http://cwe.mitre.org/data/definitions/59.html</a></li>\n  </ul>"
 }

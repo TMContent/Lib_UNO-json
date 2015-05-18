@@ -1,6 +1,6 @@
 {
   "id": "71516eeb-ed54-49e7-a9c1-7e7ab4a727d5",
-  "checksum": "cab004398b3a83bdc0895f16f0db36f25e848749",
+  "checksum": "8a6a199346ed2ab7debf3f7cd7b8f4afb6342fb9",
   "words": {
     "20": [
       "ul",
@@ -386,13 +386,13 @@
     "password,": [
       "pre"
     ],
-    "null;byte[]": [
+    "null;byte&#91;&#93;": [
       "pre"
     ],
     "ivzeros": [
       "pre"
     ],
-    "byte8];//this": [
+    "byte&#918&#93;;//this": [
       "pre"
     ],
     "actually": [
@@ -407,7 +407,7 @@
     "required//derive": [
       "pre"
     ],
-    "passwordbyte]": [
+    "passwordbyte&#91&#93;": [
       "pre"
     ],
     "pbekey": [
@@ -474,6 +474,9 @@
       "li",
       "a"
     ],
+    "&nbsp": [
+      "h1"
+    ],
     "adapted": [
       "p"
     ],
@@ -488,6 +491,9 @@
     ],
     "guidance": [
       "p"
+    ],
+    "sink]": [
+      "title"
     ],
     "how": [
       "title"
@@ -506,7 +512,7 @@
     "h1": [
       "Description",
       "Additional Resources",
-      ""
+      "&nbsp;"
     ],
     "p": [
       "To avoid key management, consider using DPAPI encryption where possible. With DPAPI, the operating system manages the key. For example, a good use for DPAPI is to encrypt symmetric encryption keys used to encrypt data in a database.",
@@ -520,7 +526,7 @@
       "PasswordDeriveBytes"
     ],
     "pre": [
-      "using System.Security.Cryptography;...PasswordDeriveBytes deriver = new PasswordDeriveBytes(<strong password>, null);byte[] ivZeros = new byte[8];//This is not actually used but is currently required.//Derive key from the passwordbyte[] pbeKey = deriver.CryptDeriveKey(\"TripleDES\", \"SHA1\", 192, ivZeros);"
+      "using System.Security.Cryptography;...PasswordDeriveBytes deriver = new PasswordDeriveBytes(<strong password>, null);byte&#91;&#93; ivZeros = new byte&#91;8&#93;;//This is not actually used but is currently required.//Derive key from the passwordbyte&#91;&#93; pbeKey = deriver.CryptDeriveKey(\"TripleDES\", \"SHA1\", 192, ivZeros);"
     ],
     "br": [
       "",
@@ -549,5 +555,5 @@
       "text": "http://msdn.microsoft.com/library/default.asp?url=/library/en-us/dnpag2/html/PAGPractices0002.asp"
     }
   ],
-  "html": "<h1>Description</h1>\r\n  <p>To avoid key management, consider using DPAPI encryption where possible. With DPAPI, the operating system manages the key. For example, a good use for DPAPI is to encrypt symmetric encryption keys used to encrypt data in a database. </p>\r\n  <p>Cycle keys periodically. Change your encryption keys regularly because a static secret is more likely to be discovered over time. Do not overuse keys. </p>\r\n  <p>Protect exported private keys. Use the <b>PasswordDeriveBytes</b> class when you export an RSA or DSA private key. The RSA and DSA classes contain a <b>ToXmlString</b> method, which enables you to export the public key or private key (or both) from the key container. This method exports the private key in plain text. If you export the private key to be installed on multiple servers in a Web farm, you should encrypt the key after exporting the private key by using <b>PasswordDeriveBytes</b> to generate a symmetric key, as shown in the following code example. </p>\r\n  <pre>using System.Security.Cryptography;<br />...<br />PasswordDeriveBytes deriver = new PasswordDeriveBytes(&lt;strong password&gt;, null);<br />byte&#91;&#93; ivZeros = new byte&#91;8&#93;;<br />//This is not actually used but is currently required.<br />//Derive key from the password<br />byte&#91;&#93; pbeKey = deriver.CryptDeriveKey(\"TripleDES\", \"SHA1\", 192, ivZeros);</pre>\r\n  <h1>Additional Resources</h1>\r\n  <ul>\r\n    <li>For more information see, \"Security Practices: .NET Framework 2.0 Security Practices at a Glance\" at <a href=\"http://msdn.microsoft.com/library/default.asp?url=/library/en-us/dnpag2/html/PAGPractices0002.asp\">http://msdn.microsoft.com/library/default.asp?url=/library/en-us/dnpag2/html/PAGPractices0002.asp</a></li>\r\n  </ul>\r\n  <h1>&nbsp;</h1>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
+  "html": "<h1>Description</h1>\n  <p>To avoid key management, consider using DPAPI encryption where possible. With DPAPI, the operating system manages the key. For example, a good use for DPAPI is to encrypt symmetric encryption keys used to encrypt data in a database. </p>\n  <p>Cycle keys periodically. Change your encryption keys regularly because a static secret is more likely to be discovered over time. Do not overuse keys. </p>\n  <p>Protect exported private keys. Use the <b>PasswordDeriveBytes</b> class when you export an RSA or DSA private key. The RSA and DSA classes contain a <b>ToXmlString</b> method, which enables you to export the public key or private key (or both) from the key container. This method exports the private key in plain text. If you export the private key to be installed on multiple servers in a Web farm, you should encrypt the key after exporting the private key by using <b>PasswordDeriveBytes</b> to generate a symmetric key, as shown in the following code example. </p>\n  <pre>using System.Security.Cryptography;<br />...<br />PasswordDeriveBytes deriver = new PasswordDeriveBytes(&lt;strong password&gt;, null);<br />byte&amp;#91;&amp;#93; ivZeros = new byte&amp;#91;8&amp;#93;;<br />//This is not actually used but is currently required.<br />//Derive key from the password<br />byte&amp;#91;&amp;#93; pbeKey = deriver.CryptDeriveKey(\"TripleDES\", \"SHA1\", 192, ivZeros);</pre>\n  <h1>Additional Resources</h1>\n  <ul>\n    <li>For more information see, \"Security Practices: .NET Framework 2.0 Security Practices at a Glance\" at <a href=\"http://msdn.microsoft.com/library/default.asp?url=/library/en-us/dnpag2/html/PAGPractices0002.asp\">http://msdn.microsoft.com/library/default.asp?url=/library/en-us/dnpag2/html/PAGPractices0002.asp</a></li>\n  </ul>\n  <h1>&amp;nbsp;</h1>\n  <hr />\n  <p>Adapted from Microsoft patterns &amp; practices guidance.</p>"
 }

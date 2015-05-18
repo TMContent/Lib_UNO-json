@@ -1,6 +1,6 @@
 {
   "id": "7cc738c7-5f54-4dc6-a94c-a21c6fbf099c",
-  "checksum": "e9605e32cfa913a00941a8a3ae5644b4a08737a5",
+  "checksum": "fa80f3785cf4fc0ce055ede92584913566502949",
   "words": {
     "what": [
       "h1"
@@ -270,7 +270,7 @@
     "acl-protected": [
       "p"
     ],
-    "note   use": [
+    "note&nbsp&nbsp;&nbsp;use": [
       "blockquote"
     ],
     "makes": [
@@ -374,7 +374,7 @@
     "identity": [
       "p"
     ],
-    "note   hkey_current_user": [
+    "note&nbsp&nbsp;&nbsp;hkey_current_user": [
       "blockquote"
     ],
     "allows": [
@@ -424,6 +424,9 @@
     ],
     "guidance": [
       "p"
+    ],
+    "sink]": [
+      "title"
     ]
   },
   "tags": {
@@ -439,8 +442,8 @@
       "Adapted from Microsoft patterns & practices guidance."
     ],
     "blockquote": [
-      "Note   Use of HKEY_LOCAL_MACHINE makes it easier to store configuration data at installation time and maintain it later on.",
-      "Note   HKEY_CURRENT_USER allows more restrictive access because a process can access the current user key only if the user profile associated with the current thread or process token is loaded."
+      "Note&nbsp;&nbsp;&nbsp;Use of HKEY_LOCAL_MACHINE makes it easier to store configuration data at installation time and maintain it later on.",
+      "Note&nbsp;&nbsp;&nbsp;HKEY_CURRENT_USER allows more restrictive access because a process can access the current user key only if the user profile associated with the current thread or process token is loaded."
     ],
     "b": [
       "Note",
@@ -451,5 +454,5 @@
     ]
   },
   "links": [],
-  "html": "<h1>What to Check For</h1>\r\n  <p>Check to ensure that sensitive data stored in HKEY_LOCAL_MACHINE is protected by ACLs.</p>\r\n  <p />\r\n  <h1>How to Fix</h1>\r\n  <p>If you store sensitive data in the HKEY_LOCAL_MACHINE section of the registry, consider applying an ACL to the registry key that restricts access to a specific account, such as the account under which your application runs. This is important because any process running on your computer has access to the HKEY_LOCAL_MACHINE section of the registry. By isolating your application and running it under a dedicated custom account, only your application can access the data from the ACL-protected key.</p>\r\n  <blockquote>\r\n    <b>Note</b>&nbsp;&nbsp;&nbsp;Use of HKEY_LOCAL_MACHINE makes it easier to store configuration data at installation time and maintain it later on.</blockquote>\r\n  <p>If your security requirements dictate an even less accessible storage solution, use a key under HKEY_CURRENT_USER. This approach means that you do not have to explicitly configure ACLs because access to the current user key is automatically restricted based on process identity.</p>\r\n  <blockquote>\r\n    <b>Note</b>&nbsp;&nbsp;&nbsp;HKEY_CURRENT_USER allows more restrictive access because a process can access the current user key only if the user profile associated with the current thread or process token is loaded.</blockquote>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
+  "html": "<h1>What to Check For</h1>\n  <p>Check to ensure that sensitive data stored in HKEY_LOCAL_MACHINE is protected by ACLs.</p>\n  <p />\n  <h1>How to Fix</h1>\n  <p>If you store sensitive data in the HKEY_LOCAL_MACHINE section of the registry, consider applying an ACL to the registry key that restricts access to a specific account, such as the account under which your application runs. This is important because any process running on your computer has access to the HKEY_LOCAL_MACHINE section of the registry. By isolating your application and running it under a dedicated custom account, only your application can access the data from the ACL-protected key.</p>\n  <blockquote>\n    <b>Note</b>&amp;nbsp;&amp;nbsp;&amp;nbsp;Use of HKEY_LOCAL_MACHINE makes it easier to store configuration data at installation time and maintain it later on.</blockquote>\n  <p>If your security requirements dictate an even less accessible storage solution, use a key under HKEY_CURRENT_USER. This approach means that you do not have to explicitly configure ACLs because access to the current user key is automatically restricted based on process identity.</p>\n  <blockquote>\n    <b>Note</b>&amp;nbsp;&amp;nbsp;&amp;nbsp;HKEY_CURRENT_USER allows more restrictive access because a process can access the current user key only if the user profile associated with the current thread or process token is loaded.</blockquote>\n  <hr />\n  <p>Adapted from Microsoft patterns &amp; practices guidance.</p>"
 }

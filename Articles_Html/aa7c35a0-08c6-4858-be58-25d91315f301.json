@@ -1,11 +1,7 @@
 {
   "id": "aa7c35a0-08c6-4858-be58-25d91315f301",
-  "checksum": "26e8d326eb29cf3d2b6a5b28ff1a1d38bd407d3a",
+  "checksum": "ff8cd35f2a4a37671a61b3031eee8fc5a95f6831",
   "words": {
-    "40": [
-      "ul",
-      "li"
-    ],
     "56": [
       "ol",
       "li",
@@ -26,12 +22,11 @@
       "li",
       "p"
     ],
-    "applies": [
+    "what": [
       "h1"
     ],
     "to": [
       "h1",
-      "h1",
       "p",
       "p",
       "p",
@@ -60,14 +55,6 @@
       "p",
       "p",
       "p"
-    ],
-    "aspnet": [
-      "ul",
-      "li",
-      "p"
-    ],
-    "what": [
-      "h1"
     ],
     "do": [
       "h1",
@@ -410,7 +397,7 @@
     "using": [
       "p"
     ],
-    "ssl": [
+    "tls": [
       "p"
     ],
     "protects": [
@@ -669,6 +656,9 @@
       "p",
       "ol",
       "li"
+    ],
+    "aspnet": [
+      "p"
     ],
     "settings": [
       "p"
@@ -1496,7 +1486,6 @@
   },
   "tags": {
     "h1": [
-      "Applies To",
       "What to Do",
       "Why",
       "When",
@@ -1504,18 +1493,9 @@
       "Problem Example",
       "Solution Example"
     ],
-    "ul": [
-      "ASP.NET 4.0"
-    ],
-    "li": [
-      "ASP.NET 4.0",
-      "Check the <pages> element. Check that the viewStateEncryptionMode attribute of the <pages> element is set to Always, as shown in the following example.\r\n      <pages ... viewStateEncryptionMode=\"Always\" ... />\r\n      If you do not want every page to used encrypted ViewState, check that the viewStateEncryptionMode attribute of the <pages> element is set to Auto, as shown in the following example.\r\n      <pages ... viewStateEncryptionMode=\"Auto\" ... />\r\n      Then, from within your code, call the RegisterRequiresViewStateEncryption method as shown in the following example.\r\n      Page.RegisterRequiresViewStateEncryption();",
-      "Specify the encryption algorithm. Specify the encryption algorithm to use on the validation attribute, as shown in the following example.\r\n      <machineKey ... validation=\"AES\" ... />\r\n      The validation attribute is overloaded and can be used to specify either the hashing algorithm or the encryption algorithm. You can specify either 3DES or AES. Because AES offers larger key sizes (128 bits, 192 bits, or 256 bits) than 3DES (56 bits), it is considered more secure and should be used.",
-      "Check the <machineKey> element. Review the decryptionKey and validationKey attribute of the <machineKey> element:\r\n      <machineKey validationKey=\"AutoGenerate,IsolateApps\" decryptionKey=\"AutoGenerate,IsolateApps\" ... />Unless your application is installed in a Web farm, you should leave the decryptionKey and validationKey attribute with the default values shown in the example. To encrypt ViewState in a web farm, you need to manually set the validationKey and decryptionKey value—these values should be same across all machines in the web farm."
-    ],
     "p": [
       "If your ViewState contains sensitive data (and this data must reside in the ViewState instead of in server-side session variables), you should encrypt the ViewState to protect the information against tampering and disclosure.",
-      "Using SSL protects ViewState while it is passed over the network between server and browser, but it does not stop it being viewed and modified on the user's computer. If the data in your ViewState should not be viewable or modifiable by end users, only signing and encryption will protect it.",
+      "Using TLS protects ViewState while it is passed over the network between server and browser, but it does not stop it being viewed and modified on the user's computer. If the data in your ViewState should not be viewable or modifiable by end users, only signing and encryption will protect it.",
       "Ideally, the ViewState does not contain sensitive data, which should instead be stored in a server-side session state variable. If this is not possible, you should use ViewState encryption. Do not use it if your ViewState does not contain sensitive data because encryption significantly adds to the size of the ViewState and this impacts performance.",
       "The default ASP.NET settings ensure that ViewState is tamper proof. This ensures that any modification of the ViewState either on the client's computer or over the network is detected when the server processes the data. If you need to use round trips for potentially sensitive data, you can force encryption of ViewState for a specific page by following these steps:",
       "Check the <pages> element. Check that the viewStateEncryptionMode attribute of the <pages> element is set to Always, as shown in the following example.",
@@ -1559,7 +1539,12 @@
       "ViewState"
     ],
     "ol": [
-      "Check the <pages> element. Check that the viewStateEncryptionMode attribute of the <pages> element is set to Always, as shown in the following example.\r\n      <pages ... viewStateEncryptionMode=\"Always\" ... />\r\n      If you do not want every page to used encrypted ViewState, check that the viewStateEncryptionMode attribute of the <pages> element is set to Auto, as shown in the following example.\r\n      <pages ... viewStateEncryptionMode=\"Auto\" ... />\r\n      Then, from within your code, call the RegisterRequiresViewStateEncryption method as shown in the following example.\r\n      Page.RegisterRequiresViewStateEncryption();\r\n    \r\n    \r\n      \r\n        Specify the encryption algorithm. Specify the encryption algorithm to use on the validation attribute, as shown in the following example.\r\n      <machineKey ... validation=\"AES\" ... />\r\n      The validation attribute is overloaded and can be used to specify either the hashing algorithm or the encryption algorithm. You can specify either 3DES or AES. Because AES offers larger key sizes (128 bits, 192 bits, or 256 bits) than 3DES (56 bits), it is considered more secure and should be used.\r\n    \r\n    \r\n      \r\n        Check the <machineKey> element. Review the decryptionKey and validationKey attribute of the <machineKey> element:\r\n      <machineKey validationKey=\"AutoGenerate,IsolateApps\" decryptionKey=\"AutoGenerate,IsolateApps\" ... />Unless your application is installed in a Web farm, you should leave the decryptionKey and validationKey attribute with the default values shown in the example. To encrypt ViewState in a web farm, you need to manually set the validationKey and decryptionKey value—these values should be same across all machines in the web farm."
+      "Check the <pages> element. Check that the viewStateEncryptionMode attribute of the <pages> element is set to Always, as shown in the following example.\n      <pages ... viewStateEncryptionMode=\"Always\" ... />\n      If you do not want every page to used encrypted ViewState, check that the viewStateEncryptionMode attribute of the <pages> element is set to Auto, as shown in the following example.\n      <pages ... viewStateEncryptionMode=\"Auto\" ... />\n      Then, from within your code, call the RegisterRequiresViewStateEncryption method as shown in the following example.\n      Page.RegisterRequiresViewStateEncryption();\n    \n    \n      \n        Specify the encryption algorithm. Specify the encryption algorithm to use on the validation attribute, as shown in the following example.\n      <machineKey ... validation=\"AES\" ... />\n      The validation attribute is overloaded and can be used to specify either the hashing algorithm or the encryption algorithm. You can specify either 3DES or AES. Because AES offers larger key sizes (128 bits, 192 bits, or 256 bits) than 3DES (56 bits), it is considered more secure and should be used.\n    \n    \n      \n        Check the <machineKey> element. Review the decryptionKey and validationKey attribute of the <machineKey> element:\n      <machineKey validationKey=\"AutoGenerate,IsolateApps\" decryptionKey=\"AutoGenerate,IsolateApps\" ... />Unless your application is installed in a Web farm, you should leave the decryptionKey and validationKey attribute with the default values shown in the example. To encrypt ViewState in a web farm, you need to manually set the validationKey and decryptionKey value—these values should be same across all machines in the web farm."
+    ],
+    "li": [
+      "Check the <pages> element. Check that the viewStateEncryptionMode attribute of the <pages> element is set to Always, as shown in the following example.\n      <pages ... viewStateEncryptionMode=\"Always\" ... />\n      If you do not want every page to used encrypted ViewState, check that the viewStateEncryptionMode attribute of the <pages> element is set to Auto, as shown in the following example.\n      <pages ... viewStateEncryptionMode=\"Auto\" ... />\n      Then, from within your code, call the RegisterRequiresViewStateEncryption method as shown in the following example.\n      Page.RegisterRequiresViewStateEncryption();",
+      "Specify the encryption algorithm. Specify the encryption algorithm to use on the validation attribute, as shown in the following example.\n      <machineKey ... validation=\"AES\" ... />\n      The validation attribute is overloaded and can be used to specify either the hashing algorithm or the encryption algorithm. You can specify either 3DES or AES. Because AES offers larger key sizes (128 bits, 192 bits, or 256 bits) than 3DES (56 bits), it is considered more secure and should be used.",
+      "Check the <machineKey> element. Review the decryptionKey and validationKey attribute of the <machineKey> element:\n      <machineKey validationKey=\"AutoGenerate,IsolateApps\" decryptionKey=\"AutoGenerate,IsolateApps\" ... />Unless your application is installed in a Web farm, you should leave the decryptionKey and validationKey attribute with the default values shown in the example. To encrypt ViewState in a web farm, you need to manually set the validationKey and decryptionKey value—these values should be same across all machines in the web farm."
     ],
     "strong": [
       "Check the <pages> element.",
@@ -1595,5 +1580,5 @@
     ]
   },
   "links": [],
-  "html": "<h1>Applies To</h1>\r\n  <ul>\r\n    <li>ASP.NET 4.0</li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>If your <em>ViewState</em> contains sensitive data (and this data must reside in the <em>ViewState</em> instead of in server-side session variables), you should encrypt the <em>ViewState</em> to protect the information against tampering and disclosure.</p>\r\n  <h1>Why</h1>\r\n  <p>Using SSL protects <em>ViewState</em> while it is passed over the network between server and browser, but it does not stop it being viewed and modified on the user's computer. If the data in your <em>ViewState</em> should not be viewable or modifiable by end users, only signing and encryption will protect it.</p>\r\n  <h1>When</h1>\r\n  <p>Ideally, the <em>ViewState</em> does not contain sensitive data, which should instead be stored in a server-side session state variable. If this is not possible, you should use <em>ViewState</em> encryption. Do not use it if your <em>ViewState</em> does not contain sensitive data because encryption significantly adds to the size of the <em>ViewState</em> and this impacts performance.</p>\r\n  <h1>How</h1>\r\n  <p>The default ASP.NET settings ensure that <em>ViewState</em> is tamper proof. This ensures that any modification of the <em>ViewState</em> either on the client's computer or over the network is detected when the server processes the data. If you need to use round trips for potentially sensitive data, you can force encryption of <em>ViewState</em> for a specific page by following these steps:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Check the &lt;pages&gt; element.</strong> Check that the <em>viewStateEncryptionMode</em> attribute of the &lt;<em>pages</em>&gt; element is set to <em>Always</em>, as shown in the following example.</p>\r\n      <pre>&lt;pages<br /> ...<br /> viewStateEncryptionMode=\"Always\"<br /> ...<br /> /&gt;</pre>\r\n      <p>If you do not want every page to used encrypted ViewState, check that the <em>viewStateEncryptionMode</em> attribute of the &lt;<em>pages</em>&gt; element is set to <em>Auto</em>, as shown in the following example.</p>\r\n      <pre>&lt;pages<br /> ...<br /> viewStateEncryptionMode=\"Auto\"<br /> ...<br /> /&gt;</pre>\r\n      <p>Then, from within your code, call the <em>RegisterRequiresViewStateEncryption</em> method as shown in the following example.</p>\r\n      <pre>Page.RegisterRequiresViewStateEncryption();</pre>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Specify the encryption algorithm.</strong> Specify the encryption algorithm to use on the validation attribute, as shown in the following example.</p>\r\n      <pre>&lt;machineKey<br /> ...<br /> validation=\"AES\"<br /> ...<br /> /&gt;</pre>\r\n      <p>The validation attribute is overloaded and can be used to specify either the hashing algorithm or the encryption algorithm. You can specify either 3DES or AES. Because AES offers larger key sizes (128 bits, 192 bits, or 256 bits) than 3DES (56 bits), it is considered more secure and should be used.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Check the &lt;machineKey&gt; element.</strong> Review the <em>decryptionKey</em> and <em>validationKey</em> attribute of the &lt;<em>machineKey</em>&gt; element:</p>\r\n      <pre>&lt;machineKey validationKey=\"AutoGenerate,IsolateApps\"<br /> decryptionKey=\"AutoGenerate,IsolateApps\"<br /> ...<br /> /&gt;</pre>Unless your application is installed in a Web farm, you should leave the <em>decryptionKey</em> and <em>validationKey</em> attribute with the default values shown in the example. To encrypt ViewState in a web farm, you need to manually set the <em>validationKey</em> and <em>decryptionKey</em> value—these values should be same across all machines in the web farm. </li>\r\n  </ol>\r\n  <h1>Problem Example</h1>\r\n  <p>Due to their interaction with their internal billing system, an e-commerce site is forced to send billing details, including order amounts and (non-public) discount percentages round-trip through the user's browser. All of this information is stored in a <em>ViewState</em>. An attacker can extract all of the information in the <em>ViewState</em>, although they cannot modify it. Thus, their competitors can learn the site's discount structure without having to compromise any server side machines.</p>\r\n  <h1>Solution Example</h1>\r\n  <p>Due to their interaction with their internal billing system, an e-commerce site is forced to send billing details, including order amounts and (non-public) discount percentages round-trip through the user's browser. All of this information is stored in an encrypted ViewState. An attacker is unable to read the information stored in this ViewState, even when it passes through their machine. Thus, sensitive information stays private.</p>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance. </p>"
+  "html": "<h1>What to Do</h1>\n  <p>If your <em>ViewState</em> contains sensitive data (and this data must reside in the <em>ViewState</em> instead of in server-side session variables), you should encrypt the <em>ViewState</em> to protect the information against tampering and disclosure.</p>\n  <h1>Why</h1>\n  <p>Using TLS protects <em>ViewState</em> while it is passed over the network between server and browser, but it does not stop it being viewed and modified on the user's computer. If the data in your <em>ViewState</em> should not be viewable or modifiable by end users, only signing and encryption will protect it.</p>\n  <h1>When</h1>\n  <p>Ideally, the <em>ViewState</em> does not contain sensitive data, which should instead be stored in a server-side session state variable. If this is not possible, you should use <em>ViewState</em> encryption. Do not use it if your <em>ViewState</em> does not contain sensitive data because encryption significantly adds to the size of the <em>ViewState</em> and this impacts performance.</p>\n  <h1>How</h1>\n  <p>The default ASP.NET settings ensure that <em>ViewState</em> is tamper proof. This ensures that any modification of the <em>ViewState</em> either on the client's computer or over the network is detected when the server processes the data. If you need to use round trips for potentially sensitive data, you can force encryption of <em>ViewState</em> for a specific page by following these steps:</p>\n  <ol>\n    <li>\n      <p>\n        <strong>Check the &lt;pages&gt; element.</strong> Check that the <em>viewStateEncryptionMode</em> attribute of the &lt;<em>pages</em>&gt; element is set to <em>Always</em>, as shown in the following example.</p>\n      <pre>&lt;pages<br /> ...<br /> viewStateEncryptionMode=\"Always\"<br /> ...<br /> /&gt;</pre>\n      <p>If you do not want every page to used encrypted ViewState, check that the <em>viewStateEncryptionMode</em> attribute of the &lt;<em>pages</em>&gt; element is set to <em>Auto</em>, as shown in the following example.</p>\n      <pre>&lt;pages<br /> ...<br /> viewStateEncryptionMode=\"Auto\"<br /> ...<br /> /&gt;</pre>\n      <p>Then, from within your code, call the <em>RegisterRequiresViewStateEncryption</em> method as shown in the following example.</p>\n      <pre>Page.RegisterRequiresViewStateEncryption();</pre>\n    </li>\n    <li>\n      <p>\n        <strong>Specify the encryption algorithm.</strong> Specify the encryption algorithm to use on the validation attribute, as shown in the following example.</p>\n      <pre>&lt;machineKey<br /> ...<br /> validation=\"AES\"<br /> ...<br /> /&gt;</pre>\n      <p>The validation attribute is overloaded and can be used to specify either the hashing algorithm or the encryption algorithm. You can specify either 3DES or AES. Because AES offers larger key sizes (128 bits, 192 bits, or 256 bits) than 3DES (56 bits), it is considered more secure and should be used.</p>\n    </li>\n    <li>\n      <p>\n        <strong>Check the &lt;machineKey&gt; element.</strong> Review the <em>decryptionKey</em> and <em>validationKey</em> attribute of the &lt;<em>machineKey</em>&gt; element:</p>\n      <pre>&lt;machineKey validationKey=\"AutoGenerate,IsolateApps\"<br /> decryptionKey=\"AutoGenerate,IsolateApps\"<br /> ...<br /> /&gt;</pre>Unless your application is installed in a Web farm, you should leave the <em>decryptionKey</em> and <em>validationKey</em> attribute with the default values shown in the example. To encrypt ViewState in a web farm, you need to manually set the <em>validationKey</em> and <em>decryptionKey</em> value—these values should be same across all machines in the web farm. </li>\n  </ol>\n  <h1>Problem Example</h1>\n  <p>Due to their interaction with their internal billing system, an e-commerce site is forced to send billing details, including order amounts and (non-public) discount percentages round-trip through the user's browser. All of this information is stored in a <em>ViewState</em>. An attacker can extract all of the information in the <em>ViewState</em>, although they cannot modify it. Thus, their competitors can learn the site's discount structure without having to compromise any server side machines.</p>\n  <h1>Solution Example</h1>\n  <p>Due to their interaction with their internal billing system, an e-commerce site is forced to send billing details, including order amounts and (non-public) discount percentages round-trip through the user's browser. All of this information is stored in an encrypted ViewState. An attacker is unable to read the information stored in this ViewState, even when it passes through their machine. Thus, sensitive information stays private.</p>\n  <hr />\n  <p>Adapted from Microsoft patterns &amp; practices guidance. </p>"
 }

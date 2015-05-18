@@ -1,6 +1,6 @@
 {
   "id": "80380670-a6f7-431c-8709-b7fe5db60295",
-  "checksum": "f9a8958686ec2bea97fa7c0bc47bc114763e51fa",
+  "checksum": "4c356a21ddc18e26558875f100567e11ae7b4afa",
   "words": {
     "2011": [
       "p"
@@ -9,7 +9,6 @@
       "h1"
     ],
     "remote": [
-      "p",
       "p",
       "p",
       "p",
@@ -27,13 +26,11 @@
       "p",
       "p",
       "p",
-      "p",
       "ul",
       "li",
       "title"
     ],
     "inclusion": [
-      "p",
       "p",
       "p",
       "p",
@@ -145,11 +142,7 @@
       "p",
       "p",
       "p",
-      "p",
-      "p",
-      "ul",
-      "li",
-      "a"
+      "p"
     ],
     "usually": [
       "p",
@@ -432,9 +425,6 @@
       "p",
       "ul",
       "li",
-      "a",
-      "ul",
-      "li",
       "a"
     ],
     "will": [
@@ -685,9 +675,6 @@
       "p",
       "ul",
       "li",
-      "a",
-      "ul",
-      "li",
       "a"
     ],
     "scripts": [
@@ -776,9 +763,6 @@
       "li",
       "a",
       "p",
-      "ul",
-      "li",
-      "a",
       "p",
       "ul",
       "li",
@@ -797,9 +781,6 @@
       "a"
     ],
     "urls": [
-      "ul",
-      "li",
-      "a",
       "ul",
       "li",
       "a"
@@ -833,11 +814,7 @@
       "p"
     ],
     "disabled": [
-      "p",
-      "p",
-      "ul",
-      "li",
-      "a"
+      "p"
     ],
     "are": [
       "p",
@@ -1089,7 +1066,6 @@
       "Disable remote file inclusion:",
       "Include files safely:",
       "To check for adequate protection against RFI, ensure that PHP is configured for security so that remote file inclusion is disabled, and files are included safely.",
-      "Remote file inclusion is disabled:",
       "Files are included safely:",
       "Use the following Computer Based Training courses for more background information about this type of vulnerabilities.",
       "This course introduces best practices for developing secure PHP code. The course also identifies common PHP vulnerabilities that attackers can exploit to gain access to critical information. In addition, the course explains mitigation techniques that you can use to avoid common PHP vulnerabilities and write secure code. After completing this course, you will be able to describe the best practices for developing secure PHP code, explain common PHP vulnerabilities and learn mitigation techniques to avoid common PHP vulnerabilities and write secure code.",
@@ -1099,21 +1075,18 @@
     "ul": [
       "Disable Loading Files from URLs",
       "Include Files Safely",
-      "Loading Files from URLs Is Disabled",
       "Files Are Included Safely",
       "For more information about Remote File Inclusion, see http://en.wikipedia.org/wiki/Remote_file_inclusion"
     ],
     "li": [
       "Disable Loading Files from URLs",
       "Include Files Safely",
-      "Loading Files from URLs Is Disabled",
       "Files Are Included Safely",
       "For more information about Remote File Inclusion, see http://en.wikipedia.org/wiki/Remote_file_inclusion"
     ],
     "a": [
       "Disable Loading Files from URLs",
       "Include Files Safely",
-      "Loading Files from URLs Is Disabled",
       "Files Are Included Safely",
       "COD 315P Creating Secure PHP Code",
       "http://en.wikipedia.org/wiki/Remote_file_inclusion"
@@ -1135,10 +1108,6 @@
       "text": "Include Files Safely"
     },
     {
-      "href": "b90c1869-82db-470a-9b22-15d7adfdb035",
-      "text": "Loading Files from URLs Is Disabled"
-    },
-    {
       "href": "00000000-0000-0000-0000-0000001ce055",
       "text": "Files Are Included Safely"
     },
@@ -1151,5 +1120,5 @@
       "text": "http://en.wikipedia.org/wiki/Remote_file_inclusion"
     }
   ],
-  "html": "<h1>Description</h1><p>Remote file inclusion (RFI) occurs when the application executes a file located on an external server, which is usually controlled by the attacker. This enables the attacker to execute arbitrary code as a part of the application, in effect allowing them to do anything that the application and the application platform can do. It could potentially result in the attacker gaining complete control of the system. RFI affects PHP applications. \n</p><h1>Impact</h1><p>Remote file inclusion allows an attacker to execute arbitrary code with great ease. Usually, RFI is exploited by specifying a URL to the attacker's script of choice as a part of the HTTP request. The vulnerable application loads the malicious script from the URL and executes it as a part of the application. The attacker will typically use a \"web shell\" as the attack script and as a result gain full control of the application platform. From there, the attacker may leverage additional vulnerabilities to take full control of the server. Actually,the attacker usually has no need to go this far, because taking full control of the application platform will usually give him all the access he wants. If there is something particularly valuable on the target network, the attacker may use the compromised server to pivot his way around the network and attack other machines on it. \n</p><p>\nRFI is extremely easy to exploit and to automate, which has led to RFI vulnerabilities being used to create powerful botnets in 2011. These botnets were used for numerous high-profile DDoS attacks. As a result, RFI became well known and a simple mitigation measure, disabling loading remote PHP scripts, became well known. At this point, RFI is relatively rare because most hosting providers know to disable loading external PHP scripts. RFI is still an extremely dangerous vulnerability that can be easily avoided by configuring PHP accordingly.\n</p><h1>Countermeasures</h1><p>To prevent RFI, configure PHP for security by disabling remote file inclusion, and including files safely.\n</p><p>\nDisable remote file inclusion:</p><ul>\n<li> <a href=\"f54eacd2-ec2f-47a8-9639-67c01a1fcdd0\">Disable Loading Files from URLs</a></li>\n</ul><p>\nInclude files safely:</p><ul>\n<li> <a href=\"00000000-0000-0000-0000-000000240176\">Include Files Safely</a></li>\n</ul><h1>Application Check</h1><p>To check for adequate protection against RFI, ensure that PHP is configured for security so that remote file inclusion is disabled, and files are included safely.\n</p><p>\nRemote file inclusion is disabled:</p><ul>\n<li> <a href=\"b90c1869-82db-470a-9b22-15d7adfdb035\">Loading Files from URLs Is Disabled</a></li>\n</ul><p>\nFiles are included safely:</p><ul>\n<li> <a href=\"00000000-0000-0000-0000-0000001ce055\">Files Are Included Safely</a></li>\n</ul><h1>Computer Based Training Links</h1><p>Use the following Computer Based Training courses for more background information about this type of vulnerabilities.\n</p><h2>Creating Secure PHP Code</h2><p>This course introduces best practices for developing secure PHP code. The course also identifies common PHP vulnerabilities that attackers can exploit to gain access to critical information. In addition, the course explains mitigation techniques that you can use to avoid common PHP vulnerabilities and write secure code. After completing this course, you will be able to describe the best practices for developing secure PHP code, explain common PHP vulnerabilities and learn mitigation techniques to avoid common PHP vulnerabilities and write secure code.\n</p><p>\n<a href=\"https://teamprofessor.absorbtraining.com/ninja/#/courses/course/127620\">COD 315P Creating Secure PHP Code</a>\n</p><p>\n<em>Valid login credentials and enrollment in the course itself are required to access Team Professor content. If you need login credentials, please contact support@securityinnovation.com for help.</em>\n</p><h1>Additional Resources</h1><ul><li> For more information about Remote File Inclusion, see <a href=\"http://en.wikipedia.org/wiki/Remote_file_inclusion\">http://en.wikipedia.org/wiki/Remote_file_inclusion</a></li></ul>"
+  "html": "<h1>Description</h1><p>Remote file inclusion (RFI) occurs when the application executes a file located on an external server, which is usually controlled by the attacker. This enables the attacker to execute arbitrary code as a part of the application, in effect allowing them to do anything that the application and the application platform can do. It could potentially result in the attacker gaining complete control of the system. RFI affects PHP applications. \n</p><h1>Impact</h1><p>Remote file inclusion allows an attacker to execute arbitrary code with great ease. Usually, RFI is exploited by specifying a URL to the attacker's script of choice as a part of the HTTP request. The vulnerable application loads the malicious script from the URL and executes it as a part of the application. The attacker will typically use a \"web shell\" as the attack script and as a result gain full control of the application platform. From there, the attacker may leverage additional vulnerabilities to take full control of the server. Actually,the attacker usually has no need to go this far, because taking full control of the application platform will usually give him all the access he wants. If there is something particularly valuable on the target network, the attacker may use the compromised server to pivot his way around the network and attack other machines on it. \n</p><p>\nRFI is extremely easy to exploit and to automate, which has led to RFI vulnerabilities being used to create powerful botnets in 2011. These botnets were used for numerous high-profile DDoS attacks. As a result, RFI became well known and a simple mitigation measure, disabling loading remote PHP scripts, became well known. At this point, RFI is relatively rare because most hosting providers know to disable loading external PHP scripts. RFI is still an extremely dangerous vulnerability that can be easily avoided by configuring PHP accordingly.\n</p><h1>Countermeasures</h1><p>To prevent RFI, configure PHP for security by disabling remote file inclusion, and including files safely.\n</p><p>\nDisable remote file inclusion:</p><ul>\n<li> <a href=\"f54eacd2-ec2f-47a8-9639-67c01a1fcdd0\">Disable Loading Files from URLs</a></li>\n</ul><p>\nInclude files safely:</p><ul>\n<li> <a href=\"00000000-0000-0000-0000-000000240176\">Include Files Safely</a></li>\n</ul><h1>Application Check</h1><p>To check for adequate protection against RFI, ensure that PHP is configured for security so that remote file inclusion is disabled, and files are included safely.\n</p><p>\nFiles are included safely:</p><ul>\n<li> <a href=\"00000000-0000-0000-0000-0000001ce055\">Files Are Included Safely</a></li>\n</ul><h1>Computer Based Training Links</h1><p>Use the following Computer Based Training courses for more background information about this type of vulnerabilities.\n</p><h2>Creating Secure PHP Code</h2><p>This course introduces best practices for developing secure PHP code. The course also identifies common PHP vulnerabilities that attackers can exploit to gain access to critical information. In addition, the course explains mitigation techniques that you can use to avoid common PHP vulnerabilities and write secure code. After completing this course, you will be able to describe the best practices for developing secure PHP code, explain common PHP vulnerabilities and learn mitigation techniques to avoid common PHP vulnerabilities and write secure code.\n</p><p>\n<a href=\"https://teamprofessor.absorbtraining.com/ninja/#/courses/course/127620\">COD 315P Creating Secure PHP Code</a>\n</p><p>\n<em>Valid login credentials and enrollment in the course itself are required to access Team Professor content. If you need login credentials, please contact support@securityinnovation.com for help.</em>\n</p><h1>Additional Resources</h1><ul><li> For more information about Remote File Inclusion, see <a href=\"http://en.wikipedia.org/wiki/Remote_file_inclusion\">http://en.wikipedia.org/wiki/Remote_file_inclusion</a></li></ul>"
 }

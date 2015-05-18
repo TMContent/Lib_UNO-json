@@ -1,6 +1,6 @@
 {
   "id": "ef6e5177-662a-4789-9ac0-3e7d93822ee6",
-  "checksum": "ba19344dc75fe6c47f074fdd108713d524fda0c0",
+  "checksum": "217975c1316906afdf6d0101a592d67dfcae4702",
   "words": {
     "what": [
       "h1"
@@ -172,7 +172,7 @@
     "system": [
       "p"
     ],
-    "architecture": [
+    "architecture&nbsp;": [
       "p"
     ],
     "input": [
@@ -282,7 +282,7 @@
     "format": [
       "p"
     ],
-    "range": [
+    "range&nbsp;": [
       "p"
     ],
     "regular": [
@@ -297,7 +297,7 @@
     "at": [
       "p"
     ],
-    "server": [
+    "server&nbsp;": [
       "p"
     ],
     "if": [
@@ -363,8 +363,7 @@
     "susceptible": [
       "p"
     ],
-    "injection": [
-      "p",
+    "injection&nbsp;": [
       "p"
     ],
     "instead": [
@@ -409,6 +408,9 @@
     "script": [
       "p"
     ],
+    "injection": [
+      "p"
+    ],
     "example": [
       "p"
     ],
@@ -434,10 +436,10 @@
     "\"": [
       "pre"
     ],
-    "+": [
+    "&#43": [
       "pre"
     ],
-    "requestform[\"username\"]));": [
+    "requestform&#91;\"username\"&#93;));": [
       "pre"
     ],
     "adapted": [
@@ -457,6 +459,9 @@
     ],
     "guidance": [
       "p"
+    ],
+    "sink]": [
+      "title"
     ]
   },
   "tags": {
@@ -468,9 +473,9 @@
     ],
     "p": [
       "Use the Regex class and/or your own custom validation code to validate all user login information.",
-      "Validating user-provided login information can help to prevent cross site scripting attacks, SQL injections, and other potential problems, depending on system architecture.  All input should always be validated before use and encoded before display, but login information is especially critical as it interacts with high-value data stores.",
+      "Validating user-provided login information can help to prevent cross site scripting attacks, SQL injections, and other potential problems, depending on system architecture.&nbsp; All input should always be validated before use and encoded before display, but login information is especially critical as it interacts with high-value data stores.",
       "All applications with login functionality should validate all user submitted or user modifiable login information.",
-      "Validate user login information including user names and passwords for type, length, format, and range.  Use regular expressions to constrain the input at the server.  If you are not using the SqlMembershipProvider and need to develop your own queries to access your user store database, do not use login details to dynamically construct SQL statements because this makes your code susceptible to SQL injection.  Instead, validate the input and then use parameterized stored procedures.",
+      "Validate user login information including user names and passwords for type, length, format, and range.&nbsp; Use regular expressions to constrain the input at the server.&nbsp; If you are not using the SqlMembershipProvider and need to develop your own queries to access your user store database, do not use login details to dynamically construct SQL statements because this makes your code susceptible to SQL injection.&nbsp; Instead, validate the input and then use parameterized stored procedures.",
       "Also encode login details before echoing them back to the user's browser to prevent possible script injection. For example, use the Microsoft AntiXSS library, as shown here.",
       "Adapted from Microsoft patterns & practices guidance."
     ],
@@ -478,12 +483,12 @@
       "SqlMembershipProvider"
     ],
     "pre": [
-      "Response.Write(Microsoft.Security.Application.AntiXSSLibrary.HtmlEncode(\"Welcome \" + Request.Form[\"username\"]));"
+      "Response.Write(Microsoft.Security.Application.AntiXSSLibrary.HtmlEncode(\"Welcome \" &#43; Request.Form&#91;\"username\"&#93;));"
     ],
     "hr": [
       ""
     ]
   },
   "links": [],
-  "html": "<h1>What to Do</h1>\r\n  <p>Use the Regex class and/or your own custom validation code to validate all user login information. </p>\r\n  <h1>Why</h1>\r\n  <p>Validating user-provided login information can help to prevent cross site scripting attacks, SQL injections, and other potential problems, depending on system architecture.&nbsp; All input should always be validated before use and encoded before display, but login information is especially critical as it interacts with high-value data stores. </p>\r\n  <h1>When</h1>\r\n  <p>All applications with login functionality should validate all user submitted or user modifiable login information. </p>\r\n  <h1>How</h1>\r\n  <p>Validate user login information including user names and passwords for type, length, format, and range.&nbsp; Use regular expressions to constrain the input at the server.&nbsp; If you are not using the <b>SqlMembershipProvider</b> and need to develop your own queries to access your user store database, do not use login details to dynamically construct SQL statements because this makes your code susceptible to SQL injection.&nbsp; Instead, validate the input and then use parameterized stored procedures. </p>\r\n  <p>Also encode login details before echoing them back to the user's browser to prevent possible script injection. For example, use the Microsoft AntiXSS library, as shown here. </p>\r\n  <pre>Response.Write(Microsoft.Security.Application.AntiXSSLibrary.HtmlEncode(\"Welcome \" &#43; Request.Form&#91;\"username\"&#93;));</pre>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance. </p>"
+  "html": "<h1>What to Do</h1>\n  <p>Use the Regex class and/or your own custom validation code to validate all user login information. </p>\n  <h1>Why</h1>\n  <p>Validating user-provided login information can help to prevent cross site scripting attacks, SQL injections, and other potential problems, depending on system architecture.&amp;nbsp; All input should always be validated before use and encoded before display, but login information is especially critical as it interacts with high-value data stores. </p>\n  <h1>When</h1>\n  <p>All applications with login functionality should validate all user submitted or user modifiable login information. </p>\n  <h1>How</h1>\n  <p>Validate user login information including user names and passwords for type, length, format, and range.&amp;nbsp; Use regular expressions to constrain the input at the server.&amp;nbsp; If you are not using the <b>SqlMembershipProvider</b> and need to develop your own queries to access your user store database, do not use login details to dynamically construct SQL statements because this makes your code susceptible to SQL injection.&amp;nbsp; Instead, validate the input and then use parameterized stored procedures. </p>\n  <p>Also encode login details before echoing them back to the user's browser to prevent possible script injection. For example, use the Microsoft AntiXSS library, as shown here. </p>\n  <pre>Response.Write(Microsoft.Security.Application.AntiXSSLibrary.HtmlEncode(\"Welcome \" &amp;#43; Request.Form&amp;#91;\"username\"&amp;#93;));</pre>\n  <hr />\n  <p>Adapted from Microsoft patterns &amp; practices guidance. </p>"
 }

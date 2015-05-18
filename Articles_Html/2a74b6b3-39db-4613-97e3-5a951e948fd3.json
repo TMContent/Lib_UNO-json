@@ -1,6 +1,6 @@
 {
   "id": "2a74b6b3-39db-4613-97e3-5a951e948fd3",
-  "checksum": "476bc3593cf00d2a4305f67c08842110ec19cb79",
+  "checksum": "86c9bb753854f624b5ed84c140662de57221fa7b",
   "words": {
     "applies": [
       "h1"
@@ -331,5 +331,5 @@
       "text": "Check for Null Before Dereferencing an In-Parameter Pointer"
     }
   ],
-  "html": "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>C&#43;&#43;</li>\r\n  </ul>\r\n  <h1>What to Check For</h1>\r\n  <p>Verify that pointers that are passed as arguments to functions are checked for null before dereferencing.</p>\r\n  <h1>Why</h1>\r\n  <p>Dereferencing a null pointer causes the program to crash. Validating pointers before using them prevents unexpected crashes.</p>\r\n  <h1>How to Check</h1>\r\n  <p>Search for all functions that accept pointers as arguments. Verify that pointers are checked for null in each function before they are dereferenced.</p>\r\n  <h1>How to Fix</h1>\r\n  <p>Identify all functions that accept pointers as arguments. Add code that checks pointers for null before the rest of the program uses these pointers for data access.</p>\r\n  <h1>Additional Resources</h1>\r\n  <ul>\r\n    <li>For more information about null-pointer dereference vulnerabilities, please see <a href=\"http://www.owasp.org/index.php/Null-pointer_dereference\">http://www.owasp.org/index.php/Null-pointer_dereference</a></li>\r\n  </ul>\r\n  <h1>Related Items</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/bc36816b-a414-4c4a-90d1-68c34df9856a\">Check for Null Before Dereferencing an In-Parameter Pointer</a>\r\n    </li>\r\n  </ul>"
+  "html": "<h1>Applies to</h1>\n  <ul>\n    <li>C&#43;&#43;</li>\n  </ul>\n  <h1>What to Check For</h1>\n  <p>Verify that pointers that are passed as arguments to functions are checked for null before dereferencing.</p>\n  <h1>Why</h1>\n  <p>Dereferencing a null pointer causes the program to crash. Validating pointers before using them prevents unexpected crashes.</p>\n  <h1>How to Check</h1>\n  <p>Search for all functions that accept pointers as arguments. Verify that pointers are checked for null in each function before they are dereferenced.</p>\n  <h1>How to Fix</h1>\n  <p>Identify all functions that accept pointers as arguments. Add code that checks pointers for null before the rest of the program uses these pointers for data access.</p>\n  <h1>Additional Resources</h1>\n  <ul>\n    <li>For more information about null-pointer dereference vulnerabilities, please see <a href=\"http://www.owasp.org/index.php/Null-pointer_dereference\">http://www.owasp.org/index.php/Null-pointer_dereference</a></li>\n  </ul>\n  <h1>Related Items</h1>\n  <ul>\n    <li>\n      <a href=\"/article/bc36816b-a414-4c4a-90d1-68c34df9856a\">Check for Null Before Dereferencing an In-Parameter Pointer</a>\n    </li>\n  </ul>"
 }

@@ -1,6 +1,6 @@
 {
   "id": "7317fcb7-b91b-4184-b5e4-01a25b8baf00",
-  "checksum": "a8590c00a219b4b80bf7dfb9cc0aaabd08cf60c2",
+  "checksum": "e04f8e01c017f59756786d3a4ae318d13a7db9be",
   "words": {
     "what": [
       "h1"
@@ -64,7 +64,6 @@
       "p"
     ],
     "log": [
-      "p",
       "p",
       "p",
       "p",
@@ -385,6 +384,9 @@
     "written": [
       "p"
     ],
+    "log&nbsp;": [
+      "p"
+    ],
     "configuration": [
       "p"
     ],
@@ -412,8 +414,7 @@
       "p",
       "p"
     ],
-    "file": [
-      "p",
+    "file&nbsp;": [
       "p"
     ],
     "additional": [
@@ -462,13 +463,16 @@
     "tracewebeventprovider),": [
       "p"
     ],
-    "wmiwebeventprovider).": [
+    "wmiwebeventprovider).&nbsp;": [
       "p"
     ],
     "configure": [
       "p"
     ],
     "machine": [
+      "p"
+    ],
+    "file": [
       "p"
     ],
     "modify": [
@@ -523,6 +527,9 @@
     "guidance": [
       "p"
     ],
+    "sink]": [
+      "title"
+    ],
     "logging": [
       "title"
     ],
@@ -540,8 +547,8 @@
       "Use ASP.NET health monitoring feature to log and audit events.",
       "ASP.NET health monitoring supports many standard events that you can use to monitor the health of your application. Examples of security related events that are automatically generated include logon failures and successes when using the ASP.NET membership system, attempts to tamper with or reuse forms authentication tickets, and infrastructure events such as disk access failures.",
       "The health monitoring feature includes built-in providers that allow you to log events to an email message, to SQL server, to the event log, as an ASP.NET trace output, or to the Windows Management Instrumentation (WMI) web event provider.",
-      "By default, health monitoring is enabled for ASP.NET applications and all Web infrastructure error events (inheriting from System.Web.Management.WebErrorEvent) and all audit failure events (inheriting from System.Web.Management.WebFailureAuditEvent) are written to the event log.  The default configuration is defined in the <healthMonitoring> element in the machine-level Web.config file.  To audit additional security related events, you create custom event types by deriving from one of the built-in types.",
-      "The health monitoring feature has built-in providers that allow you to log events in an e-mail message (SimpleMailWebEventProvider, TemplatedMailWebEventProvider), to SQL Server (SqlWebEventProvider), to the event log (EventLogWebEventProvider), as ASP.NET trace output (TraceWebEventProvider), or to the Windows Management Instrumentation (WMI) Web event provider (WMIWebEventProvider).  You can configure health monitoring in the machine or application Web.config file to modify the events that are logged and the way in which they are logged.",
+      "By default, health monitoring is enabled for ASP.NET applications and all Web infrastructure error events (inheriting from System.Web.Management.WebErrorEvent) and all audit failure events (inheriting from System.Web.Management.WebFailureAuditEvent) are written to the event log.&nbsp; The default configuration is defined in the <healthMonitoring> element in the machine-level Web.config file.&nbsp; To audit additional security related events, you create custom event types by deriving from one of the built-in types.",
+      "The health monitoring feature has built-in providers that allow you to log events in an e-mail message (SimpleMailWebEventProvider, TemplatedMailWebEventProvider), to SQL Server (SqlWebEventProvider), to the event log (EventLogWebEventProvider), as ASP.NET trace output (TraceWebEventProvider), or to the Windows Management Instrumentation (WMI) Web event provider (WMIWebEventProvider).&nbsp; You can configure health monitoring in the machine or application Web.config file to modify the events that are logged and the way in which they are logged.",
       "",
       "Adapted from Microsoft patterns & practices guidance."
     ],
@@ -561,5 +568,5 @@
     ]
   },
   "links": [],
-  "html": "<h1>What to Do</h1>\r\n  <p>Use ASP.NET health monitoring feature to log and audit events. </p>\r\n  <h1>Why</h1>\r\n  <p>ASP.NET health monitoring supports many standard events that you can use to monitor the health of your application. Examples of security related events that are automatically generated include logon failures and successes when using the ASP.NET membership system, attempts to tamper with or reuse forms authentication tickets, and infrastructure events such as disk access failures. </p>\r\n  <p>The health monitoring feature includes built-in providers that allow you to log events to an email message, to SQL server, to the event log, as an ASP.NET trace output, or to the Windows Management Instrumentation (WMI) web event provider.</p>\r\n  <h1>How</h1>\r\n  <p>By default, health monitoring is enabled for ASP.NET applications and all Web infrastructure error events (inheriting from <b>System.Web.Management.WebErrorEvent</b>) and all audit failure events (inheriting from <b>System.Web.Management.WebFailureAuditEvent</b>) are written to the event log.&nbsp; The default configuration is defined in the <b>&lt;healthMonitoring&gt;</b> element in the machine-level Web.config file.&nbsp; To audit additional security related events, you create custom event types by deriving from one of the built-in types. </p>\r\n  <p />The health monitoring feature has built-in providers that allow you to log events in an e-mail message (<b>SimpleMailWebEventProvider</b>, <b>TemplatedMailWebEventProvider</b>), to SQL Server (<b>SqlWebEventProvider</b>), to the event log (<b>EventLogWebEventProvider</b>), as ASP.NET trace output (<b>TraceWebEventProvider</b>), or to the Windows Management Instrumentation (WMI) Web event provider (<b>WMIWebEventProvider</b>).&nbsp; You can configure health monitoring in the machine or application Web.config file to modify the events that are logged and the way in which they are logged. <p /><hr /><p>Adapted from Microsoft patterns & practices guidance. </p>"
+  "html": "<h1>What to Do</h1>\n  <p>Use ASP.NET health monitoring feature to log and audit events. </p>\n  <h1>Why</h1>\n  <p>ASP.NET health monitoring supports many standard events that you can use to monitor the health of your application. Examples of security related events that are automatically generated include logon failures and successes when using the ASP.NET membership system, attempts to tamper with or reuse forms authentication tickets, and infrastructure events such as disk access failures. </p>\n  <p>The health monitoring feature includes built-in providers that allow you to log events to an email message, to SQL server, to the event log, as an ASP.NET trace output, or to the Windows Management Instrumentation (WMI) web event provider.</p>\n  <h1>How</h1>\n  <p>By default, health monitoring is enabled for ASP.NET applications and all Web infrastructure error events (inheriting from <b>System.Web.Management.WebErrorEvent</b>) and all audit failure events (inheriting from <b>System.Web.Management.WebFailureAuditEvent</b>) are written to the event log.&amp;nbsp; The default configuration is defined in the <b>&lt;healthMonitoring&gt;</b> element in the machine-level Web.config file.&amp;nbsp; To audit additional security related events, you create custom event types by deriving from one of the built-in types. </p>\n  <p />The health monitoring feature has built-in providers that allow you to log events in an e-mail message (<b>SimpleMailWebEventProvider</b>, <b>TemplatedMailWebEventProvider</b>), to SQL Server (<b>SqlWebEventProvider</b>), to the event log (<b>EventLogWebEventProvider</b>), as ASP.NET trace output (<b>TraceWebEventProvider</b>), or to the Windows Management Instrumentation (WMI) Web event provider (<b>WMIWebEventProvider</b>).&amp;nbsp; You can configure health monitoring in the machine or application Web.config file to modify the events that are logged and the way in which they are logged. <p /><hr /><p>Adapted from Microsoft patterns &amp; practices guidance. </p>"
 }

@@ -1,6 +1,6 @@
 {
   "id": "142dc670-c51c-4094-8da1-77fdc1b1893c",
-  "checksum": "40ebaf124efd54c6ca2b35d64789ed8566e33724",
+  "checksum": "b250dfd1325edd989cab8838f4251c1faf8a6883",
   "words": {
     "applies": [
       "h1"
@@ -365,5 +365,5 @@
       "text": "Use new and delete Instead of Direct Memory Operations"
     }
   ],
-  "html": "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>C&#43;&#43;</li>\r\n  </ul>\r\n  <h1>What to Check For</h1>\r\n  <p>Verify that new and delete operators are used instead of direct memory operations such as: calloc(), malloc(), realloc(), and free().</p>\r\n  <h1>Why</h1>\r\n  <p>The object-oriented approach to memory allocation manifested by new and delete operators has multiple advantages over raw memory operations. The new and delete operators call class constructors and destructors automatically, thus asssuring that memory is&nbsp;allocated and variables are initialized. The new operator also throws an exception if it fails to allocate memory, which causes the program to abort if there is no error handling code, thus preventing unintended behavior.</p>\r\n  <h1>How to Check</h1>\r\n  <p>Search code for calloc(), malloc(), realloc(), and free() function calls.</p>\r\n  <h1>How to Fix</h1>\r\n  <p>Replace calloc(), malloc(), realloc(), and free() function calls with new and delete operators respectively.</p>\r\n  <h1>Related Items</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/eb00762e-1c8a-4c03-ae23-b0656b697524\">Use new and delete Instead of Direct Memory Operations</a>\r\n    </li>\r\n  </ul>"
+  "html": "<h1>Applies to</h1>\n  <ul>\n    <li>C&#43;&#43;</li>\n  </ul>\n  <h1>What to Check For</h1>\n  <p>Verify that new and delete operators are used instead of direct memory operations such as: calloc(), malloc(), realloc(), and free().</p>\n  <h1>Why</h1>\n  <p>The object-oriented approach to memory allocation manifested by new and delete operators has multiple advantages over raw memory operations. The new and delete operators call class constructors and destructors automatically, thus asssuring that memory is&nbsp;allocated and variables are initialized. The new operator also throws an exception if it fails to allocate memory, which causes the program to abort if there is no error handling code, thus preventing unintended behavior.</p>\n  <h1>How to Check</h1>\n  <p>Search code for calloc(), malloc(), realloc(), and free() function calls.</p>\n  <h1>How to Fix</h1>\n  <p>Replace calloc(), malloc(), realloc(), and free() function calls with new and delete operators respectively.</p>\n  <h1>Related Items</h1>\n  <ul>\n    <li>\n      <a href=\"/article/eb00762e-1c8a-4c03-ae23-b0656b697524\">Use new and delete Instead of Direct Memory Operations</a>\n    </li>\n  </ul>"
 }

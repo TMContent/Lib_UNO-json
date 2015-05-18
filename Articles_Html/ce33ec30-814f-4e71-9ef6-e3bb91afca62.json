@@ -1,6 +1,6 @@
 {
   "id": "ce33ec30-814f-4e71-9ef6-e3bb91afca62",
-  "checksum": "d55d8d3de85547a65b5a12afb4a3d0f5b687d157",
+  "checksum": "5548494326efbf42fa2bca1552a20d9875f1984b",
   "words": {
     "applies": [
       "h1"
@@ -339,7 +339,7 @@
     ],
     "ul": [
       "C++",
-      "For more information about excluding user input from format strings, please see \"FIO30-CPP. Exclude user input from format strings\" at https://www.securecoding.cert.org/confluence/display/cplusplus/FIO30-CPP.+Exclude+user+input+from+format+strings\r\n    For more information about formatted output functions, please see \"Formatted Output Functions\" at http://www.gnu.org/s/libc/manual/html_node/Formatted-Output-Functions.html"
+      "For more information about excluding user input from format strings, please see \"FIO30-CPP. Exclude user input from format strings\" at https://www.securecoding.cert.org/confluence/display/cplusplus/FIO30-CPP.+Exclude+user+input+from+format+strings\n    For more information about formatted output functions, please see \"Formatted Output Functions\" at http://www.gnu.org/s/libc/manual/html_node/Formatted-Output-Functions.html"
     ],
     "li": [
       "C++",
@@ -370,5 +370,5 @@
       "text": "http://www.gnu.org/s/libc/manual/html_node/Formatted-Output-Functions.html"
     }
   ],
-  "html": "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>C++</li>\r\n  </ul>\r\n  <h1>What to Check For</h1>\r\n  <p>Verify that user input is not used in format strings.</p>\r\n  <h1>Why</h1>\r\n  <p>An attacker that can control the contents of a format string may be able to execute arbitrary code.</p>\r\n  <h1>How to Check</h1>\r\n  <p>Identify all code that uses formatted input-output functions. Verify that user input is never used in format strings.</p>\r\n  <h1>How to Fix</h1>\r\n  <p>Avoid using formatted functions, if possible. It is recommended to use C++ streams instead. If it is necessary to use formatted input-output functions, write code in such a way that user input is never used in format strings. </p>\r\n  <h1>Additional Resources</h1>\r\n  <ul>\r\n    <li>For more information about excluding user input from format strings, please see \"FIO30-CPP. Exclude user input from format strings\" at <a href=\"https://www.securecoding.cert.org/confluence/display/cplusplus/FIO30-CPP.+Exclude+user+input+from+format+strings\">https://www.securecoding.cert.org/confluence/display/cplusplus/FIO30-CPP.+Exclude+user+input+from+format+strings</a></li>\r\n    <li>For more information about formatted output functions, please see \"Formatted Output Functions\" at <a href=\"http://www.gnu.org/s/libc/manual/html_node/Formatted-Output-Functions.html\">http://www.gnu.org/s/libc/manual/html_node/Formatted-Output-Functions.html</a></li>\r\n  </ul>\r\n  <br />"
+  "html": "<h1>Applies to</h1>\n  <ul>\n    <li>C++</li>\n  </ul>\n  <h1>What to Check For</h1>\n  <p>Verify that user input is not used in format strings.</p>\n  <h1>Why</h1>\n  <p>An attacker that can control the contents of a format string may be able to execute arbitrary code.</p>\n  <h1>How to Check</h1>\n  <p>Identify all code that uses formatted input-output functions. Verify that user input is never used in format strings.</p>\n  <h1>How to Fix</h1>\n  <p>Avoid using formatted functions, if possible. It is recommended to use C++ streams instead. If it is necessary to use formatted input-output functions, write code in such a way that user input is never used in format strings. </p>\n  <h1>Additional Resources</h1>\n  <ul>\n    <li>For more information about excluding user input from format strings, please see \"FIO30-CPP. Exclude user input from format strings\" at <a href=\"https://www.securecoding.cert.org/confluence/display/cplusplus/FIO30-CPP.+Exclude+user+input+from+format+strings\">https://www.securecoding.cert.org/confluence/display/cplusplus/FIO30-CPP.+Exclude+user+input+from+format+strings</a></li>\n    <li>For more information about formatted output functions, please see \"Formatted Output Functions\" at <a href=\"http://www.gnu.org/s/libc/manual/html_node/Formatted-Output-Functions.html\">http://www.gnu.org/s/libc/manual/html_node/Formatted-Output-Functions.html</a></li>\n  </ul>\n  <br />"
 }

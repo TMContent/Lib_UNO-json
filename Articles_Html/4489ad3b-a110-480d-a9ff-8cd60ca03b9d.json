@@ -1,16 +1,11 @@
 {
   "id": "4489ad3b-a110-480d-a9ff-8cd60ca03b9d",
-  "checksum": "11895732bfa909831efc3b62fe8f940bc319b85f",
+  "checksum": "72818ba94757f74490bfd7b48c7f5da889bc79f7",
   "words": {
-    "40": [
-      "ul",
-      "li"
-    ],
-    "applies": [
+    "what": [
       "h1"
     ],
     "to": [
-      "h1",
       "h1",
       "h1",
       "p",
@@ -50,13 +45,6 @@
       "p",
       "p",
       "strong"
-    ],
-    "aspnet": [
-      "ul",
-      "li"
-    ],
-    "what": [
-      "h1"
     ],
     "check": [
       "h1",
@@ -203,6 +191,7 @@
       "title"
     ],
     "navigation": [
+      "p",
       "p"
     ],
     "where": [
@@ -422,6 +411,7 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "li",
@@ -431,6 +421,8 @@
       "p",
       "p",
       "strong",
+      "li",
+      "p",
       "strong",
       "ul",
       "li",
@@ -673,6 +665,7 @@
       "li",
       "p",
       "strong",
+      "p",
       "ol",
       "ol",
       "ol",
@@ -728,13 +721,16 @@
     "guidelines": [
       "p"
     ],
-    "when implementing": [
+    "implementing": [
       "p"
     ],
-    "navigation on": [
+    "on": [
+      "p",
+      "ol",
+      "li",
       "p"
     ],
-    "ssl": [
+    "tls": [
       "p",
       "ol",
       "li",
@@ -751,11 +747,6 @@
       "p"
     ],
     "logs": [
-      "ol",
-      "li",
-      "p"
-    ],
-    "on": [
       "ol",
       "li",
       "p"
@@ -895,7 +886,7 @@
       "li",
       "p"
     ],
-    "pages similarly,": [
+    "similarly": [
       "ol",
       "li",
       "p"
@@ -1160,24 +1151,11 @@
   },
   "tags": {
     "h1": [
-      "Applies To",
       "What to Check For",
       "Why",
       "How To Check",
       "How To Fix",
       "Related Items"
-    ],
-    "ul": [
-      "ASP.NET 4.0",
-      "Use Absolute URLs for Navigating Secure Pages"
-    ],
-    "li": [
-      "ASP.NET 4.0",
-      "Verify that absolute URLs are used for navigating from secure pages. Examine all secure pages to make sure that all links, especially dynamically generated links use absolute URLs.",
-      "Verify that absolute URLs are used when redirecting to secure pages. Find all pages that redirect to secure pages and make sure they use absolute URLs to address secure pages.",
-      "Use absolute URLs when navigating from secure pages. After a user logs on and browses pages in a directory that is secured with SSL, relative links such as \"..\\publicpage.aspx\" or redirects to HTTP pages result in the pages being served using the HTTPS protocol, which incurs an unnecessary performance overhead. To avoid this, use absolute links such as \"http://servername/appname/publicpage.aspx\" when redirecting from an HTTPS page to an HTTP page.",
-      "Use absolute URLs when redirecting to secure pages. Similarly, when you redirect to a secure page (for example, the logon page) from a public area of your site, you must use an absolute HTTPS path, such as \"https://servername/appname/secure/login.aspx\" instead of a relative path, such as \"restricted/login.aspx\". For example, if your Web page provides a logon button, use the following code to redirect to the secure login page.\r\n        private void btnLogon_Click( object sender, System.EventArgs e ){  // Form an absolute path using the server name and virtual directory name    string serverName =   HttpUtility.UrlEncode(Request.ServerVariables[\"SERVER_NAME\"]);     string vdirName = Request.ApplicationPath;   Response.Redirect(\"https://\" +    serverName + vdirName + \"/Restricted/Login.aspx\");}",
-      "Use Absolute URLs for Navigating Secure Pages"
     ],
     "p": [
       "Ensure that absolute URLs are used for navigation where the site is partitioned with secure and non-secure folders.",
@@ -1185,14 +1163,21 @@
       "To make sure that absolute URLs are used for navigating secure pages:",
       "Verify that absolute URLs are used for navigating from secure pages. Examine all secure pages to make sure that all links, especially dynamically generated links use absolute URLs.",
       "Verify that absolute URLs are used when redirecting to secure pages. Find all pages that redirect to secure pages and make sure they use absolute URLs to address secure pages.",
-      "Use the following guidelines when implementing navigation on a site that uses SSL:",
-      "Use absolute URLs when navigating from secure pages. After a user logs on and browses pages in a directory that is secured with SSL, relative links such as \"..\\publicpage.aspx\" or redirects to HTTP pages result in the pages being served using the HTTPS protocol, which incurs an unnecessary performance overhead. To avoid this, use absolute links such as \"http://servername/appname/publicpage.aspx\" when redirecting from an HTTPS page to an HTTP page.",
-      "Use absolute URLs when redirecting to secure pages. Similarly, when you redirect to a secure page (for example, the logon page) from a public area of your site, you must use an absolute HTTPS path, such as \"https://servername/appname/secure/login.aspx\" instead of a relative path, such as \"restricted/login.aspx\". For example, if your Web page provides a logon button, use the following code to redirect to the secure login page.",
+      "Use the following guidelines when implementing navigation on a site that uses TLS:",
+      "Use absolute URLs when navigating from secure pages. After a user logs on and browses pages in a directory that is secured with TLS, relative links such as \"..\\publicpage.aspx\" or redirects to HTTP pages result in the pages being served using the HTTPS protocol, which incurs an unnecessary performance overhead. To avoid this, use absolute links such as \"http://servername/appname/publicpage.aspx\" when redirecting from an HTTPS page to an HTTP page.",
+      "Use absolute URLs when redirecting to secure pages. Similarly, when you redirect to a secure page (for example, the logon page) from a public area of your site, you must use an absolute HTTPS path, such as \"https://servername/appname/secure/login.aspx\" instead of a relative path, such as \"restricted/login.aspx\". For example, if your Web page provides a logon button, use the following code to redirect to the secure login page.",
       "Adapted from Microsoft patterns & practices guidance."
     ],
     "ol": [
-      "Verify that absolute URLs are used for navigating from secure pages. Examine all secure pages to make sure that all links, especially dynamically generated links use absolute URLs.\r\n      \r\n        \r\n          Verify that absolute URLs are used when redirecting to secure pages. Find all pages that redirect to secure pages and make sure they use absolute URLs to address secure pages.",
-      "Use absolute URLs when navigating from secure pages. After a user logs on and browses pages in a directory that is secured with SSL, relative links such as \"..\\publicpage.aspx\" or redirects to HTTP pages result in the pages being served using the HTTPS protocol, which incurs an unnecessary performance overhead. To avoid this, use absolute links such as \"http://servername/appname/publicpage.aspx\" when redirecting from an HTTPS page to an HTTP page.\r\n      \r\n        \r\n          Use absolute URLs when redirecting to secure pages. Similarly, when you redirect to a secure page (for example, the logon page) from a public area of your site, you must use an absolute HTTPS path, such as \"https://servername/appname/secure/login.aspx\" instead of a relative path, such as \"restricted/login.aspx\". For example, if your Web page provides a logon button, use the following code to redirect to the secure login page.\r\n        private void btnLogon_Click( object sender, System.EventArgs e ){  // Form an absolute path using the server name and virtual directory name    string serverName =   HttpUtility.UrlEncode(Request.ServerVariables[\"SERVER_NAME\"]);     string vdirName = Request.ApplicationPath;   Response.Redirect(\"https://\" +    serverName + vdirName + \"/Restricted/Login.aspx\");}"
+      "Verify that absolute URLs are used for navigating from secure pages. Examine all secure pages to make sure that all links, especially dynamically generated links use absolute URLs.\n      \n        \n          Verify that absolute URLs are used when redirecting to secure pages. Find all pages that redirect to secure pages and make sure they use absolute URLs to address secure pages.",
+      "Use absolute URLs when navigating from secure pages. After a user logs on and browses pages in a directory that is secured with TLS, relative links such as \"..\\publicpage.aspx\" or redirects to HTTP pages result in the pages being served using the HTTPS protocol, which incurs an unnecessary performance overhead. To avoid this, use absolute links such as \"http://servername/appname/publicpage.aspx\" when redirecting from an HTTPS page to an HTTP page.\n      \n        \n          Use absolute URLs when redirecting to secure pages. Similarly, when you redirect to a secure page (for example, the logon page) from a public area of your site, you must use an absolute HTTPS path, such as \"https://servername/appname/secure/login.aspx\" instead of a relative path, such as \"restricted/login.aspx\". For example, if your Web page provides a logon button, use the following code to redirect to the secure login page.\n        private void btnLogon_Click( object sender, System.EventArgs e ){  // Form an absolute path using the server name and virtual directory name    string serverName =   HttpUtility.UrlEncode(Request.ServerVariables[\"SERVER_NAME\"]);     string vdirName = Request.ApplicationPath;   Response.Redirect(\"https://\" +    serverName + vdirName + \"/Restricted/Login.aspx\");}"
+    ],
+    "li": [
+      "Verify that absolute URLs are used for navigating from secure pages. Examine all secure pages to make sure that all links, especially dynamically generated links use absolute URLs.",
+      "Verify that absolute URLs are used when redirecting to secure pages. Find all pages that redirect to secure pages and make sure they use absolute URLs to address secure pages.",
+      "Use absolute URLs when navigating from secure pages. After a user logs on and browses pages in a directory that is secured with TLS, relative links such as \"..\\publicpage.aspx\" or redirects to HTTP pages result in the pages being served using the HTTPS protocol, which incurs an unnecessary performance overhead. To avoid this, use absolute links such as \"http://servername/appname/publicpage.aspx\" when redirecting from an HTTPS page to an HTTP page.",
+      "Use absolute URLs when redirecting to secure pages. Similarly, when you redirect to a secure page (for example, the logon page) from a public area of your site, you must use an absolute HTTPS path, such as \"https://servername/appname/secure/login.aspx\" instead of a relative path, such as \"restricted/login.aspx\". For example, if your Web page provides a logon button, use the following code to redirect to the secure login page.\n        private void btnLogon_Click( object sender, System.EventArgs e ){  // Form an absolute path using the server name and virtual directory name    string serverName =   HttpUtility.UrlEncode(Request.ServerVariables[\"SERVER_NAME\"]);     string vdirName = Request.ApplicationPath;   Response.Redirect(\"https://\" +    serverName + vdirName + \"/Restricted/Login.aspx\");}",
+      "Use Absolute URLs for Navigating Secure Pages"
     ],
     "strong": [
       "Verify that absolute URLs are used for navigating from secure pages.",
@@ -1219,6 +1204,9 @@
       "",
       ""
     ],
+    "ul": [
+      "Use Absolute URLs for Navigating Secure Pages"
+    ],
     "a": [
       "Use Absolute URLs for Navigating Secure Pages"
     ],
@@ -1232,5 +1220,5 @@
       "text": "Use Absolute URLs for Navigating Secure Pages"
     }
   ],
-  "html": "<h1>Applies To</h1>\r\n  <ul>\r\n    <li>ASP.NET 4.0</li>\r\n  </ul>\r\n  <h1>What to Check For</h1>\r\n  <p>Ensure that absolute URLs are used for navigation where the site is partitioned with secure and non-secure folders.</p>\r\n  <h1>Why</h1>\r\n  <p>Navigating between the public and restricted areas of your site (that is, between HTTP and HTTPS pages) is an issue because a redirect always uses the protocol (HTTPS or HTTP) of the current page, not the target page.</p>\r\n  <h1>How To Check</h1>\r\n  <p>To make sure that absolute URLs are used for navigating secure pages:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Verify that absolute URLs are used for navigating from secure pages.</strong> Examine all secure pages to make sure that all links, especially dynamically generated links use absolute URLs.</p>\r\n      <li>\r\n        <p>\r\n          <strong>Verify that absolute URLs are used when redirecting to secure pages.</strong> Find all pages that redirect to secure pages and make sure they use absolute URLs to address secure pages.</p>\r\n      </li>\r\n    </li>\r\n  </ol>\r\n  <h1>How To Fix</h1>\r\n  <p>Use the following guidelines when&nbsp;implementing navigation&nbsp;on a site that uses SSL:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Use absolute URLs when navigating from secure pages. </strong>After a user logs on and browses pages in a directory that is secured with SSL, relative links such as \"<em>..\\publicpage.aspx</em>\" or redirects to HTTP pages result in the pages being served using the HTTPS protocol, which incurs an unnecessary performance overhead. To avoid this, use absolute links such as \"<em>http://servername/appname/publicpage.aspx</em>\" when redirecting from an HTTPS page to an HTTP page.</p>\r\n      <li>\r\n        <p>\r\n          <strong>Use absolute URLs when redirecting to secure pages.</strong>&nbsp;Similarly, when you redirect to a secure page (for example, the logon page) from a public area of your site, you must use an absolute HTTPS path, such as \"<em>https://servername/appname/secure/login.aspx</em>\" instead of a relative path, such as \"<em>restricted/login.aspx</em>\". For example, if your Web page provides a logon button, use the following code to redirect to the secure login page.</p>\r\n        <pre>private void btnLogon_Click( object sender, System.EventArgs e )<br />&#123;<br />  // Form an absolute path using the server name and virtual directory name  <br />  string serverName =<br />   HttpUtility.UrlEncode(Request.ServerVariables&#91;\"SERVER_NAME\"&#93;);  <br />   string vdirName = Request.ApplicationPath;<br />   Response.Redirect(\"https://\" &#43;<br />    serverName &#43; vdirName &#43; \"/Restricted/Login.aspx\");<br />&#125;</pre>\r\n      </li>\r\n    </li>\r\n  </ol>\r\n  <h1>Related Items</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/ac94abdd-9e11-4231-857c-86d0095bdcdc\">Use Absolute URLs for Navigating Secure Pages</a>\r\n    </li>\r\n  </ul>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance. </p>"
+  "html": "<h1>What to Check For</h1>\n  <p>Ensure that absolute URLs are used for navigation where the site is partitioned with secure and non-secure folders.</p>\n  <h1>Why</h1>\n  <p>Navigating between the public and restricted areas of your site (that is, between HTTP and HTTPS pages) is an issue because a redirect always uses the protocol (HTTPS or HTTP) of the current page, not the target page.</p>\n  <h1>How To Check</h1>\n  <p>To make sure that absolute URLs are used for navigating secure pages:</p>\n  <ol>\n    <li>\n      <p>\n        <strong>Verify that absolute URLs are used for navigating from secure pages.</strong> Examine all secure pages to make sure that all links, especially dynamically generated links use absolute URLs.</p>\n      <li>\n        <p>\n          <strong>Verify that absolute URLs are used when redirecting to secure pages.</strong> Find all pages that redirect to secure pages and make sure they use absolute URLs to address secure pages.</p>\n      </li>\n    </li>\n  </ol>\n  <h1>How To Fix</h1>\n  <p>Use the following guidelines when implementing navigation on a site that uses TLS:</p>\n  <ol>\n    <li>\n      <p>\n        <strong>Use absolute URLs when navigating from secure pages. </strong>After a user logs on and browses pages in a directory that is secured with TLS, relative links such as \"<em>..\\publicpage.aspx</em>\" or redirects to HTTP pages result in the pages being served using the HTTPS protocol, which incurs an unnecessary performance overhead. To avoid this, use absolute links such as \"<em>http://servername/appname/publicpage.aspx</em>\" when redirecting from an HTTPS page to an HTTP page.</p>\n      <li>\n        <p>\n          <strong>Use absolute URLs when redirecting to secure pages.</strong> Similarly, when you redirect to a secure page (for example, the logon page) from a public area of your site, you must use an absolute HTTPS path, such as \"<em>https://servername/appname/secure/login.aspx</em>\" instead of a relative path, such as \"<em>restricted/login.aspx</em>\". For example, if your Web page provides a logon button, use the following code to redirect to the secure login page.</p>\n        <pre>private void btnLogon_Click( object sender, System.EventArgs e )<br />{<br />  // Form an absolute path using the server name and virtual directory name  <br />  string serverName =<br />   HttpUtility.UrlEncode(Request.ServerVariables[\"SERVER_NAME\"]);  <br />   string vdirName = Request.ApplicationPath;<br />   Response.Redirect(\"https://\" +<br />    serverName + vdirName + \"/Restricted/Login.aspx\");<br />}</pre>\n      </li>\n    </li>\n  </ol>\n  <h1>Related Items</h1>\n  <ul>\n    <li>\n      <a href=\"/article/ac94abdd-9e11-4231-857c-86d0095bdcdc\">Use Absolute URLs for Navigating Secure Pages</a>\n    </li>\n  </ul>\n  <hr />\n  <p>Adapted from Microsoft patterns &amp; practices guidance. </p>"
 }

@@ -1,6 +1,6 @@
 {
   "id": "cf27e5c2-4004-4868-98fd-1e73285218c9",
-  "checksum": "73fd42b4190937606d248b3f540bd8a4cf793fe9",
+  "checksum": "c38ebf7d0ab4ba18e0503558e79f820abe2d39f4",
   "words": {
     "111": [
       "ul",
@@ -405,7 +405,7 @@
       "ul",
       "li"
     ],
-    "at\rhttp://www.corecom.com/html/wlan_tools.html": [
+    "athttp://www.corecom.com/html/wlan_tools.html": [
       "ul",
       "li"
     ],
@@ -459,7 +459,7 @@
       "ul",
       "li"
     ],
-    "at\rhttp://www.airdefense.net/products/enterprise.php": [
+    "athttp://www.airdefense.net/products/enterprise.php": [
       "ul",
       "li"
     ],
@@ -483,7 +483,7 @@
       "ul",
       "li"
     ],
-    "at\r\r\nhttp://www.arubanetworks.com/solutions/use_cases/intrusion_detection.php": [
+    "at\nhttp://www.arubanetworks.com/solutions/use_cases/intrusion_detection.php": [
       "ul",
       "li"
     ],
@@ -520,18 +520,18 @@
     ],
     "ul": [
       "PCI DSS Requirement 11.1",
-      "For a list of many wireless security tools, please see \"Wireless Security Tools\" at\r\nhttp://www.corecom.com/html/wlan_tools.html\r\n\r\n    For information about Motorola Defense Solutions, please see \"Wireless Security & Compliance, Infrastructure Management and Network Assurance\" at\r\nhttp://www.airdefense.net/products/enterprise.php\r\n\r\n    For information about Aruba Networks Wireless IDS, please see \"Wireless Intrusion Detection & Prevention\" at\r\n\r\nhttp://www.arubanetworks.com/solutions/use_cases/intrusion_detection.php",
+      "For a list of many wireless security tools, please see \"Wireless Security Tools\" at\nhttp://www.corecom.com/html/wlan_tools.html\n\n    For information about Motorola Defense Solutions, please see \"Wireless Security & Compliance, Infrastructure Management and Network Assurance\" at\nhttp://www.airdefense.net/products/enterprise.php\n\n    For information about Aruba Networks Wireless IDS, please see \"Wireless Intrusion Detection & Prevention\" at\n\nhttp://www.arubanetworks.com/solutions/use_cases/intrusion_detection.php",
       "Deploy a Wireless IDS"
     ],
     "li": [
       "PCI DSS Requirement 11.1",
-      "For a list of many wireless security tools, please see \"Wireless Security Tools\" at\r\nhttp://www.corecom.com/html/wlan_tools.html",
-      "For information about Motorola Defense Solutions, please see \"Wireless Security & Compliance, Infrastructure Management and Network Assurance\" at\r\nhttp://www.airdefense.net/products/enterprise.php",
-      "For information about Aruba Networks Wireless IDS, please see \"Wireless Intrusion Detection & Prevention\" at\r\n\r\nhttp://www.arubanetworks.com/solutions/use_cases/intrusion_detection.php",
+      "For a list of many wireless security tools, please see \"Wireless Security Tools\" at\nhttp://www.corecom.com/html/wlan_tools.html",
+      "For information about Motorola Defense Solutions, please see \"Wireless Security & Compliance, Infrastructure Management and Network Assurance\" at\nhttp://www.airdefense.net/products/enterprise.php",
+      "For information about Aruba Networks Wireless IDS, please see \"Wireless Intrusion Detection & Prevention\" at\n\nhttp://www.arubanetworks.com/solutions/use_cases/intrusion_detection.php",
       "Deploy a Wireless IDS"
     ],
     "p": [
-      "A wireless IDS/IPS should be deployed or a wireless analyzer used at least once every quarter to detect unauthorized devices.&nbsp;The wireless IDS/IPS solution should identify all wireless devices in use and generate alerts when unauthorized devices or attacks\r\n are detected.",
+      "A wireless IDS/IPS should be deployed or a wireless analyzer used at least once every quarter to detect unauthorized devices.&nbsp;The wireless IDS/IPS solution should identify all wireless devices in use and generate alerts when unauthorized devices or attacks\n are detected.",
       "A wireless IDS or IPS can detect unauthorized wireless devices. Detecting such devices clearly indicate the presence of an attack.",
       "Interview the responsible personnel to identify the location of the IDS/IPS and ask them to demonstrate the administration interface. Verify that the IDS/IPS is set up to notify staff if an unauthorized wireless device is detected.",
       "Choose a wireless IDS or IPS solution. Configure the wireless IDS or IPS by following the vendor's instructions. Set the IDS or IPS to alert the staff in the event of a suspected compromise."
@@ -546,20 +546,20 @@
   "links": [
     {
       "href": "http://www.corecom.com/html/wlan_tools.html",
-      "text": "http://www.corecom.com/html/wlan_tools.html\r\n"
+      "text": "http://www.corecom.com/html/wlan_tools.html\n"
     },
     {
       "href": "http://www.airdefense.net/products/enterprise.php",
-      "text": "http://www.airdefense.net/products/enterprise.php\r\n"
+      "text": "http://www.airdefense.net/products/enterprise.php\n"
     },
     {
       "href": "http://www.arubanetworks.com/solutions/use_cases/intrusion_detection.php",
-      "text": "\r\nhttp://www.arubanetworks.com/solutions/use_cases/intrusion_detection.php"
+      "text": "\nhttp://www.arubanetworks.com/solutions/use_cases/intrusion_detection.php"
     },
     {
       "href": "/article/3c7e9cde-98e5-45b6-800e-d150d99fea16",
       "text": "Deploy a Wireless IDS"
     }
   ],
-  "html": "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 11.1</li>\r\n  </ul>\r\n  <h1>What to Check For</h1>\r\n  <p>A wireless IDS/IPS should be deployed or a wireless analyzer used at least once every quarter to detect unauthorized devices.&amp;nbsp;The wireless IDS/IPS solution should identify all wireless devices in use and generate alerts when unauthorized devices or attacks\r\n are detected. </p>\r\n  <h1>Why</h1>\r\n  <p>A wireless IDS or IPS can detect unauthorized wireless devices. Detecting such devices clearly indicate the presence of an attack.\r\n</p>\r\n  <h1>How to Check</h1>\r\n  <p>Interview the responsible personnel to identify the location of the IDS/IPS and ask them to demonstrate the administration interface. Verify that the IDS/IPS is set up to notify staff if an unauthorized wireless device is detected.\r\n</p>\r\n  <h1>How to Fix</h1>\r\n  <p>Choose a wireless IDS or IPS solution. Configure the wireless IDS or IPS by following the vendor's instructions. Set the IDS or IPS to alert the staff in the event of a suspected compromise.\r\n</p>\r\n  <h1>Additional Resources</h1>\r\n  <ul>\r\n    <li>For a list of many wireless security tools, please see \"Wireless Security Tools\" at\r\n<a href=\"http://www.corecom.com/html/wlan_tools.html\">http://www.corecom.com/html/wlan_tools.html\r\n</a></li>\r\n    <li>For information about Motorola Defense Solutions, please see \"Wireless Security &amp; Compliance, Infrastructure Management and Network Assurance\" at\r\n<a href=\"http://www.airdefense.net/products/enterprise.php\">http://www.airdefense.net/products/enterprise.php\r\n</a></li>\r\n    <li>For information about Aruba Networks Wireless IDS, please see \"Wireless Intrusion Detection &amp; Prevention\" at\r\n<a href=\"http://www.arubanetworks.com/solutions/use_cases/intrusion_detection.php\">\r\nhttp://www.arubanetworks.com/solutions/use_cases/intrusion_detection.php</a></li>\r\n  </ul>\r\n  <h1>Related Items</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/3c7e9cde-98e5-45b6-800e-d150d99fea16\">Deploy a Wireless IDS</a>\r\n    </li>\r\n  </ul>"
+  "html": "<h1>Applies to</h1>\n  <ul>\n    <li>PCI DSS Requirement 11.1</li>\n  </ul>\n  <h1>What to Check For</h1>\n  <p>A wireless IDS/IPS should be deployed or a wireless analyzer used at least once every quarter to detect unauthorized devices.&amp;nbsp;The wireless IDS/IPS solution should identify all wireless devices in use and generate alerts when unauthorized devices or attacks\n are detected. </p>\n  <h1>Why</h1>\n  <p>A wireless IDS or IPS can detect unauthorized wireless devices. Detecting such devices clearly indicate the presence of an attack.\n</p>\n  <h1>How to Check</h1>\n  <p>Interview the responsible personnel to identify the location of the IDS/IPS and ask them to demonstrate the administration interface. Verify that the IDS/IPS is set up to notify staff if an unauthorized wireless device is detected.\n</p>\n  <h1>How to Fix</h1>\n  <p>Choose a wireless IDS or IPS solution. Configure the wireless IDS or IPS by following the vendor's instructions. Set the IDS or IPS to alert the staff in the event of a suspected compromise.\n</p>\n  <h1>Additional Resources</h1>\n  <ul>\n    <li>For a list of many wireless security tools, please see \"Wireless Security Tools\" at\n<a href=\"http://www.corecom.com/html/wlan_tools.html\">http://www.corecom.com/html/wlan_tools.html\n</a></li>\n    <li>For information about Motorola Defense Solutions, please see \"Wireless Security &amp; Compliance, Infrastructure Management and Network Assurance\" at\n<a href=\"http://www.airdefense.net/products/enterprise.php\">http://www.airdefense.net/products/enterprise.php\n</a></li>\n    <li>For information about Aruba Networks Wireless IDS, please see \"Wireless Intrusion Detection &amp; Prevention\" at\n<a href=\"http://www.arubanetworks.com/solutions/use_cases/intrusion_detection.php\">\nhttp://www.arubanetworks.com/solutions/use_cases/intrusion_detection.php</a></li>\n  </ul>\n  <h1>Related Items</h1>\n  <ul>\n    <li>\n      <a href=\"/article/3c7e9cde-98e5-45b6-800e-d150d99fea16\">Deploy a Wireless IDS</a>\n    </li>\n  </ul>"
 }

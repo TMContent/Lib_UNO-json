@@ -1,6 +1,6 @@
 {
   "id": "df860f3d-2185-4939-be4b-ef26d8891855",
-  "checksum": "7f12eac202f69717423e1059d2dfb1e8326ab028",
+  "checksum": "9f55cdb0aa364b9df9d341a1672678c7644f28b4",
   "words": {
     "applies": [
       "h1"
@@ -110,9 +110,6 @@
       "ul",
       "li",
       "a",
-      "ul",
-      "li",
-      "a",
       "title"
     ],
     "used": [
@@ -166,10 +163,7 @@
       "p",
       "p",
       "p",
-      "pre",
-      "ul",
-      "li",
-      "a"
+      "pre"
     ],
     "application": [
       "p",
@@ -217,9 +211,6 @@
       "li",
       "a",
       "ul",
-      "ul",
-      "li",
-      "a",
       "li",
       "a",
       "title"
@@ -435,12 +426,6 @@
       "p",
       "p",
       "ul",
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a",
       "li",
       "a"
     ],
@@ -462,13 +447,7 @@
       "p",
       "li",
       "p",
-      "p",
-      "ul",
-      "li",
-      "a",
-      "ul",
-      "li",
-      "a"
+      "p"
     ],
     "purposes": [
       "ol",
@@ -588,9 +567,6 @@
       "p",
       "p",
       "ul",
-      "ul",
-      "li",
-      "a",
       "li",
       "a"
     ],
@@ -869,53 +845,6 @@
     ],
     "protect": [
       "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a"
-    ],
-    "jaas": [
-      "ul",
-      "li",
-      "a",
-      "ul",
-      "li",
-      "a"
-    ],
-    "policy": [
-      "ul",
-      "li",
-      "a",
-      "ul",
-      "li",
-      "a"
-    ],
-    "configuration": [
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a",
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a"
-    ],
-    "files": [
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a",
-      "ul",
-      "ul",
-      "li",
-      "a",
       "li",
       "a"
     ],
@@ -943,6 +872,22 @@
       "li",
       "a"
     ],
+    "configuration": [
+      "ul",
+      "li",
+      "a",
+      "ul",
+      "li",
+      "a"
+    ],
+    "files": [
+      "ul",
+      "li",
+      "a",
+      "ul",
+      "li",
+      "a"
+    ],
     "checklists": [
       "h1"
     ],
@@ -963,9 +908,6 @@
     ],
     "protected": [
       "ul",
-      "ul",
-      "li",
-      "a",
       "li",
       "a"
     ]
@@ -984,8 +926,8 @@
     ],
     "ul": [
       "Applications written using Servlets or JSP.",
-      "Remove Test Accounts\r\n    \r\n    \r\n      Remove Test Interfaces\r\n    \r\n    \r\n      Disable Directory Browsing\r\n    \r\n    \r\n      Use a Least-Privileged Account for Running Applications\r\n    \r\n    \r\n      Protect the JAAS Policy and Configuration Files\r\n    \r\n    \r\n      Protect Sensitive Data Inside Configuration Files",
-      "Test Accounts Are Removed\r\n    \r\n    \r\n      Test Interfaces Are Removed\r\n    \r\n    \r\n      Directory Browsing Is Disabled\r\n    \r\n    \r\n      A Least Privileged Account Is Used for Running Applications\r\n    \r\n    \r\n      JAAS Policy and Configuration Files Are Protected\r\n    \r\n    \r\n      Sensitive Data Inside Configuration Files Is Protected"
+      "Remove Test Accounts\n    \n    \n      Remove Test Interfaces\n    \n    \n      Disable Directory Browsing\n    \n    \n      Use a Least-Privileged Account for Running Applications\n    \n    \n      Protect Sensitive Data Inside Configuration Files",
+      "Test Accounts Are Removed\n    \n    \n      Directory Browsing Is Disabled\n    \n    \n      A Least Privileged Account Is Used for Running Applications\n    \n    \n      Sensitive Data Inside Configuration Files Is Protected"
     ],
     "li": [
       "Applications written using Servlets or JSP.",
@@ -995,13 +937,10 @@
       "Remove Test Interfaces",
       "Disable Directory Browsing",
       "Use a Least-Privileged Account for Running Applications",
-      "Protect the JAAS Policy and Configuration Files",
       "Protect Sensitive Data Inside Configuration Files",
       "Test Accounts Are Removed",
-      "Test Interfaces Are Removed",
       "Directory Browsing Is Disabled",
       "A Least Privileged Account Is Used for Running Applications",
-      "JAAS Policy and Configuration Files Are Protected",
       "Sensitive Data Inside Configuration Files Is Protected"
     ],
     "p": [
@@ -1015,7 +954,7 @@
       "The following code shows the user management system for an application. Because the test API is removed from the class, there is no untested code that a malicious user can attack."
     ],
     "ol": [
-      "Identify all test APIs: Enumerate all public APIs. Identify which APIs are intended for application use and which APIs are intended for test purposes. Ideally these interfaces will already be documented properly and can be discovered through specifications.\r\n      \r\n        \r\n          Remove the test interfaces: Code removal is a straight forward procedure. Once the test code is identified, it should be isolated from the application and removed from your code base."
+      "Identify all test APIs: Enumerate all public APIs. Identify which APIs are intended for application use and which APIs are intended for test purposes. Ideally these interfaces will already be documented properly and can be discovered through specifications.\n      \n        \n          Remove the test interfaces: Code removal is a straight forward procedure. Once the test code is identified, it should be isolated from the application and removed from your code base."
     ],
     "strong": [
       "Identify all test APIs",
@@ -1083,13 +1022,10 @@
       "Remove Test Interfaces",
       "Disable Directory Browsing",
       "Use a Least-Privileged Account for Running Applications",
-      "Protect the JAAS Policy and Configuration Files",
       "Protect Sensitive Data Inside Configuration Files",
       "Test Accounts Are Removed",
-      "Test Interfaces Are Removed",
       "Directory Browsing Is Disabled",
       "A Least Privileged Account Is Used for Running Applications",
-      "JAAS Policy and Configuration Files Are Protected",
       "Sensitive Data Inside Configuration Files Is Protected"
     ]
   },
@@ -1111,20 +1047,12 @@
       "text": "Use a Least-Privileged Account for Running Applications"
     },
     {
-      "href": "/article/47e80747-3e12-4dd1-a522-ea5c33154a86",
-      "text": "Protect the JAAS Policy and Configuration Files"
-    },
-    {
       "href": "/article/3f301ff9-098d-46cb-ac53-cb3fa6897cdf",
       "text": "Protect Sensitive Data Inside Configuration Files"
     },
     {
       "href": "/article/256b4884-9ff0-4a33-960c-305b824bab68",
       "text": "Test Accounts Are Removed"
-    },
-    {
-      "href": "/article/fe7941bc-b986-48f9-9fa3-422c34db36bd",
-      "text": "Test Interfaces Are Removed"
     },
     {
       "href": "/article/65e70f79-645d-415c-9e71-9cff045cc1c4",
@@ -1135,13 +1063,9 @@
       "text": "A Least Privileged Account Is Used for Running Applications"
     },
     {
-      "href": "/article/4bc8430f-b950-455a-80c1-8cbdb524c1e3",
-      "text": "JAAS Policy and Configuration Files Are Protected"
-    },
-    {
       "href": "/article/f9c1e6b0-1bc4-4108-9c9a-55dca84749ac",
       "text": "Sensitive Data Inside Configuration Files Is Protected"
     }
   ],
-  "html": "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>Applications written using Servlets or JSP.</li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Remove all public interfaces used for testing the application.</p>\r\n  <h1>Why</h1>\r\n  <p>Test interfaces add extra functionality that is not intended for the released application. Often these interfaces will be used by a test team to gain information or drive functionality that would be dangerous in the hands of an attacker.</p>\r\n  <h1>When</h1>\r\n  <p>If your application contains test interfaces remove them before deployment.</p>\r\n  <h1>How</h1>\r\n  <p>To remove all test interfaces:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Identify all test APIs</strong>: Enumerate all public APIs. Identify which APIs are intended for application use and which APIs are intended for test purposes. Ideally these interfaces will already be documented&nbsp;properly and can be discovered through specifications.</p>\r\n      <li>\r\n        <p>\r\n          <strong>Remove the test interfaces</strong>: Code removal is a straight forward procedure. Once the test code is identified, it should be isolated from the application and removed from your code base.</p>\r\n      </li>\r\n    </li>\r\n  </ol>\r\n  <h1>Problem Example</h1>\r\n  <p>The following code shows the user management system for an application. Because the class contains test APIs, it is possible for a malicious user to execute untested code and possibly exploit any vulnerabilities in it.</p>\r\n  <pre>public final class UserManager<br />&#123;<br />      public UserManager()<br />      &#123;<br />            ...<br />      &#125;<br />      public boolean addUser(User user, char&#91;&#93; pass, char&#91;&#93; verifyPass)<br />      &#123;<br />            ...<br />      &#125;<br />      public boolean removeUser(User user)<br />      &#123;<br />            ...<br />      &#125;<br />      public boolean modifyUser(User user)<br />      &#123;<br />            ...<br />      &#125;<br />      public boolean changePass(User user, char&#91;&#93; oldPass,<br />                                char&#91;&#93; pass, char&#91;&#93; verifyPass)<br />      &#123;<br />            ...<br />      &#125;<br />      // The class contains test APIs<br />      public void addTestUsers()<br />      &#123;<br />            ...<br />      &#125;<br />&#125;</pre>\r\n  <h1>Solution Example</h1>\r\n  <p>The following code shows the user management system for an application. Because the test API is removed from the class, there is no untested code that a malicious user can attack.</p>\r\n  <pre>// The class contains no test APIspublic final class UserManager<br />&#123;<br />      public UserManager()<br />      &#123;<br />            ...<br />      &#125;<br />      public boolean addUser(User user, char&#91;&#93; pass, char&#91;&#93; verifyPass)<br />      &#123;<br />            ...<br />      &#125;<br />      public boolean removeUser(User user)<br />      &#123;<br />            ...<br />      &#125;<br />      public boolean modifyUser(User user)<br />      &#123;<br />            ...<br />      &#125;<br />      public boolean changePass(User user, char&#91;&#93; oldPass,<br />                                char&#91;&#93; pass, char&#91;&#93; verifyPass)<br />      &#123;<br />            ...<br />      &#125;<br />&#125;</pre>\r\n  <h1>Java Deployment Guidelines</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/f21f5350-826d-44dd-b758-fd824d52f592\">Remove Test Accounts</a>\r\n    </li>\r\n    <li>\r\n      <a href=\"/article/df860f3d-2185-4939-be4b-ef26d8891855\">Remove Test Interfaces</a>\r\n    </li>\r\n    <li>\r\n      <a href=\"/article/fd675679-e8ad-40fc-bac4-d56fc440bc00\">Disable Directory Browsing</a>\r\n    </li>\r\n    <li>\r\n      <a href=\"/article/aebb10ce-aeb6-45e5-b159-e2bc76b012bf\">Use a Least-Privileged Account for Running Applications</a>\r\n    </li>\r\n    <li>\r\n      <a href=\"/article/47e80747-3e12-4dd1-a522-ea5c33154a86\">Protect the JAAS Policy and Configuration Files</a>\r\n    </li>\r\n    <li>\r\n      <a href=\"/article/3f301ff9-098d-46cb-ac53-cb3fa6897cdf\">Protect Sensitive Data Inside Configuration Files</a>\r\n    </li>\r\n  </ul>\r\n  <h1>Java Deployment Checklists</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/256b4884-9ff0-4a33-960c-305b824bab68\">Test Accounts Are Removed</a>\r\n    </li>\r\n    <li>\r\n      <a href=\"/article/fe7941bc-b986-48f9-9fa3-422c34db36bd\">Test Interfaces Are Removed</a>\r\n    </li>\r\n    <li>\r\n      <a href=\"/article/65e70f79-645d-415c-9e71-9cff045cc1c4\">Directory Browsing Is Disabled</a>\r\n    </li>\r\n    <li>\r\n      <a href=\"/article/a2000bc9-7e22-4d0c-91b8-a9ec623985d3\">A Least Privileged Account Is Used for Running Applications</a>\r\n    </li>\r\n    <li>\r\n      <a href=\"/article/4bc8430f-b950-455a-80c1-8cbdb524c1e3\">JAAS Policy and Configuration Files Are Protected</a>\r\n    </li>\r\n    <li>\r\n      <a href=\"/article/f9c1e6b0-1bc4-4108-9c9a-55dca84749ac\">Sensitive Data Inside Configuration Files Is Protected</a>\r\n    </li>\r\n  </ul>"
+  "html": "<h1>Applies to</h1>\n  <ul>\n    <li>Applications written using Servlets or JSP.</li>\n  </ul>\n  <h1>What to Do</h1>\n  <p>Remove all public interfaces used for testing the application.</p>\n  <h1>Why</h1>\n  <p>Test interfaces add extra functionality that is not intended for the released application. Often these interfaces will be used by a test team to gain information or drive functionality that would be dangerous in the hands of an attacker.</p>\n  <h1>When</h1>\n  <p>If your application contains test interfaces remove them before deployment.</p>\n  <h1>How</h1>\n  <p>To remove all test interfaces:</p>\n  <ol>\n    <li>\n      <p>\n        <strong>Identify all test APIs</strong>: Enumerate all public APIs. Identify which APIs are intended for application use and which APIs are intended for test purposes. Ideally these interfaces will already be documented&nbsp;properly and can be discovered through specifications.</p>\n      <li>\n        <p>\n          <strong>Remove the test interfaces</strong>: Code removal is a straight forward procedure. Once the test code is identified, it should be isolated from the application and removed from your code base.</p>\n      </li>\n    </li>\n  </ol>\n  <h1>Problem Example</h1>\n  <p>The following code shows the user management system for an application. Because the class contains test APIs, it is possible for a malicious user to execute untested code and possibly exploit any vulnerabilities in it.</p>\n  <pre>public final class UserManager<br />&#123;<br />      public UserManager()<br />      &#123;<br />            ...<br />      &#125;<br />      public boolean addUser(User user, char&#91;&#93; pass, char&#91;&#93; verifyPass)<br />      &#123;<br />            ...<br />      &#125;<br />      public boolean removeUser(User user)<br />      &#123;<br />            ...<br />      &#125;<br />      public boolean modifyUser(User user)<br />      &#123;<br />            ...<br />      &#125;<br />      public boolean changePass(User user, char&#91;&#93; oldPass,<br />                                char&#91;&#93; pass, char&#91;&#93; verifyPass)<br />      &#123;<br />            ...<br />      &#125;<br />      // The class contains test APIs<br />      public void addTestUsers()<br />      &#123;<br />            ...<br />      &#125;<br />&#125;</pre>\n  <h1>Solution Example</h1>\n  <p>The following code shows the user management system for an application. Because the test API is removed from the class, there is no untested code that a malicious user can attack.</p>\n  <pre>// The class contains no test APIspublic final class UserManager<br />&#123;<br />      public UserManager()<br />      &#123;<br />            ...<br />      &#125;<br />      public boolean addUser(User user, char&#91;&#93; pass, char&#91;&#93; verifyPass)<br />      &#123;<br />            ...<br />      &#125;<br />      public boolean removeUser(User user)<br />      &#123;<br />            ...<br />      &#125;<br />      public boolean modifyUser(User user)<br />      &#123;<br />            ...<br />      &#125;<br />      public boolean changePass(User user, char&#91;&#93; oldPass,<br />                                char&#91;&#93; pass, char&#91;&#93; verifyPass)<br />      &#123;<br />            ...<br />      &#125;<br />&#125;</pre>\n  <h1>Java Deployment Guidelines</h1>\n  <ul>\n    <li>\n      <a href=\"/article/f21f5350-826d-44dd-b758-fd824d52f592\">Remove Test Accounts</a>\n    </li>\n    <li>\n      <a href=\"/article/df860f3d-2185-4939-be4b-ef26d8891855\">Remove Test Interfaces</a>\n    </li>\n    <li>\n      <a href=\"/article/fd675679-e8ad-40fc-bac4-d56fc440bc00\">Disable Directory Browsing</a>\n    </li>\n    <li>\n      <a href=\"/article/aebb10ce-aeb6-45e5-b159-e2bc76b012bf\">Use a Least-Privileged Account for Running Applications</a>\n    </li>\n    <li>\n      <a href=\"/article/3f301ff9-098d-46cb-ac53-cb3fa6897cdf\">Protect Sensitive Data Inside Configuration Files</a>\n    </li>\n  </ul>\n  <h1>Java Deployment Checklists</h1>\n  <ul>\n    <li>\n      <a href=\"/article/256b4884-9ff0-4a33-960c-305b824bab68\">Test Accounts Are Removed</a>\n    </li>\n    <li>\n      <a href=\"/article/65e70f79-645d-415c-9e71-9cff045cc1c4\">Directory Browsing Is Disabled</a>\n    </li>\n    <li>\n      <a href=\"/article/a2000bc9-7e22-4d0c-91b8-a9ec623985d3\">A Least Privileged Account Is Used for Running Applications</a>\n    </li>\n    <li>\n      <a href=\"/article/f9c1e6b0-1bc4-4108-9c9a-55dca84749ac\">Sensitive Data Inside Configuration Files Is Protected</a>\n    </li>\n  </ul>"
 }

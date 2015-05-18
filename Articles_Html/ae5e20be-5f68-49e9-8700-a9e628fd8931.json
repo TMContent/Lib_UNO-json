@@ -1,6 +1,6 @@
 {
   "id": "ae5e20be-5f68-49e9-8700-a9e628fd8931",
-  "checksum": "80468f7fba69071df33d35c248295a665ff0f36c",
+  "checksum": "53035964dc6baf706bfa701fdccdd7a9c1cbba84",
   "words": {
     "what": [
       "h1"
@@ -592,12 +592,12 @@
       "Implement logging. Add code that records the following details in log entries:"
     ],
     "ol": [
-      "Identify existing logging functionality. Look for libraries or classes that are designed specifically for logging. Make a list of functions used to generate log entries and document them.\r\n      \r\n        \r\n          Centralize logging. If a dedicated logging library or class doesn't exist, design and write one. Consider implementing functionality for sending logs to an external log server. One common protocol for sending logs to a log server is syslog (RFC 5424).\r\n        \r\n          \r\n            Implement logging. Add code that records the following details in log entries:\r\n          \r\n            User identificationType of eventDate and time stampSuccess or failure indicationSource of eventNames or other identifiers of affected data or resources"
+      "Identify existing logging functionality. Look for libraries or classes that are designed specifically for logging. Make a list of functions used to generate log entries and document them.\n      \n        \n          Centralize logging. If a dedicated logging library or class doesn't exist, design and write one. Consider implementing functionality for sending logs to an external log server. One common protocol for sending logs to a log server is syslog (RFC 5424).\n        \n          \n            Implement logging. Add code that records the following details in log entries:\n          \n            User identificationType of eventDate and time stampSuccess or failure indicationSource of eventNames or other identifiers of affected data or resources"
     ],
     "li": [
       "Identify existing logging functionality. Look for libraries or classes that are designed specifically for logging. Make a list of functions used to generate log entries and document them.",
       "Centralize logging. If a dedicated logging library or class doesn't exist, design and write one. Consider implementing functionality for sending logs to an external log server. One common protocol for sending logs to a log server is syslog (RFC 5424).",
-      "Implement logging. Add code that records the following details in log entries:\r\n          \r\n            User identificationType of eventDate and time stampSuccess or failure indicationSource of eventNames or other identifiers of affected data or resources",
+      "Implement logging. Add code that records the following details in log entries:\n          \n            User identificationType of eventDate and time stampSuccess or failure indicationSource of eventNames or other identifiers of affected data or resources",
       "User identification",
       "Type of event",
       "Date and time stamp",
@@ -615,5 +615,5 @@
     ]
   },
   "links": [],
-  "html": "<h1>What to Do</h1>\r\n  <p>Write applications that include important details in log entries.</p>\r\n  <h1>Why</h1>\r\n  <p>Log event entries should include important details so that the contents of the logs are useful for forensics and system administration.</p>\r\n  <h1>How</h1>\r\n  <p>Perform the following actions to add code that logs important event details:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Identify existing logging functionality.</strong> Look for libraries or classes that are designed specifically for logging. Make a list of functions used to generate log entries and document them.</p>\r\n      <li>\r\n        <p>\r\n          <strong>Centralize logging.</strong> If a dedicated logging library or class doesn't exist, design and write one. Consider implementing functionality for sending logs to an external log server. One common protocol for sending logs to a log server is syslog (RFC 5424).</p>\r\n        <li>\r\n          <p>\r\n            <strong>Implement logging.</strong> Add code that records the following details in log entries:</p>\r\n          <ul>\r\n            <li>User identification<li>Type of event<li>Date and time stamp<li>Success or failure indication<li>Source of event<li>Names or other identifiers of affected data or resources</li></li></li></li></li></li>\r\n          </ul>\r\n        </li>\r\n      </li>\r\n    </li>\r\n  </ol>"
+  "html": "<h1>What to Do</h1>\n  <p>Write applications that include important details in log entries.</p>\n  <h1>Why</h1>\n  <p>Log event entries should include important details so that the contents of the logs are useful for forensics and system administration.</p>\n  <h1>How</h1>\n  <p>Perform the following actions to add code that logs important event details:</p>\n  <ol>\n    <li>\n      <p>\n        <strong>Identify existing logging functionality.</strong> Look for libraries or classes that are designed specifically for logging. Make a list of functions used to generate log entries and document them.</p>\n      <li>\n        <p>\n          <strong>Centralize logging.</strong> If a dedicated logging library or class doesn't exist, design and write one. Consider implementing functionality for sending logs to an external log server. One common protocol for sending logs to a log server is syslog (RFC 5424).</p>\n        <li>\n          <p>\n            <strong>Implement logging.</strong> Add code that records the following details in log entries:</p>\n          <ul>\n            <li>User identification<li>Type of event<li>Date and time stamp<li>Success or failure indication<li>Source of event<li>Names or other identifiers of affected data or resources</li></li></li></li></li></li>\n          </ul>\n        </li>\n      </li>\n    </li>\n  </ol>"
 }

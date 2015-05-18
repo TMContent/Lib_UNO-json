@@ -1,6 +1,6 @@
 {
   "id": "e5c7a94d-ed20-4987-a6ed-1c4c6e3ffda5",
-  "checksum": "86193567ae01f74f86878a641d6c1f425ca29bdc",
+  "checksum": "3e7e7114d8aed0f16050472a65472fd80f598c3e",
   "words": {
     "35": [
       "ul",
@@ -307,7 +307,7 @@
       "ul",
       "li"
     ],
-    "undetected\r\nyou": [
+    "undetected\nyou": [
       "ul"
     ],
     "have": [
@@ -564,8 +564,8 @@
       "Additional Resources"
     ],
     "ul": [
-      "Microsoft® Windows Communication Foundation (WCF) 3.5 \r\nMicrosoft Visual Studio® 2008",
-      "SSL does not provide protection for the initial client-server handshake. Thus a man-in-the-middle attack can go undetected.\r\nYou have less control of the communication between the client and service across the Internet. There is a chance of having intermediaries which might break transport security.",
+      "Microsoft® Windows Communication Foundation (WCF) 3.5 \nMicrosoft Visual Studio® 2008",
+      "SSL does not provide protection for the initial client-server handshake. Thus a man-in-the-middle attack can go undetected.\nYou have less control of the communication between the client and service across the Internet. There is a chance of having intermediaries which might break transport security.",
       "For more information on message protection,  see “Message Security” at http://msdn2.microsoft.com/en-us/library/ms733137.aspxFor message security Q&A, see the Message Protection section of “WCF 3.5 Questions and Answers“ at http://www.codeplex.com/WCFSecurityGuide/Wiki/View.aspx?title=WCF%20Questions%20and%20Answers%20%28Q%26A%29&referringTitle=Home"
     ],
     "li": [
@@ -605,5 +605,5 @@
       "text": "http://www.codeplex.com/WCFSecurityGuide/Wiki/View.aspx?title=WCF%20Questions%20and%20Answers%20%28Q%26A%29&referringTitle=Home"
     }
   ],
-  "html": "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>Microsoft® Windows Communication Foundation (WCF) 3.5 \r\n<li>Microsoft Visual Studio® 2008</li></li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>If you need to support clients over the Internet, consider using Message Security.</p>\r\n  <h1>Why</h1>\r\n  <p>Message security provides end to end security. </p>\r\n  <h1>When</h1>\r\n  <p>Consider using this guideline when you need to support clients over the Internet.</p>\r\n  <h1>How</h1>\r\n  <p>Use message security when your clients are deployed over internet and you cannot rely on transport security (SSL).&nbsp; Message security provides end to end security.&nbsp; </p>\r\n  <ul>\r\n    <li>SSL does not provide protection for the initial client-server handshake. Thus a man-in-the-middle attack can go undetected.\r\n<li>You have less control of the communication between the client and service across the Internet. There is a chance of having intermediaries which might break transport security.</li></li>\r\n  </ul>\r\n  <p>The downside of using message security is potentially decreased performance due to the fact that each message much be encrypted individually.&nbsp; Large message packets can especially create lag. You can use wsHttpBinding which by default uses message security and also supports interoperability as it uses text encoding.<br /></p>\r\n  <h1>Additional Resources</h1>\r\n  <ul>\r\n    <li>For more information on message protection,&nbsp; see “Message Security” at <a href=\"http://msdn2.microsoft.com/en-us/library/ms733137.aspx\">http://msdn2.microsoft.com/en-us/library/ms733137.aspx</a><li>For message security Q&A, see the Message Protection section of “WCF 3.5 Questions and Answers“ at <a href=\"http://www.codeplex.com/WCFSecurityGuide/Wiki/View.aspx?title=WCF%20Questions%20and%20Answers%20%28Q%26A%29&referringTitle=Home\">http://www.codeplex.com/WCFSecurityGuide/Wiki/View.aspx?title=WCF%20Questions%20and%20Answers%20%28Q%26A%29&referringTitle=Home</a></li></li>\r\n  </ul>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
+  "html": "<h1>Applies to</h1>\n  <ul>\n    <li>Microsoft® Windows Communication Foundation (WCF) 3.5 \n<li>Microsoft Visual Studio® 2008</li></li>\n  </ul>\n  <h1>What to Do</h1>\n  <p>If you need to support clients over the Internet, consider using Message Security.</p>\n  <h1>Why</h1>\n  <p>Message security provides end to end security. </p>\n  <h1>When</h1>\n  <p>Consider using this guideline when you need to support clients over the Internet.</p>\n  <h1>How</h1>\n  <p>Use message security when your clients are deployed over internet and you cannot rely on transport security (SSL).&nbsp; Message security provides end to end security.&nbsp; </p>\n  <ul>\n    <li>SSL does not provide protection for the initial client-server handshake. Thus a man-in-the-middle attack can go undetected.\n<li>You have less control of the communication between the client and service across the Internet. There is a chance of having intermediaries which might break transport security.</li></li>\n  </ul>\n  <p>The downside of using message security is potentially decreased performance due to the fact that each message much be encrypted individually.&nbsp; Large message packets can especially create lag. You can use wsHttpBinding which by default uses message security and also supports interoperability as it uses text encoding.<br /></p>\n  <h1>Additional Resources</h1>\n  <ul>\n    <li>For more information on message protection,&nbsp; see “Message Security” at <a href=\"http://msdn2.microsoft.com/en-us/library/ms733137.aspx\">http://msdn2.microsoft.com/en-us/library/ms733137.aspx</a><li>For message security Q&A, see the Message Protection section of “WCF 3.5 Questions and Answers“ at <a href=\"http://www.codeplex.com/WCFSecurityGuide/Wiki/View.aspx?title=WCF%20Questions%20and%20Answers%20%28Q%26A%29&referringTitle=Home\">http://www.codeplex.com/WCFSecurityGuide/Wiki/View.aspx?title=WCF%20Questions%20and%20Answers%20%28Q%26A%29&referringTitle=Home</a></li></li>\n  </ul>\n  <hr />\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
 }

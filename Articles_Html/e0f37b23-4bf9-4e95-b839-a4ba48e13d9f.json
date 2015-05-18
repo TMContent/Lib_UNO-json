@@ -1,6 +1,6 @@
 {
   "id": "e0f37b23-4bf9-4e95-b839-a4ba48e13d9f",
-  "checksum": "6c55534f32afdd1015f73da99a60fe35cfc8514d",
+  "checksum": "ca2001eb34022fdca0d9124b97186e7af64fbae4",
   "words": {
     "what": [
       "h1"
@@ -551,7 +551,7 @@
     "byte": [
       "pre"
     ],
-    "arraybyte]": [
+    "arraybyte&#91&#93;": [
       "pre"
     ],
     "toencrypt": [
@@ -566,7 +566,7 @@
       "pre",
       "pre"
     ],
-    "unicodeencodingascii.getbytes(": [
+    "unicodeencodingascii.getbytes(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
       "pre"
     ],
     "\"the": [
@@ -578,7 +578,7 @@
     "protecteddata": [
       "pre"
     ],
-    "classbyte[]": [
+    "classbyte&#91;&#93;": [
       "pre"
     ],
     "encrypteddata": [
@@ -587,13 +587,10 @@
     "protecteddataprotect(toencrypt,": [
       "pre"
     ],
-    "null": [
-      "pre",
-      "pre",
+    "null&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
       "pre"
     ],
     "dataprotectionscopelocalmachine);": [
-      "pre",
       "pre"
     ],
     "new": [
@@ -619,7 +616,7 @@
     "environmentuserdomainname": [
       "pre"
     ],
-    "+": [
+    "&#43": [
       "pre",
       "pre"
     ],
@@ -638,32 +635,31 @@
     "rule": [
       "pre"
     ],
-    "registryaccessruleuser,": [
+    "registryaccessruleuser,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
       "pre"
     ],
-    "registryrightsfullcontrol,": [
+    "registryrightsfullcontrol,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
       "pre"
     ],
-    "inheritanceflagscontainerinherit,": [
+    "inheritanceflagscontainerinherit,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
       "pre"
     ],
-    "propagationflagsnone,": [
+    "propagationflagsnone,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
       "pre"
     ],
     "accesscontroltypeallow);security.addaccessrule(rule);": [
       "pre"
     ],
-    "registrycurrentuser.createsubkey(\"testencrypteddata\",": [
+    "registrycurrentuser.createsubkey(\"testencrypteddata\",&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
       "pre"
     ],
-    "registrykeypermissioncheckreadwritesubtree,": [
+    "registrykeypermissioncheckreadwritesubtree,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
       "pre"
     ],
-    "security;registry.setvalue(@\"hkey_current_user\\testencrypteddata\",": [
+    "security;registry.setvalue(&#64;\"hkey_current_user\\testencrypteddata\",": [
       "pre"
     ],
-    "\"encrypted\"": [
-      "pre",
+    "\"encrypted\"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
       "pre"
     ],
     "encrypteddata;": [
@@ -686,25 +682,37 @@
     "contents": [
       "pre"
     ],
-    "byte]": [
+    "byte&#91&#93;": [
       "pre"
     ],
     "datafromregistry": [
       "pre"
     ],
-    "registrygetvalue(@\"hkey_current_user\\testencrypteddata\",": [
+    "registrygetvalue(&#64;\"hkey_current_user\\testencrypteddata\",&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+      "pre"
+    ],
+    "\"encrypted\"": [
+      "pre"
+    ],
+    "null": [
       "pre"
     ],
     "as": [
       "pre"
     ],
-    "byte];byte[]": [
+    "byte&#91&#93;;byte&#91;&#93;": [
       "pre"
     ],
     "decrypteddata": [
       "pre"
     ],
     "protecteddataunprotect(datafromregistry,": [
+      "pre"
+    ],
+    "null&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+      "pre"
+    ],
+    "dataprotectionscopelocalmachine);&nbsp;": [
       "pre"
     ],
     "adapted": [
@@ -724,6 +732,9 @@
     ],
     "guidance": [
       "p"
+    ],
+    "sink]": [
+      "title"
     ]
   },
   "tags": {
@@ -745,11 +756,11 @@
     ],
     "pre": [
       "using System.Security.Cryptography;using System.Security.AccessControl;using System.Text;using Microsoft.Win32;...",
-      "// Get the original data in a byte arraybyte[] toEncrypt = UnicodeEncoding.ASCII.GetBytes(                   \"The Keys to be encrypted\");",
-      "// Encrypt the data by using the ProtectedData class.byte[] encryptedData = ProtectedData.Protect(toEncrypt, null,                       DataProtectionScope.LocalMachine);",
-      "// Create a new key in the registry with a restricted ACL // and write stream of bytes to the registry keystring user = Environment.UserDomainName + \"\\\\\" + Environment.UserName;RegistrySecurity security = new RegistrySecurity();RegistryAccessRule rule = new RegistryAccessRule(user,                RegistryRights.FullControl,                InheritanceFlags.ContainerInherit,                PropagationFlags.None,                AccessControlType.Allow);security.AddAccessRule(rule);",
-      "Registry.CurrentUser.CreateSubKey(\"TestEncryptedData\",                RegistryKeyPermissionCheck.ReadWriteSubTree,                security);Registry.SetValue(@\"HKEY_CURRENT_USER\\TestEncryptedData\", \"Encrypted\",                 encryptedData);",
-      "// Read the encrypted data from registry and decrypt the contents byte[] dataFromRegistry = Registry.GetValue(@\"HKEY_CURRENT_USER\\TestEncryptedData\",                 \"Encrypted\", null) as byte[];byte[] decryptedData = ProtectedData.Unprotect(dataFromRegistry, null,                 DataProtectionScope.LocalMachine);"
+      "// Get the original data in a byte arraybyte&#91;&#93; toEncrypt = UnicodeEncoding.ASCII.GetBytes(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \"The Keys to be encrypted\");",
+      "// Encrypt the data by using the ProtectedData class.byte&#91;&#93; encryptedData = ProtectedData.Protect(toEncrypt, null,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DataProtectionScope.LocalMachine);",
+      "// Create a new key in the registry with a restricted ACL // and write stream of bytes to the registry keystring user = Environment.UserDomainName &#43; \"\\\\\" &#43; Environment.UserName;RegistrySecurity security = new RegistrySecurity();RegistryAccessRule rule = new RegistryAccessRule(user,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; RegistryRights.FullControl,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; InheritanceFlags.ContainerInherit,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PropagationFlags.None,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AccessControlType.Allow);security.AddAccessRule(rule);",
+      "Registry.CurrentUser.CreateSubKey(\"TestEncryptedData\",&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; RegistryKeyPermissionCheck.ReadWriteSubTree,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; security);Registry.SetValue(&#64;\"HKEY_CURRENT_USER\\TestEncryptedData\", \"Encrypted\",&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; encryptedData);",
+      "// Read the encrypted data from registry and decrypt the contents byte&#91;&#93; dataFromRegistry = Registry.GetValue(&#64;\"HKEY_CURRENT_USER\\TestEncryptedData\",&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \"Encrypted\", null) as byte&#91;&#93;;byte&#91;&#93; decryptedData = ProtectedData.Unprotect(dataFromRegistry, null,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DataProtectionScope.LocalMachine);&nbsp;"
     ],
     "br": [
       "",
@@ -784,5 +795,5 @@
     ]
   },
   "links": [],
-  "html": "<h1>What to Do</h1>\r\n  <p>Do not store keys in code. Instead use DPAPI to encrypt the encryption key and store it in a protected registry key. Create an ACL to protect the registry key that allows full control for administrators and read-only access for your application's process account.</p>\r\n  <h1>Why</h1>\r\n  <p>an attacker can disassemble hard-coded keys in your compiled assembly by using tools similar to ILDASM, which will render your key in plain text.</p>\r\n  <h1>When</h1>\r\n  <p>When adding cryptographic support to your application.</p>\r\n  <h1>How</h1>\r\n  <p>You can use DPAPI with the machine key to encrypt the keys, store the encrypted keys beneath a registry key, and then use an ACL that restricts access to your specific application identity to restrict access to the registry key. Alternatively, you can use DPAPI with the user store. In this latter case, you need to load the user account's profile to access the key.</p>\r\n  <p>Consider using the machine store if your application is a server that runs on its own dedicated computer with no other applications, or if you have multiple applications on the same server and you need those applications to be able to share the keys. If you only want specific service accounts to be able to access the DPAPI keys and their profiles are loaded, then use DPAPI with the user store.</p>\r\n  <p>The following code shows how to create a registry key protected with an ACL and how to use DPAPI with the machine store to store encrypted data in the restricted key.</p>\r\n  <pre>using System.Security.Cryptography;<br />using System.Security.AccessControl;<br />using System.Text;<br />using Microsoft.Win32;<br />...</pre>\r\n  <pre>// Get the original data in a byte array<br />byte&#91;&#93; toEncrypt = UnicodeEncoding.ASCII.GetBytes(<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \"The Keys to be encrypted\");</pre>\r\n  <pre>// Encrypt the data by using the ProtectedData class.<br />byte&#91;&#93; encryptedData = ProtectedData.Protect(toEncrypt, null,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DataProtectionScope.LocalMachine);</pre>\r\n  <pre>// Create a new key in the registry with a restricted ACL <br />// and write stream of bytes to the registry key<br />string user = Environment.UserDomainName &#43; \"\\\\\" &#43; Environment.UserName;<br />RegistrySecurity security = new RegistrySecurity();<br />RegistryAccessRule rule = new RegistryAccessRule(user,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; RegistryRights.FullControl,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; InheritanceFlags.ContainerInherit,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PropagationFlags.None,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AccessControlType.Allow);<br />security.AddAccessRule(rule);</pre>\r\n  <pre>Registry.CurrentUser.CreateSubKey(\"TestEncryptedData\",<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; RegistryKeyPermissionCheck.ReadWriteSubTree,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; security);<br />Registry.SetValue(&#64;\"HKEY_CURRENT_USER\\TestEncryptedData\", \"Encrypted\",<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; encryptedData);</pre>\r\n  <p>Use the following code to decrypt the Keys stored in the registry.</p>\r\n  <pre>// Read the encrypted data from registry and decrypt the contents <br />byte&#91;&#93; dataFromRegistry = Registry.GetValue(<br />&#64;\"HKEY_CURRENT_USER\\TestEncryptedData\",<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \"Encrypted\", null) as byte&#91;&#93;;<br />byte&#91;&#93; decryptedData = ProtectedData.Unprotect(dataFromRegistry, null,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DataProtectionScope.LocalMachine);&nbsp;</pre>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
+  "html": "<h1>What to Do</h1>\n  <p>Do not store keys in code. Instead use DPAPI to encrypt the encryption key and store it in a protected registry key. Create an ACL to protect the registry key that allows full control for administrators and read-only access for your application's process account.</p>\n  <h1>Why</h1>\n  <p>an attacker can disassemble hard-coded keys in your compiled assembly by using tools similar to ILDASM, which will render your key in plain text.</p>\n  <h1>When</h1>\n  <p>When adding cryptographic support to your application.</p>\n  <h1>How</h1>\n  <p>You can use DPAPI with the machine key to encrypt the keys, store the encrypted keys beneath a registry key, and then use an ACL that restricts access to your specific application identity to restrict access to the registry key. Alternatively, you can use DPAPI with the user store. In this latter case, you need to load the user account's profile to access the key.</p>\n  <p>Consider using the machine store if your application is a server that runs on its own dedicated computer with no other applications, or if you have multiple applications on the same server and you need those applications to be able to share the keys. If you only want specific service accounts to be able to access the DPAPI keys and their profiles are loaded, then use DPAPI with the user store.</p>\n  <p>The following code shows how to create a registry key protected with an ACL and how to use DPAPI with the machine store to store encrypted data in the restricted key.</p>\n  <pre>using System.Security.Cryptography;<br />using System.Security.AccessControl;<br />using System.Text;<br />using Microsoft.Win32;<br />...</pre>\n  <pre>// Get the original data in a byte array<br />byte&amp;#91;&amp;#93; toEncrypt = UnicodeEncoding.ASCII.GetBytes(<br />&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; \"The Keys to be encrypted\");</pre>\n  <pre>// Encrypt the data by using the ProtectedData class.<br />byte&amp;#91;&amp;#93; encryptedData = ProtectedData.Protect(toEncrypt, null,<br />&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; DataProtectionScope.LocalMachine);</pre>\n  <pre>// Create a new key in the registry with a restricted ACL <br />// and write stream of bytes to the registry key<br />string user = Environment.UserDomainName &amp;#43; \"\\\\\" &amp;#43; Environment.UserName;<br />RegistrySecurity security = new RegistrySecurity();<br />RegistryAccessRule rule = new RegistryAccessRule(user,<br />&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; RegistryRights.FullControl,<br />&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; InheritanceFlags.ContainerInherit,<br />&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; PropagationFlags.None,<br />&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; AccessControlType.Allow);<br />security.AddAccessRule(rule);</pre>\n  <pre>Registry.CurrentUser.CreateSubKey(\"TestEncryptedData\",<br />&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; RegistryKeyPermissionCheck.ReadWriteSubTree,<br />&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; security);<br />Registry.SetValue(&amp;#64;\"HKEY_CURRENT_USER\\TestEncryptedData\", \"Encrypted\",<br />&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; encryptedData);</pre>\n  <p>Use the following code to decrypt the Keys stored in the registry.</p>\n  <pre>// Read the encrypted data from registry and decrypt the contents <br />byte&amp;#91;&amp;#93; dataFromRegistry = Registry.GetValue(<br />&amp;#64;\"HKEY_CURRENT_USER\\TestEncryptedData\",<br />&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; \"Encrypted\", null) as byte&amp;#91;&amp;#93;;<br />byte&amp;#91;&amp;#93; decryptedData = ProtectedData.Unprotect(dataFromRegistry, null,<br />&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; DataProtectionScope.LocalMachine);&amp;nbsp;</pre>\n  <hr />\n  <p>Adapted from Microsoft patterns &amp; practices guidance.</p>"
 }
