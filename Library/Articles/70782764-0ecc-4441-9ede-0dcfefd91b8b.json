@@ -51,7 +51,7 @@
           "DataType": "wikitext"
         },
         "Data": [
-          "==Applies To==\n\n* PHP\n\n==What to Do==\n\nUse TLS to protect Web Service connections.\n\n==Why==\n\nProtect Web Service connections using TLS to prevent man-in-the-middle attacks.\n\n==How==\n\nTo use TLS to protect Web Service connections:\n\n# **Get valid certificates.** Provision valid certificates for the server hosting the Web Services.\n# **Set up TLS on the server.** Configure the server to use TLS for the Web Services. Don't allow unencrypted connections to the Web Services – don't bind Web Services to ports that don't use TLS.\n# **Update client code to use TLS.** Change client code to connect to the Web Services using the port that uses TLS.\n"
+          "==Applies To==\r\n\r\n* PHP\r\n\r\n==What to Do==\r\n\r\nUse TLS to protect Web Service connections.\r\n\r\n==Why==\r\n\r\nProtect Web Service connections using TLS to prevent man-in-the-middle attacks.\r\n\r\n==How==\r\n\r\nTo use TLS to protect Web Service connections:\r\n\r\n# **Get valid certificates.** Provision valid certificates for the server hosting the Web Services.\r\n# **Set up TLS on the server.** Configure the server to use TLS for the Web Services. Don't allow unencrypted connections to the Web Services – don't bind Web Services to ports that don't use TLS.\r\n# **Update client code to use TLS.** Change client code to connect to the Web Services using the port that uses TLS.\r\n"
         ]
       }
     ]

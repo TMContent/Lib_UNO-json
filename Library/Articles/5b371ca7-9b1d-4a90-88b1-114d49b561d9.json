@@ -51,7 +51,7 @@
           "DataType": "wikitext"
         },
         "Data": [
-          "==Applies To==\n\n* Web Applications\n\n==What to Do==\n\nAvoid using the HTTP-GET protocol to store sensitive data. \n\n==Why==\n\nThe HTTP-GET protocol because the protocol uses query strings to pass data. As query strings are clearly visible in the client's browser address bar, a malicious user can change the sensitive data that is clearly visible in the URL query string.  \n\n==When==\n\nWhen passing sensitive data over the network, make sure it is not using the HTTP-GET protocol. \n\n==How==\n\nYou should avoid storing sensitive data using the HTTP-GET protocol because the protocol uses query strings to pass data. Sensitive data cannot be secured using query strings and query strings are often logged by the server.\n"
+          "==Applies To==\r\n\r\n* Web Applications\r\n\r\n==What to Do==\r\n\r\nAvoid using the HTTP-GET protocol to store sensitive data. \r\n\r\n==Why==\r\n\r\nThe HTTP-GET protocol because the protocol uses query strings to pass data. As query strings are clearly visible in the client's browser address bar, a malicious user can change the sensitive data that is clearly visible in the URL query string.  \r\n\r\n==When==\r\n\r\nWhen passing sensitive data over the network, make sure it is not using the HTTP-GET protocol. \r\n\r\n==How==\r\n\r\nYou should avoid storing sensitive data using the HTTP-GET protocol because the protocol uses query strings to pass data. Sensitive data cannot be secured using query strings and query strings are often logged by the server.\r\n"
         ]
       }
     ]

@@ -48,7 +48,7 @@
           "DataType": "wikitext"
         },
         "Data": [
-          "==What to Do==\n\nLog events associated with the logging subsystem, such as the beginning and the end of logging.\n\n==Why==\n\nLog events such as the initialization of the logging subsystem to help detect when logs have been stopped to conceal malicious activity.\n\n==How==\n\nTo log events associated with the logging subsystem:\n\n# **Identify code used to start and stop logging.** Make a spreadsheet of code that initializes, pauses, or stops logging. This code should naturally be a part of the logging subsystem itself, so it should be easy to find.\n# **Add code that generates log entries.** To each piece of code that starts or stops logging, add code that generates log entries indicating that the logging subsystem has been started or stopped.\n"
+          "==What to Do==\r\n\r\nLog events associated with the logging subsystem, such as the beginning and the end of logging.\r\n\r\n==Why==\r\n\r\nLog events such as the initialization of the logging subsystem to help detect when logs have been stopped to conceal malicious activity.\r\n\r\n==How==\r\n\r\nTo log events associated with the logging subsystem:\r\n\r\n# **Identify code used to start and stop logging.** Make a spreadsheet of code that initializes, pauses, or stops logging. This code should naturally be a part of the logging subsystem itself, so it should be easy to find.\r\n# **Add code that generates log entries.** To each piece of code that starts or stops logging, add code that generates log entries indicating that the logging subsystem has been started or stopped.\r\n"
         ]
       }
     ]

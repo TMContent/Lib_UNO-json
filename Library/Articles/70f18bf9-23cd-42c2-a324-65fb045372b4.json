@@ -51,7 +51,7 @@
           "DataType": "wikitext"
         },
         "Data": [
-          "==Applies To==\n\n* Web Application\n* Server-side\n\n==What to Do==\n\nChange the user's session ID when he logs in.\n\n==Why==\n\nChange session IDs during login to make sure that the session state corresponds to the authenticated user.\n\n==How==\n\nTo change session IDs during login:\n\n# **Find login functionality.** Find the code that is responsible for authentication.\n# **Change session IDs during login.** Add code that invalidates the current session ID and creates a new one."
+          "==Applies To==\r\n\r\n* Web Application\r\n* Server-side\r\n\r\n==What to Do==\r\n\r\nChange the user's session ID when he logs in.\r\n\r\n==Why==\r\n\r\nChange session IDs during login to make sure that the session state corresponds to the authenticated user.\r\n\r\n==How==\r\n\r\nTo change session IDs during login:\r\n\r\n# **Find login functionality.** Find the code that is responsible for authentication.\r\n# **Change session IDs during login.** Add code that invalidates the current session ID and creates a new one."
         ]
       }
     ]

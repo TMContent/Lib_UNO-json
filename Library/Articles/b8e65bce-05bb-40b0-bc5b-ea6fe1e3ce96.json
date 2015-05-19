@@ -51,7 +51,7 @@
           "DataType": "html"
         },
         "Data": [
-          "<h1>Applies to</h1>\n  <p>Scala and Play Framework 2.1.0+</p>\n  <h1>What to Do</h1>\n  <p>Change the user's session ID during authentication.</p>\n  <h1>Why</h1>\n  <p>Change session IDs during authentication to make sure that the session state corresponds to the authenticated user.</p>\n  <h1>How</h1>\n  <p>To change session IDs during authentication:</p>\n  <ol>\n    <li>\n      <p>\n        <strong>Identify authentication functionality.</strong>&nbsp;Find the code that is responsible for authentication, including repeated authentication that is required for sensitive functionality.</p>\n    </li>\n    <li>\n      <p>\n        <strong>Change session IDs during authentication.</strong>&nbsp;Add code that invalidates the current session ID and creates a new one.</p>\n    </li>\n  </ol>\n  <br />"
+          "<h1>Applies to</h1>\r\n  <p>Scala and Play Framework 2.1.0+</p>\r\n  <h1>What to Do</h1>\r\n  <p>Change the user's session ID during authentication.</p>\r\n  <h1>Why</h1>\r\n  <p>Change session IDs during authentication to make sure that the session state corresponds to the authenticated user.</p>\r\n  <h1>How</h1>\r\n  <p>To change session IDs during authentication:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Identify authentication functionality.</strong>&nbsp;Find the code that is responsible for authentication, including repeated authentication that is required for sensitive functionality.</p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Change session IDs during authentication.</strong>&nbsp;Add code that invalidates the current session ID and creates a new one.</p>\r\n    </li>\r\n  </ol>\r\n  <br />"
         ]
       }
     ]

@@ -48,7 +48,7 @@
           "DataType": "wikitext"
         },
         "Data": [
-          "==What to Do==\n\nRequire authentication for all users.\n\n==Why==\n\nRequire authentication for all users to prevent unauthorized access. If a user account is not protected with at least a password, an attacker will be able to easily use that account.\n\n==How==\n\nTo force authentication for all users:\n\n# **Identify authentication code.** Make a spreadsheet about the code that implements authentication in the application.\n# **Require authentication for all users.** If it doesn't already require authentication for all users, modify authentication code so that at least a password is required for successful authentication for all users. Remove code that implements any special hard-coded user accounts that don't require authentication.\n"
+          "==What to Do==\r\n\r\nRequire authentication for all users.\r\n\r\n==Why==\r\n\r\nRequire authentication for all users to prevent unauthorized access. If a user account is not protected with at least a password, an attacker will be able to easily use that account.\r\n\r\n==How==\r\n\r\nTo force authentication for all users:\r\n\r\n# **Identify authentication code.** Make a spreadsheet about the code that implements authentication in the application.\r\n# **Require authentication for all users.** If it doesn't already require authentication for all users, modify authentication code so that at least a password is required for successful authentication for all users. Remove code that implements any special hard-coded user accounts that don't require authentication.\r\n"
         ]
       }
     ]

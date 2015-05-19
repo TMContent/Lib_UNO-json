@@ -54,7 +54,7 @@
           "DataType": "Html"
         },
         "Data": [
-          "\n<h2>What to Do</h2>\n<p>Consider adhering to the following rules when allocating and managing an application's memory: Double check that your buffer is as large as you specify. When using functions that accept a number of bytes to copy, such as\n<em>strncpy()</em>, be aware that if the destination buffer size is equal to the source buffer size, it may not NULL-terminate the string. Check buffer boundaries if accessing the buffer in a loop and make sure you are not in danger of writing past the allocated\n space. If necessary, truncate all input strings to a reasonable length before passing them to the copy and concatenation functions.</p>\n"
+          "\r\n<h2>What to Do</h2>\r\n<p>Consider adhering to the following rules when allocating and managing an application's memory: Double check that your buffer is as large as you specify. When using functions that accept a number of bytes to copy, such as\r\n<em>strncpy()</em>, be aware that if the destination buffer size is equal to the source buffer size, it may not NULL-terminate the string. Check buffer boundaries if accessing the buffer in a loop and make sure you are not in danger of writing past the allocated\r\n space. If necessary, truncate all input strings to a reasonable length before passing them to the copy and concatenation functions.</p>\r\n"
         ]
       }
     ]
