@@ -1,0 +1,29 @@
+<h1>Applies to</h1>
+  <ul>
+    <li>C&#43;&#43;</li>
+  </ul>
+  <h1>What to Do</h1>
+  <p>Validate data values before assigning them to unsigned integer-type variables.</p>
+  <h1>Why</h1>
+  <p>When the result of an unsigned integer operation exceeds the maximum or the minimum values allowed for that integer type, the stored value of that operation will be different than expected. If this value is used to contol program flow, for array indexing, or memory operations, an arbitrary code execution vulnerability may result.</p>
+  <h1>How</h1>
+  <p>Perform the following actions to assure that data is validated before being assigned to unsigned integer-type variables:</p>
+  <ol>
+    <li>
+      <p>
+        <strong>Identify code.</strong> Identify all code that assigns values to unsigned integer-type variables. For existing code, it may be a good idea to prioritize components, so that the most critical elements are checked first. </p>
+      <li>
+        <p>
+          <strong>Add range checks. </strong>Use platform-defined constants to check that values being assigned to integer-type variables are valid. Minimum and maximum values for integer-type variables are defined in limits.h. The minimum valid value for unsigned integers is of course 0. The following is a list of common maximum and minimum values for unsigned integer-type variables: </p>
+        <ul>
+          <li>UINT_MAX<li>ULONG_MAX<li>USHRT_MAX<li>UCHAR_MAX</li></li></li></li>
+        </ul>
+      </li>
+    </li>
+  </ol>
+  <h1>Related Items</h1>
+  <ul>
+    <li>
+      <a href="/article/6c6f0d93-0d5b-4aa4-97b0-9e69535b3345">Protect Against Integer Overflows</a>
+    </li>
+  </ul>

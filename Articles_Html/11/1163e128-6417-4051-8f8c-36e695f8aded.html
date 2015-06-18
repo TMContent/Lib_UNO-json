@@ -1,0 +1,944 @@
+<h1>
+     Applies To 
+  </h1>
+  <ul>
+    <li>
+       Web services that use XML 
+    </li>
+    <li>
+       Web services that use SOAP  </li>
+  </ul>
+  <h1>
+     Summary 
+  </h1>
+  <p>
+     XML stands for Extensible Markup Language.   Similar to HTML, it utilizes tags to store structured data.   However, XML is extensible as it allows users to define their own elements in user defined tags. 
+  </p>
+  <p>
+     In web software, the two most noticeable uses for XML are:  
+  </p>
+  <ol>
+    <li>
+       Store structured data as an alternative to a database.  
+    </li>
+    <li>
+       Provide a transaction protocol for business-to-business and business-to-client communications such as SOAP. 
+    </li>
+  </ol>
+  <h2>
+     
+      Store structured data as an alternative to a database
+     
+  </h2>
+  <p>
+     A server stores user names, passwords, and emails in the user element.    It uses a web form to collect user data.  A user enters the following data and clicks on the Create User button:</p>
+  <p>
+    <font face="'Courier New'">Username: JohnyC<br />Password: qwerty<br />E-mail: johnyc@examplesite.com</font>
+  </p>
+  <p>The client sends this URL to the server application:</p>
+  <p>
+    <font face="'Courier New'">http://www.examplesite.com/GetProfile.php?username=JohnyC&password=qwerty &email=JohnyC@examplesite.com</font>
+  </p>
+  <p>Once the server receives the URL it creates a user XML element node:
+    
+       </p>
+  <p>
+    <font face="'Courier New'">&lt;user&gt; <br />   &lt;username&gt;JohnyC&lt;/username&gt; <br />   &lt;password&gt;qwerty&lt;/password&gt; <br />   &lt;userid&gt;111&lt;userid/&gt;<br />   &lt;mail&gt;JohnyC@examplesite.com&lt;/mail&gt;<br />&lt;/user&gt;    </font>
+  </p>
+  <h2>
+     
+      Provide a transaction protocol for business-to-business and business-to-client communications (such as SOAP)
+     
+  </h2>
+  <p>
+     The second and most used XML benefit is to integrate web services.    SOAP is the communication protocol for XML web services. Before XML, systems had to implement Remote Procedure Calls (RPC) to integrate cross platform services on the web.   At that time COBRA or DCE were mostly used to achieve integration, but they were too complex.   SOAP defined a standard XML communication protocol that was adopted because of its simplicity.   As Microsoft released SOAP, they also released a toolkit that translated COM to SOAP, as well as one to translate Java Functions to SOAP. 
+  </p>
+  <p>
+     The following code shows an XML-based SOAP client that invokes the  
+     sayHello  
+     method on a SOAP server: 
+  </p>
+  <pre>Dim x, h
+Set x = CreateObject("MSXML2.DOMDocument")
+x.loadXML "&lt;s:Envelope xmlns:s='http://schemas.xmlsoap.org/soap/envelope/'
+xmlns:xsi='http://www.w3.org/1999/XMLSchema-instance'
+xmlns:xsd='http://www.w3.org/1999/XMLSchema'&gt;&lt;s:Body&gt;&lt;m:sayHello
+xmlns:m='urn:Example1'&gt;&lt;name xsi:type='xsd:string'&gt;James&lt;/name&gt;&lt;
+/m:sayHello&gt;&lt;/s:Body&gt;&lt;/s:Envelope&gt;"
+msgbox x.xml, , "Input SOAP Message"
+Set h = CreateObject("Microsoft.XMLHTTP")
+h.open "POST", "http://localhost:8080"
+h.send (x)
+while h.readyState &lt;&gt; 4
+wend
+msgbox h.responseText,,"Output SOAP Message"</pre>
+  <h2>
+     
+      XML Injection Bugs
+     
+  </h2>
+  <p>
+     XML injection means to maliciously feed crafted data to a XML-based web service in order to execute an attack.   An XML injection attack varies from adding extra elements in an XML store to tamper with sensitive information to modifying XML store tags to execute cross-site scripting code in a target browser. 
+  </p>
+  <p>
+     The following steps are needed to test for XML Injection: 
+  </p>
+  <ol>
+    <li>
+       Understand XML Injection attack scenarios. 
+    </li>
+    <li>
+       Identify high risk components. 
+    </li>
+    <li>
+       Start testing and exploring. 
+    </li>
+    <li>
+       Tune test cases. 
+    </li>
+  </ol>
+  <p>
+     It is necessary to differentiate XML injection with XPATH or XQUERY bugs. They are similar as they both relate to XML, but the logic involved is fundamentally different and will be discussed in individual articles.  </p>
+  <h1>
+     Step 1:   Understand XML Injection attack scenarios 
+  </h1>
+  <p>
+     During the first step, you need to understand how an XML injection attack works both in storage and communication.   The following two scenarios elaborate on XML injection attacks: 
+  </p>
+  <ul>
+    <li>
+       Injecting an extra tag to a XML data store. 
+    </li>
+    <li>
+       Executing cross-site scripting attacks by manipulating the CDATA tag.  </li>
+  </ul>
+  <h2>
+     
+      Scenario 1:   Injecting an extra tag to a XML data store
+     
+  </h2>
+  <p>
+     A bank site exposes a simple web page to create checking accounts.    It takes data from a web form like the one above and builds a URL like this one: 
+  </p>
+  <p>
+    <font face="'Courier New'">http://www.examplesite.com/CreateChecking.php?username=JohnyC&password=qwerty&email=JohnyC@examplesite.com</font>
+  </p>
+  <p>
+     The bank uses the data in the URL to construct the following XML in its data store: 
+  </p>
+  <p>
+    <font face="'Courier New'">&lt;user&gt; <br />   &lt;username&gt;JohnyC&lt;/username&gt; <br />   &lt;password&gt;qwerty&lt;/password&gt; <br />   &lt;userid&gt;111&lt;userid/&gt;<br />   &lt;mail&gt;JohnyC@examplesite.com&lt;/mail&gt;<br />   &lt;account type=”checking”&gt; <br />      &lt;created&gt;02-21-2008&lt;/created&gt;<br />      &lt;number&gt;1249109&lt;/number&gt;<br />      &lt;balance&gt;1201&lt;/balance&gt;<br />   &lt;/account&gt; <br />&lt;/user&gt;</font>
+  </p>
+  <p>
+     The bank doesn’t provide a web interface to create saving accounts.   In order to open a saving account, clients need to go to the bank and provide additional information. The bank exposes a security vulnerability that allows the attacker to feed malicious data in the web form.   The attacker submits the following URL request: 
+  </p>
+  <p>
+    <font face="'Courier New'">http://www.examplesite.com/CreateChecking.php?username=JohnyC&password=qwerty&email=JohnyC@examplesite.com&lt;/mail&gt;&lt;account type="savings"&gt;&lt;created&gt;03-02-2008&lt;/created&gt;&lt;number&gt;12345678&lt;/number&gt;&lt;balance&gt;1000000&lt;/balance&gt;&lt;/account&gt;</font>
+  </p>
+  <p>When the bank receives this request it doesn't check for extra tags and builds the following element in its data store:</p>
+  <p>
+    <font face="'Courier New'">&lt;user&gt; <br />   &lt;username&gt;JohnyC&lt;/username&gt; <br />   &lt;password&gt;qwerty&lt;/password&gt; <br />   &lt;userid&gt;111&lt;userid/&gt;<br />   &lt;mail&gt;JohnyC@examplesite.com&lt;/mail&gt;<br />   &lt;account type="savings"&gt; <br />      &lt;created&gt;03-02-2008&lt;/created&gt;<br />      &lt;number&gt;12345678&lt;/number&gt;<br />      &lt;balance&gt;1000000&lt;/balance&gt;<br />   &lt;/account&gt;<br />      &lt;account type=”checking”&gt; <br />      &lt;created&gt;02-21-2008&lt;/created&gt;<br />      &lt;number&gt;1249109&lt;/number&gt;<br />      &lt;balance&gt;1201&lt;/balance&gt;<br />   &lt;/account&gt;  <br />&lt;/user&gt;</font>
+  </p>
+  <p>The bug in the bank web application here allows the attacker to remotely create a savings account with a $1000000 balance. </p>
+  <h2>
+     
+      Scenario 2:    Executing cross-site scripting attacks by manipulating the CDATA tag 
+     
+  </h2>
+  <p>
+    XML uses the <i>CDATA </i>tag to escape blocks of text that would be otherwise recognized as markup.   All data enclosed in between the tags <i>&lt;![CDATA[</i> and <i>]]&gt;</i> 
+    
+    will not be parsed as markup.    </p>
+  <p>
+    A vulnerable server uses a file named <i>scenarios.xml</i> to store the title and the data for each scenario:</p>
+  <p>
+    <font face="'Courier New'">&lt;?xml version="1.0" encoding="ISO-8859-1"?&gt;<br />&lt;scenarios&gt;<br />   &lt;scenario&gt;<br />      &lt;title&gt;XSS scenario&lt;/title&gt;<br />      &lt;data&gt;&lt;![CDATA[this is not to be parsed &lt;!-- as XML '"&gt;&lt;]]&gt;&lt;/data&gt;<br />   &lt;/scenario&gt;<br />   etc…<br />&lt;/scenarios&gt;</font>
+  </p>
+  <p>
+    The application blindly builds a page (<i>scenarios.php</i>) from the XML file using the following code and then sends the page back to the client:</p>
+  <pre>&lt;?php
+$objDOM = new DOMDocument();
+$objDOM-&gt;load("scenarios.xml");
+$scenario = $objDOM-&gt;getElementsByTagName("scenario");
+foreach( $scenario as $value )
+{
+$title  = $value-&gt;getElementsByTagName("title")-&gt;item(0)-&gt;nodeValue;
+$data =   $value-&gt;getElementsByTagName("data")-&gt;item(0)-&gt;nodeValue;
+echo "$title:&lt;br&gt;$data&lt;br&gt;";
+}
+?&gt;</pre>
+  <p>
+     The scenario above will generate the following output: 
+  </p>
+  <p>
+    <font face="'Courier New'">XSS scenario<br />this is not be parsed as XML '"&gt;&lt;</font>
+  </p>
+  <p>Now the attacker gets control of <i>scenarios.xml </i>and modifies the data tag to look like this:</p>
+  <p>
+    <font face="'Courier New'">&lt;scenario&gt;<br />   &lt;title&gt;XSS scenario&lt;/title&gt;<br />   &lt;data&gt;&lt;![CDATA[&lt;script&gt;alert('XSS')&lt;/script&gt;]]&gt;&lt;/data&gt;<br />&lt;/scenario&gt; </font>
+  </p>
+  <p>
+     This will result in the vulnerable application building a page that executes attacker specified JavaScript and sending it to the client.  That results in a cross-site scripting attack because the server doesn't validate the XML output before sending it back as HTML to the client. </p>
+  <h1>
+     Step 2:   Identify high risk components 
+  </h1>
+  <p>
+     The next steps for XML Injection testing are to list all of the places where code builds XML statements from user supplied input; and to understand how and where our application manipulates statements, and how it uses them to modify its data store or to invoke XML web methods.   The most common are: 
+  </p>
+  <ul>
+    <li>
+       Profile-related web pages. 
+    </li>
+    <li>
+       E-Commerce or financial account-related pages. 
+    </li>
+    <li>
+       XML web service interaction methods. 
+    </li>
+    <li>
+       XML-based system-level clients. 
+    </li>
+    <li>
+       Systems that read from XML back-end and blindly construct responses to Internet clients.  </li>
+  </ul>
+  <h2>
+     
+      Identify all high risk components 
+     
+  </h2>
+  <p>
+     This subtask consists of indentifying the coding errors that lead to XML injection bugs.   XML injection bugs exist for two main reasons.   First, when a server-side application directly utilizes user-supplied strings that arrive over the Internet to add into their XML data store or perform other XML-related tasks.   The application doesn’t do any sort of data validation on the strings, and therefore allows for injection of XML tags.   In the second case, an application is vulnerable if it reads from an XML store and blindly constructs an HTML page to send back to the client. 
+  </p>
+  <p>
+     During this subtask, you need to go through all web pages in the application under test and look for any XML interaction.   Any page or method that uses XML to transmit data must be listed as a high risk component.   Following are some common examples of what you need to look for when reviewing code for XML injection bugs. 
+  </p>
+  <h2>
+     
+      Identify the usage of XML parsers
+     
+  </h2>
+  <p>
+     Server-side applications can choose from a wide variety of XML parsers depending on the language they are written.   It is important that you recognize if the application you’re testing uses any of these parsers. If so, it is a clear indication that the application manipulates XML.     
+  </p>
+  <ul>
+    <li>
+      <i>
+         SAXParser (Java) 
+      </i>
+    </li>
+    <li>
+      <i>
+         MSXML (including Microsoft XML DOM Parser) 
+      </i>
+    </li>
+    <li>
+      <i>
+         Xerces (Java, C++, Perl) 
+      </i>
+    </li>
+    <li>
+      <i>
+         Oracle XML Parser 
+      </i>
+    </li>
+    <li>
+      <i>
+         XML Booster 
+      </i>
+    </li>
+    <li>
+      <i>
+         XML::Parser (form Perl) 
+      </i>
+    </li>
+    <li>
+      <i>XParse</i>
+    </li>
+  </ul>
+  <p>
+     This short list illustrates that the programmer has different choices when selecting an XML parser.   Make sure to look for the presence of any of these.   In addition, keep up with the latest XML parsing technology and research for additional parsers that your application might use. 
+  </p>
+  <h2>
+     
+      Look for code that writes XML from user-supplied input
+     
+  </h2>
+  <p>
+     Any code that uses user-supplied input (from web forms, URLs, etc) must be marked as high risk.   Below is an example that uses the input parameter from a URL to construct XML: 
+  </p>
+  <pre>set xmlDoc=CreateObject("Microsoft.XMLDOM")
+xmlDoc.async="false"
+xmlDoc.load("accounts.xml")
+for each x in xmlDoc.documentElement.childNodes
+document.write(x.nodename)
+document.write(": ")
+document.write(x.text)
+document.write(Request.QueryString("input"))
+next</pre>
+  <h2>
+     
+      Detect applications that use the CDATA tag
+     
+  </h2>
+  <p>
+    Look at both the application code and storage XML files to identify the usage of the <i>CDATA</i> tag.   Identifying <i>CDATA </i>tags inside XML documents is easy.   Just search the contents of all XML documents in your application looking for the string <i>CDATA</i>.   Then track down the code that uses the data read from this kind of tag.   Any component that directly writes the contents of <i>CDATA </i>tags to an HTML response is vulnerable to cross-site scripting attacks through XML injection.</p>
+  <h2>
+     
+      Don’t rely on XML Document Type Definitions (DTDs)
+     
+  </h2>
+  <p>
+     Programmers might assume that defining XML tags using DTD protects them against XML injection attacks. As we will see later on, this is a misconception.   Include any document that handles XML (using DTD or not) as a high risk component.  </p>
+  <h2>
+     
+      Match High Risk Components with Entry Points
+     
+  </h2>
+  <p>
+     Non-validated XML data can come from any application entry point.   Make sure to cover all the possible sources of malicious data which might get passed to a client.   Common data sources include: 
+  </p>
+  <ul>
+    <li>
+       Web forms 
+    </li>
+    <li>
+       URL contents 
+    </li>
+    <li>
+       Flash parameters 
+    </li>
+    <li>
+       XML store contents 
+    </li>
+    <li>
+       Web service data 
+    </li>
+    <li>
+       Graphical User Interface  </li>
+  </ul>
+  <p>
+     List the high risk application components (usually web pages such as the ones in the scenarios above) and their related entry points to systematically aid with your testing: 
+  </p>
+  <p>
+  </p>
+  <table>
+    <tbody>
+      <tr>
+        <td>
+          <b>
+               Component 
+            </b>
+        </td>
+        <td>
+          <b>
+               Line 
+            </b>
+        </td>
+        <td>
+          <b>
+               URL 
+               
+               
+            </b>
+        </td>
+        <td>
+          <b>
+               Form 
+               
+               
+            </b>
+        </td>
+        <td>
+          <b>
+               Flash 
+               
+               
+            </b>
+        </td>
+        <td>
+          <b>
+               DB 
+               
+               
+            </b>
+        </td>
+        <td>
+          <b>Service</b>
+        </td>
+      </tr>
+      <tr>
+        <td>
+      
+             CreateChecking.php 
+       
+        </td>
+        <td>
+              101 
+      
+        </td>
+        <td>
+              X 
+      
+        </td>
+        <td>
+      
+             X 
+       
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td>
+        </td>
+        <td>
+
+             112 
+
+        </td>
+        <td>
+
+             X 
+        
+        </td>
+        <td>
+       
+             X 
+ 
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td>
+        </td>
+        <td>
+      
+             165 
+      
+        </td>
+        <td>
+       
+             X 
+        
+        </td>
+        <td>
+         
+             X 
+  
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td>
+      
+             Response.php 
+     
+        </td>
+        <td>
+       
+             1001 
+       
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+       
+             X 
+     
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td>
+        </td>
+        <td>
+     
+             1116 
+        
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+       
+             X 
+    
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td>
+     
+             Present.php 
+     
+        </td>
+        <td>
+     
+             234 
+      
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        
+             X 
+         
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td>
+        </td>
+        <td>
+        
+             531 
+      
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+     
+             X 
+        
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td>
+       
+             showAccount.php 
+       
+        </td>
+        <td>
+    
+             432 
+      
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+     
+             X 
+    
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h1>
+     Step 3:    Start Testing and Exploring                                   
+  </h1>
+  <p>
+    This step of testing is focused on submitting basic XML injection fuzz strings and observing how the application reacts. Then, we will try to execute two simple XML injection attacks as shown in the previous scenarios: tag injection and <i>CDATA</i> XSS.   Try all of the tests in this step through the easiest entry point for each high risk component. In step 4 you will tune your test case data to cover the different formats and encoding depending on the remaining entry points. </p>
+  <h2>
+     
+      Start with simple fuzz strings
+     
+  </h2>
+  <p>
+     Successful XML injection testing depends on whether the tester is able to send XML data that will end up being processed as expected XML.  It is recommend that you start testing with a simple XML string consisting of a single quote, a closing tag character, an opening tag character and a double quote. Try these four characters separately and combined:</p>
+  <p>
+    <font face="'Courier New'">'<br />"<br />&gt;<br />&lt;</font>
+  </p>
+  <p>or </p>
+  <p>
+    <font face="'Courier New'">
+       ' 
+       "&gt;&lt;<br /> 
+       
+         &gt; 
+       
+       ' 
+       "&lt;<br /> 
+       
+         &lt;&gt; 
+       
+       ' 
+       " 
+    </font>
+  </p>
+  <p>
+     Then, observe how the XML-based server responds.   The idea is to modify a valid XML tag such as the first string below, to the second one.  An invalid XML message from the server is a good indication that there are potential XML injection vulnerabilities present in the server application.</p>
+  <p>
+     Another way to generate invalid XML is to add the start of an XML comment: 
+       
+  </p>
+  <p>
+    <font face="'Courier New'">xyz&lt;!--</font>
+  </p>
+  <p>
+     Let’s say that you entered the string above as the username.   The resulting XML will now look like this and will end up being invalid: 
+  </p>
+  <p>
+    <font face="'Courier New'">&lt;user&gt; <br />   &lt;username&gt;xyz&lt;!--&lt;/username&gt;<br />   &lt;password&gt;qwerty&lt;/password&gt; <br />   &lt;userid&gt;111&lt;userid/&gt;<br />   &lt;mail&gt;JohnyC@examplesite.com&lt;/mail&gt;<br />&lt;/user&gt;</font>
+  </p>
+  <p>XML uses the ampersand character to refer to another entity in its user-defined XML schema. For example, if the user passes the following string as the username, it will result in the corresponding XML:</p>
+  <p>
+    <font face="'Courier New'">&xyz</font>
+  </p>
+  <p>
+     Results in: 
+  </p>
+  <p>
+    <font face="'Courier New'">&lt;user&gt;<br />   &lt;username&gt;&xyz&lt;/username&gt;<br />   &lt;password&gt;qwerty&lt;/password&gt; <br />   &lt;userid&gt;111&lt;userid/&gt;<br />   &lt;mail&gt;JohnyC@examplesite.com&lt;/mail&gt;<br />&lt;/user&gt;</font>
+  </p>
+  <p>
+     This will attempt to refer to the  
+     &xyz 
+      entity of the XML document.   If the document doesn’t contain this entity, then the newly built tag above will result in an invalid XML document.  </p>
+  <h2>
+     
+      Learn from error messages to conduct a real attack
+     
+  </h2>
+  <p>
+     The purpose of creating invalid XML documents is so that you can start gaining information about the underlying XML format based on error messages they generate.   Let’s say you inserted the following fuzz string ( ‘ ) in an input field and the server responded with the following error message: 
+  </p>
+  <p>
+    <font face="'Courier New'">Invalid XML:<br />&lt;user name='''/&gt;<br />   &lt;id ='1232'/&gt;<br />   &lt;realname='tester'&gt;<br />   &lt;password='ind3$truct'/&gt;<br />&lt;user&gt;</font>
+  </p>
+  <p>Now, consider how you can utilize this information to create an additional, valid user while conserving the structure and format of the original XML document:</p>
+  <p>
+    <font face="'Courier New'">attacker'&gt;&lt;id ='1234'/&gt;&lt;realname='hacker'&gt;&lt;password='qwerty'/&gt;&lt;/user&gt;&lt;user name ='real_user </font>
+  </p>
+  <p>
+     results in the server creating an extra element: 
+  </p>
+  <p>
+    <font face="'Courier New'">&lt;user name='attacker'/&gt;<br />   &lt;id ='1234'/&gt;<br />   &lt;realname='hacker'&gt;<br />   &lt;password='ind3$truct'/&gt;<br />&lt;/user&gt;<br />&lt;user name='real_user'/&gt;<br />   &lt;id ='1232'/&gt;<br />   &lt;realname='tester'&gt;<br />   &lt;password='realuserpassword'/&gt;<br />&lt;/user&gt;</font>
+  </p>
+  <p>
+  </p>
+  <h2>
+     
+      Try to exploit CDATA tags with Cross-Site Scripting (XSS) attacks
+     
+  </h2>
+  <p>
+    To finish this step try to exploit the contents of CDATA tags to see if you can execute an XSS attack. This test is quite straight forward, simply remember that the XML parser extracts all data enclosed in between the tags <i>&lt;![CDATA[</i> and <i>]]&gt;</i> to form a new string.   For example:</p>
+  <p>
+    <font face="'Courier New'">&lt;![CDATA[xyz]]&gt;</font>
+  </p>
+  <p>
+     Becomes: 
+  </p>
+  <p>
+    <font face="'Courier New'">xyz</font>
+  </p>
+  <p>
+     In the same manner: 
+  </p>
+  <p>
+    <font face="'Courier New'">&lt;![CDATA[&lt;]]&gt;script&lt;![CDATA[&gt;]]&gt;</font>
+  </p>
+  <p>Becomes:</p>
+  <p>
+    <font face="'Courier New'">&lt;script&gt;</font>
+  </p>
+  <p>
+     Finally 
+     : 
+  </p>
+  <p>
+    <font face="'Courier New'">&lt;![CDATA[&lt;script&gt;alert('XSS')&lt;/script&gt;]]&gt;</font>
+  </p>
+  <p>
+     Becomes: 
+  </p>
+  <p>
+    <font face="'Courier New'">&lt;script&gt;alert('XSS')&lt;/script&gt;</font>
+  </p>
+  <h1>
+     Step 4:   Tune Test Cases 
+     
+     
+  </h1>
+  <p>
+     During this step you must focus in modifying your test case data to cover all entry points based on the format of each specific entry point.   In addition, you must tune your test case data in order to execute additional XML Injection payloads.  
+     
+     
+  </p>
+  <h2>
+     
+      Consider string format and encoding according to entry point
+     
+  </h2>
+  <h3>
+     Web Forms 
+  </h3>
+  <p>
+     
+     
+     Web forms are the easiest to test since they commonly allow most ASCII strings.   An attacker can try entering this string into an input field, for instance in the web form below: 
+  </p>
+  <p>
+     
+     
+     An attacker might try to enter this string in the email text field to execute an XML injection attack: 
+  </p>
+  <p>
+    <font face="'Courier New'">JohnyC@examplesite.com&lt;/mail&gt;&lt;account type="savings"&gt;&lt;created&gt;03-02-2008&lt;/created&gt;&lt;number&gt;12345678&lt;/number&gt;&lt;balance&gt;1000000&lt;/balance&gt;&lt;/account&gt;</font>
+  </p>
+  <p>
+     It’s possible that client side checks are in place to match the contents of this text field with a valid email format.   However, client side checks are easily bypassed by removing them at the attacker’s end.  </p>
+  <h3>
+     URL Contents 
+  </h3>
+  <p>
+     The format of URLs tends to be more complex than that of other input fields.   This is due to the need for URLs to contain special or reserved characters, such as spaces, questions marks, single quotes, less than/greater than (&lt;/&gt;) symbols, and ampersands as data, rather than URL directives.   The client encodes the URL and then sends it to the server, which decodes it so that the special characters can be processed as data. 
+  </p>
+  <p>
+     How the encoding and decoding is done depends on the programming language in use.   For example, sometimes the encoding function replaces the blank spaces with a plus (+) sign, or the characters %20, so that: 
+  </p>
+  <p>
+    <font face="'Courier New'">Joseph Cohen</font>
+  </p>
+  <p>
+     Becomes: 
+  </p>
+  <p>
+    <font face="'Courier New'">Joseph+Cohen</font>
+  </p>
+  <p>or</p>
+  <p>
+    <font face="'Courier New'">Joseph%20Cohen</font>
+  </p>
+  <p>
+     The most common URL encoding scheme consists of replacing special and reserved characters with a percent sign and then their hexadecimal values (e.g.  
+     %HH 
+     ).   Using this encoding scheme the URL seen below will be translated from: 
+  </p>
+  <p>
+    <font face="'Courier New'">http://www.examplesite.com/CreateChecking.php?username=JohnyC&password=qwerty&email=JohnyC@examplesite.com&lt;/mail&gt;&lt;account type="savings"&gt;&lt;created&gt;03-02-2008&lt;/created&gt;&lt;number&gt;12345678&lt;/number&gt;&lt;balance&gt;1000000&lt;/balance&gt;&lt;/account&gt;</font>
+  </p>
+  <p>to: </p>
+  <p>
+    <font face="'Courier New'">http://www.examplesite.com/CreateChecking.php?username=JohnyC&password=qwerty&email=JohnyC%40examplesite.com%3c%2fmail%3e%3caccount%20type%3d%22savings%22%3e%3ccreated%3e03-02-2008%3c%2fcreated%3e%3cnumber%3e12345678%3c %2fnumber%3e%3cbalance%3e1000000%3c%2fbalance%3e%3c%2faccount%3e</font>
+  </p>
+  <p>
+     This is because the below characters translate to their hex encoding like this:  </p>
+  <div>
+    <table>
+      <tbody>
+        <tr>
+          <td>
+            <p>
+               space 
+               
+               
+            </p>
+          </td>
+          <td>
+            <p>
+               @ 
+               
+               
+            </p>
+          </td>
+          <td>
+            <p>
+               &lt; 
+                 
+            </p>
+          </td>
+          <td>
+            <p>
+               / 
+               
+               
+            </p>
+          </td>
+          <td>
+            <p>
+               &gt; 
+                 
+            </p>
+          </td>
+          <td>
+            <p>
+               = 
+               
+               
+            </p>
+          </td>
+          <td>
+            <p>
+               " 
+               
+               
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>
+               %20 
+            </p>
+          </td>
+          <td>
+            <p>
+               %40 
+            </p>
+          </td>
+          <td>
+            <p>
+               %3c 
+            </p>
+          </td>
+          <td>
+            <p>
+               %2f 
+            </p>
+          </td>
+          <td>
+            <p>
+               %3e 
+            </p>
+          </td>
+          <td>
+            <p>
+               %3d 
+            </p>
+          </td>
+          <td>
+            <p>
+               %22 
+            </p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <h3>
+     Flash Parameters 
+  </h3>
+  <p>
+     Flash uses the  
+     
+      <i>FlashVars </i>
+     
+     parameter tag from HTML embedded objects to collect user input: 
+  </p>
+  <p>
+    <font face="'Courier New'">    &lt;object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"<br />     codebase="http://macromedia.com/cabs/swflash.cab#version=6,0,0,0"<br />     width="250" height="250" id="flaMovie1" align="center"&gt;<br />     &lt;param name=movie value="flaMovie1.swf"&gt;<br />     &lt;param name=FlashVars value="input=userInput"&gt; <br />       &lt;param name=quality value=high&gt; <br />    &lt;/object&gt;</font>
+  </p>
+  <p>
+     When testing through  
+     
+      <i>FlashVars </i>
+     
+     you need to replace the  
+     userInput  
+     value with the XML injection string.  Make sure that you also try different encodings when you test through this entry point. </p>
+  <h3>
+     XML store contents 
+  </h3>
+  <p>
+  </p>
+  <p>
+    You must also tune your test case data when modifying the <i>CDATA </i>tag within XML files to execute a successful XSS attack.   For instance, some applications may blacklist any input that contains the following string, thus not allowing it to be placed in the XML data store:</p>
+  <p>
+    <font face="'Courier New'">&lt;script&gt;</font>
+  </p>
+  <p>
+  </p>
+  <p>
+    Here you may need to tweak your attack data to hide the script tags by adding extra <i>CDATA </i>tags
+    
+      
+        : 
+      
+    
+    
+      
+         </p>
+  <p>
+    <font face="'Courier New'">&lt;data&gt;&lt;[CDATA[&lt;sc]]&gt;&lt;![CDATA[ript&gt;alert('XSS')&lt;/sc]]&gt;&lt;![CDATA[ript&gt;]]&gt;&lt;/data&gt;</font>
+  </p>
+  <p>
+  </p>
+  <p>
+    At the end the contents within the <i>CDATA </i>tags get concatenated to construct a valid <i>&lt;script&gt;</i> tag.   This will bypass any checks done for <i>&lt;script&gt;</i> before the final concatenation. </p>
+  <h3>
+     Additional entry points 
+       
+  </h3>
+  <p>
+     Each application will have different ways of processing input from users, files, services, and other software entities.   Ensure that you understand the format of each entry point and cover the different formats on each entry point for each high risk component.  </p>
+  <h2>
+     Try additional payloads 
+  </h2>
+  <p>
+     So far you’ve learned how to execute two payloads: 
+  </p>
+  <ul>
+    <li>
+       Tag injection. 
+    </li>
+    <li>
+       Cross-site scripting through CDATA tags. 
+    </li>
+  </ul>
+  <p>
+     There are other payloads that you can try such as: 
+  </p>
+  <ul>
+    <li>
+       Denial of service by consuming extra memory with excessive tags. 
+    </li>
+    <li>
+       Denial of service by resource exhaustion via recursive elements. 
+    </li>
+    <li>
+       Information disclosure attacks using XML External Entities (XEE) 
+    </li>
+  </ul>
+  <p>
+     Each payload will require special tweaking of the XML attack data and might add new entry points to the scenario.   However, it is imperative that you keep up to date with the latest attack techniques related to XML injection and include them in your security test suite.  </p>
+  <h1>
+     Conclusions 
+     
+     
+  </h1>
+  <p>
+     Testing for XML injection requires that you understand how the application under test uses XML.   There are different scenarios ranging from when systems take XML as input, to when systems respond with XML as HTML output.   To successfully test for XML injection you need to understand these different scenarios.   Then, familiarize yourself with any potentially dangerous code and characteristics of any high risk components that are present.   Create a test plan that matches high risk components with their different entry points.   Then, start testing with simple test strings and observe how the application responds.   Finally, to achieve the most complete coverage, ensure that you tune your attack data to cover all formats in all entry points, and try different, up to date payloads. 
+  </p>
+  <p />

@@ -1,0 +1,14 @@
+<h2>Applies To</h2><ul><li> iOS applications that send or receive sensitive data over the network.</li>
+</ul><h2>What to Check For</h2><p>Verify that self-signed TLS certificates are disabled.
+</p><h2>Why</h2><p>Allowing the use of self-signed TLS certificates enables some types of man-in-the-middle attacks.
+</p><h2>How to Check</h2><p>To verify that self-signed TLS certificates are disabled:
+</p><ol>
+<li> <strong>Search for code that allows self-signed TLS certificates.</strong> Search application code for the presence of the <em>continueWithoutCredentialForAuthenticationChallenge</em> selector - the presence of this selector indicates that self-signed TLS certificates may be allowed.</li>
+<li> <strong>Verify that self-signed TLS certificates are not allowed in production releases.</strong> If self-signed TLS certificates are allowed for development purposes, make sure that they are disabled in production releases. The recommended way to disable development code in production releases is through <em>#define</em> and <em>#ifdef</em> compiler directives.</li>
+</ol><h2>How to Fix</h2><p>Self-signed TLS certificates are not allowed by default. Do not allow them. Avoid using the <em>allowsAnyHTTPSCertificateForHost</em> method in production releases, because it allows self-signed TLS certificates. Do not use the <em>continueWithoutCredentialForAuthenticationChallenge</em> selector within the <em>didReceiveAuthenticationChallenge</em> delegate method of <em>NSURLConnection</em> objects, because it enables self-signed TLS certificates.
+</p><h2>Communication Security Guidelines</h2><ul><li> <a href="00000000-0000-0000-0000-0000006aa5d9">Disable Self-signed TLS Certificates</a></li>
+<li> <a href="00000000-0000-0000-0000-00000060779f">Use TLS to Protect Communications</a></li>
+<li> <a href="00000000-0000-0000-0000-0000007db8fe">Use Strong TLS Configurations</a></li>
+</ul><h2>Communication Security Checklists</h2><ul><li> <a href="00000000-0000-0000-0000-00000092c321">Self-signed TLS Certificates Are Disabled</a></li>
+<li> <a href="00000000-0000-0000-0000-0000005faaf0">TLS Is Used to Protect Communications</a></li>
+<li> <a href="00000000-0000-0000-0000-0000006b67b3">Strong TLS Configurations Are Used</a></li></ul>

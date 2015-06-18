@@ -1,0 +1,18 @@
+<h1>Applies to</h1>
+  <ul>
+    <li>C&#43;&#43;</li>
+  </ul>
+  <h1>What to Check For</h1>
+  <p>Verify that file and folder names are not used for security decisions.</p>
+  <h1>Why</h1>
+  <p>When a filename/path is used in a condition, an attacker may be able to trick the application to execute an unintended code branch. To prevent this, avoid using filenames/paths in conditional statements, except for validation or error handling.</p>
+  <h1>How to Check</h1>
+  <p>Identify all filename and path inputs. Search for conditional statements that use these filenames or paths. Verify that filenames and paths are only used in conditional statements for validation or error handling.</p>
+  <h1>How to Fix</h1>
+  <p>Rewrite code using ACLs to enforce filesystem security policies. Depending on the application, this might be a lot of work, but it needs to be done to assure security.</p>
+  <h1>Related Items</h1>
+  <ul>
+    <li>
+      <a href="/article/004526a6-5b2f-4094-94fa-a80d818c0a41">Canonicalize All Input Used to Identify Resources</a>
+    </li>
+  </ul>

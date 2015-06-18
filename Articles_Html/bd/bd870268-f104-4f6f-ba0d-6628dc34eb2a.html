@@ -1,0 +1,30 @@
+<h2>Applies To</h2><ul><li> HTML5</li>
+</ul><h2>What to Check For</h2><p>Verify that WebSocket connections are protected using TLS.
+</p><h2>Why</h2><p>Just as TLS protects and encrypts the communication tunnel in HTTP, it can encrypt a WebSockets tunnel to protect against eavesdropping and man-in-the-middle attacks. (By default, the communication tunnel with the WebSocket protocol is not encrypted.) 
+</p><h2>How To Check</h2><p>To verify that WebSocket connections are protected using TLS:
+</p><ol>
+<li> <strong>Verify that the server is configured to use TLS.</strong> The exact details of configuring web servers to use TLS are different. Use documentation for your web server for exact instructions about how to determine whether the server is configured to use TLS. One simple and generic way is to connect to the server with a web browser using the <tt>https://</tt> protocol and observe whether the connection is successful.</li>
+<li> <strong>Verify that the server certificate is valid.</strong> Connect to the server using the <tt>https://</tt> protocol and use the functionality built into the browser to examine the certificate. Most modern web browsers will produce a warning if the certificate is not valid and will provide an easy way to make sure the certificate is valid.</li>
+<li> <strong>Review application code to make sure the <tt>wss://</tt> protocol is used.</strong> Search application code for <tt>ws://</tt> - there should be no such references, because only the <tt>wss://</tt> protocol should be used. The <tt>wss://</tt> protocol is secured with TLS.</li>
+</ol>
+<h2>How To Fix</h2><p>The WebSockets protocol specification is built on HTTP. With that in mind:
+</p><ol>
+<li> <strong>Enable security certificates and keys.</strong> Consult your web server documentation to ensure that your web site produces a valid certificate with HTTPS connections.</li>
+<li> <strong>Enable TLS on the WebSocket server.</strong> The configuration may vary depending upon the Websocket server implementation in use. </li>
+<li> <strong>Connect the client to the WebSocket server and ensure connections to the WebSocket are secure.</strong> When connecting to HTML5 web applications, ensure that client browsers connect with HTTPS. Note that the code accessing the WebSocket server should use the wss protocol, which is basically ws over TLS. As such, use <tt>wss://&lt;url&gt;</tt> instead of the typical <tt>ws://&lt;url&gt;</tt> in the HTML5 application code. </li>
+</ol>
+<h2>WebSocket Guidelines</h2><ul><li> <a href="00000000-0000-0000-0000-000000869806">Validate Data Coming from WebSockets</a></li>
+<li> <a href="00000000-0000-0000-0000-00000093dea4">Check the Origin Header in the WebSocket Handshake</a></li>
+<li> <a href="00000000-0000-0000-0000-0000005f2e4a">Use TLS to Encrypt WebSocket Connections</a></li>
+<li> <a href="00000000-0000-0000-0000-000000736a21">Check the Origin Attribute of WebSocket Messages</a></li>
+<li> <a href="00000000-0000-0000-0000-0000005326a8">Use the Latest WebSocket RFC 6455 Standard</a></li>
+<li> <a href="00000000-0000-0000-0000-00000085bc2f">Do Not Tunnel TCP via WebSockets</a></li>
+</ul><h2>WebSocket Checklist Items</h2><ul><li> <a href="00000000-0000-0000-0000-00000086537e">Data Coming from WebSockets Is Validated</a></li>
+<li> <a href="00000000-0000-0000-0000-00000077e316">The Origin Header in WebSocket Handshake is Checked</a></li>
+<li> <a href="bd870268-f104-4f6f-ba0d-6628dc34eb2a">TLS is Used to Encrypt WebSocket Connections</a></li>
+<li> <a href="00000000-0000-0000-0000-0000002f39d7">The Origin Attribute of WebSocket Messages Is Checked</a></li>
+<li> <a href="18d5564d-00a4-4afe-a853-707269df2566">Latest RFC 6455 Standard is Used</a></li>
+<li> <a href="00000000-0000-0000-0000-00000091ce5a">TCP Is Not Tunneled via WebSockets</a></li>
+</ul>
+
+

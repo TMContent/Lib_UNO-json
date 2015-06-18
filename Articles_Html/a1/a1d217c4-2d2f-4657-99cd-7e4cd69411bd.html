@@ -1,0 +1,22 @@
+<h1>Description</h1><p>Some applications allow the user to choose which files to access. Some of these applications don't sufficiently validate the selected file path. This path traversal vulnerability allows an attacker to access files outside of the locations authorized by the application. 
+</p><p>
+Path traversal vulnerabilities typically affect web applications. 
+</p><h1>Impact</h1><p>Using path traversal, an attacker is able to access files outside of the scope intended by the application. The attacker may then access sensitive operating system files and application configuration files that include connection strings, application source code, and other sensitive data. The attacker will usually attempt to leverage the information gathered to take full control of the application or the application server.
+</p><h1>Countermeasures</h1><p>To prevent this problem, canonicalize all file paths and name input, validate all input, and perform access control checks for all filesystem access.
+</p><ul>
+<li> <a href="004526a6-5b2f-4094-94fa-a80d818c0a41">Canonicalize All Input Used to Identify Resources</a></li>
+</ul><ul>
+<li> <a href="a8eb9762-08f6-4e61-afa7-23386cbca281">Validate All Input</a></li>
+</ul><ul>
+<li> <a href="983726cb-b3a5-4e23-af5f-04d64e95a59f">Perform Access Control Checks for Any Filesystem Access</a></li>
+</ul><ul>
+<li> <a href="da2ef63c-2068-41a2-a096-564da21ead6a">Use Reference Maps to Access Objects</a></li>
+</ul><h2>Application Check</h2><p>To check for adequate protection against this vulnerability, ensure that all file path and name input is canonicalized, all input is validated, and access control checks are performed for all filesystem access.
+</p><ul>
+<li> <a href="fa1c9336-4e98-4970-8c77-535a20a2f2a9">All Input Used to Identify Resources Is Canonicalized</a></li>
+</ul><ul>
+<li> <a href="8d8c24b0-096b-43f4-9391-9b293313a0e8">All Input Is Validated</a></li>
+</ul><ul>
+<li> <a href="70a45962-ca20-4795-bd0c-032178332ece">Access Control Checks Are Performed for All Filesystem Access</a></li>
+</ul><ul>
+<li> <a href="b86589e0-1cba-4b09-8746-84d6db219e24">Reference Maps Are Used to Access Objects</a></li></ul>

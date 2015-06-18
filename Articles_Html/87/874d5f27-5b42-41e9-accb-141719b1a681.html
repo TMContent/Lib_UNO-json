@@ -1,0 +1,12 @@
+<h1>Description</h1><p>Cookie security issues occur when all the measures available for protecting cookies are not fully implemented. Measures that can be used to protect cookies are listed in the <strong>Countermeasures</strong> section of this article (see below). 
+</p><p>
+Cookies that contain session identifiers have to be treated with extra caution, because if the session identifiers are compromised, an attacker will be able to hijack user sessions. 
+</p><p>
+Cookie security issues affect all web applications that use cookies.
+</p><h1>Impact</h1><p>The exact impact of cookie security issues depends on the kind of data stored in the vulnerable cookie and the manner in which it is exposed. The most common serious cookie security issues are exposing session identifiers to cross-site scripting or man-in-the-middle attacks. Once the attacker has compromised the session identifier, he can impersonate the authenticated user to the application and perform any actions that don't require re-authentication on behalf of that user. The exact actions that are available are different for different applications, but, for non-privileged users, the impact will typically be limited to some mischief. If the compromised user has administrative privileges, the attacker might be able to upload malicious code to the web server and execute it with the privileges of the web server. If the attacker is able to execute arbitrary application code, they will have full control of the application and its data, and have the ability to abuse the web server.
+</p><h1>Countermeasures</h1><p>To protect sensitive cookies, set the HTTPOnly flag, set the Secure flag, send cookies only over SSL/TLS, set strict domain and path values, and ensure that sensitive cookies are not  persistent.
+</p><h1>Application Check</h1><p>To check for adequate protection of sensitive cookies, verify that the HTTPOnly flag is set, the Secure flag is set, sensitive cookies are sent only over SSL/TLS, strict domain and path values are set, and sensitive cookies are not persistent.
+</p><h1>Specific Technologies</h1><ul><li> <a href="f3aa0389-da45-47cf-8ace-4a71d006958d">ASP.NET Cookie Security</a></li>
+<li> <a href="5b5754fa-53f7-467e-93c5-ff4dc8c2f32b">Java Cookie Security</a></li>
+<li> <a href="acc078c3-b325-4430-a521-c91e47b40305">PHP Cookie Security</a></li>
+</ul>

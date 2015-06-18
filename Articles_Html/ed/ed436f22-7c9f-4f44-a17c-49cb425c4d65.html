@@ -1,0 +1,46 @@
+<h1>Description</h1><p>Most web applications use cookies to keep track of session state. Some applications use other mechanisms to keep track of authenticated sessions. These custom authentication schemes are usually vulnerable to session hijacking. An attacker exploiting cookieless authentication schemes may gain elevated privileges by tampering with user-mutable parameters, or may hijack an authenticated session by intercepting it using some form of a man-in-the-middle attack. 
+</p><h1>Impact</h1><p>Using cookieless authentication often allows an attacker to hijack user sessions. Once the attacker has hijacked a user's session, he can do anything that the user is allowed to do by the application. This usually allows the attacker to access and modify the user's data. If the attacker hijacks an administrator's session, he may be able to take full control of the application.
+</p><h1>Countermeasures</h1><p>To prevent this problem, use platform-provided session management, use TLS to protect authentication, set HTTP-Only and Secure flags on session cookies, and send session cookies only over TLS. 
+</p><p>
+Use platform-provided session management:
+</p><ul>
+<li> <a href="96059535-1543-458e-afb7-e40360b9dcd2">Use ASP.NET Session Management</a></li>
+</ul><p>
+Use TLS for authentication:
+</p><ul>
+<li> <a href="00000000-0000-0000-0000-000000960e37">Use TLS to Communicate Authentication Credentials</a></li>
+</ul><p>
+Set HTTP-Only and Secure flags on session cookies:
+</p><ul>
+<li> <a href="00000000-0000-0000-0000-000000894eab">Set HTTP-Only and Secure Flags on Session Cookies</a></li>
+</ul><p>
+Send session cookies only over TLS:
+</p><ul>
+<li> <a href="00000000-0000-0000-0000-000000737bd8">Send Session Cookies Only Using TLS</a></li>
+</ul><h1>Application Check</h1><p>To check for adequate protection against this vulnerability, ensure that platform-provided session management is used, TLS is used for authentication, HTTP-Only and Secure flags are set on session cookies, and session cookies are sent only over TLS.
+</p><p>
+Platform-provided session management is used:
+</p><ul>
+<li> <a href="505042f3-ae71-4a3a-bf71-03fa1dbe34a7">ASP.NET Session Management Is Used</a></li>
+</ul><p>
+TLS is used for authentication:
+</p><ul>
+<li> <a href="00000000-0000-0000-0000-0000008f91de">TLS Is Used to Communicate Authentication Credentials</a></li>
+</ul><p>
+HTTP-Only and Secure flags are set on session cookies:
+</p><ul>
+<li> <a href="00000000-0000-0000-0000-000000570fbb">HTTP-Only and Secure Flags Are Set on Session Cookies</a></li>
+</ul><p>
+Session cookies are sent only over TLS:
+</p><ul>
+<li> <a href="00000000-0000-0000-0000-00000071f956">Session Cookies Are Sent Only over TLS</a></li>
+</ul><h1>Computer Based Training Links</h1><p>Use the following Computer Based Training course(s) for more background information about this type of vulnerabilities.
+</p><h2>OWASP Top Threats &amp; Mitigations</h2><p>This course examines in depth the vulnerabilities, threats, and mitigations described in the OWASP Top 10 2013. Upon completion of this class, participants will be able to identify and mitigate the greatest threats that web application developers face, including: Injection, Broken Authentication and Session Management, Cross-Site Scripting (XSS), Insecure Direct Object References, Security Misconfiguration, Sensitive Data Exposure, Missing Function Level Access Control, Cross-Site Request Forgery (CSRF), Using Components with Known Vulnerabilities, and Unvalidated Redirects and Forwards.
+</p><p>
+<a href="https://teamprofessor.absorbtraining.com/ninja/#/courses/course/139631">DES 221 OWASP Top Threats &amp; Mitigations</a>
+</p><h2>Creating Secure ASP.NET Code</h2><p>This in-depth course examines the development of secure Web applications in ASP.Net. It provides developers and testers with an overview of common Web application vulnerabilities and a set of nine best practices and techniques to follow in order to avoid them. Throughout the course, students are provided with interactive games and simulations designed to reinforce the secure design and coding concepts that were introduced.
+</p><p>
+<a href="https://teamprofessor.absorbtraining.com/ninja/#/courses/course/127607">COD 311 Creating Secure ASP.NET Code</a>
+</p><p>
+<em>Valid login credentials and enrollment in the course itself are required to access Team Professor content. If you need login credentials, please contact support@securityinnovation.com for help.</em>
+</p>

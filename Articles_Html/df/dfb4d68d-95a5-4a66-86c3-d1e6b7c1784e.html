@@ -1,0 +1,10 @@
+<h2>Applies To</h2><ul><li> Java</li>
+</ul><h2>What to Do</h2><p>Disable dangerous functions by default.
+</p><h2>Why</h2><p>Disable dangerous functions by default so that attackers do not abuse them.
+</p><h2>How</h2><p>To disable dangerous functions by default:
+</p><ol>
+<li> <strong>Identify code that implements dangerous functions.</strong> Determine which application features implemented by your application might be dangerous. Some examples are: file uploads, code execution, direct database access, and data deletion. Make a spreadsheet about all code that implements dangerous features.</li>
+<li> <strong>Make dangerous functions configurable.</strong> Modify each piece of code that implements a dangerous function to check application settings to see whether the user has explicitly enabled the dangerous feature. Only allow a dangerous feature to be executed if the user has explicitly enabled it.</li>
+<li> <strong>Disable dangerous functions by default.</strong> For each dangerous feature, write code so that the feature can only be executed if it has been explicitly enabled by the user.</li>
+<li> <strong>Document the dangerous functions.</strong> Add information about all the dangerous features to the documentation. Explain why each feature is dangerous. Describe how to configure each feature.</li>
+</ol>

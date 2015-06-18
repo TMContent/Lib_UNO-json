@@ -1,0 +1,17 @@
+<h1>Description</h1><p>Regular expression denial of service vulnerabilities occur when the application applies regular expressions to attacker-supplied data in a manner that requires prohibitive computational resources to complete. 
+</p><p>
+Regular expression denial of service vulnerabilities affect all applications that use regular expressions on user-supplied data.
+</p><h1>Impact</h1><p>Regular expression denial of service attacks result in the vulnerable application taking up a lot of CPU time and potentially causing the application server to become unresponsive. The attack scenario usually involves the attacker rapidly sending requests with malformed data that causes regular expressions used by the application on that data to take a very long time to compute. The result is that the application server will become unusable for the duration of the attack. In some cases, the application server might crash from overheating. If the application cannot use up 100% of the server's CPU time, the application alone might become unresponsive, while the rest of the server continues to function.
+</p><h1>Countermeasures</h1><p>To prevent regular expression denial of service attacks, check the length of user-supplied data before passing it to regular expressions.
+</p><ul>
+<li> <a href="c0a4f56c-1e8c-4d3a-97e2-fc9e969d5d52">Use Positive Input Validation</a></li>
+</ul><h1>Application Check</h1><p>To check for adequate protection against regular expression denial of service attacks, verify that the length of user-supplied data is checked before the data is passed to regular expressions.
+</p><ul>
+<li> <a href="d4129497-3a66-44d1-881e-e6f004af2e0d">Positive Input Validation Is Used</a></li>
+</ul><h1>Computer Based Training Links</h1><p>Use the following Computer Based Training courses for more background information about this type of vulnerabilities.
+</p><h2>Creating Secure PHP Code</h2><p>This course introduces best practices for developing secure PHP code. The course also identifies common PHP vulnerabilities that attackers can exploit to gain access to critical information. In addition, the course explains mitigation techniques that you can use to avoid common PHP vulnerabilities and write secure code. After completing this course, you will be able to describe the best practices for developing secure PHP code, explain common PHP vulnerabilities and learn mitigation techniques to avoid common PHP vulnerabilities and write secure code.
+</p><p>
+<a href="https://teamprofessor.absorbtraining.com/ninja/#/courses/course/127620">COD 315P Creating Secure PHP Code</a>
+</p><p>
+<em>Valid login credentials and enrollment in the course itself are required to access Team Professor content. If you need login credentials, please contact support@securityinnovation.com for help.</em>
+</p>

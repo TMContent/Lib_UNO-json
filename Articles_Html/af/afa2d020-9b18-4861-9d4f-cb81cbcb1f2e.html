@@ -1,0 +1,25 @@
+<h1>Applies to</h1>
+  <ul>
+    <li>Java</li>
+  </ul>
+  <h1>What to Do</h1>
+  <p>Require authentication and authorization for all sensitive pages. Use role-based authorization policies.</p>
+  <h1>Why</h1>
+  <p>All pages that have private information should require authentication and authorization to prevent unauthorized information disclosure. Use role-based authorization policies because they are relatively simple to manage correctly.</p>
+  <h1>How</h1>
+  <p>To require authentication and authorization for all sensitive pages:</p>
+  <ol>
+    <li>
+      <p>
+        <strong>Identify all sensitive pages.</strong> Make a list of all pages that handle sensitive or private information.</p>
+    </li>
+    <li>
+      <p>
+        <strong>Define roles.</strong> Define access roles for your application. These roles should include administrative users and various types of users specific to your application.</p>
+    </li>
+    <li>
+      <p>
+        <strong>Use JAAS to implement authentication and role-based access control.</strong> Implementing authentication and authorization with JAAS is an involved process that has a significant impact on the application architecture. Please, follow the links at the bottom of this page to find out more about using JAAS. </p>
+    </li>
+  </ol>
+  <br />

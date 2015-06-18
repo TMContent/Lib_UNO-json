@@ -1,0 +1,15 @@
+<h1>Applies to</h1>
+  <ul>
+    <li>Microsoft® Windows Communication Foundation (WCF) 3.5 
+<li>Microsoft Visual Studio® 2008</li></li>
+  </ul>
+  <h1>What to Do</h1>
+  <p>If you need to limit the clients that will consume your service, consider setting negotiateServiceCredentials to False.</p>
+  <h1>When</h1>
+  <p>Consider using this guideline when you want to limit the clients that can consume your service.</p>
+  <h1>How</h1>
+  <p>If you want to limit the clients that can consume your service, consider setting negotiateServiceCredentials to False. This option will force you to install on the client a certificate, plus service certificate with public key. On the service you will need to install a certificate plus the client certificate with the public key. Negotiation of service credentials is only available in wsHttpBinding. </p>
+  <p>The following binding configuration shows how to set this option:</p>
+  <pre>&lt;binding name="BindingMessage"&gt;<br />   &lt;security mode="Message"&gt;<br />      &lt;message clientCredentialType="Windows" negotiateServiceCredential="false" /&gt;<br />   &lt;/security&gt;<br />&lt;/binding&gt;</pre>
+  <hr />
+  <p>Adapted from Microsoft patterns & practices guidance.</p>

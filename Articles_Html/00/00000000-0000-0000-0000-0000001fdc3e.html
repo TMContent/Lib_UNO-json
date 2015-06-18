@@ -1,0 +1,13 @@
+<h2>Applies To</h2><ul><li> Android applications that send or receive sensitive data over the network.</li>
+</ul><h2>What to Check For</h2><p>Verify that self-signed TLS certificates are disabled.
+</p><h2>Why</h2><p>Allowing the use of self-signed TLS certificates enables some types of man-in-the-middle attacks.
+</p><h2>How to Check</h2><p>Self-signed TLS certificates are disabled on Android by default. To verify that self-signed TLS certificates are disabled:
+</p><ol>
+<li> <strong>Search for code that allows self-signed TLS certificates.</strong> Search application code for the presence of the <em>setDefaultHostnameVerifier</em> method call - the presence of this method call indicates that self-signed TLS certificates may be allowed.</li>
+<li> <strong>Verify that self-signed TLS certificates are not allowed in production releases.</strong> If self-signed TLS certificates are allowed for development purposes, make sure that they are disabled in production releases. The recommended way to disable development code in production releases is by using <em>#define</em> and <em>#ifdef</em> compiler directives.</li>
+</ol><h2>How to Fix</h2><p>Self-signed TLS certificates are disabled on Android by default. Do not allow them in production releases.
+</p><h2>Communication Security Guidelines</h2><ul><li> <a href="00000000-0000-0000-0000-000000657ab9">Disable Self-signed TLS Certificates</a></li>
+<li> <a href="00000000-0000-0000-0000-0000000a1df2">Use TLS to Protect Communications</a></li>
+</ul><h2>Communication Security Checklists</h2><ul><li> <a href="00000000-0000-0000-0000-0000001fdc3e">Self-signed TLS Certificates Are Disabled</a></li>
+<li> <a href="00000000-0000-0000-0000-0000002b164a">TLS Is Used to Protect Communications</a></li>
+</ul>

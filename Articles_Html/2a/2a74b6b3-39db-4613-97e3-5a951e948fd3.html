@@ -1,0 +1,22 @@
+<h1>Applies to</h1>
+  <ul>
+    <li>C&#43;&#43;</li>
+  </ul>
+  <h1>What to Check For</h1>
+  <p>Verify that pointers that are passed as arguments to functions are checked for null before dereferencing.</p>
+  <h1>Why</h1>
+  <p>Dereferencing a null pointer causes the program to crash. Validating pointers before using them prevents unexpected crashes.</p>
+  <h1>How to Check</h1>
+  <p>Search for all functions that accept pointers as arguments. Verify that pointers are checked for null in each function before they are dereferenced.</p>
+  <h1>How to Fix</h1>
+  <p>Identify all functions that accept pointers as arguments. Add code that checks pointers for null before the rest of the program uses these pointers for data access.</p>
+  <h1>Additional Resources</h1>
+  <ul>
+    <li>For more information about null-pointer dereference vulnerabilities, please see <a href="http://www.owasp.org/index.php/Null-pointer_dereference">http://www.owasp.org/index.php/Null-pointer_dereference</a></li>
+  </ul>
+  <h1>Related Items</h1>
+  <ul>
+    <li>
+      <a href="/article/bc36816b-a414-4c4a-90d1-68c34df9856a">Check for Null Before Dereferencing an In-Parameter Pointer</a>
+    </li>
+  </ul>

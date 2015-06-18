@@ -1,0 +1,36 @@
+<h2>Applies To</h2><ul><li> Android</li>
+</ul><h2>What to Do</h2><p>The <em>Binder</em> interface is used to conduct remote procedure call operations with a local background service. Use <em>Binder</em> when the background service is accessed from within your application.
+</p><h2>Why</h2><p>The Binder interface limits interaction between applications and services to one process space. This relieves the programmer of having to think through security mechanisms for these activities and services since all interaction is through trusted components. The Binder interface helps to create a simple application design, and the simplest systems tend to be the most secure.
+</p><h2>When</h2><p>Use <em>Binder</em> when different components of your application need to interact with a service within the same application process space.
+</p><h2>How</h2><p>To use binder for IPC:
+</p><ol>
+<li> <strong>Create an inner class that extends <em>Binder</em>.</strong> In the service that users will access from your application, create an inner class that extends <em>Binder</em>. Create a method within the <em>Binder</em> class that returns a reference to the parent class.  Override the required <em>onBind()</em> method. (The method should return the instance of the <em>Binder</em>).</li>
+<li> <strong>Create public methods that can be accessed from outside the service but within the application.</strong> These methods are the interaction vehicle for other activities and services within your application’s process space. These methods act like any other method and can return values or void.</li>
+<li> <strong>Create a global field with the type of the local service class.</strong> In the activity accessing the service, create a global field with the type of the local service class.  Create an instance of <em>ServiceConnection</em>, then override the <em>onServiceConnected</em> method and have it return a reference to the local service class by casting the <em>IBinder</em> and returning the service instance.</li>
+<li> <strong>Connect to the service through the ServiceConnection reference.</strong> In the <em>onCreate</em> method, set an intent for the service, and then call the <em>bindService()</em> method with the intent and <em>ServiceConnection</em> as inputs. The activity should now be ready to connect to the service through the <em>ServiceConnection</em> reference.</li>
+</ol><h2>Problem Example</h2><p>As the MyApp developer, you need one of your activities to talk with your service. You immediately believe that you need a messenger. You create the handler, which implements the <em>handleMessage</em> method for all inbound connections.
+</p><p>
+Because you are worried about non-approved applications accessing the service, you create a complex scheme within the handler to authenticate applications. You implement a database within the application and store keys for your activity; only if another activity has the key will the handler proceed with processing the message:
+</p><pre>Bundle bun = incoming.getData();
+String key = bun.getString(PROFILE_APP_KEY);
+if (key==null) 
+{
+Log.i(getClass().getSimpleName(), "Unauthorized connection");
+return;
+}
+appId = helper.authenticateApp(key);
+</pre><p>
+What you have done, though, is create a complex and unnecessarily open service connection.
+</p><h2>Solution Example</h2><p>Because only the MyApp application needs to access the service, the simplest approach is to extend the <em>Binder</em> class. You can create a local service with a class extending <em>Binder</em>, such as:
+</p><pre>public class MyBinder extends Binder {
+MyService findService() 
+{
+   return MyService.this;
+}
+}
+</pre><p>
+Next, you declare an instance of that class with type <em>IBinder</em>:
+</p><pre>private final IBinder mBinder = new MyBinder();
+</pre><p>
+The last step is to return the reference to it in the <em>onBind()</em> method so the calling activity can execute whatever public methods you declare in this service. The activity can now directly access the service’s methods, which simplifies the implementation considerably compared to using a messenger.
+</p>

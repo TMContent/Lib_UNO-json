@@ -1,0 +1,18 @@
+<h2>Applies To</h2><ul><li> PHP</li>
+</ul><h2>What to Check For</h2><p>Verify that encryption keys are protected.
+</p>
+<h2>Why</h2><p>Protect the encryption keys to prevent your encrypted data from being compromised. If the encryption keys are stored together with the data, then an attacker may be able to get the keys together with the data and then use them to decrypt the data. Therefore, keeping the keys together with the encrypted data defeats the purpose of encrypting the data. 
+</p><p>
+There is no practical encryption key management method available natively in PHP. The only practical way to implement key management in PHP in a manner that will satisfy regulatory requirements is to use a third-party solution that has been found acceptable by various regulatory agencies.
+</p><h2>How to Check</h2><p>To verify that encryption keys are protected:
+</p><ol>
+<li> <strong>Identify key management requirements.</strong> Determine the key management requirements for your application. These might be defined by the application design and/or by compliance requirements.</li>
+<li> <strong>Identify the mechanism that is used to protect the encryption keys.</strong> Find code that is responsible for key management in your application.</li>
+<li> <strong>Verify that encryption keys are protected.</strong> Review code that is responsible for key management to make sure that it matches the requirements defined for the application.</li>
+</ol>
+<h2>How to Fix</h2><p>To use a trusted third-party for key management in PHP:
+</p><ol>
+<li> <strong>Identify a trusted third-party key management solution.</strong> There are very few options available. One option is linked to at the bottom of this page.</li>
+<li> <strong>Use the third-party key management solution.</strong> Work together with the vendor of the third-party key management solution to use it in your application.</li>
+</ol><h2>Additional Resources</h2><ul><li> For information about a third-party PHP key management solution, see <a href="http://townsendsecurity.com/developers/languages/PHP-Developer-Solutions">http://townsendsecurity.com/developers/languages/PHP-Developer-Solutions</a></li>
+</ul>

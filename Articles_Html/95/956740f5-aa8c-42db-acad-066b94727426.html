@@ -1,0 +1,25 @@
+<h2>Applies To</h2><ul><li> C++</li>
+</ul><h2>What to Do</h2><p>Don't use functions with format string parameters.
+</p><h2>Why</h2><p>C and C++ use string functions, like printf(), that allow users to pass a format for the input string. Attackers can manipulate the input parameters passed to these functions to make the function work differently. Attackers can use format string bugs to overwrite parts of the stack, corrupt memory, and crash the system. They can use this vulnerability to execute different kind of attacks such as elevation of privileges, authentication bypass, information disclosure, and denial of services.
+</p><h2>How</h2><p>To avoid using functions with format string parameters:
+</p><ol>
+<li> <strong>Find code that uses functions with format string parameters.</strong> Search your application for code that uses any of the following functions:<ol>
+<li> printf</li>
+<li> wprintf</li>
+<li> sprintf</li>
+<li> swprintf</li>
+<li> fprintf</li>
+<li> fwprintf</li>
+<li> vprintf</li>
+<li> scanf</li>
+<li> fscanf</li>
+<li> sscanf</li>
+<li> fwscanf</li>
+<li> wscanf</li>
+<li> swscanf</li>
+<li> snprintf</li></ol></li>
+<li> <strong>Replace code that uses functions with format string parameters.</strong> Change each piece of code that uses any of the functions with format string parameters to use some other functions. The following functions may be used as safe alternatives on Windows systems:<ol>
+<li> StringCbPrintf</li>
+<li> StringCbPrintfEx</li>
+<li> StringCchPrintf </li></ol></li>
+</ol>

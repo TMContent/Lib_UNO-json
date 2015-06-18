@@ -1,0 +1,61 @@
+<h1>Applies To</h1><p>Any application that can manipulate XML documents through Xpath/XQuery.
+</p><h1>Description</h1><p>An Xpath/XQuery attack exploits missing or poor input validation to run arbitrary commands in XML databases. This attack works in much the same way as a SQL injection attack, but with an XML target instead of a SQL target. This attack can occur when an application uses unvalidated user input to construct an Xpath/XQuery statement to access XML tables. Using the Xpath/XQuery attack the attacker can execute arbitrary Xpath/XQuery statements on an XML database. This attack is often more damaging than a SQL injection attack, as permissions are not enforced and the attacker’s query can access every part of the XML document. With an Xpath/XQuery attack it is possible to retrieve, manipulate, and destroy any data stored in the XML document.
+</p><h1>Impact</h1><ul><li>Confidentiality: Since XML generally holds sensitive data, loss of confidentiality is a frequent problem.</li>
+<li>Integrity: The attacker may be able to not only read sensitive information, but also to change or even delete this information.</li>
+<li>Authentication: If poorly formed XPath/XQuery commands are used to check user names and passwords, the attacker may be able to connect to a system as another user with no previous knowledge of the password.</li>
+<li>Authorization: If authorization information is held in an XML document, the attacker may be able to change this information.</li>
+</ul>    
+<h1>Vulnerabilities</h1><ul><li>Weak input validation.</li>
+<li>Generating XPath expressions by dynamically concatenating strings with user-supplied data.</li>
+<li>Failure to escape single quotes, double quotes, and other potentially dangerous characters.</li>
+</ul><h1>Countermeasures</h1><ul><li>Validate input: Use vigorous whitelist style validation on any user input that may be used as part of an XQuery command. This will also help prevent meta-characters from being added to your stored data set which will be used again.</li>
+<li>Use parameterized and precompiled XPath expressions in your XQuery instead of concatenating strings with user input: Parameterized Xpath statements will accept characters that have special meaning to Xpath (like single quote) without problems because they are strongly typed.</li>
+<li>Use escaping routines. If you cannot use parameters and must generate XPath expressions dynamically, use escaping routines to handle special characters that have meaning to the database.</li>
+<li>Do not echo XQuery errors. Catch any exceptions on the server and return generic error messages to the client.</li>
+</ul><h1>Example</h1><p>Consider the following XML file, being used by an application to log users into the application:
+</p><pre>&lt;?xml version="1.0" encoding="ISO-8859-1"?&gt; 
+&lt;users&gt;    
+	&lt;user&gt;       
+		&lt;username&gt;admin&lt;/username&gt;       
+		&lt;password&gt;8af2&amp;&lt;/password&gt;       
+		&lt;account&gt;admin&lt;/account&gt;    
+	&lt;/user&gt;    
+
+	&lt;user&gt;       
+		&lt;username&gt;user1&lt;/username&gt;       
+		&lt;password&gt;password&lt;/password&gt;       
+		&lt;account&gt;guest&lt;/account&gt;    
+	&lt;/user&gt;    
+
+	&lt;user&gt;       
+		&lt;username&gt;user2&lt;/username&gt;       
+		&lt;password&gt;1234&lt;/password&gt;       
+		&lt;account&gt;guest&lt;/account&gt;    
+	&lt;/user&gt; 
+&lt;/users&gt;
+</pre><p>
+A developer could use the following <tt>Xpath</tt> command to return all the users with the username:
+</p><pre>‘user1’ and password ‘password’string(//user[username/text()='user1'        
+and password/text()='password']/account/text())
+</pre><p>
+However, without proper input validation, the attacker could easily input a logic statement to manipulate the output of the query. An attacker could provide the following string to the <tt>Xpath</tt> statement above.
+</p><pre>Username: user1Password: ' or '1' = '1
+</pre><p>
+This will change the <tt>Xpath</tt> statement to look like this:
+</p><pre>string(//user[username/text()='user1' and password/text()=''        
+or '1' = '1']/account/text())
+</pre><p>
+The password portion of the query will always resolve to true, which means that the application will authenticate the attacker as <tt>user1</tt> even though no password was provided.
+</p><p>
+A good way to fix this example is to use a parameterized query. The idea here is to create a precompiled query that gets values from parameters instead of dynamically creating an <tt>XPath</tt> expression by concatenation at run time. Let <tt>$username</tt> and <tt>$password</tt> be string variables that hold the users input. Then construct a query in the following way:
+</p><pre>"//user[user[username/text()=$username and password/text()=$password]"
+</pre><p>
+If you are using .NET, see the Additional Resources below for another example of how this works.
+</p><h1>Additional Resources</h1><ul><li>For more information on Mitigating XPath Injection Attacks in .NET, see: <a href="http://www.tkachenko.com/blog/archives/000385.html">http://www.tkachenko.com/blog/archives/000385.html</a></li>
+<li>For more information on XPATH Injection, see: <a href="http://www.owasp.org/index.php/XML_Injection">http://www.owasp.org/index.php/XML_Injection</a></li>
+<li>For more information on XPath injection in XML databases, see: <a href="http://palisade.plynt.com/issues/2005Jul/xpath-injection/index.php">http://palisade.plynt.com/issues/2005Jul/xpath-injection/index.php</a></li>
+</ul><h1>Related Items</h1><ul><li><a href="ae392dbb-fdb4-443f-9d17-78240b4acc95">Attack: XML Injection Attack</a></li>
+<li><a href="b1757bda-0a0d-48e7-b101-3c4088e41878">Attack: SQL Injection Attack</a></li>
+<li><a href="8482159c-5ec2-4b89-9c65-9af765030ff5">Attack: Information Disclosure Attack</a></li>
+<li><a href="9d60faca-687b-4c69-91ba-f5712af0fd02">Attack: Server-Side Code Injection Attack</a></li>
+<li><a href="61f0d74e-d9b6-4e27-9e12-da65baff83fd">Attack: LDAP Injection Attack</a></li></ul>

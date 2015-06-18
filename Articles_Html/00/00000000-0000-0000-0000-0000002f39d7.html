@@ -1,0 +1,35 @@
+<h2>Applies To</h2><ul><li> HTML5 and Javascript</li>
+</ul><h2>What to Check For</h2><p>Verify that the origin attribute on WebSocket messages is checked before the messages are processed.
+</p><h2>Why</h2><p>If you do not check the origin of the MessageEvent to confirm that it is coming from a safe domain, your application may be open to attacks. These attacks may be in the form of messages sent from other servers and may contain messages harmful to your application.
+</p><h2>How To Check</h2><p>To verify that the origin attribute on messages is checked before the messages are processed:
+</p><ol>
+<li> <strong>Find code that processes messages from WebSockets.</strong> Search the application code for functions that handle messages received from WebSockets. To find these functions, search for <em>onmessage</em> event handlers. Create a spreadsheet to list all code that receives messages from WebSockets.</li>
+<li> <strong>Identify the allowed domains from which a message will be accepted</strong>. Always use a white list approach. Gather a list of the valid domains and be as strict as possible. Include only the domains from which you want to process messages.</li>
+<li> <strong>Verify that the message origin is validated before messages are handled.</strong> Examine each piece of code that handles WebSocket messages. Make sure that the event origin is validated before data is processed using a white-list approach, so that only data from the explicitly authorized domains is processed.</li>
+</ol><h2>How To Fix</h2><p>The technique for checking the origin attribute depends on whether you would like to verify a specific server or a specific domain. 
+</p><ol>
+<li> <strong>If the origin is expected to be a specific server, check it against the server name.</strong> Use the JavaScript === operator to verify equality between the expected server name and the value of the origin attribute. </li>
+<li> <strong>If the origin is expected to be from one or more domains, check it against the domain name(s).</strong> Use a regular expression to provide wildcard-type functionality. To do so, continue with Steps 3-9 below.</li>
+<li> <strong>Identify the allowed domains from which a message will be accepted.</strong> Always use a white list approach. Gather a list of the valid domains and be as strict as possible. Include only the domains from which you want to process messages.</li>
+<li> <strong>Create a function for validating the domains to centralize the logic.</strong> Creating a function also allows you to test the code more easily.</li>
+<li> <strong>Check the length of the domain before validating it.</strong> Use the length property to ensure the size of the domain is not so large that it will cause a RegEx DoS. </li>
+<li> <strong>Build the regular expression for validating your domains.</strong> The expression will look like this one, which tests valid host names using Internet Engineering Task Force Request for Comments 1035: <tt> ^https?:\/\/([a-z][-a-z0-9]+[a-z0-9]\.)*mydomain\.com$ </tt>. This expression allows both HTTP and HTTP over Secure Sockets Layer (HTTPS). It white lists the allowed characters for a host name in a URL. The question mark [?] is a qualifier that matches the previous character(s) once at most. The expression ([a-z][-a-z0-9]+[a-z0-9]\.)* will match one or more host names, so <tt> http://myserver.example.com </tt> as well as <tt> http://www.mysubdomain.example.com </tt> will match.</li>
+<li> <strong>Inside the new function, create a regular expression object with your expression.</strong> Pass the expression to the RegExp constructor, as shown here: <tt> var re = new RegExp(/^https?:\/\/([a-z][-a-z0-9]+[a-z0-9]\.)*mydomain\.com$/); </tt></li>
+<li> <strong>Use the test() method of the RegExp object to verify that the origin attribute matches.</strong> The test() method can be used like this: <tt> return pattern.test(origin); </tt></li>
+<li> <strong>Call the function from your onmessage event handler.</strong> Pass the value of the origin attribute to your function: <tt> webSocket.onmessage = function(event) ... </tt></li>
+<li> <strong>Test thoroughly.</strong> Test the code thoroughly with both positive and negative matches to be sure that it properly handles the validation.</li>
+</ol>
+
+<h2>WebSocket Guidelines</h2><ul><li> <a href="00000000-0000-0000-0000-000000869806">Validate Data Coming from WebSockets</a></li>
+<li> <a href="00000000-0000-0000-0000-00000093dea4">Check the Origin Header in the WebSocket Handshake</a></li>
+<li> <a href="00000000-0000-0000-0000-0000005f2e4a">Use TLS to Encrypt WebSocket Connections</a></li>
+<li> <a href="00000000-0000-0000-0000-000000736a21">Check the Origin Attribute of WebSocket Messages</a></li>
+<li> <a href="00000000-0000-0000-0000-0000005326a8">Use the Latest WebSocket RFC 6455 Standard</a></li>
+<li> <a href="00000000-0000-0000-0000-00000085bc2f">Do Not Tunnel TCP via WebSockets</a></li>
+</ul><h2>WebSocket Checklist Items</h2><ul><li> <a href="00000000-0000-0000-0000-00000086537e">Data Coming from WebSockets Is Validated</a></li>
+<li> <a href="00000000-0000-0000-0000-00000077e316">The Origin Header in WebSocket Handshake is Checked</a></li>
+<li> <a href="bd870268-f104-4f6f-ba0d-6628dc34eb2a">TLS is Used to Encrypt WebSocket Connections</a></li>
+<li> <a href="00000000-0000-0000-0000-0000002f39d7">The Origin Attribute of WebSocket Messages Is Checked</a></li>
+<li> <a href="18d5564d-00a4-4afe-a853-707269df2566">Latest RFC 6455 Standard is Used</a></li>
+<li> <a href="00000000-0000-0000-0000-00000091ce5a">TCP Is Not Tunneled via WebSockets</a></li>
+</ul>

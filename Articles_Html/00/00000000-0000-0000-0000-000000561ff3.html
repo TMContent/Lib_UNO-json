@@ -1,0 +1,19 @@
+<h2>Applies To</h2><ul><li> Android applications that cache data.</li>
+</ul><h2>What to Do</h2><p>Do not cache sensitive data.
+</p><h2>Why</h2><p>Avoid caching sensitive data to prevent this data from falling into the wrong hands if the device is stolen or compromised.
+</p><h2>How</h2><p>To prevent caching of sensitive data:
+</p><ol>
+<li> <strong>Identify sensitive data.</strong> Make a list of all sensitive information handled by your application. Some examples are:<ul>
+<li> Passwords</li>
+<li> Encryption keys</li>
+<li> Personal information</li></ul></li>
+<li> <strong>Identify code that creates temporary files used by the application.</strong> Review the functions in the application source code that are responsible for creating the temporary files. Find any such functions that write sensitive data.</li>
+<li> <strong>Remove code that writes sensitive data to temporary files.</strong> Edit the functions that write sensitive data to temporary files to prevent caching of sensitive data.</li>
+</ol><h2>Privacy Guidelines</h2><ul><li> <a href="00000000-0000-0000-0000-000000561ff3">Do Not Cache Sensitive Data</a></li>
+<li> <a href="00000000-0000-0000-0000-0000007e1362">Do Not Log Location Data</a></li>
+<li> <a href="00000000-0000-0000-0000-0000001dcb79">Do Not Log Sensitive Data</a></li>
+<li> <a href="00000000-0000-0000-0000-000000629cc3">Delete Cached Data after Use</a></li>
+</ul><h2>Privacy Checklists</h2><ul><li> <a href="00000000-0000-0000-0000-0000003b2aca">Sensitive Data Is Not Cached</a></li>
+<li> <a href="00000000-0000-0000-0000-0000006c27b2">Location Data Is Not Logged</a></li>
+<li> <a href="00000000-0000-0000-0000-0000005a7753">Sensitive Data Is Not Logged</a></li>
+<li> <a href="00000000-0000-0000-0000-0000007c99a7">Cached Data Is Deleted after Use</a></li></ul>

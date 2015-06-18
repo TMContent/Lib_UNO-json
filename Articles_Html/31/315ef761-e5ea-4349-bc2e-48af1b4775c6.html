@@ -1,0 +1,39 @@
+<h1>Description</h1><p>Exception Information Disclosure is a type of vulnerability where an application error message discloses information that give an advantage to the attacker. Attackers can use application error information to improve their ability to attack the application.
+</p><p>
+Almost all method calls in computer programs provide some feedback to the calling method about the status of the operation. This feedback could be a function return value, an exception which was thrown by the called method, or an error string. Based on this feedback, an applications decides if it should tell the user about a significant result (usually success or failure). When an error occurs, some applications choose to echo the internal error messages to the user. Though this feature is helpful in debugging a problem, it could lead to an information disclosure issue.  An attacker could use technical information disclosed in error messages to gain a better understanding about the back-end processing of the product and craft more malicious attacks against it.  
+</p><h1>Countermeasures</h1><p>To prevent this vulnerability, do not disclose valuable information in error messages, avoid using custom error pages to denote error states, use structured exception handling, and use a global exception handler for unhandled exceptions.
+</p><p>
+Do not disclose valuable information in error messages:</p><ul>
+<li> <a href="a880d974-3543-4190-ae63-ea7e8ac11d0a">Do Not Disclose Valuable Information in Error Messages</a></li>
+</ul><p>
+Avoid using custom error pages to denote error states:</p><ul>
+<li> <a href="6417aded-7d90-43c2-b581-32e12501ec11">Avoid Using Custom Error Pages to Denote Error States</a></li>
+</ul><p>
+Use structured exception handling:</p><ul>
+<li> <a href="afb7610c-53ab-49dd-a425-f3e3272f7749">Use Structured Exception Handling</a></li>
+</ul><p>
+Use a global exception handler for unhandled exceptions:</p><ul>
+<li> <a href="461370b3-66e7-4ac3-900f-7e2f757c54a8">Use a Global Exception Handler for Unhandled Exceptions</a></li>
+</ul><h1>Application Check</h1><p>To check for adequate protection against this vulnerability, ensure that valuable information is not disclosed in error messages, custom error pages are not used to denote error states, structured exception handling is used, and global error handlers are used to catch unhandled exceptions.
+</p><p>
+Valuable information is not disclosed in error messages:</p><ul>
+<li> <a href="76fb9a2a-2091-4d47-a65d-588eda490c90">Valuable Information Is Not Disclosed in Error Messages</a></li>
+</ul><p>
+Custom error pages are not used to denote error states:</p><ul>
+<li> <a href="73da88ef-83af-4166-aad1-ae9585c5e2da">Custom Error Pages Are Not Used to Denote Error States</a></li>
+</ul><p>
+Structured exception handling is used:</p><ul>
+<li> <a href="bf298d0e-9433-44c1-b9af-66ba69662d18">Structured Exception Handling Is Used</a></li>
+</ul><p>
+Global error handlers are used to catch unhandled exceptions:</p><ul>
+<li> <a href="f0c2bed2-b530-46bc-9e64-8041e0def190">Global Error Handlers Are Used to Catch Unhandled Exceptions</a></li>
+</ul><h1>Computer Based Training Links</h1><p>Use the following Computer Based Training course(s) for more background information about this type of vulnerabilities.
+</p><h2>Creating Secure Code – .NET 4.0 Foundations</h2><p>This course describes .NET security features, including concepts such as Code Access Security (CAS) and .NET cryptographic technologies. It also provides secure coding best practices that will enable you to build more secure applications in .NET. 
+</p><p>
+<a href="https://teamprofessor.absorbtraining.com/ninja/#/courses/course/127611">COD 215 Creating Secure Code – .NET 4.0 Foundations</a>
+</p><h2>Creating Secure ASP.NET Code</h2><p>This in-depth course examines the development of secure Web applications in ASP.Net. It provides developers and testers with an overview of common Web application vulnerabilities and a set of nine best practices and techniques to follow in order to avoid them. Throughout the course, students are provided with interactive games and simulations designed to reinforce the secure design and coding concepts that were introduced.
+</p><p>
+<a href="https://teamprofessor.absorbtraining.com/ninja/#/courses/course/127607">COD 311 Creating Secure ASP.NET Code</a>
+</p><p>
+<em>Valid login credentials and enrollment in the course itself are required to access Team Professor content. If you need login credentials, please contact support@securityinnovation.com for help.</em>
+</p><h1>Additional Resources</h1><ul><li> For more information about exception information disclosure, please see <a href="https://www.owasp.org/index.php/Information_Leakage">https://www.owasp.org/index.php/Information_Leakage</a></li></ul>

@@ -1,0 +1,27 @@
+<h1>Description</h1><p>Cookie security issues occur when all the measures available for protecting cookies are not fully taken advantage of. Measures that can be used to protect cookies are listed in the <strong>Countermeasures</strong> section of this article (see below): 
+</p><p>
+Cookies that contain session identifiers have to be treated with extra caution, because if the session identifiers are compromised, an attacker will be able to hijack user sessions. 
+</p><p>
+Cookie security issues affect all web applications that use cookies.
+</p><h1>Impact</h1><p>The exact impact of cookie security issues depends on the kind of data stored in the vulnerable cookie and the manner in which it is exposed. The most common serious cookie security issues are exposing session identifiers to cross-site scripting or man-in-the-middle attacks. Once the attacker has compromised the session identifier, he can impersonate the authenticated user to the application and perform any actions that don't require re-authentication on behalf of that user. The exact actions that are available are different for different applications, but, for non-privileged users, the impact will typically be limited to some mischief. If the compromised user has administrative privileges, the attacker might be able to upload malicious code to the web server and execute it with the privileges of the web server. If the attacker is able to execute arbitrary application code, they will have full control of the application and its data, and have the ability to abuse the web server.
+</p><h1>Countermeasures</h1><p>To protect sensitive cookies, set the HTTPOnly flag, set the Secure flag, send cookies only over TLS, set strict domain and path values, and ensure that sensitive cookies are not persistent.
+</p><ul>
+<li> <a href="bfdf9875-69c4-43d2-978c-b9c09d8ca6c2">Set the HTTPOnly Flag on Session Cookies</a></li>
+<li> <a href="9fec2088-1a0c-42ba-86c0-445afbc48f62">Set the Secure Flag on Session Cookies</a></li>
+<li> <a href="84b2da4a-0f64-4d64-80dc-0e91a3506ef4">Use TLS for All Sensitive Pages</a></li>
+<li> <a href="4a16cea2-b475-4371-9379-f3d27d43986a">Set the Domain And Path Values on Sessions Cookies</a></li>
+<li> <a href="00000000-0000-0000-0000-0000004e3194">Do Not Store Sensitive Data in Persistent Cookies</a></li>
+</ul><h1>Application Check</h1><p>To check for adequate protection of sensitive cookies, verify that the HTTPOnly flag is set, the Secure flag is set, sensitive cookies are sent only over TLS, strict domain and path values are set, and sensitive cookies are not persistent.
+</p><ul>
+<li> <a href="c2b6ad74-7e7f-4b4d-8a55-8b55933b54ac">The HTTPOnly Flag Is Set on Session Cookies</a></li>
+<li> <a href="96928660-b73e-497c-a98e-e4856ff895e6">The Secure Flag Is Set on Session Cookies</a></li>
+<li> <a href="7eea0be2-6c3b-4d4c-a6f1-4e3fbb3f4295">TLS Is Used for All Sensitive Pages</a></li>
+<li> <a href="1d600d77-9cca-4c20-bdb1-07707f83e676">The Domain And Path Values of Session Cookies Are Strict</a></li>
+<li> <a href="00000000-0000-0000-0000-000000152037">Sensitive Data Is Not Stored in Persistent Cookies</a></li>
+</ul><h1>Computer Based Training Links</h1><p>Use the following Computer Based Training courses for more background information about this type of vulnerabilities.
+</p><h2>Creating Secure PHP Code</h2><p>This course introduces best practices for developing secure PHP code. The course also identifies common PHP vulnerabilities that attackers can exploit to gain access to critical information. In addition, the course explains mitigation techniques that you can use to avoid common PHP vulnerabilities and write secure code. After completing this course, you will be able to describe the best practices for developing secure PHP code, explain common PHP vulnerabilities and learn mitigation techniques to avoid common PHP vulnerabilities and write secure code.
+</p><p>
+<a href="https://teamprofessor.absorbtraining.com/ninja/#/courses/course/127620">COD 315P Creating Secure PHP Code</a>
+</p><p>
+<em>Valid login credentials and enrollment in the course itself are required to access Team Professor content. If you need login credentials, please contact support@securityinnovation.com for help.</em>
+</p>

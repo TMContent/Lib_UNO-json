@@ -1,0 +1,9 @@
+<h2>Applies To</h2><ul><li> Web Applications</li>
+</ul><h2>What to Do</h2><p>Require TLS for all private pages.
+</p><h2>Why</h2><p>TLS should be used to protect all pages that handle sensitive data, including all pages that use authentication or authorization features, to prevent unauthorized information disclosure.
+</p><h2>How</h2><p>The simplest approach for enabling TLS for all sensitive pages is to use TLS for the entire site. Enabling TLS for the entire site may require additional computing resources, so for performance reasons, it may be acceptable to enable TLS only for sensitive pages. To enable TLS only for sensitive pages:
+</p><ol>
+<li> <strong>Identify sensitive pages.</strong> Make a list of all pages that handle sensitive information, including all pages that use authentication or authorization features.</li>
+<li> <strong>Enable TLS for each directory containing sensitive pages.</strong> The exact instructions for doing so are different for different web servers. Use the web server administration interface or edit the server configuration files to enable TLS for all folders containing sensitive pages.</li>
+<li> <strong>Redirect non-TLS requests to TLS-protected pages.</strong> The exact procedure for redirecting HTTP connections to HTTPS is different for different servers.</li>
+</ol>

@@ -1,0 +1,26 @@
+<h2>Applies To</h2><ul><li> All iOS applications.</li>
+</ul><h2>What to Check For</h2><p>Verify that Automatic Reference Counting is used.
+</p><h2>Why</h2><p>Using Automatic Reference Counting prevents use-after-free vulnerabilities.
+</p><h2>How to Check</h2><p>To verify that Automatic Reference Counting (ARC) is used:
+</p><ol>
+<li> <strong>Identify the SDK version.</strong> Automatic Reference Counting is only available in iOS SDK versions 5.0 and higher. If the SDK version is lower than that, then ARC is not being used.</li>
+<li> <strong>Check XCode settings.</strong> Examine XCode compiler options. Make sure that <em>Objective-C Automatic Reference Counting</em> is set to <em>yes</em>.</li>
+<li> <strong>(Optional) Examine the binary.</strong> Use the <em>otool</em> command to detect whether ARC symbols are present in a binary, like so:<br><tt> otool -I -v BinaryFile </tt><br>
+Examine the output of the <em>otool</em> command. The presence of at least some of the following symbols means that ARC is being used by the binary:<ul>
+<li> <em>_objc_release</em></li>
+<li> <em>_obc_retain</em></li>
+<li> <em>_objc_storeStrong</em></li>
+<li> <em>_objc_retainAutoreleaseReturnValue</em></li>
+<li> <em>_objc_autoreleaseReturnValue</em><br></li></ul></li>
+</ol><h2>How to Fix</h2><p>To enable Automatic Reference Counting (ARC):
+</p><ol>
+<li> <strong>Use a compatible SDK.</strong> Use iOS SDK 5.0 or higher in order to use Automatic Reference Counting.</li>
+<li> <strong>Launch XCode.</strong> Open the XCode environment.</li>
+<li> <strong>Enable Automatic Reference Counting.</strong> Set the compiler option <em>Objective-C Automatic Reference Counting</em> to <em>yes</em>.</li>
+</ol><h2>Memory Management Guidelines</h2><ul><li> <a href="00000000-0000-0000-0000-000000112fc5">Compile Applications with Stack Cookies Enabled</a></li>
+<li> <a href="00000000-0000-0000-0000-0000008d3865">Do Not Reference Freed Objects</a></li>
+<li> <a href="00000000-0000-0000-0000-000000798d06">Use Automatic Reference Counting</a></li>
+</ul><h2>Memory Management Checklists</h2><ul><li> <a href="00000000-0000-0000-0000-000000841cc6">Applications Are Compiled with Stack Cookies Enabled</a></li>
+<li> <a href="00000000-0000-0000-0000-000000842659">Freed Objects Are Not Referenced</a></li>
+<li> <a href="00000000-0000-0000-0000-000000189cf8">Automatic Reference Counting Is Used</a></li>
+</ul>

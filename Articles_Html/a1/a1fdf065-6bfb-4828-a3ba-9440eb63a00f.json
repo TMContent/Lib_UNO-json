@@ -1,0 +1,418 @@
+{
+  "id": "a1fdf065-6bfb-4828-a3ba-9440eb63a00f",
+  "checksum": "96050faf94f9b9a0ddf4af92ceb09c4a",
+  "words": {
+    "description": [
+      "h1"
+    ],
+    "use": [
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "structured": [
+      "p",
+      "title"
+    ],
+    "exception-handling": [
+      "p"
+    ],
+    "to": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "title"
+    ],
+    "avoid": [
+      "p"
+    ],
+    "unhandled": [
+      "p"
+    ],
+    "exceptions": [
+      "p"
+    ],
+    "finally": [
+      "p",
+      "p",
+      "b",
+      "b"
+    ],
+    "blocks": [
+      "p"
+    ],
+    "ensure": [
+      "p",
+      "p",
+      "pre"
+    ],
+    "that": [
+      "p",
+      "p",
+      "pre",
+      "pre"
+    ],
+    "resources": [
+      "p"
+    ],
+    "are": [
+      "p",
+      "p",
+      "p"
+    ],
+    "released": [
+      "p"
+    ],
+    "files": [
+      "p"
+    ],
+    "closed": [
+      "p",
+      "p"
+    ],
+    "and": [
+      "p"
+    ],
+    "objects": [
+      "p"
+    ],
+    "disposed": [
+      "p"
+    ],
+    "of&#8212regardless": [
+      "p"
+    ],
+    "of": [
+      "p",
+      "p",
+      "p"
+    ],
+    "whether": [
+      "p"
+    ],
+    "an": [
+      "p",
+      "pre"
+    ],
+    "exception": [
+      "p",
+      "pre",
+      "p",
+      "pre",
+      "title"
+    ],
+    "occurs": [
+      "p"
+    ],
+    "the": [
+      "p",
+      "pre",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "following": [
+      "p",
+      "p"
+    ],
+    "code": [
+      "p",
+      "p"
+    ],
+    "example": [
+      "p",
+      "p"
+    ],
+    "shows": [
+      "p"
+    ],
+    "a": [
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "block": [
+      "p",
+      "p"
+    ],
+    "database": [
+      "p"
+    ],
+    "connection": [
+      "p",
+      "pre"
+    ],
+    "is": [
+      "p",
+      "pre"
+    ],
+    "promptly": [
+      "p"
+    ],
+    "using": [
+      "pre"
+    ],
+    "systemdata.sqlclient;using": [
+      "pre"
+    ],
+    "systemsecurity;sqlconnection": [
+      "pre"
+    ],
+    "conn": [
+      "pre"
+    ],
+    "=": [
+      "pre",
+      "pre"
+    ],
+    "new": [
+      "pre"
+    ],
+    "sqlconnection\"...\");try&#123;": [
+      "pre"
+    ],
+    "connopen();": [
+      "pre"
+    ],
+    "//": [
+      "pre",
+      "pre",
+      "pre",
+      "pre"
+    ],
+    "do": [
+      "pre"
+    ],
+    "some": [
+      "pre"
+    ],
+    "operation": [
+      "pre"
+    ],
+    "might": [
+      "pre"
+    ],
+    "cause": [
+      "pre"
+    ],
+    "calling": [
+      "pre"
+    ],
+    "close": [
+      "pre"
+    ],
+    "as": [
+      "pre",
+      "pre",
+      "p"
+    ],
+    "early": [
+      "pre"
+    ],
+    "possible": [
+      "pre"
+    ],
+    "connclose();": [
+      "pre",
+      "pre"
+    ],
+    "..": [
+      "pre"
+    ],
+    "other": [
+      "pre",
+      "pre"
+    ],
+    "potentially": [
+      "pre"
+    ],
+    "long": [
+      "pre"
+    ],
+    "operations&#125;finally&#123;": [
+      "pre"
+    ],
+    "if": [
+      "pre"
+    ],
+    "conn.state==connectionstate.open)": [
+      "pre"
+    ],
+    "&#9//": [
+      "pre"
+    ],
+    "closed&#9;&#125;": [
+      "pre"
+    ],
+    "help": [
+      "p"
+    ],
+    "diagnose": [
+      "p",
+      "p"
+    ],
+    "security": [
+      "p"
+    ],
+    "issues": [
+      "p"
+    ],
+    "consider": [
+      "p",
+      "p"
+    ],
+    "adding": [
+      "p"
+    ],
+    "catch": [
+      "p",
+      "b"
+    ],
+    "for": [
+      "p"
+    ],
+    "securityexception": [
+      "p",
+      "p",
+      "b",
+      "b"
+    ],
+    "class": [
+      "p"
+    ],
+    "has": [
+      "p"
+    ],
+    "been": [
+      "p"
+    ],
+    "enhanced": [
+      "p"
+    ],
+    "provide": [
+      "p"
+    ],
+    "more": [
+      "p"
+    ],
+    "information": [
+      "p",
+      "pre"
+    ],
+    "in": [
+      "p",
+      "p"
+    ],
+    "case": [
+      "p"
+    ],
+    "failed": [
+      "p"
+    ],
+    "permission": [
+      "p"
+    ],
+    "demand": [
+      "p"
+    ],
+    "additionally": [
+      "p"
+    ],
+    "role-based": [
+      "p"
+    ],
+    "access": [
+      "p"
+    ],
+    "or": [
+      "p"
+    ],
+    "identity": [
+      "p",
+      "p",
+      "pre"
+    ],
+    "problems": [
+      "p"
+    ],
+    "logging": [
+      "p"
+    ],
+    "at": [
+      "p"
+    ],
+    "time": [
+      "p"
+    ],
+    "shown": [
+      "p"
+    ],
+    "catchexception": [
+      "pre"
+    ],
+    "ex&#123;...": [
+      "pre"
+    ],
+    "log": [
+      "pre"
+    ],
+    "current": [
+      "pre"
+    ],
+    "together": [
+      "pre"
+    ],
+    "with": [
+      "pre"
+    ],
+    "windowsidentity": [
+      "pre"
+    ],
+    "wid": [
+      "pre"
+    ],
+    "windowsidentitygetcurrent();...&#125;&nbsp;": [
+      "pre"
+    ],
+    "adapted": [
+      "p"
+    ],
+    "from": [
+      "p"
+    ],
+    "microsoft": [
+      "p"
+    ],
+    "patterns": [
+      "p"
+    ],
+    "&": [
+      "p"
+    ],
+    "practices": [
+      "p"
+    ],
+    "guidance": [
+      "p"
+    ],
+    "sink]": [
+      "title"
+    ],
+    "how": [
+      "title"
+    ],
+    "handling": [
+      "title"
+    ]
+  },
+  "tags": {},
+  "links": []
+}

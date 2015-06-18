@@ -1,0 +1,22 @@
+<h1>What to Do</h1>
+  <p>Require TLS for all private pages.</p>
+  <h1>Why</h1>
+  <p>TLS should be used to protect all pages that handle sensitive data, including all pages that use authentication or authorization features, to prevent unauthorized information disclosure.</p>
+  <h1>When</h1>
+  <p>Use TLS to secure all private pages.</p>
+  <h1>How</h1>
+  <p>To enable TLS on all sensitive pages:</p>
+  <ol>
+    <li>
+      <p>
+        <strong>Identify sensitive pages.</strong> Make a list of all pages that handle sensitive information, including all pages that use authentication or authorization features.</p>
+      <li>
+        <p>
+          <strong>Enable a HTTPS binding for the site.</strong> Start the "<em>Internet Information Services (IIS) Manager</em>". Right-click on the site and select "<em>Edit bindings...</em>". Add a binding of the "<em>https</em>" type.</p>
+        <li>
+          <p>
+            <strong>Enable TLS for each folder containing sensitive pages.</strong> Start the "<em>Internet Information Services (IIS) Manager</em>". Navigate the folders with sensitive pages. Double-click on the SSL icon in the right pane and enable TLS for the folder. </p>
+        </li>
+      </li>
+    </li>
+  </ol>

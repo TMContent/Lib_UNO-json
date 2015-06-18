@@ -1,0 +1,15 @@
+<h2>Applies To</h2><ul><li> PHP</li>
+</ul><h2>What to Check For</h2><p>Verify that authentication credentials are sent over encrypted tunnels.
+</p><h2>Why</h2><p>Using encrypted communication tunnels prevents the credentials from being sniffed or tampered with as they are transmitted over the network. 
+</p><h2>How to Check</h2><p>To verify that authentication credentials are protected in transit:
+</p><ol>
+<li> <strong>Verify that the server uses TLS for authentication.</strong> Connect to the application and attempt to authenticate using plain HTTP and HTTPS. Make sure that it is only possible to authenticate when using the HTTPS protocol. The authentication page should always redirect to the HTTPS version when accessed via plain HTTP.</li>
+<li> <strong>Verify that the certificate is valid.</strong> Use the web browser to examine the certificate used by the application during authentication to make sure that the certificate is valid. A browser can be intentionally misconfigured to accept invalid certificates, but most mainstream browsers in their default configuration should be able to determine whether a certificate is valid.</li>
+</ol>
+<h2>How to Fix</h2><p>To protect authentication credentials in transit:
+</p><ol>
+<li> <strong>Get a valid certificate.</strong> Purchase a valid certificate from a trusted Certificate Authority. This must be done for each separate domain that hosts the application.</li>
+<li> <strong>Set up the server to use TLS.</strong> Configuring the server to use TLS is different for different server platforms, but this process is always very well documented. Consult documentation or search the Internet for instructions on how to set up your server(s) to use TLS. The valid certificate that you purchased is going to be necessary for setting up TLS properly.</li>
+<li> <strong>Configure the server to use TLS for the application.</strong> The server has to also be configured to use TLS for your specific application. Again, follow the instructions for your platform to make sure that TLS is used by your application. It is best to use TLS for the entire application and to redirect plain HTTP requests to the TLS version of the site.</li>
+<li> <strong>Document the TLS requirement.</strong> Since configuring the server to use TLS for the application is ultimately done by the end-user, the developers might not have direct control over whether that is actually being done. It is recommended to document the fact that TLS should be used by the application for security reasons and include this together with the rest of the application documentation, for example in the installation instructions.</li>
+</ol>

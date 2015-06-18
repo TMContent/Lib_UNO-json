@@ -1,0 +1,13 @@
+<h2>Applies To</h2><ul><li> C++</li>
+</ul><h2>What to Check For</h2><p>Make sure that the length of XML data is validated before XML data is passed to the parser.
+</p><h2>Why</h2><p>Validate the length of XML data to prevent multiple types of XML denial-of-service attacks. Most types of XML denial-of-service attacks can either be prevented or mitigated by limiting the size of XML data that is passed to the parser.
+</p><h2>How to Check</h2><p>To make sure that the length of XML data is validated before XML data is passed to the parser:
+</p><ol>
+<li> <strong>Find all code that parses XML data.</strong> Determine what XML parser your application uses. Search application code for all references to the XML parser. Make a spreadsheet about all the code that passes XML data to the parser.</li>
+<li> <strong>Make sure that the length of XML data is validated.</strong> Examine the code that sends XML data to the parser. Make sure that the length of the XML data is checked to be less than the maximum reasonable amount before it is sent to the parser.</li>
+</ol><h2>How to Fix</h2><p>To validate the length of XML data:
+</p><ol>
+<li> <strong>Find all code that parses XML data.</strong> Determine what XML parser your application uses. Search application code for all references to the XML parser. Make a spreadsheet about all the code that passes XML data to the parser.</li>
+<li> <strong>Determine valid lengths of XML data.</strong> For each piece of code that passes XML data to the parser, determine what the maximum reasonable length of the XML data is. Record this information in the spreadsheet.</li>
+<li> <strong>Validate the length of XML data before parsing.</strong> For each piece of code that passes XML data to the parser, add code that makes sure that the XML data does not exceed the length specified in the previous step of this guideline. If the XML data exceeds the maximum reasonable length, it should not be passed to the parser and an error condition should be triggered.</li>
+</ol>

@@ -1,0 +1,9 @@
+<h2>Applies To</h2><ul><li> Web Applications</li>
+</ul><h2>What to Do</h2><p>Avoid storing sensitive data in cookies. If have to, make sure the cookie is encrypted and is not persisted on the client computer. 
+</p><h2>Why</h2><p>If you store plaintext data, the end user is able to see and modify the data. If you encrypt the data, key management can be a problem. hence the better option is not to store sensitive data in persistent cookies. 
+</p><h2>When</h2><p>Avoid storing sensitive data in persistent cookies. If you store plaintext data, the end user is able to see and modify the data. If you encrypt the data, key management can be a problem. For example, if the key used to encrypt the data in the cookie has expired and been recycled, the new key cannot decrypt the persistent cookie passed by the browser from the client.
+</p><h2>How</h2><p>To prevent storing sensitive data in persistent cookies:
+</p><ol>
+<li> <strong>Identify all cookies used by the application.</strong> Search application code for references to setcookie. This should help find all the cookies created by the application.</li>
+<li> <strong>Find code that handles sensitive cookies.</strong> Examine code that handles each cookie and see if it stores sensitive information in the cookie.</li>
+<li> <strong>Don't make sensitive cookies persistent.</strong> Review all code that handles sensitive cookies. Make sure that the expire property of sensitive cookies is never set, because that makes them persistent. Remove code that sets the expire property of sensitive cookies, if such code exists.</li></ol>

@@ -1,0 +1,18 @@
+<h2>What to Check For</h2><p>Verify that strong password requirements are enforced.
+</p><h2>Why</h2><p>Requiring strong passwords prevents weak passwords from being used. Using strong passwords makes the application more resilient to password guessing attacks.
+</p><h2>How to Check</h2><p>To verify that strong password requirements are enforced:
+</p><ol>
+<li> <strong>Identify application requirements.</strong> Determine whether your application needs to have a customizable password complexity policy or if it's okay to hard-code password complexity requirements. Define secure defaults for password complexity options.</li>
+<li> <strong>Identify password changing code.</strong> Review your application to find code that is responsible for changing user passwords.</li>
+<li> <strong>Verify that password length is validated.</strong> Verify that password changing code checks the user-supplied password against defined minimum and maximum allowed password lengths.</li>
+<li> <strong>Verify that password complexity is validated.</strong> Verify that password changing code checks the user-supplied password to make sure it includes lower-case characters, capital letters, numbers, and special characters to match application requirements.</li>
+</ol><h2>How to Fix</h2><p>To enforce strong password requirements:
+</p><ol>
+<li> <strong>Identify application requirements.</strong> Determine whether your application needs to have a customizable password complexity policy or if it's okay to hard-code password complexity requirements. Define secure defaults for password complexity options.</li>
+<li> <strong>Identify password changing code.</strong> Review your application to find code that is responsible for changing user passwords.</li>
+<li> <strong>(Optional) Let the user enter the password twice.</strong> It is a common practice to allow the user to enter the password twice to make sure that the user enters the new password correctly. This is important because the password fields are typically masked, so the user cannot see his input, and changing the password to an unintended one may leave the user locked out of his account. If this is implemented in your application, the password changing code should validate the two entered passwords to make sure they match.</li>
+<li> <strong>Check password length.</strong> Add code to the password changing function to check the password length for minimum and maximum limits defined by policy.</li>
+<li> <strong>Check the password for numbers.</strong> Add code to the password changing function to check the password for numbers. </li>
+<li> <strong>Check the password for lower-case letters.</strong> Add code to the password changing function to check the password for lower-case letters.</li>
+<li> <strong>Check the password for capital letters.</strong> Add code to the password changing function to check the password for capital letters.</li>
+<li> <strong>(Optional) Check the password for symbols.</strong> If your application requires it, add code to the password changing function to check the password for symbols. </li></ol>

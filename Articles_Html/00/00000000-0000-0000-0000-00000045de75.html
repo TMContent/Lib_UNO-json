@@ -1,0 +1,20 @@
+<h2>What to Check For</h2><p>Verify that applications are signed.
+</p><h2>Why</h2><p>Signing the application binary helps verify that the application came from a trusted source.
+</p><h2>How to Check</h2><p>If applications are not signed properly, they will not run. To verify that an application is signed:
+</p><ol>
+<li> <strong>Install the application.</strong> Follow the standard procedure to install the application.</li>
+<li> <strong>Run the application.</strong> Once the application is installed, launch it. If the application runs, then it has been signed successfully.</li>
+</ol><h2>How to Fix</h2><p>To sign Android applications:
+</p><ol>
+<li> <strong>Generate a private key.</strong> Use the <em>keytool</em> command to generate a suitable private key. The key has to represent the entity responsible for the application. The key has to have a validity period that ends after 22 October 2033. The key should be different from the debug key. It is okay for the key to be self-signed. More information about using the <em>keytool</em> command is available at the link in the Additional Resources section.</li>
+<li> <strong>Protect the private key.</strong> The private key should be kept secret to prevent attackers from signing malicious applications with it. Applications that are signed with the same private key appear to come from the same source and a crafty attacker may take advantage of that by passing malicious applications off as yours.</li>
+<li> <strong>Build the application.</strong> Build the application in release mode. The application is not signed automatically. Export the unsigned APK package.</li>
+<li> <strong>Sign the application.</strong> Use the <em>Jarsigner</em> tool to sign the application package.  More information about using the <em>Jarsigner</em> command is available at the link in the Additional Resources section.</li>
+<li> <strong>Align the package.</strong> Use the <em>zipalign</em> command to align the signed APK. More information about using the <em>zipalign</em> command is available at the link in the Additional Resources section.</li>
+</ol><h2>Code Integrity Guidelines</h2><ul><li> <a href="00000000-0000-0000-0000-0000004ef2c8">Sign Android Application Updates</a></li>
+<li> <a href="00000000-0000-0000-0000-0000003c4a74">Sign Android Applications</a></li>
+<li> <a href="00000000-0000-0000-0000-00000038da94">Obfuscate Code with ProGuard</a></li>
+</ul><h2>Code Integrity Checklists</h2><ul><li> <a href="00000000-0000-0000-0000-0000007571e5">Android Application Updates Are Signed</a></li>
+<li> <a href="00000000-0000-0000-0000-00000045de75">Android Applications Are Signed</a></li>
+<li> <a href="00000000-0000-0000-0000-0000008e33ab">Code Is Obfuscated with ProGuard</a></li>
+</ul><h2>Additional Resources</h2><ul><li> For more information about signing Android applications, please see <a href="http://developer.android.com/tools/publishing/app-signing.html">http://developer.android.com/tools/publishing/app-signing.html</a></li></ul>

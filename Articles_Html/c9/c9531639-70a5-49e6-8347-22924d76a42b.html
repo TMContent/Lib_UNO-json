@@ -1,0 +1,10 @@
+<h1>Applies to</h1>
+  <p>C&#43;&#43;</p>
+  <h1>What to Do</h1>
+  <p>Set pointers to null after deallocation to prevent dangling pointers.</p>
+  <h1>Why</h1>
+  <p>Deallocating or deleting objects without setting the values of corresponding objects to null may result in dangling pointer vulnerabilities, if those pointers are later used again.</p>
+  <h1>When</h1>
+  <p>Set pointers to null after deallocating memory assigned to the corresponding objects. In practice, this means after calling the free() function or the delete operator.</p>
+  <h1>How</h1>
+  <p>Search for calls to the free() function or the delete operator. Add code that sets the freed pointer to null after each call to the free() function or the delete operator.</p>

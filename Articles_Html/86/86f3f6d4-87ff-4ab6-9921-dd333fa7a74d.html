@@ -1,0 +1,17 @@
+<h1>Applies to</h1>
+  <ul>
+    <li>Microsoft® Windows Communication Foundation (WCF) 3.5 </li>
+    <li>Microsoft Visual Studio® 2008</li>
+  </ul>
+  <h1>Description</h1>
+  <p>If you are using certificates authentication you can map certificates to Windows accounts to enable authentication and authorization based upon the Windows account.</p>
+  <p>You can map an X509 certificate to windows account by setting the <strong>mapClientCertificateToWindowsAccount</strong> property to true. By default, when using the certificate client credential type on bindings, the certificate is not mapped to Windows accounts. </p>
+  <p>Use the following steps to map certificates to Windows accounts:</p>
+  <ol>
+    <li>Select IIS vs Active Directory Mapping.<ol><li>IIS Mapping is useful if you need only a limited number of mappings or a different mapping on each WCF Service.</li><li>Use Active Directory mapping when the account mappings are identical on all IIS servers. Active Directory mapping is easier to maintain than IIS mapping because you only have to create the mapping in one location.</li></ol></li>
+    <li>Configure the IIS / Active directory for mapping the certificates.</li>
+    <li>Once you have enabled the client certificate mapping feature, set the <strong>mapClientCertificateToWindowsAccount</strong> property to true. <pre>&lt;serviceBehaviors&gt;<br />  &lt;behavior name="MyServiceBehaviorForWebHttp"&gt;</pre><pre>     &lt;serviceCredentials&gt;<br />      &lt;clientCertificate&gt;<br />       &lt;authentication mapClientCertificateToWindowsAccount="true" /&gt;<br />      &lt;/clientCertificate&gt;<br />     &lt;/serviceCredentials&gt;</pre><pre>&lt;/behavior&gt;<br />&lt;/serviceBehaviors&gt;</pre></li>
+  </ol>
+  <br />
+  <hr />
+  <p>Adapted from Microsoft patterns & practices guidance.</p>

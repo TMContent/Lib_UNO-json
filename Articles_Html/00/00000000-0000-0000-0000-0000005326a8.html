@@ -1,0 +1,28 @@
+<h2>Applies To</h2><p>Applications written in HTML5 that use Websockets.
+</p>
+<h2>What to Do</h2><p>Use the latest WebSockets standard, Internet Engineering Task Force (IETF) Request for Comments (RFC) 6455.  Do not use versions hixie-76/hybi-00 and below.
+</p><h2>Why</h2><p>Versions hixie-76/hybi-00 and below are considered insecure. Using the latest RFC 6455 standard can reduce the risk of vulnerabilities such as cache poisoning.
+</p><h2>When</h2><p>Use this guideline in HTML5 applications that use WebSockets. 
+</p><h2>How</h2><p>To use the latest RFC 6455 standard to prevent WebSocket stealth attacks:
+</p><ol>
+<li> <strong>Upgrade the WebSockets server’s libraries with the latest stable release that uses the RFC 6455 standard.</strong> For example, Tornado, a popular web framework written in Python, has WebSockets libraries that many use as part of their WebSockets server implementation. If you are using Tornado, upgrade to at least Tornado version 2.2, as that version and later provide support for RFC 6455.</li>
+<li> <strong>Ensure that backward compatibility is not enabled.</strong> A server implementation that supports RFC 6455 might be configured to be backward compatible with older WebSockets versions in order to support older browsers. In the case of Tornado, backward compatibility is enabled with a line of code: <tt>WebSocketHandler.allow_draft76().</tt> Search the server code or configuration to see if backward compatibility is enabled. If it is, disable it by removing (or commenting out) that line of code. This will ensure the server only allows the RFC 6455 protocol.</li>
+</ol><h2>Problem Example</h2><p>A chat application uses WebSockets to allow its users to communicate in real-time. The application is written using Tornado version 2.2, a web framework written for the Python language that includes a WebSockets library. While this version provides support for RFC 6455, the developers have enabled backward compatibility for users of older browsers by adding the following line of Python code to the application:
+</p><pre>WebSocketHandler.allow_draft76()
+</pre><p>
+<br></p><h2>Solution Example</h2><p>The chat application is made more secure by removing the following code:
+</p><pre>WebSocketHandler.allow_draft76() 
+</pre>
+<h2>WebSocket Guidelines</h2><ul><li> <a href="00000000-0000-0000-0000-000000869806">Validate Data Coming from WebSockets</a></li>
+<li> <a href="00000000-0000-0000-0000-00000093dea4">Check the Origin Header in the WebSocket Handshake</a></li>
+<li> <a href="00000000-0000-0000-0000-0000005f2e4a">Use TLS to Encrypt WebSocket Connections</a></li>
+<li> <a href="00000000-0000-0000-0000-000000736a21">Check the Origin Attribute of WebSocket Messages</a></li>
+<li> <a href="00000000-0000-0000-0000-0000005326a8">Use the Latest WebSocket RFC 6455 Standard</a></li>
+<li> <a href="00000000-0000-0000-0000-00000085bc2f">Do Not Tunnel TCP via WebSockets</a></li>
+</ul><h2>WebSocket Checklist Items</h2><ul><li> <a href="00000000-0000-0000-0000-00000086537e">Data Coming from WebSockets Is Validated</a></li>
+<li> <a href="00000000-0000-0000-0000-00000077e316">The Origin Header in WebSocket Handshake is Checked</a></li>
+<li> <a href="bd870268-f104-4f6f-ba0d-6628dc34eb2a">TLS is Used to Encrypt WebSocket Connections</a></li>
+<li> <a href="00000000-0000-0000-0000-0000002f39d7">The Origin Attribute of WebSocket Messages Is Checked</a></li>
+<li> <a href="18d5564d-00a4-4afe-a853-707269df2566">Latest RFC 6455 Standard is Used</a></li>
+<li> <a href="00000000-0000-0000-0000-00000091ce5a">TCP Is Not Tunneled via WebSockets</a></li>
+</ul>

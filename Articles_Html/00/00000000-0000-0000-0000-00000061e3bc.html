@@ -1,0 +1,9 @@
+<h2>Applies To</h2><ul><li> Java</li>
+</ul><h2>What to Check For</h2><p>Verify that the default <em>HttpSession</em> object is used to identify sessions.
+</p><h2>How to Check</h2><p>To make sure that the default <em>HttpSession</em> object is used to identify sessions:
+</p> <ol>
+<li> <strong>Load the application.</strong> Open the application in a web browser. Log in to the application. Any other way to start a session is okay, but logging in is a pretty sure way to start a session for any reasonably designed application.</li>
+<li> <strong>Examine the session identifier.</strong> Use the browser plug-in or settings page that allows viewing the cookies. Make sure the <em>JSESSIONID</em> cookie is present. This cookie indicates that <em>HttpSession</em> object is used. Absence of this cookie should be alarming.</li>
+<li> <strong>(Optional) Review application code.</strong> The presence of the <em>JSESSIONID</em> session cookie is a strong indicator that the default session ID generation algorithm is being used. To be absolutely sure, review the application code that handles session state. Make sure that when session gets established <em>HttpServletRequest.getSession</em> method is used to start a new session. </li>
+</ol><h2>How to Fix</h2><p>Java <em>HttpSession</em> interface uses strong session IDs by default. Please, make sure that your application uses the default <em>HttpSession</em> object. Rewrite the application session state handling code, if necessary, to use the default <em>HttpServletRequest.getSession</em> to generate the new session ID. 
+</p>

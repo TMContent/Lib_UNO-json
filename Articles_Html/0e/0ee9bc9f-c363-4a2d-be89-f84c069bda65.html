@@ -1,0 +1,33 @@
+<h2>Applies To</h2><ul><li> HTML5</li>
+<li> Server-side</li>
+</ul><h2>What to Check For</h2><p>Verify that input that is going to be included in output in HTML contexts is encoded. 
+</p><h2>Why</h2><p>Encoding untrusted data before displaying it prevents cross-site scripting (XSS) vulnerabilities. 
+</p><h2>How to Check</h2><p>To check if input included in output is encoded: 
+</p><ol>
+<li> <strong>Identify all pages that display user input.</strong> Enumerate all the pages used by the application. Then, make a list of all the pages that display input that comes from untrusted sources.</li>
+<li> <strong>Identify all user input that is displayed in HTML contexts.</strong> For each page that displays untrusted data, make a list of all untrusted data that is displayed and the context in which it is displayed. Most commonly, untrusted data is displayed as HTML. Other possibilities include displaying user input inside JavaScript or CSS</li>
+<li> <strong>Check the encoding functions for each context.</strong> Different platforms have different capabilities for encoding output. You might have to write your own encoding functions or to use third-party libraries to encode output properly. Identify these functions within your application and note if they are not present.</li>
+<li> <strong>Identify functions that display untrusted data.</strong> For each instance of untrusted data being displayed by your application, identify the function that outputs the untrusted data. Make a list of these functions and note the code that is directly responsible for displaying untrusted data.</li>
+<li> <strong>Examine the functions that display untrusted user data.</strong> Focus on the code that is directly responsible for displaying untrusted data. Make sure that all untrusted data is encoded before being displayed. Make sure that data is encoded using the correct encoding method.</li>
+</ol><h2>How to Fix</h2><p>To encode input included in output: 
+</p><ol>
+<li> <strong>Identify all pages that display user input.</strong> Enumerate all the pages used by the application. Then, identify and list all pages that display input that comes from untrusted sources.</li>
+<li> <strong>Identify all user input that is displayed in HTML contexts.</strong> For each page that displays untrusted data, make a list of all untrusted data that is displayed and the context in which it is displayed. Most commonly, untrusted data is displayed as HTML. Other possibilities include displaying user input inside JavaScript or CSS.</li>
+<li> <strong>Implement encoding functions for corresponding contexts.</strong> Different platforms have different capabilities for encoding output. You may need to write your own encoding functions or use third-party libraries to encode output properly.</li>
+<li> <strong>Identify functions that display untrusted user data.</strong> For each instance of untrusted data being displayed by your application, identify the function that outputs the untrusted data. Make a list of these functions and note the code that is directly responsible for displaying untrusted data.</li>
+<li> <strong>To functions that display untrusted data, add calls to encoding functions.</strong> Add calls to encoding functions in a way that all untrusted data is encoded before being displayed. Make sure that output data is encoded correctly for its respective context.</li>
+</ol><h2>Essential Server-side Security Guidelines</h2><ul><li> <a href="e2c5d605-2b34-4e1c-80aa-211a0ad7b64f">Validate All Input</a></li>
+<li> <a href="397488da-ce91-4768-9ad9-1e6928980d72">Use Prepared Statements for SQL Queries</a></li>
+<li> <a href="496b6306-dca6-48b6-920e-67e768dbe334">Encode Input Included in Output</a></li>
+<li> <a href="45d61f0a-c4d3-44f0-93b1-d8205cd13fbe">Force Reauthentication when Executing Critical Functionality</a></li>
+<li> <a href="fdb460e6-5d18-4e35-a093-4b260155d79e">Include Unique Tokens in HTTP Requests</a></li>
+<li> <a href="00000000-0000-0000-0000-0000007ecacc">Use Role-based Authorization</a></li>
+<li> <a href="1445abaf-4bb9-474c-b7e4-7bf58fe80f39">URL-Encode Data in HTTP Response Headers</a></li>
+</ul><h2>Essential Server-side Security Checklist Items</h2><ul><li> <a href="8dfa8088-a6cb-4062-8a44-0df8f2bc1cc4">All Input Is Validated</a></li>
+<li> <a href="b5fb44c5-1702-42cf-b6be-894c511af7ac">Prepared Statements Are Used for SQL Queries</a></li>
+<li> <a href="0ee9bc9f-c363-4a2d-be89-f84c069bda65">Input Included in Output Is Encoded</a></li>
+<li> <a href="1c2b0859-c898-4f1c-b826-21392a7fc773">Reauthentication Is Enforced When Executing Critical Functionality</a></li>
+<li> <a href="a2ef2a76-e562-4dd0-af9e-a6eb2b76c0d3">Unique Tokens Are Included in HTTP Requests</a></li>
+<li> <a href="00000000-0000-0000-0000-0000008495ec">Role-based Authorization Is Used</a></li>
+<li> <a href="3eb26600-9126-493a-a3cf-9d4b9815efc9">Data in HTTP Response Headers Is URL-Encoded</a></li>
+</ul>

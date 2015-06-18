@@ -1,0 +1,36 @@
+<h1>Applies to</h1>
+  <ul>
+    <li>C&#43;&#43;</li>
+  </ul>
+  <h1>What to Do</h1>
+  <p>Check for errors during memory allocation.</p>
+  <h1>Why</h1>
+  <p>If memory allocation fails and the error is not handled, the result may be unpredictable and dangerous behavior of the program.</p>
+  <h1>When</h1>
+  <p>Check for and handle errors whenever allocating memory.</p>
+  <h1>How</h1>
+  <p>Perform the following actions to assure that errors during memory allocation are handled:</p>
+  <ol>
+    <li>
+      <p>
+        <strong>Identify memory allocation code.</strong> Find all code that allocates memory for objects. Search for calloc(), malloc(), realloc() function calls, and the new operator.</p>
+      <li>
+        <p>
+          <strong>Check return values.</strong> Calloc(), malloc(), and realloc() return null pointers when they fail. Add code that checks the return values of these functions and handles error conditions appropriately.</p>
+        <li>
+          <p>
+            <strong>Handle exceptions.</strong> The new operator throws a std::bad_alloc exception when it fails. Add code that handles the std::bad_alloc exception when the new operator is used.</p>
+        </li>
+      </li>
+    </li>
+  </ol>
+  <h1>Additional Resources</h1>
+  <ul>
+    <li>For more information about checking errors during memory allocation, please see <a href="https://www.securecoding.cert.org/confluence/display/cplusplus/MEM32-CPP.&#43;Detect&#43;and&#43;handle&#43;memory&#43;allocation&#43;errors">https://www.securecoding.cert.org/confluence/display/cplusplus/MEM32-CPP.&#43;Detect&#43;and&#43;handle&#43;memory&#43;allocation&#43;errors</a></li>
+  </ul>
+  <h1>Related Items</h1>
+  <ul>
+    <li>
+      <a href="/article/e4a3052e-13f2-4062-9a83-49185ff14b0a">Centralize Error Handling</a>
+    </li>
+  </ul>

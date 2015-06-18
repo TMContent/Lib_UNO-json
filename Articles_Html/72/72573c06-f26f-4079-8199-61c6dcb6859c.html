@@ -1,0 +1,23 @@
+<h1>Applies To</h1>
+  <ul>
+    <li>ASP.NET 4.0</li>
+  </ul>
+  <h1>What to Do</h1>
+  <p>Make the session expire when the user logs out.</p>
+  <h1>Why</h1>
+  <p>Making the session expire when the user logs out makes it harder for an attacker to hijack the session.</p>
+  <h1>When</h1>
+  <p>Make sessions expire upon user logout in all applications that implement authentication.</p>
+  <h1>How</h1>
+  <p>To make sessions expire when users log out:</p>
+  <ol>
+    <li>
+      <p>
+        <strong>Identify logout functionality.</strong> Find code that is responsible for the logout functionality.</p>
+      <li>
+        <p>
+          <strong>Add code to make sessions expire.</strong> Add the following code to the logout function to make the session expire:</p>
+        <pre>Response.Cookies.Add(new HttpCookie("ASP.NET_SessionId", ""));<br />Session.Abandon();</pre>
+      </li>
+    </li>
+  </ol>

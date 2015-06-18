@@ -1,0 +1,54 @@
+<h2>Applies To</h2><ul><li> Android</li>
+</ul><h2>What to Do</h2><p>Create a randomly generated globally unique identifier (GUID) for the application using the Java UUID class. Do not use elements such as phone number, media access control address, or Android ID. These device elements require additional permissions, are not always reliable, and in most cases are unnecessary.
+</p><h2>Why</h2><p>The UUID class does not require additional permissions and is highly reliable. In addition, it does not use personal information, which helps avoid an overly permissive application that opens unnecessary security holes. UUID also produces an identifier that has a high level of uniqueness. In contrast, using device information such as a phone number or Android ID to identify an installation is unreliable and can negatively affect user privacy. Phone numbers are especially problematic, because they survive device wipes, are not unique to a specific installation, and constitute personal data. They also will not appear on Wi-Fi–only devices. 
+</p><h2>When</h2><p>Whenever an application requires a unique identifier for its installation, use the UUID class to generate it. For example, an application may require an identifier if you want to count the number of unique installations for statistical purposes, or if you want  to tie such an identifier to an actual user without having to store personal information on the device itself. (Note that most applications, especially ones that interact solely on the device, will not need a unique identifier.)
+</p><h2>How</h2><p>To generate unique GUIDs by using UUID:
+</p><ol>
+<li> <strong>Upon installation, call the static method UUID.randomUUID() to create a 128-bit unique identifier.</strong> For most purposes, this identifier provides more than enough uniqueness. Note that you should not use a subset of the number except with the <em>UUID.randomUUID().getLeastSignificantBits()</em> or <em>UUID.randomUUID().getMostSignificantBits()</em> methods. For instance, do not take the first 8 digits of the returned long value and store that as your unique value, as the randomness can be significantly degraded when you do that.</li>
+<li> <strong>Store the GUID in a persistent location such as a SQLite database.</strong> Since the value will be 8 bytes in size, an INTEGER column will be able to store it. The application will call this column when it needs to retrieve or store the unique value. </li>
+<li> <strong>In the onCreate() method of the launcher activity, verify that the GUID value exists.</strong> If not, use UUID to create it and, then store the value in the SQLite database.</li>
+</ol><h2>Problem Example</h2><p>As the MyApp developer, you need a unique identifier so that a cloud-based database can track installations for license management. You use the phone number on the device. To retrieve it, you use the <em>TelephonyManager</em>:
+</p><pre>TelephonyManager tMgr = (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
+String mPhone= tMgr.getLine1Number();
+</pre><p>
+This method initially appears to work well as the company rolls out the MyApp application. After a few months, though, procurement notices that Wi-Fi–only devices are not appearing in the database. When a senior executive finds out that this is because the phone number is being used for installation identification, she becomes concerned that the company may be violating local privacy legislation, because these are personal, not work-owned, devices and contain personal phone numbers. In addition, the company may have an unknown number of licenses for which they cannot account.
+</p><h2>Solution Example</h2><p>Instead of using the device’s phone number, the application uses the UUID class to generate a unique GUID upon installation:
+</p><pre>long _id = UUID.randomUUID().getLeastSignificantBits();
+</pre><p>
+The application stores the long value in the SQLite database and retrieves it on demand through a database helper function. 
+</p><p>
+Assume a table called ID_TABLE that stores the value in a column called APP_ID.
+</p><pre>public String getAppId () {
+  String[] resultColumns = new String[] {APP_ID };
+  try {
+    Cursor allRows = db.query(ID_TABLE, resultColumns, null, null, null, null, null);
+    if (allRows.moveToFirst()){
+      return allRows.getLong(0);
+    }
+    else{
+      return Long.MIN_VALUE;
+    }
+  }
+  catch (SQLException e){
+    Log.i(getClass().getSimpleName(), “SQL Error” + e.getMessage();
+  }
+}
+</pre><p>
+The application includes this method in a class that extends <em>SQLiteOpenHelper</em>. Upon startup, the application will run this method to determine whether the ID already exists. If it doesn’t, the app creates the identifier using UUID and inserts it into the database with a method such as:
+</p><pre>public int insertId () {
+  try {
+    long _id = UUID.randomUUID().getLeastSignificantBits();
+    ContentValues values = new ContentValues();
+    values.put(COL_CODE, _id);
+    db.insert(ID_TABLE, null, values);
+    values.clear();
+    return 1;
+  }
+  catch (SQLException e){
+    Log.i(getClass().getSimpleName(), “SQL Error” + e.getMessage();
+    return -1;
+  }
+}
+</pre><p>
+In the event the application is uninstalled and reinstalled, the unique value will be regenerated through the <em>onCreate()</em> method of the launcher activity.
+</p>

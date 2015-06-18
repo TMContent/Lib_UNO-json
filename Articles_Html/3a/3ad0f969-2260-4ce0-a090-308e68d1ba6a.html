@@ -1,0 +1,16 @@
+<h1>What to Check For</h1>
+  <p>Check to ensure that APTCA usage is avoided, except where necessary as it increases the attack surface and exposes your code to partial trust callers.</p>
+  <p />
+  <h1>How to Fix</h1>
+  <p>You can override the link demand for full trust by adding the <b>AllowPartiallyTrustedCallersAttribute</b> (APTCA) to your assembly, as shown below, but you should do so only when it is absolutely necessary.</p>
+  <p>Use of APTCA increases the attack surface and exposes your code to partial trust callers.</p>
+  <p>Use APTCA only if both of the following conditions apply: </p>
+  <ul>
+    <li>You specifically want partially trusted callers to use your strong named assembly. For example, you might need an application running on a file share to access your assembly located in the global assembly cache. However, do not open up an attack surface with APTCA if you only want fully trusted callers to use your code. <li>You have performed a thorough security code review, and your code has been rigorously audited for security vulnerabilities. Examine the resource access and other privileged operations performed by your assembly, and consider authorizing access to these operations by using other code access security demands. </li></li>
+  </ul>
+  <p>The APTCA attribute is shown below.</p>
+  <div>
+    <pre> &#91;assembly: AllowPartiallyTrustedCallersAttribute()&#93;</pre>
+  </div>
+  <hr />
+  <p>Adapted from Microsoft patterns & practices guidance.</p>

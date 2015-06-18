@@ -1,0 +1,8 @@
+<h1>Description</h1>
+  <p>In .NET Framework you can only disable code access security temporarily. Temporarily disabling code access security can help you determine whether a problem is security related You can temporarily disable code access security by running CasPol.exe from a command line with the <b>-s off </b>switches, as shown here: </p>
+  <pre>CasPol.exe -s off </pre>
+  <p>This disables code access security temporarily while the CasPol process remains active. You can press ENTER when you want to re-enable code access security. When code access security is disabled, all code access demands succeed. </p>
+  <blockquote>
+    <b>Note</b>&nbsp;&nbsp;&nbsp;Disabling code access security opens your system to potential attack. You should only do this when debugging an application in a secured environment.</blockquote>
+  <hr />
+  <p>Adapted from Microsoft patterns & practices guidance.</p>

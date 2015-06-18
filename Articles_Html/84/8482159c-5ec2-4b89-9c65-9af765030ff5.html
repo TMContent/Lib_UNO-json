@@ -1,0 +1,51 @@
+<h1>Applies To</h1><p>Any application that restricts access to certain types of information, including configuration and deployment details.
+</p><h1>Description</h1><p>An information disclosure attack results in an application revealing sensitive information to the attacker. Examples of sensitive information include system-specific data such as overly descriptive error messages, source code, software distribution and version numbers, database information, passwords, machine names and file paths to other sensitive areas.
+</p><p>
+There are several methods that an attacker can use to get more information from web applications, such as directory indexing, path traversal, and reading source code or error messages and comments left behind by developers.
+</p><p>
+If the attacker can gain access to the binaries of the application (in the case of an installed client application), or through forceful browsing or other attacks (for a server application), the information disclosure attack surface becomes much larger. In this case the attacker can employ debuggers, de-compilers, hex editors, and other tools to search for secrets left in the application.
+</p><p>
+SQL injection and other similar query-based attacks, whether in a web application or in an installed client application, can also be considered a type of information disclosure attack, because it can be used to access sensitive information that is stored in a database.
+</p><h1>Impact</h1><ul><li>Confidentiality: An attacker gains access to sensitive information (such as passwords or social security numbers) which may be used to launch further exploits against the application, or which may be of direct value.</li>
+<li>Authentication: Through an error message that reveals too much information or a SQL injection exploit, an attacker may be able to figure out another user's ID and password, and log in as that user.</li>
+</ul><h1>Vulnerabilities</h1><ul><li>Improper lax permissions: Through forceful browsing, an attacker may be able to discover sensitive information that should not be available, such as source code, binaries, and backup files.</li>
+<li>Directory indexing left on: This can allow an attacker to freely browse an entire directory on a website, which can disclose all available files on the server.</li>
+<li>Storing sensitive data in plaintext: Storing sensitive data in plain or weakly encoded text can lead to an attacker discovering username/password pairs, cryptography keys, or other sensitive data.</li>
+<li>Detailed error messages: Propagation of SQL errors, exception handler errors, or stack traces does not help a legitimate user solve any problem--but it can drastically reduce the amount of time it takes an attacker to exploit a system.</li>
+<li>Comments left in code: The client downloads and has access to all client-side code. Any comments left in HTML, AJAX, or other script can be easily discovered.</li>
+<li>Hard-coded usernames and passwords: An attacker can open an application in a hex editor to see any hard coded strings and credentials in the application.</li>
+<li>Running with more privilege than is needed: This can allow an attacker to gain access to information on the server that should not be available. Permissions should be limited for all users, including SQL, web service, web application, and so on.</li>
+</ul><h1>Countermeasures</h1><ul><li>Use language-specific comments: These comments will be automatically removed by the parsing or compiling engine and are not visible client-side. Note: Be careful with comments that are similar to HTML comments such as ColdFusion comments ( <tt>&lt;!--- comment ---&gt;</tt> ).</li>
+<li>Use proper permissions: Restrict access to files and directories on the server, so that users cannot access any file they want using directory/path traversal.</li>
+<li>Use strong encryption algorithms: Whenever sensitive data is stored, ensure that it is properly protected using strong encryption.</li>
+<li>Use least privilege: Ensure that your application uses the principle of least privilege if it uses a back-end database server.</li>
+<li>Use terse error messages: Be sure to use only short, generic error messages that don't reveal sensitive information. Never directly display error messages returned by a back-end database or other system.</li>
+<li>Use the principle of open design: When designing an application, assume the attacker has access to all information. Bake security into your application, so that even with this information no further attacks are possible.</li>
+</ul><h1>Example</h1><p>Directory indexing: The HTTP request<tt> 'GET /&lt;null byte&gt;.jsp HTTP/1.0'</tt> allows an attacker to view the directory and file listing due to improper handling of null bytes.
+</p><p>
+Directory traversal: The URL <tt>http://www.example.com/../restricted-file.cgi</tt> allows an attacker to access the file 'restricted-file.cgi' which lies outside the web document root directory.
+</p><p>
+Directory traversal with encoded characters: The URL <tt>http://www.example.com/..%255c..%255c/restricted-file.cgi</tt> is similar to the one above, but the '/' characters are double-encoded to bypass security filters.
+</p><p>
+Examples of too much information in error messages:
+</p><ul>
+<li>Invalid password for user: test</li>
+<li>User test does not exist in this system</li>
+<li>Unclosed ‘ character near ‘);</li>
+<li>Any error message that reflects internal component exceptions such as SQL, internal libraries, SSL, encryption, etc.</li>
+</ul><h1>Additional Resources</h1><ul><li>For more about Information Leakage, see <a href="http://projects.webappsec.org/w/page/13246936/Information%20Leakage">http://projects.webappsec.org/w/page/13246936/Information%20Leakage</a></li>
+</ul><h1>Related Items</h1><ul><li><a href="1508d763-03f1-4b43-bf8e-ad7cf8edebd7">Attack: Xpath-XQuery Attack</a></li>
+<li><a href="9d60faca-687b-4c69-91ba-f5712af0fd02">Attack: Server-Side Code Injection Attack</a></li>
+<li><a href="577e90c9-8e44-4240-b00f-768316d63901">Attack: Account Lockout Attack</a></li>
+<li><a href="ae392dbb-fdb4-443f-9d17-78240b4acc95">Attack: XML Injection Attack</a></li>
+<li><a href="4b7d247d-f6a9-493e-a19a-665ff54b757f">Attack: Local Machine Credential Sniffing Attack</a></li>
+<li><a href="4d4d0b86-0a9e-4f66-b95b-92fcb68b8c1a">Attack: Traffic Analysis Attack</a></li>
+<li><a href="b1757bda-0a0d-48e7-b101-3c4088e41878">Attack: SQL Injection Attack</a></li>
+<li><a href="2f79f252-08a8-4341-aa2f-4466a023a44e">Attack: Exception Information Disclosure Attack</a></li>
+<li><a href="ad7b18e3-a8a0-4e87-b1a8-908e11449481">Attack: Network Credential Sniffing Attack</a></li>
+<li><a href="6a32e2d5-dba5-4f6d-9fe0-a51605fd0557">Attack: Network Eavesdropping Attack</a></li>
+<li><a href="88892358-450e-4bbc-afd9-ede9393e53a8">Attack: Sniff Memory for Secrets Attack</a></li>
+<li><a href="331bfa1d-94c7-485b-8d8f-b8bab3e679e4">Attack: Statistical Analysis Attack</a></li>
+<li><a href="00030b2d-5b8e-44c7-a643-afcee6e1157d">Attack: Timing Analysis Attack</a></li>
+<li><a href="36ce61ac-adcc-45a9-9910-95d477142c8b">Attack: Cross Site Scripting Attack</a></li>
+<li><a href="00d296c8-2c75-47ef-a659-5b4f25d5c73f">Attack: Canonicalization Attack</a></li></ul>

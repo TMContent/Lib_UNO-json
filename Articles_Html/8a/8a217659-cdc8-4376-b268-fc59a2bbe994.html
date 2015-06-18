@@ -1,0 +1,11 @@
+<h1>Applies to</h1>
+  <ul>
+    <li>PCI DSS Requirement 3.2.2</li>
+  </ul>
+  <h1>What to Do</h1>
+  <p>Do not store the card verification code (CVV2, CVC2, CID, CAV2) under any circumstances.</p>
+  <h1>Why</h1>
+  <p>The card verification code should not be stored in order to limit the potential damage in the event of a successful attack. The card verification code is often used for authentication in online transactions but does not need to be stored after the transaction
+ has been processed.</p>
+  <h1>How</h1>
+  <p>Identify the storage mechanism used to store the card verification code, such as a program or a database query. Change the storage mechanism so that it does not record the card verification code.</p>

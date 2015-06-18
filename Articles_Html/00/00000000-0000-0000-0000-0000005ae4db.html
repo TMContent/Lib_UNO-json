@@ -1,0 +1,9 @@
+<h2>Applies To</h2><ul><li> Java</li>
+</ul><h2>What to Do</h2><p>URL-encode any user supplied data that is sent back in HTTP response header.
+</p><h2>Why</h2><p>If the application accepts user input and includes such input in HTTP response headers the application will be vulnerable to response splitting vulnerability unless headers are URL-encoded or data is sanitized. Attackers can execute a cross site scripting attack by forcing your application to send carriage return (CR) and line feed (LF) followed by malicious content to the users browser. Because CRLF is a response header separator and CRLF CRLF separates headers from the body, the browser sees attackers content as legitimate. 
+</p><h2>How</h2><p>To URL-encode data in HTTP Response headers:
+</p><ol>
+<li> <strong>Identify all data included in HTTP response headers.</strong> Search your code for calls to <em> HttpServletResponse.AddHeader</em> and for <em>HttpServletResponse.AddCookie</em> to find all code that adds data to HTTP response headers.</li>
+<li> <strong>Validate all data included in HTTP response headers.</strong> Use positive validation routines to check all data that gets included in HTTP response headers.</li>
+<li> <strong>URL-encode all data included in HTTP response headers.</strong> Use <em>java.net.URLEncoder</em> class to URL-encode data that gets includes in HTTP response headers.</li>
+</ol>

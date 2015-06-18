@@ -1,0 +1,13 @@
+<h2>Description</h2><p>XML Attribute Blowup vulnerabilities occur when an application allows users to create XML documents with a large amount of attributes, and results in Denial of Service conditions. 
+</p><p>
+An attacker can abuse this functionality to create an amount of XML attributes that will cause the application's XML parser to consume a large amount of CPU time and slow down the server. If the XML parser uses up all the available CPU time on the server, the application will become unresponsive to legitimate users. Other applications on the server are also liable to become unresponsive.
+</p><p>
+All applications that use XML documents are affected by XML Attribute Blowup vulnerabilities.
+</p><h2>Impact</h2><p>The impact of XML Attribute Blowup vulnerabilities is a Denial of Service condition. If the attacker can abuse the application to create and parse an XML document with a very large amount of attributes, the XML parser will consume a large amount of CPU time, causing the server to lag. Depending on the power of the server and the amount of attributes, the server might become unresponsive and all the applications running on it will become unavailable to the users for the duration of the attack.
+</p><h2>Countermeasures</h2><p>To prevent XML Attribute Blowup vulnerabilities, validate the length of XML data.
+</p><h2>Application Check</h2><p>To verify that XML Attribute Blowup vulnerabilities are prevented, make sure that the length of XML data is validated.
+</p><h2>Specific Technologies</h2><ul><li> <a href="6fe949ef-75dd-4ee7-be7c-5fe41a2469b2">ASP.NET XML Attribute Blowup</a></li>
+<li> <a href="d68a04bb-014a-4cf5-b73b-a5b812582819">Java XML Attribute Blowup</a></li>
+<li> <a href="2d6e459a-96e1-499a-9663-ebd5c228d888">C++ XML Attribute Blowup</a></li>
+<li> <a href="056802f9-1bda-4ff0-ae80-d6ebae75893b">PHP XML Attribute Blowup</a></li>
+</ul>

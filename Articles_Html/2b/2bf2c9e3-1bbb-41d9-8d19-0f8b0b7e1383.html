@@ -1,0 +1,20 @@
+<h1>Applies to</h1>
+  <ul>
+    <li>Microsoft® Windows Communication Foundation (WCF) 3.5 
+</li>
+    <li>Microsoft Visual Studio® 2008</li>
+  </ul>
+  <h1>Description</h1>
+  <p>Use the following steps to enable a WMI provider for your service:</p>
+  <ol>
+    <li>Open the web.config file of the WCF service using the Configuration editor tool (SvcConfigEditor.exe).
+</li>
+    <li>In the Configuration editor, navigate to the Diagnostics node, and click the Enable WMI Provider link. 
+<ol><pre>&lt;diagnostics wmiProviderEnabled="true"&gt;</pre></ol></li>
+    <li>
+      <div>To view the WMI trace information you need to install WMI CIM Studio to view the WMI interactions. It is an ActiveX component that plugs into Internet Explorer. You can get this as a free download available from Microsoft.<br /></div>
+    </li>
+  </ol>
+  <br />
+  <hr />
+  <p>Adapted from Microsoft patterns & practices guidance.</p>

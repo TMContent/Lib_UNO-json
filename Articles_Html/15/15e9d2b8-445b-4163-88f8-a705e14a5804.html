@@ -1,0 +1,34 @@
+<h1>Applies to</h1>
+  <p>Scala and Play Framework 2.1.0+<br /></p>
+  <h1>What to Do</h1>
+  <p>Mask all password fields. Use input controls that hide user input for password fields by covering user input with a "mask", typically a character, such as "*". When a user enters a password "<em>password</em>", the masked field may look like "<em>********</em>".</p>
+  <h1>Why</h1>
+  <p>Masking password fields helps protect user passwords from someone that may be looking at the screen.</p>
+  <h1>How</h1>
+  <p>To mask all password fields:</p>
+  <ol>
+    <li>
+      <p>
+        <strong>Identify all password fields in the application.</strong>&nbsp;Review all the pages in the application to find all password fields.</p>
+    </li>
+    <li>
+      <p>
+        <strong>Use password fields that mask user input.</strong>&nbsp;There are different approaches to masking user input:</p>
+      <ul>
+        <li>
+          <p>Masking password fields is usually done by using a "<em>password</em>" type HTML input field, as follows:</p>
+          <pre>&lt;form&gt;<br />&lt;input type="password" name="pass" autocomplete="off" /&gt;<br />&lt;/form&gt; </pre>
+        </li>
+        <li>
+          <p>Set the "<em>autocomplete</em>" attribute to "<em>off</em>" to prevent the user's browser from caching the entered password.</p>
+        </li>
+        <li>
+          <p>If you are using third party controls for password fields, choose ones that mask user input.</p>
+        </li>
+        <li>
+          <p>If you are implementing custom controls for password fields, implement these controls in such a way that they mask user input.</p>
+        </li>
+      </ul>
+    </li>
+  </ol>
+  <br />

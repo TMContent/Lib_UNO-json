@@ -1,0 +1,16 @@
+<h1>Applies to</h1>
+  <p>C&#43;&#43;</p>
+  <h1>What to Check For</h1>
+  <p>Verify that unallocated memory is not accessed.</p>
+  <h1>Why</h1>
+  <p>Accessing memory that has been deallocated may result in an exploitable vulnerability. This type of vulnerability is called a "dangling pointer vulnerability". The unallocated memory is accessed via a pointer that has been used to free the memory earlier - this pointer is the "dangling pointer".</p>
+  <h1>How to Check</h1>
+  <p>Identify all code that unallocates memory. Verify that pointers are never used after the objects they reference have been deleted.</p>
+  <h1>How to Fix</h1>
+  <p>Code has to be rewritten in a way that does not access unallocated memory. </p>
+  <h1>Related Items</h1>
+  <ul>
+    <li>
+      <a href="/article/b8b0d075-5aa2-4095-a441-210f38fc3b3e">Don't Access Unallocated Memory</a>
+    </li>
+  </ul>

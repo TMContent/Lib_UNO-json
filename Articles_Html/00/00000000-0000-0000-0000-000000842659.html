@@ -1,0 +1,19 @@
+<h2>Applies To</h2><ul><li> All iOS functions.</li>
+</ul><h2>What to Check For</h2><p>Verify that freed objects are not referenced.
+</p><h2>Why</h2><p>Accessing memory that has been deallocated may result in an exploitable vulnerability. This type of vulnerability is called a "dangling pointer vulnerability". The unallocated memory is accessed via a pointer that has been used to free the memory earlier - this pointer is the "dangling pointer".
+</p><h2>How to Check</h2><p>To verify that freed objects are not referenced:
+</p><ol>
+<li> <strong>Search for deallocation code.</strong> Review code to find all places where memory is being deallocated.</li>
+<li> <strong>Verify that deallocation code is close to exit points.</strong> Make sure that deallocation code is close to the end of a function - this makes it easier to manage deallocation and prevent double-free vulnerabilities.</li>
+<li> <strong>Review deallocation code.</strong> Examine deallocation code to make sure that objects are only freed once.</li>
+</ol><h2>How to Fix</h2><p>Write code in a way that guarantees that pointers are not used after memory that they point to has been deallocated. One way to do this is to deallocate memory at the end of functions, so that there is no code that accesses memory after it has been deallocated. Perform the following actions to assure that deallocated memory is not accessed:
+</p><ol>
+<li> <strong>Search for deallocation code.</strong> Review code to find all places where memory is being deallocated.</li>
+<li> <strong>Move deallocation code.</strong> Place deallocation code right before an exit point from its function. Set deallocated pointers to null. Make sure that deallocated pointers are not being used elsewhere in the application.</li>
+</ol><h2>Memory Management Guidelines</h2><ul><li> <a href="00000000-0000-0000-0000-000000112fc5">Compile Applications with Stack Cookies Enabled</a></li>
+<li> <a href="00000000-0000-0000-0000-0000008d3865">Do Not Reference Freed Objects</a></li>
+<li> <a href="00000000-0000-0000-0000-000000798d06">Use Automatic Reference Counting</a></li>
+</ul><h2>Memory Management Checklists</h2><ul><li> <a href="00000000-0000-0000-0000-000000841cc6">Applications Are Compiled with Stack Cookies Enabled</a></li>
+<li> <a href="00000000-0000-0000-0000-000000842659">Freed Objects Are Not Referenced</a></li>
+<li> <a href="00000000-0000-0000-0000-000000189cf8">Automatic Reference Counting Is Used</a></li>
+</ul>

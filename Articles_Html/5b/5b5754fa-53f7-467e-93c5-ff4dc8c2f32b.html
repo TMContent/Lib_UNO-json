@@ -1,0 +1,27 @@
+<h1>Description</h1><p>Cookie security issues occur when all the measures available for protecting cookies are not fully implemented. Measures that can be used to protect cookies are listed in the <strong>Countermeasures</strong> section of this article (see below). 
+</p><p>
+Cookies that contain session identifiers have to be treated with extra caution, because if the session identifiers are compromised, an attacker will be able to hijack user sessions. 
+</p><p>
+Cookie security issues affect all web applications that use cookies.
+</p><h1>Impact</h1><p>The exact impact of cookie security issues depends on the kind of data stored in the vulnerable cookie and the manner in which it is exposed. The most common serious cookie security issues are exposing session identifiers to cross-site scripting or man-in-the-middle attacks. Once the attacker has compromised the session identifier, he can impersonate the authenticated user to the application and perform any actions that don't require re-authentication on behalf of that user. The exact actions that are available are different for different applications, but, for non-privileged users, the impact will typically be limited to some mischief. If the compromised user has administrative privileges, the attacker might be able to upload malicious code to the web server and execute it with the privileges of the web server. If the attacker is able to execute arbitrary application code, they will have full control of the application and its data, and have the ability to abuse the web server.
+</p><h1>Countermeasures</h1><p>To protect sensitive cookies, set the HTTPOnly flag, set the Secure flag, send cookies only over SSL/TLS, set strict domain and path values, and ensure that sensitive cookies are not  persistent.
+</p><ul>
+<li> <a href="9b7e6e63-c37c-403b-a2f5-60b1e1abbb0b">Set the Secure And HTTPOnly Flags on All Sensitive Cookies</a></li>
+<li> <a href="6012e717-6ba6-4380-8ca8-2f0b7c69d717">Protect Session Cookies</a></li>
+<li> <a href="7a517ad5-8640-4bc7-9e84-ccc313a71901">Set the Domain And Path Values of Session Cookies</a></li>
+<li> <a href="42276b64-f51d-4b89-8c33-0ffd9b098890">Use Session Management Offered by the Framework</a></li>
+</ul><h1>Application Check</h1><p>To check for adequate protection of sensitive cookies, verify that the HTTPOnly flag is set, the Secure flag is set, sensitive cookies are sent only over SSL/TLS, strict domain and path values are set, and sensitive cookies are not persistent.
+</p><ul>
+<li> <a href="9b7e6e63-c37c-403b-a2f5-60b1e1abbb0b">Set the Secure And HTTPOnly Flags on All Sensitive Cookies</a></li>
+<li> <a href="59132a30-2bae-45e9-9d85-8de26441be29">Session Cookies Are Protected</a></li>
+<li> <a href="7a517ad5-8640-4bc7-9e84-ccc313a71901">Set the Domain And Path Values of Session Cookies</a></li>
+<li> <a href="3f2660b3-a935-4b4e-85ff-27ae28683f5b">Session Management Offered by the Framework Is Used</a></li>
+</ul><h1>Computer Based Training Links</h1><p>Use the following Computer Based Training courses for more background information about this type of vulnerabilities.
+</p><h2>Creating Secure J2EE Code</h2><p>This course introduces and explains the precautionary measures you can use to avoid Web software security vulnerabilities, such as data leakage attacks, client/server protocol manipulation, injection attacks, and exploiting authentication.  At the end of this course, you will have learned about time-tested defensive coding principles and how to use them to increase the security of your application, and prevent common security vulnerabilities.
+</p><p>
+<a href="https://teamprofessor.absorbtraining.com/ninja/#/courses/course/127619">COD 313 Creating Secure J2EE Code</a>
+</p><h2>Creating Secure Code - JRE Foundations</h2><p>In this course, you will learn to recognize and remediate common Java Web software security vulnerabilities.  This course has three modules, which introduce you to these vulnerabilities and help you to identify and remediate them.
+</p><p>
+<a href="https://teamprofessor.absorbtraining.com/ninja/#/courses/course/127615">COD 211 Creating Secure Code - JRE Foundations</a>
+</p><p>
+<em>Valid login credentials and enrollment in the course itself are required to access Team Professor content. If you need login credentials, please contact support@securityinnovation.com for help.</em></p>

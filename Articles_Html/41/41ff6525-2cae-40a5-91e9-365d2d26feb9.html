@@ -1,0 +1,30 @@
+<h1>Applies To</h1><p>Any two applications which communicate over any networked channel, such as the internet.
+</p><h1>Description</h1><p>A man in the middle (MiTM) attack occurs when an attacker intercepts messages sent between two parties without their knowledge. The attacker is usually capable of reading, inserting and modifying the messages it intercepts. MiTM attacks can be carried out on various protocols and against various technologies to intercept and modify data being exchanged between two parties. This is done in such a way that the attacker compromises the confidentiality, integrity and/or availability of protected information. Any network request involving client-server communication -- including web requests, distributed component object model (DCOM) requests, and calls to remote components and Web services -- is subject to MiTM attacks. MiTM attacks can be used to attack unencrypted channels as well as encrypted channels (such as TLS) under certain circumstances.
+</p><h1>Impact</h1><ul><li>Loss of confidentiality: The attacker will be able to view potentially sensitive information by sitting in between the server and the client.</li>
+<li>Loss of integrity: The attacker will be able to change the data being sent to or from the server.</li>
+<li>Loss of availability: If the attacker can send unexpected data to a host and cause it to crash, then it could lead to a denial of service on the affected host.</li>
+<li>Alteration of keys: Modification of public keys during key exchanges between two parties.</li>
+</ul><h1>Vulnerabilities</h1><ul><li>Network vulnerabilities: A man in the middle attack is usually carried out by means of one of the following:<ul>
+<li>ARP spoofing attack</li>
+<li>DNS hijacking or DNS Cache Poisoning</li>
+<li>DHCP message subversion/take-over</li>
+<li>Wireless packet injection attack</li>
+<li>Gateway takeover using various packet redirects</li>
+<li>Subversion of a gateway, router, or proxy between the victim and the server.</li></ul></li>
+</ul><ul>
+<li>In addition to these network vulnerabilities, MiTM attacks become much easier to conduct if unencrypted or weakly encrypted communication channels are being used.</li>
+</ul><h1>Countermeasures</h1><ul><li>Since the network weaknesses described above cannot be controlled for all potential users, it is recommended that cryptographic suites be used. Below are some examples at different layers:<ul>
+<li>At the network layer: IPSec</li>
+<li>At the application layer: TLS, PGP</li></ul></li>
+</ul><ul>
+<li>Use of these suites requires careful consideration of the key length and key store. Correct ways of doing so are provided in the Related Items section of this article.</li>
+</ul><h1>Example</h1><p>A few examples are described below to demonstrate the various types of problems that MiTM attacks can cause:
+</p><ul>
+<li>Code or command injection: Malicious code could be inserted into web-pages or email, which would be executed on the client application.</li>
+<li>Key exchange: Public keys exchanged by the server and the client could be modified and replaced with the attacker's public key. The attacker would then be able to read and modify traffic to and from both entities.</li>
+<li>Parameter substitution: Parameters to applications running on the client or the server could be modified by the attacker to alter the behavior of an application. A common attack here is to substitute the TLS version supported by the server. By forcing the client and server to negotiate on a weaker version of TLS, an attacker can easily compromise the confidentiality of the data.</li>
+<li>IPSec Failure: By blocking the key material exchange on UDP port 500, the end point will think that the other cannot start an IPSec connection. Worse, if the client is configured in rollback mode, there is a good chance that the user will not notice that the connection is in clear text.</li>
+</ul><h1>Additional Resources</h1><ul><li>For more information on Man In The Middle attacks, see: <a href="http://www.blackhat.com/presentations/bh-europe-03/bh-europe-03-valleri.pdf">http://www.blackhat.com/presentations/bh-europe-03/bh-europe-03-valleri.pdf</a></li>
+</ul><h1>Related Items</h1><ul><li><a href="0d3f3bbd-6442-4fd2-bb54-2ac10b64695c">Attack: ARP Spoofing Attack</a></li>
+<li><a href="380b7108-0c16-4fbf-a914-6d37acf55421">Attack: DNS Cache Poisoning</a></li>
+<li><a href="378080c8-3a72-4d2f-bf5e-a5cc6bd5f54b">Attack: Wireless Packet Injection Attack</a></li></ul>

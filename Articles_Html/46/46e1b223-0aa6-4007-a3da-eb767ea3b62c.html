@@ -1,0 +1,17 @@
+<h2>Applies To</h2><ul><li> PHP</li>
+</ul><h2>What to Check For</h2><p>Use a cryptographically strong pseudo-random number generator (PRNG) for cryptography.
+</p><h2>Why</h2><p>Most common encryption algorithms rely on difficult to predict random numbers to be used properly. The level of difficulty to predict or enumerate the output of a random number generator is called its entropy. Cryptographically strong PRNGs are software algorithms that produce pseudo-random numbers considered to have sufficient entropy to be suitable for use in cryptography. Using PRNGs that have low entropy is likely to make the resulting cryptographic solution easier to break and thus compromise the data or the authentication mechanism that the solution is used for.
+</p><h2>How to Check</h2><p>To verify that cryptographically strong PRNGs are used for cryptography:
+</p><ol>
+<li> <strong>Find code that uses PRNGs.</strong> Review all code that uses cryptography to find code that uses pseudo-random numbers. Make a spreadsheet of all the code that uses pseudo-random numbers for cryptography. </li>
+<li> <strong>Verify that cryptographically strong PRNGs are used.</strong> Verify that your code uses /dev/urandom for PRNGs on Unix/Linux platforms and the CAPICOM GetRandom() function on Windows.</li>
+</ol>
+<h2>How to Fix</h2><p>To use cryptographically strong PRNGs:
+</p><ol>
+<li> <strong>Find code that uses PRNGs.</strong> Review all code that uses cryptography to find code that uses pseudo-random numbers. Make a spreadsheet of all the code that uses pseudo-random numbers for cryptography. </li>
+<li> <strong>Use /dev/urandom on Unix/Linux.</strong> On Unix/Linux platforms, update all code that uses PRNGs for cryptography to use /dev/urandom. Update each piece of this code to open /dev/urandom as a file and read the required amount of bytes to use as the pseudo-random number.</li>
+<li> <strong>Use the OS PRNG on Windows.</strong> On Windows platforms, update all code that uses PRNGs for cryptography to use OS APIs. Update each piece of code to call the GetRandom() function from the CAPICOM.Utilities.1 library, as follows: <em> $CAPI_LIBRARY = new COM('CAPICOM.Utilities.1'); $randomdata = $CAPI_LIBRARY-&gt;GetRandom(32,0); </em> where the first parameter to the GetRandom() function is the amount of bytes of random data that are needed.</li>
+</ol>
+<h2>Additional Sources</h2><ul><li> For a code example of using strong PRNGs in PHP, see <a href="http://www.php.net/manual/en/function.mt-rand.php#83655">http://www.php.net/manual/en/function.mt-rand.php#83655</a></li>
+<li> For more information about the GetRandom() function on Windows, see <a href="http://msdn.microsoft.com/en-us/library/aa388176%28VS.85%29.aspx">http://msdn.microsoft.com/en-us/library/aa388176%28VS.85%29.aspx</a></li>
+</ul>

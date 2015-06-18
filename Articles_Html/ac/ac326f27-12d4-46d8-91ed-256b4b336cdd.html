@@ -1,0 +1,9 @@
+<h2>Applies To</h2><ul><li> Web Applications</li>
+</ul><h2>What to Do</h2><p>Calculate destinations of redirects and forwards without user input.
+</p><h2>Why</h2><p>Using input to calculate destinations of redirects or forwards may allow an attacker to create hyperlinks that appears to point to legitimate sites but redirect to malicious pages controlled by the attacker. This technique is often used by phishers to trick people into visiting fake sites that steal authentication credentials.
+</p><h2>When</h2><p>Use this guideline when writing a web application that uses redirects or forwards. Avoid using redirects or forwards in web applications, if possible.
+</p><h2>How</h2><p>Perform the following actions to calculate destinations of redirects and forwards without user input:
+</p><ol>
+<li> <strong>Find redirects and forwards.</strong> Find all pages that perform redirects or forwards. Redirects are also known as "transfers" in .NET.</li>
+<li> <strong>Identify dangerous redirects and forwards.</strong> Find all redirects and forwards that rely on user input to calculate their destinations.</li>
+<li> <strong>Rewrite redirects and forwards.</strong> Consider making design or code changes to get rid of each redirect or forward, if possible. If a redirect or forward is absolutely necessary, consider how it may be rewritten to operate without user input - this is usually possible based on assumptions made in the application design.</li></ol>

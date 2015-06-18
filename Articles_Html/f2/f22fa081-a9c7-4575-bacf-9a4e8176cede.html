@@ -1,0 +1,33 @@
+<h2>Applies To</h2><ul><li> Android</li>
+</ul><h2>What to Do</h2><p>When using the <em>WebView</em> class to access and load URLs, only enable JavaScript if absolutely necessary. If JavaScript is necessary, only enable interfaces into your Android methods for trusted websites. In order to prevent the user from navigating to other sites through external page links, pass any non-trusted URLs to the <em>Browser</em> class for loading with <em>Intent.ACTION_VIEW</em> in the <em>shouldOverrideUrlLoading</em> method.
+</p><h2>Why</h2><p><em>WebView</em> allows an application to load HTML content into a user layout. In addition, a loaded web page can  interact with the Android application’s classes and methods through Javascript calls. If not properly secured, this could allow a malicious website to access sensitive data within the application by invoking these methods or by sending the user to dangerous sites through HTML links and re-directs.
+</p><h2>When</h2><p>Use <em>WebView</em> when you want to provide a simple web interface for a given URL. Do not attempt to create complex, browser-style applications with <em>WebView</em>. Two possible scenarios for a <em>WebView</em> might be when you want the user to have a link for an FAQ page or a patch update notification for the application or service. Enable JavaScript within the <em>WebView</em> only when there is a business requirement to allow JavaScript method invocations or calls to Android methods. Never allow the user to click through to other sites through the <em>WebView</em> but rather pass new URL requests to the <em>Browser</em> class.
+</p><h2>How</h2><p>To avoid using JavaScript in WebView objects: 
+</p><ol>
+<li> <strong>Identify whether JavaScript is enabled in WebView objects.</strong> Search the application for calls to the <em>setJavaScriptEnabled()</em> method to determine whether JavaScript is enabled in <em>WebView</em> objects. By default, JavaScript is disabled in <em>WebView</em> objects, so if there are no calls to this method, JavaScript is not enabled in <em>WebView</em> objects.</li>
+<li> <strong>Disable JavaScript in WebView Object.</strong> Find all calls to the <em>setJavaScriptEnabled</em> method and remove them.</li>
+<li> <strong>Enable JavaScript only if necessary.</strong> By default, JavaScript is not enabled. If you do not require JavaScript, do not enable it. However, if JavaScript is necessary, you can enable it with an additional line of code: <em>web.getSettings().setJavaScriptEnabled(true);</em></li>
+<li> <strong>(Optional) Create an interface for each method you want to access.</strong> If you have methods within your Android application that you want the website to access, create an interface for each method. Instantiate a new class that extends <em>WebViewClient</em> and returns <em>False</em> in the <em>shouldOverrideUrlLoading</em> method only for nonpublic sites that should have access to the JavaScript interfaces.</li>
+<li> <strong>Ensure that non-trusted websites get loaded through the Browser class and not the WebView.</strong> Do this by having the <em>shouldOverrideUrlLoading</em> return true when the application calls the <em>setWebViewClient</em> method. Load the URL through <em>Intent.ACTION_VIEW</em> which will pass it to the <em>Browser</em> class.</li>
+</ol><h2>Problem Example</h2><p>As the MyApp developer, you need to provide access to your help page. Doing so will allow you to make frequent updates, and you will not need to parse the data for display on a layout for MyApp.
+</p><p>
+You download sample code and see that you could provide custom JavaScript calls for your application. Although this is not absolutely necessary, you think users will enjoy the ability to send comments about the MyApp help page through an Android JavaScript interface. You code the interface below and call it Comment:
+</p><pre>@JavascriptInterface 
+    public void comment(String _message, String _cc) {
+        //Sends the message in the_message argument
+    }
+</pre><p>
+This interface sends user input to the master inbox and Cs-s the message to the email address the user provides.
+</p><p>
+Unfortunately, this practice has opened a hole in the application. First, you are allowing unformatted strings to enter the MyApp application and ultimately the mail system. Second, by allowing the user to manipulate the Cc field, the user could send damaging messages to other recipients, and it will look as if the Android application sent them. Finally, there is no control over which sites can access this method.
+</p><h2>Solution Example</h2><p>First, rethink whether this functionality is needed. If this feature is not required, consider removing it to reduce your attack surface. Remove JavaScript from the <em>WebView</em> by deleting this line in the activity that instantiates it:
+</p><pre>webView.getSettings().setJavaScriptEnabled(true);
+</pre><p>
+If you decide that JavaScript is a must and this method is truly necessary, than you should at a minimum ensure that the application controls any redirects or links clicked to sites your organization does not manage. By default, this will happen anyway, but you should ensure that the application is not calling the <em>setWebViewClient</em>, as the following code shows:
+</p><pre>setWebViewClient (new WebViewClient()); 
+</pre><p>
+This call allows the user to click any links within the <em>WebView</em> and exposes the application to malicious JavaScript attacks. Also, look for any calls to the following:
+</p><pre>public boolean shouldOverrideUrlLoading(WebView view, String url)
+</pre><p>
+This method should only return <em>False</em> for sites your organization controls. All others should return <em>True</em> and use an intent with <em>Intent.ACTION_VIEW</em> to load through a browser.
+</p>

@@ -1,0 +1,28 @@
+<h1>Applies to</h1>
+  <ul>
+    <li>Java</li>
+  </ul>
+  <h1>What to Do</h1>
+  <p>Protect session IDs, usually known as <em>JSESSIONID</em> in Java applications.</p>
+  <h1>Why</h1>
+  <p>Protecting session IDs helps protect user sessions from being hijacked.</p>
+  <h1>How</h1>
+  <p>To protect session IDs:</p>
+  <ol>
+    <li>
+      <p>
+        <strong>Store session IDs in cookies.</strong> This is the default behavior in most Java web applications. Cookies have to be turned on for this to work.</p>
+    </li>
+    <li>
+      <p>
+        <strong>Set the "<em>secure</em>" flag on session cookies.</strong> This is the default behavior in most Java web applications. TLS has to be turned on for this to work.</p>
+    </li>
+    <li>
+      <p>
+        <strong>Set the "<em>HTTPOnly</em>" flag on session cookies.</strong> Use the <em>setHttpOnly</em>&amp;nbsp;function to set the "<em>HTTPOnly</em>" flag on session cookies.</p>
+    </li>
+    <li>
+      <p>
+        <strong>Do not disclose session IDs.</strong> Make sure that session IDs are not disclosed in URLs, logs, or error messages. Do not allow URL rewriting of session cookies.</p>
+    </li>
+  </ol>

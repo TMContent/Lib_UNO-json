@@ -1,0 +1,15 @@
+<h2>Applies To</h2><ul><li> Android applications that parse XML documents.</li>
+</ul><h2>What to Do</h2><p>Disable parsing of external XML entities.
+</p><h2>Why</h2><p>Parsing external entities in XML documents may result in injection vulnerabilities.
+</p><h2>How</h2><p>There are multiple parsing packages built into the Android SDK: <em>SAXParser</em>, <em>XmlPullParser</em> and <em>DocumentBuilder</em>.
+</p><p>
+<em>DocumentBuilder</em> doesn't support external XML entities.
+</p><p>
+<em>XmlPullParser</em> doesn't support external XML entities.
+</p><p>
+<em>SAXParser</em> has parsing of external XML entities disabled by default. Parsing of external XML entities is configured in <em>SAXParser</em> using the <em>external-general-entities</em> and <em>external-parameter-entities</em> feature flags. Please, make sure that these flags are not enabled by the application.
+</p><h2>Related Items</h2><ul><li> <a href="00000000-0000-0000-0000-0000005f6129">Parsing of External XML Entities Is Disabled</a></li>
+</ul><h2>Additional Resources</h2><ul><li> For more information about Android XML parsers, please see <a href="http://developer.android.com/reference/javax/xml/parsers/package-summary.html">http://developer.android.com/reference/javax/xml/parsers/package-summary.html</a></li>
+<li> For a full list of feature flags supported by the SAX XML parser, please see: <a href="http://sax.sourceforge.net/apidoc/org/xml/sax/package-summary.html#package_description">http://sax.sourceforge.net/apidoc/org/xml/sax/package-summary.html#package_description</a></li>
+<li> For more information about the <em>SAX2</em> parser, please see <a href="http://developer.android.com/reference/org/xml/sax/package-summary.html">http://developer.android.com/reference/org/xml/sax/package-summary.html</a></li>
+<li> For more information about the <em>XmlPullParser</em> class, please see <a href="http://developer.android.com/reference/org/xmlpull/v1/XmlPullParser.html">http://developer.android.com/reference/org/xmlpull/v1/XmlPullParser.html</a></li></ul>

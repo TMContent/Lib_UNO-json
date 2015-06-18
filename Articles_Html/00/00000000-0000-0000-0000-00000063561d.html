@@ -1,0 +1,74 @@
+<h2>Applies To</h2><ul><li> HTML5</li>
+</ul><h2>What to Do</h2><p>Use the Strict-Transport-Security response header to enforce secure communication with the browser via HTTPS. This header is often referred to as HTTP Strict Transport Security, or simply HSTS.
+</p><h2>Why</h2><p>The Strict-Transport-Security header instructs the browser to communicate with the server only via HTTPS, a secure communication tunnel that prevents eavesdropping. Without the header, there is no way for the browser to “know” that a web page should be accessed over HTTPS. This leaves open the possibility of using standard, unencrypted HTTP whether through a malicious link or direct URL access. 
+</p><h2>When</h2><p>Use this guideline when implementing HTML5 web applications that transmit confidential data.
+</p><h2>How</h2><p>Note that, as of this writing, the latest releases of Mozilla Firefox, Google Chrome, and Opera all support the HSTS header. However, Internet Explorer does not.
+</p><ol>
+<li> <strong>Enable the <em>mod_header</em> module in the <em>httpd.conf</em> configuration file (if it is not already enabled).</strong> For example, if you are using Apache Web Server, first enable
+<em>LoadModule headers_module modules/mod_headers.so</em></li>
+<li> <strong>Add the HSTS header to the <em>httpd.conf</em> configuration file.</strong> Include the required directive <em>max-age</em>. This specifies the time, in seconds, that a compliant browser will abide by forced HTTPS, even in the event a standard HTTP connection is attempted. For example, in the Apache <em>httpd.conf</em> configuration file, add the following line: <em>Header always append Strict-Transport-Security: "max-age=7776000"</em>. This directive instructs the browser to connect only via HTTPS for the next 90 days. The server will inject this header information into each application page rendered.</li>
+<li> <strong>Reload or restart the web server configuration.</strong> The first time the user connects to your website using HTTPS, the browser reads the HSTS header, including the <em>max-age</em> directive. The browser will know it should connect only via HTTPS for the specified <em>max-age</em> time period.</li>
+</ol><h2>Problem Example</h2><p>Example.com is a popular stock-trading site that handles confidential financial information for its users. In this scenario, it is the intention that all requests from users are sent using HTTPS. However, no Strict-Transport-Security response header is sent from the Example.com server.
+</p><p>
+A hacker at a coffee shop uses his laptop to intercept all unencrypted traffic on the local wireless network. A user visits the coffee shop, and clicks a link to log in to the secure Example.com website. However, the link is <a href="http://www.example.com/login.php">http://www.example.com/login.php</a> instead of <a href="https://www.example.com/login.php">https://www.example.com/login.php</a>. Though the user is visiting the correct website, the hacker can eavesdrop, because the communication tunnel is unencrypted.
+</p><pre>
+
+&lt;a href="http://www.example.com/login.php"&gt; Click here &lt;/a&gt; to login securely connect to example.com
+
+</pre><p>
+Even though the verbiage indicates a secure connection, the hyperlink clearly is not secure.
+</p><pre>
+
+Server Response:
+HTTP/1.1 200 OK
+Date	Thu, 25 Apr 2013 06:49:05 GMT
+Server	Apache/2.2.22 (Win32) mod_ssl/2.2.22 OpenSSL/0.9.8t
+X-Powered-By	PHP/5.3.8-ZS5.5.0 ZendServer
+Set-Cookie	ZDEDebuggerPresent=php,phtml,php3; path=/
+Keep-Alive	timeout=5, max=100
+Connection	Keep-Alive
+Transfer-Encoding	chunked
+Content-Type	text/html
+
+</pre><p>
+<br></p><h2>Solution Example</h2><p>To correct the situation, the developers at Example.com include the Strict-Transport-Security response header. In the configuration file of their Apache 2 server, they enable <em>mod_header</em>, and then add:
+</p><pre>
+
+Header always append Strict-Transport-Security: "max-age=7776000 " 
+
+</pre><p>
+Assuming that the user has logged in previously to Example.com, the browser will now detect that the connection should be HTTPS and connect securely.
+</p><pre>
+
+Server Response:
+HTTP/1.1 200 OK
+Date	Thu, 25 Apr 2013 07:01:05 GMT
+Server	Apache/2.2.22 (Win32) mod_ssl/2.2.22 OpenSSL/0.9.8t
+X-Powered-By	PHP/5.3.8-ZS5.5.0 ZendServer
+Set-Cookie	ZDEDebuggerPresent=php,phtml,php3; path=/
+Strict-Transport-Security	max-age=7776000
+Keep-Alive	timeout=5, max=100
+Connection	Keep-Alive
+Transfer-Encoding	chunked
+Content-Type	text/html
+
+</pre><p>
+<br></p><h2>Additional Resources</h2><ul><li> For information about the Strict-Transport-Security header, see <a href="http://tools.ietf.org/html/draft-ietf-websec-strict-transport-sec-14#section-6.1">http://tools.ietf.org/html/draft-ietf-websec-strict-transport-sec-14#section-6.1</a></li>
+<li> For the TLS protocol specs, see <a href="http://tools.ietf.org/html/rfc5246">http://tools.ietf.org/html/rfc5246</a></li>
+<li> For a list of useful HTTP headers, see <a href="https://www.owasp.org/index.php/List_of_useful_HTTP_headers">https://www.owasp.org/index.php/List_of_useful_HTTP_headers</a></li>
+</ul>
+<h2>HTTP Header Guidelines</h2><ul><li> <a href="00000000-0000-0000-0000-00000028bb7d">Use X-Content-Security-Policy to Mitigate XSS</a></li>
+<li> <a href="00000000-0000-0000-0000-0000009026c0">Use X-XSS-Protection to Prevent Reflected XSS</a></li>
+<li> <a href="00000000-0000-0000-0000-000000204a22">Use X-Frame-Options to Prevent ClickJacking</a></li>
+<li> <a href="9e0f93ba-0b80-4aab-b93c-c17b9af2a19c">Use a Filter to Inject X-Frame-Options</a></li>
+<li> <a href="ae2dc4f8-af3d-4002-9417-f3f1d5c9128b">Add X-Frame Options to Responses</a></li>
+<li> <a href="00000000-0000-0000-0000-00000063561d">Use the Strict-Transport-Security Header to Enforce HTTPS</a></li>
+<li> <a href="00000000-0000-0000-0000-000000225f24">Use includeSubDomains with Strict-Transport-Security</a></li>
+</ul><h2>HTTP Header Checklist Items</h2><ul><li> <a href="00000000-0000-0000-0000-0000006b6766">X-Content-Security-Policy Is Used to Mitigate XSS</a></li>
+<li> <a href="00000000-0000-0000-0000-0000007122c6">X-XSS-Protection Is Used to Prevent Reflected XSS</a></li>
+<li> <a href="00000000-0000-0000-0000-000000498810">X-Frame-Options Are Used to Prevent Clickjacking</a></li>
+<li> <a href="0d1871fe-76d3-4ea3-87be-ef63662dd772">A Filter Is Used to Inject X-Frame Options</a></li>
+<li> <a href="26caffea-d597-40fd-9ed0-36fb025d188b">X-Frame Options Are Added to Responses</a></li>
+<li> <a href="00000000-0000-0000-0000-0000001b501f">The Strict-Transport-Security Header is Used to Enforce HTTPS</a></li>
+<li> <a href="0078cd3f-9e84-4eb4-9a2f-7f51e3100801">IncludeSubDomains is Used with Strict-Transport-Security</a></li>
+</ul>

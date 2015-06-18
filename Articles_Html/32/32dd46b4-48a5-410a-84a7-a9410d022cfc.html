@@ -1,0 +1,15 @@
+<h2>Applies To</h2><ul><li> Web Applications</li>
+</ul><h2>What to Check For</h2><p>Verify that authentication and authorization are required for all sensitive pages.
+</p><h2>Why</h2><p>All pages that have private information should require authentication and authorization to prevent unauthorized information disclosure. Use role-based authorization policies because they are relatively simple to manage correctly.
+</p><h2>How to Check</h2><p>To verify that authentication and authorization are required for all sensitive pages:
+</p><ol>
+<li> <strong>Identify all sensitive pages.</strong> Make a list of all pages that handle sensitive or private information.</li>
+<li> <strong>Verify that all sensitive pages require authentication.</strong> Visit each sensitive page with a web browser to make sure it requires authentication.</li>
+</ol><h2>How to Fix</h2><p>To require authentication for all private resources:
+</p><ol>
+<li> <strong>Identify all sensitive pages.</strong> Make a list of all pages that handle sensitive or private information.</li>
+<li> <strong>Define roles.</strong> Define access roles for your application. These roles should include administrative users and various types of users specific to your application.</li>
+<li> <strong>Implement authentication.</strong> Implement and document authentication APIs to satisfy all application requirements.</li>
+<li> <strong>Require authentication for all sensitive pages.</strong> Add code to all sensitive pages that checks if the user is authenticated and authorized to view them.</li>
+</ol>
+

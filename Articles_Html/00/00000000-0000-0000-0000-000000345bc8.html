@@ -1,0 +1,6 @@
+<h2>Applies To</h2><ul><li> ASP.NET</li>
+</ul><h2>What to Do</h2><p>Use strong session identifiers if your application keeps session state.
+</p><h2>Why</h2><p>Using cryptographically strong session identifiers prevents attackers from easily guessing session ids and taking over users' sessions. If an attacker hijacks the session he/she can perform the same functions as the logged in user. This will lead to a compromise of user account and in case the user is an administrator, the whole application.
+</p><h2>How</h2><p>ASP.NET uses strong session IDs by default. Please, make sure that your application uses the default ASP.NET session IDs. Rewrite the application session state handling code, if necessary, to use the default ASP.NET session ID generation algorithm. Session cookies will automatically be created if ASP.NET session state is used.
+</p><p>
+Even though it is strongly advised against, if your application must use a custom session ID, make sure that the ID generation algorithm is sufficiently random to make it difficult to predict the IDs. The default ASP.NET session ID has 2^120 possible values. Using a custom ID generation algorithm, try to get at least as much entropy as the default ASP.NET algorithm. </p>

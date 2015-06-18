@@ -1,0 +1,10 @@
+<h1>Description</h1><p>XML external entity (XXE) injection vulnerabilities occur when the XML processor allows the attacker to control data loaded into the XML document as "external entities." Some XML processors support a feature called "external entities" that allows loading XML data from a URI as a part of the document. If the attacker can define the URI from which the data is loaded, they can manipulate the data that gets loaded into the XML document. Thus, the attacker can potentially load arbitrary files on the server of his choosing into the document and be able to read them. 
+</p><p>
+XML external entity injection vulnerabilities affect applications that use XML and have the "external entity" function enabled.
+</p><h1>Impact</h1><p>The impact of XML external entity injection vulnerabilities is information disclosure. XXE injection allows the attacker to read arbitrary files that can be loaded by the XML parser into the document. The attacker might be able to leverage this vulnerability to read settings from configuration files. If configuration files contain plain-text passwords for the database or the application, the attacker might be able to compromise the application and/or the database server. In practice, leveraging XXE injection for additional access is non-trivial and requires additional vulnerabilities, making it an impractical but real vulnerability.
+</p><h1>Countermeasures</h1><p>To prevent XML external entity injection vulnerabilities, disable the "external entities" feature.
+</p><ul>
+<li> <a href="5b653aa9-7669-4dcb-88d2-8b0f601da772">Disable the External Entities Feature</a></li>
+</ul><h1>Application Check</h1><p>To check for adequate protection against this vulnerability, verify that the "external entities" feature is disabled.
+</p><ul>
+<li> <a href="6683aea9-bb36-4b3d-916d-b94927faa528">The External Entities Feature Is Disabled</a></li></ul>

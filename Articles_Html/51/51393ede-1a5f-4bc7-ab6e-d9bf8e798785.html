@@ -1,0 +1,47 @@
+<h1>Applies to</h1>
+  <ul>
+    <li>C&#43;&#43;<li>Windows</li></li>
+  </ul>
+  <h1>What to Check For</h1>
+  <p>Verify that libraries are loaded safely on Windows.</p>
+  <h1>Why</h1>
+  <p>If a fully-qualified path to a DLL library is not specified, a malicious library with the same name may be loaded by an attacker, allowing him to alter program behavior or execute arbitrary code.</p>
+  <h1>How to Check</h1>
+  <p>Use the following steps to check if libraries are loaded safely:</p>
+  <ol>
+    <li>
+      <p>
+        <strong>Review code.</strong> Search for calls to LoadLibrary() and LoadLibraryEx() functions.</p>
+      <li>
+        <p>
+          <strong>Verify that absolute paths are used.</strong> Check the arguments to LoadLibrary() and LoadLibraryEx() functions to make sure fully-qualified file names are used.</p>
+        <li>
+          <p>
+            <strong>Check ACLs.</strong> Inspect access controls on the application directory to make sure that Write access is denied to intruders.</p>
+        </li>
+      </li>
+    </li>
+  </ol>
+  <h1>How to Fix</h1>
+  <p>Perform the following actions in order to avoid loading a malicious DLL:</p>
+  <ol>
+    <li>
+      <p>
+        <strong>Review code.</strong> Search for calls to LoadLibrary() and LoadLibraryEx() functions.</p>
+      <li>
+        <p>
+          <strong>Always specify absolute paths.</strong> If you do not specify the absolute path, the OS searches for the library through the library search order. Since the search order will look for DLLs in other locations on the target machine, it may cause the process to load unintended, malicious DLLs. If a malicious DLL is loaded, malicious code will run with the privilege level of the executing process.</p>
+        <li>
+          <p>
+            <strong>Secure the application directory.</strong> Place strong ACLs on the application directory, denying WRITE access to intruders. The &lt;application_name&gt;.local file in the application&#8217;s directory causes the OS to load requested DLLs from that directory, even when absolute paths are used.</p>
+        </li>
+      </li>
+    </li>
+  </ol>
+  <h1>Related Items</h1>
+  <ul>
+    <li>
+      <a href="/article/4a17b938-80d0-455a-a77f-1b786e3ed90b">Load Libraries Safely on Windows</a>
+    </li>
+  </ul>
+  <h1>&nbsp;</h1>

@@ -1,0 +1,9 @@
+<h2>What to Do</h2><p>Protect sensitive data in transit over untrusted networks using TLS with valid certificates.
+</p>
+<h2>Why</h2><p>Using TLS with valid certificates to protect sensitive data in transit prevents this data from being sniffed or tampered with. 
+</p>
+<h2>What to Do</h2><p>To protect sensitive data in transit over untrusted networks using TLS:
+</p><ol>
+<li> <strong>Purchase valid TLS certificates.</strong> You may purchase a valid TLS key from VeriSign, Thawte, or your web hosting provider. Follow the vendor's instructions for purchasing the TLS certificate. The certificate is usually a .cer file. Make sure the certificate matches all domains used by the application.</li>
+<li> <strong>Identify code that sends data over untrusted networks.</strong> It is more practical to secure all communications that to separate the communications that contain sensitive data from those that don't. Make a spreadsheet of all the code that uses networks to transmit data.</li>
+<li> <strong>Use TLS to protect data in transit.</strong> If the code that sends data over the network doesn't already, modify it to only use TLS sockets with valid certificates for network communications.</li></ol>

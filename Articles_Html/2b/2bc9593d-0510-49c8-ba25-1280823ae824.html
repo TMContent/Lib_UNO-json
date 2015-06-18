@@ -1,0 +1,17 @@
+<h2>What to Check For</h2><p>Ensure that the account administration interface is separate from the main application interface.
+</p><h2>Why</h2><p>Account administration requires higher privileges than the main application interface. Separating the two interfaces decreases the risk of a normal user being able to escalate privileges to that of an administrator.
+</p><h2>How to Check</h2><p>Use the following steps to verify that the account administration interface is separate from the main application interface: 
+</p><ol>
+<li> <strong>Verify that your application has a separate administrative interface.</strong> Review your application's design and verify that your application's design specifies separation of administrative and main application interfaces. Verify that all administrative functionality is clearly identified and separated from the rest of your application's functionality. Exceptions are allowed only when your application allows users to modify their own accounts. </li>
+<li> <strong>Verify that account administration code is organized.</strong> Ensure all administrative functionality is structured as a single module and not scattered throughout your application. </li>
+<li> <strong>Verify that re-authentication is required for administrative functions.</strong> Verify that privileged users are forced to re-authenticate before accessing the administrative interface. Check if your application's administrative interface uses a separate authentication module from the rest of your application. </li>
+<li> <strong>Verify that appropriate access controls are used.</strong> Verify that only valid, privileged users can access your application's administrative interface. </li>
+<li> <strong>Verify that TLS is used.</strong> Check if your application's administrative interface is utilizing TLS. </li>
+</ol><h2>How to Fix</h2><p>Use the following steps when designing an administrative interface:
+</p><ol>
+<li> <strong>Only privileged users can administer all accounts.</strong> Design your application such that the administrative module is separate from the main application interface. Since the separation requires using separate authentication mechanisms for the application and administration, there is a reduced risk of escalation-of-privilege attacks. </li>
+<li> <strong>Users may be allowed to administer their own accounts.</strong> It may be necessary to allow users to administer their own accounts. This involves the ability to change passwords, account details, etc. Such administration can be done through the main application interface.</li>
+<li> <strong>Force re-authentication.</strong> Enforce re-authentication when modifying the user's password. This helps verify that the user is aware of the password change and is not a victim of a session hijacking. </li>
+<li> <strong>Modify accounts in sections.</strong> Do not modify all account information at once. Split the account modification procedure in sections. For example, group the account information into credentials, personal data, contact information and additional information. Modifying the account information in groups reduces the risk of information leakage when the user is updating his/her account. </li>
+<li> <strong>Use TLS when modifying accounts.</strong> The use of TLS provides encryption when transmitting sensitive data over the network. TLS also certifies the authenticity of the application against the user.</li>
+</ol>

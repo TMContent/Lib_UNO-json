@@ -1,0 +1,7 @@
+<h2>What to Do</h2><p>Log events associated with the logging subsystem, such as the beginning and the end of logging.
+</p><h2>Why</h2><p>Log events such as the initialization of the logging subsystem to help detect when logs have been stopped to conceal malicious activity.
+</p><h2>How</h2><p>To log events associated with the logging subsystem:
+</p><ol>
+<li> <strong>Identify code used to start and stop logging.</strong> Make a spreadsheet of code that initializes, pauses, or stops logging. This code should naturally be a part of the logging subsystem itself, so it should be easy to find.</li>
+<li> <strong>Add code that generates log entries.</strong> To each piece of code that starts or stops logging, add code that generates log entries indicating that the logging subsystem has been started or stopped.</li>
+</ol>

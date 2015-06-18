@@ -1,0 +1,24 @@
+<h2>Applies To</h2><ul><li> HTML5</li>
+</ul><h2>What to Check For</h2><p>Verify that data exchanged between the server and the Web Workers is validated on the server.
+</p><h2>Why</h2><p>Validate data received by Web Workers to make it harder for an attacker to manipulate the Web Worker's activity via a Man-in-the-middle attack.
+</p><h2>How to Check</h2><p>To verify that data exchanged between the server and the Web Workers is validated:
+</p><ol>
+<li> <strong>Identify all code that exchanges data between Web Workers and the server.</strong> Create a spreadsheet of all code that is used to exchange messages between the Web Worker and the server. This code will be within the script that is used by the Web Worker.</li>
+<li> <strong>Verify that validator functions are called before processing data.</strong> Examine each piece of code that exchanges data between Web Workers and the server to make sure that validator functions are called before the received data is processed. Data that does not pass validation should not be processed. Create a spreadsheet to list the validator functions and the types of data that they validate.</li>
+<li> <strong>Examine validator functions.</strong> Examine each validator function used by Web Workers and make sure that they effectively check whether data matches the expected length, characters (for text data), format (for formatted data), and range (for numerical data). </li>
+</ol><h2>How to Fix</h2><p>To validate data exchanged between the Web Worker and the server:
+</p><ol>
+<li> <strong>Identify all data types exchanged between the Web Workers and the server.</strong> Create a spreadsheet of all data types that are exchanged between the Web Workers and the server.</li>
+<li> <strong>Define valid data formats.</strong> For each type of data in the spreadsheet, define valid characters, length, format, and range (for numerical values).</li>
+<li> <strong>Define validator functions.</strong> Define a set of validator functions that should be used to validate each type of data exchanged between the server and the Web Workers. Data should be validated on the server. </li>
+<li> <strong>Validate length.</strong> Add code to check that the length of the data is valid.</li>
+<li> <strong>Validate characters.</strong> Use regular expressions to restrict the acceptable range of characters in text data.</li>
+<li> <strong>Validate format.</strong> If the data type has a specific pattern, such as a date or a phone number, add code to use regular expressions to make sure data matches the correct type. Use regular expressions to enforce strong password requirements.</li>
+<li> <strong>Validate range.</strong> To restrict the acceptable range of numerical input, compare the data to maximum and minimum acceptable values.</li>
+<li> <strong>Find code that exchanges data between the server and the Web Workers.</strong> Create a spreadsheet of all the code used by the Web Workers that receives data from the server.</li>
+<li> <strong>Use the validator functions.</strong> Identify all code that handles messages received by Web Workers. Add code to use the validator functions before actually processing the messages. If data is not valid, it should not be processed. </li>
+</ol><h2>Web Worker Guidelines</h2><ul><li> <a href="00000000-0000-0000-0000-00000083c4cc">Do Not Pass Code to Web Workers to eval()</a></li>
+<li> <a href="00000000-0000-0000-0000-00000006a783">Validate Data Received by Web Workers</a></li>
+</ul><h2>Web Worker Checklist Items</h2><ul><li> <a href="00000000-0000-0000-0000-000000392041">Web Workers Do Not eval() Data Pased to Them</a></li>
+<li> <a href="00000000-0000-0000-0000-0000002f59fd">Data Received by Web Workers Is Validated</a></li>
+</ul>

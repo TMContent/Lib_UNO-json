@@ -1,0 +1,45 @@
+<h2>What to Do</h2><p>Don't allow user input in format strings. (Re-)Write code to guarantee that user input is never used in format strings.
+</p><h2>Why</h2><p>An attacker who can control the contents of a format string may be able to execute arbitrary code.
+</p><h2>How</h2><p>Perform the following actions to ensure that user input is not used in format strings:
+</p><ol>
+<li> <strong>Identify code that uses formatted input-output functions.</strong> The following is a list of formatted input-output functions:<ul>
+<li> <em>NSLog</em></li>
+<li> <em>stringWithFormat</em></li>
+<li> <em>stringByAppendingFormat</em></li>
+<li> <em>initWithFormat</em></li>
+<li> <em>appendFormat</em></li>
+<li> <em>alertWithMessageText</em></li>
+<li> <em>informativeTextWithFormat</em></li>
+<li> <em>format</em></li>
+<li> <em>appendFormat</em></li>
+<li> <em>predicateWithFormat</em></li>
+<li> <em>sprintf</em></li>
+<li> <em>_snprintf</em></li>
+<li> <em>printf</em></li>
+<li> <em>fprintf</em></li>
+<li> <em>scanf</em></li>
+<li> <em>fscanf</em></li>
+<li> <em>sscanf</em></li>
+<li> <em>swprintf</em></li>
+<li> <em>wsprintfA</em></li>
+<li> <em>wsprintfW</em></li>
+<li> <em>vsprintf</em></li>
+<li> <em>vswprintf</em></li>
+<li> <em>_snwprintf</em></li>
+<li> <em>_vsnprintf</em></li>
+<li> <em>_vsnwprintf</em></li>
+<li> <em>vprintf</em></li>
+<li> <em>vwprintf</em></li>
+<li> <em>vfprintf</em></li>
+<li> <em>vwfprintf</em></li>
+<li> <em>fwscanf</em></li>
+<li> <em>wscanf</em></li>
+<li> <em>swscanf</em></li></ul></li>
+<li> <strong>Avoid using formatted functions.</strong> Consider replacing formatted input-output functions with other functions, which are not prone to format string vulnerabilities.</li>
+<li> <strong>(Re-)Write code to exclude user input from format strings.</strong> Place user input in separate variables and pass it as variadic arguments to the formatted input-output functions, instead of allowing it in format strings.</li>
+</ol><h2>Dangerous API Guidelines</h2><ul><li> <a href="00000000-0000-0000-0000-00000081be72">Avoid Using URL Handlers for Sensitive Operations</a></li>
+<li> <a href="00000000-0000-0000-0000-0000004a6201">Disable Parsing of External XML Entities</a></li>
+<li> <a href="00000000-0000-0000-0000-00000072e73d">Use Static Format Strings</a></li>
+</ul><h2>Dangerous API Checklists</h2><ul><li> <a href="00000000-0000-0000-0000-00000090f889">URL Handlers Are Not Used for Sensitive Operations</a></li>
+<li> <a href="00000000-0000-0000-0000-00000036b1bf">Parsing of External XML Entities Is Disabled</a></li>
+<li> <a href="00000000-0000-0000-0000-0000008ea142">Static Format Strings Are Used</a></li></ul>

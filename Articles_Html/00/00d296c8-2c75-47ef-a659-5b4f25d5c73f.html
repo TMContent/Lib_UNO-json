@@ -1,0 +1,41 @@
+<h1>Applies To</h1><p>Any application that uses user input to build a file name, path string, host name, url, or other resource identifier.
+</p><h1>Description</h1><p>Different forms of input that resolve to the same standard name (the canonical name), is referred to as canonicalization. Code is particularly susceptible to canonicalization issues if it makes security decisions based on the name of a resource that is passed to the program as input. Files, paths, host names, and URLs are resource types that are vulnerable to canonicalization because in each case there are many different ways to represent the same name.
+</p><h1>Impact</h1><ul><li>Unauthorized access.</li>
+<li>Information disclosure.</li>
+<li>Elevation of privilege.</li>
+</ul><h1>Vulnerabilities</h1><ul><li>Making security decisions based on the non-canonical form of resource strings supplied by untrusted input. Common examples of such resource strings include URLs, file names, and file paths.</li>
+</ul><h1>Countermeasures</h1><ul><li>Choose a standard 'canonical' representation for all strings that are used to make security decisions.</li>
+</ul><ul>
+<li>Convert all such strings to their canonical form before making security decisions. For example:<ul>
+<li>Convert URL encoded strings into their unicode equivalent.</li>
+<li>Convert relative paths to absolute paths for files and URL strings.</li></ul></li>
+</ul><ul>
+<li>If available, use common libraries for canonicalization. Only write your own canonicalization routines if absolutely necessary.</li>
+</ul><ul>
+<li>Avoid input file names where possible, and instead use absolute file paths that cannot be changed by the end user.</li>
+</ul><ul>
+<li>Reject incorrectly encoded characters, and do not accept alternate representations of standard characters.</li>
+</ul><ul>
+<li>Check all resource via whitelist, not blacklist.</li>
+</ul><h1>Examples</h1><p>Directory traversal:
+</p><p>
+Suppose a server has a rule to only execute files stored in the C:\inetpub\wwwroot\cgi-bin directory. When a path is supplied to the server, if it does not begin with C:\inetpub\wwwroot\cgi-bin, then it will not be run. Now consider the following path:
+</p><pre>C:\inetpub\wwwroot\cgi-bin\..\..\..\Windows\System32\cmd.exe
+</pre><p>
+This is sufficient to pass the validating rule, but when it is run by the shell, it resolves to the following canonical representation:
+</p><pre>C:\Windows\System32\cmd.exe
+</pre><p>
+This is clearly not what was intended and provides a clear example of why canonicalization is a security risk.
+</p><h1>Additional Resources</h1><ul><li>For more information on Canonicalization, see: <a href="http://en.wikipedia.org/wiki/Canonicalization">http://en.wikipedia.org/wiki/Canonicalization</a></li>
+<li>For more information on Canonicalization, locale, and Unicode, see: <a href="http://www.owasp.org/index.php/Canoncalization,_locale_and_Unicode">http://www.owasp.org/index.php/Canoncalization,_locale_and_Unicode</a></li>
+<li>For more on RFC 3492 - Punycode, see: <a href="http://www.faqs.org/rfcs/rfc3492.html">http://www.faqs.org/rfcs/rfc3492.html</a></li>
+<li>For more on Programming Issues, see: <a href="http://projects.cerias.purdue.edu/secprog/class2/7.Canon_&amp;_DT.pdf">http://projects.cerias.purdue.edu/secprog/class2/7.Canon_&amp;_DT.pdf</a></li>
+<li>For more on Secure Programming for Linux and Unix, see: <a href="http://www.dwheeler.com/secure-programs/Secure-Programs-HOWTO/index.html">http://www.dwheeler.com/secure-programs/Secure-Programs-HOWTO/index.html</a></li>
+<li>For more on How to test for canonicalization issues with ASP.NET, see: <a href="http://support.microsoft.com/kb/887459">http://support.microsoft.com/kb/887459</a></li>
+</ul><h1>Related Items</h1><ul><li><a href="8698cde2-0fdf-4676-a043-ae90e62f55b8">Attack: Command Injection Attack</a></li>
+<li><a href="393a1495-ab5a-430a-81fa-50eebaed0d9a">Attack: Alternate Data Streams Attack</a></li>
+<li><a href="7facca81-ff33-4c7a-862b-e2af2be44e94">Attack: File Name and Path Manipulation Attack</a></li>
+<li><a href="26104b86-2fba-4331-aadb-c02d9921be42">Attack: Forceful Browsing Attack</a></li>
+<li><a href="8482159c-5ec2-4b89-9c65-9af765030ff5">Attack: Information Disclosure Attack</a></li>
+<li><a href="49f1d246-0c79-48dd-90d0-39e52a17d8cc">Attack: Phishing Attack</a></li>
+</ul>

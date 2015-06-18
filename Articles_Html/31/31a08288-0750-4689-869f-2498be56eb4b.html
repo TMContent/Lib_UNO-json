@@ -1,0 +1,29 @@
+<h1>Applies to</h1>
+  <ul>
+    <li>PHP</li>
+  </ul>
+  <h1>What to Do</h1>
+  <p>Require authentication for all private resources.</p>
+  <h1>Why</h1>
+  <p>All pages that have private information should require authentication to prevent unauthorized information disclosure.</p>
+  <h1>How</h1>
+  <p>To require authentication for all private resources:</p>
+  <ol>
+    <li>
+      <p>
+        <strong>Identify all sensitive pages.</strong> Make a list of all pages that handle sensitive or private information.</p>
+    </li>
+    <li>
+      <p>
+        <strong>Define roles.</strong> Define access roles for your application. These roles should include administrative users and various types of users specific to your application.</p>
+    </li>
+    <li>
+      <p>
+        <strong>Implement authentication.</strong> Implement and document authentication APIs to satisfy all application requirements. </p>
+    </li>
+    <li>
+      <p>
+        <strong>Require authentication for all sensitive pages.</strong> Add code to all sensitive pages that checks if the user is authenticated and authorized to view them.</p>
+    </li>
+  </ol>
+  <br />

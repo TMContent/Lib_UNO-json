@@ -1,0 +1,116 @@
+<h1>
+     Applies to 
+  </h1>
+  <ul>
+    <li>J2EE applications and services</li>
+  </ul>
+  <h1>
+     Summary 
+  </h1>
+  <p>Web applications must validate client input in order to check for injection bugs such as SQL injection and cross-site scripting.  Many Web applications rely on client-side scripts that are sent to the client along with Web pages. The application uses these scripts to check for proper format of input data entered into Web forms at the client before the page is submitted to the server, avoiding a round trip for simple format checks such as email addresses, phone numbers, and ZIP codes.  During a client-side script validation bypass attack, the attacker modifies or annuls a client-side script that checks against malicious input in order to successfully submit the input and execute an attack on the application.</p>
+  <p>It is recommended to follow these steps to test for client-side validation bypass bugs in J2EE:</p>
+  <ul>
+    <li>Step 1: Understand attack scenarios </li>
+    <li>Step 2: Analyze causes and countermeasures </li>
+    <li>Step 3: Start testing and exploring </li>
+    <li>Step 4: Execute additional testing</li>
+  </ul>
+  <h1>
+     Step 1: Understand attack scenarios 
+  </h1>
+  <p>First, it is necessary to understand how attackers exploit client-side validation bypass bugs.   Two common ways of bypassing client-side scripts are:</p>
+  <ul>
+    <li>Disabling a client-side script prior to submitting a request </li>
+    <li>Modifying validated data after submitting a request, using an HTTP proxy</li>
+  </ul>
+  <h2>
+    <em>Scenario 1: Disabling a Client-side Script Prior to Submitting a Request</em>
+  </h2>
+  <p>In this scenario, the attacker disables the client-side script by setting his browser options to disable JavaScript before making the actual request to the application server. By doing this, the attacker may submit any sequence of characters to the application.</p>
+  <p>In detail:</p>
+  <ol>
+    <li>Attacker requests a Web page containing input fields, such as a Web form. The application sends a Web page with a client-side input validation script. </li>
+    <li>Attacker receives the Web page and annuls the client-side validation by disabling JavaScript in the browser. </li>
+    <li>Attacker enters malicious data in the input fields and submits the Web form.</li>
+  </ol>
+  <p>Note, however, that many applications, including AJAX-based applications, rely on JavaScript capabilities, so the attacker might be unable to submit the form with JavaScript disabled. If this is the case, the attacker needs to execute the following attack.</p>
+  <h2>
+    <em>Scenario 2: Modifying Validated Data after Submitting a Request by using an HTTP Proxy</em>
+  </h2>
+  <p>In this scenario, the attacker doesn’t modify or disable the client-side script but instead proxies the browser through an HTTP packet-intercepting proxy such as Burp proxy or WebScarab. The attacker then enters well-formed input data into the target input fields and submits the request. The attacker then uses the proxy to intercept the request and change the well-formed input data into a malicious string.</p>
+  <p>In detail:</p>
+  <ol>
+    <li>Attacker requests a Web page containing input fields, such as a Web form. The application sends a Web page with client-side input validation script. </li>
+    <li>Attacker proxies browser through HTTP proxy and enables HTTP packet interception. </li>
+    <li>Attacker enters well-formed (allowed) data in the input fields and then submits the Web form. Since the input is valid, the Web page makes a request to the application, which is intercepted by HTTP proxy. </li>
+    <li>In HTTP proxy, the attacker replaces the well-formed data with malicious data and forwards the packet to the application.</li>
+  </ol>
+  <h1>
+     Step 2: Analyze Causes and Countermeasures 
+  </h1>
+  <p>The second step in testing for client-side validation bypass bugs is to analyze what causes them and how to avoid them.</p>
+  <p>This vulnerability exists because applications rely only on client-side checks for security-specific checks. Many applications send client-side scripts to reduce the number of round-trips between the client and the server.  For instance, the following code checks if an email address is valid before submitting a Web form. When a client clicks on the submit button, the JSP page invokes <strong>validateForm()</strong><em></em>to check for a valid email address before submitting the form:</p>
+  <pre>&lt;%@page contentType="text/html" pageEncoding="UTF-8"%&gt;
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd"&gt;
+&lt;html&gt;<br />&lt;head&gt;<br />&lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8"&gt;<br />&lt;title&gt;Java Search&lt;/title&gt;<br /><br />&lt;script&gt;<br />function validateForm(emailStr)<br />{<br />	// checks if the e-mail address is valid<br />	var emailPat = "^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}$";<br />	var matchArray = emailStr.match(emailPat);<br />	if (matchArray == null)<br />        {<br />		alert("Incorrect email address format");<br />		return false;<br />	}<br />	document.form1.action = "getProfile";<br />   	document.form1.method = "POST";<br />   	docuemnt.form1.submit();<br />   	return true; <br />}<br />&lt;/script&gt; <br />&lt;body&gt;<br /><br />&lt;form name="form1" action="getProfile" method="POST"<br /><strong>onsubmit="return validateForm(this.username.value);</strong>"&gt;<br /><br />Email address: <br />&lt;input type="text" name="username" size="20"&gt;&lt;br/&gt;<br />Password: <br />&lt;input type="password" name="password" size="20"&gt;&lt;br/&gt;<br />&lt;input type="submit" value="Submit"&gt;<br />&lt;/form&gt;<br />&lt;/body&gt;<br />&lt;/html&gt; 
+  </pre>
+  <p>
+  </p>
+  <p>Note that the form invokes a server-side JSP method named <em>getProfile</em> through a validating JavaScript function that alerts the client if the input email address is in an incorrect format. By doing this, the developer avoids a round-trip to the server to check for valid email address formats.</p>
+  <p>A problem arises when developers rely on this kind of check for protecting against application security attacks such as SQL injection, cross-site scripting, command injection, and similar attacks that require attackers to submit ill-intended input to the application.  Attackers can trivially bypass client-side checks, such as the one above, in order to attack the application.</p>
+  <p>To protect against client-side bypass bugs, J2EE applications must perform proper validation at the server:</p>
+  <pre>private boolean validateEmail(String emailStr)<br />{<br />	String emailPat = "[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}"; <br />	if (!emailStr.matches(emailPat))<br />	{<br />		return false;<br />	}<br />	return true;  <br />}<br /><br />protected void processRequest(HttpServletRequest request,<br />			 HttpServletResponse response)<br />            		throws ServletException, IOException<br />{<br /><br />	response.setContentType("text/html;charset=UTF-8");<br />	PrintWriter out = response.getWriter();<br /><br />   	if (!validateEmail(request.getParameter("username")))<br />   	{<br />      		out.println("Invalid email format");<br />	} <br />	else<br />   	{  <br />      		// continue with authentication process...<br />	} <br />}</pre>
+  <p>Note that the code above invokes the validating email function inside <em>processRequest</em>, which runs at the server. The request starts by checking if the email is in the correct format and stops the authentication process if it is not.</p>
+  <h1>
+     Step 3: Start Testing and Exploring 
+  </h1>
+  <p>The next step in discovering client-side validation bypass bugs is to execute basic test cases from an attacker’s perspective in order to discover if they are successful in your application.</p>
+  <h2>
+    <em>Test by Disabling JavaScript in Internet Browser</em>
+  </h2>
+  <p>Follow these steps to test for client-side validation bypass by disabling JavaScript:</p>
+  <ol>
+    <li>Open a browser and navigate to the Web page containing client-side validation script. </li>
+    <li>Open browser Options and navigate to security options. </li>
+    <li>Disable JavaScript and then click OK. </li>
+    <li>Submit ill-intended data in the Web form. </li>
+  </ol>
+  <p>Expected result: The application performs proper server-side validation and rejects the ill-intended data. </p>
+  <h2>
+    <em>Test by Intercepting HTTP Request using a proxy</em>
+  </h2>
+  <p>Follow these steps to bypass client-side validation by modifying a Web page:</p>
+  <ol>
+    <li>Open a browser and navigate to a Web page containing a client-side validation script. </li>
+    <li>Download and execute Burp suite (<a href="http://portswigger.net/suite/">http://portswigger.net/suite/</a>). </li>
+    <li>In <em>Proxy-&gt;Intercept</em> tab, set proxy to “<em>intercept is on</em>.” </li>
+    <li>In browser, set connection options to use Burp proxy. </li>
+    <li>Fill in the Web page with allowed values, such as a valid email address. </li>
+    <li>Submit the Web page. </li>
+    <li>In Burp proxy, modify the intercepted request by changing the allowed values with malformed ones (see Figures 1 and 2 below). </li>
+    <li>Forward request.</li>
+  </ol>
+  <p>Expected result: The application must perform proper server-side validation and reject the ill-intended data.</p>
+  <p>
+    <strong>
+    </strong>
+  </p>
+  <p />
+  <h1>
+         Step 4: Execute Additional Testing 
+      </h1>
+  <p>The final step in testing for client-side validation bugs is to understand additional scenarios where testing is necessary.</p>
+  <h2>
+    <em>AJAX Applications are at High Risk</em>
+  </h2>
+  <p>AJAX (Asynchronous JavaScript and XML) applications rely heavily on client-side scripts. It is important to consider that it is impossible to disable JavaScript when testing for this bug in AJAX applications, as this will stop the browser from making requests; therefore, the use of a proxy is required with AJAX applications.</p>
+  <h2>
+    <em>Consider Additional Frameworks</em>
+  </h2>
+  <p>Web developers might integrate J2EE applications with other Internet frameworks such as Flash/Flex. This kind of framework might provide its own client-side forms with data validation options. Make sure to test Flash parameters for this vulnerability, as developers might rely on Web form validators such as Flex to validate their input at the client only, and fail to do so at the server.</p>
+  <h1>
+         Conclusions 
+      </h1>
+  <p />Client-side validation bypass bugs allow attackers to submit malformed data that is not expected by the application in order to execute input-related attacks such as XSS and SQL injection. Applications are vulnerable when they rely on client-side scripts only to perform security checks instead of implementing these checks at the server. Testing can be done by disabling JavaScript or using an HTTP proxy, depending on the nature of the application under test (traditional, AJAX, Flash, etc).    
+  <p />

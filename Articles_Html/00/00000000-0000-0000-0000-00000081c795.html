@@ -1,0 +1,26 @@
+<h2>Applies To</h2><ul><li> Android applications that authenticate to a remote server.</li>
+</ul><h2>What to Do</h2><p>Use server-side authentication.
+</p><h2>Why</h2><p>Server-side authentication should be used because client-side authentication is trivial to bypass.
+</p><h2>How</h2><ol><li> <strong>Define authentication requirements.</strong> Consider the following aspects of authentication control as they pertain to your application:<ul>
+<li> Enforcing password strength requirements.</li>
+<li> Allowing secure password reset or recovery.</li>
+<li> Requiring re-authentication for sensitive operations.</li>
+<li> Using multi-factor authentication.</li>
+<li> Using simple error messages that don't give away information to the attacker.</li>
+<li> Using SSL/TLS to secure communications.</li>
+<li> Throttling repeated authentication attempts.</li>
+<li> Locking inactive authentication accounts.</li></ul></li>
+<li> <strong>Implement authentication on the server.</strong> It is important to implement security controls such as authentication on the server, because an attacker can tamper with client-side security controls or disable them altogether. Implement authentication controls that match the requirements defined in the previous step on the server back-end. </li>
+<li> <strong>Add client-side code that authenticates to the server.</strong> Once authentication is implemented in accordance with the requirements, add client-side code that authenticates to the server. The client-side code will need:<ul>
+<li> An interface for managing authentication credentials. </li>
+<li> Network code that communicates with the server using SSL/TLS. </li>
+<li> A token or some other means to maintain session state on the server, and possibly secure storage for cached authentication credentials.</li></ul></li>
+</ol><h2>Authentication Guidelines</h2><ul><li> <a href="00000000-0000-0000-0000-000000589e46">Encrypt Authentication Credentials Sent over the Network</a></li>
+<li> <a href="00000000-0000-0000-0000-0000002eb5bd">Implement a Secure Password Reset Function</a></li>
+<li> <a href="00000000-0000-0000-0000-0000002a1fe0">Throttle Authentication Attempts</a></li>
+<li> <a href="00000000-0000-0000-0000-00000081c795">Use Server-side Authentication</a></li>
+</ul><h2>Authentication Checklists</h2><ul><li> <a href="00000000-0000-0000-0000-000000582050">Authentication Credentials Sent over the Network Are Encrypted</a></li>
+<li> <a href="00000000-0000-0000-0000-00000035726e">A Secure Password Reset Function Is Implemented</a></li>
+<li> <a href="00000000-0000-0000-0000-00000016d320">Authentication Attempts Are Throttled</a></li>
+<li> <a href="00000000-0000-0000-0000-00000029e0c4">Authentication Is Implemented on the Server-side</a></li>
+</ul><h2>Additional Resources</h2><ul><li> For more information about authentication requirements, please see <a href="https://www.owasp.org/index.php/Authentication_Cheat_Sheet">https://www.owasp.org/index.php/Authentication_Cheat_Sheet</a></li></ul>

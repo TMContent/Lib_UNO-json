@@ -1,0 +1,22 @@
+<h1>Description</h1><p>Lightweight Directory Access Protocol (LDAP) is a widely used protocol for accessing directory services. Directories provide a set of attributes about people that are organized in a hierarchical manner.  LDAP Injection is a technique to exploit applications that use input from users to query an LDAP directory. LDAP injection has the potential to view, modify, or remove personal information about anyone in the directory. LDAP Injection applies to all applications that use LDAP. 
+</p><h1>Impact</h1><p>LDAP injection allows an attacker to access and/or modify restricted data in the LDAP database. The attacker may leverage this vulnerability to view personal information of users in the database. The attacker may also leverage this vulnerability to give himself administrative privileges or to take over another account. Once the attacker has administrative privileges, he usually has full control of the application. 
+</p><h1>Countermeasures</h1><p>To prevent LDAP injection, validate all input and use parameterized APIs if they are available. 
+</p><p>
+Validate all input:</p><ul>
+<li> <a href="3de41277-0cc1-4ebc-8dd7-e96d161aa0ef">Validate All Input</a></li>
+<li> <a href="e59923e7-c2fb-4a75-8db7-a9a91e869f74">Validate Input for Length, Range, Format, And Type</a></li>
+</ul><h1>Application Check</h1><p>To check for adequate protection against this vulnerability, find all code that queries directories and verify that data included in the queries is sufficiently validated. 
+</p><p>
+All input is validated:</p><ul>
+<li> <a href="a210fcb7-f142-4c2e-844a-c43e0859f90d">All Input Is Validated</a></li>
+<li> <a href="0e71dd64-87d1-4cf5-9569-ea320f209977">Input Is Validated for Length, Range, Format, And Type</a></li>
+</ul><h1>Computer Based Training Links</h1><p>Use the following Computer Based Training course(s) for more background information about this type of vulnerabilities.
+</p><h2>PCI Best Practices for Developers</h2><p>Payment Card Industry Data Security Standards (PCI-DSS) provide minimum requirements for addressing the security of software systems handling credit card information. Addressing the requirements during the design and build stages of the development life cycle improves application security and simplifies compliance. This course will provide software developers with an in-depth understanding of application security issues within the PCI-DSS and best practices for addressing each requirement.
+</p><p>
+<a href="https://teamprofessor.absorbtraining.com/ninja/#/courses/course/127647">COD 222 PCI Best Practices for Developers</a>
+</p><h2>OWASP Top Threats &amp; Mitigations</h2><p>This course examines in depth the vulnerabilities, threats, and mitigations described in the OWASP Top 10 2013. Upon completion of this class, participants will be able to identify and mitigate the greatest threats that web application developers face, including: Injection, Broken Authentication and Session Management, Cross-Site Scripting (XSS), Insecure Direct Object References, Security Misconfiguration, Sensitive Data Exposure, Missing Function Level Access Control, Cross-Site Request Forgery (CSRF), Using Components with Known Vulnerabilities, and Unvalidated Redirects and Forwards.
+</p><p>
+<a href="https://teamprofessor.absorbtraining.com/ninja/#/courses/course/139631">DES 221 OWASP Top Threats &amp; Mitigations</a>
+</p><p>
+<em>Valid login credentials and enrollment in the course itself are required to access Team Professor content. If you need login credentials, please contact support@securityinnovation.com for help.</em>
+</p><h1>Additional Resources</h1><ul><li> For more information about LDAP Injection, see <a href="https://www.owasp.org/index.php/LDAP_injection">https://www.owasp.org/index.php/LDAP_injection</a></li></ul>

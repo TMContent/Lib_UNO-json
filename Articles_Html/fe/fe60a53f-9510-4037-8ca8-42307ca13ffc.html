@@ -1,0 +1,16 @@
+<h2>Description</h2><p>HTTP request smuggling vulnerabilities occur when a proxy or a firewall handles invalid requests in a manner that causes it to issue malicious requests to the web application that it is supposed to be serving or protecting. 
+</p><p>
+For example, sending a request that contains exploit code to a vulnerable HTTP firewall will cause that firewall to forward that exploit code to the web application. This is undesired behavior because the HTTP firewall should have blocked the exploit code. In this case, the application is actually being attacked, but an HTTP request smuggling vulnerability in the HTTP firewall is exploited to make the attack possible.
+</p><p>
+HTTP proxies and firewalls are potentially affected by HTTP request smuggling vulnerabilities.
+</p><h2>Impact</h2><p>The impact of HTTP request smuggling vulnerabilities in HTTP firewalls is that the attacker will be able to bypass the HTTP firewall when attacking the application that the firewall is supposed to be protecting.
+</p><p>
+The impact of HTTP request smuggling vulnerabilities in HTTP proxies is that the attacker can manipulate the content cached by the proxy. The attacker can modify the cached content to display a defaced page, making it look like the application has been compromised, when in reality it is only the proxy that has been compromised. The attacker can also modify the cached content to include malicious script and thus carry out cross-site scripting attacks on the application's users. 
+</p><p>
+In the event of successful compromise of a user's system, the attacker will gain a foothold in the application. If an administrative user account is compromised, the attacker might attempt to inject malicious code into the application or application data. In the event of successful code injection, the attacker will be able to take over the application.
+</p><h2>Countermeasures</h2><p>There are no application security measures that can mitigate HTTP request smuggling vulnerabilities, because these vulnerabilities are in the network devices that developers usually cannot reprogram themselves. To mitigate HTTP request smuggling vulnerabilities, update all systems.
+</p><h2>Application Check</h2><p>To verify that HTTP request smuggling vulnerabilities are mitigated, verify that all systems are updated.
+</p><h2>Specific Technologies</h2><ul><li> <a href="97d90145-e03c-4f62-97fb-9d67b470f54c">ASP.NET HTTP Request Smuggling</a></li>
+<li> <a href="c7f8b8b1-9eda-4e47-9f33-ea2f66b7cf2d">Java HTTP Request Smuggling</a></li>
+<li> <a href="2b8e8e73-cc6e-4e00-bfa8-139c5da9f026">PHP HTTP Request Smuggling</a></li>
+</ul>

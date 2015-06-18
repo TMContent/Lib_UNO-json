@@ -1,0 +1,16 @@
+<h2>Applies To</h2><ul><li> Web Applications</li>
+<li> Server-side</li>
+</ul><h2>What to Do</h2><p>Make sure authentication controls fail securely.
+</p><h2>Why</h2><p>Designing authentication to fail securely when abnormal conditions occur reduces the risk of attackers bypassing authentication by disabling it. At first glance, it might appear that it is best for authentication code not to fail at all, but actually authentication is supposed to fail unless the user authenticates successfully. Aside from entering invalid credentials, aborting the authentication process or trying to cause the authentication code to malfunction should cause the authentication code to fail, but to do so in a safe manner. In the context of this guideline, to authentication failure means a state where authentication has not been passed successfuly, not failure of code to operate correctly. Authentication code should be particularly resilient, since it is often the first line of defense.
+</p><h2>How</h2><p>Use the following best practices to design authentication code to fail securely:
+</p><ol>
+<li> <strong>Use generic error messages.</strong> Show generic error messages that supply the user with feedback denoting that some error happened. These messages should be written in a broad way and should not provide too much information.</li>
+<li> <strong>Use a global exception handler.</strong> Global exception handlers should catch any unforeseen exceptions that occur. These handlers are a safety net mechanism to ensure that the application does not behave in an unexpected way if an error occurs.</li>
+<li> <strong>Catch any specific exceptions first.</strong> Use a generic error message, which ensures that no extra information is disclosed to an attacker through the error messages provided. In this specific exception handler, you could write an error message that is more specific to the error in order to help the user.</li>
+<li> <strong>Always catch the global exception class last.</strong> This picks up any unforeseen errors and keeps your application from leaking potentially harmful information to an attacker or leaving your application in a vulnerable state.</li>
+<li> <strong>Use final clauses.</strong> It is always a best practice to include finally blocks with your try statements, which will ensure that the application reverts back to a secure state when the try block ends. This block will be executed regardless of whether an exception is thrown or not.</li>
+<li> <strong>Handle errors properly.</strong> Implement proper handling of the application state in error handling code by closing all connections to databases or other systems, reverting to lower privileges (if applicable), closing all sensitive files, and logging the failure on the server.</li>
+</ol>
+
+
+

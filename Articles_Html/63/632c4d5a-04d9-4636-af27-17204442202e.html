@@ -1,0 +1,23 @@
+<h1>Applies to</h1>
+  <ul>
+    <li>PHP</li>
+  </ul>
+  <h1>What to Check For</h1>
+  <p>Verify that authentication controls are implemented on the server, rather than in client-side code.</p>
+  <h1>Why</h1>
+  <p>Server-side authentication should be used, because client-side authentication is easy to bypass.</p>
+  <h1>How to Check</h1>
+  <p>To verify that server-side authentication is used:</p>
+  <ol>
+    <li>
+      <p>
+        <strong>Identify authentication controls.</strong> Find code that is responsible for authentication.</p>
+    </li>
+    <li>
+      <p>
+        <strong>Verify that authentication controls are implemented on the server.</strong> Review authentication code to make sure that authentication is performed on the server.</p>
+    </li>
+  </ol>
+  <h1>How to Fix</h1>
+  <p>Most PHP developers write their own authentication functions. The typical solution is to use MySQL to store password hashes in a table, but there are other options. The important part is performing authentication on the server.</p>
+  <br />

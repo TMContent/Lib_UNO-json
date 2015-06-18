@@ -1,0 +1,23 @@
+<h1>What to Check For</h1>
+  <p>Project documentation should include the results of a data flow analysis.</p>
+  <h1>Why</h1>
+  <p>Dataflow analysis helps find vulnerabilities that are related to input validation.</p>
+  <h1>How To Check</h1>
+  <p>Examine project documentation to verify that it includes the results of a data flow analysis.</p>
+  <h1>How To Fix</h1>
+  <p>Perform a data flow analysis by following these steps:</p>
+  <ol>
+    <li>
+      <p>
+        <b>For each input location determine how much you trust the source of input.</b>&nbsp; When in doubt you should give it no trust. </p>
+    </li>
+    <li>
+      <p>
+        <b>Trace the flow of data to each possible output noting along the way any attempts at data validation.</b>&nbsp;Document the flow of data from source to sink.</p>
+    </li>
+    <li>
+      <p>
+        <b>Move to the next input and continue.</b>&nbsp;Document all the data handled by the application.</p>
+    </li>
+  </ol>
+  <br />

@@ -1,0 +1,36 @@
+<h1>What to Check For</h1>
+  <p>Check that all access is denied by default in web server settings and in authorization code.</p>
+  <h1>Why</h1>
+  <p>Denying all access by default assures that only explicitly authorized access is possible.</p>
+  <h1>How to Check</h1>
+  <p>To make sure all access is denied by default:</p>
+  <ol>
+    <li>
+      <p>
+        <strong>Enumerate all sensitive pages.</strong> Make a list of all pages that handle sensitive or private information.</p>
+      <li>
+        <p>
+          <strong>Verify that all access is denied by default on the web server.</strong> Examine the web server configuration to make sure that all access is denied by default unless explicitly authorized.</p>
+        <li>
+          <p>
+            <strong>Verify that all access is denied by default in authorization code. </strong>Review your application's authorization code to make sure that all access is denied by default.</p>
+        </li>
+      </li>
+    </li>
+  </ol>
+  <h1>How to Fix</h1>
+  <p>To deny all access by default:</p>
+  <ol>
+    <li>
+      <p>
+        <strong>Enumerate all sensitive pages.</strong> Make a list of all pages that handle sensitive or private information.</p>
+      <li>
+        <p>
+          <strong>Configure web-server authorization.</strong> Configure the web-server to deny all access by default for all locations that contain sensitive pages or data. The exact procedures are different for different web servers - please, refer to your web server's documentation for detailed instructions on configuring its access control settings.</p>
+        <li>
+          <p>
+            <strong>Deny all access by default in your authorization code. </strong>Implement authorization in your application to deny all access by default.</p>
+        </li>
+      </li>
+    </li>
+  </ol>

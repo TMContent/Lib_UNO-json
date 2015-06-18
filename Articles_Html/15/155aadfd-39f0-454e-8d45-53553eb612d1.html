@@ -1,0 +1,17 @@
+<h1>What to Do</h1>
+  <p>Check your array indexes before use to ensure that the index is within the array bounds.</p>
+  <h1>Why</h1>
+  <p>Array indexing errors, such as buffer overruns can lead to memory being overwritten at arbitrary locations. This can lead to application instability or, with a carefully constructed attack, can lead to code injection.</p>
+  <h1>When</h1>
+  <p>Whenever indexing into an array with a variable or calculated value.</p>
+  <h1>How</h1>
+  <p>Make sure that the following rules are followed: </p>
+  <ul>
+    <li>Make sure that indexes run from zero to n-1, where n is the number of array elements. <li>Where possible, make sure that code does not use input parameters as array indexes. <li>Make sure that any input parameters used as array indexes are validated and constrained to ensure that the maximum and minimum array bounds cannot be exceeded. </li></li></li>
+  </ul>
+  <h1>Problem Example</h1>
+  <p>In the following code the array is indexed without checking to ensure the index is within the array boundaries.</p>
+  <pre>int ArrayIndexing(int index)<br />&#123;<br />&nbsp; return intArray&#91;index&#93;;<br />&#125;</pre>
+  <h1>Solution Example</h1>
+  <p>In the following code the array index is checked before use.</p>
+  <pre>int ArrayIndexing(int index)<br />&#123;<br />&nbsp; if ((index &gt;= 0) &#124;&#124; (index &lt; CLOUD_REG_NUM_PROV_IFCS))<br />&nbsp; &#123;<br />&nbsp; &#9;return -1;<br />  &#125;<br />  return intArray&#91;index&#93;;<br />&#125;</pre>

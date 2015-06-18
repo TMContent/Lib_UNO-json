@@ -1,0 +1,82 @@
+<h1>Applies to</h1>
+  <ul>
+    <li>Java</li>
+  </ul>
+  <h1>What to Check For</h1>
+  <p>Verify that mapping values are used to determine destinations of redirects and forwards</p>
+  <h1>Why</h1>
+  <p>Using mapping values when performing redirects or forwards prevents malicious users from creating hyperlinks that use the redirects or forwards to point to pages other than those intended by the application design.</p>
+  <h1>How to Check</h1>
+  <p>Use the following steps to make sure that mapping values are used for redirects and forwards:</p>
+  <ol>
+    <li>
+      <p>
+        <strong>Identify redirects and forwards.</strong> Review code to find all redirects and forwards.</p>
+      <li>
+        <p>
+          <strong>Examine redirects and forwards.</strong> Look for code that handles parameters. Verify that this code does not accept fully qualified URLs as input for calculating destinations of redirects or forwards. If code uses parameters to calculate destinations of redirects or forwards, verify that only short-hand keywords defined by the application are accepted as input to map to valid and authorized destinations.</p>
+      </li>
+    </li>
+  </ol>
+  <h1>How to Fix</h1>
+  <p>Perform the following actions to calculate destinations of redirects and forwards based on mapping values:</p>
+  <ol>
+    <li>
+      <p>
+        <strong>Identify redirects and forwards.</strong> Review code to find all redirects and forwards.</p>
+      <li>
+        <p>
+          <strong>Enumerate destinations.</strong> Make a list of all destinations pointed to by redirects and forwards.</p>
+        <li>
+          <p>
+            <strong>Define mapping values.</strong> Define mapping values for all destinations used by redirects and forwards. A mapping value is a short identifying string that symbolically represents a resource.</p>
+          <li>
+            <p>
+              <strong>Rewrite redirects and forwards.</strong> Rewrite redirects and forwards to use mapping values as input to calculate the final destinations of redirects or forwards.</p>
+          </li>
+        </li>
+      </li>
+    </li>
+  </ol>
+  <h1>Problem Example</h1>
+  <p>Consider an on-line banking application that has an insecure redirect:</p>
+  <p>
+    <a href="http://www.onlinebank.com/redirect.jsp?url=&#91;destination">http://www.onlinebank.com/redirect.jsp?url=&#91;destination</a>&#93;</p>
+  <p>A phisher may create the following hyperlink to point to his site and send it in spam messages to millions of people:</p>
+  <p>
+    <a href="http://www.onlinebank.com/redirect.jsp?url=www.phisher.com">http://www.onlinebank.com/redirect.jsp?url=www.phisher.com</a>
+  </p>
+  <p>When a user sees a link that appears to point to his bank at onlinebank.com in an e-mail message, he clicks that link and sees a web site that looks exactly like the bank's, but is actually a phishing web site used to steal authentication credentials. The user enters his account number and PIN into the web page, receives an error message telling him to try again, and is redirected to the bank's real site. After entering his credentials again, the user successfully views his account. However, the phisher now has the user's online banking information.</p>
+  <h1>Solution Example</h1>
+  <p>The simplest solution is to get rid of the redirect altogether, but if it is necessary for application design, then mapping values may be used to mitigate this vulnerability. For example, if redirect.jsp is used by the application to redirect to balance.jsp, a mapping value called "page1" may be created to signify balance.jsp. The page redirect.jspshould then be rewritten to accept mapping values as input, instead of URLs. The following URL should then redirect to balance.jsp:</p>
+  <p>
+    <a href="http://www.onlinebank.com/redirect.jsp?map=page1">http://www.onlinebank.com/redirect.jsp?map=page1</a>
+  </p>
+  <p>However, the following malicious hyperlinks will not work, because supplied input will not match any mapping value defined in the application:</p>
+  <p>
+    <a href="http://www.onlinebank.com/redirect.jsp?url=www.phisher.com">http://www.onlinebank.com/redirect.jsp?url=www.phisher.com</a>
+    <br />
+    <a href="http://www.onlinebank.com/redirect.jsp?map=www.phisher.com">http://www.onlinebank.com/redirect.jsp?map=www.phisher.com</a>
+  </p>
+  <h1>Additional Resources</h1>
+  <ul>
+    <li>For more information about unvalidated redirects and forwards, please see <a href="http://www.owasp.org/index.php/Top_10_2010-A10-Unvalidated_Redirects_and_Forwards">http://www.owasp.org/index.php/Top_10_2010-A10-Unvalidated_Redirects_and_Forwards</a></li>
+  </ul>
+  <h1>Redirects and Forwards Guidelines</h1>
+  <ul>
+      <li>
+        <a href="/article/be525e05-0785-4b0c-8266-1ab4a0be08ea">Calculate Destinations of Redirects and Forwards Without User Input</a>
+        <li>
+          <a href="/article/8a8fe651-2168-4c88-b89a-0b6b442da2f8">Use Mapping Values When Redirecting on User Input</a>
+        </li>
+    </li>
+  </ul>
+  <h1>Redirects and Forwards Checklists</h1>
+  <ul>
+      <li>
+        <a href="/article/b77c82d9-0a87-4f01-9943-f3a9fc52b561">Destinations of Redirects and Forwards Are Calculated Without User Input</a>
+        <li>
+          <a href="/article/7bef867d-4dcb-47ea-ac58-651b9552cc1c">Mapping Values Are Used for Redirects and Forwards</a>
+        </li>
+    </li>
+  </ul>

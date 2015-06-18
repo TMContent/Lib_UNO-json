@@ -1,0 +1,13 @@
+<h2>Applies To</h2><ul><li> All iOS applications.</li>
+</ul><h2>What to Do</h2><p>Use stack smashing protection offered by the compiler.
+</p><h2>Why</h2><p>Stack cookies help mitigate buffer overflow vulnerabilities, which can allow attackers to execute commands remotely.
+</p><h2>How</h2><p>To use stack cookies:</p><ol>
+<li> <strong>Open XCode.</strong> Launch the XCode IDE.</li>
+<li> <strong>Add compiler flags.</strong> Add the <em>-fstack-protector-all</em> flag to each file that is to be compiled in the XCode "Compile Sources" window in the "Compiler Flags" column.</li>
+</ol><h2>Memory Management Guidelines</h2><ul><li> <a href="00000000-0000-0000-0000-000000112fc5">Compile Applications with Stack Cookies Enabled</a></li>
+<li> <a href="00000000-0000-0000-0000-0000008d3865">Do Not Reference Freed Objects</a></li>
+<li> <a href="00000000-0000-0000-0000-000000798d06">Use Automatic Reference Counting</a></li>
+</ul><h2>Memory Management Checklists</h2><ul><li> <a href="00000000-0000-0000-0000-000000841cc6">Applications Are Compiled with Stack Cookies Enabled</a></li>
+<li> <a href="00000000-0000-0000-0000-000000842659">Freed Objects Are Not Referenced</a></li>
+<li> <a href="00000000-0000-0000-0000-000000189cf8">Automatic Reference Counting Is Used</a></li>
+</ul>

@@ -1,0 +1,36 @@
+<h2>Applies To</h2><ul><li> Google Android applications that use an instance of the <em>WebView</em> class to process sensitive or personal information.</li>
+</ul><h2>What to Do</h2><p>When using the <em>WebView</em> class, call the <em>clearCache()</em> method after a session finishes to remove any sensitive information from the cache.
+</p><h2>Why</h2><p>Your application maintains its own cache for cookies and session information. If users access a <em>WebView</em> that allows sensitive information to enter the cache, clear the cache database to prevent information leakage.
+</p><h2>When</h2><p>When accessing sensitive information in a <em>WebView</em>.
+</p><h2>How</h2><p>To clear sensitive information from cache:
+</p><ol>
+<li> <strong>Call the clearCache() method.</strong> After initializing a reference to the <em>WebView</em> (i.e., <em>myWebView</em>), call the <em>clearCache()</em> method: <em>final WebView myWebView = (WebView) findViewById (R.id.webView_name); myWebView.clearCache (boolean includeDiskFiles);</em> Typically include true on the <em>clearCache()</em> method to wipe any cache files on the drive. Call this method in the activities’ <em>onPause()</em> or <em>onDestroy()</em> method to ensure that the cache data is removed upon exiting the application. Note that doing so could cause a performance issue if the screen is reoriented during use and the site must reload the <em>onResume()</em> method for the activity, call <em>myWebView.reload()</em> so that the user does not have to reinitiate the URL load.</li>
+<li> <strong>Clear the cache database.</strong> You can also call <em>getApplicationContext().deleteDatabase(web.getSettings().getDatabasePath())</em> to completely delete the cache database. However, this should be unnecessary if the cache files are properly deleted.</li>
+<li> <strong>Disable loading data from the cache.</strong> Enforce no loading from the cache on a <em>WebView</em>. When creating the <em>WebView</em>, invoke: <em>myWebView.getSettings().setCacheMode(WebSettings.LOAD_NO_CACHE);</em>
+Note that this call only prevents loading from the cache and does not prevent or clear cached data.</li>
+</ol><h2>Problem Example</h2><p>As the MyApp developer, you are using a <em>WebView</em> to allow users to purchase items off the company’s auctioning website. The application uses cookies that contain personal information.
+</p><p>
+You clear the cache each time a user clicks a button to load the page. You use an <em>onClick</em> listener with the following code:
+</p><pre>private static final String WEB_SITE = www.myapp.com;
+
+public void onClick(View v) {			
+  myWebView.getSettings().setJavaScriptEnabled(false);
+  myWeb.loadUrl(WEB_SITE);
+  myWeb.clearCache(true);
+}
+</pre><p>
+To continually refresh the page content with new auction updates, you instantiate a thread that calls <em>myWeb.reload()</em> every 60 seconds. A few months after running this code in production, a user loses his Android device. During an incident investigation, the development team discovers that cached data, including the user’s personal information, is still resident in the application’s cache database.
+</p><h2>Solution Example</h2><p>You made the mistake of not clearing the cache each time a user left the application. Although the <em>clearCache</em> method was enforced each time a user-initiated URL lookup occurred, the thread reloading the application continued to create cached data.
+To remedy this, create two methods within the activity:
+</p><pre>public void onResume() {
+  super.onResume();
+  if (myWeb!=null) {web.reload();}
+}
+	
+public void onDestroy() {
+  super.onDestroy();
+  web.clearCache(true);
+}
+</pre><p>
+This code allows the application to clear the cache for each user session.
+</p>

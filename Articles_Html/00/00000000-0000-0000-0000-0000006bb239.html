@@ -1,0 +1,49 @@
+<h2>Applies To</h2><ul><li> ASP.NET</li>
+</ul><h2>What to Check For</h2><p>Ensure that all XML data is syntactically validated on the server by using an XML schema.
+</p><h2>Why</h2><p>An attacker passing malicious XML input can attempt XML injection attacks that aim to exploit your application by overwriting XML data, disclose information from arbitrary URIs, or cause the XML parser to crash or process slowly.
+</p><h2>How To Check</h2><p>To check for this problem, use the following steps:</p><ol>
+<li> <strong>Identify all areas where the application generates or consumes XML data.</strong> During the design phase, enumerate all areas where XML data is generated or parsed by the application. Examine the code during the implementation phase for areas that may have been missed.</li>
+<li> <strong>Identify XML schemas which describe the XML data.</strong> All XML data generated or parsed should have an associated XML schema such as an XSD file, and ensure that the schema is being used.</li>
+<li> <strong>Ensure quality of XML schemas.</strong> Ensure that the XML schemas tightly define the structure and format of the XML data by using built-in and custom defined element types such as <em>xs:date</em>.</li>
+</ol><h2>How To Fix</h2><p>XML can be validated using the <em>System.Xml.XmlReader</em> and the <em>System.Xml.XmlReaderSettings</em> classes. Instantiate an <em>XmlReaderSettings</em> object and use the <em>XmlSchemaSetSchemas</em> property to add one or more XSD files. Then set the <em>ValidationType</em> property to <em>ValidationType.Schema</em>. Finally instantiate an <em>XmlReader</em> object using the <em>XmlReader.Create()</em> method which takes the XML Data and the <em>XmlReaderSettings</em> object.
+</p><p>
+An example of validation using an XML Schema, XML validation errors will result in an <em>Exception</em>.</p><pre>using System.Xml;
+using System.Xml.Schema;
+XmlReaderSettings xmlSettings = new XmlReaderSettings();
+xmlSettings.Schemas.Add("http://www.example.com/types", "types.xsd");
+xmlSettings.ValidationType = ValidationType.Schema;
+XmlReader xmlData = XmlReader.Create("data.xml", xmlSettings);
+</pre><p>
+An example of an XML Schema which describes a person and tightly defines four elements, name, dob, phone, and employmentStatus:</p><pre>&lt;!--?xml version="1.0"?--&gt;
+&lt;xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;xs:element name="person"&gt;
+    &lt;xs:complextype&gt;
+      &lt;xs:sequence&gt;
+        &lt;xs:element name="name"&gt;
+          &lt;xs:simpletype&gt;
+            &lt;xs:restriction base="xs:string"&gt;
+              &lt;xs:pattern value="[a-zA-Z ]+"&gt;&lt;/xs:pattern&gt;
+            &lt;/xs:restriction&gt;
+          &lt;/xs:simpletype&gt;
+        &lt;/xs:element&gt;
+        &lt;xs:element name="dob" type="xs:date"&gt;&lt;/xs:element&gt;
+        &lt;xs:element name="phone"&gt;
+          &lt;xs:simpletype&gt;
+            &lt;xs:restriction base="xs:string"&gt;
+              &lt;xs:pattern value="[0-9]{10}"&gt;&lt;/xs:pattern&gt;
+            &lt;/xs:restriction&gt;
+          &lt;/xs:simpletype&gt;
+        &lt;/xs:element&gt;
+        &lt;xs:element name="employmentStatus"&gt;
+          &lt;xs:simpletype&gt;
+            &lt;xs:restriction base="xs:string"&gt;
+              &lt;xs:enumeration value="Unemployed"&gt;&lt;/xs:enumeration&gt;
+              &lt;xs:enumeration value="Employed"&gt;&lt;/xs:enumeration&gt;
+            &lt;/xs:restriction&gt;
+          &lt;/xs:simpletype&gt;
+        &lt;/xs:element&gt;
+      &lt;/xs:sequence&gt;
+    &lt;/xs:complextype&gt;
+  &lt;/xs:element&gt;
+&lt;/xs:schema&gt;
+</pre>

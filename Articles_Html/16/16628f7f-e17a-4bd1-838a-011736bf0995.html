@@ -1,0 +1,42 @@
+<h2>Applies To</h2><ul><li> HTML5 and Javascript</li>
+</ul><h2>What to Check For</h2><p>Verify that the <em>origin</em> property of WebSocket messages is validated against the expected fully qualified domain name(s) (FQDNs).
+</p><h2>Why</h2><p>Validating the full FQDN eliminates the false positives that may occur if you validate only part of the domain name. For example, if you merely verify that the origin begins with or contains <tt>http://www.example.com</tt>, an intruder could use a malicious origin such as <tt>http://www.example.com.hackers.net</tt> to achieve a false positive match, and to inject malicious code or harmful values.
+</p><h2>How To Check</h2><p>To verify that the <em>origin</em> property of web messages is validated against expected FQDNs:</p><ol>
+<li> <strong>Find code that processes web messages.</strong> Search application code for functions that handle web messages in server-sent events, Web sockets, cross-document messaging, and channel messaging. These functions can be found by searching for <em>onmessage</em> event handlers. Create a spreadsheet to list all code that receives web messages.</li>
+<li> <strong>Identify the allowed FQDNs from which a message will be accepted</strong>. Always use a whitelist approach. Gather a list of the valid domains and be as strict as possible. Include only the domains from which you want to process messages.</li>
+<li> <strong>Verify that message origin is validated before messages are handled.</strong> Examine each piece of code that handles web messages. Make sure that the event origin is validated before data is processed. Use a whitelist approach, so that only data from the explicitly authorized domains is processed.</li>
+</ol><h2>How To Fix</h2><p>To check the origin against one or more FQDNs to ensure that the origin is acceptable:
+</p><ol>
+<li> <strong>Create a white list of the server(s) allowed to send messages to the client</strong>. Limit the list to only the servers that are required today. Avoid adding unnecessary servers or domains “just in case”.</li>
+<li> <strong>To validate the origin against a single server, use the JavaScript <tt>===</tt> operator to test equality</strong>. The <tt>===</tt> operator tests equality between the expected server name and the actual server name. (While the <tt>==</tt> operator will also work, the <tt>===</tt> operator skips the type conversion and is therefore faster. Since the origin property is expected to be a string, type conversion is unnecessary.) The example below compares an origin to an expected value:<br>
+<tt>if (event.origin ===</tt> <tt>'http://www.example.com'</tt>) 
+<em>{</em> do processing here because the origin is from an expected domain}<em></em></li>
+<li> <strong>To validate the origin against several server names or ports, use a regular expression</strong>. The following example will match the FQDN from either HTTP or HTTPS:</li>
+</ol><pre>window.addEventListener('message', messageHandler, false);
+function messageHandler(event) {
+
+  var re = new RegExp("^https?://www.example.com$");
+
+  if (re.test(event.origin)) {
+   // validate the message as data, then process…
+  } else {
+    // the event is not from who you expect...
+  }
+}
+</pre><p>
+<br>
+</p><h2>Web Messaging Guidelines</h2><ul><li> <a href="00000000-0000-0000-0000-00000012aada">Do Not Evaluate Messages as Code</a></li>
+<li> <a href="00000000-0000-0000-0000-00000010eb47">Use element.textContent to Assign Values to DOM Elements</a></li>
+<li> <a href="00000000-0000-0000-0000-00000076ad87">Explicitly State the Expected Origin with postMessage</a></li>
+<li> <a href="00000000-0000-0000-0000-0000006ab8ac">Validate Data Received by Event Handlers</a></li>
+<li> <a href="00000000-0000-0000-0000-00000085babd">Validate the Origin Attribute Against the FQDN</a></li>
+<li> <a href="00000000-0000-0000-0000-000000763637">Check The Origin Attribute of Messages</a></li>
+</ul><h2>Web Messaging Checklist Items</h2><ul><li> <a href="00000000-0000-0000-0000-0000008e9b8f">Messages Are Not Evaluated as Code</a></li>
+<li> <a href="00000000-0000-0000-0000-00000060fefb">Element.textContent Is Used to Assign Values to DOM Elements</a></li>
+<li> <a href="00000000-0000-0000-0000-0000004a4216">Expected Origin Is Explicitly Stated with postMessage</a></li>
+<li> <a href="967c9b95-2319-4741-a6fd-1b4bcdf3b636">Data Received by Event Handlers Is Validated</a></li>
+<li> <a href="16628f7f-e17a-4bd1-838a-011736bf0995">The Origin Attribute Is Validated Against the FQDN</a></li>
+<li> <a href="f103974e-3a42-4837-b04b-7da7e87c41ec">The Origin Attribute of Messages Is Checked</a></li>
+</ul>
+
+

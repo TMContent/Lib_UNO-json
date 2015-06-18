@@ -1,0 +1,8 @@
+<h2>Applies To</h2><ul><li> C++</li>
+</ul><h2>What to Do</h2><p>Release all system resources after using them.
+</p><h2>Why</h2><p>Release system resources after using them to prevent resource exhaustion. If the program does not diligently release resources after using them, the attacker might be able to manipulate the application to use up a large amount of system resources, potentially causing the application or even the system it is running on to become slow or unusable.
+</p><h2>How</h2><p>To release all system resources after using them:
+</p><ol>
+<li> <strong>Identify all resources used by the application.</strong> Make a spreadsheet of all system resources used by each source code file in the application. Examples of system resources are filesystem objects, sockets, process handles, and database connections.</li>
+<li> <strong>Verify that code that uses resources releases them.</strong> Examine each piece of code that uses a system resource, and add code that releases the system resource after it has been used.</li>
+</ol>

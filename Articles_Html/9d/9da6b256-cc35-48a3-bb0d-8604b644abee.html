@@ -1,0 +1,12 @@
+<h2>What to Check For</h2><p>Make sure that users are not allowed to execute custom database queries.
+</p><h2>Why</h2><p>Prevent users from executing custom queries to prevent this feature from being abused to bypass access controls or use the database system in an unintended and malicious manner.
+</p><h2>How to Check</h2><p>To verify that users are not allowed to execute custom database queries:
+</p><ol>
+<li> <strong>Find code that executes database queries.</strong> Make a spreadsheet of all the code that executes database queries.</li>
+<li> <strong>Identify code that allows users to execute custom queries.</strong> Custom queries are those where the syntax of the query can be manipulated by the user, instead of just letting the user to change query parameters. Review all code that executes database queries to find features that allow users to execute custom queries. </li>
+</ol><h2>How to Fix</h2><p>To prevent application's users from executing custom queries:
+</p><ol>
+<li> <strong>Find code that executes database queries.</strong> Make a spreadsheet of all the code that executes database queries.</li>
+<li> <strong>Identify code that allows users to execute custom queries.</strong> Review all code that executes database queries to find features that allow users to execute custom queries. Custom queries are those where the syntax of the query can be manipulated by the user, instead of just letting the user to change query parameters.</li>
+<li> <strong>Remove code that allows users to execute custom queries.</strong> If any code or features that allow users to manipulate database query syntax are present, remove them.</li>
+</ol>

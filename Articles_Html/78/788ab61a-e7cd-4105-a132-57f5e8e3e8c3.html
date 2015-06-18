@@ -1,0 +1,18 @@
+<h1>Applies to</h1>
+  <ul>
+    <li>C&#43;&#43;</li>
+  </ul>
+  <h1>What to Check For</h1>
+  <p>Verify that the sizeof() function is used to determine sizes of objects and types instead of hardcoding memory sizes of objects.</p>
+  <h1>Why</h1>
+  <p>Different platforms may represent the same data structures differently in memory. Using hardcoded values for object memory sizes may result in errors when performing memory management operations.</p>
+  <h1>How to Check</h1>
+  <p>Identify all code where it is necessary to calculate sizes of objects in memory. Verify that the sizeof() function is used to determine sizes of objects in memory.</p>
+  <h1>How to Fix</h1>
+  <p>Use sizeof() to measure sizes of objects in memory.</p>
+  <h1>Related Items</h1>
+  <ul>
+    <li>
+      <a href="/article/baa5a0b3-8b7d-4c91-a6f5-ac287c62e8db">Use sizeof() to Determine Sizes of Objects</a>
+    </li>
+  </ul>

@@ -1,0 +1,24 @@
+<h1>Applies to</h1>
+  <ul>
+    <li>C&#43;&#43;</li>
+  </ul>
+  <h1>What to Check For</h1>
+  <p>Verify that all functions that may cause errors either throw exceptions or return error codes.</p>
+  <h1>Why</h1>
+  <p>It is preferable to throw exceptions, but it is better to return error codes than not handle errors at all. Exceptions should be used for error handling when possible. An older, less effective approach to error handling is called error codes, when a function returns values that correspond to error conditions. If, for some reason, exceptions are not being used, error codes should be used for error handling instead.</p>
+  <h1>How to Check</h1>
+  <p>Identify all functions that may cause errors. Verify that all functions that may cause errors throw exceptions or return error codes.</p>
+  <h1>How to Fix</h1>
+  <p>Identify all functions that may cause errors. Add code that either throws exceptions or returns error codes when error conditions occur.</p>
+  <h1>Related Items</h1>
+  <ul>
+    <li>
+      <a href="/article/d0a056d3-aaed-4ccc-8b8c-e88da2df5e84">Where Exceptions Aren't Possible, Return Error Codes</a>
+      <li>
+        <a href="/article/72900050-60e7-4562-9812-2f80bf0310bb">C&#43;&#43; Exceptions are used where possible</a>
+        <li>
+          <a href="/article/e4a3052e-13f2-4062-9a83-49185ff14b0a">Centralize Error Handling</a>
+        </li>
+      </li>
+    </li>
+  </ul>

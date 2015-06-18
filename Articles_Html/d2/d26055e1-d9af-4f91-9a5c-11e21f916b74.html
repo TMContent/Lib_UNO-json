@@ -1,0 +1,13 @@
+<h2>Description</h2><p>HTTP response smuggling vulnerabilities occur when an HTTP firewall or proxy sends multiple HTTP responses to the client when the device expects to pass only a single response to the client. The application sends a malformed response to a client's request, and this causes the HTTP firewall or proxy to send multiple responses to the client. 
+</p><p>
+Even though the application has to send a malformed response for the attack to succeed, this is a vulnerability in the HTTP firewall or proxy. Since the application does need to send a malformed response, an additional vulnerability—called HTTP response splitting—needs to be present in the application in order to exploit an HTTP response smuggling vulnerability.
+</p><p>
+HTTP firewalls and proxies are potentially affected by HTTP response smuggling vulnerabilities.
+</p><h2>Impact</h2><p>The impact of HTTP response smuggling is that the attacker will be able to bypass the HTTP firewall or proxy to perform an HTTP response splitting attack. Note that an HTTP response splitting vulnerability must be present in the application for this attack vector to work. The rest of the attack scenario is the same as for a regular HTTP response splitting vulnerability. 
+</p><p>
+In some cases, HTTP response smuggling might result in HTTP responses from the application that appear to come from another domain, which is a form of spoofing. For this attack vector to work, the client has to expect data from the domain being spoofed, and the timing has to be very precise, so this type of attack is not likely to occur outside of a controlled environment.
+</p><h2>Countermeasures</h2><p>HTTP response smuggling is a vulnerability in the HTTP firewall or proxy, so there is no application security countermeasure to prevent it. To prevent HTTP response smuggling, update all network devices.
+</p><h2>Application Check</h2><p>To verify that HTTP response smuggling is preventing, make sure that all network devices are updated.
+</p><h2>Specific Technologies</h2><ul><li> <a href="b70f0b57-4a99-4883-a252-caba24083e2e">ASP.NET HTTP Response Smuggling</a></li>
+<li> <a href="c7f8b8b1-9eda-4e47-9f33-ea2f66b7cf2d">Java HTTP Response Smuggling</a></li>
+<li> <a href="2b8e8e73-cc6e-4e00-bfa8-139c5da9f026">PHP HTTP Response Smuggling</a></li></ul>

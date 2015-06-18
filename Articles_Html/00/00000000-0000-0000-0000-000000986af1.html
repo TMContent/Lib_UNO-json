@@ -1,0 +1,25 @@
+<h2>Applies To</h2><ul><li> All iOS applications.</li>
+</ul><h2>What to Do</h2><p>Sign application binaries for distribution.
+</p><h2>Why</h2><p>Cryptographically signing applications assures that the application binary has not been tampered with and that it came from a trusted source. Applications have to be signed with a trusted certificate to run on iOS.
+</p><h2>How</h2><p>To sign iOS applications:
+</p><ol>
+<li> <strong>Prepare the application for the release.</strong> Build the application in release mode. Remove or disable any development settings or code from the application. Disable support for self-signed TLS certificates if it has been enabled. Disable generation of log entries that were used for debugging. Disable file sharing by default if the application supports it. Make sure the default application settings are secure. Make sure the application does not use any private iOS APIs.</li>
+<li> <strong>Create a distribution provisioning profile.</strong> You have to be a member of the iOS Developer Program to publish iOS applications. Once you have an account, you can go to the iOS Dev Center and submit requests for provisioning profiles. Download the new distribution profile.</li>
+<li> <strong>Install the distribution provisioning profile.</strong> Double-click the downloaded distribution profile and it should be added to Xcode.</li>
+<li> <strong>Create an application archive.</strong> Build your application and create the .ipa file. Make sure that Xcode is configured to build the application in release mode and using the correct distribution profile.</li>
+<li> <strong>Examine the application record in iTunes Connect.</strong> Go to iTunes connect and fill out the forms to create the application record, if necessary.</li>
+<li> <strong>Submit the application for publication.</strong> Go to <em>Product</em>, <em>Archive</em> in XCode and follow on-screen instructions to submit the application for approval.</li>
+<li> <strong>Wait for approval notification.</strong> The e-mail account associated with the iOS Developer Program account should receive a notification regarding the status of the approval process. This might take a week or more, but after it is finished, the application should be signed and ready for distribution.</li>
+</ol><h2>Code Integrity Guidelines</h2><ul><li> <a href="00000000-0000-0000-0000-0000002e3de4">Implement Code Integrity Checks</a></li>
+<li> <a href="00000000-0000-0000-0000-000000470103">Sign iOS Application Updates</a></li>
+<li> <a href="00000000-0000-0000-0000-000000986af1">Sign iOS Applications</a></li>
+</ul><h2>Code Integrity Checklists</h2><ul><li> <a href="00000000-0000-0000-0000-0000002d9dac">Code Integrity Checks Are Implemented</a></li>
+<li> <a href="00000000-0000-0000-0000-000000892dc7">iOS Application Updates Are Signed</a></li>
+<li> <a href="00000000-0000-0000-0000-00000039db6a">iOS Applications Are Signed</a></li>
+</ul><h2>Additional Resources</h2><ul><li> For the "iOS Code Signing Setup, Process, and Troubleshooting" guide, please see <a href="http://developer.apple.com/library/ios/#technotes/tn2250/_index.html">http://developer.apple.com/library/ios/#technotes/tn2250/_index.html</a></li>
+<li> For the "Tools Workflow Guide for iOS", please see <a href="http://developer.apple.com/library/ios/#documentation/Xcode/Conceptual/ios_development_workflow/00-About_the_iOS_Application_Development_Workflow/introduction.html">http://developer.apple.com/library/ios/#documentation/Xcode/Conceptual/ios_development_workflow/00-About_the_iOS_Application_Development_Workflow/introduction.html</a></li>
+<li> For information about creating a distribution provisioning profile, please see <a href="http://developer.apple.com/library/ios/#recipes/ProvisioningPortal_Recipes/CreatingaDistributionProvisioningProfile/CreatingaDistributionProvisioningProfile.html">http://developer.apple.com/library/ios/#recipes/ProvisioningPortal_Recipes/CreatingaDistributionProvisioningProfile/CreatingaDistributionProvisioningProfile.html</a></li>
+<li> For the "iOS Team Administration Guide", please see <a href="http://developer.apple.com/library/ios/#documentation/ToolsLanguages/Conceptual/DevPortalGuide/Introduction/Introduction.html">http://developer.apple.com/library/ios/#documentation/ToolsLanguages/Conceptual/DevPortalGuide/Introduction/Introduction.html</a></li>
+<li> For information about configuring applications for App Store submission, please see <a href="http://developer.apple.com/library/ios/#documentation/Xcode/Conceptual/ios_development_workflow/15-Configuring_Applications/configuring_applications.html#//apple_ref/doc/uid/TP40007959-CH19-SW15">http://developer.apple.com/library/ios/#documentation/Xcode/Conceptual/ios_development_workflow/15-Configuring_Applications/configuring_applications.html#//apple_ref/doc/uid/TP40007959-CH19-SW15</a></li>
+<li> For a tutorial on submitting applications to the App Store, please see <a href="http://www.raywenderlich.com/8003/how-to-submit-your-app-to-apple-from-no-account-to-app-store-part-1">http://www.raywenderlich.com/8003/how-to-submit-your-app-to-apple-from-no-account-to-app-store-part-1</a></li>
+</ul>

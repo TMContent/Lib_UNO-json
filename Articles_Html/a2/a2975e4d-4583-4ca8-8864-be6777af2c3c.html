@@ -1,0 +1,22 @@
+<h1>Applies to</h1>
+  <ul>
+    <li>PCI DSS Requirement 3.4.1.a </li>
+    <li>PCI DSS Requirement 3.4.1.b</li>
+  </ul>
+  <h1>What to Check For</h1>
+  <p>Disk encryption should use its own authentication mechanism. The disk encryption keys should be stored securely, such as on a removable media that is protected with strong access controls and physical security.</p>
+  <h1>Why</h1>
+  <p>Disk encryption should use an authentication mechanism separate from the rest of the network to make it more difficult for a potential attacker to get the encryption key, especially in the event of an insider attack.</p>
+  <h1>How to Check</h1>
+  <p>Examine the disk encryption authentication process to make sure it uses credentials different than those used on the network. Examine the disk encryption key storage location to make sure it is protected with strong access controls.</p>
+  <h1>How to Fix</h1>
+  <p>Decide whether to use whole disk encryption. Identify a disk encryption application that uses its own secure authentication mechanism, such as a password or a key file. Install and configure the chosen disk encryption suite. Secure the disk encryption keys
+ with strong access controls and physical security.</p>
+  <h1>Related Items</h1>
+  <ul>
+    <li>
+      <p>
+        <a href="/article/28ab3f5d-263e-4e1f-8c26-cef952f488f8">Erase Files Securely</a>
+      </p>
+    </li>
+  </ul>

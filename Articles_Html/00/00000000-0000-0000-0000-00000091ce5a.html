@@ -1,0 +1,29 @@
+<h2>Applies To</h2><ul><li> HTML5</li>
+</ul><h2>What to Check For</h2><p>Ensure that TCP connections are not tunneled via WebSockets. Instead, those connections are made through standard TCP ports. 
+</p><h2>Why</h2><p>Do not use WebSockets to tunnel TCP connections for several reasons:</p><ul>
+<li> Web proxies may not necessarily support the WebSockets upgrade to the HTTP port protocol.</li>
+<li> Tunneling non-HTTP and non-HTTPS traffic through ports 80 and 443 will circumvent firewall rules that may be in place for a larger reason. If you offer support for TCP tunneling by turning your web server into a network proxy, you may undermine standard security infrastructure, such as firewalls and secure gateways.</li>
+<li> Data sent through tunneled TCP connections via WebSockets may not be securely transmitted—particularly if the connection is sent via <tt>ws://</tt> rather than <tt>wss://</tt>. The WebSockets connection may not employ the same security and care as the standard TCP connection. This could expose the connection to eavesdropping or other exploits.</li>
+</ul><h2>How To Check</h2><p>To verify that TCP connections are not tunneled via WebSockets:
+</p><ol>
+<li> <strong>Find instances of code that uses WebSockets.</strong> Look for instances where a WebSocket is created, such as: <tt>var socket = new WebSocket(url);</tt></li>
+<li> <strong>Review the code to ensure the code is not used for tunneling TCP connections.</strong> Look for any code that uses a port that is not 80 or 443. Also look for code that uses TCP sockets, such as the <em>Socket</em> object.</li>
+</ol><h2>How To Fix</h2><p>Perform a thorough review of your applications and remove instances of TCP tunneling if you find any in the review. To perform the review, follow these steps:
+</p><ol>
+<li> <strong>Find instances of code that uses WebSockets.</strong> Look for instances where a WebSocket is created, such as: <tt>var socket = new WebSocket(url);</tt></li>
+<li> <strong>Review the code to ensure the code is not used for tunneling TCP connections.</strong> Look for any code that uses a port that is not 80 or 443. Also look for code that uses TCP sockets, such as the <tt>Socket</tt> object.</li>
+<li> <strong>Remove code that performs tunneling.</strong> If you find any code that you suspect of TCP tunneling, remove the offending code from the application.</li>
+<li> <strong>If tunneling is necessary, replace the tunneling with secure techniques such as VPN (virtual private networking).</strong> Use industry-standard mechanisms for providing access to required services. Define and implement access policies that use these mechanisms.</li>
+</ol><h2>WebSocket Guidelines</h2><ul><li> <a href="00000000-0000-0000-0000-000000869806">Validate Data Coming from WebSockets</a></li>
+<li> <a href="00000000-0000-0000-0000-00000093dea4">Check the Origin Header in the WebSocket Handshake</a></li>
+<li> <a href="00000000-0000-0000-0000-0000005f2e4a">Use TLS to Encrypt WebSocket Connections</a></li>
+<li> <a href="00000000-0000-0000-0000-000000736a21">Check the Origin Attribute of WebSocket Messages</a></li>
+<li> <a href="00000000-0000-0000-0000-0000005326a8">Use the Latest WebSocket RFC 6455 Standard</a></li>
+<li> <a href="00000000-0000-0000-0000-00000085bc2f">Do Not Tunnel TCP via WebSockets</a></li>
+</ul><h2>WebSocket Checklist Items</h2><ul><li> <a href="00000000-0000-0000-0000-00000086537e">Data Coming from WebSockets Is Validated</a></li>
+<li> <a href="00000000-0000-0000-0000-00000077e316">The Origin Header in WebSocket Handshake is Checked</a></li>
+<li> <a href="bd870268-f104-4f6f-ba0d-6628dc34eb2a">TLS is Used to Encrypt WebSocket Connections</a></li>
+<li> <a href="00000000-0000-0000-0000-0000002f39d7">The Origin Attribute of WebSocket Messages Is Checked</a></li>
+<li> <a href="18d5564d-00a4-4afe-a853-707269df2566">Latest RFC 6455 Standard is Used</a></li>
+<li> <a href="00000000-0000-0000-0000-00000091ce5a">TCP Is Not Tunneled via WebSockets</a></li>
+</ul>

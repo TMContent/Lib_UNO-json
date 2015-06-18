@@ -1,0 +1,19 @@
+<h2>Applies To</h2><ul><li> HTML5</li>
+</ul><h2>What to Check For</h2><p>Verify that user permission is required before using geopositioning.
+</p><h2>Why</h2><p>Ask the user for permission before using geopositioning functionality to avoid privacy issues.
+</p><h2>How to Check</h2><p>To verify that user permission is required to use geopositioning functions:
+</p><ol>
+<li> <strong>Identify if the application uses geopositioning.</strong> Search the application code for the use of getCurrentPosition and watchPosition functions to identify whether the application uses geopositioning. Create a spreadsheet to list each piece of code that calls these functions.</li>
+<li> <strong>Verify that the user is asked for permission to use geopositioning.</strong> Log in to the application and access the functions that require geopositioning. Take note of whether the application asks you for permission before using geopositioning.</li>
+</ol><h2>How to Fix</h2><p>To ask the user for permission before calling geopositioning functions:
+</p><ol>
+<li> <strong>Determine if the application uses geopositioning.</strong> Search the application code for use of the getCurrentPosition and watchPosition functions to determine whether the application uses geopositioning. Create a spreadsheet to list each piece of code that calls these functions.</li>
+<li> <strong>Write a message asking the user for permission to use geopositioning.</strong> If the application uses geopositioning functions, write a polite message explaining to the user the benefits of using them, and asking for permission to use these functions. </li>
+<li> <strong>Ask the user for permission to use geopositioning.</strong> For each piece of code that uses getCurrentPosition and/or watchPosition functions, add code that displays the message from the previous step. Add a conditional statement that only executes code that uses getCurrentPosition and/or watchPosition functions if the user has granted permission to do so.</li>
+</ol><h2>Privacy and Trust Guidelines</h2><ul><li> <a href="00000000-0000-0000-0000-0000001de66c">Ask User Permission Before Using Geopositioning</a></li>
+<li> <a href="00000000-0000-0000-0000-000000364213">Ask User Permission Before Sending a Manifest</a></li>
+<li> <a href="00000000-0000-0000-0000-0000003b92c3">Tell Users to Clear the Cache after Browsing Through Untrusted Networks</a></li>
+</ul><h2>Privacy and Trust Checklist Items</h2><ul><li> <a href="00000000-0000-0000-0000-0000006e3400">The User Is Asked for Permission Before Geopositioning</a></li>
+<li> <a href="00000000-0000-0000-0000-00000085555d">The User Is Asked for Permission Before Sending a Manifest</a></li>
+<li> <a href="00000000-0000-0000-0000-0000003087b2">Users Are Told to Clear the Cache After Browsing Through Untrusted Networks</a></li>
+</ul>

@@ -1,0 +1,15 @@
+<h2>Applies To</h2><ul><li> ASP.NET 4.0</li>
+</ul><h2>What to Check For</h2><p>Make sure that parameterized mail APIs are used instead of custom SMTP client code implemented by the application.
+</p><h2>Why</h2><p>Using APIs that provide SMTP functionality is better than writing your own SMTP client code because it reduces the risk of introducing Mail Command Injection vulnerabilities. Most Web Application platforms provide APIs that can be used to send email and these APIs should be used instead of custom SMTP client code. 
+</p><h2>When</h2><p>Use this Guideline when your application sends email.
+</p><h2>How to Check</h2><p>To verify that parameterized APIs are used to send email:
+</p><ol>
+<li> <strong>Identify code that sends email.</strong> Review application code to find functions that send email. </li>
+<li> <strong>Identify available email APIs.</strong> Review platform documentation to find available APIs that can be used to send email.</li>
+<li> <strong>Verify that parameterized APIs are used to send email.</strong> Examine code that sends email to make sure that it uses platform-provided APIs that send email, instead of implementing custom SMTP client code.</li>
+</ol><h2>How to Fix</h2><p>To use parameterized APIs to send e-mail:
+</p><ol>
+<li> <strong>Identify code that sends email.</strong> Review application code to find functions that send email. </li>
+<li> <strong>Identify available email APIs.</strong> Review platform documentation to find available APIs that can be used to send email.</li>
+<li> <strong>Use parameterized email APIs.</strong> If the application uses custom SMTP client code to send email, replace that code with calls to email APIs provided by the platform.</li>
+</ol>

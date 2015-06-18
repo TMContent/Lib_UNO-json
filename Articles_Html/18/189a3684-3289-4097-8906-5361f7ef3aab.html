@@ -1,0 +1,23 @@
+<h1>Applies To</h1><p>All web applications.
+</p><h1>Description</h1><p>By doubly encoding input, an attacker may be able to bypass security checks that are only decoded once. The singly decoded input will pass security checks and allow the malicious input to be passed to backend servers where it will be fully decoded and interpreted as input.
+</p><h1>Impact</h1><ul><li>Remote code execution: This attack is often used in conjunction with XSS or SQL injection to bypass security checks.</li>
+<li>Directory traversal: By encoding '../' and variants, security checks may be bypassed and later interpreted by the server or file system, allowing the attacker to access protected files.</li>
+</ul><h1>Vulnerabilities</h1><ul><li>Failure to validate user input for encoded input.</li>
+<li>Trusting data or failing to completely decode and check retrieved data from a shared data store.</li>
+</ul><h1>Countermeasures</h1><ul><li>Constrain input: Use vigorous white-list style checking on any user input.</li>
+<li>Fully decode: Ensure that all input is fully decoded using methods at the backend server before operating on received data.</li>
+</ul><h1>Example</h1><p><br>
+</p><table><tr><td>Malicious String</td><td> 	Technology 	</td><td>Single Encoded Version 	</td><td>Double Encoded Version</td></tr><tr><td>' (single quote) 	</td><td>SQL 	</td><td>%27 	</td><td>%2527</td></tr><tr><td>..\ 	</td><td>Directory Traversal 	</td><td>%2E%2E%2F 	</td><td>..%252F .. %%35c ..%%35%63 ..%25%35%63 ..etc</td></tr><tr><td>alert("XSS") 	</td><td>Javascript 	</td><td>\u0061\u006C\u0065\u0072\u0074\u0028\u0022\u0058\u0053\u0053\u0022\u0029 </td><td>	\u005C\u0075\u0030\u0030\u0036\u0031\u005C\u0075\u0030\u0030\u0036\u0043\u005C\u0075\u0030\u0030\u0036\u0035\u005C\u0075\u0030\u0030\u0037\u0032\u005C\u0075\u0030\u0030\u0037\u0034\u005C\u0075\u0030\u0030\u0032\u0038\u005C\u0075\u0030\u0030\u0032\u0032\u005C\u0075\u0030\u0030\u0035\u0038\u005C\u0075\u0030\u0030\u0035\u0033\u005C\u0075\u0030\u0030\u0035\u0033\u005C\u0075\u0030\u0030\u0032\u0032\u005C\u0075\u0030\u0030\u0032\u0039\u000A</td></tr><tr><td>&lt;script&gt;gotcha!&lt;/script&gt; 	</td><td>HTML 	</td><td>&lt;script 	</td><td>&lt;script&gt;gotcha!&lt;/script&gt;</td></tr></table><h1>Additional Resources</h1><ul><li>For more information on Core JavaScript Guide: 2 Values, Variables, and Literals, see <a href="http://www.webreference.com/javascript/reference/core/ident.html">http://www.webreference.com/javascript/reference/core/ident.html</a></li>
+<li>For more information on URL encoding related attacks, see <a href="http://people.w3.org/rishida/scripts/uniview/conversion.php">http://people.w3.org/rishida/scripts/uniview/conversion.php</a></li>
+</ul><h1>Related Items</h1><ul><li><a href="00d296c8-2c75-47ef-a659-5b4f25d5c73f">Attack: Canonicalization Attack</a></li>
+<li><a href="e4a899ec-9301-4751-ae07-69a265336d8b">Attack: AJAX Injection Attack</a></li>
+<li><a href="8698cde2-0fdf-4676-a043-ae90e62f55b8">Attack: Command Injection Attack</a></li>
+<li><a href="36ce61ac-adcc-45a9-9910-95d477142c8b">Attack: Cross Site Scripting Attack</a></li>
+<li><a href="7facca81-ff33-4c7a-862b-e2af2be44e94">Attack: File Name and Path Manipulation Attack</a></li>
+<li><a href="26104b86-2fba-4331-aadb-c02d9921be42">Attack: Forceful Browsing Attack</a></li>
+<li><a href="61f0d74e-d9b6-4e27-9e12-da65baff83fd">Attack: LDAP Injection Attack</a></li>
+<li><a href="9d60faca-687b-4c69-91ba-f5712af0fd02">Attack: Server-Side Code Injection Attack</a></li>
+<li><a href="b1757bda-0a0d-48e7-b101-3c4088e41878">Attack: SQL Injection Attack</a></li>
+<li><a href="ae392dbb-fdb4-443f-9d17-78240b4acc95">Attack: XML Injection Attack</a></li>
+<li><a href="8482159c-5ec2-4b89-9c65-9af765030ff5">Attack: Information Disclosure Attack</a></li>
+</ul>

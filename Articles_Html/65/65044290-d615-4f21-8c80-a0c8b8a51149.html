@@ -1,0 +1,10 @@
+<h2>Applies To</h2><ul><li> Web Applications</li>
+<li> Server-side</li>
+</ul><h2>What to Do</h2><p>Review code to make sure that debugging data is not included in output.
+</p><h2>Why</h2><p>Debug information may have sensitive information, such as call stacks, fragments of the source code, SQL statements and more. This information may aid an attacker by giving them additional information about the application, especially in buggy areas. Since debugging data is often displayed in error messages, the fact that error messages are being displayed may indicate the presence of a vulnerability, and the debugging data may provide information necessary to exploit the vulnerability.
+</p><h2>How</h2><p>To prevent the application from displaying debugging data in output:
+</p><ol>
+<li> <strong>Disable PHP error messages.</strong> If you are using PHP, use the display_errors directive in php.ini to disable PHP error messages, like so: <tt> display_errors = off </tt></li>
+<li> <strong>Turn off debugging.</strong> If the application has a debugging mode switch, disable it.</li>
+<li> <strong>Do not display debugging information in error messages.</strong> Find all code that generates error messages and review it to make sure that debugging information is not included in the messages. This is the most important step, because attackers often use error messages to look for vulnerabilities.</li>
+<li> <strong>Disable any custom logging functions used for debugging.</strong> It is a common practice to include temporary code that generates debugging messages during program execution. All of this code has to be found and disabled, either by commenting it out or removing it.</li></ol>

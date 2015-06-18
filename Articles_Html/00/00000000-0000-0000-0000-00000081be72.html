@@ -1,0 +1,16 @@
+<h2>Applies To</h2><ul><li> iOS applications that use URL handlers.</li>
+</ul><h2>What to Do</h2><p>Avoid using URL handlers for sensitive operations.
+</p><h2>Why</h2><p>URL handlers may be abused in Cross-Site Scripting attacks. If URL handlers are used for sensitive operations, such sensitive operations may be exploited in Cross-Site Scripting attacks.
+</p><h2>How</h2><p>To avoid using URL handlers for sensitive operations:
+</p><ol>
+<li> <strong>Identify all URL handlers used by the application.</strong> Examine the application .plist file for <em>URL Types</em> defined by the application. These <em>URL Types</em> correspond to URL handlers used by the application.</li>
+<li> <strong>Identify the operations associated with the URL handlers.</strong> The developers should know what each <em>URL Type</em> is responsible for. Consider each one and decide if it is safe to keep.</li>
+<li> <strong>Remove dangerous URL handlers.</strong> Sometimes URL handlers are used for testing. Remove any URL handlers that may be too dangerous from the production release.</li>
+<li> <strong>Verify the origin of the URL request</strong>. Use the <em>openURL</em> method to make sure the URL request came from within the application itself or from a trusted application for any remaining URL handlers.</li>
+</ol><h2>Dangerous API Guidelines</h2><ul><li> <a href="00000000-0000-0000-0000-00000081be72">Avoid Using URL Handlers for Sensitive Operations</a></li>
+<li> <a href="00000000-0000-0000-0000-0000004a6201">Disable Parsing of External XML Entities</a></li>
+<li> <a href="00000000-0000-0000-0000-00000072e73d">Use Static Format Strings</a></li>
+</ul><h2>Dangerous API Checklists</h2><ul><li> <a href="00000000-0000-0000-0000-00000090f889">URL Handlers Are Not Used for Sensitive Operations</a></li>
+<li> <a href="00000000-0000-0000-0000-00000036b1bf">Parsing of External XML Entities Is Disabled</a></li>
+<li> <a href="00000000-0000-0000-0000-0000008ea142">Static Format Strings Are Used</a></li>
+</ul><h2>Additional Resources</h2><ul><li> For more information about the <em>openURL</em> method, please see <a href="http://developer.apple.com/library/ios/#DOCUMENTATION/UIKit/Reference/UIApplication_Class/Reference/Reference.html">http://developer.apple.com/library/ios/#DOCUMENTATION/UIKit/Reference/UIApplication_Class/Reference/Reference.html</a></li></ul>

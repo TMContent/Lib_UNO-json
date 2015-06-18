@@ -1,0 +1,10 @@
+<h2>Applies To</h2><ul><li> ASP.NET</li>
+</ul><h2>What to Do</h2><p>Avoid allowing the user to specify file names and/or paths. If such functionality is necessary, canonicalize all file paths and names obtained as input before making security decisions using <em>Request.MapPath</em> or <em>Server.MapPath</em> methods.
+</p><h2>Why</h2><p>When input validation is applied to file paths and names, it only works properly when file paths and names are canonicalized.  If file names and paths are not canonicalized	 before validation, a number of vulnerabilities may be introduced as a result. The possible vulnerabilities range from reading arbitrary files to uploading web shells.
+</p><h2>How</h2><p>To canonicalize all file path and name input:
+</p><ol>
+<li> <strong>Identify all file path and name input.</strong> Examine the application and find all cases where the user may specify file names or paths.</li>
+<li> <strong>Find code that handles file path and name input.</strong> Review application code and find all functions that handle user supplied file names or paths.</li>
+<li> <strong>Avoid file path and name input if possible.</strong> If possible, remove or replace the code that allows users to enter file names or paths.</li>
+<li> <strong>Canonicalize file path and name input.</strong> Examine each function that handles user supplied file names or paths. Re-write these functions as necessary to use <em>Request.MapPath </em> or <em>Server.MapPath</em>  to canonicalize file names and paths.</li>
+<li> <strong>Validate file path and name input.</strong> Examine each function that handles user supplied file names or paths. Re-write these functions as necessary to use positive validation on canonicalized file names and paths. Ensure that the validation routines validate that the user has sufficient rights to access requested resource.</li></ol>

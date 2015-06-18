@@ -1,0 +1,12 @@
+<h2>Description</h2><p>Insecure indexing vulnerabilities occur when the application discloses the location of sensitive or otherwise valuable files. Insecure indexing typically occurs when a web search engine finds sensitive files while indexing the site, hence the name. Once a search engine has indexed sensitive data, an attacker can use search engine queries to retrieve the sensitive data either from the search engine cache or by following the URLs to the affected site. 
+</p><p>
+All web applications are affected by insecure indexing vulnerabilities.
+</p><h2>Impact</h2><p>The impact of insecure indexing vulnerabilities is that the attacker will be able to download sensitive or otherwise valuable files without authorization. A typical scenario involves the attacker downloading sensitive documents, or downloading paid content, such as music or software, without paying.
+</p><p>
+Less frequently, an attacker might be able to download database backups, authentication stores, or configuration files. The attacker will then have some authentication credentials to attempt to gain additional access to the application. An attacker who manages to gain administrative access to the application will try to inject malicious code to try to take over the application, and execute arbitrary code on the server with the privileges of the affected application. The attacker might attempt to leverage additional vulnerabilities on the server to elevate privileges and gain superuser access to the server. These scenarios are less likely, but realistic. 
+</p><h2>Countermeasures</h2><p>To prevent insecure indexing, block search engines from sensitive areas.
+</p><h2>Application Check</h2><p>To make sure that insecure indexing is prevented, verify that search engines are blocked from sensitive areas.
+</p><h2>Specific Technologies</h2><ul><li> <a href="f60eabf7-737b-4883-ac71-333db910b2e1">ASP.NET Insecure Indexing</a></li>
+<li> <a href="57cf2869-9b92-43f1-8b55-94beaa8bdcba">Java Insecure Indexing</a></li>
+<li> <a href="7479dfef-3217-4f35-badb-3827c25b7327">PHP Insecure Indexing</a></li>
+</ul>

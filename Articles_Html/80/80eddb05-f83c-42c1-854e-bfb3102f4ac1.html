@@ -1,0 +1,12 @@
+<h1>Description</h1>
+  <p>If you need to create obfuscated assemblies on your build server from a script, use the Dotfuscator command-line interface. To execute Dotfuscator.exe from the command line either add the Dotfuscator executable path to the path environment variable or browse to it under the Application\PreEmptive Solutions\Dotfuscator folder beneath your VS installation. </p>
+  <p>By default, running Dotfuscator from the command prompt opens the standalone graphical user interface (GUI). To open the command-line interface, use the -<b>v</b> (verbose) switch. You can use the command-line tool to specify a previously created configuration file, use command-line switches to perform the obfuscation directly or use a combination of the configuration file and command-line switches, where the switch options can override or supplement settings in the configuration file. </p>
+  <p>The following example obfuscates both My1.dll and My2.dll in verbose mode: </p>
+  <pre>dotfuscator /v /in My1.dll,My2.dll </pre>
+  <p>The output assemblies are written to a directory called .\Dotfuscated, and the map file is written to .\Dotfuscated\map.xml because no output directories are specified. </p>
+  <h1>Additional Resources</h1>
+  <ul>
+    <li>For more information on Dotfuscator, see <a href="http://code.msdn.microsoft.com/Dotfuscator2010video">Dotfuscator Team Page</a></li>
+  </ul>
+  <hr />
+  <p>Adapted from Microsoft patterns & practices guidance.</p>

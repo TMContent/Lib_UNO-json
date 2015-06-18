@@ -1,0 +1,33 @@
+<h2>Applies To</h2><ul><li> iOS applications that store sensitive data.</li>
+</ul><h2>What to Do</h2><p>Encrypt sensitive data stored in files.
+</p><h2>Why</h2><p>Encrypt sensitive data stored in files to prevent attackers from gaining access to it if the device is lost or compromised.
+</p><h2>How</h2><p>To encrypt sensitive data stored in files:
+</p><ol>
+<li> <strong>Identify sensitive data.</strong> Make a list of all sensitive information handled by your application.</li>
+<li> <strong>Identify sensitive data storage locations.</strong> Sensitive data may be stored in the following locations:<ul>
+<li> Application-created files</li>
+<li> Temporary files</li>
+<li> Cached data</li>
+<li> Cookies</li>
+<li> Databases</li>
+<li> Logs</li>
+<li> Plists</li>
+<li> Keychain</li></ul></li>
+<li> <strong>Define encryption requirements for sensitive data that is stored in files.</strong> Choose the level of protection that is the most appropriate for each type of stored sensitive data handled by the application. The iOS Data Protection API provides the following protection levels:<ul>
+<li> <em>FileProtectionNone</em> - no encryption.</li>
+<li> <em>FileProtectionComplete</em> - encrypt the file and deny access when the device is locked.</li>
+<li> <em>FileProtectionCompleteUnlessOpen</em> - encrypt the file until it is open, leave it decrypted while it is open even if the device is locked.</li>
+<li> <em>FileProtectionCompleteUntilFirstUserAuthentication</em> - encrypt the file until the device is unlocked for the first time after a reboot.</li></ul></li>
+<li> <strong>Define encryption requirements for sensitive data that is stored in the keychain.</strong> Choose the level of protection that is the most appropriate for each type of sensitive data handled by the application that is stored in the keychain. The keychain provides the following protection levels:<ul>
+<li> <em>kSecAttrAccessibleAlways</em> - the item is always available.</li>
+<li> <em>kSecAttrAccessibleWhenUnlocked</em> - the item is only available when the device is unlocked.</li>
+<li> <em>kSecAttrAccessibleAfterFirstUnlock</em> - the item is only available after the device is unlocked for the first time after a reboot.</li>
+<li> <em>kSecAttrAccessibleAlwaysThisDeviceOnly</em> - the item is always available, but is not moved to other devices.</li>
+<li> <em>kSecAttrAccessibleWhenUnlockedThisDeviceOnly</em> - the item is only available when the device is unlocked and is not moved to other devices.</li>
+<li> <em>kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly</em> - the item is only available after the device is unlocked for the first time after a reboot and is not moved to other devices.</li></ul></li>
+<li> <strong>Encrypt sensitive files.</strong> Use the appropriate APIs to encrypt stored sensitive data. Data stored in the keychain is always encrypted.</li>
+</ol><h2>Cryptographic Storage Guidelines</h2><ul><li> <a href="00000000-0000-0000-0000-0000002a5e0d">Encrypt Stored Sensitive Data</a></li>
+<li> <a href="00000000-0000-0000-0000-000000467952">Store Cached Authentication Data in the Keychain</a></li>
+</ul><h2>Cryptographic Storage Checklists</h2><ul><li> <a href="00000000-0000-0000-0000-0000002bf00e">Stored Sensitive Data Is Encrypted</a></li>
+<li> <a href="00000000-0000-0000-0000-0000004b75cb">Cached Authentication Data Is Stored in the Keychain</a></li>
+</ul><h2>Additional Resources</h2><ul><li> For a general guide to cryptographic storage, please see <a href="https://www.owasp.org/index.php/Guide_to_Cryptography">https://www.owasp.org/index.php/Guide_to_Cryptography</a></li></ul>

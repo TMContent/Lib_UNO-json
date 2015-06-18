@@ -1,0 +1,18 @@
+<h2>Applies To</h2><ul><li> HTML5</li>
+</ul><h2>What to Do</h2><p>Use the sandbox attribute to apply restrictions to iframe elements.
+</p><h2>Why</h2><p>The sandbox attribute can be used to prevent scripts from being executed from iframe elements, and to apply other restrictions to iframe elements. This reduces the risk that the content in that frame will be used maliciously. Iframe elements that load content from untrusted sites can be abused if the attacker replaces the legitimate content with malicious content. This functionality is commonly abused by attackers to run JavaScript that loads a sequence of exploits to try to compromise the user's system via the browser and plug-ins. 
+</p><h2>How</h2><p>To use the sandbox attribute to apply restrictions to iframe elements:
+</p><ol>
+<li> <strong>Find all iframe elements.</strong> Search the application code for "iframe" to find all iframe elements. Create a spreadsheet of all iframe elements used by the application.</li>
+<li> <strong>Determine acceptable restrictions that can be applied.</strong> Review each iframe element and determine the maximum restrictions that can be applied to it without impacting application performance. To specify restrictions, explicitly grant permissions. The options are: <ol>
+<li> "" - This makes no explicit permissions, i.e., all restrictions are applied. Iframe content is treated as not from the same origin, the iframe cannot load content from the containing document, form submission is not allowed in the iframe, and scripts are not allowed to execute in the iframe.</li>
+<li> <strong>allow-same-origin</strong> - Allows iframe content to be treated as coming from the same origin.</li>
+<li> <strong>allow-top-navigation</strong> - Allows iframe to load content from the page that contains the iframe.</li>
+<li> <strong>allow-forms</strong> - Allows form submission with the iframe.</li>
+<li> <strong>allow-scripts</strong> - Allows scripts to execute within the iframe.</li></ol></li>
+<li> <strong>Add sandbox attributes to iframe elements.</strong> Add sandbox attributes to all iframe elements and apply the maximum applicable restrictions to each respective element.</li>
+</ol><h2>Additional Resources</h2><ul><li> For more information about iframe sandbox attributes, see <a href="http://www.w3schools.com/tags/att_iframe_sandbox.asp">http://www.w3schools.com/tags/att_iframe_sandbox.asp</a></li>
+<li> For more information about sandboxed iframes, see <a href="http://www.html5rocks.com/en/tutorials/security/sandboxed-iframes/">http://www.html5rocks.com/en/tutorials/security/sandboxed-iframes/</a></li>
+</ul><h2>Frames Guideline</h2><ul><li> <a href="00000000-0000-0000-0000-0000000d2743">Use the Sandbox Attribute of Iframes</a></li>
+</ul><h2>Frames Checklist Item</h2><ul><li> <a href="00000000-0000-0000-0000-0000006ab208">The Sandbox Attribute of Iframes Is Used</a></li>
+</ul>

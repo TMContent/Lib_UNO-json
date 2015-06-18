@@ -1,0 +1,24 @@
+<h1>Applies to</h1>
+  <ul>
+    <li>Java</li>
+  </ul>
+  <h1>What to Do</h1>
+  <p>Require TLS for all private pages.</p>
+  <h1>Why</h1>
+  <p>TLS should be used to protect all pages that handle sensitive data, including all pages that use authentication or authorization features, to prevent authentication hijacking.</p>
+  <h1>How</h1>
+  <p>The simplest approach for enabling TLS for all sensitive pages is to use TLS for the entire site. Enabling TLS for the entire site may require additional computing resources, so for performance reasons, it may be acceptable to enable TLS only for sensitive pages. To enable TLS only for sensitive pages:</p>
+  <ol>
+    <li>
+      <p>
+        <strong>Identify sensitive pages.</strong> Make a list of all pages that handle sensitive information, including all pages that use authentication or authorization features.</p>
+    </li>
+    <li>
+      <p>
+        <strong>Enable TLS for each folder containing sensitive pages.</strong> The exact instructions for doing so are different for different web servers. Use the web server administration interface or edit the server configuration files to enable TLS for all folders containing sensitive pages.</p>
+    </li>
+    <li>
+      <p>
+        <strong>Redirect non-TLS requests to TLS-protected pages.</strong> The exact instructions for doing so are different for different web servers. Use the web server administration interface or edit the server configuration files to redirect non-TLS requests to TLS-protected pages.</p>
+    </li>
+  </ol>

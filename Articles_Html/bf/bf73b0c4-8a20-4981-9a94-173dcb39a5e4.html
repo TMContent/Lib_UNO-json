@@ -1,0 +1,34 @@
+<h2>Applies To</h2><ul><li> Web Applications Using Apache</li>
+</ul><h2>What to Check For</h2><p>Verify that Apache is configured to use only strong TLS ciphers.
+</p><h2>Why</h2><p>Using strong encryption algorithms with TLS helps reduce the risk of successful eavesdropping attacks and helps with regulatory compliance.
+</p><h2>How to Check</h2><p>To verify that Apache is configured to use only strong TLS ciphers, view the httpd.conf files and check the following settings: "SSLProtocol" and "SSLCipherSuite". The recommended settings are:
+</p><pre>
+
+SSLProtocol -all +TLSv1
+SSLCipherSuite HIGH:!aNULL:!SSLv2:!MD5:@STRENGTH
+SSLHonorCipherOrder on
+
+</pre><p>
+These settings enable only the TLS protocol and only the strong encryption cipher suites.
+</p><p>
+It may also be a good idea to check for the following line in case of old versions of apache/mod_ssl:
+</p><pre>
+
+SSLInsecureRenegotiation off
+
+</pre><h2>How to Fix</h2><p>To use only strong TLS algorithms, edit the httpd.conf file to include the following settings:
+</p><pre>
+
+SSLProtocol -all +TLSv1
+SSLCipherSuite HIGH:!aNULL:!SSLv2:!MD5:@STRENGTH
+SSLHonorCipherOrder on
+
+</pre><p>
+These settings enable only the TLS protocol and only the strong encryption cipher suites.
+</p><p>
+It may also be a good idea to include the following line in case of old versions of apache/mod_ssl:
+</p><pre>
+
+SSLInsecureRenegotiation off
+
+</pre>

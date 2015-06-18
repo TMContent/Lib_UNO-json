@@ -1,0 +1,26 @@
+<h1>Applies to</h1>
+  <ul>
+    <li>C&#43;&#43;</li>
+  </ul>
+  <h1>What to Do</h1>
+  <p>Use object-oriented operators new and delete instead of direct memory operations, such as malloc, calloc, realloc, and free.</p>
+  <h1>Why</h1>
+  <p>One advantage of using object-oriented operators instead of direct memory operations is that new and delete operators automatically call constructors and destructors - this significantly reduces the likelihood of a number of typical programming errors. Calling constructors automatically removes the possibility of accessing memory of an object before it is initialized.</p>
+  <h1>When</h1>
+  <p>Use new and delete operators whenever initiating objects based on classes.</p>
+  <h1>How</h1>
+  <p>New and delete operators are very basic operators in C&#43;&#43; programming.</p>
+  <ul>
+    <li>
+      <p>
+        <strong>To use the new operator:</strong> declare a class, declare a variable of that class type, and initialize the variable by calling the new operator. Arguments to the new operator are passed as arguments to the constructor.</p>
+      <li>
+        <p>
+          <strong>To use the delete operator:</strong> call the delete operator on a previously declared and initialized pointer of a non-system class type. Memory allocation and deallocation of basic system types, such as int, double, char, etc. are handled automatically.</p>
+      </li>
+    </li>
+  </ul>
+  <h1>Additional Resources</h1>
+  <ul>
+    <li>For more information about using C&#43;&#43; operators instead of direct memory operations, please see <a href="https://www.securecoding.cert.org/confluence/display/cplusplus/MEM08-CPP.&#43;Use&#43;new&#43;and&#43;delete&#43;rather&#43;than&#43;raw&#43;memory&#43;allocation&#43;and&#43;deallocation">https://www.securecoding.cert.org/confluence/display/cplusplus/MEM08-CPP.&#43;Use&#43;new&#43;and&#43;delete&#43;rather&#43;than&#43;raw&#43;memory&#43;allocation&#43;and&#43;deallocation</a></li>
+  </ul>

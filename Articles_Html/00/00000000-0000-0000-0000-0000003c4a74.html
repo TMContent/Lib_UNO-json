@@ -1,0 +1,15 @@
+<h2>Applies To</h2><ul><li> All Android applications.</li>
+</ul><h2>What to Do</h2><p>Sign the application binary.
+</p><h2>Why</h2><p>Signing the application binary helps verify that the application came from a trusted source.
+</p><h2>How</h2><ol><li> <strong>Generate a private key.</strong> Use the <em>keytool</em> command to generate a suitable private key. The key will represent the entity responsible for the application. The key must have a validity period that ends after 22 October 2033. The key should be different from the debug key. It is okay for the key to be self-signed. </li>
+<li> <strong>Protect the private key.</strong> The private key should be kept secret to prevent attackers from signing malicious applications with it. Applications that are signed with the same private key appear to come from the same source. A crafty attacker may take advantage of this by passing malicious applications off as yours.</li>
+<li> <strong>Build the application.</strong> Build the application in release mode. The application is not signed automatically. Export the unsigned APK package.</li>
+<li> <strong>Sign the application.</strong> Use the <em>Jarsigner</em> tool to sign the application package. </li>
+<li> <strong>Align the package.</strong> Use the <em>zipalign</em> command to align the signed APK. </li>
+</ol><h2>Code Integrity Guidelines</h2><ul><li> <a href="00000000-0000-0000-0000-0000004ef2c8">Sign Android Application Updates</a></li>
+<li> <a href="00000000-0000-0000-0000-0000003c4a74">Sign Android Applications</a></li>
+<li> <a href="00000000-0000-0000-0000-00000038da94">Obfuscate Code with ProGuard</a></li>
+</ul><h2>Code Integrity Checklists</h2><ul><li> <a href="00000000-0000-0000-0000-0000007571e5">Android Application Updates Are Signed</a></li>
+<li> <a href="00000000-0000-0000-0000-00000045de75">Android Applications Are Signed</a></li>
+<li> <a href="00000000-0000-0000-0000-0000008e33ab">Code Is Obfuscated with ProGuard</a></li>
+</ul><h2>Additional Resources</h2><ul><li> For more information about signing Android applications, please see <a href="http://developer.android.com/tools/publishing/app-signing.html">http://developer.android.com/tools/publishing/app-signing.html</a></li></ul>

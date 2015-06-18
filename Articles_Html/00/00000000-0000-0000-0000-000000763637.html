@@ -1,0 +1,22 @@
+<h2>Applies To</h2><ul><li> HTML5</li>
+</ul><h2>What to Do</h2><p>Use the <em>event.origin</em> property to ensure that messages are coming from a trusted domain.
+</p><h2>Why</h2><p>Usually, data needs to be validated on the server side. However, HTML5 applications shift some of the application logic to the client-side, which places some of the data-validation responsibility on the client-side. Check the <em>event.origin</em> property of incoming events to prevent attackers from sending malicious data to your application. If the origin property of incoming messages is not validated, an attacker might be able to cause damage such as making the application display incorrect information, for example, an incorrect balance statement or invoice data.
+</p><h2>How</h2><p>To use the <em>event.origin</em> property to ensure that messages are coming from a trusted domain:
+</p><ol>
+<li> <strong>Identify code that receives messages from the server.</strong> Search application code for all references to the <em>addEventListener</em> method. Create a spreadsheet to list all code that receives messages from the server.</li>
+<li> <strong>Define trusted domains.</strong> In the spreadsheet, for each piece of code that uses <em>addEventListener</em>, add information about domains that are authorized to send messages to the application. If these domains might change after the application is deployed, it may be prudent to include a configurable option in the application to choose trusted domains, or to add logic that will calculate trusted domains based on the environment. Add all of this information to the spreadsheet.</li>
+<li> <strong>Add code that validates the origin of messages.</strong> For each piece of code that receives messages from the server, add code that validates the <em>event.origin</em> property to match the trusted domain(s) listed in the spreadsheet. If it is necessary to calculate the trusted domain(s) based on data available at run-time, or to make choosing the trusted domain(s) a configurable option in the application, add the code for doing this as well.</li>
+</ol><h2>Additional Resources</h2><ul><li> For more information about validating <em>event.origin</em>, see <a href="https://developer.mozilla.org/en-US/docs/Web/API/window.postMessage">https://developer.mozilla.org/en-US/docs/Web/API/window.postMessage</a></li>
+</ul><h2>Web Messaging Guidelines</h2><ul><li> <a href="00000000-0000-0000-0000-00000012aada">Do Not Evaluate Messages as Code</a></li>
+<li> <a href="00000000-0000-0000-0000-00000010eb47">Use element.textContent to Assign Values to DOM Elements</a></li>
+<li> <a href="00000000-0000-0000-0000-00000076ad87">Explicitly State the Expected Origin with postMessage</a></li>
+<li> <a href="00000000-0000-0000-0000-0000006ab8ac">Validate Data Received by Event Handlers</a></li>
+<li> <a href="00000000-0000-0000-0000-00000085babd">Validate the Origin Attribute Against the FQDN</a></li>
+<li> <a href="00000000-0000-0000-0000-000000763637">Check The Origin Attribute of Messages</a></li>
+</ul><h2>Web Messaging Checklist Items</h2><ul><li> <a href="00000000-0000-0000-0000-0000008e9b8f">Messages Are Not Evaluated as Code</a></li>
+<li> <a href="00000000-0000-0000-0000-00000060fefb">Element.textContent Is Used to Assign Values to DOM Elements</a></li>
+<li> <a href="00000000-0000-0000-0000-0000004a4216">Expected Origin Is Explicitly Stated with postMessage</a></li>
+<li> <a href="967c9b95-2319-4741-a6fd-1b4bcdf3b636">Data Received by Event Handlers Is Validated</a></li>
+<li> <a href="16628f7f-e17a-4bd1-838a-011736bf0995">The Origin Attribute Is Validated Against the FQDN</a></li>
+<li> <a href="f103974e-3a42-4837-b04b-7da7e87c41ec">The Origin Attribute of Messages Is Checked</a></li>
+</ul>

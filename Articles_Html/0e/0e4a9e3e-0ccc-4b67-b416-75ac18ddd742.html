@@ -1,0 +1,13 @@
+<h2>Applies To</h2><ul><li> Web Applications</li>
+</ul><h2>What to Do</h2><p>Enable TLS for all the sensitive pages on the web application server. 
+</p><h2>Why</h2><p>TLS should be used to protect all pages that handle sensitive data to protect from eavesdropping attacks.
+</p><h2>How</h2><p>The exact instructions for enabling TLS are different for different servers. Enabling TLS is a common task and is well documented for common web server platforms. Links at the bottom of this page lead to documentation that explains how to enable TLS on different platforms. There are some general guidelines that apply to different platforms:
+</p><ol>
+<li> <strong>Get valid certificates.</strong> Purchase a valid TLS certificate. You may purchase a valid TLS key from VeriSign, Thawte, or your web hosting provider. Follow the vendor's instructions for purchasing the TLS certificate. The certificate is usually a .cer file. </li>
+<li> <strong>Identify sensitive pages.</strong> Make a list of all pages that handle sensitive information, including all pages that use authentication or authorization features.</li>
+<li> <strong>Enable TLS on the web server.</strong> The exact instructions for enabling TLS are different for different web servers. Please, see the links at the bottom of this page for more information about enabling TLS on some common web application platforms.</li>
+<li> <strong>Use TLS to protect the sensitive pages.</strong> The exact instructions for doing so are different for different web servers. Use the web server administration interface or edit the server configuration files to enable TLS for all folders containing sensitive pages.</li>
+<li> <strong>Redirect non-TLS requests to TLS-protected pages.</strong> The exact instructions for doing so are different for different web servers. Use the web server administration interface or edit the server configuration files to redirect non-TLS requests to TLS-protected pages. </li>
+</ol><h2>Additional Resources</h2><ul><li> For information about configuring TLS in Apache, please see <a href="http://httpd.apache.org/docs/2.0/ssl/ssl_howto.html">http://httpd.apache.org/docs/2.0/ssl/ssl_howto.html</a></li>
+<li> For more information about using TLS with Apache, please see <a href="http://www.nurdletech.com/https.html">http://www.nurdletech.com/https.html</a></li>
+</ul>

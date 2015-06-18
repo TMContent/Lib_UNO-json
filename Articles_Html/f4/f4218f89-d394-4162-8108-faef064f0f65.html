@@ -1,0 +1,23 @@
+<h1>Applies to</h1>
+  <p>Scala and Play Framework 2.1.0+<br /></p>
+  <h1>What to Do</h1>
+  <p>Set strict domain and path values on session cookies.</p>
+  <h1>Why</h1>
+  <p>Setting strict domain and path values on session cookies makes it harder for attackers to hijack user sessions.</p>
+  <h1>How</h1>
+  <p>To set strict domain and path values on session cookies:</p>
+  <ol>
+    <li>
+      <p>
+        <strong>Define a strict cookie path.</strong>&nbsp;Use the application path as the cookie path.</p>
+    </li>
+    <li>
+      <p>
+        <strong>Define a strict cookie domain.</strong>&nbsp;If the application uses a subdomain, use it as the cookie domain value.</p>
+    </li>
+    <li>
+      <p>
+        <strong>Set the path and domain values.</strong>&nbsp;Set the cookie domain using “application.defaultCookieDomain=.example.com” in the “application.conf” file.</p>
+    </li>
+  </ol>
+  <br />

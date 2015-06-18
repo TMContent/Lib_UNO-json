@@ -1,0 +1,10 @@
+<h2>Applies To</h2><ul><li> Web Applications</li>
+</ul><h2>What to Do</h2><p>Require authentication for all private resources.
+</p><h2>Why</h2><p>All pages that have private information should require authentication to prevent unauthorized information disclosure.
+</p><h2>How</h2><p>To require authentication for all private resources:
+</p><ol>
+<li> <strong>Identify all sensitive pages.</strong> Make a list of all pages that handle sensitive or private information.</li>
+<li> <strong>Define roles.</strong> Define access roles for your application. These roles should include administrative users and various types of users specific to your application.</li>
+<li> <strong>Implement authentication.</strong> Implement and document authentication APIs to satisfy all application requirements.</li>
+<li> <strong>Require authentication for all sensitive pages.</strong> Add code to all sensitive pages that checks if the user is authenticated and authorized to view them.</li>
+</ol>

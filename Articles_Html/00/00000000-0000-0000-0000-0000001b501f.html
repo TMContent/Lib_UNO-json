@@ -1,0 +1,31 @@
+<h2>Applies To</h2><ul><li> HTML5</li>
+</ul><h2>What to Check For</h2><p>Check that the directive <em>Strict-Transport-Security       max-age=(time value)</em> is present in the HTTP Server Response.
+</p> <h2>Why</h2><p>The Strict-Transport-Security header instructs the browser to communicate with the server only via HTTPS, a secure communication tunnel that prevents eavesdropping. Without the header, there is no way for the browser to “know” that a web page should be accessed over HTTPS. This leaves open the possibility of using standard, unencrypted HTTP, whether through a malicious link or direct URL access. 
+</p><h2>How To Check</h2><ol><li>  <strong>Check that the <em>mod_header</em> module is enabled in the <em>httpd.conf</em> file</strong>. Find the <em>httpd.conf</em> file on your filesystem. This file is usually located in <em> /etc/httpd/httpd.conf</em> (consult your Web Server distribution documentation for the exact file location). Make sure that the line <em>LoadModule headers_module modules/mod_headers.so</em> appears in the file; this line enables <em>mod_header</em>. Apache Web servers must be compiled with support for <em>mod_header</em> for this to work.</li>
+<li> <strong>Check that the HSTS Header appears in the <em>httpd.conf</em> file</strong>. View the <em>httpd.conf</em> file and make sure that the line <em>Strict-Transport-Security "max-age=7776000;includeSubDomains"</em> is present. This line enables HTTP Strict Transport Security.</li>
+<li> <strong>Reload or restart the Web Server configuration</strong>. If you made changes to the <em>httpd.conf</em> file, stop and restart the Web server. For example, with Apache2, execute the command <em>/etc/init.d/apache2 stop</em> to stop the server and <em>/etc/init.d/apache2 start</em> to restart it.</li>
+</ol><h2>How To Fix</h2><p>Note that, as of this writing, the latest releases of Mozilla Firefox, Google Chrome, and Opera all support the HSTS header. However, Internet Explorer does not.
+</p><ol>
+<li> <strong>Enable the <em>mod_header</em> module in the <em>httpd.conf</em> configuration file (if it is not already enabled).</strong> For example, if you are using Apache Web Server, first enable
+<em>LoadModule headers_module modules/mod_headers.so</em></li>
+<li> <strong>Add the HSTS header to the <em>httpd.conf</em> configuration file.</strong> Include the required directive <em>max-age</em>. This specifies the time, in seconds, that a compliant browser will abide by forced HTTPS, even in the event a standard HTTP connection is attempted. For example, in the Apache <em>httpd.conf</em> configuration file, add the following line: <em>Header always append Strict-Transport-Security: "max-age=7776000"</em>. This directive instructs the browser to connect only via HTTPS for the next 90 days. The server will inject this header information into each application page rendered.</li>
+<li> <strong>Reload or restart the web server configuration.</strong> The first time the user connects to your website using HTTPS, the browser reads the HSTS header, including the <em>max-age</em> directive. The browser will know it should connect only via HTTPS for the specified <em>max-age</em> time period.</li>
+</ol><h2>Additional Resources</h2><ul><li>For information on the Strict-Transport-Security header, see: <a href="http://tools.ietf.org/html/draft-ietf-websec-strict-transport-sec-14#section-6.1">http://tools.ietf.org/html/draft-ietf-websec-strict-transport-sec-14#section-6.1</a></li>
+<li>For information on the TLS protocol specs, see: <a href="http://tools.ietf.org/html/rfc5246">http://tools.ietf.org/html/rfc5246</a></li>
+<li>For a list of useful HTTP headers, see: <a href="https://www.owasp.org/index.php/List_of_useful_HTTP_headers">https://www.owasp.org/index.php/List_of_useful_HTTP_headers</a></li>
+</ul>
+<h2>HTTP Header Guidelines</h2><ul><li> <a href="00000000-0000-0000-0000-00000028bb7d">Use X-Content-Security-Policy to Mitigate XSS</a></li>
+<li> <a href="00000000-0000-0000-0000-0000009026c0">Use X-XSS-Protection to Prevent Reflected XSS</a></li>
+<li> <a href="00000000-0000-0000-0000-000000204a22">Use X-Frame-Options to Prevent ClickJacking</a></li>
+<li> <a href="9e0f93ba-0b80-4aab-b93c-c17b9af2a19c">Use a Filter to Inject X-Frame-Options</a></li>
+<li> <a href="ae2dc4f8-af3d-4002-9417-f3f1d5c9128b">Add X-Frame Options to Responses</a></li>
+<li> <a href="00000000-0000-0000-0000-00000063561d">Use the Strict-Transport-Security Header to Enforce HTTPS</a></li>
+<li> <a href="00000000-0000-0000-0000-000000225f24">Use includeSubDomains with Strict-Transport-Security</a></li>
+</ul><h2>HTTP Header Checklist Items</h2><ul><li> <a href="00000000-0000-0000-0000-0000006b6766">X-Content-Security-Policy Is Used to Mitigate XSS</a></li>
+<li> <a href="00000000-0000-0000-0000-0000007122c6">X-XSS-Protection Is Used to Prevent Reflected XSS</a></li>
+<li> <a href="00000000-0000-0000-0000-000000498810">X-Frame-Options Are Used to Prevent Clickjacking</a></li>
+<li> <a href="0d1871fe-76d3-4ea3-87be-ef63662dd772">A Filter Is Used to Inject X-Frame Options</a></li>
+<li> <a href="26caffea-d597-40fd-9ed0-36fb025d188b">X-Frame Options Are Added to Responses</a></li>
+<li> <a href="00000000-0000-0000-0000-0000001b501f">The Strict-Transport-Security Header is Used to Enforce HTTPS</a></li>
+<li> <a href="0078cd3f-9e84-4eb4-9a2f-7f51e3100801">IncludeSubDomains is Used with Strict-Transport-Security</a></li>
+</ul>

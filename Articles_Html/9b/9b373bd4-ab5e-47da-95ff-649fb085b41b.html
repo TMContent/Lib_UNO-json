@@ -1,0 +1,22 @@
+<h1>Applies to</h1>
+  <ul>
+    <li>C&#43;&#43;</li>
+  </ul>
+  <h1>What to Check For</h1>
+  <p>Verify that pointers are set to null after the objects they point to have been deleted or deallocated.</p>
+  <h1>Why</h1>
+  <p>Deallocating or deleting objects without setting the values of corresponding pointers to null may result in dangling pointer vulnerabilities, if those pointers are later used again.</p>
+  <h1>How to Check</h1>
+  <p>Identify all functions that deallocate or delete objects. Verify that the corresponding pointers are set to null after the objects are deleted or deallocated.</p>
+  <h1>How to Fix</h1>
+  <p>Search for calls to the free() function or the delete operator(). Add code that sets the freed pointer to null after each call to the free() function or the delete operator.</p>
+  <h1>Additional Resources</h1>
+  <ul>
+    <li>For more information about dangling pointer vulnerabilities, please see <a href="http://en.wikipedia.org/wiki/Dangling_pointer">http://en.wikipedia.org/wiki/Dangling_pointer</a></li>
+  </ul>
+  <h1>Related Items</h1>
+  <ul>
+    <li>
+      <a href="/article/c9531639-70a5-49e6-8347-22924d76a42b">Set Pointers to Null after Deallocation to Prevent Dangling Pointers</a>
+    </li>
+  </ul>

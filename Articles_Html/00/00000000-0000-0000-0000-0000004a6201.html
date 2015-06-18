@@ -1,0 +1,13 @@
+<h2>Applies To</h2><ul><li> iOS applications that handle XML documents.</li>
+</ul><h2>What to Do</h2><p>Disable parsing of external XML entities.
+</p><h2>Why</h2><p>Parsing external entities in XML documents may result in XML injection vulnerabilities.
+</p><h2>How</h2><p>There are two common libraries to parse XML in iOS: <em>NSXMLParser</em> and <em>LibXML2</em>. 
+</p><ol>
+<li> <strong>NSXMLParser.</strong> Parsing of external entities is disabled by default in <em>NSXMLParser</em>. Don't explicitly enable parsing of external entities - avoid using the <em>setShouldResolveExternalEntities</em> option. </li>
+<li> <strong>LibXML2</strong>. Parsing of external entitites needs to be manually disabled in <em>LibXML2</em>. To disable parsing of external entities, use the <em>xmlSetExternalEntityLoader</em> method of the <em>parser</em> class to set the external entity loader to be a function that doesn't do anything.</li>
+</ol><h2>Dangerous API Guidelines</h2><ul><li> <a href="00000000-0000-0000-0000-00000081be72">Avoid Using URL Handlers for Sensitive Operations</a></li>
+<li> <a href="00000000-0000-0000-0000-0000004a6201">Disable Parsing of External XML Entities</a></li>
+<li> <a href="00000000-0000-0000-0000-00000072e73d">Use Static Format Strings</a></li>
+</ul><h2>Dangerous API Checklists</h2><ul><li> <a href="00000000-0000-0000-0000-00000090f889">URL Handlers Are Not Used for Sensitive Operations</a></li>
+<li> <a href="00000000-0000-0000-0000-00000036b1bf">Parsing of External XML Entities Is Disabled</a></li>
+<li> <a href="00000000-0000-0000-0000-0000008ea142">Static Format Strings Are Used</a></li></ul>

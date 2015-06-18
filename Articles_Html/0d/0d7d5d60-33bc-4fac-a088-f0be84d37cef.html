@@ -1,0 +1,45 @@
+<h1>Applies to</h1>
+  <ul>
+    <li>Java</li>
+  </ul>
+  <h1>What to Check For</h1>
+  <p>Verify that authentication and authorization are required for all sensitive pages.</p>
+  <h1>Why</h1>
+  <p>All pages that have private information should require authentication and authorization to prevent unauthorized information disclosure. Use role-based authorization policies because they are relatively simple to manage correctly.</p>
+  <h1>How to Check</h1>
+  <p>To verify that authentication and authorization are required for all sensitive pages:</p>
+  <ol>
+    <li>
+      <p>
+        <strong>Identify all sensitive pages.</strong> Make a list of all pages that handle sensitive or private information.</p>
+    </li>
+    <li>
+      <p>
+        <strong>Verify that all sensitive pages require authentication.</strong> Visit each sensitive page with a web browser to make sure it requires authentication.</p>
+    </li>
+    <li>
+      <p>
+        <strong>Verify that all sensitive pages require authorization.</strong> Make a list of all available roles for testing role-based authorization. Visit each sensitive page authenticated as a member of each role to verify that authorization is implemented correctly.</p>
+    </li>
+    <li>
+      <p>
+        <strong>(Optional) Verify that authentication and authorization are implemented on the server correctly.</strong> The goal of this checklist is to verify that all sensitive pages are covered by authentication and authorization controls. If additional assurance is required, it may be helpful to review the application in depth. To do so: identify authentication and authorization libraries being used, verify that the web application server is configured correctly for the chosen authentication and authorization methods and that all sensitive pages are covered, review each sensitive page to make sure authentication and authorization features are used correctly, and review code used by each sensitive page to make sure that it uses authentication and authorization correctly. These tasks may be quite time consuming and may not be necessary to verify that all sensitive pages are protected by the authentication and authorization controls.</p>
+    </li>
+  </ol>
+  <h1>How to Fix</h1>
+  <p>To require authentication and authorization for all sensitive pages:</p>
+  <ol>
+    <li>
+      <p>
+        <strong>Identify all sensitive pages.</strong> Make a list of all pages that handle sensitive or private information.</p>
+    </li>
+    <li>
+      <p>
+        <strong>Define roles.</strong> Define access roles for your application. These roles should include administrative users and various types of users specific to your application.</p>
+    </li>
+    <li>
+      <p>
+        <strong>Implement authentication and role-based access control.</strong>&nbsp; </p>
+    </li>
+  </ol>
+  <br />

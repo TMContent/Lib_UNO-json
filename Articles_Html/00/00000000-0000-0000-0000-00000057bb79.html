@@ -1,0 +1,5 @@
+<h2>Applies To</h2><ul><li> Java</li>
+</ul><h2>What to Do</h2><p>Use strong session identifiers if your application keeps session state.
+</p><h2>Why</h2><p>Using cryptographically strong session identifiers prevents attackers from easily guessing session ids and taking over users' sessions. If an attacker hijacks the session he/she can perform the same functions as the logged in user. This will lead to a compromise of user account and in case the user is an administrator, the whole application.
+</p><h2>How</h2><p>Java <em>HttpSession</em> interface uses strong session IDs by default. Please, make sure that your application uses the default. Rewrite the application session state handling code, if necessary, to use the default <em>HttpServletRequest.getSession</em> to generate new session ID. 
+</p>

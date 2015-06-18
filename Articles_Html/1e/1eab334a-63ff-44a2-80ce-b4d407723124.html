@@ -1,0 +1,18 @@
+<h2>Description</h2><p>Improper output handling vulnerabilities occur when the application does not encode untrusted data correctly for the context. If the application includes data provided by an attacker without properly encoding this data, the attacker will be able to manipulate the output of the web application. The most common result is a Cross-Site Scripting vulnerability, where the attacker is able to manipulate the web application into sending attacker-controlled malicious data (usually JavaScript) to legitimate users. Other vulnerabilities besides Cross-Site Scripting might be caused by improper output handling, for example HTTP response manipulation. The common principle is that if the application does not encode untrusted data in output properly, the attacker can manipulate the application to send malicious data to legitimate users.
+</p><p>
+All web application vulnerabilities are affected by improper output handling vulnerabilities.
+</p><h2>Impact</h2><p>The result of improper output handling is that the web application can be used to attack its users, typically through Cross-Site Scripting vulnerabilities. In theory, improper output handling might also be used to cause the web application to attack a back-end service, but this requires additional vulnerabilities in the back-end service to work. In practice, Cross-Site Scripting are perhaps the most common type of vulnerabilities in web applications and back-end encoding attacks are a hypothetical possibility.
+</p><p>
+Cross-Site Scripting vulnerabilities are usually used to steal users' cookies, to be able to impersonate them within the application, or to perform actions on the behalf of the users of the application. Cross-Site Scripting can also be used to 
+</p><h2>Countermeasures</h2><p>To prevent improper output handling vulnerabilities, encode all untrusted data that is included in output for the correct context and validate all input.
+</p><ul>
+<li> <a href="f83b953a-9b0c-406a-b274-9b2962d9c4e7">Encode All Output Data</a></li>
+</ul><ul>
+<li> <a href="b531d29c-86f7-4812-90ce-5f3f0f780aba">Validate Input from All Sources</a></li>
+</ul><h2>Application Check</h2><p>To make sure that improper output handling vulnerabilities are prevented, verify that all untrusted data that is included in output is encoded for the correct context and that all input is validated. 
+</p><ul>
+<li> <a href="13112146-7c14-4b6d-9e94-24daa22eefc4">All Output Data Is Encoded</a></li>
+</ul><ul>
+<li> <a href="7f8deb21-cd52-41be-80b4-8897612021dc">Input from All Sources Is Validated</a></li>
+</ul><h2>Computer Based Training</h2><ul><li> For more information about improper output handling vulnerabilities, see <a href="http://projects.webappsec.org/w/page/13246934/Improper%20Output%20Handling">http://projects.webappsec.org/w/page/13246934/Improper%20Output%20Handling</a></li>
+</ul>

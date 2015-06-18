@@ -1,0 +1,37 @@
+<h1>Applies to</h1>
+  <ul>
+    <li>C&#43;&#43;</li>
+  </ul>
+  <h1>What to Do</h1>
+  <p>Perform range checks before values of mathematical operations or conversions are assigned to integer-type variables.</p>
+  <h1>Why</h1>
+  <p>Integer-type variables have minimum and maximum limits on data that they can store. Placing too much data in an integer-type variable results in an integer overflow. Different platforms fail differently as a result of integer overflows, but there is a possibility of an arbitrary code execution resulting from an integer overflow bug. When values that are too high or too low are assigned to unsigned integers, integer-wrapping results, which usually means that unexpected values are produced. Conversions between signed and unsigned integers, and other data types, may result in truncation or losing sign information. All of these bugs may result in very dangerous vulnerabilities. All of these bugs may be prevented by validating values of integer operations before assigning them to variables.</p>
+  <h1>When</h1>
+  <p>Validate data when assigning it to integer-type variables.</p>
+  <h1>How</h1>
+  <ol>
+    <li>
+      <p>
+        <strong>Identify code.</strong> Identify all code that assigns values to integer-type variables. For existing code, it may be a good idea to prioritize components, so that the most critical elements are checked first. Some development environments and compilers may be able to detect these types of errors, but automatic detection should not be relied on for critical software components.</p>
+      <li>
+        <p>
+          <strong>Add range checks.</strong> Use platform-defined constants to check that values being assigned to integer-type variables are valid. Minimum and maximum values for integer-type variables are defined in limits.h. The following is a list of common maximum and minimum values for integer-type variables: </p>
+        <ul>
+          <li>INT_MIN<li>INT_MAX<li>LONG_MIN<li>LONG_MAX<li>SHRT_MIN<li>SHRT_MAX<li>UINT_MAX<li>ULONG_MAX<li>USHRT_MAX</li></li></li></li></li></li></li></li></li>
+        </ul>
+        <li>
+          <p>
+            <strong>Validate values assigned to character-type variables.</strong> Character-type variables are actually integers in C and C&#43;&#43;, therefore they should be treated the same. The following constants apply to character type variables:</p>
+          <ul>
+            <li>CHAR_BIT<li>CHAR_MAX<li>CHAR_MIN<li>SCHAR_MAX<li>SCHAR_MIN<li>UCHAR_MAX</li></li></li></li></li></li>
+          </ul>
+        </li>
+      </li>
+    </li>
+  </ol>
+  <h1>Related Items</h1>
+  <ul>
+    <li>
+      <a href="/article/6c6f0d93-0d5b-4aa4-97b0-9e69535b3345">Protect Against Integer Overflows</a>
+    </li>
+  </ul>

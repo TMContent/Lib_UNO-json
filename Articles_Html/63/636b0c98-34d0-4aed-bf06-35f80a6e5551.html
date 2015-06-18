@@ -1,0 +1,47 @@
+<h1>Applies to</h1>
+  <p>Scala and Play Framework 2.1.0+<br /></p>
+  <h1>What to Check For</h1>
+  <p>Verify that sessions are invalidated when users log out.</p>
+  <h1>Why</h1>
+  <p>Invalidating sessions when users log out makes it harder to hijack them.</p>
+  <h1>How to Check</h1>
+  <p>To verify that sessions are invalidated when users log out:</p>
+  <ol>
+    <li>
+      <p>
+        <strong>Identify logout functionality.</strong>&nbsp;Find code that is responsible for the logout functionality.</p>
+    </li>
+    <li>
+      <p>
+        <strong>Verify that sessions are invalidated upon logout.</strong>&nbsp;Look for the presence of code in functions that are responsible for logging out.</p>
+    </li>
+  </ol>
+  <h1>How to Fix</h1>
+  <p />
+  <p>To invalidate sessions when users log out:</p>
+  <ol>
+    <li>
+      <p>
+        <strong>Identify logout functionality.</strong>&nbsp;Find code that is responsible for the logout functionality.</p>
+    </li>
+    <li>
+      <p>
+        <strong>Add code to invalidate sessions.</strong> The below function shows how the session should be invalidated on logout.</p>
+      <pre> def gotoLogoutSucceeded(implicit request: RequestHeader): Result = {
+    gotoLogoutSucceeded(logoutSucceeded(request))
+  }
+
+  def gotoLogoutSucceeded(result: =&gt; Result)(implicit request: RequestHeader): Result = {
+    request.cookies.get(cookieName) flatMap CookieUtil.verifyHmac foreach idContainer.remove
+    result.discardingCookies(DiscardingCookie(cookieName))
+  }</pre>
+    </li>
+  </ol>
+  <h1>Additional Resources</h1>
+  <ul>
+    <li>For information about Logout functionlity, please see&nbsp;<a href="https://github.com/t2v/play20-auth/blob/master/module/src/main/scala/jp/t2v/lab/play2/auth/LoginLogout.scala">https://github.com/t2v/play20-auth/blob/master/module/src/main/scala/jp/t2v/lab/play2/auth/LoginLogout.scala</a></li>
+  </ul>
+  <div>
+    <br />
+  </div>
+  <p />

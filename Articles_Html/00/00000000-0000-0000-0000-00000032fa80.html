@@ -1,0 +1,27 @@
+<h2>Applies To</h2><ul><li> Android applications that query a database.</li>
+</ul><h2>What to Do</h2><p>Use parameterized query methods for database access.
+</p><h2>Why</h2><p>Using parameterized query methods for database access prevents SQL injection vulnerabilities.
+</p><h2>How</h2><p>The Android API includes parameterized functions for querying SQLite databases. Avoid using the rawQuery method; it may allow untrusted input to be included in the SQL query string, thus introducing SQL injection vulnerabilities.
+</p><p>
+Use the following method for SELECT statements:
+</p><ul>
+<li><em>query</em></li>
+</ul><p>
+Use the following methods for INSERT statements:
+</p><ul>
+<li><em>insert</em></li>
+<li><em>insertOrThrow</em></li>
+<li><em>insertWithOnConflict</em></li>
+</ul><p>
+Use the following methods for UPDATE statements:
+</p><ul>
+<li><em>update</em></li>
+<li><em>updateWithOnConflict</em></li>
+</ul><p>
+Use the following method for DELETE statements:
+</p><ul>
+<li><em>delete</em></li>
+</ul><p>
+If your application uses some other API, please make sure that it uses parameterized methods for database access.
+</p><h2>Related Items</h2><ul><li> <a href="00000000-0000-0000-0000-0000007e38aa">Parameterized Methods Are Used for Database Access</a></li>
+</ul><h2>Additional Resources</h2><ul><li>For more information about the Android SQLite API, please see <a href="http://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html">http://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html</a></li></ul>

@@ -1,0 +1,23 @@
+<h1>Description</h1><p>Missing XML validation means that an attacker may cause the application to parse invalid XML data. This vulnerability type refers specifically to not validating XML against a schema. In itself, this might not cause any harm, but it may enable other vulnerabilities, such as XML Entity Injection. This vulnerability type affects all applications that parse XML data. 
+</p><h1>Impact</h1><p>Missing XML validation may enable other attacks that exploit other vulnerabilities. The exact impact depends on the kind of other vulnerabilities that are enabled. The most likely and dangerous scenario is some form of XML injection attack, where the attack manipulates application data by sending malformed XML data. For example, if the application uses XML to store authentication credentials, the attacker may be able to send XML data that authenticates him as an administrative user, and he may then take over the application. For that to be possible, a number of other vulnerabilities in addition to missing XML validation would need to be present. 
+</p><h1>Countermeasures</h1><p>To prevent this vulnerability type, validate untrusted XML data.  XML validation helps prevent attacks that exploit other vulnerabilities, and should always be used when untrusted XML data is processed.
+</p><p>
+Validate XML Data Against XML Schema:
+</p><ul>
+<li> <a href="00000000-0000-0000-0000-0000005a126e">Validate XML Data Using a Schema</a></li>
+</ul><h1>Application Check</h1><p>To check for adequate protection against this vulnerability type, verify that untrusted XML data is validated.
+</p><p>
+XML Data Is Validated Against XML Schema:
+</p><ul>
+<li> <a href="00000000-0000-0000-0000-0000006bb239">XML Data Is Validated Using a Schema</a></li>
+</ul><h1>Computer Based Training Links</h1><p>Use the following Computer Based Training course(s) for more background information about this type of vulnerabilities.
+</p><h2>Creating Secure Code – .NET 4.0 Foundations</h2><p>This course describes .NET security features, including concepts such as Code Access Security (CAS) and .NET cryptographic technologies. It also provides secure coding best practices that will enable you to build more secure applications in .NET. 
+</p><p>
+<a href="https://teamprofessor.absorbtraining.com/ninja/#/courses/course/127611">COD 215 Creating Secure Code – .NET 4.0 Foundations</a>
+</p><h2>Creating Secure ASP.NET Code</h2><p>This in-depth course examines the development of secure Web applications in ASP.Net. It provides developers and testers with an overview of common Web application vulnerabilities and a set of nine best practices and techniques to follow in order to avoid them. Throughout the course, students are provided with interactive games and simulations designed to reinforce the secure design and coding concepts that were introduced.
+</p><p>
+<a href="https://teamprofessor.absorbtraining.com/ninja/#/courses/course/127607">COD 311 Creating Secure ASP.NET Code</a>
+</p><p>
+<em>Valid login credentials and enrollment in the course itself are required to access Team Professor content. If you need login credentials, please contact support@securityinnovation.com for help.</em>
+</p><h1>Additional Resources</h1><ul><li> For more information about this vulnerability type, see <a href="http://minsky.gsi.dit.upm.es/semanticwiki/index.php/Missing_XML_Validation">http://minsky.gsi.dit.upm.es/semanticwiki/index.php/Missing_XML_Validation</a></li>
+<li> For more information about this vulnerability type, see <a href="https://www.owasp.org/index.php/Missing_XML_Validation">https://www.owasp.org/index.php/Missing_XML_Validation</a></li></ul>

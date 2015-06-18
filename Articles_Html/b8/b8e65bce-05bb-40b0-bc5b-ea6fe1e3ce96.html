@@ -1,0 +1,19 @@
+<h1>Applies to</h1>
+  <p>Scala and Play Framework 2.1.0+</p>
+  <h1>What to Do</h1>
+  <p>Change the user's session ID during authentication.</p>
+  <h1>Why</h1>
+  <p>Change session IDs during authentication to make sure that the session state corresponds to the authenticated user.</p>
+  <h1>How</h1>
+  <p>To change session IDs during authentication:</p>
+  <ol>
+    <li>
+      <p>
+        <strong>Identify authentication functionality.</strong>&nbsp;Find the code that is responsible for authentication, including repeated authentication that is required for sensitive functionality.</p>
+    </li>
+    <li>
+      <p>
+        <strong>Change session IDs during authentication.</strong>&nbsp;Add code that invalidates the current session ID and creates a new one.</p>
+    </li>
+  </ol>
+  <br />

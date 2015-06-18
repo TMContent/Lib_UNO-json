@@ -1,0 +1,37 @@
+<h1>Description</h1><p>Information exposure through an error message occurs when an error message discloses sensitive information that may help an attacker. Typical examples include disclosing whether a username is valid during failed authentication and disclosing SQL queries that cause database errors. The latter example is particularly dangerous because it greatly simplifies SQL injection attacks. The danger of error message information disclosure is that it makes other attacks easier and, in some cases, it is required for an attack to succeed. In general, error messages should not disclose sensitive information to the end user. All applications are affected by this vulnerability type, but especially ones that use authentication and SQL databases. 
+</p><h1>Impact</h1><p>Information exposure through an error message provides information to the attacker that enables him to carry out additional attacks. The two most common and dangerous scenarios are disclosing whether a username is valid during failed authentication, and disclosing SQL queries after database errors. Knowing the username greatly simplifies password guessing attacks. Disclosing SQL queries during errors helps the attacker determine whether a SQL injection vulnerability is present and what exactly the syntax of the vulnerability is. Displaying invalid SQL queries to the attacker also makes extracting data from the database via SQL injection a lot easier, because SQL injection can be formed in such a way that sensitive data is displayed as a part of an invaild query. This scenario is commonly used to extract password hashes from the database for administrative accounts. 
+</p><h1>Countermeasures</h1><p>To prevent error message information disclosure, handle all errors, use simple error messages, and log detailed error information. 
+</p><p>
+Handle all errors:
+</p><ul>
+<li> <a href="3e815c74-4d57-4c1b-8446-750b319ea046">Use a Global Exception Handler for Unhandled Exceptions</a></li>
+</ul><p>
+Use simple error messages:
+</p><ul>
+<li> <a href="00000000-0000-0000-0000-0000005c37eb">Use Simple Error Messages</a></li>
+</ul><p>
+Log detailed error information:
+</p><ul>
+<li> <a href="0109ec06-1830-472d-95ed-7ec64404c961">Log Important Event Details</a></li>
+</ul><h1>Application Check</h1><p>To check for adequate protection against error message information disclosure, verify that all errors are handled, that simple error messages are used, and detailed error information is logged.
+</p><p>
+All errors are handled:
+</p><ul>
+<li> <a href="c88e1b49-357d-4202-aafc-86ce0de485bd">A Global Exception Handler Is Used for Unhandled Exceptions</a></li>
+</ul><p>
+Simple error messages are used:
+</p><ul>
+<li> <a href="00000000-0000-0000-0000-00000064dbd7">Simple Error Messages Are Used</a></li>
+</ul><p>
+Detailed error information is logged:
+</p><ul>
+<li> <a href="1be8f39e-609a-4d66-b4c9-ad839783a164">Important Event Details Are Logged</a></li>
+</ul><h1>Computer Based Training Links</h1><p>Use the following Computer Based Training courses to learn more about Information Exposure Through an Error Message including techniques for remediation and prevention.
+</p><h2>Creating Secure Code – JRE Foundations</h2><p>In this course, you will learn to recognize and remediate common Java Web software security vulnerabilities.  This course has three modules, which introduce you to these vulnerabilities and help you to identify and remediate them. 
+</p><p>
+<a href="https://teamprofessor.absorbtraining.com/ninja/#/courses/course/127615">COD 211 Creating Secure Code – JRE Foundations</a>.
+</p><h2>Creating Secure J2EE Code</h2><p>This course introduces and explains the precautionary measures you can use to avoid Web software security vulnerabilities, such as data leakage attacks, client/server protocol manipulation, injection attacks, and exploiting authentication.  At the end of this course, you will have learned about time-tested defensive coding principles and how to use them to increase the security of your application, and prevent common security vulnerabilities.
+</p><p>
+<a href="https://teamprofessor.absorbtraining.com/ninja/#/courses/course/127619">COD 313 Creating Secure J2EE Code</a>.
+</p><p>
+<em>Valid login credentials and enrollment in the course itself are required to access Team Professor content. If you need login credentials, please contact support@securityinnovation.com for help.</em></p>

@@ -1,0 +1,11 @@
+<h2>What to Do</h2><p>Remove all test accounts from applications before deployment.
+</p>
+<h2>Why</h2><p>Test accounts provide access to the application's functionality during development. Since they are often poorly secured, they are a common target for attackers.
+</p>
+<h2>How</h2><p>To remove all test accounts from applications before deployment:
+</p><ol>
+<li> <strong>Enumerate all accounts.</strong> List all the users to your application. This should be a full comprehensive list that includes, but is not limited to, active users, inactive users, users pending confirmation, and test accounts.</li>
+<li> <strong>Identify their use.</strong> Examine the use/status of each account. Sort the accounts into groups according to their use/status.</li>
+<li> <strong>Remove the accounts that will no longer be used.</strong> Once the accounts are sorted into groups, list all accounts that are used for test purposes. After identifying all test accounts, remove them from your application's database.</li>
+<li> <strong>Enforce strong passwords on the remaining accounts.</strong> After removing all test accounts, enforce strong passwords for the remaining accounts in your application. Strong passwords decrease the probability of compromising valid users.</li>
+</ol>

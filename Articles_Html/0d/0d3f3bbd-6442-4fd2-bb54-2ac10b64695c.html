@@ -1,0 +1,26 @@
+<h1>Applies to</h1><p>Any network application.
+</p><h1>Description</h1><p>In an ARP spoofing or poisoning attack, the attacker is able to inject fake or spoofed ARP messages to the Ethernet LAN. The spoofed ARP messages contain false MAC address to IP address mappings, which can confuse other hosts on the network as well as network devices like switches or routers. Such an attack can cause the affected device to route all of its traffic through the attacking host, or cause all devices on the network to send traffic intended for another host to the attacking machine.
+</p><h1>Impact</h1><ul><li>Information disclosure: Because the network traffic is being routed through the attacker's computer, the attacker can see any unencrypted data that is sent.</li>
+<li>Denial of service: If the attacker so chooses, he can disrupt network service by not forwarding legitimate packets on.</li>
+<li>Spoofing: An attacker can inject new traffic into the data stream, or selectively edit or forward legitimate traffic.</li>
+</ul><h1>Vulnerabilities</h1><ul><li>Accepting ARP responses even without requesting them.</li>
+<li>Using dynamic ARP tables without using monitoring tools such as ARPWatch or an IDS.</li>
+</ul><h1>Countermeasures</h1><ul><li>For smaller networks (i.e., around 30 machines), use static IP-addresses and static ARP tables. This will prevent attackers from adding spoofed APR entries for devices in the network.</li>
+</ul><ul>
+<li>For larger networks, it is not sustainable to use static IP-addresses and ARP tables. Follow these tips to prevent ARP Spoofing on larger networks:<ul>
+<li>Use tools that monitor ARP tables and notify the system administrator of any changes. An example of such a tool is ARPWatch.</li>
+<li>Be careful of whom you allow connections on the internal network. Allowing outsiders to anonymously connect to your network increases the risk of an attack.</li>
+<li>Use 802.1x (IIRC) to authenticate all network users.</li>
+<li>Implement an Intrusion Detection System (IDS).</li></ul></li>
+</ul><h1>Additional Resources</h1><ul><li>For more information on ARPWatch, see: <a href="http://www.securityfocus.com/tools/142">http://www.securityfocus.com/tools/142</a></li>
+<li>For more information on ARP spoofing, see: <a href="http://en.wikipedia.org/wiki/ARP_spoofing">http://en.wikipedia.org/wiki/ARP_spoofing</a></li>
+<li>For more information on IEEE 802.1X Authentication for Wireless Connections, see: <a href="http://technet.microsoft.com/library/bb878016">http://technet.microsoft.com/library/bb878016</a></li>
+<li>For more information on ARP Poisoning attacks, see: <a href="http://www.watchguard.com/infocenter/editorial/135324.asp">http://www.watchguard.com/infocenter/editorial/135324.asp</a></li>
+</ul><h1>Related Items</h1><ul><li><a href="41ff6525-2cae-40a5-91e9-365d2d26feb9">Attack: Man in the Middle Attack</a></li>
+<li><a href="468c8d7a-ffc6-49ad-bef5-1886fd809a96">Attack: Denial of Service Attack</a></li>
+<li><a href="380b7108-0c16-4fbf-a914-6d37acf55421">Attack: DNS Cache Poisoning</a></li>
+<li><a href="aa707b5c-7a44-4081-bb80-e795da26b57d">Attack: VLAN Spoofing Attack</a></li>
+<li><a href="378080c8-3a72-4d2f-bf5e-a5cc6bd5f54b">Attack: Wireless Packet Injection Attack</a></li>
+<li><a href="8482159c-5ec2-4b89-9c65-9af765030ff5">Attack: Information Disclosure Attack</a></li>
+<li><a href="6a32e2d5-dba5-4f6d-9fe0-a51605fd0557">Attack: Network Eavesdropping Attack</a></li>
+</ul>

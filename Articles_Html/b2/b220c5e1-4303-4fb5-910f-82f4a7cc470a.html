@@ -1,0 +1,16 @@
+<h1>Description</h1><p>XML injection occurs when an attacker is able to supply data to the application that is interpreted as a part of an XML document in a manner that violates the intended use of XML by the application. XML injection vulnerabilities occur when untrusted data is allowed to be concatenated with XML data. Concatenating the attacker's data with XML allows the attacker to manipulate the syntax and the contents of the XML document and thus allows the attacker to modify the behavior of the application. 
+</p><p>
+This issue affects all applications that use XML.
+</p><h1>Impact</h1><p>The exact impact of an XML injection vulnerability depends on the application. The most likely practical attack vector is that the attacker will be able to manipulate the business logic of the application. For example, the attacker might be able to change prices of items in an online store. If the application's authentication mechanism is affected, the attacker might be able to bypass authentication controls. 
+</p><p>
+Another likely scenario is that the attacker will use XML injection to perform cross-site scripting attacks by modifying XML data to include client-side scripts. The cross-site scripting vector requires that the XML data is included in Web pages without being properly encoded. 
+</p><h1>Countermeasures</h1><p>To protect against XML injection attacks, validate all input and use parameterized APIs to build XML documents (instead of concatenating user data into strings that contain XML data).
+</p><ul>
+<li> <a href="c0a4f56c-1e8c-4d3a-97e2-fc9e969d5d52">Use Positive Input Validation</a></li>
+</ul><ul>
+<li> <a href="a9f95278-f250-4b25-8da4-f9c3f566d7df">Use Parameterized APIs to Build XML Documents</a></li>
+</ul><h1>Application Check</h1><p>To check for adequate protection against XML injection, verify that all input is validated and that parameterized APIs are used to build XML documents.
+</p><ul>
+<li> <a href="d4129497-3a66-44d1-881e-e6f004af2e0d">Positive Input Validation Is Used</a></li>
+</ul><ul>
+<li> <a href="178571b2-281f-4c50-ad5c-9b924696e54d">Parameterized APIs Are Used to Build XML Documents</a></li></ul>

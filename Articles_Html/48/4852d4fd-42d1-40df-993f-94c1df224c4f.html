@@ -1,0 +1,10 @@
+<h2>Applies To</h2><ul><li> Web Applications</li>
+<li> Server-side</li>
+</ul><h2>What to Do</h2><p>Deny all access by default by configuring web server settings and implementing authorization code accordingly.
+</p><h2>Why</h2><p>Denying all access by default assures that only explicitly authorized access is possible.
+</p><h2>When</h2><p>Deny all access by default in all web applications that implement access control.
+</p><h2>How</h2><p>To deny all access by default:
+</p><ol>
+<li> <strong>Enumerate all sensitive pages.</strong> Make a list of all pages that handle sensitive or private information.</li>
+<li> <strong>Configure web-server authorization.</strong> Configure the web-server to deny all access by default for all locations that contain sensitive pages or data. The exact procedures are different for different web servers - please, refer to your web server's documentation for detailed instructions on configuring its access control settings.</li>
+<li> <strong>Deny all access by default in your authorization code.</strong> Implement authorization in your application to deny all access by default.</li></ol>

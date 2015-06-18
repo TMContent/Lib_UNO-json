@@ -1,0 +1,16 @@
+<h2>Applies To</h2><ul><li> All iOS applications.</li>
+</ul><h2>What to Do</h2><p>Implement code integrity checks that are difficult to bypass.
+</p><h2>Why</h2><p>Code integrity checks help prevent software piracy and unauthorized modifications to the application. Code integrity checks do not provide 100% assurance of code integrity, but they make it harder for an attacker to modify the application binary code without breaking it.
+</p><h2>How</h2><p>To check code for integrity:
+</p><ol>
+<li> <strong>Write piracy check functions.</strong> Piracy check functions often try to determine whether the application is running on a jailbroken device. The application is not necessarily pirated if it is on a jailbroken device, but there are no fool-proof anti-piracy or code integrity measures for jailbroken devices. Piracy checks can determine whether a device is jailbroken by looking for files that only appear on jailbroken devices, such as Cydia. If piracy is not a concern, this step may be omitted.</li>
+<li> <strong>Write integrity check functions.</strong> The most common ways to implement code integrity checks is to check classes for expected addresses or checksums. The <em>class_getMethodImplementation</em> method returns a pointer to a method; checking the value of this pointer against the expected value provides reasonable assurance that the method has not been modified during runtime.</li>
+<li> <strong>Define integrity check functions as inline.</strong> The integrity check functions written in the previous step should be defined as <em>inline</em> so that the compiler inserts the full integrity checking code wherever it is invoked.</li>
+<li> <strong>Scatter integrity check functions throughout the application.</strong> Multiple integrity check function calls spread out throughout the application make it harder for an attacker to find them all and patch them.</li>
+</ol><h2>Code Integrity Guidelines</h2><ul><li> <a href="00000000-0000-0000-0000-0000002e3de4">Implement Code Integrity Checks</a></li>
+<li> <a href="00000000-0000-0000-0000-000000470103">Sign iOS Application Updates</a></li>
+<li> <a href="00000000-0000-0000-0000-000000986af1">Sign iOS Applications</a></li>
+</ul><h2>Code Integrity Checklists</h2><ul><li> <a href="00000000-0000-0000-0000-0000002d9dac">Code Integrity Checks Are Implemented</a></li>
+<li> <a href="00000000-0000-0000-0000-000000892dc7">iOS Application Updates Are Signed</a></li>
+<li> <a href="00000000-0000-0000-0000-00000039db6a">iOS Applications Are Signed</a></li>
+</ul><h2>Additional Resources</h2><ul><li> For more information about the <em>class_getMethodImplementation</em> method, please see <a href="https://developer.apple.com/library/mac/#documentation/Cocoa/Reference/ObjCRuntimeRef/Reference/reference.html">https://developer.apple.com/library/mac/#documentation/Cocoa/Reference/ObjCRuntimeRef/Reference/reference.html</a></li></ul>

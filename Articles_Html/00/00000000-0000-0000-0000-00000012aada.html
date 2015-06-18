@@ -1,0 +1,21 @@
+<h2>Applies To</h2><ul><li> HTML5</li>
+</ul><h2>What to Do</h2><p>Do not evaluate data passed in messages as code.
+</p><h2>Why</h2><p>You should prevent data passed in messages from being evaluated as code in order to prevent malicious scripts sent by an attacker from being executed within the browser. While it is possible to restrict the ability of attackers to send messages to the application by validating the origin of the message, this control could be circumvented in a Man-in-The-Middle (MitM) scenario. It is therefore best to simply not evaluate data received by the application as code. Generally speaking, <em>eval</em> is a dangerous function and should always be used with care.
+</p><h2>How</h2><p>To prevent evaluating data passed in messages as code:
+</p><ol>
+<li> <strong>Find all references to <em>eval</em>.</strong> Search application code for all references to the <em>eval</em> method. Create a spreadsheet to list all code that uses <em>eval</em>.</li>
+<li> <strong>Find the source of the data being evaluated.</strong> For each piece of code that uses <em>eval</em>, determine where the data supplied as the argument to <em>eval</em> is coming from. The main concern for the purposes of this control is whether this data has been received as part of an event message. In the spreadsheet, record whether the data supplied to <em>eval</em> has been received as a part of a message.</li>
+<li> <strong>Remove code that passes message data to <em>eval</em>.</strong> For each piece of code that passes message data to <em>eval</em>, remove the line of code that calls <em>eval</em>. Then remove the code that is no longer needed because message data is no longer being passed to <em>eval</em>. If this breaks some functionality, consider alternative ways to rewrite this functionality without calling <em>eval</em> to execute data passed in messages.</li>
+</ol><h2>Web Messaging Guidelines</h2><ul><li> <a href="00000000-0000-0000-0000-00000012aada">Do Not Evaluate Messages as Code</a></li>
+<li> <a href="00000000-0000-0000-0000-00000010eb47">Use element.textContent to Assign Values to DOM Elements</a></li>
+<li> <a href="00000000-0000-0000-0000-00000076ad87">Explicitly State the Expected Origin with postMessage</a></li>
+<li> <a href="00000000-0000-0000-0000-0000006ab8ac">Validate Data Received by Event Handlers</a></li>
+<li> <a href="00000000-0000-0000-0000-00000085babd">Validate the Origin Attribute Against the FQDN</a></li>
+<li> <a href="00000000-0000-0000-0000-000000763637">Check The Origin Attribute of Messages</a></li>
+</ul><h2>Web Messaging Checklist Items</h2><ul><li> <a href="00000000-0000-0000-0000-0000008e9b8f">Messages Are Not Evaluated as Code</a></li>
+<li> <a href="00000000-0000-0000-0000-00000060fefb">Element.textContent Is Used to Assign Values to DOM Elements</a></li>
+<li> <a href="00000000-0000-0000-0000-0000004a4216">Expected Origin Is Explicitly Stated with postMessage</a></li>
+<li> <a href="967c9b95-2319-4741-a6fd-1b4bcdf3b636">Data Received by Event Handlers Is Validated</a></li>
+<li> <a href="16628f7f-e17a-4bd1-838a-011736bf0995">The Origin Attribute Is Validated Against the FQDN</a></li>
+<li> <a href="f103974e-3a42-4837-b04b-7da7e87c41ec">The Origin Attribute of Messages Is Checked</a></li>
+</ul>

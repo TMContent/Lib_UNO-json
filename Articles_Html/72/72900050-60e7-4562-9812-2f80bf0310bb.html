@@ -1,0 +1,21 @@
+<h1>Applies to</h1>
+  <ul>
+    <li>C&#43;&#43;</li>
+  </ul>
+  <h1>What to Check For</h1>
+  <p>Verify that exceptions are used instead of error codes whenever possible.</p>
+  <h1>Why</h1>
+  <p>Exceptions are more secure than error codes, because a program may ignore error codes and keep running, but unhandled exceptions make the program terminate, thus preventing unintended behavior.</p>
+  <h1>How to Check</h1>
+  <p>Review code and look for functions that return error codes. Consider whether it is possible to use exceptions instead of error codes.</p>
+  <h1>How to Fix</h1>
+  <p>Rewrite functions that return error codes to throw exceptions instead. Rewrite code that handles errors to use exception handling instead of checking error codes.</p>
+  <h1>Related Items</h1>
+  <ul>
+    <li>
+      <a href="/article/25d6522f-77d2-4f08-abee-88247a7b4118">Use C&#43;&#43; Exceptions Where Possible</a>
+        <li>
+          <a href="/article/e4a3052e-13f2-4062-9a83-49185ff14b0a">Centralize Error Handling</a>
+        </li>
+    </li>
+  </ul>

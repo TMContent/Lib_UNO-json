@@ -1,0 +1,90 @@
+<h2>Applies To</h2><ul><li> Google Android applications authenticating to cloud-based services that support OAuth 2.</li>
+</ul><h2>What to Do</h2><p>Invoke the <em>AccountManager</em> class to retrieve an authentication token for access to a cloud-based service. Do not store user credentials such as accounts and passwords within your application.
+</p><h2>Why</h2><p>The <em>AccountManager</em> class eliminates the need for users to enter credentials for your application when accessing a cloud-based service that supports OAuth2. By not requesting and storing user credentials, you limit the possibility of data disclosure should the device become lost, stolen, or compromised. This method also generates more user acceptance for the application since users require fewer accounts to be created and the credentials they do have such as passwords are not stored in multiple places.
+</p><h2>When</h2><p>When authenticating to a cloud-based service that supports OAuth 2.
+</p><h2>How</h2><p>Let’s use Google services as an example. To use OAuth 2 to access cloud services:
+</p><ol>
+<li> <strong>Inform the user about accessing cloud services.</strong> First, inform users that they are required to have an account for the cloud service (typically, having a Google account is not a problem on an Android device). Update the Android permissions in the manifest to include the following: <em>"android.permission.GET_ACCOUNTS"</em>, <em>"android.permission.USE_CREDENTIALS"</em>, <em>"android.permission.INTERNET"</em>. </li>
+<li> <strong>Ask the user to choose an account.</strong> Next, ask users to select which account they want to interact with the service. Create a reference to the <em>AccountManager</em> class, and search for available Google accounts by calling <em>getAccountsByType("com.google")</em>. This method returns an array of available Google accounts. If none are found, instruct users to create one. If multiple accounts are found, display them in a <em>ListView</em> and allow users to select which account should represent your application.</li>
+<li> <strong>Define a callback method.</strong> Before using <em>getAuthToken()</em> to request a token for the account, you must define a callback, because this method is asynchronous. Create a class that implements <em>AccountManagerCallback &lt;Bundle&gt;</em>, and override the method <em>public void run(AccountManagerFuture arg0)</em>. In this method, insert logic for when the authentication fails and succeeds. If authentication fails, start an activity with an intent filter of <em>AccountManager.KEY_INTENT</em>. Doing so creates an interaction with the user to accept or deny use of the account. If authentication succeeds, use <em>bundle.getString(AccountManager.KEY_AUTHTOKEN)</em> to look at the returned bundle and capture the token.</li>
+<li> <strong>Request the OAuth 2 token.</strong> Now, you are ready to request a token with a call to <em>getAuthToken()</em>. You need the account name the user selected, a string name for the activity scope for this account (which is displayed to users upon confirmation), a reference to the current activity, a reference to the callback class, and a reference to a handler for errors.</li>
+<li> <strong>Use the OAuth 2 token to authenticate.</strong> With a token in hand, you can authenticate directly to the cloud service that supports OAuth 2. Note that each service login may be slightly different, but all should honor this token. In addition, for error handling, you can create a handler and manage error messages in the <em>handleMessage()</em> method.</li>
+</ol><p>
+Note that expired tokens may require reauthentication. One method for avoiding this requirement is to call <em>invalidateAuthToken()</em> prior to invoking the <em>getAuthToken()</em> method.
+</p><h2>Problem Example</h2><p>As the MyApp developer, you are using the Google App Engine cloud service to host an application. You want your Android application to interact with it, which requires that the app authenticate.
+</p><p>
+You try to invent your own authentication system. You create hashes for user passwords and account credentials, so you feel relatively safe. You use SHA-1:
+</p><pre>MessageDigest digest;
+try { 
+  digest = MessageDigest.getInstance("SHA-1");
+  digest.reset();
+  byte[] input;
+  input = digest.digest(password.getBytes("UTF-8"));
+  return input;
+}
+</pre><p>
+Although you are attempting to follow best practices, this approach presents several problems. First, you now have to think about password management, such as handling periodic changes and resets. You must also concern yourself with complexity requirements. Finally, SHA-1 is not as secure as other algorithms, and it is unlikely that most developers will understand the complexities of cryptography to select the right method.
+</p><p>
+A far better approach is one that uses OAuth 2.
+</p><h2>Solution Example</h2><p>Recognizing that most users will have a Google account, you as the MyApp developer decide to use OAuth 2. You first update the Android manifest with the proper permissions:
+</p><pre>&lt;uses-permission android:name="android.permission.INTERNET" /&gt;
+&lt;uses-permission android:name="android.permission.GET_ACCOUNTS"/&gt;
+&lt;uses-permission android:name="android.permission.USE_CREDENTIALS" /&gt;
+</pre><p>
+Next, you invoke the <em>AccountManager</em> in the activity’s <em>onCreate()</em> method, where the authentication is performed. You also search for all available Google accounts to have users select one:
+</p><pre>private static AccountManager am;
+String token = new String(“”);
+final Activity ref = this;
+
+public void onCreate(Bundle savedInstanceState) {
+am = AccountManager.get(this);
+Account[] accounts = am.getAccountsByType("com.google");
+}
+</pre><p>
+You display each account to users at the initial run in a <em>ListView</em>. After users select an account, this process will no longer be necessary, so you save the account in a SQLite database and create logic not to show the <em>ListView</em> again.
+</p><p>
+With user accounts now assigned to the application, you are ready to conduct the authentication. First, create the callback class that will handle receipt of the token:
+</p><pre>private class GetAuthCallback implements AccountManagerCallback &lt;Bundle&gt; {
+@Override
+public void run(AccountManagerFuture arg0) {
+Bundle bundle;
+try {
+Bundle bundle = (Bundle) arg0.getResult();
+Intent launch = (Intent) bundle.get(AccountManager.KEY_INTENT);
+if (launch != null) {startActivityForResult(launch, 0);return; }
+token = bundle.getString(AccountManager.KEY_AUTHTOKEN); 
+} catch (Exception e) {// Error handling}
+}
+};
+</pre><p>
+This class receives the callback from the asynchronous <em>getAuthToken()</em> method. If a user has already authenticated, the class stores the token in the global <em>String</em> field token. If the user must authenticate and accept the account, then an activity will be launched to confirm the user’s acceptance with the <em>AccountManager.KEY_INTENT</em> action filter.
+</p><p>
+You also create a simple handler for error messages. This handler logs errors to the Eclipse log facility:
+</p><pre>Handler handler=new Handler()
+{
+@Override
+public void handleMessage(Message msg)
+{
+Log.e(getClass().getSimpleName(), "Error with auth");
+}     
+};
+</pre><p>
+You are almost ready, but still need to handle the intent used in the <em>GetAuthCallback</em> method. Note that starting the activity for result with <em>AccountManager.KEY_INTENT</em> makes sense, as you need to know whether the user authenticated and accepted the account scope for this application. You do this in the <em>getActivityResult()</em> method:
+</p><pre>@Override
+protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+if (resultCode == Activity.RESULT_OK) {
+am.getAuthToken (account, "Manage your tasks", null, this, new GetAuthCallback(), null);
+}
+}
+</pre><p>
+Now, you are ready to request the token. Do so in a button’s <em>onClickListener.onClick(View v)</em> event, where you insert the following code:
+</p><pre>am.getAuthToken(
+account,                     //This is the account the user selected in the ListView
+"Manage tasks",            // Authentication scope
+null,                        // Authenticator-specific options, 
+ref,                           // Activity reference
+new GetAuthCallback(),          // Callback defined above
+handler);    // Handler defined above
+}
+</pre><p>
+This code provides a token you can use to authenticate with App Engine. Follow the service’s authentication application programming interface from here. It often involves creating a cookie with the token, adding a secret code, and then attaching it to the URL.</p>

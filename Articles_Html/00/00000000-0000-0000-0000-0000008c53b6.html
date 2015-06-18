@@ -1,0 +1,36 @@
+<h2>Applies To</h2><ul><li> iOS applications that handle XML documents.</li>
+</ul><h2>What to Check For</h2><p>Verify that data inserted into XML documents is validated and encoded.
+</p><h2>Why</h2><p>Validating and encoding data inserted into XML documents helps prevent XML injection vulnerabilities.
+</p><h2>How to Check</h2><p>To verify that data inserted into XML documents is validated and encoded:
+</p><ol>
+<li> <strong>Identify XML documents used by the application.</strong> Examine the application design to identify all XML documents and XML document types used by the application.</li>
+<li> <strong>Identify code that handles XML documents.</strong> Find all application code that handles XML documents.</li>
+<li> <strong>Review validation methods.</strong> Make sure that clear validation methods are defined for each type of XML data handled by the application.</li>
+<li> <strong>Review encoding methods.</strong> Make sure that encoding methods are defined for XML data. Consider the following when evaluating XML encoding: <ul>
+<li> Data must first be converted to a uniform character encoding. </li>
+<li> XML entities must be escaped properly. </li>
+<li> Code that loads XML documents must be able to restore the original data from the encoded data.</li></ul></li>
+<li> <strong>Verify that validation and encoding are used.</strong> Make sure that all XML data is validated and encoded before it is inserted into XML documents.</li>
+</ol><h2>How to Fix</h2><p>To validate and encode data inserted into XML documents:
+</p><ol>
+<li> <strong>Identify XML documents used by the application.</strong> Examine the application design to identify all XML documents and XML document types used by the application.</li>
+<li> <strong>Identify code that handles XML documents.</strong> Find all application code that handles XML documents.</li>
+<li> <strong>Write data validation methods.</strong> Write methods that validate all the data types that are stored in XML documents and used by the application.</li>
+<li> <strong>Use validation methods.</strong> Call the data validation methods from the previous step wherever the application handles XML documents. Validation should be performed before encoding.</li>
+<li> <strong>Write encoding methods.</strong> Write methods that escape XML entities. Unfortunately, there are no stable libraries available for escaping XML entities for iOS. When writing code that escapes XML entities, consider the following: <ul>
+<li> Data must first be converted to a uniform character encoding. </li>
+<li> XML entities must be escaped properly.</li>
+<li> Code that loads XML documents must be able to restore the original data from the encoded data.</li></ul></li>
+<li> <strong>Use encoding methods.</strong> Call the encoding methods from the previous step wherever the application handles XML documents. </li>
+</ol><h2>Data Validation Guidelines</h2><ul><li> <a href="00000000-0000-0000-0000-000000866d55">Canonicalize File Names and Paths</a></li>
+<li> <a href="00000000-0000-0000-0000-000000590dce">Check File Paths and Names for Null Bytes</a></li>
+<li> <a href="00000000-0000-0000-0000-00000051c329">Validate All Input</a></li>
+<li> <a href="00000000-0000-0000-0000-0000005804d8">Validate and Encode Data Inserted into XML Documents</a></li>
+<li> <a href="00000000-0000-0000-0000-000000410a08">Validate and Encode Data Passed to UIWebView Controls</a></li>
+<li> <a href="00000000-0000-0000-0000-00000049bb5e">Validate File Formats</a></li>
+</ul><h2>Data Validation Checklists</h2><ul><li> <a href="00000000-0000-0000-0000-0000004d996e">File Names and Paths Are Canonicalized</a></li>
+<li> <a href="00000000-0000-0000-0000-0000004446d0">File Paths and Names Are Checked for Null Bytes</a></li>
+<li> <a href="00000000-0000-0000-0000-000000396c19">All Input Is Validated</a></li>
+<li> <a href="00000000-0000-0000-0000-0000008c53b6">Data Inserted into XML Documents Is Validated and Encoded</a></li>
+<li> <a href="00000000-0000-0000-0000-000000647d44">Data Passed to UIWebView Controls Is Validated and Encoded</a></li>
+<li> <a href="00000000-0000-0000-0000-000000066105">File Formats Are Validated</a></li></ul>

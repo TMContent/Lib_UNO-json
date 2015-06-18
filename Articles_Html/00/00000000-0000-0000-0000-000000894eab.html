@@ -1,0 +1,10 @@
+<h2>Applies To</h2><ul><li> ASP.NET</li>
+</ul><h2>What to Do</h2><p>Set <em>HTTPOnly</em> and <em>Secure</em> flags on session cookies.
+</p><h2>Why</h2><p>The <em>Secure</em> flag should be set on session cookie to protect its contents from eavesdropping attacks.  These attacks, if successful, can be used to hijack the user’s session and interact with the application as if they were the real user. Setting the <em>Secure</em> flag on session cookie ensures it is only transferred over connections that are secured by TLS and prevents eavesdropping.
+</p><p>
+The <em>HTTPOnly</em> flag should be set on session cookie to mitigate Cross-Site Scripting attacks. Setting the <em>HTTPOnly</em> flag on session cookie prevents the contents of the cookie from being transmitted by a client-side script. Since in a Cross-Site Scripting attack  an arbitrary script runs in the context of the user's browser, the <em>HTTPOnly</em> flag effectively prevents the malicious script from using the cookie in the attack.
+</p><h2>How</h2><p>To set <em>HTTPOnly</em> and <em>Secure</em> flags on session cookies:
+</p><ol>
+<li> <strong>Configure IIS to use TLS.</strong> Get a valid certificate. Hosting service providers often sell valid TLS certificates. Install the certificate. Create an HTTPS binding for the site. A link in the "Additional Resources" section describes how to do this in detail.</li>
+<li> <strong>Set the Secure and HTTPOnly flags for session cookies.</strong> Edit the Web.config file. Set the <em>httpOnlyCookies</em> property to <em>true</em> for the <em>httpCookies</em> element. Set the <em>requireSSL</em> property to <em>true</em> for the <em>httpCookies</em> element. There are different ways to write this in XML. Here is one: &lt;httpcookies httponlycookies="true" requiressl="true"&gt;&lt;/httpcookies&gt;</li>
+</ol><h2>Additional Resources</h2><ul><li> For information about setting up TLS on IIS, see <a href="http://www.iis.net/learn/manage/configuring-security/how-to-set-up-ssl-on-iis">http://www.iis.net/learn/manage/configuring-security/how-to-set-up-ssl-on-iis</a></li></ul>

@@ -1,0 +1,8 @@
+<h2>Applies To</h2><ul><li> PHP</li>
+</ul><h2>What to Do</h2><p>Avoid using external commands for application functionality. Write PHP code to perform that functionality instead.
+</p><h2>Why</h2><p>Using external commands for application functionality creates the potential for command injection vulnerabilities. If it's possible to satisfy design requirements using PHP code, do that instead of using external commands.
+</p><h2>How</h2><p>To remove code that uses external commands:
+</p><ol>
+<li> <strong>Find all code that uses external commands.</strong> To identify potential trouble spots, find all the code in the application that executes operating system commands by searching for use of the following functions: exec, passthru, shell_exec, system, proc_open, popen, curl_exec, curl_multi_exec, pcntl_exec, dl. Create a spreadsheet to list all this code.</li>
+<li> <strong>Replace code that uses external commands.</strong> Using the spreadsheet as a guide, examine each piece of code that executes operating system commands and determine whether it is absolutely necessary to the application. If possible, rewrite that code to use only PHP functions, thus removing the possibility that it contains a command injection vulnerability.</li>
+</ol>

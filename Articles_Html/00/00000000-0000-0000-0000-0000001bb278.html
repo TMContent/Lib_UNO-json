@@ -1,0 +1,10 @@
+<h2>Applies To</h2><ul><li> ASP.NET</li>
+</ul><h2>What to Do</h2><p>URL-encode data that gets included in HTTP response headers.
+</p><h2>Why</h2><p>Data in HTTP response headers should be URL-encoded to prevent response splitting vulnerabilities.
+</p><h2>How</h2><p>To URL-encode data in HTTP Response headers:
+</p><ol>
+<li> <strong>Identify all data included in HTTP response headers.</strong> Search your code for calls to <em>HttpResponse.AddHeader</em> to find all code that adds data to HTTP response headers.</li>
+<li> <strong>Validate all data included in HTTP response headers.</strong> Use positive validation routines to check all data that gets included in HTTP response headers.</li>
+<li> <strong>URL-encode all data included in HTTP response headers.</strong> Use the <em>HttpUtility.UrlEncode</em> method to URL-encode data that gets includes in HTTP response headers.</li>
+</ol><h2>Additional Resources</h2><ul><li> For more information about the <em>HttpResponse.AddHeader</em> method, see <a href="http://msdn.microsoft.com/en-us/library/system.web.httpresponse.addheader(v=vs.110).aspx">http://msdn.microsoft.com/en-us/library/system.web.httpresponse.addheader(v=vs.110).aspx</a></li>
+<li> For more information about the <em>HttpUtility.UrlEncode</em> method, see <a href="http://msdn.microsoft.com/en-us/library/4fkewx0t.aspx">http://msdn.microsoft.com/en-us/library/4fkewx0t.aspx</a></li></ul>

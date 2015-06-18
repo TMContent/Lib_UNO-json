@@ -1,0 +1,14 @@
+<h1>Applies to</h1>
+  <ul>
+    <li>Microsoft&#174; Windows Communication Foundation (WCF) 3.5 <li>Microsoft Visual Studio&#174; 2008</li></li>
+  </ul>
+  <h1>What to Do</h1>
+  <p>Know your tradeoffs with Impersonation.</p>
+  <h1>How</h1>
+  <p>Be aware that impersonation prevents the efficient use of connection pooling if you access downstream databases by using the impersonated identity. This impacts the ability of your application to scale. Also, using impersonation can introduce other security vulnerabilities, particularly in multi-threaded applications.</p>
+  <p>You might need impersonation if you need to: </p>
+  <ul>
+    <li>Flow the original caller's security context to the middle tier and/or data tier of your Web application to support fine-grained (per-user) authorization.<li>Flow the original caller's security context to the downstream tiers to support operating system level auditing.<li>Access a particular network resource by using a specific identity.</li></li></li>
+  </ul>
+  <hr />
+  <p>Adapted from Microsoft patterns & practices guidance.</p>

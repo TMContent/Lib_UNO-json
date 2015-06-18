@@ -1,0 +1,28 @@
+<h1>Applies to</h1>
+  <p>Scala and Play Framework 2.1.0+<br /></p>
+  <h1>What to Do</h1>
+  <p>Make inactive sessions time-out.</p>
+  <h1>Why</h1>
+  <p>Make sessions expire after a period of inactivity to make it harder for an attacker to hijack a session.</p>
+  <h1>How</h1>
+  <p />
+  <p>To make inactive sessions time-out:</p>
+  <ol>
+    <li>
+      <p>
+        <strong>Identify login functionality.</strong>&nbsp;Find code that handles user logins.</p>
+    </li>
+    <li>
+      <p>
+        <strong>Add code that sets the inactive session time-out period.</strong>&nbsp;There is no technical timeout for the Session. It expires when the user closes the web browser.&nbsp;</p>
+      <p>If you need a functional timeout for a specific application, store a timestamp into the user Session and use it in the way your application needs (e.g. for a maximum session duration, maximum inactivity duration, etc.).&nbsp;<a href="https://github.com/jroper/play-security-utils/">This</a>&nbsp;link explains how to add session timeout functionality to the application.&nbsp;</p>
+    </li>
+  </ol>
+  <h1>Additional Resources</h1>
+  <ul>
+    <li>For more information about the&nbsp;method, please see<a href="http://download.oracle.com/javaee/6/api/javax/servlet/http/HttpSession.html#setMaxInactiveInterval%28int%29">:</a>&nbsp;<a href="https://github.com/jroper/play-security-utils/blob/master/src/main/scala/play/security/utils/SessionTimeoutAction.scala">https://github.com/jroper/play-security-utils/blob/master/src/main/scala/play/security/utils/SessionTimeoutAction.scala</a></li>
+  </ul>
+  <div>
+    <br />
+  </div>
+  <p />

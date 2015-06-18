@@ -1,0 +1,29 @@
+<h2>Applies To</h2><ul><li> iOS applications that cache authentication data.</li>
+</ul><h2>What to Do</h2><p>Store sensitive data such as encryption keys and cached authentication credentials in the <em>keychain</em>.
+</p><h2>Why</h2><p>Authentication credentials and encryption keys should be stored in the <em>keychain</em>, because the <em>keychain</em> encrypts data stored in it and is designed for storing such information. The <em>keychain</em> is also suitable for storing application configuration settings.
+</p><h2>How</h2><p>To use the <em>keychain</em> to store cached authentication data and encryption keys:
+</p><ol>
+<li> <strong>Identify cached authentication data.</strong> Make a list of all cached authentication data used by your application. Some examples are:<ul>
+<li> Passwords</li>
+<li> Certificates</li>
+<li> Encryption keys</li>
+<li> Authentication tokens</li></ul></li>
+<li> <strong>Define encryption requirements for sensitive data stored in files.</strong> Choose the level of protection that is most appropriate for each type of sensitive data that is stored in files and handled by the application. The iOS Data Protection API provides the following protection levels:<ul>
+<li> <em>FileProtectionNone</em> - no encryption.</li>
+<li> <em>FileProtectionComplete</em> - encrypt the file and deny access when the device is locked.</li>
+<li> <em>FileProtectionCompleteUnlessOpen</em> - encrypt the file until it is open, leave it decrypted while it is open even if the device is locked.</li>
+<li> <em>FileProtectionCompleteUntilFirstUserAuthentication</em> - encrypt the file until the device is unlocked for the first time after a reboot.</li></ul></li>
+<li> <strong>Define encryption requirements for sensitive data that is stored in the keychain.</strong> Choose the level of protection that is the most appropriate for each type of sensitive data that is stored in the keychain and handled by the application. The keychain provides the following protection levels:<ul>
+<li> <em>kSecAttrAccessibleAlways</em> - the item is always available.</li>
+<li> <em>kSecAttrAccessibleWhenUnlocked</em> - the item is only available when the device is unlocked.</li>
+<li> <em>kSecAttrAccessibleAfterFirstUnlock</em> - the item is only available after the device is unlocked for the first time after a reboot.</li>
+<li> <em>kSecAttrAccessibleAlwaysThisDeviceOnly</em> - the item is always available, but is not moved to other devices.</li>
+<li> <em>kSecAttrAccessibleWhenUnlockedThisDeviceOnly</em> - the item is only available when the device is unlocked and is not moved to other devices.</li>
+<li> <em>kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly</em> - the item is only available after the device is unlocked for the first time after a reboot and is not moved to other devices.</li></ul></li>
+<li> <strong>Identify the code that caches authenticaton data.</strong> Find all application code that handles data that should be stored in the <em>keychain</em>.</li>
+<li> <strong>Store cached authentication credentials in the keychain.</strong> Edit code that handles cached authentcation data to store such data in the keychain. </li>
+</ol><h2>Cryptographic Storage Guidelines</h2><ul><li> <a href="00000000-0000-0000-0000-0000002a5e0d">Encrypt Stored Sensitive Data</a></li>
+<li> <a href="00000000-0000-0000-0000-000000467952">Store Cached Authentication Data in the Keychain</a></li>
+</ul><h2>Cryptographic Storage Checklists</h2><ul><li> <a href="00000000-0000-0000-0000-0000002bf00e">Stored Sensitive Data Is Encrypted</a></li>
+<li> <a href="00000000-0000-0000-0000-0000004b75cb">Cached Authentication Data Is Stored in the Keychain</a></li>
+</ul>

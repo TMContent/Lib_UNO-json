@@ -1,0 +1,10 @@
+<h1>Applies to</h1>
+  <ul>
+    <li>PHP</li>
+  </ul>
+  <h1>What to Do</h1>
+  <p>Configure PHP to disable loading scripts from other web resources.</p>
+  <h1>Why</h1>
+  <p>Preventing PHP from loading scripts from other web sites helps prevent remote file inclusion vulnerabilities.</p>
+  <h1>How</h1>
+  <p />Use the <em>allow_url_include</em> directive in <em>php.ini</em> to disable loading external scripts, like so:<pre>allow_url_include = Off</pre><p />If you application does not need to open URLs as files, it may be prudent to disable that functionality as well by using the <em>allow_url_fopen</em> directive in <em>php.ini</em>, like so:<pre>allow_url_fopen = Off</pre>

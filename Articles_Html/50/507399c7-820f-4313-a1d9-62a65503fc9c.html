@@ -1,0 +1,23 @@
+<h1>What to Do</h1>
+  <p>Be aware that impersonation prevents the efficient use of connection pooling if you access downstream databases by using the impersonated identity. </p>
+  <h1>Why</h1>
+  <p>This impacts the ability of your application to scale. Also, using impersonation can introduce other security vulnerabilities, particularly in multi-threaded applications, such as ASP.NET Web applications. </p>
+  <h1>When</h1>
+  <p>You might need impersonation if you need to: </p>
+  <ul>
+    <li>Flow the original caller's security context to the middle tier and/or data tier of your Web application to support fine-grained (per-user) authorization. <li>Flow the original caller's security context to the downstream tiers to support operating system level auditing. <li>Access a particular network resource by using a specific identity.&nbsp;&nbsp;</li></li></li>
+  </ul>
+  <h1>Related Items</h1>
+  <ul>
+    <li>
+      <a href="/article/97dfd32f-deb6-4016-b3ff-24147a959521">Do Not Use the LogonUser API</a>
+      <li>
+        <a href="/article/fdb65a4c-d979-4ab7-b2fa-b88e908207fe">Do Not Use Impersonation Unless Required</a>
+        <li>
+          <a href="/article/9ea813b5-e1a1-4439-b569-de1c6812b7cb">When Using Impersonation, Consider Threading Issues</a>
+        </li>
+      </li>
+    </li>
+  </ul>
+  <hr />
+  <p>Adapted from Microsoft patterns & practices guidance. </p>

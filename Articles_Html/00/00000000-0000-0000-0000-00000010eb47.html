@@ -1,0 +1,20 @@
+<h2>Applies To</h2><ul><li> HTML5</li>
+</ul><h2>What to Do</h2><p>Use the <em>textContent</em> method instead of <em>innerHTML</em> to assign values to DOM elements.
+</p><h2>Why</h2><p>Using the <em>textContent</em> method instead of innerHTML prevents cross-site scripting (XSS) attacks, because values assigned using <em>textContent</em> will not be executed as script.
+</p><h2>How</h2><p>To use the <em>textContent</em> property instead of <em>innerHTML</em>:
+</p><ol>
+<li> <strong>Find all references to <em>innerHTML</em>.</strong> Search the application code for all references to the <em>innerHTML</em> property. Create a spreadsheet to list all code that uses the <em>innerHTML</em> property to assign values to DOM elements.</li>
+<li> <strong>Use <em>textContent</em> instead of <em>innerHTML</em>.</strong> Using the spreadsheet as a guide, for all code that uses <em>innerHTML</em> to assign values, change it to use <em>textContent</em> instead. Simply replace references to <em>innerHTML</em> with <em>textContent</em>. For most applications, no further changes should be required.</li>
+</ol><h2>Web Messaging Guidelines</h2><ul><li> <a href="00000000-0000-0000-0000-00000012aada">Do Not Evaluate Messages as Code</a></li>
+<li> <a href="00000000-0000-0000-0000-00000010eb47">Use element.textContent to Assign Values to DOM Elements</a></li>
+<li> <a href="00000000-0000-0000-0000-00000076ad87">Explicitly State the Expected Origin with postMessage</a></li>
+<li> <a href="00000000-0000-0000-0000-0000006ab8ac">Validate Data Received by Event Handlers</a></li>
+<li> <a href="00000000-0000-0000-0000-00000085babd">Validate the Origin Attribute Against the FQDN</a></li>
+<li> <a href="00000000-0000-0000-0000-000000763637">Check The Origin Attribute of Messages</a></li>
+</ul><h2>Web Messaging Checklist Items</h2><ul><li> <a href="00000000-0000-0000-0000-0000008e9b8f">Messages Are Not Evaluated as Code</a></li>
+<li> <a href="00000000-0000-0000-0000-00000060fefb">Element.textContent Is Used to Assign Values to DOM Elements</a></li>
+<li> <a href="00000000-0000-0000-0000-0000004a4216">Expected Origin Is Explicitly Stated with postMessage</a></li>
+<li> <a href="967c9b95-2319-4741-a6fd-1b4bcdf3b636">Data Received by Event Handlers Is Validated</a></li>
+<li> <a href="16628f7f-e17a-4bd1-838a-011736bf0995">The Origin Attribute Is Validated Against the FQDN</a></li>
+<li> <a href="f103974e-3a42-4837-b04b-7da7e87c41ec">The Origin Attribute of Messages Is Checked</a></li>
+</ul>

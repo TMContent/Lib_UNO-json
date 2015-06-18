@@ -1,0 +1,28 @@
+<h1>Applies to</h1>
+  <p>C&#43;&#43;</p>
+  <h1>What to Do</h1>
+  <p>Write destructors in such a way that they don't throw exceptions.</p>
+  <h1>Why</h1>
+  <p>A destructor may be called when an exception is thrown. If a destructor throws an exception after being called from an exception being thrown, the program is likely to terminate. This may result in a denial-of-service vulnerability.</p>
+  <h1>How</h1>
+  <p>Perform the following actions to assure that destructors don't throw exceptions:</p>
+  <ol>
+    <li>
+      <p>
+        <strong>Identify destructors.</strong> Review your code and identify all destructors. This should be an easy task.</p>
+      <li>
+        <p>
+          <strong>Search for destructors that throw exceptions. </strong>From the list of destructors, identify the ones that throw exceptions.</p>
+        <li>
+          <p>
+            <strong>Rewrite destructors. </strong>Rewrite the destructors that throw exceptions in a way that doesn't involve throwing exceptions. This may be accomplished by simply removing code that throws exceptions from the destructors. If error handling must be done based on the results of the execution of the destructors, use error codes.</p>
+        </li>
+      </li>
+    </li>
+  </ol>
+  <h1>Related Items</h1>
+  <ul>
+    <li>
+      <a href="/article/441b4138-1866-442f-8abb-6d05236d6fcb">Don't Throw Exceptions from Deallocation Functions</a>
+    </li>
+  </ul>

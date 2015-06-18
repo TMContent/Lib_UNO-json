@@ -1,0 +1,30 @@
+<h2>Applies To</h2><ul><li> Web Applications</li>
+</ul><h2>What to Check For</h2><p>Verify that mapping values are used to determine destinations of redirects and forwards.
+</p><h2>Why</h2><p>Using mapping values when performing redirects or forwards prevents malicious users from creating hyperlinks that use the redirects or forwards to point to pages other than those intended by the application design.
+</p><h2>How to Check</h2><p>Use the following steps to make sure that mapping values are used for redirects and forwards:
+</p><ol>
+<li> <strong>Identify redirects and forwards.</strong> Review code to find all redirects and forwards.</li>
+<li> <strong>Examine redirects and forwards.</strong> Look for code that handles parameters. Verify that this code does not accept fully qualified URLs as input for calculating destinations of redirects or forwards. If code uses parameters to calculate destinations of redirects or forwards, verify that only short-hand keywords defined by the application are accepted as input to map to valid and authorized destinations.</li>
+</ol><h2>How to Fix</h2><p>Perform the following actions to calculate destinations of redirects and forwards based on mapping values:
+</p><ol>
+<li> <strong>Identify redirects and forwards.</strong> Review code to find all redirects and forwards.</li>
+<li> <strong>Enumerate destinations.</strong> Make a list of all destinations pointed to by redirects and forwards.</li>
+<li> <strong>Define mapping values.</strong> Define mapping values for all destinations used by redirects and forwards. A mapping value is a short identifying string that symbolically represents a resource.</li>
+<li> <strong>Rewrite redirects and forwards.</strong> Rewrite redirects and forwards to use mapping values as input to calculate the final destinations of redirects or forwards.</li>
+</ol><h2>Problem Example</h2><p>Consider an on-line banking application that has an insecure redirect:
+</p><p>
+<tt> http://www.onlinebank.com/redirect.asp?url=[destination] </tt>
+</p><p>
+A phisher may create the following hyperlink to point to his own site and send it in spam messages to millions of people:
+</p><p>
+<tt> http://www.onlinebank.com/redirect.asp?url=www.phisher.com </tt>
+</p><p>
+When a user sees a link that appears to point to his bank at onlinebank.com in an e-mail message, he clicks that link and sees a web site that looks exactly like the bank's, but is actually a phishing web site used to steal authentication credentials. The user enters his account number and PIN into the web page, receives an error message telling him to try again, and is redirected to the bank's real site. After entering his credentials again, the user successfuly views his account. However, the phisher now has the user's online banking information.
+</p><h2>Solution Example</h2><p>The simplest solution is to get rid of the redirect altogether, but if it is necessary for application design, then mapping values may be used to mitigate this vulnerability. For example, if redirect.asp is used by the application to redirect to balance.asp, a mapping value called "balance" may be created to signify balance.asp. The page redirect.asp should then be rewritten to accept mapping values as input, instead of urls. The following url should then redirect to balance.asp:
+</p><p>
+<tt> http://www.onlinebank.com/redirect.asp?map=balance </tt>
+</p><p>
+However, the following malicious hyperlink will no longer work, because supplied input will not match any mapping value defined in the application:
+</p><p>
+<tt> http://www.onlinebank.com/redirect.asp?url=www.phisher.com </tt>
+</p>

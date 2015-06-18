@@ -1,0 +1,10 @@
+<h1>What to Check For</h1>
+  <p>Check to ensure that the trust level of your application is not changed by your application developers by setting the allowOverride attribute to false in the machine-level Web.config file.</p>
+  <h1>How to Fix</h1>
+  <p>If you need to isolate multiple applications on a shared server from one another and from shared system resources, use Medium trust. To enforce Medium trust for all Web applications on a server, use the following configuration in the machine-level Web.config file. </p>
+  <p>
+    <pre>&lt;location allowOverride="false"&gt;<br />  &lt;system.web&gt;<br />   &lt;trust level="Medium" originUrl="" /&gt;<br />  &lt;/system.web&gt;<br /> &lt;/location&gt;  </pre>
+  </p>
+  <p>By setting <b>allowOverride="false"</b>, an individual developer is unable to override the Medium trust policy setting in his or her application's Web.config file.</p>
+  <hr />
+  <p>Adapted from Microsoft patterns & practices guidance. </p>

@@ -1,0 +1,18 @@
+<h2>Applies To</h2><ul><li> Android applications that open saved files or documents.</li>
+</ul><h2>What to Do</h2><p>Verify that the format of the file is correct when opening saved files or documents.
+</p><h2>Why</h2><p>Many vulnerabilities are exploited via malformed documents supplied to the application. Attackers frequently embed malformed documents in web pages - some applications are integrated into the web browser and will open these malicious documents automatically. Validating the file format before loading files into the application makes it harder to embed exploit code into documents.
+</p><h2>How</h2><p>To validate file formats before loading files into the application:
+</p><ol>
+<li> <strong>Define file format.</strong> Specify valid values for all possible fields in all document types used by your applications. This information should be a part of project documentation and the developers may already have it.</li>
+<li> <strong>Review code.</strong> Search for code that loads saved files into the application. Examine the extent of the validation already being performed by the application. If some validation is already being performed, some code may be recycled for a more thorough validation routine.</li>
+<li> <strong>Implement validation.</strong> Write functions to validate all fields in all document types supported by the application.</li>
+<li> <strong>Centralize validation.</strong> Move the validation functions for all document fields to the centralized input and data validation class or library. Write a master file format validation function that calls all individual data field validation functions.</li>
+<li> <strong>Use validation.</strong> Go back to code that loads data files into the application. Remove any old validation code. Call the master file format validation function on all files before loading them into the application.</li>
+</ol><h2>Data Validation Guidelines</h2><ul><li> <a href="00000000-0000-0000-0000-0000008d3cec">Canonicalize File Names and Paths</a></li>
+<li> <a href="00000000-0000-0000-0000-0000008149ca">Validate All Input</a></li>
+<li> <a href="00000000-0000-0000-0000-0000006c7089">Validate and Encode Data Inserted into XML Documents</a></li>
+<li> <a href="00000000-0000-0000-0000-0000007635ae">Validate File Formats</a></li>
+</ul><h2>Data Validation Checklists</h2><ul><li> <a href="00000000-0000-0000-0000-0000009763b8">File Names and Paths Are Canonicalized</a></li>
+<li> <a href="00000000-0000-0000-0000-0000004f2fec">All Input Is Validated</a></li>
+<li> <a href="00000000-0000-0000-0000-00000071b4f0">Data Inserted into XML Documents Is Validated and Encoded</a></li>
+<li> <a href="00000000-0000-0000-0000-00000080c790">File Formats Are Validated</a></li></ul>

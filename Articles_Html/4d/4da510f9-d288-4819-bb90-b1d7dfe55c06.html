@@ -1,0 +1,7 @@
+<h2>What to Do</h2><p>Do not delete logs for at least a year. Actually keeping the logs should be done by the centralized log server and that server is outside the scope of the responsibilities of the application's developers. The developers just have to make sure that the application itself doesn't delete logs.
+</p><h2>Why</h2><p>Logs should be kept for at least a year to facilitate investigations of compromises and other suspicious incidents. It is unfortunately quite frequent for a compromise to last a year or longer before it is discovered, which means that logs should be kept for an extended time period to provide a reasonable degree of assurance.
+</p><h2>How</h2><p>To prevent the application from deleting logs:
+</p><ol>
+<li> <strong>Find code that deletes logs.</strong> A centralized log server solution should really not allow the application to delete any logs. If for some reason there is a feature in the application that allows clearing logs, find the code that implements that feature.</li>
+<li> <strong>Remove code that deletes logs.</strong> Remove the feature that allows clearing logs and the code that implements this feature.</li>
+</ol>

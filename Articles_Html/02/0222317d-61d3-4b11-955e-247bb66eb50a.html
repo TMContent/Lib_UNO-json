@@ -1,0 +1,10 @@
+<h1>Description</h1><p>Null pointer dereference vulnerabilities occur when the application attempts to use a pointer (object reference) that has a null value as if it has a valid value. If application code checks pointers (object references) for null before using them, null pointer dereference vulnerabilities won't occur. 
+</p><p>
+Null pointer dereference issues affect all applications.
+</p><h1>Impact</h1><p>The impact of null dereference in managed languages is denial of service. The application will throw an exception and usually crash when it attempts to dereference a null pointer. In some cases, the application might not even crash.
+</p><h1>Countermeasures</h1><p>To prevent null dereference vulnerabilities, check object references for null before using them. Usually, an object reference is passed as an argument to a function - in such situations, it is best to check these object references for null in the very beginning of the function and throw an exception or return an error code if a null value is detected. 
+</p><ul>
+<li> <a href="92f27c14-6962-4366-875f-101e6ab68230">Check Object References for Null Before Using Them</a></li>
+</ul><h1>Application Check</h1><p>To check for adequate protection against this vulnerability, make sure that object references are checked for null in the beginning of function definitions or at least before the object references are used.
+</p><ul>
+<li> <a href="54335321-0b6a-4d2e-8ee3-594ecf8c00cf">Object References Are Checked for Null Before Being Used</a></li></ul>

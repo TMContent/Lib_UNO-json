@@ -1,0 +1,12 @@
+<h1>Applies to</h1>
+  <ul>
+    <li>PCI DSS Requirement 3.2.1</li>
+  </ul>
+  <h1>What to Do</h1>
+  <p>Do not store full card track contents under any circumstances.</p>
+  <h1>Why</h1>
+  <p>The full card track contents should not be stored to limit the potential damage in the event of a successful attack. The term "track contents" refers to the information stored on the magnetic strip of the physical card issued to a cardholder. New cards also
+ include a chip, the contents of which should also be considered "track contents." If an attacker has this information, he may be able to use it to make fraudulent transactions; therefore, the full track contents should never be stored.
+</p>
+  <h1>How</h1>
+  <p>Identify the storage mechanism that stores the full track contents, for example a script or a database query. Change the storage mechanism so that it does not record the full track contents.</p>

@@ -1,0 +1,24 @@
+<h1>Applies to</h1>
+  <ul>
+    <li>C&#43;&#43;</li>
+  </ul>
+  <h1>What to Do</h1>
+  <p>Write code in such a way that only dynamically allocated memory is explicitly deallocated.</p>
+  <h1>Why</h1>
+  <p>Deleting objects that were not allocated dynamically may result in an arbitrary code execution vulnerability if that memory is later reused by calling the new operator.</p>
+  <h1>How</h1>
+  <p>Perform the following actions to assure that only dynamically allocated memory is freed:</p>
+  <ol>
+    <li>
+      <p>
+        <strong>Search for deallocation code.</strong> Review code to find all places where memory is being deallocated by the delete operator or free() function calls.</p>
+      <li>
+        <p>
+          <strong>Identify objects being deleted.</strong> Search for the declarations of the objects that are being deleted.</p>
+        <li>
+          <p>
+            <strong>Remove unnecessary deallocation code.</strong> Remove all delete operators and free() function calls that delete objects, which are not created by calling the new operator.</p>
+        </li>
+      </li>
+    </li>
+  </ol>

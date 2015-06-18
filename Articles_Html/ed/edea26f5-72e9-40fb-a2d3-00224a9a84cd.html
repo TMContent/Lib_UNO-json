@@ -1,0 +1,24 @@
+<h1>Applies To</h1><p>Any web application.
+</p><h1>Description</h1><p>In an HTTP replay attack, the attacker first performs a network eavesdropping attack on the communication between a client and a server. The captured packets can then be sent by the attacker to the host in an attempt to impersonate the user that caused the original request. The attacker may have to modify certain characteristics of the replayed messages in order to trick the server into believing that the message originated from the original user.
+</p><p>
+An HTTP session hijacking attack is a specific type of a HTTP replay attack where the attacker attempts to impersonate the client by replaying the client session identifier.
+</p><h1>Impact</h1><ul><li>Authentication spoofing.</li>
+<li>Client impersonation.</li>
+</ul><h1>Vulnerabilities</h1><ul><li>If the server does not employ any secure means to verify the origin of received messages, then the server will be vulnerable to these attacks. Even if the server employs methods to verify the identity of the client sending the messages, but the verification is based on information in the messages that can be spoofed by an attacker, the server will be vulnerable to this attack. Some of the main causes are:<ul>
+<li>Unprotected sessions: An attacker may be able to impersonate the session of another user because of any of the following reasons:<ul>
+<li>Re-use of session IDs</li>
+<li>Long or infinite session timeouts</li>
+<li>Poor or predictable session identifiers </li></ul></li>
+<li>Insecure communication channel: If the channel of communication is secured using encryption, then the attacker will find it extremely difficult to conduct this attack.</li></ul></li>
+</ul><h1>Countermeasures</h1><ul><li>Use sessions securely.</li>
+<li>Utilize TLS or IPSec with encryption to establish a secure communication channel.</li>
+<li>Consider timestamps.</li>
+</ul><h1>Additional Resources</h1><ul><li>For more information on Theft On The Web: Prevent Session Hijacking, see: <a href="http://technet.microsoft.com/en-us/magazine/2005.01.sessionhijacking.aspx">http://technet.microsoft.com/en-us/magazine/2005.01.sessionhijacking.aspx</a></li>
+<li>For more information on Timestamps, see: <a href="http://en.wikipedia.org/wiki/Timestamp">http://en.wikipedia.org/wiki/Timestamp</a></li>
+</ul><h1>Related Items</h1><ul><li><a href="6a32e2d5-dba5-4f6d-9fe0-a51605fd0557">Attack: Network Eavesdropping Attack</a></li>
+<li><a href="8756794f-3bb1-4e08-9bad-5297c8130a52">Attack: HTTP Session Hijacking Attack</a></li>
+<li><a href="e001f908-8905-40bd-8457-3ca2047537ea">Attack: Session Prediction Attack</a></li>
+<li><a href="ad7b18e3-a8a0-4e87-b1a8-908e11449481">Attack: Network Credential Sniffing Attack</a></li>
+<li><a href="36ce61ac-adcc-45a9-9910-95d477142c8b">Attack: Cross Site Scripting Attack</a></li>
+<li><a href="41ff6525-2cae-40a5-91e9-365d2d26feb9">Attack: Man in the Middle Attack</a></li>
+</ul>

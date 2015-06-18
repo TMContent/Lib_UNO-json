@@ -1,0 +1,16 @@
+<h1>Applies to</h1>
+  <p>C&#43;&#43;</p>
+  <h1>What to Check For</h1>
+  <p>Verify that the delete operator is only called on pointers returned by the new operator.</p>
+  <h1>Why</h1>
+  <p>Deleting objects that were not allocated dynamically may result in an arbitrary code execution vulnerability if that memory is later reused by calling the new operator.</p>
+  <h1>How to Check</h1>
+  <p>Identify code that uses the delete operator. Verify that the delete operator is only called on pointers that are returned by the new operator.</p>
+  <h1>How to Fix</h1>
+  <p>Identify code that uses the delete operator on an object that was not dynamically allocated. Remove this code - let the compiler handle memory of the objects that are not dynamically allocated.</p>
+  <h1>Related Items</h1>
+  <ul>
+    <li>
+      <a href="/article/75ce06d3-d694-4271-9824-4df3947bb21e">Free Only Dynamically Allocated Memory</a>
+    </li>
+  </ul>

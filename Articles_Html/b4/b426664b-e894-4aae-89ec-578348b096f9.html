@@ -1,0 +1,10 @@
+<h2>What to Do</h2><p>Verify the user's identity before resetting a forgotten password.
+</p><h2>Why</h2><p>The user's identity should be verified before resetting a forgotten password to ensure that an attacker is not pretending to be the user to gain access.
+</p><h2>How</h2><p>To verify the user's identity before resetting a forgotten password:
+</p><ol>
+<li> <strong>Choose one or more mechanisms to verify user identity.</strong> Some common methods include asking user-chosen questions that have user-provided answers, and sending a code via e-mail or SMS.</li>
+<li> <strong>Associate identity verification information with user accounts.</strong> When creating a user account, collect the information necessary to verify user identity and store it together with the rest of the account information. Provide a mechanism for the user to update this information as necessary.</li>
+<li> <strong>Identify code that resets a forgotten password.</strong> Find the code in the application that is responsible for resetting passwords when users forget them.</li>
+<li> <strong>Add user identity verification to the password reset code.</strong> In the code that resets forgotten passwords, add code that implements the identity verification mechanism. Make sure the code verifies user identity before it sends the password reset token. The password reset token should be sent over a side channel.</li>
+</ol><h2>Additional Resources</h2><ul><li> For more information about password reset security, see <a href="https://www.owasp.org/index.php/Forgot_Password_Cheat_Sheet">https://www.owasp.org/index.php/Forgot_Password_Cheat_Sheet</a></li>
+</ul>

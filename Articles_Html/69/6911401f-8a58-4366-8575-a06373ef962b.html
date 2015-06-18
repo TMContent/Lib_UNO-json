@@ -1,0 +1,13 @@
+<h1>Applies to</h1>
+  <ul>
+    <li>Microsoft&#174; Windows Communication Foundation (WCF) 3.5 <li>Microsoft Visual Studio&#174; 2008</li></li>
+  </ul>
+  <h1>What to Do</h1>
+  <p>If non-repudiation is important, consider setting the SuppressAuditFailure property to false. </p>
+  <h1>Why</h1>
+  <p>This setting will cause an exception to be thrown when there is any audit failure. </p>
+  <h1>How</h1>
+  <p>By default your WCF will ignore audit failures and allow the service to continue running. By setting SuppressAuditFailure to false an exception can be thrown and handled by your WCF service.&nbsp;&nbsp; </p>
+  <p>&lt;configuration&gt;<br />&nbsp; &lt;system.serviceModel&gt;<br />&nbsp;&nbsp;&nbsp; &lt;behaviors&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;behavior&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;serviceSecurityAudit<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; auditLogLocation="Application"<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; suppressAuditFailure="false"<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; serviceAuthorizationAuditLevel="Failure"<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; messageAuthenticationAuditLevel=<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "SuccessOrFailure" /&gt; <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/behavior&gt;<br />&nbsp;&nbsp;&nbsp; &lt;/behaviors&gt;<br />&nbsp; &lt;/system.serviceModel&gt;<br />&lt;/configuration&gt;</p>
+  <hr />
+  <p>Adapted from Microsoft patterns & practices guidance.</p>
