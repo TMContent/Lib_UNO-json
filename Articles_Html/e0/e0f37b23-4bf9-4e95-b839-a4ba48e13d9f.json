@@ -1,6 +1,6 @@
 {
   "id": "e0f37b23-4bf9-4e95-b839-a4ba48e13d9f",
-  "checksum": "249290b659e35c640959d932b9f429f7",
+  "checksum": "b276f44e679eea8d3e70ec16ab23e7bf",
   "words": {
     "what": [
       "h1"
@@ -551,7 +551,7 @@
     "byte": [
       "pre"
     ],
-    "arraybyte&#91&#93;": [
+    "arraybyte]": [
       "pre"
     ],
     "toencrypt": [
@@ -566,7 +566,7 @@
       "pre",
       "pre"
     ],
-    "unicodeencodingascii.getbytes(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "unicodeencodingascii.getbytes(": [
       "pre"
     ],
     "\"the": [
@@ -578,7 +578,7 @@
     "protecteddata": [
       "pre"
     ],
-    "classbyte&#91;&#93;": [
+    "classbyte[]": [
       "pre"
     ],
     "encrypteddata": [
@@ -587,10 +587,13 @@
     "protecteddataprotect(toencrypt,": [
       "pre"
     ],
-    "null&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "null": [
+      "pre",
+      "pre",
       "pre"
     ],
     "dataprotectionscopelocalmachine);": [
+      "pre",
       "pre"
     ],
     "new": [
@@ -616,7 +619,7 @@
     "environmentuserdomainname": [
       "pre"
     ],
-    "&#43": [
+    "+": [
       "pre",
       "pre"
     ],
@@ -635,31 +638,32 @@
     "rule": [
       "pre"
     ],
-    "registryaccessruleuser,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "registryaccessruleuser,": [
       "pre"
     ],
-    "registryrightsfullcontrol,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "registryrightsfullcontrol,": [
       "pre"
     ],
-    "inheritanceflagscontainerinherit,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "inheritanceflagscontainerinherit,": [
       "pre"
     ],
-    "propagationflagsnone,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "propagationflagsnone,": [
       "pre"
     ],
     "accesscontroltypeallow);security.addaccessrule(rule);": [
       "pre"
     ],
-    "registrycurrentuser.createsubkey(\"testencrypteddata\",&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "registrycurrentuser.createsubkey(\"testencrypteddata\",": [
       "pre"
     ],
-    "registrykeypermissioncheckreadwritesubtree,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "registrykeypermissioncheckreadwritesubtree,": [
       "pre"
     ],
-    "security;registry.setvalue(&#64;\"hkey_current_user\\testencrypteddata\",": [
+    "security;registry.setvalue(@\"hkey_current_user\\testencrypteddata\",": [
       "pre"
     ],
-    "\"encrypted\"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "\"encrypted\"": [
+      "pre",
       "pre"
     ],
     "encrypteddata;": [
@@ -682,37 +686,25 @@
     "contents": [
       "pre"
     ],
-    "byte&#91&#93;": [
+    "byte]": [
       "pre"
     ],
     "datafromregistry": [
       "pre"
     ],
-    "registrygetvalue(&#64;\"hkey_current_user\\testencrypteddata\",&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
-      "pre"
-    ],
-    "\"encrypted\"": [
-      "pre"
-    ],
-    "null": [
+    "registrygetvalue(@\"hkey_current_user\\testencrypteddata\",": [
       "pre"
     ],
     "as": [
       "pre"
     ],
-    "byte&#91&#93;;byte&#91;&#93;": [
+    "byte];byte[]": [
       "pre"
     ],
     "decrypteddata": [
       "pre"
     ],
     "protecteddataunprotect(datafromregistry,": [
-      "pre"
-    ],
-    "null&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
-      "pre"
-    ],
-    "dataprotectionscopelocalmachine);&nbsp;": [
       "pre"
     ],
     "adapted": [

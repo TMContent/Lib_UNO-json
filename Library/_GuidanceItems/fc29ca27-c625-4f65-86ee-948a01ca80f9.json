@@ -13,7 +13,7 @@
           "47a10a30-15ad-4cfd-bf82-00e9bb2037f6"
         ],
         "Title": [
-          "User's Identity Is Verified Before a Password Reset"
+          "User Identity Is Verified Before a Password Reset"
         ],
         "Category": [
           "Authentication"
@@ -28,7 +28,7 @@
           "Checklist Item"
         ],
         "DirectLink": [
-          "User's Identity Is Verified Before a Password Reset"
+          "User Identity Is Verified Before a Password Reset"
         ],
         "Tag": [
           ""
@@ -42,10 +42,10 @@
       {
         "$": {
           "Sanitized": "true",
-          "DataType": "Html"
+          "DataType": "html"
         },
         "Data": [
-          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 8.5.2</li>\r\n  </ul>\r\n  <h1>What to Check For</h1>\r\n  <p>The user's identity should be verified before performing a requested password reset.</p>\r\n  <h1>Why</h1>\r\n  <p>The user's identity should be verified before performing a requested password reset to ensure that an attacker is not pretending to be the user to gain access.</p>\r\n  <h1>How to Check</h1>\r\n  <p>Review the password policy to make sure it requires that the user's identity is verified when a password reset is requested. Interview the responsible staff to make sure they verify the user's identity before resetting a password.</p>\r\n  <h1>How to Fix</h1>\r\n  <p>Add a requirement to the password policy to verify the user's identity when performing a requested password reset. Design and implement procedures for verifying the user's identity. For example, a user’s identity may be verified by meeting in person.</p>\r\n  <h1>Related Items</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/101a5f93-cbae-4e29-804e-25a57b1011fa\">Formulate the User Authentication and Password Policies</a>\r\n    </li>\r\n  </ul>"
+          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 8.2.2</li>\r\n  </ul>\r\n  <h1>What to Check For</h1>\r\n  <p>The user's identity should be verified before performing a requested password reset.</p>\r\n  <h1>Why</h1>\r\n  <p>The user's identity should be verified before performing a requested password reset to ensure that an attacker is not pretending to be the user to gain access.</p>\r\n  <h1>How to Check</h1>\r\n  <p>Review the password policy to make sure it requires that the user's identity is verified when a password reset is requested. Interview the responsible staff to make sure they verify the user's identity before resetting a password.</p>\r\n  <h1>How to Fix</h1>\r\n  <p>Add a requirement to the password policy to verify the user's identity when performing a requested password reset. Design and implement procedures for verifying the user's identity. For example, a user’s identity may be verified by meeting in person.</p>\r\n  <h1>Related Items</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/101a5f93-cbae-4e29-804e-25a57b1011fa\">Formulate the User Authentication and Password Policies</a>\r\n    </li>\r\n  </ul>"
         ]
       }
     ]

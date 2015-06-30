@@ -1,0 +1,17 @@
+<h2>Applies To</h2><ul><li> PCI DSS Requirement 4.1</li>
+</ul><h2>Policy Statement</h2><p>Encrypt network traffic when sending cardholder data over open, public networks, such as the Internet.
+</p><p>
+Use TLS for web pages that handle cardholder data. Design the site in such a way that https:<em> is always visible in the URL of those pages.
+</em></p><p>
+Accept only trusted TLS certificates, if TLS is being used.
+</p><p>
+Use only strong configurations and cipher suites with communication security technologies such as TLS.
+</p><h2>Policy Purpose</h2><p>Encrypt the cardholder data when transmitting to prevent it from being read if intercepted by an attacker.
+</p><p>
+HTTPS in the URL tells the user that the session is encrypted with TLS. If frames are used in a web application, then the URL may not accurately reflect whether TLS is used.
+</p><p>
+Using a trusted key or certificate prevents an attacker from posing as a trusted party or substituting the key to be able to decrypt the transmission.
+</p><p>
+Using strong cypher suites and configurations assures that the risk of cryptographic vulnerabilities the communication security solution is low. Old versions of SSL and TLS have known vulnerabilities in them, making them unacceptable. The latest TLS version has addressed these vulnerabilities. New vulnerabilities may be found in the future, requiring a newer version of TLS to be used. 
+</p><h2>Related Guidance</h2><ul><li> <a href="bd139cdc-59b2-4da0-9bdf-2205cc402266">Encrypt Communication Channels</a></li>
+</ul><h2>Related Checklist Items</h2><ul><li> <a href="5339bbde-f2ec-43a3-a689-7652dc6ae151">Communication Channels Are Encrypted</a></li></ul>

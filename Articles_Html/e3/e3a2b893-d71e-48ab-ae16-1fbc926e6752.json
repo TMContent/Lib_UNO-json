@@ -1,6 +1,6 @@
 {
   "id": "e3a2b893-d71e-48ab-ae16-1fbc926e6752",
-  "checksum": "3f68de17361b18c558038a3e7b7a1b73",
+  "checksum": "3260fa43347a410ce1a3306803c8ef9a",
   "words": {
     "1": [
       "ul",
@@ -261,6 +261,8 @@
       "p",
       "p",
       "ul",
+      "ul",
+      "li",
       "li",
       "p",
       "p",
@@ -1293,9 +1295,42 @@
       "p",
       "p"
     ],
-    "componentsandentry": [
+    "components": [
       "ul",
-      "li"
+      "li",
+      "h2",
+      "h3",
+      "i",
+      "p",
+      "p",
+      "p",
+      "h3",
+      "i",
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "entry": [
+      "ul",
+      "li",
+      "h2",
+      "h3",
+      "i",
+      "p",
+      "p",
+      "p",
+      "h3",
+      "i",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "h3",
+      "i",
+      "p"
     ],
     "points": [
       "ul",
@@ -2341,39 +2376,6 @@
       "p",
       "p"
     ],
-    "components": [
-      "h2",
-      "h3",
-      "i",
-      "p",
-      "p",
-      "p",
-      "h3",
-      "i",
-      "p",
-      "p",
-      "p",
-      "p"
-    ],
-    "entry": [
-      "h2",
-      "h3",
-      "i",
-      "p",
-      "p",
-      "p",
-      "h3",
-      "i",
-      "p",
-      "p",
-      "p",
-      "p",
-      "p",
-      "p",
-      "h3",
-      "i",
-      "p"
-    ],
     "identify": [
       "h3",
       "i"
@@ -3368,7 +3370,9 @@
     ],
     "filter": [
       "p",
-      "p"
+      "p",
+      "ul",
+      "li"
     ],
     "sent": [
       "p"
@@ -4274,6 +4278,10 @@
     "resources": [
       "h1"
     ],
+    "evasion": [
+      "ul",
+      "li"
+    ],
     "cheat": [
       "ul",
       "li"
@@ -4282,15 +4290,13 @@
       "ul",
       "li"
     ],
-    "hackers.com": [
-      "ul",
-      "li"
-    ],
-    "http://ha.ckers.org/xss.html)": [
-      "ul",
-      "li"
-    ],
     "owasp": [
+      "ul",
+      "ul",
+      "li",
+      "li"
+    ],
+    "https://www.owasp.org/index.php/xss_filter_evasion_cheat_sheet)": [
       "ul",
       "li"
     ],
@@ -4315,7 +4321,7 @@
       "ul",
       "li"
     ],
-    "http//ha.ckers.org/xss.html": [
+    "https//www.owasp.org/index.php/xss_filter_evasion_cheat_sheet": [
       "a"
     ]
   },
@@ -4326,8 +4332,8 @@
       "text": "http://en.wikipedia.org/wiki/Fuzz_testing"
     },
     {
-      "href": "http://ha.ckers.org/xss.html",
-      "text": "http://ha.ckers.org/xss.html"
+      "href": "https://www.owasp.org/index.php/XSS_Filter_Evasion_Cheat_Sheet",
+      "text": "https://www.owasp.org/index.php/XSS_Filter_Evasion_Cheat_Sheet"
     },
     {
       "href": "http://www.owasp.org/index.php/OWASP_Testing_Guide_Appendix_C:_Fuzz_Vectors",

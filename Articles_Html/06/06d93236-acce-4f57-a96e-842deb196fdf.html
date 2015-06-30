@@ -1,8 +1,4 @@
-<h1>Applies to</h1>
-  <ul>
-    <li>C&#43;&#43;</li>
-  </ul>
-  <h1>What to Do</h1>
+<h1>What to Do</h1>
   <p>Verify that the format of the file is correct when opening saved files or documents.</p>
   <h1>Why</h1>
   <p>Many vulnerabilities are exploited via malformed documents supplied to the application. One particular vector of attack that is frequently used is embedding malformed documents in web pages - some applications are integrated into the web browser and will open malicious documents automatically in that scenario. Making sure that file format is valid before loading files into the application makes it harder to embed exploit code into documents.</p>
@@ -13,7 +9,7 @@
   <ol>
     <li>
       <p>
-        <strong>Define file format.</strong> Specify valid values for all possible fields in all document types used by your applications. This information should be a part of project documentation and the developers may already have it. </p>
+        <strong>Define the file format.</strong> Specify valid values for all possible fields in all document types used by your applications. This information should be a part of project documentation and the developers may already have it. </p>
     </li>
     <li>
       <p>
@@ -32,10 +28,3 @@
         <strong>Use validation.</strong> Go back to code that loads data files into the application. Remove any old validation code. Add code that calls the master file format validation function on all files being loaded before loading them into the application.</p>
     </li>
   </ol>
-  <h1>Related Items</h1>
-  <ul>
-    <li>
-      <a href="/article/cc81757b-6da5-4463-92f9-d27f680ad6c7">Centralize Input Validation</a>
-    </li>
-  </ul>
-  <h1>&nbsp;</h1>

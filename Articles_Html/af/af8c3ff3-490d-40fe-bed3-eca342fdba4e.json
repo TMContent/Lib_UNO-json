@@ -1,6 +1,6 @@
 {
   "id": "af8c3ff3-490d-40fe-bed3-eca342fdba4e",
-  "checksum": "2218ed4944fb9f72a98577688d7370b5",
+  "checksum": "f58a4a4f07e5c54cb339d7b95b040061",
   "words": {
     "applies": [
       "h1"
@@ -1065,10 +1065,8 @@
       "h1"
     ],
     "http//www.onlinebank.com/redirect.asp?url=[destination]": [
-      "p"
-    ],
-    "http//www.onlinebank.com/redirect.asp?url=[destination": [
-      "a"
+      "p",
+      "pre"
     ],
     "phisher": [
       "p",
@@ -1101,7 +1099,7 @@
     ],
     "http//www.onlinebank.com/redirect.asp?url=www.phisher.com": [
       "p",
-      "a"
+      "pre"
     ],
     "when": [
       "p",
@@ -1353,14 +1351,6 @@
   },
   "tags": {},
   "links": [
-    {
-      "href": "http://www.onlinebank.com/redirect.asp?url=[destination",
-      "text": "http://www.onlinebank.com/redirect.asp?url=[destination"
-    },
-    {
-      "href": "http://www.onlinebank.com/redirect.asp?url=www.phisher.com",
-      "text": "http://www.onlinebank.com/redirect.asp?url=www.phisher.com"
-    },
     {
       "href": "/article/9dd99e67-7f4b-4c3b-b355-253edd7b29a3",
       "text": "Don't Use Redirects or Forwards if Possible"

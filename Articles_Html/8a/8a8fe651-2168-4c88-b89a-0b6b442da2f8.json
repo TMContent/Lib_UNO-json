@@ -1,6 +1,6 @@
 {
   "id": "8a8fe651-2168-4c88-b89a-0b6b442da2f8",
-  "checksum": "8ea67aced06a32779204fd11f67b774e",
+  "checksum": "0dfa613affb96263fec0885755ee0a7f",
   "words": {
     "applies": [
       "h1"
@@ -729,10 +729,8 @@
       "p"
     ],
     "http//www.onlinebank.com/redirect.jsp?url=[destination]": [
-      "p"
-    ],
-    "http//www.onlinebank.com/redirect.jsp?url=[destination": [
-      "a"
+      "p",
+      "pre"
     ],
     "phisher": [
       "p",
@@ -783,9 +781,9 @@
     ],
     "http//www.onlinebank.com/redirect.jsp?url=www.phisher.com": [
       "p",
-      "a",
+      "pre",
       "p",
-      "a"
+      "pre"
     ],
     "sees": [
       "p",
@@ -964,6 +962,7 @@
       "p"
     ],
     "redirectjsp": [
+      "p",
       "p"
     ],
     "balancejsp,": [
@@ -984,7 +983,8 @@
     "balancejsp.": [
       "p"
     ],
-    "redirectjspshould": [
+    "should": [
+      "p",
       "p"
     ],
     "rewritten": [
@@ -1002,15 +1002,12 @@
     "url": [
       "p"
     ],
-    "should": [
-      "p"
-    ],
     "balancejsp:": [
       "p"
     ],
     "http//www.onlinebank.com/redirect.jsp?map=page1": [
       "p",
-      "a"
+      "pre"
     ],
     "will": [
       "p",
@@ -1040,7 +1037,7 @@
     ],
     "http//www.onlinebank.com/redirect.jsp?map=www.phisher.com": [
       "p",
-      "a"
+      "pre"
     ],
     "additional": [
       "h1"
@@ -1109,26 +1106,6 @@
   },
   "tags": {},
   "links": [
-    {
-      "href": "http://www.onlinebank.com/redirect.jsp?url=[destination",
-      "text": "http://www.onlinebank.com/redirect.jsp?url=[destination"
-    },
-    {
-      "href": "http://www.onlinebank.com/redirect.jsp?url=www.phisher.com",
-      "text": "http://www.onlinebank.com/redirect.jsp?url=www.phisher.com"
-    },
-    {
-      "href": "http://www.onlinebank.com/redirect.jsp?map=page1",
-      "text": "http://www.onlinebank.com/redirect.jsp?map=page1"
-    },
-    {
-      "href": "http://www.onlinebank.com/redirect.jsp?url=www.phisher.com",
-      "text": "http://www.onlinebank.com/redirect.jsp?url=www.phisher.com"
-    },
-    {
-      "href": "http://www.onlinebank.com/redirect.jsp?map=www.phisher.com",
-      "text": "http://www.onlinebank.com/redirect.jsp?map=www.phisher.com"
-    },
     {
       "href": "http://www.owasp.org/index.php/Top_10_2010-A10-Unvalidated_Redirects_and_Forwards",
       "text": "http://www.owasp.org/index.php/Top_10_2010-A10-Unvalidated_Redirects_and_Forwards"

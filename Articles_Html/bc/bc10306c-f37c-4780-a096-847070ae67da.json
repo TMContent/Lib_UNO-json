@@ -1,6 +1,6 @@
 {
   "id": "bc10306c-f37c-4780-a096-847070ae67da",
-  "checksum": "631be0468a69db5d7fc7771ca1491e6d",
+  "checksum": "df3922c7cbf938feabc90b2dc3004501",
   "words": {
     "what": [
       "h1"
@@ -60,6 +60,7 @@
       "title"
     ],
     "exception": [
+      "p",
       "p",
       "p",
       "p",
@@ -187,7 +188,7 @@
     "attacks": [
       "p"
     ],
-    "and&nbspcan": [
+    "and can": [
       "p"
     ],
     "be": [
@@ -198,9 +199,10 @@
       "p",
       "p",
       "p",
+      "p",
       "p"
     ],
-    "securely&nbsp;for": [
+    "securely for": [
       "p"
     ],
     "instance": [
@@ -319,10 +321,10 @@
       "p",
       "pre"
     ],
-    "error&nbsp;exception": [
+    "error exception": [
       "p"
     ],
-    "handling&nbspalso": [
+    "handling also": [
       "p"
     ],
     "simplifies": [
@@ -396,7 +398,7 @@
       "p",
       "p"
     ],
-    "either&nbspbe": [
+    "either be": [
       "p"
     ],
     "enclosed": [
@@ -437,8 +439,14 @@
       "li",
       "a"
     ],
-    "handler&nbsp;": [
-      "p"
+    "handler": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "while": [
       "p"
@@ -495,7 +503,7 @@
     "debugging": [
       "p"
     ],
-    "purposes&nbsp;&nbsp;": [
+    "purposes": [
       "p"
     ],
     "try": [
@@ -513,7 +521,7 @@
       "pre",
       "pre"
     ],
-    "try&#123": [
+    "try{": [
       "p",
       "pre"
     ],
@@ -527,7 +535,7 @@
       "p",
       "pre"
     ],
-    "code&#125": [
+    "code}": [
       "p",
       "pre",
       "p",
@@ -583,7 +591,7 @@
     "secure": [
       "p"
     ],
-    "state&nbsp;": [
+    "state": [
       "p"
     ],
     "blocks": [
@@ -610,7 +618,7 @@
     "logging": [
       "p"
     ],
-    "and&nbspadd": [
+    "and add": [
       "p"
     ],
     "more": [
@@ -621,9 +629,6 @@
       "p"
     ],
     "existing": [
-      "p"
-    ],
-    "exception&nbsp;": [
       "p"
     ],
     "most": [
@@ -650,7 +655,7 @@
     "react": [
       "p"
     ],
-    "appropriately&nbsp;you": [
+    "appropriately you": [
       "p"
     ],
     "only": [
@@ -666,7 +671,7 @@
       "p",
       "pre"
     ],
-    "e&#123;": [
+    "e{": [
       "p",
       "pre"
     ],
@@ -701,7 +706,7 @@
     "sure": [
       "p"
     ],
-    "run&nbsp;": [
+    "run": [
       "p"
     ],
     "next": [
@@ -740,7 +745,7 @@
       "p",
       "p"
     ],
-    "finally&#123": [
+    "finally{": [
       "p",
       "pre"
     ],
@@ -754,9 +759,6 @@
     "thrown": [
       "p"
     ],
-    "fail&nbsp;": [
-      "p"
-    ],
     "resources": [
       "p"
     ],
@@ -765,14 +767,6 @@
     ],
     "properly": [
       "p"
-    ],
-    "handler": [
-      "p",
-      "p",
-      "p",
-      "ul",
-      "li",
-      "a"
     ],
     "directly": [
       "p"
@@ -801,7 +795,8 @@
       "p",
       "p"
     ],
-    "database&nbsp;": [
+    "database": [
+      "p",
       "p",
       "p"
     ],
@@ -841,9 +836,6 @@
     "sensitive": [
       "p"
     ],
-    "database": [
-      "p"
-    ],
     "protected": [
       "pre"
     ],
@@ -862,7 +854,7 @@
     "e": [
       "pre"
     ],
-    "&#123": [
+    "{": [
       "pre",
       "pre"
     ],
@@ -883,7 +875,7 @@
       "pre",
       "pre"
     ],
-    "sqlconnectionconfigurationmanager.connectionstrings&#91;\"mydbconn\"&#93;.tostring()))": [
+    "sqlconnectionconfigurationmanager.connectionstrings[\"mydbconn\"].tostring()))": [
       "pre"
     ],
     "sqlcommand": [
@@ -895,7 +887,7 @@
     "sqlcommand\"select": [
       "pre"
     ],
-    "count&#42;)": [
+    "count*)": [
       "pre"
     ],
     "authors\"": [
@@ -919,7 +911,7 @@
     "rdrread();": [
       "pre"
     ],
-    "responsewrite(rdr&#91;0&#93;.tostring());&#9;": [
+    "responsewrite(rdr[0].tostring());": [
       "pre"
     ],
     "//read": [
@@ -928,10 +920,8 @@
     "value": [
       "pre"
     ],
-    "&#125": [
-      "pre"
-    ],
-    "&#125&nbsp;": [
+    "}": [
+      "pre",
       "pre"
     ],
     "solution": [
@@ -952,7 +942,7 @@
     "conn": [
       "pre"
     ],
-    "sqlconnection\"...\");try&#123;": [
+    "sqlconnection\"...\");try{": [
       "pre"
     ],
     "connopen();": [
@@ -998,13 +988,13 @@
     "long": [
       "pre"
     ],
-    "operations&#125;finally&#123;": [
+    "operations}finally{": [
       "pre"
     ],
     "conn.state==connectionstate.open)": [
       "pre"
     ],
-    "closed&#125;": [
+    "closed}": [
       "pre"
     ],
     "related": [
@@ -1050,7 +1040,7 @@
       "text": "Global Error Handlers are used to Catch Unhandled Exceptions"
     },
     {
-      "href": "/article/9557bf26-cc8e-4bcc-8588-3e07d127b4fc",
+      "href": "/article/afb7610c-53ab-49dd-a425-f3e3272f7749",
       "text": "Use Structured Exception Handling"
     },
     {

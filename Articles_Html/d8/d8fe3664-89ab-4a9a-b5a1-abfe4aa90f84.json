@@ -1,6 +1,6 @@
 {
   "id": "d8fe3664-89ab-4a9a-b5a1-abfe4aa90f84",
-  "checksum": "cfb2fa0ae7aaea57c65d9f4bc6b7993d",
+  "checksum": "572c547ea23028f865138a39f9c06ac7",
   "words": {
     "0": [
       "pre",
@@ -13,6 +13,7 @@
       "li"
     ],
     "192": [
+      "pre",
       "pre"
     ],
     "applies": [
@@ -345,6 +346,7 @@
       "li",
       "li",
       "li",
+      "pre",
       "ul",
       "li",
       "p"
@@ -641,10 +643,16 @@
       "ul",
       "li"
     ],
-    "siv&#123;&nbsp;&nbsp;&nbsp;": [
+    "siv{": [
       "pre"
     ],
     "//": [
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
       "pre",
       "pre",
       "pre",
@@ -685,11 +693,15 @@
     "framework": [
       "pre"
     ],
-    "168).&nbsp;": [
+    "168).": [
       "pre"
     ],
-    "following&nbsp&nbsp;&nbsp;": [
-      "pre"
+    "following": [
+      "pre",
+      "pre",
+      "p",
+      "p",
+      "p"
     ],
     "call": [
       "pre"
@@ -717,10 +729,18 @@
       "ul",
       "li"
     ],
-    "initialization&nbsp&nbsp;&nbsp;": [
-      "pre"
+    "initialization": [
+      "pre",
+      "pre",
+      "pre",
+      "ul",
+      "ul",
+      "li",
+      "li"
     ],
     "vector": [
+      "pre",
+      "pre",
       "pre",
       "ul",
       "li"
@@ -750,26 +770,6 @@
       "pre"
     ],
     "chaining": [
-      "pre",
-      "pre"
-    ],
-    "&nbsp&nbsp;&nbsp;": [
-      "pre",
-      "pre",
-      "pre",
-      "pre",
-      "pre",
-      "pre",
-      "pre",
-      "pre",
-      "pre",
-      "pre",
-      "pre",
-      "pre",
-      "pre",
-      "pre",
-      "pre",
-      "pre",
       "pre",
       "pre"
     ],
@@ -850,25 +850,8 @@
     "generated": [
       "pre"
     ],
-    "initialization": [
-      "pre",
-      "pre",
-      "ul",
-      "ul",
-      "li",
-      "li"
-    ],
-    "vector&nbsp&nbsp;&nbsp;": [
-      "pre"
-    ],
     "setting": [
       "pre"
-    ],
-    "following": [
-      "pre",
-      "p",
-      "p",
-      "p"
     ],
     "properties": [
       "pre"
@@ -876,17 +859,7 @@
     "rijndael": [
       "pre"
     ],
-    "eg.:&nbsp;&nbsp;&nbsp;": [
-      "pre",
-      "pre"
-    ],
-    "//&nbsp&nbsp;&nbsp;": [
-      "pre",
-      "pre"
-    ],
-    "//&nbsp": [
-      "pre",
-      "pre",
+    "eg.:": [
       "pre",
       "pre"
     ],
@@ -895,7 +868,7 @@
       "pre",
       "pre"
     ],
-    "some_key_val&nbsp;&nbsp;&nbsp;": [
+    "some_key_val": [
       "pre"
     ],
     "tdesiv": [
@@ -903,13 +876,10 @@
       "pre",
       "pre"
     ],
-    "some_iv_val&nbsp;&nbsp;&nbsp;": [
+    "some_iv_val": [
       "pre"
     ],
     "tdeskeysize": [
-      "pre"
-    ],
-    "192&nbsp;": [
       "pre"
     ],
     "similarly": [
@@ -936,7 +906,7 @@
       "ul",
       "li"
     ],
-    "recommended&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "recommended": [
       "pre"
     ],
     "as": [
@@ -975,14 +945,11 @@
       "ul",
       "li"
     ],
-    "algorithm&nbsp;&nbsp;&nbsp;": [
+    "algorithm": [
       "pre",
       "pre"
     ],
     "asciiencodingascii.getbytes(skey);": [
-      "pre"
-    ],
-    "vector&nbsp;&nbsp;&nbsp;": [
       "pre"
     ],
     "asciiencodingascii.getbytes(siv);": [
@@ -1006,7 +973,7 @@
       "pre",
       "pre"
     ],
-    "fileaccessread);&nbsp;&nbsp;&nbsp;": [
+    "fileaccessread);": [
       "pre",
       "pre"
     ],
@@ -1050,6 +1017,7 @@
       "li"
     ],
     "encryptor": [
+      "pre",
       "pre"
     ],
     "from": [
@@ -1061,7 +1029,7 @@
     "tripledes": [
       "pre"
     ],
-    "instance&nbsp;&nbsp;&nbsp;": [
+    "instance": [
       "pre"
     ],
     "icryptotransform": [
@@ -1104,7 +1072,7 @@
       "pre",
       "pre"
     ],
-    "bytes&nbsp;&nbsp;&nbsp;": [
+    "bytes": [
       "pre",
       "pre"
     ],
@@ -1124,7 +1092,7 @@
       "pre",
       "pre"
     ],
-    "byte&#91&#93;": [
+    "byte]": [
       "pre",
       "pre"
     ],
@@ -1132,7 +1100,7 @@
       "pre",
       "pre"
     ],
-    "byte&#91fsplaintext.length&#93;;&nbsp;&nbsp;&nbsp;": [
+    "bytefsplaintext.length];": [
       "pre",
       "pre"
     ],
@@ -1140,7 +1108,7 @@
       "pre",
       "pre"
     ],
-    "bytearrayinputlength);&nbsp;&nbsp;&nbsp;": [
+    "bytearrayinputlength);": [
       "pre",
       "pre",
       "pre",
@@ -1150,15 +1118,15 @@
       "pre",
       "pre"
     ],
-    "cipherstreamclose();&nbsp;&nbsp;&nbsp;": [
+    "cipherstreamclose();": [
       "pre",
       "pre"
     ],
-    "fsplaintextclose();&nbsp;&nbsp;&nbsp;": [
+    "fsplaintextclose();": [
       "pre",
       "pre"
     ],
-    "fsciphertextclose();&#125;": [
+    "fsciphertextclose();}": [
       "pre"
     ],
     "problem": [
@@ -1192,13 +1160,13 @@
     "problematicfileencryptstring": [
       "pre"
     ],
-    "soutputfilename&#123;&nbsp;&nbsp;&nbsp;": [
+    "soutputfilename{": [
       "pre"
     ],
     "tripledescryptoserviceprovider)tripledescryptoserviceprovider.create();": [
       "pre"
     ],
-    "asciiencodingascii.getbytes(\"asamplekeyweusetoencrypt\");&nbsp;&nbsp;&nbsp;": [
+    "asciiencodingascii.getbytes(\"asamplekeyweusetoencrypt\");": [
       "pre"
     ],
     "//we": [
@@ -1235,7 +1203,7 @@
       "ul",
       "li"
     ],
-    "mode&#33&nbsp;&nbsp;&nbsp;": [
+    "mode!": [
       "pre"
     ],
     "asciiencodingascii.getbytes(\"sampleiv\");": [
@@ -1257,13 +1225,14 @@
     "says": [
       "pre"
     ],
-    "so&#33)&nbsp;&nbsp;&nbsp;": [
+    "so!": [
       "pre"
     ],
     "ciphermodeecb;": [
       "pre"
     ],
     "file": [
+      "pre",
       "pre",
       "pre",
       "pre",
@@ -1284,12 +1253,6 @@
       "pre",
       "pre"
     ],
-    "in&nbsp;&nbsp;&nbsp;": [
-      "pre"
-    ],
-    "encryptor&nbsp&nbsp;&nbsp;": [
-      "pre"
-    ],
     "//write": [
       "pre"
     ],
@@ -1301,9 +1264,6 @@
       "li",
       "li",
       "li"
-    ],
-    "file&nbsp;&nbsp;&nbsp;": [
-      "pre"
     ],
     "fsciphertextclose();": [
       "pre"
@@ -1528,10 +1488,10 @@
     "function": [
       "p"
     ],
-    "mainstring&#91;&#93;": [
+    "mainstring[]": [
       "pre"
     ],
-    "args&#123;": [
+    "args{": [
       "pre"
     ],
     "consoleout.writeline(\"encrypting:": [
@@ -1545,7 +1505,7 @@
       "pre",
       "pre"
     ],
-    "&#43": [
+    "+": [
       "pre",
       "pre",
       "pre",
@@ -1555,18 +1515,18 @@
       "pre",
       "pre"
     ],
-    "args&#910&#93;": [
+    "args0]": [
       "pre",
       "pre",
       "pre"
     ],
-    "args&#911&#93;);": [
+    "args1]);": [
       "pre"
     ],
-    "encryptfileargs&#91;0&#93;,": [
+    "encryptfileargs[0],": [
       "pre"
     ],
-    "args&#911&#93;,": [
+    "args1],": [
       "pre"
     ],
     "siv;": [
@@ -1575,19 +1535,19 @@
     "consoleout.writeline(\"decrypting:": [
       "pre"
     ],
-    "args&#911&#93;": [
+    "args1]": [
       "pre"
     ],
     "\"new\");": [
       "pre"
     ],
-    "decryptfileargs&#91;1&#93;,": [
+    "decryptfileargs[1],": [
       "pre"
     ],
     "\"new\",": [
       "pre"
     ],
-    "siv;&#125;": [
+    "siv;}": [
       "pre"
     ],
     "siv": [
