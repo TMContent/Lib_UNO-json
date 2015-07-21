@@ -1,0 +1,55 @@
+<p>##Applies To##</p>
+<ul>
+<li>Amazon Web Services (AWS)</li>
+</ul>
+<p>##What to Do##</p>
+<p>Follow a security assessment plan (SAP) to initiate, execute, and communicate the results of security testing for cloud deployment. Identify security architecture, instances and applications that will be tested for security function. Select methods, systems and tools and systems that will be used to perform the testing. Coordinate with the cloud service provider (CSP) to authorize testing.</p>
+<p>##Why##</p>
+<p>Security testing for cloud deployments ensures the security posture is maintained at a safe level. Testing is required since the CSP provides protection from threats at lower levels, while the account holder must use additional measures to safeguard their applications and stores.</p>
+<p>When periodic security testing is performed, new findings are beneficial to the organization. Testing may reveal that controls in place are not 100% effective against newly discovered vulnerabilities in the deployment.</p>
+<p>Security testing also enables sharing of security best practices between the CSP, organization, and third party assessor organization (3PAO). This can help prevent future security issues.</p>
+<p>Testing is required for all PCI DSS requirements. Further, for compliance you must regularly test security systems and processes (Requirement 11). When systems are updated and/or re-configured, affected sub-components, processes, and custom software must be tested to ensure security controls are effective.</p>
+<p>##When##</p>
+<p>New vulnerabilities are being discovered continually by malicious individuals and researchers. External vulnerability scans are required by PCI DSS on a quarterly basis (Requirement 11.2.2) for this reason. Your security assessment plan should include details about the period and frequency for testing of controls.</p>
+<p>##How##</p>
+<p>Security testing is part of a security assessment plan, which can be broken down into these steps:</p>
+<ol>
+<li>
+<p><strong>Scope the security testing.</strong> Name the system that that is slated for testing and include the regions for components that will be tested. Describe the system and list IP addresses which will be affected. This can be obtained from the cloud service provider (CSP). IP addresses can be listed by network ranges and CIDR blocks. Insert URLs and the associated login IDs that will be used for testing. Also record the function of the resource under test. Also include databases with the same information. List roles, functions, and restrictions that will be tested.</p>
+</li>
+<li>
+<p><strong>State the testing assumptions.</strong> These are default assumptions that are edited for each engagement. The CSP will provide resources such as documentation and administrators with system and infrastructure knowledge. If necessary, the CSP will provide credentials to authenticate to protective devices. The CSP should provide network access to vulnerability management services so that testing authority can see results. Upgrades and patches will not be done during testing.</p>
+</li>
+<li>
+<p><strong>Prepare testing methods.</strong> Authorities, such as FedRAMP, can provide documented test methods and descriptions for testing security controls. Your security engineer can edit the tests as necessary to accommodate business rules.</p>
+</li>
+<li>
+<p><strong>Prepare test plan.</strong> List the members of the test team and the role each member will play. Include basic contact information. Also list the CSP points of contact, when available, phone, etc. Describe any test tools to be used, including version, developer, and function. Include manual methods you may use, such as manual SQL injection. Include a simplified schedule for the overall plan and test milestones.</p>
+</li>
+<li>
+<p><strong>Disclose rules of engagement.</strong> Rules of engagement (ROE) describes the notifications and disclosures between the account owner, 3PAO, and CSP. The ROE lists roles, test methods, functions to perform, and contact information if not supplied already.</p>
+</li>
+<li>
+<p><strong>Conduct security testing.</strong> Security testing is initiated according to the schedule. All terms and conditions agreed to must be followed. This will minimize the risk exposure of tested systems. The following tests are typical for cloud deployments:</p>
+</li>
+</ol>
+<ul>
+<li>Port scans and network queries</li>
+<li>Network sniffing, traffic monitoring, traffic analysis</li>
+<li>Login attempt with account names with weak or guessed passwords</li>
+<li>SQL injection and input parameter testing</li>
+<li>Use of exploit code</li>
+<li>Password cracking</li>
+<li>Spoofing network traffic</li>
+<li>Altering system configuration</li>
+<li>Adding user accounts.</li>
+</ul>
+<ol start="7">
+<li><strong>Compile and communicate security test results.</strong> When testing has ended, the results are given to representative of the CSP, 3PAO, and organization's security engineer. Reports are sent out the prescribed number of days after testing has ended.</li>
+</ol>
+<p>##Additional Resources##</p>
+<ul>
+<li><a href="https://www.pcisecuritystandards.org/security_standards/index.php" title="PCI DSS Requirements and Security Assessment Procedures">Payment Card Industry (PCI) Data Security Standard (DSS) - Requirements and Security Assessment Procedures</a></li>
+<li><a href="http://www.rightscale.com/" title="Performing Security Testing in the Cloud">Performing Security Testing in the Cloud</a></li>
+<li><a href="https://www.fedramp.gov/" title="Security Assessment Plan Template">Security Assessment Plan Template</a></li>
+</ul>

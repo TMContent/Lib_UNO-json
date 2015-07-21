@@ -1,0 +1,78 @@
+<p>##What to Check For##</p>
+<p>Verify that penetration testing is performed for applications in the cloud.</p>
+<p>##Why##</p>
+<p>Penetration testing is necessary to provide evidence that controls are effectively preventing unauthorized access. It also raises awareness for security through the organization. Pentest strengthens your capacity for incident response by bringing together your organization and that of the CSP.</p>
+<p>AWS performs regular scans of Internet-facing endpoints, but not those of customer instances. AWS scans support the infrastructure health, but each customer is responsible for their own vulnerability scanning of applications and instances.</p>
+<p>If you are accepting card payments, then you must you regularly test security systems and processes to comply with PCI DSS (Requirement 11). You also must:</p>
+<blockquote>
+<p>Implement a methodology for penetration testing that is based on industry-accepted penetration testing approaches (for example, NIST SP800-115).</p>
+</blockquote>
+<p>##When##</p>
+<p>Penetration testing of your cloud applications must be undertaken in agreement with AWS. It is required that you request permission by submitting a testing request form. You identify start and end times and dates, and agree to the use of appropriate tools during the test. You also identify what instances will be accessed. When you receive an authorization number from AWS, proceed with testing on the specified date. The approval process can take several days, or more, so leave sufficient slack in your planned schedule.</p>
+<p>Penetration testing should be scheduled for a time period that does not interfere with users, if this is a business-critical application. It is never acceptable to launch a pentest without warning and agreement. AWS must be included, and consideration must be given to the organization's use of the tested application.</p>
+<p>##How to Check##</p>
+<p>To verify that penetration testing is performed for applications in the cloud:</p>
+<ol>
+<li>
+<p><strong>Identify responsible personnel.</strong> Find and interview staff or contractors responsible for performing penetration tests.</p>
+</li>
+<li>
+<p><strong>Examine penetration testing results.</strong> Review documented penetration testing results and assess their quality.</p>
+</li>
+</ol>
+<p>##How to Fix##</p>
+<p>The following steps are an overview of performing penetration testing on cloud applications. Specifics about the system and design lead to customization of the approach, and help testers determine a detailed testing plan.</p>
+<ol>
+<li><strong>Determine penetration testing scope.</strong> Applications in the cloud have multiple considerations when scoping for testing. The CSP and tenant have shared security, meaning, the CSP provides continuous monitoring of the infrastructure while the tenant is responsible for everything else.</li>
+</ol>
+<ul>
+<li><strong>Type of Deployment</strong> The type of deployment is crucial for purpose of scope. If the cloud is 100% private, it may be possible to assess most parts of the stack. For a public deployment with AWS, however, there is separation between CSP and your resources. There is clear distinction as to what procedures you may carry out, and how you must ask for permission to engage the CSP infrastructure.</li>
+<li><strong>Determine services model.</strong> The services model will have scoping effect. In a Platform as a Service (PaaS) model, you supply the application for deployment and the CSP provides additional required components. Where the CSP supplies hardware and connectivity only, the model is referred to as Infrastructure as a Service (IaaS). This means the tenant is responsible for virtual machine images and everything running in the environment. In the Software as a Service (SaaS) model, the CSP provides all components, including the application. This is a turnkey solution. AWS offers all of these models, so you must be aware of the terms of your agreement to understand what you may test, and how much you should test.</li>
+<li><strong>Layers of the cloud stack.</strong> The various cloud elements are assigned to either the tenant or CSP. When elements are mapped to your service agreement, you can determine what elements are within your scope perimeter:
+<ul>
+<li>Applications</li>
+<li>Data</li>
+<li>Runtime</li>
+<li>Middleware</li>
+<li>Operating system</li>
+<li>Virtual machine image (VMI)</li>
+<li>Hypervisor</li>
+<li>Servers</li>
+<li>Storage</li>
+<li>Networking</li>
+<li>Facility</li>
+</ul>
+</li>
+<li>For example, in an IaaS model agreement, you would be permitted to test from the VMI all the way through your application.</li>
+</ul>
+<ol start="2">
+<li>
+<p><strong>Planning and preparation.</strong> It is possible to commit the scope to a formal plan with clear objectives. The primary objective of pentest is to reveal any vulnerability in the deployment that can be exploited. For each vulnerability, you must specify the path to the target, including address, servers, VMI, operating system, application and associated data stores. Much of the preparation consists of collecting information about software versions, and using standard tools to find out whether and how systems can be accessed during the tests. During planning, decisions will be made on the format and construction of the tests as well as the test results forms used by assessment personnel. Planning includes the timing and duration of testing. Periods of heavy network use should be avoided to lessen the impact of testing load on normal business traffic. Provisions must be made for the possibility that some machines and applications could crash. In these cases enough resources need to be ready to minimize downtime. Operations must be informed of the plan so that adjustments can be made to schedules, if required. In addition, if any monitoring is down from the enterprise side, it is necessary to involve those personnel of the test method. It should be understood by all involved that penetration tests can yield confidential and/or sensitive information that must be destroyed or returned to the account holder. Part of preparation is to get legal sign-off on documents from testing participants so that they are protected from legal action if testing goes wrong. Also allow enough response time for submission and response of the AWS Vulnerability/Penetration Testing Request Form.</p>
+</li>
+<li>
+<p><strong>Perform penetration tests.</strong> Automated tools are used in conjunction with manual methods in this phase. Automated tools are available, and these can be tuned to a particular vulnerability, or be customized for additional &quot;hacking&quot; functionality. As an example, dictionary, hybrid, and brute force attacks will be launched at specific targets. Social engineering may also be used against CSP support as well as employees of the organization. The number of tests and their depth will be as required by the certifying authority. For more information on vulnerability scanning tools, see https://www.owasp.org/</p>
+</li>
+<li>
+<p><strong>Analysis and reporting.</strong> The results of application penetration are reported to the tenant organization. Report sections should include an overview of the testing performed, analysis and commentary, and list of vulnerabilities found. In this list the vital vulnerabilities are sorted first, so that the organization can fix items with more extensive impact. If resources permit, less vital problems can be addressed. Other sections of the report are:</p>
+<ul>
+<li>Summary of successful penetration</li>
+<li>List of information gathered during testing</li>
+<li>List of found vulnerabilities with descriptions</li>
+<li>Suggested methods to mitigate vulnerabilities.</li>
+</ul>
+</li>
+<li>
+<p><strong>Clean up.</strong> All pen testing artifacts must be removed. This process is carried out to ensure sensitive information or data cannot fall into the wrong hands. Login and machine image data used for access must be sanitized, to prevent unauthorized access. Be sure to remove any user accounts created for testing. This means a complete list of all artifacts and actions must be used to check off and verify that the sweep is completed. The machine images, applications and instances must also be inspected to eliminate the possibility of doors left open.</p>
+</li>
+</ol>
+<p>##Additional Resources##</p>
+<ul>
+<li><a href="http://aws.amazon.com/compliance/aws-whitepapers/" title="Amazon Web Services: Risk and Compliance">Amazon Web Services: Risk and Compliance</a></li>
+<li><a href="http://aws.amazon.com/security/" title="AWS Security Best Practices">AWS Security Best Practices</a></li>
+<li><a href="https://portal.aws.amazon.com/" title="AWS Vulnerability / Penetration Testing Request Form">AWS Vulnerability / Penetration Testing Request Form</a></li>
+<li><a href="http://www.sans.org/" title="Conducting a Penetration Test on an Organization">Conducting a Penetration Test on an Organization</a></li>
+<li><a href="http://www.iso.org/iso/catalogue_detail?csnumber=54534" title="ISO/IEC 27001:2013 - Information Management Security Systems Requirements">ISO/IEC 27001:2013 - Information technology - Security techniques - Information security management systems - Requirements</a></li>
+<li><a href="https://www.pcisecuritystandards.org/" title="PCI DSS Requirements and Security Assessment Procedures">Payment Card Industry (PCI) Data Security Standard (DSS) - Requirements and Security Assessment Procedures</a></li>
+<li><a href="http://blogs.cisco.com/" title="Penetration Testing in the Cloud">Penetration Testing in the Cloud</a></li>
+<li><a href="https://www.owasp.org/" title="Vulnerability Scanning Tools">Vulnerability Scanning Tools</a></li>
+</ul>

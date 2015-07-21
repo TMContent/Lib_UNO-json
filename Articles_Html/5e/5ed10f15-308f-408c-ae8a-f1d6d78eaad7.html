@@ -1,0 +1,41 @@
+<p>##Applies To##</p>
+<ul>
+<li>Amazon Web Services (AWS)</li>
+</ul>
+<p>##What to Do##</p>
+<p>Truncate and/or hash excessive sensitive data.</p>
+<p>##Why##</p>
+<p>Stored sensitive data might be compromised if some other part of the application is compromised, so it is best to store as little sensitive data as possible. If a portion of sensitive data is sufficient to satisfy application requirements, then only a portion of the sensitive data should be used. For example, it is often sufficient to store the last four digits of the Social Security Number to verify user identity, so in such cases only the last four digits should be stored.</p>
+<p>##When##</p>
+<p>When working with sensitive account information such as a PAN or Social Security Number (SSN), you must programmatically scramble excessive data.</p>
+<p>##How##</p>
+<ol>
+<li>
+<p><strong>Identify all sensitive data.</strong> Review the application for sensitive data that will be used by the application. For example:</p>
+<ul>
+<li>incoming transaction data</li>
+<li>all logs, such as transactions, history, debugging, and error</li>
+<li>history files</li>
+<li>trace files</li>
+<li>database schemas</li>
+<li>database contents.</li>
+</ul>
+</li>
+<li>
+<p><strong>Identify excessive sensitive data.</strong> Determine from the list of sensitive data which types of data can be truncated while still being able to fulfill application requirements.</p>
+</li>
+<li>
+<p><strong>Analyze hashing requirement.</strong> Determine whether hashing a portion of the sensitive data is appropriate. Hashing should only be used if data is going to be used for validation, but never recovered from the store.</p>
+</li>
+<li>
+<p><strong>Add code to truncate.</strong> Add code to truncate any excessive sensitive.</p>
+</li>
+<li>
+<p><strong>Hash stored sensitive data.</strong> If sensitive data is only used for validation, add code to hash the partial stored sensitive data stored.</p>
+</li>
+</ol>
+<p>##Additional Resources##</p>
+<ul>
+<li><a href="https://www.pcisecuritystandards.org/security_standards/index.php" title="PCI DSS Requirements and Security Assessment Procedures">Payment Card Industry (PCI) Data Security Standard (DSS) - Requirements and Security Assessment Procedures</a></li>
+<li><a href="http://www.iso.org/iso/catalogue_detail?csnumber=54534" title="ISO/IEC 27001:2013 - Information Management Security Systems Requirements">ISO/IEC 27001:2013 - Information technology - Security techniques - Information security management systems - Requirements</a></li>
+</ul>

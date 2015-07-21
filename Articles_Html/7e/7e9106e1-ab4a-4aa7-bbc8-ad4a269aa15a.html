@@ -1,0 +1,43 @@
+<p>##Applies To##</p>
+<ul>
+<li>Amazon Web Services (AWS)</li>
+</ul>
+<p>##What to Do##</p>
+<p>Implement load balancing for your cloud computing applications by reviewing currently-available products and techniques. Choose a solution that satisfies business case. Use performance metrics to gauge the effectiveness of load balancing.</p>
+<p>##Why##</p>
+<p>Load balancing is used to distribute requests to multiple instances of EC2. This reduces the risk of overloading a single EC2 instance during expected increases in requests. During a Distributed Denial of Service Attack (DDoS), EC2 will become unavailable as unexpected requests grow in frequency. The effect can be mitigated with the use of load balancing.</p>
+<p>If solutions are not in place to balance expected and unexpected requests, the site may become unavailable for its intended business use. The AWS network provides protection against DDoS attacks, and additional layers of protection can be added by using Amazon Exit 53 and Elastic Load Balancing (ELB). However, measure performance to compare the solution to other load balancing products such as NGINX Plus.</p>
+<p>Use of load balancing provides for continuity of operations for mission/business functions (NIST SP 800-53, control IR-4).</p>
+<p>##When##</p>
+<p>Load balancing is used with web applications when it is necessary to mitigate deterioration of performance (ingesting a large load of data) and/or a sudden break in availability (DDoS). When maintaining quality of service (QoS) at network speeds with zero data loss is required, automatic methods of load balancing should be in place. Load balancing also protects data in transit and security of back-end processing.</p>
+<p>##How##</p>
+<p>Begin with these steps for a secure load-balancing implementation.</p>
+<ol>
+<li>
+<p><strong>Review available load-balancing options.</strong> Make a list of load-balancing products, and determine what features are provided, such as: request routing, URL rewriting and redirecting, health checks, and auto scaling.</p>
+</li>
+<li>
+<p><strong>Choose load-balancing solution.</strong> One solution may not provide the necessary features for your application. For example, URL rewriting and redirecting may be built-in, but auto scaling is missing. You may need to integrate different products in order to implement 100% of your security design features.</p>
+</li>
+<li>
+<p><strong>Configure load-balancing solution.</strong> For Amazon ELB configuration, prepare your virtual private cloud (VPC) and back-end instances, and use the management console or command line interface (CLI) to create <em>load balancers</em>. Other load-balancing products may require additional development resources to implement with AWS.</p>
+</li>
+<li>
+<p><strong>Test load balancing solution.</strong> Before going live, test the load balancer. For Amazon ELB, look at the metrics in CloudWatch associated with your load balancer. These include statistics such as <code>HealthyHostCount</code>, <code>RequestCount</code>, and <code>Latency</code>. For more information about CloudWatch metrics for your load balancer, see http://docs.aws.amazon.com/ElasticLoadBalancing/latest/DeveloperGuide/.</p>
+</li>
+<li>
+<p><strong>Make adjustments to configuration.</strong> After evaluating the performance of the load balancer, configuration changes may be required. An ELB example is that you may need to adjust the idle timeout with the <code>elb modify-load-balancer-attributes</code> command. For more information about configuring the load balancer, see http://docs.aws.amazon.com/ElasticLoadBalancing/latest/DeveloperGuide/.</p>
+</li>
+<li>
+<p><strong>Monitor performance.</strong> Monitor on-going performance of the load balancer by using a combination of CloudWatch metrics, access logs, and AWS CloudTrail. CloudWatch can be configured to monitor health state and take additional action to supplement the effectiveness of load balancing. For more information about monitoring performance, see http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/.</p>
+</li>
+</ol>
+<p>##Additional Resources##</p>
+<ul>
+<li><a href="http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/" title="Amazon CloudWatch Developer Guide">Amazon CloudWatch Developer Guide</a></li>
+<li><a href="http://aws.amazon.com/compliance/aws-whitepapers/" title="Amazon Web Services: Risk and Compliance">Amazon Web Services: Risk and Compliance</a></li>
+<li><a href="http://aws.amazon.com/security/" title="AWS Security Best Practices">AWS Security Best Practices</a></li>
+<li><a href="http://docs.aws.amazon.com/ElasticLoadBalancing/latest/DeveloperGuide/" title="Elastic Load Balancing Developer Guide ">Elastic Load Balancing Developer Guide</a></li>
+<li><a href="http://nginx.com/blog/using-ngnix-amazon-elastic-load-balancer-aws/" title="NGINX Plus and Amazon Elastic Load Balancer">NGINX Plus and Amazon Elastic Load Balancer on AWS</a></li>
+<li><a href="http://csrc.nist.gov/publications/PubsSPs.html" title="NIST SP 800-53 Security and Privacy Controls for Federal Information Systems and Organizations">NIST SP 800-53 Security and Privacy Controls for Federal Information Systems and Organizations</a></li>
+</ul>

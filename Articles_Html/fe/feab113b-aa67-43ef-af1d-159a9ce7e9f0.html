@@ -1,0 +1,52 @@
+<p>##What to Check For##</p>
+<p>Verify that well-written security code is reused.</p>
+<p>##Why##</p>
+<p>Reusing security code creates a more-secure application for these reasons:</p>
+<ul>
+<li>reduces code complexity and associated maintenance costs</li>
+<li>ensures security requirements are addressed with proven controls</li>
+<li>prevents re-introduction of bugs and vulnerabilities</li>
+<li>allows testing of the security code in isolation</li>
+<li>allows for performance tuning while maintaining security posture</li>
+<li>permits offloading of security processing to network appliances.</li>
+</ul>
+<p>##When##</p>
+<p>When working with various programming and scripting languages, create new versions of reusable security code as required for each programming language, such as Java, PHP, Python, Ruby and .NET. This includes routines for authentication, cryptographic, and logging code, for example.</p>
+<p>##How to Check##</p>
+<p>To verify that well-written security code is reused:</p>
+<ol>
+<li>
+<p><strong>Identify well-written security code.</strong> Look through your applications for security code that is well-written and can be reused. Examples of security code that can be reused include authentication, authorization, cryptographic, data validation and logging code.</p>
+</li>
+<li>
+<p><strong>Examine reusable security code.</strong> Check whether well-written security code is the same in multiple applications - this would indicate that security code is being reused. Interview developers and ask them whether they maintain a library of security code. Examine the library of reusable code to determine its quality.</p>
+</li>
+</ol>
+<p>##How to Fix##</p>
+<p>The development of security code will generally parallel your software development lifecycle, and will follow these general steps.</p>
+<ol>
+<li>
+<p><strong>Identify requirements and perform analysis.</strong> Identify requirements which security code must address.</p>
+</li>
+<li>
+<p><strong>Design software architecture.</strong> Develop specific code parameters to work within the application architecture boundary. Include inputs and outputs from the requirements specification. Use data flow diagrams and other illustrations to transform use cases into pseudo code.</p>
+</li>
+<li>
+<p><strong>Write software code.</strong> Actual coding is developed at this time. This is the longest phase of the cycle.</p>
+</li>
+<li>
+<p><strong>Test security code.</strong>  Test the security code against the requirements by using standard test methods.</p>
+</li>
+<li>
+<p><strong>Deploy security code.</strong> Add the security code to current projects.</p>
+</li>
+<li>
+<p><strong>Maintain software library.</strong> When the security code needs updating due to deficiencies noticed in actual use, use change control procedures to revise or add requirements. Submit the code for security testing, and add to the code security library when your change control sign-offs are completed.</p>
+</li>
+</ol>
+<p>##Additional Resources##</p>
+<ul>
+<li><a href="http://docforge.com/wiki/Code_reuse" title="Code Reuse">Code Reuse</a></li>
+<li><a href="http://search.oreilly.com/?q=secure+coding&amp;x=0&amp;y=0" title="Secure Coding: Principles and Practices">Secure Coding: Principles and Practices</a></li>
+<li><a href="http://aws.amazon.com/security/" title="AWS Security Best Practices">AWS Security Best Practices</a></li>
+</ul>

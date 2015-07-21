@@ -1,0 +1,48 @@
+<p>##Applies To##</p>
+<ul>
+<li>Amazon Web Services (AWS)</li>
+</ul>
+<p>##What to Do##</p>
+<p>Integrate cloud application authentication with existing directory services and user accounts.</p>
+<p>##Why##</p>
+<p>Reducing the number of authentication repositories simplifies the secure management of access accounts. With a centralized Lightweight Directory Access Protocol (LDAP) repository, for example, you enforce one username/password for internal and external application access across the organization. With centralized directory services and single account location, you can apply security policy more consistently. Disabling access and restricting user permissions can be performed rapidly if there is no need to make multiple changes in separate directory services location.</p>
+<p>If users are required to create multiple accounts for use with separate web and internal applications, the attack surface increases. It becomes possible for users to exceed the central policy level of authorized access for their role.</p>
+<p>Management and control of authentication credentials is required by security standards such as NIST SP800-53 (AC-3 Access Enforcement).</p>
+<p>##When##</p>
+<p>Integrate authentication credential repositories in these situations:</p>
+<ol>
+<li>
+<p>Leverage existing directory services (for example, LDAP installation)</p>
+</li>
+<li>
+<p>Allow users to log into all applications using one set of credentials</p>
+</li>
+<li>
+<p>Manage users in a unified console.</p>
+</li>
+</ol>
+<p>##How##</p>
+<p>Use the following steps for integrated authentication with existing repositories:</p>
+<ol>
+<li>
+<p><strong>Identify location of repositories.</strong> Determine if existing credential repositories can be used for authentication with your application.</p>
+</li>
+<li>
+<p><strong>Determine the type of repository.</strong> Identify the type of existing credential repositories. If multiple directories are in use, determine the login priority.</p>
+</li>
+<li>
+<p><strong>Identify network topography requirements.</strong> Plan for access through protected network nodes by examining rules and policies that will require modification.</p>
+</li>
+<li>
+<p><strong>Establish connectivity to repository.</strong> Modify configuration of network routing and protective devices to allow communications between your application and directory services.</p>
+</li>
+<li>
+<p><strong>Add code to application.</strong> Code your application to integrate authentication with existing repositories. Specifics will depend on your development environment, including APIs and SDK libraries.</p>
+</li>
+</ol>
+<p>##Additional Resources##</p>
+<ul>
+<li><a href="http://aws.amazon.com/compliance/aws-whitepapers/" title="Amazon Web Services: Overview of Security Processes">Amazon Web Services: Overview of Security Processes</a></li>
+<li><a href="http://aws.amazon.com/compliance/aws-whitepapers/" title="Amazon Web Services: Risk and Compliance">Amazon Web Services: Risk and Compliance</a></li>
+<li><a href="http://csrc.nist.gov/publications/PubsSPs.html" title="NIST SP 800-53 Security and Privacy Controls for Federal Information Systems and Organizations">NIST SP 800-53 Security and Privacy Controls for Federal Information Systems and Organizations</a></li>
+</ul>

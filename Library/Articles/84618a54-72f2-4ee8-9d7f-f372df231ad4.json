@@ -1,0 +1,56 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "0",
+      "Content_Hash": "0"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "84618a54-72f2-4ee8-9d7f-f372df231ad4"
+        ],
+        "Library_Id": [
+          "be5273b1-d682-4361-99d9-6234f2d47eb7"
+        ],
+        "Title": [
+          "Perform Design Reviews for Cloud Deployments"
+        ],
+        "Category": [
+          "Security Engineering"
+        ],
+        "Phase": [
+          "Design"
+        ],
+        "Technology": [
+          "AWS"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "false",
+          "DataType": "markdown"
+        },
+        "Data": [
+          "##Applies To##\r\n\r\n- Amazon Web Services (AWS)\r\n\r\n\r\n##What to Do##\r\n\r\n1. Evaluate the design architecture within the cloud deployment.\r\n\r\n2. Review design choices in key vulnerability categories defined by your security framework.\r\n\r\n3. Conduct an analysis of components and security mechanisms by examining presentation, business, and data access layers.\r\n\r\n\r\n##Why##\r\n\r\nA design review will identify exposure to newly-discovered vulnerabilities, and maintain the overall security posture for cloud deployments.\r\n\r\nReviews provide checkpoints to ensure continuing compliance with accrediting authorities. When a design review identifies areas of concern, rather than working through future security incidents, it is more effective to fix and re-deploy in the present.\r\n\r\nNIST SP-800-53 requires a periodic review of configuration management (CM-01) and associated controls.\r\n\r\n\r\n##When##\r\n\r\nApply design reviews iteratively throughout deployment. When your design evolves, it is also necessary to thoroughly check architecture and source code for potential exposure to threats. Also review configuration changes for adherence with security management policy and guidelines.\r\n\r\n\r\n##How##\r\n\r\nUse a question-driven approach to expose the highest risk design concerns, and use the security frame to dive into areas that reveal common mistakes. The following steps can guide your approach when reviewing the cloud deployment.\r\n\r\n1. **Deployment and infrastructure.** Review the design of your application in relation to the target deployment environment and the associated security policies. Consider the restrictions imposed by the underlying infrastructure layer security.\r\n\r\n2. **Security frame.** Review the approach to critical areas in your application, including authentication, authorization, input / data validation, exception management, and other areas. Use the application vulnerability categories as a roadmap and back-check, so that you do not overlook any flags during the review.\r\n\r\n3. **Tier-by-tier analysis.** Walk through the logical tiers of your application, and evaluate security choices within your presentation, business, and data access layers.\r\n\r\n4. **Record design review results.** Use a standard checklist and customize it for your unique application architecture. Walk through the prescribed review checks consistently, being sure to verify that previous assumptions are still valid for current business case and security. Record your findings, and initiate cloud deployment (application and architecture) update requests in accordance with change management policy and procedure.\r\n\r\n\r\n##Additional Resources##\r\n\r\n- [AWS Security Best Practices](http://aws.amazon.com/security/ \"AWS Security Best Practices\")\r\n- [NIST SP-800-53 Security and Privacy Controls for Federal Information Systems and Organizations](http://csrc.nist.gov/publications/PubsSPs.html \"NIST SP-800-53 Security and Privacy Controls for Federal Information Systems and Organizations\")\r\n- [Security Architecture and Design Review](https://msdn.microsoft.com/en-us/library/ \"Security Architecture and Design Review\")\r\n- [Security Code Review in the SDLC](https://www.owasp.org/ \"Security Code Review in the SDLC\")\r\n"
+        ]
+      }
+    ]
+  }
+}

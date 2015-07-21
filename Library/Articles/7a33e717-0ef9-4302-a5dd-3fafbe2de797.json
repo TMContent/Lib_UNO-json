@@ -1,0 +1,56 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "0",
+      "Content_Hash": "0"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "7a33e717-0ef9-4302-a5dd-3fafbe2de797"
+        ],
+        "Library_Id": [
+          "be5273b1-d682-4361-99d9-6234f2d47eb7"
+        ],
+        "Title": [
+          "Backup Virtual Images"
+        ],
+        "Category": [
+          "Security Engineering"
+        ],
+        "Phase": [
+          "Deployment"
+        ],
+        "Technology": [
+          "AWS"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "false",
+          "DataType": "markdown"
+        },
+        "Data": [
+          "##Applies To##\r\n\r\n- Amazon Web Services (AWS)\r\n\r\n\r\n##What to Do##\r\n\r\nUse the AWS Management Console or the Command Line Interface (CLI) to backup virtual images and data with the create snapshot command.\r\n\r\n\r\n##Why##\r\n\r\nBackups are an important part of your information management plan. AWS provides physical safeguard of your media, while you must maintain the integrity of cloud configuration and make backups (also known as snapshots) so that:\r\n - An original machine image can be rapidly restored.\r\n - Different versions of configuration files can be securely controlled.\r\n - Recovery from a system breach can be rapid.\r\n - Alternate configurations can be tested and deployed.\r\n\r\nBackup methods and data integrity are required by certification authorities such as PCI-DSS (Payment Card Industry Data Security Standard (Requirements 9.5 and 12.10) to secure your media and respond to security incidents.\r\n\r\n\r\n##When##\r\n\r\nBackup requirements and intervals are specified in your information management plan. Best practices recommend that you make backups according to your lifecycle needs, during:\r\n\r\n1. **Design and Testing.** Original machine images can be stored with configuration information. Use the snapshot commands to quickly duplicate and modify configurations during design.\r\n\r\n2. **Deployment.** Before deployment an exact backup can be made. The snapshot can be stored in different locations to meet your management requirements.\r\n\r\n3. **Periodically.** Your management plan specifies minimum intervals for backups. Snapshots can be done through the management console or CLI very quickly.\r\n\r\n4. **Incident Response.** As part of your incident response, make snapshots before attempting repair methods. If you determine the repair is not working, you can go back in time through snapshots and choose the best course for restoring operations to your cloud.\r\n\r\n\r\n##How##\r\n\r\n1. **Unmount Volume.** If the Elastic Block Store (EBS) volume serves as a root device, stop the instance before taking a snapshot. In Linux, issue the command `umount -d device_name` and replace device_name with `/dev/sdh`, for example. The volume is unmounted.\r\n\r\n2. **Open Console.** Open your EC2 console snapshots in the navigation pane and create a snapshot. Select the volume to be backed up, and create a snapshot. In the CLI this can be done by issuing commands:\r\n - `create-snapshot` (in AWS CLI)\r\n - `ec2-create-snapshot` (in Amazon EC2 CLI)\r\n - `New-EC2Snapshot` (in AWS Tools for Windows PowerShell).\r\n\r\n    Refer to the section \"Accessing Amazon EC2\" in the [Amazon Elastic Compute Cloud User Guide for Linux](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ \"Amazon Elastic Compute Cloud User Guide for Linux\") for further help.\r\n\r\n3. **Encryption.** When you take a shapshot of an encrypted volume, the content is automatically encrypted. Note the option to encrypt snapshots Snapshots that are taken of encrypted volumes are automatically encrypted. Other instance type may support encryption as discussed in the \"Amazon EBS Encryption\" topic in the [Amazon Elastic Compute Cloud User Guide for Linux](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ \"Amazon Elastic Compute Cloud User Guide for Linux\").\r\n\r\n4. **Copy Snapshot.**  To copy a snapshot using the EC2 console, open the EC2 console and select the snapshot to copy. Be sure to update the destination region and description. The description is very important to help you identify your snapshots from the original. Progress of the copying process can be viewed at the snapshots page in the region specified. In-progress snapshots appear at the top of your list for a particular region. To make snapshots with a CLI:\r\n - `copy-snapshot` (AWS CLI)\r\n - `ec2-copy-snapshot` (Amazon EC2 CLI)\r\n - `Copy-EC2Snapshot` (in AWS Tools for Windows PowerShell).\r\n\r\n    Refer to the section \"Accessing Amazon EC2\" in the [Amazon Elastic Compute Cloud User Guide for Linux](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ \"Amazon Elastic Compute Cloud User Guide for Linux\") for further help with command switches and options.\r\n\r\n5. **View Snapshot Information.** Open snapshots from the navigation pane in the EC2 console and select a snapshot. A filter list is available to reduce the length of the list if necessary. Select the snapshot of interest, and the information associated with it is displayed. Information can also be displayed by issuing CLI commands:o view snapshot information using the command line:\r\n - `describe-snapshots` (AWS CLI)\r\n - `ec2-describe-snapshots` (Amazon EC2 CLI)\r\n - `Get-EC2Snapshot` (AWS Tools for Windows PowerShell)\r\n\r\n    For more information about command switches and options, read the \"Accessing Amazon EC2\" topic in the [Amazon Elastic Compute Cloud User Guide for Linux](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ \"Amazon Elastic Compute Cloud User Guide for Linux\").\r\n\r\n##Additional Resources##\r\n\r\n- [Amazon Elastic Compute Cloud User Guide for Linux](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ \"Amazon Elastic Compute Cloud User Guide for Linux\")\r\n- [AWS Security Best Practices](http://aws.amazon.com/security/ \"AWS Security Best Practices\")\r\n- [Backup and Recovery Approaches Using Amazon Web Services](http://aws.amazon.com/whitepapers/backup-and-recovery-using-aws/ \"Backup and Recovery Approaches Using Amazon Web Services\")\r\n- [Payment Card Industry (PCI) Data Security Standard (DSS) -  Requirements and Security Assessment Procedures](http://link.to \"PCI DSS Requirements and Security Assessment Procedures\")\r\n"
+        ]
+      }
+    ]
+  }
+}

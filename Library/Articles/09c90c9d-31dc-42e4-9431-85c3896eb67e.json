@@ -1,0 +1,56 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "0",
+      "Content_Hash": "0"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "09c90c9d-31dc-42e4-9431-85c3896eb67e"
+        ],
+        "Library_Id": [
+          "be5273b1-d682-4361-99d9-6234f2d47eb7"
+        ],
+        "Title": [
+          "Cloud Performance Is Monitored"
+        ],
+        "Category": [
+          "System Hardening"
+        ],
+        "Phase": [
+          "Deployment"
+        ],
+        "Technology": [
+          "AWS"
+        ],
+        "Type": [
+          "Checklist Item"
+        ],
+        "DirectLink": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "false",
+          "DataType": "markdown"
+        },
+        "Data": [
+          "##What to Check For##\r\n\r\nVerify the cloud performance is monitored.\r\n\r\n\r\n##Why##\r\n\r\nCloud monitoring provides performance and cost benefits, such as:\r\n\r\n- Under-used resources can be stopped to reduce cost\r\n- Required load changes in EC2 can be justified with metrics\r\n- System-wide visibility of operations can be measured for utilization, performance, and operational health characteristics.\r\n\r\n\r\n\r\n##How to Check##\r\n\r\nTo verify that cloud performance is monitored:\r\n\r\n1. **Identify individuals responsible for monitoring cloud performance.** Find personnel responsible for monitoring cloud performance and interview them to make sure that somebody is handling this responsibility.\r\n\r\n2. **Access the console.** Open the CloudWatch console and change the region if necessary.\r\n\r\n3. **View Graphs with the Console.** Open the CloudWatch console and change the region if necessary. Access the CloudWatch Metrics by Category section. Search for RequestLatency. Check the box to view a graph of the RequestLatency metric. Change the graph by selecting different statistic and periods from the list. Perform this step to make sure that the CloudWatch console is sufficiently instrumented to provide meaningful information about cloud performance.\r\n\r\n\r\n##How to Fix##\r\n\r\nThe following steps summarize the publishing of metrics to CloudWatch. For more information about Getting Set Up, see http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/.\r\n\r\n1. **Access the console.** Open the CloudWatch console and change the region if necessary.\r\n\r\n2. **Set Up the Command Line Interface.** Use the CloudWatch command line interface (CLI) or the AWS CLI by installing and configuring each. Before you can use either CLI, however, install and configure the tools. For more information about Setting Up the Command Line Interface, see http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/.\r\n\r\n3. **Define the Data Configuration.** Choose appropriate names for the metric and namespace. For a latency example, a metric name of `RequestLatency` works well. Enter your latency-defining data points into the `GetStarted` namespace.\r\n\r\n4. **Add Metrics to CloudWatch.** Publish data points to CloudWatch through a command prompt. You enter the command `aws cloudwatch put-metric-data` with options for metric name, namespace, `RequestLatency`, and interval. Repeat this command to enter remaining data points. \r\n\r\n5. **Get Statistics From CloudWatch.** Retrieve statistics based on the published metrics with the command `aws cloudwatch get-metric-statistics`. To this command add switches for start-time and end-time that are far enough in the past to include the earliest time stamp published. The CLI returns a JSON similar to the following example: `     {\r\n     \"Datapoints\": [],\r\n     \"Label\": \"Request:Latency\"\r\n     }\r\n `   \r\n6. **View Graphs with the Console.** Open the CloudWatch console and change the region if necessary. Access the CloudWatch Metrics by Category section. Search for RequestLatency. Check the box to view a graph of the RequestLatency metric. Change the graph by selecting different statistic and periods from the list. Create an Alarm for this metric if needed.\r\n\r\n\r\n##Additional Resources##\r\n\r\n- [Amazon CloudWatch Developer Guide](http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/ \"Amazon CloudWatch Developer Guide\")\r\n\r\n\r\n"
+        ]
+      }
+    ]
+  }
+}

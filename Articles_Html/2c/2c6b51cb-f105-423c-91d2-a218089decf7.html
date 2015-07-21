@@ -1,0 +1,55 @@
+<p>##What to Check For##</p>
+<p>Verify that access to cloud resources is encrypted.</p>
+<p>##Why##</p>
+<p>Protect connections using TLS to prevent man-in-the-middle attacks. In the AWS shared security model you are responsible for redirection to third party merchants, especially with regard to compliance with PCI-DSS.</p>
+<p>Implemented properly, TLS used with web applications secures HTTP communication over TLS, or HTTPS between the client and cloud services. The result is protection for online accounts, authentication credentials, and cookies.</p>
+<p>##When##</p>
+<p>Encrypted connections with TLS or VPN must always be used with web applications in order to protect sensitive information as it is transmitted over the network and is susceptible to theft and abuse.</p>
+<p>##How to Check##</p>
+<p>To verify that access to cloud resources is encrypted:</p>
+<ol>
+<li>
+<p><strong>Define communication security requirements.</strong> Define which network communications need to be encrypted. All transmissions that include sensitive data, including authentication credentials and session tokens must be encrypted. In some cases, it might be practical to encrypt all network connections.</p>
+</li>
+<li>
+<p><strong>Identify communications performed by the application.</strong> Review the application design to confirm all network communications performed by the application comply with security requirements.</p>
+</li>
+<li>
+<p><strong>Find all code that connects to the cloud.</strong> Identify code that needs to send encrypted data over the network.</p>
+</li>
+<li>
+<p><strong>Verify that TLS is used to protect connections.</strong> Examine code that sends data over the network to make sure that sockets are protected using TLS.</p>
+</li>
+<li>
+<p><strong>Verify that valid certificates are used.</strong> Examine the certificates used by TLS to make sure that they are valid.</p>
+</li>
+</ol>
+<p>##How to Fix##</p>
+<p>To use TLS to protect network connections follow these general steps:</p>
+<ol>
+<li>
+<p><strong>Get valid certificates.</strong> Purchase valid certificates for the application.</p>
+</li>
+<li>
+<p><strong>Use valid certificates.</strong> Configure the server in the cloud to accept TLS connections. Do not permit unencrypted connections to the server.</p>
+</li>
+<li>
+<p><strong>Define communication security requirements.</strong> Define which network communications need to be encrypted. All transmissions that include sensitive data, including authentication credentials and session tokens must be encrypted. In some cases, it might be practical to encrypt all network connections.</p>
+</li>
+<li>
+<p><strong>Identify communications performed by the application.</strong> Review the application design to confirm all network communications performed by the application comply with security requirements.</p>
+</li>
+<li>
+<p><strong>Find all code that connects to the cloud.</strong> Identify code that needs to send encrypted data over the network.</p>
+</li>
+<li>
+<p><strong>Add code that uses TLS.</strong> There are multiple methods for using TLS, depending on application requirements. Use the method  that is most appropriate for your application.</p>
+</li>
+</ol>
+<p>##Additional Resources##</p>
+<ul>
+<li><a href="http://aws.amazon.com/compliance/aws-whitepapers/" title="Amazon Web Services: Risk and Compliance">Amazon Web Services: Risk and Compliance</a></li>
+<li><a href="http://aws.amazon.com/security/" title="AWS Security Best Practices">AWS Security Best Practices</a></li>
+<li><a href="https://www.usenix.org/system/files/conference/usenixsecurity14/sec14-paper-karapanos.pdf" title="Prevention of TLS Man-In-The-Middle Attacks in Web Applications">On the Effective Prevention of TLS Man-In-The-Middle Attacks in Web Applications</a></li>
+<li><a href="http://link.to" title="PCI DSS Requirements and Security Assessment Procedures">Payment Card Industry (PCI) Data Security Standard (DSS) - Requirements and Security Assessment Procedures</a></li>
+</ul>
