@@ -1,0 +1,57 @@
+<p>##What to Check For##</p>
+<p>Verify that sensitive data in the cloud is encrypted.</p>
+<p>##Why##</p>
+<p>Data at rest requires safe storage practices to address security concerns such as:</p>
+<ul>
+<li>Accidental information disclosure</li>
+<li>Data integrity compromise</li>
+<li>Unintended deletion</li>
+<li>Availability of infrastructure hardware and software.</li>
+</ul>
+<p>##When##</p>
+<p>When encryption is available at the file, partition, volume, or application-level, you should use it. Some data may not be confidential, but it is simpler to enable encryption for an entire bucket or volume, for example, in order to eliminate the possibility that an intruder could use any data in your cloud.</p>
+<p>Backup and replication approaches must also use encryption, or respect the encryption method already in use.</p>
+<p>##How to Check##</p>
+<p>To verify that sensitive data in the cloud is encrypted:</p>
+<ol>
+<li>
+<p><strong>Identify sensitive data.</strong> Examine your cloud architecture and services used. Look for customer data, intellectual property, and access credentials.</p>
+</li>
+<li>
+<p><strong>Classify sensitive data.</strong> Review the list of sensitive data and prioritize the classification. Customer data and your business data is important, but the financial impact of losing customer data may be higher than losing a list of employees. Use such comparisons as well as threat level to rank and classify data.</p>
+</li>
+<li>
+<p><strong>Identify where sensitive data is stored.</strong> Find all the places where sensitive data is stored.</p>
+</li>
+<li>
+<p><strong>Verify that sensitive data is encrypted.</strong> Examine each place where sensitive data is stored to make sure that it is encrypted.</p>
+</li>
+</ol>
+<p>##How to Fix##</p>
+<p>To use encryption with your AWS resources, include the following steps as part of your management of sensitive data in the cloud:</p>
+<ol>
+<li>
+<p><strong>Identify sensitive data.</strong> Examine your cloud architecture and services used. Look for customer data, intellectual property, and access credentials.</p>
+</li>
+<li>
+<p><strong>Classify sensitive data.</strong> Review the list of sensitive data and prioritize the classification. Customer data and your business data is important, but the financial impact of losing customer data may be higher than losing a list of employees. Use such comparisons as well as threat level to rank and classify data.</p>
+</li>
+<li>
+<p><strong>Protect data at rest on S3.</strong> Use permissions at the bucket or object level in combination with IAM policies. This will secure your S3 resources against unauthorized access, deletion, and disclosure.</p>
+</li>
+<li>
+<p><strong>Protect data at rest on EBS.</strong> Use Elastic Block Store (EBS) encryption on non-boot volumes. For boot volumes you will use an encryption method supported by the operating system (OS). For example, in Windows this might be Encrypted File System (EFS) or BitLocker.</p>
+</li>
+<li>
+<p><strong>Protect data at rest on RDS.</strong> Relational Database Service (RDS) offers platform-level protection for MySQL, Oracle, and MS SQL. You can add more protection at the application layer by using a built-in encryption function. Your application can manage keys with PKI or other asymmetric technique.</p>
+</li>
+<li>
+<p><strong>Protect data at rest on Glacier.</strong> Your data is always protected by server-side encryption. For an additional layer of security you can also encrypt your data before uploading to Glacier.</p>
+</li>
+<li>
+<p><strong>Protecting data at rest on DynamoDB.</strong> You will need to implement a data encryption layer over the standard service. This can be done at the application layer.</p>
+</li>
+<li>
+<p><strong>Protecting data at rest on EMR.</strong> Elastic MapReduce (EMR) uses Amazon Machine Images (AMI) to create instances, which by default do not encrypt data at rest.</p>
+</li>
+</ol>

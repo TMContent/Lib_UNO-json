@@ -1,0 +1,56 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "0",
+      "Content_Hash": "0"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "2d6c9ccc-4bec-449d-8755-19f8f9a87c1c"
+        ],
+        "Library_Id": [
+          "be5273b1-d682-4361-99d9-6234f2d47eb7"
+        ],
+        "Title": [
+          "Develop Reusable Security Code"
+        ],
+        "Category": [
+          "Security Engineering"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "AWS"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "false",
+          "DataType": "markdown"
+        },
+        "Data": [
+          "##Applies To##\r\n\r\n- Amazon Web Services (AWS)\r\n\r\n\r\n##What to Do##\r\n\r\nReview samples of security code, and develop custom, reusable code for use in multiple applications. Submit your code for testing against known threat agents. Use the change control process specified in your security policy for storing code in a security code library.\r\n\r\n\r\n##Why##\r\n\r\nReusing security code creates a more-secure application for these reasons:\r\n\r\n- reduces code complexity and associated maintenance costs\r\n- ensures security requirements are addressed with proven controls\r\n- prevents re-introduction of bugs and vulnerabilities\r\n- allows testing of the security code in isolation\r\n- allows for performance tuning while maintaining security posture\r\n- permits offloading of security processing to network appliances.\r\n\r\n\r\n##When##\r\n\r\nWhen working with various programming and scripting languages, create new versions of reusable security code as required for each programming language, such as Java, PHP, Python, Ruby and .NET. This includes routines for authentication, cryptographic, and logging code, for example.\r\n\r\n\r\n##How##\r\n\r\nThe development of security code will generally parallel your software development lifecycle, and will follow these general steps.\r\n\r\n1. **Identify requirements and perform analysis.** Identify requirements which this security code must address. Build use cases to identify user, required privileges, protocol, and messages.\r\n\r\n2. **Design software architecture.** Develop specific code parameters to work within the application architecture boundary. Include inputs and outputs from the requirements specification. Use data flow diagrams and other illustrations to transform use cases into pseudo code.\r\n\r\n3. **Write software code.** Actual coding is developed at this time. This is the longest phase of the cycle.\r\n\r\n4. **Test security code.**  Test the security code against the requirements by using standard test methods.\r\n\r\n5. **Deploy security code.** Add the security code to current projects.\r\n\r\n6. **Maintain software library.** When the security code needs updating due to deficiencies noticed in actual use, use change control procedures to revise or add requirements. Submit the code for security testing, and add to the code security library when your change control sign-offs are completed.\r\n"
+        ]
+      }
+    ]
+  }
+}

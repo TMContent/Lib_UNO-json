@@ -1,0 +1,56 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "0",
+      "Content_Hash": "0"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "85f85b25-ecd1-4a15-a0a1-66e0713efe6b"
+        ],
+        "Library_Id": [
+          "47a10a30-15ad-4cfd-bf82-00e9bb2037f6"
+        ],
+        "Title": [
+          "8.2.5 Forbid Recycled Passwords"
+        ],
+        "Category": [
+          "Authentication"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Requirement"
+        ],
+        "DirectLink": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "false",
+          "DataType": "wikitext"
+        },
+        "Data": [
+          "==Applies To==\n\n* PCI DSS Requirement 8.2.5\n\n==Policy Statement==\n\nForbid recycled passwords.\n\n==Policy Purpose==\n\nNot allowing old passwords to be recycled ensures that the old passwords cannot be used if they have been compromised.\n\n==Related Guidance==\n\n* [[a3f48e53-b118-4180-8aa1-e945f1afadda|Force Password Renewal]]\n\n==Related Checklist Items==\n\n* [[af1a2a69-bb4d-4ca4-86ab-174c4c5e3ca9|Password Renewal Is Enforced]]"
+        ]
+      }
+    ]
+  }
+}

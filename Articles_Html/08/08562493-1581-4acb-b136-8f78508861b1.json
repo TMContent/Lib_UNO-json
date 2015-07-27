@@ -1,6 +1,6 @@
 {
   "id": "08562493-1581-4acb-b136-8f78508861b1",
-  "checksum": "333075ae187c1df55ea947170841c302",
+  "checksum": "df2be1abd5e5a024d66ea2df93d3a8e1",
   "words": {
     "1": [
       "ul",
@@ -2296,7 +2296,11 @@
       "ul",
       "li",
       "ol",
-      "li"
+      "ol",
+      "li",
+      "li",
+      "div",
+      "pre"
     ],
     "satelliteassemblies>": [
       "ul",
@@ -2431,7 +2435,7 @@
       "p",
       "b"
     ],
-    "note&nbsp&nbsp;&nbsp;for": [
+    "note   for": [
       "blockquote",
       "blockquote"
     ],
@@ -2599,10 +2603,10 @@
       "div",
       "pre"
     ],
-    "application&#8212such": [
+    "application—such": [
       "p"
     ],
-    "databases&#8212should": [
+    "databases—should": [
       "p"
     ],
     "restricted": [
@@ -2805,7 +2809,7 @@
       "li",
       "p"
     ],
-    "connectionstrings>&nbsp;": [
+    "connectionstrings>": [
       "ol",
       "li",
       "div",
@@ -2825,16 +2829,6 @@
       "div",
       "pre"
     ],
-    "&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "div",
-      "div",
-      "pre",
-      "pre"
-    ],
     "connectionstring=\"initial": [
       "ol",
       "li",
@@ -2845,7 +2839,7 @@
       "div",
       "pre"
     ],
-    "catalog=aspnetdb&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "catalog=aspnetdb": [
       "ol",
       "li",
       "div",
@@ -3166,7 +3160,7 @@
       "p",
       "b"
     ],
-    "note&nbsp&nbsp;&nbsp;the": [
+    "note   the": [
       "blockquote",
       "ul",
       "li",
@@ -3175,7 +3169,7 @@
     "located": [
       "blockquote"
     ],
-    "&#37windir&#37;\\microsoft.net\\framework\\<versionnumber>": [
+    "%windir%\\microsoftnet\\framework\\<versionnumber>": [
       "blockquote"
     ],
     "versionnumber": [
@@ -3320,7 +3314,7 @@
       "li",
       "p"
     ],
-    "section..succeeded&#33;": [
+    "section..succeeded!": [
       "ul",
       "li",
       "div",
@@ -3342,11 +3336,11 @@
       "blockquote",
       "p"
     ],
-    "location&#37;windir&#37;\\system32\\microsoft\\protect\\s-1-5-18": [
+    "location%windir%\\system32\\microsoft\\protect\\s-1-5-18": [
       "ul",
       "li"
     ],
-    "&#37windir&#37;\\system32\\microsoft\\protect\\s-1-5-18": [
+    "%windir%\\system32\\microsoft\\protect\\s-1-5-18": [
       "blockquote"
     ],
     "review": [
@@ -3381,13 +3375,19 @@
     ],
     "encrypteddata>": [
       "ol",
-      "li",
-      "ul",
-      "li",
       "ol",
       "li",
       "ul",
-      "li"
+      "li",
+      "div",
+      "pre",
+      "ol",
+      "ol",
+      "li",
+      "ul",
+      "li",
+      "div",
+      "pre"
     ],
     "cipherdata>": [
       "ol",
@@ -3395,9 +3395,12 @@
       "ul",
       "li",
       "ol",
+      "ol",
       "li",
       "ul",
-      "li"
+      "li",
+      "div",
+      "pre"
     ],
     "ciphervalue>": [
       "ol",
@@ -3428,22 +3431,15 @@
       "div",
       "pre"
     ],
-    "&nbsp": [
+    "cipherdata><ciphervalue>aqaaancmnd8bfderjhoawe/cl+sbaaaaexuij/8ofe+sgts7jbkzdgqaaaacaaaaaaadzgaaqaaaabaaaaakms84dyacpaeasc1dimibaaaaaasaaacgaaaaeaaaakavi6aaofdqhdc6w1er3hmwaaaacz00mzoz1di7kyrvkmin/bmfrvohnuwz6h9rcxj6ow41e3hwhlbh79iuwiinp0vqfaaaaf2sxcdb3fckkgnagkhkilqtetxh</ciphervalue>": [
       "ol",
       "div",
       "pre"
     ],
-    "encrypteddata>&nbsp;&nbsp;&nbsp;": [
+    "/cipherdata>": [
       "ol",
       "div",
-      "pre"
-    ],
-    "cipherdata><ciphervalue>aqaaancmnd8bfderjhoawe/cl&#43;sbaaaaexuij/8ofe&#43;sgts7jbkzdgqaaaacaaaaaaadzgaaqaaaabaaaaakms84dyacpaeasc1dimibaaaaaasaaacgaaaaeaaaakavi6aaofdqhdc6w1er3hmwaaaacz00mzoz1di7kyrvkmin/bmfrvohnuwz6h9rcxj6ow41e3hwhlbh79iuwiinp0vqfaaaaf2sxcdb3fckkgnagkhkilqtetxh</ciphervalue>&nbsp;&nbsp;&nbsp;": [
-      "ol",
-      "div",
-      "pre"
-    ],
-    "/cipherdata>&nbsp;": [
+      "pre",
       "ol",
       "div",
       "pre"
@@ -3503,7 +3499,7 @@
       "ol",
       "li"
     ],
-    "&#37;&#64;": [
+    "%@": [
       "ol",
       "li",
       "div",
@@ -3523,7 +3519,7 @@
       "div",
       "pre"
     ],
-    "&#37><script": [
+    "%<script": [
       "ol",
       "li",
       "div",
@@ -3533,7 +3529,11 @@
       "div",
       "pre"
     ],
-    "runat=\"server\"&nbsp;&nbsp;&nbsp;": [
+    "runat=\"server\"": [
+      "ol",
+      "li",
+      "div",
+      "pre",
       "ol",
       "li",
       "div",
@@ -3579,13 +3579,21 @@
       "div",
       "pre"
     ],
-    "e&nbsp;&nbsp;&nbsp;": [
+    "e": [
+      "ol",
+      "li",
+      "div",
+      "pre",
       "ol",
       "li",
       "div",
       "pre"
     ],
-    "&#123&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "{": [
+      "ol",
+      "li",
+      "div",
+      "pre",
       "ol",
       "li",
       "div",
@@ -3625,7 +3633,7 @@
       "div",
       "pre"
     ],
-    "&#43": [
+    "+": [
       "ol",
       "li",
       "div",
@@ -3635,25 +3643,27 @@
       "div",
       "pre"
     ],
-    "&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "configurationmanagerconnectionstrings": [
+      "ol",
+      "li",
+      "div",
+      "pre",
       "ol",
       "li",
       "div",
       "pre"
     ],
-    "configurationmanagerconnectionstrings&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "\"mylocalsqlserver\"].connectionstring);": [
+      "ol",
+      "li",
+      "div",
+      "pre",
       "ol",
       "li",
       "div",
       "pre"
     ],
-    "&#91\"mylocalsqlserver\"&#93;.connectionstring);&nbsp;&nbsp;&nbsp;": [
-      "ol",
-      "li",
-      "div",
-      "pre"
-    ],
-    "&#125</script><html>&nbsp;": [
+    "}/script><html>": [
       "ol",
       "li",
       "div",
@@ -3873,13 +3883,7 @@
       "ol",
       "li"
     ],
-    "configprotecteddata>&nbsp;": [
-      "ol",
-      "li",
-      "div",
-      "pre"
-    ],
-    "providers>&nbsp;&nbsp;&nbsp;": [
+    "providers>": [
       "ol",
       "li",
       "div",
@@ -3909,7 +3913,7 @@
       "div",
       "pre"
     ],
-    "systemconfiguration,&#9;&#9;": [
+    "systemconfiguration,": [
       "ol",
       "li",
       "div",
@@ -3933,7 +3937,7 @@
       "div",
       "pre"
     ],
-    "/&nbsp;": [
+    "/": [
       "ol",
       "li",
       "div",
@@ -3989,7 +3993,7 @@
       "ul",
       "li"
     ],
-    "section..succeeded&#33;note&nbsp;&nbsp;&nbsp;for": [
+    "section..succeeded!note   for": [
       "ol"
     ],
     "http//msdn.microsoft.com/library/default.asp?url=/library/en-us/dnsecure/html/windataprotection-dpapi.asp": [
@@ -4064,32 +4068,17 @@
     "time": [
       "p"
     ],
-    "configprotectionprovider=\"myuserdataprotectionconfigurationprovider\"&nbsp;&nbsp;&nbsp;": [
+    "configprotectionprovider=\"myuserdataprotectionconfigurationprovider\"": [
       "ol",
       "div",
       "pre"
     ],
-    "encrypteddata>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "ciphervalue>aqaaancmnd8bfderjhoawe/cl+sbaaaawuizhylxzk+u4/8nnmrajqaaaaacaaaaaaadzgaaqaaaabaaaadlfqu00qt0begh6wmhhgysaaaaaasaaacgaaaaeaaaam56z6ezglmufzgcta83rkggaqaatvdpexhd6h95lfwbt0fqzyzxupi2ieph/xlhlb5rsuuqdcjul7xgiisavw2onqxgncpxxrsucxhq7vqgbh4g7xhk0wdyws5ax4t/ryjbfyef5kapzshdmdozdky/fowrvegar7lzkfbodcpjbvgx+lfsjdbnewrb5bqrx552dufjtdlp8u3k/da9twwdu2w/crlmxjtvz/y/ici1fzxjx3u7sy9k1ic+5hbi7nouck6ze5rlbnl0zfdq0pyglj2to4ftayat0szkbaxlxrqszmhx+7c+rgkpmqtg9xjaw26x3ijap2/uar2zozqh+tskamhysruhtichjdttp+r6rs21y2qkrt9hb9opd9b5mdizgtdkifwbbmwlv4xfuycna1zgny7mcsxmi62jxayvlzkcs5dxv0shwloujbtdcxqmfksrvo2scw86wcn8ad02jhkcqmf9swnzpd849mlqgmfiqqsflz6q+vjlrxqvb8zmvzemqpqcy/dktgjovjn0ioz3zhl20frenoa3ziwvvk8p9pblz3sefs19maw0jtyuaaaaayvnpot3an7lactdfyreip+ftu4=</ciphervalue>": [
       "ol",
       "div",
       "pre"
     ],
-    "cipherdata>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
-      "ol",
-      "div",
-      "pre"
-    ],
-    "ciphervalue>aqaaancmnd8bfderjhoawe/cl&#43;sbaaaawuizhylxzk&#43;u4/8nnmrajqaaaaacaaaaaaadzgaaqaaaabaaaadlfqu00qt0begh6wmhhgysaaaaaasaaacgaaaaeaaaam56z6ezglmufzgcta83rkggaqaatvdpexhd6h95lfwbt0fqzyzxupi2ieph/xlhlb5rsuuqdcjul7xgiisavw2onqxgncpxxrsucxhq7vqgbh4g7xhk0wdyws5ax4t/ryjbfyef5kapzshdmdozdky/fowrvegar7lzkfbodcpjbvgx&#43;lfsjdbnewrb5bqrx552dufjtdlp8u3k/da9twwdu2w/crlmxjtvz/y/ici1fzxjx3u7sy9k1ic&#43;5hbi7nouck6ze5rlbnl0zfdq0pyglj2to4ftayat0szkbaxlxrqszmhx&#43;7c&#43;rgkpmqtg9xjaw26x3ijap2/uar2zozqh&#43;tskamhysruhtichjdttp&#43;r6rs21y2qkrt9hb9opd9b5mdizgtdkifwbbmwlv4xfuycna1zgny7mcsxmi62jxayvlzkcs5dxv0shwloujbtdcxqmfksrvo2scw86wcn8ad02jhkcqmf9swnzpd849mlqgmfiqqsflz6q&#43;vjlrxqvb8zmvzemqpqcy/dktgjovjn0ioz3zhl20frenoa3ziwvvk8p9pblz3sefs19maw0jtyuaaaaayvnpot3an7lactdfyreip&#43;ftu4=</ciphervalue>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
-      "ol",
-      "div",
-      "pre"
-    ],
-    "/cipherdata>&nbsp;&nbsp;&nbsp;": [
-      "ol",
-      "div",
-      "pre"
-    ],
-    "/encrypteddata>&nbsp;": [
+    "/encrypteddata>": [
       "ol",
       "div",
       "pre"
@@ -4101,54 +4090,18 @@
       "ol",
       "li"
     ],
-    "runat=\"server\"&nbsp;": [
-      "ol",
-      "li",
-      "div",
-      "pre"
-    ],
-    "e&nbsp;": [
-      "ol",
-      "li",
-      "div",
-      "pre"
-    ],
-    "&#123&nbsp;&nbsp;&nbsp;": [
-      "ol",
-      "li",
-      "div",
-      "pre"
-    ],
-    "&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
-      "ol",
-      "li",
-      "div",
-      "pre"
-    ],
-    "configurationmanagerconnectionstrings&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
-      "ol",
-      "li",
-      "div",
-      "pre"
-    ],
-    "&#91\"mylocalsqlserver\"&#93;.connectionstring);&nbsp;": [
-      "ol",
-      "li",
-      "div",
-      "pre"
-    ],
     "enable": [
       "ol",
       "li",
       "p"
     ],
-    "system.web>&nbsp;": [
+    "system.web>": [
       "ol",
       "li",
       "div",
       "pre"
     ],
-    "..&nbsp;": [
+    "..": [
       "ol",
       "li",
       "div",
@@ -4198,7 +4151,7 @@
       "div",
       "pre"
     ],
-    "'myuserdataprotectionconfigurationprovider'&nbsp;error": [
+    "'myuserdataprotectionconfigurationprovider' error": [
       "ol",
       "li",
       "div",

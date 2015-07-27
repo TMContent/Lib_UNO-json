@@ -1,6 +1,6 @@
 {
   "id": "97bb3ed8-df73-478e-a310-d96b79678aef",
-  "checksum": "5b20a3a20321f12fb322b1eb307d1e6a",
+  "checksum": "a6e4dbc6cb807c49f2c6d69b268cd1bf",
   "words": {
     "0": [
       "ol",
@@ -430,6 +430,8 @@
       "ol",
       "ol",
       "ol",
+      "ol",
+      "li",
       "li",
       "li",
       "li",
@@ -444,6 +446,8 @@
       "ul",
       "ul",
       "ul",
+      "ul",
+      "li",
       "li",
       "li",
       "li",
@@ -458,6 +462,8 @@
       "p",
       "p",
       "pre",
+      "pre",
+      "a",
       "ul",
       "ul",
       "li",
@@ -2463,8 +2469,14 @@
       "li",
       "li",
       "ol",
+      "ol",
       "li",
-      "p"
+      "p",
+      "li",
+      "ul",
+      "li",
+      "pre",
+      "a"
     ],
     "some": [
       "ol",
@@ -2598,10 +2610,8 @@
       "ol",
       "ol",
       "ol",
-      "ol",
       "li",
       "p",
-      "li",
       "li",
       "li",
       "li",
@@ -2616,7 +2626,6 @@
       "ul",
       "ul",
       "ul",
-      "ul",
       "li",
       "li",
       "li",
@@ -2626,12 +2635,9 @@
       "li",
       "li",
       "li",
-      "li",
       "p",
       "p",
       "p",
-      "pre",
-      "a",
       "ul",
       "ul",
       "ul",
@@ -2973,7 +2979,6 @@
       "ol",
       "ol",
       "ol",
-      "ol",
       "li",
       "ul",
       "li",
@@ -2985,8 +2990,6 @@
       "li",
       "li",
       "li",
-      "li",
-      "ul",
       "ul",
       "ul",
       "ul",
@@ -3003,7 +3006,6 @@
       "p",
       "p",
       "p",
-      "li",
       "li",
       "li",
       "li",
@@ -3012,8 +3014,6 @@
       "p",
       "p",
       "pre",
-      "pre",
-      "a",
       "li",
       "pre",
       "p",
@@ -3178,10 +3178,16 @@
       "ul",
       "li",
       "ol",
+      "ol",
+      "li",
       "li",
       "ul",
+      "ul",
       "li",
-      "p"
+      "p",
+      "li",
+      "pre",
+      "a"
     ],
     "hashing": [
       "ol",
@@ -3812,8 +3818,6 @@
       "ol",
       "ol",
       "ol",
-      "ol",
-      "li",
       "li",
       "li",
       "li",
@@ -3826,8 +3830,6 @@
       "ul",
       "ul",
       "ul",
-      "ul",
-      "li",
       "li",
       "li",
       "li",
@@ -3840,8 +3842,6 @@
       "p",
       "p",
       "p",
-      "pre",
-      "a",
       "ul",
       "li",
       "a",
@@ -3884,10 +3884,16 @@
       "ul",
       "li",
       "ol",
+      "ol",
+      "li",
       "li",
       "ul",
+      "ul",
+      "li",
       "li",
       "pre",
+      "pre",
+      "a",
       "ul",
       "ul",
       "li",
@@ -5360,18 +5366,12 @@
       "li",
       "pre"
     ],
-    "secure": [
+    "protected": [
       "ol",
       "li",
       "ul",
       "li",
       "pre",
-      "a",
-      "ul",
-      "li",
-      "a",
-      "ul",
-      "li",
       "a"
     ],
     "storage": [
@@ -5392,21 +5392,12 @@
       "h1",
       "h1"
     ],
-    "location": [
-      "ol",
+    "apis": [
       "ol",
       "li",
       "ul",
       "li",
       "pre",
-      "a",
-      "li",
-      "p",
-      "ul",
-      "li",
-      "a",
-      "ul",
-      "li",
       "a"
     ],
     "guidelinekeygenerator": [
@@ -5561,6 +5552,17 @@
       "ol",
       "li",
       "p"
+    ],
+    "location": [
+      "ol",
+      "li",
+      "p",
+      "ul",
+      "li",
+      "a",
+      "ul",
+      "li",
+      "a"
     ],
     "try{": [
       "ol",
@@ -5958,6 +5960,14 @@
       "li",
       "a"
     ],
+    "secure": [
+      "ul",
+      "li",
+      "a",
+      "ul",
+      "li",
+      "a"
+    ],
     "checklists": [
       "h1"
     ],
@@ -6003,8 +6013,8 @@
   "tags": {},
   "links": [
     {
-      "href": "/article/cd4ccbbb-be9c-4ff4-8b20-d116819b634b",
-      "text": "Use a Secure Key Storage Location"
+      "href": "/article/00000000-0000-0000-0000-00000060ef71",
+      "text": "Store Encryption Keys Using Protected Storage APIs"
     },
     {
       "href": "/article/6e0918c1-90db-46d5-9f0e-8a98ddbcd7d5",

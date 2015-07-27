@@ -1,0 +1,56 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "0",
+      "Content_Hash": "0"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "6c80f6d2-965c-4eed-a3a9-444e80231e2a"
+        ],
+        "Library_Id": [
+          "47a10a30-15ad-4cfd-bf82-00e9bb2037f6"
+        ],
+        "Title": [
+          "3.2.2 Do Not Store CVVs"
+        ],
+        "Category": [
+          "Cryptographic Storage"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Requirement"
+        ],
+        "DirectLink": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "false",
+          "DataType": "wikitext"
+        },
+        "Data": [
+          "==Applies To==\n\n* PCI DSS Requirement 3.2.2\n\n==Policy Statement==\n\nDo not store CVVs.\n\n==Policy Purpose==\n\nThe card verification code should not be stored in order to limit the potential damage in the event of a successful attack. The card verification code is often used for authentication in online transactions, but does not need to be stored after the transaction has been processed.\n\n==Related Guidance==\n\n* [[c05b8c53-3f76-4569-b212-177d5a208b00|Do Not Store Particularly Sensitive Cardholder Data]]\n\n==Related Checklist Items==\n\n* [[fd15d30d-8132-48fc-8962-870f096eff3b|Particularly Sensitive Cardholder Data Is Not Stored]]"
+        ]
+      }
+    ]
+  }
+}

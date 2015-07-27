@@ -13,7 +13,7 @@
           "00000000-0000-0000-0000-0000001ab0c1,402e33fe-bd72-424c-ab99-76f094f2e70d,"
         ],
         "Library_Id": [
-          "c4b9cb6a-4561-4451-9b6c-4e59d73584f6"
+          "be5273b1-d682-4361-99d9-6234f2d47eb7"
         ],
         "Title": [
           "URL-encode Data in HTTP Response Headers"
@@ -51,7 +51,7 @@
           "DataType": "wikitext"
         },
         "Data": [
-          "==Applies To==\r\n\r\n* Java\r\n\r\n==What to Do==\r\n\r\nURL-encode data that gets included in HTTP response headers.\r\n\r\n==Why==\r\n\r\nData in HTTP response headers should be URL-encoded to prevent response splitting vulnerabilities.\r\n\r\n==How==\r\n\r\nTo URL-encode data in HTTP Response headers:\r\n\r\n# **Identify all data included in HTTP response headers.** Search your code for calls to //setHeader// to find all code that adds data to HTTP response headers.\r\n# **Validate all data included in HTTP response headers.** Use positive validation routines to check all data that gets included in HTTP response headers.\r\n# **URL-encode all data included in HTTP response headers.** Use the //URLEncoder.encode// method to URL-encode data that gets includes in HTTP response headers.\r\n\r\n==Additional Resources==\r\n\r\n* For more information about the //URLEncoder.encode// method, see http://docs.oracle.com/javase/1.5.0/docs/api/java/net/URLEncoder.html"
+          "==Applies To==\n\n* Java\n\n==What to Do==\n\nURL-encode data that gets included in HTTP response headers.\n\n==Why==\n\nData in HTTP response headers should be URL-encoded to prevent response splitting vulnerabilities.\n\n==How==\n\nTo URL-encode data in HTTP Response headers:\n\n# **Identify all data included in HTTP response headers.** Search your code for calls to //setHeader//, //addHeader//, amd //addCookie// to find all code that adds data to HTTP response headers.\n# **Validate all data included in HTTP response headers.** Use positive validation routines to check all data that gets included in HTTP response headers.\n# **URL-encode all data included in HTTP response headers.** Use the //URLEncoder.encode// method to URL-encode data that gets includes in HTTP response headers.\n\n==Additional Resources==\n\n* For more information about the //URLEncoder.encode// method, see http://docs.oracle.com/javase/1.5.0/docs/api/java/net/URLEncoder.html"
         ]
       }
     ]

@@ -1,6 +1,6 @@
 {
   "id": "93b69439-8607-4b3b-af6a-70afa775afd3",
-  "checksum": "b4d4c81cae0cd4cd70106247b8f279d4",
+  "checksum": "8c35f1ceb63b8b9d78bdf3da157ee28a",
   "words": {
     "applies": [
       "h1"
@@ -702,10 +702,9 @@
     "redirect": [
       "p"
     ],
-    "http//www.onlinebank.com/redirect?url=[destination": [
+    "http//www.onlinebank.com/redirect?url=[destination]": [
       "p",
-      "a",
-      "font",
+      "pre",
       "b"
     ],
     "phisher": [
@@ -737,15 +736,10 @@
     "millions": [
       "p"
     ],
-    "http//www.onlinebank.com/redirect?url=www.phisher.com": [
+    "http//www.onlinebank.com/redirect?url=www.phisher.com/": [
       "p",
-      "a",
-      "font",
+      "pre",
       "b"
-    ],
-    "/": [
-      "p",
-      "a"
     ],
     "user": [
       "p",
@@ -939,14 +933,6 @@
   },
   "tags": {},
   "links": [
-    {
-      "href": "http://www.onlinebank.com/redirect?url=[destination]",
-      "text": "\r\n      \r\n        http://www.onlinebank.com/redirect?url=[destination\r\n      ]"
-    },
-    {
-      "href": "http://www.onlinebank.com/redirect?url=www.phisher.com/",
-      "text": "\r\n      \r\n        http://www.onlinebank.com/redirect?url=www.phisher.com\r\n      /"
-    },
     {
       "href": "http://www.owasp.org/index.php/Top_10_2010-A10-Unvalidated_Redirects_and_Forwards",
       "target": "_blank",

@@ -1,0 +1,37 @@
+<p>##Applies To##</p>
+<ul>
+<li>Amazon Web Services (AWS)</li>
+</ul>
+<p>##What to Do##</p>
+<p>Examine cloud operations architecture, functions, and requirements for the purpose of testing interoperability of the deployment. Write tests for the interoperability of cloud resources. Identify the various modes of failure, why things fail, to know what functions decrease in performance and what functionality is completely lost when your cloud deployment becomes unavailable. Develop general options and tactics for troubleshooting, backup, restore, or moving to other regions or cloud service provider (CSP).</p>
+<p>##Why##</p>
+<p>Due to the nature of cloud development, design documentation for your deployment may not be complete, and/or may need improvement to prepare for the result of security incidents. For movement of the deployment to other regions or CSP, it will be important to have knowledge of configuration and additions since the original deployment.</p>
+<p>Interoperability testing helps you determine where failure points are located, as well as the results of loss of function. An additional benefit is that testing may surface application features which may not work as originally designed.</p>
+<p>Performing interoperability testing will identify configuration information you must know if you move to a different Cloud Service Provider.</p>
+<p>##When##</p>
+<p>Cloud deployment interoperability testing should be performed on a regular basis, to confirm your documentation of the as-built infrastructure. It is best to have this understanding before you need it. If you are faced with moving the deployment to another CSP, or reconstructing the environment in another account, you must understand the limitations of portability and interoperability that could exist in how you have implemented cloud features. The most inopportune time to discover what applications will break would be during a transition of cloud deployments to alternate location.</p>
+<p>##How##</p>
+<p>Use the following steps to perform interoperability testing for cloud deployments. When completed, you will have a reasonable plan and requirements for moving your deployment to another account or CSP.</p>
+<ol>
+<li>
+<p><strong>Prepare for interoperability testing.</strong> Review the design architecture document and initiate discussion with the development team. Modify the document to reflect any additions or changes that have been made due to AWS feature changes, mitigation, function adds, etc.</p>
+</li>
+<li>
+<p><strong>Select test targets and limitations of testing.</strong> Examine data flow diagrams and highlight the objects which are end points of interoperability. The messages and data are the area of concern, so focus on these for testing.</p>
+</li>
+<li>
+<p><strong>Identify functions.</strong> Review the functional requirements management matrix. For each function, determine steps to test for interoperability, function by function.</p>
+</li>
+<li>
+<p><strong>Identify failure cause(s).</strong> For each function, review the list of security controls. If a control fails or is breached, what functions will fail?</p>
+</li>
+<li>
+<p><strong>Categorize failure effect(s).</strong> For each failure, list the possible causes. These will most likely be a result of a control failing due to an unexpected event or interaction.</p>
+</li>
+<li>
+<p><strong>Identify causes of failure.</strong> The cause of test failure for interoperability may not be simple to pinpoint. For example, an application might start out as being interoperable, but as cloud-specific features are added to it, it becomes less interoperable. As your application leverages AWS-specific features, you may need to increase the level of contingency planning, to identify other options.</p>
+</li>
+<li>
+<p><strong>Provide alternatives.</strong> Your testing report should conclude with recommendations that answer the following questions. Will the application work in another cloud space? How much effort is required to move to another CSP? Can you deploy the application in your enterprise location? What steps are required to restore as part of disaster recovery?</p>
+</li>
+</ol>

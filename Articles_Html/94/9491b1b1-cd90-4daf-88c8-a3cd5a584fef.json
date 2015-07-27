@@ -1,6 +1,6 @@
 {
   "id": "9491b1b1-cd90-4daf-88c8-a3cd5a584fef",
-  "checksum": "566f7d590e30a1b82612f0a546827dcf",
+  "checksum": "d287cc242f0c44f1ab77327c2545dd5b",
   "words": {
     "what": [
       "h1"
@@ -91,7 +91,7 @@
       "li",
       "div"
     ],
-    "that&nbspasp.net": [
+    "that aspnet": [
       "p"
     ],
     "membership": [
@@ -407,7 +407,7 @@
     "secure": [
       "p"
     ],
-    "management&nbsp;": [
+    "management": [
       "p"
     ],
     "also": [
@@ -434,8 +434,16 @@
     "ticket": [
       "p"
     ],
-    "you&nbsp;": [
-      "p"
+    "you": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "ol",
+      "ol",
+      "li",
+      "li"
     ],
     "how": [
       "h1",
@@ -661,7 +669,8 @@
       "li",
       "div",
       "li",
-      "div"
+      "div",
+      "pre"
     ],
     "configured": [
       "ol",
@@ -706,7 +715,7 @@
       "ol",
       "li"
     ],
-    "check&nbspthat": [
+    "check that": [
       "ol",
       "li",
       "div"
@@ -714,7 +723,8 @@
     "connectionstrings>": [
       "ol",
       "li",
-      "div"
+      "div",
+      "pre"
     ],
     "contains": [
       "ol",
@@ -865,6 +875,7 @@
       "ol",
       "li",
       "div",
+      "p",
       "p"
     ],
     "connectionstrings": [
@@ -913,9 +924,6 @@
     "like": [
       "p"
     ],
-    "connectionstrings>&nbsp;": [
-      "pre"
-    ],
     "add": [
       "pre",
       "pre",
@@ -932,7 +940,7 @@
     "connectionstring=\"data": [
       "pre"
     ],
-    "source=mysqlserver&#9;&#9;initial": [
+    "source=mysqlserver\t\tinitial": [
       "pre"
     ],
     "catalog=aspnetdbintegrated": [
@@ -941,26 +949,19 @@
     "security=sspi\"": [
       "pre"
     ],
-    "/</connectionstrings><system.web>...&nbsp;": [
+    "/</connectionstrings><system.web>...": [
       "pre"
     ],
     "defaultprovider=\"sqlprovider\"": [
       "pre"
     ],
-    "userisonlinetimewindow=\"15\"&nbsp;&nbsp;&nbsp;": [
-      "pre"
-    ],
-    "providers>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "userisonlinetimewindow=\"15\"": [
       "pre"
     ],
     "clear": [
       "pre"
     ],
-    "/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
-      "pre"
-    ],
-    "&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
-      "pre",
+    "/": [
       "pre",
       "pre"
     ],
@@ -970,31 +971,28 @@
     "type=\"systemweb.security.sqlmembershipprovider\"": [
       "pre"
     ],
-    "connectionstringname=\"mysqlconnection\"&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "connectionstringname=\"mysqlconnection\"": [
       "pre"
     ],
-    "applicationname=\"myapplication\"&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "applicationname=\"myapplication\"": [
       "pre"
     ],
-    "enablepasswordretrieval=\"false\"&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "enablepasswordretrieval=\"false\"": [
       "pre"
     ],
-    "enablepasswordreset=\"true\"&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "enablepasswordreset=\"true\"": [
       "pre"
     ],
-    "requiresquestionandanswer=\"true\"&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "requiresquestionandanswer=\"true\"": [
       "pre"
     ],
-    "requiresuniqueemail=\"true\"&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "requiresuniqueemail=\"true\"": [
       "pre"
     ],
     "passwordformat=\"hashed\"": [
       "pre"
     ],
-    "/&nbsp;&nbsp;&nbsp;": [
-      "pre"
-    ],
-    "/providers>&nbsp;": [
+    "/providers>": [
       "pre"
     ],
     "/membership>": [
@@ -1065,16 +1063,6 @@
     ],
     "adam).": [
       "p"
-    ],
-    "you": [
-      "p",
-      "p",
-      "p",
-      "p",
-      "ol",
-      "ol",
-      "li",
-      "li"
     ],
     "want": [
       "p"
@@ -1201,9 +1189,6 @@
       "p"
     ],
     "features": [
-      "p"
-    ],
-    "controls&nbsp;": [
       "p"
     ],
     "configure": [

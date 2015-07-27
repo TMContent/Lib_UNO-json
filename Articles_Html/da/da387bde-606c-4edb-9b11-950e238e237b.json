@@ -1,7 +1,10 @@
 {
   "id": "da387bde-606c-4edb-9b11-950e238e237b",
-  "checksum": "5c2621e7e5a2287247eca490935fff23",
+  "checksum": "caa5c5031f3a3589c2b33b00409b1bb2",
   "words": {
+    "0": [
+      "pre"
+    ],
     "1": [
       "p",
       "p",
@@ -970,7 +973,9 @@
     ],
     "html": [
       "p",
-      "p"
+      "p",
+      "div",
+      "pre"
     ],
     "systemtext.regularexpressions.regex": [
       "p",
@@ -1179,6 +1184,8 @@
       "p",
       "p",
       "p",
+      "div",
+      "pre",
       "div",
       "table",
       "tbody",
@@ -1802,6 +1809,8 @@
       "div",
       "pre",
       "p",
+      "div",
+      "pre",
       "pre",
       "div",
       "div",
@@ -1834,7 +1843,7 @@
       "tr",
       "td"
     ],
-    "&#37;&#64;": [
+    "%@": [
       "div",
       "pre",
       "div",
@@ -1846,7 +1855,7 @@
       "div",
       "pre"
     ],
-    "&#37><form": [
+    "%<form": [
       "div",
       "pre"
     ],
@@ -1856,8 +1865,13 @@
       "div",
       "pre"
     ],
-    "runat=\"server\"&nbsp;&nbsp;&nbsp;": [
+    "runat=\"server\"": [
       "div",
+      "div",
+      "div",
+      "pre",
+      "pre",
+      "pre",
       "pre"
     ],
     "asp:textbox": [
@@ -1868,7 +1882,7 @@
       "div",
       "pre"
     ],
-    "runat=\"server\"/&nbsp;&nbsp;&nbsp;": [
+    "runat=\"server\"/": [
       "div",
       "pre"
     ],
@@ -1880,16 +1894,13 @@
       "div",
       "pre"
     ],
-    "runat=\"server\"": [
-      "div",
-      "pre",
-      "pre"
-    ],
     "text=\"submit\"": [
       "div",
       "pre"
     ],
-    "/&nbsp;&nbsp;&nbsp;": [
+    "/": [
+      "div",
+      "pre",
       "div",
       "pre"
     ],
@@ -1899,18 +1910,6 @@
     ],
     "id=\"regexpname\"": [
       "div",
-      "pre"
-    ],
-    "runat=\"server\"&nbsp&nbsp;&nbsp;&nbsp;": [
-      "div",
-      "pre"
-    ],
-    "&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
-      "div",
-      "div",
-      "div",
-      "pre",
-      "pre",
       "pre"
     ],
     "errormessage=\"this": [
@@ -1948,11 +1947,11 @@
       "div",
       "pre"
     ],
-    "controltovalidate=\"txtname\"&nbsp&nbsp;&nbsp;&nbsp;": [
+    "controltovalidate=\"txtname\"": [
       "div",
       "pre"
     ],
-    "validationexpression=\"&#94&#91;a-za-z'.\\s&#93;&#123;1,40&#125;&#36;\"": [
+    "validationexpression=\"^a-za-z'.\\s]{1,40}$\"": [
       "div",
       "pre"
     ],
@@ -2035,6 +2034,12 @@
     "character": [
       "p",
       "div",
+      "div",
+      "div",
+      "pre",
+      "pre",
+      "pre",
+      "div",
       "table",
       "tbody",
       "tr",
@@ -2046,16 +2051,21 @@
     "constrained": [
       "p"
     ],
-    "&#94": [
+    "^": [
       "h2",
       "p",
       "b",
-      "b"
+      "b",
+      "div",
+      "pre"
     ],
-    "&#36": [
+    "$": [
       "h2",
       "p",
-      "b"
+      "b",
+      "b",
+      "div",
+      "pre"
     ],
     "enclosing": [
       "p"
@@ -2063,7 +2073,7 @@
     "caret": [
       "p"
     ],
-    "&#94;)": [
+    "^)": [
       "p"
     ],
     "dollar": [
@@ -2073,7 +2083,7 @@
       "p",
       "p"
     ],
-    "&#36;)markers": [
+    "$)markers": [
       "p"
     ],
     "ensures": [
@@ -2093,7 +2103,8 @@
       "p"
     ],
     "else": [
-      "p"
+      "p",
+      "pre"
     ],
     "matches": [
       "p",
@@ -2157,9 +2168,6 @@
     ],
     "filter": [
       "p"
-    ],
-    "&#36)": [
-      "b"
     ],
     "means": [
       "p",
@@ -2270,7 +2278,7 @@
       "div",
       "pre"
     ],
-    "regex&#64;\"&#94;&#91;a-za-z'.&#93;&#123;1,40&#125;&#36;\");response.write(reg.ismatch(txtname.text));//": [
+    "regex@\"^[a-za-z'.]{1,40}$\");response.write(reg.ismatch(txtname.text));//": [
       "ol",
       "li",
       "div",
@@ -2289,25 +2297,19 @@
       "div",
       "pre"
     ],
-    "&#33;regex.ismatch(txtname.text,": [
+    "!regex.ismatch(txtname.text,": [
       "ol",
       "li",
       "div",
       "pre"
     ],
-    "&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "@\"^a-za-z'.]{1,40}$\")){": [
       "ol",
       "li",
       "div",
       "pre"
     ],
-    "&#64\"&#94;&#91;a-za-z'.&#93;&#123;1,40&#125;&#36;\"))&#123;&nbsp;": [
-      "ol",
-      "li",
-      "div",
-      "pre"
-    ],
-    "schema&#125": [
+    "schema}": [
       "ol",
       "li",
       "div",
@@ -2337,19 +2339,11 @@
     "client-side": [
       "p"
     ],
-    "&#37>": [
+    "%": [
       "div",
       "pre"
     ],
-    "html&nbsp;": [
-      "div",
-      "pre"
-    ],
-    "&nbsp;": [
-      "div",
-      "pre"
-    ],
-    "body>&nbsp;&nbsp;&nbsp;": [
+    "body>": [
       "div",
       "pre"
     ],
@@ -2357,11 +2351,7 @@
       "div",
       "pre"
     ],
-    "action=\"htmlcontrolsaspx\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
-      "div",
-      "pre"
-    ],
-    "name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "action=\"htmlcontrolsaspx\">": [
       "div",
       "pre"
     ],
@@ -2373,10 +2363,6 @@
       "div",
       "pre"
     ],
-    "/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
-      "div",
-      "pre"
-    ],
     "name=\"submitbtn\"": [
       "div",
       "pre"
@@ -2385,11 +2371,11 @@
       "div",
       "pre"
     ],
-    "value=\"submit\"/&nbsp;&nbsp;&nbsp;": [
+    "value=\"submit\"/": [
       "div",
       "pre"
     ],
-    "/form>&nbsp;": [
+    "/form>": [
       "div",
       "pre"
     ],
@@ -2399,14 +2385,6 @@
     ],
     "script": [
       "pre"
-    ],
-    "&nbsp": [
-      "pre",
-      "div",
-      "table",
-      "tbody",
-      "tr",
-      "td"
     ],
     "void": [
       "pre"
@@ -2420,10 +2398,12 @@
     "eventargs": [
       "pre"
     ],
-    "e&nbsp;": [
+    "e": [
       "pre"
     ],
-    "&#123&nbsp;&nbsp;&nbsp;": [
+    "{": [
+      "pre",
+      "pre",
       "pre"
     ],
     "request.requesttype": [
@@ -2432,55 +2412,34 @@
     "==": [
       "pre"
     ],
-    "\"post\"&nbsp;&nbsp;&nbsp;": [
+    "\"post\"": [
       "pre"
     ],
-    "&#123&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
-      "pre"
-    ],
-    "requestform&#91;\"txtname\"&#93;;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "requestform[\"txtname\"];": [
       "pre"
     ],
     "name.length": [
       "pre"
     ],
-    "0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
-      "pre"
-    ],
-    "&#123&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
-      "pre"
-    ],
     "system.text.regularexpressions.regex.ismatch(name,": [
       "pre"
     ],
-    "&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
-      "pre"
-    ],
-    "\"&#94&#91;a-za-z'.&#93;&#123;1,40&#125;&#36;\"))&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "\"^a-za-z'.]{1,40}$\"))": [
       "pre"
     ],
     "responsewrite(\"valid": [
       "pre"
     ],
-    "name\";&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
-      "pre"
-    ],
-    "else&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "name\";": [
+      "pre",
       "pre"
     ],
     "responsewrite(\"invalid": [
       "pre"
     ],
-    "name\";&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
-      "pre"
-    ],
-    "&#125&nbsp;&nbsp;&nbsp;": [
-      "pre"
-    ],
-    "&#125&nbsp;": [
-      "pre"
-    ],
-    "&#125": [
+    "}": [
+      "pre",
+      "pre",
       "pre"
     ],
     "/script>": [
@@ -2573,11 +2532,7 @@
     "regexoptionsignorepatternwhitespace": [
       "b"
     ],
-    "regex&#64;\"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
-      "div",
-      "pre"
-    ],
-    "&#94&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "regex@\"": [
       "div",
       "pre"
     ],
@@ -2587,11 +2542,11 @@
       "pre",
       "pre"
     ],
-    "start&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "start": [
       "div",
       "pre"
     ],
-    "?=.&#42;\\d)&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "?=.*\\d)": [
       "div",
       "pre"
     ],
@@ -2689,15 +2644,7 @@
       "tr",
       "td"
     ],
-    "character&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
-      "div",
-      "div",
-      "div",
-      "pre",
-      "pre",
-      "pre"
-    ],
-    "?=.&#42;&#91;a-z&#93;)&nbsp;": [
+    "?=.*[a-z])": [
       "div",
       "div",
       "pre",
@@ -2712,15 +2659,11 @@
       "tr",
       "td"
     ],
-    "&#123;8,10&#125;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "{8,10}": [
       "div",
       "pre"
     ],
-    "length&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
-      "div",
-      "pre"
-    ],
-    "\\s&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "\\s": [
       "div",
       "pre"
     ],
@@ -2732,16 +2675,6 @@
       "tbody",
       "tr",
       "td"
-    ],
-    "&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
-      "div",
-      "div",
-      "pre",
-      "pre"
-    ],
-    "&#36&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
-      "div",
-      "pre"
     ],
     "end\"": [
       "div",
@@ -2778,7 +2711,7 @@
       "tr",
       "th"
     ],
-    "&#94&#91;a-za-z''-'\\s&#93;&#123;1,40&#125;&#36;": [
+    "^a-za-z''-'\\s]{1,40}$": [
       "div",
       "table",
       "tbody",
@@ -2898,7 +2831,7 @@
       "tr",
       "td"
     ],
-    "&#94\\d&#123;3&#125;-\\d&#123;2&#125;-\\d&#123;4&#125;&#36;": [
+    "^\\d{3}-\\d{2}-\\d{4}$": [
       "div",
       "table",
       "tbody",
@@ -2965,28 +2898,28 @@
       "td",
       "td"
     ],
-    "&#94&#91;01&#93;?&#91;-": [
+    "^01]?[-": [
       "div",
       "table",
       "tbody",
       "tr",
       "td"
     ],
-    "&#93;?(\\(&#91;2-9&#93;\\d&#123;2&#125;\\)&#124;&#91;2-9&#93;\\d&#123;2&#125;)&#91;-": [
+    "]?(\\([2-9]\\d{2}\\)|[2-9]\\d{2})[-": [
       "div",
       "table",
       "tbody",
       "tr",
       "td"
     ],
-    "&#93;?\\d&#123;3&#125;&#91;-": [
+    "]?\\d{3}[-": [
       "div",
       "table",
       "tbody",
       "tr",
       "td"
     ],
-    "&#93;?\\d&#123;4&#125;&#36;": [
+    "]?\\d{4}$": [
       "div",
       "table",
       "tbody",
@@ -3081,14 +3014,14 @@
       "td",
       "td"
     ],
-    "&#94(&#91;0-9a-za-z&#93;(&#91;-.\\w&#93;&#42;&#91;0-9a-za-z&#93;)&#42;&#64;(&#91;0-9a-za-z&#93;&#91;-\\w&#93;&#42;&#91;0-9a-za-z&#93;\\.)&#43;&#91;a-za-z&#93;&#123;2,9&#125;)&#36;": [
+    "^[0-9a-za-z]([-.\\w]*[0-9a-za-z])*@([0-9a-za-z][-\\w]*[0-9a-za-z]\\.)+[a-za-z]{2,9})$": [
       "div",
       "table",
       "tbody",
       "tr",
       "td"
     ],
-    "someone&#64example.com": [
+    "someone@examplecom": [
       "div",
       "table",
       "tbody",
@@ -3114,7 +3047,7 @@
       "td",
       "td"
     ],
-    "&#94(ht&#124;f)tp(s?)\\:\\/\\/&#91;0-9a-za-z&#93;(&#91;-.\\w&#93;&#42;&#91;0-9a-za-z&#93;)&#42;(:(0-9)&#42;)&#42;(\\/?)(&#91;a-za-z0-9\\-\\.\\?\\,\\'\\/\\\\\\&#43;&&#37;\\&#36;#_&#93;&#42;)?&#36;": [
+    "^ht|f)tp(s?)\\:\\/\\/[0-9a-za-z]([-.\\w]*[0-9a-za-z])*(:(0-9)*)*(\\/?)([a-za-z0-9\\-\\.\\?\\,\\'\\/\\\\\\+&%\\$#_]*)?$": [
       "div",
       "table",
       "tbody",
@@ -3128,14 +3061,14 @@
       "tr",
       "td"
     ],
-    "&#94(\\d&#123;5&#125;-\\d&#123;4&#125;&#124;\\d&#123;5&#125;&#124;\\d&#123;9&#125;)&#36;&#124;&#94;(&#91;a-za-z&#93;\\d&#91;a-za-z&#93;": [
+    "^\\d{5}-\\d{4}|\\d{5}|\\d{9})$|^([a-za-z]\\d[a-za-z]": [
       "div",
       "table",
       "tbody",
       "tr",
       "td"
     ],
-    "\\d&#91a-za-z&#93;\\d)&#36;": [
+    "\\da-za-z]\\d)$": [
       "div",
       "table",
       "tbody",
@@ -3154,7 +3087,7 @@
       "td",
       "td"
     ],
-    "?&#33;&#94;&#91;0-9&#93;&#42;&#36;)(?&#33;&#94;&#91;a-za-z&#93;&#42;&#36;)&#94;(&#91;a-za-z0-9&#93;&#123;8,10&#125;)&#36;": [
+    "?!^[0-9]*$)(?!^[a-za-z]*$)^([a-za-z0-9]{8,10})$": [
       "div",
       "table",
       "tbody",
@@ -3228,7 +3161,7 @@
       "td",
       "td"
     ],
-    "&#94\\d&#43;&#36;": [
+    "^\\d+$": [
       "div",
       "table",
       "tbody",
@@ -3285,7 +3218,7 @@
       "td",
       "td"
     ],
-    "&#94\\d&#43;(\\.\\d\\d)?&#36;": [
+    "^\\d+\\.\\d\\d)?$": [
       "div",
       "table",
       "tbody",
@@ -3408,7 +3341,7 @@
       "tr",
       "td"
     ],
-    "&#94(-)?\\d&#43;(\\.\\d\\d)?&#36;": [
+    "^-)?\\d+(\\.\\d\\d)?$": [
       "div",
       "table",
       "tbody",

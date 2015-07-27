@@ -1,6 +1,6 @@
 {
   "id": "a48f1daa-3cb9-4594-9064-b8f81c225a6c",
-  "checksum": "650d16a31def785699320b572abe5dfd",
+  "checksum": "d0d32ee9b89d9144eeffdb1c19f0b240",
   "words": {
     "0": [
       "pre"
@@ -401,6 +401,7 @@
       "li",
       "li",
       "p",
+      "pre",
       "pre"
     ],
     "follow": [
@@ -474,7 +475,8 @@
     "hmacsha1": [
       "ul",
       "li",
-      "b"
+      "b",
+      "pre"
     ],
     "send": [
       "ul",
@@ -542,15 +544,14 @@
       "pre"
     ],
     "public": [
+      "pre",
       "pre"
     ],
     "computehmac": [
       "pre"
     ],
-    "&#123": [
-      "pre"
-    ],
-    "&#9public": [
+    "{": [
+      "pre",
       "pre"
     ],
     "static": [
@@ -562,16 +563,13 @@
     "main": [
       "pre"
     ],
-    "string&#91;&#93;": [
+    "string[]": [
       "pre"
     ],
     "args": [
       "pre"
     ],
-    "&#9&#123;": [
-      "pre"
-    ],
-    "&#9&#9;byte&#91;&#93;": [
+    "byte]": [
       "pre",
       "pre",
       "pre"
@@ -589,13 +587,13 @@
       "pre",
       "pre"
     ],
-    "byte&#91key_size&#93;;": [
+    "bytekey_size];": [
       "pre"
     ],
-    "byte&#91data_size&#93;;": [
+    "bytedata_size];": [
       "pre"
     ],
-    "&#9&#9;//": [
+    "//": [
       "pre"
     ],
     "should": [
@@ -607,13 +605,10 @@
     "shared": [
       "pre"
     ],
-    "&#9&#9;hmacsha1": [
-      "pre"
-    ],
     "hmacsha1key);": [
       "pre"
     ],
-    "&#9&#9;cryptostream": [
+    "cryptostream": [
       "pre"
     ],
     "cs": [
@@ -622,19 +617,16 @@
     "cryptostreamstream.null,": [
       "pre"
     ],
-    "hmac&#9;": [
-      "pre"
-    ],
     "cryptostreammodewrite);": [
       "pre"
     ],
-    "&#9&#9;cs.write(data,": [
+    "cswrite(data,": [
       "pre"
     ],
     "datalength);": [
       "pre"
     ],
-    "&#9&#9;cs.close();": [
+    "csclose();": [
       "pre"
     ],
     "result": [
@@ -643,7 +635,7 @@
     "hmachash;": [
       "pre"
     ],
-    "&#9&#125;&#125;": [
+    "}}": [
       "pre"
     ],
     "adapted": [

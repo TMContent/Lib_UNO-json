@@ -1,0 +1,56 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "0",
+      "Content_Hash": "0"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "7e7eeff2-a010-4caf-8b9e-2b74da14a443"
+        ],
+        "Library_Id": [
+          "47a10a30-15ad-4cfd-bf82-00e9bb2037f6"
+        ],
+        "Title": [
+          "8.7 Control Database Access"
+        ],
+        "Category": [
+          "Hardening"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Requirement"
+        ],
+        "DirectLink": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "false",
+          "DataType": "wikitext"
+        },
+        "Data": [
+          "==Applies To==\n\n* PCI DSS Requirement 8.7\n\n==Policy Statement==\n\nProtect databases from unauthorized access.\n\n==Policy Purpose==\n\nPreventing the database access accounts used by applications from being used interactively or by other processes ensures that if these accounts are compromised, an attacker cannot use them. Database access accounts should use authentication to prevent unauthorized access and to provide more detailed logs.\n\n==Related Guidance==\n\n* [[4136930d-7256-43c6-9377-b71a7ed23ab7|Protect Database Access]]\n\n==Related Checklist Items==\n\n* [[9da6b256-cc35-48a3-bb0d-8604b644abee|Database Access Is Protected]]"
+        ]
+      }
+    ]
+  }
+}

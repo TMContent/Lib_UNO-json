@@ -1,0 +1,47 @@
+<p>##Applies To##</p>
+<ul>
+<li>Amazon Web Services (AWS)</li>
+</ul>
+<p>##What to Do##</p>
+<p>Use the AWS Management Console to specify and implement security groups in order to restrict inbound traffic to your cloud applications.</p>
+<p>##Why##</p>
+<p>Security groups are one of the measures that protect your services from unwanted intrusion. For example, security groups can be used to reduce the impact of port scans by limiting inbound traffic to as few ports as necessary.</p>
+<p>By default, all ports are closed. Without the use of security groups, your services are closed. With proper engineering and design, these services are less vulnerable to security threats.</p>
+<p>Security group rules allow inbound traffic to instances associated with the security group. Security groups allow all outbound traffic by default.</p>
+<p>##When##</p>
+<p>Inbound traffic is restricted according to the needs of required changes throughout the application lifecycle:</p>
+<ol>
+<li>
+<p><strong>Design and Testing.</strong> Security Groups are architected during application development and enable developers to run code. Testing requires the creation of groups and rules which mimic the actions of deployed application users.</p>
+</li>
+<li>
+<p><strong>Deployment</strong> Test groups and rules are replaced and/or modified to reflect the need for additional security in the face of current security posture.</p>
+</li>
+<li>
+<p><strong>Periodic Security Checks.</strong> When periodic security audits identify unwanted inbound traffic, you will modify security groups and rules to mitigate intrusions.</p>
+</li>
+</ol>
+<p>##How##</p>
+<ol>
+<li>
+<p><strong>Open Console.</strong> Go to your account's EC2 Management Console and login. The security group is in the navigation pane on the right, and established groups appear in the top right pane. As you select a group, a list of rules appear in the bottom right pane.</p>
+</li>
+<li>
+<p><strong>Security Groups.</strong> Create a new security group, and type in the name and description for the group. Accept the default VPC, or select another where applicable. Note that the name and description fields cannot be changed after the group is created. Any character restrictions for the field can be seen by clicking the info icon next to the field. Once saved, a security group can be copied by selecting Actions &gt; Copy to new.</p>
+</li>
+<li>
+<p><strong>Add or Modify Inbound Rules.</strong> Rules can be added when the group is created. Click Rule, select a rule Type, Protocol, Ports or port range, and type in a Source IP or IP range. The fields which can be changed are determined by the type of rule you select. If you need to manually populate all fields in a rule, use one of the custom rule types. When you've added the necessary inbound rules, save (or create), and the rule is applied to instances associated with the security group.</p>
+</li>
+<li>
+<p><strong>Delete Rules.</strong> Rules are deleted from security groups and associated instances when you save the changes. Select the security group in the console, and edit. Delete the rule, and save (or cancel) your deletion.</p>
+</li>
+<li>
+<p><strong>Delete Security Group.</strong> Security groups are deleted with the Actions &gt; Delete Security Group option. Confirmation is required. Cancel the action to keep the security group, or agree to the deletion.</p>
+</li>
+</ol>
+<p>All of the security group and rules operations can be performed with a command line tool, such as:</p>
+<ul>
+<li>AWS CLI</li>
+<li>Amazon EC2 CLI</li>
+<li>AWS Tools for Windows PowerShell.</li>
+</ul>

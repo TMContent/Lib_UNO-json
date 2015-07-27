@@ -1,0 +1,56 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "0",
+      "Content_Hash": "0"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "aa7a8136-07f3-4ac8-8139-b5e4e1deb9ae"
+        ],
+        "Library_Id": [
+          "47a10a30-15ad-4cfd-bf82-00e9bb2037f6"
+        ],
+        "Title": [
+          "3.2.1 Do Not Store Full Track Contents"
+        ],
+        "Category": [
+          "Cryptographic Storage"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Requirement"
+        ],
+        "DirectLink": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "false",
+          "DataType": "wikitext"
+        },
+        "Data": [
+          "==Applies To==\n\n* PCI DSS Requirement 3.2.1\n\n==Policy Statement==\n\nDo not store full track contents.\n\n==Policy Purpose==\n\nThe full card track contents should not be stored to limit the potential damage in the event of a successful attack. The term \"track contents\" refers to the information stored on the magnetic strip of the physical card issued to a cardholder. New cards also include a chip, the contents of which should also be considered \"track contents.\" If an attacker has this information, he may be able to use it to make fraudulent transactions; therefore, the full track contents should never be stored.\n\n==Related Guidance==\n\n* [[c05b8c53-3f76-4569-b212-177d5a208b00|Do Not Store Particularly Sensitive Cardholder Data]]\n\n==Related Checklist Items==\n\n* [[fd15d30d-8132-48fc-8962-870f096eff3b|Particularly Sensitive Cardholder Data Is Not Stored]]"
+        ]
+      }
+    ]
+  }
+}

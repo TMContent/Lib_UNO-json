@@ -1,0 +1,46 @@
+<p>##What to Check For##</p>
+<p>Verify that an Intrusion Detection System (IDS) is deployed inside the Virtual Private Cloud (VPC).</p>
+<p>##Why##</p>
+<p>An IDS monitors your cloud environment and alerts you about detected intrusions. The IDS logs give you important information about API access such as:</p>
+<ul>
+<li>Who made the API call</li>
+<li>When was the call made</li>
+<li>What was the API call</li>
+<li>What resources were accessed</li>
+<li>Where was the call made from?</li>
+</ul>
+<p>With this information you can update IDS settings and policies. The IDS is also important for monitoring and managing changes, and detecting AWS-specific environment changes.</p>
+<p>##How to Check##</p>
+<p>To verify that an IDS is deployed inside the VPC:</p>
+<ol>
+<li>
+<p><strong>Examine all the systems within the VPC.</strong> Identify all the EC2 instances running in the VPC.</p>
+</li>
+<li>
+<p><strong>Determine whether an IDS is present.</strong> Determine the purpose of each EC2 instance and make sure that at least one of them is an IDS.</p>
+</li>
+<li>
+<p><strong>Determine if an internal IDS is handling the VPC.</strong> If there is no IDS running as an EC2 instance, there might still be an IDS connected to the VPC using a VPN. Determine if the VPC is connected to another network using a VPN. If so, check the IDS on the network that the VPC is connected to using VPN to determine whether this internal IDS is used to monitor the VPC. If there is no IDS running inside the VPC itself or monitoring it via VPN, then this checklist item is not passed.</p>
+</li>
+</ol>
+<p>##How to Fix##</p>
+<ol>
+<li>
+<p><strong>Install IDS.</strong> Choose an IDS with the required features. Traditional rack-based and virtual IDS's are available. Deploy the IDS in your VPC using documentation supplied with the system.</p>
+</li>
+<li>
+<p><strong>Create Security Audit Role.</strong> Create a named security audit role (such as <em>secaudit</em>) with IAM. Make this a role with cross-account access. Enter the ID of the AWS account. Set the access permissions to Read Only for policies and configurations that will be monitored. Credentials are not required. Your policy establishes who or what can assume this role.</p>
+</li>
+<li>
+<p><strong>Create Security Role Policy.</strong></p>
+</li>
+<li>
+<p><strong>Configure Write Once Storage.</strong> Configure versioning on a bucket with the console or AWS SDKs. Optionally, add MFA Delete for an additional security layer by requiring MFA on the bucket.</p>
+</li>
+<li>
+<p><strong>Turn On AWS CloudTrail.</strong> When you enable CloudTrail, create a new S3 bucket. Name the bucket. If you already have a centralized write-only store, that can be used.</p>
+</li>
+<li>
+<p><strong>Detect Unauthorized Credentials.</strong> Manual steps to investigate access and credentials for public, non-public, and cross-account users can be performed with the console. Go to the dashboard and select a user. View the user access keys, date and time for security.</p>
+</li>
+</ol>

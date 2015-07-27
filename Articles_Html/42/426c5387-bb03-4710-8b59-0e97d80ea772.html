@@ -1,0 +1,42 @@
+<p>##Applies To##</p>
+<ul>
+<li>Amazon Web Services (AWS)</li>
+</ul>
+<p>##What to Do##</p>
+<p>Instrument your cloud applications to monitor events that might indicate unusual or suspicious activity. Send alerts to the console when logged activity exceeds a threshold for replays of authentication credentials or login attempts in a specific time period, for example.</p>
+<p>##Why##</p>
+<p>Instrumenting for suspicious activity allows you to detect and react to potential problems from a single console, as early as possible.</p>
+<p>Without automatic mechanisms alerting you of activity which has security implications, unauthorized users can gain quick access to all of your AWS resources. The result could be catastrophic loss of business for the AWS account holder.</p>
+<p>##When##</p>
+<p>Monitor all cloud applications for unusual activity by logging access to AWS objects and resources. Take care to record and store logs for examination, but only to the extent required by the security footing of the application.</p>
+<p>What qualifies as unusual activity is system dependent. Specific security properties of authentication protocols or other system details will dictate some specific categories. Additional categories of unusual activity will be related to business processes.</p>
+<p>##How##</p>
+<p>The following is a walk-through of the general steps required to monitor cloud applications for compromise.</p>
+<ol>
+<li>
+<p><strong>Define unusual application activity.</strong>  Because the business focus of each application is unique, many of the specifics must be figured out for each application. However, some activities are suspicious across a wide variety of application types:</p>
+<ul>
+<li>Repeated unsuccessful authentication attempts</li>
+<li>Attempts to use stale session-related information or authentication tickets</li>
+<li>Large or rapid transactions</li>
+<li>Transactions that occur outside of normal time periods</li>
+<li>Application errors, especially those not easily caused by user error, or occurring in deeper tiers.</li>
+</ul>
+</li>
+<li>
+<p><strong>Ensure sufficient data is logged.</strong> After you have defined unusual or suspicious activity for the application, ensure that the information is logged properly. Appropriate logging depends upon the specifics of the logged data. Some suspicious activity logging will be best accomplished by parsing existing log files and looking for anomalous activity, rapid transactions from a single host or user, unusually large orders, etc.</p>
+</li>
+<li>
+<p><strong>Ensure logs are monitored.</strong> The logs must be automatically processed to identify information that should be acted upon. Logging will serve no purpose if the results receive no response. Cloud services provide the tools for monitoring. Your operations team must develop the framework for monitoring and responding to log events. For your approach, consider these items:</p>
+<ul>
+<li>Most applications will need 24x7 coverage. However, some may be fine with 8x5.</li>
+<li>Log monitoring requires the attention of your system administrator. Smaller web apps may be secured with a limited number of alarms and alerts. A large ecommerce site may require the attention of a dedicated team.</li>
+<li>Define your response time needs. When compromises increase in volume and there's a serious problem with the site, have personnel in place that can quickly react and use procedures to regain normal operation.</li>
+<li>Use groups, roles, and policy to effectively control access to your logs and information derived from them. Some of this information is sensitive.</li>
+<li>Establish complete response capabilities to lock compromised accounts, and mitigate damage by patching system images and/or taking applications and services offline until a complete security response can be executed.</li>
+</ul>
+</li>
+<li>
+<p><strong>Avoid logging pitfalls.</strong> Logging too much information can end up being a problem of its own. Once you have an idea of the load impact of application log events, it may be worthwhile to implement some form of log throttling to reduce the flow of information to a rate at which you can act upon. Good log throttling should only eliminate redundant information, and still provide a way to surface the most important information first. Automatically taking action based on detection of anomalies is best avoided. While it may be reasonable to throttle the speed at which an event like a login attempt may occur, preventing an action from occurring may result in an easy-to-launch denial of service attack against your application.</p>
+</li>
+</ol>

@@ -1,0 +1,56 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "0",
+      "Content_Hash": "0"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "16f340a1-949f-4aed-b0b6-29592621fdba"
+        ],
+        "Library_Id": [
+          "be5273b1-d682-4361-99d9-6234f2d47eb7"
+        ],
+        "Title": [
+          "Code Reviews Are Performed for Cloud Deployments"
+        ],
+        "Category": [
+          "Security Engineering"
+        ],
+        "Phase": [
+          "Deployment"
+        ],
+        "Technology": [
+          "AWS"
+        ],
+        "Type": [
+          "Checklist Item"
+        ],
+        "DirectLink": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "false",
+          "DataType": "markdown"
+        },
+        "Data": [
+          "##What to Check For##\r\n\r\nVerify that code reviews are performed for cloud deployments.\r\n\r\n##Why##\r\n\r\nA properly-conducted code review for cloud deployments ensures the security posture is maintained at a safe level. A code review may lead you to find newly discovered vulnerabilities in the deployment, and is also valuable in identifying newer types of exploits for your controls in place.\r\n\r\nThe code review process enables sharing of security best practices within the development team. This can help prevent future security issues.\r\n\r\n\r\n##When##\r\n\r\nCloud code reviews are conducted periodically throughout deployment. Your security policy states minimum intervals for code review milestones. It is also necessary to review code when new threats appear, or old exploits are modified to exploit different vulnerabilities. When the configuration of sub-components changes in your deployment, you must review any affected code to prevent the introduction of vulnerability. If you receive security bulletins notifying you of the availability of zero day fixes, review your development platform code library, and update libraries as recommended.\r\n\r\n##How to Check##\r\n\r\nTo verify that code reviews are performed for cloud deployments:\r\n\r\n1. **Identify responsible personnel.** Find and interview personnel responsible for performing code reviews for cloud applications.\r\n\r\n2. **Examine code review results.** Review documented results from previous code reviews and assess their quality.\r\n\r\n\r\n##How to Fix##\r\n\r\nThe code review process for deployment, and its findings, should be documented and recorded. Other steps may be required by your security management policy before your findings are implemented in revised code.\r\n\r\n1. **Identify security code review objectives.** Establish goals and constraints for the review. Understand the attack surface. Some vulnerability types can have elevated priority and others can be out of scope based on your security objectives.\r\n\r\n2. **Perform a preliminary scan.** Use automated security analysis tools to find an initial set of security issues and to improve your understanding of where you will most likely find security issues when you review the code more fully.\r\n\r\n3. **Review the code for security issues.** Use the results of step 2 to focus your analysis. Review the code thoroughly with the goal of finding security vulnerabilities that are common to many applications. Sample portions of the code, and manually review.\r\n\r\n4. **Review for security issues unique to the architecture.** Complete a final analysis by looking for security issues that relate to the interaction of code with the unique architecture of your cloud deployment. In particular, carefully inspect custom security mechanisms and features which are mitigating a known security threat.\r\n\r\n5. **Prioritize the security issues found.** Prioritization should be based on the impact the security issue could have on the cloud deployment. Use threat modeling technique to identify the maximum damage potential. Use this information to rank your findings.\r\n\r\n6. **Evaluate the risks of fixing security issues.** Each security issue fixed has the potential to introduce a new, unknown security issue. Sometimes the security issue you know is less dangerous than the security issue you don't. If an issue can be mitigated immediately through a policy change, it may be more effective to delay the code change.\r\n\r\n7. **Initiate code change.** Record your findings and recommendations. Initiate cloud deployment update requests in accordance with change management policy and procedure.\r\n\r\n"
+        ]
+      }
+    ]
+  }
+}

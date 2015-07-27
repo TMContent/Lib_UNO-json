@@ -1,0 +1,130 @@
+<p>##What to Check For##</p>
+<p>Verify that unused SQL database access accounts are removed.</p>
+<p>##Why##</p>
+<p>Each SQL access account increases the attack surface of your application. Unused accounts can be exploited by an attacker as a means of entry. Remove unused and unnecessary DB accounts and users to simplify security management.</p>
+<p>Unused accounts are susceptible to brute force attacks, and the DB can be compromised. The AWS security model defines customer responsibilities for database access <em>within</em> your cloud service.</p>
+<p>##When##</p>
+<p>Always enumerate SQL DB accounts and their use for design and deployment, so that their status can be audited at intervals specified in your security management plan.</p>
+<p>Remove unused SQL accounts at these milestones:</p>
+<ol>
+<li>
+<p><strong>DB Created.</strong> During installation of the DB instance, demo or sample database access accounts may be included. If not necessary, the accounts should be deleted.</p>
+</li>
+<li>
+<p><strong>DB Deployed.</strong> Test accounts should be removed before deployment of the application.</p>
+</li>
+<li>
+<p><strong>Periodic Security Checks.</strong> Remove unused SQL accounts when found during periodic security audits specified in your security management plan.</p>
+</li>
+</ol>
+<p>Exercise caution when removing SQL access accounts. If an account is currently using resources, or has an open session, the delete operation may produce an error. Be sure to confirm the use and status of any SQL account before removal. Do not remove system accounts.</p>
+<p>##How to Check##</p>
+<p>To verify that unused SQL database access accounts are removed:</p>
+<ol>
+<li>
+<p><strong>Identify SQL database access accounts.</strong> Make a spreadsheet about all the databases and accounts that can access them.</p>
+</li>
+<li>
+<p><strong>Examine each SQL database access account.</strong> Review the spreadsheet about SQL accounts and make sure that all of them are being used. Unused accounts should be removed.</p>
+</li>
+</ol>
+<p>##How to Fix##</p>
+<p>To remove unused SQL database access accounts, follow the instructions under the specific AWS database used.</p>
+<p>###MySQL 5.6###</p>
+<ol>
+<li>
+<p><strong>Login with Privileges.</strong> Open a terminal or command shell and log in as a database superuser. Enter the following command, and type in your password.</p>
+<pre><code> mysql -u &lt;superuser_name&gt; -p
+</code></pre>
+</li>
+<li>
+<p><strong>Verify Account Exists.</strong> Review the user listing, and confirm the database access account to be removed.</p>
+<pre><code> mysql&gt; select host, user from mysql.user
+</code></pre>
+</li>
+<li>
+<p><strong>Drop User.</strong> Issue the command to drop the target user account. The syntax for <em>user</em> is <code>'user_name'@'localhost'</code>.</p>
+<pre><code> mysql&gt; drop user &lt;user_name&gt;
+</code></pre>
+</li>
+<li>
+<p><strong>Account Removed.</strong> The account and privileges are removed after issuing the command. If there is an open user session, the account is dropped when the session is closed. Any future attempt to login with the account will fail. Note that databases and other objects created by the account are not deleted. Security errors may result if attempts are made to open these objects in <em>definer security context</em>. Refer to the MySQL Reference Manual for more information on reassigning object permissions.</p>
+</li>
+</ol>
+<p>###Oracle 12c###</p>
+<ol>
+<li>
+<p><strong>Login with Privileges.</strong> Open the command line tool SQL*Plus, and log in with an account that has the DROP USER system privilege. Enter the following commands.</p>
+<pre><code> sqlplus /nolog
+
+ connect / as sysdba
+</code></pre>
+</li>
+<li>
+<p><strong>Verify Account Exists.</strong> Review a user listing, and confirm the database access account to be removed. Note in the example that user names are case-sensitive.</p>
+<pre><code> SELECT * FROM ALL_USERS;
+
+ USERNAME
+ ********
+ TEST01
+ Test01
+ Test02
+ Test03
+</code></pre>
+</li>
+<li>
+<p><strong>Drop User.</strong> Issue the command to drop the target user account.</p>
+<pre><code> DROP  USER  &lt;user_name&gt;  CASCADE;
+</code></pre>
+</li>
+<li>
+<p><strong>Account Removed.</strong> The user account and associated schema are removed from the data dictionary. All schema objects in the user schema are also removed. Do not drop the SYS or SYSTEM user. This will corrupt the database.</p>
+</li>
+</ol>
+<p>###Microsoft SQL Server 2008 R2 and 2012###</p>
+<ol>
+<li>
+<p><strong>Login with Privileges.</strong> Login to a management computer as a user with membership in Account Operators, Domain Admins, Enterprise Admins, or equivalent group. Open <strong>SQL Server Management Studio</strong>.</p>
+</li>
+<li>
+<p><strong>Verify Account Exists.</strong> Review the database user list, and confirm the database access account to be removed.</p>
+</li>
+</ol>
+<ul>
+<li>Expand folders in the left pane until you see the folder for <strong>Users</strong> (SQL Server &gt; Databases &gt; Your_DB &gt; Security &gt; Users).</li>
+<li>Select the <strong>Users</strong> folder to view the list of database users in the right pane.</li>
+<li>Scroll the list of users until the DB user to be removed is found.</li>
+</ul>
+<ol start="3">
+<li>
+<p><strong>Delete User.</strong> Right-click the user object and choose <strong>Delete</strong>.</p>
+<p><strong>Note</strong>: If a schema is owned by this user, there will be an error message: <strong>The database principal owns a schema in the database, and cannot be dropped (Microsoft SQL Server, Error: 15138)</strong>.</p>
+<p>Look in the left pane and locate the <strong>Schema</strong> folder (SQL Server &gt; Databases &gt; Your_DB &gt; Security &gt; Schema). Scroll through the list and identify any schema owned by the database user you are trying to delete. When found, right-click on the schema name and change the owner to another user (Properties -&gt; General -&gt; Schema Owner).</p>
+</li>
+<li>
+<p><strong>Account Removed.</strong> The database user is removed. If present, schema ownership was re-assigned.</p>
+<p><strong>Note</strong>: The steps above remove the database user, but do not address management of a Windows or SQL Server login, if one has been mapped to this user. Refer to the Microsoft SQL Server Product Documentation for more information on login accounts.</p>
+</li>
+</ol>
+<p>###PostgreSQL 9.4.1###</p>
+<ol>
+<li>
+<p><strong>Login with Privileges.</strong> Open a terminal or command shell and log in as a database superuser. The default superuser in the example is <em>postgres</em>. Enter the following command, and type in your password.</p>
+<pre><code> $ psql -U &lt;superuser_name&gt; &lt;db_name&gt;
+</code></pre>
+</li>
+<li>
+<p><strong>Verify Account Exists.</strong> Review the user listing, and confirm the database access account to be removed.</p>
+<pre><code> db_name=# select * from pg_shadow;
+</code></pre>
+</li>
+<li>
+<p><strong>Drop User.</strong> Issue the command to drop the target user account. In the example, on the second line, <code>DROP USER</code> is confirmation that the command has succeeded.</p>
+<pre><code> db_name=# DROP USER &lt;user_name&gt;;
+ DROP USER
+</code></pre>
+</li>
+<li>
+<p><strong>Account Removed.</strong> The account is removed after issuing the command. If there is an open user session, the account is dropped when the session is closed. Any future attempt to login with the account will fail. Note that databases and other objects created by the account are not deleted. If <strong>ERROR: role &quot;user_name&quot; cannot be dropped because some objects depend on it</strong> appears, the objects should be reassigned or dropped. Refer to the PostgreSQL Documentation for more information on dropping or reassigning objects.</p>
+</li>
+</ol>

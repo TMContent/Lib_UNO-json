@@ -1,0 +1,54 @@
+<p>##Applies To##</p>
+<ul>
+<li>Amazon Web Services (AWS)</li>
+</ul>
+<p>##What to Do##</p>
+<p>As part of your incident response plan, coordinate planned response actions with the AWS security team. Review the services agreement and support plan details for important details about the level of interaction you can expect.</p>
+<p>##Why##</p>
+<p>In the shared services security model, AWS is part of your incident response team (IRT). AWS has control of the bottom five layers in the cloud stack while you are responsible for the top six:</p>
+<ul>
+<li>Applications</li>
+<li>Data</li>
+<li>Runtime</li>
+<li>Middleware</li>
+<li>Operating system</li>
+<li>Virtual machine image (VMI)</li>
+<li>Hypervisor</li>
+<li>Servers</li>
+<li>Storage</li>
+<li>Networking</li>
+<li>Facility</li>
+</ul>
+<p>It is necessary to coordinate efforts among all team members in order to avoid confusion or timing errors as individual actions are undertaken.</p>
+<p>AWS needs to be aware of the source of your legitimate activity so that it is not confused with threat sources. AWS can also give advice about best practices during the incident. They may also be able to provide updated machine images with more recent patches applied, freeing up some of your team resources for other matters.</p>
+<p>##When##</p>
+<p>After you have made an initial assessment, and confirmed that this is not a false-positive, communicate the incident to AWS support. Depending on your level of support, you will hear back in the time period specified in your agreement. This is an important consideration when selecting an AWS support package.</p>
+<ul>
+<li>Support level - access type, Primary case handling:</li>
+<li>Basic - online form (no technical support), Technical Customer Service Associate</li>
+<li>Developer - email (local business hours), Cloud Support Associate</li>
+<li>Business - phone, chat, email, live screen sharing (24/7), Cloud Support Engineer</li>
+<li>Enterprise - phone, chat, email, live screen sharing, TAM (24/7), Senior Cloud Support Engineer</li>
+</ul>
+<p>##How##</p>
+<p>Use the following steps to guide the coordination of your incident response with AWS.</p>
+<ol>
+<li>
+<p><strong>Make an initial assessment.</strong> Categorize the incident and determine if AWS support is required for resolution. In some cases you may have received notification from AWS, or noticed suspicious IAM or billing activity. Be sure to keep a record of all contact with AWS and other support you may have available. Begin to execute your organization's incident response plan (IRP).</p>
+</li>
+<li>
+<p><strong>Communicate the incident.</strong> Open an AWS support case. Sign into the management console to file a ticket. If root is compromised then you will need to phone AWS support.</p>
+</li>
+<li>
+<p><strong>Coordinate response with AWS.</strong> AWS support will respond within the terms of your support agreement. Also notify external agencies if required. As you execute your IRP, be sure to update the ticket. If you are using other messaging options for support, record the details in your project log book. Be sure to keep notes about any conversations.</p>
+</li>
+<li>
+<p><strong>Recover systems.</strong> AWS engages service-specific SMEs as needed for the incident. Cooperate with AWS and work towards resolution. Identify steps to avoid recurrence of similar incidents. During recovery AWS does not have access to the private information inside your instances or other resources. They can guide your recovery of data, but cannot directly access the operating system or application. Since there is separation, AWS cannot provide historical information, including access logs. Deep incident investigation and mitigation is the account holder's responsibility.</p>
+</li>
+<li>
+<p><strong>Close the incident.</strong> Compile and organize incident documentation. Provide a report of the outcome to AWS. It may be necessary to follow up if additional details are requested by AWS. Close the incident ticket.</p>
+</li>
+<li>
+<p><strong>Reverse fraudulent charges.</strong> When an account is compromised, you may incur extensive credit card charges for EC2 instances and other services. Review the Billing &amp; Cost Management Dashboard in your management console, and raise any issues with AWS billing by opening a billing support ticket. Be sure to retain records of the disputed charges so that you can follow up with billing until credit is issued to your card company.</p>
+</li>
+</ol>

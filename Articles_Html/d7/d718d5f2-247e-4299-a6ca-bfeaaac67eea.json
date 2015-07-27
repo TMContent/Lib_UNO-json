@@ -1,6 +1,6 @@
 {
   "id": "d718d5f2-247e-4299-a6ca-bfeaaac67eea",
-  "checksum": "8a2b3728c964746012b52ece891e554f",
+  "checksum": "5a26faf00b3722b7ac2ef0f6ff40209e",
   "words": {
     "applies": [
       "h1"
@@ -786,10 +786,8 @@
       "h1"
     ],
     "http//www.onlinebank.com/redirect.asp?url=[destination]": [
-      "p"
-    ],
-    "http//www.onlinebank.com/redirect.asp?url=[destination": [
-      "a"
+      "p",
+      "pre"
     ],
     "phisher": [
       "p",
@@ -841,9 +839,9 @@
     ],
     "http//www.onlinebank.com/redirect.asp?url=www.phisher.com": [
       "p",
-      "a",
+      "pre",
       "p",
-      "a"
+      "pre"
     ],
     "sees": [
       "p",
@@ -1070,7 +1068,7 @@
     ],
     "http//www.onlinebank.com/redirect.asp?map=balance": [
       "p",
-      "a"
+      "pre"
     ],
     "will": [
       "p",
@@ -1202,22 +1200,6 @@
   },
   "tags": {},
   "links": [
-    {
-      "href": "http://www.onlinebank.com/redirect.asp?url=[destination",
-      "text": "http://www.onlinebank.com/redirect.asp?url=[destination"
-    },
-    {
-      "href": "http://www.onlinebank.com/redirect.asp?url=www.phisher.com",
-      "text": "http://www.onlinebank.com/redirect.asp?url=www.phisher.com"
-    },
-    {
-      "href": "http://www.onlinebank.com/redirect.asp?map=balance",
-      "text": "http://www.onlinebank.com/redirect.asp?map=balance"
-    },
-    {
-      "href": "http://www.onlinebank.com/redirect.asp?url=www.phisher.com",
-      "text": "http://www.onlinebank.com/redirect.asp?url=www.phisher.com"
-    },
     {
       "href": "http://www.owasp.org/index.php/Top_10_2010-A10-Unvalidated_Redirects_and_Forwards",
       "text": "http://www.owasp.org/index.php/Top_10_2010-A10-Unvalidated_Redirects_and_Forwards"

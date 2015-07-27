@@ -1,0 +1,56 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "0",
+      "Content_Hash": "0"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "1209afcb-e3e6-4874-952c-bcf1215b29d8"
+        ],
+        "Library_Id": [
+          "47a10a30-15ad-4cfd-bf82-00e9bb2037f6"
+        ],
+        "Title": [
+          "8.2.2 Verify User Identity Before Changing Authentication Credentials"
+        ],
+        "Category": [
+          "Authentication"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Requirement"
+        ],
+        "DirectLink": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "false",
+          "DataType": "wikitext"
+        },
+        "Data": [
+          "==Applies To==\n\n* PCI DSS Requirement 8.2.2\n\n==Policy Statement==\n\nVerify user identity before changing authentication credentials.\n\n==Policy Purpose==\n\nThe user's identity should be verified before performing a requested password reset to ensure that an attacker is not pretending to be the user to gain access.\n\n==Related Guidance==\n\n* [[b426664b-e894-4aae-89ec-578348b096f9|Verify User Identity when Resetting Passwords]]\n\n==Related Checklist Items==\n\n* [[8a759459-ef51-4bcf-93be-2a1d48d1cac8|User Identity Is Verified when Resetting Passwords]]"
+        ]
+      }
+    ]
+  }
+}
