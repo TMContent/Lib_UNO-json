@@ -32,13 +32,13 @@
 </li>
 </ol>
 <p>##How##</p>
-<p>To remove obsolete instances, follow these general steps for your cloud. For more information about instances, see http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/.</p>
+<p>To remove obsolete instances, follow these general steps for your cloud.</p>
 <ol>
 <li>
 <p><strong>Terminate an Instance.</strong> An instance can be terminated by accessing the management console. Before proceeding, check that EBS volumes will remain, and required data has been copied to other EBS volumes or S3 buckets. After this step, go to Instances in the navigation pane of the EC2 console. Select the target instance, and use the terminate action. A prompt asks for confirmation. Agree when you are certain of your action.</p>
 </li>
 <li>
-<p><strong>Terminate Instance with CLI.</strong> Terminating an instance can be done by issuing commands in your CLI. For more information about accessing Amazon EC2, see http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/.</p>
+<p><strong>Terminate Instance with CLI.</strong> Terminating an instance can be done by issuing commands in your CLI.</p>
 </li>
 </ol>
 <ul>
@@ -46,23 +46,16 @@
 <li><code>ec2-terminate-instances</code> (in Amazon EC2 CLI)</li>
 <li><code>Stop-EC2Instance</code> (in AWS Tools for Windows PowerShell).</li>
 </ul>
-<p>To remove obsolete applications, follow these general steps. For more information about removing applications, see http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/.</p>
+<p>To remove obsolete applications, follow these general steps.</p>
 <ol>
 <li>
 <p><strong>Remove an Application.</strong> An application can be removed by accessing the Elastic Beanstalk console. Before proceeding, confirm the application version for the target to be deleted. In the EB console, select the application's region. Select the version of the application, and check the version(s). When you are certain of the choices, delete and confirm. Note the option to remove the application source bundle from the S3 bucket. When checked, the associated source code is deleted from the S3 bucket.</p>
 </li>
 <li>
-<p><strong>Remove Application with CLI.</strong> Removing the application can be done by issuing commands in your CLI. For more information about deleting application versions with CLI or API, see http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/.</p>
+<p><strong>Remove Application with CLI.</strong> Removing the application can be done by issuing commands in your CLI.</p>
 </li>
 </ol>
 <ul>
 <li><code>elastic-beanstalk-delete-application-version</code> (in AWS CLI)</li>
 <li><code>DeleteApplicationVersion</code> (using Elastic Beanstalk API)</li>
-</ul>
-<p>##Additional Resources##</p>
-<ul>
-<li><a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/" title="Amazon Elastic Beanstalk Developer Guide">Amazon Elastic Beanstalk Developer Guide</a></li>
-<li><a href="http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/" title="Amazon Elastic Compute Cloud User Guide for Linux">Amazon Elastic Compute Cloud User Guide for Linux</a></li>
-<li><a href="http://aws.amazon.com/security/" title="AWS Security Best Practices">AWS Security Best Practices</a></li>
-<li><a href="http://aws.amazon.com/compliance/aws-whitepapers/" title="Amazon Web Services: Overview of Security Processes">Amazon Web Services: Overview of Security Processes</a></li>
 </ul>

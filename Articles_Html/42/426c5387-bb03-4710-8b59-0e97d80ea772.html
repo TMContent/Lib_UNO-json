@@ -6,7 +6,6 @@
 <p>Instrument your cloud applications to monitor events that might indicate unusual or suspicious activity. Send alerts to the console when logged activity exceeds a threshold for replays of authentication credentials or login attempts in a specific time period, for example.</p>
 <p>##Why##</p>
 <p>Instrumenting for suspicious activity allows you to detect and react to potential problems from a single console, as early as possible.</p>
-<p>The use of automated systems to regularly review and analyze records for unusual activity is a security control of NIST SP 800-53 (AU-06).</p>
 <p>Without automatic mechanisms alerting you of activity which has security implications, unauthorized users can gain quick access to all of your AWS resources. The result could be catastrophic loss of business for the AWS account holder.</p>
 <p>##When##</p>
 <p>Monitor all cloud applications for unusual activity by logging access to AWS objects and resources. Take care to record and store logs for examination, but only to the extent required by the security footing of the application.</p>
@@ -41,12 +40,3 @@
 <p><strong>Avoid logging pitfalls.</strong> Logging too much information can end up being a problem of its own. Once you have an idea of the load impact of application log events, it may be worthwhile to implement some form of log throttling to reduce the flow of information to a rate at which you can act upon. Good log throttling should only eliminate redundant information, and still provide a way to surface the most important information first. Automatically taking action based on detection of anomalies is best avoided. While it may be reasonable to throttle the speed at which an event like a login attempt may occur, preventing an action from occurring may result in an easy-to-launch denial of service attack against your application.</p>
 </li>
 </ol>
-<p>##Additional Resources##</p>
-<ul>
-<li><a href="http://docs.aws.amazon.com/awscloudtrail/latest/userguide/">AWS CloudTrail User Guide</a></li>
-<li><a href="http://aws.amazon.com/security/" title="AWS Security Best Practices">AWS Security Best Practices</a></li>
-<li><a href="http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/" title="Amazon CloudWatch Developer Guide">Amazon CloudWatch Developer Guide</a></li>
-<li><a href="http://aws.amazon.com/compliance/aws-whitepapers/" title="Amazon Web Services: Overview of Security Processes">Amazon Web Services: Overview of Security Processes</a></li>
-<li><a href="http://docs.aws.amazon.com/gettingstarted/latest/emr/getting-started-emr-tutorial.html" title="Analyzing Big Data">Getting Started with AWS Analyzing Big Data</a></li>
-<li><a href="http://csrc.nist.gov/publications/PubsSPs.html" title="NIST SP 800-53 Security and Privacy Controls for Federal Information Systems and Organizations">NIST SP 800-53 Security and Privacy Controls for Federal Information Systems and Organizations</a></li>
-</ul>

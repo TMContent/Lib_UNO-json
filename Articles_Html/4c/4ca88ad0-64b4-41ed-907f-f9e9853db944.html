@@ -3,7 +3,6 @@
 <p>##Why##</p>
 <p>When authentication (or access) keys are lost, stolen, or compromised, the possessor can gain access to any objects that are accessible with the associated AWS account. Authentication keys (access key ID and secret access key) are generated so that programmatic requests can be sent to AWS. For this reason, security best practice is to restrict permissions for all AWS IAM user account keys for least privilege.</p>
 <p>If the AWS root authentication keys are lost, the keys can be used to access all resources and billing information. For this reason, do not use the AWS account root access keys and, if possible, do not generate these keys. Note that the root access keys cannot be restricted by permissions or policy.</p>
-<p>The management of secret authentication information of users is required by section A.9.2.4 of ISO/IEC 27001:2013. A formal management process is required to control the allocation of the authentication keys.</p>
 <p>##When##</p>
 <p>Authentication keys are protected under all scenarios, and there should be no exceptions to this rule.</p>
 <ol>
@@ -34,7 +33,7 @@
 </li>
 </ol>
 <p>##How to Fix##</p>
-<p>Include these best practices in your formal management plan to ensure the security of accounts and associated authentication keys. For more information about Best Practices for Managing AWS Access Keys, see http://docs.aws.amazon.com/IAM/latest/UserGuide/.</p>
+<p>Include these best practices in your formal management plan to ensure the security of accounts and associated authentication keys.</p>
 <ol>
 <li>
 <p><strong>Protect root keys.</strong> Store root keys in a secure location and use them as little as possible. For example, an encrypted memory card that is kept offline as much as possible is one way to protect root keys.</p>
@@ -64,11 +63,3 @@
 <p><strong>Use Cognito identity and sync services</strong> Temporary, limited-privilege credentials are provided to authenticated and unauthenticated users through an identity pool you assign to an IAM role.</p>
 </li>
 </ol>
-<p>##Additional Resources##</p>
-<ul>
-<li><a href="http://docs.aws.amazon.com/cognito/devguide/" title="Amazon Cognito Developer Guide">Amazon Cognito Developer Guide</a></li>
-<li><a href="http://aws.amazon.com/compliance/aws-whitepapers/" title="Amazon Web Services: Overview of Security Processes">Amazon Web Services: Overview of Security Processes</a></li>
-<li><a href="http://aws.amazon.com/security/" title="AWS Security Best Practices">AWS Security Best Practices</a></li>
-<li><a href="http://docs.aws.amazon.com/IAM/latest/UserGuide/policies_overview.html" title="AWS IAM: Using IAM">AWS Identity and Access Management: Using IAM</a></li>
-<li><a href="http://www.iso.org/iso/catalogue_detail?csnumber=54534" title="ISO/IEC 27001:2013 - Information Management Security Systems Requirements">ISO/IEC 27001:2013 - Information technology - Security techniques - Information security management systems - Requirements</a></li>
-</ul>

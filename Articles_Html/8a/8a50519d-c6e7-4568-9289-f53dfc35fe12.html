@@ -26,32 +26,21 @@
 <p>##How to Fix##</p>
 <ol>
 <li>
-<p><strong>Install IDS.</strong> Choose an IDS with the required features. Traditional rack-based and virtual IDS's are available. For more information on AWS recommended systems, see https://aws.amazon.com/marketplace/. Deploy the IDS in your VPC using documentation supplied with the system. For more information about adding an appliance to your VPC, see http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/.</p>
+<p><strong>Install IDS.</strong> Choose an IDS with the required features. Traditional rack-based and virtual IDS's are available. Deploy the IDS in your VPC using documentation supplied with the system.</p>
 </li>
 <li>
 <p><strong>Create Security Audit Role.</strong> Create a named security audit role (such as <em>secaudit</em>) with IAM. Make this a role with cross-account access. Enter the ID of the AWS account. Set the access permissions to Read Only for policies and configurations that will be monitored. Credentials are not required. Your policy establishes who or what can assume this role.</p>
 </li>
 <li>
-<p><strong>Create Security Role Policy.</strong> For more information about security role sample policies, see https://s3.amazonaws.com/reinvent2013-sec402/. For a sample policy, see https://s3.amazonaws.com/reinvent2013-sec402/secaudit.json.</p>
+<p><strong>Create Security Role Policy.</strong></p>
 </li>
 <li>
-<p><strong>Configure Write Once Storage.</strong> Configure versioning on a bucket with the console or AWS SDKs. Optionally, add MFA Delete for an additional security layer by requiring MFA on the bucket. For more information about these topics, see http://docs.aws.amazon.com/AmazonS3/latest/dev/.</p>
+<p><strong>Configure Write Once Storage.</strong> Configure versioning on a bucket with the console or AWS SDKs. Optionally, add MFA Delete for an additional security layer by requiring MFA on the bucket.</p>
 </li>
 <li>
 <p><strong>Turn On AWS CloudTrail.</strong> When you enable CloudTrail, create a new S3 bucket. Name the bucket. If you already have a centralized write-only store, that can be used.</p>
 </li>
 <li>
-<p><strong>Detect Unauthorized Credentials.</strong> Manual steps to investigate access and credentials for public, non-public, and cross-account users can be performed with the console. Go to the dashboard and select a user. View the user access keys, date and time for security. For more information about checking credentials, see https://awsmedia.s3.amazonaws.com/SEC402.pdf.</p>
+<p><strong>Detect Unauthorized Credentials.</strong> Manual steps to investigate access and credentials for public, non-public, and cross-account users can be performed with the console. Go to the dashboard and select a user. View the user access keys, date and time for security.</p>
 </li>
 </ol>
-<p>##Additional Resources##</p>
-<ul>
-<li><a href="http://docs.aws.amazon.com/AmazonS3/latest/dev/" title="Amazon Simple Storage Service: Developer Guide">Amazon Simple Storage Service Developer Guide</a></li>
-<li><a href="http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/" title="Amazon VPC Cloud User Guide">Amazon Virtual Private Cloud User Guide</a></li>
-<li><a href="http://aws.amazon.com/compliance/aws-whitepapers/" title="Amazon Web Services: Overview of Security Processes">Amazon Web Services: Overview of Security Processes</a></li>
-<li><a href="http://docs.aws.amazon.com/awscloudtrail/latest/userguide/">AWS CloudTrail User Guide</a></li>
-<li><a href="http://aws.amazon.com/security/" title="AWS Security Best Practices">AWS Security Best Practices</a></li>
-<li><a href="http://docs.aws.amazon.com/IAM/latest/UserGuide/iam-ug.pdf" title="AWS Identity and Access Management - Using IAM">AWS Identity and Access Management - Using IAM</a></li>
-<li><a href="https://awsmedia.s3.amazonaws.com/SEC402.pdf" title="Intrusion Detection in the Cloud">Intrusion Detection in the Cloud</a></li>
-<li><a href="https://s3.amazonaws.com/reinvent2013-sec402/secaudit.json" title="Security Audit Sample Policy">Security Audit Sample Policy</a></li>
-</ul>

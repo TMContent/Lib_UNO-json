@@ -7,7 +7,6 @@
 <p>##Why##</p>
 <p>RDS Security Groups are one of the measures that protect your databases from unwanted intrusion. For example, security groups can be used to reduce the impact of port scans by limiting inbound traffic to as few ports as necessary.</p>
 <p>By default, all ports are closed. Without the use of security groups, your database is only accessible to the owner. With proper engineering and design, the DB is accessible to the IP ranges or Extended Computing Cloud (EC2) you specify. Your data is less vulnerable to security threats with the added layer of security.</p>
-<p>Developing and maintaining secure systems and applications is required by certification authorities such as PCI-DSS (Payment Card Industry Data Security Standard (Requirement 6).</p>
 <p>##When##</p>
 <p>Inbound traffic is restricted according to the needs of required changes throughout the database lifecycle:</p>
 <ol>
@@ -25,8 +24,8 @@
 <p>##How##</p>
 <ol>
 <li>
-<p><strong>Open Console.</strong> Go to your account's AWS Management Console and login. Then access the RDS Console. You may also go directly to the <a href="https://console.aws.amazon.com/rds/" title="RDS Console">RDS Console</a>.
-Locate security groups under the RDS Dashboard. <strong>Note</strong>: If you receive an error such as: &quot;Your account does not support the EC2-Classic Platform in this region&quot; then you must setup a VPC security group as summarized in the <strong><em>Restrict Inbound Traffic Using Security Groups</em></strong> guideline. Detailed information is found in the topic Security Groups for Your VPC in the <a href="http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/" title="Amazon VPC Cloud User Guide">Amazon Virtual Private Cloud User Guide</a>.</p>
+<p><strong>Open Console.</strong> Go to your account's AWS Management Console and login. Then access the RDS Console.
+Locate security groups under the RDS Dashboard. <strong>Note</strong>: If you receive an error such as: &quot;Your account does not support the EC2-Classic Platform in this region&quot; then you must setup a VPC security group.</p>
 </li>
 <li>
 <p><strong>DB Security Group.</strong> Create a DB security group, and type in a name and description for the group. By default there is no access granted to this DB security group. Now you must specify IP addresses or an Amazon EC2 security group in the next step.</p>
@@ -47,13 +46,4 @@ Locate security groups under the RDS Dashboard. <strong>Note</strong>: If you re
 <li><code>rds-create-db-security-group</code> to create DB security group</li>
 <li>API call:</li>
 <li><code>CreateDBSecurityGroup</code> to create DB security group</li>
-</ul>
-<p>For other commands and parameters, refer to the Working with DB Security Groups topic in the <a href="http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/" title="Amazon RDS User Guide">Amazon Relational Database Service User Guide</a>.</p>
-<p>##Additional Resources##</p>
-<ul>
-<li><a href="http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/" title="Amazon Elastic Compute Cloud User Guide for Linux">Amazon Elastic Compute Cloud User Guide for Linux</a></li>
-<li><a href="http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/" title="Amazon RDS User Guide">Amazon Relational Database Service User Guide</a></li>
-<li><a href="http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/" title="Amazon VPC Cloud User Guide">Amazon Virtual Private Cloud User Guide</a></li>
-<li><a href="http://aws.amazon.com/security/" title="AWS Security Best Practices">AWS Security Best Practices</a></li>
-<li><a href="http://link.to" title="PCI DSS Requirements and Security Assessment Procedures">Payment Card Industry (PCI) Data Security Standard (DSS) -  Requirements and Security Assessment Procedures</a></li>
 </ul>

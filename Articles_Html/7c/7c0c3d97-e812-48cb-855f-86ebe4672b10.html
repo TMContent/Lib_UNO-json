@@ -18,7 +18,6 @@
 <li>Unintended deletion</li>
 <li>Availability of infrastructure hardware and software.</li>
 </ul>
-<p>These concerns are addressed by your encryption methods which satisfy the requirement for protection of cardholder data (PCI-DSS Requirement 3).</p>
 <p>##When##</p>
 <p>When encryption is available at the file, partition, volume, or application-level, you should use it. Some data may not be confidential, but it is simpler to enable encryption for an entire bucket or volume, for example, in order to eliminate the possibility that an intruder could use any data in your cloud.</p>
 <p>Backup and replication approaches must also use encryption, or respect the encryption method already in use.</p>
@@ -35,7 +34,7 @@
 <p><strong>Protect data at rest on S3.</strong> Use permissions at the bucket or object level in combination with IAM policies. This will secure your S3 resources against unauthorized access, deletion, and disclosure.</p>
 </li>
 <li>
-<p><strong>Protect data at rest on EBS.</strong> Use Elastic Block Store (EBS) encryption on non-boot volumes. For boot volumes you will use an encryption method supported by the operating system (OS). For example, in Windows this might be Encrypted File System (EFS) or BitLocker.</p>
+<p><strong>Protect data at rest on EBS.</strong> Use Elastic Block Store (EBS) encryption on non-boot volumes. For boot volumes you will use an encryption method supported by the operating system (OS).</p>
 </li>
 <li>
 <p><strong>Protect data at rest on RDS.</strong> Relational Database Service (RDS) offers platform-level protection for MySQL, Oracle, and MS SQL. You can add more protection at the application layer by using a built-in encryption function. Your application can manage keys with PKI or other asymmetric technique.</p>
@@ -44,17 +43,9 @@
 <p><strong>Protect data at rest on Glacier.</strong> Your data is always protected by server-side encryption. For an additional layer of security you can also encrypt your data before uploading to Glacier.</p>
 </li>
 <li>
-<p><strong>Protecting data at rest on DynamoDB.</strong> You will need to implement a data encryption layer over the standard service. This can be done at the application layer. For more information about NoSQL development, see http://aws.amazon.com/dynamodb/.</p>
+<p><strong>Protecting data at rest on DynamoDB.</strong> You will need to implement a data encryption layer over the standard service. This can be done at the application layer.</p>
 </li>
 <li>
-<p><strong>Protecting data at rest on EMR.</strong> Elastic MapReduce (EMR) uses Amazon Machine Images (AMI) to create instances, which by default do not encrypt data at rest. For more information about S3 server-side and client-side encryption, see http://docs.aws.amazon.com/AmazonS3/latest/dev/.</p>
+<p><strong>Protecting data at rest on EMR.</strong> Elastic MapReduce (EMR) uses Amazon Machine Images (AMI) to create instances, which by default do not encrypt data at rest.</p>
 </li>
 </ol>
-<p>##Additional Resources##</p>
-<ul>
-<li><a href="http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/" title="Amazon RDS User Guide">Amazon Relational Database Service User Guide</a></li>
-<li><a href="http://docs.aws.amazon.com/AmazonS3/latest/dev/" title="Amazon Simple Storage Service: Developer Guide">Amazon Simple Storage Service Developer Guide</a></li>
-<li><a href="http://aws.amazon.com/security/" title="AWS Security Best Practices">AWS Security Best Practices</a></li>
-<li><a href="http://aws.amazon.com/whitepapers/encrypting-data-at-rest/" title="Encrypting Data at Rest">Encrypting Data at Rest</a></li>
-<li><a href="https://www.pcisecuritystandards.org/documents/PCI_DSS_v3.pdf" title="PCI DSS Requirements and Security Assessment Procedures">Payment Card Industry (PCI) Data Security Standard (DSS) - Requirements and Security Assessment Procedures</a></li>
-</ul>

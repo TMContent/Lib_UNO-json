@@ -12,7 +12,6 @@
 <li>Recovery from a system breach can be rapid.</li>
 <li>Alternate configurations can be tested and deployed.</li>
 </ul>
-<p>Backup methods and data integrity are required by certification authorities such as PCI-DSS (Payment Card Industry Data Security Standard (Requirements 9.5 and 12.10) to secure your media and respond to security incidents.</p>
 <p>##When##</p>
 <p>Backup requirements and intervals are specified in your information management plan. Best practices recommend that you make backups according to your lifecycle needs, during:</p>
 <ol>
@@ -39,56 +38,28 @@
 </li>
 </ol>
 <ul>
-<li>
-<p><code>create-snapshot</code> (in AWS CLI)</p>
-</li>
-<li>
-<p><code>ec2-create-snapshot</code> (in Amazon EC2 CLI)</p>
-</li>
-<li>
-<p><code>New-EC2Snapshot</code> (in AWS Tools for Windows PowerShell).</p>
-<p>Refer to the section &quot;Accessing Amazon EC2&quot; in the <a href="http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/" title="Amazon Elastic Compute Cloud User Guide for Linux">Amazon Elastic Compute Cloud User Guide for Linux</a> for further help.</p>
-</li>
+<li><code>create-snapshot</code> (in AWS CLI)</li>
+<li><code>ec2-create-snapshot</code> (in Amazon EC2 CLI)</li>
+<li><code>New-EC2Snapshot</code> (in AWS Tools for Windows PowerShell).</li>
 </ul>
 <ol start="3">
 <li>
-<p><strong>Encryption.</strong> When you take a shapshot of an encrypted volume, the content is automatically encrypted. Note the option to encrypt snapshots Snapshots that are taken of encrypted volumes are automatically encrypted. Other instance type may support encryption as discussed in the &quot;Amazon EBS Encryption&quot; topic in the <a href="http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/" title="Amazon Elastic Compute Cloud User Guide for Linux">Amazon Elastic Compute Cloud User Guide for Linux</a>.</p>
+<p><strong>Encryption.</strong> When you take a shapshot of an encrypted volume, the content is automatically encrypted. Note the option to encrypt snapshots Snapshots that are taken of encrypted volumes are automatically encrypted.</p>
 </li>
 <li>
 <p><strong>Copy Snapshot.</strong>  To copy a snapshot using the EC2 console, open the EC2 console and select the snapshot to copy. Be sure to update the destination region and description. The description is very important to help you identify your snapshots from the original. Progress of the copying process can be viewed at the snapshots page in the region specified. In-progress snapshots appear at the top of your list for a particular region. To make snapshots with a CLI:</p>
 </li>
 </ol>
 <ul>
-<li>
-<p><code>copy-snapshot</code> (AWS CLI)</p>
-</li>
-<li>
-<p><code>ec2-copy-snapshot</code> (Amazon EC2 CLI)</p>
-</li>
-<li>
-<p><code>Copy-EC2Snapshot</code> (in AWS Tools for Windows PowerShell).</p>
-<p>Refer to the section &quot;Accessing Amazon EC2&quot; in the <a href="http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/" title="Amazon Elastic Compute Cloud User Guide for Linux">Amazon Elastic Compute Cloud User Guide for Linux</a> for further help with command switches and options.</p>
-</li>
+<li><code>copy-snapshot</code> (AWS CLI)</li>
+<li><code>ec2-copy-snapshot</code> (Amazon EC2 CLI)</li>
+<li><code>Copy-EC2Snapshot</code> (in AWS Tools for Windows PowerShell).</li>
 </ul>
 <ol start="5">
 <li><strong>View Snapshot Information.</strong> Open snapshots from the navigation pane in the EC2 console and select a snapshot. A filter list is available to reduce the length of the list if necessary. Select the snapshot of interest, and the information associated with it is displayed. Information can also be displayed by issuing CLI commands:o view snapshot information using the command line:</li>
 </ol>
 <ul>
-<li>
-<p><code>describe-snapshots</code> (AWS CLI)</p>
-</li>
-<li>
-<p><code>ec2-describe-snapshots</code> (Amazon EC2 CLI)</p>
-</li>
-<li>
-<p><code>Get-EC2Snapshot</code> (AWS Tools for Windows PowerShell)</p>
-<p>For more information about command switches and options, read the &quot;Accessing Amazon EC2&quot; topic in the <a href="http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/" title="Amazon Elastic Compute Cloud User Guide for Linux">Amazon Elastic Compute Cloud User Guide for Linux</a>.</p>
-</li>
-</ul>
-<p>##Additional Resources##</p>
-<ul>
-<li><a href="http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/" title="Amazon Elastic Compute Cloud User Guide for Linux">Amazon Elastic Compute Cloud User Guide for Linux</a></li>
-<li><a href="http://aws.amazon.com/security/" title="AWS Security Best Practices">AWS Security Best Practices</a></li>
-<li><a href="http://aws.amazon.com/whitepapers/backup-and-recovery-using-aws/" title="Backup and Recovery Approaches Using Amazon Web Services">Backup and Recovery Approaches Using Amazon Web Services</a></li>
-<li><a href="http://link.to" title="PCI DSS Requirements and Security Assessment Procedures">Payment Card Industry (PCI) Data Security Standard (DSS) -  Requirements and Security Assessment Procedures</a></li>
+<li><code>describe-snapshots</code> (AWS CLI)</li>
+<li><code>ec2-describe-snapshots</code> (Amazon EC2 CLI)</li>
+<li><code>Get-EC2Snapshot</code> (AWS Tools for Windows PowerShell)</li>
 </ul>

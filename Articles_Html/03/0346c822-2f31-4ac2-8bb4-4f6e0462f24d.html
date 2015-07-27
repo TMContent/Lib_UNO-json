@@ -7,23 +7,22 @@
 <p>##Why##</p>
 <p>By identifying application security risks, you gather details about the impact to an organization when a threat scenario is realized. If the risks are not enumerated and measured, there is great difficulty in having sufficient resources ready for an incident response.</p>
 <p>When risks are listed in your security framework, it is clear how immediate your response needs to be when attackers overcome established controls.</p>
-<p>NIST SP800-137 requires risk assessment (RA-03) and categorization of risk (RA-02). It is also important to measure the magnitude of harm that might result from unauthorized access of an organization's resources.</p>
 <p>##When##</p>
 <p>When running an application in the cloud, you are required to secure the application. A variety of infrastructure safeguards are provided by AWS. You must always provide additional protection, especially when your application works with sensitive information. Identifying application security risk helps guide the assignment of resources and the actions of your incident response team.</p>
 <p>##How##</p>
 <p>The following activity provides a suggested method for identifying and assessing risks for a cloud application. The goal is to maintain a secure posture by allocating resources for the protection of your cloud assets. The products include a security frame with categories, vulnerabilities, controls and risks laid out for further analysis.</p>
 <ol>
 <li>
-<p><strong>Choose a security framework.</strong> Select a security framework so that you can organize the application's vulnerabilities and threats. If you do not already have a security framework, see https://msdn.microsoft.com/en-us/library/ff649461.aspx.</p>
+<p><strong>Choose a security framework.</strong> Select a security framework so that you can organize the application's vulnerabilities and threats.</p>
 </li>
 <li>
 <p><strong>Decide on classification categories.</strong> Select common categories (input and data validation, sensitive data, and cryptography, for example) to help segment vulnerabilities into areas of concern.</p>
 </li>
 <li>
-<p><strong>Examine vulnerabilities.</strong> In your security frame add vulnerabilities to each category. For example, the cryptography category has vulnerability to failure to secure keys, as well as insecure distribution of keys. For more information on identifying vulnerabilities, see https://nvd.nist.gov/.</p>
+<p><strong>Examine vulnerabilities.</strong> In your security frame add vulnerabilities to each category. For example, the cryptography category has vulnerability to failure to secure keys, as well as insecure distribution of keys.</p>
 </li>
 <li>
-<p><strong>Use a threat model.</strong>  Use a threat risk modeling tool or method to survey the web application, decompose it, and identify vulnerabilities and threats. This will minimize the use of resources, and provide an efficient method to be used for identifying attack vectors. For more information about threat risk modeling, see https://www.owasp.org.</p>
+<p><strong>Use a threat model.</strong>  Use a threat risk modeling tool or method to survey the web application, decompose it, and identify vulnerabilities and threats. This will minimize the use of resources, and provide an efficient method to be used for identifying attack vectors.</p>
 </li>
 <li>
 <p><strong>Identify attack vectors.</strong> Use the results of threat modeling to identify specific attack vectors for the application. Attack vectors may be associated with multiple threats. Once identified and integrated with your security frame, you can examine the controls and incidence response items which apply.</p>
@@ -35,17 +34,6 @@
 <p><strong>Rate each scenario.</strong> Assign an impact rating to each scenario. For example, use values such as: none (0); low (1); medium (3); or high (4).</p>
 </li>
 <li>
-<p><strong>Identify risks.</strong> Each risk consists of an impact statement, and a probability, which is calculated from the threat outcome and the consequence. The impact statement names the resources that will become unavailable or lost as the scenario plays out if unchecked. For more information about identifying and assessing risks, see http://resources.sei.cmu.edu/.</p>
+<p><strong>Identify risks.</strong> Each risk consists of an impact statement, and a probability, which is calculated from the threat outcome and the consequence. The impact statement names the resources that will become unavailable or lost as the scenario plays out if unchecked.</p>
 </li>
 </ol>
-<p>##Additional Resources##</p>
-<ul>
-<li><a href="http://aws.amazon.com/compliance/aws-whitepapers/" title="Amazon Web Services: Overview of Security Processes">Amazon Web Services: Overview of Security Processes</a></li>
-<li><a href="http://aws.amazon.com/security/" title="AWS Security Best Practices">AWS Security Best Practices</a></li>
-<li><a href="http://resources.sei.cmu.edu/" title="OCTAVE Allegro">Introducing OCTAVE Allegro: Improving the Information Security Risk Assessment Process</a></li>
-<li><a href="https://nvd.nist.gov/" title="NIST National Vulnerability Database">NIST National Vulnerability Database</a></li>
-<li><a href="http://csrc.nist.gov/publications/PubsSPs.html" title="NIST SP 800-53 Security and Privacy Controls for Federal Information Systems and Organizations">NIST SP 800-53 Security and Privacy Controls for Federal Information Systems and Organizations</a></li>
-<li><a href="http://www.enisa.europa.eu/" title="Guide to Monitoring of Security Service Levels">Procure Secure: A Guide to Monitoring of Security Service Levels in Cloud Contracts</a></li>
-<li><a href="https://www.owasp.org/" title="Threat Risk Modeling">Threat Risk Modeling</a></li>
-<li><a href="https://msdn.microsoft.com/en-us/library/ff649461.aspx" title="Web Application Security Frame Cheat Sheet">Web Application Security Frame Cheat Sheet</a></li>
-</ul>
