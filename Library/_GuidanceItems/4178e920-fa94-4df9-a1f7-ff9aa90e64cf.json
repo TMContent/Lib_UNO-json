@@ -51,10 +51,10 @@
       {
         "$": {
           "Sanitized": "true",
-          "DataType": "Html"
+          "DataType": "html"
         },
         "Data": [
-          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 1.3</li>\r\n    <li>PCI DSS Requirement 1.3.1</li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Designate at least one DMZ. A DMZ is a network segment that contains machines that may handle incoming Internet traffic. There may be more than one DMZ.</p>\r\n  <h1>Why</h1>\r\n  <p>The DMZ is a defense-in-depth measure used to separate systems that are open to attacks from those that hold sensitive information. When a DMZ is implemented, even if the systems in the DMZ are compromised, the attacker does not have full access to the sensitive\r\n information.</p>\r\n  <h1>How</h1>\r\n  <p>Designate a network segment as the DMZ. Install and configure a firewall between the DMZ and the Internet. Install and configure a firewall between the DMZ and the internal network segment. Document the network. For more information about setting up a DMZ,\r\n please refer to the article, “Configure the Routers for PCI DSS Compliance\".</p>"
+          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 1.3</li>\r\n    <li>PCI DSS Requirement 1.3.1</li>\r\n    <li>PCI DSS Requirement 1.3.2</li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Designate at least one DMZ. A DMZ is a network segment that contains machines that may handle incoming Internet traffic. There may be more than one DMZ.</p>\r\n  <h1>Why</h1>\r\n  <p>The DMZ is a defense-in-depth measure used to separate systems that are open to attacks from those that hold sensitive information. When a DMZ is implemented, even if the systems in the DMZ are compromised, the attacker does not have full access to the sensitive\r\n information.</p>\r\n  <h1>How</h1>\r\n  <p>Designate a network segment as the DMZ. Install and configure a firewall between the DMZ and the Internet. Install and configure a firewall between the DMZ and the internal network segment. Document the network. For more information about setting up a DMZ,\r\n please refer to the article, “Configure the Routers for PCI DSS Compliance\".</p>"
         ]
       }
     ]

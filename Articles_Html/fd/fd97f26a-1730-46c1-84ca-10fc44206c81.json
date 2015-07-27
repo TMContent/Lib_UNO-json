@@ -1,6 +1,6 @@
 {
   "id": "fd97f26a-1730-46c1-84ca-10fc44206c81",
-  "checksum": "05a7133dee515ff3316bd80571606a84",
+  "checksum": "907b19ed9a5fa8c73f17f11bcc0c0d93",
   "words": {
     "what": [
       "h1"
@@ -689,7 +689,7 @@
       "li",
       "li"
     ],
-    "that&nbspsecurity": [
+    "that security": [
       "p"
     ],
     "checks": [
@@ -1217,7 +1217,7 @@
     "task": [
       "p"
     ],
-    "and&nbspprovides": [
+    "and provides": [
       "p"
     ],
     "more": [
@@ -1225,7 +1225,7 @@
       "ul",
       "li"
     ],
-    "robust&nbspmeans": [
+    "robust means": [
       "p"
     ],
     "managing": [
@@ -2001,7 +2001,7 @@
       "li",
       "p"
     ],
-    "roles&nbsp;ensure": [
+    "roles ensure": [
       "ol",
       "li",
       "p"
@@ -2388,10 +2388,16 @@
     ],
     "report": [
       "ol",
+      "ol",
+      "li",
       "li",
       "ul",
+      "ul",
       "li",
-      "p"
+      "li",
+      "p",
+      "blockquote",
+      "pre"
     ],
     "public": [
       "ol",
@@ -2433,7 +2439,7 @@
       "blockquote",
       "pre"
     ],
-    "enddate&#123;&nbsp;&nbsp;&nbsp;": [
+    "enddate{": [
       "ol",
       "li",
       "ul",
@@ -2441,7 +2447,7 @@
       "blockquote",
       "pre"
     ],
-    "httpcontext.current.user.isinrole(\"shareholders\"))&nbsp;&nbsp;&nbsp;": [
+    "httpcontext.current.user.isinrole(\"shareholders\"))": [
       "ol",
       "li",
       "ul",
@@ -2449,7 +2455,7 @@
       "blockquote",
       "pre"
     ],
-    "&#123&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "{": [
       "ol",
       "li",
       "ul",
@@ -2481,15 +2487,7 @@
       "blockquote",
       "pre"
     ],
-    "report&nbsp&nbsp;&nbsp;": [
-      "ol",
-      "li",
-      "ul",
-      "li",
-      "blockquote",
-      "pre"
-    ],
-    "&#125&#125;": [
+    "}}": [
       "ol",
       "li",
       "ul",
@@ -2827,7 +2825,7 @@
       "ul",
       "li"
     ],
-    "example<configuration>&nbsp;": [
+    "example<configuration>": [
       "ol",
       "li",
       "ul",
@@ -2836,7 +2834,7 @@
       "ul",
       "li"
     ],
-    "system.web>&nbsp;&nbsp;&nbsp;": [
+    "system.web>": [
       "ol",
       "ol",
       "li",
@@ -2849,7 +2847,7 @@
       "li",
       "pre"
     ],
-    "enabled=\"true\"&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "enabled=\"true\"": [
       "ol",
       "li",
       "ul",
@@ -2859,7 +2857,7 @@
       "li",
       "pre"
     ],
-    "cacherolesincookie=\"false\"&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "cacherolesincookie=\"false\"": [
       "ol",
       "li",
       "ul",
@@ -2869,7 +2867,7 @@
       "li",
       "pre"
     ],
-    "defaultprovider=\"projectroleprovider\"&nbsp;&nbsp;&nbsp;": [
+    "defaultprovider=\"projectroleprovider\"": [
       "ol",
       "li",
       "ul",
@@ -2879,7 +2877,7 @@
       "li",
       "pre"
     ],
-    "providers>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "providers>": [
       "ol",
       "li",
       "ul",
@@ -2889,25 +2887,48 @@
       "li",
       "pre"
     ],
-    "/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "/": [
+      "ol",
+      "ol",
+      "ol",
       "ol",
       "ol",
       "ol",
       "li",
       "li",
+      "li",
+      "li",
       "ul",
       "ul",
+      "ul",
+      "ul",
+      "li",
+      "li",
       "li",
       "li",
       "p",
       "p",
+      "p",
+      "p",
       "ul",
       "ul",
+      "ul",
+      "ul",
+      "li",
+      "li",
       "li",
       "li",
       "pre",
       "pre",
+      "pre",
+      "pre",
       "li",
+      "li",
+      "li",
+      "pre",
+      "pre",
+      "pre",
+      "p",
       "pre"
     ],
     "add": [
@@ -2920,7 +2941,7 @@
       "li",
       "pre"
     ],
-    "name=\"projectroleprovider\"&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "name=\"projectroleprovider\"": [
       "ol",
       "li",
       "ul",
@@ -2930,7 +2951,7 @@
       "li",
       "pre"
     ],
-    "type=\"systemweb.security.sqlroleprovider\"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "type=\"systemweb.security.sqlroleprovider\"": [
       "ol",
       "li",
       "ul",
@@ -2940,7 +2961,7 @@
       "li",
       "pre"
     ],
-    "connectionstringname=\"projectconnection\"&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "connectionstringname=\"projectconnection\"": [
       "ol",
       "li",
       "ul",
@@ -2960,7 +2981,8 @@
       "li",
       "pre"
     ],
-    "authorization>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "authorization>": [
+      "ol",
       "ol",
       "li",
       "ul",
@@ -2968,6 +2990,10 @@
       "p",
       "ul",
       "li",
+      "pre",
+      "li",
+      "pre",
+      "p",
       "pre"
     ],
     "roles=\"employees": [
@@ -2990,17 +3016,7 @@
       "li",
       "pre"
     ],
-    "/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
-      "ol",
-      "li",
-      "ul",
-      "li",
-      "p",
-      "ul",
-      "li",
-      "pre"
-    ],
-    "users=\"&#42\"": [
+    "users=\"*\"": [
       "ol",
       "ol",
       "li",
@@ -3093,21 +3109,11 @@
       "li",
       "p"
     ],
-    "properlyexample:<configuration>&nbsp;": [
+    "properlyexample:<configuration>": [
       "ol",
       "li"
     ],
     "mode=\"windows\"": [
-      "ol",
-      "li",
-      "pre"
-    ],
-    "/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
-      "ol",
-      "li",
-      "pre"
-    ],
-    "authorization>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
       "ol",
       "li",
       "pre"
@@ -3120,20 +3126,6 @@
     "ntdomain\\managers\"": [
       "ol",
       "li",
-      "pre"
-    ],
-    "/": [
-      "ol",
-      "li",
-      "ul",
-      "li",
-      "p",
-      "ul",
-      "li",
-      "pre",
-      "li",
-      "pre",
-      "p",
       "pre"
     ],
     "assigned": [
@@ -3168,7 +3160,7 @@
       "li",
       "p"
     ],
-    "users&nbsp;check": [
+    "users check": [
       "ol",
       "li",
       "p"
@@ -3591,7 +3583,7 @@
       "ol",
       "li"
     ],
-    "configuration>&nbsp;": [
+    "configuration>": [
       "pre",
       "pre"
     ],
@@ -3631,13 +3623,13 @@
     "separate": [
       "p"
     ],
-    "user&nbsp;this": [
+    "user this": [
       "p"
     ],
     "will": [
       "p"
     ],
-    "make&nbspmanaging": [
+    "make managing": [
       "p"
     ],
     "users'": [
@@ -3657,10 +3649,6 @@
     ],
     "grows": [
       "p"
-    ],
-    "authorization>": [
-      "p",
-      "pre"
     ],
     "users=\"ntdomain\\joe": [
       "p",

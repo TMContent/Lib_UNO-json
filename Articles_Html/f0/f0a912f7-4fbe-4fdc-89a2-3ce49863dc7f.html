@@ -1,0 +1,28 @@
+<p>##Applies To##</p>
+<ul>
+<li>Amazon Web Services (AWS)</li>
+</ul>
+<p>##What to Do##</p>
+<p>Protect cloud log files by limiting read access, requiring HTTPS of clients when moving log data, and using conditions to restrict client IP addresses to specific CIDR blocks.</p>
+<p>##Why##</p>
+<p>Log files contain sensitive information about client access to resources in your cloud. This data includes the request type, the requested resource, the requestor’s IP, and the time and date of the request. When bucket logging is enabled, the records are aggregated into log files and delivered to a specified bucket.</p>
+<p>If log files can be accessed, then you are not complying with basic standards that require protection of client or cardholder data.</p>
+<p>##When##</p>
+<p>When Amazon S3 creates a bucket or object at your request, and you set up logging, you specify a logfile name and prefix. These files are saved to a bucket you specify. By default you are the grantee and full owner. When needed, permissions on this bucket must be changed to allow other users access to any log files stored there.</p>
+<p>##How##</p>
+<p>To protect log files, a best practice is to create and use a policy on the log bucket. This method is more efficient than configuring ACLs, permissions and access groups for the bucket.</p>
+<p>This is a summary of steps needed to create and use a policy. The specific policy elements to protect your log files would be prepared similarly.</p>
+<ol>
+<li>
+<p><strong>Locate Your AWS Account ID.</strong> Sign in to AWS Management Console and access Support Center. In the title bar you can find the 12-digit account ID.</p>
+</li>
+<li>
+<p><strong>Create the Policy.</strong> Open the IAM console and navigate to Policies &gt; Create Policy. Enter policy name. Paste your prepared policy in the document field. Be sure to use your 12-digit AWS account ID in the policy. See the Overview of Policies section in the AWS IAM documentation for examples and formatting requirements.</p>
+</li>
+<li>
+<p><strong>Validate Policy</strong> Make sure that no errors are displayed when validating the policy. Note there is a Use auto formatting option. When there are no errors, you can create the policy.</p>
+</li>
+<li>
+<p><strong>Attach Policy</strong> The policy needs attachment to IAM users. Navigate to Policies and locate your custom policy. Scroll to the Attached Entities and <strong>Attach</strong>. Use the filter menu to find all user types, and select the users to attach the custom policy to.</p>
+</li>
+</ol>

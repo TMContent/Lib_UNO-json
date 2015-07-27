@@ -1,6 +1,6 @@
 {
   "id": "353bbdfb-3d1e-494f-978c-e581f128ed4a",
-  "checksum": "0873d09dbe3cd04b8f0d07c89ed8d5c0",
+  "checksum": "17c1ee96071198d2e7b4184b624878ec",
   "words": {
     "applies": [
       "h1"
@@ -891,7 +891,7 @@
     ],
     "http//www.onlinebank.com/redirectpage?url=[destination]": [
       "p",
-      "a"
+      "pre"
     ],
     "phisher": [
       "p",
@@ -942,8 +942,9 @@
     ],
     "http//www.onlinebank.com/redirectpage?url=www.phisher.com": [
       "p",
-      "a",
-      "a"
+      "pre",
+      "p",
+      "pre"
     ],
     "sees": [
       "p",
@@ -1170,7 +1171,7 @@
     ],
     "http//www.onlinebank.com/redirectpage?map=page1": [
       "p",
-      "a"
+      "pre"
     ],
     "will": [
       "p",
@@ -1197,12 +1198,6 @@
     ],
     "defined": [
       "p"
-    ],
-    "http//www.onlinebank.com/redirectpage?url=www.phisher.com http://www.onlinebank.com/redirectpage?map=www.phisher.com": [
-      "p"
-    ],
-    "http//www.onlinebank.com/redirectpage?map=www.phisher.com": [
-      "a"
     ],
     "additional": [
       "h1"
@@ -1239,26 +1234,6 @@
   },
   "tags": {},
   "links": [
-    {
-      "href": "http://www.onlinebank.com/redirectpage?url=[destination]",
-      "text": "http://www.onlinebank.com/redirectpage?url=[destination]"
-    },
-    {
-      "href": "http://www.onlinebank.com/redirectpage?url=www.phisher.com",
-      "text": "http://www.onlinebank.com/redirectpage?url=www.phisher.com"
-    },
-    {
-      "href": "http://www.onlinebank.com/redirectpage?map=page1",
-      "text": "http://www.onlinebank.com/redirectpage?map=page1"
-    },
-    {
-      "href": "http://www.onlinebank.com/redirectpage?url=www.phisher.com",
-      "text": "http://www.onlinebank.com/redirectpage?url=www.phisher.com"
-    },
-    {
-      "href": "http://www.onlinebank.com/redirectpage?map=www.phisher.com",
-      "text": "http://www.onlinebank.com/redirectpage?map=www.phisher.com"
-    },
     {
       "href": "http://www.owasp.org/index.php/Top_10_2010-A10-Unvalidated_Redirects_and_Forwards",
       "text": "http://www.owasp.org/index.php/Top_10_2010-A10-Unvalidated_Redirects_and_Forwards"

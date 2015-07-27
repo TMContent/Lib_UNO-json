@@ -1,6 +1,6 @@
 {
   "id": "09de683c-a05e-49c9-865f-764f120e3972",
-  "checksum": "25534a37fc9c36b6eae5b91861c8143b",
+  "checksum": "54f96d8999c6395c6542d0a5b1320c2b",
   "words": {
     "applies": [
       "h1"
@@ -246,6 +246,7 @@
     ],
     "security": [
       "p",
+      "pre",
       "ul",
       "li",
       "ul",
@@ -529,7 +530,7 @@
       "li",
       "pre"
     ],
-    "storedproceduredbquery)&#123;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "storedproceduredbquery){": [
       "pre"
     ],
     "//": [
@@ -585,13 +586,11 @@
       "pre",
       "pre",
       "pre",
+      "pre",
       "pre"
     ],
     "integrated": [
       "pre",
-      "pre"
-    ],
-    "security&nbsp&nbsp;&nbsp;&nbsp;&nbsp;": [
       "pre"
     ],
     "string": [
@@ -625,7 +624,8 @@
       "pre",
       "pre"
     ],
-    "source=vm-win2003&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "source=vm-win2003": [
+      "pre",
       "pre"
     ],
     "\\\\sqlexpressintegrated": [
@@ -634,7 +634,7 @@
       "pre",
       "a"
     ],
-    "security=sspi\";&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "security=sspi\";": [
       "pre"
     ],
     "sqlconnection": [
@@ -645,12 +645,6 @@
       "pre"
     ],
     "sqlconnectionconnectionstring);": [
-      "pre"
-    ],
-    "&nbsp&nbsp;&nbsp;&nbsp;&nbsp;": [
-      "pre",
-      "pre",
-      "pre",
       "pre"
     ],
     "command": [
@@ -678,7 +672,13 @@
       "li",
       "p"
     ],
-    "procedure&nbsp&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "procedure": [
+      "pre",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
       "pre"
     ],
     "sqlcommand": [
@@ -715,7 +715,11 @@
       "li",
       "li"
     ],
-    "reader&nbsp&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "reader": [
+      "pre",
+      "pre",
+      "pre",
+      "pre",
       "pre"
     ],
     "cnopen();": [
@@ -724,19 +728,14 @@
     "sqldatareader": [
       "pre"
     ],
-    "reader": [
-      "pre",
-      "pre",
-      "pre",
-      "pre"
-    ],
-    "sqlcommandexecutereader();&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "sqlcommandexecutereader();": [
       "pre"
     ],
     "while": [
       "pre"
     ],
-    "reader.read())&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "reader.read())": [
+      "pre",
       "pre"
     ],
     "consolewriteline(\"result:": [
@@ -749,7 +748,7 @@
       "pre",
       "pre"
     ],
-    "&#43": [
+    "+": [
       "pre",
       "pre",
       "pre",
@@ -770,16 +769,13 @@
       "pre",
       "pre"
     ],
-    "connection&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
-      "pre"
-    ],
-    "readerclose();&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "readerclose();": [
       "pre"
     ],
     "cnclose();": [
       "pre"
     ],
-    "&#125": [
+    "}": [
       "pre"
     ],
     "problem": [
@@ -816,13 +812,10 @@
       "ul",
       "li"
     ],
-    "request&#91\"first_name\"&#93;;//": [
+    "request\"first_name\"];//": [
       "pre"
     ],
     "securitystring": [
-      "pre"
-    ],
-    "source=vm-win2003&#9&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
       "pre"
     ],
     "security=sspi\";sqlconnection": [
@@ -889,9 +882,6 @@
       "pre"
     ],
     "sqlcommandexecutereader();while": [
-      "pre"
-    ],
-    "reader.read())&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
       "pre"
     ],
     "readergetstring(0)": [
@@ -1180,17 +1170,17 @@
       "li",
       "p"
     ],
-    "&#91dbo&#93;.&#91;people&#93;(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "dbo].[people](": [
       "ol",
       "li",
       "pre"
     ],
-    "&#91first&#93;": [
+    "first]": [
       "ol",
       "li",
       "pre"
     ],
-    "&#91varchar&#93;(50)": [
+    "varchar](50)": [
       "ol",
       "ol",
       "li",
@@ -1226,53 +1216,43 @@
       "pre",
       "pre"
     ],
-    "null&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
-      "ol",
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "li",
-      "pre",
-      "pre",
-      "pre"
-    ],
-    "&#91last&#93;": [
-      "ol",
-      "li",
-      "pre"
-    ],
-    "&#91email&#93;": [
-      "ol",
-      "li",
-      "pre"
-    ],
-    "&#91varchar&#93;(max)": [
-      "ol",
-      "li",
-      "pre"
-    ],
-    "&#91phone&#93;": [
-      "ol",
-      "li",
-      "pre"
-    ],
-    "&#91nchar&#93;(15)": [
-      "ol",
-      "li",
-      "pre"
-    ],
     "null": [
       "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "li",
+      "li",
+      "pre",
+      "pre",
+      "pre",
+      "pre"
+    ],
+    "last]": [
+      "ol",
       "li",
       "pre"
     ],
-    "procedure": [
-      "ol",
+    "email]": [
       "ol",
       "li",
+      "pre"
+    ],
+    "varchar](max)": [
+      "ol",
       "li",
-      "p",
+      "pre"
+    ],
+    "phone]": [
+      "ol",
+      "li",
+      "pre"
+    ],
+    "nchar](15)": [
+      "ol",
+      "li",
       "pre"
     ],
     "names": [
@@ -1315,17 +1295,17 @@
       "li",
       "pre"
     ],
-    "mainstring&#91;&#93;": [
+    "mainstring[]": [
       "ol",
       "li",
       "pre"
     ],
-    "args&#123;": [
+    "args{": [
       "ol",
       "li",
       "pre"
     ],
-    "storedproceduredbquery);&#125;": [
+    "storedproceduredbquery);}": [
       "ol",
       "li",
       "pre"

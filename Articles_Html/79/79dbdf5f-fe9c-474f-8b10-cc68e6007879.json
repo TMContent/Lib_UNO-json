@@ -1,6 +1,6 @@
 {
   "id": "79dbdf5f-fe9c-474f-8b10-cc68e6007879",
-  "checksum": "c029a8af5a18ef7c26027838c3008150",
+  "checksum": "1ff2b982aa0698e3cd0dbf9447a4183b",
   "words": {
     "1": [
       "ul",
@@ -1051,11 +1051,15 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "b",
       "li",
       "li",
+      "li",
       "b",
+      "div",
+      "pre",
       "p",
       "b",
       "b",
@@ -1205,10 +1209,10 @@
       "p",
       "title"
     ],
-    "microsoft&#174": [
+    "microsoft®": [
       "p"
     ],
-    "directory&#174": [
+    "directory®": [
       "p"
     ],
     "by": [
@@ -4432,7 +4436,7 @@
       "tr",
       "td"
     ],
-    "aspnet&nbsp;membership": [
+    "aspnet membership": [
       "p"
     ],
     "feature": [
@@ -4825,7 +4829,7 @@
       "ul",
       "li"
     ],
-    "server&#8482": [
+    "server™": [
       "p"
     ],
     "databases": [
@@ -5310,21 +5314,28 @@
       "li",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "div",
       "pre",
       "li",
+      "li",
+      "div",
+      "pre",
       "h2",
       "p",
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "p",
       "p",
-      "b"
+      "b",
+      "div",
+      "pre"
     ],
     "form": [
       "ol",
@@ -6186,7 +6197,7 @@
       "li",
       "p"
     ],
-    "note&nbsp&nbsp;&nbsp;if": [
+    "note   if": [
       "ol",
       "li",
       "blockquote",
@@ -6667,25 +6678,13 @@
       "ol",
       "p"
     ],
-    "mode=\"forms\"&nbsp;": [
+    "mode=\"forms\"": [
       "ol",
       "li",
       "div",
       "pre"
     ],
-    "forms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
-      "ol",
-      "li",
-      "div",
-      "pre"
-    ],
-    "name=\"adauthcookie\"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
-      "ol",
-      "li",
-      "div",
-      "pre"
-    ],
-    "&nbsp&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "name=\"adauthcookie\"": [
       "ol",
       "li",
       "div",
@@ -6771,24 +6770,6 @@
       "div",
       "pre"
     ],
-    "&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
-      "ol",
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "li",
-      "div",
-      "div",
-      "div",
-      "pre",
-      "pre",
-      "pre",
-      "ol",
-      "li",
-      "div",
-      "pre"
-    ],
     "defaulturl=\"defaultaspx\"": [
       "ol",
       "li",
@@ -6819,7 +6800,7 @@
       "div",
       "pre"
     ],
-    "slidingexpiration=\"true\"&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "slidingexpiration=\"true\"": [
       "ol",
       "li",
       "div",
@@ -6837,7 +6818,7 @@
       "div",
       "pre"
     ],
-    "enablecrossappredirects=\"false\"&nbsp;": [
+    "enablecrossappredirects=\"false\"": [
       "ol",
       "li",
       "div",
@@ -6868,49 +6849,6 @@
       "li",
       "p"
     ],
-    "&nbsp": [
-      "ol",
-      "li",
-      "div",
-      "pre",
-      "pre",
-      "pre",
-      "pre",
-      "ol",
-      "ol",
-      "ol",
-      "div",
-      "div",
-      "div",
-      "pre",
-      "pre",
-      "pre",
-      "div",
-      "div",
-      "div",
-      "div",
-      "div",
-      "table",
-      "table",
-      "table",
-      "table",
-      "table",
-      "tbody",
-      "tbody",
-      "tbody",
-      "tbody",
-      "tbody",
-      "tr",
-      "td",
-      "tr",
-      "td",
-      "tr",
-      "td",
-      "tr",
-      "td",
-      "tr",
-      "td"
-    ],
     "deny": [
       "ol",
       "li",
@@ -6923,11 +6861,20 @@
       "div",
       "pre"
     ],
-    "/&nbsp;": [
+    "/": [
       "ol",
       "li",
       "div",
-      "pre"
+      "pre",
+      "ol",
+      "div",
+      "pre",
+      "div",
+      "table",
+      "tbody",
+      "tr",
+      "td",
+      "b"
     ],
     "allow": [
       "ol",
@@ -6940,7 +6887,7 @@
       "tr",
       "td"
     ],
-    "users=\"&#42\"": [
+    "users=\"*\"": [
       "ol",
       "li",
       "div",
@@ -7004,7 +6951,7 @@
       "li",
       "p"
     ],
-    "\"&#42\"": [
+    "\"*\"": [
       "ol",
       "li",
       "p",
@@ -7156,11 +7103,14 @@
       "blockquote",
       "blockquote"
     ],
-    "connectionstrings>&nbsp;": [
+    "connectionstrings>": [
+      "ol",
       "ol",
       "li",
       "div",
-      "pre"
+      "pre",
+      "li",
+      "blockquote"
     ],
     "name=\"adconnectionstring\"": [
       "ol",
@@ -7174,13 +7124,13 @@
       "div",
       "pre"
     ],
-    "/&nbsp;</connectionstrings>": [
+    "/ </connectionstrings>": [
       "ol",
       "li",
       "div",
       "pre"
     ],
-    "note&nbsp&nbsp;&nbsp;the": [
+    "note   the": [
       "ol",
       "li",
       "blockquote",
@@ -7289,27 +7239,26 @@
       "tr",
       "td"
     ],
-    "defaultprovider=\"myadmembershipprovider\"&nbsp;": [
+    "defaultprovider=\"myadmembershipprovider\"": [
       "ol",
       "li",
       "div",
       "pre"
     ],
-    "providers>&nbsp;&nbsp;&nbsp;": [
+    "providers>": [
       "ol",
       "li",
       "div",
-      "pre"
+      "pre",
+      "ol",
+      "li"
     ],
-    "add&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "name=\"myadmembershipprovider\"": [
       "ol",
       "li",
       "div",
-      "pre"
-    ],
-    "name=\"myadmembershipprovider\"&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+      "pre",
       "ol",
-      "li",
       "div",
       "pre"
     ],
@@ -7340,12 +7289,6 @@
       "div",
       "pre"
     ],
-    "&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
-      "ol",
-      "li",
-      "div",
-      "pre"
-    ],
     "culture=neutral": [
       "ol",
       "li",
@@ -7355,15 +7298,21 @@
       "div",
       "pre"
     ],
-    "publickeytoken=b03f5f7f11d50a3a\"&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "publickeytoken=b03f5f7f11d50a3a\"": [
       "ol",
       "li",
       "div",
+      "pre",
+      "ol",
+      "div",
       "pre"
     ],
-    "connectionstringname=\"adconnectionstring\"&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "connectionstringname=\"adconnectionstring\"": [
       "ol",
       "li",
+      "div",
+      "pre",
+      "ol",
       "div",
       "pre"
     ],
@@ -7373,13 +7322,13 @@
       "div",
       "pre"
     ],
-    "connectionpassword=\"password\"/&nbsp;": [
+    "connectionpassword=\"password\"/": [
       "ol",
       "li",
       "div",
       "pre"
     ],
-    "/providers>&nbsp;</membership>": [
+    "/providers> </membership>": [
       "ol",
       "li",
       "div",
@@ -7626,7 +7575,7 @@
       "tr",
       "td"
     ],
-    "note&nbsp&nbsp;&nbsp;in": [
+    "note   in": [
       "ol",
       "li",
       "blockquote"
@@ -7738,11 +7687,6 @@
       "blockquote"
     ],
     "well": [
-      "ol",
-      "li",
-      "blockquote"
-    ],
-    "connectionstrings>": [
       "ol",
       "li",
       "blockquote"
@@ -8040,7 +7984,7 @@
       "div",
       "pre"
     ],
-    "e&#123;&nbsp;": [
+    "e{": [
       "div",
       "pre"
     ],
@@ -8060,8 +8004,9 @@
       "pre",
       "pre"
     ],
-    "&#43": [
+    "+": [
       "div",
+      "pre",
       "pre",
       "pre",
       "pre",
@@ -8085,7 +8030,7 @@
       "pre",
       "pre"
     ],
-    "formsidentity)user.identity;&nbsp;": [
+    "formsidentity)user.identity;": [
       "pre"
     ],
     "formsauthenticationticket": [
@@ -8100,7 +8045,7 @@
     "ticketname": [
       "pre"
     ],
-    ";&nbsp;": [
+    ";": [
       "pre"
     ],
     "responsewrite(\"<br/>cookie": [
@@ -8109,7 +8054,7 @@
     "path": [
       "pre"
     ],
-    "ticketcookiepath);&nbsp;": [
+    "ticketcookiepath);": [
       "pre"
     ],
     "responsewrite(\"<br/>ticket": [
@@ -8121,43 +8066,37 @@
       "li",
       "b"
     ],
-    "&#43&nbsp;": [
-      "pre"
-    ],
-    "&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
-      "pre"
-    ],
-    "ticketexpiration.tostring());&nbsp;": [
+    "ticketexpiration.tostring());": [
       "pre"
     ],
     "responsewrite(\"<br/>expired:": [
       "pre"
     ],
-    "ticketexpired.tostring());&nbsp;": [
+    "ticketexpired.tostring());": [
       "pre"
     ],
     "responsewrite(\"<br/>persistent:": [
       "pre"
     ],
-    "ticketispersistent.tostring());&nbsp;": [
+    "ticketispersistent.tostring());": [
       "pre"
     ],
     "responsewrite(\"<br/>issuedate:": [
       "pre"
     ],
-    "ticketissuedate.tostring());&nbsp;": [
+    "ticketissuedate.tostring());": [
       "pre"
     ],
     "responsewrite(\"<br/>userdata:": [
       "pre"
     ],
-    "ticketuserdata);&nbsp;": [
+    "ticketuserdata);": [
       "pre"
     ],
     "responsewrite(\"<br/>version:": [
       "pre"
     ],
-    "ticketversion.tostring());&#125;": [
+    "ticketversion.tostring());}": [
       "pre"
     ],
     "logging": [
@@ -8309,17 +8248,20 @@
       "div",
       "pre"
     ],
-    "username&#64domainname;": [
+    "username@domainname": [
+      "ol",
+      "li",
+      "p",
+      "b",
+      "blockquote",
+      "i"
+    ],
+    "mary@testdomaincom": [
       "ol",
       "li",
       "p"
     ],
-    "mary&#64testdomain.com": [
-      "ol",
-      "li",
-      "p"
-    ],
-    "steve&#64testdomain.com.": [
+    "steve@testdomaincom.": [
       "ol",
       "li",
       "p"
@@ -8327,6 +8269,9 @@
     "attributemapusername=\"samaccountname\"": [
       "ol",
       "li",
+      "div",
+      "pre",
+      "ol",
       "div",
       "pre"
     ],
@@ -8339,9 +8284,6 @@
       "ol",
       "li",
       "p"
-    ],
-    "username&#64domainname": [
-      "b"
     ],
     "able": [
       "p",
@@ -8648,10 +8590,6 @@
       "li",
       "li",
       "blockquote"
-    ],
-    "username&#64domainname.": [
-      "blockquote",
-      "i"
     ],
     "addition": [
       "p"
@@ -9784,7 +9722,7 @@
       "li",
       "p"
     ],
-    "note&nbsp&nbsp;&nbsp;to": [
+    "note   to": [
       "ol",
       "blockquote"
     ],
@@ -9845,10 +9783,6 @@
       "ol"
     ],
     "add>": [
-      "ol",
-      "li"
-    ],
-    "providers>": [
       "ol",
       "li"
     ],
@@ -10056,7 +9990,7 @@
       "ul",
       "li"
     ],
-    "note&nbsp&nbsp;&nbsp;you": [
+    "note   you": [
       "ol",
       "ol",
       "blockquote",
@@ -10077,62 +10011,32 @@
     "privilegeyour": [
       "ol"
     ],
-    "add&nbsp;": [
-      "ol",
-      "div",
-      "pre"
-    ],
-    "name=\"myadmembershipprovider\"&nbsp": [
-      "ol",
-      "div",
-      "pre"
-    ],
-    "&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
-      "ol",
-      "div",
-      "pre"
-    ],
-    "publickeytoken=b03f5f7f11d50a3a\"&nbsp": [
-      "ol",
-      "div",
-      "pre"
-    ],
-    "connectionstringname=\"adconnectionstring\"&nbsp": [
-      "ol",
-      "div",
-      "pre"
-    ],
     "connectionusername=\"dc\\administrator\"": [
       "ol",
       "div",
       "pre"
     ],
-    "connectionpassword=\"p&#64ssw0rd\"&nbsp;": [
+    "connectionpassword=\"p@ssw0rd\"": [
       "ol",
       "div",
       "pre"
     ],
-    "attributemapusername=\"samaccountname\"&nbsp": [
+    "enablepasswordreset=\"true\"": [
       "ol",
       "div",
       "pre"
     ],
-    "enablepasswordreset=\"true\"&nbsp": [
+    "requiresquestionandanswer=\"true\"": [
       "ol",
       "div",
       "pre"
     ],
-    "requiresquestionandanswer=\"true\"&nbsp": [
+    "attributemappasswordquestion=\"passwordquestion\"": [
       "ol",
       "div",
       "pre"
     ],
-    "attributemappasswordquestion=\"passwordquestion\"&nbsp": [
-      "ol",
-      "div",
-      "pre"
-    ],
-    "attributemappasswordanswer=\"passwordanswer\"&nbsp": [
+    "attributemappasswordanswer=\"passwordanswer\"": [
       "ol",
       "div",
       "pre"
@@ -10142,12 +10046,12 @@
       "div",
       "pre"
     ],
-    "attributemapfailedpasswordanswertime=\"badpasswordanswertime\"&nbsp": [
+    "attributemapfailedpasswordanswertime=\"badpasswordanswertime\"": [
       "ol",
       "div",
       "pre"
     ],
-    "attributemapfailedpasswordanswerlockouttime=&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "attributemapfailedpasswordanswerlockouttime=": [
       "ol",
       "div",
       "pre"
@@ -10163,17 +10067,6 @@
       "div",
       "pre",
       "blockquote",
-      "b"
-    ],
-    "/": [
-      "ol",
-      "div",
-      "pre",
-      "div",
-      "table",
-      "tbody",
-      "tr",
-      "td",
       "b"
     ],
     "optional": [
@@ -10264,7 +10157,7 @@
       "p",
       "blockquote"
     ],
-    "note&nbsp&nbsp;&nbsp;for": [
+    "note   for": [
       "ol",
       "li",
       "blockquote"
@@ -10314,7 +10207,7 @@
       "li",
       "blockquote"
     ],
-    "p&#64ssw0rd": [
+    "p@ssw0rd": [
       "a"
     ],
     "ids": [
@@ -11153,8 +11046,8 @@
       "text": "LDAP://testdomain.test.com/CN=Users,DC=testdomain,DC=test,DC=com"
     },
     {
-      "href": "mailto:P&#64;ssw0rd",
-      "text": "P&#64;ssw0rd"
+      "href": "mailto:P@ssw0rd",
+      "text": "P@ssw0rd"
     }
   ]
 }

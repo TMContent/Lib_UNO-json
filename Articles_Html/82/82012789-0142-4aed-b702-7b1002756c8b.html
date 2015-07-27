@@ -1,0 +1,73 @@
+<p>##What to Check For##</p>
+<p>Verify that the ability to recover AWS accounts is maintained.</p>
+<p>##Why##</p>
+<p>The primary AWS account has root permissions to all resources and services. If the account credentials are not handled in accordance with your security management policy, every object, including users' Identity and Management accounts are jeopardized. Sensitive information would also be at risk. If you use the AWS account rather than an IAM account for daily duties, the security risk level increases. If the root credentials are safely locked up, the risk for lost or stolen account credentials is substantially reduced, if not eliminated.</p>
+<p>ISO27001:2013 requires the protection, management, and restriction of privileged accounts (A.9.2.3 and A.9.2.4).</p>
+<p>Your security management plan and/or administration policy should include a procedure for recovering access and regaining control in the event of account compromise. If this guidance is not followed, your account may become inaccessible for an extended duration. Note that some billing details (not credit card numbers) are accessible to an intruder. Unauthorized purchases of AWS services can be billed to your credit card by anyone who has access to your AWS account.</p>
+<p>##When##</p>
+<p>Record the steps for account recovery in an administrator procedure after your AWS account is first opened.</p>
+<p>##How to Check##</p>
+<p>To verify that the ability to recover AWS is maintained:</p>
+<ol>
+<li>
+<p><strong>Identify the personnel responsible for maintaining the AWS accounts.</strong> Find out who is responsible for the security of the AWS accounts and interview them.</p>
+</li>
+<li>
+<p><strong>Verify that procedures for recovering AWS accounts are in place.</strong> Based on the interviews determine whether adequate procedures for recovering compromised AWS accounts are in place. The specific thing to check is whether there are plans for if the AWS accounts are hacked, the attackers change authentication credentials, and start downloading data and deleting everything.</p>
+</li>
+</ol>
+<p>##How to Fix##</p>
+<p>The following preventative steps should be taken as part of your AWS security posture.</p>
+<ol>
+<li>
+<p><strong>Record the AWS account login name, password, and account number.</strong> Store this information in an encrypted password utility or other location approved by your site security plan. Also store the credentials in a physical safe.</p>
+</li>
+<li>
+<p><strong>Open and use an Identity and Management (IAM) for yourself as an administrator with privileges you require to access resources and create other accounts.</strong></p>
+</li>
+<li>
+<p><strong>Do not generate access keys for your AWS account</strong>. More secure methods exist to create certificates and secret credentials you require. Attach restrictive policy to these.</p>
+</li>
+<li>
+<p><strong>Turn on Multi-Function Authentication (MFA) for the AWS account login.</strong></p>
+</li>
+<li>
+<p><strong>Use CloudTrail security to capture information about logins for AWS account owner, IAM users, and federated users.</strong> It is recommended to send SNS when the root account is used.</p>
+</li>
+<li>
+<p><strong>Use the AWS Trusted Advisor service.</strong> This provides three important security checks: specific ports unrestricted, IAM use, and MFA on root account.</p>
+</li>
+<li>
+<p><strong>Allow your IAM admin account access to Billing &amp; Cost Management.</strong> Use the feature to receive billing alerts. Enable ongoing billing reports of AWS charges to be sent to a specific S3 bucket.</p>
+</li>
+<li>
+<p><strong>Use a credit card dedicated to AWS purchases.</strong></p>
+</li>
+<li>
+<p><strong>Sterilize code and perform a security review to make sure access keys are protected.</strong></p>
+</li>
+</ol>
+<p>If your AWS account credentials are compromised, perform these steps to regain access:</p>
+<ol>
+<li>
+<p><strong>Notify AWS billing and support by filling out a support request.</strong> Choose the option to be contacted by your mobile number.</p>
+</li>
+<li>
+<p><strong>Notify AWS technical support if you have a support plan.</strong> Use web response or mobile response. They will be able to guide you through resource recovery steps.</p>
+</li>
+<li>
+<p><strong>Delete all access keys and re-generate when the account is secured.</strong></p>
+</li>
+<li>
+<p><strong>Stop all EC2 instances including spot bids.</strong> You may need to go to multiple regions to identify all instances.</p>
+</li>
+<li>
+<p><strong>Check all AWS services for suspicious changes and shut them down.</strong></p>
+</li>
+<li>
+<p><strong>Report any problems with MFA.</strong></p>
+</li>
+<li>
+<p><strong>Be sure to complete any additional steps recommended by billing and/or technical support.</strong></p>
+</li>
+</ol>

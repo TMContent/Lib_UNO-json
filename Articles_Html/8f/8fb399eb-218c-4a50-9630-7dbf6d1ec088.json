@@ -1,6 +1,6 @@
 {
   "id": "8fb399eb-218c-4a50-9630-7dbf6d1ec088",
-  "checksum": "0fbf49f1c2baaf49fd5bf23ac90fc4b1",
+  "checksum": "536f6b5ea8c6ec6b47cbd47f924c922b",
   "words": {
     "2005": [
       "ol",
@@ -213,7 +213,7 @@
       "p",
       "strong"
     ],
-    "that&nbspyour": [
+    "that your": [
       "p"
     ],
     "application": [
@@ -860,7 +860,7 @@
     "sent": [
       "p"
     ],
-    "server&nbsp;use": [
+    "server use": [
       "p"
     ],
     "following": [
@@ -1063,7 +1063,7 @@
       "li",
       "p"
     ],
-    "sure&nbspyour": [
+    "sure your": [
       "ol",
       "li",
       "p",
@@ -1216,7 +1216,7 @@
       "p",
       "p"
     ],
-    "you&nbspshould": [
+    "you should": [
       "ol",
       "li",
       "p"
@@ -1278,7 +1278,7 @@
       "p",
       "p"
     ],
-    "the&nbspenabled": [
+    "the enabled": [
       "ol",
       "li",
       "p"
@@ -1446,6 +1446,7 @@
       "p",
       "li",
       "p",
+      "pre",
       "pre"
     ],
     "configured": [
@@ -1488,16 +1489,31 @@
       "ol",
       "li",
       "pre",
+      "ol",
+      "li",
+      "p",
+      "li",
+      "pre",
       "pre"
     ],
     "maxeventdetailslength=\"1073741823\"": [
       "ol",
       "li",
       "pre",
+      "ol",
+      "li",
+      "p",
+      "li",
+      "pre",
       "pre"
     ],
     "buffer=\"true\"": [
       "ol",
+      "li",
+      "pre",
+      "ol",
+      "li",
+      "p",
       "li",
       "pre",
       "pre"
@@ -1528,15 +1544,25 @@
       "ol",
       "li",
       "pre",
+      "ol",
+      "li",
+      "p",
+      "li",
+      "pre",
       "pre"
     ],
     "name=\"mysqlwebeventprovider\"": [
       "ol",
       "li",
       "pre",
+      "ol",
+      "li",
+      "p",
+      "li",
+      "pre",
       "pre"
     ],
-    "type=\"systemweb.management.sqlwebeventprovider,system.web,&#9;&#9;culture=neutral,publickeytoken=b03f5f7f11d50a3a\"": [
+    "type=\"systemweb.management.sqlwebeventprovider,system.web,\t\tculture=neutral,publickeytoken=b03f5f7f11d50a3a\"": [
       "ol",
       "li",
       "pre"
@@ -1546,7 +1572,7 @@
       "li",
       "pre"
     ],
-    "the&nbspconnection": [
+    "the connection": [
       "ol",
       "li",
       "p",
@@ -1652,7 +1678,11 @@
     "connectionstrings>": [
       "ol",
       "li",
-      "p"
+      "p",
+      "ol",
+      "li",
+      "p",
+      "pre"
     ],
     "connectionstringname": [
       "ol",
@@ -1750,7 +1780,7 @@
       "li",
       "p"
     ],
-    "logs&nbsp;check": [
+    "logs check": [
       "ol",
       "li",
       "p"
@@ -1834,9 +1864,12 @@
       "p",
       "strong"
     ],
-    "monitoring&nbsp;": [
+    "monitoring": [
+      "ol",
       "ol",
       "li",
+      "li",
+      "p",
       "p",
       "strong"
     ],
@@ -1873,11 +1906,6 @@
       "p",
       "ul",
       "li"
-    ],
-    "monitoring": [
-      "ol",
-      "li",
-      "p"
     ],
     "aspnet": [
       "ol",
@@ -1922,13 +1950,13 @@
       "li",
       "p"
     ],
-    "&#37windir&#37;\\microsoft": [
+    "%windir%\\microsoft": [
       "ol",
       "li",
       "p",
       "b"
     ],
-    "net\\framework\\&#123;version&#125;\\config": [
+    "net\\framework\\{version}\\config": [
       "ol",
       "li",
       "p",
@@ -2050,7 +2078,7 @@
       "li",
       "blockquote"
     ],
-    "for&nbspinstance,": [
+    "for instance": [
       "ol",
       "li",
       "p"
@@ -2647,12 +2675,6 @@
       "li",
       "p"
     ],
-    "connectionstrings>&nbsp;&nbsp;": [
-      "ol",
-      "li",
-      "p",
-      "pre"
-    ],
     "name=\"mysqlconnection\"": [
       "ol",
       "li",
@@ -2689,46 +2711,11 @@
       "li",
       "p"
     ],
-    "webconfig:<providers>&nbsp;&nbsp;": [
+    "webconfig:<providers>": [
       "ol",
       "li",
       "p",
       "li"
-    ],
-    "connectionstringname=\"mysqlconnection\"&nbsp&nbsp;&nbsp;&nbsp;&nbsp;": [
-      "ol",
-      "li",
-      "p",
-      "li",
-      "pre"
-    ],
-    "maxeventdetailslength=\"1073741823\"&nbsp&nbsp;&nbsp;&nbsp;&nbsp;": [
-      "ol",
-      "li",
-      "p",
-      "li",
-      "pre"
-    ],
-    "buffer=\"true\"&nbsp&nbsp;&nbsp;&nbsp;&nbsp;": [
-      "ol",
-      "li",
-      "p",
-      "li",
-      "pre"
-    ],
-    "notification\"&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
-      "ol",
-      "li",
-      "p",
-      "li",
-      "pre"
-    ],
-    "name=\"mysqlwebeventprovider\"&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
-      "ol",
-      "li",
-      "p",
-      "li",
-      "pre"
     ],
     "type=\"systemweb.management.sqlwebeventprovider,system.web,version=2.0.0": [
       "ol",
@@ -3088,7 +3075,7 @@
       "ul",
       "li"
     ],
-    "note&nbsp&nbsp;&nbsp;if": [
+    "note   if": [
       "ol",
       "blockquote"
     ],
@@ -3126,9 +3113,6 @@
     ],
     "webconfig:": [
       "p"
-    ],
-    "providers>&nbsp;&nbsp;": [
-      "pre"
     ],
     "0,culture=neutral,publickeytoken=b03f5f7f11d50a3a\"/></providers>": [
       "pre"
@@ -3262,7 +3246,7 @@
     "encrypted": [
       "p"
     ],
-    "channel&nbsp;": [
+    "channel": [
       "p"
     ],
     "break": [
@@ -3289,7 +3273,7 @@
     "immediately": [
       "p"
     ],
-    "0,&#9;&#9;culture=neutral,publickeytoken=b03f5f7f11d50a3a\"/>": [
+    "0,\t\tculture=neutral,publickeytoken=b03f5f7f11d50a3a\"/>": [
       "pre"
     ],
     "/providers></healthmonitoring>": [

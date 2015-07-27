@@ -42,10 +42,10 @@
       {
         "$": {
           "Sanitized": "true",
-          "DataType": "Html"
+          "DataType": "html"
         },
         "Data": [
-          "<h1>What to Check For</h1>\r\n  <p>If a web application uses TLS, the server should support the latest version.</p>\r\n  <h1>Why</h1>\r\n  <p>Old versions of SSL contain known vulnerabilities. The latest TLS version has addressed these vulnerabilities. New vulnerabilities may be found in the future, requiring a newer version of TLS to be used.</p>\r\n  <h1>How to Check</h1>\r\n  <p>Examine the server configuration to make sure that the latest version of TLS is used and only strong cypher suites are enabled.</p>\r\n  <h1>How to Fix</h1>\r\n  <p>Configure the server to use the latest version of TLS with strong cypher suites.</p>"
+          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 4.1 </li>\r\n    <li>PCI DSS Requirement 4.1.e</li>\r\n  </ul>\r\n  <h1>What to Check For</h1>\r\n  <p>If a web application uses TLS, the server should support the latest patched version.</p>\r\n  <h1>Why</h1>\r\n  <p>Old versions of SSL and TLS have known vulnerabilities in them, which makes them unacceptable. The latest version of TLS has addressed these vulnerabilities. New vulnerabilities may be found in the future, requiring a newer version of TLS to be used.</p>\r\n  <h1>How to Check</h1>\r\n  <p>Use one of the free online SSL/TLS testing tools to scan your site to determine if old versions of TLS or weak cypher suites are being used.<br /></p>\r\n  <h1>How to Fix</h1>\r\n  <p>Configure your application's web server to use the latest version of TLS.<br /></p>\r\n  <h1>Additional Resources</h1>\r\n  <ul>\r\n    <li>For a free SSL/TLS test, see <a href=\"https://www.ssllabs.com/ssltest/\">https://www.ssllabs.com/ssltest</a><br /></li>\r\n  </ul>\r\n  <br />"
         ]
       }
     ]

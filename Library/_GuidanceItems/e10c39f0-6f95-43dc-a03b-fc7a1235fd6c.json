@@ -51,10 +51,10 @@
       {
         "$": {
           "Sanitized": "true",
-          "DataType": "Html"
+          "DataType": "html"
         },
         "Data": [
-          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 8.5.6</li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Only enable accounts used by vendors remotely for the duration that they are being used by the vendors. Monitor these accounts while they are being used.</p>\r\n  <h1>Why</h1>\r\n  <p>Vendor accounts should be disabled when they are not needed and monitored while being used to ensure they are not being used for unauthorized access.</p>\r\n  <h1>How</h1>\r\n  <p>Disable all vendor accounts that are not being used at the moment. Instruct the responsible staff to keep in touch with the vendor when a vendor needs remote access and to disable the vendor's account as soon as it is no longer being used. In a Microsoft\r\n Active Directory environment, you may use the \"Active Directory Users and Computers\" console to manage user accounts. To launch this console, click on \"Start\", \"Programs\", \"Administrative Tools\", \"Active Directory Users and Computers\".</p>"
+          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 8.1.5</li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Only enable accounts used by vendors remotely for the duration that they are being used by the vendors. Monitor these accounts while they are being used.</p>\r\n  <h1>Why</h1>\r\n  <p>Vendor accounts should be disabled when they are not needed and monitored while being used to ensure they are not being used for unauthorized access.</p>\r\n  <h1>How</h1>\r\n  <p>Disable all vendor accounts that are not being used at the moment. Instruct the responsible staff to keep in touch with the vendor when a vendor needs remote access and to disable the vendor's account as soon as it is no longer being used. In a Microsoft\r\n Active Directory environment, you may use the \"Active Directory Users and Computers\" console to manage user accounts. To launch this console, click on \"Start\", \"Programs\", \"Administrative Tools\", \"Active Directory Users and Computers\".</p>"
         ]
       }
     ]

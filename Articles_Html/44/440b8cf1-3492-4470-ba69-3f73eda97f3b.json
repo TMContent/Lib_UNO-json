@@ -1,6 +1,6 @@
 {
   "id": "440b8cf1-3492-4470-ba69-3f73eda97f3b",
-  "checksum": "3bc5e6d1f0db31f6768f2cabb3085233",
+  "checksum": "239952647031a3449a26660f1a5a77b1",
   "words": {
     "description": [
       "h1"
@@ -368,18 +368,18 @@
     "..": [
       "pre"
     ],
-    "systemmanagement.instrumentation;&#91;assembly:instrumented(&#64;\"root\\myappwmi\")&#93;": [
+    "systemmanagement.instrumentation;[assembly:instrumented(@\"root\\myappwmi\")]": [
       "pre"
     ],
     "namespace": [
       "pre",
       "pre"
     ],
-    "myappwmi&#123;": [
+    "myappwmi{": [
       "pre",
       "pre"
     ],
-    "&#91managedname(\"myapp_myappexceptionevent\")&#93;": [
+    "managedname(\"myapp_myappexceptionevent\")]": [
       "pre"
     ],
     "public": [
@@ -389,7 +389,7 @@
     "myappexceptionevent": [
       "pre"
     ],
-    "..&#125;": [
+    "..}": [
       "pre"
     ],
     "any": [
@@ -431,13 +431,13 @@
     "example": [
       "p"
     ],
-    "&#91runinstaller(true)&#93;": [
+    "runinstaller(true)]": [
       "pre"
     ],
     "myappwmischemainstaller": [
       "pre"
     ],
-    "&#125": [
+    "}": [
       "pre"
     ],
     "run": [
@@ -473,13 +473,13 @@
     "an": [
       "p"
     ],
-    "try&#123&#125;catch(myappexception": [
+    "try{}catchmyappexception": [
       "pre"
     ],
-    "ex&#123;": [
+    "ex{": [
       "pre"
     ],
-    "myappexceptionevent).fire();&#125;": [
+    "myappexceptionevent).fire();}": [
       "pre"
     ],
     "additional": [

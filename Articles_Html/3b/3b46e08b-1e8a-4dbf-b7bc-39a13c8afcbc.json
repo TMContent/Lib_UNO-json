@@ -1,6 +1,6 @@
 {
   "id": "3b46e08b-1e8a-4dbf-b7bc-39a13c8afcbc",
-  "checksum": "5214109cf1b54e1fc35c514f8a090df7",
+  "checksum": "d7704bd2b9914106f1a0840f2f0b1778",
   "words": {
     "applies": [
       "h1"
@@ -2216,7 +2216,7 @@
       "ul",
       "li"
     ],
-    "value<>>&&\"\"''html": [
+    "value&lt;>&&amp;\"&quot;'&#39;html": [
       "ol",
       "li",
       "ul"
@@ -2573,7 +2573,7 @@
     ".": [
       "em"
     ],
-    "value<>>&&\"\"''": [
+    "value&lt;>&&amp;\"&quot;'&#39;": [
       "li",
       "blockquote",
       "table",
@@ -2593,31 +2593,37 @@
     "character": [
       "td"
     ],
-    "<": [
+    "&lt;": [
       "tr"
     ],
-    ">": [
-      "tr"
+    "&lt": [
+      "td"
     ],
-    "&&": [
+    "&&amp": [
       "tr"
     ],
     "&": [
-      "td",
       "td"
     ],
-    "\"\"": [
+    "&amp": [
+      "td"
+    ],
+    "\"&quot": [
       "tr"
     ],
     "\"": [
-      "td",
       "td"
     ],
-    "''": [
+    "&quot": [
+      "td"
+    ],
+    "'&#39": [
       "tr"
     ],
     "'": [
-      "td",
+      "td"
+    ],
+    "&#39": [
       "td"
     ],
     "attributes": [

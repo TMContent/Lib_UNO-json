@@ -1,6 +1,6 @@
 {
   "id": "b38a70c0-a014-4262-b3d6-69d6d4f0fe46",
-  "checksum": "34ba4b71f91ad299ab1266df809e2776",
+  "checksum": "bcf68f730346ef75467f25c3ffab42e7",
   "words": {
     "0": [
       "ol",
@@ -128,10 +128,16 @@
       "ul",
       "li",
       "ol",
+      "ol",
+      "li",
       "li",
       "ul",
+      "ul",
       "li",
-      "p"
+      "p",
+      "li",
+      "pre",
+      "a"
     ],
     "servlets": [
       "ul",
@@ -199,10 +205,8 @@
       "ol",
       "ol",
       "ol",
-      "ol",
       "li",
       "p",
-      "li",
       "li",
       "li",
       "li",
@@ -217,7 +221,6 @@
       "ul",
       "ul",
       "ul",
-      "ul",
       "li",
       "li",
       "li",
@@ -227,12 +230,9 @@
       "li",
       "li",
       "li",
-      "li",
       "p",
       "p",
       "p",
-      "pre",
-      "a",
       "ul",
       "ul",
       "ul",
@@ -255,6 +255,8 @@
       "ol",
       "ol",
       "ol",
+      "ol",
+      "li",
       "li",
       "li",
       "li",
@@ -269,6 +271,8 @@
       "ul",
       "ul",
       "ul",
+      "ul",
+      "li",
       "li",
       "li",
       "li",
@@ -283,6 +287,8 @@
       "p",
       "p",
       "pre",
+      "pre",
+      "a",
       "ul",
       "ul",
       "li",
@@ -1436,8 +1442,14 @@
     ],
     "keys": [
       "ol",
+      "ol",
       "li",
-      "p"
+      "p",
+      "li",
+      "ul",
+      "li",
+      "pre",
+      "a"
     ],
     "some": [
       "ol",
@@ -1658,7 +1670,6 @@
       "ol",
       "ol",
       "ol",
-      "ol",
       "li",
       "ul",
       "li",
@@ -1670,8 +1681,6 @@
       "li",
       "li",
       "li",
-      "li",
-      "ul",
       "ul",
       "ul",
       "ul",
@@ -1688,7 +1697,6 @@
       "p",
       "p",
       "p",
-      "li",
       "li",
       "li",
       "li",
@@ -1697,8 +1705,6 @@
       "p",
       "p",
       "pre",
-      "pre",
-      "a",
       "li",
       "pre",
       "p",
@@ -3156,8 +3162,6 @@
       "ol",
       "ol",
       "ol",
-      "ol",
-      "li",
       "li",
       "li",
       "li",
@@ -3170,8 +3174,6 @@
       "ul",
       "ul",
       "ul",
-      "ul",
-      "li",
       "li",
       "li",
       "li",
@@ -3184,8 +3186,6 @@
       "p",
       "p",
       "p",
-      "pre",
-      "a",
       "ul",
       "li",
       "a",
@@ -3369,10 +3369,16 @@
     ],
     "store": [
       "ol",
+      "ol",
+      "li",
       "li",
       "ul",
+      "ul",
+      "li",
       "li",
       "pre",
+      "pre",
+      "a",
       "ul",
       "ul",
       "li",
@@ -3402,18 +3408,12 @@
       "li",
       "pre"
     ],
-    "secure": [
+    "protected": [
       "ol",
       "li",
       "ul",
       "li",
       "pre",
-      "a",
-      "ul",
-      "li",
-      "a",
-      "ul",
-      "li",
       "a"
     ],
     "storage": [
@@ -3434,21 +3434,12 @@
       "h1",
       "h1"
     ],
-    "location": [
-      "ol",
+    "apis": [
       "ol",
       "li",
       "ul",
       "li",
       "pre",
-      "a",
-      "li",
-      "p",
-      "ul",
-      "li",
-      "a",
-      "ul",
-      "li",
       "a"
     ],
     "guidelinekeygenerator": [
@@ -3603,6 +3594,17 @@
       "ol",
       "li",
       "p"
+    ],
+    "location": [
+      "ol",
+      "li",
+      "p",
+      "ul",
+      "li",
+      "a",
+      "ul",
+      "li",
+      "a"
     ],
     "try{": [
       "ol",
@@ -4079,6 +4081,14 @@
       "li",
       "a"
     ],
+    "secure": [
+      "ul",
+      "li",
+      "a",
+      "ul",
+      "li",
+      "a"
+    ],
     "checklists": [
       "h1"
     ],
@@ -4124,8 +4134,8 @@
   "tags": {},
   "links": [
     {
-      "href": "/article/cd4ccbbb-be9c-4ff4-8b20-d116819b634b",
-      "text": "Use a Secure Key Storage Location"
+      "href": "/article/00000000-0000-0000-0000-00000060ef71",
+      "text": "Store Encryption Keys Using Protected Storage APIs"
     },
     {
       "href": "http://java.sun.com/products/jce/index-14.html",

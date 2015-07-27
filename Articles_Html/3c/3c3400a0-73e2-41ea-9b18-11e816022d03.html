@@ -1,0 +1,11 @@
+<p>When reading or writing files, care should be taken to protect the application from malicious files or path manipulation. If processing information that lives within a file, this must be considered data input and the same verification and restrictions put in place as those on other sources of data. The code should then be checked to ensure that it prevents users from manipulating file paths to supply malicious data from a source it may normally reject. View this room to learn the correct techniques for processing files and the safeties put in place to ensure filesystem access is managed properly.
+</p><h2>Canonicalize File Names and Paths</h2><p>When input validation is applied to file paths and names, it only works properly when file paths and names are canonicalized. If file names and paths are not canonicalized before validation, a number of vulnerabilities may be introduced as a result.
+</p><ul>
+<li> <a href="00000000-0000-0000-0000-0000008dcc1f">.NET</a></li>
+<li> <a href="d7baa268-7684-4f8f-a4e7-96d9a158e47c">Java</a></li>
+<li> <a href="00000000-0000-0000-0000-0000003b5c16">PHP</a></li>
+<li> <a href="00000000-0000-0000-0000-0000008d3cec">Android</a></li>
+<li> <a href="00000000-0000-0000-0000-000000866d55">iOS</a></li>
+<li> <a href="004526a6-5b2f-4094-94fa-a80d818c0a41">C++</a></li>
+</ul><p>
+<a href="bcbbe5c7-95c3-468d-9371-6eb42f9b93e6">Back to the Programming Best Practices Area</a></p>

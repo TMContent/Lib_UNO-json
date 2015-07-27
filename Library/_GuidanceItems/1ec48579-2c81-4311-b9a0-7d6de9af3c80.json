@@ -51,10 +51,10 @@
       {
         "$": {
           "Sanitized": "true",
-          "DataType": "Html"
+          "DataType": "html"
         },
         "Data": [
-          "<h1>What to Do</h1>\r\n  <p>Use the latest version of TLS on servers that use TLS.</p>\r\n  <h1>Why</h1>\r\n  <p>Old versions of SSL have known vulnerabilities. The latest TLS version has addressed these vulnerabilities. New vulnerabilities may be found in the future, requiring a newer version of TLS to be used.</p>\r\n  <h1>How</h1>\r\n  <p>Configure your server to use the latest TLS version with strong cypher suites.</p>"
+          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PCI DSS Requirement 4.1 </li>\r\n    <li>PCI DSS Requirement 4.1.e</li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Use the latest version of TLS on servers that use TLS.</p>\r\n  <h1>Why</h1>\r\n  <p>Old versions of SSL and TLS have known vulnerabilities in them, which \r\nmakes them unacceptable. The latest version of TLS has addressed these \r\nvulnerabilities. New vulnerabilities may be found in the future, \r\nrequiring a newer version of TLS to be used.</p>\r\n  <h1>How</h1>\r\n  <p>Configure your application's web server to use the latest version of TLS.</p>"
         ]
       }
     ]

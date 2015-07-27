@@ -1,6 +1,6 @@
 {
   "id": "7bef867d-4dcb-47ea-ac58-651b9552cc1c",
-  "checksum": "e3a8d57d86b002545b974d38843a710d",
+  "checksum": "1fe40d9aeb9344e76bae2d2c0c408d0f",
   "words": {
     "applies": [
       "h1"
@@ -982,10 +982,8 @@
       "p"
     ],
     "http//www.onlinebank.com/redirect.jsp?url=[destination]": [
-      "p"
-    ],
-    "http//www.onlinebank.com/redirect.jsp?url=[destination": [
-      "a"
+      "p",
+      "pre"
     ],
     "phisher": [
       "p",
@@ -1041,9 +1039,9 @@
     ],
     "http//www.onlinebank.com/redirect.jsp?url=www.phisher.com": [
       "p",
-      "a",
+      "pre",
       "p",
-      "a"
+      "pre"
     ],
     "user": [
       "p",
@@ -1281,7 +1279,7 @@
     ],
     "http//www.onlinebank.com/redirect.jsp?map=page1": [
       "p",
-      "a"
+      "pre"
     ],
     "will": [
       "p",
@@ -1304,7 +1302,7 @@
     ],
     "http//www.onlinebank.com/redirect.jsp?map=www.phisher.com": [
       "p",
-      "a"
+      "pre"
     ],
     "additional": [
       "h1"
@@ -1364,26 +1362,6 @@
   },
   "tags": {},
   "links": [
-    {
-      "href": "http://www.onlinebank.com/redirect.jsp?url=[destination",
-      "text": "http://www.onlinebank.com/redirect.jsp?url=[destination"
-    },
-    {
-      "href": "http://www.onlinebank.com/redirect.jsp?url=www.phisher.com",
-      "text": "http://www.onlinebank.com/redirect.jsp?url=www.phisher.com"
-    },
-    {
-      "href": "http://www.onlinebank.com/redirect.jsp?map=page1",
-      "text": "http://www.onlinebank.com/redirect.jsp?map=page1"
-    },
-    {
-      "href": "http://www.onlinebank.com/redirect.jsp?url=www.phisher.com",
-      "text": "http://www.onlinebank.com/redirect.jsp?url=www.phisher.com"
-    },
-    {
-      "href": "http://www.onlinebank.com/redirect.jsp?map=www.phisher.com",
-      "text": "http://www.onlinebank.com/redirect.jsp?map=www.phisher.com"
-    },
     {
       "href": "http://www.owasp.org/index.php/Top_10_2010-A10-Unvalidated_Redirects_and_Forwards",
       "text": "http://www.owasp.org/index.php/Top_10_2010-A10-Unvalidated_Redirects_and_Forwards"

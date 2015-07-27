@@ -13,10 +13,10 @@
           "00000000-0000-0000-0000-0000005ae4db,2dda9407-0de5-4a2b-aa20-cc8f6f2b9fbf,"
         ],
         "Library_Id": [
-          "c4b9cb6a-4561-4451-9b6c-4e59d73584f6"
+          "be5273b1-d682-4361-99d9-6234f2d47eb7"
         ],
         "Title": [
-          "URL-encode Data in HTTP Response Headers"
+          "[DUPE] URL-encode Data in HTTP Response Headers"
         ],
         "Category": [
           "Encoding"
@@ -51,7 +51,7 @@
           "DataType": "wikitext"
         },
         "Data": [
-          "==Applies To==\r\n* Java\r\n\r\n==What to Do==\r\nURL-encode any user supplied data that is sent back in HTTP response header.\r\n\r\n==Why==\r\n\r\nIf the application accepts user input and includes such input in HTTP response headers the application will be vulnerable to response splitting vulnerability unless headers are URL-encoded or data is sanitized. Attackers can execute a cross site scripting attack by forcing your application to send carriage return (CR) and line feed (LF) followed by malicious content to the users browser. Because CRLF is a response header separator and CRLF CRLF separates headers from the body, the browser sees attackers content as legitimate. \r\n\r\n==How==\r\n\r\nTo URL-encode data in HTTP Response headers:\r\n\r\n# **Identify all data included in HTTP response headers.** Search your code for calls to // HttpServletResponse.AddHeader// and for //HttpServletResponse.AddCookie// to find all code that adds data to HTTP response headers.\r\n# **Validate all data included in HTTP response headers.** Use positive validation routines to check all data that gets included in HTTP response headers.\r\n# **URL-encode all data included in HTTP response headers.** Use //java.net.URLEncoder// class to URL-encode data that gets includes in HTTP response headers.\r\n"
+          "==Applies To==\n* Java\n\n==What to Do==\nURL-encode any user supplied data that is sent back in HTTP response header.\n\n==Why==\n\nIf the application accepts user input and includes such input in HTTP response headers the application will be vulnerable to response splitting vulnerability unless headers are URL-encoded or data is sanitized. Attackers can execute a cross site scripting attack by forcing your application to send carriage return (CR) and line feed (LF) followed by malicious content to the users browser. Because CRLF is a response header separator and CRLF CRLF separates headers from the body, the browser sees attackers content as legitimate. \n\n==How==\n\nTo URL-encode data in HTTP Response headers:\n\n# **Identify all data included in HTTP response headers.** Search your code for calls to // HttpServletResponse.AddHeader// and for //HttpServletResponse.AddCookie// to find all code that adds data to HTTP response headers.\n# **Validate all data included in HTTP response headers.** Use positive validation routines to check all data that gets included in HTTP response headers.\n# **URL-encode all data included in HTTP response headers.** Use //java.net.URLEncoder// class to URL-encode data that gets includes in HTTP response headers.\n"
         ]
       }
     ]

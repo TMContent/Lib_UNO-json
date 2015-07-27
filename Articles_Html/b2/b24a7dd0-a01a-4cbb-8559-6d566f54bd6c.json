@@ -1,6 +1,6 @@
 {
   "id": "b24a7dd0-a01a-4cbb-8559-6d566f54bd6c",
-  "checksum": "7eee6a4ce9ae0815e80e8f623627e062",
+  "checksum": "65ce473b0e604fafe18e0d0a2f85f7c0",
   "words": {
     "what": [
       "h1"
@@ -54,7 +54,7 @@
     "ensure": [
       "p"
     ],
-    "that&nbspthe": [
+    "that the": [
       "p"
     ],
     "aspnet": [
@@ -443,6 +443,7 @@
       "li",
       "p",
       "p",
+      "p",
       "p"
     ],
     "an": [
@@ -653,6 +654,7 @@
       "p",
       "p",
       "p",
+      "p",
       "p"
     ],
     "healthmonitoring": [
@@ -756,9 +758,10 @@
       "p",
       "p"
     ],
-    "off&nbsp;": [
+    "off": [
       "ol",
       "li",
+      "p",
       "p"
     ],
     "rules": [
@@ -832,6 +835,7 @@
       "ol",
       "li",
       "p",
+      "p",
       "p"
     ],
     "rules>": [
@@ -880,13 +884,21 @@
     ],
     "provider=\"eventlogprovider\"": [
       "ol",
+      "ol",
       "li",
+      "li",
+      "pre",
+      "pre",
       "pre",
       "pre"
     ],
-    "&#9profile=\"default\"": [
+    "profile=\"default\"": [
+      "ol",
       "ol",
       "li",
+      "li",
+      "pre",
+      "pre",
       "pre",
       "pre"
     ],
@@ -902,13 +914,21 @@
     ],
     "maxlimit=\"infinite\"": [
       "ol",
+      "ol",
       "li",
+      "li",
+      "pre",
+      "pre",
       "pre",
       "pre"
     ],
-    "&#9mininterval=\"00:01:00\"": [
+    "mininterval=\"0001:00\"": [
+      "ol",
       "ol",
       "li",
+      "li",
+      "pre",
+      "pre",
       "pre",
       "pre"
     ],
@@ -942,30 +962,6 @@
       "pre"
     ],
     "audits\"": [
-      "ol",
-      "li",
-      "pre",
-      "pre"
-    ],
-    "&#9provider=\"eventlogprovider\"": [
-      "ol",
-      "li",
-      "pre",
-      "pre"
-    ],
-    "profile=\"default\"": [
-      "ol",
-      "li",
-      "pre",
-      "pre"
-    ],
-    "&#9maxlimit=\"infinite\"": [
-      "ol",
-      "li",
-      "pre",
-      "pre"
-    ],
-    "mininterval=\"0001:00\"": [
       "ol",
       "li",
       "pre",
@@ -1035,9 +1031,6 @@
     "written": [
       "p"
     ],
-    "log&nbsp;": [
-      "p"
-    ],
     "defined": [
       "p"
     ],
@@ -1046,9 +1039,6 @@
       "b"
     ],
     "machine-level": [
-      "p"
-    ],
-    "file&nbsp;": [
       "p"
     ],
     "additional": [
@@ -1095,7 +1085,7 @@
     "tracewebeventprovider),": [
       "p"
     ],
-    "wmiwebeventprovider).&nbsp;": [
+    "wmiwebeventprovider).": [
       "p"
     ],
     "configure": [
@@ -1113,9 +1103,6 @@
       "p"
     ],
     "they": [
-      "p"
-    ],
-    "logged&nbsp;&nbsp;": [
       "p"
     ],
     "simplemailwebeventprovider": [
@@ -1156,7 +1143,7 @@
       "p",
       "p"
     ],
-    "values&nbsp;": [
+    "values": [
       "p"
     ],
     "however": [
@@ -1166,9 +1153,6 @@
       "p"
     ],
     "modified": [
-      "p"
-    ],
-    "off": [
       "p"
     ],
     "enabled=\"false\"": [
@@ -1185,7 +1169,8 @@
     "both": [
       "p"
     ],
-    "exception&nbsp;": [
+    "exception": [
+      "p",
       "p"
     ],
     "look": [
@@ -1203,9 +1188,6 @@
     "only": [
       "p"
     ],
-    "exception": [
-      "p"
-    ],
     "added": [
       "p"
     ],
@@ -1215,13 +1197,13 @@
     "connectionstringname=\"mysqlconnection\"": [
       "pre"
     ],
-    "&#9maxeventdetailslength=\"1073741823\"": [
+    "maxeventdetailslength=\"1073741823\"": [
       "pre"
     ],
-    "&#9buffer=\"true\"": [
+    "buffer=\"true\"": [
       "pre"
     ],
-    "&#9buffermode=\"extra": [
+    "buffermode=\"extra": [
       "pre"
     ],
     "critical": [
@@ -1230,10 +1212,10 @@
     "notification\"": [
       "pre"
     ],
-    "&#9name=\"mysqlwebeventprovider\"": [
+    "name=\"mysqlwebeventprovider\"": [
       "pre"
     ],
-    "&#9type=\"system.web.management.sqlwebeventprovider,system.web,version=2.0.0.0,culture=neutral,publickeytoken=b03f5f7f11d50a3a\"": [
+    "type=\"systemweb.management.sqlwebeventprovider,system.web,version=2.0.0.0,culture=neutral,publickeytoken=b03f5f7f11d50a3a\"": [
       "pre"
     ],
     "/providers>": [

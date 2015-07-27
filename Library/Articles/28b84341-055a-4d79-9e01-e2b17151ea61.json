@@ -1,0 +1,56 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "0",
+      "Content_Hash": "0"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "28b84341-055a-4d79-9e01-e2b17151ea61"
+        ],
+        "Library_Id": [
+          "47a10a30-15ad-4cfd-bf82-00e9bb2037f6"
+        ],
+        "Title": [
+          "3.4 Protect Stored PANs"
+        ],
+        "Category": [
+          "Cryptographic Storage"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Requirement"
+        ],
+        "DirectLink": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "false",
+          "DataType": "wikitext"
+        },
+        "Data": [
+          "==Applies To==\n\n* PCI DSS Requirement 3.4\n\n==Policy Statement==\n\nProtect stored PANs.\n\n==Policy Purpose==\n\nThe PAN should be rendered unreadable whenever it is stored to prevent disclosure in the event of a successful compromise. Encrypt the cardholder data on removable media to make sure that, if the media falls into the possession of an attacker, the cardholder data will remain secure.\n\n==Related Guidance==\n\n* [[00000000-0000-0000-0000-0000006adfa3|Store Passwords Securely]] - Treat PANs like passwords.\n\n==Related Checklist Items==\n\n* [[00000000-0000-0000-0000-00000077a50c|Passwords Are Stored Securely]] - Treat PANs like passwords."
+        ]
+      }
+    ]
+  }
+}

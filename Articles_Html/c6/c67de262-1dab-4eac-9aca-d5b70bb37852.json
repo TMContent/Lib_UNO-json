@@ -1,7 +1,25 @@
 {
   "id": "c67de262-1dab-4eac-9aca-d5b70bb37852",
-  "checksum": "a83328d3353ab5faa95d1c028624ec56",
+  "checksum": "d6edeb61b891e7e2e167d0e3b53001ce",
   "words": {
+    "1": [
+      "ol",
+      "li",
+      "ul",
+      "li"
+    ],
+    "5": [
+      "ol",
+      "li",
+      "ul",
+      "li"
+    ],
+    "7": [
+      "ol",
+      "li",
+      "ul",
+      "li"
+    ],
     "10": [
       "ol",
       "li",
@@ -66,7 +84,7 @@
       "h1",
       "p"
     ],
-    "use&nbspactive": [
+    "use active": [
       "p"
     ],
     "directory": [
@@ -74,7 +92,7 @@
       "ul",
       "li"
     ],
-    "policy&nbspto": [
+    "policy to": [
       "p"
     ],
     "ensure": [
@@ -138,6 +156,8 @@
       "p",
       "p",
       "p",
+      "p",
+      "ol",
       "ol",
       "ol",
       "ol",
@@ -155,6 +175,8 @@
       "li",
       "li",
       "li",
+      "li",
+      "p",
       "p",
       "p",
       "p",
@@ -228,7 +250,10 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
+      "li",
+      "p",
       "p",
       "p",
       "li",
@@ -370,7 +395,13 @@
     "compromise": [
       "p"
     ],
-    "accounts&nbsp;": [
+    "accounts": [
+      "p",
+      "ol",
+      "li",
+      "ul",
+      "li",
+      "p",
       "p"
     ],
     "strong": [
@@ -569,6 +600,7 @@
       "li",
       "li",
       "p",
+      "p",
       "ul",
       "ul",
       "li",
@@ -618,7 +650,7 @@
       "p",
       "p"
     ],
-    "compromised&nbsp;": [
+    "compromised": [
       "p"
     ],
     "most": [
@@ -669,6 +701,9 @@
     ],
     "application": [
       "p",
+      "p",
+      "ol",
+      "li",
       "p"
     ],
     "when": [
@@ -747,12 +782,6 @@
       "ul",
       "li",
       "title"
-    ],
-    "passwords&nbsp;": [
-      "p",
-      "ol",
-      "li",
-      "p"
     ],
     "strength": [
       "p",
@@ -936,7 +965,14 @@
       "p",
       "strong"
     ],
-    "site&nbsp;": [
+    "site": [
+      "p",
+      "ol",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
       "p"
     ],
     "follow": [
@@ -963,6 +999,7 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "li",
@@ -973,6 +1010,7 @@
       "li",
       "p",
       "strong",
+      "p",
       "p"
     ],
     "default": [
@@ -1149,7 +1187,7 @@
       "li",
       "p"
     ],
-    "character&nbsp;": [
+    "character": [
       "ol",
       "li",
       "p"
@@ -1314,11 +1352,6 @@
       "li",
       "p"
     ],
-    "application&nbsp;": [
-      "ol",
-      "li",
-      "p"
-    ],
     "requiring": [
       "ol",
       "ol",
@@ -1337,11 +1370,6 @@
       "p"
     ],
     "frustrate": [
-      "ol",
-      "li",
-      "p"
-    ],
-    "users&nbsp;": [
       "ol",
       "li",
       "p"
@@ -1396,7 +1424,7 @@
       "p",
       "p"
     ],
-    "want&#8212maximum": [
+    "want—maximum": [
       "ol",
       "li",
       "p"
@@ -1416,7 +1444,7 @@
       "li",
       "p"
     ],
-    "are&nbspthree": [
+    "are three": [
       "ol",
       "li",
       "p"
@@ -1483,7 +1511,7 @@
       "li",
       "p"
     ],
-    "with&nbspthree": [
+    "with three": [
       "ol",
       "li",
       "p"
@@ -1530,6 +1558,8 @@
       "ol",
       "li",
       "p",
+      "p",
+      "p",
       "p"
     ],
     "attempts": [
@@ -1549,15 +1579,17 @@
       "li",
       "li",
       "p",
+      "p",
       "p"
     ],
-    "passwordstrengthregularexpression&nbsp;": [
+    "passwordstrengthregularexpression": [
       "ol",
       "li",
       "ul",
-      "li"
+      "li",
+      "b"
     ],
-    "blank&nbsp;&nbsp;": [
+    "blank": [
       "ol",
       "li",
       "ul",
@@ -1593,17 +1625,12 @@
       "ul",
       "li"
     ],
-    "minrequiredpasswordlength&nbsp;": [
+    "minrequiredpasswordlength": [
       "ol",
       "li",
       "ul",
-      "li"
-    ],
-    "7&nbsp;": [
-      "ol",
       "li",
-      "ul",
-      "li"
+      "b"
     ],
     "contain": [
       "ol",
@@ -1639,17 +1666,12 @@
       "p",
       "p"
     ],
-    "minrequirednonalphanumericcharacters&nbsp;": [
+    "minrequirednonalphanumericcharacters": [
       "ol",
       "li",
       "ul",
-      "li"
-    ],
-    "1&nbsp;": [
-      "ol",
       "li",
-      "ul",
-      "li"
+      "b"
     ],
     "non-letter": [
       "ol",
@@ -1663,17 +1685,12 @@
       "ul",
       "li"
     ],
-    "maxinvalidpasswordattempts&nbsp;": [
+    "maxinvalidpasswordattempts": [
       "ol",
       "li",
       "ul",
-      "li"
-    ],
-    "5&nbsp;": [
-      "ol",
       "li",
-      "ul",
-      "li"
+      "b"
     ],
     "an": [
       "ol",
@@ -1745,13 +1762,14 @@
       "li",
       "li"
     ],
-    "passwordattemptwindow&nbsp;": [
+    "passwordattemptwindow": [
       "ol",
       "li",
       "ul",
-      "li"
+      "li",
+      "b"
     ],
-    "minutes).&nbsp;": [
+    "minutes).": [
       "ol",
       "ol",
       "li",
@@ -1767,19 +1785,12 @@
       "ul",
       "li"
     ],
-    "passwordanswerattemptlockoutduration&nbsp;": [
-      "ol",
-      "li",
-      "ul",
-      "li"
-    ],
-    "accounts": [
+    "passwordanswerattemptlockoutduration": [
       "ol",
       "li",
       "ul",
       "li",
-      "p",
-      "p"
+      "b"
     ],
     "too": [
       "ol",
@@ -1827,10 +1838,6 @@
       "ol",
       "p"
     ],
-    "requirements&nbsp;": [
-      "ol",
-      "p"
-    ],
     "here's": [
       "ol",
       "p",
@@ -1853,17 +1860,17 @@
       "p",
       "p"
     ],
-    "defaultprovider=\"myadmembershipprovider\"&nbsp;": [
+    "defaultprovider=\"myadmembershipprovider\"": [
       "ol",
       "pre",
       "pre"
     ],
-    "&#9<providers>": [
+    "providers>": [
       "ol",
       "pre",
       "pre"
     ],
-    "&#9&#9;<add": [
+    "add": [
       "ol",
       "pre",
       "pre",
@@ -1874,27 +1881,30 @@
       "pre",
       "pre"
     ],
-    "&#9&#9;&#9;connectionstringname=\"adconnectionstring\"&#9;&#9;&#9;minrequiredpasswordlength=\"9\"&#9;&#9;&#9;minrequirednonalphanumericcharacters=\"2\"": [
+    "connectionstringname=\"adconnectionstring\"\t\t\tminrequiredpasswordlength=\"9\"\t\t\tminrequirednonalphanumericcharacters=\"2\"": [
       "ol",
       "pre"
     ],
-    "&#9&#9;&#9;passwordstrengthregularexpression=\"&#94;(?=.&#42;\\d)(?=.&#42;&#91;&#94;\\w\\d&#93;.&#123;9,20&#125;&#36;\"": [
+    "passwordstrengthregularexpression=\"^?=.*\\d)(?=.*[^\\w\\d].{9,20}$\"": [
       "ol",
       "pre"
     ],
-    "&#9&#9;&#9;maxinvalidpasswordattempts=3": [
+    "maxinvalidpasswordattempts=3": [
       "ol",
+      "pre",
       "pre"
     ],
-    "&#9&#9;&#9;passwordattemptwindow=20": [
+    "passwordattemptwindow=20": [
       "ol",
+      "pre",
       "pre"
     ],
-    "&#9&#9;&#9;passwordanswerattemptlockoutduration=60": [
+    "passwordanswerattemptlockoutduration=60": [
       "ol",
+      "pre",
       "pre"
     ],
-    "&#9&#9;&#9;requiresuniqueemail=\"true\"": [
+    "requiresuniqueemail=\"true\"": [
       "ol",
       "pre",
       "pre"
@@ -1905,7 +1915,7 @@
       "pre",
       "pre"
     ],
-    "&#9</providers></membership>": [
+    "/providers></membership>": [
       "ol",
       "pre",
       "pre",
@@ -2074,7 +2084,7 @@
       "ul",
       "li"
     ],
-    "ones&nbsp;": [
+    "ones": [
       "ol",
       "li",
       "ul",
@@ -2142,15 +2152,6 @@
     ],
     "have": [
       "ol",
-      "p"
-    ],
-    "site": [
-      "ol",
-      "p",
-      "p",
-      "p",
-      "p",
-      "p",
       "p"
     ],
     "simply": [
@@ -2241,24 +2242,6 @@
       "ol",
       "p"
     ],
-    "passwordstrengthregularexpression": [
-      "b"
-    ],
-    "minrequiredpasswordlength": [
-      "b"
-    ],
-    "minrequirednonalphanumericcharacters": [
-      "b"
-    ],
-    "maxinvalidpasswordattempts": [
-      "b"
-    ],
-    "passwordattemptwindow": [
-      "b"
-    ],
-    "passwordanswerattemptlockoutduration": [
-      "b"
-    ],
     "problem": [
       "h1"
     ],
@@ -2287,10 +2270,6 @@
       "p",
       "p"
     ],
-    "authentication&nbsp;": [
-      "p",
-      "p"
-    ],
     "only": [
       "p"
     ],
@@ -2309,9 +2288,6 @@
       "p"
     ],
     "pin": [
-      "p"
-    ],
-    "password&nbsp;": [
       "p"
     ],
     "result": [
@@ -2336,7 +2312,7 @@
     "access": [
       "p"
     ],
-    "cards&nbsp;": [
+    "cards": [
       "p"
     ],
     "provider": [
@@ -2347,22 +2323,23 @@
       "p",
       "p"
     ],
-    "defaultprovider=\"myadmembershipprovider\"&#9;<providers>": [
+    "defaultprovider=\"myadmembershipprovider\"\t<providers>": [
       "pre"
     ],
-    "name=\"myadmembershipprovider\"&#9&#9;&#9;connectionstringname=\"adconnectionstring\"": [
+    "name=\"myadmembershipprovider\"\t\t\tconnectionstringname=\"adconnectionstring\"": [
       "pre"
     ],
-    "&#9&#9;&#9;applicationname=\"myappname\"": [
+    "applicationname=\"myappname\"": [
+      "pre",
       "pre"
     ],
-    "&#9&#9;&#9;minrequiredpasswordlength=\"4\"": [
+    "minrequiredpasswordlength=\"4\"": [
       "pre"
     ],
-    "&#9&#9;&#9;minrequirednonalphanumericcharacters=\"0\"": [
+    "minrequirednonalphanumericcharacters=\"0\"": [
       "pre"
     ],
-    "&#9&#9;&#9;passwordstrengthregularexpression=\"\"": [
+    "passwordstrengthregularexpression=\"\"": [
       "pre"
     ],
     "solution": [
@@ -2380,7 +2357,7 @@
     "anywhere": [
       "p"
     ],
-    "else&nbsp;": [
+    "else": [
       "p"
     ],
     "unable": [
@@ -2413,7 +2390,7 @@
     "watching": [
       "p"
     ],
-    "log&nbsp;": [
+    "log": [
       "p"
     ],
     "automatically": [
@@ -2449,32 +2426,13 @@
     "cracking": [
       "p"
     ],
-    "attempts&nbsp;": [
-      "p"
-    ],
-    "&#9connectionstringname=\"adconnectionstring\"": [
+    "connectionstringname=\"adconnectionstring\"": [
       "pre"
     ],
-    "&#9applicationname=\"myappname\"": [
+    "minrequiredpasswordlength=\"9\"": [
       "pre"
     ],
-    "&#9minrequiredpasswordlength=\"9\"": [
-      "pre"
-    ],
-    "&#9&#9;minrequirednonalphanumericcharacters=\"2\"": [
-      "pre"
-    ],
-    "&#9maxinvalidpasswordattempts=3": [
-      "pre"
-    ],
-    "&#9&#9;": [
-      "pre",
-      "pre"
-    ],
-    "&#9passwordattemptwindow=20": [
-      "pre"
-    ],
-    "&#9passwordanswerattemptlockoutduration=60": [
+    "minrequirednonalphanumericcharacters=\"2\"": [
       "pre"
     ],
     "additional": [
@@ -2520,9 +2478,6 @@
       "ul",
       "li",
       "a"
-    ],
-    "&nbsp": [
-      "h1"
     ],
     "adapted": [
       "p"

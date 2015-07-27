@@ -1,0 +1,56 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "0",
+      "Content_Hash": "0"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "c01fbf91-7992-41ee-82e5-168b39e5c2d0"
+        ],
+        "Library_Id": [
+          "47a10a30-15ad-4cfd-bf82-00e9bb2037f6"
+        ],
+        "Title": [
+          "2.3 Encrypt Remote Administrative Access"
+        ],
+        "Category": [
+          "Communication Security"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Requirement"
+        ],
+        "DirectLink": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "false",
+          "DataType": "wikitext"
+        },
+        "Data": [
+          "==Applies To==\n\n* PCI DSS Requirement 2.3\n\n==Policy Statement==\n\nUse an encrypted network tunnel to secure remote administrator access.\n\n==Policy Purpose==\n\nEncrypting remote administrative access makes sure that a potential attacker cannot get administrative authentication credentials or other information about the network by eavesdropping.\n\n==Related Guidance==\n\n* [[bd139cdc-59b2-4da0-9bdf-2205cc402266|Encrypt Communication Channels]]\n\n==Related Checklist Items==\n\n* [[5339bbde-f2ec-43a3-a689-7652dc6ae151|Communication Channels Are Encrypted]]"
+        ]
+      }
+    ]
+  }
+}

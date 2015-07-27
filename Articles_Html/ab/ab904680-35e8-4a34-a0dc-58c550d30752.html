@@ -1,0 +1,49 @@
+<p>##Applies To##</p>
+<ul>
+<li>Amazon Web Services (AWS)</li>
+</ul>
+<p>##What to Do##</p>
+<p>Use the AWS Management Console to specify and implement security groups in order to restrict inbound traffic to your database instances created with Amazon Relational Database Service (RDS).</p>
+<p>##Why##</p>
+<p>RDS Security Groups are one of the measures that protect your databases from unwanted intrusion. For example, security groups can be used to reduce the impact of port scans by limiting inbound traffic to as few ports as necessary.</p>
+<p>By default, all ports are closed. Without the use of security groups, your database is only accessible to the owner. With proper engineering and design, the DB is accessible to the IP ranges or Extended Computing Cloud (EC2) you specify. Your data is less vulnerable to security threats with the added layer of security.</p>
+<p>##When##</p>
+<p>Inbound traffic is restricted according to the needs of required changes throughout the database lifecycle:</p>
+<ol>
+<li>
+<p><strong>Design and Testing.</strong> RDS Security Groups are first established during database development, and enable developers to run queries. Testing also requires the creation of security groups which mimic the actions of database users.</p>
+</li>
+<li>
+<p><strong>Deployment</strong> Test groups and rules are replaced and/or modified to reflect the need for additional security in the face of current security posture.</p>
+</li>
+<li>
+<p><strong>Periodic Security Checks.</strong> When periodic security audits identify unwanted inbound traffic, you may need to modify existing security groups to mitigate intrusions.</p>
+</li>
+</ol>
+<p>DB security groups cannot be applied when the DB instance is in a Virtual Private Cloud (VPC). For that application use a VPC security group.</p>
+<p>##How##</p>
+<ol>
+<li>
+<p><strong>Open Console.</strong> Go to your account's AWS Management Console and login. Then access the RDS Console.
+Locate security groups under the RDS Dashboard. <strong>Note</strong>: If you receive an error such as: &quot;Your account does not support the EC2-Classic Platform in this region&quot; then you must setup a VPC security group.</p>
+</li>
+<li>
+<p><strong>DB Security Group.</strong> Create a DB security group, and type in a name and description for the group. By default there is no access granted to this DB security group. Now you must specify IP addresses or an Amazon EC2 security group in the next step.</p>
+</li>
+<li>
+<p><strong>Configure Ingress Rule.</strong>  To access a DB instance you configure the security group to permit access. In AWS this is called ingress, and applies to any DB instances associated with your security group. Select the security group details through the details icon to the left of the security group name. As an example, select CIDR/IP from the connection type drop-down list, and enter a CIDR range for this ingress rule. Authorize the rule. As the rule is being applied, you will notice the status change from <em>authorizing</em> to <em>authorized</em>.</p>
+</li>
+<li>
+<p><strong>Delete Ingress Rules.</strong> Rules are removed from DB security groups and associated instances when you save the changes. Select the security group in the console, and edit. Remove the rule, and authorize the change.</p>
+</li>
+<li>
+<p><strong>EC2 Instance.</strong>  If the DB instance and EC2 instance are not in the same VPC, you will add an ingress to your DB security group for the EC2 security group. Select the security group details through the details icon to the left of the security group name. Select EC2 Security Group from the connection type drop-down list. Then you are able to select the EC2 security group for this ingress rule. Authorize the rule. As the rule is being applied, you will notice the status change from <em>authorizing</em> to <em>authorized</em>.</p>
+</li>
+</ol>
+<p>The DB security group and ingress rules operations can also be performed with a command line tool or the API:</p>
+<ul>
+<li>AWS CLI:</li>
+<li><code>rds-create-db-security-group</code> to create DB security group</li>
+<li>API call:</li>
+<li><code>CreateDBSecurityGroup</code> to create DB security group</li>
+</ul>

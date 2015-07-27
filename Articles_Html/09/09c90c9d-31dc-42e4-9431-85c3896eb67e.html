@@ -1,0 +1,44 @@
+<p>##What to Check For##</p>
+<p>Verify the cloud performance is monitored.</p>
+<p>##Why##</p>
+<p>Cloud monitoring provides performance and cost benefits, such as:</p>
+<ul>
+<li>Under-used resources can be stopped to reduce cost</li>
+<li>Required load changes in EC2 can be justified with metrics</li>
+<li>System-wide visibility of operations can be measured for utilization, performance, and operational health characteristics.</li>
+</ul>
+<p>##How to Check##</p>
+<p>To verify that cloud performance is monitored:</p>
+<ol>
+<li>
+<p><strong>Identify individuals responsible for monitoring cloud performance.</strong> Find personnel responsible for monitoring cloud performance and interview them to make sure that somebody is handling this responsibility.</p>
+</li>
+<li>
+<p><strong>Access the console.</strong> Open the CloudWatch console and change the region if necessary.</p>
+</li>
+<li>
+<p><strong>View Graphs with the Console.</strong> Open the CloudWatch console and change the region if necessary. Access the CloudWatch Metrics by Category section. Search for RequestLatency. Check the box to view a graph of the RequestLatency metric. Change the graph by selecting different statistic and periods from the list. Perform this step to make sure that the CloudWatch console is sufficiently instrumented to provide meaningful information about cloud performance.</p>
+</li>
+</ol>
+<p>##How to Fix##</p>
+<p>The following steps summarize the publishing of metrics to CloudWatch.</p>
+<ol>
+<li>
+<p><strong>Access the console.</strong> Open the CloudWatch console and change the region if necessary.</p>
+</li>
+<li>
+<p><strong>Set Up the Command Line Interface.</strong> Use the CloudWatch command line interface (CLI) or the AWS CLI by installing and configuring each. Before you can use either CLI, however, install and configure the tools.</p>
+</li>
+<li>
+<p><strong>Define the Data Configuration.</strong> Choose appropriate names for the metric and namespace. For a latency example, a metric name of <code>RequestLatency</code> works well. Enter your latency-defining data points into the <code>GetStarted</code> namespace.</p>
+</li>
+<li>
+<p><strong>Add Metrics to CloudWatch.</strong> Publish data points to CloudWatch through a command prompt. You enter the command <code>aws cloudwatch put-metric-data</code> with options for metric name, namespace, <code>RequestLatency</code>, and interval. Repeat this command to enter remaining data points.</p>
+</li>
+<li>
+<p><strong>Get Statistics From CloudWatch.</strong> Retrieve statistics based on the published metrics with the command <code>aws cloudwatch get-metric-statistics</code>. To this command add switches for start-time and end-time that are far enough in the past to include the earliest time stamp published. The CLI returns a JSON similar to the following example: <code>{ &quot;Datapoints&quot;: [], &quot;Label&quot;: &quot;Request:Latency&quot; }</code></p>
+</li>
+<li>
+<p><strong>View Graphs with the Console.</strong> Open the CloudWatch console and change the region if necessary. Access the CloudWatch Metrics by Category section. Search for RequestLatency. Check the box to view a graph of the RequestLatency metric. Change the graph by selecting different statistic and periods from the list. Create an Alarm for this metric if needed.</p>
+</li>
+</ol>
