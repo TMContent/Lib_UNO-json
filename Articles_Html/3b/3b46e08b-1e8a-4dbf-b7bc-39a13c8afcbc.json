@@ -501,6 +501,9 @@
       "p",
       "p",
       "ol",
+      "ol",
+      "li",
+      "p",
       "li",
       "ul",
       "li",
@@ -701,7 +704,14 @@
       "p",
       "pre"
     ],
-    "cross-site": [
+    "cross": [
+      "p",
+      "ol",
+      "li",
+      "p",
+      "p"
+    ],
+    "site": [
       "p",
       "ol",
       "li",
@@ -1107,7 +1117,7 @@
       "pre",
       "span"
     ],
-    "user-supplied": [
+    "supplied": [
       "ol",
       "li",
       "p"
@@ -1994,11 +2004,19 @@
       "li",
       "p"
     ],
-    "non-malicious": [
+    "non": [
       "ol",
       "li",
       "ul",
       "li",
+      "p"
+    ],
+    "malicious": [
+      "ol",
+      "li",
+      "ul",
+      "li",
+      "p",
       "p"
     ],
     "because": [
@@ -2158,6 +2176,7 @@
       "ul",
       "ul",
       "li",
+      "a",
       "li"
     ],
     "text": [
@@ -2166,6 +2185,10 @@
       "ul",
       "li",
       "p",
+      "p",
+      "p",
+      "pre",
+      "pre",
       "p",
       "pre"
     ],
@@ -2649,7 +2672,11 @@
       "p",
       "p"
     ],
-    "post-registration": [
+    "post": [
+      "p",
+      "p"
+    ],
+    "registration": [
       "p",
       "p"
     ],
@@ -2705,10 +2732,42 @@
     "model": [
       "p"
     ],
-    "--": [
+    "": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
       "p",
       "p",
       "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "span",
+      "span",
       "span"
     ],
     "notice": [
@@ -2922,20 +2981,6 @@
     ],
     "'email": [
       "p",
-      "pre"
-    ],
-    "-": [
-      "p",
-      "p",
-      "p",
-      "pre",
-      "pre",
-      "pre",
-      "p",
-      "p",
-      "p",
-      "pre",
-      "pre",
       "pre"
     ],
     "'name": [
@@ -3171,10 +3216,20 @@
       "p",
       "pre"
     ],
-    "style=\"text-align": [
+    "style=\"text": [
       "p",
       "pre",
       "p",
+      "pre"
+    ],
+    "align": [
+      "p",
+      "p",
+      "pre",
+      "pre",
+      "p",
+      "p",
+      "pre",
       "pre"
     ],
     "center\"main": [
@@ -3195,7 +3250,13 @@
       "p",
       "pre"
     ],
-    "style=\"font-size": [
+    "style=\"font": [
+      "p",
+      "pre",
+      "p",
+      "pre"
+    ],
+    "size": [
       "p",
       "pre",
       "p",
@@ -3207,19 +3268,19 @@
       "p",
       "pre"
     ],
-    "text-align": [
-      "p",
-      "pre",
-      "p",
-      "pre"
-    ],
     "center": [
       "p",
       "pre",
       "p",
       "pre"
     ],
-    "margin-top": [
+    "margin": [
+      "p",
+      "pre",
+      "p",
+      "pre"
+    ],
+    "top": [
       "p",
       "pre",
       "p",
@@ -3361,9 +3422,6 @@
     "enter": [
       "p"
     ],
-    "malicious": [
-      "p"
-    ],
     "names": [
       "p"
     ],
@@ -3448,7 +3506,13 @@
       "ul",
       "li"
     ],
-    "at regular-expressionsinfo.for": [
+    "at regular": [
+      "p",
+      "pre",
+      "ul",
+      "li"
+    ],
+    "expressionsinfo.for": [
       "p",
       "pre",
       "ul"
@@ -3506,10 +3570,10 @@
     "resources": [
       "h1"
     ],
-    "at regular-expressionsinfo.": [
+    "expressionsinfo.": [
       "li"
     ],
-    "regular-expressionsinfo": [
+    "expressionsinfo": [
       "a"
     ],
     "pattern": [

@@ -613,6 +613,8 @@
       "p",
       "p",
       "p",
+      "p",
+      "p",
       "table",
       "table",
       "table",
@@ -628,6 +630,10 @@
       "table",
       "table",
       "table",
+      "table",
+      "table",
+      "tbody",
+      "tbody",
       "tbody",
       "tbody",
       "tbody",
@@ -647,10 +653,14 @@
       "td",
       "tr",
       "tr",
+      "tr",
+      "td",
       "td",
       "td",
       "tr",
       "tr",
+      "tr",
+      "td",
       "td",
       "td",
       "tr",
@@ -1012,6 +1022,10 @@
       "p",
       "p",
       "p",
+      "p",
+      "p",
+      "table",
+      "table",
       "table",
       "table",
       "table",
@@ -1022,9 +1036,15 @@
       "tbody",
       "tbody",
       "tbody",
+      "tbody",
+      "tbody",
+      "tr",
       "tr",
       "td",
+      "td",
       "tr",
+      "tr",
+      "td",
       "td",
       "tr",
       "td",
@@ -1298,7 +1318,14 @@
       "tr",
       "td"
     ],
-    "asmx-based": [
+    "asmx": [
+      "p",
+      "table",
+      "tbody",
+      "tr",
+      "td"
+    ],
+    "based": [
       "p",
       "table",
       "tbody",
@@ -1355,7 +1382,39 @@
       "tr",
       "td"
     ],
-    "ws-i": [
+    "ws": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "table",
+      "table",
+      "table",
+      "table",
+      "table",
+      "table",
+      "tbody",
+      "tbody",
+      "tbody",
+      "tbody",
+      "tbody",
+      "tbody",
+      "tr",
+      "td",
+      "tr",
+      "tr",
+      "td",
+      "td",
+      "tr",
+      "tr",
+      "td",
+      "td",
+      "tr",
+      "td"
+    ],
+    "i": [
       "p",
       "table",
       "tbody",
@@ -1524,13 +1583,30 @@
       "tr",
       "td"
     ],
-    "non-duplex": [
+    "non": [
       "p",
       "p",
       "table",
       "table",
       "tbody",
       "tbody",
+      "tr",
+      "td",
+      "tr",
+      "td"
+    ],
+    "duplex": [
+      "p",
+      "p",
+      "p",
+      "table",
+      "table",
+      "table",
+      "tbody",
+      "tbody",
+      "tbody",
+      "tr",
+      "td",
       "tr",
       "td",
       "tr",
@@ -1604,18 +1680,6 @@
       "tr",
       "td"
     ],
-    "ws-reliable": [
-      "p",
-      "p",
-      "table",
-      "table",
-      "tbody",
-      "tbody",
-      "tr",
-      "td",
-      "tr",
-      "td"
-    ],
     "messaging": [
       "p",
       "p",
@@ -1640,18 +1704,6 @@
       "tbody",
       "tr",
       "td",
-      "tr",
-      "td",
-      "tr",
-      "td"
-    ],
-    "ws-security": [
-      "p",
-      "p",
-      "table",
-      "table",
-      "tbody",
-      "tbody",
       "tr",
       "td",
       "tr",
@@ -2051,16 +2103,38 @@
       "tr",
       "td"
     ],
-    "cross-machine": [
+    "cross": [
+      "p",
       "p",
       "p",
       "table",
       "table",
+      "table",
+      "tbody",
       "tbody",
       "tbody",
       "tr",
       "td",
       "tr",
+      "tr",
+      "td",
+      "td"
+    ],
+    "machine": [
+      "p",
+      "p",
+      "p",
+      "table",
+      "table",
+      "table",
+      "tbody",
+      "tbody",
+      "tbody",
+      "tr",
+      "td",
+      "tr",
+      "tr",
+      "td",
       "td"
     ],
     "generates": [
@@ -2166,19 +2240,14 @@
       "tr",
       "td"
     ],
-    "on-machine": [
+    "on": [
       "p",
       "table",
       "tbody",
       "tr",
-      "td"
-    ],
-    "cross": [
-      "p",
-      "table",
-      "tbody",
-      "tr",
-      "td"
+      "td",
+      "ul",
+      "li"
     ],
     "process": [
       "p",
@@ -2187,7 +2256,7 @@
       "tr",
       "td"
     ],
-    "ws-reliablemessaging": [
+    "reliablemessaging": [
       "p",
       "table",
       "tbody",
@@ -2607,13 +2676,6 @@
       "tr",
       "td"
     ],
-    "duplex": [
-      "p",
-      "table",
-      "tbody",
-      "tr",
-      "td"
-    ],
     "through": [
       "p",
       "table",
@@ -2683,10 +2745,6 @@
     "resources": [
       "h1"
     ],
-    "on": [
-      "ul",
-      "li"
-    ],
     "see": [
       "ul",
       "li"
@@ -2699,7 +2757,12 @@
       "ul",
       "li"
     ],
-    "http//msdn.microsoft.com/en-us/library/ms733027.aspx": [
+    "http//msdn.microsoft.com/en": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "us/library/ms733027.aspx": [
       "ul",
       "li",
       "a"

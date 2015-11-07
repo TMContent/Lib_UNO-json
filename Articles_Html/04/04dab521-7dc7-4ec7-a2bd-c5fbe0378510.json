@@ -968,12 +968,14 @@
     "vulnerabilities": [
       "h1"
     ],
-    "un-managed": [
+    "un": [
       "ul",
       "li"
     ],
     "managed": [
       "ul",
+      "ul",
+      "li",
       "li"
     ],
     "may": [
@@ -1146,10 +1148,14 @@
     "call": [
       "ul",
       "ul",
+      "ul",
+      "li",
       "li",
       "li",
       "ul",
       "ul",
+      "ul",
+      "li",
       "li",
       "li"
     ],
@@ -1195,7 +1201,7 @@
       "ul",
       "li"
     ],
-    "call-stack": [
+    "stack": [
       "ul",
       "li",
       "ul",
@@ -1239,7 +1245,11 @@
       "ul",
       "li"
     ],
-    "platform-supplied": [
+    "platform": [
+      "ul",
+      "li"
+    ],
+    "supplied": [
       "ul",
       "li"
     ],
@@ -1387,7 +1397,13 @@
     "allowing": [
       "pre"
     ],
-    "read-only": [
+    "read": [
+      "pre",
+      "pre",
+      "pre"
+    ],
+    "only": [
+      "pre",
       "pre",
       "pre"
     ],
@@ -1404,13 +1420,7 @@
     "//allow": [
       "pre"
     ],
-    "only": [
-      "pre"
-    ],
     "fileiopermission": [
-      "pre"
-    ],
-    "read": [
       "pre"
     ],
     "new": [
@@ -1610,14 +1620,22 @@
       "ul",
       "li"
     ],
-    "http//msdn.microsoft.com/en-us/magazine/cc301467.aspx\nfor": [
+    "http//msdn.microsoft.com/en": [
+      "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "a"
+    ],
+    "us/magazine/cc301467.aspx\nfor": [
       "ul"
     ],
     "practice": [
       "ul",
       "li"
     ],
-    "http//msdn.microsoft.com/en-us/library/aa302424.aspx": [
+    "us/library/aa302424.aspx": [
       "ul",
       "li",
       "a"
@@ -1626,7 +1644,7 @@
       "li",
       "a"
     ],
-    "http//msdn.microsoft.com/en-us/magazine/cc301467.aspx": [
+    "us/magazine/cc301467.aspx": [
       "li",
       "a"
     ],
@@ -1654,7 +1672,12 @@
       "li",
       "a"
     ],
-    "server-side": [
+    "server": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "side": [
       "ul",
       "li",
       "a"

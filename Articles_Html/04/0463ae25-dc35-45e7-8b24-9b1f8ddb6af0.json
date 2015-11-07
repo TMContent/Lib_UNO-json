@@ -444,7 +444,10 @@
     "csrf": [
       "p",
       "ol",
+      "ol",
       "li",
+      "li",
+      "p",
       "p"
     ],
     "may": [
@@ -979,12 +982,18 @@
       "li",
       "p"
     ],
-    "-": [
+    "": [
       "ol",
+      "ol",
+      "li",
       "li",
       "p",
+      "p",
+      "ol",
       "ol",
       "li",
+      "li",
+      "p",
       "p"
     ],
     "this": [
@@ -1049,9 +1058,15 @@
       "li",
       "p",
       "ul",
+      "ul",
+      "li",
+      "a",
       "li",
       "a",
       "ul",
+      "ul",
+      "li",
+      "a",
       "li",
       "a"
     ],
@@ -1420,7 +1435,7 @@
       "li",
       "a"
     ],
-    "anti-csrf": [
+    "anti": [
       "ol",
       "li",
       "p"
@@ -1502,7 +1517,18 @@
       "li",
       "p"
     ],
-    "server-side": [
+    "server": [
+      "ol",
+      "li",
+      "p",
+      "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "a"
+    ],
+    "side": [
       "ol",
       "li",
       "p"
@@ -1526,7 +1552,20 @@
       "ul",
       "li"
     ],
-    "cross-site": [
+    "cross": [
+      "ul",
+      "li",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "a",
+      "li",
+      "a"
+    ],
+    "site": [
       "ul",
       "li",
       "ul",
@@ -1568,7 +1607,12 @@
       "li",
       "li"
     ],
-    "https//www.owasp.org/index.php/cross-site_request_forgery_%28csrf%29_prevention_cheat_sheetfor": [
+    "https//www.owasp.org/index.php/cross": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "site_request_forgery_%28csrf%29_prevention_cheat_sheetfor": [
       "ul"
     ],
     "owasp": [
@@ -1584,7 +1628,7 @@
       "li",
       "a"
     ],
-    "https//www.owasp.org/index.php/cross-site_request_forgery_%28csrf%29_prevention_cheat_sheet": [
+    "site_request_forgery_%28csrf%29_prevention_cheat_sheet": [
       "li",
       "a"
     ],
@@ -1778,7 +1822,7 @@
       "li",
       "a"
     ],
-    "time-out": [
+    "time": [
       "ul",
       "li",
       "a",
@@ -1810,7 +1854,15 @@
       "li",
       "a"
     ],
-    "client-accessible": [
+    "client": [
+      "ul",
+      "li",
+      "a",
+      "ul",
+      "li",
+      "a"
+    ],
+    "accessible": [
       "ul",
       "li",
       "a",
@@ -1880,14 +1932,6 @@
       "a",
       "li",
       "a",
-      "li",
-      "a",
-      "li",
-      "a"
-    ],
-    "server": [
-      "ul",
-      "ul",
       "li",
       "a",
       "li",

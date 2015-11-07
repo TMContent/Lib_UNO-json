@@ -17,8 +17,16 @@
       "li",
       "h1"
     ],
+    "64": [
+      "ul",
+      "li"
+    ],
     "443": [
       "i"
+    ],
+    "8859": [
+      "pre",
+      "pre"
     ],
     "applies": [
       "h1"
@@ -192,6 +200,7 @@
       "p",
       "p",
       "p",
+      "p",
       "h2",
       "em",
       "p",
@@ -206,6 +215,7 @@
       "ul",
       "li",
       "li",
+      "p",
       "p",
       "p",
       "p",
@@ -323,6 +333,8 @@
       "ul",
       "ul",
       "ul",
+      "ul",
+      "li",
       "li",
       "li",
       "li",
@@ -472,6 +484,8 @@
       "p",
       "p",
       "ol",
+      "li",
+      "ul",
       "li",
       "p",
       "p",
@@ -1087,7 +1101,9 @@
     ],
     "type": [
       "p",
-      "p"
+      "p",
+      "pre",
+      "pre"
     ],
     "of": [
       "p",
@@ -1115,13 +1131,26 @@
       "p",
       "p"
     ],
-    "hub-based,": [
-      "p"
-    ],
-    "switch-based": [
+    "hub": [
       "p",
       "ul",
       "li"
+    ],
+    "based,": [
+      "p"
+    ],
+    "switch": [
+      "p",
+      "ul",
+      "li"
+    ],
+    "based": [
+      "p",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "p"
     ],
     "etc).": [
       "p"
@@ -1139,10 +1168,6 @@
     ],
     "limited": [
       "p"
-    ],
-    "hub-based": [
-      "ul",
-      "li"
     ],
     "promiscuous": [
       "ul",
@@ -1218,9 +1243,6 @@
     "note": [
       "p"
     ],
-    "credential-sniffing": [
-      "p"
-    ],
     "extension": [
       "p"
     ],
@@ -1284,6 +1306,8 @@
     ],
     "monitoring": [
       "p",
+      "ol",
+      "li",
       "ol",
       "li"
     ],
@@ -1413,9 +1437,10 @@
       "ol",
       "li"
     ],
-    "packet-monitoring": [
+    "packet": [
       "ol",
-      "li"
+      "li",
+      "p"
     ],
     "doesn't": [
       "ol",
@@ -1435,7 +1460,9 @@
       "li",
       "p",
       "pre",
+      "pre",
       "p",
+      "pre",
       "pre"
     ],
     "necessary": [
@@ -1543,7 +1570,7 @@
       "ul",
       "li"
     ],
-    "base-64": [
+    "base": [
       "ul",
       "li"
     ],
@@ -1663,7 +1690,11 @@
       "ul",
       "li"
     ],
-    "man-in-the-middle": [
+    "man": [
+      "ul",
+      "li"
+    ],
+    "middle": [
       "ul",
       "li"
     ],
@@ -1732,7 +1763,9 @@
       "p"
     ],
     "form": [
-      "p"
+      "p",
+      "pre",
+      "pre"
     ],
     "submitted the": [
       "p"
@@ -1751,9 +1784,6 @@
       "p",
       "p",
       "p",
-      "p"
-    ],
-    "packet": [
       "p"
     ],
     "sent": [
@@ -1780,9 +1810,6 @@
       "p"
     ],
     "encrypted": [
-      "p"
-    ],
-    "based": [
       "p"
     ],
     "public": [
@@ -1878,6 +1905,9 @@
     "at": [
       "h2",
       "em",
+      "p",
+      "div",
+      "div",
       "p"
     ],
     "layer": [
@@ -2080,6 +2110,9 @@
       "p"
     ],
     "owasp": [
+      "p",
+      "div",
+      "div",
       "p"
     ],
     "proper": [
@@ -2251,7 +2284,11 @@
       "pre",
       "pre"
     ],
-    "wwwexample.comuser-agent:": [
+    "wwwexample.comuser": [
+      "pre",
+      "pre"
+    ],
+    "agent:": [
       "pre",
       "pre"
     ],
@@ -2287,19 +2324,47 @@
       "pre",
       "pre"
     ],
-    "text/xmlapplication/xml,application/xhtml+xml,text/htmlaccept-language:": [
+    "text/xmlapplication/xml,application/xhtml+xml,text/htmlaccept": [
       "pre",
       "pre"
     ],
-    "it-itit;q=0.8,en-us;q=0.5,en;q=0.3accept-encoding:": [
+    "language:": [
       "pre",
       "pre"
     ],
-    "gzipdeflateaccept-charset:": [
+    "itit;q=0.8,en": [
       "pre",
       "pre"
     ],
-    "iso-8859-1utf-8;q=0.7,*;q=0.7keep-alive:": [
+    "us;q=0.5,en;q=0.3accept": [
+      "pre",
+      "pre"
+    ],
+    "encoding:": [
+      "pre",
+      "pre"
+    ],
+    "gzipdeflateaccept": [
+      "pre",
+      "pre"
+    ],
+    "charset:": [
+      "pre",
+      "pre"
+    ],
+    "iso": [
+      "pre",
+      "pre"
+    ],
+    "1utf": [
+      "pre",
+      "pre"
+    ],
+    "8;q=0.7,*;q=0.7keep": [
+      "pre",
+      "pre"
+    ],
+    "alive:": [
       "pre",
       "pre"
     ],
@@ -2307,18 +2372,34 @@
       "pre",
       "pre"
     ],
-    "keep-alivecookie": [
+    "keep": [
+      "pre",
+      "pre"
+    ],
+    "alivecookie": [
       "pre"
     ],
     "language=english": [
       "pre",
       "pre"
     ],
-    "content-type": [
+    "content": [
       "pre",
       "pre"
     ],
-    "application/x-www-form-urlencodedcontent-length": [
+    "application/x": [
+      "pre",
+      "pre"
+    ],
+    "www": [
+      "pre",
+      "pre"
+    ],
+    "urlencodedcontent": [
+      "pre",
+      "pre"
+    ],
+    "length": [
       "pre",
       "pre"
     ],
@@ -2349,7 +2430,7 @@
     "https//www.example.com:443/login": [
       "pre"
     ],
-    "keep-alivereferer": [
+    "alivereferer": [
       "pre"
     ],
     "https//www.example.com/login.jspcookie:": [
@@ -2366,7 +2447,7 @@
       "div",
       "p"
     ],
-    "owasp-at-001 http://www.owasp.org/index.php/testing_for_credentials_transport": [
+    "001 http://www.owasp.org/index.php/testing_for_credentials_transport": [
       "div",
       "div",
       "p"

@@ -79,6 +79,7 @@
     "encrypt": [
       "p",
       "p",
+      "ul",
       "li",
       "ul",
       "ul",
@@ -188,11 +189,24 @@
       "p",
       "p"
     ],
-    "-pe": [
+    "": [
       "p",
       "pre",
+      "pre",
+      "pre",
       "ul",
+      "ul",
+      "li",
+      "li",
       "li"
+    ],
+    "pe": [
+      "p",
+      "strong",
+      "pre",
+      "ul",
+      "li",
+      "strong"
     ],
     "provider": [
       "p",
@@ -215,10 +229,6 @@
     ],
     "option": [
       "p"
-    ],
-    "pe": [
-      "strong",
-      "strong"
     ],
     "following": [
       "p",
@@ -293,17 +303,20 @@
     "\"connectionstrings\"": [
       "pre"
     ],
-    "-app": [
+    "app": [
       "pre",
-      "li"
+      "ul",
+      "li",
+      "strong"
     ],
     "\"/machinedpapi\"": [
       "pre"
     ],
-    "-prov": [
+    "prov": [
       "pre",
       "ul",
-      "li"
+      "li",
+      "strong"
     ],
     "\"dataprotectionconfigurationprovider\"": [
       "pre"
@@ -315,9 +328,6 @@
       "li",
       "li",
       "li"
-    ],
-    "encrypt-app": [
-      "ul"
     ],
     "your": [
       "ul",
@@ -411,12 +421,6 @@
     "name": [
       "ul",
       "li"
-    ],
-    "app": [
-      "strong"
-    ],
-    "prov": [
-      "strong"
     ],
     "net": [
       "p",
@@ -612,7 +616,15 @@
       "li",
       "li"
     ],
-    "http//msdn2.microsoft.com/en-us/library/ms998280.aspx": [
+    "http//msdn2.microsoft.com/en": [
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "a",
+      "a"
+    ],
+    "us/library/ms998280.aspx": [
       "ul",
       "li",
       "a"
@@ -621,7 +633,7 @@
       "ul",
       "li"
     ],
-    "http//msdn2.microsoft.com/en-us/library/ms998283.aspx": [
+    "us/library/ms998283.aspx": [
       "ul",
       "li",
       "a"

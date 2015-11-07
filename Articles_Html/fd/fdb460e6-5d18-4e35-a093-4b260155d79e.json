@@ -10,6 +10,7 @@
       "h2",
       "p",
       "p",
+      "p",
       "ol",
       "ol",
       "ol",
@@ -264,7 +265,10 @@
     "prevent": [
       "p"
     ],
-    "cross-site": [
+    "cross": [
+      "p"
+    ],
+    "site": [
       "p"
     ],
     "request": [
@@ -317,7 +321,13 @@
       "li"
     ],
     "url": [
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a",
+      "ul",
+      "li",
+      "a"
     ],
     "which": [
       "p"
@@ -381,6 +391,7 @@
       "p"
     ],
     "difficult": [
+      "p",
       "p"
     ],
     "if": [
@@ -416,7 +427,7 @@
     "including": [
       "p"
     ],
-    "difficult-to-predict": [
+    "predict": [
       "p"
     ],
     "is": [
@@ -729,7 +740,13 @@
     ],
     "based": [
       "ol",
-      "li"
+      "li",
+      "ul",
+      "li",
+      "a",
+      "ul",
+      "li",
+      "a"
     ],
     "current": [
       "ol",
@@ -868,7 +885,9 @@
     ],
     "server": [
       "ol",
-      "li"
+      "li",
+      "h2",
+      "h2"
     ],
     "as": [
       "ol",
@@ -910,7 +929,7 @@
       "h2",
       "h2"
     ],
-    "server-side": [
+    "side": [
       "h2",
       "h2"
     ],
@@ -974,6 +993,9 @@
     ],
     "encode": [
       "ul",
+      "ul",
+      "li",
+      "a",
       "li",
       "a"
     ],
@@ -1022,15 +1044,10 @@
       "li",
       "a"
     ],
-    "role-based": [
+    "role": [
       "ul",
       "li",
       "a",
-      "ul",
-      "li",
-      "a"
-    ],
-    "url-encode": [
       "ul",
       "li",
       "a"
@@ -1080,15 +1097,13 @@
     ],
     "encoded": [
       "ul",
+      "ul",
+      "li",
+      "a",
       "li",
       "a"
     ],
     "enforced": [
-      "ul",
-      "li",
-      "a"
-    ],
-    "url-encoded": [
       "ul",
       "li",
       "a"

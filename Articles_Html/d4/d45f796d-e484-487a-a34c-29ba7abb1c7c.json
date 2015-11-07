@@ -1120,7 +1120,9 @@
       "b"
     ],
     "specific": [
-      "p"
+      "p",
+      "ul",
+      "li"
     ],
     "call": [
       "p",
@@ -1609,9 +1611,11 @@
       "pre",
       "ul",
       "ul",
+      "ul",
       "li",
       "li",
-      "b"
+      "b",
+      "li"
     ],
     "credentials": [
       "p",
@@ -1778,9 +1782,11 @@
       "li",
       "li",
       "ul",
+      "ul",
       "li",
       "li",
-      "b"
+      "b",
+      "li"
     ],
     "uses": [
       "p",
@@ -3511,8 +3517,14 @@
       "em",
       "em"
     ],
-    "lower-case": [
+    "lower": [
       "p"
+    ],
+    "case": [
+      "p",
+      "pre",
+      "pre",
+      "pre"
     ],
     "n": [
       "p",
@@ -3871,12 +3883,38 @@
       "li",
       "pre"
     ],
-    "validationexpression=\"^\\w-]+([\\.": [
+    "validationexpression=\"^\\w": [
       "ol",
       "li",
       "pre"
     ],
-    "[\\w-]+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*\"": [
+    "]+([\\.": [
+      "ol",
+      "li",
+      "pre",
+      "ol",
+      "li",
+      "pre"
+    ],
+    "[\\w": [
+      "ol",
+      "li",
+      "pre",
+      "ol",
+      "li",
+      "pre"
+    ],
+    "]+)*@\\w+([": [
+      "ol",
+      "li",
+      "pre"
+    ],
+    ".]\\w+)*\\.\\w+([": [
+      "ol",
+      "li",
+      "pre"
+    ],
+    ".]\\w+)*\"": [
       "ol",
       "li",
       "pre"
@@ -4067,12 +4105,17 @@
       "li",
       "pre"
     ],
-    "validationexpression=\"^\\w+[-.]\\w+)*\\\\[\\w-]+([\\.": [
+    "validationexpression=\"^\\w+[": [
       "ol",
       "li",
       "pre"
     ],
-    "[\\w-]+)*\"": [
+    ".]\\w+)*\\\\[\\w": [
+      "ol",
+      "li",
+      "pre"
+    ],
+    "]+)*\"": [
       "ol",
       "li",
       "pre"
@@ -4109,11 +4152,6 @@
       "pre"
     ],
     "domainname){": [
-      "pre"
-    ],
-    "case": [
-      "pre",
-      "pre",
       "pre"
     ],
     "\"testdomain1test.com\":": [
@@ -4738,7 +4776,7 @@
       "ul",
       "li"
     ],
-    "cross-site": [
+    "cross": [
       "ul",
       "li"
     ],
@@ -4811,15 +4849,15 @@
       "ul",
       "li"
     ],
-    "user-specific": [
-      "ul",
-      "li"
-    ],
     "preferences": [
       "ul",
       "li"
     ],
-    "non-sensitive": [
+    "non": [
+      "ul",
+      "li"
+    ],
+    "sensitive": [
       "ul",
       "li"
     ],

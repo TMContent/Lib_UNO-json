@@ -897,11 +897,17 @@
     "authentication": [
       "ol",
       "ol",
+      "ol",
       "li",
       "ul",
       "li",
       "li",
+      "li",
       "ul",
+      "ul",
+      "li",
+      "p",
+      "strong",
       "li",
       "p",
       "ul",
@@ -1234,11 +1240,16 @@
       "li",
       "p"
     ],
-    "re-authentication": [
+    "re": [
+      "ol",
       "ol",
       "li",
+      "li",
+      "ul",
       "ul",
       "li",
+      "li",
+      "p",
       "p",
       "strong"
     ],
@@ -1257,7 +1268,7 @@
       "li",
       "p"
     ],
-    "re-authenticate": [
+    "authenticate": [
       "ol",
       "li",
       "ul",
@@ -1443,7 +1454,14 @@
       "p",
       "h1"
     ],
-    "per-section": [
+    "per": [
+      "ol",
+      "li",
+      "ul",
+      "li",
+      "p"
+    ],
+    "section": [
       "ol",
       "li",
       "ul",
@@ -1672,7 +1690,19 @@
       "p",
       "strong"
     ],
-    "forms-based": [
+    "forms": [
+      "ol",
+      "li",
+      "ul",
+      "li",
+      "p",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "a"
+    ],
+    "based": [
       "ol",
       "li",
       "ul",
@@ -1726,7 +1756,10 @@
     "vulnerability": [
       "p"
     ],
-    "cross-site": [
+    "cross": [
+      "p"
+    ],
+    "site": [
       "p"
     ],
     "scripting": [
@@ -1751,7 +1784,11 @@
       "pre",
       "pre"
     ],
-    "*/*accept-encoding": [
+    "*/*accept": [
+      "pre",
+      "pre"
+    ],
+    "encoding": [
       "pre",
       "pre"
     ],
@@ -1759,7 +1796,11 @@
       "pre",
       "pre"
     ],
-    "deflateuser-agent": [
+    "deflateuser": [
+      "pre",
+      "pre"
+    ],
+    "agent": [
       "pre",
       "pre"
     ],
@@ -1794,7 +1835,11 @@
       "pre",
       "pre"
     ],
-    "keep-alivecookie": [
+    "keep": [
+      "pre",
+      "pre"
+    ],
+    "alivecookie": [
       "pre",
       "pre"
     ],
@@ -1848,13 +1893,6 @@
     "securing": [
       "ul",
       "li"
-    ],
-    "forms": [
-      "ul",
-      "ul",
-      "li",
-      "li",
-      "a"
     ],
     "see": [
       "ul",

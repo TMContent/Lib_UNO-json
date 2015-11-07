@@ -333,7 +333,66 @@
       "p",
       "p"
     ],
-    "strict-transport-security": [
+    "strict": [
+      "p",
+      "p",
+      "p",
+      "ol",
+      "li",
+      "em",
+      "p",
+      "p",
+      "pre",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "a",
+      "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "a",
+      "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "a",
+      "title"
+    ],
+    "transport": [
+      "p",
+      "p",
+      "p",
+      "ol",
+      "li",
+      "em",
+      "p",
+      "p",
+      "pre",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "a",
+      "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "a",
+      "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "a",
+      "title"
+    ],
+    "security": [
+      "p",
       "p",
       "p",
       "ol",
@@ -346,12 +405,18 @@
       "li",
       "ul",
       "ul",
+      "ul",
+      "li",
+      "a",
       "li",
       "a",
       "li",
       "a",
       "ul",
       "ul",
+      "ul",
+      "li",
+      "a",
       "li",
       "a",
       "li",
@@ -442,15 +507,6 @@
       "li",
       "h2",
       "h2"
-    ],
-    "strict": [
-      "p"
-    ],
-    "transport": [
-      "p"
-    ],
-    "security": [
-      "p"
     ],
     "or": [
       "p",
@@ -737,7 +793,9 @@
       "p"
     ],
     "domains": [
-      "p"
+      "p",
+      "ol",
+      "li"
     ],
     "utilizing": [
       "p"
@@ -965,7 +1023,18 @@
       "ol",
       "li"
     ],
-    "max-age": [
+    "max": [
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "em",
+      "li",
+      "li",
+      "em",
+      "em"
+    ],
+    "age": [
       "ol",
       "ol",
       "ol",
@@ -1065,7 +1134,13 @@
       "em",
       "pre"
     ],
-    "\"max-age=7776000": [
+    "\"max": [
+      "ol",
+      "li",
+      "em",
+      "pre"
+    ],
+    "age=7776000": [
       "ol",
       "li",
       "em",
@@ -1096,7 +1171,7 @@
       "ol",
       "li"
     ],
-    "sub-domains": [
+    "sub": [
       "ol",
       "li"
     ],
@@ -1307,7 +1382,10 @@
     "sending": [
       "p"
     ],
-    "look-alike": [
+    "look": [
+      "p"
+    ],
+    "alike": [
       "p"
     ],
     "may": [
@@ -1441,7 +1519,32 @@
       "li",
       "li"
     ],
-    "http//tools.ietf.org/html/draft-ietf-websec-strict-transport-sec-14#section-6.1": [
+    "http//tools.ietf.org/html/draft": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "ietf": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "websec": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "sec": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "14#section": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "6.1": [
       "ul",
       "li",
       "a"
@@ -1462,7 +1565,47 @@
     "guidelines": [
       "h2"
     ],
-    "x-content-security-policy": [
+    "x": [
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "a",
+      "li",
+      "a",
+      "li",
+      "a",
+      "li",
+      "a",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "a",
+      "li",
+      "a",
+      "li",
+      "a",
+      "li",
+      "a"
+    ],
+    "content": [
+      "ul",
+      "li",
+      "a",
+      "ul",
+      "li",
+      "a"
+    ],
+    "policy": [
       "ul",
       "li",
       "a",
@@ -1481,18 +1624,24 @@
     "xss": [
       "ul",
       "ul",
-      "li",
-      "a",
-      "li",
-      "a",
-      "ul",
       "ul",
       "li",
       "a",
       "li",
+      "li",
+      "a",
+      "a",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "li",
+      "a",
       "a"
     ],
-    "x-xss-protection": [
+    "protection": [
       "ul",
       "li",
       "a",
@@ -1522,14 +1671,43 @@
       "li",
       "a"
     ],
-    "x-frame-options": [
+    "frame": [
+      "ul",
       "ul",
       "ul",
       "li",
       "a",
       "li",
       "a",
+      "li",
+      "a",
       "ul",
+      "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "a",
+      "li",
+      "a"
+    ],
+    "options": [
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "a",
+      "li",
+      "a",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "a",
       "li",
       "a"
     ],
@@ -1546,28 +1724,6 @@
       "li",
       "a",
       "ul",
-      "li",
-      "a"
-    ],
-    "x-frame": [
-      "ul",
-      "li",
-      "a",
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a"
-    ],
-    "options": [
-      "ul",
-      "li",
-      "a",
-      "ul",
-      "ul",
-      "li",
-      "a",
       "li",
       "a"
     ],

@@ -603,6 +603,7 @@
       "p",
       "p",
       "p",
+      "p",
       "ul",
       "li",
       "p",
@@ -615,6 +616,10 @@
       "p",
       "p",
       "h3",
+      "p",
+      "div",
+      "pre",
+      "p",
       "p",
       "p",
       "p",
@@ -836,7 +841,7 @@
       "p",
       "blockquote"
     ],
-    "application-level": [
+    "level": [
       "p"
     ],
     "contain": [
@@ -1276,7 +1281,13 @@
       "li",
       "p",
       "ul",
+      "ul",
+      "ul",
       "li",
+      "li",
+      "li",
+      "b",
+      "p",
       "p",
       "p",
       "p",
@@ -1411,7 +1422,31 @@
       "p",
       "p"
     ],
-    "client-side": [
+    "client": [
+      "p",
+      "ul",
+      "li",
+      "div",
+      "ul",
+      "li",
+      "p",
+      "ul",
+      "li",
+      "ul",
+      "li",
+      "p",
+      "div",
+      "pre",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "p",
+      "p",
+      "h1",
+      "p"
+    ],
+    "side": [
       "p",
       "p",
       "ul",
@@ -1419,8 +1454,14 @@
       "p",
       "ul",
       "ul",
+      "ul",
+      "ul",
       "li",
-      "li"
+      "li",
+      "li",
+      "li",
+      "b",
+      "p"
     ],
     "reduce": [
       "p",
@@ -1685,6 +1726,7 @@
       "li",
       "ul",
       "li",
+      "p",
       "p",
       "p",
       "p",
@@ -2015,7 +2057,10 @@
       "li",
       "p",
       "ul",
+      "ul",
       "li",
+      "li",
+      "p",
       "ul",
       "li",
       "b",
@@ -2195,14 +2240,17 @@
     ],
     "html": [
       "p",
+      "p",
       "ul",
       "ul",
       "li",
       "li",
+      "p",
       "p",
       "p",
       "p",
       "h2",
+      "p",
       "p",
       "p",
       "p",
@@ -2215,13 +2263,31 @@
       "p",
       "p",
       "p",
+      "p",
       "div",
       "pre",
       "p",
       "p"
     ],
-    "html-encode": [
+    "encode": [
       "p",
+      "ul",
+      "li",
+      "div",
+      "ul",
+      "li",
+      "ul",
+      "li",
+      "p",
+      "ol",
+      "li",
+      "div",
+      "pre",
+      "h1",
+      "p",
+      "p",
+      "h2",
+      "h2",
       "p"
     ],
     "data": [
@@ -2472,25 +2538,6 @@
       "li",
       "p"
     ],
-    "encode": [
-      "ul",
-      "li",
-      "div",
-      "ul",
-      "li",
-      "ul",
-      "li",
-      "ol",
-      "li",
-      "div",
-      "pre",
-      "h1",
-      "p",
-      "p",
-      "h2",
-      "h2",
-      "p"
-    ],
     "unsafe": [
       "ul",
       "li",
@@ -2580,21 +2627,6 @@
       "div",
       "ul",
       "li",
-      "h1",
-      "p"
-    ],
-    "client": [
-      "ul",
-      "li",
-      "div",
-      "ul",
-      "li",
-      "ul",
-      "li",
-      "div",
-      "pre",
-      "p",
-      "p",
       "h1",
       "p"
     ],
@@ -3016,6 +3048,8 @@
     "based": [
       "ul",
       "li",
+      "ul",
+      "li",
       "p",
       "p"
     ],
@@ -3077,12 +3111,28 @@
       "p",
       "p"
     ],
-    "cross-site": [
+    "cross": [
       "ul",
       "ul",
       "li",
       "li",
-      "b"
+      "b",
+      "h3",
+      "p",
+      "div",
+      "pre",
+      "p",
+      "p"
+    ],
+    "site": [
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "li",
+      "b",
+      "p"
     ],
     "scripting": [
       "ul",
@@ -3279,11 +3329,6 @@
     "trusted": [
       "ul",
       "li"
-    ],
-    "site": [
-      "ul",
-      "li",
-      "p"
     ],
     "has": [
       "ul",
@@ -3495,6 +3540,7 @@
       "ul",
       "li",
       "p",
+      "h2",
       "p",
       "p",
       "p",
@@ -3709,10 +3755,11 @@
       "li",
       "p"
     ],
-    "free-format": [
+    "free": [
       "ul",
       "li",
-      "p"
+      "p",
+      "h2"
     ],
     "comment": [
       "ul",
@@ -3840,7 +3887,10 @@
       "li",
       "p"
     ],
-    "hard-coded": [
+    "hard": [
+      "p"
+    ],
+    "coded": [
       "p"
     ],
     "dangerous": [
@@ -3968,7 +4018,7 @@
       "p",
       "p"
     ],
-    "html-formatted": [
+    "formatted": [
       "p"
     ],
     "confirm": [
@@ -4463,14 +4513,6 @@
       "ul",
       "li"
     ],
-    "server-side": [
-      "ul",
-      "ul",
-      "li",
-      "li",
-      "b",
-      "p"
-    ],
     "meets": [
       "ul",
       "li"
@@ -4726,7 +4768,7 @@
       "ul",
       "li"
     ],
-    "pattern-based": [
+    "pattern": [
       "ul",
       "li"
     ],
@@ -4830,7 +4872,24 @@
       "div",
       "pre"
     ],
-    "validationexpression=\"^a-za-z'.\\s]{1,40}$\"": [
+    "validationexpression=\"^a": [
+      "div",
+      "pre"
+    ],
+    "za": [
+      "div",
+      "pre",
+      "div",
+      "pre",
+      "pre",
+      "div",
+      "pre",
+      "div",
+      "div",
+      "pre",
+      "pre"
+    ],
+    "z'.\\s]{1,40}$\"": [
       "div",
       "pre"
     ],
@@ -5108,7 +5167,11 @@
       "div",
       "pre"
     ],
-    "regex@\"^[a-za-z'.\\s]{1,40}$\");response.write(reg.ismatch(txtname.text));": [
+    "regex@\"^[a": [
+      "div",
+      "pre"
+    ],
+    "z'.\\s]{1,40}$\");response.write(reg.ismatch(txtname.text));": [
       "div",
       "pre"
     ],
@@ -5119,7 +5182,12 @@
     "methodif": [
       "pre"
     ],
-    "!regex.ismatch(txtname.text,@\"^[a-za-z'.\\s]{1,40}$\"))": [
+    "!regex.ismatch(txtname.text,@\"^[a": [
+      "pre"
+    ],
+    "z'.\\s]{1,40}$\"))": [
+      "pre",
+      "div",
       "pre"
     ],
     "does": [
@@ -5622,9 +5690,6 @@
     "sanitizing": [
       "h2"
     ],
-    "free-text": [
-      "h2"
-    ],
     "preventing": [
       "p"
     ],
@@ -5778,7 +5843,7 @@
       "p",
       "p"
     ],
-    "html-encodes": [
+    "encodes": [
       "p"
     ],
     "support": [
@@ -5909,7 +5974,7 @@
       "div",
       "pre"
     ],
-    "@\"^a-za-z'.\\s]{1,40}$\"))": [
+    "@\"^a": [
       "div",
       "pre"
     ],
@@ -6014,7 +6079,9 @@
     "manipulating": [
       "p"
     ],
-    "user-supplied": [
+    "supplied": [
+      "p",
+      "p",
       "p"
     ],
     "full": [
@@ -6042,10 +6109,6 @@
       "p",
       "b"
     ],
-    "cross": [
-      "h3",
-      "p"
-    ],
     "mapping": [
       "h3",
       "p",
@@ -6054,10 +6117,6 @@
       "p"
     ],
     "map": [
-      "p"
-    ],
-    "supplied": [
-      "p",
       "p"
     ],
     "virtual": [
@@ -6088,12 +6147,6 @@
       "p"
     ],
     "so": [
-      "p"
-    ],
-    "cross-application": [
-      "p",
-      "div",
-      "pre",
       "p"
     ],
     "technique": [
@@ -6267,7 +6320,45 @@
       "h2",
       "p"
     ],
-    "^?:http|https|ftp)://[a-za-z0-9\\.\\-]+(?:\\:\\d{1,5})?(?:[a-za-z0-9\\.\\;\\:\\@\\&\\=\\+\\$\\,\\?/]|%u[0-9a-fa-f]{4}|%[0-9a-fa-f]{2})*$": [
+    "^?:http|https|ftp)://[a": [
+      "div",
+      "pre"
+    ],
+    "z0": [
+      "div",
+      "div",
+      "pre",
+      "pre"
+    ],
+    "9\\.\\": [
+      "div",
+      "pre"
+    ],
+    "]+(?:\\:\\d{1,5})?(?:[a": [
+      "div",
+      "pre"
+    ],
+    "9\\.\\;\\:\\@\\&\\=\\+\\$\\,\\?/]|%u[0": [
+      "div",
+      "pre"
+    ],
+    "9a": [
+      "div",
+      "div",
+      "pre",
+      "pre"
+    ],
+    "fa": [
+      "div",
+      "div",
+      "pre",
+      "pre"
+    ],
+    "f]{4}|%[0": [
+      "div",
+      "pre"
+    ],
+    "f]{2})*$": [
       "div",
       "pre"
     ],

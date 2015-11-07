@@ -52,6 +52,12 @@
       "li",
       "h1"
     ],
+    "7": [
+      "ol",
+      "li",
+      "div",
+      "pre"
+    ],
     "30": [
       "ul",
       "li"
@@ -1079,6 +1085,15 @@
       "ol",
       "ol",
       "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
+      "b",
+      "ul",
+      "li",
+      "b",
       "li",
       "li",
       "li",
@@ -1342,6 +1357,8 @@
       "li",
       "li",
       "ul",
+      "ul",
+      "li",
       "li",
       "p",
       "ul",
@@ -2364,7 +2381,9 @@
     ],
     "related": [
       "p",
-      "p"
+      "p",
+      "ul",
+      "li"
     ],
     "beyond": [
       "p"
@@ -2785,9 +2804,16 @@
       "p",
       "h2",
       "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
       "li",
       "div",
+      "div",
       "pre",
+      "pre",
+      "blockquote",
       "ol",
       "ol",
       "li",
@@ -2932,7 +2958,10 @@
     ],
     "generated": [
       "p",
-      "p"
+      "p",
+      "ol",
+      "li",
+      "blockquote"
     ],
     "include": [
       "p",
@@ -3009,7 +3038,11 @@
     ],
     "system": [
       "p",
-      "p"
+      "p",
+      "p",
+      "ol",
+      "li",
+      "blockquote"
     ],
     "tamper": [
       "p"
@@ -3136,7 +3169,8 @@
     "supplement": [
       "p"
     ],
-    "system-defined": [
+    "defined": [
+      "p",
       "p"
     ],
     "provider": [
@@ -3296,7 +3330,34 @@
       "ul",
       "li"
     ],
-    "e-mail": [
+    "e": [
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
+      "b",
+      "ul",
+      "li",
+      "b",
+      "p",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "li"
+    ],
+    "mail": [
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "p",
       "ul",
       "ul",
       "li",
@@ -3305,9 +3366,12 @@
       "ul",
       "ul",
       "ul",
+      "ul",
       "li",
       "li",
-      "li"
+      "li",
+      "li",
+      "p"
     ],
     "notifications": [
       "ul",
@@ -4587,7 +4651,7 @@
       "ol",
       "li"
     ],
-    "non-web": [
+    "non": [
       "ol",
       "ol",
       "li",
@@ -4947,9 +5011,60 @@
       "ol",
       "li"
     ],
-    "strong-name": [
+    "strong": [
       "ol",
       "li"
+    ],
+    "name": [
+      "ol",
+      "li",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "li",
+      "b",
+      "ol",
+      "li",
+      "ul",
+      "li",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "b",
+      "li",
+      "li",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "b",
+      "p",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "b",
+      "p",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "b",
+      "li",
+      "li",
+      "li",
+      "ol",
+      "li",
+      "div",
+      "pre"
     ],
     "install": [
       "ol",
@@ -5089,7 +5204,7 @@
       "p",
       "p"
     ],
-    "machine-level": [
+    "machine": [
       "p",
       "p",
       "p",
@@ -5097,7 +5212,26 @@
       "p",
       "p",
       "p",
-      "p"
+      "p",
+      "ol",
+      "li",
+      "div",
+      "pre"
+    ],
+    "level": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "ol",
+      "li",
+      "div",
+      "pre"
     ],
     "webconfig.comments": [
       "p"
@@ -5142,8 +5276,20 @@
       "p",
       "p"
     ],
-    "sub-elements": [
+    "sub": [
       "p"
+    ],
+    "elements": [
+      "p",
+      "p",
+      "ul",
+      "li",
+      "ul",
+      "li",
+      "ul",
+      "li",
+      "ul",
+      "li"
     ],
     "heartbeatinterval=\"0\"": [
       "div",
@@ -5226,17 +5372,6 @@
       "b",
       "p",
       "b"
-    ],
-    "elements": [
-      "p",
-      "ul",
-      "li",
-      "ul",
-      "li",
-      "ul",
-      "li",
-      "ul",
-      "li"
     ],
     "buffermodes>.": [
       "ul",
@@ -5798,55 +5933,6 @@
     "follows": [
       "p"
     ],
-    "name": [
-      "ul",
-      "ul",
-      "ul",
-      "li",
-      "li",
-      "li",
-      "b",
-      "ol",
-      "li",
-      "ul",
-      "li",
-      "ul",
-      "ul",
-      "ul",
-      "ul",
-      "li",
-      "li",
-      "b",
-      "li",
-      "li",
-      "ul",
-      "ul",
-      "li",
-      "li",
-      "b",
-      "p",
-      "ul",
-      "ul",
-      "li",
-      "li",
-      "b",
-      "p",
-      "ul",
-      "ul",
-      "ul",
-      "ul",
-      "ul",
-      "li",
-      "li",
-      "b",
-      "li",
-      "li",
-      "li",
-      "ol",
-      "li",
-      "div",
-      "pre"
-    ],
     "other": [
       "ul",
       "li",
@@ -6255,18 +6341,36 @@
       "p",
       "b"
     ],
-    "-e": [
+    "": [
       "ol",
       "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "li",
+      "li",
       "li",
       "li",
       "p",
+      "p",
+      "p",
+      "b",
+      "b",
       "b",
       "ul",
+      "ul",
+      "ul",
+      "li",
+      "b",
+      "li",
+      "b",
       "li",
       "b"
     ],
-    "-s": [
+    "s": [
       "ol",
       "ol",
       "li",
@@ -6281,17 +6385,6 @@
       "ol",
       "li",
       "p"
-    ],
-    "-a": [
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "p",
-      "b",
-      "ul",
-      "li",
-      "b"
     ],
     "wthis": [
       "ol",
@@ -6586,7 +6679,13 @@
       "p",
       "p"
     ],
-    "fully-qualified": [
+    "fully": [
+      "ul",
+      "li",
+      "ul",
+      "li"
+    ],
+    "qualified": [
       "ul",
       "li",
       "ul",
@@ -7080,7 +7179,7 @@
       "p",
       "p"
     ],
-    "high-level": [
+    "high": [
       "p"
     ],
     "audits": [
@@ -7371,11 +7470,6 @@
       "li",
       "blockquote"
     ],
-    "system-generated": [
-      "ol",
-      "li",
-      "blockquote"
-    ],
     "systemweb.management.webeventcodes.webextendedbase": [
       "b"
     ],
@@ -7404,9 +7498,6 @@
       "p"
     ],
     "rule>": [
-      "p"
-    ],
-    "defined": [
       "p"
     ],
     "cause": [
@@ -7709,19 +7800,19 @@
       "div",
       "pre"
     ],
-    "/lm/w3svc/1/root/healthmonitoring-7-127656015969887178": [
+    "/lm/w3svc/1/root/healthmonitoring": [
+      "ol",
+      "li",
+      "div",
+      "pre"
+    ],
+    "127656015969887178": [
       "ol",
       "li",
       "div",
       "pre"
     ],
     "trust": [
-      "ol",
-      "li",
-      "div",
-      "pre"
-    ],
-    "level": [
       "ol",
       "li",
       "div",
@@ -7756,12 +7847,6 @@
       "pre"
     ],
     "c\\inetpub\\wwwroot\\healthmonitoring\\": [
-      "ol",
-      "li",
-      "div",
-      "pre"
-    ],
-    "machine": [
       "ol",
       "li",
       "div",
@@ -7847,16 +7932,6 @@
     "receivers": [
       "ul",
       "li"
-    ],
-    "mail": [
-      "ul",
-      "ul",
-      "li",
-      "li",
-      "p",
-      "ul",
-      "li",
-      "p"
     ],
     "maxeventlengthforsimplemessage": [
       "ul",
@@ -7994,10 +8069,6 @@
       "li"
     ],
     "helps": [
-      "ul",
-      "li"
-    ],
-    "event-related": [
       "ul",
       "li"
     ],

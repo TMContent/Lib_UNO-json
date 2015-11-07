@@ -173,6 +173,7 @@
       "li",
       "li",
       "li",
+      "p",
       "pre",
       "pre",
       "pre",
@@ -644,6 +645,8 @@
       "ul",
       "ul",
       "li",
+      "li",
+      "ul",
       "li"
     ],
     "your": [
@@ -858,7 +861,8 @@
     ],
     "content": [
       "ul",
-      "li"
+      "li",
+      "pre"
     ],
     "access": [
       "li"
@@ -892,9 +896,14 @@
       "ul",
       "li"
     ],
-    "un-encoded": [
+    "un": [
       "ul",
       "li"
+    ],
+    "encoded": [
+      "ul",
+      "li",
+      "p"
     ],
     "input": [
       "ul",
@@ -951,10 +960,14 @@
     "cookie": [
       "ul",
       "ul",
+      "ul",
+      "li",
       "li",
       "li",
       "ul",
       "ul",
+      "ul",
+      "li",
       "li",
       "li"
     ],
@@ -1064,14 +1077,12 @@
     ],
     "set": [
       "ul",
-      "li",
-      "ul",
-      "li"
-    ],
-    "set-cookie": [
       "ul",
       "li",
+      "li",
       "ul",
+      "ul",
+      "li",
       "li"
     ],
     "example.": [
@@ -1084,7 +1095,7 @@
       "ul",
       "li"
     ],
-    "context-sensitive": [
+    "sensitive": [
       "ul",
       "li"
     ],
@@ -1156,7 +1167,11 @@
       "ul",
       "li"
     ],
-    "\"set-cookie\"": [
+    "\"set": [
+      "ul",
+      "li"
+    ],
+    "cookie\"": [
       "ul",
       "li"
     ],
@@ -1456,16 +1471,42 @@
       "pre",
       "pre"
     ],
-    "*/*accept-language": [
-      "pre"
-    ],
-    "en-usua-cpu:": [
+    "*/*accept": [
       "pre",
       "pre",
       "pre",
       "pre"
     ],
-    "x86accept-encoding:": [
+    "language": [
+      "pre"
+    ],
+    "en": [
+      "pre",
+      "pre",
+      "pre",
+      "pre"
+    ],
+    "usua": [
+      "pre",
+      "pre",
+      "pre",
+      "pre"
+    ],
+    "cpu:": [
+      "pre",
+      "pre",
+      "pre",
+      "pre"
+    ],
+    "x86accept": [
+      "pre",
+      "pre",
+      "pre",
+      "pre"
+    ],
+    "encoding:": [
+      "pre",
+      "pre",
       "pre",
       "pre",
       "pre",
@@ -1477,7 +1518,13 @@
       "pre",
       "pre"
     ],
-    "deflateuser-agent:": [
+    "deflateuser": [
+      "pre",
+      "pre",
+      "pre",
+      "pre"
+    ],
+    "agent:": [
       "pre",
       "pre",
       "pre",
@@ -1489,11 +1536,24 @@
       "pre",
       "pre"
     ],
-    "somewherecom\nproxy-connection:": [
+    "somewherecom\nproxy": [
       "pre",
       "pre"
     ],
-    "keep-alive": [
+    "connection:": [
+      "pre",
+      "pre",
+      "pre",
+      "pre"
+    ],
+    "keep": [
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre"
+    ],
+    "alive": [
       "pre",
       "pre"
     ],
@@ -1533,20 +1593,43 @@
       "pre",
       "pre"
     ],
-    "php/44.2x-powered-by:": [
+    "php/44.2x": [
+      "pre"
+    ],
+    "powered": [
+      "pre"
+    ],
+    "by:": [
       "pre"
     ],
     "php/44.2\nlocation:": [
       "pre"
     ],
-    "hello/worldhtml\nx-transfer-encoding:": [
+    "hello/worldhtml\nx": [
       "pre"
     ],
-    "chunkedcontent-type:": [
+    "transfer": [
+      "pre"
+    ],
+    "chunkedcontent": [
       "pre",
       "pre"
     ],
-    "text/htmlcontent-length": [
+    "type:": [
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre"
+    ],
+    "text/htmlcontent": [
+      "pre"
+    ],
+    "length": [
       "pre"
     ],
     "sends": [
@@ -1566,12 +1649,12 @@
     "http//example.com:80/hello/world.html": [
       "pre"
     ],
-    "*/*accept-language:": [
+    "language:": [
       "pre",
       "pre",
       "pre"
     ],
-    "192168.1.103\nproxy-connection:": [
+    "192168.1.103\nproxy": [
       "pre",
       "pre"
     ],
@@ -1581,13 +1664,19 @@
     "okserver:": [
       "pre"
     ],
-    "php/44.2\naccept-ranges:": [
+    "php/44.2\naccept": [
       "pre"
     ],
-    "bytescontent-length:": [
+    "ranges:": [
       "pre"
     ],
-    "28content-type:": [
+    "bytescontent": [
+      "pre"
+    ],
+    "length:": [
+      "pre"
+    ],
+    "28content": [
       "pre"
     ],
     "text/html": [
@@ -1664,8 +1753,14 @@
     "thing": [
       "p"
     ],
-    "url-encoded": [
-      "p"
+    "url": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "crlf": [
       "p"
@@ -1687,14 +1782,6 @@
       "li",
       "li"
     ],
-    "url": [
-      "p",
-      "p",
-      "p",
-      "ul",
-      "li",
-      "a"
-    ],
     "part": [
       "p"
     ],
@@ -1707,7 +1794,7 @@
     "deliver": [
       "p"
     ],
-    "attacker-controlled": [
+    "controlled": [
       "p"
     ],
     "user's": [
@@ -1720,7 +1807,13 @@
     "injected": [
       "p"
     ],
-    "%0d%0acontent-type": [
+    "%0d%0acontent": [
+      "pre"
+    ],
+    "type": [
+      "pre",
+      "pre",
+      "pre",
       "pre"
     ],
     "text/html%0d%0ahttp/11": [
@@ -1728,9 +1821,6 @@
       "pre"
     ],
     "ok%0d%0a": [
-      "pre"
-    ],
-    "content-type": [
       "pre"
     ],
     "text/html%0d%0a%0d%0a%3chtml%3e": [
@@ -1767,11 +1857,11 @@
     "given": [
       "p"
     ],
-    "http//example.com/redirect.php?site=%0d%0acontent-type:": [
+    "http//example.com/redirect.php?site=%0d%0acontent": [
       "pre",
       "pre"
     ],
-    "ok%0d%0acontent-type": [
+    "ok%0d%0acontent": [
       "pre",
       "pre"
     ],
@@ -1803,11 +1893,15 @@
     "xss": [
       "pre"
     ],
-    "keep-alivepragma:": [
+    "alivepragma:": [
       "pre",
       "pre"
     ],
-    "no-cache": [
+    "no": [
+      "pre",
+      "pre"
+    ],
+    "cache": [
       "pre",
       "pre"
     ],
@@ -1833,14 +1927,14 @@
     "form": [
       "p"
     ],
-    "http//example.com/redirect.php?site=content-type:": [
+    "http//example.com/redirect.php?site=content": [
       "pre"
     ],
     "text/htmlhttp/1.1": [
       "pre",
       "pre"
     ],
-    "okcontent-type:": [
+    "okcontent": [
       "pre",
       "pre"
     ],
@@ -1859,13 +1953,16 @@
     "include": [
       "p"
     ],
-    "php/44.2\nlocation:\ncontent-type:": [
+    "php/44.2\nlocation:\ncontent": [
       "pre"
     ],
     "text/html<html>": [
       "pre"
     ],
-    "/html>\nkeep-alive:": [
+    "/html>\nkeep": [
+      "pre"
+    ],
+    "alive:": [
       "pre"
     ],
     "timeout=15": [
@@ -1874,7 +1971,7 @@
     "max=100connection:": [
       "pre"
     ],
-    "keep-alivetransfer-encoding:": [
+    "alivetransfer": [
       "pre"
     ],
     "resources": [

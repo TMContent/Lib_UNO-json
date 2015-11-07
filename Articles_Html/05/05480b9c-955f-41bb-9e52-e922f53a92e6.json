@@ -680,11 +680,22 @@
       "p",
       "ol",
       "ol",
+      "ol",
+      "ol",
       "li",
       "ul",
       "li",
       "li",
-      "p"
+      "p",
+      "li",
+      "li",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "p",
+      "p",
+      "strong"
     ],
     "files": [
       "p",
@@ -820,11 +831,19 @@
       "p",
       "ol",
       "ol",
+      "ol",
+      "ol",
       "li",
+      "li",
+      "li",
+      "p",
+      "ul",
       "ul",
       "li",
       "li",
-      "p"
+      "li",
+      "p",
+      "title"
     ],
     "is": [
       "p",
@@ -1191,7 +1210,7 @@
       "ul",
       "li"
     ],
-    "user-supplied": [
+    "supplied": [
       "ol",
       "ol",
       "li",
@@ -2646,11 +2665,21 @@
       "li",
       "p"
     ],
-    "--": [
+    "": [
+      "ol",
+      "ol",
       "ol",
       "li",
+      "li",
+      "li",
+      "ul",
+      "ul",
       "ul",
       "li",
+      "li",
+      "li",
+      "p",
+      "p",
       "p"
     ],
     "original": [
@@ -2754,7 +2783,35 @@
       "p",
       "strong"
     ],
-    "case-sensitive always": [
+    "case": [
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "strong"
+    ],
+    "sensitive always": [
       "ol",
       "li",
       "ul",
@@ -2767,19 +2824,6 @@
       "ul",
       "li",
       "p"
-    ],
-    "case-sensitive": [
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "ul",
-      "ul",
-      "li",
-      "li",
-      "p",
-      "p",
-      "strong"
     ],
     "most": [
       "ol",
@@ -2833,7 +2877,7 @@
       "li",
       "p"
     ],
-    "case-insensitive": [
+    "insensitive": [
       "ol",
       "ol",
       "li",
@@ -2916,7 +2960,14 @@
       "li",
       "pre"
     ],
-    "\"d(\\\\\\\\|/)myapp(\\\\\\\\|/)temp(\\\\\\\\|/)(\\\\w|\\\\s|\\\\.|-|){1,20}\";\r\nval": [
+    "\"d(\\\\\\\\|/)myapp(\\\\\\\\|/)temp(\\\\\\\\|/)(\\\\w|\\\\s|\\\\.|": [
+      "ol",
+      "li",
+      "ul",
+      "li",
+      "pre"
+    ],
+    "|){1,20}\";\r\nval": [
       "ol",
       "li",
       "ul",

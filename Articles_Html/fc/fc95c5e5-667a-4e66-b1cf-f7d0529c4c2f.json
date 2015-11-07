@@ -228,7 +228,43 @@
       "p",
       "p",
       "p",
-      "p"
+      "p",
+      "p",
+      "p",
+      "ul",
+      "li",
+      "h2",
+      "em",
+      "p",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
+      "ol",
+      "li",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "ol",
+      "li",
+      "p",
+      "ol",
+      "li",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "title"
     ],
     "input": [
       "p",
@@ -254,6 +290,7 @@
       "li",
       "pre",
       "pre",
+      "p",
       "p",
       "p",
       "p"
@@ -386,7 +423,11 @@
       "p",
       "p"
     ],
-    "cross-site": [
+    "cross": [
+      "p",
+      "p"
+    ],
+    "site": [
       "p",
       "p"
     ],
@@ -421,7 +462,7 @@
       "p",
       "p"
     ],
-    "client-side": [
+    "side": [
       "p",
       "p",
       "p",
@@ -447,11 +488,14 @@
       "p",
       "p",
       "p",
-      "ol",
-      "li",
       "p",
       "ol",
       "li",
+      "p",
+      "p",
+      "ol",
+      "li",
+      "p",
       "p",
       "p",
       "p",
@@ -796,6 +840,9 @@
       "p",
       "p",
       "p",
+      "p",
+      "p",
+      "p",
       "p"
     ],
     "avoiding": [
@@ -857,9 +904,12 @@
       "p"
     ],
     "round": [
+      "p",
+      "p",
       "p"
     ],
     "trip": [
+      "p",
       "p"
     ],
     "simple": [
@@ -1300,6 +1350,7 @@
       "li",
       "li",
       "li",
+      "pre",
       "h2",
       "em",
       "p"
@@ -1323,7 +1374,10 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
+      "li",
+      "em",
       "li",
       "li",
       "p",
@@ -1540,7 +1594,16 @@
     "including": [
       "p"
     ],
-    "ajax-based": [
+    "ajax": [
+      "p",
+      "h2",
+      "em",
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "based": [
       "p"
     ],
     "capabilities": [
@@ -1613,8 +1676,17 @@
       "li",
       "p"
     ],
-    "packet-intercepting": [
-      "p"
+    "packet": [
+      "p",
+      "ol",
+      "ol",
+      "li",
+      "li"
+    ],
+    "intercepting": [
+      "p",
+      "h2",
+      "em"
     ],
     "burp": [
       "p",
@@ -1636,7 +1708,15 @@
       "ol",
       "li"
     ],
-    "well-formed": [
+    "well": [
+      "p",
+      "p",
+      "ol",
+      "ol",
+      "li",
+      "li"
+    ],
+    "formed": [
       "p",
       "p",
       "ol",
@@ -1649,6 +1729,9 @@
     ],
     "intercept": [
       "p",
+      "ol",
+      "li",
+      "em",
       "em"
     ],
     "change": [
@@ -1659,12 +1742,6 @@
     ],
     "enables": [
       "ol",
-      "li"
-    ],
-    "packet": [
-      "ol",
-      "ol",
-      "li",
       "li"
     ],
     "interception": [
@@ -1739,7 +1816,14 @@
       "p",
       "p"
     ],
-    "security-specific": [
+    "security": [
+      "p",
+      "p",
+      "ol",
+      "li",
+      "p"
+    ],
+    "specific": [
       "p"
     ],
     "send": [
@@ -1751,7 +1835,7 @@
     "number": [
       "p"
     ],
-    "round-trips": [
+    "trips": [
       "p"
     ],
     "between": [
@@ -1808,7 +1892,10 @@
     "contenttype=\"text/html\"": [
       "pre"
     ],
-    "pageencoding=\"utf-8\"%\r\n<!doctype": [
+    "pageencoding=\"utf": [
+      "pre"
+    ],
+    "8\"%\r\n<!doctype": [
       "pre"
     ],
     "html": [
@@ -1818,19 +1905,28 @@
     "public": [
       "pre"
     ],
-    "\"-//w3c//dtd": [
+    "\"": [
+      "pre"
+    ],
+    "//w3c//dtd": [
       "pre"
     ],
     "transitional//en\"\r\"http://www.w3.org/tr/html4/loose.dtd\">\r\n<html><head><meta": [
       "pre"
     ],
-    "http-equiv=\"content-type\"": [
+    "equiv=\"content": [
+      "pre"
+    ],
+    "type\"": [
       "pre"
     ],
     "content=\"text/html": [
       "pre"
     ],
-    "charset=utf-8\"<title>java": [
+    "charset=utf": [
+      "pre"
+    ],
+    "8\"<title>java": [
       "pre"
     ],
     "search/title><script>function": [
@@ -1839,7 +1935,10 @@
     "validateformemailstr){\t//": [
       "pre"
     ],
-    "e-mail": [
+    "e": [
+      "pre"
+    ],
+    "mail": [
       "pre"
     ],
     "valid\tvar": [
@@ -1857,7 +1956,40 @@
       "pre",
       "pre"
     ],
-    "\"^a-za-z0-9._%+-]+@[a-za-z0-9.-]+\\\\.[a-za-z]{2,4}$\";\tvar": [
+    "\"^a": [
+      "pre"
+    ],
+    "za": [
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre"
+    ],
+    "z0": [
+      "pre",
+      "pre",
+      "pre",
+      "pre"
+    ],
+    "9._%+": [
+      "pre",
+      "pre"
+    ],
+    "]+@[a": [
+      "pre",
+      "pre"
+    ],
+    "9.": [
+      "pre",
+      "pre"
+    ],
+    "]+\\\\.[a": [
+      "pre",
+      "pre"
+    ],
+    "z]{2,4}$\";\tvar": [
       "pre"
     ],
     "matcharray": [
@@ -1949,11 +2081,6 @@
     "validateformthis.username.value);": [
       "strong"
     ],
-    "server-side": [
-      "p",
-      "p",
-      "p"
-    ],
     "method": [
       "p"
     ],
@@ -1984,9 +2111,6 @@
     "avoids": [
       "p"
     ],
-    "round-trip": [
-      "p"
-    ],
     "formats": [
       "p"
     ],
@@ -2008,12 +2132,6 @@
     "protecting": [
       "p"
     ],
-    "security": [
-      "p",
-      "ol",
-      "li",
-      "p"
-    ],
     "attacks": [
       "p",
       "p",
@@ -2028,7 +2146,14 @@
     "require": [
       "p"
     ],
-    "ill-intended": [
+    "ill": [
+      "p",
+      "ol",
+      "li",
+      "p",
+      "p"
+    ],
+    "intended": [
       "p",
       "ol",
       "li",
@@ -2069,7 +2194,10 @@
     "emailstr{\tstring": [
       "pre"
     ],
-    "\"a-za-z0-9._%+-]+@[a-za-z0-9.-]+\\\\.[a-za-z]{2,4}\";": [
+    "\"a": [
+      "pre"
+    ],
+    "z]{2,4}\";": [
       "pre"
     ],
     "!emailstr.matches(emailpat))\t{\t\treturn": [
@@ -2099,7 +2227,10 @@
     "servletexception": [
       "pre"
     ],
-    "ioexception{\tresponsesetcontenttype(\"text/html;charset=utf-8\");\tprintwriter": [
+    "ioexception{\tresponsesetcontenttype(\"text/html;charset=utf": [
+      "pre"
+    ],
+    "8\");\tprintwriter": [
       "pre"
     ],
     "out": [
@@ -2248,10 +2379,6 @@
     "rejects": [
       "p"
     ],
-    "intercepting": [
-      "h2",
-      "em"
-    ],
     "download": [
       "ol",
       "li"
@@ -2263,11 +2390,6 @@
     "http://portswigger.net/burp/).": [
       "ol",
       "li"
-    ],
-    "proxy-intercept": [
-      "ol",
-      "li",
-      "em"
     ],
     "tab": [
       "ol",
@@ -2351,14 +2473,6 @@
       "p"
     ],
     "where": [
-      "p"
-    ],
-    "ajax": [
-      "h2",
-      "em",
-      "p",
-      "p",
-      "p",
       "p"
     ],
     "high": [
@@ -2464,7 +2578,7 @@
     "allow": [
       "p"
     ],
-    "input-related": [
+    "related": [
       "p"
     ],
     "xss": [

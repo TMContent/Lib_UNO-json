@@ -442,6 +442,7 @@
       "p"
     ],
     "process": [
+      "p",
       "p"
     ],
     "events": [
@@ -573,7 +574,8 @@
       "p"
     ],
     "uses": [
-      "p"
+      "p",
+      "pre"
     ],
     "sendbroadcast": [
       "p"
@@ -583,7 +585,10 @@
       "p"
     ],
     "how": [
-      "h2"
+      "h2",
+      "ul",
+      "li",
+      "strong"
     ],
     "leaks": [
       "p",
@@ -1065,7 +1070,10 @@
     "intentgetintextra(\"status\",": [
       "pre"
     ],
-    "-1;\n\t\t\tupdateprogress": [
+    "": [
+      "pre"
+    ],
+    "1;\n\t\t\tupdateprogress": [
       "pre"
     ],
     "statusid);": [
@@ -1258,7 +1266,7 @@
     "later": [
       "p"
     ],
-    "inter-process": [
+    "inter": [
       "p"
     ],
     "include": [
@@ -1266,7 +1274,8 @@
     ],
     "permission": [
       "p",
-      "p"
+      "p",
+      "pre"
     ],
     "registering": [
       "p"
@@ -1293,9 +1302,6 @@
     "below": [
       "p"
     ],
-    "uses-permission": [
-      "pre"
-    ],
     "androidname=\"": [
       "pre",
       "pre"
@@ -1316,7 +1322,10 @@
     "androiddescription=\"@string/monitoring_permission_desc\"": [
       "pre"
     ],
-    "androidpermissiongroup=\"android.permission-group.hardware_controls\"": [
+    "androidpermissiongroup=\"android.permission": [
+      "pre"
+    ],
+    "group.hardware_controls\"": [
       "pre"
     ],
     "androidprotectionlevel=\"dangerous\"": [
@@ -1386,7 +1395,7 @@
       "ul",
       "li"
     ],
-    "how-tos).": [
+    "tos).": [
       "ul",
       "li"
     ],
@@ -1437,7 +1446,7 @@
       "ul",
       "li"
     ],
-    "how-tos)": [
+    "tos)": [
       "strong"
     ],
     "examples).": [

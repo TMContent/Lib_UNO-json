@@ -47,6 +47,11 @@
       "li",
       "h1"
     ],
+    "7": [
+      "ol",
+      "li",
+      "pre"
+    ],
     "30": [
       "ul",
       "li"
@@ -1034,6 +1039,14 @@
       "ol",
       "ol",
       "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "pre",
+      "ul",
+      "li",
+      "em",
       "li",
       "li",
       "li",
@@ -1291,6 +1304,8 @@
       "li",
       "li",
       "ul",
+      "ul",
+      "li",
       "li",
       "p",
       "ul",
@@ -2309,7 +2324,9 @@
     ],
     "related": [
       "p",
-      "p"
+      "p",
+      "ul",
+      "li"
     ],
     "beyond": [
       "p"
@@ -2680,8 +2697,14 @@
       "p",
       "h2",
       "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
       "li",
       "pre",
+      "pre",
+      "p",
       "ol",
       "ol",
       "li",
@@ -2820,6 +2843,9 @@
     ],
     "generated": [
       "p",
+      "p",
+      "ol",
+      "li",
       "p"
     ],
     "include": [
@@ -2894,6 +2920,10 @@
     ],
     "system": [
       "p",
+      "p",
+      "p",
+      "ol",
+      "li",
       "p"
     ],
     "tamper": [
@@ -3018,7 +3048,8 @@
     "supplement": [
       "p"
     ],
-    "system-defined": [
+    "defined": [
+      "p",
       "p"
     ],
     "provider": [
@@ -3178,7 +3209,33 @@
       "ul",
       "li"
     ],
-    "e-mail": [
+    "e": [
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "pre",
+      "ul",
+      "li",
+      "em",
+      "p",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "li"
+    ],
+    "mail": [
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "p",
       "ul",
       "ul",
       "li",
@@ -3187,9 +3244,12 @@
       "ul",
       "ul",
       "ul",
+      "ul",
       "li",
       "li",
-      "li"
+      "li",
+      "li",
+      "p"
     ],
     "notifications": [
       "ul",
@@ -4401,7 +4461,7 @@
       "ol",
       "li"
     ],
-    "non-web": [
+    "non": [
       "ol",
       "ol",
       "li",
@@ -4719,9 +4779,59 @@
       "ol",
       "li"
     ],
-    "strong-name": [
+    "strong": [
       "ol",
       "li"
+    ],
+    "name": [
+      "ol",
+      "li",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "li",
+      "b",
+      "ol",
+      "li",
+      "ul",
+      "li",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "b",
+      "li",
+      "li",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "b",
+      "p",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "b",
+      "p",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "b",
+      "li",
+      "li",
+      "li",
+      "ol",
+      "li",
+      "pre"
     ],
     "install": [
       "ol",
@@ -4864,7 +4974,7 @@
       "p",
       "p"
     ],
-    "machine-level": [
+    "machine": [
       "p",
       "p",
       "p",
@@ -4872,7 +4982,24 @@
       "p",
       "p",
       "p",
-      "p"
+      "p",
+      "ol",
+      "li",
+      "pre"
+    ],
+    "level": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "ol",
+      "li",
+      "pre"
     ],
     "webconfig.comments": [
       "p",
@@ -4919,8 +5046,20 @@
       "p",
       "p"
     ],
-    "sub-elements": [
+    "sub": [
       "p"
+    ],
+    "elements": [
+      "p",
+      "p",
+      "ul",
+      "li",
+      "ul",
+      "li",
+      "ul",
+      "li",
+      "ul",
+      "li"
     ],
     "heartbeatinterval=\"0\"": [
       "pre"
@@ -4996,17 +5135,6 @@
       "em",
       "p",
       "em"
-    ],
-    "elements": [
-      "p",
-      "ul",
-      "li",
-      "ul",
-      "li",
-      "ul",
-      "li",
-      "ul",
-      "li"
     ],
     "buffermodes>": [
       "ul",
@@ -5537,54 +5665,6 @@
     "follows": [
       "p"
     ],
-    "name": [
-      "ul",
-      "ul",
-      "ul",
-      "li",
-      "li",
-      "li",
-      "b",
-      "ol",
-      "li",
-      "ul",
-      "li",
-      "ul",
-      "ul",
-      "ul",
-      "ul",
-      "li",
-      "li",
-      "b",
-      "li",
-      "li",
-      "ul",
-      "ul",
-      "li",
-      "li",
-      "b",
-      "p",
-      "ul",
-      "ul",
-      "li",
-      "li",
-      "b",
-      "p",
-      "ul",
-      "ul",
-      "ul",
-      "ul",
-      "ul",
-      "li",
-      "li",
-      "b",
-      "li",
-      "li",
-      "li",
-      "ol",
-      "li",
-      "pre"
-    ],
     "other": [
       "ul",
       "li",
@@ -6004,17 +6084,33 @@
       "li",
       "pre"
     ],
-    "-e": [
+    "": [
       "ol",
       "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "li",
+      "li",
       "li",
       "li",
       "pre",
+      "pre",
+      "pre",
       "ul",
+      "ul",
+      "ul",
+      "li",
+      "em",
+      "li",
+      "em",
       "li",
       "em"
     ],
-    "-s": [
+    "s": [
       "ol",
       "ol",
       "li",
@@ -6028,16 +6124,6 @@
       "ol",
       "li",
       "pre"
-    ],
-    "-a": [
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "pre",
-      "ul",
-      "li",
-      "em"
     ],
     "w": [
       "ol",
@@ -6314,7 +6400,13 @@
       "p",
       "p"
     ],
-    "fully-qualified": [
+    "fully": [
+      "ul",
+      "li",
+      "ul",
+      "li"
+    ],
+    "qualified": [
       "ul",
       "li",
       "ul",
@@ -6779,7 +6871,7 @@
       "p",
       "p"
     ],
-    "high-level": [
+    "high": [
       "p"
     ],
     "audits": [
@@ -7053,11 +7145,6 @@
       "li",
       "p"
     ],
-    "system-generated": [
-      "ol",
-      "li",
-      "p"
-    ],
     "systemweb.management.webeventcodes.webextendedbase": [
       "em"
     ],
@@ -7077,9 +7164,6 @@
       "p"
     ],
     "rule>": [
-      "p"
-    ],
-    "defined": [
       "p"
     ],
     "cause": [
@@ -7343,17 +7427,17 @@
       "li",
       "pre"
     ],
-    "/lm/w3svc/1/root/healthmonitoring-7-127656015969887178": [
+    "/lm/w3svc/1/root/healthmonitoring": [
+      "ol",
+      "li",
+      "pre"
+    ],
+    "127656015969887178": [
       "ol",
       "li",
       "pre"
     ],
     "trust": [
-      "ol",
-      "li",
-      "pre"
-    ],
-    "level": [
       "ol",
       "li",
       "pre"
@@ -7382,11 +7466,6 @@
       "pre"
     ],
     "c\\inetpub\\wwwroot\\healthmonitoring\\": [
-      "ol",
-      "li",
-      "pre"
-    ],
-    "machine": [
       "ol",
       "li",
       "pre"
@@ -7467,16 +7546,6 @@
     "receivers": [
       "ul",
       "li"
-    ],
-    "mail": [
-      "ul",
-      "ul",
-      "li",
-      "li",
-      "p",
-      "ul",
-      "li",
-      "p"
     ],
     "maxeventlengthforsimplemessage": [
       "ul",
@@ -7614,10 +7683,6 @@
       "li"
     ],
     "helps": [
-      "ul",
-      "li"
-    ],
-    "event-related": [
       "ul",
       "li"
     ],

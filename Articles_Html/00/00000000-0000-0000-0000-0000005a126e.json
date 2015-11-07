@@ -1107,10 +1107,14 @@
     "in": [
       "p",
       "ol",
+      "ol",
+      "li",
       "li",
       "p",
       "p",
       "ol",
+      "ol",
+      "li",
       "li",
       "p",
       "p",
@@ -1299,7 +1303,7 @@
       "li",
       "li"
     ],
-    "in-line": [
+    "line": [
       "ol",
       "li",
       "ol",
@@ -2061,7 +2065,10 @@
     "than": [
       "p"
     ],
-    "“well-formed": [
+    "“well": [
+      "p"
+    ],
+    "formed": [
       "p"
     ],
     "xml”": [
@@ -2070,11 +2077,25 @@
     "passed": [
       "p"
     ],
-    "!--?xml": [
+    "!": [
       "pre",
       "pre"
     ],
-    "version=\"10\"?-->\n<person>": [
+    "": [
+      "pre",
+      "pre",
+      "pre",
+      "pre"
+    ],
+    "?xml": [
+      "pre",
+      "pre"
+    ],
+    "version=\"10\"?": [
+      "pre",
+      "pre"
+    ],
+    ">\n<person>": [
       "pre"
     ],
     "name>joe": [
@@ -2083,7 +2104,13 @@
     "blow/name>": [
       "pre"
     ],
-    "dob>1986-08-25</dob>": [
+    "dob>1986": [
+      "pre"
+    ],
+    "08": [
+      "pre"
+    ],
+    "25</dob>": [
       "pre"
     ],
     "phone>5558675309</phone>": [
@@ -2147,7 +2174,7 @@
     "formatted": [
       "p"
     ],
-    "version=\"10\"?-->\n<xs:schema": [
+    ">\n<xs:schema": [
       "pre"
     ],
     "xmlnsxs=\"http://www.w3.org/2001/xmlschema\">": [
@@ -2191,7 +2218,13 @@
       "pre",
       "pre"
     ],
-    "value=\"a-za-z": [
+    "value=\"a": [
+      "pre"
+    ],
+    "za": [
+      "pre"
+    ],
+    "z": [
       "pre"
     ],
     "+\"></xs:pattern>": [
@@ -2221,7 +2254,10 @@
     "name=\"phone\"": [
       "pre"
     ],
-    "value=\"0-9]{10}\"></xs:pattern>": [
+    "value=\"0": [
+      "pre"
+    ],
+    "9]{10}\"></xs:pattern>": [
       "pre"
     ],
     "name=\"employmentstatus\"": [
@@ -2271,7 +2307,13 @@
     "spaces": [
       "p"
     ],
-    "yyyy-mm-dd": [
+    "yyyy": [
+      "p"
+    ],
+    "mm": [
+      "p"
+    ],
+    "dd": [
       "p"
     ],
     "digits": [

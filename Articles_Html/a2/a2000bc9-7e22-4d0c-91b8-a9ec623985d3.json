@@ -495,6 +495,7 @@
     ],
     "least": [
       "p",
+      "p",
       "ol",
       "ol",
       "ol",
@@ -506,6 +507,9 @@
       "p",
       "strong",
       "p",
+      "ul",
+      "li",
+      "a",
       "ul",
       "li",
       "a",
@@ -678,11 +682,19 @@
       "a",
       "title"
     ],
-    "least-privileged": [
+    "privileged": [
       "p",
+      "ol",
+      "li",
       "ul",
       "li",
-      "a"
+      "ul",
+      "li",
+      "a",
+      "ul",
+      "li",
+      "a",
+      "title"
     ],
     "identify": [
       "ol",
@@ -1035,16 +1047,6 @@
       "li",
       "li"
     ],
-    "privileged": [
-      "ol",
-      "li",
-      "ul",
-      "li",
-      "ul",
-      "li",
-      "a",
-      "title"
-    ],
     "users": [
       "ol",
       "ol",
@@ -1091,15 +1093,17 @@
       "ol",
       "p"
     ],
-    "sub-processes": [
-      "ol",
-      "p"
-    ],
-    "those": [
+    "sub": [
       "ol",
       "p"
     ],
     "processes": [
+      "ol",
+      "ol",
+      "p",
+      "p"
+    ],
+    "those": [
       "ol",
       "p"
     ],
@@ -1269,7 +1273,14 @@
       "ul",
       "li"
     ],
-    "-djavalibrary.path": [
+    "": [
+      "ol",
+      "li",
+      "ul",
+      "li",
+      "em"
+    ],
+    "djavalibrary.path": [
       "ol",
       "li",
       "ul",
@@ -1358,7 +1369,15 @@
       "p",
       "p"
     ],
-    "web-based": [
+    "web": [
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
+      "p"
+    ],
+    "based": [
       "ol",
       "li",
       "p"
@@ -1372,11 +1391,6 @@
       "p"
     ],
     "likely": [
-      "ol",
-      "li",
-      "p"
-    ],
-    "web": [
       "ol",
       "li",
       "p"

@@ -130,7 +130,10 @@
       "li",
       "p",
       "p",
-      "strong"
+      "strong",
+      "ul",
+      "li",
+      "code"
     ],
     "and": [
       "p",
@@ -177,6 +180,12 @@
       "ol",
       "li",
       "p",
+      "ul",
+      "ul",
+      "li",
+      "code",
+      "li",
+      "code",
       "title"
     ],
     "with": [
@@ -372,6 +381,9 @@
       "li",
       "p",
       "ul",
+      "ul",
+      "li",
+      "code",
       "li"
     ],
     "beanstalk": [
@@ -381,6 +393,9 @@
       "li",
       "p",
       "ul",
+      "ul",
+      "li",
+      "code",
       "li"
     ],
     "eb)\ndeleting": [
@@ -881,7 +896,13 @@
       "strong",
       "li",
       "p",
-      "strong"
+      "strong",
+      "ul",
+      "ul",
+      "li",
+      "code",
+      "li",
+      "code"
     ],
     "later": [
       "p"
@@ -1033,7 +1054,10 @@
       "li",
       "li",
       "p",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "code"
     ],
     "deleted": [
       "ol",
@@ -1051,7 +1075,12 @@
       "li",
       "p"
     ],
-    "roll-back\n\n\napplication": [
+    "roll": [
+      "ol",
+      "li",
+      "p"
+    ],
+    "back\n\n\napplication": [
       "ol"
     ],
     "deployed": [
@@ -1117,7 +1146,9 @@
       "li",
       "p",
       "ul",
-      "li"
+      "li",
+      "li",
+      "code"
     ],
     "after": [
       "ol",
@@ -1191,7 +1222,7 @@
       "li",
       "p"
     ],
-    "roll-back": [
+    "back": [
       "li",
       "p"
     ],
@@ -1457,16 +1488,16 @@
       "li",
       "p"
     ],
-    "terminate-instances": [
+    "cli\nec2": [
+      "ul"
+    ],
+    "cli\nstop": [
+      "ul"
+    ],
+    "ec2instance": [
       "ul",
       "li",
       "code"
-    ],
-    "cli\nec2-terminate-instances": [
-      "ul"
-    ],
-    "cli\nstop-ec2instance": [
-      "ul"
     ],
     "tools": [
       "ul",
@@ -1480,11 +1511,7 @@
       "ul",
       "li"
     ],
-    "ec2-terminate-instances": [
-      "li",
-      "code"
-    ],
-    "stop-ec2instance": [
+    "stop": [
       "li",
       "code"
     ],
@@ -1524,7 +1551,10 @@
     "delete": [
       "ol",
       "li",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "code"
     ],
     "note": [
       "ol",
@@ -1576,11 +1606,6 @@
     ],
     "bucket\n\n\nremove": [
       "ol"
-    ],
-    "elastic-beanstalk-delete-application-version": [
-      "ul",
-      "li",
-      "code"
     ],
     "cli\ndeleteapplicationversion": [
       "ul"

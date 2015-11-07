@@ -511,6 +511,7 @@
       "tt",
       "p",
       "tt",
+      "p",
       "p"
     ],
     "using": [
@@ -592,7 +593,12 @@
     "magnified": [
       "p"
     ],
-    "over-privileged": [
+    "over": [
+      "p",
+      "ul",
+      "li"
+    ],
+    "privileged": [
       "p",
       "ul",
       "li"
@@ -668,7 +674,10 @@
     "server": [
       "p",
       "ul",
-      "li"
+      "li",
+      "ul",
+      "li",
+      "a"
     ],
     "operating": [
       "p"
@@ -1054,7 +1063,13 @@
       "ul",
       "li"
     ],
-    "type-safe": [
+    "type": [
+      "ul",
+      "li",
+      "ul",
+      "li"
+    ],
+    "safe": [
       "ul",
       "li"
     ],
@@ -1081,14 +1096,16 @@
       "ul",
       "li"
     ],
-    "white-list": [
+    "white": [
       "ul",
       "ul",
       "li",
       "li"
     ],
-    "type": [
+    "list": [
       "ul",
+      "ul",
+      "li",
       "li"
     ],
     "checking": [
@@ -1130,11 +1147,22 @@
       "li",
       "p"
     ],
-    "meta-characters": [
+    "meta": [
       "ul",
       "ul",
       "li",
       "li"
+    ],
+    "characters": [
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "li",
+      "li",
+      "p"
     ],
     "safer": [
       "ul",
@@ -1185,13 +1213,6 @@
     "will": [
       "ul",
       "li"
-    ],
-    "characters": [
-      "ul",
-      "ul",
-      "li",
-      "li",
-      "p"
     ],
     "have": [
       "ul",
@@ -1329,7 +1350,10 @@
     ],
     "client": [
       "ul",
-      "li"
+      "li",
+      "ul",
+      "li",
+      "a"
     ],
     "implications": [
       "li"
@@ -1673,7 +1697,7 @@
     "entire": [
       "p"
     ],
-    "user-supplied": [
+    "supplied": [
       "p"
     ],
     "part": [
@@ -1743,7 +1767,11 @@
     "http//en.wikipedia.org/wiki/sql_injection\nfor": [
       "ul"
     ],
-    "seehttp://www.php.net/manual/en/security.database.sql-injection.php\nfor": [
+    "seehttp://www.php.net/manual/en/security.database.sql": [
+      "ul",
+      "li"
+    ],
+    "injection.php\nfor": [
       "ul"
     ],
     "preventing": [
@@ -1754,10 +1782,20 @@
       "ul",
       "li"
     ],
-    "http//msdn2.microsoft.com/en-us/library/ms998271.aspx\nfor": [
+    "http//msdn2.microsoft.com/en": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "us/library/ms998271.aspx\nfor": [
       "ul"
     ],
-    "http//www.unixwiz.net/techtips/sql-injection.html": [
+    "http//www.unixwiz.net/techtips/sql": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "injection.html": [
       "ul",
       "li",
       "a"
@@ -1766,13 +1804,14 @@
       "li",
       "a"
     ],
-    "seehttp://www.php.net/manual/en/security.database.sql-injection.php": [
-      "li"
-    ],
-    "http//www.php.net/manual/en/security.database.sql-injection.php": [
+    "injection.php": [
+      "li",
       "a"
     ],
-    "http//msdn2.microsoft.com/en-us/library/ms998271.aspx": [
+    "http//www.php.net/manual/en/security.database.sql": [
+      "a"
+    ],
+    "us/library/ms998271.aspx": [
       "li",
       "a"
     ],
@@ -1782,8 +1821,11 @@
     "items": [
       "h1"
     ],
-    "server-side": [
+    "side": [
       "ul",
+      "ul",
+      "li",
+      "a",
       "li",
       "a"
     ],
@@ -1798,17 +1840,17 @@
       "li",
       "a"
     ],
-    "xpath-xquery": [
+    "xpath": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "xquery": [
       "ul",
       "li",
       "a"
     ],
     "ldap": [
-      "ul",
-      "li",
-      "a"
-    ],
-    "client-side": [
       "ul",
       "li",
       "a"

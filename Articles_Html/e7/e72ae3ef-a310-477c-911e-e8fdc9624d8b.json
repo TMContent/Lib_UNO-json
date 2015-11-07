@@ -250,7 +250,10 @@
       "p",
       "li",
       "ul",
-      "li"
+      "ul",
+      "li",
+      "li",
+      "code"
     ],
     "sensitive": [
       "p"
@@ -424,7 +427,10 @@
       "li",
       "p",
       "li",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "code"
     ],
     "all": [
       "p",
@@ -571,11 +577,25 @@
       "ul",
       "ul",
       "ul",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
       "li",
       "li",
       "li",
       "li",
-      "li"
+      "code",
+      "code",
+      "li",
+      "li",
+      "code",
+      "li",
+      "li",
+      "code",
+      "li",
+      "li",
+      "code"
     ],
     "credentials": [
       "p"
@@ -899,9 +919,21 @@
       "li",
       "strong",
       "ul",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
       "li",
       "li",
-      "li"
+      "li",
+      "code",
+      "code",
+      "li",
+      "li",
+      "code",
+      "li",
+      "li",
+      "code"
     ],
     "sign": [
       "ol",
@@ -999,7 +1031,10 @@
       "ul",
       "li",
       "ul",
-      "li"
+      "ul",
+      "li",
+      "li",
+      "code"
     ],
     "membership": [
       "ul",
@@ -1031,9 +1066,12 @@
       "ul",
       "ul",
       "ul",
+      "ul",
       "li",
       "li",
-      "li"
+      "li",
+      "li",
+      "code"
     ],
     "embedded": [
       "ul",
@@ -1053,7 +1091,9 @@
     ],
     "group": [
       "ul",
-      "li"
+      "li",
+      "li",
+      "code"
     ],
     "permissions": [
       "ul",
@@ -1067,14 +1107,21 @@
       "ul",
       "li",
       "ul",
-      "li"
+      "ul",
+      "li",
+      "li",
+      "code"
     ],
     "but": [
       "ul",
       "li"
     ],
-    "detached\nmulti-factor": [
+    "detached\nmulti": [
       "ul"
+    ],
+    "factor": [
+      "ul",
+      "li"
     ],
     "mfa)": [
       "ul",
@@ -1084,7 +1131,9 @@
       "ul",
       "li",
       "ul",
-      "li"
+      "li",
+      "li",
+      "code"
     ],
     "associated": [
       "ul",
@@ -1094,7 +1143,10 @@
       "li",
       "ul",
       "ul",
+      "ul",
       "li",
+      "li",
+      "code",
       "li"
     ],
     "password": [
@@ -1108,7 +1160,7 @@
     "detached": [
       "li"
     ],
-    "multi-factor": [
+    "multi": [
       "li"
     ],
     "cli": [
@@ -1141,12 +1193,17 @@
       "ul",
       "li"
     ],
-    "delete-access-key": [
+    "key": [
       "ul",
       "li",
       "code"
     ],
-    "delete-signing-certificate": [
+    "signing": [
+      "ul",
+      "li",
+      "code"
+    ],
+    "certificate": [
       "ul",
       "li",
       "code"
@@ -1154,7 +1211,12 @@
     "commands\ndelete": [
       "ul"
     ],
-    "delete-login-profile\ndeactivate": [
+    "login": [
+      "ul",
+      "li",
+      "code"
+    ],
+    "profile\ndeactivate": [
       "ul"
     ],
     "user's": [
@@ -1163,67 +1225,63 @@
     ],
     "mfa": [
       "ul",
-      "li"
+      "ul",
+      "li",
+      "li",
+      "code"
     ],
-    "deactivate-mfa-devicedetach": [
+    "deactivate": [
+      "ul",
+      "li",
+      "li",
+      "code"
+    ],
+    "devicedetach": [
       "ul"
     ],
     "list": [
       "ul",
-      "li",
-      "li"
-    ],
-    "list-attached-user-policies": [
       "ul",
+      "ul",
+      "li",
+      "li",
+      "code",
+      "li",
       "li",
       "code"
     ],
     "detach": [
       "ul",
+      "ul",
       "li",
-      "li"
+      "li",
+      "li",
+      "code"
     ],
-    "detach-user-policy\nlist": [
+    "policy\nlist": [
       "ul"
     ],
     "was": [
       "ul",
       "li"
     ],
-    "list-groups-for-user\nremove": [
+    "user\nremove": [
       "ul"
-    ],
-    "remove-user-from-group\ndelete": [
-      "ul"
-    ],
-    "delete-user": [
-      "ul",
-      "li",
-      "code"
-    ],
-    "delete-login-profile": [
-      "li",
-      "code"
-    ],
-    "deactivate": [
-      "li"
-    ],
-    "deactivate-mfa-device": [
-      "li",
-      "code"
-    ],
-    "detach-user-policy": [
-      "li",
-      "code"
-    ],
-    "list-groups-for-user": [
-      "li",
-      "code"
     ],
     "remove": [
-      "li"
+      "ul",
+      "li",
+      "li",
+      "code"
     ],
-    "remove-user-from-group": [
+    "group\ndelete": [
+      "ul"
+    ],
+    "profile": [
+      "li",
+      "code"
+    ],
+    "policy": [
       "li",
       "code"
     ]

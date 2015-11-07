@@ -102,6 +102,7 @@
     ],
     "type": [
       "p",
+      "p",
       "ol",
       "li",
       "p"
@@ -200,6 +201,7 @@
       "p"
     ],
     "database": [
+      "p",
       "p",
       "p",
       "p",
@@ -393,7 +395,7 @@
     "risk": [
       "p"
     ],
-    "database-facing": [
+    "facing": [
       "p"
     ],
     "web": [
@@ -555,9 +557,11 @@
     "user": [
       "p",
       "p",
+      "p",
       "p"
     ],
     "input": [
+      "p",
       "p",
       "p",
       "p",
@@ -769,10 +773,10 @@
     "contain": [
       "p"
     ],
-    "user-input": [
+    "non": [
       "p"
     ],
-    "non-escaped": [
+    "escaped": [
       "p"
     ],
     "form": [
@@ -820,7 +824,7 @@
     "parameterizing": [
       "p"
     ],
-    "type-enforcing": [
+    "enforcing": [
       "p"
     ],
     "them": [
@@ -1257,7 +1261,10 @@
     ],
     "parameter$preparedstatement": [
       "ol",
+      "ol",
       "li",
+      "li",
+      "pre",
       "pre"
     ],
     "=": [
@@ -1271,7 +1278,12 @@
       "pre",
       "pre"
     ],
-    "$databasehandle-prepare(\"select": [
+    "$databasehandle": [
+      "ol",
+      "li",
+      "pre"
+    ],
+    "prepare(\"select": [
       "ol",
       "li",
       "pre"
@@ -1311,7 +1323,7 @@
       "li",
       "pre"
     ],
-    "parameter$preparedstatement->bindparam(1,": [
+    ">bindparam(1,": [
       "ol",
       "li",
       "pre"
@@ -1331,7 +1343,12 @@
       "li",
       "pre"
     ],
-    "statement$preparedstatement->execute();": [
+    "statement$preparedstatement": [
+      "ol",
+      "li",
+      "pre"
+    ],
+    ">execute();": [
       "ol",
       "li",
       "pre"
@@ -1342,7 +1359,12 @@
     "resources": [
       "h1"
     ],
-    "http//php.net/manual/en/pdo.prepared-statements.php": [
+    "http//php.net/manual/en/pdo.prepared": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "statements.php": [
       "ul",
       "li",
       "a"

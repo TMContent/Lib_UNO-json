@@ -10,6 +10,9 @@
     "2": [
       "ul",
       "li",
+      "a",
+      "ul",
+      "li",
       "a"
     ],
     "applies": [
@@ -102,6 +105,7 @@
       "title"
     ],
     "html": [
+      "p",
       "p",
       "p",
       "p",
@@ -228,6 +232,8 @@
       "title"
     ],
     "user": [
+      "p",
+      "p",
       "p",
       "p",
       "ol",
@@ -448,7 +454,10 @@
       "p"
     ],
     "part": [
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "of": [
       "p",
@@ -481,7 +490,10 @@
       "ol",
       "li",
       "p",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "understood": [
       "p"
@@ -656,6 +668,7 @@
     "encoded": [
       "p",
       "p",
+      "p",
       "ul",
       "li",
       "a"
@@ -703,11 +716,23 @@
       "ul",
       "li"
     ],
-    "cross-site": [
-      "p"
+    "cross": [
+      "p",
+      "ul",
+      "li",
+      "a"
+    ],
+    "site": [
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "scripting": [
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "vulnerabilities": [
       "p",
@@ -817,7 +842,7 @@
       "li",
       "a"
     ],
-    "user-controlled": [
+    "controlled": [
       "p",
       "p"
     ],
@@ -952,9 +977,6 @@
       "p"
     ],
     "should": [
-      "p"
-    ],
-    "html-encoded": [
       "p"
     ],
     "being": [
@@ -1139,9 +1161,13 @@
       "li",
       "p"
     ],
-    "-": [
+    "": [
+      "ol",
       "ol",
       "li",
+      "li",
+      "p",
+      "p",
       "p",
       "p"
     ],
@@ -1214,9 +1240,21 @@
       "li",
       "p"
     ],
-    "third-party": [
+    "third": [
+      "ol",
       "ol",
       "li",
+      "li",
+      "p",
+      "p",
+      "strong"
+    ],
+    "party": [
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
       "p",
       "strong"
     ],
@@ -1306,16 +1344,6 @@
       "li",
       "p"
     ],
-    "third": [
-      "ol",
-      "li",
-      "p"
-    ],
-    "party": [
-      "ol",
-      "li",
-      "p"
-    ],
     "jtidy": [
       "ol",
       "li",
@@ -1344,8 +1372,11 @@
       "ul",
       "ul",
       "ul",
+      "ul",
       "li",
       "li",
+      "li",
+      "a",
       "li"
     ],
     "reform": [
@@ -1363,7 +1394,10 @@
       "em",
       "ul",
       "ul",
+      "ul",
       "li",
+      "li",
+      "a",
       "li",
       "ul",
       "li",
@@ -1649,7 +1683,22 @@
     "https//www.owasp.org/index.php/category:owasp_encoding_projectfor": [
       "ul"
     ],
-    "http//www.jtmelton.com/2009/01/12/the-owasp-top-ten-and-esapi-part-2-cross-site-scripting-xss/for": [
+    "http//www.jtmelton.com/2009/01/12/the": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "top": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "ten": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "xss/for": [
       "ul"
     ],
     "https//www.owasp.org/index.php/category:owasp_enterprise_security_apifor": [
@@ -1664,7 +1713,11 @@
     "https//www.owasp.org/index.php/xss_%28cross_site_scripting%29_prevention_cheat_sheetfor": [
       "ul"
     ],
-    "dom-based": [
+    "dom": [
+      "ul",
+      "li"
+    ],
+    "based": [
       "ul",
       "li"
     ],
@@ -1689,7 +1742,7 @@
       "li",
       "a"
     ],
-    "http//www.jtmelton.com/2009/01/12/the-owasp-top-ten-and-esapi-part-2-cross-site-scripting-xss/": [
+    "xss/": [
       "li",
       "a"
     ],

@@ -1559,7 +1559,13 @@
       "ul",
       "li"
     ],
-    "pre-defined": [
+    "pre": [
+      "ol",
+      "li",
+      "ul",
+      "li"
+    ],
+    "defined": [
       "ol",
       "li",
       "ul",
@@ -2730,12 +2736,38 @@
       "blockquote",
       "pre"
     ],
-    "!-": [
+    "!": [
       "ol",
       "li",
       "ul",
       "li",
       "blockquote",
+      "pre"
+    ],
+    "": [
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "li",
+      "li",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "li",
+      "li",
+      "blockquote",
+      "blockquote",
+      "blockquote",
+      "blockquote",
+      "pre",
+      "pre",
+      "pre",
       "pre"
     ],
     "final": [
@@ -2755,14 +2787,6 @@
       "pre"
     ],
     "here": [
-      "ol",
-      "li",
-      "ul",
-      "li",
-      "blockquote",
-      "pre"
-    ],
-    "--": [
       "ol",
       "li",
       "ul",

@@ -68,7 +68,8 @@
       "p",
       "p"
     ],
-    "type-safe": [
+    "type": [
+      "p",
       "p",
       "p",
       "ol",
@@ -77,7 +78,26 @@
       "li",
       "p",
       "p",
-      "strong"
+      "strong",
+      "ul",
+      "li",
+      "a",
+      "title"
+    ],
+    "safe": [
+      "p",
+      "p",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
+      "p",
+      "strong",
+      "ul",
+      "li",
+      "a",
+      "title"
     ],
     "parameters": [
       "p",
@@ -351,13 +371,6 @@
     "enforce": [
       "p"
     ],
-    "type": [
-      "p",
-      "ul",
-      "li",
-      "a",
-      "title"
-    ],
     "and": [
       "p",
       "ol",
@@ -448,12 +461,14 @@
       "ul",
       "ul",
       "ul",
+      "ul",
       "li",
       "li",
       "a",
       "li",
       "li",
       "a",
+      "li",
       "li",
       "a"
     ],
@@ -1148,7 +1163,9 @@
       "p"
     ],
     "based": [
-      "p"
+      "p",
+      "ul",
+      "li"
     ],
     "supplied": [
       "p"
@@ -1269,7 +1286,11 @@
       "pre",
       "pre"
     ],
-    "--": [
+    "": [
+      "pre",
+      "pre",
+      "pre",
+      "pre",
       "pre"
     ],
     "result": [
@@ -1290,7 +1311,7 @@
     "'mjones'": [
       "pre"
     ],
-    "--'": [
+    "'": [
       "pre"
     ],
     "allow": [
@@ -1393,10 +1414,6 @@
       "li",
       "li"
     ],
-    "injection-based": [
-      "ul",
-      "li"
-    ],
     "related": [
       "h1"
     ],
@@ -1405,12 +1422,6 @@
       "ul",
       "li",
       "a"
-    ],
-    "safe": [
-      "ul",
-      "li",
-      "a",
-      "title"
     ],
     "adapted": [
       "p"

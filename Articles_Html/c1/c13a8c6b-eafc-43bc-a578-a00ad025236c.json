@@ -163,8 +163,16 @@
     "deny": [
       "p"
     ],
-    "permit-only": [
-      "p"
+    "permit": [
+      "p",
+      "pre",
+      "pre"
+    ],
+    "only": [
+      "p",
+      "p",
+      "pre",
+      "pre"
     ],
     "stack": [
       "p",
@@ -259,11 +267,6 @@
     "grants": [
       "p"
     ],
-    "only": [
-      "p",
-      "pre",
-      "pre"
-    ],
     "execution": [
       "p",
       "pre"
@@ -312,10 +315,6 @@
       "pre"
     ],
     "{": [
-      "pre"
-    ],
-    "permit": [
-      "pre",
       "pre"
     ],
     "this": [

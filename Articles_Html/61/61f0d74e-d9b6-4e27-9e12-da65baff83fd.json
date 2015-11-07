@@ -339,7 +339,8 @@
       "a"
     ],
     "only": [
-      "p"
+      "p",
+      "pre"
     ],
     "difference": [
       "p"
@@ -599,7 +600,10 @@
       "p"
     ],
     "server": [
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "on": [
       "p",
@@ -674,7 +678,7 @@
     "bind": [
       "pre"
     ],
-    "read-only": [
+    "read": [
       "pre"
     ],
     "$surname=$_get'surname'];": [
@@ -997,17 +1001,25 @@
       "li",
       "a"
     ],
-    "server-side": [
+    "side": [
+      "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "a"
+    ],
+    "xpath": [
       "ul",
       "li",
       "a"
     ],
-    "xpath-xquery": [
+    "xquery": [
       "ul",
       "li",
       "a"
     ],
-    "client-side": [
+    "client": [
       "ul",
       "li",
       "a"

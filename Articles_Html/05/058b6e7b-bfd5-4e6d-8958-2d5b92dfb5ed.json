@@ -18,7 +18,9 @@
       "p",
       "p",
       "b",
-      "p"
+      "blockquote",
+      "p",
+      "title"
     ],
     "signing": [
       "p",
@@ -194,7 +196,8 @@
       "p",
       "p",
       "b",
-      "b"
+      "b",
+      "title"
     ],
     "assemblies": [
       "p",
@@ -268,7 +271,19 @@
     "snexe": [
       "pre"
     ],
-    "-k": [
+    "": [
+      "pre",
+      "pre",
+      "blockquote",
+      "b",
+      "pre",
+      "pre",
+      "pre",
+      "blockquote",
+      "b",
+      "pre"
+    ],
+    "k": [
       "pre"
     ],
     "keypairsnk": [
@@ -301,7 +316,7 @@
       "pre",
       "pre"
     ],
-    "-p": [
+    "p": [
       "pre"
     ],
     "publickeysnk": [
@@ -437,8 +452,17 @@
     "boxes": [
       "p"
     ],
-    "strong-name": [
-      "p"
+    "strong": [
+      "p",
+      "blockquote",
+      "p",
+      "title"
+    ],
+    "name": [
+      "p",
+      "blockquote",
+      "p",
+      "title"
     ],
     "build": [
       "p",
@@ -447,7 +471,7 @@
     "note   a": [
       "blockquote"
     ],
-    "delay-signed": [
+    "signed": [
       "blockquote"
     ],
     "will": [
@@ -472,23 +496,13 @@
     "however": [
       "blockquote"
     ],
-    "strong": [
-      "blockquote",
-      "p",
-      "title"
-    ],
-    "name": [
-      "blockquote",
-      "p",
-      "title"
-    ],
     "tool": [
       "blockquote"
     ],
     "sn.exe)": [
       "blockquote"
     ],
-    "-vr": [
+    "vr": [
       "blockquote",
       "b",
       "pre",
@@ -594,7 +608,7 @@
     "key,": [
       "p"
     ],
-    "-tp": [
+    "tp": [
       "pre"
     ],
     "note   use": [
@@ -603,7 +617,7 @@
     "uppercase": [
       "blockquote"
     ],
-    "-t": [
+    "t": [
       "blockquote",
       "b"
     ],
@@ -650,13 +664,16 @@
     "release": [
       "p"
     ],
-    "re-signs": [
+    "re": [
+      "p"
+    ],
+    "signs": [
       "p"
     ],
     "called": [
       "p"
     ],
-    "-r": [
+    "r": [
       "pre"
     ],
     "adapted": [
@@ -678,9 +695,6 @@
       "p"
     ],
     "how": [
-      "title"
-    ],
-    "delay-sign": [
       "title"
     ]
   },

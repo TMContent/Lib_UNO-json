@@ -868,10 +868,22 @@
       "li",
       "p"
     ],
-    "non-sensitive": [
+    "non": [
       "ol",
       "li",
       "p"
+    ],
+    "sensitive": [
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
+      "p",
+      "li",
+      "p",
+      "strong"
     ],
     "transactions": [
       "ol",
@@ -896,15 +908,6 @@
       "ol",
       "li",
       "p"
-    ],
-    "sensitive": [
-      "ol",
-      "ol",
-      "li",
-      "p",
-      "li",
-      "p",
-      "strong"
     ],
     "in": [
       "ol",
@@ -1142,7 +1145,10 @@
     "susceptible": [
       "p"
     ],
-    "cross-site": [
+    "cross": [
+      "p"
+    ],
+    "site": [
       "p"
     ],
     "scripting": [

@@ -874,7 +874,21 @@
       "p",
       "p"
     ],
-    "cross-site": [
+    "cross": [
+      "p",
+      "ol",
+      "li",
+      "ul",
+      "li",
+      "p",
+      "p"
+    ],
+    "site": [
+      "p",
+      "ol",
+      "li",
+      "ul",
+      "li",
       "p",
       "p"
     ],
@@ -1688,12 +1702,18 @@
     ],
     "client": [
       "ol",
+      "ol",
       "li",
+      "li",
+      "p",
       "p"
     ],
     "side": [
       "ol",
+      "ol",
       "li",
+      "li",
+      "p",
       "p"
     ],
     "especially": [
@@ -1770,7 +1790,12 @@
       "li",
       "p"
     ],
-    "round-trip": [
+    "round": [
+      "ol",
+      "li",
+      "p"
+    ],
+    "trip": [
       "ol",
       "li",
       "p"
@@ -1789,11 +1814,6 @@
       "ul",
       "li",
       "p",
-      "p"
-    ],
-    "client-side": [
-      "ol",
-      "li",
       "p"
     ],
     "provide": [
@@ -2259,7 +2279,20 @@
       "pre",
       "p"
     ],
-    "regex@\"^[a-za-z'.\\s]{1,40}$\");response.write(reg.ismatch(request.querystring[\"name\"]));//": [
+    "regex@\"^[a": [
+      "ol",
+      "li",
+      "pre"
+    ],
+    "za": [
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "pre",
+      "pre"
+    ],
+    "z'.\\s]{1,40}$\");response.write(reg.ismatch(request.querystring[\"name\"]));//": [
       "ol",
       "li",
       "pre"
@@ -2269,7 +2302,12 @@
       "li",
       "pre"
     ],
-    "!regex.ismatch(request.querystring[\"name\"],@\"^[a-za-z'.\\s]{1,40}$\")){": [
+    "!regex.ismatch(request.querystring[\"name\"],@\"^[a": [
+      "ol",
+      "li",
+      "pre"
+    ],
+    "z'.\\s]{1,40}$\")){": [
       "ol",
       "li",
       "pre"
@@ -2757,9 +2795,12 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "li",
+      "li",
+      "ul",
       "ul",
       "ul",
       "ul",
@@ -2769,7 +2810,10 @@
       "p",
       "p",
       "p",
-      "strong"
+      "strong",
+      "li",
+      "p",
+      "p"
     ],
     "fields": [
       "ol",
@@ -3241,7 +3285,7 @@
       "p",
       "p"
     ],
-    "non-numeric": [
+    "non": [
       "ol",
       "li",
       "ul",
@@ -3322,13 +3366,6 @@
       "p",
       "p"
     ],
-    "site": [
-      "ol",
-      "li",
-      "ul",
-      "li",
-      "p"
-    ],
     "street": [
       "ol",
       "ol",
@@ -3399,9 +3436,14 @@
     ],
     "city": [
       "ol",
+      "ol",
+      "li",
       "li",
       "ul",
+      "ul",
       "li",
+      "li",
+      "p",
       "p",
       "p"
     ],
@@ -3444,7 +3486,14 @@
       "p",
       "p"
     ],
-    "defined--city": [
+    "defined": [
+      "ol",
+      "li",
+      "ul",
+      "li",
+      "p"
+    ],
+    "": [
       "ol",
       "li",
       "ul",
@@ -3712,11 +3761,12 @@
       "li",
       "p"
     ],
-    "cross-checked": [
+    "checked": [
       "ol",
       "li",
       "ul",
       "li",
+      "p",
       "p"
     ],
     "order": [
@@ -3980,9 +4030,6 @@
       "p"
     ],
     "similarly": [
-      "p"
-    ],
-    "checked": [
       "p"
     ],
     "times": [

@@ -37,7 +37,13 @@
       "li",
       "p"
     ],
-    "server-side": [
+    "server": [
+      "ul",
+      "li",
+      "h2",
+      "h2"
+    ],
+    "side": [
       "ul",
       "li",
       "h2",
@@ -191,9 +197,11 @@
       "p",
       "p",
       "p",
+      "p",
       "p"
     ],
     "input": [
+      "p",
       "p",
       "p",
       "p",
@@ -285,7 +293,19 @@
       "a",
       "title"
     ],
-    "database-facing": [
+    "database": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "ol",
+      "ol",
+      "li",
+      "li"
+    ],
+    "facing": [
       "p"
     ],
     "injection": [
@@ -365,17 +385,6 @@
     ],
     "passed": [
       "p"
-    ],
-    "database": [
-      "p",
-      "p",
-      "p",
-      "p",
-      "p",
-      "ol",
-      "ol",
-      "li",
-      "li"
     ],
     "and": [
       "p",
@@ -631,10 +640,10 @@
     "contain": [
       "p"
     ],
-    "user-input": [
+    "non": [
       "p"
     ],
-    "non-escaped": [
+    "escaped": [
       "p"
     ],
     "form": [
@@ -684,7 +693,13 @@
     "parameterizing": [
       "p"
     ],
-    "type-enforcing": [
+    "type": [
+      "p",
+      "p",
+      "ol",
+      "li"
+    ],
+    "enforcing": [
       "p"
     ],
     "them": [
@@ -705,7 +720,7 @@
       "li",
       "a"
     ],
-    "type-safe": [
+    "safe": [
       "p"
     ],
     "should": [
@@ -797,10 +812,6 @@
       "li"
     ],
     "format": [
-      "ol",
-      "li"
-    ],
-    "type": [
       "ol",
       "li"
     ],
@@ -914,6 +925,9 @@
     ],
     "encode": [
       "ul",
+      "ul",
+      "li",
+      "a",
       "li",
       "a"
     ],
@@ -1016,7 +1030,15 @@
       "li",
       "a"
     ],
-    "role-based": [
+    "role": [
+      "ul",
+      "li",
+      "a",
+      "ul",
+      "li",
+      "a"
+    ],
+    "based": [
       "ul",
       "li",
       "a",
@@ -1032,7 +1054,10 @@
       "li",
       "a"
     ],
-    "url-encode": [
+    "url": [
+      "ul",
+      "li",
+      "a",
       "ul",
       "li",
       "a"
@@ -1066,15 +1091,13 @@
     ],
     "encoded": [
       "ul",
+      "ul",
+      "li",
+      "a",
       "li",
       "a"
     ],
     "enforced": [
-      "ul",
-      "li",
-      "a"
-    ],
-    "url-encoded": [
       "ul",
       "li",
       "a"

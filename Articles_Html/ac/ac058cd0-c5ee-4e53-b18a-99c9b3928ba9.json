@@ -38,8 +38,13 @@
       "p",
       "title"
     ],
-    "non-private": [
+    "non": [
       "p"
+    ],
+    "private": [
+      "p",
+      "p",
+      "pre"
     ],
     "fields": [
       "p",
@@ -169,17 +174,18 @@
     "mark": [
       "p"
     ],
-    "private": [
-      "p",
-      "pre"
-    ],
     "create": [
       "p"
     ],
     "read/write": [
       "p"
     ],
-    "read-only": [
+    "read": [
+      "p"
+    ],
+    "only": [
+      "p",
+      "blockquote",
       "p"
     ],
     "access": [
@@ -205,10 +211,6 @@
       "p"
     ],
     "compile": [
-      "blockquote",
-      "p"
-    ],
-    "only": [
       "blockquote",
       "p"
     ],
@@ -341,7 +343,13 @@
     "set": [
       "pre"
     ],
-    "if!regex.ismatch(value,@\"^[a-za-z'.\\s]{1,40}$\"))": [
+    "if!regex.ismatch(value,@\"^[a": [
+      "pre"
+    ],
+    "za": [
+      "pre"
+    ],
+    "z'.\\s]{1,40}$\"))": [
       "pre"
     ],
     "throw": [
@@ -378,11 +386,16 @@
       "ul",
       "li"
     ],
-    "at http//msdn.microsoft.com/en-us/library/w86s7x04.aspx": [
+    "at http//msdn.microsoft.com/en": [
       "ul",
       "li"
     ],
-    "http//msdn.microsoft.com/en-us/library/w86s7x04.aspx": [
+    "us/library/w86s7x04.aspx": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "http//msdn.microsoft.com/en": [
       "a"
     ],
     "adapted": [

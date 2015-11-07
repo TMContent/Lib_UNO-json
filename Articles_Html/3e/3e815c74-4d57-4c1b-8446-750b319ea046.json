@@ -267,6 +267,7 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "li",
@@ -295,6 +296,8 @@
       "li",
       "p",
       "p",
+      "li",
+      "pre",
       "p",
       "p",
       "pre",
@@ -1072,8 +1075,16 @@
     ],
     "up": [
       "ol",
+      "ol",
+      "ol",
       "li",
-      "p"
+      "li",
+      "p",
+      "p",
+      "li",
+      "ul",
+      "li",
+      "pre"
     ],
     "involves": [
       "ol",
@@ -1230,7 +1241,7 @@
       "li",
       "p"
     ],
-    "clean-up": [
+    "clean": [
       "ol",
       "ol",
       "li",
@@ -1873,6 +1884,10 @@
       "ol",
       "ol",
       "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
       "li",
       "pre",
       "li",
@@ -1910,9 +1925,14 @@
       "p",
       "li",
       "li",
+      "li",
       "p",
       "p",
       "strong",
+      "pre",
+      "li",
+      "li",
+      "li",
       "li",
       "li",
       "li",
@@ -1920,6 +1940,9 @@
       "p",
       "p",
       "strong",
+      "pre",
+      "pre",
+      "pre",
       "ul",
       "ul",
       "li",
@@ -2460,20 +2483,34 @@
       "li",
       "p"
     ],
-    "error-page>": [
+    "page>": [
       "ol",
       "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
       "li",
       "pre",
+      "pre",
       "li",
+      "li",
+      "li",
+      "pre",
+      "pre",
       "pre"
     ],
-    "exception-type>java.lang.throwable</exception-type>": [
+    "type>java.lang.throwable</exception": [
       "ol",
       "li",
       "pre"
     ],
-    "location>/error/errorgeneric.jsp</location> </error-page>": [
+    "type>": [
+      "ol",
+      "li",
+      "pre"
+    ],
+    "location>/error/errorgeneric.jsp</location> </error": [
       "ol",
       "li",
       "pre"
@@ -2504,22 +2541,35 @@
       "li",
       "p"
     ],
-    "error-code>404</error-code>": [
+    "code>404</error": [
       "ol",
       "li",
       "pre"
     ],
-    "location>/error/error404.jsp</location> </error-page> <error-page>": [
+    "code>": [
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "pre",
+      "pre"
+    ],
+    "location>/error/error404.jsp</location> </error": [
       "ol",
       "li",
       "pre"
     ],
-    "error-code>500</error-code>": [
+    "page> <error": [
       "ol",
       "li",
       "pre"
     ],
-    "location>/error/error500.jsp</location> </error-page>": [
+    "code>500</error": [
+      "ol",
+      "li",
+      "pre"
+    ],
+    "location>/error/error500.jsp</location> </error": [
       "ol",
       "li",
       "pre"

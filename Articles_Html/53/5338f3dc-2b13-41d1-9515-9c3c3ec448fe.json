@@ -2116,7 +2116,35 @@
     "defense": [
       "p"
     ],
-    "in-depth": [
+    "in": [
+      "p",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "p",
+      "pre",
+      "li",
+      "ul",
+      "li",
+      "strong",
+      "p",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
+      "ol",
+      "li",
+      "p",
+      "pre"
+    ],
+    "depth": [
       "p"
     ],
     "mechanism": [
@@ -2162,6 +2190,9 @@
       "ol",
       "ol",
       "ol",
+      "ol",
+      "ol",
+      "ol",
       "li",
       "li",
       "p",
@@ -2170,10 +2201,23 @@
       "li",
       "li",
       "li",
+      "li",
+      "li",
+      "li",
+      "ul",
+      "ul",
+      "ul",
       "ul",
       "ul",
       "ul",
       "li",
+      "li",
+      "li",
+      "li",
+      "p",
+      "p",
+      "strong",
+      "pre",
       "pre",
       "li",
       "li",
@@ -2970,15 +3014,52 @@
       "li",
       "li"
     ],
-    "-": [
+    "": [
       "ol",
       "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
       "li",
       "li",
       "ul",
       "ul",
+      "ul",
+      "ul",
       "li",
-      "li"
+      "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "li",
+      "p",
+      "p",
+      "em",
+      "em",
+      "pre",
+      "strong",
+      "strong",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
+      "em",
+      "pre",
+      "li",
+      "pre"
     ],
     "upload": [
       "ol",
@@ -4303,7 +4384,7 @@
       "ul",
       "li"
     ],
-    "system-wide": [
+    "wide": [
       "ol",
       "ol",
       "ol",
@@ -4373,30 +4454,6 @@
       "ul",
       "li",
       "p"
-    ],
-    "in": [
-      "ol",
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "ul",
-      "ul",
-      "li",
-      "li",
-      "p",
-      "pre",
-      "li",
-      "ul",
-      "li",
-      "strong",
-      "p",
-      "ol",
-      "li",
-      "ol",
-      "li",
-      "p",
-      "pre"
     ],
     "<java": [
       "ol",
@@ -4781,24 +4838,41 @@
     ],
     "start": [
       "ol",
-      "li",
-      "ul",
-      "li",
-      "p"
-    ],
-    "-djavasecurity.manager": [
       "ol",
       "li",
       "ul",
       "li",
       "p",
+      "li",
+      "ul",
+      "li",
+      "ol",
+      "ol",
+      "li",
+      "p",
+      "li",
+      "ol",
+      "li",
+      "p"
+    ],
+    "djavasecurity.manager": [
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "p",
       "em",
+      "pre",
       "strong",
       "ol",
       "li",
       "pre"
     ],
-    "-djavasecurity.policy": [
+    "djavasecurity.policy": [
       "ol",
       "li",
       "ul",
@@ -4813,7 +4887,7 @@
       "li",
       "p"
     ],
-    "-djavasecurity.manager-djava.security.policy=/usr/myapp/myapp.java.policy": [
+    "djava.security.policy=/usr/myapp/myapp.java.policy": [
       "ol",
       "li",
       "ul",
@@ -4995,6 +5069,10 @@
       "ul",
       "ul",
       "li",
+      "li",
+      "ol",
+      "li",
+      "ul",
       "li"
     ],
     "its": [
@@ -5114,6 +5192,10 @@
       "ol",
       "li",
       "ul",
+      "li",
+      "ol",
+      "li",
+      "ul",
       "li"
     ],
     "memory verify": [
@@ -5143,7 +5225,7 @@
       "p",
       "strong"
     ],
-    "start-up": [
+    "up": [
       "ol",
       "li",
       "ul",
@@ -5245,7 +5327,7 @@
     "home/lib/security/java.security": [
       "em"
     ],
-    "-djavasecurity.policy=/usr/myapp/myapp.java.policy": [
+    "djavasecurity.policy=/usr/myapp/myapp.java.policy": [
       "strong"
     ],
     "memory": [
@@ -5605,9 +5687,15 @@
       "li",
       "p"
     ],
-    "\"filee:/myapp/bin/-\"": [
+    "\"filee:/myapp/bin/": [
       "ol",
       "li",
+      "pre"
+    ],
+    "\"": [
+      "ol",
+      "li",
+      "pre",
       "pre"
     ],
     "{": [
@@ -7205,7 +7293,7 @@
       "li",
       "p"
     ],
-    "-djavasecurity.policy(={policy": [
+    "djavasecurity.policy(={policy": [
       "ol",
       "li",
       "p",
@@ -7303,7 +7391,7 @@
       "li",
       "p"
     ],
-    "-djavasecurity.policy=e:/myapp/config/myapp.policy": [
+    "djavasecurity.policy=e:/myapp/config/myapp.policy": [
       "ol",
       "li",
       "pre"
@@ -7360,7 +7448,7 @@
       "li",
       "p"
     ],
-    "built-in": [
+    "built": [
       "ol",
       "li",
       "p"
@@ -8085,12 +8173,6 @@
       "ul",
       "li"
     ],
-    "web-accessible": [
-      "ol",
-      "li",
-      "ul",
-      "li"
-    ],
     "limits": [
       "ol",
       "li",
@@ -8343,7 +8425,7 @@
     "solution": [
       "h1"
     ],
-    "\"filee:/myapp/bin/dbmanager/-\"": [
+    "\"filee:/myapp/bin/dbmanager/": [
       "pre"
     ]
   },

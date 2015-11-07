@@ -149,6 +149,8 @@
     "of": [
       "p",
       "p",
+      "ul",
+      "li",
       "h3",
       "p",
       "p",
@@ -393,7 +395,10 @@
       "blockquote",
       "blockquote"
     ],
-    "server-side": [
+    "server": [
+      "p"
+    ],
+    "side": [
       "p"
     ],
     "session": [
@@ -755,8 +760,19 @@
       "ul",
       "li"
     ],
-    "out-of-process": [
+    "out": [
       "ul",
+      "li",
+      "p"
+    ],
+    "process": [
+      "ul",
+      "li",
+      "p",
+      "p",
+      "ul",
+      "ul",
+      "li",
       "li"
     ],
     "state": [
@@ -838,7 +854,23 @@
     "prompt": [
       "p"
     ],
-    "-pe": [
+    "": [
+      "p",
+      "p",
+      "b",
+      "b",
+      "p",
+      "b",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "b",
+      "li",
+      "li",
+      "b"
+    ],
+    "pe": [
       "p",
       "b",
       "ul",
@@ -849,17 +881,18 @@
       "p",
       "b"
     ],
-    "-app": [
+    "app": [
       "p",
       "b",
       "ul",
-      "li"
+      "li",
+      "b"
     ],
     "\"/machinedpapi\"": [
       "p",
       "b"
     ],
-    "-prov": [
+    "prov": [
       "p",
       "b",
       "ul",
@@ -929,9 +962,6 @@
     "name": [
       "ul",
       "li"
-    ],
-    "app": [
-      "b"
     ],
     "minimize": [
       "h3",
@@ -1048,14 +1078,6 @@
       "ul",
       "li"
     ],
-    "process": [
-      "p",
-      "p",
-      "ul",
-      "ul",
-      "li",
-      "li"
-    ],
     "address": [
       "p",
       "p",
@@ -1108,9 +1130,6 @@
       "p"
     ],
     "swapped": [
-      "p"
-    ],
-    "out": [
       "p"
     ],
     "someone": [
@@ -1529,7 +1548,10 @@
     "most": [
       "blockquote"
     ],
-    "form-related": [
+    "form": [
+      "blockquote"
+    ],
+    "related": [
       "blockquote"
     ],
     "apis": [

@@ -1138,6 +1138,7 @@
       "ol",
       "li",
       "p",
+      "p",
       "pre",
       "p",
       "p",
@@ -1187,6 +1188,7 @@
       "ul",
       "li",
       "li",
+      "p",
       "p",
       "title"
     ],
@@ -1788,7 +1790,10 @@
       "h2",
       "p",
       "p",
+      "pre",
       "p",
+      "p",
+      "em",
       "p",
       "ol",
       "ol",
@@ -2183,9 +2188,11 @@
       "p",
       "ul",
       "ul",
+      "ul",
       "li",
       "li",
-      "b"
+      "b",
+      "li"
     ],
     "store": [
       "p",
@@ -2941,9 +2948,11 @@
       "p",
       "p",
       "ul",
+      "ul",
       "li",
       "li",
-      "b"
+      "b",
+      "li"
     ],
     "uses": [
       "p",
@@ -3012,8 +3021,11 @@
       "p",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
+      "li",
+      "p",
       "p",
       "ol",
       "li",
@@ -4323,7 +4335,32 @@
       "p",
       "em"
     ],
-    "-s": [
+    "": [
+      "pre",
+      "pre",
+      "pre",
+      "p",
+      "em",
+      "p",
+      "em",
+      "p",
+      "em",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre"
+    ],
+    "s": [
       "pre",
       "p",
       "em"
@@ -4333,12 +4370,7 @@
       "p",
       "em"
     ],
-    "-e": [
-      "pre",
-      "p",
-      "em"
-    ],
-    "-a": [
+    "e": [
       "pre",
       "p",
       "em"
@@ -4534,10 +4566,6 @@
     "analyzer": [
       "p"
     ],
-    "--": [
-      "pre",
-      "pre"
-    ],
     "network": [
       "pre",
       "p",
@@ -4554,7 +4582,9 @@
       "pre",
       "pre"
     ],
-    "service'--": [
+    "service'": [
+      "pre",
+      "pre",
       "pre",
       "pre"
     ],
@@ -4563,10 +4593,6 @@
       "pre"
     ],
     "aspnetdbgosp_grantdbaccess": [
-      "pre",
-      "pre"
-    ],
-    "service'": [
       "pre",
       "pre"
     ],
@@ -4963,9 +4989,17 @@
       "li",
       "p"
     ],
-    "non-default": [
+    "non": [
       "ol",
       "li",
+      "p",
+      "ol",
+      "li",
+      "ul",
+      "li",
+      "ul",
+      "li",
+      "p",
       "p"
     ],
     "while": [
@@ -5261,7 +5295,7 @@
       "li",
       "p"
     ],
-    "non-alphanumeric": [
+    "alphanumeric": [
       "ol",
       "li",
       "ul",
@@ -5370,20 +5404,18 @@
     "authorize": [
       "h3"
     ],
-    "t-sql": [
+    "t": [
       "p"
     ],
-    "'domain\\webservername$'--": [
-      "pre"
-    ],
     "'domain\\webservername$'": [
+      "pre",
       "pre",
       "pre"
     ],
     "'web": [
       "pre"
     ],
-    "name'--": [
+    "name'": [
       "pre"
     ],
     "encrypt": [
@@ -5455,7 +5487,9 @@
       "ul",
       "li",
       "ul",
-      "li"
+      "li",
+      "p",
+      "p"
     ],
     "separated": [
       "ul",
@@ -5850,7 +5884,7 @@
       "ul",
       "li"
     ],
-    "cross-site": [
+    "cross": [
       "ul",
       "li"
     ],
@@ -5908,7 +5942,7 @@
       "li",
       "b"
     ],
-    "user-specific": [
+    "specific": [
       "ul",
       "li"
     ],
@@ -5916,7 +5950,7 @@
       "ul",
       "li"
     ],
-    "non-sensitive": [
+    "sensitive": [
       "ul",
       "li"
     ],
@@ -6039,7 +6073,14 @@
     "passwordstrengthregularexpression=": [
       "pre"
     ],
-    "\"^?=.*\\d)(?=.*[a-z])(?=.*[a-z]).{8,10}$\"": [
+    "\"^?=.*\\d)(?=.*[a": [
+      "pre"
+    ],
+    "z])(?=.*[a": [
+      "pre",
+      "pre"
+    ],
+    "z]).{8,10}$\"": [
       "pre"
     ],
     "version=35.0.0,": [
@@ -6090,10 +6131,16 @@
       "p",
       "p"
     ],
-    ".*[a-z])": [
+    ".*[a": [
       "p"
     ],
-    "*a-z]": [
+    "z])": [
+      "p"
+    ],
+    "*a": [
+      "p"
+    ],
+    "z]": [
       "p"
     ],
     "{810}": [
@@ -6153,11 +6200,9 @@
     "both": [
       "p"
     ],
-    "client-side": [
+    "side": [
       "p",
-      "p"
-    ],
-    "server-side": [
+      "p",
       "p"
     ],
     "one that": [
@@ -6169,7 +6214,10 @@
     "checks": [
       "p"
     ],
-    "^?=.*\\d)(?=.*[a-z])(?=.*[a-z]).{8,10}$": [
+    "^?=.*\\d)(?=.*[a": [
+      "pre"
+    ],
+    "z]).{8,10}$": [
       "pre"
     ],
     "policy": [

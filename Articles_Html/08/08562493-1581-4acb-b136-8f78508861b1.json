@@ -7,7 +7,10 @@
       "li",
       "ul",
       "li",
-      "h1"
+      "h1",
+      "ul",
+      "li",
+      "blockquote"
     ],
     "2": [
       "ul",
@@ -26,6 +29,16 @@
       "li",
       "ul",
       "li"
+    ],
+    "5": [
+      "ul",
+      "li",
+      "blockquote"
+    ],
+    "18": [
+      "ul",
+      "li",
+      "blockquote"
     ],
     "329290": [
       "p"
@@ -867,6 +880,8 @@
       "li",
       "ul",
       "li",
+      "ul",
+      "li",
       "p",
       "h1",
       "p",
@@ -1184,18 +1199,66 @@
       "p",
       "p"
     ],
-    "machine-level": [
+    "machine": [
       "p",
       "ul",
       "li",
+      "ul",
+      "li",
+      "ul",
+      "li",
+      "h1",
+      "p",
+      "h2",
+      "p",
+      "p",
+      "h2",
+      "p",
+      "ul",
+      "li",
+      "blockquote"
+    ],
+    "level": [
+      "p",
+      "p",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "p",
+      "p",
       "p",
       "p"
     ],
-    "user-level": [
+    "user": [
       "p",
       "ul",
       "li",
+      "ul",
+      "li",
       "p",
+      "p",
+      "ul",
+      "li",
+      "h1",
+      "p",
+      "blockquote",
+      "h2",
+      "p",
+      "p",
+      "h2",
+      "p",
+      "p",
+      "p",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "blockquote",
+      "p",
+      "ol",
+      "li",
       "p"
     ],
     "stores": [
@@ -1769,46 +1832,6 @@
       "li",
       "h1"
     ],
-    "machine": [
-      "ul",
-      "li",
-      "ul",
-      "li",
-      "h1",
-      "h2",
-      "p",
-      "h2",
-      "p",
-      "ul",
-      "li",
-      "blockquote"
-    ],
-    "user": [
-      "ul",
-      "li",
-      "p",
-      "p",
-      "ul",
-      "li",
-      "h1",
-      "blockquote",
-      "h2",
-      "p",
-      "h2",
-      "p",
-      "p",
-      "p",
-      "ol",
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "blockquote",
-      "p",
-      "ol",
-      "li",
-      "p"
-    ],
     "file": [
       "ul",
       "li",
@@ -2160,7 +2183,11 @@
       "pre",
       "p"
     ],
-    "out-of-process": [
+    "out": [
+      "ul",
+      "li"
+    ],
+    "process": [
       "ul",
       "li"
     ],
@@ -2509,6 +2536,8 @@
       "li",
       "p",
       "ol",
+      "ol",
+      "li",
       "li",
       "p",
       "p",
@@ -2966,7 +2995,85 @@
       "p",
       "b"
     ],
-    "-pe": [
+    "": [
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "li",
+      "p",
+      "p",
+      "p",
+      "b",
+      "b",
+      "b",
+      "p",
+      "p",
+      "b",
+      "b",
+      "p",
+      "p",
+      "b",
+      "b",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "b",
+      "li",
+      "b",
+      "li",
+      "b",
+      "li",
+      "b",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
+      "p",
+      "b",
+      "b",
+      "p",
+      "b",
+      "p",
+      "b",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "p",
+      "p",
+      "p",
+      "b",
+      "b",
+      "b",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "li",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
+      "p",
+      "b",
+      "b"
+    ],
+    "pe": [
       "ol",
       "li",
       "p",
@@ -2981,7 +3088,8 @@
       "p",
       "b",
       "ul",
-      "li"
+      "li",
+      "b"
     ],
     "\"connectionstrings\"": [
       "ol",
@@ -3005,7 +3113,7 @@
       "p",
       "b"
     ],
-    "-app": [
+    "app": [
       "ol",
       "li",
       "p",
@@ -3027,6 +3135,7 @@
       "b",
       "ul",
       "li",
+      "b",
       "ol",
       "li",
       "p",
@@ -3040,7 +3149,7 @@
       "p",
       "b"
     ],
-    "-prov": [
+    "prov": [
       "ol",
       "li",
       "p",
@@ -3057,7 +3166,8 @@
       "p",
       "b",
       "ul",
-      "li"
+      "li",
+      "b"
     ],
     "\"dataprotectionconfigurationprovider\"": [
       "ol",
@@ -3121,7 +3231,7 @@
     "instead": [
       "p"
     ],
-    "-pef": [
+    "pef": [
       "p",
       "b",
       "p",
@@ -3336,11 +3446,11 @@
       "blockquote",
       "p"
     ],
-    "location%windir%\\system32\\microsoft\\protect\\s-1-5-18": [
+    "location%windir%\\system32\\microsoft\\protect\\s": [
       "ul",
       "li"
     ],
-    "%windir%\\system32\\microsoft\\protect\\s-1-5-18": [
+    "%windir%\\system32\\microsoft\\protect\\s": [
       "blockquote"
     ],
     "review": [
@@ -3734,7 +3844,7 @@
       "ol",
       "li"
     ],
-    "-pd": [
+    "pd": [
       "ol",
       "li",
       "p",
@@ -3777,7 +3887,7 @@
       "p",
       "p"
     ],
-    "-pdf": [
+    "pdf": [
       "p",
       "b",
       "p",
@@ -3868,9 +3978,10 @@
       "ol",
       "li"
     ],
-    "run-time": [
+    "time": [
       "ol",
-      "li"
+      "li",
+      "p"
     ],
     "error": [
       "ol",
@@ -3996,21 +4107,22 @@
     "section..succeeded!note   for": [
       "ol"
     ],
-    "http//msdn.microsoft.com/library/default.asp?url=/library/en-us/dnsecure/html/windataprotection-dpapi.asp": [
+    "http//msdn.microsoft.com/library/default.asp?url=/library/en": [
+      "ol",
+      "blockquote",
+      "a"
+    ],
+    "us/dnsecure/html/windataprotection": [
+      "ol",
+      "blockquote",
+      "a"
+    ],
+    "dpapi.asp": [
       "ol",
       "blockquote",
       "a"
     ],
     "usemachineprotection": [
-      "b"
-    ],
-    "pe": [
-      "b"
-    ],
-    "app": [
-      "b"
-    ],
-    "prov": [
       "b"
     ],
     "because": [
@@ -4063,9 +4175,6 @@
       "p"
     ],
     "uses": [
-      "p"
-    ],
-    "time": [
       "p"
     ],
     "configprotectionprovider=\"myuserdataprotectionconfigurationprovider\"": [
@@ -4225,7 +4334,10 @@
     "target": [
       "p"
     ],
-    "re-import": [
+    "re": [
+      "p"
+    ],
+    "import": [
       "p"
     ],
     "adapted": [

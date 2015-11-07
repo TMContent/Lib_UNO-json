@@ -44,6 +44,10 @@
       "li",
       "b"
     ],
+    "8": [
+      "p",
+      "p"
+    ],
     "9": [
       "ul",
       "li",
@@ -55,7 +59,9 @@
       "ul",
       "li",
       "ul",
-      "li"
+      "li",
+      "p",
+      "p"
     ],
     "30": [
       "p"
@@ -98,6 +104,8 @@
       "ul",
       "ul",
       "ul",
+      "ul",
+      "li",
       "li",
       "li",
       "li",
@@ -968,6 +976,7 @@
       "p",
       "p",
       "p",
+      "p",
       "p"
     ],
     "identity": [
@@ -1731,6 +1740,8 @@
       "li",
       "pre",
       "pre",
+      "blockquote",
+      "blockquote",
       "p",
       "p",
       "p"
@@ -1841,7 +1852,10 @@
     ],
     "sign": [
       "ul",
-      "li"
+      "li",
+      "ul",
+      "li",
+      "b"
     ],
     "in": [
       "ul",
@@ -1894,6 +1908,7 @@
       "p",
       "p",
       "p",
+      "p",
       "p"
     ],
     "single": [
@@ -1913,6 +1928,7 @@
       "p",
       "ul",
       "li",
+      "p",
       "p",
       "p",
       "p",
@@ -2444,6 +2460,7 @@
       "li",
       "p",
       "p",
+      "p",
       "blockquote",
       "p",
       "p",
@@ -2649,11 +2666,28 @@
       "blockquote",
       "p"
     ],
-    "cross-site": [
+    "cross": [
       "ul",
       "li",
       "ul",
       "li",
+      "p",
+      "p",
+      "p"
+    ],
+    "site": [
+      "ul",
+      "li",
+      "ul",
+      "li",
+      "ul",
+      "li",
+      "h2",
+      "p",
+      "p",
+      "blockquote",
+      "p",
+      "p",
       "p",
       "p"
     ],
@@ -2797,8 +2831,10 @@
       "p",
       "p"
     ],
-    "sign-out": [
+    "out": [
       "ul",
+      "ul",
+      "li",
       "li",
       "b"
     ],
@@ -2816,10 +2852,6 @@
       "blockquote"
     ],
     "logged": [
-      "ul",
-      "li"
-    ],
-    "out": [
       "ul",
       "li"
     ],
@@ -2854,7 +2886,14 @@
       "p",
       "p"
     ],
-    "time-to-live": [
+    "time": [
+      "ul",
+      "li",
+      "ul",
+      "li",
+      "p"
+    ],
+    "live": [
       "ul",
       "li"
     ],
@@ -2933,7 +2972,9 @@
     ],
     "sensitive": [
       "ul",
-      "li"
+      "li",
+      "p",
+      "p"
     ],
     "information": [
       "ul",
@@ -3071,7 +3112,11 @@
       "li",
       "p"
     ],
-    "tamper-proofing": [
+    "tamper": [
+      "ul",
+      "li"
+    ],
+    "proofing": [
       "ul",
       "li"
     ],
@@ -3160,11 +3205,6 @@
       "li"
     ],
     "reduce": [
-      "ul",
-      "li",
-      "p"
-    ],
-    "time": [
       "ul",
       "li",
       "p"
@@ -3383,6 +3423,7 @@
     ],
     "specific": [
       "p",
+      "p",
       "p"
     ],
     "webconfig": [
@@ -3555,7 +3596,10 @@
       "p",
       "p"
     ],
-    "hard-coded": [
+    "hard": [
+      "p"
+    ],
+    "coded": [
       "p"
     ],
     "isolateapp": [
@@ -3610,9 +3654,6 @@
       "p",
       "p",
       "p",
-      "p"
-    ],
-    "cross-application": [
       "p"
     ],
     "redirects": [
@@ -3908,16 +3949,6 @@
       "h2",
       "p"
     ],
-    "site": [
-      "ul",
-      "li",
-      "h2",
-      "p",
-      "p",
-      "blockquote",
-      "p",
-      "p"
-    ],
     "persist": [
       "ul",
       "li",
@@ -4195,15 +4226,48 @@
       "p",
       "p"
     ],
-    "!--": [
+    "!": [
       "ol",
       "ol",
       "li",
       "li",
       "pre",
+      "pre",
+      "ul",
+      "li",
+      "ul",
+      "li"
+    ],
+    "": [
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
       "pre"
     ],
-    "--<location": [
+    "<location": [
       "ol",
       "li",
       "pre"
@@ -4323,11 +4387,6 @@
       "li",
       "pre"
     ],
-    "--": [
-      "ol",
-      "li",
-      "pre"
-    ],
     "allow": [
       "ol",
       "li",
@@ -4358,9 +4417,19 @@
     "rely": [
       "blockquote"
     ],
-    "non-ssl": [
+    "non": [
       "blockquote",
-      "blockquote"
+      "blockquote",
+      "p",
+      "p",
+      "ul",
+      "li",
+      "ul",
+      "li",
+      "p",
+      "p",
+      "p",
+      "p"
     ],
     "no": [
       "blockquote",
@@ -4383,6 +4452,8 @@
       "p"
     ],
     "client": [
+      "p",
+      "p",
       "p"
     ],
     "computer": [
@@ -4400,7 +4471,7 @@
     "physical": [
       "p"
     ],
-    "non-persistent": [
+    "persistent": [
       "p",
       "p"
     ],
@@ -4685,7 +4756,7 @@
       "li",
       "p"
     ],
-    "non-alphanumeric": [
+    "alphanumeric": [
       "ul",
       "li",
       "ul",
@@ -4694,12 +4765,6 @@
       "p"
     ],
     "e.g.,": [
-      "ul",
-      "li",
-      "ul",
-      "li"
-    ],
-    "!": [
       "ul",
       "li",
       "ul",
@@ -4836,10 +4901,6 @@
     "credential": [
       "p"
     ],
-    "non-sensitive": [
-      "p",
-      "p"
-    ],
     "membership": [
       "p",
       "p",
@@ -4970,7 +5031,14 @@
     "passwordstrengthregularexpression=": [
       "pre"
     ],
-    "\"^?=.*\\d)(?=.*[a-z])(?=.*[a-z]).{8,10}$\"": [
+    "\"^?=.*\\d)(?=.*[a": [
+      "pre"
+    ],
+    "z])(?=.*[a": [
+      "pre",
+      "pre"
+    ],
+    "z]).{8,10}$\"": [
       "pre"
     ],
     "type=\"systemweb.security.sqlmembershipprovider,": [
@@ -5001,10 +5069,6 @@
       "p",
       "p"
     ],
-    "8-10": [
-      "p",
-      "p"
-    ],
     "combination": [
       "p"
     ],
@@ -5023,10 +5087,17 @@
       "p",
       "p"
     ],
-    ".*[a-z])": [
+    ".*[a": [
       "p"
     ],
-    "*a-z|]": [
+    "z])": [
+      "p"
+    ],
+    "*a": [
+      "p",
+      "b"
+    ],
+    "z|]": [
       "p",
       "b"
     ],
@@ -5037,7 +5108,10 @@
     "range": [
       "p"
     ],
-    "*[a-z]": [
+    "*[a": [
+      "b"
+    ],
+    "z]": [
       "b"
     ],
     "always": [
@@ -5081,11 +5155,9 @@
     "benefit": [
       "p"
     ],
-    "client-side": [
+    "side": [
       "p",
-      "p"
-    ],
-    "server-side": [
+      "p",
       "p"
     ],
     "validate": [
@@ -5098,7 +5170,10 @@
       "p",
       "em"
     ],
-    "^?=.*\\d)(?=.*[a-z])(?=.*[a-z]).{8,10}$": [
+    "^?=.*\\d)(?=.*[a": [
+      "pre"
+    ],
+    "z]).{8,10}$": [
       "pre"
     ],
     "legitimate": [
@@ -5162,7 +5237,10 @@
     "implement": [
       "p"
     ],
-    "defense-in-depth": [
+    "defense": [
+      "p"
+    ],
+    "depth": [
       "p"
     ],
     "strategy": [
@@ -5286,9 +5364,6 @@
       "p"
     ],
     "earlier": [
-      "p"
-    ],
-    "user-specific": [
       "p"
     ],
     "preferences": [
@@ -5423,7 +5498,10 @@
     "form": [
       "pre"
     ],
-    "v-dir": [
+    "v": [
+      "pre"
+    ],
+    "dir": [
       "pre"
     ],
     "servername": [

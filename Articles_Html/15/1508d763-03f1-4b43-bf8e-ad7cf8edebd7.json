@@ -2,6 +2,9 @@
   "id": "1508d763-03f1-4b43-bf8e-ad7cf8edebd7",
   "checksum": "2340393254fc7e449488bf3e6945d395",
   "words": {
+    "8859": [
+      "pre"
+    ],
     "applies": [
       "h1"
     ],
@@ -423,6 +426,8 @@
       "ul",
       "ul",
       "li",
+      "li",
+      "ul",
       "li",
       "ul",
       "ul",
@@ -850,7 +855,8 @@
       "ul",
       "li",
       "li",
-      "li"
+      "li",
+      "title"
     ],
     "expressions": [
       "ul",
@@ -885,7 +891,7 @@
       "ul",
       "li"
     ],
-    "user-supplied": [
+    "supplied": [
       "ul",
       "li"
     ],
@@ -929,6 +935,8 @@
       "li",
       "ul",
       "ul",
+      "ul",
+      "li",
       "li",
       "li"
     ],
@@ -975,7 +983,8 @@
       "ul",
       "li",
       "li",
-      "li"
+      "li",
+      "title"
     ],
     "command": [
       "ul",
@@ -1001,7 +1010,7 @@
       "ul",
       "li"
     ],
-    "meta-characters": [
+    "meta": [
       "ul",
       "li"
     ],
@@ -1163,7 +1172,10 @@
     ],
     "server": [
       "ul",
-      "li"
+      "li",
+      "ul",
+      "li",
+      "a"
     ],
     "return": [
       "ul",
@@ -1229,7 +1241,10 @@
     "version=\"10\"": [
       "pre"
     ],
-    "encoding=\"iso-8859-1\"?": [
+    "encoding=\"iso": [
+      "pre"
+    ],
+    "1\"?": [
       "pre"
     ],
     "users>": [
@@ -1493,7 +1508,12 @@
     "http//www.owasp.org/index.php/xml_injection\nfor": [
       "ul"
     ],
-    "http//palisade.plynt.com/issues/2005jul/xpath-injection/index.php": [
+    "http//palisade.plynt.com/issues/2005jul/xpath": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "injection/index.php": [
       "ul",
       "li",
       "a"
@@ -1523,7 +1543,7 @@
       "li",
       "a"
     ],
-    "server-side": [
+    "side": [
       "ul",
       "li",
       "a"
@@ -1537,9 +1557,6 @@
       "ul",
       "li",
       "a"
-    ],
-    "xpath-xquery": [
-      "title"
     ]
   },
   "tags": {},

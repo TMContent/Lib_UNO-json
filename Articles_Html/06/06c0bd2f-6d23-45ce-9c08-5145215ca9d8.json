@@ -673,6 +673,9 @@
       "p",
       "p",
       "strong",
+      "ol",
+      "li",
+      "p",
       "p"
     ],
     "why": [
@@ -911,6 +914,10 @@
       "li",
       "ul",
       "li",
+      "pre",
+      "p",
+      "ul",
+      "li",
       "b",
       "a"
     ],
@@ -1126,10 +1133,19 @@
       "li",
       "p"
     ],
-    "non-trusted": [
+    "non": [
       "ol",
       "li",
       "p"
+    ],
+    "trusted": [
+      "ol",
+      "li",
+      "p",
+      "ol",
+      "li",
+      "ul",
+      "li"
     ],
     "environment": [
       "ol",
@@ -1322,6 +1338,9 @@
     ],
     "server": [
       "strong",
+      "p",
+      "ol",
+      "li",
       "p",
       "ol",
       "li",
@@ -2382,12 +2401,6 @@
       "ul",
       "li"
     ],
-    "trusted": [
-      "ol",
-      "li",
-      "ul",
-      "li"
-    ],
     "source": [
       "ol",
       "li",
@@ -2418,6 +2431,18 @@
       "p",
       "ul",
       "ul",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "li",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
       "li",
       "li"
     ],
@@ -2549,7 +2574,11 @@
       "ul",
       "ul",
       "li",
-      "li"
+      "li",
+      "ul",
+      "li",
+      "pre",
+      "p"
     ],
     "includes": [
       "ol",
@@ -2630,9 +2659,13 @@
       "li",
       "p"
     ],
-    "client-side": [
+    "side": [
+      "ol",
       "ol",
       "li",
+      "li",
+      "p",
+      "p",
       "p"
     ],
     "scripts": [
@@ -2671,11 +2704,6 @@
       "p"
     ],
     "inside": [
-      "ol",
-      "li",
-      "p"
-    ],
-    "server-side": [
       "ol",
       "li",
       "p"
@@ -2863,9 +2891,6 @@
     "thing": [
       "p"
     ],
-    "side": [
-      "p"
-    ],
     "across": [
       "p"
     ],
@@ -2955,13 +2980,19 @@
       "pre",
       "pre"
     ],
-    "http-equiv=\"cache-control\"": [
+    "equiv=\"cache": [
       "ul",
       "li",
       "pre",
       "pre"
     ],
-    "content=\"no-cache\"": [
+    "control\"": [
+      "ul",
+      "li",
+      "pre",
+      "pre"
+    ],
+    "content=\"no": [
       "ul",
       "ul",
       "li",
@@ -2971,23 +3002,51 @@
       "pre",
       "pre"
     ],
-    "http-equiv=\"pragma\"": [
+    "cache\"": [
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "li",
+      "li",
+      "pre",
+      "pre",
+      "p",
+      "p"
+    ],
+    "equiv=\"pragma\"": [
       "ul",
       "li",
       "pre",
       "pre"
     ],
-    "http-equiv=\"expires\"": [
+    "equiv=\"expires\"": [
       "ul",
       "li",
       "pre",
       "pre"
     ],
-    "content=\"-1\"": [
+    "content=\"": [
       "ul",
       "li",
       "pre",
       "pre"
+    ],
+    "1\"": [
+      "ul",
+      "ul",
+      "li",
+      "pre",
+      "pre",
+      "li",
+      "pre",
+      "p"
     ],
     "..": [
       "ul",
@@ -3195,21 +3254,33 @@
       "pre",
       "p"
     ],
-    "-": [
+    "": [
+      "ul",
+      "ul",
+      "ul",
       "ul",
       "ul",
       "ul",
       "li",
       "li",
       "li",
+      "li",
+      "li",
+      "li",
       "pre",
       "pre",
       "pre",
+      "pre",
+      "pre",
+      "pre",
+      "p",
+      "p",
+      "p",
       "p",
       "p",
       "p"
     ],
-    "\"no-cache\"": [
+    "\"no": [
       "ul",
       "ul",
       "li",
@@ -3217,12 +3288,6 @@
       "pre",
       "pre",
       "p",
-      "p"
-    ],
-    "cache-control": [
-      "ul",
-      "li",
-      "pre",
       "p"
     ],
     "expires": [
@@ -3231,7 +3296,7 @@
       "pre",
       "p"
     ],
-    "\"-1\"": [
+    "\"": [
       "ul",
       "li",
       "pre",

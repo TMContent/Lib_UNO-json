@@ -81,7 +81,8 @@
       "ul",
       "li",
       "li",
-      "li"
+      "li",
+      "title"
     ],
     "site": [
       "p",
@@ -91,7 +92,8 @@
       "ul",
       "li",
       "li",
-      "li"
+      "li",
+      "title"
     ],
     "request": [
       "p",
@@ -328,6 +330,8 @@
       "ul",
       "li",
       "ul",
+      "ul",
+      "li",
       "li",
       "p",
       "p"
@@ -474,11 +478,18 @@
     "riding": [
       "p"
     ],
-    "one-click": [
+    "one": [
       "p",
       "p"
     ],
-    "zero-click": [
+    "click": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "zero": [
       "p",
       "p",
       "p"
@@ -634,7 +645,7 @@
       "ul",
       "li"
     ],
-    "view-state": [
+    "view": [
       "ul",
       "li"
     ],
@@ -782,7 +793,11 @@
     "embeds": [
       "p"
     ],
-    "e-mail": [
+    "e": [
+      "p",
+      "p"
+    ],
+    "mail": [
       "p",
       "p"
     ],
@@ -932,14 +947,24 @@
       "li",
       "li"
     ],
-    "http//www.owasp.org/index.php/cross-site_request_forgery\nfor": [
+    "http//www.owasp.org/index.php/cross": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "site_request_forgery\nfor": [
       "ul"
     ],
     "faq": [
       "ul",
       "li"
     ],
-    "http//www.cgisecurity.com/csrf-faq.html\nfor": [
+    "http//www.cgisecurity.com/csrf": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "faq.html\nfor": [
       "ul"
     ],
     "testing": [
@@ -951,16 +976,13 @@
       "li",
       "a"
     ],
-    "http//www.owasp.org/index.php/cross-site_request_forgery": [
+    "site_request_forgery": [
       "li",
       "a"
     ],
-    "http//www.cgisecurity.com/csrf-faq.html": [
+    "faq.html": [
       "li",
       "a"
-    ],
-    "cross-site": [
-      "title"
     ]
   },
   "tags": {},

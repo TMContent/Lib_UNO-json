@@ -112,6 +112,8 @@
       "ul",
       "ul",
       "ul",
+      "ul",
+      "li",
       "li",
       "li",
       "li",
@@ -499,6 +501,7 @@
       "p",
       "p",
       "p",
+      "pre",
       "p",
       "title"
     ],
@@ -509,7 +512,9 @@
       "pre",
       "pre",
       "pre",
-      "p"
+      "p",
+      "pre",
+      "pre"
     ],
     "by": [
       "p",
@@ -740,10 +745,22 @@
       "ul",
       "li"
     ],
-    "server-side": [
+    "server": [
       "p",
       "ul",
-      "li"
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "li",
+      "p",
+      "p"
+    ],
+    "side": [
+      "p",
+      "ul",
+      "li",
+      "pre"
     ],
     "session": [
       "p",
@@ -1247,23 +1264,24 @@
       "ul",
       "li"
     ],
-    "sign-on": [
+    "sign": [
       "ul",
       "li"
+    ],
+    "on": [
+      "ul",
+      "li",
+      "pre",
+      "ul",
+      "li",
+      "p",
+      "p"
     ],
     "distributed": [
       "ul",
       "ul",
       "li",
       "li"
-    ],
-    "server": [
-      "ul",
-      "ul",
-      "li",
-      "li",
-      "p",
-      "p"
     ],
     "architecture.": [
       "ul",
@@ -1345,7 +1363,11 @@
       "pre",
       "p"
     ],
-    "pre-established": [
+    "pre": [
+      "ul",
+      "li"
+    ],
+    "established": [
       "ul",
       "li"
     ],
@@ -1454,6 +1476,8 @@
       "ul",
       "ul",
       "ul",
+      "ul",
+      "li",
       "li",
       "li",
       "li",
@@ -2349,7 +2373,11 @@
     "byteencvalwithiv.length": [
       "pre"
     ],
-    "-": [
+    "": [
+      "pre",
+      "pre",
+      "pre",
+      "pre",
       "pre",
       "pre",
       "pre",
@@ -2937,9 +2965,6 @@
     "client": [
       "pre"
     ],
-    "side": [
-      "pre"
-    ],
     "scripts": [
       "pre"
     ],
@@ -2987,13 +3012,6 @@
     ],
     "restrictions": [
       "pre"
-    ],
-    "on": [
-      "pre",
-      "ul",
-      "li",
-      "p",
-      "p"
     ],
     "paths": [
       "pre"
@@ -3081,7 +3099,11 @@
       "ul",
       "li"
     ],
-    "man-in-the-middle": [
+    "man": [
+      "ul",
+      "li"
+    ],
+    "middle": [
       "ul",
       "li"
     ],
@@ -3095,7 +3117,8 @@
     ],
     "way": [
       "ul",
-      "li"
+      "li",
+      "p"
     ],
     "such": [
       "ul",
@@ -3308,7 +3331,8 @@
       "ul",
       "li",
       "ul",
-      "li"
+      "li",
+      "p"
     ],
     "leads": [
       "ul",
@@ -3401,7 +3425,7 @@
     "options": [
       "p"
     ],
-    "set-cookiecookiejar=g2rzx1qz94laoyuxlgscubqg1/yyg8gy4ntcjak5aupwwsxoadyunber0sfzqik9dx4kzny0h8hd9xqee6d8hmvgojighloh88cx35jt9sqiqmjagcmecj6vhhwkfbrz;domain=.ourapp.microsoft.com;path=/cookieexample/;": [
+    "cookiecookiejar=g2rzx1qz94laoyuxlgscubqg1/yyg8gy4ntcjak5aupwwsxoadyunber0sfzqik9dx4kzny0h8hd9xqee6d8hmvgojighloh88cx35jt9sqiqmjagcmecj6vhhwkfbrz;domain=.ourapp.microsoft.com;path=/cookieexample/;": [
       "pre"
     ],
     "httponly": [
@@ -3449,9 +3473,6 @@
     ],
     "header": [
       "p"
-    ],
-    "set-cookie": [
-      "pre"
     ],
     "cookiejar=g2rzx1qz94laoyuxlgscubqg1/yyg8gy4ntcjak5aupwwsxoadyunber0sfzqik9dx4kzny0h8hd9xqee6d8hmvgojighloh88cx35jt9sqiqmjagcmecj6vhhwkfbrz": [
       "pre"
@@ -3575,9 +3596,6 @@
     "strong": [
       "p"
     ],
-    "one-way": [
-      "p"
-    ],
     "hashing": [
       "p"
     ],
@@ -3643,7 +3661,12 @@
       "li",
       "a"
     ],
-    "http//msdn2.microsoft.com/en-us/library/system.security.cryptography.hmac.aspx": [
+    "http//msdn2.microsoft.com/en": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "us/library/system.security.cryptography.hmac.aspx": [
       "ul",
       "li",
       "a"

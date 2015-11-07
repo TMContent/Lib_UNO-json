@@ -327,7 +327,13 @@
       "li",
       "li",
       "p",
-      "p"
+      "p",
+      "ul",
+      "ul",
+      "li",
+      "code",
+      "li",
+      "code"
     ],
     "snapshot": [
       "p",
@@ -346,6 +352,12 @@
       "li",
       "p",
       "p",
+      "ul",
+      "ul",
+      "li",
+      "code",
+      "li",
+      "code",
       "ol",
       "ol",
       "ol",
@@ -356,6 +368,12 @@
       "p",
       "p",
       "strong",
+      "ul",
+      "ul",
+      "li",
+      "code",
+      "li",
+      "code",
       "ol",
       "ol",
       "ol",
@@ -600,7 +618,13 @@
       "p",
       "p",
       "ol",
-      "li"
+      "li",
+      "ul",
+      "ul",
+      "li",
+      "code",
+      "li",
+      "code"
     ],
     "so": [
       "p"
@@ -856,7 +880,10 @@
       "li",
       "li",
       "ol",
+      "ol",
       "li",
+      "li",
+      "p",
       "p",
       "ul",
       "li",
@@ -1269,7 +1296,13 @@
       "p",
       "code"
     ],
-    "-d": [
+    "": [
+      "ol",
+      "li",
+      "p",
+      "code"
+    ],
+    "d": [
       "ol",
       "li",
       "p",
@@ -1322,6 +1355,8 @@
       "p",
       "ul",
       "li",
+      "li",
+      "code",
       "ol",
       "ol",
       "li",
@@ -1330,10 +1365,14 @@
       "p",
       "ul",
       "li",
+      "li",
+      "code",
       "ol",
       "li",
       "ul",
-      "li"
+      "li",
+      "li",
+      "code"
     ],
     "navigation": [
       "ol",
@@ -1394,16 +1433,24 @@
       "li",
       "p"
     ],
-    "create-snapshot": [
+    "cli\nec2": [
+      "ul",
+      "ul",
+      "ul"
+    ],
+    "cli\nnew": [
+      "ul"
+    ],
+    "ec2snapshot": [
+      "ul",
+      "li",
+      "code",
+      "ul",
+      "li",
+      "code",
       "ul",
       "li",
       "code"
-    ],
-    "cli\nec2-create-snapshot": [
-      "ul"
-    ],
-    "cli\nnew-ec2snapshot": [
-      "ul"
     ],
     "tools": [
       "ul",
@@ -1427,11 +1474,7 @@
       "ul",
       "li"
     ],
-    "ec2-create-snapshot": [
-      "li",
-      "code"
-    ],
-    "new-ec2snapshot": [
+    "new": [
       "li",
       "code"
     ],
@@ -1519,7 +1562,15 @@
       "p",
       "p",
       "p",
-      "strong"
+      "strong",
+      "ul",
+      "ul",
+      "li",
+      "code",
+      "li",
+      "code",
+      "li",
+      "code"
     ],
     "using": [
       "ol",
@@ -1574,7 +1625,10 @@
     ],
     "progress": [
       "ol",
+      "ol",
       "li",
+      "li",
+      "p",
       "p"
     ],
     "copying": [
@@ -1605,11 +1659,6 @@
       "li",
       "p"
     ],
-    "in-progress": [
-      "ol",
-      "li",
-      "p"
-    ],
     "appear": [
       "ol",
       "li",
@@ -1634,24 +1683,8 @@
       "li",
       "p"
     ],
-    "copy-snapshot": [
-      "ul",
-      "li",
-      "code"
-    ],
-    "cli\nec2-copy-snapshot": [
+    "cli\ncopy": [
       "ul"
-    ],
-    "cli\ncopy-ec2snapshot": [
-      "ul"
-    ],
-    "ec2-copy-snapshot": [
-      "li",
-      "code"
-    ],
-    "copy-ec2snapshot": [
-      "li",
-      "code"
     ],
     "view": [
       "ol",
@@ -1702,26 +1735,22 @@
       "ol",
       "li"
     ],
-    "describe-snapshots": [
+    "describe": [
       "ul",
+      "ul",
+      "li",
+      "code",
       "li",
       "code"
     ],
-    "cli\nec2-describe-snapshots": [
-      "ul"
-    ],
-    "cli\nget-ec2snapshot": [
+    "cli\nget": [
       "ul"
     ],
     "powershell": [
       "ul",
       "li"
     ],
-    "ec2-describe-snapshots": [
-      "li",
-      "code"
-    ],
-    "get-ec2snapshot": [
+    "get": [
       "li",
       "code"
     ]

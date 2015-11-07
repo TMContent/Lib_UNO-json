@@ -240,11 +240,19 @@
       "ol",
       "ol",
       "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
       "li",
       "li",
       "li",
       "strong",
+      "strong",
       "li",
+      "li",
+      "strong",
       "strong",
       "ul",
       "ul",
@@ -316,13 +324,23 @@
       "ol",
       "ol",
       "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "li",
       "li",
       "li",
       "li",
       "strong",
       "strong",
+      "strong",
       "li",
       "li",
+      "li",
+      "strong",
       "h2",
       "ul",
       "ul",
@@ -797,7 +815,11 @@
       "li",
       "li"
     ],
-    "platform-specific": [
+    "platform": [
+      "ol",
+      "li"
+    ],
+    "specific": [
       "ol",
       "li"
     ],
@@ -940,7 +962,7 @@
       "li",
       "li"
     ],
-    "sec-websocket-origin": [
+    "sec": [
       "ol",
       "ol",
       "ol",
@@ -1010,8 +1032,10 @@
       "li",
       "li"
     ],
-    "php-websocket": [
+    "php": [
       "ol",
+      "ol",
+      "li",
       "li"
     ],
     "which": [
@@ -1026,10 +1050,6 @@
       "li"
     ],
     "source": [
-      "ol",
-      "li"
-    ],
-    "php": [
       "ol",
       "li"
     ],
@@ -1071,7 +1091,13 @@
       "li",
       "li"
     ],
-    "$server-setcheckorigin(true);.": [
+    "$server": [
+      "ol",
+      "li",
+      "tt",
+      "pre"
+    ],
+    "setcheckorigin(true);.": [
       "ol",
       "li"
     ],
@@ -1183,7 +1209,7 @@
       "ol",
       "li"
     ],
-    "$server-setcheckorigin(true);": [
+    "setcheckorigin(true);": [
       "tt"
     ],
     "webexample.com": [
@@ -1209,7 +1235,7 @@
     "{": [
       "pre"
     ],
-    "$server-setallowedorigin($origin);": [
+    "setallowedorigin($origin);": [
       "pre"
     ],
     "$origin_ips]": [

@@ -11,6 +11,11 @@
       "li",
       "a"
     ],
+    "6": [
+      "ul",
+      "li",
+      "a"
+    ],
     "applies": [
       "h1"
     ],
@@ -67,9 +72,25 @@
       "li",
       "a"
     ],
-    "web-based": [
+    "web": [
       "ul",
-      "li"
+      "li",
+      "p",
+      "p",
+      "ol",
+      "li",
+      "pre",
+      "p"
+    ],
+    "based": [
+      "ul",
+      "li",
+      "ul",
+      "li",
+      "a",
+      "ul",
+      "li",
+      "a"
     ],
     "applications": [
       "ul",
@@ -103,14 +124,40 @@
       "p",
       "p"
     ],
-    "cross-site": [
+    "cross": [
       "p",
       "ul",
       "ul",
       "ul",
+      "ul",
       "li",
       "li",
       "li",
+      "li",
+      "a",
+      "li",
+      "a",
+      "li",
+      "a",
+      "li",
+      "a"
+    ],
+    "site": [
+      "p",
+      "p",
+      "p",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "li",
+      "li",
+      "a",
+      "ul",
+      "ul",
+      "ul",
       "li",
       "a",
       "li",
@@ -140,9 +187,12 @@
       "ul",
       "ul",
       "ul",
+      "ul",
       "li",
       "li",
       "li",
+      "li",
+      "a",
       "ul",
       "ul",
       "ul",
@@ -158,9 +208,12 @@
       "ul",
       "ul",
       "ul",
+      "ul",
       "li",
       "li",
       "li",
+      "li",
+      "a",
       "ul",
       "ul",
       "ul",
@@ -220,6 +273,9 @@
       "ol",
       "li",
       "p",
+      "ul",
+      "li",
+      "a",
       "li",
       "a",
       "title"
@@ -507,18 +563,6 @@
       "a"
     ],
     "malicious": [
-      "p"
-    ],
-    "web": [
-      "p",
-      "p",
-      "ol",
-      "li",
-      "pre",
-      "p"
-    ],
-    "site": [
-      "p",
       "p"
     ],
     "causes": [
@@ -824,8 +868,16 @@
       "li",
       "a"
     ],
-    "pseudo-random": [
+    "pseudo": [
       "ol",
+      "li",
+      "p"
+    ],
+    "random": [
+      "ol",
+      "ol",
+      "li",
+      "p",
       "li",
       "p"
     ],
@@ -1152,10 +1204,17 @@
     "server": [
       "ol",
       "ol",
+      "ol",
+      "ol",
       "li",
       "p",
       "li",
+      "li",
+      "li",
       "p",
+      "p",
+      "p",
+      "strong",
       "ul",
       "ul",
       "li",
@@ -1166,10 +1225,21 @@
     "side": [
       "ol",
       "ol",
+      "ol",
+      "ol",
+      "ol",
       "li",
       "p",
       "li",
-      "p"
+      "li",
+      "li",
+      "li",
+      "p",
+      "p",
+      "p",
+      "p",
+      "strong",
+      "strong"
     ],
     "state": [
       "ol",
@@ -1201,10 +1271,20 @@
     "client": [
       "ol",
       "ol",
+      "ol",
       "li",
       "p",
       "li",
-      "p"
+      "li",
+      "p",
+      "p",
+      "strong",
+      "ul",
+      "li",
+      "a",
+      "ul",
+      "li",
+      "a"
     ],
     "form": [
       "ol",
@@ -1345,15 +1425,6 @@
     "/...<form>verify": [
       "ol"
     ],
-    "server-side": [
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "p",
-      "p",
-      "strong"
-    ],
     "and": [
       "ol",
       "ol",
@@ -1370,6 +1441,9 @@
       "pre",
       "p",
       "ul",
+      "li",
+      "a",
+      "ul",
       "ul",
       "li",
       "a",
@@ -1381,12 +1455,6 @@
       "a",
       "li",
       "a"
-    ],
-    "client-side": [
-      "ol",
-      "li",
-      "p",
-      "strong"
     ],
     "match": [
       "ol",
@@ -1731,10 +1799,14 @@
       "pre",
       "p"
     ],
-    "-": [
+    "": [
+      "ol",
       "ol",
       "li",
+      "li",
       "pre",
+      "pre",
+      "p",
       "p"
     ],
     "handle": [
@@ -1797,11 +1869,6 @@
       "a"
     ],
     "turn": [
-      "ol",
-      "li",
-      "p"
-    ],
-    "random": [
       "ol",
       "li",
       "p"
@@ -1972,10 +2039,20 @@
       "li",
       "li"
     ],
-    "https//www.owasp.org/index.php/cross-site_request_forgery_%28csrf%29for": [
+    "https//www.owasp.org/index.php/cross": [
+      "ul",
+      "li",
+      "a",
+      "a"
+    ],
+    "site_request_forgery_%28csrf%29for": [
       "ul"
     ],
-    "see https//www.owasp.org/index.php/cross-site_request_forgery_%28csrf%29_prevention_cheat_sheetfor": [
+    "see https//www.owasp.org/index.php/cross": [
+      "ul",
+      "li"
+    ],
+    "site_request_forgery_%28csrf%29_prevention_cheat_sheetfor": [
       "ul"
     ],
     "securerandom": [
@@ -1987,7 +2064,10 @@
     ],
     "owasp": [
       "ul",
-      "li"
+      "ul",
+      "li",
+      "li",
+      "a"
     ],
     "csrfguard": [
       "ul",
@@ -2000,19 +2080,37 @@
     "http//www.owasp.org/index.php/category:owasp_csrfguard_projectfor": [
       "ul"
     ],
-    "http//www.jtmelton.com/2010/05/16/the-owasp-top-ten-and-esapi-part-6-cross-site-request-forgery-csrf/": [
+    "http//www.jtmelton.com/2010/05/16/the": [
       "ul",
       "li",
       "a"
     ],
-    "https//www.owasp.org/index.php/cross-site_request_forgery_%28csrf%29": [
+    "top": [
+      "ul",
       "li",
       "a"
     ],
-    "see https//www.owasp.org/index.php/cross-site_request_forgery_%28csrf%29_prevention_cheat_sheet": [
-      "li"
+    "ten": [
+      "ul",
+      "li",
+      "a"
     ],
-    "https//www.owasp.org/index.php/cross-site_request_forgery_%28csrf%29_prevention_cheat_sheet": [
+    "part": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "csrf/": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "site_request_forgery_%28csrf%29": [
+      "li",
+      "a"
+    ],
+    "site_request_forgery_%28csrf%29_prevention_cheat_sheet": [
+      "li",
       "a"
     ],
     "http//download.oracle.com/javase/6/docs/api/java/security/securerandom.html": [
@@ -2178,7 +2276,15 @@
       "li",
       "a"
     ],
-    "time-outinclude": [
+    "time": [
+      "ul",
+      "li",
+      "a",
+      "ul",
+      "li",
+      "a"
+    ],
+    "outinclude": [
       "ul"
     ],
     "unique": [
@@ -2234,15 +2340,7 @@
       "li",
       "a"
     ],
-    "based": [
-      "ul",
-      "li",
-      "a",
-      "ul",
-      "li",
-      "a"
-    ],
-    "client-accessible": [
+    "accessible": [
       "ul",
       "li",
       "a",
@@ -2304,9 +2402,7 @@
       "li",
       "a",
       "li",
-      "a"
-    ],
-    "time-out": [
+      "a",
       "li",
       "a",
       "li",
@@ -2392,7 +2488,7 @@
     "outinactive": [
       "ul"
     ],
-    "time-outunique": [
+    "outunique": [
       "ul"
     ],
     "included": [
@@ -2437,10 +2533,10 @@
       "li",
       "a"
     ],
-    "jsp)cross-site": [
+    "jsp)cross": [
       "ul"
     ],
-    "springmvccross-site": [
+    "springmvccross": [
       "ul"
     ],
     "struts": [
@@ -2451,7 +2547,7 @@
       "li",
       "a"
     ],
-    "1cross-site": [
+    "1cross": [
       "ul"
     ],
     "jsf)": [

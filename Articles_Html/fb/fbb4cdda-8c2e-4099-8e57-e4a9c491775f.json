@@ -18,14 +18,18 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "p",
       "li",
       "li",
       "li",
+      "li",
       "ul",
       "ul",
       "ul",
+      "ul",
+      "li",
       "li",
       "li",
       "li",
@@ -381,6 +385,8 @@
       "ol",
       "ol",
       "ol",
+      "ol",
+      "li",
       "li",
       "li",
       "li",
@@ -417,6 +423,8 @@
       "ul",
       "ul",
       "ul",
+      "ul",
+      "li",
       "li",
       "li",
       "li",
@@ -520,7 +528,54 @@
       "p",
       "pre"
     ],
-    "re-authenticate": [
+    "re": [
+      "p",
+      "p",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "li",
+      "p",
+      "p",
+      "ul",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "p",
+      "p",
+      "p",
+      "strong",
+      "blockquote",
+      "pre",
+      "p",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
+      "strong",
+      "ul",
+      "li",
+      "li",
+      "li",
+      "li",
+      "strong",
+      "pre",
+      "pre",
+      "title"
+    ],
+    "authenticate": [
       "p",
       "p",
       "pre"
@@ -542,10 +597,47 @@
       "li",
       "title"
     ],
-    "security-critical": [
+    "security": [
       "p",
       "ol",
+      "li",
+      "ul",
+      "li",
+      "ol",
+      "ol",
+      "li",
+      "p",
       "li"
+    ],
+    "critical": [
+      "p",
+      "p",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
+      "p",
+      "strong",
+      "li",
+      "li",
+      "li",
+      "p",
+      "p",
+      "blockquote",
+      "pre",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "p",
+      "strong",
+      "li",
+      "li",
+      "title"
     ],
     "functionality": [
       "p",
@@ -687,33 +779,6 @@
     "modifications": [
       "p"
     ],
-    "critical": [
-      "p",
-      "ol",
-      "ol",
-      "ol",
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "p",
-      "p",
-      "strong",
-      "li",
-      "li",
-      "li",
-      "p",
-      "p",
-      "blockquote",
-      "pre",
-      "ol",
-      "ol",
-      "li",
-      "p",
-      "strong",
-      "li",
-      "title"
-    ],
     "transactions": [
       "p",
       "ol",
@@ -804,10 +869,14 @@
       "li",
       "ol",
       "ol",
+      "ol",
+      "li",
       "li",
       "li",
       "ul",
       "ul",
+      "ul",
+      "li",
       "li",
       "li"
     ],
@@ -1260,8 +1329,18 @@
       "li",
       "li"
     ],
-    "start-up": [
+    "start": [
       "ol",
+      "li",
+      "ul",
+      "li"
+    ],
+    "up": [
+      "ol",
+      "ol",
+      "li",
+      "ul",
+      "li",
       "li",
       "ul",
       "li"
@@ -1278,11 +1357,70 @@
       "p",
       "strong"
     ],
-    "a re-authentication": [
+    "a re": [
       "ol",
       "li",
       "p",
       "strong"
+    ],
+    "authentication": [
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "p",
+      "p",
+      "p",
+      "strong",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "p",
+      "p",
+      "p",
+      "strong",
+      "blockquote",
+      "pre",
+      "p",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "li",
+      "p",
+      "strong",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "strong",
+      "pre",
+      "ul",
+      "li",
+      "a",
+      "title"
     ],
     "mechanism ensure": [
       "ol",
@@ -1311,50 +1449,6 @@
       "ol",
       "li",
       "p"
-    ],
-    "re-authentication": [
-      "ol",
-      "ol",
-      "ol",
-      "ol",
-      "ol",
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "li",
-      "p",
-      "p",
-      "ul",
-      "li",
-      "li",
-      "li",
-      "li",
-      "li",
-      "p",
-      "p",
-      "p",
-      "strong",
-      "blockquote",
-      "pre",
-      "p",
-      "ol",
-      "ol",
-      "ol",
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "p",
-      "strong",
-      "ul",
-      "li",
-      "li",
-      "li",
-      "li",
-      "strong",
-      "pre",
-      "title"
     ],
     "mechanisms": [
       "ol",
@@ -1703,7 +1797,13 @@
       "ul",
       "li"
     ],
-    "alpha-numeric": [
+    "alpha": [
+      "ol",
+      "li",
+      "ul",
+      "li"
+    ],
+    "numeric": [
       "ol",
       "li",
       "ul",
@@ -1844,7 +1944,8 @@
       "li",
       "li",
       "a",
-      "li"
+      "li",
+      "a"
     ],
     "version": [
       "ol",
@@ -1852,7 +1953,7 @@
       "ul",
       "li"
     ],
-    "up-to-date": [
+    "date": [
       "ol",
       "li",
       "ul",
@@ -1863,15 +1964,6 @@
       "li",
       "ul",
       "li"
-    ],
-    "security": [
-      "ol",
-      "li",
-      "ul",
-      "li",
-      "ol",
-      "li",
-      "p"
     ],
     "updates": [
       "ol",
@@ -1932,19 +2024,6 @@
       "ul",
       "li",
       "strong"
-    ],
-    "authentication": [
-      "ol",
-      "li",
-      "ul",
-      "li",
-      "ol",
-      "li",
-      "ul",
-      "li",
-      "ul",
-      "li",
-      "a"
     ],
     "token": [
       "ol",
@@ -2769,7 +2848,13 @@
       "li",
       "li"
     ],
-    "man-in-the-middle": [
+    "man": [
+      "ol",
+      "li",
+      "ul",
+      "li"
+    ],
+    "middle": [
       "ol",
       "li",
       "ul",
@@ -2864,8 +2949,12 @@
     ],
     "blind": [
       "ol",
+      "ol",
+      "li",
       "li",
       "ul",
+      "ul",
+      "li",
       "li"
     ],
     "sometimes": [
@@ -2880,7 +2969,7 @@
       "ul",
       "li"
     ],
-    "color-blind": [
+    "color": [
       "ol",
       "li",
       "ul",
@@ -2930,7 +3019,13 @@
       "ul",
       "li"
     ],
-    "trade-offs": [
+    "trade": [
+      "ol",
+      "li",
+      "ul",
+      "li"
+    ],
+    "offs": [
       "ol",
       "li",
       "ul",
@@ -3201,9 +3296,14 @@
       "ul",
       "li"
     ],
-    "see captcha-ing": [
+    "see captcha": [
       "ul",
       "li"
+    ],
+    "ing": [
+      "ul",
+      "li",
+      "a"
     ],
     "spammer": [
       "ul",
@@ -3214,9 +3314,6 @@
       "a"
     ],
     "official": [
-      "a"
-    ],
-    "captcha-ing": [
       "a"
     ]
   },

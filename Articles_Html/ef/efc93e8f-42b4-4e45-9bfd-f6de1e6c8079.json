@@ -2341,10 +2341,14 @@
       "table",
       "table",
       "table",
+      "table",
+      "tbody",
       "tbody",
       "tbody",
       "tbody",
       "tr",
+      "tr",
+      "td",
       "td",
       "p",
       "tr",
@@ -3892,9 +3896,11 @@
       "li",
       "ul",
       "ul",
+      "ul",
       "li",
       "li",
       "b",
+      "li",
       "p",
       "p",
       "ol",
@@ -4261,9 +4267,17 @@
       "ol",
       "ol",
       "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "li",
       "li",
       "ul",
       "li",
+      "p",
+      "p",
       "li",
       "li",
       "p",
@@ -4784,9 +4798,11 @@
       "li",
       "ul",
       "ul",
+      "ul",
       "li",
       "li",
-      "b"
+      "b",
+      "li"
     ],
     "uses": [
       "p",
@@ -7293,6 +7309,26 @@
       "p",
       "p",
       "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "li",
       "li",
       "p",
       "ul",
@@ -7389,7 +7425,12 @@
       "li",
       "p"
     ],
-    "machine-level": [
+    "machine": [
+      "ol",
+      "li",
+      "p"
+    ],
+    "level": [
       "ol",
       "li",
       "p"
@@ -7592,7 +7633,11 @@
       "em",
       "em"
     ],
-    "lower-case": [
+    "lower": [
+      "p"
+    ],
+    "case": [
+      "p",
       "p"
     ],
     "n": [
@@ -7810,9 +7855,6 @@
       "p"
     ],
     "prove": [
-      "p"
-    ],
-    "case": [
       "p"
     ],
     "information": [
@@ -8273,7 +8315,24 @@
       "tr",
       "td"
     ],
-    "non-alphanumeric": [
+    "non": [
+      "ol",
+      "li",
+      "p",
+      "ul",
+      "li",
+      "ul",
+      "li",
+      "table",
+      "table",
+      "tbody",
+      "tbody",
+      "tr",
+      "td",
+      "tr",
+      "td"
+    ],
+    "alphanumeric": [
       "ol",
       "li",
       "p",
@@ -8452,7 +8511,11 @@
       "ul",
       "li"
     ],
-    "wizard-like": [
+    "wizard": [
+      "ul",
+      "li"
+    ],
+    "like": [
       "ul",
       "li"
     ],
@@ -8477,7 +8540,7 @@
       "ul",
       "li"
     ],
-    "e-mail": [
+    "e": [
       "ul",
       "li",
       "ol",
@@ -8499,6 +8562,35 @@
       "tr",
       "td",
       "tr",
+      "td"
+    ],
+    "mail": [
+      "ul",
+      "li",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "p",
+      "li",
+      "li",
+      "li",
+      "p",
+      "p",
+      "p",
+      "table",
+      "table",
+      "table",
+      "tbody",
+      "tbody",
+      "tbody",
+      "tr",
+      "td",
+      "tr",
+      "tr",
+      "td",
+      "b",
       "td"
     ],
     "address,": [
@@ -8966,7 +9058,7 @@
       "ul",
       "li"
     ],
-    "cross-site": [
+    "cross": [
       "ul",
       "li"
     ],
@@ -9046,7 +9138,7 @@
       "li",
       "b"
     ],
-    "user-specific": [
+    "specific": [
       "ul",
       "li"
     ],
@@ -9054,7 +9146,7 @@
       "ul",
       "li"
     ],
-    "non-sensitive": [
+    "sensitive": [
       "ul",
       "li"
     ],
@@ -9244,7 +9336,7 @@
     "enable": [
       "h3"
     ],
-    "built-in": [
+    "built": [
       "ol",
       "li"
     ],
@@ -9254,7 +9346,7 @@
       "p",
       "p"
     ],
-    "single-value": [
+    "single": [
       "ol",
       "ol",
       "ol",
@@ -9619,7 +9711,7 @@
       "li",
       "p"
     ],
-    "snap-in": [
+    "snap": [
       "ol",
       "ol",
       "li",
@@ -10448,7 +10540,13 @@
       "tr",
       "td"
     ],
-    "sign-and-seal": [
+    "sign": [
+      "table",
+      "tbody",
+      "tr",
+      "td"
+    ],
+    "seal": [
       "table",
       "tbody",
       "tr",
@@ -10516,7 +10614,13 @@
       "td",
       "b"
     ],
-    "search-oriented": [
+    "search": [
+      "table",
+      "tbody",
+      "tr",
+      "td"
+    ],
+    "oriented": [
       "table",
       "tbody",
       "tr",
@@ -10657,13 +10761,6 @@
       "b"
     ],
     "attributemapemail": [
-      "table",
-      "tbody",
-      "tr",
-      "td",
-      "b"
-    ],
-    "mail": [
       "table",
       "tbody",
       "tr",

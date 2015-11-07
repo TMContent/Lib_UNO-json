@@ -327,9 +327,15 @@
     ],
     "cross": [
       "p",
+      "p",
+      "p",
+      "p",
+      "p",
       "p"
     ],
     "site": [
+      "p",
+      "p",
       "p",
       "p",
       "p",
@@ -667,10 +673,6 @@
       "p",
       "p"
     ],
-    "cross-site": [
-      "p",
-      "p"
-    ],
     "among": [
       "p"
     ],
@@ -907,8 +909,21 @@
     "inject": [
       "p"
     ],
-    "client-side": [
+    "client": [
+      "p",
+      "p",
+      "table",
+      "tbody",
+      "tr",
+      "td",
       "p"
+    ],
+    "side": [
+      "p",
+      "table",
+      "tbody",
+      "tr",
+      "td"
     ],
     "here": [
       "p"
@@ -937,7 +952,10 @@
       "p",
       "h1"
     ],
-    "non-alphanumeric": [
+    "non": [
+      "p"
+    ],
+    "alphanumeric": [
       "p"
     ],
     "whitelist": [
@@ -1089,7 +1107,19 @@
       "pre",
       "pre"
     ],
-    "\"^a-za-z0-9]+\",": [
+    "\"^a": [
+      "pre",
+      "pre"
+    ],
+    "za": [
+      "pre",
+      "pre"
+    ],
+    "z0": [
+      "pre",
+      "pre"
+    ],
+    "9]+\",": [
       "pre",
       "pre"
     ],
@@ -1218,7 +1248,7 @@
       "p",
       "p"
     ],
-    "anti-cross": [
+    "anti": [
       "p",
       "p"
     ],
@@ -1298,14 +1328,6 @@
       "p"
     ],
     "returned": [
-      "p"
-    ],
-    "client": [
-      "p",
-      "table",
-      "tbody",
-      "tr",
-      "td",
       "p"
     ],
     "earlier": [
@@ -1664,10 +1686,20 @@
       "tr",
       "td"
     ],
-    "single-line": [
+    "single": [
       "table",
       "tbody",
       "tr",
+      "td"
+    ],
+    "line": [
+      "table",
+      "table",
+      "tbody",
+      "tbody",
+      "tr",
+      "tr",
+      "td",
       "td"
     ],
     "box": [
@@ -1686,7 +1718,7 @@
       "tr",
       "td"
     ],
-    "multi-line": [
+    "multi": [
       "table",
       "tbody",
       "tr",
@@ -1841,11 +1873,13 @@
       "td",
       "td"
     ],
-    "server-side": [
+    "server": [
       "table",
       "tbody",
       "tr",
-      "td"
+      "td",
+      "pre",
+      "pre"
     ],
     "hiddenfield": [
       "table",
@@ -2068,10 +2102,6 @@
       "strong",
       "pre",
       "strong"
-    ],
-    "server": [
-      "pre",
-      "pre"
     ],
     "users}/script><form": [
       "pre"

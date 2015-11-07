@@ -436,6 +436,8 @@
       "p",
       "ol",
       "ol",
+      "ol",
+      "li",
       "li",
       "li"
     ],
@@ -450,6 +452,7 @@
       "div",
       "ul",
       "li",
+      "p",
       "p",
       "p",
       "p",
@@ -474,6 +477,11 @@
       "li",
       "p",
       "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
       "h1",
       "p",
       "h2",
@@ -487,7 +495,11 @@
       "li",
       "li",
       "h3",
+      "ol",
+      "li",
       "h1",
+      "p",
+      "p",
       "p",
       "p",
       "p"
@@ -629,6 +641,8 @@
       "li",
       "p",
       "h1",
+      "p",
+      "p",
       "p",
       "p",
       "p",
@@ -2106,7 +2120,12 @@
       "p"
     ],
     "read": [
-      "p"
+      "p",
+      "div",
+      "table",
+      "tbody",
+      "tr",
+      "td"
     ],
     "each": [
       "p",
@@ -2151,6 +2170,7 @@
       "tbody",
       "tr",
       "td",
+      "p",
       "div",
       "table",
       "tbody",
@@ -2686,13 +2706,14 @@
       "p",
       "p"
     ],
-    "machine-level": [
+    "machine": [
       "p",
       "p",
       "p",
       "p",
       "ol",
       "li",
+      "p",
       "p"
     ],
     "webconfig": [
@@ -3094,7 +3115,10 @@
       "p",
       "blockquote"
     ],
-    "third-party": [
+    "third": [
+      "p"
+    ],
+    "party": [
       "p"
     ],
     "identifying": [
@@ -3384,7 +3408,17 @@
       "ol",
       "li"
     ],
-    "-show": [
+    "": [
+      "ol",
+      "ol",
+      "li",
+      "p",
+      "b",
+      "li",
+      "p",
+      "b"
+    ],
+    "show": [
       "ol",
       "ol",
       "li",
@@ -3927,9 +3961,14 @@
     "only": [
       "blockquote",
       "div",
+      "div",
+      "table",
       "table",
       "tbody",
+      "tbody",
       "tr",
+      "tr",
+      "td",
       "td",
       "p",
       "ol",
@@ -4170,7 +4209,19 @@
       "tr",
       "td"
     ],
-    "e-mail": [
+    "e": [
+      "div",
+      "div",
+      "table",
+      "table",
+      "tbody",
+      "tbody",
+      "tr",
+      "td",
+      "tr",
+      "td"
+    ],
+    "mail": [
       "div",
       "div",
       "table",
@@ -4567,13 +4618,6 @@
       "tr",
       "td"
     ],
-    "read-only": [
-      "div",
-      "table",
-      "tbody",
-      "tr",
-      "td"
-    ],
     "network": [
       "div",
       "table",
@@ -4665,6 +4709,8 @@
       "ol",
       "ol",
       "li",
+      "li",
+      "ol",
       "li"
     ],
     "permit": [
@@ -4779,10 +4825,6 @@
       "p",
       "p",
       "p",
-      "p",
-      "p"
-    ],
-    "application-level": [
       "p",
       "p"
     ],
@@ -5446,12 +5488,6 @@
     "wants": [
       "p"
     ],
-    "system-level": [
-      "p"
-    ],
-    "machine": [
-      "p"
-    ],
     "prevent": [
       "p",
       "ol",
@@ -5600,10 +5636,6 @@
       "b"
     ],
     "allow": [
-      "ol",
-      "li"
-    ],
-    "partial-trust": [
       "ol",
       "li"
     ],

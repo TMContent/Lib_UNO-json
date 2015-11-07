@@ -1186,7 +1186,14 @@
       "li",
       "p"
     ],
-    "web-accessible": [
+    "web": [
+      "ol",
+      "li",
+      "ul",
+      "li",
+      "p"
+    ],
+    "accessible": [
       "ol",
       "li",
       "ul",
@@ -1514,7 +1521,18 @@
       "li",
       "a"
     ],
-    "least-privileged": [
+    "least": [
+      "ul",
+      "li",
+      "a",
+      "ul",
+      "li",
+      "a"
+    ],
+    "privileged": [
+      "ul",
+      "li",
+      "a",
       "ul",
       "li",
       "a"
@@ -1544,16 +1562,6 @@
       "a"
     ],
     "disabled": [
-      "ul",
-      "li",
-      "a"
-    ],
-    "least": [
-      "ul",
-      "li",
-      "a"
-    ],
-    "privileged": [
       "ul",
       "li",
       "a"

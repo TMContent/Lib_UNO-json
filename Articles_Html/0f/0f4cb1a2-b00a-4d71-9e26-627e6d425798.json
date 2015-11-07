@@ -224,9 +224,11 @@
       "p",
       "p",
       "p",
+      "p",
       "p"
     ],
     "input": [
+      "p",
       "p",
       "p",
       "p",
@@ -363,7 +365,18 @@
       "a",
       "title"
     ],
-    "database-facing": [
+    "database": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "ol",
+      "li",
+      "p"
+    ],
+    "facing": [
       "p"
     ],
     "web": [
@@ -445,16 +458,6 @@
       "p"
     ],
     "passed": [
-      "p"
-    ],
-    "database": [
-      "p",
-      "p",
-      "p",
-      "p",
-      "p",
-      "ol",
-      "li",
       "p"
     ],
     "and": [
@@ -742,10 +745,10 @@
     "contain": [
       "p"
     ],
-    "user-input": [
+    "non": [
       "p"
     ],
-    "non-escaped": [
+    "escaped": [
       "p"
     ],
     "form": [
@@ -806,7 +809,14 @@
     "parameterizing": [
       "p"
     ],
-    "type-enforcing": [
+    "type": [
+      "p",
+      "p",
+      "ol",
+      "li",
+      "p"
+    ],
+    "enforcing": [
       "p"
     ],
     "them": [
@@ -821,7 +831,7 @@
     "when": [
       "h1"
     ],
-    "type-safe": [
+    "safe": [
       "p"
     ],
     "should": [
@@ -922,11 +932,6 @@
       "p"
     ],
     "format": [
-      "ol",
-      "li",
-      "p"
-    ],
-    "type": [
       "ol",
       "li",
       "p"
@@ -1138,7 +1143,10 @@
     ],
     "parameter$preparedstatement": [
       "ol",
+      "ol",
       "li",
+      "li",
+      "pre",
       "pre"
     ],
     "=": [
@@ -1152,7 +1160,12 @@
       "pre",
       "pre"
     ],
-    "$databasehandle-prepare(\"select": [
+    "$databasehandle": [
+      "ol",
+      "li",
+      "pre"
+    ],
+    "prepare(\"select": [
       "ol",
       "li",
       "pre"
@@ -1187,7 +1200,7 @@
       "li",
       "pre"
     ],
-    "parameter$preparedstatement->bindparam(1,": [
+    ">bindparam(1,": [
       "ol",
       "li",
       "pre"
@@ -1207,7 +1220,12 @@
       "li",
       "pre"
     ],
-    "statement$preparedstatement->execute();": [
+    "statement$preparedstatement": [
+      "ol",
+      "li",
+      "pre"
+    ],
+    ">execute();": [
       "ol",
       "li",
       "pre"

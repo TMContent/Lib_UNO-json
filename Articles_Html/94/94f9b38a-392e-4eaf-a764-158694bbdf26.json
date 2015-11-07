@@ -290,7 +290,10 @@
     "persistent": [
       "p"
     ],
-    "cross-site": [
+    "cross": [
+      "p"
+    ],
+    "site": [
       "p"
     ],
     "scripting": [
@@ -851,7 +854,12 @@
       "p",
       "strong"
     ],
-    "content-specific": [
+    "content": [
+      "ol",
+      "li",
+      "p"
+    ],
+    "specific": [
       "ol",
       "li",
       "p"
@@ -1082,7 +1090,13 @@
       "li",
       "p"
     ],
-    "type-safe": [
+    "type": [
+      "ol",
+      "li",
+      "p",
+      "strong"
+    ],
+    "safe": [
       "ol",
       "li",
       "p",
@@ -1521,7 +1535,11 @@
     "*": [
       "p"
     ],
-    "--'": [
+    "": [
+      "p",
+      "p"
+    ],
+    "'": [
       "p"
     ],
     "system": [

@@ -267,7 +267,16 @@
     "provides": [
       "p"
     ],
-    "non-repudiation": [
+    "non": [
+      "p",
+      "ul",
+      "li",
+      "ul",
+      "ul",
+      "li",
+      "li"
+    ],
+    "repudiation": [
       "p",
       "ul",
       "li",
@@ -545,11 +554,15 @@
       "li",
       "p"
     ],
-    "client-server": [
+    "client": [
       "ul",
+      "ul",
+      "ul",
+      "li",
+      "li",
       "li"
     ],
-    "client-client": [
+    "server": [
       "ul",
       "li"
     ],
@@ -595,7 +608,7 @@
       "li",
       "p"
     ],
-    "non-repududiation": [
+    "repududiation": [
       "ul",
       "li"
     ],
@@ -1593,7 +1606,8 @@
     "secret": [
       "p"
     ],
-    "-": [
+    "": [
+      "p",
       "p"
     ],
     "symmetric": [
@@ -1630,7 +1644,10 @@
     "refer": [
       "p"
     ],
-    "http//msdn2.microsoft.com/en-us/library/system.security.cryptography.cspparameters(vs.80).aspx).": [
+    "http//msdn2.microsoft.com/en": [
+      "p"
+    ],
+    "us/library/system.security.cryptography.cspparameters(vs.80).aspx).": [
       "p"
     ],
     "sharing": [

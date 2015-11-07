@@ -1174,7 +1174,9 @@
       "b"
     ],
     "specific": [
-      "p"
+      "p",
+      "ul",
+      "li"
     ],
     "call": [
       "p",
@@ -1735,9 +1737,11 @@
       "pre",
       "ul",
       "ul",
+      "ul",
       "li",
       "li",
-      "b"
+      "b",
+      "li"
     ],
     "credentials": [
       "p",
@@ -1911,9 +1915,11 @@
       "li",
       "li",
       "ul",
+      "ul",
       "li",
       "li",
-      "b"
+      "b",
+      "li"
     ],
     "uses": [
       "p",
@@ -3612,8 +3618,23 @@
       "b",
       "b"
     ],
-    "lower-case": [
+    "lower": [
       "p"
+    ],
+    "case": [
+      "p",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "li",
+      "div",
+      "div",
+      "div",
+      "pre",
+      "pre",
+      "pre"
     ],
     "n": [
       "p",
@@ -4025,13 +4046,45 @@
       "div",
       "pre"
     ],
-    "validationexpression=\"^\\w-]+([\\.": [
+    "validationexpression=\"^\\w": [
       "ol",
       "li",
       "div",
       "pre"
     ],
-    "[\\w-]+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*\"": [
+    "]+([\\.": [
+      "ol",
+      "li",
+      "div",
+      "pre",
+      "ol",
+      "li",
+      "div",
+      "pre"
+    ],
+    "[\\w": [
+      "ol",
+      "li",
+      "div",
+      "pre",
+      "ol",
+      "li",
+      "div",
+      "pre"
+    ],
+    "]+)*@\\w+([": [
+      "ol",
+      "li",
+      "div",
+      "pre"
+    ],
+    ".]\\w+)*\\.\\w+([": [
+      "ol",
+      "li",
+      "div",
+      "pre"
+    ],
+    ".]\\w+)*\"": [
       "ol",
       "li",
       "div",
@@ -4269,13 +4322,19 @@
       "div",
       "pre"
     ],
-    "validationexpression=\"^\\w+[-.]\\w+)*\\\\[\\w-]+([\\.": [
+    "validationexpression=\"^\\w+[": [
       "ol",
       "li",
       "div",
       "pre"
     ],
-    "[\\w-]+)*\"": [
+    ".]\\w+)*\\\\[\\w": [
+      "ol",
+      "li",
+      "div",
+      "pre"
+    ],
+    "]+)*\"": [
       "ol",
       "li",
       "div",
@@ -4334,20 +4393,6 @@
       "ol",
       "li",
       "div",
-      "pre"
-    ],
-    "case": [
-      "ol",
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "li",
-      "div",
-      "div",
-      "div",
-      "pre",
-      "pre",
       "pre"
     ],
     "\"testdomain1test.com\":": [
@@ -5217,7 +5262,7 @@
       "ul",
       "li"
     ],
-    "cross-site": [
+    "cross": [
       "ul",
       "li"
     ],
@@ -5290,15 +5335,15 @@
       "ul",
       "li"
     ],
-    "user-specific": [
-      "ul",
-      "li"
-    ],
     "preferences": [
       "ul",
       "li"
     ],
-    "non-sensitive": [
+    "non": [
+      "ul",
+      "li"
+    ],
+    "sensitive": [
       "ul",
       "li"
     ],

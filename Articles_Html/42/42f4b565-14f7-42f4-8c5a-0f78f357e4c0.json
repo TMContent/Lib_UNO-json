@@ -368,11 +368,14 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "strong",
       "li",
       "li",
+      "li",
+      "p",
       "p",
       "p",
       "p",
@@ -444,7 +447,10 @@
     "persistent": [
       "p"
     ],
-    "cross-site": [
+    "cross": [
+      "p"
+    ],
+    "site": [
       "p"
     ],
     "scripting": [
@@ -802,6 +808,10 @@
       "ol",
       "li",
       "ul",
+      "li",
+      "ol",
+      "li",
+      "ul",
       "li"
     ],
     "based": [
@@ -814,6 +824,14 @@
       "li",
       "li",
       "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "ul",
+      "ul",
+      "li",
+      "li",
       "li",
       "p"
     ],
@@ -840,6 +858,10 @@
       "strong"
     ],
     "form": [
+      "ol",
+      "li",
+      "ul",
+      "li",
       "ol",
       "li",
       "ul",
@@ -1285,7 +1307,12 @@
       "li",
       "p"
     ],
-    "one-off": [
+    "one": [
+      "ol",
+      "li",
+      "p"
+    ],
+    "off": [
       "ol",
       "li",
       "p"
@@ -1496,7 +1523,7 @@
       "li",
       "a"
     ],
-    "client-side": [
+    "client": [
       "ol",
       "li",
       "p",
@@ -1507,6 +1534,23 @@
       "li",
       "a",
       "ul",
+      "li",
+      "a"
+    ],
+    "side": [
+      "ol",
+      "li",
+      "p",
+      "ul",
+      "li",
+      "a",
+      "ul",
+      "li",
+      "a",
+      "ul",
+      "ul",
+      "li",
+      "a",
       "li",
       "a"
     ],
@@ -1625,18 +1669,6 @@
       "a",
       "a"
     ],
-    "url-based": [
-      "ol",
-      "li",
-      "ul",
-      "li"
-    ],
-    "form-based": [
-      "ol",
-      "li",
-      "ul",
-      "li"
-    ],
     "variablescreate": [
       "ol"
     ],
@@ -1659,7 +1691,7 @@
       "li",
       "p"
     ],
-    "database-specific": [
+    "specific": [
       "ol",
       "li",
       "p"
@@ -1863,7 +1895,15 @@
     ],
     "user": [
       "p",
-      "p"
+      "pre",
+      "p",
+      "pre",
+      "ul",
+      "li",
+      "a",
+      "ul",
+      "li",
+      "a"
     ],
     "query": [
       "p",
@@ -1979,7 +2019,7 @@
       "pre",
       "pre"
     ],
-    "user-supplied": [
+    "supplied": [
       "pre",
       "pre",
       "ul",
@@ -1995,7 +2035,10 @@
     ],
     "server": [
       "pre",
-      "pre"
+      "pre",
+      "ul",
+      "li",
+      "a"
     ],
     "querydbquery);": [
       "pre",
@@ -2071,7 +2114,10 @@
     "goodpattern": [
       "pre"
     ],
-    "\"0-9]++\";": [
+    "\"0": [
+      "pre"
+    ],
+    "9]++\";": [
       "pre"
     ],
     "pattern": [
@@ -2121,7 +2167,10 @@
     "regular": [
       "ul",
       "ul",
+      "ul",
       "li",
+      "li",
+      "a",
       "li"
     ],
     "expressions": [
@@ -2132,7 +2181,7 @@
       "ul",
       "li"
     ],
-    "regular-expressionsinfo.": [
+    "expressionsinfo.": [
       "ul",
       "li"
     ],
@@ -2184,7 +2233,7 @@
       "ul",
       "li"
     ],
-    "regular-expressionsinfo": [
+    "expressionsinfo": [
       "a"
     ],
     "guidelines": [
@@ -2272,11 +2321,6 @@
       "a",
       "li",
       "a",
-      "li",
-      "a"
-    ],
-    "server-side": [
-      "ul",
       "li",
       "a"
     ],

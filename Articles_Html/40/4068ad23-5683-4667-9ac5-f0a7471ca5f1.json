@@ -74,6 +74,8 @@
       "p",
       "div",
       "div",
+      "div",
+      "p",
       "p",
       "div",
       "div",
@@ -235,9 +237,16 @@
       "p",
       "strong"
     ],
-    "system-level": [
+    "system": [
       "p",
-      "blockquote"
+      "blockquote",
+      "p"
+    ],
+    "level": [
+      "p",
+      "blockquote",
+      "div",
+      "p"
     ],
     "diagnostic": [
       "p"
@@ -833,9 +842,6 @@
     "internal": [
       "p"
     ],
-    "system": [
-      "p"
-    ],
     "errors\"": [
       "p"
     ],
@@ -901,10 +907,6 @@
       "p"
     ],
     "includes": [
-      "div",
-      "p"
-    ],
-    "application-level": [
       "div",
       "p"
     ],
@@ -1170,7 +1172,13 @@
       "div",
       "pre"
     ],
-    "e-mail": [
+    "e": [
+      "div",
+      "div",
+      "div",
+      "pre"
+    ],
+    "mail": [
       "div",
       "div",
       "div",
@@ -1199,8 +1207,10 @@
       "ul",
       "li"
     ],
-    "-": [
+    "": [
       "ul",
+      "ul",
+      "li",
       "li"
     ],
     "design": [
@@ -1223,7 +1233,12 @@
       "ul",
       "li"
     ],
-    "http//msdn2.microsoft.com/en-us/library/aa302420.aspx": [
+    "http//msdn2.microsoft.com/en": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "us/library/aa302420.aspx": [
       "ul",
       "li",
       "a"

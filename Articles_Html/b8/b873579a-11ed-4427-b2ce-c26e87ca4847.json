@@ -51,6 +51,10 @@
       "li",
       "b"
     ],
+    "8": [
+      "p",
+      "p"
+    ],
     "9": [
       "ul",
       "li",
@@ -62,7 +66,9 @@
       "ul",
       "li",
       "ul",
-      "li"
+      "li",
+      "p",
+      "p"
     ],
     "20": [
       "p"
@@ -146,6 +152,7 @@
       "ul",
       "ul",
       "ul",
+      "li",
       "li",
       "li",
       "li",
@@ -993,6 +1000,7 @@
       "p",
       "p",
       "p",
+      "p",
       "p"
     ],
     "identity": [
@@ -1781,6 +1789,8 @@
       "pre",
       "div",
       "pre",
+      "blockquote",
+      "blockquote",
       "p",
       "p",
       "p"
@@ -1905,7 +1915,9 @@
     ],
     "sign": [
       "ul",
-      "li"
+      "li",
+      "li",
+      "b"
     ],
     "in": [
       "ul",
@@ -1964,6 +1976,7 @@
       "p",
       "p",
       "p",
+      "p",
       "a",
       "p",
       "p",
@@ -1991,6 +2004,7 @@
       "p",
       "p",
       "blockquote",
+      "p",
       "p",
       "p",
       "p",
@@ -2519,6 +2533,7 @@
       "li",
       "p",
       "p",
+      "p",
       "blockquote",
       "p",
       "p",
@@ -2727,11 +2742,30 @@
       "blockquote",
       "p"
     ],
-    "cross-site": [
+    "cross": [
       "ul",
       "li",
       "ul",
       "li",
+      "p",
+      "p",
+      "p"
+    ],
+    "site": [
+      "ul",
+      "li",
+      "ul",
+      "li",
+      "ul",
+      "li",
+      "h2",
+      "p",
+      "p",
+      "p",
+      "b",
+      "blockquote",
+      "p",
+      "p",
       "p",
       "p"
     ],
@@ -2873,7 +2907,8 @@
       "p",
       "p"
     ],
-    "sign-out": [
+    "out": [
+      "li",
       "li",
       "b"
     ],
@@ -2888,9 +2923,6 @@
       "blockquote"
     ],
     "logged": [
-      "li"
-    ],
-    "out": [
       "li"
     ],
     "developer": [
@@ -2917,7 +2949,13 @@
       "p",
       "p"
     ],
-    "time-to-live": [
+    "time": [
+      "li",
+      "ul",
+      "li",
+      "p"
+    ],
+    "live": [
       "li"
     ],
     "ttl)": [
@@ -2987,7 +3025,9 @@
       "li"
     ],
     "sensitive": [
-      "li"
+      "li",
+      "p",
+      "p"
     ],
     "information": [
       "li",
@@ -3119,7 +3159,11 @@
       "li",
       "p"
     ],
-    "tamper-proofing": [
+    "tamper": [
+      "ul",
+      "li"
+    ],
+    "proofing": [
       "ul",
       "li"
     ],
@@ -3208,11 +3252,6 @@
       "li"
     ],
     "reduce": [
-      "ul",
-      "li",
-      "p"
-    ],
-    "time": [
       "ul",
       "li",
       "p"
@@ -3447,6 +3486,7 @@
     ],
     "specific": [
       "p",
+      "p",
       "p"
     ],
     "webconfig": [
@@ -3646,7 +3686,10 @@
       "p",
       "p"
     ],
-    "hard-coded": [
+    "hard": [
+      "p"
+    ],
+    "coded": [
       "p"
     ],
     "isolateapp": [
@@ -3701,9 +3744,6 @@
       "p",
       "p",
       "p",
-      "p"
-    ],
-    "cross-application": [
       "p"
     ],
     "redirects": [
@@ -4006,18 +4046,6 @@
       "ul",
       "li",
       "h2",
-      "p"
-    ],
-    "site": [
-      "ul",
-      "li",
-      "h2",
-      "p",
-      "p",
-      "p",
-      "b",
-      "blockquote",
-      "p",
       "p"
     ],
     "persist": [
@@ -4385,7 +4413,7 @@
       "p",
       "p"
     ],
-    "!--": [
+    "!": [
       "ol",
       "ol",
       "li",
@@ -4393,9 +4421,51 @@
       "div",
       "pre",
       "div",
+      "pre",
+      "ul",
+      "li",
+      "ul",
+      "li"
+    ],
+    "": [
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "div",
+      "div",
+      "div",
+      "div",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "div",
+      "div",
+      "div",
+      "div",
+      "div",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
       "pre"
     ],
-    "--<location": [
+    "<location": [
       "ol",
       "li",
       "div",
@@ -4503,12 +4573,6 @@
       "div",
       "pre"
     ],
-    "--": [
-      "ol",
-      "li",
-      "div",
-      "pre"
-    ],
     "allow": [
       "ol",
       "li",
@@ -4542,9 +4606,21 @@
     "rely": [
       "blockquote"
     ],
-    "non-ssl": [
+    "non": [
       "blockquote",
-      "blockquote"
+      "blockquote",
+      "p",
+      "p",
+      "div",
+      "pre",
+      "ul",
+      "li",
+      "ul",
+      "li",
+      "p",
+      "p",
+      "p",
+      "p"
     ],
     "no": [
       "blockquote",
@@ -4567,6 +4643,8 @@
       "p"
     ],
     "client": [
+      "p",
+      "p",
       "p"
     ],
     "computer": [
@@ -4584,7 +4662,7 @@
     "physical": [
       "p"
     ],
-    "non-persistent": [
+    "persistent": [
       "p",
       "p",
       "div",
@@ -5003,7 +5081,7 @@
       "li",
       "p"
     ],
-    "non-alphanumeric": [
+    "alphanumeric": [
       "ul",
       "li",
       "ul",
@@ -5012,12 +5090,6 @@
       "p"
     ],
     "e.g.,": [
-      "ul",
-      "li",
-      "ul",
-      "li"
-    ],
-    "!": [
       "ul",
       "li",
       "ul",
@@ -5146,10 +5218,6 @@
       "p"
     ],
     "credential": [
-      "p"
-    ],
-    "non-sensitive": [
-      "p",
       "p"
     ],
     "membership": [
@@ -5296,7 +5364,17 @@
       "div",
       "pre"
     ],
-    "\"^?=.*\\d)(?=.*[a-z])(?=.*[a-z]).{8,10}$\"": [
+    "\"^?=.*\\d)(?=.*[a": [
+      "div",
+      "pre"
+    ],
+    "z])(?=.*[a": [
+      "div",
+      "pre",
+      "div",
+      "pre"
+    ],
+    "z]).{8,10}$\"": [
       "div",
       "pre"
     ],
@@ -5340,10 +5418,6 @@
       "p",
       "p"
     ],
-    "8-10": [
-      "p",
-      "p"
-    ],
     "combination": [
       "p"
     ],
@@ -5362,10 +5436,17 @@
       "p",
       "p"
     ],
-    ".*[a-z])": [
+    ".*[a": [
       "p"
     ],
-    "*a-z|]": [
+    "z])": [
+      "p"
+    ],
+    "*a": [
+      "p",
+      "b"
+    ],
+    "z|]": [
       "p",
       "b"
     ],
@@ -5376,7 +5457,10 @@
     "range": [
       "p"
     ],
-    "*[a-z]": [
+    "*[a": [
+      "b"
+    ],
+    "z]": [
       "b"
     ],
     "about": [
@@ -5437,11 +5521,9 @@
     "benefit": [
       "p"
     ],
-    "client-side": [
+    "side": [
       "p",
-      "p"
-    ],
-    "server-side": [
+      "p",
       "p"
     ],
     "validate": [
@@ -5454,7 +5536,11 @@
       "p",
       "b"
     ],
-    "^?=.*\\d)(?=.*[a-z])(?=.*[a-z]).{8,10}$": [
+    "^?=.*\\d)(?=.*[a": [
+      "div",
+      "pre"
+    ],
+    "z]).{8,10}$": [
       "div",
       "pre"
     ],
@@ -5523,7 +5609,10 @@
     "implement": [
       "p"
     ],
-    "defense-in-depth": [
+    "defense": [
+      "p"
+    ],
+    "depth": [
       "p"
     ],
     "strategy": [
@@ -5647,9 +5736,6 @@
     "earlier": [
       "p"
     ],
-    "user-specific": [
-      "p"
-    ],
     "preferences": [
       "p"
     ],
@@ -5765,7 +5851,11 @@
       "div",
       "pre"
     ],
-    "v-dir": [
+    "v": [
+      "div",
+      "pre"
+    ],
+    "dir": [
       "div",
       "pre"
     ],

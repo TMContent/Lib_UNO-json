@@ -6,6 +6,12 @@
       "pre",
       "pre"
     ],
+    "8859": [
+      "pre",
+      "pre",
+      "pre",
+      "pre"
+    ],
     "applies": [
       "h2"
     ],
@@ -177,7 +183,7 @@
       "li",
       "a"
     ],
-    "x-content-security-policy": [
+    "x": [
       "p",
       "p",
       "p",
@@ -187,6 +193,132 @@
       "li",
       "strong",
       "p",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "a",
+      "li",
+      "a",
+      "li",
+      "a",
+      "li",
+      "a",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "a",
+      "li",
+      "a",
+      "li",
+      "a",
+      "li",
+      "a",
+      "title"
+    ],
+    "content": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "strong",
+      "p",
+      "pre",
+      "pre",
+      "pre",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "ul",
+      "li",
+      "a",
+      "ul",
+      "li",
+      "a",
+      "title"
+    ],
+    "security": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "strong",
+      "p",
+      "p",
+      "pre",
+      "pre",
+      "pre",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "a",
+      "li",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "a",
+      "li",
+      "a",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "a",
+      "li",
+      "a",
+      "title"
+    ],
+    "policy": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "li",
+      "strong",
+      "p",
+      "p",
+      "pre",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "a",
+      "li",
       "ul",
       "li",
       "a",
@@ -205,6 +337,9 @@
       "p",
       "pre",
       "p",
+      "ul",
+      "li",
+      "a",
       "h2",
       "ul",
       "li",
@@ -237,6 +372,7 @@
       "p",
       "p",
       "p",
+      "pre",
       "p",
       "pre",
       "p",
@@ -376,30 +512,6 @@
       "li",
       "a"
     ],
-    "security": [
-      "p",
-      "p",
-      "p",
-      "pre",
-      "ul",
-      "ul",
-      "li",
-      "li"
-    ],
-    "policy": [
-      "p",
-      "p",
-      "p",
-      "p",
-      "ol",
-      "li",
-      "p",
-      "pre",
-      "ul",
-      "ul",
-      "li",
-      "li"
-    ],
     "that": [
       "p",
       "p",
@@ -536,14 +648,6 @@
       "li",
       "a"
     ],
-    "content": [
-      "p",
-      "pre",
-      "ul",
-      "ul",
-      "li",
-      "li"
-    ],
     "injection": [
       "p"
     ],
@@ -558,7 +662,10 @@
       "p",
       "p"
     ],
-    "cross-site": [
+    "cross": [
+      "p"
+    ],
+    "site": [
       "p"
     ],
     "scripting": [
@@ -666,6 +773,7 @@
     ],
     "default": [
       "p",
+      "pre",
       "pre"
     ],
     "behavior": [
@@ -679,10 +787,12 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "li",
       "strong",
+      "li",
       "li",
       "li",
       "li",
@@ -720,15 +830,21 @@
       "p",
       "ul",
       "ul",
-      "li",
-      "a",
-      "li",
-      "a",
-      "ul",
       "ul",
       "li",
       "a",
       "li",
+      "li",
+      "a",
+      "a",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "li",
+      "a",
       "a",
       "title"
     ],
@@ -846,6 +962,8 @@
       "ol",
       "ol",
       "ol",
+      "ol",
+      "li",
       "li",
       "li",
       "li",
@@ -955,9 +1073,16 @@
       "ol",
       "li"
     ],
-    "script-src": [
+    "src": [
       "ol",
-      "li"
+      "ol",
+      "li",
+      "li",
+      "p",
+      "pre",
+      "pre",
+      "pre",
+      "pre"
     ],
     "'self'": [
       "ol",
@@ -1006,7 +1131,7 @@
       "li",
       "li"
     ],
-    "non-allowed": [
+    "non": [
       "ol",
       "li"
     ],
@@ -1043,11 +1168,6 @@
       "p",
       "pre",
       "pre"
-    ],
-    "src": [
-      "ol",
-      "li",
-      "p"
     ],
     "attribute": [
       "ol",
@@ -1097,10 +1217,23 @@
       "pre",
       "pre"
     ],
-    "apache-coyote/11\ncontent-type:": [
+    "apache": [
+      "pre",
       "pre"
     ],
-    "text/htmlcharset=iso-8859-1\ncontent-length:": [
+    "coyote/11\ncontent": [
+      "pre"
+    ],
+    "type:": [
+      "pre"
+    ],
+    "text/htmlcharset=iso": [
+      "pre"
+    ],
+    "1\ncontent": [
+      "pre"
+    ],
+    "length:": [
       "pre"
     ],
     "440\n\n&lt;%@page": [
@@ -1109,22 +1242,36 @@
     "language=\"java\"\tcontenttype=\"text/html;": [
       "pre"
     ],
-    "charset=iso-8859-1\"": [
+    "charset=iso": [
+      "pre",
       "pre"
     ],
-    "pageencoding=\"iso-8859-1\"%&gt\n\n\n<title>index</title>\n<meta": [
+    "1\"": [
       "pre"
     ],
-    "http-equiv=\"content-type\"": [
+    "pageencoding=\"iso": [
+      "pre"
+    ],
+    "1\"%&gt\n\n\n<title>index</title>\n<meta": [
+      "pre"
+    ],
+    "equiv=\"content": [
+      "pre"
+    ],
+    "type\"": [
       "pre"
     ],
     "content=\"text/html": [
       "pre"
     ],
-    "charset=iso-8859-1\"\n\n\n<iframe": [
+    "1\"\n\n\n<iframe": [
       "pre"
     ],
-    "src=\"http//www.facebook.com/plugins/like.php?href=https%3a%2f%2fwww.facebook.com%2fpages%2fweb-development%2f109644819062307%3fref%3dts%26fref%3dts\"": [
+    "src=\"http//www.facebook.com/plugins/like.php?href=https%3a%2f%2fwww.facebook.com%2fpages%2fweb": [
+      "pre",
+      "pre"
+    ],
+    "development%2f109644819062307%3fref%3dts%26fref%3dts\"": [
       "pre",
       "pre"
     ],
@@ -1153,7 +1300,10 @@
     "element’s": [
       "p"
     ],
-    "\"http://www.facebook.com/plugins/like.php?href=https%3a%2f%2fwww.facebook.com%2fpages%2fweb-development%2f109644819062307%3fref%3dts%26fref%3dts\").": [
+    "\"http://www.facebook.com/plugins/like.php?href=https%3a%2f%2fwww.facebook.com%2fpages%2fweb": [
+      "pre"
+    ],
+    "development%2f109644819062307%3fref%3dts%26fref%3dts\").": [
       "pre"
     ],
     "introduces": [
@@ -1257,23 +1407,47 @@
     "=": [
       "pre"
     ],
-    "\"default-src": [
+    "\"default": [
       "pre"
     ],
-    "frame-src": [
+    "frame": [
       "pre",
-      "pre"
+      "pre",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "a",
+      "li",
+      "a",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "a",
+      "li",
+      "a"
     ],
     "'none'\"\n\t\t//": [
       "pre"
     ],
-    "policy\t\tresponse.setheader(\"x-content-security-policy\",": [
+    "policy\t\tresponse.setheader(\"x": [
+      "pre"
+    ],
+    "policy\",": [
       "pre"
     ],
     "cspdirective;\n\t\tresponse.getwriter().append(\"\");\n\t\tresponse.getwriter().append(\"\");\n\t\tresponse.getwriter().append(\"\");\n\t\tresponse.getwriter().append(\"\");\n\t\tresponse.getwriter().append(\"\");\n\t\tresponse.getwriter().append(\"<iframe": [
       "pre"
     ],
-    "src=\"\\&quothttp://www.facebook.com/plugins/like.php?href=https%3a%2f%2fwww.facebook.com%2fpages%2fweb-development%2f109644819062307%3fref%3dts%26fref%3dts\\&quot;\"": [
+    "src=\"\\&quothttp://www.facebook.com/plugins/like.php?href=https%3a%2f%2fwww.facebook.com%2fpages%2fweb": [
+      "pre"
+    ],
+    "development%2f109644819062307%3fref%3dts%26fref%3dts\\&quot;\"": [
       "pre"
     ],
     "style=\"\\&quotborder:none;\"": [
@@ -1303,13 +1477,16 @@
     "follows": [
       "p"
     ],
-    "apache-coyote/11\nx-content-security-policy:": [
+    "coyote/11\nx": [
       "pre"
     ],
-    "default-src": [
+    "policy:": [
       "pre"
     ],
-    "'none'transfer-encoding:": [
+    "'none'transfer": [
+      "pre"
+    ],
+    "encoding:": [
       "pre"
     ],
     "chunked\n<!doctype": [
@@ -1352,7 +1529,12 @@
       "li",
       "li"
     ],
-    "http//www.w3.org/tr/csp/#content-security-policy-header-field": [
+    "http//www.w3.org/tr/csp/#content": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "field": [
       "ul",
       "li",
       "a"
@@ -1378,7 +1560,7 @@
       "a",
       "title"
     ],
-    "x-xss-protection": [
+    "protection": [
       "ul",
       "li",
       "a",
@@ -1394,14 +1576,23 @@
       "li",
       "a"
     ],
-    "x-frame-options": [
+    "options": [
+      "ul",
       "ul",
       "ul",
       "li",
       "a",
       "li",
       "a",
+      "li",
+      "a",
       "ul",
+      "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "a",
       "li",
       "a"
     ],
@@ -1429,28 +1620,6 @@
       "li",
       "a"
     ],
-    "x-frame": [
-      "ul",
-      "li",
-      "a",
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a"
-    ],
-    "options": [
-      "ul",
-      "li",
-      "a",
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a"
-    ],
     "responses": [
       "ul",
       "li",
@@ -1459,7 +1628,21 @@
       "li",
       "a"
     ],
-    "strict-transport-security": [
+    "strict": [
+      "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "a",
+      "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "a"
+    ],
+    "transport": [
       "ul",
       "ul",
       "li",

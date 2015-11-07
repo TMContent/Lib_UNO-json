@@ -24,6 +24,53 @@
       "ul",
       "li"
     ],
+    "256": [
+      "ol",
+      "li",
+      "ul",
+      "li",
+      "ul",
+      "li",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "ul",
+      "ul",
+      "li",
+      "p",
+      "li",
+      "p"
+    ],
+    "384": [
+      "ol",
+      "li",
+      "ul",
+      "li",
+      "ul",
+      "li"
+    ],
+    "512": [
+      "ol",
+      "li",
+      "ul",
+      "li",
+      "ul",
+      "li"
+    ],
+    "2048": [
+      "ol",
+      "li",
+      "ul",
+      "li",
+      "ul",
+      "li",
+      "p"
+    ],
     "applies": [
       "h1"
     ],
@@ -1567,11 +1614,16 @@
       "p",
       "ol",
       "ol",
+      "ol",
+      "li",
       "li",
       "li",
       "ul",
       "ul",
+      "ul",
       "li",
+      "li",
+      "p",
       "p",
       "li",
       "p"
@@ -4015,8 +4067,15 @@
       "strong",
       "p"
     ],
-    "one-way": [
+    "one": [
       "ol",
+      "li",
+      "ul",
+      "li",
+      "p",
+      "ol",
+      "li",
+      "ul",
       "li",
       "ul",
       "li",
@@ -4070,10 +4129,22 @@
       "p",
       "p"
     ],
-    "non-retrievable": [
+    "non": [
       "ol",
       "li",
       "ul",
+      "li",
+      "p"
+    ],
+    "retrievable": [
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "ul",
+      "ul",
+      "li",
+      "p",
       "li",
       "p"
     ],
@@ -4258,12 +4329,24 @@
       "li",
       "p"
     ],
-    "sha-256": [
+    "sha": [
+      "ol",
+      "ol",
       "ol",
       "li",
-      "ul",
+      "li",
       "li",
       "ul",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "li",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "li",
       "li",
       "ol",
       "li",
@@ -4272,22 +4355,6 @@
       "ul",
       "li",
       "p"
-    ],
-    "sha-384": [
-      "ol",
-      "li",
-      "ul",
-      "li",
-      "ul",
-      "li"
-    ],
-    "sha-512": [
-      "ol",
-      "li",
-      "ul",
-      "li",
-      "ul",
-      "li"
     ],
     "hash": [
       "ol",
@@ -4412,7 +4479,7 @@
       "li",
       "li"
     ],
-    "clean-up": [
+    "clean": [
       "ol",
       "ol",
       "li",
@@ -4428,7 +4495,35 @@
       "li",
       "strong"
     ],
-    "cleans-up": [
+    "up": [
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "li",
+      "li",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "strong",
+      "li",
+      "li",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "strong"
+    ],
+    "cleans": [
       "ol",
       "ol",
       "li",
@@ -4532,13 +4627,6 @@
       "li",
       "ul",
       "li"
-    ],
-    "retrievable": [
-      "ol",
-      "li",
-      "ul",
-      "li",
-      "p"
     ],
     "key": [
       "ol",
@@ -6051,13 +6139,20 @@
       "li",
       "p"
     ],
-    "256-bit": [
+    "bit": [
+      "ol",
       "ol",
       "li",
-      "ul",
       "li",
       "ul",
+      "ul",
       "li",
+      "li",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "p",
       "p"
     ],
     "higher": [
@@ -6074,15 +6169,6 @@
       "li",
       "li",
       "p",
-      "p"
-    ],
-    "2048-bit": [
-      "ol",
-      "li",
-      "ul",
-      "li",
-      "ul",
-      "li",
       "p"
     ],
     "public/private": [
@@ -6156,15 +6242,6 @@
       "p"
     ],
     "than": [
-      "ol",
-      "li",
-      "ul",
-      "li",
-      "ul",
-      "li",
-      "p"
-    ],
-    "one": [
       "ol",
       "li",
       "ul",

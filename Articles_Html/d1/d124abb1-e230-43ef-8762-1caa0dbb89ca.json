@@ -105,7 +105,13 @@
       "p",
       "p",
       "p",
+      "em",
       "p",
+      "p",
+      "em",
+      "p",
+      "p",
+      "em",
       "p",
       "p",
       "ul",
@@ -422,8 +428,42 @@
       "li",
       "a"
     ],
-    "built-in": [
+    "built": [
       "p"
+    ],
+    "in": [
+      "p",
+      "p",
+      "p",
+      "pre",
+      "p",
+      "p",
+      "pre",
+      "p",
+      "p",
+      "p",
+      "p",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "a",
+      "li",
+      "a",
+      "li",
+      "a",
+      "li",
+      "a",
+      "li",
+      "a",
+      "li",
+      "a"
     ],
     "mechanisms": [
       "p"
@@ -485,52 +525,28 @@
       "p",
       "p"
     ],
-    "in": [
+    "form": [
+      "p",
       "p",
       "p",
       "pre",
       "p",
       "p",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
       "p",
       "p",
-      "p",
-      "p",
-      "ul",
-      "ul",
-      "ul",
-      "ul",
-      "ul",
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a",
-      "li",
-      "a",
-      "li",
-      "a",
-      "li",
-      "a",
-      "li",
-      "a",
-      "li",
-      "a"
-    ],
-    "form": [
-      "p",
-      "p",
-      "p",
-      "p",
-      "p",
-      "p",
-      "p",
+      "pre",
       "pre"
     ],
     "bean": [
       "p",
       "p",
-      "p"
+      "p",
+      "pre",
+      "pre"
     ],
     "and": [
       "p",
@@ -560,7 +576,11 @@
       "p",
       "h3",
       "p",
+      "p",
+      "em",
       "pre",
+      "p",
+      "em",
       "p",
       "ul",
       "ul",
@@ -625,7 +645,13 @@
     "user": [
       "p",
       "p",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a",
+      "ul",
+      "li",
+      "a"
     ],
     "simply": [
       "p"
@@ -740,7 +766,12 @@
     "important": [
       "pre"
     ],
-    "-": [
+    "": [
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
       "pre"
     ],
     "super": [
@@ -884,7 +915,7 @@
     "typical": [
       "p"
     ],
-    "struts-configxml": [
+    "configxml": [
       "p",
       "em",
       "p",
@@ -898,10 +929,6 @@
       "p",
       "p",
       "p"
-    ],
-    "form-bean": [
-      "pre",
-      "pre"
     ],
     "name=\"myform\"": [
       "pre",
@@ -980,7 +1007,7 @@
       "p",
       "p"
     ],
-    "validator-rulesxml": [
+    "rulesxml": [
       "p",
       "em",
       "p",
@@ -1020,6 +1047,7 @@
       "p"
     ],
     "configuration": [
+      "p",
       "p"
     ],
     "shown": [
@@ -1027,25 +1055,42 @@
       "p",
       "p"
     ],
-    "!--": [
+    "!": [
       "pre"
     ],
     "plugin": [
       "pre"
     ],
-    "--<plug-in": [
+    "<plug": [
       "pre"
     ],
     "classname=\"orgapache.struts.validator.validatorplugin\">": [
       "pre"
     ],
-    "set-property": [
+    "set": [
+      "pre"
+    ],
+    "property": [
+      "pre",
+      "pre",
       "pre"
     ],
     "property=\"pathnames\"": [
       "pre"
     ],
-    "value=\"/web-inf/validator-rulesxml,/web-inf/validation.xml\"/></plug-in>": [
+    "value=\"/web": [
+      "pre"
+    ],
+    "inf/validator": [
+      "pre"
+    ],
+    "rulesxml,/web": [
+      "pre"
+    ],
+    "inf/validation.xml\"/></plug": [
+      "pre"
+    ],
+    "in>": [
       "pre"
     ],
     "likely": [
@@ -1090,7 +1135,8 @@
     "here": [
       "p"
     ],
-    "form-beans>": [
+    "beans>": [
+      "pre",
       "pre"
     ],
     "name=\"loginform\"": [
@@ -1099,10 +1145,6 @@
       "pre"
     ],
     "type=\"orgapache.struts.validator.dynavalidatorform\">": [
-      "pre"
-    ],
-    "form-property": [
-      "pre",
       "pre"
     ],
     "name=\"username\"": [
@@ -1115,7 +1157,10 @@
     "name=\"password\"": [
       "pre"
     ],
-    "/form-bean></form-beans>": [
+    "/form": [
+      "pre"
+    ],
+    "bean></form": [
       "pre"
     ],
     "covers": [
@@ -1137,7 +1182,8 @@
     "covering": [
       "p"
     ],
-    "form-validation>": [
+    "validation>": [
+      "pre",
       "pre"
     ],
     "formset>": [
@@ -1190,10 +1236,20 @@
     "var>": [
       "pre"
     ],
-    "var-name>minlength</var-name>": [
+    "var": [
+      "pre",
       "pre"
     ],
-    "var-value>6</var-value>": [
+    "name>minlength</var": [
+      "pre"
+    ],
+    "name>": [
+      "pre"
+    ],
+    "value>6</var": [
+      "pre"
+    ],
+    "value>": [
       "pre"
     ],
     "/var>": [
@@ -1202,7 +1258,7 @@
     "/form>": [
       "pre"
     ],
-    "/formset></form-validation>": [
+    "/formset></form": [
       "pre"
     ],
     "now": [
@@ -1229,10 +1285,15 @@
     "choose": [
       "p"
     ],
-    "code-driven": [
-      "p"
+    "code": [
+      "p",
+      "h1",
+      "ul",
+      "li",
+      "a"
     ],
-    "configuration-driven": [
+    "driven": [
+      "p",
       "p"
     ],
     "display": [
@@ -1466,7 +1527,7 @@
       "li",
       "a"
     ],
-    "user-supplied": [
+    "supplied": [
       "ul",
       "li",
       "a",
@@ -1508,7 +1569,7 @@
       "li",
       "a"
     ],
-    "client-side": [
+    "client": [
       "ul",
       "li",
       "a",
@@ -1516,6 +1577,20 @@
       "li",
       "a",
       "ul",
+      "li",
+      "a"
+    ],
+    "side": [
+      "ul",
+      "li",
+      "a",
+      "ul",
+      "li",
+      "a",
+      "ul",
+      "ul",
+      "li",
+      "a",
       "li",
       "a"
     ],
@@ -1547,12 +1622,6 @@
       "a"
     ],
     "does": [
-      "ul",
-      "li",
-      "a"
-    ],
-    "code": [
-      "h1",
       "ul",
       "li",
       "a"
@@ -1606,7 +1675,7 @@
       "li",
       "a"
     ],
-    "server-side": [
+    "server": [
       "ul",
       "li",
       "a"

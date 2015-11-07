@@ -825,8 +825,11 @@
       "p",
       "ul",
       "ul",
+      "ul",
       "li",
       "li",
+      "li",
+      "p",
       "p",
       "ul",
       "ul",
@@ -1299,6 +1302,10 @@
       "li",
       "p",
       "p",
+      "b",
+      "p",
+      "b",
+      "p",
       "p"
     ],
     "part": [
@@ -1394,10 +1401,13 @@
       "ul",
       "ul",
       "ul",
+      "ul",
       "li",
       "li",
       "li",
       "li",
+      "li",
+      "b",
       "p",
       "p",
       "p",
@@ -1853,10 +1863,49 @@
       "h2",
       "p"
     ],
-    "role-based": [
+    "role": [
       "p",
       "ul",
+      "ul",
+      "ul",
       "li",
+      "li",
+      "li",
+      "b",
+      "ul",
+      "li",
+      "h2",
+      "p",
+      "p",
+      "p",
+      "h3",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "based": [
+      "p",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "ul",
+      "li",
+      "p",
       "p"
     ],
     "contents": [
@@ -2784,6 +2833,7 @@
       "li",
       "p",
       "p",
+      "p",
       "h3",
       "p",
       "ol",
@@ -2885,14 +2935,12 @@
       "div",
       "pre"
     ],
-    "fixed-identity": [
-      "ul",
-      "li",
-      "b"
-    ],
     "fixed": [
       "ul",
+      "ul",
       "li",
+      "li",
+      "b",
       "p",
       "h2",
       "p"
@@ -2993,13 +3041,6 @@
     ],
     "folders": [
       "ul",
-      "li",
-      "p"
-    ],
-    "based": [
-      "ul",
-      "ul",
-      "li",
       "li",
       "p"
     ],
@@ -3290,6 +3331,8 @@
     ],
     "class": [
       "ul",
+      "ul",
+      "li",
       "li"
     ],
     "only": [
@@ -3478,36 +3521,6 @@
       "li",
       "blockquote"
     ],
-    "role": [
-      "ul",
-      "ul",
-      "ul",
-      "li",
-      "li",
-      "li",
-      "b",
-      "h2",
-      "p",
-      "p",
-      "h3",
-      "ul",
-      "ul",
-      "ul",
-      "ul",
-      "ul",
-      "ul",
-      "li",
-      "li",
-      "li",
-      "li",
-      "li",
-      "li",
-      "p",
-      "p",
-      "p",
-      "p",
-      "p"
-    ],
     "membership": [
       "ul",
       "li",
@@ -3541,7 +3554,15 @@
       "ul",
       "li"
     ],
-    "fine-grained": [
+    "fine": [
+      "ul",
+      "li",
+      "ul",
+      "li"
+    ],
+    "grained": [
+      "ul",
+      "li",
       "ul",
       "li"
     ],
@@ -3629,11 +3650,22 @@
       "p",
       "h3"
     ],
-    "class-level": [
+    "level": [
       "ul",
-      "li"
+      "ul",
+      "li",
+      "li",
+      "p",
+      "p",
+      "p",
+      "p"
     ],
-    "method-level": [
+    "method": [
+      "ul",
+      "li",
+      "p",
+      "ul",
+      "li",
       "ul",
       "li"
     ],
@@ -3719,8 +3751,18 @@
       "ol",
       "li"
     ],
-    "right-click": [
+    "right": [
       "ol",
+      "li"
+    ],
+    "click": [
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "li",
       "li"
     ],
     "then": [
@@ -3731,14 +3773,6 @@
       "ul",
       "li",
       "p"
-    ],
-    "click": [
-      "ol",
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "li"
     ],
     "properties": [
       "ol",
@@ -3800,7 +3834,8 @@
       "li",
       "li"
     ],
-    "machine-level": [
+    "machine": [
+      "p",
       "p"
     ],
     "ensure": [
@@ -3893,9 +3928,6 @@
     "standard": [
       "p"
     ],
-    "impersonate-level": [
-      "p"
-    ],
     "tokens": [
       "p"
     ],
@@ -3932,7 +3964,7 @@
       "p",
       "p"
     ],
-    "delegate-level": [
+    "delegate": [
       "p",
       "p"
     ],
@@ -4105,9 +4137,6 @@
     ],
     "different": [
       "p",
-      "p"
-    ],
-    "machine": [
       "p"
     ],
     "same": [
@@ -4684,13 +4713,6 @@
     "body": [
       "p"
     ],
-    "method": [
-      "p",
-      "ul",
-      "li",
-      "ul",
-      "li"
-    ],
     "declaratively": [
       "p"
     ],
@@ -4816,7 +4838,7 @@
       "div",
       "pre"
     ],
-    "built-in": [
+    "built": [
       "ul",
       "li",
       "p"
@@ -4922,14 +4944,6 @@
       "ul",
       "li",
       "b"
-    ],
-    "fine": [
-      "ul",
-      "li"
-    ],
-    "grained": [
-      "ul",
-      "li"
     ],
     "principalpermissiondemand": [
       "ul",
@@ -5141,7 +5155,7 @@
       "p",
       "b"
     ],
-    "-a": [
+    "": [
       "p",
       "b",
       "p",

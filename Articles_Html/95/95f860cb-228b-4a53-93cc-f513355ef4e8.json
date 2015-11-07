@@ -197,6 +197,8 @@
       "ul",
       "ul",
       "ul",
+      "ul",
+      "li",
       "li",
       "li",
       "li",
@@ -509,6 +511,7 @@
       "p",
       "p",
       "p",
+      "pre",
       "ul",
       "ul",
       "li",
@@ -525,7 +528,9 @@
       "pre",
       "pre",
       "pre",
-      "p"
+      "p",
+      "pre",
+      "pre"
     ],
     "by": [
       "p",
@@ -764,8 +769,20 @@
       "ul",
       "li"
     ],
-    "server-side": [
+    "server": [
       "p",
+      "p",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "li",
+      "p"
+    ],
+    "side": [
+      "p",
+      "pre",
       "ul",
       "li"
     ],
@@ -1640,6 +1657,8 @@
       "ul",
       "ul",
       "ul",
+      "ul",
+      "li",
       "li",
       "li",
       "li",
@@ -2121,7 +2140,11 @@
     "byteencvalwithiv.length": [
       "pre"
     ],
-    "-": [
+    "": [
+      "pre",
+      "pre",
+      "pre",
+      "pre",
       "pre",
       "pre",
       "pre",
@@ -2787,9 +2810,6 @@
     "client": [
       "pre"
     ],
-    "side": [
-      "pre"
-    ],
     "scripts": [
       "pre"
     ],
@@ -2847,6 +2867,8 @@
     ],
     "on": [
       "pre",
+      "ul",
+      "li",
       "ul",
       "li",
       "p",
@@ -2938,7 +2960,11 @@
       "ul",
       "li"
     ],
-    "man-in-the-middle": [
+    "man": [
+      "ul",
+      "li"
+    ],
+    "middle": [
       "ul",
       "li"
     ],
@@ -2948,7 +2974,8 @@
     ],
     "way": [
       "ul",
-      "li"
+      "li",
+      "p"
     ],
     "such": [
       "ul",
@@ -3186,7 +3213,8 @@
       "ul",
       "li",
       "ul",
-      "li"
+      "li",
+      "p"
     ],
     "total": [
       "ul",
@@ -3260,18 +3288,10 @@
     "establish": [
       "p"
     ],
-    "server": [
-      "p",
-      "ul",
-      "ul",
-      "li",
-      "li",
-      "p"
-    ],
     "options": [
       "p"
     ],
-    "set-cookiecookiejar=g2rzx1qz94laoyuxlgscubqg1/yyg8gy4ntcjak5aupwwsxoadyunber0sfzqik9dx4kzny0h8hd9xqee6d8hmvgojighloh88cx35jt9sqiqmjagcmecj6vhhwkfbrz;domain=.ourapp.microsoft.com;path=/cookieexample/;": [
+    "cookiecookiejar=g2rzx1qz94laoyuxlgscubqg1/yyg8gy4ntcjak5aupwwsxoadyunber0sfzqik9dx4kzny0h8hd9xqee6d8hmvgojighloh88cx35jt9sqiqmjagcmecj6vhhwkfbrz;domain=.ourapp.microsoft.com;path=/cookieexample/;": [
       "pre"
     ],
     "httponly": [
@@ -3327,9 +3347,6 @@
     "header": [
       "p"
     ],
-    "set-cookie": [
-      "pre"
-    ],
     "cookiejar=g2rzx1qz94laoyuxlgscubqg1/yyg8gy4ntcjak5aupwwsxoadyunber0sfzqik9dx4kzny0h8hd9xqee6d8hmvgojighloh88cx35jt9sqiqmjagcmecj6vhhwkfbrz": [
       "pre"
     ],
@@ -3363,7 +3380,7 @@
       "ul",
       "li"
     ],
-    "sign-on": [
+    "sign": [
       "ul",
       "li"
     ],
@@ -3393,7 +3410,11 @@
       "ul",
       "li"
     ],
-    "pre-established": [
+    "pre": [
+      "ul",
+      "li"
+    ],
+    "established": [
       "ul",
       "li"
     ],
@@ -3632,9 +3653,6 @@
     "strong": [
       "p"
     ],
-    "one-way": [
-      "p"
-    ],
     "hashing": [
       "p"
     ],
@@ -3711,12 +3729,25 @@
       "ul",
       "li"
     ],
-    "http//msdn.microsoft.com/library/default.asp?url=/library/en-us/cpref/html/frlrfsystemwebhttprequestclasscookiestopic.asp": [
+    "http//msdn.microsoft.com/library/default.asp?url=/library/en": [
+      "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "a"
+    ],
+    "us/cpref/html/frlrfsystemwebhttprequestclasscookiestopic.asp": [
       "ul",
       "li",
       "a"
     ],
-    "http//msdn.microsoft.com/library/en-us/wininet/wininet/http_cookies.asp": [
+    "http//msdn.microsoft.com/library/en": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "us/wininet/wininet/http_cookies.asp": [
       "ul",
       "li",
       "a"
@@ -3725,7 +3756,7 @@
       "ul",
       "li"
     ],
-    "http//msdn.microsoft.com/library/default.asp?url=/library/en-us/cpref/html/frlrfsystemnetcookiememberstopic.asp": [
+    "us/cpref/html/frlrfsystemnetcookiememberstopic.asp": [
       "ul",
       "li",
       "a"
@@ -3739,7 +3770,12 @@
       "li",
       "a"
     ],
-    "http//msdn2.microsoft.com/en-us/library/system.security.cryptography.hmac.aspx": [
+    "http//msdn2.microsoft.com/en": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "us/library/system.security.cryptography.hmac.aspx": [
       "ul",
       "li",
       "a"

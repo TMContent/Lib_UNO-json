@@ -306,7 +306,11 @@
     "as": [
       "p"
     ],
-    "under-used": [
+    "under": [
+      "ul",
+      "li"
+    ],
+    "used": [
       "ul",
       "li"
     ],
@@ -385,8 +389,12 @@
       "p",
       "strong"
     ],
-    "metricssystem-wide": [
+    "metricssystem": [
       "ul"
+    ],
+    "wide": [
+      "ul",
+      "li"
     ],
     "visibility": [
       "ul",
@@ -482,7 +490,7 @@
       "li",
       "p"
     ],
-    "system-wide": [
+    "system": [
       "li"
     ],
     "##how": [
@@ -903,12 +911,20 @@
       "ol",
       "ol",
       "ol",
+      "ol",
+      "ol",
       "li",
       "li",
       "p",
       "p",
       "li",
+      "li",
       "p",
+      "p",
+      "code",
+      "li",
+      "p",
+      "code",
       "li",
       "li",
       "p",
@@ -1177,6 +1193,7 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "p",
@@ -1184,8 +1201,11 @@
       "strong",
       "li",
       "li",
+      "li",
       "p",
-      "p"
+      "p",
+      "p",
+      "code"
     ],
     "configuration": [
       "ol",
@@ -1220,7 +1240,10 @@
     ],
     "latency": [
       "ol",
+      "ol",
       "li",
+      "li",
+      "p",
       "p"
     ],
     "example": [
@@ -1265,7 +1288,7 @@
       "li",
       "p"
     ],
-    "latency-defining": [
+    "defining": [
       "ol",
       "li",
       "p"
@@ -1309,7 +1332,7 @@
       "li",
       "p"
     ],
-    "put-metric-data": [
+    "put": [
       "ol",
       "li",
       "p",
@@ -1341,11 +1364,15 @@
     "statistics": [
       "ol",
       "ol",
+      "ol",
+      "li",
       "li",
       "li",
       "p",
       "p",
-      "strong"
+      "p",
+      "strong",
+      "code"
     ],
     "retrieve": [
       "ol",
@@ -1370,10 +1397,13 @@
       "p",
       "p"
     ],
-    "get-metric-statistics": [
+    "get": [
       "ol",
       "li",
+      "li",
       "p",
+      "p",
+      "strong",
       "code"
     ],
     "add": [
@@ -1389,12 +1419,23 @@
       "li",
       "p"
     ],
-    "start-time": [
+    "start": [
       "ol",
       "li",
       "p"
     ],
-    "end-time": [
+    "time": [
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "li",
+      "p",
+      "p",
+      "p"
+    ],
+    "end": [
       "ol",
       "li",
       "p"
@@ -1425,11 +1466,6 @@
       "p"
     ],
     "earliest": [
-      "ol",
-      "li",
-      "p"
-    ],
-    "time": [
       "ol",
       "li",
       "p"
@@ -1517,11 +1553,6 @@
       "p"
     ],
     "define": [
-      "li",
-      "p",
-      "strong"
-    ],
-    "get": [
       "li",
       "p",
       "strong"

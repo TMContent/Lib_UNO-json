@@ -317,6 +317,8 @@
       "ol",
       "ol",
       "ol",
+      "ol",
+      "ol",
       "li",
       "li",
       "li",
@@ -350,6 +352,10 @@
       "li",
       "li",
       "li",
+      "li",
+      "li",
+      "p",
+      "p",
       "p",
       "p",
       "p",
@@ -616,6 +622,9 @@
     "client": [
       "ul",
       "li",
+      "ol",
+      "li",
+      "p",
       "p"
     ],
     "may": [
@@ -712,6 +721,8 @@
     ],
     "information": [
       "ul",
+      "ul",
+      "li",
       "li",
       "ol",
       "ol",
@@ -800,7 +811,21 @@
       "strong",
       "p"
     ],
-    "non-trusted": [
+    "non": [
+      "ul",
+      "li",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
+      "p"
+    ],
+    "trusted": [
+      "ul",
+      "li",
+      "ol",
+      "li",
       "ul",
       "li"
     ],
@@ -882,7 +907,10 @@
     ],
     "server": [
       "ul",
-      "li"
+      "li",
+      "ol",
+      "li",
+      "p"
     ],
     "be": [
       "ul",
@@ -1006,7 +1034,7 @@
       "ul",
       "li"
     ],
-    "information-disclosure": [
+    "disclosure": [
       "ul",
       "li"
     ],
@@ -1488,12 +1516,6 @@
       "ul",
       "li"
     ],
-    "trusted": [
-      "ol",
-      "li",
-      "ul",
-      "li"
-    ],
     "source": [
       "ol",
       "li",
@@ -1513,6 +1535,8 @@
       "ol",
       "ol",
       "ol",
+      "ol",
+      "li",
       "li",
       "li",
       "li",
@@ -1520,6 +1544,9 @@
       "p",
       "strong",
       "ul",
+      "ul",
+      "li",
+      "pre",
       "li",
       "p"
     ],
@@ -1607,7 +1634,8 @@
       "li",
       "p"
     ],
-    "no-cache\"": [
+    "no": [
+      "ol",
       "ol",
       "ol",
       "li",
@@ -1616,6 +1644,25 @@
       "ul",
       "li",
       "p",
+      "li",
+      "p",
+      "li",
+      "p"
+    ],
+    "cache\"": [
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "li",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "p",
+      "pre",
       "li",
       "p"
     ],
@@ -1679,14 +1726,14 @@
       "li",
       "pre"
     ],
-    "http-equiv=\"pragma\"": [
+    "equiv=\"pragma\"": [
       "ol",
       "li",
       "ul",
       "li",
       "pre"
     ],
-    "content=\"no-cache\"": [
+    "content=\"no": [
       "ol",
       "li",
       "ul",
@@ -1734,7 +1781,14 @@
       "li",
       "p"
     ],
-    "\"cache-control": [
+    "\"cache": [
+      "ol",
+      "li",
+      "ul",
+      "li",
+      "p"
+    ],
+    "control": [
       "ol",
       "li",
       "ul",
@@ -1955,17 +2009,15 @@
       "p",
       "strong"
     ],
-    "client-side": [
+    "side": [
+      "ol",
       "ol",
       "li",
+      "li",
+      "p",
       "p"
     ],
     "scripts": [
-      "ol",
-      "li",
-      "p"
-    ],
-    "no": [
       "ol",
       "li",
       "p"
@@ -1996,11 +2048,6 @@
       "p"
     ],
     "inside": [
-      "ol",
-      "li",
-      "p"
-    ],
-    "server-side": [
       "ol",
       "li",
       "p"
@@ -2174,14 +2221,6 @@
     "like": [
       "ol",
       "li",
-      "p"
-    ],
-    "non-sensitive": [
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "p",
       "p"
     ],
     "each": [

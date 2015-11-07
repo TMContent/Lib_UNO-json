@@ -147,6 +147,9 @@
       "ul",
       "li",
       "p",
+      "li",
+      "p",
+      "em",
       "p",
       "ol",
       "ol",
@@ -154,6 +157,8 @@
       "ol",
       "ol",
       "ol",
+      "ol",
+      "li",
       "li",
       "li",
       "li",
@@ -161,8 +166,12 @@
       "p",
       "strong",
       "ul",
+      "ul",
       "li",
       "p",
+      "li",
+      "p",
+      "em",
       "li",
       "li",
       "li",
@@ -993,7 +1002,45 @@
       "p",
       "em"
     ],
-    "$mysqli-connect_errno,": [
+    "$mysqli": [
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "li",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "li",
+      "p",
+      "p",
+      "p",
+      "em",
+      "em",
+      "em",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "li",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "li",
+      "p",
+      "p",
+      "p",
+      "em",
+      "em",
+      "em"
+    ],
+    "connect_errno,": [
       "ol",
       "li",
       "ul",
@@ -1007,7 +1054,7 @@
       "p",
       "em"
     ],
-    "$mysqli-connect_error,": [
+    "connect_error,": [
       "ol",
       "li",
       "ul",
@@ -1021,7 +1068,7 @@
       "p",
       "em"
     ],
-    "$myssqli-errno,": [
+    "$myssqli": [
       "ol",
       "li",
       "ul",
@@ -1035,7 +1082,21 @@
       "p",
       "em"
     ],
-    "$mysqli-errormysql:": [
+    "errno,": [
+      "ol",
+      "li",
+      "ul",
+      "li",
+      "p",
+      "em",
+      "ol",
+      "li",
+      "ul",
+      "li",
+      "p",
+      "em"
+    ],
+    "errormysql:": [
       "ol",
       "li",
       "ul"
@@ -1258,17 +1319,6 @@
     "mysqlimysqli_connect_errno(),": [
       "li",
       "p"
-    ],
-    "$mysqli-error": [
-      "li",
-      "p",
-      "em",
-      "ol",
-      "li",
-      "ul",
-      "li",
-      "p",
-      "em"
     ],
     "mysqli": [
       "strong",

@@ -677,7 +677,10 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
+      "li",
+      "p",
       "p",
       "li",
       "li",
@@ -1643,7 +1646,16 @@
       "ul",
       "ul",
       "li",
-      "li"
+      "li",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "strong"
     ],
     "uses": [
       "ol",
@@ -1842,8 +1854,17 @@
       "li",
       "strong",
       "ol",
+      "ol",
+      "ol",
       "li",
-      "p"
+      "p",
+      "li",
+      "li",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "strong"
     ],
     "privileged": [
       "ol",
@@ -1865,7 +1886,22 @@
       "ul",
       "li"
     ],
-    "re-authenticate": [
+    "re": [
+      "ol",
+      "li",
+      "ul",
+      "li",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "strong"
+    ],
+    "authenticate": [
       "ol",
       "li",
       "ul",
@@ -2033,7 +2069,12 @@
       "li",
       "p"
     ],
-    "escalation-of-privilege": [
+    "escalation": [
+      "ol",
+      "li",
+      "p"
+    ],
+    "privilege": [
       "ol",
       "li",
       "p"
@@ -2211,7 +2252,7 @@
       "strong",
       "li"
     ],
-    "server-side": [
+    "side": [
       "ol",
       "ol",
       "li",
@@ -2356,17 +2397,6 @@
       "ol",
       "li",
       "ul",
-      "li",
-      "strong"
-    ],
-    "re-authentication": [
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "ul",
-      "ul",
-      "li",
       "li",
       "strong"
     ],

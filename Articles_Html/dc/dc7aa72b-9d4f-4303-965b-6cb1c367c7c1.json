@@ -221,8 +221,12 @@
       "p",
       "p",
       "ol",
+      "ol",
       "li",
       "p",
+      "li",
+      "ul",
+      "li",
       "title"
     ],
     "on": [
@@ -277,7 +281,8 @@
       "title"
     ],
     "accessible": [
-      "p"
+      "p",
+      "title"
     ],
     "by": [
       "p",
@@ -336,10 +341,14 @@
       "p",
       "p",
       "p",
+      "p",
+      "ol",
       "ol",
       "ol",
       "ol",
       "li",
+      "li",
+      "p",
       "p",
       "strong",
       "li",
@@ -347,7 +356,8 @@
       "p",
       "p",
       "strong",
-      "p"
+      "p",
+      "title"
     ],
     "and that": [
       "p"
@@ -390,7 +400,10 @@
     "server": [
       "p",
       "ol",
+      "ol",
       "li",
+      "li",
+      "p",
       "p"
     ],
     "why": [
@@ -446,7 +459,11 @@
       "p"
     ],
     "form": [
-      "p"
+      "p",
+      "ol",
+      "li",
+      "ul",
+      "li"
     ],
     "variables": [
       "p",
@@ -681,6 +698,7 @@
       "ul",
       "li",
       "li",
+      "p",
       "p"
     ],
     "role": [
@@ -715,7 +733,12 @@
       "p",
       "p"
     ],
-    "tamper-proofed": [
+    "tamper": [
+      "p",
+      "p",
+      "p"
+    ],
+    "proofed": [
       "p"
     ],
     "via": [
@@ -798,9 +821,12 @@
     "mechanism": [
       "p"
     ],
-    "client-side": [
+    "side": [
       "p",
       "ol",
+      "ol",
+      "li",
+      "p",
       "li",
       "p"
     ],
@@ -868,11 +894,6 @@
       "p"
     ],
     "sink": [
-      "ol",
-      "li",
-      "p"
-    ],
-    "server-side": [
       "ol",
       "li",
       "p"
@@ -1053,6 +1074,7 @@
     "supplied": [
       "ol",
       "li",
+      "p",
       "p"
     ],
     "data": [
@@ -1129,12 +1151,6 @@
       "ul",
       "li",
       "li",
-      "li"
-    ],
-    "form-based": [
-      "ol",
-      "li",
-      "ul",
       "li"
     ],
     "adding": [
@@ -1292,9 +1308,6 @@
     "accepts": [
       "p"
     ],
-    "user-supplied": [
-      "p"
-    ],
     "unfortunately": [
       "p"
     ],
@@ -1308,10 +1321,6 @@
       "p"
     ],
     "which allows": [
-      "p"
-    ],
-    "tamper": [
-      "p",
       "p"
     ],
     "influences": [
@@ -1413,9 +1422,6 @@
       "p"
     ],
     "sink]": [
-      "title"
-    ],
-    "client-accessible": [
       "title"
     ]
   },

@@ -1441,8 +1441,12 @@
       "p",
       "div",
       "pre",
+      "p",
+      "ul",
       "ul",
       "li",
+      "li",
+      "b",
       "p",
       "p",
       "li",
@@ -1459,6 +1463,8 @@
       "li",
       "p",
       "ul",
+      "ul",
+      "li",
       "li",
       "title"
     ],
@@ -5058,6 +5064,7 @@
       "li",
       "ol",
       "li",
+      "p",
       "ul",
       "li",
       "p",
@@ -6092,6 +6099,26 @@
     ],
     "level": [
       "p",
+      "p",
+      "p",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "b",
+      "li",
+      "b",
+      "li",
+      "li",
+      "li",
+      "b",
+      "blockquote",
+      "blockquote",
+      "li",
+      "ul",
+      "li",
       "ul",
       "li",
       "ul",
@@ -6536,6 +6563,7 @@
       "li",
       "li",
       "p",
+      "li",
       "li",
       "li",
       "li",
@@ -7301,30 +7329,41 @@
       "ol",
       "li"
     ],
-    "right-click": [
+    "right": [
       "ol",
       "li",
       "ol",
       "li",
-      "ol",
-      "li"
-    ],
-    "site": [
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "li",
+      "h3",
       "ol",
       "li",
+      "p",
+      "p",
       "ol",
+      "ol",
+      "li",
+      "li",
+      "ul",
+      "li",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "li",
       "li"
     ],
     "click": [
       "ol",
       "ol",
       "ol",
-      "li",
-      "li",
-      "li",
       "ol",
-      "ol",
-      "ol",
+      "li",
       "li",
       "li",
       "li",
@@ -7332,8 +7371,6 @@
       "ol",
       "ol",
       "ol",
-      "ol",
-      "li",
       "li",
       "li",
       "li",
@@ -7349,6 +7386,26 @@
       "li",
       "li",
       "li",
+      "li",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li"
+    ],
+    "site": [
+      "ol",
+      "li",
+      "ol",
       "li"
     ],
     "properties": [
@@ -8160,6 +8217,29 @@
       "li",
       "div",
       "pre",
+      "p",
+      "p",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "li",
+      "b",
+      "li",
+      "li",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li",
       "ul",
       "ul",
       "li",
@@ -8528,29 +8608,6 @@
       "li",
       "b"
     ],
-    "right": [
-      "ul",
-      "ul",
-      "ul",
-      "li",
-      "li",
-      "li",
-      "h3",
-      "ol",
-      "li",
-      "p",
-      "p",
-      "ol",
-      "li",
-      "ul",
-      "li",
-      "ul",
-      "ul",
-      "ul",
-      "li",
-      "li",
-      "li"
-    ],
     "establishes": [
       "ul",
       "li"
@@ -8678,7 +8735,7 @@
       "li",
       "b"
     ],
-    "double-click": [
+    "double": [
       "ol",
       "li"
     ],
@@ -8829,7 +8886,25 @@
       "div",
       "pre"
     ],
-    "\"-//w3c//dtd": [
+    "\"": [
+      "div",
+      "div",
+      "pre",
+      "pre",
+      "ul",
+      "li",
+      "p",
+      "b",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "p",
+      "p",
+      "b",
+      "b"
+    ],
+    "//w3c//dtd": [
       "div",
       "pre"
     ],
@@ -9197,22 +9272,6 @@
       "div",
       "pre"
     ],
-    "\"": [
-      "div",
-      "pre",
-      "ul",
-      "li",
-      "p",
-      "b",
-      "ul",
-      "ul",
-      "li",
-      "li",
-      "p",
-      "p",
-      "b",
-      "b"
-    ],
     "+": [
       "div",
       "pre"
@@ -9495,9 +9554,6 @@
       "li",
       "li"
     ],
-    "impersonate-level": [
-      "p"
-    ],
     "avoid": [
       "p",
       "p",
@@ -9606,14 +9662,6 @@
     "disadvantage": [
       "p"
     ],
-    "impersonation-level": [
-      "p",
-      "ul",
-      "li",
-      "b",
-      "ul",
-      "li"
-    ],
     "pane": [
       "ol",
       "li"
@@ -9642,7 +9690,7 @@
       "ul",
       "li"
     ],
-    "identify-level": [
+    "identify": [
       "ul",
       "ul",
       "ul",
@@ -9768,7 +9816,7 @@
       "li",
       "blockquote"
     ],
-    "computerdelegate-level": [
+    "computerdelegate": [
       "ul"
     ],
     "machine": [
@@ -9905,10 +9953,15 @@
       "ul",
       "li"
     ],
-    "delegate-level": [
+    "delegate": [
       "li",
       "b",
-      "li"
+      "li",
+      "div",
+      "table",
+      "tbody",
+      "tr",
+      "th"
     ],
     "same": [
       "p",
@@ -9983,7 +10036,19 @@
       "ul",
       "li"
     ],
-    "-pef": [
+    "": [
+      "ul",
+      "li",
+      "p",
+      "b",
+      "ul",
+      "li",
+      "p",
+      "b",
+      "p",
+      "b"
+    ],
+    "pef": [
       "ul",
       "li",
       "p",
@@ -10020,7 +10085,7 @@
       "li",
       "p"
     ],
-    "-pdf": [
+    "pdf": [
       "ul",
       "li",
       "p",
@@ -10051,7 +10116,7 @@
     "alternative": [
       "p"
     ],
-    "-prov": [
+    "prov": [
       "p",
       "b"
     ],
@@ -10228,7 +10293,7 @@
       "li",
       "b"
     ],
-    "non-kerberos": [
+    "non": [
       "li"
     ],
     "they": [
@@ -10295,7 +10360,7 @@
     "consider": [
       "p"
     ],
-    "back-end": [
+    "end": [
       "p",
       "p",
       "ul",
@@ -10312,6 +10377,10 @@
       "ul",
       "ul",
       "ul",
+      "ul",
+      "ul",
+      "li",
+      "li",
       "li",
       "li",
       "li",
@@ -10543,12 +10612,6 @@
       "li",
       "b"
     ],
-    "end": [
-      "ul",
-      "ul",
-      "li",
-      "li"
-    ],
     "explicitly": [
       "ul",
       "li"
@@ -10564,12 +10627,20 @@
     "middle": [
       "ul",
       "ul",
+      "ul",
+      "ul",
+      "li",
+      "li",
       "li",
       "li"
     ],
     "tier": [
       "ul",
       "ul",
+      "ul",
+      "ul",
+      "li",
+      "li",
       "li",
       "li"
     ],
@@ -10629,12 +10700,6 @@
       "ul",
       "li",
       "b"
-    ],
-    "middle-tier": [
-      "ul",
-      "ul",
-      "li",
-      "li"
     ],
     "broad": [
       "ul",
@@ -10786,13 +10851,6 @@
     "capability": [
       "p",
       "b"
-    ],
-    "delegate": [
-      "div",
-      "table",
-      "tbody",
-      "tr",
-      "th"
     ],
     "notes": [
       "div",

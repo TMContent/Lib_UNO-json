@@ -660,7 +660,10 @@
     "lead": [
       "p"
     ],
-    "cross-site": [
+    "cross": [
+      "p"
+    ],
+    "site": [
       "p"
     ],
     "scripting": [
@@ -1180,9 +1183,12 @@
     "server": [
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "p",
+      "p",
+      "li",
       "p"
     ],
     "at": [
@@ -1435,9 +1441,12 @@
     ],
     "form": [
       "ol",
+      "ol",
+      "li",
       "li",
       "ul",
       "li",
+      "p",
       "ol",
       "li",
       "ul",
@@ -1851,6 +1860,9 @@
       "li",
       "p",
       "p",
+      "p",
+      "ol",
+      "li",
       "p"
     ],
     "uses": [
@@ -1927,7 +1939,7 @@
       "li",
       "p"
     ],
-    "form-field": [
+    "field": [
       "ol",
       "li",
       "p"
@@ -2207,7 +2219,12 @@
       "li",
       "p"
     ],
-    "one-off": [
+    "one": [
+      "ol",
+      "li",
+      "p"
+    ],
+    "off": [
       "ol",
       "li",
       "p"
@@ -2259,8 +2276,11 @@
       "strong",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
+      "li",
+      "p",
       "p",
       "p",
       "p",
@@ -2398,10 +2418,22 @@
       "b",
       "a"
     ],
-    "server--do": [
+    "": [
+      "ol",
+      "li",
+      "p",
       "ol",
       "li",
       "p"
+    ],
+    "do": [
+      "ol",
+      "li",
+      "p",
+      "ul",
+      "li",
+      "b",
+      "a"
     ],
     "rely": [
       "ol",
@@ -2416,7 +2448,20 @@
       "b",
       "a"
     ],
-    "client-side": [
+    "client": [
+      "ol",
+      "li",
+      "p",
+      "ul",
+      "li",
+      "b",
+      "a",
+      "ul",
+      "li",
+      "b",
+      "a"
+    ],
+    "side": [
       "ol",
       "li",
       "p",
@@ -2630,11 +2675,6 @@
       "li",
       "p"
     ],
-    "validators--this": [
-      "ol",
-      "li",
-      "p"
-    ],
     "helps": [
       "ol",
       "li",
@@ -2714,12 +2754,6 @@
     ],
     "guidelines": [
       "h1"
-    ],
-    "do": [
-      "ul",
-      "li",
-      "b",
-      "a"
     ],
     "checklists": [
       "h1"

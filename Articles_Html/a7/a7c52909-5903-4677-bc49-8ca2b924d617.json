@@ -36,6 +36,10 @@
     "11": [
       "p"
     ],
+    "32": [
+      "div",
+      "pre"
+    ],
     "40": [
       "pre"
     ],
@@ -1582,12 +1586,25 @@
       "ul",
       "li",
       "pre",
+      "ul",
+      "li",
+      "h2",
+      "p",
+      "p",
       "p"
     ],
     "privileged": [
       "p",
       "ul",
       "li",
+      "p",
+      "ul",
+      "li",
+      "ul",
+      "li",
+      "h2",
+      "p",
+      "p",
       "p"
     ],
     "account": [
@@ -1816,14 +1833,20 @@
     ],
     "type": [
       "p",
+      "p",
+      "ul",
+      "li",
       "ul",
       "li",
       "ul",
       "ul",
       "ul",
+      "ul",
       "li",
       "li",
       "li",
+      "li",
+      "b",
       "p",
       "pre",
       "p",
@@ -1832,19 +1855,17 @@
     ],
     "safe": [
       "p",
-      "ul",
-      "li",
-      "ul",
-      "li",
-      "pre"
-    ],
-    "type-safe": [
       "p",
       "ul",
       "li",
       "ul",
       "li",
-      "b"
+      "ul",
+      "li",
+      "b",
+      "ul",
+      "li",
+      "pre"
     ],
     "also": [
       "p",
@@ -2149,7 +2170,7 @@
       "p",
       "p"
     ],
-    "over-privileged": [
+    "over": [
       "p",
       "ul",
       "li"
@@ -2368,17 +2389,29 @@
     "form": [
       "p"
     ],
-    "nnn-nn-nnnn": [
+    "nnn": [
+      "p",
+      "i"
+    ],
+    "nn": [
+      "p",
+      "i"
+    ],
+    "nnnn": [
       "p",
       "i"
     ],
     "'": [
       "div",
       "pre",
+      "div",
+      "pre",
       "p",
       "b",
       "p",
-      "b"
+      "b",
+      "div",
+      "pre"
     ],
     "drop": [
       "div",
@@ -2400,11 +2433,27 @@
       "div",
       "pre"
     ],
-    "--": [
+    "": [
+      "div",
+      "div",
       "div",
       "pre",
+      "pre",
+      "pre",
+      "div",
+      "div",
+      "pre",
+      "pre",
       "p",
-      "b"
+      "p",
+      "p",
+      "b",
+      "b",
+      "b",
+      "div",
+      "div",
+      "pre",
+      "pre"
     ],
     "executes": [
       "p",
@@ -2693,7 +2742,11 @@
       "div",
       "pre"
     ],
-    "'172-32-9999'": [
+    "'172": [
+      "div",
+      "pre"
+    ],
+    "9999'": [
       "div",
       "pre"
     ],
@@ -2709,12 +2762,6 @@
       "p"
     ],
     "''": [
-      "div",
-      "pre",
-      "div",
-      "pre"
-    ],
-    "--'": [
       "div",
       "pre",
       "div",
@@ -2902,6 +2949,8 @@
       "blockquote",
       "ul",
       "li",
+      "p",
+      "p",
       "p",
       "p",
       "p",
@@ -3480,14 +3529,20 @@
       "h2",
       "p"
     ],
-    "server-side": [
+    "side": [
+      "p",
+      "p",
       "p",
       "p"
     ],
     "rely": [
       "p"
     ],
-    "client-side": [
+    "client": [
+      "p",
+      "p",
+      "ul",
+      "li",
       "p",
       "p"
     ],
@@ -3624,7 +3679,17 @@
       "div",
       "pre"
     ],
-    "validationexpression=\"^\\d{3}-\\d{2}-\\d{4}$\"": [
+    "validationexpression=\"^\\d{3}": [
+      "div",
+      "pre"
+    ],
+    "\\d{2}": [
+      "div",
+      "pre",
+      "div",
+      "pre"
+    ],
+    "\\d{4}$\"": [
       "div",
       "pre"
     ],
@@ -3666,7 +3731,11 @@
       "div",
       "pre"
     ],
-    "\"^\\d{3}-\\d{2}-\\d{4}$\"){": [
+    "\"^\\d{3}": [
+      "div",
+      "pre"
+    ],
+    "\\d{4}$\"){": [
       "div",
       "pre"
     ],
@@ -3698,7 +3767,10 @@
     "addition": [
       "p"
     ],
-    "page-level": [
+    "page": [
+      "p"
+    ],
+    "level": [
       "p"
     ],
     "untrusted": [
@@ -3791,12 +3863,6 @@
       "li",
       "p"
     ],
-    "client": [
-      "ul",
-      "li",
-      "p",
-      "p"
-    ],
     "routine": [
       "p"
     ],
@@ -3868,7 +3934,13 @@
     "!regexismatch(useridtxt.text,": [
       "pre"
     ],
-    "@\"^a-za-z'./s]{1,40}$\"))": [
+    "@\"^a": [
+      "pre"
+    ],
+    "za": [
+      "pre"
+    ],
+    "z'./s]{1,40}$\"))": [
       "pre"
     ],
     "throw": [
@@ -3911,7 +3983,13 @@
     "!regexismatch(passwordtxt.text,": [
       "pre"
     ],
-    "@\"^?=.*\\d)(?=.*[a-z])(?=.*[a-z]).{8,10}$\"": [
+    "@\"^?=.*\\d)(?=.*[a": [
+      "pre"
+    ],
+    "z])(?=.*[a": [
+      "pre"
+    ],
+    "z]).{8,10}$\"": [
       "pre"
     ],
     ")": [
@@ -4440,13 +4518,6 @@
       "li",
       "h2",
       "p",
-      "p",
-      "p"
-    ],
-    "least-privileged": [
-      "ul",
-      "li",
-      "h2",
       "p",
       "p"
     ],

@@ -22,6 +22,7 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "p",
@@ -30,7 +31,10 @@
       "li",
       "p",
       "li",
+      "li",
       "p",
+      "p",
+      "strong",
       "title"
     ],
     "c++": [
@@ -449,7 +453,8 @@
       "p",
       "strong"
     ],
-    "-": [
+    "": [
+      "p",
       "p"
     ],
     "file": [
@@ -597,6 +602,7 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "p",
       "strong",
@@ -608,9 +614,12 @@
       "li",
       "li",
       "li",
+      "li",
       "p",
       "p",
-      "p"
+      "p",
+      "p",
+      "strong"
     ],
     "unicode": [
       "p",
@@ -673,7 +682,15 @@
       "p",
       "strong"
     ],
-    "unix-type": [
+    "unix": [
+      "ol",
+      "ol",
+      "li",
+      "p",
+      "li",
+      "p"
+    ],
+    "type": [
       "ol",
       "li",
       "p"
@@ -993,14 +1010,22 @@
       "ol",
       "ol",
       "ol",
+      "ol",
+      "ol",
       "li",
       "p",
       "li",
       "li",
       "li",
+      "li",
+      "li",
       "p",
       "p",
-      "p"
+      "p",
+      "p",
+      "p",
+      "strong",
+      "strong"
     ],
     "assurance": [
       "ol",
@@ -1073,7 +1098,17 @@
       "li",
       "p"
     ],
-    "time-of-check-to-time-of-use": [
+    "time": [
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
+      "p",
+      "strong",
+      "strong"
+    ],
+    "check": [
       "ol",
       "li",
       "p",
@@ -1089,11 +1124,6 @@
       "strong"
     ],
     "most": [
-      "ol",
-      "li",
-      "p"
-    ],
-    "unix": [
       "ol",
       "li",
       "p"
@@ -1179,7 +1209,12 @@
       "ul",
       "li"
     ],
-    "https//www.securecoding.cert.org/confluence/display/cplusplus/fio02-cpp.+canonicalize+path+names+originating+from+untrusted+sources": [
+    "https//www.securecoding.cert.org/confluence/display/cplusplus/fio02": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "cpp.+canonicalize+path+names+originating+from+untrusted+sources": [
       "ul",
       "li",
       "a"

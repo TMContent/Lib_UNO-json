@@ -293,6 +293,7 @@
       "ol",
       "li",
       "p",
+      "p",
       "div",
       "pre",
       "p",
@@ -349,6 +350,7 @@
       "ul",
       "li",
       "li",
+      "p",
       "p",
       "title"
     ],
@@ -1830,6 +1832,9 @@
       "p",
       "b",
       "p",
+      "p",
+      "b",
+      "p",
       "ol",
       "ol",
       "li",
@@ -2241,9 +2246,11 @@
       "p",
       "ul",
       "ul",
+      "ul",
       "li",
       "li",
-      "b"
+      "b",
+      "li"
     ],
     "store": [
       "p",
@@ -3050,9 +3057,11 @@
       "p",
       "p",
       "ul",
+      "ul",
       "li",
       "li",
-      "b"
+      "b",
+      "li"
     ],
     "uses": [
       "p",
@@ -3122,8 +3131,11 @@
       "p",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
+      "li",
+      "blockquote",
       "blockquote",
       "ol",
       "li",
@@ -4478,7 +4490,56 @@
       "p",
       "b"
     ],
-    "-s": [
+    "": [
+      "p",
+      "p",
+      "p",
+      "b",
+      "b",
+      "b",
+      "p",
+      "b",
+      "p",
+      "b",
+      "p",
+      "div",
+      "div",
+      "div",
+      "div",
+      "div",
+      "div",
+      "div",
+      "div",
+      "div",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "div",
+      "div",
+      "div",
+      "div",
+      "div",
+      "div",
+      "div",
+      "div",
+      "div",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre"
+    ],
+    "s": [
       "p",
       "b",
       "p",
@@ -4490,16 +4551,11 @@
       "p",
       "b"
     ],
-    "-e": [
+    "e": [
       "p",
       "b",
       "p",
       "b"
-    ],
-    "-a": [
-      "p",
-      "b",
-      "p"
     ],
     "m": [
       "p",
@@ -4693,20 +4749,6 @@
     ],
     "analyzer": [
       "p"
-    ],
-    "--": [
-      "div",
-      "div",
-      "div",
-      "pre",
-      "pre",
-      "pre",
-      "div",
-      "div",
-      "div",
-      "pre",
-      "pre",
-      "pre"
     ],
     "network": [
       "div",
@@ -5197,10 +5239,18 @@
       "li",
       "blockquote"
     ],
-    "non-default": [
+    "non": [
       "ol",
       "li",
-      "blockquote"
+      "blockquote",
+      "ol",
+      "li",
+      "ul",
+      "li",
+      "ul",
+      "li",
+      "p",
+      "p"
     ],
     "while": [
       "ol",
@@ -5546,7 +5596,7 @@
       "li",
       "p"
     ],
-    "non-alphanumeric": [
+    "alphanumeric": [
       "ol",
       "li",
       "ul",
@@ -5655,7 +5705,7 @@
     "authorize": [
       "h3"
     ],
-    "t-sql": [
+    "t": [
       "p"
     ],
     "'domain\\webservername$'": [
@@ -5743,7 +5793,9 @@
       "ul",
       "li",
       "ul",
-      "li"
+      "li",
+      "p",
+      "p"
     ],
     "separated": [
       "ul",
@@ -6138,7 +6190,7 @@
       "ul",
       "li"
     ],
-    "cross-site": [
+    "cross": [
       "ul",
       "li"
     ],
@@ -6196,7 +6248,7 @@
       "li",
       "b"
     ],
-    "user-specific": [
+    "specific": [
       "ul",
       "li"
     ],
@@ -6204,7 +6256,7 @@
       "ul",
       "li"
     ],
-    "non-sensitive": [
+    "sensitive": [
       "ul",
       "li"
     ],
@@ -6325,7 +6377,17 @@
       "div",
       "pre"
     ],
-    "\"^?=.*\\d)(?=.*[a-z])(?=.*[a-z]).{8,10}$\"": [
+    "\"^?=.*\\d)(?=.*[a": [
+      "div",
+      "pre"
+    ],
+    "z])(?=.*[a": [
+      "div",
+      "pre",
+      "div",
+      "pre"
+    ],
+    "z]).{8,10}$\"": [
       "div",
       "pre"
     ],
@@ -6381,10 +6443,16 @@
       "p",
       "p"
     ],
-    ".*[a-z])": [
+    ".*[a": [
       "p"
     ],
-    "*a-z]": [
+    "z])": [
+      "p"
+    ],
+    "*a": [
+      "p"
+    ],
+    "z]": [
       "p"
     ],
     "{810}": [
@@ -6446,11 +6514,9 @@
     "both": [
       "p"
     ],
-    "client-side": [
+    "side": [
       "p",
-      "p"
-    ],
-    "server-side": [
+      "p",
       "p"
     ],
     "rely": [
@@ -6459,7 +6525,11 @@
     "checks": [
       "p"
     ],
-    "^?=.*\\d)(?=.*[a-z])(?=.*[a-z]).{8,10}$": [
+    "^?=.*\\d)(?=.*[a": [
+      "div",
+      "pre"
+    ],
+    "z]).{8,10}$": [
       "div",
       "pre"
     ],

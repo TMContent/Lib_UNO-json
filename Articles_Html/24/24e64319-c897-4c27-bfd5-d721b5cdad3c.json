@@ -1176,19 +1176,58 @@
       "ul",
       "li"
     ],
-    "low-level": [
+    "low": [
       "ol",
       "li",
       "ul",
       "li",
       "ol",
       "ol",
+      "ol",
+      "ol",
       "li",
       "li",
+      "li",
+      "li",
+      "p",
       "ul",
       "ul",
+      "ul",
       "li",
-      "li"
+      "li",
+      "li",
+      "strong"
+    ],
+    "level": [
+      "ol",
+      "li",
+      "ul",
+      "li",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "p",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "li",
+      "strong",
+      "li",
+      "li",
+      "strong"
     ],
     "network": [
       "ol",
@@ -1577,16 +1616,6 @@
       "li",
       "p"
     ],
-    "low": [
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "p",
-      "ul",
-      "li",
-      "strong"
-    ],
     "or": [
       "ol",
       "li",
@@ -1595,16 +1624,6 @@
     "high": [
       "ol",
       "ol",
-      "li",
-      "li",
-      "p",
-      "ul",
-      "li",
-      "strong"
-    ],
-    "level": [
-      "ol",
-      "ol",
       "ol",
       "li",
       "li",
@@ -1613,7 +1632,6 @@
       "ul",
       "ul",
       "li",
-      "strong",
       "li",
       "strong"
     ],
@@ -1684,12 +1702,6 @@
       "li"
     ],
     "etc": [
-      "ol",
-      "li",
-      "ul",
-      "li"
-    ],
-    "high-level": [
       "ol",
       "li",
       "ul",
@@ -2009,7 +2021,12 @@
       "pre",
       "pre"
     ],
-    "*env)->getstringutfchars(env,": [
+    "*env)": [
+      "pre",
+      "p",
+      "pre"
+    ],
+    ">getstringutfchars(env,": [
       "pre",
       "p",
       "pre"
@@ -2034,7 +2051,10 @@
       "p",
       "pre"
     ],
-    "int)(*env)->getstringlength(env,": [
+    "int)(*env)": [
+      "pre"
+    ],
+    ">getstringlength(env,": [
       "pre"
     ],
     "jguid;": [

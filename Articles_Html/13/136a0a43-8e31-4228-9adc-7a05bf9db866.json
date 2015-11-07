@@ -1354,12 +1354,16 @@
       "p",
       "p",
       "p",
+      "p",
+      "ul",
       "ul",
       "ul",
       "li",
       "div",
       "li",
       "div",
+      "li",
+      "div",
       "ul",
       "ul",
       "ul",
@@ -1384,8 +1388,11 @@
       "p",
       "p",
       "p",
+      "p",
       "ul",
       "ul",
+      "ul",
+      "li",
       "li",
       "li",
       "h1",
@@ -1444,10 +1451,12 @@
       "p",
       "p",
       "p",
+      "p",
       "h2",
       "p",
       "blockquote",
       "blockquote",
+      "h1",
       "p",
       "ul",
       "ul",
@@ -1670,9 +1679,11 @@
       "li"
     ],
     "managing": [
+      "p",
       "p"
     ],
     "roles": [
+      "p",
       "p",
       "p",
       "ul",
@@ -1891,14 +1902,22 @@
       "ol",
       "li"
     ],
-    "role-based": [
+    "based": [
+      "p",
       "p",
       "ul",
       "li",
       "div",
+      "ul",
+      "li",
+      "ul",
+      "li",
       "p",
       "ul",
       "li",
+      "p",
+      "p",
+      "p",
       "h1"
     ],
     "authorization": [
@@ -1984,6 +2003,9 @@
       "p",
       "p",
       "p",
+      "ul",
+      "li",
+      "p",
       "p",
       "li",
       "li",
@@ -1991,6 +2013,7 @@
       "ol",
       "li",
       "li",
+      "h2",
       "p",
       "p",
       "p",
@@ -2007,6 +2030,8 @@
       "ol",
       "ol",
       "ol",
+      "ol",
+      "li",
       "li",
       "li",
       "li",
@@ -2049,11 +2074,17 @@
       "ol",
       "ol",
       "ol",
+      "ol",
+      "li",
       "li",
       "li",
       "li",
       "div",
       "pre",
+      "p",
+      "b",
+      "p",
+      "p",
       "p",
       "p",
       "p",
@@ -2536,7 +2567,10 @@
       "p",
       "p",
       "ol",
+      "ol",
       "li",
+      "li",
+      "p",
       "b",
       "p",
       "p",
@@ -2748,9 +2782,6 @@
       "li",
       "ol",
       "li"
-    ],
-    "roles-based": [
-      "p"
     ],
     "contents": [
       "h1"
@@ -3263,13 +3294,6 @@
       "li",
       "h2"
     ],
-    "based": [
-      "ul",
-      "li",
-      "ul",
-      "li",
-      "p"
-    ],
     "aspnet includes": [
       "p"
     ],
@@ -3727,16 +3751,24 @@
     ],
     "only": [
       "p",
+      "ul",
+      "li",
       "ol",
       "li",
       "ul",
       "li",
+      "p",
+      "blockquote",
       "blockquote",
       "ul",
       "li",
       "ol",
+      "ol",
+      "li",
       "li",
       "ol",
+      "ol",
+      "li",
       "li",
       "p",
       "ul",
@@ -3883,7 +3915,7 @@
       "ul",
       "li"
     ],
-    "read-only": [
+    "read": [
       "ul",
       "li",
       "p",
@@ -4075,6 +4107,7 @@
     "xml": [
       "ul",
       "li",
+      "p",
       "p",
       "p"
     ],
@@ -4843,7 +4876,39 @@
       "ol",
       "li"
     ],
-    "aspnet_regsqlexe-e-ssqlinstance-a": [
+    "aspnet_regsqlexe": [
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
+      "b",
+      "blockquote",
+      "b"
+    ],
+    "e": [
+      "ol",
+      "li",
+      "p",
+      "b",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "li",
+      "div",
+      "div",
+      "div",
+      "pre",
+      "pre",
+      "pre",
+      "ol",
+      "li",
+      "div",
+      "pre"
+    ],
+    "ssqlinstance": [
       "ol",
       "li",
       "p"
@@ -4998,14 +5063,61 @@
       "li",
       "blockquote"
     ],
-    "aspnet_regsqlexe": [
+    "": [
       "ol",
       "li",
-      "b",
       "blockquote",
-      "b"
+      "b",
+      "div",
+      "div",
+      "div",
+      "div",
+      "div",
+      "div",
+      "div",
+      "div",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "div",
+      "div",
+      "div",
+      "div",
+      "div",
+      "div",
+      "div",
+      "div",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "div",
+      "div",
+      "div",
+      "div",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "div",
+      "div",
+      "div",
+      "div",
+      "pre",
+      "pre",
+      "pre",
+      "pre"
     ],
-    "-?": [
+    "?": [
       "ol",
       "li",
       "blockquote",
@@ -5022,25 +5134,6 @@
     "r": [
       "p",
       "b"
-    ],
-    "e": [
-      "b",
-      "ol",
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "li",
-      "div",
-      "div",
-      "div",
-      "pre",
-      "pre",
-      "pre",
-      "ol",
-      "li",
-      "div",
-      "pre"
     ],
     "s": [
       "b"
@@ -5188,6 +5281,8 @@
       "ol",
       "ol",
       "ol",
+      "ol",
+      "li",
       "li",
       "li",
       "li",
@@ -5240,7 +5335,7 @@
       "li",
       "li"
     ],
-    "right-click": [
+    "right": [
       "ol",
       "li"
     ],
@@ -5483,6 +5578,7 @@
       "p"
     ],
     "adam": [
+      "p",
       "p",
       "p",
       "p"
@@ -5740,9 +5836,6 @@
       "p",
       "p"
     ],
-    "xml-based": [
-      "p"
-    ],
     "contained": [
       "p"
     ],
@@ -5770,9 +5863,6 @@
       "pre",
       "div",
       "pre"
-    ],
-    "adam-based": [
-      "p"
     ],
     "connectionstring=": [
       "div",
@@ -5971,7 +6061,7 @@
       "ul",
       "li"
     ],
-    "snap-in": [
+    "snap": [
       "ul",
       "li",
       "p",
@@ -6217,9 +6307,6 @@
       "div",
       "pre"
     ],
-    "role-managing": [
-      "p"
-    ],
     "inside": [
       "p"
     ],
@@ -6353,24 +6440,6 @@
       "blockquote"
     ],
     "//": [
-      "div",
-      "div",
-      "div",
-      "div",
-      "pre",
-      "pre",
-      "pre",
-      "pre",
-      "div",
-      "div",
-      "div",
-      "div",
-      "pre",
-      "pre",
-      "pre",
-      "pre"
-    ],
-    "-": [
       "div",
       "div",
       "div",
@@ -6924,7 +6993,25 @@
       "div",
       "pre"
     ],
-    "\"-//w3c//dtd": [
+    "\"": [
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "li",
+      "div",
+      "div",
+      "div",
+      "pre",
+      "pre",
+      "pre",
+      "ol",
+      "li",
+      "div",
+      "pre"
+    ],
+    "//w3c//dtd": [
       "ol",
       "li",
       "div",
@@ -7194,16 +7281,6 @@
       "ol",
       "li",
       "div",
-      "pre"
-    ],
-    "\"": [
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "div",
-      "div",
-      "pre",
       "pre"
     ],
     "testrole\"": [
@@ -7859,7 +7936,7 @@
       "div",
       "pre"
     ],
-    "!--": [
+    "!": [
       "div",
       "pre",
       "div",
@@ -7871,7 +7948,7 @@
       "div",
       "pre"
     ],
-    "--<configuration>": [
+    "<configuration>": [
       "div",
       "pre"
     ],
@@ -8033,7 +8110,7 @@
       "div",
       "pre"
     ],
-    "built-in": [
+    "built": [
       "p",
       "b",
       "p",
@@ -8056,7 +8133,7 @@
       "div",
       "pre"
     ],
-    "--</configuration": [
+    "</configuration": [
       "div",
       "pre"
     ],

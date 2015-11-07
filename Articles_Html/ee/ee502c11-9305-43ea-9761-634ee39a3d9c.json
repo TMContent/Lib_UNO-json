@@ -1161,9 +1161,22 @@
     "least": [
       "p",
       "pre",
+      "ul",
+      "li",
+      "h2",
+      "p",
+      "p",
       "p"
     ],
     "privileged": [
+      "p",
+      "p",
+      "ul",
+      "li",
+      "ul",
+      "li",
+      "h2",
+      "p",
       "p",
       "p"
     ],
@@ -1324,6 +1337,9 @@
     "type": [
       "p",
       "p",
+      "ul",
+      "li",
+      "p",
       "pre",
       "p",
       "p",
@@ -1331,14 +1347,12 @@
     ],
     "safe": [
       "p",
+      "p",
+      "ul",
+      "li",
       "ul",
       "li",
       "pre"
-    ],
-    "type-safe": [
-      "p",
-      "ul",
-      "li"
     ],
     "also": [
       "p",
@@ -1516,7 +1530,7 @@
       "p",
       "p"
     ],
-    "over-privileged": [
+    "over": [
       "p",
       "ul",
       "li"
@@ -1835,14 +1849,39 @@
     "start": [
       "p"
     ],
-    "server-side": [
+    "server": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "h3",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "li",
+      "p"
+    ],
+    "side": [
+      "p",
+      "p",
       "p",
       "p"
     ],
     "rely": [
       "p"
     ],
-    "client-side": [
+    "client": [
+      "p",
+      "p",
+      "ul",
+      "li",
       "p",
       "p"
     ],
@@ -1883,23 +1922,6 @@
       "p"
     ],
     "experience": [
-      "p"
-    ],
-    "server": [
-      "p",
-      "p",
-      "p",
-      "p",
-      "p",
-      "p",
-      "p",
-      "h3",
-      "ol",
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "li",
       "p"
     ],
     "controls": [
@@ -2036,7 +2058,16 @@
       "div",
       "pre"
     ],
-    "validationexpression=\"^\\d{3}-\\d{2}-\\d{4}$\"": [
+    "validationexpression=\"^\\d{3}": [
+      "div",
+      "pre"
+    ],
+    "\\d{2}": [
+      "div",
+      "pre",
+      "pre"
+    ],
+    "\\d{4}$\"": [
       "div",
       "pre"
     ],
@@ -2099,7 +2130,10 @@
     "regex.ismatch(request.cookies[\"ssn\"],": [
       "pre"
     ],
-    "\"^\\d{3}-\\d{2}-\\d{4}$\"){": [
+    "\"^\\d{3}": [
+      "pre"
+    ],
+    "\\d{4}$\"){": [
       "pre"
     ],
     "//": [
@@ -2151,7 +2185,10 @@
     "addition": [
       "p"
     ],
-    "page-level": [
+    "page": [
+      "p"
+    ],
+    "level": [
       "p"
     ],
     "two": [
@@ -2251,12 +2288,6 @@
       "li",
       "p"
     ],
-    "client": [
-      "ul",
-      "li",
-      "p",
-      "p"
-    ],
     "routine": [
       "p"
     ],
@@ -2347,7 +2378,13 @@
     "!regexismatch(useridtxt.text,": [
       "pre"
     ],
-    "@\"^a-za-z'./s]{1,40}$\"))": [
+    "@\"^a": [
+      "pre"
+    ],
+    "za": [
+      "pre"
+    ],
+    "z'./s]{1,40}$\"))": [
       "pre"
     ],
     "throw": [
@@ -2411,7 +2448,13 @@
     "!regexismatch(passwordtxt.text,": [
       "pre"
     ],
-    "@\"^?=.*\\d)(?=.*[a-z])(?=.*[a-z]).{8,10}$\"": [
+    "@\"^?=.*\\d)(?=.*[a": [
+      "pre"
+    ],
+    "z])(?=.*[a": [
+      "pre"
+    ],
+    "z]).{8,10}$\"": [
       "pre"
     ],
     ")": [
@@ -3125,13 +3168,6 @@
       "li",
       "h2",
       "p",
-      "p",
-      "p"
-    ],
-    "least-privileged": [
-      "ul",
-      "li",
-      "h2",
       "p",
       "p"
     ],

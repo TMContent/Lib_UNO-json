@@ -486,6 +486,9 @@
       "p"
     ],
     "on": [
+      "p",
+      "ol",
+      "li",
       "p"
     ],
     "prescribed": [
@@ -684,19 +687,31 @@
       "ol",
       "ol",
       "ol",
+      "ol",
+      "ol",
+      "ol",
       "li",
       "p",
       "strong",
       "li",
       "li",
+      "li",
+      "p",
       "p",
       "p",
       "strong",
+      "code",
+      "li",
+      "li",
       "li",
       "li",
       "p",
       "p",
+      "p",
+      "p",
       "strong",
+      "code",
+      "code",
       "li",
       "li",
       "li",
@@ -775,10 +790,14 @@
     "create": [
       "ol",
       "ol",
+      "ol",
       "li",
       "p",
       "li",
-      "p"
+      "li",
+      "p",
+      "p",
+      "code"
     ],
     "iam": [
       "ol",
@@ -892,12 +911,6 @@
       "li",
       "p"
     ],
-    "create-hsm": [
-      "ol",
-      "li",
-      "p",
-      "code"
-    ],
     "command": [
       "ol",
       "li",
@@ -945,13 +958,19 @@
     "step\n\n\nconfigure": [
       "ol"
     ],
-    "list-hsms": [
+    "list": [
       "ol",
       "li",
       "p",
       "code"
     ],
-    "describe-hsm": [
+    "hsms": [
+      "ol",
+      "li",
+      "p",
+      "code"
+    ],
+    "describe": [
       "ol",
       "li",
       "p",
@@ -992,7 +1011,7 @@
       "li",
       "p"
     ],
-    "initialize-hsm": [
+    "initialize": [
       "ol",
       "li",
       "p",
@@ -1017,7 +1036,7 @@
       "p",
       "strong"
     ],
-    "on-premises": [
+    "premises": [
       "ol",
       "li",
       "p"
@@ -1138,7 +1157,12 @@
       "li",
       "p"
     ],
-    "third-party": [
+    "third": [
+      "ol",
+      "li",
+      "p"
+    ],
+    "party": [
       "ol",
       "li",
       "p"

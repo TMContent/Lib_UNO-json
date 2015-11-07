@@ -35,7 +35,8 @@
     "do": [
       "h2"
     ],
-    "url-encode": [
+    "url": [
+      "p",
       "p",
       "p",
       "ol",
@@ -46,6 +47,27 @@
       "li",
       "strong",
       "ul",
+      "li",
+      "a",
+      "ul",
+      "li",
+      "a",
+      "title"
+    ],
+    "encode": [
+      "p",
+      "p",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "li",
+      "strong",
+      "ul",
+      "ul",
+      "li",
+      "a",
       "li",
       "a",
       "title"
@@ -206,6 +228,7 @@
       "p",
       "p",
       "p",
+      "p",
       "ol",
       "ol",
       "ol",
@@ -269,16 +292,19 @@
     "be": [
       "p"
     ],
-    "url-encoded": [
+    "encoded": [
       "p",
       "ul",
+      "ul",
+      "li",
+      "a",
       "li",
       "a"
     ],
     "prevent": [
       "p"
     ],
-    "response-splitting": [
+    "splitting": [
       "p"
     ],
     "vulnerabilities": [
@@ -460,7 +486,11 @@
       "h2",
       "h2"
     ],
-    "server-side": [
+    "server": [
+      "h2",
+      "h2"
+    ],
+    "side": [
       "h2",
       "h2"
     ],
@@ -513,11 +543,6 @@
       "ul",
       "li",
       "a",
-      "ul",
-      "li",
-      "a"
-    ],
-    "encode": [
       "ul",
       "li",
       "a"
@@ -599,7 +624,15 @@
       "li",
       "a"
     ],
-    "role-based": [
+    "role": [
+      "ul",
+      "li",
+      "a",
+      "ul",
+      "li",
+      "a"
+    ],
+    "based": [
       "ul",
       "li",
       "a",
@@ -648,11 +681,6 @@
       "ul",
       "li",
       "a",
-      "li",
-      "a"
-    ],
-    "encoded": [
-      "ul",
       "li",
       "a"
     ],

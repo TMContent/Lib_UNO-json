@@ -49,6 +49,9 @@
       "li",
       "div",
       "p",
+      "p",
+      "ol",
+      "ol",
       "ol",
       "ol",
       "ol",
@@ -65,11 +68,17 @@
       "li",
       "li",
       "li",
+      "li",
+      "li",
+      "p",
+      "p",
       "p",
       "p",
       "p",
       "p",
       "b",
+      "ul",
+      "li",
       "p",
       "p",
       "li",
@@ -601,10 +610,15 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "p",
       "p",
+      "li",
+      "p",
+      "ul",
+      "li",
       "li",
       "p",
       "p"
@@ -666,10 +680,13 @@
       "p",
       "p"
     ],
-    "application-specific": [
+    "specific": [
       "p",
       "ol",
       "ol",
+      "ol",
+      "li",
+      "p",
       "li",
       "li",
       "p",
@@ -842,11 +859,6 @@
       "li",
       "p"
     ],
-    "specific": [
-      "ol",
-      "li",
-      "p"
-    ],
     "either": [
       "ol",
       "li",
@@ -1008,9 +1020,21 @@
       "p",
       "p"
     ],
-    "circuit-level": [
+    "circuit": [
+      "ol",
       "ol",
       "li",
+      "li",
+      "p",
+      "p",
+      "b"
+    ],
+    "level": [
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
       "p",
       "b"
     ],
@@ -1170,16 +1194,6 @@
       "p",
       "ul",
       "li",
-      "li",
-      "p"
-    ],
-    "circuit": [
-      "ol",
-      "li",
-      "p"
-    ],
-    "level": [
-      "ol",
       "li",
       "p"
     ],
@@ -1393,12 +1407,18 @@
       "ul",
       "li"
     ],
-    "http-based": [
+    "http": [
+      "ol",
+      "ol",
       "ol",
       "li",
       "p",
       "ul",
-      "li"
+      "li",
+      "p",
+      "p",
+      "p",
+      "p"
     ],
     "example": [
       "ol",
@@ -1445,14 +1465,6 @@
       "p",
       "ul",
       "li",
-      "p"
-    ],
-    "http": [
-      "ol",
-      "ol",
-      "p",
-      "p",
-      "p",
       "p"
     ],
     "delete": [

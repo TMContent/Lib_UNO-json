@@ -897,7 +897,13 @@
     "pages": [
       "p"
     ],
-    "multi-part": [
+    "multi": [
+      "p"
+    ],
+    "part": [
+      "p",
+      "ol",
+      "li",
       "p"
     ],
     "mail": [
@@ -1038,7 +1044,15 @@
       "li",
       "p"
     ],
-    "non-alphanumeric": [
+    "non": [
+      "p",
+      "ol",
+      "li",
+      "ul",
+      "li",
+      "p"
+    ],
+    "alphanumeric": [
       "p"
     ],
     "characters": [
@@ -1429,7 +1443,14 @@
       "p",
       "p"
     ],
-    "cross-site": [
+    "cross": [
+      "p",
+      "p",
+      "ol",
+      "li",
+      "p"
+    ],
+    "site": [
       "p",
       "p",
       "ol",
@@ -1454,6 +1475,9 @@
       "p",
       "p",
       "ol",
+      "ol",
+      "li",
+      "p",
       "li",
       "ul",
       "li",
@@ -1705,7 +1729,7 @@
       "li",
       "p"
     ],
-    "user-supplied": [
+    "supplied": [
       "ol",
       "li",
       "p"
@@ -1920,11 +1944,6 @@
       "p"
     ],
     "rendered": [
-      "ol",
-      "li",
-      "p"
-    ],
-    "part": [
       "ol",
       "li",
       "p"
@@ -2197,7 +2216,7 @@
       "li",
       "p"
     ],
-    "non-malicious": [
+    "malicious": [
       "ol",
       "li",
       "ul",

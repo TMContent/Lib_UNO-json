@@ -380,7 +380,10 @@
       "ul",
       "li",
       "p",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "attackers": [
       "p",
@@ -1182,7 +1185,20 @@
       "li",
       "p"
     ],
-    "non-alphanumeric": [
+    "non": [
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "p",
+      "li",
+      "li",
+      "ul",
+      "ul",
+      "li",
+      "li"
+    ],
+    "alphanumeric": [
       "ol",
       "li",
       "p"
@@ -1673,17 +1689,19 @@
       "li",
       "b"
     ],
-    "non-letter": [
+    "letter": [
       "ol",
       "li",
       "ul",
       "li"
     ],
-    "non-number": [
+    "number": [
+      "ol",
       "ol",
       "li",
       "ul",
-      "li"
+      "li",
+      "p"
     ],
     "maxinvalidpasswordattempts": [
       "ol",
@@ -2178,10 +2196,6 @@
       "ol",
       "p"
     ],
-    "number": [
-      "ol",
-      "p"
-    ],
     "schemes": [
       "ol",
       "p"
@@ -2206,7 +2220,11 @@
       "ol",
       "p"
     ],
-    "clock-synched": [
+    "clock": [
+      "ol",
+      "p"
+    ],
+    "synched": [
       "ol",
       "p"
     ],
@@ -2218,8 +2236,13 @@
       "ol",
       "p"
     ],
-    "software-only": [
+    "software": [
       "ol",
+      "p"
+    ],
+    "only": [
+      "ol",
+      "p",
       "p"
     ],
     "solutions": [
@@ -2230,7 +2253,11 @@
       "ol",
       "p"
     ],
-    "client-side": [
+    "client": [
+      "ol",
+      "p"
+    ],
+    "side": [
       "ol",
       "p"
     ],
@@ -2268,9 +2295,6 @@
       "p",
       "p",
       "p",
-      "p"
-    ],
-    "only": [
       "p"
     ],
     "suggest": [
@@ -2469,9 +2493,12 @@
       "ul",
       "li"
     ],
-    "step-by-step": [
+    "step": [
+      "ul",
       "ul",
       "li",
+      "li",
+      "a",
       "a"
     ],
     "guide": [
