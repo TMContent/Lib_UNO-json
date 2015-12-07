@@ -1,29 +1,21 @@
 {
   "id": "26a68d55-95e2-4007-bfa6-d1eee30740de",
-  "checksum": "5a5e13d7d8782e97888d42298d599186",
+  "checksum": "a9f6c4a35e7be49104412a50f07c9ca5",
   "words": {
-    "applies": [
-      "h1"
+    "what": [
+      "h2"
     ],
     "to": [
-      "h1",
-      "h1",
-      "h1",
-      "h1"
-    ],
-    "c++": [
-      "ul",
-      "li"
-    ],
-    "what": [
-      "h1"
+      "h2",
+      "h2",
+      "h2"
     ],
     "check": [
-      "h1",
-      "h1"
+      "h2",
+      "h2"
     ],
     "for": [
-      "h1",
+      "h2",
       "p",
       "ul",
       "li"
@@ -47,9 +39,6 @@
       "p",
       "ul",
       "li",
-      "ul",
-      "li",
-      "a",
       "title"
     ],
     "functions": [
@@ -60,25 +49,12 @@
       "p",
       "ul",
       "li",
-      "ul",
-      "li",
-      "a",
       "title"
     ],
     "don't": [
       "p",
       "p",
       "p",
-      "ul",
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a",
-      "li",
-      "a",
-      "a",
       "title"
     ],
     "throw": [
@@ -86,16 +62,6 @@
       "p",
       "p",
       "p",
-      "ul",
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a",
-      "li",
-      "a",
-      "a",
       "title"
     ],
     "exceptions": [
@@ -106,20 +72,10 @@
       "p",
       "ul",
       "li",
-      "ul",
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a",
-      "li",
-      "a",
-      "a",
       "title"
     ],
     "why": [
-      "h1"
+      "h2"
     ],
     "may": [
       "p",
@@ -207,14 +163,14 @@
       "p"
     ],
     "how": [
-      "h1",
-      "h1"
+      "h2",
+      "h2"
     ],
     "search": [
       "p"
     ],
     "fix": [
-      "h1"
+      "h2"
     ],
     "identify": [
       "p"
@@ -238,10 +194,10 @@
       "p"
     ],
     "additional": [
-      "h1"
+      "h2"
     ],
     "resources": [
-      "h1"
+      "h2"
     ],
     "more": [
       "ul",
@@ -265,16 +221,6 @@
     ],
     "from": [
       "ul",
-      "li",
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a"
-    ],
-    "please": [
-      "ul",
       "li"
     ],
     "see": [
@@ -290,21 +236,6 @@
       "ul",
       "li",
       "a"
-    ],
-    "related": [
-      "h1"
-    ],
-    "items": [
-      "h1"
-    ],
-    "destructors": [
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a",
-      "a"
     ]
   },
   "tags": {},
@@ -312,22 +243,6 @@
     {
       "href": "https://www.securecoding.cert.org/confluence/display/cplusplus/VOID+ERR38-CPP.+Deallocation+functions+must+not+throw+exceptions",
       "text": "https://www.securecoding.cert.org/confluence/display/cplusplus/VOID+ERR38-CPP.+Deallocation+functions+must+not+throw+exceptions"
-    },
-    {
-      "href": "/article/441b4138-1866-442f-8abb-6d05236d6fcb",
-      "text": "Don't Throw Exceptions from Deallocation Functions"
-    },
-    {
-      "href": "/article/fd06b089-88ea-43df-bc41-f111a1848116",
-      "text": "Don't Throw Exceptions from Destructors"
-    },
-    {
-      "href": "/article/2e732e9d-5677-40cc-8e33-c40ceacc056b",
-      "text": "\r\n            Destructors don't throw exceptions\r\n          "
-    },
-    {
-      "href": "/article/2e732e9d-5677-40cc-8e33-c40ceacc056b",
-      "text": "Destructors don't throw exceptions"
     }
   ]
 }

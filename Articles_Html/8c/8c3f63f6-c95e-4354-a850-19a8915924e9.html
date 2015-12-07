@@ -1,0 +1,10 @@
+<h2>What to Do</h2>
+<p>Use parameterized APIs to build XML documents instead of treating XML documents as strings and concatenating data into them.</p>
+<h2>Why</h2>
+<p>Use APIs designed for building XML documents and encoding data properly, in order to prevent attackers from manipulating XML data used by your application. A dangerous approach is to write your own set of functions to build XML documents by concatenating strings, or to modify an existing XML document by performing string operations. This means you have to take care of proper encoding yourself. Use trusted APIs instead because they are simpler and safer.</p>
+<h2>How</h2>
+<p>To use parameterized APIs to build XML documents:</p>
+<ol>
+<li><strong>Identify available APIs that can be used to build XML documents.</strong> Your platform probably provides APIs that help build XML documents programmatically.</li>
+<li><strong>Use parameterized APIs to build XML documents.</strong> Use your chosen API to implement code that builds XML documents. If you already have code that builds XML documents, make sure that it uses your chosen API and does not concatenate XML tags and data.</li>
+</ol>

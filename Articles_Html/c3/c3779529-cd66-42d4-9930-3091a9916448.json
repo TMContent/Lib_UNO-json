@@ -1,6 +1,6 @@
 {
   "id": "c3779529-cd66-42d4-9930-3091a9916448",
-  "checksum": "f0b0c675c0304048a2bbee2c55f550a9",
+  "checksum": "809e44169481b093b451104545ac5c02",
   "words": {
     "40": [
       "ul",
@@ -1611,11 +1611,8 @@
       "p",
       "ol",
       "ol",
-      "ol",
       "li",
       "li",
-      "li",
-      "pre",
       "ul",
       "li",
       "p"
@@ -2285,10 +2282,10 @@
       "li",
       "p"
     ],
-    "microsoft®": [
+    "microsoft&#174": [
       "p"
     ],
-    "windows nt®": [
+    "windows&nbspnt&#174;": [
       "p"
     ],
     "controller": [
@@ -2325,10 +2322,10 @@
       "p",
       "p"
     ],
-    "windows®": [
+    "windows&#174": [
       "p"
     ],
-    "directory™": [
+    "directory&#8482": [
       "p"
     ],
     "there": [
@@ -3061,8 +3058,7 @@
       "ul",
       "li",
       "p",
-      "p",
-      "pre"
+      "p"
     ],
     "element": [
       "ul",
@@ -3546,7 +3542,7 @@
       "li",
       "li"
     ],
-    "note impersonation": [
+    "note&nbsp;impersonation": [
       "ul",
       "li",
       "p"
@@ -3963,31 +3959,27 @@
       "li",
       "li"
     ],
-    ".. <system.web>": [
-      "pre",
-      "pre",
-      "pre",
-      "ol",
-      "li",
-      "pre"
-    ],
-    "..": [
-      "pre",
+    "..&nbsp;<system.web>&nbsp;": [
       "pre",
       "pre",
       "ol",
       "li",
       "pre"
     ],
-    "mode=\"windows\"/": [
-      "pre",
+    "..&nbsp;": [
       "pre",
       "pre",
       "ol",
       "li",
       "pre"
     ],
-    ".. </system.web> ...": [
+    "mode=\"windows\"/&nbsp;": [
+      "pre",
+      "ol",
+      "li",
+      "pre"
+    ],
+    "..&nbsp;</system.web>&nbsp;...": [
       "pre",
       "pre",
       "pre",
@@ -4072,10 +4064,10 @@
     "folder": [
       "p"
     ],
-    "%windir%\\microsoftnet\\framework\\{version}\\config.": [
+    "&#37windir&#37;\\microsoft.net\\framework\\&#123;version&#125;\\config.": [
       "p"
     ],
-    "%windir%\\microsoftnet\\framework\\{version}\\config": [
+    "&#37windir&#37;\\microsoft.net\\framework\\&#123;version&#125;\\config": [
       "em"
     ],
     "identity>": [
@@ -4102,8 +4094,6 @@
       "pre"
     ],
     "/": [
-      "pre",
-      "pre",
       "pre"
     ],
     "impersonating": [
@@ -4160,7 +4150,17 @@
       "p",
       "p"
     ],
-    "impersonate=\"true\"/": [
+    "..&nbsp;<system.web>&nbsp;&nbsp;&nbsp;": [
+      "pre"
+    ],
+    "..&nbsp;&nbsp;&nbsp;": [
+      "pre"
+    ],
+    "mode=\"windows\"/&nbsp;&nbsp;&nbsp;": [
+      "pre",
+      "pre"
+    ],
+    "impersonate=\"true\"/&nbsp;&nbsp;&nbsp;": [
       "pre"
     ],
     "resulting": [
@@ -4252,7 +4252,7 @@
     "username=\"domain>\\<username>\"": [
       "pre"
     ],
-    "password=\"password>\"/>": [
+    "password=\"password>\"/>&nbsp;&nbsp;&nbsp;": [
       "pre"
     ],
     "they": [
@@ -4282,7 +4282,7 @@
     "avoided": [
       "p"
     ],
-    "resources use": [
+    "resources&nbsp;use": [
       "p"
     ],
     "avoids": [
@@ -4332,7 +4332,7 @@
       "li",
       "em"
     ],
-    "impersonate=\"false\"/": [
+    "impersonate=\"false\"/&nbsp;": [
       "ol",
       "li",
       "pre"
@@ -4427,12 +4427,12 @@
       "li",
       "pre"
     ],
-    "wiimpersonate();try{": [
+    "wiimpersonate();try&#123;&nbsp;": [
       "ol",
       "li",
       "pre"
     ],
-    "impersonating}catch{": [
+    "impersonating&#125;catch&#123;&nbsp;": [
       "ol",
       "li",
       "pre"
@@ -4447,7 +4447,7 @@
       "li",
       "pre"
     ],
-    "propagating}finally{": [
+    "propagating&#125;finally&#123;&nbsp;": [
       "ol",
       "li",
       "pre"
@@ -4457,7 +4457,12 @@
       "li",
       "pre"
     ],
-    "wicundo();}": [
+    "impersonation&nbsp;": [
+      "ol",
+      "li",
+      "pre"
+    ],
+    "wicundo();&#125;": [
       "ol",
       "li",
       "pre"
@@ -4614,13 +4619,13 @@
       "em",
       "pre"
     ],
-    "authorization> <deny": [
+    "authorization>&nbsp;<deny": [
       "pre"
     ],
     "users=\"domainname\\username\"": [
       "pre"
     ],
-    "/ <allow": [
+    "/&nbsp;<allow": [
       "pre"
     ],
     "roles=\"domainname\\windowsgroup\"": [
@@ -4675,10 +4680,17 @@
     "builtin": [
       "em"
     ],
+    "authorization>&nbsp;": [
+      "pre"
+    ],
     "users=\"domainname\\bob": [
       "pre"
     ],
     "domainname\\mary\"": [
+      "pre"
+    ],
+    "/&nbsp;": [
+      "pre",
       "pre"
     ],
     "roles=\"builtin\\administrators": [
@@ -4687,7 +4699,7 @@
     "domainname\\manager\"": [
       "pre"
     ],
-    "users=\"*\"": [
+    "users=\"&#42\"": [
       "pre"
     ],
     "checking": [
@@ -4766,7 +4778,7 @@
       "li",
       "i"
     ],
-    "nameif(user.isinrole(@\"domainname\\manager\"))": [
+    "nameif(user.isinrole(&#64;\"domainname\\manager\"))&nbsp;": [
       "ul",
       "li"
     ],
@@ -4778,7 +4790,7 @@
       "li",
       "pre"
     ],
-    "operationelse": [
+    "operationelse&nbsp": [
       "ul",
       "ul",
       "li",
@@ -4824,7 +4836,7 @@
       "ul",
       "li"
     ],
-    "ifroles.isuserinrole(@\"domainname\\manager\"))": [
+    "ifroles.isuserinrole(&#64;\"domainname\\manager\"))&nbsp;": [
       "ul",
       "li",
       "pre"
@@ -4916,7 +4928,7 @@
       "li",
       "p"
     ],
-    "ifuser.isinrole(@\"domainname\\manager\"))": [
+    "ifuser.isinrole(&#64;\"domainname\\manager\"))&nbsp;": [
       "pre"
     ],
     "construct": [
@@ -4957,7 +4969,7 @@
       "li",
       "pre"
     ],
-    "principalpermission@\"domain\\bob\",": [
+    "principalpermission&#64;\"domain\\bob\",": [
       "ul",
       "li",
       "pre"
@@ -4981,7 +4993,7 @@
       "li",
       "pre"
     ],
-    "principalpermission(securityaction.demand,role=@\"builtin\\administrators\")]": [
+    "&#91principalpermission(securityaction.demand,role=&#64;\"builtin\\administrators\")&#93;": [
       "ul",
       "li",
       "pre"
@@ -5042,7 +5054,7 @@
       "ul",
       "li"
     ],
-    "server domain": [
+    "server&nbspdomain.": [
       "ul",
       "li"
     ],
@@ -5208,6 +5220,9 @@
     ],
     "guidance": [
       "p"
+    ],
+    "verifyme]": [
+      "title"
     ]
   },
   "tags": {},

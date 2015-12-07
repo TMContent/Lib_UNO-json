@@ -13,10 +13,10 @@
           "0539de53-76b2-43ba-a7ee-7004f431c0da,da5d07df-352b-45f5-ad09-5257835baba1,"
         ],
         "Library_Id": [
-          "92718d53-36b2-47bc-b6f5-e60994385f46"
+          "be5273b1-d682-4361-99d9-6234f2d47eb7"
         ],
         "Title": [
-          "Do Not Rely on Client-Side Validation"
+          "1sink junk Do Not Rely on Client-Side Validation"
         ],
         "Category": [
           "Input and Data Validation"
@@ -60,7 +60,7 @@
           "DataType": "Html"
         },
         "Data": [
-          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>\r\n      <div>Web Application</div>\r\n    </li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Client-side validation can reduce the number of round trips to the server, but do not rely on it for security because it is easy to bypass. Validate all input at the server. </p>\r\n  <h1>Why</h1>\r\n  <p>It is easy to modify the behavior of the client or just write a new client that does not observe the same data validation rules.</p>\r\n  <h1>When</h1>\r\n  <p>All applications should only use Server-side validation when the code relys on security.</p>\r\n  <h1>How</h1>\r\n  <p>Server-side code should perform its own validation. What if an attacker bypasses your client, or shuts off your client-side script routines, for example, by disabling JavaScript? Use client-side validation to help reduce the number of round trips to the server but do not rely on it for security. This is an example of defense in depth.</p>\r\n  <h1>Additional Resources</h1>\r\n  <ul>\r\n    <li>For more information see, \"Chapter 4 - Design Guidelines for Secure Web Applications\" at <a href=\"http://msdn2.microsoft.com/en-us/library/aa302420.aspx\">http://msdn2.microsoft.com/en-us/library/aa302420.aspx</a>&nbsp;&nbsp;&nbsp;</li>\r\n  </ul>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
+          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>\r\n      <div>Web Application</div>\r\n    </li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Client-side validation can reduce the number of round trips to the server, but do not rely on it for security because it is easy to bypass. Validate all input at the server. </p>\r\n  <h1>Why</h1>\r\n  <p>It is easy to modify the behavior of the client or just write a new client that does not observe the same data validation rules.</p>\r\n  <h1>When</h1>\r\n  <p>All applications should only use Server-side validation when the code relys on security.</p>\r\n  <h1>How</h1>\r\n  <p>Server-side code should perform its own validation. What if an attacker bypasses your client, or shuts off your client-side script routines, for example, by disabling JavaScript? Use client-side validation to help reduce the number of round trips to the server but do not rely on it for security. This is an example of defense in depth.</p>\r\n  <h1>Additional Resources</h1>\r\n  <ul>\r\n    <li>For more information see, \"Chapter 4 - Design Guidelines for Secure Web Applications\" at <a href=\"http://msdn2.microsoft.com/en-us/library/aa302420.aspx\">http://msdn2.microsoft.com/en-us/library/aa302420.aspx</a>&amp;nbsp;&amp;nbsp;&amp;nbsp;</li>\r\n  </ul>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns &amp; practices guidance.</p>"
         ]
       }
     ]

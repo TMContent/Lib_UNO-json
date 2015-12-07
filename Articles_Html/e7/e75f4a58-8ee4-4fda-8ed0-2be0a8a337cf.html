@@ -1,52 +1,40 @@
-<h1>Applies to</h1>
-  <ul>
-    <li>C&#43;&#43;</li>
-  </ul>
-  <h1>What to Check For</h1>
-  <p>Verify that locks are used with mutexes, instead of manual locking and unlocking.</p>
-  <h1>Why</h1>
-  <p>Using std::lock_guard makes it simpler to prevent deadlocks, because it unlocks mutexes automaticaly when a function exits.</p>
-  <h1>How to Check</h1>
-  <p>Use the following steps to check if locks are used with mutexes:</p>
-  <ol>
-    <li>
-      <p>
-        <strong>Locate mutexes.</strong> Search code for declarations of std::mutex objects and their subsequent use to make sure mutexes are being used.</p>
-      <li>
-        <p>
-          <strong>Verify that locks are used.</strong> Locate functions that use mutexes and make sure they use std::lock_guard instead of calling lock() and unlock().</p>
-      </li>
-    </li>
-  </ol>
-  <h1>How to Fix</h1>
-  <p>Perform the following actions to use locks with mutexes:</p>
-  <ol>
-    <li>
-      <p>
-        <strong>Identify unsafe code. </strong>Search for code that manually locks and unlocks mutexes by calling lock() and unlock() functions.</p>
-      <li>
-        <p>
-          <strong>Add locks.</strong> Add locks to functions that manuall lock() and unlock() mutexes by declaring them in a manner such as const std::lock_guard&lt;std::mutex&gt;(mutex);</p>
-        <li>
-          <p>
-            <strong>Remove old code.</strong> Remove calls to lock() and unlock() from the functions where a lock is now being used.</p>
-        </li>
-      </li>
-    </li>
-  </ol>
-  <h1>Solution Example</h1>
-  <p>In the following example, a lock is being used with the mutex. Notice that nothing else is necessary to assure concurrency when using a lock. Yes, it really is that simple.</p>
-  <pre>static std::mutex mutex;</pre>
-  <pre>void function()&#123;</pre>
-  <pre>  const std::lock_guard&lt;std::mutex&gt;(mutex);</pre>
-  <pre>  //do stuff<br />&#125;</pre>
-  <h1>Additional Resources</h1>
-  <ul>
-    <li>For more information about using locks with mutexes, please see <a href="https://www.securecoding.cert.org/confluence/display/cplusplus/CON02-CPP.&#43;Use&#43;lock&#43;classes&#43;for&#43;mutex&#43;management">https://www.securecoding.cert.org/confluence/display/cplusplus/CON02-CPP.&#43;Use&#43;lock&#43;classes&#43;for&#43;mutex&#43;management</a></li>
-  </ul>
-  <h1>Related Items</h1>
-  <ul>
-    <li>
-      <a href="/article/41b5df05-32be-44df-93b6-f3cb4117f676">Use Locks with Mutexes to Avoid Deadlocks</a>
-    </li>
-  </ul>
+<h2>What to Check For</h2>
+<p>Verify that locks are used with mutexes, instead of manual locking and unlocking.</p>
+<h2>Why</h2>
+<p>Using <code>std::lock_guard</code> makes it simpler to prevent deadlocks, because it unlocks mutexes automaticaly when a function exits.</p>
+<h2>How to Check</h2>
+<p>Use the following steps to check if locks are used with mutexes:</p>
+<ol>
+<li>
+<p><strong>Locate mutexes.</strong> Search code for declarations of <code>std::mutex</code> objects and their subsequent use to make sure mutexes are being used.</p>
+</li>
+<li>
+<p><strong>Verify that locks are used.</strong> Locate functions that use mutexes and make sure they use <code>std::lock_guard</code> instead of calling <code>lock()</code> and <code>unlock()</code>.</p>
+</li>
+</ol>
+<h2>How to Fix</h2>
+<p>Perform the following actions to use locks with mutexes:</p>
+<ol>
+<li>
+<p><strong>Identify unsafe code.</strong> Search for code that manually locks and unlocks mutexes by calling <code>lock()</code> and <code>unlock()</code> functions.</p>
+</li>
+<li>
+<p><strong>Add locks.</strong> Add locks to functions that manually <code>lock()</code> and <code>unlock()</code> mutexes by declaring them in a manner such as <code>const std::lock_guard&lt;std::mutex&gt;(mutex);</code></p>
+</li>
+<li>
+<p><strong>Remove old code.</strong> Remove calls to <code>lock()</code> and <code>unlock()</code> from the functions where a lock is now being used.</p>
+</li>
+</ol>
+<h2>Solution Example</h2>
+<p>In the following example, a lock is being used with the mutex. Notice that nothing else is necessary to assure concurrency when using a lock. Yes, it really is that simple.</p>
+<pre><code>static std::mutex mutex;
+
+void function(){
+
+const std::lock_guard&lt;std::mutex&gt;(mutex);
+
+//do stuff
+}
+</code></pre>
+<h2>Additional Resources</h2>
+<p>For more information about using locks with mutexes, see <a href="https://www.securecoding.cert.org/confluence/display/cplusplus/CON02-CPP.+Use+lock+classes+for+mutex+management">https://www.securecoding.cert.org/confluence/display/cplusplus/CON02-CPP.+Use+lock+classes+for+mutex+management</a></p>

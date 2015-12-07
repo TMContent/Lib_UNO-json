@@ -1,0 +1,23 @@
+<h1>What to Do</h1>
+<p>Protect session IDs from disclosure by only storing them in session cookies, sending session cookies only over TLS and setting security flags on the session cookies.</p>
+<h2>Why</h2>
+<p>Protecting session IDs helps protect user sessions from being hijacked.</p>
+<h2>How</h2>
+<p>To protect session IDs:</p>
+<ol>
+<li>
+<p><strong>Store session IDs in cookies.</strong> This is done automatically by virutally every web application platform. Make sure not to store the session IDs in any other user-accessible parameters.</p>
+</li>
+<li>
+<p><strong>Enable TLS.</strong> TLS has to be enabled to protect session cookies from eavesdropping attacks. Please, refer to the documentation for your web platform for information about enabling and configuring TLS on your web server.</p>
+</li>
+<li>
+<p><strong>Set the &quot;Secure&quot; flag on session cookies.</strong> Configure the platform to set the &quot;Secure&quot; flag on session cookies or do it programmatically whenever session cookies are created.</p>
+</li>
+<li>
+<p><strong>Set the &quot;HTTPOnly&quot; flag on session cookies.</strong> Configure the platform to the set the &quot;HTTPOnly&quot; flag on session cookies or do it programmatically whenever session cookies are created.</p>
+</li>
+<li>
+<p><strong>Do not disclose session IDs.</strong> Make sure that session IDs are not disclosed in URLs, logs, or error messages. Do not allow URL rewriting of session cookies.</p>
+</li>
+</ol>

@@ -1,0 +1,25 @@
+<h2>What to Do</h2>
+<p>Be careful when using files. Many platforms have peculiar issues related to opening and creating files. Understand the nuances of using files with your platform and handle files with this understanding.</p>
+<h2>Why</h2>
+<p>The issues with file handling stem from the fact that operating systems implement counter-intuitive functionality as a part of their file handling features, such as being able to manipulate non-files in the same way as files, following symbolic names, or having multiple names for the same file. These features are then typically inherited by whatever platform is running on those operating systems and thus by the application. Sloppy file operations can result in a number of vulnerabilities such as allowing attackers to overwrite or read files in a manner not intended by the application.</p>
+<h2>How</h2>
+<p>The issues related to the To prevent overwriting data in files when writing to them:</p>
+<ol>
+<li>
+<p><strong>Identify possible file-handling pitfalls for your platform.</strong> TM articles describe some of these pitfalls, but ultimately the developer is responsible for understanding the application's environment.</p>
+</li>
+<li>
+<p><strong>Determine best practices for file-handling.</strong> TM articles describe some of the most common file-handling issues and how to control them using best practices.</p>
+</li>
+<li>
+<p><strong>Identify code that writes to files.</strong> Search for code that creates, reads, or writes files. Make a spreadsheet of all such code.</p>
+</li>
+<li>
+<p><strong>Apply best practices.</strong> Apply the file-handling best practices to the code that uses files.</p>
+</li>
+</ol>
+<h2>Additional Articles</h2>
+<ul>
+<li><a href="81f61d02-6521-4d0e-9c4b-7f96889cef76">Create Files Safely on Windows</a></li>
+<li><a href="10f126b4-a75a-4d26-82e8-b419579942b1">Open Files Safely on UN*X</a></li>
+</ul>

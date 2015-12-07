@@ -1,6 +1,6 @@
 {
   "id": "bbf0ada1-709e-4351-a184-1d1212233e78",
-  "checksum": "0f93600d87b6b87c0a560cf76c5c8857",
+  "checksum": "97de8f28384a71b0cead59205fdd9d64",
   "words": {
     "6": [
       "ul",
@@ -1646,12 +1646,8 @@
       "p",
       "ol",
       "ol",
-      "ol",
       "li",
       "li",
-      "li",
-      "div",
-      "pre",
       "ul",
       "li",
       "p"
@@ -2284,7 +2280,7 @@
     "microsoft®": [
       "p"
     ],
-    "windows nt®": [
+    "windows&nbspnt®": [
       "p"
     ],
     "controller": [
@@ -3047,9 +3043,7 @@
     "authorization>": [
       "ul",
       "li",
-      "p",
-      "div",
-      "pre"
+      "p"
     ],
     "element": [
       "ul",
@@ -3141,7 +3135,7 @@
       "ul",
       "li"
     ],
-    "note   aspnet": [
+    "note&nbsp&nbsp;&nbsp;asp.net": [
       "ul",
       "li",
       "blockquote"
@@ -3511,7 +3505,7 @@
       "li",
       "li"
     ],
-    "note   impersonation": [
+    "note&nbsp&nbsp;&nbsp;impersonation": [
       "ul",
       "li",
       "blockquote"
@@ -3874,21 +3868,7 @@
       "li",
       "li"
     ],
-    ".. <system.web>": [
-      "div",
-      "pre",
-      "div",
-      "pre",
-      "div",
-      "pre",
-      "ol",
-      "li",
-      "div",
-      "pre"
-    ],
-    "..": [
-      "div",
-      "pre",
+    "..&nbsp;<system.web>&nbsp;": [
       "div",
       "pre",
       "div",
@@ -3898,9 +3878,7 @@
       "div",
       "pre"
     ],
-    "mode=\"windows\"/": [
-      "div",
-      "pre",
+    "..&nbsp;": [
       "div",
       "pre",
       "div",
@@ -3910,7 +3888,15 @@
       "div",
       "pre"
     ],
-    ".. </system.web> ...": [
+    "mode=\"windows\"/&nbsp;": [
+      "div",
+      "pre",
+      "ol",
+      "li",
+      "div",
+      "pre"
+    ],
+    "..&nbsp;</system.web>&nbsp;...": [
       "div",
       "pre",
       "div",
@@ -4031,10 +4017,6 @@
     ],
     "/": [
       "div",
-      "pre",
-      "div",
-      "div",
-      "pre",
       "pre"
     ],
     "impersonating": [
@@ -4087,7 +4069,21 @@
       "p",
       "p"
     ],
-    "impersonate=\"true\"/": [
+    "..&nbsp;<system.web>&nbsp;&nbsp;&nbsp;": [
+      "div",
+      "pre"
+    ],
+    "..&nbsp;&nbsp;&nbsp;": [
+      "div",
+      "pre"
+    ],
+    "mode=\"windows\"/&nbsp;&nbsp;&nbsp;": [
+      "div",
+      "pre",
+      "div",
+      "pre"
+    ],
+    "impersonate=\"true\"/&nbsp;&nbsp;&nbsp;": [
       "div",
       "pre"
     ],
@@ -4183,7 +4179,7 @@
       "div",
       "pre"
     ],
-    "password=\"password>\"/>": [
+    "password=\"password>\"/>&nbsp;&nbsp;&nbsp;": [
       "div",
       "pre"
     ],
@@ -4207,7 +4203,7 @@
     "tool": [
       "p"
     ],
-    "note   specifying": [
+    "note&nbsp&nbsp;&nbsp;specifying": [
       "blockquote"
     ],
     "avoided": [
@@ -4264,7 +4260,7 @@
       "li",
       "b"
     ],
-    "impersonate=\"false\"/": [
+    "impersonate=\"false\"/&nbsp;": [
       "ol",
       "li",
       "div",
@@ -4378,13 +4374,13 @@
       "div",
       "pre"
     ],
-    "wiimpersonate();try{": [
+    "wiimpersonate();try{&nbsp;": [
       "ol",
       "li",
       "div",
       "pre"
     ],
-    "impersonating}catch{": [
+    "impersonating}catch{&nbsp;": [
       "ol",
       "li",
       "div",
@@ -4402,13 +4398,19 @@
       "div",
       "pre"
     ],
-    "propagating}finally{": [
+    "propagating}finally{&nbsp;": [
       "ol",
       "li",
       "div",
       "pre"
     ],
     "revert": [
+      "ol",
+      "li",
+      "div",
+      "pre"
+    ],
+    "impersonation&nbsp;": [
       "ol",
       "li",
       "div",
@@ -4436,7 +4438,7 @@
       "p",
       "b"
     ],
-    "note   file": [
+    "note&nbsp&nbsp;&nbsp;file": [
       "blockquote"
     ],
     "requires": [
@@ -4576,7 +4578,7 @@
       "div",
       "pre"
     ],
-    "authorization> <deny": [
+    "authorization>&nbsp;<deny": [
       "div",
       "pre"
     ],
@@ -4584,7 +4586,7 @@
       "div",
       "pre"
     ],
-    "/ <allow": [
+    "/&nbsp;<allow": [
       "div",
       "pre"
     ],
@@ -4639,12 +4641,22 @@
     "prefix": [
       "p"
     ],
+    "authorization>&nbsp;": [
+      "div",
+      "pre"
+    ],
     "users=\"domainname\\bob": [
       "div",
       "pre"
     ],
     "domainname\\mary\"": [
       "div",
+      "pre"
+    ],
+    "/&nbsp;": [
+      "div",
+      "div",
+      "pre",
       "pre"
     ],
     "roles=\"builtin\\administrators": [
@@ -4756,7 +4768,7 @@
       "li",
       "i"
     ],
-    "nameif(user.isinrole(@\"domainname\\manager\"))": [
+    "nameif(user.isinrole(@\"domainname\\manager\"))&nbsp;": [
       "ul",
       "li"
     ],
@@ -4770,7 +4782,7 @@
       "div",
       "pre"
     ],
-    "operationelse": [
+    "operationelse&nbsp": [
       "ul",
       "ul",
       "li",
@@ -4832,7 +4844,7 @@
       "ul",
       "li"
     ],
-    "ifroles.isuserinrole(@\"domainname\\manager\"))": [
+    "ifroles.isuserinrole(@\"domainname\\manager\"))&nbsp;": [
       "ul",
       "li",
       "div",
@@ -4928,7 +4940,7 @@
       "li",
       "p"
     ],
-    "ifuser.isinrole(@\"domainname\\manager\"))": [
+    "ifuser.isinrole(@\"domainname\\manager\"))&nbsp;": [
       "div",
       "pre"
     ],
@@ -5242,7 +5254,10 @@
     "guidance": [
       "p"
     ],
-    "sink]": [
+    "0sink": [
+      "title"
+    ],
+    "editme": [
       "title"
     ]
   },

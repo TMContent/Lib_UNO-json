@@ -1,27 +1,19 @@
 {
   "id": "441b4138-1866-442f-8abb-6d05236d6fcb",
-  "checksum": "567d737134f6f6cbb6a62c48588e6eb2",
+  "checksum": "f612820be0a6dacb2db5bfe853dd80fc",
   "words": {
-    "applies": [
-      "h1"
+    "what": [
+      "h2"
     ],
     "to": [
-      "h1",
-      "h1",
+      "h2",
       "p",
       "ol",
       "li",
       "p"
     ],
-    "c++": [
-      "ul",
-      "li"
-    ],
-    "what": [
-      "h1"
-    ],
     "do": [
-      "h1",
+      "h2",
       "ol",
       "li",
       "p"
@@ -79,9 +71,7 @@
       "ol",
       "ol",
       "ol",
-      "li",
-      "p",
-      "strong",
+      "ol",
       "li",
       "li",
       "p",
@@ -89,7 +79,14 @@
       "strong",
       "li",
       "li",
+      "p",
+      "p",
+      "strong",
       "li",
+      "li",
+      "li",
+      "li",
+      "p",
       "p",
       "p",
       "p",
@@ -149,9 +146,6 @@
     "don't": [
       "p",
       "p",
-      "ul",
-      "li",
-      "a",
       "title"
     ],
     "throw": [
@@ -168,9 +162,6 @@
       "strong",
       "li",
       "p",
-      "ul",
-      "li",
-      "a",
       "title"
     ],
     "exceptions": [
@@ -178,7 +169,6 @@
       "p",
       "p",
       "p",
-      "ol",
       "ol",
       "ol",
       "ol",
@@ -197,13 +187,10 @@
       "p",
       "li",
       "p",
-      "ul",
-      "li",
-      "a",
       "title"
     ],
     "why": [
-      "h1"
+      "h2"
     ],
     "may": [
       "p",
@@ -229,7 +216,7 @@
     "when": [
       "p",
       "p",
-      "h1",
+      "h2",
       "p"
     ],
     "are": [
@@ -372,7 +359,7 @@
       "p"
     ],
     "how": [
-      "h1"
+      "h2"
     ],
     "perform": [
       "p"
@@ -398,7 +385,7 @@
       "li",
       "p"
     ],
-    "functions review": [
+    "review": [
       "ol",
       "li",
       "p"
@@ -413,11 +400,8 @@
       "li",
       "p"
     ],
-    "search": [
-      "ol",
-      "li",
-      "p",
-      "strong"
+    "functions\n\n\nsearch": [
+      "ol"
     ],
     "for": [
       "ol",
@@ -438,9 +422,6 @@
       "li",
       "p",
       "p",
-      "ul",
-      "li",
-      "a",
       "title"
     ],
     "list": [
@@ -453,11 +434,8 @@
       "li",
       "p"
     ],
-    "rewrite": [
-      "ol",
-      "li",
-      "p",
-      "strong"
+    "exceptions\n\n\nrewrite": [
+      "ol"
     ],
     "affected": [
       "ol",
@@ -465,10 +443,13 @@
       "p",
       "strong"
     ],
-    "functions rewrite": [
+    "rewrite": [
       "ol",
       "li",
-      "p"
+      "li",
+      "p",
+      "p",
+      "strong"
     ],
     "doesn't": [
       "ol",
@@ -554,16 +535,8 @@
       "li",
       "p"
     ],
-    "codes": [
-      "ol",
-      "li",
-      "p"
-    ],
-    "inform": [
-      "ol",
-      "li",
-      "p",
-      "strong"
+    "codes\n\n\ninform": [
+      "ol"
     ],
     "team": [
       "ol",
@@ -599,23 +572,21 @@
       "li",
       "p"
     ],
-    "related": [
-      "h1"
-    ],
-    "items": [
-      "h1"
-    ],
-    "destructors": [
-      "ul",
+    "search": [
       "li",
-      "a"
+      "p",
+      "strong"
+    ],
+    "codes": [
+      "li",
+      "p"
+    ],
+    "inform": [
+      "li",
+      "p",
+      "strong"
     ]
   },
   "tags": {},
-  "links": [
-    {
-      "href": "/article/fd06b089-88ea-43df-bc41-f111a1848116",
-      "text": "Don't Throw Exceptions from Destructors"
-    }
-  ]
+  "links": []
 }

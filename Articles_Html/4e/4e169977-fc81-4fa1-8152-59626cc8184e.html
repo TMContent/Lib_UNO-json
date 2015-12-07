@@ -24,7 +24,7 @@
     <li>
       <em>SqlCommand</em> object makes use of a dynamically-generated string containing user input, which makes this operations vulnerable to SQL injection. For instance, the following <em>sParam</em> value could result in the deletion of the entire application database from the environment:</li>
   </ul>
-  <pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; abcxyz'; drop database snippets; -- </pre>
+  <pre>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; abcxyz'; drop database snippets; -- </pre>
   <ul>
     <li>This example illustrates an inline <em>SELECT</em> statement. SQL injection may also be possible when stored procedures are used, if user input is incorporated dynamically, as above.</li>
   </ul>
@@ -49,4 +49,4 @@
     <li>User input should always be considered "tainted" and validated against a set of known and expected values or characters before acceptance by an application for processing in any type of operation, including database queries.</li>
   </ul>
   <hr />
-  <p>Adapted from Microsoft patterns & practices guidance.</p>
+  <p>Adapted from Microsoft patterns &amp; practices guidance.</p>

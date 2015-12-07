@@ -1,0 +1,17 @@
+<h2>What to Do</h2>
+<p>Load additional code carefully.</p>
+<h2>Why</h2>
+<p>Load additional code carefully to prevent attackers from injecting malicious code.</p>
+<h2>How</h2>
+<p>To load code carefully:</p>
+<ol>
+<li>
+<p><strong>Identify code that loads additional code.</strong> Make a spreadsheet about all code being loaded by the application.</p>
+</li>
+<li>
+<p><strong>Validate any user data used to determine what code to load.</strong> It's not a good idea to load code based on user input. However, if it is necessary, then at least validate the user data before using it to load code.</p>
+</li>
+<li>
+<p><strong>Validate the source of the code being loaded.</strong> Use white-lists to determine the trusted sources of code before loading anything. Cryptographic signatures can also be used to identify trusted code.</p>
+</li>
+</ol>

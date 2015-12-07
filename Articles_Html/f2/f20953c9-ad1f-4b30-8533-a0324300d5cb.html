@@ -1,0 +1,12 @@
+<h2>What to Do</h2>
+<p>Make authentication and authorization policies configurable, rather than hard-coded.</p>
+<h2>Why</h2>
+<p>Authentication and authorization policies should be configurable to make it possible for the customers to adapt the application's security to their environment.</p>
+<h2>How</h2>
+<p>To make authentication and authorization policies configurable:</p>
+<ol>
+<li><strong>Identify application requirements.</strong> Define options for configuring access control and authentication policies. At the very least, there should be an administration panel for managing user accounts, and a page for users to manage their own accounts.</li>
+<li><strong>Make authentication and authorization code configurable.</strong> Find all code responsible for authentication and authorization features. Modify this code to read settings defined in the application requirements.</li>
+<li><strong>Design the administrative pages.</strong> Design the pages to be used for configuring access control and authentication policies based on the requirements for your application.</li>
+<li><strong>Implement the administration interface.</strong> Write code for the administrative pages to interface with authentication and authorization code. The administration interface should be able to read and write settings to a secure location, where the authentication and authorization code may access them. The saved settings should be protected with access controls to prevent unauthorized disclosure and tampering.</li>
+</ol>

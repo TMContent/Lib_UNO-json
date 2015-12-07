@@ -1,11 +1,11 @@
-<p>##What to Check For##</p>
+<h2>What to Check For</h2>
 <p>Verify that ACLs of S3 objects are configured.</p>
-<p>##Why##</p>
+<h2>Why</h2>
 <p>When the ACL for an S3 object is properly configured, AWS accounts or groups you specify become grantees with permissions on the object. Amazon S3 verifies that object requests are permissible for these requesters. If the ACL is misconfigured, these requests will fail.</p>
-<p>##When##</p>
+<h2>When</h2>
 <p>When Amazon S3 creates a bucket or object at your request, a default ACL is also created for the account owner, who now owns the resource. The default ACL grants the account owner full control. This is shown in the sample bucket ACL. To allow other AWS accounts and groups access to this resource, the ACLs must be further configured.</p>
 <p>Note that ACLs are <strong><em>not used</em></strong> with your AWS Identity and Access Management (IAM) users. You cannot grant permissions with an ACL to your IAM users. For that purpose, use the IAM console to set permissions for the users.</p>
-<p>##How to Check##</p>
+<h2>How to Check</h2>
 <p>To verify that ACLs of S3 objects are configured:</p>
 <ol>
 <li>
@@ -15,9 +15,9 @@
 <p><strong>Examine ACLs of S3 objects.</strong> Examine the ACLs for each S3 object and make sure that they are set to the least amount of privileges necessary to meet the application requirements.</p>
 </li>
 </ol>
-<p>##How to Fix##</p>
+<h2>How to Fix</h2>
 <p>To configure Amazon S3 ACLs with the simplest method, use the AWS Management Console. AWS SDK (for Java and .NET) and API methods and operations are introduced here for information purpose.</p>
-<p>###Use AWS Management Console###</p>
+<h3>Use AWS Management Console</h3>
 <ol>
 <li>
 <p><strong>Login to Management Console.</strong> Sign in to the AWS S3 Management Console.</p>
@@ -35,14 +35,14 @@
 <ol start="3">
 <li><strong>Change Permissions.</strong> To change permissions, scroll through the rows of permissions that have been established for the application. Select or de-select each permission as required, and apply the changes.</li>
 </ol>
-<p>###Use AWS SDK for Java###</p>
+<h3>Use AWS SDK for Java</h3>
 <p>With AWS SDK for Java, you can create a resource and grant permissions programmatically. These functions are provided in code:</p>
 <ul>
 <li>AccessControlList is added to a request.</li>
 <li>Grantee and permissions are stated.</li>
 <li>PutObject request specifies permissions to accounts and/or predefined groups (such as AllUsers).</li>
 </ul>
-<p>###Use AWS SDK for .NET###</p>
+<h3>Use AWS SDK for .NET</h3>
 <p>The AWS SDK for .NET can be used to change permissions on an existing resource with C#.</p>
 <ul>
 <li>Call the AmazonS3Client.PutACL method.</li>
@@ -50,7 +50,7 @@
 <li>Add new grants.</li>
 <li>Send a PutACL request.</li>
 </ul>
-<p>###Use REST API###</p>
+<h3>Use REST AP I###</h3>
 <p>REST API support for configuring ACLs is available with the operations listed below.</p>
 <ul>
 <li>GET Bucket acl</li>

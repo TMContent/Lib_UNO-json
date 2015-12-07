@@ -1,0 +1,56 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "0",
+      "Content_Hash": "0"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "1c12a5b2-2051-4be2-af57-4d4bab6b9d19"
+        ],
+        "Library_Id": [
+          "be5273b1-d682-4361-99d9-6234f2d47eb7"
+        ],
+        "Title": [
+          "Server-side Authentication Is Used"
+        ],
+        "Category": [
+          ""
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Checklist Item"
+        ],
+        "DirectLink": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "false",
+          "DataType": "markdown"
+        },
+        "Data": [
+          "## What to Check For ##\r\n\r\nVerify that authentication controls are implemented on the server-side.\r\n\r\n## Why ##\r\n\r\nServer-side authentication should be used because client-side authentication is trivial to bypass.\r\n\r\n## How to Check ##\r\n\r\nTo verify that server-side authentication is used:\r\n\r\n1. **Identify authentication controls.** Find code that is responsible for authentication.\r\n2. **Verify that authentication controls are implemented on the server.** Review authentication code to make sure that authentication is performed on the server.\r\n\r\n\r\n## How to Fix ##\r\n\r\n1. **Define authentication requirements.** Consider the following aspects of authentication control as they pertain to your application:\r\n - Enforcing password strength requirements.\r\n - Allowing secure password reset or recovery.\r\n - Requiring re-authentication for sensitive operations.\r\n - Using multi-factor authentication.\r\n - Using simple error messages that don't give away information to the attacker.\r\n - Using TLS to secure communications.\r\n - Throttling repeated authentication attempts.\r\n - Locking inactive authentication accounts.\r\n2. **Implement authentication on the server.** It is important to implement security controls such as authentication on the server, because an attacker can tamper with client-side security controls or disable them altogether. Implement authentication controls that match the requirements defined in the previous step on the server back-end.\r\n3. **Add client-side code that authenticates to the server.** Once authentication is implemented in accordance with the requirements, add client-side code that authenticates to the server. The client-side code will need:\r\n - An interface for managing authentication credentials.\r\n - Network code that communicates with the server using TLS.\r\n - A token or some other means to maintain session state on the server, and possibly secure storage for cached authentication credentials."
+        ]
+      }
+    ]
+  }
+}

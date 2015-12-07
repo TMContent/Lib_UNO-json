@@ -1,6 +1,6 @@
 {
   "id": "532020a6-d364-4275-b691-2837124e7233",
-  "checksum": "4e0b9782c2fa95b3efd0310d6d6501bb",
+  "checksum": "4fbe6bd55b428d37a5f890ac68bdf1fd",
   "words": {
     "1": [
       "ul",
@@ -433,7 +433,7 @@
       "p",
       "p"
     ],
-    "later operating": [
+    "later&nbspoperating": [
       "ul",
       "li"
     ],
@@ -1905,7 +1905,6 @@
       "p",
       "p",
       "p",
-      "pre",
       "h1",
       "p",
       "p",
@@ -3349,10 +3348,10 @@
     "alternative": [
       "p"
     ],
-    "model—referred": [
+    "model&#8212referred": [
       "p"
     ],
-    "model—uses": [
+    "model&#8212uses": [
       "p"
     ],
     "caller's": [
@@ -3406,7 +3405,6 @@
     ],
     "connectionstrings>": [
       "p",
-      "pre",
       "p"
     ],
     "webconfig": [
@@ -3477,6 +3475,9 @@
       "p",
       "p"
     ],
+    "&nbsp<connectionstrings>&nbsp;": [
+      "pre"
+    ],
     "add": [
       "pre",
       "pre",
@@ -3492,10 +3493,16 @@
     "name=\"mydbconn1\"": [
       "pre"
     ],
-    "connectionstring=\"server=myserverdatabase=mydb;trusted_connection=yes;\"/>": [
+    "&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+      "pre"
+    ],
+    "connectionstring=\"server=myserverdatabase=mydb;trusted_connection=yes;\"/>&nbsp;": [
       "pre"
     ],
     "name=\"mydbconn2\"": [
+      "pre"
+    ],
+    "&nbsp&nbsp;&nbsp;&nbsp;&nbsp;": [
       "pre"
     ],
     "connectionstring=\"initial": [
@@ -3507,7 +3514,7 @@
     "source=myserverintegrated": [
       "pre"
     ],
-    "security=sspi\"/> </connectionstrings>": [
+    "security=sspi\"/>&nbsp;</connectionstrings>": [
       "pre"
     ],
     "above": [
@@ -3557,30 +3564,32 @@
       "ol",
       "li"
     ],
-    "asp:sqldatasource": [
+    "&nbsp<asp:sqldatasource": [
       "pre"
     ],
     "id=\"sqldatasource1\"": [
       "pre"
     ],
     "runat=\"server\"": [
-      "pre",
-      "div",
-      "div",
-      "pre",
       "pre"
     ],
-    "connectionstring=\"%$": [
+    "&nbsp&nbsp;": [
       "pre"
     ],
-    "connectionstringsmydbconn1%>\">": [
+    "connectionstring=\"&#37;&#36;": [
       "pre"
     ],
-    ".. </asp:sqldatasource>": [
+    "connectionstringsmydbconn1&#37;>\">&nbsp;&nbsp;": [
+      "pre"
+    ],
+    "..&nbsp;</asp:sqldatasource>": [
       "pre"
     ],
     "code": [
       "p"
+    ],
+    "&nbspstring": [
+      "pre"
     ],
     "connstr": [
       "pre",
@@ -3599,7 +3608,7 @@
       "pre",
       "pre"
     ],
-    "configurationmanagerconnectionstrings[\"mydbconn1\"].tostring(); sqlconnection": [
+    "configurationmanagerconnectionstrings&#91;\"mydbconn1\"&#93;.tostring();&nbsp;sqlconnection": [
       "pre"
     ],
     "conn": [
@@ -4015,9 +4024,7 @@
       "p"
     ],
     "value": [
-      "p",
-      "div",
-      "pre"
+      "p"
     ],
     "at": [
       "p",
@@ -4052,7 +4059,7 @@
       "ul",
       "li"
     ],
-    "configurationmanagerconnectionstring[\"mydbconn1\"].tostring();": [
+    "configurationmanagerconnectionstring&#91;\"mydbconn1\"&#93;.tostring();": [
       "div",
       "pre"
     ],
@@ -4066,7 +4073,7 @@
       "p",
       "blockquote"
     ],
-    "note   you": [
+    "note&nbsp&nbsp;&nbsp;you": [
       "blockquote"
     ],
     "programmatically": [
@@ -4371,7 +4378,7 @@
       "p",
       "p"
     ],
-    "domainname\\webservermachinename$": [
+    "domainname\\webservermachinename&#36": [
       "ol",
       "li",
       "b"
@@ -4418,7 +4425,7 @@
       "p",
       "b"
     ],
-    "'domainname\\webservermachinename$'create": [
+    "'domainname\\webservermachinename&#36'create": [
       "ol"
     ],
     "alternatively": [
@@ -4441,14 +4448,14 @@
       "p",
       "b"
     ],
-    "'domainname\\webservermachinename$'goplace": [
+    "'domainname\\webservermachinename&#36'goplace": [
       "ol"
     ],
     "execute": [
       "ol",
       "li"
     ],
-    "'domainname\\webservermachinename$'": [
+    "'domainname\\webservermachinename&#36'": [
       "li",
       "p",
       "b",
@@ -4465,7 +4472,7 @@
       "i",
       "i"
     ],
-    "'domainname\\webservermachinename$'go": [
+    "'domainname\\webservermachinename&#36'go": [
       "li"
     ],
     "targetdatabase": [
@@ -4804,7 +4811,7 @@
       "div",
       "pre"
     ],
-    "%@": [
+    "&#37;&#64;": [
       "div",
       "pre"
     ],
@@ -4812,7 +4819,7 @@
       "div",
       "pre"
     ],
-    "%<%@": [
+    "&#37><&#37;&#64;": [
       "div",
       "div",
       "pre",
@@ -4832,7 +4839,7 @@
       "div",
       "pre"
     ],
-    "%<!doctype": [
+    "&#37><&#33;doctype": [
       "div",
       "pre"
     ],
@@ -4860,6 +4867,10 @@
       "div",
       "pre"
     ],
+    "runat=\"server\"&nbsp;": [
+      "div",
+      "pre"
+    ],
     "void": [
       "div",
       "pre"
@@ -4876,14 +4887,12 @@
       "div",
       "pre"
     ],
-    "e": [
+    "e&nbsp;": [
       "div",
       "pre"
     ],
-    "{": [
+    "&#123&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
       "div",
-      "div",
-      "pre",
       "pre"
     ],
     "sqlconnection": [
@@ -4894,7 +4903,11 @@
       "div",
       "pre"
     ],
-    "sqlconnectionconfigurationmanager.connectionstrings[\"mydbconn1\"].tostring()))": [
+    "sqlconnectionconfigurationmanager.connectionstrings&#91;\"mydbconn1\"&#93;.tostring()))&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+      "div",
+      "pre"
+    ],
+    "&#123&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
       "div",
       "pre"
     ],
@@ -4910,7 +4923,7 @@
       "div",
       "pre"
     ],
-    "count*)": [
+    "count&#42;)": [
       "div",
       "pre"
     ],
@@ -4918,11 +4931,11 @@
       "div",
       "pre"
     ],
-    "cn;": [
+    "cn;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
       "div",
       "pre"
     ],
-    "cnopen();": [
+    "cnopen();&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
       "div",
       "pre"
     ],
@@ -4934,15 +4947,15 @@
       "div",
       "pre"
     ],
-    "cmdexecutereader(commandbehavior.closeconnection);": [
+    "cmdexecutereader(commandbehavior.closeconnection);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
       "div",
       "pre"
     ],
-    "rdrread();": [
+    "rdrread();&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
       "div",
       "pre"
     ],
-    "responsewrite(rdr[0].tostring());": [
+    "responsewrite(rdr&#91;0&#93;.tostring());": [
       "div",
       "pre"
     ],
@@ -4950,15 +4963,23 @@
       "div",
       "pre"
     ],
-    "}": [
+    "value&nbsp&nbsp;&nbsp;&nbsp;&nbsp;": [
       "div",
       "pre"
     ],
-    "}/script><html": [
+    "&#125&nbsp;": [
+      "div",
+      "pre"
+    ],
+    "&#125</script><html&nbsp;": [
       "div",
       "pre"
     ],
     "<head": [
+      "div",
+      "pre"
+    ],
+    "runat=\"server\"&nbsp;&nbsp;&nbsp;": [
       "div",
       "pre"
     ],
@@ -5616,23 +5637,23 @@
     "element": [
       "p"
     ],
-    "configuration>": [
+    "configuration>&nbsp;&nbsp;&nbsp;": [
       "div",
       "pre"
     ],
-    "system.web>": [
+    "system.web>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
       "div",
       "pre"
     ],
-    "mode=\"windows\"/": [
+    "mode=\"windows\"/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
       "div",
       "pre"
     ],
-    "impersonate=\"true\"/": [
+    "impersonate=\"true\"/&nbsp;&nbsp;&nbsp;": [
       "div",
       "pre"
     ],
-    "..": [
+    "..&nbsp;&nbsp;&nbsp;": [
       "div",
       "pre"
     ],
@@ -5836,7 +5857,7 @@
     "guidance": [
       "p"
     ],
-    "sink]": [
+    "0sink": [
       "title"
     ]
   },

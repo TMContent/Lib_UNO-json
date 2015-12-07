@@ -1,0 +1,23 @@
+<h2>What to Do</h2>
+<p>Use white-lists to restrict network connections to trusted hosts only.</p>
+<h2>Why</h2>
+<p>Preventing malicious systems from connecting prevents these malicious systems from carrying out attacks.</p>
+<h2>How</h2>
+<p>To use white-lists to restrict network connections to trusted hosts only:</p>
+<ol>
+<li>
+<p><strong>Determine what is being protected.</strong> Make a spreadsheet about each network-listening part of the application that might be susceptible to malicious network connections.</p>
+</li>
+<li>
+<p><strong>Identify trusted hosts.</strong> For each identified network-listening part of the application that might be exposed, determine a limited white-list of hosts that are authorized to connect to it, if possible. Add the white-list of authorized hosts to the spreadsheet or state that this part of the application has to be exposed and why.</p>
+</li>
+<li>
+<p><strong>Identify mechanisms available for restricting network connections.</strong> Find out what kind of firewall or other similar functionality is present that allows resricting access. For example, Unix-type systems have hosts.allow and hosts.deny files that allow restricting access to some services. There might be functionality that blocks untrusted connections in your application code or this might be performed by a firewall or some kind of a filtering network device.</p>
+</li>
+<li>
+<p><strong>Consider implementing connection validation.</strong> If there are no practical mechanisms for restricting network connections already in place, consider implementing this control within your application. Instead of just validating by IPs, use certificates to validate hosts before allowing connections.</p>
+</li>
+<li>
+<p><strong>Restrict network connections using white-lists.</strong> Use whatever mechanism for restricting network connections that is available to restrict access to network-listening resources to restrict access to allow only the trusted hosts as documented in the spreadsheet.</p>
+</li>
+</ol>

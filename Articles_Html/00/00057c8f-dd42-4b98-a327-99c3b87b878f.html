@@ -1,0 +1,12 @@
+<h2>What to Do</h2>
+<p>Use TLS to protect network communications.</p>
+<h2>Why</h2>
+<p>Properly using TLS to encrypt network communications prevents eavesdropping attacks and other types of man-in-the-middle attacks.</p>
+<h2>How</h2>
+<p>To use TLS to protect communications:</p>
+<ol>
+<li><strong>Identify all communications performed by the application.</strong> Review the application design to identify all network communications performed by the application.</li>
+<li><strong>Define communication security requirements.</strong> Define which network communications need to be encrypted. All transmissions that include sensitive data, including authentication credentials and session IDS, should be encrypted. In some cases, it might be practical to encrypt all network connections.</li>
+<li><strong>Identify code that uses the network.</strong> Identify code that is responsible for each network communication that needs to be encrypted.</li>
+<li><strong>Add code that uses TLS.</strong> Rewrite code that performs sensitive network communications to use TLS.</li>
+</ol>

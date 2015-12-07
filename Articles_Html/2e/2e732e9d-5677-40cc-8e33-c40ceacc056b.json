@@ -1,23 +1,16 @@
 {
   "id": "2e732e9d-5677-40cc-8e33-c40ceacc056b",
-  "checksum": "7e472c8939b0383c6d4d51ac735c0a6f",
+  "checksum": "7f20510d4996ccf4074986a850efae34",
   "words": {
-    "applies": [
+    "what": [
       "h1"
     ],
     "to": [
       "h1",
-      "h1",
       "p",
       "p",
       "h1",
       "p",
-      "h1"
-    ],
-    "c++": [
-      "p"
-    ],
-    "what": [
       "h1"
     ],
     "check": [
@@ -50,24 +43,12 @@
       "p",
       "ul",
       "li",
-      "ul",
-      "li",
-      "a",
       "title"
     ],
     "don't": [
       "p",
       "p",
       "p",
-      "ul",
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a",
-      "li",
-      "a",
       "title"
     ],
     "throw": [
@@ -75,15 +56,6 @@
       "p",
       "p",
       "p",
-      "ul",
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a",
-      "li",
-      "a",
       "title"
     ],
     "exceptions": [
@@ -96,15 +68,6 @@
       "p",
       "ul",
       "li",
-      "ul",
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a",
-      "li",
-      "a",
       "title"
     ],
     "if": [
@@ -197,13 +160,7 @@
       "p",
       "p",
       "ul",
-      "li",
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a"
+      "li"
     ],
     "why": [
       "h1"
@@ -331,28 +288,6 @@
       "ul",
       "li",
       "a"
-    ],
-    "related": [
-      "h1"
-    ],
-    "items": [
-      "h1"
-    ],
-    "deallocation": [
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a"
-    ],
-    "functions": [
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a"
     ]
   },
   "tags": {},
@@ -360,18 +295,6 @@
     {
       "href": "https://www.securecoding.cert.org/confluence/display/cplusplus/VOID+ERR33-CPP.+Destructors+must+not+throw+exceptions",
       "text": "https://www.securecoding.cert.org/confluence/display/cplusplus/VOID+ERR33-CPP.+Destructors+must+not+throw+exceptions"
-    },
-    {
-      "href": "/article/fd06b089-88ea-43df-bc41-f111a1848116",
-      "text": "Don't Throw Exceptions from Destructors"
-    },
-    {
-      "href": "/article/441b4138-1866-442f-8abb-6d05236d6fcb",
-      "text": "Don't Throw Exceptions from Deallocation Functions"
-    },
-    {
-      "href": "/article/26a68d55-95e2-4007-bfa6-d1eee30740de",
-      "text": "Deallocation functions don't throw exceptions"
     }
   ]
 }

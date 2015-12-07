@@ -13,10 +13,10 @@
           "e05b74bf-17b9-4541-affa-5d45c21ea9c2,dc679a7b-1657-4c81-8688-40d707e58c8b,"
         ],
         "Library_Id": [
-          "ea854894-8e16-46c8-9c61-737ef46d7e82"
+          "be5273b1-d682-4361-99d9-6234f2d47eb7"
         ],
         "Title": [
-          "Protect Session State from Unauthorized Access"
+          "1sink junk Protect Session State from Unauthorized Access"
         ],
         "Category": [
           "Session Management"
@@ -60,7 +60,7 @@
           "DataType": "Html"
         },
         "Data": [
-          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>\r\n      <div>Web Application</div>\r\n    </li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Ensure that the session token cannot be used to gain access to sensitive pages where secure operations are performed or to gain access to sensitive items of data.</p>\r\n  <h1>Why</h1>\r\n  <p>Any session identifiers passing over unencrypted channels can be captured by the attackers to spoof identity. Because Web applications are built on the stateless HTTP protocol, session management is an application-level responsibility. Examine the approach to session management by your application because it directly affects the overall security of your application.&nbsp;&nbsp;</p>\r\n  <h1>When</h1>\r\n  <p>This is an important guideline and should be followed all tht time.</p>\r\n  <h1>How</h1>\r\n  <p>Consider how session state is to be stored. For optimum performance, you can store session state in the Web application's process address space. However, this approach has limited scalability and implications in Web farm scenarios, where requests from the same user cannot be guaranteed to be handled by the same server. In this scenario, an out-of-process state store on a dedicated state server or a persistent state store in a shared database is required. ASP.NET supports all three options.</p>\r\n  <p>You should secure the network link from the Web application to state store using IPSec or SSL to mitigate the risk of eavesdropping. Also consider how the Web application is to be authenticated by the state store. Use Windows authentication where possible to avoid passing plaintext authentication credentials across the network and to benefit from secure Windows account policies.</p>\r\n  <br />\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
+          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>\r\n      <div>Web Application</div>\r\n    </li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Ensure that the session token cannot be used to gain access to sensitive pages where secure operations are performed or to gain access to sensitive items of data.</p>\r\n  <h1>Why</h1>\r\n  <p>Any session identifiers passing over unencrypted channels can be captured by the attackers to spoof identity. Because Web applications are built on the stateless HTTP protocol, session management is an application-level responsibility. Examine the approach to session management by your application because it directly affects the overall security of your application.&amp;nbsp;&amp;nbsp;</p>\r\n  <h1>When</h1>\r\n  <p>This is an important guideline and should be followed all tht time.</p>\r\n  <h1>How</h1>\r\n  <p>Consider how session state is to be stored. For optimum performance, you can store session state in the Web application's process address space. However, this approach has limited scalability and implications in Web farm scenarios, where requests from the same user cannot be guaranteed to be handled by the same server. In this scenario, an out-of-process state store on a dedicated state server or a persistent state store in a shared database is required. ASP.NET supports all three options.</p>\r\n  <p>You should secure the network link from the Web application to state store using IPSec or SSL to mitigate the risk of eavesdropping. Also consider how the Web application is to be authenticated by the state store. Use Windows authentication where possible to avoid passing plaintext authentication credentials across the network and to benefit from secure Windows account policies.</p>\r\n  <br />\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns &amp; practices guidance.</p>"
         ]
       }
     ]

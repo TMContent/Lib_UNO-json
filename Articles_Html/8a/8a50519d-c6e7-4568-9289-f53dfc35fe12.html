@@ -1,6 +1,6 @@
-<p>##What to Check For##</p>
+<h2>What to Check For</h2>
 <p>Verify that an Intrusion Detection System (IDS) is deployed inside the Virtual Private Cloud (VPC).</p>
-<p>##Why##</p>
+<h2>Why</h2>
 <p>An IDS monitors your cloud environment and alerts you about detected intrusions. The IDS logs give you important information about API access such as:</p>
 <ul>
 <li>Who made the API call</li>
@@ -10,7 +10,7 @@
 <li>Where was the call made from?</li>
 </ul>
 <p>With this information you can update IDS settings and policies. The IDS is also important for monitoring and managing changes, and detecting AWS-specific environment changes.</p>
-<p>##How to Check##</p>
+<h2>How to Check</h2>
 <p>To verify that an IDS is deployed inside the VPC:</p>
 <ol>
 <li>
@@ -23,7 +23,7 @@
 <p><strong>Determine if an internal IDS is handling the VPC.</strong> If there is no IDS running as an EC2 instance, there might still be an IDS connected to the VPC using a VPN. Determine if the VPC is connected to another network using a VPN. If so, check the IDS on the network that the VPC is connected to using VPN to determine whether this internal IDS is used to monitor the VPC. If there is no IDS running inside the VPC itself or monitoring it via VPN, then this checklist item is not passed.</p>
 </li>
 </ol>
-<p>##How to Fix##</p>
+<h2>How to Fix</h2>
 <ol>
 <li>
 <p><strong>Install IDS.</strong> Choose an IDS with the required features. Traditional rack-based and virtual IDS's are available. Deploy the IDS in your VPC using documentation supplied with the system.</p>

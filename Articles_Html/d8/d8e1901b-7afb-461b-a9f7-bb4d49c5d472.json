@@ -1,19 +1,14 @@
 {
   "id": "d8e1901b-7afb-461b-a9f7-bb4d49c5d472",
-  "checksum": "90055c0dfb29fa1fabd1d34fd0286c73",
+  "checksum": "52c954254dc2dc6de42cf6d1e42c0d33",
   "words": {
-    "0": [
-      "pre",
-      "pre"
-    ],
-    "applies": [
-      "h1"
+    "what": [
+      "h2"
     ],
     "to": [
-      "h1",
-      "h1",
+      "h2",
       "p",
-      "h1",
+      "h2",
       "p",
       "ol",
       "ol",
@@ -21,7 +16,7 @@
       "li",
       "p",
       "p",
-      "h1",
+      "h2",
       "p",
       "ol",
       "ol",
@@ -42,27 +37,18 @@
       "li",
       "p"
     ],
-    "c++": [
-      "ul",
-      "li"
-    ],
-    "what": [
-      "h1"
-    ],
     "check": [
-      "h1",
-      "h1",
-      "ol",
+      "h2",
+      "h2",
       "li",
       "p",
       "strong",
-      "ol",
       "li",
       "p",
       "strong"
     ],
     "for": [
-      "h1",
+      "h2",
       "ol",
       "li",
       "p"
@@ -110,10 +96,7 @@
       "p",
       "p",
       "p",
-      "p",
-      "ul",
-      "li",
-      "a"
+      "p"
     ],
     "releases": [
       "p",
@@ -140,10 +123,7 @@
       "li",
       "li",
       "p",
-      "p",
-      "ul",
-      "li",
-      "a"
+      "p"
     ],
     "using": [
       "p",
@@ -154,17 +134,14 @@
       "li",
       "li",
       "p",
-      "p",
-      "ul",
-      "li",
-      "a"
+      "p"
     ],
     "semaphors": [
       "p",
       "p"
     ],
     "why": [
-      "h1"
+      "h2"
     ],
     "if": [
       "p",
@@ -172,8 +149,7 @@
       "li",
       "p",
       "pre",
-      "pre",
-      "pre"
+      "code"
     ],
     "a": [
       "p",
@@ -305,28 +281,16 @@
     ],
     "other": [
       "p",
-      "p",
-      "ul",
-      "li",
-      "a"
+      "p"
     ],
     "reference": [
-      "p",
-      "ul",
-      "li",
-      "a"
+      "p"
     ],
     "counting": [
-      "p",
-      "ul",
-      "li",
-      "a"
+      "p"
     ],
     "mechanisms": [
-      "p",
-      "ul",
-      "li",
-      "a"
+      "p"
     ],
     "cause": [
       "p"
@@ -357,7 +321,6 @@
     ],
     "release": [
       "p",
-      "ol",
       "ol",
       "li",
       "p",
@@ -445,8 +408,8 @@
       "p"
     ],
     "how": [
-      "h1",
-      "h1"
+      "h2",
+      "h2"
     ],
     "use": [
       "p",
@@ -489,13 +452,17 @@
       "p",
       "pre",
       "pre",
+      "code",
+      "code",
       "p",
       "p",
       "p",
       "p",
       "p",
       "pre",
-      "pre"
+      "pre",
+      "code",
+      "code"
     ],
     "following": [
       "p",
@@ -623,6 +590,9 @@
       "p",
       "p"
     ],
+    "release\n\n\ncheck": [
+      "ol"
+    ],
     "error": [
       "ol",
       "ol",
@@ -646,6 +616,7 @@
       "strong",
       "p",
       "pre",
+      "code",
       "p"
     ],
     "pay": [
@@ -669,7 +640,7 @@
       "p"
     ],
     "fix": [
-      "h1"
+      "h2"
     ],
     "perform": [
       "p"
@@ -682,9 +653,6 @@
     ],
     "semaphores": [
       "p",
-      "ul",
-      "li",
-      "a",
       "title"
     ],
     "used": [
@@ -903,18 +871,13 @@
       "li",
       "p"
     ],
-    "stone": [
-      "ol",
-      "li",
-      "p"
+    "stone\n\n\ncheck": [
+      "ol"
     ],
     "be": [
       "ol",
       "li",
-      "p",
-      "ul",
-      "li",
-      "a"
+      "p"
     ],
     "especially": [
       "ol",
@@ -924,10 +887,7 @@
     "careful": [
       "ol",
       "li",
-      "p",
-      "ul",
-      "li",
-      "a"
+      "p"
     ],
     "exceptions": [
       "ol",
@@ -946,6 +906,7 @@
       "p",
       "p",
       "pre",
+      "code",
       "p",
       "p"
     ],
@@ -1001,8 +962,12 @@
       "p",
       "pre",
       "pre",
+      "code",
+      "code",
       "pre",
-      "pre"
+      "pre",
+      "code",
+      "code"
     ],
     "out": [
       "ol",
@@ -1024,13 +989,17 @@
       "li",
       "p"
     ],
+    "stone": [
+      "li",
+      "p"
+    ],
     "problem": [
-      "h1"
+      "h2"
     ],
     "example": [
-      "h1",
+      "h2",
       "p",
-      "h1",
+      "h2",
       "p"
     ],
     "acquired": [
@@ -1041,8 +1010,10 @@
       "p",
       "p",
       "pre",
+      "code",
       "p",
-      "pre"
+      "pre",
+      "code"
     ],
     "released": [
       "p",
@@ -1065,163 +1036,188 @@
     ],
     "bool": [
       "pre",
-      "pre"
+      "code",
+      "pre",
+      "code"
     ],
     "readfromsocketsocket": [
       "pre",
-      "pre"
+      "code",
+      "pre",
+      "code"
     ],
     "socket": [
       "pre",
+      "code",
       "pre",
-      "pre",
-      "pre"
+      "code"
     ],
     "char": [
       "pre",
-      "pre"
+      "code",
+      "pre",
+      "code"
     ],
     "*recvbuffer": [
       "pre",
-      "pre"
+      "code",
+      "pre",
+      "code"
     ],
     "int": [
       "pre",
+      "code",
       "pre",
-      "pre",
-      "pre"
+      "code"
     ],
-    "len{": [
+    "len\n{\n//first": [
       "pre",
-      "pre"
-    ],
-    "//first": [
+      "code",
       "pre",
-      "pre"
+      "code"
     ],
     "from": [
       "pre",
-      "pre"
-    ],
-    "gsemaphoreaquire();": [
+      "code",
       "pre",
-      "pre"
+      "code"
+    ],
+    "socketgsemaphore.aquire();\nint": [
+      "pre",
+      "code",
+      "pre",
+      "code"
     ],
     "ret": [
       "pre",
       "pre",
+      "code",
+      "code",
       "pre",
-      "pre"
+      "pre",
+      "code",
+      "code"
     ],
     "=": [
       "pre",
       "pre",
+      "code",
+      "code",
       "pre",
-      "pre"
+      "pre",
+      "code",
+      "code"
     ],
     "readsocket,": [
       "pre",
-      "pre"
+      "code",
+      "pre",
+      "code"
     ],
     "recvbuffer": [
       "pre",
-      "pre"
+      "code",
+      "pre",
+      "code"
     ],
     "len": [
       "pre",
-      "pre"
+      "code",
+      "pre",
+      "code"
     ],
-    "0;": [
+    "0;\n\n\nif": [
       "pre",
-      "pre"
+      "code",
+      "pre",
+      "code"
     ],
-    "{": [
+    "0\n{": [
       "pre",
+      "code",
       "pre",
-      "pre",
-      "pre"
+      "code"
     ],
     "//now": [
       "pre",
-      "pre"
+      "code",
+      "pre",
+      "code"
     ],
     "parse": [
       "pre",
-      "pre"
+      "code",
+      "pre",
+      "code"
     ],
     "buffer": [
       "pre",
-      "pre"
+      "code",
+      "pre",
+      "code"
     ],
     "parsebufferrecvbuffer,": [
       "pre",
-      "pre"
+      "code",
+      "pre",
+      "code"
     ],
     "len;": [
       "pre",
-      "pre"
+      "code",
+      "pre",
+      "code"
     ],
     "gsemaphorerelease();": [
       "pre",
+      "code",
       "pre",
-      "pre"
+      "pre",
+      "code",
+      "code"
     ],
-    "true": [
+    "true\n}\nelse\n{": [
       "pre",
-      "pre"
-    ],
-    "}": [
+      "code",
       "pre",
-      "pre"
-    ],
-    "else": [
-      "pre",
-      "pre"
+      "code"
     ],
     "//can": [
-      "pre"
+      "pre",
+      "code"
     ],
     "wsagetlasterror": [
-      "pre"
+      "pre",
+      "code"
     ],
     "we": [
-      "pre"
+      "pre",
+      "code"
     ],
     "need": [
-      "pre"
+      "pre",
+      "code"
     ],
     "details": [
-      "pre"
-    ],
-    "false": [
       "pre",
-      "pre"
+      "code"
     ],
-    "}}": [
+    "false\n}\n}": [
       "pre",
-      "pre"
+      "code",
+      "pre",
+      "code"
     ],
     "solution": [
-      "h1"
+      "h2"
     ],
     "also": [
       "p"
     ],
     "handler": [
       "p"
-    ],
-    "related": [
-      "h1"
-    ],
-    "items": [
-      "h1"
     ]
   },
   "tags": {},
-  "links": [
-    {
-      "href": "/article/09603b85-0c14-493e-b611-c10b60e5c6a9",
-      "text": "Be Careful When Using Semaphores and Other Reference Counting Mechanisms"
-    }
-  ]
+  "links": []
 }

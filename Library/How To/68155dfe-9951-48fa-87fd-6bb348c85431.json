@@ -16,7 +16,7 @@
           "be5273b1-d682-4361-99d9-6234f2d47eb7"
         ],
         "Title": [
-          "How to Create a Temporary X.509 Certificate for Transport Security"
+          "[VERIFYME] How to Create a Temporary X.509 Certificate for Transport Security"
         ],
         "Category": [
           "Communication Security"
@@ -60,7 +60,7 @@
           "DataType": "Html"
         },
         "Data": [
-          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>Microsoft® Windows Communication Foundation (WCF) 3.5 \r\n</li>\r\n    <li>Microsoft Visual Studio® 2008</li>\r\n  </ul>\r\n  <h1>Description</h1>\r\n  <p>Use the following steps to create a temporary X.509 certificate for transport security:</p>\r\n  <ol>\r\n    <li>Create a certificate to act as your Root Certificate Authority\r\n<ol><pre>makecert -n \"CN=RootCATest\" -r -sv RootCATest.pvk RootCATest.cer</pre></ol></li>\r\n    <li>Install your Root Certificate Authority on the server and client machines. Use MMC to install the RootCATes.cer on client and server machines in the Trusted Root Certification Authorities store\r\n</li>\r\n    <li>Create and install your temporary service certificate\r\n<ol><pre>makecert -sk keyName -iv RootCATest.pvk -n \"CN=MachineName.domain.com\" -ic RootCATest.cer -sr localmachine -ss my -sky exchange -pe </pre></ol></li>\r\n    <li>Use Inetmgr to configure the web site and virtual directory to use the certificate and to require TLS to secure communication </li>\r\n  </ol>\r\n  <h1>Additional Resources</h1>\r\n  <ul>\r\n    <li>For more information see “Certificate Creation Tool (Makecert.exe)“ at <a href=\"http://msdn.microsoft.com/en-us/library/bfsktky3(VS.80).aspx\">http://msdn.microsoft.com/en-us/library/bfsktky3(VS.80).aspx</a></li>\r\n  </ul>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance.</p>"
+          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>Microsoft® Windows Communication Foundation (WCF) 3.5 \r\n</li>\r\n    <li>Microsoft Visual Studio® 2008</li>\r\n  </ul>\r\n  <h1>Description</h1>\r\n  <p>Use the following steps to create a temporary X.509 certificate for transport security:</p>\r\n  <ol>\r\n    <li>Create a certificate to act as your Root Certificate Authority\r\n<ol><pre>makecert -n \"CN=RootCATest\" -r -sv RootCATest.pvk RootCATest.cer</pre></ol></li>\r\n    <li>Install your Root Certificate Authority on the server and client machines. Use MMC to install the RootCATes.cer on client and server machines in the Trusted Root Certification Authorities store\r\n</li>\r\n    <li>Create and install your temporary service certificate\r\n<ol><pre>makecert -sk keyName -iv RootCATest.pvk -n \"CN=MachineName.domain.com\" -ic RootCATest.cer -sr localmachine -ss my -sky exchange -pe </pre></ol></li>\r\n    <li>Use Inetmgr to configure the web site and virtual directory to use the certificate and to require TLS to secure communication </li>\r\n  </ol>\r\n  <h1>Additional Resources</h1>\r\n  <ul>\r\n    <li>For more information see “Certificate Creation Tool (Makecert.exe)“ at <a href=\"http://msdn.microsoft.com/en-us/library/bfsktky3(VS.80).aspx\">http://msdn.microsoft.com/en-us/library/bfsktky3(VS.80).aspx</a></li>\r\n  </ul>\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns &amp; practices guidance.</p>"
         ]
       }
     ]

@@ -1,6 +1,6 @@
-<p>##What to Check For##</p>
+<h2>What to Check For</h2>
 <p>Verify that virtual images are backed up.</p>
-<p>##Why##</p>
+<h2>Why</h2>
 <p>Backups are an important part of your information management plan. AWS provides physical safeguard of your media, while you must maintain the integrity of cloud configuration and make backups (also known as snapshots) so that:</p>
 <ul>
 <li>An original machine image can be rapidly restored.</li>
@@ -8,7 +8,7 @@
 <li>Recovery from a system breach can be rapid.</li>
 <li>Alternate configurations can be tested and deployed.</li>
 </ul>
-<p>##When##</p>
+<h2>When</h2>
 <p>Backup requirements and intervals are specified in your information management plan. Best practices recommend that you make backups according to your lifecycle needs, during:</p>
 <ol>
 <li>
@@ -24,7 +24,7 @@
 <p><strong>Incident Response.</strong> As part of your incident response, make snapshots before attempting repair methods. If you determine the repair is not working, you can go back in time through snapshots and choose the best course for restoring operations to your cloud.</p>
 </li>
 </ol>
-<p>##How to Check##</p>
+<h2>How to Check</h2>
 <p>To verify that virtual images are backed up:</p>
 <ol>
 <li>
@@ -34,7 +34,7 @@
 <p><strong>Verify that backups are maintained.</strong> Go through the spreadsheet of EC2 instances and make sure that the disk image for each instance is backed up and recent copies of the backups are maintained offline.</p>
 </li>
 </ol>
-<p>##How to Fix##</p>
+<h2>How to Fix</h2>
 <ol>
 <li>
 <p><strong>Unmount Volume.</strong> If the Elastic Block Store (EBS) volume serves as a root device, stop the instance before taking a snapshot. In Linux, issue the command <code>umount -d device_name</code> and replace device_name with <code>/dev/sdh</code>, for example. The volume is unmounted.</p>

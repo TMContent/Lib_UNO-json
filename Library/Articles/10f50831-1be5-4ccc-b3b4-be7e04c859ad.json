@@ -1,0 +1,56 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "0",
+      "Content_Hash": "0"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "10f50831-1be5-4ccc-b3b4-be7e04c859ad"
+        ],
+        "Library_Id": [
+          "be5273b1-d682-4361-99d9-6234f2d47eb7"
+        ],
+        "Title": [
+          "Load Code Carefully"
+        ],
+        "Category": [
+          ""
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "false",
+          "DataType": "markdown"
+        },
+        "Data": [
+          "## What to Do ##\r\n\r\nLoad additional code carefully.\r\n\r\n## Why ##\r\n\r\nLoad additional code carefully to prevent attackers from injecting malicious code.\r\n\r\n## How ##\r\n\r\nTo load code carefully:\r\n\r\n1. **Identify code that loads additional code.** Make a spreadsheet about all code being loaded by the application.\r\n\r\n2. **Validate any user data used to determine what code to load.** It's not a good idea to load code based on user input. However, if it is necessary, then at least validate the user data before using it to load code.\r\n\r\n3. **Validate the source of the code being loaded.** Use white-lists to determine the trusted sources of code before loading anything. Cryptographic signatures can also be used to identify trusted code.\r\n\r\n\r\n\r\n\r\n"
+        ]
+      }
+    ]
+  }
+}

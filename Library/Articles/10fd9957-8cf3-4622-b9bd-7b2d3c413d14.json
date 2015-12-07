@@ -1,0 +1,56 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "0",
+      "Content_Hash": "0"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "10fd9957-8cf3-4622-b9bd-7b2d3c413d14"
+        ],
+        "Library_Id": [
+          "be5273b1-d682-4361-99d9-6234f2d47eb7"
+        ],
+        "Title": [
+          "Validate Credentials Before Authentication"
+        ],
+        "Category": [
+          ""
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "false",
+          "DataType": "markdown"
+        },
+        "Data": [
+          "## What to Do ##\r\n\r\nValidate user credentials before processing them.\r\n\r\n## Why ##\r\n\r\nFailure to validate user credentials could cause improper authentication. This can allow an attacker to authenticate as another user without the need to steal credentials.\r\n\r\n## When ##\r\n\r\nIf your application accepts and processes user credentials, then validate the credentials before processing them.\r\n\r\n## How ##\r\n\r\nUse the following steps when validating user credentials:\r\n\r\n1. **Establish username requirements.** Determine what is the acceptable character set and length that should be allowed within a username. For instance, require that usernames should be at least six characters long and must contain alpha-numeric characters only.\r\n2. **Use whitelist validation.** Whitelisting involves the establishment of what is good input for your application. Once good input is defined, compare all input against the established good input. If the input does not resemble good input, your application should discard it. This technique can be implemented using regular expressions. When using regular expressions, make sure to validate the length first to prevent regular expression denial of service vulnerabilities."
+        ]
+      }
+    ]
+  }
+}

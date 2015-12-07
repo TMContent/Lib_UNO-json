@@ -1,0 +1,11 @@
+<h2>What to Do</h2>
+<p>Perform range checks before values of mathematical operations or conversions are assigned to integer-type variables.</p>
+<h2>Why</h2>
+<p>Integer-type variables have minimum and maximum limits on data that they can store. Placing too much data in an integer-type variable results in an integer overflow. Different platforms fail differently as a result of integer overflows, but there is a possibility of an arbitrary code execution resulting from an integer overflow bug. When values that are too high or too low are assigned to unsigned integers, integer-wrapping results, which usually means that unexpected values are produced. Conversions between signed and unsigned integers, and other data types, may result in truncation or losing sign information. All of these bugs may result in very dangerous vulnerabilities. All of these bugs may be prevented by validating values of integer operations before assigning them to variables.</p>
+<h2>When</h2>
+<p>Validate data when assigning it to integer-type variables.</p>
+<h2>How</h2>
+<ol>
+<li><strong>Identify code.</strong> Identify all code that assigns values to integer-type variables. For existing code, it may be a good idea to prioritize components, so that the most critical elements are checked first. Some development environments and compilers may be able to detect these types of errors, but automatic detection should not be relied on for critical software components.</li>
+<li><strong>Add range checks.</strong> Use platform-defined constants to check that values being assigned to integer-type variables are valid.</li>
+</ol>

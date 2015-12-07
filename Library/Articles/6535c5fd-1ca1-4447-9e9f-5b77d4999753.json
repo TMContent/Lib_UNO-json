@@ -1,0 +1,56 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "0",
+      "Content_Hash": "0"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "6535c5fd-1ca1-4447-9e9f-5b77d4999753"
+        ],
+        "Library_Id": [
+          "be5273b1-d682-4361-99d9-6234f2d47eb7"
+        ],
+        "Title": [
+          "Protect Session Cookies"
+        ],
+        "Category": [
+          ""
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "false",
+          "DataType": "markdown"
+        },
+        "Data": [
+          "## What to Do ##\r\n\r\nSet the \"Secure\" and \"HTTPOnly\" flags on all sensitive cookies.\r\n\r\n## Why ##\r\n\r\nSet the \"Secure\" flag on all sensitive cookies to protect the contents of the sensitive cookies from eavesdropping attacks. Setting the \"Secure\" flag on sensitive cookies ensures they are only transferred over connections that are secured by TLS. The \"HTTPOnly\" flag prevents the contents of the marked cookie from being accessed by client-side script - this measure helps reduce the potential damage of Cross-Site Scripting attacks.\r\n\r\n## How ##\r\n\r\nTo set the \"Secure\" and \"HTTPOnly\" flags on all sensitive cookies:\r\n\r\n1. **Verify that TLS is available.** The \"Secure\" flag forces cookies to be sent over TLS. TLS has to be available for this to work.\r\n2. **Identify sensitive cookies.** Session cookies should always be considered sensitive. Enumerate all cookies used by the application. Make a list of cookies that may contain sensitive information.\r\n3. **Identify code that creates sensitive cookies.** For each sensitive cookie in the list, find the code that creates that cookie.\r\n4. **Set the \"Secure\" and \"HTTPOnly\" flags for each sensitive cookie.** For each piece of code that creates a sensitive cookie, add code that sets the \"Secure\" and \"HTTPOnly\" flags for the cookie. "
+        ]
+      }
+    ]
+  }
+}
