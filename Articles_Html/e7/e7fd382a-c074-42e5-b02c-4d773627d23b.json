@@ -1,13 +1,19 @@
 {
   "id": "e7fd382a-c074-42e5-b02c-4d773627d23b",
-  "checksum": "3f5e92dbd693d798aaeb0ba54b1dfd23",
+  "checksum": "f90b68bc5fa92103635e1ef15dcbd378",
   "words": {
+    "2": [
+      "pre",
+      "code",
+      "pre",
+      "code"
+    ],
     "applies": [
-      "h1"
+      "h2"
     ],
     "to": [
-      "h1",
-      "h1",
+      "h2",
+      "h2",
       "p",
       "p",
       "p",
@@ -21,7 +27,22 @@
       "li",
       "p",
       "p",
-      "strong"
+      "strong",
+      "p"
+    ],
+    "c": [
+      "ul",
+      "li"
+    ],
+    "and": [
+      "ul",
+      "li",
+      "ol",
+      "li",
+      "p",
+      "p",
+      "p",
+      "p"
     ],
     "c++": [
       "ul",
@@ -32,10 +53,10 @@
       "p"
     ],
     "what": [
-      "h1"
+      "h2"
     ],
     "do": [
-      "h1"
+      "h2"
     ],
     "don't": [
       "p",
@@ -58,8 +79,9 @@
       "p",
       "p",
       "strong",
-      "ul",
-      "li",
+      "p",
+      "p",
+      "p",
       "title"
     ],
     "input": [
@@ -89,8 +111,9 @@
       "p",
       "p",
       "strong",
-      "ul",
-      "li",
+      "p",
+      "p",
+      "p",
       "title"
     ],
     "in": [
@@ -122,8 +145,12 @@
       "p",
       "p",
       "strong",
-      "ul",
-      "li",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
       "title"
     ],
     "strings": [
@@ -138,8 +165,7 @@
       "p",
       "p",
       "strong",
-      "ul",
-      "li",
+      "p",
       "title"
     ],
     "stream": [
@@ -173,7 +199,6 @@
     "avoid": [
       "p",
       "p",
-      "ol",
       "li",
       "p",
       "strong"
@@ -194,8 +219,12 @@
       "ol",
       "ol",
       "ol",
+      "ol",
+      "li",
       "li",
       "p",
+      "p",
+      "strong",
       "li",
       "li",
       "p",
@@ -229,7 +258,6 @@
     ],
     "re": [
       "p",
-      "ol",
       "li",
       "p",
       "strong"
@@ -263,13 +291,15 @@
       "ol",
       "li",
       "p",
-      "strong"
+      "strong",
+      "p"
     ],
     "is": [
       "p",
       "p",
       "ol",
       "li",
+      "p",
       "p"
     ],
     "never": [
@@ -280,7 +310,7 @@
       "p"
     ],
     "why": [
-      "h1"
+      "h2"
     ],
     "an": [
       "p"
@@ -289,6 +319,7 @@
       "p"
     ],
     "can": [
+      "p",
       "p"
     ],
     "control": [
@@ -323,12 +354,20 @@
       "li",
       "p",
       "li",
+      "p",
+      "p",
+      "p",
+      "p",
       "p"
     ],
     "string": [
       "p",
       "ol",
       "li",
+      "p",
+      "p",
+      "p",
+      "p",
       "p"
     ],
     "may": [
@@ -347,11 +386,11 @@
       "p"
     ],
     "when": [
-      "h1",
+      "h2",
       "p"
     ],
     "how": [
-      "h1"
+      "h2"
     ],
     "perform": [
       "p"
@@ -372,6 +411,8 @@
       "p",
       "ol",
       "li",
+      "p",
+      "p",
       "p"
     ],
     "identify": [
@@ -380,7 +421,7 @@
       "p",
       "strong"
     ],
-    "uses formatted": [
+    "uses": [
       "ol",
       "li",
       "p",
@@ -394,121 +435,131 @@
     "sprintf": [
       "ol",
       "li",
-      "ul",
-      "li"
+      "pre",
+      "code"
     ],
     "_snprintf": [
       "ol",
       "li",
-      "ul",
-      "li"
+      "pre",
+      "code"
     ],
     "printf": [
       "ol",
       "li",
-      "ul",
-      "li"
+      "pre",
+      "code"
     ],
     "fprintf": [
       "ol",
       "li",
-      "ul",
-      "li"
+      "pre",
+      "code"
     ],
     "scanf": [
       "ol",
       "li",
-      "ul",
-      "li"
+      "pre",
+      "code"
     ],
-    "fscanfsscanfswprintf": [
+    "fscanf": [
       "ol",
       "li",
-      "ul"
+      "pre",
+      "code"
+    ],
+    "sscanf": [
+      "ol",
+      "li",
+      "pre",
+      "code"
+    ],
+    "swprintf": [
+      "ol",
+      "li",
+      "pre",
+      "code"
     ],
     "wsprintfa": [
       "ol",
       "li",
-      "ul",
-      "li"
+      "pre",
+      "code"
     ],
     "wsprintfw": [
       "ol",
       "li",
-      "ul",
-      "li"
+      "pre",
+      "code"
     ],
     "vsprintf": [
       "ol",
       "li",
-      "ul",
-      "li"
+      "pre",
+      "code"
     ],
     "vswprintf": [
       "ol",
       "li",
-      "ul",
-      "li"
+      "pre",
+      "code"
     ],
     "_snwprintf": [
       "ol",
       "li",
-      "ul",
-      "li"
+      "pre",
+      "code"
     ],
     "_vsnprintf": [
       "ol",
       "li",
-      "ul",
-      "li"
+      "pre",
+      "code"
     ],
     "_vsnwprintf": [
       "ol",
       "li",
-      "ul",
-      "li"
+      "pre",
+      "code"
     ],
     "vprintf": [
       "ol",
       "li",
-      "ul",
-      "li"
+      "pre",
+      "code"
     ],
     "vwprintf": [
       "ol",
       "li",
-      "ul",
-      "li"
+      "pre",
+      "code"
     ],
     "vfprintf": [
       "ol",
       "li",
-      "ul",
-      "li"
+      "pre",
+      "code"
     ],
     "vwfprintf": [
       "ol",
       "li",
-      "ul",
-      "li"
+      "pre",
+      "code"
     ],
     "fwscanf": [
       "ol",
       "li",
-      "ul",
-      "li"
+      "pre",
+      "code"
     ],
     "wscanf": [
       "ol",
       "li",
-      "ul",
-      "li"
+      "pre",
+      "code"
     ],
-    "swscanf": [
-      "ol",
-      "li",
-      "ul",
-      "li"
+    "swscanf\n\n\navoid": [
+      "ol"
     ],
     "consider": [
       "ol",
@@ -545,10 +596,8 @@
       "li",
       "p"
     ],
-    "vulnerabilities": [
-      "ol",
-      "li",
-      "p"
+    "vulnerabilities\n\n\n(re": [
+      "ol"
     ],
     "exclude": [
       "ol",
@@ -561,8 +610,7 @@
       "li",
       "p",
       "strong",
-      "ul",
-      "li"
+      "p"
     ],
     "place": [
       "ol",
@@ -579,11 +627,6 @@
       "li",
       "p"
     ],
-    "and": [
-      "ol",
-      "li",
-      "p"
-    ],
     "pass": [
       "ol",
       "li",
@@ -595,11 +638,14 @@
       "li",
       "li",
       "p",
+      "p",
       "p"
     ],
     "as": [
       "ol",
       "li",
+      "p",
+      "p",
       "p"
     ],
     "variadic": [
@@ -610,6 +656,7 @@
     "arguments": [
       "ol",
       "li",
+      "p",
       "p"
     ],
     "instead": [
@@ -622,63 +669,228 @@
       "li",
       "p"
     ],
-    "fscanf": [
-      "li"
+    "swscanf": [
+      "li",
+      "pre",
+      "code"
     ],
-    "sscanf": [
-      "li"
+    "vulnerabilities": [
+      "li",
+      "p",
+      "p"
     ],
-    "swprintf": [
-      "li"
+    "problem": [
+      "h2"
+    ],
+    "example": [
+      "h2",
+      "p",
+      "h2"
+    ],
+    "classic": [
+      "p"
+    ],
+    "vulnerability": [
+      "p"
+    ],
+    "#include": [
+      "pre",
+      "code",
+      "pre",
+      "code"
+    ],
+    "stdio.h>\n#include": [
+      "pre",
+      "code",
+      "pre",
+      "code"
+    ],
+    "string.h>\n\nint": [
+      "pre",
+      "code",
+      "pre",
+      "code"
+    ],
+    "mainint": [
+      "pre",
+      "code",
+      "pre",
+      "code"
+    ],
+    "argc": [
+      "pre",
+      "pre",
+      "code",
+      "code",
+      "pre",
+      "pre",
+      "code",
+      "code"
+    ],
+    "char*": [
+      "pre",
+      "code",
+      "pre",
+      "code"
+    ],
+    "argv])": [
+      "pre",
+      "code",
+      "pre",
+      "code"
+    ],
+    "{if": [
+      "pre",
+      "code",
+      "pre",
+      "code"
+    ],
+    "!=": [
+      "pre",
+      "code",
+      "pre",
+      "code"
+    ],
+    "return": [
+      "pre",
+      "code",
+      "pre",
+      "code"
+    ],
+    "0\n\nprintf(argv[1]);\nreturn": [
+      "pre",
+      "code"
+    ],
+    "1\n}": [
+      "pre",
+      "code",
+      "pre",
+      "code"
+    ],
+    "compilers": [
+      "p"
+    ],
+    "often": [
+      "p"
+    ],
+    "detect": [
+      "p"
+    ],
+    "such": [
+      "p"
+    ],
+    "produce": [
+      "p"
+    ],
+    "warnings": [
+      "p"
+    ],
+    "like": [
+      "p"
+    ],
+    "this": [
+      "p"
+    ],
+    "format_string_vulnc:7:1:": [
+      "p"
+    ],
+    "warning": [
+      "p"
+    ],
+    "literal": [
+      "p"
+    ],
+    "no": [
+      "p"
+    ],
+    "": [
+      "p"
+    ],
+    "wformat": [
+      "p"
+    ],
+    "security]": [
+      "p"
+    ],
+    "solution": [
+      "h2"
+    ],
+    "make": [
+      "p"
+    ],
+    "sure": [
+      "p"
+    ],
+    "processed": [
+      "p"
+    ],
+    "by": [
+      "p"
+    ],
+    "specifying": [
+      "p"
+    ],
+    "static": [
+      "p"
+    ],
+    "then": [
+      "p"
+    ],
+    "passing": [
+      "p"
+    ],
+    "data": [
+      "p"
+    ],
+    "0\n\nprintf(\"%s\",": [
+      "pre",
+      "code"
+    ],
+    "argv1]);\nreturn": [
+      "pre",
+      "code"
     ],
     "additional": [
-      "h1"
+      "h2"
     ],
     "resources": [
-      "h1"
+      "h2"
     ],
     "for": [
-      "ul",
-      "li"
+      "p"
     ],
     "more": [
-      "ul",
-      "li"
+      "p"
     ],
     "information": [
-      "ul",
-      "li"
+      "p"
     ],
     "about": [
-      "ul",
-      "li"
+      "p"
     ],
     "excluding": [
-      "ul",
-      "li"
+      "p"
     ],
     "please": [
-      "ul",
-      "li"
+      "p"
     ],
-    "see https//www.securecoding.cert.org/confluence/display/cplusplus/fio30": [
-      "ul",
-      "li"
+    "see": [
+      "p"
     ],
-    "cpp.+exclude+user+input+from+format+strings": [
-      "ul",
-      "li",
+    "https//www.securecoding.cert.org/confluence/display/cplusplus/void+fio30": [
+      "p",
       "a"
     ],
-    "https//www.securecoding.cert.org/confluence/display/cplusplus/fio30": [
+    "cpp.+exclude+user+input+from+format+strings": [
+      "p",
       "a"
     ]
   },
   "tags": {},
   "links": [
     {
-      "href": "https://www.securecoding.cert.org/confluence/display/cplusplus/FIO30-CPP.+Exclude+user+input+from+format+strings",
-      "text": "https://www.securecoding.cert.org/confluence/display/cplusplus/FIO30-CPP.+Exclude+user+input+from+format+strings"
+      "href": "https://www.securecoding.cert.org/confluence/display/cplusplus/VOID+FIO30-CPP.+Exclude+user+input+from+format+strings",
+      "text": "https://www.securecoding.cert.org/confluence/display/cplusplus/VOID+FIO30-CPP.+Exclude+user+input+from+format+strings"
     }
   ]
 }

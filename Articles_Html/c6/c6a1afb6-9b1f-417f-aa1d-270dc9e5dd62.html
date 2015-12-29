@@ -1,7 +1,0 @@
-<h2>Applies To</h2><ul><li> Web Applications</li>
-</ul><h2>What to Do</h2><p>Do not pass sensitive data in query strings or Form fields. Consider using encrypted session identifiers and store the sensitive data in the session state store on the server.
-</p><h2>Why</h2><p>If you pass sensitive data, such as session identifiers, using parameters such as query strings, a malicious client can easily bypass your server side checks with simple parameter manipulation.
-</p><h2>When</h2><p>When your application validates input parameters using query strings. 
-</p><h2>How</h2><p>Make sure that users do not bypass your checks by manipulating parameters. URL parameters can be manipulated by end users through the browser address text box. For example, the URL <tt> http://www.&lt;YourSite&gt;/&lt;YourApp&gt;/sessionId=10 </tt> has a value of 10 that can be changed to some random number to receive different output. Make sure that you check this in server-side code, not in client-side JavaScript, which can be disabled in the browser.
-</p><p>
-Passing sensitive data, such as session identifiers, using parameters such as query strings is not recommended because there is no easy way to prevent the manipulation of data in query strings or form fields. Instead, consider using encrypted session identifiers and store the sensitive data in the session state store on the server.  </p>

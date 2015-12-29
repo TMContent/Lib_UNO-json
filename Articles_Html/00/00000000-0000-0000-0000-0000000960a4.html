@@ -16,107 +16,16 @@
 <li><strong>Add calls to encoding functions to functions that display untrusted data.</strong> Add calls to encoding functions in a way that all untrusted data is encoded before being displayed. Make sure that output data is encoded correctly for its respective context.</li>
 </ol>
 <h2>Problem Example</h2>
-<p>xss_unsafe.php:</p>
-<pre><code>&lt;HTML&gt;
-&lt;HEAD&gt;
-&lt;TITLE&gt;XSS Unsafe page&lt;/TITLE&gt;
-&lt;/HEAD&gt;
-&lt;BODY&gt;
-&lt;FORM name=&quot;xss1&quot; action=&quot;xss_unsafe.php&quot; method=&quot;POST&quot; &gt;
-Enter your username:
-&lt;input type=&quot;text&quot; name=&quot;username&quot; value=&quot;&lt;?php if (isset($_POST['username'])){ echo $_POST['username']; } ?&gt;&quot; /&gt;
-&lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
-&lt;/FORM&gt;
-&lt;FORM name=&quot;xss2&quot; action=&quot;xss_unsafe.php&quot; method=&quot;POST&quot; &gt;
-Enter URL:
-&lt;input type=&quot;text&quot; name=&quot;url&quot; value=&quot;&quot; /&gt;
-&lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
-&lt;/FORM&gt;
-&lt;?php
-if (isset($_POST['username'])){
-echo &quot;The entered username is &quot;;
-echo $_POST['username'];
-}
-?&gt;
-&lt;BR/&gt;
-&lt;script&gt;
-var a= &lt;?php if (isset($_POST['username'])){ echo $_POST['username']; }
-?&gt;;
-document.write(&quot;The username processed by JS is &quot;);
-document.write(a);
-&lt;/script&gt;
-&lt;?php
-$url= $_POST['url'];
-?&gt;
-&lt;!--
-&lt;style type=&quot;text/css&quot;&gt;
-body {
-background-image: url(&lt;?php echo '&quot;'.$_POST['url'].'&quot;'; ?&gt;);
-background-color: #cccccc;
-}
-&lt;/style&gt;
---&gt;
-&lt;/BODY&gt;
-&lt;/HTML&gt;
+<p>Simply rendering user data submitted as a post parameter is dangerous and will result in a reflected XSS vulnerability:</p>
+<pre><code>&lt;?php
+echo $_REQUEST['data'];
+?&gt;  
 </code></pre>
 <h2>Solution Example</h2>
-<p>xss_safe.php:</p>
-<pre><code>&lt;HTML&gt;
-&lt;HEAD&gt;
-&lt;TITLE&gt;XSS safe page&lt;/TITLE&gt;
-&lt;/HEAD&gt;
-&lt;?php
-/*
-You need to download the ESAPI codebase from Git and configure it. Make sure you give www-data or whatever user your webserver is running
-as, permissions to this directory. If you get weird logger warnings adjust error reporting in PHP accordingly.
-Trying to fix ESAPI cleanly does not appear to work. Did not spend too much time on this though.
-*/
-$newpath= set_include_path('/tmp');
-require('/tmp/PHPEsapi/src/ESAPI.php');
-new ESAPI('/tmp/PHPEsapi/ESAPI.xml');
-$encoder = ESAPI::getEncoder();
-?&gt;
-&lt;?php
-/* This is to ensure that XSS attacks using older encodings are prevented against */
-$encoding= 'UTF-8';
-header('Content-Type: text/html; charset=utf-8');
-?&gt;
-&lt;BODY&gt;
-&lt;FORM name=&quot;xss1&quot; action=&quot;xss_safe.php&quot; method=&quot;POST&quot; &gt;
-Enter your username:
-&lt;input type=&quot;text&quot; name=&quot;username&quot; value=&quot;&lt;?php if (isset($_POST['username'])){ echo $encoder-&gt;encodeForHTMLAttribute($_POST['username']); } ?&gt;&quot; /&gt;
-&lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
-&lt;/FORM&gt;
-&lt;FORM name=&quot;xss2&quot; action=&quot;xss_safe.php&quot; method=&quot;POST&quot; &gt;
-Enter URL:
-&lt;input type=&quot;text&quot; name=&quot;url&quot; value=&quot;&quot; /&gt;
-&lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
-&lt;/FORM&gt;
-&lt;?php
-if (isset($_POST['username'])){
-echo &quot;The entered username is &quot;;
-echo $encoder-&gt;encodeForHTML($_POST['username']) ;
-}
-?&gt;
-&lt;BR/&gt;
-&lt;script&gt;
-var a= &lt;?php if (isset($_POST['username'])){ echo $_POST['username']; } ?&gt;;
-document.write(&quot;The username processed by JS is &quot;);
-document.write($encoder-&gt;encodeForJS(a));
-&lt;/script&gt;
-&lt;?php
-$url= $_POST['url'];
-?&gt;
-&lt;!--
-&lt;style type=&quot;text/css&quot;&gt;
-body {
-background-image: url(&lt;?php echo '&quot;'.$encoder-&gt;encodeForCSS($_POST['url']).'&quot;'; ?&gt;);
-background-color: #cccccc;
-}
-&lt;/style&gt;
---&gt;
-&lt;/BODY&gt;
-&lt;/HTML&gt;
+<p>Use the htmlspecialchars() function to encode untrusted data before displaying it to prevent reflected XSS. Unfortunately, PHP has a limited built-in support for encoding functions, that essentially only support HTML and URL contexts. These are the two most common contexts, but it is a serious limitation that the developer has to be aware of. It is best to simply not include untrusted data in other contexts and that should be possible for most common applications.</p>
+<pre><code>&lt;?php
+echo htmlspecialchars($_REQUEST['data']);
+?&gt;  
 </code></pre>
 <h2>Additional Resources</h2>
 <ul>
