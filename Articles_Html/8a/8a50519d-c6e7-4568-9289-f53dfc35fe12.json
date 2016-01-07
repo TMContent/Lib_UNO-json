@@ -1,13 +1,18 @@
 {
   "id": "8a50519d-c6e7-4568-9289-f53dfc35fe12",
-  "checksum": "682293e4a6019a830bd03b7f81e4d012",
+  "checksum": "5ce637b9d3f228fb5bb96daca360c44e",
   "words": {
-    "##what": [
+    "what": [
+      "h2",
+      "li",
+      "li",
+      "ol",
+      "li",
       "p"
     ],
     "to": [
-      "p",
-      "p",
+      "h2",
+      "h2",
       "p",
       "ol",
       "ol",
@@ -24,7 +29,7 @@
       "p",
       "p",
       "p",
-      "p",
+      "h2",
       "ol",
       "ol",
       "ol",
@@ -36,12 +41,26 @@
       "p"
     ],
     "check": [
-      "p",
+      "h2",
+      "h2",
       "ol",
       "li",
       "p"
     ],
-    "for##": [
+    "for": [
+      "h2",
+      "p",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "p",
+      "li",
+      "p",
+      "li",
+      "li",
+      "p",
       "p"
     ],
     "verify": [
@@ -264,8 +283,8 @@
     "vpc).": [
       "p"
     ],
-    "##why##": [
-      "p"
+    "why": [
+      "h2"
     ],
     "ids": [
       "p",
@@ -488,13 +507,6 @@
       "li",
       "p"
     ],
-    "what": [
-      "li",
-      "li",
-      "ol",
-      "li",
-      "p"
-    ],
     "accessed": [
       "li"
     ],
@@ -564,21 +576,6 @@
     "also": [
       "p"
     ],
-    "for": [
-      "p",
-      "ol",
-      "ol",
-      "ol",
-      "ol",
-      "li",
-      "p",
-      "li",
-      "p",
-      "li",
-      "li",
-      "p",
-      "p"
-    ],
     "monitoring": [
       "p",
       "ol",
@@ -595,15 +592,25 @@
     "detecting": [
       "p"
     ],
-    "aws-specific": [
-      "p"
-    ],
-    "##how": [
+    "aws": [
       "p",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "p",
+      "li",
+      "p",
+      "li",
+      "p",
+      "strong"
+    ],
+    "specific": [
       "p"
     ],
-    "check##": [
-      "p"
+    "how": [
+      "h2",
+      "h2"
     ],
     "vpc": [
       "p",
@@ -1047,8 +1054,8 @@
       "li",
       "p"
     ],
-    "fix##": [
-      "p"
+    "fix": [
+      "h2"
     ],
     "install": [
       "ol",
@@ -1079,7 +1086,12 @@
       "li",
       "p"
     ],
-    "rack-based": [
+    "rack": [
+      "ol",
+      "li",
+      "p"
+    ],
+    "based": [
       "ol",
       "li",
       "p"
@@ -1196,10 +1208,21 @@
       "li",
       "p"
     ],
-    "cross-account": [
+    "cross": [
       "ol",
       "ol",
       "li",
+      "p",
+      "li",
+      "p"
+    ],
+    "account": [
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
       "p",
       "li",
       "p"
@@ -1210,23 +1233,6 @@
       "p"
     ],
     "id": [
-      "ol",
-      "li",
-      "p"
-    ],
-    "aws": [
-      "ol",
-      "ol",
-      "ol",
-      "li",
-      "p",
-      "li",
-      "p",
-      "li",
-      "p",
-      "strong"
-    ],
-    "account": [
       "ol",
       "li",
       "p"
@@ -1248,6 +1254,9 @@
     ],
     "only": [
       "ol",
+      "ol",
+      "li",
+      "p",
       "li",
       "p"
     ],
@@ -1304,9 +1313,12 @@
     ],
     "write": [
       "ol",
+      "ol",
       "li",
       "p",
-      "strong"
+      "strong",
+      "li",
+      "p"
     ],
     "once": [
       "ol",
@@ -1449,11 +1461,6 @@
       "li",
       "p"
     ],
-    "write-only": [
-      "ol",
-      "li",
-      "p"
-    ],
     "store": [
       "ol",
       "li",
@@ -1485,10 +1492,13 @@
     ],
     "public": [
       "ol",
+      "ol",
       "li",
+      "li",
+      "p",
       "p"
     ],
-    "non-public": [
+    "non": [
       "ol",
       "li",
       "p"

@@ -36,7 +36,10 @@
       "li",
       "li",
       "ul",
-      "li"
+      "ul",
+      "li",
+      "li",
+      "a"
     ],
     "check": [
       "h2",
@@ -216,6 +219,9 @@
       "li",
       "li",
       "strong",
+      "ul",
+      "li",
+      "a",
       "title"
     ],
     "on": [
@@ -229,7 +235,10 @@
       "li",
       "p",
       "ul",
+      "ul",
       "li",
+      "li",
+      "a",
       "title"
     ],
     "session": [
@@ -476,7 +485,8 @@
       "li"
     ],
     "only": [
-      "p"
+      "p",
+      "title"
     ],
     "transferred": [
       "p"
@@ -516,9 +526,15 @@
     "mitigate": [
       "p"
     ],
-    "cross-site": [
+    "cross": [
       "p",
       "p"
+    ],
+    "site": [
+      "p",
+      "p",
+      "ol",
+      "li"
     ],
     "scripting": [
       "p",
@@ -550,8 +566,13 @@
       "li",
       "li"
     ],
-    "client-side": [
+    "client": [
       "p"
+    ],
+    "side": [
+      "p",
+      "ol",
+      "li"
     ],
     "script": [
       "p",
@@ -743,8 +764,10 @@
       "li",
       "li"
     ],
-    "-": [
+    "": [
       "ol",
+      "ol",
+      "li",
       "li"
     ],
     "most": [
@@ -858,10 +881,6 @@
       "li"
     ],
     "server": [
-      "ol",
-      "li"
-    ],
-    "side": [
       "ol",
       "li"
     ],
@@ -982,7 +1001,10 @@
       "li",
       "strong",
       "ul",
-      "li"
+      "ul",
+      "li",
+      "li",
+      "a"
     ],
     "get": [
       "ol",
@@ -1033,10 +1055,6 @@
       "li"
     ],
     "binding": [
-      "ol",
-      "li"
-    ],
-    "site": [
       "ol",
       "li"
     ],
@@ -1128,12 +1146,27 @@
       "ul",
       "li"
     ],
-    "http//www.iis.net/learn/manage/configuring-security/how-to-set-up-ssl-on-iis": [
+    "http//www.iis.net/learn/manage/configuring": [
       "ul",
       "li",
       "a"
     ],
-    "http-only": [
+    "security/how": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "up": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "ssl": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "http": [
       "title"
     ]
   },

@@ -1,0 +1,8 @@
+<h2>What to Do</h2>
+<p>Configure the platform to timeout sessions after a period of time.</p>
+<p>For non-web applications, implement absolute timeouts for any functionality that requires remote authentication.</p>
+<h2>Why</h2>
+<p>Limiting session lifetime makes it harder to hijack sessions.</p>
+<h2>How</h2>
+<p>Edit the platform configuration settings to set an absolute timeout for sessions. This is usually accomplished by setting a finite lifetime on the session cookie.</p>
+<p>For non-web applications, find code that keeps track of user sessions and modify it to end sessions after a specified amount of time.</p>

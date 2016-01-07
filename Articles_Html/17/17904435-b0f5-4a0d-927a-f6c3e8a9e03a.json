@@ -2,6 +2,14 @@
   "id": "17904435-b0f5-4a0d-927a-f6c3e8a9e03a",
   "checksum": "4613ef62bab4fe28475ecbdbf6be0f1f",
   "words": {
+    "1": [
+      "ol",
+      "li"
+    ],
+    "256": [
+      "ol",
+      "li"
+    ],
     "applies": [
       "h2"
     ],
@@ -203,7 +211,11 @@
       "li",
       "title"
     ],
-    "third-party": [
+    "third": [
+      "ul",
+      "li"
+    ],
+    "party": [
       "ul",
       "li"
     ],
@@ -796,10 +808,25 @@
       "li",
       "strong"
     ],
-    "public-private": [
+    "public": [
+      "ol",
       "ol",
       "li",
-      "strong"
+      "strong",
+      "li",
+      "pre",
+      "pre",
+      "pre"
+    ],
+    "private": [
+      "ol",
+      "ol",
+      "li",
+      "strong",
+      "li",
+      "em",
+      "pre",
+      "pre"
     ],
     "key": [
       "ol",
@@ -1036,13 +1063,6 @@
       "li",
       "em"
     ],
-    "private": [
-      "ol",
-      "li",
-      "em",
-      "pre",
-      "pre"
-    ],
     "jarkey)]": [
       "ol",
       "li",
@@ -1052,8 +1072,10 @@
       "ol",
       "li"
     ],
-    "sha-256": [
+    "sha": [
       "ol",
+      "ol",
+      "li",
       "li"
     ],
     "default": [
@@ -1071,10 +1093,6 @@
       "li",
       "p"
     ],
-    "sha-1": [
-      "ol",
-      "li"
-    ],
     "updated": [
       "ol",
       "li"
@@ -1082,13 +1100,6 @@
     "developer’s": [
       "ol",
       "li"
-    ],
-    "public": [
-      "ol",
-      "li",
-      "pre",
-      "pre",
-      "pre"
     ],
     "certificate": [
       "ol",
@@ -1122,7 +1133,11 @@
       "pre",
       "p"
     ],
-    "meta-inf": [
+    "meta": [
+      "ol",
+      "li"
+    ],
+    "inf": [
       "ol",
       "li"
     ],
@@ -1698,7 +1713,10 @@
     "inputstream": [
       "pre"
     ],
-    "jargetinputstream(jar.getentry(\"meta-inf/manifest.mf\"));": [
+    "jargetinputstream(jar.getentry(\"meta": [
+      "pre"
+    ],
+    "inf/manifest.mf\"));": [
       "pre"
     ],
     "man": [

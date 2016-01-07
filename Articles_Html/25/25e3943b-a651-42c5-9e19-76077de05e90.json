@@ -18,6 +18,11 @@
       "li",
       "a"
     ],
+    "6": [
+      "ul",
+      "li",
+      "a"
+    ],
     "64": [
       "ol",
       "li",
@@ -82,9 +87,21 @@
       "a",
       "title"
     ],
-    "web-based": [
+    "web": [
       "ul",
-      "li"
+      "li",
+      "p",
+      "p"
+    ],
+    "based": [
+      "ul",
+      "li",
+      "ul",
+      "li",
+      "a",
+      "ul",
+      "li",
+      "a"
     ],
     "applications": [
       "ul",
@@ -154,14 +171,40 @@
       "p",
       "p"
     ],
-    "cross-site": [
+    "cross": [
       "p",
       "ul",
       "ul",
       "ul",
+      "ul",
       "li",
       "li",
       "li",
+      "li",
+      "a",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "a",
+      "li",
+      "a"
+    ],
+    "site": [
+      "p",
+      "p",
+      "p",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "li",
+      "li",
+      "a",
       "ul",
       "ul",
       "ul",
@@ -190,9 +233,12 @@
       "ul",
       "ul",
       "ul",
+      "ul",
       "li",
       "li",
       "li",
+      "li",
+      "a",
       "ul",
       "ul",
       "ul",
@@ -208,9 +254,12 @@
       "ul",
       "ul",
       "ul",
+      "ul",
       "li",
       "li",
       "li",
+      "li",
+      "a",
       "ul",
       "ul",
       "ul",
@@ -537,14 +586,6 @@
       "a"
     ],
     "malicious": [
-      "p"
-    ],
-    "web": [
-      "p",
-      "p"
-    ],
-    "site": [
-      "p",
       "p"
     ],
     "causes": [
@@ -947,8 +988,16 @@
       "li",
       "a"
     ],
-    "pseudo-random": [
+    "pseudo": [
       "ol",
+      "li",
+      "p"
+    ],
+    "random": [
+      "ol",
+      "ol",
+      "li",
+      "p",
       "li",
       "p"
     ],
@@ -1402,9 +1451,12 @@
     "server": [
       "ol",
       "ol",
+      "ol",
       "li",
       "p",
       "li",
+      "li",
+      "p",
       "p",
       "ul",
       "ul",
@@ -1417,10 +1469,21 @@
     "side": [
       "ol",
       "ol",
+      "ol",
+      "ol",
+      "ol",
       "li",
       "p",
       "li",
-      "p"
+      "li",
+      "li",
+      "li",
+      "p",
+      "p",
+      "p",
+      "p",
+      "strong",
+      "strong"
     ],
     "state": [
       "ol",
@@ -1456,10 +1519,20 @@
     "client": [
       "ol",
       "ol",
+      "ol",
       "li",
       "p",
       "li",
-      "p"
+      "li",
+      "p",
+      "p",
+      "strong",
+      "ul",
+      "li",
+      "a",
+      "ul",
+      "li",
+      "a"
     ],
     "form": [
       "ol",
@@ -1653,7 +1726,7 @@
       "p",
       "strong"
     ],
-    "that server-side": [
+    "that server": [
       "ol",
       "li",
       "p",
@@ -1675,6 +1748,9 @@
       "pre",
       "p",
       "ul",
+      "li",
+      "a",
+      "ul",
       "ul",
       "li",
       "a",
@@ -1687,18 +1763,7 @@
       "li",
       "a"
     ],
-    "client-side": [
-      "ol",
-      "li",
-      "p",
-      "strong"
-    ],
     "match for": [
-      "ol",
-      "li",
-      "p"
-    ],
-    "server-side": [
       "ol",
       "li",
       "p"
@@ -2052,10 +2117,14 @@
       "pre",
       "p"
     ],
-    "-": [
+    "": [
+      "ol",
       "ol",
       "li",
+      "li",
       "pre",
+      "pre",
+      "p",
       "p"
     ],
     "handle": [
@@ -2143,11 +2212,6 @@
       "li",
       "p"
     ],
-    "random": [
-      "ol",
-      "li",
-      "p"
-    ],
     "sessioninvalidate();": [
       "ol",
       "li",
@@ -2221,10 +2285,18 @@
       "li",
       "li"
     ],
-    "https//www.owasp.org/index.php/cross-site_request_forgery_%28csrf%29for": [
+    "https//www.owasp.org/index.php/cross": [
+      "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "a"
+    ],
+    "site_request_forgery_%28csrf%29for": [
       "ul"
     ],
-    "https//www.owasp.org/index.php/cross-site_request_forgery_%28csrf%29_prevention_cheat_sheetfor": [
+    "site_request_forgery_%28csrf%29_prevention_cheat_sheetfor": [
       "ul"
     ],
     "api": [
@@ -2245,16 +2317,49 @@
     "http//www.owasp.org/index.php/category:owasp_csrfguard_projectfor": [
       "ul"
     ],
-    "http//www.jtmelton.com/2010/05/16/the-owasp-top-ten-and-esapi-part-6-cross-site-request-forgery-csrf/": [
+    "http//www.jtmelton.com/2010/05/16/the": [
       "ul",
       "li",
       "a"
     ],
-    "https//www.owasp.org/index.php/cross-site_request_forgery_%28csrf%29": [
+    "owasp": [
+      "ul",
       "li",
       "a"
     ],
-    "https//www.owasp.org/index.php/cross-site_request_forgery_%28csrf%29_prevention_cheat_sheet": [
+    "top": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "ten": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "esapi": [
+      "ul",
+      "li",
+      "a",
+      "ul",
+      "li",
+      "a"
+    ],
+    "part": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "csrf/": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "site_request_forgery_%28csrf%29": [
+      "li",
+      "a"
+    ],
+    "site_request_forgery_%28csrf%29_prevention_cheat_sheet": [
       "li",
       "a"
     ],
@@ -2450,9 +2555,15 @@
     ],
     "out": [
       "ul",
+      "ul",
+      "li",
+      "a",
       "li",
       "a",
       "ul",
+      "ul",
+      "li",
+      "a",
       "li",
       "a"
     ],
@@ -2472,7 +2583,7 @@
       "li",
       "a"
     ],
-    "time-out": [
+    "time": [
       "ul",
       "li",
       "a",
@@ -2493,15 +2604,7 @@
       "li",
       "a"
     ],
-    "based": [
-      "ul",
-      "li",
-      "a",
-      "ul",
-      "li",
-      "a"
-    ],
-    "client-accessible": [
+    "accessible": [
       "ul",
       "li",
       "a",
@@ -2581,11 +2684,6 @@
     ],
     "examples": [
       "h1"
-    ],
-    "esapi": [
-      "ul",
-      "li",
-      "a"
     ],
     "faces": [
       "ul",

@@ -338,17 +338,37 @@
       "p",
       "ol",
       "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
       "li",
       "p",
       "strong",
+      "ul",
+      "li",
+      "pre",
+      "li",
+      "li",
+      "li",
+      "li",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "li",
       "li",
       "p",
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "li",
+      "li",
+      "p",
       "p",
       "p",
       "p",
@@ -505,6 +525,16 @@
       "p",
       "p",
       "p",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "pre",
+      "pre",
       "p",
       "p"
     ],
@@ -1208,7 +1238,14 @@
       "p",
       "p"
     ],
-    "self-signed": [
+    "self": [
+      "ol",
+      "li",
+      "ul",
+      "li",
+      "p"
+    ],
+    "signed": [
       "ol",
       "li",
       "ul",
@@ -1348,7 +1385,20 @@
       "li",
       "p"
     ],
-    "transport-guarantee": [
+    "transport": [
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "p",
+      "em",
+      "pre"
+    ],
+    "guarantee": [
       "ol",
       "li",
       "ul",
@@ -1380,77 +1430,184 @@
       "em",
       "strong"
     ],
-    "security-constraint>": [
+    "security": [
       "ol",
       "li",
       "ul",
       "li",
       "pre"
     ],
-    "web-resource-collection>": [
+    "constraint>": [
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre"
+    ],
+    "resource": [
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "li",
+      "li",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "li",
+      "li",
+      "pre",
+      "pre",
+      "pre",
+      "pre"
+    ],
+    "collection>": [
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "pre",
+      "pre"
+    ],
+    "name>acctmanager</web": [
       "ol",
       "li",
       "ul",
       "li",
       "pre"
     ],
-    "web-resource-name>acctmanager</web-resource-name>": [
+    "name>": [
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "pre",
+      "pre"
+    ],
+    "url": [
+      "ol",
+      "li",
+      "ul",
+      "li",
+      "pre",
+      "p"
+    ],
+    "pattern>/acctmanager/*</url": [
       "ol",
       "li",
       "ul",
       "li",
       "pre"
     ],
-    "url-pattern>/acctmanager/*</url-pattern>": [
+    "pattern>": [
       "ol",
       "li",
       "ul",
       "li",
       "pre"
     ],
-    "/web-resource-collection>": [
+    "/web": [
       "ol",
       "li",
       "ul",
       "li",
       "pre"
     ],
-    "user-data-constraint>": [
+    "data": [
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "pre",
+      "pre"
+    ],
+    "guarantee>confidential</transport": [
       "ol",
       "li",
       "ul",
       "li",
       "pre"
     ],
-    "transport-guarantee>confidential</transport-guarantee>": [
+    "guarantee>": [
       "ol",
       "li",
       "ul",
       "li",
       "pre"
     ],
-    "/user-data-constraint>": [
+    "/user": [
       "ol",
       "li",
       "ul",
       "li",
       "pre"
     ],
-    "auth-constraint>": [
+    "auth": [
       "ol",
       "li",
       "ul",
       "li",
       "pre"
     ],
-    "role-name>manager</role-name>": [
+    "role": [
       "ol",
       "li",
       "ul",
       "li",
       "pre"
     ],
-    "/auth-constraint></security-constraint>": [
+    "name>manager</role": [
+      "ol",
+      "li",
+      "ul",
+      "li",
+      "pre"
+    ],
+    "/auth": [
+      "ol",
+      "li",
+      "ul",
+      "li",
+      "pre"
+    ],
+    "constraint></security": [
       "ol",
       "li",
       "ul",
@@ -1541,7 +1698,7 @@
       "li",
       "strong"
     ],
-    "user-defined": [
+    "defined": [
       "ol",
       "ol",
       "ol",
@@ -1829,7 +1986,7 @@
       "li",
       "p"
     ],
-    "user-supplied": [
+    "supplied": [
       "ol",
       "li",
       "p"
@@ -1839,7 +1996,12 @@
       "li",
       "p"
     ],
-    "pre-selected": [
+    "pre": [
+      "ol",
+      "li",
+      "p"
+    ],
+    "selected": [
       "ol",
       "li",
       "p"
@@ -1994,9 +2156,6 @@
     ],
     "myapp's": [
       "p",
-      "p"
-    ],
-    "url": [
       "p"
     ],
     "attempts": [

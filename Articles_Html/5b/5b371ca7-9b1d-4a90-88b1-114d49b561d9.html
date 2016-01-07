@@ -1,6 +1,0 @@
-<h2>Applies To</h2><ul><li> Web Applications</li>
-</ul><h2>What to Do</h2><p>Avoid using the HTTP-GET protocol to store sensitive data. 
-</p><h2>Why</h2><p>The HTTP-GET protocol because the protocol uses query strings to pass data. As query strings are clearly visible in the client's browser address bar, a malicious user can change the sensitive data that is clearly visible in the URL query string.  
-</p><h2>When</h2><p>When passing sensitive data over the network, make sure it is not using the HTTP-GET protocol. 
-</p><h2>How</h2><p>You should avoid storing sensitive data using the HTTP-GET protocol because the protocol uses query strings to pass data. Sensitive data cannot be secured using query strings and query strings are often logged by the server.
-</p>

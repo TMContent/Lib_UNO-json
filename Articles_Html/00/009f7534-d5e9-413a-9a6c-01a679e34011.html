@@ -1,0 +1,20 @@
+<h2>What to Do</h2>
+<p>Avoid dangerous APIs.</p>
+<h2>Why</h2>
+<p>Some of the most dangerous vulnerabilities are usually caused by the same few APIs on most platforms. Each platform often has its own peculiar features that are prone to causing security vulnerabilities when not used with great care. There are usually safer, alternative APIs available that can do the same thing. It is usually simpler to implement the application using safe APIs than to have to maintain potentially dangerous code. Some notable examples of dangerous APIs are eval(), system(), printf(), etc. but each platform has its own issues and APIs to avoid.</p>
+<h2>How</h2>
+<p>To avoid dangerous APIs:</p>
+<ol>
+<li>
+<p><strong>Identify the dangerous APIs for your platform.</strong> Look up information about dangerous APIs for your platform. There are additional articles on this subject in TeamMentor. Make a list of each dangerous API for your platform.</p>
+</li>
+<li>
+<p><strong>Search code for dangerous APIs.</strong> Use the list of dangerous APIs as a list of search keywords to search code for potential trouble area.</p>
+</li>
+<li>
+<p><strong>Rewrite code to use safe APIs.</strong> Wherever calls to dangerous APIs are found, rewrite the code to use safe API alternatives.</p>
+</li>
+<li>
+<p><strong>Document code that uses dangerous APIs.</strong> Use this documentation when patching discovered vulnerabilities - when searching for code responsible for vulnerabilities, checking code that is known to use dangerous APIs is a good idea.</p>
+</li>
+</ol>

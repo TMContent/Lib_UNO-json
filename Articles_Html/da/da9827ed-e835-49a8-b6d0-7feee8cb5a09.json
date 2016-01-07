@@ -403,7 +403,10 @@
       "p",
       "p",
       "li",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "make": [
       "ol",
@@ -600,7 +603,12 @@
       "li",
       "a"
     ],
-    "unix-style": [
+    "unix": [
+      "ol",
+      "li",
+      "p"
+    ],
+    "style": [
       "ol",
       "li",
       "p"
@@ -644,7 +652,12 @@
       "li",
       "p"
     ],
-    "non-null": [
+    "non": [
+      "ol",
+      "li",
+      "p"
+    ],
+    "null": [
       "ol",
       "li",
       "p"
@@ -755,7 +768,7 @@
       "ul",
       "li"
     ],
-    "http//www.php.net/manual/en/session.configuration.php#ini.session.entropy-file": [
+    "http//www.php.net/manual/en/session.configuration.php#ini.session.entropy": [
       "ul",
       "li",
       "a"
@@ -814,10 +827,24 @@
       "li",
       "a"
     ],
-    "time-outmake": [
+    "time": [
+      "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "a",
+      "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "a"
+    ],
+    "outmake": [
       "ul"
     ],
-    "time-outdestroy": [
+    "outdestroy": [
       "ul"
     ],
     "when": [
@@ -967,7 +994,11 @@
       "li",
       "a"
     ],
-    "time-out": [
+    "out": [
+      "li",
+      "a",
+      "li",
+      "a",
       "li",
       "a",
       "li",
@@ -978,12 +1009,6 @@
       "a"
     ],
     "destroy": [
-      "li",
-      "a"
-    ],
-    "out": [
-      "li",
-      "a",
       "li",
       "a"
     ],
@@ -1011,7 +1036,7 @@
     "authenticationinactive": [
       "ul"
     ],
-    "time-outsessions": [
+    "outsessions": [
       "ul",
       "ul"
     ],

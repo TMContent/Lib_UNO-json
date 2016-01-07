@@ -1,59 +1,46 @@
 {
   "id": "e75f4a58-8ee4-4fda-8ed0-2be0a8a337cf",
-  "checksum": "6244604088eb85e821ec6275ea19c664",
+  "checksum": "c40db99d388eeeffd6a6135e56f91882",
   "words": {
-    "applies": [
-      "h1"
+    "what": [
+      "h2"
     ],
     "to": [
-      "h1",
-      "h1",
+      "h2",
       "p",
-      "h1",
+      "h2",
       "p",
+      "ol",
+      "li",
+      "p",
+      "h2",
+      "p",
+      "ol",
       "ol",
       "li",
       "p",
-      "h1",
-      "p",
-      "ol",
-      "ol",
-      "li",
-      "p",
       "li",
       "p",
       "p",
-      "ul",
-      "li",
-      "a",
       "title"
     ],
-    "c++": [
-      "ul",
-      "li"
-    ],
-    "what": [
-      "h1"
-    ],
     "check": [
-      "h1",
-      "h1",
+      "h2",
+      "h2",
       "p"
     ],
     "for": [
-      "h1",
+      "h2",
       "ol",
       "li",
       "p",
       "ol",
       "li",
       "p",
-      "ul",
-      "li"
+      "p"
     ],
     "verify": [
       "p",
-      "ol",
       "li",
       "p",
       "strong"
@@ -94,11 +81,7 @@
       "p",
       "p",
       "strong",
-      "ul",
-      "li",
-      "ul",
-      "li",
-      "a",
+      "p",
       "title"
     ],
     "are": [
@@ -117,7 +100,6 @@
       "p",
       "p",
       "ol",
-      "ol",
       "li",
       "p",
       "li",
@@ -134,11 +116,7 @@
       "p",
       "p",
       "p",
-      "ul",
-      "li",
-      "ul",
-      "li",
-      "a",
+      "p",
       "title"
     ],
     "mutexes": [
@@ -162,11 +140,7 @@
       "p",
       "li",
       "p",
-      "ul",
-      "li",
-      "ul",
-      "li",
-      "a",
+      "p",
       "title"
     ],
     "instead": [
@@ -218,19 +192,20 @@
       "p"
     ],
     "why": [
-      "h1"
+      "h2"
     ],
     "using": [
       "p",
       "p",
-      "ul",
-      "li"
+      "p"
     ],
     "std:lock_guard": [
       "p",
+      "code",
       "ol",
       "li",
-      "p"
+      "p",
+      "code"
     ],
     "makes": [
       "p"
@@ -248,9 +223,6 @@
     ],
     "deadlocks": [
       "p",
-      "ul",
-      "li",
-      "a",
       "title"
     ],
     "because": [
@@ -287,8 +259,8 @@
       "p"
     ],
     "how": [
-      "h1",
-      "h1"
+      "h2",
+      "h2"
     ],
     "use": [
       "p",
@@ -301,10 +273,7 @@
       "li",
       "p",
       "p",
-      "p",
-      "ul",
-      "li",
-      "a"
+      "p"
     ],
     "the": [
       "p",
@@ -368,7 +337,9 @@
       "ol",
       "li",
       "p",
-      "pre"
+      "code",
+      "pre",
+      "code"
     ],
     "objects": [
       "ol",
@@ -410,11 +381,13 @@
       "p",
       "p"
     ],
+    "used\n\n\nverify": [
+      "ol"
+    ],
     "functions": [
       "ol",
       "li",
       "p",
-      "ol",
       "ol",
       "ol",
       "li",
@@ -441,23 +414,42 @@
       "ol",
       "li",
       "p",
+      "code",
       "ol",
       "ol",
       "ol",
       "li",
       "p",
+      "code",
       "li",
       "p",
+      "code",
       "li",
-      "p"
+      "p",
+      "code"
     ],
     "unlock).": [
       "ol",
       "li",
       "p"
     ],
+    "unlock)": [
+      "code",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "p",
+      "code",
+      "li",
+      "p",
+      "code",
+      "li",
+      "p",
+      "code"
+    ],
     "fix": [
-      "h1"
+      "h2"
     ],
     "perform": [
       "p"
@@ -479,6 +471,9 @@
     ],
     "manually": [
       "ol",
+      "ol",
+      "li",
+      "p",
       "li",
       "p"
     ],
@@ -490,30 +485,16 @@
       "li",
       "p"
     ],
-    "unlock)": [
-      "ol",
-      "ol",
-      "ol",
-      "li",
-      "p",
-      "li",
-      "p",
-      "li",
-      "p"
+    "functions\n\n\nadd": [
+      "ol"
     ],
     "add": [
-      "ol",
       "ol",
       "li",
       "li",
       "p",
       "p",
       "strong"
-    ],
-    "manuall": [
-      "ol",
-      "li",
-      "p"
     ],
     "declaring": [
       "ol",
@@ -550,26 +531,22 @@
       "ol",
       "li",
       "p",
-      "pre"
+      "code"
     ],
-    "std:lock_guard<std::mutex>(mutex);": [
-      "ol",
-      "li",
-      "p",
-      "pre"
-    ],
-    "remove": [
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "p",
-      "p",
-      "strong"
+    "std:lock_guard<std::mutex>(mutex);\n\n\nremove": [
+      "ol"
     ],
     "old": [
       "ol",
       "li",
+      "p",
+      "strong"
+    ],
+    "remove": [
+      "ol",
+      "li",
+      "li",
+      "p",
       "p",
       "strong"
     ],
@@ -608,16 +585,20 @@
       "li",
       "p"
     ],
+    "std:lock_guard<std::mutex>(mutex);": [
+      "li",
+      "p",
+      "code"
+    ],
     "solution": [
-      "h1"
+      "h2"
     ],
     "example": [
-      "h1",
+      "h2",
       "p"
     ],
     "mutex": [
-      "p",
-      "pre"
+      "p"
     ],
     "notice": [
       "p"
@@ -647,61 +628,52 @@
       "p"
     ],
     "static": [
-      "pre"
+      "pre",
+      "code"
     ],
-    "void": [
-      "pre"
+    "mutex\n\nvoid": [
+      "pre",
+      "code"
     ],
-    "function){": [
-      "pre"
+    "function){\n\nconst": [
+      "pre",
+      "code"
     ],
-    "//do": [
-      "pre"
+    "std:lock_guard<std::mutex>(mutex);\n\n//do": [
+      "pre",
+      "code"
     ],
     "stuff}": [
-      "pre"
+      "pre",
+      "code"
     ],
     "additional": [
-      "h1"
+      "h2"
     ],
     "resources": [
-      "h1"
+      "h2"
     ],
     "more": [
-      "ul",
-      "li"
+      "p"
     ],
     "information": [
-      "ul",
-      "li"
+      "p"
     ],
     "about": [
-      "ul",
-      "li"
-    ],
-    "please": [
-      "ul",
-      "li"
+      "p"
     ],
     "see": [
-      "ul",
-      "li"
+      "p"
     ],
-    "https//www.securecoding.cert.org/confluence/display/cplusplus/con02-cpp.+use+lock+classes+for+mutex+management": [
-      "ul",
-      "li",
+    "https//www.securecoding.cert.org/confluence/display/cplusplus/con02": [
+      "p",
       "a"
     ],
-    "related": [
-      "h1"
-    ],
-    "items": [
-      "h1"
+    "cpp.+use+lock+classes+for+mutex+management": [
+      "p",
+      "a"
     ],
     "avoid": [
-      "ul",
-      "li",
-      "a",
       "title"
     ]
   },
@@ -710,10 +682,6 @@
     {
       "href": "https://www.securecoding.cert.org/confluence/display/cplusplus/CON02-CPP.+Use+lock+classes+for+mutex+management",
       "text": "https://www.securecoding.cert.org/confluence/display/cplusplus/CON02-CPP.+Use+lock+classes+for+mutex+management"
-    },
-    {
-      "href": "/article/41b5df05-32be-44df-93b6-f3cb4117f676",
-      "text": "Use Locks with Mutexes to Avoid Deadlocks"
     }
   ]
 }

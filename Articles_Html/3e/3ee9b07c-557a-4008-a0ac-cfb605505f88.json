@@ -83,6 +83,7 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "li",
@@ -201,6 +202,8 @@
       "li",
       "li",
       "li",
+      "li",
+      "p",
       "p",
       "p",
       "p",
@@ -491,6 +494,7 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "li",
@@ -502,6 +506,8 @@
       "strong",
       "li",
       "ul",
+      "li",
+      "p",
       "li",
       "p",
       "li",
@@ -815,6 +821,10 @@
       "ol",
       "ol",
       "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
       "li",
       "p",
       "strong",
@@ -835,6 +845,14 @@
       "li",
       "li",
       "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "p",
+      "p",
+      "p",
+      "p",
       "p",
       "p",
       "p",
@@ -2016,6 +2034,11 @@
     "architecture": [
       "ol",
       "li",
+      "p",
+      "ol",
+      "li",
+      "ul",
+      "li",
       "p"
     ],
     "facilities": [
@@ -2893,6 +2916,11 @@
       "ol",
       "ol",
       "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
       "li",
       "li",
       "li",
@@ -2900,6 +2928,13 @@
       "strong",
       "ul",
       "ul",
+      "ul",
+      "li",
+      "li",
+      "p",
+      "p",
+      "li",
+      "p",
       "li",
       "li",
       "p",
@@ -2908,6 +2943,8 @@
       "li",
       "li",
       "li",
+      "li",
+      "p",
       "p",
       "p",
       "p",
@@ -3121,7 +3158,15 @@
       "p",
       "strong"
     ],
-    "non-repudiation": [
+    "non": [
+      "ol",
+      "ol",
+      "li",
+      "p",
+      "li",
+      "p"
+    ],
+    "repudiation": [
       "ol",
       "li",
       "p"
@@ -3250,17 +3295,39 @@
       "li",
       "p"
     ],
-    "--": [
+    "": [
       "ol",
       "ol",
       "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
       "li",
       "ul",
+      "ul",
+      "ul",
+      "li",
+      "li",
       "li",
       "p",
-      "li",
+      "p",
       "p",
       "li",
+      "li",
+      "li",
+      "p",
+      "p",
+      "p",
+      "li",
+      "li",
+      "li",
+      "p",
+      "p",
       "p"
     ],
     "frequency": [
@@ -3296,11 +3363,36 @@
       "li",
       "p"
     ],
-    "per-event": [
+    "per": [
       "ol",
       "li",
       "ul",
       "li",
+      "p"
+    ],
+    "event": [
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "ul",
+      "li",
+      "p",
+      "li",
+      "li",
+      "li",
+      "li",
+      "p",
+      "p",
+      "p",
+      "p",
+      "li",
+      "li",
+      "p",
       "p"
     ],
     "still": [
@@ -3534,10 +3626,20 @@
       "li",
       "p"
     ],
-    "re-create": [
+    "re": [
       "ol",
       "li",
       "ul",
+      "li",
+      "p"
+    ],
+    "create": [
+      "ol",
+      "ol",
+      "li",
+      "ul",
+      "li",
+      "p",
       "li",
       "p"
     ],
@@ -3700,13 +3802,6 @@
       "li",
       "p"
     ],
-    "architecture-level": [
-      "ol",
-      "li",
-      "ul",
-      "li",
-      "p"
-    ],
     "issue": [
       "ol",
       "ol",
@@ -3777,7 +3872,14 @@
       "ul",
       "li"
     ],
-    "security-relevant": [
+    "security": [
+      "ol",
+      "li",
+      "ul",
+      "li",
+      "p"
+    ],
+    "relevant": [
       "ol",
       "li",
       "ul",
@@ -4243,7 +4345,12 @@
       "li",
       "p"
     ],
-    "circumvented n-tier": [
+    "circumvented n": [
+      "ol",
+      "li",
+      "p"
+    ],
+    "tier": [
       "ol",
       "li",
       "p"
@@ -4298,8 +4405,16 @@
       "li",
       "p"
     ],
-    "front-end": [
+    "front": [
       "ol",
+      "li",
+      "p"
+    ],
+    "end": [
+      "ol",
+      "ol",
+      "li",
+      "p",
       "li",
       "p"
     ],
@@ -4312,7 +4427,13 @@
       "ol",
       "ol",
       "ol",
+      "ol",
+      "ol",
       "li",
+      "li",
+      "li",
+      "p",
+      "p",
       "p",
       "li",
       "li",
@@ -4394,7 +4515,7 @@
       "li",
       "p"
     ],
-    "non-hierarchical": [
+    "hierarchical": [
       "ol",
       "li",
       "p"
@@ -4413,11 +4534,6 @@
       "p"
     ],
     "vital": [
-      "ol",
-      "li",
-      "p"
-    ],
-    "business-level": [
       "ol",
       "li",
       "p"
@@ -4546,26 +4662,6 @@
       "li",
       "p"
     ],
-    "event": [
-      "ol",
-      "ol",
-      "ol",
-      "ol",
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "li",
-      "li",
-      "p",
-      "p",
-      "p",
-      "p",
-      "li",
-      "li",
-      "p",
-      "p"
-    ],
     "log the": [
       "ol",
       "li",
@@ -4596,9 +4692,12 @@
       "li",
       "p"
     ],
-    "machine-level": [
+    "machine": [
+      "ol",
       "ol",
       "li",
+      "li",
+      "p",
       "p"
     ],
     "webconfig": [
@@ -4624,11 +4723,6 @@
       "p",
       "em"
     ],
-    "create": [
-      "ol",
-      "li",
-      "p"
-    ],
     "custom": [
       "ol",
       "li",
@@ -4647,7 +4741,7 @@
       "li",
       "p"
     ],
-    "built-in": [
+    "built": [
       "ol",
       "ol",
       "li",
@@ -4670,7 +4764,12 @@
       "li",
       "p"
     ],
-    "e-mail": [
+    "e": [
+      "ol",
+      "li",
+      "p"
+    ],
+    "mail": [
       "ol",
       "li",
       "p"
@@ -4766,22 +4865,9 @@
       "li",
       "p"
     ],
-    "machine": [
-      "ol",
-      "li",
-      "p"
-    ],
     "modify": [
       "ol",
       "li",
-      "p"
-    ],
-    "in-database": [
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "p",
       "p"
     ],
     "implemented": [
@@ -5070,7 +5156,12 @@
       "li",
       "p"
     ],
-    "pre-exisiting": [
+    "pre": [
+      "ol",
+      "li",
+      "p"
+    ],
+    "exisiting": [
       "ol",
       "li",
       "p"
@@ -5473,7 +5564,10 @@
     ],
     "implementation": [
       "ol",
+      "ol",
       "li",
+      "li",
+      "p",
       "p"
     ],
     "like": [
@@ -5526,11 +5620,6 @@
       "li",
       "p"
     ],
-    "implementation-level": [
-      "ol",
-      "li",
-      "p"
-    ],
     "easily": [
       "ol",
       "ol",
@@ -5546,7 +5635,10 @@
     ],
     "easy": [
       "ol",
+      "ol",
       "li",
+      "li",
+      "p",
       "p"
     ],
     "task": [
@@ -5636,11 +5728,6 @@
       "p"
     ],
     "too": [
-      "ol",
-      "li",
-      "p"
-    ],
-    "end": [
       "ol",
       "li",
       "p"
@@ -5829,7 +5916,7 @@
       "li",
       "p"
     ],
-    "easy-to-launch": [
+    "launch": [
       "ol",
       "li",
       "p"

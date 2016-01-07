@@ -1,10 +1,10 @@
-<p>##Applies To##</p>
+<h2>Applies To</h2>
 <ul>
 <li>Amazon Web Services (AWS)</li>
 </ul>
-<p>##What to Do##</p>
+<h2>What to Do</h2>
 <p>Use the AWS Management Console or the Command Line Interface (CLI) to backup virtual images and data with the create snapshot command.</p>
-<p>##Why##</p>
+<h2>Why</h2>
 <p>Backups are an important part of your information management plan. AWS provides physical safeguard of your media, while you must maintain the integrity of cloud configuration and make backups (also known as snapshots) so that:</p>
 <ul>
 <li>An original machine image can be rapidly restored.</li>
@@ -12,7 +12,7 @@
 <li>Recovery from a system breach can be rapid.</li>
 <li>Alternate configurations can be tested and deployed.</li>
 </ul>
-<p>##When##</p>
+<h2>When</h2>
 <p>Backup requirements and intervals are specified in your information management plan. Best practices recommend that you make backups according to your lifecycle needs, during:</p>
 <ol>
 <li>
@@ -28,7 +28,7 @@
 <p><strong>Incident Response.</strong> As part of your incident response, make snapshots before attempting repair methods. If you determine the repair is not working, you can go back in time through snapshots and choose the best course for restoring operations to your cloud.</p>
 </li>
 </ol>
-<p>##How##</p>
+<h2>How</h2>
 <ol>
 <li>
 <p><strong>Unmount Volume.</strong> If the Elastic Block Store (EBS) volume serves as a root device, stop the instance before taking a snapshot. In Linux, issue the command <code>umount -d device_name</code> and replace device_name with <code>/dev/sdh</code>, for example. The volume is unmounted.</p>

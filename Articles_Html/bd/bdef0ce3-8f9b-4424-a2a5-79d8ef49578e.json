@@ -117,7 +117,10 @@
       "p",
       "p",
       "ol",
+      "ol",
       "li",
+      "li",
+      "i",
       "p"
     ],
     "software": [
@@ -178,6 +181,7 @@
       "p",
       "p",
       "p",
+      "p",
       "h2",
       "em",
       "p",
@@ -200,6 +204,7 @@
       "title"
     ],
     "engineering": [
+      "p",
       "p",
       "p",
       "p",
@@ -473,6 +478,8 @@
       "ol",
       "ol",
       "ol",
+      "ol",
+      "li",
       "li",
       "li",
       "li",
@@ -1261,6 +1268,8 @@
       "ol",
       "li",
       "ol",
+      "ol",
+      "li",
       "li",
       "b",
       "ol",
@@ -1313,6 +1322,9 @@
       "em",
       "p",
       "ol",
+      "ol",
+      "li",
+      "a",
       "li"
     ],
     "class": [
@@ -1933,7 +1945,10 @@
       "p"
     ],
     "decompilers": [
-      "p"
+      "p",
+      "ol",
+      "li",
+      "a"
     ],
     "debuggers": [
       "p",
@@ -2075,7 +2090,11 @@
       "ol",
       "li"
     ],
-    "third-party": [
+    "third": [
+      "ol",
+      "li"
+    ],
+    "party": [
       "ol",
       "li"
     ],
@@ -2293,12 +2312,32 @@
     "compilation/building": [
       "p"
     ],
-    "anti-disassembling": [
+    "anti": [
       "h2",
       "em",
-      "p"
+      "p",
+      "p",
+      "p",
+      "h2",
+      "em",
+      "p",
+      "p",
+      "em",
+      "p",
+      "p",
+      "div",
+      "div",
+      "div",
+      "p",
+      "b",
+      "div",
+      "p",
+      "b"
     ],
     "disassembling": [
+      "h2",
+      "em",
+      "p",
       "p",
       "p",
       "ol",
@@ -2398,7 +2437,7 @@
       "p",
       "p"
     ],
-    "anti-disassembly": [
+    "disassembly": [
       "p",
       "p",
       "p",
@@ -2477,10 +2516,11 @@
     "dynamically": [
       "p"
     ],
-    "non-conditional": [
+    "non": [
       "p"
     ],
     "conditional": [
+      "p",
       "p"
     ],
     "inserting": [
@@ -2542,9 +2582,6 @@
       "p",
       "p"
     ],
-    "reverse-engineering": [
-      "p"
-    ],
     "hackers": [
       "p"
     ],
@@ -2564,25 +2601,23 @@
     "ii].": [
       "p"
     ],
-    "anti-debugging": [
+    "debugging": [
       "h2",
       "em",
       "p",
       "p",
+      "p",
+      "p",
+      "p",
       "em",
+      "ol",
+      "li",
+      "p",
       "p",
       "div",
       "div",
       "p",
       "b"
-    ],
-    "debugging": [
-      "p",
-      "p",
-      "p",
-      "ol",
-      "li",
-      "p"
     ],
     "sequence": [
       "p"
@@ -2622,7 +2657,11 @@
       "li",
       "li"
     ],
-    "low-level": [
+    "low": [
+      "p"
+    ],
+    "level": [
+      "p",
       "p"
     ],
     "debugger": [
@@ -2646,10 +2685,15 @@
       "ol",
       "li"
     ],
-    "kernel-level": [
+    "kernel": [
+      "p",
+      "ol",
+      "li"
+    ],
+    "ring": [
       "p"
     ],
-    "ring-0,": [
+    "0,": [
       "p"
     ],
     "softice": [
@@ -2660,7 +2704,10 @@
       "p",
       "i"
     ],
-    "user-mode": [
+    "user": [
+      "p"
+    ],
+    "mode": [
       "p"
     ],
     "ntsd": [
@@ -2686,7 +2733,10 @@
     "timers": [
       "p"
     ],
-    "break-points": [
+    "break": [
+      "p"
+    ],
+    "points": [
       "p"
     ],
     "sending": [
@@ -2927,7 +2977,16 @@
       "li",
       "li"
     ],
-    "http://www.softpedia.com/get/programming/debuggers-decompilers-dissasemblers/ida-pro.shtml).": [
+    "http://www.softpedia.com/get/programming/debuggers": [
+      "ol",
+      "li"
+    ],
+    "dissasemblers/ida": [
+      "ol",
+      "li",
+      "a"
+    ],
+    "pro.shtml).": [
       "ol",
       "li"
     ],
@@ -2951,7 +3010,10 @@
       "ol",
       "li"
     ],
-    "http//www.softpedia.com/get/programming/debuggers-decompilers-dissasemblers/ida-pro.shtml": [
+    "http//www.softpedia.com/get/programming/debuggers": [
+      "a"
+    ],
+    "pro.shtml": [
       "a"
     ],
     "expected": [
@@ -2987,7 +3049,11 @@
       "p",
       "p"
     ],
-    "http://cavaj-java-decompiler.en.softonic.com/).": [
+    "http://cavaj": [
+      "ol",
+      "li"
+    ],
+    "decompiler.en.softonic.com/).": [
       "ol",
       "li"
     ],
@@ -3007,19 +3073,20 @@
       "ol",
       "li"
     ],
-    "file-open": [
-      "ol",
-      "li"
-    ],
-    "http//cavaj-java-decompiler.en.softonic.com/": [
-      "a"
-    ],
     "open": [
+      "ol",
+      "li",
       "b",
       "ol",
       "ol",
       "li",
       "li"
+    ],
+    "http//cavaj": [
+      "a"
+    ],
+    "decompiler.en.softonic.com/": [
+      "a"
     ],
     "supposed": [
       "p"
@@ -3093,8 +3160,11 @@
       "ol",
       "li"
     ],
-    "-all": [
+    "": [
       "ol",
+      "ol",
+      "li",
+      "i",
       "li",
       "i"
     ],
@@ -3155,8 +3225,10 @@
       "ol",
       "li"
     ],
-    "sub-process": [
+    "sub": [
       "ol",
+      "ol",
+      "li",
       "li"
     ],
     "view": [
@@ -3173,7 +3245,7 @@
       "ol",
       "li"
     ],
-    "sub-processes.": [
+    "processes.": [
       "ol",
       "li"
     ],
@@ -3185,7 +3257,7 @@
       "i",
       "i"
     ],
-    "-ano": [
+    "ano": [
       "ol",
       "li",
       "i"
@@ -3303,10 +3375,6 @@
       "ol",
       "li"
     ],
-    "kernel": [
-      "ol",
-      "li"
-    ],
     "objects": [
       "ol",
       "li"
@@ -3333,7 +3401,10 @@
     "hidden": [
       "p"
     ],
-    "ill-intended": [
+    "ill": [
+      "p"
+    ],
+    "intended": [
       "p"
     ],
     "users": [
@@ -3371,7 +3442,13 @@
       "div",
       "p"
     ],
-    "next-generation": [
+    "next": [
+      "div",
+      "div",
+      "p",
+      "b"
+    ],
+    "generation": [
       "div",
       "div",
       "p",

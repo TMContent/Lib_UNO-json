@@ -1,0 +1,11 @@
+<h2>What to Do</h2>
+<p>Use difficult to predict file names when creating temporary files as a mitigation measure for time-of-check/time-of-use (TOCTOU) vulnerabilities.</p>
+<h2>Why</h2>
+<p>Create temporary files securely to prevent time-of-check/time-of-use (TOCTOU) issues when checking permissions on files and directories, allowing access to secured objects.</p>
+<h2>How</h2>
+<p>Perform the following actions to create temporary files using difficult to predict names:</p>
+<ol>
+<li><strong>Generate random names.</strong> Use a secure random generator (such as /dev/random) to generate temporary names.</li>
+<li><strong>Protect temporary files.</strong> Create temporary files in secure directories. Unauthorized users should not have access to temporary files. In the event that temporary files are stored in a shared location, create a directory with a difficult to predict name, restrict access to it using access controls if possible, and store the application's temporary files there.</li>
+<li><strong>Clean up.</strong> Delete temporary files immediately after use. If temporary files are used to store sensitive data, it is recommended to encrypt this data when storing it in temporary files and to overwrite it with random data before deleting the files.</li>
+</ol>

@@ -1,9 +1,9 @@
-<p>##What to Check For##</p>
+<h2>What to Check For</h2>
 <p>Verify that authentication keys are protected.</p>
-<p>##Why##</p>
+<h2>Why</h2>
 <p>When authentication (or access) keys are lost, stolen, or compromised, the possessor can gain access to any objects that are accessible with the associated AWS account. Authentication keys (access key ID and secret access key) are generated so that programmatic requests can be sent to AWS. For this reason, security best practice is to restrict permissions for all AWS IAM user account keys for least privilege.</p>
 <p>If the AWS root authentication keys are lost, the keys can be used to access all resources and billing information. For this reason, do not use the AWS account root access keys and, if possible, do not generate these keys. Note that the root access keys cannot be restricted by permissions or policy.</p>
-<p>##When##</p>
+<h2>When</h2>
 <p>Authentication keys are protected under all scenarios, and there should be no exceptions to this rule.</p>
 <ol>
 <li>
@@ -16,7 +16,7 @@
 <p><strong>Periodic Security Checks.</strong> When security audits or reports are reviewed, unnecessary authentication keys may be identified. These keys are removed to prevent any future misuse.</p>
 </li>
 </ol>
-<p>##How to Check##</p>
+<h2>How to Check</h2>
 <p>To verify that authentication keys are protected:</p>
 <ol>
 <li>
@@ -32,7 +32,7 @@
 <p><strong>(For mobile applications) Verify that Cognito services are used.</strong> Examine mobile applications to make sure that Cognito services are used instead of hardcoding access credentials into the application. Unless there are clear advantages to doing writing custom authentication code, Cognito should be used for authentication in mobile applications that leverage cloud services.</p>
 </li>
 </ol>
-<p>##How to Fix##</p>
+<h2>How to Fix</h2>
 <p>Include these best practices in your formal management plan to ensure the security of accounts and associated authentication keys.</p>
 <ol>
 <li>

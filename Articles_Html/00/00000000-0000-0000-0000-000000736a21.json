@@ -2,6 +2,14 @@
   "id": "00000000-0000-0000-0000-000000736a21",
   "checksum": "094d50a8c3d73f70a70354745de1666d",
   "words": {
+    "3": [
+      "ol",
+      "li"
+    ],
+    "9": [
+      "ol",
+      "li"
+    ],
     "1035": [
       "ol",
       "li"
@@ -582,6 +590,9 @@
       "ol",
       "ol",
       "ol",
+      "ol",
+      "ol",
+      "ol",
       "li",
       "strong",
       "li",
@@ -597,8 +608,15 @@
       "li",
       "li",
       "li",
+      "li",
+      "tt",
+      "tt",
+      "li",
+      "li",
       "strong",
-      "p"
+      "tt",
+      "p",
+      "pre"
     ],
     "safe": [
       "p"
@@ -946,7 +964,11 @@
       "ol",
       "li"
     ],
-    "wildcard-type": [
+    "wildcard": [
+      "ol",
+      "li"
+    ],
+    "type": [
       "ol",
       "li"
     ],
@@ -978,10 +1000,6 @@
       "p"
     ],
     "steps": [
-      "ol",
-      "li"
-    ],
-    "3-9": [
       "ol",
       "li"
     ],
@@ -1261,7 +1279,58 @@
       "ol",
       "li"
     ],
-    "^https?\\/\\/([a-z][-a-z0-9]+[a-z0-9]\\.)*mydomain\\.com$": [
+    "^https?\\/\\/([a": [
+      "ol",
+      "li",
+      "tt"
+    ],
+    "z][": [
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "tt",
+      "tt",
+      "li",
+      "tt",
+      "pre"
+    ],
+    "z0": [
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "li",
+      "li",
+      "tt",
+      "tt",
+      "tt",
+      "tt",
+      "li",
+      "li",
+      "tt",
+      "tt",
+      "pre",
+      "pre"
+    ],
+    "9]+[a": [
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "tt",
+      "tt",
+      "li",
+      "tt",
+      "pre"
+    ],
+    "9]\\.)*mydomain\\.com$": [
       "ol",
       "li",
       "tt"
@@ -1355,7 +1424,12 @@
       "ol",
       "li"
     ],
-    "[a-z][-a-z0-9]+[a-z0-9]\\.)*": [
+    "[a": [
+      "ol",
+      "li",
+      "tt"
+    ],
+    "9]\\.)*": [
       "ol",
       "li",
       "tt"
@@ -1457,7 +1531,13 @@
       "pre",
       "pre"
     ],
-    "regexp/^https?:\\/\\/([a-z][-a-z0-9]+[a-z0-9]\\.)*mydomain\\.com$/);": [
+    "regexp/^https?:\\/\\/([a": [
+      "ol",
+      "li",
+      "tt",
+      "pre"
+    ],
+    "9]\\.)*mydomain\\.com$/);": [
       "ol",
       "li",
       "tt"
@@ -1653,7 +1733,7 @@
     "pattern": [
       "pre"
     ],
-    "regexp/^https?:\\/\\/([a-z][-a-z0-9]+[a-z0-9]\\.)*mydomain\\.com$/);\n\treturn": [
+    "9]\\.)*mydomain\\.com$/);\n\treturn": [
       "pre"
     ],
     "patterntest(origin);\n}\nvar": [

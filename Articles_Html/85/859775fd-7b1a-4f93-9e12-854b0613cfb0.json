@@ -1,14 +1,14 @@
 {
   "id": "859775fd-7b1a-4f93-9e12-854b0613cfb0",
-  "checksum": "2a9f045c698ef34b3327ba15d6ae9795",
+  "checksum": "bbc79d4b634de2615d35d390b39f00a2",
   "words": {
-    "##what": [
-      "p"
+    "what": [
+      "h2"
     ],
     "to": [
+      "h2",
       "p",
-      "p",
-      "p",
+      "h2",
       "p",
       "ol",
       "ol",
@@ -16,7 +16,7 @@
       "p",
       "li",
       "p",
-      "p",
+      "h2",
       "p",
       "ol",
       "ol",
@@ -38,9 +38,17 @@
       "p"
     ],
     "check": [
-      "p"
+      "h2",
+      "h2"
     ],
-    "for##": [
+    "for": [
+      "h2",
+      "p",
+      "ol",
+      "li",
+      "p",
+      "ol",
+      "li",
       "p"
     ],
     "verify": [
@@ -138,8 +146,8 @@
       "p",
       "title"
     ],
-    "##why##": [
-      "p"
+    "why": [
+      "h2"
     ],
     "should": [
       "p"
@@ -335,7 +343,12 @@
     "thief": [
       "p"
     ],
-    "##when##": [
+    "when": [
+      "h2",
+      "p",
+      "p",
+      "ol",
+      "li",
       "p"
     ],
     "crypto": [
@@ -470,6 +483,9 @@
       "p"
     ],
     "on": [
+      "p",
+      "ol",
+      "li",
       "p"
     ],
     "prescribed": [
@@ -481,15 +497,6 @@
     "you": [
       "p",
       "p",
-      "p",
-      "ol",
-      "li",
-      "p"
-    ],
-    "for": [
-      "p",
-      "ol",
-      "li",
       "p",
       "ol",
       "li",
@@ -520,13 +527,6 @@
       "p"
     ],
     "tell": [
-      "p"
-    ],
-    "when": [
-      "p",
-      "p",
-      "ol",
-      "li",
       "p"
     ],
     "remove": [
@@ -610,12 +610,9 @@
     "theft": [
       "p"
     ],
-    "##how": [
-      "p",
-      "p"
-    ],
-    "check##": [
-      "p"
+    "how": [
+      "h2",
+      "h2"
     ],
     "find": [
       "ol",
@@ -723,19 +720,31 @@
       "ol",
       "ol",
       "ol",
+      "ol",
+      "ol",
+      "ol",
       "li",
       "p",
       "strong",
       "li",
       "li",
+      "li",
+      "p",
       "p",
       "p",
       "strong",
+      "code",
+      "li",
+      "li",
       "li",
       "li",
       "p",
       "p",
+      "p",
+      "p",
       "strong",
+      "code",
+      "code",
       "li",
       "li",
       "li",
@@ -818,7 +827,12 @@
       "li",
       "p"
     ],
-    "plain-text": [
+    "plain": [
+      "ol",
+      "li",
+      "p"
+    ],
+    "text": [
       "ol",
       "li",
       "p"
@@ -828,8 +842,8 @@
       "p",
       "strong"
     ],
-    "fix##": [
-      "p"
+    "fix": [
+      "h2"
     ],
     "aws": [
       "p"
@@ -958,10 +972,14 @@
     "create": [
       "ol",
       "ol",
+      "ol",
       "li",
       "p",
       "li",
-      "p"
+      "li",
+      "p",
+      "p",
+      "code"
     ],
     "iam": [
       "ol",
@@ -1075,12 +1093,6 @@
       "li",
       "p"
     ],
-    "create-hsm": [
-      "ol",
-      "li",
-      "p",
-      "code"
-    ],
     "command": [
       "ol",
       "li",
@@ -1128,13 +1140,19 @@
     "step\n\n\nconfigure": [
       "ol"
     ],
-    "list-hsms": [
+    "list": [
       "ol",
       "li",
       "p",
       "code"
     ],
-    "describe-hsm": [
+    "hsms": [
+      "ol",
+      "li",
+      "p",
+      "code"
+    ],
+    "describe": [
       "ol",
       "li",
       "p",
@@ -1175,7 +1193,7 @@
       "li",
       "p"
     ],
-    "initialize-hsm": [
+    "initialize": [
       "ol",
       "li",
       "p",
@@ -1200,7 +1218,7 @@
       "p",
       "strong"
     ],
-    "on-premises": [
+    "premises": [
       "ol",
       "li",
       "p"

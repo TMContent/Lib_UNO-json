@@ -86,13 +86,43 @@
       "strong",
       "title"
     ],
-    "per-user": [
+    "per": [
+      "p",
+      "p",
       "p",
       "p",
       "ol",
       "ol",
+      "ol",
+      "ol",
+      "ol",
       "li",
       "li",
+      "li",
+      "li",
+      "li",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "user": [
+      "p",
+      "p",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "p",
+      "p",
+      "p",
       "p",
       "p"
     ],
@@ -116,15 +146,18 @@
       "p",
       "p"
     ],
-    "per-session": [
+    "session": [
       "p",
       "p",
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "li",
+      "li",
+      "p",
       "p",
       "p",
       "p"
@@ -191,7 +224,10 @@
       "p",
       "strong",
       "ul",
+      "ul",
       "li",
+      "li",
+      "a",
       "title"
     ],
     "references": [
@@ -254,7 +290,10 @@
       "p",
       "strong",
       "ul",
-      "li"
+      "ul",
+      "li",
+      "li",
+      "a"
     ],
     "reference": [
       "p",
@@ -389,7 +428,10 @@
     "profile": [
       "p"
     ],
-    "low-skill": [
+    "low": [
+      "p"
+    ],
+    "skill": [
       "p"
     ],
     "note": [
@@ -973,7 +1015,10 @@
     "web": [
       "ol",
       "li",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "exposes": [
       "ol",
@@ -1166,23 +1211,7 @@
       "p",
       "p"
     ],
-    "user": [
-      "ol",
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "li",
-      "p",
-      "p",
-      "p"
-    ],
     "current": [
-      "ol",
-      "li",
-      "p"
-    ],
-    "session": [
       "ol",
       "li",
       "p"
@@ -1293,7 +1322,10 @@
     ],
     "insecure": [
       "ul",
-      "li"
+      "ul",
+      "li",
+      "li",
+      "a"
     ],
     "please": [
       "ul",
@@ -1301,9 +1333,29 @@
       "li",
       "li"
     ],
-    "see http//www.enterprisenetworkingplanet.com/netsecur/article.php/3927401/protect-your-web-apps-from-insecure-direct-object-references.htm": [
+    "see http//www.enterprisenetworkingplanet.com/netsecur/article.php/3927401/protect": [
       "ul",
       "li"
+    ],
+    "your": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "apps": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "from": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "references.htm": [
+      "ul",
+      "li",
+      "a"
     ],
     "owasp": [
       "ul",
@@ -1311,16 +1363,24 @@
     ],
     "esapi": [
       "ul",
-      "li"
+      "ul",
+      "li",
+      "li",
+      "a"
     ],
-    "see http//owasp-esapi-java.googlecode.com/svn/trunk_doc/latest/org/owasp/esapi/accessreferencemap.html": [
+    "see http//owasp": [
       "ul",
       "li"
     ],
-    "http//www.enterprisenetworkingplanet.com/netsecur/article.php/3927401/protect-your-web-apps-from-insecure-direct-object-references.htm": [
+    "java.googlecode.com/svn/trunk_doc/latest/org/owasp/esapi/accessreferencemap.html": [
+      "ul",
+      "li",
       "a"
     ],
-    "http//owasp-esapi-java.googlecode.com/svn/trunk_doc/latest/org/owasp/esapi/accessreferencemap.html": [
+    "http//www.enterprisenetworkingplanet.com/netsecur/article.php/3927401/protect": [
+      "a"
+    ],
+    "http//owasp": [
       "a"
     ]
   },

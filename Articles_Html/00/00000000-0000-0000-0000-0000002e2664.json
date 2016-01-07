@@ -91,6 +91,10 @@
       "p",
       "p",
       "p",
+      "p",
+      "p",
+      "em",
+      "em",
       "ul",
       "li",
       "a",
@@ -103,6 +107,10 @@
       "p",
       "p",
       "p",
+      "p",
+      "p",
+      "em",
+      "em",
       "ul",
       "li",
       "a",
@@ -229,11 +237,11 @@
     "using": [
       "p"
     ],
-    "external-general-entities": [
+    "general": [
       "p",
       "em"
     ],
-    "external-parameter-entities": [
+    "parameter": [
       "p",
       "em"
     ],
@@ -337,8 +345,16 @@
       "li",
       "li"
     ],
-    "http//developer.android.com/reference/javax/xml/parsers/package-summary.html": [
+    "http//developer.android.com/reference/javax/xml/parsers/package": [
       "ul",
+      "li",
+      "a"
+    ],
+    "summary.html": [
+      "ul",
+      "ul",
+      "li",
+      "a",
       "li",
       "a"
     ],
@@ -368,7 +384,12 @@
       "li",
       "li"
     ],
-    "http//sax.sourceforge.net/apidoc/org/xml/sax/package-summary.html#package_description": [
+    "http//sax.sourceforge.net/apidoc/org/xml/sax/package": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "summary.html#package_description": [
       "ul",
       "li",
       "a"
@@ -378,7 +399,7 @@
       "li",
       "em"
     ],
-    "http//developer.android.com/reference/org/xml/sax/package-summary.html": [
+    "http//developer.android.com/reference/org/xml/sax/package": [
       "ul",
       "li",
       "a"

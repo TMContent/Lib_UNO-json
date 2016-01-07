@@ -1,12 +1,12 @@
 {
   "id": "2ed3efcc-7388-47f9-9f6a-0b7f4b99ee35",
-  "checksum": "733ff23d1cad974ed6239f174cc4b9d3",
+  "checksum": "2aba79a905d72ca26b9a020c1234b7b0",
   "words": {
-    "##what": [
-      "p"
+    "what": [
+      "h2"
     ],
     "to": [
-      "p",
+      "h2",
       "p",
       "ol",
       "ol",
@@ -17,9 +17,9 @@
       "p",
       "li",
       "p",
+      "h2",
       "p",
-      "p",
-      "p",
+      "h2",
       "ol",
       "li",
       "p",
@@ -45,10 +45,32 @@
       "li"
     ],
     "check": [
-      "p"
+      "h2",
+      "h2"
     ],
-    "for##": [
-      "p"
+    "for": [
+      "h2",
+      "ol",
+      "ol",
+      "li",
+      "p",
+      "li",
+      "p",
+      "ol",
+      "li",
+      "p",
+      "ol",
+      "li",
+      "p",
+      "ul",
+      "li",
+      "ol",
+      "li",
+      "p",
+      "ul",
+      "li",
+      "ul",
+      "li"
     ],
     "verify": [
       "p",
@@ -134,8 +156,8 @@
       "p",
       "title"
     ],
-    "##why##": [
-      "p"
+    "why": [
+      "h2"
     ],
     "backups": [
       "p",
@@ -544,7 +566,13 @@
       "p",
       "p",
       "ol",
-      "li"
+      "li",
+      "ul",
+      "ul",
+      "li",
+      "code",
+      "li",
+      "code"
     ],
     "so": [
       "p"
@@ -755,7 +783,10 @@
     "alternate": [
       "li"
     ],
-    "##when##": [
+    "when": [
+      "h2",
+      "ol",
+      "li",
       "p"
     ],
     "backup": [
@@ -805,7 +836,10 @@
       "li",
       "li",
       "ol",
+      "ol",
       "li",
+      "li",
+      "p",
       "p",
       "ul",
       "li",
@@ -895,6 +929,12 @@
       "li",
       "p",
       "p",
+      "ul",
+      "ul",
+      "li",
+      "code",
+      "li",
+      "code",
       "ol",
       "ol",
       "ol",
@@ -905,6 +945,12 @@
       "p",
       "p",
       "strong",
+      "ul",
+      "ul",
+      "li",
+      "code",
+      "li",
+      "code",
       "ol",
       "ol",
       "ol",
@@ -994,29 +1040,6 @@
       "ol",
       "li",
       "p"
-    ],
-    "for": [
-      "ol",
-      "ol",
-      "li",
-      "p",
-      "li",
-      "p",
-      "ol",
-      "li",
-      "p",
-      "ol",
-      "li",
-      "p",
-      "ul",
-      "li",
-      "ol",
-      "li",
-      "p",
-      "ul",
-      "li",
-      "ul",
-      "li"
     ],
     "done": [
       "ol",
@@ -1216,12 +1239,9 @@
       "p",
       "strong"
     ],
-    "##how": [
-      "p",
-      "p"
-    ],
-    "check##": [
-      "p"
+    "how": [
+      "h2",
+      "h2"
     ],
     "identify": [
       "ol",
@@ -1274,6 +1294,8 @@
       "p",
       "ul",
       "li",
+      "li",
+      "code",
       "ol",
       "ol",
       "li",
@@ -1282,10 +1304,14 @@
       "p",
       "ul",
       "li",
+      "li",
+      "code",
       "ol",
       "li",
       "ul",
-      "li"
+      "li",
+      "li",
+      "code"
     ],
     "being": [
       "ol",
@@ -1349,8 +1375,8 @@
       "li",
       "p"
     ],
-    "fix##": [
-      "p"
+    "fix": [
+      "h2"
     ],
     "unmount": [
       "ol",
@@ -1444,7 +1470,13 @@
       "p",
       "code"
     ],
-    "-d": [
+    "": [
+      "ol",
+      "li",
+      "p",
+      "code"
+    ],
+    "d": [
       "ol",
       "li",
       "p",
@@ -1511,7 +1543,13 @@
       "li",
       "li",
       "p",
-      "p"
+      "p",
+      "ul",
+      "ul",
+      "li",
+      "code",
+      "li",
+      "code"
     ],
     "select": [
       "ol",
@@ -1548,12 +1586,9 @@
       "li",
       "p"
     ],
-    "create-snapshot": [
+    "cli\nec2": [
       "ul",
-      "li",
-      "code"
-    ],
-    "cli\nec2-create-snapshot": [
+      "ul",
       "ul"
     ],
     "amazon": [
@@ -1564,8 +1599,19 @@
       "ul",
       "li"
     ],
-    "cli\nnew-ec2snapshot": [
+    "cli\nnew": [
       "ul"
+    ],
+    "ec2snapshot": [
+      "ul",
+      "li",
+      "code",
+      "ul",
+      "li",
+      "code",
+      "ul",
+      "li",
+      "code"
     ],
     "tools": [
       "ul",
@@ -1589,11 +1635,7 @@
       "ul",
       "li"
     ],
-    "ec2-create-snapshot": [
-      "li",
-      "code"
-    ],
-    "new-ec2snapshot": [
+    "new": [
       "li",
       "code"
     ],
@@ -1602,11 +1644,6 @@
       "li",
       "p",
       "strong"
-    ],
-    "when": [
-      "ol",
-      "li",
-      "p"
     ],
     "take": [
       "ol",
@@ -1681,7 +1718,15 @@
       "p",
       "p",
       "p",
-      "strong"
+      "strong",
+      "ul",
+      "ul",
+      "li",
+      "code",
+      "li",
+      "code",
+      "li",
+      "code"
     ],
     "using": [
       "ol",
@@ -1726,7 +1771,10 @@
     ],
     "progress": [
       "ol",
+      "ol",
       "li",
+      "li",
+      "p",
       "p"
     ],
     "copying": [
@@ -1757,11 +1805,6 @@
       "li",
       "p"
     ],
-    "in-progress": [
-      "ol",
-      "li",
-      "p"
-    ],
     "appear": [
       "ol",
       "li",
@@ -1786,24 +1829,8 @@
       "li",
       "p"
     ],
-    "copy-snapshot": [
-      "ul",
-      "li",
-      "code"
-    ],
-    "cli\nec2-copy-snapshot": [
+    "cli\ncopy": [
       "ul"
-    ],
-    "cli\ncopy-ec2snapshot": [
-      "ul"
-    ],
-    "ec2-copy-snapshot": [
-      "li",
-      "code"
-    ],
-    "copy-ec2snapshot": [
-      "li",
-      "code"
     ],
     "view": [
       "ol",
@@ -1858,26 +1885,22 @@
       "ol",
       "li"
     ],
-    "describe-snapshots": [
+    "describe": [
       "ul",
+      "ul",
+      "li",
+      "code",
       "li",
       "code"
     ],
-    "cli\nec2-describe-snapshots": [
-      "ul"
-    ],
-    "cli\nget-ec2snapshot": [
+    "cli\nget": [
       "ul"
     ],
     "powershell": [
       "ul",
       "li"
     ],
-    "ec2-describe-snapshots": [
-      "li",
-      "code"
-    ],
-    "get-ec2snapshot": [
+    "get": [
       "li",
       "code"
     ]

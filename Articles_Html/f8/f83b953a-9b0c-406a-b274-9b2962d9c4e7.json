@@ -1,17 +1,7 @@
 {
   "id": "f83b953a-9b0c-406a-b274-9b2962d9c4e7",
-  "checksum": "82496c4bf14af143b5ad3fad4bc82f1e",
+  "checksum": "504f5d5571f1e064547174d13694095b",
   "words": {
-    "1": [
-      "ul",
-      "li",
-      "a"
-    ],
-    "2": [
-      "ul",
-      "li",
-      "a"
-    ],
     "applies": [
       "h1"
     ],
@@ -455,6 +445,9 @@
       "p",
       "p",
       "ol",
+      "ol",
+      "li",
+      "p",
       "li",
       "ul",
       "li",
@@ -560,19 +553,7 @@
       "p",
       "p",
       "p",
-      "strong",
-      "ul",
-      "ul",
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a",
-      "li",
-      "a",
-      "li",
-      "a"
+      "strong"
     ],
     "of": [
       "p",
@@ -673,7 +654,14 @@
       "li",
       "p"
     ],
-    "cross-site": [
+    "cross": [
+      "p",
+      "p",
+      "ol",
+      "li",
+      "p"
+    ],
+    "site": [
       "p",
       "p",
       "ol",
@@ -1033,7 +1021,7 @@
       "li",
       "p"
     ],
-    "user-supplied": [
+    "supplied": [
       "ol",
       "li",
       "p"
@@ -1775,18 +1763,6 @@
       "p",
       "li",
       "p",
-      "ul",
-      "ul",
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a",
-      "li",
-      "a",
-      "li",
-      "a",
       "title"
     ],
     "routines": [
@@ -1872,7 +1848,14 @@
       "li",
       "p"
     ],
-    "non-malicious": [
+    "non": [
+      "ol",
+      "li",
+      "ul",
+      "li",
+      "p"
+    ],
+    "malicious": [
       "ol",
       "li",
       "ul",
@@ -2394,63 +2377,8 @@
       "ol",
       "li",
       "p"
-    ],
-    "additional": [
-      "h1"
-    ],
-    "resources": [
-      "h1"
-    ],
-    "using": [
-      "ul",
-      "ul",
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a",
-      "li",
-      "a",
-      "li",
-      "a"
-    ],
-    "jsf": [
-      "ul",
-      "li",
-      "a"
-    ],
-    "springmvc": [
-      "ul",
-      "li",
-      "a"
-    ],
-    "struts": [
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a"
     ]
   },
   "tags": {},
-  "links": [
-    {
-      "href": "/article/a4c5ae58-6b1b-49b7-b16e-4199598f3446",
-      "text": "Output Encoding Using JSF"
-    },
-    {
-      "href": "/article/2dc1ab76-320b-47ec-a562-9e203d1b630f",
-      "text": "Output Encoding Using SpringMVC"
-    },
-    {
-      "href": "/article/f8d330df-9387-45b2-a88b-40c08d0af3c4",
-      "text": "Output Encoding Using Struts 1"
-    },
-    {
-      "href": "/article/9135b59f-8c73-4a4f-83c5-9894d6587cca",
-      "text": "Output Encoding Using Struts 2"
-    }
-  ]
+  "links": []
 }

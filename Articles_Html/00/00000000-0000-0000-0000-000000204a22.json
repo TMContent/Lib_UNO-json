@@ -258,7 +258,7 @@
       "li",
       "a"
     ],
-    "x-frame-options": [
+    "x": [
       "p",
       "p",
       "p",
@@ -273,15 +273,136 @@
       "p",
       "ul",
       "ul",
+      "ul",
       "li",
       "li",
+      "a",
+      "li",
+      "ul",
+      "ul",
+      "ul",
       "ul",
       "ul",
       "li",
       "a",
       "li",
       "a",
+      "li",
+      "a",
+      "li",
+      "a",
+      "li",
+      "a",
       "ul",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "a",
+      "li",
+      "a",
+      "li",
+      "a",
+      "li",
+      "a",
+      "title"
+    ],
+    "frame": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "li",
+      "tt",
+      "tt",
+      "li",
+      "li",
+      "tt",
+      "tt",
+      "li",
+      "tt",
+      "p",
+      "pre",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "a",
+      "li",
+      "li",
+      "a",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "a",
+      "li",
+      "a",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "a",
+      "li",
+      "a",
+      "title"
+    ],
+    "options": [
+      "p",
+      "p",
+      "p",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "li",
+      "tt",
+      "tt",
+      "p",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "a",
+      "li",
+      "li",
+      "a",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "a",
+      "li",
+      "a",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "a",
       "li",
       "a",
       "title"
@@ -684,9 +805,6 @@
     "rendering": [
       "p"
     ],
-    "frame": [
-      "p"
-    ],
     "addition": [
       "p"
     ],
@@ -715,9 +833,21 @@
     "option": [
       "p"
     ],
-    "allow-from": [
+    "allow": [
       "p",
-      "p"
+      "p",
+      "ol",
+      "ol",
+      "li",
+      "li"
+    ],
+    "from": [
+      "p",
+      "p",
+      "ol",
+      "ol",
+      "li",
+      "li"
     ],
     "takes": [
       "p"
@@ -1008,18 +1138,6 @@
       "li",
       "li"
     ],
-    "allow": [
-      "ol",
-      "ol",
-      "li",
-      "li"
-    ],
-    "from": [
-      "ol",
-      "ol",
-      "li",
-      "li"
-    ],
     "domain": [
       "ol",
       "ol",
@@ -1083,13 +1201,22 @@
       "li",
       "li"
     ],
-    "header\"x-frame-options:": [
+    "header\"x": [
       "ol",
       "ol",
       "li",
       "li",
       "tt",
       "tt"
+    ],
+    "options:": [
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "tt",
+      "tt",
+      "pre"
     ],
     "deny\";": [
       "ol",
@@ -1114,12 +1241,24 @@
       "ol",
       "ol",
       "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "li",
+      "li",
       "li",
       "li",
       "li",
       "li",
       "li",
       "strong",
+      "tt",
+      "tt",
+      "tt",
+      "tt",
       "ul",
       "li",
       "a",
@@ -1248,7 +1387,12 @@
       "li",
       "tt"
     ],
-    "responseaddheader(“x-frame-options”,”deny”);": [
+    "responseaddheader(“x": [
+      "ol",
+      "li",
+      "tt"
+    ],
+    "options”,”deny”);": [
       "ol",
       "li",
       "tt"
@@ -1301,7 +1445,7 @@
       "li",
       "tt"
     ],
-    "filter-name>xframeoptionfilter</filter-name>": [
+    "name>xframeoptionfilter</filter": [
       "ol",
       "ol",
       "li",
@@ -1309,9 +1453,20 @@
       "tt",
       "tt"
     ],
-    "filter-class>": [
+    "name>": [
+      "ol",
       "ol",
       "li",
+      "li",
+      "tt",
+      "tt"
+    ],
+    "class>": [
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "tt",
       "tt"
     ],
     "comexample.servlet.filters.xframeoptionfilter": [
@@ -1319,9 +1474,12 @@
       "li",
       "tt"
     ],
-    "/filter-class>": [
+    "/filter": [
+      "ol",
       "ol",
       "li",
+      "li",
+      "tt",
       "tt"
     ],
     "/filter>": [
@@ -1329,17 +1487,25 @@
       "li",
       "tt"
     ],
-    "filter-mapping>": [
+    "mapping>": [
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "tt",
+      "tt"
+    ],
+    "url": [
       "ol",
       "li",
       "tt"
     ],
-    "url-pattern>/*</url-pattern>": [
+    "pattern>/*</url": [
       "ol",
       "li",
       "tt"
     ],
-    "/filter-mapping>": [
+    "pattern>": [
       "ol",
       "li",
       "tt"
@@ -1539,14 +1705,31 @@
       "pre",
       "pre"
     ],
-    "openssl/09.8o\nx-powered-by:": [
-      "pre"
-    ],
-    "php/53.8-zs5.5.0": [
+    "openssl/09.8o\nx": [
       "pre",
       "pre"
     ],
-    "zendserverset-cookie:": [
+    "powered": [
+      "pre",
+      "pre"
+    ],
+    "by:": [
+      "pre",
+      "pre"
+    ],
+    "php/53.8": [
+      "pre",
+      "pre"
+    ],
+    "zs5.5.0": [
+      "pre",
+      "pre"
+    ],
+    "zendserverset": [
+      "pre",
+      "pre"
+    ],
+    "cookie:": [
       "pre",
       "pre"
     ],
@@ -1554,7 +1737,11 @@
       "pre",
       "pre"
     ],
-    "path=/keep-alive:": [
+    "path=/keep": [
+      "pre",
+      "pre"
+    ],
+    "alive:": [
       "pre",
       "pre"
     ],
@@ -1565,11 +1752,23 @@
     "max=100connection:": [
       "pre"
     ],
-    "keep-alivetransfer-encoding:": [
+    "keep": [
       "pre",
       "pre"
     ],
-    "chunkedcontent-type:": [
+    "alivetransfer": [
+      "pre",
+      "pre"
+    ],
+    "encoding:": [
+      "pre",
+      "pre"
+    ],
+    "chunkedcontent": [
+      "pre",
+      "pre"
+    ],
+    "type:": [
       "pre",
       "pre"
     ],
@@ -1619,10 +1818,7 @@
     "0533:43": [
       "pre"
     ],
-    "openssl/09.8o\nx-frame-options:": [
-      "pre"
-    ],
-    "denyx-powered-by:": [
+    "denyx": [
       "pre"
     ],
     "max=99connection:": [
@@ -1666,12 +1862,32 @@
       "li",
       "li"
     ],
-    "http//tools.ietf.org/html/draft-ietf-websec-x-frame-options-00": [
+    "http//tools.ietf.org/html/draft": [
       "ul",
       "li",
       "a"
     ],
-    "https//developer.mozilla.org/en-us/docs/http/x-frame-options": [
+    "ietf": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "websec": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "00": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "https//developer.mozilla.org/en": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "us/docs/http/x": [
       "ul",
       "li",
       "a"
@@ -1688,7 +1904,35 @@
     "guidelines": [
       "h2"
     ],
-    "x-content-security-policy": [
+    "content": [
+      "ul",
+      "li",
+      "a",
+      "ul",
+      "li",
+      "a"
+    ],
+    "security": [
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "a",
+      "li",
+      "a",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "a",
+      "li",
+      "a"
+    ],
+    "policy": [
       "ul",
       "li",
       "a",
@@ -1707,18 +1951,24 @@
     "xss": [
       "ul",
       "ul",
-      "li",
-      "a",
-      "li",
-      "a",
-      "ul",
       "ul",
       "li",
       "a",
       "li",
+      "li",
+      "a",
+      "a",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "li",
+      "a",
       "a"
     ],
-    "x-xss-protection": [
+    "protection": [
       "ul",
       "li",
       "a",
@@ -1749,28 +1999,6 @@
       "li",
       "a"
     ],
-    "x-frame": [
-      "ul",
-      "li",
-      "a",
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a"
-    ],
-    "options": [
-      "ul",
-      "li",
-      "a",
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a"
-    ],
     "responses": [
       "ul",
       "li",
@@ -1779,7 +2007,21 @@
       "li",
       "a"
     ],
-    "strict-transport-security": [
+    "strict": [
+      "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "a",
+      "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "a"
+    ],
+    "transport": [
       "ul",
       "ul",
       "li",

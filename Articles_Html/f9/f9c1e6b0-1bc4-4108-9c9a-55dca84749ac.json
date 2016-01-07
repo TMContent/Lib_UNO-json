@@ -1104,15 +1104,31 @@
     ],
     "web": [
       "ol",
+      "ol",
+      "li",
       "li",
       "p",
-      "strong"
+      "p",
+      "strong",
+      "ol",
+      "li",
+      "ul",
+      "li",
+      "p"
     ],
     "accessible": [
       "ol",
+      "ol",
+      "li",
       "li",
       "p",
-      "strong"
+      "p",
+      "strong",
+      "ol",
+      "li",
+      "ul",
+      "li",
+      "p"
     ],
     "placed": [
       "ol",
@@ -1121,16 +1137,6 @@
     ],
     "into": [
       "ol",
-      "li",
-      "p"
-    ],
-    "web-accessible": [
-      "ol",
-      "li",
-      "p",
-      "ol",
-      "li",
-      "ul",
       "li",
       "p"
     ],
@@ -1844,7 +1850,18 @@
       "li",
       "a"
     ],
-    "least-privileged": [
+    "least": [
+      "ul",
+      "li",
+      "a",
+      "ul",
+      "li",
+      "a"
+    ],
+    "privileged": [
+      "ul",
+      "li",
+      "a",
       "ul",
       "li",
       "a"
@@ -1882,16 +1899,6 @@
       "a"
     ],
     "disabled": [
-      "ul",
-      "li",
-      "a"
-    ],
-    "least": [
-      "ul",
-      "li",
-      "a"
-    ],
-    "privileged": [
       "ul",
       "li",
       "a"

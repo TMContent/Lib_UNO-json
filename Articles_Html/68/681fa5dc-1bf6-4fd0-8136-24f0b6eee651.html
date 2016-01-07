@@ -1,0 +1,8 @@
+<h2>What to Do</h2>
+<p>Bind sockets to specific IP addresses.</p>
+<h2>Why</h2>
+<p>Binding sockets to specific IP addresses, instead of INADDR_ANY or 0.0.0.0, prevents socket hijacking.</p>
+<h2>When</h2>
+<p>Use this guideline when writing server applications using IP sockets.</p>
+<h2>How</h2>
+<p>Bind sockets to specific IP addresses, instead of to INADDR_ANY or 0.0.0.0. For Windows, set the SO_EXCLUSIVEADDRUSE option, which protects against binding to the same port.</p>

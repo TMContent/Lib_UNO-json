@@ -1,11 +1,11 @@
-<p>##What to Check For##</p>
+<h2>What to Check For</h2>
 <p>Verify that cloud log files are protected.</p>
-<p>##Why##</p>
+<h2>Why</h2>
 <p>Log files contain sensitive information about client access to resources in your cloud. This data includes the request type, the requested resource, the requestor’s IP, and the time and date of the request. When bucket logging is enabled, the records are aggregated into log files and delivered to a specified bucket.</p>
 <p>If log files can be accessed, then you are not complying with basic standards that require protection of client or cardholder data.</p>
-<p>##When##</p>
+<h2>When</h2>
 <p>When Amazon S3 creates a bucket or object at your request, and you set up logging, you specify a logfile name and prefix. These files are saved to a bucket you specify. By default you are the grantee and full owner. When needed, permissions on this bucket must be changed to allow other users access to any log files stored there.</p>
-<p>##How to Check##</p>
+<h2>How to Check</h2>
 <p>To verify that cloud log files are protected:</p>
 <ol>
 <li>
@@ -15,7 +15,7 @@
 <p><strong>Review policies.</strong> Navigate to Policies and review your policies. Make sure that they are configured to protect the log files and attached to the appropriate IAM users.</p>
 </li>
 </ol>
-<p>##How to Fix##</p>
+<h2>How to Fix</h2>
 <p>To protect log files, a best practice is to create and use a policy on the log bucket. This method is more efficient than configuring ACLs, permissions and access groups for the bucket.</p>
 <p>This is a summary of steps needed to create and use a policy. The specific policy elements to protect your log files would be prepared similarly.</p>
 <ol>

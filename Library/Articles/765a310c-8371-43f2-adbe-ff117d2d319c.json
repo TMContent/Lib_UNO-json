@@ -1,0 +1,56 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "0",
+      "Content_Hash": "0"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "765a310c-8371-43f2-adbe-ff117d2d319c"
+        ],
+        "Library_Id": [
+          "be5273b1-d682-4361-99d9-6234f2d47eb7"
+        ],
+        "Title": [
+          "Use Load Balancing"
+        ],
+        "Category": [
+          ""
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "false",
+          "DataType": "markdown"
+        },
+        "Data": [
+          "##What to Do##\r\n\r\nImplement load balancing by reviewing currently-available products and techniques. Choose a solution that satisfies business case. Use performance metrics to gauge the effectiveness of load balancing.\r\n\r\n\r\n##Why##\r\n\r\nLoad balancing is usually used for performance reasons and to mitigate Denial-of-Service attacks.\r\n\r\n\r\n##How##\r\n\r\nBegin with these steps for a secure load-balancing implementation.\r\n\r\n1. **Review available load-balancing options.** Make a list of load-balancing products, and determine what features are provided, such as: request routing, URL rewriting and redirecting, health checks, and auto scaling.\r\n\r\n2. **Choose load-balancing solution.** One solution may not provide the necessary features for your application. For example, URL rewriting and redirecting may be built-in, but auto scaling is missing. You may need to integrate different products in order to implement 100% of your security design features.\r\n\r\n3. **Configure load-balancing solution.** Use the vendor's instruction to setup the load balancing solution.\r\n\r\n4. **Test load balancing solution.** Before going live, test the load balancer. Use the vendor's instructions, if available, or contact them for information on how to test their solution.\r\n\r\n5. **Make adjustments to configuration.**  If any issues are discovered, correct them before deploying the solution.\r\n\r\n6. **Monitor performance.** Use the vendor-provided tools to monitor load-balancing performance.\r\n"
+        ]
+      }
+    ]
+  }
+}

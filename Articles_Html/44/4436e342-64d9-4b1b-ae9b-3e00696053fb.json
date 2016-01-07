@@ -212,6 +212,7 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "li",
@@ -225,7 +226,10 @@
       "p",
       "strong",
       "li",
+      "li",
       "p",
+      "p",
+      "strong",
       "p",
       "ul",
       "li",
@@ -275,7 +279,18 @@
     ],
     "based": [
       "p",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "ul",
+      "ul",
+      "li",
+      "li",
       "p",
+      "p",
+      "ol",
+      "li",
       "p",
       "ul",
       "li",
@@ -444,7 +459,16 @@
       "title"
     ],
     "accessible": [
-      "p"
+      "p",
+      "p",
+      "p",
+      "ul",
+      "li",
+      "a",
+      "ul",
+      "li",
+      "a",
+      "title"
     ],
     "by": [
       "p",
@@ -551,29 +575,45 @@
     ],
     "client": [
       "p",
-      "ol",
-      "ol",
-      "li",
       "p",
-      "strong",
-      "li",
-      "p",
-      "strong",
       "p",
       "ol",
       "ol",
       "ol",
-      "ol",
-      "li",
-      "p",
-      "li",
-      "p",
       "li",
       "li",
       "p",
       "p",
       "strong",
-      "p"
+      "li",
+      "p",
+      "strong",
+      "p",
+      "p",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "p",
+      "li",
+      "li",
+      "p",
+      "p",
+      "li",
+      "li",
+      "p",
+      "p",
+      "strong",
+      "p",
+      "ul",
+      "li",
+      "a",
+      "ul",
+      "li",
+      "a",
+      "title"
     ],
     "why": [
       "h1"
@@ -598,17 +638,6 @@
       "a",
       "li",
       "a"
-    ],
-    "client-accessible": [
-      "p",
-      "p",
-      "ul",
-      "li",
-      "a",
-      "ul",
-      "li",
-      "a",
-      "title"
     ],
     "data": [
       "p",
@@ -772,7 +801,7 @@
     "mechanism": [
       "p"
     ],
-    "client-side": [
+    "side": [
       "p",
       "ol",
       "li",
@@ -933,13 +962,13 @@
       "li",
       "a"
     ],
-    "url-based": [
+    "url": [
       "ol",
       "li",
       "ul",
       "li"
     ],
-    "form-based": [
+    "form": [
       "ol",
       "li",
       "ul",
@@ -1015,7 +1044,9 @@
       "p",
       "strong",
       "ul",
-      "li"
+      "li",
+      "p",
+      "p"
     ],
     "input": [
       "ol",
@@ -1119,9 +1150,15 @@
       "li",
       "p",
       "ul",
+      "ul",
+      "li",
+      "a",
       "li",
       "a",
       "ul",
+      "ul",
+      "li",
+      "a",
       "li",
       "a"
     ],
@@ -1381,10 +1418,14 @@
     "related": [
       "ol",
       "ol",
+      "ol",
       "li",
       "p",
       "li",
-      "p"
+      "li",
+      "p",
+      "p",
+      "strong"
     ],
     "it": [
       "ol",
@@ -1501,11 +1542,6 @@
       "li",
       "p"
     ],
-    "client-based": [
-      "ol",
-      "li",
-      "p"
-    ],
     "sure": [
       "ol",
       "li",
@@ -1517,12 +1553,6 @@
       "p"
     ],
     "prove": [
-      "ol",
-      "li",
-      "p",
-      "strong"
-    ],
-    "security-related": [
       "ol",
       "li",
       "p",
@@ -1625,7 +1655,7 @@
       "p",
       "p"
     ],
-    "user-supplied": [
+    "supplied": [
       "p",
       "p"
     ],
@@ -2023,7 +2053,7 @@
       "li",
       "a"
     ],
-    "time-out": [
+    "time": [
       "ul",
       "li",
       "a",
@@ -2175,7 +2205,18 @@
       "li",
       "a"
     ],
-    "cross-site": [
+    "cross": [
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "a",
+      "li",
+      "a"
+    ],
+    "site": [
       "ul",
       "ul",
       "ul",

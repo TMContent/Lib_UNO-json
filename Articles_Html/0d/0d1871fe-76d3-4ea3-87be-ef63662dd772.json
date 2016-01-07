@@ -139,6 +139,10 @@
       "ol",
       "ol",
       "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
       "li",
       "li",
       "li",
@@ -148,19 +152,39 @@
       "li",
       "strong",
       "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "tt",
+      "tt",
+      "tt",
+      "tt",
       "p",
       "ol",
       "ol",
       "ol",
       "ol",
       "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
       "li",
       "li",
       "li",
       "strong",
       "li",
       "li",
+      "li",
+      "li",
+      "li",
+      "li",
       "strong",
+      "tt",
+      "tt",
+      "tt",
+      "tt",
       "ul",
       "li",
       "a",
@@ -252,7 +276,7 @@
       "a",
       "title"
     ],
-    "x-frame-options": [
+    "x": [
       "p",
       "p",
       "p",
@@ -264,13 +288,99 @@
       "p",
       "ul",
       "ul",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "a",
+      "li",
+      "a",
       "li",
       "a",
       "li",
       "a",
       "ul",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
       "li",
-      "a"
+      "a",
+      "li",
+      "a",
+      "li",
+      "a",
+      "li",
+      "a",
+      "li",
+      "a",
+      "title"
+    ],
+    "frame": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "em",
+      "p",
+      "ol",
+      "li",
+      "tt",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "a",
+      "li",
+      "a",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "a",
+      "li",
+      "a",
+      "title"
+    ],
+    "options": [
+      "p",
+      "p",
+      "p",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "em",
+      "p",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "a",
+      "li",
+      "a",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "a",
+      "li",
+      "a",
+      "title"
     ],
     "headers": [
       "p",
@@ -596,9 +706,6 @@
     "rendering": [
       "p"
     ],
-    "frame": [
-      "p"
-    ],
     "how": [
       "h2",
       "h2"
@@ -841,7 +948,7 @@
       "li",
       "tt"
     ],
-    "filter-name>xframeoptionfilter</filter-name>": [
+    "name>xframeoptionfilter</filter": [
       "ol",
       "ol",
       "li",
@@ -855,12 +962,32 @@
       "tt",
       "tt"
     ],
-    "filter-class>": [
+    "name>": [
       "ol",
+      "ol",
+      "li",
       "li",
       "tt",
+      "tt",
+      "ol",
       "ol",
       "li",
+      "li",
+      "tt",
+      "tt"
+    ],
+    "class>": [
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "tt",
+      "tt",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "tt",
       "tt"
     ],
     "comexample.servlet.filters.xframeoptionfilter": [
@@ -871,12 +998,18 @@
       "li",
       "tt"
     ],
-    "/filter-class>": [
+    "/filter": [
       "ol",
+      "ol",
+      "li",
       "li",
       "tt",
+      "tt",
+      "ol",
       "ol",
       "li",
+      "li",
+      "tt",
       "tt"
     ],
     "/filter>": [
@@ -887,7 +1020,21 @@
       "li",
       "tt"
     ],
-    "filter-mapping>": [
+    "mapping>": [
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "tt",
+      "tt",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "tt",
+      "tt"
+    ],
+    "url": [
       "ol",
       "li",
       "tt",
@@ -895,7 +1042,7 @@
       "li",
       "tt"
     ],
-    "url-pattern>/*</url-pattern>": [
+    "pattern>/*</url": [
       "ol",
       "li",
       "tt",
@@ -903,7 +1050,7 @@
       "li",
       "tt"
     ],
-    "/filter-mapping>": [
+    "pattern>": [
       "ol",
       "li",
       "tt",
@@ -1011,7 +1158,12 @@
       "li",
       "tt"
     ],
-    "responseaddheader(“x-frame-options”,”deny”);": [
+    "responseaddheader(“x": [
+      "ol",
+      "li",
+      "tt"
+    ],
+    "options”,”deny”);": [
       "ol",
       "li",
       "tt"
@@ -1062,7 +1214,35 @@
     "guidelines": [
       "h2"
     ],
-    "x-content-security-policy": [
+    "content": [
+      "ul",
+      "li",
+      "a",
+      "ul",
+      "li",
+      "a"
+    ],
+    "security": [
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "a",
+      "li",
+      "a",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "a",
+      "li",
+      "a"
+    ],
+    "policy": [
       "ul",
       "li",
       "a",
@@ -1081,18 +1261,24 @@
     "xss": [
       "ul",
       "ul",
-      "li",
-      "a",
-      "li",
-      "a",
-      "ul",
       "ul",
       "li",
       "a",
       "li",
+      "li",
+      "a",
+      "a",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "li",
+      "a",
       "a"
     ],
-    "x-xss-protection": [
+    "protection": [
       "ul",
       "li",
       "a",
@@ -1122,31 +1308,21 @@
       "li",
       "a"
     ],
-    "x-frame": [
-      "ul",
-      "li",
-      "a",
+    "strict": [
       "ul",
       "ul",
       "li",
       "a",
       "li",
       "a",
-      "title"
+      "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "a"
     ],
-    "options": [
-      "ul",
-      "li",
-      "a",
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a",
-      "title"
-    ],
-    "strict-transport-security": [
+    "transport": [
       "ul",
       "ul",
       "li",

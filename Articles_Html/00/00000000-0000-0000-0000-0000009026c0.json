@@ -260,7 +260,99 @@
       "li",
       "a"
     ],
-    "x-xss-protection": [
+    "x": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "tt",
+      "li",
+      "p",
+      "pre",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "a",
+      "li",
+      "a",
+      "li",
+      "a",
+      "li",
+      "a",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "a",
+      "li",
+      "a",
+      "li",
+      "a",
+      "li",
+      "a",
+      "title"
+    ],
+    "xss": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "tt",
+      "li",
+      "li",
+      "tt",
+      "li",
+      "tt",
+      "p",
+      "p",
+      "p",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "li",
+      "a",
+      "a",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "li",
+      "a",
+      "a",
+      "title",
+      "title"
+    ],
+    "protection": [
       "p",
       "p",
       "p",
@@ -450,11 +542,15 @@
       "title"
     ],
     "cross": [
-      "p"
+      "p",
+      "ul",
+      "li"
     ],
     "site": [
       "p",
-      "p"
+      "p",
+      "ul",
+      "li"
     ],
     "scripting": [
       "p",
@@ -579,8 +675,11 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
+      "li",
+      "strong",
       "li",
       "strong",
       "p",
@@ -590,6 +689,9 @@
     ],
     "side": [
       "p",
+      "ol",
+      "li",
+      "strong",
       "p"
     ],
     "how": [
@@ -640,10 +742,19 @@
     "options": [
       "p",
       "ul",
+      "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "a",
       "li",
       "a",
       "ul",
       "ul",
+      "ul",
+      "li",
+      "a",
       "li",
       "a",
       "li",
@@ -793,11 +904,6 @@
       "p",
       "p"
     ],
-    "server-side": [
-      "ol",
-      "li",
-      "strong"
-    ],
     "language": [
       "ol",
       "li",
@@ -885,10 +991,18 @@
       "li",
       "p"
     ],
-    "header\"x-xss-protection:": [
+    "header\"x": [
       "ol",
       "li",
       "tt"
+    ],
+    "protection:": [
+      "ol",
+      "li",
+      "tt",
+      "pre",
+      "pre",
+      "pre"
     ],
     "mode=block\";": [
       "ol",
@@ -911,12 +1025,24 @@
       "ol",
       "ol",
       "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "li",
+      "li",
       "li",
       "li",
       "li",
       "li",
       "li",
       "strong",
+      "tt",
+      "tt",
+      "tt",
+      "tt",
       "ul",
       "li",
       "ul",
@@ -926,7 +1052,12 @@
       "li",
       "a"
     ],
-    "java-based": [
+    "java": [
+      "ol",
+      "li",
+      "strong"
+    ],
+    "based": [
       "ol",
       "li",
       "strong"
@@ -1062,7 +1193,12 @@
       "li",
       "tt"
     ],
-    "responseaddheader(“x-xss-protection”,”1;": [
+    "responseaddheader(“x": [
+      "ol",
+      "li",
+      "tt"
+    ],
+    "protection”,”1;": [
       "ol",
       "li",
       "tt"
@@ -1120,7 +1256,7 @@
       "li",
       "tt"
     ],
-    "filter-name>xssprotectionfilter</filter-name>": [
+    "name>xssprotectionfilter</filter": [
       "ol",
       "ol",
       "li",
@@ -1128,9 +1264,20 @@
       "tt",
       "tt"
     ],
-    "filter-class>": [
+    "name>": [
+      "ol",
       "ol",
       "li",
+      "li",
+      "tt",
+      "tt"
+    ],
+    "class>": [
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "tt",
       "tt"
     ],
     "comexample.servlet.filters.xssprotectionfilter": [
@@ -1138,9 +1285,12 @@
       "li",
       "tt"
     ],
-    "/filter-class>": [
+    "/filter": [
+      "ol",
       "ol",
       "li",
+      "li",
+      "tt",
       "tt"
     ],
     "/filter>": [
@@ -1148,17 +1298,26 @@
       "li",
       "tt"
     ],
-    "filter-mapping>": [
+    "mapping>": [
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "tt",
+      "tt"
+    ],
+    "url": [
+      "ol",
+      "li",
+      "tt",
+      "p"
+    ],
+    "pattern>/*</url": [
       "ol",
       "li",
       "tt"
     ],
-    "url-pattern>/*</url-pattern>": [
-      "ol",
-      "li",
-      "tt"
-    ],
-    "/filter-mapping>": [
+    "pattern>": [
       "ol",
       "li",
       "tt"
@@ -1220,23 +1379,6 @@
       "p",
       "p"
     ],
-    "xss": [
-      "p",
-      "p",
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a",
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a",
-      "title"
-    ],
     "here": [
       "p",
       "p"
@@ -1273,9 +1415,6 @@
       "pre"
     ],
     "links": [
-      "p"
-    ],
-    "url": [
       "p"
     ],
     "http//www.example.com/account.php?name=jane.": [
@@ -1376,7 +1515,10 @@
       "p",
       "p"
     ],
-    "pop-up": [
+    "pop": [
+      "p"
+    ],
+    "up": [
       "p"
     ],
     "message": [
@@ -1457,14 +1599,31 @@
       "pre",
       "pre"
     ],
-    "openssl/09.8o\nx-powered-by:": [
-      "pre"
-    ],
-    "php/53.8-zs5.5.0": [
+    "openssl/09.8o\nx": [
       "pre",
       "pre"
     ],
-    "zendserverset-cookie:": [
+    "powered": [
+      "pre",
+      "pre"
+    ],
+    "by:": [
+      "pre",
+      "pre"
+    ],
+    "php/53.8": [
+      "pre",
+      "pre"
+    ],
+    "zs5.5.0": [
+      "pre",
+      "pre"
+    ],
+    "zendserverset": [
+      "pre",
+      "pre"
+    ],
+    "cookie:": [
       "pre",
       "pre"
     ],
@@ -1472,7 +1631,11 @@
       "pre",
       "pre"
     ],
-    "path=/keep-alive:": [
+    "path=/keep": [
+      "pre"
+    ],
+    "alive:": [
+      "pre",
       "pre"
     ],
     "timeout=5": [
@@ -1483,11 +1646,23 @@
       "pre",
       "pre"
     ],
-    "keep-alivetransfer-encoding:": [
+    "keep": [
       "pre",
       "pre"
     ],
-    "chunkedcontent-type:": [
+    "alivetransfer": [
+      "pre",
+      "pre"
+    ],
+    "encoding:": [
+      "pre",
+      "pre"
+    ],
+    "chunkedcontent": [
+      "pre",
+      "pre"
+    ],
+    "type:": [
       "pre",
       "pre"
     ],
@@ -1525,7 +1700,7 @@
     "adding": [
       "p"
     ],
-    "?php\nheader(\"x-xss-protection:": [
+    "?php\nheader(\"x": [
       "pre"
     ],
     "1mode=block\");\n\n$name": [
@@ -1537,16 +1712,13 @@
     "0356:12": [
       "pre"
     ],
-    "openssl/09.8o\nx-xss-protection:": [
+    "1mode=block\nx": [
       "pre"
     ],
-    "1mode=block\nx-powered-by:": [
+    "path=/x": [
       "pre"
     ],
-    "path=/x-xss-protection:": [
-      "pre"
-    ],
-    "mode=blockkeep-alive:": [
+    "mode=blockkeep": [
       "pre"
     ],
     "not": [
@@ -1593,17 +1765,18 @@
       "ul",
       "li"
     ],
-    "cross-site": [
-      "ul",
-      "li"
-    ],
     "see": [
       "ul",
       "ul",
       "li",
       "li"
     ],
-    "http//msdn.microsoft.com/en-us/library/dd565647%28v=vs.85%29.aspx": [
+    "http//msdn.microsoft.com/en": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "us/library/dd565647%28v=vs.85%29.aspx": [
       "ul",
       "li",
       "a"
@@ -1651,7 +1824,35 @@
       "a",
       "title"
     ],
-    "x-content-security-policy": [
+    "content": [
+      "ul",
+      "li",
+      "a",
+      "ul",
+      "li",
+      "a"
+    ],
+    "security": [
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "a",
+      "li",
+      "a",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "a",
+      "li",
+      "a"
+    ],
+    "policy": [
       "ul",
       "li",
       "a",
@@ -1682,14 +1883,23 @@
       "a",
       "title"
     ],
-    "x-frame-options": [
+    "frame": [
+      "ul",
       "ul",
       "ul",
       "li",
       "a",
       "li",
       "a",
+      "li",
+      "a",
       "ul",
+      "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "a",
       "li",
       "a"
     ],
@@ -1701,17 +1911,6 @@
       "li",
       "a"
     ],
-    "x-frame": [
-      "ul",
-      "li",
-      "a",
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a"
-    ],
     "responses": [
       "ul",
       "li",
@@ -1720,7 +1919,21 @@
       "li",
       "a"
     ],
-    "strict-transport-security": [
+    "strict": [
+      "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "a",
+      "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "a"
+    ],
+    "transport": [
       "ul",
       "ul",
       "li",

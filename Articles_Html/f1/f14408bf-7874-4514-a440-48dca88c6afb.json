@@ -866,12 +866,25 @@
       "li",
       "p"
     ],
-    "built-in": [
+    "built": [
       "ol",
       "ol",
       "li",
       "li",
       "p",
+      "p"
+    ],
+    "in": [
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
+      "p",
+      "li",
+      "ul",
+      "li",
       "p"
     ],
     "functionality": [
@@ -1195,7 +1208,93 @@
       "li",
       "p"
     ],
-    "name^a-za-z''-'\\s]{1,40}$validates": [
+    "name^a": [
+      "ol",
+      "li",
+      "ul",
+      "li",
+      "p"
+    ],
+    "za": [
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "p",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "li",
+      "li",
+      "li",
+      "p",
+      "p",
+      "p",
+      "li",
+      "li",
+      "li",
+      "p",
+      "p",
+      "p",
+      "li",
+      "li",
+      "p",
+      "p"
+    ],
+    "z''": [
+      "ol",
+      "li",
+      "ul",
+      "li",
+      "p"
+    ],
+    "'\\s]{1,40}$validates": [
       "ol",
       "li",
       "ul",
@@ -1355,7 +1454,21 @@
       "li",
       "p"
     ],
-    "number^\\d{3}-\\d{2}-\\d{4}$validates": [
+    "number^\\d{3}": [
+      "ol",
+      "li",
+      "ul",
+      "li",
+      "p"
+    ],
+    "\\d{2}": [
+      "ol",
+      "li",
+      "ul",
+      "li",
+      "p"
+    ],
+    "\\d{4}$validates": [
       "ol",
       "li",
       "ul",
@@ -1569,21 +1682,64 @@
       "p",
       "strong"
     ],
-    "number^01]?[-": [
+    "number^01]?[": [
       "ol",
       "li",
       "ul",
       "li",
       "p"
     ],
-    "]?(\\([2-9]\\d{2}\\)|[2-9]\\d{2})[-": [
+    "": [
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "li",
+      "p",
+      "p",
+      "p",
+      "li",
+      "p",
+      "strong",
+      "li",
+      "p",
+      "strong"
+    ],
+    "]?(\\([2": [
       "ol",
       "li",
       "ul",
       "li",
       "p"
     ],
-    "]?\\d{3}[-": [
+    "9]\\d{2}\\)|[2": [
+      "ol",
+      "li",
+      "ul",
+      "li",
+      "p"
+    ],
+    "9]\\d{2})[": [
+      "ol",
+      "li",
+      "ul",
+      "li",
+      "p"
+    ],
+    "]?\\d{3}[": [
       "ol",
       "li",
       "ul",
@@ -1632,13 +1788,6 @@
       "li",
       "p"
     ],
-    "in": [
-      "ol",
-      "li",
-      "ul",
-      "li",
-      "p"
-    ],
     "parentheses": [
       "ol",
       "li",
@@ -1658,7 +1807,111 @@
       "p",
       "p"
     ],
-    "e-mail^[0-9a-za-z]([-.\\w]*[0-9a-za-z])*@([0-9a-za-z][-\\w]*[0-9a-za-z]\\.)+[a-za-z]{2,9})$validates": [
+    "e": [
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "p",
+      "p",
+      "strong"
+    ],
+    "mail^[0": [
+      "ol",
+      "li",
+      "ul",
+      "li",
+      "p"
+    ],
+    "9a": [
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "li",
+      "li",
+      "p",
+      "p",
+      "p",
+      "p",
+      "li",
+      "li",
+      "p",
+      "p"
+    ],
+    "z]([": [
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "ul",
+      "ul",
+      "li",
+      "p",
+      "li",
+      "p"
+    ],
+    ".\\w]*[0": [
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "ul",
+      "ul",
+      "li",
+      "p",
+      "li",
+      "p"
+    ],
+    "z])*@([0": [
+      "ol",
+      "li",
+      "ul",
+      "li",
+      "p"
+    ],
+    "z][": [
+      "ol",
+      "li",
+      "ul",
+      "li",
+      "p"
+    ],
+    "\\w]*[0": [
+      "ol",
+      "li",
+      "ul",
+      "li",
+      "p"
+    ],
+    "z]\\.)+[a": [
+      "ol",
+      "li",
+      "ul",
+      "li",
+      "p"
+    ],
+    "z]{2,9})$validates": [
       "ol",
       "li",
       "ul",
@@ -1677,7 +1930,7 @@
       "li",
       "p"
     ],
-    "e-mail": [
+    "mail": [
       "ol",
       "li",
       "ul",
@@ -1692,7 +1945,47 @@
       "li",
       "p"
     ],
-    "url^ht|f)tp(s?)\\:\\/\\/[0-9a-za-z]([-.\\w]*[0-9a-za-z])*(:(0-9)*)*(\\/?)([a-za-z0-9\\-\\.\\?\\,\\'\\/\\\\\\+&%\\$#_]*)?$validates": [
+    "url^ht|f)tp(s?)\\:\\/\\/[0": [
+      "ol",
+      "li",
+      "ul",
+      "li",
+      "p"
+    ],
+    "z])*(:(0": [
+      "ol",
+      "li",
+      "ul",
+      "li",
+      "p"
+    ],
+    "9)*)*(\\/?)([a": [
+      "ol",
+      "li",
+      "ul",
+      "li",
+      "p"
+    ],
+    "z0": [
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "ul",
+      "ul",
+      "li",
+      "p",
+      "li",
+      "p"
+    ],
+    "9\\": [
+      "ol",
+      "li",
+      "ul",
+      "li",
+      "p"
+    ],
+    "\\.\\?\\,\\'\\/\\\\\\+&%\\$#_]*)?$validates": [
       "ol",
       "li",
       "ul",
@@ -1720,21 +2013,70 @@
       "p",
       "strong"
     ],
-    "code^\\d{5}-\\d{4}|\\d{5}|\\d{9})$|^([a-za-z]\\d[a-za-z]": [
+    "code^\\d{5}": [
       "ol",
       "li",
       "ul",
       "li",
       "p"
     ],
-    "\\da-za-z]\\d)$validates": [
+    "\\d{4}|\\d{5}|\\d{9})$|^([a": [
       "ol",
       "li",
       "ul",
       "li",
       "p"
     ],
-    "password?!^[0-9]*$)(?!^[a-za-z]*$)^([a-za-z0-9]{8,40})$validates": [
+    "z]\\d[a": [
+      "ol",
+      "li",
+      "ul",
+      "li",
+      "p"
+    ],
+    "z]": [
+      "ol",
+      "li",
+      "ul",
+      "li",
+      "p"
+    ],
+    "\\da": [
+      "ol",
+      "li",
+      "ul",
+      "li",
+      "p"
+    ],
+    "z]\\d)$validates": [
+      "ol",
+      "li",
+      "ul",
+      "li",
+      "p"
+    ],
+    "password?!^[0": [
+      "ol",
+      "li",
+      "ul",
+      "li",
+      "p"
+    ],
+    "9]*$)(?!^[a": [
+      "ol",
+      "li",
+      "ul",
+      "li",
+      "p"
+    ],
+    "z]*$)^([a": [
+      "ol",
+      "li",
+      "ul",
+      "li",
+      "p"
+    ],
+    "9]{8,40})$validates": [
       "ol",
       "li",
       "ul",
@@ -1808,7 +2150,7 @@
       "li",
       "p"
     ],
-    "non-": [
+    "non": [
       "ol",
       "ol",
       "li",
@@ -2016,7 +2358,14 @@
       "li",
       "p"
     ],
-    "negative^(-)?\\d+(\\.\\d\\d)?$validates": [
+    "negative^(": [
+      "ol",
+      "li",
+      "ul",
+      "li",
+      "p"
+    ],
+    ")?\\d+(\\.\\d\\d)?$validates": [
       "ol",
       "li",
       "ul",
@@ -2075,7 +2424,12 @@
       "ul",
       "li"
     ],
-    "http//www.regular-expressions.info/tutorial.html.": [
+    "http//www.regular": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "expressions.info/tutorial.html.": [
       "ul",
       "li"
     ],
@@ -2083,7 +2437,7 @@
       "li",
       "a"
     ],
-    "http//www.regular-expressions.info/tutorial.html": [
+    "expressions.info/tutorial.html": [
       "a"
     ],
     "related": [

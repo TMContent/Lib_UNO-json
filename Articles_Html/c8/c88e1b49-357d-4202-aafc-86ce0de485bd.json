@@ -182,13 +182,19 @@
       "p",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "p",
       "p",
       "strong",
+      "li",
+      "span",
+      "p",
+      "pre",
       "p",
       "p",
+      "ol",
       "ol",
       "ol",
       "ol",
@@ -227,6 +233,8 @@
       "li",
       "p",
       "p",
+      "li",
+      "pre",
       "p",
       "p",
       "pre",
@@ -1877,11 +1885,32 @@
       "ol",
       "ol",
       "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "span",
+      "p",
+      "pre",
+      "li",
+      "li",
+      "li",
       "li",
       "li",
       "li",
       "li",
       "strong",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
       "ol",
       "ol",
       "ol",
@@ -1933,9 +1962,14 @@
       "p",
       "li",
       "li",
+      "li",
       "p",
       "p",
       "strong",
+      "pre",
+      "li",
+      "li",
+      "li",
       "li",
       "li",
       "li",
@@ -1943,6 +1977,9 @@
       "p",
       "p",
       "strong",
+      "pre",
+      "pre",
+      "pre",
       "ul",
       "ul",
       "li",
@@ -2006,26 +2043,56 @@
       "ol",
       "li"
     ],
-    "error-page>": [
+    "page>": [
       "ol",
       "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "span",
+      "span",
+      "p",
+      "p",
+      "pre",
+      "pre",
+      "li",
+      "li",
+      "li",
+      "li",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "pre",
+      "pre",
+      "li",
+      "li",
+      "li",
+      "pre",
+      "pre",
+      "pre"
+    ],
+    "type>java.lang.throwable</exception": [
       "ol",
       "li",
       "span",
       "p",
       "pre",
-      "li",
-      "li",
-      "pre",
-      "pre",
       "ol",
-      "ol",
-      "li",
-      "pre",
       "li",
       "pre"
     ],
-    "exception-type>java.lang.throwable</exception-type>": [
+    "type>": [
       "ol",
       "li",
       "span",
@@ -2035,7 +2102,7 @@
       "li",
       "pre"
     ],
-    "location>/error/myerrorpage.jsp</location></error-page>": [
+    "location>/error/myerrorpage.jsp</location></error": [
       "ol",
       "li",
       "span",
@@ -2186,12 +2253,26 @@
       "ol",
       "li"
     ],
-    "error-code>404</error-code>": [
+    "code>404</error": [
       "ol",
       "li",
       "pre",
       "ol",
       "li",
+      "pre"
+    ],
+    "code>": [
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "pre",
+      "pre",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "pre",
       "pre"
     ],
     "location>/error/error404.jsp</location>": [
@@ -2199,7 +2280,7 @@
       "li",
       "pre"
     ],
-    "/error-page>": [
+    "/error": [
       "ol",
       "ol",
       "li",
@@ -2207,7 +2288,7 @@
       "pre",
       "pre"
     ],
-    "error-code>500</error-code>": [
+    "code>500</error": [
       "ol",
       "li",
       "pre",
@@ -2312,8 +2393,16 @@
     ],
     "up": [
       "ol",
+      "ol",
+      "ol",
       "li",
-      "p"
+      "li",
+      "p",
+      "p",
+      "li",
+      "ul",
+      "li",
+      "pre"
     ],
     "involves": [
       "ol",
@@ -2390,7 +2479,7 @@
       "li",
       "p"
     ],
-    "clean-up": [
+    "clean": [
       "ol",
       "ol",
       "li",
@@ -3179,7 +3268,7 @@
       "li",
       "p"
     ],
-    "location>/error/errorgeneric.jsp</location> </error-page>": [
+    "location>/error/errorgeneric.jsp</location> </error": [
       "ol",
       "li",
       "pre"
@@ -3196,12 +3285,17 @@
       "p",
       "strong"
     ],
-    "location>/error/error404.jsp</location> </error-page> <error-page>": [
+    "location>/error/error404.jsp</location> </error": [
       "ol",
       "li",
       "pre"
     ],
-    "location>/error/error500.jsp</location> </error-page>": [
+    "page> <error": [
+      "ol",
+      "li",
+      "pre"
+    ],
+    "location>/error/error500.jsp</location> </error": [
       "ol",
       "li",
       "pre"

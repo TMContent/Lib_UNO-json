@@ -43,6 +43,10 @@
       "p",
       "i"
     ],
+    "8859": [
+      "p",
+      "font"
+    ],
     "applies": [
       "h1",
       "span"
@@ -1626,9 +1630,20 @@
       "p",
       "span"
     ],
-    "fine-tune": [
+    "fine": [
       "ul",
       "li",
+      "span",
+      "h2",
+      "span"
+    ],
+    "tune": [
+      "ul",
+      "li",
+      "span",
+      "h1",
+      "span",
+      "h2",
       "span",
       "h2",
       "span"
@@ -1865,7 +1880,11 @@
       "p",
       "font"
     ],
-    "encoding=\"iso-8859-1\"? <users>": [
+    "encoding=\"iso": [
+      "p",
+      "font"
+    ],
+    "1\"? <users>": [
       "p",
       "font"
     ],
@@ -2140,6 +2159,10 @@
       "p",
       "p",
       "span",
+      "p",
+      "i",
+      "p",
+      "font",
       "h2",
       "span",
       "p",
@@ -2157,7 +2180,14 @@
       "p",
       "span",
       "p",
-      "font"
+      "font",
+      "table",
+      "tbody",
+      "tr",
+      "td",
+      "p",
+      "font",
+      "span"
     ],
     "johns": [
       "p",
@@ -2801,7 +2831,7 @@
       "p",
       "p"
     ],
-    "string-length).\r\nfor": [
+    "length).\r\nfor": [
       "p"
     ],
     "instance": [
@@ -2813,10 +2843,10 @@
     "target": [
       "p"
     ],
-    "string-length)": [
+    "length)": [
       "i"
     ],
-    "string-length//user[position()=3]/child::node()[position()=2])": [
+    "length//user[position()=3]/child::node()[position()=2])": [
       "p",
       "font"
     ],
@@ -2989,6 +3019,8 @@
     ],
     "$xml": [
       "p",
+      "p",
+      "font",
       "font"
     ],
     "simplexml_load_file\"users.xml\");": [
@@ -2999,7 +3031,7 @@
       "p",
       "font"
     ],
-    "$xml-xpath(\"//users/user[username/text()='\".": [
+    "xpath(\"//users/user[username/text()='\".": [
       "p",
       "font"
     ],
@@ -3027,6 +3059,8 @@
       "p",
       "span",
       "p",
+      "p",
+      "span",
       "span",
       "p",
       "p",
@@ -3658,7 +3692,7 @@
       "p",
       "span"
     ],
-    "4 fine-tune": [
+    "4 fine": [
       "h1",
       "span"
     ],
@@ -3778,10 +3812,6 @@
       "p",
       "span"
     ],
-    "tune": [
-      "h2",
-      "span"
-    ],
     "according": [
       "h2",
       "span",
@@ -3812,9 +3842,13 @@
       "p",
       "span"
     ],
-    "url-encoding": [
+    "encoding": [
       "p",
-      "span"
+      "span",
+      "p",
+      "p",
+      "font",
+      "font"
     ],
     "schema": [
       "p",
@@ -3824,7 +3858,17 @@
       "font",
       "font"
     ],
-    "- original": [
+    "": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "font",
+      "font",
+      "font",
+      "font"
+    ],
+    " original": [
       "p",
       "font"
     ],
@@ -3832,21 +3876,11 @@
       "p",
       "font"
     ],
-    "- string": [
+    " string": [
       "p",
-      "font"
-    ],
-    "encoding": [
-      "p",
-      "p",
-      "font",
       "font"
     ],
     "1user'%20or%20'1'%20=%20'1": [
-      "p",
-      "font"
-    ],
-    "-": [
       "p",
       "font"
     ],
@@ -3974,7 +4008,7 @@
       "p",
       "font"
     ],
-    "string-length(s))(substring(s,n,1))count(//user/child::node())": [
+    "length(s))(substring(s,n,1))count(//user/child::node())": [
       "table",
       "tbody",
       "tr",
@@ -3982,18 +4016,35 @@
       "p",
       "font"
     ],
-    "namespace-uripath)name(path)count(path/child::node())count(path/child::text())count(path/child::comment())count(path/child::*)count(path/child::processing-instruction())": [
+    "namespace": [
       "table",
       "tbody",
       "tr",
       "td",
       "p",
-      "font"
-    ],
-    "string-length(s))": [
+      "font",
       "span"
     ],
-    "namespace-uripath)": [
+    "uripath)name(path)count(path/child::node())count(path/child::text())count(path/child::comment())count(path/child::*)count(path/child::processing": [
+      "table",
+      "tbody",
+      "tr",
+      "td",
+      "p",
+      "font"
+    ],
+    "instruction())": [
+      "table",
+      "tbody",
+      "tr",
+      "td",
+      "p",
+      "font"
+    ],
+    "length(s))": [
+      "span"
+    ],
+    "uripath)": [
       "span"
     ],
     "conclusions": [

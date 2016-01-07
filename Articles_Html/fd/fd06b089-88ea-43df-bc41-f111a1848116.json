@@ -1,24 +1,17 @@
 {
   "id": "fd06b089-88ea-43df-bc41-f111a1848116",
-  "checksum": "f1b189c1c1254108eced464f4b824b78",
+  "checksum": "9f52b3f96b8f0051d368fe4348edad2f",
   "words": {
-    "applies": [
-      "h1"
+    "what": [
+      "h2"
     ],
     "to": [
-      "h1",
-      "h1",
+      "h2",
       "p",
       "p"
     ],
-    "c++": [
-      "p"
-    ],
-    "what": [
-      "h1"
-    ],
     "do": [
-      "h1"
+      "h2"
     ],
     "write": [
       "p"
@@ -106,9 +99,6 @@
     "don't": [
       "p",
       "p",
-      "ul",
-      "li",
-      "a",
       "title"
     ],
     "throw": [
@@ -124,15 +114,11 @@
       "strong",
       "li",
       "p",
-      "ul",
-      "li",
-      "a",
       "title"
     ],
     "exceptions": [
       "p",
       "p",
-      "ol",
       "ol",
       "ol",
       "ol",
@@ -148,13 +134,10 @@
       "p",
       "p",
       "p",
-      "ul",
-      "li",
-      "a",
       "title"
     ],
     "why": [
-      "h1"
+      "h2"
     ],
     "destructor": [
       "p",
@@ -234,9 +217,6 @@
       "p",
       "li",
       "p",
-      "ul",
-      "li",
-      "a",
       "title"
     ],
     "the": [
@@ -285,14 +265,29 @@
     "result": [
       "p"
     ],
-    "denial-of-service": [
+    "denial": [
+      "p"
+    ],
+    "of": [
+      "p",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "p",
+      "li",
+      "li",
+      "p",
+      "p"
+    ],
+    "service": [
       "p"
     ],
     "vulnerability": [
       "p"
     ],
     "how": [
-      "h1"
+      "h2"
     ],
     "perform": [
       "p"
@@ -356,16 +351,8 @@
       "li",
       "p"
     ],
-    "task": [
-      "ol",
-      "li",
-      "p"
-    ],
-    "search": [
-      "ol",
-      "li",
-      "p",
-      "strong"
+    "task\n\n\nsearch": [
+      "ol"
     ],
     "for": [
       "ol",
@@ -378,24 +365,15 @@
       "li",
       "p"
     ],
-    "of": [
-      "ol",
-      "ol",
-      "ol",
-      "li",
-      "p",
-      "li",
-      "li",
-      "p",
-      "p"
-    ],
     "ones": [
       "ol",
       "li",
       "p"
     ],
+    "exceptions\n\n\nrewrite": [
+      "ol"
+    ],
     "rewrite": [
-      "ol",
       "ol",
       "li",
       "li",
@@ -491,28 +469,16 @@
       "li",
       "p"
     ],
-    "related": [
-      "h1"
-    ],
-    "items": [
-      "h1"
-    ],
-    "deallocation": [
-      "ul",
+    "task": [
       "li",
-      "a"
+      "p"
     ],
-    "functions": [
-      "ul",
+    "search": [
       "li",
-      "a"
+      "p",
+      "strong"
     ]
   },
   "tags": {},
-  "links": [
-    {
-      "href": "/article/441b4138-1866-442f-8abb-6d05236d6fcb",
-      "text": "Don't Throw Exceptions from Deallocation Functions"
-    }
-  ]
+  "links": []
 }

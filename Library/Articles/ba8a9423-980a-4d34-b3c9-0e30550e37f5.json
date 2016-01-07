@@ -1,0 +1,56 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "0",
+      "Content_Hash": "0"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "ba8a9423-980a-4d34-b3c9-0e30550e37f5"
+        ],
+        "Library_Id": [
+          "be5273b1-d682-4361-99d9-6234f2d47eb7"
+        ],
+        "Title": [
+          "Create Temporary Files Carefully"
+        ],
+        "Category": [
+          ""
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "false",
+          "DataType": "markdown"
+        },
+        "Data": [
+          "## What to Do ##\r\n\r\nUse difficult to predict file names when creating temporary files as a mitigation measure for time-of-check/time-of-use (TOCTOU) vulnerabilities.\r\n\r\n## Why ##\r\n\r\nCreate temporary files securely to prevent time-of-check/time-of-use (TOCTOU) issues when checking permissions on files and directories, allowing access to secured objects.\r\n\r\n## How ##\r\n\r\nPerform the following actions to create temporary files using difficult to predict names:\r\n\r\n1. **Generate random names.** Use a secure random generator (such as /dev/random) to generate temporary names.\r\n2. **Protect temporary files.** Create temporary files in secure directories. Unauthorized users should not have access to temporary files. In the event that temporary files are stored in a shared location, create a directory with a difficult to predict name, restrict access to it using access controls if possible, and store the application's temporary files there. \r\n3. **Clean up.** Delete temporary files immediately after use. If temporary files are used to store sensitive data, it is recommended to encrypt this data when storing it in temporary files and to overwrite it with random data before deleting the files.\r\n"
+        ]
+      }
+    ]
+  }
+}

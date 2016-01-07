@@ -10,7 +10,7 @@
 <li> <strong>Create a <em>Schema</em> object.</strong> Use the <em>SchemaFactory</em> class to create a <em>Schema</em> object.</li>
 <li> <strong>Create a <em>SAXParserFactory</em> object.</strong> The <em>SAXParserFactory</em> will be used to create a parser for working with the XML data.</li>
 <li> <strong>Assign the <em>Schema</em> object to the <em>SAXParserFactory</em> object.</strong> Use the <em>setSchema</em> method to assign the <em>Schema</em> object to the <em>SAXParserFactory</em> object. This will cause the parser produced by the factory object to use our schema to validate data.</li>
-<li> <strong>Create a <em>SAXParser</em> object.</strong> Use the <em>SAXParserFactory</em> object to create a parser. Since a schema has been assigned to the factory, the parser will validate XML data that is parses against the schema. This parser can then be used to load XML data.</li>
+<li> <strong>Create a <em>SAXParser</em> object.</strong> Use the <em>SAXParserFactory</em> object to create a parser. Since a schema has been assigned to the factory, the parser will validate XML data that is parsed against the schema. This parser can then be used to load XML data.</li>
 </ol><h2>Problem Example</h2><p>This code does not validate XML data using a schema:
 </p><pre>private void getXMLStream(InputStream inStream, DefaultHandler defHandler) {
   SAXParserFactory factory = SAXParserFactory.newInstance();

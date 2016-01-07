@@ -25,7 +25,7 @@
           "Implementation"
         ],
         "Technology": [
-          "C++"
+          "Technology Independent"
         ],
         "Type": [
           "Checklist Item"
@@ -57,10 +57,10 @@
       {
         "$": {
           "Sanitized": "true",
-          "DataType": "html"
+          "DataType": "markdown"
         },
         "Data": [
-          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>C&#43;&#43;</li>\r\n  </ul>\r\n  <h1>What to Check For</h1>\r\n  <p>Verify that deallocation functions don't throw exceptions.</p>\r\n  <h1>Why</h1>\r\n  <p>Deallocation functions may be called when exceptions are thrown. If a deallocation function throws an exception after being called when an exception is thrown, the program may terminate. This may result in a denial-of-service vulnerability.</p>\r\n  <h1>How to Check</h1>\r\n  <p>Search for deallocation functions. Verify that deallocation functions don't throw exceptions.</p>\r\n  <h1>How to Fix</h1>\r\n  <p>Identify deallocation functions that throw exceptions and rewrite them in such a way that they don't throw exceptions.</p>\r\n  <h1>Additional Resources</h1>\r\n  <ul>\r\n    <li>For more information about not throwing exceptions from deallocation functions, please see <a href=\"https://www.securecoding.cert.org/confluence/display/cplusplus/VOID+ERR38-CPP.+Deallocation+functions+must+not+throw+exceptions\">https://www.securecoding.cert.org/confluence/display/cplusplus/VOID+ERR38-CPP.+Deallocation+functions+must+not+throw+exceptions</a></li>\r\n  </ul>\r\n  <h1>Related Items</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/441b4138-1866-442f-8abb-6d05236d6fcb\">Don't Throw Exceptions from Deallocation Functions</a>\r\n      <li>\r\n        <a href=\"/article/fd06b089-88ea-43df-bc41-f111a1848116\">Don't Throw Exceptions from Destructors</a>\r\n        <li>\r\n          <a href=\"/article/2e732e9d-5677-40cc-8e33-c40ceacc056b\">\r\n            <a href=\"/article/2e732e9d-5677-40cc-8e33-c40ceacc056b\">Destructors don't throw exceptions</a>\r\n          </a>\r\n        </li>\r\n      </li>\r\n    </li>\r\n  </ul>"
+          "## What to Check For ##\r\n\r\nVerify that deallocation functions don't throw exceptions.\r\n\r\n## Why ##\r\n\r\nDeallocation functions may be called when exceptions are thrown. If a deallocation function throws an exception after being called when an exception is thrown, the program may terminate. This may result in a denial-of-service vulnerability.\r\n\r\n## How to Check ##\r\n\r\nSearch for deallocation functions. Verify that deallocation functions don't throw exceptions.\r\n\r\n## How to Fix ##\r\n\r\nIdentify deallocation functions that throw exceptions and rewrite them in such a way that they don't throw exceptions.\r\n\r\n## Additional Resources ##\r\n\r\n - For more information about not throwing exceptions from deallocation functions,  see [https://www.securecoding.cert.org/confluence/display/cplusplus/VOID+ERR38-CPP.+Deallocation+functions+must+not+throw+exceptions](https://www.securecoding.cert.org/confluence/display/cplusplus/VOID+ERR38-CPP.+Deallocation+functions+must+not+throw+exceptions)\r\n\r\n"
         ]
       }
     ]

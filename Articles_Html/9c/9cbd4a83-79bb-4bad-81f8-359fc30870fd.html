@@ -1,0 +1,10 @@
+<h2>What to Do</h2>
+<p>Remove code that concatenates user data into XSL stylesheets.</p>
+<h2>Why</h2>
+<p>Concatenating user data into XSL stylesheets results in XSLT injection vulnerabilities. It is possible to encode data properly and then safely insert it into XSL stylesheets, if that is really necessary. For most realistic applications, placing user data into XSL stylesheets should not be necessary, so the safest thing to do is to remove the code that does it.</p>
+<h2>How</h2>
+<p>To remove code that concatenates untrusted data into XSL stylesheets:</p>
+<ol>
+<li><strong>Find code that concatenates user data into XSL stylesheets.</strong> Make a spreadsheet about all the code that concatenates user data into XSL stylesheets. This is a very rare scenario, so this code should be easy to find if your application is doing this.</li>
+<li><strong>Remove code that concatenates user data into XSL stylesheets.</strong> It should really be possible to implement most applications without including user data in XSL stylesheets, so you should be able to just remove the concatenation code and perhaps implement the application some other way. If it is absolutely necessary to include user data in XSL stylesheets, then the data must first be encoded properly. Make sure to use XML encoding functions that are known to be reliable for this purpose.</li>
+</ol>

@@ -141,11 +141,14 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "strong",
       "li",
       "li",
+      "li",
+      "p",
       "p",
       "p",
       "p",
@@ -388,7 +391,10 @@
     "persistent": [
       "p"
     ],
-    "cross-site": [
+    "cross": [
+      "p"
+    ],
+    "site": [
       "p"
     ],
     "scripting": [
@@ -533,7 +539,10 @@
     "server": [
       "p",
       "pre",
-      "pre"
+      "pre",
+      "ul",
+      "li",
+      "a"
     ],
     "then": [
       "p"
@@ -651,11 +660,24 @@
       "ol",
       "li"
     ],
-    "url-based": [
+    "url": [
       "ol",
       "li",
       "ul",
       "li"
+    ],
+    "based": [
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "li",
+      "p"
     ],
     "parameters": [
       "ol",
@@ -671,7 +693,7 @@
       "p",
       "strong"
     ],
-    "form-based": [
+    "form": [
       "ol",
       "li",
       "ul",
@@ -753,7 +775,7 @@
       "li",
       "p"
     ],
-    "database-specific": [
+    "specific": [
       "ol",
       "li",
       "p"
@@ -1015,11 +1037,6 @@
       "li",
       "p"
     ],
-    "based": [
-      "ol",
-      "li",
-      "p"
-    ],
     "attacks": [
       "ol",
       "li",
@@ -1061,7 +1078,15 @@
     ],
     "user": [
       "p",
-      "p"
+      "pre",
+      "p",
+      "pre",
+      "ul",
+      "li",
+      "a",
+      "ul",
+      "li",
+      "a"
     ],
     "query": [
       "p",
@@ -1190,7 +1215,7 @@
       "pre",
       "pre"
     ],
-    "user-supplied": [
+    "supplied": [
       "pre",
       "pre",
       "ul",
@@ -1315,7 +1340,10 @@
     "goodpattern": [
       "pre"
     ],
-    "\"0-9]++\";": [
+    "\"0": [
+      "pre"
+    ],
+    "9]++\";": [
       "pre"
     ],
     "pattern": [
@@ -1365,7 +1393,10 @@
     "regular": [
       "ul",
       "ul",
+      "ul",
       "li",
+      "li",
+      "a",
       "li"
     ],
     "expressions": [
@@ -1376,7 +1407,7 @@
       "ul",
       "li"
     ],
-    "regular-expressionsinfo.": [
+    "expressionsinfo.": [
       "ul",
       "li"
     ],
@@ -1432,7 +1463,7 @@
       "ul",
       "li"
     ],
-    "regular-expressionsinfo": [
+    "expressionsinfo": [
       "a"
     ],
     "guidelines": [
@@ -1504,7 +1535,7 @@
       "li",
       "a"
     ],
-    "client-side": [
+    "client": [
       "ul",
       "li",
       "a",
@@ -1512,6 +1543,20 @@
       "li",
       "a",
       "ul",
+      "li",
+      "a"
+    ],
+    "side": [
+      "ul",
+      "li",
+      "a",
+      "ul",
+      "li",
+      "a",
+      "ul",
+      "ul",
+      "li",
+      "a",
       "li",
       "a"
     ],
@@ -1606,11 +1651,6 @@
       "a",
       "li",
       "a",
-      "li",
-      "a"
-    ],
-    "server-side": [
-      "ul",
       "li",
       "a"
     ],

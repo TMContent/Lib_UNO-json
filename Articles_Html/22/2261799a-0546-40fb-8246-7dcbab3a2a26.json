@@ -1,11 +1,31 @@
 {
   "id": "2261799a-0546-40fb-8246-7dcbab3a2a26",
-  "checksum": "2a802178c7a0b81946e4ac41f42701aa",
+  "checksum": "8e73cec1280f413760e6b0650dae3afd",
   "words": {
-    "##applies": [
-      "p"
+    "applies": [
+      "h2"
     ],
-    "to##": [
+    "to": [
+      "h2",
+      "h2",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
+      "p",
+      "p",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
       "p"
     ],
     "amazon": [
@@ -26,33 +46,11 @@
       "ul",
       "li"
     ],
-    "##what": [
-      "p"
+    "what": [
+      "h2"
     ],
-    "to": [
-      "p",
-      "p",
-      "p",
-      "p",
-      "p",
-      "p",
-      "p",
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "p",
-      "p",
-      "p",
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "p",
-      "p"
-    ],
-    "do##": [
-      "p"
+    "do": [
+      "h2"
     ],
     "remove": [
       "p",
@@ -130,7 +128,10 @@
       "li",
       "p",
       "p",
-      "strong"
+      "strong",
+      "ul",
+      "li",
+      "code"
     ],
     "and": [
       "p",
@@ -177,6 +178,12 @@
       "ol",
       "li",
       "p",
+      "ul",
+      "ul",
+      "li",
+      "code",
+      "li",
+      "code",
       "title"
     ],
     "with": [
@@ -372,6 +379,9 @@
       "li",
       "p",
       "ul",
+      "ul",
+      "li",
+      "code",
       "li"
     ],
     "beanstalk": [
@@ -381,6 +391,9 @@
       "li",
       "p",
       "ul",
+      "ul",
+      "li",
+      "code",
       "li"
     ],
     "eb)\ndeleting": [
@@ -427,8 +440,8 @@
     "deleting": [
       "li"
     ],
-    "##why##": [
-      "p"
+    "why": [
+      "h2"
     ],
     "shared": [
       "p"
@@ -747,6 +760,7 @@
     ],
     "when": [
       "p",
+      "h2",
       "p",
       "ol",
       "ol",
@@ -827,9 +841,6 @@
     "simplification": [
       "p"
     ],
-    "##when##": [
-      "p"
-    ],
     "no": [
       "p",
       "ol",
@@ -881,7 +892,13 @@
       "strong",
       "li",
       "p",
-      "strong"
+      "strong",
+      "ul",
+      "ul",
+      "li",
+      "code",
+      "li",
+      "code"
     ],
     "later": [
       "p"
@@ -1033,7 +1050,10 @@
       "li",
       "li",
       "p",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "code"
     ],
     "deleted": [
       "ol",
@@ -1051,7 +1071,12 @@
       "li",
       "p"
     ],
-    "roll-back\n\n\napplication": [
+    "roll": [
+      "ol",
+      "li",
+      "p"
+    ],
+    "back\n\n\napplication": [
       "ol"
     ],
     "deployed": [
@@ -1117,7 +1142,9 @@
       "li",
       "p",
       "ul",
-      "li"
+      "li",
+      "li",
+      "code"
     ],
     "after": [
       "ol",
@@ -1191,12 +1218,12 @@
       "li",
       "p"
     ],
-    "roll-back": [
+    "back": [
       "li",
       "p"
     ],
-    "##how##": [
-      "p"
+    "how": [
+      "h2"
     ],
     "follow": [
       "p",
@@ -1457,16 +1484,16 @@
       "li",
       "p"
     ],
-    "terminate-instances": [
+    "cli\nec2": [
+      "ul"
+    ],
+    "cli\nstop": [
+      "ul"
+    ],
+    "ec2instance": [
       "ul",
       "li",
       "code"
-    ],
-    "cli\nec2-terminate-instances": [
-      "ul"
-    ],
-    "cli\nstop-ec2instance": [
-      "ul"
     ],
     "tools": [
       "ul",
@@ -1480,11 +1507,7 @@
       "ul",
       "li"
     ],
-    "ec2-terminate-instances": [
-      "li",
-      "code"
-    ],
-    "stop-ec2instance": [
+    "stop": [
       "li",
       "code"
     ],
@@ -1524,7 +1547,10 @@
     "delete": [
       "ol",
       "li",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "code"
     ],
     "note": [
       "ol",
@@ -1576,11 +1602,6 @@
     ],
     "bucket\n\n\nremove": [
       "ol"
-    ],
-    "elastic-beanstalk-delete-application-version": [
-      "ul",
-      "li",
-      "code"
     ],
     "cli\ndeleteapplicationversion": [
       "ul"

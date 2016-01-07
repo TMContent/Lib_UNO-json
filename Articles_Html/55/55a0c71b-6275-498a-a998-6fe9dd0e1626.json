@@ -7,7 +7,10 @@
       "li",
       "ul",
       "li",
-      "h1"
+      "h1",
+      "ol",
+      "p",
+      "em"
     ],
     "2": [
       "ul",
@@ -26,6 +29,15 @@
       "li",
       "ul",
       "li"
+    ],
+    "5": [
+      "ol",
+      "p",
+      "em"
+    ],
+    "18": [
+      "p",
+      "em"
     ],
     "40": [
       "ul",
@@ -940,6 +952,8 @@
       "li",
       "ul",
       "li",
+      "ul",
+      "li",
       "p",
       "h1",
       "p",
@@ -1288,18 +1302,62 @@
       "p",
       "p"
     ],
-    "machine-level": [
+    "machine": [
       "p",
       "ul",
       "li",
+      "ul",
+      "li",
+      "ul",
+      "li",
+      "h1",
+      "p",
+      "h2",
+      "p",
+      "p",
+      "h2",
+      "p",
+      "ol",
+      "p"
+    ],
+    "level": [
+      "p",
+      "p",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "p",
+      "p",
       "p",
       "p"
     ],
-    "user-level": [
+    "user": [
       "p",
       "ul",
       "li",
+      "ul",
+      "li",
       "p",
+      "p",
+      "ul",
+      "li",
+      "h1",
+      "p",
+      "h2",
+      "p",
+      "p",
+      "h2",
+      "p",
+      "p",
+      "p",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
+      "ol",
+      "li",
       "p"
     ],
     "stores": [
@@ -1885,42 +1943,6 @@
       "li",
       "h1"
     ],
-    "machine": [
-      "ul",
-      "li",
-      "ul",
-      "li",
-      "h1",
-      "h2",
-      "p",
-      "h2",
-      "p",
-      "ol",
-      "p"
-    ],
-    "user": [
-      "ul",
-      "li",
-      "p",
-      "p",
-      "ul",
-      "li",
-      "h1",
-      "h2",
-      "p",
-      "h2",
-      "p",
-      "p",
-      "p",
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "p",
-      "ol",
-      "li",
-      "p"
-    ],
     "file": [
       "ul",
       "li",
@@ -2280,7 +2302,11 @@
       "pre",
       "p"
     ],
-    "out-of-process": [
+    "out": [
+      "ul",
+      "li"
+    ],
+    "process": [
       "ul",
       "li"
     ],
@@ -2620,6 +2646,8 @@
       "li",
       "p",
       "ol",
+      "ol",
+      "li",
       "li",
       "p",
       "p",
@@ -3047,7 +3075,95 @@
       "li",
       "pre"
     ],
-    "-pe": [
+    "": [
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "pre",
+      "pre",
+      "pre",
+      "p",
+      "p",
+      "em",
+      "em",
+      "pre",
+      "pre",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "em",
+      "li",
+      "em",
+      "li",
+      "em",
+      "li",
+      "em",
+      "li",
+      "li",
+      "pre",
+      "pre",
+      "li",
+      "li",
+      "p",
+      "em",
+      "pre",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "pre",
+      "pre",
+      "pre",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "em",
+      "li",
+      "em",
+      "li",
+      "em",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "pre",
+      "pre"
+    ],
+    "pe": [
       "ol",
       "ol",
       "li",
@@ -3085,7 +3201,7 @@
       "li",
       "pre"
     ],
-    "-app": [
+    "app": [
       "ol",
       "ol",
       "ol",
@@ -3121,7 +3237,7 @@
       "li",
       "pre"
     ],
-    "-prov": [
+    "prov": [
       "ol",
       "ol",
       "ol",
@@ -3236,7 +3352,7 @@
       "li",
       "p"
     ],
-    "-pef": [
+    "pef": [
       "ol",
       "ol",
       "ol",
@@ -3495,7 +3611,10 @@
       "p",
       "p"
     ],
-    "location%windir%\\system32\\microsoft\\protect\\s-1-5-18review": [
+    "location%windir%\\system32\\microsoft\\protect\\s": [
+      "ol"
+    ],
+    "18review": [
       "ol"
     ],
     "examine": [
@@ -3839,7 +3958,7 @@
       "ol",
       "li"
     ],
-    "-pd": [
+    "pd": [
       "ol",
       "li",
       "pre",
@@ -3866,7 +3985,7 @@
       "p",
       "p"
     ],
-    "-pdf": [
+    "pdf": [
       "ol",
       "ol",
       "li",
@@ -3891,7 +4010,7 @@
       "p",
       "em"
     ],
-    "%windir%\\system32\\microsoft\\protect\\s-1-5-18": [
+    "%windir%\\system32\\microsoft\\protect\\s": [
       "p",
       "em"
     ],
@@ -4002,9 +4121,10 @@
       "ol",
       "li"
     ],
-    "run-time": [
+    "time": [
       "ol",
-      "li"
+      "li",
+      "p"
     ],
     "error": [
       "ol",
@@ -4155,9 +4275,6 @@
     "uses": [
       "p"
     ],
-    "time": [
-      "p"
-    ],
     "configprotectionprovider=\"myuserdataprotectionconfigurationprovider\"": [
       "ol",
       "pre"
@@ -4301,7 +4418,10 @@
     "target": [
       "p"
     ],
-    "re-import": [
+    "re": [
+      "p"
+    ],
+    "import": [
       "p"
     ],
     "adapted": [

@@ -165,6 +165,8 @@
       "ol",
       "ol",
       "ol",
+      "ol",
+      "li",
       "li",
       "li",
       "li",
@@ -172,21 +174,27 @@
       "li",
       "li",
       "p",
+      "p",
+      "p",
+      "strong",
+      "p",
+      "p",
+      "p",
+      "p",
+      "li",
+      "li",
+      "li",
+      "li",
       "p",
       "p",
       "strong",
       "p",
       "p",
-      "p",
-      "li",
       "li",
       "li",
       "p",
       "p",
       "strong",
-      "p",
-      "li",
-      "p",
       "p",
       "ul",
       "li",
@@ -225,6 +233,11 @@
     "based": [
       "p",
       "p",
+      "p",
+      "ol",
+      "li",
+      "p",
+      "li",
       "p",
       "ul",
       "li",
@@ -482,10 +495,15 @@
     "client": [
       "p",
       "p",
+      "p",
+      "p",
+      "p",
       "ol",
       "ol",
       "ol",
       "ol",
+      "ol",
+      "li",
       "li",
       "li",
       "li",
@@ -494,9 +512,12 @@
       "p",
       "p",
       "p",
+      "p",
       "li",
       "li",
       "li",
+      "li",
+      "p",
       "p",
       "p",
       "p",
@@ -505,12 +526,19 @@
       "p",
       "p",
       "strong",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a",
+      "ul",
+      "li",
+      "a",
+      "title"
     ],
     "why": [
       "h1"
     ],
-    "client-accessible": [
+    "accessible": [
       "p",
       "p",
       "ul",
@@ -729,7 +757,7 @@
     "processes": [
       "p"
     ],
-    "client-side": [
+    "side": [
       "p"
     ],
     "information": [
@@ -959,14 +987,22 @@
     "related": [
       "ol",
       "ol",
+      "ol",
+      "li",
+      "li",
+      "li",
+      "p",
+      "p",
+      "p",
       "li",
       "li",
       "p",
       "p",
       "li",
-      "p",
       "li",
-      "p"
+      "p",
+      "p",
+      "strong"
     ],
     "application's": [
       "ol",
@@ -1138,13 +1174,6 @@
       "li",
       "p"
     ],
-    "client-based": [
-      "ol",
-      "li",
-      "p",
-      "li",
-      "p"
-    ],
     "attacks": [
       "ol",
       "li",
@@ -1189,16 +1218,6 @@
       "p"
     ],
     "prove": [
-      "ol",
-      "li",
-      "p",
-      "li",
-      "p",
-      "li",
-      "p",
-      "strong"
-    ],
-    "security-related": [
       "ol",
       "li",
       "p",
@@ -1458,7 +1477,11 @@
       "p",
       "p"
     ],
-    "user-supplied": [
+    "user": [
+      "p",
+      "p"
+    ],
+    "supplied": [
       "p",
       "p"
     ],
@@ -1868,9 +1891,15 @@
     ],
     "out": [
       "ul",
+      "ul",
+      "li",
+      "a",
       "li",
       "a",
       "ul",
+      "ul",
+      "li",
+      "a",
       "li",
       "a"
     ],
@@ -1882,7 +1911,7 @@
       "li",
       "a"
     ],
-    "time-out": [
+    "time": [
       "ul",
       "li",
       "a",
@@ -2046,7 +2075,18 @@
       "li",
       "a"
     ],
-    "cross-site": [
+    "cross": [
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "a",
+      "li",
+      "a"
+    ],
+    "site": [
       "ul",
       "ul",
       "ul",

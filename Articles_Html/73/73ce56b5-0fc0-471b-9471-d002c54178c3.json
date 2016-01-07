@@ -40,6 +40,9 @@
     "321": [
       "pre"
     ],
+    "8859": [
+      "pre"
+    ],
     "applies": [
       "h1"
     ],
@@ -230,7 +233,8 @@
       "p"
     ],
     "keep": [
-      "p"
+      "p",
+      "pre"
     ],
     "a": [
       "p",
@@ -925,6 +929,7 @@
       "p",
       "p",
       "p",
+      "p",
       "p"
     ],
     "including": [
@@ -1001,6 +1006,7 @@
       "p",
       "p",
       "p",
+      "p",
       "h2",
       "em",
       "p",
@@ -1038,7 +1044,35 @@
       "p",
       "p"
     ],
-    "file-system": [
+    "file": [
+      "p",
+      "p",
+      "p",
+      "h2",
+      "em",
+      "p",
+      "p",
+      "p",
+      "h2",
+      "em",
+      "ol",
+      "li",
+      "p",
+      "h2",
+      "em",
+      "p",
+      "ol",
+      "li",
+      "p"
+    ],
+    "system": [
+      "p",
+      "p",
+      "h2",
+      "em",
+      "h2",
+      "em",
+      "p",
       "p"
     ],
     "command": [
@@ -1352,7 +1386,11 @@
       "ol",
       "li"
     ],
-    "client-cookies": [
+    "client": [
+      "p",
+      "p"
+    ],
+    "cookies": [
       "p"
     ],
     "identify": [
@@ -1474,7 +1512,10 @@
     "http/11\r\nhost:": [
       "pre"
     ],
-    "tequila8443user-agent:": [
+    "tequila8443user": [
+      "pre"
+    ],
+    "agent:": [
       "pre"
     ],
     "mozilla/50": [
@@ -1497,7 +1538,11 @@
     "60;": [
       "pre"
     ],
-    "en-us": [
+    "en": [
+      "pre",
+      "pre"
+    ],
+    "us": [
       "pre"
     ],
     "rv1.8.1.4)\r\ngecko/20070515": [
@@ -1506,19 +1551,34 @@
     "firefox/20.0.4\r\naccept:": [
       "pre"
     ],
-    "text/xmlapplication/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5\r\naccept-language:": [
+    "text/xmlapplication/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5\r\naccept": [
       "pre"
     ],
-    "en-usen;q=0.5\r\naccept-charset:": [
+    "language:": [
       "pre"
     ],
-    "iso-8859-1utf-8;q=0.7,*;q=0.7\r\nkeep-alive:": [
+    "usen;q=0.5\r\naccept": [
+      "pre"
+    ],
+    "charset:": [
+      "pre"
+    ],
+    "iso": [
+      "pre"
+    ],
+    "1utf": [
+      "pre"
+    ],
+    "8;q=0.7,*;q=0.7\r\nkeep": [
+      "pre"
+    ],
+    "alive:": [
       "pre"
     ],
     "300connection": [
       "pre"
     ],
-    "keep-alive\rreferer:": [
+    "alive\rreferer:": [
       "pre"
     ],
     "http//someserver/uploads.jsp\r\ncookie:": [
@@ -1527,13 +1587,65 @@
     "jsessionid=ee3bd1e764cd6eed280426128201131c": [
       "pre"
     ],
-    "user=leonardo\rcontent-type:": [
+    "user=leonardo\rcontent": [
       "pre"
     ],
-    "multipart/form-data": [
+    "type:": [
       "pre"
     ],
-    "boundary=---------------------------263152394310685\rcontent-length:": [
+    "multipart/form": [
+      "pre"
+    ],
+    "data": [
+      "pre",
+      "p"
+    ],
+    "boundary=": [
+      "pre"
+    ],
+    "": [
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre"
+    ],
+    "263152394310685\rcontent": [
+      "pre"
+    ],
+    "length:": [
       "pre"
     ],
     "proxy": [
@@ -1607,26 +1719,6 @@
     ],
     "look": [
       "p",
-      "p"
-    ],
-    "file": [
-      "p",
-      "p",
-      "h2",
-      "em",
-      "p",
-      "p",
-      "p",
-      "h2",
-      "em",
-      "ol",
-      "li",
-      "p",
-      "h2",
-      "em",
-      "p",
-      "ol",
-      "li",
       "p"
     ],
     "upload": [
@@ -1738,6 +1830,8 @@
     ],
     "log_table": [
       "pre",
+      "pre",
+      "pre",
       "pre"
     ],
     "set": [
@@ -1761,7 +1855,8 @@
       "p",
       "pre"
     ],
-    "user='attacker'--": [
+    "user='attacker'": [
+      "pre",
       "pre"
     ],
     "drop": [
@@ -1778,10 +1873,6 @@
       "p"
     ],
     "a'='a'drop": [
-      "pre"
-    ],
-    "log_table--": [
-      "pre",
       "pre"
     ],
     "also": [
@@ -1824,15 +1915,6 @@
     "server’s": [
       "p"
     ],
-    "system": [
-      "p",
-      "h2",
-      "em",
-      "h2",
-      "em",
-      "p",
-      "p"
-    ],
     "a'='a'xp_cmdshell": [
       "pre",
       "pre"
@@ -1841,7 +1923,7 @@
       "pre",
       "pre"
     ],
-    "c\\logs\\*.*'--": [
+    "c\\logs\\*.*'": [
       "pre",
       "pre"
     ],
@@ -1910,6 +1992,7 @@
       "p",
       "p",
       "p",
+      "p",
       "h2",
       "em",
       "ol",
@@ -1917,6 +2000,7 @@
       "p"
     ],
     "privileged": [
+      "p",
       "p",
       "p",
       "ol",
@@ -2175,9 +2259,6 @@
     "reliable": [
       "p"
     ],
-    "data": [
-      "p"
-    ],
     "source": [
       "p"
     ],
@@ -2284,9 +2365,6 @@
     "run": [
       "p"
     ],
-    "low-privileged": [
-      "p"
-    ],
     "account": [
       "p",
       "ol",
@@ -2312,7 +2390,8 @@
       "p",
       "p"
     ],
-    "sub-attacks": [
+    "sub": [
+      "p",
       "p"
     ],
     "involved": [
@@ -2364,9 +2443,6 @@
       "li",
       "p"
     ],
-    "client": [
-      "p"
-    ],
     "permanent": [
       "p"
     ],
@@ -2391,7 +2467,7 @@
       "p",
       "p"
     ],
-    "sql-related": [
+    "related": [
       "p"
     ],
     "building": [
@@ -2425,7 +2501,10 @@
     "contained": [
       "p"
     ],
-    "non-sanitized": [
+    "non": [
+      "p"
+    ],
+    "sanitized": [
       "p"
     ],
     "doesn’t": [
@@ -2552,7 +2631,7 @@
       "p",
       "p"
     ],
-    "user='attacker'--\ra'='a';drop": [
+    "\ra'='a';drop": [
       "pre"
     ],
     "note": [
@@ -2652,9 +2731,6 @@
       "p"
     ],
     "consist": [
-      "p"
-    ],
-    "sub": [
       "p"
     ],
     "deleting": [
