@@ -5,6 +5,22 @@
     "101": [
       "p"
     ],
+    "120": [
+      "ul",
+      "li",
+      "a",
+      "title"
+    ],
+    "243": [
+      "ol",
+      "li",
+      "p"
+    ],
+    "602": [
+      "ol",
+      "li",
+      "p"
+    ],
     "description": [
       "h2"
     ],
@@ -389,6 +405,7 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "li",
@@ -444,6 +461,8 @@
       "li",
       "li",
       "li",
+      "li",
+      "p",
       "p",
       "p",
       "p",
@@ -609,7 +628,10 @@
       "p",
       "p",
       "ol",
+      "ol",
       "li",
+      "li",
+      "p",
       "p",
       "ol",
       "ol",
@@ -837,6 +859,9 @@
       "ol",
       "ol",
       "ol",
+      "ol",
+      "li",
+      "p",
       "li",
       "p",
       "li",
@@ -1670,7 +1695,10 @@
       "p",
       "ol",
       "ol",
+      "ol",
       "li",
+      "li",
+      "p",
       "p",
       "em",
       "li",
@@ -2039,6 +2067,9 @@
       "p"
     ],
     "one": [
+      "p",
+      "ol",
+      "li",
       "p"
     ],
     "first": [
@@ -2337,7 +2368,12 @@
       "li",
       "p"
     ],
-    "constraint-based": [
+    "constraint": [
+      "ol",
+      "li",
+      "p"
+    ],
+    "based": [
       "ol",
       "li",
       "p"
@@ -2407,7 +2443,12 @@
       "li",
       "p"
     ],
-    "out-of-bounds": [
+    "out": [
+      "ol",
+      "li",
+      "p"
+    ],
+    "bounds": [
       "ol",
       "li",
       "p"
@@ -3121,6 +3162,7 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "p",
       "li",
@@ -3128,6 +3170,8 @@
       "li",
       "li",
       "p",
+      "p",
+      "li",
       "p",
       "li",
       "p"
@@ -3297,12 +3341,12 @@
       "li",
       "p"
     ],
-    "overflow-prone": [
+    "prone": [
       "ol",
       "li",
       "p"
     ],
-    "string-handling": [
+    "handling": [
       "ol",
       "li",
       "p"
@@ -3728,7 +3772,12 @@
       "li",
       "p"
     ],
-    "null-terminate": [
+    "null": [
+      "ol",
+      "li",
+      "p"
+    ],
+    "terminate": [
       "ol",
       "li",
       "p"
@@ -4180,9 +4229,33 @@
       "li",
       "p"
     ],
-    "server-side": [
+    "server": [
+      "ol",
+      "ol",
       "ol",
       "li",
+      "li",
+      "li",
+      "p",
+      "p",
+      "p",
+      "strong"
+    ],
+    "side": [
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "p",
+      "p",
+      "p",
+      "p",
       "p",
       "strong"
     ],
@@ -4214,16 +4287,14 @@
     "client": [
       "ol",
       "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
       "li",
       "li",
       "p",
-      "p"
-    ],
-    "side": [
-      "ol",
-      "ol",
-      "li",
-      "li",
+      "p",
       "p",
       "p"
     ],
@@ -4237,23 +4308,25 @@
       "li",
       "p"
     ],
-    "server": [
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "p",
-      "p"
-    ],
     "order": [
       "ol",
       "li",
       "p"
     ],
-    "cwe-602": [
+    "cwe": [
+      "ol",
+      "ol",
+      "ol",
       "ol",
       "li",
-      "p"
+      "p",
+      "li",
+      "li",
+      "p",
+      "p",
+      "li",
+      "p",
+      "title"
     ],
     "attackers": [
       "ol",
@@ -4263,14 +4336,6 @@
     "bypass": [
       "ol",
       "li",
-      "p"
-    ],
-    "client-side": [
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "p",
       "p"
     ],
     "modifying": [
@@ -4433,11 +4498,17 @@
     ],
     "os": [
       "ol",
+      "ol",
+      "li",
+      "p",
       "li",
       "p"
     ],
     "level": [
       "ol",
+      "ol",
+      "li",
+      "p",
       "li",
       "p"
     ],
@@ -4621,12 +4692,12 @@
       "li",
       "p"
     ],
-    "off-by-one": [
+    "off": [
       "ol",
       "li",
       "p"
     ],
-    "cwe-193)": [
+    "193)": [
       "ol",
       "li",
       "p"
@@ -4646,7 +4717,7 @@
       "li",
       "p"
     ],
-    "cwe-131).": [
+    "131).": [
       "ol",
       "li",
       "p"
@@ -4857,9 +4928,12 @@
       "li",
       "p"
     ],
-    "day-to-day": [
+    "day": [
+      "ol",
       "ol",
       "li",
+      "li",
+      "p",
       "p"
     ],
     "sandbox": [
@@ -4943,11 +5017,6 @@
       "p"
     ],
     "executed": [
-      "ol",
-      "li",
-      "p"
-    ],
-    "os-level": [
       "ol",
       "li",
       "p"
@@ -5037,11 +5106,6 @@
       "p"
     ],
     "careful": [
-      "ol",
-      "li",
-      "p"
-    ],
-    "cwe-243": [
       "ol",
       "li",
       "p"
@@ -5141,13 +5205,10 @@
       "ul",
       "li"
     ],
-    "http//cwe.mitre.org/top25/index.html#cwe-120": [
+    "http//cwe.mitre.org/top25/index.html#cwe": [
       "ul",
       "li",
       "a"
-    ],
-    "cwe-120": [
-      "title"
     ],
     "'classic": [
       "title"

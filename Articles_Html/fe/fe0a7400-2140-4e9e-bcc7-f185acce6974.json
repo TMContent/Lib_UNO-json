@@ -1123,9 +1123,17 @@
       "li",
       "p"
     ],
-    "non-sensitive": [
+    "non": [
       "ol",
       "li",
+      "p"
+    ],
+    "sensitive": [
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
       "p"
     ],
     "transactions": [
@@ -1147,11 +1155,6 @@
       "p"
     ],
     "any": [
-      "ol",
-      "li",
-      "p"
-    ],
-    "sensitive": [
       "ol",
       "li",
       "p"
@@ -1508,7 +1511,16 @@
       "li",
       "p"
     ],
-    "time-out": [
+    "time": [
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
+      "p",
+      "strong"
+    ],
+    "out": [
       "ol",
       "li",
       "p",
@@ -1520,11 +1532,6 @@
       "p"
     ],
     "expiration": [
-      "ol",
-      "li",
-      "p"
-    ],
-    "time": [
       "ol",
       "li",
       "p"

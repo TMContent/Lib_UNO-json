@@ -1,8 +1,8 @@
-<h1>Description</h1><p>A web application's output is rendered as a web page. If user input is included in the web application output, then it is also rendered as a part of the web page. If user input is included in output without being validated and encoded, a cross-site scripting (XSS) vulnerability results. In that case, an attacker can modify the output web page to include malicious script, which is then executed by the browser that views the vulnerable page. XSS applies to all web applications. To prevent XSS, validate all input and encode input included in output. To check for this flaw, find all code that includes user input in output, and verify that user input is sufficiently validated and properly encoded.
+<h2>Description</h2><p>A web application's output is rendered as a web page. If user input is included in the web application output, then it is also rendered as a part of the web page. If user input is included in output without being validated and encoded, a cross-site scripting (XSS) vulnerability results. In that case, an attacker can modify the output web page to include malicious script, which is then executed by the browser that views the vulnerable page. XSS applies to all web applications. To prevent XSS, validate all input and encode input included in output. To check for this flaw, find all code that includes user input in output, and verify that user input is sufficiently validated and properly encoded.
 </p><p>
 There are two primary types of XSS: persistent and non-persistent. If the attacker is able to inject his malicious script into the web applications data store, then the script will be persistent and anyone who loads a page with that content will run the script and become a victim of the attack. Non-Persistent XSS uses some reflective aspect of the page to deliver the payload. 
-</p><h1>Impact</h1><p>Cross-site scripting vulnerabilities allow an attacker to execute malicious script on the user's web browser. The attacker may use this to perform actions on the user's behalf within the application, such as change the password, submit messages, or perform some other actions available to the authenticated user. The malicious script may spread itself, becoming an XSS worm. An XSS worm may use up a lot of resources and be very costly to clean up. The attacker may write a script that steals session cookies or session identifiers and allows impersonating the user. Impersonating the user through stolen cookies is simpler and more powerful than through a script because it allows the attacker to interact with the application visually. The attacker may also use XSS to inject a JavaScript that captures the user's keystrokes on that web site to steal passwords and other information. XSS usually leads to privilege escalation, which the attacker leverages to take over some user's account. Usually, the attacker will target an administrative account to take full control of the application.
-</p><h1>Countermeasures</h1><p>To prevent this vulnerability, validate all input, and encode all input that is included in output.
+</p><h2>Impact</h2><p>Cross-site scripting vulnerabilities allow an attacker to execute malicious script on the user's web browser. The attacker may use this to perform actions on the user's behalf within the application, such as change the password, submit messages, or perform some other actions available to the authenticated user. The malicious script may spread itself, becoming an XSS worm. An XSS worm may use up a lot of resources and be very costly to clean up. The attacker may write a script that steals session cookies or session identifiers and allows impersonating the user. Impersonating the user through stolen cookies is simpler and more powerful than through a script because it allows the attacker to interact with the application visually. The attacker may also use XSS to inject a JavaScript that captures the user's keystrokes on that web site to steal passwords and other information. XSS usually leads to privilege escalation, which the attacker leverages to take over some user's account. Usually, the attacker will target an administrative account to take full control of the application.
+</p><h2>Countermeasures</h2><p>To prevent this vulnerability, validate all input, and encode all input that is included in output.
 </p><p>
 Validate all input:</p><ul>
 <li> <a href="b531d29c-86f7-4812-90ce-5f3f0f780aba">Validate Input from All Sources</a></li>
@@ -14,15 +14,9 @@ Validate all input:</p><ul>
 </ul><p>
 Encode input included in output:</p><ul>
 <li> <a href="f83b953a-9b0c-406a-b274-9b2962d9c4e7">Encode All Output Data</a></li>
-<li> <a href="c929277f-5bb0-44d5-9bf5-112c55927783">Escape All Untrusted Data in HTML Contexts in JSF</a></li>
-<li> <a href="bc8de6c5-ba3a-4db5-a5ff-675c7336a2e8">Escape All Untrusted Data in HTML Contexts in JSP</a></li>
-<li> <a href="8cc6c40a-5a4c-4d77-8900-4b896e2d3912">Use H:outputText to Encode Echoed Input in JSF</a></li>
-<li> <a href="a4c5ae58-6b1b-49b7-b16e-4199598f3446">Output Encoding Using JSF</a></li>
-<li> <a href="2dc1ab76-320b-47ec-a562-9e203d1b630f">Output Encoding Using SpringMVC</a></li>
-<li> <a href="f8d330df-9387-45b2-a88b-40c08d0af3c4">Output Encoding Using Struts 1</a></li>
-<li> <a href="9135b59f-8c73-4a4f-83c5-9894d6587cca">Output Encoding Using Struts 2</a></li>
-<li> <a href="f7806f64-b1c7-4990-a9e5-f6d814bae7f1">Use ESAPI Encoder</a></li>
-</ul><h1>Application Check</h1><p>To check for adequate protection against this vulnerability, ensure that all input is validated, and that all input included in output is encoded.
+</ul>
+
+<h2>Application Check</h2><p>To check for adequate protection against this vulnerability, ensure that all input is validated, and that all input included in output is encoded.
 </p><p>
 All input is validated:</p><ul>
 <li> <a href="7f8deb21-cd52-41be-80b4-8897612021dc">Input from All Sources Is Validated</a></li>
@@ -30,9 +24,7 @@ All input is validated:</p><ul>
 </ul><p>
 Input included in output is encoded:</p><ul>
 <li> <a href="13112146-7c14-4b6d-9e94-24daa22eefc4">All Output Data Is Encoded</a></li>
-<li> <a href="90893370-cbce-4116-b9ff-2e69dab56cfa">All Untrusted Data in HTML Contexts Is Escaped in JSF</a></li>
-<li> <a href="02c900ca-0740-412a-b685-56b13408793d">All Untrusted Data in HTML Contexts Is Escaped in JSP</a></li>
-</ul><h1>Computer Based Training Links</h1><p>Use the following Computer Based Training courses to learn more about Cross-Site Scripting including techniques for remediation and prevention.
+</ul><h2>Computer Based Training Links</h2><p>Use the following Computer Based Training courses to learn more about Cross-Site Scripting including techniques for remediation and prevention.
 </p><h2>Creating Secure Code – JRE Foundations</h2><p>In this course, you will learn to recognize and remediate common Java Web software security vulnerabilities.  This course has three modules, which introduce you to these vulnerabilities and help you to identify and remediate them. 
 </p><p>
 <a href="https://teamprofessor.absorbtraining.com/ninja/#/courses/course/127615">COD 211 Creating Secure Code – JRE Foundations</a>
@@ -41,4 +33,4 @@ Input included in output is encoded:</p><ul>
 <a href="https://teamprofessor.absorbtraining.com/ninja/#/courses/course/127619">COD 313 Creating Secure J2EE Code</a>
 </p><p>
 <em>Valid login credentials and enrollment in the course itself are required to access Team Professor content. If you need login credentials, please contact support@securityinnovation.com for help.</em>
-</p><h1>Additional Resources</h1><ul><li> For more information about cross-site scripting, see <a href="http://en.wikipedia.org/wiki/Cross-site_scripting">http://en.wikipedia.org/wiki/Cross-site_scripting</a></li></ul>
+</p><h2>Additional Resources</h2><ul><li> For more information about cross-site scripting, see <a href="http://en.wikipedia.org/wiki/Cross-site_scripting">http://en.wikipedia.org/wiki/Cross-site_scripting</a></li></ul>

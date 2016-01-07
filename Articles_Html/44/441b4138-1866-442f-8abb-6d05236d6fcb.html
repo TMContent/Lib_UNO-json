@@ -1,36 +1,22 @@
-<h1>Applies to</h1>
-  <ul>
-    <li>C&#43;&#43;</li>
-  </ul>
-  <h1>What to Do</h1>
-  <p>Write deallocation functions in such a way that they don't throw exceptions.</p>
-  <h1>Why</h1>
-  <p>Deallocation functions may be called when exceptions are thrown. If a deallocation function throws an exception after being called when an exception is thrown, the program may terminate. This may result in a denial-of-service vulnerability.</p>
-  <h1>When</h1>
-  <p>Use this guideline when your code includes deallocation functions that throw exceptions.</p>
-  <h1>How</h1>
-  <p>Perform the following actions to assure that your deallocation functions don't throw exceptions: </p>
-  <ol>
-    <li>
-      <p>
-        <strong>Identify deallocation functions.</strong>&nbsp;Review your code and identify all deallocation functions. </p>
-      <li>
-        <p>
-          <strong>Search for deallocation functions that throw exceptions.</strong> From the list of deallocation functions, identify the ones that throw exceptions.</p>
-        <li>
-          <p>
-            <strong>Rewrite affected deallocation functions.</strong>&nbsp;Rewrite the deallocation functions that throw exceptions in a way that doesn't involve throwing exceptions. This may be accomplished by simply removing code that throws exceptions from the deallocation functions. If error handling must be done based on the results of the execution of the deallocation functions, use error codes.</p>
-          <li>
-            <p>
-              <strong>Inform the team.</strong> Prevent future code from throwing exceptions from deallocation functions by telling the team not to do it.</p>
-          </li>
-        </li>
-      </li>
-    </li>
-  </ol>
-  <h1>Related Items</h1>
-  <ul>
-    <li>
-      <a href="/article/fd06b089-88ea-43df-bc41-f111a1848116">Don't Throw Exceptions from Destructors</a>
-    </li>
-  </ul>
+<h2>What to Do</h2>
+<p>Write deallocation functions in such a way that they don't throw exceptions.</p>
+<h2>Why</h2>
+<p>Deallocation functions may be called when exceptions are thrown. If a deallocation function throws an exception after being called when an exception is thrown, the program may terminate. This may result in a denial-of-service vulnerability.</p>
+<h2>When</h2>
+<p>Use this guideline when your code includes deallocation functions that throw exceptions.</p>
+<h2>How</h2>
+<p>Perform the following actions to assure that your deallocation functions don't throw exceptions:</p>
+<ol>
+<li>
+<p><strong>Identify deallocation functions.</strong> Review your code and identify all deallocation functions.</p>
+</li>
+<li>
+<p><strong>Search for deallocation functions that throw exceptions.</strong> From the list of deallocation functions, identify the ones that throw exceptions.</p>
+</li>
+<li>
+<p><strong>Rewrite affected deallocation functions.</strong> Rewrite the deallocation functions that throw exceptions in a way that doesn't involve throwing exceptions. This may be accomplished by simply removing code that throws exceptions from the deallocation functions. If error handling must be done based on the results of the execution of the deallocation functions, use error codes.</p>
+</li>
+<li>
+<p><strong>Inform the team.</strong> Prevent future code from throwing exceptions from deallocation functions by telling the team not to do it.</p>
+</li>
+</ol>

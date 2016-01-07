@@ -17,6 +17,12 @@
       "p",
       "h1"
     ],
+    "21": [
+      "p",
+      "font",
+      "p",
+      "font"
+    ],
     "101": [
       "table",
       "tbody",
@@ -65,6 +71,10 @@
       "tr",
       "td"
     ],
+    "8859": [
+      "p",
+      "font"
+    ],
     "applies": [
       "h1"
     ],
@@ -74,10 +84,16 @@
       "p",
       "p",
       "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
       "li",
       "h2",
       "p",
       "p",
+      "h2",
+      "h2",
       "p",
       "p",
       "p",
@@ -297,7 +313,9 @@
       "p",
       "p",
       "p",
+      "p",
       "h2",
+      "p",
       "p",
       "p",
       "p",
@@ -326,8 +344,11 @@
       "p",
       "ul",
       "ul",
+      "ul",
       "li",
       "li",
+      "li",
+      "p",
       "p",
       "p",
       "p",
@@ -363,6 +384,7 @@
       "p",
       "ul",
       "li",
+      "p",
       "p",
       "p",
       "p",
@@ -755,8 +777,12 @@
       "p",
       "p",
       "p",
+      "p",
+      "h2",
+      "p",
       "ul",
       "li",
+      "p",
       "p",
       "p",
       "p",
@@ -764,6 +790,7 @@
       "p"
     ],
     "defined": [
+      "p",
       "p",
       "p"
     ],
@@ -1102,9 +1129,15 @@
       "p",
       "p"
     ],
-    "business-to-business": [
+    "business": [
+      "ol",
+      "ol",
       "ol",
       "li",
+      "li",
+      "li",
+      "h2",
+      "h2",
       "h2"
     ],
     "and": [
@@ -1161,10 +1194,20 @@
       "p",
       "p"
     ],
-    "business-to-client": [
+    "client": [
       "ol",
       "li",
-      "h2"
+      "p",
+      "h2",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p"
     ],
     "communications": [
       "ol",
@@ -1181,6 +1224,8 @@
       "p"
     ],
     "server": [
+      "p",
+      "p",
       "p",
       "p",
       "p",
@@ -1291,25 +1336,17 @@
       "p",
       "font"
     ],
-    "qwertye-mail": [
+    "qwertye": [
+      "p",
+      "font"
+    ],
+    "mail": [
       "p",
       "font"
     ],
     "johnyc@examplesitecom": [
       "p",
       "font"
-    ],
-    "client": [
-      "p",
-      "p",
-      "p",
-      "p",
-      "p",
-      "p",
-      "p",
-      "p",
-      "p",
-      "p"
     ],
     "sends": [
       "p",
@@ -1514,7 +1551,16 @@
       "p"
     ],
     "cross": [
-      "p"
+      "p",
+      "p",
+      "ul",
+      "li",
+      "h2",
+      "p",
+      "p",
+      "h2",
+      "ul",
+      "li"
     ],
     "platform": [
       "p"
@@ -1706,11 +1752,13 @@
     "shows": [
       "p"
     ],
-    "xml-based": [
+    "based": [
       "p",
       "p",
       "ul",
       "li",
+      "p",
+      "p",
       "p"
     ],
     "invokes": [
@@ -1798,7 +1846,10 @@
     "\"s:envelope": [
       "pre"
     ],
-    "xmlnss='http://schemas.xmlsoap.org/soap/envelope/'\r\nxmlns:xsi='http://www.w3.org/1999/xmlschema-instance'\r\nxmlns:xsd='http://www.w3.org/1999/xmlschema'><s:body><m:sayhello\r\nxmlns:m='urn:example1'><name": [
+    "xmlnss='http://schemas.xmlsoap.org/soap/envelope/'\r\nxmlns:xsi='http://www.w3.org/1999/xmlschema": [
+      "pre"
+    ],
+    "instance'\r\nxmlns:xsd='http://www.w3.org/1999/xmlschema'><s:body><m:sayhello\r\nxmlns:m='urn:example1'><name": [
       "pre"
     ],
     "xsitype='xsd:string'>james</name><\r\n/m:sayhello></s:body></s:envelope>\"\r\nmsgbox": [
@@ -2027,10 +2078,11 @@
       "p",
       "p"
     ],
-    "cross-site": [
+    "site": [
       "p",
       "ul",
       "li",
+      "p",
       "h2",
       "p",
       "p",
@@ -2463,9 +2515,6 @@
       "p",
       "p"
     ],
-    "site": [
-      "p"
-    ],
     "exposes": [
       "p",
       "p"
@@ -2540,7 +2589,9 @@
       "p",
       "font",
       "font",
-      "p"
+      "p",
+      "ul",
+      "li"
     ],
     "type=”checking”": [
       "p",
@@ -2548,10 +2599,18 @@
       "p",
       "font"
     ],
-    "created>02-21-2008</created>": [
+    "created>02": [
       "p",
       "font",
       "p",
+      "font"
+    ],
+    "2008</created>": [
+      "p",
+      "font",
+      "p",
+      "p",
+      "font",
       "font"
     ],
     "number>1249109</number>": [
@@ -2649,7 +2708,27 @@
       "p",
       "font"
     ],
-    "type=\"savings\"<created>03-02-2008</created><number>12345678</number><balance>1000000</balance></account>": [
+    "type=\"savings\"<created>03": [
+      "p",
+      "font",
+      "p",
+      "font",
+      "p",
+      "font"
+    ],
+    "02": [
+      "p",
+      "font",
+      "p",
+      "font",
+      "p",
+      "font",
+      "p",
+      "font",
+      "p",
+      "font"
+    ],
+    "2008</created><number>12345678</number><balance>1000000</balance></account>": [
       "p",
       "font",
       "p",
@@ -2679,7 +2758,7 @@
       "p",
       "font"
     ],
-    "created>03-02-2008</created>": [
+    "created>03": [
       "p",
       "font"
     ],
@@ -2820,7 +2899,11 @@
       "p",
       "font"
     ],
-    "encoding=\"iso-8859-1\"?<scenarios>": [
+    "encoding=\"iso": [
+      "p",
+      "font"
+    ],
+    "1\"?<scenarios>": [
       "p",
       "font"
     ],
@@ -2846,7 +2929,19 @@
       "p",
       "font"
     ],
-    "!--": [
+    "!": [
+      "p",
+      "font"
+    ],
+    "": [
+      "p",
+      "p",
+      "font",
+      "font",
+      "p",
+      "p",
+      "font",
+      "font",
       "p",
       "font"
     ],
@@ -2893,6 +2988,8 @@
     "back": [
       "p",
       "p",
+      "ul",
+      "li",
       "p"
     ],
     "scenariosphp": [
@@ -2906,25 +3003,43 @@
       "p",
       "p"
     ],
-    "domdocument);\r\n$objdom->load(\"scenarios.xml\");\r\n$scenario": [
+    "domdocument);\r\n$objdom": [
       "pre"
     ],
-    "$objdom-getelementsbytagname(\"scenario\");\r\nforeach(": [
+    ">load(\"scenarios.xml\");\r\n$scenario": [
+      "pre"
+    ],
+    "$objdom": [
+      "pre"
+    ],
+    "getelementsbytagname(\"scenario\");\r\nforeach(": [
       "pre"
     ],
     "$scenario": [
       "pre"
     ],
     "$value": [
+      "pre",
+      "pre",
       "pre"
     ],
     "\r\n{\r\n$title": [
       "pre"
     ],
-    "$value-getelementsbytagname(\"title\")->item(0)->nodevalue;\r\n$data": [
+    "getelementsbytagname(\"title\")": [
       "pre"
     ],
-    "$value-getelementsbytagname(\"data\")->item(0)->nodevalue;\r\necho": [
+    ">item(0)": [
+      "pre",
+      "pre"
+    ],
+    ">nodevalue;\r\n$data": [
+      "pre"
+    ],
+    "getelementsbytagname(\"data\")": [
+      "pre"
+    ],
+    ">nodevalue;\r\necho": [
       "pre"
     ],
     "\"$title<br>$data<br>\";\r\n}\r\n?>": [
@@ -3033,6 +3148,9 @@
       "p"
     ],
     "supplied": [
+      "p",
+      "p",
+      "h2",
       "p"
     ],
     "input": [
@@ -3079,9 +3197,18 @@
       "p",
       "p"
     ],
-    "profile-related": [
+    "profile": [
       "ul",
       "li"
+    ],
+    "related": [
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "p",
+      "p",
+      "p"
     ],
     "pages": [
       "ul",
@@ -3091,15 +3218,15 @@
       "p",
       "p"
     ],
-    "e-commerce": [
+    "e": [
+      "ul",
+      "li"
+    ],
+    "commerce": [
       "ul",
       "li"
     ],
     "financial": [
-      "ul",
-      "li"
-    ],
-    "account-related": [
       "ul",
       "li"
     ],
@@ -3108,7 +3235,11 @@
       "li",
       "p"
     ],
-    "system-level": [
+    "system": [
+      "ul",
+      "li"
+    ],
+    "level": [
       "ul",
       "li"
     ],
@@ -3117,9 +3248,13 @@
       "li",
       "p"
     ],
-    "back-end": [
+    "end": [
       "ul",
-      "li"
+      "li",
+      "p",
+      "p",
+      "p",
+      "p"
     ],
     "responses": [
       "ul",
@@ -3159,17 +3294,14 @@
     "reasons": [
       "p"
     ],
-    "server-side": [
+    "side": [
+      "p",
+      "p",
       "p",
       "p"
     ],
     "directly": [
       "p",
-      "p"
-    ],
-    "user-supplied": [
-      "p",
-      "h2",
       "p"
     ],
     "strings": [
@@ -3202,9 +3334,6 @@
       "p",
       "p",
       "p",
-      "p"
-    ],
-    "xml-related": [
       "p"
     ],
     "tasks": [
@@ -3755,7 +3884,10 @@
       "p",
       "p"
     ],
-    "non-validated": [
+    "non": [
+      "p"
+    ],
+    "validated": [
       "p"
     ],
     "come": [
@@ -3820,10 +3952,6 @@
       "p"
     ],
     "ones": [
-      "p"
-    ],
-    "related": [
-      "p",
       "p"
     ],
     "systematically": [
@@ -3948,12 +4076,6 @@
       "p"
     ],
     "able": [
-      "p"
-    ],
-    "end": [
-      "p",
-      "p",
-      "p",
       "p"
     ],
     "being": [
@@ -4095,7 +4217,7 @@
     "comment": [
       "p"
     ],
-    "xyz!--": [
+    "xyz!": [
       "p",
       "font"
     ],
@@ -4113,7 +4235,11 @@
     "resulting": [
       "p"
     ],
-    "username>xyz<!--</username>": [
+    "username>xyz<!": [
+      "p",
+      "font"
+    ],
+    "</username>": [
       "p",
       "font"
     ],
@@ -4127,9 +4253,6 @@
     "entity": [
       "p",
       "p",
-      "p"
-    ],
-    "user-defined": [
       "p"
     ],
     "schema": [
@@ -4203,10 +4326,6 @@
       "p",
       "h2",
       "p",
-      "p",
-      "p"
-    ],
-    "based": [
       "p",
       "p"
     ],
@@ -4439,10 +4558,6 @@
     "it’s": [
       "p"
     ],
-    "side": [
-      "p",
-      "p"
-    ],
     "checks": [
       "p",
       "p",
@@ -4615,7 +4730,11 @@
     "seen": [
       "p"
     ],
-    "http//www.examplesite.com/createchecking.php?username=johnyc&password=qwerty&email=johnyc%40examplesite.com%3c%2fmail%3e%3caccount%20type%3d%22savings%22%3e%3ccreated%3e03-02-2008%3c%2fcreated%3e%3cnumber%3e12345678%3c": [
+    "http//www.examplesite.com/createchecking.php?username=johnyc&password=qwerty&email=johnyc%40examplesite.com%3c%2fmail%3e%3caccount%20type%3d%22savings%22%3e%3ccreated%3e03": [
+      "p",
+      "font"
+    ],
+    "2008%3c%2fcreated%3e%3cnumber%3e12345678%3c": [
       "p",
       "font"
     ],
@@ -4714,7 +4833,23 @@
       "p",
       "font"
     ],
-    "classid=\"clsidd27cdb6e-ae6d-11cf-96b8-444553540000\"": [
+    "classid=\"clsidd27cdb6e": [
+      "p",
+      "font"
+    ],
+    "ae6d": [
+      "p",
+      "font"
+    ],
+    "11cf": [
+      "p",
+      "font"
+    ],
+    "96b8": [
+      "p",
+      "font"
+    ],
+    "444553540000\"": [
       "p",
       "font"
     ],

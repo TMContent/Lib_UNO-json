@@ -1,20 +1,20 @@
 {
   "id": "4172984b-1a92-4d8b-b8d9-55f64ff07676",
-  "checksum": "3a8fab69f2e20c81fd440d2a3702a4ad",
+  "checksum": "ec157c468a10591de5a5f6203ac1a3ce",
   "words": {
-    "##what": [
-      "p"
+    "what": [
+      "h2"
     ],
     "to": [
+      "h2",
       "p",
       "p",
       "p",
       "p",
       "p",
+      "h2",
       "p",
-      "p",
-      "p",
-      "p",
+      "h2",
       "p",
       "ol",
       "ol",
@@ -31,7 +31,8 @@
       "p"
     ],
     "check": [
-      "p",
+      "h2",
+      "h2",
       "ol",
       "li",
       "p",
@@ -39,7 +40,22 @@
       "li",
       "p"
     ],
-    "for##": [
+    "for": [
+      "h2",
+      "p",
+      "p",
+      "p",
+      "ol",
+      "li",
+      "p",
+      "p",
+      "ol",
+      "li",
+      "p",
+      "ul",
+      "li",
+      "ol",
+      "li",
       "p"
     ],
     "verify": [
@@ -173,6 +189,12 @@
       "ol",
       "li",
       "p",
+      "ul",
+      "ul",
+      "li",
+      "code",
+      "li",
+      "code",
       "title"
     ],
     "are": [
@@ -211,8 +233,8 @@
       "p",
       "title"
     ],
-    "##why##": [
-      "p"
+    "why": [
+      "h2"
     ],
     "under": [
       "p",
@@ -333,23 +355,6 @@
       "p"
     ],
     "responsible": [
-      "p"
-    ],
-    "for": [
-      "p",
-      "p",
-      "p",
-      "ol",
-      "li",
-      "p",
-      "p",
-      "ol",
-      "li",
-      "p",
-      "ul",
-      "li",
-      "ol",
-      "li",
       "p"
     ],
     "machine": [
@@ -583,7 +588,10 @@
       "li",
       "p",
       "p",
-      "strong"
+      "strong",
+      "ul",
+      "li",
+      "code"
     ],
     "incurs": [
       "p"
@@ -698,6 +706,7 @@
     ],
     "when": [
       "p",
+      "h2",
       "p",
       "ol",
       "ol",
@@ -765,9 +774,6 @@
     "simplification": [
       "p"
     ],
-    "##when##": [
-      "p"
-    ],
     "no": [
       "p",
       "ol",
@@ -819,7 +825,13 @@
       "strong",
       "li",
       "p",
-      "strong"
+      "strong",
+      "ul",
+      "ul",
+      "li",
+      "code",
+      "li",
+      "code"
     ],
     "instance": [
       "p",
@@ -1009,7 +1021,10 @@
       "li",
       "li",
       "p",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "code"
     ],
     "deleted": [
       "ol",
@@ -1027,7 +1042,12 @@
       "li",
       "p"
     ],
-    "roll-back\n\n\napplication": [
+    "roll": [
+      "ol",
+      "li",
+      "p"
+    ],
+    "back\n\n\napplication": [
       "ol"
     ],
     "deployed": [
@@ -1088,7 +1108,9 @@
       "li",
       "p",
       "ul",
-      "li"
+      "li",
+      "li",
+      "code"
     ],
     "after": [
       "ol",
@@ -1162,16 +1184,13 @@
       "li",
       "p"
     ],
-    "roll-back": [
+    "back": [
       "li",
       "p"
     ],
-    "##how": [
-      "p",
-      "p"
-    ],
-    "check##": [
-      "p"
+    "how": [
+      "h2",
+      "h2"
     ],
     "existing": [
       "ol",
@@ -1250,8 +1269,8 @@
       "li",
       "p"
     ],
-    "fix##": [
-      "p"
+    "fix": [
+      "h2"
     ],
     "follow": [
       "p",
@@ -1536,20 +1555,20 @@
       "li",
       "p"
     ],
-    "terminate-instances": [
-      "ul",
-      "li",
-      "code"
-    ],
-    "cli\nec2-terminate-instances": [
+    "cli\nec2": [
       "ul"
     ],
     "amazon": [
       "ul",
       "li"
     ],
-    "cli\nstop-ec2instance": [
+    "cli\nstop": [
       "ul"
+    ],
+    "ec2instance": [
+      "ul",
+      "li",
+      "code"
     ],
     "tools": [
       "ul",
@@ -1563,11 +1582,7 @@
       "ul",
       "li"
     ],
-    "ec2-terminate-instances": [
-      "li",
-      "code"
-    ],
-    "stop-ec2instance": [
+    "stop": [
       "li",
       "code"
     ],
@@ -1576,6 +1591,9 @@
       "li",
       "p",
       "ul",
+      "ul",
+      "li",
+      "code",
       "li"
     ],
     "beanstalk": [
@@ -1583,6 +1601,9 @@
       "li",
       "p",
       "ul",
+      "ul",
+      "li",
+      "code",
       "li"
     ],
     "confirm": [
@@ -1621,7 +1642,10 @@
     "delete": [
       "ol",
       "li",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "code"
     ],
     "note": [
       "ol",
@@ -1678,11 +1702,6 @@
       "ol",
       "li",
       "p"
-    ],
-    "elastic-beanstalk-delete-application-version": [
-      "ul",
-      "li",
-      "code"
     ],
     "cli\ndeleteapplicationversion": [
       "ul"

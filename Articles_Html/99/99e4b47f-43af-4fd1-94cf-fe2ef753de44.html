@@ -1,0 +1,17 @@
+<h2>What to Do</h2>
+<p>Validate SOAP array size using schemas before passing SOAP messages to the parser.</p>
+<h2>Why</h2>
+<p>Validate SOAP array size to prevent SOAP array abuse attacks. SOAP array abuse occurs when an attacker sends SOAP messages that say they have very large arrays in them. The parser allocates a lot of memory upon seeing such messages, so the attacker is able to exhaust the server's memory by sending a large amount of these SOAP messages rapidly. The result of SOAP array abuse is a denial of service condition.</p>
+<h2>When</h2>
+<p>Use this guideline for applications that use SOAP.</p>
+<h2>How</h2>
+<p>To validate SOAP array size:</p>
+<ol>
+<li><strong>Find all code that uses SOAP messages.</strong> Create a spreadsheet of all code that handles SOAP messages. Schema validation should be performed whether or not SOAP arrays are present in messages, so include all code that handles SOAP messages in the spreadsheet.</li>
+<li><strong>Define schemas that limit the maximum size of SOAP arrays.</strong> Write a schema for each type of SOAP message that is handled by your application. Set the maximum sizes of SOAP arrays in each schema. While doing this, set the known maximums and minimums for other values in the schemas to take full advantage of schema validation.</li>
+<li><strong>Add code that validates SOAP array size using the schemas.</strong> Validate SOAP messages using the schema that limits the maximum size of SOAP arrays and is appropriate for the message. Validate SOAP messages before passing them to the parser.</li>
+</ol>
+<h2>Additional Resources</h2>
+<ul>
+<li>For more information about SOAP array validation, see http://clawslab.nds.rub.de/wiki/index.php/Soap_Array_Attack</li>
+</ul>

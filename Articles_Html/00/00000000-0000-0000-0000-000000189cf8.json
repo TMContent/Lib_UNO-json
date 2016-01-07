@@ -196,7 +196,25 @@
     "prevents": [
       "p"
     ],
-    "use-after-free": [
+    "use": [
+      "p",
+      "ol",
+      "li",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "li",
+      "strong",
+      "ul",
+      "li",
+      "a"
+    ],
+    "after": [
+      "p"
+    ],
+    "free": [
       "p"
     ],
     "vulnerabilities": [
@@ -375,7 +393,15 @@
       "ol",
       "li"
     ],
-    "objective-c": [
+    "objective": [
+      "ol",
+      "li",
+      "em",
+      "ol",
+      "li",
+      "em"
+    ],
+    "c": [
       "ol",
       "li",
       "em",
@@ -410,20 +436,6 @@
       "li",
       "li",
       "strong"
-    ],
-    "use": [
-      "ol",
-      "li",
-      "ol",
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "li",
-      "strong",
-      "ul",
-      "li",
-      "a"
     ],
     "otool": [
       "ol",
@@ -485,12 +497,20 @@
       "ol",
       "li"
     ],
-    "-i": [
+    "": [
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "tt",
+      "tt"
+    ],
+    "i": [
       "ol",
       "li",
       "tt"
     ],
-    "-v": [
+    "v": [
       "ol",
       "li",
       "tt"

@@ -154,12 +154,15 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "strong",
       "li",
       "li",
       "li",
+      "li",
+      "p",
       "p",
       "p",
       "li",
@@ -320,7 +323,10 @@
     "persistent": [
       "p"
     ],
-    "cross-site": [
+    "cross": [
+      "p"
+    ],
+    "site": [
       "p"
     ],
     "scripting": [
@@ -437,12 +443,17 @@
       "p",
       "div"
     ],
-    "back-end": [
+    "back": [
+      "p",
+      "p"
+    ],
+    "end": [
       "p",
       "p"
     ],
     "server": [
-      "p"
+      "p",
+      "div"
     ],
     "then": [
       "p"
@@ -768,10 +779,13 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "li",
       "li",
+      "li",
+      "p",
       "p",
       "p",
       "p",
@@ -788,7 +802,7 @@
       "li",
       "p"
     ],
-    "database-specific": [
+    "specific": [
       "ol",
       "li",
       "p"
@@ -839,9 +853,24 @@
       "li",
       "p"
     ],
-    "validators--this": [
+    "": [
       "ol",
       "li",
+      "p",
+      "pre",
+      "pre",
+      "pre",
+      "pre"
+    ],
+    "this": [
+      "ol",
+      "li",
+      "p",
+      "p",
+      "p",
+      "p",
+      "div",
+      "div",
       "p"
     ],
     "helps": [
@@ -1250,14 +1279,6 @@
     "albums": [
       "p"
     ],
-    "this": [
-      "p",
-      "p",
-      "p",
-      "div",
-      "div",
-      "p"
-    ],
     "function": [
       "p"
     ],
@@ -1400,7 +1421,11 @@
       "div",
       "pre"
     ],
-    "$collection-find(array('$where'": [
+    "$collection": [
+      "div",
+      "pre"
+    ],
+    "find(array('$where'": [
       "div",
       "pre"
     ],
@@ -1453,7 +1478,10 @@
     "constructed": [
       "div"
     ],
-    "ad-hoc": [
+    "ad": [
+      "div"
+    ],
+    "hoc": [
       "div"
     ],
     "fashion": [
@@ -1471,7 +1499,7 @@
     "vulnerable": [
       "div"
     ],
-    "server-side": [
+    "side": [
       "div"
     ],
     "would": [
@@ -1755,10 +1783,6 @@
       "pre"
     ],
     "{lastname}\r\n\r\n\"\"\"\r\n\r\n).on(\r\n\r\n\"firstname\"": [
-      "pre"
-    ],
-    "-": [
-      "pre",
       "pre"
     ],
     "pfirstname,\r\n\r\n\"lastname\"": [

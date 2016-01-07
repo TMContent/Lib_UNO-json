@@ -1,0 +1,27 @@
+<h2>What to Do</h2>
+<p>Use server-side authentication.</p>
+<h2>Why</h2>
+<p>Server-side authentication should be used because client-side authentication is trivial to bypass.</p>
+<h2>How</h2>
+<ol>
+<li><strong>Define authentication requirements.</strong> Consider the following aspects of authentication control as they pertain to your application:</li>
+</ol>
+<ul>
+<li>Enforcing password strength requirements.</li>
+<li>Allowing secure password reset or recovery.</li>
+<li>Requiring re-authentication for sensitive operations.</li>
+<li>Using multi-factor authentication.</li>
+<li>Using simple error messages that don't give away information to the attacker.</li>
+<li>Using TLS to secure communications.</li>
+<li>Throttling repeated authentication attempts.</li>
+<li>Locking inactive authentication accounts.</li>
+</ul>
+<ol start="2">
+<li><strong>Implement authentication on the server.</strong> It is important to implement security controls such as authentication on the server, because an attacker can tamper with client-side security controls or disable them altogether. Implement authentication controls that match the requirements defined in the previous step on the server back-end.</li>
+<li><strong>Add client-side code that authenticates to the server.</strong> Once authentication is implemented in accordance with the requirements, add client-side code that authenticates to the server. The client-side code will need:</li>
+</ol>
+<ul>
+<li>An interface for managing authentication credentials.</li>
+<li>Network code that communicates with the server using TLS.</li>
+<li>A token or some other means to maintain session state on the server, and possibly secure storage for cached authentication credentials.</li>
+</ul>

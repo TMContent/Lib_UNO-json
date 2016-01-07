@@ -22,7 +22,10 @@
       "strong",
       "li",
       "li",
-      "li"
+      "li",
+      "ul",
+      "li",
+      "a"
     ],
     "aspnet": [
       "ul",
@@ -48,6 +51,9 @@
       "li",
       "li",
       "strong",
+      "ul",
+      "li",
+      "a",
       "title"
     ],
     "httponly": [
@@ -105,7 +111,10 @@
       "p",
       "p",
       "ul",
+      "ul",
       "li",
+      "li",
+      "a",
       "title"
     ],
     "session": [
@@ -280,7 +289,8 @@
       "li"
     ],
     "only": [
-      "p"
+      "p",
+      "title"
     ],
     "transferred": [
       "p"
@@ -324,9 +334,15 @@
     "mitigate": [
       "p"
     ],
-    "cross-site": [
+    "cross": [
       "p",
       "p"
+    ],
+    "site": [
+      "p",
+      "p",
+      "ol",
+      "li"
     ],
     "scripting": [
       "p",
@@ -350,7 +366,10 @@
       "li",
       "li"
     ],
-    "client-side": [
+    "client": [
+      "p"
+    ],
+    "side": [
       "p"
     ],
     "script": [
@@ -420,7 +439,10 @@
       "li",
       "strong",
       "ul",
-      "li"
+      "ul",
+      "li",
+      "li",
+      "a"
     ],
     "use": [
       "ol",
@@ -494,10 +516,6 @@
       "li",
       "strong",
       "ul",
-      "li"
-    ],
-    "site": [
-      "ol",
       "li"
     ],
     "link": [
@@ -634,18 +652,31 @@
     ],
     "up": [
       "ul",
-      "li"
+      "ul",
+      "li",
+      "li",
+      "a"
     ],
     "see": [
       "ul",
       "li"
     ],
-    "http//www.iis.net/learn/manage/configuring-security/how-to-set-up-ssl-on-iis": [
+    "http//www.iis.net/learn/manage/configuring": [
       "ul",
       "li",
       "a"
     ],
-    "http-only": [
+    "security/how": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "ssl": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "http": [
       "title"
     ]
   },

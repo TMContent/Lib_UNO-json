@@ -258,6 +258,8 @@
       "p",
       "p",
       "ol",
+      "ol",
+      "li",
       "li",
       "p",
       "p",
@@ -401,6 +403,8 @@
       "li",
       "li",
       "li",
+      "p",
+      "p",
       "p",
       "p",
       "p"
@@ -784,10 +788,14 @@
       "p",
       "p",
       "p",
+      "p",
+      "p",
+      "p",
       "ol",
       "ol",
       "li",
       "li",
+      "p",
       "p",
       "p"
     ],
@@ -857,10 +865,13 @@
       "p",
       "p"
     ],
-    "server-side": [
+    "side": [
       "p",
       "p",
       "p",
+      "p",
+      "ol",
+      "li",
       "p"
     ],
     "follow": [
@@ -1373,10 +1384,13 @@
       "ol",
       "li"
     ],
-    "client-side": [
+    "client": [
+      "p",
+      "p",
       "p",
       "ol",
-      "li"
+      "li",
+      "p"
     ],
     "script": [
       "p"
@@ -1572,9 +1586,11 @@
       "ol",
       "li"
     ],
-    "path-determining": [
+    "determining": [
       "ol",
-      "li"
+      "li",
+      "p",
+      "p"
     ],
     "waits": [
       "ol",
@@ -1740,7 +1756,9 @@
     "caused": [
       "p"
     ],
-    "client-supplied": [
+    "supplied": [
+      "p",
+      "p",
       "p"
     ],
     "build": [
@@ -1984,10 +2002,6 @@
     "trusts": [
       "p"
     ],
-    "client": [
-      "p",
-      "p"
-    ],
     "directly": [
       "p"
     ],
@@ -2031,10 +2045,6 @@
       "p",
       "p",
       "p",
-      "p",
-      "p"
-    ],
-    "determining": [
       "p",
       "p"
     ],
@@ -2152,6 +2162,8 @@
       "p"
     ],
     "specified": [
+      "p",
+      "p",
       "p"
     ],
     "doing": [
@@ -2208,7 +2220,13 @@
     "safeconstruct": [
       "pre"
     ],
-    "\"^a-za-z]{4,8}\\.txt$\";pattern": [
+    "\"^a": [
+      "pre"
+    ],
+    "za": [
+      "pre"
+    ],
+    "z]{4,8}\\.txt$\";pattern": [
       "pre"
     ],
     "regexpattern": [
@@ -2253,10 +2271,25 @@
     "consecutive": [
       "p"
     ],
-    "upper-": [
+    "upper": [
       "p"
     ],
-    "lower-case": [
+    "": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "b",
+      "b"
+    ],
+    "lower": [
+      "p"
+    ],
+    "case": [
+      "p",
+      "ol",
+      "li",
+      "p",
       "p"
     ],
     "letters": [
@@ -2380,12 +2413,6 @@
       "ol",
       "li"
     ],
-    "case": [
-      "ol",
-      "li",
-      "p",
-      "p"
-    ],
     "page.": [
       "ol",
       "li"
@@ -2460,14 +2487,6 @@
       "p"
     ],
     "been": [
-      "p",
-      "p"
-    ],
-    "supplied": [
-      "p",
-      "p"
-    ],
-    "attacker-specified": [
       "p",
       "p"
     ],
@@ -2561,10 +2580,13 @@
     "backslashes": [
       "p"
     ],
-    "unix-": [
+    "unix": [
       "p"
     ],
-    "windows-related": [
+    "windows": [
+      "p"
+    ],
+    "related": [
       "p"
     ],
     "paths": [
@@ -2608,10 +2630,6 @@
       "tbody",
       "tr",
       "td"
-    ],
-    "-": [
-      "p",
-      "b"
     ],
     "look": [
       "h2",
@@ -2681,12 +2699,14 @@
       "p",
       "p",
       "pre",
+      "p",
       "p"
     ],
     "encoding": [
       "p",
       "h1",
       "em",
+      "p",
       "p",
       "p",
       "pre",
@@ -2726,10 +2746,12 @@
     "consists": [
       "p"
     ],
-    "re-encoding": [
+    "re": [
       "p"
     ],
     "percent": [
+      "p",
+      "p",
       "p"
     ],
     "sign": [
@@ -2738,7 +2760,8 @@
     "%)": [
       "p"
     ],
-    "percent-encoded": [
+    "encoded": [
+      "p",
       "p",
       "p"
     ],
@@ -2793,9 +2816,6 @@
       "p",
       "p"
     ],
-    "double-encoded": [
-      "p"
-    ],
     "every": [
       "p",
       "p"
@@ -2834,7 +2854,10 @@
     "flash/flex,": [
       "p"
     ],
-    "third-party": [
+    "third": [
+      "p"
+    ],
+    "party": [
       "p"
     ],
     "apis": [

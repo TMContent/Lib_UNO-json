@@ -114,11 +114,15 @@
     ],
     "type": [
       "p",
+      "ul",
+      "li",
+      "p",
       "ol",
       "li",
       "p"
     ],
     "safe": [
+      "p",
       "p"
     ],
     "sql": [
@@ -1737,7 +1741,7 @@
       "ul",
       "li"
     ],
-    "type-enforcing": [
+    "enforcing": [
       "ul",
       "li"
     ],
@@ -1868,9 +1872,6 @@
       "ul",
       "li"
     ],
-    "type-safe": [
-      "p"
-    ],
     "follow": [
       "p"
     ],
@@ -1880,7 +1881,12 @@
     "steps": [
       "p"
     ],
-    "pre-compiled": [
+    "pre": [
+      "ol",
+      "li",
+      "p"
+    ],
+    "compiled": [
       "ol",
       "li",
       "p"

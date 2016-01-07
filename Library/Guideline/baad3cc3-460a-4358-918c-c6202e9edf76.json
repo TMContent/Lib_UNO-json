@@ -16,7 +16,7 @@
           "be5273b1-d682-4361-99d9-6234f2d47eb7"
         ],
         "Title": [
-          "Secure Configuration Stores"
+          "Protect Connection Strings"
         ],
         "Category": [
           "Hardening"
@@ -25,7 +25,7 @@
           "Design"
         ],
         "Technology": [
-          "Web Application"
+          "Technology Independent"
         ],
         "Type": [
           "Guideline"
@@ -57,10 +57,10 @@
       {
         "$": {
           "Sanitized": "true",
-          "DataType": "Html"
+          "DataType": "markdown"
         },
         "Data": [
-          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>\r\n      <div>Web Application</div>\r\n    </li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Identify the configuration stores of your application and then make sure that key items of configuration data, such as database connection strings, encryption keys, and service account credentials, are encrypted inside the store. </p>\r\n  <h1>Why</h1>\r\n  <p>If the configuration store is insecure then unauthorized users can access it and obtain secrets, such as account names and passwords, and database connection details.</p>\r\n  <h1>When</h1>This is an importnat guideline and should be followed all the time.&nbsp; <h1>How</h1><p>Text-based configuration files, the registry, and databases are common options for storing application configuration data. If possible, avoid using configuration files in the application's Web space to prevent possible server configuration vulnerabilities resulting in the download of configuration files. Whatever approach you use, secure access to the configuration store, for example, by using Windows ACLs or database permissions. Also avoid storing plaintext secrets such as database connection strings or account credentials. Secure these items using encryption and then restrict access to the registry key, file, or table that contains the encrypted data.</p><br /><hr /><p>Adapted from Microsoft patterns & practices guidance.</p>"
+          "## What to Do ##\r\n\r\nIdentify the configuration stores of your application and then make sure that key items of configuration data, such as database connection strings, encryption keys, and service account credentials, are encrypted inside the store.\r\n\r\n## Why ##\r\n\r\nIf the configuration store is insecure then unauthorized users can access it and obtain secrets, such as account names and passwords, and database connection details.\r\n\r\n## When ##\r\n\r\nThis is an importnat guideline and should be followed all the time. \r\n\r\n## How ##\r\n\r\nText-based configuration files, the registry, and databases are common options for storing application configuration data. If possible, avoid using configuration files in the application's Web space to prevent possible server configuration vulnerabilities resulting in the download of configuration files. Whatever approach you use, secure access to the configuration store, for example, by using filesystem ACLs or database permissions. Also avoid storing plaintext secrets such as database connection strings or account credentials. Secure these items using encryption and then restrict access to the registry key, file, or table that contains the encrypted data.\r\n\r\n---\r\n\r\nAdapted from Microsoft patterns & practices guidance."
         ]
       }
     ]

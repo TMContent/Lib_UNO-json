@@ -339,6 +339,7 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "li",
@@ -359,8 +360,12 @@
       "p",
       "pre",
       "li",
+      "li",
+      "p",
       "p",
       "span",
+      "span",
+      "em",
       "li",
       "p",
       "li",
@@ -1079,9 +1084,14 @@
       "li",
       "span",
       "ol",
+      "ol",
+      "li",
       "li",
       "p",
-      "span"
+      "p",
+      "span",
+      "span",
+      "em"
     ],
     "has": [
       "ol",
@@ -1402,8 +1412,14 @@
       "ol",
       "li"
     ],
-    "non-sensitive": [
+    "non": [
       "ol",
+      "li"
+    ],
+    "sensitive": [
+      "ol",
+      "ol",
+      "li",
       "li"
     ],
     "transactions": [
@@ -1425,10 +1441,6 @@
       "li"
     ],
     "any": [
-      "ol",
-      "li"
-    ],
-    "sensitive": [
       "ol",
       "li"
     ],
@@ -1490,12 +1502,17 @@
       "li",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
+      "li",
+      "p",
       "p",
       "p",
       "span",
-      "span"
+      "span",
+      "span",
+      "em"
     ],
     "secure": [
       "ol",
@@ -1505,9 +1522,14 @@
       "em",
       "p",
       "ol",
+      "ol",
+      "li",
       "li",
       "p",
+      "p",
       "span",
+      "span",
+      "em",
       "em"
     ],
     "\"secure\"": [
@@ -1778,19 +1800,28 @@
       "p",
       "pre"
     ],
-    "time-out": [
+    "time": [
+      "ol",
       "ol",
       "li",
-      "p",
-      "strong"
-    ],
-    "expiration": [
-      "ol",
       "li",
       "p",
+      "p",
+      "strong",
       "span"
     ],
-    "time": [
+    "out": [
+      "ol",
+      "ol",
+      "li",
+      "p",
+      "strong",
+      "li",
+      "p",
+      "span",
+      "pre"
+    ],
+    "expiration": [
       "ol",
       "li",
       "p",
@@ -1912,13 +1943,6 @@
       "p",
       "p"
     ],
-    "session-timeout": [
-      "ol",
-      "li",
-      "p",
-      "span",
-      "em"
-    ],
     "webxml": [
       "ol",
       "ol",
@@ -1999,13 +2023,6 @@
       "span",
       "span"
     ],
-    "out": [
-      "ol",
-      "li",
-      "p",
-      "span",
-      "pre"
-    ],
     "given": [
       "ol",
       "li",
@@ -2066,13 +2083,6 @@
       "li",
       "p",
       "span"
-    ],
-    "cookie-secure": [
-      "ol",
-      "li",
-      "p",
-      "span",
-      "em"
     ],
     "attribute": [
       "ol",

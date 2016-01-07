@@ -158,6 +158,7 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "li",
@@ -171,10 +172,13 @@
       "pre",
       "pre",
       "pre",
+      "li",
+      "pre",
       "p",
       "p",
       "p",
       "p",
+      "pre",
       "p",
       "p",
       "p",
@@ -1842,6 +1846,7 @@
       "p",
       "p",
       "p",
+      "p",
       "p"
     ],
     "valid": [
@@ -1969,13 +1974,22 @@
       "ol",
       "ol",
       "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
       "li",
       "pre",
       "li",
       "li",
+      "li",
       "p",
       "p",
       "strong",
+      "pre",
+      "li",
+      "li",
+      "li",
       "li",
       "li",
       "li",
@@ -1983,6 +1997,9 @@
       "p",
       "p",
       "strong",
+      "pre",
+      "pre",
+      "pre",
       "p",
       "p",
       "p",
@@ -2186,20 +2203,37 @@
       "li",
       "p"
     ],
-    "error-page>": [
+    "page>": [
       "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "pre",
+      "pre",
+      "li",
+      "li",
+      "li",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre"
+    ],
+    "type>java.lang.throwable</exception": [
+      "ol",
+      "li",
+      "pre"
+    ],
+    "type>": [
       "ol",
       "li",
       "pre",
-      "li",
       "pre"
     ],
-    "exception-type>java.lang.throwable</exception-type>": [
-      "ol",
-      "li",
-      "pre"
-    ],
-    "location>/error/errorgeneric.jsp</location> </error-page>": [
+    "location>/error/errorgeneric.jsp</location> </error": [
       "ol",
       "li",
       "pre"
@@ -2230,22 +2264,35 @@
       "li",
       "p"
     ],
-    "error-code>404</error-code>": [
+    "code>404</error": [
       "ol",
       "li",
       "pre"
     ],
-    "location>/error/error404.jsp</location> </error-page> <error-page>": [
+    "code>": [
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "pre",
+      "pre"
+    ],
+    "location>/error/error404.jsp</location> </error": [
       "ol",
       "li",
       "pre"
     ],
-    "error-code>500</error-code>": [
+    "page> <error": [
       "ol",
       "li",
       "pre"
     ],
-    "location>/error/error500.jsp</location> </error-page>": [
+    "code>500</error": [
+      "ol",
+      "li",
+      "pre"
+    ],
+    "location>/error/error500.jsp</location> </error": [
       "ol",
       "li",
       "pre"
@@ -2419,7 +2466,7 @@
     "may": [
       "p"
     ],
-    "user-supplied": [
+    "supplied": [
       "p"
     ],
     "it": [
@@ -2482,7 +2529,10 @@
     "wrong": [
       "p"
     ],
-    "pre-designed": [
+    "pre": [
+      "p"
+    ],
+    "designed": [
       "p"
     ],
     "reveal": [
@@ -2533,19 +2583,25 @@
       "p",
       "p"
     ],
-    "!--": [
+    "!": [
+      "pre"
+    ],
+    "": [
+      "pre",
+      "pre",
+      "pre",
       "pre"
     ],
     "html": [
       "pre"
     ],
-    "--<error-page>": [
+    "<error": [
       "pre"
     ],
-    "exception-type>java.lang.nullpointerexception</exception-type>": [
+    "type>java.lang.nullpointerexception</exception": [
       "pre"
     ],
-    "location>/npeerror.html</location></error-page>": [
+    "location>/npeerror.html</location></error": [
       "pre"
     ],
     "begin": [

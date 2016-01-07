@@ -215,11 +215,19 @@
       "ol",
       "ol",
       "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
       "li",
       "li",
       "li",
       "strong",
+      "strong",
       "li",
+      "li",
+      "strong",
       "strong",
       "title"
     ],
@@ -242,13 +250,23 @@
       "ol",
       "ol",
       "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "li",
       "li",
       "li",
       "li",
       "strong",
       "strong",
+      "strong",
       "li",
       "li",
+      "li",
+      "strong",
       "title"
     ],
     "server": [
@@ -426,7 +444,7 @@
       "li",
       "li"
     ],
-    "sec-websocket-origin": [
+    "sec": [
       "ol",
       "ol",
       "ol",
@@ -520,8 +538,10 @@
       "li",
       "li"
     ],
-    "php-websocket": [
+    "php": [
       "ol",
+      "ol",
+      "li",
       "li"
     ],
     "which": [
@@ -549,10 +569,6 @@
       "li"
     ],
     "source": [
-      "ol",
-      "li"
-    ],
-    "php": [
       "ol",
       "li"
     ],
@@ -606,7 +622,12 @@
       "li",
       "li"
     ],
-    "$server-setcheckorigin(true);.": [
+    "$server": [
+      "ol",
+      "li",
+      "pre"
+    ],
+    "setcheckorigin(true);.": [
       "ol",
       "li"
     ],
@@ -782,7 +803,7 @@
     "{": [
       "pre"
     ],
-    "$server-setallowedorigin($origin);": [
+    "setallowedorigin($origin);": [
       "pre"
     ],
     "$origin_ips]": [

@@ -601,20 +601,32 @@
     "low": [
       "ol",
       "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
       "li",
       "li",
       "p",
       "ul",
+      "ul",
+      "ul",
+      "li",
+      "li",
       "li",
       "strong"
     ],
     "high": [
       "ol",
       "ol",
+      "ol",
+      "li",
       "li",
       "li",
       "p",
       "ul",
+      "ul",
+      "li",
       "li",
       "strong"
     ],
@@ -622,26 +634,28 @@
       "ol",
       "ol",
       "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "li",
       "li",
       "li",
       "li",
       "p",
       "ul",
       "ul",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "li",
       "li",
       "strong",
       "li",
+      "li",
       "strong"
-    ],
-    "low-level": [
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "ul",
-      "ul",
-      "li",
-      "li"
     ],
     "components": [
       "ol",
@@ -767,12 +781,6 @@
       "li"
     ],
     "etc": [
-      "ol",
-      "li",
-      "ul",
-      "li"
-    ],
-    "high-level": [
       "ol",
       "li",
       "ul",
@@ -1180,7 +1188,12 @@
       "pre",
       "pre"
     ],
-    "*env)->getstringutfchars(env,": [
+    "*env)": [
+      "pre",
+      "p",
+      "pre"
+    ],
+    ">getstringutfchars(env,": [
       "pre",
       "p",
       "pre"
@@ -1205,7 +1218,10 @@
       "p",
       "pre"
     ],
-    "int)(*env)->getstringlength(env,": [
+    "int)(*env)": [
+      "pre"
+    ],
+    ">getstringlength(env,": [
       "pre"
     ],
     "jguid;": [

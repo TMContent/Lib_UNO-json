@@ -101,13 +101,30 @@
       "ol",
       "ol",
       "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "li",
       "li",
       "li",
       "li",
       "strong",
       "strong",
+      "strong",
       "li",
       "li",
+      "li",
+      "strong",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
       "h2",
       "ul",
       "ul",
@@ -354,11 +371,19 @@
       "ol",
       "ol",
       "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
       "li",
       "li",
       "li",
       "strong",
+      "strong",
       "li",
+      "li",
+      "strong",
       "strong",
       "p",
       "p",
@@ -554,7 +579,7 @@
       "li",
       "li"
     ],
-    "sec-websocket-origin": [
+    "sec": [
       "ol",
       "ol",
       "ol",
@@ -654,8 +679,10 @@
       "h2",
       "h2"
     ],
-    "php-websocket": [
+    "php": [
       "ol",
+      "ol",
+      "li",
       "li"
     ],
     "which": [
@@ -700,10 +727,6 @@
       "ol",
       "li"
     ],
-    "php": [
-      "ol",
-      "li"
-    ],
     "implementation": [
       "ol",
       "li"
@@ -731,7 +754,13 @@
       "li",
       "li"
     ],
-    "$server-setcheckorigin(true);.": [
+    "$server": [
+      "ol",
+      "li",
+      "tt",
+      "pre"
+    ],
+    "setcheckorigin(true);.": [
       "ol",
       "li"
     ],
@@ -881,7 +910,7 @@
       "li",
       "pre"
     ],
-    "$server-setcheckorigin(true);": [
+    "setcheckorigin(true);": [
       "tt"
     ],
     "webexample.com": [
@@ -904,7 +933,7 @@
     "{": [
       "pre"
     ],
-    "$server-setallowedorigin($origin);": [
+    "setallowedorigin($origin);": [
       "pre"
     ],
     "$origin_ips]": [
@@ -1012,13 +1041,46 @@
       "li",
       "a"
     ],
-    "request\n\ncache-control:no-cache\nconnection:upgrade\ncookie:zdedebuggerpresent=php,phtml,php3\nhost:127.0.0.1:8000\norigin:http://192.168.56.1\npragma:no-cache\nsec-websocket-extensions:x-webkit-deflate-frame\nsec-websocket-key:r2umga2xhgvsan8uoo8xoa==\nconnection:": [
+    "request\n\ncache": [
       "pre"
     ],
-    "upgradesec-websocket-version:13\n\n\nserver": [
+    "control:no": [
       "pre"
     ],
-    "response\n\nconnection:upgrade\nsec-websocket-accept:6dntsira+zkxhdcl0oibmdi/by0=\nupgrade:websocket": [
+    "cache\nconnection:upgrade\ncookie:zdedebuggerpresent=php,phtml,php3\nhost:127.0.0.1:8000\norigin:http://192.168.56.1\npragma:no": [
+      "pre"
+    ],
+    "cache\nsec": [
+      "pre"
+    ],
+    "extensions:x": [
+      "pre"
+    ],
+    "webkit": [
+      "pre",
+      "pre"
+    ],
+    "deflate": [
+      "pre",
+      "pre"
+    ],
+    "frame\nsec": [
+      "pre"
+    ],
+    "key:r2umga2xhgvsan8uoo8xoa==\nconnection:": [
+      "pre"
+    ],
+    "upgradesec": [
+      "pre",
+      "pre"
+    ],
+    "version:13\n\n\nserver": [
+      "pre"
+    ],
+    "response\n\nconnection:upgrade\nsec": [
+      "pre"
+    ],
+    "accept:6dntsira+zkxhdcl0oibmdi/by0=\nupgrade:websocket": [
       "pre"
     ],
     "solution": [
@@ -1072,31 +1134,47 @@
     "http/11\npragma:": [
       "pre"
     ],
-    "no-cacheorigin:": [
+    "no": [
+      "pre",
+      "pre"
+    ],
+    "cacheorigin:": [
       "pre"
     ],
     "http//192.168.56.1\nhost:": [
       "pre"
     ],
-    "1270.0.1:8000\nsec-websocket-key:": [
+    "1270.0.1:8000\nsec": [
+      "pre"
+    ],
+    "key:": [
       "pre"
     ],
     "hibzrh6epvt4ranabn6doa==upgrade:": [
       "pre"
     ],
-    "websocketsec-websocket-extensions:": [
+    "websocketsec": [
       "pre"
     ],
-    "x-webkit-deflate-framecache-control:": [
+    "extensions:": [
       "pre"
     ],
-    "no-cachecookie:": [
+    "x": [
+      "pre"
+    ],
+    "framecache": [
+      "pre"
+    ],
+    "control:": [
+      "pre"
+    ],
+    "cachecookie:": [
       "pre"
     ],
     "zdedebuggerpresent=phpphtml,php3\nconnection:": [
       "pre"
     ],
-    "upgradesec-websocket-version:": [
+    "version:": [
       "pre"
     ],
     "guidelines": [

@@ -2,6 +2,12 @@
   "id": "b6795407-d01e-44ec-8aed-a440d388902b",
   "checksum": "a45c9a670151fa526f6cbba727737cc2",
   "words": {
+    "1": [
+      "ol",
+      "li",
+      "p",
+      "pre"
+    ],
     "applies": [
       "h1"
     ],
@@ -803,6 +809,7 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "li",
@@ -810,7 +817,13 @@
       "p",
       "p",
       "p",
-      "p"
+      "p",
+      "li",
+      "p",
+      "table",
+      "tbody",
+      "tr",
+      "td"
     ],
     "value": [
       "ol",
@@ -1408,7 +1421,27 @@
       "p",
       "pre"
     ],
-    "-": [
+    "": [
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
       "ol",
       "ol",
       "ol",
@@ -1435,20 +1468,7 @@
       "li",
       "li",
       "li",
-      "p",
-      "p",
-      "p",
-      "p",
-      "p",
-      "p",
-      "p",
-      "pre",
-      "pre",
-      "pre",
-      "pre",
-      "pre",
-      "pre",
-      "pre",
+      "li",
       "li",
       "li",
       "li",
@@ -1463,6 +1483,22 @@
       "p",
       "p",
       "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
       "pre",
       "pre",
       "pre",
@@ -1475,6 +1511,24 @@
       "li",
       "li",
       "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
       "p",
       "p",
       "p",
@@ -1485,18 +1539,79 @@
       "pre",
       "pre",
       "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
       "p",
       "p",
       "p",
       "pre",
       "pre",
       "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "p",
+      "p",
+      "p",
+      "font",
+      "font",
+      "font",
+      "p",
+      "p",
+      "p",
       "p",
       "p",
       "p",
       "pre",
       "pre",
-      "pre"
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "font",
+      "span"
     ],
     "textmaxlength": [
       "ol",
@@ -1632,6 +1747,10 @@
       "p",
       "pre",
       "td",
+      "p",
+      "p",
+      "pre",
+      "pre",
       "p",
       "pre"
     ],
@@ -1771,12 +1890,6 @@
       "pre"
     ],
     "ifprodprice.compare(bigint(0))": [
-      "ol",
-      "li",
-      "p",
-      "pre"
-    ],
-    "-1": [
       "ol",
       "li",
       "p",
@@ -1932,10 +2045,29 @@
       "li",
       "p"
     ],
-    "non-string": [
+    "non": [
       "ol",
       "li",
       "p"
+    ],
+    "string": [
+      "ol",
+      "li",
+      "p",
+      "tr",
+      "td",
+      "p",
+      "font",
+      "p",
+      "p",
+      "pre",
+      "pre",
+      "p",
+      "p",
+      "p",
+      "pre",
+      "pre",
+      "pre"
     ],
     "parameter": [
       "ol",
@@ -2224,7 +2356,10 @@
     ],
     "out": [
       "ol",
+      "ol",
       "li",
+      "li",
+      "p",
       "p"
     ],
     "there": [
@@ -2295,7 +2430,7 @@
       "li",
       "p"
     ],
-    "spiral-out": [
+    "spiral": [
       "ol",
       "li",
       "p"
@@ -2522,6 +2657,7 @@
       "ul",
       "ul",
       "li",
+      "a",
       "li"
     ],
     "expressions": [
@@ -2653,7 +2789,7 @@
       "table",
       "tbody"
     ],
-    "e-mail": [
+    "e": [
       "ol",
       "li",
       "p",
@@ -2662,7 +2798,98 @@
       "tr",
       "td"
     ],
-    "address^\\w+\\.|_|-){0,1}\\w+@(\\w+\\.)*\\w{3,1024}\\.([a-za-z]{2}\\.){0,1}[a-za-z]{2,4}$^\\\\w+(\\\\.|_|-){0,1}\\\\w+@(\\\\w+\\\\.)*\\\\w{3,}\\\\.([a-za-z]{2}\\\\.){0,1}[a-za-z]{2,4}$alpha-numeric": [
+    "mail": [
+      "ol",
+      "li",
+      "p",
+      "table",
+      "tbody",
+      "tr",
+      "td"
+    ],
+    "address^\\w+\\.|_|": [
+      "ol",
+      "li",
+      "p",
+      "table",
+      "tbody",
+      "tr"
+    ],
+    "){0,1}\\w+@(\\w+\\.)*\\w{3,1024}\\.([a": [
+      "ol",
+      "li",
+      "p",
+      "table",
+      "tbody",
+      "tr",
+      "td"
+    ],
+    "za": [
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "li",
+      "li",
+      "p",
+      "p",
+      "p",
+      "p",
+      "table",
+      "table",
+      "table",
+      "table",
+      "tbody",
+      "tbody",
+      "tbody",
+      "tbody",
+      "tr",
+      "tr",
+      "tr",
+      "tr",
+      "td",
+      "td",
+      "td",
+      "td"
+    ],
+    "z]{2}\\.){0,1}[a": [
+      "ol",
+      "li",
+      "p",
+      "table",
+      "tbody",
+      "tr",
+      "td"
+    ],
+    "z]{2,4}$^\\\\w+(\\\\.|_|": [
+      "ol",
+      "li",
+      "p",
+      "table",
+      "tbody",
+      "tr"
+    ],
+    "){0,1}\\\\w+@(\\\\w+\\\\.)*\\\\w{3,}\\\\.([a": [
+      "ol",
+      "li",
+      "p",
+      "table",
+      "tbody",
+      "tr",
+      "td"
+    ],
+    "z]{2}\\\\.){0,1}[a": [
+      "ol",
+      "li",
+      "p",
+      "table",
+      "tbody",
+      "tr",
+      "td"
+    ],
+    "z]{2,4}$alpha": [
       "ol",
       "li",
       "p",
@@ -2678,7 +2905,23 @@
       "tr",
       "td"
     ],
-    "text\\w|\\d|\\s|;|\\?|!|,|\\.|-|:)+(\\\\w|\\\\d|\\\\s|;|\\\\?|!|,|\\\\.|-|:)+word": [
+    "text\\w|\\d|\\s|;|\\?|!|,|\\.|": [
+      "ol",
+      "li",
+      "p",
+      "table",
+      "tbody",
+      "tr"
+    ],
+    "|:)+(\\\\w|\\\\d|\\\\s|;|\\\\?|!|,|\\\\.|": [
+      "ol",
+      "li",
+      "p",
+      "table",
+      "tbody",
+      "tr"
+    ],
+    "|:)+word": [
       "ol",
       "li",
       "p",
@@ -2736,22 +2979,6 @@
       "tbody",
       "tr"
     ],
-    "string": [
-      "tr",
-      "td",
-      "p",
-      "font",
-      "p",
-      "p",
-      "pre",
-      "pre",
-      "p",
-      "p",
-      "p",
-      "pre",
-      "pre",
-      "pre"
-    ],
     "expression": [
       "td",
       "ul",
@@ -2761,29 +2988,33 @@
       "tr",
       "td"
     ],
-    "address^\\w+\\.|_|-){0,1}\\w+@(\\w+\\.)*\\w{3,1024}\\.([a-za-z]{2}\\.){0,1}[a-za-z]{2,4}$^\\\\w+(\\\\.|_|-){0,1}\\\\w+@(\\\\w+\\\\.)*\\\\w{3,}\\\\.([a-za-z]{2}\\\\.){0,1}[a-za-z]{2,4}$": [
-      "tr"
+    "z]{2,4}$": [
+      "tr",
+      "td",
+      "td"
     ],
     "address": [
       "td"
     ],
-    "^\\w+\\.|_|-){0,1}\\w+@(\\w+\\.)*\\w{3,1024}\\.([a-za-z]{2}\\.){0,1}[a-za-z]{2,4}$": [
+    "^\\w+\\.|_|": [
       "td"
     ],
-    "^\\\\w+\\\\.|_|-){0,1}\\\\w+@(\\\\w+\\\\.)*\\\\w{3,}\\\\.([a-za-z]{2}\\\\.){0,1}[a-za-z]{2,4}$": [
+    "^\\\\w+\\\\.|_|": [
       "td"
     ],
-    "alpha-numeric": [
+    "alpha": [
       "tr",
       "td"
     ],
-    "text\\w|\\d|\\s|;|\\?|!|,|\\.|-|:)+(\\\\w|\\\\d|\\\\s|;|\\\\?|!|,|\\\\.|-|:)+": [
-      "tr"
-    ],
-    "\\w|\\d|\\s|;|\\?|!|,|\\.|-|:)+": [
+    "|:)+": [
+      "tr",
+      "td",
       "td"
     ],
-    "\\\\w|\\\\d|\\\\s|;|\\\\?|!|,|\\\\.|-|:)+": [
+    "\\w|\\d|\\s|;|\\?|!|,|\\.|": [
+      "td"
+    ],
+    "\\\\w|\\\\d|\\\\s|;|\\\\?|!|,|\\\\.|": [
       "td"
     ],
     "word": [
@@ -2837,7 +3068,13 @@
       "p",
       "font"
     ],
-    "post-registration": [
+    "post": [
+      "p",
+      "font",
+      "p",
+      "font"
+    ],
+    "registration": [
       "p",
       "font",
       "p",
@@ -2935,7 +3172,11 @@
       "p",
       "font"
     ],
-    "cross-site": [
+    "cross": [
+      "p",
+      "font"
+    ],
+    "site": [
       "p",
       "font"
     ],
@@ -2951,13 +3192,13 @@
       "p",
       "font"
     ],
-    "--": [
-      "p",
-      "font"
-    ],
     "notice": [
       "p",
-      "font"
+      "font",
+      "p",
+      "pre",
+      "font",
+      "span"
     ],
     "with": [
       "p",
@@ -3181,7 +3422,7 @@
       "font",
       "span"
     ],
-    "login--notice": [
+    "login": [
       "p",
       "pre",
       "font",
@@ -3283,10 +3524,20 @@
       "p",
       "pre"
     ],
-    "style=\"text-align": [
+    "style=\"text": [
       "p",
       "pre",
       "p",
+      "pre"
+    ],
+    "align": [
+      "p",
+      "p",
+      "pre",
+      "pre",
+      "p",
+      "p",
+      "pre",
       "pre"
     ],
     "center\"main": [
@@ -3307,7 +3558,13 @@
       "p",
       "pre"
     ],
-    "style=\"font-size": [
+    "style=\"font": [
+      "p",
+      "pre",
+      "p",
+      "pre"
+    ],
+    "size": [
       "p",
       "pre",
       "p",
@@ -3319,19 +3576,19 @@
       "p",
       "pre"
     ],
-    "text-align": [
-      "p",
-      "pre",
-      "p",
-      "pre"
-    ],
     "center": [
       "p",
       "pre",
       "p",
       "pre"
     ],
-    "margin-top": [
+    "margin": [
+      "p",
+      "pre",
+      "p",
+      "pre"
+    ],
+    "top": [
       "p",
       "pre",
       "p",
@@ -3545,7 +3802,11 @@
       "ul",
       "li"
     ],
-    "at regular-expressionsinfo.": [
+    "at regular": [
+      "ul",
+      "li"
+    ],
+    "expressionsinfo.": [
       "ul",
       "li"
     ],
@@ -3571,7 +3832,7 @@
       "ul",
       "li"
     ],
-    "regular-expressionsinfo": [
+    "expressionsinfo": [
       "a"
     ],
     "pattern": [

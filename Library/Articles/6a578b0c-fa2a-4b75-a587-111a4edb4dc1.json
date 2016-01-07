@@ -1,0 +1,56 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "0",
+      "Content_Hash": "0"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "6a578b0c-fa2a-4b75-a587-111a4edb4dc1"
+        ],
+        "Library_Id": [
+          "be5273b1-d682-4361-99d9-6234f2d47eb7"
+        ],
+        "Title": [
+          "Use Valid Certificates"
+        ],
+        "Category": [
+          ""
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "false",
+          "DataType": "markdown"
+        },
+        "Data": [
+          "## What to Do ##\r\n\r\nUse valid TLS certificates.\r\n\r\n## Why ##\r\n\r\nUsing valid TLS certificates helps prevent many types of man-in-the-middle attacks.\r\n\r\n## How ##\r\n\r\nTo use a valid TLS certificate:\r\n\r\n1. **Purchase a valid TLS certificate.** You may purchase a valid TLS key from a Certificate Authority. The certificate is usually a .cer file. Make sure the certificate matches all domains used by the application.\r\n2. **Be aware of certificate expiration.** TLS certificates expire and have to be renewed to remain valid. Make note of when the certificate is going to expire and plan to renew it before the expiration date.\r\n3. **Import the valid TLS certificate.** The exact instructions for importing TLS certificates are different for different platforms. Refer to your platform's documentation or technical support for detailed instructions on how to use TLS certificates.\r\n"
+        ]
+      }
+    ]
+  }
+}

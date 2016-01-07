@@ -1,19 +1,19 @@
 {
   "id": "e72ae3ef-a310-477c-911e-e8fdc9624d8b",
-  "checksum": "3ec56beee79321962c8845530d6a6b88",
+  "checksum": "05411e485c63f79a1febb4c4873ffbc1",
   "words": {
-    "##what": [
-      "p"
+    "what": [
+      "h2"
     ],
     "to": [
+      "h2",
       "p",
       "p",
       "p",
       "p",
+      "h2",
       "p",
-      "p",
-      "p",
-      "p",
+      "h2",
       "ol",
       "ol",
       "li",
@@ -28,10 +28,21 @@
       "li"
     ],
     "check": [
-      "p"
+      "h2",
+      "h2"
     ],
-    "for##": [
-      "p"
+    "for": [
+      "h2",
+      "p",
+      "ol",
+      "ol",
+      "li",
+      "p",
+      "li",
+      "p",
+      "ul",
+      "li",
+      "code"
     ],
     "verify": [
       "p",
@@ -206,8 +217,8 @@
       "li",
       "title"
     ],
-    "##why##": [
-      "p"
+    "why": [
+      "h2"
     ],
     "removing": [
       "p"
@@ -250,7 +261,10 @@
       "p",
       "li",
       "ul",
-      "li"
+      "ul",
+      "li",
+      "li",
+      "code"
     ],
     "sensitive": [
       "p"
@@ -417,15 +431,6 @@
     "revocation": [
       "p"
     ],
-    "for": [
-      "p",
-      "ol",
-      "ol",
-      "li",
-      "p",
-      "li",
-      "p"
-    ],
     "all": [
       "p",
       "ol",
@@ -510,8 +515,8 @@
     "83.3).": [
       "p"
     ],
-    "##when##": [
-      "p"
+    "when": [
+      "h2"
     ],
     "prevent": [
       "p"
@@ -571,11 +576,25 @@
       "ul",
       "ul",
       "ul",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
       "li",
       "li",
       "li",
       "li",
-      "li"
+      "code",
+      "code",
+      "li",
+      "li",
+      "code",
+      "li",
+      "li",
+      "code",
+      "li",
+      "li",
+      "code"
     ],
     "credentials": [
       "p"
@@ -640,12 +659,9 @@
     "secured": [
       "p"
     ],
-    "##how": [
-      "p",
-      "p"
-    ],
-    "check##": [
-      "p"
+    "how": [
+      "h2",
+      "h2"
     ],
     "identify": [
       "ol",
@@ -787,8 +803,8 @@
       "p",
       "strong"
     ],
-    "fix##": [
-      "p"
+    "fix": [
+      "h2"
     ],
     "iam": [
       "p",
@@ -899,9 +915,21 @@
       "li",
       "strong",
       "ul",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
       "li",
       "li",
-      "li"
+      "li",
+      "code",
+      "code",
+      "li",
+      "li",
+      "code",
+      "li",
+      "li",
+      "code"
     ],
     "sign": [
       "ol",
@@ -999,7 +1027,10 @@
       "ul",
       "li",
       "ul",
-      "li"
+      "ul",
+      "li",
+      "li",
+      "code"
     ],
     "membership": [
       "ul",
@@ -1031,9 +1062,12 @@
       "ul",
       "ul",
       "ul",
+      "ul",
       "li",
       "li",
-      "li"
+      "li",
+      "li",
+      "code"
     ],
     "embedded": [
       "ul",
@@ -1053,7 +1087,9 @@
     ],
     "group": [
       "ul",
-      "li"
+      "li",
+      "li",
+      "code"
     ],
     "permissions": [
       "ul",
@@ -1067,14 +1103,21 @@
       "ul",
       "li",
       "ul",
-      "li"
+      "ul",
+      "li",
+      "li",
+      "code"
     ],
     "but": [
       "ul",
       "li"
     ],
-    "detached\nmulti-factor": [
+    "detached\nmulti": [
       "ul"
+    ],
+    "factor": [
+      "ul",
+      "li"
     ],
     "mfa)": [
       "ul",
@@ -1084,7 +1127,9 @@
       "ul",
       "li",
       "ul",
-      "li"
+      "li",
+      "li",
+      "code"
     ],
     "associated": [
       "ul",
@@ -1094,7 +1139,10 @@
       "li",
       "ul",
       "ul",
+      "ul",
       "li",
+      "li",
+      "code",
       "li"
     ],
     "password": [
@@ -1108,7 +1156,7 @@
     "detached": [
       "li"
     ],
-    "multi-factor": [
+    "multi": [
       "li"
     ],
     "cli": [
@@ -1141,12 +1189,17 @@
       "ul",
       "li"
     ],
-    "delete-access-key": [
+    "key": [
       "ul",
       "li",
       "code"
     ],
-    "delete-signing-certificate": [
+    "signing": [
+      "ul",
+      "li",
+      "code"
+    ],
+    "certificate": [
       "ul",
       "li",
       "code"
@@ -1154,7 +1207,12 @@
     "commands\ndelete": [
       "ul"
     ],
-    "delete-login-profile\ndeactivate": [
+    "login": [
+      "ul",
+      "li",
+      "code"
+    ],
+    "profile\ndeactivate": [
       "ul"
     ],
     "user's": [
@@ -1163,67 +1221,63 @@
     ],
     "mfa": [
       "ul",
-      "li"
+      "ul",
+      "li",
+      "li",
+      "code"
     ],
-    "deactivate-mfa-devicedetach": [
+    "deactivate": [
+      "ul",
+      "li",
+      "li",
+      "code"
+    ],
+    "devicedetach": [
       "ul"
     ],
     "list": [
       "ul",
-      "li",
-      "li"
-    ],
-    "list-attached-user-policies": [
       "ul",
+      "ul",
+      "li",
+      "li",
+      "code",
+      "li",
       "li",
       "code"
     ],
     "detach": [
       "ul",
+      "ul",
       "li",
-      "li"
+      "li",
+      "li",
+      "code"
     ],
-    "detach-user-policy\nlist": [
+    "policy\nlist": [
       "ul"
     ],
     "was": [
       "ul",
       "li"
     ],
-    "list-groups-for-user\nremove": [
+    "user\nremove": [
       "ul"
-    ],
-    "remove-user-from-group\ndelete": [
-      "ul"
-    ],
-    "delete-user": [
-      "ul",
-      "li",
-      "code"
-    ],
-    "delete-login-profile": [
-      "li",
-      "code"
-    ],
-    "deactivate": [
-      "li"
-    ],
-    "deactivate-mfa-device": [
-      "li",
-      "code"
-    ],
-    "detach-user-policy": [
-      "li",
-      "code"
-    ],
-    "list-groups-for-user": [
-      "li",
-      "code"
     ],
     "remove": [
-      "li"
+      "ul",
+      "li",
+      "li",
+      "code"
     ],
-    "remove-user-from-group": [
+    "group\ndelete": [
+      "ul"
+    ],
+    "profile": [
+      "li",
+      "code"
+    ],
+    "policy": [
       "li",
       "code"
     ]

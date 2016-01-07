@@ -1,6 +1,6 @@
 {
   "id": "f40bd3e2-2f0c-4354-b46a-ea9b4f3831c7",
-  "checksum": "7afe8e94f53975feb209d01946c6925e",
+  "checksum": "fe8f579d30a9518cba2b5171b0f59fed",
   "words": {
     "applies": [
       "h1"
@@ -855,6 +855,8 @@
       "ol",
       "ol",
       "ol",
+      "ol",
+      "li",
       "li",
       "li",
       "li",
@@ -873,6 +875,9 @@
       "ul",
       "ul",
       "ul",
+      "ul",
+      "li",
+      "font",
       "li",
       "li",
       "li",
@@ -1031,7 +1036,13 @@
       "li",
       "p"
     ],
-    "cross-site": [
+    "cross": [
+      "p",
+      "ol",
+      "li",
+      "p"
+    ],
+    "site": [
       "p",
       "ol",
       "li",
@@ -2776,15 +2787,26 @@
       "p",
       "font",
       "ol",
+      "ol",
+      "li",
+      "p",
       "li",
       "ul",
       "li",
       "p"
     ],
-    "-": [
+    "": [
+      "ol",
+      "ol",
       "ol",
       "li",
-      "p"
+      "li",
+      "p",
+      "p",
+      "li",
+      "ul",
+      "li",
+      "font"
     ],
     "whether": [
       "ol",
@@ -3087,7 +3109,7 @@
       "li",
       "p"
     ],
-    "encoding- @helperurlencode(url)": [
+    " @helperurlencode(url)": [
       "ol",
       "li",
       "ul",
@@ -3133,7 +3155,7 @@
       "li",
       "font"
     ],
-    "escaping-": [
+    "escaping": [
       "ol",
       "li",
       "ul",
@@ -3361,13 +3383,22 @@
     "\"": [
       "span",
       "ol",
+      "ol",
+      "li",
       "li",
       "ul",
+      "ul",
+      "li",
       "li",
       "blockquote",
+      "blockquote",
+      "table",
       "table",
       "tbody",
+      "tbody",
       "tr",
+      "tr",
+      "td",
       "td"
     ],
     "@helperurlencode(url)": [
@@ -3415,7 +3446,7 @@
       "li",
       "p"
     ],
-    "user-supplied": [
+    "supplied": [
       "ol",
       "li",
       "p"
@@ -3845,7 +3876,14 @@
       "li",
       "p"
     ],
-    "non-malicious": [
+    "non": [
+      "ol",
+      "li",
+      "ul",
+      "li",
+      "p"
+    ],
+    "malicious": [
       "ol",
       "li",
       "ul",
@@ -4077,81 +4115,44 @@
       "tr",
       "td"
     ],
-    "&lt": [
-      "ol",
-      "li",
-      "ul",
-      "li",
-      "blockquote",
-      "table",
-      "tbody",
-      "tr",
-      "td"
-    ],
-    "&gt": [
-      "ol",
-      "li",
-      "ul",
-      "li",
-      "blockquote",
-      "table",
-      "tbody",
-      "tr",
-      "td"
-    ],
     "&": [
       "ol",
-      "li",
-      "ul",
-      "li",
-      "blockquote",
-      "table",
-      "tbody",
-      "tr",
-      "td"
-    ],
-    "&amp": [
       "ol",
       "li",
-      "ul",
-      "li",
-      "blockquote",
-      "table",
-      "tbody",
-      "tr",
-      "td"
-    ],
-    "&quot": [
-      "ol",
       "li",
       "ul",
+      "ul",
+      "li",
       "li",
       "blockquote",
+      "blockquote",
+      "table",
       "table",
       "tbody",
+      "tbody",
       "tr",
+      "tr",
+      "td",
       "td"
     ],
     "'": [
       "ol",
-      "li",
-      "ul",
-      "li",
-      "blockquote",
-      "table",
-      "tbody",
-      "tr",
-      "td"
-    ],
-    "&#39": [
       "ol",
       "li",
+      "li",
+      "ul",
       "ul",
       "li",
+      "li",
+      "blockquote",
       "blockquote",
       "table",
+      "table",
+      "tbody",
       "tbody",
       "tr",
+      "tr",
+      "td",
       "td"
     ],
     "dynamic": [

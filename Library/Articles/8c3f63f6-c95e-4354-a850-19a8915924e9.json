@@ -1,0 +1,56 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "0",
+      "Content_Hash": "0"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "8c3f63f6-c95e-4354-a850-19a8915924e9"
+        ],
+        "Library_Id": [
+          "be5273b1-d682-4361-99d9-6234f2d47eb7"
+        ],
+        "Title": [
+          "Separate XML Data from Markup"
+        ],
+        "Category": [
+          ""
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "false",
+          "DataType": "markdown"
+        },
+        "Data": [
+          "## What to Do ##\r\n\r\nUse parameterized APIs to build XML documents instead of treating XML documents as strings and concatenating data into them.\r\n\r\n## Why ##\r\n\r\nUse APIs designed for building XML documents and encoding data properly, in order to prevent attackers from manipulating XML data used by your application. A dangerous approach is to write your own set of functions to build XML documents by concatenating strings, or to modify an existing XML document by performing string operations. This means you have to take care of proper encoding yourself. Use trusted APIs instead because they are simpler and safer.\r\n\r\n## How ##\r\n\r\nTo use parameterized APIs to build XML documents:\r\n\r\n1. **Identify available APIs that can be used to build XML documents.** Your platform probably provides APIs that help build XML documents programmatically.\r\n2. **Use parameterized APIs to build XML documents.** Use your chosen API to implement code that builds XML documents. If you already have code that builds XML documents, make sure that it uses your chosen API and does not concatenate XML tags and data.\r\n\r\n"
+        ]
+      }
+    ]
+  }
+}

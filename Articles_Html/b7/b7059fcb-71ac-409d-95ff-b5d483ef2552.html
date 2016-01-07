@@ -1,0 +1,32 @@
+<h2>What to Do</h2>
+<p>Centralize authentication controls.</p>
+<h2>Why</h2>
+<p>Implementing a single set of centralized authentication controls helps implement them correctly, use them correctly in the application, and manage them later on.</p>
+<h2>How</h2>
+<p>To centralize authentication controls:</p>
+<ol>
+<li><strong>Identify application requirements.</strong> Consider the following aspects of authentication controls:</li>
+</ol>
+<ul>
+<li>Authentication should be required for all protected functionality.</li>
+<li>All password fields should be masked.</li>
+<li>Accounts should be locked after multiple failed authentication attempts.</li>
+<li>Authentication should be implemented on the server-side.</li>
+<li>Authentication controls should be centralized.</li>
+<li>Authentication controls should fail securely.</li>
+<li>Strong authentication credentials (passwords) should be enforced.</li>
+<li>Account management functions should be protected.</li>
+<li>User credential (password) changing functions should be protected.</li>
+<li>Re-authentication should be required for sensitive operations.</li>
+<li>Authentication credentials (passwords) should expire.</li>
+<li>Authentication events should be logged.</li>
+<li>Authentication attempts should be throttled.</li>
+<li>Passwords should be hashed and salted using an iterative hashing algorithm.</li>
+<li>Authentication credentials (connection strings) for external resources should be protected.</li>
+<li>Authentication with external services.</li>
+</ul>
+<ol start="2">
+<li><strong>Define authentication control APIs.</strong> Make the exposed APIs simple to use for developers. Define authentication APIs to satisfy all application requirements. Include functionality to authenticate with external services.</li>
+<li><strong>Implement and document authentication controls.</strong> Implement and document authentication APIs to satisfy all application requirements.</li>
+<li><strong>Use authentication controls in the application.</strong> Developers should use the centralized authentication controls whenever authentication is necessary.</li>
+</ol>

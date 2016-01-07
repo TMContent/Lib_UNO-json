@@ -1,11 +1,11 @@
-<p>##What to Check For##</p>
+<h2>What to Check For</h2>
 <p>Verify that cloud logs are monitored.</p>
-<p>##Why##</p>
+<h2>Why</h2>
 <p>Cloud logs must be monitored to identify security problems in real-time, so that effective counter-measures can be implemented. By reviewing archived and current logs, you can also identify resources which may have been accessed improperly, the date and times of access, and IP source.</p>
 <p>If logs are not reviewed, security events such as exceptions and faults may go unrecognized, with increasing loss of data and business.</p>
-<p>##When##</p>
+<h2>When</h2>
 <p>Cloud logs should be turned on in CloudTrail at the earliest possible time. The service itself does not add additional cost. Use Amazon Simple Notification Service (SNS) notifications when you need to respond quickly to log deliveries, such as for analysis and reporting. The logs are delivered to S3 buckets you specify, and you may minimize storage costs for S3 by archiving the logs to your own external storage media. The specific interval for log delivery, archiving to Glacier, or removal to offline storage should be defined in your security management plan.</p>
-<p>##How to Check##</p>
+<h2>How to Check</h2>
 <p>To verify that cloud logs are monitored:</p>
 <ol>
 <li>
@@ -15,7 +15,7 @@
 <p><strong>Examine logs.</strong> Have the responsible personnel display some of the cloud logs to make sure that they are current and show a sufficient level of detail.</p>
 </li>
 </ol>
-<p>##How to Fix##</p>
+<h2>How to Fix</h2>
 <p>The following steps summarize the implementation of CloudTrail monitoring logs.</p>
 <ol>
 <li>

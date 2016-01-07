@@ -6,6 +6,6 @@
 <li> <strong>Identify all parameters that contain data with security implications.</strong> Review the application code to find all parameters that may contain sensitive information. </li>
 <li> <strong>Find code that handles security sensitive parameters.</strong> Find the code that is responsible for each user accessible parameter that contains sensitive information.</li>
 <li> <strong>Replace sensitive user-accessible parameters with ASP.NET session state.</strong> Rewrite the code that stores sensitive information in user accessible parameters to store it using ASP.NET session state instead. </li>
-<li> <strong>Protect the session ID.</strong> Configure IIS to store the session ID in cookies. Configure IIS to set HTTPOnly and Secure flags on session cookies. Make sure that the page is configured to use SSL/TLS and session state. Don't generate weak session IDs - use the default ASP.NET session IDs or generate strong session IDs if you really have to.</li>
+<li> <strong>Protect the session ID.</strong> Configure IIS to store the session ID in cookies. Configure IIS to set HTTPOnly and Secure flags on session cookies. Make sure that the page is configured to use TLS and session state. Don't generate weak session IDs - use the default ASP.NET session IDs or generate strong session IDs if you really have to.</li>
 </ol><h2>Additional Resources</h2><ul><li> For information about ASP.NET session state, see <a href="http://msdn.microsoft.com/en-us/library/ms178581(v=vs.100).aspx">http://msdn.microsoft.com/en-us/library/ms178581(v=vs.100).aspx</a></li>
 </ul>

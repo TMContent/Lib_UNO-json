@@ -1,0 +1,14 @@
+<h2>What to Do</h2>
+<p>Ensure that all XML data is syntactically validated on the server by using an XML schema such as XSD or DTD.</p>
+<h2>Why</h2>
+<p>An attacker passing malicious XML input can attempt XML injection attacks that aim to exploit your application by overwriting XML data, disclose information from arbitrary URIs, or cause the XML parser to crash or process slowly. Performing syntactic validation helps reduce these risks by ensuring that the input received matches the expected format. Syntactic validation on its own is not sufficient, as semantic validation is also needed to fully prevent these attacks, but it is an important step for both the security and reliability of your application.</p>
+<h2>When</h2>
+<p>All XML data that is created or consumed by an application should follow a strict XML schema. Validate XML against the schema when any XML data is consumed or created.</p>
+<h2>How</h2>
+<p>XML data can be validated with either an XSD or DTD. XSDs are more flexible and are generally favored over DTDs.</p>
+<p>To solve using XSD use the following steps:</p>
+<ol>
+<li><strong>Identify all areas where the application generates or consumes XML data.</strong> Enumerate all areas where XML data is generated or parsed in your application.</li>
+<li><strong>Define an XSD which describes the XML data.</strong> Examine the XML data and define an XSD which tightly defines the structure of the XML data. An XML Schema can consist of a single file, multiple files, or in-line with the XML. If the XML is being generated dynamically via code, it is likely that an XSD can be outputted as well. Finally, the XSD should tightly constrain the XML data by using element types; for example defining a birthday element and assigning it the xs:date type.</li>
+<li><strong>Validate the XML with the XSD.</strong> XML can be validated using the XML parser provided by the platform.</li>
+</ol>

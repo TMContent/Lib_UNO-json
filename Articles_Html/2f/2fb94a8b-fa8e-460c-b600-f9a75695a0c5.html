@@ -1,36 +1,12 @@
-<h1>Applies To</h1>
-  <ul>
-    <li>ASP.NET 4.0</li>
-  </ul>
-  <h1>What to Do</h1>
-  <p>Implement authentication and authorization administration.</p>
-  <h1>Why</h1>
-  <p>The authentication and authorization policies should be configurable to make it possible for the users to adapt the application to their environment.</p>
-  <h1>When</h1>
-  <p>Implement authentication and authorization administration in all web applications that use authentication or authorization.</p>
-  <h1>How</h1>
-  <p>To implement authentication and authorization administration:</p>
-  <ol>
-    <li>
-      <p>
-        <strong>Identify application requirements.</strong> Define options for configuring access control and authentication policies. At the very least, there should be an administration panel for managing user accounts, and a page for users to manage their own accounts.</p>
-    </li>
-    <li>
-      <p>
-        <strong>Make authentication and authorization code configurable.</strong> Find all code responsible for authentication and authorization features. Modify this code to read settings defined in the application requirements.</p>
-    </li>
-    <li>
-      <p>
-        <strong>Design the administrative pages.</strong> Design the pages to be used for configuring access control and authentication policies based on the requirements for your application.</p>
-    </li>
-    <li>
-      <p>
-        <strong>Implement the administration interface.</strong> Write code for the administrative pages to interface with authentication and authorization code. The administration interface should be able to read and write settings to a secure location, where the authentication and authorization code may access them. The saved settings should be protected with access controls to prevent unauthorized disclosure and tampering.</p>
-    </li>
-  </ol>
-  <h1>Additional Resources</h1>
-  <ul>
-    <li>
-      <p>For more information about ASP.NET role management, please see "Understanding Role Management" at <a href="http://msdn.microsoft.com/en-us/library/5k850zwb.aspx">http://msdn.microsoft.com/en-us/library/5k850zwb.aspx</a></p>
-    </li>
-  </ul>
+<h2>What to Do</h2>
+<p>Implement an administrative interface that allows managing user accounts.</p>
+<h2>Why</h2>
+<p>An interface to manage user accounts is essential for performing essential security-related administrative tasks and enabling role-based authorization. Authorization controls typically need to be configured during deployment according to the principle of least privilege and an administrative interface is essential for this.</p>
+<h2>How</h2>
+<p>To implement an administrative interface that allows managing user accounts.</p>
+<ol>
+<li><strong>Identify application requirements.</strong> Define options for configuring access control and authentication policies. At the very least, there should be an administration interface for managing user accounts and role membership, and an interface for users to manage their own accounts.</li>
+<li><strong>Make application code configurable.</strong> Find all code responsible for authentication and authorization features. Modify this code to read settings configured by the administrative interface.</li>
+<li><strong>Design the administrative interface.</strong> Design the interface to be used for configuring user role membership.</li>
+<li><strong>Implement the administrative interface.</strong> Write code for the administrative interface. The administration interface should be able to read and write settings to a secure location, where the application code may access them. The saved settings should be protected with access controls to prevent unauthorized disclosure and tampering.</li>
+</ol>

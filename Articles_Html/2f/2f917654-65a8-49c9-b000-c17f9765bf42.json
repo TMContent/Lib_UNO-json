@@ -107,6 +107,8 @@
       "p",
       "p",
       "p",
+      "em",
+      "p",
       "p",
       "p",
       "p",
@@ -444,8 +446,39 @@
       "li",
       "a"
     ],
-    "built-in": [
+    "built": [
       "p"
+    ],
+    "in": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "a",
+      "li",
+      "a",
+      "li",
+      "a",
+      "li",
+      "a",
+      "li",
+      "a",
+      "li",
+      "a"
     ],
     "mechanisms": [
       "p"
@@ -517,7 +550,9 @@
     "validator": [
       "p",
       "h3",
-      "p"
+      "p",
+      "pre",
+      "pre"
     ],
     "mechanism": [
       "p",
@@ -583,36 +618,6 @@
     ],
     "supported": [
       "p"
-    ],
-    "in": [
-      "p",
-      "p",
-      "p",
-      "p",
-      "p",
-      "p",
-      "p",
-      "ul",
-      "ul",
-      "ul",
-      "ul",
-      "ul",
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a",
-      "li",
-      "a",
-      "li",
-      "a",
-      "li",
-      "a",
-      "li",
-      "a",
-      "li",
-      "a"
     ],
     "future": [
       "p"
@@ -700,13 +705,17 @@
     "interceptor": [
       "p",
       "p",
-      "p"
+      "p",
+      "pre",
+      "pre",
+      "pre"
     ],
     "stack": [
       "p",
       "p",
       "p",
-      "p"
+      "p",
+      "pre"
     ],
     "configured": [
       "p",
@@ -739,9 +748,7 @@
       "p"
     ],
     "default": [
-      "p"
-    ],
-    "struts-default": [
+      "p",
       "p",
       "em"
     ],
@@ -798,9 +805,6 @@
       "p",
       "p"
     ],
-    "interceptor-stack": [
-      "pre"
-    ],
     "name=\"mycustomstack\"": [
       "pre"
     ],
@@ -833,7 +837,7 @@
     "other": [
       "pre"
     ],
-    "interceptor-ref": [
+    "ref": [
       "pre",
       "pre"
     ],
@@ -848,13 +852,20 @@
       "pre",
       "pre"
     ],
-    "/interceptor-ref>": [
+    "/interceptor": [
+      "pre",
+      "pre"
+    ],
+    "ref>": [
       "pre"
     ],
     "name=\"workflow\"": [
       "pre"
     ],
-    "/interceptor-ref></interceptor-stack>": [
+    "ref></interceptor": [
+      "pre"
+    ],
+    "stack>": [
       "pre"
     ],
     "manual": [
@@ -987,7 +998,9 @@
       "pre"
     ],
     "loginaction": [
-      "pre"
+      "pre",
+      "p",
+      "em"
     ],
     "extends": [
       "pre",
@@ -1109,22 +1122,24 @@
     "convention": [
       "p"
     ],
-    "actionname-validationxml": [
+    "actionname": [
       "p",
+      "em"
+    ],
+    "validationxml": [
+      "p",
+      "em",
       "em"
     ],
     "ex.": [
       "p"
     ],
-    "loginaction-validationxml)": [
+    "validationxml)": [
       "p"
     ],
     "validatorsxml": [
       "em",
       "p",
-      "em"
-    ],
-    "loginaction-validationxml": [
       "em"
     ],
     "since": [
@@ -1183,13 +1198,11 @@
     ],
     "field": [
       "pre",
+      "pre",
+      "pre",
       "pre"
     ],
     "name=\"uname\"": [
-      "pre"
-    ],
-    "field-validator": [
-      "pre",
       "pre"
     ],
     "type=\"required\"": [
@@ -1217,12 +1230,22 @@
       "p",
       "p",
       "p",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a",
+      "ul",
+      "li",
+      "a"
     ],
     "name</message>": [
       "pre"
     ],
-    "/field-validator>": [
+    "/field": [
+      "pre",
+      "pre"
+    ],
+    "validator>": [
       "pre",
       "pre"
     ],
@@ -1401,6 +1424,7 @@
     ],
     "routed": [
       "p",
+      "p",
       "p"
     ],
     "case": [
@@ -1429,7 +1453,7 @@
       "em",
       "em"
     ],
-    "re-routed": [
+    "re": [
       "p"
     ],
     "back": [
@@ -1579,7 +1603,7 @@
       "li",
       "a"
     ],
-    "user-supplied": [
+    "supplied": [
       "ul",
       "li",
       "a",
@@ -1616,7 +1640,7 @@
       "li",
       "a"
     ],
-    "client-side": [
+    "client": [
       "ul",
       "li",
       "a",
@@ -1624,6 +1648,20 @@
       "li",
       "a",
       "ul",
+      "li",
+      "a"
+    ],
+    "side": [
+      "ul",
+      "li",
+      "a",
+      "ul",
+      "li",
+      "a",
+      "ul",
+      "ul",
+      "li",
+      "a",
       "li",
       "a"
     ],
@@ -1705,7 +1743,7 @@
       "li",
       "a"
     ],
-    "server-side": [
+    "server": [
       "ul",
       "li",
       "a"

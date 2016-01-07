@@ -991,11 +991,27 @@
       "p",
       "ol",
       "ol",
+      "ol",
+      "ol",
+      "ol",
       "li",
       "ul",
       "li",
       "li",
-      "p"
+      "p",
+      "li",
+      "li",
+      "li",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "li",
+      "p",
+      "p",
+      "p",
+      "strong"
     ],
     "files": [
       "p",
@@ -1253,13 +1269,29 @@
       "p",
       "ol",
       "ol",
+      "ol",
+      "ol",
       "li",
+      "li",
+      "li",
+      "p",
+      "ul",
       "ul",
       "li",
       "li",
+      "li",
       "p",
       "p",
-      "p"
+      "pre",
+      "p",
+      "pre",
+      "ul",
+      "li",
+      "a",
+      "ul",
+      "li",
+      "a",
+      "title"
     ],
     "is": [
       "p",
@@ -1701,7 +1733,7 @@
       "ul",
       "li"
     ],
-    "user-supplied": [
+    "supplied": [
       "ol",
       "ol",
       "li",
@@ -2985,7 +3017,12 @@
       "li",
       "pre"
     ],
-    "alpha-numeric": [
+    "alpha": [
+      "ol",
+      "li",
+      "pre"
+    ],
+    "numeric": [
       "ol",
       "li",
       "pre"
@@ -3115,7 +3152,17 @@
       "pre",
       "pre"
     ],
-    "\"d(\\\\\\\\|/)myapp(\\\\\\\\|/)temp(\\\\\\\\|/)(\\\\w|\\\\s|\\\\.|-){1,20}\";": [
+    "\"d(\\\\\\\\|/)myapp(\\\\\\\\|/)temp(\\\\\\\\|/)(\\\\w|\\\\s|\\\\.|": [
+      "ol",
+      "ol",
+      "li",
+      "pre",
+      "li",
+      "ul",
+      "li",
+      "pre"
+    ],
+    "){1,20}\";": [
       "ol",
       "li",
       "pre"
@@ -3362,7 +3409,10 @@
       "ul",
       "ul",
       "li",
-      "li"
+      "li",
+      "ul",
+      "li",
+      "a"
     ],
     "therefore": [
       "ol",
@@ -3688,11 +3738,21 @@
       "li",
       "p"
     ],
-    "--": [
+    "": [
+      "ol",
+      "ol",
       "ol",
       "li",
+      "li",
+      "li",
+      "ul",
+      "ul",
       "ul",
       "li",
+      "li",
+      "li",
+      "p",
+      "p",
       "p"
     ],
     "original": [
@@ -3786,19 +3846,29 @@
       "li",
       "ul"
     ],
-    "case-sensitive": [
+    "case": [
       "ol",
       "ol",
       "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
       "li",
       "li",
       "li",
       "ul",
       "ul",
       "ul",
+      "ul",
+      "ul",
       "li",
       "li",
       "li",
+      "li",
+      "li",
+      "p",
+      "p",
       "p",
       "p",
       "p",
@@ -3889,7 +3959,7 @@
       "li",
       "p"
     ],
-    "case-insensitive": [
+    "insensitive": [
       "ol",
       "ol",
       "li",
@@ -3964,7 +4034,7 @@
       "ul",
       "li"
     ],
-    "\"d(\\\\\\\\|/)myapp(\\\\\\\\|/)temp(\\\\\\\\|/)(\\\\w|\\\\s|\\\\.|-|){1,20}\";pattern": [
+    "|){1,20}\";pattern": [
       "ol",
       "li",
       "ul",
@@ -4103,7 +4173,11 @@
     "d\\myapp\\temp": [
       "em"
     ],
-    "\\\\\\\\|/myapp(\\\\\\\\|/)temp(\\\\\\\\|/)(\\\\w|\\\\s|\\\\.|-){1,20": [
+    "\\\\\\\\|/myapp(\\\\\\\\|/)temp(\\\\\\\\|/)(\\\\w|\\\\s|\\\\.|": [
+      "a",
+      "a"
+    ],
+    "){1,20": [
       "a"
     ],
     "method": [
@@ -4120,7 +4194,7 @@
       "p",
       "strong"
     ],
-    "\\\\\\\\|/myapp(\\\\\\\\|/)temp(\\\\\\\\|/)(\\\\w|\\\\s|\\\\.|-|){1,20": [
+    "|){1,20": [
       "a"
     ],
     "\\": [
@@ -4235,7 +4309,11 @@
       "pre",
       "pre"
     ],
-    "responsesetcontenttype(\"application/vnd.ms-excel\");": [
+    "responsesetcontenttype(\"application/vnd.ms": [
+      "pre",
+      "pre"
+    ],
+    "excel\");": [
       "pre",
       "pre"
     ],
@@ -4550,7 +4628,10 @@
     "/myapp/temp/filename>": [
       "pre"
     ],
-    "\"/myapp/temp/\\\\w|\\\\s|\\\\.|-|){1,20}\";": [
+    "\"/myapp/temp/\\\\w|\\\\s|\\\\.|": [
+      "pre"
+    ],
+    "|){1,20}\";": [
       "pre"
     ],
     "patterncompile(goodpattern);": [
@@ -4634,7 +4715,7 @@
       "li",
       "a"
     ],
-    "client-side": [
+    "client": [
       "ul",
       "li",
       "a",
@@ -4642,6 +4723,20 @@
       "li",
       "a",
       "ul",
+      "li",
+      "a"
+    ],
+    "side": [
+      "ul",
+      "li",
+      "a",
+      "ul",
+      "li",
+      "a",
+      "ul",
+      "ul",
+      "li",
+      "a",
       "li",
       "a"
     ],
@@ -4707,11 +4802,6 @@
       "a",
       "li",
       "a",
-      "li",
-      "a"
-    ],
-    "server-side": [
-      "ul",
       "li",
       "a"
     ],

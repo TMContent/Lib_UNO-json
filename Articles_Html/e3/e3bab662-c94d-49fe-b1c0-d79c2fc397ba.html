@@ -1,10 +1,10 @@
-<p>##What to Check For##</p>
+<h2>What to Check For</h2>
 <p>Verify that excessive sensitive data stored in the cloud is truncated and/or scrambled.</p>
-<p>##Why##</p>
+<h2>Why</h2>
 <p>Stored sensitive data might be compromised if some other part of the application is compromised, so it is best to store as little sensitive data as possible. If a portion of sensitive data is sufficient to satisfy application requirements, then only a portion of the sensitive data should be used. For example, it is often sufficient to store the last four digits of the Social Security Number to verify user identity, so in such cases only the last four digits should be stored.</p>
-<p>##When##</p>
+<h2>When</h2>
 <p>When working with sensitive account information such as a PAN or Social Security Number (SSN), you must programmatically scramble excessive data.</p>
-<p>##How to Check##</p>
+<h2>How to Check</h2>
 <p>To verify that excessive sensitive data stored in the cloud is truncated and/or scrambled:</p>
 <ol>
 <li>
@@ -28,7 +28,7 @@
 <p><strong>Verify that excessive sensitive data is truncated and/or hashed.</strong> Examine the data stores containing each type of sensitive data handled by the application. Pay particular attention to sensitive data that has been identified as excessive. Verify that such data is truncated to the minimum required by the application. If the application does not need to retrieve this data, verify that it is being stored as cryptographically strong hashes.</p>
 </li>
 </ol>
-<p>##How to Fix##</p>
+<h2>How to Fix</h2>
 <ol>
 <li>
 <p><strong>Identify all sensitive data.</strong> Review the application for sensitive data that will be used by the application. For example:</p>

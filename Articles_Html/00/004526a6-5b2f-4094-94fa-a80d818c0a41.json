@@ -1,6 +1,6 @@
 {
   "id": "004526a6-5b2f-4094-94fa-a80d818c0a41",
-  "checksum": "8d9f6b3894fb21850b261fb421fcd0c4",
+  "checksum": "a10e5faff215cedbfc2a211ab34b15b1",
   "words": {
     "applies": [
       "h1"
@@ -22,6 +22,7 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "p",
@@ -30,7 +31,10 @@
       "li",
       "p",
       "li",
+      "li",
       "p",
+      "p",
+      "strong",
       "title"
     ],
     "c++": [
@@ -449,7 +453,8 @@
       "p",
       "strong"
     ],
-    "-": [
+    "": [
+      "p",
       "p"
     ],
     "file": [
@@ -597,6 +602,7 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "p",
       "strong",
@@ -608,9 +614,12 @@
       "li",
       "li",
       "li",
+      "li",
       "p",
       "p",
-      "p"
+      "p",
+      "p",
+      "strong"
     ],
     "unicode": [
       "p",
@@ -673,7 +682,15 @@
       "p",
       "strong"
     ],
-    "unix-type": [
+    "unix": [
+      "ol",
+      "ol",
+      "li",
+      "p",
+      "li",
+      "p"
+    ],
+    "type": [
       "ol",
       "li",
       "p"
@@ -838,16 +855,14 @@
       "p",
       "strong"
     ],
-    "gilbc": [
-      "ol",
-      "li",
-      "p",
-      "strong"
-    ],
     "glibc": [
       "ol",
+      "ol",
       "li",
-      "p"
+      "li",
+      "p",
+      "p",
+      "strong"
     ],
     "works": [
       "ol",
@@ -993,14 +1008,22 @@
       "ol",
       "ol",
       "ol",
+      "ol",
+      "ol",
       "li",
       "p",
       "li",
       "li",
       "li",
+      "li",
+      "li",
       "p",
       "p",
-      "p"
+      "p",
+      "p",
+      "p",
+      "strong",
+      "strong"
     ],
     "assurance": [
       "ol",
@@ -1073,7 +1096,17 @@
       "li",
       "p"
     ],
-    "time-of-check-to-time-of-use": [
+    "time": [
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
+      "p",
+      "strong",
+      "strong"
+    ],
+    "check": [
       "ol",
       "li",
       "p",
@@ -1089,11 +1122,6 @@
       "strong"
     ],
     "most": [
-      "ol",
-      "li",
-      "p"
-    ],
-    "unix": [
       "ol",
       "li",
       "p"
@@ -1179,7 +1207,12 @@
       "ul",
       "li"
     ],
-    "https//www.securecoding.cert.org/confluence/display/cplusplus/fio02-cpp.+canonicalize+path+names+originating+from+untrusted+sources": [
+    "https//www.securecoding.cert.org/confluence/display/cplusplus/fio02": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "cpp.+canonicalize+path+names+originating+from+untrusted+sources": [
       "ul",
       "li",
       "a"

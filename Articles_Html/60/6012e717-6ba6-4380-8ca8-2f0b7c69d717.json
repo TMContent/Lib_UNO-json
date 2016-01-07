@@ -244,6 +244,7 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "li",
@@ -264,8 +265,12 @@
       "p",
       "pre",
       "li",
+      "li",
+      "p",
       "p",
       "span",
+      "span",
+      "em",
       "li",
       "p",
       "li",
@@ -587,12 +592,17 @@
       "p",
       "ol",
       "ol",
+      "ol",
+      "li",
       "li",
       "li",
       "p",
       "p",
+      "p",
       "span",
       "span",
+      "span",
+      "em",
       "ul",
       "li",
       "a"
@@ -611,9 +621,14 @@
     "secure": [
       "p",
       "ol",
+      "ol",
+      "li",
       "li",
       "p",
+      "p",
       "span",
+      "span",
+      "em",
       "em"
     ],
     "not": [
@@ -1004,11 +1019,26 @@
       "p",
       "pre"
     ],
-    "time-out": [
+    "time": [
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
+      "p",
+      "strong",
+      "span"
+    ],
+    "out": [
+      "ol",
       "ol",
       "li",
       "p",
-      "strong"
+      "strong",
+      "li",
+      "p",
+      "span",
+      "pre"
     ],
     "set": [
       "ol",
@@ -1021,12 +1051,6 @@
       "span"
     ],
     "expiration": [
-      "ol",
-      "li",
-      "p",
-      "span"
-    ],
-    "time": [
       "ol",
       "li",
       "p",
@@ -1111,9 +1135,14 @@
     ],
     "timeout": [
       "ol",
+      "ol",
+      "li",
       "li",
       "p",
-      "span"
+      "p",
+      "span",
+      "span",
+      "em"
     ],
     "be": [
       "ol",
@@ -1197,13 +1226,6 @@
       "li",
       "p",
       "span"
-    ],
-    "session-timeout": [
-      "ol",
-      "li",
-      "p",
-      "span",
-      "em"
     ],
     "configuration": [
       "ol",
@@ -1345,13 +1367,6 @@
       "span",
       "span"
     ],
-    "out": [
-      "ol",
-      "li",
-      "p",
-      "span",
-      "pre"
-    ],
     "given": [
       "ol",
       "li",
@@ -1426,13 +1441,6 @@
       "li",
       "p",
       "span"
-    ],
-    "cookie-secure": [
-      "ol",
-      "li",
-      "p",
-      "span",
-      "em"
     ],
     "attribute": [
       "ol",

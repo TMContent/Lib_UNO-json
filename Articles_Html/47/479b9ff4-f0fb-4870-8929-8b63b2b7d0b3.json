@@ -173,6 +173,8 @@
       "ol",
       "ol",
       "ol",
+      "ol",
+      "li",
       "li",
       "li",
       "li",
@@ -209,6 +211,8 @@
       "ul",
       "ul",
       "ul",
+      "ul",
+      "li",
       "li",
       "li",
       "li",
@@ -292,7 +296,31 @@
       "p",
       "pre"
     ],
-    "re-authenticate": [
+    "re": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
+      "strong",
+      "ul",
+      "li",
+      "li",
+      "li",
+      "li",
+      "strong",
+      "pre",
+      "pre",
+      "title"
+    ],
+    "authenticate": [
       "p",
       "p",
       "pre"
@@ -311,11 +339,28 @@
       "li",
       "title"
     ],
-    "security-critical": [
+    "security": [
       "p",
       "p",
       "ol",
+      "ol",
+      "li",
+      "p",
       "li"
+    ],
+    "critical": [
+      "p",
+      "p",
+      "p",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "p",
+      "strong",
+      "li",
+      "li",
+      "title"
     ],
     "functionality": [
       "p",
@@ -427,16 +472,6 @@
     "modifications": [
       "p"
     ],
-    "critical": [
-      "p",
-      "ol",
-      "ol",
-      "li",
-      "p",
-      "strong",
-      "li",
-      "title"
-    ],
     "transactions": [
       "p",
       "ol",
@@ -489,10 +524,14 @@
       "p",
       "ol",
       "ol",
+      "ol",
+      "li",
       "li",
       "li",
       "ul",
       "ul",
+      "ul",
+      "li",
       "li",
       "li"
     ],
@@ -618,7 +657,7 @@
     "always": [
       "p"
     ],
-    "re-authentication": [
+    "authentication": [
       "p",
       "p",
       "ol",
@@ -626,17 +665,24 @@
       "ol",
       "ol",
       "ol",
+      "ol",
+      "li",
       "li",
       "li",
       "p",
       "strong",
       "ul",
+      "ul",
+      "li",
       "li",
       "li",
       "li",
       "li",
       "strong",
       "pre",
+      "ul",
+      "li",
+      "a",
       "title"
     ],
     "prior": [
@@ -766,11 +812,6 @@
       "li",
       "ul",
       "li"
-    ],
-    "security": [
-      "ol",
-      "li",
-      "p"
     ],
     "architecture": [
       "ol",
@@ -1191,7 +1232,8 @@
       "li",
       "li",
       "a",
-      "li"
+      "li",
+      "a"
     ],
     "should": [
       "ol",
@@ -1674,7 +1716,13 @@
       "li",
       "li"
     ],
-    "man-in-the-middle": [
+    "man": [
+      "ol",
+      "li",
+      "ul",
+      "li"
+    ],
+    "middle": [
       "ol",
       "li",
       "ul",
@@ -1775,8 +1823,12 @@
     ],
     "blind": [
       "ol",
+      "ol",
+      "li",
       "li",
       "ul",
+      "ul",
+      "li",
       "li"
     ],
     "sometimes": [
@@ -1791,7 +1843,7 @@
       "ul",
       "li"
     ],
-    "color-blind": [
+    "color": [
       "ol",
       "li",
       "ul",
@@ -1841,7 +1893,13 @@
       "ul",
       "li"
     ],
-    "trade-offs": [
+    "trade": [
+      "ol",
+      "li",
+      "ul",
+      "li"
+    ],
+    "offs": [
       "ol",
       "li",
       "ul",
@@ -1926,15 +1984,6 @@
       "ul",
       "li",
       "strong"
-    ],
-    "authentication": [
-      "ol",
-      "li",
-      "ul",
-      "li",
-      "ul",
-      "li",
-      "a"
     ],
     "token": [
       "ol",
@@ -2233,9 +2282,14 @@
       "ul",
       "li"
     ],
-    "see captcha-ing": [
+    "see captcha": [
       "ul",
       "li"
+    ],
+    "ing": [
+      "ul",
+      "li",
+      "a"
     ],
     "spammer": [
       "ul",
@@ -2246,9 +2300,6 @@
       "a"
     ],
     "official": [
-      "a"
-    ],
-    "captcha-ing": [
       "a"
     ]
   },

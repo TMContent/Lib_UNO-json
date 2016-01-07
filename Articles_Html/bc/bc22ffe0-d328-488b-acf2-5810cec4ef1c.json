@@ -1,34 +1,13 @@
 {
   "id": "bc22ffe0-d328-488b-acf2-5810cec4ef1c",
-  "checksum": "d915e0f643c501de589ffa5309424320",
+  "checksum": "dfa37c7f69b7c4a1c3e764e8f73baa55",
   "words": {
-    "##applies": [
-      "p"
-    ],
-    "to##": [
-      "p"
-    ],
-    "amazon": [
-      "ul",
-      "li"
-    ],
-    "web": [
-      "ul",
-      "li"
-    ],
-    "services": [
-      "ul",
-      "li"
-    ],
-    "aws)": [
-      "ul",
-      "li"
-    ],
-    "##what": [
-      "p"
+    "applies": [
+      "h2"
     ],
     "to": [
-      "p",
+      "h2",
+      "h2",
       "p",
       "p",
       "p",
@@ -59,8 +38,27 @@
       "li",
       "p"
     ],
-    "do##": [
-      "p"
+    "amazon": [
+      "ul",
+      "li"
+    ],
+    "web": [
+      "ul",
+      "li"
+    ],
+    "services": [
+      "ul",
+      "li"
+    ],
+    "aws)": [
+      "ul",
+      "li"
+    ],
+    "what": [
+      "h2"
+    ],
+    "do": [
+      "h2"
     ],
     "use": [
       "p",
@@ -178,6 +176,7 @@
     "in": [
       "p",
       "p",
+      "p",
       "ul",
       "li",
       "ol",
@@ -227,7 +226,7 @@
     "trigger": [
       "p"
     ],
-    "built-in": [
+    "built": [
       "p"
     ],
     "or": [
@@ -236,7 +235,10 @@
       "li",
       "p"
     ],
-    "user-defined": [
+    "user": [
+      "p"
+    ],
+    "defined": [
       "p"
     ],
     "metrics": [
@@ -366,8 +368,8 @@
       "ul",
       "li"
     ],
-    "##why##": [
-      "p"
+    "why": [
+      "h2"
     ],
     "cloud": [
       "p",
@@ -392,7 +394,11 @@
     "as": [
       "p"
     ],
-    "under-used": [
+    "under": [
+      "ul",
+      "li"
+    ],
+    "used": [
       "ul",
       "li"
     ],
@@ -448,8 +454,12 @@
       "p",
       "strong"
     ],
-    "metricssystem-wide": [
+    "metricssystem": [
       "ul"
+    ],
+    "wide": [
+      "ul",
+      "li"
     ],
     "visibility": [
       "ul",
@@ -479,11 +489,11 @@
       "ul",
       "li"
     ],
-    "system-wide": [
+    "system": [
       "li"
     ],
-    "##how##": [
-      "p"
+    "how": [
+      "h2"
     ],
     "the": [
       "p",
@@ -780,6 +790,7 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "p",
@@ -787,8 +798,11 @@
       "strong",
       "li",
       "li",
+      "li",
       "p",
-      "p"
+      "p",
+      "p",
+      "code"
     ],
     "configuration": [
       "ol",
@@ -817,12 +831,20 @@
       "ol",
       "ol",
       "ol",
+      "ol",
+      "ol",
       "li",
       "li",
       "p",
       "p",
       "li",
+      "li",
       "p",
+      "p",
+      "code",
+      "li",
+      "p",
+      "code",
       "li",
       "li",
       "p",
@@ -857,7 +879,10 @@
     ],
     "latency": [
       "ol",
+      "ol",
       "li",
+      "li",
+      "p",
       "p"
     ],
     "name": [
@@ -905,7 +930,7 @@
       "p",
       "p"
     ],
-    "latency-defining": [
+    "defining": [
       "ol",
       "li",
       "p"
@@ -949,7 +974,7 @@
       "li",
       "p"
     ],
-    "put-metric-data": [
+    "put": [
       "ol",
       "li",
       "p",
@@ -981,11 +1006,15 @@
     "statistics": [
       "ol",
       "ol",
+      "ol",
+      "li",
       "li",
       "li",
       "p",
       "p",
-      "strong"
+      "p",
+      "strong",
+      "code"
     ],
     "from": [
       "ol",
@@ -1019,10 +1048,13 @@
       "p",
       "p"
     ],
-    "get-metric-statistics": [
+    "get": [
       "ol",
       "li",
+      "li",
       "p",
+      "p",
+      "strong",
       "code"
     ],
     "add": [
@@ -1038,12 +1070,23 @@
       "li",
       "p"
     ],
-    "start-time": [
+    "start": [
       "ol",
       "li",
       "p"
     ],
-    "end-time": [
+    "time": [
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "li",
+      "p",
+      "p",
+      "p"
+    ],
+    "end": [
       "ol",
       "li",
       "p"
@@ -1074,11 +1117,6 @@
       "p"
     ],
     "earliest": [
-      "ol",
-      "li",
-      "p"
-    ],
-    "time": [
       "ol",
       "li",
       "p"
@@ -1234,11 +1272,6 @@
       "p"
     ],
     "define": [
-      "li",
-      "p",
-      "strong"
-    ],
-    "get": [
       "li",
       "p",
       "strong"

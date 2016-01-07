@@ -1,15 +1,15 @@
-<p>##Applies To##</p>
+<h2>Applies To</h2>
 <ul>
 <li>Amazon Web Services (AWS)</li>
 </ul>
-<p>##What to Do##</p>
+<h2>What to Do</h2>
 <p>Protect cloud log files by limiting read access, requiring HTTPS of clients when moving log data, and using conditions to restrict client IP addresses to specific CIDR blocks.</p>
-<p>##Why##</p>
+<h2>Why</h2>
 <p>Log files contain sensitive information about client access to resources in your cloud. This data includes the request type, the requested resource, the requestor’s IP, and the time and date of the request. When bucket logging is enabled, the records are aggregated into log files and delivered to a specified bucket.</p>
 <p>If log files can be accessed, then you are not complying with basic standards that require protection of client or cardholder data.</p>
-<p>##When##</p>
+<h2>When</h2>
 <p>When Amazon S3 creates a bucket or object at your request, and you set up logging, you specify a logfile name and prefix. These files are saved to a bucket you specify. By default you are the grantee and full owner. When needed, permissions on this bucket must be changed to allow other users access to any log files stored there.</p>
-<p>##How##</p>
+<h2>How</h2>
 <p>To protect log files, a best practice is to create and use a policy on the log bucket. This method is more efficient than configuring ACLs, permissions and access groups for the bucket.</p>
 <p>This is a summary of steps needed to create and use a policy. The specific policy elements to protect your log files would be prepared similarly.</p>
 <ol>

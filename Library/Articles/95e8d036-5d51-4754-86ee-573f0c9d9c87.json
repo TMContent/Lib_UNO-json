@@ -1,0 +1,56 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "0",
+      "Content_Hash": "0"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "95e8d036-5d51-4754-86ee-573f0c9d9c87"
+        ],
+        "Library_Id": [
+          "be5273b1-d682-4361-99d9-6234f2d47eb7"
+        ],
+        "Title": [
+          "Assign a New Session ID on Reauthentication"
+        ],
+        "Category": [
+          ""
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "false",
+          "DataType": "markdown"
+        },
+        "Data": [
+          "## What to Do ##\r\n\r\nAssign a new session ID on reauthentication.\r\n\r\n## Why ##\r\n\r\nAssigning a new session ID on reauthentication makes it more difficult to attack the authentication system.\r\n\r\n## When ##\r\n\r\nAssign a new session ID on reauthentication in all web applications that implement authentication.\r\n\r\n## How ##\r\n\r\nTo assign a new session ID on reauthentication:\r\n\r\n1. **Identify authentication functionality.** Find code that is responsible for reauthentication.\r\n\r\n2. **Generate a new, strong session ID.** Use the platform's APIs to generate a unique, strong session ID for the current session.\r\n"
+        ]
+      }
+    ]
+  }
+}

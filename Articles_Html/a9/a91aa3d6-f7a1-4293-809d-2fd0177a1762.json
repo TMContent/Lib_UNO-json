@@ -300,9 +300,18 @@
       "li",
       "strong"
     ],
-    "deny-all": [
+    "deny": [
       "ol",
       "ol",
+      "li",
+      "li",
+      "strong"
+    ],
+    "all": [
+      "ol",
+      "ol",
+      "ol",
+      "li",
       "li",
       "li",
       "strong"
@@ -429,10 +438,6 @@
       "ol",
       "li"
     ],
-    "all": [
-      "ol",
-      "li"
-    ],
     "that": [
       "ol",
       "li"
@@ -471,7 +476,10 @@
     ],
     "job": [
       "ol",
-      "li"
+      "ol",
+      "li",
+      "li",
+      "p"
     ],
     "functions": [
       "ol",
@@ -544,7 +552,7 @@
       "li",
       "p"
     ],
-    "job-related": [
+    "related": [
       "ol",
       "li",
       "p"
@@ -654,13 +662,22 @@
       "p",
       "span"
     ],
-    "at\rhttp://technet.microsoft.com/en-us/library/bb727008.aspx.": [
+    "at\rhttp://technet.microsoft.com/en": [
       "ul",
       "li",
       "p",
       "span"
     ],
-    "http//technet.microsoft.com/en-us/library/bb727008.aspx": [
+    "us/library/bb727008.aspx.": [
+      "ul",
+      "li",
+      "p",
+      "span"
+    ],
+    "http//technet.microsoft.com/en": [
+      "a"
+    ],
+    "us/library/bb727008.aspx": [
       "a"
     ]
   },

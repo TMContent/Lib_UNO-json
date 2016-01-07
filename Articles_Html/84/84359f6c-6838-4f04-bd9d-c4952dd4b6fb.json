@@ -2,6 +2,17 @@
   "id": "84359f6c-6838-4f04-bd9d-c4952dd4b6fb",
   "checksum": "60f331711a4f5f769d5134c66027fddb",
   "words": {
+    "306": [
+      "ul",
+      "li",
+      "a",
+      "title"
+    ],
+    "602": [
+      "ol",
+      "li",
+      "p"
+    ],
     "description": [
       "h2"
     ],
@@ -458,8 +469,19 @@
       "p",
       "strong"
     ],
-    "high-security": [
+    "high": [
       "p"
+    ],
+    "security": [
+      "p",
+      "p",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
+      "p",
+      "strong"
     ],
     "building": [
       "p",
@@ -573,16 +595,6 @@
     ],
     "nosy": [
       "p"
-    ],
-    "security": [
-      "p",
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "p",
-      "p",
-      "strong"
     ],
     "guards": [
       "p"
@@ -1286,12 +1298,23 @@
       "p",
       "p"
     ],
-    "commonly-used": [
+    "commonly": [
       "ol",
       "ol",
       "li",
       "li",
       "p",
+      "p"
+    ],
+    "used": [
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
+      "p",
+      "ol",
+      "li",
       "p"
     ],
     "idioms": [
@@ -1887,19 +1910,41 @@
       "li",
       "p"
     ],
-    "used": [
-      "ol",
-      "li",
-      "p"
-    ],
     "throughout": [
       "ol",
       "li",
       "p"
     ],
-    "server-side": [
+    "server": [
+      "ol",
+      "ol",
+      "ol",
       "ol",
       "li",
+      "li",
+      "li",
+      "p",
+      "p",
+      "p",
+      "strong",
+      "li",
+      "p"
+    ],
+    "side": [
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "p",
+      "p",
+      "p",
+      "p",
       "p",
       "strong"
     ],
@@ -1937,32 +1982,19 @@
     "client": [
       "ol",
       "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
       "li",
       "li",
       "p",
-      "p"
-    ],
-    "side": [
-      "ol",
-      "ol",
-      "li",
-      "li",
+      "p",
       "p",
       "p"
     ],
     "duplicated": [
       "ol",
-      "li",
-      "p"
-    ],
-    "server": [
-      "ol",
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "p",
-      "p",
       "li",
       "p"
     ],
@@ -1982,22 +2014,15 @@
       "p",
       "p"
     ],
-    "cwe-602": [
+    "cwe": [
       "ol",
       "li",
-      "p"
+      "p",
+      "title"
     ],
     "bypass": [
       "ol",
       "li",
-      "p"
-    ],
-    "client-side": [
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "p",
       "p"
     ],
     "modifying": [
@@ -2323,15 +2348,12 @@
       "ul",
       "li"
     ],
-    "see\rhttp://cwe.mitre.org/top25/index.html#cwe-306": [
+    "see\rhttp://cwe.mitre.org/top25/index.html#cwe": [
       "ul",
       "li"
     ],
-    "http//cwe.mitre.org/top25/index.html#cwe-306": [
+    "http//cwe.mitre.org/top25/index.html#cwe": [
       "a"
-    ],
-    "cwe-306": [
-      "title"
     ],
     "function": [
       "title"

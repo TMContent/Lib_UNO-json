@@ -1,0 +1,12 @@
+<h2>What to Do</h2>
+<p>Validate user credentials before processing them.</p>
+<h2>Why</h2>
+<p>Failure to validate user credentials could cause improper authentication. This can allow an attacker to authenticate as another user without the need to steal credentials.</p>
+<h2>When</h2>
+<p>If your application accepts and processes user credentials, then validate the credentials before processing them.</p>
+<h2>How</h2>
+<p>Use the following steps when validating user credentials:</p>
+<ol>
+<li><strong>Establish username requirements.</strong> Determine what is the acceptable character set and length that should be allowed within a username. For instance, require that usernames should be at least six characters long and must contain alpha-numeric characters only.</li>
+<li><strong>Use whitelist validation.</strong> Whitelisting involves the establishment of what is good input for your application. Once good input is defined, compare all input against the established good input. If the input does not resemble good input, your application should discard it. This technique can be implemented using regular expressions. When using regular expressions, make sure to validate the length first to prevent regular expression denial of service vulnerabilities.</li>
+</ol>

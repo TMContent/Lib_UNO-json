@@ -1,0 +1,25 @@
+<h2>What to Do</h2>
+<p>Validate all input before it is passed to the database.</p>
+<h2>Why</h2>
+<p>Unvalidated input can lead to persistent cross-site scripting, SQL injection, and other vulnerabilities which would allow an attacker to gain unauthorized access to sensitive data.</p>
+<h2>When</h2>
+<p>If your application uses a backend database server.</p>
+<h2>How</h2>
+<p>To properly validate input passed to database:</p>
+<ol>
+<li><strong>Identify application inputs.</strong> Potential sources of input include:</li>
+</ol>
+<ul>
+<li>URL based parameters</li>
+<li>Form based parameters</li>
+<li>Hidden fields</li>
+<li>Cookies</li>
+<li>Local filesystem</li>
+<li>JavaScript variables</li>
+</ul>
+<ol start="2">
+<li><strong>Identify database entry points.</strong> Find all the locations in the system where data is pushed into the database, either directly via queries, or indirectly (via log entries, etc). Trace all database entry points to find all the paths which can contain external input.</li>
+<li><strong>Create a set of validators.</strong> Build a set of validators that work with the data in question and fit into the system architecture, including your general validation scheme for other data and the way the system interacts with the database. Centralize the validators as it helps strengthen your code by limiting the amount of scattered validation code throughout the system, and allows for easy auditing. Place the validators along the database input paths, ideally as close to the initial data input as possible. All data should pass through the validators before being transmitted to the database servers.</li>
+<li><strong>Use Type-Safe parameters in SQL statements.</strong> Stored procedures and Parameterized queries improve your application's robustness against SQL injection based attacks.</li>
+<li><strong>Audit your entry paths.</strong> Before going into production, have a reviewer who was not responsible for the development of the code in question check all the input paths to ensure that the validators are correctly implemented, that they are correctly applied, and that all input paths are checked.</li>
+</ol>

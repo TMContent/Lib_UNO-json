@@ -1,0 +1,56 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "0",
+      "Content_Hash": "0"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "e44d5f96-2cb3-4083-a964-11327aeed77e"
+        ],
+        "Library_Id": [
+          "be5273b1-d682-4361-99d9-6234f2d47eb7"
+        ],
+        "Title": [
+          "Do Not Cache Sensitive Data"
+        ],
+        "Category": [
+          ""
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "Technology Independent"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "false",
+          "DataType": "markdown"
+        },
+        "Data": [
+          "## What to Do ##\r\n\r\nDo not cache sensitive data.\r\n\r\n## Why ##\r\n\r\nDo not cache sensitive data to prevent attackers from being able to recover it in the event of a compromise.\r\n\r\n## How ##\r\n\r\nTo prevent caching of sensitive data:\r\n\r\n1. **Identify caching code.** Find code that caches data.\r\n\r\n2. **Identify sensitive data.** Identify the types of sensitive data handled by your application.\r\n\r\n3. **Review caching code.** Review the code that caches data and make sure that it does not cache any of the sensitive data used by the application.\r\n\r\n4. **Prevent caching of sensitive data.** If there is code that caches sensitive data, replace it with code that meets the application requirements but does not cache sensitive data.\r\n\r\n\r\n\r\n"
+        ]
+      }
+    ]
+  }
+}
