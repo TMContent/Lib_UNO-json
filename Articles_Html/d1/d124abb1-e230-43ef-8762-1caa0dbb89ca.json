@@ -1,6 +1,6 @@
 {
   "id": "d124abb1-e230-43ef-8762-1caa0dbb89ca",
-  "checksum": "fcc82a228b63a14fadbc4e90ba9dc116",
+  "checksum": "489ac3c3a92f2cddac2a66d644d1bd2d",
   "words": {
     "1": [
       "ul",
@@ -720,7 +720,9 @@
     "extends": [
       "pre"
     ],
-    "&#123&nbsp;&nbsp;&nbsp;": [
+    "{": [
+      "pre",
+      "pre",
       "pre"
     ],
     "private": [
@@ -729,10 +731,15 @@
     "string": [
       "pre"
     ],
-    "title&nbsp;&nbsp;&nbsp;": [
+    "title": [
+      "pre",
       "pre"
     ],
-    "..&nbsp;&nbsp;&nbsp;": [
+    "..": [
+      "pre",
+      "pre",
+      "pre",
+      "pre",
       "pre"
     ],
     "actionerrors": [
@@ -753,14 +760,6 @@
     "request": [
       "pre"
     ],
-    "&#123": [
-      "pre"
-    ],
-    "&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
-      "pre",
-      "pre",
-      "pre"
-    ],
     "//very": [
       "pre"
     ],
@@ -768,6 +767,7 @@
       "pre"
     ],
     "": [
+      "pre",
       "pre",
       "pre",
       "pre",
@@ -786,10 +786,15 @@
     "any": [
       "pre"
     ],
-    "validations&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
-      "pre"
+    "validations": [
+      "pre",
+      "p",
+      "p",
+      "p",
+      "p"
     ],
     "errors": [
+      "pre",
       "pre",
       "pre",
       "pre",
@@ -799,11 +804,7 @@
       "pre",
       "pre"
     ],
-    "supervalidate(mapping,request);&nbsp;": [
-      "pre"
-    ],
-    "..&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
-      "pre",
+    "supervalidate(mapping,request);": [
       "pre"
     ],
     "==": [
@@ -812,6 +813,7 @@
     ],
     "null": [
       "pre",
+      "pre",
       "pre"
     ],
     "new": [
@@ -819,13 +821,7 @@
       "pre",
       "p"
     ],
-    "actionerrors);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
-      "pre"
-    ],
-    "title": [
-      "pre"
-    ],
-    "&#123&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "actionerrors);": [
       "pre"
     ],
     "//\"errorsrequired\"": [
@@ -879,16 +875,16 @@
       "li",
       "a"
     ],
-    "app&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "app": [
       "pre"
     ],
     "errorsadd(actionerrors.global_error,": [
       "pre"
     ],
-    "actionerror\"errors.required\",\"title\"));&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "actionerror\"errors.required\",\"title\"));": [
       "pre"
     ],
-    "&#125&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "}": [
       "pre"
     ],
     "errors.empty())": [
@@ -898,13 +894,7 @@
       "pre",
       "pre"
     ],
-    "null&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
-      "pre"
-    ],
-    "errors&nbsp;&nbsp;&nbsp;": [
-      "pre"
-    ],
-    "&#125&#125;": [
+    "}}": [
       "pre"
     ],
     "next": [
@@ -948,6 +938,8 @@
       "pre"
     ],
     "/": [
+      "pre",
+      "pre",
       "pre",
       "pre",
       "pre"
@@ -1002,10 +994,6 @@
       "pre",
       "pre"
     ],
-    "..": [
-      "pre",
-      "pre"
-    ],
     "involves": [
       "p"
     ],
@@ -1026,12 +1014,6 @@
       "em"
     ],
     "actual": [
-      "p"
-    ],
-    "validations": [
-      "p",
-      "p",
-      "p",
       "p"
     ],
     "many": [
@@ -1073,10 +1055,7 @@
       "p",
       "p"
     ],
-    "&#33;": [
-      "pre"
-    ],
-    "&nbsp;": [
+    "!": [
       "pre"
     ],
     "plugin": [
@@ -1085,16 +1064,18 @@
     "<plug": [
       "pre"
     ],
-    "classname=\"orgapache.struts.validator.validatorplugin\">&nbsp;": [
+    "classname=\"orgapache.struts.validator.validatorplugin\">": [
       "pre"
     ],
     "set": [
       "pre"
     ],
-    "property&nbsp;": [
+    "property": [
+      "pre",
+      "pre",
       "pre"
     ],
-    "property=\"pathnames\"&nbsp&nbsp;": [
+    "property=\"pathnames\"": [
       "pre"
     ],
     "value=\"/web": [
@@ -1154,18 +1135,16 @@
     "here": [
       "p"
     ],
-    "beans>&nbsp;&nbsp;&nbsp;": [
+    "beans>": [
+      "pre",
       "pre"
     ],
     "name=\"loginform\"": [
       "pre",
-      "pre"
-    ],
-    "type=\"orgapache.struts.validator.dynavalidatorform\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
-      "pre"
-    ],
-    "property": [
       "pre",
+      "pre"
+    ],
+    "type=\"orgapache.struts.validator.dynavalidatorform\">": [
       "pre"
     ],
     "name=\"username\"": [
@@ -1175,22 +1154,13 @@
       "pre",
       "pre"
     ],
-    "/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
-      "pre"
-    ],
     "name=\"password\"": [
-      "pre"
-    ],
-    "/&nbsp;&nbsp;&nbsp;": [
       "pre"
     ],
     "/form": [
       "pre"
     ],
     "bean></form": [
-      "pre"
-    ],
-    "beans>": [
       "pre"
     ],
     "covers": [
@@ -1212,13 +1182,11 @@
     "covering": [
       "p"
     ],
-    "validation>&nbsp;&nbsp;&nbsp;": [
+    "validation>": [
+      "pre",
       "pre"
     ],
-    "formset>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
-      "pre"
-    ],
-    "name=\"loginform\"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "formset>": [
       "pre"
     ],
     "field": [
@@ -1228,34 +1196,35 @@
     "property=\"username\"": [
       "pre"
     ],
-    "depends=\"required\"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "depends=\"required\"": [
       "pre"
     ],
     "arg": [
       "pre"
     ],
-    "key=\"loginformusername\"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "key=\"loginformusername\"/>": [
       "pre"
     ],
-    "/field>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "/field>": [
+      "pre",
       "pre"
     ],
     "property=\"password\"": [
       "pre"
     ],
-    "depends=\"requiredminlength\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "depends=\"requiredminlength\">": [
       "pre"
     ],
     "arg0": [
       "pre"
     ],
-    "key=\"loginformpassword\"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "key=\"loginformpassword\"/>": [
       "pre"
     ],
     "arg1": [
       "pre"
     ],
-    "key=\"&#36&#123;var:minlength&#125;\"": [
+    "key=\"${varminlength}\"": [
       "pre"
     ],
     "name=\"minlength\"": [
@@ -1264,10 +1233,7 @@
     "resource=\"false\"/": [
       "pre"
     ],
-    "&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
-      "pre"
-    ],
-    "var>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "var>": [
       "pre"
     ],
     "var": [
@@ -1277,28 +1243,22 @@
     "name>minlength</var": [
       "pre"
     ],
-    "name>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "name>": [
       "pre"
     ],
     "value>6</var": [
       "pre"
     ],
-    "value>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "value>": [
       "pre"
     ],
-    "/var>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "/var>": [
       "pre"
     ],
-    "/field>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
-      "pre"
-    ],
-    "/form>&nbsp;&nbsp;&nbsp;": [
+    "/form>": [
       "pre"
     ],
     "/formset></form": [
-      "pre"
-    ],
-    "validation>": [
       "pre"
     ],
     "now": [

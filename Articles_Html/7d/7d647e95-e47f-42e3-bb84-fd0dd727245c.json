@@ -1,6 +1,6 @@
 {
   "id": "7d647e95-e47f-42e3-bb84-fd0dd727245c",
-  "checksum": "cafec6a0378ea4fa2fb09f262853946d",
+  "checksum": "e50526a1cdf76ce81cb6210d3dff82d6",
   "words": {
     "1": [
       "li",
@@ -920,6 +920,8 @@
       "pre",
       "pre",
       "p",
+      "p",
+      "p",
       "p"
     ],
     "token)": [
@@ -970,6 +972,7 @@
       "li",
       "li",
       "p",
+      "p",
       "p"
     ],
     "you": [
@@ -1016,11 +1019,11 @@
       "li",
       "p"
     ],
-    "function/&#42&#42;": [
+    "function/**": [
       "ol",
       "li"
     ],
-    "&#42/private": [
+    "*/private": [
       "ol",
       "li",
       "pre"
@@ -1065,7 +1068,7 @@
       "pre",
       "p"
     ],
-    "&#123": [
+    "{": [
       "ol",
       "li",
       "pre",
@@ -1092,7 +1095,7 @@
       "pre",
       "p"
     ],
-    "csrftoken&#125;add": [
+    "csrftoken}add": [
       "ol"
     ],
     "security": [
@@ -1370,6 +1373,7 @@
       "pre",
       "pre",
       "p",
+      "p",
       "p"
     ],
     "input": [
@@ -1378,7 +1382,7 @@
       "pre",
       "p"
     ],
-    "id=\"&#37;=": [
+    "id=\"%=": [
       "ol",
       "li",
       "pre",
@@ -1390,7 +1394,7 @@
       "pre",
       "p"
     ],
-    "&#37>\"": [
+    "%\"": [
       "ol",
       "ol",
       "li",
@@ -1406,7 +1410,7 @@
       "pre",
       "p"
     ],
-    "value=\"&#37;=": [
+    "value=\"%=": [
       "ol",
       "li",
       "pre",
@@ -1708,7 +1712,7 @@
       "pre",
       "p"
     ],
-    "&#123&#9;...&#9;string": [
+    "{\t..\tstring": [
       "ol",
       "li",
       "pre"
@@ -1719,17 +1723,17 @@
       "pre",
       "p"
     ],
-    "esapihttputilities().getcsrftoken();&#9;string": [
+    "esapihttputilities().getcsrftoken();\tstring": [
       "ol",
       "li",
       "pre"
     ],
-    "requestgetparameter(esapi.httputilities().csrf_token_name);&#9;//do": [
+    "requestgetparameter(esapi.httputilities().csrf_token_name);\t//do": [
       "ol",
       "li",
       "pre"
     ],
-    "check&#9if": [
+    "check\tif": [
       "ol",
       "li",
       "pre"
@@ -1740,7 +1744,7 @@
       "pre",
       "p"
     ],
-    "&#123&#9;&#9;//go": [
+    "{\t\t//go": [
       "ol",
       "li",
       "pre"
@@ -1773,7 +1777,7 @@
       "pre",
       "p"
     ],
-    "here&#9&#125;": [
+    "here\t}": [
       "ol",
       "li",
       "pre"
@@ -1784,7 +1788,7 @@
       "pre",
       "p"
     ],
-    "&#123&#9;&#9;//do": [
+    "{\t\t//do": [
       "ol",
       "li",
       "pre"
@@ -1811,7 +1815,7 @@
       "pre",
       "p"
     ],
-    "appropriately&#9&#125;&#125;invalidate": [
+    "appropriately\t}}invalidate": [
       "ol"
     ],
     "sessions": [
@@ -1878,18 +1882,18 @@
       "li",
       "pre"
     ],
-    "csrftoken&#125;": [
+    "csrftoken}": [
       "li",
       "pre"
     ],
     "javasecurity.securerandom": [
       "em"
     ],
-    "/&#42&#42;": [
+    "/**": [
       "pre",
       "p"
     ],
-    "&#42/": [
+    "*/": [
       "p"
     ],
     "private": [
@@ -1902,7 +1906,9 @@
       "p",
       "p"
     ],
-    "&#125": [
+    "}": [
+      "p",
+      "p",
       "p",
       "p"
     ],
@@ -1934,7 +1940,7 @@
       "p",
       "strong"
     ],
-    "appropriately&#9&#125;&#125;": [
+    "appropriately\t}}": [
       "li",
       "pre"
     ],
@@ -1946,39 +1952,23 @@
       "p",
       "pre"
     ],
-    "&#9...": [
-      "p"
-    ],
-    "&#9string": [
-      "p",
-      "p"
-    ],
     "esapihttputilities().getcsrftoken();": [
       "p"
     ],
     "requestgetparameter(esapi.httputilities().csrf_token_name);": [
       "p"
     ],
-    "&#9//do": [
+    "//do": [
+      "p",
       "p"
     ],
     "check": [
       "p"
     ],
-    "&#9if": [
-      "p"
-    ],
-    "&#9&#9;//go": [
+    "//go": [
       "p"
     ],
     "here": [
-      "p"
-    ],
-    "&#9&#125;": [
-      "p",
-      "p"
-    ],
-    "&#9&#9;//do": [
       "p"
     ],
     "appropriately": [
@@ -2055,14 +2045,14 @@
       "a",
       "a"
     ],
-    "site_request_forgery_&#37;28csrf&#37;29for": [
+    "site_request_forgery_%28csrf%29for": [
       "ul"
     ],
-    "see&nbsphttps://www.owasp.org/index.php/cross": [
+    "see https//www.owasp.org/index.php/cross": [
       "ul",
       "li"
     ],
-    "site_request_forgery_&#37;28csrf&#37;29_prevention_cheat_sheetfor": [
+    "site_request_forgery_%28csrf%29_prevention_cheat_sheetfor": [
       "ul"
     ],
     "securerandom": [
@@ -2115,11 +2105,11 @@
       "li",
       "a"
     ],
-    "site_request_forgery_&#37;28csrf&#37;29": [
+    "site_request_forgery_%28csrf%29": [
       "li",
       "a"
     ],
-    "site_request_forgery_&#37;28csrf&#37;29_prevention_cheat_sheet": [
+    "site_request_forgery_%28csrf%29_prevention_cheat_sheet": [
       "li",
       "a"
     ],
@@ -2594,12 +2584,12 @@
   "tags": {},
   "links": [
     {
-      "href": "https://www.owasp.org/index.php/Cross-Site_Request_Forgery_&#37;28CSRF&#37;29",
-      "text": "https://www.owasp.org/index.php/Cross-Site_Request_Forgery_&#37;28CSRF&#37;29"
+      "href": "https://www.owasp.org/index.php/Cross-Site_Request_Forgery_%28CSRF%29",
+      "text": "https://www.owasp.org/index.php/Cross-Site_Request_Forgery_%28CSRF%29"
     },
     {
-      "href": "https://www.owasp.org/index.php/Cross-Site_Request_Forgery_&#37;28CSRF&#37;29_Prevention_Cheat_Sheet",
-      "text": "https://www.owasp.org/index.php/Cross-Site_Request_Forgery_&#37;28CSRF&#37;29_Prevention_Cheat_Sheet"
+      "href": "https://www.owasp.org/index.php/Cross-Site_Request_Forgery_%28CSRF%29_Prevention_Cheat_Sheet",
+      "text": "https://www.owasp.org/index.php/Cross-Site_Request_Forgery_%28CSRF%29_Prevention_Cheat_Sheet"
     },
     {
       "href": "http://download.oracle.com/javase/6/docs/api/java/security/SecureRandom.html",

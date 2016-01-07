@@ -1,6 +1,6 @@
 {
   "id": "d4645b55-6da1-4c3c-9e9f-bed1d021ed56",
-  "checksum": "586399a9e8072de7c70a2cfa91ca4935",
+  "checksum": "1dfbd079f5453778fdca9295eba51bcd",
   "words": {
     "applies": [
       "h1"
@@ -884,10 +884,11 @@
       "li",
       "p"
     ],
-    "&#64namedquery": [
+    "@namedquery": [
       "p",
       "ol",
       "li",
+      "p",
       "p"
     ],
     "or": [
@@ -896,7 +897,7 @@
       "li",
       "p"
     ],
-    "&#64namedqueries": [
+    "@namedqueries": [
       "p",
       "ol",
       "li",
@@ -908,7 +909,7 @@
       "li",
       "p"
     ],
-    "&#64namedquery's)": [
+    "@namedquery's": [
       "p",
       "ol",
       "li",
@@ -971,7 +972,7 @@
       "li",
       "a"
     ],
-    "straightforward&#64;entity&#64;namedquery(&#9;name=\"product.findallproductsbyproductname\",&#9;querystring=\"select": [
+    "straightforward@entity@namedquery(\tname=\"product.findallproductsbyproductname\",\tquerystring=\"select": [
       "p",
       "ol",
       "li"
@@ -1155,13 +1156,13 @@
       "p",
       "p"
     ],
-    "productname\")&nbsp;public": [
+    "productname\") public": [
       "p",
       "ol",
       "li",
       "pre"
     ],
-    "&#123&#9;...&#125;&nbsp;&#64;entity&#64;namedqueries(&#123;&#9;&#64;namedquery(name=\"product.findallproducts\",": [
+    "{\t..} @entity@namedqueries({\t@namedquery(name=\"product.findallproducts\",": [
       "p",
       "ol",
       "li",
@@ -1187,9 +1188,10 @@
       "p",
       "p",
       "p",
+      "p",
       "p"
     ],
-    "pro\",&#9;&#64;namedquery(name=\"product.findallproductsbyproductid\",": [
+    "pro\",\t@namedquery(name=\"product.findallproductsbyproductid\",": [
       "p",
       "ol",
       "li",
@@ -1202,13 +1204,13 @@
       "pre",
       "p"
     ],
-    "productid\"),&#9;&#64;namedquery(name=\"product.findallproductsbyproductname\",": [
+    "productid\"),\t@namedquery(name=\"product.findallproductsbyproductname\",": [
       "p",
       "ol",
       "li",
       "pre"
     ],
-    "productname\"),&#9;&#64;namedquery(name=\"product.findallproductsbyproductprice\",": [
+    "productname\"),\t@namedquery(name=\"product.findallproductsbyproductprice\",": [
       "p",
       "ol",
       "li",
@@ -1235,13 +1237,13 @@
       "pre",
       "p"
     ],
-    "maxprice\")&#125;)&nbsp;public": [
+    "maxprice\")}) public": [
       "p",
       "ol",
       "li",
       "pre"
     ],
-    "&#123&#9;...&#125;use": [
+    "{\t..}use": [
       "p",
       "ol"
     ],
@@ -2647,81 +2649,68 @@
       "li",
       "p"
     ],
-    "&#123&#9;...&#125;": [
+    "{\t..}": [
       "li",
       "pre"
     ],
     "straightforward": [
       "p"
     ],
-    "&#64entity&#64;namedquery(&#9;name=\"product.findallproductsbyproductname\",&#9;querystring=\"select": [
+    "@entity@namedquery\tname=\"product.findallproductsbyproductname\",\tquerystring=\"select": [
       "pre"
     ],
-    "&#64entity": [
+    "@entity": [
       "p",
       "p"
     ],
-    "&#64namedquery(": [
-      "p"
-    ],
-    "&#9name=\"product.findallproductsbyproductname\",": [
-      "p"
-    ],
-    "&#9querystring=\"select": [
+    "name=\"productfindallproductsbyproductname\",": [
       "p"
     ],
     "productname\"": [
-      "p"
-    ],
-    "&nbsp": [
-      "p",
-      "p",
       "p"
     ],
     "public": [
       "p",
       "p"
     ],
-    "&#123": [
+    "{": [
       "p",
       "p"
     ],
-    "&#9...": [
+    "..": [
       "p",
       "p"
     ],
-    "&#125": [
+    "}": [
+      "p",
       "p",
       "p"
     ],
-    "&#64namedqueries(&#123;": [
+    "@namedqueries{": [
       "p"
     ],
-    "&#9&#64;namedquery(name=\"product.findallproducts\",": [
+    "@namedqueryname=\"product.findallproducts\",": [
       "p"
     ],
     "pro\",": [
       "p"
     ],
-    "&#9&#64;namedquery(name=\"product.findallproductsbyproductid\",": [
+    "@namedqueryname=\"product.findallproductsbyproductid\",": [
       "p"
     ],
     "productid\"),": [
       "p"
     ],
-    "&#9&#64;namedquery(name=\"product.findallproductsbyproductname\",": [
+    "@namedqueryname=\"product.findallproductsbyproductname\",": [
       "p"
     ],
     "productname\"),": [
       "p"
     ],
-    "&#9&#64;namedquery(name=\"product.findallproductsbyproductprice\",": [
+    "@namedqueryname=\"product.findallproductsbyproductprice\",": [
       "p"
     ],
     "maxprice\")": [
-      "p"
-    ],
-    "&#125)": [
       "p"
     ],
     "queryproductsgetresultlist();": [
@@ -2826,7 +2815,7 @@
     "1.0.2/docs/manual/jpa_overview_query.html#jpa_overview_query_namedfor": [
       "ul"
     ],
-    "see&nbsphttp://www.oracle.com/technetwork/articles/javaee/jpa": [
+    "see http//www.oracle.com/technetwork/articles/javaee/jpa": [
       "ul",
       "li"
     ],

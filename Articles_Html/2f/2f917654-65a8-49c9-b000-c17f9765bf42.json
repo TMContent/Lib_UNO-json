@@ -1,6 +1,6 @@
 {
   "id": "2f917654-65a8-49c9-b000-c17f9765bf42",
-  "checksum": "7cd7c7bf55ba5f5ef944a8984c8d0479",
+  "checksum": "43e39303c0de105e6cf702c23ed87313",
   "words": {
     "0": [
       "pre",
@@ -740,7 +740,8 @@
       "p"
     ],
     "interceptors": [
-      "p"
+      "p",
+      "pre"
     ],
     "these": [
       "p",
@@ -804,10 +805,11 @@
       "p",
       "p"
     ],
-    "name=\"mycustomstack\"&nbsp;&nbsp;": [
+    "name=\"mycustomstack\"": [
       "pre"
     ],
     "..": [
+      "pre",
       "pre"
     ],
     "//": [
@@ -835,21 +837,18 @@
     "other": [
       "pre"
     ],
-    "interceptors&nbsp&nbsp;": [
-      "pre"
-    ],
     "ref": [
       "pre",
       "pre"
     ],
-    "name=\"validation\"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "name=\"validation\"": [
       "pre"
     ],
     "param": [
       "pre",
       "pre"
     ],
-    "name=\"excludemethods\"input,back,cancel,browse</param>&nbsp;&nbsp;": [
+    "name=\"excludemethods\"input,back,cancel,browse</param>": [
       "pre",
       "pre"
     ],
@@ -857,10 +856,10 @@
       "pre",
       "pre"
     ],
-    "ref>&nbsp;&nbsp;": [
+    "ref>": [
       "pre"
     ],
-    "name=\"workflow\"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "name=\"workflow\"": [
       "pre"
     ],
     "ref></interceptor": [
@@ -1007,20 +1006,18 @@
       "pre",
       "pre"
     ],
-    "&#123&nbsp;&nbsp;&nbsp;": [
-      "pre"
-    ],
-    "..&nbsp;&nbsp;&nbsp;": [
+    "{": [
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
       "pre"
     ],
     "void": [
-      "pre",
-      "pre",
-      "pre"
-    ],
-    "&#123&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
-      "pre",
-      "pre",
       "pre",
       "pre",
       "pre"
@@ -1029,10 +1026,6 @@
       "pre"
     ],
     "==": [
-      "pre",
-      "pre"
-    ],
-    "&#123&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
       "pre",
       "pre"
     ],
@@ -1046,7 +1039,7 @@
       "pre",
       "pre"
     ],
-    "required\";&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "required\";": [
       "pre",
       "pre"
     ],
@@ -1059,11 +1052,14 @@
     "\"password": [
       "pre"
     ],
-    "&#125&nbsp;&nbsp;&nbsp;": [
+    "}": [
+      "pre",
+      "pre",
+      "pre",
       "pre",
       "pre"
     ],
-    "..&#125;": [
+    "..}": [
       "pre"
     ],
     "involves": [
@@ -1197,7 +1193,7 @@
     "exmaple": [
       "p"
     ],
-    "validators>&nbsp;": [
+    "validators>": [
       "pre"
     ],
     "field": [
@@ -1206,10 +1202,10 @@
       "pre",
       "pre"
     ],
-    "name=\"uname\"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "name=\"uname\"": [
       "pre"
     ],
-    "type=\"required\"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "type=\"required\"": [
       "pre",
       "pre"
     ],
@@ -1242,24 +1238,24 @@
       "li",
       "a"
     ],
-    "name</message>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "name</message>": [
       "pre"
     ],
     "/field": [
       "pre",
       "pre"
     ],
-    "validator>&nbsp;": [
+    "validator>": [
       "pre",
       "pre"
     ],
-    "/field>&nbsp;": [
+    "/field>": [
       "pre"
     ],
-    "name=\"pw\"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "name=\"pw\"": [
       "pre"
     ],
-    "password</message>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "password</message>": [
       "pre"
     ],
     "/field></validators>": [
@@ -1290,16 +1286,6 @@
     "quizaction": [
       "pre"
     ],
-    "&#123": [
-      "pre"
-    ],
-    "&nbsp&nbsp;&nbsp;": [
-      "pre",
-      "pre",
-      "pre",
-      "pre",
-      "pre"
-    ],
     "private": [
       "pre",
       "pre"
@@ -1310,12 +1296,15 @@
       "pre",
       "pre"
     ],
-    "uname&nbsp;&nbsp;&nbsp;": [
+    "uname": [
+      "pre",
       "pre",
       "pre",
       "pre"
     ],
     "pw": [
+      "pre",
+      "pre",
       "pre",
       "pre"
     ],
@@ -1326,15 +1315,7 @@
       "pre",
       "pre"
     ],
-    "&#125": [
-      "pre",
-      "pre",
-      "pre"
-    ],
     "setunamestring": [
-      "pre"
-    ],
-    "uname": [
       "pre"
     ],
     "thisuname": [
@@ -1347,17 +1328,13 @@
     "getpw)": [
       "pre"
     ],
-    "pw&nbsp;&nbsp;&nbsp;": [
-      "pre",
-      "pre"
-    ],
     "setpwstring": [
       "pre"
     ],
     "thispw": [
       "pre"
     ],
-    "&#125&#125;": [
+    "}}": [
       "pre"
     ],
     "might": [
@@ -1380,7 +1357,7 @@
     "s:form": [
       "pre"
     ],
-    "method=\"post\"&nbsp;&nbsp;&nbsp;": [
+    "method=\"post\"": [
       "pre"
     ],
     "s:textfield": [
@@ -1394,13 +1371,13 @@
       "pre",
       "pre"
     ],
-    "name=\"uname\"/&nbsp;&nbsp;&nbsp;": [
+    "name=\"uname\"/": [
       "pre"
     ],
     "label=\"password": [
       "pre"
     ],
-    "name=\"pw\"/&nbsp;&nbsp;&nbsp;": [
+    "name=\"pw\"/": [
       "pre"
     ],
     "s:submit/></s:form>": [
@@ -1415,7 +1392,7 @@
     "name=\"helloworld\"": [
       "pre"
     ],
-    "class=\"tutorialhelloworld\">&nbsp;&nbsp;&nbsp;": [
+    "class=\"tutorialhelloworld\">": [
       "pre"
     ],
     "result": [
@@ -1424,10 +1401,10 @@
       "pre",
       "p"
     ],
-    "name=\"success\"/home.jsp</result>&nbsp;&nbsp;&nbsp;": [
+    "name=\"success\"/home.jsp</result>": [
       "pre"
     ],
-    "name=\"error\"/error.jsp</result>&nbsp;&nbsp;&nbsp;": [
+    "name=\"error\"/error.jsp</result>": [
       "pre"
     ],
     "name=\"input\"/login.jsp</result></action>": [

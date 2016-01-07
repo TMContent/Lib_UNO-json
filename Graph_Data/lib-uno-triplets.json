@@ -33770,7 +33770,7 @@
     "object": "Catch Exceptions"
   },
   {
-    "subject": "query-c692401e7fa4",
+    "subject": "query-821a3252b8c2",
     "predicate": "title",
     "object": "Category"
   },
@@ -52617,7 +52617,7 @@
   {
     "subject": "article-24daa22eefc4",
     "predicate": "summary",
-    "object": "Ensure that all echoed input is first encoded.Encoding echoed input prevents injection attacks such as cross-site scripting.An application can take input via various&nbsp;sources, such as a web interf"
+    "object": "Ensure that all echoed input is first encoded.Encoding echoed input prevents injection attacks such as cross-site scripting.An application can take input via various sources, such as a web interface,"
   },
   {
     "subject": "article-ea7e8ac11d0a",
@@ -64845,11 +64845,6 @@
     "object": "If you need to restrict access to an instance of AccountManager that uses OAuth 2 to authenticate with a cloud-based service, use the method getPackageManager().checkSignatures(UID1, UID2) to test whe"
   },
   {
-    "subject": "article-b2524c6c35d4",
-    "predicate": "summary",
-    "object": "If you&nbsp;are caching data,&nbsp;ensure that sensitive data is not cached.If sensitive data is cached, the&nbsp;client machine will have serious security implications as interesting data will be ava"
-  },
-  {
     "subject": "article-daa6f814c57b",
     "predicate": "summary",
     "object": "If your application relies on SQL authentication, credentials must be protected in configuration files. Use a protected configuration provider to encrypt connection strings before storing them in conf"
@@ -64857,7 +64852,7 @@
   {
     "subject": "article-14084730c279",
     "predicate": "summary",
-    "object": "If your are&nbsp;manipulating secrets, minimize exposure of secrets in memory. When manipulating secrets, consider how the secret data is stored in memory. How long is the secret data retained in clea"
+    "object": "If your are manipulating secrets, minimize exposure of secrets in memory. When manipulating secrets, consider how the secret data is stored in memory. How long is the secret data retained in clear-tex"
   },
   {
     "subject": "article-3c7d5a066fe7",
@@ -64868,6 +64863,11 @@
     "subject": "article-68c34df9856a",
     "predicate": "summary",
     "object": "If your function takes parameters that are pointers, check for null before dereferencing the pointer. Dereferencing a null pointer can lead to an application crash or other instability issues.In any C"
+  },
+  {
+    "subject": "article-b2524c6c35d4",
+    "predicate": "summary",
+    "object": "If you are caching data, ensure that sensitive data is not cached.If sensitive data is cached, the client machine will have serious security implications as interesting data will be available to attac"
   },
   {
     "subject": "article-f4a42ea349f3",
@@ -84445,22 +84445,22 @@
     "object": "Messages Are Not Evaluated as Code"
   },
   {
-    "subject": "query-16aeaddf130d",
+    "subject": "query-3ccb7085477c",
     "predicate": "is",
     "object": "Metadata"
   },
   {
-    "subject": "query-4aa1005002ea",
+    "subject": "query-403d88ce4df2",
     "predicate": "is",
     "object": "Metadata"
   },
   {
-    "subject": "query-ac86ae1bbf8d",
+    "subject": "query-821a3252b8c2",
     "predicate": "is",
     "object": "Metadata"
   },
   {
-    "subject": "query-c692401e7fa4",
+    "subject": "query-a9466698ca46",
     "predicate": "is",
     "object": "Metadata"
   },
@@ -88140,7 +88140,7 @@
     "object": "Personal Firewalls Are Installed on Employees' Computers"
   },
   {
-    "subject": "query-4aa1005002ea",
+    "subject": "query-3ccb7085477c",
     "predicate": "title",
     "object": "Phase"
   },
@@ -89585,11 +89585,6 @@
     "object": "Query"
   },
   {
-    "subject": "query-16aeaddf130d",
-    "predicate": "is",
-    "object": "Query"
-  },
-  {
     "subject": "query-17edeb3daca1",
     "predicate": "is",
     "object": "Query"
@@ -89885,6 +89880,11 @@
     "object": "Query"
   },
   {
+    "subject": "query-3ccb7085477c",
+    "predicate": "is",
+    "object": "Query"
+  },
+  {
     "subject": "query-3d61a80cb9bf",
     "predicate": "is",
     "object": "Query"
@@ -89911,6 +89911,11 @@
   },
   {
     "subject": "query-3fb00c00b665",
+    "predicate": "is",
+    "object": "Query"
+  },
+  {
+    "subject": "query-403d88ce4df2",
     "predicate": "is",
     "object": "Query"
   },
@@ -90016,11 +90021,6 @@
   },
   {
     "subject": "query-4a86f39beed3",
-    "predicate": "is",
-    "object": "Query"
-  },
-  {
-    "subject": "query-4aa1005002ea",
     "predicate": "is",
     "object": "Query"
   },
@@ -90415,6 +90415,11 @@
     "object": "Query"
   },
   {
+    "subject": "query-821a3252b8c2",
+    "predicate": "is",
+    "object": "Query"
+  },
+  {
     "subject": "query-82b560b86409",
     "predicate": "is",
     "object": "Query"
@@ -90775,6 +90780,11 @@
     "object": "Query"
   },
   {
+    "subject": "query-a9466698ca46",
+    "predicate": "is",
+    "object": "Query"
+  },
+  {
     "subject": "query-aa02d5c1830f",
     "predicate": "is",
     "object": "Query"
@@ -90796,11 +90806,6 @@
   },
   {
     "subject": "query-ab8ffcaca571",
-    "predicate": "is",
-    "object": "Query"
-  },
-  {
-    "subject": "query-ac86ae1bbf8d",
     "predicate": "is",
     "object": "Query"
   },
@@ -91011,11 +91016,6 @@
   },
   {
     "subject": "query-c60dc25c6ae9",
-    "predicate": "is",
-    "object": "Query"
-  },
-  {
-    "subject": "query-c692401e7fa4",
     "predicate": "is",
     "object": "Query"
   },
@@ -91617,7 +91617,7 @@
   {
     "subject": "article-a026dd788356",
     "predicate": "summary",
-    "object": "Reduce the lifetime of sessions to mitigate the risk of session hijacking and replay attacks.Even when using TLS, there's still&nbsp;a risk of session hijacking and replay; there are lots of other out"
+    "object": "Reduce the lifetime of sessions to mitigate the risk of session hijacking and replay attacks.Even when using TLS, there's still a risk of session hijacking and replay; there are lots of other out-of-b"
   },
   {
     "subject": "article-84d6db219e24",
@@ -104080,7 +104080,7 @@
     "object": "Technology,Independent"
   },
   {
-    "subject": "query-ac86ae1bbf8d",
+    "subject": "query-403d88ce4df2",
     "predicate": "title",
     "object": "Technology"
   },
@@ -106060,7 +106060,7 @@
     "object": "Turn off debugging information upon release. Scrutinize any error message or other data for any debug information that an attacker could use to leverage a further attack. Debugging data should be remo"
   },
   {
-    "subject": "query-16aeaddf130d",
+    "subject": "query-a9466698ca46",
     "predicate": "title",
     "object": "Type"
   },
@@ -165555,12 +165555,12 @@
     "object": "query-2206d2405d79"
   },
   {
-    "subject": "query-ac86ae1bbf8d",
+    "subject": "query-403d88ce4df2",
     "predicate": "contains-query",
     "object": "query-2379dc42095d"
   },
   {
-    "subject": "query-16aeaddf130d",
+    "subject": "query-a9466698ca46",
     "predicate": "contains-query",
     "object": "query-23fcbe229458"
   },
@@ -165790,7 +165790,7 @@
     "object": "query-3dace4023938"
   },
   {
-    "subject": "query-ac86ae1bbf8d",
+    "subject": "query-403d88ce4df2",
     "predicate": "contains-query",
     "object": "query-3e54c333d53a"
   },
@@ -165915,7 +165915,7 @@
     "object": "query-4b1585c4e33a"
   },
   {
-    "subject": "query-ac86ae1bbf8d",
+    "subject": "query-403d88ce4df2",
     "predicate": "contains-query",
     "object": "query-4b527304f529"
   },
@@ -165975,7 +165975,7 @@
     "object": "query-52bc70072db2"
   },
   {
-    "subject": "query-16aeaddf130d",
+    "subject": "query-a9466698ca46",
     "predicate": "contains-query",
     "object": "query-52d32dc0410d"
   },
@@ -166005,7 +166005,7 @@
     "object": "query-54bb2015d62e"
   },
   {
-    "subject": "query-ac86ae1bbf8d",
+    "subject": "query-403d88ce4df2",
     "predicate": "contains-query",
     "object": "query-54f22f114424"
   },
@@ -166040,7 +166040,7 @@
     "object": "query-5cb04975aea1"
   },
   {
-    "subject": "query-4aa1005002ea",
+    "subject": "query-3ccb7085477c",
     "predicate": "contains-query",
     "object": "query-5cde247bbded"
   },
@@ -166105,12 +166105,12 @@
     "object": "query-663099526149"
   },
   {
-    "subject": "query-ac86ae1bbf8d",
+    "subject": "query-403d88ce4df2",
     "predicate": "contains-query",
     "object": "query-6687b85cb9af"
   },
   {
-    "subject": "query-16aeaddf130d",
+    "subject": "query-a9466698ca46",
     "predicate": "contains-query",
     "object": "query-670dbd0c22c7"
   },
@@ -166175,7 +166175,7 @@
     "object": "query-6f0946ab5b19"
   },
   {
-    "subject": "query-ac86ae1bbf8d",
+    "subject": "query-403d88ce4df2",
     "predicate": "contains-query",
     "object": "query-6f96508587cd"
   },
@@ -166240,7 +166240,7 @@
     "object": "query-7513d55ff2b7"
   },
   {
-    "subject": "query-ac86ae1bbf8d",
+    "subject": "query-403d88ce4df2",
     "predicate": "contains-query",
     "object": "query-75e0a16c7582"
   },
@@ -166255,7 +166255,7 @@
     "object": "query-7949bca9638e"
   },
   {
-    "subject": "query-16aeaddf130d",
+    "subject": "query-a9466698ca46",
     "predicate": "contains-query",
     "object": "query-797eab466d9e"
   },
@@ -166340,7 +166340,7 @@
     "object": "query-890c618e9b8b"
   },
   {
-    "subject": "query-4aa1005002ea",
+    "subject": "query-3ccb7085477c",
     "predicate": "contains-query",
     "object": "query-89a417d8ce59"
   },
@@ -166495,7 +166495,7 @@
     "object": "query-98b1a9d4dc82"
   },
   {
-    "subject": "query-ac86ae1bbf8d",
+    "subject": "query-403d88ce4df2",
     "predicate": "contains-query",
     "object": "query-99baeab17b26"
   },
@@ -166575,7 +166575,7 @@
     "object": "query-a224cbb2cc3b"
   },
   {
-    "subject": "query-16aeaddf130d",
+    "subject": "query-a9466698ca46",
     "predicate": "contains-query",
     "object": "query-a229068a66fa"
   },
@@ -166610,7 +166610,7 @@
     "object": "query-a4449c26f146"
   },
   {
-    "subject": "query-4aa1005002ea",
+    "subject": "query-3ccb7085477c",
     "predicate": "contains-query",
     "object": "query-a531c9597899"
   },
@@ -166695,7 +166695,7 @@
     "object": "query-b0368fd14aad"
   },
   {
-    "subject": "query-ac86ae1bbf8d",
+    "subject": "query-403d88ce4df2",
     "predicate": "contains-query",
     "object": "query-b0b492582d50"
   },
@@ -166705,7 +166705,7 @@
     "object": "query-b10bab86d923"
   },
   {
-    "subject": "query-16aeaddf130d",
+    "subject": "query-a9466698ca46",
     "predicate": "contains-query",
     "object": "query-b155c57e66c6"
   },
@@ -166715,7 +166715,7 @@
     "object": "query-b180d5d8c4ed"
   },
   {
-    "subject": "query-4aa1005002ea",
+    "subject": "query-3ccb7085477c",
     "predicate": "contains-query",
     "object": "query-b213c761eee4"
   },
@@ -166850,7 +166850,7 @@
     "object": "query-c1aa57bf3ac4"
   },
   {
-    "subject": "query-ac86ae1bbf8d",
+    "subject": "query-403d88ce4df2",
     "predicate": "contains-query",
     "object": "query-c2c437fb4168"
   },
@@ -166915,7 +166915,7 @@
     "object": "query-ca26efe5c839"
   },
   {
-    "subject": "query-16aeaddf130d",
+    "subject": "query-a9466698ca46",
     "predicate": "contains-query",
     "object": "query-cab5946af82b"
   },
@@ -167320,7 +167320,7 @@
     "object": "query-f77a44091a0c"
   },
   {
-    "subject": "query-ac86ae1bbf8d",
+    "subject": "query-403d88ce4df2",
     "predicate": "contains-query",
     "object": "query-f7da07492d80"
   },
@@ -167335,7 +167335,7 @@
     "object": "query-f8e4c9926792"
   },
   {
-    "subject": "query-ac86ae1bbf8d",
+    "subject": "query-403d88ce4df2",
     "predicate": "contains-query",
     "object": "query-f8f7a95b29e2"
   },

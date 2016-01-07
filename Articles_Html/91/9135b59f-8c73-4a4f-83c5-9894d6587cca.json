@@ -1,6 +1,6 @@
 {
   "id": "9135b59f-8c73-4a4f-83c5-9894d6587cca",
-  "checksum": "832e1bac6b7aa2367b33bc01e58486cf",
+  "checksum": "8a3a1b62714cb0f2204036d210701c42",
   "words": {
     "1": [
       "ul",
@@ -529,7 +529,7 @@
     "action=\"mybookaction\"": [
       "pre"
     ],
-    "method=\"add\"&nbsp;": [
+    "method=\"add\"": [
       "pre"
     ],
     "s:param": [
@@ -538,10 +538,10 @@
     "name=\"id\"": [
       "pre"
     ],
-    "value=\"&#36&#123;bookid&#125;\"/></s:url><s:a": [
+    "value=\"${bookid}\"/</s:url><s:a": [
       "pre"
     ],
-    "href=\"&#37&#123;addbookurl&#125;\">add</s:a>": [
+    "href=\"%{addbookurl}\"add</s:a>": [
       "pre"
     ],
     "note": [
@@ -864,7 +864,7 @@
       "ul",
       "li"
     ],
-    "https//www.owasp.org/index.php/xss_&#37;28cross_site_scripting&#37;29_prevention_cheat_sheet": [
+    "https//www.owasp.org/index.php/xss_%28cross_site_scripting%29_prevention_cheat_sheet": [
       "ul",
       "li",
       "a"
@@ -1023,8 +1023,8 @@
       "text": "http://struts.apache.org/2.0.14/docs/tag-reference.html"
     },
     {
-      "href": "https://www.owasp.org/index.php/XSS_&#37;28Cross_Site_Scripting&#37;29_Prevention_Cheat_Sheet",
-      "text": "https://www.owasp.org/index.php/XSS_&#37;28Cross_Site_Scripting&#37;29_Prevention_Cheat_Sheet"
+      "href": "https://www.owasp.org/index.php/XSS_%28Cross_Site_Scripting%29_Prevention_Cheat_Sheet",
+      "text": "https://www.owasp.org/index.php/XSS_%28Cross_Site_Scripting%29_Prevention_Cheat_Sheet"
     },
     {
       "href": "/article/f83b953a-9b0c-406a-b274-9b2962d9c4e7",

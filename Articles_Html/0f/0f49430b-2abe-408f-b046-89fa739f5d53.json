@@ -1,6 +1,6 @@
 {
   "id": "0f49430b-2abe-408f-b046-89fa739f5d53",
-  "checksum": "e7ad2b5ed39774ed87ac34a32dab3e20",
+  "checksum": "921930856b93774207b7668948a3e0e1",
   "words": {
     "1": [
       "ul",
@@ -881,9 +881,12 @@
     ],
     "required=\"true\"": [
       "ol",
+      "ol",
       "li",
       "p",
-      "em"
+      "em",
+      "li",
+      "pre"
     ],
     "ensure": [
       "ol",
@@ -911,8 +914,11 @@
     ],
     "value": [
       "ol",
+      "ol",
       "li",
-      "p"
+      "p",
+      "li",
+      "pre"
     ],
     "when": [
       "ol",
@@ -1010,7 +1016,7 @@
       "li",
       "pre"
     ],
-    "value=\"#&#123mybean.somefield&#125;\"": [
+    "value=\"#{mybeansomefield}\"": [
       "ol",
       "ol",
       "li",
@@ -1087,11 +1093,6 @@
       "ol",
       "li",
       "p"
-    ],
-    "required=\"true\"&nbsp;&nbsp;&nbsp;": [
-      "ol",
-      "li",
-      "pre"
     ],
     "f:validatelength": [
       "ol",
@@ -1349,12 +1350,12 @@
       "li",
       "p"
     ],
-    "value=\"#&#123mybean.myfield&#125;\"": [
+    "value=\"#{mybeanmyfield}\"": [
       "ol",
       "li",
       "pre"
     ],
-    "validator=\"#&#123mybean.validatemyfield&#125;\"": [
+    "validator=\"#{mybeanvalidatemyfield}\"": [
       "ol",
       "li",
       "pre"
@@ -1508,9 +1509,15 @@
       "li",
       "pre"
     ],
-    "&#123&nbsp;&nbsp;&nbsp;": [
+    "{": [
+      "ol",
+      "ol",
       "ol",
       "li",
+      "li",
+      "li",
+      "pre",
+      "pre",
       "pre"
     ],
     "public": [
@@ -1548,17 +1555,7 @@
       "li",
       "pre"
     ],
-    "value&nbsp;&nbsp;&nbsp;throws": [
-      "ol",
-      "li",
-      "pre"
-    ],
-    "&#123": [
-      "ol",
-      "li",
-      "pre"
-    ],
-    "&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "value   throws": [
       "ol",
       "li",
       "pre"
@@ -1586,17 +1583,7 @@
       "li",
       "pre"
     ],
-    "value&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
-      "ol",
-      "li",
-      "pre"
-    ],
-    "if&#33;myfield.contains(\"&#37;\"))": [
-      "ol",
-      "li",
-      "pre"
-    ],
-    "&#123&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "if!myfield.contains(\"%\"))": [
       "ol",
       "li",
       "pre"
@@ -1619,12 +1606,12 @@
       "pre",
       "pre"
     ],
-    "facesmessage);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "facesmessage);": [
       "ol",
       "li",
       "pre"
     ],
-    "messagesetseverity(facesmessage.severity_error);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "messagesetseverity(facesmessage.severity_error);": [
       "ol",
       "li",
       "pre"
@@ -1634,7 +1621,7 @@
       "li",
       "pre"
     ],
-    "format\");&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "format\");": [
       "ol",
       "li",
       "pre"
@@ -1654,7 +1641,7 @@
       "li",
       "pre"
     ],
-    "here\");&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "here\");": [
       "ol",
       "li",
       "pre"
@@ -1664,22 +1651,22 @@
       "li",
       "pre"
     ],
-    "message;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "message;": [
       "ol",
       "li",
       "pre"
     ],
-    "validatorexceptionmessage);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;": [
+    "validatorexceptionmessage);": [
       "ol",
       "li",
       "pre"
     ],
-    "&#125&nbsp;&nbsp;&nbsp;": [
+    "}": [
       "ol",
       "li",
       "pre"
     ],
-    "&#125&#125;": [
+    "}}": [
       "ol",
       "li",
       "pre"
@@ -1736,7 +1723,7 @@
       "li",
       "p"
     ],
-    "validator>&nbsp;<validator": [
+    "validator> <validator": [
       "ol",
       "li",
       "pre"
@@ -1746,7 +1733,7 @@
       "li",
       "pre"
     ],
-    "id>&nbsp;<validator": [
+    "id> <validator": [
       "ol",
       "li",
       "pre"
@@ -1789,7 +1776,7 @@
       "li",
       "pre"
     ],
-    "value=\"#&#123mybean.myfield&#125;\">&nbsp;<f:validator": [
+    "value=\"#{mybeanmyfield}\"> <f:validator": [
       "ol",
       "li",
       "pre"
@@ -2009,7 +1996,7 @@
     "validation.pdffor": [
       "ul"
     ],
-    "about&nbspdata": [
+    "about data": [
       "ul",
       "li"
     ],
@@ -2017,7 +2004,7 @@
       "ul",
       "li"
     ],
-    "see&nbsphttp://www.ibm.com/developerworks/java/library/j": [
+    "see http//www.ibm.com/developerworks/java/library/j": [
       "ul",
       "li"
     ],

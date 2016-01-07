@@ -1,6 +1,6 @@
 {
   "id": "e3d7a7be-68a1-47ab-a515-54053d9171a4",
-  "checksum": "27969b1eb83c0ac6fd71dcc087682538",
+  "checksum": "d9ac1177b0b56b8714d3d6b2c91cf8f5",
   "words": {
     "applies": [
       "h1"
@@ -500,7 +500,15 @@
       "ol",
       "ol",
       "ol",
+      "ol",
+      "ol",
       "li",
+      "p",
+      "li",
+      "li",
+      "pre",
+      "pre",
+      "p",
       "p",
       "li",
       "li",
@@ -835,6 +843,7 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "li",
@@ -845,6 +854,9 @@
       "pre",
       "pre",
       "p",
+      "p",
+      "li",
+      "pre",
       "p"
     ],
     "your": [
@@ -852,9 +864,13 @@
       "li",
       "p"
     ],
-    "&#64namedquery": [
+    "@namedquery": [
+      "ol",
       "ol",
       "li",
+      "li",
+      "p",
+      "pre",
       "p"
     ],
     "or": [
@@ -862,7 +878,7 @@
       "li",
       "p"
     ],
-    "&#64namedqueries": [
+    "@namedqueries": [
       "ol",
       "li",
       "p"
@@ -872,7 +888,7 @@
       "li",
       "p"
     ],
-    "&#64namedquery's)": [
+    "@namedquery's": [
       "ol",
       "li",
       "p"
@@ -933,7 +949,7 @@
       "li",
       "p"
     ],
-    "&#64entity": [
+    "@entity": [
       "ol",
       "ol",
       "li",
@@ -943,22 +959,32 @@
       "p",
       "p"
     ],
-    "&#64namedquery(": [
+    "name=\"productfindallproductsbyproductname\",": [
       "ol",
       "li",
       "pre",
       "p"
     ],
-    "&#9name=\"product.findallproductsbyproductname\",": [
+    "querystring=\"from": [
+      "ol",
+      "ol",
+      "ol",
+      "ol",
       "ol",
       "li",
-      "pre",
-      "p"
-    ],
-    "&#9querystring=\"from": [
-      "ol",
+      "li",
+      "li",
+      "li",
       "li",
       "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "p",
+      "p",
+      "p",
+      "p",
       "p"
     ],
     "product": [
@@ -1120,20 +1146,6 @@
       "pre",
       "p"
     ],
-    "&nbsp": [
-      "ol",
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "li",
-      "pre",
-      "pre",
-      "pre",
-      "p",
-      "p",
-      "p"
-    ],
     "public": [
       "ol",
       "ol",
@@ -1144,7 +1156,7 @@
       "p",
       "p"
     ],
-    "&#123": [
+    "{": [
       "ol",
       "ol",
       "li",
@@ -1154,17 +1166,8 @@
       "p",
       "p"
     ],
-    "&#9...": [
+    "..": [
       "ol",
-      "ol",
-      "li",
-      "li",
-      "pre",
-      "pre",
-      "p",
-      "p"
-    ],
-    "&#125": [
       "ol",
       "ol",
       "li",
@@ -1172,36 +1175,35 @@
       "pre",
       "pre",
       "p",
-      "p"
-    ],
-    "&#64namedqueries(&#123;": [
-      "ol",
+      "p",
       "li",
       "pre",
       "p"
     ],
-    "&#9&#64;namedquery(name=\"product.findallproducts\",": [
+    "}": [
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "li",
+      "pre",
+      "pre",
+      "pre",
+      "p",
+      "p",
+      "p"
+    ],
+    "@namedqueries{": [
       "ol",
       "li",
       "pre",
       "p"
     ],
-    "querystring=\"from": [
-      "ol",
-      "ol",
-      "ol",
+    "@namedqueryname=\"product.findallproducts\",": [
       "ol",
       "li",
-      "li",
-      "li",
-      "li",
       "pre",
-      "pre",
-      "pre",
-      "pre",
-      "p",
-      "p",
-      "p",
       "p"
     ],
     "pro\",": [
@@ -1210,7 +1212,7 @@
       "pre",
       "p"
     ],
-    "&#9&#64;namedquery(name=\"product.findallproductsbyproductid\",": [
+    "@namedqueryname=\"product.findallproductsbyproductid\",": [
       "ol",
       "li",
       "pre",
@@ -1228,7 +1230,7 @@
       "pre",
       "p"
     ],
-    "&#9&#64;namedquery(name=\"product.findallproductsbyproductname\",": [
+    "@namedqueryname=\"product.findallproductsbyproductname\",": [
       "ol",
       "li",
       "pre",
@@ -1240,7 +1242,7 @@
       "pre",
       "p"
     ],
-    "&#9&#64;namedquery(name=\"product.findallproductsbyproductprice\",": [
+    "@namedqueryname=\"product.findallproductsbyproductprice\",": [
       "ol",
       "li",
       "pre",
@@ -1277,12 +1279,6 @@
       "p"
     ],
     "maxprice\")": [
-      "ol",
-      "li",
-      "pre",
-      "p"
-    ],
-    "&#125)": [
       "ol",
       "li",
       "pre",
@@ -1355,7 +1351,7 @@
       "li",
       "p"
     ],
-    "&#33;": [
+    "!": [
       "ol",
       "li",
       "pre",
@@ -1839,12 +1835,6 @@
       "p",
       "p"
     ],
-    "&#9<class": [
-      "ol",
-      "li",
-      "pre",
-      "p"
-    ],
     "name=\"commyapp.domain.product\"": [
       "ol",
       "li",
@@ -1857,7 +1847,7 @@
       "pre",
       "p"
     ],
-    "&#9&#9;<id": [
+    "id": [
       "ol",
       "li",
       "pre",
@@ -1881,7 +1871,7 @@
       "p",
       "p"
     ],
-    "&#9&#9;<property": [
+    "property": [
       "ol",
       "ol",
       "ol",
@@ -1895,26 +1885,10 @@
       "p",
       "p"
     ],
-    "&#9&#9;...": [
+    "/class>": [
       "ol",
       "li",
       "pre",
-      "p"
-    ],
-    "&#9</class>": [
-      "ol",
-      "li",
-      "pre",
-      "p"
-    ],
-    "&#9<query": [
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "pre",
-      "pre",
-      "p",
       "p"
     ],
     "name=\"productfindallproductsbyproductname\">": [
@@ -1923,7 +1897,7 @@
       "pre",
       "p"
     ],
-    "&#9&#9;<&#33;&#91;cdata&#91;from": [
+    "![cdata[from": [
       "ol",
       "ol",
       "li",
@@ -1933,13 +1907,13 @@
       "p",
       "p"
     ],
-    "productname&#93;&#93;>": [
+    "productname]]>": [
       "ol",
       "li",
       "pre",
       "p"
     ],
-    "&#9</query>": [
+    "/query>": [
       "ol",
       "ol",
       "li",
@@ -1955,13 +1929,13 @@
       "pre",
       "p"
     ],
-    "maxprice&#93;&#93;>": [
+    "maxprice]]>": [
       "ol",
       "li",
       "pre",
       "p"
     ],
-    "&#9....": [
+    "...": [
       "ol",
       "li",
       "pre",
