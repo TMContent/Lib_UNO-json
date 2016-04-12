@@ -1,0 +1,26 @@
+<h2>Applies To</h2>
+<ul>
+<li>Ruby</li>
+</ul>
+<h2>What to Do</h2>
+<p>Use <code>URI.escape</code> to URL encode data that gets included in HTTP response headers.</p>
+<h2>Why</h2>
+<p>If an application accepts user input and includes it in HTTP response headers, there is a potential response-splitting vulnerability. Data in HTTP response headers should be URL-encoded or sanitized to mitigate this occurrence.</p>
+<h2>How</h2>
+<p>Use <code>URI.escape</code> to escape the string and replace all unsafe characters with codes. In Ruby, encode is an alias for escape. These steps sanitize the data in response headers:</p>
+<ol>
+<li>
+<p><strong>Identify all data included in HTTP response headers.</strong> Identify programming functions that include data in HTTP response headers. Search your code for calls to these functions in order to find code instances that add data to HTTP response headers.</p>
+</li>
+<li>
+<p><strong>Validate all data included in HTTP response headers.</strong> Use positive validation routines to check all data that gets included in HTTP response headers.</p>
+</li>
+<li>
+<p><strong>Encode all data included in HTTP response headers.</strong> Use <code>URI::Escape</code> to encode data that gets included in HTTP response headers:</p>
+<pre><code> require 'uri'
+ enc_uri = URI.escape(&quot;http://example.com/?a=\11\15&quot;)
+ p enc_uri
+ # =&gt; &quot;http://example.com/?a=%09%0D&quot;
+</code></pre>
+</li>
+</ol>

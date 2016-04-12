@@ -1,0 +1,37 @@
+<h2>Applies To</h2>
+<ul>
+<li>Ruby</li>
+</ul>
+<h2>What to Do</h2>
+<p>When the authenticated user logs out, destroy (invalidate) the application session by using the delete.session method.</p>
+<h2>Why</h2>
+<p>The application provides a logout option so that the user can signal their intent to stop the authenticated session. This makes it more difficult for an attacker to hijack the user session.</p>
+<p>Web applications must provide a visible and easily accessible logout (logoff, exit, or close session) button that is available on each page.  This grants the authenticated user a way to manually close the session.</p>
+<h2>When</h2>
+<p>Always destroy the session when the user requests to logout.</p>
+<h2>How</h2>
+<p>To invalidate sessions when users logout:</p>
+<ol>
+<li>
+<p><strong>Find the logout function.</strong> Find all instances in the application where logout is required, such as a logout button or menu choice on a page.</p>
+</li>
+<li>
+<p><strong>Add <code>log_out</code> method to helper.</strong> Add code for the <code>log_out</code> method to <em>sessions_helper</em> module.</p>
+<pre><code> def log_out
+     session.delete(:user_id)
+     @current_user = nil
+ end
+</code></pre>
+</li>
+<li>
+<p><strong>Destroy the session.</strong> Add the <code>log_out</code> method to the <code>destroy</code> action in the <em>sessions_controller</em> module:</p>
+<pre><code> def destroy
+     log_out
+     redirect_to root_url
+ end
+</code></pre>
+</li>
+<li>
+<p><strong>Make calls to the <code>destroy</code> action.</strong> Where logout is manually requested by the user, use the <code>destroy</code> action.</p>
+</li>
+</ol>

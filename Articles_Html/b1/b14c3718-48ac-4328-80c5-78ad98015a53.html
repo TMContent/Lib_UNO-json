@@ -1,0 +1,44 @@
+<h2>Applies To</h2>
+<ul>
+<li>Ruby</li>
+</ul>
+<h2>What to Do</h2>
+<p>Use the X-Frame-Options response header to prevent clickjacking attacks.</p>
+<h2>Why</h2>
+<p>The X-Frame-Options response header instructs the browser to disallow the use of iframes across domains or limit their use to the same origin. This protects against clickjacking, a malicious technique that uses iframes to overlay or hide a clickable link or button on a web page. In a clickjacking attack, a user thinks he or she is clicking the intended link but actually clicks the overlaid iframe link, thus sending data to an unintended website.</p>
+<h2>When</h2>
+<p>Use this guideline when implementing Ruby applications where pages are not intended for rendering in a frame or iframe. The programmatic framework used with Ruby determines whether mitigation is required. With Rails 3, use the <code>secure_headers</code> RubyGem to mitigate several vulnerabilities, including clickjacking. Rails 4 sends the X-Frame-Options header by default, and does not require mitigation.</p>
+<h2>How</h2>
+<p>If you are using the Rails 3 framework use the SecureHeaders RubyGem to add an X-Frame-Options header:</p>
+<ol>
+<li>
+<p><strong>Identify code which renders pages.</strong> Find all instances where pages are rendered, and examine whether headers are being modified. Some of this functionality may need to be removed or modified.</p>
+</li>
+<li>
+<p><strong>Add the configuration for SecureHeaders.</strong> Place the following code in an initializer. Note that the configuration is set to <code>DENY</code>:</p>
+<pre><code> ::SecureHeaders::Configuration.configure do |config|
+    # . . .
+    config.x_frame_options = 'DENY'
+    # . . .
+ end
+</code></pre>
+</li>
+<li>
+<p><strong>Edit the controller.</strong> Include the following code in <em>application_controller</em> to set security-related headers automatically, and apply x_frame_options:</p>
+<pre><code> class ApplicationController &lt; ActionController::Base
+    # . . .
+    ensure_security_headers
+    # . . .
+ end
+</code></pre>
+</li>
+</ol>
+<p>If you are using the Rails 4 framework, the application automatically sends the <code>X-Frame-Options</code> response header with the value of <code>SAMEORIGIN</code>. With this setting, the application tells the client browser to only frame pages that originate from the same domain.</p>
+<ol>
+<li>
+<p><strong>Identify code which changes header.</strong> Examine the application to find any instances where pages are rendered, and whether headers are being modified to allow framing.</p>
+</li>
+<li>
+<p><strong>Re-enable default settings for <code>X_Frame_Options</code>.</strong> If <code>X_Frame_Options</code> is set to <code>ALLOW</code>, or is missing from configuration, re-enable the default settings and configuration.</p>
+</li>
+</ol>

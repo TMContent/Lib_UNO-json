@@ -1,0 +1,24 @@
+<h2>Applies To</h2>
+<ul>
+<li>Ruby</li>
+</ul>
+<h2>What to Do</h2>
+<p>Use POST as the HTTP request method to send sensitive information with the application. Do not place sensitive data in unprotected parameters. Do not use GET with sensitive requests.</p>
+<h2>Why</h2>
+<p>Submitting sensitive data through public channels requires the use of TLS encryption. However, the HTTP request parameters must also be protected by using POST for sensitive HTTP requests. To take advantage of the built-in Cross-Site Request Forgery (CSRF) protection, the developer must use POST requests for sensitive operations.</p>
+<p>If the anti-CSRF feature is not used, then the authenticated user's Web browser could be forced to perform malicious actions.</p>
+<h2>When</h2>
+<p>Use this guideline to implement POST when handling sensitive requests with your Ruby applications.</p>
+<h2>How</h2>
+<p>To use POST for sensitive requests:</p>
+<ol>
+<li>
+<p><strong>Find all sensitive operations.</strong> Determine what security-sensitive operations are mediated by the application.</p>
+</li>
+<li>
+<p><strong>Find code that implements sensitive operations.</strong> Search the application code to identify methods which handle sensitive data.</p>
+</li>
+<li>
+<p><strong>Use POST requests for sensitive operations.</strong> Ensure the code uses POST for sensitive exchange of information. If necessary, rewrite to have user send sensitive data with POST as the HTTP request message.</p>
+</li>
+</ol>

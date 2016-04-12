@@ -1,0 +1,43 @@
+<h2>Applies To</h2>
+<ul>
+<li>Ruby</li>
+</ul>
+<h2>What to Do</h2>
+<p>Use global exception handlers to catch unhandled exceptions, improve application robustness, and minimize the risk of information disclosure.</p>
+<h2>Why</h2>
+<p>Unhandled exceptions can be a serious stumbling block to an application's performance and security. Unhandled exceptions must be avoided as they can result in the application entering an unknown state and/or revealing sensitive internal application details. Using a global exception handler will prevent unhandled exceptions.</p>
+<p>Improper handling of exceptions and errors must be addressed by programming techniques so that privileged information is not leaked by revealing specific details about the system.</p>
+<h2>When</h2>
+<p>Global exception handlers should be included during development. Any application can throw an exception. Global handlers are necessary when the application might produce errors that require consistent response. Also, the framework may send exceptions before the application runs. These types of exceptions can be addressed in development by using a global exception handler.</p>
+<h2>How</h2>
+<p>Use the following steps to build a global exception handler that will process Ruby on Rails (RoR) application errors.</p>
+<ol>
+<li>
+<p><strong>Configure a rack app to handle exceptions.</strong> Configure a rack app in application controller to become your error-handling system, or global exception handler. Add a line to <em>application.rb</em> to configure routes app as the <code>exceptions_app</code>:</p>
+<pre><code> # ...
+ config.exceptions_app = self.routes
+ # ...
+</code></pre>
+</li>
+<li>
+<p><strong>Define the error routes.</strong> Route exceptions to a special errors controller. Refer to a complete list of all possible errors. Add lines to <em>routes.rb</em> such as the following:</p>
+<pre><code> # ...
+ match '/404' =&gt; 'errors#global_error', via: :all
+ match '/406' =&gt; 'errors#global_error', via: :all
+ match '/500' =&gt; 'errors#global_error', via: :all
+ # ...
+</code></pre>
+</li>
+<li>
+<p><strong>Define a global exception handler.</strong> Write a function which handles all uncaught exceptions. Place this function in the errors controller. The global exception handler <code>global_error</code> should accept the exception object as a parameter.</p>
+</li>
+<li>
+<p><strong>Log detailed exception information.</strong> Add code to the global exception handler to get as much information as possible from the exception object that is passed as the parameter.</p>
+</li>
+<li>
+<p><strong>Show a simple error message.</strong> Do not give away too much information to attackers. Write a simple message that lets the user know that the application has crashed, but the situation is under control. Add code to <code>global_error</code> that displays the error message to the global exception handler.</p>
+</li>
+<li>
+<p><strong>Clean up and exit gracefully.</strong> Add code, optionally, to the global exception handler to ask the user to send in an error report that describes what they were doing before they received the error report. Exit the handler and return the user to a safe entrance point in the program.</p>
+</li>
+</ol>

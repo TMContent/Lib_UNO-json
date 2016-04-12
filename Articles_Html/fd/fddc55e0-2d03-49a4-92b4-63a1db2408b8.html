@@ -1,0 +1,27 @@
+<h2>Applies To</h2>
+<ul>
+<li>Ruby</li>
+</ul>
+<h2>What to Do</h2>
+<p>Wrap serialized input in <code>ActionController::Parameters</code> and use <code>strong_parameters</code> to white-list variables when performing deserialization.</p>
+<h2>Why</h2>
+<p>If the application receives input from an upstream component that specifies multiple attributes, properties, or fields that are to be initialized in an object, but it does not properly control which attributes can be modified, deserialization could be vulnerable to untrusted code revealing the serialized content.</p>
+<p>Proper use of <code>Action:Controller::Parameters</code> and <code>strong_parameters</code> protects attributes from end-user assignment. By default, attributes are black-listed, and the developer chooses specific attributes to white-list for mass updating. Serialized object attributes which are not white-listed cannot be accidentally exposed or exploited by mass assignment.</p>
+<h2>When</h2>
+<p>During development and implementation, use features that allow specification of white lists of attributes or fields that are allowed to be modified.</p>
+<h2>How</h2>
+<p>Use the following steps to specify what user data can be exposed and  assigned to variables.</p>
+<ol>
+<li>
+<p><strong>Find all code that uses ActiveRecord to parse untrusted data.</strong> Search the code for use of <code>ActiveRecord</code> with untrusted data deserialization. Make a list of these line numbers for your change control record.</p>
+</li>
+<li>
+<p><strong>Wrap untrusted data in ActionController::Parameters before parsing.</strong> Use <code>ActionController::Parameters</code> to wrap the untrusted data.</p>
+</li>
+<li>
+<p><strong>Use strong_parameters to prevent mass assignment.</strong> White-list the untrusted data parameters with <code>params.permit</code>.</p>
+</li>
+<li>
+<p><strong>Commit code changes.</strong> Commit the code changes and test the application. Make an entry in the change control record for the code updates.</p>
+</li>
+</ol>

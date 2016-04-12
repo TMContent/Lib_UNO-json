@@ -1,0 +1,31 @@
+<h2>Applies To</h2>
+<ul>
+<li>Ruby</li>
+</ul>
+<h2>What to Do</h2>
+<p>Set an absolute limit on sessions lifetime by including the <code>:expire_after</code> parameter in the <em>session_store</em> file.</p>
+<h2>Why</h2>
+<p>Even when using TLS there is still a risk of session hijacking and replay attacks. There are other out-of-band ways to steal session tokens. The shorter the session limit, or session expiry, the less time an attacker has to capture a session cookie and use it to access your application.</p>
+<p>Session default behavior is to expire when the user closes the browser window or logs out. If the user does not log out, and leaves the browser window open, the session can be compromised by an attacker who keeps the session alive. Setting an absolute limit for the session is part of defense-in-depth, and helps to mitigate the amount of damage the attacker can perform.</p>
+<h2>When</h2>
+<p>All applications should consider the length of their sessions carefully. An application which handles any sensitive information should make session length as short as possible.</p>
+<h2>How</h2>
+<p>To set a default expiry time to limit session lifetime, follow these steps:</p>
+<ol>
+<li>
+<p><strong>Find session code.</strong> Find all instances in the application code where sessions are created. Check authentication and re-authentication activities for session hooks. Verify that standard configuration is in use.</p>
+</li>
+<li>
+<p><strong>Include <code>expire_after</code> in session configuration.</strong> Edit <em>config/initializers/session_store.rb</em> to include a base session lifetime setting:</p>
+<pre><code> YourApp::Application.config.session_store :cookie_store,
+   :expire_after =&gt; 30.minutes
+</code></pre>
+</li>
+<li>
+<p><strong>Include <code>expire_after</code> in controllers.</strong> If you need to set different expiration time in different controllers or actions, use the following code in action or some <code>before_filter</code>:</p>
+<pre><code> request.session_options = request.session_options.dup
+ request.session_options[:expire_after] = 15.minutes
+ request.session_options.freeze
+</code></pre>
+</li>
+</ol>

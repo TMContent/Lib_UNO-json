@@ -1,11 +1,12 @@
 {
   "id": "e75f4a58-8ee4-4fda-8ed0-2be0a8a337cf",
-  "checksum": "c40db99d388eeeffd6a6135e56f91882",
+  "checksum": "f5446e21951e797ef1342ff33c1464af",
   "words": {
-    "what": [
+    "applies": [
       "h2"
     ],
     "to": [
+      "h2",
       "h2",
       "p",
       "h2",
@@ -24,6 +25,13 @@
       "p",
       "title"
     ],
+    "c++": [
+      "ul",
+      "li"
+    ],
+    "what": [
+      "h2"
+    ],
     "check": [
       "h2",
       "h2",
@@ -37,7 +45,8 @@
       "ol",
       "li",
       "p",
-      "p"
+      "ul",
+      "li"
     ],
     "verify": [
       "p",
@@ -81,7 +90,8 @@
       "p",
       "p",
       "strong",
-      "p",
+      "ul",
+      "li",
       "title"
     ],
     "are": [
@@ -116,7 +126,8 @@
       "p",
       "p",
       "p",
-      "p",
+      "ul",
+      "li",
       "title"
     ],
     "mutexes": [
@@ -140,7 +151,8 @@
       "p",
       "li",
       "p",
-      "p",
+      "ul",
+      "li",
       "title"
     ],
     "instead": [
@@ -197,7 +209,8 @@
     "using": [
       "p",
       "p",
-      "p"
+      "ul",
+      "li"
     ],
     "std:lock_guard": [
       "p",
@@ -654,23 +667,29 @@
       "h2"
     ],
     "more": [
-      "p"
+      "ul",
+      "li"
     ],
     "information": [
-      "p"
+      "ul",
+      "li"
     ],
     "about": [
-      "p"
+      "ul",
+      "li"
     ],
     "see": [
-      "p"
+      "ul",
+      "li"
     ],
     "https//www.securecoding.cert.org/confluence/display/cplusplus/con02": [
-      "p",
+      "ul",
+      "li",
       "a"
     ],
     "cpp.+use+lock+classes+for+mutex+management": [
-      "p",
+      "ul",
+      "li",
       "a"
     ],
     "avoid": [

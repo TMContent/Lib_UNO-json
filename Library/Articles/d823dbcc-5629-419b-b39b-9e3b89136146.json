@@ -1,0 +1,59 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "0",
+      "Content_Hash": "0"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "d823dbcc-5629-419b-b39b-9e3b89136146"
+        ],
+        "Library_Id": [
+          "be5273b1-d682-4361-99d9-6234f2d47eb7"
+        ],
+        "Title": [
+          "Use a Strong PRNG"
+        ],
+        "Category": [
+          "Cryptography"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "Ruby"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          ""
+        ],
+        "Tag": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "false",
+          "DataType": "markdown"
+        },
+        "Data": [
+          "## Applies To ##\r\n\r\n- Ruby\r\n\r\n\r\n## What to Do ##\r\n\r\nUse a cryptographically-strong pseudo-random number generator (PRNG) whenever it is necessary to generate random numbers for cryptography.\r\n\r\n\r\n## Why ##\r\n\r\nMost common encryption algorithms rely on the generation of difficult-to-predict random numbers. The level of difficulty to predict or enumerate the output of a random number generator is called its entropy. Cryptographically-strong PRNGs are software algorithms that produce pseudo-random numbers considered to have sufficient entropy to be suitable for use in cryptography. Using PRNGs that have low entropy is likely to make the resulting cryptographic solution easier to break and thus compromise the data or the authentication mechanism that the solution is used for.\r\n\r\nCertifying authorities require protection of sensitive information, such as Primary Account Numbers (PAN), with strong cryptography. Generating strong PRNGs is integral to the cryptographic classes and methods used by the application.\r\n\r\n\r\n## How ##\r\n\r\nFollow these steps to use cryptographically-strong PRNGs:\r\n\r\n1. **Find code that uses PRNGs.** Review all code that uses cryptography. Identify code that uses pseudo-random numbers. Make a spreadsheet of all code that uses pseudo-random numbers for cryptography.\r\n\r\n2. **Use the `SecureRandom` class.** Use the Ruby public class `SecureRandom` to generate PRNG.\r\n\r\n\t\trequire 'securerandom'\r\n\r\n3. **Return a secure PRNG.** Use the random_number method to generate a secure PRNG. Without options specified, the method returns a 16-digit number between zero (0) and one (1):\r\n\r\n\t\tSecureRandom.random_number\r\n\t\t#=> 0.1150327304001743\r\n\r\n4. **Use other `SecureRandom` methods.** For other application requirements, related methods may be invoked with the SecureRandom class:\r\n\r\n\t\tSecureRandom.base64\r\n\t\t#=> \"/2BuBuLf3+WfSKyQbRcc/A==\"\r\n\r\n\t\tSecureRandom.hex\r\n\t\t#=> \"eb693ec8252cd630102fd0d0fb7c3485\"\r\n\r\n\t\tSecureRandom.random_bytes\r\n\t\t#=> \"m\\xDC\\xFC/\\a\\x00Uf\\xB2\\xB2P\\xBD\\xFF6S\\x97\"\r\n\r\n\t\tSecureRandom.random_number(100)\r\n\t\t#=> 15\r\n\r\n\t\tSecureRandom.random_number(100**16)\r\n\t\t#=> 77243565207669492659835282655022\r\n\r\n\t\tSecureRandom.urlsafe_base64 \r\n\t\t#=> \"b4GOKm4pOYU_-BOXcrUGDg\"\r\n\r\n\t\tSecureRandom.uuid\r\n\t\t#=> \"2d931510-d99f-494a-8c67-87feb05e1594\"\r\n\r\n"
+        ]
+      }
+    ]
+  }
+}

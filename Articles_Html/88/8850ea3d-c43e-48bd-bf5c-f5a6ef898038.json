@@ -1,6 +1,6 @@
 {
   "id": "8850ea3d-c43e-48bd-bf5c-f5a6ef898038",
-  "checksum": "c2f27b2cf119587b1f31eb1f49b90ff4",
+  "checksum": "1d60757140e9cc95938dcb42b47e6ddd",
   "words": {
     "applies": [
       "h1"
@@ -34,13 +34,7 @@
       "p",
       "p",
       "p",
-      "pre",
-      "ul",
-      "li",
-      "a",
-      "ul",
-      "li",
-      "a"
+      "pre"
     ],
     "php": [
       "ul",
@@ -79,14 +73,6 @@
       "strong",
       "ul",
       "li",
-      "h1",
-      "ul",
-      "li",
-      "a",
-      "h1",
-      "ul",
-      "li",
-      "a",
       "title"
     ],
     "ensure": [
@@ -168,30 +154,12 @@
       "ol",
       "li",
       "p",
-      "ul",
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a",
-      "li",
-      "a",
       "title"
     ],
     "used": [
       "p",
       "p",
       "p",
-      "ul",
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a",
-      "li",
-      "a",
       "title"
     ],
     "when": [
@@ -267,12 +235,6 @@
       "pre",
       "ul",
       "li",
-      "ul",
-      "li",
-      "a",
-      "ul",
-      "li",
-      "a",
       "title"
     ],
     "statements": [
@@ -296,12 +258,6 @@
       "strong",
       "ul",
       "li",
-      "ul",
-      "li",
-      "a",
-      "ul",
-      "li",
-      "a",
       "title"
     ],
     "mitigate": [
@@ -406,9 +362,7 @@
     ],
     "injection": [
       "p",
-      "p",
-      "h1",
-      "h1"
+      "p"
     ],
     "this": [
       "p",
@@ -430,10 +384,7 @@
       "p",
       "ol",
       "li",
-      "p",
-      "ul",
-      "li",
-      "a"
+      "p"
     ],
     "language": [
       "p"
@@ -566,19 +517,7 @@
       "p",
       "p",
       "p",
-      "p",
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a",
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a"
+      "p"
     ],
     "embedded": [
       "p",
@@ -1004,16 +943,7 @@
       "li",
       "p",
       "p",
-      "strong",
-      "ul",
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a",
-      "li",
-      "a"
+      "strong"
     ],
     "prevent": [
       "p"
@@ -1065,12 +995,6 @@
       "li",
       "p",
       "pre",
-      "ul",
-      "li",
-      "a",
-      "ul",
-      "li",
-      "a",
       "title"
     ],
     "substitute": [
@@ -1369,100 +1293,8 @@
       "li",
       "a"
     ],
-    "guidelines": [
-      "h1"
-    ],
-    "preventing": [
-      "h1",
-      "h1"
-    ],
-    "vulnerabilities": [
-      "h1",
-      "h1"
-    ],
     "access": [
-      "ul",
-      "li",
-      "a",
-      "ul",
-      "li",
-      "a",
       "title"
-    ],
-    "positive": [
-      "ul",
-      "li",
-      "a",
-      "ul",
-      "li",
-      "a"
-    ],
-    "validation": [
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a",
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a"
-    ],
-    "helper": [
-      "ul",
-      "li",
-      "a",
-      "ul",
-      "li",
-      "a"
-    ],
-    "classes": [
-      "ul",
-      "li",
-      "a",
-      "ul",
-      "li",
-      "a"
-    ],
-    "assure": [
-      "ul",
-      "li",
-      "a",
-      "ul",
-      "li",
-      "a"
-    ],
-    "disable": [
-      "ul",
-      "li",
-      "a"
-    ],
-    "dangerous": [
-      "ul",
-      "li",
-      "a",
-      "ul",
-      "li",
-      "a"
-    ],
-    "functions": [
-      "ul",
-      "li",
-      "a",
-      "ul",
-      "li",
-      "a"
-    ],
-    "checklists": [
-      "h1"
-    ],
-    "disabled": [
-      "ul",
-      "li",
-      "a"
     ]
   },
   "tags": {},
@@ -1470,38 +1302,6 @@
     {
       "href": "http://php.net/manual/en/pdo.prepared-statements.php",
       "text": "http://php.net/manual/en/pdo.prepared-statements.php"
-    },
-    {
-      "href": "/article/0f4cb1a2-b00a-4d71-9e26-627e6d425798",
-      "text": "Use Prepared Statements for Data Access"
-    },
-    {
-      "href": "/article/c0a4f56c-1e8c-4d3a-97e2-fc9e969d5d52",
-      "text": "Use Positive Input Validation"
-    },
-    {
-      "href": "/article/bac6fe53-5708-4297-a2d7-7df61603f09e",
-      "text": "Use Helper Classes to Assure Input Validation"
-    },
-    {
-      "href": "/article/fe289976-08f4-46b3-a6ec-b80828d090b6",
-      "text": "Disable Dangerous Functions"
-    },
-    {
-      "href": "/article/8850ea3d-c43e-48bd-bf5c-f5a6ef898038",
-      "text": "Prepared Statements Are Used for Data Access"
-    },
-    {
-      "href": "/article/d4129497-3a66-44d1-881e-e6f004af2e0d",
-      "text": "Positive Input Validation Is Used"
-    },
-    {
-      "href": "/article/2d0d9e57-6d1d-4f07-9373-7442583bca0c",
-      "text": "Helper Classes Are Used to Assure Input Validation"
-    },
-    {
-      "href": "/article/50ff859f-1562-4b27-b230-1e3d5bd8a3b9",
-      "text": "Dangerous Functions Are Disabled"
     }
   ]
 }

@@ -1,0 +1,63 @@
+<h2>Applies To</h2>
+<ul>
+<li>Ruby</li>
+</ul>
+<h2>What to Do</h2>
+<p>Use Ruby on Rails (RoR) built-in function <code>has_secure_password</code> to iteratively hash the password before it is stored.</p>
+<h2>Why</h2>
+<p>By analyzing a simplified threat model of password storage, we know that an attacker may access a protected database store, and then reverse the hashing applied to passwords to reveal the credentials for illicit use. To build defense-in-depth for this hashing vulnerability, it is necessary to increase the time and resources required to crack the passwords if the database is compromised. The built-in RoR function <code>has_secure_password</code> provides such protection by loading the <code>bcrypt-ruby</code> Gem, and the secure hashing function of <code>bcrypt</code> is used.</p>
+<p>Storing hashes instead of plain-text passwords assures that an attacker cannot easily recover passwords if he gains access to the password files. Adding salt to hashed files makes hashes much harder to break with dictionary attacks. Hashing should be applied multiple times to make hashing take longer and thus increase the computational resources required to attack the hashes. Iterative <code>bcrypt</code> hashing applies a hashing function multiple times to a password and a salt, drastically increasing the time required to perform dictionary attacks.</p>
+<p>If your application does not use the built-in RoR function <code>has_secure_password</code> or similar function to securely hash and store passwords, there is significant exposure to possible database compromise and loss of sensitive data, such as customer identification numbers, credit card numbers and other secret data.</p>
+<h2>When</h2>
+<p>Stored passwords must always be hashed and salted with an iterative method or function. When the RoR framework authentication method is used, it is preferred to invoke <code>has_secure_password</code> in the environment. If a custom authentication method is used, however, then it will be required to use an iterative hashing algorithm such as <code>bcrypt</code> or <code>PBKDF2</code> to protect stored authentication credentials.</p>
+<h2>How</h2>
+<p>The following steps describe how to use iterative hashing to protect stored passwords.</p>
+<ol>
+<li>
+<p><strong>Identify authentication requirements.</strong> Your RoR application either uses the framework's password-based authentication, or a custom login method. Review the authentication requirements and document implementation functions, APIs, and gems for purpose of understanding calls and parameters for your application's code.</p>
+</li>
+<li>
+<p><strong>Identify authentication code.</strong> In your application, search for authentication code, and make a spreadsheet which lists the files and line numbers where authentication code is found. Be sure to also review action controllers and gems which your application may employ.</p>
+</li>
+<li>
+<p><strong>Enable the <code>bcrypt</code> gem.</strong> To enable the 'bcrypt' gem, uncomment this line in the Gemfile, <code>gem 'bcrypt-ruby', '~&gt; X.X.X'</code>, where <em>X.X.X</em> is the bcrypt-ruby version included with your framework.</p>
+</li>
+<li>
+<p><strong>Implement password verification.</strong> During authentication, the password entered by the user should be checked against the value calculated using the authentication function. With RoR, simply add <code>has_secure_password</code> to the User model file to use <code>bcrypt</code> during authentication.</p>
+<pre><code> # app/models/user.rb
+
+ class User &lt; ActiveRecord::Base
+   has_secure_password
+ end
+</code></pre>
+</li>
+<li>
+<p><strong>Use validators as necessary.</strong> Use the authenticate method to validate the user password whenever the user has to be authenticated in your application. The class <code>active_model/secure_password.rb</code> uses the function <code>has_secure_password</code> to provide a simple interface to use <code>bcrypt</code> for hashing passwords.</p>
+<pre><code> # Schema: User(name:string, password_digest:string)
+ class User &lt; ActiveRecord::Base
+   has_secure_password
+ end
+
+ user = User.new(name: 'joe', password: '', password_confirmation: 'nomatch')
+ user.save
+     # =&gt; false, password required
+ user.password = 'mUc3m00Rsqy'
+ user.save
+     # =&gt; false, confirmation doesn't match
+ user.password_confirmation = 'mUc3m00Rsqy'
+ user.save
+     # =&gt; true
+ user.authenticate('notright')
+     # =&gt; false
+ user.authenticate('mUc3m00Rsqy')
+     # =&gt; user
+ User.find_by(name: 'joe').try(:authenticate, 'notright')
+     # =&gt; false
+ User.find_by(name: 'joe').try(:authenticate, 'mUc3m00Rsqy')
+     # =&gt; user
+</code></pre>
+</li>
+<li>
+<p><strong>Use other built-in password management functions as necessary.</strong> The <code>user.save</code> method can be used to save passwords. The <code>new</code> method can be used to create new users: <code>user = User.new(name: 'user', password: 'password')</code>. RoR provides other password management functions which should be investigated and used to implement all of the authentication functionality required by your application.</p>
+</li>
+</ol>

@@ -1,0 +1,32 @@
+<h2>Applies To</h2>
+<ul>
+<li>Ruby</li>
+</ul>
+<h2>What to Do</h2>
+<p>Use <code>ActionController::RequestForgeryProtection</code> methods to include and check unique tokens in HTTP requests when performing sensitive operations to prevent Cross-Site Request Forgery (CSRF).</p>
+<h2>Why</h2>
+<p>The CSRF compromise is possible when an attacker can form a URL which performs an action on behalf of an authenticated user. Forming such URLs becomes much more difficult if unique tokens are included in HTTP requests. Including a difficult-to-predict token in HTTP requests is an effective defense against CSRF attacks.</p>
+<p>If a CSRF attack succeeds, the consequences are only limited by the application scope. Such an attack could result in loss of sensitive information. The target is often unaware that their browser has been used to perform illegal functions.</p>
+<h2>When</h2>
+<p>Note that even when the user is logged into a web site which uses strong encryption (HTTPS), the CSRF attack will be successful. The attacker will use social engineering, and embed malicious HTML or JavaScript code into an email, or use a web site to request a specific 'task url'. The url can execute without the awareness of the user. This can be accomplished directly, or by using a Cross-site Scripting (XSS) flaw.</p>
+<p>For these reasons it is always necessary to use the available security measures which thwart CSRF attacks.</p>
+<p>This guideline protects HTML and JavaScript requests only. Where it is necessary to protect an XML API, there usually exists a different authentication scheme and CSRF protection.</p>
+<h2>How</h2>
+<p>Controller actions are protected from CSRF attacks by including a token in the rendered HTML. This token is stored as a session random string which the attacker cannot access. When the application receives a request the Ruby on Rails (RoR) module verifies the received token with the session. To use unique tokens for sensitive HTTP requests:</p>
+<ol>
+<li>
+<p><strong>Identify sensitive operations.</strong> Review Ruby code to identify all operations that handle sensitive data. Be sure to include any associated functions and modules in this search.</p>
+</li>
+<li>
+<p><strong>Identify code that performs sensitive operations.</strong> Identify all statements and blocks that are involved in performing sensitive operations. Add information about this code to the spreadsheet.</p>
+</li>
+<li>
+<p><strong>Choose a method for generating unique tokens.</strong> The recommended method is to use the default approach supplied by RoR. CSRF protection is turned on with the <code>protect_from_forgery</code> method, which checks the token and resets the session if the token does not match what was expected. A call to this method is generated for new RoR applications by default.</p>
+</li>
+<li>
+<p><strong>Add unique tokens to HTTP requests.</strong> The default name for the token parameter is <code>authenticity_token</code>. The token name and value must be added to each layout that renders forms. This is performed by including <code>csrf_meta_tags</code> in the HTML head. Do not use session IDs as anti-CSRF tokens.</p>
+</li>
+<li>
+<p><strong>Perform application token validation.</strong> In the application controller, <code>protect_from_forgery</code> is in effect for newly created applications. A security token is automatically included in all forms and requests. If the security token doesn't match, an exception is thrown.</p>
+</li>
+</ol>

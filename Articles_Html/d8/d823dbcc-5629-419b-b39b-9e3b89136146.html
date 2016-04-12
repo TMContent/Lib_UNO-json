@@ -1,0 +1,51 @@
+<h2>Applies To</h2>
+<ul>
+<li>Ruby</li>
+</ul>
+<h2>What to Do</h2>
+<p>Use a cryptographically-strong pseudo-random number generator (PRNG) whenever it is necessary to generate random numbers for cryptography.</p>
+<h2>Why</h2>
+<p>Most common encryption algorithms rely on the generation of difficult-to-predict random numbers. The level of difficulty to predict or enumerate the output of a random number generator is called its entropy. Cryptographically-strong PRNGs are software algorithms that produce pseudo-random numbers considered to have sufficient entropy to be suitable for use in cryptography. Using PRNGs that have low entropy is likely to make the resulting cryptographic solution easier to break and thus compromise the data or the authentication mechanism that the solution is used for.</p>
+<p>Certifying authorities require protection of sensitive information, such as Primary Account Numbers (PAN), with strong cryptography. Generating strong PRNGs is integral to the cryptographic classes and methods used by the application.</p>
+<h2>How</h2>
+<p>Follow these steps to use cryptographically-strong PRNGs:</p>
+<ol>
+<li>
+<p><strong>Find code that uses PRNGs.</strong> Review all code that uses cryptography. Identify code that uses pseudo-random numbers. Make a spreadsheet of all code that uses pseudo-random numbers for cryptography.</p>
+</li>
+<li>
+<p><strong>Use the <code>SecureRandom</code> class.</strong> Use the Ruby public class <code>SecureRandom</code> to generate PRNG.</p>
+<pre><code> require 'securerandom'
+</code></pre>
+</li>
+<li>
+<p><strong>Return a secure PRNG.</strong> Use the random_number method to generate a secure PRNG. Without options specified, the method returns a 16-digit number between zero (0) and one (1):</p>
+<pre><code> SecureRandom.random_number
+ #=&gt; 0.1150327304001743
+</code></pre>
+</li>
+<li>
+<p><strong>Use other <code>SecureRandom</code> methods.</strong> For other application requirements, related methods may be invoked with the SecureRandom class:</p>
+<pre><code> SecureRandom.base64
+ #=&gt; &quot;/2BuBuLf3+WfSKyQbRcc/A==&quot;
+
+ SecureRandom.hex
+ #=&gt; &quot;eb693ec8252cd630102fd0d0fb7c3485&quot;
+
+ SecureRandom.random_bytes
+ #=&gt; &quot;m\xDC\xFC/\a\x00Uf\xB2\xB2P\xBD\xFF6S\x97&quot;
+
+ SecureRandom.random_number(100)
+ #=&gt; 15
+
+ SecureRandom.random_number(100**16)
+ #=&gt; 77243565207669492659835282655022
+
+ SecureRandom.urlsafe_base64 
+ #=&gt; &quot;b4GOKm4pOYU_-BOXcrUGDg&quot;
+
+ SecureRandom.uuid
+ #=&gt; &quot;2d931510-d99f-494a-8c67-87feb05e1594&quot;
+</code></pre>
+</li>
+</ol>

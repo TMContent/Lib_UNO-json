@@ -1,0 +1,44 @@
+<h2>Applies To</h2>
+<ul>
+<li>Ruby</li>
+</ul>
+<h2>What to Do</h2>
+<p>Protect the confidentiality of session IDs in the Ruby application by using:</p>
+<ul>
+<li>Transport Layer Security (TLS) to protect connections</li>
+<li><code>Action::Dispatch::Session</code> class APIs to protect session IDs and safely manage cookies.</li>
+</ul>
+<h2>Why</h2>
+<p>Session IDs are used by an application to identify the session associated with a particular user. If an attacker gains access to a session ID they can assume the identity and privileges of the logged-in user. Protecting session IDs can help prevent an attacker from hijacking the session and using the application.</p>
+<p>Using a TLS encrypted communication channel protects the session against some session fixation attacks where the attacker is able to intercept and manipulate the web traffic to inject (or fix) the session ID on the victims web browser.</p>
+<p>If the cookie is not protected locally, as might happen with an insecure wireless LAN, the cookie could be sniffed. For this reason the application should always force SSL connections.</p>
+<p>Certifying authorities require session management coding techniques such as flagging session cookies as secure, not exposing session IDs, using time-outs, and rotating sessions IDs after login. Using <code>Action:Dispatch:Session</code> API methods enable the application to protect session IDs.</p>
+<p>##How##</p>
+<p>Use the following steps with Rails 4 to safeguard session IDs:</p>
+<ol>
+<li>
+<p><strong>Store session IDs in cookies.</strong> The default setting with Rails framework is to store session IDs in cookies with <code>ActionDispatch::Sessions::CookieStore</code>.</p>
+</li>
+<li>
+<p><strong>Enable TLS.</strong> TLS must be enabled to protect session cookies from eavesdropping attacks. Please refer to the documentation for your web platform for information about enabling and configuring TLS on the web server.</p>
+</li>
+<li>
+<p><strong>Provide a secure connection over TLS.</strong> Always force TLS connections in your application environment. Add code to <em>config/application.rb</em> file as follows:</p>
+<pre><code> class Application &lt; Rails::Application
+   # ...
+   config.force_ssl = true
+   # ...
+</code></pre>
+</li>
+<li>
+<p><strong>Set the secure flag on session cookies.</strong> Cookies are automatically marked as secure, and the session ID will only be exchanged through encrypted channels.</p>
+</li>
+<li>
+<p><strong>Set the <code>HTTPOnly</code> flag on session cookies.</strong> Configure the session cookie <code>HTTPOnly</code> setting like this:</p>
+<pre><code> cookies[:user_id] = { :value =&gt; &quot;user&quot;, :httponly =&gt; true }
+</code></pre>
+</li>
+<li>
+<p><strong>Do not disclose session IDs.</strong> Make sure that session IDs are not disclosed in URLs, logs, or error messages. Do not allow URL rewriting of session cookies.</p>
+</li>
+</ol>

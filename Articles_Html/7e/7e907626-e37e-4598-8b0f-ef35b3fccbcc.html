@@ -1,0 +1,40 @@
+<h2>Applies To</h2>
+<ul>
+<li>SAP ABAP</li>
+</ul>
+<h2>What to Do</h2>
+<p>Canonicalize all input used for filesystem access, including resource names, filenames, paths, and URLs.</p>
+<h2>Why</h2>
+<p>There are often several ways to address the same resource by name in an operating system. An attacker may try to bypass validation routines in order to perform unauthorized access by supplying obfuscated input. Canonicalization reduces input to the simplest form, defeats obfuscation, and helps validate data access attempts.</p>
+<p>Canonicalization is necessary because the application environment may allow access to a resource through alternative commands. For example, in a Windows environment a single file may be addressed as <code>file</code>, <code>C:\file</code>, <code>C:\\file</code>, <code>..\file</code>, <code>..\..\..\file</code>, etc. Canonicalization is also important for systems that use Unicode, because there are many different Unicode strings that have the same meaning to the operating system (OS).</p>
+<p>Canonicalization means that the input variable's content is transformed into its simplest and shortest representation. Many attack methods depend on the usage of <em>polymorph representation</em>, that is, an unusual or overly complicated form that is designed to evade filter mechanisms. Transformation into the simplest form is fundamental for successful filter mechanisms.</p>
+<h2>When</h2>
+<p>Canonicalize all input used to identify resources before using it for access.</p>
+<p>When built-in functions are not available, use validation against a white-list table to eliminate the possibility of filter evasion.</p>
+<h2>How</h2>
+<p>Perform the following actions to canonicalize all input used to access filesystem resources:</p>
+<ol>
+<li>
+<p><strong>Identify all functions used to access filesystem resources.</strong> Find all functions used by the application to request filesystem resources. Include external calls and ABAP modules in your search.</p>
+</li>
+<li>
+<p><strong>Use built-in functions to canonicalize input.</strong> With the SAP NetWeaver Platform (Web Dynpro ABAP and BSP Applications), use the method <code>CL_HTTP_UTILITY=&gt; IF_HTTP_UTILITY~CHECK_HTTP_WHITELIST</code>. This is provided by the Web Application Server (ABAP AS) to check URL-like parameters against a white list of patterns in table <code>HTTP_WHITELIST</code>. The table itself can be maintained in transaction SE16. This process verifies that the URL from external sources can be accepted. For more information, refer to SAP Note 853878.</p>
+</li>
+<li>
+<p><strong>Add code that canonicalizes and validates input.</strong> When built-in methods are not available or not applicable, it is recommended to create a separate class or library for data validation routines and include functions for canonicalizing input in it. Provide the following in the class or library:</p>
+<ul>
+<li>Unescape input and bring it to its shortest or simplest form (canonicalization).</li>
+<li>Validate the input depending on the output (HTML, database or file system).
+<ul>
+<li>Be aware of double-encoded characters.</li>
+<li>Check if you are working in the same character space (Unicode or ASCII).</li>
+<li>Remember that combinations of ASCII and HEX characters can represent malicious code. Use SQL Injection mitigation techniques.</li>
+<li>Remember case sensitivity and try to find a <em>capitalized</em> canonical form.</li>
+</ul>
+</li>
+<li>Check against a white list of allowed patterns. Do not use a black list.</li>
+<li>Understand the operating mode of the interpreter and how it handles your data.</li>
+<li>Implement your class in the ABAP code with input data.</li>
+</ul>
+</li>
+</ol>

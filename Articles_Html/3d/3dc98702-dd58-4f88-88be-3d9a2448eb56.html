@@ -1,0 +1,41 @@
+<h2>Applies To</h2>
+<ul>
+<li>Ruby</li>
+</ul>
+<h2>What to Do</h2>
+<p>Configure Ruby to use strong TLS cipher suites.</p>
+<h2>Why</h2>
+<p>It is common for malicious individuals to intercept data in transit. For this reason, during public network transmissions encrypt sensitive information.</p>
+<p>Choose strong TLS cipher suites to avoid known vulnerabilities in the OpenSSL library or other suites used with Ruby applications. Weak crypto suites are subject to known attacks which will decipher and compromise confidential data.</p>
+<h2>How</h2>
+<p>Use the following steps to configure strong TLS ciphers for Ruby.</p>
+<ol>
+<li>
+<p><strong>Check the build date for OpenSSL.</strong> Check that OpenSSL in use is current by examining the build date from a system console:</p>
+<pre><code> openssl version -a
+</code></pre>
+</li>
+<li>
+<p><strong>Verify which version of OpenSSL library is linked to Ruby.</strong> Check the output of the command, and update OpenSSL to the latest version if necessary:</p>
+<pre><code> ruby -v -ropenssl -rfiddle -e 'puts Fiddle::Function.new(Fiddle.dlopen(nil)[&quot;SSLeay_version&quot;], [Fiddle::TYPE_INT], Fiddle::TYPE_VOIDP).call(0)'
+</code></pre>
+</li>
+<li>
+<p><strong>Configure strong ciphers.</strong> Use the following code to configure strong ciphers into ssl_context.</p>
+<pre><code> ciphers = '!ADH:!RC4:!aNULL:!MD5:!EXPORT:!SSLv2:HIGH'
+ ssl_context.ciphers = ciphers
+ 
+ # Don't use SSLv3
+ no_ssl_3 = OpenSSL::SSL::OP_NO_SSLv3
+ 
+ # Don't use SSLv2
+ no_ssl_2 = OpenSSL::SSL::OP_NO_SSLv2
+ 
+ # Don't use compression (CRIME CVE-2012-4929)
+ no_ssl_compression = OpenSSL::SSL::OP_NO_COMPRESSION
+ 
+ ssl_options = no_ssl_2 + no_ssl_3 + no_ssl_compression
+ ssl_context.options = ssl_options
+</code></pre>
+</li>
+</ol>

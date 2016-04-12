@@ -1,0 +1,40 @@
+<h2>Applies To</h2>
+<ul>
+<li>Ruby</li>
+</ul>
+<h2>What to Do</h2>
+<p>Separate data from SQL queries by using prepared statements when executing SQL commands. Do not generate SQL statements directly from user input.</p>
+<h2>Why</h2>
+<p>Prepared statements are SQL queries that are sent to, and precompiled by, the database engine. This means that subsequent queries can be executed by sending only the ID instead of the entire SQL string. There are performance gains for the application by using this technique due to a reduction of network traffic and processing overhead. Most importantly, by separating data from the SQL query, the developer will ensure that the query cannot be used by an attacker who inserts SQL commands into the page input.</p>
+<p>SQL injection attacks are very common. If your application does not use available methods such as database settings and library APIs which prevent SQL injection, there is significant exposure to database compromise and loss of sensitive data, such as customer identification numbers, credit card numbers and other secret data.</p>
+<h2>When</h2>
+<p>Methods for mitigating SQL injection are mentioned in the following section. Techniques will need to work with the SQL interface API, framework version, and Ruby gems in use.</p>
+<p>Please remember that SQL Injection flaws are introduced when software developers create dynamic database queries that include user supplied input. The preferred, secure option is to always use a safe API which avoids direct use of SQL calls.</p>
+<h2>How</h2>
+<p>Writing a prepared statement for Ruby applications can be generally summarized as follows. Get a database handle, and call the function to make the prepared statement. Use a framework function to bind prepared statement parameters to variables, then load data into the variables. Finally, call an execute function for the prepared statement. The result is that the application prepares a statement once, and reuses the prepared object each time it is necessary to execute the query.</p>
+<p>The following examples present examples that explain different approaches to separate data from SQL queries.</p>
+<ol>
+<li>
+<p><strong>Identify SQL queries.</strong> Locate all SQL queries in your application code. Also, investigate the functions of transaction calls and use of ABAP function modules that may additionally execute SQL statements.</p>
+</li>
+<li>
+<p><strong>Identify the parameters in each SQL query.</strong> After locating all SQL queries, identify the parameters in each query. Understand the format and type of each parameter's data, and how it is solicited from the user.</p>
+</li>
+<li>
+<p><strong>Use prepared statements with Rails for SQL queries.</strong> With Rails 3.1 and later versions <code>ActiveRecord</code> generates a clause <code>WHERE people.id = ?</code>, followed by: <code>[[“id”, 1]]</code>. Note that previous ActiveRecord versions generated <code>WHERE people.id = 1</code>, which is vulnerable to SQL injection.</p>
+</li>
+<li>
+<p><strong>Use prepared statements with Ruby for SQL queries.</strong> This describes use of the sqlite3-ruby gem library with Ruby. A database instance is created: <code>db = SQLite3::Database.new(&quot;:memory:&quot;)</code>. Then a series of db.execute statements are used to setup database handles:</p>
+<pre><code> # ...
+ db.execute('create temp table players (name, score, active, jerseyNum)')
+ db.execute('insert into players values (&quot;name&quot;,0,&quot;false&quot;,99)')`
+ # ...
+</code></pre>
+<p>With Ruby, parameterized statements may be prepared with one of the following methods.</p>
+<ol>
+<li>Use simple placeholders in a one line statement: <code>db.execute('update players set name=?, score=?, active=? where jerseyNum=?', 'Smith, Steve', 42, true, 99)</code>.</li>
+<li>Use named placeholders. Open a block with: <code>db.execute('update players set name=:name, score=:score, active=:active where jerseyNum=:num'</code>. For each field, load data into the variables with a series of block statements, such as: <code>num =&gt; 100</code>, <code>:name =&gt; 'John Doe'</code>, and so on.</li>
+<li>Use numbered placeholders. Open a block with: <code>stmt = db.prepare('update players set name=?4, score=?3, active=?2 where jerseyNum=?1')</code>. The use <code>bind_param</code> statements, such as: <code>stmt.bind_param(1, 101)</code>, <code>stmt.bind_param(2, true)</code>, etc. Finally, end the block with <code>stmt.execute</code>.</li>
+</ol>
+</li>
+</ol>

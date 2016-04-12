@@ -1,0 +1,59 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "0",
+      "Content_Hash": "0"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "9c434a32-a16a-48b8-87ac-43ae37ffdbf8"
+        ],
+        "Library_Id": [
+          "be5273b1-d682-4361-99d9-6234f2d47eb7"
+        ],
+        "Title": [
+          "Use TLS to Protect Connections"
+        ],
+        "Category": [
+          "Communication Security"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "ABAP"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          ""
+        ],
+        "Tag": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "false",
+          "DataType": "markdown"
+        },
+        "Data": [
+          "## Applies To ##\r\n\r\n- SAP ABAP\r\n\r\n\r\n## What to Do ##\r\n\r\nUse Transport Layer Security (TLS) encryption to protect connections used by Advanced Business Application Programming (ABAP) application server (AS).\r\n\r\n\r\n## Why ##\r\n\r\nEncryption technology such as TLS is necessary for SAP back-end connections, as well as for ABAP data communications when sensitive data is sent, or where user identity is authenticated. If all messaging is not protected with effective security, then sensitive data could be compromised. This undermines any authentication and access controls which have been established. When properly used, secure transport prevents eavesdropping attacks and other types of man-in-the-middle attacks.\r\n\r\nSensitive data in transit between a database and application always requires protection against interception by a malicious user during transport over untrusted networks. Without TLS protection, all data (including passwords) is transmitted throughout the network in plain text. With TLS the confidentiality of all data is maintained, for all message exchanges,\r\n\r\nThe use of strong cryptography, security protocols, and trusted keys/certificates is a best practice required by certification authorities and agencies.\r\n\r\n\r\n## When ##\r\n\r\nIt is always necessary to protect sensitive data transmitted or received over untrusted networks. Ensure that TLS is enabled and active for all connections.\r\n\r\n\r\n## How ##\r\n\r\nThese steps provide an overview of SSL/TLS setup. After configuration, encrypted information is exchanged through the various servers. SSL/TLS uses asymmetric methodology to exchange the secret key. A private key is used server-side while the public key is used by the client to encrypt or decrypt messages. Detailed installation instructions are available through SAP notes for the Basis in use.\r\n\r\n1. **Update the instance profile.** A prerequisite is to define various parameters, such as `ssf/name`, `ssl/ssl_lib`, `sec/libsapsecu`, and others. This is required to define the crypto library and its location. Other parameters are required to set protocol, port, and timeout value. As part of setup, the directory `sec` is created, and the SAP environment variable `.sapenv_<hostname>.sh` is modified. \r\n\r\n2. **Create Private key and Certificates and generate CSR certificate.** To begin the installation in ABAP AS, execute transaction `STRUSTSSO2` and create `SSL Server Standard`. Provide the details like DN, Algorithm and Key Length. Create a CSR request for Certificate Authority (CA). Save the file with *.csr* extension, and send the file to CA for signing.\r\n\r\n3. **Import digitally signed entrust certificates.** When the signed certificate is available, go to `STRUSTSSO2` and open `SSL Server Standard`. Under Owner, import the certificate, add it to the list, and save.\r\n\r\n4. **Restart ICM.** After restarting ICM, make sure HTTPS is active. The SSL configuration can be verified by opening `https://<fullyqualifiedname>:<HTTPS_Port>`. The LOCK icon at the bottom of the browser should show `Issued by: <Your Certificate Authority Name>`.\r\n\r\n5. **Verify TLS is active.** Check that the application is using the TLS option for database communications. If not, the setup and parameters need to be re-checked.\r\n"
+        ]
+      }
+    ]
+  }
+}

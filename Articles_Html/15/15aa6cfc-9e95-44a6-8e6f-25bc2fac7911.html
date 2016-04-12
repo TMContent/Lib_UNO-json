@@ -1,0 +1,25 @@
+<h2>Applies To</h2>
+<ul>
+<li>Ruby</li>
+</ul>
+<h2>What to Do</h2>
+<p>Anchor regular expressions (regex) with <code>\A</code> for beginning of string, and <code>\z</code> for end of string to have more predictable application behavior.</p>
+<h2>Why</h2>
+<p>The implementation of regex in Ruby uses <code>^</code> and <code>$</code> to match line beginning and line end. Most regex engines use these patterns to match the beginning and end of entire strings. If <code>^</code> and <code>$</code> are used with Ruby, then an isolated line could be used by an attacker to bypass validation. With proper use of <code>\A</code> and <code>\z</code> in Ruby regex, this type of threat is mitigated.</p>
+<h2>When</h2>
+<p>When using regex with Ruby, always remember that <code>^</code> and <code>$</code> match the line beginning and line end, and not the beginning and end of a string. Always anchor Ruby regex with <code>\A</code> and <code>\z</code>.</p>
+<h2>How</h2>
+<p>Use these steps to safely anchor regular expressions in Ruby.</p>
+<ol>
+<li>
+<p><strong>Search code for regex patterns.</strong> Search all Ruby code used in the application for expressions that begin with <code>/^</code>. Make a list of these line numbers for your change control record. An example found line is:</p>
+<p><code>/^https?:\/\/[^\n]+$/i</code></p>
+</li>
+<li>
+<p><strong>Replace unsafe regex.</strong> Edit each found line to replace <code>^</code> and <code>$</code> with <code>\A</code> and <code>\z</code> respectively, as shown in this example:</p>
+<p><code>/\Ahttps?:\/\/[^\n]+\z/i</code></p>
+</li>
+<li>
+<p><strong>Test the changed expression.</strong> Use sample text in combination with the new regex to validate it is working as expected.</p>
+</li>
+</ol>

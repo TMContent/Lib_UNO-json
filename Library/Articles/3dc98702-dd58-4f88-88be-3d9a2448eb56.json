@@ -1,0 +1,59 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "0",
+      "Content_Hash": "0"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "3dc98702-dd58-4f88-88be-3d9a2448eb56"
+        ],
+        "Library_Id": [
+          "be5273b1-d682-4361-99d9-6234f2d47eb7"
+        ],
+        "Title": [
+          "Use Strong TLS Cipher Suites"
+        ],
+        "Category": [
+          "Communication Security"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "Ruby"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          ""
+        ],
+        "Tag": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "false",
+          "DataType": "markdown"
+        },
+        "Data": [
+          "## Applies To ##\r\n\r\n- Ruby\r\n\r\n\r\n## What to Do ##\r\n\r\nConfigure Ruby to use strong TLS cipher suites.\r\n\r\n\r\n## Why ##\r\n\r\nIt is common for malicious individuals to intercept data in transit. For this reason, during public network transmissions encrypt sensitive information.\r\n\r\nChoose strong TLS cipher suites to avoid known vulnerabilities in the OpenSSL library or other suites used with Ruby applications. Weak crypto suites are subject to known attacks which will decipher and compromise confidential data.\r\n\r\n\r\n## How ##\r\n\r\nUse the following steps to configure strong TLS ciphers for Ruby.\r\n\r\n1. **Check the build date for OpenSSL.** Check that OpenSSL in use is current by examining the build date from a system console:\r\n\r\n        openssl version -a\r\n\r\n2. **Verify which version of OpenSSL library is linked to Ruby.** Check the output of the command, and update OpenSSL to the latest version if necessary:\r\n\r\n        ruby -v -ropenssl -rfiddle -e 'puts Fiddle::Function.new(Fiddle.dlopen(nil)[\"SSLeay_version\"], [Fiddle::TYPE_INT], Fiddle::TYPE_VOIDP).call(0)'\r\n\r\n3. **Configure strong ciphers.** Use the following code to configure strong ciphers into ssl_context.\r\n\r\n        ciphers = '!ADH:!RC4:!aNULL:!MD5:!EXPORT:!SSLv2:HIGH'\r\n        ssl_context.ciphers = ciphers\r\n        \r\n        # Don't use SSLv3\r\n        no_ssl_3 = OpenSSL::SSL::OP_NO_SSLv3\r\n        \r\n        # Don't use SSLv2\r\n        no_ssl_2 = OpenSSL::SSL::OP_NO_SSLv2\r\n        \r\n        # Don't use compression (CRIME CVE-2012-4929)\r\n        no_ssl_compression = OpenSSL::SSL::OP_NO_COMPRESSION\r\n        \r\n        ssl_options = no_ssl_2 + no_ssl_3 + no_ssl_compression\r\n        ssl_context.options = ssl_options\r\n\r\n"
+        ]
+      }
+    ]
+  }
+}

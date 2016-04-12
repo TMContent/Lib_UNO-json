@@ -1,0 +1,22 @@
+<h2>Applies To</h2>
+<ul>
+<li>Ruby</li>
+</ul>
+<h2>What to Do</h2>
+<p>Change the session ID for the user by resetting the session during authentication.</p>
+<h2>Why</h2>
+<p>Changing the session ID during login authentication ensures that the session state corresponds to the authenticated user.</p>
+<p>As part of the development of a secure application it is necessary to issue a new session ID to a user during the authentication process. If an attacker is permitted to use a session ID previously issued, they can assume the identity and privileges of the user during a session hijack. A properly-coded authentication process uses <code>reset_session</code>, so that unauthorized individuals cannot reuse a stale session ID.</p>
+<h2>How</h2>
+<p>To change session IDs during login:</p>
+<ol>
+<li>
+<p><strong>Identify authentication functionality.</strong> Find the code that is responsible for authentication, including repeated authentication that is required for sensitive functionality.</p>
+</li>
+<li>
+<p><strong>Determine what session parameters to save.</strong> Determine if session parameters should be retained. List the sessions parameters that need to persist for the user.</p>
+</li>
+<li>
+<p><strong>Change session IDs during authentication.</strong> Add code that invalidates the current session ID and creates a new one. To reset the entire session, use <code>reset_session</code>.</p>
+</li>
+</ol>

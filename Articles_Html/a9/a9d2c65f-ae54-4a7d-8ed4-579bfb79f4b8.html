@@ -1,0 +1,32 @@
+<h2>Applies To</h2>
+<ul>
+<li>Ruby</li>
+</ul>
+<h2>What to Do</h2>
+<p>Perform access control checks for all sensitive operations. Sensitive operations include any access to system resources, such as files, and any access to application data. Define the different types of users and create specific roles for them. When authorizing access to a resource, build the security checks on a per-role basis rather than on a per-user basis.</p>
+<h2>Why</h2>
+<p>With Ruby, everything is an object. A developer needs to consistently address the permissions on objects as they are created, updated, or destroyed.</p>
+<p>Performing an operation without checking authorization may expose sensitive data to attackers. Direct object reference attacks are very simple to execute and have been used in high profile, low-skill attacks. Checking access control permissions whenever referencing objects helps prevent direct object reference vulnerabilities.</p>
+<p>Application roles allow multiple users to play the same role, and provide a clear way to manage the least privileges necessary for the execution of a given task. This provides a more robust and flexible way of managing the application's users.</p>
+<h2>How</h2>
+<p>Check authorization for all operations by using these steps:</p>
+<ol>
+<li>
+<p><strong>Identify all operations that require authorization.</strong> Review the program architecture to list operations which require authorization. The review must also include sensitive operations performed by the program.</p>
+</li>
+<li>
+<p><strong>Identify all roles.</strong> To identify application roles, understand how users will access resources to perform necessary business functions. Create role names that accurately describe the role.</p>
+</li>
+<li>
+<p><strong>Make an access control matrix.</strong> Make a spreadsheet where the roles are the columns and the operations are the rows. For each cell in the spreadsheet, mark whether the operation is authorized for the corresponding role.</p>
+</li>
+<li>
+<p><strong>Write the centralized authorization subsystem.</strong> To implement the access permissions defined by the access control matrix it is necessary to write a centralized authorization subsystem.</p>
+</li>
+<li>
+<p><strong>Identify code for all operations that require authorization.</strong>  Review the code to identify where to place RBAC hooks. This will ensure that the application only permits operations after it is determined that the user is authorized to perform.</p>
+</li>
+<li>
+<p><strong>Add code, which checks authorization before the operation is executed, to each operation.</strong> Check authorization using a centralized function and the name of the operation. Instead of checking for specific roles here, the app should ask the centralized authorization code for authorization for the operation. If the operation is not authorized, the application should throw an error condition.</p>
+</li>
+</ol>

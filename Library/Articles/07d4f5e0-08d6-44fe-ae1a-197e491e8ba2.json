@@ -1,0 +1,59 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "0",
+      "Content_Hash": "0"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "07d4f5e0-08d6-44fe-ae1a-197e491e8ba2"
+        ],
+        "Library_Id": [
+          "be5273b1-d682-4361-99d9-6234f2d47eb7"
+        ],
+        "Title": [
+          "Encode Data in Response Headers"
+        ],
+        "Category": [
+          "Encoding"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "Ruby"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          ""
+        ],
+        "Tag": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "false",
+          "DataType": "markdown"
+        },
+        "Data": [
+          "## Applies To ##\r\n\r\n- Ruby\r\n\r\n\r\n## What to Do ##\r\n\r\nUse `URI.escape` to URL encode data that gets included in HTTP response headers.\r\n\r\n\r\n## Why ##\r\n\r\nIf an application accepts user input and includes it in HTTP response headers, there is a potential response-splitting vulnerability. Data in HTTP response headers should be URL-encoded or sanitized to mitigate this occurrence.\r\n\r\n## How ##\r\n\r\nUse `URI.escape` to escape the string and replace all unsafe characters with codes. In Ruby, encode is an alias for escape. These steps sanitize the data in response headers:\r\n\r\n1. **Identify all data included in HTTP response headers.** Identify programming functions that include data in HTTP response headers. Search your code for calls to these functions in order to find code instances that add data to HTTP response headers.\r\n\r\n2. **Validate all data included in HTTP response headers.** Use positive validation routines to check all data that gets included in HTTP response headers.\r\n\r\n3. **Encode all data included in HTTP response headers.** Use `URI::Escape` to encode data that gets included in HTTP response headers:\r\n\r\n        require 'uri'\r\n        enc_uri = URI.escape(\"http://example.com/?a=\\11\\15\")\r\n        p enc_uri\r\n        # => \"http://example.com/?a=%09%0D\"\r\n"
+        ]
+      }
+    ]
+  }
+}

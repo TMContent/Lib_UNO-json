@@ -1,0 +1,59 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "0",
+      "Content_Hash": "0"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "fddc55e0-2d03-49a4-92b4-63a1db2408b8"
+        ],
+        "Library_Id": [
+          "be5273b1-d682-4361-99d9-6234f2d47eb7"
+        ],
+        "Title": [
+          "Wrap Input in ActionController::Parameters when Performing Deserialization"
+        ],
+        "Category": [
+          "Input and Data Validation"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "Ruby"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          ""
+        ],
+        "Tag": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "false",
+          "DataType": "markdown"
+        },
+        "Data": [
+          "## Applies To ##\r\n\r\n- Ruby\r\n\r\n\r\n## What to Do ##\r\n\r\nWrap serialized input in `ActionController::Parameters` and use `strong_parameters` to white-list variables when performing deserialization.\r\n\r\n\r\n## Why ##\r\n\r\nIf the application receives input from an upstream component that specifies multiple attributes, properties, or fields that are to be initialized in an object, but it does not properly control which attributes can be modified, deserialization could be vulnerable to untrusted code revealing the serialized content.\r\n\r\nProper use of `Action:Controller::Parameters` and `strong_parameters` protects attributes from end-user assignment. By default, attributes are black-listed, and the developer chooses specific attributes to white-list for mass updating. Serialized object attributes which are not white-listed cannot be accidentally exposed or exploited by mass assignment.\r\n\r\n\r\n## When ##\r\n\r\nDuring development and implementation, use features that allow specification of white lists of attributes or fields that are allowed to be modified.\r\n\r\n\r\n## How ##\r\n\r\nUse the following steps to specify what user data can be exposed and  assigned to variables.\r\n\r\n1. **Find all code that uses ActiveRecord to parse untrusted data.** Search the code for use of `ActiveRecord` with untrusted data deserialization. Make a list of these line numbers for your change control record.\r\n\r\n2. **Wrap untrusted data in ActionController::Parameters before parsing.** Use `ActionController::Parameters` to wrap the untrusted data.\r\n\r\n3. **Use strong_parameters to prevent mass assignment.** White-list the untrusted data parameters with `params.permit`.\r\n\r\n4. **Commit code changes.** Commit the code changes and test the application. Make an entry in the change control record for the code updates."
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+<h2>Applies To</h2>
+<ul>
+<li>Ruby</li>
+</ul>
+<h2>What to Do</h2>
+<p>Check authorization before accessing system resources such as files, database connections, and network sockets.</p>
+<h2>Why</h2>
+<p>Access to system resources, such as files, must be considered by the developer. The application should check if the user is authorized to access system objects.</p>
+<p>If the application exposes a system resource to the wrong control sphere, there is inappropriate access to the resource (CWE-668).</p>
+<h2>When</h2>
+<p>The application should always check if a file or other system resource should be available to the user.</p>
+<h2>How</h2>
+<ol>
+<li>
+<p><strong>Identify all operations performed by the application.</strong> Make a spreadsheet that lists all operations implemented by the application.</p>
+</li>
+<li>
+<p><strong>Identify system resources used by the application.</strong> For each operation, determine what files, database connections, network sockets, or other system objects that are subject to access controls are being used. Add this information to the spreadsheet.</p>
+</li>
+<li>
+<p><strong>Find code that accesses system resources.</strong> Find all code that accesses system resources. Add information about this code to the spreadsheet.</p>
+</li>
+<li>
+<p><strong>Check authorization before accessing system resources.</strong> Add code that checks authorization to each function that accesses system resources before performing access to system resources. Use reference maps to restrict access to explicitly-authorized resources if possible.</p>
+</li>
+</ol>

@@ -1,22 +1,25 @@
 {
   "id": "0949fe39-0723-49ec-970b-a914bb722695",
-  "checksum": "ff52b3d5882d83b089e25da1e84767b5",
+  "checksum": "97434d3fce3d18944cbd2fb34c5001d5",
   "words": {
     "40": [
       "ul",
       "li"
     ],
     "applies": [
-      "h1"
+      "h2"
     ],
     "to": [
-      "h1",
-      "h1",
+      "h2",
+      "h2",
       "p",
       "p",
       "pre",
       "pre",
       "pre",
+      "code",
+      "code",
+      "code",
       "p",
       "p",
       "p",
@@ -25,17 +28,29 @@
       "p",
       "p",
       "pre",
-      "pre"
+      "pre",
+      "code",
+      "code"
     ],
     "aspnet": [
       "ul",
       "li"
     ],
+    "and": [
+      "ul",
+      "li",
+      "p",
+      "p"
+    ],
+    "later": [
+      "ul",
+      "li"
+    ],
     "what": [
-      "h1"
+      "h2"
     ],
     "do": [
-      "h1",
+      "h2",
       "p"
     ],
     "always": [
@@ -46,27 +61,49 @@
       "p",
       "title"
     ],
+    "either": [
+      "p"
+    ],
+    "parameterized": [
+      "p",
+      "p",
+      "p"
+    ],
     "stored": [
       "p",
       "p",
       "p",
       "p",
-      "pre",
-      "p",
-      "p",
       "p",
       "pre",
+      "code",
+      "p",
+      "p",
+      "p",
+      "pre",
+      "code",
       "title"
     ],
     "procedures": [
       "p",
       "p",
       "p",
+      "p",
       "title"
+    ],
+    "or": [
+      "p"
+    ],
+    "prepared": [
+      "p"
+    ],
+    "statements": [
+      "p",
+      "p"
     ],
     "when": [
       "p",
-      "h1"
+      "h2"
     ],
     "interacting": [
       "p"
@@ -84,37 +121,39 @@
       "pre",
       "pre",
       "pre",
+      "code",
+      "code",
+      "code",
+      "code",
       "p",
       "p",
       "pre",
       "pre",
+      "code",
+      "code",
       "p",
       "pre",
       "pre",
       "pre",
-      "pre"
+      "pre",
+      "code",
+      "code",
+      "code",
+      "code"
     ],
     "database": [
       "p",
       "p",
       "p",
       "p",
+      "p",
+      "p",
       "p"
     ],
-    "this": [
-      "p",
-      "p",
-      "pre",
-      "pre"
-    ],
-    "increases": [
+    "increase": [
       "p"
     ],
     "performance": [
-      "p"
-    ],
-    "and": [
-      "p",
       "p"
     ],
     "reduces": [
@@ -125,30 +164,39 @@
       "p",
       "p",
       "p",
-      "pre",
-      "pre",
-      "p",
       "p",
       "pre",
-      "pre",
-      "pre",
-      "pre",
-      "pre",
-      "pre",
-      "p",
-      "p",
-      "p",
-      "p",
-      "p",
-      "p",
-      "p",
-      "p",
+      "code",
       "p",
       "p",
       "pre",
       "pre",
       "pre",
       "pre",
+      "pre",
+      "pre",
+      "code",
+      "code",
+      "code",
+      "code",
+      "code",
+      "code",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "pre",
+      "pre",
+      "code",
+      "code",
       "p",
       "p",
       "p",
@@ -159,7 +207,12 @@
       "pre",
       "pre",
       "pre",
-      "pre"
+      "pre",
+      "code",
+      "code",
+      "code",
+      "code",
+      "code"
     ],
     "risk": [
       "p"
@@ -179,6 +232,7 @@
       "p",
       "p",
       "p",
+      "p",
       "title"
     ],
     "injection": [
@@ -190,16 +244,22 @@
       "p"
     ],
     "why": [
-      "h1"
+      "h2"
     ],
     "using": [
       "p",
       "p",
       "pre",
+      "code",
       "p",
       "pre",
+      "code",
       "p",
-      "pre"
+      "pre",
+      "code"
+    ],
+    "properly": [
+      "p"
     ],
     "helps": [
       "p"
@@ -210,23 +270,88 @@
     "attacks": [
       "p"
     ],
+    "means": [
+      "p"
+    ],
+    "that": [
+      "p",
+      "pre",
+      "code",
+      "p",
+      "pre",
+      "code",
+      "pre",
+      "code"
+    ],
+    "untrusted": [
+      "p"
+    ],
+    "data": [
+      "p"
+    ],
+    "is": [
+      "p",
+      "p",
+      "p",
+      "pre",
+      "code",
+      "p",
+      "pre",
+      "code"
+    ],
+    "not": [
+      "p"
+    ],
+    "concatenated": [
+      "p"
+    ],
+    "into": [
+      "p",
+      "p",
+      "pre",
+      "code"
+    ],
+    "syntax": [
+      "p",
+      "p",
+      "p"
+    ],
+    "but": [
+      "p"
+    ],
+    "substituted": [
+      "p"
+    ],
+    "developer": [
+      "p",
+      "p",
+      "p"
+    ],
+    "specified": [
+      "p"
+    ],
+    "parameters": [
+      "p",
+      "p"
+    ],
+    "by": [
+      "p",
+      "p"
+    ],
+    "engine": [
+      "p"
+    ],
     "whenever": [
       "p"
     ],
     "interaction": [
       "p"
     ],
-    "is": [
-      "p",
-      "pre",
-      "p",
-      "pre"
-    ],
     "required": [
       "p"
     ],
     "how": [
-      "h1"
+      "h2"
     ],
     "first": [
       "p",
@@ -235,15 +360,16 @@
     "procedure": [
       "p",
       "pre",
+      "code",
       "p",
       "p",
       "pre",
+      "code",
       "p"
     ],
     "will": [
       "p",
-      "pre",
-      "pre"
+      "p"
     ],
     "have": [
       "p"
@@ -262,10 +388,18 @@
     "on": [
       "p",
       "pre",
-      "pre",
-      "pre",
+      "code",
       "p",
-      "pre"
+      "pre",
+      "code",
+      "p",
+      "pre",
+      "code"
+    ],
+    "this": [
+      "p",
+      "pre",
+      "code"
     ],
     "can": [
       "p",
@@ -281,116 +415,133 @@
       "p",
       "p",
       "p",
-      "pre",
       "p",
-      "p"
-    ],
-    "syntax": [
       "p",
       "p"
     ],
     "create": [
       "pre",
+      "code",
+      "p",
+      "p",
       "p",
       "pre",
-      "p",
-      "pre"
+      "code"
     ],
-    "sp_addnewuser": [
-      "pre"
-    ],
-    "@username": [
+    "sp_addnewuser@username": [
       "pre",
-      "pre",
-      "pre"
+      "code"
     ],
     "nvarchar255),": [
       "pre",
       "pre",
-      "pre"
+      "pre",
+      "code",
+      "code",
+      "code"
     ],
     "@email": [
       "pre",
-      "pre"
+      "pre",
+      "code",
+      "code"
     ],
     "@firstname": [
       "pre",
-      "pre"
+      "pre",
+      "code",
+      "code"
     ],
     "@lastname": [
       "pre",
-      "pre"
+      "code"
     ],
     "nvarchar255))": [
       "pre",
-      "pre"
+      "code",
+      "pre",
+      "code"
     ],
     "as": [
       "pre",
+      "code",
       "p"
     ],
     "": [
       "pre",
       "pre",
-      "pre",
-      "pre"
+      "code",
+      "code"
     ],
     "insert": [
-      "pre"
+      "pre",
+      "code"
     ],
     "new": [
       "pre",
+      "code",
       "pre",
       "pre",
       "pre",
       "pre",
       "pre",
       "pre",
+      "code",
+      "code",
+      "code",
+      "code",
+      "code",
+      "code",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "code",
+      "code",
+      "code",
+      "code",
       "pre",
       "pre",
       "pre",
       "pre",
       "pre",
       "pre",
-      "pre",
-      "pre",
-      "pre",
-      "pre",
-      "pre"
+      "code",
+      "code",
+      "code",
+      "code",
+      "code",
+      "code"
     ],
     "userinsert": [
-      "pre"
-    ],
-    "into": [
-      "pre"
+      "pre",
+      "code"
     ],
     "users_tableusername,": [
-      "pre"
+      "pre",
+      "code"
     ],
     "email": [
       "pre",
+      "code",
       "pre",
+      "code",
       "pre",
-      "pre"
+      "code",
+      "pre",
+      "code"
     ],
     "firstname": [
-      "pre"
-    ],
-    "lastnamevalues(@username,": [
-      "pre"
-    ],
-    "return": [
       "pre",
-      "p"
+      "code"
     ],
-    "user’s": [
-      "pre"
+    "lastname\nvalues(@username,": [
+      "pre",
+      "code"
     ],
-    "idselect": [
-      "pre"
-    ],
-    "scope_identity)": [
-      "pre"
+    "@lastname;": [
+      "pre",
+      "code"
     ],
     "now": [
       "p",
@@ -409,40 +560,65 @@
     "code": [
       "p",
       "pre",
-      "pre",
+      "code",
+      "p",
       "p"
     ],
     "//create": [
       "pre",
-      "pre"
+      "code",
+      "pre",
+      "code",
+      "pre",
+      "code"
     ],
     "connection": [
       "pre",
       "pre",
+      "code",
+      "code",
       "pre",
       "pre",
+      "code",
+      "code",
       "pre",
-      "pre"
+      "pre",
+      "code",
+      "code"
     ],
     "our": [
       "pre",
       "pre",
       "pre",
+      "code",
+      "code",
+      "code",
+      "pre",
+      "pre",
+      "code",
+      "code",
       "pre",
       "pre",
       "pre",
-      "pre",
-      "pre"
+      "code",
+      "code",
+      "code"
     ],
     "stringsqlconnection": [
       "pre",
+      "code",
       "pre",
-      "pre"
+      "code",
+      "pre",
+      "code"
     ],
     "myconnection": [
       "pre",
+      "code",
       "pre",
-      "pre"
+      "code",
+      "pre",
+      "code"
     ],
     "=": [
       "pre",
@@ -451,6 +627,26 @@
       "pre",
       "pre",
       "pre",
+      "code",
+      "code",
+      "code",
+      "code",
+      "code",
+      "code",
+      "pre",
+      "code",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "code",
+      "code",
+      "code",
+      "code",
+      "code",
+      "pre",
+      "code",
       "pre",
       "pre",
       "pre",
@@ -458,143 +654,195 @@
       "pre",
       "pre",
       "pre",
-      "pre",
-      "pre",
-      "pre",
-      "pre",
-      "pre",
-      "pre",
-      "pre"
+      "code",
+      "code",
+      "code",
+      "code",
+      "code",
+      "code",
+      "code"
     ],
     "sqlconnectionconnection": [
       "pre",
+      "code",
       "pre",
-      "pre"
+      "code",
+      "pre",
+      "code"
     ],
-    "string;myconnection.open();//create": [
+    "string;\nmyconnection.open();\n//create": [
       "pre",
+      "code",
       "pre",
-      "pre"
+      "code",
+      "pre",
+      "code"
     ],
     "command": [
       "pre",
       "pre",
       "pre",
+      "code",
+      "code",
+      "code",
       "p",
       "pre",
       "pre",
-      "pre",
-      "pre",
-      "pre"
-    ],
-    "that": [
+      "code",
+      "code",
       "pre",
       "pre",
       "pre",
-      "pre"
+      "code",
+      "code",
+      "code"
     ],
     "specifies": [
       "pre",
+      "code",
       "pre",
-      "pre"
+      "code",
+      "pre",
+      "code"
     ],
     "store": [
       "pre",
+      "code",
       "pre",
-      "pre"
+      "code",
+      "pre",
+      "code"
     ],
     "proceduresqlcommand": [
       "pre",
-      "pre"
+      "code",
+      "pre",
+      "code"
     ],
     "mycommand": [
       "pre",
+      "code",
       "pre",
-      "pre"
+      "code",
+      "pre",
+      "code"
     ],
     "sqlcommand\"sp_addnewuser\",": [
-      "pre"
-    ],
-    "myconnection;//specify": [
       "pre",
-      "pre"
+      "code"
     ],
-    "proceduremycommandcommandtype": [
+    "myconnection;\n//specify": [
       "pre",
-      "pre"
+      "code",
+      "pre",
+      "code"
     ],
-    "commandtypestoredprocedure;//create": [
+    "proceduremycommand.commandtype": [
       "pre",
-      "pre"
+      "code",
+      "pre",
+      "code"
+    ],
+    "commandtypestoredprocedure;\n//create": [
+      "pre",
+      "code",
+      "pre",
+      "code"
     ],
     "parameter": [
       "pre",
       "pre",
       "pre",
+      "code",
+      "code",
+      "code",
       "pre",
-      "pre"
+      "pre",
+      "code",
+      "code"
     ],
     "carry": [
       "pre",
-      "pre"
+      "code",
+      "pre",
+      "code"
     ],
     "usernamesqlparameter": [
       "pre",
-      "pre"
+      "code",
+      "pre",
+      "code"
     ],
     "userparameter": [
       "pre",
-      "pre"
+      "code",
+      "pre",
+      "code"
     ],
     "sqlparameter\"@username\",": [
       "pre",
-      "pre"
-    ],
-    "sqldbtypevarchar);userparameter.direction": [
+      "code",
       "pre",
-      "pre"
+      "code"
     ],
-    "parameterdirectioninput;userparameter.value": [
+    "sqldbtypevarchar);\nuserparameter.direction": [
       "pre",
-      "pre"
+      "code",
+      "pre",
+      "code"
     ],
-    "\"testuser\"//add": [
-      "pre"
+    "parameterdirectioninput;\nuserparameter.value": [
+      "pre",
+      "code",
+      "pre",
+      "code"
     ],
-    "commandmycommandparameters.add(userparameter);//repeat": [
-      "pre"
+    "\"testuser\"\n//add": [
+      "pre",
+      "code"
+    ],
+    "commandmycommand.parameters.add(userparameter);\n//repeat": [
+      "pre",
+      "code"
     ],
     "add": [
-      "pre"
+      "pre",
+      "code"
     ],
     "commands": [
-      "pre"
+      "pre",
+      "code"
     ],
     "for": [
       "pre",
+      "code",
       "title"
     ],
     "each": [
-      "pre"
+      "pre",
+      "code"
     ],
     "in": [
       "pre",
+      "code",
       "p",
       "p"
     ],
     "sproc//execute": [
-      "pre"
+      "pre",
+      "code"
     ],
-    "databasemycommandexecutenonquery();": [
-      "pre"
+    "databasemycommand.executenonquery();": [
+      "pre",
+      "code"
     ],
     "problem": [
-      "h1"
+      "h2"
     ],
     "example": [
-      "h1",
+      "h2",
       "p",
-      "h1"
+      "h2"
     ],
     "there": [
       "p"
@@ -633,20 +881,13 @@
     "statement": [
       "p",
       "p",
-      "pre",
+      "p",
       "p"
     ],
     "without": [
       "p"
     ],
     "bound": [
-      "p"
-    ],
-    "parameters": [
-      "p"
-    ],
-    "developer": [
-      "p",
       "p"
     ],
     "has": [
@@ -658,18 +899,13 @@
     "select": [
       "p",
       "pre",
-      "p"
-    ],
-    "by": [
+      "code",
       "p"
     ],
     "appending": [
       "p"
     ],
     "components": [
-      "p"
-    ],
-    "statements": [
       "p"
     ],
     "together": [
@@ -690,13 +926,16 @@
     ],
     "execute": [
       "p",
-      "pre"
+      "p"
     ],
     "where": [
       "p",
       "pre",
+      "code",
       "pre",
-      "pre"
+      "code",
+      "pre",
+      "code"
     ],
     "username]": [
       "p"
@@ -704,8 +943,11 @@
     "username": [
       "p",
       "pre",
+      "code",
       "pre",
-      "pre"
+      "code",
+      "pre",
+      "code"
     ],
     "whose": [
       "p"
@@ -722,64 +964,84 @@
     "like": [
       "p"
     ],
+    "return": [
+      "p"
+    ],
     "from": [
       "pre",
+      "code",
       "pre",
+      "code",
       "pre",
+      "code",
       "p"
     ],
     "users_table": [
       "pre",
+      "code",
       "pre",
-      "pre"
+      "code",
+      "pre",
+      "code"
     ],
     "username];": [
-      "pre"
+      "pre",
+      "code"
     ],
     "an": [
-      "pre"
+      "p"
     ],
     "it": [
-      "pre"
-    ],
-    "database//create": [
-      "pre"
+      "p"
     ],
     "procedurestring": [
-      "pre"
+      "pre",
+      "code"
     ],
     "selectcommand": [
-      "pre"
+      "pre",
+      "code"
     ],
     "\"select": [
-      "pre"
+      "pre",
+      "code"
     ],
     "\"": [
-      "pre"
+      "pre",
+      "code"
     ],
     "+": [
-      "pre"
+      "pre",
+      "code"
     ],
-    "usernameboxtext;sqlcommand": [
-      "pre"
+    "usernameboxtext;\nsqlcommand": [
+      "pre",
+      "code"
     ],
-    "sqlcommandselectcommand);//execute": [
-      "pre"
+    "sqlcommandselectcommand);\n//execute": [
+      "pre",
+      "code"
     ],
     "databasesqldatareader": [
       "pre",
-      "pre"
+      "code",
+      "pre",
+      "code"
     ],
     "myreader": [
       "pre",
-      "pre"
+      "code",
+      "pre",
+      "code"
     ],
     "mycommandexecutereader();": [
       "pre",
-      "pre"
+      "code",
+      "pre",
+      "code"
     ],
     "solution": [
-      "h1"
+      "h2"
     ],
     "needs": [
       "p"
@@ -795,22 +1057,33 @@
       "p"
     ],
     "sp_returnemail": [
-      "pre"
+      "pre",
+      "code"
+    ],
+    "@username": [
+      "pre",
+      "pre",
+      "code",
+      "code"
     ],
     "asselect": [
-      "pre"
+      "pre",
+      "code"
     ],
     "query": [
       "p"
     ],
     "sqlcommand\"sp_returnemail\",": [
-      "pre"
+      "pre",
+      "code"
     ],
-    "username];//add": [
-      "pre"
+    "username];\n//add": [
+      "pre",
+      "code"
     ],
-    "commandmycommandparameters.add(userparameter);//execute": [
-      "pre"
+    "commandmycommand.parameters.add(userparameter);\n//execute": [
+      "pre",
+      "code"
     ],
     "adapted": [
       "p"

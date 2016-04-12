@@ -1,7 +1,11 @@
+<h2>Applies To</h2>
+<ul>
+<li>C++</li>
+</ul>
 <h2>What to Do</h2>
 <p>Use locks with mutexes, instead of manual locking and unlocking.</p>
 <h2>Why</h2>
-<p>Using <code>std::lock_guard</code> makes it simpler to prevent deadlocks, because it unlocks mutexes automaticaly when a function exits.</p>
+<p>Using std::lock_guard makes it simpler to prevent deadlocks, because it unlocks mutexes automaticaly when a function exits.</p>
 <h2>How</h2>
 <p>Perform the following actions to use locks with mutexes:</p>
 <ol>
@@ -16,7 +20,7 @@
 </li>
 </ol>
 <h2>Solution Example</h2>
-<p>In the following example, a lock is being used with the mutex. Notice that nothing else is necessary to assure concurrency when using a lock. Yes, it really is that simple.</p>
+<p>In the following example, a lock is being used with the mutex. Notice that nothing else is necessary to assure concurrency when using a lock.</p>
 <pre><code>static std::mutex mutex;
 
 void function(){
@@ -27,4 +31,6 @@ const std::lock_guard&lt;std::mutex&gt;(mutex);
 }
 </code></pre>
 <h2>Additional Resources</h2>
-<p>For more information about using locks with mutexes, see <a href="https://www.securecoding.cert.org/confluence/display/cplusplus/CON02-CPP.+Use+lock+classes+for+mutex+management">https://www.securecoding.cert.org/confluence/display/cplusplus/CON02-CPP.+Use+lock+classes+for+mutex+management</a></p>
+<ul>
+<li>For more information about using locks with mutexes, see <a href="https://www.securecoding.cert.org/confluence/display/cplusplus/CON02-CPP.+Use+lock+classes+for+mutex+management">https://www.securecoding.cert.org/confluence/display/cplusplus/CON02-CPP.+Use+lock+classes+for+mutex+management</a></li>
+</ul>

@@ -1,17 +1,13 @@
 {
   "id": "5f55ac00-bb90-439e-a5fd-a85e9a327175",
-  "checksum": "bf0b51f7bc0d51e65f518dcce2bead45",
+  "checksum": "e69b7bc6180948e9484cae2ade625d9c",
   "words": {
     "applies": [
-      "h1"
+      "h2"
     ],
     "to": [
-      "h1",
-      "h1",
-      "p",
-      "p",
-      "p",
-      "p",
+      "h2",
+      "h2",
       "p",
       "p",
       "p",
@@ -19,21 +15,21 @@
       "ol",
       "ol",
       "ol",
+      "ol",
+      "ol",
       "li",
+      "li",
+      "li",
+      "p",
+      "p",
       "p",
       "li",
       "li",
       "li",
-      "p",
       "p",
       "p",
       "pre",
-      "p",
-      "p",
-      "p",
-      "p",
-      "p",
-      "p"
+      "code"
     ],
     "applications": [
       "ul",
@@ -47,6 +43,9 @@
       "ul",
       "li",
       "ol",
+      "ol",
+      "li",
+      "p",
       "li",
       "p"
     ],
@@ -57,35 +56,42 @@
     "or": [
       "ul",
       "li",
-      "p",
       "ol",
       "li",
-      "p",
-      "pre"
+      "pre",
+      "code"
     ],
     "jsp": [
       "ul",
       "li"
     ],
     "what": [
-      "h1"
+      "h2"
     ],
     "do": [
-      "h1",
-      "p"
+      "h2"
     ],
     "use": [
       "p",
       "p",
       "p",
+      "ol",
+      "li",
       "p",
+      "title"
+    ],
+    "parameterized": [
+      "p",
+      "p",
+      "p",
+      "ol",
+      "li",
       "p",
       "title"
     ],
     "stored": [
       "p",
       "p",
-      "p",
       "ol",
       "ol",
       "ol",
@@ -103,22 +109,17 @@
       "strong",
       "li",
       "p",
-      "strong",
       "li",
       "p",
-      "p",
-      "p",
+      "strong",
       "title"
     ],
     "procedures": [
       "p",
-      "p",
       "ol",
       "ol",
       "li",
       "li",
-      "p",
-      "p",
       "p",
       "p",
       "title"
@@ -130,6 +131,7 @@
       "p"
     ],
     "with": [
+      "p",
       "p"
     ],
     "a": [
@@ -139,14 +141,9 @@
       "p",
       "ol",
       "li",
-      "p",
-      "p",
       "p"
     ],
     "database": [
-      "p",
-      "p",
-      "p",
       "p",
       "ol",
       "ol",
@@ -163,18 +160,12 @@
       "p",
       "strong",
       "li",
-      "p",
-      "p",
-      "p",
       "p"
     ],
     "if": [
       "p"
     ],
     "other": [
-      "p"
-    ],
-    "parameterized": [
       "p"
     ],
     "apis": [
@@ -185,13 +176,14 @@
     ],
     "not": [
       "p",
+      "ol",
+      "li",
       "p"
     ],
     "available": [
       "p"
     ],
     "this": [
-      "p",
       "p",
       "ol",
       "li",
@@ -206,6 +198,9 @@
     "and": [
       "p",
       "ol",
+      "ol",
+      "li",
+      "p",
       "li",
       "p"
     ],
@@ -216,37 +211,32 @@
       "p",
       "p",
       "p",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li",
       "p",
-      "p",
-      "p",
-      "ol",
-      "ol",
-      "ol",
-      "ol",
-      "ol",
-      "ol",
-      "ol",
-      "ol",
-      "ol",
-      "ol",
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "li",
-      "li",
-      "li",
       "p",
       "p",
       "p",
       "p",
       "p",
       "strong",
-      "strong",
-      "li",
-      "li",
-      "p",
-      "p",
       "strong",
       "li",
       "li",
@@ -259,29 +249,16 @@
       "p",
       "p",
       "strong",
+      "li",
+      "li",
       "p",
       "p",
-      "p",
-      "p",
-      "p",
-      "p",
-      "p",
-      "p",
-      "p",
-      "p",
-      "p",
-      "p",
-      "p",
-      "p",
-      "p"
+      "strong"
     ],
     "risk": [
       "p"
     ],
     "of": [
-      "p",
-      "p",
-      "p",
       "p",
       "p"
     ],
@@ -292,20 +269,20 @@
       "p",
       "p",
       "p",
+      "ol",
+      "li",
       "p"
     ],
     "injection": [
       "p",
       "p",
-      "p",
       "p"
     ],
     "attack": [
-      "p",
       "p"
     ],
     "why": [
-      "h1"
+      "h2"
     ],
     "attackers": [
       "p"
@@ -315,90 +292,46 @@
       "p",
       "ol",
       "li",
-      "p",
-      "p",
       "p"
     ],
-    "manipulate": [
+    "execute": [
       "p",
+      "ol",
+      "ol",
+      "li",
+      "li",
       "p",
+      "pre",
+      "code"
+    ],
+    "arbitrary": [
       "p"
     ],
-    "in": [
-      "p",
+    "queries": [
       "p"
     ],
-    "unforeseen": [
+    "privileges": [
       "p"
     ],
-    "ways": [
-      "p"
-    ],
-    "allows": [
-      "p"
-    ],
-    "an": [
-      "p",
+    "application": [
       "p",
       "ol",
       "li",
       "p"
     ],
-    "attacker": [
+    "under": [
       "p"
     ],
-    "assume": [
+    "certain": [
       "p"
     ],
-    "credentials": [
-      "p"
-    ],
-    "account": [
-      "p"
-    ],
-    "used": [
-      "p"
-    ],
-    "connect": [
-      "p"
-    ],
-    "which": [
-      "p"
-    ],
-    "may": [
-      "p"
-    ],
-    "lead": [
-      "p",
-      "p"
-    ],
-    "arbitrary": [
-      "p"
-    ],
-    "reading": [
-      "p"
-    ],
-    "writing": [
-      "p"
-    ],
-    "updating": [
-      "p"
-    ],
-    "deleting": [
-      "p"
-    ],
-    "data": [
-      "p",
-      "p",
-      "p"
-    ],
-    "improperly": [
-      "p"
-    ],
-    "secured": [
+    "conditions": [
       "p"
     ],
     "also": [
+      "p"
+    ],
+    "lead": [
       "p"
     ],
     "remote": [
@@ -406,47 +339,15 @@
     ],
     "code": [
       "p",
-      "p",
+      "ol",
+      "li",
       "p"
     ],
     "execution": [
       "p"
     ],
-    "through": [
-      "p"
-    ],
-    "certain": [
-      "p"
-    ],
-    "that": [
-      "p",
-      "p"
-    ],
-    "allow": [
-      "p",
-      "ol",
-      "li",
-      "p",
-      "p",
-      "p"
-    ],
-    "for": [
-      "p"
-    ],
-    "direct": [
-      "p"
-    ],
-    "operating": [
-      "p"
-    ],
-    "system": [
-      "p"
-    ],
-    "command": [
-      "p"
-    ],
     "how": [
-      "h1"
+      "h2"
     ],
     "procedure": [
       "p",
@@ -460,14 +361,14 @@
       "li",
       "p",
       "p",
-      "p",
       "strong",
       "pre",
+      "code",
       "li",
       "p",
-      "strong",
       "li",
-      "p"
+      "p",
+      "strong"
     ],
     "create": [
       "ol",
@@ -478,9 +379,9 @@
       "li",
       "p",
       "p",
-      "p",
       "strong",
-      "pre"
+      "pre",
+      "code"
     ],
     "on": [
       "ol",
@@ -489,12 +390,9 @@
       "ol",
       "ol",
       "ol",
-      "ol",
       "li",
       "li",
       "li",
-      "li",
-      "p",
       "p",
       "p",
       "p",
@@ -503,11 +401,10 @@
       "li",
       "li",
       "p",
-      "p",
-      "p",
       "pre",
       "pre",
-      "p"
+      "code",
+      "code"
     ],
     "since": [
       "ol",
@@ -523,15 +420,11 @@
       "ol",
       "ol",
       "ol",
-      "ol",
-      "li",
       "li",
       "li",
       "p",
       "p",
-      "p",
       "li",
-      "p",
       "p"
     ],
     "you": [
@@ -545,7 +438,6 @@
     "need": [
       "ol",
       "li",
-      "p",
       "p"
     ],
     "appropriate": [
@@ -571,8 +463,81 @@
     "application's": [
       "ol",
       "li",
+      "p"
+    ],
+    "make": [
+      "ol",
+      "li",
+      "p"
+    ],
+    "sure": [
+      "ol",
+      "li",
+      "p"
+    ],
+    "concatenate": [
+      "ol",
+      "li",
+      "p"
+    ],
+    "untrusted": [
+      "ol",
+      "li",
+      "p"
+    ],
+    "data": [
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
+      "p"
+    ],
+    "into": [
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "li",
       "p",
       "p",
+      "pre",
+      "code"
+    ],
+    "syntax": [
+      "ol",
+      "li",
+      "p"
+    ],
+    "but": [
+      "ol",
+      "li",
+      "p"
+    ],
+    "parameters": [
+      "ol",
+      "li",
+      "p"
+    ],
+    "let": [
+      "ol",
+      "li",
+      "p"
+    ],
+    "engine": [
+      "ol",
+      "li",
+      "p"
+    ],
+    "substitute": [
+      "ol",
+      "li",
+      "p"
+    ],
+    "them": [
+      "ol",
+      "li",
       "p"
     ],
     "following": [
@@ -581,8 +546,6 @@
       "li",
       "p",
       "li",
-      "p",
-      "p",
       "p"
     ],
     "example": [
@@ -594,16 +557,9 @@
       "li",
       "li",
       "p",
-      "p",
-      "h1",
-      "h1"
-    ],
-    "creates": [
-      "ol",
-      "li",
       "p"
     ],
-    "oracle": [
+    "creates": [
       "ol",
       "li",
       "p"
@@ -611,14 +567,14 @@
     "replace": [
       "ol",
       "li",
-      "p",
-      "pre"
+      "pre",
+      "code"
     ],
     "placeordercustid": [
       "ol",
       "li",
-      "p",
-      "pre"
+      "pre",
+      "code"
     ],
     "int": [
       "ol",
@@ -627,262 +583,102 @@
       "li",
       "li",
       "li",
-      "p",
-      "p",
-      "p",
       "pre",
       "pre",
-      "pre"
+      "pre",
+      "code",
+      "code",
+      "code"
     ],
     "itemid": [
       "ol",
       "ol",
       "li",
       "li",
-      "p",
-      "p",
       "pre",
-      "pre"
+      "pre",
+      "code",
+      "code"
     ],
     "qty": [
       "ol",
       "li",
-      "p",
-      "pre"
+      "pre",
+      "code"
     ],
-    "isbegin": [
+    "as": [
       "ol",
       "li",
-      "p",
-      "pre"
+      "pre",
+      "code"
     ],
     "insert": [
       "ol",
       "li",
-      "p",
-      "pre"
-    ],
-    "into": [
-      "ol",
-      "li",
-      "p",
       "pre",
-      "p",
-      "pre",
-      "p"
+      "code"
     ],
     "pendingpurchases": [
       "ol",
       "ol",
       "ol",
       "li",
-      "p",
       "pre",
+      "code",
       "li",
       "li",
       "p",
-      "em",
-      "p",
       "pre",
-      "p",
-      "em",
-      "pre",
-      "p",
-      "em"
+      "code"
     ],
     "customer,": [
       "ol",
       "li",
-      "p",
-      "pre"
+      "pre",
+      "code"
     ],
     "item": [
       "ol",
       "li",
-      "p",
       "pre",
-      "pre"
+      "code"
     ],
     "quantity": [
       "ol",
       "li",
-      "p",
       "pre",
-      "pre"
+      "code"
     ],
     "values": [
       "ol",
       "li",
-      "p",
       "pre",
-      "pre"
+      "code"
     ],
     "custid,": [
       "ol",
       "li",
-      "p",
-      "pre"
+      "pre",
+      "code"
     ],
-    "qty;end": [
+    "qty;": [
+      "ol",
       "ol",
       "li",
-      "p",
-      "pre"
+      "pre",
+      "code",
+      "li",
+      "pre",
+      "code"
     ],
-    "placeorder": [
-      "ol",
-      "ol",
+    "end": [
       "ol",
       "li",
-      "p",
       "pre",
-      "li",
-      "li",
-      "p",
-      "em",
-      "p",
-      "pre"
+      "code"
     ],
-    "call": [
-      "ol",
-      "li",
-      "p",
-      "strong"
-    ],
-    "be": [
-      "ol",
-      "li",
-      "p"
-    ],
-    "done using": [
-      "ol",
-      "li",
-      "p"
-    ],
-    "java": [
-      "ol",
-      "li",
-      "p"
-    ],
-    "codeconnection": [
-      "ol",
-      "li",
-      "p"
-    ],
-    "cn": [
-      "ol",
-      "li",
-      "p",
-      "pre",
-      "pre",
-      "pre"
-    ],
-    "=": [
-      "ol",
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "li",
-      "p",
-      "p",
-      "p",
-      "pre",
-      "pre",
-      "pre",
-      "pre",
-      "pre",
-      "pre",
-      "pre"
-    ],
-    "myappgetdbconnection();preparedstatement": [
-      "ol",
-      "li",
-      "p",
-      "pre",
-      "pre",
-      "pre"
-    ],
-    "st": [
-      "ol",
-      "li",
-      "p",
-      "pre",
-      "pre",
-      "pre"
-    ],
-    "cnpreparestatement(\"exec": [
-      "ol",
-      "li",
-      "p",
-      "pre",
-      "pre"
-    ],
-    "placeorder?,": [
-      "ol",
-      "li",
-      "p",
-      "pre",
-      "pre"
-    ],
-    "?": [
-      "ol",
-      "li",
-      "p",
-      "pre",
-      "pre",
-      "pre"
-    ],
-    "?;\");st.setint(1,": [
-      "ol",
-      "li",
-      "p",
-      "pre",
-      "pre",
-      "pre"
-    ],
-    "custid;st.setint(2,": [
-      "ol",
-      "li",
-      "p",
-      "pre",
-      "pre",
-      "pre"
-    ],
-    "itemid;st.setint(3,": [
-      "ol",
-      "li",
-      "p",
-      "pre",
-      "pre",
-      "pre"
-    ],
-    "qty;resultset": [
-      "ol",
-      "li",
-      "p",
-      "pre"
-    ],
-    "rs": [
-      "ol",
-      "li",
-      "p",
-      "pre"
-    ],
-    "stexecutequery();": [
-      "ol",
-      "li",
-      "p",
-      "pre"
-    ],
-    "assign": [
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "p",
-      "p",
-      "strong"
+    "placeorder\n\n\n\nassign": [
+      "ol"
     ],
     "permissions": [
       "ol",
@@ -891,8 +687,7 @@
       "li",
       "p",
       "p",
-      "strong",
-      "p"
+      "strong"
     ],
     "once": [
       "ol",
@@ -909,30 +704,35 @@
       "li",
       "p"
     ],
+    "assign": [
+      "ol",
+      "li",
+      "li",
+      "p",
+      "p",
+      "strong"
+    ],
     "above": [
       "ol",
       "li",
       "p"
     ],
-    "application": [
+    "allow": [
       "ol",
       "li",
-      "p",
-      "p",
-      "p",
-      "p",
-      "p",
       "p"
     ],
-    "execute": [
+    "placeorder": [
       "ol",
       "ol",
       "li",
+      "pre",
+      "code",
       "li",
-      "p",
+      "li",
       "p",
       "pre",
-      "p"
+      "code"
     ],
     "deny": [
       "ol",
@@ -942,7 +742,6 @@
     "it": [
       "ol",
       "li",
-      "p",
       "p"
     ],
     "access": [
@@ -953,136 +752,174 @@
     "revoke": [
       "ol",
       "li",
-      "p",
-      "pre"
+      "pre",
+      "code"
     ],
     "all": [
       "ol",
       "li",
-      "p",
-      "pre"
+      "pre",
+      "code"
     ],
     "from": [
       "ol",
       "li",
-      "p",
-      "pre"
-    ],
-    "myappgrant": [
-      "ol",
-      "li",
-      "p",
-      "pre"
+      "pre",
+      "code"
     ],
     "myapp": [
       "ol",
       "li",
-      "p",
-      "pre"
-    ],
-    "connection": [
+      "li",
       "pre",
       "pre",
-      "pre"
-    ],
-    "problem": [
-      "h1"
-    ],
-    "places": [
-      "p",
-      "p"
-    ],
-    "new": [
-      "p",
-      "p"
-    ],
-    "order": [
-      "p",
-      "p"
-    ],
-    "backend": [
-      "p",
-      "p"
-    ],
-    "because": [
-      "p",
-      "p"
-    ],
-    "does": [
-      "p"
-    ],
-    "developers": [
-      "p",
-      "p"
+      "code",
+      "code"
     ],
     "grant": [
-      "p"
-    ],
-    "extra": [
-      "p"
-    ],
-    "priviliges": [
-      "p"
-    ],
-    "directly": [
-      "p",
-      "p"
-    ],
-    "inside": [
-      "p",
-      "p"
-    ],
-    "table": [
-      "p"
-    ],
-    "cnpreparestatement(\"insert": [
-      "pre"
-    ],
-    "\"": [
-      "pre"
-    ],
-    "+": [
-      "pre"
-    ],
-    "\"customer,": [
-      "pre"
-    ],
-    "?,": [
-      "pre"
-    ],
-    "qty;": [
+      "ol",
+      "li",
       "pre",
-      "pre"
+      "code"
     ],
-    "solution": [
-      "h1"
+    "myapp\n\n\n\ncall": [
+      "ol"
     ],
-    "uses": [
+    "be": [
+      "ol",
+      "li",
       "p"
     ],
-    "without": [
+    "done": [
+      "ol",
+      "li",
       "p"
     ],
-    "giving": [
+    "java": [
+      "ol",
+      "li",
       "p"
     ],
-    "so": [
-      "p"
+    "connection": [
+      "ol",
+      "li",
+      "pre",
+      "code"
     ],
-    "therefore": [
-      "p"
+    "cn": [
+      "ol",
+      "li",
+      "pre",
+      "code"
     ],
-    "further": [
-      "p"
+    "=": [
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "li",
+      "pre",
+      "pre",
+      "pre",
+      "code",
+      "code",
+      "code"
     ],
-    "restricting": [
-      "p"
+    "myappgetdbconnection();": [
+      "ol",
+      "li",
+      "pre",
+      "code"
     ],
-    "set": [
-      "p"
+    "preparedstatement": [
+      "ol",
+      "li",
+      "pre",
+      "code"
     ],
-    "operations": [
-      "p"
+    "st": [
+      "ol",
+      "li",
+      "pre",
+      "code"
+    ],
+    "cnpreparestatement(\"exec": [
+      "ol",
+      "li",
+      "pre",
+      "code"
+    ],
+    "placeorder?,": [
+      "ol",
+      "li",
+      "pre",
+      "code"
+    ],
+    "?": [
+      "ol",
+      "li",
+      "pre",
+      "code"
+    ],
+    "?;\");": [
+      "ol",
+      "li",
+      "pre",
+      "code"
+    ],
+    "stsetint(1,": [
+      "ol",
+      "li",
+      "pre",
+      "code"
+    ],
+    "custid;": [
+      "ol",
+      "li",
+      "pre",
+      "code"
+    ],
+    "stsetint(2,": [
+      "ol",
+      "li",
+      "pre",
+      "code"
+    ],
+    "itemid;": [
+      "ol",
+      "li",
+      "pre",
+      "code"
+    ],
+    "stsetint(3,": [
+      "ol",
+      "li",
+      "pre",
+      "code"
+    ],
+    "resultset": [
+      "ol",
+      "li",
+      "pre",
+      "code"
+    ],
+    "rs": [
+      "ol",
+      "li",
+      "pre",
+      "code"
+    ],
+    "stexecutequery();": [
+      "ol",
+      "li",
+      "pre",
+      "code"
+    ],
+    "call": [
+      "li",
+      "p",
+      "strong"
     ]
   },
   "tags": {},

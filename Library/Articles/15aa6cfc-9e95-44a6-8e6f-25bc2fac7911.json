@@ -1,0 +1,59 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "0",
+      "Content_Hash": "0"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "15aa6cfc-9e95-44a6-8e6f-25bc2fac7911"
+        ],
+        "Library_Id": [
+          "be5273b1-d682-4361-99d9-6234f2d47eb7"
+        ],
+        "Title": [
+          "Anchor Regular Expressions Using \\A and \\z"
+        ],
+        "Category": [
+          "Input and Data Validation"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "Ruby"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          ""
+        ],
+        "Tag": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "false",
+          "DataType": "markdown"
+        },
+        "Data": [
+          "## Applies To ##\r\n\r\n- Ruby\r\n\r\n\r\n## What to Do ##\r\n\r\nAnchor regular expressions (regex) with `\\A` for beginning of string, and `\\z` for end of string to have more predictable application behavior.\r\n\r\n\r\n## Why ##\r\n\r\nThe implementation of regex in Ruby uses `^` and `$` to match line beginning and line end. Most regex engines use these patterns to match the beginning and end of entire strings. If `^` and `$` are used with Ruby, then an isolated line could be used by an attacker to bypass validation. With proper use of `\\A` and `\\z` in Ruby regex, this type of threat is mitigated.\r\n\r\n\r\n## When ##\r\n\r\nWhen using regex with Ruby, always remember that `^` and `$` match the line beginning and line end, and not the beginning and end of a string. Always anchor Ruby regex with `\\A` and `\\z`.\r\n\r\n\r\n## How ##\r\n\r\nUse these steps to safely anchor regular expressions in Ruby.\r\n\r\n1. **Search code for regex patterns.** Search all Ruby code used in the application for expressions that begin with `/^`. Make a list of these line numbers for your change control record. An example found line is:\r\n\r\n    `/^https?:\\/\\/[^\\n]+$/i`\r\n\r\n2. **Replace unsafe regex.** Edit each found line to replace `^` and `$` with `\\A` and `\\z` respectively, as shown in this example:\r\n\r\n    `/\\Ahttps?:\\/\\/[^\\n]+\\z/i`\r\n\r\n3. **Test the changed expression.** Use sample text in combination with the new regex to validate it is working as expected.\r\n\r\n"
+        ]
+      }
+    ]
+  }
+}

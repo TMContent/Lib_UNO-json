@@ -1,11 +1,12 @@
 {
   "id": "41b5df05-32be-44df-93b6-f3cb4117f676",
-  "checksum": "74d58908bca695a95471c6104662f3b2",
+  "checksum": "6425e113c51bd0efdc923351a239281c",
   "words": {
-    "what": [
+    "applies": [
       "h2"
     ],
     "to": [
+      "h2",
       "h2",
       "p",
       "p",
@@ -17,6 +18,13 @@
       "p",
       "p",
       "title"
+    ],
+    "c++": [
+      "ul",
+      "li"
+    ],
+    "what": [
+      "h2"
     ],
     "do": [
       "h2"
@@ -39,14 +47,16 @@
       "p",
       "p",
       "strong",
-      "p",
+      "ul",
+      "li",
       "title"
     ],
     "with": [
       "p",
       "p",
       "p",
-      "p",
+      "ul",
+      "li",
       "title"
     ],
     "mutexes": [
@@ -59,7 +69,8 @@
       "p",
       "li",
       "p",
-      "p",
+      "ul",
+      "li",
       "title"
     ],
     "instead": [
@@ -98,17 +109,16 @@
     "using": [
       "p",
       "p",
-      "p"
+      "ul",
+      "li"
     ],
     "std:lock_guard": [
-      "p",
-      "code"
+      "p"
     ],
     "makes": [
       "p"
     ],
     "it": [
-      "p",
       "p",
       "p"
     ],
@@ -210,7 +220,8 @@
       "ol",
       "li",
       "p",
-      "p"
+      "ul",
+      "li"
     ],
     "that": [
       "ol",
@@ -218,7 +229,6 @@
       "li",
       "p",
       "li",
-      "p",
       "p",
       "p"
     ],
@@ -373,7 +383,6 @@
       "li",
       "p",
       "p",
-      "p",
       "p"
     ],
     "now": [
@@ -426,15 +435,6 @@
     "concurrency": [
       "p"
     ],
-    "yes": [
-      "p"
-    ],
-    "really": [
-      "p"
-    ],
-    "simple": [
-      "p"
-    ],
     "static": [
       "pre",
       "code"
@@ -466,23 +466,29 @@
       "h2"
     ],
     "more": [
-      "p"
+      "ul",
+      "li"
     ],
     "information": [
-      "p"
+      "ul",
+      "li"
     ],
     "about": [
-      "p"
+      "ul",
+      "li"
     ],
     "see": [
-      "p"
+      "ul",
+      "li"
     ],
     "https//www.securecoding.cert.org/confluence/display/cplusplus/con02": [
-      "p",
+      "ul",
+      "li",
       "a"
     ],
     "cpp.+use+lock+classes+for+mutex+management": [
-      "p",
+      "ul",
+      "li",
       "a"
     ],
     "avoid": [

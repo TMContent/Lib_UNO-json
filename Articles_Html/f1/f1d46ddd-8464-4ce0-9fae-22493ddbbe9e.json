@@ -1,36 +1,26 @@
 {
   "id": "f1d46ddd-8464-4ce0-9fae-22493ddbbe9e",
-  "checksum": "a44ff0cd3cf8eaf86f88872ac28bee55",
+  "checksum": "e155413bc96ab9c38f6c6859acf25338",
   "words": {
-    "applies": [
-      "h1"
-    ],
-    "to": [
-      "h1",
-      "h1",
-      "p",
-      "ol",
-      "ol",
-      "ol",
-      "li",
-      "p",
-      "li",
-      "li",
-      "p",
+    "what": [
+      "h2",
       "p"
     ],
-    "c++": [
-      "ul",
-      "li"
-    ],
-    "what": [
-      "h1",
+    "to": [
+      "h2",
+      "p",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "p",
+      "li",
+      "li",
+      "p",
       "p"
     ],
     "do": [
-      "h1",
-      "ul",
-      "li"
+      "h2"
     ],
     "avoid": [
       "p",
@@ -83,8 +73,6 @@
       "li",
       "p",
       "ul",
-      "ul",
-      "li",
       "li",
       "title"
     ],
@@ -100,8 +88,6 @@
       "ol",
       "ol",
       "ol",
-      "ol",
-      "ol",
       "li",
       "li",
       "p",
@@ -114,8 +100,6 @@
       "li",
       "p",
       "ul",
-      "ul",
-      "li",
       "li",
       "title"
     ],
@@ -161,8 +145,6 @@
       "p",
       "p",
       "ul",
-      "ul",
-      "li",
       "li",
       "title"
     ],
@@ -191,7 +173,6 @@
     "use": [
       "p",
       "p",
-      "ol",
       "ol",
       "ol",
       "li",
@@ -282,7 +263,7 @@
       "p"
     ],
     "why": [
-      "h1"
+      "h2"
     ],
     "placing": [
       "p",
@@ -424,7 +405,7 @@
       "p"
     ],
     "when": [
-      "h1"
+      "h2"
     ],
     "this": [
       "p",
@@ -443,7 +424,7 @@
       "p"
     ],
     "how": [
-      "h1"
+      "h2"
     ],
     "follow": [
       "p"
@@ -525,9 +506,7 @@
     "shared": [
       "ol",
       "li",
-      "p",
-      "ul",
-      "li"
+      "p"
     ],
     "memory": [
       "ol",
@@ -549,21 +528,8 @@
       "li",
       "p"
     ],
-    "calls": [
-      "ol",
-      "li",
-      "p"
-    ],
-    "secure": [
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "p",
-      "p",
-      "strong",
-      "ul",
-      "li"
+    "calls\n\n\nsecure": [
+      "ol"
     ],
     "directory": [
       "ol",
@@ -580,9 +546,7 @@
     "create": [
       "ol",
       "li",
-      "p",
-      "ul",
-      "li"
+      "p"
     ],
     "a": [
       "ol",
@@ -594,6 +558,16 @@
       "li",
       "p"
     ],
+    "secure": [
+      "ol",
+      "li",
+      "li",
+      "p",
+      "p",
+      "strong",
+      "ul",
+      "li"
+    ],
     "it": [
       "ol",
       "ol",
@@ -601,6 +575,9 @@
       "p",
       "li",
       "p"
+    ],
+    "files\n\n\nuse": [
+      "ol"
     ],
     "unique": [
       "ol",
@@ -643,11 +620,8 @@
       "li",
       "p"
     ],
-    "clean": [
-      "ol",
-      "li",
-      "p",
-      "strong"
+    "files\n\n\nclean": [
+      "ol"
     ],
     "up": [
       "ol",
@@ -655,11 +629,20 @@
       "p",
       "strong"
     ],
+    "calls": [
+      "li",
+      "p"
+    ],
+    "clean": [
+      "li",
+      "p",
+      "strong"
+    ],
     "additional": [
-      "h1"
+      "h2"
     ],
     "resources": [
-      "h1"
+      "h2"
     ],
     "more": [
       "ul",
@@ -674,31 +657,11 @@
       "li",
       "title"
     ],
-    "please": [
-      "ul",
-      "li"
-    ],
     "see": [
       "ul",
       "li"
     ],
-    "\"fio43": [
-      "ul",
-      "li"
-    ],
-    "cpp": [
-      "ul",
-      "li"
-    ],
-    "not": [
-      "ul",
-      "li"
-    ],
-    "directories\" at": [
-      "ul",
-      "li"
-    ],
-    "https//www.securecoding.cert.org/confluence/display/cplusplus/fio43": [
+    "https//www.securecoding.cert.org/confluence/display/cplusplus/fio19": [
       "ul",
       "li",
       "a"
@@ -715,8 +678,8 @@
   "tags": {},
   "links": [
     {
-      "href": "https://www.securecoding.cert.org/confluence/display/cplusplus/FIO43-CPP.+Do+not+create+temporary+files+in+shared+directories",
-      "text": "https://www.securecoding.cert.org/confluence/display/cplusplus/FIO43-CPP.+Do+not+create+temporary+files+in+shared+directories"
+      "href": "https://www.securecoding.cert.org/confluence/display/cplusplus/FIO19-CPP.+Do+not+create+temporary+files+in+shared+directories",
+      "text": "https://www.securecoding.cert.org/confluence/display/cplusplus/FIO19-CPP.+Do+not+create+temporary+files+in+shared+directories"
     }
   ]
 }

@@ -1,0 +1,48 @@
+<h2>Applies To</h2>
+<ul>
+<li>SAP ABAP</li>
+</ul>
+<h2>What to Do</h2>
+<p>Use prepared statements to execute SQL queries. Do not generate SQL statements directly from user input.</p>
+<h2>Why</h2>
+<p>Prepared statements mitigate SQL injection risk for database-facing Web applications built with SAP Advanced Business Application Programming (ABAP). SQL injection is one of the most powerful attacks, and is language-independent. The algorithm used to generate SQL strings is passed to the Relational Database Management System (RDBMS) and affects the database engine, not the actual application.</p>
+<p>SQL injection exploits the creation of the SQL string, in which user input is embedded manually with escape sequences (such as the single quote (') or double quote (&quot;) characters). Using this method, an attacker inserts valid SQL statement fragments as part of user input. The result is that the unsafe fragments are embedded within the SQL query that is submitted to the database engine for execution. A successful exploit allows an attacker to potentially compromise the entire database.</p>
+<p>Prepared SQL statements offer a simple and efficient mitigation for SQL injection since they automatically contain user-input in a non-escaped form. Input is passed as parameters in a function call. With parameterization of input and type-enforcement, user input is effectively filtered and potential compromises are eliminated.</p>
+<h2>When</h2>
+<p>Because ABAP is used in Web applications, the risk of SQL injection and resource manipulation is ever-present. ABAP also may use ABAP Database Connectivity (ADBC), which is based on SAP kernel calls, to dynamically execute arbitrary SQL commands. Prepared SQL statements should be used with ABAP coding <em>whenever</em> SQL is executed by the database engine. This prevents the possible integration of user input with SQL statements, and the RDBMS servers are always protected by appropriate validation and filtering controls.</p>
+<h2>How</h2>
+<p>To use prepared statements to prevent SQL injection, follow these steps:</p>
+<ol>
+<li>
+<p><strong>Identify SQL queries.</strong> Locate all SQL queries in your application code. Also, investigate the functions of transaction calls and use of ABAP function modules that may additionally execute SQL statements.</p>
+</li>
+<li>
+<p><strong>Identify the parameters in each SQL query.</strong> After locating all SQL queries, identify the parameters in each query. Understand the format and type of each parameter's data.</p>
+</li>
+<li>
+<p><strong>Use prepared statements for SQL queries.</strong> The exact syntax to use with prepared statements is dependent on the versions of SAP BASIS, ABAP, and SQL database used (Open SQL or Native SQL). The core steps for writing a prepared statement are: get a database handle, call the prepare function to make the prepared statement, use the framework function to bind prepared statement parameters to variables, load data into the variables, and call the execute function to execute the prepared statement. Functions that may be used with ABAP include:</p>
+<ul>
+<li>
+<p><strong>Prepared Statement with ADBC.</strong> With use of <code>CL-SQL_PREPARED_STATEMENT</code> subclass, a query is instantiated as a prepared statement and is executed with various parameters. The work process is not allowed to be switched between calls of the prepared statement. Note that it is not possible to use dialog screens in the loop. The parameters are prepared and collected in one internal table and the result lists are prepared and collected in another internal table. By using inherited methods (from <code>CL_SQL_STATEMENT</code>) placeholders can be linked to parameters and the instantiated SQL statement can be executed. The SQL statement is not passed to the corresponding method. After the work process has been switched, the prepared statement can no longer be used. If not needed, the statement should be closed so that database resources are release.</p>
+</li>
+<li>
+<p><strong>SQL injection countermeasures for Open SQL.</strong> Use techniques to secure program code by using strict validation or encoding of any input. Two best practice rules are available for use with ABAP code and Open SQL to mitigate injection attacks.</p>
+<ul>
+<li><strong>Use static Open SQL statements where possible.</strong> Check whether it is really necessary to use dynamic Open SQL with the ADBC API. If possible, switch to static SQL statements to reduce risk level for SQL injection.</li>
+<li><strong>Validate or encode input for dynamic statements.</strong> When dynamic SQL statements are necessary, use class <code>CL_ABAP_DYN_PRG</code> to implement class input checks and escape input in the clauses.</li>
+</ul>
+</li>
+<li>
+<p><strong>SQL injection countermeasures for Native SQL.</strong> Use any of the following rules which may be applicable, in order to eliminate SQL injection attacks:</p>
+<ul>
+<li>Define a codepage (such as charset = ISO-8859-1) to clearly decide which characters are problematic.</li>
+<li>Filter user input for SQL statements. Filter data with regular expression for numbers and letters (<code>s/[^0-9a-zA-z]//g</code>). For email addresses, only allow <code>@</code>, <code>_</code>, <code>.</code> and <code>-</code>. Enclose all user input (including numbers) in quotation marks.</li>
+<li>Restrict the rights of the Web application user.</li>
+<li>Restrict error reporting (server-side and by application) so that internal system information cannot be shown to outside users. If the full query is shown, and points to the syntax error involved, this assists hackers in mounting Cross-Site Scripting (XSS) attacks.</li>
+<li>Use the ABAP addition <code>CLIENT SPECIFIED</code> in a restrictive way, for example, for client copy.</li>
+<li>Restrict the dynamic program generation performed with the ABAP key words to filtered user input only by using <code>INSERT REPORT</code> and/or <code>GENERATE SUBROUTINE POOL</code>.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
