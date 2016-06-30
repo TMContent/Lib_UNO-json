@@ -1,0 +1,38 @@
+<h2>Applies To</h2>
+<ul>
+<li>Embedded Systems</li>
+<li>C</li>
+<li>C++</li>
+<li>Linux</li>
+<li>Windows</li>
+</ul>
+<h2>What to Do</h2>
+<p>Analyze your system requirements. Decide what services are important for application functionality. Consider disabling unnecessary services. If that is not possible, ensure that they introduce no security threats to the system. Check for wireless services like Wi-Fi, Bluetooth, IR, NFC. If your system has a USB bus, identify all the data accessible through it. For systems that have a firewall, provide a way to disable communication on ports and protocols that are not required by the application.</p>
+<h2>Why</h2>
+<p>Very often vendors design their systems for use in many possible configurations and environments. However, each particular installation or integration solution may not use all the services provided. In such cases, non-essential services not only consume precious resources, which are often very limited on embedded systems, but also can introduce potential security risks and vulnerabilities.
+These precautions are very important for embedded systems because, unlike desktops, they are usually located in places without proper physical access control, such as ATMs or kiosks outside of buildings, or in airports with thousands of people around.</p>
+<h2>When</h2>
+<p>Use these precautions for any system that has a chance to be exposed to untrusted environments, or that has an option to receive data from untrusted sources.
+Using these precautions is especially important for solutions that are based on general-purpose operating systems, like Windows and Unix/Linux, with lots of services available in default OS distributions.</p>
+<h2>How</h2>
+<p>To allow disabling features of embedded systems:</p>
+<ol>
+<li>
+<p><strong>Identify all the services that are needed for the application</strong>. Review your system requirements. Decide which services are needed to perform application functions and which are not.</p>
+</li>
+<li>
+<p><strong>Identify all services available on the platform</strong>. Review the platform documentation and list all the services enabled in the default distribution.</p>
+</li>
+<li>
+<p><strong>Design several installation profiles</strong>. Consider providing several installation profiles for your system, such as minimum, maximum, and custom. In the minimum profile, allow only the necessary services for basic system functionality that allows the user to enable whatever functionality they actually need.</p>
+</li>
+<li>
+<p><strong>Provide configuration tools</strong>. After system setup, allow the customer to enable or disable additional features. Provide a warning notification to the customer if enabling a service might introduce security risks, and explain best security practices for using it.</p>
+</li>
+<li>
+<p><strong>Use role-based authorization and separation of duties</strong>. Do not allow every user in the system to change security settings or enable system services. Use special ‘admin’ or ‘security officer’ system roles available only to trusted users. In special cases, consider using both roles to avoid a single point of compromise.</p>
+</li>
+<li>
+<p><strong>Secure the services</strong>. For the services that are required by the application, consult vendor documentation. Follow recommended practices to configure and operate the necessary services in a secure way. Do not rely on default configuration or parameters because they are usually very general and may not reflect your application specifics or particular security level.</p>
+</li>
+</ol>

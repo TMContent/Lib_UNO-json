@@ -51,7 +51,7 @@
           "DataType": "wikitext"
         },
         "Data": [
-          "==Applies To==\r\n\r\n* Android applications that send or receive sensitive data over the network.\r\n\r\n==What to Do==\r\n\r\nDisable the use of self-signed TLS certificates.\r\n\r\n==Why==\r\n\r\nAllowing the use of self-signed TLS certificates enables some types of man-in-the-middle attacks.\r\n\r\n==How==\r\n\r\nSelf-signed TLS certificates are disabled on Android by default. Do not allow them in production releases.\r\n\r\n==Communication Security Guidelines==\r\n\r\n* [[00000000-0000-0000-0000-000000657ab9|Disable Self-signed TLS Certificates]]\r\n* [[00000000-0000-0000-0000-0000000a1df2|Use TLS to Protect Communications]]\r\n\r\n==Communication Security Checklists==\r\n\r\n* [[00000000-0000-0000-0000-0000001fdc3e|Self-signed TLS Certificates Are Disabled]]\r\n* [[00000000-0000-0000-0000-0000002b164a|TLS Is Used to Protect Communications]]\r\n\r\n==Additional Resources==\r\n\r\n*For more information about proper TLS configuration, see https://www.owasp.org/index.php/Transport_Layer_Protection_Cheat_Sheet."
+          "==Applies To==\n\n* Android applications that send or receive sensitive data over the network.\n\n==What to Do==\n\nDisable the use of self-signed TLS certificates.\n\n==Why==\n\nAllowing the use of self-signed TLS certificates enables some types of man-in-the-middle attacks.\n\n==How==\n\nSelf-signed TLS certificates are disabled on Android by default. Do not allow them in production releases.\n\n\n==Additional Resources==\n\n*For more information about proper TLS configuration, see https://www.owasp.org/index.php/Transport_Layer_Protection_Cheat_Sheet."
         ]
       }
     ]

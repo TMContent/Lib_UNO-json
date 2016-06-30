@@ -9,4 +9,4 @@
 </p><ol>
 <li> <strong>Configure IIS to use TLS.</strong> Get a valid certificate. Hosting service providers often sell valid TLS certificates. Install the certificate. Create an HTTPS binding for the site. A link in the "Additional Resources" section describes how to do this in detail.</li>
 <li> <strong>Set the <em>Secure</em> flag on cookies.</strong> Set the <em>requireSSL</em> property to <em>true</em> for the <em>httpCookies</em> element in the web.config file, like this: &lt;httpcookies requiressl="true"&gt;&lt;/httpcookies&gt; If you use Forms Authentication, you will also need to set <em>requireSSL</em> to <em>true</em> for the <em>forms</em> element.  </li>
-</ol><h2>Additional Resources</h2><ul><li> For information about setting up TLS on IIS, see <a href="http://www.iis.net/learn/manage/configuring-security/how-to-set-up-ssl-on-iis">http://www.iis.net/learn/manage/configuring-security/how-to-set-up-ssl-on-iis</a></li></ul>
+</ol>

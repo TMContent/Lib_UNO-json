@@ -15,14 +15,5 @@
 <li> <strong>Write code that stores sensitive data in session state.</strong> If working with sensitive data is necessary for the application, each piece of code that stores or accesses sensitive data in local storage must be replaced. Write code that stores and accesses sensitive information in server-side session state to replace the code that stores sensitive data in local storage.</li>
 <li> <strong>Store session tokens in protected cookies.</strong> One special type of sensitive information is session identifiers. Session identifiers are used by the server to identify which session state belongs to which client. It is important to protect session identifiers in order to prevent user sessions from being hijacked. Session identifiers should not be accessed by any code for any purpose other than for the server to correlate clients to sessions. Data stored in local storage can be accessed by client-side scripts and might be shared with other applications, therefore local storage should not be used to store session identifiers. Session identifiers should be stored in cookies with Secure and HTTPOnly flags set. If there is code that stores or accesses session identifiers in local storage, rewrite this code to store and access session identifiers in protected cookies.</li>
 <li> <strong>Remove code that stores sensitive data in local storage.</strong>  Once the application stores sensitive data on the server-side and session identifiers in protected cookies, code that stores and accesses sensitive data in local storage can be safely removed. Use the spreadsheet you created to find this code and remove it. Test these changes thoroughly, especially if you are making them to a live application.</li>
-</ol><h2>Local Storage Guidelines</h2><ul><li> <a href="00000000-0000-0000-0000-0000005c244a">Host Different Applications on Different Subdomains</a></li>
-<li> <a href="00000000-0000-0000-0000-00000061bbb6">Do Not Store Sensitive Information in Local Storage</a></li>
-<li> <a href="00000000-0000-0000-0000-000000233bdb">Use Session Storage Instead of Local Storage If Possible</a></li>
-<li> <a href="00000000-0000-0000-0000-00000052241e">Do Not Store Session Identifiers in Local Storage</a></li>
-<li> <a href="00000000-0000-0000-0000-00000052e67b">Do Not Store Authentication Information in Local Storage</a></li>
-</ul><h2>Local Storage Checklist Items</h2><ul><li> <a href="00000000-0000-0000-0000-000000358a18">Different Applications Are Hosted on Different Subdomains</a></li>
-<li> <a href="00000000-0000-0000-0000-000000972b0b">Sensitive Information Is Not Stored in Local Storage</a></li>
-<li> <a href="00000000-0000-0000-0000-0000007e3ee6">SessionStorage Is Used Instead of LocalStorage If Possible</a></li>
-<li> <a href="00000000-0000-0000-0000-00000062c37e">Session Identifiers Are Not Stored in Local Storage</a></li>
-<li> <a href="00000000-0000-0000-0000-0000004e1296">Authentication Information Is Not Stored in Local Storage</a></li>
-</ul>
+</ol>
+

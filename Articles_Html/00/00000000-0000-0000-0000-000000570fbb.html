@@ -11,4 +11,4 @@ The <em>HTTPOnly</em> flag should be set on session cookie to mitigate Cross-Sit
 </p><ol>
 <li> <strong>Configure IIS to use TLS.</strong> Get a valid certificate. Hosting service providers often sell valid TLS certificates. Install the certificate. Create an HTTPS binding for the site. A link in the "Additional Resources" section describes how to do this in detail.</li>
 <li> <strong>Set the <em>Secure</em> and <em>HTTPOnly</em> flags for session cookies.</strong> Edit the Web.config file. Set the <em>httpOnlyCookies</em> property to <em>true</em> for the <em>httpCookies</em> element. Set the <em>requireSSL</em> property to <em>true</em> for the <em>httpCookies</em> element. There are different ways to write this in XML. Here is one: &lt;httpcookies httponlycookies="true" requiressl="true"&gt;&lt;/httpcookies&gt;</li>
-</ol><h2>Additional Resources</h2><ul><li> For information about how to setup TLS on IIS, see <a href="http://www.iis.net/learn/manage/configuring-security/how-to-set-up-ssl-on-iis">http://www.iis.net/learn/manage/configuring-security/how-to-set-up-ssl-on-iis</a></li></ul>
+</ol>

@@ -10,11 +10,8 @@
 </ol><p>
 There is no practical way to access remote SQL databases using native iOS API calls, so the most common way to access remote SQL databases from iOS applications is through a Web Service wrapper for the database server. To use parameterized methods for remote database access:
 </p><ol>
-<li> <strong>Set up a Web Service back-end server.</strong> Choose a platform for deploying the Web Services back-end and configure the server appropriately. One of the most common solutions is to use an ASP.NET back-end, because ASP.NET is well suited for developing Web Services.</li>
+<li> <strong>Set up a Web Service back-end server.</strong> Choose a platform for deploying the Web Services back-end and configure the server appropriately. </li>
 <li> <strong>Write the Web Service code.</strong> Implement the necessary Web Services on the platform of your choice.</li>
 <li> <strong>Use parameterized APIs to execute SQL queries.</strong> When implementing the Web Services, make sure to use parameterized APIs for database access to prevent SQL injection vulnerabilities.</li>
 <li> <strong>Connect the application to the back-end.</strong> Add code to the iOS application to interact with the back-end. It might be necessary to add some pages for configuring the connection to the back-end, such as setting the URL of the Web Services and the authentication credentials.</li>
-</ol><h2>Related Items</h2><ul><li> <a href="00000000-0000-0000-0000-00000045b2ed">Parameterized Methods Are Used for Database Access</a></li>
-</ul><h2>Additional Resources</h2><ul><li> For a detailed guide on integrating SQLite functionality into iOS applications, please see <a href="http://www.techotopia.com/index.php/IOS_4_iPhone_Database_Implementation_using_SQLite">http://www.techotopia.com/index.php/IOS_4_iPhone_Database_Implementation_using_SQLite</a></li>
-<li> For the description of SQLite prepared statements, please see <a href="http://www.sqlite.org/c3ref/stmt.html">http://www.sqlite.org/c3ref/stmt.html</a></li>
-<li> For the SQLite API reference, please see <a href="http://www.sqlite.org/c3ref/funclist.html">http://www.sqlite.org/c3ref/funclist.html</a></li></ul>
+</ol>

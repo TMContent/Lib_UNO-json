@@ -15,10 +15,10 @@
 <p><strong>Define an input validation subsystem.</strong> Define a set of validator functions to validate each type of input handled by the application. Input should be validated on the server.</p>
 </li>
 <li>
-<p><strong>Validate characters.</strong> Restrict the acceptable range of characters in text input using regular expressions.</p>
+<p><strong>Validate length.</strong> Check that the length of the user input is valid. Checking length before using regular expressions helps prevent regular expression Denial-of-Service attacks.</p>
 </li>
 <li>
-<p><strong>Validate length.</strong> Check that the length of the user input is valid.</p>
+<p><strong>Validate characters.</strong> Restrict the acceptable range of characters in text input using regular expressions.</p>
 </li>
 <li>
 <p><strong>Validate format.</strong> If the input type has a specific pattern, such as a date or a phone number, use regular expressions to make sure user input matches the input type specified by the application. Use regular expressions to enforce strong password requirements.</p>

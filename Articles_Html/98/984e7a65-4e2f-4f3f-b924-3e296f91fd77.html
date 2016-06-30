@@ -1,0 +1,43 @@
+<h2>Applies To</h2>
+<ul>
+<li>Any Programming Language</li>
+<li>Embedded Systems</li>
+<li>Windows</li>
+<li>Linux</li>
+</ul>
+<h2>What to Do</h2>
+<p>Analyze your system requirements. Decide what services are important for application functionality. Consider disabling or uninstalling unnecessary services. If that option is not possible, ensure that unnecessary services introduce no security threat to the system. Check for wireless services like Wi-Fi, Bluetooth, IR, NFC. If your system has USB communication, identify all the data accessible through it.</p>
+<p>Perform   system updates and check for security patches regularly.</p>
+<p>Perform regular data and system backups.</p>
+<p>If available, use tamper-evident hardware to detect possible intrusion or intrusion attempts.</p>
+<h2>Why</h2>
+<p>These precautions are very important for embedded systems because, unlike desktops, they are usually located in places without proper physical access control. Examples include ATMs or kiosks outside of buildings, or in airports with thousands of people around.
+There is no perfect security, and no 100% secure software; therefore, vendors issue security patches or updates to protect the system from discovered vulnerabilities.
+Having regular backups increases system availability and integrity  .</p>
+<h2>When</h2>
+<p>Use these precautions for any system that has a chance to be exposed to an untrusted environment or that might receive data from untrusted sources.</p>
+<h2>How</h2>
+<p>To reduce attack surface of embedded systems:</p>
+<ol>
+<li>
+<p><strong>Identify all the services that are needed for the application</strong>. Review your system requirements. Decide which services available on the platform are needed to perform application functions, and which are not.</p>
+</li>
+<li>
+<p><strong>Secure the services</strong>. For the services that are required by the application, consult vendor documentation. Follow recommended practices to configure and operate them in a secure way. Do not rely on default configuration or parameters, because such settings are usually very general and may not reflect your application specifics or particular security level.</p>
+</li>
+<li>
+<p><strong>Disable or uninstall unnecessary functionality</strong>. For the services that are not required, consider removing or disabling them. If they cannot be disabled, check vendor documentation and best security practices for configuring non-essential services to ensure that they do not introduce any security risks or possible vulnerabilities.</p>
+</li>
+<li>
+<p><strong>Provide system update functionality</strong>. Review your application design and, if possible, provide functionality for installing system updates or security patches. Including such functionality is very important because there are many different places in the system where security risks could be discovered in the future, such as device firmware, operating system modules, services, application libraries and frameworks used for application development.</p>
+</li>
+<li>
+<p><strong>Use tamper prevention or tamper-evident mechanisms</strong>. Very often hardware vendors provide mechanisms to prevent or detect intrusion into system components in which attackers attempt to access or tamper with sensitive data. Consult vendor documentation for these mechanisms and integrate them into your system.</p>
+</li>
+<li>
+<p><strong>Provide backup functionality</strong>. Identify all the sensitive information processed on the system. Provide functionality for information backup either using network services, or, if they are not available, using external storage. Backup is especially important for system configuration files and parameters.</p>
+</li>
+<li>
+<p><strong>Use FIPS-certified modules</strong>. FIPS (Federal Information Processing Standards) specify requirements for security modules. Use FIPS-certified modules in your application for cryptographic functionality, authentication and authorization services.</p>
+</li>
+</ol>

@@ -1,0 +1,59 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "0",
+      "Content_Hash": "0"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "04800b62-8f72-484b-b60b-deea6aaa3237"
+        ],
+        "Library_Id": [
+          "be5273b1-d682-4361-99d9-6234f2d47eb7"
+        ],
+        "Title": [
+          "Prevent Redirection of Exception Handlers"
+        ],
+        "Category": [
+          "Error Handling"
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "C++"
+        ],
+        "Type": [
+          "Guideline"
+        ],
+        "DirectLink": [
+          ""
+        ],
+        "Tag": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "false",
+          "DataType": "markdown"
+        },
+        "Data": [
+          "## Applies To ##\r\n\r\n* C++\r\n* Windows\r\n\r\n\r\n## What to Do ##\r\n\r\nRewrite your application to use the standard C++ exception mechanism if possible. For Windows platforms where standard C++ exceptions are not available, or for C applications, use the special linker ``/SAFESEH`` command line option.\r\n\r\n\r\n## Why ##\r\n\r\nThe Windows Structured Exception Handling (SEH) mechanism uses special functions called “exception handlers” to handle possible exceptions during application run-time. Exceptions are used to handle error conditions. These functions are registered with the application via function pointers. If your application has a risk of buffer overflow vulnerability, an attacker could exploit it and redirect exception pointers to injected malicious code. As a result, an attacker could get access to sensitive data or get control of the system.\r\n\r\nThe special linker ``/SAFESEH`` option ensures that all exception handler pointers are stored in a table located in read-only memory and therefore cannot be modified by an attacker.\r\n\r\nThe standard C++ exception mechanism is not susceptible to this type of attack, so it is recommended to use it wherever possible.\r\n\r\n\r\n## When ##\r\n\r\nUse this measure for Windows applications if they use the SEH mechanism for exception handling.\r\n\r\nThis technique is especially important if your application uses functions susceptible to buffer overflow attack, such as ``strcpy()``, ``scanf()``, etc., that work with a memory buffer of undefined size and receive data from external sources.\r\n\r\n\r\n## How ##\r\n\r\nTo prevent redirection of exception handlers:\r\n\r\n1. **Identify possible buffer overflow conditions**. Review your application and identify all the functions where a buffer overflow condition may occur. Usually such functions use unsafe ``strcpy()``, ``scanf()``, etc. and work with memory buffers of undefined size.\r\n\r\n2. **Replace unsafe functions with safe analogs**. Consult vendor documentation to see whether it is possible to replace unsafe functions with safer analogs. You might have to rewrite your code.\r\n\r\n3. **Identify code where the SEH mechanism is used**. Review your application code and identify where the SEH mechanism is used to handle error conditions. For C++ applications, consider using the standard C++ exception mechanism instead of SEH.\r\n\r\n4. **Use special linker options**. If the standard C++ exception mechanism is not available for the target platform, recompile your application using the ``/SAFESEH`` option. \r\n"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+<h2>Applies To</h2>
+<ul>
+<li>C++</li>
+<li>Windows</li>
+</ul>
+<h2>What to Do</h2>
+<p>Rewrite your application to use the standard C++ exception mechanism if possible. For Windows platforms where standard C++ exceptions are not available, or for C applications, use the special linker <code>/SAFESEH</code> command line option.</p>
+<h2>Why</h2>
+<p>The Windows Structured Exception Handling (SEH) mechanism uses special functions called “exception handlers” to handle possible exceptions during application run-time. Exceptions are used to handle error conditions. These functions are registered with the application via function pointers. If your application has a risk of buffer overflow vulnerability, an attacker could exploit it and redirect exception pointers to injected malicious code. As a result, an attacker could get access to sensitive data or get control of the system.</p>
+<p>The special linker <code>/SAFESEH</code> option ensures that all exception handler pointers are stored in a table located in read-only memory and therefore cannot be modified by an attacker.</p>
+<p>The standard C++ exception mechanism is not susceptible to this type of attack, so it is recommended to use it wherever possible.</p>
+<h2>When</h2>
+<p>Use this measure for Windows applications if they use the SEH mechanism for exception handling.</p>
+<p>This technique is especially important if your application uses functions susceptible to buffer overflow attack, such as <code>strcpy()</code>, <code>scanf()</code>, etc., that work with a memory buffer of undefined size and receive data from external sources.</p>
+<h2>How</h2>
+<p>To prevent redirection of exception handlers:</p>
+<ol>
+<li>
+<p><strong>Identify possible buffer overflow conditions</strong>. Review your application and identify all the functions where a buffer overflow condition may occur. Usually such functions use unsafe <code>strcpy()</code>, <code>scanf()</code>, etc. and work with memory buffers of undefined size.</p>
+</li>
+<li>
+<p><strong>Replace unsafe functions with safe analogs</strong>. Consult vendor documentation to see whether it is possible to replace unsafe functions with safer analogs. You might have to rewrite your code.</p>
+</li>
+<li>
+<p><strong>Identify code where the SEH mechanism is used</strong>. Review your application code and identify where the SEH mechanism is used to handle error conditions. For C++ applications, consider using the standard C++ exception mechanism instead of SEH.</p>
+</li>
+<li>
+<p><strong>Use special linker options</strong>. If the standard C++ exception mechanism is not available for the target platform, recompile your application using the <code>/SAFESEH</code> option.</p>
+</li>
+</ol>

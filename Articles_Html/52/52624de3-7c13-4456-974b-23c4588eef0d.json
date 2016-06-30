@@ -1,6 +1,6 @@
 {
   "id": "52624de3-7c13-4456-974b-23c4588eef0d",
-  "checksum": "1084d3554105e7eff81881d780691153",
+  "checksum": "67538665a3d3a5b154dcf7d4655a56a7",
   "words": {
     "70": [
       "pre"
@@ -370,7 +370,6 @@
       "ol",
       "li",
       "p",
-      "strong",
       "li",
       "li",
       "ul",
@@ -458,7 +457,7 @@
       "li",
       "li"
     ],
-    "either between": [
+    "either&nbspbetween": [
       "p"
     ],
     "servers": [
@@ -579,10 +578,6 @@
       "p",
       "pre",
       "ul",
-      "ul",
-      "ul",
-      "li",
-      "li",
       "li"
     ],
     "transmitting": [
@@ -591,7 +586,7 @@
       "p",
       "strong"
     ],
-    "data enumerate": [
+    "data&nbsp;enumerate": [
       "ol",
       "li",
       "p"
@@ -726,7 +721,7 @@
       "p",
       "strong"
     ],
-    "mechanism depending": [
+    "mechanism&nbsp;depending": [
       "ol",
       "li",
       "p"
@@ -745,9 +740,7 @@
       "li",
       "p",
       "p",
-      "pre",
-      "ul",
-      "li"
+      "pre"
     ],
     "infrastructure": [
       "ol",
@@ -798,10 +791,7 @@
       "li",
       "li",
       "li",
-      "strong",
-      "ul",
-      "li",
-      "a"
+      "strong"
     ],
     "tls": [
       "ol",
@@ -831,11 +821,7 @@
       "li",
       "li",
       "li",
-      "strong",
-      "ul",
-      "ul",
-      "li",
-      "li"
+      "strong"
     ],
     "needs": [
       "ol",
@@ -1051,11 +1037,7 @@
       "p",
       "p",
       "p",
-      "p",
-      "ul",
-      "ul",
-      "li",
-      "li"
+      "p"
     ],
     "jni": [
       "ol",
@@ -1117,13 +1099,13 @@
       "li",
       "li"
     ],
-    "which allows": [
+    "which&nbspallows": [
       "ol",
       "li",
       "ul",
       "li"
     ],
-    "only the": [
+    "only&nbspthe": [
       "ol",
       "li",
       "ul",
@@ -1253,7 +1235,7 @@
       "ul",
       "li"
     ],
-    "the third": [
+    "the&nbspthird": [
       "ol",
       "li",
       "ul",
@@ -1265,7 +1247,7 @@
       "ul",
       "li"
     ],
-    "that is": [
+    "that&nbspis": [
       "ol",
       "li",
       "ul",
@@ -1371,17 +1353,15 @@
       "p",
       "strong"
     ],
-    "mechanism apply": [
+    "mechanism&nbsp;apply": [
       "ol",
       "li",
       "p"
     ],
     "mechanism": [
       "ol",
-      "strong",
       "li",
-      "p",
-      "strong"
+      "p"
     ],
     "choice": [
       "ol",
@@ -1443,6 +1423,13 @@
       "ol",
       "li",
       "p"
+    ],
+    "data&nbsp;": [
+      "strong"
+    ],
+    "mechanism&nbsp;": [
+      "strong",
+      "strong"
     ],
     "problem": [
       "h1"
@@ -1668,7 +1655,7 @@
     "solution": [
       "h1"
     ],
-    "application because": [
+    "application&nbsp;because": [
       "p"
     ],
     "transit": [
@@ -1719,92 +1706,9 @@
     "resources": [
       "h1"
     ],
-    "more": [
-      "ul",
-      "ul",
-      "li",
-      "li"
-    ],
-    "information": [
-      "ul",
-      "ul",
-      "li",
-      "li"
-    ],
-    "about": [
-      "ul",
-      "ul",
-      "li",
-      "li"
-    ],
-    "see": [
-      "ul",
-      "ul",
-      "li",
-      "li"
-    ],
-    "rfc": [
+    "applications&nbsp;http://www.playframework.com/documentation/2.1.1/httpserver.": [
       "ul",
       "li"
-    ],
-    "for transport": [
-      "ul",
-      "li"
-    ],
-    "layer": [
-      "ul",
-      "li",
-      "a"
-    ],
-    "security": [
-      "ul",
-      "li",
-      "a"
-    ],
-    "quick": [
-      "ul",
-      "li"
-    ],
-    "overview": [
-      "ul",
-      "li"
-    ],
-    "publication": [
-      "ul",
-      "li"
-    ],
-    "on ipsec": [
-      "ul",
-      "li"
-    ],
-    "primerfor": [
-      "ul",
-      "li"
-    ],
-    "safely": [
-      "ul",
-      "li"
-    ],
-    "configuring": [
-      "ul",
-      "li"
-    ],
-    "seehttps://www.owasp.org/index.php/transport_layer_protection_cheat_sheet.": [
-      "ul",
-      "li"
-    ],
-    "applications http://www.playframework.com/documentation/2.1.1/httpserver.": [
-      "ul",
-      "li"
-    ],
-    "transport": [
-      "a"
-    ],
-    "primer": [
-      "a"
-    ],
-    "https//www.owasp.org/index.php/transport_layer_protection_cheat_sheet": [
-      "a"
     ],
     "http//www.playframework.com/documentation/2.1.1/httpserver": [
       "a"
@@ -1812,18 +1716,6 @@
   },
   "tags": {},
   "links": [
-    {
-      "href": "http://www.faqs.org/rfcs/rfc2246.html",
-      "text": "Transport Layer Security"
-    },
-    {
-      "href": "http://www.digisafe.com/products/pdf/IPSec_Primer.pdf",
-      "text": "IPSec Primer"
-    },
-    {
-      "href": "https://www.owasp.org/index.php/Transport_Layer_Protection_Cheat_Sheet",
-      "text": "https://www.owasp.org/index.php/Transport_Layer_Protection_Cheat_Sheet"
-    },
     {
       "href": "http://www.playframework.com/documentation/2.1.1/HTTPServer",
       "text": "http://www.playframework.com/documentation/2.1.1/HTTPServer"

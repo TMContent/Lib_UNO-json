@@ -1,0 +1,30 @@
+<h2>Applies To</h2>
+<ul>
+<li>Embedded Systems</li>
+<li>C</li>
+<li>C++</li>
+<li>Linux</li>
+<li>Windows</li>
+</ul>
+<h2>What to Do</h2>
+<p>Design your system in such a way that all critical components that are capable of producing any physical damage are separated from network and communication modules.</p>
+<p>Do not allow any communication between network services and the mechanical components of the system.</p>
+<p>For existing applications, review the design and ensure that these requirements are satisfied. Otherwise, you need to redesign your application.</p>
+<p>Do not include any “debugging”, “maintenance”, or “monitoring” channel to connect mechanical and network components.</p>
+<h2>Why</h2>
+<p>Any channel which exists between mechanical and network components of the system may be exploited by an attacker. Many vulnerabilities in network libraries and services are discovered from time to time, and very often vendors cannot fix these security problems immediately. In some cases, especially for embedded systems, prompt patches may not be available at all. In this situation, hackers may exploit such vulnerabilities to gain access to the system. Depending on the application, the consequences might be dangerous. For example, consider a car engine or power plant control system.</p>
+<h2>When</h2>
+<p>Use this precaution if your system is exposed on a network, and especially if your system is accessible through the Internet.</p>
+<h2>How</h2>
+<p>To disconnect dangerous functionality from outside networks:</p>
+<ol>
+<li>
+<p><strong>Identify critical components of your system</strong>. Review your application design and identify all critical components of your system that may produce physical damage. Usually these components are control units for various mechanical equipment, electrical grids, etc.</p>
+</li>
+<li>
+<p><strong>Identify all access points to the system</strong>. Review all the data input/output and control ports for your application. Don’t forget “debugging”, “monitoring” or “maintenance” channels. These entry points may be used to access the system.</p>
+</li>
+<li>
+<p><strong>Identify control flow paths</strong>. Review all control paths between the modules of your system and establish if there is a channel between network ports and critical components. If such a channel exists, redesign your application to separate these parts. Ensure that there are no physical paths that allow external sources to impact your system behavior.</p>
+</li>
+</ol>
