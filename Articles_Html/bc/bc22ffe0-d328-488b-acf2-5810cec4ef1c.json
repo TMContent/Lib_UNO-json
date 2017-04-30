@@ -50,9 +50,21 @@
       "ul",
       "li"
     ],
-    "aws)": [
+    "aws": [
       "ul",
-      "li"
+      "li",
+      "p",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "p",
+      "li",
+      "p",
+      "code",
+      "li",
+      "p",
+      "code"
     ],
     "what": [
       "h2"
@@ -183,22 +195,9 @@
       "li",
       "p"
     ],
-    "aws": [
-      "p",
-      "ol",
-      "ol",
-      "ol",
-      "li",
-      "p",
-      "li",
-      "p",
-      "code",
-      "li",
-      "p",
-      "code"
-    ],
     "set": [
       "p",
+      "ol",
       "li",
       "p",
       "strong"
@@ -243,6 +242,7 @@
     ],
     "metrics": [
       "p",
+      "ul",
       "li",
       "p",
       "ol",
@@ -282,6 +282,9 @@
     "example": [
       "p",
       "ol",
+      "ol",
+      "li",
+      "p",
       "li",
       "p"
     ],
@@ -355,6 +358,7 @@
     ],
     "required": [
       "p",
+      "ul",
       "li"
     ],
     "handle": [
@@ -383,6 +387,7 @@
     ],
     "cost": [
       "p",
+      "ul",
       "li"
     ],
     "benefits": [
@@ -429,9 +434,6 @@
       "ul",
       "li"
     ],
-    "costrequired": [
-      "ul"
-    ],
     "changes": [
       "ul",
       "li"
@@ -454,8 +456,9 @@
       "p",
       "strong"
     ],
-    "metricssystem": [
-      "ul"
+    "system": [
+      "ul",
+      "li"
     ],
     "wide": [
       "ul",
@@ -487,9 +490,6 @@
     ],
     "characteristics": [
       "ul",
-      "li"
-    ],
-    "system": [
       "li"
     ],
     "how": [
@@ -656,8 +656,13 @@
       "p",
       "p"
     ],
-    "necessary\n\n\nset": [
-      "ol"
+    "necessary": [
+      "ol",
+      "ol",
+      "li",
+      "p",
+      "li",
+      "p"
     ],
     "up": [
       "ol",
@@ -707,17 +712,15 @@
       "p",
       "strong"
     ],
-    "cli)": [
-      "ol",
-      "li",
-      "p"
-    ],
     "cli": [
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
+      "li",
+      "p",
       "p",
       "p",
       "li",
@@ -782,8 +785,16 @@
       "li",
       "p"
     ],
-    "tools\n\n\ndefine": [
-      "ol"
+    "tools": [
+      "ol",
+      "li",
+      "p"
+    ],
+    "define": [
+      "ol",
+      "li",
+      "p",
+      "strong"
     ],
     "data": [
       "ol",
@@ -853,6 +864,7 @@
     "namespace": [
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "p",
@@ -898,6 +910,10 @@
       "ol",
       "ol",
       "ol",
+      "ol",
+      "li",
+      "p",
+      "code",
       "li",
       "p",
       "code",
@@ -938,6 +954,7 @@
     "points": [
       "ol",
       "ol",
+      "ol",
       "li",
       "p",
       "li",
@@ -956,8 +973,14 @@
       "p",
       "code"
     ],
-    "namespace\n\n\nadd": [
-      "ol"
+    "add": [
+      "ol",
+      "ol",
+      "li",
+      "p",
+      "strong",
+      "li",
+      "p"
     ],
     "publish": [
       "ol",
@@ -1000,8 +1023,15 @@
       "li",
       "p"
     ],
-    "points\n\n\nget": [
-      "ol"
+    "get": [
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
+      "p",
+      "strong",
+      "code"
     ],
     "statistics": [
       "ol",
@@ -1046,23 +1076,6 @@
       "li",
       "li",
       "p",
-      "p"
-    ],
-    "get": [
-      "ol",
-      "li",
-      "li",
-      "p",
-      "p",
-      "strong",
-      "code"
-    ],
-    "add": [
-      "ol",
-      "li",
-      "p",
-      "strong",
-      "li",
       "p"
     ],
     "switches": [
@@ -1141,50 +1154,44 @@
       "li",
       "p"
     ],
-    "example\n{": [
-      "ol",
-      "li",
-      "p"
-    ],
-    "\"datapoints\"": [
+    "{": [
       "ol",
       "li",
       "p",
       "code"
     ],
-    "],": [
+    "datapoints": [
       "ol",
       "li",
       "p",
       "code"
     ],
-    "\"label\"": [
+    "label": [
       "ol",
       "li",
       "p",
       "code"
     ],
-    "\"requestlatency\"": [
+    "}": [
       "ol",
       "li",
       "p",
       "code"
     ],
-    "}\n\nview": [
-      "ol"
+    "view": [
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
+      "p",
+      "strong"
     ],
     "graphs": [
       "ol",
       "li",
       "p",
       "strong"
-    ],
-    "necessary": [
-      "ol",
-      "li",
-      "p",
-      "li",
-      "p"
     ],
     "category": [
       "ol",
@@ -1210,14 +1217,6 @@
       "ol",
       "li",
       "p"
-    ],
-    "view": [
-      "ol",
-      "li",
-      "li",
-      "p",
-      "p",
-      "strong"
     ],
     "graph": [
       "ol",
@@ -1266,23 +1265,6 @@
       "ol",
       "li",
       "p"
-    ],
-    "tools": [
-      "li",
-      "p"
-    ],
-    "define": [
-      "li",
-      "p",
-      "strong"
-    ],
-    "}": [
-      "li",
-      "p",
-      "code"
-    ],
-    "{": [
-      "code"
     ]
   },
   "tags": {},

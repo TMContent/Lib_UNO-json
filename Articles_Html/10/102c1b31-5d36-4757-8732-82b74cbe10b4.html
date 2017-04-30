@@ -1,0 +1,66 @@
+<h2>Applies To</h2>
+<ul>
+<li>Python 2.7</li>
+</ul>
+<h2>Solution Example</h2>
+<pre><code>#! /usr/bin/env python
+
+'''
+Python Drop Privileges
+'''
+
+# This script assumes it is initially run from sudo or the root crontab.
+# This is not the correct pattern for a suid script.
+# Use this pattern if your script must perform a privileged action, then
+# perform other non-privileged actions.
+
+import grp
+import os
+import pwd
+import sys
+
+def perform_privileged_actions():
+    # ex: mount network drive, listen on privileged port, write to a system file
+    pass
+
+
+def drop_privileges(username=&quot;nobody&quot;, groupname=&quot;nogroup&quot;):
+    if os.getuid() != 0:
+        return
+
+    # Get passwd struct and group list for username/groupname
+    pw = pwd.getpwnam(username)
+    gr = grp.getgrnam(groupname)
+    groups = [g.gr_gid for g in grp.getgrall() if username in g.gr_mem]
+
+    # Set supplemental groups
+    os.setgroups(groups)
+
+    # Set new uid/gid
+    os.setgid(gr.gr_gid)
+    os.setuid(pw.pw_uid)
+
+    # Change important environment variables
+    os.environ[&quot;HOME&quot;] = pw.pw_dir
+    os.environ[&quot;LOGNAME&quot;] = username
+    os.environ[&quot;USER&quot;] = username
+
+
+def perform_unprivileged_actions():
+    # ex: monitor file for changes, listen for connections
+    pass
+
+
+def main():
+    perform_privileged_actions()
+    try:
+        drop_privileges()
+    except OSError:
+        print &quot;Error: Unable to drop privileges.&quot;
+        sys.exit()
+    perform_unprivileged_actions()
+
+
+if __name__ == &quot;__main__&quot;:
+    sys.exit(main())
+</code></pre>

@@ -2,6 +2,9 @@
   "id": "8f43aec6-922c-44b7-b240-28a400fa301e",
   "checksum": "cf053b0485c80ea7fcf0b280317025a4",
   "words": {
+    "0": [
+      "pre"
+    ],
     "1": [
       "ul",
       "li",
@@ -304,8 +307,13 @@
       "p",
       "p"
     ],
-    "printf),": [
-      "p"
+    "printf": [
+      "p",
+      "ul",
+      "li",
+      "p",
+      "ul",
+      "li"
     ],
     "allow": [
       "p"
@@ -474,6 +482,7 @@
       "li",
       "p",
       "p",
+      "pre",
       "pre",
       "p",
       "p"
@@ -858,8 +867,12 @@
     ],
     "buffer": [
       "p",
+      "pre",
       "p",
       "p",
+      "p",
+      "pre",
+      "pre",
       "p",
       "p",
       "p",
@@ -1272,16 +1285,26 @@
       "pre"
     ],
     "char": [
+      "pre",
+      "pre",
       "pre"
     ],
     "*": [
       "pre",
       "pre"
     ],
-    "buffer\r\n{\r\nprintf(buffer);\r\nreturn": [
+    "{": [
+      "pre",
       "pre"
     ],
-    "0\r\n}": [
+    "printfbuffer": [
+      "pre"
+    ],
+    "return": [
+      "pre"
+    ],
+    "}": [
+      "pre",
       "pre"
     ],
     "error": [
@@ -1290,10 +1313,7 @@
     "not": [
       "p"
     ],
-    "printf\"%s\",": [
-      "p"
-    ],
-    "buffer.": [
+    "printf%s": [
       "p"
     ],
     "exploit": [
@@ -1302,6 +1322,7 @@
     "code": [
       "p",
       "p",
+      "pre",
       "p",
       "p",
       "p",
@@ -1339,8 +1360,11 @@
     "contains": [
       "p"
     ],
-    "\"%n\"": [
-      "p"
+    "%n": [
+      "p",
+      "p",
+      "ul",
+      "li"
     ],
     "application": [
       "p",
@@ -1385,7 +1409,8 @@
       "p",
       "p"
     ],
-    "sprint)": [
+    "sprint": [
+      "p",
       "p"
     ],
     "even": [
@@ -1405,9 +1430,6 @@
     ],
     "first": [
       "p",
-      "p"
-    ],
-    "sprint": [
       "p"
     ],
     "copies": [
@@ -1444,32 +1466,37 @@
     "funcchar": [
       "pre"
     ],
-    "{\rchar": [
+    "buffer16": [
       "pre"
     ],
-    "buffer16];\r\nchar": [
+    "message16": [
       "pre"
     ],
-    "message16];\r\nsprintf": [
-      "pre"
-    ],
-    "buffer,": [
-      "pre"
-    ],
-    "\"name": [
+    "sprintf": [
       "pre",
+      "pre",
+      "ul",
+      "li",
+      "ul",
+      "li",
+      "p"
+    ],
+    "name": [
+      "pre",
+      "pre",
+      "p",
+      "p"
+    ],
+    "%8s": [
       "pre"
     ],
-    "%8s\",": [
-      "pre"
+    "message": [
+      "pre",
+      "p",
+      "p",
+      "p"
     ],
-    "input;\r\nsprintf": [
-      "pre"
-    ],
-    "message,": [
-      "pre"
-    ],
-    "buffer;\r\nprintf(message);\r\n}": [
+    "printfmessage": [
       "pre"
     ],
     "feeds": [
@@ -1492,11 +1519,6 @@
       "p",
       "p"
     ],
-    "message": [
-      "p",
-      "p",
-      "p"
-    ],
     "properly": [
       "p",
       "p"
@@ -1504,13 +1526,13 @@
     "managed": [
       "p"
     ],
-    "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"": [
+    "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa": [
       "pre"
     ],
     "outputs": [
       "p"
     ],
-    "aaaaaaaa\"": [
+    "aaaaaaaa": [
       "pre"
     ],
     "but": [
@@ -1530,7 +1552,7 @@
     "result": [
       "p"
     ],
-    "\"%30daaaaaaaaaaaaaaa\"": [
+    "%30daaaaaaaaaaaaaaa": [
       "pre"
     ],
     "%30d": [
@@ -1596,10 +1618,7 @@
     "arbitrary": [
       "p"
     ],
-    "\"%30d<payload": [
-      "pre"
-    ],
-    "code\"": [
+    "%30dpayload": [
       "pre"
     ],
     "inside": [
@@ -1766,6 +1785,7 @@
     ],
     "box": [
       "p",
+      "p",
       "p"
     ],
     "approaches": [
@@ -1805,22 +1825,9 @@
       "p",
       "p"
     ],
-    "printf": [
-      "ul",
-      "li",
-      "ul",
-      "li"
-    ],
     "wprintf": [
       "ul",
       "li"
-    ],
-    "sprintf": [
-      "ul",
-      "li",
-      "ul",
-      "li",
-      "p"
     ],
     "swprintf": [
       "ul",
@@ -1876,9 +1883,6 @@
       "p"
     ],
     "replacement": [
-      "p"
-    ],
-    "printf)": [
       "p"
     ],
     "stringcbprintf": [
@@ -2470,14 +2474,7 @@
     "machine": [
       "p"
     ],
-    "name": [
-      "p",
-      "p"
-    ],
-    "\"box": [
-      "p"
-    ],
-    "01\"": [
+    "01": [
       "p"
     ],
     "stored": [
@@ -2494,16 +2491,11 @@
     "zeros": [
       "p"
     ],
-    "between.": [
+    "between": [
       "p"
     ],
     "therefore": [
       "p"
-    ],
-    "%n": [
-      "p",
-      "ul",
-      "li"
     ],
     "one": [
       "p"
@@ -2517,7 +2509,7 @@
     "going": [
       "p"
     ],
-    "http//www.xvulnerablesite.com/input.php?name=%25n": [
+    "http//wwwxvulnerablesitecom/inputphp?name=%25n": [
       "pre"
     ],
     "payloads": [
@@ -2680,7 +2672,7 @@
       "ul",
       "li"
     ],
-    "http//www.owasp.org/index.php/owasp_testing_guide_appendix_c:_fuzz_vectors": [
+    "http//wwwowasporg/indexphp/owasp_testing_guide_appendix_c_fuzz_vectors": [
       "ul",
       "li",
       "a"

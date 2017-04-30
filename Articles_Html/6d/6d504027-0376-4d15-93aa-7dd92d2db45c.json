@@ -6,6 +6,9 @@
       "h2",
       "h3",
       "ol",
+      "ol",
+      "li",
+      "p",
       "li",
       "p"
     ],
@@ -24,6 +27,7 @@
       "p"
     ],
     "1234": [
+      "ul",
       "li",
       "p"
     ],
@@ -334,6 +338,7 @@
       "p",
       "li",
       "p",
+      "ol",
       "li",
       "p",
       "p",
@@ -347,6 +352,7 @@
       "p",
       "p",
       "p",
+      "ul",
       "li",
       "p",
       "ul",
@@ -568,6 +574,7 @@
       "p",
       "p",
       "ul",
+      "ul",
       "li",
       "p",
       "li",
@@ -614,6 +621,7 @@
       "p",
       "p",
       "p",
+      "ul",
       "li",
       "p",
       "p",
@@ -748,8 +756,20 @@
       "h2",
       "p"
     ],
-    "information\n\nanalyze": [
-      "ol"
+    "information": [
+      "ol",
+      "li",
+      "p",
+      "h2",
+      "p",
+      "p",
+      "p"
+    ],
+    "analyze": [
+      "ol",
+      "li",
+      "p",
+      "h2"
     ],
     "causes": [
       "ol",
@@ -758,8 +778,20 @@
       "h2",
       "p"
     ],
-    "countermeasures\n\nstart": [
-      "ol"
+    "countermeasures": [
+      "ol",
+      "li",
+      "p",
+      "h2"
+    ],
+    "start": [
+      "ol",
+      "li",
+      "p",
+      "h2",
+      "ol",
+      "li",
+      "p"
     ],
     "testing": [
       "ol",
@@ -776,32 +808,6 @@
       "li",
       "p",
       "h2"
-    ],
-    "information": [
-      "li",
-      "p",
-      "h2",
-      "p",
-      "p",
-      "p"
-    ],
-    "analyze": [
-      "li",
-      "p",
-      "h2"
-    ],
-    "countermeasures": [
-      "li",
-      "p",
-      "h2"
-    ],
-    "start": [
-      "li",
-      "p",
-      "h2",
-      "ol",
-      "li",
-      "p"
     ],
     "step": [
       "h2",
@@ -890,6 +896,8 @@
     ],
     "at": [
       "p",
+      "ul",
+      "ul",
       "ul",
       "li",
       "p",
@@ -1089,6 +1097,8 @@
     ],
     "contain": [
       "p",
+      "ul",
+      "ul",
       "li",
       "p",
       "li",
@@ -1114,8 +1124,12 @@
       "li",
       "p"
     ],
-    "characters\n\na": [
-      "ul"
+    "characters": [
+      "ul",
+      "li",
+      "p",
+      "p",
+      "p"
     ],
     "combination": [
       "ul",
@@ -1140,8 +1154,10 @@
       "li",
       "p"
     ],
-    "letters\n\nat": [
-      "ul"
+    "letters": [
+      "ul",
+      "li",
+      "p"
     ],
     "one": [
       "ul",
@@ -1199,8 +1215,10 @@
       "li",
       "p"
     ],
-    "#\n\n\nat": [
-      "ul"
+    "#": [
+      "ul",
+      "li",
+      "p"
     ],
     "numeric": [
       "ul",
@@ -1211,20 +1229,6 @@
       "ul",
       "li",
       "p",
-      "p"
-    ],
-    "characters": [
-      "li",
-      "p",
-      "p",
-      "p"
-    ],
-    "letters": [
-      "li",
-      "p"
-    ],
-    "#": [
-      "li",
       "p"
     ],
     "default": [
@@ -1249,9 +1253,6 @@
       "ul",
       "li",
       "p"
-    ],
-    "1234\n\n\ncontain": [
-      "ul"
     ],
     "words": [
       "ul",
@@ -1309,8 +1310,10 @@
       "li",
       "p"
     ],
-    "pet\n\n\ncontain": [
-      "ul"
+    "pet": [
+      "ul",
+      "li",
+      "p"
     ],
     "obfuscated": [
       "ul",
@@ -1332,8 +1335,18 @@
       "li",
       "p"
     ],
-    "p3t\n\n\ninclude": [
-      "ul"
+    "p3t": [
+      "ul",
+      "li",
+      "p"
+    ],
+    "include": [
+      "ul",
+      "ul",
+      "li",
+      "p",
+      "li",
+      "p"
     ],
     "personal": [
       "ul",
@@ -1383,29 +1396,14 @@
       "li",
       "p"
     ],
-    "etc\n\ninclude": [
-      "ul"
+    "etc": [
+      "ul",
+      "li",
+      "p",
+      "p"
     ],
     "previously": [
       "ul",
-      "li",
-      "p"
-    ],
-    "pet": [
-      "li",
-      "p"
-    ],
-    "p3t": [
-      "li",
-      "p"
-    ],
-    "include": [
-      "li",
-      "p",
-      "li",
-      "p"
-    ],
-    "etc": [
       "li",
       "p"
     ],
@@ -1482,11 +1480,20 @@
       "h3",
       "p"
     ],
-    "password\n\nreview": [
-      "ul"
+    "review": [
+      "ul",
+      "li",
+      "p",
+      "h3",
+      "p"
     ],
-    "policy\n\nexecute": [
-      "ul"
+    "execute": [
+      "ul",
+      "li",
+      "p",
+      "h3",
+      "p",
+      "p"
     ],
     "credential": [
       "ul",
@@ -1516,19 +1523,6 @@
       "li",
       "p",
       "h3",
-      "h3",
-      "p",
-      "p"
-    ],
-    "review": [
-      "li",
-      "p",
-      "h3",
-      "p"
-    ],
-    "execute": [
-      "li",
-      "p",
       "h3",
       "p",
       "p"
@@ -1579,6 +1573,7 @@
     ],
     "page": [
       "p",
+      "ol",
       "li",
       "p"
     ],
@@ -1796,6 +1791,7 @@
     "brutus": [
       "p",
       "ol",
+      "ol",
       "li",
       "p",
       "li",
@@ -1957,11 +1953,11 @@
       "p",
       "p"
     ],
-    "?!^[0": [
+    "?!^0": [
       "p",
       "code"
     ],
-    "9]*$)(?!^[a": [
+    "9*$?!^a": [
       "p",
       "code"
     ],
@@ -1971,7 +1967,7 @@
       "code",
       "code"
     ],
-    "z]*$)^([a": [
+    "z*$^a": [
       "p",
       "code"
     ],
@@ -1979,7 +1975,7 @@
       "p",
       "code"
     ],
-    "9]{8,10})$": [
+    "9{810}$": [
       "p",
       "code"
     ],
@@ -2043,9 +2039,6 @@
       "p"
     ],
     "birthday": [
-      "p"
-    ],
-    "etc)": [
       "p"
     ],
     "environments": [
@@ -2257,6 +2250,9 @@
       "li",
       "p",
       "li",
+      "p",
+      "ol",
+      "li",
       "p"
     ],
     "constitute": [
@@ -2264,8 +2260,10 @@
       "li",
       "p"
     ],
-    "1.\n\n\nnavigate": [
-      "ol"
+    "navigate": [
+      "ol",
+      "li",
+      "p"
     ],
     "place": [
       "ol",
@@ -2277,8 +2275,10 @@
       "li",
       "p"
     ],
-    "page\n\n\nenter": [
-      "ol"
+    "enter": [
+      "ol",
+      "li",
+      "p"
     ],
     "doesn’t": [
       "ol",
@@ -2302,18 +2302,6 @@
     ],
     "request": [
       "ol",
-      "li",
-      "p"
-    ],
-    "1.": [
-      "li",
-      "p"
-    ],
-    "navigate": [
-      "li",
-      "p"
-    ],
-    "enter": [
       "li",
       "p"
     ],
@@ -2350,19 +2338,29 @@
       "li",
       "p"
     ],
-    "http//www.hoobie.net/brutus/.\n\n\nrun": [
-      "ol"
+    "http//wwwhoobienet/brutus/": [
+      "ol",
+      "li",
+      "p",
+      "a"
     ],
-    "brutus\n\n\ntype": [
-      "ol"
+    "run": [
+      "ol",
+      "li",
+      "p"
+    ],
+    "type": [
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
+      "p"
     ],
     "url": [
       "ol",
       "li",
       "p"
-    ],
-    "type\n\n\nin": [
-      "ol"
     ],
     "pass": [
       "ol",
@@ -2380,6 +2378,7 @@
       "p"
     ],
     "list": [
+      "ol",
       "ol",
       "ol",
       "li",
@@ -2406,8 +2405,10 @@
       "p",
       "p"
     ],
-    "list\n\n\nmodify": [
-      "ol"
+    "modify": [
+      "ol",
+      "li",
+      "p"
     ],
     "file": [
       "ol",
@@ -2432,35 +2433,8 @@
       "li",
       "p"
     ],
-    "rules.\n\n\nclick": [
-      "ol"
-    ],
-    "http//www.hoobie.net/brutus/.": [
-      "li",
-      "p"
-    ],
-    "http//www.hoobie.net/brutus/": [
-      "a"
-    ],
-    "run": [
-      "li",
-      "p"
-    ],
-    "type": [
-      "li",
-      "li",
-      "p",
-      "p"
-    ],
-    "modify": [
-      "li",
-      "p"
-    ],
-    "rules.": [
-      "li",
-      "p"
-    ],
     "click": [
+      "ol",
       "li",
       "p"
     ],

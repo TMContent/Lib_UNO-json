@@ -1,17 +1,14 @@
 {
   "id": "8f39bcc9-619b-479e-94b7-af822c7cc5fe",
-  "checksum": "8b98a1961f409c3335650a02795fb8fb",
+  "checksum": "dbfd239474db6c11e6b548961f7aad8f",
   "words": {
-    "40": [
-      "ul",
-      "li"
-    ],
     "applies": [
-      "h1"
+      "h2"
     ],
     "to": [
-      "h1",
-      "h1",
+      "h2",
+      "h2",
+      "p",
       "p",
       "p",
       "p",
@@ -32,11 +29,15 @@
       "ul",
       "li"
     ],
+    "40+": [
+      "ul",
+      "li"
+    ],
     "what": [
-      "h1"
+      "h2"
     ],
     "do": [
-      "h1"
+      "h2"
     ],
     "use": [
       "p",
@@ -47,7 +48,6 @@
       "p",
       "p",
       "p",
-      "em",
       "title"
     ],
     "viewstate": [
@@ -68,13 +68,15 @@
       "p",
       "title"
     ],
-    "to prevent": [
-      "p"
+    "prevent": [
+      "p",
+      "title"
     ],
     "cross": [
       "p"
     ],
     "site": [
+      "p",
       "p",
       "p",
       "p",
@@ -91,28 +93,7 @@
       "p"
     ],
     "why": [
-      "h1"
-    ],
-    "a csrf": [
-      "p"
-    ],
-    "attack": [
-      "p"
-    ],
-    "consists": [
-      "p"
-    ],
-    "of": [
-      "p",
-      "p",
-      "p",
-      "p",
-      "p",
-      "p",
-      "p"
-    ],
-    "posting": [
-      "p"
+      "h2"
     ],
     "a": [
       "p",
@@ -134,6 +115,30 @@
       "p",
       "p",
       "p",
+      "p",
+      "p"
+    ],
+    "csrf": [
+      "p",
+      "title"
+    ],
+    "attack": [
+      "p"
+    ],
+    "consists": [
+      "p"
+    ],
+    "of": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "posting": [
       "p"
     ],
     "malicious": [
@@ -169,7 +174,10 @@
       "p",
       "p"
     ],
-    "site this": [
+    "this": [
+      "p",
+      "p",
+      "p",
       "p"
     ],
     "allows": [
@@ -227,6 +235,9 @@
       "p",
       "p",
       "p",
+      "p",
+      "p",
+      "p",
       "p"
     ],
     "with": [
@@ -243,14 +254,13 @@
     ],
     "viewstateuserkey": [
       "p",
-      "em",
-      "em",
-      "pre",
-      "pre",
       "p",
-      "em",
+      "pre",
+      "code",
+      "pre",
+      "code",
       "p",
-      "em"
+      "p"
     ],
     "makes": [
       "p"
@@ -303,6 +313,7 @@
       "p"
     ],
     "each": [
+      "p",
       "p",
       "p"
     ],
@@ -399,7 +410,7 @@
       "p"
     ],
     "when": [
-      "h1"
+      "h2"
     ],
     "all": [
       "p",
@@ -417,7 +428,12 @@
       "p",
       "p"
     ],
-    "authentication should": [
+    "authentication": [
+      "p",
+      "p"
+    ],
+    "should": [
+      "p",
       "p"
     ],
     "be": [
@@ -428,9 +444,10 @@
     ],
     "protected": [
       "p",
-      "pre"
+      "pre",
+      "code"
     ],
-    "viewstateuserkey furthermore,": [
+    "furthermore": [
       "p"
     ],
     "triggers": [
@@ -451,12 +468,6 @@
     "not": [
       "p"
     ],
-    "authentication": [
-      "p"
-    ],
-    "should": [
-      "p"
-    ],
     "also": [
       "p"
     ],
@@ -468,8 +479,8 @@
     ],
     "example": [
       "p",
-      "h1",
-      "h1"
+      "h2",
+      "h2"
     ],
     "would": [
       "p"
@@ -481,9 +492,9 @@
       "p"
     ],
     "how": [
-      "h1"
+      "h2"
     ],
-    "the following": [
+    "following": [
       "p"
     ],
     "code": [
@@ -492,9 +503,6 @@
       "p"
     ],
     "added": [
-      "p"
-    ],
-    "each of": [
       "p"
     ],
     "your": [
@@ -528,31 +536,56 @@
       "p"
     ],
     "void": [
-      "pre"
+      "pre",
+      "code"
     ],
     "page_init": [
-      "pre"
+      "pre",
+      "code"
     ],
     "object": [
-      "pre"
+      "pre",
+      "code"
     ],
     "sender": [
-      "pre"
+      "pre",
+      "code"
     ],
     "eventargs": [
-      "pre"
-    ],
-    "e{": [
       "pre",
-      "pre"
+      "code"
+    ],
+    "e": [
+      "pre",
+      "code",
+      "pre",
+      "code",
+      "p",
+      "p"
+    ],
+    "{": [
+      "pre",
+      "code",
+      "pre",
+      "code"
     ],
     "=": [
       "pre",
-      "pre"
-    ],
-    "sessionsessionid;}": [
+      "code",
       "pre",
-      "pre"
+      "code"
+    ],
+    "sessionsessionid": [
+      "pre",
+      "code",
+      "pre",
+      "code"
+    ],
+    "}": [
+      "pre",
+      "code",
+      "pre",
+      "code"
     ],
     "alternatively": [
       "p"
@@ -571,13 +604,8 @@
     "add": [
       "p"
     ],
-    "this": [
-      "p",
-      "p"
-    ],
     "oninit": [
-      "p",
-      "em"
+      "p"
     ],
     "virtual": [
       "p"
@@ -588,7 +616,10 @@
     "derived": [
       "p"
     ],
-    "class (note": [
+    "class": [
+      "p"
+    ],
+    "note": [
       "p"
     ],
     "that": [
@@ -604,10 +635,9 @@
       "p"
     ],
     "pageinit": [
-      "p",
-      "em"
+      "p"
     ],
-    "event. this": [
+    "event": [
       "p"
     ],
     "allow": [
@@ -630,13 +660,16 @@
       "p"
     ],
     "override": [
-      "pre"
+      "pre",
+      "code"
     ],
     "oniniteventargs": [
-      "pre"
+      "pre",
+      "code"
     ],
-    "baseoninit(e);": [
-      "pre"
+    "baseoninite": [
+      "pre",
+      "code"
     ],
     "setting": [
       "p"
@@ -719,11 +752,7 @@
       "p"
     ],
     "problem": [
-      "h1"
-    ],
-    "e": [
-      "p",
-      "p"
+      "h2"
     ],
     "commerce": [
       "p",
@@ -785,7 +814,7 @@
       "p",
       "p"
     ],
-    "address the": [
+    "address": [
       "p",
       "p"
     ],
@@ -833,7 +862,7 @@
       "p"
     ],
     "solution": [
-      "h1"
+      "h2"
     ],
     "uses": [
       "p"
@@ -873,12 +902,6 @@
     ],
     "guidance": [
       "p"
-    ],
-    "prevent": [
-      "title"
-    ],
-    "csrf": [
-      "title"
     ]
   },
   "tags": {},

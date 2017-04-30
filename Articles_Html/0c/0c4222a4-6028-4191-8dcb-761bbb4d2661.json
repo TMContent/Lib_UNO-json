@@ -1,13 +1,13 @@
 {
   "id": "0c4222a4-6028-4191-8dcb-761bbb4d2661",
-  "checksum": "1fa3c3558da8ca54d7eb39f98138a129",
+  "checksum": "a8e731606d3eb043768f96c0e72b557e",
   "words": {
     "applies": [
-      "h1"
+      "h2"
     ],
     "to": [
-      "h1",
-      "h1",
+      "h2",
+      "h2",
       "p",
       "p",
       "ol",
@@ -15,38 +15,39 @@
       "ol",
       "li",
       "li",
-      "li",
-      "p",
-      "p",
-      "p"
+      "li"
     ],
     "scala": [
-      "p"
+      "ul",
+      "li"
     ],
     "and": [
-      "p",
+      "ul",
+      "li",
       "p",
       "p",
       "ol",
       "li",
-      "p",
       "strong",
       "title"
     ],
     "play": [
-      "p"
+      "ul",
+      "li"
     ],
     "framework": [
-      "p"
+      "ul",
+      "li"
     ],
-    "21.0+": [
-      "p"
+    "210+": [
+      "ul",
+      "li"
     ],
     "what": [
-      "h1"
+      "h2"
     ],
     "do": [
-      "h1"
+      "h2"
     ],
     "set": [
       "p",
@@ -54,7 +55,6 @@
       "p",
       "ol",
       "li",
-      "p",
       "strong",
       "title"
     ],
@@ -78,55 +78,50 @@
       "ol",
       "ol",
       "ol",
-      "li",
-      "p",
-      "li",
-      "li",
-      "p",
-      "p",
+      "ol",
       "li",
       "li",
       "li",
       "li",
       "li",
       "li",
-      "p",
-      "p",
-      "p",
-      "p",
-      "p",
-      "p",
+      "li",
+      "li",
+      "li",
+      "li",
       "strong",
       "title"
     ],
-    "\"secure\"": [
+    "secure": [
       "p",
       "p",
       "p",
       "p",
       "ol",
       "ol",
+      "ol",
       "li",
-      "p",
       "li",
-      "p",
-      "strong"
+      "li",
+      "strong",
+      "title"
     ],
-    "\"httponly\"": [
+    "httponly": [
       "p",
       "p",
       "p",
       "ol",
+      "ol",
       "li",
-      "p",
-      "strong"
+      "li",
+      "strong",
+      "title"
     ],
     "flags": [
       "p",
       "p",
       "ol",
       "li",
-      "p",
       "strong",
       "title"
     ],
@@ -137,7 +132,6 @@
       "p",
       "ol",
       "li",
-      "p",
       "title"
     ],
     "all": [
@@ -146,7 +140,6 @@
       "p",
       "ol",
       "li",
-      "p",
       "title"
     ],
     "sensitive": [
@@ -164,17 +157,11 @@
       "li",
       "li",
       "li",
-      "p",
-      "p",
-      "p",
       "strong",
       "li",
       "li",
-      "p",
-      "p",
       "strong",
       "li",
-      "p",
       "strong",
       "title"
     ],
@@ -188,34 +175,20 @@
       "ol",
       "ol",
       "ol",
-      "li",
-      "p",
-      "li",
-      "li",
-      "li",
-      "p",
-      "p",
-      "p",
-      "strong",
-      "strong",
-      "title"
-    ],
-    "ecure": [
-      "em",
-      "em"
-    ],
-    "httponly": [
-      "em",
-      "em",
-      "em",
+      "ol",
       "ol",
       "li",
-      "p",
-      "em",
+      "li",
+      "li",
+      "li",
+      "li",
+      "strong",
+      "li",
+      "strong",
       "title"
     ],
     "why": [
-      "h1"
+      "h2"
     ],
     "flag": [
       "p",
@@ -225,11 +198,8 @@
       "ol",
       "ol",
       "li",
-      "p",
       "li",
-      "li",
-      "p",
-      "p"
+      "li"
     ],
     "protect": [
       "p"
@@ -243,8 +213,7 @@
       "p",
       "p",
       "ol",
-      "li",
-      "p"
+      "li"
     ],
     "from": [
       "p",
@@ -279,8 +248,7 @@
     "over": [
       "p",
       "ol",
-      "li",
-      "p"
+      "li"
     ],
     "connections": [
       "p"
@@ -293,16 +261,11 @@
       "ol",
       "ol",
       "li",
-      "p",
       "strong",
       "li",
-      "p",
       "li",
       "li",
       "li",
-      "p",
-      "p",
-      "p",
       "strong"
     ],
     "secured": [
@@ -312,10 +275,9 @@
       "p",
       "p",
       "ol",
-      "li",
-      "p"
+      "li"
     ],
-    "ssl": [
+    "tls": [
       "p",
       "ol",
       "ol",
@@ -323,9 +285,6 @@
       "li",
       "li",
       "li",
-      "p",
-      "p",
-      "p",
       "strong"
     ],
     "prevents": [
@@ -342,12 +301,8 @@
       "ol",
       "li",
       "li",
-      "p",
-      "p",
       "li",
       "li",
-      "p",
-      "p",
       "strong"
     ],
     "being": [
@@ -368,8 +323,7 @@
     "this": [
       "p",
       "ol",
-      "li",
-      "p"
+      "li"
     ],
     "helps": [
       "p"
@@ -389,40 +343,29 @@
     "scripting": [
       "p"
     ],
-    "secure": [
-      "em",
-      "em",
-      "em",
-      "ol",
-      "em",
-      "li",
-      "p",
-      "title"
-    ],
     "how": [
-      "h1"
+      "h2"
     ],
     "verify": [
       "ol",
       "li",
-      "p",
       "strong"
     ],
     "is": [
       "ol",
       "li",
-      "p",
       "strong"
     ],
-    "available the": [
+    "available": [
+      "ol",
       "ol",
       "li",
-      "p"
+      "li",
+      "strong"
     ],
     "forces": [
       "ol",
-      "li",
-      "p"
+      "li"
     ],
     "be": [
       "ol",
@@ -430,126 +373,96 @@
       "ol",
       "li",
       "li",
-      "p",
-      "p",
-      "li",
-      "p"
+      "li"
     ],
     "sent": [
       "ol",
-      "li",
-      "p"
+      "li"
     ],
     "has": [
       "ol",
-      "li",
-      "p"
-    ],
-    "available": [
-      "ol",
-      "li",
-      "p",
-      "strong"
+      "li"
     ],
     "for": [
       "ol",
       "ol",
+      "ol",
       "li",
-      "p",
       "li",
-      "p",
+      "li",
       "strong"
     ],
     "work": [
       "ol",
-      "li",
-      "p"
+      "li"
     ],
     "identify": [
       "ol",
       "ol",
       "li",
-      "p",
       "strong",
       "li",
-      "p",
       "strong"
     ],
-    "cookies session": [
+    "session": [
       "ol",
-      "li",
-      "p"
+      "li"
     ],
     "should": [
       "ol",
-      "li",
-      "p"
+      "li"
     ],
     "always": [
       "ol",
-      "li",
-      "p"
+      "li"
     ],
     "considered": [
       "ol",
-      "li",
-      "p"
+      "li"
     ],
     "enumerate": [
       "ol",
-      "li",
-      "p"
+      "li"
     ],
     "used": [
       "ol",
-      "li",
-      "p"
+      "li"
     ],
     "application": [
       "ol",
-      "li",
-      "p"
+      "li"
     ],
     "make": [
       "ol",
-      "li",
-      "p"
+      "li"
     ],
     "a": [
       "ol",
-      "li",
-      "p"
+      "li"
     ],
     "list": [
       "ol",
       "ol",
       "li",
-      "p",
-      "li",
-      "p"
+      "li"
     ],
     "may": [
       "ol",
-      "li",
-      "p"
+      "li"
     ],
     "contain": [
       "ol",
-      "li",
-      "p"
+      "li"
     ],
     "information": [
       "ol",
-      "li",
-      "p"
+      "li"
     ],
     "code": [
       "ol",
       "ol",
       "li",
       "li",
-      "p",
-      "p",
       "strong"
     ],
     "creates": [
@@ -557,22 +470,13 @@
       "ol",
       "li",
       "li",
-      "p",
-      "p",
       "strong"
-    ],
-    "cookies for": [
-      "ol",
-      "li",
-      "p"
     ],
     "each": [
       "ol",
       "ol",
       "li",
-      "p",
       "li",
-      "p",
       "strong"
     ],
     "in": [
@@ -580,58 +484,44 @@
       "ol",
       "ol",
       "li",
-      "p",
       "li",
-      "li",
-      "p",
-      "p"
+      "li"
     ],
     "find": [
       "ol",
-      "li",
-      "p"
+      "li"
     ],
     "enable": [
       "ol",
       "ol",
       "li",
-      "li",
-      "p",
-      "p"
+      "li"
     ],
     "using": [
       "ol",
       "ol",
       "li",
-      "li",
-      "p",
-      "p"
+      "li"
     ],
-    "“applicationsession.httponly=true”": [
+    "“applicationsessionhttponly=true”": [
       "ol",
-      "li",
-      "p"
+      "li"
     ],
     "“applicationconf”": [
       "ol",
       "ol",
       "li",
-      "li",
-      "p",
-      "p"
+      "li"
     ],
     "file": [
       "ol",
       "ol",
       "li",
-      "li",
-      "p",
-      "p"
+      "li"
     ],
-    "“applicationsession.secure=true”": [
+    "“applicationsessionsecure=true”": [
       "ol",
-      "li",
-      "p"
+      "li"
     ]
   },
   "tags": {},

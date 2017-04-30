@@ -2,9 +2,17 @@
   "id": "4a9cb384-d439-4509-bda2-8a95166b0e9c",
   "checksum": "c4d266f2d59f29c44ecd06228dedab02",
   "words": {
-    "22": [
+    "6": [
       "ol",
       "li",
+      "p"
+    ],
+    "22": [
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
       "p"
     ],
     "100": [
@@ -54,6 +62,7 @@
     "amazon": [
       "ul",
       "li",
+      "ul",
       "li"
     ],
     "web": [
@@ -64,8 +73,12 @@
       "ul",
       "li"
     ],
-    "aws)": [
+    "aws": [
       "ul",
+      "li",
+      "ul",
+      "ul",
+      "li",
       "li"
     ],
     "what": [
@@ -76,6 +89,7 @@
     ],
     "restrict": [
       "p",
+      "ol",
       "ol",
       "li",
       "li",
@@ -137,6 +151,7 @@
       "p",
       "ol",
       "ol",
+      "ol",
       "li",
       "p",
       "li",
@@ -189,6 +204,7 @@
       "p",
       "li",
       "p",
+      "ol",
       "ol",
       "ol",
       "ol",
@@ -270,7 +286,25 @@
     "lists": [
       "p"
     ],
-    "acl).": [
+    "acl": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
+      "p",
+      "li",
+      "li",
+      "p",
+      "p",
+      "strong",
       "p"
     ],
     "why": [
@@ -290,6 +324,7 @@
       "li",
       "p",
       "p",
+      "ol",
       "ol",
       "li",
       "p",
@@ -374,26 +409,6 @@
       "p",
       "ol",
       "li",
-      "p"
-    ],
-    "acl": [
-      "p",
-      "p",
-      "p",
-      "p",
-      "ol",
-      "ol",
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "p",
-      "p",
-      "li",
-      "li",
-      "p",
-      "p",
-      "strong",
       "p"
     ],
     "a": [
@@ -633,7 +648,14 @@
     "private": [
       "p"
     ],
-    "vpc),": [
+    "vpc": [
+      "p",
+      "ol",
+      "ol",
+      "li",
+      "p",
+      "strong",
+      "li",
       "p"
     ],
     "its": [
@@ -942,8 +964,17 @@
       "li",
       "p"
     ],
-    "deployment\n\n\ndeployment": [
-      "ol"
+    "deployment": [
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "p",
+      "li",
+      "li",
+      "p",
+      "p",
+      "strong"
     ],
     "which": [
       "ol",
@@ -954,16 +985,6 @@
       "ol",
       "li",
       "p"
-    ],
-    "deployment": [
-      "ol",
-      "li",
-      "p",
-      "li",
-      "li",
-      "p",
-      "p",
-      "strong"
     ],
     "should": [
       "ol",
@@ -1037,20 +1058,23 @@
       "li",
       "p"
     ],
-    "applications\n\n\nperiodic": [
-      "ol"
+    "applications": [
+      "ol",
+      "li",
+      "p"
+    ],
+    "periodic": [
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
+      "p",
+      "strong"
     ],
     "checks": [
       "ol",
       "li",
-      "p",
-      "strong"
-    ],
-    "periodic": [
-      "ol",
-      "li",
-      "li",
-      "p",
       "p",
       "strong"
     ],
@@ -1143,10 +1167,6 @@
       "li",
       "p"
     ],
-    "applications": [
-      "li",
-      "p"
-    ],
     "following": [
       "p"
     ],
@@ -1220,15 +1240,6 @@
       "p",
       "strong"
     ],
-    "vpc": [
-      "ol",
-      "ol",
-      "li",
-      "p",
-      "strong",
-      "li",
-      "p"
-    ],
     "console": [
       "ol",
       "li",
@@ -1256,8 +1267,11 @@
       "li",
       "p"
     ],
-    "acls\n\n\nreview": [
-      "ol"
+    "review": [
+      "ol",
+      "li",
+      "p",
+      "strong"
     ],
     "properties": [
       "ol",
@@ -1365,8 +1379,14 @@
       "li",
       "p"
     ],
-    "traffic\n\n\nadd": [
-      "ol"
+    "add": [
+      "ol",
+      "ol",
+      "li",
+      "p",
+      "strong",
+      "li",
+      "p"
     ],
     "create": [
       "ol",
@@ -1487,9 +1507,6 @@
       "li",
       "p"
     ],
-    "rules\n\n\nrestrict": [
-      "ol"
-    ],
     "example": [
       "ol",
       "li",
@@ -1559,11 +1576,6 @@
       "li",
       "p"
     ],
-    "22),": [
-      "ol",
-      "li",
-      "p"
-    ],
     "once": [
       "ol",
       "ol",
@@ -1578,11 +1590,6 @@
       "p"
     ],
     "tcp": [
-      "ol",
-      "li",
-      "p"
-    ],
-    "6)": [
       "ol",
       "li",
       "p"
@@ -1615,14 +1622,6 @@
       "li",
       "p"
     ],
-    "add": [
-      "ol",
-      "li",
-      "p",
-      "strong",
-      "li",
-      "p"
-    ],
     "source": [
       "ol",
       "li",
@@ -1639,7 +1638,7 @@
       "p",
       "p"
     ],
-    "192168.2.0/24.": [
+    "19216820/24": [
       "ol",
       "li",
       "p"
@@ -1689,11 +1688,6 @@
       "li",
       "p"
     ],
-    "review": [
-      "li",
-      "p",
-      "strong"
-    ],
     "all": [
       "p"
     ],
@@ -1709,20 +1703,15 @@
     "line": [
       "p"
     ],
-    "aws": [
+    "cli": [
+      "ul",
       "ul",
       "li",
       "li"
     ],
-    "cliamazon": [
-      "ul"
-    ],
     "ec2": [
       "ul",
       "li"
-    ],
-    "cliaws": [
-      "ul"
     ],
     "tools": [
       "ul",
@@ -1734,10 +1723,6 @@
     ],
     "powershell": [
       "ul",
-      "li"
-    ],
-    "cli": [
-      "li",
       "li"
     ],
     "using": [

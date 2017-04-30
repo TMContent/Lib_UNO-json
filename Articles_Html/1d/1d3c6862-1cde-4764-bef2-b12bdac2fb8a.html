@@ -1,15 +1,20 @@
 <h1>Description</h1><p>File upload vulnerabilities allow attackers to upload malicious code. (Technically, allowing users to upload anything that the application's design doesn't account for can be considered a file upload vulnerability. In practice, real file upload vulnerabilities are those that allow attackers to upload and execute malicious code.) 
 </p><p>
-The principle of Web Applications is that application files are executed as code when they are accessed via the Web server. If an attacker can upload his own application files and execute them by accessing them via the Web server, he can compromise the application. File upload vulnerabilities occur when the application allows users to upload files to Web accessible locations without placing sufficient restrictions on the kinds of files that can be uploaded. 
+The principle of Web Applications is that application files are executed as code when they are accessed via the Web server. If an attacker can upload their own application files and execute them by accessing them via the Web server, they can compromise the application. File upload vulnerabilities occur when the application allows users to upload files to Web accessible locations without placing sufficient restrictions on the kinds of files that can be uploaded. 
 </p><p>
 File upload issues affect all Web Applications that allow users to upload files.
-</p><h1>Impact</h1><p>File upload vulnerabilites allow attackers to execute arbitrary code with the privileges of the application server. Using this vulnerability, the attacker will usually upload a small backdoor that will give him easy access to the application server's functions, such as performing file and database operations, executing operating system commands, executing arbitrary code that is sent in HTTP requests, and executing additional exploits. 
+</p><h1>Impact</h1><p>File upload vulnerabilites allow attackers to execute arbitrary code with the privileges of the application server. Using this vulnerability, the attacker will usually upload a small backdoor that will give them easy access to the application server's functions, such as performing file and database operations, executing operating system commands, executing arbitrary code that is sent in HTTP requests, and executing additional exploits. 
 </p><p>
 After installing the initial backdoor, the attacker is likely to use that backdoor to upload additional hacking tools to the server, depending on what the attacker wants to do. At that point, the application and all application data are compromised. If the server is not properly updated and hardened, the server itself is likely to be compromised as well. 
 </p><p>
 After gaining as much access as possible, the attacker will typically evaluate the value of the compromised application and server and decide how to abuse it for maximum profit, which usually translates into maximum damage for the owner of the application and the server. Some examples of abuse are: redirecting the application's users to exploit packs, using the server to send spam, defacing the application, leaking application data, selling application data on the black market, modifying application code to spy on users, using the server as a proxy for other attacks, using the server as a part of a DDoS botnet to attack other Internet hosts, etc.
 </p><h1>Countermeasures</h1><p>File upload vulnerabilities can be prevented by storing uploaded files outside of web root and scrambling names of uploaded files.
-</p><h1>Application Check</h1><p>To check for adequate protection against file upload vulnerabilities, check if uploaded files are stored outside of web root and if names of uploaded files are scrambled.
-</p><h1>Specific Technologies</h1><ul><li> <a href="de524f32-c3f0-452d-ba89-b6044a03a4e8">ASP.NET File Upload</a></li>
-<li> <a href="387104b2-dacf-48e3-b0f7-148cd4c75711">Java File Upload</a></li>
-<li> <a href="fc1d8337-3bc1-40f5-bc88-db1575d5657a">PHP File Upload</a></li></ul>
+</p><ul>
+<li> <a href="fd91e936-be47-4bf3-ae59-5ae45a8379bf">Store Uploaded Files Outside of Web Root</a></li>
+</ul><ul>
+<li> <a href="34dcc037-0c93-4baf-b36d-75bac8391815">Scramble Names of Uploaded Files</a></li>
+</ul><h1>Application Check</h1><p>To check for adequate protection against file upload vulnerabilities, check if uploaded files are stored outside of web root and if names of uploaded files are scrambled.
+</p><ul>
+<li> <a href="ac20a446-7eec-4a71-97fd-b6a0c8b57c42">Uploaded Files Are Stored Outside of Web Root</a></li>
+</ul><ul>
+<li> <a href="8377689b-57ca-4b72-91a3-1a4b0f41f2e0">Names of Uploaded Files Are Scrambled</a></li></ul>

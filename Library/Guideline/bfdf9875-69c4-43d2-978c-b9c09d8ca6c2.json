@@ -28,7 +28,7 @@
           "PHP"
         ],
         "Type": [
-          "Guideline"
+          "How To"
         ],
         "DirectLink": [
           "Set the HTTPOnly Flag on Session Cookies"
@@ -60,7 +60,7 @@
           "DataType": "html"
         },
         "Data": [
-          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PHP</li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Set the \"<em>HTTPOnly</em>\" flag on session cookies.</p>\r\n  <h1>Why</h1>\r\n  <p>Set the \"<em>secure</em>\" flag on all session cookies to protect the contents of the session cookies from eavesdropping attacks. Setting the \"<em>secure</em>\" flag on session cookies ensures they are only transferred over connections that are secured by TLS.</p>\r\n  <h1>How</h1>\r\n  <p>To set the \"<em>HTTPOnly</em>\" flag on session cookies, edit the <em>php.ini</em> file and configure the \"<em>session.cookie_httponly</em>\" setting, like this:</p>\r\n  <pre>session.cookie_httponly = On</pre>\r\n  <h1>Additional Resources</h1>\r\n  <ul>\r\n    <li>For more information about PHP runtime configuration, see <a href=\"http://php.net/manual/en/session.configuration.php\">http://php.net/manual/en/session.configuration.php</a></li>\r\n  </ul>"
+          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PHP</li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Set the \"<em>HTTPOnly</em>\" flag on session cookies.</p>\r\n  <h1>Why</h1>\r\n  <p>Set the \"<em>secure</em>\" flag on all session cookies to protect the contents of the session cookies from eavesdropping attacks. Setting the \"<em>secure</em>\" flag on session cookies ensures they are only transferred over connections that are secured by TLS.</p>\r\n  <h1>How</h1>\r\n  <p>To set the \"<em>HTTPOnly</em>\" flag on session cookies, edit the <em>php.ini</em> file and configure the \"<em>session.cookie_httponly</em>\" setting, like this:</p>\r\n  <pre>session.cookie_httponly = On</pre>"
         ]
       }
     ]

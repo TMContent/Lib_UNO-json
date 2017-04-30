@@ -40,24 +40,28 @@
 
  user = User.new(name: 'joe', password: '', password_confirmation: 'nomatch')
  user.save
-     # =&gt; false, password required
+ 	# =&gt; false, password required
  user.password = 'mUc3m00Rsqy'
  user.save
-     # =&gt; false, confirmation doesn't match
+ 	# =&gt; false, confirmation doesn't match
  user.password_confirmation = 'mUc3m00Rsqy'
  user.save
-     # =&gt; true
+ 	# =&gt; true
  user.authenticate('notright')
-     # =&gt; false
+ 	# =&gt; false
  user.authenticate('mUc3m00Rsqy')
-     # =&gt; user
+ 	# =&gt; user
  User.find_by(name: 'joe').try(:authenticate, 'notright')
-     # =&gt; false
+ 	# =&gt; false
  User.find_by(name: 'joe').try(:authenticate, 'mUc3m00Rsqy')
-     # =&gt; user
+ 	# =&gt; user
 </code></pre>
 </li>
 <li>
 <p><strong>Use other built-in password management functions as necessary.</strong> The <code>user.save</code> method can be used to save passwords. The <code>new</code> method can be used to create new users: <code>user = User.new(name: 'user', password: 'password')</code>. RoR provides other password management functions which should be investigated and used to implement all of the authentication functionality required by your application.</p>
 </li>
 </ol>
+<h2>Guideline</h2>
+<ul>
+<li><a href="00000000-0000-0000-0000-0000006adfa3">Store Passwords Securely</a></li>
+</ul>

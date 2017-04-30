@@ -71,7 +71,47 @@
     "ensure": [
       "p"
     ],
-    "that the": [
+    "that": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "ol",
+      "li",
+      "p",
+      "p",
+      "p"
+    ],
+    "the": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
+      "p",
+      "li",
+      "li",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
       "p"
     ],
     "health": [
@@ -197,17 +237,8 @@
       "p",
       "title"
     ],
-    "that": [
-      "p",
-      "p",
-      "p",
-      "ol",
-      "li",
-      "p",
-      "p",
-      "p"
-    ],
     "you": [
+      "p",
       "p",
       "p",
       "p",
@@ -228,36 +259,6 @@
       "a"
     ],
     "monitor": [
-      "p"
-    ],
-    "the": [
-      "p",
-      "p",
-      "p",
-      "p",
-      "p",
-      "p",
-      "ol",
-      "ol",
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "p",
-      "p",
-      "li",
-      "li",
-      "p",
-      "p",
-      "p",
-      "p",
-      "p",
-      "p",
-      "p",
-      "p",
-      "p",
-      "p",
-      "p",
       "p"
     ],
     "of": [
@@ -440,6 +441,7 @@
       "li",
       "p",
       "p",
+      "p",
       "p"
     ],
     "an": [
@@ -490,7 +492,7 @@
       "p",
       "p"
     ],
-    "wmi)": [
+    "wmi": [
       "p",
       "p"
     ],
@@ -571,10 +573,16 @@
     "default": [
       "ol",
       "ol",
+      "ol",
+      "ol",
       "li",
       "p",
       "li",
+      "li",
+      "li",
       "p",
+      "pre",
+      "pre",
       "p",
       "p"
     ],
@@ -619,39 +627,41 @@
     "healthmonitoring": [
       "ol",
       "li",
-      "pre"
+      "pre",
+      "p",
+      "em"
     ],
-    "heartbeatinterval=\"0\"": [
+    "heartbeatinterval=0": [
       "ol",
       "li",
       "pre"
     ],
-    "enabled=\"true\"": [
+    "enabled=true": [
       "ol",
       "li",
       "pre"
     ],
-    "buffermodes/>": [
+    "buffermodes/": [
       "ol",
       "li",
       "pre"
     ],
-    "providers/>": [
+    "providers/": [
       "ol",
       "li",
       "pre"
     ],
-    "profiles/>": [
+    "profiles/": [
       "ol",
       "li",
       "pre"
     ],
-    "rules/>": [
+    "rules/": [
       "ol",
       "li",
       "pre"
     ],
-    "eventmappings/></healthmonitoring>": [
+    "eventmappings//healthmonitoring": [
       "ol",
       "li",
       "pre"
@@ -715,6 +725,8 @@
       "ol",
       "ol",
       "ol",
+      "ol",
+      "li",
       "li",
       "li",
       "li",
@@ -722,6 +734,7 @@
       "p",
       "p",
       "strong",
+      "pre",
       "p",
       "p"
     ],
@@ -754,9 +767,12 @@
     "errors": [
       "ol",
       "ol",
+      "ol",
+      "li",
       "li",
       "li",
       "p",
+      "pre",
       "pre"
     ],
     "failure": [
@@ -768,9 +784,12 @@
     "audits": [
       "ol",
       "ol",
+      "ol",
+      "li",
       "li",
       "li",
       "p",
+      "pre",
       "pre"
     ],
     "logged": [
@@ -780,11 +799,6 @@
       "p",
       "p"
     ],
-    "rules>": [
-      "ol",
-      "li",
-      "pre"
-    ],
     "add": [
       "ol",
       "ol",
@@ -793,12 +807,17 @@
       "pre",
       "pre"
     ],
-    "name=\"all": [
+    "name=all": [
       "ol",
       "li",
       "pre"
     ],
-    "default\"": [
+    "eventname=all": [
+      "ol",
+      "li",
+      "pre"
+    ],
+    "provider=eventlogprovider": [
       "ol",
       "ol",
       "li",
@@ -806,17 +825,7 @@
       "pre",
       "pre"
     ],
-    "eventname=\"all": [
-      "ol",
-      "li",
-      "pre"
-    ],
-    "errors\"": [
-      "ol",
-      "li",
-      "pre"
-    ],
-    "provider=\"eventlogprovider\"": [
+    "profile=default": [
       "ol",
       "ol",
       "li",
@@ -824,7 +833,7 @@
       "pre",
       "pre"
     ],
-    "profile=\"default\"": [
+    "mininstances=1": [
       "ol",
       "ol",
       "li",
@@ -832,7 +841,7 @@
       "pre",
       "pre"
     ],
-    "mininstances=\"1\"": [
+    "maxlimit=infinite": [
       "ol",
       "ol",
       "li",
@@ -840,7 +849,7 @@
       "pre",
       "pre"
     ],
-    "maxlimit=\"infinite\"": [
+    "mininterval=000100": [
       "ol",
       "ol",
       "li",
@@ -848,15 +857,7 @@
       "pre",
       "pre"
     ],
-    "mininterval=\"0001:00\"": [
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "pre",
-      "pre"
-    ],
-    "custom=\"\"": [
+    "custom=": [
       "ol",
       "ol",
       "li",
@@ -869,22 +870,17 @@
       "li",
       "pre"
     ],
-    "name=\"failure": [
+    "name=failure": [
       "ol",
       "li",
       "pre"
     ],
-    "eventname=\"failure": [
+    "eventname=failure": [
       "ol",
       "li",
       "pre"
     ],
-    "audits\"": [
-      "ol",
-      "li",
-      "pre"
-    ],
-    "/</rules>": [
+    "//rules": [
       "ol",
       "li",
       "pre"
@@ -933,28 +929,23 @@
       "p",
       "p"
     ],
-    "systemweb.management.weberrorevent)": [
-      "p"
+    "systemwebmanagementweberrorevent": [
+      "p",
+      "em"
     ],
     "audit": [
       "p",
       "p"
     ],
-    "systemweb.management.webfailureauditevent)": [
-      "p"
+    "systemwebmanagementwebfailureauditevent": [
+      "p",
+      "em"
     ],
     "written": [
       "p"
     ],
-    "log the": [
-      "p"
-    ],
     "defined": [
       "p"
-    ],
-    "healthmonitoring>": [
-      "p",
-      "em"
     ],
     "additional": [
       "p",
@@ -976,35 +967,35 @@
     "one": [
       "p"
     ],
-    "systemweb.management.weberrorevent": [
-      "em"
-    ],
-    "systemweb.management.webfailureauditevent": [
-      "em"
-    ],
     "e": [
       "p"
     ],
     "mail": [
       "p"
     ],
-    "simplemailwebeventprovider,": [
-      "p"
+    "simplemailwebeventprovider": [
+      "p",
+      "em"
     ],
-    "templatedmailwebeventprovider,": [
-      "p"
+    "templatedmailwebeventprovider": [
+      "p",
+      "em"
     ],
-    "sqlwebeventprovider),": [
-      "p"
+    "sqlwebeventprovider": [
+      "p",
+      "em"
     ],
-    "eventlogwebeventprovider),": [
-      "p"
+    "eventlogwebeventprovider": [
+      "p",
+      "em"
     ],
-    "tracewebeventprovider),": [
-      "p"
+    "tracewebeventprovider": [
+      "p",
+      "em"
     ],
-    "wmiwebeventprovider). you": [
-      "p"
+    "wmiwebeventprovider": [
+      "p",
+      "em"
     ],
     "configure": [
       "p"
@@ -1020,24 +1011,6 @@
     ],
     "they": [
       "p"
-    ],
-    "simplemailwebeventprovider": [
-      "em"
-    ],
-    "templatedmailwebeventprovider": [
-      "em"
-    ],
-    "sqlwebeventprovider": [
-      "em"
-    ],
-    "eventlogwebeventprovider": [
-      "em"
-    ],
-    "tracewebeventprovider": [
-      "em"
-    ],
-    "wmiwebeventprovider": [
-      "em"
     ],
     "items": [
       "h1"

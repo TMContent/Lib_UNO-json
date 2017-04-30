@@ -5,9 +5,23 @@
 <h2>How</h2>
 <p>Perform the following actions to validate file format before loading files into the application:</p>
 <ol>
-<li><strong>Define file format.</strong> Specify valid values for all possible fields in all document types used by your application. This information should be a part of project documentation and the developers may already have it.</li>
-<li><strong>Review code.</strong> Search for code that loads saved files into the application. Examine the extent of the validation already being performed by the application. If some validation is already being performed, some code may be recycled in a more thorough validation routine.</li>
-<li><strong>Implement validation.</strong> Write validation functions for all fields in all document types supported by the application.</li>
-<li><strong>Centralize validation.</strong> Move the validation functions for all document fields to the centralized input and data validation class or library. Write a master file format validation function that calls all individual data field validation functions.</li>
-<li><strong>Use validation.</strong> Go back to code that loads data files into the application. Remove any old validation code. Call the master file format validation function on all files before loading them into the application.</li>
+<li>
+<p><strong>Define file formats.</strong> Specify valid values for all possible fields in all document types used by your application. This information should be a part of project documentation and the developers may already have it.</p>
+</li>
+<li>
+<p><strong>Review code.</strong> Search for code that loads saved files into the application. Examine the extent of the validation already being performed by the application. If some validation is already being performed, some code may be recycled in a more thorough validation routine.</p>
+</li>
+<li>
+<p><strong>Implement validation.</strong> Write validation functions for all fields in all document types supported by the application.</p>
+</li>
+<li>
+<p><strong>Centralize validation.</strong> Move the validation functions for all document fields to the centralized input and data validation class or library. Write a master file format validation function that calls all individual data field validation functions.</p>
+</li>
+<li>
+<p><strong>Use validation.</strong> Go back to code that loads data files into the application. Remove any old validation code. Call the master file format validation function on all files before loading them into the application.</p>
+</li>
 </ol>
+<h2>Related Pages</h2>
+<ul>
+<li><a href="bf53d602-1d86-489c-858d-f5efb6424412">Data Validation Guide</a></li>
+</ul>

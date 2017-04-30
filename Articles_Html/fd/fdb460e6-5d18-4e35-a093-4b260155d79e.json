@@ -1,7 +1,17 @@
 {
   "id": "fdb460e6-5d18-4e35-a093-4b260155d79e",
-  "checksum": "3f1d1484a6222c6be316f52fb5c3ac83",
+  "checksum": "5fb6cc40cb64080b42f233fb06920c35",
   "words": {
+    "1": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "2": [
+      "ul",
+      "li",
+      "a"
+    ],
     "what": [
       "h2"
     ],
@@ -20,8 +30,6 @@
       "ol",
       "ol",
       "ol",
-      "ol",
-      "li",
       "li",
       "li",
       "li",
@@ -201,26 +209,39 @@
       "p"
     ],
     "cross": [
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "site": [
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "request": [
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "forgery": [
-      "p"
-    ],
-    "csrf).": [
-      "p"
-    ],
-    "why": [
-      "h2"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "csrf": [
       "p",
-      "p"
+      "p",
+      "p",
+      "ul",
+      "li",
+      "a"
+    ],
+    "why": [
+      "h2"
     ],
     "may": [
       "p"
@@ -248,8 +269,6 @@
       "ol",
       "ol",
       "ol",
-      "ol",
-      "li",
       "li",
       "strong",
       "li",
@@ -277,8 +296,6 @@
       "ol",
       "ol",
       "ol",
-      "ol",
-      "li",
       "li",
       "li",
       "li"
@@ -348,8 +365,6 @@
       "p",
       "ol",
       "ol",
-      "ol",
-      "li",
       "li",
       "li"
     ],
@@ -420,7 +435,8 @@
       "li",
       "li",
       "li",
-      "strong"
+      "strong",
+      "h2"
     ],
     "all": [
       "ol",
@@ -503,8 +519,6 @@
       "ol",
       "ol",
       "ol",
-      "ol",
-      "li",
       "li",
       "li",
       "li",
@@ -576,52 +590,6 @@
       "li"
     ],
     "generate": [
-      "ol",
-      "li"
-    ],
-    "one": [
-      "ol",
-      "ol",
-      "li",
-      "li"
-    ],
-    "approach": [
-      "ol",
-      "li"
-    ],
-    "use": [
-      "ol",
-      "li"
-    ],
-    "uniqid": [
-      "ol",
-      "li"
-    ],
-    "function": [
-      "ol",
-      "li"
-    ],
-    "combined": [
-      "ol",
-      "li"
-    ],
-    "with": [
-      "ol",
-      "li"
-    ],
-    "hash": [
-      "ol",
-      "li"
-    ],
-    "based": [
-      "ol",
-      "li"
-    ],
-    "current": [
-      "ol",
-      "li"
-    ],
-    "time": [
       "ol",
       "li"
     ],
@@ -709,6 +677,10 @@
       "li",
       "li"
     ],
+    "one": [
+      "ol",
+      "li"
+    ],
     "simplest": [
       "ol",
       "li"
@@ -791,8 +763,115 @@
     "legitimate": [
       "ol",
       "li"
+    ],
+    "examples": [
+      "h2"
+    ],
+    "java": [
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "a",
+      "li",
+      "a",
+      "li",
+      "a",
+      "li",
+      "a"
+    ],
+    "jsf": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "jsp": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "springmvc": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "struts": [
+      "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "a"
+    ],
+    "scala": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "php": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "net": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "ruby": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "vulnerabilities": [
+      "h2"
     ]
   },
   "tags": {},
-  "links": []
+  "links": [
+    {
+      "href": "25e3943b-a651-42c5-9e19-76077de05e90",
+      "text": "Java JSF"
+    },
+    {
+      "href": "986c7161-0a76-430a-8d0e-80d4615ab5db",
+      "text": "Java JSP"
+    },
+    {
+      "href": "bf931bed-21c0-4b89-9cb2-9274d8c796a6",
+      "text": "Java SpringMVC"
+    },
+    {
+      "href": "63deed1a-6df4-4e04-9f61-898f190e1fe1",
+      "text": "Java Struts 1"
+    },
+    {
+      "href": "a9c2c121-614c-4a3f-9b7c-f2cf57d6aa0b",
+      "text": "Java Struts 2"
+    },
+    {
+      "href": "19f2779c-14ec-43fb-8e8d-4505cb0801c9",
+      "text": "Scala"
+    },
+    {
+      "href": "4236cf87-7f64-4f77-91b3-04dc1507c366",
+      "text": "PHP"
+    },
+    {
+      "href": "8f39bcc9-619b-479e-94b7-af822c7cc5fe",
+      "text": ".NET"
+    },
+    {
+      "href": "cbeb5be7-9425-44db-9446-cd0a56f7b7b6",
+      "text": "Ruby"
+    },
+    {
+      "href": "62f78eb2-9eba-484c-ade3-7b54c2df9e5a",
+      "text": "Cross-Site Request Forgery (CSRF)"
+    }
+  ]
 }

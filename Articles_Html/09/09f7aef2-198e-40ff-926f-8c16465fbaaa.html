@@ -1,0 +1,20 @@
+<h2>Applies To</h2>
+<ul>
+<li>Python 3</li>
+</ul>
+<h2>Solution Example</h2>
+<pre><code>#! /usr/bin/env python3
+
+import os
+
+# Setup restrict default permissions
+os.umask(0o077)
+
+# Create a new world-readable file
+public_file = 'public.txt'
+with open(public_file, 'w') as f:
+	f.write(&quot;World Readable content.&quot;)
+
+# Increase permissions from restrictive umask to make file world readable
+os.chmod(public_file, 0o744)
+</code></pre>

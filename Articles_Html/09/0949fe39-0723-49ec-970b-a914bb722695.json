@@ -146,9 +146,15 @@
       "p",
       "p",
       "p",
+      "pre",
+      "code",
+      "p",
+      "pre",
+      "code",
       "p",
       "p",
-      "p"
+      "pre",
+      "code"
     ],
     "increase": [
       "p"
@@ -362,10 +368,18 @@
       "pre",
       "code",
       "p",
+      "pre",
+      "code",
+      "pre",
+      "code",
       "p",
       "pre",
       "code",
-      "p"
+      "p",
+      "pre",
+      "pre",
+      "code",
+      "code"
     ],
     "will": [
       "p",
@@ -432,12 +446,16 @@
       "pre",
       "code"
     ],
-    "nvarchar255),": [
+    "nvarchar255": [
+      "pre",
       "pre",
       "pre",
       "pre",
       "code",
       "code",
+      "code",
+      "code",
+      "pre",
       "code"
     ],
     "@email": [
@@ -454,27 +472,29 @@
     ],
     "@lastname": [
       "pre",
-      "code"
-    ],
-    "nvarchar255))": [
       "pre",
       "code",
-      "pre",
       "code"
     ],
     "as": [
       "pre",
       "code",
-      "p"
+      "p",
+      "pre",
+      "code"
     ],
     "": [
       "pre",
       "pre",
+      "pre",
+      "code",
       "code",
       "code"
     ],
     "insert": [
       "pre",
+      "pre",
+      "code",
       "code"
     ],
     "new": [
@@ -513,11 +533,13 @@
       "code",
       "code"
     ],
-    "userinsert": [
+    "user": [
       "pre",
-      "code"
+      "code",
+      "p",
+      "p"
     ],
-    "users_tableusername,": [
+    "users_tableusername": [
       "pre",
       "code"
     ],
@@ -535,11 +557,11 @@
       "pre",
       "code"
     ],
-    "lastname\nvalues(@username,": [
+    "lastname": [
       "pre",
       "code"
     ],
-    "@lastname;": [
+    "values@username": [
       "pre",
       "code"
     ],
@@ -555,7 +577,8 @@
       "p"
     ],
     "net": [
-      "p"
+      "p",
+      "title"
     ],
     "code": [
       "p",
@@ -566,10 +589,20 @@
     ],
     "//create": [
       "pre",
-      "code",
+      "pre",
       "pre",
       "code",
+      "code",
+      "code",
       "pre",
+      "pre",
+      "code",
+      "code",
+      "pre",
+      "pre",
+      "pre",
+      "code",
+      "code",
       "code"
     ],
     "connection": [
@@ -604,7 +637,23 @@
       "code",
       "code"
     ],
-    "stringsqlconnection": [
+    "string": [
+      "pre",
+      "pre",
+      "code",
+      "code",
+      "pre",
+      "pre",
+      "pre",
+      "code",
+      "code",
+      "code",
+      "pre",
+      "pre",
+      "code",
+      "code"
+    ],
+    "sqlconnection": [
       "pre",
       "code",
       "pre",
@@ -614,10 +663,14 @@
     ],
     "myconnection": [
       "pre",
+      "pre",
+      "code",
       "code",
       "pre",
       "code",
       "pre",
+      "pre",
+      "code",
       "code"
     ],
     "=": [
@@ -670,7 +723,7 @@
       "pre",
       "code"
     ],
-    "string;\nmyconnection.open();\n//create": [
+    "myconnectionopen": [
       "pre",
       "code",
       "pre",
@@ -682,6 +735,8 @@
       "pre",
       "pre",
       "pre",
+      "pre",
+      "code",
       "code",
       "code",
       "code",
@@ -693,6 +748,8 @@
       "pre",
       "pre",
       "pre",
+      "pre",
+      "code",
       "code",
       "code",
       "code"
@@ -713,7 +770,9 @@
       "pre",
       "code"
     ],
-    "proceduresqlcommand": [
+    "sqlcommand": [
+      "pre",
+      "code",
       "pre",
       "code",
       "pre",
@@ -727,23 +786,25 @@
       "pre",
       "code"
     ],
-    "sqlcommand\"sp_addnewuser\",": [
+    "sqlcommandsp_addnewuser": [
       "pre",
       "code"
     ],
-    "myconnection;\n//specify": [
+    "//specify": [
       "pre",
       "code",
       "pre",
       "code"
     ],
-    "proceduremycommand.commandtype": [
-      "pre",
-      "code",
+    "proceduremy": [
       "pre",
       "code"
     ],
-    "commandtypestoredprocedure;\n//create": [
+    "commandcommandtype": [
+      "pre",
+      "code"
+    ],
+    "commandtypestoredprocedure": [
       "pre",
       "code",
       "pre",
@@ -767,7 +828,25 @@
       "pre",
       "code"
     ],
-    "usernamesqlparameter": [
+    "username": [
+      "pre",
+      "code",
+      "p",
+      "p",
+      "pre",
+      "pre",
+      "code",
+      "code",
+      "pre",
+      "code",
+      "pre",
+      "code",
+      "pre",
+      "pre",
+      "code",
+      "code"
+    ],
+    "sqlparameter": [
       "pre",
       "code",
       "pre",
@@ -779,29 +858,53 @@
       "pre",
       "code"
     ],
-    "sqlparameter\"@username\",": [
+    "sqlparameter@username": [
       "pre",
       "code",
       "pre",
       "code"
     ],
-    "sqldbtypevarchar);\nuserparameter.direction": [
+    "sqldbtypevarchar": [
       "pre",
       "code",
       "pre",
       "code"
     ],
-    "parameterdirectioninput;\nuserparameter.value": [
+    "userparameterdirection": [
       "pre",
       "code",
       "pre",
       "code"
     ],
-    "\"testuser\"\n//add": [
+    "parameterdirectioninput": [
+      "pre",
+      "code",
       "pre",
       "code"
     ],
-    "commandmycommand.parameters.add(userparameter);\n//repeat": [
+    "userparametervalue": [
+      "pre",
+      "code",
+      "pre",
+      "code"
+    ],
+    "testuser": [
+      "pre",
+      "code"
+    ],
+    "//add": [
+      "pre",
+      "code",
+      "pre",
+      "code"
+    ],
+    "mycommandparametersadduserparameter": [
+      "pre",
+      "code",
+      "pre",
+      "code"
+    ],
+    "//repeat": [
       "pre",
       "code"
     ],
@@ -828,11 +931,19 @@
       "p",
       "p"
     ],
-    "sproc//execute": [
+    "sproc": [
       "pre",
       "code"
     ],
-    "databasemycommand.executenonquery();": [
+    "//execute": [
+      "pre",
+      "code",
+      "pre",
+      "code",
+      "pre",
+      "code"
+    ],
+    "mycommandexecutenonquery": [
       "pre",
       "code"
     ],
@@ -900,7 +1011,11 @@
       "p",
       "pre",
       "code",
-      "p"
+      "pre",
+      "code",
+      "p",
+      "pre",
+      "code"
     ],
     "appending": [
       "p"
@@ -909,10 +1024,6 @@
       "p"
     ],
     "together": [
-      "p"
-    ],
-    "user": [
-      "p",
       "p"
     ],
     "provided": [
@@ -929,18 +1040,6 @@
       "p"
     ],
     "where": [
-      "p",
-      "pre",
-      "code",
-      "pre",
-      "code",
-      "pre",
-      "code"
-    ],
-    "username]": [
-      "p"
-    ],
-    "username": [
       "p",
       "pre",
       "code",
@@ -984,29 +1083,13 @@
       "pre",
       "code"
     ],
-    "username];": [
-      "pre",
-      "code"
-    ],
     "an": [
       "p"
     ],
     "it": [
       "p"
     ],
-    "procedurestring": [
-      "pre",
-      "code"
-    ],
     "selectcommand": [
-      "pre",
-      "code"
-    ],
-    "\"select": [
-      "pre",
-      "code"
-    ],
-    "\"": [
       "pre",
       "code"
     ],
@@ -1014,15 +1097,15 @@
       "pre",
       "code"
     ],
-    "usernameboxtext;\nsqlcommand": [
+    "usernameboxtext": [
       "pre",
       "code"
     ],
-    "sqlcommandselectcommand);\n//execute": [
+    "sqlcommandselectcommand": [
       "pre",
       "code"
     ],
-    "databasesqldatareader": [
+    "sqldatareader": [
       "pre",
       "code",
       "pre",
@@ -1034,7 +1117,7 @@
       "pre",
       "code"
     ],
-    "mycommandexecutereader();": [
+    "mycommandexecutereader": [
       "pre",
       "code",
       "pre",
@@ -1066,22 +1149,14 @@
       "code",
       "code"
     ],
-    "asselect": [
-      "pre",
-      "code"
-    ],
     "query": [
       "p"
     ],
-    "sqlcommand\"sp_returnemail\",": [
+    "sqlcommandsp_returnemail": [
       "pre",
       "code"
     ],
-    "username];\n//add": [
-      "pre",
-      "code"
-    ],
-    "commandmycommand.parameters.add(userparameter);\n//execute": [
+    "mycommandcommandtype": [
       "pre",
       "code"
     ],

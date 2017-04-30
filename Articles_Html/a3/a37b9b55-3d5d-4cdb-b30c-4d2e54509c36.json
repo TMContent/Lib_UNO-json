@@ -1,17 +1,12 @@
 {
   "id": "a37b9b55-3d5d-4cdb-b30c-4d2e54509c36",
-  "checksum": "d5d6982e00d7b22ceff32fb60ca63879",
+  "checksum": "3cbcfd48df220e7d0fc69cf1ba3bb53d",
   "words": {
-    "40": [
-      "ul",
-      "li"
-    ],
     "applies": [
-      "h1"
+      "h2"
     ],
     "to": [
-      "h1",
-      "h1",
+      "h2",
       "p",
       "p",
       "p",
@@ -39,11 +34,12 @@
       "p",
       "p"
     ],
-    "what": [
-      "h1"
+    "40+": [
+      "ul",
+      "li"
     ],
-    "do": [
-      "h1"
+    "summary": [
+      "h2"
     ],
     "use": [
       "p",
@@ -82,9 +78,6 @@
       "p",
       "title"
     ],
-    "why": [
-      "h1"
-    ],
     "supports": [
       "p"
     ],
@@ -118,6 +111,7 @@
       "p",
       "p",
       "p",
+      "p",
       "p"
     ],
     "can": [
@@ -128,6 +122,7 @@
       "p"
     ],
     "the": [
+      "p",
       "p",
       "p",
       "p",
@@ -296,13 +291,16 @@
     ],
     "providers": [
       "p",
-      "p"
+      "p",
+      "pre",
+      "code"
     ],
     "allow": [
       "p",
       "p"
     ],
     "log": [
+      "p",
       "p",
       "p",
       "p",
@@ -360,7 +358,7 @@
       "p",
       "p"
     ],
-    "wmi)": [
+    "wmi": [
       "p",
       "p"
     ],
@@ -374,9 +372,6 @@
       "p",
       "p"
     ],
-    "how": [
-      "h1"
-    ],
     "by": [
       "p",
       "p"
@@ -384,7 +379,11 @@
     "default": [
       "p",
       "p",
-      "p"
+      "p",
+      "pre",
+      "pre",
+      "code",
+      "code"
     ],
     "is": [
       "p",
@@ -419,7 +418,7 @@
       "p",
       "p"
     ],
-    "systemweb.management.weberrorevent)": [
+    "systemwebmanagementweberrorevent": [
       "p"
     ],
     "audit": [
@@ -429,13 +428,10 @@
     "failure": [
       "p"
     ],
-    "systemweb.management.webfailureauditevent)": [
+    "systemwebmanagementwebfailureauditevent": [
       "p"
     ],
     "written": [
-      "p"
-    ],
-    "log the": [
       "p"
     ],
     "configuration": [
@@ -444,9 +440,12 @@
     "defined": [
       "p"
     ],
-    "healthmonitoring>": [
+    "healthmonitoring": [
       "p",
-      "em"
+      "pre",
+      "code",
+      "pre",
+      "code"
     ],
     "element": [
       "p",
@@ -469,12 +468,9 @@
     ],
     "webconfig": [
       "p",
-      "em",
-      "p",
-      "em",
       "p",
       "p",
-      "em",
+      "p",
       "p"
     ],
     "file": [
@@ -503,12 +499,6 @@
       "p",
       "p"
     ],
-    "systemweb.management.weberrorevent": [
-      "em"
-    ],
-    "systemweb.management.webfailureauditevent": [
-      "em"
-    ],
     "has": [
       "p",
       "p",
@@ -522,22 +512,22 @@
     "mail": [
       "p"
     ],
-    "simplemailwebeventprovider,": [
+    "simplemailwebeventprovider": [
       "p"
     ],
-    "templatedmailwebeventprovider,": [
+    "templatedmailwebeventprovider": [
       "p"
     ],
-    "sqlwebeventprovider),": [
+    "sqlwebeventprovider": [
       "p"
     ],
-    "eventlogwebeventprovider),": [
+    "eventlogwebeventprovider": [
       "p"
     ],
-    "tracewebeventprovider),": [
+    "tracewebeventprovider": [
       "p"
     ],
-    "wmiwebeventprovider). you": [
+    "wmiwebeventprovider": [
       "p"
     ],
     "configure": [
@@ -561,30 +551,12 @@
     "they": [
       "p"
     ],
-    "simplemailwebeventprovider": [
-      "em"
-    ],
-    "templatedmailwebeventprovider": [
-      "em"
-    ],
-    "sqlwebeventprovider": [
-      "em"
-    ],
-    "eventlogwebeventprovider": [
-      "em"
-    ],
-    "tracewebeventprovider": [
-      "em"
-    ],
-    "wmiwebeventprovider": [
-      "em"
-    ],
     "problem": [
-      "h1"
+      "h2"
     ],
     "example": [
-      "h1",
-      "h1"
+      "h2",
+      "h2"
     ],
     "deployed": [
       "p",
@@ -609,7 +581,10 @@
       "p",
       "p"
     ],
-    "values however,": [
+    "values": [
+      "p"
+    ],
+    "however": [
       "p"
     ],
     "modified": [
@@ -624,19 +599,18 @@
     "off": [
       "p"
     ],
-    "healthmonitoring": [
+    "heartbeatinterval=0": [
       "pre",
-      "pre"
-    ],
-    "heartbeatinterval=\"0\"": [
+      "code",
       "pre",
-      "pre"
+      "code"
     ],
-    "enabled=\"false\"": [
-      "pre"
+    "enabled=false": [
+      "pre",
+      "code"
     ],
     "solution": [
-      "h1"
+      "h2"
     ],
     "defaults": [
       "p",
@@ -662,72 +636,101 @@
     "this": [
       "p"
     ],
-    "enabled=\"true\"<rules>": [
-      "pre"
+    "enabled=true": [
+      "pre",
+      "code"
+    ],
+    "rules": [
+      "pre",
+      "code"
     ],
     "add": [
       "pre",
       "pre",
-      "pre"
+      "code",
+      "code",
+      "pre",
+      "code"
     ],
-    "name=\"all": [
-      "pre"
+    "name=all": [
+      "pre",
+      "code"
     ],
     "errors": [
-      "pre"
-    ],
-    "default\"": [
       "pre",
-      "pre"
-    ],
-    "eventname=\"all": [
-      "pre"
-    ],
-    "errors\"": [
-      "pre"
-    ],
-    "provider=\"eventlogprovider\"": [
       "pre",
-      "pre"
+      "code",
+      "code"
     ],
-    "profile=\"default\"": [
+    "eventname=all": [
       "pre",
-      "pre"
+      "code"
     ],
-    "mininstances=\"1\"": [
+    "provider=eventlogprovider": [
       "pre",
-      "pre"
+      "pre",
+      "code",
+      "code"
     ],
-    "maxlimit=\"infinite\"": [
+    "profile=default": [
       "pre",
-      "pre"
+      "pre",
+      "code",
+      "code"
     ],
-    "mininterval=\"0001:00\"": [
+    "mininstances=1": [
       "pre",
-      "pre"
+      "pre",
+      "code",
+      "code"
     ],
-    "custom=\"\"": [
+    "maxlimit=infinite": [
       "pre",
-      "pre"
+      "pre",
+      "code",
+      "code"
+    ],
+    "mininterval=000100": [
+      "pre",
+      "pre",
+      "code",
+      "code"
+    ],
+    "custom=": [
+      "pre",
+      "pre",
+      "code",
+      "code"
     ],
     "/": [
       "pre",
-      "pre"
+      "pre",
+      "code",
+      "code",
+      "pre",
+      "code"
     ],
-    "name=\"failure": [
-      "pre"
+    "name=failure": [
+      "pre",
+      "code"
     ],
     "audits": [
-      "pre"
+      "pre",
+      "pre",
+      "code",
+      "code"
     ],
-    "eventname=\"failure": [
-      "pre"
+    "eventname=failure": [
+      "pre",
+      "code"
     ],
-    "audits\"": [
-      "pre"
+    "/rules": [
+      "pre",
+      "code"
     ],
-    "/</rules></healthmonitoring>": [
-      "pre"
+    "/healthmonitoring": [
+      "pre",
+      "code"
     ],
     "only": [
       "p"
@@ -735,38 +738,45 @@
     "added": [
       "p"
     ],
-    "providers>": [
-      "pre"
+    "connectionstringname=mysqlconnection": [
+      "pre",
+      "code"
     ],
-    "connectionstringname=\"mysqlconnection\"": [
-      "pre"
+    "maxeventdetailslength=1073741823": [
+      "pre",
+      "code"
     ],
-    "maxeventdetailslength=\"1073741823\"": [
-      "pre"
+    "buffer=true": [
+      "pre",
+      "code"
     ],
-    "buffer=\"true\"": [
-      "pre"
-    ],
-    "buffermode=\"extra": [
-      "pre"
+    "buffermode=extra": [
+      "pre",
+      "code"
     ],
     "critical": [
-      "pre"
+      "pre",
+      "code"
     ],
-    "notification\"": [
-      "pre"
+    "notification": [
+      "pre",
+      "code"
     ],
-    "name=\"mysqlwebeventprovider\"": [
-      "pre"
+    "name=mysqlwebeventprovider": [
+      "pre",
+      "code"
     ],
-    "type=\"systemweb.management.sqlwebeventprovider,system.web,": [
-      "pre"
+    "type=systemwebmanagementsqlwebeventprovidersystemweb": [
+      "pre",
+      "code"
     ],
-    "version=20.0.0,culture=neutral,publickeytoken=b03f5f7f11d50a3a\"": [
-      "pre"
+    "version=2000culture=neutralpublickeytoken=b03f5f7f11d50a3a": [
+      "pre",
+      "code"
     ],
-    "/providers>": [
-      "pre"
+    "/providers": [
+      "pre",
+      "code"
     ],
     "adapted": [
       "p"
@@ -785,6 +795,9 @@
     ],
     "guidance": [
       "p"
+    ],
+    "net": [
+      "title"
     ]
   },
   "tags": {},

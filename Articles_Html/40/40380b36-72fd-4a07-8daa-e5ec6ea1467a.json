@@ -1,6 +1,6 @@
 {
   "id": "40380b36-72fd-4a07-8daa-e5ec6ea1467a",
-  "checksum": "da1e106788b8e8bb89d244c07db5fdf3",
+  "checksum": "cfba73d594ae6baa5d1e038d8a1dee09",
   "words": {
     "description": [
       "h2"
@@ -16,15 +16,12 @@
       "p",
       "p",
       "p",
-      "p",
-      "p",
-      "ul",
-      "ul",
       "ul",
       "li",
       "a",
-      "li",
-      "a",
+      "p",
+      "p",
+      "ul",
       "li",
       "a",
       "title"
@@ -35,18 +32,9 @@
       "p",
       "p",
       "p",
-      "ul",
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a",
-      "li",
-      "a",
       "title"
     ],
-    "a.k.a.": [
+    "aka": [
       "p"
     ],
     "credential": [
@@ -98,7 +86,10 @@
       "p",
       "p",
       "p",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "application": [
       "p",
@@ -258,7 +249,10 @@
     ],
     "use": [
       "p",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "are": [
       "p",
@@ -272,7 +266,10 @@
     ],
     "by": [
       "p",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "impact": [
       "h2",
@@ -283,7 +280,13 @@
       "p",
       "p",
       "p",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a",
+      "ul",
+      "li",
+      "a"
     ],
     "will": [
       "p",
@@ -453,6 +456,9 @@
     ],
     "platform": [
       "p",
+      "ul",
+      "li",
+      "a",
       "p"
     ],
     "provided": [
@@ -461,10 +467,19 @@
     ],
     "management": [
       "p",
-      "p"
+      "ul",
+      "li",
+      "a",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "force": [
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "re": [
       "p",
@@ -476,15 +491,41 @@
     ],
     "for": [
       "p",
-      "p"
+      "ul",
+      "li",
+      "a",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "sensitive": [
       "p",
-      "p"
+      "ul",
+      "li",
+      "a",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "operations": [
       "p",
-      "p"
+      "ul",
+      "li",
+      "a",
+      "p",
+      "ul",
+      "li",
+      "a"
+    ],
+    "reauthentication": [
+      "ul",
+      "li",
+      "a",
+      "ul",
+      "li",
+      "a"
     ],
     "check": [
       "h2"
@@ -502,28 +543,25 @@
       "p"
     ],
     "used": [
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "forced": [
       "p"
     ],
-    "specific": [
-      "h2"
-    ],
-    "technologies": [
-      "h2"
-    ],
-    "aspnet": [
+    "offered": [
       "ul",
       "li",
       "a"
     ],
-    "java": [
+    "framework": [
       "ul",
       "li",
       "a"
     ],
-    "php": [
+    "required": [
       "ul",
       "li",
       "a"
@@ -532,16 +570,20 @@
   "tags": {},
   "links": [
     {
-      "href": "0c167dc8-c7c6-49df-a146-a46f819338cb",
-      "text": "ASP.NET Session Hijacking"
+      "href": "3fe17f72-9ae5-4ee3-a1f8-a78c10b7d495",
+      "text": "Use Platform Session Management"
     },
     {
-      "href": "00869e27-75c2-4ba3-a91b-d15aea30411d",
-      "text": "Java Session Hijacking"
+      "href": "8eba2142-4a6e-4f2c-9648-3ba1cadf9621",
+      "text": "Force Reauthentication for Sensitive Operations"
     },
     {
-      "href": "c13db965-fb40-4254-a7b6-3d60c579746e",
-      "text": "PHP Session Hijacking"
+      "href": "3f2660b3-a935-4b4e-85ff-27ae28683f5b",
+      "text": "Session Management Offered by the Framework Is Used"
+    },
+    {
+      "href": "0c6a261a-14e8-4c36-838d-17b4a8b6532c",
+      "text": "Reauthentication Is Required for Sensitive Operations"
     }
   ]
 }

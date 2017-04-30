@@ -361,7 +361,7 @@
     "framework": [
       "p"
     ],
-    "21.0+": [
+    "210+": [
       "p"
     ],
     "what": [
@@ -416,6 +416,7 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "p",
       "li",
@@ -425,6 +426,8 @@
       "strong",
       "li",
       "li",
+      "li",
+      "p",
       "p",
       "p",
       "p",
@@ -679,6 +682,7 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "p",
@@ -692,9 +696,11 @@
       "li",
       "li",
       "li",
+      "li",
       "p",
       "p",
       "strong",
+      "p",
       "p",
       "p",
       "p",
@@ -767,7 +773,21 @@
       "p",
       "p"
     ],
-    "policy create": [
+    "policy": [
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "li",
+      "p",
+      "p",
+      "p",
+      "strong",
+      "p",
+      "p"
+    ],
+    "create": [
       "ol",
       "li",
       "p"
@@ -775,17 +795,6 @@
     "application's": [
       "ol",
       "li",
-      "p"
-    ],
-    "policy": [
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "p",
-      "p",
-      "strong",
-      "p",
       "p"
     ],
     "determine": [
@@ -809,11 +818,14 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "li",
       "p",
       "p",
+      "p",
+      "li",
       "p",
       "strong",
       "li",
@@ -989,17 +1001,23 @@
       "p",
       "strong"
     ],
-    "inactivity establish": [
+    "establish": [
       "ol",
+      "ol",
+      "li",
+      "p",
       "li",
       "p"
     ],
     "mechanism": [
       "ol",
       "ol",
+      "ol",
       "li",
       "p",
       "li",
+      "li",
+      "p",
       "p",
       "strong"
     ],
@@ -1087,7 +1105,7 @@
       "i",
       "i"
     ],
-    "dbusers.find({},{_id:0,username:1,last_login_date:1})+": [
+    "dbusersfind{}{_id0username1last_login_date1}+": [
       "ol",
       "li",
       "p",
@@ -3287,11 +3305,6 @@
       "pre",
       "pre"
     ],
-    "mechanism establish": [
-      "ol",
-      "li",
-      "p"
-    ],
     "verify": [
       "ol",
       "li",
@@ -3543,7 +3556,13 @@
       "li",
       "pre"
     ],
-    "note pci": [
+    "note": [
+      "ol",
+      "li",
+      "p",
+      "strong"
+    ],
+    "pci": [
       "ol",
       "li",
       "p"
@@ -3564,11 +3583,6 @@
       "p",
       "p"
     ],
-    "a user": [
-      "ol",
-      "li",
-      "p"
-    ],
     "out": [
       "ol",
       "li",
@@ -3578,9 +3592,6 @@
       "ol",
       "li",
       "p"
-    ],
-    "note": [
-      "strong"
     ],
     "problem": [
       "h1"
@@ -3632,7 +3643,7 @@
     "compromising": [
       "p"
     ],
-    "dbusers.find({},{_id:0,username:1,locked:1,last_login_date:1})+": [
+    "dbusersfind{}{_id0username1locked1last_login_date1}+": [
       "p",
       "pre",
       "pre"

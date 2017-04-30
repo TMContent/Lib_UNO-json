@@ -1,6 +1,6 @@
 {
   "id": "63785c31-e199-42b8-9a2f-a99240ca7969",
-  "checksum": "71b2164fd4aa277ede509caef8f645c8",
+  "checksum": "240ac8a9589fad251b5181f450390487",
   "words": {
     "description": [
       "h2"
@@ -11,15 +11,6 @@
       "p",
       "p",
       "p",
-      "ul",
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a",
-      "li",
-      "a",
       "title"
     ],
     "password": [
@@ -32,12 +23,10 @@
       "p",
       "p",
       "ul",
-      "ul",
-      "ul",
       "li",
       "a",
-      "li",
-      "a",
+      "p",
+      "ul",
       "li",
       "a",
       "title"
@@ -49,15 +38,6 @@
       "p",
       "p",
       "p",
-      "ul",
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a",
-      "li",
-      "a",
       "title"
     ],
     "vulnerabilities": [
@@ -75,7 +55,13 @@
       "p",
       "p",
       "p",
-      "p"
+      "ul",
+      "li",
+      "a",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "the": [
       "p",
@@ -173,6 +159,9 @@
       "p",
       "p",
       "p",
+      "ul",
+      "li",
+      "a",
       "p"
     ],
     "user": [
@@ -183,14 +172,26 @@
       "p",
       "p",
       "p",
-      "p"
+      "ul",
+      "li",
+      "a",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "identity": [
       "p",
       "p",
       "p",
       "p",
-      "p"
+      "ul",
+      "li",
+      "a",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "handling": [
       "p"
@@ -202,12 +203,16 @@
       "p",
       "p",
       "p",
-      "p"
+      "ul",
+      "li",
+      "a",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
-    "\"forgotten": [
-      "p"
-    ],
-    "password\"": [
+    "forgotten": [
+      "p",
       "p"
     ],
     "condition": [
@@ -261,7 +266,10 @@
       "p",
       "p",
       "p",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "able": [
       "p",
@@ -388,7 +396,13 @@
       "p",
       "p",
       "p",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a",
+      "ul",
+      "li",
+      "a"
     ],
     "e": [
       "p"
@@ -408,12 +422,24 @@
     "side": [
       "p",
       "p",
-      "p"
+      "ul",
+      "li",
+      "a",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "channel": [
       "p",
       "p",
-      "p"
+      "ul",
+      "li",
+      "a",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "need": [
       "p"
@@ -456,13 +482,13 @@
     "recover": [
       "p"
     ],
-    "forgotten": [
-      "p"
-    ],
     "are": [
       "p",
       "p",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "potentially": [
       "p"
@@ -576,21 +602,51 @@
     ],
     "resetting": [
       "p",
-      "p"
+      "ul",
+      "li",
+      "a",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "passwords": [
       "p",
-      "p"
+      "ul",
+      "li",
+      "a",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "send": [
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "reset": [
       "p",
-      "p"
+      "ul",
+      "li",
+      "a",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "token": [
       "p"
+    ],
+    "tokens": [
+      "ul",
+      "li",
+      "a",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "check": [
       "h2"
@@ -605,31 +661,13 @@
       "p"
     ],
     "verified": [
-      "p"
-    ],
-    "tokens": [
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "sent": [
-      "p"
-    ],
-    "specific": [
-      "h2"
-    ],
-    "technologies": [
-      "h2"
-    ],
-    "aspnet": [
-      "ul",
-      "li",
-      "a"
-    ],
-    "java": [
-      "ul",
-      "li",
-      "a"
-    ],
-    "php": [
+      "p",
       "ul",
       "li",
       "a"
@@ -638,16 +676,20 @@
   "tags": {},
   "links": [
     {
-      "href": "bb23fddd-c1c4-4fbe-9279-0b4a4258cb85",
-      "text": "ASP.NET Insufficient Password Recovery"
+      "href": "b426664b-e894-4aae-89ec-578348b096f9",
+      "text": "Verify User Identity when Resetting Passwords"
     },
     {
-      "href": "e0658106-9b10-4a6b-9432-355b02289442",
-      "text": "Java Insufficient Password Recovery"
+      "href": "9b4e926a-20bf-4aef-aa75-a986b3bd9fce",
+      "text": "Send Password Reset Tokens over a Side Channel"
     },
     {
-      "href": "cd449772-e12e-4553-a400-d0bcdb70468b",
-      "text": "PHP Insufficient Password Recovery"
+      "href": "8a759459-ef51-4bcf-93be-2a1d48d1cac8",
+      "text": "User Identity Is Verified when Resetting Passwords"
+    },
+    {
+      "href": "d7e08f55-1ce7-41d4-aba6-c667e49b5950",
+      "text": "Password Reset Tokens Are Sent over a Side Channel"
     }
   ]
 }

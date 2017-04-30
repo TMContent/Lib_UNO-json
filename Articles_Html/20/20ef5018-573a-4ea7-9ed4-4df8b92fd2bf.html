@@ -7,7 +7,10 @@ All applications are potentially affected by predictable resource location vulne
 </p><p>
 One of the most common examples of a predictable resource location vulnerability is placing an administrative page in an easy to guess location, such as a directory called admin. If the admin page has vulnerabilities in it, the attacker can write an exploit that will be able to attack multiple vulnerable servers very rapidly. Such attacks are frequently used to build web application based botnets. 
 </p><h2>Countermeasures</h2><p>To mitigate predictable resource location vulnerabilities, use access controls to protect sensitive functionality. This does not "fix" predictable resource location, but makes it much less useful to attackers. 
-</p><h2>Application Check</h2><p>To make sure that predictable resource location vulnerabilities are mitigated, make sure that sensitive functionality is protected using access controls.
-</p><h2>Specific Technologies</h2><ul><li> <a href="61b481cf-3b56-466b-b96e-f7ed6c4c1948">ASP.NET Predictable Resource Location</a></li>
-<li> <a href="6c7e2c50-58d0-42bc-b3aa-cfa8f33eb0d0">Java Predictable Resource Location</a></li>
-<li> <a href="9fd7582e-0cbe-4907-97e3-e332428cc565">PHP Predictable Resource Location</a></li></ul>
+</p><ul>
+<li> <a href="8eba2142-4a6e-4f2c-9648-3ba1cadf9621">Force Reauthentication for Sensitive Operations</a></li>
+<li> <a href="f4c94908-7129-4f4c-bc23-917e7c029e2e">Use Role-based Authorization</a></li>
+</ul><h2>Application Check</h2><p>To make sure that predictable resource location vulnerabilities are mitigated, make sure that sensitive functionality is protected using access controls.
+</p><ul>
+<li> <a href="0c6a261a-14e8-4c36-838d-17b4a8b6532c">Reauthentication Is Required for Sensitive Operations</a></li>
+<li> <a href="dae3b6ec-9ef1-4f5b-9aae-1604d9c7e1cc">Role-based Authorization Is Used</a></li></ul>

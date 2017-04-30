@@ -1,21 +1,17 @@
 {
   "id": "19f2779c-14ec-43fb-8e8d-4505cb0801c9",
-  "checksum": "92057bda006d415ac377c04d8feaa7cc",
+  "checksum": "2b188067fa50a5b6d5e2959977ba985b",
   "words": {
     "2": [
       "ol",
       "li",
-      "p",
-      "a",
-      "ul",
-      "li"
+      "p"
     ],
     "applies": [
-      "h1"
+      "h2"
     ],
     "to": [
-      "h1",
-      "h1",
+      "h2",
       "p",
       "p",
       "p",
@@ -43,58 +39,52 @@
       "p"
     ],
     "scala": [
-      "p"
+      "ul",
+      "li",
+      "title"
     ],
     "and": [
-      "p",
-      "ol",
-      "ol",
-      "ol",
-      "ol",
-      "li",
-      "p",
-      "li",
-      "p",
-      "li",
-      "li",
-      "p",
-      "p",
-      "ul",
-      "li"
-    ],
-    "play": [
-      "p",
-      "ol",
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "p",
-      "p",
-      "a",
-      "li",
-      "p",
-      "ul",
       "ul",
       "li",
-      "li"
-    ],
-    "framework": [
-      "p",
+      "ol",
+      "ol",
+      "ol",
       "ol",
       "li",
       "p",
-      "ul",
-      "li"
-    ],
-    "21.0+": [
+      "li",
+      "p",
+      "li",
+      "li",
+      "p",
       "p"
     ],
-    "what": [
-      "h1"
+    "play": [
+      "ul",
+      "li",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
+      "p",
+      "li",
+      "p"
     ],
-    "do": [
-      "h1"
+    "framework": [
+      "ul",
+      "li",
+      "ol",
+      "li",
+      "p"
+    ],
+    "210+": [
+      "ul",
+      "li"
+    ],
+    "summary": [
+      "h2"
     ],
     "include": [
       "p",
@@ -120,8 +110,6 @@
       "p",
       "p",
       "strong",
-      "ul",
-      "li",
       "title"
     ],
     "tokens": [
@@ -132,18 +120,19 @@
       "ol",
       "ol",
       "ol",
-      "li",
-      "p",
-      "strong",
+      "ol",
       "li",
       "li",
       "p",
       "p",
       "strong",
       "li",
-      "p",
-      "ul",
       "li",
+      "p",
+      "p",
+      "strong",
+      "li",
+      "p",
       "title"
     ],
     "in": [
@@ -165,8 +154,6 @@
       "p",
       "li",
       "p",
-      "ul",
-      "li",
       "title"
     ],
     "http": [
@@ -191,7 +178,10 @@
       "p",
       "ol",
       "ol",
+      "ol",
       "li",
+      "li",
+      "p",
       "p",
       "strong",
       "li",
@@ -244,12 +234,18 @@
       "ol",
       "ol",
       "ol",
+      "ol",
+      "ol",
       "li",
+      "li",
+      "p",
       "p",
       "strong",
       "li",
       "li",
       "li",
+      "li",
+      "p",
       "p",
       "p",
       "p",
@@ -275,19 +271,14 @@
     "forgery": [
       "p"
     ],
-    "csrf).": [
-      "p"
-    ],
-    "why": [
-      "h1"
-    ],
-    "help": [
-      "p"
-    ],
     "csrf": [
+      "p",
       "p",
       "ol",
       "li",
+      "p"
+    ],
+    "help": [
       "p"
     ],
     "attacks": [
@@ -402,9 +393,7 @@
       "p",
       "p",
       "p",
-      "p",
-      "ul",
-      "li"
+      "p"
     ],
     "token": [
       "p",
@@ -417,16 +406,13 @@
       "li",
       "p",
       "p",
-      "a",
       "li",
       "p",
       "li",
       "li",
       "p",
       "p",
-      "strong",
-      "ul",
-      "li"
+      "strong"
     ],
     "will": [
       "p",
@@ -435,17 +421,13 @@
       "p"
     ],
     "be": [
-      "p",
-      "ul",
-      "li"
+      "p"
     ],
     "able": [
       "p"
     ],
     "successfully": [
-      "p",
-      "ul",
-      "li"
+      "p"
     ],
     "form": [
       "p",
@@ -455,21 +437,24 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "p",
       "p",
       "li",
-      "li",
-      "p",
-      "p",
       "li",
       "li",
       "p",
       "p",
       "pre",
+      "code",
+      "li",
+      "li",
       "pre",
-      "formdata"
+      "pre",
+      "code",
+      "code"
     ],
     "a": [
       "p",
@@ -526,9 +511,7 @@
       "p"
     ],
     "can": [
-      "p",
-      "ul",
-      "li"
+      "p"
     ],
     "carry": [
       "p",
@@ -561,9 +544,7 @@
       "p"
     ],
     "of": [
-      "p",
-      "ul",
-      "li"
+      "p"
     ],
     "authenticated": [
       "p"
@@ -574,10 +555,20 @@
       "li",
       "p"
     ],
-    "how": [
-      "h1"
+    "solution": [
+      "h2"
+    ],
+    "example": [
+      "h2",
+      "ol",
+      "ol",
+      "li",
+      "p",
+      "li",
+      "p"
     ],
     "identify": [
+      "ol",
       "ol",
       "ol",
       "ol",
@@ -587,10 +578,12 @@
       "p",
       "strong",
       "li",
+      "li",
+      "p",
       "p",
       "strong"
     ],
-    "operations review": [
+    "review": [
       "ol",
       "li",
       "p"
@@ -628,9 +621,7 @@
       "li",
       "p",
       "p",
-      "strong",
-      "ul",
-      "li"
+      "strong"
     ],
     "all": [
       "ol",
@@ -655,11 +646,6 @@
       "li",
       "p",
       "strong"
-    ],
-    "operations identify": [
-      "ol",
-      "li",
-      "p"
     ],
     "pages": [
       "ol",
@@ -761,11 +747,7 @@
       "p",
       "p",
       "li",
-      "p",
-      "ul",
-      "ul",
-      "li",
-      "li"
+      "p"
     ],
     "generating": [
       "ol",
@@ -773,7 +755,7 @@
       "p",
       "strong"
     ],
-    "tokens there": [
+    "there": [
       "ol",
       "li",
       "p"
@@ -809,11 +791,8 @@
       "ol",
       "li",
       "p",
-      "a",
       "li",
-      "p",
-      "ul",
-      "li"
+      "p"
     ],
     "purpose": [
       "ol",
@@ -841,9 +820,7 @@
     "hidden": [
       "ol",
       "li",
-      "p",
-      "ul",
-      "li"
+      "p"
     ],
     "parameter": [
       "ol",
@@ -875,9 +852,7 @@
       "p",
       "p",
       "li",
-      "p",
-      "ul",
-      "li"
+      "p"
     ],
     "signed": [
       "ol",
@@ -931,13 +906,11 @@
       "li",
       "li",
       "p",
-      "p",
-      "p",
       "strong",
       "pre",
       "pre",
-      "formdata",
-      "formdata"
+      "code",
+      "code"
     ],
     "passes": [
       "ol",
@@ -953,9 +926,8 @@
       "li",
       "li",
       "p",
-      "p",
       "pre",
-      "formdata"
+      "code"
     ],
     "signatures": [
       "ol",
@@ -967,7 +939,7 @@
       "li",
       "p"
     ],
-    "sessionsign=uuid.sign.": [
+    "sessionsign=uuidsign": [
       "ol",
       "li",
       "p"
@@ -1002,8 +974,11 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
+      "li",
+      "p",
       "p",
       "p",
       "strong",
@@ -1012,11 +987,6 @@
       "p",
       "p",
       "strong"
-    ],
-    "requests add": [
-      "ol",
-      "li",
-      "p"
     ],
     "sends": [
       "ol",
@@ -1038,14 +1008,21 @@
       "li",
       "p"
     ],
-    "@authenticitytoken)": [
+    "@authenticitytoken": [
+      "ol",
+      "ol",
       "ol",
       "ol",
       "li",
       "li",
       "p",
+      "pre",
+      "code",
+      "li",
+      "li",
       "p",
-      "pre"
+      "pre",
+      "code"
     ],
     "inside": [
       "ol",
@@ -1057,36 +1034,35 @@
       "li",
       "p"
     ],
-    "example@import": [
+    "@import": [
       "ol",
       "li",
-      "p"
+      "pre",
+      "code"
     ],
-    "_root_views.html.authtoken.authenticitytoken\r\n\r\n<form": [
+    "_root_viewshtmlauthtokenauthenticitytoken": [
       "ol",
       "li",
-      "p",
-      "pre"
+      "pre",
+      "code"
     ],
-    "action=\"@routesapplication.process()\"": [
+    "action=@routesapplicationprocess": [
       "ol",
       "li",
-      "p",
-      "pre"
+      "pre",
+      "code"
     ],
-    "method=\"post\"": [
+    "method=post": [
       "ol",
       "li",
-      "p",
-      "pre"
+      "pre",
+      "code"
     ],
     "please": [
       "ol",
       "li",
-      "p",
       "pre",
-      "ul",
-      "li"
+      "code"
     ],
     "input": [
       "ol",
@@ -1095,42 +1071,52 @@
       "li",
       "li",
       "li",
-      "p",
-      "p",
-      "p",
       "pre",
       "pre",
-      "pre"
+      "pre",
+      "code",
+      "code",
+      "code"
     ],
     "your": [
       "ol",
       "li",
-      "p",
-      "pre"
+      "pre",
+      "code"
     ],
     "name": [
       "ol",
-      "li",
-      "p",
-      "pre"
-    ],
-    "name=\"name\"": [
       "ol",
       "li",
-      "p",
-      "pre"
+      "pre",
+      "code",
+      "li",
+      "pre",
+      "code"
+    ],
+    "name=name": [
+      "ol",
+      "li",
+      "pre",
+      "code"
     ],
     "/": [
       "ol",
       "li",
-      "p",
-      "pre"
+      "pre",
+      "code"
     ],
-    "type=\"submit\"/\r\n</form>": [
+    "type=submit/": [
       "ol",
       "li",
-      "p",
-      "pre"
+      "pre",
+      "code"
+    ],
+    "/form": [
+      "ol",
+      "li",
+      "pre",
+      "code"
     ],
     "checks": [
       "ol",
@@ -1157,42 +1143,50 @@
       "li",
       "p"
     ],
-    "@authenticitytoken": [
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "p",
-      "p",
-      "pre"
-    ],
     "validator": [
       "ol",
       "li",
       "p"
     ],
-    "exampleimport": [
+    "import": [
       "ol",
       "li",
       "p"
     ],
-    "authtokenvalidator.authenticitytoken;public": [
+    "authtokenvalidatorauthenticitytoken": [
       "ol",
       "li",
-      "p",
-      "pre"
+      "p"
+    ],
+    "public": [
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "li",
+      "li",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "code",
+      "code",
+      "code",
+      "code"
     ],
     "class": [
       "ol",
       "li",
-      "p",
-      "pre"
+      "pre",
+      "code"
     ],
     "formdata": [
       "ol",
       "li",
-      "p",
-      "pre"
+      "pre",
+      "code"
     ],
     "{": [
       "ol",
@@ -1203,258 +1197,126 @@
       "li",
       "li",
       "li",
-      "p",
-      "p",
-      "p",
-      "p",
       "pre",
       "pre",
       "pre",
       "pre",
-      "formdata",
-      "formdata"
-    ],
-    "public": [
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "p",
-      "p",
-      "pre",
-      "pre"
+      "code",
+      "code",
+      "code",
+      "code"
     ],
     "string": [
       "ol",
       "ol",
       "li",
       "li",
-      "p",
-      "p",
       "pre",
-      "pre"
+      "pre",
+      "code",
+      "code"
     ],
     "authtoken": [
       "ol",
       "li",
-      "p",
-      "pre"
+      "pre",
+      "code"
     ],
-    "name}public": [
+    "}": [
+      "ol",
+      "ol",
+      "ol",
       "ol",
       "li",
-      "p",
-      "pre"
+      "li",
+      "li",
+      "li",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "code",
+      "code",
+      "code",
+      "code"
     ],
     "static": [
       "ol",
       "li",
-      "p",
-      "pre"
+      "pre",
+      "code"
     ],
     "result": [
       "ol",
       "li",
-      "p",
-      "pre"
+      "pre",
+      "code"
     ],
-    "process)": [
+    "process": [
       "ol",
       "li",
-      "p",
-      "pre"
+      "pre",
+      "code"
     ],
     "=": [
       "ol",
       "li",
-      "p",
       "pre",
-      "formdata"
+      "code"
     ],
-    "formformdata.class).bindfromrequest();": [
+    "formformdataclassbindfromrequest": [
       "ol",
       "li",
-      "p",
       "pre",
-      "formdata"
+      "code"
     ],
-    "form.haserrors())": [
+    "formhaserrors": [
       "ol",
       "li",
-      "p",
       "pre",
-      "formdata"
+      "code"
     ],
     "return": [
       "ol",
       "ol",
       "li",
       "li",
-      "p",
-      "p",
       "pre",
       "pre",
-      "formdata",
-      "formdata"
+      "code",
+      "code"
     ],
-    "badrequest\"authenticity": [
+    "badrequestauthenticity": [
       "ol",
       "li",
-      "p",
       "pre",
-      "formdata"
+      "code"
     ],
-    "failed\";": [
+    "failed": [
       "ol",
       "li",
-      "p",
       "pre",
-      "formdata"
-    ],
-    "}": [
-      "ol",
-      "li",
-      "p",
-      "pre",
-      "formdata"
+      "code"
     ],
     "else": [
       "ol",
       "li",
-      "p",
       "pre",
-      "formdata"
+      "code"
     ],
-    "ok\"authenticity": [
+    "okauthenticity": [
       "ol",
       "li",
-      "p",
       "pre",
-      "formdata"
+      "code"
     ],
-    "passed\";": [
+    "passed": [
       "ol",
       "li",
-      "p",
       "pre",
-      "formdata"
-    ],
-    "}}": [
-      "ol",
-      "li",
-      "p",
-      "pre",
-      "formdata"
-    ],
-    "sessionsign=uuid.sign": [
-      "font"
-    ],
-    "@import": [
-      "pre"
-    ],
-    "import": [
-      "pre"
-    ],
-    "additional": [
-      "h1"
-    ],
-    "resources": [
-      "h1"
-    ],
-    "information": [
-      "ul",
-      "li"
-    ],
-    "about": [
-      "ul",
-      "li"
-    ],
-    "owasp": [
-      "ul",
-      "li"
-    ],
-    "csrfguard": [
-      "ul",
-      "li"
-    ],
-    "project": [
-      "ul",
-      "li"
-    ],
-    "see https//www.owasp.org/index.php/category:owasp_csrfguard_project": [
-      "ul",
-      "li"
-    ],
-    "sample": [
-      "ul",
-      "li"
-    ],
-    "seen https//github.com/orefalo/play2": [
-      "ul",
-      "li"
-    ],
-    "authenticitytoken": [
-      "ul",
-      "li",
-      "a"
-    ],
-    "here": [
-      "ul",
-      "li",
-      "a"
-    ],
-    "another": [
-      "ul",
-      "li"
-    ],
-    "way": [
-      "ul",
-      "li"
-    ],
-    "implementing": [
-      "ul",
-      "li"
-    ],
-    "using": [
-      "ul",
-      "li"
-    ],
-    "cookie": [
-      "ul",
-      "li"
-    ],
-    "field": [
-      "ul",
-      "li"
-    ],
-    "approach": [
-      "ul",
-      "li"
-    ],
-    "https//www.owasp.org/index.php/category:owasp_csrfguard_project": [
-      "a"
-    ],
-    "https//github.com/orefalo/play2": [
-      "a"
+      "code"
     ]
   },
   "tags": {},
-  "links": [
-    {
-      "href": "https://github.com/orefalo/play2-authenticitytoken",
-      "text": "Play 2 Authenticity token"
-    },
-    {
-      "href": "https://www.owasp.org/index.php/Category:OWASP_CSRFGuard_Project",
-      "text": "https://www.owasp.org/index.php/Category:OWASP_CSRFGuard_Project"
-    },
-    {
-      "href": "https://github.com/orefalo/play2-authenticitytoken",
-      "text": "https://github.com/orefalo/play2-authenticitytoken"
-    },
-    {
-      "href": "https://github.com/jacobgroundwater/Scala-Play-CSRF",
-      "text": "Here"
-    }
-  ]
+  "links": []
 }

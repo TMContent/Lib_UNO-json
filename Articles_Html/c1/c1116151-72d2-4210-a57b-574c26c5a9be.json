@@ -1,6 +1,6 @@
 {
   "id": "c1116151-72d2-4210-a57b-574c26c5a9be",
-  "checksum": "bd7ff78014a71119fd99b6c3c047391f",
+  "checksum": "8524c4c0efaa9257defd22c5be19befc",
   "words": {
     "description": [
       "h2"
@@ -19,22 +19,8 @@
       "p",
       "p",
       "p",
-      "p",
       "h2",
       "p",
-      "p",
-      "ul",
-      "ul",
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a",
-      "li",
-      "a",
-      "li",
-      "a",
       "title"
     ],
     "misconfiguration": [
@@ -44,18 +30,6 @@
       "p",
       "p",
       "p",
-      "ul",
-      "ul",
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a",
-      "li",
-      "a",
-      "li",
-      "a",
       "title"
     ],
     "vulnerabilities": [
@@ -80,7 +54,11 @@
     "is": [
       "p",
       "p",
-      "p"
+      "p",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "not": [
       "p"
@@ -117,11 +95,13 @@
       "p",
       "p",
       "p",
+      "ul",
+      "li",
+      "a",
       "p",
-      "p",
-      "p",
-      "p",
-      "p"
+      "ul",
+      "li",
+      "a"
     ],
     "user": [
       "p"
@@ -164,8 +144,6 @@
       "p"
     ],
     "settings": [
-      "p",
-      "p",
       "p",
       "p"
     ],
@@ -279,10 +257,6 @@
       "p",
       "p",
       "p",
-      "p",
-      "p",
-      "p",
-      "p",
       "p"
     ],
     "web": [
@@ -295,11 +269,17 @@
     ],
     "server": [
       "p",
-      "p"
+      "p",
+      "p",
+      "ul",
+      "li",
+      "a",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "all": [
-      "p",
-      "p",
       "p",
       "p"
     ],
@@ -307,7 +287,6 @@
       "p"
     ],
     "are": [
-      "p",
       "p",
       "p",
       "p"
@@ -319,8 +298,6 @@
       "p"
     ],
     "that": [
-      "p",
-      "p",
       "p",
       "p",
       "p",
@@ -368,40 +345,27 @@
       "p"
     ],
     "document": [
-      "p",
       "p"
     ],
     "security": [
-      "p",
-      "p",
       "p"
     ],
     "implications": [
-      "p",
-      "p",
       "p"
     ],
     "affect": [
-      "p",
-      "p",
       "p"
     ],
     "application’s": [
       "p"
     ],
     "information": [
-      "p",
-      "p",
       "p"
     ],
     "assurance": [
-      "p",
-      "p",
       "p"
     ],
     "posture": [
-      "p",
-      "p",
       "p"
     ],
     "even": [
@@ -413,7 +377,8 @@
     "documentation": [
       "p"
     ],
-    "may": [
+    "might": [
+      "p",
       "p"
     ],
     "go": [
@@ -426,7 +391,7 @@
       "p",
       "p"
     ],
-    "unheeded.": [
+    "unheeded": [
       "p"
     ],
     "impact": [
@@ -440,8 +405,7 @@
       "p"
     ],
     "specific": [
-      "p",
-      "h2"
+      "p"
     ],
     "circumstances": [
       "p"
@@ -463,9 +427,6 @@
       "p"
     ],
     "example": [
-      "p"
-    ],
-    "might": [
       "p"
     ],
     "recover": [
@@ -525,9 +486,11 @@
     "prevent": [
       "p"
     ],
-    "configurable": [
+    "harden": [
       "p",
-      "p"
+      "ul",
+      "li",
+      "a"
     ],
     "check": [
       "h2"
@@ -539,28 +502,8 @@
     "prevented": [
       "p"
     ],
-    "documented": [
-      "p"
-    ],
-    "technologies": [
-      "h2"
-    ],
-    "aspnet": [
-      "ul",
-      "li",
-      "a"
-    ],
-    "java": [
-      "ul",
-      "li",
-      "a"
-    ],
-    "c++": [
-      "ul",
-      "li",
-      "a"
-    ],
-    "php": [
+    "hardened": [
+      "p",
       "ul",
       "li",
       "a"
@@ -569,20 +512,12 @@
   "tags": {},
   "links": [
     {
-      "href": "dcedcd75-908a-466b-8777-1e38f2799599",
-      "text": "ASP.NET Application Misconfiguration"
+      "href": "99297f49-528b-4a25-bc35-3b82ef14404a",
+      "text": "Harden the Server"
     },
     {
-      "href": "ff3e01bc-5152-46b9-aa8b-a0883ef3526d",
-      "text": "Java Application Misconfiguration"
-    },
-    {
-      "href": "83309935-667b-465f-b22e-cef738414d04",
-      "text": "C++ Application Misconfiguration"
-    },
-    {
-      "href": "618a57de-3962-4025-86a0-a8e60c2fddd8",
-      "text": "PHP Application Misconfiguration"
+      "href": "408f56bf-9ca6-482d-bff2-a2495ff80917",
+      "text": "The Server Is Hardened"
     }
   ]
 }

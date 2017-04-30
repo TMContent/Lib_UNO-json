@@ -10,3 +10,16 @@
 <li><strong>Use parameterized APIs to execute operating system commands.</strong> The key point is that the arguments passed to the program being executed are passed via a separate variable from the path of the program - this is the &quot;parameterization&quot; part. Because the arguments are passed in a separate variable, the arguments cannot be manipulated into causing the application to execute some other program in typical scenarios. It is possible to craft a scenario where parameterized APIs are used to execute a shell and pass it the name of some other command as the argument, but that is a crazy thing to do - don't do that.</li>
 <li><strong>Use parameterized APIs correctly.</strong> The user should never be allowed to arbitrarily decide what program to run - that is the very definition of a command injection vulnerability. If it is absolutely necessary to choose what program to run based on user input, define a list of allowed and safe programs to run, place the paths to these programs in an array, and then choose the index of the array based on the user input to correspond to the program that needs to be executed based on the user's choice. One particular thing to watch out for is whether the external program can execute other programs based on the arguments that are sent to it - one obvious example would be passing arguments to a shell. For most practical scenarios, this should not be an issue, but it's something to be aware of.</li>
 </ol>
+<h2>Code Examples</h2>
+<ul>
+<li><a href="6b418fb3-88fb-42e0-b32a-f44dc421aa63">Python 2.7</a></li>
+<li><a href="b99ab950-f74d-4b5c-b900-a874dd92b198">Python 3</a></li>
+<li><a href="c7224016-0591-4ff5-9d90-a45422c4fd0a">Ruby</a></li>
+<li><a href="4b8969b1-057e-484d-ad24-7d030cd47e02">PHP</a></li>
+<li><a href="00000000-0000-0000-0000-000000179eb6">Java</a></li>
+<li><a href="00000000-0000-0000-0000-00000077e119">.NET</a></li>
+</ul>
+<h2>Vulnerabilities</h2>
+<ul>
+<li><a href="94e52aca-06b6-4747-9bc9-f0149208f18c">Command Injection</a></li>
+</ul>

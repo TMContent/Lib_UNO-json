@@ -424,10 +424,18 @@
       "p",
       "p"
     ],
-    "names)": [
-      "p"
+    "names": [
+      "p",
+      "ol",
+      "li",
+      "strong"
     ],
-    "fqdns).": [
+    "fqdns": [
+      "p",
+      "p",
+      "ol",
+      "li",
+      "strong",
       "p"
     ],
     "why": [
@@ -456,7 +464,8 @@
     ],
     "false": [
       "p",
-      "p"
+      "p",
+      "pre"
     ],
     "positives": [
       "p"
@@ -470,6 +479,8 @@
     "if": [
       "p",
       "p",
+      "ol",
+      "li",
       "tt",
       "pre"
     ],
@@ -552,8 +563,9 @@
     "contains": [
       "p"
     ],
-    "http//www.example.com,": [
-      "p"
+    "http//wwwexamplecom": [
+      "p",
+      "tt"
     ],
     "an": [
       "p",
@@ -633,7 +645,7 @@
       "li",
       "a"
     ],
-    "http//www.example.com.hackers.net": [
+    "http//wwwexamplecomhackersnet": [
       "p",
       "tt"
     ],
@@ -681,9 +693,6 @@
       "li",
       "a"
     ],
-    "http//www.example.com": [
-      "tt"
-    ],
     "how": [
       "h2",
       "h2"
@@ -703,13 +712,6 @@
       "li",
       "h2",
       "h2"
-    ],
-    "fqdns": [
-      "p",
-      "ol",
-      "li",
-      "strong",
-      "p"
     ],
     "find": [
       "ol",
@@ -1100,8 +1102,12 @@
       "li",
       "strong"
     ],
-    "servers)": [
+    "servers": [
       "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
       "li",
       "strong"
     ],
@@ -1117,12 +1123,6 @@
     ],
     "limit": [
       "ol",
-      "li"
-    ],
-    "servers": [
-      "ol",
-      "ol",
-      "li",
       "li"
     ],
     "required": [
@@ -1143,6 +1143,8 @@
     ],
     "unnecessary": [
       "ol",
+      "ol",
+      "li",
       "li"
     ],
     "“just": [
@@ -1257,10 +1259,6 @@
       "ol",
       "li"
     ],
-    "unnecessary)": [
-      "ol",
-      "li"
-    ],
     "below": [
       "ol",
       "li"
@@ -1269,18 +1267,19 @@
       "ol",
       "li"
     ],
-    "value\nif": [
+    "value": [
       "ol",
       "li"
     ],
-    "event.origin": [
+    "eventorigin": [
       "ol",
       "li",
       "tt"
     ],
-    "'http//www.example.com')": [
+    "'http//wwwexamplecom'": [
       "ol",
-      "li"
+      "li",
+      "tt"
     ],
     "{": [
       "ol",
@@ -1318,11 +1317,6 @@
       "li",
       "strong"
     ],
-    "names": [
-      "ol",
-      "li",
-      "strong"
-    ],
     "ports": [
       "ol",
       "li",
@@ -1354,19 +1348,16 @@
       "ol",
       "li"
     ],
-    "'http//www.example.com'": [
-      "tt"
-    ],
-    "windowaddeventlistener('message',": [
+    "windowaddeventlistener'message'": [
       "pre"
     ],
     "messagehandler": [
       "pre"
     ],
-    "false;\nfunction": [
+    "function": [
       "pre"
     ],
-    "messagehandlerevent)": [
+    "messagehandlerevent": [
       "pre"
     ],
     "var": [
@@ -1381,10 +1372,10 @@
     "new": [
       "pre"
     ],
-    "regexp\"^https?://www.example.com$\");": [
+    "regexp^https?//wwwexamplecom$": [
       "pre"
     ],
-    "re.test(event.origin))": [
+    "retesteventorigin": [
       "pre"
     ],
     "//": [
@@ -1398,6 +1389,8 @@
       "pre"
     ],
     "}": [
+      "pre",
+      "pre",
       "pre"
     ],
     "else": [
@@ -1415,10 +1408,7 @@
     "who": [
       "pre"
     ],
-    "expect..": [
-      "pre"
-    ],
-    "}}": [
+    "expect": [
       "pre"
     ],
     "guidelines": [

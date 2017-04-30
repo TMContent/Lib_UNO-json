@@ -1,5 +1,4 @@
-<h2>Applies To</h2><ul><li> Java</li>
-</ul><h2>What to Check For</h2><p>Verify that WS-Routing is not used.
+<h2>What to Check For</h2><p>Verify that WS-Routing is not used.
 </p><h2>Why</h2><p>Don't use WS-Routing, because WS-Routing is vulnerable to routing detour attacks. The WS-Routing protocol doesn't have sufficient security features, so it should be avoided. 
 </p><h2>How to Check</h2><p>To check whether WS-Routing is used, ask developers whether the application actually uses WS-Routing, and review application code to find code that uses WS-Routing.  Search for keywords like "WS-Routing" and "r:path" to help find code that uses WS-Routing. 
 </p><p>

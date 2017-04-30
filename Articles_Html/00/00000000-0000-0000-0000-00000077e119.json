@@ -1,6 +1,6 @@
 {
   "id": "00000000-0000-0000-0000-00000077e119",
-  "checksum": "385dec5da60ee263fa45a3a7c1af9408",
+  "checksum": "39ef16004f5e56ad450c3836706f141d",
   "words": {
     "applies": [
       "h2"
@@ -221,22 +221,21 @@
       "ol",
       "li"
     ],
-    "appcommandhandlerexecutecommand,": [
+    "appcommandhandlerexecutecommand": [
       "ol",
-      "li"
+      "li",
+      "code"
     ],
-    "systemdiagnostics.process.": [
-      "ol",
-      "li"
-    ],
-    "systemdiagnostics.process": [
+    "systemdiagnosticsprocess": [
       "ol",
       "ol",
-      "em",
+      "ol",
+      "li",
+      "code",
       "li",
       "li",
-      "em",
-      "em"
+      "code",
+      "code"
     ],
     "object": [
       "ol",
@@ -277,7 +276,10 @@
       "li",
       "li",
       "li",
-      "strong"
+      "strong",
+      "ul",
+      "li",
+      "a"
     ],
     "parameters": [
       "ol",
@@ -285,7 +287,10 @@
       "ol",
       "li",
       "li",
-      "li"
+      "li",
+      "ul",
+      "li",
+      "a"
     ],
     "can": [
       "ol",
@@ -309,10 +314,10 @@
       "ol",
       "li"
     ],
-    "systemdiagnostics.processstartinfo": [
+    "systemdiagnosticsprocessstartinfo": [
       "ol",
       "li",
-      "em"
+      "code"
     ],
     "which": [
       "ol",
@@ -373,7 +378,10 @@
     ],
     "from": [
       "ol",
-      "li"
+      "li",
+      "ul",
+      "li",
+      "a"
     ],
     "your": [
       "ol",
@@ -576,7 +584,7 @@
       "ol",
       "li"
     ],
-    "explorerexe.": [
+    "explorerexe": [
       "ol",
       "li"
     ],
@@ -670,10 +678,25 @@
       "ol",
       "li"
     ],
-    "appcommandhandlerexecutecommand": [
-      "em"
+    "guideline": [
+      "h2"
+    ],
+    "separate": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "names": [
+      "ul",
+      "li",
+      "a"
     ]
   },
   "tags": {},
-  "links": []
+  "links": [
+    {
+      "href": "042253ce-3fe6-4138-926b-c3169ec0ea78",
+      "text": "Separate Parameters from Command Names"
+    }
+  ]
 }

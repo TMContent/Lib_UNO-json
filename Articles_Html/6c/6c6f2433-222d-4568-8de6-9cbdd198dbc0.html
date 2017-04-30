@@ -1,6 +1,16 @@
-<h1>Description</h1><p>Applications that use authentication need a method for storing passwords. One of the simplest ways to store passwords is to hard-code them into the application. This approach is not secure, because anyone with access to the application code is able to recover these passwords. Once an attacker has recovered the passwords, he can use them to authenticate with the application. 
-</p><h1>Impact</h1><p>Once the attacker has obtained the hard-coded password, he can use it to access the application. Usually, administrative passwords are the ones that are hard-coded. In that case, the attacker gains full access to the application. The attacker may be able to leverage this access to take full control of the application server. 
+<h1>Description</h1><p>Applications that use authentication need a method for storing passwords. One of the simplest ways to store passwords is to hard-code them into the application. This approach is not secure, because anyone with access to the application code is able to recover these passwords. Once an attacker has recovered the passwords, they can use them to authenticate with the application. 
+</p><h1>Impact</h1><p>Once the attacker has obtained the hard-coded password, they can use it to access the application. Usually, administrative passwords are the ones that are hard-coded. In that case, the attacker gains full access to the application. The attacker might be able to leverage this access to take full control of the application server. 
 </p><h1>Countermeasures</h1><p>To prevent this vulnerability, provide a secure admin interface that allows changing passwords, and store passwords securely. 
-</p><h1>Application Check</h1><p>To check for adequate protection against this vulnerability, examine all code that uses authentication and find where it stores the passwords. 
-</p><h1>Specific Technologies</h1><ul><li> <a href="0cc358fe-0396-4142-bab5-ad327920b340">ASP.NET Use of Hard-coded Password</a></li>
-<li> <a href="d18c00d5-2365-45c8-bde7-0e189f812ff6">Java Use of Hard-coded Password</a></li></ul>
+</p><p>
+Provide a secure administrative interface that allows changing passwords:</p><ul>
+<li> <a href="00000000-0000-0000-0000-000000066326">Provide a Secure Administrative Interface that Allows Changing Passwords</a></li>
+</ul><p>
+Store passwords securely:</p><ul>
+<li> <a href="00000000-0000-0000-0000-0000006adfa3">Store Passwords Securely</a></li>
+</ul><h1>Application Check</h1><p>To check for adequate protection against this vulnerability, ensure that a secure admin interface that allows changing passwords is provided, and that passwords are stored securely.
+</p><p>
+A secure administrative interface that allows changing passwords is provided:</p><ul>
+<li> <a href="00000000-0000-0000-0000-00000018ecb4">A Secure Administrative Interface that Allows Changing Passwords Is Provided</a></li>
+</ul><p>
+Passwords are stored securely:</p><ul>
+<li> <a href="00000000-0000-0000-0000-00000077a50c">Passwords Are Stored Securely</a></li></ul>

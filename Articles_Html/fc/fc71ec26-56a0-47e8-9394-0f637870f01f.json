@@ -1,6 +1,6 @@
 {
   "id": "fc71ec26-56a0-47e8-9394-0f637870f01f",
-  "checksum": "c6b8342c1ef62f31c67815ca4a49ede8",
+  "checksum": "53449a0eb26a5d7b1d894612b21d7d8e",
   "words": {
     "what": [
       "h2"
@@ -38,6 +38,8 @@
       "p",
       "p",
       "p",
+      "ol",
+      "ol",
       "ol",
       "ol",
       "ol",
@@ -98,14 +100,19 @@
     "number": [
       "p",
       "p",
+      "ol",
       "li"
     ],
     "generator": [
       "p",
       "p"
     ],
-    "prng)": [
-      "p"
+    "prng": [
+      "p",
+      "ol",
+      "li",
+      "strong",
+      "title"
     ],
     "whenever": [
       "p"
@@ -150,6 +157,7 @@
     "cryptography": [
       "p",
       "p",
+      "ol",
       "ol",
       "ol",
       "ol",
@@ -414,7 +422,8 @@
       "li",
       "li",
       "li",
-      "li"
+      "li",
+      "h2"
     ],
     "uses": [
       "ol",
@@ -448,9 +457,6 @@
     "spreadsheet": [
       "ol",
       "li"
-    ],
-    "cryptography\nuse": [
-      "ol"
     ],
     "/dev/urandom": [
       "ol",
@@ -534,21 +540,12 @@
       "li",
       "li"
     ],
-    "number\nuse": [
-      "ol"
-    ],
     "os": [
       "ol",
       "ol",
       "li",
       "li",
       "strong"
-    ],
-    "prng": [
-      "ol",
-      "li",
-      "strong",
-      "title"
     ],
     "windows": [
       "ol",
@@ -565,7 +562,7 @@
       "ol",
       "li"
     ],
-    "getrandom)": [
+    "getrandom": [
       "ol",
       "ol",
       "li",
@@ -581,7 +578,7 @@
       "ol",
       "li"
     ],
-    "capicomutilities.the": [
+    "capicomutilitiesthe": [
       "ol",
       "li"
     ],
@@ -596,8 +593,56 @@
     "needed": [
       "ol",
       "li"
+    ],
+    "examples": [
+      "h2"
+    ],
+    "php": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "java": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "ruby": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "vulnerabilities": [
+      "h2"
+    ],
+    "insecure": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "randomness": [
+      "ul",
+      "li",
+      "a"
     ]
   },
   "tags": {},
-  "links": []
+  "links": [
+    {
+      "href": "c38d8837-682c-4b0b-bde3-3530053fb1c0",
+      "text": "PHP"
+    },
+    {
+      "href": "603cc670-a592-486e-8e85-629f2d9e531e",
+      "text": "Java"
+    },
+    {
+      "href": "d823dbcc-5629-419b-b39b-9e3b89136146",
+      "text": "Ruby"
+    },
+    {
+      "href": "79e3c551-71ae-4120-8542-a6f90823ede9",
+      "text": "Insecure Randomness"
+    }
+  ]
 }

@@ -1,11 +1,27 @@
 <h2>What to Do</h2>
 <p>Perform range checks before values of mathematical operations or conversions are assigned to integer-type variables.</p>
 <h2>Why</h2>
-<p>Integer-type variables have minimum and maximum limits on data that they can store. Placing too much data in an integer-type variable results in an integer overflow. Different platforms fail differently as a result of integer overflows, but there is a possibility of an arbitrary code execution resulting from an integer overflow bug. When values that are too high or too low are assigned to unsigned integers, integer-wrapping results, which usually means that unexpected values are produced. Conversions between signed and unsigned integers, and other data types, may result in truncation or losing sign information. All of these bugs may result in very dangerous vulnerabilities. All of these bugs may be prevented by validating values of integer operations before assigning them to variables.</p>
+<p>Integer-type variables have minimum and maximum limits on data that they can store. Placing too much data in an integer-type variable results in an integer overflow. Different platforms fail differently as a result of integer overflows, but there is a possibility of an arbitrary code execution resulting from these vulnerabilities. When values that are too high or too low are assigned to unsigned integers, integer-wrapping results, which usually means that unexpected values are produced. Conversions between signed and unsigned integers, and other data types, may result in truncation or losing sign information. All of these bugs may result in very dangerous vulnerabilities. All of these bugs can be prevented by validating values of integer operations before assigning them to variables.</p>
 <h2>When</h2>
 <p>Validate data when assigning it to integer-type variables.</p>
 <h2>How</h2>
+<p>To validate results of calculations before assigning them to integer type variables:</p>
 <ol>
-<li><strong>Identify code.</strong> Identify all code that assigns values to integer-type variables. For existing code, it may be a good idea to prioritize components, so that the most critical elements are checked first. Some development environments and compilers may be able to detect these types of errors, but automatic detection should not be relied on for critical software components.</li>
-<li><strong>Add range checks.</strong> Use platform-defined constants to check that values being assigned to integer-type variables are valid.</li>
+<li>
+<p><strong>Identify code.</strong> Identify all code that assigns values to integer-type variables. For existing code, it may be a good idea to prioritize components, so that the most critical elements are checked first. Some development environments and compilers may be able to detect these types of errors, but automatic detection should not be relied on for critical software components.</p>
+</li>
+<li>
+<p><strong>Add range checks.</strong> Use platform-defined constants to check that values being assigned to integer-type variables are valid.</p>
+</li>
 </ol>
+<h2>Computer Based Training</h2>
+<p>Use the following Computer Based Training course for more information about data validation:</p>
+<ul>
+<li><a href="https://teamprofessor.absorbtraining.com/ninja/#/courses/course/127105">AWA 101 Fundamentals of Application Security</a> - This two-part course is ideal for security and development practitioners that want to understand software security risk and seek specific implementation guidance on how to build and deploy more secure software applications.  It starts off describing why software security is critical and the risk that software vulnerabilities represent, and proceeds to lay the foundation for secure software development by presenting specific security controls and principles that development teams can implement immediately to reduce software risk.</li>
+</ul>
+<p><em>Valid login credentials and enrollment in the course itself are required to access Team Professor content. If you need login credentials, please contact support@securityinnovation.com for help.</em></p>
+<h2>Related Pages</h2>
+<ul>
+<li><a href="eeb8a6d5-2181-48fa-8b2a-3e44a532a50a">C++ Validate Ranges of All Integer Values</a></li>
+<li><a href="bf53d602-1d86-489c-858d-f5efb6424412">Data Validation Guide</a></li>
+</ul>

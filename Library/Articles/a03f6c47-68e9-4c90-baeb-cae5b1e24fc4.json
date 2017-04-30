@@ -22,7 +22,7 @@
           "Implementation"
         ],
         "Technology": [
-          "Ruby"
+          "Technology Independent"
         ],
         "Type": [
           "Guideline"
@@ -51,7 +51,7 @@
           "DataType": "markdown"
         },
         "Data": [
-          "## Applies To ##\r\n\r\n- Ruby\r\n\r\n\r\n## What to Do ##\r\n\r\nCheck authorization before accessing system resources such as files, database connections, and network sockets.\r\n\r\n\r\n## Why ##\r\n\r\nAccess to system resources, such as files, must be considered by the developer. The application should check if the user is authorized to access system objects.\r\n\r\nIf the application exposes a system resource to the wrong control sphere, there is inappropriate access to the resource (CWE-668).\r\n\r\n\r\n## When ##\r\n\r\nThe application should always check if a file or other system resource should be available to the user.\r\n\r\n\r\n## How ##\r\n\r\n1. **Identify all operations performed by the application.** Make a spreadsheet that lists all operations implemented by the application.\r\n\r\n2. **Identify system resources used by the application.** For each operation, determine what files, database connections, network sockets, or other system objects that are subject to access controls are being used. Add this information to the spreadsheet.\r\n\r\n3. **Find code that accesses system resources.** Find all code that accesses system resources. Add information about this code to the spreadsheet.\r\n\r\n4. **Check authorization before accessing system resources.** Add code that checks authorization to each function that accesses system resources before performing access to system resources. Use reference maps to restrict access to explicitly-authorized resources if possible.\r\n\r\n\r\n"
+          "## What to Do ##\r\n\r\nCheck authorization before accessing system resources such as files, database connections, and network sockets.\r\n\r\n\r\n## Why ##\r\n\r\nAccess to system resources, such as files, must be considered by the developer. The application should check if the user is authorized to access system objects.\r\n\r\nIf the application exposes a system resource to the wrong control sphere, there is inappropriate access to the resource (CWE-668).\r\n\r\n\r\n## When ##\r\n\r\nThe application should always check if a file or other system resource should be available to the user.\r\n\r\n\r\n## How ##\r\n\r\n1. **Identify all operations performed by the application.** Make a spreadsheet that lists all operations implemented by the application.\r\n\r\n2. **Identify system resources used by the application.** For each operation, determine what files, database connections, network sockets, or other system objects that are subject to access controls are being used. Add this information to the spreadsheet.\r\n\r\n3. **Find code that accesses system resources.** Find all code that accesses system resources. Add information about this code to the spreadsheet.\r\n\r\n4. **Check authorization before accessing system resources.** Add code that checks authorization to each function that accesses system resources before performing access to system resources. Use reference maps to restrict access to explicitly-authorized resources if possible.\r\n\r\n\r\n"
         ]
       }
     ]

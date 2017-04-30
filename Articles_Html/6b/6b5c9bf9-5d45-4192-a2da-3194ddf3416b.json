@@ -1,6 +1,6 @@
 {
   "id": "6b5c9bf9-5d45-4192-a2da-3194ddf3416b",
-  "checksum": "433a4c2d98d5c63938f1b0aafc148208",
+  "checksum": "5230566176e6fa3e54bb6fc4d16ecc22",
   "words": {
     "description": [
       "h1"
@@ -14,11 +14,13 @@
       "p",
       "p",
       "p",
-      "p",
-      "ul",
       "ul",
       "li",
       "a",
+      "p",
+      "p",
+      "p",
+      "ul",
       "li",
       "a",
       "title"
@@ -57,7 +59,11 @@
     ],
     "store": [
       "p",
-      "p"
+      "p",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "data": [
       "p",
@@ -66,7 +72,15 @@
       "p",
       "p",
       "p",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a",
+      "p",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "in": [
       "p",
@@ -74,7 +88,15 @@
       "p",
       "p",
       "p",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a",
+      "p",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "the": [
       "p",
@@ -98,7 +120,8 @@
     "browser": [
       "p"
     ],
-    "may": [
+    "might": [
+      "p",
       "p",
       "p",
       "p"
@@ -116,7 +139,15 @@
     "persistent": [
       "p",
       "p",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a",
+      "p",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "and": [
       "p",
@@ -126,7 +157,11 @@
     "stored": [
       "p",
       "p",
-      "p"
+      "p",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "for": [
       "p",
@@ -197,7 +232,15 @@
       "p",
       "p",
       "p",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a",
+      "p",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "from": [
       "p"
@@ -257,7 +300,11 @@
     "is": [
       "p",
       "p",
-      "p"
+      "p",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "session": [
       "p"
@@ -318,16 +365,13 @@
     "within": [
       "p"
     ],
-    "might": [
-      "p"
-    ],
     "enough": [
       "p"
     ],
     "or": [
       "p"
     ],
-    "he": [
+    "they": [
       "p"
     ],
     "leverage": [
@@ -350,7 +394,23 @@
       "p"
     ],
     "don't": [
+      "p",
       "p"
+    ],
+    "do": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "not": [
+      "ul",
+      "li",
+      "a",
+      "p",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "check": [
       "h1",
@@ -377,62 +437,25 @@
     "ensure": [
       "p"
     ],
-    "not": [
-      "p"
-    ],
-    "specific": [
-      "h1"
-    ],
-    "technologies": [
-      "h1"
-    ],
-    "aspnet": [
-      "ul",
-      "li",
-      "a"
-    ],
     "information": [
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a",
       "title"
     ],
     "leak": [
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a",
       "title"
     ],
     "through": [
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a",
       "title"
-    ],
-    "php": [
-      "ul",
-      "li",
-      "a"
     ]
   },
   "tags": {},
   "links": [
     {
-      "href": "baf9e37f-ae0c-4f38-99d4-1942aaefef44",
-      "text": "ASP.NET Information Leak Through Cookies"
+      "href": "e9bb3e68-cce4-4412-8834-e4cb7861be00",
+      "text": "Do Not Store Sensitive Data in Persistent Cookies"
     },
     {
-      "href": "6cbabed6-4bd2-4f16-a955-e585182b06b3",
-      "text": "PHP Information Leak Through Cookies"
+      "href": "e17caf9a-36ff-486f-8329-7c238a7ef13d",
+      "text": "Sensitive Data Is Not Stored in Persistent Cookies"
     }
   ]
 }

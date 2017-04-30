@@ -84,6 +84,7 @@
       "p",
       "p",
       "p",
+      "ul",
       "li",
       "p",
       "p",
@@ -103,6 +104,7 @@
       "p",
       "p",
       "p",
+      "ul",
       "ul",
       "ul",
       "ul",
@@ -191,6 +193,8 @@
       "p",
       "p",
       "p",
+      "ol",
+      "ol",
       "ol",
       "ol",
       "ol",
@@ -411,6 +415,7 @@
       "ul",
       "li",
       "p",
+      "ol",
       "li",
       "p",
       "p",
@@ -437,6 +442,9 @@
       "p",
       "p",
       "p",
+      "ol",
+      "ol",
+      "ol",
       "ol",
       "li",
       "li",
@@ -639,6 +647,7 @@
       "p",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "li",
@@ -647,6 +656,7 @@
       "p",
       "p",
       "p",
+      "ol",
       "ol",
       "li",
       "li",
@@ -850,16 +860,42 @@
       "h2",
       "p"
     ],
-    "scenariosanalyze": [
-      "ol"
+    "scenarios": [
+      "ol",
+      "li",
+      "h2",
+      "p",
+      "p"
+    ],
+    "analyze": [
+      "ol",
+      "li",
+      "h2"
     ],
     "causes": [
       "ol",
       "li",
       "h2"
     ],
-    "countermeasuresexecute": [
-      "ol"
+    "countermeasures": [
+      "ol",
+      "li",
+      "h2"
+    ],
+    "execute": [
+      "ol",
+      "li",
+      "p",
+      "p",
+      "h2",
+      "p",
+      "ol",
+      "li",
+      "p",
+      "ol",
+      "li",
+      "p",
+      "p"
     ],
     "cases": [
       "ol",
@@ -868,33 +904,6 @@
       "h2",
       "p",
       "p",
-      "p",
-      "p"
-    ],
-    "scenarios": [
-      "li",
-      "h2",
-      "p",
-      "p"
-    ],
-    "analyze": [
-      "li",
-      "h2"
-    ],
-    "countermeasures": [
-      "li",
-      "h2"
-    ],
-    "execute": [
-      "li",
-      "p",
-      "p",
-      "h2",
-      "p",
-      "li",
-      "p",
-      "ol",
-      "li",
       "p",
       "p"
     ],
@@ -914,6 +923,7 @@
       "p",
       "p",
       "p",
+      "ol",
       "li",
       "p",
       "p",
@@ -1021,6 +1031,7 @@
       "p",
       "p",
       "ol",
+      "ol",
       "li",
       "li",
       "p",
@@ -1028,6 +1039,7 @@
       "p",
       "p",
       "p",
+      "ol",
       "li",
       "p",
       "ol",
@@ -1095,6 +1107,7 @@
       "p",
       "ol",
       "li",
+      "ol",
       "li"
     ],
     "access": [
@@ -1136,21 +1149,20 @@
       "ul",
       "li"
     ],
-    "based,": [
-      "p"
-    ],
-    "switch": [
-      "p",
-      "li"
-    ],
     "based": [
+      "p",
       "p",
       "ul",
       "ul",
       "li",
       "li"
     ],
-    "etc).": [
+    "switch": [
+      "p",
+      "ul",
+      "li"
+    ],
+    "etc": [
       "p"
     ],
     "include": [
@@ -1185,9 +1197,6 @@
       "li",
       "p"
     ],
-    "sniffingswitch": [
-      "ul"
-    ],
     "arp": [
       "ul",
       "li",
@@ -1202,8 +1211,13 @@
       "ul",
       "li"
     ],
-    "spoofingwlans": [
-      "ul"
+    "spoofing": [
+      "ul",
+      "li"
+    ],
+    "wlans": [
+      "ul",
+      "li"
     ],
     "including": [
       "ul",
@@ -1221,8 +1235,10 @@
       "ul",
       "li"
     ],
-    "keyattacks": [
-      "ul"
+    "key": [
+      "ul",
+      "li",
+      "p"
     ],
     "sniffs": [
       "ul",
@@ -1247,16 +1263,6 @@
     "router": [
       "ul",
       "li"
-    ],
-    "spoofing": [
-      "li"
-    ],
-    "wlans": [
-      "li"
-    ],
-    "key": [
-      "li",
-      "p"
     ],
     "note": [
       "p"
@@ -1364,6 +1370,7 @@
     ],
     "if": [
       "p",
+      "ol",
       "li",
       "p",
       "p",
@@ -1459,9 +1466,6 @@
       "ol",
       "li"
     ],
-    "client\nthe": [
-      "ol"
-    ],
     "executes": [
       "ol",
       "li"
@@ -1474,16 +1478,10 @@
       "ol",
       "li"
     ],
-    "application\nthe": [
-      "ol"
-    ],
     "packet": [
       "ol",
       "li",
       "p"
-    ],
-    "packetsif": [
-      "ol"
     ],
     "reads": [
       "ol",
@@ -1622,6 +1620,7 @@
       "p",
       "p",
       "p",
+      "ol",
       "li",
       "ol",
       "li",
@@ -1688,7 +1687,7 @@
     "middle": [
       "p"
     ],
-    "mitm)": [
+    "mitm": [
       "p"
     ],
     "intercepting": [
@@ -1739,6 +1738,7 @@
     ],
     "request": [
       "p",
+      "ol",
       "li",
       "p",
       "p"
@@ -1830,7 +1830,7 @@
     "windows": [
       "p"
     ],
-    "iis.": [
+    "iis": [
       "p"
     ],
     "select": [
@@ -1968,12 +1968,6 @@
     "aspnet": [
       "p"
     ],
-    "clientexecute": [
-      "ol"
-    ],
-    "application\nuse": [
-      "ol"
-    ],
     "transmitted": [
       "ol",
       "li",
@@ -2074,6 +2068,7 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "li",
@@ -2100,25 +2095,35 @@
       "ol",
       "li"
     ],
-    "it\nopen": [
-      "ol"
+    "open": [
+      "ol",
+      "li"
     ],
-    "browser\nset": [
-      "ol"
+    "browser": [
+      "ol",
+      "ol",
+      "li",
+      "li"
+    ],
+    "set": [
+      "ol",
+      "li"
     ],
     "options": [
       "ol",
       "li"
     ],
-    "proxy\nnavigate": [
-      "ol"
+    "navigate": [
+      "ol",
+      "li"
     ],
     "login/authentication": [
       "ol",
       "li"
     ],
-    "page\nin": [
-      "ol"
+    "page": [
+      "ol",
+      "li"
     ],
     "turn": [
       "ol",
@@ -2132,14 +2137,6 @@
       "ol",
       "li"
     ],
-    "on\nin": [
-      "ol"
-    ],
-    "browser": [
-      "ol",
-      "li",
-      "li"
-    ],
     "enter": [
       "ol",
       "li"
@@ -2147,9 +2144,6 @@
     "make": [
       "ol",
       "li"
-    ],
-    "request\nin": [
-      "ol"
     ],
     "request’s": [
       "ol",
@@ -2162,18 +2156,6 @@
       "li",
       "p",
       "p"
-    ],
-    "open": [
-      "li"
-    ],
-    "set": [
-      "li"
-    ],
-    "navigate": [
-      "li"
-    ],
-    "page": [
-      "li"
     ],
     "made": [
       "p"
@@ -2188,7 +2170,7 @@
     "port": [
       "p"
     ],
-    "default.": [
+    "default": [
       "p"
     ],
     "conclusions": [

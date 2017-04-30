@@ -1,6 +1,6 @@
 {
   "id": "986c7161-0a76-430a-8d0e-80d4615ab5db",
-  "checksum": "a28369d4cc6d33a49b68becf95e94bfd",
+  "checksum": "7d6e5595a8cdf3333b18e5ae0cdce832",
   "words": {
     "0": [
       "ol",
@@ -42,8 +42,7 @@
     ],
     "java": [
       "ul",
-      "li",
-      "title"
+      "li"
     ],
     "web": [
       "ul",
@@ -90,20 +89,12 @@
       "p"
     ],
     "cross": [
-      "p",
-      "ul",
-      "ul",
-      "li",
-      "li"
+      "p"
     ],
     "site": [
       "p",
       "p",
-      "p",
-      "ul",
-      "ul",
-      "li",
-      "li"
+      "p"
     ],
     "request": [
       "p",
@@ -123,21 +114,21 @@
       "pre",
       "pre",
       "code",
-      "code",
-      "ul",
-      "ul",
-      "li",
-      "li"
+      "code"
     ],
     "forgery": [
-      "p",
-      "ul",
-      "ul",
-      "li",
-      "li"
-    ],
-    "csrf)": [
       "p"
+    ],
+    "csrf": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "ol",
+      "li",
+      "pre",
+      "code"
     ],
     "within": [
       "p",
@@ -202,16 +193,6 @@
     ],
     "objectives": [
       "h2"
-    ],
-    "csrf": [
-      "p",
-      "p",
-      "p",
-      "p",
-      "ol",
-      "li",
-      "pre",
-      "code"
     ],
     "is": [
       "p",
@@ -377,7 +358,8 @@
     ],
     "jsp": [
       "p",
-      "p"
+      "p",
+      "title"
     ],
     "scenarios": [
       "h2"
@@ -443,10 +425,7 @@
       "li",
       "li",
       "p",
-      "p",
-      "ul",
-      "li",
-      "li"
+      "p"
     ],
     "which": [
       "p",
@@ -498,7 +477,10 @@
       "li",
       "p",
       "li",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "order": [
       "p"
@@ -568,12 +550,11 @@
       "p"
     ],
     "prevention": [
-      "p",
-      "ul",
-      "li"
+      "p"
     ],
     "add": [
       "p",
+      "ol",
       "li",
       "p",
       "strong",
@@ -581,6 +562,9 @@
     ],
     "unique": [
       "p",
+      "ul",
+      "li",
+      "a",
       "title"
     ],
     "tokens": [
@@ -599,26 +583,33 @@
       "p",
       "p",
       "strong",
+      "ul",
+      "li",
+      "a",
       "title"
     ],
     "http": [
       "p",
+      "ul",
+      "li",
+      "a",
       "title"
     ],
     "requests": [
       "p",
+      "ul",
+      "li",
+      "a",
       "title"
     ],
     "using": [
       "p",
       "ol",
       "li",
-      "p",
-      "title"
+      "p"
     ],
     "plain": [
-      "p",
-      "title"
+      "p"
     ],
     "store": [
       "ol",
@@ -723,10 +714,11 @@
       "li",
       "p"
     ],
-    "javasecurity.securerandom)": [
+    "javasecuritysecurerandom": [
       "ol",
       "li",
-      "p"
+      "p",
+      "code"
     ],
     "string/token": [
       "ol",
@@ -773,16 +765,20 @@
       "pre",
       "code"
     ],
-    "sessionsetattribute(\"csrftoken\",": [
+    "sessionsetattributecsrftoken": [
       "ol",
       "li",
       "pre",
       "code"
     ],
-    "generatecsrftoken));": [
+    "generatecsrftoken": [
+      "ol",
       "ol",
       "li",
+      "li",
       "pre",
+      "pre",
+      "code",
       "code"
     ],
     "//sample": [
@@ -837,12 +833,6 @@
       "code",
       "code"
     ],
-    "generatecsrftoken)": [
-      "ol",
-      "li",
-      "pre",
-      "code"
-    ],
     "{": [
       "ol",
       "ol",
@@ -867,8 +857,12 @@
     ],
     "securerandom": [
       "ol",
+      "ol",
+      "li",
       "li",
       "pre",
+      "pre",
+      "code",
       "code"
     ],
     "rng": [
@@ -925,12 +919,6 @@
       "code",
       "code"
     ],
-    "securerandom);": [
-      "ol",
-      "li",
-      "pre",
-      "code"
-    ],
     "int": [
       "ol",
       "ol",
@@ -957,13 +945,13 @@
       "pre",
       "code"
     ],
-    "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz\"": [
+    "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz": [
       "ol",
       "li",
       "pre",
       "code"
     ],
-    "char]": [
+    "char": [
       "ol",
       "li",
       "pre",
@@ -975,7 +963,7 @@
       "pre",
       "code"
     ],
-    "charlength];": [
+    "charlength": [
       "ol",
       "li",
       "pre",
@@ -997,19 +985,21 @@
       "pre",
       "code"
     ],
-    "texti]": [
+    "texti": [
       "ol",
       "li",
       "pre",
       "code"
     ],
-    "characterscharat(rng.nextint(characters.length()));": [
+    "characterscharatrngnextintcharacterslength": [
       "ol",
       "li",
       "pre",
       "code"
     ],
     "}": [
+      "ol",
+      "ol",
       "ol",
       "ol",
       "ol",
@@ -1035,14 +1025,11 @@
       "pre",
       "code"
     ],
-    "stringvalueof(text);": [
+    "stringvalueoftext": [
       "ol",
       "li",
       "pre",
       "code"
-    ],
-    "}\n\n\nadd": [
-      "ol"
     ],
     "security": [
       "ol",
@@ -1072,8 +1059,7 @@
       "ol",
       "li",
       "p",
-      "strong",
-      "title"
+      "strong"
     ],
     "any": [
       "ol",
@@ -1091,7 +1077,7 @@
       "li",
       "p"
     ],
-    "ie.": [
+    "ie": [
       "ol",
       "ol",
       "li",
@@ -1112,8 +1098,7 @@
       "p",
       "p",
       "p",
-      "strong",
-      "title"
+      "strong"
     ],
     "side": [
       "ol",
@@ -1142,7 +1127,7 @@
       "li",
       "p"
     ],
-    "change,": [
+    "change": [
       "ol",
       "ol",
       "li",
@@ -1252,32 +1237,10 @@
       "p",
       "p"
     ],
-    "h:form>": [
+    "hform": [
       "ol",
       "li",
       "pre",
-      "code"
-    ],
-    "..": [
-      "ol",
-      "ol",
-      "ol",
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "pre",
-      "pre",
-      "code",
-      "code",
-      "li",
-      "li",
-      "li",
-      "pre",
-      "pre",
-      "pre",
-      "code",
-      "code",
       "code"
     ],
     "input": [
@@ -1286,19 +1249,19 @@
       "pre",
       "code"
     ],
-    "id=\"token\"": [
+    "id=token": [
       "ol",
       "li",
       "pre",
       "code"
     ],
-    "type=\"hidden\"": [
+    "type=hidden": [
       "ol",
       "li",
       "pre",
       "code"
     ],
-    "value=\"${sessionscopecsrftoken}\"": [
+    "value=${sessionscopecsrftoken}": [
       "ol",
       "li",
       "pre",
@@ -1310,8 +1273,17 @@
       "pre",
       "code"
     ],
-    "/h:form>\n\n\n\nverify": [
-      "ol"
+    "/hform": [
+      "ol",
+      "li",
+      "pre",
+      "code"
+    ],
+    "verify": [
+      "ol",
+      "li",
+      "p",
+      "strong"
     ],
     "and": [
       "ol",
@@ -1548,7 +1520,7 @@
       "pre",
       "code"
     ],
-    "requestgetsession();": [
+    "requestgetsession": [
       "ol",
       "li",
       "pre",
@@ -1560,13 +1532,13 @@
       "pre",
       "code"
     ],
-    "string)session.getattribute(\"csrftoken\");": [
+    "stringsessiongetattributecsrftoken": [
       "ol",
       "li",
       "pre",
       "code"
     ],
-    "requestgetparameter(\"token\");": [
+    "requestgetparametertoken": [
       "ol",
       "li",
       "pre",
@@ -1588,7 +1560,7 @@
       "pre",
       "code"
     ],
-    "storedtoken.equals(token))": [
+    "storedtokenequalstoken": [
       "ol",
       "li",
       "pre",
@@ -1674,8 +1646,14 @@
       "pre",
       "code"
     ],
-    "}\n\n\ninvalidate": [
-      "ol"
+    "invalidate": [
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
+      "p",
+      "strong"
     ],
     "sessions": [
       "ol",
@@ -1707,14 +1685,6 @@
       "li",
       "p"
     ],
-    "invalidate": [
-      "ol",
-      "li",
-      "li",
-      "p",
-      "p",
-      "strong"
-    ],
     "will": [
       "ol",
       "li",
@@ -1725,88 +1695,26 @@
       "li",
       "p"
     ],
-    "sessioninvalidate();": [
+    "sessioninvalidate": [
       "ol",
       "li",
       "pre",
       "code"
     ],
-    "javasecurity.securerandom": [
-      "code"
-    ],
-    "/h:form>": [
-      "li",
-      "pre",
-      "code"
-    ],
-    "verify": [
-      "li",
-      "p",
-      "strong"
-    ],
-    "additional": [
+    "guideline": [
       "h2"
     ],
-    "resources": [
-      "h2"
-    ],
-    "more": [
-      "ul",
-      "ul",
-      "li",
-      "li"
-    ],
-    "information": [
-      "ul",
-      "ul",
-      "li",
-      "li"
-    ],
-    "about": [
-      "ul",
-      "ul",
-      "li",
-      "li"
-    ],
-    "see": [
-      "ul",
-      "ul",
-      "li",
-      "li"
-    ],
-    "https//www.owasp.org/index.php/cross": [
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a"
-    ],
-    "site_request_forgery_%28csrf%29\nfor": [
-      "ul"
-    ],
-    "site_request_forgery_%28csrf%29_prevention_cheat_sheet": [
+    "include": [
       "ul",
       "li",
       "a"
-    ],
-    "site_request_forgery_%28csrf%29": [
-      "li",
-      "a"
-    ],
-    "jsp)": [
-      "title"
     ]
   },
   "tags": {},
   "links": [
     {
-      "href": "https://www.owasp.org/index.php/Cross-Site_Request_Forgery_%28CSRF%29",
-      "text": "https://www.owasp.org/index.php/Cross-Site_Request_Forgery_%28CSRF%29"
-    },
-    {
-      "href": "https://www.owasp.org/index.php/Cross-Site_Request_Forgery_%28CSRF%29_Prevention_Cheat_Sheet",
-      "text": "https://www.owasp.org/index.php/Cross-Site_Request_Forgery_%28CSRF%29_Prevention_Cheat_Sheet"
+      "href": "fdb460e6-5d18-4e35-a093-4b260155d79e",
+      "text": "Include Unique Tokens in HTTP Requests"
     }
   ]
 }

@@ -229,6 +229,8 @@
       "h1",
       "p",
       "p",
+      "ol",
+      "li",
       "p",
       "title"
     ],
@@ -243,6 +245,8 @@
       "li",
       "div",
       "h1",
+      "p",
+      "p",
       "h2",
       "h1",
       "h1"
@@ -318,6 +322,7 @@
       "p",
       "p",
       "p",
+      "blockquote",
       "p",
       "p",
       "p",
@@ -383,9 +388,11 @@
       "p",
       "p",
       "p",
+      "p",
       "b",
       "div",
       "pre",
+      "p",
       "p",
       "b",
       "p",
@@ -403,10 +410,15 @@
       "p",
       "b",
       "div",
+      "div",
       "table",
+      "table",
+      "tbody",
       "tbody",
       "tr",
       "th",
+      "tr",
+      "td",
       "b",
       "p",
       "p",
@@ -459,6 +471,7 @@
       "div",
       "pre",
       "h1",
+      "p",
       "p",
       "b",
       "div",
@@ -914,9 +927,12 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "li",
+      "li",
+      "b",
       "p",
       "ol",
       "li",
@@ -2407,6 +2423,7 @@
       "p",
       "p",
       "p",
+      "p",
       "h1",
       "p",
       "p",
@@ -2431,11 +2448,14 @@
       "div",
       "p",
       "p",
+      "p",
       "blockquote",
       "blockquote",
       "p",
       "ol",
       "ol",
+      "ol",
+      "li",
       "li",
       "li",
       "h1",
@@ -2652,7 +2672,7 @@
     "lists": [
       "p"
     ],
-    "acls).": [
+    "acls": [
       "p"
     ],
     "protect": [
@@ -2677,16 +2697,6 @@
       "tbody",
       "tr",
       "td"
-    ],
-    "trust>": [
-      "p",
-      "p",
-      "div",
-      "table",
-      "tbody",
-      "tr",
-      "td",
-      "p"
     ],
     "element": [
       "p",
@@ -2731,6 +2741,8 @@
       "li",
       "p",
       "ol",
+      "ol",
+      "li",
       "li",
       "p"
     ],
@@ -2807,7 +2819,7 @@
     "here": [
       "p"
     ],
-    "level=\"full|high|medium|low|minimal\"": [
+    "level=full|high|medium|low|minimal": [
       "div",
       "pre"
     ],
@@ -3099,7 +3111,7 @@
       "li",
       "p"
     ],
-    "permcalc.exe).": [
+    "permcalcexe": [
       "p"
     ],
     "identity": [
@@ -3122,7 +3134,7 @@
       "p",
       "p"
     ],
-    "read/write,": [
+    "read/write": [
       "p"
     ],
     "performs": [
@@ -3143,13 +3155,17 @@
     "if": [
       "p",
       "p",
+      "blockquote",
       "p",
       "ol",
       "li",
       "p",
       "p",
       "p",
-      "p"
+      "p",
+      "ol",
+      "li",
+      "blockquote"
     ],
     "calls": [
       "p",
@@ -3247,13 +3263,6 @@
       "p",
       "h3"
     ],
-    "\"resource": [
-      "p"
-    ],
-    "summary\"": [
-      "p",
-      "p"
-    ],
     "section": [
       "p",
       "p",
@@ -3271,9 +3280,6 @@
     "them": [
       "p",
       "p",
-      "p"
-    ],
-    "\"privileged": [
       "p"
     ],
     "separate": [
@@ -3338,6 +3344,10 @@
       "h3",
       "ol",
       "ol",
+      "ol",
+      "li",
+      "div",
+      "pre",
       "li",
       "li",
       "p",
@@ -3480,10 +3490,12 @@
       "p",
       "b"
     ],
-    "assemblyname>": [
+    "assemblyname": [
       "ol",
       "li",
-      "p"
+      "p",
+      "b",
+      "i"
     ],
     "sample": [
       "ol",
@@ -3501,7 +3513,7 @@
       "div",
       "pre"
     ],
-    "version=\"10\"": [
+    "version=10": [
       "ol",
       "li",
       "div",
@@ -3513,19 +3525,13 @@
       "div",
       "pre"
     ],
-    "assembly>": [
-      "ol",
-      "li",
-      "div",
-      "pre"
-    ],
     "namespace": [
       "ol",
       "li",
       "div",
       "pre"
     ],
-    "name=\"classlibrary1\"": [
+    "name=classlibrary1": [
       "ol",
       "li",
       "div",
@@ -3538,7 +3544,7 @@
       "pre",
       "p"
     ],
-    "name=\"class1\"": [
+    "name=class1": [
       "ol",
       "li",
       "div",
@@ -3561,7 +3567,7 @@
       "li",
       "blockquote"
     ],
-    "sig=\"instance": [
+    "sig=instance": [
       "ol",
       "ol",
       "li",
@@ -3581,25 +3587,29 @@
       "pre",
       "pre"
     ],
-    "test)\"": [
+    "test": [
       "ol",
       "li",
       "div",
       "pre"
     ],
-    "ctor()\">": [
+    "ctor": [
       "ol",
       "li",
       "div",
       "pre"
     ],
-    "demand>": [
+    "demand": [
       "ol",
       "ol",
       "li",
       "div",
       "pre",
-      "li"
+      "li",
+      "b",
+      "ol",
+      "li",
+      "blockquote"
     ],
     "permissionset": [
       "ol",
@@ -3615,7 +3625,7 @@
       "div",
       "pre"
     ],
-    "version=\"1\"": [
+    "version=1": [
       "ol",
       "ol",
       "ol",
@@ -3649,7 +3659,7 @@
       "pre",
       "pre"
     ],
-    "class=\"systemsecurity.permissionset\">": [
+    "class=systemsecuritypermissionset": [
       "ol",
       "ol",
       "li",
@@ -3685,13 +3695,13 @@
       "div",
       "pre"
     ],
-    "version=\"1\"class=\"systemsecurity.permissions.registrypermission,": [
+    "version=1class=systemsecuritypermissionsregistrypermission": [
       "ol",
       "li",
       "div",
       "pre"
     ],
-    "mscorlibversion=3.5.0.0,": [
+    "mscorlibversion=3500": [
       "ol",
       "ol",
       "ol",
@@ -3743,7 +3753,7 @@
       "div",
       "pre"
     ],
-    "publickeytoken=b77a5c561934e089\"read=\"true\"": [
+    "publickeytoken=b77a5c561934e089read=true": [
       "ol",
       "ol",
       "li",
@@ -3753,7 +3763,7 @@
       "pre",
       "pre"
     ],
-    "class=\"systemsecurity.permissions.fileiopermission,": [
+    "class=systemsecuritypermissionsfileiopermission": [
       "ol",
       "ol",
       "li",
@@ -3763,7 +3773,7 @@
       "pre",
       "pre"
     ],
-    "publickeytoken=b77a5c561934e089\"unrestricted=\"true\"": [
+    "publickeytoken=b77a5c561934e089unrestricted=true": [
       "ol",
       "ol",
       "ol",
@@ -3777,7 +3787,7 @@
       "div",
       "pre"
     ],
-    "/permissionset>": [
+    "/permissionset": [
       "ol",
       "ol",
       "li",
@@ -3791,19 +3801,19 @@
       "div",
       "pre"
     ],
-    "/demand>": [
+    "/demand": [
       "ol",
       "li",
       "div",
       "pre"
     ],
-    "sandbox>": [
+    "sandbox": [
       "ol",
       "li",
       "div",
       "pre"
     ],
-    "class=\"systemsecurity.permissions.registrypermission,": [
+    "class=systemsecuritypermissionsregistrypermission": [
       "ol",
       "ol",
       "li",
@@ -3813,25 +3823,25 @@
       "div",
       "pre"
     ],
-    "/sandbox>": [
+    "/sandbox": [
       "ol",
       "li",
       "div",
       "pre"
     ],
-    "/method>": [
+    "/method": [
       "ol",
       "li",
       "div",
       "pre"
     ],
-    "/type>": [
+    "/type": [
       "ol",
       "li",
       "div",
       "pre"
     ],
-    "/namespace></assembly>": [
+    "/namespace/assembly": [
       "ol",
       "li",
       "div",
@@ -3895,31 +3905,31 @@
       "div",
       "pre"
     ],
-    "version=35.0.0,": [
+    "version=3500": [
       "ol",
       "li",
       "div",
       "pre"
     ],
-    "publickeytoken=b77a5c561934e089\"": [
+    "publickeytoken=b77a5c561934e089": [
       "ol",
       "li",
       "div",
       "pre"
     ],
-    "read=\"true\"": [
+    "read=true": [
       "ol",
       "li",
       "div",
       "pre"
     ],
-    "/<ipermission": [
+    "/ipermission": [
       "ol",
       "li",
       "div",
       "pre"
     ],
-    "version=\"1\"class=\"systemsecurity.permissions.fileiopermission,": [
+    "version=1class=systemsecuritypermissionsfileiopermission": [
       "ol",
       "li",
       "div",
@@ -3950,26 +3960,20 @@
       "li",
       "p"
     ],
-    "assembly1><assembly2><assembly3>": [
+    "assembly1assembly2assembly3": [
       "ol",
       "li",
       "p"
     ],
-    "assemblyname": [
-      "b",
-      "i"
-    ],
-    "demand": [
-      "b",
-      "ol",
-      "li",
-      "blockquote"
-    ],
-    "note   if": [
+    "note": [
       "blockquote",
+      "b",
+      "blockquote",
+      "b",
       "ol",
       "li",
-      "blockquote"
+      "blockquote",
+      "b"
     ],
     "any": [
       "blockquote",
@@ -4016,11 +4020,6 @@
       "ol",
       "li",
       "blockquote"
-    ],
-    "note": [
-      "b",
-      "b",
-      "b"
     ],
     "try": [
       "p"
@@ -4766,7 +4765,7 @@
       "ol",
       "li"
     ],
-    "web_hightrustconfig.": [
+    "web_hightrustconfig": [
       "ol",
       "li"
     ],
@@ -4885,42 +4884,38 @@
       "ol",
       "li"
     ],
-    "%windir%\\microsoftnet\\framework\\{version}\\config\\.": [
-      "p"
+    "%windir%\\microsoftnet\\framework\\{version}\\config\\": [
+      "p",
+      "ol",
+      "ol",
+      "li",
+      "li"
     ],
     "root": [
       "p",
       "p"
     ],
-    "..<system.web>": [
-      "div",
-      "pre"
-    ],
-    "..": [
+    "systemweb": [
       "div",
       "pre",
       "ol",
+      "li",
+      "div",
+      "pre",
       "ol",
       "li",
-      "li",
-      "div",
-      "div",
-      "pre",
-      "pre",
-      "div",
-      "div",
-      "div",
-      "pre",
-      "pre",
-      "pre"
-    ],
-    "level=\"medium\"": [
       "div",
       "pre",
       "div",
       "pre"
     ],
-    "originurl=\"\"": [
+    "level=medium": [
+      "div",
+      "pre",
+      "div",
+      "pre"
+    ],
+    "originurl=": [
       "div",
       "pre",
       "ol",
@@ -4932,7 +4927,11 @@
       "div",
       "pre"
     ],
-    "..</system.web>...": [
+    "/systemweb": [
+      "div",
+      "pre",
+      "ol",
+      "li",
       "div",
       "pre"
     ],
@@ -4971,9 +4970,6 @@
     "files": [
       "ol",
       "li"
-    ],
-    "note   you": [
-      "blockquote"
     ],
     "unlikely": [
       "blockquote"
@@ -5061,14 +5057,8 @@
       "tr",
       "td"
     ],
-    "web_mediumtrustconfig,": [
+    "web_mediumtrustconfig": [
       "ol",
-      "li"
-    ],
-    "%windir%\\microsoftnet\\framework\\{version}\\config\\": [
-      "ol",
-      "ol",
-      "li",
       "li"
     ],
     "named": [
@@ -5097,58 +5087,58 @@
       "ol",
       "li"
     ],
-    "securityclass>": [
-      "ol",
-      "li"
-    ],
     "securityclass": [
       "ol",
+      "ol",
+      "li",
       "li",
       "b",
       "div",
       "pre"
     ],
-    "name=\"registrypermission\" description=\"systemsecurity.permissions.registrypermission,": [
+    "name=registrypermission": [
       "ol",
       "li",
       "div",
       "pre"
     ],
-    "version=20.0.0,": [
+    "description=systemsecuritypermissionsregistrypermission": [
       "ol",
       "li",
       "div",
       "pre"
     ],
-    "publickeytoken=b77a5c561934e089\"/": [
+    "version=2000": [
       "ol",
       "li",
       "div",
       "pre"
     ],
-    "\"aspnet\"": [
-      "ol",
-      "li"
-    ],
-    "class=\"namedpermissionset\"": [
+    "publickeytoken=b77a5c561934e089/": [
       "ol",
       "li",
       "div",
       "pre"
     ],
-    "name=\"aspnet\">": [
+    "class=namedpermissionset": [
       "ol",
       "li",
       "div",
       "pre"
     ],
-    "class=\"registrypermission\"": [
+    "name=aspnet": [
       "ol",
       "li",
       "div",
       "pre"
     ],
-    "unrestricted=\"true\"": [
+    "class=registrypermission": [
+      "ol",
+      "li",
+      "div",
+      "pre"
+    ],
+    "unrestricted=true": [
       "ol",
       "li",
       "div",
@@ -5172,68 +5162,6 @@
       "li",
       "li"
     ],
-    "trustlevel>": [
-      "ol",
-      "li"
-    ],
-    "securitypolicy>section": [
-      "ol",
-      "li"
-    ],
-    "called": [
-      "ol",
-      "li",
-      "ol",
-      "li"
-    ],
-    "\"custom\"": [
-      "ol",
-      "li",
-      "b"
-    ],
-    "associate": [
-      "ol",
-      "li"
-    ],
-    "location": [
-      "ol",
-      "li",
-      "div",
-      "pre",
-      "b"
-    ],
-    "allowoverride=\"true\"": [
-      "ol",
-      "li",
-      "div",
-      "pre",
-      "ol",
-      "li",
-      "div",
-      "pre"
-    ],
-    "system.web>": [
-      "ol",
-      "li",
-      "div",
-      "pre",
-      "ol",
-      "li",
-      "div",
-      "pre",
-      "div",
-      "pre"
-    ],
-    "securitypolicy>": [
-      "ol",
-      "li",
-      "div",
-      "pre",
-      "ol",
-      "li",
-      "div",
-      "pre"
-    ],
     "trustlevel": [
       "ol",
       "ol",
@@ -5241,6 +5169,8 @@
       "ol",
       "ol",
       "ol",
+      "ol",
+      "li",
       "li",
       "li",
       "li",
@@ -5265,67 +5195,21 @@
       "div",
       "pre"
     ],
-    "name=\"full\"": [
+    "securitypolicysection": [
+      "ol",
+      "li"
+    ],
+    "called": [
       "ol",
       "li",
-      "div",
-      "pre"
-    ],
-    "policyfile=\"internal\"": [
       "ol",
-      "li",
-      "div",
-      "pre"
+      "li"
     ],
-    "name=\"high\"": [
+    "associate": [
       "ol",
-      "li",
-      "div",
-      "pre"
+      "li"
     ],
-    "policyfile=\"web_hightrustconfig\"": [
-      "ol",
-      "li",
-      "div",
-      "pre"
-    ],
-    "name=\"medium\"": [
-      "ol",
-      "li",
-      "div",
-      "pre"
-    ],
-    "policyfile=\"web_mediumtrustconfig\"": [
-      "ol",
-      "li",
-      "div",
-      "pre"
-    ],
-    "name=\"low\"": [
-      "ol",
-      "li",
-      "div",
-      "pre"
-    ],
-    "policyfile=\"web_lowtrustconfig\"": [
-      "ol",
-      "li",
-      "div",
-      "pre"
-    ],
-    "name=\"minimal\"": [
-      "ol",
-      "li",
-      "div",
-      "pre"
-    ],
-    "policyfile=\"web_minimaltrustconfig\"": [
-      "ol",
-      "li",
-      "div",
-      "pre"
-    ],
-    "name=\"custom\"": [
+    "location": [
       "ol",
       "li",
       "div",
@@ -5333,48 +5217,134 @@
       "ol",
       "li",
       "div",
+      "pre",
+      "p",
+      "b",
+      "div",
       "pre"
     ],
-    "policyfile=\"web_customtrustconfig\"": [
+    "allowoverride=true": [
       "ol",
       "li",
       "div",
       "pre",
-      "ol",
-      "li",
-      "div",
-      "pre"
-    ],
-    "/securitypolicy>": [
-      "ol",
-      "li",
-      "div",
-      "pre",
-      "ol",
-      "li",
-      "div",
-      "pre"
-    ],
-    "level=\"full\"": [
-      "ol",
-      "li",
-      "div",
-      "pre"
-    ],
-    "/system.web>": [
-      "ol",
-      "li",
-      "div",
-      "pre"
-    ],
-    "/location>": [
       "ol",
       "li",
       "div",
       "pre"
     ],
     "securitypolicy": [
-      "b"
+      "ol",
+      "li",
+      "b",
+      "div",
+      "pre",
+      "ol",
+      "li",
+      "div",
+      "pre"
+    ],
+    "name=full": [
+      "ol",
+      "li",
+      "div",
+      "pre"
+    ],
+    "policyfile=internal": [
+      "ol",
+      "li",
+      "div",
+      "pre"
+    ],
+    "name=high": [
+      "ol",
+      "li",
+      "div",
+      "pre"
+    ],
+    "policyfile=web_hightrustconfig": [
+      "ol",
+      "li",
+      "div",
+      "pre"
+    ],
+    "name=medium": [
+      "ol",
+      "li",
+      "div",
+      "pre"
+    ],
+    "policyfile=web_mediumtrustconfig": [
+      "ol",
+      "li",
+      "div",
+      "pre"
+    ],
+    "name=low": [
+      "ol",
+      "li",
+      "div",
+      "pre"
+    ],
+    "policyfile=web_lowtrustconfig": [
+      "ol",
+      "li",
+      "div",
+      "pre"
+    ],
+    "name=minimal": [
+      "ol",
+      "li",
+      "div",
+      "pre"
+    ],
+    "policyfile=web_minimaltrustconfig": [
+      "ol",
+      "li",
+      "div",
+      "pre"
+    ],
+    "name=custom": [
+      "ol",
+      "li",
+      "div",
+      "pre",
+      "ol",
+      "li",
+      "div",
+      "pre"
+    ],
+    "policyfile=web_customtrustconfig": [
+      "ol",
+      "li",
+      "div",
+      "pre",
+      "ol",
+      "li",
+      "div",
+      "pre"
+    ],
+    "/securitypolicy": [
+      "ol",
+      "li",
+      "div",
+      "pre",
+      "ol",
+      "li",
+      "div",
+      "pre"
+    ],
+    "level=full": [
+      "ol",
+      "li",
+      "div",
+      "pre"
+    ],
+    "/location": [
+      "ol",
+      "li",
+      "div",
+      "pre"
     ],
     "preceding": [
       "p"
@@ -5406,27 +5376,17 @@
       "ol",
       "li"
     ],
-    "webconfig,": [
+    "level=custom": [
       "ol",
-      "li"
+      "li",
+      "div",
+      "pre"
     ],
-    "..<location": [
+    "/systemweb/location": [
       "ol",
       "li",
       "div",
       "pre",
-      "div",
-      "pre"
-    ],
-    "level=\"custom\"": [
-      "ol",
-      "li",
-      "div",
-      "pre"
-    ],
-    "/system.web></location> ...": [
-      "ol",
-      "li",
       "div",
       "pre"
     ],
@@ -5470,9 +5430,6 @@
     "enclose": [
       "p"
     ],
-    "location>": [
-      "p"
-    ],
     "tag": [
       "p"
     ],
@@ -5484,15 +5441,11 @@
       "p",
       "b"
     ],
-    "allowoverride=\"false\"": [
+    "allowoverride=false": [
       "div",
       "pre"
     ],
-    "originurl=\"\"/": [
-      "div",
-      "pre"
-    ],
-    "/system.web>...</location>": [
+    "originurl=/": [
       "div",
       "pre"
     ],
@@ -5603,10 +5556,6 @@
       "ol",
       "li",
       "b"
-    ],
-    "resource,": [
-      "ol",
-      "li"
     ],
     "then": [
       "ol",

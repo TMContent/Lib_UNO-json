@@ -28,7 +28,7 @@
           "Android"
         ],
         "Type": [
-          "Guideline"
+          "How To"
         ],
         "DirectLink": [
           "Canonicalize File Names and Paths"
@@ -51,7 +51,7 @@
           "DataType": "WikiText"
         },
         "Data": [
-          "==Applies To==\r\n\r\n* Android applications that access files based on input.\r\n\r\n==What to Do==\r\n\r\nCanonizalize and validate all file paths that include input data.\r\n\r\n==Why==\r\n\r\nCanonicalizing file paths before validating them helps prevent unauthorized access. If a file path is not canonicalized, an attacker may use special characters to access resources outside of what is allowed by the application.\r\n\r\n==How==\r\n\r\nTo canonicalize file names and paths:\r\n\r\n# **Identify all input used for file access.** Enumerate all file access performed by the application. Examine code responsible for accessing each file. Take note of any input used to form path or file names for file access.\r\n# **Canonicalize all input data used for file access.** Use the //getCanonicalPath// method to get the canonical path to a file.\r\n# **Validate file paths.** Verify that the user or application is authorized to access the specified resource.\r\n\r\n==Data Validation Guidelines==\r\n\r\n* [[00000000-0000-0000-0000-0000008d3cec|Canonicalize File Names and Paths]]\r\n* [[00000000-0000-0000-0000-0000008149ca|Validate All Input]]\r\n* [[00000000-0000-0000-0000-0000006c7089|Validate and Encode Data Inserted into XML Documents]]\r\n* [[00000000-0000-0000-0000-0000007635ae|Validate File Formats]]\r\n\r\n==Data Validation Checklists==\r\n\r\n* [[00000000-0000-0000-0000-0000009763b8|File Names and Paths Are Canonicalized]]\r\n* [[00000000-0000-0000-0000-0000004f2fec|All Input Is Validated]]\r\n* [[00000000-0000-0000-0000-00000071b4f0|Data Inserted into XML Documents Is Validated and Encoded]]\r\n* [[00000000-0000-0000-0000-00000080c790|File Formats Are Validated]]\r\n\r\n==Additional Resources==\r\n\r\n* For more information about the //getCanonicalPath// method, see http://developer.android.com/reference/java/io/File.html#getCanonicalPath()"
+          "==Applies To==\n\n* Android applications that access files based on input.\n\n==What to Do==\n\nCanonizalize and validate all file paths that include input data.\n\n==Why==\n\nCanonicalizing file paths before validating them helps prevent unauthorized access. If a file path is not canonicalized, an attacker may use special characters to access resources outside of what is allowed by the application.\n\n==How==\n\nTo canonicalize file names and paths:\n\n# **Identify all input used for file access.** Enumerate all file access performed by the application. Examine code responsible for accessing each file. Take note of any input used to form path or file names for file access.\n# **Canonicalize all input data used for file access.** Use the //getCanonicalPath// method to get the canonical path to a file.\n# **Validate file paths.** Verify that the user or application is authorized to access the specified resource.\n"
         ]
       }
     ]

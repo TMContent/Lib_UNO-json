@@ -1,7 +1,0 @@
-<h2>What to Do</h2><p>Check access control permissions whenever performing direct object references.
-</p><h2>Why</h2><p>Using direct object references may expose sensitive data to attackers. Direct object references often expose sensitive data, such as files, database entries, or personal information. Direct object reference attacks are very simple to execute and have been used in high profile, low-skill attacks. Checking access control permissions whenever referencing objects helps prevent direct object reference vulnerabilities.
-</p><h2>How</h2><p>To check access control permissions whenever performing direct object references:
-</p><ol>
-<li> <strong>Identify pages that use direct object references.</strong> Make a list of all pages in the application. Go through the list and identify all pages that use indirect object references by examining each page.</li>
-<li> <strong>Identify code that references objects.</strong> For each page that uses indirect object references, identify the code that references objects.</li>
-<li> <strong>Check access controls.</strong> Add code that performs access control checks to code that performs object references.</li></ol>

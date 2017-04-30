@@ -1,13 +1,24 @@
 {
   "id": "fd83e67c-62b8-4cc3-a365-4491dd4a2ef6",
-  "checksum": "af8e7628c5dd54aad63e41ca6b326c9d",
+  "checksum": "8d4f117db4dd903e09ffdc45c6a17e9f",
   "words": {
+    "8": [
+      "ol",
+      "li",
+      "pre",
+      "code"
+    ],
+    "20": [
+      "ol",
+      "li",
+      "pre",
+      "code"
+    ],
     "applies": [
-      "h1"
+      "h2"
     ],
     "to": [
-      "h1",
-      "h1",
+      "h2",
       "p",
       "p",
       "ol",
@@ -67,13 +78,11 @@
     ],
     "php": [
       "ul",
-      "li"
+      "li",
+      "title"
     ],
-    "what": [
-      "h1"
-    ],
-    "do": [
-      "h1"
+    "summary": [
+      "h2"
     ],
     "enforce": [
       "p",
@@ -186,9 +195,6 @@
       "p",
       "strong",
       "title"
-    ],
-    "why": [
-      "h1"
     ],
     "requiring": [
       "p"
@@ -343,8 +349,26 @@
     "attacks": [
       "p"
     ],
-    "how": [
-      "h1"
+    "solution": [
+      "h2"
+    ],
+    "example": [
+      "h2",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "p",
+      "li",
+      "p",
+      "li",
+      "p",
+      "li",
+      "p",
+      "li",
+      "p"
     ],
     "identify": [
       "ol",
@@ -624,7 +648,8 @@
       "li",
       "pre",
       "pre",
-      "p"
+      "code",
+      "code"
     ],
     "responsible": [
       "ol",
@@ -652,7 +677,7 @@
       "p",
       "strong"
     ],
-    "optional)": [
+    "optional": [
       "ol",
       "ol",
       "li",
@@ -1004,33 +1029,67 @@
       "li",
       "p"
     ],
-    "example": [
-      "ol",
-      "ol",
-      "ol",
+    "ifstrlen$password": [
       "ol",
       "ol",
       "li",
-      "p",
-      "li",
-      "p",
-      "li",
-      "p",
-      "li",
-      "p",
-      "li",
-      "p"
-    ],
-    "ifstrlen($password)": [
-      "ol",
       "li",
       "pre",
-      "p"
+      "pre",
+      "code",
+      "code"
     ],
-    "8{ //password": [
+    "{": [
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
       "ol",
       "li",
-      "pre"
+      "li",
+      "pre",
+      "pre",
+      "code",
+      "code",
+      "li",
+      "pre",
+      "code",
+      "li",
+      "pre",
+      "code",
+      "li",
+      "pre",
+      "code",
+      "li",
+      "pre",
+      "code"
+    ],
+    "//password": [
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "pre",
+      "pre",
+      "code",
+      "code",
+      "li",
+      "pre",
+      "code",
+      "li",
+      "pre",
+      "code",
+      "li",
+      "pre",
+      "code",
+      "li",
+      "pre",
+      "code"
     ],
     "too": [
       "ol",
@@ -1039,56 +1098,89 @@
       "li",
       "pre",
       "pre",
-      "p"
+      "code",
+      "code"
     ],
-    "short}ifstrlen($password)": [
-      "ol",
-      "li",
-      "pre"
-    ],
-    "20{ //password": [
+    "short": [
       "ol",
       "li",
       "pre",
-      "p"
+      "code"
     ],
-    "long}": [
+    "}": [
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "pre",
+      "pre",
+      "code",
+      "code",
+      "li",
+      "pre",
+      "code",
+      "li",
+      "pre",
+      "code",
+      "li",
+      "pre",
+      "code",
+      "li",
+      "pre",
+      "code"
+    ],
+    "long": [
       "ol",
       "li",
       "pre",
-      "p"
+      "code"
     ],
     "numbers": [
       "ol",
       "ol",
+      "ol",
+      "li",
       "li",
       "li",
       "p",
       "p",
-      "strong"
+      "strong",
+      "pre",
+      "code"
     ],
-    "if!preg_match(\"#[0": [
+    "if!preg_match#0": [
       "ol",
       "li",
-      "pre"
+      "pre",
+      "code"
     ],
-    "9]+#\",": [
+    "9+#": [
       "ol",
       "li",
-      "pre"
+      "pre",
+      "code"
     ],
-    "$password){ //password": [
+    "$password": [
+      "ol",
       "ol",
       "ol",
       "ol",
       "li",
       "pre",
+      "code",
       "li",
-      "p",
       "pre",
+      "code",
       "li",
-      "p",
-      "pre"
+      "pre",
+      "code",
+      "li",
+      "pre",
+      "code"
     ],
     "does": [
       "ol",
@@ -1097,15 +1189,16 @@
       "ol",
       "li",
       "pre",
+      "code",
       "li",
-      "p",
       "pre",
+      "code",
       "li",
-      "p",
       "pre",
+      "code",
       "li",
-      "p",
-      "pre"
+      "pre",
+      "code"
     ],
     "not": [
       "ol",
@@ -1114,15 +1207,16 @@
       "ol",
       "li",
       "pre",
+      "code",
       "li",
-      "p",
       "pre",
+      "code",
       "li",
-      "p",
       "pre",
+      "code",
       "li",
-      "p",
-      "pre"
+      "pre",
+      "code"
     ],
     "contain": [
       "ol",
@@ -1131,20 +1225,16 @@
       "ol",
       "li",
       "pre",
+      "code",
       "li",
-      "p",
       "pre",
+      "code",
       "li",
-      "p",
       "pre",
+      "code",
       "li",
-      "p",
-      "pre"
-    ],
-    "numbers}": [
-      "ol",
-      "li",
-      "pre"
+      "pre",
+      "code"
     ],
     "lower": [
       "ol",
@@ -1156,8 +1246,8 @@
       "p",
       "p",
       "strong",
-      "p",
-      "pre"
+      "pre",
+      "code"
     ],
     "case": [
       "ol",
@@ -1169,54 +1259,52 @@
       "p",
       "p",
       "strong",
-      "p",
-      "pre"
+      "pre",
+      "code"
     ],
     "letters": [
       "ol",
       "ol",
       "ol",
       "ol",
+      "ol",
+      "ol",
+      "li",
       "li",
       "li",
       "p",
       "p",
       "strong",
-      "li",
-      "li",
-      "p",
-      "p",
-      "strong"
-    ],
-    "if!preg_match(\"#[a": [
-      "ol",
-      "ol",
-      "li",
-      "p",
       "pre",
+      "code",
+      "li",
+      "li",
       "li",
       "p",
-      "pre"
-    ],
-    "z]+#\",": [
-      "ol",
-      "ol",
-      "li",
       "p",
+      "strong",
       "pre",
-      "li",
-      "p",
-      "pre"
+      "code"
     ],
-    "letters}": [
+    "if!preg_match#a": [
       "ol",
       "ol",
       "li",
-      "p",
       "pre",
+      "code",
       "li",
-      "p",
-      "pre"
+      "pre",
+      "code"
+    ],
+    "z+#": [
+      "ol",
+      "ol",
+      "li",
+      "pre",
+      "code",
+      "li",
+      "pre",
+      "code"
     ],
     "capital": [
       "ol",
@@ -1228,46 +1316,32 @@
       "p",
       "p",
       "strong",
-      "p",
-      "pre"
-    ],
-    "$password)": [
-      "ol",
-      "li",
-      "p",
-      "pre"
-    ],
-    "{ //password": [
-      "ol",
-      "li",
-      "p",
-      "pre"
+      "pre",
+      "code"
     ],
     "symbols": [
       "ol",
       "ol",
+      "ol",
+      "li",
       "li",
       "li",
       "p",
       "p",
-      "strong"
+      "strong",
+      "pre",
+      "code"
     ],
     "requires": [
       "ol",
       "li",
       "p"
     ],
-    "if!preg_match(\"#\\w+#\",": [
+    "if!preg_match#\\w+#": [
       "ol",
       "li",
-      "p",
-      "pre"
-    ],
-    "symbols}": [
-      "ol",
-      "li",
-      "p",
-      "pre"
+      "pre",
+      "code"
     ]
   },
   "tags": {},

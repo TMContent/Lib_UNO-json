@@ -28,7 +28,7 @@
           ".NET"
         ],
         "Type": [
-          "Guideline"
+          "How To"
         ],
         "DirectLink": [
           "Configure SSL to Use Strong Cipher Suites"
@@ -54,7 +54,7 @@
           "DataType": "wikitext"
         },
         "Data": [
-          "==What to Do==\r\n\r\nUse the IISCrypto tool to configure the TLS cypher suites used by IIS. \r\n\r\n==Why==\r\n\r\nChoose strong TLS suites to avoid known vulnerabilities in TLS. Weak crypto suites are subject to crypto attacks which will decipher and compromise confidential data. \r\n\r\n==How==\r\n\r\nUse the free //IISCrypto// tool to choose strong TLS cypher suites:\r\n\r\n# **Download //IISCrypto//.** //IISCrypto// may be downloaded at the link at the bottom of this article. \r\n# **Run //IISCrypto//.** //IISCrypto// is easy to deploy and has a very simple interface. Download and run //IISCrypto//.\r\n# **Chooose your desired compliance standard(s).** //IISCrypto// comes with presets based on common information security standards. Choose the ones that are the most applicable to your situation. In a couple of clicks, your IIS TLS cypher suites should be configured in compliance with the selected standards.\r\n\r\n==Additional Resources==\r\n\r\n* To download //IISCrypto//, see https://www.nartac.com/Products/IISCrypto/Default.aspx\r\n"
+          "==What to Do==\n\nUse the IISCrypto tool to configure the TLS cypher suites used by IIS. \n\n==Why==\n\nChoose strong TLS suites to avoid known vulnerabilities in TLS. Weak crypto suites are subject to crypto attacks which will decipher and compromise confidential data. \n\n==How==\n\nUse the free //IISCrypto// tool to choose strong TLS cypher suites:\n\n# **Download //IISCrypto//.** //IISCrypto// may be downloaded at the link at the bottom of this article. \n# **Run //IISCrypto//.** //IISCrypto// is easy to deploy and has a very simple interface. Download and run //IISCrypto//.\n# **Chooose your desired compliance standard(s).** //IISCrypto// comes with presets based on common information security standards. Choose the ones that are the most applicable to your situation. In a couple of clicks, your IIS TLS cypher suites should be configured in compliance with the selected standards.\n\n==Additional Resources==\n\n* To download //IISCrypto//, see https://www.nartac.com/Products/IISCrypto/Default.aspx\n"
         ]
       }
     ]

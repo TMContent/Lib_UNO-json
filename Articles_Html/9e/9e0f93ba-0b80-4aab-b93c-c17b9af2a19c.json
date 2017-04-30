@@ -1,6 +1,6 @@
 {
   "id": "9e0f93ba-0b80-4aab-b93c-c17b9af2a19c",
-  "checksum": "3a78fbe69a21266ca610cbfe2eaf08d2",
+  "checksum": "fca6600d65de2cd5888c81d0f41f614c",
   "words": {
     "applies": [
       "h2"
@@ -127,6 +127,7 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "li",
@@ -136,7 +137,9 @@
       "li",
       "li",
       "li",
+      "li",
       "strong",
+      "tt",
       "tt",
       "tt",
       "tt",
@@ -155,11 +158,17 @@
       "ol",
       "ol",
       "ol",
+      "ol",
+      "ol",
       "li",
       "li",
       "li",
       "strong",
-      "li"
+      "li",
+      "li",
+      "li",
+      "tt",
+      "tt"
     ],
     "inject": [
       "p",
@@ -415,7 +424,7 @@
     "overlay": [
       "p"
     ],
-    "hide)": [
+    "hide": [
       "p"
     ],
     "clickable": [
@@ -572,8 +581,11 @@
     "name": [
       "ol",
       "ol",
+      "ol",
       "li",
-      "li"
+      "li",
+      "li",
+      "tt"
     ],
     "arbitrary": [
       "ol",
@@ -591,7 +603,7 @@
       "ol",
       "li"
     ],
-    "javaxservlet.filter": [
+    "javaxservletfilter": [
       "ol",
       "li",
       "em"
@@ -670,7 +682,10 @@
     ],
     "httpservletresponse": [
       "ol",
+      "ol",
       "li",
+      "li",
+      "tt",
       "tt"
     ],
     "=": [
@@ -678,32 +693,25 @@
       "li",
       "tt"
     ],
-    "httpservletresponse)": [
-      "ol",
-      "li",
-      "tt"
-    ],
     "resp": [
       "ol",
+      "ol",
       "li",
+      "li",
+      "tt",
       "tt"
     ],
-    "responseaddheader(“x": [
+    "responseaddheader“x": [
       "ol",
       "li",
       "tt"
     ],
-    "options”,”deny”);": [
+    "options””deny”": [
       "ol",
       "li",
       "tt"
     ],
-    "chaindofilter(req,": [
-      "ol",
-      "li",
-      "tt"
-    ],
-    "resp;": [
+    "chaindofilterreq": [
       "ol",
       "li",
       "tt"
@@ -766,30 +774,12 @@
       "li",
       "em"
     ],
-    "filter>": [
+    "namexframeoptionfilter/filter": [
       "ol",
       "li",
       "tt"
     ],
-    "name>xframeoptionfilter</filter": [
-      "ol",
-      "li",
-      "tt"
-    ],
-    "name>": [
-      "ol",
-      "li",
-      "tt"
-    ],
-    "class>": [
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "tt",
-      "tt"
-    ],
-    "comexample.servlet.filters.xframeoptionfilter": [
+    "comexampleservletfiltersxframeoptionfilter": [
       "ol",
       "li",
       "tt"
@@ -797,17 +787,15 @@
     "/filter": [
       "ol",
       "ol",
+      "ol",
+      "li",
       "li",
       "li",
       "tt",
+      "tt",
       "tt"
     ],
-    "/filter>": [
-      "ol",
-      "li",
-      "tt"
-    ],
-    "mapping>": [
+    "mapping": [
       "ol",
       "ol",
       "li",
@@ -820,12 +808,12 @@
       "li",
       "tt"
     ],
-    "pattern>/*</url": [
+    "pattern/*/url": [
       "ol",
       "li",
       "tt"
     ],
-    "pattern>": [
+    "pattern": [
       "ol",
       "li",
       "tt"

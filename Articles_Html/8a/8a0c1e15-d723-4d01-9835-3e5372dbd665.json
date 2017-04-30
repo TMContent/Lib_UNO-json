@@ -1,6 +1,6 @@
 {
   "id": "8a0c1e15-d723-4d01-9835-3e5372dbd665",
-  "checksum": "bae5328a8dd97f45946a60b061251c2e",
+  "checksum": "a3f822d0585c6b41bb8289d34545d858",
   "words": {
     "3": [
       "ol",
@@ -94,6 +94,8 @@
     "do": [
       "h2",
       "p",
+      "ol",
+      "ol",
       "li",
       "p",
       "strong",
@@ -110,6 +112,8 @@
       "ol",
       "ol",
       "ol",
+      "ol",
+      "ol",
       "li",
       "p",
       "li",
@@ -122,6 +126,9 @@
       "p",
       "p",
       "strong",
+      "ul",
+      "li",
+      "a",
       "title"
     ],
     "data": [
@@ -215,6 +222,9 @@
       "p",
       "p",
       "strong",
+      "ul",
+      "li",
+      "a",
       "title"
     ],
     "that": [
@@ -444,7 +454,11 @@
       "strong",
       "li",
       "p",
-      "strong"
+      "strong",
+      "ul",
+      "li",
+      "a",
+      "title"
     ],
     "output": [
       "p",
@@ -468,7 +482,11 @@
       "li",
       "p",
       "li",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a",
+      "title"
     ],
     "pages": [
       "p",
@@ -734,6 +752,7 @@
       "p",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "p",
@@ -853,7 +872,11 @@
     ],
     "script": [
       "p",
-      "p"
+      "p",
+      "ol",
+      "li",
+      "pre",
+      "code"
     ],
     "code": [
       "p",
@@ -970,6 +993,7 @@
     "markup": [
       "p",
       "p",
+      "ol",
       "li",
       "p"
     ],
@@ -1019,8 +1043,7 @@
       "li",
       "p",
       "p",
-      "strong",
-      "title"
+      "strong"
     ],
     "your": [
       "p",
@@ -1051,7 +1074,9 @@
     "scripting": [
       "p"
     ],
-    "xss)": [
+    "xss": [
+      "p",
+      "p",
       "p"
     ],
     "attacks": [
@@ -1133,10 +1158,6 @@
     "vulnerability": [
       "p"
     ],
-    "xss": [
-      "p",
-      "p"
-    ],
     "on": [
       "p",
       "p"
@@ -1149,6 +1170,7 @@
     ],
     "list": [
       "p",
+      "ol",
       "ol",
       "li",
       "p",
@@ -1194,7 +1216,7 @@
     "enumeration": [
       "p"
     ],
-    "cwe)": [
+    "cwe": [
       "p"
     ],
     "project": [
@@ -1242,7 +1264,15 @@
     "rails": [
       "p"
     ],
-    "ror)": [
+    "ror": [
+      "p",
+      "ol",
+      "ol",
+      "li",
+      "p",
+      "li",
+      "p",
+      "p",
       "p"
     ],
     "handles": [
@@ -1302,7 +1332,11 @@
       "li",
       "p",
       "p",
-      "strong"
+      "strong",
+      "ul",
+      "li",
+      "a",
+      "title"
     ],
     "such": [
       "p",
@@ -1547,6 +1581,8 @@
     "identify": [
       "ol",
       "ol",
+      "ol",
+      "ol",
       "li",
       "p",
       "strong",
@@ -1591,8 +1627,10 @@
       "li",
       "p"
     ],
-    "sources\n\n\nidentify": [
-      "ol"
+    "sources": [
+      "ol",
+      "li",
+      "p"
     ],
     "functions": [
       "ol",
@@ -1663,9 +1701,6 @@
       "li",
       "p"
     ],
-    "markup\n\n\nidentify": [
-      "ol"
-    ],
     "may": [
       "ol",
       "ol",
@@ -1725,8 +1760,11 @@
       "li",
       "p"
     ],
-    "list\n\n\nleverage": [
-      "ol"
+    "leverage": [
+      "ol",
+      "li",
+      "p",
+      "strong"
     ],
     "built": [
       "ol",
@@ -1742,16 +1780,6 @@
     "versions": [
       "ol",
       "li",
-      "p"
-    ],
-    "ror": [
-      "ol",
-      "ol",
-      "li",
-      "p",
-      "li",
-      "p",
-      "p",
       "p"
     ],
     "string": [
@@ -1821,9 +1849,6 @@
       "ol",
       "li",
       "p"
-    ],
-    "encoded\n\n\nencode": [
-      "ol"
     ],
     "uris": [
       "ol",
@@ -1908,6 +1933,7 @@
     ],
     "html_escape": [
       "ol",
+      "ol",
       "li",
       "li",
       "p",
@@ -1939,9 +1965,6 @@
       "li",
       "p"
     ],
-    "html_escape\n\n\nencode": [
-      "ol"
-    ],
     "json": [
       "ol",
       "ol",
@@ -1971,6 +1994,8 @@
       "ol",
       "li",
       "p",
+      "ol",
+      "ol",
       "ol",
       "li",
       "li",
@@ -2002,12 +2027,6 @@
       "li",
       "p"
     ],
-    "script>": [
-      "ol",
-      "li",
-      "pre",
-      "code"
-    ],
     "var": [
       "ol",
       "li",
@@ -2026,32 +2045,23 @@
       "pre",
       "code"
     ],
-    "json_escape@user.to_json)": [
+    "json_escape@userto_json": [
       "ol",
       "li",
       "pre",
       "code"
     ],
-    "%;": [
+    "%": [
       "ol",
       "li",
       "pre",
       "code"
     ],
-    "/script>": [
+    "/script": [
       "ol",
       "li",
       "pre",
       "code"
-    ],
-    "sources": [
-      "li",
-      "p"
-    ],
-    "leverage": [
-      "li",
-      "p",
-      "strong"
     ],
     "escapes": [
       "p"
@@ -2075,8 +2085,9 @@
     "option": [
       "p"
     ],
-    "escape_html_entities_in_json)": [
-      "p"
+    "escape_html_entities_in_json": [
+      "p",
+      "code"
     ],
     "enabled": [
       "p"
@@ -2089,9 +2100,6 @@
     ],
     "default": [
       "p"
-    ],
-    "escape_html_entities_in_json": [
-      "code"
     ],
     "sanitize": [
       "ol",
@@ -2175,10 +2183,6 @@
       "li",
       "p"
     ],
-    "function\n\n\ndo": [
-      "ol",
-      "ol"
-    ],
     "relatively": [
       "ol",
       "li",
@@ -2248,7 +2252,7 @@
       "li",
       "p"
     ],
-    "methods)": [
+    "methods": [
       "ol",
       "li",
       "p"
@@ -2298,8 +2302,16 @@
       "ol",
       "li",
       "p"
+    ],
+    "guideline": [
+      "h2"
     ]
   },
   "tags": {},
-  "links": []
+  "links": [
+    {
+      "href": "9b0ef1a5-c143-4e64-81cc-9e02ccbd9fbd",
+      "text": "Encode Untrusted Data in Output"
+    }
+  ]
 }

@@ -319,6 +319,7 @@
       "pre",
       "p",
       "pre",
+      "pre",
       "pre"
     ],
     "make": [
@@ -363,23 +364,8 @@
       "li",
       "p"
     ],
-    "fqdn)": [
-      "p"
-    ],
-    "you": [
-      "p",
-      "p",
-      "p",
-      "p",
-      "pre",
-      "pre",
-      "pre",
-      "pre"
-    ],
-    "expect": [
-      "p"
-    ],
     "fqdn": [
+      "p",
       "p",
       "p",
       "p",
@@ -398,6 +384,23 @@
       "li",
       "a",
       "title"
+    ],
+    "you": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "pre",
+      "pre",
+      "pre",
+      "pre"
+    ],
+    "expect": [
+      "p",
+      "pre",
+      "pre",
+      "pre",
+      "pre"
     ],
     "contains": [
       "p",
@@ -483,7 +486,12 @@
     ],
     "false": [
       "p",
-      "p"
+      "p",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre"
     ],
     "positives": [
       "p"
@@ -600,8 +608,9 @@
       "strong",
       "p"
     ],
-    "http//www.example.com,": [
-      "p"
+    "http//wwwexamplecom": [
+      "p",
+      "tt"
     ],
     "an": [
       "p",
@@ -657,7 +666,7 @@
       "li",
       "a"
     ],
-    "http//www.example.com.hackers.net": [
+    "http//wwwexamplecomhackersnet": [
       "p",
       "tt"
     ],
@@ -686,9 +695,6 @@
       "ul",
       "li",
       "a"
-    ],
-    "http//www.example.com": [
-      "tt"
     ],
     "when": [
       "h2"
@@ -800,8 +806,12 @@
       "li",
       "strong"
     ],
-    "servers)": [
+    "servers": [
       "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
       "li",
       "strong"
     ],
@@ -844,12 +854,6 @@
       "ol",
       "li"
     ],
-    "servers": [
-      "ol",
-      "ol",
-      "li",
-      "li"
-    ],
     "are": [
       "ol",
       "li",
@@ -875,6 +879,8 @@
     ],
     "unnecessary": [
       "ol",
+      "ol",
+      "li",
       "li"
     ],
     "domains": [
@@ -1027,10 +1033,6 @@
       "li",
       "p"
     ],
-    "unnecessary)": [
-      "ol",
-      "li"
-    ],
     "below": [
       "ol",
       "li"
@@ -1039,15 +1041,16 @@
       "ol",
       "li"
     ],
-    "event.origin": [
+    "eventorigin": [
       "ol",
       "li",
       "tt",
       "pre"
     ],
-    "'http//www.example.com')": [
+    "'http//wwwexamplecom'": [
       "ol",
       "li",
+      "tt",
       "pre"
     ],
     "{": [
@@ -1143,10 +1146,7 @@
       "ol",
       "li"
     ],
-    "'http//www.example.com'": [
-      "tt"
-    ],
-    "windowaddeventlistener('message',": [
+    "windowaddeventlistener'message'": [
       "pre",
       "pre",
       "pre",
@@ -1160,13 +1160,14 @@
       "pre",
       "pre"
     ],
-    "false;\nfunction": [
+    "function": [
+      "pre",
       "pre",
       "pre",
       "pre",
       "pre"
     ],
-    "messagehandlerevent)": [
+    "messagehandlerevent": [
       "pre",
       "pre",
       "pre",
@@ -1193,10 +1194,10 @@
       "pre",
       "pre"
     ],
-    "regexp\"^https?://www.example.com$\");": [
+    "regexp^https?//wwwexamplecom$": [
       "pre"
     ],
-    "re.test(event.origin))": [
+    "retesteventorigin": [
       "pre",
       "pre",
       "pre"
@@ -1236,6 +1237,15 @@
       "pre",
       "pre",
       "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
       "pre"
     ],
     "else": [
@@ -1263,18 +1273,6 @@
       "pre",
       "pre"
     ],
-    "expect..": [
-      "pre",
-      "pre",
-      "pre",
-      "pre"
-    ],
-    "}}": [
-      "pre",
-      "pre",
-      "pre",
-      "pre"
-    ],
     "problem": [
       "h2"
     ],
@@ -1291,9 +1289,6 @@
       "pre"
     ],
     "process": [
-      "pre"
-    ],
-    "message}": [
       "pre"
     ],
     "validates": [
@@ -1320,10 +1315,10 @@
     "accepting": [
       "p"
     ],
-    "regexp\"www.example.com\");": [
+    "regexpwwwexamplecom": [
       "pre"
     ],
-    "wwwexample.com": [
+    "wwwexamplecom": [
       "p"
     ],
     "can": [
@@ -1336,7 +1331,7 @@
     "anywhere": [
       "p"
     ],
-    "http//www.example.com.hacker.net": [
+    "http//wwwexamplecomhackernet": [
       "p",
       "a"
     ],
@@ -1355,9 +1350,6 @@
     ],
     "uses": [
       "p"
-    ],
-    "false;\n\nfunction": [
-      "pre"
     ],
     "using": [
       "p"
@@ -1393,7 +1385,7 @@
     "after": [
       "p"
     ],
-    "regexp\"https://www.example.com[/:]?$\");": [
+    "regexphttps//wwwexamplecom/?$": [
       "pre"
     ],
     "allows": [
@@ -1432,7 +1424,7 @@
     "slash": [
       "p"
     ],
-    "/)": [
+    "/": [
       "p"
     ],
     "path": [
@@ -1442,9 +1434,6 @@
       "p"
     ],
     "colon": [
-      "p"
-    ],
-    ":)": [
       "p"
     ],
     "port": [

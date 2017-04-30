@@ -1,5 +1,4 @@
-<h2>Applies To</h2><ul><li> C++</li>
-</ul><h2>What to Check For</h2><p>Verify that reference maps are used to access objects.
+<h2>What to Check For</h2><p>Verify that reference maps are used to access objects.
 </p><h2>Why</h2><p>Use reference maps to prevent path manipulation vulnerabilities. If the application uses its own identifiers for objects when exposing them to the user, instead of filesystem paths, an attacker will not be able to manipulate the paths of the objects. While path manipulation refers almost exclusively to filesystem objects, the same technique of using aliases rather than operating system assigned names also works for other types of system resources, such as sockets.
 </p><h2>How to Check</h2><p>To verify that reference maps are used to access objects:
 </p><ol>

@@ -4,8 +4,12 @@
   "words": {
     "1": [
       "ol",
+      "ol",
+      "li",
       "li",
       "p",
+      "p",
+      "code",
       "code"
     ],
     "31": [
@@ -21,6 +25,10 @@
       "code"
     ],
     "99": [
+      "ol",
+      "li",
+      "ol",
+      "li",
       "code"
     ],
     "100": [
@@ -31,6 +39,10 @@
       "code"
     ],
     "101": [
+      "ol",
+      "li",
+      "ol",
+      "li",
       "code"
     ],
     "applies": [
@@ -228,6 +240,7 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "p",
       "li",
@@ -272,6 +285,7 @@
     "user": [
       "p",
       "p",
+      "ol",
       "li",
       "p"
     ],
@@ -651,6 +665,7 @@
       "p",
       "p",
       "p",
+      "ol",
       "li",
       "p"
     ],
@@ -684,6 +699,11 @@
       "ol",
       "ol",
       "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
       "li",
       "p",
       "li",
@@ -692,9 +712,14 @@
       "li",
       "li",
       "li",
+      "li",
+      "li",
+      "li",
       "p",
       "p",
       "strong",
+      "ol",
+      "ol",
       "ol",
       "ol",
       "li",
@@ -708,6 +733,8 @@
     "methods": [
       "p",
       "p",
+      "ol",
+      "li",
       "p"
     ],
     "such": [
@@ -863,11 +890,13 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "p",
       "p",
       "strong",
+      "li",
       "li",
       "li",
       "li",
@@ -1127,6 +1156,7 @@
     "identify": [
       "ol",
       "ol",
+      "ol",
       "li",
       "p",
       "strong",
@@ -1197,9 +1227,6 @@
       "li",
       "p"
     ],
-    "statements\n\n\nidentify": [
-      "ol"
-    ],
     "after": [
       "ol",
       "li",
@@ -1234,9 +1261,6 @@
       "ol",
       "li",
       "p"
-    ],
-    "user\n\n\nuse": [
-      "ol"
     ],
     "rails": [
       "ol",
@@ -1354,16 +1378,11 @@
       "li",
       "p"
     ],
-    "[“id”,": [
+    "“id”": [
       "ol",
       "li",
       "p",
       "code"
-    ],
-    "1].": [
-      "ol",
-      "li",
-      "p"
     ],
     "note": [
       "ol",
@@ -1384,9 +1403,6 @@
       "ol",
       "li",
       "p"
-    ],
-    "injection\n\n\nuse": [
-      "ol"
     ],
     "describes": [
       "ol",
@@ -1419,10 +1435,11 @@
       "p",
       "code"
     ],
-    "sqlite3:database.new(\":memory:\").": [
+    "sqlite3databasenewmemory": [
       "ol",
       "li",
-      "p"
+      "p",
+      "code"
     ],
     "series": [
       "ol",
@@ -1458,15 +1475,7 @@
       "code",
       "code"
     ],
-    "..": [
-      "ol",
-      "li",
-      "pre",
-      "pre",
-      "code",
-      "code"
-    ],
-    "dbexecute('create": [
+    "dbexecute'create": [
       "ol",
       "li",
       "pre",
@@ -1509,10 +1518,15 @@
       "li",
       "code"
     ],
-    "name,": [
+    "name": [
+      "ol",
       "ol",
       "li",
+      "li",
       "pre",
+      "code",
+      "ol",
+      "li",
       "code"
     ],
     "score": [
@@ -1527,13 +1541,13 @@
       "pre",
       "code"
     ],
-    "jerseynum')": [
+    "jerseynum'": [
       "ol",
       "li",
       "pre",
       "code"
     ],
-    "dbexecute('insert": [
+    "dbexecute'insert": [
       "ol",
       "li",
       "pre",
@@ -1545,15 +1559,11 @@
       "pre",
       "code"
     ],
-    "\"name\",0,\"false\",99)')`": [
+    "name0false99'`": [
       "ol",
       "li",
       "pre",
       "code"
-    ],
-    "..\n\nwith": [
-      "ol",
-      "li"
     ],
     "parameterized": [
       "ol",
@@ -1566,10 +1576,6 @@
       "li",
       "li",
       "p",
-      "ol",
-      "li"
-    ],
-    "methods\n\nuse": [
       "ol",
       "li"
     ],
@@ -1599,7 +1605,7 @@
       "ol",
       "li"
     ],
-    "dbexecute('update": [
+    "dbexecute'update": [
       "ol",
       "ol",
       "li",
@@ -1672,16 +1678,15 @@
     ],
     "true": [
       "ol",
+      "ol",
       "li",
+      "li",
+      "ol",
       "ol",
       "li",
       "code",
-      "code"
-    ],
-    "99.\nuse": [
-      "ol",
       "li",
-      "ol"
+      "code"
     ],
     "named": [
       "ol",
@@ -1717,14 +1722,14 @@
       "li",
       "li"
     ],
-    "name=name,": [
+    "name=name": [
       "ol",
       "li",
       "ol",
       "li",
       "code"
     ],
-    "score=score,": [
+    "score=score": [
       "ol",
       "li",
       "ol",
@@ -1738,11 +1743,12 @@
       "li",
       "code"
     ],
-    "jerseynum=num'.": [
+    "jerseynum=num'": [
       "ol",
       "li",
       "ol",
-      "li"
+      "li",
+      "code"
     ],
     "field": [
       "ol",
@@ -1751,13 +1757,6 @@
       "li"
     ],
     "num": [
-      "ol",
-      "li",
-      "ol",
-      "li",
-      "code"
-    ],
-    "name": [
       "ol",
       "li",
       "ol",
@@ -1784,10 +1783,11 @@
       "ol",
       "li"
     ],
-    "on\nuse": [
+    "on": [
       "ol",
       "li",
-      "ol"
+      "ol",
+      "li"
     ],
     "numbered": [
       "ol",
@@ -1802,7 +1802,7 @@
       "li",
       "code"
     ],
-    "dbprepare('update": [
+    "dbprepare'update": [
       "ol",
       "li",
       "ol",
@@ -1830,11 +1830,12 @@
       "li",
       "code"
     ],
-    "jerseynum=?1'.": [
+    "jerseynum=?1'": [
       "ol",
       "li",
       "ol",
-      "li"
+      "li",
+      "code"
     ],
     "bind_param": [
       "ol",
@@ -1843,31 +1844,19 @@
       "li",
       "code"
     ],
-    "stmtbind_param(1,": [
+    "stmtbind_param1": [
       "ol",
       "li",
       "ol",
       "li",
       "code"
     ],
-    "101,": [
-      "ol",
-      "li",
-      "ol",
-      "li"
-    ],
-    "stmtbind_param(2,": [
+    "stmtbind_param2": [
       "ol",
       "li",
       "ol",
       "li",
       "code"
-    ],
-    "true,": [
-      "ol",
-      "li",
-      "ol",
-      "li"
     ],
     "etc": [
       "ol",
@@ -1881,31 +1870,11 @@
       "ol",
       "li"
     ],
-    "stmtexecute.": [
+    "stmtexecute": [
       "ol",
       "li",
       "ol",
-      "li"
-    ],
-    "1]": [
-      "code"
-    ],
-    "sqlite3:database.new(\":memory:\")": [
-      "code"
-    ],
-    "99.": [
-      "li"
-    ],
-    "on": [
-      "li"
-    ],
-    "jerseynum=num'": [
-      "code"
-    ],
-    "jerseynum=?1'": [
-      "code"
-    ],
-    "stmtexecute": [
+      "li",
       "code"
     ],
     "syntax": [

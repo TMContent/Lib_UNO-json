@@ -1,6 +1,6 @@
 {
   "id": "3a785e14-dca9-40d5-883e-c9901c094d9b",
-  "checksum": "a6d0b88b35640e570f8f79e01376d93f",
+  "checksum": "2477288276320af324a7eca342c2d29e",
   "words": {
     "description": [
       "h2"
@@ -22,18 +22,6 @@
       "p",
       "p",
       "p",
-      "ul",
-      "ul",
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a",
-      "li",
-      "a",
-      "li",
-      "a",
       "title"
     ],
     "is": [
@@ -48,7 +36,11 @@
       "p",
       "p",
       "p",
-      "p"
+      "p",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "a": [
       "p",
@@ -99,8 +91,7 @@
       "p"
     ],
     "specific": [
-      "p",
-      "h2"
+      "p"
     ],
     "application": [
       "p",
@@ -111,8 +102,15 @@
       "p",
       "p",
       "p",
+      "p",
+      "ul",
+      "li",
+      "a",
       "h2",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "or": [
       "p",
@@ -160,7 +158,10 @@
       "p",
       "p",
       "p",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "called": [
       "p"
@@ -168,7 +169,13 @@
     "fingerprints": [
       "p",
       "p",
-      "p"
+      "ul",
+      "li",
+      "a",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "they": [
       "p",
@@ -181,6 +188,7 @@
       "p"
     ],
     "of": [
+      "p",
       "p",
       "p",
       "p",
@@ -224,7 +232,15 @@
       "p",
       "p",
       "p",
-      "p"
+      "p",
+      "p",
+      "ul",
+      "li",
+      "a",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "include": [
       "p"
@@ -263,9 +279,12 @@
       "p",
       "p",
       "p",
+      "p",
+      "p",
       "p"
     ],
     "find": [
+      "p",
       "p",
       "p",
       "p",
@@ -275,6 +294,7 @@
       "p"
     ],
     "it": [
+      "p",
       "p",
       "p",
       "p",
@@ -355,7 +375,13 @@
       "p",
       "p",
       "p",
-      "p"
+      "ul",
+      "li",
+      "a",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "and": [
       "p",
@@ -371,6 +397,7 @@
       "p"
     ],
     "using": [
+      "p",
       "p",
       "p"
     ],
@@ -583,16 +610,6 @@
     "countermeasures": [
       "h2"
     ],
-    "mitigate": [
-      "p"
-    ],
-    "harden": [
-      "p"
-    ],
-    "reduce": [
-      "p",
-      "p"
-    ],
     "prevent": [
       "p"
     ],
@@ -604,10 +621,20 @@
     ],
     "reduced": [
       "p",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "you": [
       "p"
+    ],
+    "reduce": [
+      "p",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "putting": [
       "p"
@@ -633,11 +660,36 @@
     "authentication": [
       "p"
     ],
-    "check": [
-      "h2"
+    "goal": [
+      "p"
     ],
     "make": [
+      "p",
       "p"
+    ],
+    "difficult": [
+      "p"
+    ],
+    "instances": [
+      "p"
+    ],
+    "automated": [
+      "p"
+    ],
+    "tools": [
+      "p"
+    ],
+    "mitigate": [
+      "p"
+    ],
+    "harden": [
+      "p",
+      "ul",
+      "li",
+      "a"
+    ],
+    "check": [
+      "h2"
     ],
     "sure": [
       "p"
@@ -649,27 +701,7 @@
       "p"
     ],
     "hardened": [
-      "p"
-    ],
-    "technologies": [
-      "h2"
-    ],
-    "aspnet": [
-      "ul",
-      "li",
-      "a"
-    ],
-    "java": [
-      "ul",
-      "li",
-      "a"
-    ],
-    "c++": [
-      "ul",
-      "li",
-      "a"
-    ],
-    "php": [
+      "p",
       "ul",
       "li",
       "a"
@@ -678,20 +710,20 @@
   "tags": {},
   "links": [
     {
-      "href": "eae98954-f5cc-4f81-b541-f182b94e3e4f",
-      "text": "ASP.NET Fingerprinting"
+      "href": "99297f49-528b-4a25-bc35-3b82ef14404a",
+      "text": "Harden the Server"
     },
     {
-      "href": "0f4c7154-1768-4380-965c-5d40d0fe7eac",
-      "text": "Java Fingerprinting"
+      "href": "81d340de-bce8-4ec0-b363-ce0d3043f3d7",
+      "text": "Reduce Application Fingerprints"
     },
     {
-      "href": "f84a42b2-f872-46a0-bfc4-a03571c727a8",
-      "text": "C++ Fingerprinting"
+      "href": "408f56bf-9ca6-482d-bff2-a2495ff80917",
+      "text": "The Server Is Hardened"
     },
     {
-      "href": "7ef97474-5640-4717-b85c-a72a4dfda750",
-      "text": "PHP Fingerprinting"
+      "href": "f5c4d2da-9a4a-4985-8699-998e00626c92",
+      "text": "Application Fingerprints Are Reduced"
     }
   ]
 }

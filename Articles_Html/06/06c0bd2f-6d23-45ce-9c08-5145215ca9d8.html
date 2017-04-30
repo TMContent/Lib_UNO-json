@@ -64,13 +64,13 @@
 <p>Caching META tags:</p>
 <pre><code>&lt;HTML&gt;
   &lt;HEAD&gt;
-    &lt;META HTTP-EQUIV=&quot;CACHE-CONTROL&quot; CONTENT=&quot;NO-CACHE&quot;&gt;
-    &lt;META HTTP-EQUIV=&quot;PRAGMA&quot; CONTENT=&quot;NO-CACHE&quot;&gt;
-    &lt;META HTTP-EQUIV=&quot;EXPIRES&quot; CONTENT=&quot;-1&quot;&gt;
-    ...
+	&lt;META HTTP-EQUIV=&quot;CACHE-CONTROL&quot; CONTENT=&quot;NO-CACHE&quot;&gt;
+	&lt;META HTTP-EQUIV=&quot;PRAGMA&quot; CONTENT=&quot;NO-CACHE&quot;&gt;
+	&lt;META HTTP-EQUIV=&quot;EXPIRES&quot; CONTENT=&quot;-1&quot;&gt;
+	...
   &lt;/HEAD&gt;
   &lt;BODY&gt;
-    ...
+	...
   &lt;/BODY&gt;
 &lt;/HTML&gt;
 </code></pre>
@@ -88,11 +88,11 @@ object Global extends GlobalSettings {
    * Global action composition.
    */
   override def doFilter(action: EssentialAction): EssentialAction = EssentialAction { request =&gt;
-    action.apply(request).map(_.withHeaders(
-      PRAGMA -&gt; &quot;no-cache&quot;
-      Cache-Control -&gt; &quot;no-cache&quot;
-      Expires -&gt; &quot;-1&quot;
-    ))
+	action.apply(request).map(_.withHeaders(
+	  PRAGMA -&gt; &quot;no-cache&quot;
+	  Cache-Control -&gt; &quot;no-cache&quot;
+	  Expires -&gt; &quot;-1&quot;
+	))
   }
 }
 </code></pre>

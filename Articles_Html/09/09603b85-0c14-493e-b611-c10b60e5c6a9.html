@@ -18,15 +18,15 @@
 
   if (ret &gt;= 0)
   {
-      //now parse the buffer
-      parseBuffer(recvBuffer, len);
-      gSemaphore.Release();
-      return true;
+	  //now parse the buffer
+	  parseBuffer(recvBuffer, len);
+	  gSemaphore.Release();
+	  return true;
   }
   else
   {
-      //can call WSAGetLastError if we need error details
-      return false;
+	  //can call WSAGetLastError if we need error details
+	  return false;
   }
 }
 </code></pre>
@@ -41,14 +41,14 @@
 
   if (ret &gt;= 0)
   {
-      //now parse the buffer
-      parseBuffer(recvBuffer, len);
-      gSemaphore.Release();
-      return true;
+	  //now parse the buffer
+	  parseBuffer(recvBuffer, len);
+	  gSemaphore.Release();
+	  return true;
   }
   else
   {
-      gSemaphore.Release();
-      return false;
+	  gSemaphore.Release();
+	  return false;
   }
 }</code></pre>

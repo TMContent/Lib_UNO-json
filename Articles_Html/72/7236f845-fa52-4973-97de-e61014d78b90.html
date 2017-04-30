@@ -1,0 +1,20 @@
+<h2>Applies To</h2>
+<ul>
+<li>Ruby</li>
+</ul>
+<h2>Solution Example</h2>
+<pre><code>#! /usr/bin/env ruby
+if ARGV.length == 0
+        puts &quot;Usage: #{$0} [content]&quot;
+        exit
+end
+
+begin
+	file = &quot;temporary_file&quot;
+	File.open(file, File::CREAT|File::EXCL|File::WRONLY) { |f| 
+		f.write ARGV[0]
+	}
+rescue
+	puts &quot;File already exists.&quot;
+end
+</code></pre>

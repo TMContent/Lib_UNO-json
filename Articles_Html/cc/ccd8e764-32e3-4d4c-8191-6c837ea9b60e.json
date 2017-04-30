@@ -133,6 +133,7 @@
       "ul",
       "ul",
       "ul",
+      "ul",
       "li",
       "li",
       "li",
@@ -147,6 +148,7 @@
       "p",
       "p",
       "p",
+      "ol",
       "ol",
       "li",
       "li",
@@ -226,6 +228,7 @@
       "li",
       "p",
       "p",
+      "ul",
       "ul",
       "ul",
       "ul",
@@ -392,6 +395,8 @@
       "p",
       "p",
       "p",
+      "pre",
+      "code",
       "p",
       "p",
       "p",
@@ -772,6 +777,8 @@
     ],
     "try": [
       "p",
+      "pre",
+      "code",
       "p",
       "ol",
       "li",
@@ -792,7 +799,7 @@
       "p",
       "p"
     ],
-    "try{": [
+    "{": [
       "pre",
       "code"
     ],
@@ -804,7 +811,7 @@
       "pre",
       "code"
     ],
-    "code}": [
+    "}": [
       "pre",
       "code"
     ],
@@ -895,6 +902,7 @@
     "add": [
       "p",
       "ol",
+      "ol",
       "li",
       "li",
       "p",
@@ -918,6 +926,7 @@
     ],
     "handlers": [
       "p",
+      "ol",
       "ol",
       "ol",
       "ol",
@@ -1074,6 +1083,7 @@
     ],
     "identify": [
       "ol",
+      "ol",
       "li",
       "p",
       "strong",
@@ -1119,9 +1129,6 @@
       "ol",
       "li",
       "p"
-    ],
-    "handling\n\n\nidentify": [
-      "ol"
     ],
     "throw": [
       "ol",
@@ -1181,9 +1188,6 @@
       "ol",
       "li",
       "p"
-    ],
-    "handlers\n\n\nadd": [
-      "ol"
     ],
     "each": [
       "ol",
@@ -1265,6 +1269,7 @@
       "ol",
       "li",
       "p",
+      "ul",
       "ul",
       "ul",
       "li",
@@ -1368,8 +1373,20 @@
       "ul",
       "li"
     ],
-    "resources\npurpose": [
-      "ul"
+    "resources": [
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "li"
+    ],
+    "purpose": [
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "strong"
     ],
     "carefully": [
       "ul",
@@ -1378,12 +1395,6 @@
     "choose": [
       "ul",
       "li"
-    ],
-    "purpose": [
-      "ul",
-      "li",
-      "li",
-      "strong"
     ],
     "although": [
       "ul",
@@ -1431,13 +1442,6 @@
     ],
     "allocated": [
       "ul",
-      "li"
-    ],
-    "resources": [
-      "ul",
-      "ul",
-      "li",
-      "li",
       "li"
     ],
     "safely": [
@@ -1509,9 +1513,6 @@
       "ul",
       "li"
     ],
-    "of\nexception": [
-      "ul"
-    ],
     "because": [
       "ul",
       "li"
@@ -1560,8 +1561,9 @@
       "ul",
       "li"
     ],
-    "logged\ntype": [
-      "ul"
+    "logged": [
+      "ul",
+      "li"
     ],
     "always": [
       "ul",
@@ -1611,9 +1613,6 @@
       "ul",
       "li",
       "title"
-    ],
-    "logged": [
-      "li"
     ]
   },
   "tags": {},

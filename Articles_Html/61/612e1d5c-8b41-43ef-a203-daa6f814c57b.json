@@ -1,6 +1,6 @@
 {
   "id": "612e1d5c-8b41-43ef-a203-daa6f814c57b",
-  "checksum": "cd99196e1196bfd79caef58f74b64051",
+  "checksum": "52f144a40d14e2c399d677e593102af2",
   "words": {
     "40": [
       "ul",
@@ -580,7 +580,7 @@
       "p",
       "p"
     ],
-    "e.g.,": [
+    "eg": [
       "p"
     ],
     "string": [
@@ -702,7 +702,8 @@
       "p",
       "p"
     ],
-    "password)": [
+    "password": [
+      "p",
       "p"
     ],
     "stored": [
@@ -1220,12 +1221,33 @@
       "ul",
       "li"
     ],
-    "dpapi)": [
+    "dpapi": [
       "p",
       "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "li",
+      "li",
+      "p",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "li",
       "li",
       "ul",
-      "li"
+      "li",
+      "li",
+      "p",
+      "p",
+      "p",
+      "title"
     ],
     "default": [
       "p",
@@ -1711,9 +1733,22 @@
       "li",
       "p"
     ],
-    "connectionstrings>": [
+    "connectionstrings": [
+      "ol",
+      "ol",
+      "ol",
       "ol",
       "li",
+      "p",
+      "em",
+      "li",
+      "li",
+      "li",
+      "p",
+      "em",
+      "pre",
+      "pre",
+      "pre",
       "p",
       "pre"
     ],
@@ -1767,29 +1802,6 @@
       "li",
       "p",
       "strong"
-    ],
-    "dpapi": [
-      "ol",
-      "ol",
-      "ol",
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "li",
-      "p",
-      "ul",
-      "ul",
-      "li",
-      "li",
-      "li",
-      "ul",
-      "li",
-      "li",
-      "p",
-      "p",
-      "p",
-      "title"
     ],
     "although": [
       "ol",
@@ -1909,7 +1921,8 @@
       "li",
       "li",
       "p",
-      "p"
+      "p",
+      "pre"
     ],
     "provided": [
       "ol",
@@ -2056,6 +2069,7 @@
       "li",
       "li",
       "strong",
+      "pre",
       "p",
       "p",
       "p",
@@ -2066,6 +2080,8 @@
     "dataprotectionconfigurationprovider": [
       "ol",
       "ol",
+      "ol",
+      "ol",
       "li",
       "li",
       "p",
@@ -2073,6 +2089,10 @@
       "ul",
       "li",
       "em",
+      "li",
+      "li",
+      "pre",
+      "pre",
       "p",
       "em"
     ],
@@ -2360,14 +2380,6 @@
       "ul",
       "li"
     ],
-    "connectionstrings": [
-      "ol",
-      "em",
-      "li",
-      "p",
-      "em",
-      "p"
-    ],
     "from": [
       "ol",
       "li",
@@ -2430,15 +2442,6 @@
       "p",
       "em"
     ],
-    "\"connectionstrings\"": [
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "pre",
-      "pre",
-      "pre"
-    ],
     "app": [
       "ol",
       "ol",
@@ -2451,7 +2454,7 @@
       "p",
       "em"
     ],
-    "\"/machinedpapi\"": [
+    "/machinedpapi": [
       "ol",
       "li",
       "pre"
@@ -2466,14 +2469,6 @@
       "pre",
       "p",
       "em"
-    ],
-    "\"dataprotectionconfigurationprovider\"": [
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "pre",
-      "pre"
     ],
     "above": [
       "ol",
@@ -2637,25 +2632,31 @@
       "p",
       "pre"
     ],
-    "name=\"mylocalsqlserver\"": [
+    "name=mylocalsqlserver": [
       "pre"
     ],
-    "connectionstring=\"initial": [
+    "connectionstring=initial": [
       "pre"
     ],
-    "catalog=pubs   user": [
+    "catalog=pubs": [
       "pre"
     ],
-    "id=sa   password=asdasd;": [
+    "id=sa": [
       "pre"
     ],
-    "source=localhost   integrated": [
+    "password=asdasd": [
       "pre"
     ],
-    "security=sspi\"": [
+    "source=localhost": [
       "pre"
     ],
-    "providername=\"systemdata.sqlclient\"/></connectionstrings>": [
+    "integrated": [
+      "pre"
+    ],
+    "security=sspi": [
+      "pre"
+    ],
+    "providername=systemdatasqlclient//connectionstrings": [
       "pre"
     ],
     "anyone": [
@@ -2674,9 +2675,6 @@
       "p"
     ],
     "discern": [
-      "p"
-    ],
-    "password": [
       "p"
     ],
     "execute": [
@@ -2737,7 +2735,7 @@
     "configure": [
       "p"
     ],
-    "configprotecteddata>": [
+    "configprotecteddata": [
       "p",
       "em",
       "pre"
@@ -2752,7 +2750,7 @@
       "p",
       "em"
     ],
-    "\"false\"": [
+    "false": [
       "p",
       "em"
     ],
@@ -2782,45 +2780,43 @@
     "occur": [
       "p"
     ],
-    "providers>": [
+    "usemachineprotection=false": [
       "pre"
     ],
-    "usemachineprotection=\"false\"": [
+    "keyentropy=": [
       "pre"
     ],
-    "keyentropy=\"\"": [
+    "name=myuserdataprotectionconfigurationprovider": [
       "pre"
     ],
-    "name=\"myuserdataprotectionconfigurationprovider\"": [
+    "type=systemconfigurationdpapiprotectedconfigurationprovider": [
       "pre"
     ],
-    "type=\"systemconfiguration.dpapiprotectedconfigurationprovider,": [
+    "systemconfiguration": [
       "pre"
     ],
-    "systemconfiguration,": [
-      "pre"
-    ],
-    "version=35.0.0,": [
+    "version=3500": [
       "pre"
     ],
     "culture=neutral": [
       "pre"
     ],
-    "publickeytoken=b03f5f7f11d50a3a\"": [
+    "publickeytoken=b03f5f7f11d50a3a": [
       "pre"
     ],
     "/": [
       "pre"
     ],
-    "/providers></configprotecteddata>": [
+    "/providers/configprotecteddata": [
       "pre"
     ],
-    "\"/userdpapi\"": [
+    "/userdpapi": [
       "pre"
     ],
-    "\"myuserdataprotectionconfigurationprovider\"": [
+    "myuserdataprotectionconfigurationprovider": [
       "pre",
-      "p"
+      "p",
+      "em"
     ],
     "specifies": [
       "p",
@@ -2844,10 +2840,8 @@
     "root": [
       "p"
     ],
-    "\"/test/aspnet/userdpapi\"": [
-      "p"
-    ],
     "/test/aspnet/userdpapi": [
+      "p",
       "em"
     ],
     "set": [
@@ -2858,9 +2852,6 @@
     ],
     "earlier": [
       "p"
-    ],
-    "myuserdataprotectionconfigurationprovider": [
-      "em"
     ],
     "point": [
       "p"

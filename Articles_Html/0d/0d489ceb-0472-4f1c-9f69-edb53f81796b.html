@@ -9,16 +9,30 @@ If data is not encoded properly when it is being displayed, the data might inclu
 In general, improper input handling allows additional vulnerabilities to be exploited, while proper input handling prevents them from being exploited. Proper input handling should always be implemented. It is the first line of defense for application security and is effective against most common vulnerabilities. 
 </p><p>
 All applications are affected by improper input handling vulnerabilities. Improper input handling vulnerabilities are one of the most common types of vulnerabilities and frequently result in additional vulnerabilities.
-</p><h2>Impact</h2><p>The overall impact of improper input handling vulnerabilities depends on the additional vulnerabilities that are present in the application. The immediate impact  is that it allows additional vulnerabilities to be exploited. If there are no additional vulnerabilities, then the application itself will not be affected. 
+</p>
+<h2>Impact</h2><p>The overall impact of improper input handling vulnerabilities depends on the additional vulnerabilities that are present in the application. The immediate impact  is that it allows additional vulnerabilities to be exploited. If there are no additional vulnerabilities, then the application itself will not be affected. 
 </p><p>
 However, if input data is not encoded properly before being displayed to the users, the data might contain exploit code that attacks the users, usually in the form of a cross-site scripting (XSS) attack. A successful attack on the users typically results in the attacker gaining some degree of access to the application itself. If the attacker gains sufficient access to the application as a result of compromising the systems of the users, the attacker will be able to take over the application. 
 </p><p>
 If input is not properly validated, then the attacker will be able to send exploit code to the application to trigger additional vulnerabilities. This particularly applies to injection attacks. For example, if an application has a username field and the username input is not validated, the attacker will be able to inject SQL attack strings to the vulnerable code through that field. If the input is properly validated, the attacker will not be able to pass SQL attack strings through the field, because they will not match the valid username format.
 </p><p>
 If input is not properly encoded when it is being processed, then the attacker might include exploit code to the application to trigger additional vulnerabilities. For example, if an application uses parameterized APIs to encode input data that is used to query an SQL database, even if the attacker is able to smuggle SQL attack strings past validations, they will be encoded into forms that will not be interpreted as queries by the SQL driver, thus preventing SQL injection. Correct use of parameterized APIs that encode data automatically and correctly is the most effective way to prevent injection vulnerabilities, including SQL injection, command injection, code injection and cross-site scripting (XSS).
-</p><h2>Countermeasures</h2><p>To prevent improper input handling vulnerabilities, validate all input and encode all untrusted data that is going to be processed or displayed for the correct context.
-</p><h2>Application Check</h2><p>To make sure that sufficient defenses are implemented against input handling vulnerabilities, verify that all input is validated and that all untrusted data that is going to be processed or displayed is encoded for the correct context.
-</p><h2>Specific Technologies</h2><ul><li> <a href="5a5359c5-7f8d-495c-9c12-ff4e8e942213">ASP.NET Improper Input Handling</a></li>
-<li> <a href="80537b63-2f48-4e7d-a07c-bb658b912799">Java Improper Input Handling</a></li>
-<li> <a href="b9123429-b684-4c93-bbd1-e2f1e2881420">PHP Improper Input Handling</a></li>
+</p>
+<h2>Countermeasures</h2><p>To prevent improper input handling vulnerabilities, validate all input and encode all untrusted data that is going to be processed or displayed for the correct context.
+</p><ul>
+<li> <a href="11a15f3a-7fe8-4e4c-be5e-309ab7227b3d">Validate All Input</a></li>
+</ul><ul>
+<li> <a href="9b0ef1a5-c143-4e64-81cc-9e02ccbd9fbd">Encode Untrusted Data in Output</a></li>
 </ul>
+<h2>Application Check</h2><p>To make sure that sufficient defenses are implemented against input handling vulnerabilities, verify that all input is validated and that all untrusted data that is going to be processed or displayed is encoded for the correct context.
+</p><ul>
+<li> <a href="8d8c24b0-096b-43f4-9391-9b293313a0e8">All Input Is Validated</a></li>
+</ul><ul>
+<li> <a href="13112146-7c14-4b6d-9e94-24daa22eefc4">Echoed Input Is Encoded</a></li>
+</ul>
+<h2>Computer Based Training Links</h2><p>Use the following Computer Based Training course(s) for more background information about this type of vulnerabilities.
+</p><h3>Fundamentals of Application Security</h3><p>This two-part course is ideal for security and development practitioners that want to understand software security risk and seek specific implementation guidance on how to build and deploy more secure software applications.  It starts off describing why software security is critical and the risk that software vulnerabilities represent, and proceeds to lay the foundation for secure software development by presenting specific security controls and principles that development teams can implement immediately to reduce software risk. 
+</p><p>
+<a href="https://teamprofessor.absorbtraining.com/ninja/#/courses/course/127105">AWA 101 Fundamentals of Application Security</a>
+</p><p>
+<em>Valid login credentials and enrollment in the course itself are required to access Team Professor content. If you need login credentials, please contact support@securityinnovation.com for help.</em></p>

@@ -152,6 +152,8 @@
       "p",
       "p",
       "ol",
+      "ol",
+      "li",
       "li",
       "strong",
       "p",
@@ -188,25 +190,50 @@
       "p",
       "em",
       "ol",
-      "em",
-      "em",
-      "em",
-      "em",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
       "li",
       "strong",
       "em",
       "em",
       "em",
+      "li",
+      "em",
+      "li",
+      "li",
+      "strong",
+      "em",
+      "em",
+      "p",
+      "em",
       "ol",
-      "em",
-      "em",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "li",
+      "strong",
       "em",
       "em",
       "em",
       "li",
       "em",
+      "li",
+      "em",
+      "li",
+      "em",
       "p",
       "p",
+      "ul",
+      "li",
       "title"
     ],
     "are": [
@@ -352,7 +379,8 @@
       "p",
       "pre",
       "p",
-      "p"
+      "p",
+      "pre"
     ],
     "prevents": [
       "p",
@@ -430,26 +458,6 @@
       "li",
       "li",
       "strong"
-    ],
-    "xmlhttprequestopen.": [
-      "ol",
-      "ol",
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "li",
-      "strong",
-      "li",
-      "ol",
-      "ol",
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "li",
-      "strong",
-      "li"
     ],
     "search": [
       "ol",
@@ -710,14 +718,6 @@
       "li",
       "li"
     ],
-    "xmlhttprequestopen,": [
-      "ol",
-      "li",
-      "ol",
-      "li",
-      "ul",
-      "li"
-    ],
     "make": [
       "ol",
       "li"
@@ -771,10 +771,6 @@
       "ol",
       "li"
     ],
-    "urls)": [
-      "ol",
-      "li"
-    ],
     "fix": [
       "h2"
     ],
@@ -789,9 +785,6 @@
       "li",
       "li",
       "strong"
-    ],
-    "xmlhttprequestopen:": [
-      "p"
     ],
     "anchors": [
       "ol",
@@ -886,7 +879,8 @@
       "ol",
       "li",
       "p",
-      "p"
+      "p",
+      "pre"
     ],
     "method": [
       "ol",
@@ -937,7 +931,7 @@
       "ol",
       "li"
     ],
-    "validateurlurl)": [
+    "validateurlurl": [
       "pre",
       "pre"
     ],
@@ -949,6 +943,10 @@
       "pre"
     ],
     "var": [
+      "pre",
+      "pre",
+      "pre",
+      "pre",
       "pre",
       "pre"
     ],
@@ -972,7 +970,7 @@
       "pre",
       "pre"
     ],
-    "documentcreateelement('a'),": [
+    "documentcreateelement'a'": [
       "pre",
       "pre"
     ],
@@ -980,9 +978,13 @@
       "pre",
       "pre",
       "pre",
+      "pre",
+      "pre",
       "pre"
     ],
     "false": [
+      "pre",
+      "pre",
       "pre",
       "pre"
     ],
@@ -990,10 +992,10 @@
       "pre",
       "pre"
     ],
-    "alertanchor.hostname)": [
+    "alertanchorhostname": [
       "pre"
     ],
-    "if/^www\\.mywebsite\\.com$/.test(anchor.hostname))": [
+    "if/^www\\mywebsite\\com$/testanchorhostname": [
       "pre"
     ],
     "true": [
@@ -1001,6 +1003,9 @@
       "pre"
     ],
     "}": [
+      "pre",
+      "pre",
+      "pre",
       "pre",
       "pre"
     ],
@@ -1010,9 +1015,6 @@
     ],
     "return": [
       "pre",
-      "pre"
-    ],
-    "isvalid\n}": [
       "pre"
     ],
     "problem": [
@@ -1078,11 +1080,37 @@
       "p",
       "p"
     ],
-    "/**": [
+    "/*": [
+      "pre",
+      "pre",
       "pre",
       "pre"
     ],
-    "http://mywebsite.com>:\n*/\n<html>\n<head>\n<script>\nvar": [
+    "*": [
+      "pre",
+      "pre",
+      "pre",
+      "pre"
+    ],
+    "http//mywebsitecom": [
+      "pre",
+      "pre"
+    ],
+    "*/": [
+      "pre",
+      "pre",
+      "pre",
+      "pre"
+    ],
+    "html": [
+      "pre",
+      "pre"
+    ],
+    "head": [
+      "pre",
+      "pre"
+    ],
+    "script": [
       "pre",
       "pre"
     ],
@@ -1094,34 +1122,72 @@
       "pre",
       "pre"
     ],
-    "xmlhttprequest);\nvar": [
+    "xmlhttprequest": [
       "pre",
-      "pre"
+      "pre",
+      "ul",
+      "li"
     ],
     "xhrurl": [
       "pre",
       "pre",
       "pre",
-      "pre"
-    ],
-    "\"http//www.mywebsite.com/filename.html\";\nxhreq.open(\"get\",": [
-      "pre"
-    ],
-    "false;\nxhreq.send(null);\ndocument.getelementbyid(‘response’).innerhtml": [
-      "pre"
-    ],
-    "xhreqresponsetext;\n</script>\n</head>\n\n<body>\n<div": [
-      "pre"
-    ],
-    "id=”response”</div>\n</body>\n</html>\n\n/*\n*": [
+      "pre",
       "pre",
       "pre"
     ],
-    "console:\n*/\nxhrurl": [
+    "http//wwwmywebsitecom/filenamehtml": [
+      "pre"
+    ],
+    "xhreqopenget": [
       "pre",
       "pre"
     ],
-    "“http//www.maliciouswebsite.com/filename.html”;": [
+    "xhreqsendnull": [
+      "pre",
+      "pre"
+    ],
+    "documentgetelementbyid‘response’innerhtml": [
+      "pre",
+      "pre"
+    ],
+    "xhreqresponsetext": [
+      "pre",
+      "pre"
+    ],
+    "/script": [
+      "pre",
+      "pre"
+    ],
+    "/head": [
+      "pre",
+      "pre"
+    ],
+    "body": [
+      "pre",
+      "pre"
+    ],
+    "div": [
+      "pre",
+      "pre"
+    ],
+    "id=”response”/div": [
+      "pre",
+      "pre"
+    ],
+    "/body": [
+      "pre",
+      "pre"
+    ],
+    "/html": [
+      "pre",
+      "pre"
+    ],
+    "console": [
+      "pre",
+      "pre"
+    ],
+    "“http//wwwmaliciouswebsitecom/filenamehtml”": [
       "pre",
       "pre"
     ],
@@ -1152,7 +1218,7 @@
     "making": [
       "p"
     ],
-    "\"http//www.mywebsite.com/filename.html\";//would": [
+    "http//wwwmywebsitecom/filenamehtml//would": [
       "pre"
     ],
     "normally": [
@@ -1161,31 +1227,13 @@
     "controllable": [
       "pre"
     ],
-    "valuefunction": [
+    "alertanchorhost": [
       "pre"
     ],
-    "alertanchor.host)": [
+    "if/^www\\mywebsite\\com\\d+?$/testanchorhost": [
       "pre"
     ],
-    "if/^www\\.mywebsite\\.com([:]\\d+)?$/.test(anchor.host))": [
-      "pre"
-    ],
-    "isvalid\n}\nif(validateurl('http://www.mywebsite.com'))": [
-      "pre"
-    ],
-    "xhreqopen(\"get\",": [
-      "pre"
-    ],
-    "false;": [
-      "pre"
-    ],
-    "xhreqsend(null);": [
-      "pre"
-    ],
-    "documentgetelementbyid(‘response’).innerhtml": [
-      "pre"
-    ],
-    "xhreqresponsetext;\n}\n</script>\n</head>\n\n<body>\n<div": [
+    "ifvalidateurl'http//wwwmywebsitecom'": [
       "pre"
     ],
     "additional": [
@@ -1212,36 +1260,30 @@
       "li",
       "li"
     ],
-    "xmlhttprequest": [
-      "ul",
-      "li"
-    ],
     "see": [
       "ul",
       "ul",
       "li",
       "li"
     ],
-    "https//developer.mozilla.org/en": [
-      "ul",
-      "li",
-      "a"
-    ],
-    "us/docs/web/api/xmlhttprequest.": [
-      "ul",
-      "li"
-    ],
-    "http//msdn.microsoft.com/en": [
-      "ul",
-      "li",
-      "a"
-    ],
-    "us/library/windows/desktop/ms757849%28v=vs.85%29.aspx": [
+    "https//developermozillaorg/en": [
       "ul",
       "li",
       "a"
     ],
     "us/docs/web/api/xmlhttprequest": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "http//msdnmicrosoftcom/en": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "us/library/windows/desktop/ms757849%28v=vs85%29aspx": [
+      "ul",
+      "li",
       "a"
     ]
   },

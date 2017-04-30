@@ -27,6 +27,7 @@
     ],
     "avoid": [
       "p",
+      "ol",
       "li",
       "strong"
     ],
@@ -139,6 +140,10 @@
       "ol",
       "ol",
       "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
       "li",
       "li",
       "li",
@@ -177,6 +182,7 @@
     "canonicalize": [
       "p",
       "p",
+      "ol",
       "ol",
       "li",
       "li",
@@ -435,6 +441,7 @@
     "find": [
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "li",
@@ -461,9 +468,6 @@
       "li",
       "li",
       "li"
-    ],
-    "paths\nfind": [
-      "ol"
     ],
     "code": [
       "ol",
@@ -524,9 +528,6 @@
       "li",
       "li"
     ],
-    "paths\navoid": [
-      "ol"
-    ],
     "remove": [
       "ol",
       "li"
@@ -546,9 +547,6 @@
     "enter": [
       "ol",
       "li"
-    ],
-    "paths\ncanonicalize": [
-      "ol"
     ],
     "each": [
       "ol",
@@ -594,8 +592,12 @@
       "ol",
       "li"
     ],
-    "paths\nvalidate": [
-      "ol"
+    "validate": [
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "strong"
     ],
     "positive": [
       "ol",
@@ -612,12 +614,6 @@
     "routines": [
       "ol",
       "li"
-    ],
-    "validate": [
-      "ol",
-      "li",
-      "li",
-      "strong"
     ],
     "has": [
       "ol",

@@ -35,6 +35,8 @@
       "ul",
       "li",
       "ul",
+      "ul",
+      "ul",
       "li",
       "li",
       "li",
@@ -59,9 +61,13 @@
       "li",
       "p"
     ],
-    "aws)": [
+    "aws": [
       "ul",
-      "li"
+      "li",
+      "p",
+      "ol",
+      "li",
+      "p"
     ],
     "what": [
       "h2"
@@ -74,6 +80,10 @@
     ],
     "protect": [
       "p",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
       "ol",
       "li",
       "li",
@@ -250,10 +260,12 @@
       "ul",
       "li",
       "p",
+      "ul",
       "li",
       "p",
       "p",
       "p",
+      "ol",
       "ol",
       "ol",
       "ol",
@@ -395,14 +407,60 @@
     "these": [
       "p"
     ],
-    "s3amazon": [
-      "ul"
+    "s3": [
+      "ul",
+      "li",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "strong",
+      "ul",
+      "li"
     ],
-    "ebsamazon": [
-      "ul"
+    "ebs": [
+      "ul",
+      "li",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
+      "p",
+      "strong"
     ],
-    "rdsadditional": [
-      "ul"
+    "rds": [
+      "ul",
+      "li",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
+      "p",
+      "strong"
+    ],
+    "additional": [
+      "ul",
+      "li",
+      "ol",
+      "li",
+      "p",
+      "h2"
     ],
     "with": [
       "ul",
@@ -420,48 +478,6 @@
       "p",
       "p",
       "p"
-    ],
-    "s3": [
-      "li",
-      "ol",
-      "ol",
-      "ol",
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "li",
-      "li",
-      "li",
-      "p",
-      "p",
-      "p",
-      "p",
-      "p",
-      "strong",
-      "ul",
-      "li"
-    ],
-    "ebs": [
-      "li",
-      "ol",
-      "li",
-      "p",
-      "strong"
-    ],
-    "rds": [
-      "li",
-      "ol",
-      "li",
-      "p",
-      "strong"
-    ],
-    "additional": [
-      "li",
-      "ol",
-      "li",
-      "p",
-      "h2"
     ],
     "why": [
       "h2"
@@ -510,18 +526,35 @@
       "ul",
       "li"
     ],
-    "disclosuredata": [
-      "ul"
+    "disclosure": [
+      "ul",
+      "li",
+      "ol",
+      "li",
+      "p"
     ],
     "integrity": [
       "ul",
       "li"
     ],
-    "compromiseunintended": [
-      "ul"
+    "compromise": [
+      "ul",
+      "li"
     ],
-    "deletionavailability": [
-      "ul"
+    "unintended": [
+      "ul",
+      "li"
+    ],
+    "deletion": [
+      "ul",
+      "li",
+      "ol",
+      "li",
+      "p"
+    ],
+    "availability": [
+      "ul",
+      "li"
     ],
     "of": [
       "ul",
@@ -577,27 +610,6 @@
     ],
     "software": [
       "ul",
-      "li"
-    ],
-    "disclosure": [
-      "li",
-      "ol",
-      "li",
-      "p"
-    ],
-    "compromise": [
-      "li"
-    ],
-    "unintended": [
-      "li"
-    ],
-    "deletion": [
-      "li",
-      "ol",
-      "li",
-      "p"
-    ],
-    "availability": [
       "li"
     ],
     "when": [
@@ -669,6 +681,7 @@
     ],
     "application": [
       "p",
+      "ol",
       "ol",
       "ol",
       "li",
@@ -864,12 +877,6 @@
     "how": [
       "h2"
     ],
-    "aws": [
-      "p",
-      "ol",
-      "li",
-      "p"
-    ],
     "resources": [
       "p",
       "ol",
@@ -953,8 +960,19 @@
       "p",
       "p"
     ],
-    "credentials\n\n\nclassify": [
-      "ol"
+    "credentials": [
+      "ol",
+      "li",
+      "p"
+    ],
+    "classify": [
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
+      "p",
+      "strong"
     ],
     "review": [
       "ol",
@@ -1054,17 +1072,6 @@
       "ol",
       "li",
       "p"
-    ],
-    "classify": [
-      "ol",
-      "li",
-      "li",
-      "p",
-      "p",
-      "strong"
-    ],
-    "data\n\n\nprotect": [
-      "ol"
     ],
     "on": [
       "ol",
@@ -1269,19 +1276,12 @@
       "p",
       "p"
     ],
-    "s3),": [
-      "ol",
-      "li",
-      "p"
-    ],
     "kms": [
       "ol",
-      "li",
-      "p"
-    ],
-    "kms),": [
       "ol",
       "li",
+      "li",
+      "p",
       "p"
     ],
     "provided": [
@@ -1289,7 +1289,7 @@
       "li",
       "p"
     ],
-    "c)": [
+    "c": [
       "ol",
       "li",
       "p"
@@ -1309,9 +1309,6 @@
       "li",
       "p"
     ],
-    "application\n\n\nprotect": [
-      "ol"
-    ],
     "elastic": [
       "ol",
       "ol",
@@ -1326,11 +1323,6 @@
       "p"
     ],
     "store": [
-      "ol",
-      "li",
-      "p"
-    ],
-    "ebs)": [
       "ol",
       "li",
       "p"
@@ -1371,8 +1363,10 @@
       "li",
       "p"
     ],
-    "os).\n\n\nprotect": [
-      "ol"
+    "os": [
+      "ol",
+      "li",
+      "p"
     ],
     "relational": [
       "ol",
@@ -1389,11 +1383,6 @@
       "ol",
       "li",
       "p",
-      "li",
-      "p"
-    ],
-    "rds)": [
-      "ol",
       "li",
       "p"
     ],
@@ -1447,10 +1436,22 @@
       "ul",
       "li"
     ],
-    "layer\n\n\nprotect": [
-      "ol"
+    "layer": [
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "p",
+      "li",
+      "p",
+      "li",
+      "li",
+      "p",
+      "p"
     ],
     "glacier": [
+      "ol",
       "ol",
       "li",
       "li",
@@ -1468,18 +1469,6 @@
       "li",
       "p"
     ],
-    "layer": [
-      "ol",
-      "ol",
-      "li",
-      "p",
-      "li",
-      "p",
-      "li",
-      "li",
-      "p",
-      "p"
-    ],
     "before": [
       "ol",
       "li",
@@ -1490,8 +1479,15 @@
       "li",
       "p"
     ],
-    "glacier\n\n\nprotecting": [
-      "ol"
+    "protecting": [
+      "ol",
+      "ol",
+      "li",
+      "p",
+      "strong",
+      "li",
+      "p",
+      "strong"
     ],
     "dynamodb": [
       "ol",
@@ -1519,21 +1515,16 @@
       "li",
       "p"
     ],
-    "layer\n\n\nprotecting": [
-      "ol"
-    ],
     "emr": [
       "ol",
+      "ol",
       "li",
+      "li",
+      "p",
       "p",
       "strong"
     ],
     "mapreduce": [
-      "ol",
-      "li",
-      "p"
-    ],
-    "emr)": [
       "ol",
       "li",
       "p"
@@ -1553,7 +1544,7 @@
       "li",
       "p"
     ],
-    "ami)": [
+    "ami": [
       "ol",
       "li",
       "p"
@@ -1578,22 +1569,6 @@
       "li",
       "p"
     ],
-    "credentials": [
-      "li",
-      "p"
-    ],
-    "os).": [
-      "li",
-      "p"
-    ],
-    "protecting": [
-      "li",
-      "p",
-      "strong",
-      "li",
-      "p",
-      "strong"
-    ],
     "about": [
       "ul",
       "li"
@@ -1606,12 +1581,12 @@
       "ul",
       "li"
     ],
-    "http//docs.aws.amazon.com/amazons3/latest/dev/serv": [
+    "http//docsawsamazoncom/amazons3/latest/dev/serv": [
       "ul",
       "li",
       "a"
     ],
-    "encryption.htm": [
+    "encryptionhtm": [
       "ul",
       "li",
       "a"

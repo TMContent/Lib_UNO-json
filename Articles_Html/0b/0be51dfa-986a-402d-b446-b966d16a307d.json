@@ -144,6 +144,7 @@
       "p",
       "p",
       "p",
+      "ol",
       "li",
       "p",
       "title"
@@ -173,6 +174,7 @@
       "p",
       "p",
       "strong",
+      "ol",
       "ol",
       "ol",
       "ol",
@@ -314,6 +316,8 @@
       "p",
       "p",
       "p",
+      "ol",
+      "ol",
       "ol",
       "ol",
       "ol",
@@ -605,8 +609,11 @@
       "li",
       "p"
     ],
-    "deployments\n\n\nexamine": [
-      "ol"
+    "examine": [
+      "ol",
+      "li",
+      "p",
+      "strong"
     ],
     "results": [
       "ol",
@@ -645,11 +652,6 @@
       "ol",
       "li",
       "p"
-    ],
-    "examine": [
-      "li",
-      "p",
-      "strong"
     ],
     "use": [
       "p",
@@ -811,9 +813,6 @@
       "li",
       "p"
     ],
-    "security\n\n\nsecurity": [
-      "ol"
-    ],
     "critical": [
       "ol",
       "li",
@@ -932,10 +931,8 @@
       "li",
       "p"
     ],
-    "review\n\n\ntier": [
-      "ol"
-    ],
     "tier": [
+      "ol",
       "ol",
       "li",
       "li",
@@ -1001,8 +998,19 @@
       "li",
       "p"
     ],
-    "layers\n\n\nrecord": [
-      "ol"
+    "layers": [
+      "ol",
+      "li",
+      "p"
+    ],
+    "record": [
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
+      "p",
+      "strong"
     ],
     "standard": [
       "ol",
@@ -1079,14 +1087,6 @@
       "li",
       "p"
     ],
-    "record": [
-      "ol",
-      "li",
-      "li",
-      "p",
-      "p",
-      "strong"
-    ],
     "findings": [
       "ol",
       "li",
@@ -1119,10 +1119,6 @@
     ],
     "procedure": [
       "ol",
-      "li",
-      "p"
-    ],
-    "layers": [
       "li",
       "p"
     ]

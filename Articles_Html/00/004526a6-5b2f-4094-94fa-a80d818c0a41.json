@@ -1,6 +1,6 @@
 {
   "id": "004526a6-5b2f-4094-94fa-a80d818c0a41",
-  "checksum": "a10e5faff215cedbfc2a211ab34b15b1",
+  "checksum": "cee482ead3ef062be53b3dcc28dcb93c",
   "words": {
     "applies": [
       "h1"
@@ -111,7 +111,6 @@
       "p",
       "p",
       "strong",
-      "h1",
       "title"
     ],
     "such": [
@@ -324,9 +323,7 @@
       "li",
       "p",
       "p",
-      "strong",
-      "ul",
-      "li"
+      "strong"
     ],
     "defeats": [
       "p"
@@ -399,9 +396,7 @@
       "li",
       "p",
       "li",
-      "p",
-      "ul",
-      "li"
+      "p"
     ],
     "how": [
       "h1"
@@ -540,16 +535,16 @@
     "addressed": [
       "p"
     ],
-    "c\\file,": [
+    "c\\file": [
       "p"
     ],
-    "c\\\\file,": [
+    "c\\\\file": [
       "p"
     ],
-    ".\\file,": [
+    "\\file": [
       "p"
     ],
-    ".\\..\\..\\file,": [
+    "\\\\\\file": [
       "p"
     ],
     "particularly": [
@@ -785,14 +780,17 @@
       "p",
       "strong"
     ],
-    "realpath)": [
+    "realpath": [
+      "ol",
       "ol",
       "ol",
       "li",
       "li",
       "p",
       "p",
-      "strong"
+      "strong",
+      "li",
+      "p"
     ],
     "posix": [
       "ol",
@@ -843,7 +841,7 @@
       "li",
       "p"
     ],
-    "canonicalize_file_name)": [
+    "canonicalize_file_name": [
       "ol",
       "ol",
       "ol",
@@ -875,11 +873,6 @@
       "p"
     ],
     "like": [
-      "ol",
-      "li",
-      "p"
-    ],
-    "realpath),": [
       "ol",
       "li",
       "p"
@@ -965,7 +958,7 @@
       "p",
       "strong"
     ],
-    "getfullpathname)": [
+    "getfullpathname": [
       "ol",
       "li",
       "p"
@@ -1183,46 +1176,8 @@
       "ol",
       "li",
       "p"
-    ],
-    "additional": [
-      "h1"
-    ],
-    "more": [
-      "ul",
-      "li"
-    ],
-    "information": [
-      "ul",
-      "li"
-    ],
-    "about": [
-      "ul",
-      "li"
-    ],
-    "please": [
-      "ul",
-      "li"
-    ],
-    "see": [
-      "ul",
-      "li"
-    ],
-    "https//www.securecoding.cert.org/confluence/display/cplusplus/fio02": [
-      "ul",
-      "li",
-      "a"
-    ],
-    "cpp.+canonicalize+path+names+originating+from+untrusted+sources": [
-      "ul",
-      "li",
-      "a"
     ]
   },
   "tags": {},
-  "links": [
-    {
-      "href": "https://www.securecoding.cert.org/confluence/display/cplusplus/FIO02-CPP.+Canonicalize+path+names+originating+from+untrusted+sources",
-      "text": "https://www.securecoding.cert.org/confluence/display/cplusplus/FIO02-CPP.+Canonicalize+path+names+originating+from+untrusted+sources"
-    }
-  ]
+  "links": []
 }

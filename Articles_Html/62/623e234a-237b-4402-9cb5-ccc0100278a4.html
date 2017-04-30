@@ -8,8 +8,11 @@ Applications that use the WS-Routing protocol are affected by routing detour vul
 </p><h2>Impact</h2><p>The impact of routing detour vulnerabilities is that an attacker with MitM capability can reroute SOAP messages to go through an attacker-controlled server and thus compromise the contents of these SOAP messages. The extent of damage depends on how sensitive the data in these SOAP messages is. 
 </p><p>
 Overall, routing detour vulnerabilities are not practical to exploit, because an attacker with a MitM capability can just sniff the SOAP messages without rerouting them. Because routing detour is not a practical vulnerability to exploit, there is no typical attack vector that uses this vulnerability type.
-</p><h2>Countermeasures</h2><p>To prevent routing detour vulnerabilities and most other Man-in-the-Middle based vulnerabilities, use SSL/TLS to protect web service connections and don't use WS-Routing.
-</p><h2>Application Check</h2><p>To make sure that routing detour vulnerabilities and most other Man-in-the-Middle based vulnerabilities are prevented, verify that SSL/TLS is used to protect web service connections and WS-Routing is not used.
-</p><h2>Specific Technologies</h2><ul><li> <a href="d3bc13d7-bc31-40d9-bcba-d316349a4202">ASP.NET Routing Detour</a></li>
-<li> <a href="64c34f42-a7bc-4d42-b219-a8a878e0367a">Java Routing Detour</a></li>
-<li> <a href="b477f5cf-ea95-4a0e-9010-83eba29fe033">PHP Routing Detour</a></li></ul>
+</p><h2>Countermeasures</h2><p>To prevent routing detour vulnerabilities and most other Man-in-the-Middle based vulnerabilities, use TLS to protect web service connections and don't use WS-Routing.
+</p><ul>
+<li> <a href="00057c8f-dd42-4b98-a327-99c3b87b878f">Use TLS</a></li>
+<li> <a href="2fb48ae1-8a7e-40d7-b5a7-02da9d313376">Do Not Use WS-Routing</a></li>
+</ul><h2>Application Check</h2><p>To make sure that routing detour vulnerabilities and most other Man-in-the-Middle based vulnerabilities are prevented, verify that TLS is used to protect web service connections and WS-Routing is not used.
+</p><ul>
+<li> <a href="88c4ea36-f910-40ac-b98b-4a42b2edd3b0">TLS Is Used</a></li>
+<li> <a href="ba5a7df0-f96f-4f39-9429-fbd566d7fd6b">WS-Routing Is Not Used</a></li></ul>

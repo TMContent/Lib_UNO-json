@@ -6,27 +6,42 @@
       "ul",
       "li",
       "b",
-      "h1"
+      "h1",
+      "pre",
+      "p",
+      "ul",
+      "li",
+      "ul",
+      "li"
     ],
     "2": [
       "ul",
       "li",
       "b",
       "h1",
+      "pre",
+      "ul",
+      "li",
+      "ul",
+      "li",
       "p"
     ],
     "3": [
       "ul",
       "li",
       "b",
-      "h1"
+      "h1",
+      "ul",
+      "li"
     ],
     "4": [
       "ul",
       "li",
       "b",
       "p",
-      "h1"
+      "h1",
+      "ul",
+      "li"
     ],
     "5": [
       "p"
@@ -828,6 +843,7 @@
       "p",
       "p",
       "p",
+      "p",
       "ul",
       "li",
       "p"
@@ -1062,6 +1078,7 @@
       "p",
       "p",
       "pre",
+      "pre",
       "p",
       "ul",
       "li"
@@ -1069,11 +1086,14 @@
     "input": [
       "ul",
       "li",
+      "pre",
+      "pre",
       "p",
       "p",
       "pre",
       "p",
       "p",
+      "pre",
       "p",
       "p"
     ],
@@ -1368,6 +1388,7 @@
       "p"
     ],
     "drive": [
+      "p",
       "p"
     ],
     "most": [
@@ -1403,6 +1424,7 @@
     "c\\private": [
       "pre",
       "p",
+      "pre",
       "p"
     ],
     "also": [
@@ -1442,7 +1464,9 @@
       "p",
       "p",
       "p",
+      "pre",
       "p",
+      "pre",
       "pre",
       "pre",
       "p",
@@ -1474,10 +1498,8 @@
       "p",
       "p"
     ],
-    "drive:": [
-      "p"
-    ],
-    "\"\\private\"": [
+    "\\private": [
+      "pre",
       "pre"
     ],
     "wants": [
@@ -1577,7 +1599,7 @@
       "p",
       "p"
     ],
-    "blacklisting),": [
+    "blacklisting": [
       "p"
     ],
     "what": [
@@ -1600,7 +1622,9 @@
       "p",
       "p"
     ],
-    "listing,": [
+    "listing": [
+      "p",
+      "p",
       "p"
     ],
     "relying": [
@@ -2387,9 +2411,6 @@
       "p",
       "p"
     ],
-    ".": [
-      "p"
-    ],
     "protects": [
       "p"
     ],
@@ -2466,10 +2487,13 @@
       "h2",
       "p"
     ],
-    "c\\private\r\nc:\\private\\\r\n..\\private": [
+    "c\\private\\": [
       "pre"
     ],
-    ".\\..\\private\r\nc:/private": [
+    "\\\\private": [
+      "pre"
+    ],
+    "c/private": [
       "pre"
     ],
     "supply": [
@@ -2807,7 +2831,7 @@
     "“/”": [
       "p"
     ],
-    "wwwexample.com/name=&foo/bar": [
+    "wwwexamplecom/name=&foo/bar": [
       "pre"
     ],
     "chooses": [
@@ -2875,6 +2899,7 @@
       "p",
       "p",
       "p",
+      "pre",
       "ul",
       "li",
       "table",
@@ -2891,7 +2916,7 @@
     "follows": [
       "p"
     ],
-    "wwwexample.com/name=%26foo%2fbar": [
+    "wwwexamplecom/name=%26foo%2fbar": [
       "pre"
     ],
     "‘%’": [
@@ -3022,7 +3047,7 @@
       "p",
       "p"
     ],
-    "c\\inetpub\\wwwroot\\app\\.": [
+    "c\\inetpub\\wwwroot\\app\\": [
       "p"
     ],
     "could": [
@@ -3052,6 +3077,7 @@
     ],
     "try": [
       "p",
+      "pre",
       "p",
       "h2",
       "p"
@@ -3059,7 +3085,7 @@
     "gain": [
       "p"
     ],
-    "http//www.example.com/app/../../../private": [
+    "http//wwwexamplecom/app////private": [
       "pre"
     ],
     "there": [
@@ -3122,7 +3148,7 @@
       "ul",
       "li"
     ],
-    "http//www.example/com/app/..%2f..%2f../private": [
+    "http//wwwexample/com/app/%2f%2f/private": [
       "pre"
     ],
     "obvious": [
@@ -3233,7 +3259,7 @@
     "worked": [
       "p"
     ],
-    "http//www.example/com/app/..%c0%af..%c0%af../private": [
+    "http//wwwexample/com/app/%c0%af%c0%af/private": [
       "pre"
     ],
     "question": [
@@ -3309,20 +3335,16 @@
     "director": [
       "p"
     ],
-    "listing": [
-      "p",
-      "p"
-    ],
     "more": [
       "p"
     ],
     "payloads": [
       "p"
     ],
-    "trivial:": [
+    "trivial": [
       "p"
     ],
-    "http//www.example.com/app/..%c0%af..%c0%af..winnt/system32/cmd.exe?/c+dir": [
+    "http//wwwexamplecom/app/%c0%af%c0%afwinnt/system32/cmdexe?/c+dir": [
       "pre"
     ],
     "now": [
@@ -3507,7 +3529,7 @@
     "processing": [
       "p"
     ],
-    "completed)": [
+    "completed": [
       "p"
     ],
     "int": [
@@ -3520,17 +3542,42 @@
       "pre",
       "pre"
     ],
-    "input\r\n{": [
-      "pre"
-    ],
-    "char*": [
-      "pre"
-    ],
-    "m_canonical_path\r\nbool": [
+    "{": [
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
       "pre",
       "pre"
     ],
-    "result\r\n/*¨check": [
+    "char*": [
+      "pre",
+      "pre"
+    ],
+    "m_canonical_path": [
+      "pre",
+      "pre",
+      "pre",
+      "pre"
+    ],
+    "bool": [
+      "pre",
+      "pre",
+      "pre",
+      "pre"
+    ],
+    "result": [
+      "pre",
+      "pre",
+      "pre",
+      "p",
+      "pre",
+      "pre",
+      "pre",
+      "pre"
+    ],
+    "/*¨check": [
       "pre"
     ],
     "against": [
@@ -3547,7 +3594,7 @@
       "pre",
       "p"
     ],
-    "names*/\rresult": [
+    "names*/": [
       "pre"
     ],
     "=": [
@@ -3561,23 +3608,11 @@
       "pre",
       "pre"
     ],
-    "checkaccesstofilebad_input_list,": [
+    "checkaccesstofilebad_input_list": [
       "pre",
-      "pre"
-    ],
-    "input;": [
       "pre"
     ],
     "//": [
-      "pre",
-      "pre"
-    ],
-    "1)\r\nif": [
-      "pre"
-    ],
-    "result": [
-      "pre",
-      "p",
       "pre",
       "pre"
     ],
@@ -3589,9 +3624,18 @@
     "true": [
       "pre",
       "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
       "pre"
     ],
-    "{\r/*": [
+    "/*": [
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
       "pre",
       "pre",
       "pre"
@@ -3601,16 +3645,48 @@
       "p",
       "pre"
     ],
-    "*/\rm_canonical_path": [
+    "*/": [
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
       "pre"
     ],
-    "converttocanonicalforminput);": [
+    "converttocanonicalforminput": [
+      "pre",
       "pre"
     ],
-    "2)\r\nopenfile(m_canonical_path);\r\n}\r\nelse": [
+    "openfilem_canonical_path": [
+      "pre",
       "pre"
+    ],
+    "}": [
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre"
+    ],
+    "else": [
+      "pre",
+      "pre",
+      "pre",
+      "p"
     ],
     "return": [
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
       "pre",
       "pre",
       "pre",
@@ -3619,11 +3695,7 @@
       "li",
       "p"
     ],
-    "false\r\nreturn": [
-      "pre",
-      "pre"
-    ],
-    "true\r\n}": [
+    "false": [
       "pre",
       "pre",
       "pre",
@@ -3633,13 +3705,8 @@
       "p",
       "p"
     ],
-    "checkaccesstofileinput)": [
+    "checkaccesstofileinput": [
       "p"
-    ],
-    "1).": [
-      "p",
-      "ul",
-      "li"
     ],
     "check": [
       "p",
@@ -3663,8 +3730,9 @@
       "ul",
       "li"
     ],
-    "checkaccesstofilem_canonical_path);": [
-      "pre"
+    "checkaccesstofilem_canonical_path": [
+      "pre",
+      "p"
     ],
     "note": [
       "p"
@@ -3682,7 +3750,7 @@
       "ul",
       "li"
     ],
-    "converttocanonicalform)": [
+    "converttocanonicalform": [
       "p"
     ],
     "replaced": [
@@ -3711,7 +3779,7 @@
     "java’s": [
       "p"
     ],
-    "getcanonicalpath)": [
+    "getcanonicalpath": [
       "p"
     ],
     "visual": [
@@ -3720,7 +3788,7 @@
     "basic’s": [
       "p"
     ],
-    "getabsolutepathname)": [
+    "getabsolutepathname": [
       "p"
     ],
     "make": [
@@ -3809,42 +3877,29 @@
       "p",
       "p"
     ],
-    "{\rchar": [
+    "char": [
       "pre"
     ],
     "*": [
       "pre",
       "pre"
     ],
-    "result\r\n/*": [
-      "pre"
-    ],
     "it’s": [
       "pre"
     ],
-    "late*/\rcanonical_path": [
+    "late*/": [
       "pre"
     ],
-    "converttocanonicalforminput)": [
-      "pre"
-    ],
-    "\r\n/*": [
+    "canonical_path": [
       "pre"
     ],
     "safe": [
       "pre"
     ],
-    "*/\rm_inpufile": [
+    "m_inpufile": [
+      "pre",
+      "pre",
       "pre"
-    ],
-    "m_canonical_path;": [
-      "pre"
-    ],
-    "openfilem_canonical_path);\r\nelse": [
-      "pre"
-    ],
-    "checkaccesstofile(m_canonical_path)),": [
-      "p"
     ],
     "fails": [
       "p"
@@ -3919,56 +3974,38 @@
       "p",
       "p"
     ],
-    "matches)": [
+    "matches": [
       "p"
     ],
     "method": [
       "p"
     ],
-    "input{\r\nchar*": [
+    "input{": [
+      "pre",
       "pre"
     ],
-    "m_inpufile\r\nbool": [
-      "pre"
-    ],
-    "result\r\n/*check": [
+    "/*check": [
       "pre"
     ],
     "forms": [
       "pre"
     ],
-    "*/\rm_path": [
+    "m_path": [
       "pre"
     ],
-    "checkaccesstofilegood_input_list,": [
+    "checkaccesstofilegood_input_list": [
       "pre"
     ],
-    "input;\r\nif": [
-      "pre"
-    ],
-    "{\rm_inpufile": [
-      "pre"
-    ],
-    "canonicalizeinput);": [
+    "canonicalizeinput": [
       "pre"
     ],
     "//convert": [
       "pre"
     ],
-    "form\ropenfile(result);\r\n}": [
+    "openfileresult": [
       "pre"
-    ],
-    "else": [
-      "pre",
-      "p"
     ],
     "disallow": [
-      "pre"
-    ],
-    "*/\rreturn": [
-      "pre"
-    ],
-    "false\r\n}\r\nreturn": [
       "pre"
     ],
     "privileges": [
@@ -4018,7 +4055,10 @@
     "controls": [
       "p"
     ],
-    "acl’s.)": [
+    "acl’s": [
+      "p",
+      "p",
+      "p",
       "p"
     ],
     "methods": [
@@ -4047,11 +4087,6 @@
       "p"
     ],
     "restrict": [
-      "p"
-    ],
-    "acl’s": [
-      "p",
-      "p",
       "p"
     ],
     "allow": [
@@ -4091,13 +4126,7 @@
     "effective": [
       "p"
     ],
-    "bool": [
-      "pre"
-    ],
     "showfilechar": [
-      "pre"
-    ],
-    "input{\r\n/*": [
       "pre"
     ],
     "changing": [
@@ -4106,30 +4135,24 @@
     "lower": [
       "pre"
     ],
-    "*/\rimpersonateuser(internet": [
+    "impersonateuserinternet": [
       "pre"
     ],
-    "user;\r\ntry": [
+    "openfileinput": [
       "pre"
     ],
-    "{\ropenfile(input);\r\n}\r\ncatch": [
+    "catch": [
       "pre"
     ],
     "doesn't": [
-      "pre"
-    ],
-    "*/\r/*": [
       "pre"
     ],
     "initial": [
       "pre",
       "pre"
     ],
-    "*/\rreverttoself();\r\nreturn": [
+    "reverttoself": [
       "pre",
-      "pre"
-    ],
-    "false\r\n}\r\n/*": [
       "pre"
     ],
     "mitigates": [
@@ -4207,11 +4230,11 @@
     "influence": [
       "p"
     ],
-    "requestquerystring[path]": [
+    "requestquerystringpath": [
       "ul",
       "li"
     ],
-    "&_getpath]": [
+    "&_getpath": [
       "ul",
       "li"
     ],
@@ -4299,13 +4322,33 @@
       "p",
       "p"
     ],
-    "fopen)": [
+    "fopen": [
       "ul",
-      "li"
+      "li",
+      "table",
+      "table",
+      "tbody",
+      "tbody",
+      "tr",
+      "td",
+      "p",
+      "tr",
+      "td",
+      "p"
     ],
-    "createfile)": [
+    "createfile": [
       "ul",
-      "li"
+      "li",
+      "table",
+      "table",
+      "tbody",
+      "tbody",
+      "tr",
+      "td",
+      "p",
+      "tr",
+      "td",
+      "p"
     ],
     "fileinputstream": [
       "ul",
@@ -4315,7 +4358,7 @@
       "ul",
       "li"
     ],
-    "policyallow()": [
+    "policyallow": [
       "ul",
       "li"
     ],
@@ -4488,33 +4531,9 @@
       "td",
       "p"
     ],
-    "fopen": [
-      "table",
-      "table",
-      "tbody",
-      "tbody",
-      "tr",
-      "td",
-      "p",
-      "tr",
-      "td",
-      "p"
-    ],
     "filehandlercpp": [
       "table",
       "tbody",
-      "tr",
-      "td",
-      "p"
-    ],
-    "createfile": [
-      "table",
-      "table",
-      "tbody",
-      "tbody",
-      "tr",
-      "td",
-      "p",
       "tr",
       "td",
       "p"
@@ -4573,7 +4592,7 @@
     "pick": [
       "p"
     ],
-    ".\\..\\..\\..\\xyz": [
+    "\\\\\\\\xyz": [
       "pre"
     ],
     "examine": [
@@ -4611,9 +4630,6 @@
       "ul",
       "li"
     ],
-    "application)": [
-      "p"
-    ],
     "request": [
       "pre"
     ],
@@ -4635,7 +4651,7 @@
     "replacing": [
       "p"
     ],
-    ".%5c..%5c..%5c..%5cxyz": [
+    "%5c%5c%5c%5cxyz": [
       "pre"
     ],
     "returns": [
@@ -4643,7 +4659,8 @@
     ],
     "found": [
       "p",
-      "p"
+      "p",
+      "pre"
     ],
     "navigate": [
       "p",
@@ -4684,7 +4701,7 @@
       "p",
       "p"
     ],
-    ".%5c..%5c..%5cprivatefiles": [
+    "%5c%5c%5cprivatefiles": [
       "pre"
     ],
     "few": [
@@ -4767,7 +4784,7 @@
     "c\\privatefiles": [
       "p"
     ],
-    "c\\windows\\..\\privatefiles": [
+    "c\\windows\\\\privatefiles": [
       "pre"
     ],
     "file’s": [
@@ -4776,7 +4793,7 @@
     "stream": [
       "p"
     ],
-    "c\\privatefiles\\secretfile.txt::$data": [
+    "c\\privatefiles\\secretfiletxt$data": [
       "pre"
     ],
     "tweak": [
@@ -4795,20 +4812,10 @@
     "coded": [
       "p"
     ],
-    "1)": [
-      "ul",
-      "li"
-    ],
     "%2f": [
       "ul",
       "li",
       "pre",
-      "ul",
-      "li"
-    ],
-    "2)": [
-      "ul",
-      "li",
       "ul",
       "li"
     ],
@@ -4818,17 +4825,11 @@
       "ul",
       "li",
       "li",
-      "li"
-    ],
-    "3)": [
-      "ul",
-      "li"
+      "li",
+      "pre",
+      "pre"
     ],
     "again": [
-      "ul",
-      "li"
-    ],
-    "4)": [
       "ul",
       "li"
     ],
@@ -4836,10 +4837,19 @@
       "ul",
       "li"
     ],
-    "?php\r\n$m_encoded_path;\r\ninputpath": [
+    "?php": [
       "pre"
     ],
-    "$_get'name'];\r\n//(1)": [
+    "$m_encoded_path": [
+      "pre"
+    ],
+    "inputpath": [
+      "pre"
+    ],
+    "$_get'name'": [
+      "pre"
+    ],
+    "//1": [
       "pre"
     ],
     "reject": [
@@ -4847,19 +4857,29 @@
       "ul",
       "li"
     ],
-    "found\r\r\n//(2)\r\n$inputpath": [
+    "//2": [
       "pre"
     ],
-    "urldecode$inputpath);\r\n\r\n//(3)\r\n$inputpath": [
+    "urldecode$inputpath": [
+      "pre",
       "pre"
     ],
-    "urldecode$inputpath);\r\n\r\n//(4)\r\nopenfile($inputpath);\r\n?>": [
+    "//3": [
+      "pre"
+    ],
+    "//4": [
+      "pre"
+    ],
+    "openfile$inputpath": [
+      "pre"
+    ],
+    "?": [
       "pre"
     ],
     "pass": [
       "p"
     ],
-    "./../private/secretfile.doc": [
+    "//private/secretfiledoc": [
       "p"
     ],
     "located": [
@@ -4868,7 +4888,7 @@
     "upper": [
       "p"
     ],
-    "http//www.anywebsite/app/name=..%25252f..%25252f../private/secretfile.doc": [
+    "http//wwwanywebsite/app/name=%25252f%25252f/private/secretfiledoc": [
       "pre"
     ],
     "running": [
@@ -4878,7 +4898,7 @@
       "ul",
       "li"
     ],
-    "http//www.anywebsite/app/name=..%2f..%..2f../private/secretfile.doc": [
+    "http//wwwanywebsite/app/name=%2f%2f/private/secretfiledoc": [
       "ul",
       "li",
       "b"
@@ -4887,12 +4907,12 @@
       "ul",
       "li"
     ],
-    "http//www.anywebsite/app/": [
+    "http//wwwanywebsite/app/": [
       "ul",
       "li",
       "b"
     ],
-    "name=./../../private/secretfile.doc": [
+    "name=///private/secretfiledoc": [
       "ul",
       "li",
       "b"

@@ -1,11 +1,19 @@
-<h1>Description</h1><p>A system information leak occurs when either the application or the application server discloses information about the web application platform that might be useful to the attacker. Some examples of information that might benefit the attacker are: the file system path of the application, the name and version of the operating system, the name and version of the web server software, and the name and version of the web application platform and its configuration options. 
+<h2>Description</h2><p>A system information leak occurs when either the application or the application server discloses information about the web application platform that might be useful to the attacker. Some examples of information that might benefit the attacker are: the file system path of the application, the name and version of the operating system, the name and version of the web server software, and the name and version of the web application platform and its configuration options. 
 </p><p>
 The danger of system information leaks is that they make other attacks easier to carry out. In general, the application should volunteer as little information as possible about the platform on which it is running. 
 </p><p>
 This vulnerability type affects all applications.
-</p><h1>Impact</h1><p>System information leaks can be used by attackers to exploit other vulnerabilities, if other vulnerabilities are present. By itself, a system information leak doesn't give an attacker any additional abilities. System information leaks have to be combined with other vulnerabilities to result in a compromise. For example, the operating system used by the application server might be outdated and vulnerable, but the attacker won't know that until the application tells him that the server is outdated. At that point, the attacker can use an exploit targeting the server operating system to compromise the application. 
-</p><h1>Countermeasures</h1><p>To prevent system information leaks, be sure to handle all errors, use simple error messages, and disable platform banners.
-</p><h1>Application Check</h1><p>To check for adequate protection against system information leaks, verify that all errors are handled, simple error messages are used, and platform banners are disabled.
-</p><h1>Specific Technologies</h1><ul><li> <a href="d2455286-ddf5-474b-b8c9-7cede24ef31a">ASP.NET System Information Leak</a></li>
-<li> <a href="829e3767-afca-4485-9fbb-8c7ab3be3061">PHP System Information Leak</a></li>
+</p><h2>Impact</h2><p>System information leaks can be used by attackers to exploit other vulnerabilities, if other vulnerabilities are present. By itself, a system information leak doesn't give an attacker any additional abilities. System information leaks have to be combined with other vulnerabilities to result in a compromise. For example, the operating system used by the application server might be outdated and vulnerable, but the attacker won't know that until the application tells them that the server is outdated. At that point, the attacker can use an exploit targeting the server operating system to compromise the application. 
+</p><h2>Countermeasures</h2><p>To prevent system information leaks, be sure to handle all errors, use simple error messages, and disable platform banners. 
+</p><ul>
+<li> <a href="00b07659-803d-47c3-a325-777f72688ac7">Handle Exceptions</a></li>
+<li> <a href="0ee60897-0ba8-47a7-8b14-47d17a70f8ee">Use Global Exception Handlers</a></li>
+<li> <a href="6ccf4b69-a4c0-4c08-a2ea-86e704c3ffc2">Display Simple Error Messages</a></li>
+<li> <a href="81d340de-bce8-4ec0-b363-ce0d3043f3d7">Reduce Application Fingerprints</a></li>
 </ul>
+<h2>Application Check</h2><p>To check for adequate protection against system information leaks, verify that all errors are handled, simple error messages are used, and platform banners are disabled.
+</p><ul>
+<li> <a href="ccd8e764-32e3-4d4c-8191-6c837ea9b60e">Exceptions Are Handled</a></li>
+<li> <a href="7a4f9032-7abb-409a-b00b-58d8e890c6ea">Global Exception Handlers Are Used for Unhandled Exceptions</a></li>
+<li> <a href="00000000-0000-0000-0000-0000002f7a79">Simple Error Messages Are Used</a></li>
+<li> <a href="f5c4d2da-9a4a-4985-8699-998e00626c92">Application Fingerprints Are Reduced</a></li></ul>

@@ -160,6 +160,8 @@
       "p",
       "p",
       "p",
+      "ol",
+      "li",
       "p",
       "p",
       "p",
@@ -1301,6 +1303,8 @@
       "p",
       "ol",
       "ol",
+      "ol",
+      "li",
       "li",
       "li",
       "p",
@@ -1380,6 +1384,8 @@
     ],
     "page": [
       "p",
+      "ol",
+      "li",
       "i",
       "ol",
       "li"
@@ -1496,7 +1502,8 @@
       "p",
       "p",
       "ol",
-      "li"
+      "li",
+      "p"
     ],
     "value": [
       "p",
@@ -1536,6 +1543,7 @@
       "p"
     ],
     "be": [
+      "p",
       "p",
       "p",
       "p",
@@ -1582,10 +1590,6 @@
       "ol",
       "li"
     ],
-    "in that": [
-      "ol",
-      "li"
-    ],
     "determining": [
       "ol",
       "li",
@@ -1629,6 +1633,7 @@
       "p"
     ],
     "can": [
+      "p",
       "p",
       "p",
       "p",
@@ -1785,7 +1790,9 @@
       "p"
     ],
     "below": [
-      "p"
+      "p",
+      "ol",
+      "li"
     ],
     "gets": [
       "p"
@@ -1826,10 +1833,10 @@
       "pre",
       "b"
     ],
-    "responsegetwriter();string": [
+    "responsegetwriterstring": [
       "pre"
     ],
-    "\"/public/user_files/\"": [
+    "/public/user_files/": [
       "pre",
       "pre"
     ],
@@ -1837,7 +1844,7 @@
       "pre",
       "pre"
     ],
-    "requestgetparameter(\"filename\").tostring();file": [
+    "requestgetparameterfilenametostringfile": [
       "pre"
     ],
     "new": [
@@ -1846,19 +1853,19 @@
       "pre",
       "pre"
     ],
-    "filefilename);filereader": [
+    "filefilenamefilereader": [
       "pre"
     ],
     "fr": [
       "pre"
     ],
-    "filereaderfile);bufferedreader": [
+    "filereaderfilebufferedreader": [
       "pre"
     ],
     "br": [
       "pre"
     ],
-    "bufferedreaderfr);string": [
+    "bufferedreaderfrstring": [
       "pre"
     ],
     "line": [
@@ -1866,7 +1873,7 @@
       "pre",
       "pre"
     ],
-    "brreadline();while": [
+    "brreadlinewhile": [
       "pre"
     ],
     "!=": [
@@ -1875,10 +1882,14 @@
     "null": [
       "pre"
     ],
-    "{\tout.println(line);": [
+    "{": [
+      "pre",
       "pre"
     ],
-    "brreadline();}fr.close();out.close();": [
+    "outprintlnline": [
+      "pre"
+    ],
+    "brreadline}frcloseoutclose": [
       "pre"
     ],
     "provides": [
@@ -1900,17 +1911,15 @@
       "li",
       "li"
     ],
-    "filetxt,": [
-      "p"
+    "filetxt": [
+      "p",
+      "i",
+      "strong"
     ],
     "returns": [
       "p"
     ],
-    "filetxt": [
-      "i",
-      "strong"
-    ],
-    "http//example.com.pe/example/getfile?filename=file.txt": [
+    "http//examplecompe/example/getfile?filename=filetxt": [
       "pre"
     ],
     "however": [
@@ -1919,14 +1928,15 @@
     "hoping": [
       "p"
     ],
-    "http//example.com.pe/example/getfile?filename=../../private/secret.txt": [
+    "http//examplecompe/example/getfile?filename=//private/secrettxt": [
       "pre"
     ],
-    "./../private/secret.txt": [
+    "//private/secrettxt": [
       "strong"
     ],
     "string": [
       "p",
+      "pre",
       "pre",
       "ol",
       "li",
@@ -1972,7 +1982,7 @@
     "display": [
       "p"
     ],
-    "secrettxt.": [
+    "secrettxt": [
       "p",
       "i"
     ],
@@ -2034,6 +2044,7 @@
     ],
     "they": [
       "p",
+      "p",
       "p"
     ],
     "check": [
@@ -2080,7 +2091,7 @@
       "p",
       "p"
     ],
-    "./": [
+    "/": [
       "p",
       "em"
     ],
@@ -2214,43 +2225,46 @@
       "p",
       "p"
     ],
-    "requestgetparameter(\"filename\").tostring();string": [
+    "requestgetparameterfilenametostringstring": [
       "pre"
     ],
     "safeconstruct": [
       "pre"
     ],
-    "\"^a": [
+    "^a": [
       "pre"
     ],
     "za": [
       "pre"
     ],
-    "z]{4,8}\\.txt$\";pattern": [
+    "z{48}\\txt$pattern": [
       "pre"
     ],
     "regexpattern": [
       "pre"
     ],
-    "patterncompile(safeconstruct);matcher": [
+    "patterncompilesafeconstructmatcher": [
       "pre"
     ],
     "regexmatcher": [
       "pre"
     ],
-    "regexpatternmatcher(input);": [
+    "regexpatternmatcherinput": [
       "pre"
     ],
-    "!regexmatcher.find()){\tout.println(\"invalid": [
+    "!regexmatcherfind{": [
       "pre"
     ],
-    "input\";}else": [
+    "outprintlninvalid": [
       "pre"
     ],
-    "{\tstring": [
+    "input}else": [
       "pre"
     ],
-    "filefilename);\t \t/*": [
+    "filefilename": [
+      "pre"
+    ],
+    "/*": [
       "pre"
     ],
     "continue": [
@@ -2301,8 +2315,9 @@
     "extension": [
       "p"
     ],
-    "txt.": [
-      "p"
+    "txt": [
+      "p",
+      "em"
     ],
     "results": [
       "p",
@@ -2325,9 +2340,6 @@
       "p",
       "p",
       "p"
-    ],
-    "txt": [
-      "em"
     ],
     "now": [
       "p"
@@ -2403,17 +2415,14 @@
       "ol",
       "li"
     ],
-    "http//example.com.pe/example.jsp?page=index.html.": [
+    "http//examplecompe/examplejsp?page=indexhtml": [
       "ol",
-      "li"
+      "li",
+      "i"
     ],
     "locate": [
       "ol",
       "li",
-      "ol",
-      "li"
-    ],
-    "page.": [
       "ol",
       "li"
     ],
@@ -2440,13 +2449,10 @@
       "p",
       "b"
     ],
-    "below.": [
+    "http//examplecompe/examplejsp?page=///etc/passwd": [
       "ol",
-      "li"
-    ],
-    "http//example.com.pe/example.jsp?page=../../../etc/passwd.": [
-      "ol",
-      "li"
+      "li",
+      "i"
     ],
     "submit": [
       "ol",
@@ -2460,14 +2466,8 @@
       "ol",
       "li"
     ],
-    "http//example.com.pe/example.jsp?page=index.html": [
-      "i"
-    ],
     "page=indexhtml": [
       "b"
-    ],
-    "http//example.com.pe/example.jsp?page=../../../etc/passwd": [
-      "i"
     ],
     "give": [
       "p",
@@ -2517,7 +2517,7 @@
       "li",
       "p"
     ],
-    "below.here,": [
+    "belowhere": [
       "ol",
       "li"
     ],
@@ -2570,7 +2570,8 @@
     "following": [
       "p"
     ],
-    "dots,": [
+    "dots": [
+      "p",
       "p"
     ],
     "slashes": [
@@ -2607,10 +2608,10 @@
     "number": [
       "p"
     ],
-    "“./”": [
+    "“/”": [
       "p"
     ],
-    "“.\\”": [
+    "“\\”": [
       "p"
     ],
     "clauses": [
@@ -2625,7 +2626,7 @@
     "realize": [
       "p"
     ],
-    "./etc/passwd..\\boot.ini../boot.inifolder_name/file_name..\\..\\folder_name\\file_name../../folder_name/file_namec:\\boot.ini%2e%2e\\%2e%2e\\..%2f..%2f%2e%2e%2f%2e%2e%2ffolder_name%2ffile_name..%2f..%2ffolder_name%2ffile_name..%c0%af..%c0%affolder_name..%c0%affile_name": [
+    "/etc/passwd\\bootini/bootinifolder_name/file_name\\\\folder_name\\file_name//folder_name/file_namec\\bootini%2e%2e\\%2e%2e\\%2f%2f%2e%2e%2f%2e%2e%2ffolder_name%2ffile_name%2f%2ffolder_name%2ffile_name%c0%af%c0%affolder_name%c0%affile_name": [
       "table",
       "tbody",
       "tr",
@@ -2710,6 +2711,8 @@
       "p",
       "p",
       "pre",
+      "pre",
+      "pre",
       "p"
     ],
     "cover": [
@@ -2757,8 +2760,9 @@
     "sign": [
       "p"
     ],
-    "%)": [
-      "p"
+    "%": [
+      "p",
+      "em"
     ],
     "encoded": [
       "p",
@@ -2771,8 +2775,9 @@
     "equivalent": [
       "p"
     ],
-    "%25).": [
-      "p"
+    "%25": [
+      "p",
+      "em"
     ],
     "translating": [
       "p"
@@ -2786,25 +2791,19 @@
     "one": [
       "p"
     ],
-    "%": [
-      "em"
-    ],
-    "%25": [
-      "em"
-    ],
-    "./../": [
+    "//": [
       "pre"
     ],
     "no": [
       "pre"
     ],
-    "encoding\r\n..%2f..%2f": [
+    "%2f%2f": [
       "pre"
     ],
     "single": [
       "pre"
     ],
-    "encoding\r\n..%252f..%252f": [
+    "%252f%252f": [
       "pre"
     ],
     "make": [
@@ -2851,7 +2850,7 @@
     "frameworks": [
       "p"
     ],
-    "flash/flex,": [
+    "flash/flex": [
       "p"
     ],
     "third": [
@@ -2885,19 +2884,10 @@
       "p",
       "p"
     ],
-    "they can": [
-      "p"
-    ],
-    "be successful": [
-      "p"
-    ],
     "when": [
       "p"
     ],
     "manipulating": [
-      "p"
-    ],
-    "dots": [
       "p"
     ],
     "processed": [

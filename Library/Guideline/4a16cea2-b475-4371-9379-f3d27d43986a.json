@@ -28,7 +28,7 @@
           "PHP"
         ],
         "Type": [
-          "Guideline"
+          "How To"
         ],
         "DirectLink": [
           "Set the Domain And Path Values on Sessions Cookies"
@@ -60,7 +60,7 @@
           "DataType": "html"
         },
         "Data": [
-          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PHP</li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Set strict domain and path values on session cookies.</p>\r\n  <h1>Why</h1>\r\n  <p>Setting strict domain and path values on session cookies makes it harder for attackers to hijack user sessions.</p>\r\n  <h1>How</h1>\r\n  <p>To set strict domain and path values on session cookies:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Define a strict cookie path.</strong> Use the application path as the cookie path.</p>\r\n      <li>\r\n        <p>\r\n          <strong>Define a strict cookie domain.</strong> If the application uses a subdomain, use it as the cookie domain value.</p>\r\n        <li>\r\n          <p>\r\n            <strong>Set the path and domain values. </strong>Edit the <em>php.ini</em> file. Set \"<em>session.cookie_path</em>\" to the strict cookie path. Set \"<em>session.cookie_domain</em>\" to the strict cookie domain.</p>\r\n        </li>\r\n      </li>\r\n    </li>\r\n  </ol>\r\n  <h1>Additional Resources</h1>\r\n  <ul>\r\n    <li>For more information about the <em>session_set_cookie_params</em> function, see&amp;nbsp;<a href=\"http://www.php.net/manual/en/function.session-set-cookie-params.php\">http://www.php.net/manual/en/function.session-set-cookie-params.php</a><li><p>For more information about PHP runtime configuration, see <a href=\"http://php.net/manual/en/session.configuration.php\">http://php.net/manual/en/session.configuration.php</a></p></li></li>\r\n  </ul>"
+          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PHP</li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Set strict domain and path values on session cookies.</p>\r\n  <h1>Why</h1>\r\n  <p>Setting strict domain and path values on session cookies makes it harder for attackers to hijack user sessions.</p>\r\n  <h1>How</h1>\r\n  <p>To set strict domain and path values on session cookies:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Define a strict cookie path.</strong> Use the application path as the cookie path.</p>\r\n      <li>\r\n        <p>\r\n          <strong>Define a strict cookie domain.</strong> If the application uses a subdomain, use it as the cookie domain value.</p>\r\n        <li>\r\n          <p>\r\n            <strong>Set the path and domain values. </strong>Edit the <em>php.ini</em> file. Set \"<em>session.cookie_path</em>\" to the strict cookie path. Set \"<em>session.cookie_domain</em>\" to the strict cookie domain.</p>\r\n        </li>\r\n      </li>\r\n    </li>\r\n  </ol>"
         ]
       }
     ]

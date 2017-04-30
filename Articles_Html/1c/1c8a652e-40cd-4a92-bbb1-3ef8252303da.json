@@ -30,13 +30,24 @@
       "h1",
       "p"
     ],
+    "11": [
+      "p"
+    ],
     "12": [
+      "p",
+      "font",
+      "p",
+      "font",
+      "p",
       "p",
       "i"
     ],
     "21": [
       "p",
       "i"
+    ],
+    "25": [
+      "p"
     ],
     "500": [
       "p"
@@ -982,6 +993,7 @@
       "li"
     ],
     "application": [
+      "p",
       "p",
       "p",
       "p",
@@ -2097,6 +2109,8 @@
       "p",
       "p",
       "p",
+      "font",
+      "p",
       "p",
       "p",
       "p",
@@ -2151,9 +2165,14 @@
       "p",
       "font",
       "p",
+      "p",
+      "font",
+      "font",
+      "p",
       "font",
       "p",
       "i",
+      "pre",
       "p",
       "font",
       "p",
@@ -2301,15 +2320,15 @@
       "p",
       "p"
     ],
-    "http//www.example.com/products/search.php?prod=bike": [
+    "http//wwwexamplecom/products/searchphp?prod=bike": [
       "p",
       "font"
     ],
-    "php)http://www.example.com/products/search.asp?prod=bike": [
+    "phphttp//wwwexamplecom/products/searchasp?prod=bike": [
       "p",
       "font"
     ],
-    "asp)": [
+    "asp": [
       "p",
       "font",
       "p",
@@ -2334,6 +2353,7 @@
     "$query": [
       "p",
       "font",
+      "pre",
       "pre"
     ],
     "=": [
@@ -2354,36 +2374,29 @@
       "font",
       "font"
     ],
-    "\"select": [
-      "p",
-      "p",
-      "font",
-      "font",
-      "pre"
-    ],
     "producttable": [
       "p",
       "p",
       "font",
       "font"
     ],
-    "\\'%\"": [
+    "\\'%": [
       "p",
       "font"
     ],
-    "$_get\"prod\"]": [
+    "$_getprod": [
       "p",
       "font"
     ],
-    "\"%\\'\"": [
+    "%\\'": [
       "p",
       "font"
     ],
-    "php)var": [
+    "phpvar": [
       "p",
       "font"
     ],
-    "'%\"": [
+    "'%": [
       "p",
       "font"
     ],
@@ -2398,13 +2411,16 @@
       "font",
       "font",
       "font",
+      "p",
       "p"
     ],
-    "requestquerystring(\"prod\")": [
+    "requestquerystringprod": [
       "p",
       "font"
     ],
-    "\"%'\"": [
+    "%'": [
+      "p",
+      "font",
       "p",
       "font"
     ],
@@ -2480,6 +2496,7 @@
     ],
     "if": [
       "p",
+      "pre",
       "p",
       "i",
       "p",
@@ -2749,10 +2766,6 @@
       "p",
       "font"
     ],
-    "%'": [
-      "p",
-      "font"
-    ],
     "forms": [
       "h2",
       "p",
@@ -2830,32 +2843,22 @@
       "p",
       "i"
     ],
-    "\\'\"": [
+    "\\'": [
+      "pre",
+      "pre",
       "pre",
       "pre"
     ],
-    "$_post'name']": [
+    "$_post'name'": [
       "pre"
     ],
-    "\"\\'\"": [
-      "pre",
-      "pre"
-    ],
-    "\"": [
-      "pre",
-      "p",
-      "font"
-    ],
-    "$_post'pass']": [
+    "$_post'pass'": [
       "pre"
     ],
     "$result": [
       "pre"
     ],
-    "odbc_exec$connection,": [
-      "pre"
-    ],
-    "$query;\r\nif": [
+    "odbc_exec$connection": [
       "pre"
     ],
     "$result_count": [
@@ -2871,8 +2874,16 @@
     "print'unable": [
       "pre"
     ],
-    "login';\r\n}\r\nelse": [
+    "login'": [
       "pre"
+    ],
+    "}": [
+      "pre",
+      "pre"
+    ],
+    "else": [
+      "pre",
+      "p"
     ],
     "print'user": [
       "pre"
@@ -2880,7 +2891,7 @@
     "logged": [
       "pre"
     ],
-    "in';\r\n}": [
+    "in'": [
       "pre"
     ],
     "submit": [
@@ -3069,7 +3080,7 @@
       "font",
       "font"
     ],
-    "varchar400)": [
+    "varchar400": [
       "p",
       "font"
     ],
@@ -3084,10 +3095,12 @@
     "@sql": [
       "p",
       "p",
+      "p",
+      "font",
       "font",
       "font"
     ],
-    "nvarchar4000)select": [
+    "nvarchar4000select": [
       "p",
       "font"
     ],
@@ -3136,10 +3149,6 @@
       "font"
     ],
     "'%\\''exec": [
-      "p",
-      "font"
-    ],
-    "@sql)": [
       "p",
       "font"
     ],
@@ -3424,9 +3433,6 @@
       "p"
     ],
     "unexpected": [
-      "p"
-    ],
-    "application.": [
       "p"
     ],
     "include": [
@@ -3863,12 +3869,6 @@
       "p",
       "p"
     ],
-    "12;": [
-      "p",
-      "font",
-      "p",
-      "font"
-    ],
     "visibly": [
       "p"
     ],
@@ -3918,10 +3918,6 @@
     "says": [
       "p"
     ],
-    "\"results": [
-      "p",
-      "font"
-    ],
     "buffer": [
       "p",
       "font"
@@ -3930,7 +3926,7 @@
       "p",
       "font"
     ],
-    "large\"": [
+    "large": [
       "p",
       "font"
     ],
@@ -4010,12 +4006,6 @@
     "numbers": [
       "p",
       "p",
-      "p"
-    ],
-    "\"11\"": [
-      "p"
-    ],
-    "\"12\"": [
       "p"
     ],
     "actual": [
@@ -4139,9 +4129,6 @@
       "p"
     ],
     "semicolon": [
-      "p"
-    ],
-    ";)": [
       "p"
     ],
     "mysql": [
@@ -4275,9 +4262,6 @@
       "p"
     ],
     "plus": [
-      "p"
-    ],
-    "+)": [
       "p"
     ],
     "xyz'+or+1=1+": [
@@ -4414,9 +4398,6 @@
     "percent": [
       "p"
     ],
-    "25).": [
-      "p"
-    ],
     "xyz%2527+or+1%253d1+": [
       "p",
       "font"
@@ -4457,9 +4438,6 @@
     "correct": [
       "p"
     ],
-    "else": [
-      "p"
-    ],
     "fail": [
       "p",
       "p"
@@ -4491,7 +4469,7 @@
       "font",
       "font"
     ],
-    "'a'='ax\"": [
+    "'a'='ax": [
       "p",
       "font"
     ],
@@ -4499,7 +4477,7 @@
       "p",
       "font"
     ],
-    "x%\"": [
+    "x%": [
       "p",
       "font"
     ],
@@ -4614,7 +4592,10 @@
       "ul",
       "li"
     ],
-    "openrowset)": [
+    "openrowset": [
+      "ul",
+      "li",
+      "i",
       "ul",
       "li",
       "i"
@@ -4735,11 +4716,6 @@
       "ul",
       "li",
       "p"
-    ],
-    "openrowset": [
-      "ul",
-      "li",
-      "i"
     ],
     "command": [
       "ul",

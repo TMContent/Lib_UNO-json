@@ -692,6 +692,7 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "strong",
       "li",
@@ -702,6 +703,7 @@
       "li",
       "li",
       "strong",
+      "li",
       "li",
       "li",
       "li",
@@ -1353,10 +1355,14 @@
       "li",
       "li"
     ],
-    "names).": [
+    "names": [
+      "ol",
+      "ol",
       "ol",
       "li",
-      "strong"
+      "strong",
+      "li",
+      "li"
     ],
     "regular": [
       "ol",
@@ -1480,7 +1486,12 @@
       "ol",
       "ol",
       "ol",
+      "ol",
+      "ol",
       "li",
+      "li",
+      "li",
+      "strong",
       "li",
       "li",
       "strong"
@@ -1553,12 +1564,6 @@
       "li",
       "li"
     ],
-    "names": [
-      "ol",
-      "ol",
-      "li",
-      "li"
-    ],
     "internet": [
       "ol",
       "li"
@@ -1583,12 +1588,12 @@
       "ol",
       "li"
     ],
-    "^https?\\/\\/([a": [
+    "^https?\\/\\/a": [
       "ol",
       "li",
       "tt"
     ],
-    "z][": [
+    "z": [
       "ol",
       "ol",
       "ol",
@@ -1616,7 +1621,7 @@
       "tt",
       "tt"
     ],
-    "9]+[a": [
+    "9+a": [
       "ol",
       "ol",
       "ol",
@@ -1626,7 +1631,7 @@
       "li",
       "tt"
     ],
-    "9]\\.)*mydomain\\.com$": [
+    "9\\*mydomain\\com$": [
       "ol",
       "li",
       "tt"
@@ -1659,7 +1664,7 @@
       "ol",
       "li"
     ],
-    "https).": [
+    "https": [
       "ol",
       "li"
     ],
@@ -1669,6 +1674,8 @@
     ],
     "characters": [
       "ol",
+      "ol",
+      "li",
       "li"
     ],
     "url": [
@@ -1683,7 +1690,7 @@
       "ol",
       "li"
     ],
-    "?]": [
+    "?": [
       "ol",
       "li"
     ],
@@ -1704,10 +1711,6 @@
       "ol",
       "li"
     ],
-    "characters)": [
-      "ol",
-      "li"
-    ],
     "once": [
       "ol",
       "li"
@@ -1720,11 +1723,7 @@
       "ol",
       "li"
     ],
-    "[a": [
-      "ol",
-      "li"
-    ],
-    "9]\\.)*": [
+    "9\\*": [
       "ol",
       "li"
     ],
@@ -1734,7 +1733,7 @@
       "li",
       "li"
     ],
-    "http//myserver.example.com": [
+    "http//myserverexamplecom": [
       "ol",
       "li",
       "tt"
@@ -1743,7 +1742,7 @@
       "ol",
       "li"
     ],
-    "http//www.mysubdomain.example.com": [
+    "http//wwwmysubdomainexamplecom": [
       "ol",
       "li",
       "tt"
@@ -1812,22 +1811,15 @@
       "li",
       "tt"
     ],
-    "regexp/^https?:\\/\\/([a": [
+    "regexp/^https?\\/\\/a": [
       "ol",
       "li",
       "tt"
     ],
-    "9]\\.)*mydomain\\.com$/);": [
+    "9\\*mydomain\\com$/": [
       "ol",
       "li",
       "tt"
-    ],
-    "test)": [
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "strong"
     ],
     "method": [
       "ol",
@@ -1855,7 +1847,7 @@
       "li",
       "tt"
     ],
-    "patterntest(origin);": [
+    "patterntestorigin": [
       "ol",
       "li",
       "tt"
@@ -1875,12 +1867,7 @@
       "li",
       "tt"
     ],
-    "functionevent)": [
-      "ol",
-      "li",
-      "tt"
-    ],
-    "..": [
+    "functionevent": [
       "ol",
       "li",
       "tt"

@@ -1,6 +1,6 @@
 {
   "id": "b07b1f54-6aad-49a1-86cc-3f067f95e53b",
-  "checksum": "93f2462c12333f1681de12f9c1107473",
+  "checksum": "acd727cd369b2facad82e7b41c1163ca",
   "words": {
     "description": [
       "h2"
@@ -14,18 +14,6 @@
       "p",
       "p",
       "p",
-      "ul",
-      "ul",
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a",
-      "li",
-      "a",
-      "li",
-      "a",
       "title"
     ],
     "anti": [
@@ -37,18 +25,6 @@
       "p",
       "p",
       "p",
-      "ul",
-      "ul",
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a",
-      "li",
-      "a",
-      "li",
-      "a",
       "title"
     ],
     "automation": [
@@ -60,18 +36,6 @@
       "p",
       "p",
       "p",
-      "ul",
-      "ul",
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a",
-      "li",
-      "a",
-      "li",
-      "a",
       "title"
     ],
     "vulnerabilities": [
@@ -153,13 +117,25 @@
       "p",
       "p",
       "p",
-      "p"
+      "ul",
+      "li",
+      "a",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "operations": [
       "p",
       "p",
       "p",
-      "p"
+      "ul",
+      "li",
+      "a",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "can": [
       "p",
@@ -407,7 +383,10 @@
     "are": [
       "p",
       "p",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "potentially": [
       "p"
@@ -492,7 +471,13 @@
       "p",
       "p",
       "p",
-      "p"
+      "ul",
+      "li",
+      "a",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "becomes": [
       "p"
@@ -645,7 +630,13 @@
     "resource": [
       "p",
       "p",
-      "p"
+      "ul",
+      "li",
+      "a",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "based": [
       "p",
@@ -739,11 +730,20 @@
       "p"
     ],
     "throttle": [
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "intensive": [
       "p",
-      "p"
+      "ul",
+      "li",
+      "a",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "check": [
       "h2"
@@ -761,30 +761,7 @@
       "p"
     ],
     "throttled": [
-      "p"
-    ],
-    "specific": [
-      "h2"
-    ],
-    "technologies": [
-      "h2"
-    ],
-    "aspnet": [
-      "ul",
-      "li",
-      "a"
-    ],
-    "java": [
-      "ul",
-      "li",
-      "a"
-    ],
-    "c++": [
-      "ul",
-      "li",
-      "a"
-    ],
-    "php": [
+      "p",
       "ul",
       "li",
       "a"
@@ -793,20 +770,12 @@
   "tags": {},
   "links": [
     {
-      "href": "17fadcfb-5d57-4978-93fd-76bc4a5fff0b",
-      "text": "ASP.NET Insufficient Anti-automation"
+      "href": "70e1c64b-de31-4a71-b421-02bb9bc3a06b",
+      "text": "Throttle Sensitive and Resource Intensive Operations"
     },
     {
-      "href": "150a1b00-c2f6-4d34-a61b-44b8aea602fa",
-      "text": "Java Insufficient Anti-automation"
-    },
-    {
-      "href": "0c8b078b-dd95-4c06-84c6-ad1696644b4c",
-      "text": "C++ Insufficient Anti-automation"
-    },
-    {
-      "href": "39b4df11-91d7-4ac3-8b75-10c4f64d20e1",
-      "text": "PHP Insufficient Anti-automation"
+      "href": "f08d3a08-a560-4220-9962-5de047b00caa",
+      "text": "Sensitive and Resource Intensive Operations Are Throttled"
     }
   ]
 }

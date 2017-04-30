@@ -28,7 +28,7 @@
           ".NET"
         ],
         "Type": [
-          "Guideline"
+          "How To"
         ],
         "DirectLink": [
           "Perform Access Control Checks for Any Filesystem Access"
@@ -54,7 +54,7 @@
           "DataType": "wikitext"
         },
         "Data": [
-          "==Applies To==\n\n* ASP.NET\n\n==What to Do==\n\nConfigure ASP.NET to perform access control checks for all filesystem access.\n\n==Why==\n\nPerform access control checks for all filesystem access to prevent unauthorized access.\n\n==How==\n\nTo perform access control checks for all filesystem access add the <securitypolicy> section to your web.config or machine.config as follows.\n\n{{{\n<securitypolicy>\n  <trustlevel name=\"Medium\" policyfile=\"web_MediumTrust.config\"></trustlevel>\n</securitypolicy>\n}}}\n\nIf the 'Medium' policy doesn't match your needs and you want more customization, create a new file called customtrust.config and add the permissions for File I/O into this file. A sample set of permissions could look like this:\n\n{{{\n<permissionset class=\"NamedPermissionSet\" version=\"1\" name=\"ASP.Net\">\n  ...\n     <ipermission class=\"RegistryPermission\" version=\"1\" unrestricted=\"true\"></ipermission>\n     ...\n   </permissionset>  \n}}}\n\nNote that you can simply make a copy of the medium trust file and rename it to customtrust.config. Once this is done, you can modify the file according to your needs.\n\n==Additional Resources==\n\n* For more information about how a Code Access Security Policy is implemented in .NET 4.0 see http://msdn.microsoft.com/en-us/library/dd984947%28v=vs.100%29.aspx#Overview\n"
+          "==Applies To==\n\n* ASP.NET\n\n==What to Do==\n\nConfigure ASP.NET to perform access control checks for all filesystem access.\n\n==Why==\n\nPerform access control checks for all filesystem access to prevent unauthorized access.\n\n==How==\n\nTo perform access control checks for all filesystem access add the <securitypolicy> section to your web.config or machine.config as follows.\n\n{{{\n<securitypolicy>\n  <trustlevel name=\"Medium\" policyfile=\"web_MediumTrust.config\"></trustlevel>\n</securitypolicy>\n}}}\n\nIf the 'Medium' policy doesn't match your needs and you want more customization, create a new file called customtrust.config and add the permissions for File I/O into this file. A sample set of permissions could look like this:\n\n{{{\n<permissionset class=\"NamedPermissionSet\" version=\"1\" name=\"ASP.Net\">\n  ...\n     <ipermission class=\"RegistryPermission\" version=\"1\" unrestricted=\"true\"></ipermission>\n     ...\n   </permissionset>  \n}}}\n\nNote that you can simply make a copy of the medium trust file and rename it to customtrust.config. Once this is done, you can modify the file according to your needs.\n\n==Additional Resources==\n\n* For more information about how a Code Access Security Policy is implemented in .NET 4.0 see http://msdn.microsoft.com/en-us/library/dd984947%28v=vs.100%29.aspx#Overview\n</securitypolicy>"
         ]
       }
     ]

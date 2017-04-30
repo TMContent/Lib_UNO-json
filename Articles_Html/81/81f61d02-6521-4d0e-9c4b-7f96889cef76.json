@@ -1,13 +1,13 @@
 {
   "id": "81f61d02-6521-4d0e-9c4b-7f96889cef76",
-  "checksum": "fd8753cf82ae8464753cf18d686440dd",
+  "checksum": "fc4f1f0e5e72af43683b8cabdb95f112",
   "words": {
     "applies": [
-      "h1"
+      "h2"
     ],
     "to": [
-      "h1",
-      "h1",
+      "h2",
+      "h2",
       "p",
       "p",
       "ol",
@@ -32,10 +32,10 @@
       "title"
     ],
     "what": [
-      "h1"
+      "h2"
     ],
     "do": [
-      "h1"
+      "h2"
     ],
     "create": [
       "p",
@@ -53,7 +53,7 @@
       "title"
     ],
     "why": [
-      "h1"
+      "h2"
     ],
     "allowing": [
       "p"
@@ -101,11 +101,19 @@
       "p",
       "p"
     ],
-    "createfile)": [
+    "createfile": [
       "p",
       "ol",
+      "ol",
       "li",
-      "p"
+      "p",
+      "li",
+      "p",
+      "p",
+      "pre",
+      "code",
+      "pre",
+      "code"
     ],
     "can": [
       "p",
@@ -138,7 +146,7 @@
       "p"
     ],
     "when": [
-      "h1"
+      "h2"
     ],
     "apply": [
       "p"
@@ -175,7 +183,7 @@
       "p"
     ],
     "how": [
-      "h1"
+      "h2"
     ],
     "perform": [
       "p"
@@ -284,9 +292,12 @@
       "p",
       "p"
     ],
-    "getfiletype)": [
+    "getfiletype": [
+      "ol",
       "ol",
       "li",
+      "li",
+      "p",
       "p",
       "p"
     ],
@@ -357,17 +368,14 @@
       "p",
       "p"
     ],
-    "getfiletype": [
-      "ol",
-      "li",
-      "p"
-    ],
     "hfile": [
       "ol",
       "li",
       "p",
       "pre",
-      "pre"
+      "code",
+      "pre",
+      "code"
     ],
     "return": [
       "ol",
@@ -375,11 +383,6 @@
       "p"
     ],
     "value": [
-      "ol",
-      "li",
-      "p"
-    ],
-    "createfile)),": [
       "ol",
       "li",
       "p"
@@ -396,20 +399,15 @@
       "p"
     ],
     "problem": [
-      "h1"
+      "h2"
     ],
     "example": [
-      "h1",
+      "h2",
       "p",
-      "h1"
+      "h2"
     ],
     "below": [
       "p"
-    ],
-    "createfile": [
-      "p",
-      "pre",
-      "pre"
     ],
     "and": [
       "p"
@@ -426,8 +424,12 @@
     "argument": [
       "p"
     ],
-    "argv[1])": [
-      "p"
+    "argv1": [
+      "p",
+      "pre",
+      "code",
+      "pre",
+      "code"
     ],
     "into": [
       "p"
@@ -461,94 +463,140 @@
     ],
     "int": [
       "pre",
-      "pre"
+      "code",
+      "pre",
+      "code"
     ],
     "mainint": [
       "pre",
-      "pre"
+      "code",
+      "pre",
+      "code"
     ],
     "argc": [
       "pre",
-      "pre"
+      "code",
+      "pre",
+      "code"
     ],
     "char": [
       "pre",
-      "pre"
-    ],
-    "*argv]){": [
+      "code",
       "pre",
-      "pre"
+      "code"
+    ],
+    "*argv": [
+      "pre",
+      "code",
+      "pre",
+      "code"
+    ],
+    "{": [
+      "pre",
+      "code",
+      "pre",
+      "pre",
+      "code",
+      "code"
     ],
     "handle": [
       "pre",
-      "pre"
+      "code",
+      "pre",
+      "code"
     ],
     "=": [
       "pre",
-      "pre"
-    ],
-    "argv1],": [
+      "code",
       "pre",
-      "pre"
+      "code"
     ],
     "generic_read": [
       "pre",
-      "pre"
+      "code",
+      "pre",
+      "code"
     ],
     "|": [
       "pre",
-      "pre"
+      "code",
+      "pre",
+      "code"
     ],
     "generic_write": [
       "pre",
-      "pre"
+      "code",
+      "pre",
+      "code"
     ],
     "null": [
       "pre",
       "pre",
       "pre",
-      "pre"
+      "code",
+      "code",
+      "code",
+      "pre",
+      "pre",
+      "pre",
+      "code",
+      "code",
+      "code"
     ],
     "create_always": [
       "pre",
-      "pre"
+      "code",
+      "pre",
+      "code"
     ],
     "file_attribute_normal": [
       "pre",
-      "pre"
+      "code",
+      "pre",
+      "code"
     ],
-    "null;}": [
-      "pre"
+    "}": [
+      "pre",
+      "code",
+      "pre",
+      "pre",
+      "code",
+      "code"
     ],
     "solution": [
-      "h1"
-    ],
-    "null;": [
-      "pre"
+      "h2"
     ],
     "if": [
-      "pre"
+      "pre",
+      "code"
     ],
-    "getfiletype(hfile)": [
-      "pre"
+    "getfiletypehfile": [
+      "pre",
+      "code"
     ],
     "!=": [
-      "pre"
+      "pre",
+      "code"
     ],
     "file_type_disk": [
-      "pre"
+      "pre",
+      "code"
     ],
-    "{  //": [
-      "pre"
+    "//": [
+      "pre",
+      "code"
     ],
     "error": [
-      "pre"
+      "pre",
+      "code"
     ],
-    "handling  closehandlehfile);": [
-      "pre"
+    "handling": [
+      "pre",
+      "code"
     ],
-    "}}": [
-      "pre"
+    "closehandlehfile": [
+      "pre",
+      "code"
     ]
   },
   "tags": {},

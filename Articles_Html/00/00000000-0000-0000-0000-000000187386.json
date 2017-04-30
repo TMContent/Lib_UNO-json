@@ -1,13 +1,12 @@
 {
   "id": "00000000-0000-0000-0000-000000187386",
-  "checksum": "807d5b5fbf7a7b3bec7484f0e83ce1b9",
+  "checksum": "4accb1035bbc77207aea3b00d02261ad",
   "words": {
-    "applies": [
+    "what": [
       "h2"
     ],
     "to": [
       "h2",
-      "h2",
       "p",
       "p",
       "p",
@@ -24,8 +23,6 @@
       "ol",
       "ol",
       "ol",
-      "ol",
-      "li",
       "li",
       "strong",
       "li",
@@ -37,13 +34,6 @@
       "strong",
       "li",
       "strong"
-    ],
-    "aspnet": [
-      "ul",
-      "li"
-    ],
-    "what": [
-      "h2"
     ],
     "do": [
       "h2",
@@ -81,8 +71,6 @@
       "ol",
       "ol",
       "ol",
-      "ol",
-      "li",
       "li",
       "strong",
       "li",
@@ -116,8 +104,6 @@
       "ol",
       "ol",
       "ol",
-      "ol",
-      "li",
       "li",
       "strong",
       "li",
@@ -200,8 +186,6 @@
       "ol",
       "ol",
       "ol",
-      "ol",
-      "li",
       "li",
       "li",
       "li",
@@ -228,8 +212,6 @@
       "p",
       "ol",
       "ol",
-      "ol",
-      "li",
       "li",
       "li"
     ],
@@ -250,7 +232,10 @@
       "p",
       "p",
       "p",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "might": [
       "p"
@@ -390,11 +375,15 @@
     "injection": [
       "p",
       "p",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "vulnerabilities": [
       "p",
-      "p"
+      "p",
+      "h2"
     ],
     "your": [
       "p"
@@ -425,9 +414,7 @@
       "p"
     ],
     "apis": [
-      "p",
-      "ol",
-      "li"
+      "p"
     ],
     "used": [
       "p"
@@ -481,23 +468,10 @@
       "li",
       "strong"
     ],
-    "search": [
-      "ol",
-      "li"
-    ],
-    "for": [
-      "ol",
+    "all": [
       "ol",
       "li",
-      "li"
-    ],
-    "following": [
-      "ol",
-      "li"
-    ],
-    "find": [
-      "ol",
-      "li"
+      "strong"
     ],
     "that": [
       "ol",
@@ -505,35 +479,12 @@
       "ol",
       "ol",
       "ol",
-      "ol",
-      "li",
       "li",
       "li",
       "strong",
       "li",
       "li",
       "li"
-    ],
-    "executes": [
-      "ol",
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "li"
-    ],
-    "appcommandhandlerexecutecommand,": [
-      "ol",
-      "li"
-    ],
-    "systemdiagnostics.process.": [
-      "ol",
-      "li"
-    ],
-    "all": [
-      "ol",
-      "li",
-      "strong"
     ],
     "include": [
       "ol",
@@ -618,6 +569,10 @@
       "li",
       "strong"
     ],
+    "for": [
+      "ol",
+      "li"
+    ],
     "each": [
       "ol",
       "ol",
@@ -625,6 +580,12 @@
       "li"
     ],
     "piece": [
+      "ol",
+      "ol",
+      "li",
+      "li"
+    ],
+    "executes": [
       "ol",
       "ol",
       "li",
@@ -665,14 +626,13 @@
     "remove": [
       "ol",
       "li"
-    ],
-    "appcommandhandlerexecutecommand": [
-      "em"
-    ],
-    "systemdiagnostics.process": [
-      "em"
     ]
   },
   "tags": {},
-  "links": []
+  "links": [
+    {
+      "href": "94e52aca-06b6-4747-9bc9-f0149208f18c",
+      "text": "Command Injection"
+    }
+  ]
 }

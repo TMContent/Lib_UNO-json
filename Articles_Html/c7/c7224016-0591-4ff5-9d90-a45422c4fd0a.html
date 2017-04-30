@@ -1,0 +1,36 @@
+<h2>Applies To</h2>
+<ul>
+<li>Ruby</li>
+</ul>
+<h2>Problem Example</h2>
+<pre><code>#! /usr/bin/env ruby
+if ARGV.length == 0
+	puts &quot;Usage: #{$0} [lines]&quot;
+	exit
+end
+
+cmdname = &quot;/usr/bin/tail&quot;
+cmd = &quot;#{cmdname} -#{ARGV[0]} /etc/passwd&quot;
+system(cmd)
+</code></pre>
+<h2>Solution Example</h2>
+<pre><code>#! /usr/bin/env ruby
+if ARGV.length &lt;= 1
+	puts &quot;Usage: #{$0} [lines] [text]&quot;
+	exit
+end
+
+
+IO.popen(['/usr/bin/tail',&quot;-&quot;+ARGV[0]], 'r+') {|pipe|
+	# Provide input to stdin 
+	1.upto(100) { |i| pipe &lt;&lt; i.to_s + &quot; - &quot; + ARGV[1] + &quot;\n&quot; }
+	pipe.close_write
+	# Redirect stdout to file
+	output = pipe.read
+	File.open('output_file', 'w') { |f| f.write(output) }
+}
+</code></pre>
+<h2>Guideline</h2>
+<ul>
+<li><a href="042253ce-3fe6-4138-926b-c3169ec0ea78">Separate Parameters from Command Names</a></li>
+</ul>

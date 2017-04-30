@@ -1,0 +1,29 @@
+<h2>Applies To</h2>
+<ul>
+<li>Ruby</li>
+</ul>
+<h2>Solution Example</h2>
+<pre><code>#! /usr/bin/env ruby
+require 'FileUtils'
+
+tmp_dir = &quot;./mytmp&quot;
+
+#Create a directory only the current user can access
+FileUtils.mkdir tmp_dir
+FileUtils.chmod_R 0700, tmp_dir
+
+begin
+	tmp = File.new tmp_dir + &quot;/temporary_data&quot;, &quot;w&quot;
+	begin
+		tmp &lt;&lt; &quot;Temporary data to be written\n&quot;
+		tmp.close
+		puts IO.read(tmp.path)
+	ensure
+		# Cleanup temporary file once done
+		FileUtils.remove tmp_dir + &quot;/temporary_data&quot;
+	end
+ensure
+	# Cleanup secure temporary directory once execution ends
+	FileUtils.remove_dir tmp_dir, true
+end
+</code></pre>

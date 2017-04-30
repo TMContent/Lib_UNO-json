@@ -31,7 +31,7 @@
 <li>
 <p><strong>Encode data in JSON contexts.</strong> With RoR 3, use the <code>json_escape</code> function to encode data in JSON contexts. To accomplish this, pass the output of <code>to_json</code> to <code>json_escape</code> in the following manner:</p>
 <pre><code> &lt;script&gt;
-     var user = &lt;%= json_escape(@user.to_json) %&gt;;
+ 	var user = &lt;%= json_escape(@user.to_json) %&gt;;
  &lt;/script&gt;
 </code></pre>
 </li>
@@ -48,3 +48,7 @@
 <p><strong>Do not display untrusted data in other contexts.</strong> If your application uses contexts other than mentioned above, avoid the use of untrusted data. Generally, if it is known that output data is being safely encoded for the correct context, then it can be used.</p>
 </li>
 </ol>
+<h2>Guideline</h2>
+<ul>
+<li><a href="9b0ef1a5-c143-4e64-81cc-9e02ccbd9fbd">Encode Untrusted Data in Output</a></li>
+</ul>

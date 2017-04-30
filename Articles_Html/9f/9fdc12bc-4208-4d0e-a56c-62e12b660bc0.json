@@ -20,6 +20,12 @@
       "blockquote",
       "pre"
     ],
+    "133501": [
+      "ol",
+      "li",
+      "blockquote",
+      "pre"
+    ],
     "what": [
       "h1"
     ],
@@ -439,10 +445,13 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "li",
       "li",
+      "li",
+      "ul",
       "ul",
       "ul",
       "ul",
@@ -452,10 +461,14 @@
       "li",
       "li",
       "li",
+      "li",
+      "ul",
       "ul",
       "ul",
       "ul",
       "li",
+      "li",
+      "p",
       "p",
       "li",
       "p",
@@ -469,11 +482,14 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "p",
       "p",
       "li",
+      "li",
+      "p",
       "p",
       "li",
       "ul",
@@ -489,7 +505,11 @@
       "p"
     ],
     "users": [
-      "p"
+      "p",
+      "ol",
+      "li",
+      "ul",
+      "li"
     ],
     "or": [
       "p",
@@ -639,7 +659,10 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
+      "li",
+      "p",
       "p",
       "li",
       "li",
@@ -697,6 +720,7 @@
       "p",
       "p",
       "p",
+      "p",
       "ol",
       "ol",
       "ol",
@@ -709,6 +733,8 @@
       "ol",
       "ol",
       "ol",
+      "ol",
+      "li",
       "li",
       "li",
       "li",
@@ -727,6 +753,7 @@
       "ul",
       "ul",
       "ul",
+      "ul",
       "li",
       "p",
       "li",
@@ -736,6 +763,7 @@
       "li",
       "li",
       "li",
+      "li",
       "p",
       "p",
       "ul",
@@ -743,9 +771,12 @@
       "ul",
       "ul",
       "ul",
+      "ul",
       "li",
       "li",
       "li",
+      "li",
+      "p",
       "p",
       "p",
       "p",
@@ -786,6 +817,7 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "li",
@@ -800,6 +832,8 @@
       "li",
       "li",
       "li",
+      "li",
+      "p",
       "p",
       "p",
       "p",
@@ -996,6 +1030,7 @@
     ],
     "in": [
       "p",
+      "p",
       "ol",
       "ol",
       "li",
@@ -1122,10 +1157,14 @@
       "p",
       "p"
     ],
-    "attacker in": [
+    "attacker": [
+      "p",
       "p"
     ],
-    "accessing the": [
+    "accessing": [
+      "p",
+      "ol",
+      "li",
       "p"
     ],
     "on": [
@@ -1642,6 +1681,9 @@
       "li",
       "p",
       "ol",
+      "ol",
+      "li",
+      "p",
       "li",
       "p",
       "h1",
@@ -1791,7 +1833,7 @@
       "pre",
       "pre"
     ],
-    "drivermanagergetconnection(\"jdbc:oracle:thin:@testbox:1521:orcl2\",": [
+    "drivermanagergetconnectionjdbcoraclethin@testbox1521orcl2": [
       "ol",
       "li",
       "ul",
@@ -1802,7 +1844,7 @@
       "blockquote",
       "pre"
     ],
-    "\"myapp\"": [
+    "myapp": [
       "ol",
       "li",
       "ul",
@@ -1815,16 +1857,26 @@
       "blockquote",
       "pre"
     ],
-    "\"password\";": [
+    "password": [
+      "ol",
       "ol",
       "li",
+      "li",
+      "ul",
       "ul",
       "li",
       "pre",
+      "li",
+      "ul",
+      "li",
+      "p",
+      "ol",
       "ol",
       "li",
       "blockquote",
       "pre",
+      "li",
+      "p",
       "blockquote",
       "pre"
     ],
@@ -2060,18 +2112,6 @@
       "li",
       "p"
     ],
-    "the password": [
-      "ol",
-      "li",
-      "ul",
-      "li",
-      "ul",
-      "li",
-      "p",
-      "ol",
-      "li",
-      "p"
-    ],
     "keystore": [
       "ol",
       "li",
@@ -2109,7 +2149,7 @@
       "p",
       "p"
     ],
-    "application properties": [
+    "properties": [
       "ol",
       "li",
       "ul",
@@ -2118,8 +2158,36 @@
       "li",
       "p",
       "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
       "li",
-      "p"
+      "li",
+      "li",
+      "li",
+      "li",
+      "blockquote",
+      "blockquote",
+      "blockquote",
+      "blockquote",
+      "blockquote",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "li",
+      "li",
+      "p",
+      "blockquote",
+      "pre",
+      "blockquote",
+      "blockquote",
+      "pre",
+      "pre"
     ],
     "this": [
       "ol",
@@ -2233,7 +2301,17 @@
       "li",
       "ul",
       "li",
-      "p"
+      "p",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "blockquote",
+      "blockquote",
+      "pre",
+      "pre",
+      "blockquote",
+      "pre"
     ],
     "3des": [
       "ol",
@@ -2607,28 +2685,17 @@
       "blockquote",
       "pre"
     ],
-    "1335:01": [
-      "ol",
-      "li",
-      "blockquote",
-      "pre"
-    ],
     "edt": [
       "ol",
       "li",
       "blockquote",
       "pre"
     ],
-    "2006connection=jdbcoracle:thin:@testbox:1521:orcl2user=myapppassword=password": [
+    "2006connection=jdbcoraclethin@testbox1521orcl2user=myapppassword=password": [
       "ol",
       "li",
       "blockquote",
       "pre"
-    ],
-    "accessing": [
-      "ol",
-      "li",
-      "p"
     ],
     "public": [
       "ol",
@@ -2642,36 +2709,18 @@
       "blockquote",
       "pre"
     ],
-    "properties": [
+    "loaddatabasecredentials": [
       "ol",
-      "ol",
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "li",
-      "blockquote",
-      "blockquote",
-      "blockquote",
-      "pre",
-      "pre",
-      "pre",
-      "li",
-      "blockquote",
-      "pre",
-      "blockquote",
-      "blockquote",
-      "pre",
-      "pre"
-    ],
-    "loaddatabasecredentials)": [
       "ol",
       "ol",
       "li",
       "blockquote",
       "pre",
       "li",
+      "li",
       "blockquote",
+      "blockquote",
+      "pre",
       "pre",
       "blockquote",
       "pre"
@@ -2726,6 +2775,8 @@
       "pre",
       "pre",
       "blockquote",
+      "blockquote",
+      "pre",
       "pre"
     ],
     "new": [
@@ -2796,16 +2847,6 @@
       "pre",
       "pre"
     ],
-    "properties);": [
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "blockquote",
-      "blockquote",
-      "pre",
-      "pre"
-    ],
     "inputstream": [
       "ol",
       "ol",
@@ -2846,7 +2887,7 @@
       "blockquote",
       "pre"
     ],
-    "fileinputstream\"../../config/testprop.config\");": [
+    "fileinputstream//config/testpropconfig": [
       "ol",
       "ol",
       "li",
@@ -2856,7 +2897,7 @@
       "pre",
       "pre"
     ],
-    "propload(propstream);": [
+    "proploadpropstream": [
       "ol",
       "ol",
       "ol",
@@ -2876,7 +2917,7 @@
       "blockquote",
       "pre"
     ],
-    "propstreamclose();": [
+    "propstreamclose": [
       "ol",
       "ol",
       "ol",
@@ -2922,7 +2963,7 @@
       "blockquote",
       "pre"
     ],
-    "getconnectionurl)": [
+    "getconnectionurl": [
       "ol",
       "ol",
       "li",
@@ -2932,7 +2973,7 @@
       "blockquote",
       "pre"
     ],
-    "propgetproperty(\"connection\");}": [
+    "propgetpropertyconnection}": [
       "ol",
       "li",
       "blockquote",
@@ -2966,30 +3007,11 @@
       "li",
       "p"
     ],
-    "files example:": [
-      "ol",
-      "li",
-      "p"
-    ],
-    "drivermanagergetconnection(getconnectionurl(),": [
+    "drivermanagergetconnectiongetconnectionurl": [
       "ol",
       "li",
       "blockquote",
       "pre",
-      "blockquote",
-      "pre",
-      "blockquote",
-      "pre"
-    ],
-    "loaddatabasecredentials));": [
-      "ol",
-      "li",
-      "blockquote",
-      "pre"
-    ],
-    "..": [
-      "ol",
-      "li",
       "blockquote",
       "pre",
       "blockquote",
@@ -3076,7 +3098,7 @@
       "blockquote",
       "pre"
     ],
-    "byte]": [
+    "byte": [
       "ol",
       "ol",
       "ol",
@@ -3110,7 +3132,7 @@
       "blockquote",
       "pre"
     ],
-    "getencryptionkey);": [
+    "getencryptionkey": [
       "ol",
       "ol",
       "li",
@@ -3137,28 +3159,26 @@
     "skeyspec": [
       "ol",
       "ol",
-      "li",
-      "li",
-      "blockquote",
-      "blockquote",
-      "pre",
-      "pre",
-      "blockquote",
-      "pre"
-    ],
-    "secretkeyspecrawkey,": [
       "ol",
       "ol",
       "li",
       "li",
+      "li",
+      "li",
+      "blockquote",
+      "blockquote",
       "blockquote",
       "blockquote",
       "pre",
       "pre",
+      "pre",
+      "pre",
       "blockquote",
+      "blockquote",
+      "pre",
       "pre"
     ],
-    "\"aes\";": [
+    "secretkeyspecrawkey": [
       "ol",
       "ol",
       "li",
@@ -3192,7 +3212,7 @@
       "pre",
       "pre"
     ],
-    "ciphergetinstance(\"aes\");": [
+    "ciphergetinstanceaes": [
       "ol",
       "ol",
       "li",
@@ -3204,19 +3224,7 @@
       "blockquote",
       "pre"
     ],
-    "cipherinit(cipher.decrypt_mode,": [
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "blockquote",
-      "blockquote",
-      "pre",
-      "pre",
-      "blockquote",
-      "pre"
-    ],
-    "skeyspec;": [
+    "cipherinitcipherdecrypt_mode": [
       "ol",
       "ol",
       "li",
@@ -3252,7 +3260,7 @@
       "blockquote",
       "pre"
     ],
-    "file\"../../config/testprop.config\");": [
+    "file//config/testpropconfig": [
       "ol",
       "ol",
       "li",
@@ -3276,7 +3284,7 @@
       "blockquote",
       "pre"
     ],
-    "byte(int)configfile.length()];": [
+    "byteintconfigfilelength": [
       "ol",
       "ol",
       "li",
@@ -3312,7 +3320,7 @@
       "blockquote",
       "pre"
     ],
-    "fileinputstreamconfigfile);": [
+    "fileinputstreamconfigfile": [
       "ol",
       "ol",
       "li",
@@ -3324,7 +3332,7 @@
       "blockquote",
       "pre"
     ],
-    "filestreamread(tempbuff,": [
+    "filestreamreadtempbuff": [
       "ol",
       "ol",
       "li",
@@ -3336,7 +3344,7 @@
       "blockquote",
       "pre"
     ],
-    "tempbufflength);": [
+    "tempbufflength": [
       "ol",
       "ol",
       "li",
@@ -3348,7 +3356,7 @@
       "blockquote",
       "pre"
     ],
-    "bytearrayinputstreamcipher.dofinal(tempbuff));": [
+    "bytearrayinputstreamcipherdofinaltempbuff": [
       "ol",
       "ol",
       "li",
@@ -3360,7 +3368,7 @@
       "blockquote",
       "pre"
     ],
-    "filestreamclose();": [
+    "filestreamclose": [
       "ol",
       "ol",
       "li",
@@ -3372,7 +3380,7 @@
       "blockquote",
       "pre"
     ],
-    "propgetproperty(\"connection\");}public": [
+    "propgetpropertyconnection}public": [
       "ol",
       "li",
       "blockquote",
@@ -3448,7 +3456,7 @@
       "ul",
       "li"
     ],
-    "users who": [
+    "who": [
       "ol",
       "li",
       "ul",
@@ -3605,11 +3613,11 @@
       "a",
       "h1"
     ],
-    "drivermanagerregisterdriver(new": [
+    "drivermanagerregisterdrivernew": [
       "blockquote",
       "pre"
     ],
-    "oraclejdbc.driver.oracledriver());connection": [
+    "oraclejdbcdriveroracledriverconnection": [
       "blockquote",
       "pre",
       "blockquote",
@@ -3621,9 +3629,6 @@
     "loads": [
       "p"
     ],
-    "attacker": [
-      "p"
-    ],
     "compromises": [
       "p"
     ],
@@ -3633,11 +3638,7 @@
     "cannot": [
       "p"
     ],
-    "loaddatabasecredentials);drivermanager.registerdriver(new": [
-      "blockquote",
-      "pre"
-    ],
-    "prop;": [
+    "loaddatabasecredentialsdrivermanagerregisterdrivernew": [
       "blockquote",
       "pre"
     ],
@@ -3863,7 +3864,7 @@
       "li",
       "a"
     ],
-    "jpa)": [
+    "jpa": [
       "ul",
       "li",
       "a"

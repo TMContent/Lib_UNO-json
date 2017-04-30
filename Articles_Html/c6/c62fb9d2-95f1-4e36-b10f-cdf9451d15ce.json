@@ -1,12 +1,32 @@
 {
   "id": "c62fb9d2-95f1-4e36-b10f-cdf9451d15ce",
-  "checksum": "049c1e47ac604fc5aaaeda247da2d9c4",
+  "checksum": "ef443601b15b1127c4e80c31f8f377fe",
   "words": {
+    "0": [
+      "pre",
+      "code",
+      "pre",
+      "code",
+      "pre",
+      "code"
+    ],
+    "1": [
+      "pre",
+      "code",
+      "pre",
+      "code",
+      "pre",
+      "code"
+    ],
     "2": [
       "pre",
       "code",
       "pre",
       "code",
+      "pre",
+      "code"
+    ],
+    "8": [
       "pre",
       "code"
     ],
@@ -60,8 +80,6 @@
       "li"
     ],
     "c": [
-      "ul",
-      "li",
       "ul",
       "li"
     ],
@@ -287,9 +305,7 @@
       "p",
       "p",
       "pre",
-      "code",
-      "ul",
-      "li"
+      "code"
     ],
     "data": [
       "p",
@@ -399,8 +415,6 @@
       "pre",
       "code",
       "ul",
-      "ul",
-      "li",
       "li"
     ],
     "can": [
@@ -624,6 +638,7 @@
       "p",
       "ol",
       "ol",
+      "ol",
       "li",
       "p",
       "li",
@@ -752,6 +767,7 @@
       "p",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "p",
@@ -814,6 +830,10 @@
       "strong",
       "li",
       "p",
+      "pre",
+      "code",
+      "pre",
+      "code",
       "p",
       "pre",
       "code",
@@ -860,7 +880,9 @@
       "p"
     ],
     "overflows": [
-      "p"
+      "p",
+      "pre",
+      "code"
     ],
     "identify": [
       "ol",
@@ -875,6 +897,7 @@
       "strong"
     ],
     "strings": [
+      "ol",
       "ol",
       "li",
       "li",
@@ -956,9 +979,7 @@
     "copies": [
       "ol",
       "li",
-      "p",
-      "ul",
-      "li"
+      "p"
     ],
     "many": [
       "ol",
@@ -980,8 +1001,12 @@
       "li",
       "p"
     ],
-    "strings\n\n\ncalculate": [
-      "ol"
+    "calculate": [
+      "ol",
+      "li",
+      "p",
+      "strong",
+      "p"
     ],
     "memory": [
       "ol",
@@ -1093,7 +1118,13 @@
       "li",
       "li",
       "p",
-      "p"
+      "p",
+      "pre",
+      "code",
+      "pre",
+      "code",
+      "pre",
+      "code"
     ],
     "terminated": [
       "ol",
@@ -1169,7 +1200,7 @@
       "li",
       "p"
     ],
-    "sizeof)": [
+    "sizeof": [
       "ol",
       "li",
       "p"
@@ -1305,9 +1336,6 @@
       "code",
       "p"
     ],
-    "copying\n\n\nallocate": [
-      "ol"
-    ],
     "once": [
       "ol",
       "li",
@@ -1326,9 +1354,7 @@
     "sufficient": [
       "ol",
       "li",
-      "p",
-      "ul",
-      "li"
+      "p"
     ],
     "write": [
       "ol",
@@ -1348,8 +1374,16 @@
       "li",
       "p"
     ],
-    "errors\n\n\ncheck": [
-      "ol"
+    "errors": [
+      "ol",
+      "li",
+      "p"
+    ],
+    "check": [
+      "ol",
+      "li",
+      "p",
+      "strong"
     ],
     "bounds": [
       "ol",
@@ -1378,9 +1412,7 @@
       "li",
       "li",
       "p",
-      "p",
-      "ul",
-      "li"
+      "p"
     ],
     "this": [
       "ol",
@@ -1449,21 +1481,6 @@
       "pre",
       "code"
     ],
-    "calculate": [
-      "li",
-      "p",
-      "strong",
-      "p"
-    ],
-    "errors": [
-      "li",
-      "p"
-    ],
-    "check": [
-      "li",
-      "p",
-      "strong"
-    ],
     "problem": [
       "h2"
     ],
@@ -1480,13 +1497,27 @@
     ],
     "#include": [
       "pre",
+      "pre",
+      "code",
+      "code",
+      "pre",
+      "pre",
+      "code",
+      "code",
+      "pre",
+      "pre",
+      "code",
+      "code"
+    ],
+    "stdioh": [
+      "pre",
       "code",
       "pre",
       "code",
       "pre",
       "code"
     ],
-    "stdio.h>\n#include": [
+    "stringh": [
       "pre",
       "code",
       "pre",
@@ -1494,12 +1525,16 @@
       "pre",
       "code"
     ],
-    "string.h>\n\nint": [
+    "int": [
       "pre",
       "code",
       "pre",
+      "pre",
+      "code",
       "code",
       "pre",
+      "pre",
+      "code",
       "code"
     ],
     "mainint": [
@@ -1526,14 +1561,48 @@
     ],
     "char": [
       "pre",
+      "pre",
+      "code",
+      "code",
+      "pre",
+      "pre",
+      "code",
+      "code",
+      "pre",
+      "pre",
+      "code",
+      "code"
+    ],
+    "*argv": [
+      "pre",
       "code",
       "pre",
       "code",
       "pre",
       "code"
     ],
-    "*argv])\n{\n//": [
+    "{": [
       "pre",
+      "code",
+      "pre",
+      "code",
+      "pre",
+      "code"
+    ],
+    "//": [
+      "pre",
+      "pre",
+      "pre",
+      "code",
+      "code",
+      "code",
+      "pre",
+      "pre",
+      "code",
+      "code",
+      "pre",
+      "pre",
+      "code",
       "code"
     ],
     "one": [
@@ -1545,7 +1614,7 @@
       "pre",
       "code"
     ],
-    "executableif": [
+    "executable": [
       "pre",
       "code"
     ],
@@ -1559,18 +1628,16 @@
     ],
     "return": [
       "pre",
-      "code",
       "pre",
       "code",
-      "pre",
-      "code"
-    ],
-    "0\n\n//": [
-      "pre",
       "code",
       "pre",
+      "pre",
+      "code",
       "code",
       "pre",
+      "pre",
+      "code",
       "code"
     ],
     "correspond": [
@@ -1579,23 +1646,23 @@
       "pre",
       "code"
     ],
-    "copiedchar": [
+    "buffer8": [
       "pre",
       "code"
     ],
-    "buffer8];\n//": [
+    "strcpybuffer": [
       "pre",
       "code"
     ],
-    "overflowsstrcpy(buffer,": [
+    "argv1": [
+      "pre",
+      "code",
+      "pre",
+      "code",
       "pre",
       "code"
     ],
-    "argv1]);\nreturn": [
-      "pre",
-      "code"
-    ],
-    "1\n}": [
+    "}": [
       "pre",
       "code",
       "pre",
@@ -1617,20 +1684,14 @@
       "p",
       "p"
     ],
-    "*argv])\n{\nif": [
-      "pre",
-      "code",
-      "pre",
-      "code"
-    ],
-    "copiedint": [
-      "pre",
-      "code"
-    ],
     "buffersize": [
       "pre",
+      "pre",
+      "code",
       "code",
       "pre",
+      "pre",
+      "code",
       "code"
     ],
     "=": [
@@ -1639,11 +1700,7 @@
       "pre",
       "code"
     ],
-    "8\nchar": [
-      "pre",
-      "code"
-    ],
-    "bufferbuffersize];\n//": [
+    "bufferbuffersize": [
       "pre",
       "code",
       "pre",
@@ -1672,19 +1729,13 @@
       "code",
       "code"
     ],
-    "occursstrncpy(buffer,": [
+    "occurs": [
       "pre",
       "code",
       "pre",
       "code"
     ],
-    "argv1],": [
-      "pre",
-      "code",
-      "pre",
-      "code"
-    ],
-    "buffersize;\nreturn": [
+    "strncpybuffer": [
       "pre",
       "code",
       "pre",
@@ -1718,11 +1769,11 @@
       "pre",
       "code"
     ],
-    "occurint": [
+    "occur": [
       "pre",
       "code"
     ],
-    "sizeofargv[1]);\nchar": [
+    "sizeofargv1": [
       "pre",
       "code"
     ],
@@ -1750,48 +1801,18 @@
     ],
     "storage": [
       "ul",
-      "ul",
-      "li",
-      "li"
-    ],
-    "please": [
-      "ul",
       "li"
     ],
     "see": [
       "ul",
       "li"
     ],
-    "\"arr33": [
-      "ul",
-      "li"
-    ],
-    "guarantee": [
-      "ul",
-      "li"
-    ],
-    "are": [
-      "ul",
-      "li"
-    ],
-    "made": [
-      "ul",
-      "li"
-    ],
-    "size\"": [
-      "ul",
-      "li"
-    ],
-    "at": [
-      "ul",
-      "li"
-    ],
-    "https//www.securecoding.cert.org/confluence/display/c/void+arr33": [
+    "https//wwwsecurecodingcertorg/confluence/display/c/arr38": [
       "ul",
       "li",
       "a"
     ],
-    "c.+guarantee+that+copies+are+made+into+storage+of+sufficient+size": [
+    "c+guarantee+that+library+functions+do+not+form+invalid+pointers": [
       "ul",
       "li",
       "a"
@@ -1800,8 +1821,8 @@
   "tags": {},
   "links": [
     {
-      "href": "https://www.securecoding.cert.org/confluence/display/c/void+ARR33-C.+Guarantee+that+copies+are+made+into+storage+of+sufficient+size",
-      "text": "https://www.securecoding.cert.org/confluence/display/c/void+ARR33-C.+Guarantee+that+copies+are+made+into+storage+of+sufficient+size"
+      "href": "https://www.securecoding.cert.org/confluence/display/c/ARR38-C.+Guarantee+that+library+functions+do+not+form+invalid+pointers",
+      "text": "https://www.securecoding.cert.org/confluence/display/c/ARR38-C.+Guarantee+that+library+functions+do+not+form+invalid+pointers"
     }
   ]
 }

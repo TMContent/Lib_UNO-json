@@ -1,11 +1,6 @@
-<h2>Applies To</h2>
-<ul>
-<li>Ruby</li>
-</ul>
 <h2>What to Do</h2>
 <p>Perform access control checks for all sensitive operations. Sensitive operations include any access to system resources, such as files, and any access to application data. Define the different types of users and create specific roles for them. When authorizing access to a resource, build the security checks on a per-role basis rather than on a per-user basis.</p>
 <h2>Why</h2>
-<p>With Ruby, everything is an object. A developer needs to consistently address the permissions on objects as they are created, updated, or destroyed.</p>
 <p>Performing an operation without checking authorization may expose sensitive data to attackers. Direct object reference attacks are very simple to execute and have been used in high profile, low-skill attacks. Checking access control permissions whenever referencing objects helps prevent direct object reference vulnerabilities.</p>
 <p>Application roles allow multiple users to play the same role, and provide a clear way to manage the least privileges necessary for the execution of a given task. This provides a more robust and flexible way of managing the application's users.</p>
 <h2>How</h2>

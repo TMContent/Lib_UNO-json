@@ -1,0 +1,42 @@
+<h2>Applies To</h2>
+<ul>
+<li>Ruby</li>
+</ul>
+<h2>Solution Example</h2>
+<pre><code>#! /usr/bin/env ruby
+
+require 'etc'
+if not ARGV.length == 2
+	puts &quot;Usage: #{$0} [username] [group name]&quot;
+	exit
+end
+
+def drop_privileges(user, primary_group, extra_groups=nil)
+	if not Process::Sys.geteuid == 0
+		return
+	end
+	uid = Etc.getpwnam(user).uid
+	gid = Etc.getgrnam(primary_group).gid
+	
+	Process.groups = [gid]
+	if not extra_groups == nil
+		extra_groups do |gr|
+			Process.groups |= Etc.getgrnam(gr).gid
+		end
+	end
+	Process::Sys.setgid(gid)
+	Process::Sys.setuid(uid)
+end
+
+begin
+	drop_privileges(ARGV[0], ARGV[1])
+rescue Errno::EPERM, Errno::EAGAIN =&gt; err
+	puts &quot;Error: Unable to successfully drop privileges.&quot;
+	exit
+end
+
+until false
+	puts &quot;Sleeping&quot;
+	sleep 1
+end
+</code></pre>

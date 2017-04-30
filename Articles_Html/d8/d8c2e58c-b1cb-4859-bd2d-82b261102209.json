@@ -1,6 +1,6 @@
 {
   "id": "d8c2e58c-b1cb-4859-bd2d-82b261102209",
-  "checksum": "25afcc8ce39e2320fef99456bfbe9996",
+  "checksum": "86b4091953f115e118e195dcf1bda12f",
   "words": {
     "description": [
       "h1"
@@ -20,6 +20,13 @@
       "p",
       "p",
       "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "a",
+      "p",
+      "ul",
       "li",
       "a",
       "title"
@@ -29,6 +36,14 @@
       "p",
       "p",
       "p",
+      "p",
+      "p",
+      "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "a",
       "p",
       "p",
       "ul",
@@ -72,6 +87,7 @@
       "p"
     ],
     "databases": [
+      "p",
       "p"
     ],
     "one": [
@@ -92,9 +108,6 @@
     ],
     "hard": [
       "p",
-      "ul",
-      "li",
-      "a",
       "title"
     ],
     "code": [
@@ -163,7 +176,13 @@
       "p"
     ],
     "with": [
-      "p"
+      "p",
+      "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "a"
     ],
     "able": [
       "p",
@@ -200,14 +219,12 @@
     "recovered": [
       "p"
     ],
-    "he": [
+    "they": [
       "p",
       "p"
     ],
     "can": [
-      "p"
-    ],
-    "databases).": [
+      "p",
       "p"
     ],
     "impact": [
@@ -222,8 +239,7 @@
       "p",
       "p"
     ],
-    "may": [
-      "p",
+    "might": [
       "p"
     ],
     "be": [
@@ -262,7 +278,10 @@
       "p"
     ],
     "on": [
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "level": [
       "p",
@@ -299,9 +318,9 @@
     "in": [
       "p",
       "p",
-      "ul",
-      "li",
-      "a",
+      "p",
+      "p",
+      "p",
       "title"
     ],
     "structure": [
@@ -352,7 +371,12 @@
       "p"
     ],
     "are": [
-      "p"
+      "p",
+      "p",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "configured": [
       "p"
@@ -378,16 +402,62 @@
       "p"
     ],
     "store": [
+      "p",
       "p"
     ],
     "protected": [
+      "p",
+      "p",
+      "p",
       "p"
     ],
     "configuration": [
+      "p",
+      "p",
+      "p",
       "p"
     ],
     "files": [
+      "p",
+      "p",
+      "p",
       "p"
+    ],
+    "encrypt": [
+      "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "a"
+    ],
+    "sql": [
+      "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "a"
+    ],
+    "dpapi": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "rsa": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "web": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "farms": [
+      "ul",
+      "li",
+      "a"
     ],
     "check": [
       "h1",
@@ -412,52 +482,47 @@
       "p"
     ],
     "that": [
+      "p",
       "p"
     ],
     "uses": [
       "p"
     ],
-    "find": [
+    "ensure": [
       "p"
     ],
-    "where": [
+    "connections": [
       "p"
     ],
-    "it": [
+    "stored": [
+      "p",
       "p"
     ],
-    "stores": [
-      "p"
-    ],
-    "specific": [
-      "h1"
-    ],
-    "technologies": [
-      "h1"
-    ],
-    "aspnet": [
+    "encrypted": [
       "ul",
       "li",
       "a"
     ],
     "coded": [
-      "ul",
-      "li",
-      "a",
       "title"
     ],
     "passwords": [
-      "ul",
-      "li",
-      "a",
       "title"
     ]
   },
   "tags": {},
   "links": [
     {
-      "href": "e2c41ebb-f288-4a3d-a901-360be6e630f5",
-      "text": "ASP.NET Hard-coded Passwords in Connection Strings"
+      "href": "612e1d5c-8b41-43ef-a203-daa6f814c57b",
+      "text": "Encrypt SQL Connection Strings with DPAPI"
+    },
+    {
+      "href": "b42bbac5-7441-436a-92a5-a0d05593c62c",
+      "text": "Encrypt SQL Connection Strings with RSA on Web Farms"
+    },
+    {
+      "href": "eb8d54d3-1d59-4d33-ba54-b69df5d2eb74",
+      "text": "Connection Strings Are Encrypted"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "id": "847115bd-af70-4563-8218-d178a28d46f8",
-  "checksum": "a2c39216b174275970dd6a91c38fd576",
+  "checksum": "42eb259380fa8eeb0db3bc21f728b393",
   "words": {
     "2014": [
       "p"
@@ -21,15 +21,6 @@
       "p",
       "p",
       "p",
-      "ul",
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a",
-      "li",
-      "a",
       "title"
     ],
     "of": [
@@ -66,15 +57,6 @@
       "p",
       "p",
       "p",
-      "ul",
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a",
-      "li",
-      "a",
       "title"
     ],
     "functionality": [
@@ -91,14 +73,11 @@
       "p",
       "p",
       "p",
+      "ul",
+      "li",
+      "a",
       "p",
       "ul",
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a",
       "li",
       "a",
       "title"
@@ -125,7 +104,13 @@
     ],
     "when": [
       "p",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a",
+      "ul",
+      "li",
+      "a"
     ],
     "the": [
       "p",
@@ -319,7 +304,10 @@
       "p",
       "p",
       "p",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "some": [
       "p",
@@ -432,15 +420,17 @@
       "p",
       "p",
       "p",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "highly": [
       "p"
     ],
     "specific": [
       "p",
-      "p",
-      "h2"
+      "p"
     ],
     "": [
       "p",
@@ -507,7 +497,13 @@
       "p",
       "p",
       "p",
-      "p"
+      "ul",
+      "li",
+      "a",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "exact": [
       "p"
@@ -661,6 +657,7 @@
       "p"
     ],
     "vulnerability": [
+      "p",
       "p",
       "p"
     ],
@@ -848,7 +845,7 @@
     "plan": [
       "p"
     ],
-    "\"fix\"": [
+    "fix": [
       "p"
     ],
     "even": [
@@ -901,9 +898,6 @@
       "p"
     ],
     "typically": [
-      "p"
-    ],
-    "vulnerability.": [
       "p"
     ],
     "target": [
@@ -1097,12 +1091,24 @@
     "dangerous": [
       "p",
       "p",
-      "p"
+      "ul",
+      "li",
+      "a",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "functions": [
       "p",
       "p",
-      "p"
+      "ul",
+      "li",
+      "a",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "only": [
       "p"
@@ -1114,11 +1120,20 @@
       "p"
     ],
     "disable": [
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "default": [
       "p",
-      "p"
+      "ul",
+      "li",
+      "a",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "measures": [
       "p"
@@ -1135,6 +1150,32 @@
     "successful": [
       "p"
     ],
+    "force": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "reauthentication": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "executing": [
+      "ul",
+      "li",
+      "a",
+      "ul",
+      "li",
+      "a"
+    ],
+    "critical": [
+      "ul",
+      "li",
+      "a",
+      "ul",
+      "li",
+      "a"
+    ],
     "check": [
       "h2"
     ],
@@ -1148,7 +1189,10 @@
       "p"
     ],
     "authentication": [
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "required": [
       "p"
@@ -1160,22 +1204,17 @@
       "p"
     ],
     "disabled": [
-      "p"
-    ],
-    "technologies": [
-      "h2"
-    ],
-    "aspnet": [
+      "p",
       "ul",
       "li",
       "a"
     ],
-    "java": [
+    "re": [
       "ul",
       "li",
       "a"
     ],
-    "php": [
+    "enforced": [
       "ul",
       "li",
       "a"
@@ -1184,16 +1223,20 @@
   "tags": {},
   "links": [
     {
-      "href": "719e0f46-1135-4102-9213-0a701f389c61",
-      "text": "ASP.NET Abuse of Functionality"
+      "href": "76ac1eca-258c-47b0-aaff-265d70fc5666",
+      "text": "Force Reauthentication When Executing Critical Functionality"
     },
     {
-      "href": "2895d1d0-318b-4d7e-a428-cd03d2076970",
-      "text": "Java Abuse of Functionality"
+      "href": "70a6ebf7-c48c-4bc8-a387-f1e13b6b87e7",
+      "text": "Disable Dangerous Functions by Default"
     },
     {
-      "href": "58f29253-537a-482f-ab52-561a1ea4407e",
-      "text": "PHP Abuse of Functionality"
+      "href": "0c6a261a-14e8-4c36-838d-17b4a8b6532c",
+      "text": "Re-authentication Is Enforced When Executing Critical Functionality"
+    },
+    {
+      "href": "27c44978-3b5a-4f90-aa45-d3c52a1f0e0d",
+      "text": "Dangerous Functions Are Disabled by Default"
     }
   ]
 }

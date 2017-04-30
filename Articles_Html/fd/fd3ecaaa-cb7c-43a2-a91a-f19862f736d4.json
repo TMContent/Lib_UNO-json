@@ -977,7 +977,7 @@
     "scripting": [
       "p"
     ],
-    "xss)": [
+    "xss": [
       "p"
     ],
     "well": [
@@ -1033,7 +1033,7 @@
     "asp": [
       "p"
     ],
-    "etc)": [
+    "etc": [
       "p"
     ],
     "means": [
@@ -1086,7 +1086,9 @@
       "p",
       "p",
       "p",
-      "p"
+      "p",
+      "p",
+      "em"
     ],
     "source": [
       "p",
@@ -1151,7 +1153,10 @@
       "ol",
       "li"
     ],
-    "rfi)": [
+    "rfi": [
+      "p",
+      "p",
+      "p",
       "p",
       "p"
     ],
@@ -1185,10 +1190,10 @@
     "trusted": [
       "p"
     ],
-    "http//some_site/example.jsp?includefile=http://trusted_site/remote.jsp": [
+    "http//some_site/examplejsp?includefile=http//trusted_site/remotejsp": [
       "pre"
     ],
-    "http//trusted_site/remote.jsp": [
+    "http//trusted_site/remotejsp": [
       "strong"
     ],
     "allows": [
@@ -1200,7 +1205,7 @@
     "order": [
       "p"
     ],
-    "http//some_site/example.jsp?includefile=http://attacker_site/attack.jsp": [
+    "http//some_site/examplejsp?includefile=http//attacker_site/attackjsp": [
       "pre"
     ],
     "detail": [
@@ -1284,9 +1289,6 @@
     "improper": [
       "p"
     ],
-    "rfi).": [
-      "p"
-    ],
     "even": [
       "p"
     ],
@@ -1304,10 +1306,6 @@
       "p"
     ],
     "php": [
-      "p"
-    ],
-    "rfi": [
-      "p",
       "p"
     ],
     "caused": [
@@ -1341,11 +1339,7 @@
       "p",
       "p"
     ],
-    "include>": [
-      "p",
-      "em"
-    ],
-    "jsp:include>": [
+    "jspinclude": [
       "p",
       "em"
     ],
@@ -1397,12 +1391,14 @@
     "library’s": [
       "p"
     ],
-    "jstl)": [
+    "jstl": [
+      "p",
       "p"
     ],
-    "c:import>": [
+    "cimport": [
       "p",
       "em",
+      "pre",
       "p",
       "em"
     ],
@@ -1412,46 +1408,58 @@
     "taglib": [
       "pre"
     ],
-    "prefix=\"c\"": [
+    "prefix=c": [
       "pre"
     ],
-    "uri=\"http//java.sun.com/jstl/core\"": [
+    "uri=http//javasuncom/jstl/core": [
       "pre"
     ],
-    "%\r\n<c:catch": [
+    "%": [
       "pre"
     ],
-    "var=\"ex\"\r\n<c:import": [
+    "ccatch": [
       "pre"
     ],
-    "url=\"%=": [
+    "var=ex": [
       "pre"
     ],
-    "requestgetparameter(\\\"sourcefile\\\")": [
+    "url=%=": [
       "pre"
     ],
-    "%\"/>\r\n</c:catch>\r\n<c:if": [
+    "requestgetparameter\\sourcefile\\": [
       "pre"
     ],
-    "test=\"${not": [
+    "%/": [
+      "pre"
+    ],
+    "/ccatch": [
+      "pre"
+    ],
+    "cif": [
+      "pre"
+    ],
+    "test=${not": [
       "pre"
     ],
     "empty": [
       "pre"
     ],
-    "ex}\"": [
+    "ex}": [
       "pre"
     ],
-    "\r\nerror:": [
+    "error": [
       "pre"
     ],
-    "c:out": [
+    "cout": [
       "pre"
     ],
-    "value=\"message\"": [
+    "value=message": [
       "pre"
     ],
-    "/\r\n</c:if>": [
+    "/": [
+      "pre"
+    ],
+    "/cif": [
       "pre"
     ],
     "above": [
@@ -1491,7 +1499,7 @@
     "through": [
       "p"
     ],
-    "http//some_site/example.jsp?sourcefile=http://attacker_site/attack.jsp": [
+    "http//some_site/examplejsp?sourcefile=http//attacker_site/attackjsp": [
       "pre"
     ],
     "depending": [
@@ -1504,9 +1512,6 @@
       "p"
     ],
     "methods": [
-      "p"
-    ],
-    "jstl": [
       "p"
     ],
     "example": [
@@ -1549,20 +1554,18 @@
       "p",
       "p"
     ],
-    "i.e.": [
+    "ie": [
       "p"
     ],
-    "parameters,": [
+    "parameters": [
+      "p",
+      "p",
       "p"
     ],
     "sure": [
       "p"
     ],
     "any": [
-      "p",
-      "p"
-    ],
-    "parameters": [
       "p",
       "p"
     ],
@@ -1599,7 +1602,7 @@
     "regular": [
       "p"
     ],
-    "expression.": [
+    "expression": [
       "p"
     ],
     "check": [
@@ -1667,12 +1670,12 @@
       "ol",
       "li"
     ],
-    "jsp:text>application": [
+    "jsptextapplication": [
       "ol",
       "li",
       "font"
     ],
-    "vulnerable/jsp:text>": [
+    "vulnerable/jsptext": [
       "ol",
       "li",
       "font"
@@ -1685,7 +1688,7 @@
       "ol",
       "li"
     ],
-    "http//test_site/test.jsp": [
+    "http//test_site/testjsp": [
       "ol",
       "li",
       "font"

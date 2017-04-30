@@ -47,10 +47,8 @@
       "p",
       "title"
     ],
-    "systemsc\nc++\nlinux\nwindows": [
-      "ul"
-    ],
     "systems": [
+      "ul",
       "li",
       "p",
       "p",
@@ -61,15 +59,19 @@
       "title"
     ],
     "c": [
+      "ul",
       "li"
     ],
     "c++": [
+      "ul",
       "li"
     ],
     "linux": [
+      "ul",
       "li"
     ],
     "windows": [
+      "ul",
       "li",
       "p"
     ],
@@ -314,6 +316,7 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "p",
       "li",
@@ -484,6 +487,7 @@
     "identify": [
       "p",
       "ol",
+      "ol",
       "li",
       "p",
       "strong",
@@ -518,6 +522,7 @@
     ],
     "it": [
       "p",
+      "ol",
       "li",
       "p"
     ],
@@ -529,6 +534,7 @@
     ],
     "provide": [
       "p",
+      "ol",
       "ol",
       "li",
       "li",
@@ -629,6 +635,7 @@
     ],
     "design": [
       "p",
+      "ol",
       "li",
       "p",
       "strong"
@@ -640,6 +647,7 @@
       "p",
       "p",
       "p",
+      "ol",
       "ol",
       "li",
       "li",
@@ -804,7 +812,12 @@
       "li",
       "p"
     ],
-    "vulnerabilities\nthese": [
+    "vulnerabilities": [
+      "p"
+    ],
+    "these": [
+      "p",
+      "p",
       "p"
     ],
     "precautions": [
@@ -902,10 +915,6 @@
     "when": [
       "h2"
     ],
-    "these": [
-      "p",
-      "p"
-    ],
     "any": [
       "p"
     ],
@@ -934,7 +943,16 @@
     "from": [
       "p"
     ],
-    "sources\nusing": [
+    "sources": [
+      "p"
+    ],
+    "using": [
+      "p",
+      "ol",
+      "ol",
+      "li",
+      "p",
+      "li",
       "p"
     ],
     "especially": [
@@ -1043,9 +1061,6 @@
       "li",
       "p"
     ],
-    "not\n\n\nidentify": [
-      "ol"
-    ],
     "platform": [
       "ol",
       "ol",
@@ -1073,8 +1088,10 @@
       "li",
       "p"
     ],
-    "distribution\n\n\ndesign": [
-      "ol"
+    "distribution": [
+      "ol",
+      "li",
+      "p"
     ],
     "several": [
       "ol",
@@ -1169,8 +1186,10 @@
       "li",
       "p"
     ],
-    "need\n\n\nprovide": [
-      "ol"
+    "need": [
+      "ol",
+      "li",
+      "p"
     ],
     "configuration": [
       "ol",
@@ -1252,17 +1271,6 @@
       "p",
       "li",
       "p"
-    ],
-    "using": [
-      "ol",
-      "ol",
-      "li",
-      "p",
-      "li",
-      "p"
-    ],
-    "it\n\n\nuse": [
-      "ol"
     ],
     "role": [
       "ol",
@@ -1364,8 +1372,19 @@
       "li",
       "p"
     ],
-    "compromise\n\n\nsecure": [
-      "ol"
+    "compromise": [
+      "ol",
+      "li",
+      "p"
+    ],
+    "secure": [
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
+      "p",
+      "strong"
     ],
     "consult": [
       "ol",
@@ -1397,14 +1416,6 @@
       "li",
       "p"
     ],
-    "secure": [
-      "ol",
-      "li",
-      "li",
-      "p",
-      "p",
-      "strong"
-    ],
     "rely": [
       "ol",
       "li",
@@ -1427,18 +1438,6 @@
     ],
     "level": [
       "ol",
-      "li",
-      "p"
-    ],
-    "distribution": [
-      "li",
-      "p"
-    ],
-    "need": [
-      "li",
-      "p"
-    ],
-    "compromise": [
       "li",
       "p"
     ]

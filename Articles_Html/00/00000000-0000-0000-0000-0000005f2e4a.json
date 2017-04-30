@@ -9,6 +9,15 @@
       "p",
       "p"
     ],
+    "24355": [
+      "pre"
+    ],
+    "50624": [
+      "pre"
+    ],
+    "222409760": [
+      "pre"
+    ],
     "applies": [
       "h2"
     ],
@@ -98,8 +107,18 @@
       "li",
       "strong"
     ],
-    "tls).": [
-      "p"
+    "tls": [
+      "p",
+      "p",
+      "ol",
+      "ol",
+      "li",
+      "strong",
+      "li",
+      "p",
+      "p",
+      "pre",
+      "title"
     ],
     "why": [
       "h2"
@@ -111,17 +130,6 @@
       "p",
       "ol",
       "li"
-    ],
-    "tls": [
-      "p",
-      "ol",
-      "ol",
-      "li",
-      "strong",
-      "li",
-      "p",
-      "p",
-      "title"
     ],
     "protects": [
       "p"
@@ -311,10 +319,16 @@
       "pre"
     ],
     "not": [
-      "p"
+      "p",
+      "pre",
+      "pre"
     ],
-    "encrypted)": [
-      "p"
+    "encrypted": [
+      "p",
+      "pre",
+      "pre",
+      "pre",
+      "pre"
     ],
     "use": [
       "p",
@@ -532,6 +546,7 @@
       "li",
       "strong",
       "p",
+      "pre",
       "pre"
     ],
     "connecting": [
@@ -581,7 +596,9 @@
     "ws": [
       "ol",
       "li",
-      "p"
+      "p",
+      "pre",
+      "pre"
     ],
     "over": [
       "ol",
@@ -595,7 +612,7 @@
       "ol",
       "li"
     ],
-    "wss//<url>": [
+    "wss//url": [
       "ol",
       "li",
       "tt"
@@ -615,7 +632,7 @@
       "li",
       "p"
     ],
-    "ws//<url>": [
+    "ws//url": [
       "ol",
       "li",
       "tt"
@@ -651,6 +668,7 @@
       "pre",
       "pre",
       "p",
+      "pre",
       "pre"
     ],
     "uses": [
@@ -702,16 +720,32 @@
       "p",
       "p"
     ],
-    "$\"#open\").click": [
+    "$#openclick": [
       "pre"
     ],
     "function": [
       "pre"
     ],
-    "evt)": [
+    "evt": [
       "pre"
     ],
-    "{evt.preventdefault();\n\nvar": [
+    "{": [
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre"
+    ],
+    "evtpreventdefault": [
+      "pre",
+      "pre"
+    ],
+    "var": [
+      "pre",
+      "pre",
+      "pre",
+      "pre",
       "pre",
       "pre"
     ],
@@ -737,7 +771,7 @@
       "pre",
       "pre"
     ],
-    "‘examplecom’;\nvar": [
+    "‘examplecom’": [
       "pre",
       "pre"
     ],
@@ -749,7 +783,7 @@
       "pre",
       "p"
     ],
-    "‘8887’\nvar": [
+    "‘8887’": [
       "pre",
       "pre"
     ],
@@ -759,7 +793,7 @@
       "pre",
       "pre"
     ],
-    "‘very_private’\n\nws": [
+    "‘very_private’": [
       "pre",
       "pre"
     ],
@@ -767,7 +801,7 @@
       "pre",
       "pre"
     ],
-    "websocket\"ws://”": [
+    "websocketws//”": [
       "pre"
     ],
     "+": [
@@ -790,23 +824,19 @@
       "pre",
       "pre"
     ],
-    ";\n\nws.onmessage": [
-      "pre"
-    ],
-    "functionevt)": [
-      "pre",
-      "pre",
-      "pre",
-      "pre",
+    "wsonmessage": [
       "pre",
       "pre"
     ],
-    "{alert\"non": [
+    "functionevt": [
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
       "pre"
     ],
-    "encrypted": [
-      "pre",
-      "pre",
+    "{alertnon": [
       "pre"
     ],
     "message": [
@@ -817,24 +847,30 @@
       "pre",
       "pre"
     ],
-    "received”};\nws.onclose": [
+    "received”}": [
       "pre",
       "pre"
     ],
-    "{": [
+    "wsonclose": [
+      "pre",
+      "pre"
+    ],
+    "alertnon": [
+      "pre"
+    ],
+    "closed": [
+      "pre",
+      "pre"
+    ],
+    "}": [
+      "pre",
+      "pre",
       "pre",
       "pre",
       "pre",
       "pre"
     ],
-    "alert\"non": [
-      "pre"
-    ],
-    "closed\";": [
-      "pre",
-      "pre"
-    ],
-    "}\nws.onopen": [
+    "wsonopen": [
       "pre",
       "pre"
     ],
@@ -842,10 +878,6 @@
       "pre"
     ],
     "opened”": [
-      "pre",
-      "pre"
-    ],
-    "}\n});": [
       "pre",
       "pre"
     ],
@@ -873,19 +905,16 @@
     "difficult": [
       "p"
     ],
-    "$\"#open\").click(function(evt)": [
+    "$#openclickfunctionevt": [
       "pre"
     ],
-    "websocket\"wss://”": [
+    "websocketwss//”": [
       "pre"
     ],
-    ";\nws.onmessage": [
+    "{alerttls": [
       "pre"
     ],
-    "{alert\"tls": [
-      "pre"
-    ],
-    "alert\"tls": [
+    "alerttls": [
       "pre"
     ],
     "alert“tls": [
@@ -919,8 +948,9 @@
     "at": [
       "p"
     ],
-    "http//www.websocket.org/echo.html,": [
-      "p"
+    "http//wwwwebsocketorg/echohtml": [
+      "p",
+      "a"
     ],
     "view": [
       "p"
@@ -931,22 +961,22 @@
     "tool": [
       "p"
     ],
-    "http//www.websocket.org/echo.html": [
-      "a"
-    ],
     "http/11": [
       "pre"
     ],
-    "establishedfiddlergateway:": [
+    "established": [
       "pre"
     ],
-    "directstarttime:": [
+    "fiddlergateway": [
       "pre"
     ],
-    "2224:09.760\nconnection:": [
+    "direct": [
       "pre"
     ],
-    "close\nencrypted": [
+    "starttime": [
+      "pre"
+    ],
+    "close": [
       "pre"
     ],
     "traffic": [
@@ -989,16 +1019,19 @@
     "shown": [
       "pre"
     ],
-    "list\n\nsecure": [
+    "list": [
       "pre"
     ],
-    "tlscipher:": [
+    "cipher": [
       "pre"
     ],
     "rc4": [
       "pre"
     ],
-    "128bitshash": [
+    "128bits": [
+      "pre"
+    ],
+    "hash": [
       "pre"
     ],
     "algorithm": [
@@ -1007,7 +1040,10 @@
     "sha1": [
       "pre"
     ],
-    "160bitskey": [
+    "160bits": [
+      "pre"
+    ],
+    "key": [
       "pre"
     ],
     "exchange": [
@@ -1016,13 +1052,19 @@
     "rsakeyx": [
       "pre"
     ],
-    "2048bits\n==": [
+    "2048bits": [
       "pre"
     ],
-    "==========[subject]": [
+    "==": [
       "pre"
     ],
-    "cn=*websocket.org,": [
+    "==========": [
+      "pre"
+    ],
+    "subject": [
+      "pre"
+    ],
+    "cn=*websocketorg": [
       "pre"
     ],
     "ou=domain": [
@@ -1034,7 +1076,10 @@
     "validated": [
       "pre"
     ],
-    "o=*websocket.org\n\n[issuer]": [
+    "o=*websocketorg": [
+      "pre"
+    ],
+    "issuer": [
       "pre"
     ],
     "serialnumber=07969287": [
@@ -1052,13 +1097,13 @@
     "authority": [
       "pre"
     ],
-    "ou=http//certificates.godaddy.com/repository,": [
+    "ou=http//certificatesgodaddycom/repository": [
       "pre"
     ],
-    "o=\"godaddycom,": [
+    "o=godaddycom": [
       "pre"
     ],
-    "inc\",": [
+    "inc": [
       "pre"
     ],
     "l=scottsdale": [
@@ -1067,13 +1112,16 @@
     "s=arizona": [
       "pre"
     ],
-    "c=us\n[serial": [
+    "c=us": [
+      "pre"
+    ],
+    "serial": [
       "pre"
     ],
     "number": [
       "pre"
     ],
-    "27f9adf2db9921\n[not": [
+    "27f9adf2db9921": [
       "pre"
     ],
     "before": [
@@ -1082,10 +1130,7 @@
     "10/19/2012": [
       "pre"
     ],
-    "243:55": [
-      "pre"
-    ],
-    "am\n[not": [
+    "am": [
       "pre"
     ],
     "after": [
@@ -1094,10 +1139,10 @@
     "10/28/2014": [
       "pre"
     ],
-    "506:24": [
+    "pm": [
       "pre"
     ],
-    "pm\n[thumbprint]": [
+    "thumbprint": [
       "pre"
     ],
     "8a95feb7be9825fbe3f4f50a6662dc880764c876": [

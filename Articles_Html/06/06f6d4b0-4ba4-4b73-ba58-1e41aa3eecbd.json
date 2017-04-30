@@ -81,6 +81,7 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "p",
       "li",
@@ -560,14 +561,21 @@
     "including": [
       "p"
     ],
-    "execcommand),": [
-      "p"
+    "execcommand": [
+      "p",
+      "code"
     ],
-    "syscallcommand),": [
-      "p"
+    "syscallcommand": [
+      "p",
+      "code"
     ],
-    "systemcommand),": [
-      "p"
+    "systemcommand": [
+      "p",
+      "code",
+      "ol",
+      "li",
+      "p",
+      "code"
     ],
     "if": [
       "p",
@@ -734,6 +742,7 @@
     ],
     "executed": [
       "p",
+      "ol",
       "li",
       "p"
     ],
@@ -778,15 +787,6 @@
     ],
     "access": [
       "p"
-    ],
-    "execcommand)": [
-      "code"
-    ],
-    "syscallcommand)": [
-      "code"
-    ],
-    "systemcommand)": [
-      "code"
     ],
     "separated": [
       "p"
@@ -947,16 +947,13 @@
     "semicolon": [
       "p"
     ],
-    ";)": [
-      "p"
-    ],
     "vertical": [
       "p"
     ],
     "bar": [
       "p"
     ],
-    "|).": [
+    "|": [
       "p"
     ],
     "how": [
@@ -1103,8 +1100,11 @@
       "li",
       "p"
     ],
-    "executed\n\n\nidentify": [
-      "ol"
+    "identify": [
+      "ol",
+      "li",
+      "p",
+      "strong"
     ],
     "solutions": [
       "ol",
@@ -1195,8 +1195,20 @@
       "li",
       "p"
     ],
-    "downstream\n\n\navoid": [
-      "ol"
+    "downstream": [
+      "ol",
+      "li",
+      "p"
+    ],
+    "avoid": [
+      "ol",
+      "ol",
+      "li",
+      "p",
+      "strong",
+      "li",
+      "p",
+      "strong"
     ],
     "using": [
       "ol",
@@ -1354,8 +1366,10 @@
       "li",
       "p"
     ],
-    "techniques\n\n\navoid": [
-      "ol"
+    "techniques": [
+      "ol",
+      "li",
+      "p"
     ],
     "remove": [
       "ol",
@@ -1433,8 +1447,16 @@
       "li",
       "p"
     ],
-    "vulnerability\n\n\nvalidate": [
-      "ol"
+    "vulnerability": [
+      "ol",
+      "li",
+      "p"
+    ],
+    "validate": [
+      "ol",
+      "li",
+      "p",
+      "strong"
     ],
     "passed": [
       "ol",
@@ -1490,8 +1512,13 @@
       "li",
       "p"
     ],
-    "on\n\n\nuse": [
-      "ol"
+    "on": [
+      "ol",
+      "ol",
+      "li",
+      "p",
+      "li",
+      "p"
     ],
     "previously": [
       "ol",
@@ -1513,23 +1540,10 @@
       "li",
       "p"
     ],
-    "on": [
-      "ol",
-      "li",
-      "p",
-      "li",
-      "p"
-    ],
     "countermeasure": [
       "ol",
       "li",
       "p"
-    ],
-    "systemcommand,": [
-      "ol",
-      "li",
-      "p",
-      "code"
     ],
     "pass": [
       "ol",
@@ -1541,7 +1555,7 @@
       "li",
       "p"
     ],
-    "system\"/bin/echo\",\"hello;": [
+    "system/bin/echohello": [
       "ol",
       "li",
       "pre",
@@ -1557,7 +1571,7 @@
       "code",
       "code"
     ],
-    "*\"": [
+    "*": [
       "ol",
       "ol",
       "li",
@@ -1579,7 +1593,7 @@
       "pre",
       "code"
     ],
-    "\"hello": [
+    "hello": [
       "ol",
       "li",
       "pre",
@@ -1596,36 +1610,6 @@
       "li",
       "pre",
       "code"
-    ],
-    "identify": [
-      "li",
-      "p",
-      "strong"
-    ],
-    "downstream": [
-      "li",
-      "p"
-    ],
-    "avoid": [
-      "li",
-      "p",
-      "strong",
-      "li",
-      "p",
-      "strong"
-    ],
-    "techniques": [
-      "li",
-      "p"
-    ],
-    "vulnerability": [
-      "li",
-      "p"
-    ],
-    "validate": [
-      "li",
-      "p",
-      "strong"
     ]
   },
   "tags": {},

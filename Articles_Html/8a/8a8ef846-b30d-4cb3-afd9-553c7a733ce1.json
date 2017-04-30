@@ -1,6 +1,6 @@
 {
   "id": "8a8ef846-b30d-4cb3-afd9-553c7a733ce1",
-  "checksum": "246c61c86765f38072d1202dfdc963b1",
+  "checksum": "b379199d0dc0973b6fd3b6456fb2b0b6",
   "words": {
     "applies": [
       "h2"
@@ -119,6 +119,7 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "li",
@@ -137,7 +138,8 @@
       "code",
       "title"
     ],
-    "invalidate)": [
+    "invalidate": [
+      "p",
       "p"
     ],
     "application": [
@@ -301,7 +303,7 @@
     "accessible": [
       "p"
     ],
-    "logoff,": [
+    "logoff": [
       "p"
     ],
     "exit": [
@@ -346,6 +348,7 @@
     ],
     "page": [
       "p",
+      "ol",
       "li",
       "p"
     ],
@@ -369,9 +372,6 @@
     ],
     "how": [
       "h2"
-    ],
-    "invalidate": [
-      "p"
     ],
     "sessions": [
       "p",
@@ -447,8 +447,17 @@
       "li",
       "p"
     ],
-    "page\n\n\nadd": [
-      "ol"
+    "add": [
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
+      "p",
+      "strong",
+      "li",
+      "p"
     ],
     "log_out": [
       "ol",
@@ -479,17 +488,6 @@
       "p",
       "strong"
     ],
-    "add": [
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "p",
-      "p",
-      "strong",
-      "li",
-      "p"
-    ],
     "code": [
       "ol",
       "li",
@@ -519,7 +517,7 @@
       "pre",
       "code"
     ],
-    "sessiondelete(:user_id)": [
+    "sessiondeleteuser_id": [
       "ol",
       "li",
       "pre",
@@ -543,8 +541,15 @@
       "pre",
       "code"
     ],
-    "end\n\n\ndestroy": [
-      "ol"
+    "end": [
+      "ol",
+      "ol",
+      "li",
+      "pre",
+      "code",
+      "li",
+      "pre",
+      "code"
     ],
     "action": [
       "ol",
@@ -576,8 +581,11 @@
       "pre",
       "code"
     ],
-    "end\n\n\nmake": [
-      "ol"
+    "make": [
+      "ol",
+      "li",
+      "p",
+      "strong"
     ],
     "calls": [
       "ol",
@@ -594,19 +602,6 @@
       "ol",
       "li",
       "p"
-    ],
-    "end": [
-      "li",
-      "pre",
-      "code",
-      "li",
-      "pre",
-      "code"
-    ],
-    "make": [
-      "li",
-      "p",
-      "strong"
     ]
   },
   "tags": {},

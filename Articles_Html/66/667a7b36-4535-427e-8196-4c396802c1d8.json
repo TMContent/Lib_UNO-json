@@ -1,6 +1,6 @@
 {
   "id": "667a7b36-4535-427e-8196-4c396802c1d8",
-  "checksum": "a2614542ffc2535e0896347e0039d4e1",
+  "checksum": "54ee40c7027b7f1b2c73c2066de691fe",
   "words": {
     "description": [
       "h2"
@@ -12,15 +12,6 @@
       "p",
       "p",
       "p",
-      "ul",
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a",
-      "li",
-      "a",
       "title"
     ],
     "function": [
@@ -30,15 +21,6 @@
       "p",
       "p",
       "p",
-      "ul",
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a",
-      "li",
-      "a",
       "title"
     ],
     "level": [
@@ -47,15 +29,6 @@
       "p",
       "p",
       "p",
-      "ul",
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a",
-      "li",
-      "a",
       "title"
     ],
     "access": [
@@ -69,15 +42,6 @@
       "p",
       "p",
       "p",
-      "ul",
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a",
-      "li",
-      "a",
       "title"
     ],
     "control": [
@@ -89,15 +53,6 @@
       "p",
       "p",
       "p",
-      "ul",
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a",
-      "li",
-      "a",
       "title"
     ],
     "vulnerabilities": [
@@ -318,7 +273,10 @@
       "p"
     ],
     "is": [
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "most": [
       "p"
@@ -368,6 +326,35 @@
     "prevent": [
       "p"
     ],
+    "use": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "role": [
+      "ul",
+      "li",
+      "a",
+      "ul",
+      "li",
+      "a"
+    ],
+    "based": [
+      "ul",
+      "li",
+      "a",
+      "ul",
+      "li",
+      "a"
+    ],
+    "authorization": [
+      "ul",
+      "li",
+      "a",
+      "ul",
+      "li",
+      "a"
+    ],
     "make": [
       "p"
     ],
@@ -383,23 +370,7 @@
     "performed": [
       "p"
     ],
-    "specific": [
-      "h2"
-    ],
-    "technologies": [
-      "h2"
-    ],
-    "aspnet": [
-      "ul",
-      "li",
-      "a"
-    ],
-    "java": [
-      "ul",
-      "li",
-      "a"
-    ],
-    "php": [
+    "used": [
       "ul",
       "li",
       "a"
@@ -408,16 +379,12 @@
   "tags": {},
   "links": [
     {
-      "href": "d1346385-f9af-4192-8fd1-e1f2f8e8c7d3",
-      "text": "ASP.NET Missing Function Level Access Control"
+      "href": "f4c94908-7129-4f4c-bc23-917e7c029e2e",
+      "text": "Use Role-based Authorization"
     },
     {
-      "href": "5278856a-e94a-4c76-97bf-c2850ec6acdb",
-      "text": "Java Missing Function Level Access Control"
-    },
-    {
-      "href": "8189ae58-d5d2-4a69-b527-3ab6cc5708a7",
-      "text": "PHP Missing Function Level Access Control"
+      "href": "dae3b6ec-9ef1-4f5b-9aae-1604d9c7e1cc",
+      "text": "Role-based Authorization Is Used"
     }
   ]
 }

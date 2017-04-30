@@ -1,34 +1,21 @@
-<h2>Applies To</h2><ul><li> Web Applications Using Apache</li>
-</ul><h2>What to Check For</h2><p>Verify that Apache is configured to use only strong TLS ciphers.
+<h2>Applies To</h2><ul><li> Applications Using TLS</li>
+</ul><h2>What to Check For</h2><p>Verify that your application is configured to use only strong TLS ciphers.
 </p><h2>Why</h2><p>Using strong encryption algorithms with TLS helps reduce the risk of successful eavesdropping attacks and helps with regulatory compliance.
-</p><h2>How to Check</h2><p>To verify that Apache is configured to use only strong TLS ciphers, view the httpd.conf files and check the following settings: "SSLProtocol" and "SSLCipherSuite". The recommended settings are:
-</p><pre>
-
-SSLProtocol -all +TLSv1
-SSLCipherSuite HIGH:!aNULL:!SSLv2:!MD5:@STRENGTH
-SSLHonorCipherOrder on
-
-</pre><p>
-These settings enable only the TLS protocol and only the strong encryption cipher suites.
+</p><h2>How to Check</h2><p>A cipher suite is composed of four algorithms: a handshake a.k.a. key exchange algorithm, an authentication algorithm, an encryption algorithm and a hashing algorithm. The handshake algorithm is used to exchange the symmetric encryption key and is based on public key cryptography. The authentication algorithm is used to verify the certificates. The encryption algorithm is a symmetric encryption algorithm that is used to encrypt the communication itself. The hashing algorithm is used to hash messages to assure integrity by preventing tampering.
 </p><p>
-It may also be a good idea to check for the following line in case of old versions of apache/mod_ssl:
-</p><pre>
-
-SSLInsecureRenegotiation off
-
-</pre><h2>How to Fix</h2><p>To use only strong TLS algorithms, edit the httpd.conf file to include the following settings:
-</p><pre>
-
-SSLProtocol -all +TLSv1
-SSLCipherSuite HIGH:!aNULL:!SSLv2:!MD5:@STRENGTH
-SSLHonorCipherOrder on
-
-</pre><p>
-These settings enable only the TLS protocol and only the strong encryption cipher suites.
+To make sure you application uses strong TLS cipher suites:
+</p><ol>
+<li> <strong>Determine the TLS version.</strong> Make sure your application uses TLS 1.2. </li>
+<li> <strong>Find the TLS cipher suites enabled by your application.</strong> The following algorithms are considered strong: <br>Handshake algorithms: ECDHE, ECDH, DHE, and RSA.<br>Authentication algorithms: ECDSA and RSA.<br>Encryption algorithms: AESGCM, AES-128, and AES-256.<br>Hashing algorithms: SHA256, SHA384, and SHA512.</li>
+</ol><h2>How to Fix</h2><p>The current recommendation is to use TLS 1.2 and to drop support for earlier versions of TLS. Doing so can break compatibility with legacy systems. If you have to support some kind of legacy systems, you will have to research what secure cipher suites are supported by those systems and these cipher suites will probably not be the strongest available. This information will then dictate your choice of cipher suites, but it might turn out that there are no secure cipher suites supported by the legacy systems in question at all. In that case you will be forced to choose between breaking compatibility with those systems or using cipher suites with known vulnerabilities and using weak cipher suites is better than not using any encryption at all. It's a tough choice and we cannot make it for you. Our goal here is to recommend the cipher suites that are not affected by known vulnerabilities and work in practice with modern clients.
 </p><p>
-It may also be a good idea to include the following line in case of old versions of apache/mod_ssl:
-</p><pre>
-
-SSLInsecureRenegotiation off
-
-</pre>
+When choosing the handshake algorithm, you will have to determine whether you are interested in perfect forward secrecy. Perfect forward secrecy protects recorded sessions from being decrypted if the certificate is compromised in the future and is provided by choosing an ephemeral handshake algorithm. Forward secrecy can incur a significant performance toll for some algorithms.
+</p><p>
+Out of the ephemeral handshake algorithms, the Elliptic Curve Diffie–Hellman Ephemeral (ECDHE) implementation provides the best performance, especially when combined with the Elliptic Curve Digital Signature Algorithm (ECDSA) for authentication. In practice, many certificates are not signed using Elliptic Curve Digital Signatures, but are signed with RSA and when you use RSA signatures with ephemeral algorithms you take a major performance hit. If your certificates are not signed using Elliptic Curve signatures, you will have to consider whether performance or perfect forward secrecy are more important to you. It is difficult to quantify the performance overhead of ephemeral handshake algorithms in practical general terms, so it is best to benchmark it on real applications if numbers are important when making this decision. 
+</p><p>
+There are two main choices for authentication algorithms: Elliptic Curve Digital Signature Algorithm (ECDSA) and RSA. This choice is largely dictated by the Certificate Authority that issues the certificates. If your certificates are signed with RSA, as most of them are, then you will have to use RSA. ECDSA has better performance than RSA, especially when combined with an Elliptic Curve Diffie-Hellman Ephemeral handshake algorithm. You can enable them both, but ultimately the one that matches your certificates will be used.
+</p><p>
+The choice of encryption algorithms is simple and can be narrowed down to using flavors of the AES algorithm. The AES in Galois Counter Mode (AESGCM) is strongly recommended, but AES-256 and even AES-128 are currently acceptable. You don't have to choose just one, they are all acceptable and you can enable them all.
+</p><p>
+The choice of hashing algorithms is also simple and the recommended algorithms are SHA256, SHA384, and SHA512. These are all solid options, so you can't choose wrong and you might as well enable all of them.
+</p>

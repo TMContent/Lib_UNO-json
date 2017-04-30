@@ -1,27 +1,10 @@
 <h2>Applies To</h2>
 <ul>
-<li>Applications written using JSF (Java Server Faces).</li>
+<li>JSF (Java Server Faces).</li>
 </ul>
-<h2>What to Do</h2>
-<p>Use h:outputText to encode output for display in the HTML entity context. This provides protection from XSS attacks.</p>
-<h2>Why</h2>
-<p>The h:outputText tag HTML entity encodes the &lt;, &gt;, and &amp; characters. This prevents XSS in the HTML entity context and ensures dynamic input does not result in executable code when presented to a user.</p>
-<h2>When</h2>
-<p>h:outputText is a JSF (Java Server Faces) specific tag, and can only be used in JSF applications.</p>
+<h2>Summary</h2>
+<p>Use h:outputText to encode output for display in the HTML entity context. This provides protection from XSS attacks. The h:outputText tag HTML entity encodes the &lt;, &gt;, and &amp; characters. This prevents XSS in the HTML entity context and ensures dynamic input does not result in executable code when presented to a user.</p>
 <p>Using h:outputText is appropriate in the HTML Entity context. However, it should not be used in other contexts (such as CSS, URL, etc.) due to the limited number of characters it encodes, as well as the HTML entity specific encoding mechanism. The h:outputText tag should be used when data is displayed in view mode (non-editable) in the HTML entity context.</p>
-<h2>How</h2>
-<p>Encoding the echoed user input prevents injection attacks such as cross-site scripting. Use the following steps to ensure all echoed input is encoded:</p>
-<ol>
-<li>
-<p><strong>Identify all echoed input.</strong> Find code that displays untrusted data on web pages.</p>
-</li>
-<li>
-<p><strong>Determine the type of encoding.</strong> h:outputText should be used in only the HTML context.</p>
-</li>
-<li>
-<p><strong>Apply the encoding.</strong> After identifying the echoed input and determining the appropriate encoding method, apply the encoding before the input is returned to the client.</p>
-</li>
-</ol>
 <h2>Problem Example</h2>
 <p>The use of h:outputText is improper in these examples due to the inappropriate context or configuration. See the examples below:</p>
 <pre><code>&lt;a href=&quot;&lt;h:outputText value=&quot;#{myobj.myvar}&quot;/&gt;&quot;&gt;Some Website&lt;/a&gt;
@@ -44,3 +27,7 @@
 <pre><code>&lt;h:outputText value=&quot;#{myobj.myvar}&quot; escape=&quot;true&quot;/&gt;
 </code></pre>
 <p>Use of escape=&quot;true&quot; - ensures encoding occurs - true is the default.</p>
+<h2>Guideline</h2>
+<ul>
+<li><a href="9b0ef1a5-c143-4e64-81cc-9e02ccbd9fbd">Encode Untrusted Data in Output</a></li>
+</ul>

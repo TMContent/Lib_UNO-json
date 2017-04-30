@@ -283,7 +283,10 @@
       "li",
       "tt",
       "tt",
+      "pre",
       "p",
+      "pre",
+      "pre",
       "ul",
       "ul",
       "ul",
@@ -346,12 +349,19 @@
       "ol",
       "ol",
       "ol",
+      "ol",
+      "ol",
       "li",
+      "li",
+      "li",
+      "tt",
+      "tt",
       "li",
       "li",
       "tt",
       "tt",
       "p",
+      "pre",
       "ul",
       "ul",
       "ul",
@@ -592,7 +602,7 @@
     "overlay": [
       "p"
     ],
-    "hide)": [
+    "hide": [
       "p"
     ],
     "clickable": [
@@ -727,7 +737,8 @@
       "p",
       "p",
       "p",
-      "p"
+      "p",
+      "pre"
     ],
     "thus": [
       "p"
@@ -846,10 +857,8 @@
     "indicator": [
       "p"
     ],
-    "uri)": [
-      "p"
-    ],
     "uri": [
+      "p",
       "p",
       "p"
     ],
@@ -1059,8 +1068,10 @@
       "li",
       "strong",
       "p",
+      "pre",
       "p",
-      "p"
+      "p",
+      "pre"
     ],
     "take": [
       "ol",
@@ -1089,7 +1100,9 @@
     "by": [
       "ol",
       "li",
-      "p"
+      "p",
+      "pre",
+      "pre"
     ],
     "make": [
       "ol",
@@ -1134,7 +1147,9 @@
       "li"
     ],
     "set": [
-      "p"
+      "p",
+      "pre",
+      "pre"
     ],
     "one": [
       "p"
@@ -1276,12 +1291,16 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "tt",
       "li",
+      "li",
+      "tt",
       "p",
-      "p"
+      "p",
+      "pre"
     ],
     "any": [
       "ol",
@@ -1322,6 +1341,9 @@
     ],
     "sameorigin": [
       "ol",
+      "ol",
+      "li",
+      "tt",
       "li",
       "tt"
     ],
@@ -1369,31 +1391,12 @@
       "li",
       "li"
     ],
-    "header\"x": [
+    "headerx": [
       "ol",
       "ol",
       "li",
       "li",
       "tt",
-      "tt"
-    ],
-    "options:": [
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "tt",
-      "tt",
-      "pre"
-    ],
-    "deny\";": [
-      "ol",
-      "li",
-      "tt"
-    ],
-    "sameorigin\";": [
-      "ol",
-      "li",
       "tt"
     ],
     "implement": [
@@ -1413,6 +1416,8 @@
       "ol",
       "ol",
       "ol",
+      "ol",
+      "li",
       "li",
       "li",
       "li",
@@ -1426,6 +1431,7 @@
       "tt",
       "tt",
       "tt",
+      "tt",
       "tt"
     ],
     "each": [
@@ -1436,16 +1442,28 @@
     "name": [
       "ol",
       "ol",
+      "ol",
+      "ol",
       "li",
-      "li"
+      "li",
+      "li",
+      "li",
+      "tt",
+      "tt"
     ],
     "class": [
       "ol",
       "ol",
       "ol",
+      "ol",
+      "ol",
       "li",
       "li",
-      "li"
+      "li",
+      "li",
+      "li",
+      "tt",
+      "tt"
     ],
     "arbitrary": [
       "ol",
@@ -1455,7 +1473,7 @@
       "ol",
       "li"
     ],
-    "javaxservlet.filter": [
+    "javaxservletfilter": [
       "ol",
       "li"
     ],
@@ -1527,7 +1545,10 @@
     ],
     "httpservletresponse": [
       "ol",
+      "ol",
       "li",
+      "li",
+      "tt",
       "tt"
     ],
     "=": [
@@ -1535,32 +1556,25 @@
       "li",
       "tt"
     ],
-    "httpservletresponse)": [
-      "ol",
-      "li",
-      "tt"
-    ],
     "resp": [
       "ol",
+      "ol",
       "li",
+      "li",
+      "tt",
       "tt"
     ],
-    "responseaddheader(“x": [
+    "responseaddheader“x": [
       "ol",
       "li",
       "tt"
     ],
-    "options”,”deny”);": [
+    "options””deny”": [
       "ol",
       "li",
       "tt"
     ],
-    "chaindofilter(req,": [
-      "ol",
-      "li",
-      "tt"
-    ],
-    "resp;": [
+    "chaindofilterreq": [
       "ol",
       "li",
       "tt"
@@ -1588,12 +1602,7 @@
       "ol",
       "li"
     ],
-    "filter>": [
-      "ol",
-      "li",
-      "tt"
-    ],
-    "name>xframeoptionfilter</filter": [
+    "namexframeoptionfilter/filter": [
       "ol",
       "ol",
       "li",
@@ -1601,23 +1610,7 @@
       "tt",
       "tt"
     ],
-    "name>": [
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "tt",
-      "tt"
-    ],
-    "class>": [
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "tt",
-      "tt"
-    ],
-    "comexample.servlet.filters.xframeoptionfilter": [
+    "comexampleservletfiltersxframeoptionfilter": [
       "ol",
       "li",
       "tt"
@@ -1625,17 +1618,15 @@
     "/filter": [
       "ol",
       "ol",
+      "ol",
+      "li",
       "li",
       "li",
       "tt",
+      "tt",
       "tt"
     ],
-    "/filter>": [
-      "ol",
-      "li",
-      "tt"
-    ],
-    "mapping>": [
+    "mapping": [
       "ol",
       "ol",
       "li",
@@ -1648,12 +1639,12 @@
       "li",
       "tt"
     ],
-    "pattern>/*</url": [
+    "pattern/*/url": [
       "ol",
       "li",
       "tt"
     ],
-    "pattern>": [
+    "pattern": [
       "ol",
       "li",
       "tt"
@@ -1723,7 +1714,8 @@
     "says": [
       "p"
     ],
-    "\"click": [
+    "click": [
+      "p",
       "p"
     ],
     "here": [
@@ -1736,10 +1728,8 @@
       "p",
       "pre"
     ],
-    "sports\"": [
-      "p"
-    ],
     "sports": [
+      "p",
       "p"
     ],
     "news": [
@@ -1752,71 +1742,73 @@
     "“likes”": [
       "p"
     ],
-    "html>": [
+    "html": [
       "pre"
     ],
-    "head>": [
+    "head": [
       "pre"
     ],
-    "title>sports": [
+    "titlesports": [
       "pre"
     ],
-    "page/title>": [
+    "page/title": [
       "pre"
     ],
-    "/head>": [
+    "/head": [
       "pre"
     ],
-    "body\">": [
+    "body": [
       "pre"
     ],
     "div": [
       "pre"
     ],
-    "style=\"positionabsolute;": [
+    "style=positionabsolute": [
       "pre"
     ],
-    "left100px;": [
+    "left100px": [
       "pre"
     ],
-    "top100px;\">click": [
+    "top100pxclick": [
       "pre"
     ],
-    "sports!/div>\n<iframe": [
+    "sports!/div": [
       "pre"
     ],
-    "style=\"opacity0;\"": [
+    "style=opacity0": [
       "pre"
     ],
-    "height=\"500\"": [
+    "height=500": [
       "pre"
     ],
-    "width=\"500\"": [
+    "width=500": [
       "pre"
     ],
-    "scrolling=\"no\"": [
+    "scrolling=no": [
       "pre"
     ],
-    "src=\"http//www.example.com/social_media_like_it.php\"></iframe>": [
+    "src=http//wwwexamplecom/social_media_like_itphp/iframe": [
       "pre"
     ],
-    "/body>": [
+    "/body": [
       "pre"
     ],
-    "/html>": [
+    "/html": [
       "pre"
     ],
-    "http//www.example.com/social_media_like_it.php:": [
-      "p"
-    ],
-    "http//www.example.com/social_media_like_it.php": [
+    "http//wwwexamplecom/social_media_like_itphp": [
+      "p",
       "a"
     ],
     "http/11": [
       "pre",
       "pre"
     ],
-    "okdate:": [
+    "ok": [
+      "pre",
+      "pre"
+    ],
+    "date": [
       "pre",
       "pre"
     ],
@@ -1828,26 +1820,26 @@
       "pre",
       "pre"
     ],
-    "0523:17": [
+    "052317": [
       "pre"
     ],
-    "gmtserver:": [
+    "gmt": [
       "pre",
       "pre"
     ],
-    "apache/22.16": [
+    "apache/2216": [
       "pre",
       "pre"
     ],
-    "win32)": [
+    "win32": [
       "pre",
       "pre"
     ],
-    "mod_ssl/22.16": [
+    "mod_ssl/2216": [
       "pre",
       "pre"
     ],
-    "openssl/09.8o\nx": [
+    "openssl/098o": [
       "pre",
       "pre"
     ],
@@ -1855,35 +1847,39 @@
       "pre",
       "pre"
     ],
-    "by:": [
+    "php/538": [
       "pre",
       "pre"
     ],
-    "php/53.8": [
+    "zs550": [
       "pre",
       "pre"
     ],
-    "zs5.5.0": [
+    "zendserver": [
       "pre",
       "pre"
     ],
-    "zendserverset": [
+    "cookie": [
       "pre",
       "pre"
     ],
-    "cookie:": [
+    "zdedebuggerpresent=phpphtmlphp3": [
       "pre",
       "pre"
     ],
-    "zdedebuggerpresent=phpphtml,php3;": [
+    "path=/": [
       "pre",
       "pre"
     ],
-    "path=/keep": [
+    "keep": [
+      "pre",
+      "pre",
       "pre",
       "pre"
     ],
-    "alive:": [
+    "alive": [
+      "pre",
+      "pre",
       "pre",
       "pre"
     ],
@@ -1891,26 +1887,30 @@
       "pre",
       "pre"
     ],
-    "max=100connection:": [
+    "max=100": [
       "pre"
     ],
-    "keep": [
+    "connection": [
       "pre",
       "pre"
     ],
-    "alivetransfer": [
+    "transfer": [
       "pre",
       "pre"
     ],
-    "encoding:": [
+    "encoding": [
       "pre",
       "pre"
     ],
-    "chunkedcontent": [
+    "chunked": [
       "pre",
       "pre"
     ],
-    "type:": [
+    "content": [
+      "pre",
+      "pre"
+    ],
+    "type": [
       "pre",
       "pre"
     ],
@@ -1951,16 +1951,10 @@
     "possibility": [
       "p"
     ],
-    "click": [
-      "p"
-    ],
-    "0533:43": [
+    "053343": [
       "pre"
     ],
-    "denyx": [
-      "pre"
-    ],
-    "max=99connection:": [
+    "max=99": [
       "pre"
     ],
     "additional": [
@@ -2001,7 +1995,7 @@
       "li",
       "li"
     ],
-    "http//tools.ietf.org/html/draft": [
+    "http//toolsietforg/html/draft": [
       "ul",
       "li",
       "a"
@@ -2021,7 +2015,7 @@
       "li",
       "a"
     ],
-    "https//developer.mozilla.org/en": [
+    "https//developermozillaorg/en": [
       "ul",
       "li",
       "a"
@@ -2031,7 +2025,7 @@
       "li",
       "a"
     ],
-    "https//www.owasp.org/index.php/clickjacking": [
+    "https//wwwowasporg/indexphp/clickjacking": [
       "ul",
       "li",
       "a"

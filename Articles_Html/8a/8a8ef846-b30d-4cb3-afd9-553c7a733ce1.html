@@ -18,16 +18,16 @@
 <li>
 <p><strong>Add <code>log_out</code> method to helper.</strong> Add code for the <code>log_out</code> method to <em>sessions_helper</em> module.</p>
 <pre><code> def log_out
-     session.delete(:user_id)
-     @current_user = nil
+ 	session.delete(:user_id)
+ 	@current_user = nil
  end
 </code></pre>
 </li>
 <li>
 <p><strong>Destroy the session.</strong> Add the <code>log_out</code> method to the <code>destroy</code> action in the <em>sessions_controller</em> module:</p>
 <pre><code> def destroy
-     log_out
-     redirect_to root_url
+ 	log_out
+ 	redirect_to root_url
  end
 </code></pre>
 </li>

@@ -36,4 +36,9 @@ system(&quot;/usr/bin/touch &quot; . escapeshellarg($_REQUEST['arg']));
 <p>You really should never have to use escapeshellcmd(), because you're not supposed to be using untrusted input to specify which commands to execute. Technically, the reason for escapeshellcmd() is that it's supposed to be used when untrusted input is used to specify an arbitrary number of parameters to the command that is being executed. If you are doing this, it is probably a bad idea. However, just for the sake of completeness, escapeshellcmd() is used like this:</p>
 <pre><code>&lt;?php
 system(escapeshellcmd(&quot;/usr/bin/touch &quot; . $_REQUEST['arg']));
-?&gt;</code></pre>
+?&gt;
+</code></pre>
+<h2>Guideline</h2>
+<ul>
+<li><a href="042253ce-3fe6-4138-926b-c3169ec0ea78">Separate Parameters from Command Names</a></li>
+</ul>

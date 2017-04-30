@@ -1,7 +1,13 @@
 {
   "id": "ade5d3bf-536b-4a8e-a4b7-34bd804cc0d1",
-  "checksum": "2102f3e189096d61e50bb4de754b1bcc",
+  "checksum": "b946b500d2bd0e58f609c8d22edae0b7",
   "words": {
+    "0": [
+      "ol",
+      "li",
+      "pre",
+      "code"
+    ],
     "1": [
       "ol",
       "ol",
@@ -43,26 +49,28 @@
       "strong",
       "title"
     ],
-    "cc++\nlinux\nwindows\nembedded": [
-      "ul"
-    ],
-    "systems": [
+    "c": [
       "ul",
       "li"
     ],
-    "c": [
-      "li"
-    ],
     "c++": [
+      "ul",
       "li"
     ],
     "linux": [
+      "ul",
       "li"
     ],
     "windows": [
+      "ul",
       "li"
     ],
     "embedded": [
+      "ul",
+      "li"
+    ],
+    "systems": [
+      "ul",
       "li"
     ],
     "what": [
@@ -138,6 +146,7 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "pre",
       "code",
@@ -161,10 +170,13 @@
       "li",
       "li",
       "li",
+      "li",
       "p",
       "p",
       "strong",
       "pre",
+      "pre",
+      "code",
       "code"
     ],
     "value": [
@@ -387,6 +399,7 @@
       "p",
       "p",
       "ol",
+      "ol",
       "li",
       "p",
       "strong",
@@ -450,8 +463,21 @@
       "pre",
       "code"
     ],
-    "get_canary_value)": [
+    "get_canary_value": [
       "p",
+      "code",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
+      "strong",
+      "code",
+      "pre",
+      "code",
+      "li",
+      "pre",
       "code"
     ],
     "which": [
@@ -1010,36 +1036,6 @@
     "specifics": [
       "p"
     ],
-    "get_canary_value": [
-      "ol",
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "p",
-      "strong",
-      "code",
-      "pre",
-      "code",
-      "li",
-      "pre",
-      "code"
-    ],
-    ")": [
-      "ol",
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "p",
-      "strong",
-      "code",
-      "pre",
-      "code",
-      "li",
-      "pre",
-      "code"
-    ],
     "generates": [
       "ol",
       "li",
@@ -1201,6 +1197,7 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "li",
@@ -1250,13 +1247,13 @@
       "pre",
       "code"
     ],
-    "(unsigned)": [
+    "unsigned": [
       "ol",
       "li",
       "pre",
       "code"
     ],
-    "time&t));": [
+    "time&t": [
       "ol",
       "li",
       "pre",
@@ -1274,18 +1271,11 @@
       "pre",
       "code"
     ],
-    ");": [
-      "ol",
-      "li",
-      "pre",
-      "code",
-      "li",
-      "pre",
-      "code"
-    ],
     "}": [
       "ol",
       "ol",
+      "ol",
+      "ol",
       "li",
       "li",
       "pre",
@@ -1298,9 +1288,6 @@
       "pre",
       "code",
       "code"
-    ],
-    "}\n\n\nimplement": [
-      "ol"
     ],
     "verifies": [
       "ol",
@@ -1342,14 +1329,15 @@
       "pre",
       "code"
     ],
-    "0);": [
+    "initialize": [
+      "ol",
       "ol",
       "li",
+      "li",
+      "p",
+      "strong",
       "pre",
       "code"
-    ],
-    "}\n\n\ninitialize": [
-      "ol"
     ],
     "at": [
       "ol",
@@ -1375,7 +1363,8 @@
       "pre",
       "code"
     ],
-    "initialize": [
+    "after": [
+      "ol",
       "ol",
       "li",
       "li",
@@ -1383,9 +1372,6 @@
       "strong",
       "pre",
       "code"
-    ],
-    ");\n\n\n\nafter": [
-      "ol"
     ],
     "above": [
       "ol",
@@ -1425,7 +1411,7 @@
       "pre",
       "code"
     ],
-    "buffer100];": [
+    "buffer100": [
       "ol",
       "li",
       "pre",
@@ -1447,24 +1433,15 @@
       "pre",
       "code"
     ],
-    "&buffer[0],": [
+    "&buffer0": [
       "ol",
       "li",
       "pre",
       "code"
     ],
-    "some_malicious_value_provided_by_attacker;": [
+    "some_malicious_value_provided_by_attacker": [
       "ol",
       "li",
-      "pre",
-      "code"
-    ],
-    "after": [
-      "ol",
-      "li",
-      "li",
-      "p",
-      "strong",
       "pre",
       "code"
     ],
@@ -1474,8 +1451,11 @@
       "pre",
       "code"
     ],
-    "*/\n\n\nfinally,": [
-      "ol"
+    "finally": [
+      "ol",
+      "li",
+      "p",
+      "strong"
     ],
     "execution": [
       "ol",
@@ -1491,17 +1471,6 @@
       "ol",
       "li",
       "p"
-    ],
-    "canary);": [
-      "ol",
-      "li",
-      "pre",
-      "code"
-    ],
-    "finally": [
-      "li",
-      "p",
-      "strong"
     ],
     "use": [
       "title"

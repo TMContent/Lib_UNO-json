@@ -1,0 +1,56 @@
+<h2>Applies To</h2>
+<ul>
+<li>Python 2.7</li>
+</ul>
+<h2>Solution Example</h2>
+<pre><code>#! /usr/bin/env python
+
+'''
+Python Error Handling
+'''
+
+# Open, read, and print a file handling exceptions that can occur
+
+import sys
+import os
+
+def usage():
+    print &quot;Usage: {} filename&quot;.format(sys.argv[0])
+
+
+def main():
+    if len(sys.argv) != 2:
+        usage()
+        sys.exit(2)
+
+    filename = sys.argv[1]
+    fin = None
+
+    try:
+        fin = open(filename, &quot;r&quot;)
+    except IOError as err:
+        # Catch likely IO errors like file not found
+        print &quot;I/O error({}): {}&quot;.format(err.errno, err.strerror)
+        sys.exit(1)
+
+    try:
+        for line in fin:
+            sys.stdout.write(line)
+    except IOError as err:
+        print &quot;I/O error({}): {}&quot;.format(err.errno, err.strerror)
+        sys.exit(1)
+    finally:
+        # Cleanup, whether the IO succeeded or failed
+        fin.close()
+
+
+if __name__ == &quot;__main__&quot;:
+    try:
+        main()
+    except KeyboardInterrupt as err: # Ctrl-C
+        pass
+    except Exception as err:
+        # Catch all exceptions to prevent backtraces on the CLI
+        print &quot;Unexpected error: {}&quot;.format(err)
+        sys.exit(1)
+</code></pre>

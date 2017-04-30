@@ -13,7 +13,7 @@
           "6b5c9bf9-5d45-4192-a2da-3194ddf3416b,7a2937a5-b4ac-4fb2-9749-0cebb4bf139e,"
         ],
         "Library_Id": [
-          "be5273b1-d682-4361-99d9-6204f2d47eb7"
+          "be5273b1-d682-4361-99d9-6234f2d47eb7"
         ],
         "Title": [
           "Information Leak Through Cookies"
@@ -51,7 +51,7 @@
           "DataType": "wikitext"
         },
         "Data": [
-          "=Description\r\n\r\nCookies are used by web applications to store data in the browser. Cookies may be marked as persistent and stored for an extended period of time. An attacker may gain access to the drive that stores the cookies and recover sensitive data from them. The exact impact depends on the nature of the sensitive data in the cookies. This vulnerability applies to web applications that use cookies. \r\n\r\n=Impact\r\n\r\nThe exact impact of this vulnerability depends on the sensitive data stored in the cookies that the attacker has gained access to. Usually this is session data that keeps a user authenticated to an application. In that case, the attacker is able to impersonate the authenticated user. The ability to impersonate an authenticated user allows the attacker to carry out any actions that are available to that user within the application. That might be enough for the attacker, or he may use that access to leverage additional vulnerabilities for additional privileges. \r\n\r\n=Countermeasures\r\n\r\nTo prevent this vulnerability, don't store sensitive data in persistent cookies. \r\n\r\n=Application Check\r\n\r\nTo check for adequate protection against this vulnerability, find all code that stores cookies and ensure that sensitive data is not stored in persistent cookies. \r\n\r\n=Specific Technologies\r\n\r\n* [[baf9e37f-ae0c-4f38-99d4-1942aaefef44|ASP.NET Information Leak Through Cookies]]\r\n* [[6cbabed6-4bd2-4f16-a955-e585182b06b3|PHP Information Leak Through Cookies]]"
+          "=Description\n\nCookies are used by web applications to store data in the browser. Cookies might be marked as persistent and stored for an extended period of time. An attacker might gain access to the drive that stores the cookies and recover sensitive data from them. The exact impact depends on the nature of the sensitive data in the cookies. This vulnerability applies to web applications that use cookies. \n\n=Impact\n\nThe exact impact of this vulnerability depends on the sensitive data stored in the cookies that the attacker has gained access to. Usually this is session data that keeps a user authenticated to an application. In that case, the attacker is able to impersonate the authenticated user. The ability to impersonate an authenticated user allows the attacker to carry out any actions that are available to that user within the application. That might be enough for the attacker, or they might use that access to leverage additional vulnerabilities for additional privileges. \n\n=Countermeasures\n\nTo prevent this vulnerability, don't store sensitive data in persistent cookies. \n\nDon't store sensitive data in persistent cookies:\n\n* [[e9bb3e68-cce4-4412-8834-e4cb7861be00|Do Not Store Sensitive Data in Persistent Cookies]]\n\n=Application Check\n\nTo check for adequate protection against this vulnerability, find all code that stores cookies and ensure that sensitive data is not stored in persistent cookies. \n\nSensitive data is not stored in persistent cookies:\n\n* [[e17caf9a-36ff-486f-8329-7c238a7ef13d|Sensitive Data Is Not Stored in Persistent Cookies]]"
         ]
       }
     ]

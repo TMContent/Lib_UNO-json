@@ -25,7 +25,7 @@
           "Design"
         ],
         "Technology": [
-          "Java"
+          "Technology Independent"
         ],
         "Type": [
           "Checklist Item"
@@ -60,7 +60,7 @@
           "DataType": "html"
         },
         "Data": [
-          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>Java</li>\r\n  </ul>\r\n  <h1>What to Check For</h1>\r\n  <p>Verify that session management offered by the framework is used.</p>\r\n  <h1>Why</h1>\r\n  <p>The framework works on a lower level than the application and is therefore better suited to provide session management. Most mature web application frameworks offer secure session management functionality.</p>\r\n  <h1>How to Check</h1>\r\n  <p>To verify that session management offered by the framework is used:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Identify session management functionality.</strong> Find code that handles session management.</p>\r\n      <li>\r\n        <p>\r\n          <strong>Verify that session management offered by the framework is used.</strong> Review code that uses session management to make sure it uses functionality offered by the framework.</p>\r\n      </li>\r\n    </li>\r\n  </ol>\r\n  <h1>How to Fix</h1>\r\n  <p />To use session management offered by the framework, refer to the documentation for your chosen framework. Most Java frameworks take advantage of <em>HttpSession</em> objects."
+          "<h1>What to Check For</h1>\r\n  <p>Verify that session management offered by the framework is used.</p>\r\n  <h1>Why</h1>\r\n  <p>The framework works on a lower level than the application and is therefore better suited to provide session management. Most mature web application frameworks offer secure session management functionality.</p>\r\n  <h1>How to Check</h1>\r\n  <p>To verify that session management offered by the framework is used:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Identify session management functionality.</strong> Find code that handles session management.</p>\r\n      <li>\r\n        <p>\r\n          <strong>Verify that session management offered by the framework is used.</strong> Review code that uses session management to make sure it uses functionality offered by the framework.</p>\r\n      </li>\r\n    </li>\r\n  </ol>\r\n  <h1>How to Fix</h1>\r\n  <p>To use session management offered by the framework, refer to the documentation for your chosen framework.</p>"
         ]
       }
     ]

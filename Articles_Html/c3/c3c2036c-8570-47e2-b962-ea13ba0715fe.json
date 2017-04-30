@@ -1,6 +1,6 @@
 {
   "id": "c3c2036c-8570-47e2-b962-ea13ba0715fe",
-  "checksum": "c3c3840f054ab04130f44a40df562cea",
+  "checksum": "c0f0c050d01300e25b435be388a717b8",
   "words": {
     "description": [
       "h2"
@@ -11,17 +11,11 @@
       "p",
       "p",
       "p",
+      "ul",
+      "li",
+      "a",
       "p",
       "ul",
-      "ul",
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a",
-      "li",
-      "a",
       "li",
       "a",
       "title"
@@ -33,18 +27,6 @@
       "p",
       "p",
       "p",
-      "ul",
-      "ul",
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a",
-      "li",
-      "a",
-      "li",
-      "a",
       "title"
     ],
     "injection": [
@@ -54,18 +36,6 @@
       "p",
       "p",
       "p",
-      "ul",
-      "ul",
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a",
-      "li",
-      "a",
-      "li",
-      "a",
       "title"
     ],
     "vulnerabilities": [
@@ -151,13 +121,25 @@
     ],
     "data": [
       "p",
-      "p"
+      "ul",
+      "li",
+      "a",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "with": [
       "p"
     ],
     "commands": [
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a",
+      "ul",
+      "li",
+      "a"
     ],
     "there": [
       "p"
@@ -370,7 +352,13 @@
     "all": [
       "p",
       "p",
-      "p"
+      "ul",
+      "li",
+      "a",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "custom": [
       "p"
@@ -393,7 +381,13 @@
       "p",
       "p",
       "p",
-      "p"
+      "p",
+      "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "a"
     ],
     "change": [
       "p"
@@ -462,7 +456,13 @@
       "p"
     ],
     "from": [
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a",
+      "ul",
+      "li",
+      "a"
     ],
     "abuse": [
       "p"
@@ -513,14 +513,28 @@
       "h2"
     ],
     "validate": [
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "input": [
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a",
+      "ul",
+      "li",
+      "a"
     ],
     "for": [
       "p",
       "p"
+    ],
+    "separate": [
+      "ul",
+      "li",
+      "a"
     ],
     "check": [
       "h2"
@@ -538,33 +552,15 @@
       "p"
     ],
     "validated": [
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "used": [
       "p"
     ],
-    "specific": [
-      "h2"
-    ],
-    "technologies": [
-      "h2"
-    ],
-    "aspnet": [
-      "ul",
-      "li",
-      "a"
-    ],
-    "java": [
-      "ul",
-      "li",
-      "a"
-    ],
-    "c++": [
-      "ul",
-      "li",
-      "a"
-    ],
-    "php": [
+    "separated": [
       "ul",
       "li",
       "a"
@@ -573,20 +569,20 @@
   "tags": {},
   "links": [
     {
-      "href": "998facf0-cb65-4254-ab94-21b0b03a1923",
-      "text": "ASP.NET Mail Command Injection"
+      "href": "11a15f3a-7fe8-4e4c-be5e-309ab7227b3d",
+      "text": "Validate All Input"
     },
     {
-      "href": "6ea096df-f90e-4203-aba1-1be397a6e57e",
-      "text": "Java Mail Command Injection"
+      "href": "955ae844-3ed5-499e-af35-e2e380209d2b",
+      "text": "Separate Data from Mail Commands"
     },
     {
-      "href": "52d5b12c-086e-4f56-a78d-e3b39c3a4aa0",
-      "text": "C++ Mail Command Injection"
+      "href": "8d8c24b0-096b-43f4-9391-9b293313a0e8",
+      "text": "All Input Is Validated"
     },
     {
-      "href": "480c9c9c-3e37-42b2-a3e6-55b46f4dc07d",
-      "text": "PHP Mail Command Injection"
+      "href": "2a6367d8-81a1-4953-bf17-504643574215",
+      "text": "Data Is Separated from Mail Commands"
     }
   ]
 }

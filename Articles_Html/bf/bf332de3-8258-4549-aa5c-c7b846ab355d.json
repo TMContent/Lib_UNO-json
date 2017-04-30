@@ -1,6 +1,6 @@
 {
   "id": "bf332de3-8258-4549-aa5c-c7b846ab355d",
-  "checksum": "f16b5cfd91e6617a280769895f65322a",
+  "checksum": "76703e47d5938973c1e322195db119cf",
   "words": {
     "description": [
       "h1"
@@ -20,11 +20,11 @@
       "p",
       "p",
       "p",
-      "p",
-      "ul",
       "ul",
       "li",
       "a",
+      "p",
+      "ul",
       "li",
       "a",
       "title"
@@ -46,12 +46,6 @@
       "p",
       "p",
       "p",
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a",
       "title"
     ],
     "vulnerabilities": [
@@ -108,11 +102,9 @@
       "p",
       "p",
       "p",
-      "p",
       "p"
     ],
     "pointer/object": [
-      "p",
       "p",
       "p"
     ],
@@ -166,17 +158,20 @@
       "p"
     ],
     "pointers/object": [
-      "p",
-      "p",
-      "p",
       "p"
     ],
     "references": [
       "p",
       "p",
       "p",
+      "ul",
+      "li",
+      "a",
       "p",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "for": [
       "p",
@@ -184,22 +179,40 @@
       "p",
       "p",
       "p",
+      "ul",
+      "li",
+      "a",
       "p",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "before": [
       "p",
       "p",
       "p",
-      "p"
+      "ul",
+      "li",
+      "a",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "using": [
       "p",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "them": [
       "p",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "won't": [
       "p"
@@ -233,14 +246,23 @@
     ],
     "checked": [
       "p",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "being": [
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "used": [
       "p",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "will": [
       "p",
@@ -363,7 +385,10 @@
     "are": [
       "p",
       "p",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "subject": [
       "p"
@@ -390,7 +415,6 @@
     "or": [
       "p",
       "p",
-      "p",
       "p"
     ],
     "throw": [
@@ -398,6 +422,7 @@
       "p"
     ],
     "an": [
+      "p",
       "p",
       "p",
       "p",
@@ -419,8 +444,24 @@
     "check": [
       "p",
       "p",
+      "ul",
+      "li",
+      "a",
       "h1",
       "p"
+    ],
+    "object": [
+      "p",
+      "p",
+      "p",
+      "ul",
+      "li",
+      "a",
+      "p",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "usually": [
       "p"
@@ -494,39 +535,17 @@
     ],
     "least": [
       "p"
-    ],
-    "pointers": [
-      "p"
-    ],
-    "object": [
-      "p"
-    ],
-    "specific": [
-      "h1"
-    ],
-    "technologies": [
-      "h1"
-    ],
-    "java": [
-      "ul",
-      "li",
-      "a"
-    ],
-    "c++": [
-      "ul",
-      "li",
-      "a"
     ]
   },
   "tags": {},
   "links": [
     {
-      "href": "0222317d-61d3-4b11-955e-247bb66eb50a",
-      "text": "Java Null Dereference"
+      "href": "92f27c14-6962-4366-875f-101e6ab68230",
+      "text": "Check Object References for Null Before Using Them"
     },
     {
-      "href": "ca78ad0b-1460-4884-a8f5-b31c864d7976",
-      "text": "C++ Null Dereference"
+      "href": "54335321-0b6a-4d2e-8ee3-594ecf8c00cf",
+      "text": "Object References Are Checked for Null Before Being Used"
     }
   ]
 }

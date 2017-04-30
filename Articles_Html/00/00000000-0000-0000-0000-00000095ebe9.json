@@ -247,10 +247,12 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "li",
       "strong",
+      "li",
       "li",
       "strong",
       "p",
@@ -261,10 +263,12 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "li",
       "strong",
+      "li",
       "li",
       "li",
       "li",
@@ -857,7 +861,7 @@
     "use": [
       "p"
     ],
-    "\"*\"": [
+    "*": [
       "p"
     ],
     "as": [
@@ -1538,13 +1542,15 @@
       "ol",
       "li"
     ],
-    "aspnet,": [
+    "aspnet": [
       "ol",
       "li",
+      "strong",
       "ol",
-      "li"
+      "li",
+      "strong"
     ],
-    "responseheaders.add": [
+    "responseheadersadd": [
       "ol",
       "li",
       "em",
@@ -1714,16 +1720,6 @@
       "ol",
       "li",
       "li"
-    ],
-    "domains)": [
-      "ol",
-      "li",
-      "ol",
-      "li"
-    ],
-    "aspnet": [
-      "strong",
-      "strong"
     ],
     "fix": [
       "h2"

@@ -3,6 +3,7 @@
   "checksum": "1ee6f8a58c3ca1c6c8b4d7fe7c757e6a",
   "words": {
     "0": [
+      "pre",
       "pre"
     ],
     "1": [
@@ -10,7 +11,8 @@
       "li",
       "h1",
       "h2",
-      "em"
+      "em",
+      "pre"
     ],
     "2": [
       "ul",
@@ -158,6 +160,9 @@
     "system": [
       "ul",
       "li",
+      "p",
+      "p",
+      "p",
       "p",
       "p",
       "p",
@@ -367,6 +372,7 @@
       "p",
       "p",
       "p",
+      "pre",
       "p",
       "h2",
       "em",
@@ -736,10 +742,6 @@
       "p",
       "p"
     ],
-    "system)": [
-      "p",
-      "p"
-    ],
     "or": [
       "p",
       "p",
@@ -752,8 +754,22 @@
       "p",
       "p"
     ],
-    "exec)": [
+    "exec": [
       "p",
+      "p",
+      "p",
+      "table",
+      "table",
+      "table",
+      "tbody",
+      "tbody",
+      "tbody",
+      "tr",
+      "td",
+      "tr",
+      "td",
+      "tr",
+      "td",
       "p",
       "p"
     ],
@@ -871,6 +887,7 @@
       "p",
       "p",
       "p",
+      "pre",
       "p",
       "p",
       "p",
@@ -939,7 +956,8 @@
     ],
     "unix": [
       "p",
-      "p"
+      "p",
+      "pre"
     ],
     "lists": [
       "p",
@@ -971,6 +989,8 @@
       "p"
     ],
     "ls": [
+      "p",
+      "p",
       "p",
       "p"
     ],
@@ -1004,6 +1024,7 @@
       "p"
     ],
     "folder_name": [
+      "p",
       "p",
       "p",
       "i",
@@ -1043,9 +1064,6 @@
     "concatenates": [
       "p"
     ],
-    "\"ls\"": [
-      "p"
-    ],
     "build": [
       "p",
       "h2",
@@ -1065,12 +1083,6 @@
       "p"
     ],
     "passes": [
-      "p"
-    ],
-    "\"ls": [
-      "p"
-    ],
-    "folder_name\"": [
       "p"
     ],
     "function": [
@@ -1491,6 +1503,8 @@
     ],
     "supplied": [
       "p",
+      "ol",
+      "li",
       "p",
       "p"
     ],
@@ -1527,6 +1541,7 @@
       "p",
       "ol",
       "li",
+      "p",
       "p",
       "p",
       "p"
@@ -1719,10 +1734,6 @@
       "p",
       "p"
     ],
-    "supplied.": [
-      "ol",
-      "li"
-    ],
     "verifies": [
       "ol",
       "li"
@@ -1846,27 +1857,14 @@
     "box": [
       "p"
     ],
-    "exec": [
-      "p",
-      "table",
-      "table",
-      "table",
-      "tbody",
-      "tbody",
-      "tbody",
-      "tr",
-      "td",
-      "tr",
-      "td",
-      "tr",
-      "td",
-      "p"
-    ],
     "type": [
       "p",
       "pre"
     ],
-    "?php\r\n$command": [
+    "?php": [
+      "pre"
+    ],
+    "$command": [
       "pre"
     ],
     "=": [
@@ -1882,23 +1880,32 @@
     "'": [
       "pre"
     ],
-    "$_post'username'];\r\nexec($command,": [
+    "$_post'username'": [
       "pre"
     ],
-    "$res;\r\n\r\nfor": [
+    "exec$command": [
+      "pre"
+    ],
+    "$res": [
       "pre"
     ],
     "$i": [
       "pre",
       "pre"
     ],
-    "sizeof$res);": [
+    "sizeof$res": [
       "pre"
     ],
-    "$i++\r\necho": [
+    "$i++": [
       "pre"
     ],
-    "$res$i].'<br>';\r\n\r\n?>": [
+    "echo": [
+      "pre"
+    ],
+    "$res$i'br'": [
+      "pre"
+    ],
+    "?": [
       "pre"
     ],
     "supply": [
@@ -1947,7 +1954,8 @@
       "p",
       "p"
     ],
-    "i])": [
+    "i": [
+      "p",
       "p"
     ],
     "runs": [
@@ -1969,15 +1977,21 @@
     "cat": [
       "p",
       "pre",
+      "pre",
+      "pre",
       "p"
     ],
     "#include": [
+      "pre",
       "pre"
     ],
-    "stdio.h>\r\n#include": [
+    "stdioh": [
       "pre"
     ],
-    "unistd.h>\r\n\r\nint": [
+    "unistdh": [
+      "pre"
+    ],
+    "int": [
       "pre"
     ],
     "mainint": [
@@ -1988,64 +2002,61 @@
     ],
     "char": [
       "pre",
+      "pre",
+      "pre",
       "pre"
     ],
     "**argv": [
       "pre"
     ],
-    "{\rchar": [
+    "{": [
       "pre"
     ],
-    "cat]": [
+    "*command": [
       "pre"
     ],
-    "\"cat": [
+    "size_t": [
       "pre"
     ],
-    "\"\r\nchar": [
+    "commandlength": [
+      "pre",
+      "pre",
+      "pre",
       "pre"
     ],
-    "*command\r\nsize_t": [
-      "pre"
-    ],
-    "commandlength\r\ncommandlength": [
-      "pre"
-    ],
-    "strlencat)": [
+    "strlencat": [
+      "pre",
       "pre"
     ],
     "+": [
       "pre",
       "pre"
     ],
-    "strlenargv[1])": [
-      "pre"
-    ],
-    "1\r\ncommand": [
+    "strlenargv1": [
       "pre"
     ],
     "*": [
       "pre"
     ],
-    "malloccommandlength);\r\nstrncpy(command,": [
+    "malloccommandlength": [
       "pre"
     ],
-    "commandlength;\r\nstrncat(command,": [
+    "strncpycommand": [
       "pre"
     ],
-    "argv1],": [
+    "strncatcommand": [
       "pre"
     ],
-    "commandlength": [
+    "argv1": [
       "pre"
     ],
-    "strlencat))": [
+    "systemcommand": [
       "pre"
     ],
-    ";\r\nsystem(command);\r\nreturn": [
+    "return": [
       "pre"
     ],
-    "0);\r\n}": [
+    "}": [
       "pre"
     ],
     "server’s": [
@@ -2062,7 +2073,7 @@
       "p",
       "p"
     ],
-    "filetxt;ls": [
+    "filetxtls": [
       "pre"
     ],
     "above": [
@@ -2083,9 +2094,6 @@
     "named": [
       "p"
     ],
-    "system).": [
-      "p"
-    ],
     "compiles": [
       "p"
     ],
@@ -2102,7 +2110,7 @@
       "td",
       "strong"
     ],
-    "execlpexecvp,": [
+    "execlpexecvp": [
       "table",
       "tbody",
       "tr",
@@ -2284,14 +2292,14 @@
     "semicolon": [
       "p"
     ],
-    ";)vertical": [
+    "vertical": [
       "p"
     ],
     "dash": [
       "p",
       "p"
     ],
-    "|),": [
+    "|": [
       "p"
     ],
     "double": [
@@ -2300,13 +2308,13 @@
       "p",
       "p"
     ],
-    "||),": [
+    "||": [
       "p"
     ],
     "amp": [
       "p"
     ],
-    "&&)": [
+    "&&": [
       "p"
     ],
     "rm": [
@@ -2424,9 +2432,6 @@
     ],
     "since": [
       "p",
-      "p"
-    ],
-    "malicious)": [
       "p"
     ],
     "construct": [
@@ -2557,7 +2562,7 @@
     "abcdir": [
       "pre"
     ],
-    "c|xyz&netstat\r\nunix:": [
+    "c|xyz&netstat": [
       "pre"
     ],
     "abcls|cp&rm": [
@@ -2637,6 +2642,7 @@
     "c": [
       "pre",
       "pre",
+      "pre",
       "p"
     ],
     "calling": [
@@ -2648,22 +2654,7 @@
     "/c": [
       "pre"
     ],
-    "\"": [
-      "pre",
-      "table",
-      "table",
-      "tbody",
-      "tbody",
-      "tr",
-      "tr",
-      "td",
-      "td",
-      "p"
-    ],
     "c\\public_html\\user_files\\": [
-      "pre"
-    ],
-    "c\"": [
       "pre"
     ],
     "listing": [
@@ -2688,8 +2679,9 @@
       "pre",
       "p"
     ],
-    "\"|dir": [
-      "pre"
+    "|dir": [
+      "pre",
+      "p"
     ],
     "pay": [
       "p"
@@ -2739,7 +2731,7 @@
       "p",
       "p"
     ],
-    "filetxt;mail": [
+    "filetxtmail": [
       "table",
       "tbody",
       "tr",
@@ -2804,7 +2796,7 @@
       "td",
       "p"
     ],
-    "filetxt;ping%20attacker_site": [
+    "filetxtping%20attacker_site": [
       "table",
       "tbody",
       "tr",
@@ -2865,21 +2857,18 @@
       "p",
       "p"
     ],
-    "|dir": [
-      "p"
-    ],
     "below": [
       "p"
     ],
-    "encoding:": [
+    "encoding": [
       "p"
     ],
-    "filetxt\"|dir%20c:": [
+    "filetxt|dir%20c": [
       "ul",
       "li",
       "pre"
     ],
-    "filetxt\"|dir+c:": [
+    "filetxt|dir+c": [
       "ul",
       "li",
       "pre"
@@ -2950,7 +2939,7 @@
     "say": [
       "p"
     ],
-    "/private/commandstxt.": [
+    "/private/commandstxt": [
       "p"
     ],
     "here": [
@@ -3023,10 +3012,7 @@
     "under": [
       "p"
     ],
-    "i]": [
-      "p"
-    ],
-    "http//www.owasp.org/index.php/command_injection": [
+    "http//wwwowasporg/indexphp/command_injection": [
       "p",
       "a"
     ]

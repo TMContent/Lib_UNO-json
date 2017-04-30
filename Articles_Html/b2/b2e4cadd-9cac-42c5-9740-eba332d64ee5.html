@@ -1,6 +1,23 @@
-<h1>Description</h1><p>Information exposure through an error message occurs when an error message discloses sensitive information that may help an attacker. Typical examples include disclosing whether a username is valid during failed authentication and disclosing SQL queries that cause database errors. The latter example is particularly dangerous because it greatly simplifies SQL injection attacks. The danger of error message information disclosure is that it makes other attacks easier and, in some cases, it is required for an attack to succeed. In general, error messages should not disclose sensitive information to the end user. All applications are affected by this vulnerability type, but especially ones that use authentication and SQL databases. 
-</p><h1>Impact</h1><p>Information exposure through an error message provides information to the attacker that enables him to carry out additional attacks. The two most common and dangerous scenarios are disclosing whether a username is valid during failed authentication, and disclosing SQL queries after database errors. Knowing the username greatly simplifies password guessing attacks. Disclosing SQL queries during errors helps the attacker determine whether a SQL injection vulnerability is present and what exactly the syntax of the vulnerability is. Displaying invalid SQL queries to the attacker also makes extracting data from the database via SQL injection a lot easier, because SQL injection can be formed in such a way that sensitive data is displayed as a part of an invaild query. This scenario is commonly used to extract password hashes from the database for administrative accounts. 
+<h1>Description</h1><p>Information exposure through an error message occurs when an error message discloses sensitive information that might help an attacker. Typical examples include disclosing whether a username is valid during failed authentication and disclosing SQL queries that cause database errors. The latter example is particularly dangerous because it greatly simplifies SQL injection attacks. The danger of error message information disclosure is that it makes other attacks easier and, in some cases, it is required for an attack to succeed. In general, error messages should not disclose sensitive information to the end user. All applications are affected by this vulnerability type, but especially ones that use authentication and SQL databases. 
+</p><h1>Impact</h1><p>Information exposure through an error message provides information to the attacker that enables them to carry out additional attacks. The two most common and dangerous scenarios are disclosing whether a username is valid during failed authentication, and disclosing SQL queries after database errors. Knowing the username greatly simplifies password guessing attacks. Disclosing SQL queries during errors helps the attacker determine whether a SQL injection vulnerability is present and what exactly the syntax of the vulnerability is. Displaying invalid SQL queries to the attacker also makes extracting data from the database via SQL injection a lot easier, because SQL injection can be formed in such a way that sensitive data is displayed as a part of an invaild query. This scenario is commonly used to extract password hashes from the database for administrative accounts. 
 </p><h1>Countermeasures</h1><p>To prevent error message information disclosure, handle all errors, use simple error messages, and log detailed error information. 
-</p><h1>Application Check</h1><p>To check for adequate protection against error message information disclosure, verify that all errors are handled, that simple error messages are used, and detailed error information is logged. 
-</p><h1>Specific Technologies</h1><ul><li> <a href="e724620c-b128-403f-b1a0-e9261c8375e6">ASP.NET Information Exposure Through an Error Message</a></li>
-<li> <a href="066bf23c-37c9-4bff-9ab9-5fa9bd59449b">Java Information Exposure Through an Error Message</a></li></ul>
+</p><p>
+Handle All Errors:</p><ul>
+<li> <a href="0ee60897-0ba8-47a7-8b14-47d17a70f8ee">Use Global Exception Handlers</a></li>
+</ul><p>
+Use Simple Error Messages:</p><ul>
+<li> <a href="6ccf4b69-a4c0-4c08-a2ea-86e704c3ffc2">Display Simple Error Messages</a></li>
+</ul><p>
+Log Detailed Error Information:</p><ul>
+<li> <a href="00000000-0000-0000-0000-00000035b501">Log Error Information</a></li>
+</ul><h1>Application Check</h1><p>To check for adequate protection against error message information disclosure, verify that all errors are handled, that simple error messages are used, and detailed error information is logged.
+</p><p>
+All Errors Are Handled:
+</p><ul>
+<li> <a href="7a4f9032-7abb-409a-b00b-58d8e890c6ea">Global Exception Handlers Are Used for Unhandled Exceptions</a></li>
+</ul><p>
+Simple Error Messages Are Used:</p><ul>
+<li> <a href="00000000-0000-0000-0000-0000002f7a79">Simple Error Messages Are Used</a></li>
+</ul><p>
+Detailed Error Information Is Logged:</p><ul>
+<li> <a href="00000000-0000-0000-0000-00000078ce47">Error Information Is Logged</a></li></ul>

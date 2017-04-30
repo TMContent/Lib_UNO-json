@@ -1,0 +1,59 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "0",
+      "Content_Hash": "0"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "d1d1ac28-92a3-430f-9260-efa1bfd0199d"
+        ],
+        "Library_Id": [
+          "be5273b1-d682-4361-99d9-6234f2d47eb7"
+        ],
+        "Title": [
+          "Python 3 Separate Data from SQL Syntax"
+        ],
+        "Category": [
+          ""
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "Python"
+        ],
+        "Type": [
+          "Code Example"
+        ],
+        "DirectLink": [
+          ""
+        ],
+        "Tag": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "false",
+          "DataType": "markdown"
+        },
+        "Data": [
+          "## Applies To ##\r\n\r\n* Python 3\r\n\r\n\r\n## Problem Example ##\r\n\r\n~~~~\r\n#! /usr/bin/env python3\r\n\r\n'''\r\nPython SQL Injection Example\r\n'''\r\n\r\nimport sys\r\n\r\ndef usage():\r\n    print(\"Usage: {} username\".format(sys.argv[0]))\r\n\r\n\r\ndef create_sample_table(conn):\r\n    c = conn.cursor()\r\n    c.execute(\r\n        '''CREATE TABLE users\r\n           (username text, name text, salt text, password text)\r\n        ''')\r\n    c.execute(\r\n        '''INSERT INTO users VALUES\r\n           ('administrator',\r\n           'Administrator',\r\n           'c087d4685cf4b1e7343076ec9dffd1d5150c5de9a756ae4e6cae4f34cc681832',\r\n           '87191194028399e2ec4363ac0f9772f7f438f2529cadf779bf4f904063de5b0e')\r\n        ''')\r\n    c.execute(\r\n        '''INSERT INTO users VALUES\r\n           ('apoodle',\r\n           'Arnold T. Poodle',\r\n           'f7186980e8052949cb6435f1e7a237897754ef8dd41b0d79b6c87c403bf30df0',\r\n           '0670fba1883cab2b39d45f8d6c975fc9bcd59fd3e4bed7c9ed3a4d48bde17599')\r\n        ''')\r\n    conn.commit()\r\n\r\n\r\ndef main():\r\n    if len(sys.argv) != 2:\r\n        usage()\r\n        return 2\r\n\r\n    # This example uses the standard Python database API defined in PEP-249,\r\n    # and the sqlite3 module.\r\n    # Changing the following 3 lines should be sufficient to use the psycopg\r\n    # package (Postgres) or the mysql-python package (MySQL) instead.\r\n\r\n    import sqlite3\r\n    db = sqlite3\r\n    conn = db.connect(':memory:')\r\n\r\n    # Create a table with sample data\r\n    create_sample_table(conn)\r\n\r\n    # Take input and query the database\r\n    # Bad: SQL statement string contatenation\r\n    username = sys.argv[1]\r\n    statement = \"SELECT * FROM users WHERE username = '{}'\".format(username)\r\n\r\n    c = conn.cursor()\r\n    c.execute(statement)\r\n    row = c.fetchone()\r\n\r\n    # Cleanup\r\n    conn.close()\r\n\r\n    # Print the user info\r\n    if row:\r\n        print(\"Username: \" + row[0])\r\n        print(\"Name: \" + row[1])\r\n    else:\r\n        print(\"Username not found\")\r\n\r\n\r\nif __name__ == \"__main__\":\r\n    sys.exit(main())\r\n~~~~\r\n\r\n\r\n## Solution Example ##\r\n\r\n~~~~\r\n#! /usr/bin/env python3\r\n\r\n'''\r\nPython Use Prepared Statements\r\n'''\r\n\r\nimport sys\r\n\r\ndef usage():\r\n    print(\"Usage: {} username\".format(sys.argv[0]))\r\n\r\n\r\ndef create_sample_table(conn):\r\n    c = conn.cursor()\r\n    c.execute(\r\n        '''CREATE TABLE users\r\n           (username text, name text, salt text, password text)\r\n        ''')\r\n    c.execute(\r\n        '''INSERT INTO users VALUES\r\n           ('administrator',\r\n           'Administrator',\r\n           'c087d4685cf4b1e7343076ec9dffd1d5150c5de9a756ae4e6cae4f34cc681832',\r\n           '87191194028399e2ec4363ac0f9772f7f438f2529cadf779bf4f904063de5b0e')\r\n        ''')\r\n    c.execute(\r\n        '''INSERT INTO users VALUES\r\n           ('apoodle',\r\n           'Arnold T. Poodle',\r\n           'f7186980e8052949cb6435f1e7a237897754ef8dd41b0d79b6c87c403bf30df0',\r\n           '0670fba1883cab2b39d45f8d6c975fc9bcd59fd3e4bed7c9ed3a4d48bde17599')\r\n        ''')\r\n    conn.commit()\r\n\r\n\r\ndef main():\r\n    if len(sys.argv) != 2:\r\n        usage()\r\n        return 2\r\n\r\n    # This example uses the standard Python database API defined in PEP-249,\r\n    # and the sqlite3 module.\r\n    # Changing the following 3 lines should be sufficient to use the psycopg\r\n    # package (Postgres) or the mysql-python package (MySQL) instead.\r\n\r\n    import sqlite3\r\n    db = sqlite3\r\n    conn = db.connect(':memory:')\r\n\r\n    # Create a table with sample data\r\n    create_sample_table(conn)\r\n\r\n    # Take input and query the database\r\n    # Good: SQL prepated statement\r\n    username = sys.argv[1]\r\n    statement = \"SELECT * FROM users WHERE username = ?\"\r\n    sql_args = (username, )\r\n\r\n    c = conn.cursor()\r\n    c.execute(statement, sql_args)\r\n    row = c.fetchone()\r\n\r\n    # Cleanup\r\n    conn.close()\r\n\r\n    # Print the user info\r\n    if row:\r\n        print(\"Username: \" + row[0])\r\n        print(\"Name: \" + row[1])\r\n    else:\r\n        print(\"Username not found\")\r\n\r\n\r\nif __name__ == \"__main__\":\r\n    sys.exit(main())\r\n~~~~\r\n\r\n\r\n## Guideline ##\r\n\r\n* [Use Prepared Statements for SQL Queries](397488da-ce91-4768-9ad9-1e6928980d72)"
+        ]
+      }
+    ]
+  }
+}

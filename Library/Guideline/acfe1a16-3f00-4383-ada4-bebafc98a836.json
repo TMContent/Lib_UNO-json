@@ -16,7 +16,7 @@
           "be5273b1-d682-4361-99d9-6234f2d47eb7"
         ],
         "Title": [
-          "Make Inactive Sessions Time-out"
+          "Java Make Inactive Sessions Time-out"
         ],
         "Category": [
           "Session Management"
@@ -28,7 +28,7 @@
           "Java"
         ],
         "Type": [
-          "Guideline"
+          "Code Example"
         ],
         "DirectLink": [
           "Make Inactive Sessions Time-out"
@@ -57,10 +57,10 @@
       {
         "$": {
           "Sanitized": "true",
-          "DataType": "html"
+          "DataType": "markdown"
         },
         "Data": [
-          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>Java</li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Make inactive sessions time-out.</p>\r\n  <h1>Why</h1>\r\n  <p>Make sessions expire after a period of inactivity to make it harder for an attacker to hijack a session.</p>\r\n  <h1>How</h1>\r\n  <p>To make inactive sessions time-out:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Identify login functionality.</strong> Find code that handles user logins.</p>\r\n      <li>\r\n        <p>\r\n          <strong>Add code that sets the inactive session time-out period.</strong> Add code that handles an HttpSession object and sets the setMaxInactiveInterval value, like so:</p>\r\n        <pre>session.setMaxInactiveInterval(300);</pre>\r\n        <p>where \"<em>session</em>\" is the <em>HttpSession</em> object and <em>300</em> is the inactive time-out period in seconds.</p>\r\n        <p>Another approach to making inactive sessions time-out is by configuring the \"<em>session-timeout</em>\" value in the<em> web.xml</em> file, like so:</p>\r\n        <pre>&lt;session-config&gt;<br />&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;session-timeout&gt;300&lt;/session-timeout&gt;<br />&lt;/session-config&gt;</pre>\r\n        <p>where <em>300</em> is the inactive time-out period in seconds. The difference between the first and second approaches is that using <em>setMaxInactiveInterval</em> sets the time-out period for a specific session, while the \"<em>session-timeout</em>\" option sets the time-out period for all sessions by default.</p>\r\n        <p>\r\n          <strong>Please note:</strong> most Java frameworks make inactive sessions time-out by default after 30 minutes.</p>\r\n      </li>\r\n    </li>\r\n  </ol>"
+          "## Applies To ##\r\n\r\n* Java\r\n\r\n\r\n## Summary ##\r\n\r\nMake inactive sessions time-out. Make sessions expire after a period of inactivity to make it harder for an attacker to hijack a session.\r\n\r\n\r\n## Solution Example ##\r\n\r\nTo make inactive sessions time-out:\r\n\r\n1. **Identify login functionality.** Find code that handles user logins.\r\n\r\n2. **Add code that sets the inactive session time-out period.** Add code that handles an HttpSession object and sets the setMaxInactiveInterval value, like so:\r\n\r\n\t~~~~\r\n\tsession.setMaxInactiveInterval(300);\r\n\t~~~~\r\n\r\n\twhere \"session\" is the HttpSession object and 300 is the inactive time-out period in seconds.\r\n\r\n\tAnother approach to making inactive sessions time-out is by configuring the \"session-timeout\" value in the web.xml file, like so:\r\n\r\n\t~~~~\r\n\t<session-config>\r\n\t\t<session-timeout>300</session-timeout>\r\n\t</session-config>\r\n\t~~~~\r\n\r\n\twhere 300 is the inactive time-out period in seconds. The difference between the first and second approaches is that using setMaxInactiveInterval sets the time-out period for a specific session, while the \"session-timeout\" option sets the time-out period for all sessions by default.\r\n"
         ]
       }
     ]

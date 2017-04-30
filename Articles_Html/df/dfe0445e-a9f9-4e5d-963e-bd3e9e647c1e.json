@@ -1,6 +1,6 @@
 {
   "id": "dfe0445e-a9f9-4e5d-963e-bd3e9e647c1e",
-  "checksum": "137e9bca269c31cedab3f6a6486a2fa9",
+  "checksum": "c4f605601c7aadae753ac83d423eb3b2",
   "words": {
     "10": [
       "p"
@@ -125,7 +125,9 @@
     ],
     "escape": [
       "p",
+      "p",
       "code",
+      "p",
       "code",
       "p",
       "code",
@@ -165,11 +167,16 @@
       "p",
       "ol",
       "li",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a",
+      "title"
     ],
     "cl_abap_dyn_prg": [
       "p",
       "code",
+      "p",
       "code",
       "p",
       "code"
@@ -181,6 +188,8 @@
       "ol",
       "ol",
       "ol",
+      "ol",
+      "ol",
       "li",
       "li",
       "li",
@@ -193,16 +202,14 @@
       "p",
       "p",
       "strong",
+      "ul",
+      "li",
+      "a",
       "title"
-    ],
-    "escape)": [
-      "p",
-      "p"
     ],
     "echoed": [
       "p",
-      "p",
-      "title"
+      "p"
     ],
     "untrusted": [
       "p",
@@ -217,6 +224,9 @@
       "li",
       "p",
       "strong",
+      "ul",
+      "li",
+      "a",
       "title"
     ],
     "data": [
@@ -247,6 +257,9 @@
       "p",
       "p",
       "strong",
+      "ul",
+      "li",
+      "a",
       "title"
     ],
     "used": [
@@ -276,9 +289,6 @@
     "built": [
       "p",
       "p",
-      "p"
-    ],
-    "cl_abap_dyn_prg)": [
       "p"
     ],
     "are": [
@@ -348,7 +358,11 @@
     "scripting": [
       "p"
     ],
-    "xss)": [
+    "xss": [
+      "p",
+      "p",
+      "p",
+      "p",
       "p"
     ],
     "attacks": [
@@ -432,12 +446,6 @@
     "vulnerability": [
       "p"
     ],
-    "xss": [
-      "p",
-      "p",
-      "p",
-      "p"
-    ],
     "on": [
       "p"
     ],
@@ -457,7 +465,7 @@
       "p",
       "p"
     ],
-    "owasp)": [
+    "owasp": [
       "p"
     ],
     "top": [
@@ -512,7 +520,7 @@
     "enumeration": [
       "p"
     ],
-    "cwe)": [
+    "cwe": [
       "p"
     ],
     "including": [
@@ -538,8 +546,12 @@
     "method": [
       "p",
       "ol",
+      "ol",
       "li",
-      "p"
+      "li",
+      "p",
+      "p",
+      "strong"
     ],
     "prevent": [
       "p"
@@ -670,6 +682,7 @@
     ],
     "identify": [
       "ol",
+      "ol",
       "li",
       "p",
       "strong",
@@ -706,6 +719,8 @@
     ],
     "sources": [
       "ol",
+      "ol",
+      "li",
       "li",
       "p",
       "p",
@@ -768,19 +783,35 @@
       "li",
       "p"
     ],
-    "sources\n\nform": [
+    "form": [
       "ol",
+      "li",
+      "ul",
       "li"
     ],
-    "fieldsquery": [
+    "fields": [
       "ol",
       "li",
-      "ul"
+      "ul",
+      "li"
     ],
-    "stringsdatabases": [
+    "query": [
       "ol",
       "li",
-      "ul"
+      "ul",
+      "li"
+    ],
+    "strings": [
+      "ol",
+      "li",
+      "ul",
+      "li"
+    ],
+    "databases": [
+      "ol",
+      "li",
+      "ul",
+      "li"
     ],
     "access": [
       "ol",
@@ -788,18 +819,41 @@
       "ul",
       "li"
     ],
-    "methodscookie": [
+    "methods": [
+      "ol",
+      "ol",
       "ol",
       "li",
-      "ul"
+      "ul",
+      "li",
+      "li",
+      "p",
+      "li",
+      "p"
     ],
-    "collectionsession": [
+    "cookie": [
       "ol",
       "li",
-      "ul"
+      "ul",
+      "li"
     ],
-    "variables\n\n\nidentify": [
-      "ol"
+    "collection": [
+      "ol",
+      "li",
+      "ul",
+      "li"
+    ],
+    "session": [
+      "ol",
+      "li",
+      "ul",
+      "li"
+    ],
+    "variables": [
+      "ol",
+      "li",
+      "ul",
+      "li"
     ],
     "output": [
       "ol",
@@ -808,7 +862,11 @@
       "li",
       "p",
       "p",
-      "strong"
+      "strong",
+      "ul",
+      "li",
+      "a",
+      "title"
     ],
     "trace": [
       "ol",
@@ -926,8 +984,10 @@
       "li",
       "p"
     ],
-    "information\n\n\nencode": [
-      "ol"
+    "information": [
+      "ol",
+      "li",
+      "p"
     ],
     "gets": [
       "ol",
@@ -1029,15 +1089,6 @@
     "shows": [
       "ol",
       "ol",
-      "li",
-      "p",
-      "li",
-      "p"
-    ],
-    "methods": [
-      "ol",
-      "ol",
-      "li",
       "li",
       "p",
       "li",
@@ -1239,34 +1290,31 @@
       "code",
       "code"
     ],
-    "cl_abap_format=e_xss_ml)": [
+    "cl_abap_format=e_xss_ml": [
       "ol",
       "li",
       "pre",
       "code"
     ],
-    "cl_abap_format=e_xss_js)": [
+    "cl_abap_format=e_xss_js": [
       "ol",
       "li",
       "pre",
       "code"
     ],
-    "cl_abap_format=e_xss_url)": [
+    "cl_abap_format=e_xss_url": [
       "ol",
       "li",
       "pre",
       "code"
     ],
-    "cl_abap_format=e_xss_css)\n\n\n\nencode": [
-      "ol"
+    "cl_abap_format=e_xss_css": [
+      "ol",
+      "li",
+      "pre",
+      "code"
     ],
     "alternate": [
-      "ol",
-      "li",
-      "p",
-      "strong"
-    ],
-    "method.": [
       "ol",
       "li",
       "p",
@@ -1293,70 +1341,39 @@
       "p",
       "code"
     ],
-    "cl_abap_dyn_prg=escape_xss_xml_html(val)": [
+    "cl_abap_dyn_prg=escape_xss_xml_htmlval": [
       "ol",
       "li",
       "pre",
       "code"
     ],
-    "cl_abap_dyn_prg=escape_xss_javascript(val)": [
+    "cl_abap_dyn_prg=escape_xss_javascriptval": [
       "ol",
       "li",
       "pre",
       "code"
     ],
-    "cl_abap_dyn_prg=escape_xss_url(val)": [
+    "cl_abap_dyn_prg=escape_xss_urlval": [
       "ol",
       "li",
       "pre",
       "code"
     ],
-    "cl_abap_dyn_prg=escape_xss_css(val)": [
+    "cl_abap_dyn_prg=escape_xss_cssval": [
       "ol",
       "li",
       "pre",
       "code"
     ],
-    "variables": [
-      "li",
-      "ul",
-      "li"
-    ],
-    "form": [
-      "ul",
-      "li"
-    ],
-    "fields": [
-      "li"
-    ],
-    "query": [
-      "li"
-    ],
-    "strings": [
-      "li"
-    ],
-    "databases": [
-      "li"
-    ],
-    "cookie": [
-      "li"
-    ],
-    "collection": [
-      "li"
-    ],
-    "session": [
-      "li"
-    ],
-    "information": [
-      "li",
-      "p"
-    ],
-    "cl_abap_format=e_xss_css)": [
-      "li",
-      "pre",
-      "code"
+    "guideline": [
+      "h2"
     ]
   },
   "tags": {},
-  "links": []
+  "links": [
+    {
+      "href": "9b0ef1a5-c143-4e64-81cc-9e02ccbd9fbd",
+      "text": "Encode Untrusted Data in Output"
+    }
+  ]
 }

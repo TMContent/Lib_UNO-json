@@ -1,6 +1,6 @@
 {
   "id": "00000000-0000-0000-0000-000000032b66",
-  "checksum": "cc013e5b7346a7e98049c35c7727195a",
+  "checksum": "97d570377df74bbea29c49eb4e392cb2",
   "words": {
     "40": [
       "ul",
@@ -109,7 +109,7 @@
       "p",
       "p"
     ],
-    "securitypolicy>": [
+    "securitypolicy": [
       "p",
       "pre"
     ],
@@ -139,11 +139,16 @@
     "trustlevel": [
       "pre"
     ],
-    "name=\"medium\"": [
+    "name=medium": [
       "pre"
     ],
-    "policyfile=\"web_mediumtrustconfig\"></trustlevel>\n</securitypolicy>": [
+    "policyfile=web_mediumtrustconfig/trustlevel": [
       "pre"
+    ],
+    "/securitypolicy": [
+      "pre",
+      "ul",
+      "li"
     ],
     "if": [
       "p"
@@ -211,6 +216,7 @@
       "p"
     ],
     "customtrustconfig": [
+      "p",
       "p"
     ],
     "permissions": [
@@ -250,30 +256,26 @@
     "permissionset": [
       "pre"
     ],
-    "class=\"namedpermissionset\"": [
+    "class=namedpermissionset": [
       "pre"
     ],
-    "version=\"1\"": [
+    "version=1": [
       "pre",
       "pre"
     ],
-    "name=\"aspnet\">": [
-      "pre"
-    ],
-    "..": [
-      "pre",
+    "name=aspnet": [
       "pre"
     ],
     "ipermission": [
       "pre"
     ],
-    "class=\"registrypermission\"": [
+    "class=registrypermission": [
       "pre"
     ],
-    "unrestricted=\"true\"</ipermission>": [
+    "unrestricted=true/ipermission": [
       "pre"
     ],
-    "/permissionset>": [
+    "/permissionset": [
       "pre"
     ],
     "note": [
@@ -305,9 +307,6 @@
       "p"
     ],
     "it": [
-      "p"
-    ],
-    "customtrustconfig.": [
       "p"
     ],
     "once": [
@@ -365,12 +364,12 @@
       "ul",
       "li"
     ],
-    "http//msdn.microsoft.com/en": [
+    "http//msdnmicrosoftcom/en": [
       "ul",
       "li",
       "a"
     ],
-    "us/library/dd984947%28v=vs.100%29.aspx#overview": [
+    "us/library/dd984947%28v=vs100%29aspx#overview": [
       "ul",
       "li",
       "a"

@@ -1,11 +1,5 @@
 <h2>Applies To</h2><ul><li> Java</li>
 </ul>
-<h2>What to Do</h2><p>Always validate XML data input against a schema to ensure that it is well-formed.
-</p>
-<h2>Why</h2><p>An attacker might be able to inject malicious XML content into your application, expose local files and private data, modify data, starve server resources, or perform other attacks. Validating XML input reduces these risks by ensuring that the input received matches the expected format. 
-</p>
-<h2>When</h2><p>Follow this guideline when the application handles user input through an XML parser.
-</p>
 <h2>How</h2><p>To validate XML data using a schema:</p><ol>
 <li> <strong>Create a <em>Schema</em> object.</strong> Use the <em>SchemaFactory</em> class to create a <em>Schema</em> object.</li>
 <li> <strong>Create a <em>SAXParserFactory</em> object.</strong> The <em>SAXParserFactory</em> will be used to create a parser for working with the XML data.</li>

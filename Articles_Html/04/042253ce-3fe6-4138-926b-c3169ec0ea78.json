@@ -1,7 +1,17 @@
 {
   "id": "042253ce-3fe6-4138-926b-c3169ec0ea78",
-  "checksum": "e68e591818c8785209d1d9f7f2db19f7",
+  "checksum": "0fb1ea4bbab5e3de30d2852b68b10fe3",
   "words": {
+    "3": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "27": [
+      "ul",
+      "li",
+      "a"
+    ],
     "what": [
       "h2",
       "ol",
@@ -74,6 +84,8 @@
       "p",
       "p",
       "p",
+      "ol",
+      "ol",
       "ol",
       "li",
       "li",
@@ -336,6 +348,9 @@
       "li",
       "li",
       "li",
+      "ul",
+      "li",
+      "a",
       "title"
     ],
     "separate": [
@@ -357,10 +372,14 @@
       "ol",
       "ol",
       "li",
-      "li"
+      "li",
+      "ul",
+      "li",
+      "a"
     ],
     "vulnerabilities": [
-      "p"
+      "p",
+      "h2"
     ],
     "how": [
       "h2"
@@ -387,15 +406,18 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "li",
       "strong",
       "li",
       "li",
-      "li"
+      "li",
+      "h2"
     ],
     "that": [
+      "ol",
       "ol",
       "ol",
       "ol",
@@ -429,6 +451,7 @@
       "li"
     ],
     "identify": [
+      "ol",
       "ol",
       "li",
       "li",
@@ -507,9 +530,6 @@
       "li",
       "li",
       "li"
-    ],
-    "code\nidentify": [
-      "ol"
     ],
     "whether": [
       "ol",
@@ -665,8 +685,11 @@
       "ol",
       "li"
     ],
-    "vulnerability\nuse": [
-      "ol"
+    "vulnerability": [
+      "ol",
+      "ol",
+      "li",
+      "li"
     ],
     "key": [
       "ol",
@@ -742,7 +765,7 @@
       "li",
       "li"
     ],
-    "\"parameterization\"": [
+    "parameterization": [
       "ol",
       "li"
     ],
@@ -854,9 +877,6 @@
       "ol",
       "li"
     ],
-    "that\nuse": [
-      "ol"
-    ],
     "correctly": [
       "ol",
       "li",
@@ -908,11 +928,6 @@
     ],
     "definition": [
       "ol",
-      "li"
-    ],
-    "vulnerability": [
-      "ol",
-      "li",
       "li"
     ],
     "choose": [
@@ -1095,10 +1110,70 @@
       "ol",
       "li"
     ],
+    "examples": [
+      "h2"
+    ],
+    "python": [
+      "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "a"
+    ],
+    "ruby": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "php": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "java": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "net": [
+      "ul",
+      "li",
+      "a"
+    ],
     "parameters": [
       "title"
     ]
   },
   "tags": {},
-  "links": []
+  "links": [
+    {
+      "href": "6b418fb3-88fb-42e0-b32a-f44dc421aa63",
+      "text": "Python 2.7"
+    },
+    {
+      "href": "b99ab950-f74d-4b5c-b900-a874dd92b198",
+      "text": "Python 3"
+    },
+    {
+      "href": "c7224016-0591-4ff5-9d90-a45422c4fd0a",
+      "text": "Ruby"
+    },
+    {
+      "href": "4b8969b1-057e-484d-ad24-7d030cd47e02",
+      "text": "PHP"
+    },
+    {
+      "href": "00000000-0000-0000-0000-000000179eb6",
+      "text": "Java"
+    },
+    {
+      "href": "00000000-0000-0000-0000-00000077e119",
+      "text": ".NET"
+    },
+    {
+      "href": "94e52aca-06b6-4747-9bc9-f0149208f18c",
+      "text": "Command Injection"
+    }
+  ]
 }

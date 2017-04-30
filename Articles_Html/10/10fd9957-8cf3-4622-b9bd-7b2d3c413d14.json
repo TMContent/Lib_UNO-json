@@ -176,6 +176,7 @@
     ],
     "use": [
       "p",
+      "ol",
       "li",
       "strong"
     ],
@@ -325,8 +326,9 @@
       "ol",
       "li"
     ],
-    "only\nuse": [
-      "ol"
+    "only": [
+      "ol",
+      "li"
     ],
     "whitelist": [
       "ol",
@@ -482,9 +484,6 @@
     ],
     "vulnerabilities": [
       "ol",
-      "li"
-    ],
-    "only": [
       "li"
     ]
   },

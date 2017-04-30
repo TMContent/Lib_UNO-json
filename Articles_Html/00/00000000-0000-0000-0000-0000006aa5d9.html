@@ -2,9 +2,4 @@
 </ul><h2>What to Do</h2><p>Disable the use of self-signed TLS certificates.
 </p><h2>Why</h2><p>Allowing the use of self-signed TLS certificates enables some types of man-in-the-middle attacks.
 </p><h2>How</h2><p>Self-signed TLS certificates are not allowed by default. Do not allow them. Avoid using the <em>allowsAnyHTTPSCertificateForHost</em> method in production releases, because it allows self-signed TLS certificates. Do not use the <em>continueWithoutCredentialForAuthenticationChallenge</em> selector within the <em>didReceiveAuthenticationChallenge</em> delegate method of <em>NSURLConnection</em> objects, because it enables self-signed TLS certificates.
-</p><h2>Communication Security Guidelines</h2><ul><li> <a href="00000000-0000-0000-0000-0000006aa5d9">Disable Self-signed TLS Certificates</a></li>
-<li> <a href="00000000-0000-0000-0000-00000060779f">Use TLS to Protect Communications</a></li>
-<li> <a href="00000000-0000-0000-0000-0000007db8fe">Use Strong TLS Configurations</a></li>
-</ul><h2>Communication Security Checklists</h2><ul><li> <a href="00000000-0000-0000-0000-00000092c321">Self-signed TLS Certificates Are Disabled</a></li>
-<li> <a href="00000000-0000-0000-0000-0000005faaf0">TLS Is Used to Protect Communications</a></li>
-<li> <a href="00000000-0000-0000-0000-0000006b67b3">Strong TLS Configurations Are Used</a></li></ul>
+</p>

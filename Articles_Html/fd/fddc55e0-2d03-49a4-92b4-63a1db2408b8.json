@@ -41,6 +41,7 @@
     "wrap": [
       "p",
       "ol",
+      "ol",
       "li",
       "li",
       "p",
@@ -70,7 +71,9 @@
       "p",
       "title"
     ],
-    "actioncontroller:parameters": [
+    "actioncontrollerparameters": [
+      "p",
+      "code",
       "p",
       "code",
       "ol",
@@ -80,8 +83,7 @@
       "p",
       "p",
       "strong",
-      "code",
-      "title"
+      "code"
     ],
     "and": [
       "p",
@@ -98,6 +100,7 @@
       "p",
       "p",
       "p",
+      "ol",
       "ol",
       "ol",
       "li",
@@ -378,10 +381,6 @@
       "p",
       "p"
     ],
-    "actioncontroller::parameters": [
-      "p",
-      "code"
-    ],
     "protects": [
       "p"
     ],
@@ -501,6 +500,7 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "p",
@@ -605,8 +605,13 @@
       "li",
       "p"
     ],
-    "record\n\n\nwrap": [
-      "ol"
+    "record": [
+      "ol",
+      "ol",
+      "li",
+      "p",
+      "li",
+      "p"
     ],
     "before": [
       "ol",
@@ -620,9 +625,6 @@
       "p",
       "strong"
     ],
-    "data\n\n\nuse": [
-      "ol"
-    ],
     "prevent": [
       "ol",
       "li",
@@ -634,10 +636,13 @@
       "li",
       "p"
     ],
-    "paramspermit.\n\n\ncommit": [
-      "ol"
+    "paramspermit": [
+      "ol",
+      "li",
+      "p",
+      "code"
     ],
-    "changes": [
+    "commit": [
       "ol",
       "ol",
       "li",
@@ -646,7 +651,8 @@
       "p",
       "strong"
     ],
-    "commit": [
+    "changes": [
+      "ol",
       "ol",
       "li",
       "li",
@@ -664,24 +670,13 @@
       "li",
       "p"
     ],
-    "record": [
-      "ol",
-      "li",
-      "p",
-      "li",
-      "p"
-    ],
     "updates": [
       "ol",
       "li",
       "p"
     ],
-    "paramspermit.": [
-      "li",
-      "p"
-    ],
-    "paramspermit": [
-      "code"
+    "actioncontroller:parameters": [
+      "title"
     ]
   },
   "tags": {},

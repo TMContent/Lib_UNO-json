@@ -1,13 +1,14 @@
 <h2>Description</h2><p>Information leakage is a blanket term for vulnerabilities that disclose either something about the system or some of the application data to unauthorized users. Information leak vulnerabilities result when application code sends data to the user that the user is not authorized to receive. Most information leak vulnerabilities disclose something about the system and this helps the attacker exploit additional vulnerabilities. Some information leaks disclose application data and in that case the attack is usually after the data itself. Sometimes the disclosed data might include authentication credentials, which could be leveraged to take over users’ accounts or the application. All application types are affected by information leak vulnerabilities.
 </p><h2>Impact</h2><p>There are two main types of information leakage: system information leaks and application data leaks.
 </p><p>
-System information leaks can be used by attackers to exploit other vulnerabilities, if other vulnerabilities are present. By itself, a system information leak doesn't give an attacker any additional abilities. System information leaks have to be combined with other vulnerabilities to result in a compromise. For example, the operating system used by the application server might be outdated and vulnerable, but the attacker won't know that until the application tells him that the server is outdated. At that point, the attacker can use an exploit targeting the server operating system to compromise the application.
+System information leaks can be used by attackers to exploit other vulnerabilities, if other vulnerabilities are present. By itself, a system information leak doesn't give an attacker any additional abilities. System information leaks have to be combined with other vulnerabilities to result in a compromise. For example, the operating system used by the application server might be outdated and vulnerable, but the attacker won't know that until the application tells them that the server is outdated. At that point, the attacker can use an exploit targeting the server operating system to compromise the application.
 </p><p>
 Application data leaks result in the attacker gaining unauthorized access to the data.
 </p><h1>Countermeasures</h1><p>To prevent system information leaks, use simple error messages and harden the server.
-</p><h1>Application Check</h1><p>To check for adequate protection against system information leaks, verify that simple error messages are used and the server is hardened.
-</p><h2>Specific Technologies</h2><ul><li> <a href="ac3a5f4f-e0bb-4b63-b67f-efdc26fa2bcb">ASP.NET Information Leakage</a></li>
-<li> <a href="62eba518-f3b1-458c-b48c-487cb2de02de">Java Information Leakage</a></li>
-<li> <a href="219bb9d4-ddc9-4b1e-be27-e6adde7b6315">C++ Information Leakage</a></li>
-<li> <a href="8ac332aa-aeb7-4c8c-aa85-94a570040f15">PHP Information Leakage</a></li>
-</ul>
+</p><ul>
+<li> <a href="6ccf4b69-a4c0-4c08-a2ea-86e704c3ffc2">Display Simple Error Messages</a></li>
+<li> <a href="99297f49-528b-4a25-bc35-3b82ef14404a">Harden the Server</a></li>
+</ul><h1>Application Check</h1><p>To check for adequate protection against system information leaks, verify that simple error messages are used and the server is hardened.
+</p><ul>
+<li> <a href="00000000-0000-0000-0000-0000002f7a79">Simple Error Messages Are Used</a></li>
+<li> <a href="408f56bf-9ca6-482d-bff2-a2495ff80917">The Server Is Hardened</a></li></ul>

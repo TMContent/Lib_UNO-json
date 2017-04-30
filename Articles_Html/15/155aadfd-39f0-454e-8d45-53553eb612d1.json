@@ -1,6 +1,6 @@
 {
   "id": "155aadfd-39f0-454e-8d45-53553eb612d1",
-  "checksum": "1685ec280aee70015cbbf89d0afebf45",
+  "checksum": "398630fd2e23bdc93bbd534b2fa3c659",
   "words": {
     "0": [
       "ol",
@@ -19,12 +19,32 @@
       "li",
       "li",
       "p",
-      "p"
+      "p",
+      "pre",
+      "code"
     ],
-    "1000": [
+    "10": [
       "pre",
       "code",
       "pre",
+      "code"
+    ],
+    "555": [
+      "pre",
+      "code",
+      "pre",
+      "code"
+    ],
+    "1000": [
+      "pre",
+      "pre",
+      "pre",
+      "code",
+      "code",
+      "code",
+      "pre",
+      "pre",
+      "code",
       "code"
     ],
     "what": [
@@ -179,6 +199,7 @@
     ],
     "use": [
       "p",
+      "ol",
       "ol",
       "ol",
       "li",
@@ -352,6 +373,8 @@
       "pre",
       "code",
       "pre",
+      "pre",
+      "code",
       "code"
     ],
     "why": [
@@ -665,8 +688,11 @@
       "li",
       "p"
     ],
-    "use\n\n\niterate": [
-      "ol"
+    "iterate": [
+      "ol",
+      "li",
+      "p",
+      "strong"
     ],
     "through": [
       "ol",
@@ -701,7 +727,11 @@
     "run": [
       "ol",
       "li",
-      "p"
+      "p",
+      "pre",
+      "pre",
+      "code",
+      "code"
     ],
     "from": [
       "ol",
@@ -841,8 +871,16 @@
       "li",
       "p"
     ],
-    "completeness\n\n\navoid": [
-      "ol"
+    "completeness": [
+      "ol",
+      "li",
+      "p"
+    ],
+    "avoid": [
+      "ol",
+      "li",
+      "p",
+      "strong"
     ],
     "using": [
       "ol",
@@ -922,6 +960,7 @@
     ],
     "validate": [
       "ol",
+      "ol",
       "li",
       "p",
       "li",
@@ -972,8 +1011,10 @@
       "pre",
       "code"
     ],
-    "exceeded\n\n\nvalidate": [
-      "ol"
+    "exceeded": [
+      "ol",
+      "li",
+      "p"
     ],
     "accessing": [
       "ol",
@@ -991,7 +1032,11 @@
       "strong",
       "pre",
       "pre",
+      "pre",
       "code",
+      "code",
+      "code",
+      "pre",
       "code"
     ],
     "perform": [
@@ -1029,24 +1074,6 @@
       "li",
       "p"
     ],
-    "iterate": [
-      "li",
-      "p",
-      "strong"
-    ],
-    "completeness": [
-      "li",
-      "p"
-    ],
-    "avoid": [
-      "li",
-      "p",
-      "strong"
-    ],
-    "exceeded": [
-      "li",
-      "p"
-    ],
     "problem": [
       "h2"
     ],
@@ -1058,8 +1085,20 @@
     ],
     "int": [
       "pre",
+      "pre",
+      "pre",
+      "pre",
+      "code",
+      "code",
+      "code",
       "code",
       "pre",
+      "pre",
+      "pre",
+      "pre",
+      "code",
+      "code",
+      "code",
       "code"
     ],
     "mainint": [
@@ -1080,7 +1119,13 @@
       "pre",
       "code"
     ],
-    "*argv])\n{\nint": [
+    "*argv": [
+      "pre",
+      "code",
+      "pre",
+      "code"
+    ],
+    "{": [
       "pre",
       "code",
       "pre",
@@ -1089,6 +1134,8 @@
     "arraysize": [
       "pre",
       "pre",
+      "pre",
+      "code",
       "code",
       "code",
       "pre",
@@ -1126,22 +1173,72 @@
       "code",
       "code"
     ],
-    "10\nint": [
+    "arrayarraysize": [
       "pre",
       "code",
       "pre",
       "code"
     ],
-    "arrayarraysize];\nint": [
+    "i": [
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
       "pre",
       "code",
+      "code",
+      "code",
+      "code",
+      "code",
+      "code",
+      "code",
       "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "code",
+      "code",
+      "code",
+      "code",
+      "code",
       "code"
     ],
-    "i\n\n//": [
+    "//": [
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
       "pre",
       "code",
+      "code",
+      "code",
+      "code",
+      "code",
+      "code",
+      "code",
+      "code",
+      "code",
       "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "code",
+      "code",
+      "code",
+      "code",
+      "code",
+      "code",
       "code"
     ],
     "we": [
@@ -1180,28 +1277,10 @@
       "pre",
       "code"
     ],
-    "datafor(i": [
+    "fori": [
       "pre",
       "code",
       "pre",
-      "code"
-    ],
-    "i": [
-      "pre",
-      "pre",
-      "pre",
-      "pre",
-      "code",
-      "code",
-      "code",
-      "code",
-      "pre",
-      "pre",
-      "pre",
-      "pre",
-      "code",
-      "code",
-      "code",
       "code"
     ],
     "i++{": [
@@ -1210,8 +1289,12 @@
       "pre",
       "code"
     ],
-    "arrayi]": [
+    "arrayi": [
       "pre",
+      "pre",
+      "pre",
+      "code",
+      "code",
       "code",
       "pre",
       "pre",
@@ -1230,10 +1313,14 @@
       "code",
       "code"
     ],
-    "1000\n}\n\n//": [
+    "}": [
+      "pre",
       "pre",
       "code",
+      "code",
       "pre",
+      "pre",
+      "code",
       "code"
     ],
     "silly": [
@@ -1246,7 +1333,7 @@
       "pre",
       "code"
     ],
-    "mistake//": [
+    "mistake": [
       "pre",
       "code"
     ],
@@ -1268,13 +1355,9 @@
       "code",
       "code"
     ],
-    "run//": [
-      "pre",
+    "case": [
       "pre",
       "code",
-      "code"
-    ],
-    "case": [
       "pre",
       "code"
     ],
@@ -1296,22 +1379,12 @@
       "code",
       "code"
     ],
-    "exploitablei": [
+    "exploitable": [
       "pre",
-      "pre",
-      "code",
-      "code"
-    ],
-    "arraysize\narray[i]": [
-      "pre",
-      "code"
-    ],
-    "//": [
       "pre",
       "pre",
       "code",
       "code",
-      "pre",
       "code"
     ],
     "fact": [
@@ -1356,10 +1429,6 @@
       "pre",
       "code"
     ],
-    "exploitable//": [
-      "pre",
-      "code"
-    ],
     "cases": [
       "pre",
       "code"
@@ -1369,14 +1438,6 @@
       "code"
     ],
     "also": [
-      "pre",
-      "code"
-    ],
-    "555\narray[i]": [
-      "pre",
-      "code"
-    ],
-    "1000\n\n//": [
       "pre",
       "code"
     ],
@@ -1406,7 +1467,7 @@
       "pre",
       "code"
     ],
-    "runtime}": [
+    "runtime": [
       "pre",
       "code"
     ],
@@ -1421,10 +1482,6 @@
       "pre",
       "code"
     ],
-    "bounds//": [
-      "pre",
-      "code"
-    ],
     "contrived": [
       "pre",
       "code"
@@ -1433,7 +1490,7 @@
       "pre",
       "code"
     ],
-    "point//": [
+    "point": [
       "pre",
       "code"
     ],
@@ -1449,15 +1506,13 @@
       "pre",
       "code"
     ],
-    "errori": [
+    "error": [
       "pre",
+      "pre",
+      "code",
       "code"
     ],
-    "555\n//": [
-      "pre",
-      "code"
-    ],
-    "action//": [
+    "action": [
       "pre",
       "code"
     ],
@@ -1469,7 +1524,7 @@
       "pre",
       "code"
     ],
-    "caseif(i": [
+    "ifi": [
       "pre",
       "code"
     ],
@@ -1478,10 +1533,6 @@
       "code"
     ],
     "indicate": [
-      "pre",
-      "code"
-    ],
-    "error": [
       "pre",
       "code"
     ],
@@ -1498,10 +1549,6 @@
       "code"
     ],
     "": [
-      "pre",
-      "code"
-    ],
-    "1\n}": [
       "pre",
       "code"
     ]

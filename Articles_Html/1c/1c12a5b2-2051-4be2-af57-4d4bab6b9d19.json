@@ -47,6 +47,7 @@
     "verify": [
       "p",
       "p",
+      "ol",
       "li",
       "strong"
     ],
@@ -81,6 +82,7 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "strong",
@@ -93,6 +95,7 @@
       "li",
       "li",
       "strong",
+      "ul",
       "ul",
       "ul",
       "ul",
@@ -322,9 +325,6 @@
       "ol",
       "li"
     ],
-    "authentication\nverify": [
-      "ol"
-    ],
     "review": [
       "ol",
       "li"
@@ -353,6 +353,7 @@
       "ol",
       "li",
       "strong",
+      "ul",
       "li",
       "ol",
       "ol",
@@ -415,8 +416,9 @@
       "ul",
       "li"
     ],
-    "requirements\nallowing": [
-      "ul"
+    "allowing": [
+      "ul",
+      "li"
     ],
     "secure": [
       "ul",
@@ -438,8 +440,13 @@
       "ul",
       "li"
     ],
-    "recovery\nrequiring": [
-      "ul"
+    "recovery": [
+      "ul",
+      "li"
+    ],
+    "requiring": [
+      "ul",
+      "li"
     ],
     "re": [
       "ul",
@@ -449,8 +456,19 @@
       "ul",
       "li"
     ],
-    "operations\nusing": [
-      "ul"
+    "operations": [
+      "ul",
+      "li"
+    ],
+    "using": [
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "li",
+      "ul",
+      "li"
     ],
     "multi": [
       "ul",
@@ -459,9 +477,6 @@
     "factor": [
       "ul",
       "li"
-    ],
-    "authentication\nusing": [
-      "ul"
     ],
     "simple": [
       "ul",
@@ -491,23 +506,37 @@
       "ul",
       "li"
     ],
-    "attacker\nusing": [
-      "ul"
+    "attacker": [
+      "ul",
+      "li",
+      "ol",
+      "li"
     ],
     "tls": [
       "ul",
       "li",
+      "ul",
       "li"
     ],
-    "communications\nthrottling": [
-      "ul"
+    "communications": [
+      "ul",
+      "li"
+    ],
+    "throttling": [
+      "ul",
+      "li"
     ],
     "repeated": [
       "ul",
       "li"
     ],
-    "attempts\nlocking": [
-      "ul"
+    "attempts": [
+      "ul",
+      "li"
+    ],
+    "locking": [
+      "ul",
+      "li"
     ],
     "inactive": [
       "ul",
@@ -515,42 +544,6 @@
     ],
     "accounts": [
       "ul",
-      "li"
-    ],
-    "allowing": [
-      "li"
-    ],
-    "recovery": [
-      "li"
-    ],
-    "requiring": [
-      "li"
-    ],
-    "operations": [
-      "li"
-    ],
-    "using": [
-      "li",
-      "li",
-      "li",
-      "ul",
-      "li"
-    ],
-    "attacker": [
-      "li",
-      "ol",
-      "li"
-    ],
-    "communications": [
-      "li"
-    ],
-    "throttling": [
-      "li"
-    ],
-    "attempts": [
-      "li"
-    ],
-    "locking": [
       "li"
     ],
     "implement": [
@@ -640,8 +633,16 @@
       "ol",
       "li"
     ],
-    "end\nadd": [
-      "ol"
+    "end": [
+      "ol",
+      "li"
+    ],
+    "add": [
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "strong"
     ],
     "authenticates": [
       "ol",
@@ -658,21 +659,12 @@
       "ol",
       "li"
     ],
-    "add": [
-      "ol",
-      "li",
-      "li",
-      "strong"
-    ],
     "will": [
       "ol",
       "li"
     ],
     "need": [
       "ol",
-      "li"
-    ],
-    "end": [
       "li"
     ],
     "interface": [
@@ -683,15 +675,23 @@
       "ul",
       "li"
     ],
-    "credentials\nnetwork": [
-      "ul"
+    "credentials": [
+      "ul",
+      "ul",
+      "li",
+      "li"
+    ],
+    "network": [
+      "ul",
+      "li"
     ],
     "communicates": [
       "ul",
       "li"
     ],
-    "tls\na": [
-      "ul"
+    "a": [
+      "ul",
+      "li"
     ],
     "token": [
       "ul",
@@ -735,17 +735,6 @@
     ],
     "cached": [
       "ul",
-      "li"
-    ],
-    "credentials": [
-      "ul",
-      "li",
-      "li"
-    ],
-    "network": [
-      "li"
-    ],
-    "a": [
       "li"
     ]
   },

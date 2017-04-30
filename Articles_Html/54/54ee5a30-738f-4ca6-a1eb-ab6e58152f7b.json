@@ -1,6 +1,6 @@
 {
   "id": "54ee5a30-738f-4ca6-a1eb-ab6e58152f7b",
-  "checksum": "a1c1b9801afc1b42c123f5ad23ef53ee",
+  "checksum": "b3a7ddbdd9e4a7422d884ff4f432400c",
   "words": {
     "applies": [
       "h1"
@@ -130,6 +130,8 @@
       "p",
       "p",
       "p",
+      "ul",
+      "li",
       "title"
     ],
     "or": [
@@ -208,18 +210,12 @@
     ],
     "copying": [
       "p",
-      "p",
-      "ul",
-      "li",
-      "a"
+      "p"
     ],
     "data": [
       "p",
       "p",
-      "p",
-      "ul",
-      "li",
-      "a"
+      "p"
     ],
     "make": [
       "p"
@@ -242,10 +238,7 @@
     "buffer": [
       "p",
       "p",
-      "p",
-      "ul",
-      "li",
-      "a"
+      "p"
     ],
     "allocated": [
       "p"
@@ -254,10 +247,7 @@
       "p"
     ],
     "enough": [
-      "p",
-      "ul",
-      "li",
-      "a"
+      "p"
     ],
     "fit": [
       "p"
@@ -274,10 +264,7 @@
     "for": [
       "p",
       "ul",
-      "li",
-      "ul",
-      "li",
-      "a"
+      "li"
     ],
     "preventing": [
       "p"
@@ -301,12 +288,14 @@
       "p",
       "p"
     ],
-    "sizeof)": [
+    "sizeof": [
       "p",
       "p",
       "p",
       "p",
-      "p"
+      "p",
+      "ul",
+      "li"
     ],
     "function": [
       "p",
@@ -476,7 +465,7 @@
       "ul",
       "li"
     ],
-    "\"arr01": [
+    "arr01": [
       "ul",
       "li"
     ],
@@ -488,10 +477,6 @@
       "ul",
       "li"
     ],
-    "sizeof": [
-      "ul",
-      "li"
-    ],
     "operator": [
       "ul",
       "li"
@@ -500,36 +485,16 @@
       "ul",
       "li"
     ],
-    "array\"": [
-      "ul",
-      "li"
-    ],
     "at": [
       "ul",
       "li"
     ],
-    "https//www.securecoding.cert.org/confluence/display/cplusplus/ctr01": [
+    "https//wwwsecurecodingcertorg/confluence/display/cplusplus/ctr01": [
       "ul",
       "li",
       "a"
     ],
-    "cpp.+do+not+apply+the+sizeof+operator+to+a+pointer+when+taking+the+size+of+an+array": [
-      "ul",
-      "li",
-      "a"
-    ],
-    "related": [
-      "h1"
-    ],
-    "items": [
-      "h1"
-    ],
-    "allocate": [
-      "ul",
-      "li",
-      "a"
-    ],
-    "space": [
+    "cpp+do+not+apply+the+sizeof+operator+to+a+pointer+when+taking+the+size+of+an+array": [
       "ul",
       "li",
       "a"
@@ -540,10 +505,6 @@
     {
       "href": "https://www.securecoding.cert.org/confluence/display/cplusplus/CTR01-CPP.+Do+not+apply+the+sizeof+operator+to+a+pointer+when+taking+the+size+of+an+array",
       "text": "https://www.securecoding.cert.org/confluence/display/cplusplus/CTR01-CPP.+Do+not+apply+the+sizeof+operator+to+a+pointer+when+taking+the+size+of+an+array"
-    },
-    {
-      "href": "/article/c62fb9d2-95f1-4e36-b10f-cdf9451d15ce",
-      "text": "Allocate Enough Buffer Space for Copying Data"
     }
   ]
 }

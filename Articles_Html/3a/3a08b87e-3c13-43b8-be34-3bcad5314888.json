@@ -63,6 +63,7 @@
     "verify": [
       "p",
       "p",
+      "ol",
       "li",
       "p",
       "strong"
@@ -124,10 +125,12 @@
     "data": [
       "p",
       "p",
+      "ul",
       "li",
       "p",
       "p",
       "p",
+      "ol",
       "ol",
       "ol",
       "ol",
@@ -168,6 +171,7 @@
       "p",
       "strong",
       "p",
+      "ol",
       "ol",
       "ol",
       "ol",
@@ -483,18 +487,35 @@
       "ul",
       "li"
     ],
-    "disclosuredata": [
-      "ul"
+    "disclosure": [
+      "ul",
+      "li",
+      "ol",
+      "li",
+      "p"
     ],
     "integrity": [
       "ul",
       "li"
     ],
-    "compromiseunintended": [
-      "ul"
+    "compromise": [
+      "ul",
+      "li"
     ],
-    "deletionavailability": [
-      "ul"
+    "unintended": [
+      "ul",
+      "li"
+    ],
+    "deletion": [
+      "ul",
+      "li",
+      "ol",
+      "li",
+      "p"
+    ],
+    "availability": [
+      "ul",
+      "li"
     ],
     "of": [
       "ul",
@@ -574,26 +595,6 @@
     ],
     "software": [
       "ul",
-      "li"
-    ],
-    "disclosure": [
-      "li",
-      "li",
-      "p"
-    ],
-    "compromise": [
-      "li"
-    ],
-    "unintended": [
-      "li"
-    ],
-    "deletion": [
-      "li",
-      "ol",
-      "li",
-      "p"
-    ],
-    "availability": [
       "li"
     ],
     "when": [
@@ -873,6 +874,7 @@
     ],
     "identify": [
       "ol",
+      "ol",
       "li",
       "p",
       "strong",
@@ -974,9 +976,29 @@
       "li",
       "p"
     ],
-    "credentials\n\n\nclassify": [
+    "credentials": [
       "ol",
-      "ol"
+      "li",
+      "p",
+      "ol",
+      "li",
+      "p"
+    ],
+    "classify": [
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
+      "p",
+      "strong",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
+      "p",
+      "strong"
     ],
     "review": [
       "ol",
@@ -1129,23 +1151,6 @@
       "li",
       "p"
     ],
-    "classify": [
-      "ol",
-      "li",
-      "li",
-      "p",
-      "p",
-      "strong",
-      "ol",
-      "li",
-      "li",
-      "p",
-      "p",
-      "strong"
-    ],
-    "data\n\n\nidentify": [
-      "ol"
-    ],
     "where": [
       "ol",
       "ol",
@@ -1159,6 +1164,7 @@
       "p"
     ],
     "stored": [
+      "ol",
       "ol",
       "ol",
       "li",
@@ -1184,9 +1190,6 @@
       "li",
       "p"
     ],
-    "stored\n\n\nverify": [
-      "ol"
-    ],
     "each": [
       "ol",
       "li",
@@ -1204,12 +1207,6 @@
     ],
     "sure": [
       "ol",
-      "li",
-      "p"
-    ],
-    "credentials": [
-      "li",
-      "p",
       "li",
       "p"
     ],
@@ -1246,8 +1243,23 @@
     "management": [
       "p"
     ],
-    "data\n\n\nprotect": [
-      "ol"
+    "protect": [
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "p",
+      "strong",
+      "li",
+      "p",
+      "strong",
+      "li",
+      "p",
+      "strong",
+      "li",
+      "p",
+      "strong"
     ],
     "on": [
       "ol",
@@ -1349,12 +1361,12 @@
       "li",
       "p"
     ],
-    "disclosure\n\n\nprotect": [
-      "ol"
-    ],
     "ebs": [
       "ol",
+      "ol",
       "li",
+      "li",
+      "p",
       "p",
       "strong"
     ],
@@ -1372,11 +1384,6 @@
       "p"
     ],
     "store": [
-      "ol",
-      "li",
-      "p"
-    ],
-    "ebs)": [
       "ol",
       "li",
       "p"
@@ -1431,7 +1438,7 @@
       "p",
       "p"
     ],
-    "os).": [
+    "os": [
       "ol",
       "li",
       "p"
@@ -1446,17 +1453,22 @@
       "li",
       "p"
     ],
-    "efs)": [
+    "efs": [
       "ol",
       "li",
       "p"
     ],
-    "bitlocker\n\n\nprotect": [
-      "ol"
+    "bitlocker": [
+      "ol",
+      "li",
+      "p"
     ],
     "rds": [
       "ol",
+      "ol",
       "li",
+      "li",
+      "p",
       "p",
       "strong"
     ],
@@ -1475,11 +1487,6 @@
       "ol",
       "li",
       "p",
-      "li",
-      "p"
-    ],
-    "rds)": [
-      "ol",
       "li",
       "p"
     ],
@@ -1542,10 +1549,22 @@
       "li",
       "p"
     ],
-    "layer\n\n\nprotect": [
-      "ol"
+    "layer": [
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "p",
+      "li",
+      "p",
+      "li",
+      "li",
+      "p",
+      "p"
     ],
     "glacier": [
+      "ol",
       "ol",
       "li",
       "li",
@@ -1578,18 +1597,6 @@
       "li",
       "p"
     ],
-    "layer": [
-      "ol",
-      "ol",
-      "li",
-      "p",
-      "li",
-      "p",
-      "li",
-      "li",
-      "p",
-      "p"
-    ],
     "encrypt": [
       "ol",
       "ol",
@@ -1608,8 +1615,15 @@
       "li",
       "p"
     ],
-    "glacier\n\n\nprotecting": [
-      "ol"
+    "protecting": [
+      "ol",
+      "ol",
+      "li",
+      "p",
+      "strong",
+      "li",
+      "p",
+      "strong"
     ],
     "dynamodb": [
       "ol",
@@ -1642,21 +1656,16 @@
       "li",
       "p"
     ],
-    "layer\n\n\nprotecting": [
-      "ol"
-    ],
     "emr": [
       "ol",
+      "ol",
       "li",
+      "li",
+      "p",
       "p",
       "strong"
     ],
     "mapreduce": [
-      "ol",
-      "li",
-      "p"
-    ],
-    "emr)": [
       "ol",
       "li",
       "p"
@@ -1681,7 +1690,7 @@
       "li",
       "p"
     ],
-    "ami)": [
+    "ami": [
       "ol",
       "li",
       "p"
@@ -1710,32 +1719,6 @@
       "ol",
       "li",
       "p"
-    ],
-    "protect": [
-      "li",
-      "p",
-      "strong",
-      "li",
-      "p",
-      "strong",
-      "li",
-      "p",
-      "strong",
-      "li",
-      "p",
-      "strong"
-    ],
-    "bitlocker": [
-      "li",
-      "p"
-    ],
-    "protecting": [
-      "li",
-      "p",
-      "strong",
-      "li",
-      "p",
-      "strong"
     ]
   },
   "tags": {},

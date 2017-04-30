@@ -1,0 +1,59 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "0",
+      "Content_Hash": "0"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "b99ab950-f74d-4b5c-b900-a874dd92b198"
+        ],
+        "Library_Id": [
+          "be5273b1-d682-4361-99d9-6234f2d47eb7"
+        ],
+        "Title": [
+          "Python 3 Separate Command Names from Parameters"
+        ],
+        "Category": [
+          ""
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "Python"
+        ],
+        "Type": [
+          "Code Example"
+        ],
+        "DirectLink": [
+          ""
+        ],
+        "Tag": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "false",
+          "DataType": "markdown"
+        },
+        "Data": [
+          "## Applies To ##\r\n\r\n* Python 3\r\n\r\n\r\n## Problem Example ##\r\n\r\n~~~~\r\n#! /usr/bin/env python3\r\n\r\n'''\r\nPython Execute Command via Shell Antipattern\r\n'''\r\n\r\nimport os\r\nimport sys\r\n\r\ncmdname = \"/usr/bin/tail\"\r\n\r\n# Bad: create one big string and execute it\r\ncmd = cmdname + \" \" + \" \".join(sys.argv[1:])\r\nos.system(cmd)\r\n~~~~\r\n\r\n\r\n## Solution Example ##\r\n\r\n~~~~\r\n#! /usr/bin/env python3\r\n\r\n'''\r\nPython Execute Command without Shell Pattern\r\n'''\r\n\r\nimport subprocess\r\nimport sys\r\n\r\ndef main():\r\n    if len(sys.argv) < 3:\r\n        print(\"Usage: [lines] [content]\")\r\n        return\r\n\r\n    cmdname = \"/usr/bin/tail\"\r\n\r\n    # Provide a file handle for stdout in the Popen call to redirect output to a file\r\n    out_file = open('output_file', 'w')\r\n    program = subprocess.Popen([cmdname, \"-\" + sys.argv[1]], stdout=out_file, stdin=subprocess.PIPE, shell=False)\r\n    \r\n    # Write content to stdin, or provide a file handle in the Popen call\r\n    for i in range(100):\r\n    \tprogram.stdin.write(bytes(\"{} - \".format(i) + \"\".join(sys.argv[2:]) + \"\\n\", 'ASCII'))\r\n    program.stdin.flush()\r\n    program.stdin.close()\r\n\r\n\r\nif __name__ == \"__main__\":\r\n    sys.exit(main())\r\n~~~~\r\n\r\n\r\n## Guideline ##\r\n\r\n* [Separate Parameters from Command Names](042253ce-3fe6-4138-926b-c3169ec0ea78)"
+        ]
+      }
+    ]
+  }
+}

@@ -1,6 +1,6 @@
 {
   "id": "7f064998-a562-4e03-abef-676230e80d7c",
-  "checksum": "7acb98aaee6b3e6320945a5999bf7e8e",
+  "checksum": "4ac1dd7fd182f077c087a04bfc829841",
   "words": {
     "applies": [
       "h2"
@@ -33,10 +33,10 @@
       "p",
       "p",
       "pre",
+      "code",
       "p",
       "p",
-      "ul",
-      "li"
+      "title"
     ],
     "what": [
       "h2",
@@ -44,9 +44,7 @@
     ],
     "do": [
       "h2",
-      "h2",
-      "ul",
-      "li"
+      "h2"
     ],
     "configure": [
       "p"
@@ -80,9 +78,7 @@
       "p",
       "p",
       "p",
-      "p",
-      "ul",
-      "li"
+      "p"
     ],
     "being": [
       "p",
@@ -109,9 +105,7 @@
     "a": [
       "p",
       "p",
-      "p",
-      "ul",
-      "li"
+      "p"
     ],
     "little": [
       "p"
@@ -128,9 +122,7 @@
       "p",
       "p",
       "p",
-      "p",
-      "ul",
-      "li"
+      "p"
     ],
     "attackers": [
       "p"
@@ -167,9 +159,7 @@
       "p",
       "p",
       "p",
-      "p",
-      "ul",
-      "li"
+      "p"
     ],
     "application": [
       "p",
@@ -254,14 +244,10 @@
       "p"
     ],
     "doing": [
-      "p",
-      "ul",
-      "li"
+      "p"
     ],
     "so": [
-      "p",
-      "ul",
-      "li"
+      "p"
     ],
     "help": [
       "p"
@@ -296,32 +282,45 @@
       "p",
       "p",
       "p",
-      "p",
-      "ul",
-      "ul",
-      "li",
-      "li"
+      "p"
     ],
     "expose_php": [
-      "pre"
+      "pre",
+      "code"
     ],
     "=": [
       "pre",
       "pre",
       "pre",
-      "pre"
-    ],
-    "offdisplay_errors": [
-      "pre"
-    ],
-    "offservertokens": [
-      "pre"
-    ],
-    "prodserversignature": [
-      "pre"
+      "code",
+      "code",
+      "code",
+      "pre",
+      "code"
     ],
     "off": [
-      "pre"
+      "pre",
+      "pre",
+      "pre",
+      "code",
+      "code",
+      "code"
+    ],
+    "display_errors": [
+      "pre",
+      "code"
+    ],
+    "servertokens": [
+      "pre",
+      "code"
+    ],
+    "prod": [
+      "pre",
+      "code"
+    ],
+    "serversignature": [
+      "pre",
+      "code"
     ],
     "extension": [
       "p"
@@ -353,9 +352,7 @@
     ],
     "this": [
       "p",
-      "p",
-      "ul",
-      "li"
+      "p"
     ],
     "change": [
       "p",
@@ -374,8 +371,10 @@
     "example": [
       "p"
     ],
-    "\"app\"": [
-      "p"
+    "app": [
+      "p",
+      "pre",
+      "code"
     ],
     "and": [
       "p"
@@ -427,20 +426,20 @@
     "would": [
       "p"
     ],
-    "different:": [
+    "different": [
       "p"
     ],
     "addtype": [
-      "pre"
+      "pre",
+      "code"
     ],
     "application/x": [
-      "pre"
+      "pre",
+      "code"
     ],
     "httpd": [
-      "pre"
-    ],
-    "app": [
-      "pre"
+      "pre",
+      "code"
     ],
     "can": [
       "p"
@@ -491,101 +490,16 @@
       "p"
     ],
     "by": [
-      "p",
-      "ul",
-      "li"
+      "p"
     ],
     "sessionname": [
       "p",
-      "pre"
+      "pre",
+      "code"
     ],
-    "\"sessionid\"": [
-      "pre"
-    ],
-    "additional": [
-      "h2"
-    ],
-    "resources": [
-      "h2"
-    ],
-    "discussion": [
-      "ul",
-      "li"
-    ],
-    "about": [
-      "ul",
-      "li"
-    ],
-    "subject": [
-      "ul",
-      "li"
-    ],
-    "see": [
-      "ul",
-      "li"
-    ],
-    "http//www.php.net/manual/en/security.hiding.php.": [
-      "ul",
-      "li"
-    ],
-    "not": [
-      "ul",
-      "li"
-    ],
-    "set": [
-      "ul",
-      "li"
-    ],
-    "as": [
-      "ul",
-      "ul",
-      "li",
-      "li"
-    ],
-    "default": [
-      "ul",
-      "li"
-    ],
-    "type": [
-      "ul",
-      "li"
-    ],
-    "recommended": [
-      "ul",
-      "li"
-    ],
-    "marpetr": [
-      "ul",
-      "li"
-    ],
-    "": [
-      "ul",
-      "ul",
-      "li",
-      "li"
-    ],
-    "greatly": [
-      "ul",
-      "li"
-    ],
-    "simplifies": [
-      "ul",
-      "li"
-    ],
-    "malicious": [
-      "ul",
-      "li"
-    ],
-    "upload": [
-      "ul",
-      "li"
-    ],
-    "attacks": [
-      "ul",
-      "li"
-    ],
-    "http//www.php.net/manual/en/security.hiding.php": [
-      "a"
+    "sessionid": [
+      "pre",
+      "code"
     ],
     "disable": [
       "title"
@@ -598,10 +512,5 @@
     ]
   },
   "tags": {},
-  "links": [
-    {
-      "href": "http://www.php.net/manual/en/security.hiding.php",
-      "text": "http://www.php.net/manual/en/security.hiding.php"
-    }
-  ]
+  "links": []
 }

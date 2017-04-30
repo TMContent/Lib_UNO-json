@@ -28,7 +28,7 @@
           "PHP"
         ],
         "Type": [
-          "Guideline"
+          "How To"
         ],
         "DirectLink": [
           "Change Session IDs During Authentication"
@@ -60,7 +60,7 @@
           "DataType": "html"
         },
         "Data": [
-          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PHP</li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Change the user's session ID when he logs in.</p>\r\n  <h1>Why</h1>\r\n  <p>Change session IDs during login to make sure that the session state corresponds to the authenticated user.</p>\r\n  <h1>How</h1>\r\n  <p>To change session IDs during login:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Find login functionality.</strong> Find the code that is responsible for authentication.</p>\r\n      <li>\r\n        <p />\r\n        <strong>Change session IDs during login.</strong> Add code that invalidates the current session ID and creates a new one. For example:<pre>session_regenerate_id(TRUE);</pre></li>\r\n    </li>\r\n  </ol>\r\n  <h1>Additional Resources</h1>\r\n  <ul>\r\n    <li>For more information about the session_regenerate_id function, see <a href=\"http://php.net/manual/en/function.session-regenerate-id.php\">http://php.net/manual/en/function.session-regenerate-id.php</a></li>\r\n  </ul>"
+          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PHP</li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Change the user's session ID when he logs in.</p>\r\n  <h1>Why</h1>\r\n  <p>Change session IDs during login to make sure that the session state corresponds to the authenticated user.</p>\r\n  <h1>How</h1>\r\n  <p>To change session IDs during login:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Find login functionality.</strong> Find the code that is responsible for authentication.</p>\r\n      <li>\r\n        <p />\r\n        <strong>Change session IDs during login.</strong> Add code that invalidates the current session ID and creates a new one. For example:<pre>session_regenerate_id(TRUE);</pre></li>\r\n    </li>\r\n  </ol>"
         ]
       }
     ]

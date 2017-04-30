@@ -1,26 +1,35 @@
-<h1>Applies to</h1>
-  <ul>
-    <li>Java web-based applications.</li>
-  </ul>
-  <h1>Summary</h1>
-  <span>
-    <p>Use the ESAPI library to execute system commands safely.</p>
-  </span>
-  <h1>Objectives</h1>
-  <span>
-    <p>The ESAPI library provides an Executor control that ensures that only a whitelist of programs can execute. Additionally, parameters or switches sent to the executable are escaped appropriately for the given operating system that is executing the command. This allows an application to safely execute system level commands while preventing attackers from running any system level command injection attacks they may attempt.</p>
-  </span>
-  <h1>Scenarios</h1>
-  <span>
-    <p>Applications that wish to execute system level commands can use the ESAPI Executor control to execute a command from a configured whitelist.</p>
-  </span>
-  <h1>Solution Example</h1>
-  <span>
-    <p>The following (insecure) example shows an application using dynamic data to execute a system command.</p>
-    <pre>//DO NOT USE THIS<br />HttpServletRequest request = ...;<br />String command = request.getParameter("cmd") + " -a 123 -b 456";<br />System.getRuntime().exec(command);    </pre>
-    <p>The following example shows an application using ESAPI executing a known system command while using dynamic data. Because the executor is used, only a command from the whitelist will be executed. Any other commands will be rejected.</p>
-    <pre>HttpServletRequest request = ...;<br />List&lt;String&gt; params = ...;<br />String cmdRef = request.getParameter("cmdRef"); <br /><br />//Map indirect command reference to actual command<br />//ex. something like "Ax7PrTz3" might map to "C:\myapp\myother.exe"<br />//This prevents users specifying actual commands as request parameters.<br />//They just specify a random identifier and the server contains<br />//the mappings (indirect object reference)<br />String cmd = getActualCommand(cmdRef);<br />try {<br />	ESAPI.executor().executeSystemCommand(command, params) throws {<br />} catch (ExecutorException ee) {<br />	//an invalid command was attempted ... handle exception here<br />}
-    </pre>
-    <p>In addition to using this function, you'll need to update the <em>ESAPI.properties</em> file for your application to inform ESAPI what the acceptable executables are for your application. An example of the snippet you need to update is below:</p>
-    <pre>Executor.ApprovedExecutables=C:\\myapp\\myprog.exe,C:\\myapp\\myother.exe</pre>
-  </span>
+<h2>Applies To</h2>
+<ul>
+<li>Java</li>
+</ul>
+<h2>Summary</h2>
+<p>Use the ESAPI library to execute system commands safely.</p>
+<p>The ESAPI library provides an Executor control that ensures that only a whitelist of programs can execute. Additionally, parameters or switches sent to the executable are escaped appropriately for the given operating system that is executing the command. This allows an application to safely execute system level commands while preventing attackers from running any system level command injection attacks they may attempt.</p>
+<h2>Problem Example</h2>
+<p>The following (insecure) example shows an application using dynamic data to execute a system command.</p>
+<pre><code>//DO NOT USE THIS
+HttpServletRequest request = ...;
+String command = request.getParameter(&quot;cmd&quot;) + &quot; -a 123 -b 456&quot;;
+System.getRuntime().exec(command);    
+</code></pre>
+<h2>Solution Example</h2>
+<p>The following example shows an application using ESAPI executing a known system command while using dynamic data. Because the executor is used, only a command from the whitelist will be executed. Any other commands will be rejected.</p>
+<pre><code>HttpServletRequest request = ...;
+List&lt;String&gt; params = ...;
+String cmdRef = request.getParameter(&quot;cmdRef&quot;); 
+
+//Map indirect command reference to actual command
+//ex. something like &quot;Ax7PrTz3&quot; might map to &quot;C:\myapp\myother.exe&quot;
+//This prevents users specifying actual commands as request parameters.
+//They just specify a random identifier and the server contains
+//the mappings (indirect object reference)
+String cmd = getActualCommand(cmdRef);
+try {
+        ESAPI.executor().executeSystemCommand(command, params) throws {
+} catch (ExecutorException ee) {
+        //an invalid command was attempted ... handle exception here
+}
+</code></pre>
+<p>In addition to using this function, you'll need to update the ESAPI.properties file for your application to inform ESAPI what the acceptable executables are for your application. An example of the snippet you need to update is below:</p>
+<pre><code>Executor.ApprovedExecutables=C:\\myapp\\myprog.exe,C:\\myapp\\myother.exe
+</code></pre>

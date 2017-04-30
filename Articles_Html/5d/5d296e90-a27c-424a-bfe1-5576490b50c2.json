@@ -1,13 +1,10 @@
 {
   "id": "5d296e90-a27c-424a-bfe1-5576490b50c2",
-  "checksum": "31e108abfda7c91d24d26fff9fd62fea",
+  "checksum": "284e9590f1025073a8a22803b9d71341",
   "words": {
     "10": [
       "ol",
       "li",
-      "p"
-    ],
-    "15": [
       "p"
     ],
     "20": [
@@ -16,15 +13,16 @@
       "p"
     ],
     "applies": [
-      "h1"
+      "h2"
     ],
     "to": [
-      "h1",
-      "h1",
+      "h2",
+      "h2",
       "p",
       "p",
       "p",
       "p",
+      "ol",
       "ol",
       "ol",
       "ol",
@@ -52,16 +50,17 @@
       "p",
       "strong",
       "li",
-      "p",
       "li",
       "li",
+      "li",
       "p",
       "p",
-      "strong",
+      "p",
       "p"
     ],
     "scala": [
-      "p",
+      "ul",
+      "li",
       "ol",
       "ol",
       "li",
@@ -70,24 +69,27 @@
       "p"
     ],
     "and": [
-      "p",
-      "p",
+      "ul",
+      "li",
       "p"
     ],
     "play": [
-      "p"
+      "ul",
+      "li"
     ],
     "framework": [
-      "p"
+      "ul",
+      "li"
     ],
-    "21.0+": [
-      "p"
+    "210+": [
+      "ul",
+      "li"
     ],
     "what": [
-      "h1"
+      "h2"
     ],
     "do": [
-      "h1",
+      "h2",
       "ol",
       "ol",
       "li",
@@ -130,21 +132,16 @@
       "p",
       "strong",
       "li",
-      "p",
-      "li",
-      "li",
-      "p",
-      "p",
-      "li",
       "li",
       "li",
       "p",
       "p",
       "p",
-      "em",
-      "em",
-      "span",
-      "span",
+      "li",
+      "li",
+      "li",
+      "p",
+      "p",
       "p"
     ],
     "confidentiality": [
@@ -160,9 +157,9 @@
       "p",
       "li",
       "li",
-      "p",
-      "p",
       "li",
+      "p",
+      "p",
       "p"
     ],
     "session": [
@@ -205,8 +202,8 @@
       "strong",
       "strong",
       "li",
-      "p",
       "li",
+      "p",
       "p",
       "li",
       "li",
@@ -233,7 +230,7 @@
       "title"
     ],
     "why": [
-      "h1"
+      "h2"
     ],
     "are": [
       "p",
@@ -244,8 +241,7 @@
       "strong",
       "li",
       "p",
-      "strong",
-      "p"
+      "strong"
     ],
     "used": [
       "p"
@@ -372,6 +368,7 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "p",
@@ -379,13 +376,15 @@
       "strong",
       "strong",
       "li",
+      "li",
+      "p",
       "p"
     ],
     "legitimate": [
       "p"
     ],
     "when": [
-      "h1"
+      "h2"
     ],
     "if": [
       "p"
@@ -406,11 +405,9 @@
       "p",
       "ol",
       "li",
-      "p",
       "p"
     ],
     "state": [
-      "p",
       "p"
     ],
     "then": [
@@ -420,6 +417,12 @@
       "p",
       "ol",
       "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
+      "p",
       "li",
       "p",
       "li",
@@ -430,11 +433,14 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "p",
       "li",
       "p",
       "li",
+      "li",
+      "p",
       "p"
     ],
     "guideline": [
@@ -447,21 +453,19 @@
       "li",
       "p",
       "li",
-      "p",
-      "em",
-      "span"
+      "p"
     ],
     "how": [
-      "h1"
+      "h2"
     ],
     "secure": [
       "p",
       "ol",
+      "ol",
+      "li",
       "li",
       "p",
-      "em",
-      "em",
-      "span"
+      "p"
     ],
     "not": [
       "ol",
@@ -483,8 +487,7 @@
       "p",
       "strong",
       "li",
-      "p",
-      "strong"
+      "p"
     ],
     "users": [
       "ol",
@@ -496,8 +499,7 @@
       "li",
       "li",
       "p",
-      "p",
-      "strong"
+      "p"
     ],
     "choose": [
       "ol",
@@ -515,8 +517,7 @@
       "li",
       "li",
       "p",
-      "p",
-      "strong"
+      "p"
     ],
     "own": [
       "ol",
@@ -524,10 +525,15 @@
       "p",
       "strong"
     ],
-    "identifiers use": [
+    "identifiers": [
+      "ol",
       "ol",
       "li",
-      "p"
+      "p",
+      "strong",
+      "li",
+      "p",
+      "strong"
     ],
     "feature": [
       "ol",
@@ -537,7 +543,6 @@
     "automatically": [
       "ol",
       "li",
-      "p",
       "p"
     ],
     "assign": [
@@ -565,17 +570,21 @@
       "ol",
       "ol",
       "ol",
+      "ol",
+      "ol",
       "li",
       "li",
       "p",
       "p",
       "li",
-      "p",
-      "strong",
+      "li",
+      "li",
       "li",
       "p",
-      "strong",
-      "p"
+      "p",
+      "p",
+      "p",
+      "strong"
     ],
     "minimizes": [
       "ol",
@@ -611,20 +620,17 @@
       "li",
       "p",
       "li",
-      "p",
-      "em",
-      "span"
+      "p"
     ],
     "invoke": [
       "ol",
       "li",
       "p"
     ],
-    "playapi.mvc.cookie.": [
+    "playapimvccookie": [
       "ol",
       "li",
-      "p",
-      "i"
+      "p"
     ],
     "invalidate": [
       "ol",
@@ -654,9 +660,7 @@
       "li",
       "p",
       "li",
-      "p",
-      "em",
-      "span"
+      "p"
     ],
     "login": [
       "ol",
@@ -686,17 +690,11 @@
       "p",
       "strong"
     ],
-    "identifiers": [
+    "reused": [
       "ol",
-      "strong",
       "li",
       "p",
       "strong"
-    ],
-    "reused this": [
-      "ol",
-      "li",
-      "p"
     ],
     "is": [
       "ol",
@@ -766,7 +764,7 @@
       "p",
       "strong"
     ],
-    "sessions set": [
+    "set": [
       "ol",
       "li",
       "p"
@@ -779,7 +777,6 @@
     "for": [
       "ol",
       "li",
-      "p",
       "p"
     ],
     "helps": [
@@ -835,7 +832,6 @@
     "be": [
       "ol",
       "li",
-      "p",
       "p"
     ],
     "anywhere": [
@@ -846,16 +842,14 @@
     "minutes": [
       "ol",
       "li",
-      "p",
       "p"
     ],
     "terminate": [
       "ol",
       "li",
-      "p",
-      "strong"
+      "p"
     ],
-    "sessions allowing": [
+    "allowing": [
       "ol",
       "li",
       "p"
@@ -875,7 +869,7 @@
       "li",
       "p"
     ],
-    "use resultdiscardingcookies to": [
+    "resultdiscardingcookies": [
       "ol",
       "li",
       "p"
@@ -912,17 +906,21 @@
       "p",
       "strong"
     ],
-    "channels mark": [
+    "channels": [
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
+      "p",
+      "strong"
+    ],
+    "mark": [
       "ol",
       "li",
       "p"
     ],
-    "ssl": [
-      "ol",
-      "li",
-      "p"
-    ],
-    "as secure": [
+    "tls": [
       "ol",
       "li",
       "p"
@@ -930,44 +928,32 @@
     "enable": [
       "ol",
       "li",
-      "p",
-      "em",
-      "span"
+      "p"
     ],
     "flag": [
       "ol",
       "li",
-      "p",
-      "em",
-      "span"
+      "p"
     ],
     "setting": [
       "ol",
       "li",
-      "p",
-      "em",
-      "span"
+      "p"
     ],
-    "“applicationsession.secure=true”": [
+    "“applicationsessionsecure=true”": [
       "ol",
       "li",
-      "p",
-      "em",
-      "span"
+      "p"
     ],
     "“applicationconf”": [
       "ol",
       "li",
-      "p",
-      "em",
-      "span"
+      "p"
     ],
     "file": [
       "ol",
       "li",
-      "p",
-      "em",
-      "span"
+      "p"
     ],
     "send": [
       "ol",
@@ -978,12 +964,6 @@
       "ol",
       "li",
       "p"
-    ],
-    "channels": [
-      "ol",
-      "li",
-      "p",
-      "strong"
     ],
     "made": [
       "ol",
@@ -999,46 +979,6 @@
       "ol",
       "li",
       "p"
-    ],
-    "reused": [
-      "strong"
-    ],
-    "resultdiscardingcookies": [
-      "i"
-    ],
-    "note pci": [
-      "p"
-    ],
-    "dss": [
-      "p"
-    ],
-    "requirements": [
-      "p"
-    ],
-    "that": [
-      "p",
-      "p"
-    ],
-    "idle": [
-      "p"
-    ],
-    "should": [
-      "p"
-    ],
-    "locked": [
-      "p"
-    ],
-    "require": [
-      "p"
-    ],
-    "password": [
-      "p"
-    ],
-    "unlock": [
-      "p"
-    ],
-    "note": [
-      "strong"
     ]
   },
   "tags": {},

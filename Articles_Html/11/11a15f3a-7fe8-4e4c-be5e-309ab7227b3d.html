@@ -1,35 +1,70 @@
+<h2>Applies To</h2>
+<ul>
+<li>All applications</li>
+<li>All system types</li>
+</ul>
 <h2>What to Do</h2>
-<p>Validate all user input using whitelist/positive input validation. Whitelist input validation allows only input that is explicitly defined as valid, as opposed to blacklist input validation, which filters out known bad input.</p>
+<p>Validate all untrusted input using whitelist/positive input validation. Whitelist input validation allows only input that is explicitly defined as valid, as opposed to blacklist input validation, which filters out known bad input. Identify all types of input handled by the application and determine the valid format for each type, then add checks in code to make sure the data is valid before processing it.</p>
 <h2>Why</h2>
-<p>Properly implemented input validation mitigates many types of injection vulnerabilities, such as Cross-Site Scripting and SQL injection.</p>
+<p>Properly implemented input validation mitigates many types of injection vulnerabilities, such as Cross-Site Scripting and SQL injection. For native code applications, input validation can also mitigate memory management issues, such as Buffer Overflows.</p>
 <h2>How</h2>
-<p>To validate all user input using whitelist input validation:</p>
+<p>To validate all untrusted input using whitelist input validation:</p>
 <ol>
 <li>
-<p><strong>Identify all entry points for user input.</strong> Make a list of all possible sources of user input in your application.</p>
+<p><strong>Identify all entry points for untrusted input.</strong> Make a list of all possible sources of untrusted input in your application. For a web application, this includes: form fields, request parameters, cookies, headers, files and databases. For a rich client or a mobile application, this includes: keyboard input, files, databases and network connections.</p>
 </li>
 <li>
-<p><strong>Identify all types of input accepted by the application.</strong> For each source of user input on the list, define valid characters, length, format, and range (for numerical values).</p>
+<p><strong>Identify all types of input accepted by the application.</strong> For each source of untrusted input on the list, define valid characters, length, format, and range (for numerical values).</p>
 </li>
 <li>
-<p><strong>Define an input validation subsystem.</strong> Define a set of validator functions to validate each type of input handled by the application. Input should be validated on the server.</p>
+<p><strong>Define an input validation subsystem.</strong> Define a set of validator functions to validate each type of input handled by the application. Input has to be validated on the server for client-server applications; it can be validated on the client-side as well, but not instead of on the server.</p>
 </li>
 <li>
-<p><strong>Validate length.</strong> Check that the length of the user input is valid. Checking length before using regular expressions helps prevent regular expression Denial-of-Service attacks.</p>
+<p><strong>(All input) Validate length.</strong> Add code to all validators to check that the length of the untrusted input is valid. Checking length before using regular expressions helps prevent regular expression Denial-of-Service attacks.</p>
 </li>
 <li>
-<p><strong>Validate characters.</strong> Restrict the acceptable range of characters in text input using regular expressions.</p>
+<p><strong>(Text input) Validate characters.</strong> Add code to validators that handle text input to restrict the acceptable range of characters in text input using regular expressions.</p>
 </li>
 <li>
-<p><strong>Validate format.</strong> If the input type has a specific pattern, such as a date or a phone number, use regular expressions to make sure user input matches the input type specified by the application. Use regular expressions to enforce strong password requirements.</p>
+<p><strong>(Structured input) Validate format.</strong> For validators that handle input that has a specific pattern, such as a date or a phone number, use regular expressions to make sure untrusted input matches the input type specified by the application.</p>
 </li>
 <li>
-<p><strong>Validate range.</strong> Restrict the acceptable range of numerical input by comparing the input to the maximum and minimum acceptable values.</p>
+<p><strong>(Numeric input) Validate range.</strong> For validators for numeric input, add code to restrict the acceptable range of numerical input by comparing the input to the maximum and minimum acceptable values.</p>
 </li>
 <li>
-<p><strong>(Optional) Reject and respond to known bad input.</strong> This step does not add much actual security, but it may provide defense in depth. The input validation subsystem may check for known attack strings and respond to these likely attacks by alerting the user. The options for responding to invalid input are: reject invalid input, log invalid input, take evasive action.</p>
+<p><strong>(Optional) Reject and respond to known bad input.</strong> This step does not add much actual security, but it might provide defense in depth. The input validation subsystem can check for known attack strings and respond to these likely attacks by doing things like logging detailed attacker information, alerting the administrator, blocking the attacker's IP address for some time, and displaying an error message to the attacker.</p>
 </li>
 <li>
-<p><strong>(Optional) Encode input.</strong> If the input is going to be displayed back through the web application, consider encoding it to prevent Cross-Site Scripting attacks.</p>
+<p><strong>(Context-sensitive) Encode input.</strong> If the input is going to be displayed back through a web browser, consider encoding it to prevent Cross-Site Scripting attacks before processing or storing it. Be careful not to introduce double-encoding issues by encoding this data again elsewhere in the code.</p>
 </li>
 </ol>
+<h2>Computer Based Training</h2>
+<p>Use the following Computer Based Training course for more information about data validation:</p>
+<ul>
+<li><a href="https://teamprofessor.absorbtraining.com/ninja/#/courses/course/127105">AWA 101 Fundamentals of Application Security</a> - This two-part course is ideal for security and development practitioners that want to understand software security risk and seek specific implementation guidance on how to build and deploy more secure software applications.  It starts off describing why software security is critical and the risk that software vulnerabilities represent, and proceeds to lay the foundation for secure software development by presenting specific security controls and principles that development teams can implement immediately to reduce software risk.</li>
+</ul>
+<p><em>Valid login credentials and enrollment in the course itself are required to access Team Professor content. If you need login credentials, please contact support@securityinnovation.com for help.</em></p>
+<h2>Code Examples</h2>
+<ul>
+<li><a href="e59923e7-c2fb-4a75-8db7-a9a91e869f74">.NET</a></li>
+<li><a href="c98695c5-cf02-44a1-96bf-1f8046b8ad9d">Java JSP</a></li>
+<li><a href="0f49430b-2abe-408f-b046-89fa739f5d53">Java JSF</a></li>
+<li><a href="18ac74df-602b-4a58-8998-52f638f3a045">Java SpringMVC</a></li>
+<li><a href="d124abb1-e230-43ef-8762-1caa0dbb89ca">Java Struts 1</a></li>
+<li><a href="2f917654-65a8-49c9-b000-c17f9765bf42">Java Struts 2</a></li>
+<li><a href="b6795407-d01e-44ec-8aed-a440d388902b">Scala</a></li>
+<li><a href="bfe99a04-1254-47a9-acae-f3dd233f9315">Ruby</a></li>
+<li><a href="15aa6cfc-9e95-44a6-8e6f-25bc2fac7911">Ruby - Anchor Regular Expressions</a></li>
+</ul>
+<h2>Vulnerabilities</h2>
+<ul>
+<li><a href="c4914e51-2609-4edc-8133-31491f1b03c0">SQL Injection</a></li>
+<li><a href="94e52aca-06b6-4747-9bc9-f0149208f18c">Command Injection</a></li>
+<li><a href="5869ac6a-0a19-4541-ac8f-0d74e09f3156">Code Injection</a></li>
+<li><a href="683d33a8-7979-4307-8cf0-3a82457f9f47">Cross-Site Scripting</a></li>
+<li><a href="0530569f-b6bb-4a31-ae68-55dac9f4781a">Buffer Overflow</a></li>
+</ul>
+<h2>Guides</h2>
+<ul>
+<li><a href="bf53d602-1d86-489c-858d-f5efb6424412">Data Validation Guide</a></li>
+</ul>

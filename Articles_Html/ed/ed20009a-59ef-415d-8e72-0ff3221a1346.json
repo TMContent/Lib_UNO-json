@@ -36,8 +36,11 @@
       "p"
     ],
     "50": [
+      "strong",
       "p",
       "p",
+      "pre",
+      "pre",
       "ol",
       "li"
     ],
@@ -46,7 +49,9 @@
     ],
     "10000": [
       "p",
-      "p"
+      "p",
+      "ol",
+      "li"
     ],
     "32767": [
       "table",
@@ -128,6 +133,7 @@
       "p",
       "p",
       "p",
+      "p",
       "title"
     ],
     "j2ee": [
@@ -198,6 +204,7 @@
       "p",
       "strong",
       "strong",
+      "p",
       "p",
       "p",
       "p",
@@ -319,6 +326,7 @@
       "li",
       "li",
       "li",
+      "p",
       "p",
       "p"
     ],
@@ -839,7 +847,8 @@
       "p",
       "p",
       "ol",
-      "li"
+      "li",
+      "p"
     ],
     "business": [
       "p",
@@ -933,6 +942,7 @@
       "li",
       "p",
       "strong",
+      "p",
       "p",
       "title"
     ],
@@ -1252,11 +1262,11 @@
     "following": [
       "p"
     ],
-    "responsesetcontenttype(\"text/html;charset=utf": [
+    "responsesetcontenttypetext/htmlcharset=utf": [
       "pre",
       "pre"
     ],
-    "8\");printwriter": [
+    "8printwriter": [
       "pre",
       "pre"
     ],
@@ -1281,7 +1291,7 @@
       "pre",
       "strong"
     ],
-    "responsegetwriter();int": [
+    "responsegetwriterint": [
       "pre",
       "pre"
     ],
@@ -1329,7 +1339,7 @@
       "strong",
       "strong"
     ],
-    "integerparseint(request.getparameter(\"errors\"));if": [
+    "integerparseintrequestgetparametererrorsif": [
       "pre",
       "pre"
     ],
@@ -1364,7 +1374,7 @@
       "pre",
       "pre"
     ],
-    "50;out.write(\"current": [
+    "50outwritecurrent": [
       "pre"
     ],
     "score": [
@@ -1378,23 +1388,14 @@
       "p",
       "pre"
     ],
-    "\"": [
-      "pre",
-      "pre"
-    ],
     "+": [
       "pre",
       "pre"
     ],
-    "integertostring(current_score));}else{out.write(\"invalid": [
+    "integertostringcurrent_score}else{outwriteinvalid": [
       "pre"
     ],
-    "input\";}out.close();": [
-      "pre",
-      "pre"
-    ],
-    "50;": [
-      "strong",
+    "input}outclose": [
       "pre",
       "pre"
     ],
@@ -1493,8 +1494,14 @@
       "p",
       "p"
     ],
-    "http//some_site/example/getscore?errors=10\r\n\r\ncurrent": [
+    "http//some_site/example/getscore?errors=10": [
       "pre"
+    ],
+    "current": [
+      "pre",
+      "p",
+      "pre",
+      "p"
     ],
     "however": [
       "p",
@@ -1530,11 +1537,7 @@
       "p",
       "p"
     ],
-    "current": [
-      "p",
-      "p"
-    ],
-    "http//some_site/example/getscore?errors=42949873\r\ncurrent": [
+    "http//some_site/example/getscore?errors=42949873": [
       "pre"
     ],
     "occurs": [
@@ -1576,7 +1579,7 @@
     "signed": [
       "p"
     ],
-    "integers.": [
+    "integers": [
       "p"
     ],
     "consequence": [
@@ -1739,6 +1742,7 @@
       "p"
     ],
     "directly": [
+      "p",
       "p"
     ],
     "provided": [
@@ -1774,9 +1778,6 @@
       "p"
     ],
     "their": [
-      "p"
-    ],
-    "directly,": [
       "p"
     ],
     "failes": [
@@ -1830,13 +1831,13 @@
     "maximum_errors{": [
       "pre"
     ],
-    "outwrite(\"current": [
+    "outwritecurrent": [
       "pre"
     ],
-    "integertostring(current_score));}else{": [
+    "integertostringcurrent_score}else{": [
       "pre"
     ],
-    "outwrite(\"invalid": [
+    "outwriteinvalid": [
       "pre"
     ],
     "now": [
@@ -1912,7 +1913,7 @@
       "ol",
       "li"
     ],
-    "tags,": [
+    "tags": [
       "ol",
       "li"
     ],
@@ -1953,7 +1954,7 @@
       "p",
       "strong"
     ],
-    "below.during": [
+    "belowduring": [
       "ol",
       "li"
     ],
@@ -1984,11 +1985,8 @@
       "tbody",
       "tr",
       "td",
+      "p",
       "p"
-    ],
-    "10000,": [
-      "ol",
-      "li"
     ],
     "actually": [
       "ol",
@@ -2106,9 +2104,6 @@
       "p",
       "p"
     ],
-    "application in": [
-      "p"
-    ],
     "attempt": [
       "p"
     ],
@@ -2121,16 +2116,10 @@
     "variable’s": [
       "p"
     ],
-    "type integer": [
-      "p"
-    ],
     "be": [
       "p"
     ],
     "calculating": [
-      "p"
-    ],
-    "on to": [
       "p"
     ],
     "then": [

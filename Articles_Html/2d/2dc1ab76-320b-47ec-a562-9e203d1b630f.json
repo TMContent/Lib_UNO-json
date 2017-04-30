@@ -1,13 +1,12 @@
 {
   "id": "2dc1ab76-320b-47ec-a562-9e203d1b630f",
-  "checksum": "d1b1aa55ae3460680bd0da6b3c01ae65",
+  "checksum": "6df6bfcb0b584016c81382415b76e64f",
   "words": {
     "applies": [
-      "h1"
+      "h2"
     ],
     "to": [
-      "h1",
-      "p",
+      "h2",
       "p",
       "p",
       "p",
@@ -27,15 +26,13 @@
       "p",
       "p"
     ],
-    "javaspringmvc": [
-      "ul"
-    ],
     "java": [
+      "ul",
       "li"
     ],
     "springmvc": [
+      "ul",
       "li",
-      "p",
       "p",
       "p",
       "p",
@@ -44,10 +41,9 @@
       "title"
     ],
     "summary": [
-      "h1"
+      "h2"
     ],
     "perform": [
-      "p",
       "p",
       "p",
       "p"
@@ -56,8 +52,9 @@
       "p",
       "p",
       "p",
-      "p",
-      "p",
+      "ul",
+      "li",
+      "a",
       "title"
     ],
     "encoding": [
@@ -67,15 +64,10 @@
       "p",
       "p",
       "p",
-      "p",
-      "p",
-      "p",
-      "title"
+      "p"
     ],
     "using": [
-      "p",
-      "p",
-      "title"
+      "p"
     ],
     "within": [
       "p",
@@ -93,9 +85,6 @@
       "p",
       "p",
       "p"
-    ],
-    "objectives": [
-      "h1"
     ],
     "strong": [
       "p",
@@ -144,7 +133,6 @@
     "xss": [
       "p",
       "p",
-      "p",
       "p"
     ],
     "on": [
@@ -154,8 +142,6 @@
       "p"
     ],
     "the": [
-      "p",
-      "p",
       "p",
       "p",
       "p",
@@ -212,10 +198,12 @@
       "p",
       "p",
       "p",
-      "p"
+      "ul",
+      "li",
+      "a",
+      "title"
     ],
     "mechanisms": [
-      "p",
       "p"
     ],
     "provided": [
@@ -232,10 +220,10 @@
       "p"
     ],
     "solution": [
-      "h1"
+      "h2"
     ],
     "example": [
-      "h1"
+      "h2"
     ],
     "general": [
       "p"
@@ -260,23 +248,7 @@
     ],
     "default": [
       "p",
-      "p"
-    ],
-    "see": [
-      "p"
-    ],
-    "prevention": [
       "p",
-      "ul",
-      "li"
-    ],
-    "cheat": [
-      "p"
-    ],
-    "sheet": [
-      "p"
-    ],
-    "references": [
       "p"
     ],
     "if": [
@@ -288,7 +260,6 @@
       "p"
     ],
     "are": [
-      "p",
       "p",
       "p",
       "p",
@@ -334,17 +305,12 @@
     "of": [
       "p",
       "p",
-      "p",
-      "p",
       "p"
     ],
     "have": [
       "p"
     ],
     "enabled": [
-      "p"
-    ],
-    "default.": [
       "p"
     ],
     "escaping": [
@@ -389,40 +355,44 @@
     "your": [
       "p",
       "p",
-      "p",
-      "p"
-    ],
-    "webxml.": [
       "p"
     ],
     "webxml": [
-      "em"
+      "p"
     ],
     "context": [
       "pre",
-      "p"
-    ],
-    "param>&nbsp;&nbsp;&nbsp;": [
-      "pre"
+      "code"
     ],
     "param": [
       "pre",
-      "pre"
+      "pre",
+      "pre",
+      "pre",
+      "code",
+      "code",
+      "code",
+      "code"
     ],
-    "name>defaulthtmlescape</param": [
-      "pre"
+    "namedefaulthtmlescape/param": [
+      "pre",
+      "code"
     ],
-    "name>&nbsp;&nbsp;&nbsp;": [
-      "pre"
+    "name": [
+      "pre",
+      "code"
     ],
-    "value>true</param": [
-      "pre"
+    "valuetrue/param": [
+      "pre",
+      "code"
     ],
-    "value></context": [
-      "pre"
+    "value": [
+      "pre",
+      "code"
     ],
-    "param>": [
-      "pre"
+    "/context": [
+      "pre",
+      "code"
     ],
     "single": [
       "p",
@@ -441,15 +411,19 @@
     "jsp": [
       "p"
     ],
-    "spring:htmlescape": [
-      "pre"
+    "springhtmlescape": [
+      "pre",
+      "code"
     ],
-    "defaulthtmlescape=\"true\"": [
-      "pre"
+    "defaulthtmlescape=true": [
+      "pre",
+      "code"
     ],
     "/": [
       "pre",
-      "pre"
+      "code",
+      "pre",
+      "code"
     ],
     "attribute": [
       "p",
@@ -458,18 +432,17 @@
     "way": [
       "p"
     ],
-    "form:input": [
-      "pre"
+    "forminput": [
+      "pre",
+      "code"
     ],
-    "path=\"someformfield\"": [
-      "pre"
+    "path=someformfield": [
+      "pre",
+      "code"
     ],
-    "htmlescape=\"true\"": [
-      "pre"
-    ],
-    "note": [
-      "p",
-      "strong"
+    "htmlescape=true": [
+      "pre",
+      "code"
     ],
     "important": [
       "p"
@@ -480,11 +453,9 @@
     "be": [
       "p",
       "p",
-      "p",
       "p"
     ],
     "aware": [
-      "p",
       "p"
     ],
     "some": [
@@ -495,8 +466,6 @@
       "p"
     ],
     "you": [
-      "p",
-      "p",
       "p",
       "p",
       "p"
@@ -543,15 +512,10 @@
     "for": [
       "p",
       "p",
-      "p",
-      "p",
-      "ul",
-      "li"
+      "p"
     ],
     "site": [
-      "p",
-      "ul",
-      "li"
+      "p"
     ],
     "formatted": [
       "p",
@@ -609,7 +573,6 @@
       "p"
     ],
     "however": [
-      "p",
       "p"
     ],
     "through": [
@@ -635,7 +598,6 @@
       "p"
     ],
     "and": [
-      "p",
       "p"
     ],
     "still": [
@@ -662,9 +624,8 @@
     "looking": [
       "p"
     ],
-    "htmlescape=\"false\"": [
-      "p",
-      "em"
+    "htmlescape=false": [
+      "p"
     ],
     "individual": [
       "p"
@@ -681,68 +642,36 @@
     "disabled": [
       "p"
     ],
-    "true.": [
+    "true": [
       "p"
     ],
-    "provides": [
-      "p"
-    ],
-    "various": [
-      "p"
-    ],
-    "must": [
-      "p"
-    ],
-    "properties": [
-      "p"
-    ],
-    "tags)": [
-      "p"
+    "guideline": [
+      "h2"
     ],
     "encode": [
-      "p"
-    ],
-    "appropriately": [
-      "p"
-    ],
-    "given": [
-      "p"
-    ],
-    "more": [
-      "h1",
       "ul",
-      "li"
+      "li",
+      "a",
+      "title"
     ],
-    "information": [
-      "h1",
+    "untrusted": [
       "ul",
-      "li"
+      "li",
+      "a",
+      "title"
     ],
-    "about": [
+    "data": [
       "ul",
-      "li"
-    ],
-    "cross": [
-      "ul",
-      "li"
-    ],
-    "scripting": [
-      "ul",
-      "li"
-    ],
-    "seehttps//www.owasp.org/index.php/xss_&#37;28cross_site_scripting&#37;29_prevention_cheat_sheet": [
-      "ul",
-      "li"
-    ],
-    "https//www.owasp.org/index.php/xss_&#37;28cross_site_scripting&#37;29_prevention_cheat_sheet": [
-      "a"
+      "li",
+      "a",
+      "title"
     ]
   },
   "tags": {},
   "links": [
     {
-      "href": "https://www.owasp.org/index.php/XSS_&#37;28Cross_Site_Scripting&#37;29_Prevention_Cheat_Sheet",
-      "text": "https://www.owasp.org/index.php/XSS_&#37;28Cross_Site_Scripting&#37;29_Prevention_Cheat_Sheet"
+      "href": "9b0ef1a5-c143-4e64-81cc-9e02ccbd9fbd",
+      "text": "Encode Untrusted Data in Output"
     }
   ]
 }

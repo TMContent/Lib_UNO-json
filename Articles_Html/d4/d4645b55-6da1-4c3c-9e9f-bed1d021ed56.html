@@ -1,17 +1,18 @@
 <h2>Applies To</h2>
-<p>Java web-based applications using JPA.</p>
+<ul>
+<li>Java</li>
+<li>JPA (Java Persistence API)</li>
+</ul>
 <h2>Summary</h2>
-<p>Executing Named Queries using JPA.</p>
-<h2>Objectives</h2>
-<p>Use JPA named queries to perform database operations safely.</p>
-<h2>Scenarios</h2>
-<p>JPA named queries provide a data access and manipulation mechanism that closely ties the query content to the Java code defining the objects that the query is executing against. It also removes the actual query language from Java code, which is a common tactic and creates certain maintainability issues. A security related advantage to named queries is that dynamic data must be bound, which prevents SQL injection attacks. The code below shows how to both define and use named queries in JPA.</p>
+<p>Use JPA named queries to perform database operations safely. JPA named queries provide a data access and manipulation mechanism that closely ties the query content to the Java code defining the objects that the query is executing against. It also removes the actual query language from Java code, which is a common tactic and creates certain maintainability issues. A security related advantage to named queries is that dynamic data must be bound, which prevents SQL injection attacks. The code below shows how to both define and use named queries in JPA.</p>
 <h2>Solution Example</h2>
 <p>To use named queries with Java Persistence API:</p>
-<p>Define the entity class and named queries. Define your entity class and use the @NamedQuery (or @NamedQueries with multiple @NamedQuery's) annotation to define each named query. The examples below are straightforward.</p>
+<ol>
+<li>
+<p><strong>Define the entity class and named queries.</strong> Define your entity class and use the @NamedQuery (or @NamedQueries with multiple @NamedQuery's) annotation to define each named query.</p>
 <pre><code>@Entity
 @NamedQuery(
-    name=&quot;Product.findAllProductsByProductName&quot;,queryString=&quot;SELECT pro FROM Product pro WHERE pro.name = :productName&quot;
+	name=&quot;Product.findAllProductsByProductName&quot;,queryString=&quot;SELECT pro FROM Product pro WHERE pro.name = :productName&quot;
 )
 
 public class Product {
@@ -30,8 +31,10 @@ public class Product {
 ...
 }
 </code></pre>
-<p>Use the defined named queries in code. If there is a need for dynamic data, use the parameter binding mechanism included in the query implementation.</p>
-<h3>Untyped results example</h3>
+</li>
+<li>
+<p><strong>Use the defined named queries in code.</strong> If there is a need for dynamic data, use the parameter binding mechanism included in the query implementation.</p>
+<p>Untyped results example:</p>
 <pre><code>//get dynamic data
 //request parameters should be validated before use - this is a simple example
 String productName = request.getParameter(&quot;product_name&quot;);
@@ -42,7 +45,7 @@ queryProductsByName.setParameter(&quot;productName&quot;, productName);
 //execute query and get results
 Collection products = queryProductsByName.getResultList();
 </code></pre>
-<h3>Typed results example</h3>
+<p>Typed results example:</p>
 <pre><code>//get dynamic data
 //request parameters should be validated before use - this is a simple example
 String productName = request.getParameter(&quot;product_name&quot;);
@@ -52,11 +55,15 @@ TypedQuery&lt;Product&gt; queryProductsByName = em.createNamedQuery(&quot;Produc
 queryProductsByName.setParameter(&quot;productName&quot;, productName);
 //execute query and get results
 List&lt;Product&gt; products = queryProductsByName.getResultList();
-</code></pre>
-<h3>Example without using dynamic data</h3>
-<pre><code>//use entity manager to retrieve named query
+Example without using dynamic data
+//use entity manager to retrieve named query
 TypedQuery&lt;Product&gt; queryProducts = em.createNamedQuery(&quot;Product.findAllProducts&quot;, Product.class);
 //execute query and get results
 List&lt;Product&gt; products = queryProducts.getResultList();
 </code></pre>
-<p>The examples above show how to use named queries within JPA to create an environment where the queries are defined closely with the data they are operating against and that are safely used by requiring bound parameters for dynamic data. The use of other types of queries works in an identical manner, such as delete, update, insert, etc.</p>
+</li>
+</ol>
+<h2>Guideline</h2>
+<ul>
+<li><a href="397488da-ce91-4768-9ad9-1e6928980d72">Use Prepared Statements for SQL Queries</a></li>
+</ul>

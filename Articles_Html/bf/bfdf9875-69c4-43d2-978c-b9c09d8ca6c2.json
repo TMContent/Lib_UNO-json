@@ -1,6 +1,6 @@
 {
   "id": "bfdf9875-69c4-43d2-978c-b9c09d8ca6c2",
-  "checksum": "d2a4b30fe2ecafebaf3e34d57aa186c8",
+  "checksum": "3e13e573a2eff72ab07f6a1a4e019a42",
   "words": {
     "applies": [
       "h1"
@@ -12,8 +12,6 @@
       "p"
     ],
     "php": [
-      "ul",
-      "li",
       "ul",
       "li"
     ],
@@ -40,9 +38,12 @@
       "p",
       "title"
     ],
-    "\"httponly\"": [
+    "httponly": [
       "p",
-      "p"
+      "em",
+      "p",
+      "em",
+      "title"
     ],
     "flag": [
       "p",
@@ -75,17 +76,14 @@
       "p",
       "title"
     ],
-    "httponly": [
-      "em",
-      "em",
-      "title"
-    ],
     "why": [
       "h1"
     ],
-    "\"secure\"": [
+    "secure": [
       "p",
-      "p"
+      "p",
+      "em",
+      "em"
     ],
     "all": [
       "p"
@@ -146,10 +144,6 @@
     "tls": [
       "p"
     ],
-    "secure": [
-      "em",
-      "em"
-    ],
     "how": [
       "h1"
     ],
@@ -169,8 +163,10 @@
     "configure": [
       "p"
     ],
-    "\"sessioncookie_httponly\"": [
-      "p"
+    "sessioncookie_httponly": [
+      "p",
+      "em",
+      "pre"
     ],
     "like": [
       "p"
@@ -178,58 +174,10 @@
     "this": [
       "p"
     ],
-    "sessioncookie_httponly": [
-      "em",
-      "pre"
-    ],
     "=": [
       "pre"
-    ],
-    "additional": [
-      "h1"
-    ],
-    "resources": [
-      "h1"
-    ],
-    "for": [
-      "ul",
-      "li"
-    ],
-    "more": [
-      "ul",
-      "li"
-    ],
-    "information": [
-      "ul",
-      "li"
-    ],
-    "about": [
-      "ul",
-      "li"
-    ],
-    "runtime": [
-      "ul",
-      "li"
-    ],
-    "configuration": [
-      "ul",
-      "li"
-    ],
-    "see": [
-      "ul",
-      "li"
-    ],
-    "http//php.net/manual/en/session.configuration.php": [
-      "ul",
-      "li",
-      "a"
     ]
   },
   "tags": {},
-  "links": [
-    {
-      "href": "http://php.net/manual/en/session.configuration.php",
-      "text": "http://php.net/manual/en/session.configuration.php"
-    }
-  ]
+  "links": []
 }

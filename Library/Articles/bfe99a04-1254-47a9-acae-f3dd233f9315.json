@@ -1,0 +1,59 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "0",
+      "Content_Hash": "0"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "bfe99a04-1254-47a9-acae-f3dd233f9315"
+        ],
+        "Library_Id": [
+          "be5273b1-d682-4361-99d9-6234f2d47eb7"
+        ],
+        "Title": [
+          "Ruby Validate Input"
+        ],
+        "Category": [
+          ""
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "Ruby"
+        ],
+        "Type": [
+          "Code Example"
+        ],
+        "DirectLink": [
+          ""
+        ],
+        "Tag": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "false",
+          "DataType": "markdown"
+        },
+        "Data": [
+          "## Applies To ##\r\n\r\n* Ruby\r\n\r\n\r\n## Solution Example ##\r\n\r\n~~~~\r\n#! /usr/bin/env ruby\r\nif ARGV.length == 0\r\n        puts \"Usage: #{$0} [username]\"\r\n        exit\r\nend\r\n\r\ndef verifyUsername(username)\r\n        # Length: between 3 - 20 chars\r\n        if username.length < 3 or username.length > 20\r\n                return false\r\n        end\r\n        # Alphanumeric ascii characters only\r\n        if not username =~ /\\A[a-zA-Z0-9]+\\z/\r\n                return false\r\n        end\r\n        return true\r\nend\r\n\r\nif verifyUsername(ARGV[0])\r\n        puts \"Username is valid.\"\r\nelse\r\n        puts \"Username is invalid.\"\r\nend\r\n~~~~\r\n\r\n\r\n## Guideline ##\r\n\r\n* [Validate All Input](11a15f3a-7fe8-4e4c-be5e-309ab7227b3d)"
+        ]
+      }
+    ]
+  }
+}

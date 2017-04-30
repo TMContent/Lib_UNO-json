@@ -1,0 +1,59 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "0",
+      "Content_Hash": "0"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "3a56e590-aef2-456b-a094-459673d08483"
+        ],
+        "Library_Id": [
+          "be5273b1-d682-4361-99d9-6234f2d47eb7"
+        ],
+        "Title": [
+          "Ruby Create a Temporary Directory Safely"
+        ],
+        "Category": [
+          ""
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "Ruby"
+        ],
+        "Type": [
+          "Code Example"
+        ],
+        "DirectLink": [
+          ""
+        ],
+        "Tag": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "false",
+          "DataType": "markdown"
+        },
+        "Data": [
+          "## Applies To ##\r\n\r\n* Ruby\r\n\r\n\r\n## Solution Example ##\r\n\r\n~~~~\r\n#! /usr/bin/env ruby\r\nrequire 'FileUtils'\r\n\r\ntmp_dir = \"./mytmp\"\r\n\r\n#Create a directory only the current user can access\r\nFileUtils.mkdir tmp_dir\r\nFileUtils.chmod_R 0700, tmp_dir\r\n\r\nbegin\r\n\ttmp = File.new tmp_dir + \"/temporary_data\", \"w\"\r\n\tbegin\r\n\t\ttmp << \"Temporary data to be written\\n\"\r\n\t\ttmp.close\r\n\t\tputs IO.read(tmp.path)\r\n\tensure\r\n\t\t# Cleanup temporary file once done\r\n\t\tFileUtils.remove tmp_dir + \"/temporary_data\"\r\n\tend\r\nensure\r\n\t# Cleanup secure temporary directory once execution ends\r\n\tFileUtils.remove_dir tmp_dir, true\r\nend\r\n~~~~"
+        ]
+      }
+    ]
+  }
+}

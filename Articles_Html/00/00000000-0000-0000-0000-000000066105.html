@@ -1,5 +1,4 @@
-<h2>Applies To</h2><ul><li> iOS applications that open saved files or documents.</li>
-</ul><h2>What to Check For</h2><p>Verify that file formats are validated.
+<h2>What to Check For</h2><p>Verify that file formats are validated.
 </p><h2>Why</h2><p>Many vulnerabilities are exploited via malformed documents supplied to the application. Attackers will frequently embed malformed documents in web pages - some applications are integrated into the web browser and will open malicious documents automatically. Making sure the file format is valid before loading files into the application makes it harder to embed exploit code into documents.
 </p><h2>How to Check</h2><ol><li> <strong>Identify the functions that open data files.</strong> </li>
 <li> <strong>Review validation code.</strong> Verify that these functions include provisions for validating the input data file format before passing it on to other functions.<strong></strong></li>

@@ -16,6 +16,10 @@
       "ul",
       "li"
     ],
+    "1043": [
+      "ul",
+      "li"
+    ],
     "applies": [
       "h1"
     ],
@@ -65,7 +69,9 @@
       "li",
       "li",
       "li",
-      "p"
+      "p",
+      "ul",
+      "li"
     ],
     "dss": [
       "ul",
@@ -107,31 +113,27 @@
       "li",
       "p"
     ],
-    "104.a": [
+    "104a": [
       "ul",
       "li"
     ],
-    "104.b": [
+    "104b": [
       "ul",
       "li"
     ],
-    "104.1.a": [
+    "1041a": [
       "ul",
       "li"
     ],
-    "104.1.b": [
+    "1041b": [
       "ul",
       "li"
     ],
-    "104.2.a": [
+    "1042a": [
       "ul",
       "li"
     ],
-    "104.2.b": [
-      "ul",
-      "li"
-    ],
-    "104.3": [
+    "1042b": [
       "ul",
       "li"
     ],
@@ -160,6 +162,7 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "li",
@@ -177,6 +180,8 @@
       "p",
       "strong",
       "li",
+      "li",
+      "p",
       "p",
       "strong",
       "ul",
@@ -203,7 +208,10 @@
     "procedures": [
       "p",
       "ol",
+      "ol",
       "li",
+      "li",
+      "p",
       "p",
       "strong"
     ],
@@ -257,12 +265,16 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "li",
       "p",
       "p",
       "p",
+      "li",
+      "p",
+      "strong",
       "li",
       "li",
       "p",
@@ -566,6 +578,8 @@
       "li",
       "p",
       "ul",
+      "ul",
+      "li",
       "li"
     ],
     "public": [
@@ -587,12 +601,16 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "p",
       "p",
       "li",
-      "p"
+      "li",
+      "p",
+      "p",
+      "strong"
     ],
     "workstations": [
       "ol",
@@ -641,6 +659,8 @@
       "li",
       "p",
       "ul",
+      "ul",
+      "li",
       "li"
     ],
     "operating": [
@@ -689,6 +709,10 @@
       "li",
       "p",
       "ul",
+      "ul",
+      "ul",
+      "li",
+      "li",
       "li"
     ],
     "bottom": [
@@ -724,12 +748,6 @@
       "ol",
       "li",
       "p"
-    ],
-    "configure internal": [
-      "ol",
-      "li",
-      "p",
-      "strong"
     ],
     "may": [
       "ol",
@@ -787,8 +805,19 @@
       "li",
       "p"
     ],
-    "timeserver document": [
+    "timeserver": [
       "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
+      "p"
+    ],
+    "document": [
+      "ol",
+      "ol",
+      "li",
+      "p",
       "li",
       "p"
     ],
@@ -839,11 +868,6 @@
       "li",
       "p"
     ],
-    "timeserver": [
-      "ol",
-      "li",
-      "p"
-    ],
     "use": [
       "ol",
       "ol",
@@ -862,27 +886,12 @@
       "li",
       "p"
     ],
-    "document": [
-      "ol",
-      "li",
-      "p"
-    ],
     "configuration": [
       "ol",
       "li",
       "p"
     ],
     "include": [
-      "ol",
-      "li",
-      "p"
-    ],
-    "\"time": [
-      "ol",
-      "li",
-      "p"
-    ],
-    "procedures\"": [
       "ol",
       "li",
       "p"
@@ -899,6 +908,8 @@
     ],
     "servers": [
       "ul",
+      "ul",
+      "li",
       "li"
     ],
     "see": [
@@ -909,33 +920,23 @@
       "li",
       "li"
     ],
-    "\"stratum": [
-      "ul",
-      "li"
-    ],
     "one": [
       "ul",
       "li"
     ],
-    "servers\"": [
+    "http//supportntporg/bin/view/servers/stratumonetimeservers": [
       "ul",
-      "li"
-    ],
-    "at http//support.ntp.org/bin/view/servers/stratumonetimeservers.": [
-      "ul",
-      "li"
+      "li",
+      "a"
     ],
     "certichron": [
       "ul",
       "li"
     ],
-    "\"pci\"": [
+    "http//wwwfedtimenet/solutions/pci_detailshtml": [
       "ul",
-      "li"
-    ],
-    "http//www.fedtime.net/solutions/pci_details.html.": [
-      "ul",
-      "li"
+      "li",
+      "a"
     ],
     "service": [
       "ul",
@@ -959,32 +960,18 @@
       "ul",
       "li"
     ],
-    "\"windows": [
+    "settings": [
       "ul",
       "li"
     ],
-    "settings\"": [
+    "http//technetmicrosoftcom/en": [
       "ul",
-      "li"
-    ],
-    "at http//technet.microsoft.com/en": [
-      "ul",
-      "li"
-    ],
-    "us/library/cc773263(ws.10).aspx#w2k3tr_times_tools_vwtt.": [
-      "ul",
-      "li"
-    ],
-    "http//support.ntp.org/bin/view/servers/stratumonetimeservers": [
+      "li",
       "a"
     ],
-    "http//www.fedtime.net/solutions/pci_details.html": [
-      "a"
-    ],
-    "http//technet.microsoft.com/en": [
-      "a"
-    ],
-    "us/library/cc773263(ws.10).aspx#w2k3tr_times_tools_vwtt": [
+    "us/library/cc773263ws10aspx#w2k3tr_times_tools_vwtt": [
+      "ul",
+      "li",
       "a"
     ]
   },

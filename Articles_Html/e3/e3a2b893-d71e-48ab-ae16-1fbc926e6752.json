@@ -5,7 +5,9 @@
     "1": [
       "ul",
       "li",
-      "b"
+      "b",
+      "pre",
+      "p"
     ],
     "2": [
       "ul",
@@ -152,6 +154,7 @@
       "p",
       "p",
       "p",
+      "p",
       "h3",
       "i",
       "p",
@@ -240,6 +243,7 @@
       "p",
       "p",
       "p",
+      "p",
       "p"
     ],
     "input": [
@@ -247,6 +251,8 @@
       "p",
       "p",
       "p",
+      "pre",
+      "pre",
       "p",
       "p",
       "p",
@@ -254,6 +260,7 @@
       "b",
       "pre",
       "pre",
+      "p",
       "p",
       "p",
       "p",
@@ -430,14 +437,22 @@
     "asp": [
       "p",
       "p",
+      "ul",
+      "ul",
+      "li",
+      "li",
       "p"
     ],
-    "net,": [
+    "net": [
       "p"
     ],
     "php": [
       "p",
       "p",
+      "ul",
+      "ul",
+      "li",
+      "li",
       "p",
       "p",
       "p"
@@ -1428,6 +1443,7 @@
       "i",
       "p",
       "p",
+      "pre",
       "p",
       "p",
       "p",
@@ -1602,6 +1618,7 @@
       "p"
     ],
     "script": [
+      "p",
       "p",
       "p",
       "p",
@@ -1865,6 +1882,7 @@
       "h3",
       "i",
       "p",
+      "pre",
       "p",
       "p",
       "p"
@@ -1916,31 +1934,31 @@
       "p",
       "p"
     ],
-    "form>\r\n<input": [
+    "name=searchinput": [
       "pre"
     ],
-    "name=\"searchinput\"": [
-      "pre"
-    ],
-    "type=\"text\"": [
+    "type=text": [
       "pre",
       "pre",
       "pre",
       "pre"
     ],
-    "size=\"50\"\r\n<input": [
+    "size=50": [
       "pre"
     ],
-    "name=\"searchbutton\"": [
+    "name=searchbutton": [
       "pre"
     ],
-    "type=\"button\"": [
+    "type=button": [
       "pre"
     ],
-    "size=\"20\"": [
+    "size=20": [
       "pre"
     ],
-    "value=\"search\"\r\n</form>": [
+    "value=search": [
+      "pre"
+    ],
+    "/form": [
       "pre"
     ],
     "collects": [
@@ -1987,7 +2005,7 @@
       "li",
       "pre"
     ],
-    "$_get'searchinput']?>": [
+    "$_get'searchinput'?": [
       "pre"
     ],
     "can": [
@@ -2032,7 +2050,7 @@
       "p",
       "p"
     ],
-    "http//teammentorexample.com/search/search.php?searchinput=<script>payload</script>": [
+    "http//teammentorexamplecom/search/searchphp?searchinput=scriptpayload/script": [
       "pre"
     ],
     "link": [
@@ -2186,7 +2204,10 @@
     "'favorite": [
       "pre"
     ],
-    "br>';\r\n$connection": [
+    "br'": [
+      "pre"
+    ],
+    "$connection": [
       "pre"
     ],
     "=": [
@@ -2199,16 +2220,20 @@
       "pre",
       "pre"
     ],
-    "odbc_connect\"sqldb\",": [
+    "odbc_connectsqldb": [
       "pre"
     ],
-    "\"admin\"": [
+    "admin": [
       "pre"
     ],
-    "\"root\";\r\n$query": [
+    "root": [
       "pre"
     ],
-    "\"select": [
+    "$query": [
+      "pre",
+      "pre"
+    ],
+    "select": [
       "pre"
     ],
     "profiletable": [
@@ -2226,26 +2251,26 @@
     "username": [
       "pre"
     ],
-    "\"": [
+    "$_get'user'": [
+      "pre"
+    ],
+    "$result": [
+      "pre"
+    ],
+    "odbc_exec$connection": [
+      "pre"
+    ],
+    "odbc_fetch_row$result$quote": [
+      "pre"
+    ],
+    "odbc_result$result": [
       "pre",
       "p"
     ],
-    "$_get'user']\";\r\n$result": [
-      "pre"
-    ],
-    "odbc_exec$connection,": [
-      "pre"
-    ],
-    "$query;\r\nodbc_fetch_row($result);$quote": [
-      "pre"
-    ],
-    "odbc_result$result,": [
+    "print$quote": [
       "pre",
-      "p"
-    ],
-    "1;\r\nprint($quote);": [
-      "pre",
-      "p"
+      "p",
+      "pre"
     ],
     "$quote": [
       "p"
@@ -2280,16 +2305,18 @@
     "set": [
       "p",
       "p",
-      "p"
+      "p",
+      "pre",
+      "pre"
     ],
     "his": [
       "p",
       "p"
     ],
-    "script>alert('xss')": [
+    "scriptalert'xss'": [
       "pre"
     ],
-    "/script>": [
+    "/script": [
       "pre"
     ],
     "now": [
@@ -2373,7 +2400,7 @@
       "p",
       "p"
     ],
-    "http//teammentorexample.com/showprofile.php?user=johnb": [
+    "http//teammentorexamplecom/showprofilephp?user=johnb": [
       "pre"
     ],
     "modify": [
@@ -2495,9 +2522,7 @@
       "p"
     ],
     "later": [
-      "p"
-    ],
-    "xss.": [
+      "p",
       "p"
     ],
     "common": [
@@ -2635,25 +2660,15 @@
       "ul",
       "li"
     ],
-    "asp)": [
-      "ul",
-      "ul",
-      "li",
-      "li"
-    ],
     "%=": [
       "ul",
       "li"
     ],
     "%": [
       "ul",
-      "li"
-    ],
-    "php)": [
-      "ul",
-      "ul",
       "li",
-      "li"
+      "pre",
+      "pre"
     ],
     "print": [
       "ul",
@@ -2755,7 +2770,7 @@
       "p",
       "p"
     ],
-    "responsewrite(request.querystring(search))": [
+    "responsewriterequestquerystringsearch": [
       "pre"
     ],
     "value": [
@@ -2784,9 +2799,6 @@
     ],
     "harmful": [
       "p"
-    ],
-    "print$quote);": [
-      "pre"
     ],
     "however": [
       "p",
@@ -2874,7 +2886,7 @@
     "returns": [
       "p"
     ],
-    "responsewrite(externalapplication.getrssfeedmethod());": [
+    "responsewriteexternalapplicationgetrssfeedmethod": [
       "pre"
     ],
     "even": [
@@ -2944,7 +2956,7 @@
       "p",
       "p"
     ],
-    "alphanumerics,": [
+    "alphanumerics": [
       "p"
     ],
     "blacklist": [
@@ -3006,7 +3018,9 @@
       "p",
       "p",
       "p",
-      "p"
+      "pre",
+      "p",
+      "pre"
     ],
     "parameters": [
       "ul",
@@ -3161,15 +3175,13 @@
       "p",
       "p",
       "p",
+      "p",
       "p"
     ],
     "worked": [
       "p"
     ],
     "explained": [
-      "p"
-    ],
-    "later.": [
       "p"
     ],
     "recommended": [
@@ -3193,19 +3205,21 @@
     "idea": [
       "p"
     ],
-    "';!": [
+    "'!": [
       "pre"
     ],
     "": [
       "pre",
       "pre"
     ],
-    "\"><xyz><=&{()}": [
+    "xyz=&{}": [
+      "pre",
       "pre"
     ],
     "xyz": [
       "p",
       "b",
+      "pre",
       "b"
     ],
     "server's": [
@@ -3224,33 +3238,30 @@
       "p",
       "p"
     ],
-    "name=\"keyword\"": [
+    "name=keyword": [
       "pre",
       "pre",
       "pre"
     ],
-    "id=\"keyword\"": [
+    "id=keyword": [
       "pre",
       "pre",
       "pre"
     ],
-    "maxlength=\"255\"": [
+    "maxlength=255": [
       "pre",
       "pre",
       "pre"
     ],
-    "value=';!": [
+    "value='!": [
       "pre"
     ],
-    "\"><xyz><=&{()}\"": [
-      "pre"
-    ],
-    "style=\"height10px;": [
+    "style=height10px": [
       "pre",
       "pre",
       "pre"
     ],
-    "color#000;\"": [
+    "color#000": [
       "pre",
       "pre",
       "pre"
@@ -3337,13 +3348,10 @@
     "simplified": [
       "p"
     ],
-    "\"<xyz>": [
-      "pre"
-    ],
     "reply": [
       "p"
     ],
-    "value=\"\"<xyz>\"": [
+    "value=xyz": [
       "pre"
     ],
     "goal": [
@@ -3387,7 +3395,8 @@
       "p",
       "p"
     ],
-    "\"<script>alert('works')</script>": [
+    "scriptalert'works'/script": [
+      "pre",
       "pre"
     ],
     "filter": [
@@ -3399,7 +3408,7 @@
     "sent": [
       "p"
     ],
-    "value=\"\"<script>alert('works')</script>\"": [
+    "value=scriptalert'works'/script": [
       "pre"
     ],
     "sometimes": [
@@ -3412,9 +3421,6 @@
     "severs": [
       "p"
     ],
-    "script>": [
-      "p"
-    ],
     "allow": [
       "p",
       "p",
@@ -3422,6 +3428,7 @@
     ],
     "img": [
       "p",
+      "pre",
       "pre",
       "p"
     ],
@@ -3437,46 +3444,42 @@
       "p",
       "p"
     ],
-    "\"<img": [
-      "pre"
-    ],
-    "src=\"javascriptalert('works');\"</img>": [
+    "src=javascriptalert'works'/img": [
       "pre"
     ],
     "fact": [
       "p"
     ],
-    "iframe>,": [
+    "iframe": [
       "p"
     ],
-    "body>,": [
+    "body": [
+      "p",
+      "pre"
+    ],
+    "embed": [
+      "p",
+      "pre",
+      "pre"
+    ],
+    "meta": [
       "p"
     ],
-    "embed>,": [
+    "frame": [
       "p"
     ],
-    "meta>,": [
+    "frameset": [
       "p"
     ],
-    "html>,": [
+    "layer": [
       "p"
     ],
-    "frame>,": [
-      "p"
+    "object": [
+      "p",
+      "pre",
+      "pre"
     ],
-    "frameset>,": [
-      "p"
-    ],
-    "input>,": [
-      "p"
-    ],
-    "layer>,": [
-      "p"
-    ],
-    "object>,": [
-      "p"
-    ],
-    "style>.": [
+    "style": [
       "p"
     ],
     "choice": [
@@ -3495,10 +3498,7 @@
       "p",
       "p"
     ],
-    "\"<body": [
-      "pre"
-    ],
-    "onload=alert'works')>": [
+    "onload=alert'works'": [
       "pre"
     ],
     "covering": [
@@ -3541,7 +3541,7 @@
       "p",
       "p"
     ],
-    "purposes.": [
+    "purposes": [
       "p"
     ],
     "go": [
@@ -3610,19 +3610,16 @@
       "p",
       "p"
     ],
-    "http//www.xvulnerablesite.com/login.asp?username=[value]&password=[value]": [
+    "http//wwwxvulnerablesitecom/loginasp?username=value&password=value": [
       "pre"
     ],
     "want": [
       "p"
     ],
-    "script>alert('works')</script>": [
-      "pre"
-    ],
     "way": [
       "p"
     ],
-    "http//www.xvulnerablesite.com/login.asp?username=any&password=<script>alert('works')</script>": [
+    "http//wwwxvulnerablesitecom/loginasp?username=any&password=scriptalert'works'/script": [
       "pre"
     ],
     "executing": [
@@ -3682,7 +3679,10 @@
     "hexadecimal": [
       "p"
     ],
-    "src=\"javascriptalert('works');\">\r\nhttp://www.xvulnerablesite.com/login.asp?username=any&password=<img%20src%3d%22javascript:alert(%27works%27)%22>": [
+    "src=javascriptalert'works'": [
+      "pre"
+    ],
+    "http//wwwxvulnerablesitecom/loginasp?username=any&password=img%20src%3d%22javascriptalert%27works%27%22": [
       "pre"
     ],
     "places": [
@@ -3711,7 +3711,7 @@
     "showed": [
       "p"
     ],
-    "$_cookie\"testcookie\"];": [
+    "$_cookietestcookie": [
       "pre"
     ],
     "?": [
@@ -3792,11 +3792,7 @@
     "movie": [
       "p"
     ],
-    "object": [
-      "pre",
-      "pre"
-    ],
-    "classid=\"clsidd27cdb6e": [
+    "classid=clsidd27cdb6e": [
       "pre",
       "pre"
     ],
@@ -3812,20 +3808,40 @@
       "pre",
       "pre"
     ],
-    "444553540000\"\r\ncodebase=\"\"http://macromedia.com/cabs/swflash.cab#version=6,0,0,0\"\"\r\nwidth=\"250\"": [
+    "444553540000": [
       "pre",
       "pre"
     ],
-    "height=\"250\"": [
+    "codebase=http//macromediacom/cabs/swflashcab#version=6000": [
+      "pre",
+      "pre"
+    ],
+    "width=250": [
+      "pre",
       "pre",
       "pre",
       "pre"
     ],
-    "id=\"flamovie1\"": [
+    "height=250": [
+      "pre",
+      "pre",
       "pre",
       "pre"
     ],
-    "align=\"center\"\r\n<param": [
+    "id=flamovie1": [
+      "pre",
+      "pre"
+    ],
+    "align=center": [
+      "pre",
+      "pre"
+    ],
+    "param": [
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
       "pre",
       "pre"
     ],
@@ -3833,7 +3849,7 @@
       "pre",
       "pre"
     ],
-    "value=\"flamovie1swf\">\r\n<param": [
+    "value=flamovie1swf": [
       "pre",
       "pre"
     ],
@@ -3841,47 +3857,49 @@
       "pre",
       "pre"
     ],
-    "value=\"inputurl=usersinput\"\r\n<param": [
+    "value=inputurl=usersinput": [
       "pre"
     ],
     "name=quality": [
       "pre",
       "pre"
     ],
-    "value=high\r\n<param": [
+    "value=high": [
+      "pre",
       "pre"
     ],
     "name=bgcolor": [
       "pre",
       "pre"
     ],
-    "value=#ffffff\r\n<embed": [
+    "value=#ffffff": [
       "pre",
       "pre"
     ],
-    "src=\"flamovie1swf\"": [
+    "src=flamovie1swf": [
       "pre",
       "pre"
     ],
-    "flashvars=\"inputurl=usersinput\"\rquality=\"high\"": [
+    "flashvars=inputurl=usersinput": [
       "pre"
     ],
-    "bgcolor=\"#ffffff\"": [
+    "quality=high": [
       "pre",
       "pre"
     ],
-    "width=\"250\"": [
+    "bgcolor=#ffffff": [
       "pre",
       "pre"
     ],
-    "name=\"flamovie1\"": [
+    "name=flamovie1": [
+      "pre",
       "pre"
     ],
     "align": [
       "pre",
       "pre"
     ],
-    "type=\"application/x": [
+    "type=application/x": [
       "pre",
       "pre"
     ],
@@ -3889,7 +3907,11 @@
       "pre",
       "pre"
     ],
-    "flash\"\rpluginspage=\"http://www.macromedia.com/go/getflashplayer\">\r\n</object>": [
+    "pluginspage=http//wwwmacromediacom/go/getflashplayer": [
+      "pre",
+      "pre"
+    ],
+    "/object": [
       "pre",
       "pre"
     ],
@@ -3897,16 +3919,13 @@
       "p",
       "p"
     ],
-    "value=\"inputurl=%3cscript%3ealart%28%b4xss%b4%29%3c%2fscript%3e\"\r\n<param": [
+    "value=inputurl=%3cscript%3ealart%28%b4xss%b4%29%3c%2fscript%3e": [
       "pre"
     ],
-    "value=high\r\n<para": [
+    "para": [
       "pre"
     ],
-    "flashvars=\"inputurl=%3cscript%3ealert%28%b4xss%b4%29%3c%2fscript%3e\"\rquality=\"high\"": [
-      "pre"
-    ],
-    "height=\"250\"\rname=\"flamovie1\"": [
+    "flashvars=inputurl=%3cscript%3ealert%28%b4xss%b4%29%3c%2fscript%3e": [
       "pre"
     ],
     "ui": [
@@ -3979,7 +3998,7 @@
       "p",
       "p"
     ],
-    "wwwsysinternals.com": [
+    "wwwsysinternalscom": [
       "p"
     ],
     "dedicated": [
@@ -4150,22 +4169,25 @@
       "p",
       "p"
     ],
-    "%\r\nset": [
-      "pre"
-    ],
     "fso": [
       "pre"
     ],
-    "servercreateobject(\"scripting.filesystemobject\")\r\nset": [
+    "servercreateobjectscriptingfilesystemobject": [
       "pre"
     ],
     "fw": [
       "pre"
     ],
-    "fsocreatetextfile(\"c:\\inetpub\\wwwroot\\results.txt\",true)\r\nfw.writeline(\"test": [
+    "fsocreatetextfilec\\inetpub\\wwwroot\\resultstxttrue": [
       "pre"
     ],
-    "case\")\r\nfw.writeline(request.querystring(\"testcase\"))\r\nfw.close\r\n%>": [
+    "fwwritelinetest": [
+      "pre"
+    ],
+    "fwwritelinerequestquerystringtestcase": [
+      "pre"
+    ],
+    "fwclose": [
       "pre"
     ],
     "generate": [
@@ -4196,9 +4218,6 @@
       "p",
       "p"
     ],
-    "tags.": [
-      "p"
-    ],
     "wants": [
       "p"
     ],
@@ -4222,10 +4241,10 @@
       "p",
       "p"
     ],
-    "http//www.xvulnerablesite.com/login.asp?username=any&password=<img": [
+    "http//wwwxvulnerablesitecom/loginasp?username=any&password=img": [
       "pre"
     ],
-    "src=\"http//xyoursite.com/results.asp?testcase=17\">": [
+    "src=http//xyoursitecom/resultsasp?testcase=17": [
       "pre"
     ],
     "fails": [
@@ -4260,8 +4279,12 @@
     "free": [
       "p"
     ],
-    "http//en.wikipedia.org/wiki/fuzz_testing.": [
-      "p"
+    "http//enwikipediaorg/wiki/fuzz_testing": [
+      "p",
+      "a",
+      "ul",
+      "li",
+      "a"
     ],
     "capability": [
       "p"
@@ -4272,12 +4295,6 @@
     "vulnerabilities": [
       "p",
       "title"
-    ],
-    "http//en.wikipedia.org/wiki/fuzz_testing": [
-      "a",
-      "ul",
-      "li",
-      "a"
     ],
     "conclusions": [
       "h1"
@@ -4333,9 +4350,10 @@
       "li",
       "li"
     ],
-    "https://www.owasp.org/index.php/xss_filter_evasion_cheat_sheet)": [
+    "https//wwwowasporg/indexphp/xss_filter_evasion_cheat_sheet": [
       "ul",
-      "li"
+      "li",
+      "a"
     ],
     "appendix": [
       "ul",
@@ -4349,7 +4367,7 @@
       "ul",
       "li"
     ],
-    "http//www.owasp.org/index.php/owasp_testing_guide_appendix_c:_fuzz_vectors": [
+    "http//wwwowasporg/indexphp/owasp_testing_guide_appendix_c_fuzz_vectors": [
       "ul",
       "li",
       "a"
@@ -4357,9 +4375,6 @@
     "wikipedia": [
       "ul",
       "li"
-    ],
-    "https//www.owasp.org/index.php/xss_filter_evasion_cheat_sheet": [
-      "a"
     ]
   },
   "tags": {},

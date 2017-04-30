@@ -1,0 +1,59 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "0",
+      "Content_Hash": "0"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "2c1b9b0e-038c-4a49-a711-1fc1a6a8d4e8"
+        ],
+        "Library_Id": [
+          "be5273b1-d682-4361-99d9-6234f2d47eb7"
+        ],
+        "Title": [
+          "Python 2.7 Handle Errors"
+        ],
+        "Category": [
+          ""
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "Python"
+        ],
+        "Type": [
+          "Code Example"
+        ],
+        "DirectLink": [
+          ""
+        ],
+        "Tag": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "false",
+          "DataType": "markdown"
+        },
+        "Data": [
+          "## Applies To ##\r\n\r\n* Python 2.7\r\n\r\n\r\n## Solution Example ##\r\n\r\n~~~~\r\n#! /usr/bin/env python\r\n\r\n'''\r\nPython Error Handling\r\n'''\r\n\r\n# Open, read, and print a file handling exceptions that can occur\r\n\r\nimport sys\r\nimport os\r\n\r\ndef usage():\r\n    print \"Usage: {} filename\".format(sys.argv[0])\r\n\r\n\r\ndef main():\r\n    if len(sys.argv) != 2:\r\n        usage()\r\n        sys.exit(2)\r\n\r\n    filename = sys.argv[1]\r\n    fin = None\r\n\r\n    try:\r\n        fin = open(filename, \"r\")\r\n    except IOError as err:\r\n        # Catch likely IO errors like file not found\r\n        print \"I/O error({}): {}\".format(err.errno, err.strerror)\r\n        sys.exit(1)\r\n\r\n    try:\r\n        for line in fin:\r\n            sys.stdout.write(line)\r\n    except IOError as err:\r\n        print \"I/O error({}): {}\".format(err.errno, err.strerror)\r\n        sys.exit(1)\r\n    finally:\r\n        # Cleanup, whether the IO succeeded or failed\r\n        fin.close()\r\n\r\n\r\nif __name__ == \"__main__\":\r\n    try:\r\n        main()\r\n    except KeyboardInterrupt as err: # Ctrl-C\r\n        pass\r\n    except Exception as err:\r\n        # Catch all exceptions to prevent backtraces on the CLI\r\n        print \"Unexpected error: {}\".format(err)\r\n        sys.exit(1)\r\n~~~~"
+        ]
+      }
+    ]
+  }
+}

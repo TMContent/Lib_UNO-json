@@ -1,6 +1,6 @@
 {
   "id": "33745a5e-cf01-4e46-ab48-1a1a4b0cddc9",
-  "checksum": "312d148178a83373221cf2cb34ebfca4",
+  "checksum": "bac831163991029a93bf29092061fbdd",
   "words": {
     "1": [
       "h2"
@@ -668,6 +668,7 @@
       "p",
       "p",
       "p",
+      "ol",
       "li",
       "p",
       "p",
@@ -717,7 +718,11 @@
       "p",
       "p"
     ],
-    "dos)": [
+    "dos": [
+      "p",
+      "p",
+      "p",
+      "p",
       "p"
     ],
     "situation": [
@@ -783,8 +788,20 @@
       "p",
       "p"
     ],
-    "scenarios\n\nanalyze": [
-      "ol"
+    "scenarios": [
+      "ol",
+      "li",
+      "p",
+      "h2",
+      "p",
+      "p"
+    ],
+    "analyze": [
+      "ol",
+      "li",
+      "p",
+      "h2",
+      "p"
     ],
     "causes": [
       "ol",
@@ -832,8 +849,22 @@
       "p",
       "p"
     ],
-    "countermeasures\n\nstart": [
-      "ol"
+    "countermeasures": [
+      "ol",
+      "li",
+      "p",
+      "h2",
+      "p",
+      "p"
+    ],
+    "start": [
+      "ol",
+      "li",
+      "p",
+      "h2",
+      "ol",
+      "li",
+      "p"
     ],
     "testing": [
       "ol",
@@ -848,34 +879,6 @@
       "li",
       "p",
       "h2"
-    ],
-    "scenarios": [
-      "li",
-      "p",
-      "h2",
-      "p",
-      "p"
-    ],
-    "analyze": [
-      "li",
-      "p",
-      "h2",
-      "p"
-    ],
-    "countermeasures": [
-      "li",
-      "p",
-      "h2",
-      "p",
-      "p"
-    ],
-    "start": [
-      "li",
-      "p",
-      "h2",
-      "ol",
-      "li",
-      "p"
     ],
     "step": [
       "h2",
@@ -927,12 +930,6 @@
     "variant": [
       "p"
     ],
-    "dos": [
-      "p",
-      "p",
-      "p",
-      "p"
-    ],
     "aimed": [
       "p"
     ],
@@ -961,6 +958,8 @@
     "attacker": [
       "p",
       "p",
+      "ol",
+      "ol",
       "ol",
       "li",
       "p",
@@ -1068,6 +1067,9 @@
     ],
     "username": [
       "p",
+      "ol",
+      "li",
+      "p",
       "p",
       "p",
       "p",
@@ -1157,6 +1159,7 @@
     ],
     "password": [
       "p",
+      "ol",
       "li",
       "p",
       "p",
@@ -1256,21 +1259,15 @@
       "li",
       "p"
     ],
-    "username,": [
+    "etc": [
       "ol",
       "li",
       "p"
-    ],
-    "etc).\n\n\nattacker": [
-      "ol"
     ],
     "tries": [
       "ol",
       "li",
       "p"
-    ],
-    "password\n\n\nattacker": [
-      "ol"
     ],
     "repeats": [
       "ol",
@@ -1308,16 +1305,12 @@
       "p",
       "p"
     ],
-    "etc).": [
-      "li",
-      "p"
-    ],
     "ebay": [
       "h3",
       "p",
       "p"
     ],
-    "attacki]": [
+    "attacki": [
       "h3"
     ],
     "classic": [
@@ -1409,6 +1402,7 @@
       "p"
     ],
     "passwords": [
+      "p",
       "p",
       "p",
       "p",
@@ -1633,6 +1627,7 @@
     ],
     "force": [
       "p",
+      "ol",
       "li",
       "p",
       "p"
@@ -1834,8 +1829,10 @@
       "pre",
       "code"
     ],
-    "providers>": [
+    "providers": [
       "pre",
+      "pre",
+      "code",
       "code"
     ],
     "add": [
@@ -1858,7 +1855,7 @@
       "pre",
       "code"
     ],
-    "providers>\n</membership>": [
+    "/membership": [
       "pre",
       "code"
     ],
@@ -2199,6 +2196,7 @@
     ],
     "check": [
       "p",
+      "ol",
       "li",
       "p"
     ],
@@ -2283,9 +2281,6 @@
     "look": [
       "p"
     ],
-    "passwords.": [
-      "p"
-    ],
     "continue": [
       "p"
     ],
@@ -2314,16 +2309,23 @@
       "li",
       "p"
     ],
-    "page\n\n\nenter": [
-      "ol"
+    "page": [
+      "ol",
+      "ol",
+      "li",
+      "p",
+      "li",
+      "p"
+    ],
+    "enter": [
+      "ol",
+      "li",
+      "p"
     ],
     "submit": [
       "ol",
       "li",
       "p"
-    ],
-    "page\n\n\ncheck": [
-      "ol"
     ],
     "response": [
       "ol",
@@ -2345,7 +2347,10 @@
     ],
     "case": [
       "ol",
+      "ol",
       "li",
+      "li",
+      "p",
       "p"
     ],
     "finished": [
@@ -2375,21 +2380,6 @@
     ],
     "next": [
       "ol",
-      "li",
-      "p"
-    ],
-    "case.": [
-      "ol",
-      "li",
-      "p"
-    ],
-    "page": [
-      "li",
-      "p",
-      "li",
-      "p"
-    ],
-    "enter": [
       "li",
       "p"
     ],
@@ -2444,24 +2434,35 @@
     ],
     "brutus": [
       "ol",
+      "ol",
       "li",
       "p",
       "li",
       "p"
     ],
-    "http://www.hoobie.net/brutus/).\n\n\nrun": [
-      "ol"
+    "http//wwwhoobienet/brutus/": [
+      "ol",
+      "li",
+      "p",
+      "a"
     ],
-    "brutus\n\n\ntype": [
-      "ol"
+    "run": [
+      "ol",
+      "li",
+      "p"
+    ],
+    "type": [
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
+      "p"
     ],
     "url": [
       "ol",
       "li",
       "p"
-    ],
-    "type\n\n\nin": [
-      "ol"
     ],
     "pass": [
       "ol",
@@ -2485,13 +2486,11 @@
     ],
     "select": [
       "ol",
+      "ol",
       "li",
       "p",
       "li",
       "p"
-    ],
-    "force\n\n\nselect": [
-      "ol"
     ],
     "range": [
       "ol",
@@ -2518,31 +2517,13 @@
       "li",
       "p"
     ],
-    "try\n\n\nclick": [
-      "ol"
-    ],
-    "http://www.hoobie.net/brutus/).": [
-      "li",
-      "p"
-    ],
-    "http//www.hoobie.net/brutus/": [
-      "a"
-    ],
-    "run": [
-      "li",
-      "p"
-    ],
-    "type": [
-      "li",
-      "li",
-      "p",
-      "p"
-    ],
     "try": [
+      "ol",
       "li",
       "p"
     ],
     "click": [
+      "ol",
       "li",
       "p"
     ],
@@ -2588,13 +2569,13 @@
     "automates": [
       "p"
     ],
-    "i]": [
+    "i": [
       "p"
     ],
     "owasp": [
       "p"
     ],
-    "http//www.owasp.org/index.php/account_lockout_attack": [
+    "http//wwwowasporg/indexphp/account_lockout_attack": [
       "p",
       "a"
     ]

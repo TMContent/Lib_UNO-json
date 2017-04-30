@@ -1,0 +1,56 @@
+<h2>Applies To</h2>
+<ul>
+<li>Ruby</li>
+</ul>
+<h2>Problem Example</h2>
+<pre><code>#! /usr/bin/env ruby
+require 'mysql2'
+
+if ARGV.length == 0
+	puts &quot;Usage: #{$0} [username]&quot;
+	exit
+end
+
+
+client = Mysql2::Client.new(:host =&gt; &quot;localhost&quot;, :username =&gt; &quot;root&quot;, :database =&gt; 'application')
+username = ARGV[0]
+query = &quot;SELECT id,username FROM users WHERE username='#{username}'&quot;
+results = client.query(query)
+
+if results.count == 0
+	puts &quot;Username not found.&quot;
+else
+	results.each do |row| 
+		puts &quot;Username: #{row['username']}&quot;
+		puts &quot;ID: #{row['id']}&quot;
+	end
+end
+</code></pre>
+<h2>Solution Example</h2>
+<pre><code>#! /usr/bin/env ruby
+require 'mysql2'
+
+if ARGV.length == 0
+	puts &quot;Usage: #{$0} [username]&quot;
+	exit
+end
+
+
+client = Mysql2::Client.new(:host =&gt; &quot;server&quot;, :username =&gt; &quot;user&quot;, :password =&gt; 'password', :database =&gt; 'dbname')
+username = ARGV[0]
+query = client.prepare(&quot;SELECT id,username FROM users WHERE username=?&quot;)
+results = query.execute(username)
+
+if results.count == 0
+	puts &quot;Username not found.&quot;
+else
+	results.each do |row| 
+		puts &quot;Username: #{row['username']}&quot;
+		puts &quot;ID: #{row['id']}&quot;
+	end
+end
+</code></pre>
+<h2>Guideline</h2>
+<ul>
+<li><a href="397488da-ce91-4768-9ad9-1e6928980d72">Use Prepared Statements for SQL Queries</a></li>
+</ul>

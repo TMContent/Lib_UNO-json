@@ -48,6 +48,7 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "ul",
@@ -55,6 +56,8 @@
       "li",
       "li",
       "li",
+      "li",
+      "p",
       "p",
       "ol",
       "ol",
@@ -222,6 +225,8 @@
     "jni": [
       "p",
       "p",
+      "p",
+      "strong",
       "ul",
       "ul",
       "ul",
@@ -296,11 +301,14 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "ul",
       "li",
       "li",
       "li",
+      "li",
+      "p",
       "p",
       "p",
       "p",
@@ -420,6 +428,7 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "li",
@@ -434,11 +443,13 @@
       "li",
       "ul",
       "ul",
+      "li",
       "li",
       "li",
       "li",
       "p",
       "strong",
+      "p",
       "p",
       "ol",
       "li",
@@ -585,10 +596,6 @@
       "p",
       "strong",
       "p"
-    ],
-    "jni)": [
-      "p",
-      "strong"
     ],
     "should": [
       "p"
@@ -816,6 +823,7 @@
       "li",
       "ol",
       "ol",
+      "ol",
       "li",
       "ul",
       "li",
@@ -823,6 +831,8 @@
       "ul",
       "li",
       "li",
+      "li",
+      "p",
       "p",
       "p",
       "p",
@@ -1524,15 +1534,23 @@
       "li",
       "p"
     ],
-    "\"jnienv\"": [
+    "jnienv": [
+      "ol",
       "ol",
       "li",
-      "p"
+      "li",
+      "p",
+      "em",
+      "pre"
     ],
-    "\"jobject\"": [
+    "jobject": [
+      "ol",
       "ol",
       "li",
-      "p"
+      "li",
+      "p",
+      "em",
+      "pre"
     ],
     "strings": [
       "ol",
@@ -1564,37 +1582,37 @@
       "li",
       "pre"
     ],
-    "jni.h>#include": [
+    "jnih#include": [
       "ol",
       "li",
       "pre"
     ],
-    "sys/types.h>#include": [
+    "sys/typesh#include": [
       "ol",
       "li",
       "pre"
     ],
-    "fcntl.h>#include": [
+    "fcntlh#include": [
       "ol",
       "li",
       "pre"
     ],
-    "stdio.h>#include": [
+    "stdioh#include": [
       "ol",
       "li",
       "pre"
     ],
-    "atlbase.h>#include": [
+    "atlbaseh#include": [
       "ol",
       "li",
       "pre"
     ],
-    "windows.h>#include": [
+    "windowsh#include": [
       "ol",
       "li",
       "pre"
     ],
-    "wtypes.h>jniexport": [
+    "wtypeshjniexport": [
       "ol",
       "li",
       "pre"
@@ -1614,12 +1632,6 @@
       "li",
       "pre"
     ],
-    "jnienv": [
-      "ol",
-      "li",
-      "em",
-      "pre"
-    ],
     "*": [
       "ol",
       "li",
@@ -1628,12 +1640,6 @@
     "env": [
       "ol",
       "li",
-      "pre"
-    ],
-    "jobject": [
-      "ol",
-      "li",
-      "em",
       "pre"
     ],
     "jobj": [
@@ -1651,7 +1657,7 @@
       "li",
       "pre"
     ],
-    "..}": [
+    "}": [
       "ol",
       "li",
       "pre"
@@ -1661,12 +1667,7 @@
       "li",
       "p"
     ],
-    "specified for": [
-      "ol",
-      "li",
-      "p"
-    ],
-    "use that": [
+    "specified": [
       "ol",
       "li",
       "p"
@@ -1681,7 +1682,7 @@
       "li",
       "p"
     ],
-    "in step": [
+    "step": [
       "ol",
       "li",
       "p"

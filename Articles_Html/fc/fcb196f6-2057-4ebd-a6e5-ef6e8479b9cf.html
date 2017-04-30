@@ -9,8 +9,12 @@ All web applications that keep track of user session state are potentially affec
 </p><p>
 The most serious danger is that the attacker might compromise a privileged account and abuse administrative functions within the application to execute arbitrary code on the application server. In that case, the attacker will gain access to all application data and be able to use the server as a part of a botnet.
 </p><h2>Countermeasures</h2><p>To prevent insufficient session expiration vulnerabilities, place logout links on all pages that require authentication, expire sessions on the server after a period of user inactivity, and don't make session cookies persistent.
-</p><h2>Application Check</h2><p>To verify that insufficient session expiration vulnerabilities are prevented, make sure that logout links are present on all pages that require authentication, sessions on the server expire after a period of user inactivity, and session cookies are not made persistent.
-</p><h2>Specific Technologies</h2><ul><li> <a href="d4d942a8-0415-4ed1-88a7-488b1ca6b22b">ASP.NET Insufficient Session Expiration</a></li>
-<li> <a href="cbd09a31-a267-4409-9dad-2d5342e426f4">Java Insufficient Session Expiration</a></li>
-<li> <a href="acc51b28-d106-4d6e-9065-81e51f0ec3f3">PHP Insufficient Session Expiration</a></li>
-</ul>
+</p><ul>
+<li> <a href="98e47f4f-928d-4520-b449-fe4d779e53f6">Place a Logout Link on Each Page That Requires Authentication</a></li>
+<li> <a href="6a943275-345a-4131-a3b1-ba3457abc13e">Limit Session Lifetime</a></li>
+<li> <a href="e9bb3e68-cce4-4412-8834-e4cb7861be00">Do Not Store Sensitive Data in Persistent Cookies</a></li>
+</ul><h2>Application Check</h2><p>To verify that insufficient session expiration vulnerabilities are prevented, make sure that logout links are present on all pages that require authentication, sessions on the server expire after a period of user inactivity, and session cookies are not made persistent.
+</p><ul>
+<li> <a href="197d4a9f-0a73-4fb0-913c-fc53c73c74d2">All Pages That Use Authentication Have Logout Links</a></li>
+<li> <a href="c486eeb2-f64f-480b-9823-48bd7d21047d">Inactive Sessions Expire</a></li>
+<li> <a href="e17caf9a-36ff-486f-8329-7c238a7ef13d">Sensitive Data Is Not Stored in Persistent Cookies</a></li></ul>

@@ -143,6 +143,7 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "li",
@@ -156,6 +157,8 @@
       "li",
       "li",
       "li",
+      "li",
+      "tt",
       "tt",
       "tt",
       "tt",
@@ -170,6 +173,7 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "li",
@@ -180,7 +184,9 @@
       "li",
       "li",
       "li",
+      "li",
       "strong",
+      "tt",
       "tt",
       "tt",
       "tt",
@@ -198,9 +204,17 @@
       "p",
       "ol",
       "ol",
+      "ol",
+      "ol",
       "li",
       "li",
+      "li",
+      "li",
+      "tt",
+      "tt",
       "p",
+      "ol",
+      "ol",
       "ol",
       "ol",
       "ol",
@@ -209,7 +223,11 @@
       "li",
       "li",
       "strong",
-      "li"
+      "li",
+      "li",
+      "li",
+      "tt",
+      "tt"
     ],
     "is": [
       "p",
@@ -590,7 +608,7 @@
     "overlay": [
       "p"
     ],
-    "hide)": [
+    "hide": [
       "p"
     ],
     "clickable": [
@@ -752,7 +770,7 @@
       "ol",
       "li"
     ],
-    "javaxservlet.filter": [
+    "javaxservletfilter": [
       "ol",
       "li",
       "em",
@@ -940,15 +958,7 @@
       "ol",
       "li"
     ],
-    "filter>": [
-      "ol",
-      "li",
-      "tt",
-      "ol",
-      "li",
-      "tt"
-    ],
-    "name>xframeoptionfilter</filter": [
+    "namexframeoptionfilter/filter": [
       "ol",
       "ol",
       "li",
@@ -962,7 +972,7 @@
       "tt",
       "tt"
     ],
-    "name>": [
+    "name": [
       "ol",
       "ol",
       "li",
@@ -971,26 +981,16 @@
       "tt",
       "ol",
       "ol",
-      "li",
-      "li",
-      "tt",
-      "tt"
-    ],
-    "class>": [
       "ol",
       "ol",
       "li",
       "li",
-      "tt",
-      "tt",
-      "ol",
-      "ol",
       "li",
       "li",
       "tt",
       "tt"
     ],
-    "comexample.servlet.filters.xframeoptionfilter": [
+    "comexampleservletfiltersxframeoptionfilter": [
       "ol",
       "li",
       "tt",
@@ -1001,26 +1001,24 @@
     "/filter": [
       "ol",
       "ol",
+      "ol",
+      "li",
       "li",
       "li",
       "tt",
       "tt",
+      "tt",
+      "ol",
       "ol",
       "ol",
       "li",
       "li",
+      "li",
+      "tt",
       "tt",
       "tt"
     ],
-    "/filter>": [
-      "ol",
-      "li",
-      "tt",
-      "ol",
-      "li",
-      "tt"
-    ],
-    "mapping>": [
+    "mapping": [
       "ol",
       "ol",
       "li",
@@ -1042,7 +1040,7 @@
       "li",
       "tt"
     ],
-    "pattern>/*</url": [
+    "pattern/*/url": [
       "ol",
       "li",
       "tt",
@@ -1050,7 +1048,7 @@
       "li",
       "tt"
     ],
-    "pattern>": [
+    "pattern": [
       "ol",
       "li",
       "tt",
@@ -1060,12 +1058,6 @@
     ],
     "fix": [
       "h2"
-    ],
-    "name": [
-      "ol",
-      "ol",
-      "li",
-      "li"
     ],
     "arbitrary": [
       "ol",
@@ -1140,7 +1132,10 @@
     ],
     "httpservletresponse": [
       "ol",
+      "ol",
       "li",
+      "li",
+      "tt",
       "tt"
     ],
     "=": [
@@ -1148,32 +1143,25 @@
       "li",
       "tt"
     ],
-    "httpservletresponse)": [
-      "ol",
-      "li",
-      "tt"
-    ],
     "resp": [
       "ol",
+      "ol",
       "li",
+      "li",
+      "tt",
       "tt"
     ],
-    "responseaddheader(“x": [
+    "responseaddheader“x": [
       "ol",
       "li",
       "tt"
     ],
-    "options”,”deny”);": [
+    "options””deny”": [
       "ol",
       "li",
       "tt"
     ],
-    "chaindofilter(req,": [
-      "ol",
-      "li",
-      "tt"
-    ],
-    "resp;": [
+    "chaindofilterreq": [
       "ol",
       "li",
       "tt"

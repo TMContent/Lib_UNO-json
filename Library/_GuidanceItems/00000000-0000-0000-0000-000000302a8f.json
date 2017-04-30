@@ -13,7 +13,7 @@
           "00000000-0000-0000-0000-000000302a8f,cbae3e99-f61c-41dc-a089-870de5b569d9,"
         ],
         "Library_Id": [
-          "26bd1a04-beed-4a66-917d-b6ab0a7d634c"
+          "be5273b1-d682-4361-99d9-6234f2d47eb7"
         ],
         "Title": [
           "Avoid Using Reflection"
@@ -28,7 +28,7 @@
           ".NET"
         ],
         "Type": [
-          "Guideline"
+          "How To"
         ],
         "DirectLink": [
           "Avoid Using Reflection"
@@ -54,7 +54,7 @@
           "DataType": "wikitext"
         },
         "Data": [
-          "==Applies To==\r\n\r\n* ASP.NET\r\n\r\n==What to Do==\r\n\r\nAvoid using reflection, if possible. If reflection is necessary, avoid passing user data to it. If passing data to reflection code is necessary, validate input rigorously.\r\n\r\n==Why==\r\n\r\nReflection allows executing data as code. If user-controlled data is executed as code, an attacker may be able to execute arbitrary code to take over the application.\r\n\r\n==How==\r\n\r\nTo avoid using reflection:\r\n\r\n# **Find all code that uses reflection.** Search for the //System.Reflection// namespace to find code that uses reflection.\r\n# **Remove code that uses reflection if possible.** Consider whether the code that uses reflection is absolutely necessary. Think of ways to replace the reflection code with something else that does the same thing.\r\n# **Don't pass user data to code that uses reflection.** Review code that uses reflection and make sure that it doesn't accept user data. The nature of reflection is that it allows passing code as data, so there isn't really a safe way to handle user input passed to reflection. \r\n# **Validate user data passed to code that uses reflection.** If it's absolutely necessary to use reflection with user data, then data passed to it must be rigorously validated. Use positive input validation to check the user supplied data.  Ensure that only valid input is accepted. Limit user data to as small data set as possible.    It is a good idea to include a highly visible warning in the application's documentation and code comments, precisely stating the conditions under which reflection with user data is necessary. "
+          "==Applies To==\n\n* ASP.NET\n\n==What to Do==\n\nAvoid using reflection, if possible. If reflection is necessary, avoid passing user data to it. If passing data to reflection code is necessary, validate input rigorously.\n\n==Why==\n\nReflection allows executing data as code. If user-controlled data is executed as code, an attacker may be able to execute arbitrary code to take over the application.\n\n==How==\n\nTo avoid using reflection:\n\n# **Find all code that uses reflection.** Search for the //System.Reflection// namespace to find code that uses reflection.\n# **Remove code that uses reflection if possible.** Consider whether the code that uses reflection is absolutely necessary. Think of ways to replace the reflection code with something else that does the same thing.\n# **Don't pass user data to code that uses reflection.** Review code that uses reflection and make sure that it doesn't accept user data. The nature of reflection is that it allows passing code as data, so there isn't really a safe way to handle user input passed to reflection. \n# **Validate user data passed to code that uses reflection.** If it's absolutely necessary to use reflection with user data, then data passed to it must be rigorously validated. Use positive input validation to check the user supplied data.  Ensure that only valid input is accepted. Limit user data to as small data set as possible.    It is a good idea to include a highly visible warning in the application's documentation and code comments, precisely stating the conditions under which reflection with user data is necessary. "
         ]
       }
     ]

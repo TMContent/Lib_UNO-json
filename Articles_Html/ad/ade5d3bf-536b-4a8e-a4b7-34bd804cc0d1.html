@@ -24,11 +24,11 @@
  int get_canary_value ()
  {
    if (canary_value__ == -1) {
-     /* Intializes random number generator */
-     time_t t;
-     srand ((unsigned) time(&amp;t));
-     /* Generate canary value */
-     canary_value__ = rand ();
+ 	/* Intializes random number generator */
+ 	time_t t;
+ 	srand ((unsigned) time(&amp;t));
+ 	/* Generate canary value */
+ 	canary_value__ = rand ();
    }
    /* Return */
    return canary_value__;
@@ -41,8 +41,8 @@
  {
    /* Compare canary value to original */
    if (value != canary_value__) {
-     /* If modified stop the program */
-     exit (0);
+ 	/* If modified stop the program */
+ 	exit (0);
    }
  }
 </code></pre>

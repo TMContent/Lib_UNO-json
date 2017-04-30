@@ -1,6 +1,6 @@
 {
   "id": "5ef5eea8-07c2-41de-80f9-7f62aaf0e3c8",
-  "checksum": "c6b1bdf7bc6daab0ea7e51c1e14154a0",
+  "checksum": "ca29947ee27695c976eb8bfc449566cd",
   "words": {
     "description": [
       "h1"
@@ -14,15 +14,6 @@
       "p",
       "p",
       "p",
-      "ul",
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a",
-      "li",
-      "a",
       "title"
     ],
     "injection": [
@@ -34,15 +25,6 @@
       "p",
       "p",
       "p",
-      "ul",
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a",
-      "li",
-      "a",
       "title"
     ],
     "is": [
@@ -51,7 +33,11 @@
       "p",
       "p",
       "p",
-      "p"
+      "p",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "a": [
       "p"
@@ -237,7 +223,7 @@
     "attacks": [
       "p"
     ],
-    "may": [
+    "might": [
       "p"
     ],
     "allow": [
@@ -340,15 +326,35 @@
       "p"
     ],
     "validate": [
-      "p"
+      "p",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "all": [
       "p",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a",
+      "p",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "input": [
       "p",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a",
+      "p",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "use": [
       "p"
@@ -402,23 +408,8 @@
     "unvalidated": [
       "p"
     ],
-    "specific": [
-      "h1"
-    ],
-    "technologies": [
-      "h1"
-    ],
-    "aspnet": [
-      "ul",
-      "li",
-      "a"
-    ],
-    "java": [
-      "ul",
-      "li",
-      "a"
-    ],
-    "php": [
+    "validated": [
+      "p",
       "ul",
       "li",
       "a"
@@ -427,16 +418,12 @@
   "tags": {},
   "links": [
     {
-      "href": "c2ab8f50-3b6b-47a8-b530-c9a705bdf6c8",
-      "text": "ASP.NET XPath Injection"
+      "href": "11a15f3a-7fe8-4e4c-be5e-309ab7227b3d",
+      "text": "Validate All Input"
     },
     {
-      "href": "f93eca13-f40e-4975-8c2c-d84829947672",
-      "text": "Java XPath Injection"
-    },
-    {
-      "href": "1a89b5be-d8eb-4948-9e87-079fa6bf8320",
-      "text": "PHP XPath Injection"
+      "href": "8d8c24b0-096b-43f4-9391-9b293313a0e8",
+      "text": "All Input Is Validated"
     }
   ]
 }

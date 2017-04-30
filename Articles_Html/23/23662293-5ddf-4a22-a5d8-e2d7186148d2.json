@@ -1,6 +1,6 @@
 {
   "id": "23662293-5ddf-4a22-a5d8-e2d7186148d2",
-  "checksum": "765c14c23e563f2df9360e9d4eb48281",
+  "checksum": "dd4b20ca9887c1efa47ef25248e87111",
   "words": {
     "description": [
       "h2"
@@ -45,19 +45,11 @@
       "p",
       "p",
       "p",
-      "ul",
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a",
-      "li",
-      "a",
       "title"
     ],
-    "ssi)": [
-      "p"
+    "ssi": [
+      "p",
+      "title"
     ],
     "vulnerabilities": [
       "p",
@@ -110,14 +102,26 @@
       "p",
       "p",
       "p",
-      "p"
+      "ul",
+      "li",
+      "a",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "files": [
       "p",
       "p",
       "p",
       "p",
-      "p"
+      "ul",
+      "li",
+      "a",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "that": [
       "p",
@@ -157,7 +161,10 @@
       "p",
       "p",
       "p",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "able": [
       "p",
@@ -265,7 +272,13 @@
     "all": [
       "p",
       "p",
-      "p"
+      "ul",
+      "li",
+      "a",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "applications": [
       "p"
@@ -273,7 +286,10 @@
     "are": [
       "p",
       "p",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "affected": [
       "p"
@@ -308,7 +324,7 @@
       "p",
       "p"
     ],
-    "him": [
+    "them": [
       "p",
       "p"
     ],
@@ -351,7 +367,7 @@
     "vulnerability": [
       "p"
     ],
-    "may": [
+    "might": [
       "p"
     ],
     "countermeasures": [
@@ -361,7 +377,10 @@
       "p"
     ],
     "validate": [
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "user": [
       "p",
@@ -369,10 +388,19 @@
     ],
     "input": [
       "p",
-      "p"
+      "ul",
+      "li",
+      "a",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "scramble": [
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "file": [
       "p",
@@ -380,11 +408,23 @@
     ],
     "names": [
       "p",
-      "p"
+      "ul",
+      "li",
+      "a",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "uploaded": [
       "p",
-      "p"
+      "ul",
+      "li",
+      "a",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "check": [
       "h2"
@@ -402,40 +442,13 @@
       "p"
     ],
     "validated": [
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "scrambled": [
-      "p"
-    ],
-    "specific": [
-      "h2"
-    ],
-    "technologies": [
-      "h2"
-    ],
-    "aspnet": [
-      "ul",
-      "li",
-      "a"
-    ],
-    "ssi": [
-      "ul",
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a",
-      "li",
-      "a",
-      "title"
-    ],
-    "java": [
-      "ul",
-      "li",
-      "a"
-    ],
-    "php": [
+      "p",
       "ul",
       "li",
       "a"
@@ -444,16 +457,20 @@
   "tags": {},
   "links": [
     {
-      "href": "ea07a583-92f0-444e-9dd9-0026811631be",
-      "text": "ASP.NET SSI Injection"
+      "href": "11a15f3a-7fe8-4e4c-be5e-309ab7227b3d",
+      "text": "Validate All Input"
     },
     {
-      "href": "4fb356d3-4298-4430-9e47-503664f29521",
-      "text": "Java SSI Injection"
+      "href": "34dcc037-0c93-4baf-b36d-75bac8391815",
+      "text": "Scramble Names of Uploaded Files"
     },
     {
-      "href": "393a1d1d-291f-4dc2-82f7-33ff189a830c",
-      "text": "PHP SSI Injection"
+      "href": "8d8c24b0-096b-43f4-9391-9b293313a0e8",
+      "text": "All Input Is Validated"
+    },
+    {
+      "href": "8377689b-57ca-4b72-91a3-1a4b0f41f2e0",
+      "text": "Names of Uploaded Files Are Scrambled"
     }
   ]
 }

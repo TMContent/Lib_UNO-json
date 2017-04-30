@@ -1,0 +1,59 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "0",
+      "Content_Hash": "0"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "f989f376-08d1-4040-a0ce-159e97f586cc"
+        ],
+        "Library_Id": [
+          "be5273b1-d682-4361-99d9-6234f2d47eb7"
+        ],
+        "Title": [
+          "Ruby Drop Privileges"
+        ],
+        "Category": [
+          ""
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "Ruby"
+        ],
+        "Type": [
+          "Code Example"
+        ],
+        "DirectLink": [
+          ""
+        ],
+        "Tag": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "false",
+          "DataType": "markdown"
+        },
+        "Data": [
+          "## Applies To ##\r\n\r\n* Ruby\r\n\r\n\r\n## Solution Example ##\r\n\r\n~~~~\r\n#! /usr/bin/env ruby\r\n\r\nrequire 'etc'\r\nif not ARGV.length == 2\r\n\tputs \"Usage: #{$0} [username] [group name]\"\r\n\texit\r\nend\r\n\r\ndef drop_privileges(user, primary_group, extra_groups=nil)\r\n\tif not Process::Sys.geteuid == 0\r\n\t\treturn\r\n\tend\r\n\tuid = Etc.getpwnam(user).uid\r\n\tgid = Etc.getgrnam(primary_group).gid\r\n\t\r\n\tProcess.groups = [gid]\r\n\tif not extra_groups == nil\r\n\t\textra_groups do |gr|\r\n\t\t\tProcess.groups |= Etc.getgrnam(gr).gid\r\n\t\tend\r\n\tend\r\n\tProcess::Sys.setgid(gid)\r\n\tProcess::Sys.setuid(uid)\r\nend\r\n\r\nbegin\r\n\tdrop_privileges(ARGV[0], ARGV[1])\r\nrescue Errno::EPERM, Errno::EAGAIN => err\r\n\tputs \"Error: Unable to successfully drop privileges.\"\r\n\texit\r\nend\r\n\r\nuntil false\r\n\tputs \"Sleeping\"\r\n\tsleep 1\r\nend\r\n~~~~"
+        ]
+      }
+    ]
+  }
+}

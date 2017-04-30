@@ -15,17 +15,17 @@ What he finds is that some user applications are running a JAR file with a diffe
 </p><h2>Solution Example</h2><p>ACME updates their policies on the storage and communication of source code. In addition, ACME implements a signing and verification process for all JAR files. It requires that, at run time, all JAR files are tested for valid signatures. The development team creates a class to automate this process:
 </p><pre>public class JarVerifier {
 public void load(String _jar) {
-  List&lt;JarEntry&gt; table = new ArrayList&lt;JarEntry&gt;();	
+  List&lt;jarentry&gt; table = new ArrayList&lt;jarentry&gt;();	
   try {
     JarFile jar = new JarFile(new File(ROOT_DIR + "/" + _jar));
     InputStream is = jar.getInputStream(jar.getEntry("META-INF/MANIFEST.MF"));
     Manifest man = new Manifest(is);	
     is.close();
-    Set&lt;Map.Entry&lt;String, Attributes&gt;&gt; manifestEntries =man.getEntries().entrySet();
-    For (Map.Entry&lt;String, Attributes&gt; entry: manifestEntries) {		
+    Set&lt;map.entry&lt;string, attributes=""&gt;&amp;gt; manifestEntries =man.getEntries().entrySet();
+    For (Map.Entry&lt;string, attributes=""&gt; entry: manifestEntries) {		
       for (Object key: entry.getValue().keySet()) {
         String digest = entry.getValue().getValue(key.toString());
-        if (digest.length()&lt;1) {
+        if (digest.length()&amp;lt;1) {
           throw new SecurityException ("Jar not fully signed");
         }
         table.add(new JarEntry(key, entry.getValue().getValue(key.toString())));
@@ -53,4 +53,5 @@ class JarEntry {
 }
 </pre><p>
 This class loads a JAR file into an input stream and inserts each key–value pair from the manifest into a list. After completing the file, the method checks to see if no key values were found or if they did not match the number expected. Unless each entry is found to have a signature, a <em>SecurityException</em> will be thrown. With signatures present in the JAR file, developers can match the actual digests to the expected values.
-</p>
+</p><p>
+&lt;/string,&gt;&lt;/map.entry&lt;string,&gt;&lt;/jarentry&gt;&lt;/jarentry&gt;</p>

@@ -3,6 +3,7 @@
   "checksum": "47ad7a89619902c1b56e4fa85c4797f9",
   "words": {
     "0": [
+      "pre",
       "pre"
     ],
     "1": [
@@ -135,6 +136,7 @@
     "aspnet": [
       "ul",
       "li",
+      "p",
       "p",
       "p",
       "p"
@@ -413,6 +415,7 @@
       "p",
       "p",
       "p",
+      "pre",
       "pre",
       "p",
       "p",
@@ -930,9 +933,6 @@
       "p",
       "p"
     ],
-    "aspnet:": [
-      "p"
-    ],
     "step": [
       "ul",
       "ul",
@@ -1172,6 +1172,7 @@
       "p",
       "p",
       "p",
+      "pre",
       "p",
       "p"
     ],
@@ -1331,6 +1332,8 @@
     ],
     "page": [
       "p",
+      "ol",
+      "li",
       "i",
       "ol",
       "li"
@@ -1758,6 +1761,7 @@
       "pre",
       "p",
       "pre",
+      "pre",
       "ol",
       "li",
       "ol",
@@ -1780,7 +1784,7 @@
       "pre",
       "b"
     ],
-    "\"/public/user_files/\"": [
+    "/public/user_files/": [
       "pre",
       "pre"
     ],
@@ -1788,10 +1792,13 @@
       "pre",
       "pre"
     ],
-    "serverurldecode(request.querystring[\"filename\"]);\r\nstreamreader": [
+    "serverurldecoderequestquerystringfilename": [
+      "pre",
+      "pre",
       "pre"
     ],
     "streamreader": [
+      "pre",
       "pre",
       "pre",
       "pre"
@@ -1801,17 +1808,39 @@
       "pre",
       "pre"
     ],
-    "streamreaderfilename);\r\nwhile": [
-      "pre"
-    ],
-    "streamreader.peek()": [
+    "streamreaderfilename": [
       "pre",
       "pre"
     ],
-    "0\r\n{": [
+    "while": [
+      "pre",
+      "pre",
+      "p",
+      "p",
+      "p"
+    ],
+    "streamreaderpeek": [
+      "pre",
       "pre"
     ],
-    "responsewrite(streamreader.readline());\r\n}\r\nstreamreader.close();": [
+    "{": [
+      "pre",
+      "pre",
+      "pre",
+      "pre"
+    ],
+    "responsewritestreamreaderreadline": [
+      "pre",
+      "pre"
+    ],
+    "}": [
+      "pre",
+      "pre",
+      "pre",
+      "pre"
+    ],
+    "streamreaderclose": [
+      "pre",
       "pre"
     ],
     "provides": [
@@ -1833,16 +1862,14 @@
       "li",
       "li"
     ],
-    "filetxt,": [
-      "p"
+    "filetxt": [
+      "p",
+      "i"
     ],
     "returns": [
       "p"
     ],
-    "filetxt": [
-      "i"
-    ],
-    "http//example.com.pe/example.aspx?filename=file.txt": [
+    "http//examplecompe/exampleaspx?filename=filetxt": [
       "p",
       "font"
     ],
@@ -1855,7 +1882,7 @@
     "hoping": [
       "p"
     ],
-    "http//example.com.pe/example.aspx?filename=../../private/secret.txt": [
+    "http//examplecompe/exampleaspx?filename=//private/secrettxt": [
       "p",
       "font"
     ],
@@ -1892,7 +1919,7 @@
     "display": [
       "p"
     ],
-    "secrettxt.": [
+    "secrettxt": [
       "p",
       "i"
     ],
@@ -2010,7 +2037,7 @@
       "p",
       "p"
     ],
-    "“./”": [
+    "“/”": [
       "p",
       "p"
     ],
@@ -2161,49 +2188,22 @@
     "validfilename": [
       "pre"
     ],
-    "regex\"^[a": [
+    "regex^a": [
       "pre"
     ],
     "za": [
       "pre"
     ],
-    "z]{4,8}\\.txt$\");\r\nstring": [
+    "z{48}\\txt$": [
       "pre"
     ],
-    "serverurldecode(request.querystring[\"filename\"]);\r\nif": [
+    "!validfilenameismatchinput": [
       "pre"
     ],
-    "!validfilename.ismatch(input))\r\n{": [
+    "responsewriteinvalid": [
       "pre"
     ],
-    "responsewrite(\"invalid": [
-      "pre"
-    ],
-    "input\";\r\n}\r\nelse\r\n{": [
-      "pre"
-    ],
-    "serverurldecode(request.querystring[\"filename\"]);": [
-      "pre"
-    ],
-    "streamreaderfilename);": [
-      "pre"
-    ],
-    "while": [
-      "pre",
-      "p",
-      "p",
-      "p"
-    ],
-    "{": [
-      "pre"
-    ],
-    "responsewrite(streamreader.readline());": [
-      "pre"
-    ],
-    "}": [
-      "pre"
-    ],
-    "streamreaderclose();\r\n}": [
+    "else": [
       "pre"
     ],
     "consist": [
@@ -2240,8 +2240,9 @@
     "extension": [
       "p"
     ],
-    "“txt”.": [
-      "p"
+    "“txt”": [
+      "p",
+      "i"
     ],
     "results": [
       "p",
@@ -2263,9 +2264,6 @@
       "p",
       "p",
       "p"
-    ],
-    "“txt”": [
-      "i"
     ],
     "now": [
       "p"
@@ -2334,7 +2332,7 @@
       "ol",
       "li"
     ],
-    "http//example.com.pe/example.asp?page=index.html.": [
+    "http//examplecompe/exampleasp?page=indexhtml": [
       "ol",
       "li",
       "i"
@@ -2342,10 +2340,6 @@
     "locate": [
       "ol",
       "li",
-      "ol",
-      "li"
-    ],
-    "page.": [
       "ol",
       "li"
     ],
@@ -2359,9 +2353,10 @@
       "li",
       "em"
     ],
-    "http//example.com.pe/example.asp?page=../../../boot.ini.": [
+    "http//examplecompe/exampleasp?page=///bootini": [
       "ol",
-      "li"
+      "li",
+      "i"
     ],
     "submit": [
       "ol",
@@ -2374,9 +2369,6 @@
       "li",
       "ol",
       "li"
-    ],
-    "http//example.com.pe/example.asp?page=../../../boot.ini": [
-      "i"
     ],
     "give": [
       "p"
@@ -2480,7 +2472,8 @@
     "following": [
       "p"
     ],
-    "dots,": [
+    "dots": [
+      "p",
       "p"
     ],
     "slashes": [
@@ -2517,7 +2510,7 @@
     "number": [
       "p"
     ],
-    "“.\\”": [
+    "“\\”": [
       "p"
     ],
     "clauses": [
@@ -2532,7 +2525,40 @@
     "realize": [
       "p"
     ],
-    "./etc/passwd\r\n..\\boot.ini\r\n../boot.ini\r\nfolder_name/file_name\r\n..\\..\\folder_name\\file_name\r\n../../folder_name/file_name\r\nc:\\boot.ini\r\n%2e%2e\\%2e%2e\\\r\n..%2f..%2f\r\n%2e%2e%2f%2e%2e%2ffolder_name%2ffile_name\r\n..%2f..%2ffolder_name%2ffile_name\r\n..%c0%af..%c0%affolder_name..%c0%affile_name": [
+    "/etc/passwd": [
+      "pre"
+    ],
+    "\\bootini": [
+      "pre"
+    ],
+    "/bootini": [
+      "pre"
+    ],
+    "folder_name/file_name": [
+      "pre"
+    ],
+    "\\\\folder_name\\file_name": [
+      "pre"
+    ],
+    "//folder_name/file_name": [
+      "pre"
+    ],
+    "c\\bootini": [
+      "pre"
+    ],
+    "%2e%2e\\%2e%2e\\": [
+      "pre"
+    ],
+    "%2f%2f": [
+      "pre"
+    ],
+    "%2e%2e%2f%2e%2e%2ffolder_name%2ffile_name": [
+      "pre"
+    ],
+    "%2f%2ffolder_name%2ffile_name": [
+      "pre"
+    ],
+    "%c0%af%c0%affolder_name%c0%affile_name": [
       "pre"
     ],
     "table": [
@@ -2660,7 +2686,7 @@
     "sign": [
       "p"
     ],
-    "%)": [
+    "%": [
       "p"
     ],
     "encoded": [
@@ -2674,7 +2700,7 @@
     "equivalent": [
       "p"
     ],
-    "%25).": [
+    "%25": [
       "p"
     ],
     "translating": [
@@ -2686,7 +2712,7 @@
     "one": [
       "p"
     ],
-    "./../": [
+    "//": [
       "p",
       "font"
     ],
@@ -2694,7 +2720,7 @@
       "p",
       "font"
     ],
-    "encoding..%2f..%2f": [
+    "encoding%2f%2f": [
       "p",
       "font"
     ],
@@ -2702,7 +2728,7 @@
       "p",
       "font"
     ],
-    "encoding..%252f..%252f": [
+    "encoding%252f%252f": [
       "p",
       "font"
     ],
@@ -2747,7 +2773,7 @@
     "frameworks": [
       "p"
     ],
-    "flash/flex,": [
+    "flash/flex": [
       "p"
     ],
     "third": [
@@ -2788,9 +2814,6 @@
       "p"
     ],
     "manipulating": [
-      "p"
-    ],
-    "dots": [
       "p"
     ],
     "processed": [

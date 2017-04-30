@@ -64,6 +64,7 @@
       "p",
       "p",
       "ol",
+      "ol",
       "li",
       "li",
       "strong",
@@ -110,6 +111,7 @@
       "p",
       "p",
       "p",
+      "ol",
       "ol",
       "ol",
       "ol",
@@ -309,6 +311,8 @@
     ],
     "files": [
       "p",
+      "ol",
+      "ol",
       "ol",
       "ol",
       "ol",
@@ -588,8 +592,10 @@
       "ol",
       "li"
     ],
-    "files\navoid": [
-      "ol"
+    "avoid": [
+      "ol",
+      "li",
+      "strong"
     ],
     "examine": [
       "ol",
@@ -685,8 +691,12 @@
       "ol",
       "li"
     ],
-    "data\nadd": [
-      "ol"
+    "add": [
+      "ol",
+      "ol",
+      "li",
+      "strong",
+      "li"
     ],
     "validation": [
       "ol",
@@ -780,17 +790,8 @@
       "ol",
       "li"
     ],
-    "files\nvalidate": [
-      "ol"
-    ],
     "go": [
       "ol",
-      "li"
-    ],
-    "add": [
-      "ol",
-      "li",
-      "strong",
       "li"
     ],
     "calls": [
@@ -808,10 +809,6 @@
     "appropriate": [
       "ol",
       "li"
-    ],
-    "avoid": [
-      "li",
-      "strong"
     ]
   },
   "tags": {},

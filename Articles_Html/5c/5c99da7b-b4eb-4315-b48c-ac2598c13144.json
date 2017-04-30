@@ -26,6 +26,10 @@
       "li",
       "h1"
     ],
+    "8": [
+      "pre",
+      "pre"
+    ],
     "applies": [
       "h1",
       "p"
@@ -499,6 +503,9 @@
       "li",
       "li",
       "ol",
+      "ol",
+      "li",
+      "ol",
       "li",
       "li",
       "ul",
@@ -532,6 +539,8 @@
       "ol",
       "ol",
       "li",
+      "li",
+      "ol",
       "li",
       "ol",
       "li",
@@ -785,6 +794,9 @@
       "p",
       "ol",
       "li",
+      "ol",
+      "li",
+      "ol",
       "li",
       "p",
       "p"
@@ -1013,11 +1025,17 @@
     "common": [
       "p"
     ],
-    "xss)": [
+    "xss": [
       "ul",
       "li",
+      "p",
       "h2",
-      "em"
+      "em",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p"
     ],
     "scenario": [
       "h2",
@@ -1053,7 +1071,7 @@
     "document": [
       "p"
     ],
-    "http//victim/documents/getdocs.jsp?docname=../../secret.pdf": [
+    "http//victim/documents/getdocsjsp?docname=//secretpdf": [
       "pre"
     ],
     "however": [
@@ -1077,6 +1095,8 @@
     ],
     "filename": [
       "p",
+      "pre",
+      "pre",
       "pre",
       "pre"
     ],
@@ -1120,7 +1140,7 @@
     "slash": [
       "p"
     ],
-    "./": [
+    "/": [
       "p",
       "em",
       "p",
@@ -1182,7 +1202,7 @@
       "p",
       "em"
     ],
-    "respectively:": [
+    "respectively": [
       "p"
     ],
     "%2e%2e%2f%2e%2e%2fprivate/secretpdf": [
@@ -1219,9 +1239,13 @@
       "p",
       "p",
       "p",
+      "pre",
+      "pre",
       "p",
       "p",
       "p",
+      "pre",
+      "pre",
       "pre",
       "ol",
       "ol",
@@ -1250,20 +1274,16 @@
     "re": [
       "p"
     ],
-    "%)": [
-      "p"
+    "%": [
+      "p",
+      "em"
     ],
     "its": [
       "p",
       "p"
     ],
-    "%25):": [
-      "p"
-    ],
-    "%": [
-      "em"
-    ],
     "%25": [
+      "p",
       "em"
     ],
     "%252e%252e%252f%252e%252e%252fprivate/secretpdf": [
@@ -1311,7 +1331,7 @@
       "p",
       "p"
     ],
-    "script>alert('xss')</script>": [
+    "scriptalert'xss'/script": [
       "pre",
       "table",
       "tbody",
@@ -1321,6 +1341,7 @@
     "if": [
       "p",
       "p",
+      "pre",
       "pre",
       "ol",
       "li",
@@ -1350,7 +1371,7 @@
     "time": [
       "p"
     ],
-    "%3cscript%3ealert'xss')%3c%2fscript%3e": [
+    "%3cscript%3ealert'xss'%3c%2fscript%3e": [
       "pre",
       "table",
       "tbody",
@@ -1414,7 +1435,7 @@
     "tries": [
       "p"
     ],
-    "%253cscript%253ealert'xss')%253c%252fscript%253e": [
+    "%253cscript%253ealert'xss'%253c%252fscript%253e": [
       "pre",
       "table",
       "tbody",
@@ -1446,14 +1467,6 @@
       "p"
     ],
     "original": [
-      "p"
-    ],
-    "xss": [
-      "p",
-      "ol",
-      "ol",
-      "li",
-      "li",
       "p"
     ],
     "what": [
@@ -1500,6 +1513,7 @@
       "p",
       "p",
       "p",
+      "pre",
       "p",
       "p",
       "p",
@@ -1538,7 +1552,7 @@
     "blacklisted": [
       "p"
     ],
-    "“./”,": [
+    "“/”": [
       "p"
     ],
     "allow": [
@@ -1578,13 +1592,18 @@
       "p",
       "i"
     ],
-    "existsinblacklist(request.getparameter(\"filename\")": [
+    "existsinblacklistrequestgetparameterfilename": [
       "pre"
     ],
     "==": [
       "pre"
     ],
-    "false)\r\n{\r\nstring": [
+    "false": [
+      "pre"
+    ],
+    "{": [
+      "pre",
+      "pre",
       "pre"
     ],
     "=": [
@@ -1600,7 +1619,9 @@
       "pre",
       "pre"
     ],
-    "string);\r\nurldecoder": [
+    "urldecoder": [
+      "pre",
+      "pre",
       "pre",
       "pre"
     ],
@@ -1608,19 +1629,12 @@
       "pre",
       "pre"
     ],
-    "urldecoder);\r\nfilename": [
+    "decoderdecoderequestgetparameterfilenametostring": [
       "pre",
       "pre"
     ],
-    "decoderdecode(request.getparameter(\"filename\").tostring(),": [
+    "utf": [
       "pre",
-      "pre"
-    ],
-    "\"utf": [
-      "pre",
-      "pre"
-    ],
-    "8\";\r\n\r\nfile": [
       "pre"
     ],
     "file": [
@@ -1628,10 +1642,16 @@
       "pre",
       "pre",
       "pre",
+      "pre",
+      "pre",
       "ol",
       "li"
     ],
-    "filefilename);\r\n/*": [
+    "filefilename": [
+      "pre",
+      "pre"
+    ],
+    "/*": [
       "pre",
       "pre"
     ],
@@ -1643,7 +1663,13 @@
       "pre",
       "pre"
     ],
-    "*/\r}": [
+    "*/": [
+      "pre",
+      "pre"
+    ],
+    "}": [
+      "pre",
+      "pre",
       "pre"
     ],
     "include": [
@@ -1907,40 +1933,43 @@
     "message": [
       "p"
     ],
-    "8\";\r\n\r\nstring": [
-      "pre"
-    ],
     "safeconstruct": [
       "pre"
     ],
-    "\"^a": [
+    "^a": [
       "pre"
     ],
     "za": [
       "pre"
     ],
-    "z]{5,8}.pdf$\";\r\npattern": [
+    "z{58}pdf$": [
+      "pre"
+    ],
+    "pattern": [
       "pre"
     ],
     "regexpattern": [
       "pre"
     ],
-    "patterncompile(safeconstruct);\r\nmatcher": [
+    "patterncompilesafeconstruct": [
+      "pre"
+    ],
+    "matcher": [
       "pre"
     ],
     "regexmatcher": [
       "pre"
     ],
-    "regexpatternmatcher(filename);\r\n\r\nif": [
+    "regexpatternmatcherfilename": [
       "pre"
     ],
-    "!regexmatcher.find())\r\n{\r\nout.println(\"invalid": [
+    "!regexmatcherfind": [
       "pre"
     ],
-    "input\";\r\n}\r\nelse\r\n{\r\nfile": [
+    "outprintlninvalid": [
       "pre"
     ],
-    "*/\r...\r\n}": [
+    "else": [
       "pre"
     ],
     "then": [
@@ -2097,7 +2126,7 @@
       "td",
       "b"
     ],
-    "./../..": [
+    "//": [
       "table",
       "table",
       "tbody",
@@ -2107,13 +2136,13 @@
       "tr",
       "td"
     ],
-    ".%2f..%2f..": [
+    "%2f%2f": [
       "table",
       "tbody",
       "tr",
       "td"
     ],
-    ".%252f..%252f..": [
+    "%252f%252f": [
       "table",
       "tbody",
       "tr",
@@ -2152,6 +2181,8 @@
       "ol",
       "li",
       "ol",
+      "li",
+      "ol",
       "li"
     ],
     "from": [
@@ -2179,6 +2210,9 @@
     "forms": [
       "ol",
       "li",
+      "ol",
+      "li",
+      "ol",
       "li"
     ],
     "b": [
@@ -2252,13 +2286,13 @@
     "scripts": [
       "p"
     ],
-    "\"'><img": [
+    "'img": [
       "table",
       "tbody",
       "tr",
       "td"
     ],
-    "src='javascriptalert('xss');\">": [
+    "src='javascriptalert'xss'": [
       "table",
       "tbody",
       "tr",
@@ -2276,19 +2310,11 @@
       "tr",
       "td"
     ],
-    "is\rreflected": [
+    "guis": [
+      "ol",
+      "li",
       "ol",
       "li"
-    ],
-    "forms\r\nurl": [
-      "ol",
-      "li",
-      "ol"
-    ],
-    "parameters\rguis": [
-      "ol",
-      "li",
-      "ol"
     ],
     "processed": [
       "ol",
@@ -2296,9 +2322,6 @@
     ],
     "statement": [
       "ol",
-      "li"
-    ],
-    "guis": [
       "li"
     ],
     "statements": [

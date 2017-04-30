@@ -326,6 +326,7 @@
     ],
     "cost": [
       "p",
+      "ul",
       "li"
     ],
     "benefits": [
@@ -376,8 +377,9 @@
       "ul",
       "li"
     ],
-    "costrequired": [
-      "ul"
+    "required": [
+      "ul",
+      "li"
     ],
     "load": [
       "ul",
@@ -420,8 +422,27 @@
       "p",
       "strong"
     ],
-    "metricssystem": [
-      "ul"
+    "metrics": [
+      "ul",
+      "li",
+      "ol",
+      "li",
+      "p",
+      "p",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "p",
+      "strong",
+      "li",
+      "p",
+      "li",
+      "p"
+    ],
+    "system": [
+      "ul",
+      "li"
     ],
     "wide": [
       "ul",
@@ -467,29 +488,6 @@
     ],
     "characteristics": [
       "ul",
-      "li"
-    ],
-    "required": [
-      "li"
-    ],
-    "metrics": [
-      "li",
-      "ol",
-      "li",
-      "p",
-      "p",
-      "ol",
-      "ol",
-      "ol",
-      "li",
-      "p",
-      "strong",
-      "li",
-      "p",
-      "li",
-      "p"
-    ],
-    "system": [
       "li"
     ],
     "how": [
@@ -592,8 +590,26 @@
       "li",
       "p"
     ],
-    "responsibility\n\n\naccess": [
-      "ol"
+    "responsibility": [
+      "ol",
+      "li",
+      "p"
+    ],
+    "access": [
+      "ol",
+      "ol",
+      "li",
+      "p",
+      "strong",
+      "li",
+      "p",
+      "ol",
+      "ol",
+      "li",
+      "p",
+      "strong",
+      "li",
+      "p"
     ],
     "console": [
       "ol",
@@ -739,8 +755,35 @@
       "p",
       "p"
     ],
-    "necessary\n\n\nview": [
-      "ol"
+    "necessary": [
+      "ol",
+      "ol",
+      "li",
+      "p",
+      "li",
+      "p",
+      "ol",
+      "ol",
+      "li",
+      "p",
+      "li",
+      "p"
+    ],
+    "view": [
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
+      "p",
+      "strong",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
+      "p",
+      "strong"
     ],
     "graphs": [
       "ol",
@@ -751,33 +794,6 @@
       "li",
       "p",
       "strong"
-    ],
-    "necessary": [
-      "ol",
-      "li",
-      "p",
-      "li",
-      "p",
-      "ol",
-      "li",
-      "p",
-      "li",
-      "p"
-    ],
-    "access": [
-      "ol",
-      "li",
-      "p",
-      "strong",
-      "li",
-      "p",
-      "ol",
-      "ol",
-      "li",
-      "p",
-      "strong",
-      "li",
-      "p"
     ],
     "by": [
       "ol",
@@ -831,6 +847,10 @@
       "ol",
       "ol",
       "ol",
+      "ol",
+      "li",
+      "p",
+      "code",
       "li",
       "p",
       "code",
@@ -849,20 +869,6 @@
       "ol",
       "li",
       "p"
-    ],
-    "view": [
-      "ol",
-      "li",
-      "li",
-      "p",
-      "p",
-      "strong",
-      "ol",
-      "li",
-      "li",
-      "p",
-      "p",
-      "strong"
     ],
     "a": [
       "ol",
@@ -1018,10 +1024,6 @@
       "li",
       "p"
     ],
-    "responsibility": [
-      "li",
-      "p"
-    ],
     "fix": [
       "h2"
     ],
@@ -1040,8 +1042,11 @@
     "publishing": [
       "p"
     ],
-    "necessary\n\n\nset": [
-      "ol"
+    "set": [
+      "ol",
+      "li",
+      "p",
+      "strong"
     ],
     "up": [
       "ol",
@@ -1099,8 +1104,17 @@
       "p",
       "p"
     ],
-    "cli)": [
+    "cli": [
       "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "li",
+      "p",
+      "p",
+      "p",
       "li",
       "p"
     ],
@@ -1121,17 +1135,6 @@
       "li",
       "p",
       "code"
-    ],
-    "cli": [
-      "ol",
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "p",
-      "p",
-      "li",
-      "p"
     ],
     "installing": [
       "ol",
@@ -1181,8 +1184,16 @@
       "li",
       "p"
     ],
-    "tools\n\n\ndefine": [
-      "ol"
+    "tools": [
+      "ol",
+      "li",
+      "p"
+    ],
+    "define": [
+      "ol",
+      "li",
+      "p",
+      "strong"
     ],
     "data": [
       "ol",
@@ -1225,6 +1236,7 @@
       "p"
     ],
     "namespace": [
+      "ol",
       "ol",
       "ol",
       "li",
@@ -1292,6 +1304,7 @@
     "points": [
       "ol",
       "ol",
+      "ol",
       "li",
       "p",
       "li",
@@ -1310,8 +1323,14 @@
       "p",
       "code"
     ],
-    "namespace\n\n\nadd": [
-      "ol"
+    "add": [
+      "ol",
+      "ol",
+      "li",
+      "p",
+      "strong",
+      "li",
+      "p"
     ],
     "publish": [
       "ol",
@@ -1354,8 +1373,15 @@
       "li",
       "p"
     ],
-    "points\n\n\nget": [
-      "ol"
+    "get": [
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
+      "p",
+      "strong",
+      "code"
     ],
     "statistics": [
       "ol",
@@ -1391,23 +1417,6 @@
       "li",
       "li",
       "p",
-      "p"
-    ],
-    "get": [
-      "ol",
-      "li",
-      "li",
-      "p",
-      "p",
-      "strong",
-      "code"
-    ],
-    "add": [
-      "ol",
-      "li",
-      "p",
-      "strong",
-      "li",
       "p"
     ],
     "switches": [
@@ -1492,32 +1501,23 @@
       "p",
       "code"
     ],
-    "\"datapoints\"": [
+    "datapoints": [
       "ol",
       "li",
       "p",
       "code"
     ],
-    "],": [
+    "label": [
       "ol",
       "li",
       "p",
       "code"
     ],
-    "\"label\"": [
+    "}": [
       "ol",
       "li",
       "p",
       "code"
-    ],
-    "\"requestlatency\"": [
-      "ol",
-      "li",
-      "p",
-      "code"
-    ],
-    "}\n\nview": [
-      "ol"
     ],
     "create": [
       "ol",
@@ -1538,25 +1538,6 @@
       "ol",
       "li",
       "p"
-    ],
-    "set": [
-      "li",
-      "p",
-      "strong"
-    ],
-    "tools": [
-      "li",
-      "p"
-    ],
-    "define": [
-      "li",
-      "p",
-      "strong"
-    ],
-    "}": [
-      "li",
-      "p",
-      "code"
     ]
   },
   "tags": {},

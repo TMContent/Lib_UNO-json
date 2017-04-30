@@ -47,8 +47,12 @@
       "p",
       "title"
     ],
-    "\"jail\"": [
-      "p"
+    "jail": [
+      "p",
+      "p",
+      "p",
+      "ul",
+      "li"
     ],
     "or": [
       "p",
@@ -103,6 +107,7 @@
       "p"
     ],
     "and": [
+      "p",
       "p",
       "p",
       "p",
@@ -166,7 +171,9 @@
       "p"
     ],
     "directory": [
-      "p"
+      "p",
+      "ul",
+      "li"
     ],
     "commands": [
       "p"
@@ -204,18 +211,13 @@
       "ul",
       "li"
     ],
-    "jail": [
-      "p",
-      "p",
-      "ul",
-      "li"
-    ],
     "apparmor": [
       "p",
       "em"
     ],
-    "and\rselinux.": [
-      "p"
+    "selinux": [
+      "p",
+      "em"
     ],
     "general": [
       "p"
@@ -240,12 +242,16 @@
     "example": [
       "p"
     ],
-    "javaio.filepermission": [
+    "javaiofilepermission": [
       "p",
       "em"
     ],
-    "java\rsecuritymanager": [
+    "java": [
       "p"
+    ],
+    "securitymanager": [
+      "p",
+      "em"
     ],
     "allows": [
       "p"
@@ -269,12 +275,6 @@
     ],
     "operations": [
       "p"
-    ],
-    "selinux": [
-      "em"
-    ],
-    "securitymanager": [
-      "em"
     ],
     "not": [
       "p"
@@ -329,7 +329,9 @@
       "p"
     ],
     "cwe": [
-      "p"
+      "p",
+      "ul",
+      "li"
     ],
     "other": [
       "p"
@@ -431,10 +433,6 @@
       "ul",
       "li"
     ],
-    "\"cwe": [
-      "ul",
-      "li"
-    ],
     "creation": [
       "ul",
       "li"
@@ -451,19 +449,17 @@
       "ul",
       "li"
     ],
-    "directory\"": [
-      "ul",
-      "li"
-    ],
     "please": [
       "ul",
       "li"
     ],
-    "see\rhttp://cwe.mitre.org/data/definitions/243.html": [
+    "see": [
       "ul",
       "li"
     ],
-    "http//cwe.mitre.org/data/definitions/243.html": [
+    "http//cwemitreorg/data/definitions/243html": [
+      "ul",
+      "li",
       "a"
     ],
     "use": [

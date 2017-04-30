@@ -1,7 +1,3 @@
-<h2>Applies To</h2>
-<ul>
-<li>Java applications that use SQL databases</li>
-</ul>
 <h2>What to Check For</h2>
 <p>Ensure that all input passed to the database is validated.</p>
 <h2>Why</h2>
@@ -54,59 +50,3 @@
 <p><strong>Use type safe SQL parameters in queries.</strong> Stored procedures with type-safe parameters and parameterized queries, such as prepared statements, are a strong defense against SQL injection attacks.</p>
 </li>
 </ol>
-<h2>Problem Example</h2>
-<p>The following code allows the user to query a database. Unfortunately, the application fails to validate the user's input and does not use parameterized APIs for data access. The result is that an attacker can access the backend database on behalf of the application through the use of SQL injection.</p>
-<pre><code>public void doGet(HttpServletRequest request,
-     HttpServletResponse response) throws ServletException, IOException{
-     PrintWriter out = response.getWriter();
-     String query = request.getParameter(&quot;query&quot;);
-     String retData = &quot;&quot;;
-
-     // The application fails to validate the user-supplied
-     // query before submitting it to the database server
-     retData = queryDB(query);
-
-     ...
-
-     out.flush();
-     out.close();
-}
-</code></pre>
-<h2>Solution Example</h2>
-<p>The following code allows the user to query a database. Because the application validates the user's input, it is much more difficult for an attacker to access the backend database through a SQL injection attack. Data validation is only one layer in a defense-in-depth paradigm; make sure to use parameterized APIs for data access as well.</p>
-<pre><code>public void doGet(HttpServletRequest request,
-     HttpServletResponse response) throws ServletException, IOException{
-     PrintWriter out = response.getWriter();
-     String query = request.getParameter(&quot;query&quot;);
-     String retData = &quot;&quot;;
-
-     // The application validates the user-supplied query
-     // before submitting it to the database server
-     if (validateQuery(query))
-     {
-          retData = queryDB(query);
-
-          ...
-
-     }
-
-     out.flush();
-     out.close();
-}
-
-
-public boolean validateQuery(String input){
-
-      // The input can be only numbers
-      String goodPattern = &quot;[0-9]++&quot;;
-
-      Pattern p = Pattern.compile(goodPattern);
-      Matcher m = p.matcher(input);
-
-      if(!m.matches())
-      {
-            return false;
-      }
-
-      return true;
-}</code></pre>

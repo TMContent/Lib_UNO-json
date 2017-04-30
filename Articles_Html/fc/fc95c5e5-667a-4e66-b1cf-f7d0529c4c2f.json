@@ -30,6 +30,13 @@
       "li",
       "h1"
     ],
+    "8": [
+      "pre"
+    ],
+    "9": [
+      "pre",
+      "pre"
+    ],
     "401": [
       "pre"
     ],
@@ -713,7 +720,9 @@
     "format": [
       "p",
       "p",
+      "pre",
       "p",
+      "pre",
       "p"
     ],
     "of": [
@@ -888,6 +897,7 @@
       "p",
       "p",
       "p",
+      "pre",
       "ol",
       "li",
       "h2",
@@ -1633,6 +1643,7 @@
       "p",
       "p",
       "pre",
+      "pre",
       "p",
       "pre",
       "pre",
@@ -1738,7 +1749,8 @@
       "p"
     ],
     "string": [
-      "p"
+      "p",
+      "pre"
     ],
     "enables": [
       "ol",
@@ -1748,8 +1760,12 @@
       "ol",
       "li"
     ],
-    "allowed)": [
+    "allowed": [
       "ol",
+      "li",
+      "ol",
+      "ol",
+      "li",
       "li"
     ],
     "since": [
@@ -1761,6 +1777,7 @@
       "li",
       "p",
       "p",
+      "pre",
       "p",
       "ol",
       "li"
@@ -1880,22 +1897,25 @@
       "p",
       "p"
     ],
-    "validateform)to": [
+    "validateformto": [
       "p"
     ],
-    "validateform)": [
+    "validateform": [
       "strong"
     ],
     "%@page": [
       "pre"
     ],
-    "contenttype=\"text/html\"": [
+    "contenttype=text/html": [
       "pre"
     ],
-    "pageencoding=\"utf": [
+    "pageencoding=utf": [
       "pre"
     ],
-    "8\"%\r\n<!doctype": [
+    "8%": [
+      "pre"
+    ],
+    "!doctype": [
       "pre"
     ],
     "html": [
@@ -1905,34 +1925,44 @@
     "public": [
       "pre"
     ],
-    "\"": [
+    "": [
       "pre"
     ],
     "//w3c//dtd": [
       "pre"
     ],
-    "transitional//en\"\r\"http://www.w3.org/tr/html4/loose.dtd\">\r\n<html><head><meta": [
+    "transitional//en": [
       "pre"
     ],
-    "equiv=\"content": [
+    "http//wwww3org/tr/html4/loosedtd": [
       "pre"
     ],
-    "type\"": [
+    "htmlheadmeta": [
       "pre"
     ],
-    "content=\"text/html": [
+    "equiv=content": [
+      "pre"
+    ],
+    "type": [
+      "pre"
+    ],
+    "content=text/html": [
       "pre"
     ],
     "charset=utf": [
       "pre"
     ],
-    "8\"<title>java": [
+    "8titlejava": [
       "pre"
     ],
-    "search/title><script>function": [
+    "search/titlescriptfunction": [
       "pre"
     ],
-    "validateformemailstr){\t//": [
+    "validateformemailstr{": [
+      "pre"
+    ],
+    "//": [
+      "pre",
       "pre"
     ],
     "e": [
@@ -1941,7 +1971,8 @@
     "mail": [
       "pre"
     ],
-    "valid\tvar": [
+    "var": [
+      "pre",
       "pre"
     ],
     "emailpat": [
@@ -1956,7 +1987,7 @@
       "pre",
       "pre"
     ],
-    "\"^a": [
+    "^a": [
       "pre"
     ],
     "za": [
@@ -1973,30 +2004,26 @@
       "pre",
       "pre"
     ],
-    "9._%+": [
+    "9_%+": [
       "pre",
       "pre"
     ],
-    "]+@[a": [
+    "+@a": [
       "pre",
       "pre"
     ],
-    "9.": [
+    "+\\\\a": [
       "pre",
       "pre"
     ],
-    "]+\\\\.[a": [
-      "pre",
-      "pre"
-    ],
-    "z]{2,4}$\";\tvar": [
+    "z{24}$": [
       "pre"
     ],
     "matcharray": [
       "pre",
       "pre"
     ],
-    "emailstrmatch(emailpat);\tif": [
+    "emailstrmatchemailpat": [
       "pre"
     ],
     "==": [
@@ -2005,80 +2032,99 @@
     "null": [
       "pre"
     ],
-    "{\t\talert\"incorrect": [
+    "{": [
+      "pre",
+      "pre",
+      "pre",
       "pre"
     ],
-    "format\";\t\treturn": [
-      "pre"
-    ],
-    "false\t}\tdocument.form1.action": [
-      "pre"
-    ],
-    "\"getprofile\"": [
-      "pre"
-    ],
-    "documentform1.method": [
-      "pre"
-    ],
-    "\"post\"": [
-      "pre"
-    ],
-    "docuemntform1.submit();": [
+    "alertincorrect": [
       "pre"
     ],
     "return": [
+      "pre",
+      "pre",
+      "pre",
+      "pre"
+    ],
+    "false": [
+      "pre",
+      "pre"
+    ],
+    "}": [
+      "pre",
+      "pre",
+      "pre",
+      "pre",
+      "pre"
+    ],
+    "documentform1action": [
+      "pre"
+    ],
+    "getprofile": [
+      "pre",
+      "p",
+      "em"
+    ],
+    "documentform1method": [
+      "pre"
+    ],
+    "post": [
+      "pre"
+    ],
+    "docuemntform1submit": [
       "pre"
     ],
     "true": [
       "pre",
       "pre"
     ],
-    "}/script>": [
+    "}/script": [
       "pre"
     ],
-    "body><form": [
+    "bodyform": [
       "pre"
     ],
-    "name=\"form1\"": [
+    "name=form1": [
       "pre"
     ],
-    "action=\"getprofile\"": [
+    "action=getprofile": [
       "pre"
     ],
-    "method=\"post\"onsubmit=\"return": [
+    "method=postonsubmit=return": [
       "pre"
     ],
-    "validateformthis.username.value);\">email": [
+    "validateformthisusernamevalueemail": [
       "pre"
     ],
-    "type=\"text\"": [
+    "type=text": [
       "pre"
     ],
-    "name=\"username\"": [
+    "name=username": [
       "pre"
     ],
-    "size=\"20\"<br/>password:": [
+    "size=20br/password": [
       "pre"
     ],
-    "type=\"password\"": [
+    "type=password": [
       "pre"
     ],
-    "name=\"password\"": [
+    "name=password": [
       "pre"
     ],
-    "size=\"20\"<br/><input": [
+    "size=20br/input": [
       "pre"
     ],
-    "type=\"submit\"": [
+    "type=submit": [
       "pre"
     ],
-    "value=\"submit\"</form></body></html>": [
+    "value=submit/form/body/html": [
       "pre"
     ],
-    "onsubmit=\"return": [
+    "onsubmit=return": [
       "strong"
     ],
-    "validateformthis.username.value);": [
+    "validateformthisusernamevalue": [
       "strong"
     ],
     "method": [
@@ -2086,10 +2132,6 @@
     ],
     "named": [
       "p"
-    ],
-    "getprofile": [
-      "p",
-      "em"
     ],
     "validating": [
       "p",
@@ -2191,19 +2233,13 @@
     "validateemailstring": [
       "pre"
     ],
-    "emailstr{\tstring": [
+    "emailstr{": [
       "pre"
     ],
-    "\"a": [
+    "z{24}": [
       "pre"
     ],
-    "z]{2,4}\";": [
-      "pre"
-    ],
-    "!emailstr.matches(emailpat))\t{\t\treturn": [
-      "pre"
-    ],
-    "false\t}\treturn": [
+    "!emailstrmatchesemailpat": [
       "pre"
     ],
     "}protected": [
@@ -2227,35 +2263,28 @@
     "servletexception": [
       "pre"
     ],
-    "ioexception{\tresponsesetcontenttype(\"text/html;charset=utf": [
+    "ioexception{": [
       "pre"
     ],
-    "8\");\tprintwriter": [
+    "responsesetcontenttypetext/htmlcharset=utf": [
+      "pre"
+    ],
+    "printwriter": [
       "pre"
     ],
     "out": [
       "pre"
     ],
-    "responsegetwriter();": [
+    "responsegetwriter": [
       "pre"
     ],
-    "!validateemail(request.getparameter(\"username\")))": [
+    "!validateemailrequestgetparameterusername": [
       "pre"
     ],
-    "{": [
-      "pre",
-      "pre"
-    ],
-    "outprintln(\"invalid": [
-      "pre"
-    ],
-    "format\";\t}": [
+    "outprintlninvalid": [
       "pre"
     ],
     "else": [
-      "pre"
-    ],
-    "//": [
       "pre"
     ],
     "continue": [
@@ -2265,11 +2294,9 @@
       "pre",
       "p"
     ],
-    "process..\t}": [
-      "pre"
-    ],
-    "}": [
-      "pre"
+    "process": [
+      "pre",
+      "p"
     ],
     "inside": [
       "p"
@@ -2291,9 +2318,6 @@
       "p"
     ],
     "stops": [
-      "p"
-    ],
-    "process": [
       "p"
     ],
     "not": [
@@ -2387,9 +2411,10 @@
       "ol",
       "li"
     ],
-    "http://portswigger.net/burp/).": [
+    "http//portswiggernet/burp/": [
       "ol",
-      "li"
+      "li",
+      "a"
     ],
     "tab": [
       "ol",
@@ -2422,12 +2447,6 @@
       "ol",
       "li"
     ],
-    "allowed": [
-      "ol",
-      "ol",
-      "li",
-      "li"
-    ],
     "values": [
       "ol",
       "ol",
@@ -2455,16 +2474,13 @@
       "ol",
       "li"
     ],
-    "below.": [
+    "below": [
       "ol",
       "li"
     ],
     "forward": [
       "ol",
       "li"
-    ],
-    "http//portswigger.net/burp/": [
-      "a"
     ],
     "reject": [
       "p"
@@ -2602,10 +2618,10 @@
     "under": [
       "p"
     ],
-    "traditional,": [
+    "traditional": [
       "p"
     ],
-    "etc.": [
+    "etc": [
       "p"
     ],
     "java": [

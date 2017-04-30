@@ -1,21 +1,29 @@
 {
   "id": "73c9c4be-a26e-4d66-8067-cea0862f086b",
-  "checksum": "0b90efa6844da3b988e44b2c6038cfe4",
+  "checksum": "1dfe8fa22a2a0a23fec98c438f9fdc60",
   "words": {
     "1": [
-      "ul",
-      "li"
+      "pre",
+      "code",
+      "p",
+      "pre",
+      "code"
+    ],
+    "5": [
+      "pre",
+      "code",
+      "pre",
+      "code"
     ],
     "applies": [
-      "h1"
+      "h2"
     ],
     "to": [
-      "h1",
-      "h1",
+      "h2",
+      "h2",
       "p",
       "p",
-      "ul",
-      "li",
+      "p",
       "p",
       "p"
     ],
@@ -24,10 +32,10 @@
       "li"
     ],
     "what": [
-      "h1"
+      "h2"
     ],
     "do": [
-      "h1"
+      "h2"
     ],
     "write": [
       "p",
@@ -42,8 +50,7 @@
       "p",
       "p",
       "p",
-      "ul",
-      "li",
+      "p",
       "p"
     ],
     "in": [
@@ -91,8 +98,7 @@
     "allocated": [
       "p",
       "p",
-      "ul",
-      "li",
+      "p",
       "p",
       "title"
     ],
@@ -101,12 +107,8 @@
       "p",
       "p",
       "p",
-      "ul",
-      "li",
       "p",
-      "ul",
-      "li",
-      "a",
+      "p",
       "title"
     ],
     "is": [
@@ -115,10 +117,8 @@
       "p",
       "p",
       "p",
-      "ul",
-      "ul",
-      "li",
-      "li",
+      "p",
+      "p",
       "p",
       "p"
     ],
@@ -140,7 +140,7 @@
       "title"
     ],
     "why": [
-      "h1"
+      "h2"
     ],
     "freeing": [
       "p",
@@ -156,8 +156,7 @@
     ],
     "may": [
       "p",
-      "ul",
-      "li"
+      "p"
     ],
     "corrupt": [
       "p"
@@ -191,14 +190,14 @@
       "p"
     ],
     "how": [
-      "h1"
+      "h2"
     ],
     "guarantees": [
       "p"
     ],
     "dynamically": [
       "p",
-      "li",
+      "p",
       "p",
       "title"
     ],
@@ -224,8 +223,10 @@
     "error": [
       "p",
       "pre",
-      "ul",
-      "li",
+      "code",
+      "p",
+      "pre",
+      "code",
       "p"
     ],
     "handling": [
@@ -234,10 +235,8 @@
     ],
     "the": [
       "p",
-      "ul",
-      "ul",
-      "li",
-      "li",
+      "p",
+      "p",
       "p",
       "p"
     ],
@@ -252,6 +251,12 @@
     ],
     "delete": [
       "p",
+      "pre",
+      "pre",
+      "code",
+      "code",
+      "pre",
+      "code",
       "p"
     ],
     "objects": [
@@ -276,8 +281,7 @@
     ],
     "not": [
       "p",
-      "ul",
-      "li"
+      "p"
     ],
     "deleted": [
       "p"
@@ -287,8 +291,7 @@
     ],
     "if": [
       "p",
-      "ul",
-      "li"
+      "p"
     ],
     "there": [
       "p",
@@ -299,76 +302,103 @@
     ],
     "deallocation": [
       "p",
-      "li"
+      "p"
     ],
     "performed": [
       "p"
     ],
     "problem": [
-      "h1"
+      "h2"
     ],
     "example": [
-      "h1",
-      "h1"
+      "h2",
+      "h2"
     ],
     "float": [
       "pre",
       "pre",
+      "code",
+      "code",
       "pre",
-      "pre"
+      "pre",
+      "code",
+      "code"
     ],
     "*array": [
       "pre",
-      "pre"
+      "code",
+      "pre",
+      "code"
     ],
     "=": [
       "pre",
       "pre",
+      "code",
+      "code",
       "pre",
       "pre",
-      "pre"
+      "pre",
+      "code",
+      "code",
+      "code"
     ],
     "new": [
       "pre",
-      "pre"
-    ],
-    "5];": [
+      "code",
       "pre",
-      "pre"
+      "code"
     ],
     "int": [
       "pre",
-      "pre"
+      "code",
+      "pre",
+      "code"
     ],
     "errorcode": [
       "pre",
-      "pre"
-    ],
-    "somefunctionarray);": [
+      "code",
       "pre",
-      "pre"
+      "code"
+    ],
+    "somefunctionarray": [
+      "pre",
+      "code",
+      "pre",
+      "code"
     ],
     "iferrorcode": [
       "pre",
-      "pre"
+      "code",
+      "pre",
+      "code"
     ],
-    "1{": [
-      "pre"
+    "{": [
+      "pre",
+      "code",
+      "pre",
+      "code"
     ],
     "//handle": [
       "pre",
-      "pre"
-    ],
-    "delete]": [
+      "code",
       "pre",
-      "pre",
-      "pre"
-    ],
-    "array}": [
-      "pre"
+      "code"
     ],
     "array": [
-      "pre"
+      "pre",
+      "pre",
+      "code",
+      "code",
+      "pre",
+      "pre",
+      "code",
+      "code"
+    ],
+    "}": [
+      "pre",
+      "code",
+      "pre",
+      "code"
     ],
     "two": [
       "p"
@@ -380,73 +410,50 @@
       "p"
     ],
     "pointer": [
-      "ul",
-      "li",
+      "p",
       "p",
       "p"
     ],
     "set": [
-      "ul",
-      "li",
+      "p",
       "p"
     ],
     "null": [
-      "ul",
-      "li",
+      "p",
       "pre",
+      "code",
       "p"
     ],
     "after": [
-      "ul",
-      "li"
-    ],
-    "deallocationdynamically": [
-      "ul"
+      "p"
     ],
     "be": [
-      "ul",
-      "li"
+      "p"
     ],
     "deallocated": [
-      "ul",
-      "li",
+      "p",
       "p"
     ],
     "twice": [
-      "ul",
-      "li"
+      "p"
     ],
     "returned": [
-      "ul",
-      "li"
+      "p"
     ],
     "by": [
-      "ul",
-      "li"
+      "p"
     ],
     "somefunction": [
-      "ul",
-      "li"
+      "p"
     ],
     "less": [
-      "ul",
-      "li"
+      "p"
     ],
     "than": [
-      "ul",
-      "li"
+      "p"
     ],
     "solution": [
-      "h1"
-    ],
-    "1){": [
-      "pre"
-    ],
-    "error}": [
-      "pre"
-    ],
-    "arrayarray": [
-      "pre"
+      "h2"
     ],
     "because": [
       "p"
@@ -469,36 +476,10 @@
     "dangling": [
       "p"
     ],
-    "related": [
-      "h1"
-    ],
-    "items": [
-      "h1"
-    ],
-    "don't": [
-      "ul",
-      "li",
-      "a"
-    ],
-    "access": [
-      "ul",
-      "li",
-      "a"
-    ],
-    "unallocated": [
-      "ul",
-      "li",
-      "a"
-    ],
     "free": [
       "title"
     ]
   },
   "tags": {},
-  "links": [
-    {
-      "href": "/article/b8b0d075-5aa2-4095-a441-210f38fc3b3e",
-      "text": "Don't Access Unallocated Memory"
-    }
-  ]
+  "links": []
 }

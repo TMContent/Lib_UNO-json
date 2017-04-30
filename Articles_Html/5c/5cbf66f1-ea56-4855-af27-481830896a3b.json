@@ -10,6 +10,7 @@
       "h1",
       "p",
       "p",
+      "p",
       "b"
     ],
     "2": [
@@ -251,7 +252,8 @@
       "ol",
       "ol",
       "li",
-      "li"
+      "li",
+      "p"
     ],
     "summary": [
       "h1",
@@ -297,6 +299,7 @@
       "p"
     ],
     "you": [
+      "p",
       "p",
       "p",
       "p",
@@ -503,7 +506,9 @@
       "h2",
       "h2",
       "p",
+      "p",
       "pre",
+      "p",
       "p",
       "p",
       "em",
@@ -744,12 +749,13 @@
       "b",
       "p",
       "p",
-      "ul",
-      "li",
-      "h2",
       "p",
       "ul",
       "li",
+      "h2",
+      "p",
+      "ul",
+      "li",
       "p",
       "p",
       "p",
@@ -770,6 +776,7 @@
       "p",
       "p",
       "h2",
+      "p",
       "p",
       "p",
       "em",
@@ -2073,6 +2080,7 @@
       "li",
       "ul",
       "li",
+      "p",
       "em",
       "pre"
     ],
@@ -2101,6 +2109,7 @@
       "p",
       "ul",
       "li",
+      "p",
       "p",
       "p"
     ],
@@ -2241,6 +2250,7 @@
       "ul",
       "li",
       "h1",
+      "p",
       "p",
       "h1",
       "h2",
@@ -2874,7 +2884,8 @@
       "p",
       "p",
       "p",
-      "p"
+      "p",
+      "pre"
     ],
     "files": [
       "p"
@@ -3168,7 +3179,9 @@
       "ul",
       "li"
     ],
-    "potentially)": [
+    "potentially": [
+      "ul",
+      "li",
       "ul",
       "li"
     ],
@@ -3322,12 +3335,6 @@
       "p",
       "p"
     ],
-    "\"impersonation": [
-      "p"
-    ],
-    "subsystem\"": [
-      "p"
-    ],
     "document": [
       "p"
     ],
@@ -3339,10 +3346,19 @@
     "store": [
       "p"
     ],
-    "connectionstrings>": [
+    "connectionstrings": [
       "p",
+      "em",
       "pre",
-      "p"
+      "p",
+      "em",
+      "p",
+      "em",
+      "p",
+      "em",
+      "p",
+      "em",
+      "pre"
     ],
     "webconfig": [
       "p",
@@ -3419,14 +3435,6 @@
       "p",
       "p"
     ],
-    "connectionstrings": [
-      "em",
-      "p",
-      "em",
-      "p",
-      "em",
-      "em"
-    ],
     "add": [
       "pre",
       "pre",
@@ -3437,16 +3445,16 @@
       "p",
       "p"
     ],
-    "name=\"mydbconn1\"": [
+    "name=mydbconn1": [
       "pre"
     ],
-    "connectionstring=\"server=myserverdatabase=mydb;trusted_connection=yes;\"/>": [
+    "connectionstring=server=myserverdatabase=mydbtrusted_connection=yes/": [
       "pre"
     ],
-    "name=\"mydbconn2\"": [
+    "name=mydbconn2": [
       "pre"
     ],
-    "connectionstring=\"initial": [
+    "connectionstring=initial": [
       "pre"
     ],
     "catalog=mydbdata": [
@@ -3455,7 +3463,10 @@
     "source=myserverintegrated": [
       "pre"
     ],
-    "security=sspi\"/> </connectionstrings>": [
+    "security=sspi/": [
+      "pre"
+    ],
+    "/connectionstrings": [
       "pre"
     ],
     "above": [
@@ -3500,24 +3511,24 @@
       "ol",
       "li"
     ],
-    "asp:sqldatasource": [
+    "aspsqldatasource": [
       "pre"
     ],
-    "id=\"sqldatasource1\"": [
+    "id=sqldatasource1": [
       "pre"
     ],
-    "runat=\"server\"": [
+    "runat=server": [
       "pre",
       "pre",
       "pre"
     ],
-    "connectionstring=\"%$": [
+    "connectionstring=%$": [
       "pre"
     ],
-    "connectionstringsmydbconn1%>\">": [
+    "connectionstringsmydbconn1%": [
       "pre"
     ],
-    ".. </asp:sqldatasource>": [
+    "/aspsqldatasource": [
       "pre"
     ],
     "code": [
@@ -3535,7 +3546,11 @@
       "pre",
       "pre"
     ],
-    "configurationmanagerconnectionstrings[\"mydbconn1\"].tostring(); sqlconnection": [
+    "configurationmanagerconnectionstringsmydbconn1tostring": [
+      "pre"
+    ],
+    "sqlconnection": [
+      "pre",
       "pre"
     ],
     "conn": [
@@ -3550,7 +3565,7 @@
       "ol",
       "li"
     ],
-    "sqlconnectionconnstr);": [
+    "sqlconnectionconnstr": [
       "pre"
     ],
     "even": [
@@ -3601,7 +3616,8 @@
     "api": [
       "p"
     ],
-    "dpapi)": [
+    "dpapi": [
+      "p",
       "p"
     ],
     "rsa": [
@@ -3673,10 +3689,9 @@
       "p",
       "em",
       "p",
+      "em",
+      "p",
       "em"
-    ],
-    "dpapi": [
-      "p"
     ],
     "rsaprotectedconfigurationprovider": [
       "p",
@@ -3684,7 +3699,8 @@
       "em",
       "em",
       "p",
-      "em"
+      "em",
+      "pre"
     ],
     "public": [
       "p",
@@ -3762,6 +3778,7 @@
       "pre",
       "p",
       "em",
+      "pre",
       "ol",
       "ol",
       "li",
@@ -3775,19 +3792,15 @@
       "em",
       "pre"
     ],
-    "\"connectionstrings\"": [
-      "p",
-      "em",
-      "pre"
-    ],
     "app": [
       "p",
       "em",
       "pre"
     ],
-    "\"/mywebsite\"": [
+    "/mywebsite": [
       "p",
       "em",
+      "p",
       "pre"
     ],
     "prov": [
@@ -3797,16 +3810,9 @@
       "em",
       "pre"
     ],
-    "\"dataprotectionconfigurationprovider\"": [
-      "p",
-      "em"
-    ],
     "where": [
       "p",
       "p",
-      "p"
-    ],
-    "/mywebsite": [
       "p"
     ],
     "virtual": [
@@ -3828,9 +3834,6 @@
     ],
     "follows": [
       "p"
-    ],
-    "\"rsaprotectedconfigurationprovider\"": [
-      "pre"
     ],
     "provider": [
       "p",
@@ -3860,7 +3863,8 @@
     ],
     "netframeworkconfigurationkey": [
       "p",
-      "em"
+      "em",
+      "pre"
     ],
     "wish": [
       "p"
@@ -3919,9 +3923,6 @@
     "want": [
       "p"
     ],
-    "\"netframeworkconfigurationkey\"": [
-      "pre"
-    ],
     "encrypted": [
       "p",
       "p"
@@ -3965,7 +3966,7 @@
       "ul",
       "li"
     ],
-    "configurationmanagerconnectionstring[\"mydbconn1\"].tostring();": [
+    "configurationmanagerconnectionstringmydbconn1tostring": [
       "pre"
     ],
     "automatically": [
@@ -3978,8 +3979,9 @@
       "p",
       "p"
     ],
-    "note you": [
-      "p"
+    "note": [
+      "p",
+      "b"
     ],
     "programmatically": [
       "p"
@@ -4002,7 +4004,7 @@
       "p",
       "p"
     ],
-    "systemconfiguration.sectioninformation": [
+    "systemconfigurationsectioninformation": [
       "p",
       "em"
     ],
@@ -4019,9 +4021,6 @@
     "unprotectsection": [
       "p",
       "em"
-    ],
-    "note": [
-      "b"
     ],
     "create": [
       "p",
@@ -4540,13 +4539,15 @@
       "li",
       "p"
     ],
-    "\"log": [
+    "log": [
       "ol",
       "li",
       "p",
+      "em",
       "ol",
       "li",
-      "p"
+      "p",
+      "em"
     ],
     "batch": [
       "ol",
@@ -4558,7 +4559,7 @@
       "p",
       "em"
     ],
-    "job\"": [
+    "job": [
       "ol",
       "li",
       "p",
@@ -4626,13 +4627,15 @@
       "li",
       "em"
     ],
-    "\"deny": [
+    "deny": [
       "ol",
       "li",
+      "em",
       "ol",
-      "li"
+      "li",
+      "em"
     ],
-    "locally\"": [
+    "locally": [
       "ol",
       "li",
       "em",
@@ -4662,14 +4665,6 @@
       "ol",
       "li"
     ],
-    "log": [
-      "em",
-      "em"
-    ],
-    "deny": [
-      "em",
-      "em"
-    ],
     "follow": [
       "p",
       "p"
@@ -4679,14 +4674,6 @@
       "p"
     ],
     "previously": [
-      "p"
-    ],
-    "\"using": [
-      "p",
-      "p"
-    ],
-    "account\"": [
-      "p",
       "p"
     ],
     "but": [
@@ -4714,10 +4701,10 @@
     "%@": [
       "pre"
     ],
-    "language=\"c#\"": [
+    "language=c#": [
       "pre"
     ],
-    "%<%@": [
+    "%%@": [
       "pre",
       "pre"
     ],
@@ -4725,21 +4712,17 @@
       "pre",
       "pre"
     ],
-    "namespace=\"systemdata\"": [
+    "namespace=systemdata": [
       "pre"
     ],
-    "namespace=\"systemdata.sqlclient\"": [
+    "namespace=systemdatasqlclient": [
       "pre"
     ],
-    "%<!doctype": [
+    "%!doctype": [
       "pre"
     ],
     "html": [
       "pre"
-    ],
-    "\"": [
-      "pre",
-      "strong"
     ],
     "//w3c//dtd": [
       "pre"
@@ -4747,10 +4730,10 @@
     "xhtml": [
       "pre"
     ],
-    "11//en\"": [
+    "11//en": [
       "pre"
     ],
-    "\"http//www.w3.org/tr/xhtml11/dtd/xhtml11.dtd\"><script": [
+    "http//wwww3org/tr/xhtml11/dtd/xhtml11dtdscript": [
       "pre"
     ],
     "void": [
@@ -4772,13 +4755,11 @@
       "pre",
       "pre"
     ],
-    "sqlconnection": [
-      "pre"
-    ],
     "cn": [
+      "pre",
       "pre"
     ],
-    "sqlconnectionconfigurationmanager.connectionstrings[\"mydbconn1\"].tostring()))": [
+    "sqlconnectionconfigurationmanagerconnectionstringsmydbconn1tostring": [
       "pre"
     ],
     "sqlcommand": [
@@ -4787,19 +4768,17 @@
     "cmd": [
       "pre"
     ],
-    "sqlcommand\"select": [
+    "sqlcommandselect": [
       "pre"
     ],
-    "count*)": [
+    "count*": [
       "pre"
     ],
-    "authors\"": [
-      "pre"
+    "authors": [
+      "pre",
+      "p"
     ],
-    "cn;": [
-      "pre"
-    ],
-    "cnopen();": [
+    "cnopen": [
       "pre"
     ],
     "sqldatareader": [
@@ -4808,13 +4787,13 @@
     "rdr": [
       "pre"
     ],
-    "cmdexecutereader(commandbehavior.closeconnection);": [
+    "cmdexecutereadercommandbehaviorcloseconnection": [
       "pre"
     ],
-    "rdrread();": [
+    "rdrread": [
       "pre"
     ],
-    "responsewrite(rdr[0].tostring());": [
+    "responsewriterdr0tostring": [
       "pre"
     ],
     "//read": [
@@ -4823,16 +4802,16 @@
     "}": [
       "pre"
     ],
-    "}/script><html": [
+    "}/scripthtml": [
       "pre"
     ],
-    "<head": [
+    "head": [
       "pre"
     ],
-    "title>sql": [
+    "titlesql": [
       "pre"
     ],
-    "authentication/title></head><body/></html>": [
+    "authentication/title/headbody//html": [
       "pre"
     ],
     "entry": [
@@ -4863,9 +4842,6 @@
       "p"
     ],
     "selectaccess": [
-      "p"
-    ],
-    "authors": [
       "p"
     ],
     "will": [
@@ -4950,14 +4926,22 @@
       "ul",
       "li"
     ],
-    "acls)": [
+    "acls": [
       "ul",
+      "li",
+      "ul",
+      "li",
+      "ul",
+      "ul",
+      "li",
       "li"
     ],
     "databases": [
       "ul",
       "ul",
       "li",
+      "li",
+      "ul",
       "li"
     ],
     "auditing": [
@@ -5130,9 +5114,6 @@
       "p",
       "b"
     ],
-    "1)": [
-      "p"
-    ],
     "pros": [
       "h3",
       "h3"
@@ -5250,18 +5231,6 @@
       "ul",
       "li"
     ],
-    "databases.": [
-      "ul",
-      "li"
-    ],
-    "acls": [
-      "ul",
-      "li",
-      "ul",
-      "ul",
-      "li",
-      "li"
-    ],
     "single": [
       "ul",
       "li"
@@ -5286,7 +5255,7 @@
       "ul",
       "li"
     ],
-    "authorization.": [
+    "authorization": [
       "ul",
       "li"
     ],
@@ -5376,7 +5345,7 @@
       "ul",
       "li"
     ],
-    "synchronized.": [
+    "synchronized": [
       "ul",
       "li"
     ],
@@ -5407,10 +5376,6 @@
       "ul",
       "li"
     ],
-    "potentially": [
-      "ul",
-      "li"
-    ],
     "easier": [
       "ul",
       "li"
@@ -5423,43 +5388,29 @@
       "ul",
       "li"
     ],
-    "aspnet,": [
-      "p"
-    ],
     "simplest": [
       "p"
     ],
     "set": [
       "p"
     ],
-    "impersonate=\"true\"": [
-      "p"
-    ],
-    "identity>": [
-      "p"
+    "impersonate=true": [
+      "p",
+      "em"
     ],
     "element": [
       "p"
     ],
-    "impersonate=\"true": [
-      "em"
-    ],
-    "configuration>": [
+    "systemweb": [
       "pre"
     ],
-    "system.web>": [
+    "mode=windows/": [
       "pre"
     ],
-    "mode=\"windows\"/": [
+    "impersonate=true/": [
       "pre"
     ],
-    "impersonate=\"true\"/": [
-      "pre"
-    ],
-    "..": [
-      "pre"
-    ],
-    "/system.web></configuration>": [
+    "/systemweb/configuration": [
       "pre"
     ],
     "remote": [
@@ -5633,10 +5584,8 @@
     ],
     "increases": [
       "ul",
-      "li"
-    ],
-    "increases,": [
       "ul",
+      "li",
       "li"
     ],
     "significant": [

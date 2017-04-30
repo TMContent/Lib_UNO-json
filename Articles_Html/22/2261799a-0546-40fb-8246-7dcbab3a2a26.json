@@ -42,7 +42,17 @@
       "ul",
       "li"
     ],
-    "aws)": [
+    "aws": [
+      "ul",
+      "li",
+      "p",
+      "ol",
+      "li",
+      "p",
+      "ul",
+      "ul",
+      "li",
+      "li",
       "ul",
       "li"
     ],
@@ -57,6 +67,7 @@
       "p",
       "p",
       "p",
+      "ol",
       "ol",
       "ol",
       "li",
@@ -93,6 +104,7 @@
       "p",
       "p",
       "p",
+      "ol",
       "ol",
       "ol",
       "ol",
@@ -319,8 +331,28 @@
     "interface": [
       "p"
     ],
-    "cli).": [
-      "p"
+    "cli": [
+      "p",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
+      "p",
+      "strong",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
+      "p",
+      "strong",
+      "ul",
+      "li"
     ],
     "this": [
       "p",
@@ -396,8 +428,16 @@
       "code",
       "li"
     ],
-    "eb)\ndeleting": [
-      "ul"
+    "eb": [
+      "ul",
+      "li",
+      "ol",
+      "li",
+      "p"
+    ],
+    "deleting": [
+      "ul",
+      "li"
     ],
     "instance": [
       "ul",
@@ -430,15 +470,20 @@
       "li",
       "p"
     ],
-    "ec2).": [
+    "ec2": [
       "ul",
-      "li"
-    ],
-    "eb)": [
-      "li"
-    ],
-    "deleting": [
-      "li"
+      "li",
+      "ol",
+      "li",
+      "p",
+      "ol",
+      "li",
+      "p",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "code"
     ],
     "why": [
       "h2"
@@ -512,31 +557,21 @@
       "ul",
       "li"
     ],
-    "imagesoperating": [
-      "ul"
-    ],
-    "systemsapplications\ndata": [
-      "ul"
-    ],
-    "at": [
-      "ul",
-      "li"
-    ],
-    "rest": [
-      "ul",
-      "li"
-    ],
     "images": [
+      "ul",
       "li"
     ],
     "operating": [
+      "ul",
       "li"
     ],
     "systems": [
+      "ul",
       "li",
       "p"
     ],
     "applications": [
+      "ul",
       "li",
       "p",
       "p",
@@ -549,10 +584,19 @@
       "title"
     ],
     "data": [
+      "ul",
       "li",
       "ol",
       "li",
       "p"
+    ],
+    "at": [
+      "ul",
+      "li"
+    ],
+    "rest": [
+      "ul",
+      "li"
     ],
     "susceptible": [
       "p"
@@ -707,18 +751,6 @@
       "li",
       "p"
     ],
-    "aws": [
-      "p",
-      "ol",
-      "li",
-      "p",
-      "ul",
-      "ul",
-      "li",
-      "li",
-      "ul",
-      "li"
-    ],
     "account": [
       "p"
     ],
@@ -727,6 +759,7 @@
     ],
     "periodic": [
       "p",
+      "ol",
       "ol",
       "li",
       "li",
@@ -885,6 +918,7 @@
       "p",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "p",
@@ -1002,6 +1036,9 @@
       "li",
       "li",
       "p",
+      "p",
+      "ol",
+      "li",
       "p"
     ],
     "will": [
@@ -1076,8 +1113,10 @@
       "li",
       "p"
     ],
-    "back\n\n\napplication": [
-      "ol"
+    "back": [
+      "ol",
+      "li",
+      "p"
     ],
     "deployed": [
       "ol",
@@ -1134,18 +1173,6 @@
       "ul",
       "li"
     ],
-    "ec2": [
-      "ol",
-      "li",
-      "p",
-      "ol",
-      "li",
-      "p",
-      "ul",
-      "li",
-      "li",
-      "code"
-    ],
     "after": [
       "ol",
       "li",
@@ -1167,8 +1194,13 @@
       "li",
       "p"
     ],
-    "plan\n\n\nperiodic": [
-      "ol"
+    "plan": [
+      "ol",
+      "ol",
+      "li",
+      "p",
+      "li",
+      "p"
     ],
     "checks": [
       "ol",
@@ -1178,13 +1210,6 @@
     ],
     "specified": [
       "ol",
-      "li",
-      "p"
-    ],
-    "plan": [
-      "ol",
-      "li",
-      "p",
       "li",
       "p"
     ],
@@ -1215,10 +1240,6 @@
     ],
     "audit": [
       "ol",
-      "li",
-      "p"
-    ],
-    "back": [
       "li",
       "p"
     ],
@@ -1400,6 +1421,7 @@
     ],
     "action": [
       "ol",
+      "ol",
       "li",
       "li",
       "p",
@@ -1433,28 +1455,6 @@
       "li",
       "p"
     ],
-    "action\n\n\nterminate": [
-      "ol"
-    ],
-    "cli": [
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "p",
-      "p",
-      "strong",
-      "li",
-      "li",
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "p",
-      "p",
-      "strong",
-      "li"
-    ],
     "terminating": [
       "ol",
       "li",
@@ -1484,11 +1484,10 @@
       "li",
       "p"
     ],
-    "cli\nec2": [
-      "ul"
-    ],
-    "cli\nstop": [
-      "ul"
+    "stop": [
+      "ul",
+      "li",
+      "code"
     ],
     "ec2instance": [
       "ul",
@@ -1503,13 +1502,9 @@
       "ul",
       "li"
     ],
-    "powershell.": [
+    "powershell": [
       "ul",
       "li"
-    ],
-    "stop": [
-      "li",
-      "code"
     ],
     "confirm": [
       "ol",
@@ -1519,22 +1514,12 @@
       "p",
       "p"
     ],
-    "eb": [
-      "ol",
-      "li",
-      "p"
-    ],
     "application's": [
       "ol",
       "li",
       "p"
     ],
     "region": [
-      "ol",
-      "li",
-      "p"
-    ],
-    "versions).": [
       "ol",
       "li",
       "p"
@@ -1585,6 +1570,7 @@
     ],
     "bucket": [
       "ol",
+      "ol",
       "li",
       "li",
       "p",
@@ -1600,11 +1586,10 @@
       "li",
       "p"
     ],
-    "bucket\n\n\nremove": [
-      "ol"
-    ],
-    "cli\ndeleteapplicationversion": [
-      "ul"
+    "deleteapplicationversion": [
+      "ul",
+      "li",
+      "code"
     ],
     "using": [
       "ul",
@@ -1613,10 +1598,6 @@
     "api": [
       "ul",
       "li"
-    ],
-    "deleteapplicationversion": [
-      "li",
-      "code"
     ]
   },
   "tags": {},

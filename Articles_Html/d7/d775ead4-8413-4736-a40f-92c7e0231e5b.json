@@ -132,6 +132,7 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "li",
@@ -139,6 +140,8 @@
       "p",
       "p",
       "strong",
+      "li",
+      "p",
       "li",
       "li",
       "p",
@@ -413,6 +416,7 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "li",
@@ -425,6 +429,8 @@
       "p",
       "strong",
       "li",
+      "li",
+      "p",
       "p",
       "p",
       "p",
@@ -983,9 +989,12 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "li",
+      "li",
+      "p",
       "p",
       "p",
       "p",
@@ -1104,6 +1113,9 @@
       "ol",
       "li",
       "p",
+      "li",
+      "p",
+      "ol",
       "li",
       "p",
       "p"
@@ -1284,8 +1296,18 @@
     ],
     "read": [
       "ol",
+      "ol",
+      "ol",
       "li",
-      "p"
+      "p",
+      "li",
+      "li",
+      "ul",
+      "ul",
+      "li",
+      "pre",
+      "li",
+      "pre"
     ],
     "access": [
       "ol",
@@ -1376,16 +1398,20 @@
       "li",
       "p"
     ],
-    "systemload.": [
+    "systemload": [
       "ol",
       "ol",
       "ol",
+      "em",
       "li",
       "p",
+      "em",
       "li",
       "li",
       "p",
-      "p"
+      "p",
+      "em",
+      "em"
     ],
     "review": [
       "ol",
@@ -1576,6 +1602,7 @@
       "li",
       "p",
       "li",
+      "p",
       "p"
     ],
     "environment": [
@@ -1633,14 +1660,14 @@
       "li",
       "pre"
     ],
-    "\"filee:/myapp/bin/": [
+    "filee/myapp/bin/": [
       "ol",
       "li",
       "ul",
       "li",
       "pre"
     ],
-    "\"{": [
+    "{": [
       "ol",
       "ol",
       "li",
@@ -1684,7 +1711,7 @@
       "pre",
       "pre"
     ],
-    "javaio.filepermission": [
+    "javaiofilepermission": [
       "ol",
       "ol",
       "li",
@@ -1696,14 +1723,14 @@
       "li",
       "pre"
     ],
-    "\"e/myapp/lib/myapp.dll\",": [
+    "e/myapp/lib/myappdll": [
       "ol",
       "li",
       "ul",
       "li",
       "pre"
     ],
-    "\"read\"": [
+    "javalangruntimepermission": [
       "ol",
       "ol",
       "li",
@@ -1715,7 +1742,7 @@
       "li",
       "pre"
     ],
-    "javalang.runtimepermission": [
+    "loadlibrarymyapp": [
       "ol",
       "ol",
       "li",
@@ -1727,7 +1754,7 @@
       "li",
       "pre"
     ],
-    "\"loadlibrarymyapp\";": [
+    "javautilpropertypermission": [
       "ol",
       "ol",
       "li",
@@ -1739,7 +1766,7 @@
       "li",
       "pre"
     ],
-    "javautil.propertypermission": [
+    "userdir": [
       "ol",
       "ol",
       "li",
@@ -1751,19 +1778,7 @@
       "li",
       "pre"
     ],
-    "\"userdir\",": [
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "ul",
-      "ul",
-      "li",
-      "pre",
-      "li",
-      "pre"
-    ],
-    "\"read\"};": [
+    "read}": [
       "ol",
       "ol",
       "li",
@@ -1795,21 +1810,22 @@
       "li",
       "p"
     ],
-    "libmyappso:": [
+    "libmyappso": [
       "ol",
       "li",
       "ul",
       "li",
-      "p"
+      "p",
+      "em"
     ],
-    "\"file/myapp/bin/": [
+    "file/myapp/bin/": [
       "ol",
       "li",
       "ul",
       "li",
       "pre"
     ],
-    "\"/myapp/lib/libmyappso\",": [
+    "/myapp/lib/libmyappso": [
       "ol",
       "li",
       "ul",
@@ -1867,11 +1883,15 @@
       "pre",
       "strong",
       "blockquote",
+      "blockquote",
+      "pre",
       "pre",
       "blockquote",
+      "blockquote",
+      "pre",
       "pre"
     ],
-    "djavalibrary.path": [
+    "djavalibrarypath": [
       "ol",
       "li",
       "p",
@@ -1913,7 +1933,10 @@
     ],
     "paths": [
       "ol",
+      "ol",
       "li",
+      "li",
+      "p",
       "p"
     ],
     "instead": [
@@ -1926,25 +1949,28 @@
       "li",
       "p"
     ],
-    "paths example:": [
+    "example": [
       "ol",
       "li",
-      "p"
+      "p",
+      "h1",
+      "h1"
     ],
-    "djavasecurity.manager": [
+    "djavasecuritymanager": [
       "ol",
       "li",
       "pre"
     ],
-    "djavasecurity.policy=myapp.policy": [
+    "djavasecuritypolicy=myapppolicy": [
       "ol",
       "li",
       "pre"
     ],
-    "djava.library.path=/myapp/lib": [
+    "djavalibrarypath=/myapp/lib": [
       "ol",
       "li",
-      "pre"
+      "pre",
+      "strong"
     ],
     "myapp": [
       "ol",
@@ -1994,18 +2020,6 @@
       "li",
       "p"
     ],
-    "systemload": [
-      "em",
-      "em",
-      "em",
-      "em"
-    ],
-    "libmyappso": [
-      "em"
-    ],
-    "djavalibrary.path=/myapp/lib": [
-      "strong"
-    ],
     "fix": [
       "h1"
     ],
@@ -2054,12 +2068,16 @@
       "li",
       "p"
     ],
-    "by careful": [
+    "careful": [
+      "ol",
       "ol",
       "li",
-      "p"
+      "p",
+      "li",
+      "p",
+      "strong"
     ],
-    "of exception": [
+    "exception": [
       "ol",
       "li",
       "p"
@@ -2096,17 +2114,6 @@
       "li",
       "p"
     ],
-    "to the": [
-      "ol",
-      "li",
-      "p"
-    ],
-    "careful": [
-      "ol",
-      "li",
-      "p",
-      "strong"
-    ],
     "with": [
       "ol",
       "li",
@@ -2132,10 +2139,6 @@
       "p"
     ],
     "problem": [
-      "h1"
-    ],
-    "example": [
-      "h1",
       "h1"
     ],
     "segment": [
@@ -2175,7 +2178,7 @@
     "this": [
       "p"
     ],
-    "allows a": [
+    "allows": [
       "p"
     ],
     "execute": [
@@ -2245,12 +2248,6 @@
       "blockquote",
       "pre",
       "pre",
-      "pre"
-    ],
-    ".": [
-      "blockquote",
-      "pre",
-      "blockquote",
       "pre"
     ],
     "rwxrwxrwx": [

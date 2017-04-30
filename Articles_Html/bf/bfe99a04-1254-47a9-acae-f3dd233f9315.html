@@ -1,0 +1,33 @@
+<h2>Applies To</h2>
+<ul>
+<li>Ruby</li>
+</ul>
+<h2>Solution Example</h2>
+<pre><code>#! /usr/bin/env ruby
+if ARGV.length == 0
+        puts &quot;Usage: #{$0} [username]&quot;
+        exit
+end
+
+def verifyUsername(username)
+        # Length: between 3 - 20 chars
+        if username.length &lt; 3 or username.length &gt; 20
+                return false
+        end
+        # Alphanumeric ascii characters only
+        if not username =~ /\A[a-zA-Z0-9]+\z/
+                return false
+        end
+        return true
+end
+
+if verifyUsername(ARGV[0])
+        puts &quot;Username is valid.&quot;
+else
+        puts &quot;Username is invalid.&quot;
+end
+</code></pre>
+<h2>Guideline</h2>
+<ul>
+<li><a href="11a15f3a-7fe8-4e4c-be5e-309ab7227b3d">Validate All Input</a></li>
+</ul>

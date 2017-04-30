@@ -1,9 +1,0 @@
-<h2>Applies To</h2><ul><li> ASP.NET</li>
-</ul><h2>What to Do</h2><p>Log error information - whenever an error condition is being handled, add a record to the log about it.
-</p><h2>Why</h2><p>Logging error information helps to debug errors. Logging error information may help find vulnerabilities during an audit. Logging error information may also help identify attacks as they are taking place or during a forensic investigation.
-</p><h2>How</h2><p>To log error information:
-</p><ol>
-<li> <strong>Identify the logging subsystem.</strong> Logging is one of the essential security components of an application. Find the logging functions that are provided by the application. Review them briefly to figure out how they work and where they store the error files.</li>
-<li> <strong>Identify error handling code.</strong> Enumerate all the code that handles application errors. There may be a considerable amount of this code, which is a good thing. It should be alarming if there is very little error handling code.</li>
-<li> <strong>Determine relevant error details.</strong> For each block of error handling code, determine the information that should be logged to help debug the error. Make sure to include time-stamps. It may be helpful to log the active username and the accessed resources as applicable to help identify attacks.</li>
-<li> <strong>Add logging code to error handling routines.</strong> Add code that records the relevant information to the error handlers. </li></ol>

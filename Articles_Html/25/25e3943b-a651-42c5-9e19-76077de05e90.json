@@ -1,6 +1,6 @@
 {
   "id": "25e3943b-a651-42c5-9e19-76077de05e90",
-  "checksum": "6e3ab2a932d933e3e2fe5c610390a5f9",
+  "checksum": "78755e99e61642a18fda9a6cbbe0b4f2",
   "words": {
     "0": [
       "ol",
@@ -42,8 +42,7 @@
     ],
     "java": [
       "ul",
-      "li",
-      "title"
+      "li"
     ],
     "web": [
       "ul",
@@ -65,15 +64,15 @@
       "p",
       "ol",
       "li",
-      "p",
-      "title"
+      "p"
     ],
     "jsf": [
       "ul",
       "li",
       "p",
       "p",
-      "p"
+      "p",
+      "title"
     ],
     "summary": [
       "h2"
@@ -110,20 +109,12 @@
       "p"
     ],
     "cross": [
-      "p",
-      "ul",
-      "ul",
-      "li",
-      "li"
+      "p"
     ],
     "site": [
       "p",
       "p",
-      "p",
-      "ul",
-      "ul",
-      "li",
-      "li"
+      "p"
     ],
     "request": [
       "p",
@@ -139,21 +130,21 @@
       "p",
       "p",
       "pre",
-      "code",
-      "ul",
-      "ul",
-      "li",
-      "li"
+      "code"
     ],
     "forgery": [
-      "p",
-      "ul",
-      "ul",
-      "li",
-      "li"
-    ],
-    "csrf)": [
       "p"
+    ],
+    "csrf": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "ol",
+      "li",
+      "pre",
+      "code"
     ],
     "within": [
       "p",
@@ -215,16 +206,6 @@
     ],
     "objectives": [
       "h2"
-    ],
-    "csrf": [
-      "p",
-      "p",
-      "p",
-      "p",
-      "ol",
-      "li",
-      "pre",
-      "code"
     ],
     "is": [
       "p",
@@ -434,7 +415,11 @@
       "p"
     ],
     "action": [
-      "p"
+      "p",
+      "ol",
+      "li",
+      "pre",
+      "code"
     ],
     "trusted": [
       "p"
@@ -460,10 +445,7 @@
       "li",
       "li",
       "p",
-      "p",
-      "ul",
-      "li",
-      "li"
+      "p"
     ],
     "which": [
       "p",
@@ -515,7 +497,10 @@
       "li",
       "p",
       "li",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "order": [
       "p"
@@ -552,8 +537,11 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
+      "li",
+      "p",
       "p",
       "strong",
       "pre",
@@ -597,12 +585,11 @@
       "p"
     ],
     "prevention": [
-      "p",
-      "ul",
-      "li"
+      "p"
     ],
     "add": [
       "p",
+      "ol",
       "li",
       "p",
       "strong",
@@ -610,6 +597,9 @@
     ],
     "unique": [
       "p",
+      "ul",
+      "li",
+      "a",
       "title"
     ],
     "tokens": [
@@ -628,14 +618,23 @@
       "p",
       "p",
       "strong",
+      "ul",
+      "li",
+      "a",
       "title"
     ],
     "http": [
       "p",
+      "ul",
+      "li",
+      "a",
       "title"
     ],
     "requests": [
       "p",
+      "ul",
+      "li",
+      "a",
       "title"
     ],
     "store": [
@@ -741,7 +740,7 @@
       "li",
       "p"
     ],
-    "javasecurity.securerandom)": [
+    "javasecuritysecurerandom": [
       "ol",
       "li",
       "p"
@@ -771,18 +770,17 @@
       "code",
       "code"
     ],
-    "token)": [
-      "ol",
-      "li",
-      "p"
-    ],
     "httpsession": [
+      "ol",
       "ol",
       "ol",
       "li",
       "p",
       "li",
+      "li",
       "pre",
+      "pre",
+      "code",
       "code"
     ],
     "//in": [
@@ -815,16 +813,20 @@
       "pre",
       "code"
     ],
-    "sessionsetattribute(\"csrftoken\",": [
+    "sessionsetattributecsrftoken": [
       "ol",
       "li",
       "pre",
       "code"
     ],
-    "generatecsrftoken));": [
+    "generatecsrftoken": [
+      "ol",
       "ol",
       "li",
+      "li",
       "pre",
+      "pre",
+      "code",
       "code"
     ],
     "//sample": [
@@ -869,12 +871,6 @@
       "pre",
       "code"
     ],
-    "generatecsrftoken)": [
-      "ol",
-      "li",
-      "pre",
-      "code"
-    ],
     "{": [
       "ol",
       "ol",
@@ -907,8 +903,12 @@
     ],
     "securerandom": [
       "ol",
+      "ol",
+      "li",
       "li",
       "pre",
+      "pre",
+      "code",
       "code"
     ],
     "rng": [
@@ -969,12 +969,6 @@
       "code",
       "code"
     ],
-    "securerandom);": [
-      "ol",
-      "li",
-      "pre",
-      "code"
-    ],
     "int": [
       "ol",
       "ol",
@@ -1001,13 +995,13 @@
       "pre",
       "code"
     ],
-    "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz\"": [
+    "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz": [
       "ol",
       "li",
       "pre",
       "code"
     ],
-    "char]": [
+    "char": [
       "ol",
       "li",
       "pre",
@@ -1019,7 +1013,7 @@
       "pre",
       "code"
     ],
-    "charlength];": [
+    "charlength": [
       "ol",
       "li",
       "pre",
@@ -1041,19 +1035,21 @@
       "pre",
       "code"
     ],
-    "texti]": [
+    "texti": [
       "ol",
       "li",
       "pre",
       "code"
     ],
-    "characterscharat(rng.nextint(characters.length()));": [
+    "characterscharatrngnextintcharacterslength": [
       "ol",
       "li",
       "pre",
       "code"
     ],
     "}": [
+      "ol",
+      "ol",
       "ol",
       "ol",
       "ol",
@@ -1091,14 +1087,11 @@
       "pre",
       "code"
     ],
-    "stringvalueof(text);": [
+    "stringvalueoftext": [
       "ol",
       "li",
       "pre",
       "code"
-    ],
-    "}\n\n\nadd": [
-      "ol"
     ],
     "security": [
       "ol",
@@ -1146,7 +1139,7 @@
       "li",
       "p"
     ],
-    "ie.": [
+    "ie": [
       "ol",
       "ol",
       "li",
@@ -1167,8 +1160,7 @@
       "p",
       "p",
       "p",
-      "strong",
-      "title"
+      "strong"
     ],
     "side": [
       "ol",
@@ -1197,7 +1189,7 @@
       "li",
       "p"
     ],
-    "change,": [
+    "change": [
       "ol",
       "ol",
       "li",
@@ -1323,47 +1315,25 @@
       "p",
       "p"
     ],
-    "h:form>": [
+    "hform": [
       "ol",
       "li",
       "pre",
       "code"
     ],
-    "..": [
-      "ol",
-      "ol",
-      "ol",
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "pre",
-      "pre",
-      "code",
-      "code",
-      "li",
-      "li",
-      "li",
-      "pre",
-      "pre",
-      "pre",
-      "code",
-      "code",
-      "code"
-    ],
-    "h:inputhidden": [
+    "hinputhidden": [
       "ol",
       "li",
       "pre",
       "code"
     ],
-    "id=\"token\"": [
+    "id=token": [
       "ol",
       "li",
       "pre",
       "code"
     ],
-    "value=\"#{sessionscope'csrftoken']}\"": [
+    "value=#{sessionscope'csrftoken'}": [
       "ol",
       "li",
       "pre",
@@ -1375,8 +1345,17 @@
       "pre",
       "code"
     ],
-    "/h:form>\n\n\n\nverify": [
-      "ol"
+    "/hform": [
+      "ol",
+      "li",
+      "pre",
+      "code"
+    ],
+    "verify": [
+      "ol",
+      "li",
+      "p",
+      "strong"
     ],
     "and": [
       "ol",
@@ -1567,7 +1546,7 @@
       "pre",
       "code"
     ],
-    "gettoken)": [
+    "gettoken": [
       "ol",
       "li",
       "pre",
@@ -1610,12 +1589,6 @@
       "pre",
       "code"
     ],
-    "action)": [
-      "ol",
-      "li",
-      "pre",
-      "code"
-    ],
     "facescontext": [
       "ol",
       "ol",
@@ -1626,19 +1599,13 @@
       "code",
       "code"
     ],
-    "facescontextgetcurrentinstance();": [
+    "facescontextgetcurrentinstance": [
       "ol",
       "li",
       "pre",
       "code"
     ],
-    "httpsession)": [
-      "ol",
-      "li",
-      "pre",
-      "code"
-    ],
-    "facescontextgetexternalcontext().getsession(false);": [
+    "facescontextgetexternalcontextgetsessionfalse": [
       "ol",
       "li",
       "pre",
@@ -1650,7 +1617,7 @@
       "pre",
       "code"
     ],
-    "string)session.getattribute(\"csrftoken\");": [
+    "stringsessiongetattributecsrftoken": [
       "ol",
       "li",
       "pre",
@@ -1672,7 +1639,7 @@
       "pre",
       "code"
     ],
-    "storedtoken.equals(token))": [
+    "storedtokenequalstoken": [
       "ol",
       "li",
       "pre",
@@ -1758,8 +1725,14 @@
       "pre",
       "code"
     ],
-    "}\n\n\ninvalidate": [
-      "ol"
+    "invalidate": [
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
+      "p",
+      "strong"
     ],
     "sessions": [
       "ol",
@@ -1800,14 +1773,6 @@
       "li",
       "p"
     ],
-    "invalidate": [
-      "ol",
-      "li",
-      "li",
-      "p",
-      "p",
-      "strong"
-    ],
     "will": [
       "ol",
       "li",
@@ -1818,88 +1783,26 @@
       "li",
       "p"
     ],
-    "sessioninvalidate();": [
+    "sessioninvalidate": [
       "ol",
       "li",
       "pre",
       "code"
     ],
-    "/h:form>": [
-      "li",
-      "pre",
-      "code"
-    ],
-    "verify": [
-      "li",
-      "p",
-      "strong"
-    ],
-    "additional": [
+    "guideline": [
       "h2"
     ],
-    "resources": [
-      "h2"
-    ],
-    "more": [
-      "ul",
-      "ul",
-      "li",
-      "li"
-    ],
-    "information": [
-      "ul",
-      "ul",
-      "li",
-      "li"
-    ],
-    "about": [
-      "ul",
-      "ul",
-      "li",
-      "li"
-    ],
-    "see": [
-      "ul",
-      "ul",
-      "li",
-      "li"
-    ],
-    "https//www.owasp.org/index.php/cross": [
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a"
-    ],
-    "site_request_forgery_%28csrf%29\nfor": [
-      "ul"
-    ],
-    "site_request_forgery_%28csrf%29_prevention_cheat_sheet": [
+    "include": [
       "ul",
       "li",
       "a"
-    ],
-    "site_request_forgery_%28csrf%29": [
-      "li",
-      "a"
-    ],
-    "faces": [
-      "title"
-    ],
-    "jsf)": [
-      "title"
     ]
   },
   "tags": {},
   "links": [
     {
-      "href": "https://www.owasp.org/index.php/Cross-Site_Request_Forgery_%28CSRF%29",
-      "text": "https://www.owasp.org/index.php/Cross-Site_Request_Forgery_%28CSRF%29"
-    },
-    {
-      "href": "https://www.owasp.org/index.php/Cross-Site_Request_Forgery_%28CSRF%29_Prevention_Cheat_Sheet",
-      "text": "https://www.owasp.org/index.php/Cross-Site_Request_Forgery_%28CSRF%29_Prevention_Cheat_Sheet"
+      "href": "fdb460e6-5d18-4e35-a093-4b260155d79e",
+      "text": "Include Unique Tokens in HTTP Requests"
     }
   ]
 }

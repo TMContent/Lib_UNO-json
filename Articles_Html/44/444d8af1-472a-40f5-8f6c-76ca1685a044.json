@@ -32,6 +32,9 @@
     "11": [
       "pre"
     ],
+    "40": [
+      "p"
+    ],
     "95": [
       "p"
     ],
@@ -340,7 +343,27 @@
       "p",
       "title"
     ],
-    "ads)": [
+    "ads": [
+      "p",
+      "p",
+      "p",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "h2",
+      "em",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "h2",
+      "em",
       "p",
       "p"
     ],
@@ -720,28 +743,6 @@
       "p",
       "title"
     ],
-    "ads": [
-      "p",
-      "p",
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "p",
-      "p",
-      "p",
-      "p",
-      "h2",
-      "em",
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "h2",
-      "em",
-      "p",
-      "p"
-    ],
     "step": [
       "ul",
       "ul",
@@ -1118,10 +1119,10 @@
     "consider": [
       "p"
     ],
-    "responsesetcontenttype(\"text/html;charset=utf": [
+    "responsesetcontenttypetext/htmlcharset=utf": [
       "pre"
     ],
-    "8\");printwriter": [
+    "8printwriter": [
       "pre"
     ],
     "out": [
@@ -1135,7 +1136,7 @@
       "pre",
       "pre"
     ],
-    "responsegetwriter();string": [
+    "responsegetwriterstring": [
       "pre"
     ],
     "filename": [
@@ -1150,13 +1151,13 @@
       "ol",
       "li"
     ],
-    "\"c\\\\user_files\\\\\"": [
+    "c\\\\user_files\\\\": [
       "pre"
     ],
     "+": [
       "pre"
     ],
-    "requestgetparameter(\"filename\").tostring();string": [
+    "requestgetparameterfilenametostringstring": [
       "pre"
     ],
     "contents": [
@@ -1166,13 +1167,13 @@
       "em",
       "p"
     ],
-    "requestgetparameter(\"contents\").tostring();file": [
+    "requestgetparametercontentstostringfile": [
       "pre"
     ],
-    "filefilename);if(!file.exists()){": [
+    "filefilenameif!fileexists{": [
       "pre"
     ],
-    "filecreatenewfile();": [
+    "filecreatenewfile": [
       "pre"
     ],
     "filewriter": [
@@ -1181,7 +1182,7 @@
     "fw": [
       "pre"
     ],
-    "filewriterfile);": [
+    "filewriterfile": [
       "pre"
     ],
     "bufferedwriter": [
@@ -1190,16 +1191,16 @@
     "bw": [
       "pre"
     ],
-    "bufferedwriterfw);": [
+    "bufferedwriterfw": [
       "pre"
     ],
-    "bwwrite(contents);": [
+    "bwwritecontents": [
       "pre"
     ],
-    "bwclose();": [
+    "bwclose": [
       "pre"
     ],
-    "fwclose();}": [
+    "fwclose}": [
       "pre"
     ],
     "above": [
@@ -1287,6 +1288,8 @@
       "em",
       "strong",
       "pre",
+      "p",
+      "em",
       "pre",
       "pre"
     ],
@@ -1300,7 +1303,7 @@
       "p",
       "p"
     ],
-    "http//some_site/example/createfile?filename=test.txt&contents=any": [
+    "http//some_site/example/createfile?filename=testtxt&contents=any": [
       "pre"
     ],
     "windows": [
@@ -1317,8 +1320,14 @@
     "dir": [
       "p",
       "em",
+      "pre",
+      "pre",
       "p",
       "em",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
       "strong",
       "ol",
       "li",
@@ -1347,7 +1356,7 @@
     "was": [
       "p"
     ],
-    "c\\user_files>dir": [
+    "c\\user_filesdir": [
       "pre",
       "pre",
       "pre"
@@ -1378,20 +1387,10 @@
       "pre",
       "pre"
     ],
-    "dir>": [
-      "pre",
-      "pre",
-      "pre",
-      "pre",
-      "pre",
-      "pre"
-    ],
     "12/02/2008": [
       "pre",
       "pre",
-      "pre"
-    ],
-    ".12/02/2008": [
+      "pre",
       "pre",
       "pre",
       "pre"
@@ -1414,12 +1413,14 @@
     "secret": [
       "p"
     ],
-    "http//some_site/example/createfile?filename=test.txt:hidden.txt&contents=attack_data": [
+    "http//some_site/example/createfile?filename=testtxthiddentxt&contents=attack_data": [
       "pre"
     ],
-    "testtxt:hidden.txt": [
+    "testtxthiddentxt": [
       "strong",
       "pre",
+      "ol",
+      "li",
       "em",
       "p",
       "p",
@@ -1439,10 +1440,6 @@
       "p",
       "p"
     ],
-    "testtxt.": [
-      "p",
-      "em"
-    ],
     "however": [
       "p"
     ],
@@ -1461,14 +1458,14 @@
     "presence": [
       "p"
     ],
-    "hiddentxt:": [
+    "hiddentxt": [
       "p",
       "em"
     ],
     "0110": [
       "pre"
     ],
-    "testtxt:hidden.txt:$data": [
+    "testtxthiddentxt$data": [
       "pre",
       "strong"
     ],
@@ -1487,7 +1484,7 @@
     "notepad": [
       "p"
     ],
-    "c\\user_files>notepad": [
+    "c\\user_filesnotepad": [
       "pre"
     ],
     "detail": [
@@ -1549,7 +1546,13 @@
     "services": [
       "p"
     ],
-    "iis)": [
+    "iis": [
+      "p",
+      "p",
+      "p",
+      "h2",
+      "em",
+      "p",
       "p"
     ],
     "are": [
@@ -1595,14 +1598,6 @@
       "p",
       "p"
     ],
-    "iis": [
-      "p",
-      "p",
-      "h2",
-      "em",
-      "p",
-      "p"
-    ],
     "failing": [
       "p"
     ],
@@ -1641,7 +1636,7 @@
     "accessed": [
       "p"
     ],
-    "http//some_site/default.jsp": [
+    "http//some_site/defaultjsp": [
       "pre",
       "ol",
       "li",
@@ -1660,10 +1655,10 @@
       "p",
       "p"
     ],
-    "http//some_site/default.jsp::$data": [
+    "http//some_site/defaultjsp$data": [
       "pre"
     ],
-    "defaultjsp::$data": [
+    "defaultjsp$data": [
       "strong"
     ],
     "second": [
@@ -1910,9 +1905,6 @@
       "li",
       "p"
     ],
-    "40,": [
-      "p"
-    ],
     "98to": [
       "p"
     ],
@@ -1972,10 +1964,8 @@
       "ol",
       "li"
     ],
-    "http//www.securityfocus.com/bid/149.": [
-      "p"
-    ],
-    "http//www.securityfocus.com/bid/149": [
+    "http//wwwsecurityfocuscom/bid/149": [
+      "p",
       "a"
     ],
     "now": [
@@ -2016,10 +2006,6 @@
       "ol",
       "li",
       "p"
-    ],
-    "testtxt:hidden.txt.": [
-      "ol",
-      "li"
     ],
     "verify": [
       "ol",
@@ -2082,7 +2068,7 @@
       "li",
       "p"
     ],
-    "http//some_site/default.jsp::%data": [
+    "http//some_site/defaultjsp%data": [
       "ol",
       "li"
     ],
@@ -2090,15 +2076,13 @@
       "ol",
       "li"
     ],
-    "defaultjsp.": [
+    "defaultjsp": [
       "ol",
       "li",
       "em",
+      "strong",
       "p",
       "em"
-    ],
-    "defaultjsp": [
-      "strong"
     ],
     "discloses": [
       "p"
@@ -2183,9 +2167,6 @@
     "colon": [
       "p"
     ],
-    ":),": [
-      "p"
-    ],
     "might": [
       "p",
       "p"
@@ -2216,7 +2197,7 @@
       "td",
       "strong"
     ],
-    "testtxt%3ahidden.txt": [
+    "testtxt%3ahiddentxt": [
       "p",
       "table",
       "tbody",
@@ -2235,14 +2216,14 @@
       "tr",
       "td"
     ],
-    "testtxt%253ahidden.txt": [
+    "testtxt%253ahiddentxt": [
       "p",
       "table",
       "tbody",
       "tr",
       "td"
     ],
-    "defaultasp::%data": [
+    "defaultasp%data": [
       "p",
       "p",
       "table",
@@ -2322,7 +2303,7 @@
     "attempt": [
       "p"
     ],
-    "codefinally,": [
+    "codefinally": [
       "p"
     ],
     "cover": [

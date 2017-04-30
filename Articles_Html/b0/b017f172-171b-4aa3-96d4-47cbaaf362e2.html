@@ -1,8 +1,0 @@
-<h2>Applies To</h2><ul><li> C++</li>
-</ul><h2>What to Do</h2><p>Protect the encryption keys.
-</p><h2>Why</h2><p>Protect the encryption keys to prevent attackers from being able to decrypt your encrypted data.
-</p><h2>How</h2><p>To protect the encryption keys:
-</p><ol>
-<li> <strong>Use platform-provided key management if possible.</strong> One of the major advantages of using platform-provided key management is that the key management issue is handled by the operating system. For example, if you are using Windows, you can use DPAPI to handle key management. The key that DPAPI uses is derived from the password associated with the process account that calls the DPAPI functions. You can use DPAPI to pass the burden of key management to the operating system.</li>
-<li> <strong> Cycle your keys periodically.</strong> Generally, a static secret is more likely to be discovered over time. Design the application in a manner that facilitates regular changes of encryption keys and the corresponding re-encryption of all the sensitive data.</li>
-</ol>

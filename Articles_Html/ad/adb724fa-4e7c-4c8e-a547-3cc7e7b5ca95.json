@@ -79,31 +79,30 @@
       "ul",
       "li"
     ],
-    "languageembedded": [
-      "ul"
-    ],
-    "systemslinux\nwindows": [
-      "ul"
-    ],
     "language": [
+      "ul",
       "li"
     ],
     "embedded": [
+      "ul",
       "li",
       "ol",
       "li",
       "p"
     ],
     "systems": [
+      "ul",
       "li",
       "ol",
       "li",
       "p"
     ],
     "linux": [
+      "ul",
       "li"
     ],
     "windows": [
+      "ul",
       "li"
     ],
     "what": [
@@ -117,6 +116,7 @@
     ],
     "provide": [
       "p",
+      "ol",
       "li",
       "p",
       "strong"
@@ -487,12 +487,16 @@
     "failures": [
       "p"
     ],
-    "misconfiguration\nunsecure": [
+    "misconfiguration": [
+      "p"
+    ],
+    "unsecure": [
       "p"
     ],
     "operation": [
       "p",
       "p",
+      "ol",
       "ol",
       "ol",
       "li",
@@ -548,6 +552,7 @@
       "p",
       "ol",
       "ol",
+      "ol",
       "li",
       "p",
       "li",
@@ -560,6 +565,7 @@
     ],
     "use": [
       "p",
+      "ol",
       "ol",
       "ol",
       "ol",
@@ -628,6 +634,7 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "li",
@@ -672,6 +679,8 @@
     ],
     "implement": [
       "p",
+      "ol",
+      "ol",
       "li",
       "p",
       "strong",
@@ -685,6 +694,7 @@
       "title"
     ],
     "identify": [
+      "ol",
       "ol",
       "ol",
       "li",
@@ -794,6 +804,9 @@
       "ol",
       "ol",
       "ol",
+      "ol",
+      "li",
+      "p",
       "li",
       "p",
       "li",
@@ -810,8 +823,10 @@
       "li",
       "p"
     ],
-    "permissible\n\n\nidentify": [
-      "ol"
+    "permissible": [
+      "ol",
+      "li",
+      "p"
     ],
     "every": [
       "ol",
@@ -879,9 +894,6 @@
       "ol",
       "li",
       "p"
-    ],
-    "parameters\n\n\nuse": [
-      "ol"
     ],
     "role": [
       "ol",
@@ -1011,9 +1023,6 @@
       "li",
       "p"
     ],
-    "available.\n\n\nimplement": [
-      "ol"
-    ],
     "before": [
       "ol",
       "ol",
@@ -1114,9 +1123,6 @@
       "p",
       "li",
       "p"
-    ],
-    "integrity\n\n\nimplement": [
-      "ol"
     ],
     "design": [
       "ol",
@@ -1220,8 +1226,10 @@
       "li",
       "p"
     ],
-    "restoration\n\n\nprovide": [
-      "ol"
+    "restoration": [
+      "ol",
+      "li",
+      "p"
     ],
     "separate": [
       "ol",
@@ -1339,8 +1347,14 @@
       "li",
       "p"
     ],
-    "operation\n\n\nlog": [
-      "ol"
+    "log": [
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
+      "p",
+      "strong"
     ],
     "activity": [
       "ol",
@@ -1391,26 +1405,6 @@
     ],
     "options": [
       "ol",
-      "li",
-      "p"
-    ],
-    "log": [
-      "ol",
-      "li",
-      "li",
-      "p",
-      "p",
-      "strong"
-    ],
-    "permissible": [
-      "li",
-      "p"
-    ],
-    "available.": [
-      "li",
-      "p"
-    ],
-    "restoration": [
       "li",
       "p"
     ]

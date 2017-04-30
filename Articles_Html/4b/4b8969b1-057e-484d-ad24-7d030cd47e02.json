@@ -1,6 +1,6 @@
 {
   "id": "4b8969b1-057e-484d-ad24-7d030cd47e02",
-  "checksum": "8cd8fa95fe66968aaa23f5f7791d8005",
+  "checksum": "d8eefbb50433e0961e652400b50c52c0",
   "words": {
     "applies": [
       "h2"
@@ -154,6 +154,8 @@
       "ol",
       "ol",
       "ol",
+      "ol",
+      "ol",
       "li",
       "li",
       "li",
@@ -194,7 +196,8 @@
       "li",
       "li",
       "li",
-      "strong"
+      "strong",
+      "p"
     ],
     "execute": [
       "p",
@@ -516,7 +519,10 @@
       "p",
       "p",
       "p",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "being": [
       "p",
@@ -555,7 +561,10 @@
       "ol",
       "ol",
       "li",
-      "li"
+      "li",
+      "ul",
+      "li",
+      "a"
     ],
     "name": [
       "p",
@@ -620,7 +629,10 @@
       "li",
       "li",
       "p",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "helps": [
       "p"
@@ -671,6 +683,7 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "li",
@@ -681,6 +694,7 @@
       "p"
     ],
     "that": [
+      "ol",
       "ol",
       "ol",
       "ol",
@@ -728,6 +742,7 @@
       "li"
     ],
     "identify": [
+      "ol",
       "ol",
       "li",
       "li",
@@ -892,9 +907,6 @@
       "ol",
       "li",
       "li"
-    ],
-    "code\nidentify": [
-      "ol"
     ],
     "whether": [
       "ol",
@@ -1116,8 +1128,12 @@
       "ol",
       "li"
     ],
-    "vulnerability\nuse": [
-      "ol"
+    "vulnerability": [
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p"
     ],
     "functionality": [
       "ol",
@@ -1225,14 +1241,15 @@
       "ol",
       "li"
     ],
-    "http//php.net/manual/en/function.pcntl": [
+    "http//phpnet/manual/en/functionpcntl": [
       "ol",
       "li",
       "a"
     ],
-    "exec.php.": [
+    "execphp": [
       "ol",
-      "li"
+      "li",
+      "a"
     ],
     "safest": [
       "ol",
@@ -1518,7 +1535,7 @@
       "p",
       "p"
     ],
-    "\"parameterization\"": [
+    "parameterization": [
       "ol",
       "li"
     ],
@@ -1591,9 +1608,6 @@
     "don't": [
       "ol",
       "li"
-    ],
-    "that\nuse": [
-      "ol"
     ],
     "correctly": [
       "ol",
@@ -1753,12 +1767,6 @@
     "definition": [
       "ol",
       "li"
-    ],
-    "vulnerability": [
-      "ol",
-      "li",
-      "li",
-      "p"
     ],
     "choose": [
       "ol",
@@ -1981,9 +1989,6 @@
       "ol",
       "li"
     ],
-    "exec.php": [
-      "a"
-    ],
     "problem": [
       "h2",
       "p"
@@ -1991,21 +1996,35 @@
     "classic": [
       "p"
     ],
-    "?php\nsystem(\"/usr/bin/touch": [
+    "?php": [
+      "pre",
+      "code",
+      "pre",
+      "code",
       "pre",
       "code",
       "pre",
       "code"
     ],
-    "\"": [
-      "pre",
-      "code",
+    "system/usr/bin/touch": [
       "pre",
       "code",
       "pre",
       "code"
     ],
-    "$_request'arg']);\n?>": [
+    "$_request'arg'": [
+      "pre",
+      "code",
+      "pre",
+      "code"
+    ],
+    "?": [
+      "pre",
+      "code",
+      "pre",
+      "code",
+      "pre",
+      "code",
       "pre",
       "code"
     ],
@@ -2052,7 +2071,10 @@
     ],
     "parameters": [
       "p",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "concatenated": [
       "p"
@@ -2075,19 +2097,21 @@
     "specified": [
       "p"
     ],
-    "?php\n$args": [
+    "$args": [
       "pre",
+      "pre",
+      "code",
       "code"
     ],
     "=": [
       "pre",
       "code"
     ],
-    "array$_request['arg']);\npcntl_exec(\"/usr/bin/touch\",": [
+    "array$_request'arg'": [
       "pre",
       "code"
     ],
-    "$args;\n?>": [
+    "pcntl_exec/usr/bin/touch": [
       "pre",
       "code"
     ],
@@ -2101,9 +2125,6 @@
       "p"
     ],
     "contain": [
-      "p"
-    ],
-    "pcntl_exec)": [
       "p"
     ],
     "default": [
@@ -2132,12 +2153,14 @@
       "p",
       "p"
     ],
-    "escapeshellcmd)": [
+    "escapeshellcmd": [
+      "p",
       "p",
       "p",
       "p"
     ],
-    "escapeshellarg)": [
+    "escapeshellarg": [
+      "p",
       "p"
     ],
     "sanitize": [
@@ -2187,7 +2210,7 @@
     "breakage": [
       "p"
     ],
-    "introduce.": [
+    "introduce": [
       "p"
     ],
     "trust": [
@@ -2199,10 +2222,7 @@
     "here": [
       "p"
     ],
-    "escapeshellarg):": [
-      "p"
-    ],
-    "escapeshellarg$_request['arg']));\n?>": [
+    "escapeshellarg$_request'arg'": [
       "pre",
       "code"
     ],
@@ -2210,9 +2230,6 @@
       "p"
     ],
     "have": [
-      "p"
-    ],
-    "escapeshellcmd),": [
       "p"
     ],
     "you're": [
@@ -2269,13 +2286,17 @@
     "like": [
       "p"
     ],
-    "?php\nsystem(escapeshellcmd(\"/usr/bin/touch": [
+    "systemescapeshellcmd/usr/bin/touch": [
       "pre",
       "code"
     ],
-    "$_request'arg']));\n?>": [
-      "pre",
-      "code"
+    "guideline": [
+      "h2"
+    ],
+    "names": [
+      "ul",
+      "li",
+      "a"
     ]
   },
   "tags": {},
@@ -2283,6 +2304,10 @@
     {
       "href": "http://php.net/manual/en/function.pcntl-exec.php",
       "text": "http://php.net/manual/en/function.pcntl-exec.php"
+    },
+    {
+      "href": "042253ce-3fe6-4138-926b-c3169ec0ea78",
+      "text": "Separate Parameters from Command Names"
     }
   ]
 }

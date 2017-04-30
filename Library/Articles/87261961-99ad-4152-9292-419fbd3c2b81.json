@@ -1,0 +1,59 @@
+{
+  "TeamMentor_Article": {
+    "$": {
+      "Metadata_Hash": "0",
+      "Content_Hash": "0"
+    },
+    "Metadata": [
+      {
+        "Id": [
+          "87261961-99ad-4152-9292-419fbd3c2b81"
+        ],
+        "Library_Id": [
+          "be5273b1-d682-4361-99d9-6234f2d47eb7"
+        ],
+        "Title": [
+          "Python 3 Create a File Safely"
+        ],
+        "Category": [
+          ""
+        ],
+        "Phase": [
+          "Implementation"
+        ],
+        "Technology": [
+          "Python"
+        ],
+        "Type": [
+          "Code Example"
+        ],
+        "DirectLink": [
+          ""
+        ],
+        "Tag": [
+          ""
+        ],
+        "Author": [
+          ""
+        ],
+        "Priority": [
+          ""
+        ],
+        "Status": [
+          ""
+        ]
+      }
+    ],
+    "Content": [
+      {
+        "$": {
+          "Sanitized": "false",
+          "DataType": "markdown"
+        },
+        "Data": [
+          "## Applies To ##\r\n\r\n* Python 3\r\n\r\n\r\n## Solution Example ##\r\n\r\n~~~~\r\n#! /usr/bin/env python3\r\nimport os\r\nimport sys\r\nimport stat\r\nfile = \"temporary_file\"\r\ntry:\r\n    fd = os.open(file, os.O_CREAT | os.O_EXCL | os.O_WRONLY)\r\nexcept OSError:\r\n    print(\"File already exists.\")\r\n    sys.exit()\r\n\r\nwith os.fdopen(fd, 'w') as f:\r\n    f.write('content')\r\n~~~~"
+        ]
+      }
+    ]
+  }
+}

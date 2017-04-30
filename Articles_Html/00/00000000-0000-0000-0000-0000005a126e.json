@@ -5,6 +5,12 @@
     "10": [
       "p"
     ],
+    "300": [
+      "pre"
+    ],
+    "1024": [
+      "pre"
+    ],
     "applies": [
       "h2"
     ],
@@ -437,6 +443,7 @@
       "li",
       "li",
       "p",
+      "pre",
       "pre",
       "p",
       "p",
@@ -1349,7 +1356,7 @@
       "ol",
       "li"
     ],
-    "systemxml.schema.xmlschemainference": [
+    "systemxmlschemaxmlschemainference": [
       "ol",
       "li",
       "em"
@@ -1438,12 +1445,12 @@
       "ol",
       "li"
     ],
-    "systemxml.xmlreader": [
+    "systemxmlxmlreader": [
       "ol",
       "li",
       "em"
     ],
-    "systemxml.xmlreadersettings": [
+    "systemxmlxmlreadersettings": [
       "ol",
       "li",
       "em",
@@ -1472,12 +1479,16 @@
       "li",
       "em",
       "em",
+      "pre",
+      "pre",
       "ol",
       "ol",
       "li",
       "em",
       "li",
-      "em"
+      "em",
+      "pre",
+      "pre"
     ],
     "object": [
       "ol",
@@ -1558,19 +1569,23 @@
       "li",
       "em"
     ],
-    "validationtypeschema.": [
+    "validationtypeschema": [
       "ol",
-      "li"
+      "li",
+      "em",
+      "pre"
     ],
     "xmlreader": [
       "ol",
       "li",
       "em",
+      "pre",
       "ol",
       "li",
-      "em"
+      "em",
+      "pre"
     ],
-    "xmlreadercreate()": [
+    "xmlreadercreate": [
       "ol",
       "li",
       "em",
@@ -1590,9 +1605,6 @@
       "ol",
       "li"
     ],
-    "validationtypeschema": [
-      "em"
-    ],
     "errors": [
       "p",
       "p"
@@ -1611,13 +1623,16 @@
       "p",
       "p"
     ],
-    "systemxml;\nusing": [
+    "systemxml": [
+      "pre",
       "pre"
     ],
-    "systemxml.schema;\nxmlreadersettings": [
+    "systemxmlschema": [
       "pre"
     ],
     "xmlsettings": [
+      "pre",
+      "pre",
       "pre",
       "pre"
     ],
@@ -1637,24 +1652,21 @@
       "pre",
       "pre"
     ],
-    "xmlreadersettings);\nxmlsettings.schemas.add(\"http://www.example.com/types\",": [
+    "xmlsettingsschemasaddhttp//wwwexamplecom/types": [
       "pre"
     ],
-    "\"typesxsd\");\nxmlsettings.validationtype": [
+    "typesxsd": [
       "pre"
     ],
-    "validationtypeschema;\nxmlreader": [
+    "xmlsettingsvalidationtype": [
+      "pre",
       "pre"
     ],
     "xmldata": [
       "pre",
       "pre"
     ],
-    "xmlreadercreate(\"data.xml\",": [
-      "pre",
-      "pre"
-    ],
-    "xmlsettings;": [
+    "xmlreadercreatedataxml": [
       "pre",
       "pre"
     ],
@@ -1797,9 +1809,11 @@
       "p",
       "p"
     ],
-    "validationtypedtd.": [
+    "validationtypedtd": [
       "ol",
-      "li"
+      "li",
+      "em",
+      "pre"
     ],
     "next": [
       "ol",
@@ -1813,7 +1827,8 @@
     "false": [
       "ol",
       "li",
-      "em"
+      "em",
+      "pre"
     ],
     "maxcharactersindocument": [
       "ol",
@@ -1942,7 +1957,8 @@
     "null": [
       "ol",
       "li",
-      "em"
+      "em",
+      "pre"
     ],
     "xmlsecureresolver": [
       "ol",
@@ -1957,31 +1973,19 @@
       "ol",
       "li"
     ],
-    "validationtypedtd": [
-      "em"
-    ],
     "disabling": [
       "p"
     ],
-    "systemxml;\nxmlreadersettings": [
+    "xmlsettingsprohibitdtd": [
       "pre"
     ],
-    "xmlreadersettings);\nxmlsettings.validationtype": [
+    "xmlsettingsmaxcharactersindocument": [
       "pre"
     ],
-    "validationtypedtd;\nxmlsettings.prohibitdtd": [
+    "xmlsettingsmaxcharactersfromentities": [
       "pre"
     ],
-    "false\nxmlsettings.maxcharactersindocument": [
-      "pre"
-    ],
-    "1024\nxmlsettings.maxcharactersfromentities": [
-      "pre"
-    ],
-    "300\nxmlsettings.xmlresolver": [
-      "pre"
-    ],
-    "null\nxmlreader": [
+    "xmlsettingsxmlresolver": [
       "pre"
     ],
     "problem": [
@@ -2085,38 +2089,43 @@
       "pre",
       "pre",
       "pre",
+      "pre",
+      "pre",
       "pre"
     ],
     "?xml": [
       "pre",
       "pre"
     ],
-    "version=\"10\"?": [
+    "version=10?": [
       "pre",
       "pre"
     ],
-    ">\n<person>": [
+    "person": [
       "pre"
     ],
-    "name>joe": [
+    "namejoe": [
       "pre"
     ],
-    "blow/name>": [
+    "blow/name": [
       "pre"
     ],
-    "dob>1986": [
+    "dob1986": [
       "pre"
     ],
     "08": [
       "pre"
     ],
-    "25</dob>": [
+    "25/dob": [
       "pre"
     ],
-    "phone>5558675309</phone>": [
+    "phone5558675309/phone": [
       "pre"
     ],
-    "employmentstatus>unemployed</employmentstatus>\n</person>": [
+    "employmentstatusunemployed/employmentstatus": [
+      "pre"
+    ],
+    "/person": [
       "pre"
     ],
     "perform": [
@@ -2174,51 +2183,51 @@
     "formatted": [
       "p"
     ],
-    ">\n<xs:schema": [
+    "xsschema": [
       "pre"
     ],
-    "xmlnsxs=\"http://www.w3.org/2001/xmlschema\">": [
+    "xmlnsxs=http//wwww3org/2001/xmlschema": [
       "pre"
     ],
-    "xs:element": [
+    "xselement": [
       "pre",
       "pre",
       "pre",
       "pre",
       "pre"
     ],
-    "name=\"person\"": [
+    "name=person": [
       "pre"
     ],
-    "xs:complextype>": [
+    "xscomplextype": [
       "pre"
     ],
-    "xs:sequence>": [
+    "xssequence": [
       "pre"
     ],
-    "name=\"name\"": [
+    "name=name": [
       "pre"
     ],
-    "xs:simpletype>": [
+    "xssimpletype": [
       "pre",
       "pre",
       "pre"
     ],
-    "xs:restriction": [
+    "xsrestriction": [
       "pre",
       "pre",
       "pre"
     ],
-    "base=\"xsstring\">": [
+    "base=xsstring": [
       "pre",
       "pre",
       "pre"
     ],
-    "xs:pattern": [
+    "xspattern": [
       "pre",
       "pre"
     ],
-    "value=\"a": [
+    "value=a": [
       "pre"
     ],
     "za": [
@@ -2227,59 +2236,60 @@
     "z": [
       "pre"
     ],
-    "+\"></xs:pattern>": [
+    "+/xspattern": [
       "pre"
     ],
-    "/xs:restriction>": [
+    "/xsrestriction": [
       "pre",
       "pre",
       "pre"
     ],
-    "/xs:simpletype>": [
+    "/xssimpletype": [
       "pre",
       "pre",
       "pre"
     ],
-    "/xs:element>": [
+    "/xselement": [
       "pre",
       "pre",
-      "pre"
-    ],
-    "name=\"dob\"": [
-      "pre"
-    ],
-    "type=\"xsdate\"></xs:element>": [
-      "pre"
-    ],
-    "name=\"phone\"": [
-      "pre"
-    ],
-    "value=\"0": [
-      "pre"
-    ],
-    "9]{10}\"></xs:pattern>": [
-      "pre"
-    ],
-    "name=\"employmentstatus\"": [
-      "pre"
-    ],
-    "xs:enumeration": [
       "pre",
       "pre"
     ],
-    "value=\"unemployed\"</xs:enumeration>": [
+    "name=dob": [
       "pre"
     ],
-    "value=\"employed\"</xs:enumeration>": [
+    "type=xsdate/xselement": [
       "pre"
     ],
-    "/xs:sequence>": [
+    "name=phone": [
       "pre"
     ],
-    "/xs:complextype>": [
+    "value=0": [
       "pre"
     ],
-    "/xs:element>\n</xs:schema>": [
+    "9{10}/xspattern": [
+      "pre"
+    ],
+    "name=employmentstatus": [
+      "pre"
+    ],
+    "xsenumeration": [
+      "pre",
+      "pre"
+    ],
+    "value=unemployed/xsenumeration": [
+      "pre"
+    ],
+    "value=employed/xsenumeration": [
+      "pre"
+    ],
+    "/xssequence": [
+      "pre"
+    ],
+    "/xscomplextype": [
+      "pre"
+    ],
+    "/xsschema": [
       "pre"
     ],
     "accept": [
@@ -2329,7 +2339,7 @@
     "“unemployed”": [
       "p"
     ],
-    "\"employed\"": [
+    "employed": [
       "p"
     ],
     "even": [
@@ -2358,6 +2368,9 @@
     ],
     "special": [
       "p"
+    ],
+    "net": [
+      "title"
     ]
   },
   "tags": {},

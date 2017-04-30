@@ -14,6 +14,7 @@
       "h1"
     ],
     "4": [
+      "pre",
       "p",
       "h1"
     ],
@@ -464,6 +465,7 @@
       "p",
       "p",
       "h2",
+      "pre",
       "p",
       "p",
       "p",
@@ -777,13 +779,23 @@
       "p",
       "p",
       "p",
+      "font",
+      "p",
+      "font",
+      "p",
+      "font",
+      "p",
       "p",
       "h2",
       "p",
       "ul",
       "li",
       "p",
+      "font",
       "p",
+      "p",
+      "p",
+      "font",
       "p",
       "p",
       "font",
@@ -1426,7 +1438,7 @@
       "p",
       "p"
     ],
-    "http//www.examplesite.com/getprofile.php?username=johnyc&password=qwerty": [
+    "http//wwwexamplesitecom/getprofilephp?username=johnyc&password=qwerty": [
       "p",
       "font"
     ],
@@ -1447,7 +1459,15 @@
     "node": [
       "p"
     ],
-    "user>": [
+    "usernamejohnyc/username": [
+      "p",
+      "font",
+      "p",
+      "font",
+      "p",
+      "font"
+    ],
+    "passwordqwerty/password": [
       "p",
       "font",
       "p",
@@ -1459,15 +1479,7 @@
       "p",
       "font"
     ],
-    "username>johnyc</username>": [
-      "p",
-      "font",
-      "p",
-      "font",
-      "p",
-      "font"
-    ],
-    "password>qwerty</password>": [
+    "userid111userid/": [
       "p",
       "font",
       "p",
@@ -1479,19 +1491,7 @@
       "p",
       "font"
     ],
-    "userid>111<userid/>": [
-      "p",
-      "font",
-      "p",
-      "font",
-      "p",
-      "font",
-      "p",
-      "font",
-      "p",
-      "font"
-    ],
-    "mail>johnyc@examplesite.com</mail></user>": [
+    "mailjohnyc@examplesitecom/mail/user": [
       "p",
       "font",
       "p",
@@ -1547,7 +1547,7 @@
     "calls": [
       "p"
     ],
-    "rpc)": [
+    "rpc": [
       "p"
     ],
     "cross": [
@@ -1732,7 +1732,13 @@
       "p"
     ],
     "java": [
-      "p"
+      "p",
+      "ul",
+      "ul",
+      "li",
+      "i",
+      "li",
+      "i"
     ],
     "functions": [
       "p"
@@ -1775,6 +1781,7 @@
       "pre"
     ],
     "x": [
+      "pre",
       "pre",
       "pre",
       "pre",
@@ -1823,7 +1830,13 @@
       "tr",
       "td"
     ],
-    "h\rset": [
+    "h": [
+      "pre",
+      "pre"
+    ],
+    "set": [
+      "pre",
+      "pre",
       "pre"
     ],
     "=": [
@@ -1840,60 +1853,89 @@
       "td",
       "p"
     ],
-    "createobject\"msxml2.domdocument\")\r\nx.loadxml": [
+    "createobjectmsxml2domdocument": [
       "pre"
     ],
-    "\"s:envelope": [
+    "xloadxml": [
       "pre"
     ],
-    "xmlnss='http://schemas.xmlsoap.org/soap/envelope/'\r\nxmlns:xsi='http://www.w3.org/1999/xmlschema": [
+    "senvelope": [
       "pre"
     ],
-    "instance'\r\nxmlns:xsd='http://www.w3.org/1999/xmlschema'><s:body><m:sayhello\r\nxmlns:m='urn:example1'><name": [
+    "xmlnss='http//schemasxmlsoaporg/soap/envelope/'": [
       "pre"
     ],
-    "xsitype='xsd:string'>james</name><\r\n/m:sayhello></s:body></s:envelope>\"\r\nmsgbox": [
+    "xmlnsxsi='http//wwww3org/1999/xmlschema": [
       "pre"
     ],
-    "xxml,": [
+    "instance'": [
       "pre"
     ],
-    "\"input": [
+    "xmlnsxsd='http//wwww3org/1999/xmlschema'sbodymsayhello": [
       "pre"
     ],
-    "message\"\rset": [
+    "xmlnsm='urnexample1'name": [
       "pre"
     ],
-    "h": [
+    "xsitype='xsdstring'james/name": [
       "pre"
     ],
-    "createobject\"microsoft.xmlhttp\")\r\nh.open": [
+    "/msayhello/sbody/senvelope": [
       "pre"
     ],
-    "\"post\"": [
+    "msgbox": [
+      "pre",
       "pre"
     ],
-    "\"http//localhost:8080\"\r\nh.send": [
+    "xxml": [
       "pre"
     ],
-    "x)\r\nwhile": [
+    "input": [
+      "pre",
+      "p",
+      "h2",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "message": [
+      "pre",
+      "pre",
+      "p",
+      "p"
+    ],
+    "createobjectmicrosoftxmlhttp": [
       "pre"
+    ],
+    "hopen": [
+      "pre"
+    ],
+    "post": [
+      "pre"
+    ],
+    "http//localhost8080": [
+      "pre"
+    ],
+    "hsend": [
+      "pre"
+    ],
+    "while": [
+      "pre",
+      "p"
     ],
     "hreadystate": [
       "pre"
     ],
-    ">": [
-      "pre",
-      "p",
-      "font"
-    ],
-    "4\rwend\r\nmsgbox": [
+    "wend": [
       "pre"
     ],
-    "hresponsetext,,\"output": [
-      "pre"
-    ],
-    "message\"": [
+    "hresponsetextoutput": [
       "pre"
     ],
     "injection": [
@@ -2504,6 +2546,10 @@
       "h2",
       "p",
       "p",
+      "font",
+      "p",
+      "p",
+      "font",
       "p"
     ],
     "bank": [
@@ -2564,7 +2610,7 @@
       "p",
       "p"
     ],
-    "http//www.examplesite.com/createchecking.php?username=johnyc&password=qwerty&email=johnyc@examplesite.com": [
+    "http//wwwexamplesitecom/createcheckingphp?username=johnyc&password=qwerty&email=johnyc@examplesitecom": [
       "p",
       "font"
     ],
@@ -2575,7 +2621,7 @@
       "p",
       "p"
     ],
-    "mail>johnyc@examplesite.com</mail>": [
+    "mailjohnyc@examplesitecom/mail": [
       "p",
       "font",
       "p",
@@ -2599,33 +2645,13 @@
       "p",
       "font"
     ],
-    "created>02": [
+    "created02": [
       "p",
       "font",
       "p",
       "font"
     ],
-    "2008</created>": [
-      "p",
-      "font",
-      "p",
-      "p",
-      "font",
-      "font"
-    ],
-    "number>1249109</number>": [
-      "p",
-      "font",
-      "p",
-      "font"
-    ],
-    "balance>1201</balance>": [
-      "p",
-      "font",
-      "p",
-      "font"
-    ],
-    "/account>": [
+    "2008/created": [
       "p",
       "font",
       "p",
@@ -2633,7 +2659,27 @@
       "font",
       "font"
     ],
-    "/user>": [
+    "number1249109/number": [
+      "p",
+      "font",
+      "p",
+      "font"
+    ],
+    "balance1201/balance": [
+      "p",
+      "font",
+      "p",
+      "font"
+    ],
+    "/account": [
+      "p",
+      "font",
+      "p",
+      "p",
+      "font",
+      "font"
+    ],
+    "/user": [
       "p",
       "font",
       "p",
@@ -2702,13 +2748,13 @@
       "p",
       "p"
     ],
-    "http//www.examplesite.com/createchecking.php?username=johnyc&password=qwerty&email=johnyc@examplesite.com</mail><account": [
+    "http//wwwexamplesitecom/createcheckingphp?username=johnyc&password=qwerty&email=johnyc@examplesitecom/mailaccount": [
       "p",
       "font",
       "p",
       "font"
     ],
-    "type=\"savings\"<created>03": [
+    "type=savingscreated03": [
       "p",
       "font",
       "p",
@@ -2728,7 +2774,7 @@
       "p",
       "font"
     ],
-    "2008</created><number>12345678</number><balance>1000000</balance></account>": [
+    "2008/creatednumber12345678/numberbalance1000000/balance/account": [
       "p",
       "font",
       "p",
@@ -2754,19 +2800,19 @@
     "check": [
       "p"
     ],
-    "type=\"savings\"": [
+    "type=savings": [
       "p",
       "font"
     ],
-    "created>03": [
+    "created03": [
       "p",
       "font"
     ],
-    "number>12345678</number>": [
+    "number12345678/number": [
       "p",
       "font"
     ],
-    "balance>1000000</balance>": [
+    "balance1000000/balance": [
       "p",
       "font"
     ],
@@ -2830,13 +2876,7 @@
       "p",
       "p"
     ],
-    "![cdata[": [
-      "p",
-      "i",
-      "p",
-      "i"
-    ],
-    "]>": [
+    "!cdata": [
       "p",
       "i",
       "p",
@@ -2895,37 +2935,31 @@
       "p",
       "font"
     ],
-    "version=\"10\"": [
+    "version=10": [
       "p",
       "font"
     ],
-    "encoding=\"iso": [
+    "encoding=iso": [
       "p",
       "font"
     ],
-    "1\"?<scenarios>": [
+    "1?scenarios": [
       "p",
       "font"
     ],
-    "scenario>": [
+    "titlexss": [
       "p",
       "font",
       "p",
       "font"
     ],
-    "title>xss": [
+    "scenario/title": [
       "p",
       "font",
       "p",
       "font"
     ],
-    "scenario/title>": [
-      "p",
-      "font",
-      "p",
-      "font"
-    ],
-    "data><![cdata[this": [
+    "data!cdatathis": [
       "p",
       "font"
     ],
@@ -2945,15 +2979,15 @@
       "p",
       "font"
     ],
-    "'\"<]]></data>": [
+    "'/data": [
       "p",
       "font"
     ],
-    "/scenario>": [
+    "/scenario": [
       "p",
       "font"
     ],
-    "etc…/scenarios>": [
+    "etc…/scenarios": [
       "p",
       "font"
     ],
@@ -2963,8 +2997,9 @@
       "li",
       "p"
     ],
-    "scenarios.php)": [
-      "p"
+    "scenariosphp": [
+      "p",
+      "i"
     ],
     "using": [
       "p",
@@ -2992,10 +3027,12 @@
       "li",
       "p"
     ],
-    "scenariosphp": [
-      "i"
+    "?php": [
+      "pre"
     ],
-    "?php\r\n$objdom": [
+    "$objdom": [
+      "pre",
+      "pre",
       "pre"
     ],
     "new": [
@@ -3003,19 +3040,20 @@
       "p",
       "p"
     ],
-    "domdocument);\r\n$objdom": [
+    "domdocument": [
       "pre"
     ],
-    ">load(\"scenarios.xml\");\r\n$scenario": [
-      "pre"
-    ],
-    "$objdom": [
-      "pre"
-    ],
-    "getelementsbytagname(\"scenario\");\r\nforeach(": [
+    "loadscenariosxml": [
       "pre"
     ],
     "$scenario": [
+      "pre",
+      "pre"
+    ],
+    "getelementsbytagnamescenario": [
+      "pre"
+    ],
+    "foreach": [
       "pre"
     ],
     "$value": [
@@ -3023,26 +3061,39 @@
       "pre",
       "pre"
     ],
-    "\r\n{\r\n$title": [
+    "{": [
       "pre"
     ],
-    "getelementsbytagname(\"title\")": [
+    "$title": [
       "pre"
     ],
-    ">item(0)": [
+    "getelementsbytagnametitle": [
+      "pre"
+    ],
+    "item0": [
       "pre",
       "pre"
     ],
-    ">nodevalue;\r\n$data": [
+    "nodevalue": [
+      "pre",
       "pre"
     ],
-    "getelementsbytagname(\"data\")": [
+    "$data": [
       "pre"
     ],
-    ">nodevalue;\r\necho": [
+    "getelementsbytagnamedata": [
       "pre"
     ],
-    "\"$title<br>$data<br>\";\r\n}\r\n?>": [
+    "echo": [
+      "pre"
+    ],
+    "$titlebr$databr": [
+      "pre"
+    ],
+    "}": [
+      "pre"
+    ],
+    "?": [
       "pre"
     ],
     "generate": [
@@ -3059,6 +3110,7 @@
       "p",
       "font",
       "p",
+      "h2",
       "p",
       "p"
     ],
@@ -3066,10 +3118,16 @@
       "p",
       "font"
     ],
-    "'\"<": [
+    "'": [
       "p",
       "font",
       "p",
+      "font",
+      "p",
+      "p",
+      "p",
+      "font",
+      "font",
       "font"
     ],
     "now": [
@@ -3095,7 +3153,7 @@
       "p",
       "p"
     ],
-    "data><![cdata[<script>alert('xss')</script>]]></data></scenario>": [
+    "data!cdatascriptalert'xss'/script/data/scenario": [
       "p",
       "font"
     ],
@@ -3129,7 +3187,8 @@
       "p"
     ],
     "next": [
-      "p"
+      "p",
+      "pre"
     ],
     "list": [
       "p",
@@ -3151,19 +3210,6 @@
       "p",
       "p",
       "h2",
-      "p"
-    ],
-    "input": [
-      "p",
-      "h2",
-      "p",
-      "p",
-      "p",
-      "p",
-      "p",
-      "p",
-      "p",
-      "p",
       "p"
     ],
     "our": [
@@ -3517,11 +3563,6 @@
       "li",
       "i"
     ],
-    "java)": [
-      "ul",
-      "li",
-      "i"
-    ],
     "msxml": [
       "ul",
       "li",
@@ -3552,11 +3593,6 @@
       "li",
       "i"
     ],
-    "java,": [
-      "ul",
-      "li",
-      "i"
-    ],
     "c++": [
       "ul",
       "li",
@@ -3580,7 +3616,7 @@
       "li",
       "i"
     ],
-    "xml:parser": [
+    "xmlparser": [
       "ul",
       "li",
       "i"
@@ -3707,16 +3743,28 @@
       "p",
       "p"
     ],
-    "set": [
+    "xmldoc=createobjectmicrosoftxmldom": [
       "pre"
     ],
-    "xmldoc=createobject\"microsoft.xmldom\")\r\nxmldoc.async=\"false\"\r\nxmldoc.load(\"accounts.xml\")\r\nfor": [
+    "xmldocasync=false": [
       "pre"
     ],
-    "xmldocdocumentelement.childnodes\r\ndocument.write(x.nodename)\r\ndocument.write(\":": [
+    "xmldocloadaccountsxml": [
       "pre"
     ],
-    "\"\r\ndocument.write(x.text)\r\ndocument.write(request.querystring(\"input\"))\r\nnext": [
+    "xmldocdocumentelementchildnodes": [
+      "pre"
+    ],
+    "documentwritexnodename": [
+      "pre"
+    ],
+    "documentwrite": [
+      "pre"
+    ],
+    "documentwritextext": [
+      "pre"
+    ],
+    "documentwriterequestquerystringinput": [
       "pre"
     ],
     "detect": [
@@ -3809,7 +3857,7 @@
     "definitions": [
       "h2"
     ],
-    "dtds)": [
+    "dtds": [
       "h2"
     ],
     "programmers": [
@@ -4134,30 +4182,6 @@
     "combined": [
       "p"
     ],
-    "'": [
-      "p",
-      "p",
-      "p",
-      "font",
-      "font",
-      "font"
-    ],
-    "\"<": [
-      "p",
-      "font"
-    ],
-    "\"": [
-      "p",
-      "p",
-      "font",
-      "font",
-      "div",
-      "table",
-      "tbody",
-      "tr",
-      "td",
-      "p"
-    ],
     "observe": [
       "p",
       "p"
@@ -4183,10 +4207,6 @@
       "p",
       "p",
       "font"
-    ],
-    "message": [
-      "p",
-      "p"
     ],
     "good": [
       "p"
@@ -4235,11 +4255,11 @@
     "resulting": [
       "p"
     ],
-    "username>xyz<!": [
+    "usernamexyz!": [
       "p",
       "font"
     ],
-    "</username>": [
+    "/username": [
       "p",
       "font"
     ],
@@ -4269,7 +4289,7 @@
       "font",
       "p"
     ],
-    "username>&xyz</username>": [
+    "username&xyz/username": [
       "p",
       "font"
     ],
@@ -4344,7 +4364,7 @@
     "responded": [
       "p"
     ],
-    "xml<user": [
+    "xmluser": [
       "p",
       "font"
     ],
@@ -4366,13 +4386,13 @@
       "p",
       "font"
     ],
-    "realname='tester'>": [
+    "realname='tester'": [
       "p",
       "font",
       "p",
       "font"
     ],
-    "password='ind3$truct'/><user>": [
+    "password='ind3$truct'/user": [
       "p",
       "font"
     ],
@@ -4381,9 +4401,6 @@
       "h2"
     ],
     "utilize": [
-      "p"
-    ],
-    "while": [
       "p"
     ],
     "conserving": [
@@ -4395,11 +4412,11 @@
     "original": [
       "p"
     ],
-    "attacker'<id": [
+    "attacker'id": [
       "p",
       "font"
     ],
-    "='1234'/<realname='hacker'><password='qwerty'/></user><user": [
+    "='1234'/realname='hacker'password='qwerty'//useruser": [
       "p",
       "font"
     ],
@@ -4419,11 +4436,11 @@
       "p",
       "font"
     ],
-    "realname='hacker'>": [
+    "realname='hacker'": [
       "p",
       "font"
     ],
-    "password='ind3$truct'/></user><user": [
+    "password='ind3$truct'//useruser": [
       "p",
       "font"
     ],
@@ -4431,16 +4448,13 @@
       "p",
       "font"
     ],
-    "password='realuserpassword'/></user>": [
+    "password='realuserpassword'//user": [
       "p",
       "font"
     ],
     "exploit": [
       "h2",
       "p"
-    ],
-    "xss)": [
-      "h2"
     ],
     "finish": [
       "p"
@@ -4463,7 +4477,7 @@
     "extracts": [
       "p"
     ],
-    "![cdata[xyz]]>": [
+    "!cdataxyz": [
       "p",
       "font"
     ],
@@ -4483,15 +4497,16 @@
     "manner": [
       "p"
     ],
-    "![cdata[<]]>script<![cdata[>]]>": [
+    "!cdatascript!cdata": [
       "p",
       "font"
     ],
-    "script>": [
+    "script": [
       "p",
       "font",
       "p",
       "font",
+      "p",
       "p",
       "p",
       "i",
@@ -4501,11 +4516,11 @@
       "p",
       "p"
     ],
-    "![cdata[<script>alert('xss')</script>]]>": [
+    "!cdatascriptalert'xss'/script": [
       "p",
       "font"
     ],
-    "script>alert('xss')</script>": [
+    "scriptalert'xss'/script": [
       "p",
       "font"
     ],
@@ -4551,7 +4566,7 @@
       "p",
       "p"
     ],
-    "johnyc@examplesitecom</mail><account": [
+    "johnyc@examplesitecom/mailaccount": [
       "p",
       "font"
     ],
@@ -4624,7 +4639,13 @@
     "than/greater": [
       "p"
     ],
-    "</>)": [
+    "/": [
+      "p",
+      "div",
+      "table",
+      "tbody",
+      "tr",
+      "td",
       "p"
     ],
     "symbols": [
@@ -4670,7 +4691,7 @@
     "plus": [
       "p"
     ],
-    "+)": [
+    "+": [
       "p"
     ],
     "sign": [
@@ -4718,19 +4739,16 @@
     "values": [
       "p"
     ],
-    "e.g.": [
+    "eg": [
       "p"
     ],
     "%hh": [
       "p"
     ],
-    ".": [
-      "p"
-    ],
     "seen": [
       "p"
     ],
-    "http//www.examplesite.com/createchecking.php?username=johnyc&password=qwerty&email=johnyc%40examplesite.com%3c%2fmail%3e%3caccount%20type%3d%22savings%22%3e%3ccreated%3e03": [
+    "http//wwwexamplesitecom/createcheckingphp?username=johnyc&password=qwerty&email=johnyc%40examplesitecom%3c%2fmail%3e%3caccount%20type%3d%22savings%22%3e%3ccreated%3e03": [
       "p",
       "font"
     ],
@@ -4754,14 +4772,6 @@
       "p"
     ],
     "@": [
-      "div",
-      "table",
-      "tbody",
-      "tr",
-      "td",
-      "p"
-    ],
-    "/": [
       "div",
       "table",
       "tbody",
@@ -4833,7 +4843,7 @@
       "p",
       "font"
     ],
-    "classid=\"clsidd27cdb6e": [
+    "classid=clsidd27cdb6e": [
       "p",
       "font"
     ],
@@ -4849,27 +4859,27 @@
       "p",
       "font"
     ],
-    "444553540000\"": [
+    "444553540000": [
       "p",
       "font"
     ],
-    "codebase=\"http//macromedia.com/cabs/swflash.cab#version=6,0,0,0\"": [
+    "codebase=http//macromediacom/cabs/swflashcab#version=6000": [
       "p",
       "font"
     ],
-    "width=\"250\"": [
+    "width=250": [
       "p",
       "font"
     ],
-    "height=\"250\"": [
+    "height=250": [
       "p",
       "font"
     ],
-    "id=\"flamovie1\"": [
+    "id=flamovie1": [
       "p",
       "font"
     ],
-    "align=\"center\"": [
+    "align=center": [
       "p",
       "font"
     ],
@@ -4885,7 +4895,7 @@
       "p",
       "font"
     ],
-    "value=\"flamovie1swf\">": [
+    "value=flamovie1swf": [
       "p",
       "font"
     ],
@@ -4893,7 +4903,7 @@
       "p",
       "font"
     ],
-    "value=\"input=userinput\"": [
+    "value=input=userinput": [
       "p",
       "font"
     ],
@@ -4905,7 +4915,7 @@
       "p",
       "font"
     ],
-    "/object>": [
+    "/object": [
       "p",
       "font"
     ],
@@ -4950,10 +4960,7 @@
     "hide": [
       "p"
     ],
-    "script": [
-      "p"
-    ],
-    "data><[cdata[<sc]]><![cdata[ript>alert('xss')</sc]]><![cdata[ript>]]></data>": [
+    "datacdatasc!cdatariptalert'xss'/sc!cdataript/data": [
       "p",
       "font"
     ],
@@ -5038,7 +5045,7 @@
       "ul",
       "li"
     ],
-    "xee)": [
+    "xee": [
       "ul",
       "li"
     ],

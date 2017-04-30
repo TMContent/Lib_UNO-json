@@ -13,7 +13,7 @@
           "00000000-0000-0000-0000-00000081be72,9e63ab45-8022-409e-b663-7111a8248f5a,"
         ],
         "Library_Id": [
-          "b6f408c5-6e6e-4bc0-90a5-0bb10becc2ce"
+          "be5273b1-d682-4361-99d9-6234f2d47eb7"
         ],
         "Title": [
           "Avoid Using URL Handlers for Sensitive Operations"
@@ -28,7 +28,7 @@
           "iOS"
         ],
         "Type": [
-          "Guideline"
+          "How To"
         ],
         "DirectLink": [
           "Avoid Using URL Handlers for Sensitive Operations"
@@ -51,7 +51,7 @@
           "DataType": "WikiText"
         },
         "Data": [
-          "==Applies To==\r\n\r\n* iOS applications that use URL handlers.\r\n\r\n==What to Do==\r\n\r\nAvoid using URL handlers for sensitive operations.\r\n\r\n==Why==\r\n\r\nURL handlers may be abused in Cross-Site Scripting attacks. If URL handlers are used for sensitive operations, such sensitive operations may be exploited in Cross-Site Scripting attacks.\r\n\r\n==How==\r\n\r\nTo avoid using URL handlers for sensitive operations:\r\n\r\n# **Identify all URL handlers used by the application.** Examine the application .plist file for //URL Types// defined by the application. These //URL Types// correspond to URL handlers used by the application.\r\n# **Identify the operations associated with the URL handlers.** The developers should know what each //URL Type// is responsible for. Consider each one and decide if it is safe to keep.\r\n# **Remove dangerous URL handlers.** Sometimes URL handlers are used for testing. Remove any URL handlers that may be too dangerous from the production release.\r\n# **Verify the origin of the URL request**. Use the //openURL// method to make sure the URL request came from within the application itself or from a trusted application for any remaining URL handlers.\r\n\r\n==Dangerous API Guidelines==\r\n* [[00000000-0000-0000-0000-00000081be72|Avoid Using URL Handlers for Sensitive Operations]]\r\n* [[00000000-0000-0000-0000-0000004a6201|Disable Parsing of External XML Entities]]\r\n* [[00000000-0000-0000-0000-00000072e73d|Use Static Format Strings]]\r\n\r\n==Dangerous API Checklists==\r\n* [[00000000-0000-0000-0000-00000090f889|URL Handlers Are Not Used for Sensitive Operations]]\r\n* [[00000000-0000-0000-0000-00000036b1bf|Parsing of External XML Entities Is Disabled]]\r\n* [[00000000-0000-0000-0000-0000008ea142|Static Format Strings Are Used]]\r\n\r\n==Additional Resources==\r\n\r\n* For more information about the //openURL// method, please see http://developer.apple.com/library/ios/#DOCUMENTATION/UIKit/Reference/UIApplication_Class/Reference/Reference.html"
+          "==Applies To==\n\n* iOS applications that use URL handlers.\n\n==What to Do==\n\nAvoid using URL handlers for sensitive operations.\n\n==Why==\n\nURL handlers may be abused in Cross-Site Scripting attacks. If URL handlers are used for sensitive operations, such sensitive operations may be exploited in Cross-Site Scripting attacks.\n\n==How==\n\nTo avoid using URL handlers for sensitive operations:\n\n# **Identify all URL handlers used by the application.** Examine the application .plist file for //URL Types// defined by the application. These //URL Types// correspond to URL handlers used by the application.\n# **Identify the operations associated with the URL handlers.** The developers should know what each //URL Type// is responsible for. Consider each one and decide if it is safe to keep.\n# **Remove dangerous URL handlers.** Sometimes URL handlers are used for testing. Remove any URL handlers that may be too dangerous from the production release.\n# **Verify the origin of the URL request**. Use the //openURL// method to make sure the URL request came from within the application itself or from a trusted application for any remaining URL handlers.\n\n\n==Additional Resources==\n\n* For more information about the //openURL// method, please see http://developer.apple.com/library/ios/#DOCUMENTATION/UIKit/Reference/UIApplication_Class/Reference/Reference.html"
         ]
       }
     ]

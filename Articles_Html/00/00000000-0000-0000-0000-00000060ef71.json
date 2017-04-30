@@ -114,6 +114,7 @@
       "li",
       "li",
       "li",
+      "pre",
       "pre"
     ],
     "and": [
@@ -509,7 +510,7 @@
       "ul",
       "li"
     ],
-    "systemsecurity.cryptography": [
+    "systemsecuritycryptography": [
       "ol",
       "li",
       "em"
@@ -586,6 +587,7 @@
       "ol",
       "li",
       "em",
+      "pre",
       "pre"
     ],
     "create": [
@@ -607,6 +609,7 @@
       "strong",
       "pre",
       "pre",
+      "pre",
       "pre"
     ],
     "context": [
@@ -616,7 +619,9 @@
       "li",
       "li",
       "li",
-      "strong"
+      "strong",
+      "pre",
+      "pre"
     ],
     "it": [
       "ol",
@@ -695,7 +700,7 @@
       "ol",
       "li"
     ],
-    "byte]": [
+    "byte": [
       "pre"
     ],
     "=": [
@@ -704,16 +709,20 @@
       "pre",
       "pre"
     ],
-    "protecteddataprotect(rij.key,": [
+    "protecteddataprotectrijkey": [
       "pre"
     ],
     "null": [
       "pre"
     ],
-    "dataprotectionscopecurrentuser);\n//": [
+    "dataprotectionscopecurrentuser": [
       "pre"
     ],
-    "context\nstring": [
+    "//": [
+      "pre",
+      "pre"
+    ],
+    "string": [
       "pre"
     ],
     "environmentuserdomainname": [
@@ -723,25 +732,53 @@
       "pre",
       "pre"
     ],
-    "\"\\\\\"": [
+    "\\\\": [
       "pre"
     ],
-    "environmentusername;\nregistrysecurity": [
+    "environmentusername": [
       "pre"
     ],
-    "registrysecurity);\nregistryaccessrule": [
+    "registrysecurity": [
+      "pre",
+      "pre"
+    ],
+    "registryaccessrule": [
       "pre"
     ],
     "rule": [
       "pre"
     ],
-    "registryaccessruleuser,\n\tregistryrights.fullcontrol,\n\tinheritanceflags.containerinherit,\n\tpropagationflags.none,\n\taccesscontroltype.allow);\nsecurity.addaccessrule(rule);\n//": [
+    "registryaccessruleuser": [
       "pre"
     ],
-    "context\nregistry.currentuser.createsubkey(\"aessymmetrickey\",\n\tregistrykeypermissioncheck.readwritesubtree,\n\tsecurity);\n//store": [
+    "registryrightsfullcontrol": [
       "pre"
     ],
-    "registry\nregistry.setvalue(@\"hkey_current_user\\aessymmetrickey\",\n\t\"keydata\",\n\tprotectedkey);": [
+    "inheritanceflagscontainerinherit": [
+      "pre"
+    ],
+    "propagationflagsnone": [
+      "pre"
+    ],
+    "accesscontroltypeallow": [
+      "pre"
+    ],
+    "securityaddaccessrulerule": [
+      "pre"
+    ],
+    "registrycurrentusercreatesubkeyaessymmetrickey": [
+      "pre"
+    ],
+    "registrykeypermissioncheckreadwritesubtree": [
+      "pre"
+    ],
+    "//store": [
+      "pre"
+    ],
+    "registrysetvalue@hkey_current_user\\aessymmetrickey": [
+      "pre"
+    ],
+    "keydata": [
       "pre"
     ],
     "additional": [
@@ -775,15 +812,18 @@
       "ul",
       "li"
     ],
-    "http//msdn.microsoft.com/en": [
+    "http//msdnmicrosoftcom/en": [
       "ul",
       "li",
       "a"
     ],
-    "us/library/system.security.cryptography.protecteddata.aspx": [
+    "us/library/systemsecuritycryptographyprotecteddataaspx": [
       "ul",
       "li",
       "a"
+    ],
+    "net": [
+      "title"
     ]
   },
   "tags": {},

@@ -339,6 +339,7 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "li",
@@ -366,10 +367,12 @@
       "li",
       "li",
       "li",
+      "li",
       "p",
       "p",
       "p",
       "strong",
+      "ul",
       "ul",
       "ul",
       "li",
@@ -390,7 +393,22 @@
       "li",
       "p"
     ],
-    "vsi)": [
+    "vsi": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "p",
+      "li",
+      "li",
+      "p",
+      "p",
+      "strong",
       "p"
     ],
     "api": [
@@ -538,23 +556,6 @@
     ],
     "why": [
       "h2"
-    ],
-    "vsi": [
-      "p",
-      "p",
-      "p",
-      "p",
-      "ol",
-      "ol",
-      "ol",
-      "li",
-      "p",
-      "li",
-      "li",
-      "p",
-      "p",
-      "strong",
-      "p"
     ],
     "architecture": [
       "p"
@@ -1031,6 +1032,7 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "li",
@@ -1041,6 +1043,8 @@
       "p",
       "strong",
       "li",
+      "li",
+      "ul",
       "ul",
       "li",
       "li",
@@ -1296,6 +1300,7 @@
     ],
     "process": [
       "p",
+      "ol",
       "li",
       "p",
       "strong"
@@ -1402,9 +1407,13 @@
       "p",
       "ol",
       "ol",
+      "ol",
+      "ol",
       "li",
       "li",
       "li",
+      "li",
+      "p",
       "p",
       "p",
       "p",
@@ -1443,6 +1452,7 @@
     ],
     "information": [
       "p",
+      "ol",
       "li",
       "p",
       "p"
@@ -1460,6 +1470,7 @@
       "p"
     ],
     "define": [
+      "ol",
       "ol",
       "li",
       "p",
@@ -1578,8 +1589,10 @@
       "li",
       "p"
     ],
-    "components\n\n\ndefine": [
-      "ol"
+    "components": [
+      "ol",
+      "li",
+      "p"
     ],
     "server": [
       "ol",
@@ -1598,9 +1611,21 @@
       "li",
       "p"
     ],
-    "vss)": [
+    "vss": [
+      "ol",
+      "ol",
+      "ol",
+      "ol",
       "ol",
       "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "p",
+      "p",
+      "p",
+      "p",
       "p"
     ],
     "rfc": [
@@ -1647,20 +1672,6 @@
     "mode": [
       "ol",
       "li",
-      "p"
-    ],
-    "vss": [
-      "ol",
-      "ol",
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "li",
-      "li",
-      "p",
-      "p",
-      "p",
       "p"
     ],
     "runs": [
@@ -1781,8 +1792,15 @@
       "li",
       "p"
     ],
-    "information\n\n\ncreate": [
-      "ol"
+    "create": [
+      "ol",
+      "ol",
+      "li",
+      "p",
+      "strong",
+      "li",
+      "p",
+      "strong"
     ],
     "profile": [
       "ol",
@@ -1845,7 +1863,7 @@
       "p",
       "code"
     ],
-    "package/<freely": [
+    "package/freely": [
       "ol",
       "li",
       "p",
@@ -1857,10 +1875,11 @@
       "p",
       "code"
     ],
-    "name.\nprofiles": [
+    "name": [
       "ol",
       "li",
-      "p"
+      "p",
+      "code"
     ],
     "selected": [
       "ol",
@@ -1892,8 +1911,11 @@
       "li",
       "p"
     ],
-    "profiles\n\nidentify": [
-      "ol"
+    "identify": [
+      "ol",
+      "li",
+      "p",
+      "strong"
     ],
     "determine": [
       "ol",
@@ -1931,8 +1953,10 @@
       "li",
       "p"
     ],
-    "statement\n\n\ncreate": [
-      "ol"
+    "statement": [
+      "ol",
+      "li",
+      "p"
     ],
     "instance": [
       "ol",
@@ -1978,6 +2002,9 @@
       "code"
     ],
     "perform": [
+      "ol",
+      "ol",
+      "ol",
       "ol",
       "ol",
       "li",
@@ -2038,8 +2065,11 @@
       "pre",
       "code"
     ],
-    "cl_vsi=get_instance\n\n\n\nperform": [
-      "ol"
+    "cl_vsi=get_instance": [
+      "ol",
+      "li",
+      "pre",
+      "code"
     ],
     "byte": [
       "ol",
@@ -2079,12 +2109,17 @@
       "pre",
       "code"
     ],
-    "scan_bytes\n\n\n\nprocess": [
-      "ol"
+    "scan_bytes": [
+      "ol",
+      "li",
+      "pre",
+      "code"
     ],
     "results": [
       "ol",
       "ol",
+      "ol",
+      "li",
       "li",
       "li",
       "p",
@@ -2112,9 +2147,17 @@
       "li",
       "p"
     ],
-    "results\n\nreturn": [
+    "return": [
       "ol",
-      "li"
+      "ol",
+      "li",
+      "li",
+      "ul",
+      "ul",
+      "li",
+      "strong",
+      "li",
+      "strong"
     ],
     "lf_scanrc": [
       "ol",
@@ -2148,12 +2191,13 @@
       "p",
       "p"
     ],
-    "cl_vsi=con_scanrc_ok.": [
+    "cl_vsi=con_scanrc_ok": [
       "ol",
       "li",
       "ul",
       "li",
-      "strong"
+      "strong",
+      "code"
     ],
     "indicates": [
       "ol",
@@ -2190,6 +2234,7 @@
     "performed": [
       "ol",
       "ol",
+      "ol",
       "li",
       "ul",
       "li",
@@ -2204,10 +2249,14 @@
       "ul",
       "li"
     ],
-    "found\nreturn": [
+    "found": [
+      "ol",
       "ol",
       "li",
-      "ul"
+      "ul",
+      "li",
+      "li",
+      "p"
     ],
     "another": [
       "ol",
@@ -2272,17 +2321,13 @@
     ],
     "failed": [
       "ol",
+      "ol",
       "li",
       "li",
       "ul",
       "ul",
       "li",
       "li"
-    ],
-    "scan\nan": [
-      "ol",
-      "li",
-      "ul"
     ],
     "exception": [
       "ol",
@@ -2327,9 +2372,6 @@
       "li",
       "ul",
       "li"
-    ],
-    "failed\n\n\n\nperform": [
-      "ol"
     ],
     "cleanup": [
       "ol",
@@ -2428,9 +2470,6 @@
       "li",
       "p"
     ],
-    "performed\n\n\nperform": [
-      "ol"
-    ],
     "local": [
       "ol",
       "ol",
@@ -2456,12 +2495,6 @@
     ],
     "standard": [
       "ol",
-      "li",
-      "p"
-    ],
-    "found": [
-      "ol",
-      "li",
       "li",
       "p"
     ],
@@ -2501,50 +2534,6 @@
       "ol",
       "li",
       "p"
-    ],
-    "components": [
-      "li",
-      "p"
-    ],
-    "create": [
-      "li",
-      "p",
-      "strong",
-      "li",
-      "p",
-      "strong"
-    ],
-    "name": [
-      "code"
-    ],
-    "identify": [
-      "li",
-      "p",
-      "strong"
-    ],
-    "statement": [
-      "li",
-      "p"
-    ],
-    "cl_vsi=get_instance": [
-      "li",
-      "pre",
-      "code"
-    ],
-    "scan_bytes": [
-      "li",
-      "pre",
-      "code"
-    ],
-    "return": [
-      "ul",
-      "li",
-      "strong",
-      "li",
-      "strong"
-    ],
-    "cl_vsi=con_scanrc_ok": [
-      "code"
     ],
     "about": [
       "p"

@@ -30,10 +30,8 @@
       "li",
       "p"
     ],
-    "c++windows": [
-      "ul"
-    ],
     "c++": [
+      "ul",
       "li",
       "p",
       "p",
@@ -49,6 +47,7 @@
       "p"
     ],
     "windows": [
+      "ul",
       "li",
       "p",
       "p",
@@ -105,6 +104,7 @@
       "p",
       "p",
       "p",
+      "ol",
       "ol",
       "li",
       "p",
@@ -327,8 +327,19 @@
       "p",
       "p"
     ],
-    "seh)": [
-      "p"
+    "seh": [
+      "p",
+      "p",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "li",
+      "p",
+      "p",
+      "p",
+      "strong"
     ],
     "uses": [
       "p",
@@ -541,6 +552,7 @@
       "p",
       "ol",
       "ol",
+      "ol",
       "li",
       "p",
       "li",
@@ -685,18 +697,6 @@
     "they": [
       "p"
     ],
-    "seh": [
-      "p",
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "li",
-      "p",
-      "p",
-      "p",
-      "strong"
-    ],
     "technique": [
       "p"
     ],
@@ -712,19 +712,26 @@
       "li",
       "p"
     ],
-    "strcpy),": [
+    "strcpy": [
+      "p",
+      "code",
+      "ol",
+      "li",
+      "p",
+      "code"
+    ],
+    "scanf": [
+      "p",
+      "code",
+      "ol",
+      "li",
+      "p",
+      "code"
+    ],
+    "etc": [
       "p",
       "ol",
       "li",
-      "p"
-    ],
-    "scanf),": [
-      "p",
-      "ol",
-      "li",
-      "p"
-    ],
-    "etc,": [
       "p"
     ],
     "work": [
@@ -741,6 +748,7 @@
     ],
     "size": [
       "p",
+      "ol",
       "li",
       "p"
     ],
@@ -755,14 +763,6 @@
     ],
     "sources": [
       "p"
-    ],
-    "strcpy)": [
-      "code",
-      "code"
-    ],
-    "scanf)": [
-      "code",
-      "code"
     ],
     "how": [
       "h2"
@@ -780,6 +780,7 @@
       "title"
     ],
     "identify": [
+      "ol",
       "ol",
       "ol",
       "ol",
@@ -834,18 +835,19 @@
       "p",
       "strong"
     ],
-    "etc": [
-      "ol",
-      "li",
-      "p"
-    ],
     "buffers": [
       "ol",
       "li",
       "p"
     ],
-    "size\n\n\nreplace": [
-      "ol"
+    "replace": [
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
+      "p",
+      "strong"
     ],
     "safe": [
       "ol",
@@ -887,14 +889,6 @@
       "li",
       "p"
     ],
-    "replace": [
-      "ol",
-      "li",
-      "li",
-      "p",
-      "p",
-      "strong"
-    ],
     "safer": [
       "ol",
       "li",
@@ -915,9 +909,6 @@
       "li",
       "p"
     ],
-    "code\n\n\nidentify": [
-      "ol"
-    ],
     "consider": [
       "ol",
       "li",
@@ -935,9 +926,6 @@
       "ol",
       "li",
       "p"
-    ],
-    "seh\n\n\nuse": [
-      "ol"
     ],
     "options": [
       "ol",

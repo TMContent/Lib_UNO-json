@@ -2,6 +2,10 @@
   "id": "e50f4854-c427-470e-b9a7-2638ae697722",
   "checksum": "6959c65720478f341df291e7193f72d9",
   "words": {
+    "0": [
+      "pre",
+      "pre"
+    ],
     "1": [
       "ul",
       "li",
@@ -495,6 +499,9 @@
       "li",
       "li",
       "ol",
+      "ol",
+      "li",
+      "ol",
       "li",
       "li",
       "ul",
@@ -528,6 +535,8 @@
       "ol",
       "ol",
       "li",
+      "li",
+      "ol",
       "li",
       "ol",
       "li",
@@ -771,6 +780,9 @@
       "p",
       "ol",
       "li",
+      "ol",
+      "li",
+      "ol",
       "li",
       "p",
       "p"
@@ -979,10 +991,16 @@
     "common": [
       "p"
     ],
-    "xss)": [
+    "xss": [
       "ul",
       "li",
-      "h2"
+      "p",
+      "h2",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p"
     ],
     "scenario": [
       "h2",
@@ -1010,7 +1028,7 @@
     "document": [
       "p"
     ],
-    "http//victim/documents/getdocs.aspx?docname=../../secret.doc": [
+    "http//victim/documents/getdocsaspx?docname=//secretdoc": [
       "p",
       "font"
     ],
@@ -1077,13 +1095,16 @@
     "slash": [
       "p"
     ],
-    "\"./\"": [
-      "p"
+    "/": [
+      "p",
+      "em",
+      "em",
+      "em"
     ],
     "without": [
       "p"
     ],
-    "quotes.": [
+    "quotes": [
       "p",
       "p"
     ],
@@ -1142,13 +1163,8 @@
       "p",
       "em"
     ],
-    "respectively:": [
+    "respectively": [
       "p"
-    ],
-    "./": [
-      "em",
-      "em",
-      "em"
     ],
     "%2e%2e%2f%2e%2e%2fprivate/secretpdf": [
       "p",
@@ -1184,6 +1200,7 @@
       "p",
       "p",
       "p",
+      "pre",
       "p",
       "p",
       "p",
@@ -1224,20 +1241,16 @@
     "re": [
       "p"
     ],
-    "%)": [
-      "p"
+    "%": [
+      "p",
+      "em"
     ],
     "its": [
       "p",
       "p"
     ],
-    "%25):": [
-      "p"
-    ],
-    "%": [
-      "em"
-    ],
     "%25": [
+      "p",
       "em"
     ],
     "%252e%252e%252f%252e%252e%252fprivate/secretpdf": [
@@ -1299,7 +1312,7 @@
       "p",
       "p"
     ],
-    "script>alert('xss')</script>": [
+    "scriptalert'xss'/script": [
       "p",
       "font",
       "table",
@@ -1312,6 +1325,7 @@
       "p",
       "pre",
       "p",
+      "pre",
       "ol",
       "li",
       "ol",
@@ -1339,7 +1353,7 @@
     "time": [
       "p"
     ],
-    "%3cscript%3ealert'xss')%3c%2fscript%3e": [
+    "%3cscript%3ealert'xss'%3c%2fscript%3e": [
       "p",
       "font",
       "table",
@@ -1406,7 +1420,7 @@
     "tries": [
       "p"
     ],
-    "%253cscript%253ealert'xss')%253c%252fscript%253e": [
+    "%253cscript%253ealert'xss'%253c%252fscript%253e": [
       "p",
       "font",
       "table",
@@ -1444,14 +1458,6 @@
       "p"
     ],
     "original": [
-      "p"
-    ],
-    "xss": [
-      "p",
-      "ol",
-      "ol",
-      "li",
-      "li",
       "p"
     ],
     "what": [
@@ -1502,6 +1508,7 @@
       "p",
       "p",
       "p",
+      "pre",
       "p",
       "p",
       "p",
@@ -1558,7 +1565,7 @@
     "blacklisted": [
       "p"
     ],
-    "“./”,": [
+    "“/”": [
       "p",
       "p"
     ],
@@ -1599,7 +1606,13 @@
       "p",
       "i"
     ],
-    "!existsinblacklist(request.querystring[\"filename\"]))\r\n{\r\nstring": [
+    "!existsinblacklistrequestquerystringfilename": [
+      "pre"
+    ],
+    "{": [
+      "pre",
+      "pre",
+      "pre",
       "pre"
     ],
     "=": [
@@ -1611,22 +1624,38 @@
       "pre",
       "pre"
     ],
-    "serverurldecode(request.querystring[\"filename\"]);\r\nstreamreader": [
+    "serverurldecoderequestquerystringfilename": [
+      "pre",
       "pre"
     ],
     "streamreader": [
       "pre",
-      "pre"
-    ],
-    "streamreaderfilename);\r\nwhile": [
+      "pre",
       "pre",
       "pre"
     ],
-    "streamreader.peek()": [
+    "streamreaderfilename": [
       "pre",
       "pre"
     ],
-    "0\r\n{\r\nresponse.write(streamreader.readline());\r\n}\r\nstreamreader.close();\r\n}": [
+    "while": [
+      "pre",
+      "pre"
+    ],
+    "streamreaderpeek": [
+      "pre",
+      "pre"
+    ],
+    "responsewritestreamreaderreadline": [
+      "pre"
+    ],
+    "}": [
+      "pre",
+      "pre",
+      "pre",
+      "pre"
+    ],
+    "streamreaderclose": [
       "pre"
     ],
     "wants": [
@@ -1892,28 +1921,31 @@
     "doc": [
       "em"
     ],
-    "serverurldecode(request.querystring[\"filename\"]);\r\nregex": [
+    "regex": [
       "pre"
     ],
     "validfilename": [
       "pre"
     ],
-    "regex\"^[a": [
+    "regex^a": [
       "pre"
     ],
     "za": [
       "pre"
     ],
-    "z]{5,8}\\.doc$\");\r\nif": [
+    "z{58}\\doc$": [
       "pre"
     ],
-    "!validfilename.ismatch(filename))\r\n{\r\nresponse.write(\"invalid": [
+    "!validfilenameismatchfilename": [
       "pre"
     ],
-    "input\";\r\n}\r\nelse\r\n{\r\nstreamreader": [
+    "responsewriteinvalid": [
       "pre"
     ],
-    "0\r\n/*": [
+    "else": [
+      "pre"
+    ],
+    "/*": [
       "pre"
     ],
     "continue": [
@@ -1927,7 +1959,7 @@
       "ol",
       "li"
     ],
-    "*/\r}": [
+    "*/": [
       "pre"
     ],
     "then": [
@@ -2059,7 +2091,7 @@
       "td",
       "b"
     ],
-    "./../..": [
+    "//": [
       "table",
       "table",
       "tbody",
@@ -2069,13 +2101,13 @@
       "tr",
       "td"
     ],
-    ".%2f..%2f..": [
+    "%2f%2f": [
       "table",
       "tbody",
       "tr",
       "td"
     ],
-    ".%252f..%252f..": [
+    "%252f%252f": [
       "table",
       "tbody",
       "tr",
@@ -2106,6 +2138,8 @@
       "ol",
       "li",
       "ol",
+      "li",
+      "ol",
       "li"
     ],
     "from": [
@@ -2133,6 +2167,9 @@
     "forms": [
       "ol",
       "li",
+      "ol",
+      "li",
+      "ol",
       "li"
     ],
     "b": [
@@ -2146,6 +2183,9 @@
     "loaded": [
       "ol",
       "li",
+      "ol",
+      "li",
+      "ol",
       "li"
     ],
     "persistent": [
@@ -2207,13 +2247,13 @@
     "scripts": [
       "p"
     ],
-    "\"'><img": [
+    "'img": [
       "table",
       "tbody",
       "tr",
       "td"
     ],
-    "src='javascriptalert('xss');\">": [
+    "src='javascriptalert'xss'": [
       "table",
       "tbody",
       "tr",
@@ -2231,19 +2271,11 @@
       "tr",
       "td"
     ],
-    "is\rreflected": [
+    "guis": [
+      "ol",
+      "li",
       "ol",
       "li"
-    ],
-    "forms\rurl": [
-      "ol",
-      "li",
-      "ol"
-    ],
-    "parameters\rguis\r\nloaded": [
-      "ol",
-      "li",
-      "ol"
     ],
     "processed": [
       "ol",
@@ -2251,9 +2283,6 @@
     ],
     "statement": [
       "ol",
-      "li"
-    ],
-    "guis": [
       "li"
     ],
     "l": [

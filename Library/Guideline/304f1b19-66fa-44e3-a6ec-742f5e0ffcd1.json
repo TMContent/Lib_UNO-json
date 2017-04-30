@@ -13,10 +13,10 @@
           "304f1b19-66fa-44e3-a6ec-742f5e0ffcd1,6b449308-51f2-4ac6-b6fe-903fc2abfcd7,"
         ],
         "Library_Id": [
-          "26bd1a04-beed-4a66-917d-b6ab0a7d634c"
+          "be5273b1-d682-4361-99d9-6234f2d47eb7"
         ],
         "Title": [
-          "Make Sessions Expire After a Period of Inactivity"
+          ".NET Make Sessions Expire After a Period of Inactivity"
         ],
         "Category": [
           "Session Management"
@@ -28,7 +28,7 @@
           ".NET"
         ],
         "Type": [
-          "Guideline"
+          "Code Example"
         ],
         "DirectLink": [
           "Make Sessions Expire After a Period of Inactivity"
@@ -57,10 +57,10 @@
       {
         "$": {
           "Sanitized": "true",
-          "DataType": "Html"
+          "DataType": "markdown"
         },
         "Data": [
-          "<h1>Applies To</h1>\r\n  <ul>\r\n    <li>ASP.NET 4.0</li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Make sessions expire after a period of inactivity.</p>\r\n  <h1>Why</h1>\r\n  <p>Make sessions expire after a period of inactivity to make it harder for an attacker to hijack a session.</p>\r\n  <h1>When</h1>\r\n  <p>Make idle sessions expire in all web applications that use session management.</p>\r\n  <h1>How</h1>\r\n  <p>To make sessions expire after a period of inactivity:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Define a timeout period.</strong> Decide how long a user session is allowed to be inactive before it is terminated. </p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Configure the timeout setting.</strong> Edit the following tags in the Web.config file:</p>\r\n      <pre>&lt;system.web&gt;<br />&nbsp; &lt;authentication mode=\"Forms\"&gt;<br />&nbsp;&nbsp;&nbsp; &lt;forms loginUrl=\"[File name of the login page]\"<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; timeout=\"[Timeout period]\"<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ...<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; requireSSL=\"true\"<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; slidingExpiration=\"true\"<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ...<br />&nbsp; &lt;/authentication&gt;<br />&lt;/system.web&gt;</pre>\r\n      <p>\r\n        <em>[File name of the login page]</em> is the file name of the login page, such as login.aspx. <em>[Timeout period]</em> is the timeout period in minutes defined for the application. <em>requireSSL</em> should be set to <em>true</em> to force authentication cookies to be encrypted. <em>slidingExpiration</em> should be set to <em>true</em> to reset the timeout timer when the user is active. The ... means that there are other settings there beyond the scope of this article that should be configured with values specific to your application.</p>\r\n    </li>\r\n  </ol>\r\n  <br />"
+          "## Applies To ##\r\n\r\n* ASP.NET 4.0\r\n\r\n\r\n## Summary ##\r\n\r\nMake sessions expire after a period of inactivity to make it harder for an attacker to hijack a session.\r\n\r\n\r\n## Solution Example ##\r\n\r\nEdit the following tags in the Web.config file:\r\n\r\n~~~~\r\n<system.web>\r\n  <authentication mode=\"Forms\">\r\n    <forms loginUrl=\"[File name of the login page]\"\r\n           timeout=\"[Timeout period]\"\r\n           ...\r\n           requireSSL=\"true\"\r\n           slidingExpiration=\"true\"\r\n           ...\r\n  </authentication>\r\n</system.web>\r\n~~~~\r\n\r\n[File name of the login page] is the file name of the login page, such as login.aspx. [Timeout period] is the timeout period in minutes defined for the application. requireSSL should be set to true to force authentication cookies to be encrypted. slidingExpiration should be set to true to reset the timeout timer when the user is active. The ... means that there are other settings there beyond the scope of this article that should be configured with values specific to your application.\r\n\r\n"
         ]
       }
     ]

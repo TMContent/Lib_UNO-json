@@ -263,11 +263,16 @@
       "li",
       "tt",
       "li",
+      "pre",
       "p",
+      "pre",
+      "pre",
+      "pre",
       "pre",
       "title"
     ],
     "xss": [
+      "p",
       "p",
       "p",
       "p",
@@ -315,11 +320,17 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "tt",
       "li",
+      "li",
+      "tt",
       "p",
+      "pre",
+      "pre",
+      "pre",
       "pre",
       "title"
     ],
@@ -577,9 +588,6 @@
     "scripting": [
       "p"
     ],
-    "xss)": [
-      "p"
-    ],
     "attacks": [
       "p",
       "p",
@@ -610,7 +618,9 @@
     "by": [
       "p",
       "p",
-      "p"
+      "pre",
+      "p",
+      "pre"
     ],
     "good": [
       "p"
@@ -664,8 +674,10 @@
       "strong",
       "p",
       "p",
+      "pre",
       "p",
-      "p"
+      "p",
+      "pre"
     ],
     "side": [
       "p",
@@ -909,6 +921,8 @@
       "ol",
       "li",
       "tt",
+      "pre",
+      "pre",
       "pre"
     ],
     "fix": [
@@ -1129,6 +1143,7 @@
     "be": [
       "ol",
       "li",
+      "p",
       "p"
     ],
     "sent": [
@@ -1146,23 +1161,17 @@
       "li",
       "p"
     ],
-    "header\"x": [
-      "ol",
-      "li",
-      "tt"
-    ],
-    "protection:": [
+    "headerx": [
       "ol",
       "li",
       "tt",
-      "pre",
-      "pre",
       "pre"
     ],
-    "mode=block\";": [
+    "mode=block": [
       "ol",
       "li",
-      "tt"
+      "tt",
+      "pre"
     ],
     "create": [
       "ol",
@@ -1184,6 +1193,8 @@
       "ol",
       "ol",
       "ol",
+      "ol",
+      "li",
       "li",
       "li",
       "li",
@@ -1194,6 +1205,7 @@
       "li",
       "li",
       "strong",
+      "tt",
       "tt",
       "tt",
       "tt",
@@ -1217,8 +1229,14 @@
     "name": [
       "ol",
       "ol",
+      "ol",
+      "ol",
       "li",
       "li",
+      "li",
+      "li",
+      "tt",
+      "tt",
       "p",
       "p",
       "p"
@@ -1227,9 +1245,15 @@
       "ol",
       "ol",
       "ol",
+      "ol",
+      "ol",
       "li",
       "li",
-      "li"
+      "li",
+      "li",
+      "li",
+      "tt",
+      "tt"
     ],
     "arbitrary": [
       "ol",
@@ -1248,7 +1272,7 @@
       "ol",
       "li"
     ],
-    "javaxservlet.filter": [
+    "javaxservletfilter": [
       "ol",
       "li"
     ],
@@ -1325,7 +1349,10 @@
     ],
     "httpservletresponse": [
       "ol",
+      "ol",
       "li",
+      "li",
+      "tt",
       "tt"
     ],
     "=": [
@@ -1335,37 +1362,30 @@
       "pre",
       "pre"
     ],
-    "httpservletresponse)": [
-      "ol",
-      "li",
-      "tt"
-    ],
     "resp": [
       "ol",
+      "ol",
       "li",
+      "li",
+      "tt",
       "tt"
     ],
-    "responseaddheader(“x": [
+    "responseaddheader“x": [
       "ol",
       "li",
       "tt"
     ],
-    "protection”,”1;": [
+    "protection””1": [
       "ol",
       "li",
       "tt"
     ],
-    "mode=block”;": [
+    "mode=block”": [
       "ol",
       "li",
       "tt"
     ],
-    "chaindofilter(req,": [
-      "ol",
-      "li",
-      "tt"
-    ],
-    "resp;": [
+    "chaindofilterreq": [
       "ol",
       "li",
       "tt"
@@ -1397,12 +1417,7 @@
       "ol",
       "li"
     ],
-    "filter>": [
-      "ol",
-      "li",
-      "tt"
-    ],
-    "name>xssprotectionfilter</filter": [
+    "namexssprotectionfilter/filter": [
       "ol",
       "ol",
       "li",
@@ -1410,23 +1425,7 @@
       "tt",
       "tt"
     ],
-    "name>": [
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "tt",
-      "tt"
-    ],
-    "class>": [
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "tt",
-      "tt"
-    ],
-    "comexample.servlet.filters.xssprotectionfilter": [
+    "comexampleservletfiltersxssprotectionfilter": [
       "ol",
       "li",
       "tt"
@@ -1434,17 +1433,15 @@
     "/filter": [
       "ol",
       "ol",
+      "ol",
+      "li",
       "li",
       "li",
       "tt",
+      "tt",
       "tt"
     ],
-    "/filter>": [
-      "ol",
-      "li",
-      "tt"
-    ],
-    "mapping>": [
+    "mapping": [
       "ol",
       "ol",
       "li",
@@ -1458,12 +1455,12 @@
       "tt",
       "p"
     ],
-    "pattern>/*</url": [
+    "pattern/*/url": [
       "ol",
       "li",
       "tt"
     ],
-    "pattern>": [
+    "pattern": [
       "ol",
       "li",
       "tt"
@@ -1508,9 +1505,6 @@
     "should": [
       "p"
     ],
-    "be.": [
-      "p"
-    ],
     "extremely": [
       "p"
     ],
@@ -1526,36 +1520,39 @@
       "p",
       "p"
     ],
-    "?php\n$name": [
-      "pre"
-    ],
-    "$_request\"name\"];\n\necho": [
-      "pre",
-      "pre"
-    ],
-    "\"hello": [
-      "pre",
-      "pre"
-    ],
-    "\"": [
+    "?php": [
       "pre",
       "pre"
     ],
     "$name": [
       "pre",
+      "pre",
+      "pre",
       "pre"
     ],
-    "\"!\")": [
+    "$_requestname": [
+      "pre",
+      "pre"
+    ],
+    "echo": [
+      "pre",
+      "pre"
+    ],
+    "hello": [
+      "pre",
+      "p",
+      "pre",
+      "p"
+    ],
+    "!": [
       "pre",
       "pre"
     ],
     "links": [
       "p"
     ],
-    "http//www.example.com/account.php?name=jane.": [
-      "p"
-    ],
-    "http//www.example.com/account.php?name=jane": [
+    "http//wwwexamplecom/accountphp?name=jane": [
+      "p",
       "a"
     ],
     "named": [
@@ -1621,7 +1618,7 @@
     "follows": [
       "p"
     ],
-    "http//www.example.com/account.php?name=<script>alert(‘gotcha’);</script>": [
+    "http//wwwexamplecom/accountphp?name=scriptalert‘gotcha’/script": [
       "p",
       "a",
       "p",
@@ -1636,10 +1633,6 @@
       "p"
     ],
     "renders": [
-      "p"
-    ],
-    "hello": [
-      "p",
       "p"
     ],
     "contains": [
@@ -1704,7 +1697,11 @@
       "pre",
       "pre"
     ],
-    "okdate:": [
+    "ok": [
+      "pre",
+      "pre"
+    ],
+    "date": [
       "pre",
       "pre"
     ],
@@ -1715,26 +1712,26 @@
       "pre",
       "pre"
     ],
-    "0523:17": [
+    "052317": [
       "pre"
     ],
-    "gmtserver:": [
+    "gmt": [
       "pre",
       "pre"
     ],
-    "apache/22.16": [
+    "apache/2216": [
       "pre",
       "pre"
     ],
-    "win32)": [
+    "win32": [
       "pre",
       "pre"
     ],
-    "mod_ssl/22.16": [
+    "mod_ssl/2216": [
       "pre",
       "pre"
     ],
-    "openssl/09.8o\nx": [
+    "openssl/098o": [
       "pre",
       "pre"
     ],
@@ -1742,34 +1739,43 @@
       "pre",
       "pre"
     ],
-    "by:": [
+    "php/538": [
       "pre",
       "pre"
     ],
-    "php/53.8": [
+    "zs550": [
       "pre",
       "pre"
     ],
-    "zs5.5.0": [
+    "zendserver": [
       "pre",
       "pre"
     ],
-    "zendserverset": [
+    "set": [
       "pre",
       "pre"
     ],
-    "cookie:": [
+    "cookie": [
       "pre",
       "pre"
     ],
-    "zdedebuggerpresent=phpphtml,php3;": [
+    "zdedebuggerpresent=phpphtmlphp3": [
       "pre",
       "pre"
     ],
-    "path=/keep": [
+    "path=/": [
+      "pre",
       "pre"
     ],
-    "alive:": [
+    "keep": [
+      "pre",
+      "pre",
+      "pre",
+      "pre"
+    ],
+    "alive": [
+      "pre",
+      "pre",
       "pre",
       "pre"
     ],
@@ -1777,27 +1783,31 @@
       "pre",
       "pre"
     ],
-    "max=100connection:": [
+    "max=100": [
       "pre",
       "pre"
     ],
-    "keep": [
+    "connection": [
       "pre",
       "pre"
     ],
-    "alivetransfer": [
+    "transfer": [
       "pre",
       "pre"
     ],
-    "encoding:": [
+    "encoding": [
       "pre",
       "pre"
     ],
-    "chunkedcontent": [
+    "chunked": [
       "pre",
       "pre"
     ],
-    "type:": [
+    "content": [
+      "pre",
+      "pre"
+    ],
+    "type": [
       "pre",
       "pre"
     ],
@@ -1835,25 +1845,10 @@
     "adding": [
       "p"
     ],
-    "?php\nheader(\"x": [
-      "pre"
-    ],
-    "1mode=block\");\n\n$name": [
-      "pre"
-    ],
     "thu": [
       "pre"
     ],
-    "0356:12": [
-      "pre"
-    ],
-    "1mode=block\nx": [
-      "pre"
-    ],
-    "path=/x": [
-      "pre"
-    ],
-    "mode=blockkeep": [
+    "035612": [
       "pre"
     ],
     "not": [
@@ -1869,7 +1864,7 @@
     "hash": [
       "p"
     ],
-    "#)": [
+    "#": [
       "p"
     ],
     "displayed": [
@@ -1904,7 +1899,7 @@
       "ul",
       "li"
     ],
-    "https//www.owasp.org/index.php/list_of_useful_http_headers": [
+    "https//wwwowasporg/indexphp/list_of_useful_http_headers": [
       "ul",
       "li",
       "a"

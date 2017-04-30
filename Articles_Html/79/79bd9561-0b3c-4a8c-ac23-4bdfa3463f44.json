@@ -179,6 +179,7 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "li",
@@ -203,6 +204,7 @@
       "p",
       "p",
       "strong",
+      "ul",
       "li",
       "ol",
       "ol",
@@ -235,6 +237,7 @@
       "p",
       "p",
       "p",
+      "ol",
       "li",
       "p",
       "ol",
@@ -395,6 +398,9 @@
       "ol",
       "ol",
       "ol",
+      "ol",
+      "li",
+      "p",
       "li",
       "li",
       "li",
@@ -455,6 +461,7 @@
       "ol",
       "li",
       "p",
+      "ul",
       "li"
     ],
     "additional": [
@@ -731,8 +738,13 @@
     "assessor": [
       "p"
     ],
-    "3pao).": [
-      "p"
+    "3pao": [
+      "p",
+      "ol",
+      "li",
+      "p",
+      "ol",
+      "li"
     ],
     "this": [
       "p",
@@ -849,6 +861,7 @@
     ],
     "tested": [
       "p",
+      "ol",
       "ol",
       "ol",
       "li",
@@ -979,8 +992,11 @@
       "li",
       "p"
     ],
-    "cloud\n\n\nexamine": [
-      "ol"
+    "examine": [
+      "ol",
+      "li",
+      "p",
+      "strong"
     ],
     "results": [
       "ol",
@@ -1033,11 +1049,6 @@
       "ol",
       "li",
       "p"
-    ],
-    "examine": [
-      "li",
-      "p",
-      "strong"
     ],
     "fix": [
       "h2"
@@ -1185,11 +1196,6 @@
       "li",
       "p"
     ],
-    "csp).": [
-      "ol",
-      "li",
-      "p"
-    ],
     "listed": [
       "ol",
       "li",
@@ -1202,6 +1208,7 @@
       "p",
       "li",
       "p",
+      "ul",
       "ul",
       "ul",
       "li",
@@ -1242,6 +1249,7 @@
       "ol",
       "li",
       "p",
+      "ul",
       "li"
     ],
     "ids": [
@@ -1361,8 +1369,11 @@
       "li",
       "p"
     ],
-    "tested\n\n\nstate": [
-      "ol"
+    "state": [
+      "ol",
+      "li",
+      "p",
+      "strong"
     ],
     "assumptions": [
       "ol",
@@ -1558,8 +1569,15 @@
       "li",
       "p"
     ],
-    "testing\n\n\nprepare": [
-      "ol"
+    "prepare": [
+      "ol",
+      "ol",
+      "li",
+      "p",
+      "strong",
+      "li",
+      "p",
+      "strong"
     ],
     "methods": [
       "ol",
@@ -1621,8 +1639,17 @@
       "li",
       "p"
     ],
-    "rules\n\n\nprepare": [
-      "ol"
+    "rules": [
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "p",
+      "li",
+      "li",
+      "p",
+      "p",
+      "strong"
     ],
     "members": [
       "ol",
@@ -1727,6 +1754,7 @@
       "ol",
       "li",
       "p",
+      "ul",
       "li"
     ],
     "injection": [
@@ -1754,23 +1782,23 @@
       "li",
       "p"
     ],
-    "milestones\n\n\ndisclose": [
-      "ol"
+    "milestones": [
+      "ol",
+      "li",
+      "p"
     ],
-    "rules": [
+    "disclose": [
       "ol",
-      "ol",
       "li",
-      "p",
-      "li",
-      "li",
-      "p",
       "p",
       "strong"
     ],
-    "roe)": [
+    "roe": [
+      "ol",
       "ol",
       "li",
+      "li",
+      "p",
       "p"
     ],
     "describes": [
@@ -1793,18 +1821,6 @@
       "li",
       "p"
     ],
-    "3pao": [
-      "ol",
-      "li",
-      "p",
-      "ol",
-      "li"
-    ],
-    "roe": [
-      "ol",
-      "li",
-      "p"
-    ],
     "lists": [
       "ol",
       "li",
@@ -1820,8 +1836,16 @@
       "li",
       "p"
     ],
-    "already\n\n\nconduct": [
-      "ol"
+    "already": [
+      "ol",
+      "li",
+      "p"
+    ],
+    "conduct": [
+      "ol",
+      "li",
+      "p",
+      "strong"
     ],
     "initiated": [
       "ol",
@@ -1883,37 +1907,6 @@
       "li",
       "p"
     ],
-    "state": [
-      "li",
-      "p",
-      "strong"
-    ],
-    "prepare": [
-      "li",
-      "p",
-      "strong",
-      "li",
-      "p",
-      "strong"
-    ],
-    "milestones": [
-      "li",
-      "p"
-    ],
-    "disclose": [
-      "li",
-      "p",
-      "strong"
-    ],
-    "already": [
-      "li",
-      "p"
-    ],
-    "conduct": [
-      "li",
-      "p",
-      "strong"
-    ],
     "port": [
       "ul",
       "li"
@@ -1922,14 +1915,16 @@
       "ul",
       "li"
     ],
-    "queriesnetwork": [
-      "ul"
+    "queries": [
+      "ul",
+      "li"
     ],
     "sniffing": [
       "ul",
       "li"
     ],
     "traffic": [
+      "ul",
       "ul",
       "ul",
       "li",
@@ -1940,8 +1935,9 @@
       "ul",
       "li"
     ],
-    "analysislogin": [
-      "ul"
+    "analysis": [
+      "ul",
+      "li"
     ],
     "attempt": [
       "ul",
@@ -1963,8 +1959,9 @@
       "ul",
       "li"
     ],
-    "passwordssql": [
-      "ul"
+    "passwords": [
+      "ul",
+      "li"
     ],
     "input": [
       "ul",
@@ -1974,24 +1971,37 @@
       "ul",
       "li"
     ],
-    "testinguse": [
-      "ul"
-    ],
     "exploit": [
       "ul",
       "li"
     ],
-    "codepassword": [
-      "ul"
+    "code": [
+      "ul",
+      "li"
     ],
-    "crackingspoofing": [
-      "ul"
+    "password": [
+      "ul",
+      "li"
     ],
-    "trafficaltering": [
-      "ul"
+    "cracking": [
+      "ul",
+      "li"
     ],
-    "configurationadding": [
-      "ul"
+    "spoofing": [
+      "ul",
+      "li"
+    ],
+    "altering": [
+      "ul",
+      "li"
+    ],
+    "configuration": [
+      "ul",
+      "li"
+    ],
+    "adding": [
+      "ul",
+      "li"
     ],
     "user": [
       "ul",
@@ -1999,36 +2009,6 @@
     ],
     "accounts": [
       "ul",
-      "li"
-    ],
-    "queries": [
-      "li"
-    ],
-    "analysis": [
-      "li"
-    ],
-    "passwords": [
-      "li"
-    ],
-    "code": [
-      "li"
-    ],
-    "password": [
-      "li"
-    ],
-    "cracking": [
-      "li"
-    ],
-    "spoofing": [
-      "li"
-    ],
-    "altering": [
-      "li"
-    ],
-    "configuration": [
-      "li"
-    ],
-    "adding": [
       "li"
     ],
     "compile": [

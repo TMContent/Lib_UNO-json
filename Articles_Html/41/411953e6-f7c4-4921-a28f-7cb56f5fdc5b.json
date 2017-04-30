@@ -30,14 +30,8 @@
       "p",
       "p"
     ],
-    "c++linux\nwindows\nembedded": [
-      "ul"
-    ],
-    "systems": [
-      "ul",
-      "li"
-    ],
     "c++": [
+      "ul",
       "li",
       "p",
       "p",
@@ -53,16 +47,23 @@
       "p"
     ],
     "linux": [
+      "ul",
       "li"
     ],
     "windows": [
+      "ul",
       "li"
     ],
     "embedded": [
+      "ul",
       "li",
       "ol",
       "li",
       "p"
+    ],
+    "systems": [
+      "ul",
+      "li"
     ],
     "what": [
       "h2",
@@ -550,6 +551,7 @@
     "block": [
       "p",
       "ol",
+      "ol",
       "li",
       "p",
       "li",
@@ -936,6 +938,9 @@
       "p",
       "ol",
       "ol",
+      "ol",
+      "ol",
+      "ol",
       "li",
       "li",
       "p",
@@ -993,10 +998,13 @@
       "title"
     ],
     "resource": [
+      "p",
       "p"
     ],
     "release": [
       "p",
+      "ol",
+      "ol",
       "ol",
       "ol",
       "ol",
@@ -1075,9 +1083,6 @@
     "technique": [
       "p"
     ],
-    "\"resource": [
-      "p"
-    ],
     "acquisition": [
       "p"
     ],
@@ -1085,7 +1090,7 @@
       "p",
       "p"
     ],
-    "raii)\",": [
+    "raii": [
       "p"
     ],
     "performed": [
@@ -1276,8 +1281,10 @@
       "li",
       "p"
     ],
-    "termination\n\n\nrelease": [
-      "ol"
+    "termination": [
+      "ol",
+      "li",
+      "p"
     ],
     "allocated": [
       "ol",
@@ -1361,7 +1368,7 @@
       "p",
       "p"
     ],
-    "…alloc)": [
+    "…alloc": [
       "ol",
       "li",
       "p",
@@ -1377,7 +1384,7 @@
       "li",
       "p"
     ],
-    "free)": [
+    "free": [
       "ol",
       "li",
       "p",
@@ -1395,17 +1402,16 @@
     ],
     "new": [
       "ol",
-      "li",
-      "p",
-      "code"
-    ],
-    "new]": [
       "ol",
       "li",
+      "li",
       "p",
+      "p",
+      "code",
       "code"
     ],
     "operators": [
+      "ol",
       "ol",
       "ol",
       "li",
@@ -1422,14 +1428,12 @@
     ],
     "delete": [
       "ol",
-      "li",
-      "p",
-      "code"
-    ],
-    "delete]": [
       "ol",
       "li",
+      "li",
       "p",
+      "p",
+      "code",
       "code"
     ],
     "never": [
@@ -1441,9 +1445,6 @@
       "ol",
       "li",
       "p"
-    ],
-    "operators\n\n\nrelease": [
-      "ol"
     ],
     "acquired": [
       "ol",
@@ -1549,10 +1550,25 @@
       "li",
       "p"
     ],
-    "option\n\n\nclose": [
-      "ol"
+    "option": [
+      "ol",
+      "li",
+      "p"
+    ],
+    "close": [
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
+      "p",
+      "strong",
+      "li",
+      "p"
     ],
     "files": [
+      "ol",
       "ol",
       "ol",
       "ol",
@@ -1593,17 +1609,6 @@
       "li",
       "li",
       "p",
-      "p",
-      "p",
-      "strong",
-      "li",
-      "p"
-    ],
-    "close": [
-      "ol",
-      "ol",
-      "li",
-      "li",
       "p",
       "p",
       "strong",
@@ -1735,8 +1740,11 @@
       "li",
       "p"
     ],
-    "files\n\n\nidentify": [
-      "ol"
+    "identify": [
+      "ol",
+      "li",
+      "p",
+      "strong"
     ],
     "pointers": [
       "ol",
@@ -1778,8 +1786,13 @@
       "li",
       "p"
     ],
-    "destruction\n\n\nuse": [
-      "ol"
+    "destruction": [
+      "ol",
+      "ol",
+      "li",
+      "p",
+      "li",
+      "p"
     ],
     "stl": [
       "ol",
@@ -1862,8 +1875,11 @@
       "p",
       "code"
     ],
-    "lock_guard\n\n\nuse": [
-      "ol"
+    "lock_guard": [
+      "ol",
+      "li",
+      "p",
+      "code"
     ],
     "objects": [
       "ol",
@@ -1911,13 +1927,6 @@
       "li",
       "p"
     ],
-    "destruction": [
-      "ol",
-      "li",
-      "p",
-      "li",
-      "p"
-    ],
     "chance": [
       "ol",
       "li",
@@ -1927,9 +1936,6 @@
       "ol",
       "li",
       "p"
-    ],
-    "block\n\n\nuse": [
-      "ol"
     ],
     "wrappers": [
       "ol",
@@ -2025,24 +2031,6 @@
       "ol",
       "li",
       "p"
-    ],
-    "termination": [
-      "li",
-      "p"
-    ],
-    "option": [
-      "li",
-      "p"
-    ],
-    "identify": [
-      "li",
-      "p",
-      "strong"
-    ],
-    "lock_guard": [
-      "li",
-      "p",
-      "code"
     ]
   },
   "tags": {},

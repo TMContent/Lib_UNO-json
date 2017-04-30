@@ -587,6 +587,9 @@
       "p",
       "p",
       "ol",
+      "ol",
+      "li",
+      "p",
       "strong",
       "li",
       "p"
@@ -1098,14 +1101,23 @@
       "p",
       "ol",
       "ol",
+      "ol",
+      "ol",
       "li",
       "p",
       "li",
+      "li",
+      "li",
+      "p",
+      "p",
       "p",
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
+      "li",
+      "p",
       "p",
       "li",
       "p",
@@ -1145,6 +1157,9 @@
       "ol",
       "ol",
       "ol",
+      "ol",
+      "li",
+      "p",
       "li",
       "p",
       "li",
@@ -1495,7 +1510,7 @@
       "li",
       "p"
     ],
-    "human)": [
+    "human": [
       "ol",
       "li",
       "p"
@@ -1988,12 +2003,13 @@
       "p",
       "p"
     ],
-    "as\rtruss": [
+    "truss": [
       "ol",
       "li",
-      "p"
+      "p",
+      "em"
     ],
-    "solaris)": [
+    "solaris": [
       "ol",
       "li",
       "p"
@@ -2004,7 +2020,7 @@
       "p",
       "em"
     ],
-    "linux);": [
+    "linux": [
       "ol",
       "li",
       "p"
@@ -2019,10 +2035,11 @@
       "li",
       "p"
     ],
-    "as\rfilemon,": [
+    "filemon": [
       "ol",
       "li",
-      "p"
+      "p",
+      "em"
     ],
     "regmon": [
       "ol",
@@ -2058,7 +2075,7 @@
       "li",
       "p"
     ],
-    "windows);": [
+    "windows": [
       "ol",
       "li",
       "p"
@@ -2211,12 +2228,6 @@
       "li",
       "p"
     ],
-    "truss": [
-      "em"
-    ],
-    "filemon": [
-      "em"
-    ],
     "mitigation": [
       "h2",
       "ol",
@@ -2256,11 +2267,6 @@
       "li",
       "p",
       "strong",
-      "li",
-      "p"
-    ],
-    "spoofing this": [
-      "ol",
       "li",
       "p"
     ],
@@ -2534,10 +2540,11 @@
       "li",
       "p"
     ],
-    "as\rauthenticode.": [
+    "authenticode": [
       "ol",
       "li",
-      "p"
+      "p",
+      "em"
     ],
     "principle": [
       "ol",
@@ -2685,6 +2692,9 @@
     ],
     "example": [
       "ol",
+      "ol",
+      "li",
+      "p",
       "li",
       "p"
     ],
@@ -2739,9 +2749,15 @@
       "p",
       "strong"
     ],
-    "\"jail\"": [
+    "jail": [
+      "ol",
+      "ol",
       "ol",
       "li",
+      "li",
+      "li",
+      "p",
+      "p",
       "p"
     ],
     "similar": [
@@ -2812,18 +2828,16 @@
       "li",
       "p"
     ],
-    "unix\rchroot": [
+    "unix": [
       "ol",
       "li",
       "p"
     ],
-    "jail": [
+    "chroot": [
       "ol",
-      "ol",
-      "li",
       "li",
       "p",
-      "p"
+      "em"
     ],
     "apparmor": [
       "ol",
@@ -2862,10 +2876,11 @@
       "li",
       "p"
     ],
-    "example\r\njava.io.filepermission": [
+    "javaiofilepermission": [
       "ol",
       "li",
-      "p"
+      "p",
+      "em"
     ],
     "java": [
       "ol",
@@ -2942,10 +2957,16 @@
       "li",
       "p"
     ],
-    "jails\r\nnote:": [
+    "jails": [
       "ol",
       "li",
       "p"
+    ],
+    "note": [
+      "ol",
+      "li",
+      "p",
+      "strong"
     ],
     "effectiveness": [
       "ol",
@@ -3012,18 +3033,6 @@
       "li",
       "p"
     ],
-    "authenticode": [
-      "em"
-    ],
-    "chroot": [
-      "em"
-    ],
-    "javaio.filepermission": [
-      "em"
-    ],
-    "note": [
-      "strong"
-    ],
     "additional": [
       "h2"
     ],
@@ -3040,11 +3049,13 @@
       "ul",
       "li"
     ],
-    "see\rhttp://cwe.mitre.org/top25/index.html#cwe": [
+    "see": [
       "ul",
       "li"
     ],
-    "http//cwe.mitre.org/top25/index.html#cwe": [
+    "http//cwemitreorg/top25/indexhtml#cwe": [
+      "ul",
+      "li",
       "a"
     ],
     "check": [

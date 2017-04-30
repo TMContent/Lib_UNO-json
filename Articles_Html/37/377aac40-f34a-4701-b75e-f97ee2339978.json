@@ -127,6 +127,7 @@
       "ul",
       "ul",
       "ul",
+      "ul",
       "li",
       "li",
       "li",
@@ -215,13 +216,16 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "p",
       "li",
       "p",
       "strong",
       "li",
+      "li",
       "p",
+      "ul",
       "li",
       "title"
     ],
@@ -255,6 +259,7 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "li",
@@ -266,7 +271,9 @@
       "p",
       "p",
       "li",
+      "li",
       "p",
+      "ul",
       "li",
       "li",
       "li",
@@ -337,6 +344,9 @@
       "p",
       "ol",
       "li",
+      "ul",
+      "li",
+      "ul",
       "li",
       "ol",
       "ol",
@@ -590,12 +600,14 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "p",
       "li",
       "li",
       "p",
       "p",
+      "li",
       "li",
       "li",
       "p",
@@ -1020,6 +1032,7 @@
       "ol",
       "li",
       "ul",
+      "ul",
       "li",
       "li"
     ],
@@ -1304,6 +1317,7 @@
     ],
     "form": [
       "p",
+      "ol",
       "li",
       "p"
     ],
@@ -1367,6 +1381,7 @@
     ],
     "test": [
       "p",
+      "ul",
       "ul",
       "ul",
       "li",
@@ -1733,8 +1748,32 @@
       "p",
       "p"
     ],
-    "tests\n\n\nexamine": [
-      "ol"
+    "tests": [
+      "ol",
+      "li",
+      "p",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "li",
+      "p",
+      "p",
+      "p",
+      "li",
+      "li",
+      "p",
+      "p",
+      "strong"
+    ],
+    "examine": [
+      "ol",
+      "li",
+      "p",
+      "strong"
     ],
     "results": [
       "ol",
@@ -1773,31 +1812,6 @@
       "li",
       "p"
     ],
-    "tests": [
-      "li",
-      "p",
-      "ol",
-      "ol",
-      "ol",
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "li",
-      "p",
-      "p",
-      "p",
-      "li",
-      "li",
-      "p",
-      "p",
-      "strong"
-    ],
-    "examine": [
-      "li",
-      "p",
-      "strong"
-    ],
     "fix": [
       "h2",
       "ol",
@@ -1827,6 +1841,9 @@
     ],
     "system": [
       "p",
+      "ul",
+      "li",
+      "ul",
       "li",
       "ol",
       "li",
@@ -1855,6 +1872,7 @@
       "ol",
       "li",
       "strong",
+      "ul",
       "ul",
       "li",
       "strong",
@@ -2129,9 +2147,6 @@
       "ul",
       "li"
     ],
-    "infrastructure\ndetermine": [
-      "ul"
-    ],
     "services": [
       "ul",
       "ul",
@@ -2172,7 +2187,7 @@
       "li",
       "li"
     ],
-    "paas)": [
+    "paas": [
       "ul",
       "li"
     ],
@@ -2217,8 +2232,10 @@
       "ul",
       "li"
     ],
-    "iaas).": [
+    "iaas": [
       "ul",
+      "ul",
+      "li",
       "li"
     ],
     "means": [
@@ -2230,7 +2247,10 @@
     ],
     "virtual": [
       "ul",
+      "ul",
       "li",
+      "li",
+      "ul",
       "li"
     ],
     "machine": [
@@ -2269,7 +2289,7 @@
       "li",
       "p"
     ],
-    "saas)": [
+    "saas": [
       "ul",
       "li"
     ],
@@ -2342,8 +2362,10 @@
       "li",
       "p"
     ],
-    "test\nlayers": [
-      "ul"
+    "layers": [
+      "ul",
+      "li",
+      "strong"
     ],
     "various": [
       "ul",
@@ -2373,69 +2395,14 @@
       "ul",
       "li"
     ],
-    "perimeter\n\napplications\ndata\nruntime\nmiddleware\noperating": [
+    "perimeter": [
       "ul",
       "li"
-    ],
-    "systemvirtual": [
-      "ul",
-      "li",
-      "ul"
-    ],
-    "image": [
-      "ul",
-      "li",
-      "ul",
-      "li",
-      "ol",
-      "li",
-      "p"
-    ],
-    "vmi)\nhypervisor\nservers\nstorage\nnetworking\nfacility\n\n\nfor": [
-      "ul"
-    ],
-    "example": [
-      "ul",
-      "li",
-      "ol",
-      "li",
-      "p"
-    ],
-    "iaas": [
-      "ul",
-      "li"
-    ],
-    "would": [
-      "ul",
-      "li"
-    ],
-    "permitted": [
-      "ul",
-      "li"
-    ],
-    "vmi": [
-      "ul",
-      "li",
-      "ol",
-      "li",
-      "p"
-    ],
-    "way": [
-      "ul",
-      "li"
-    ],
-    "layers": [
-      "li",
-      "strong"
-    ],
-    "vmi)\nhypervisor\nservers\nstorage\nnetworking\nfacility": [
-      "li",
-      "ul"
-    ],
-    "applicationsdata\nruntime\nmiddleware\noperating": [
-      "ul"
     ],
     "data": [
+      "ul",
+      "li",
+      "ul",
       "li",
       "ol",
       "ol",
@@ -2448,36 +2415,96 @@
       "p"
     ],
     "runtime": [
+      "ul",
+      "li",
+      "ul",
       "li"
     ],
     "middleware": [
+      "ul",
+      "li",
+      "ul",
       "li"
     ],
     "operating": [
+      "ul",
+      "li",
+      "ul",
       "li",
       "ol",
       "li",
       "p"
     ],
-    "vmi)": [
-      "li"
+    "image": [
+      "ul",
+      "li",
+      "ul",
+      "li",
+      "ol",
+      "li",
+      "p"
+    ],
+    "vmi": [
+      "ul",
+      "ul",
+      "li",
+      "ul",
+      "li",
+      "li",
+      "ol",
+      "li",
+      "p"
     ],
     "hypervisor": [
+      "ul",
+      "li",
+      "ul",
       "li"
     ],
     "servers": [
+      "ul",
+      "li",
+      "ul",
       "li",
       "ol",
       "li",
       "p"
     ],
     "storage": [
+      "ul",
+      "li",
+      "ul",
       "li"
     ],
     "networking": [
+      "ul",
+      "li",
+      "ul",
       "li"
     ],
     "facility": [
+      "ul",
+      "li",
+      "ul",
+      "li"
+    ],
+    "example": [
+      "ul",
+      "li",
+      "ol",
+      "li",
+      "p"
+    ],
+    "would": [
+      "ul",
+      "li"
+    ],
+    "permitted": [
+      "ul",
+      "li"
+    ],
+    "way": [
+      "ul",
       "li"
     ],
     "planning": [
@@ -3007,8 +3034,11 @@
       "li",
       "p"
     ],
-    "form\n\n\nperform": [
-      "ol"
+    "perform": [
+      "ol",
+      "li",
+      "p",
+      "strong"
     ],
     "automated": [
       "ol",
@@ -3062,7 +3092,7 @@
       "li",
       "p"
     ],
-    "\"hacking\"": [
+    "hacking": [
       "ol",
       "li",
       "p"
@@ -3147,8 +3177,19 @@
       "li",
       "p"
     ],
-    "authority\n\n\nanalysis": [
-      "ol"
+    "authority": [
+      "ol",
+      "li",
+      "p"
+    ],
+    "analysis": [
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
+      "p",
+      "strong"
     ],
     "reporting": [
       "ol",
@@ -3182,14 +3223,6 @@
       "li",
       "p"
     ],
-    "analysis": [
-      "ol",
-      "li",
-      "li",
-      "p",
-      "p",
-      "strong"
-    ],
     "commentary": [
       "ol",
       "li",
@@ -3199,16 +3232,23 @@
       "ol",
       "ol",
       "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
       "li",
       "li",
       "p",
       "p",
+      "ul",
+      "ul",
       "li",
       "li",
       "li",
       "p"
     ],
     "vulnerabilities": [
+      "ol",
       "ol",
       "ol",
       "ol",
@@ -3285,8 +3325,10 @@
       "li",
       "p"
     ],
-    "are\n\nsummary": [
+    "summary": [
       "ol",
+      "li",
+      "ul",
       "li"
     ],
     "successful": [
@@ -3295,26 +3337,23 @@
       "ul",
       "li"
     ],
-    "penetrationlist": [
-      "ol",
-      "li",
-      "ul"
-    ],
     "gathered": [
       "ol",
       "li",
       "ul",
       "li"
     ],
-    "testinglist": [
+    "descriptions": [
       "ol",
       "li",
-      "ul"
+      "ul",
+      "li"
     ],
-    "descriptionssuggested": [
+    "suggested": [
       "ol",
       "li",
-      "ul"
+      "ul",
+      "li"
     ],
     "mitigate": [
       "ol",
@@ -3322,8 +3361,11 @@
       "ul",
       "li"
     ],
-    "vulnerabilities\n\n\n\nclean": [
-      "ol"
+    "clean": [
+      "ol",
+      "li",
+      "p",
+      "strong"
     ],
     "up": [
       "ol",
@@ -3463,30 +3505,6 @@
       "ol",
       "li",
       "p"
-    ],
-    "perform": [
-      "li",
-      "p",
-      "strong"
-    ],
-    "authority": [
-      "li",
-      "p"
-    ],
-    "summary": [
-      "ul",
-      "li"
-    ],
-    "descriptions": [
-      "li"
-    ],
-    "suggested": [
-      "li"
-    ],
-    "clean": [
-      "li",
-      "p",
-      "strong"
     ]
   },
   "tags": {},

@@ -61,6 +61,7 @@
       "p",
       "p",
       "ol",
+      "ol",
       "li",
       "li",
       "p",
@@ -405,6 +406,7 @@
     ],
     "a": [
       "ol",
+      "ol",
       "li",
       "li",
       "p",
@@ -456,8 +458,11 @@
       "code",
       "code"
     ],
-    "a\n\n\nverify": [
-      "ol"
+    "verify": [
+      "ol",
+      "li",
+      "p",
+      "strong"
     ],
     "of": [
       "ol",
@@ -534,20 +539,23 @@
       "pre",
       "code"
     ],
-    "fiddle:function.new(fiddle.dlopen(nil)[\"ssleay_version\"],": [
+    "fiddlefunctionnewfiddledlopennilssleay_version": [
       "ol",
       "li",
       "pre",
       "code"
     ],
-    "fiddle::type_int],": [
+    "fiddletype_int": [
       "ol",
       "li",
       "pre",
       "code"
     ],
-    "fiddle:type_voidp).call(0)'\n\n\n\nconfigure": [
-      "ol"
+    "fiddletype_voidpcall0'": [
+      "ol",
+      "li",
+      "pre",
+      "code"
     ],
     "code": [
       "ol",
@@ -594,7 +602,7 @@
       "code",
       "code"
     ],
-    "'!adh!rc4:!anull:!md5:!export:!sslv2:high'": [
+    "'!adh!rc4!anull!md5!export!sslv2high'": [
       "ol",
       "li",
       "pre",
@@ -650,7 +658,7 @@
       "code",
       "code"
     ],
-    "openssl:ssl::op_no_sslv3": [
+    "opensslsslop_no_sslv3": [
       "ol",
       "li",
       "pre",
@@ -672,7 +680,7 @@
       "code",
       "code"
     ],
-    "openssl:ssl::op_no_sslv2": [
+    "opensslsslop_no_sslv2": [
       "ol",
       "li",
       "pre",
@@ -706,7 +714,7 @@
       "code",
       "code"
     ],
-    "openssl:ssl::op_no_compression": [
+    "opensslsslop_no_compression": [
       "ol",
       "li",
       "pre",
@@ -734,16 +742,6 @@
     ],
     "ssl_contextoptions": [
       "ol",
-      "li",
-      "pre",
-      "code"
-    ],
-    "verify": [
-      "li",
-      "p",
-      "strong"
-    ],
-    "fiddle:type_voidp).call(0)'": [
       "li",
       "pre",
       "code"

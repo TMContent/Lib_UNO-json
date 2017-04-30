@@ -1,0 +1,55 @@
+<h2>Applies To</h2>
+<ul>
+<li>Python 2.7</li>
+</ul>
+<h2>Problem Example</h2>
+<pre><code>#! /usr/bin/env python
+
+'''
+Python Execute Command via Shell Antipattern
+'''
+
+import os
+import sys
+
+cmdname = &quot;/usr/bin/tail&quot;
+
+# Bad: create one big string and execute it
+cmd = cmdname + &quot; &quot; + &quot; &quot;.join(sys.argv[1:])
+os.system(cmd)
+</code></pre>
+<h2>Solution Example</h2>
+<pre><code>#! /usr/bin/env python
+
+'''
+Python Execute Command without Shell Pattern
+'''
+
+
+import subprocess
+import sys
+
+def main():
+    if len(sys.argv) &lt; 3:
+        print &quot;Usage: [lines] [content]&quot;
+        return
+
+    cmdname = &quot;/usr/bin/tail&quot;
+
+    # Provide a file handle for stdout in the Popen call to redirect output to a file
+    out_file = open('output_file', 'w')
+    program = subprocess.Popen([cmdname, &quot;-&quot; + sys.argv[1]], stdout=out_file, stdin=subprocess.PIPE, shell=False)
+    
+    # Write content to stdin, or provide a file handle in the Popen call
+    for i in range(100):
+    	print &gt;&gt;program.stdin, str(i) + &quot; - &quot; + &quot;&quot;.join(sys.argv[2:])
+    program.stdin.close()
+
+
+if __name__ == &quot;__main__&quot;:
+    sys.exit(main())
+</code></pre>
+<h2>Guideline</h2>
+<ul>
+<li><a href="042253ce-3fe6-4138-926b-c3169ec0ea78">Separate Parameters from Command Names</a></li>
+</ul>

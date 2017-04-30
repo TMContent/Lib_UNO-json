@@ -2,6 +2,9 @@
   "id": "e72ae3ef-a310-477c-911e-e8fdc9624d8b",
   "checksum": "05411e485c63f79a1febb4c4873ffbc1",
   "words": {
+    "833": [
+      "p"
+    ],
     "what": [
       "h2"
     ],
@@ -126,6 +129,7 @@
       "p",
       "p",
       "p",
+      "ol",
       "ol",
       "ol",
       "ol",
@@ -259,6 +263,7 @@
       "p",
       "p",
       "p",
+      "ul",
       "li",
       "ul",
       "ul",
@@ -512,9 +517,6 @@
     "requirement": [
       "p"
     ],
-    "83.3).": [
-      "p"
-    ],
     "when": [
       "h2"
     ],
@@ -562,6 +564,7 @@
       "ul",
       "ul",
       "ul",
+      "ul",
       "li",
       "li",
       "li",
@@ -571,6 +574,7 @@
       "li",
       "li",
       "strong",
+      "ul",
       "ul",
       "ul",
       "ul",
@@ -666,6 +670,7 @@
     "identify": [
       "ol",
       "ol",
+      "ol",
       "li",
       "p",
       "strong",
@@ -707,9 +712,6 @@
       "ol",
       "li",
       "p"
-    ],
-    "accounts\n\n\nidentify": [
-      "ol"
     ],
     "repositories": [
       "ol",
@@ -759,8 +761,18 @@
       "li",
       "p"
     ],
-    "managed\n\n\nexamine": [
-      "ol"
+    "managed": [
+      "ol",
+      "li",
+      "p",
+      "ul",
+      "li"
+    ],
+    "examine": [
+      "ol",
+      "li",
+      "p",
+      "strong"
     ],
     "review": [
       "ol",
@@ -791,17 +803,6 @@
       "ol",
       "li",
       "p"
-    ],
-    "managed": [
-      "li",
-      "p",
-      "ul",
-      "li"
-    ],
-    "examine": [
-      "li",
-      "p",
-      "strong"
     ],
     "fix": [
       "h2"
@@ -900,8 +901,13 @@
     "interface": [
       "p"
     ],
-    "cli).": [
-      "p"
+    "cli": [
+      "p",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "strong"
     ],
     "delete": [
       "ol",
@@ -914,6 +920,8 @@
       "li",
       "li",
       "strong",
+      "ul",
+      "ul",
       "ul",
       "ul",
       "ul",
@@ -1036,8 +1044,22 @@
       "ul",
       "li"
     ],
-    "groupspassword\naccess": [
-      "ul"
+    "groups": [
+      "ul",
+      "li",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "code",
+      "li"
+    ],
+    "password": [
+      "ul",
+      "li",
+      "ul",
+      "li"
     ],
     "keys": [
       "ul",
@@ -1049,8 +1071,9 @@
       "ul",
       "li"
     ],
-    "userinline": [
-      "ul"
+    "inline": [
+      "ul",
+      "li"
     ],
     "policies": [
       "ul",
@@ -1088,6 +1111,7 @@
     "group": [
       "ul",
       "li",
+      "ul",
       "li",
       "code"
     ],
@@ -1112,20 +1136,31 @@
       "ul",
       "li"
     ],
-    "detached\nmulti": [
-      "ul"
+    "detached": [
+      "ul",
+      "li"
+    ],
+    "multi": [
+      "ul",
+      "li"
     ],
     "factor": [
       "ul",
       "li"
     ],
-    "mfa)": [
+    "mfa": [
       "ul",
-      "li"
+      "li",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "code"
     ],
     "device": [
       "ul",
       "li",
+      "ul",
       "ul",
       "li",
       "li",
@@ -1134,37 +1169,6 @@
     "associated": [
       "ul",
       "li"
-    ],
-    "groups": [
-      "li",
-      "ul",
-      "ul",
-      "ul",
-      "li",
-      "li",
-      "code",
-      "li"
-    ],
-    "password": [
-      "li",
-      "ul",
-      "li"
-    ],
-    "inline": [
-      "li"
-    ],
-    "detached": [
-      "li"
-    ],
-    "multi": [
-      "li"
-    ],
-    "cli": [
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "strong"
     ],
     "use": [
       "ol",
@@ -1175,6 +1179,7 @@
     "commands": [
       "ol",
       "li",
+      "ul",
       "li"
     ],
     "certifications": [
@@ -1204,38 +1209,38 @@
       "li",
       "code"
     ],
-    "commands\ndelete": [
-      "ul"
-    ],
     "login": [
       "ul",
       "li",
       "code"
     ],
-    "profile\ndeactivate": [
-      "ul"
-    ],
-    "user's": [
+    "profile": [
       "ul",
-      "li"
-    ],
-    "mfa": [
-      "ul",
-      "ul",
-      "li",
       "li",
       "code"
     ],
     "deactivate": [
       "ul",
+      "ul",
       "li",
       "li",
       "code"
     ],
-    "devicedetach": [
-      "ul"
+    "user's": [
+      "ul",
+      "li"
+    ],
+    "detach": [
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "li",
+      "code"
     ],
     "list": [
+      "ul",
       "ul",
       "ul",
       "ul",
@@ -1246,38 +1251,19 @@
       "li",
       "code"
     ],
-    "detach": [
+    "policy": [
       "ul",
-      "ul",
-      "li",
-      "li",
       "li",
       "code"
-    ],
-    "policy\nlist": [
-      "ul"
     ],
     "was": [
       "ul",
       "li"
     ],
-    "user\nremove": [
-      "ul"
-    ],
     "remove": [
       "ul",
+      "ul",
       "li",
-      "li",
-      "code"
-    ],
-    "group\ndelete": [
-      "ul"
-    ],
-    "profile": [
-      "li",
-      "code"
-    ],
-    "policy": [
       "li",
       "code"
     ]

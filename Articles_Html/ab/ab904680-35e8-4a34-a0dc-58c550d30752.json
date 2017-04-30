@@ -87,7 +87,16 @@
       "ul",
       "li"
     ],
-    "aws)": [
+    "aws": [
+      "ul",
+      "li",
+      "p",
+      "ol",
+      "ol",
+      "li",
+      "p",
+      "li",
+      "p",
       "ul",
       "li"
     ],
@@ -223,17 +232,6 @@
       "p",
       "p"
     ],
-    "aws": [
-      "p",
-      "ol",
-      "ol",
-      "li",
-      "p",
-      "li",
-      "p",
-      "ul",
-      "li"
-    ],
     "management": [
       "p",
       "ol",
@@ -245,8 +243,11 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
+      "li",
+      "p",
       "p",
       "p",
       "strong",
@@ -482,7 +483,10 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
+      "li",
+      "p",
       "p",
       "li",
       "p",
@@ -528,14 +532,9 @@
     "service": [
       "p"
     ],
-    "rds).": [
-      "p"
-    ],
-    "why": [
-      "h2"
-    ],
     "rds": [
       "p",
+      "p",
       "ol",
       "li",
       "p",
@@ -545,9 +544,13 @@
       "li",
       "p",
       "p",
+      "ul",
       "li",
       "code",
       "title"
+    ],
+    "why": [
+      "h2"
     ],
     "are": [
       "p",
@@ -788,6 +791,7 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "li",
@@ -840,8 +844,30 @@
       "p",
       "p"
     ],
-    "ec2)": [
-      "p"
+    "ec2": [
+      "p",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "p",
+      "li",
+      "p",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "strong"
     ],
     "you": [
       "p",
@@ -1008,8 +1034,16 @@
       "li",
       "p"
     ],
-    "users\n\n\ndeployment": [
-      "ol"
+    "users": [
+      "ol",
+      "li",
+      "p"
+    ],
+    "deployment": [
+      "ol",
+      "li",
+      "p",
+      "strong"
     ],
     "test": [
       "ol",
@@ -1072,20 +1106,23 @@
       "li",
       "p"
     ],
-    "posture\n\n\nperiodic": [
-      "ol"
+    "posture": [
+      "ol",
+      "li",
+      "p"
+    ],
+    "periodic": [
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
+      "p",
+      "strong"
     ],
     "checks": [
       "ol",
       "li",
-      "p",
-      "strong"
-    ],
-    "periodic": [
-      "ol",
-      "li",
-      "li",
-      "p",
       "p",
       "strong"
     ],
@@ -1121,19 +1158,6 @@
     ],
     "intrusions": [
       "ol",
-      "li",
-      "p"
-    ],
-    "users": [
-      "li",
-      "p"
-    ],
-    "deployment": [
-      "li",
-      "p",
-      "strong"
-    ],
-    "posture": [
       "li",
       "p"
     ],
@@ -1191,23 +1215,22 @@
     "private": [
       "p"
     ],
-    "vpc).": [
+    "vpc": [
+      "p",
+      "p",
+      "ol",
+      "ol",
+      "li",
+      "p",
+      "li",
       "p"
     ],
     "application": [
       "p"
     ],
-    "vpc": [
-      "p",
-      "ol",
-      "ol",
-      "li",
-      "p",
-      "li",
-      "p"
-    ],
     "group": [
       "p",
+      "ol",
       "ol",
       "ol",
       "ol",
@@ -1260,6 +1283,7 @@
       "p",
       "p",
       "p",
+      "ul",
       "ul",
       "ul",
       "li",
@@ -1316,7 +1340,7 @@
       "p",
       "p"
     ],
-    "console\nlocate": [
+    "locate": [
       "ol",
       "li",
       "p"
@@ -1374,11 +1398,6 @@
       "li",
       "p"
     ],
-    "\"your": [
-      "ol",
-      "li",
-      "p"
-    ],
     "account": [
       "ol",
       "li",
@@ -1401,29 +1420,6 @@
       "ol",
       "li",
       "p"
-    ],
-    "ec2": [
-      "ol",
-      "ol",
-      "ol",
-      "ol",
-      "ol",
-      "ol",
-      "li",
-      "p",
-      "li",
-      "p",
-      "li",
-      "li",
-      "li",
-      "li",
-      "li",
-      "p",
-      "p",
-      "p",
-      "p",
-      "p",
-      "strong"
     ],
     "classic": [
       "ol",
@@ -1452,7 +1448,7 @@
       "li",
       "p"
     ],
-    "region\"": [
+    "region": [
       "ol",
       "li",
       "p"
@@ -1469,9 +1465,6 @@
       "ol",
       "li",
       "p"
-    ],
-    "group\n\n\ndb": [
-      "ol"
     ],
     "create": [
       "ol",
@@ -1542,8 +1535,19 @@
       "li",
       "p"
     ],
-    "step\n\n\nconfigure": [
-      "ol"
+    "step": [
+      "ol",
+      "li",
+      "p"
+    ],
+    "configure": [
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
+      "p",
+      "strong"
     ],
     "ingress": [
       "ol",
@@ -1594,14 +1598,6 @@
       "p",
       "p",
       "p"
-    ],
-    "configure": [
-      "ol",
-      "li",
-      "li",
-      "p",
-      "p",
-      "strong"
     ],
     "permit": [
       "ol",
@@ -1785,6 +1781,7 @@
     "change": [
       "ol",
       "ol",
+      "ol",
       "li",
       "p",
       "li",
@@ -1802,8 +1799,21 @@
       "p",
       "em"
     ],
-    "authorized\n\n\ndelete": [
-      "ol"
+    "authorized": [
+      "ol",
+      "ol",
+      "li",
+      "p",
+      "em",
+      "li",
+      "p",
+      "em"
+    ],
+    "delete": [
+      "ol",
+      "li",
+      "p",
+      "strong"
     ],
     "removed": [
       "ol",
@@ -1825,9 +1835,6 @@
       "li",
       "p"
     ],
-    "change\n\n\nec2": [
-      "ol"
-    ],
     "same": [
       "ol",
       "li",
@@ -1842,24 +1849,6 @@
       "ol",
       "li",
       "p"
-    ],
-    "authorized": [
-      "ol",
-      "li",
-      "p",
-      "em",
-      "li",
-      "p",
-      "em"
-    ],
-    "step": [
-      "li",
-      "p"
-    ],
-    "delete": [
-      "li",
-      "p",
-      "strong"
     ],
     "operations": [
       "p"
@@ -1878,24 +1867,19 @@
     ],
     "api": [
       "p",
+      "ul",
       "li"
     ],
-    "cli\nrds": [
-      "ul"
-    ],
-    "groupapi": [
-      "ul"
-    ],
-    "call\ncreatedbsecuritygroup": [
-      "ul"
-    ],
     "cli": [
+      "ul",
       "li"
     ],
     "call": [
+      "ul",
       "li"
     ],
     "createdbsecuritygroup": [
+      "ul",
       "li",
       "code"
     ]

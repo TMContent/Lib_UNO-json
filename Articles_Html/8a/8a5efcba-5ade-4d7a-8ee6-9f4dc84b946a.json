@@ -329,7 +329,13 @@
     "protocol": [
       "p"
     ],
-    "ldap)": [
+    "ldap": [
+      "p",
+      "ol",
+      "li",
+      "p",
+      "ol",
+      "li",
       "p"
     ],
     "repository": [
@@ -403,10 +409,12 @@
     "application": [
       "p",
       "ol",
+      "ol",
       "li",
       "p",
       "li",
       "p",
+      "ol",
       "ol",
       "ol",
       "ol",
@@ -432,6 +440,7 @@
       "ol",
       "li",
       "p",
+      "ol",
       "li",
       "p"
     ],
@@ -679,16 +688,18 @@
       "li",
       "p"
     ],
-    "ldap": [
+    "installation": [
+      "ol",
+      "li",
+      "p"
+    ],
+    "allow": [
       "ol",
       "li",
       "p",
       "ol",
       "li",
       "p"
-    ],
-    "installation\n\n\nallow": [
-      "ol"
     ],
     "log": [
       "ol",
@@ -715,8 +726,15 @@
       "li",
       "p"
     ],
-    "credentials\n\nmanage": [
-      "ol"
+    "credentials": [
+      "ol",
+      "li",
+      "p"
+    ],
+    "manage": [
+      "ol",
+      "li",
+      "p"
     ],
     "unified": [
       "ol",
@@ -725,25 +743,6 @@
     ],
     "console": [
       "ol",
-      "li",
-      "p"
-    ],
-    "installation": [
-      "li",
-      "p"
-    ],
-    "allow": [
-      "li",
-      "p",
-      "ol",
-      "li",
-      "p"
-    ],
-    "credentials": [
-      "li",
-      "p"
-    ],
-    "manage": [
       "li",
       "p"
     ],
@@ -761,6 +760,7 @@
       "p",
       "ol",
       "ol",
+      "ol",
       "li",
       "p",
       "strong",
@@ -773,6 +773,7 @@
     "determine": [
       "ol",
       "ol",
+      "ol",
       "li",
       "p",
       "li",
@@ -780,6 +781,7 @@
       "p",
       "p",
       "strong",
+      "ol",
       "ol",
       "ol",
       "li",
@@ -815,10 +817,6 @@
       "p",
       "p"
     ],
-    "application\n\n\ndetermine": [
-      "ol",
-      "ol"
-    ],
     "type": [
       "ol",
       "ol",
@@ -851,8 +849,19 @@
       "li",
       "p"
     ],
-    "priority\n\n\nexamine": [
-      "ol"
+    "priority": [
+      "ol",
+      "li",
+      "p",
+      "ol",
+      "li",
+      "p"
+    ],
+    "examine": [
+      "ol",
+      "li",
+      "p",
+      "strong"
     ],
     "application's": [
       "ol",
@@ -919,17 +928,6 @@
       "li",
       "p"
     ],
-    "priority": [
-      "li",
-      "p",
-      "li",
-      "p"
-    ],
-    "examine": [
-      "li",
-      "p",
-      "strong"
-    ],
     "fix": [
       "h2"
     ],
@@ -938,9 +936,6 @@
     ],
     "steps": [
       "p"
-    ],
-    "priority\n\n\nidentify": [
-      "ol"
     ],
     "network": [
       "ol",
@@ -1019,8 +1014,16 @@
       "li",
       "p"
     ],
-    "modification\n\n\nestablish": [
-      "ol"
+    "modification": [
+      "ol",
+      "li",
+      "p"
+    ],
+    "establish": [
+      "ol",
+      "li",
+      "p",
+      "strong"
     ],
     "connectivity": [
       "ol",
@@ -1063,8 +1066,11 @@
       "li",
       "p"
     ],
-    "services\n\n\nadd": [
-      "ol"
+    "add": [
+      "ol",
+      "li",
+      "p",
+      "strong"
     ],
     "specifics": [
       "ol",
@@ -1110,20 +1116,6 @@
       "ol",
       "li",
       "p"
-    ],
-    "modification": [
-      "li",
-      "p"
-    ],
-    "establish": [
-      "li",
-      "p",
-      "strong"
-    ],
-    "add": [
-      "li",
-      "p",
-      "strong"
     ]
   },
   "tags": {},

@@ -2,39 +2,10 @@
 <ul>
 <li>ASP.NET 4.0 and above.</li>
 </ul>
-<h2>What to Do</h2>
+<h2>Summary</h2>
 <p>Encode special characters in user input displayed on pages based on context that this output is presented in. The most common contexts are HTML, URLs and JavaScript. Occasionally, user input is presented as a part of CSS. Special characters in user data presented in XML documents also need to be encoded, but for that it is best to use parameterized APIs that build XML documents, rather than concatenating encoded user data into XML documents.</p>
-<h2>Why</h2>
-<p>Encode user input that is displayed on web pages to prevent Cross-Site Scripting(XSS) attacks.</p>
-<h2>When</h2>
-<p>Applications should never echo untrusted or user modifiable data back to the user without appropriate encoding.</p>
-<h2>How</h2>
-<p>If you write output that includes user input or data from a shared database or a local file that you do not trust, encode it. Encoding the data ensures that it is treated as literal text and not as script. Use the following guidelines to encode user input:</p>
-<ol>
-<li>
-<p><strong>Use the Microsoft AntiXSS library.</strong> The AntiXSS library is a part of .NET starting with .NET 4.5. For projects using .NET 4.0, it has to be added using NuGet. The AntiXSS library can encoded data in HTML, URL, JavaScript, CSS and XML contexts.</p>
-</li>
-<li>
-<p><strong>Identify all sources of user input.</strong> Determine all the possible tainted inputs to the application. The following list includes some common input sources:</p>
-</li>
-</ol>
-<ul>
-<li>Form Fields</li>
-<li>Query strings</li>
-<li>Databases and data access methods</li>
-<li>Cookie collection</li>
-<li>Session and application variables</li>
-</ul>
-<ol start="3">
-<li>
-<p><strong>Identify all output that includes user input.</strong> Trace all inputs to the system though and determine all the code that will output it as a part of HTML, URL, JavaScript, CSS and XML contexts. Make a spreadsheet that contains all this information.</p>
-</li>
-<li>
-<p><strong>Encode all special characters based on context.</strong> Use the corresponding functions in the Microsoft AntiXSS library to encode the data that is being displayed in HTML, URL, JavaScript, CSS and XML contexts. Encode that data at the last possible moment before displaying it to reduce the possibility of double-encoding bugs.</p>
-</li>
-</ol>
 <h2>Problem Example</h2>
-<p>ASP.NET platforms starting with .NET 4.0 include a feature called request validation, which effectively mitigates the bulk of reflected XSS vulnerabilities, making it difficult to come up with an example that does not appear unnecessarily contrived. That does not mean that encoding should not be used - untrusted data should still be encoded as a defense in depth measure.</p>
+<p>ASP.NET platforms starting with .NET 4.0 include a feature called request validation, which effectively mitigates the bulk of reflected XSS vulnerabilities, making it difficult to come up with an example that does not appear unnecessarily contrived. That does not mean that encoding should not be used - untrusted data should still be encoded as a defense in depth measure and to prevent persistent XSS vulnerabilities.</p>
 <h2>Solution Example</h2>
 <p>Include the AntiXSS namespace:</p>
 <pre><code>using System.Web.Security.AntiXss;
@@ -48,9 +19,9 @@ Literal1.Text = safeText;
 <pre><code>AntiXssEncoder encoder = new AntiXssEncoder();
 String safeText = AntiXssEncoder.UrlEncode(untrustedData,false);
 </code></pre>
-<h2>Additional Resources</h2>
+<h2>Guideline</h2>
 <ul>
-<li>To download the Anti-XSS library, go to <a href="https://www.nuget.org/packages/AntiXSS/">https://www.nuget.org/packages/AntiXSS/</a></li>
+<li><a href="9b0ef1a5-c143-4e64-81cc-9e02ccbd9fbd">Encode Untrusted Data in Output</a></li>
 </ul>
 <hr>
 <p>Adapted from Microsoft patterns &amp; practices guidance.</p>

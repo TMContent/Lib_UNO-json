@@ -9,8 +9,10 @@ All applications that allow users to recover or change a forgotten password are 
 </p><p>
 If the attacker compromises an administrative account, they might be able to inject malicious code into the application or its data and take over the application. Upon taking over the application, the attacker will have access to all application functionality and all application data, will be able to use the application to attack its users with malicious scripts, and will be able to use the server as a part of a botnet.
 </p><h2>Countermeasures</h2><p>To prevent insufficient password recovery vulnerabilities, verify user identity when resetting passwords and send the reset token on a side-channel.
-</p><h2>Application Check</h2><p>To verify that insufficient password recovery vulnerabilities are prevented, make sure that user identity is verified when resetting passwords and the reset tokens are sent on a side-channel.
-</p><h2>Specific Technologies</h2><ul><li> <a href="bb23fddd-c1c4-4fbe-9279-0b4a4258cb85">ASP.NET Insufficient Password Recovery</a></li>
-<li> <a href="e0658106-9b10-4a6b-9432-355b02289442">Java Insufficient Password Recovery</a></li>
-<li> <a href="cd449772-e12e-4553-a400-d0bcdb70468b">PHP Insufficient Password Recovery</a></li>
-</ul>
+</p><ul>
+<li> <a href="b426664b-e894-4aae-89ec-578348b096f9">Verify User Identity when Resetting Passwords</a></li>
+<li> <a href="9b4e926a-20bf-4aef-aa75-a986b3bd9fce">Send Password Reset Tokens over a Side Channel</a></li>
+</ul><h2>Application Check</h2><p>To verify that insufficient password recovery vulnerabilities are prevented, make sure that user identity is verified when resetting passwords and the reset tokens are sent on a side-channel.
+</p><ul>
+<li> <a href="8a759459-ef51-4bcf-93be-2a1d48d1cac8">User Identity Is Verified when Resetting Passwords</a></li>
+<li> <a href="d7e08f55-1ce7-41d4-aba6-c667e49b5950">Password Reset Tokens Are Sent over a Side Channel</a></li></ul>

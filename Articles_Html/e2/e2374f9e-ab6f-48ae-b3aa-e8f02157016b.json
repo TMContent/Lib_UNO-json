@@ -50,6 +50,7 @@
     "amazon": [
       "ul",
       "li",
+      "ul",
       "li"
     ],
     "web": [
@@ -63,8 +64,13 @@
       "p",
       "p"
     ],
-    "aws)": [
+    "aws": [
       "ul",
+      "li",
+      "p",
+      "ul",
+      "ul",
+      "li",
       "li"
     ],
     "what": [
@@ -186,12 +192,6 @@
       "p",
       "p"
     ],
-    "aws": [
-      "p",
-      "ul",
-      "li",
-      "li"
-    ],
     "management": [
       "p",
       "ol",
@@ -296,6 +296,7 @@
       "p",
       "p",
       "strong",
+      "ol",
       "ol",
       "ol",
       "ol",
@@ -710,6 +711,7 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "p",
@@ -947,8 +949,16 @@
       "li",
       "p"
     ],
-    "users\n\n\ndeployment": [
-      "ol"
+    "users": [
+      "ol",
+      "li",
+      "p"
+    ],
+    "deployment": [
+      "ol",
+      "li",
+      "p",
+      "strong"
     ],
     "test": [
       "ol",
@@ -998,20 +1008,23 @@
       "li",
       "p"
     ],
-    "posture\n\n\nperiodic": [
-      "ol"
+    "posture": [
+      "ol",
+      "li",
+      "p"
+    ],
+    "periodic": [
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
+      "p",
+      "strong"
     ],
     "checks": [
       "ol",
       "li",
-      "p",
-      "strong"
-    ],
-    "periodic": [
-      "ol",
-      "li",
-      "li",
-      "p",
       "p",
       "strong"
     ],
@@ -1066,19 +1079,6 @@
       "li",
       "p"
     ],
-    "users": [
-      "li",
-      "p"
-    ],
-    "deployment": [
-      "li",
-      "p",
-      "strong"
-    ],
-    "posture": [
-      "li",
-      "p"
-    ],
     "how": [
       "h2"
     ],
@@ -1116,6 +1116,7 @@
       "p"
     ],
     "pane": [
+      "ol",
       "ol",
       "ol",
       "li",
@@ -1210,15 +1211,16 @@
       "li",
       "p"
     ],
-    "pane\n\n\nsecurity": [
-      "ol"
-    ],
     "create": [
       "ol",
+      "ol",
+      "li",
+      "p",
       "li",
       "p"
     ],
     "new": [
+      "ol",
       "ol",
       "li",
       "li",
@@ -1419,8 +1421,11 @@
       "li",
       "p"
     ],
-    "new\n\n\nadd": [
-      "ol"
+    "add": [
+      "ol",
+      "li",
+      "p",
+      "strong"
     ],
     "added": [
       "ol",
@@ -1530,18 +1535,26 @@
       "p",
       "p"
     ],
-    "create,": [
-      "ol",
-      "li",
-      "p"
-    ],
     "applied": [
       "ol",
       "li",
       "p"
     ],
-    "group\n\n\ndelete": [
-      "ol"
+    "delete": [
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
+      "p",
+      "strong",
+      "li",
+      "li",
+      "p",
+      "p",
+      "strong"
     ],
     "deleted": [
       "ol",
@@ -1556,20 +1569,6 @@
       "li",
       "p"
     ],
-    "delete": [
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "p",
-      "p",
-      "strong",
-      "li",
-      "li",
-      "p",
-      "p",
-      "strong"
-    ],
     "cancel": [
       "ol",
       "ol",
@@ -1578,8 +1577,13 @@
       "li",
       "p"
     ],
-    "deletion\n\n\ndelete": [
-      "ol"
+    "deletion": [
+      "ol",
+      "ol",
+      "li",
+      "p",
+      "li",
+      "p"
     ],
     "option": [
       "ol",
@@ -1606,18 +1610,6 @@
       "li",
       "p"
     ],
-    "deletion": [
-      "ol",
-      "li",
-      "p",
-      "li",
-      "p"
-    ],
-    "add": [
-      "li",
-      "p",
-      "strong"
-    ],
     "operations": [
       "p"
     ],
@@ -1636,11 +1628,11 @@
     "such": [
       "p"
     ],
-    "cliamazon": [
-      "ul"
-    ],
-    "cliaws": [
-      "ul"
+    "cli": [
+      "ul",
+      "ul",
+      "li",
+      "li"
     ],
     "tools": [
       "ul",
@@ -1652,10 +1644,6 @@
     ],
     "powershell": [
       "ul",
-      "li"
-    ],
-    "cli": [
-      "li",
       "li"
     ],
     "using": [

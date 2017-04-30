@@ -1,6 +1,6 @@
 {
   "id": "623e234a-237b-4402-9cb5-ccc0100278a4",
-  "checksum": "547e8ca85172061c348a344add348458",
+  "checksum": "fc20dfd8db61bad6aad1d2909fcee2b1",
   "words": {
     "description": [
       "h2"
@@ -19,15 +19,12 @@
       "p",
       "p",
       "p",
-      "p",
-      "p",
-      "ul",
-      "ul",
       "ul",
       "li",
       "a",
-      "li",
-      "a",
+      "p",
+      "p",
+      "ul",
       "li",
       "a",
       "title"
@@ -43,15 +40,6 @@
       "p",
       "p",
       "p",
-      "ul",
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a",
-      "li",
-      "a",
       "title"
     ],
     "vulnerablities": [
@@ -95,7 +83,13 @@
       "p",
       "p",
       "p",
-      "p"
+      "p",
+      "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "a"
     ],
     "able": [
       "p",
@@ -197,7 +191,13 @@
       "p",
       "p",
       "p",
-      "p"
+      "ul",
+      "li",
+      "a",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "protocol": [
       "p",
@@ -234,7 +234,11 @@
       "p",
       "p"
     ],
-    "mitm)": [
+    "mitm": [
+      "p",
+      "p",
+      "p",
+      "p",
       "p"
     ],
     "attacks": [
@@ -357,12 +361,6 @@
       "p",
       "p"
     ],
-    "mitm": [
-      "p",
-      "p",
-      "p",
-      "p"
-    ],
     "capability": [
       "p",
       "p",
@@ -435,7 +433,13 @@
       "p",
       "p",
       "p",
-      "p"
+      "p",
+      "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "a"
     ],
     "through": [
       "p",
@@ -502,6 +506,7 @@
       "p"
     ],
     "traffic": [
+      "p",
       "p"
     ],
     "together": [
@@ -511,9 +516,6 @@
       "p"
     ],
     "rest": [
-      "p"
-    ],
-    "traffic.": [
       "p"
     ],
     "applications": [
@@ -558,7 +560,13 @@
     "not": [
       "p",
       "p",
-      "p"
+      "ul",
+      "li",
+      "a",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "practical": [
       "p",
@@ -614,9 +622,15 @@
       "p",
       "p"
     ],
-    "ssl/tls": [
+    "tls": [
       "p",
-      "p"
+      "ul",
+      "li",
+      "a",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "protect": [
       "p",
@@ -637,6 +651,11 @@
     "don't": [
       "p"
     ],
+    "do": [
+      "ul",
+      "li",
+      "a"
+    ],
     "check": [
       "h2"
     ],
@@ -654,26 +673,11 @@
     ],
     "used": [
       "p",
-      "p"
-    ],
-    "specific": [
-      "h2"
-    ],
-    "technologies": [
-      "h2"
-    ],
-    "aspnet": [
+      "p",
+      "ul",
       "ul",
       "li",
-      "a"
-    ],
-    "java": [
-      "ul",
-      "li",
-      "a"
-    ],
-    "php": [
-      "ul",
+      "a",
       "li",
       "a"
     ]
@@ -681,16 +685,20 @@
   "tags": {},
   "links": [
     {
-      "href": "d3bc13d7-bc31-40d9-bcba-d316349a4202",
-      "text": "ASP.NET Routing Detour"
+      "href": "00057c8f-dd42-4b98-a327-99c3b87b878f",
+      "text": "Use TLS"
     },
     {
-      "href": "64c34f42-a7bc-4d42-b219-a8a878e0367a",
-      "text": "Java Routing Detour"
+      "href": "2fb48ae1-8a7e-40d7-b5a7-02da9d313376",
+      "text": "Do Not Use WS-Routing"
     },
     {
-      "href": "b477f5cf-ea95-4a0e-9010-83eba29fe033",
-      "text": "PHP Routing Detour"
+      "href": "88c4ea36-f910-40ac-b98b-4a42b2edd3b0",
+      "text": "TLS Is Used"
+    },
+    {
+      "href": "ba5a7df0-f96f-4f39-9429-fbd566d7fd6b",
+      "text": "WS-Routing Is Not Used"
     }
   ]
 }

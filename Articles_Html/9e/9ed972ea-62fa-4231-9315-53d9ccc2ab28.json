@@ -1,6 +1,6 @@
 {
   "id": "9ed972ea-62fa-4231-9315-53d9ccc2ab28",
-  "checksum": "389a7d4ae0bde3aa1fd39a68b50c5f7c",
+  "checksum": "737e9fea428c279a21ced329fd53d8ec",
   "words": {
     "description": [
       "h2"
@@ -19,15 +19,12 @@
       "p",
       "p",
       "p",
-      "p",
-      "p",
-      "ul",
-      "ul",
       "ul",
       "li",
       "a",
-      "li",
-      "a",
+      "p",
+      "p",
+      "ul",
       "li",
       "a",
       "title"
@@ -46,15 +43,6 @@
       "p",
       "p",
       "p",
-      "ul",
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a",
-      "li",
-      "a",
       "title"
     ],
     "vulnerabilities": [
@@ -118,7 +106,10 @@
       "p",
       "p",
       "p",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "configured": [
       "p"
@@ -420,8 +411,7 @@
       "p"
     ],
     "specific": [
-      "p",
-      "h2"
+      "p"
     ],
     "preventing": [
       "p"
@@ -649,11 +639,22 @@
       "p"
     ],
     "disable": [
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "on": [
       "p",
       "p"
+    ],
+    "browsing": [
+      "ul",
+      "li",
+      "a",
+      "ul",
+      "li",
+      "a"
     ],
     "check": [
       "h2"
@@ -666,43 +667,24 @@
       "p"
     ],
     "disabled": [
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "servers": [
       "p"
-    ],
-    "technologies": [
-      "h2"
-    ],
-    "aspnet": [
-      "ul",
-      "li",
-      "a"
-    ],
-    "java": [
-      "ul",
-      "li",
-      "a"
-    ],
-    "php": [
-      "ul",
-      "li",
-      "a"
     ]
   },
   "tags": {},
   "links": [
     {
-      "href": "0f313b4b-0d19-4255-aef2-725e5d4b89b5",
-      "text": "ASP.NET Directory Indexing"
+      "href": "f5d16838-a733-424d-bb02-5a58218b7ac4",
+      "text": "Disable Directory Browsing"
     },
     {
-      "href": "adb3a363-0742-4172-b87a-984050299980",
-      "text": "Java Directory Indexing"
-    },
-    {
-      "href": "57066928-62c5-41d7-8ca2-6ad0e09435fb",
-      "text": "PHP Directory Indexing"
+      "href": "8e310bf1-f11b-47fa-9a3e-3dd9364080aa",
+      "text": "Directory Browsing Is Disabled"
     }
   ]
 }

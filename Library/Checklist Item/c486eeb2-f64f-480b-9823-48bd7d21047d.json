@@ -16,7 +16,7 @@
           "be5273b1-d682-4361-99d9-6234f2d47eb7"
         ],
         "Title": [
-          "Inactive Sessions Time-out"
+          "Inactive Sessions Expire"
         ],
         "Category": [
           "Session Management"
@@ -25,7 +25,7 @@
           "Implementation"
         ],
         "Technology": [
-          "Java"
+          "Technology Independent"
         ],
         "Type": [
           "Checklist Item"
@@ -60,7 +60,7 @@
           "DataType": "html"
         },
         "Data": [
-          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>Java</li>\r\n  </ul>\r\n  <h1>What to Check For</h1>\r\n  <p>Verify that inactive sessions time-out.</p>\r\n  <h1>Why</h1>\r\n  <p>Make sessions expire after a period of inactivity to make it harder for an attacker to hijack a session.</p>\r\n  <h1>How to Check</h1>\r\n  <p>To verify that inactive sessions time-out:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Identify the time-out period.</strong> Examine project documentation to identify the required time-out period. If the inactive time-out period is configurable, find out the currently defined time-out period from the administrative interface.</p>\r\n      <li>\r\n        <p>\r\n          <strong>Login to the application.</strong> Login to the application as a normal user.</p>\r\n        <li>\r\n          <p>\r\n            <strong>Verify that the session times out after a certain period.</strong> Wait for the duration of the defined time-out period. Verify that the session has timed out.</p>\r\n        </li>\r\n      </li>\r\n    </li>\r\n  </ol>\r\n  <p>The reason for such a high-level approach is because there are multiple ways to make inactive sessions time-out and this functionality is enabled by default on many Java platforms. </p>\r\n  <h1>How to Fix</h1>\r\n  <p>To make inactive sessions time-out:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Identify login functionality.</strong> Find code that handles user logins.</p>\r\n      <li>\r\n        <p>\r\n          <strong>Add code that sets the inactive session time-out period.</strong> Add code that handles an <em>HttpSession</em> object and sets the <em>setMaxInactiveInterval</em> value, like so:</p>\r\n        <pre>session.setMaxInactiveInterval(300);</pre>\r\n        <p>where \"<em>session</em>\" is the <em>HttpSession</em> object and <em>300</em> is the inactive time-out period in seconds.</p>\r\n        <p>Another approach to making inactive sessions time-out is by configuring the \"<em>session-timeout</em>\" value in the <em>web.xml</em> file, like so:</p>\r\n        <pre>&lt;session-config&gt;<br />&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;session-timeout&gt;300&lt;/session-timeout&gt;<br />&lt;/session-config&gt;</pre>\r\n        <p>where <em>300</em> is the inactive time-out period in seconds. The difference between the first and second approaches is that using <em>setMaxInactiveInterval</em> sets the time-out period for a specific session, while the \"<em>session-timeout</em>\" option sets the time-out period for all sessions by default.</p>\r\n      </li>\r\n    </li>\r\n  </ol>\r\n  <p>\r\n    <strong>Please note:</strong> most Java frameworks make inactive sessions time-out by default after 30 minutes.</p>"
+          "<h1>What to Check For</h1>\r\n  <p>Verify that inactive sessions time-out.</p>\r\n  <h1>Why</h1>\r\n  <p>Make sessions expire after a period of inactivity to make it harder for an attacker to hijack a session.</p>\r\n  <h1>How to Check</h1>\r\n  <p>To verify that inactive sessions time-out:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Identify the time-out period.</strong> Examine project documentation to identify the required time-out period. If the inactive time-out period is configurable, find out the currently defined time-out period from the administrative interface.</p>\r\n      <li>\r\n        <p>\r\n          <strong>Login to the application.</strong> Login to the application as a normal user.</p>\r\n        <li>\r\n          <p>\r\n            <strong>Verify that the session times out after a certain period.</strong> Wait for the duration of the defined time-out period. Verify that the session has timed out.</p>\r\n        </li>\r\n      </li>\r\n    </li>\r\n  </ol>\r\n  <p>The reason for such a high-level approach is because there are multiple ways to make inactive sessions time-out and this functionality is enabled by default on many Java platforms. </p>\r\n  <h1>How to Fix</h1>\r\n  <p>To make inactive sessions time-out:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Identify login functionality.</strong> Find code that handles user logins.</p>\r\n      <li>\r\n        <p />\r\n        <strong>Add code that sets the inactive session time-out period.</strong>\r\n      </li>\r\n    </li>\r\n  </ol>"
         ]
       }
     ]

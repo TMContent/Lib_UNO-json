@@ -1,6 +1,6 @@
 {
   "id": "7a38b1cb-18f0-43ae-a955-741619b715f7",
-  "checksum": "dea341e4dcac77d27645990a746c04a3",
+  "checksum": "278dd56a2695ebc4885dc27706d68301",
   "words": {
     "what": [
       "h2"
@@ -96,6 +96,9 @@
       "li",
       "li",
       "strong",
+      "ul",
+      "li",
+      "a",
       "title"
     ],
     "is": [
@@ -309,6 +312,7 @@
       "p",
       "p",
       "ol",
+      "ol",
       "li",
       "li",
       "strong"
@@ -358,7 +362,10 @@
     "validation": [
       "p",
       "p",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "helps": [
       "p"
@@ -492,6 +499,7 @@
     ],
     "validate": [
       "p",
+      "ol",
       "li",
       "strong",
       "title"
@@ -609,8 +617,12 @@
       "li",
       "li"
     ],
-    "application\ndefine": [
-      "ol"
+    "define": [
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "strong"
     ],
     "which": [
       "ol",
@@ -627,12 +639,6 @@
     "examine": [
       "ol",
       "li"
-    ],
-    "define": [
-      "ol",
-      "li",
-      "li",
-      "strong"
     ],
     "tightly": [
       "ol",
@@ -742,8 +748,9 @@
       "ol",
       "li"
     ],
-    "type\nvalidate": [
-      "ol"
+    "type": [
+      "ol",
+      "li"
     ],
     "provided": [
       "ol",
@@ -753,13 +760,26 @@
       "ol",
       "li"
     ],
-    "type": [
-      "li"
+    "related": [
+      "h2"
+    ],
+    "pages": [
+      "h2"
+    ],
+    "guide": [
+      "ul",
+      "li",
+      "a"
     ],
     "schemas": [
       "title"
     ]
   },
   "tags": {},
-  "links": []
+  "links": [
+    {
+      "href": "bf53d602-1d86-489c-858d-f5efb6424412",
+      "text": "Data Validation Guide"
+    }
+  ]
 }

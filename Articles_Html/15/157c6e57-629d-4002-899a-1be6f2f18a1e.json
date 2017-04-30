@@ -1,6 +1,6 @@
 {
   "id": "157c6e57-629d-4002-899a-1be6f2f18a1e",
-  "checksum": "1d06f49732d7390ea259874633704c84",
+  "checksum": "a4d835354ca5f7a2623053df914edda8",
   "words": {
     "description": [
       "h1"
@@ -22,9 +22,18 @@
       "p",
       "p",
       "p",
+      "ul",
+      "li",
+      "a",
+      "ul",
+      "li",
+      "a",
       "p",
       "p",
       "p",
+      "ul",
+      "li",
+      "a",
       "ul",
       "li",
       "a",
@@ -43,6 +52,9 @@
       "p",
       "p",
       "p",
+      "ul",
+      "li",
+      "a",
       "p",
       "ul",
       "li",
@@ -69,10 +81,22 @@
       "p",
       "p",
       "p",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a",
+      "ul",
+      "li",
+      "a"
     ],
     "input": [
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a",
+      "ul",
+      "li",
+      "a"
     ],
     "is": [
       "p",
@@ -82,13 +106,22 @@
       "p",
       "p",
       "p",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "used": [
       "p",
       "p",
       "p",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a",
+      "ul",
+      "li",
+      "a"
     ],
     "as": [
       "p",
@@ -131,7 +164,13 @@
       "p",
       "p",
       "p",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a",
+      "ul",
+      "li",
+      "a"
     ],
     "c": [
       "p"
@@ -140,7 +179,13 @@
       "p",
       "p",
       "p",
-      "p"
+      "ul",
+      "li",
+      "a",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "that": [
       "p",
@@ -161,7 +206,7 @@
     "such": [
       "p"
     ],
-    "printf).": [
+    "printf": [
       "p"
     ],
     "this": [
@@ -386,7 +431,13 @@
     ],
     "use": [
       "p",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a",
+      "ul",
+      "li",
+      "a"
     ],
     "with": [
       "p",
@@ -394,12 +445,24 @@
       "p",
       "p",
       "p",
-      "p"
+      "ul",
+      "li",
+      "a",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "parameters": [
       "p",
       "p",
-      "p"
+      "ul",
+      "li",
+      "a",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "impact": [
       "h1"
@@ -656,7 +719,10 @@
     "are": [
       "p",
       "p",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "somewhat": [
       "p"
@@ -687,12 +753,42 @@
     "strings": [
       "p",
       "p",
+      "ul",
+      "li",
+      "a",
       "p",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "users": [
       "p",
       "p"
+    ],
+    "do": [
+      "ul",
+      "li",
+      "a",
+      "ul",
+      "li",
+      "a"
+    ],
+    "not": [
+      "ul",
+      "li",
+      "a",
+      "ul",
+      "li",
+      "a",
+      "p",
+      "p",
+      "ul",
+      "li",
+      "a",
+      "ul",
+      "li",
+      "a"
     ],
     "check": [
       "h1",
@@ -713,33 +809,30 @@
     "sure": [
       "p"
     ],
-    "not": [
-      "p",
-      "p"
-    ],
     "coded": [
       "p"
     ],
     "cannot": [
       "p"
-    ],
-    "specific": [
-      "h1"
-    ],
-    "technology": [
-      "h1"
-    ],
-    "c++": [
-      "ul",
-      "li",
-      "a"
     ]
   },
   "tags": {},
   "links": [
     {
-      "href": "9f06e83b-77bf-40b8-9f20-5f88e892630c",
-      "text": "C++ Format String"
+      "href": "956740f5-aa8c-42db-acad-066b94727426",
+      "text": "Do Not Use Functions with Format String Parameters"
+    },
+    {
+      "href": "e7fd382a-c074-42e5-b02c-4d773627d23b",
+      "text": "Do Not Use User Input in Format Strings"
+    },
+    {
+      "href": "cddbb3b4-e916-4109-b657-0a129f634d59",
+      "text": "Functions with Format String Parameters Are Not Used"
+    },
+    {
+      "href": "ce33ec30-814f-4e71-9ef6-e3bb91afca62",
+      "text": "User Input Is Not Used in Format Strings"
     }
   ]
 }

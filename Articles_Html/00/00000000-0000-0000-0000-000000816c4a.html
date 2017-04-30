@@ -1,5 +1,4 @@
-<h2>Applies To</h2><ul><li> iOS applications that authenticate to a remote server.</li>
-</ul><h2>What to Check For</h2><p>Verify that authentication attempts are throttled.
+<h2>What to Check For</h2><p>Verify that authentication attempts are throttled.
 </p><h2>Why</h2><p>Throttling authentication attempts makes password guessing attacks less effective. Authentication throttling should be implemented on the server, since client-side controls are trivial to bypass.
 </p><h2>How to Check</h2><p>To verify that authentication attempts are throttled:
 </p><ol>
@@ -13,14 +12,4 @@
 <li> <strong>Define authentication throttling requirements.</strong> Define the time-out period between authentication attempts. A recommended time-out period is three seconds.</li>
 <li> <strong>Identify authentication code.</strong> Identify server-side code that is responsible for authentication.</li>
 <li> <strong>Add code that throttles authentication attempts.</strong> Edit the authentication code identified in the previous step to wait for the required time period before handling another authentication request. Keep track of clients using IPs and session cookies to make it harder to bypass authentication throttling.</li>
-</ol><h2>Authentication Guidelines</h2><ul><li> <a href="00000000-0000-0000-0000-0000003cccf2">Change Root Passwords on Jailbroken Devices</a></li>
-<li> <a href="00000000-0000-0000-0000-00000067c695">Encrypt Authentication Credentials Sent over the Network</a></li>
-<li> <a href="00000000-0000-0000-0000-0000006598ea">Implement a Secure Password Reset Function</a></li>
-<li> <a href="00000000-0000-0000-0000-0000006171ed">Throttle Authentication Attempts</a></li>
-<li> <a href="00000000-0000-0000-0000-0000005d4d08">Use Server-side Authentication</a></li>
-</ul><h2>Authentication Checklists</h2><ul><li> <a href="00000000-0000-0000-0000-00000076b90c">Root Passwords Have Been Changed on Jailbroken Devices</a></li>
-<li> <a href="00000000-0000-0000-0000-0000004ce47f">Authentication Credentials Sent over the Network Are Encrypted</a></li>
-<li> <a href="00000000-0000-0000-0000-0000006b19fc">A Secure Password Reset Function Is Implemented</a></li>
-<li> <a href="00000000-0000-0000-0000-000000816c4a">Authentication Attempts Are Throttled</a></li>
-<li> <a href="00000000-0000-0000-0000-0000002a3f4d">Authentication Is Implemented on the Server-side</a></li>
-</ul>
+</ol>

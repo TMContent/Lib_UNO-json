@@ -1,6 +1,6 @@
 {
   "id": "b5d3f9e8-3f63-42c3-bf20-4a283d2921ac",
-  "checksum": "0f34b1b7f2819773a49102874c3f384b",
+  "checksum": "23e14448f67a9afdc548f8207d0e30ab",
   "words": {
     "description": [
       "h2"
@@ -17,18 +17,6 @@
       "p",
       "p",
       "p",
-      "ul",
-      "ul",
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a",
-      "li",
-      "a",
-      "li",
-      "a",
       "title"
     ],
     "of": [
@@ -57,18 +45,6 @@
       "p",
       "p",
       "p",
-      "ul",
-      "ul",
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a",
-      "li",
-      "a",
-      "li",
-      "a",
       "title"
     ],
     "service": [
@@ -83,18 +59,6 @@
       "p",
       "p",
       "p",
-      "ul",
-      "ul",
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a",
-      "li",
-      "a",
-      "li",
-      "a",
       "title"
     ],
     "vulnerabilities": [
@@ -292,7 +256,13 @@
       "p",
       "p",
       "p",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a",
+      "ul",
+      "li",
+      "a"
     ],
     "destructive": [
       "p",
@@ -329,7 +299,13 @@
     "resource": [
       "p",
       "p",
-      "p"
+      "ul",
+      "li",
+      "a",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "usually": [
       "p",
@@ -480,7 +456,10 @@
     ],
     "throttled": [
       "p",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "attacker": [
       "p",
@@ -901,7 +880,10 @@
     "are": [
       "p",
       "p",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "affected": [
       "p"
@@ -932,15 +914,38 @@
       "p"
     ],
     "throttle": [
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "intensive": [
       "p",
-      "p"
+      "ul",
+      "li",
+      "a",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "operations": [
       "p",
-      "p"
+      "ul",
+      "li",
+      "a",
+      "p",
+      "ul",
+      "li",
+      "a"
+    ],
+    "sensitive": [
+      "ul",
+      "li",
+      "a",
+      "ul",
+      "li",
+      "a"
     ],
     "check": [
       "h2"
@@ -951,51 +956,17 @@
     ],
     "mitigated": [
       "p"
-    ],
-    "specific": [
-      "h2"
-    ],
-    "technologies": [
-      "h2"
-    ],
-    "aspnet": [
-      "ul",
-      "li",
-      "a"
-    ],
-    "java": [
-      "ul",
-      "li",
-      "a"
-    ],
-    "c++": [
-      "ul",
-      "li",
-      "a"
-    ],
-    "php": [
-      "ul",
-      "li",
-      "a"
     ]
   },
   "tags": {},
   "links": [
     {
-      "href": "04b16f87-f1e5-441a-9706-d0a4e99aae05",
-      "text": "ASP.NET Denial of Service"
+      "href": "70e1c64b-de31-4a71-b421-02bb9bc3a06b",
+      "text": "Throttle Sensitive and Resource Intensive Operations"
     },
     {
-      "href": "264d58e6-04e7-46a3-b5dd-87a4abbb4c38",
-      "text": "Java Denial of Service"
-    },
-    {
-      "href": "6651a931-83e7-4b17-9014-be585922c229",
-      "text": "C++ Denial of Service"
-    },
-    {
-      "href": "a471e3f4-6fb2-4c3f-94ed-028e1e7710ad",
-      "text": "PHP Denial of Service"
+      "href": "f08d3a08-a560-4220-9962-5de047b00caa",
+      "text": "Sensitive and Resource Intensive Operations Are Throttled"
     }
   ]
 }

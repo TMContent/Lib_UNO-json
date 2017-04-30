@@ -15,24 +15,24 @@
 public Class UserValidator Implements Validator {
   @Override
   Public Boolean Supports(Class AClass) {
-    Return User.class.isAssignableFrom(aClass);
+	Return User.class.isAssignableFrom(aClass);
   }
 
   @Override
   Public Void Validate(Object Target, Errors Errors) {
-    ValidationUtils.rejectIfEmptyOrWhitespace(errors, &quot;firstName&quot;, &quot;First Name Can't Be Blank&quot;);
-    ValidationUtils.rejectIfEmptyOrWhitespace(errors, &quot;lastName&quot;, &quot;Last Name Can't Be Blank&quot;);
+	ValidationUtils.rejectIfEmptyOrWhitespace(errors, &quot;firstName&quot;, &quot;First Name Can't Be Blank&quot;);
+	ValidationUtils.rejectIfEmptyOrWhitespace(errors, &quot;lastName&quot;, &quot;Last Name Can't Be Blank&quot;);
   }
 }
 </code></pre>
 <p>In order to tie this validation together with the associated controller, you simply update the configuration entry for the given controller.</p>
 <pre><code>&lt;bean Name=&quot;/user/create&quot; Class=&quot;com.me.MyController&quot;&gt;
-    &lt;property Name=&quot;commandClass&quot; Value=&quot;....&quot;/&gt;
-    &lt;property Name=&quot;formView&quot; Value=&quot;....&quot;/&gt;
-    &lt;property Name=&quot;successView&quot; Value=&quot;....&quot;/&gt;
-    &lt;property Name=&quot;validator&quot;&gt;
-        &lt;bean Class=&quot;com.me.UserValidator&quot;/&gt;
-    &lt;/property&gt;
+	&lt;property Name=&quot;commandClass&quot; Value=&quot;....&quot;/&gt;
+	&lt;property Name=&quot;formView&quot; Value=&quot;....&quot;/&gt;
+	&lt;property Name=&quot;successView&quot; Value=&quot;....&quot;/&gt;
+	&lt;property Name=&quot;validator&quot;&gt;
+		&lt;bean Class=&quot;com.me.UserValidator&quot;/&gt;
+	&lt;/property&gt;
 &lt;/bean&gt;
 </code></pre>
 <p>Now that the validations are in place, you simply update your view (ex. JSP) to display the errors If applicable.</p>
@@ -52,7 +52,7 @@ public void initBinder(WebDataBinder dataBinder) {
 </code></pre>
 <p>The example above shows the use of a method annotated with @InitBinder being used to restrict the binding mechanism of SpringMVC. The methods called on the data binder are all simple, but for example, the setDisallowedFields method call prevents the user from binding the &quot;id&quot; field. This prevents a user from tampering with, say, hidden fields in order to overwrite data to which they do not have access. Again, while this is not strictly input validation, it does function as a security control on input and as such is a valuable resource when securing your SpringMVC application.</p>
 <p>In conclusion, input validation can function as a strong security control if used properly and applied thoroughly throughout the application. The SpringMVC framework provides the Validator mechanism as well as the data binder for accomplishing this task.</p>
-<h2>More Information</h2>
+<h2>Guideline</h2>
 <ul>
-<li>For more information about input validation in Struts 2, see <a href="http://struts.apache.org/2.x/docs/validation.html">http://struts.apache.org/2.x/docs/validation.html</a></li>
+<li><a href="11a15f3a-7fe8-4e4c-be5e-309ab7227b3d">Validate All Input</a></li>
 </ul>

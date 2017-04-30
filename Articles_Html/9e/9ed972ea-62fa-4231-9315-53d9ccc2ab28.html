@@ -7,8 +7,8 @@ Preventing directory indexing vulnerabilities is typically the responsibility of
 </p><p>
 In some cases, the attacker might be able to download stored authentication credentials, for example, if a database backup file is exposed by directory indexing. Once an attacker downloads the authentication store of the application, they will mount a hash cracking attack if necessary, and then use the compromised credentials to gain additional access to the application. The attacker will typically attempt to gain administrative access to the application and then use this access to inject malicious code into the application code or data. If malicious code can be successfully injected, the attacker will be able to execute arbitrary code with the privileges of the web application.
 </p><h2>Countermeasures</h2><p>To prevent directory indexing vulnerabilities, disable directory indexing on the server.
-</p><h2>Application Check</h2><p>To verify that directory indexing vulnerabilities are prevented, verify that directory indexing is disabled on the servers.
-</p><h2>Specific Technologies</h2><ul><li> <a href="0f313b4b-0d19-4255-aef2-725e5d4b89b5">ASP.NET Directory Indexing</a></li>
-<li> <a href="adb3a363-0742-4172-b87a-984050299980">Java Directory Indexing</a></li>
-<li> <a href="57066928-62c5-41d7-8ca2-6ad0e09435fb">PHP Directory Indexing</a></li>
-</ul>
+</p><ul>
+<li> <a href="f5d16838-a733-424d-bb02-5a58218b7ac4">Disable Directory Browsing</a></li>
+</ul><h2>Application Check</h2><p>To verify that directory indexing vulnerabilities are prevented, verify that directory indexing is disabled on the servers.
+</p><ul>
+<li> <a href="8e310bf1-f11b-47fa-9a3e-3dd9364080aa">Directory Browsing Is Disabled</a></li></ul>

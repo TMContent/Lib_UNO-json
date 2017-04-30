@@ -52,6 +52,10 @@
       "p",
       "code",
       "p",
+      "code",
+      "ol",
+      "li",
+      "p",
       "code"
     ],
     "url": [
@@ -61,6 +65,7 @@
     "encode": [
       "p",
       "p",
+      "ol",
       "ol",
       "li",
       "li",
@@ -242,6 +247,8 @@
       "p",
       "p",
       "p",
+      "ol",
+      "ol",
       "ol",
       "ol",
       "ol",
@@ -479,8 +486,11 @@
       "li",
       "p"
     ],
-    "headers\n\n\nvalidate": [
-      "ol"
+    "validate": [
+      "ol",
+      "li",
+      "p",
+      "strong"
     ],
     "positive": [
       "ol",
@@ -501,15 +511,6 @@
       "ol",
       "li",
       "p"
-    ],
-    "headers\n\n\nencode": [
-      "ol"
-    ],
-    "uri:escape": [
-      "ol",
-      "li",
-      "p",
-      "code"
     ],
     "require": [
       "ol",
@@ -543,7 +544,7 @@
       "code",
       "code"
     ],
-    "uriescape(\"http://example.com/?a=\\11\\15\")": [
+    "uriescapehttp//examplecom/?a=\\11\\15": [
       "ol",
       "li",
       "pre",
@@ -561,16 +562,11 @@
       "pre",
       "code"
     ],
-    "\"http//example.com/?a=%09%0d\"": [
+    "http//examplecom/?a=%09%0d": [
       "ol",
       "li",
       "pre",
       "code"
-    ],
-    "validate": [
-      "li",
-      "p",
-      "strong"
     ]
   },
   "tags": {},

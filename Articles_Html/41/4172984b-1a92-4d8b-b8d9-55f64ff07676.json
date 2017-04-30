@@ -99,6 +99,7 @@
     ],
     "applications": [
       "p",
+      "ul",
       "li",
       "p",
       "p",
@@ -108,6 +109,7 @@
       "li",
       "p",
       "p",
+      "ol",
       "ol",
       "ol",
       "li",
@@ -361,11 +363,25 @@
       "ul",
       "li"
     ],
-    "imagesoperating": [
-      "ul"
+    "images": [
+      "ul",
+      "li"
     ],
-    "systemsapplications\ndata": [
-      "ul"
+    "operating": [
+      "ul",
+      "li"
+    ],
+    "systems": [
+      "ul",
+      "li",
+      "p"
+    ],
+    "data": [
+      "ul",
+      "li",
+      "ol",
+      "li",
+      "p"
     ],
     "at": [
       "ul",
@@ -374,22 +390,6 @@
     "rest": [
       "ul",
       "li"
-    ],
-    "images": [
-      "li"
-    ],
-    "operating": [
-      "li"
-    ],
-    "systems": [
-      "li",
-      "p"
-    ],
-    "data": [
-      "li",
-      "ol",
-      "li",
-      "p"
     ],
     "susceptible": [
       "p"
@@ -553,6 +553,7 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "p",
@@ -669,6 +670,7 @@
     ],
     "periodic": [
       "p",
+      "ol",
       "ol",
       "li",
       "li",
@@ -818,6 +820,7 @@
       "p",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "p",
@@ -925,6 +928,7 @@
       "p",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "p",
@@ -973,6 +977,9 @@
       "li",
       "li",
       "p",
+      "p",
+      "ol",
+      "li",
       "p"
     ],
     "will": [
@@ -1047,8 +1054,10 @@
       "li",
       "p"
     ],
-    "back\n\n\napplication": [
-      "ol"
+    "back": [
+      "ol",
+      "li",
+      "p"
     ],
     "deployed": [
       "ol",
@@ -1108,6 +1117,7 @@
       "li",
       "p",
       "ul",
+      "ul",
       "li",
       "li",
       "code"
@@ -1133,8 +1143,13 @@
       "li",
       "p"
     ],
-    "plan\n\n\nperiodic": [
-      "ol"
+    "plan": [
+      "ol",
+      "ol",
+      "li",
+      "p",
+      "li",
+      "p"
     ],
     "checks": [
       "ol",
@@ -1144,13 +1159,6 @@
     ],
     "specified": [
       "ol",
-      "li",
-      "p"
-    ],
-    "plan": [
-      "ol",
-      "li",
-      "p",
       "li",
       "p"
     ],
@@ -1181,10 +1189,6 @@
     ],
     "audit": [
       "ol",
-      "li",
-      "p"
-    ],
-    "back": [
       "li",
       "p"
     ],
@@ -1221,8 +1225,14 @@
       "li",
       "p"
     ],
-    "applications\n\n\ndetermine": [
-      "ol"
+    "determine": [
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
+      "p",
+      "strong"
     ],
     "whether": [
       "ol",
@@ -1240,14 +1250,6 @@
       "ol",
       "li",
       "p"
-    ],
-    "determine": [
-      "ol",
-      "li",
-      "li",
-      "p",
-      "p",
-      "strong"
     ],
     "each": [
       "ol",
@@ -1461,6 +1463,7 @@
     ],
     "action": [
       "ol",
+      "ol",
       "li",
       "li",
       "p",
@@ -1494,9 +1497,6 @@
       "li",
       "p"
     ],
-    "action\n\n\nterminate": [
-      "ol"
-    ],
     "with": [
       "ol",
       "li",
@@ -1515,6 +1515,8 @@
       "p",
       "p",
       "strong",
+      "ul",
+      "ul",
       "li",
       "li",
       "ol",
@@ -1524,6 +1526,7 @@
       "p",
       "p",
       "strong",
+      "ul",
       "li"
     ],
     "terminating": [
@@ -1555,15 +1558,14 @@
       "li",
       "p"
     ],
-    "cli\nec2": [
-      "ul"
-    ],
     "amazon": [
       "ul",
       "li"
     ],
-    "cli\nstop": [
-      "ul"
+    "stop": [
+      "ul",
+      "li",
+      "code"
     ],
     "ec2instance": [
       "ul",
@@ -1578,13 +1580,9 @@
       "ul",
       "li"
     ],
-    "powershell.": [
+    "powershell": [
       "ul",
       "li"
-    ],
-    "stop": [
-      "li",
-      "code"
     ],
     "elastic": [
       "ol",
@@ -1625,11 +1623,6 @@
       "p"
     ],
     "region": [
-      "ol",
-      "li",
-      "p"
-    ],
-    "versions).": [
       "ol",
       "li",
       "p"
@@ -1680,6 +1673,7 @@
     ],
     "bucket": [
       "ol",
+      "ol",
       "li",
       "li",
       "p",
@@ -1695,16 +1689,15 @@
       "li",
       "p"
     ],
-    "bucket\n\n\nremove": [
-      "ol"
-    ],
     "removing": [
       "ol",
       "li",
       "p"
     ],
-    "cli\ndeleteapplicationversion": [
-      "ul"
+    "deleteapplicationversion": [
+      "ul",
+      "li",
+      "code"
     ],
     "using": [
       "ul",
@@ -1713,10 +1706,6 @@
     "api": [
       "ul",
       "li"
-    ],
-    "deleteapplicationversion": [
-      "li",
-      "code"
     ]
   },
   "tags": {},

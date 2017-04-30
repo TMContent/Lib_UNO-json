@@ -9,6 +9,9 @@
       "h2",
       "em",
       "p",
+      "pre",
+      "pre",
+      "pre",
       "pre"
     ],
     "2": [
@@ -25,6 +28,9 @@
       "em",
       "h1"
     ],
+    "5": [
+      "p"
+    ],
     "22": [
       "p",
       "div",
@@ -38,6 +44,7 @@
       "p"
     ],
     "20000": [
+      "p",
       "pre",
       "pre",
       "p",
@@ -876,7 +883,7 @@
       "p",
       "p"
     ],
-    "dos)": [
+    "dos": [
       "p"
     ],
     "attacks": [
@@ -1470,6 +1477,7 @@
       "p",
       "i",
       "pre",
+      "pre",
       "p",
       "i",
       "pre",
@@ -1495,14 +1503,14 @@
     "package": [
       "pre"
     ],
-    "comexample.servlet;import": [
+    "comexampleservletimport": [
       "pre"
     ],
-    "javaio.serializable;import": [
+    "javaioserializableimport": [
       "pre",
       "pre"
     ],
-    "javaio.objectinputstream;public": [
+    "javaioobjectinputstreampublic": [
       "pre"
     ],
     "implements": [
@@ -1547,6 +1555,9 @@
       "pre",
       "pre",
       "pre",
+      "pre",
+      "pre",
+      "pre",
       "pre"
     ],
     "age": [
@@ -1565,9 +1576,6 @@
       "pre",
       "pre",
       "pre",
-      "pre"
-    ],
-    "person)": [
       "pre"
     ],
     "{": [
@@ -1597,7 +1605,7 @@
       "pre",
       "pre"
     ],
-    "getfirstname)": [
+    "getfirstname": [
       "pre"
     ],
     "return": [
@@ -1638,7 +1646,7 @@
       "pre",
       "pre"
     ],
-    "getlastname)": [
+    "getlastname": [
       "pre"
     ],
     "setlastnamestring": [
@@ -1647,7 +1655,7 @@
     "thislastname": [
       "pre"
     ],
-    "getage)": [
+    "getage": [
       "pre"
     ],
     "setageint": [
@@ -1712,7 +1720,7 @@
       "pre",
       "pre"
     ],
-    "\"c\\\\tests\\\\out.obj\";outputstream": [
+    "c\\\\tests\\\\outobjoutputstream": [
       "pre"
     ],
     "new": [
@@ -1727,13 +1735,13 @@
     "objectoutputstreamnew": [
       "pre"
     ],
-    "fileoutputstreamfilename));person": [
+    "fileoutputstreamfilenameperson": [
       "pre"
     ],
-    "person);person.setfirstname(\"john\");person.setlastname(\"smith\");person.setage(19);outputstream.writeobject(person);person": [
+    "personpersonsetfirstnamejohnpersonsetlastnamesmithpersonsetage19outputstreamwriteobjectpersonperson": [
       "pre"
     ],
-    "person);person.setfirstname(\"paul\");person.setlastname(\"rocks\");person.setage(39);outputstream.writeobject(person);outputstream.close();": [
+    "personpersonsetfirstnamepaulpersonsetlastnamerockspersonsetage39outputstreamwriteobjectpersonoutputstreamclose": [
       "pre"
     ],
     "reads": [
@@ -1766,19 +1774,19 @@
     "element": [
       "p"
     ],
-    "\"c\\\\tests\\\\out.obj\";objectinputstream": [
+    "c\\\\tests\\\\outobjobjectinputstream": [
       "pre"
     ],
     "objectinputstreamnew": [
       "pre"
     ],
-    "fileinputstreamfilename));person": [
+    "fileinputstreamfilenameperson": [
       "pre"
     ],
     "person2": [
       "pre"
     ],
-    "person)in.readobject();out.write(person2.getlastname());": [
+    "personinreadobjectoutwriteperson2getlastname": [
       "pre"
     ],
     "remains": [
@@ -1834,9 +1842,6 @@
       "p"
     ],
     "length": [
-      "p"
-    ],
-    "5).": [
       "p"
     ],
     "however": [
@@ -1926,7 +1931,7 @@
     "scripting": [
       "p"
     ],
-    "xss)": [
+    "xss": [
       "p"
     ],
     "injects": [
@@ -2001,22 +2006,22 @@
     "characters": [
       "p"
     ],
-    "{\"addresses\"": [
+    "{addresses": [
       "pre",
       "pre"
     ],
-    "{\"city\":\"seatle\",\"state\":\"wa\",\"street\":\"123": [
+    "{cityseatlestatewastreet123": [
       "pre"
     ],
     "wall": [
       "pre",
       "pre"
     ],
-    "st\",\"zip\":\"98101\"},": [
+    "stzip98101}": [
       "pre",
       "pre"
     ],
-    "{\"city\"\"boston\",\"state\":\"ma\",\"street\":\"33": [
+    "{citybostonstatemastreet33": [
       "pre",
       "pre"
     ],
@@ -2028,16 +2033,16 @@
       "pre",
       "pre"
     ],
-    "st\"\"zip\":\"02109\"}],": [
+    "stzip02109}": [
       "pre"
     ],
-    "\"entered\"\"\\/date(1191992400000": [
+    "entered\\/date1191992400000": [
       "pre"
     ],
-    "0500)\\/\",\"name\":\"}]}})}": [
+    "0500\\/name}}}}": [
       "pre"
     ],
-    "\"\"}]}})}": [
+    "}}}}": [
       "strong"
     ],
     "cause": [
@@ -2119,19 +2124,19 @@
     "numerous": [
       "p"
     ],
-    "{\"city\":\"a\",\"state\":\"b\",\"street\":\"c\",\"zip\":\"d\"}{\"city\":\"a\",\"state\":\"b\",\"street\":\"c\",\"zip\":\"d\"}{\"city\":\"a\",\"state\":\"b\",\"street\":\"c\",\"zip\":\"d\"}{\"city\":\"a\",\"state\":\"b\",\"street\":\"c\",\"zip\":\"d\"}{\"city\":\"a\",\"state\":\"b\",\"street\":\"c\",\"zip\":\"d\"}{\"city\":\"a\",\"state\":\"b\",\"street\":\"c\",\"zip\":\"d\"}{\"city\":\"a\",\"state\":\"b\",\"street\":\"c\",\"zip\":\"d\"}{\"city\":\"a\",\"state\":\"b\",\"street\":\"c\",\"zip\":\"d\"}{\"city\":\"a\",\"state\":\"b\",\"street\":\"c\",\"zip\":\"d\"}{\"city\":\"a\",\"state\":\"b\",\"street\":\"c\",\"zip\":\"d\"}{\"city\":\"a\",\"state\":\"b\",\"street\":\"c\",\"zip\":\"d\"}{\"city\":\"a\",\"state\":\"b\",\"street\":\"c\",\"zip\":\"d\"}{\"city\":\"a\",\"state\":\"b\",\"street\":\"c\",\"zip\":\"d\"}{\"city\":\"a\",\"state\":\"b\",\"street\":\"c\",\"zip\":\"d\"}{\"city\":\"a\",\"state\":\"b\",\"street\":\"c\",\"zip\":\"d\"}{\"city\":\"a\",\"state\":\"b\",\"street\":\"c\",\"zip\":\"d\"}{\"city\":\"a\",\"state\":\"b\",\"street\":\"c\",\"zip\":\"d\"}{\"city\":\"a\",\"state\":\"b\",\"street\":\"c\",\"zip\":\"d\"}{\"city\":\"a\",\"state\":\"b\",\"street\":\"c\",\"zip\":\"d\"}{\"city\":\"a\",\"state\":\"b\",\"street\":\"c\",\"zip\":\"d\"}{\"city\":\"a\",\"state\":\"b\",\"street\":\"c\",\"zip\":\"d\"}{\"city\":\"seatle\",\"state\":\"wa\",\"street\":\"123": [
+    "{cityastatebstreetczipd}{cityastatebstreetczipd}{cityastatebstreetczipd}{cityastatebstreetczipd}{cityastatebstreetczipd}{cityastatebstreetczipd}{cityastatebstreetczipd}{cityastatebstreetczipd}{cityastatebstreetczipd}{cityastatebstreetczipd}{cityastatebstreetczipd}{cityastatebstreetczipd}{cityastatebstreetczipd}{cityastatebstreetczipd}{cityastatebstreetczipd}{cityastatebstreetczipd}{cityastatebstreetczipd}{cityastatebstreetczipd}{cityastatebstreetczipd}{cityastatebstreetczipd}{cityastatebstreetczipd}{cityseatlestatewastreet123": [
       "pre"
     ],
-    "st\"\"zip\":\"02109\"}],\"entered\":\"\\/date(1191992400000": [
+    "stzip02109}entered\\/date1191992400000": [
       "pre"
     ],
-    "0500)\\/\",\"name\":\"john": [
+    "0500\\/namejohn": [
       "pre"
     ],
-    "smith\"}": [
+    "smith}": [
       "pre"
     ],
-    "{\"city\":\"a\",\"state\":\"b\",\"street\":\"c\",\"zip\":\"d\"}{\"city\":\"a\",\"state\":\"b\",\"street\":\"c\",\"zip\":\"d\"}{\"city\":\"a\",\"state\":\"b\",\"street\":\"c\",\"zip\":\"d\"}{\"city\":\"a\",\"state\":\"b\",\"street\":\"c\",\"zip\":\"d\"}{\"city\":\"a\",\"state\":\"b\",\"street\":\"c\",\"zip\":\"d\"}{\"city\":\"a\",\"state\":\"b\",\"street\":\"c\",\"zip\":\"d\"}{\"city\":\"a\",\"state\":\"b\",\"street\":\"c\",\"zip\":\"d\"}{\"city\":\"a\",\"state\":\"b\",\"street\":\"c\",\"zip\":\"d\"}{\"city\":\"a\",\"state\":\"b\",\"street\":\"c\",\"zip\":\"d\"}{\"city\":\"a\",\"state\":\"b\",\"street\":\"c\",\"zip\":\"d\"}{\"city\":\"a\",\"state\":\"b\",\"street\":\"c\",\"zip\":\"d\"}{\"city\":\"a\",\"state\":\"b\",\"street\":\"c\",\"zip\":\"d\"}{\"city\":\"a\",\"state\":\"b\",\"street\":\"c\",\"zip\":\"d\"}{\"city\":\"a\",\"state\":\"b\",\"street\":\"c\",\"zip\":\"d\"}{\"city\":\"a\",\"state\":\"b\",\"street\":\"c\",\"zip\":\"d\"}{\"city\":\"a\",\"state\":\"b\",\"street\":\"c\",\"zip\":\"d\"}{\"city\":\"a\",\"state\":\"b\",\"street\":\"c\",\"zip\":\"d\"}{\"city\":\"a\",\"state\":\"b\",\"street\":\"c\",\"zip\":\"d\"}{\"city\":\"a\",\"state\":\"b\",\"street\":\"c\",\"zip\":\"d\"}{\"city\":\"a\",\"state\":\"b\",\"street\":\"c\",\"zip\":\"d\"}": [
+    "{cityastatebstreetczipd}{cityastatebstreetczipd}{cityastatebstreetczipd}{cityastatebstreetczipd}{cityastatebstreetczipd}{cityastatebstreetczipd}{cityastatebstreetczipd}{cityastatebstreetczipd}{cityastatebstreetczipd}{cityastatebstreetczipd}{cityastatebstreetczipd}{cityastatebstreetczipd}{cityastatebstreetczipd}{cityastatebstreetczipd}{cityastatebstreetczipd}{cityastatebstreetczipd}{cityastatebstreetczipd}{cityastatebstreetczipd}{cityastatebstreetczipd}{cityastatebstreetczipd}": [
       "strong"
     ],
     "modified": [
@@ -2198,9 +2203,6 @@
     "always": [
       "p"
     ],
-    "20000.": [
-      "p"
-    ],
     "fails": [
       "p"
     ],
@@ -2263,28 +2265,30 @@
     "overflow": [
       "p"
     ],
-    "i]:": [
+    "i": [
+      "p",
+      "p",
+      "div",
+      "div",
       "p"
     ],
     "import": [
       "pre"
     ],
-    "javaio.objectinputstream;import": [
+    "javaioobjectinputstreamimport": [
       "pre"
     ],
-    "javaio.ioexception;import": [
+    "javaioioexceptionimport": [
       "pre"
     ],
-    "javautil.random;public": [
+    "javautilrandompublic": [
       "pre"
     ],
     "random": [
+      "pre",
       "pre"
     ],
     "draw": [
-      "pre"
-    ],
-    "random);": [
       "pre"
     ],
     "lotteryint": [
@@ -2293,14 +2297,11 @@
     "thisticket": [
       "pre",
       "pre",
-      "pre"
-    ],
-    "int)": [
       "pre",
       "pre",
       "pre"
     ],
-    "math.abs(ticket": [
+    "mathabsticket": [
       "pre"
     ],
     "%": [
@@ -2313,22 +2314,13 @@
       "pre",
       "pre"
     ],
-    "1;": [
-      "pre",
-      "pre",
+    "getticket": [
       "pre"
     ],
-    "getticket)": [
+    "roll": [
       "pre"
     ],
-    "thisticket;": [
-      "pre",
-      "pre"
-    ],
-    "roll)": [
-      "pre"
-    ],
-    "(math.abs(draw.nextint())": [
+    "mathabsdrawnextint": [
       "pre"
     ],
     "readobjectobjectinputstream": [
@@ -2348,7 +2340,7 @@
     "classnotfoundexception": [
       "pre"
     ],
-    "indefaultreadobject();": [
+    "indefaultreadobject": [
       "pre",
       "pre"
     ],
@@ -2364,7 +2356,7 @@
     "calls": [
       "p"
     ],
-    "readobject)": [
+    "readobject": [
       "p",
       "i",
       "h2",
@@ -2530,26 +2522,24 @@
     "deactivate": [
       "p"
     ],
-    "personjava:": [
-      "p"
-    ],
     "personjava": [
+      "p",
       "em"
     ],
     "final": [
       "pre",
       "p"
     ],
-    "javaio.ioexception": [
+    "javaioioexception": [
       "pre"
     ],
     "throw": [
       "pre"
     ],
-    "javaio.ioexception(\"cannot": [
+    "javaioioexceptioncannot": [
       "pre"
     ],
-    "deserialized\";}": [
+    "deserialized}": [
       "pre"
     ],
     "needed": [
@@ -2598,7 +2588,7 @@
     "classnotfoundexception{": [
       "pre"
     ],
-    "math.abs(this.ticket": [
+    "mathabsthisticket": [
       "pre"
     ],
     "//perform": [
@@ -2772,12 +2762,6 @@
     "gather": [
       "p"
     ],
-    "i]": [
-      "p",
-      "div",
-      "div",
-      "p"
-    ],
     "ser04": [
       "p",
       "div",
@@ -2841,14 +2825,14 @@
       "div",
       "p"
     ],
-    "http//www.securecoding.cert.org/confluence/display/java/ser04": [
+    "http//wwwsecurecodingcertorg/confluence/display/java/ser04": [
       "p",
       "div",
       "div",
       "p",
       "a"
     ],
-    "j.+validate+deserialized+objects": [
+    "j+validate+deserialized+objects": [
       "p",
       "div",
       "div",

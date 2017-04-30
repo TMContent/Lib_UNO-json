@@ -1,6 +1,6 @@
 {
   "id": "8e0a55a1-ad6a-4a9c-871d-8648e77181d8",
-  "checksum": "673e9e2a669f6a507a63d6b44a43adc3",
+  "checksum": "1f7648ed31f4480da21d56e8dd042b95",
   "words": {
     "description": [
       "h2"
@@ -25,15 +25,6 @@
       "p",
       "p",
       "p",
-      "ul",
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a",
-      "li",
-      "a",
       "title"
     ],
     "spoofing": [
@@ -50,15 +41,6 @@
       "p",
       "p",
       "p",
-      "ul",
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a",
-      "li",
-      "a",
       "title"
     ],
     "vulnerabilities": [
@@ -205,7 +187,16 @@
       "p",
       "p",
       "p",
-      "p"
+      "p",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "a",
+      "li",
+      "a"
     ],
     "a": [
       "p",
@@ -276,7 +267,7 @@
       "p",
       "p"
     ],
-    "xss)": [
+    "xss": [
       "p",
       "p"
     ],
@@ -291,7 +282,13 @@
       "p",
       "p",
       "p",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a",
+      "ul",
+      "li",
+      "a"
     ],
     "and": [
       "p",
@@ -337,7 +334,13 @@
       "p",
       "p",
       "p",
-      "p"
+      "ul",
+      "li",
+      "a",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "with": [
       "p",
@@ -467,7 +470,10 @@
       "p",
       "p",
       "p",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "an": [
       "p",
@@ -530,8 +536,14 @@
       "p",
       "p",
       "p",
+      "ul",
+      "li",
+      "a",
       "p",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "applications": [
       "p"
@@ -733,29 +745,64 @@
       "p"
     ],
     "validate": [
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "input": [
       "p",
-      "p"
+      "ul",
+      "li",
+      "a",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "encode": [
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "untrusted": [
       "p",
-      "p"
+      "ul",
+      "li",
+      "a",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "displayed": [
       "p",
       "p"
     ],
     "use": [
-      "p"
-    ],
-    "ssl/tls": [
       "p",
-      "p"
+      "ul",
+      "li",
+      "a"
+    ],
+    "tls": [
+      "p",
+      "ul",
+      "li",
+      "a",
+      "p",
+      "ul",
+      "li",
+      "a"
+    ],
+    "output": [
+      "ul",
+      "li",
+      "a",
+      "ul",
+      "li",
+      "a"
     ],
     "check": [
       "h2"
@@ -773,28 +820,13 @@
       "p"
     ],
     "validated": [
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "encoded": [
-      "p"
-    ],
-    "specific": [
-      "h2"
-    ],
-    "technologies": [
-      "h2"
-    ],
-    "aspnet": [
-      "ul",
-      "li",
-      "a"
-    ],
-    "java": [
-      "ul",
-      "li",
-      "a"
-    ],
-    "php": [
+      "p",
       "ul",
       "li",
       "a"
@@ -803,16 +835,28 @@
   "tags": {},
   "links": [
     {
-      "href": "21a7c118-5112-40e6-a167-9790a2d9a116",
-      "text": "ASP.NET Content Spoofing"
+      "href": "11a15f3a-7fe8-4e4c-be5e-309ab7227b3d",
+      "text": "Validate All Input"
     },
     {
-      "href": "a1e4199f-c906-4163-8a6d-de2b25a2384b",
-      "text": "Java Content Spoofing"
+      "href": "9b0ef1a5-c143-4e64-81cc-9e02ccbd9fbd",
+      "text": "Encode Untrusted Data in Output"
     },
     {
-      "href": "41940a08-e097-4994-a770-77fc60d6ce7e",
-      "text": "PHP Content Spoofing"
+      "href": "0e4a9e3e-0ccc-4b67-b416-75ac18ddd742",
+      "text": "Use TLS"
+    },
+    {
+      "href": "8d8c24b0-096b-43f4-9391-9b293313a0e8",
+      "text": "All Input Is Validated"
+    },
+    {
+      "href": "13112146-7c14-4b6d-9e94-24daa22eefc4",
+      "text": "Untrusted Data in Output Is Encoded"
+    },
+    {
+      "href": "01a343ff-a1c7-44d6-a21d-a07f45b1b4d5",
+      "text": "TLS Is Used"
     }
   ]
 }

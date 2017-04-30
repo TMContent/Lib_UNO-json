@@ -496,7 +496,8 @@
       "li",
       "strong",
       "li",
-      "strong"
+      "strong",
+      "pre"
     ],
     "not": [
       "p",
@@ -593,6 +594,7 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "strong",
       "li",
@@ -609,6 +611,8 @@
       "li",
       "li",
       "li",
+      "li",
+      "tt",
       "tt",
       "tt",
       "li",
@@ -923,10 +927,14 @@
       "li",
       "strong"
     ],
-    "names).": [
+    "names": [
+      "ol",
+      "ol",
       "ol",
       "li",
-      "strong"
+      "strong",
+      "li",
+      "li"
     ],
     "regular": [
       "ol",
@@ -1161,7 +1169,12 @@
       "ol",
       "ol",
       "ol",
+      "ol",
+      "ol",
       "li",
+      "li",
+      "li",
+      "strong",
       "li",
       "li",
       "strong"
@@ -1249,12 +1262,6 @@
       "li",
       "li"
     ],
-    "names": [
-      "ol",
-      "ol",
-      "li",
-      "li"
-    ],
     "internet": [
       "ol",
       "li"
@@ -1279,12 +1286,12 @@
       "ol",
       "li"
     ],
-    "^https?\\/\\/([a": [
+    "^https?\\/\\/a": [
       "ol",
       "li",
       "tt"
     ],
-    "z][": [
+    "z": [
       "ol",
       "ol",
       "ol",
@@ -1318,7 +1325,7 @@
       "pre",
       "pre"
     ],
-    "9]+[a": [
+    "9+a": [
       "ol",
       "ol",
       "ol",
@@ -1330,7 +1337,7 @@
       "tt",
       "pre"
     ],
-    "9]\\.)*mydomain\\.com$": [
+    "9\\*mydomain\\com$": [
       "ol",
       "li",
       "tt"
@@ -1363,7 +1370,7 @@
       "ol",
       "li"
     ],
-    "https).": [
+    "https": [
       "ol",
       "li"
     ],
@@ -1373,6 +1380,8 @@
     ],
     "characters": [
       "ol",
+      "ol",
+      "li",
       "li"
     ],
     "url": [
@@ -1387,7 +1396,7 @@
       "ol",
       "li"
     ],
-    "?]": [
+    "?": [
       "ol",
       "li"
     ],
@@ -1408,10 +1417,6 @@
       "ol",
       "li"
     ],
-    "characters)": [
-      "ol",
-      "li"
-    ],
     "once": [
       "ol",
       "li"
@@ -1424,12 +1429,7 @@
       "ol",
       "li"
     ],
-    "[a": [
-      "ol",
-      "li",
-      "tt"
-    ],
-    "9]\\.)*": [
+    "9\\*": [
       "ol",
       "li",
       "tt"
@@ -1440,7 +1440,7 @@
       "li",
       "li"
     ],
-    "http//myserver.example.com": [
+    "http//myserverexamplecom": [
       "ol",
       "li",
       "tt"
@@ -1449,7 +1449,7 @@
       "ol",
       "li"
     ],
-    "http//www.mysubdomain.example.com": [
+    "http//wwwmysubdomainexamplecom": [
       "ol",
       "li",
       "tt"
@@ -1507,6 +1507,10 @@
       "ol",
       "li",
       "tt",
+      "pre",
+      "pre",
+      "pre",
+      "pre",
       "pre"
     ],
     "re": [
@@ -1531,23 +1535,17 @@
       "pre",
       "pre"
     ],
-    "regexp/^https?:\\/\\/([a": [
+    "regexp/^https?\\/\\/a": [
       "ol",
       "li",
       "tt",
       "pre"
     ],
-    "9]\\.)*mydomain\\.com$/);": [
+    "9\\*mydomain\\com$/": [
       "ol",
       "li",
-      "tt"
-    ],
-    "test)": [
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "strong"
+      "tt",
+      "pre"
     ],
     "method": [
       "ol",
@@ -1574,12 +1572,14 @@
     "return": [
       "ol",
       "li",
-      "tt"
+      "tt",
+      "pre"
     ],
-    "patterntest(origin);": [
+    "patterntestorigin": [
       "ol",
       "li",
-      "tt"
+      "tt",
+      "pre"
     ],
     "call": [
       "ol",
@@ -1602,17 +1602,12 @@
       "li",
       "tt"
     ],
-    "functionevent)": [
+    "functionevent": [
       "ol",
       "li",
       "tt",
       "pre",
       "pre"
-    ],
-    "..": [
-      "ol",
-      "li",
-      "tt"
     ],
     "thoroughly": [
       "ol",
@@ -1690,11 +1685,17 @@
       "pre",
       "pre"
     ],
-    "websocket\"ws://echo.websocket.org\");\n\nsocket.onmessage": [
+    "websocketws//echowebsocketorg": [
       "pre",
       "pre"
     ],
-    "{var": [
+    "socketonmessage": [
+      "pre",
+      "pre"
+    ],
+    "{": [
+      "pre",
+      "pre",
       "pre",
       "pre"
     ],
@@ -1702,10 +1703,20 @@
       "pre",
       "pre"
     ],
-    "documentgetelementbyid(\"div1\");\nmydiv.innerhtml": [
+    "documentgetelementbyiddiv1": [
+      "pre",
       "pre"
     ],
-    "eventdata;\n}": [
+    "mydivinnerhtml": [
+      "pre",
+      "pre"
+    ],
+    "eventdata": [
+      "pre",
+      "pre"
+    ],
+    "}": [
+      "pre",
       "pre",
       "pre"
     ],
@@ -1727,31 +1738,16 @@
     "been": [
       "p"
     ],
-    "isoriginvalidorigin)": [
+    "isoriginvalidorigin": [
       "pre"
     ],
     "pattern": [
       "pre"
     ],
-    "9]\\.)*mydomain\\.com$/);\n\treturn": [
+    "isoriginvalideventorigin": [
       "pre"
     ],
-    "patterntest(origin);\n}\nvar": [
-      "pre"
-    ],
-    "{\tif": [
-      "pre"
-    ],
-    "isoriginvalid(event.origin))": [
-      "pre"
-    ],
-    "{\tvar": [
-      "pre"
-    ],
-    "documentgetelementbyid(\"div1\");\n\tmydiv.innerhtml": [
-      "pre"
-    ],
-    "isoriginvalid)": [
+    "isoriginvalid": [
       "p",
       "tt"
     ],
@@ -1775,7 +1771,7 @@
     "ends": [
       "p"
     ],
-    "examplecom,": [
+    "examplecom": [
       "p"
     ],
     "case": [

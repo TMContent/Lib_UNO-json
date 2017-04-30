@@ -670,8 +670,27 @@
     "interface": [
       "p"
     ],
-    "dpapi)": [
-      "p"
+    "dpapi": [
+      "p",
+      "p",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "li",
+      "p",
+      "h2",
+      "p",
+      "ol",
+      "p",
+      "h2",
+      "p",
+      "p",
+      "ol",
+      "li",
+      "p",
+      "title"
     ],
     "protected": [
       "p",
@@ -1276,27 +1295,6 @@
     "machineconfig": [
       "p",
       "em"
-    ],
-    "dpapi": [
-      "p",
-      "ul",
-      "ul",
-      "ul",
-      "li",
-      "li",
-      "li",
-      "p",
-      "h2",
-      "p",
-      "ol",
-      "p",
-      "h2",
-      "p",
-      "p",
-      "ol",
-      "li",
-      "p",
-      "title"
     ],
     "supports": [
       "p",
@@ -2198,9 +2196,10 @@
       "li",
       "p"
     ],
-    "appsettings>.": [
+    "appsettings": [
       "ul",
-      "li"
+      "li",
+      "em"
     ],
     "section": [
       "ul",
@@ -2259,13 +2258,77 @@
       "ul",
       "li"
     ],
-    "connectionstrings>.": [
+    "connectionstrings": [
       "ul",
-      "li"
+      "li",
+      "em",
+      "h3",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "pre",
+      "li",
+      "li",
+      "li",
+      "em",
+      "pre",
+      "pre",
+      "p",
+      "em",
+      "pre",
+      "li",
+      "li",
+      "em",
+      "pre",
+      "li",
+      "li",
+      "p",
+      "em",
+      "pre",
+      "h3",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "pre",
+      "li",
+      "li",
+      "em",
+      "pre",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "p",
+      "em",
+      "pre",
+      "li",
+      "li",
+      "em",
+      "pre"
     ],
-    "identity>.": [
+    "identity": [
       "ul",
-      "li"
+      "li",
+      "em",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "ol",
+      "li",
+      "pre"
     ],
     "impersonation": [
       "ul",
@@ -2279,9 +2342,10 @@
       "li",
       "p"
     ],
-    "sessionstate>.": [
+    "sessionstate": [
       "ul",
-      "li"
+      "li",
+      "em"
     ],
     "string": [
       "ul",
@@ -2322,52 +2386,6 @@
       "ol",
       "li",
       "pre"
-    ],
-    "appsettings": [
-      "em"
-    ],
-    "connectionstrings": [
-      "em",
-      "h3",
-      "ol",
-      "ol",
-      "ol",
-      "ol",
-      "li",
-      "em",
-      "p",
-      "em",
-      "li",
-      "em",
-      "li",
-      "p",
-      "em",
-      "h3",
-      "ol",
-      "li",
-      "em",
-      "ol",
-      "ol",
-      "p",
-      "em",
-      "li",
-      "em"
-    ],
-    "identity": [
-      "em",
-      "p",
-      "p",
-      "p",
-      "p",
-      "p",
-      "p",
-      "p",
-      "ol",
-      "li",
-      "pre"
-    ],
-    "sessionstate": [
-      "em"
     ],
     "encrypting": [
       "p",
@@ -2460,80 +2478,60 @@
       "p",
       "p"
     ],
-    "processmodel>": [
-      "ul",
-      "li"
-    ],
-    "runtime>": [
-      "ul",
-      "li"
-    ],
-    "mscorlib>": [
-      "ul",
-      "li"
-    ],
-    "startup>": [
-      "ul",
-      "li"
-    ],
-    "system.runtime.remoting>": [
-      "ul",
-      "li"
-    ],
-    "configprotecteddata>": [
-      "ul",
-      "li",
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "pre"
-    ],
-    "satelliteassemblies>": [
-      "ul",
-      "li"
-    ],
-    "cryptographysettings>": [
-      "ul",
-      "li"
-    ],
-    "cryptonamemapping>": [
-      "ul",
-      "li"
-    ],
-    "cryptoclasses>": [
-      "ul",
-      "li"
-    ],
     "processmodel": [
+      "ul",
+      "li",
       "em"
     ],
     "runtime": [
+      "ul",
+      "li",
       "em"
     ],
     "mscorlib": [
+      "ul",
+      "li",
       "em"
     ],
     "startup": [
+      "ul",
+      "li",
       "em"
     ],
-    "systemruntime.remoting": [
+    "systemruntimeremoting": [
+      "ul",
+      "li",
       "em"
     ],
     "configprotecteddata": [
+      "ul",
+      "li",
       "em",
-      "em"
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "em",
+      "pre"
     ],
     "satelliteassemblies": [
+      "ul",
+      "li",
       "em"
     ],
     "cryptographysettings": [
+      "ul",
+      "li",
       "em"
     ],
     "cryptonamemapping": [
+      "ul",
+      "li",
       "em"
     ],
     "cryptoclasses": [
+      "ul",
+      "li",
       "em"
     ],
     "listed": [
@@ -2589,6 +2587,10 @@
       "em",
       "p",
       "em",
+      "ol",
+      "li",
+      "pre",
+      "pre",
       "p",
       "em"
     ],
@@ -2931,7 +2933,7 @@
       "li",
       "p"
     ],
-    "connectionstrings>": [
+    "name=mylocalsqlserver": [
       "ol",
       "li",
       "pre",
@@ -2939,15 +2941,7 @@
       "li",
       "pre"
     ],
-    "name=\"mylocalsqlserver\"": [
-      "ol",
-      "li",
-      "pre",
-      "ol",
-      "li",
-      "pre"
-    ],
-    "connectionstring=\"initial": [
+    "connectionstring=initial": [
       "ol",
       "li",
       "pre",
@@ -2968,7 +2962,7 @@
       "li",
       "pre"
     ],
-    "security=sspi\"": [
+    "security=sspi": [
       "ol",
       "li",
       "pre",
@@ -2976,7 +2970,7 @@
       "li",
       "pre"
     ],
-    "providername=\"systemdata.sqlclient\"/></connectionstrings>": [
+    "providername=systemdatasqlclient//connectionstrings": [
       "ol",
       "li",
       "pre",
@@ -3181,26 +3175,6 @@
       "li",
       "em"
     ],
-    "\"connectionstrings\"": [
-      "ol",
-      "ol",
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "pre",
-      "pre",
-      "li",
-      "pre",
-      "li",
-      "pre",
-      "ol",
-      "li",
-      "pre",
-      "ol",
-      "li",
-      "pre"
-    ],
     "app": [
       "ol",
       "ol",
@@ -3229,7 +3203,7 @@
       "li",
       "pre"
     ],
-    "\"/machinedpapi\"": [
+    "/machinedpapi": [
       "ol",
       "ol",
       "li",
@@ -3257,12 +3231,6 @@
       "ul",
       "li",
       "em"
-    ],
-    "\"dataprotectionconfigurationprovider\"": [
-      "ol",
-      "li",
-      "pre",
-      "pre"
     ],
     "above": [
       "ol",
@@ -3406,7 +3374,7 @@
       "p",
       "p"
     ],
-    "fileaspnet_regiis.exe": [
+    "fileaspnet_regiisexe": [
       "ol",
       "li"
     ],
@@ -3418,7 +3386,7 @@
       "li",
       "pre"
     ],
-    "\"dataprotectionconfigurationprovider\"note": [
+    "dataprotectionconfigurationprovidernote": [
       "ol",
       "li"
     ],
@@ -3427,7 +3395,7 @@
       "li",
       "p"
     ],
-    "directory%windir%\\microsoft.net\\framework\\<versionnumber>the": [
+    "directory%windir%\\microsoftnet\\framework\\versionnumberthe": [
       "ol",
       "li"
     ],
@@ -3520,7 +3488,7 @@
       "ul",
       "li"
     ],
-    "\"/test/aspnet/machinedpapi\"": [
+    "/test/aspnet/machinedpapi": [
       "ol",
       "li",
       "ul",
@@ -3592,7 +3560,7 @@
       "li",
       "p"
     ],
-    "section..succeeded!": [
+    "sectionsucceeded!": [
       "ol",
       "pre",
       "li",
@@ -3641,41 +3609,47 @@
       "ol",
       "li"
     ],
-    "encrypteddata>": [
+    "encrypteddata": [
       "ol",
       "ol",
       "li",
       "ul",
       "li",
+      "em",
       "pre",
       "ol",
       "ol",
       "li",
       "ul",
       "li",
+      "em",
       "pre"
     ],
-    "cipherdata>": [
+    "cipherdata": [
       "ol",
       "li",
       "ul",
       "li",
+      "em",
       "ol",
       "ol",
       "li",
       "ul",
       "li",
+      "em",
       "pre"
     ],
-    "ciphervalue>": [
+    "ciphervalue": [
       "ol",
       "li",
       "ul",
       "li",
+      "em",
       "ol",
       "li",
       "ul",
-      "li"
+      "li",
+      "em"
     ],
     "modified": [
       "ol",
@@ -3683,27 +3657,21 @@
       "ol",
       "p"
     ],
-    "..<connectionstrings": [
+    "configprotectionprovider=dataprotectionconfigurationprovider": [
+      "ol",
+      "pre"
+    ],
+    "cipherdataciphervalueaqaaancmnd8bfderjhoawe/cl+sbaaaaexuij/8ofe+sgts7jbkzdgqaaaacaaaaaaadzgaaqaaaabaaaaakms84dyacpaeasc1dimibaaaaaasaaacgaaaaeaaaakavi6aaofdqhdc6w1er3hmwaaaacz00mzoz1di7kyrvkmin/bmfrvohnuwz6h9rcxj6ow41e3hwhlbh79iuwiinp0vqfaaaaf2sxcdb3fckkgnagkhkilqtetxh/ciphervalue": [
+      "ol",
+      "pre"
+    ],
+    "/cipherdata": [
       "ol",
       "pre",
       "ol",
       "pre"
     ],
-    "configprotectionprovider=\"dataprotectionconfigurationprovider\"": [
-      "ol",
-      "pre"
-    ],
-    "cipherdata><ciphervalue>aqaaancmnd8bfderjhoawe/cl+sbaaaaexuij/8ofe+sgts7jbkzdgqaaaacaaaaaaadzgaaqaaaabaaaaakms84dyacpaeasc1dimibaaaaaasaaacgaaaaeaaaakavi6aaofdqhdc6w1er3hmwaaaacz00mzoz1di7kyrvkmin/bmfrvohnuwz6h9rcxj6ow41e3hwhlbh79iuwiinp0vqfaaaaf2sxcdb3fckkgnagkhkilqtetxh</ciphervalue>": [
-      "ol",
-      "pre"
-    ],
-    "/cipherdata>": [
-      "ol",
-      "pre",
-      "ol",
-      "pre"
-    ],
-    "/encrypteddata></connectionstrings>...add": [
+    "/encrypteddata/connectionstringsadd": [
       "ol"
     ],
     "defaultaspx": [
@@ -3766,7 +3734,7 @@
       "li",
       "pre"
     ],
-    "language=\"c#\"": [
+    "language=c#": [
       "ol",
       "li",
       "pre",
@@ -3774,7 +3742,7 @@
       "li",
       "pre"
     ],
-    "%<script": [
+    "%script": [
       "ol",
       "li",
       "pre",
@@ -3782,7 +3750,7 @@
       "li",
       "pre"
     ],
-    "runat=\"server\"": [
+    "runat=server": [
       "ol",
       "li",
       "pre",
@@ -3838,7 +3806,7 @@
       "li",
       "pre"
     ],
-    "responsewrite(\"clear": [
+    "responsewriteclear": [
       "ol",
       "li",
       "pre",
@@ -3858,14 +3826,6 @@
       "pre",
       "li"
     ],
-    "\"": [
-      "ol",
-      "li",
-      "pre",
-      "ol",
-      "li",
-      "pre"
-    ],
     "+": [
       "ol",
       "li",
@@ -3882,7 +3842,7 @@
       "li",
       "pre"
     ],
-    "\"mylocalsqlserver\"].connectionstring);": [
+    "mylocalsqlserverconnectionstring": [
       "ol",
       "li",
       "pre",
@@ -3890,7 +3850,7 @@
       "li",
       "pre"
     ],
-    "}/script><html>": [
+    "}/scripthtml": [
       "ol",
       "li",
       "pre",
@@ -3898,7 +3858,7 @@
       "li",
       "pre"
     ],
-    "body/></html>": [
+    "body//html": [
       "ol",
       "li",
       "pre",
@@ -3966,7 +3926,7 @@
       "li",
       "pre"
     ],
-    "section..succeeded!to": [
+    "sectionsucceeded!to": [
       "ol"
     ],
     "decrypt": [
@@ -4006,7 +3966,7 @@
       "ol",
       "li"
     ],
-    "%windir%\\microsoftnet\\framework\\<versionnumber>": [
+    "%windir%\\microsoftnet\\framework\\versionnumber": [
       "p",
       "em"
     ],
@@ -4019,19 +3979,7 @@
       "ol",
       "li"
     ],
-    "encrypteddata": [
-      "em",
-      "em"
-    ],
-    "cipherdata": [
-      "em",
-      "em"
-    ],
-    "ciphervalue": [
-      "em",
-      "em"
-    ],
-    "/encrypteddata></connectionstrings>...": [
+    "/encrypteddata/connectionstrings": [
       "pre"
     ],
     "here": [
@@ -4104,7 +4052,7 @@
       "li",
       "em"
     ],
-    "\"false\"": [
+    "false": [
       "ol",
       "li",
       "em"
@@ -4130,39 +4078,47 @@
       "ol",
       "li",
       "ol",
+      "ol",
       "li",
-      "p"
+      "li",
+      "p",
+      "pre"
     ],
     "occur": [
       "ol",
       "li"
     ],
-    "providers>": [
+    "providers": [
       "ol",
       "li",
       "pre"
     ],
-    "usemachineprotection=\"false\"": [
+    "usemachineprotection=false": [
       "ol",
       "li",
       "pre"
     ],
-    "keyentropy=\"\"": [
+    "keyentropy=": [
       "ol",
       "li",
       "pre"
     ],
-    "name=\"myuserdataprotectionconfigurationprovider\"": [
+    "name=myuserdataprotectionconfigurationprovider": [
       "ol",
       "li",
       "pre"
     ],
-    "type=\"systemconfiguration.dpapiprotectedconfigurationprovider,": [
+    "type=systemconfigurationdpapiprotectedconfigurationprovider": [
       "ol",
       "li",
       "pre"
     ],
-    "systemconfiguration,\t\tversion=3.5.0.0,": [
+    "systemconfiguration": [
+      "ol",
+      "li",
+      "pre"
+    ],
+    "version=3500": [
       "ol",
       "li",
       "pre"
@@ -4172,7 +4128,7 @@
       "li",
       "pre"
     ],
-    "publickeytoken=b03f5f7f11d50a3a\"": [
+    "publickeytoken=b03f5f7f11d50a3a": [
       "ol",
       "li",
       "pre"
@@ -4185,12 +4141,12 @@
       "li",
       "pre"
     ],
-    "/providers></configprotecteddata>": [
+    "/providers/configprotecteddata": [
       "ol",
       "li",
       "pre"
     ],
-    "\"/userdpapi\"": [
+    "/userdpapi": [
       "ol",
       "li",
       "pre",
@@ -4198,7 +4154,7 @@
       "li",
       "pre"
     ],
-    "\"myuserdataprotectionconfigurationprovider\"": [
+    "myuserdataprotectionconfigurationprovider": [
       "ol",
       "ol",
       "li",
@@ -4208,7 +4164,7 @@
       "li",
       "em"
     ],
-    "\"/test/aspnet/userdpapi\"": [
+    "/test/aspnet/userdpapi": [
       "ol",
       "li",
       "ul",
@@ -4275,19 +4231,19 @@
     "uses": [
       "p"
     ],
-    "configprotectionprovider=\"myuserdataprotectionconfigurationprovider\"": [
+    "configprotectionprovider=myuserdataprotectionconfigurationprovider": [
       "ol",
       "pre"
     ],
-    "ciphervalue>aqaaancmnd8bfderjhoawe/cl+sbaaaawuizhylxzk+u4/8nnmrajqaaaaacaaaaaaadzgaaqaaaabaaaadlfqu00qt0begh6wmhhgysaaaaaasaaacgaaaaeaaaam56z6ezglmufzgcta83rkggaqaatvdpexhd6h95lfwbt0fqzyzxupi2ieph/xlhlb5rsuuqdcjul7xgiisavw2onqxgncpxxrsucxhq7vqgbh4g7xhk0wdyws5ax4t/ryjbfyef5kapzshdmdozdky/fowrvegar7lzkfbodcpjbvgx+lfsjdbnewrb5bqrx552dufjtdlp8u3k/da9twwdu2w/crlmxjtvz/y/ici1fzxjx3u7sy9k1ic+5hbi7nouck6ze5rlbnl0zfdq0pyglj2to4ftayat0szkbaxlxrqszmhx+7c+rgkpmqtg9xjaw26x3ijap2/uar2zozqh+tskamhysruhtichjdttp+r6rs21y2qkrt9hb9opd9b5mdizgtdkifwbbmwlv4xfuycna1zgny7mcsxmi62jxayvlzkcs5dxv0shwloujbtdcxqmfksrvo2scw86wcn8ad02jhkcqmf9swnzpd849mlqgmfiqqsflz6q+vjlrxqvb8zmvzemqpqcy/dktgjovjn0ioz3zhl20frenoa3ziwvvk8p9pblz3sefs19maw0jtyuaaaaayvnpot3an7lactdfyreip+ftu4=</ciphervalue>": [
+    "ciphervalueaqaaancmnd8bfderjhoawe/cl+sbaaaawuizhylxzk+u4/8nnmrajqaaaaacaaaaaaadzgaaqaaaabaaaadlfqu00qt0begh6wmhhgysaaaaaasaaacgaaaaeaaaam56z6ezglmufzgcta83rkggaqaatvdpexhd6h95lfwbt0fqzyzxupi2ieph/xlhlb5rsuuqdcjul7xgiisavw2onqxgncpxxrsucxhq7vqgbh4g7xhk0wdyws5ax4t/ryjbfyef5kapzshdmdozdky/fowrvegar7lzkfbodcpjbvgx+lfsjdbnewrb5bqrx552dufjtdlp8u3k/da9twwdu2w/crlmxjtvz/y/ici1fzxjx3u7sy9k1ic+5hbi7nouck6ze5rlbnl0zfdq0pyglj2to4ftayat0szkbaxlxrqszmhx+7c+rgkpmqtg9xjaw26x3ijap2/uar2zozqh+tskamhysruhtichjdttp+r6rs21y2qkrt9hb9opd9b5mdizgtdkifwbbmwlv4xfuycna1zgny7mcsxmi62jxayvlzkcs5dxv0shwloujbtdcxqmfksrvo2scw86wcn8ad02jhkcqmf9swnzpd849mlqgmfiqqsflz6q+vjlrxqvb8zmvzemqpqcy/dktgjovjn0ioz3zhl20frenoa3ziwvvk8p9pblz3sefs19maw0jtyuaaaaayvnpot3an7lactdfyreip+ftu4=/ciphervalue": [
       "ol",
       "pre"
     ],
-    "/encrypteddata>": [
+    "/encrypteddata": [
       "ol",
       "pre"
     ],
-    "/connectionstrings>...add": [
+    "/connectionstringsadd": [
       "ol"
     ],
     "work": [
@@ -4299,22 +4255,17 @@
       "li",
       "p"
     ],
-    "system.web>": [
+    "systemweb": [
       "ol",
       "li",
       "pre"
     ],
-    "..": [
+    "impersonate=true": [
       "ol",
       "li",
       "pre"
     ],
-    "impersonate=\"true\"": [
-      "ol",
-      "li",
-      "pre"
-    ],
-    "..</system.web>": [
+    "/systemweb": [
       "ol",
       "li",
       "pre"
@@ -4355,7 +4306,7 @@
       "li",
       "pre"
     ],
-    "'myuserdataprotectionconfigurationprovider' error": [
+    "'myuserdataprotectionconfigurationprovider'": [
       "ol",
       "li",
       "pre"
@@ -4385,7 +4336,7 @@
       "li",
       "pre"
     ],
-    "/connectionstrings>...": [
+    "/connectionstrings": [
       "pre"
     ],
     "deploy": [

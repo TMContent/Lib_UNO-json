@@ -1,7 +1,16 @@
 {
   "id": "8d7e677e-79ae-46ef-be4e-089bc89d04e1",
-  "checksum": "5f78e9c6049eec3bfd6c1bc6306f2d2f",
+  "checksum": "56669530048b0e137138e330350e6738",
   "words": {
+    "12": [
+      "p"
+    ],
+    "128": [
+      "p"
+    ],
+    "256": [
+      "p"
+    ],
     "applies": [
       "h2"
     ],
@@ -11,61 +20,82 @@
       "p",
       "p",
       "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
       "p"
     ],
-    "web": [
+    "application": [
       "ul",
       "li"
     ],
-    "applications": [
-      "ul",
-      "li"
-    ],
-    "apache": [
+    "using": [
       "ul",
       "li",
       "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "tls": [
       "ul",
-      "li"
+      "li",
+      "p",
+      "p",
+      "p",
+      "p",
+      "title"
     ],
     "what": [
-      "h2"
+      "h2",
+      "p"
     ],
     "do": [
       "h2"
     ],
-    "configure": [
-      "p"
-    ],
     "use": [
+      "p",
+      "p",
       "p",
       "p",
       "title"
     ],
     "only": [
       "p",
-      "p",
-      "p",
-      "p",
       "title"
     ],
     "strong": [
       "p",
       "p",
+      "title"
+    ],
+    "cipher": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
       "p",
       "p",
       "title"
     ],
-    "tls": [
+    "suites": [
       "p",
       "p",
       "p",
       "p",
-      "ul",
-      "li",
-      "title"
-    ],
-    "algorithms": [
+      "p",
       "p",
       "p",
       "p",
@@ -74,14 +104,32 @@
     "why": [
       "h2"
     ],
-    "using": [
+    "encryption": [
+      "p",
+      "p",
       "p"
     ],
-    "encryption": [
+    "algorithms": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
       "p",
       "p"
     ],
     "with": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
       "p",
       "p"
     ],
@@ -98,12 +146,35 @@
       "p",
       "p",
       "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
       "p"
     ],
     "risk": [
       "p"
     ],
     "of": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
       "p",
       "p",
       "p"
@@ -119,6 +190,19 @@
     ],
     "and": [
       "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
       "p"
     ],
     "regulatory": [
@@ -130,152 +214,787 @@
     "how": [
       "h2"
     ],
-    "edit": [
+    "current": [
       "p"
     ],
-    "httpdconf": [
+    "recommendation": [
       "p"
     ],
-    "file": [
-      "p"
-    ],
-    "include": [
+    "is": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
       "p",
       "p"
     ],
-    "following": [
+    "drop": [
+      "p"
+    ],
+    "support": [
       "p",
       "p"
     ],
-    "settings": [
+    "for": [
+      "p",
+      "p",
+      "p",
       "p",
       "p"
     ],
-    "sslprotocol": [
-      "pre"
-    ],
-    "": [
-      "pre"
-    ],
-    "all": [
-      "pre"
-    ],
-    "+tlsv1sslciphersuite": [
-      "pre"
-    ],
-    "high!anull:!sslv2:!md5:@strength\nsslhonorcipherorder": [
-      "pre"
-    ],
-    "on": [
-      "pre"
-    ],
-    "these": [
-      "p"
-    ],
-    "enable": [
-      "p"
-    ],
-    "protocol": [
-      "p"
-    ],
-    "cipher": [
-      "p"
-    ],
-    "suites": [
-      "p"
-    ],
-    "it": [
-      "p"
-    ],
-    "may": [
-      "p"
-    ],
-    "also": [
-      "p"
-    ],
-    "be": [
-      "p"
-    ],
-    "a": [
-      "p"
-    ],
-    "good": [
-      "p"
-    ],
-    "idea": [
-      "p"
-    ],
-    "line": [
-      "p"
-    ],
-    "in": [
-      "p",
-      "ul",
-      "li"
-    ],
-    "case": [
-      "p"
-    ],
-    "old": [
+    "earlier": [
       "p"
     ],
     "versions": [
       "p"
     ],
-    "apache/mod_ssl": [
+    "doing": [
       "p"
     ],
-    "sslinsecurerenegotiation": [
-      "pre"
+    "so": [
+      "p",
+      "p",
+      "p"
     ],
-    "off": [
-      "pre"
+    "can": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p"
     ],
-    "additional": [
-      "h2"
+    "break": [
+      "p"
     ],
-    "resources": [
-      "h2"
+    "compatibility": [
+      "p",
+      "p"
     ],
-    "for": [
-      "ul",
-      "li"
+    "legacy": [
+      "p",
+      "p",
+      "p"
     ],
-    "more": [
-      "ul",
-      "li"
+    "systems": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "if": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "you": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "have": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "some": [
+      "p",
+      "p"
+    ],
+    "kind": [
+      "p"
+    ],
+    "will": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "research": [
+      "p"
+    ],
+    "secure": [
+      "p",
+      "p"
+    ],
+    "are": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "supported": [
+      "p",
+      "p"
+    ],
+    "by": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "those": [
+      "p",
+      "p"
+    ],
+    "these": [
+      "p",
+      "p"
+    ],
+    "probably": [
+      "p"
+    ],
+    "not": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "be": [
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "strongest": [
+      "p"
+    ],
+    "available": [
+      "p"
+    ],
+    "this": [
+      "p",
+      "p",
+      "p"
     ],
     "information": [
-      "ul",
-      "li"
+      "p"
     ],
-    "about": [
-      "ul",
-      "li"
+    "then": [
+      "p",
+      "p"
     ],
-    "configuring": [
-      "ul",
-      "li"
+    "dictate": [
+      "p"
     ],
-    "please": [
-      "ul",
-      "li"
+    "your": [
+      "p",
+      "p",
+      "p",
+      "p"
     ],
-    "see": [
-      "ul",
-      "li"
+    "choice": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p"
     ],
-    "http//httpd.apache.org/docs/2.0/ssl/ssl_howto.html": [
-      "ul",
-      "li",
-      "a"
+    "but": [
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "it": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "might": [
+      "p",
+      "p"
+    ],
+    "turn": [
+      "p"
+    ],
+    "out": [
+      "p",
+      "p"
+    ],
+    "that": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "there": [
+      "p",
+      "p"
+    ],
+    "no": [
+      "p"
+    ],
+    "in": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "question": [
+      "p"
+    ],
+    "at": [
+      "p",
+      "p"
+    ],
+    "all": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "case": [
+      "p"
+    ],
+    "forced": [
+      "p"
+    ],
+    "choose": [
+      "p",
+      "p",
+      "p"
+    ],
+    "between": [
+      "p"
+    ],
+    "breaking": [
+      "p"
+    ],
+    "or": [
+      "p",
+      "p"
+    ],
+    "known": [
+      "p",
+      "p"
+    ],
+    "vulnerabilities": [
+      "p",
+      "p"
+    ],
+    "weak": [
+      "p"
+    ],
+    "better": [
+      "p",
+      "p"
+    ],
+    "than": [
+      "p",
+      "p"
+    ],
+    "any": [
+      "p"
+    ],
+    "it's": [
+      "p"
+    ],
+    "a": [
+      "p",
+      "p",
+      "p"
+    ],
+    "tough": [
+      "p"
+    ],
+    "we": [
+      "p"
+    ],
+    "cannot": [
+      "p"
+    ],
+    "make": [
+      "p"
+    ],
+    "our": [
+      "p"
+    ],
+    "goal": [
+      "p"
+    ],
+    "here": [
+      "p"
+    ],
+    "recommend": [
+      "p"
+    ],
+    "affected": [
+      "p"
+    ],
+    "work": [
+      "p"
+    ],
+    "practice": [
+      "p",
+      "p"
+    ],
+    "modern": [
+      "p"
+    ],
+    "clients": [
+      "p"
+    ],
+    "when": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "choosing": [
+      "p",
+      "p"
+    ],
+    "handshake": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "algorithm": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "determine": [
+      "p"
+    ],
+    "whether": [
+      "p",
+      "p"
+    ],
+    "interested": [
+      "p"
+    ],
+    "perfect": [
+      "p",
+      "p",
+      "p"
+    ],
+    "forward": [
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "secrecy": [
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "protects": [
+      "p"
+    ],
+    "recorded": [
+      "p"
+    ],
+    "sessions": [
+      "p"
+    ],
+    "from": [
+      "p"
+    ],
+    "being": [
+      "p"
+    ],
+    "decrypted": [
+      "p"
+    ],
+    "certificate": [
+      "p",
+      "p"
+    ],
+    "compromised": [
+      "p"
+    ],
+    "future": [
+      "p"
+    ],
+    "provided": [
+      "p"
+    ],
+    "an": [
+      "p",
+      "p"
+    ],
+    "ephemeral": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "incur": [
+      "p"
+    ],
+    "significant": [
+      "p"
+    ],
+    "performance": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "toll": [
+      "p"
+    ],
+    "elliptic": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "curve": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "diffie–hellman": [
+      "p"
+    ],
+    "ecdhe": [
+      "p"
+    ],
+    "implementation": [
+      "p"
+    ],
+    "provides": [
+      "p"
+    ],
+    "best": [
+      "p",
+      "p"
+    ],
+    "especially": [
+      "p",
+      "p"
+    ],
+    "combined": [
+      "p",
+      "p"
+    ],
+    "digital": [
+      "p",
+      "p",
+      "p"
+    ],
+    "signature": [
+      "p",
+      "p"
+    ],
+    "ecdsa": [
+      "p",
+      "p",
+      "p"
+    ],
+    "authentication": [
+      "p",
+      "p"
+    ],
+    "many": [
+      "p"
+    ],
+    "certificates": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "signed": [
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "signatures": [
+      "p",
+      "p",
+      "p"
+    ],
+    "rsa": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "take": [
+      "p"
+    ],
+    "major": [
+      "p"
+    ],
+    "hit": [
+      "p"
+    ],
+    "consider": [
+      "p"
+    ],
+    "more": [
+      "p"
+    ],
+    "important": [
+      "p",
+      "p"
+    ],
+    "difficult": [
+      "p"
+    ],
+    "quantify": [
+      "p"
+    ],
+    "overhead": [
+      "p"
+    ],
+    "practical": [
+      "p"
+    ],
+    "general": [
+      "p"
+    ],
+    "terms": [
+      "p"
+    ],
+    "benchmark": [
+      "p"
+    ],
+    "on": [
+      "p"
+    ],
+    "real": [
+      "p"
+    ],
+    "applications": [
+      "p"
+    ],
+    "numbers": [
+      "p"
+    ],
+    "making": [
+      "p"
+    ],
+    "decision": [
+      "p"
+    ],
+    "two": [
+      "p"
+    ],
+    "main": [
+      "p"
+    ],
+    "choices": [
+      "p"
+    ],
+    "largely": [
+      "p"
+    ],
+    "dictated": [
+      "p"
+    ],
+    "authority": [
+      "p"
+    ],
+    "issues": [
+      "p"
+    ],
+    "as": [
+      "p",
+      "p"
+    ],
+    "most": [
+      "p"
+    ],
+    "them": [
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "has": [
+      "p"
+    ],
+    "diffie": [
+      "p"
+    ],
+    "hellman": [
+      "p"
+    ],
+    "enable": [
+      "p",
+      "p",
+      "p"
+    ],
+    "both": [
+      "p"
+    ],
+    "ultimately": [
+      "p"
+    ],
+    "one": [
+      "p",
+      "p"
+    ],
+    "matches": [
+      "p"
+    ],
+    "used": [
+      "p"
+    ],
+    "simple": [
+      "p",
+      "p"
+    ],
+    "narrowed": [
+      "p"
+    ],
+    "down": [
+      "p"
+    ],
+    "flavors": [
+      "p"
+    ],
+    "aes": [
+      "p",
+      "p",
+      "p",
+      "p"
+    ],
+    "galois": [
+      "p"
+    ],
+    "counter": [
+      "p"
+    ],
+    "mode": [
+      "p"
+    ],
+    "aesgcm": [
+      "p"
+    ],
+    "strongly": [
+      "p"
+    ],
+    "recommended": [
+      "p",
+      "p"
+    ],
+    "even": [
+      "p"
+    ],
+    "currently": [
+      "p"
+    ],
+    "acceptable": [
+      "p",
+      "p"
+    ],
+    "don't": [
+      "p"
+    ],
+    "just": [
+      "p"
+    ],
+    "they": [
+      "p"
+    ],
+    "hashing": [
+      "p"
+    ],
+    "also": [
+      "p"
+    ],
+    "sha256": [
+      "p"
+    ],
+    "sha384": [
+      "p"
+    ],
+    "sha512": [
+      "p"
+    ],
+    "solid": [
+      "p"
+    ],
+    "options": [
+      "p"
+    ],
+    "can't": [
+      "p"
+    ],
+    "wrong": [
+      "p"
+    ],
+    "well": [
+      "p"
     ]
   },
   "tags": {},
-  "links": [
-    {
-      "href": "http://httpd.apache.org/docs/2.0/ssl/ssl_howto.html",
-      "text": "http://httpd.apache.org/docs/2.0/ssl/ssl_howto.html"
-    }
-  ]
+  "links": []
 }

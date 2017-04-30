@@ -28,7 +28,7 @@
           ".NET"
         ],
         "Type": [
-          "Guideline"
+          "How To"
         ],
         "DirectLink": [
           "Instrument Application for User Management Events"
@@ -57,10 +57,10 @@
       {
         "$": {
           "Sanitized": "true",
-          "DataType": "Html"
+          "DataType": "html"
         },
         "Data": [
-          "<h1>What to Do</h1>\r\n  <p>Instrument your application for all user management events, including authentication successes and failures, password resets or changes, account lockouts, etc. </p>\r\n  <h1>Why</h1>\r\n  <p>Doing this helps you to detect and react to potentially suspicious behavior.&nbsp; It also enables you to gather operations data; for example, to track who is accessing your application and when user account passwords need to be reset.&nbsp;&nbsp;</p>\r\n  <h1>When</h1>\r\n  <p>All systems with authentication components should log when those components are used, both successfully and unsuccessfully. </p>\r\n  <h1>How</h1>\r\n  <p>By default, ASP.NET health monitoring records all <b>WebFailureAuditEvents</b>, which ASP.NET raises when user authentication fails in forms authentication with the membership system.&nbsp; ASP.NET also raises a <b>WebFailureAuditEvent</b> when authorization is not granted to a resource protected by file authorization and URL authorization. </p>\r\n  <p />\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns & practices guidance. </p>"
+          "<h1>What to Do</h1>\r\n  <p>Instrument your application for all user management events, including authentication successes and failures, password resets or changes, account lockouts, etc. </p>\r\n  <h1>Why</h1>\r\n  <p>Doing this helps you to detect and react to potentially suspicious behavior.&nbsp; It also enables you to gather operations data; for example, to track who is accessing your application and when user account passwords need to be reset.&nbsp;&nbsp;</p>\r\n  <h1>When</h1>\r\n  <p>All systems with authentication components should log when those components are used, both successfully and unsuccessfully. </p>\r\n  <h1>How</h1>\r\n  <p>By default, ASP.NET health monitoring records all <b>WebFailureAuditEvents</b>, which ASP.NET raises when user authentication fails in forms authentication with the membership system.&nbsp; ASP.NET also raises a <b>WebFailureAuditEvent</b> when authorization is not granted to a resource protected by file authorization and URL authorization. </p>\r\n  <p />\r\n  <hr />\r\n  <p>Adapted from Microsoft patterns &amp; practices guidance. </p>"
         ]
       }
     ]

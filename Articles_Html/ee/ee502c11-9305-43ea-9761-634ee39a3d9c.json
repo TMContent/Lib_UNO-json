@@ -1,6 +1,6 @@
 {
   "id": "ee502c11-9305-43ea-9761-634ee39a3d9c",
-  "checksum": "8c8e6843964a0c41a602aa1690818a6a",
+  "checksum": "5df3ec0789fd41aeb10e3b750ecb5162",
   "words": {
     "1": [
       "h3",
@@ -13,6 +13,10 @@
     "3": [
       "h3"
     ],
+    "5": [
+      "pre",
+      "code"
+    ],
     "8": [
       "pre",
       "code"
@@ -22,7 +26,15 @@
       "code"
     ],
     "11": [
-      "p"
+      "pre",
+      "code",
+      "p",
+      "pre",
+      "code"
+    ],
+    "15": [
+      "pre",
+      "code"
     ],
     "40": [
       "ul",
@@ -179,7 +191,9 @@
       "p"
     ],
     "number": [
-      "p"
+      "p",
+      "pre",
+      "code"
     ],
     "of": [
       "p",
@@ -374,6 +388,8 @@
       "p",
       "p",
       "p",
+      "pre",
+      "code",
       "h3",
       "ul",
       "li",
@@ -387,6 +403,7 @@
     "dynamic": [
       "p",
       "p",
+      "ul",
       "li",
       "h3",
       "p",
@@ -518,6 +535,8 @@
       "p",
       "ul",
       "li",
+      "pre",
+      "code",
       "p",
       "p",
       "p",
@@ -547,16 +566,30 @@
       "p",
       "pre",
       "pre",
+      "pre",
+      "code",
       "code",
       "code",
       "p",
       "pre",
+      "pre",
+      "pre",
+      "code",
+      "code",
       "code",
       "p",
       "pre",
+      "pre",
+      "pre",
+      "code",
+      "code",
       "code",
       "h3",
       "pre",
+      "pre",
+      "pre",
+      "code",
+      "code",
       "code"
     ],
     "parameterized": [
@@ -767,6 +800,7 @@
     "parameters": [
       "p",
       "p",
+      "ul",
       "li",
       "p",
       "p",
@@ -831,7 +865,8 @@
       "p"
     ],
     "overview": [
-      "h2"
+      "h2",
+      "p"
     ],
     "attack": [
       "p"
@@ -886,6 +921,8 @@
       "p",
       "p",
       "p",
+      "pre",
+      "code",
       "ul",
       "ul",
       "li",
@@ -998,14 +1035,26 @@
       "ul",
       "li"
     ],
-    "validation\ndynamic": [
-      "ul"
+    "validation": [
+      "ul",
+      "li",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "ul",
+      "ul",
+      "li",
+      "li"
     ],
     "construction": [
       "ul",
       "li"
     ],
     "use": [
+      "ul",
       "ul",
       "li",
       "li",
@@ -1035,24 +1084,8 @@
       "p",
       "p"
     ],
-    "parameters\nuse": [
-      "ul"
-    ],
     "logins": [
       "ul",
-      "li"
-    ],
-    "validation": [
-      "li",
-      "p",
-      "p",
-      "p",
-      "p",
-      "p",
-      "p",
-      "ul",
-      "ul",
-      "li",
       "li"
     ],
     "step": [
@@ -1124,7 +1157,11 @@
     ],
     "format": [
       "p",
-      "p"
+      "p",
+      "pre",
+      "pre",
+      "code",
+      "code"
     ],
     "range": [
       "p"
@@ -1333,6 +1370,8 @@
       "p",
       "p",
       "p",
+      "pre",
+      "code",
       "p",
       "p",
       "p",
@@ -1409,57 +1448,57 @@
       "pre",
       "code"
     ],
-    "language=\"c#\"": [
+    "language=c#": [
       "pre",
       "code"
     ],
-    "%\n<form": [
+    "%": [
       "pre",
       "code"
     ],
-    "id=\"form1\"": [
+    "form": [
       "pre",
       "code"
     ],
-    "runat=\"server\"": [
+    "id=form1": [
+      "pre",
+      "code"
+    ],
+    "runat=server": [
       "pre",
       "pre",
       "code",
       "code"
     ],
-    "asp:textbox": [
+    "asptextbox": [
       "pre",
       "code"
     ],
-    "id=\"ssn\"": [
+    "id=ssn": [
       "pre",
       "code"
     ],
-    "runat=\"server\"/": [
+    "runat=server/": [
       "pre",
       "code"
     ],
-    "asp:regularexpressionvalidator": [
+    "aspregularexpressionvalidator": [
       "pre",
       "code"
     ],
-    "id=\"regexpssn\"": [
+    "id=regexpssn": [
       "pre",
       "code"
     ],
-    "errormessage=\"incorrect": [
+    "errormessage=incorrect": [
       "pre",
       "code"
     ],
-    "number\"": [
+    "controltovalidate=ssn": [
       "pre",
       "code"
     ],
-    "controltovalidate=\"ssn\"": [
-      "pre",
-      "code"
-    ],
-    "validationexpression=\"^\\d{3}": [
+    "validationexpression=^\\d{3}": [
       "pre",
       "code"
     ],
@@ -1469,11 +1508,17 @@
       "pre",
       "code"
     ],
-    "\\d{4}$\"": [
+    "\\d{4}$": [
+      "pre",
+      "code",
       "pre",
       "code"
     ],
-    "/\n</form>": [
+    "/": [
+      "pre",
+      "code"
+    ],
+    "/form": [
       "pre",
       "code"
     ],
@@ -1521,8 +1566,12 @@
       "p",
       "p"
     ],
-    "systemtext.regularexpressions": [
+    "systemtextregularexpressions": [
       "p",
+      "code",
+      "pre",
+      "code",
+      "pre",
       "code"
     ],
     "namespace": [
@@ -1534,19 +1583,25 @@
     "obtained": [
       "p"
     ],
-    "systemtext.regularexpressions;\n\nif": [
+    "regexismatchrequestcookiesssn": [
       "pre",
       "code"
     ],
-    "regex.ismatch(request.cookies[\"ssn\"],": [
+    "^\\d{3}": [
       "pre",
       "code"
     ],
-    "\"^\\d{3}": [
+    "{": [
       "pre",
-      "code"
-    ],
-    "\\d{4}$\")\n{": [
+      "pre",
+      "code",
+      "code",
+      "pre",
+      "code",
+      "pre",
+      "code",
+      "pre",
+      "code",
       "pre",
       "code"
     ],
@@ -1570,7 +1625,21 @@
       "code",
       "code"
     ],
-    "database}\nelse\n{": [
+    "}": [
+      "pre",
+      "pre",
+      "code",
+      "code",
+      "pre",
+      "code",
+      "pre",
+      "code",
+      "pre",
+      "code",
+      "pre",
+      "code"
+    ],
+    "else": [
       "pre",
       "code"
     ],
@@ -1579,10 +1648,6 @@
       "code"
     ],
     "bad": [
-      "pre",
-      "code"
-    ],
-    "input}": [
       "pre",
       "code"
     ],
@@ -1621,6 +1686,10 @@
     "where": [
       "p",
       "pre",
+      "code",
+      "pre",
+      "pre",
+      "code",
       "code"
     ],
     "untrusted": [
@@ -1679,16 +1748,18 @@
       "ul",
       "li"
     ],
-    "routines\nlibrary": [
-      "ul"
-    ],
-    "packaged": [
+    "routines": [
       "ul",
       "li"
     ],
     "library": [
       "ul",
+      "ul",
       "li",
+      "li"
+    ],
+    "packaged": [
+      "ul",
       "li"
     ],
     "designed": [
@@ -1716,9 +1787,6 @@
       "li",
       "p"
     ],
-    "routines": [
-      "li"
-    ],
     "routine": [
       "p"
     ],
@@ -1728,11 +1796,11 @@
     "statement": [
       "p"
     ],
-    "system\nusing": [
+    "system": [
       "pre",
       "code"
     ],
-    "systemtext.regularexpressions;\n\npublic": [
+    "public": [
       "pre",
       "code"
     ],
@@ -1753,8 +1821,12 @@
       "code",
       "p"
     ],
-    "password\n{": [
+    "password": [
       "pre",
+      "pre",
+      "pre",
+      "code",
+      "code",
       "code"
     ],
     "check": [
@@ -1823,11 +1895,11 @@
       "code",
       "code"
     ],
-    "!regexismatch(useridtxt.text,": [
+    "!regexismatchuseridtxttext": [
       "pre",
       "code"
     ],
-    "@\"^a": [
+    "@^a": [
       "pre",
       "code"
     ],
@@ -1835,7 +1907,7 @@
       "pre",
       "code"
     ],
-    "z'./s]{1,40}$\"))": [
+    "z'/s{140}$": [
       "pre",
       "code"
     ],
@@ -1869,19 +1941,7 @@
       "code",
       "code"
     ],
-    "formatexception\"invalid": [
-      "pre",
-      "pre",
-      "code",
-      "code"
-    ],
-    "format\";": [
-      "pre",
-      "pre",
-      "code",
-      "code"
-    ],
-    "password": [
+    "formatexceptioninvalid": [
       "pre",
       "pre",
       "code",
@@ -1913,27 +1973,19 @@
       "pre",
       "code"
     ],
-    "!regexismatch(passwordtxt.text,": [
+    "!regexismatchpasswordtxttext": [
       "pre",
       "code"
     ],
-    "@\"^?=.*\\d)(?=.*[a": [
+    "@^?=*\\d?=*a": [
       "pre",
       "code"
     ],
-    "z])(?=.*[a": [
+    "z?=*a": [
       "pre",
       "code"
     ],
-    "z]).{8,10}$\"": [
-      "pre",
-      "code"
-    ],
-    ")": [
-      "pre",
-      "code"
-    ],
-    "..\n}": [
+    "z{810}$": [
       "pre",
       "code"
     ],
@@ -1968,9 +2020,6 @@
     "described": [
       "p"
     ],
-    "\"overview\"": [
-      "p"
-    ],
     "section": [
       "p"
     ],
@@ -1992,7 +2041,7 @@
       "code",
       "p"
     ],
-    "systemdata;\nusing": [
+    "systemdata": [
       "pre",
       "code",
       "pre",
@@ -2000,7 +2049,9 @@
       "pre",
       "code"
     ],
-    "systemdata.sqlclient;\n\nusing": [
+    "systemdatasqlclient": [
+      "pre",
+      "code",
       "pre",
       "code",
       "pre",
@@ -2016,10 +2067,16 @@
     ],
     "connection": [
       "pre",
-      "code",
       "pre",
       "code",
+      "code",
       "pre",
+      "pre",
+      "code",
+      "code",
+      "pre",
+      "pre",
+      "code",
       "code",
       "p"
     ],
@@ -2061,7 +2118,7 @@
       "code",
       "code"
     ],
-    "sqlconnectionconnectionstring))\n{": [
+    "sqlconnectionconnectionstring": [
       "pre",
       "code",
       "pre",
@@ -2071,23 +2128,21 @@
     ],
     "dataset": [
       "pre",
-      "code",
       "pre",
       "code",
+      "code",
       "pre",
       "pre",
+      "code",
+      "code",
+      "pre",
+      "pre",
+      "pre",
+      "code",
       "code",
       "code"
     ],
     "userdataset": [
-      "pre",
-      "code",
-      "pre",
-      "code"
-    ],
-    "dataset);": [
-      "pre",
-      "code",
       "pre",
       "code",
       "pre",
@@ -2111,62 +2166,50 @@
       "pre",
       "code"
     ],
-    "\"loginstoredprocedure\"": [
+    "loginstoredprocedure": [
       "pre",
       "code"
     ],
-    "connection;": [
-      "pre",
-      "code",
-      "pre",
-      "code",
+    "mycommandselectcommandcommandtype": [
       "pre",
       "code"
     ],
-    "mycommandselectcommand.commandtype": [
+    "commandtypestoredprocedure": [
       "pre",
       "code"
     ],
-    "commandtypestoredprocedure;": [
-      "pre",
-      "code"
-    ],
-    "mycommandselectcommand.parameters.add(\"@au_id\",": [
+    "mycommandselectcommandparametersadd@au_id": [
       "pre",
       "code",
       "pre",
       "code"
     ],
-    "sqldbtypevarchar,": [
+    "sqldbtypevarchar": [
       "pre",
       "code",
       "pre",
       "code"
     ],
-    "11;": [
+    "mycommandselectcommandparameters@au_idvalue": [
       "pre",
       "code",
       "pre",
       "code"
     ],
-    "mycommandselectcommand.parameters[\"@au_id\"].value": [
+    "ssntext": [
       "pre",
       "code",
       "pre",
       "code"
     ],
-    "ssntext;": [
-      "pre",
-      "code",
-      "pre",
-      "code"
-    ],
-    "mycommandfill(userdataset);\n}": [
+    "mycommandfilluserdataset": [
       "pre",
       "code"
     ],
     "@au_id": [
-      "p"
+      "p",
+      "pre",
+      "code"
     ],
     "treated": [
       "p",
@@ -2218,7 +2261,7 @@
     "unsafe": [
       "p"
     ],
-    "dborunquery(@var": [
+    "dborunquery@var": [
       "pre",
       "code"
     ],
@@ -2226,7 +2269,7 @@
       "pre",
       "code"
     ],
-    "asexec": [
+    "exec": [
       "pre",
       "code"
     ],
@@ -2342,11 +2385,13 @@
       "pre",
       "code"
     ],
-    "\"select": [
+    "select": [
       "pre",
       "code",
       "pre",
       "pre",
+      "pre",
+      "code",
       "code",
       "code"
     ],
@@ -2366,11 +2411,7 @@
       "pre",
       "code"
     ],
-    "@au_id\"": [
-      "pre",
-      "code"
-    ],
-    "mydataadapterfill(userdataset);\n}": [
+    "mydataadapterfilluserdataset": [
       "pre",
       "code"
     ],
@@ -2434,10 +2475,6 @@
     "here": [
       "p"
     ],
-    "systemdata.sqlclient;\n...\nusing": [
-      "pre",
-      "code"
-    ],
     "dataadapter": [
       "pre",
       "code"
@@ -2454,19 +2491,13 @@
     ],
     "#temp1": [
       "pre",
+      "pre",
+      "code",
       "code"
     ],
     "customers": [
       "pre",
       "pre",
-      "code",
-      "code"
-    ],
-    "\"": [
-      "pre",
-      "pre",
-      "pre",
-      "code",
       "code",
       "code"
     ],
@@ -2478,18 +2509,10 @@
       "code",
       "code"
     ],
-    "\"where": [
+    "@custidparm": [
       "pre",
       "pre",
       "code",
-      "code"
-    ],
-    "@custidparm": [
-      "pre",
-      "code"
-    ],
-    "select": [
-      "pre",
       "code"
     ],
     "companyname": [
@@ -2502,31 +2525,21 @@
     ],
     "@countryparm": [
       "pre",
-      "code"
-    ],
-    "#temp1;\",": [
       "pre",
+      "code",
       "code"
     ],
     "custidparm": [
       "pre",
       "code"
     ],
-    "dataadapterselectcommand.parameters.add(": [
+    "dataadapterselectcommandparametersadd": [
       "pre",
       "pre",
       "code",
       "code"
     ],
-    "\"@custidparm\"": [
-      "pre",
-      "code"
-    ],
-    "sqldbtypenchar,": [
-      "pre",
-      "code"
-    ],
-    "5;": [
+    "sqldbtypenchar": [
       "pre",
       "code"
     ],
@@ -2534,7 +2547,7 @@
       "pre",
       "code"
     ],
-    "customeridtext;": [
+    "customeridtext": [
       "pre",
       "code"
     ],
@@ -2542,15 +2555,7 @@
       "pre",
       "code"
     ],
-    "\"@countryparm\"": [
-      "pre",
-      "code"
-    ],
-    "sqldbtypenvarchar,": [
-      "pre",
-      "code"
-    ],
-    "15;": [
+    "sqldbtypenvarchar": [
       "pre",
       "code"
     ],
@@ -2558,15 +2563,15 @@
       "pre",
       "code"
     ],
-    "countrytext;": [
+    "countrytext": [
       "pre",
       "code"
     ],
-    "connectionopen();": [
+    "connectionopen": [
       "pre",
       "code"
     ],
-    "dataadapterfill(dataset);\n}\n...": [
+    "dataadapterfilldataset": [
       "pre",
       "code"
     ],

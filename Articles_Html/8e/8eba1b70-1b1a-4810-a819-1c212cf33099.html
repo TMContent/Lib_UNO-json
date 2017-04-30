@@ -1,7 +1,18 @@
-<h1>Description</h1><p>Lightweight Directory Access Protocol (LDAP) is a widely used protocol for accessing directory services. Directories provide a set of attributes about people that are organized in a hierarchical manner.  LDAP Injection is a technique to exploit applications that use input from users to query an LDAP directory. LDAP injection has the potential to view, modify, or remove personal information about anyone in the directory. LDAP Injection applies to all applications that use LDAP. 
-</p><h1>Impact</h1><p>LDAP injection allows an attacker to access and/or modify restricted data in the LDAP database. The attacker may leverage this vulnerability to view personal information of users in the database. The attacker may also leverage this vulnerability to give himself administrative privileges or to take over another account. Once the attacker has administrative privileges, he usually has full control of the application. 
-</p><h1>Countermeasures</h1><p>To prevent LDAP injection, validate all input. Ideally, parameterized APIs should be used for LDAP queries, but such APIs are usually not available. 
-</p><h1>Application Check</h1><p>To check for adequate protection against this vulnerability, find all code that queries directories and verify that data included in the queries is sufficiently validated. 
-</p><h1>Specific Technologies</h1><ul><li> <a href="26cf3a5c-3bbd-4239-b74f-f776df950ac8">ASP.NET LDAP Injection</a></li>
-<li> <a href="418cfb77-5d0a-4fd9-9825-1732cf40070d">Java LDAP Injection</a></li>
-<li> <a href="7fc7f4f3-2b0b-4d48-a18a-1f189361b651">C++ LDAP Injection</a></li></ul>
+<h2>Description</h2><p>Lightweight Directory Access Protocol (LDAP) is a widely used protocol for accessing directory services. Directories provide a set of attributes about people that are organized in a hierarchical manner.  LDAP Injection is a technique to exploit applications that use input from users to query an LDAP directory. LDAP injection has the potential to view, modify, or remove personal information about anyone in the directory. LDAP Injection applies to all applications that use LDAP. 
+</p>
+<h2>Impact</h2><p>LDAP injection allows an attacker to access and/or modify restricted data in the LDAP database. The attacker might leverage this vulnerability to view personal information of users in the database. The attacker can also leverage this vulnerability to give themselves administrative privileges or to take over another account. Once the attacker has administrative privileges, they usually have full control of the application. 
+</p>
+<h2>Countermeasures</h2><p>To prevent LDAP injection, validate all input.
+</p><ul>
+<li> <a href="11a15f3a-7fe8-4e4c-be5e-309ab7227b3d">Validate All Input</a></li>
+</ul>
+<h2>Application Check</h2><p>To check for adequate protection against this vulnerability, find all code that queries directories and verify that data included in the queries is sufficiently validated.
+</p><ul>
+<li> <a href="8d8c24b0-096b-43f4-9391-9b293313a0e8">All Input Is Validated</a></li>
+</ul>
+<h2>Computer Based Training Links</h2><p>Use the following Computer Based Training course(s) for more background information about this type of vulnerabilities.
+</p><h3>OWASP Top Threats &amp; Mitigations</h3><p>This course examines in depth the vulnerabilities, threats, and mitigations described in the OWASP Top 10 2013. Upon completion of this class, participants will be able to identify and mitigate the greatest threats that web application developers face, including: Injection, Broken Authentication and Session Management, Cross-Site Scripting (XSS), Insecure Direct Object References, Security Misconfiguration, Sensitive Data Exposure, Missing Function Level Access Control, Cross-Site Request Forgery (CSRF), Using Components with Known Vulnerabilities, and Unvalidated Redirects and Forwards.
+</p><p>
+<a href="https://teamprofessor.absorbtraining.com/ninja/#/courses/course/139631">DES 221 OWASP Top Threats &amp; Mitigations</a>
+</p><p>
+<em>Valid login credentials and enrollment in the course itself are required to access Team Professor content. If you need login credentials, please contact support@securityinnovation.com for help.</em></p>

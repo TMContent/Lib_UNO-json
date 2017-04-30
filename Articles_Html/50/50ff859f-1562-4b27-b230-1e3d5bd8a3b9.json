@@ -655,6 +655,18 @@
       "p",
       "ol",
       "li",
+      "p",
+      "ul",
+      "li",
+      "em",
+      "ol",
+      "ol",
+      "li",
+      "p",
+      "ul",
+      "li",
+      "em",
+      "li",
       "pre"
     ],
     "commands": [
@@ -901,10 +913,15 @@
     "called": [
       "p"
     ],
-    "\"web": [
+    "web": [
+      "p",
+      "p",
+      "p",
       "p"
     ],
-    "shells\"": [
+    "shells": [
+      "p",
+      "p",
       "p"
     ],
     "which": [
@@ -962,16 +979,7 @@
     "over": [
       "p"
     ],
-    "web": [
-      "p",
-      "p",
-      "p"
-    ],
     "server": [
-      "p"
-    ],
-    "shells": [
-      "p",
       "p"
     ],
     "typically": [
@@ -1035,7 +1043,7 @@
       "li",
       "p"
     ],
-    "operators):": [
+    "operators": [
       "ol",
       "li",
       "p",
@@ -1043,7 +1051,7 @@
       "li",
       "p"
     ],
-    "system)": [
+    "exec": [
       "ol",
       "li",
       "p",
@@ -1051,27 +1059,16 @@
       "li",
       "em",
       "ol",
-      "li",
-      "p",
-      "ul",
-      "li",
-      "em"
-    ],
-    "exec)": [
       "ol",
       "li",
       "p",
       "ul",
       "li",
       "em",
-      "ol",
       "li",
-      "p",
-      "ul",
-      "li",
-      "em"
+      "pre"
     ],
-    "eval)shell_exec()": [
+    "evalshell_exec": [
       "ol",
       "li",
       "p",
@@ -1081,7 +1078,75 @@
       "p",
       "ul"
     ],
-    "passthru)": [
+    "passthru": [
+      "ol",
+      "li",
+      "p",
+      "ul",
+      "li",
+      "em",
+      "ol",
+      "ol",
+      "li",
+      "p",
+      "ul",
+      "li",
+      "em",
+      "li",
+      "pre"
+    ],
+    "popen": [
+      "ol",
+      "li",
+      "p",
+      "ul",
+      "li",
+      "em",
+      "ol",
+      "ol",
+      "li",
+      "p",
+      "ul",
+      "li",
+      "em",
+      "li",
+      "pre"
+    ],
+    "proc_open": [
+      "ol",
+      "li",
+      "p",
+      "ul",
+      "li",
+      "em",
+      "ol",
+      "ol",
+      "li",
+      "p",
+      "ul",
+      "li",
+      "em",
+      "li",
+      "pre"
+    ],
+    "parse_ini_file": [
+      "ol",
+      "li",
+      "p",
+      "ul",
+      "li",
+      "em",
+      "ol",
+      "ol",
+      "li",
+      "p",
+      "ul",
+      "li",
+      "em",
+      "li",
+      "pre"
+    ],
+    "show_source": [
       "ol",
       "li",
       "p",
@@ -1095,7 +1160,7 @@
       "li",
       "em"
     ],
-    "popen)": [
+    "symlink": [
       "ol",
       "li",
       "p",
@@ -1103,81 +1168,34 @@
       "li",
       "em",
       "ol",
-      "li",
-      "p",
-      "ul",
-      "li",
-      "em"
-    ],
-    "proc_open)": [
       "ol",
       "li",
       "p",
       "ul",
       "li",
       "em",
-      "ol",
       "li",
-      "p",
-      "ul",
-      "li",
-      "em"
-    ],
-    "parse_ini_file)": [
-      "ol",
-      "li",
-      "p",
-      "ul",
-      "li",
-      "em",
-      "ol",
-      "li",
-      "p",
-      "ul",
-      "li",
-      "em"
-    ],
-    "show_source)": [
-      "ol",
-      "li",
-      "p",
-      "ul",
-      "li",
-      "em",
-      "ol",
-      "li",
-      "p",
-      "ul",
-      "li",
-      "em"
-    ],
-    "symlink)": [
-      "ol",
-      "li",
-      "p",
-      "ul",
-      "li",
-      "em",
-      "ol",
-      "li",
-      "p",
-      "ul",
-      "li",
-      "em"
+      "pre"
     ],
     "'": [
       "ol",
-      "li",
-      "p",
-      "ul",
-      "li",
-      "em",
       "ol",
       "li",
       "p",
       "ul",
       "li",
-      "em"
+      "em",
+      "li",
+      "p",
+      "ol",
+      "ol",
+      "li",
+      "p",
+      "ul",
+      "li",
+      "em",
+      "li",
+      "p"
     ],
     "backtick": [
       "ol",
@@ -1502,7 +1520,7 @@
       "li",
       "p"
     ],
-    "escapeshellarg)": [
+    "escapeshellarg": [
       "ol",
       "li",
       "p",
@@ -1579,14 +1597,6 @@
       "li",
       "p"
     ],
-    "')": [
-      "ol",
-      "li",
-      "p",
-      "ol",
-      "li",
-      "p"
-    ],
     "avoided": [
       "ol",
       "li",
@@ -1597,17 +1607,23 @@
       "li",
       "p"
     ],
-    "eval)": [
+    "eval": [
+      "li",
+      "em",
+      "ol",
       "li",
       "em",
       "li",
-      "em"
+      "pre"
     ],
-    "shell_exec)": [
+    "shell_exec": [
+      "li",
+      "em",
+      "ol",
       "li",
       "em",
       "li",
-      "em"
+      "pre"
     ],
     "fix": [
       "h1"
@@ -1632,47 +1648,7 @@
       "li",
       "pre"
     ],
-    "exec": [
-      "ol",
-      "li",
-      "pre"
-    ],
-    "eval": [
-      "ol",
-      "li",
-      "pre"
-    ],
-    "shell_exec": [
-      "ol",
-      "li",
-      "pre"
-    ],
-    "passthru": [
-      "ol",
-      "li",
-      "pre"
-    ],
-    "popen": [
-      "ol",
-      "li",
-      "pre"
-    ],
-    "proc_open": [
-      "ol",
-      "li",
-      "pre"
-    ],
-    "parse_ini_file": [
-      "ol",
-      "li",
-      "pre"
-    ],
     "show_shource": [
-      "ol",
-      "li",
-      "pre"
-    ],
-    "symlink": [
       "ol",
       "li",
       "pre"

@@ -1,5 +1,4 @@
-<h2>Applies To</h2><ul><li> Java</li>
-</ul><h2>What to Check For</h2><p>Verify that parameterized APIs are used to build XML documents.
+<h2>What to Check For</h2><p>Verify that parameterized APIs are used to build XML documents.
 </p><h2>Why</h2><p>APIs designed for building XML documents will encode data properly to prevent attackers from manipulating XML data used by your application. A dangerous approach is to write your own set of functions to build XML documents by concatenating strings, or to modify an existing XML document by performing string operations.  This means you have to take care of proper encoding yourself. Use API’s instead because they are simpler and safer.
 </p><h2>How to Check</h2><p>To verify that parameterized APIs are used to build XML documents:
 </p><ol>
@@ -8,7 +7,7 @@
 </ol><h2>How to Fix</h2><p>To use parameterized APIs to build XML documents:
 </p><ol>
 <li> <strong>Identify available APIs that can be used to build XML documents.</strong> There are many XML parsers available for Java. They have different syntax, but all the major ones provide parameterized APIs for building XML. Choose a parser that you feel best fits your application requirements.</li>
-<li> <strong>Make sure your chosen APIs encode data correctly.</strong> If unsure whether your chosen API encodes data correctly, write a small test application that will use your chosen XML parser to build an XML document that contains special characters, such as &lt;, &gt;, and " to see if they are encoded correctly.</li>
+<li> <strong>Make sure your chosen APIs encode data correctly.</strong> If unsure whether your chosen API encodes data correctly, write a small test application that will use your chosen XML parser to build an XML document that contains special characters to see if they are encoded correctly.</li>
 <li> <strong>Identify code that builds XML documents.</strong> Make a spreadsheet of all the code that creates XML documents.</li>
 <li> <strong>Use parameterized APIs to build XML documents.</strong> Using the spreadsheet as a guide, replace the code that creates XML documents with code that uses APIs provided by your chosen parser to build XML documents. Don't use string operations to concatenate XML tags and data together, use the APIs provided by the parser instead.</li>
 </ol>

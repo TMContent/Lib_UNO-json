@@ -574,6 +574,7 @@
     ],
     "add": [
       "p",
+      "ol",
       "li",
       "p",
       "strong"
@@ -678,6 +679,7 @@
     ],
     "modified": [
       "ol",
+      "ol",
       "li",
       "li",
       "p",
@@ -715,9 +717,6 @@
       "ol",
       "li",
       "p"
-    ],
-    "modified\n\n\nadd": [
-      "ol"
     ],
     "configuration": [
       "ol",
@@ -774,7 +773,7 @@
       "p",
       "code"
     ],
-    ":secureheaders::configuration.configure": [
+    "secureheadersconfigurationconfigure": [
       "ol",
       "li",
       "pre",
@@ -822,8 +821,21 @@
       "pre",
       "code"
     ],
-    "end\n\n\nedit": [
-      "ol"
+    "end": [
+      "ol",
+      "ol",
+      "li",
+      "pre",
+      "code",
+      "li",
+      "pre",
+      "code"
+    ],
+    "edit": [
+      "ol",
+      "li",
+      "p",
+      "strong"
     ],
     "controller": [
       "ol",
@@ -889,7 +901,7 @@
       "pre",
       "code"
     ],
-    "actioncontroller:base": [
+    "actioncontrollerbase": [
       "ol",
       "li",
       "pre",
@@ -900,20 +912,6 @@
       "li",
       "pre",
       "code"
-    ],
-    "end": [
-      "ol",
-      "li",
-      "pre",
-      "code",
-      "li",
-      "pre",
-      "code"
-    ],
-    "edit": [
-      "li",
-      "p",
-      "strong"
     ],
     "application": [
       "p",
@@ -973,8 +971,19 @@
       "p",
       "code"
     ],
-    "framing\n\n\nre": [
-      "ol"
+    "framing": [
+      "ol",
+      "li",
+      "p"
+    ],
+    "re": [
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
+      "p",
+      "strong"
     ],
     "enable": [
       "ol",
@@ -996,18 +1005,6 @@
     ],
     "missing": [
       "ol",
-      "li",
-      "p"
-    ],
-    "re": [
-      "ol",
-      "li",
-      "li",
-      "p",
-      "p",
-      "strong"
-    ],
-    "framing": [
       "li",
       "p"
     ]

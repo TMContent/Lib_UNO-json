@@ -1,6 +1,6 @@
 {
   "id": "cdaf94c6-70f2-4026-b497-b22a0f5bd51c",
-  "checksum": "e96989896b6631196b41ae54350f3b13",
+  "checksum": "dadb0ae0aa824f6bf8c29e54a4c83b84",
   "words": {
     "description": [
       "h2"
@@ -18,35 +18,11 @@
       "p",
       "p",
       "p",
-      "ul",
-      "ul",
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a",
-      "li",
-      "a",
-      "li",
-      "a",
       "title"
     ],
     "leakage": [
       "p",
       "p",
-      "ul",
-      "ul",
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a",
-      "li",
-      "a",
-      "li",
-      "a",
       "title"
     ],
     "is": [
@@ -54,7 +30,10 @@
       "p",
       "p",
       "p",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "a": [
       "p",
@@ -129,7 +108,13 @@
       "p",
       "p",
       "p",
-      "p"
+      "ul",
+      "li",
+      "a",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "system": [
       "p",
@@ -352,7 +337,10 @@
       "p",
       "p",
       "p",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "affected": [
       "p"
@@ -382,7 +370,10 @@
     "used": [
       "p",
       "p",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "attackers": [
       "p"
@@ -439,7 +430,13 @@
       "p",
       "p",
       "p",
-      "p"
+      "ul",
+      "li",
+      "a",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "outdated": [
       "p",
@@ -463,7 +460,7 @@
     "tells": [
       "p"
     ],
-    "him": [
+    "them": [
       "p"
     ],
     "at": [
@@ -493,18 +490,44 @@
     ],
     "simple": [
       "p",
-      "p"
+      "ul",
+      "li",
+      "a",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "error": [
       "p",
-      "p"
+      "ul",
+      "li",
+      "a",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "messages": [
       "p",
-      "p"
+      "ul",
+      "li",
+      "a",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "harden": [
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
+    ],
+    "display": [
+      "ul",
+      "li",
+      "a"
     ],
     "check": [
       "h1",
@@ -523,30 +546,7 @@
       "p"
     ],
     "hardened": [
-      "p"
-    ],
-    "specific": [
-      "h2"
-    ],
-    "technologies": [
-      "h2"
-    ],
-    "aspnet": [
-      "ul",
-      "li",
-      "a"
-    ],
-    "java": [
-      "ul",
-      "li",
-      "a"
-    ],
-    "c++": [
-      "ul",
-      "li",
-      "a"
-    ],
-    "php": [
+      "p",
       "ul",
       "li",
       "a"
@@ -555,20 +555,20 @@
   "tags": {},
   "links": [
     {
-      "href": "ac3a5f4f-e0bb-4b63-b67f-efdc26fa2bcb",
-      "text": "ASP.NET Information Leakage"
+      "href": "6ccf4b69-a4c0-4c08-a2ea-86e704c3ffc2",
+      "text": "Display Simple Error Messages"
     },
     {
-      "href": "62eba518-f3b1-458c-b48c-487cb2de02de",
-      "text": "Java Information Leakage"
+      "href": "99297f49-528b-4a25-bc35-3b82ef14404a",
+      "text": "Harden the Server"
     },
     {
-      "href": "219bb9d4-ddc9-4b1e-be27-e6adde7b6315",
-      "text": "C++ Information Leakage"
+      "href": "00000000-0000-0000-0000-0000002f7a79",
+      "text": "Simple Error Messages Are Used"
     },
     {
-      "href": "8ac332aa-aeb7-4c8c-aa85-94a570040f15",
-      "text": "PHP Information Leakage"
+      "href": "408f56bf-9ca6-482d-bff2-a2495ff80917",
+      "text": "The Server Is Hardened"
     }
   ]
 }

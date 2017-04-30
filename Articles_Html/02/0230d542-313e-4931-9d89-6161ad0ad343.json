@@ -1,6 +1,6 @@
 {
   "id": "0230d542-313e-4931-9d89-6161ad0ad343",
-  "checksum": "5b4fb080664d93cc9c74e23295474fab",
+  "checksum": "fa4ea6099f3b86fcd2b4899c35ae3a43",
   "words": {
     "description": [
       "h2"
@@ -12,12 +12,6 @@
       "p",
       "p",
       "p",
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a",
       "title"
     ],
     "error": [
@@ -30,9 +24,11 @@
       "p",
       "p",
       "ul",
-      "ul",
       "li",
       "a",
+      "p",
+      "p",
+      "ul",
       "li",
       "a",
       "title"
@@ -43,8 +39,7 @@
       "p",
       "p"
     ],
-    "may": [
-      "p",
+    "might": [
       "p",
       "p",
       "p",
@@ -90,7 +85,7 @@
       "p",
       "p",
       "p",
-      "h1"
+      "h2"
     ],
     "determine": [
       "p",
@@ -119,7 +114,13 @@
       "p",
       "p",
       "p",
-      "p"
+      "p",
+      "p",
+      "p",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "happening": [
       "p"
@@ -133,7 +134,11 @@
     "log": [
       "p",
       "p",
-      "p"
+      "p",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "that": [
       "p",
@@ -146,7 +151,15 @@
       "p",
       "p",
       "p",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a",
+      "p",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "administrators": [
       "p"
@@ -177,12 +190,6 @@
     "condition": [
       "p",
       "p",
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a",
       "title"
     ],
     "flaws": [
@@ -247,12 +254,17 @@
       "p",
       "p",
       "p",
+      "p",
+      "p",
       "p"
     ],
     "lot": [
       "p"
     ],
     "code": [
+      "p"
+    ],
+    "can": [
       "p"
     ],
     "produce": [
@@ -274,22 +286,32 @@
       "p",
       "p",
       "p",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "look": [
       "p"
     ],
     "countermeasures": [
-      "h1"
+      "h2"
     ],
     "prevent": [
       "p"
     ],
     "use": [
       "p",
-      "p"
+      "p",
+      "p",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "structured": [
+      "p",
+      "p",
       "p",
       "p"
     ],
@@ -297,28 +319,75 @@
       "p",
       "p",
       "p",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a",
+      "p",
+      "p",
+      "p",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "handling": [
+      "p",
+      "p",
       "p",
       "p"
     ],
     "global": [
       "p",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a",
+      "p",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "handler": [
+      "p",
+      "p",
       "p",
       "p"
     ],
     "unhandled": [
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "exceptions": [
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a",
+      "ul",
+      "li",
+      "a",
+      "ul",
+      "li",
+      "a"
+    ],
+    "handle": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "handlers": [
+      "ul",
+      "li",
+      "a",
+      "ul",
+      "li",
+      "a"
     ],
     "check": [
-      "h1",
+      "h2",
       "p"
     ],
     "adequate": [
@@ -341,23 +410,29 @@
     ],
     "used": [
       "p",
-      "p"
-    ],
-    "logged": [
-      "p"
-    ],
-    "specific": [
-      "h1"
-    ],
-    "technologies": [
-      "h1"
-    ],
-    "aspnet": [
+      "p",
+      "p",
+      "p",
       "ul",
       "li",
       "a"
     ],
-    "java": [
+    "logged": [
+      "p",
+      "p",
+      "ul",
+      "li",
+      "a"
+    ],
+    "are": [
+      "ul",
+      "li",
+      "a",
+      "ul",
+      "li",
+      "a"
+    ],
+    "handled": [
       "ul",
       "li",
       "a"
@@ -366,12 +441,28 @@
   "tags": {},
   "links": [
     {
-      "href": "fb0341e3-41c2-43bc-99d4-d12a037c1edd",
-      "text": "ASP.NET Unchecked Error Condition"
+      "href": "00b07659-803d-47c3-a325-777f72688ac7",
+      "text": "Handle Exceptions"
     },
     {
-      "href": "1a7d87d3-eee8-4f1c-ab46-7aec1b5479fb",
-      "text": "Java Unchecked Error Condition"
+      "href": "0ee60897-0ba8-47a7-8b14-47d17a70f8ee",
+      "text": "Use Global Exception Handlers"
+    },
+    {
+      "href": "00000000-0000-0000-0000-00000035b501",
+      "text": "Log Error Information"
+    },
+    {
+      "href": "ccd8e764-32e3-4d4c-8191-6c837ea9b60e",
+      "text": "Exceptions Are Handled"
+    },
+    {
+      "href": "7a4f9032-7abb-409a-b00b-58d8e890c6ea",
+      "text": "Global Exception Handlers Are Used for Unhandled Exceptions"
+    },
+    {
+      "href": "00000000-0000-0000-0000-00000078ce47",
+      "text": "Error Information Is Logged"
     }
   ]
 }

@@ -1,0 +1,19 @@
+<h2>Applies To</h2>
+<ul>
+<li>Python 2.7</li>
+</ul>
+<h2>Solution Example</h2>
+<pre><code>#! /usr/bin/env python
+import os
+import sys
+import stat
+file = &quot;temporary_file&quot;
+try:
+    fd = os.open(file, os.O_CREAT | os.O_EXCL | os.O_WRONLY)
+except OSError:
+    print &quot;File already exists.&quot;
+    sys.exit()
+
+with os.fdopen(fd, 'w') as f:
+    f.write('content')
+</code></pre>

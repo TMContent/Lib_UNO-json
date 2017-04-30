@@ -112,7 +112,7 @@
       "ul",
       "li"
     ],
-    "std:lock_guard": [
+    "stdlock_guard": [
       "p"
     ],
     "makes": [
@@ -253,7 +253,26 @@
       "li",
       "p"
     ],
-    "lock)": [
+    "lock": [
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "p",
+      "code",
+      "li",
+      "p",
+      "code",
+      "li",
+      "li",
+      "p",
+      "p",
+      "code",
+      "p",
+      "p"
+    ],
+    "unlock": [
       "ol",
       "ol",
       "ol",
@@ -266,33 +285,9 @@
       "li",
       "p",
       "code"
-    ],
-    "unlock)": [
-      "ol",
-      "ol",
-      "ol",
-      "li",
-      "p",
-      "code",
-      "li",
-      "p",
-      "code",
-      "li",
-      "p",
-      "code"
-    ],
-    "functions\n\n\nadd": [
-      "ol"
-    ],
-    "add": [
-      "ol",
-      "li",
-      "li",
-      "p",
-      "p",
-      "strong"
     ],
     "functions": [
+      "ol",
       "ol",
       "ol",
       "li",
@@ -301,6 +296,15 @@
       "p",
       "li",
       "p"
+    ],
+    "add": [
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
+      "p",
+      "strong"
     ],
     "declaring": [
       "ol",
@@ -337,22 +341,30 @@
       "ol",
       "li",
       "p",
+      "code",
+      "pre",
       "code"
     ],
-    "std:lock_guard<std::mutex>(mutex);\n\n\nremove": [
-      "ol"
+    "stdlock_guardstdmutexmutex": [
+      "ol",
+      "li",
+      "p",
+      "code",
+      "pre",
+      "code"
+    ],
+    "remove": [
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
+      "p",
+      "strong"
     ],
     "old": [
       "ol",
       "li",
-      "p",
-      "strong"
-    ],
-    "remove": [
-      "ol",
-      "li",
-      "li",
-      "p",
       "p",
       "strong"
     ],
@@ -369,13 +381,6 @@
     "where": [
       "ol",
       "li",
-      "p"
-    ],
-    "lock": [
-      "ol",
-      "li",
-      "p",
-      "p",
       "p"
     ],
     "is": [
@@ -402,11 +407,6 @@
       "p",
       "p"
     ],
-    "std:lock_guard<std::mutex>(mutex);": [
-      "li",
-      "p",
-      "code"
-    ],
     "solution": [
       "h2"
     ],
@@ -415,7 +415,9 @@
       "p"
     ],
     "mutex": [
-      "p"
+      "p",
+      "pre",
+      "code"
     ],
     "notice": [
       "p"
@@ -439,23 +441,27 @@
       "pre",
       "code"
     ],
-    "std:mutex": [
+    "stdmutex": [
       "pre",
       "code"
     ],
-    "mutex\n\nvoid": [
+    "void": [
       "pre",
       "code"
     ],
-    "function){\n\nconst": [
+    "function{": [
       "pre",
       "code"
     ],
-    "std:lock_guard<std::mutex>(mutex);\n\n//do": [
+    "//do": [
       "pre",
       "code"
     ],
-    "stuff}": [
+    "stuff": [
+      "pre",
+      "code"
+    ],
+    "}": [
       "pre",
       "code"
     ],
@@ -481,12 +487,12 @@
       "ul",
       "li"
     ],
-    "https//www.securecoding.cert.org/confluence/display/cplusplus/con02": [
+    "https//wwwsecurecodingcertorg/confluence/display/cplusplus/con02": [
       "ul",
       "li",
       "a"
     ],
-    "cpp.+use+lock+classes+for+mutex+management": [
+    "cpp+use+lock+classes+for+mutex+management": [
       "ul",
       "li",
       "a"

@@ -18,14 +18,14 @@
 
  //sample implementation of token generation
  public static String generateCSRFToken() {
-     SecureRandom rng = new SecureRandom();
-     int length = 64;
-     String characters = &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz&quot;;
-     char[] text = new char[length];
-     for (int i = 0; i &lt; length; i++) {
-         text[i] = characters.charAt(rng.nextInt(characters.length()));
-     }
-     return String.valueOf(text);
+ 	SecureRandom rng = new SecureRandom();
+ 	int length = 64;
+ 	String characters = &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz&quot;;
+ 	char[] text = new char[length];
+ 	for (int i = 0; i &lt; length; i++) {
+ 		text[i] = characters.charAt(rng.nextInt(characters.length()));
+ 	}
+ 	return String.valueOf(text);
  }
 </code></pre>
 </li>
@@ -43,16 +43,16 @@
 <pre><code> //in your servlet or other web request handling code
  public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
  ...
-     HttpSession session = request.getSession();
-     String storedToken = (String)session.getAttribute(&quot;csrfToken&quot;);
-     String token = request.getParameter(&quot;token&quot;);
+ 	HttpSession session = request.getSession();
+ 	String storedToken = (String)session.getAttribute(&quot;csrfToken&quot;);
+ 	String token = request.getParameter(&quot;token&quot;);
 
-     //do check
-     if (storedToken.equals(token)) {
-         //go ahead and process ... do business logic here
-     } else {
-         //DO NOT PROCESS ... this is to be considered a CSRF attack - handle appropriately
-     }
+ 	//do check
+ 	if (storedToken.equals(token)) {
+ 		//go ahead and process ... do business logic here
+ 	} else {
+ 		//DO NOT PROCESS ... this is to be considered a CSRF attack - handle appropriately
+ 	}
 
  }
 </code></pre>
@@ -64,8 +64,7 @@
 </code></pre>
 </li>
 </ol>
-<h2>Additional Resources</h2>
+<h2>Guideline</h2>
 <ul>
-<li>For more information about Cross-Site Request Forgery, see <a href="https://www.owasp.org/index.php/Cross-Site_Request_Forgery_%28CSRF%29">https://www.owasp.org/index.php/Cross-Site_Request_Forgery_%28CSRF%29</a></li>
-<li>For more information about Cross-Site Request Forgery prevention, see <a href="https://www.owasp.org/index.php/Cross-Site_Request_Forgery_%28CSRF%29_Prevention_Cheat_Sheet">https://www.owasp.org/index.php/Cross-Site_Request_Forgery_%28CSRF%29_Prevention_Cheat_Sheet</a></li>
+<li><a href="fdb460e6-5d18-4e35-a093-4b260155d79e">Include Unique Tokens in HTTP Requests</a></li>
 </ul>

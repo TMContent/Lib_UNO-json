@@ -92,6 +92,7 @@
       "li",
       "p",
       "ol",
+      "ol",
       "li",
       "p",
       "li",
@@ -583,7 +584,9 @@
     "attack": [
       "p"
     ],
-    "ddos),": [
+    "ddos": [
+      "p",
+      "p",
       "p"
     ],
     "will": [
@@ -778,6 +781,7 @@
     "aws": [
       "p",
       "ol",
+      "ol",
       "li",
       "p",
       "li",
@@ -795,9 +799,6 @@
       "p"
     ],
     "against": [
-      "p"
-    ],
-    "ddos": [
       "p"
     ],
     "additional": [
@@ -842,8 +843,21 @@
     "elastic": [
       "p"
     ],
-    "elb).": [
-      "p"
+    "elb": [
+      "p",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "p",
+      "li",
+      "p",
+      "li",
+      "li",
+      "p",
+      "p",
+      "code"
     ],
     "however": [
       "p"
@@ -980,16 +994,13 @@
     "availability": [
       "p"
     ],
-    "ddos).": [
-      "p"
-    ],
     "maintaining": [
       "p"
     ],
     "quality": [
       "p"
     ],
-    "qos)": [
+    "qos": [
       "p"
     ],
     "at": [
@@ -1099,6 +1110,7 @@
     ],
     "options": [
       "ol",
+      "ol",
       "li",
       "p",
       "strong",
@@ -1129,6 +1141,7 @@
       "ol",
       "li",
       "p",
+      "ol",
       "ol",
       "ol",
       "li",
@@ -1225,8 +1238,26 @@
       "li",
       "p"
     ],
-    "scaling\n\n\nexamine": [
-      "ol"
+    "scaling": [
+      "ol",
+      "li",
+      "p",
+      "ol",
+      "ol",
+      "li",
+      "p",
+      "li",
+      "p"
+    ],
+    "examine": [
+      "ol",
+      "ol",
+      "li",
+      "p",
+      "strong",
+      "li",
+      "p",
+      "strong"
     ],
     "system": [
       "ol",
@@ -1299,9 +1330,6 @@
       "li",
       "p"
     ],
-    "options\n\n\nexamine": [
-      "ol"
-    ],
     "configuration": [
       "ol",
       "ol",
@@ -1361,23 +1389,6 @@
       "li",
       "p"
     ],
-    "scaling": [
-      "li",
-      "p",
-      "ol",
-      "li",
-      "p",
-      "li",
-      "p"
-    ],
-    "examine": [
-      "li",
-      "p",
-      "strong",
-      "li",
-      "p",
-      "strong"
-    ],
     "fix": [
       "h2"
     ],
@@ -1399,8 +1410,11 @@
     "implementation": [
       "p"
     ],
-    "scaling\n\n\nchoose": [
-      "ol"
+    "choose": [
+      "ol",
+      "li",
+      "p",
+      "strong"
     ],
     "one": [
       "ol",
@@ -1489,23 +1503,11 @@
       "li",
       "p"
     ],
-    "features\n\n\nconfigure": [
-      "ol"
-    ],
-    "elb": [
-      "ol",
-      "ol",
-      "ol",
+    "configure": [
       "ol",
       "li",
       "p",
-      "li",
-      "p",
-      "li",
-      "li",
-      "p",
-      "p",
-      "code"
+      "strong"
     ],
     "prepare": [
       "ol",
@@ -1527,7 +1529,7 @@
       "li",
       "p"
     ],
-    "vpc)": [
+    "vpc": [
       "ol",
       "li",
       "p"
@@ -1549,6 +1551,7 @@
     ],
     "command": [
       "ol",
+      "ol",
       "li",
       "p",
       "li",
@@ -1564,7 +1567,7 @@
       "li",
       "p"
     ],
-    "cli)": [
+    "cli": [
       "ol",
       "li",
       "p"
@@ -1595,8 +1598,14 @@
       "li",
       "p"
     ],
-    "aws\n\n\ntest": [
-      "ol"
+    "test": [
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
+      "p",
+      "strong"
     ],
     "before": [
       "ol",
@@ -1615,14 +1624,6 @@
       "ol",
       "li",
       "p"
-    ],
-    "test": [
-      "ol",
-      "li",
-      "li",
-      "p",
-      "p",
-      "strong"
     ],
     "balancer": [
       "ol",
@@ -1693,8 +1694,11 @@
       "p",
       "code"
     ],
-    "latency\n\n\nmake": [
-      "ol"
+    "latency": [
+      "ol",
+      "li",
+      "p",
+      "code"
     ],
     "adjustments": [
       "ol",
@@ -1749,10 +1753,8 @@
       "p",
       "code"
     ],
-    "command\n\n\nmonitor": [
-      "ol"
-    ],
     "monitor": [
+      "ol",
       "ol",
       "ol",
       "li",
@@ -1817,21 +1819,6 @@
       "ol",
       "li",
       "p"
-    ],
-    "choose": [
-      "li",
-      "p",
-      "strong"
-    ],
-    "configure": [
-      "li",
-      "p",
-      "strong"
-    ],
-    "latency": [
-      "li",
-      "p",
-      "code"
     ],
     "carefully": [
       "title"

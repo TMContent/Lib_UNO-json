@@ -184,6 +184,7 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "li",
@@ -205,6 +206,7 @@
       "p",
       "strong",
       "p",
+      "ol",
       "ol",
       "ol",
       "ol",
@@ -357,8 +359,13 @@
       "ul",
       "li"
     ],
-    "costsensures": [
-      "ul"
+    "costs": [
+      "ul",
+      "li"
+    ],
+    "ensures": [
+      "ul",
+      "li"
     ],
     "requirements": [
       "ul",
@@ -400,8 +407,13 @@
       "ul",
       "li"
     ],
-    "controlsprevents": [
-      "ul"
+    "controls": [
+      "ul",
+      "li"
+    ],
+    "prevents": [
+      "ul",
+      "li"
     ],
     "re": [
       "ul",
@@ -437,8 +449,15 @@
       "ul",
       "li"
     ],
-    "vulnerabilitiesallows": [
-      "ul"
+    "vulnerabilities": [
+      "ul",
+      "li"
+    ],
+    "allows": [
+      "ul",
+      "ul",
+      "li",
+      "li"
     ],
     "testing": [
       "ul",
@@ -498,8 +517,9 @@
       "li",
       "p"
     ],
-    "isolationallows": [
-      "ul"
+    "isolation": [
+      "ul",
+      "li"
     ],
     "performance": [
       "ul",
@@ -517,8 +537,13 @@
       "ul",
       "li"
     ],
-    "posturepermits": [
-      "ul"
+    "posture": [
+      "ul",
+      "li"
+    ],
+    "permits": [
+      "ul",
+      "li"
     ],
     "offloading": [
       "ul",
@@ -534,34 +559,6 @@
     ],
     "appliances": [
       "ul",
-      "li"
-    ],
-    "costs": [
-      "li"
-    ],
-    "ensures": [
-      "li"
-    ],
-    "controls": [
-      "li"
-    ],
-    "prevents": [
-      "li"
-    ],
-    "vulnerabilities": [
-      "li"
-    ],
-    "allows": [
-      "li",
-      "li"
-    ],
-    "isolation": [
-      "li"
-    ],
-    "posture": [
-      "li"
-    ],
-    "permits": [
       "li"
     ],
     "when": [
@@ -638,7 +635,7 @@
     "ruby": [
       "p"
     ],
-    "net.": [
+    "net": [
       "p"
     ],
     "this": [
@@ -771,8 +768,14 @@
       "li",
       "p"
     ],
-    "code\n\n\nexamine": [
-      "ol"
+    "examine": [
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
+      "p",
+      "strong"
     ],
     "whether": [
       "ol",
@@ -844,6 +847,7 @@
       "ol",
       "li",
       "p",
+      "ol",
       "li",
       "p",
       "strong"
@@ -856,14 +860,6 @@
       "p",
       "p",
       "ol",
-      "ol",
-      "li",
-      "li",
-      "p",
-      "p",
-      "strong"
-    ],
-    "examine": [
       "ol",
       "li",
       "li",
@@ -952,8 +948,16 @@
       "li",
       "p"
     ],
-    "address\n\n\ndesign": [
-      "ol"
+    "address": [
+      "ol",
+      "li",
+      "p"
+    ],
+    "design": [
+      "ol",
+      "li",
+      "p",
+      "strong"
     ],
     "architecture": [
       "ol",
@@ -1068,8 +1072,11 @@
       "li",
       "p"
     ],
-    "code\n\n\nwrite": [
-      "ol"
+    "write": [
+      "ol",
+      "li",
+      "p",
+      "strong"
     ],
     "actual": [
       "ol",
@@ -1110,10 +1117,13 @@
       "li",
       "p"
     ],
-    "cycle\n\n\ntest": [
-      "ol"
+    "cycle": [
+      "ol",
+      "li",
+      "p"
     ],
     "test": [
+      "ol",
       "ol",
       "ol",
       "li",
@@ -1144,8 +1154,16 @@
       "li",
       "p"
     ],
-    "methods\n\n\ndeploy": [
-      "ol"
+    "methods": [
+      "ol",
+      "li",
+      "p"
+    ],
+    "deploy": [
+      "ol",
+      "li",
+      "p",
+      "strong"
     ],
     "add": [
       "ol",
@@ -1163,8 +1181,10 @@
       "li",
       "p"
     ],
-    "projects\n\n\nmaintain": [
-      "ol"
+    "projects": [
+      "ol",
+      "li",
+      "p"
     ],
     "needs": [
       "ol",
@@ -1239,37 +1259,6 @@
     ],
     "completed": [
       "ol",
-      "li",
-      "p"
-    ],
-    "address": [
-      "li",
-      "p"
-    ],
-    "design": [
-      "li",
-      "p",
-      "strong"
-    ],
-    "write": [
-      "li",
-      "p",
-      "strong"
-    ],
-    "cycle": [
-      "li",
-      "p"
-    ],
-    "methods": [
-      "li",
-      "p"
-    ],
-    "deploy": [
-      "li",
-      "p",
-      "strong"
-    ],
-    "projects": [
       "li",
       "p"
     ]

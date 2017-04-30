@@ -837,6 +837,7 @@
       "h2",
       "p",
       "p",
+      "p",
       "font",
       "p"
     ],
@@ -1091,6 +1092,8 @@
       "p"
     ],
     "strings": [
+      "p",
+      "p",
       "p",
       "p",
       "p",
@@ -1392,13 +1395,27 @@
     ],
     "'": [
       "p",
+      "font",
+      "p",
+      "p",
+      "p",
+      "font",
+      "font",
+      "font",
+      "p",
+      "p",
+      "p",
+      "p",
+      "font",
+      "font",
+      "font",
       "font"
     ],
     "exec": [
       "p",
       "font"
     ],
-    "master.xp_cmdshell": [
+    "masterxp_cmdshell": [
       "p",
       "font"
     ],
@@ -1554,7 +1571,9 @@
     "steal": [
       "p"
     ],
-    "code now": [
+    "now": [
+      "p",
+      "p",
       "p"
     ],
     "knows": [
@@ -1589,7 +1608,7 @@
       "p",
       "font"
     ],
-    "c\\inetpub\\wwwroot\\example\\login.aspx.cs": [
+    "c\\inetpub\\wwwroot\\example\\loginaspxcs": [
       "p",
       "font"
     ],
@@ -1617,17 +1636,15 @@
       "h2",
       "p"
     ],
-    "loginaspx,": [
-      "p"
+    "loginaspx": [
+      "p",
+      "em"
     ],
     "been": [
       "p"
     ],
     "feasible": [
       "p"
-    ],
-    "loginaspx": [
-      "em"
     ],
     "last": [
       "p"
@@ -1795,6 +1812,8 @@
     ],
     "sqlconnection": [
       "p",
+      "font",
+      "p",
       "font"
     ],
     "m_conn": [
@@ -1809,7 +1828,7 @@
       "p",
       "font"
     ],
-    "sqlconnection\"data": [
+    "sqlconnectiondata": [
       "p",
       "font",
       "p",
@@ -1827,7 +1846,7 @@
       "p",
       "font"
     ],
-    "security=true\";m_conn.open();sqlcommand": [
+    "security=truem_connopensqlcommand": [
       "p",
       "font"
     ],
@@ -1837,11 +1856,11 @@
       "p",
       "font"
     ],
-    "m_conncreatecommand();m_command.commandtext": [
+    "m_conncreatecommandm_commandcommandtext": [
       "p",
       "font"
     ],
-    "\"select": [
+    "select": [
       "p",
       "font",
       "p",
@@ -1857,16 +1876,6 @@
       "p",
       "font",
       "p",
-      "font"
-    ],
-    "'\"": [
-      "p",
-      "p",
-      "font",
-      "font",
-      "p",
-      "p",
-      "font",
       "font"
     ],
     "+": [
@@ -1893,19 +1902,13 @@
       "p",
       "font"
     ],
-    "\"'": [
-      "p",
-      "font",
-      "p",
-      "font"
-    ],
     "txbpasswordtext": [
       "p",
       "font",
       "p",
       "font"
     ],
-    "\"'\"sqldatareader": [
+    "'sqldatareader": [
       "p",
       "font"
     ],
@@ -1915,7 +1918,7 @@
       "p",
       "font"
     ],
-    "m_commandexecutereader();m_conn.close();": [
+    "m_commandexecutereaderm_connclose": [
       "p",
       "font"
     ],
@@ -1953,27 +1956,51 @@
     "prevent": [
       "p"
     ],
-    "try{ sqlconnection": [
+    "try{": [
       "p",
       "font"
     ],
-    "security=true\"; m_conn.open(); sqlcommand": [
+    "security=true": [
       "p",
       "font"
     ],
-    "m_conncreatecommand(); m_command.commandtext": [
+    "m_connopen": [
       "p",
       "font"
     ],
-    "\"'\" sqldatareader": [
+    "sqlcommand": [
       "p",
       "font"
     ],
-    "m_commandexecutereader(); m_conn.close();}catch": [
+    "m_conncreatecommand": [
       "p",
       "font"
     ],
-    "{ responsewrite(\"application": [
+    "m_commandcommandtext": [
+      "p",
+      "font"
+    ],
+    "sqldatareader": [
+      "p",
+      "font"
+    ],
+    "m_commandexecutereader": [
+      "p",
+      "font"
+    ],
+    "m_connclose}catch": [
+      "p",
+      "font"
+    ],
+    "{": [
+      "p",
+      "font",
+      "p",
+      "font"
+    ],
+    "responsewriteapplication": [
+      "p",
+      "font",
       "p",
       "font"
     ],
@@ -1981,7 +2008,7 @@
       "p",
       "font"
     ],
-    "later\";}": [
+    "later}": [
       "p",
       "font"
     ],
@@ -2045,8 +2072,9 @@
     "project": [
       "p"
     ],
-    "global.asax).": [
-      "p"
+    "globalasax": [
+      "p",
+      "em"
     ],
     "item": [
       "p"
@@ -2093,9 +2121,6 @@
       "p",
       "p"
     ],
-    "globalasax": [
-      "em"
-    ],
     "void": [
       "p",
       "font"
@@ -2112,7 +2137,7 @@
       "p",
       "font"
     ],
-    "e {": [
+    "e": [
       "p",
       "font"
     ],
@@ -2128,11 +2153,7 @@
       "p",
       "font"
     ],
-    "responsewrite(\"application": [
-      "p",
-      "font"
-    ],
-    "error\";}": [
+    "error}": [
       "p",
       "font"
     ],
@@ -2227,19 +2248,19 @@
     "little": [
       "p"
     ],
-    "mode=\"on\"": [
+    "mode=on": [
       "p",
       "font"
     ],
-    "defaultredirect=\"genericerrorpagehtm\">": [
+    "defaultredirect=genericerrorpagehtm": [
       "p",
       "font"
     ],
-    "statuscode=\"403\"": [
+    "statuscode=403": [
       "p",
       "font"
     ],
-    "redirect=\"genericerrorpagehtm\"": [
+    "redirect=genericerrorpagehtm": [
       "p",
       "p",
       "p",
@@ -2253,15 +2274,15 @@
       "font",
       "font"
     ],
-    "statuscode=\"404\"": [
+    "statuscode=404": [
       "p",
       "font"
     ],
-    "statuscode=\"500\"": [
+    "statuscode=500": [
       "p",
       "font"
     ],
-    "/</customerrors>": [
+    "//customerrors": [
       "p",
       "font"
     ],
@@ -2308,25 +2329,21 @@
       "p",
       "font"
     ],
-    "xmlns=\"http//www.w3.org/1999/xhtml\"><head>": [
+    "xmlns=http//wwww3org/1999/xhtmlhead": [
       "p",
       "font"
     ],
-    "title>application": [
+    "titleapplication": [
       "p",
       "font"
     ],
-    "error/title></head><body><h2>application": [
+    "error/title/headbodyh2application": [
       "p",
       "font"
     ],
-    "error/h2></body></html>": [
+    "error/h2/body/html": [
       "p",
       "font"
-    ],
-    "now": [
-      "p",
-      "p"
     ],
     "continue": [
       "p",
@@ -2392,9 +2409,6 @@
     "fuzzdb": [
       "p"
     ],
-    "strings strings": [
-      "p"
-    ],
     "containing": [
       "p"
     ],
@@ -2454,7 +2468,7 @@
     "profile": [
       "p"
     ],
-    "http//www.example.com/getprofile.aspx?id=112&username=testuser": [
+    "http//wwwexamplecom/getprofileaspx?id=112&username=testuser": [
       "p",
       "font"
     ],
@@ -2476,7 +2490,7 @@
     "invalid": [
       "p"
     ],
-    "http//www.example.com/getprofile.aspx?id=abc&username=testuser": [
+    "http//wwwexamplecom/getprofileaspx?id=abc&username=testuser": [
       "p",
       "font"
     ],
@@ -2682,7 +2696,7 @@
     "identical": [
       "p"
     ],
-    "http//www.example.com/getprofile?id=a'+or+1%3d1%23&username=testuserhttp://www.example.com/getprofile?id=a'%20or%021=1#&username=testuser": [
+    "http//wwwexamplecom/getprofile?id=a'+or+1%3d1%23&username=testuserhttp//wwwexamplecom/getprofile?id=a'%20or%021=1#&username=testuser": [
       "p",
       "font"
     ],
@@ -2719,8 +2733,9 @@
     "tools": [
       "p"
     ],
-    "fuzzers)": [
-      "p"
+    "fuzzers": [
+      "p",
+      "i"
     ],
     "online": [
       "p"
@@ -2753,9 +2768,6 @@
     ],
     "time": [
       "p"
-    ],
-    "fuzzers": [
-      "i"
     ],
     "conclusions": [
       "h1"

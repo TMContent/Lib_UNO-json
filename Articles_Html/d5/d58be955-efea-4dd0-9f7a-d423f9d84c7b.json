@@ -1,6 +1,6 @@
 {
   "id": "d58be955-efea-4dd0-9f7a-d423f9d84c7b",
-  "checksum": "de47937cb45f3ce9dd00eb51bba3ac28",
+  "checksum": "84aa27ce38dd50f57febcef2e6b39fec",
   "words": {
     "description": [
       "h2"
@@ -15,18 +15,6 @@
       "p",
       "p",
       "p",
-      "ul",
-      "ul",
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a",
-      "li",
-      "a",
-      "li",
-      "a",
       "title"
     ],
     "filesystem": [
@@ -41,18 +29,6 @@
       "p",
       "p",
       "p",
-      "ul",
-      "ul",
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a",
-      "li",
-      "a",
-      "li",
-      "a",
       "title"
     ],
     "permissions": [
@@ -67,24 +43,9 @@
       "p",
       "p",
       "p",
-      "p",
-      "p",
-      "ul",
-      "ul",
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a",
-      "li",
-      "a",
-      "li",
-      "a",
       "title"
     ],
     "vulnerabilities": [
-      "p",
       "p",
       "p",
       "p",
@@ -120,7 +81,13 @@
       "p",
       "p",
       "p",
-      "p"
+      "ul",
+      "li",
+      "a",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "are": [
       "p",
@@ -241,8 +208,7 @@
     ],
     "specific": [
       "p",
-      "p",
-      "h2"
+      "p"
     ],
     "files": [
       "p",
@@ -251,7 +217,6 @@
       "p"
     ],
     "that": [
-      "p",
       "p",
       "p",
       "p",
@@ -270,7 +235,10 @@
     "is": [
       "p",
       "p",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "vulnerable": [
       "p",
@@ -573,12 +541,28 @@
     "prevent": [
       "p"
     ],
-    "harden": [
+    "permission": [
+      "p",
       "p"
+    ],
+    "vulnerabilites": [
+      "p"
+    ],
+    "harden": [
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "server": [
       "p",
-      "p"
+      "ul",
+      "li",
+      "a",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "check": [
       "h2"
@@ -596,27 +580,7 @@
       "p"
     ],
     "hardened": [
-      "p"
-    ],
-    "technologies": [
-      "h2"
-    ],
-    "aspnet": [
-      "ul",
-      "li",
-      "a"
-    ],
-    "c++": [
-      "ul",
-      "li",
-      "a"
-    ],
-    "java": [
-      "ul",
-      "li",
-      "a"
-    ],
-    "php": [
+      "p",
       "ul",
       "li",
       "a"
@@ -625,20 +589,12 @@
   "tags": {},
   "links": [
     {
-      "href": "943fcf2e-ce5b-490d-98b7-6da15c1efc13",
-      "text": "ASP.NET Improper Filesystem Permissions"
+      "href": "99297f49-528b-4a25-bc35-3b82ef14404a",
+      "text": "Harden the Server"
     },
     {
-      "href": "f2549cc1-8937-4a41-9ed9-91eeefb10ed2",
-      "text": "C++ Improper Filesystem Permissions"
-    },
-    {
-      "href": "0a093ac2-c3ed-4fe3-b4a2-f178c3d0ecb6",
-      "text": "Java Improper Filesystem Permissions"
-    },
-    {
-      "href": "5041b7f7-5cf9-4653-809c-c2ff558ccb1c",
-      "text": "PHP Improper Filesystem Permissions"
+      "href": "408f56bf-9ca6-482d-bff2-a2495ff80917",
+      "text": "The Server Is Hardened"
     }
   ]
 }

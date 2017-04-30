@@ -13,10 +13,10 @@
           "747fed1a-6444-4fe1-86f3-ff48bf344938,cee3bcfe-eaaa-4b4e-8c91-f7c9a9b87a48,"
         ],
         "Library_Id": [
-          "51eb81c3-1d23-4146-ba83-8a6bb9233c11"
+          "be5273b1-d682-4361-99d9-6234f2d47eb7"
         ],
         "Title": [
-          "Unsigned Integers Don't Wrap"
+          "Unsigned Integers Do Not Wrap"
         ],
         "Category": [
           "Input and Data Validation"
@@ -57,10 +57,10 @@
       {
         "$": {
           "Sanitized": "true",
-          "DataType": "Html"
+          "DataType": "html"
         },
         "Data": [
-          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>C&#43;&#43;</li>\r\n  </ul>\r\n  <h1>What to Check For</h1>\r\n  <p>Verify that operations using unsigned integers do not result in values that are higher than the maximum or minimum allowed for the integer type.</p>\r\n  <h1>Why</h1>\r\n  <p>When the result of an unsigned integer operation exceeds the maximum or the minimum values allowed for that integer type, the stored value of that operation will be different than expected. If this value is used to contol program flow, for array indexing, or memory operations, an arbitrary code execution vulnerability may result.</p>\r\n  <h1>How to Check</h1>\r\n  <p>Identify all operations that assign values to unsigned integers. Verify that range checks are performed before assigning values to unsigned integers.</p>\r\n  <h1>How to Fix</h1>\r\n  <p>Identify all operations that assign values to unsigned integers. Add code to perform range checks before assigning values to unsigned integers. Use constants, such as UINT_MAX, defined by the platform for range checks. The minimum valid value for unsigned integers is of course 0.</p>\r\n  <h1>Problem Example</h1>\r\n  <p>The following code may result in an unexpected value of a. If the value of variable a is then used to control program flow, index arrays, or perform memory operations, an arbitrary code execution vulnerability may result.</p>\r\n  <pre>unsigned short a, b, c;<br />// assign values to b and c<br />a = b &#43; c;</pre>\r\n  <h1>Solution Example</h1>\r\n  <p>To prevent integer wrapping, perform checks to make sure the resulting value is valid for the unsigned integer type. For the problem example above, the following code implements the correct range check:</p>\r\n  <pre>unsigned short a, b, c;<br />// assign values to b and c<br />if((b&#43;c) &lt; UINT_MAX) a = b &#43; c;<br />else &#123;/&#42;handle error&#42;/&#125;</pre>\r\n  <h1>Related Items</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/2f6f114a-7be0-4f92-8a45-23a6029dbcf1\">Prevent Unsigned Integers from Wrapping</a>\r\n      <li>\r\n        <a href=\"/article/6c6f0d93-0d5b-4aa4-97b0-9e69535b3345\">Protect Against Integer Overflows</a>\r\n      </li>\r\n    </li>\r\n  </ul>"
+          "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>C&amp;#43;&amp;#43;</li>\r\n  </ul>\r\n  <h1>What to Check For</h1>\r\n  <p>Verify that operations using unsigned integers do not result in values that are higher than the maximum or minimum allowed for the integer type.</p>\r\n  <h1>Why</h1>\r\n  <p>When the result of an unsigned integer operation exceeds the maximum or the minimum values allowed for that integer type, the stored value of that operation will be different than expected. If this value is used to contol program flow, for array indexing, or memory operations, an arbitrary code execution vulnerability may result.</p>\r\n  <h1>How to Check</h1>\r\n  <p>Identify all operations that assign values to unsigned integers. Verify that range checks are performed before assigning values to unsigned integers.</p>\r\n  <h1>How to Fix</h1>\r\n  <p>Identify all operations that assign values to unsigned integers. Add code to perform range checks before assigning values to unsigned integers. Use constants, such as UINT_MAX, defined by the platform for range checks. The minimum valid value for unsigned integers is of course 0.</p>\r\n  <h1>Problem Example</h1>\r\n  <p>The following code may result in an unexpected value of a. If the value of variable a is then used to control program flow, index arrays, or perform memory operations, an arbitrary code execution vulnerability may result.</p>\r\n  <pre>unsigned short a, b, c;<br />// assign values to b and c<br />a = b &amp;#43; c;</pre>\r\n  <h1>Solution Example</h1>\r\n  <p>To prevent integer wrapping, perform checks to make sure the resulting value is valid for the unsigned integer type. For the problem example above, the following code implements the correct range check:</p>\r\n  <pre>unsigned short a, b, c;<br />// assign values to b and c<br />if((b&amp;#43;c) &lt; UINT_MAX) a = b &amp;#43; c;<br />else &amp;#123;/&amp;#42;handle error&amp;#42;/&amp;#125;</pre>\r\n  <h1>Related Items</h1>\r\n  <ul>\r\n    <li>\r\n      <a href=\"/article/2f6f114a-7be0-4f92-8a45-23a6029dbcf1\">Prevent Unsigned Integers from Wrapping</a>\r\n      <li>\r\n        <a href=\"/article/6c6f0d93-0d5b-4aa4-97b0-9e69535b3345\">Protect Against Integer Overflows</a>\r\n      </li>\r\n    </li>\r\n  </ul>"
         ]
       }
     ]

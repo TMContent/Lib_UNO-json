@@ -45,6 +45,7 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "p",
       "li",
@@ -116,6 +117,7 @@
       "ol",
       "li",
       "p",
+      "ol",
       "li",
       "p"
     ],
@@ -250,7 +252,10 @@
     "protocol": [
       "p"
     ],
-    "ldap)": [
+    "ldap": [
+      "p",
+      "ol",
+      "li",
       "p"
     ],
     "repository": [
@@ -521,13 +526,18 @@
       "li",
       "p"
     ],
-    "ldap": [
+    "installation": [
       "ol",
       "li",
       "p"
     ],
-    "installation\n\n\nallow": [
-      "ol"
+    "allow": [
+      "ol",
+      "li",
+      "p",
+      "ol",
+      "li",
+      "p"
     ],
     "log": [
       "ol",
@@ -554,8 +564,15 @@
       "li",
       "p"
     ],
-    "credentials\n\nmanage": [
-      "ol"
+    "credentials": [
+      "ol",
+      "li",
+      "p"
+    ],
+    "manage": [
+      "ol",
+      "li",
+      "p"
     ],
     "unified": [
       "ol",
@@ -564,25 +581,6 @@
     ],
     "console": [
       "ol",
-      "li",
-      "p"
-    ],
-    "installation": [
-      "li",
-      "p"
-    ],
-    "allow": [
-      "li",
-      "p",
-      "ol",
-      "li",
-      "p"
-    ],
-    "credentials": [
-      "li",
-      "p"
-    ],
-    "manage": [
       "li",
       "p"
     ],
@@ -601,6 +599,7 @@
     "identify": [
       "ol",
       "ol",
+      "ol",
       "li",
       "p",
       "strong",
@@ -611,6 +610,7 @@
       "strong"
     ],
     "determine": [
+      "ol",
       "ol",
       "ol",
       "li",
@@ -640,9 +640,6 @@
       "p",
       "p"
     ],
-    "application\n\n\ndetermine": [
-      "ol"
-    ],
     "type": [
       "ol",
       "ol",
@@ -662,8 +659,10 @@
       "li",
       "p"
     ],
-    "priority\n\n\nidentify": [
-      "ol"
+    "priority": [
+      "ol",
+      "li",
+      "p"
     ],
     "network": [
       "ol",
@@ -747,8 +746,16 @@
       "li",
       "p"
     ],
-    "modification\n\n\nestablish": [
-      "ol"
+    "modification": [
+      "ol",
+      "li",
+      "p"
+    ],
+    "establish": [
+      "ol",
+      "li",
+      "p",
+      "strong"
     ],
     "connectivity": [
       "ol",
@@ -791,8 +798,11 @@
       "li",
       "p"
     ],
-    "services\n\n\nadd": [
-      "ol"
+    "add": [
+      "ol",
+      "li",
+      "p",
+      "strong"
     ],
     "code": [
       "ol",
@@ -847,24 +857,6 @@
       "ol",
       "li",
       "p"
-    ],
-    "priority": [
-      "li",
-      "p"
-    ],
-    "modification": [
-      "li",
-      "p"
-    ],
-    "establish": [
-      "li",
-      "p",
-      "strong"
-    ],
-    "add": [
-      "li",
-      "p",
-      "strong"
     ]
   },
   "tags": {},

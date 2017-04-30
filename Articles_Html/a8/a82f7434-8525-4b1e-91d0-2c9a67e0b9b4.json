@@ -99,9 +99,33 @@
       "ul",
       "li"
     ],
-    "aws)": [
+    "aws": [
       "ul",
-      "li"
+      "li",
+      "p",
+      "ol",
+      "li",
+      "p",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "code",
+      "li",
+      "code",
+      "li",
+      "code",
+      "li",
+      "code",
+      "ol",
+      "ol",
+      "li",
+      "p",
+      "code",
+      "li",
+      "p",
+      "code"
     ],
     "what": [
       "h2"
@@ -198,29 +222,6 @@
       "p",
       "p",
       "p"
-    ],
-    "aws": [
-      "p",
-      "ol",
-      "li",
-      "p",
-      "ul",
-      "li",
-      "code",
-      "li",
-      "code",
-      "li",
-      "code",
-      "li",
-      "code",
-      "ol",
-      "ol",
-      "li",
-      "p",
-      "code",
-      "li",
-      "p",
-      "code"
     ],
     "resources": [
       "p",
@@ -667,7 +668,16 @@
     "notation": [
       "p"
     ],
-    "json)": [
+    "json": [
+      "p",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "p",
+      "li",
+      "li",
+      "p",
       "p"
     ],
     "viewer": [
@@ -961,6 +971,7 @@
       "li",
       "p",
       "p",
+      "ol",
       "li",
       "p"
     ],
@@ -1013,8 +1024,18 @@
       "li",
       "p"
     ],
-    "sns)": [
-      "p"
+    "sns": [
+      "p",
+      "ol",
+      "li",
+      "p",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
+      "p",
+      "strong"
     ],
     "notifications": [
       "p",
@@ -1146,6 +1167,8 @@
       "p"
     ],
     "create": [
+      "ol",
+      "ol",
       "ol",
       "ol",
       "ol",
@@ -1364,6 +1387,9 @@
       "ol",
       "ol",
       "ol",
+      "ol",
+      "li",
+      "p",
       "li",
       "p",
       "li",
@@ -1511,8 +1537,13 @@
       "li",
       "p"
     ],
-    "now\n\n\ncreate": [
-      "ol"
+    "now": [
+      "ol",
+      "li",
+      "p",
+      "ol",
+      "li",
+      "p"
     ],
     "update": [
       "ol",
@@ -1535,6 +1566,8 @@
       "li",
       "p",
       "strong",
+      "ul",
+      "ul",
       "ul",
       "li",
       "li",
@@ -1577,11 +1610,6 @@
       "p"
     ],
     "interface": [
-      "ol",
-      "li",
-      "p"
-    ],
-    "cli).": [
       "ol",
       "li",
       "p"
@@ -1650,18 +1678,6 @@
       "li",
       "p"
     ],
-    "sns": [
-      "ol",
-      "li",
-      "p",
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "p",
-      "p",
-      "strong"
-    ],
     "topic": [
       "ol",
       "li",
@@ -1701,22 +1717,8 @@
       "li",
       "p"
     ],
-    "files\n\n\ncreate": [
-      "ol"
-    ],
-    "features": [
-      "ol",
-      "li",
-      "p"
-    ],
-    "now": [
-      "li",
-      "p",
-      "ol",
-      "li",
-      "p"
-    ],
     "files": [
+      "ol",
       "li",
       "p",
       "ol",
@@ -1730,6 +1732,11 @@
       "p",
       "strong"
     ],
+    "features": [
+      "ol",
+      "li",
+      "p"
+    ],
     "subscription": [
       "ul",
       "ul",
@@ -1741,10 +1748,6 @@
       "li",
       "p",
       "code"
-    ],
-    "trail\naws": [
-      "ul",
-      "ul"
     ],
     "set": [
       "ul",
@@ -1770,12 +1773,14 @@
       "ul",
       "li",
       "li",
+      "ol",
       "li",
       "p",
       "strong"
     ],
-    "settings\naws": [
-      "ul"
+    "settings": [
+      "ul",
+      "li"
     ],
     "get": [
       "ul",
@@ -1789,10 +1794,8 @@
       "li",
       "code"
     ],
-    "settings": [
-      "li"
-    ],
     "view": [
+      "ol",
       "ol",
       "ol",
       "ol",
@@ -1815,6 +1818,7 @@
       "strong"
     ],
     "events": [
+      "ol",
       "ol",
       "ol",
       "ol",
@@ -1898,7 +1902,7 @@
       "p",
       "p"
     ],
-    "exist.": [
+    "exist": [
       "ol",
       "li",
       "p"
@@ -1908,19 +1912,13 @@
       "li",
       "p"
     ],
-    "json": [
-      "ol",
+    "format": [
       "ol",
       "ol",
       "li",
       "p",
       "li",
-      "li",
-      "p",
       "p"
-    ],
-    "format\n\n\nview": [
-      "ol"
     ],
     "last": [
       "ol",
@@ -1951,8 +1949,11 @@
       "li",
       "p"
     ],
-    "events\n\n\ncontrol": [
-      "ol"
+    "control": [
+      "ol",
+      "li",
+      "p",
+      "strong"
     ],
     "user": [
       "ol",
@@ -2096,8 +2097,10 @@
       "li",
       "p"
     ],
-    "passwords\n\n\nretrieve": [
-      "ol"
+    "passwords": [
+      "ol",
+      "li",
+      "p"
     ],
     "specified": [
       "ol",
@@ -2109,7 +2112,7 @@
       "li",
       "p"
     ],
-    ".gz).": [
+    "gz": [
       "ol",
       "li",
       "p"
@@ -2139,13 +2142,6 @@
       "li",
       "p"
     ],
-    "format": [
-      "ol",
-      "li",
-      "p",
-      "li",
-      "p"
-    ],
     "viewed": [
       "ol",
       "li",
@@ -2156,8 +2152,14 @@
       "li",
       "p"
     ],
-    "on\n\n\nconfigure": [
-      "ol"
+    "configure": [
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
+      "p",
+      "strong"
     ],
     "up": [
       "ol",
@@ -2168,14 +2170,6 @@
       "ol",
       "li",
       "p"
-    ],
-    "configure": [
-      "ol",
-      "li",
-      "li",
-      "p",
-      "p",
-      "strong"
     ],
     "attaches": [
       "ol",
@@ -2189,15 +2183,6 @@
     ],
     "publishing": [
       "ol",
-      "li",
-      "p"
-    ],
-    "control": [
-      "li",
-      "p",
-      "strong"
-    ],
-    "passwords": [
       "li",
       "p"
     ],

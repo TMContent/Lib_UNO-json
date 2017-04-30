@@ -28,7 +28,7 @@
           "PHP"
         ],
         "Type": [
-          "Guideline"
+          "How To"
         ],
         "DirectLink": [
           "Disable Loading Files from URLs"
@@ -57,7 +57,7 @@
       {
         "$": {
           "Sanitized": "true",
-          "DataType": "Html"
+          "DataType": "html"
         },
         "Data": [
           "<h1>Applies to</h1>\r\n  <ul>\r\n    <li>PHP</li>\r\n  </ul>\r\n  <h1>What to Do</h1>\r\n  <p>Configure PHP to disable loading scripts from other web resources.</p>\r\n  <h1>Why</h1>\r\n  <p>Preventing PHP from loading scripts from other web sites helps prevent remote file inclusion vulnerabilities.</p>\r\n  <h1>How</h1>\r\n  <p />Use the <em>allow_url_include</em> directive in <em>php.ini</em> to disable loading external scripts, like so:<pre>allow_url_include = Off</pre><p />If you application does not need to open URLs as files, it may be prudent to disable that functionality as well by using the <em>allow_url_fopen</em> directive in <em>php.ini</em>, like so:<pre>allow_url_fopen = Off</pre>"

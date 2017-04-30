@@ -1,25 +1,27 @@
-<h1>Applies to</h1>
-  <ul>
-    <li>JAVA<li>Struts 1</li></li>
-  </ul>
-  <h1>Summary</h1>
-  <p>Perform output encoding using Struts 1 within an application.</p>
-  <h1>Objectives</h1>
-  <p>Strong output encoding is a control that is typically used to prevent encoding (primarily XSS on the web) issues within an application. This article will describe how to use the built-in mechanisms provided by Struts 1 to perform appropriate output encoding.</p>
-  <h1>Code Examples</h1>
-  <p>In general, Struts 1 tags perform HTML entity encoding by default (see XSS prevention cheat sheet in references). The link tag provides a mechanism to perform url encoding on parameter values. A few examples are given below.</p>
-  <p>Using <em>bean:write</em> to output simple text (performs HTML entity encoding).</p>
-  <pre>&lt;bean:write name="customer" property="streetAddress"/&gt;</pre>
-  <p>Using <em>html:hidden</em> to output a hidden field (performs HTML entity encoding).</p>
-  <pre>&lt;html:hidden property="storeId" /&gt;</pre>
-  <p>Using <em>html:link</em> to output a url (performs URL encoding on url parameter values).</p>
-  <pre>&lt;html:link action="/myBookAction" <br />&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; paramId="id" <br />&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; paramName="book" <br />&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; paramProperty="bookId"&gt;<br />&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;bean:write name="book" property="bookTitle"/&gt;<br />&lt;/html:link&gt;</pre>
-  <p>
-    <strong>Note</strong>: An important point to be aware of is that there are a few tags that allow you to disable the encoding performed by the tag. This is sometimes useful, the most common case being where you are allowing administrators for a site add HTML formatted messages to be displayed to users. There may also be cases where users can create formatted messages for other users. These approaches are often not handled properly to prevent XSS. However, through strong input validation, it is possible to allow users to enter limited HTML and still display that safely to users without allowing XSS. </p>
-  <p>You can determine if this is being done by simply looking for the filter attribute in struts tags. If it is set to false, then the HTML entity encoding is disabled (the default is true). An example of disabling encoding is shown below.</p>
-  <pre>&lt;bean:write name="adminData" property="headerMessage" filter="false" /&gt;</pre>
-  <p>Struts provides various tags that can perform output encoding. However, you must be aware of the encoding properties of the tag(s) you are using and encode appropriately for your given output context. </p>
-  <h1>More Information</h1>
-  <ul>
-    <li>For more information about Cross-Site Scripting prevention, see <a href="https://www.owasp.org/index.php/XSS_&amp;#37;28Cross_Site_Scripting&amp;#37;29_Prevention_Cheat_Sheet">https://www.owasp.org/index.php/XSS_&amp;#37;28Cross_Site_Scripting&amp;#37;29_Prevention_Cheat_Sheet</a></li>
-  </ul>
+<h2>Applies To</h2>
+<ul>
+<li>JAVA</li>
+<li>Struts 1</li>
+</ul>
+<h2>Summary</h2>
+<p>Strong output encoding is a control that is typically used to prevent encoding (primarily XSS on the web) issues within an application. This article will describe how to use the built-in mechanisms provided by Struts 1 to perform appropriate output encoding.</p>
+<h2>Problem Example</h2>
+<p>An important point to be aware of is that there are a few tags that allow you to disable the encoding performed by the tag. This is sometimes useful, the most common case being where you are allowing administrators for a site add HTML formatted messages to be displayed to users. There may also be cases where users can create formatted messages for other users. These approaches are often not handled properly to prevent XSS. However, through strong input validation, it is possible to allow users to enter limited HTML and still display that safely to users without allowing XSS.</p>
+<p>You can determine if this is being done by simply looking for the filter attribute in struts tags. If it is set to false, then the HTML entity encoding is disabled (the default is true). An example of disabling encoding is shown below.</p>
+<pre><code>&lt;bean:write name=&quot;adminData&quot; property=&quot;headerMessage&quot; filter=&quot;false&quot;&gt;&lt;/bean:write&gt;
+</code></pre>
+<h2>Solution Example</h2>
+<p>In general, Struts 1 tags perform HTML entity encoding by default. The link tag provides a mechanism to perform url encoding on parameter values. A few examples are given below.</p>
+<p>Using bean:write to output simple text (performs HTML entity encoding).</p>
+<pre><code>&lt;bean:write name=&quot;customer&quot; property=&quot;streetAddress&quot;&gt;&lt;/bean:write&gt;
+</code></pre>
+<p>Using html:hidden to output a hidden field (performs HTML entity encoding).</p>
+<pre><code>&lt;html:hidden property=&quot;storeId&quot;&gt;&lt;/html:hidden&gt;
+</code></pre>
+<p>Using html:link to output a url (performs URL encoding on url parameter values).</p>
+<pre><code>&lt;html:link action=&quot;/myBookAction&quot; paramid=&quot;id&quot; paramname=&quot;book&quot; paramproperty=&quot;bookId&quot;&gt;&lt;bean:write name=&quot;book&quot; property=&quot;bookTitle&quot;&gt;&lt;/bean:write&gt;&lt;/html:link&gt;
+</code></pre>
+<h2>Guideline</h2>
+<ul>
+<li><a href="9b0ef1a5-c143-4e64-81cc-9e02ccbd9fbd">Encode Untrusted Data in Output</a></li>
+</ul>

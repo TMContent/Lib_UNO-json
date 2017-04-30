@@ -75,6 +75,7 @@
     "verify": [
       "p",
       "p",
+      "ol",
       "li",
       "p",
       "strong"
@@ -674,8 +675,16 @@
       "ul",
       "li"
     ],
-    "restored\ndifferent": [
-      "ul"
+    "restored": [
+      "ul",
+      "li"
+    ],
+    "different": [
+      "ul",
+      "li",
+      "ol",
+      "li",
+      "p"
     ],
     "versions": [
       "ul",
@@ -689,8 +698,13 @@
       "ul",
       "li"
     ],
-    "controlled\nrecovery": [
-      "ul"
+    "controlled": [
+      "ul",
+      "li"
+    ],
+    "recovery": [
+      "ul",
+      "li"
     ],
     "from": [
       "ul",
@@ -744,8 +758,13 @@
       "ul",
       "li"
     ],
-    "rapid\nalternate": [
-      "ul"
+    "rapid": [
+      "ul",
+      "li"
+    ],
+    "alternate": [
+      "ul",
+      "li"
     ],
     "configurations": [
       "ul",
@@ -762,27 +781,6 @@
       "ul",
       "li"
     ],
-    "restored": [
-      "li"
-    ],
-    "different": [
-      "li",
-      "ol",
-      "li",
-      "p"
-    ],
-    "controlled": [
-      "li"
-    ],
-    "recovery": [
-      "li"
-    ],
-    "rapid": [
-      "li"
-    ],
-    "alternate": [
-      "li"
-    ],
     "when": [
       "h2",
       "ol",
@@ -797,6 +795,7 @@
     ],
     "requirements": [
       "p",
+      "ol",
       "li",
       "p"
     ],
@@ -874,6 +873,7 @@
       "p"
     ],
     "design": [
+      "ol",
       "ol",
       "li",
       "li",
@@ -971,6 +971,7 @@
     ],
     "quickly": [
       "ol",
+      "ol",
       "li",
       "p",
       "li",
@@ -986,8 +987,14 @@
       "li",
       "p"
     ],
-    "design\n\n\ndeployment.": [
-      "ol"
+    "deployment": [
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
+      "p",
+      "strong"
     ],
     "before": [
       "ol",
@@ -999,14 +1006,6 @@
       "ol",
       "li",
       "p"
-    ],
-    "deployment": [
-      "ol",
-      "li",
-      "li",
-      "p",
-      "p",
-      "strong"
     ],
     "exact": [
       "ol",
@@ -1028,8 +1027,11 @@
       "li",
       "p"
     ],
-    "requirements\n\n\nperiodically.": [
-      "ol"
+    "periodically": [
+      "ol",
+      "li",
+      "p",
+      "strong"
     ],
     "specifies": [
       "ol",
@@ -1092,15 +1094,21 @@
       "ol",
       "li",
       "p",
+      "ul",
+      "ul",
       "li",
       "li",
       "ol",
       "li",
       "p",
+      "ul",
+      "ul",
       "li",
       "li",
       "ol",
       "li",
+      "ul",
+      "ul",
       "li",
       "li"
     ],
@@ -1112,10 +1120,7 @@
       "li",
       "p"
     ],
-    "quickly\n\n\nincident": [
-      "ol"
-    ],
-    "response": [
+    "incident": [
       "ol",
       "ol",
       "li",
@@ -1124,7 +1129,8 @@
       "p",
       "strong"
     ],
-    "incident": [
+    "response": [
+      "ol",
       "ol",
       "li",
       "li",
@@ -1234,11 +1240,6 @@
       "li",
       "p"
     ],
-    "periodically": [
-      "li",
-      "p",
-      "strong"
-    ],
     "how": [
       "h2",
       "h2"
@@ -1293,6 +1294,7 @@
       "li",
       "p",
       "ul",
+      "ul",
       "li",
       "li",
       "code",
@@ -1303,11 +1305,13 @@
       "p",
       "p",
       "ul",
+      "ul",
       "li",
       "li",
       "code",
       "ol",
       "li",
+      "ul",
       "ul",
       "li",
       "li",
@@ -1318,8 +1322,10 @@
       "li",
       "p"
     ],
-    "used\n\n\nverify": [
-      "ol"
+    "used": [
+      "ol",
+      "li",
+      "p"
     ],
     "maintained": [
       "ol",
@@ -1371,10 +1377,6 @@
       "li",
       "p"
     ],
-    "used": [
-      "li",
-      "p"
-    ],
     "fix": [
       "h2"
     ],
@@ -1417,7 +1419,7 @@
       "li",
       "p"
     ],
-    "ebs)": [
+    "ebs": [
       "ol",
       "li",
       "p"
@@ -1507,10 +1509,13 @@
       "li",
       "p"
     ],
-    "unmounted\n\n\nopen": [
-      "ol"
+    "unmounted": [
+      "ol",
+      "li",
+      "p"
     ],
     "open": [
+      "ol",
       "ol",
       "li",
       "li",
@@ -1582,15 +1587,6 @@
       "ol",
       "li"
     ],
-    "unmounted": [
-      "li",
-      "p"
-    ],
-    "cli\nec2": [
-      "ul",
-      "ul",
-      "ul"
-    ],
     "amazon": [
       "ul",
       "li",
@@ -1599,8 +1595,10 @@
       "ul",
       "li"
     ],
-    "cli\nnew": [
-      "ul"
+    "new": [
+      "ul",
+      "li",
+      "code"
     ],
     "ec2snapshot": [
       "ul",
@@ -1629,15 +1627,13 @@
       "ul",
       "li"
     ],
-    "powershell.": [
+    "powershell": [
+      "ul",
+      "li",
       "ul",
       "li",
       "ul",
       "li"
-    ],
-    "new": [
-      "li",
-      "code"
     ],
     "encryption": [
       "ol",
@@ -1656,6 +1652,7 @@
       "p"
     ],
     "encrypted": [
+      "ol",
       "ol",
       "ol",
       "ol",
@@ -1706,10 +1703,8 @@
       "li",
       "p"
     ],
-    "encrypted\n\n\ncopy": [
-      "ol"
-    ],
     "copy": [
+      "ol",
       "ol",
       "ol",
       "li",
@@ -1719,6 +1714,7 @@
       "p",
       "p",
       "strong",
+      "ul",
       "ul",
       "ul",
       "li",
@@ -1829,9 +1825,6 @@
       "li",
       "p"
     ],
-    "cli\ncopy": [
-      "ul"
-    ],
     "view": [
       "ol",
       "ol",
@@ -1893,14 +1886,8 @@
       "li",
       "code"
     ],
-    "cli\nget": [
-      "ul"
-    ],
-    "powershell": [
-      "ul",
-      "li"
-    ],
     "get": [
+      "ul",
       "li",
       "code"
     ]

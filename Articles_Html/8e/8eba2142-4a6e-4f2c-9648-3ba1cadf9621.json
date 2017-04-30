@@ -1,76 +1,68 @@
 {
   "id": "8eba2142-4a6e-4f2c-9648-3ba1cadf9621",
-  "checksum": "b6fa3aa101a2890b223c720a31f2514e",
+  "checksum": "1e744d9e5561275ec8e47497a874c041",
   "words": {
-    "applies": [
-      "h1"
-    ],
-    "to": [
-      "h1",
-      "h1",
-      "p",
-      "p",
-      "p",
-      "p",
-      "ol",
-      "ol",
-      "ol",
-      "ol",
-      "ol",
-      "ol",
-      "ol",
-      "ol",
-      "ol",
+    "what": [
+      "h2",
       "ol",
       "li",
-      "p",
-      "li",
-      "li",
-      "li",
-      "li",
-      "li",
-      "li",
-      "li",
-      "li",
-      "li",
-      "p",
-      "ul",
-      "ul",
-      "ul",
-      "ul",
-      "ul",
-      "ul",
-      "ul",
-      "ul",
-      "li",
-      "li",
-      "p",
-      "p",
-      "li",
-      "li",
-      "li",
-      "li",
-      "li",
-      "li",
-      "p",
-      "p",
-      "p",
-      "p",
-      "p",
       "p"
     ],
-    "php": [
-      "ul",
-      "li"
-    ],
-    "what": [
-      "h1",
+    "to": [
+      "h2",
+      "p",
+      "p",
+      "p",
+      "p",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
       "ol",
       "li",
+      "p",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "p",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "li",
+      "p",
+      "p",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "li",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
       "p"
     ],
     "do": [
-      "h1"
+      "h2"
     ],
     "force": [
       "p",
@@ -400,7 +392,6 @@
       "li",
       "p",
       "p",
-      "strong",
       "li",
       "p"
     ],
@@ -469,7 +460,7 @@
       "p"
     ],
     "why": [
-      "h1"
+      "h2"
     ],
     "forcing": [
       "p",
@@ -662,7 +653,7 @@
       "p"
     ],
     "how": [
-      "h1"
+      "h2"
     ],
     "follow": [
       "p"
@@ -978,8 +969,7 @@
       "li",
       "li",
       "p",
-      "p",
-      "strong"
+      "p"
     ],
     "uses": [
       "ol",
@@ -1206,8 +1196,7 @@
       "p",
       "p",
       "p",
-      "p",
-      "strong"
+      "p"
     ],
     "mechanisms": [
       "ol",
@@ -1925,7 +1914,10 @@
       "li",
       "p",
       "p",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "controlled": [
       "ol",
@@ -2143,8 +2135,7 @@
       "li",
       "ul",
       "li",
-      "p",
-      "strong"
+      "p"
     ],
     "factor": [
       "ol",
@@ -2156,8 +2147,7 @@
       "li",
       "li",
       "p",
-      "p",
-      "strong"
+      "p"
     ],
     "supports": [
       "ol",
@@ -2240,6 +2230,50 @@
       "li",
       "p"
     ],
+    "code": [
+      "h2"
+    ],
+    "examples": [
+      "h2"
+    ],
+    "c#": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "java": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "scala": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "vulnerabilities": [
+      "h2"
+    ],
+    "cross": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "request": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "forgery": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "csrf": [
+      "ul",
+      "li",
+      "a"
+    ],
     "reauthentication": [
       "title"
     ],
@@ -2251,5 +2285,22 @@
     ]
   },
   "tags": {},
-  "links": []
+  "links": [
+    {
+      "href": "ae289022-d611-4fe4-b177-45066a398da8",
+      "text": "C#"
+    },
+    {
+      "href": "84fd606b-e2f2-4c48-9c6e-6b5e780c6163",
+      "text": "Java"
+    },
+    {
+      "href": "479b9ff4-f0fb-4870-8929-8b63b2b7d0b3",
+      "text": "Scala"
+    },
+    {
+      "href": "62f78eb2-9eba-484c-ade3-7b54c2df9e5a",
+      "text": "Cross-Site Request Forgery (CSRF)"
+    }
+  ]
 }

@@ -6,7 +6,7 @@
 </p><ol>
 <li> <strong>Determine the packages for which you are authorizing access.</strong> Retrieve their user ID (UID) with a call to <em>Binder.getCallingUid()</em>. Take special care to call this method from within the application itself, and store the UIDs in a location accessible from the service.</li>
 <li> <strong>When a bound service invokes a method in your application, capture the UID of the calling service.</strong> Doing so can be tricky, as many programmers do this in the <em>onBind()</em> method of the application’s service, thinking that the <em>Binder.getCallingUid()</em> method will return the remote process UID. (It does not, because <em>onBind()</em> is not remotely called.) Instead, place this call in an Android Interface Definition Language remotely accessible service, or override the <em>sendMessageAtTime(Message m, long l)</em> method in your bound service’s handler instance to obtain the calling UID.</li>
-<li> <strong>Validate the UID.</strong> Check the UID against those you have used <em>getPackageManager().checkSignatures(UID1, UID2)</em> to authorize. Use the return to decide whether the remote application should be allowed access.  The return is &gt;= 0 if the signatures match or &lt; 0 if they do not.  </li>
+<li> <strong>Validate the UID.</strong> Check the UID against those you have used <em>getPackageManager().checkSignatures(UID1, UID2)</em> to authorize. Use the return to decide whether the remote application should be allowed access.  The return is &amp;gt;= 0 if the signatures match or &amp;lt; 0 if they do not.  </li>
 </ol><h2>Problem Example</h2><p>As the MyApp developer, you are using a cloud service to access Google application programming interfaces (APIs). You configure your Android applications to automatically bind to the service and use <em>AccountManager</em> to generate a token and log in to the API service.
 </p><p>
 All works flawlessly, but you discover that other applications can piggyback on your service with a few lines of code:
@@ -32,11 +32,11 @@ am.getAuthToken(account, "Manage your tasks”, null,  ref, new GetAuthCallback(
 </pre><p>
 You want to limit access to your service if for no other reason than to require a subscription. Allowing anyone to bind freely and access the service will not work.
 </p>
-<h2>Solution Example</h2><p>To authenticate application access to the MyApp service, you can first capture the sending application’s UID by overriding the <em>sendMessageAtTime()</em> method in the handler instance for the bound service. In this method, call <em>int uid = Binder.getCallingUid()</em>. Next, add a call to <em>checkSignatures()</em> with this UID and the one that is authorized access. If the <em>checkSignatures()</em> method does not return a match (&lt;0), set the incoming message’s <em>arg1</em> field  = -1, and use this in the next method to determine whether this message should be accepted:
+<h2>Solution Example</h2><p>To authenticate application access to the MyApp service, you can first capture the sending application’s UID by overriding the <em>sendMessageAtTime()</em> method in the handler instance for the bound service. In this method, call <em>int uid = Binder.getCallingUid()</em>. Next, add a call to <em>checkSignatures()</em> with this UID and the one that is authorized access. If the <em>checkSignatures()</em> method does not return a match (&amp;lt;0), set the incoming message’s <em>arg1</em> field  = -1, and use this in the next method to determine whether this message should be accepted:
 </p><pre>@Override 
 public boolean sendMessageAtTime(Message incoming, long l) {
 int uid = Binder.getCallingUid();
-if (getPackageManager().checkSignatures(uid, 10514)&lt;=0) {
+if (getPackageManager().checkSignatures(uid, 10514)&amp;lt;=0) {
 incoming.arg1=-1;
 }
 else {

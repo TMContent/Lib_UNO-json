@@ -9,3 +9,13 @@
 <li><strong>Use /dev/urandom on Unix/Linux.</strong> On Unix/Linux platforms, update all code that uses PRNGs for cryptography to use /dev/urandom. Update each piece of this code to open /dev/urandom as a file and read the required amount of bytes to use as the pseudo-random number.</li>
 <li><strong>Use the OS PRNG on Windows.</strong> On Windows platforms, update all code that uses PRNGs for cryptography to use OS APIs. Update each piece of code to call the GetRandom() function from the CAPICOM.Utilities.The first parameter to the GetRandom() function is the amount of bytes of random data that are needed.</li>
 </ol>
+<h2>Code Examples</h2>
+<ul>
+<li><a href="c38d8837-682c-4b0b-bde3-3530053fb1c0">PHP</a></li>
+<li><a href="603cc670-a592-486e-8e85-629f2d9e531e">Java</a></li>
+<li><a href="d823dbcc-5629-419b-b39b-9e3b89136146">Ruby</a></li>
+</ul>
+<h2>Vulnerabilities</h2>
+<ul>
+<li><a href="79e3c551-71ae-4120-8542-a6f90823ede9">Insecure Randomness</a></li>
+</ul>

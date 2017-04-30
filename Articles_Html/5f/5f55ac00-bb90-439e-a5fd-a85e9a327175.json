@@ -593,15 +593,27 @@
     "itemid": [
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "pre",
       "pre",
       "code",
+      "code",
+      "li",
+      "pre",
       "code"
     ],
     "qty": [
       "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "pre",
+      "pre",
+      "code",
+      "code",
       "li",
       "pre",
       "code"
@@ -631,7 +643,7 @@
       "pre",
       "code"
     ],
-    "customer,": [
+    "customer": [
       "ol",
       "li",
       "pre",
@@ -655,13 +667,7 @@
       "pre",
       "code"
     ],
-    "custid,": [
-      "ol",
-      "li",
-      "pre",
-      "code"
-    ],
-    "qty;": [
+    "custid": [
       "ol",
       "ol",
       "li",
@@ -677,8 +683,27 @@
       "pre",
       "code"
     ],
-    "placeorder\n\n\n\nassign": [
-      "ol"
+    "placeorder": [
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "pre",
+      "code",
+      "li",
+      "li",
+      "p",
+      "pre",
+      "code"
+    ],
+    "assign": [
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
+      "p",
+      "strong"
     ],
     "permissions": [
       "ol",
@@ -704,14 +729,6 @@
       "li",
       "p"
     ],
-    "assign": [
-      "ol",
-      "li",
-      "li",
-      "p",
-      "p",
-      "strong"
-    ],
     "above": [
       "ol",
       "li",
@@ -721,18 +738,6 @@
       "ol",
       "li",
       "p"
-    ],
-    "placeorder": [
-      "ol",
-      "ol",
-      "li",
-      "pre",
-      "code",
-      "li",
-      "li",
-      "p",
-      "pre",
-      "code"
     ],
     "deny": [
       "ol",
@@ -769,6 +774,7 @@
     ],
     "myapp": [
       "ol",
+      "ol",
       "li",
       "li",
       "pre",
@@ -782,8 +788,11 @@
       "pre",
       "code"
     ],
-    "myapp\n\n\n\ncall": [
-      "ol"
+    "call": [
+      "ol",
+      "li",
+      "p",
+      "strong"
     ],
     "be": [
       "ol",
@@ -798,7 +807,8 @@
     "java": [
       "ol",
       "li",
-      "p"
+      "p",
+      "title"
     ],
     "connection": [
       "ol",
@@ -826,7 +836,7 @@
       "code",
       "code"
     ],
-    "myappgetdbconnection();": [
+    "myappgetdbconnection": [
       "ol",
       "li",
       "pre",
@@ -844,13 +854,13 @@
       "pre",
       "code"
     ],
-    "cnpreparestatement(\"exec": [
+    "cnpreparestatementexec": [
       "ol",
       "li",
       "pre",
       "code"
     ],
-    "placeorder?,": [
+    "placeorder?": [
       "ol",
       "li",
       "pre",
@@ -858,41 +868,27 @@
     ],
     "?": [
       "ol",
+      "ol",
+      "li",
       "li",
       "pre",
+      "pre",
+      "code",
       "code"
     ],
-    "?;\");": [
+    "stsetint1": [
       "ol",
       "li",
       "pre",
       "code"
     ],
-    "stsetint(1,": [
+    "stsetint2": [
       "ol",
       "li",
       "pre",
       "code"
     ],
-    "custid;": [
-      "ol",
-      "li",
-      "pre",
-      "code"
-    ],
-    "stsetint(2,": [
-      "ol",
-      "li",
-      "pre",
-      "code"
-    ],
-    "itemid;": [
-      "ol",
-      "li",
-      "pre",
-      "code"
-    ],
-    "stsetint(3,": [
+    "stsetint3": [
       "ol",
       "li",
       "pre",
@@ -910,16 +906,11 @@
       "pre",
       "code"
     ],
-    "stexecutequery();": [
+    "stexecutequery": [
       "ol",
       "li",
       "pre",
       "code"
-    ],
-    "call": [
-      "li",
-      "p",
-      "strong"
     ]
   },
   "tags": {},

@@ -22,11 +22,11 @@
 <p>If in the previous code example, the SSN value is captured by an ASP.NET TextBox control, you can constrain its input by using a <code>RegularExpressionValidator</code> control as shown in the following.</p>
 <pre><code>&lt;%@ language=&quot;C#&quot; %&gt;
 &lt;form id=&quot;form1&quot; runat=&quot;server&quot;&gt;
-    &lt;asp:TextBox ID=&quot;SSN&quot; runat=&quot;server&quot;/&gt;
-    &lt;asp:RegularExpressionValidator ID=&quot;regexpSSN&quot; runat=&quot;server&quot;         
-         ErrorMessage=&quot;Incorrect SSN Number&quot; 
-         ControlToValidate=&quot;SSN&quot;         
-         ValidationExpression=&quot;^\d{3}-\d{2}-\d{4}$&quot; /&gt;
+	&lt;asp:TextBox ID=&quot;SSN&quot; runat=&quot;server&quot;/&gt;
+	&lt;asp:RegularExpressionValidator ID=&quot;regexpSSN&quot; runat=&quot;server&quot;         
+		 ErrorMessage=&quot;Incorrect SSN Number&quot; 
+		 ControlToValidate=&quot;SSN&quot;         
+		 ValidationExpression=&quot;^\d{3}-\d{2}-\d{4}$&quot; /&gt;
 &lt;/form&gt;  
 </code></pre>
 <p>If the SSN input is from another source, such as an HTML control, a query string parameter, or a cookie, you can constrain it by using the <code>Regex</code> class from the <code>System.Text.RegularExpressions</code> namespace. The following example assumes that the input is obtained from a cookie.</p>
@@ -34,11 +34,11 @@
 
 if (Regex.IsMatch(Request.Cookies[&quot;SSN&quot;], &quot;^\d{3}-\d{2}-\d{4}$&quot;))
 {
-    // access the database
+	// access the database
 }
 else
 {
-    // handle the bad input
+	// handle the bad input
 }  
 </code></pre>
 <h3>Constrain Input in Data Access Code</h3>
@@ -53,21 +53,21 @@ using System.Text.RegularExpressions;
 
 public void CreateNewUserAccount(string name, string password)
 {
-    // Check name contains only lower case or upper case letters, 
-    // the apostrophe, a dot, or white space. Also check it is 
-    // between 1 and 40 characters long
-    if ( !Regex.IsMatch(userIDTxt.Text, @&quot;^[a-zA-Z'./s]{1,40}$&quot;))
-      throw new FormatException(&quot;Invalid name format&quot;);
+	// Check name contains only lower case or upper case letters, 
+	// the apostrophe, a dot, or white space. Also check it is 
+	// between 1 and 40 characters long
+	if ( !Regex.IsMatch(userIDTxt.Text, @&quot;^[a-zA-Z'./s]{1,40}$&quot;))
+	  throw new FormatException(&quot;Invalid name format&quot;);
 
-    // Check password contains at least one digit, one lower case 
-    // letter, one uppercase letter, and is between 8 and 10 
-    // characters long
-    if ( !Regex.IsMatch(passwordTxt.Text, 
-        @&quot;^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,10}$&quot; ))
-      throw new FormatException(&quot;Invalid password format&quot;);
+	// Check password contains at least one digit, one lower case 
+	// letter, one uppercase letter, and is between 8 and 10 
+	// characters long
+	if ( !Regex.IsMatch(passwordTxt.Text, 
+		@&quot;^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,10}$&quot; ))
+	  throw new FormatException(&quot;Invalid password format&quot;);
 
-    // Perform data access logic (using type safe parameters)
-    ...
+	// Perform data access logic (using type safe parameters)
+	...
 }
 </code></pre>
 <h3>Step 2. Use Parameters with Stored Procedures</h3>
@@ -80,7 +80,7 @@ using (SqlConnection connection = new SqlConnection(connectionString))
 {
   DataSet userDataset = new DataSet();
   SqlDataAdapter myCommand = new SqlDataAdapter( 
-             &quot;LoginStoredProcedure&quot;, connection);
+			 &quot;LoginStoredProcedure&quot;, connection);
   myCommand.SelectCommand.CommandType = CommandType.StoredProcedure;
   myCommand.SelectCommand.Parameters.Add(&quot;@au_id&quot;, SqlDbType.VarChar, 11);
   myCommand.SelectCommand.Parameters[&quot;@au_id&quot;].Value = SSN.Text;
@@ -104,8 +104,8 @@ using (SqlConnection connection = new SqlConnection(connectionString))
 {
   DataSet userDataset = new DataSet();
   SqlDataAdapter myDataAdapter = new SqlDataAdapter(
-         &quot;SELECT au_lname, au_fname FROM Authors WHERE au_id = @au_id&quot;, 
-         connection);                
+		 &quot;SELECT au_lname, au_fname FROM Authors WHERE au_id = @au_id&quot;, 
+		 connection);                
   myCommand.SelectCommand.Parameters.Add(&quot;@au_id&quot;, SqlDbType.VarChar, 11);
   myCommand.SelectCommand.Parameters[&quot;@au_id&quot;].Value = SSN.Text;
   myDataAdapter.Fill(userDataset);
@@ -119,17 +119,17 @@ using System.Data.SqlClient;
 using (SqlConnection connection = new SqlConnection(connectionString))
 {
   SqlDataAdapter dataAdapter = new SqlDataAdapter(
-       &quot;SELECT CustomerID INTO #Temp1 FROM Customers &quot; +
-       &quot;WHERE CustomerID &gt; @custIDParm; SELECT CompanyName FROM Customers &quot; +
-       &quot;WHERE Country = @countryParm and CustomerID IN &quot; +
-       &quot;(SELECT CustomerID FROM #Temp1);&quot;,
-       connection);
+	   &quot;SELECT CustomerID INTO #Temp1 FROM Customers &quot; +
+	   &quot;WHERE CustomerID &gt; @custIDParm; SELECT CompanyName FROM Customers &quot; +
+	   &quot;WHERE Country = @countryParm and CustomerID IN &quot; +
+	   &quot;(SELECT CustomerID FROM #Temp1);&quot;,
+	   connection);
   SqlParameter custIDParm = dataAdapter.SelectCommand.Parameters.Add(
-                                          &quot;@custIDParm&quot;, SqlDbType.NChar, 5);
+										  &quot;@custIDParm&quot;, SqlDbType.NChar, 5);
   custIDParm.Value = customerID.Text;
 
   SqlParameter countryParm = dataAdapter.SelectCommand.Parameters.Add(
-                                      &quot;@countryParm&quot;, SqlDbType.NVarChar, 15);
+									  &quot;@countryParm&quot;, SqlDbType.NVarChar, 15);
   countryParm.Value = country.Text;
 
   connection.Open();

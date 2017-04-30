@@ -1,6 +1,6 @@
 {
   "id": "aedda6cc-1a70-4f07-8dde-f68bc1e99f5f",
-  "checksum": "b192431825e1b61fb4e327c5e9e5910f",
+  "checksum": "84dcfb23f65a1a4506fd5ee486f27ce4",
   "words": {
     "description": [
       "h1"
@@ -9,15 +9,6 @@
       "p",
       "p",
       "p",
-      "ul",
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a",
-      "li",
-      "a",
       "title"
     ],
     "site": [
@@ -30,15 +21,6 @@
       "p",
       "p",
       "p",
-      "ul",
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a",
-      "li",
-      "a",
       "title"
     ],
     "history": [
@@ -46,31 +28,21 @@
       "p",
       "p",
       "p",
-      "ul",
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a",
-      "li",
-      "a",
       "title"
     ],
     "manipulation": [
       "p",
-      "ul",
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a",
-      "li",
-      "a",
       "title"
     ],
-    "xshm)": [
+    "xshm": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
       "p"
     ],
     "occurs": [
@@ -179,7 +151,13 @@
     "in": [
       "p",
       "p",
-      "p"
+      "ul",
+      "li",
+      "a",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "leaking": [
       "p"
@@ -243,16 +221,6 @@
       "p"
     ],
     "sensitive": [
-      "p",
-      "p"
-    ],
-    "xshm": [
-      "p",
-      "p",
-      "p",
-      "p",
-      "p",
-      "p",
       "p",
       "p"
     ],
@@ -358,7 +326,7 @@
       "p",
       "p"
     ],
-    "may": [
+    "might": [
       "p"
     ],
     "gain": [
@@ -374,8 +342,7 @@
       "p"
     ],
     "specific": [
-      "p",
-      "h1"
+      "p"
     ],
     "url": [
       "p",
@@ -483,7 +450,7 @@
     "scripting": [
       "p"
     ],
-    "xss)": [
+    "xss": [
       "p"
     ],
     "request": [
@@ -492,7 +459,7 @@
     "forgery": [
       "p"
     ],
-    "csrf)": [
+    "csrf": [
       "p"
     ],
     "achieve": [
@@ -505,19 +472,40 @@
       "h1"
     ],
     "include": [
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "unique": [
       "p",
-      "p"
+      "ul",
+      "li",
+      "a",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "tokens": [
       "p",
-      "p"
+      "ul",
+      "li",
+      "a",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "redirects": [
       "p",
-      "p"
+      "ul",
+      "li",
+      "a",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "application": [
       "h1"
@@ -539,25 +527,13 @@
       "p"
     ],
     "are": [
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "included": [
-      "p"
-    ],
-    "technologies": [
-      "h1"
-    ],
-    "aspnet": [
-      "ul",
-      "li",
-      "a"
-    ],
-    "java": [
-      "ul",
-      "li",
-      "a"
-    ],
-    "php": [
+      "p",
       "ul",
       "li",
       "a"
@@ -566,16 +542,12 @@
   "tags": {},
   "links": [
     {
-      "href": "1fd3358c-722f-4e61-899f-26b7818b940c",
-      "text": "ASP.NET Cross-Site History Manipulation"
+      "href": "00000000-0000-0000-0000-0000003fde13",
+      "text": "Include Unique Tokens in Redirects"
     },
     {
-      "href": "3eb97a46-1f72-4cb3-9695-7cad04333206",
-      "text": "Java Cross-Site History Manipulation"
-    },
-    {
-      "href": "1513ff93-156b-4062-bbcb-13bae385136c",
-      "text": "PHP Cross-Site History Manipulation"
+      "href": "00000000-0000-0000-0000-0000007b3c6e",
+      "text": "Unique Tokens Are Included in Redirects"
     }
   ]
 }

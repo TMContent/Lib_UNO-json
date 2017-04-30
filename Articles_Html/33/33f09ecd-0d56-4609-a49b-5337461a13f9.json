@@ -1,6 +1,6 @@
 {
   "id": "33f09ecd-0d56-4609-a49b-5337461a13f9",
-  "checksum": "714ee79dce180da89448f6a325b8a50b",
+  "checksum": "551a3f0bbdbe555f6f557354bb9fe114",
   "words": {
     "description": [
       "h1"
@@ -17,9 +17,6 @@
       "p",
       "p",
       "p",
-      "ul",
-      "li",
-      "a",
       "title"
     ],
     "injection": [
@@ -32,9 +29,6 @@
       "p",
       "p",
       "p",
-      "ul",
-      "li",
-      "a",
       "title"
     ],
     "vulnerabilities": [
@@ -63,7 +57,10 @@
       "p",
       "p",
       "p",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "concatenated": [
       "p"
@@ -245,7 +242,7 @@
     "attacks": [
       "p"
     ],
-    "may": [
+    "might": [
       "p"
     ],
     "allow": [
@@ -347,15 +344,30 @@
       "p"
     ],
     "validate": [
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "all": [
       "p",
-      "p"
+      "ul",
+      "li",
+      "a",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "input": [
       "p",
-      "p"
+      "ul",
+      "li",
+      "a",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "check": [
       "h1",
@@ -397,13 +409,7 @@
     "unvalidated": [
       "p"
     ],
-    "specific": [
-      "h1"
-    ],
-    "technology": [
-      "h1"
-    ],
-    "php": [
+    "validated": [
       "ul",
       "li",
       "a"
@@ -412,8 +418,12 @@
   "tags": {},
   "links": [
     {
-      "href": "09e95598-89b6-43b9-b910-a2f0100648ce",
-      "text": "PHP XQuery Injection"
+      "href": "11a15f3a-7fe8-4e4c-be5e-309ab7227b3d",
+      "text": "Validate All Input"
+    },
+    {
+      "href": "8d8c24b0-096b-43f4-9391-9b293313a0e8",
+      "text": "All Input Is Validated"
     }
   ]
 }

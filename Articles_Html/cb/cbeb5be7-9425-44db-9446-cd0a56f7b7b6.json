@@ -1,6 +1,6 @@
 {
   "id": "cbeb5be7-9425-44db-9446-cd0a56f7b7b6",
-  "checksum": "526fd49de426cf2f87b64aeeee5606f1",
+  "checksum": "1f33c1f18e3c8ccc2e9ec0f0028d5698",
   "words": {
     "applies": [
       "h2"
@@ -74,7 +74,7 @@
       "p",
       "title"
     ],
-    "actioncontroller:requestforgeryprotection": [
+    "actioncontrollerrequestforgeryprotection": [
       "p",
       "code"
     ],
@@ -85,7 +85,10 @@
       "p",
       "ol",
       "li",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "and": [
       "p",
@@ -123,6 +126,9 @@
       "li",
       "p",
       "strong",
+      "ul",
+      "li",
+      "a",
       "title"
     ],
     "tokens": [
@@ -131,6 +137,7 @@
       "p",
       "ol",
       "ol",
+      "ol",
       "li",
       "p",
       "strong",
@@ -139,6 +146,9 @@
       "p",
       "p",
       "strong",
+      "ul",
+      "li",
+      "a",
       "title"
     ],
     "in": [
@@ -164,7 +174,10 @@
       "li",
       "p",
       "p",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "http": [
       "p",
@@ -174,7 +187,10 @@
       "ol",
       "li",
       "p",
-      "strong"
+      "strong",
+      "ul",
+      "li",
+      "a"
     ],
     "requests": [
       "p",
@@ -189,6 +205,9 @@
       "strong",
       "li",
       "p",
+      "ul",
+      "li",
+      "a",
       "title"
     ],
     "when": [
@@ -263,8 +282,22 @@
     "forgery": [
       "p"
     ],
-    "csrf).": [
-      "p"
+    "csrf": [
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "ol",
+      "ol",
+      "li",
+      "p",
+      "li",
+      "p",
+      "title"
     ],
     "why": [
       "h2"
@@ -326,22 +359,6 @@
       "li",
       "p",
       "p"
-    ],
-    "csrf": [
-      "p",
-      "p",
-      "p",
-      "p",
-      "p",
-      "p",
-      "p",
-      "ol",
-      "ol",
-      "li",
-      "p",
-      "li",
-      "p",
-      "title"
     ],
     "compromise": [
       "p"
@@ -679,6 +696,7 @@
     ],
     "perform": [
       "p",
+      "ol",
       "li",
       "p",
       "strong"
@@ -718,7 +736,7 @@
     "encryption": [
       "p"
     ],
-    "https),": [
+    "https": [
       "p"
     ],
     "will": [
@@ -830,7 +848,7 @@
     "scripting": [
       "p"
     ],
-    "xss)": [
+    "xss": [
       "p"
     ],
     "flaw": [
@@ -890,7 +908,8 @@
       "p"
     ],
     "guideline": [
-      "p"
+      "p",
+      "h2"
     ],
     "protects": [
       "p"
@@ -989,7 +1008,13 @@
     "rails": [
       "p"
     ],
-    "ror)": [
+    "ror": [
+      "p",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
       "p"
     ],
     "module": [
@@ -1008,6 +1033,7 @@
       "p"
     ],
     "identify": [
+      "ol",
       "ol",
       "ol",
       "ol",
@@ -1068,8 +1094,10 @@
       "li",
       "p"
     ],
-    "search\n\n\nidentify": [
-      "ol"
+    "search": [
+      "ol",
+      "li",
+      "p"
     ],
     "statements": [
       "ol",
@@ -1088,6 +1116,7 @@
     ],
     "add": [
       "ol",
+      "ol",
       "li",
       "p",
       "li",
@@ -1099,8 +1128,16 @@
       "li",
       "p"
     ],
-    "spreadsheet\n\n\nchoose": [
-      "ol"
+    "spreadsheet": [
+      "ol",
+      "li",
+      "p"
+    ],
+    "choose": [
+      "ol",
+      "li",
+      "p",
+      "strong"
     ],
     "method": [
       "ol",
@@ -1131,6 +1168,7 @@
     "default": [
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "p",
@@ -1146,14 +1184,6 @@
     "supplied": [
       "ol",
       "li",
-      "p"
-    ],
-    "ror": [
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "p",
       "p"
     ],
     "turned": [
@@ -1234,9 +1264,6 @@
       "p",
       "li",
       "p"
-    ],
-    "default\n\n\nadd": [
-      "ol"
     ],
     "name": [
       "ol",
@@ -1321,9 +1348,6 @@
       "li",
       "p"
     ],
-    "tokens\n\n\nperform": [
-      "ol"
-    ],
     "validation": [
       "ol",
       "li",
@@ -1364,21 +1388,13 @@
       "ol",
       "li",
       "p"
-    ],
-    "search": [
-      "li",
-      "p"
-    ],
-    "spreadsheet": [
-      "li",
-      "p"
-    ],
-    "choose": [
-      "li",
-      "p",
-      "strong"
     ]
   },
   "tags": {},
-  "links": []
+  "links": [
+    {
+      "href": "fdb460e6-5d18-4e35-a093-4b260155d79e",
+      "text": "Include Unique Tokens in HTTP Requests"
+    }
+  ]
 }

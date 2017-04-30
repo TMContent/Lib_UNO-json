@@ -1,9 +1,9 @@
 {
   "id": "b2211d6a-c90a-4a42-8586-b364c3630d2c",
-  "checksum": "91a2c6d2a3ac48c25e0ac1be96edb0c3",
+  "checksum": "1b0a5b65be39357e63face9c3a2a5217",
   "words": {
     "description": [
-      "h1"
+      "h2"
     ],
     "a": [
       "p",
@@ -22,12 +22,6 @@
       "p",
       "p",
       "p",
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a",
       "title"
     ],
     "information": [
@@ -41,23 +35,11 @@
       "p",
       "p",
       "p",
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a",
       "title"
     ],
     "leak": [
       "p",
       "p",
-      "ul",
-      "ul",
-      "li",
-      "a",
-      "li",
-      "a",
       "title"
     ],
     "occurs": [
@@ -105,7 +87,13 @@
       "p",
       "p",
       "p",
-      "h1"
+      "ul",
+      "li",
+      "a",
+      "h2",
+      "ul",
+      "li",
+      "a"
     ],
     "or": [
       "p"
@@ -200,7 +188,19 @@
       "p",
       "p",
       "p",
-      "p"
+      "p",
+      "ul",
+      "ul",
+      "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "a",
+      "li",
+      "a",
+      "li",
+      "a"
     ],
     "file": [
       "p"
@@ -340,7 +340,7 @@
       "p"
     ],
     "impact": [
-      "h1"
+      "h2"
     ],
     "can": [
       "p",
@@ -349,7 +349,13 @@
     "used": [
       "p",
       "p",
-      "p"
+      "p",
+      "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "a"
     ],
     "by": [
       "p",
@@ -414,7 +420,10 @@
     ],
     "for": [
       "p",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "example": [
       "p"
@@ -441,7 +450,7 @@
     "tells": [
       "p"
     ],
-    "him": [
+    "them": [
       "p"
     ],
     "at": [
@@ -452,13 +461,16 @@
     ],
     "use": [
       "p",
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "targeting": [
       "p"
     ],
     "countermeasures": [
-      "h1"
+      "h2"
     ],
     "prevent": [
       "p"
@@ -467,7 +479,10 @@
       "p"
     ],
     "handle": [
-      "p"
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "errors": [
       "p",
@@ -475,15 +490,33 @@
     ],
     "simple": [
       "p",
-      "p"
+      "ul",
+      "li",
+      "a",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "error": [
       "p",
-      "p"
+      "ul",
+      "li",
+      "a",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "messages": [
       "p",
-      "p"
+      "ul",
+      "li",
+      "a",
+      "p",
+      "ul",
+      "li",
+      "a"
     ],
     "disable": [
       "p"
@@ -492,8 +525,61 @@
       "p",
       "p"
     ],
+    "exceptions": [
+      "ul",
+      "li",
+      "a",
+      "ul",
+      "ul",
+      "li",
+      "a",
+      "li",
+      "a"
+    ],
+    "global": [
+      "ul",
+      "li",
+      "a",
+      "ul",
+      "li",
+      "a"
+    ],
+    "exception": [
+      "ul",
+      "li",
+      "a",
+      "ul",
+      "li",
+      "a"
+    ],
+    "handlers": [
+      "ul",
+      "li",
+      "a",
+      "ul",
+      "li",
+      "a"
+    ],
+    "display": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "reduce": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "fingerprints": [
+      "ul",
+      "li",
+      "a",
+      "ul",
+      "li",
+      "a"
+    ],
     "check": [
-      "h1",
+      "h2",
       "p"
     ],
     "adequate": [
@@ -509,23 +595,20 @@
       "p"
     ],
     "handled": [
-      "p"
-    ],
-    "disabled": [
-      "p"
-    ],
-    "specific": [
-      "h1"
-    ],
-    "technologies": [
-      "h1"
-    ],
-    "aspnet": [
+      "p",
       "ul",
       "li",
       "a"
     ],
-    "php": [
+    "disabled": [
+      "p"
+    ],
+    "unhandled": [
+      "ul",
+      "li",
+      "a"
+    ],
+    "reduced": [
       "ul",
       "li",
       "a"
@@ -534,12 +617,36 @@
   "tags": {},
   "links": [
     {
-      "href": "d2455286-ddf5-474b-b8c9-7cede24ef31a",
-      "text": "ASP.NET System Information Leak"
+      "href": "00b07659-803d-47c3-a325-777f72688ac7",
+      "text": "Handle Exceptions"
     },
     {
-      "href": "829e3767-afca-4485-9fbb-8c7ab3be3061",
-      "text": "PHP System Information Leak"
+      "href": "0ee60897-0ba8-47a7-8b14-47d17a70f8ee",
+      "text": "Use Global Exception Handlers"
+    },
+    {
+      "href": "6ccf4b69-a4c0-4c08-a2ea-86e704c3ffc2",
+      "text": "Display Simple Error Messages"
+    },
+    {
+      "href": "81d340de-bce8-4ec0-b363-ce0d3043f3d7",
+      "text": "Reduce Application Fingerprints"
+    },
+    {
+      "href": "ccd8e764-32e3-4d4c-8191-6c837ea9b60e",
+      "text": "Exceptions Are Handled"
+    },
+    {
+      "href": "7a4f9032-7abb-409a-b00b-58d8e890c6ea",
+      "text": "Global Exception Handlers Are Used for Unhandled Exceptions"
+    },
+    {
+      "href": "00000000-0000-0000-0000-0000002f7a79",
+      "text": "Simple Error Messages Are Used"
+    },
+    {
+      "href": "f5c4d2da-9a4a-4985-8699-998e00626c92",
+      "text": "Application Fingerprints Are Reduced"
     }
   ]
 }

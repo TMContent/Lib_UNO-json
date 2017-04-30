@@ -8,6 +8,7 @@
       "h1",
       "h2",
       "em",
+      "pre",
       "h2",
       "em"
     ],
@@ -52,6 +53,7 @@
       "p",
       "p",
       "p",
+      "pre",
       "pre",
       "p",
       "p",
@@ -117,7 +119,7 @@
       "ul",
       "li"
     ],
-    "j2ee)": [
+    "j2ee": [
       "ul",
       "li"
     ],
@@ -1044,6 +1046,7 @@
     ],
     "try": [
       "p",
+      "pre",
       "p"
     ],
     "sending": [
@@ -1181,7 +1184,10 @@
       "pre",
       "pre"
     ],
-    "1=1—\rpassword:": [
+    "1=1—": [
+      "pre"
+    ],
+    "password": [
       "pre"
     ],
     "abc": [
@@ -1202,10 +1208,12 @@
       "p",
       "p"
     ],
-    "javasql.sqlexception:": [
+    "javasqlsqlexception": [
       "pre"
     ],
     "syntax": [
+      "pre",
+      "pre",
       "pre",
       "p"
     ],
@@ -1215,8 +1223,24 @@
     "violation": [
       "pre"
     ],
-    "server\r\n\"you": [
+    "server": [
+      "pre",
       "pre"
+    ],
+    "you": [
+      "pre",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p",
+      "p"
     ],
     "have": [
       "pre",
@@ -1225,9 +1249,10 @@
       "p"
     ],
     "your": [
+      "pre",
       "pre"
     ],
-    "syntax\r\ncheck": [
+    "check": [
       "pre"
     ],
     "manual": [
@@ -1236,23 +1261,17 @@
     "corresponds": [
       "pre"
     ],
-    "to\ryour": [
-      "pre"
-    ],
     "mysql": [
       "pre",
       "p",
       "p",
       "p"
     ],
-    "server": [
-      "pre"
-    ],
     "version": [
       "pre",
       "p"
     ],
-    "right\rsyntax": [
+    "right": [
       "pre"
     ],
     "use": [
@@ -1276,9 +1295,6 @@
       "p"
     ],
     "line": [
-      "pre"
-    ],
-    "1\"": [
       "pre"
     ],
     "automatically": [
@@ -1354,6 +1370,7 @@
       "p",
       "p",
       "p",
+      "pre",
       "p",
       "p"
     ],
@@ -1371,6 +1388,7 @@
     ],
     "statement": [
       "p",
+      "pre",
       "pre"
     ],
     "caused": [
@@ -1508,7 +1526,22 @@
       "p",
       "p"
     ],
-    "javalang.nullpointerexception\r\ncom.example.servlet.getprofile.isvalidaccount(getprofile.java:30)\r\ncom.example.servlet.getprofile.decodebase64(getprofile.java:1232)\r\ncom.example.servlet.getprofile.doget(getprofile.java:797)\r\njavax.servlet.http.httpservlet.service(httpservlet.java:690)\r\njavax.servlet.http.httpservlet.service(httpservlet.java:803)": [
+    "javalangnullpointerexception": [
+      "pre"
+    ],
+    "comexampleservletgetprofileisvalidaccountgetprofilejava30": [
+      "pre"
+    ],
+    "comexampleservletgetprofiledecodebase64getprofilejava1232": [
+      "pre"
+    ],
+    "comexampleservletgetprofiledogetgetprofilejava797": [
+      "pre"
+    ],
+    "javaxservlethttphttpservletservicehttpservletjava690": [
+      "pre"
+    ],
+    "javaxservlethttphttpservletservicehttpservletjava803": [
       "pre"
     ],
     "addition": [
@@ -1649,7 +1682,11 @@
       "p",
       "p"
     ],
-    "try\r{\r\nclass.forname(\"com.mysql.jdbc.driver\");\r\nstring": [
+    "{": [
+      "pre",
+      "pre"
+    ],
+    "classfornamecommysqljdbcdriver": [
       "pre"
     ],
     "connectionurl": [
@@ -1660,28 +1697,40 @@
       "pre",
       "pre"
     ],
-    "\"jdbcmysql://localhost:3306/example?\"": [
+    "jdbcmysql//localhost3306/example?": [
       "pre"
     ],
     "+": [
       "pre"
     ],
-    "\"user=root&password=pass\"\r\nconnection": [
+    "user=root&password=pass": [
+      "pre"
+    ],
+    "connection": [
       "pre"
     ],
     "conn": [
       "pre"
     ],
-    "drivermanagergetconnection(connectionurl);\r\nstatement": [
+    "drivermanagergetconnectionconnectionurl": [
       "pre"
     ],
-    "conncreatestatement();\r\n}\r\ncatch": [
+    "conncreatestatement": [
       "pre"
+    ],
+    "}": [
+      "pre",
+      "pre"
+    ],
+    "catch": [
+      "pre",
+      "p",
+      "p"
     ],
     "e": [
       "pre"
     ],
-    "{\rout.println(e.tostring());\r\n}": [
+    "outprintlnetostring": [
       "pre"
     ],
     "note": [
@@ -1947,10 +1996,11 @@
       "pre",
       "pre"
     ],
-    "errorpage=\"errorpagejsp\"": [
+    "errorpage=errorpagejsp": [
       "pre"
     ],
     "%": [
+      "pre",
       "pre"
     ],
     "where": [
@@ -1986,36 +2036,40 @@
     "external": [
       "p"
     ],
-    "iserrorpage=\"true\"": [
+    "iserrorpage=true": [
       "pre"
     ],
-    "%\r\n<html>\r\n<head>\r\n<title>application": [
+    "html": [
       "pre"
     ],
-    "error/title>\r\n</head>": [
+    "head": [
       "pre"
     ],
-    "body>\r\n<h2>application": [
+    "titleapplication": [
       "pre"
     ],
-    "error/h2>\r\n</body>\r\n</html>": [
+    "error/title": [
+      "pre"
+    ],
+    "/head": [
+      "pre"
+    ],
+    "body": [
+      "pre"
+    ],
+    "h2application": [
+      "pre"
+    ],
+    "error/h2": [
+      "pre"
+    ],
+    "/body": [
+      "pre"
+    ],
+    "/html": [
       "pre"
     ],
     "now": [
-      "p",
-      "p"
-    ],
-    "you": [
-      "p",
-      "p",
-      "p",
-      "p",
-      "p",
-      "p",
-      "p",
-      "p",
-      "p",
-      "p",
       "p",
       "p"
     ],
@@ -2094,7 +2148,10 @@
       "p",
       "strong"
     ],
-    "i],": [
+    "i": [
+      "p",
+      "div",
+      "div",
       "p"
     ],
     "fuzzdb": [
@@ -2171,7 +2228,7 @@
     "profile": [
       "p"
     ],
-    "http//www.example.com/getprofile?id=112&username=testuser": [
+    "http//wwwexamplecom/getprofile?id=112&username=testuser": [
       "pre"
     ],
     "changing": [
@@ -2188,7 +2245,7 @@
     "invalid": [
       "p"
     ],
-    "http//www.example.com/getprofile?id=abc&username=testuser": [
+    "http//wwwexamplecom/getprofile?id=abc&username=testuser": [
       "pre"
     ],
     "parameters": [
@@ -2337,10 +2394,6 @@
     "able": [
       "p"
     ],
-    "catch": [
-      "p",
-      "p"
-    ],
     "among": [
       "p"
     ],
@@ -2396,7 +2449,10 @@
     "urls": [
       "p"
     ],
-    "http//www.example.com/getprofile?id=a'+or+1%3d1%23&username=testuser\r\nhttp://www.example.com/getprofile?id=a'%20or%021=1#&username=testuser": [
+    "http//wwwexamplecom/getprofile?id=a'+or+1%3d1%23&username=testuser": [
+      "pre"
+    ],
+    "http//wwwexamplecom/getprofile?id=a'%20or%021=1#&username=testuser": [
       "pre"
     ],
     "escape": [
@@ -2435,8 +2491,9 @@
     "tools": [
       "p"
     ],
-    "fuzzers)": [
-      "p"
+    "fuzzers": [
+      "p",
+      "i"
     ],
     "online": [
       "p"
@@ -2452,7 +2509,7 @@
     "owasp’s": [
       "p"
     ],
-    "ii]": [
+    "ii": [
       "p",
       "div",
       "div",
@@ -2485,9 +2542,6 @@
     ],
     "time": [
       "p"
-    ],
-    "fuzzers": [
-      "i"
     ],
     "conclusions": [
       "h1"
@@ -2568,11 +2622,6 @@
     "messagem": [
       "p"
     ],
-    "i]": [
-      "div",
-      "div",
-      "p"
-    ],
     "guide": [
       "div",
       "div",
@@ -2591,13 +2640,13 @@
       "p",
       "strong"
     ],
-    "http//www.owasp.org/index.php/owasp_testing_guide_appendix_c:_fuzz_vectors": [
+    "http//wwwowasporg/indexphp/owasp_testing_guide_appendix_c_fuzz_vectors": [
       "div",
       "div",
       "p",
       "a"
     ],
-    "http//www.owasp.org/index.php/fuzzing_with_webscarab": [
+    "http//wwwowasporg/indexphp/fuzzing_with_webscarab": [
       "div",
       "div",
       "p",

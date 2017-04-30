@@ -28,10 +28,13 @@
           "Scala Play"
         ],
         "Type": [
-          "Guideline"
+          "How To"
         ],
         "DirectLink": [
           "Protect Session Cookies"
+        ],
+        "Tag": [
+          ""
         ],
         "Author": [
           ""
@@ -48,10 +51,10 @@
       {
         "$": {
           "Sanitized": "false",
-          "DataType": "html"
+          "DataType": "markdown"
         },
         "Data": [
-          "<h1>Applies To</h1>\r\n  <p>Scala and Play Framework 2.1.0+<br /></p>\r\n  <h1>What to Do</h1>\r\n  <p>Protect the confidentiality of session cookies.</p>\r\n  <h1>Why</h1>\r\n  <p>Session cookies are used by an application to identify the session associated with a particular user. Protecting session cookies can help prevent an attacker from hijacking the session and using the application as a legitimate user.</p>\r\n  <h1>When</h1>\r\n  <p>If your application uses cookies to maintain a user's session state, then use this guideline to protect the cookie.</p>\r\n  <h1>How</h1>\r\n  <p>To secure session cookies:</p>\r\n  <ol>\r\n    <li>\r\n      <p>\r\n        <strong>Do not allow users to choose their own session identifiers.&nbsp;</strong>Use the Scala cookie feature to automatically assign random IDs to its sessions. This minimizes the risk of an attacker hijacking another user's session by using the same session ID. To use sessions in Scala, invoke <i>play.api.mvc.Cookie.</i></p>\r\n    </li>\r\n    <li>\r\n      <p>\r\n        <strong>Invalidate the session identifier on login (as well as logout) to ensure session identifiers are not reused.</strong>&nbsp;This is necessary to prevent session hijacking. After the session has been invalidated, make a call to generate a new session identifier.</p>\r\n    </li>\r\n    <li>\r\n      <p />\r\n      <strong>Time-out sessions.&nbsp;</strong>Set an expiration time for sessions. This helps minimize the threat of session hijacking by giving an attacker a smaller window of opportunity. Depending on your application, an appropriate timeout can be anywhere from 10 to 20 minutes.<p /></li>\r\n    <li>\r\n      <p>\r\n        <strong>Allow users to terminate their sessions.&nbsp;</strong>Allowing users to invalidate their sessions reduces the risk of the session being hijacked. Use&nbsp;<i>result.discardingCookies</i>&nbsp;to accomplish this.</p>\r\n    </li>\r\n    <li>\r\n      <p />\r\n      <strong>Ensure cookies are sent over encrypted channels.&nbsp;</strong>Mark cookies sent over SSL as&nbsp;<em>Secure</em>. Use the&nbsp; <em><span style=\"font-style: normal;\">Enable Secure flag on the cookie, setting “application.session.secure=true” in the “application.conf” file</span></em>. Do not send session cookies over unencrypted channels as session hijacking is made much easier.<br /></li>\r\n  </ol>\r\n  <p>\r\n    <strong>Note:</strong>&nbsp;PCI DSS requirements state that sessions that are idle for 15 minutes should be locked automatically and require the user's password to unlock.</p>\r\n  <br />"
+          "## Applies To ##\r\n\r\n* Scala and Play Framework 2.1.0+\r\n\r\n\r\n## What to Do ##\r\n\r\nProtect the confidentiality of session cookies.\r\n\r\n\r\n## Why ##\r\n\r\nSession cookies are used by an application to identify the session associated with a particular user. Protecting session cookies can help prevent an attacker from hijacking the session and using the application as a legitimate user.\r\n\r\n\r\n## When ##\r\n\r\nIf your application uses cookies to maintain a user's session state, then use this guideline to protect the cookie.\r\n\r\n\r\n## How ##\r\n\r\nTo secure session cookies:\r\n\r\n1. **Do not allow users to choose their own session identifiers.** Use the Scala cookie feature to automatically assign random IDs to its sessions. This minimizes the risk of an attacker hijacking another user's session by using the same session ID. To use sessions in Scala, invoke play.api.mvc.Cookie.\r\n\r\n2. **Invalidate the session identifier on login (as well as logout) to ensure session identifiers are not reused.** This is necessary to prevent session hijacking. After the session has been invalidated, make a call to generate a new session identifier.\r\n\r\n3. **Time-out sessions.** Set an expiration time for sessions. This helps minimize the threat of session hijacking by giving an attacker a smaller window of opportunity. Depending on your application, an appropriate timeout can be anywhere from 10 to 20 minutes.\r\nAllow users to terminate their sessions. Allowing users to invalidate their sessions reduces the risk of the session being hijacked. Use result.discardingCookies to accomplish this.\r\n\r\n4. **Ensure cookies are sent over encrypted channels.** Mark cookies sent over TLS as Secure. Use the  Enable Secure flag on the cookie, setting “application.session.secure=true” in the “application.conf” file. Do not send session cookies over unencrypted channels as session hijacking is made much easier."
         ]
       }
     ]

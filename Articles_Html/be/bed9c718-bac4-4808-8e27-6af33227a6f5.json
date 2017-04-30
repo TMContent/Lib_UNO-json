@@ -57,6 +57,7 @@
       "p",
       "p",
       "ol",
+      "ol",
       "li",
       "p",
       "li",
@@ -338,19 +339,16 @@
       "li",
       "p"
     ],
-    "application\n\n\nexamine": [
-      "ol"
-    ],
-    "cookie": [
-      "ol",
+    "application": [
       "ol",
       "li",
+      "p",
+      "ol",
       "li",
-      "p",
-      "p",
-      "strong"
+      "p"
     ],
     "examine": [
+      "ol",
       "ol",
       "ol",
       "li",
@@ -360,6 +358,15 @@
       "strong",
       "li",
       "p"
+    ],
+    "cookie": [
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
+      "p",
+      "strong"
     ],
     "cookies": [
       "ol",
@@ -438,7 +445,7 @@
       "li",
       "p"
     ],
-    "\"secure\"": [
+    "secure": [
       "ol",
       "li",
       "p",
@@ -461,7 +468,7 @@
       "li",
       "p"
     ],
-    "\"httponly\"": [
+    "httponly": [
       "ol",
       "li",
       "p",
@@ -478,8 +485,24 @@
       "li",
       "p"
     ],
-    "set\n\n\nverify": [
-      "ol"
+    "set": [
+      "ol",
+      "li",
+      "p",
+      "ol",
+      "ol",
+      "ol",
+      "ol",
+      "li",
+      "li",
+      "p",
+      "p",
+      "strong",
+      "li",
+      "li",
+      "p",
+      "p",
+      "strong"
     ],
     "not": [
       "ol",
@@ -586,29 +609,6 @@
       "li",
       "p"
     ],
-    "application": [
-      "li",
-      "p",
-      "ol",
-      "li",
-      "p"
-    ],
-    "set": [
-      "li",
-      "p",
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "p",
-      "p",
-      "strong",
-      "li",
-      "li",
-      "p",
-      "p",
-      "strong"
-    ],
     "fix": [
       "h2"
     ],
@@ -680,8 +680,16 @@
       "li",
       "p"
     ],
-    "parameters\n\n\nenable": [
-      "ol"
+    "parameters": [
+      "ol",
+      "li",
+      "p"
+    ],
+    "enable": [
+      "ol",
+      "li",
+      "p",
+      "strong"
     ],
     "tls": [
       "ol",
@@ -777,8 +785,10 @@
       "p",
       "strong"
     ],
-    "server\n\n\nset": [
-      "ol"
+    "server": [
+      "ol",
+      "li",
+      "p"
     ],
     "flag": [
       "ol",
@@ -819,6 +829,7 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "p",
       "li",
@@ -845,11 +856,13 @@
       "li",
       "p"
     ],
-    "created\n\n\nset": [
-      "ol"
-    ],
-    "created\n\n\ndo": [
-      "ol"
+    "created": [
+      "ol",
+      "ol",
+      "li",
+      "p",
+      "li",
+      "p"
     ],
     "disclose": [
       "ol",
@@ -879,25 +892,6 @@
     ],
     "of": [
       "ol",
-      "li",
-      "p"
-    ],
-    "parameters": [
-      "li",
-      "p"
-    ],
-    "enable": [
-      "li",
-      "p",
-      "strong"
-    ],
-    "server": [
-      "li",
-      "p"
-    ],
-    "created": [
-      "li",
-      "p",
       "li",
       "p"
     ]

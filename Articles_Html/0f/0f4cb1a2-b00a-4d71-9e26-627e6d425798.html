@@ -2,74 +2,64 @@
 <ul>
 <li>PHP</li>
 </ul>
-<h2>What to Do</h2>
+<h2>Summary</h2>
 <p>Use prepared statements to execute SQL queries, especially when untrusted data is being passed to the database. Do not concatenate user input into SQL queries. You can use static query strings without using prepared statements and it won't result in SQL injection, so long as all queries that include untrusted data, such as user input, use prepared statements. You can also use parameterized stored procedures as an alternative solution to similar effect.</p>
-<h2>Why</h2>
 <p>Prepared statements mitigate the number one risk for Internet-facing Web applications that use databases: SQL injection. This powerful attack is language independent, as it depends on the algorithm used to generate SQL strings passed to the database and affects the database engine, not the actual application. The vulnerability is caused by concatenating untrusted data into SQL query strings. This allows attackers to insert valid SQL statement fragments as part of user input so they, in turn, are embedded within the SQL query that is submitted to the database engine for execution. Successful exploitation allows an attacker to potentially compromise the entire database and often the application. Compromising the application can then potentially be leveraged to take over the server and then use it to pivot around whatever networks it might be connected to.</p>
 <p>Prepared statements offer a simple yet effective mitigation since they automatically separate user input from SQL syntax, making it impossible to modify the structure of the SQL query, regardless of what data is entered by the user.</p>
-<h2>How</h2>
-<p>To use prepared statements to prevent SQL injection, follow these steps:</p>
-<ol>
-<li>
-<p><strong>Identify SQL queries.</strong> Locate all SQL queries throughout your application.</p>
-</li>
-<li>
-<p><strong>Identify the parameters in each SQL query.</strong> After locating all SQL queries, identify the parameters in each query. Understand the format and type of each parameter's data.</p>
-</li>
-<li>
-<p><strong>Use prepared statements for SQL queries.</strong> The exact APIs are different for different database drivers. The very popular mysql interface does not support prepared statements, use msqli instead. To form query strings suitable for use with prepared statements, substitute the parameters in SQL queries with question marks (&quot;?&quot;). The basic steps for using prepared statements are: get a database handle, call the prepare function to make the prepared statement, bind prepared statement parameters to variables, load data into the variables, and call the execute function to execute the prepared statement. All the APIs necessary to use prepared statements are thoroughly documented on php.net.</p>
-</li>
-</ol>
 <h2>Problem Example</h2>
 <p>Here is a classic SQL injection example:</p>
-<pre><code>    &lt;?php
-    $username = 'root';
-    $password = '';
-    $con = mysqli_connect(&quot;localhost&quot;, $username, $password, &quot;tpcatalog&quot;);
+<pre><code>	&lt;?php
+	$username = 'root';
+	$password = '';
+	$con = mysqli_connect(&quot;localhost&quot;, $username, $password, &quot;tpcatalog&quot;);
 
-    if(mysqli_connect_errno())
-    {
-    echo &quot;Error: could not connect to the database&quot;;
-    }
+	if(mysqli_connect_errno())
+	{
+	echo &quot;Error: could not connect to the database&quot;;
+	}
 
-    //VULNERABLE CODE BELOW
-    $query = &quot;SELECT name, description FROM TPCourses WHERE id=&quot;.$_REQUEST['id'];
-    $result = $con-&gt;query($query);
-    //VULNERABLE CODE ABOVE
+	//VULNERABLE CODE BELOW
+	$query = &quot;SELECT name, description FROM TPCourses WHERE id=&quot;.$_REQUEST['id'];
+	$result = $con-&gt;query($query);
+	//VULNERABLE CODE ABOVE
 
-    if($result-&gt;num_rows &gt;0){
-    while($row = $result-&gt;fetch_assoc()){
-    echo $row['name'] . ' ' . $row['description'] . '&lt;br&gt;';
-    }
+	if($result-&gt;num_rows &gt;0){
+	while($row = $result-&gt;fetch_assoc()){
+	echo $row['name'] . ' ' . $row['description'] . '&lt;br&gt;';
+	}
 
-    $con-&gt;close();
-    }
+	$con-&gt;close();
+	}
 </code></pre>
 <p>Concatenating untrusted data to the end of an SQL query is probably the most common type of SQL injection. It is so common that some attackers use search engines to look for URLs that contain an id parameter, because a lot of such pages are vulnerable.</p>
 <h2>Solution Example</h2>
 <p>Let's fix the vulnerable code from the example above using prepared statements:</p>
-<pre><code>    &lt;?php
-    $username = 'root';
-    $password = '';
-    $con = new mysqli(&quot;localhost&quot;, $username, $password, &quot;tpcatalog&quot;);
+<pre><code>	&lt;?php
+	$username = 'root';
+	$password = '';
+	$con = new mysqli(&quot;localhost&quot;, $username, $password, &quot;tpcatalog&quot;);
 
-    if(mysqli_connect_errno())
-    {
-    echo &quot;Error: could not connect to the database&quot;;
-    }
+	if(mysqli_connect_errno())
+	{
+	echo &quot;Error: could not connect to the database&quot;;
+	}
 
-    //INVULNERABLE CODE BELOW
-    $query = $con-&gt;prepare(&quot;SELECT name, description FROM TPCourses WHERE id=(?)&quot;);
-    $query-&gt;bind_param(&quot;i&quot;, intval($_REQUEST['id']));
-    $query-&gt;execute();
-    $query-&gt;bind_result($name, $description);
-    //INVULNERABLE CODE ABOVE
+	//INVULNERABLE CODE BELOW
+	$query = $con-&gt;prepare(&quot;SELECT name, description FROM TPCourses WHERE id=(?)&quot;);
+	$query-&gt;bind_param(&quot;i&quot;, intval($_REQUEST['id']));
+	$query-&gt;execute();
+	$query-&gt;bind_result($name, $description);
+	//INVULNERABLE CODE ABOVE
 
-    while($query-&gt;fetch()){
-    echo $name . ' ' . $description . '&lt;br&gt;';
-    }
+	while($query-&gt;fetch()){
+	echo $name . ' ' . $description . '&lt;br&gt;';
+	}
 
-    $query-&gt;close();
-    $con-&gt;close();
+	$query-&gt;close();
+	$con-&gt;close();
 </code></pre>
 <p>There is no error checking or handling in the solution example to make it simpler and easier to read, but you should always do error checking and handling on production systems. A database connection might fail for example. The solution example does not contain an SQL injection vulnerability, even though it passes untrusted input to the database without validation, encoding, escaping or sanitization. In practice, all untrusted input should be validated.</p>
+<h2>Guideline</h2>
+<ul>
+<li><a href="397488da-ce91-4768-9ad9-1e6928980d72">Use Prepared Statements for SQL Queries</a></li>
+</ul>

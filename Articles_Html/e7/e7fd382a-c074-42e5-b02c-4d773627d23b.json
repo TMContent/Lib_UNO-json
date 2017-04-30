@@ -1,7 +1,19 @@
 {
   "id": "e7fd382a-c074-42e5-b02c-4d773627d23b",
-  "checksum": "f90b68bc5fa92103635e1ef15dcbd378",
+  "checksum": "abbe80233a8a47235b3ab6bc6f5af1d9",
   "words": {
+    "0": [
+      "pre",
+      "code",
+      "pre",
+      "code"
+    ],
+    "1": [
+      "pre",
+      "code",
+      "pre",
+      "code"
+    ],
     "2": [
       "pre",
       "code",
@@ -20,12 +32,9 @@
       "p",
       "ol",
       "ol",
-      "ol",
       "li",
       "p",
       "li",
-      "li",
-      "p",
       "p",
       "strong",
       "p"
@@ -37,9 +46,6 @@
     "and": [
       "ul",
       "li",
-      "ol",
-      "li",
-      "p",
       "p",
       "p",
       "p"
@@ -56,14 +62,17 @@
       "h2"
     ],
     "do": [
-      "h2"
+      "h2",
+      "title"
     ],
     "don't": [
-      "p",
-      "title"
+      "p"
     ],
     "use": [
       "p",
+      "p",
+      "ol",
+      "li",
       "p",
       "title"
     ],
@@ -73,10 +82,7 @@
       "p",
       "p",
       "ol",
-      "ol",
       "li",
-      "li",
-      "p",
       "p",
       "strong",
       "p",
@@ -95,8 +101,6 @@
       "ol",
       "ol",
       "ol",
-      "ol",
-      "ol",
       "li",
       "li",
       "p",
@@ -105,10 +109,6 @@
       "li",
       "p",
       "li",
-      "li",
-      "li",
-      "p",
-      "p",
       "p",
       "strong",
       "p",
@@ -119,12 +119,6 @@
     "in": [
       "p",
       "p",
-      "p",
-      "p",
-      "ol",
-      "ol",
-      "li",
-      "li",
       "p",
       "p",
       "title"
@@ -181,6 +175,7 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "p",
@@ -194,23 +189,32 @@
       "p",
       "strong",
       "li",
+      "li",
+      "p",
       "p"
     ],
     "avoid": [
       "p",
       "p",
+      "ol",
+      "ol",
       "li",
       "p",
-      "strong"
+      "strong",
+      "li",
+      "p"
     ],
     "using": [
       "p",
       "p",
       "p",
       "ol",
+      "ol",
       "li",
       "p",
-      "strong"
+      "strong",
+      "li",
+      "p"
     ],
     "formatted": [
       "p",
@@ -220,6 +224,7 @@
       "ol",
       "ol",
       "ol",
+      "ol",
       "li",
       "li",
       "p",
@@ -231,6 +236,8 @@
       "p",
       "strong",
       "li",
+      "li",
+      "p",
       "p"
     ],
     "output": [
@@ -239,30 +246,32 @@
       "ol",
       "ol",
       "ol",
-      "ol",
       "li",
       "li",
       "p",
       "p",
       "strong",
       "li",
-      "p",
-      "li",
       "p"
     ],
     "if": [
-      "p"
+      "p",
+      "pre",
+      "code",
+      "pre",
+      "code"
     ],
     "possible": [
       "p"
     ],
     "re": [
       "p",
+      "ol",
       "li",
       "p",
       "strong"
     ],
-    ")write": [
+    "write": [
       "p",
       "ol",
       "li",
@@ -329,9 +338,6 @@
       "p",
       "p",
       "ol",
-      "ol",
-      "li",
-      "p",
       "li",
       "p"
     ],
@@ -341,18 +347,12 @@
     "of": [
       "p",
       "ol",
-      "ol",
-      "li",
-      "p",
       "li",
       "p"
     ],
     "a": [
       "p",
       "ol",
-      "ol",
-      "li",
-      "p",
       "li",
       "p",
       "p",
@@ -413,7 +413,8 @@
       "li",
       "p",
       "p",
-      "p"
+      "p",
+      "title"
     ],
     "identify": [
       "ol",
@@ -558,8 +559,11 @@
       "pre",
       "code"
     ],
-    "swscanf\n\n\navoid": [
-      "ol"
+    "swscanf": [
+      "ol",
+      "li",
+      "pre",
+      "code"
     ],
     "consider": [
       "ol",
@@ -573,6 +577,9 @@
     ],
     "with": [
       "ol",
+      "ol",
+      "li",
+      "p",
       "li",
       "p"
     ],
@@ -596,8 +603,11 @@
       "li",
       "p"
     ],
-    "vulnerabilities\n\n\n(re": [
-      "ol"
+    "vulnerabilities": [
+      "ol",
+      "li",
+      "p",
+      "p"
     ],
     "exclude": [
       "ol",
@@ -612,71 +622,28 @@
       "strong",
       "p"
     ],
-    "place": [
-      "ol",
-      "li",
-      "p"
-    ],
-    "separate": [
-      "ol",
-      "li",
-      "p"
-    ],
-    "variables": [
-      "ol",
-      "li",
-      "p"
-    ],
-    "pass": [
-      "ol",
-      "li",
-      "p"
-    ],
-    "it": [
-      "ol",
-      "ol",
-      "li",
-      "li",
-      "p",
-      "p",
-      "p"
-    ],
-    "as": [
-      "ol",
-      "li",
-      "p",
-      "p",
-      "p"
-    ],
-    "variadic": [
-      "ol",
-      "li",
-      "p"
-    ],
-    "arguments": [
+    "static": [
       "ol",
       "li",
       "p",
       "p"
     ],
-    "instead": [
+    "i/o": [
+      "ol",
       "ol",
       "li",
-      "p"
-    ],
-    "placing": [
-      "ol",
-      "li",
-      "p"
-    ],
-    "swscanf": [
-      "li",
-      "pre",
-      "code"
-    ],
-    "vulnerabilities": [
       "li",
       "p",
+      "p"
+    ],
+    "or": [
+      "ol",
+      "li",
+      "p"
+    ],
+    "altogether": [
+      "ol",
+      "li",
       "p"
     ],
     "problem": [
@@ -695,17 +662,27 @@
     ],
     "#include": [
       "pre",
+      "pre",
+      "code",
+      "code",
+      "pre",
+      "pre",
+      "code",
+      "code"
+    ],
+    "stdioh": [
+      "pre",
       "code",
       "pre",
       "code"
     ],
-    "stdio.h>\n#include": [
+    "stringh": [
       "pre",
       "code",
       "pre",
       "code"
     ],
-    "string.h>\n\nint": [
+    "int": [
       "pre",
       "code",
       "pre",
@@ -733,13 +710,13 @@
       "pre",
       "code"
     ],
-    "argv])": [
+    "argv": [
       "pre",
       "code",
       "pre",
       "code"
     ],
-    "{if": [
+    "{": [
       "pre",
       "code",
       "pre",
@@ -753,15 +730,19 @@
     ],
     "return": [
       "pre",
+      "pre",
+      "code",
       "code",
       "pre",
+      "pre",
+      "code",
       "code"
     ],
-    "0\n\nprintf(argv[1]);\nreturn": [
+    "printfargv1": [
       "pre",
       "code"
     ],
-    "1\n}": [
+    "}": [
       "pre",
       "code",
       "pre",
@@ -791,7 +772,7 @@
     "this": [
       "p"
     ],
-    "format_string_vulnc:7:1:": [
+    "format_string_vulnc71": [
       "p"
     ],
     "warning": [
@@ -803,13 +784,16 @@
     "no": [
       "p"
     ],
+    "arguments": [
+      "p"
+    ],
     "": [
       "p"
     ],
     "wformat": [
       "p"
     ],
-    "security]": [
+    "security": [
       "p"
     ],
     "solution": [
@@ -824,13 +808,14 @@
     "processed": [
       "p"
     ],
+    "as": [
+      "p",
+      "p"
+    ],
     "by": [
       "p"
     ],
     "specifying": [
-      "p"
-    ],
-    "static": [
       "p"
     ],
     "then": [
@@ -842,11 +827,14 @@
     "data": [
       "p"
     ],
-    "0\n\nprintf(\"%s\",": [
+    "it": [
+      "p"
+    ],
+    "printf%s": [
       "pre",
       "code"
     ],
-    "argv1]);\nreturn": [
+    "argv1": [
       "pre",
       "code"
     ],
@@ -871,17 +859,14 @@
     "excluding": [
       "p"
     ],
-    "please": [
-      "p"
-    ],
     "see": [
       "p"
     ],
-    "https//www.securecoding.cert.org/confluence/display/cplusplus/void+fio30": [
+    "https//wwwsecurecodingcertorg/confluence/display/c/fio30": [
       "p",
       "a"
     ],
-    "cpp.+exclude+user+input+from+format+strings": [
+    "c+exclude+user+input+from+format+strings": [
       "p",
       "a"
     ]
@@ -889,8 +874,8 @@
   "tags": {},
   "links": [
     {
-      "href": "https://www.securecoding.cert.org/confluence/display/cplusplus/VOID+FIO30-CPP.+Exclude+user+input+from+format+strings",
-      "text": "https://www.securecoding.cert.org/confluence/display/cplusplus/VOID+FIO30-CPP.+Exclude+user+input+from+format+strings"
+      "href": "https://www.securecoding.cert.org/confluence/display/c/FIO30-C.+Exclude+user+input+from+format+strings",
+      "text": "https://www.securecoding.cert.org/confluence/display/c/FIO30-C.+Exclude+user+input+from+format+strings"
     }
   ]
 }
